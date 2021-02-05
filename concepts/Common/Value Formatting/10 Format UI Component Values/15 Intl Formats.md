@@ -70,7 +70,6 @@ A UI component's **format** property is compatible with the `options` parameter 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -96,7 +95,6 @@ A UI component's **format** property is compatible with the `options` parameter 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

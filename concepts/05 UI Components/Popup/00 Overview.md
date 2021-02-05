@@ -78,7 +78,6 @@ The following code adds a simple **Popup** to your page, along with a [Button](/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
@@ -105,7 +104,6 @@ The following code adds a simple **Popup** to your page, along with a [Button](/
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup } from 'devextreme-react/popup';

@@ -79,7 +79,6 @@ A key used to authenticate the application within the required map provider.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMap, {
@@ -99,7 +98,6 @@ A key used to authenticate the application within the required map provider.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Map, {

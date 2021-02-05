@@ -51,7 +51,6 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -68,7 +67,6 @@ If a user deletes a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
@@ -129,7 +127,6 @@ To prevent a user from deleting an appointment, set the **editing**.[allowDeleti
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler, { DxEditing } from 'devextreme-vue/scheduler';
@@ -152,7 +149,6 @@ To prevent a user from deleting an appointment, set the **editing**.[allowDeleti
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler, { Editing } from 'devextreme-react/scheduler';

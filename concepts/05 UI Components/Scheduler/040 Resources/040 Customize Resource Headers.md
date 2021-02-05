@@ -65,7 +65,6 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler, { DxResource } from 'devextreme-vue/scheduler';
@@ -101,7 +100,6 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Scheduler, Resource } from 'devextreme-react/scheduler';
@@ -236,7 +234,6 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         </DxScheduler>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScheduler, DxResource } from 'devextreme-vue/scheduler';
@@ -273,7 +270,6 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler, { Resource } from 'devextreme-react/scheduler';

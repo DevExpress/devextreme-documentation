@@ -3,7 +3,6 @@ Import the DevExtreme components you are going to use from specific modules. In 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Button from 'devextreme-react/button';

@@ -47,7 +47,6 @@ By default, exactly one panel can be in the expanded state at one moment. To cha
         </DxAccordion>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxAccordion from "devextreme-vue/accordion";
@@ -63,7 +62,6 @@ By default, exactly one panel can be in the expanded state at one moment. To cha
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Accordion } from 'devextreme-react/accordion';

@@ -93,7 +93,6 @@ All group validation errors can be displayed in the [ValidationSummary](/api-ref
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     // ...

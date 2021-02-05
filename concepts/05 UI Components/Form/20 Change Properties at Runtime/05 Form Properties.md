@@ -70,7 +70,6 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm } from 'devextreme-vue/form';
@@ -101,7 +100,6 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form } from 'devextreme-react/form';

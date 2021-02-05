@@ -60,7 +60,6 @@ The **DataGrid** displays all columns from the **columns** array. To hide a colu
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

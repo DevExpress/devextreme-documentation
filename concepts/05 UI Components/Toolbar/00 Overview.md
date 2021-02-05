@@ -101,7 +101,6 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
@@ -126,7 +125,6 @@ The following code adds a simple **Toolbar** to your page. Three items are plain
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';

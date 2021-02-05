@@ -63,7 +63,6 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -93,7 +92,6 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

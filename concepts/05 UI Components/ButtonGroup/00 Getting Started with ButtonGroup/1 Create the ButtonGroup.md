@@ -75,7 +75,6 @@ You can use the following library- or framework-specific code to create the **Bu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxButtonGroup } from 'devextreme-vue/button-group';
@@ -91,7 +90,6 @@ You can use the following library- or framework-specific code to create the **Bu
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ButtonGroup } from 'devextreme-react/button-group';

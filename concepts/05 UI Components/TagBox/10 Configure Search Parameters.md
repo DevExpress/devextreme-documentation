@@ -64,7 +64,6 @@ The **TagBox** UI component allows an end user to search through its items. This
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -89,7 +88,6 @@ The **TagBox** UI component allows an end user to search through its items. This
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -180,7 +178,6 @@ When a user types a string in the input field, the **TagBox** suggests all items
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -204,7 +201,6 @@ When a user types a string in the input field, the **TagBox** suggests all items
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -295,7 +291,6 @@ There is a delay between the moment a user finishes typing and the moment the se
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -319,7 +314,6 @@ There is a delay between the moment a user finishes typing and the moment the se
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -409,7 +403,6 @@ The **TagBox** UI component starts searching after a user has typed at least one
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -432,7 +425,6 @@ The **TagBox** UI component starts searching after a user has typed at least one
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

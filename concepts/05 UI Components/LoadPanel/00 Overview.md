@@ -68,7 +68,6 @@ The following code adds to your page a simple **LoadPanel** and a [Button](/Docu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
@@ -95,7 +94,6 @@ The following code adds to your page a simple **LoadPanel** and a [Button](/Docu
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';

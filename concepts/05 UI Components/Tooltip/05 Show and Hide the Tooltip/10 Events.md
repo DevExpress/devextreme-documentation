@@ -68,7 +68,6 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -97,7 +96,6 @@ To execute certain commands before or after the **Tooltip** was shown/hidden, ha
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';

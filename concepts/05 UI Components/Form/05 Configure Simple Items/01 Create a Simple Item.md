@@ -54,7 +54,6 @@ By default, the **Form** generates a simple item for each field of the [formData
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm from 'devextreme-vue/form';
@@ -81,7 +80,6 @@ By default, the **Form** generates a simple item for each field of the [formData
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form from 'devextreme-react/form';
@@ -195,7 +193,6 @@ The editor that will be used in a particular simple item depends on the type of 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm, {
@@ -230,7 +227,6 @@ The editor that will be used in a particular simple item depends on the type of 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form, {

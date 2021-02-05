@@ -69,7 +69,6 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -103,7 +102,6 @@ For a minor customization of **Scheduler** appointments, you can define [specifi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
@@ -263,7 +261,6 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -298,7 +295,6 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

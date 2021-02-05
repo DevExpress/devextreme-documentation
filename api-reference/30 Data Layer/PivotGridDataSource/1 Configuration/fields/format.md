@@ -322,7 +322,6 @@ The following code declares a custom group for the `ShippingDate` data field. Th
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid from 'devextreme-react/pivot-grid';

@@ -33,7 +33,6 @@ Regardless of the data source you use, the **Lookup** always wraps it in a [Data
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -53,7 +52,6 @@ Regardless of the data source you use, the **Lookup** always wraps it in a [Data
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';

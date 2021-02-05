@@ -69,7 +69,6 @@ Use the code below to create an empty **SelectBox**:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import { DxSelectBox } from 'devextreme-vue/select-box';
 
@@ -85,7 +84,6 @@ Use the code below to create an empty **SelectBox**:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { SelectBox } from 'devextreme-react/select-box';

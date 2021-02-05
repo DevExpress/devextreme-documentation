@@ -44,7 +44,6 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxColorBox from 'devextreme-vue/color-box';
@@ -65,7 +64,6 @@ By default, the **ColorBox** does _not_ allow an end user to control the transpa
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import ColorBox from 'devextreme-react/color-box';

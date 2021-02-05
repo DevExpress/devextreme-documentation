@@ -62,7 +62,6 @@ To bind the **Scheduler** to an array, pass this array to the [dataSource](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -94,7 +93,6 @@ To bind the **Scheduler** to an array, pass this array to the [dataSource](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
@@ -193,7 +191,6 @@ If objects in the array need to be processed (for example, filtered), you can cr
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -226,7 +223,6 @@ If objects in the array need to be processed (for example, filtered), you can cr
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

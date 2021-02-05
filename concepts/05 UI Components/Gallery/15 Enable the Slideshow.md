@@ -54,7 +54,6 @@ The **Gallery** UI component supports the display of images in a slideshow. To s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
@@ -78,7 +77,6 @@ The **Gallery** UI component supports the display of images in a slideshow. To s
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';

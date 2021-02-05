@@ -121,7 +121,6 @@ You can call this method at any point in your application. In the example below,
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
@@ -158,7 +157,6 @@ You can call this method at any point in your application. In the example below,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';

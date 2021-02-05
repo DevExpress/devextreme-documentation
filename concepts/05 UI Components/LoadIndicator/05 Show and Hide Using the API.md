@@ -66,7 +66,6 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
@@ -93,7 +92,6 @@ To specify whether the **LoadIndicator** is shown, change the [visible](/api-ref
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';

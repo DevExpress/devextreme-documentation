@@ -71,7 +71,6 @@ Toolbar items with identical **location** preserve the order they have in the da
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
@@ -88,7 +87,6 @@ Toolbar items with identical **location** preserve the order they have in the da
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';
@@ -165,7 +163,6 @@ When there is not enough width for all toolbar items, or if certain toolbar item
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
@@ -182,7 +179,6 @@ When there is not enough width for all toolbar items, or if certain toolbar item
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';

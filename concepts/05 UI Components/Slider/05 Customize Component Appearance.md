@@ -56,7 +56,6 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSlider, DxLabel } from 'devextreme-vue/slider';
@@ -77,7 +76,6 @@ The **Slider** can display labels for the [min](/api-reference/10%20UI%20Widgets
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Slider, Label } from 'devextreme-react/slider';
@@ -164,7 +162,6 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSlider, DxTooltip } from 'devextreme-vue/slider';
@@ -185,7 +182,6 @@ The **Slider** can also display a tooltip for the slider handle. To configure it
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Slider, Tooltip } from 'devextreme-react/slider';
@@ -255,7 +251,6 @@ To specify whether or not the part of the scale from the beginning to the slider
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSlider } from 'devextreme-vue/slider';
@@ -270,7 +265,6 @@ To specify whether or not the part of the scale from the beginning to the slider
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Slider } from 'devextreme-react/slider';

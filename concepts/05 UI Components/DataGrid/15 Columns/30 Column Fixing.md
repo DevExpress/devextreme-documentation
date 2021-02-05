@@ -52,7 +52,6 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -75,7 +74,6 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -143,7 +141,6 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -165,7 +162,6 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

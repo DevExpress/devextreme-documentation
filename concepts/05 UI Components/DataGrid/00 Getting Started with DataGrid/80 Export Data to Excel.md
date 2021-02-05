@@ -159,7 +159,6 @@ This method can be called at any point in your application. The following code c
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
 

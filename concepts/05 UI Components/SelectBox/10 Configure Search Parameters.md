@@ -65,7 +65,6 @@ The **SelectBox** UI component allows an end user to search through its items. T
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -91,7 +90,6 @@ The **SelectBox** UI component allows an end user to search through its items. T
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -191,7 +189,6 @@ When a user types a string in the input field, the **SelectBox** suggests all it
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -217,7 +214,6 @@ When a user types a string in the input field, the **SelectBox** suggests all it
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -314,7 +310,6 @@ There is a delay between the moment a user finishes typing and the moment the se
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -340,7 +335,6 @@ There is a delay between the moment a user finishes typing and the moment the se
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -435,7 +429,6 @@ The **SelectBox** UI component starts searching after a user has typed at least 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -460,7 +453,6 @@ The **SelectBox** UI component starts searching after a user has typed at least 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';

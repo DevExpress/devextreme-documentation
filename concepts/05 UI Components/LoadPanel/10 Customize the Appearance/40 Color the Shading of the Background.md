@@ -62,7 +62,6 @@ When the **LoadPanel** is shown, the area beneath it can be shaded. The shading 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
@@ -89,7 +88,6 @@ When the **LoadPanel** is shown, the area beneath it can be shaded. The shading 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';

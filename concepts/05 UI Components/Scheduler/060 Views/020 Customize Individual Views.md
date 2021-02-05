@@ -122,7 +122,6 @@ The following code defines three views: the first is not customized, the second 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
@@ -163,7 +162,6 @@ The following code defines three views: the first is not customized, the second 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Scheduler, Resource, View } from 'devextreme-react/scheduler';

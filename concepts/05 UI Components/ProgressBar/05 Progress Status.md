@@ -56,7 +56,6 @@ The progress status displays a numeric value indicating the made progress. Wheth
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxProgressBar } from 'devextreme-vue/progress-bar';
@@ -76,7 +75,6 @@ The progress status displays a numeric value indicating the made progress. Wheth
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ProgressBar } from 'devextreme-react/progress-bar';

@@ -67,7 +67,6 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
@@ -82,7 +81,6 @@ The **Popover** is displayed without a title by default. To add it, set the [sho
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover } from 'devextreme-react/popover';
@@ -199,7 +197,6 @@ If you need to define the title completely, specify a template for it as shown i
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
@@ -214,7 +211,6 @@ If you need to define the title completely, specify a template for it as shown i
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover } from 'devextreme-react/popover';

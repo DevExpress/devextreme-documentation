@@ -55,7 +55,6 @@ The **Map** UI component allows you to provide a single icon for all markers. Fo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -80,7 +79,6 @@ The **Map** UI component allows you to provide a single icon for all markers. Fo
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';
@@ -179,7 +177,6 @@ Apart from the icon, you can specify a [tooltip](/api-reference/10%20UI%20Widget
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -212,7 +209,6 @@ Apart from the icon, you can specify a [tooltip](/api-reference/10%20UI%20Widget
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';

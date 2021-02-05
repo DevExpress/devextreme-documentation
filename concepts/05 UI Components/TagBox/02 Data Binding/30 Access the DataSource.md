@@ -37,7 +37,6 @@ Regardless of the data source you use, the **TagBox** always wraps it in a [Data
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -57,7 +56,6 @@ Regardless of the data source you use, the **TagBox** always wraps it in a [Data
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

@@ -56,7 +56,6 @@ Use the returned button instance to call the [**Button** UI component's methods]
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
@@ -91,7 +90,6 @@ Use the returned button instance to call the [**Button** UI component's methods]
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';

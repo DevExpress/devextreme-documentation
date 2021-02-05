@@ -51,7 +51,6 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -73,7 +72,6 @@ To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Widg
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';

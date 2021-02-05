@@ -56,7 +56,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -83,7 +82,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

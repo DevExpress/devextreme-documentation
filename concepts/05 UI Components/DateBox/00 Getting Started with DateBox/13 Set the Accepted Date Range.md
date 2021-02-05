@@ -45,7 +45,6 @@ To define the range from which users can select dates, specify the [min](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDateBox } from 'devextreme-vue/date-box';
@@ -68,7 +67,6 @@ To define the range from which users can select dates, specify the [min](/api-re
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DateBox } from 'devextreme-react/date-box';

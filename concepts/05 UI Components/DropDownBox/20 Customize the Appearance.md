@@ -201,7 +201,6 @@ You can customize the text field and the drop-down button using the [fieldTempla
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDropDownBox, DxDropDownOptions } from "devextreme-vue/drop-down-box";
@@ -268,7 +267,6 @@ You can customize the text field and the drop-down button using the [fieldTempla
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DropDownBox, DropDownOptions } from 'devextreme-react/drop-down-box';

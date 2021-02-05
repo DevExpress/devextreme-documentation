@@ -147,7 +147,6 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-vue/{widget-name}';
@@ -177,7 +176,6 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';

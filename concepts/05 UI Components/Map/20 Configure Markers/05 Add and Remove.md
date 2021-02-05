@@ -51,7 +51,6 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -75,7 +74,6 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';
@@ -216,7 +214,6 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** pro
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -249,7 +246,6 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** pro
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';

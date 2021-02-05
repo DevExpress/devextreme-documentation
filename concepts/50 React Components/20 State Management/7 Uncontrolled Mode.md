@@ -5,7 +5,6 @@ To specify an initial property value in this mode, add the `default` prefix to t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.compact.css';
 
     import Scheduler from 'devextreme-react/scheduler';

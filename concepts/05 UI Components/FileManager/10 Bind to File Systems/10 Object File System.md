@@ -128,7 +128,6 @@ In the example below, the **FileManager** UI component displays hierarchical dat
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';     
 
     import { 
@@ -177,7 +176,6 @@ In the example below, the **FileManager** UI component displays hierarchical dat
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
@@ -366,7 +364,6 @@ If the data source's field names differ from the standard field names mentioned 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';     
 
     import { DxFileManager } from 'devextreme-vue/file-manager';
@@ -421,7 +418,6 @@ If the data source's field names differ from the standard field names mentioned 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager from 'devextreme-react/file-manager';

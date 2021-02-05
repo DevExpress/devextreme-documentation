@@ -79,7 +79,6 @@ Items in the **SelectBox** can be grouped if they are grouped in the data source
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -115,7 +114,6 @@ Items in the **SelectBox** can be grouped if they are grouped in the data source
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -254,7 +252,6 @@ If objects in your data source miss the **key** and **items** fields, use the [m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -301,7 +298,6 @@ If objects in your data source miss the **key** and **items** fields, use the [m
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -425,7 +421,6 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -460,7 +455,6 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';

@@ -49,7 +49,6 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
@@ -73,7 +72,6 @@ Use the [min](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/min.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
@@ -152,7 +150,6 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
@@ -181,7 +178,6 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';

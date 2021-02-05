@@ -46,7 +46,6 @@ The **Popup** can also be hidden when a user clicks outside it. To control this 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
@@ -66,7 +65,6 @@ The **Popup** can also be hidden when a user clicks outside it. To control this 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup } from 'devextreme-react/popup';

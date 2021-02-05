@@ -53,7 +53,6 @@ To process a new **ProgressBar** value, you need to handle the value change even
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxProgressBar } from 'devextreme-vue/progress-bar';
@@ -81,7 +80,6 @@ To process a new **ProgressBar** value, you need to handle the value change even
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ProgressBar } from 'devextreme-react/progress-bar';

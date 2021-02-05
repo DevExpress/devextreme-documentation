@@ -59,7 +59,6 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
@@ -97,7 +96,6 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';

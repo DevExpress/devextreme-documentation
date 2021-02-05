@@ -120,7 +120,6 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxBox, DxItem } from 'devextreme-vue/box';
@@ -148,7 +147,6 @@ A nested **Box** is configured similarly to an ordinary **Box**. To nest one **B
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Box, { Item } from 'devextreme-react/box';

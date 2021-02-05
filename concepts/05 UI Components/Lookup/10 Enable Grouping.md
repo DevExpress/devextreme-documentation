@@ -59,7 +59,6 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -86,7 +85,6 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
@@ -192,7 +190,6 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -225,7 +222,6 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
@@ -318,7 +314,6 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20W
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -345,7 +340,6 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20W
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';

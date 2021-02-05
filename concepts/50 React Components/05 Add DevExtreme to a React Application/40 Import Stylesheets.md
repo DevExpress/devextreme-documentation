@@ -2,7 +2,6 @@ Open the main application file (`App.js`) and import `dx.common.css` and a [pred
 
     <!-- tab: App.js -->
     // ...
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
 Then, go to the `public` folder, open the `index.html` file, and add the `dx-viewport` class to the `<body>` tag. This ensures that theme colors and typography settings are applied to all page elements (and not only to DevExtreme UI components).

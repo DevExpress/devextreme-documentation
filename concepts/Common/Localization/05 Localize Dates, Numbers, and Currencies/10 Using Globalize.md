@@ -233,7 +233,6 @@ In addition, you can now format values using structures accepted by <a href="htt
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     // ...
     // import dictionaries and localization modules here
@@ -256,7 +255,6 @@ In addition, you can now format values using structures accepted by <a href="htt
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

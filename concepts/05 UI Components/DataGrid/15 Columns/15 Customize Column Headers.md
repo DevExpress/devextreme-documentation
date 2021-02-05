@@ -49,7 +49,6 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -70,7 +69,6 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -174,7 +172,6 @@ If you need a more specific customization, define a custom template in the **col
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -195,7 +192,6 @@ If you need a more specific customization, define a custom template in the **col
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -274,7 +270,6 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -292,7 +287,6 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

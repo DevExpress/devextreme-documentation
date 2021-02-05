@@ -45,7 +45,6 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -60,7 +59,6 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
@@ -123,7 +121,6 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -138,7 +135,6 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';

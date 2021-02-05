@@ -105,7 +105,6 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxList, {
@@ -125,7 +124,6 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import List, { Item } from 'devextreme-react/list';

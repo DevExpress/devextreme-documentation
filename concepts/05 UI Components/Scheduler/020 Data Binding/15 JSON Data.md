@@ -40,7 +40,6 @@ To bind the **Scheduler** to data in the JSON format, assign the data's URL to t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -62,7 +61,6 @@ To bind the **Scheduler** to data in the JSON format, assign the data's URL to t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
@@ -123,7 +121,6 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -145,7 +142,6 @@ Note that you can also use a JSONP callback parameter supported by <a href="http
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

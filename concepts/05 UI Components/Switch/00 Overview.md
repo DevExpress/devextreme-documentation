@@ -60,7 +60,6 @@ The following code adds the **Switch** to your page.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxSwitch from 'devextreme-vue/switch';
@@ -77,7 +76,6 @@ The following code adds the **Switch** to your page.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Switch from 'devextreme-react/switch';

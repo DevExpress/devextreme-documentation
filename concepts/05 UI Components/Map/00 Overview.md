@@ -55,7 +55,6 @@ The code below adds the **Map** UI component to your page. The **Map** is [cente
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -75,7 +74,6 @@ The code below adds the **Map** UI component to your page. The **Map** is [cente
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';

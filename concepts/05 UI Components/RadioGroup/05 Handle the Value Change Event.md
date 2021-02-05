@@ -56,7 +56,6 @@ To process a new **RadioGroup** value, you need to handle the value change event
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
@@ -86,7 +85,6 @@ To process a new **RadioGroup** value, you need to handle the value change event
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';

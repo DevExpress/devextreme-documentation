@@ -101,7 +101,6 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxHtmlEditor from 'devextreme-vue/html-editor';
@@ -138,7 +137,6 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import HtmlEditor from 'devextreme-react/html-editor';

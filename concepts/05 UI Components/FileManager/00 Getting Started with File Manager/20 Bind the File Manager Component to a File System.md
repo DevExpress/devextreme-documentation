@@ -125,7 +125,6 @@ In the example below, the **FileManager** UI component displays hierarchical dat
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';     
 
     import { 
@@ -174,7 +173,6 @@ In the example below, the **FileManager** UI component displays hierarchical dat
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager from 'devextreme-react/file-manager';

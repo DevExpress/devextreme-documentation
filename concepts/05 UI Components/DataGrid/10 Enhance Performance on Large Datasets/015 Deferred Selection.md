@@ -69,7 +69,6 @@ Use deferred mode to increase the **DataGrid**'s performance when [selecting mul
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -101,7 +100,6 @@ Use deferred mode to increase the **DataGrid**'s performance when [selecting mul
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

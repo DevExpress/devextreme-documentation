@@ -44,7 +44,6 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxColorBox from 'devextreme-vue/color-box';
@@ -65,7 +64,6 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import ColorBox from 'devextreme-react/color-box';
@@ -155,7 +153,6 @@ To process a new **ColorBox** value, you need to handle the value change event. 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxColorBox from 'devextreme-vue/color-box';
@@ -183,7 +180,6 @@ To process a new **ColorBox** value, you need to handle the value change event. 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import ColorBox from 'devextreme-react/color-box';

@@ -107,7 +107,6 @@ In the following code the **onCellPrepared** event handler is used to customize 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
@@ -132,7 +131,6 @@ In the following code the **onCellPrepared** event handler is used to customize 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';

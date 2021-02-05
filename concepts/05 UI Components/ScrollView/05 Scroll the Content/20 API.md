@@ -93,7 +93,6 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxButton } from 'devextreme-vue';
@@ -131,7 +130,6 @@ To scroll the **ScrollView** content by a specified distance, call the [scrollBy
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Button } from 'devextreme-react';
@@ -260,7 +258,6 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxButton } from 'devextreme-vue';
@@ -295,7 +292,6 @@ To scroll the content both vertically and horizontally, call the [scrollBy(dista
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Button } from 'devextreme-react';
@@ -418,7 +414,6 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxButton } from 'devextreme-vue';
@@ -453,7 +448,6 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Button } from 'devextreme-react';
@@ -583,7 +577,6 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxButton } from 'devextreme-vue';
@@ -619,7 +612,6 @@ To scroll the content to a specific element, call the [scrollToElement(targetLoc
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Button } from 'devextreme-react';

@@ -56,7 +56,6 @@ The **Autocomplete** can provide suggestions in two different modes: *'contains'
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -80,7 +79,6 @@ The **Autocomplete** can provide suggestions in two different modes: *'contains'
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
@@ -147,7 +145,6 @@ By default, the **Autocomplete** UI component starts providing suggestions once 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -162,7 +159,6 @@ By default, the **Autocomplete** UI component starts providing suggestions once 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
@@ -219,7 +215,6 @@ You can also specify the time interval the UI component should wait before provi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -234,7 +229,6 @@ You can also specify the time interval the UI component should wait before provi
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';

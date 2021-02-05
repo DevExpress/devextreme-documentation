@@ -100,7 +100,6 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -129,7 +128,6 @@ The **Popover** has two toolbars: top and bottom. Items on these toolbars can be
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover, ToolbarItem } from 'devextreme-react/popover';

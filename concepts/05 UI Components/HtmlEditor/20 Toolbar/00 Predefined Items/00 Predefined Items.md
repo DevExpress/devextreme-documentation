@@ -203,7 +203,6 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -224,7 +223,6 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
@@ -332,7 +330,6 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -359,7 +356,6 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';

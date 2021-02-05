@@ -326,7 +326,6 @@ Each list item should navigate to a different view. To implement this, follow th
     import Vue from 'vue';
     import VueRouter from 'vue-router';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import App from './App.vue';

@@ -53,7 +53,6 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -74,7 +73,6 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -140,7 +138,6 @@ Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configur
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -158,7 +155,6 @@ Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configur
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -231,7 +227,6 @@ The UI component allows a user to resize columns in two different modes: by chan
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -252,7 +247,6 @@ The UI component allows a user to resize columns in two different modes: by chan
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

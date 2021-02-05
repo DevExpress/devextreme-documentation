@@ -105,7 +105,6 @@ Use the [valueChanged](/api-reference/10%20UI%20Widgets/dxFileUploader/4%20Event
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxFileUploader } from "devextreme-vue/file-uploader";
@@ -154,7 +153,6 @@ Use the [valueChanged](/api-reference/10%20UI%20Widgets/dxFileUploader/4%20Event
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileUploader from "devextreme-react/file-uploader";

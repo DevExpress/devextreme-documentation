@@ -109,7 +109,6 @@ The following code adds the **Menu** UI component to your page. Note that the da
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMenu from 'devextreme-vue/menu';
@@ -157,7 +156,6 @@ The following code adds the **Menu** UI component to your page. Note that the da
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Menu } from 'devextreme-react/menu';

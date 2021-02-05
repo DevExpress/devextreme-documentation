@@ -117,7 +117,6 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Widg
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTextBox from 'devextreme-vue/text-box';
@@ -146,7 +145,6 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Widg
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TextBox from 'devextreme-react/text-box';

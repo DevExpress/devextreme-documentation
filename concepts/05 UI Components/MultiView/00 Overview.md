@@ -60,7 +60,6 @@ In the most simple case, the **MultiView** UI component requires only the [dataS
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
@@ -85,7 +84,6 @@ In the most simple case, the **MultiView** UI component requires only the [dataS
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';

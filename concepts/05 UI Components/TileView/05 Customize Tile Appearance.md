@@ -45,7 +45,6 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTileView } from 'devextreme-vue/tile-view';
@@ -69,7 +68,6 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TileView } from 'devextreme-react/tile-view';
@@ -157,7 +155,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTileView from "devextreme-vue/tile-view";
@@ -192,7 +189,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
     import { TileView } from 'devextreme-react/tile-view';
@@ -334,7 +330,6 @@ You can also customize individual tiles. In Angular, Vue, and React, declare the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTileView, { DxItem } from "devextreme-vue/tile-view";
@@ -350,7 +345,6 @@ You can also customize individual tiles. In Angular, Vue, and React, declare the
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TileView, Item } from 'devextreme-react/tile-view';

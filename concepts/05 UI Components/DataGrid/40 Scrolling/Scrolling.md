@@ -70,7 +70,6 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -90,7 +89,6 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Con
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -158,7 +156,6 @@ The **DataGrid** adapts its scrolling mechanism to the current platform. It util
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -178,7 +175,6 @@ The **DataGrid** adapts its scrolling mechanism to the current platform. It util
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -256,7 +252,6 @@ The current platform determines the native scrolling settings and you cannot adj
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -276,7 +271,6 @@ The current platform determines the native scrolling settings and you cannot adj
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

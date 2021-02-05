@@ -97,7 +97,6 @@ The following code shows a **validationCallback** example. The function accepts 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxNumberBox from 'devextreme-vue/number-box';
@@ -124,7 +123,6 @@ The following code shows a **validationCallback** example. The function accepts 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import NumberBox from 'devextreme-react/number-box';

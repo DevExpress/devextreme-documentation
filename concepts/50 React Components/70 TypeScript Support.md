@@ -6,7 +6,6 @@ The following code shows an example of using TypeScript with DevExtreme componen
     import * as React from 'react';
     import List from 'devextreme-react/list';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     interface IListItemProps {

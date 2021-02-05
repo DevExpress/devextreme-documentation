@@ -102,7 +102,6 @@ The following code adds a simple **Accordion** to your page. Note that each data
         </DxAccordion>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxAccordion from "devextreme-vue/accordion";
@@ -142,7 +141,6 @@ The following code adds a simple **Accordion** to your page. Note that each data
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Accordion } from 'devextreme-react/accordion';

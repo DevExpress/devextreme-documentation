@@ -60,7 +60,6 @@ Use this function to make minor adjustments to automatically generated columns. 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName}, {
@@ -85,7 +84,6 @@ Use this function to make minor adjustments to automatically generated columns. 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName}, {

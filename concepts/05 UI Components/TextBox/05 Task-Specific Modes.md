@@ -37,7 +37,6 @@ Depending on the value the **TextBox** should hold, specify the UI component [mo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
@@ -52,7 +51,6 @@ Depending on the value the **TextBox** should hold, specify the UI component [mo
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';

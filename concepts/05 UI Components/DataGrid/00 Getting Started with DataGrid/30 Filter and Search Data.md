@@ -64,7 +64,6 @@ In this tutorial, the **filterRow** and **searchPanel** are displayed:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

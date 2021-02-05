@@ -86,7 +86,6 @@ Follow the steps below to add the **HtmlEditor** to a page.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
@@ -104,7 +103,6 @@ Follow the steps below to add the **HtmlEditor** to a page.
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor } from 'devextreme-react/html-editor';

@@ -103,7 +103,6 @@ The following code adds the **ContextMenu** UI component to your page and binds 
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -144,7 +143,6 @@ The following code adds the **ContextMenu** UI component to your page and binds 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';

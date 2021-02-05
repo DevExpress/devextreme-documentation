@@ -37,7 +37,6 @@ When a user types a text into the **TextArea**, the UI component writes this tex
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -52,7 +51,6 @@ When a user types a text into the **TextArea**, the UI component writes this tex
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';
@@ -122,7 +120,6 @@ To process a new **TextArea** value, you need to handle the value change event. 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -149,7 +146,6 @@ To process a new **TextArea** value, you need to handle the value change event. 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';

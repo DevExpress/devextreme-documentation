@@ -60,7 +60,6 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
         </DxScrollView>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -76,7 +75,6 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';
@@ -144,7 +142,6 @@ The **ScrollView** employs native scrolling on most platforms, except desktops. 
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -160,7 +157,6 @@ The **ScrollView** employs native scrolling on most platforms, except desktops. 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';
@@ -228,7 +224,6 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -244,7 +239,6 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';

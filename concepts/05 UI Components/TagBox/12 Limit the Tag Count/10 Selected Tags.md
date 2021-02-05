@@ -108,7 +108,6 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/d
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -148,7 +147,6 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Widgets/d
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

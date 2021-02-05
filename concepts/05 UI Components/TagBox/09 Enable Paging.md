@@ -53,7 +53,6 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -78,7 +77,6 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

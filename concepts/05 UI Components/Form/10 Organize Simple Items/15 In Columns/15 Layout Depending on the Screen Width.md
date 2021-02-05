@@ -69,7 +69,6 @@ The **Form** UI component enables you to specify different layouts for different
             :screen-by-width="screenByWidth" />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm from 'devextreme-vue/form';
@@ -116,7 +115,6 @@ The **Form** UI component enables you to specify different layouts for different
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form from 'devextreme-react/form';

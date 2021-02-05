@@ -219,7 +219,6 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.material.blue.light.css';
     // Custom icons by Ionicons
     import 'ionicons/dist/css/ionicons.css';
@@ -271,7 +270,6 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.material.blue.light.css';
     // Custom icons by Ionicons
     import 'ionicons/dist/css/ionicons.css';

@@ -71,7 +71,6 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -98,7 +97,6 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';
@@ -232,7 +230,6 @@ If you need to position the **Toast** against a specific element on your page, s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast, DxPosition } from 'devextreme-vue/toast';
@@ -260,7 +257,6 @@ If you need to position the **Toast** against a specific element on your page, s
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast, Position } from 'devextreme-react/toast';

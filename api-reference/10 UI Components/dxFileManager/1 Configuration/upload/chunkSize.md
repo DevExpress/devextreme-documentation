@@ -85,7 +85,6 @@ The **FileManager** can divide a large file in parts and upload them in separate
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager, { Upload } from 'devextreme-react/file-manager';

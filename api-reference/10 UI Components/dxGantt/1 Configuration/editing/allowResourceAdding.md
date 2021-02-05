@@ -7,6 +7,7 @@ default: true
 ##### shortDescription
 Specifies whether a user can add [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
 [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
+
 ---
 
 ![DevExtreme Gantt Chart - Task Resources](/images/Gantt/resource-assignments.png)

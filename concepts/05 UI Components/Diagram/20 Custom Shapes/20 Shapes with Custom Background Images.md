@@ -179,7 +179,7 @@ Use the [backgroundImageUrl](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Conf
                 .Category("hardware")
                 .Type("internet")
                 .Title("Internet")
-                .BackgroundImageUrl(Url.Content("~/images/shapes/internet.svg"))
+                .BackgroundImageUrl(Url.Content("/images/shapes/internet.svg"))
                 .BackgroundImageLeft(0.15)
                 .BackgroundImageTop(0)
                 .BackgroundImageWidth(0.7)

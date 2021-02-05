@@ -11,11 +11,11 @@ Specifies whether a user can delete [tasks](/api-reference/10%20UI%20Widgets/dxG
 
 Right-click a task and select the 'Delete Task' context menu item to remove a task.
 
-![DevExtreme Gantt Chart - Delete Task](~/images/Gantt/delete-task.png)
+![DevExtreme Gantt Chart - Delete Task](/images/Gantt/delete-task.png)
 
 The alert message notifies users that deleting a task creates a gap in the workflow between the preceding and subsequent tasks.
 
-![DevExtreme Gantt Chart - Delete Task Confirmation](~/images/Gantt/delete-task-confirmation-message.png)
+![DevExtreme Gantt Chart - Delete Task Confirmation](/images/Gantt/delete-task-confirmation-message.png)
 
 ---
 ##### jQuery

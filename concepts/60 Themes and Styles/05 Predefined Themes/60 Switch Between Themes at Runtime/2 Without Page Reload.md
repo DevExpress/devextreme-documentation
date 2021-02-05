@@ -1,9 +1,8 @@
 You can use this approach only if the themes belong to the same group. For instance, you can switch from Generic Light to any other Generic theme, but not to a Generic Compact or Material Design theme (see [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')).
 
-1. Include theme stylesheets on your index page as shown below. Note that the `dx.common.css` stylesheet should be included using conventional `<link>` syntax. A theme with the `data-active` attribute set to **true** is applied. In the following code, it is Generic Light:
+1. Include theme stylesheets on your index page as shown below. A theme with the `data-active` attribute set to **true** is applied. In the following code, it is Generic Light:
 
         <head>
-            <link rel="stylesheet" href="css/dx.common.css">
             <!-- Generic themes -->
             <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true">
             <link rel="dx-theme" data-theme="generic.dark" href="css/dx.dark.css" data-active="false">

@@ -5,8 +5,7 @@ Link DevExtreme scripts and stylesheets within the `<head>` tag on your index pa
         <!-- ... -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-        <!-- DevExtreme themes -->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+        <!-- DevExtreme theme -->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
 
         <!-- DevExtreme library -->

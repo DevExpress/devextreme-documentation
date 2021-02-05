@@ -1,4 +1,4 @@
-Open the `angular.json` file and reference `dx.common.css` and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
+Open the `angular.json` file and reference a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
 
     <!-- tab: angular.json -->
     {
@@ -8,7 +8,6 @@ Open the `angular.json` file and reference `dx.common.css` and a [predefined the
             "build": {
               "options": {
                 "styles": [
-                  "node_modules/devextreme/dist/css/dx.common.css",
                   "node_modules/devextreme/dist/css/dx.light.css",
                   "src/styles.css"
                 ],

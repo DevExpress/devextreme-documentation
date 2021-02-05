@@ -28,7 +28,6 @@ Follow the steps below to add the **HtmlEditor** to a page.
     <!--HTML-->
     <head>
         <!-- ... -->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx-quill.min.js"></script>
         <!-- Required if valueType is "markdown" -->

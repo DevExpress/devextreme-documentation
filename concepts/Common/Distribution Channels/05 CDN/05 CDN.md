@@ -29,9 +29,6 @@ DevExtreme sources are available on cdnjs:
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/cdnjs_version/dx-diagram.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.min.css" rel="stylesheet">
 
-    <!-- Common DevExtreme stylesheets -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.common.css" rel="stylesheet">
-
     <!-- Theme stylesheets (reference only one of them) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.carmine.compact.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.carmine.css" rel="stylesheet">
@@ -108,9 +105,6 @@ Alternatively, you can get DevExtreme sources from DevExpress CDN:
     <!-- Diagram and Gantt stylesheets -->
     <link href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx-diagram.min.css" rel="stylesheet">
     <link href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx-gantt.min.css" rel="stylesheet">
-    
-    <!-- Common DevExtreme stylesheets -->
-    <link href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css" rel="stylesheet">
 
     <!-- Theme stylesheets (reference only one of them) -->
     <link href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.carmine.compact.css" rel="stylesheet">

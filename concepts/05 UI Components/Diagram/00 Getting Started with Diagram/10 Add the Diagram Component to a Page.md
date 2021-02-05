@@ -33,8 +33,7 @@ The Diagram UI component is a jQuery DevExtreme UI component. Common DevExtreme 
         <!--HTML-->
         @* Diagram styles*@
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx-diagram.min.css">
-        @* DevExtreme themes *@
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+        @* DevExtreme theme *@
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
         
         @* jQuery *@

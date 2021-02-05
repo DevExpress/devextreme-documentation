@@ -1,9 +1,3 @@
-
----
-##### shortDescription
-Binds the UI component to data.
-
----
 #include common-dataSource-description with {
     widget_works_with: "The **Autocomplete** works with collections of objects or `string`, `number`, or `boolean` values.",
 

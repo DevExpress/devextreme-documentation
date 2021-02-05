@@ -18,7 +18,8 @@ This property accepts the name of the data source field that provides values by 
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             columns: [{
                 dataField: "ColumnValues",

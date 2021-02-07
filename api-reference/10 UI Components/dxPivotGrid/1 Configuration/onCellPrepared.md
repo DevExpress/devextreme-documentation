@@ -35,7 +35,7 @@ Model data. Available only if Knockout is used.
 The position of a cell's row.
 
 ---
-This function allows you to customize cells and modify their content. The most usual use-cases are the following:
+This function allows you to customize cells and modify their content. Common use-cases are as follows:
 
 - Use CSS to apply styles to a **cellElement**. The code below customizes font in a separate cell:
 

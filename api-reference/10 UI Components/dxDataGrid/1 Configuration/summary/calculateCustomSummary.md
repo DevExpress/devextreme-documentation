@@ -127,17 +127,17 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 ##### jQuery
 
     <!--JavaScript-->
-    const  calculateArea = (rowData) => {
+    const calculateArea = (rowData) => {
         return rowData.width * rowData.height;
     }
 
     function calculateAreaSummary(options) {
-        if (options.name === "calculateAreaSummary") {
+        if (options.name === "AreaSummary") {
             if (options.summaryProcess === "start") {
                 options.totalValue = 0;
             }
             if (options.summaryProcess === "calculate") {
-                    options.totalValue += calculateArea(options.value);
+                options.totalValue += calculateArea(options.value);
             }
         }
     }
@@ -154,12 +154,11 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
             ],
             summary: {
                 totalItems: [{
-                        name: "AreaSummary",
-                        summaryType: "custom"
-                        showInColumn: "Area",
-                        displayFormat: "Total Area: {0}",
-                    }
-                ],
+                    name: "AreaSummary",
+                    summaryType: "custom"
+                    showInColumn: "Area",
+                    displayFormat: "Total Area: {0}",
+                }],
                 calculateCustomSummary: calculateAreaSummary
             }
         });
@@ -171,7 +170,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        constructor(private service: Service) {
+        constructor() {
             // ...
             this.calculateAreaSummary = this.calculateAreaSummary.bind(this);
         }
@@ -205,16 +204,14 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         <dxi-column dataField="height"></dxi-column>
         <dxi-column
             dataField="Area"
-            [calculateCellValue]="calculateArea"
-        ></dxi-column>
-
+            [calculateCellValue]="calculateArea">
+        </dxi-column>
         <dxo-summary [calculateCustomSummary]="calculateAreaSummary">
             <dxi-total-item
                 name="AreaSummary"
                 summaryType="custom"
                 showInColumn="Area"
-                displayFormat="Total Area: {0}"
-            >
+                displayFormat="Total Area: {0}">
             </dxi-total-item>
         </dxo-summary>
     </dx-{widget-name}>
@@ -279,7 +276,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
     function calculateArea(rowData) {
         return rowData.width * rowData.height;
-    };
+    }
 
     function calculateAreaSummary(options) {
         if (options.name === "calculateAreaSummary") {
@@ -295,7 +292,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     function App() {
         // ...
         return (
-            <DataGrid ...>
+            <DataGrid ... >
                 <Column dataField="width" />
                 <Column dataField="height" />
                 <Column dataField="Area" calculateCellValue={calculateArea} />

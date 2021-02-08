@@ -45,7 +45,7 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Widgets/GridBase/
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... >
-           <DxHeaderFilter :visible="true />
+           <DxHeaderFilter :visible="true" />
            <DxColumn :allow-header-filtering="false" ... />
         </DxDataGrid>
     </template>

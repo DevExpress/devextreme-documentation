@@ -82,7 +82,7 @@ When using Angular, Vue or React, use a different approach. Bind the [visible](/
         </div>
     </template>
     <script>
-    import '
+    import 'devextreme/dist/css/dx.light.css';
 
     import DxButton from 'devextreme-vue/button';
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -114,7 +114,7 @@ When using Angular, Vue or React, use a different approach. Bind the [visible](/
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/cs
+    import 'devextreme/dist/css/dx.light.css';
 
     import { Button } from 'devextreme-react/button';
     import { ContextMenu } from 'devextreme-react/context-menu';
@@ -224,7 +224,7 @@ When invoking the context menu from code, you may want to specify its [position]
         />
     </template>
     <script>
-    import '
+    import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
 
@@ -247,7 +247,7 @@ When invoking the context menu from code, you may want to specify its [position]
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/cs
+    import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
 

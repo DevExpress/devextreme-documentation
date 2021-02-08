@@ -14,7 +14,7 @@ Information about the event.
 The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') to which the prepared cell belongs.
 
 ##### field(e.cell): dxPivotGridPivotGridCell
-The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/').
+The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/'). This field is read-only. 
 
 ##### field(e.cellElement): dxElement
 #include common-ref-elementparam with { element: "prepared cell" }
@@ -22,7 +22,7 @@ The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20G
 ##### field(e.columnIndex): Number
 The position of a cell's column.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): PivotGrid
 The UI component [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
 
 ##### field(e.element): dxElement
@@ -35,121 +35,240 @@ Model data. Available only if Knockout is used.
 The position of a cell's row.
 
 ---
+This function allows you to customize cells and modify their content. Common use-cases are as follows:
 
-In the following code the **onCellPrepared** event handler is used to customize cells' apperance depending on the area and field types:
+- Use CSS to apply styles to a **cellElement**. The code below customizes font in a separate cell:
 
----
-##### jQuery
+    ---
+    ##### jQuery
 
-    <!-- tab: index.js -->
-    $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
-            // ...
-            onCellPrepared: function(e) {          
-                if(e.area === "row" || e.area === "column") 
-                    e.cellElement.css("font-weight", "bold")
-                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.css("backgroundColor", "lightGreen")
-            }
+        <!-- tab: index.js -->
+        $(function() {
+            $("#pivotGridContainer").dxPivotGrid({
+                // ...
+                onCellPrepared: function(e) {
+                    if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
+                        e.cellElement.css("font-size", "14px");
+                        e.cellElement.css("font-weight", "bold");
+                    }
+                }
+            });
         });
-    });
 
-##### Angular
+    ##### Angular
 
-    <!-- tab: app.component.html -->
-    <dx-{widget-name} ...
-        (onCellPrepared)="onCellPrepared($event)">
-    </dx-{widget-name}>
+        <!-- tab: app.component.html -->
+        <dx-pivot-grid ...
+            (onCellPrepared)="onCellPrepared($event)">
+        </dx-pivot-grid>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-   
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-       onCellPrepared(e) {          
-            if(e.area === "row" || e.area === "column") 
-                e.cellElement.style.fontWeight = "bold";
-            if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                e.cellElement.style.backgroundColor = "lightGreen";
-        }
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            Dx{WidgetName}Module
-        ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <Dx{WidgetName} ...
-            @cell-prepared="onCellPrepared"
-        />
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
-
-    export default {
-        components: {
-            Dx{WidgetName}
-        },
-        methods: {
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+    
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+        export class AppComponent {
             onCellPrepared(e) {          
-                if(e.area === "row" || e.area === "column") 
+                if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
+                    e.cellElement.style.fontSize = "14px";
                     e.cellElement.style.fontWeight = "bold";
-                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.style.backgroundColor = "lightGreen";
+                }
+            }
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxPivotGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxPivotGridModule
+            ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxPivotGrid ...
+                @cell-prepared="onCellPrepared"
+            />
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxPivotGrid from 'devextreme-vue/pivot-grid';
+
+        export default {
+            components: {
+                DxPivotGrid
+            },
+            methods: {
+                onCellPrepared(e) {          
+                    if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
+                        e.cellElement.style.fontSize = "14px";
+                        e.cellElement.style.fontWeight = "bold";
+                    }
+                }
             }
         }
-    }
-    </script>
+        </script>
 
-##### React
+    ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+        <!-- tab: App.js -->
+        import React, { useCallback } from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+        import PivotGrid from 'devextreme-react/pivot-grid';
 
-    import 'devextreme/dist/css/dx.light.css';
-
-    import {WidgetName} from 'devextreme-react/{widget-name}';
-
-    class App extends React.Component {
-        render() {
+        const App = () => {
+            const customizeCells = useCallback((e) {          
+                if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
+                    e.cellElement.style.fontSize = "14px";
+                    e.cellElement.style.fontWeight = "bold";
+                }
+            }, []);
+            
             return (
-                <{WidgetName} ...
-                    onCellPrepared={this.onCellPrepared}
+                <PivotGrid ...
+                    onCellPrepared={customizeCells}
                 />
             );
         }
-        onCellPrepared(e) {          
-            if(e.area === "row" || e.area === "column") 
-                e.cellElement.style.fontWeight = "bold";
-            if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                e.cellElement.style.backgroundColor = "lightGreen";
-        }
-    }
-    export default App;
+        export default App;
 
----
+    ---
+
+
+- Add a class to a **cellElement**. The following code adds a custom class to cells in the [Grand Total](/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals/Grand_Total_Row_and_Column) row and column. This code also adds another class to all cells in the *"row"* and *"column"* areas:
+
+    ---
+    ##### jQuery
+
+        <!-- tab: index.js -->
+        $(function() {
+            $("#pivotGridContainer").dxPivotGrid({
+                // ...
+                onCellPrepared: function(e) {
+                    if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
+                        e.cellElement.addClass("your-custom-class");
+                    if(e.area === "row" || e.area === "column")
+                        e.cellElement.addClass("another-custom-class");
+                }
+            });
+        });
+
+    ##### Angular
+
+        <!-- tab: app.component.html -->
+        <dx-pivot-grid ...
+            (onCellPrepared)="onCellPrepared($event)">
+        </dx-pivot-grid>
+
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+    
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+        export class AppComponent {
+            onCellPrepared(e) {          
+                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
+                    e.cellElement.addClass("your-custom-class");
+                if(e.area === "row" || e.area === "column")
+                    e.cellElement.addClass("another-custom-class");
+            }
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxPivotGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxPivotGridModule
+            ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxPivotGrid ...
+                @cell-prepared="onCellPrepared"
+            />
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxPivotGrid from 'devextreme-vue/pivot-grid';
+
+        export default {
+            components: {
+                DxPivotGrid
+            },
+            methods: {
+                onCellPrepared(e) {          
+                    if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
+                        e.cellElement.addClass("your-custom-class");
+                    if(e.area === "row" || e.area === "column")
+                        e.cellElement.addClass("another-custom-class");
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React, { useCallback } from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import PivotGrid from 'devextreme-react/pivot-grid';
+
+        const App = () => {
+            const customizeCells = useCallback((e) {          
+                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
+                    e.cellElement.addClass("your-custom-class")
+                if(e.area === "row" || e.area === "column")
+                    e.cellElement.addClass("another-custom-class");
+            }, []);
+            
+            return (
+                <PivotGrid ...
+                    onCellPrepared={customizeCells}
+                />
+            );
+        }
+        export default App;
+
+    ---
+
+    
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"
+}

@@ -121,7 +121,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
 ---
 
-**calculateCustomSummary** is called before [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue). If you want to create a new column and use its values in a custom summary, the following example demonstrates how to implement these functions:
+If a custom summary for an unbound column uses values from different columns, you need to call the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function from **calculateCustomSummary**, as shown below. In this example, the calculateArea (calculateCellValue) function creates an unbound column 'Area'. The same function is called from the calculateAreaSummary (calculateCustomSummary) function to compute the sum of areas for selected rows. Note that the example uses totalItems.**showInColumn** instead of totalItems.**column**.
 
 ---
 ##### jQuery
@@ -131,20 +131,23 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         return rowData.width * rowData.height;
     }
 
-    function calculateAreaSummary(options) {
+    const calculateAreaSummary = (options) => {
         if (options.name === "AreaSummary") {
             if (options.summaryProcess === "start") {
                 options.totalValue = 0;
             }
             if (options.summaryProcess === "calculate") {
-                options.totalValue += calculateArea(options.value);
+                if (options.component.isRowSelected(options.value.ID)) {
+                    options.totalValue += calculateArea(options.value);                      
+                }
             }
         }
-    }
+    }  
 
     $(function(){    
         $("#gridContainer").dxDataGrid({
             // ...
+            selectedRowKeys: [12, 13],
             columns: [
                 "width", "height",
                 {
@@ -170,8 +173,11 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
+        selectedRows: number[];
+
         constructor() {
             // ...
+            this.selectedRows = [12, 13];
             this.calculateAreaSummary = this.calculateAreaSummary.bind(this);
         }
 
@@ -180,11 +186,11 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         }
 
         calculateAreaSummary(options) {
-            if (options.name === "calculateAreaSummary") {
+            if (options.name === "AreaSummary") {
                 if (options.summaryProcess === "start") {
                     options.totalValue = 0;
                 }
-                if (options.summaryProcess === "calculate") {
+                if (options.component.isRowSelected(options.value.ID)) {
                     options.totalValue += this.calculateArea(options.value);
                 }
             }
@@ -199,7 +205,8 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     })
 
     <!--HTML-->
-    <dx-{widget-name} ... >
+    <dx-{widget-name} ... 
+        [selectedRowKeys]="selectedRows">
         <dxi-column dataField="width"></dxi-column>
         <dxi-column dataField="height"></dxi-column>
         <dxi-column
@@ -220,7 +227,8 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ... >
+        <DxDataGrid ... 
+            :selected-row-keys="selectedRowKeys">
             <DxColumn data-field="width" />
             <DxColumn data-field="height" />
             <DxColumn 
@@ -250,20 +258,25 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         data() {
             return {
                 // ...
-                calculateArea(rowData) {
-                    return rowData.width * rowData.height;
-                },
-                calculateAreaSummary(options) {
-                    if (options.name === "calculateAreaSummary") {
-                        if (options.summaryProcess === "start") {
-                            options.totalValue = 0;
-                        }
-                        if (options.summaryProcess === "calculate") {
+                selectedRowKeys: [12, 13]
+            };
+        },
+        methods: {
+            calculateArea(rowData) {
+                return rowData.width * rowData.height;
+            },
+            calculateAreaSummary(options) {
+                if (options.name === "AreaSummary") {
+                    if (options.summaryProcess === "start") {
+                        options.totalValue = 0;
+                    }
+                    if (options.summaryProcess === "calculate") {
+                        if (options.component.isRowSelected(options.value.ID)) {
                             options.totalValue += this.calculateArea(options.value);
                         }
                     }
-                },
-            };
+                }
+            },
         },
     }
     </script>
@@ -274,25 +287,30 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     import React from 'react';
     import DataGrid, { Column, Summary, TotalItem } from 'devextreme-react/data-grid';
 
-    function calculateArea(rowData) {
+    const calculateArea = (rowData) => {
         return rowData.width * rowData.height;
     }
 
-    function calculateAreaSummary(options) {
-        if (options.name === "calculateAreaSummary") {
+    const calculateAreaSummary = (options) => {
+        if (options.name === "AreaSummary") {
             if (options.summaryProcess === "start") {
                 options.totalValue = 0;
             }
             if (options.summaryProcess === "calculate") {
-                options.totalValue += calculateArea(options.value);
+                if (options.component.isRowSelected(options.value.ID)) {
+                    options.totalValue += calculateArea(options.value);
+                }
             }
         }
     }
 
     function App() {
         // ...
+        const selectedRowKeys = [12, 13];
+
         return (
-            <DataGrid ... >
+            <DataGrid ... 
+                selectedRowKeys={selectedRowKeys}>
                 <Column dataField="width" />
                 <Column dataField="height" />
                 <Column dataField="Area" calculateCellValue={calculateArea} />
@@ -311,8 +329,6 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     export default App;
 
 ---
-
-Note that the example above uses totalItems.**showInColumn** instead of totalItems.**column**. This is because **calculateCustomSummary** works with values from multiple columns.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomSummaries/"

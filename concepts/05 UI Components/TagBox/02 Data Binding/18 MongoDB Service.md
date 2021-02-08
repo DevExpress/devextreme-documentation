@@ -56,7 +56,6 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -83,7 +82,6 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

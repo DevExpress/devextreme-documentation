@@ -55,7 +55,6 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
@@ -81,7 +80,6 @@
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
@@ -161,7 +159,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
@@ -185,7 +182,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';

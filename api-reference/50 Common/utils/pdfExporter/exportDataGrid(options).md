@@ -135,7 +135,6 @@ You can call this method at any point in your application. In this example, we c
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -182,7 +181,6 @@ You can call this method at any point in your application. In this example, we c
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

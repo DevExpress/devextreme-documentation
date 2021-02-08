@@ -69,7 +69,6 @@ In the following code, the `strike` format is extended so that the stricken out 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
@@ -103,7 +102,6 @@ In the following code, the `strike` format is extended so that the stricken out 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor } from 'devextreme-react/html-editor';

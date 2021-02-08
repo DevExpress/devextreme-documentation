@@ -50,7 +50,6 @@ An end user can select **Tabs** items in two different modes: *'single'* (by def
             selection-mode="multiple" /> 
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabs from "devextreme-vue/tabs";
@@ -75,7 +74,6 @@ An end user can select **Tabs** items in two different modes: *'single'* (by def
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tabs } from 'devextreme-react/tabs';
@@ -159,7 +157,6 @@ If you need a tab to be preselected or to select it programmatically, pass its i
             v-model:selected-index="selectedIndex" /> 
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabs from "devextreme-vue/tabs";
@@ -185,7 +182,6 @@ If you need a tab to be preselected or to select it programmatically, pass its i
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tabs } from 'devextreme-react/tabs';
@@ -287,7 +283,6 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
             v-model:selected-items="selectedItems" /> 
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabs from "devextreme-vue/tabs";
@@ -315,7 +310,6 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tabs } from 'devextreme-react/tabs';
@@ -410,7 +404,6 @@ When the total length of all tabs exceeds the **Tabs** container, the UI compone
             :show-nav-buttons="true" /> 
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabs from "devextreme-vue/tabs";
@@ -435,7 +428,6 @@ When the total length of all tabs exceeds the **Tabs** container, the UI compone
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tabs } from 'devextreme-react/tabs';

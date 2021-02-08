@@ -63,7 +63,6 @@ To customize views in the **MultiView**, define an [itemTemplate](/api-reference
         </DxMultiView>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
@@ -95,7 +94,6 @@ To customize views in the **MultiView**, define an [itemTemplate](/api-reference
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';
@@ -219,7 +217,6 @@ You can also customize individual views. In Angular, Vue, and React, declare the
         </DxMultiView>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMultiView, { DxItem } from 'devextreme-vue/multi-view';
@@ -236,7 +233,6 @@ You can also customize individual views. In Angular, Vue, and React, declare the
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { MultiView, Item } from 'devextreme-react/multi-view';

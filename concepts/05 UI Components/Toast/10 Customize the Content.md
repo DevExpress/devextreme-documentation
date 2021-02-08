@@ -41,7 +41,6 @@ The **Toast** UI component provides four predefined appearances controlled by th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -56,7 +55,6 @@ The **Toast** UI component provides four predefined appearances controlled by th
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';
@@ -118,7 +116,6 @@ If you need to define the **Toast** content completely, specify a template for i
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -133,7 +130,6 @@ If you need to define the **Toast** content completely, specify a template for i
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';
@@ -268,7 +264,6 @@ If you need to render different templates depending on a specific condition, def
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -297,7 +292,6 @@ If you need to render different templates depending on a specific condition, def
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';

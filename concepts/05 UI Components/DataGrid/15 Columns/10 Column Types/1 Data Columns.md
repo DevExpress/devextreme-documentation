@@ -54,7 +54,6 @@ A data column automatically detects the type of its values. However, if the valu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -75,7 +74,6 @@ A data column automatically detects the type of its values. However, if the valu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

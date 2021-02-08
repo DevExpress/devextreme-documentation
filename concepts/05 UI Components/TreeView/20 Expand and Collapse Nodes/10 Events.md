@@ -52,7 +52,6 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
@@ -84,7 +83,6 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
     import TreeView from 'devextreme-react/tree-view';

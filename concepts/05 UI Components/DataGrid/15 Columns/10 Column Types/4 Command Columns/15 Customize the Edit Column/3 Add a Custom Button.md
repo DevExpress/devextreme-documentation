@@ -72,7 +72,6 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -104,7 +103,6 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -231,7 +229,6 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -258,7 +255,6 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

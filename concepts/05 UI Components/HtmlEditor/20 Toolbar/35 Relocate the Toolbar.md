@@ -56,7 +56,6 @@ In the following code, the toolbar is placed in a separate `<div>` under the **H
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -75,7 +74,6 @@ In the following code, the toolbar is placed in a separate `<div>` under the **H
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar } from 'devextreme-react/html-editor';

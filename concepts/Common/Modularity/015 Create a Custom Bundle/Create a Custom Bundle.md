@@ -27,7 +27,6 @@ Link themes to your application.
 
     <!--HTML-->
     <!--Link Themes-->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
 
 The example below demonstrates how to create an application with a single button using the modules and shows the reduced configuration file.
@@ -47,8 +46,7 @@ The example below demonstrates how to create an application with a single button
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
-        <!--Themes-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+        <!--Theme-->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
     </head>
 
@@ -97,8 +95,7 @@ The example below demonstrates how to create an application with a single button
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
-        <!--Link Themes-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+        <!--Link Theme-->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
     </head>
     <body>
@@ -151,8 +148,7 @@ The example below demonstrates how to create an application with a single button
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
-        <!--Link Themes-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+        <!--Link Theme-->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
     </head>
 

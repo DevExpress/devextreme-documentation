@@ -61,7 +61,6 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -88,7 +87,6 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

@@ -52,7 +52,6 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -76,7 +75,6 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
@@ -170,7 +168,6 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -198,7 +195,6 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';

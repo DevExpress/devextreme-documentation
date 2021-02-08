@@ -48,7 +48,6 @@ The following code adds a simple **Calendar** to your page.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
@@ -70,7 +69,6 @@ The following code adds a simple **Calendar** to your page.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';
@@ -131,7 +129,6 @@ To specify which day should be considered the beginning of the week, pass its in
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
@@ -148,7 +145,6 @@ To specify which day should be considered the beginning of the week, pass its in
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';

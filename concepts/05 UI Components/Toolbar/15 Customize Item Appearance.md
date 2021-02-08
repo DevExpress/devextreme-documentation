@@ -102,7 +102,6 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
@@ -127,7 +126,6 @@ For a minor customization of **Toolbar** items, you can define [specific fields]
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';
@@ -230,7 +228,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar from 'devextreme-vue/toolbar';
@@ -263,7 +260,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar } from 'devextreme-react/toolbar';

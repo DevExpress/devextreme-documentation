@@ -5,8 +5,7 @@ You can find all required files in the <a target="_blank" onclick="trackGAEvent(
         <!-- ... -->
         <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 
-        <!-- DevExtreme themes -->
-        <link rel="stylesheet" href="css/dx.common.css">
+        <!-- DevExtreme theme -->
         <link rel="stylesheet" href="css/dx.light.css">
 
         <!-- DevExtreme library -->

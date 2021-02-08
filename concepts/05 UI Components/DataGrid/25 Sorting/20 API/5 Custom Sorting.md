@@ -52,7 +52,6 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
@@ -70,7 +69,6 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
@@ -158,7 +156,6 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
@@ -186,7 +183,6 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';

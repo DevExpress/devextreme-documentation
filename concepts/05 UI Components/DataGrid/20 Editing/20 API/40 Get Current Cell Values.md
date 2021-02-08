@@ -86,7 +86,6 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -129,7 +128,6 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -254,7 +252,6 @@ To access a cell value after the user has edited it, but before it is saved to t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -280,7 +277,6 @@ To access a cell value after the user has edited it, but before it is saved to t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

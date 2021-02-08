@@ -73,7 +73,6 @@ The **Form** UI component displays labels on the left side of their editors and 
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
@@ -101,7 +100,6 @@ The **Form** UI component displays labels on the left side of their editors and 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem, Label } from 'devextreme-react/form';

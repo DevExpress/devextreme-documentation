@@ -63,7 +63,6 @@ To specify when the **Tooltip** should be shown and hidden, set the [showEvent](
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -78,7 +77,6 @@ To specify when the **Tooltip** should be shown and hidden, set the [showEvent](
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';
@@ -190,7 +188,6 @@ The **Tooltip** can also be hidden when a user clicks outside it. To control thi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -205,7 +202,6 @@ The **Tooltip** can also be hidden when a user clicks outside it. To control thi
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';

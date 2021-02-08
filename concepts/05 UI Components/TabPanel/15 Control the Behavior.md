@@ -45,7 +45,6 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -61,7 +60,6 @@ An end user can switch the views by swiping them or selecting tabs. Note that ta
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TabPanel } from 'devextreme-react/tab-panel';
@@ -131,7 +129,6 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -152,7 +149,6 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TabPanel } from 'devextreme-react/tab-panel';
@@ -234,7 +230,6 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -250,7 +245,6 @@ The **TabPanel** can loop the views, which enables an end user to swipe through 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TabPanel } from 'devextreme-react/tab-panel';
@@ -316,7 +310,6 @@ To specify whether or not to animate switching between views, use the [animation
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -332,7 +325,6 @@ To specify whether or not to animate switching between views, use the [animation
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TabPanel } from 'devextreme-react/tab-panel';

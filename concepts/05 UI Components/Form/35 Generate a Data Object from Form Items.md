@@ -62,7 +62,6 @@ Not only you can bind the **Form** to an existing data object, but you can also 
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
@@ -91,7 +90,6 @@ Not only you can bind the **Form** to an existing data object, but you can also 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem } from 'devextreme-react/form';

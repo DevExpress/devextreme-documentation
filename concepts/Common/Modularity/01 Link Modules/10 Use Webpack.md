@@ -26,7 +26,6 @@
 1. Add [DevExtreme themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/').  
 
         <!--HTML-->
-        <link rel="stylesheet" href="node_modules/devextreme/dist/css/dx.common.css">
         <link rel="stylesheet" href="node_modules/devextreme/dist/css/dx.light.css">
 
 1. Create your application's entry script and specify modules in it.

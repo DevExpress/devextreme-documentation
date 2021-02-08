@@ -56,7 +56,6 @@ The **ScrollView** raises the [pullDown](/api-reference/10%20UI%20Widgets/dxScro
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -78,7 +77,6 @@ The **ScrollView** raises the [pullDown](/api-reference/10%20UI%20Widgets/dxScro
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';
@@ -161,7 +159,6 @@ If an end user scrolls the content down to the bottom, the **ScrollView** raises
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -183,7 +180,6 @@ If an end user scrolls the content down to the bottom, the **ScrollView** raises
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';
@@ -267,7 +263,6 @@ If you want to process each scroll gesture performed by a user, handle the [scro
         </DxScrollView>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -291,7 +286,6 @@ If you want to process each scroll gesture performed by a user, handle the [scro
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';

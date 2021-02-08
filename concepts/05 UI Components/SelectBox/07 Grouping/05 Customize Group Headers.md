@@ -74,7 +74,6 @@ By default, group headers display text of the **key** field in a bold font. If y
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -122,7 +121,6 @@ By default, group headers display text of the **key** field in a bold font. If y
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';

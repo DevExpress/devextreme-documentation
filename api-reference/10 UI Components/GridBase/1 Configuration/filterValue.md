@@ -63,7 +63,6 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName}, {
@@ -90,7 +89,6 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName}, {
@@ -195,7 +193,6 @@ If a column's [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName}, {
@@ -226,7 +223,6 @@ If a column's [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName}, {

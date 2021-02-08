@@ -71,7 +71,6 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Widgets/GridBase/1%20Config
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -95,7 +94,6 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Widgets/GridBase/1%20Config
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

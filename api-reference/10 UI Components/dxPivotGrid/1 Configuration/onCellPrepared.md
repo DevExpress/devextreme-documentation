@@ -107,7 +107,6 @@ This function allows you to customize cells and modify their content. Common use
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxPivotGrid from 'devextreme-vue/pivot-grid';
@@ -131,10 +130,7 @@ This function allows you to customize cells and modify their content. Common use
 
         <!-- tab: App.js -->
         import React, { useCallback } from 'react';
-
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
-
         import PivotGrid from 'devextreme-react/pivot-grid';
 
         const App = () => {
@@ -226,7 +222,6 @@ This function allows you to customize cells and modify their content. Common use
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxPivotGrid from 'devextreme-vue/pivot-grid';
@@ -250,8 +245,6 @@ This function allows you to customize cells and modify their content. Common use
 
         <!-- tab: App.js -->
         import React, { useCallback } from 'react';
-
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import PivotGrid from 'devextreme-react/pivot-grid';

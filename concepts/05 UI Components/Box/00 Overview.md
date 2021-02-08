@@ -97,7 +97,6 @@ The following code adds a simple **Box** containing three items to your page. Th
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxBox, DxItem } from 'devextreme-vue/box';
@@ -125,7 +124,6 @@ The following code adds a simple **Box** containing three items to your page. Th
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Box, { Item } from 'devextreme-react/box';

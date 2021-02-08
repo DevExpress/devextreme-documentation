@@ -172,7 +172,6 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -230,7 +229,6 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import Scheduler from 'devextreme-react/scheduler';
 

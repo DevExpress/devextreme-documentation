@@ -48,7 +48,6 @@ To process new **TagBox** values, you need to handle the value change event. If 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -70,7 +69,6 @@ To process new **TagBox** values, you need to handle the value change event. If 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

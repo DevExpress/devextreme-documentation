@@ -88,7 +88,6 @@ Grid columns have equal widths by default. You can set each column's [width](/Do
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

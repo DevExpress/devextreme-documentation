@@ -53,7 +53,6 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxFilterBuilder, {
@@ -78,7 +77,6 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FilterBuilder, {

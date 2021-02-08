@@ -40,7 +40,6 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {      
@@ -59,7 +58,6 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -116,7 +114,6 @@ If a user changes the filter expression in the filter panel or filter builder, t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -132,7 +129,6 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -218,7 +214,6 @@ The **filterValue** is updated when a user changes the filter expression from th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -247,7 +242,6 @@ The **filterValue** is updated when a user changes the filter expression from th
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -407,7 +401,6 @@ The **DataGrid** provides the [filterBuilder](/api-reference/10%20UI%20Widgets/G
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxButton from 'devextreme-vue/button';
@@ -452,7 +445,6 @@ The **DataGrid** provides the [filterBuilder](/api-reference/10%20UI%20Widgets/G
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Button from 'devextreme-react/button';

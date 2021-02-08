@@ -37,7 +37,6 @@ To limit the text length, assign an integer number to the **maxLength** property
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -52,7 +51,6 @@ To limit the text length, assign an integer number to the **maxLength** property
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';

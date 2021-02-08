@@ -42,7 +42,6 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
             <!-- DevExtreme resources -->
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.material.blue.light.css">
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
 
@@ -178,7 +177,6 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
               "options": {
                 // ...
                 "styles": [
-                  "node_modules/devextreme/dist/css/dx.common.css",
                   "node_modules/devextreme/dist/css/dx.material.blue.light.css",
                   // Custom icons by Ionicons
                   "node_modules/ionicons/dist/css/ionicons.css",
@@ -219,7 +217,6 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.material.blue.light.css';
     // Custom icons by Ionicons
     import 'ionicons/dist/css/ionicons.css';
@@ -271,7 +268,6 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.material.blue.light.css';
     // Custom icons by Ionicons
     import 'ionicons/dist/css/ionicons.css';

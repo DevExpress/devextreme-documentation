@@ -63,7 +63,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName}, {
@@ -84,7 +83,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName}, {
@@ -183,7 +181,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName}, {
@@ -208,7 +205,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName}, {

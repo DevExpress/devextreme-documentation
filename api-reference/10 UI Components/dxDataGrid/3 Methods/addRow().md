@@ -80,7 +80,6 @@ Use this method if you want to add an empty row. If you need to add a row with d
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxDataGrid from 'devextreme-vue/data-grid';
@@ -112,7 +111,6 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DataGrid from 'devextreme-react/data-grid';
@@ -207,7 +205,6 @@ Use this method if you want to add an empty row. If you need to add a row with d
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxDataGrid from 'devextreme-vue/data-grid';
@@ -241,7 +238,6 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DataGrid from 'devextreme-react/data-grid';

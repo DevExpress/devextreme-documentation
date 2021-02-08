@@ -120,7 +120,6 @@ The following code shows how to use this function to customize the toolbar:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid } from 'devextreme-vue/data-grid';
@@ -165,7 +164,6 @@ The following code shows how to use this function to customize the toolbar:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

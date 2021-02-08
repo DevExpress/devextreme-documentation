@@ -93,7 +93,6 @@ This property accepts an array of dates:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
@@ -119,7 +118,6 @@ This property accepts an array of dates:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
@@ -220,7 +218,6 @@ Alternatively, pass a function to **disabledDates**. This function should define
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
@@ -247,7 +244,6 @@ Alternatively, pass a function to **disabledDates**. This function should define
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';

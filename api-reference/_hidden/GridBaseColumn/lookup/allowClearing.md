@@ -81,7 +81,6 @@ To specify this property based on a condition, set the [showClearButton](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
@@ -106,7 +105,6 @@ To specify this property based on a condition, set the [showClearButton](/api-re
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';

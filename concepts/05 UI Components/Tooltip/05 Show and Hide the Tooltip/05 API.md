@@ -169,7 +169,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -199,7 +198,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';

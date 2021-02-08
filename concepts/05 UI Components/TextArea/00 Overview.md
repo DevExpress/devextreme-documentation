@@ -45,7 +45,6 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -60,7 +59,6 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';
@@ -116,7 +114,6 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -131,7 +128,6 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';
@@ -192,7 +188,6 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -207,7 +202,6 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';

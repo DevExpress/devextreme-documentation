@@ -86,7 +86,6 @@ The type of right-clicked task or dependency.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -109,7 +108,6 @@ The type of right-clicked task or dependency.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Gantt from 'devextreme-react/gantt';

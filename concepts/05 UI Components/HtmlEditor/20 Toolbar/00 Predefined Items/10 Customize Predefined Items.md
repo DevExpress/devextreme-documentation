@@ -56,7 +56,6 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -82,7 +81,6 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
@@ -187,7 +185,6 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -214,7 +211,6 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';

@@ -69,7 +69,6 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -100,7 +99,6 @@ To execute certain commands before or after the **Toast** was shown/hidden, hand
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';

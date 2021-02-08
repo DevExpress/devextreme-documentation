@@ -57,7 +57,6 @@ For a minor customization of **SelectBox** items, you can define [specific field
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -83,7 +82,6 @@ For a minor customization of **SelectBox** items, you can define [specific field
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -169,7 +167,6 @@ If you need a more flexible solution, specify [itemTemplate](/api-reference/10%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -201,7 +198,6 @@ If you need a more flexible solution, specify [itemTemplate](/api-reference/10%2
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -338,7 +334,6 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
         </DxSelectBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxSelectBox, { DxItem } from "devextreme-vue/select-box";
@@ -355,7 +350,6 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { SelectBox, Item } from 'devextreme-react/select-box';
@@ -456,7 +450,6 @@ Using similar techniques, you can customize the input field of the **SelectBox**
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -490,7 +483,6 @@ Using similar techniques, you can customize the input field of the **SelectBox**
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { SelectBox } from 'devextreme-react/select-box';

@@ -55,7 +55,6 @@ To process new **RangeSlider** values, you need to handle the value change event
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxRangeSlider } from 'devextreme-vue/range-slider';
@@ -83,7 +82,6 @@ To process new **RangeSlider** values, you need to handle the value change event
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { RangeSlider } from 'devextreme-react/range-slider';

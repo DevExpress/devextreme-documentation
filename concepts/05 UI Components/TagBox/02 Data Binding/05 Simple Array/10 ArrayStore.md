@@ -57,7 +57,6 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -85,7 +84,6 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -188,7 +186,6 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -219,7 +216,6 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

@@ -5,7 +5,6 @@ DevExtreme components raise events that you should handle to update the parent c
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TextBox from 'devextreme-react/text-box';

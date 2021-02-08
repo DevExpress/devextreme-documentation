@@ -47,7 +47,6 @@ If instead of picking a value, an end user types it into the **DateBox**, this v
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
@@ -68,7 +67,6 @@ If instead of picking a value, an end user types it into the **DateBox**, this v
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DateBox from 'devextreme-react/date-box';
@@ -149,7 +147,6 @@ To process a new **DateBox** value, you need to handle the value change event. I
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
@@ -177,7 +174,6 @@ To process a new **DateBox** value, you need to handle the value change event. I
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DateBox from 'devextreme-react/date-box';

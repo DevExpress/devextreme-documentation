@@ -43,7 +43,6 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
@@ -65,7 +64,6 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Calendar from 'devextreme-react/calendar';

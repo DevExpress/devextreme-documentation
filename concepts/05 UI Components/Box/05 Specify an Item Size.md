@@ -99,7 +99,6 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxBox, DxItem } from 'devextreme-vue/box';
@@ -127,7 +126,6 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Box, { Item } from 'devextreme-react/box';
@@ -264,7 +262,6 @@ If **ratio** applies when there is an available space, **shrink** applies when s
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxBox, DxItem } from 'devextreme-vue/box';
@@ -292,7 +289,6 @@ If **ratio** applies when there is an available space, **shrink** applies when s
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Box, { Item } from 'devextreme-react/box';
@@ -425,7 +421,6 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxBox, DxItem } from 'devextreme-vue/box';
@@ -453,7 +448,6 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Box, { Item } from 'devextreme-react/box';

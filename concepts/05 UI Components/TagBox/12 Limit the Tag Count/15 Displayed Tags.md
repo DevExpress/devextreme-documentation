@@ -60,7 +60,6 @@ Specify the [maxDisplayedTags](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -86,7 +85,6 @@ Specify the [maxDisplayedTags](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Con
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -188,7 +186,6 @@ You can also customize the multi-tag within the [onMultiTagPreparing](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -226,7 +223,6 @@ You can also customize the multi-tag within the [onMultiTagPreparing](/api-refer
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

@@ -151,7 +151,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
@@ -196,7 +195,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';

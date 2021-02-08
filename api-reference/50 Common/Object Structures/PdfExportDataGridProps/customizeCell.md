@@ -135,7 +135,6 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -189,7 +188,6 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

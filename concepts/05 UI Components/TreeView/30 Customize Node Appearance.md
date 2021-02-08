@@ -73,7 +73,6 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
@@ -113,7 +112,6 @@ For minor customization of nodes, you can define [specific fields](/api-referenc
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
@@ -202,7 +200,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         </DxTreeView>    
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
@@ -240,7 +237,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
@@ -339,7 +335,6 @@ You can also customize individual nodes. In Angular, Vue, and React, declare the
         </DxTreeView>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTreeView, DxItem } from 'devextreme-vue/tree-view';
@@ -357,7 +352,6 @@ You can also customize individual nodes. In Angular, Vue, and React, declare the
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeView, { Item } from 'devextreme-react/tree-view';

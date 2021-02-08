@@ -141,7 +141,6 @@ In the following code, the **onInitNewRow** function is used to provide default 
         </Dx{WidgetName}>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';
@@ -188,7 +187,6 @@ In the following code, the **onInitNewRow** function is used to provide default 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';

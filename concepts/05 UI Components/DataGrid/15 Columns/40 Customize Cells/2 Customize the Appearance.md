@@ -41,7 +41,6 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -62,7 +61,6 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -174,7 +172,6 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -204,7 +201,6 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

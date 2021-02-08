@@ -47,7 +47,6 @@ To specify what views are available within the switcher, use the [views](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -69,7 +68,6 @@ To specify what views are available within the switcher, use the [views](/api-re
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
@@ -135,7 +133,6 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -152,7 +149,6 @@ To use the drop-down menu on all types of devices, assign **true** to the [useDr
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

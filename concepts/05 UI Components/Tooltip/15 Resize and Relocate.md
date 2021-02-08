@@ -71,7 +71,6 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -86,7 +85,6 @@ To change the size of the **Tooltip**, specify the [height](/api-reference/10%20
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';
@@ -203,7 +201,6 @@ If you need to position the **Tooltip** against a certain side of the [target el
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -218,7 +215,6 @@ If you need to position the **Tooltip** against a certain side of the [target el
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';

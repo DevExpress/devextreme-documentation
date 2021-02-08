@@ -48,7 +48,6 @@ The following code creates the **FileManager** UI component and adds it to your 
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';     
 
         import { DxFileManager } from 'devextreme-vue/file-manager';
@@ -65,7 +64,6 @@ The following code creates the **FileManager** UI component and adds it to your 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager from 'devextreme-react/file-manager';

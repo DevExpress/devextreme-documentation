@@ -46,7 +46,6 @@ The [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/colu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -68,7 +67,6 @@ The [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/colu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -133,7 +131,6 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -163,7 +160,6 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

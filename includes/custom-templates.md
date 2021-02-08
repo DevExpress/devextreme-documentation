@@ -95,7 +95,6 @@ The following code shows how to declare a template and use these parameters. Thi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxList from 'devextreme-vue/list';
@@ -119,7 +118,6 @@ The following code shows how to declare a template and use these parameters. Thi
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import List from 'devextreme-react/list';
@@ -244,7 +242,6 @@ Collection UI components also support templates for individual items. Do not spe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxList, {
@@ -265,7 +262,6 @@ Collection UI components also support templates for individual items. Do not spe
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import List, { Item } from 'devextreme-react/list';

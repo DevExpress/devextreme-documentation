@@ -61,7 +61,6 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -83,7 +82,6 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -209,7 +207,6 @@ The following code shows a **CustomStore** configuration in which the **load** f
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxList from 'devextreme-vue/list';
@@ -256,7 +253,6 @@ The following code shows a **CustomStore** configuration in which the **load** f
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import List from 'devextreme-react/list';

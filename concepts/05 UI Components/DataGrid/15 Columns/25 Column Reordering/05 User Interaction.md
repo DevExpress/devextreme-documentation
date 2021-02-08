@@ -49,7 +49,6 @@ If a specific column should not be moved, set its [allowReordering](/api-referen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -70,7 +69,6 @@ If a specific column should not be moved, set its [allowReordering](/api-referen
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

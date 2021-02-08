@@ -49,7 +49,6 @@ In addition to value formatting, the **displayFormat** can be used as a mask to 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
@@ -65,7 +64,6 @@ In addition to value formatting, the **displayFormat** can be used as a mask to 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DateBox from 'devextreme-react/date-box';

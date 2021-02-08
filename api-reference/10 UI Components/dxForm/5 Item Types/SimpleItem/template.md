@@ -137,7 +137,6 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateB
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm, {
@@ -178,7 +177,6 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateB
     <!-- tab: App.js -->
     import React, { useState } from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form, {

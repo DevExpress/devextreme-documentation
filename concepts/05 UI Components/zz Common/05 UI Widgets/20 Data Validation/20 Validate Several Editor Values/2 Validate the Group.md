@@ -179,7 +179,6 @@ Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Met
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTextBox from 'devextreme-vue/text-box';
@@ -221,7 +220,6 @@ Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Met
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TextBox from 'devextreme-react/text-box';
@@ -416,7 +414,6 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTextBox from 'devextreme-vue/text-box';
@@ -453,7 +450,6 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';

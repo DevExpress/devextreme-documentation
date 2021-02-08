@@ -87,7 +87,6 @@ You can add a button that performs a custom action using a [button item](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxEmptyItem, DxSimpleItem, DxButtonItem, DxButtonOptions } from 'devextreme-vue/form';
@@ -117,7 +116,6 @@ You can add a button that performs a custom action using a [button item](/api-re
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, EmptyItem, SimpleItem, ButtonItem, ButtonOptions } from 'devextreme-react/form';

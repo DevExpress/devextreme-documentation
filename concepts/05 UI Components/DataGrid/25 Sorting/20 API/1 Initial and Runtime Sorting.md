@@ -65,7 +65,6 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
@@ -83,7 +82,6 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
@@ -161,7 +159,6 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
@@ -189,7 +186,6 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';

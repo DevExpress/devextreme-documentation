@@ -53,7 +53,6 @@ To process a new **CheckBox** value, you need to handle the value change event. 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCheckBox from 'devextreme-vue/check-box';
@@ -81,7 +80,6 @@ To process a new **CheckBox** value, you need to handle the value change event. 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import CheckBox from 'devextreme-react/check-box';

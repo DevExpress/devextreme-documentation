@@ -57,7 +57,6 @@ For a minor customization of **ContextMenu** items, you can define [specific fie
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -82,7 +81,6 @@ For a minor customization of **ContextMenu** items, you can define [specific fie
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
@@ -163,7 +161,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         </DxContextMenu>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -188,7 +185,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';

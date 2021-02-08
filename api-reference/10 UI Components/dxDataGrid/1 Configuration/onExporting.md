@@ -143,7 +143,6 @@ You can use this function to adjust column properties before export. In the foll
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxExport, DxColumn } from 'devextreme-vue/data-grid';
@@ -186,7 +185,6 @@ You can use this function to adjust column properties before export. In the foll
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Workbook } from 'exceljs';

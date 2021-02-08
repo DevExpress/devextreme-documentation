@@ -55,7 +55,6 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler, { DxEditing } from 'devextreme-vue/scheduler';
@@ -78,7 +77,6 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler, { Editing } from 'devextreme-react/scheduler';

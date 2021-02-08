@@ -39,7 +39,6 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -59,7 +58,6 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
@@ -137,7 +135,6 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -162,7 +159,6 @@ Bind the **Lookup** to an array by passing it to the [dataSource](/api-reference
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
@@ -253,7 +249,6 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -284,7 +279,6 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';

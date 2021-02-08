@@ -83,7 +83,6 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Dx{WidgetName}, {
@@ -108,7 +107,6 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName}, {

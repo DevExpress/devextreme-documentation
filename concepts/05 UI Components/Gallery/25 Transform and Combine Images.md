@@ -59,7 +59,6 @@ By default, the **Gallery** UI component displays one image at a time. To fit mo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
@@ -84,7 +83,6 @@ By default, the **Gallery** UI component displays one image at a time. To fit mo
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
@@ -177,7 +175,6 @@ When distributing images along the total width, the **Gallery** may add margins 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
@@ -202,7 +199,6 @@ When distributing images along the total width, the **Gallery** may add margins 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
@@ -298,7 +294,6 @@ The **Gallery** UI component allows you to display not only the current image, b
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
@@ -323,7 +318,6 @@ The **Gallery** UI component allows you to display not only the current image, b
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';

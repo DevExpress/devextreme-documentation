@@ -55,7 +55,6 @@ The **Form** UI component can have a fixed number of columns in the layout...
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
@@ -82,7 +81,6 @@ The **Form** UI component can have a fixed number of columns in the layout...
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem } from 'devextreme-react/form';
@@ -217,7 +215,6 @@ The **Form** UI component can have a fixed number of columns in the layout...
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxTabbedItem, DxSimpleItem, DxTab } from 'devextreme-vue/form';
@@ -249,7 +246,6 @@ The **Form** UI component can have a fixed number of columns in the layout...
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem, TabbedItem, Tab }  from 'devextreme-react/form';

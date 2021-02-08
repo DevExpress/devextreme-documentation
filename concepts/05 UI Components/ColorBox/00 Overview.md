@@ -50,7 +50,6 @@ The following code adds a simple **ColorBox** to your page.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxColorBox from 'devextreme-vue/color-box';
@@ -71,7 +70,6 @@ The following code adds a simple **ColorBox** to your page.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import ColorBox from 'devextreme-react/color-box';

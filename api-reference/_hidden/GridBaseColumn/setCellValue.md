@@ -103,7 +103,6 @@ This function allows you to process user input before it is saved to the data so
         </Dx{WidgetName}>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';
@@ -128,7 +127,6 @@ This function allows you to process user input before it is saved to the data so
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';
@@ -284,7 +282,6 @@ If you need to perform asynchronous operations in the **setCellValue** function,
         </Dx{WidgetName}>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';
@@ -322,7 +319,6 @@ If you need to perform asynchronous operations in the **setCellValue** function,
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';

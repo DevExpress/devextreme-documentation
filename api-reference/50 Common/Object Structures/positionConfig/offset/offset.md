@@ -52,7 +52,6 @@ In the following code, the overlay element is shifted 50 pixels to the right and
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxPopup, {
@@ -74,7 +73,6 @@ In the following code, the overlay element is shifted 50 pixels to the right and
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Popup, {

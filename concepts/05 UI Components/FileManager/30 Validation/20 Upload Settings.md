@@ -79,7 +79,6 @@ The UI component allows you to configure upload settings:
         </DxFileManager>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';    
     
     import {
@@ -107,7 +106,6 @@ The UI component allows you to configure upload settings:
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager, { 

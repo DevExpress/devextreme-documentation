@@ -45,7 +45,6 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
@@ -60,7 +59,6 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
@@ -123,7 +121,6 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
@@ -138,7 +135,6 @@ If an end user should _not_ be able to edit the value in the **TextBox**, assign
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';

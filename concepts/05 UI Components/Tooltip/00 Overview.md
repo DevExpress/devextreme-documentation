@@ -68,7 +68,6 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -83,7 +82,6 @@ The following code creates a simple **Tooltip** on your page and attaches it to 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';

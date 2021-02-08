@@ -49,7 +49,6 @@ The default size of the **Map** UI component is 300x300 pixels. To change it, us
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -69,7 +68,6 @@ The default size of the **Map** UI component is 300x300 pixels. To change it, us
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';
@@ -157,7 +155,6 @@ If you prefer specifying the UI component size using CSS, set the **width** and 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -185,7 +182,6 @@ If you prefer specifying the UI component size using CSS, set the **width** and 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';

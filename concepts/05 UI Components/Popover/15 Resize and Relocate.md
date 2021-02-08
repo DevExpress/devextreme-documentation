@@ -66,7 +66,6 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
@@ -81,7 +80,6 @@ To change the size of the **Popover**, specify the [height](/api-reference/10%20
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover } from 'devextreme-react/popover';
@@ -190,7 +188,6 @@ If you need to position the **Popover** against a certain side of the [target el
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
@@ -205,7 +202,6 @@ If you need to position the **Popover** against a certain side of the [target el
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover } from 'devextreme-react/popover';

@@ -55,7 +55,6 @@ The **DataGrid** UI component raises events before and after a row is inserted, 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -77,7 +76,6 @@ The **DataGrid** UI component raises events before and after a row is inserted, 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -164,7 +162,6 @@ In addition, the **DataGrid** raises the [initNewRow](/api-reference/10%20UI%20W
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -187,7 +184,6 @@ In addition, the **DataGrid** raises the [initNewRow](/api-reference/10%20UI%20W
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

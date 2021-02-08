@@ -53,7 +53,6 @@ The following code adds the **NumberBox** to your page. The simplest configurati
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxNumberBox from 'devextreme-vue/number-box';
@@ -70,7 +69,6 @@ The following code adds the **NumberBox** to your page. The simplest configurati
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import NumberBox from 'devextreme-react/number-box';

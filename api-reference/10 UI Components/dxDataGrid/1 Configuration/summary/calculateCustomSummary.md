@@ -166,9 +166,6 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
             DxTotalItem
         },
         methods: {
-            calculateArea(rowData) {
-                return rowData.width * rowData.height;
-            },
             calculateCustomSummary(options) {
                 // Calculating "customSummary1"
                 if(options.name == "customSummary1") {

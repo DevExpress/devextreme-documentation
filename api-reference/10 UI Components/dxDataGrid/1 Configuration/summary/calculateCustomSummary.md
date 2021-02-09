@@ -314,8 +314,10 @@ You can use the **value** field to access a column value. If you do not specify 
                 if (options.summaryProcess === "start") {
                     options.totalValue = 0;
                 }
-                if (options.component.isRowSelected(options.value.ID)) {
-                    options.totalValue += this.calculateArea(options.value);
+                if (options.summaryProcess === "calculate") {
+                    if (options.component.isRowSelected(options.value.ID)) {
+                        options.totalValue += calculateArea(options.value);
+                    }
                 }
             }
         }

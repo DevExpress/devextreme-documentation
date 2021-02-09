@@ -56,6 +56,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
                                 break;
                             case "finalize":
                                 // Assigning the final value to "totalValue" here
+                                break;
                         }
                     }
 
@@ -71,7 +72,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
 #####Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <dxo-summary [calculateCustomSummary]="calculateSummary">
             <dxi-total-item
@@ -85,9 +86,14 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         </dxo-summary>
     </dx-data-grid>
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         calculateSummary(options) {
             // Calculating "customSummary1"
@@ -101,6 +107,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
                         break;
                     case "finalize":
                         // Assigning the final value to "totalValue" here
+                        break;
                 }
             }
 
@@ -111,6 +118,11 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
             }
         };
     }
+
+    <!-- tab: app.module.ts -->
+    // ...;
+    import { DxDataGridModule } from 'devextreme-angular';
+
     @NgModule({
         imports: [
             // ...
@@ -118,10 +130,115 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
         ],
         // ...
     })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary :calculate-custom-summary="calculateCustomSummary">
+                <DxTotalItem
+                    name="сustomSummary1"
+                    summary-type="custom"
+                />
+                <DxTotalItem
+                    name="сustomSummary2"
+                    summary-type="custom"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+    <script>
+    import { DxDataGrid, DxSummary, DxTotalItem } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSummary, 
+            DxTotalItem
+        },
+        methods: {
+            calculateArea(rowData) {
+                return rowData.width * rowData.height;
+            },
+            calculateCustomSummary(options) {
+                // Calculating "customSummary1"
+                if(options.name == "customSummary1") {
+                    switch(options.summaryProcess) {
+                        case "start":
+                            // Initializing "totalValue" here
+                            break;
+                        case "calculate":
+                            // Modifying "totalValue" here
+                            break;
+                        case "finalize":
+                            // Assigning the final value to "totalValue" here
+                            break;
+                    }
+                }
+
+                // Calculating "customSummary2"
+                if(options.name == "customSummary2") {
+                    // ...
+                    // Same "switch" statement here
+                }
+            },
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import DataGrid, { Column, TotalItem } from 'devextreme-react/data-grid';
+
+    const calculateCustomSummary = (options) => {
+        // Calculating "customSummary1"
+        if(options.name == "customSummary1") {
+            switch(options.summaryProcess) {
+                case "start":
+                    // Initializing "totalValue" here
+                    break;
+                case "calculate":
+                    // Modifying "totalValue" here
+                    break;
+                case "finalize":
+                    // Assigning the final value to "totalValue" here
+                    break;
+            }
+        }
+
+        // Calculating "customSummary2"
+        if(options.name == "customSummary2") {
+            // ...
+            // Same "switch" statement here
+        }
+    }
+
+    function App() {
+        return (
+            <DataGrid ... >
+                <Summary calculateCustomSummary={calculateCustomSummary}>
+                    <TotalItem
+                        name="customSummary1"
+                        summaryType="custom"
+                    />
+                    <TotalItem
+                        name="customSummary2"
+                        summaryType="custom"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
+
+    export default App;
 
 ---
 
-If a custom summary for an unbound column uses values from different columns, you need to call the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function from **calculateCustomSummary**, as shown below. In this example, the calculateArea (calculateCellValue) function creates an unbound column 'Area'. The same function is called from the calculateAreaSummary (calculateCustomSummary) function to compute the sum of areas for selected rows. Note that the example uses totalItems.**showInColumn** instead of totalItems.**column**.
+You can use the **value** field to access a column value. If you do not specify a [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) by which to calculate the summary, the **value** field contains an entire data object. However, this object misses values from unbound columns calculated in the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function. If you need these values for your custom summary, call the **calculateCellValue** function from inside **calculateCustomSummary**, as shown below. In this example, the calculateArea (calculateCellValue) function creates an unbound column 'Area'. The same function is called from the calculateAreaSummary (calculateCustomSummary) function to compute the sum of areas for selected rows.
 
 ---
 ##### jQuery
@@ -169,8 +286,8 @@ If a custom summary for an unbound column uses values from different columns, yo
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
+    <!-- app.component.ts -->
+    import { Component } from '@angular/core';
     // ...
     export class AppComponent {
         selectedRows: number[];
@@ -196,16 +313,9 @@ If a custom summary for an unbound column uses values from different columns, yo
             }
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
 
-    <!--HTML-->
-    <dx-{widget-name} ... 
+    <!-- app.component.html -->
+    <dx-data-grid ... 
         [selectedRowKeys]="selectedRows">
         <dxi-column dataField="width"></dxi-column>
         <dxi-column dataField="height"></dxi-column>
@@ -221,7 +331,20 @@ If a custom summary for an unbound column uses values from different columns, yo
                 displayFormat="Total Area: {0}">
             </dxi-total-item>
         </dxo-summary>
-    </dx-{widget-name}>
+    </dx-data-grid>
+
+    <!-- tab: app.module.ts -->
+    // ...;
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            // ...
+            DxDataGridModule
+        ],
+        // ...
+    })
+    export class AppModule { }
     
 ##### Vue
 
@@ -280,6 +403,8 @@ If a custom summary for an unbound column uses values from different columns, yo
         },
     }
     </script>
+
+
 
 ##### React
 

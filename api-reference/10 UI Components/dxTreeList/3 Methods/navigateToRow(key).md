@@ -1,11 +1,3 @@
----
-##### shortDescription
-Navigates to a row with the specified key.
-
-##### param(key): any
-The row's key.
-
----
 This method performs the following actions:
 
 1. Switches the UI component to the data page that contains the specified row.

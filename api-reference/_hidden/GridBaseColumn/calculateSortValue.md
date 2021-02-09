@@ -30,7 +30,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
         <dxi-column
             dataField="Position" <!-- provides column values -->
@@ -38,19 +38,25 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         </dxi-column>
     </dx-{widget-name}>
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { }
     
 
 ##### Vue
@@ -122,7 +128,16 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 ##### Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ... >
+        <dxi-column
+            dataField="Position"
+            sortOrder="asc"
+            [calculateSortValue]="customSortingFunction">
+        </dxi-column>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -134,22 +149,26 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
                 return rowData.Position; // Others are sorted as usual
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
 
-    <!--HTML-->
-    <dx-{widget-name} ... >
-        <dxi-column
-            dataField="Position"
-            sortOrder="asc"
-            [calculateSortValue]="customSortingFunction">
-        </dxi-column>
-    </dx-{widget-name}>
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { }
     
 ##### Vue
 

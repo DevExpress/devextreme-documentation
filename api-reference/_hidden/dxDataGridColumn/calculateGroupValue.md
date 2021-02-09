@@ -20,7 +20,7 @@ This property accepts the name of the data source field that provides values by 
 
     <!--JavaScript-->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#dataGridContainer").dxDataGrid({
             columns: [{
                 dataField: "ColumnValues",
                 groupIndex: 0,
@@ -31,28 +31,34 @@ This property accepts the name of the data source field that provides values by 
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-{widget-name} ... >
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
         <dxi-column
             dataField="ColumnValues"
             [groupIndex]="0"
             calculateGroupValue="GroupingValues">
         </dxi-column>
-    </dx-{widget-name}>
+    </dx-data-grid>
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { }
     
 
 ##### Vue
@@ -109,35 +115,36 @@ This property accepts the name of the data source field that provides values by 
 ##### jQuery
 
     <!--JavaScript-->
-    const convertDateToString = date => {
-        return date.toISOString().split('T')[0].replaceAll('-', '/');
+    const getDayDifference = (date1, date2) => {
+        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#dataGridContainer").dxDataGrid({
             columns: [
                 // ...
                 {
                     dataField: "HireDate",
                     dataType: "date",
                     groupIndex: 0,
-                    calculateGroupValue: function(rowData){       
-                        const date = rowData.HireDate;
-                        const yesterdayDate = new Date();
-                        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+                    calculateGroupValue: function(rowData) {       
+                        const currentHireDate = rowData.HireDate;
+                        const today = new Date();
+                        today.setHours(0,0,0,0);
 
-                        const today = convertDateToString(new Date());
-                        const yesterday = convertDateToString(yesterdayDate);
-
-                        switch (date) {
-                            case today:
-                                return "Today";
-                            case yesterday:
-                                return "Yesterday";
+                        const dayDifference = getDayDifference(today, currentHireDate);
+                        switch (dayDifference) {
+                            case 0:
+                            return "Today";
+                            break;
+                        case 1:
+                            return "Yesterday";
+                            break; 
                             // ...
-                            default:
-                                return "Earlier";
-                        }      
+                        default:
+                            return "Earlier";
+                        };    
                     }
                 }
             ]
@@ -146,8 +153,8 @@ This property accepts the name of the data source field that provides values by 
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-{widget-name} ... >
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
         <!-- ... -->
         <dxi-column
             dataField="HireDate"
@@ -155,44 +162,58 @@ This property accepts the name of the data source field that provides values by 
             [calculateGroupValue]="groupByDate"
             dataType="date">
         </dxi-column>
-    </dx-{widget-name}>
+    </dx-data-grid>
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
+    <!-- tab: app.component.ts -->
+    import { DxDataGridModule } from "devextreme-angular";
     // ...
 
-    const convertDateToString = (date) => {
-        return date.toISOString().split("T")[0].replaceAll("-", "/");
+    const getDayDifference = (date1, date2) => {
+        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
     export class AppComponent {
         // ...
         groupByDate(rowData) {         
-            const date = rowData.HireDate;
-            const yesterdayDate = new Date();
-            yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+            const currentHireDate = rowData.HireDate;
+            const today = new Date();
+            today.setHours(0,0,0,0);
 
-            const today = convertDateToString(new Date());
-            const yesterday = convertDateToString(yesterdayDate);
-
-            switch (date) {
-                case today:
-                    return "Today";
-                case yesterday:
-                    return "Yesterday";
+            const dayDifference = getDayDifference(today, currentHireDate);
+            switch (dayDifference) {
+                case 0:
+                return "Today";
+                break;
+            case 1:
+                return "Yesterday";
+                break; 
                 // ...
-                default:
-                    return "Earlier";
-            }
+            default:
+                return "Earlier";
+            };  
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { }
     
 
 ##### Vue
@@ -211,8 +232,9 @@ This property accepts the name of the data source field that provides values by 
     <script>
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
-    const convertDateToString = (date) => {
-        return date.toISOString().split("T")[0].replaceAll("-", "/");
+    const getDayDifference = (date1, date2) => {
+        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
     export default {
@@ -222,22 +244,22 @@ This property accepts the name of the data source field that provides values by 
         },
         methods: {
             groupByDate(rowData) {               
-                const date = rowData.HireDate;
-                const yesterdayDate = new Date();
-                yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+                const currentHireDate = rowData.HireDate;
+                const today = new Date();
+                today.setHours(0,0,0,0);
 
-                const today = convertDateToString(new Date());
-                const yesterday = convertDateToString(yesterdayDate);
-
-                switch (date) {
-                    case today:
-                        return "Today";
-                    case yesterday:
-                        return "Yesterday";
+                const dayDifference = getDayDifference(today, currentHireDate);
+                switch (dayDifference) {
+                    case 0:
+                    return "Today";
+                    break;
+                case 1:
+                    return "Yesterday";
+                    break; 
                     // ...
-                    default:
-                        return "Earlier";
-                }
+                default:
+                    return "Earlier";
+                };  
             }
         }
         // ...
@@ -250,29 +272,30 @@ This property accepts the name of the data source field that provides values by 
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const convertDateToString = (date) => {
-        return date.toISOString().split("T")[0].replaceAll("-", "/");
+    const getDayDifference = (date1, date2) => {
+        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
     function App() {
         // ...
         const groupByDate = (rowData) => {          
-            const date = rowData.HireDate;
-            const yesterdayDate = new Date();
-            yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+            const currentHireDate = rowData.HireDate;
+            const today = new Date();
+            today.setHours(0,0,0,0);
 
-            const today = convertDateToString(new Date());
-            const yesterday = convertDateToString(yesterdayDate);
-
-            switch (date) {
-                case today:
-                    return "Today";
-                case yesterday:
-                    return "Yesterday";
+            const dayDifference = getDayDifference(today, currentHireDate);
+            switch (dayDifference) {
+                case 0:
+                return "Today";
+                break;
+            case 1:
+                return "Yesterday";
+                break; 
                 // ...
-                default:
-                    return "Earlier";
-            }
+            default:
+                return "Earlier";
+            };  
         };  
 
         return (

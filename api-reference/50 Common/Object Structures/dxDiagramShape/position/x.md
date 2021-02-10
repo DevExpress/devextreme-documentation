@@ -1,0 +1,9 @@
+---
+id: dxDiagramShape.position.x
+type: Number
+---
+---
+##### shortDescription
+The horizontal shape position specified in [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units').
+
+---

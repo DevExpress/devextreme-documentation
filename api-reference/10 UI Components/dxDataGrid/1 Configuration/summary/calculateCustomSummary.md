@@ -25,7 +25,7 @@ Indicates the stage of the summary item calculation; equals *"start"*, *"calcula
 The resulting summary item's value.
 
 ##### field(options.value): any
-A column value used in calculation. If you need an entire data object in this field, do not specify the summary item's [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) property. To display the summary in this case, use the [showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) property instead.
+A column used to calculate the summary. If you need an entire data object in this field, do not specify the summary item's [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) property. To display the summary in this case, use the [showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) property instead.
 
 ---
 This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify it in the function.
@@ -245,7 +245,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
 ---
 
-You can use the **value** field to access a column value. If you do not specify a [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) by which to calculate the summary, the **value** field contains an entire data object. However, this object misses values from unbound columns calculated in the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function. If you need these values for your custom summary, call the **calculateCellValue** function from inside **calculateCustomSummary**, as shown below. In this example, the calculateArea (calculateCellValue) function creates an unbound column 'Area'. The same function is called from the calculateAreaSummary (calculateCustomSummary) function to compute the sum of areas for selected rows.
+You can use the **value** field to retrieve the current column value. If you do not specify a [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) for which to calculate the summary, the **value** field contains an entire data object. However, this object misses values from unbound columns calculated in the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function. If you need these values for your custom summary, call the **calculateCellValue** function from inside **calculateCustomSummary**, as shown below. In this example, the calculateArea (calculateCellValue) function creates an unbound column 'Area'. The same function is called from the calculateAreaSummary (calculateCustomSummary) function to compute the sum of areas for selected rows.
 
 ---
 ##### jQuery

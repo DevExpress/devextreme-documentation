@@ -100,7 +100,8 @@ Use this property to specify the color for each [layer element](/Documentation/A
                 :data-source="worldMap"
                 palette="Material" 
                 :palette-size="4"
-                :customize="colorizeMap" />
+                :customize="colorizeMap" 
+            />
         </DxVectorMap>
     </template>
 
@@ -153,10 +154,13 @@ Use this property to specify the color for each [layer element](/Documentation/A
                     dataSource={worldMap}
                     paletteSize={4}
                     customize={this.colorizeMap}
-                    palette="Material" />
+                    palette="Material" 
+                />
             </VectorMap>
         );
     }
 
 ---
 
+#####See Also#####
+- [SVG-Based Widgets Customization](/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/)

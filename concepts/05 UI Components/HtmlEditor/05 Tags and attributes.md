@@ -1,4 +1,3 @@
-
 The following tables list HTML tags and attributes **HtmlEditor** generates.
 
 **HTML Tags**

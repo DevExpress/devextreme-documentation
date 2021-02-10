@@ -17,7 +17,7 @@ Information about the event that caused the function's execution.
 This column's [configuration](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/').
 
 ##### field(e.columnIndex): Number
-The index of the column to which the cell belongs.
+The visible column index described in the following topic: [Column and Row Indexes](/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/).
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

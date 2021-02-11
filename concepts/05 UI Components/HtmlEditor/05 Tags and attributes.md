@@ -9,54 +9,69 @@ The following tables list HTML tags and attributes **HtmlEditor** generates.
  </tr>
   <tr>
     <td>Content sectioning</td>
-    <td>h1-h6, </td>
+    <td>&lt;h1&gt; - &lt;h6&gt;</td>
  </tr>
    <tr>
     <td>Text content</td>
-    <td>blockquote, div, ol, ul, li, p, pre</td>
+    <td>&lt;blockquote&gt;, &lt;div&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;p&gt;, &lt;pre&gt;</td>
  </tr>
    <tr>
     <td>Inline text</td>
-    <td>a, b, br, code, em, i, s, span, strike, strong, sub, sup, u</td>
+    <td>&lt;a&gt;, &lt;b&gt;, &lt;br&gt;, &lt;code&gt;, &lt;em&gt;, &lt;i&gt;, &lt;s&gt;, &lt;span&gt;, &lt;strike&gt;, &lt;strong&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;u&gt;</td>
  </tr>
 <tr>
     <td>Images and frames</td>
-    <td>img, iframe</td>
+    <td>&lt;img&gt;, &lt;iframe&gt;</td>
  </tr>
  <tr>
     <td>Table content</td>
-    <td>tr, td</td>
+    <td>&lt;table&gt;,&lt;tbody&gt;,&lt;tr&gt;, &lt;td&gt;</td>
  </tr>
 </table>
 
 **Attributes**
 
 <table class="dx-table full-width">
-  <tr>
-    <td>frameborder</td>
- </tr>
-   <tr>
+ <tr>
     <td>allowfullscreen</td>
  </tr>
    <tr>
-    <td>src</td>
+    <td>alt</td>
  </tr>
-<tr>
+ <tr>
+    <td>class</td>
+ </tr>
+ <tr>
+    <td>contenteditable</td>
+ </tr>
+ <tr>
+    <td>data-*</td>
+ </tr>
+ <tr>
+   <td>frameborder</td> 
+ </tr>
+  <tr>
+    <td>height</td>
+  </tr>
+ <tr>
     <td>href</td>
  </tr>
  <tr>
     <td>rel</td>
  </tr>
+ <tr>
+    <td>spellcheck</td>
+ </tr>
+  <tr>
+    <td>src</td>
+  </tr>
+  <tr>
+    <td>style</td>
+  </tr>
   <tr>
     <td>target</td>
  </tr>
   <tr>
-    <td>data-*</td>
- </tr>
-  <tr>
-    <td>spellcheck</td>
- </tr>
-   <tr>
-    <td>contenteditable</td>
+    <td>width</td>
  </tr>
 </table>

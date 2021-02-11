@@ -16,6 +16,7 @@ To apply a palette to a map, follow the next steps:
 - Assign the name of the required palette (or an array of two colors) to the **palette** property.
 - Specify the required amount of colors from the palette in the **paletteSize** property.
 - Specify the index of a [layer element](/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/)'s color in the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteIndex) property within the [customize](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize) function.
+- Use the [applySettings(settings)](/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/Methods/#applySettingssettings) method to colorize each layer element.
 
 #include common-ref-enum with {
     enum: "`VizPalette`",

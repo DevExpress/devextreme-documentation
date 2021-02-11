@@ -6,17 +6,175 @@ default: 'Material'
 ---
 ---
 ##### shortDescription
-The name of a predefined palette or a custom range of colors to be used as a palette.
+The name of a predefined palette or a custom range of colors to be used as a [palette](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette).
 
 ---
 A palette defines a range of colors that are used to paint layer elements. This range is divided into segments by the value of the [paletteSize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/paletteSize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteSize') property. Each segment contributes a color into a resulting array of colors. The more of these segments, the greater the variety of colors in this array. Available predefined palettes are listed in the accepted values.
 
-To apply a palette to a map, follow the next steps:
+Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteIndex) to iterate through the **palette[]** array within the [customize](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize) function. For each element, apply the palette as follows:
 
-- Assign the name of the required palette (or an array of two colors) to the **palette** property.
-- Specify the required amount of colors from the palette in the **paletteSize** property.
-- Specify the index of a [layer element](/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/)'s color in the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteIndex) property within the [customize](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize) function.
-- Use the [applySettings(settings)](/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/Methods/#applySettingssettings) method to colorize each layer element.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#vectorMapContainer").dxVectorMap({
+            // ...
+            layers: [{
+                dataSource: DevExpress.viz.map.sources.world,
+                palette: "Material",
+                paletteSize: 7,
+                customize: function(elements) {
+                    let paletteIndex = 0;
+                    forEach(elements, function(_, element) {
+                        element.applySettings({
+                            paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                        });
+                    });
+                }
+            }]
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-vector-map ... >
+        <dxi-layer
+            [dataSource]="worldMap"
+            palette="Material" 
+            [paletteSize]="7"
+            [customize]="colorizeMap">
+        </dxi-layer>
+    </dx-vector-map>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        constructor() {
+            this.colorizeMap = this.colorizeMap.bind(this);
+        }
+
+        worldMap: any = mapsData.world;
+
+        colorizeMap(elements) {
+            let paletteIndex = 0;
+            elements.forEach((element) => {
+                element.applySettings({
+                    paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                });
+            });
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxVectorMapModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxVectorMapModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxVectorMap ... >
+            <DxLayer
+                :data-source="worldMap"
+                palette="Material" 
+                :palette-size="7"
+                :customize="colorizeMap" 
+            />
+        </DxVectorMap>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+
+    import DxVectorMap, {
+        DxLayer
+    } from 'devextreme-vue/vector-map';
+
+    export default {
+        components: {
+            DxVectorMap,
+            DxLayer
+        },
+        data() {
+            return {
+                worldMap: mapsData.world
+            }
+        },
+        methods: {
+            colorizeMap(elements) {
+                let paletteIndex = 0;
+                elements.forEach((element) => {
+                    element.applySettings({
+                        paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                    });
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { VectorMap, Layer } from 'devextreme-react/vector-map';
+    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js'
+
+    const worldMap = mapsData.world;
+
+    function colorizeMap(elements) {
+        let paletteIndex = 0;
+        elements.forEach((element) => {
+            element.applySettings({
+                paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+            });
+        });
+    }
+
+    export default function App() {
+        return (
+            <VectorMap>
+                <Layer
+                    dataSource={worldMap}
+                    paletteSize={7}
+                    customize={this.colorizeMap}
+                    palette="Material" 
+                />
+            </VectorMap>
+        );
+    }
+
+---
+
 
 #include common-ref-enum with {
     enum: "`VizPalette`",

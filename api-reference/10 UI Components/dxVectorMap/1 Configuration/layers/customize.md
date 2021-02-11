@@ -18,3 +18,6 @@ This function allows you to access layer elements and modify them. You can use A
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
 }
+
+#####See Also#####
+- [palette](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette)

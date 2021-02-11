@@ -137,7 +137,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        sortByStateAndCity (rowData) {
+        sortByLocation (rowData) {
             return rowData.State + rowData.City;
         }
     }
@@ -169,7 +169,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         <DxDataGrid ... >
             <DxColumn
                 data-field="Employee"
-                :calculate-sort-value="sortByStateAndCity"
+                :calculate-sort-value="sortByLocation"
             />
         </DxDataGrid>
     </template>
@@ -184,7 +184,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         data() {
             return {
                 // ...
-                sortByStateAndCity(rowData) {
+                sortByLocation(rowData) {
                     return rowData.State + rowData.City;
                 },
             };
@@ -198,7 +198,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    function sortByStateAndCity(rowData){
+    function sortByLocation(rowData){
         return rowData.State + rowData.City;
     }
 
@@ -208,7 +208,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
             <DataGrid ...>
                 <Column
                     dataField="Employee"
-                    calculateSortValue={sortByStateAndCity}
+                    calculateSortValue={sortByLocation}
                 />
             </DataGrid>
         );

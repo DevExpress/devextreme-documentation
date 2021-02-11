@@ -161,7 +161,7 @@ This property accepts the name of the data source field that provides values by 
 
     <!-- tab: app.component.ts -->
     const getDayDifference = (date1, date2) => {
-        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        const timeDiff = Math.abs(date1.getTime() - date2.getTime());
         return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
@@ -174,15 +174,10 @@ This property accepts the name of the data source field that provides values by 
 
             const dayDifference = getDayDifference(today, currentHireDate);
             switch (dayDifference) {
-                case 0:
-                return "Today";
-                break;
-            case 1:
-                return "Yesterday";
-                break; 
+                case 0: return "Today";
+                case 1: return "Yesterday";
                 // ...
-            default:
-                return "Earlier";
+                default: return "Earlier";
             };  
         }
     }
@@ -225,7 +220,7 @@ This property accepts the name of the data source field that provides values by 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     const getDayDifference = (date1, date2) => {
-        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        const timeDiff = Math.abs(date1.getTime() - date2.getTime());
         return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
@@ -242,15 +237,10 @@ This property accepts the name of the data source field that provides values by 
 
                 const dayDifference = getDayDifference(today, currentHireDate);
                 switch (dayDifference) {
-                    case 0:
-                    return "Today";
-                    break;
-                case 1:
-                    return "Yesterday";
-                    break; 
+                    case 0: return "Today";
+                    case 1: return "Yesterday";
                     // ...
-                default:
-                    return "Earlier";
+                    default: return "Earlier";
                 };  
             }
         }
@@ -265,7 +255,7 @@ This property accepts the name of the data source field that provides values by 
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
     const getDayDifference = (date1, date2) => {
-        let timeDiff =Math.abs(date1.getTime() - date2.getTime());
+        const timeDiff = Math.abs(date1.getTime() - date2.getTime());
         return Math.ceil(timeDiff / (1000 * 3600 * 24));  
     }
 
@@ -278,15 +268,10 @@ This property accepts the name of the data source field that provides values by 
 
             const dayDifference = getDayDifference(today, currentHireDate);
             switch (dayDifference) {
-                case 0:
-                return "Today";
-                break;
-            case 1:
-                return "Yesterday";
-                break; 
+                case 0: return "Today";
+                case 1: return "Yesterday";
                 // ...
-            default:
-                return "Earlier";
+                default: return "Earlier";
             };  
         };  
 

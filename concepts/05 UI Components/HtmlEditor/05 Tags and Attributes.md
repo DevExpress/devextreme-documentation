@@ -13,7 +13,7 @@ The following tables list HTML tags and attributes **HtmlEditor** generates.
  </tr>
    <tr>
     <td>Text content</td>
-    <td>&lt;blockquote&gt;, &lt;div&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;p&gt;, &lt;pre&gt;</td>
+    <td>&lt;blockquote&gt;, &lt;div&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;ul&gt;, &lt;p&gt;, &lt;pre&gt;</td>
  </tr>
    <tr>
     <td>Inline text</td>

@@ -108,7 +108,7 @@ This property accepts the name of the data source field that provides values by 
 
 ---
 
-... or a function that creates custom groups:
+... or a function that creates custom groups. In the code below, **calculateGroupValue** creates groups like Today, Yesterday, and Earlier:
 
 
 ---

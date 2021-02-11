@@ -290,7 +290,7 @@ You can use the **value** field to retrieve the column value. If you do not spec
 
 ##### Angular
 
-    <!-- app.component.ts -->
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     // ...
     export class AppComponent {
@@ -320,7 +320,7 @@ You can use the **value** field to retrieve the column value. If you do not spec
         }
     }
 
-    <!-- app.component.html -->
+    <!-- tab: app.component.html -->
     <dx-data-grid ... 
         [selectedRowKeys]="selectedRows">
         <dxi-column dataField="width"></dxi-column>

@@ -105,7 +105,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 ---
 
-... or a function that returns such values:
+... or a function that returns such values. In the code below, **calculateSortValue** concatenates the State and City column values to sort the Employee column:
 
 ---
 ##### jQuery
@@ -113,14 +113,10 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!--JavaScript-->$(function() {
         var {widgetName} = $("#{widgetName}Container").dx{WidgetName}({
             columns: [{
-                dataField: "Position",
+                dataField: "Employee",
                 sortOrder: "asc",
                 calculateSortValue: function (rowData) {
-                    const column = this;
-                    if (rowData.Position == "CEO")
-                        return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-                    else
-                        return rowData.Position; // Others are sorted as usual
+                    return rowData.State + rowData.City;
                 }
             }]
         }).dx{WidgetName}("instance");
@@ -131,9 +127,9 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
         <dxi-column
-            dataField="Position"
+            dataField="Employee"
             sortOrder="asc"
-            [calculateSortValue]="customSortingFunction">
+            [calculateSortValue]="sortByStateAndCity">
         </dxi-column>
     </dx-{widget-name}>
 
@@ -141,12 +137,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        customSortingFunction (rowData) {
-            const column = this as any;
-            if (rowData.Position == "CEO")
-                return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-            else
-                return rowData.Position; // Others are sorted as usual
+        sortByStateAndCity (rowData) {
+            return rowData.State + rowData.City;
         }
     }
 
@@ -176,8 +168,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <template>
         <DxDataGrid ... >
             <DxColumn
-                data-field="Position"
-                :calculate-sort-value="customSortingFunction"
+                data-field="Employee"
+                :calculate-sort-value="sortByStateAndCity"
             />
         </DxDataGrid>
     </template>
@@ -192,12 +184,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         data() {
             return {
                 // ...
-                customSortingFunction(rowData) {
-                    const column = this;
-                    if (rowData.Position == "CEO")
-                        return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-                    else 
-                        return rowData.Position; // Others are sorted as usual
+                sortByStateAndCity(rowData) {
+                    return rowData.State + rowData.City;
                 },
             };
         },
@@ -210,12 +198,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     import React from 'react';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    function customSortingFunction(rowData){
-        const column = this;
-        if (rowData.Position == "CEO")
-            return column.sortOrder === "asc" ? "aaa" : "zzz"; // CEOs are always displayed at the top
-        else 
-            return rowData.Position; // Others are sorted as usual
+    function sortByStateAndCity(rowData){
+        return rowData.State + rowData.City;
     }
 
     function App() {
@@ -223,8 +207,8 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         return (
             <DataGrid ...>
                 <Column
-                    dataField="Position"
-                    calculateSortValue={customSortingFunction}
+                    dataField="Employee"
+                    calculateSortValue={sortByStateAndCity}
                 />
             </DataGrid>
         );

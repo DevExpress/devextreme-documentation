@@ -129,7 +129,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         <dxi-column
             dataField="Employee"
             sortOrder="asc"
-            [calculateSortValue]="sortByStateAndCity">
+            [calculateSortValue]="sortByLocation">
         </dxi-column>
     </dx-{widget-name}>
 

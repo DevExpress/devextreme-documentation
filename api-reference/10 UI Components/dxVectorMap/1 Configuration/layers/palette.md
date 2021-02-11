@@ -27,9 +27,9 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
                 paletteSize: 7,
                 customize: function(elements) {
                     let paletteIndex = 0;
-                    forEach(elements, function(_, element) {
+                    forEach(elements, function(_, element, index) {
                         element.applySettings({
-                            paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                            paletteIndex: index % 7
                         });
                     });
                 }
@@ -67,9 +67,9 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
 
         colorizeMap(elements) {
             let paletteIndex = 0;
-            elements.forEach((element) => {
+            elements.forEach((element, index) => {
                 element.applySettings({
-                    paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                    paletteIndex: index % 7
                 });
             });
         }
@@ -130,9 +130,9 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
         methods: {
             colorizeMap(elements) {
                 let paletteIndex = 0;
-                elements.forEach((element) => {
+                elements.forEach((element, index) => {
                     element.applySettings({
-                        paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                        paletteIndex: index % 7
                     });
                 });
             }
@@ -153,9 +153,9 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
 
     function colorizeMap(elements) {
         let paletteIndex = 0;
-        elements.forEach((element) => {
+        elements.forEach((element, index) => {
             element.applySettings({
-                paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                paletteIndex: index % 7
             });
         });
     }

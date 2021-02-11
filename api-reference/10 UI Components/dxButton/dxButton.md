@@ -19,8 +19,8 @@ dx.web.js, dx.viz-web.js, dx.all.js
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/Button/Overview/"
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/"
 }
 
 #####See Also#####

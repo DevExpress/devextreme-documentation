@@ -1,6 +1,22 @@
 Use nested configuration components. In the following example, we configure the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/React/Light) UI component's [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/') property:
  
-    <!-- tab: App.js -->
+    <!-- tab: Function component -->
+    import Chart, {
+        Tooltip
+    } from 'devextreme-react/chart';
+
+    export default function App() {
+        return (
+            <Chart>
+                <Tooltip
+                    enabled={true}
+                    format="thousands"
+                />
+            </Chart>
+        );
+    }
+    
+    <!-- tab: Class component -->
     import Chart, {
         Tooltip
     } from 'devextreme-react/chart';
@@ -20,7 +36,24 @@ Use nested configuration components. In the following example, we configure the 
 
 Object type properties that depend on other properties' values are not implemented as nested configuration components because they cannot be typed (**columns[].**[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') in the **DataGrid**, item's [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') in the **Form**, **items[].**[options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') in the **Toolbar**). These properties should be specified with an object.
 
-    <!-- tab: App.js -->
+    <!-- tab: Function component -->
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    const columnEditorOptions = { width: 100 };
+
+    export default function App() {
+        return (
+            <DataGrid>
+                <Column
+                    editorOptions={columnEditorOptions}
+                />
+            </DataGrid>
+        );
+    }
+    
+    <!-- tab: Class component -->
     import DataGrid, {
         Column
     } from 'devextreme-react/data-grid';
@@ -51,7 +84,7 @@ If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">R
 
     export default function App() {
 
-        let [visible, setVisible] = useState(false);
+        const [visible, setVisible] = useState(false);
         const checkBoxOptions = useMemo(() => {
             return {
                 text: "Display Address",

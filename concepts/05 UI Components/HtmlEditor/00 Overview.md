@@ -30,7 +30,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
         <!-- ... -->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.common.css">
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_1/css/dx.light.css">
-        <script type="text/javascript" src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+        <script type="text/javascript" src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
         <!-- Required if valueType is "markdown" -->
         <!-- <script type="text/javascript" src="https://unpkg.com/turndown/dist/turndown.js"></script> -->
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.7/showdown.min.js"></script> -->

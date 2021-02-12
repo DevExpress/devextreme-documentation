@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 The value to be used in sorting.
 
 ---
-This property accepts the name of the [data source field](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values by which to sort this column...
+This property accepts the name of the [data source field](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values used to sort this column...
 
 ---
 ##### jQuery

@@ -7,13 +7,13 @@ type: String | function(rowData)
 Sets custom column values used to group grid records.
 
 ##### param(rowData): Object
-The current row's data.
+Current row data.
 
 ##### return: any
 The calculated value used to create and sort groups.
 
 ---
-This property accepts the name of the data source field that provides values by which to group grid records...
+This property accepts the name of the data source field that provides values used to group grid records...
 
 ---
 ##### jQuery

@@ -49,7 +49,7 @@ You can call this method at any point in your application. In this example, we c
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
-        <script src=""https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
         <!-- DevExtreme sources are referenced here -->
     </head>
 

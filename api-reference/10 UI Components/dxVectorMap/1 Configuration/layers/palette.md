@@ -6,7 +6,7 @@ default: 'Material'
 ---
 ---
 ##### shortDescription
-The name of a predefined palette or a custom range of colors to be used as a [palette](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette).
+The name of a predefined palette or a custom range of colors to be used as a palette.
 
 ---
 A palette defines a range of colors that are used to paint layer elements. This range is divided into segments by the value of the [paletteSize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/paletteSize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteSize') property. Each segment contributes a color into a resulting array of colors. The more of these segments, the greater the variety of colors in this array. Available predefined palettes are listed in the accepted values.
@@ -110,7 +110,6 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
     import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
 
     import DxVectorMap, {
@@ -144,7 +143,6 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
 
     import { VectorMap, Layer } from 'devextreme-react/vector-map';
     import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js'

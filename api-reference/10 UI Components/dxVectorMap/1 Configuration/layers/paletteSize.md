@@ -9,6 +9,3 @@ Specifies the number of colors in a palette.
 
 ---
 Assign a number that is greater than 0 to this property in order to use [palettes](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/palette.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette').
-
-#####See Also#####
-- [palette](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette)

@@ -228,8 +228,7 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
                 palette: "Violet",
                 paletteSize: 7,
                 customize: function(elements) {
-                    var paletteIndex = 0;
-                    forEach(elements, function(_, element, index) {
+                    elements.forEach(function(element, index) {
                         element.applySettings({
                             paletteIndex: index % 7
                         });
@@ -304,7 +303,6 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         worldMap: any = mapsData.world;
 
         colorizeMap(elements) {
-            let paletteIndex = 0;
             elements.forEach((element, index) => {
                  element.applySettings({
                     paletteIndex: index % 7
@@ -395,7 +393,6 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         },
         methods: {
             colorizeMap(elements) {
-                let paletteIndex = 0;
                 elements.forEach((element, index) => {
                     element.applySettings({
                         paletteIndex: index % 7
@@ -456,7 +453,6 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         }
 
         colorizeMap(elements) {
-            let paletteIndex = 0;
             elements.forEach((element, index) => {
                 element.applySettings({
                     paletteIndex: index % 7

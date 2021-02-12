@@ -26,8 +26,7 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
                 palette: "Material",
                 paletteSize: 7,
                 customize: function(elements) {
-                    let paletteIndex = 0;
-                    forEach(elements, function(_, element, index) {
+                    elements.forEach(function(element, index) {
                         element.applySettings({
                             paletteIndex: index % 7
                         });
@@ -66,7 +65,6 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
         worldMap: any = mapsData.world;
 
         colorizeMap(elements) {
-            let paletteIndex = 0;
             elements.forEach((element, index) => {
                 element.applySettings({
                     paletteIndex: index % 7
@@ -128,7 +126,6 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
         },
         methods: {
             colorizeMap(elements) {
-                let paletteIndex = 0;
                 elements.forEach((element, index) => {
                     element.applySettings({
                         paletteIndex: index % 7
@@ -150,7 +147,6 @@ Use the [paletteIndex](/Documentation/ApiReference/UI_Components/dxVectorMap/Con
     const worldMap = mapsData.world;
 
     function colorizeMap(elements) {
-        let paletteIndex = 0;
         elements.forEach((element, index) => {
             element.applySettings({
                 paletteIndex: index % 7

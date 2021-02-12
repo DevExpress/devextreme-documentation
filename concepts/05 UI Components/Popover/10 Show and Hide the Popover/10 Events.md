@@ -68,7 +68,6 @@ To execute certain commands before or after the **Popover** was shown/hidden, ha
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
@@ -97,7 +96,6 @@ To execute certain commands before or after the **Popover** was shown/hidden, ha
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover } from 'devextreme-react/popover';

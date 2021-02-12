@@ -44,7 +44,6 @@ To arrange items on the menu panel in a row (horizontally) or in a column (verti
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMenu from 'devextreme-vue/menu';
@@ -60,7 +59,6 @@ To arrange items on the menu panel in a row (horizontally) or in a column (verti
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Menu } from 'devextreme-react/menu';
@@ -131,7 +129,6 @@ When the UI component is positioned at the bottom or at the left side, you may w
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMenu from 'devextreme-vue/menu';
@@ -147,7 +144,6 @@ When the UI component is positioned at the bottom or at the left side, you may w
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Menu } from 'devextreme-react/menu';

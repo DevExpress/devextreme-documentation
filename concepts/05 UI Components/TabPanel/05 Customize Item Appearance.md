@@ -67,7 +67,6 @@ An item in the **TabPanel** UI component includes a tab and a view. For a minor 
             :items="tabPanelItems" />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -100,7 +99,6 @@ An item in the **TabPanel** UI component includes a tab and a view. For a minor 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TabPanel from 'devextreme-react/tab-panel';
@@ -208,7 +206,6 @@ If you need a more flexible solution, define [itemTemplate](/api-reference/10%20
         </DxTabPanel>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -240,7 +237,6 @@ If you need a more flexible solution, define [itemTemplate](/api-reference/10%20
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TabPanel } from 'devextreme-react/tab-panel';
@@ -388,7 +384,6 @@ You can also customize individual items. In Angular, Vue, and React, declare the
         </DxTabPanel>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel, { DxItem } from 'devextreme-vue/tab-panel';
@@ -405,7 +400,6 @@ You can also customize individual items. In Angular, Vue, and React, declare the
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TabPanel, Item } from 'devextreme-react/tab-panel';

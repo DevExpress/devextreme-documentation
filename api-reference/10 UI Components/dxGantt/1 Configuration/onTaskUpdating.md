@@ -89,7 +89,6 @@ The task values before update.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -114,7 +113,6 @@ The task values before update.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Gantt from 'devextreme-react/gantt';

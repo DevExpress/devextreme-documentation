@@ -122,7 +122,6 @@ You can call this method at any point in your application. In the example below,
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
@@ -159,7 +158,6 @@ You can call this method at any point in your application. In the example below,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';

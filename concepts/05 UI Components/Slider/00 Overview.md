@@ -55,7 +55,6 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSlider } from 'devextreme-vue/slider';
@@ -75,7 +74,6 @@ The following code adds a simple **Slider** to your page. The **min** and **max*
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Slider } from 'devextreme-react/slider';
@@ -168,7 +166,6 @@ In addition, you can specify the step of **Slider** values using the [step](/api
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSlider } from 'devextreme-vue/slider';
@@ -188,7 +185,6 @@ In addition, you can specify the step of **Slider** values using the [step](/api
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Slider } from 'devextreme-react/slider';

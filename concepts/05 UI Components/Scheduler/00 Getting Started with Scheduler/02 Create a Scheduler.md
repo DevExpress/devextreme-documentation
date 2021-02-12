@@ -14,7 +14,6 @@
     <html>
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css" />
             <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css" />
             <link rel="stylesheet" href="index.css">
 
@@ -87,8 +86,7 @@
         </DxScheduler>
     </template> 
 
-    <script> 
-    import 'devextreme/dist/css/dx.common.css'; 
+    <script>  
     import 'devextreme/dist/css/dx.light.css'; 
 
     import { DxScheduler } from 'devextreme-vue/scheduler'; 
@@ -111,7 +109,6 @@
 [Add DevExtreme to your React application](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/) and use the following code to create a **Scheduler**:
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
 

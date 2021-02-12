@@ -78,7 +78,6 @@ Items in the **TagBox** can be grouped if they are grouped in the data source. T
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -112,7 +111,6 @@ Items in the **TagBox** can be grouped if they are grouped in the data source. T
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -250,7 +248,6 @@ If objects in your data source miss the **key** and **items** fields, use the [m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -295,7 +292,6 @@ If objects in your data source miss the **key** and **items** fields, use the [m
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
@@ -423,7 +419,6 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
@@ -456,7 +451,6 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';

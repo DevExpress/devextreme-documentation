@@ -67,7 +67,6 @@ To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -99,7 +98,6 @@ To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';

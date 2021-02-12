@@ -66,7 +66,6 @@ For a minor customization of **Accordion** panels, you can define [specific fiel
         </DxAccordion>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxAccordion from "devextreme-vue/accordion";
@@ -97,7 +96,6 @@ For a minor customization of **Accordion** panels, you can define [specific fiel
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Accordion } from 'devextreme-react/accordion';
@@ -194,7 +192,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         </DxAccordion>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxAccordion from "devextreme-vue/accordion";
@@ -223,7 +220,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Accordion } from 'devextreme-react/accordion';
@@ -360,7 +356,6 @@ You can also customize individual items. In Angular, Vue, and React, declare the
         </DxAccordion>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxAccordion, { DxItem } from "devextreme-vue/accordion";
@@ -377,7 +372,6 @@ You can also customize individual items. In Angular, Vue, and React, declare the
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Accordion, Item } from 'devextreme-react/accordion';

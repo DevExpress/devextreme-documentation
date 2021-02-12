@@ -37,7 +37,6 @@ When a user types a value into the **TextBox**, this value applies when the <a h
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
@@ -52,7 +51,6 @@ When a user types a value into the **TextBox**, this value applies when the <a h
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
@@ -124,7 +122,6 @@ To process a new **TextBox** value, you need to handle the value change event. I
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
@@ -151,7 +148,6 @@ To process a new **TextBox** value, you need to handle the value change event. I
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';

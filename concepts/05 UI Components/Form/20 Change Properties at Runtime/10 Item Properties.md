@@ -102,7 +102,6 @@ In Angular, Vue, or React, bind the property that should be changed to a compone
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
@@ -133,7 +132,6 @@ In Angular, Vue, or React, bind the property that should be changed to a compone
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';

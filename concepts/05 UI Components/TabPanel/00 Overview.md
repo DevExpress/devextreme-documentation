@@ -67,7 +67,6 @@ The following code adds a simple **TabPanel** to your page.
             :items="tabPanelItems" />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel from 'devextreme-vue/tab-panel';
@@ -97,7 +96,6 @@ The following code adds a simple **TabPanel** to your page.
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TabPanel from 'devextreme-react/tab-panel';

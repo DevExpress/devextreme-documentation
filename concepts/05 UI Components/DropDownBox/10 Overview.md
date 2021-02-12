@@ -84,7 +84,6 @@ The simplest UI component configuration requires specifying a [dataSource](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDropDownBox from "devextreme-vue/drop-down-box";
@@ -115,7 +114,6 @@ The simplest UI component configuration requires specifying a [dataSource](/api-
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
@@ -311,7 +309,6 @@ If your data is an array of objects, specify:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDropDownBox from "devextreme-vue/drop-down-box";
@@ -352,7 +349,6 @@ If your data is an array of objects, specify:
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';

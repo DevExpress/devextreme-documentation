@@ -79,7 +79,6 @@ The values of the deleted dependency.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -102,7 +101,6 @@ The values of the deleted dependency.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Gantt from 'devextreme-react/gantt';

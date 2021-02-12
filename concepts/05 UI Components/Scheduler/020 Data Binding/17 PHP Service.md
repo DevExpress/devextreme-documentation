@@ -61,7 +61,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -92,7 +91,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

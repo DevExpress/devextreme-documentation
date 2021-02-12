@@ -71,7 +71,6 @@ This array should contain one or more values that correspond to the [fieldExpr](
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
@@ -97,7 +96,6 @@ This array should contain one or more values that correspond to the [fieldExpr](
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler, { Resource } from 'devextreme-react/scheduler';

@@ -55,7 +55,6 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
@@ -75,7 +74,6 @@ The following code adds a simple **LoadIndicator** to your page. You can change 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';
@@ -149,7 +147,6 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
@@ -170,7 +167,6 @@ If you need to use a custom image in the **LoadIndicator**, assign its URL to th
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';

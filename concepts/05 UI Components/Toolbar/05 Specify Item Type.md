@@ -56,7 +56,6 @@ A **Toolbar** item may be plain text or a UI component. Text items should have t
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
@@ -73,7 +72,6 @@ A **Toolbar** item may be plain text or a UI component. Text items should have t
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';
@@ -192,7 +190,6 @@ Items that contain a UI component should have the [widget](/api-reference/_hidde
         </DxToolbar>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
@@ -228,7 +225,6 @@ Items that contain a UI component should have the [widget](/api-reference/_hidde
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toolbar, Item } from 'devextreme-react/toolbar';

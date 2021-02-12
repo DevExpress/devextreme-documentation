@@ -80,7 +80,6 @@ The **Form** UI component uses the built-in validation engine to validate form i
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm, {
@@ -112,7 +111,6 @@ The **Form** UI component uses the built-in validation engine to validate form i
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form, {
@@ -224,7 +222,6 @@ The **Form** UI component uses the built-in validation engine to validate form i
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm from 'devextreme-vue/form';
@@ -263,7 +260,6 @@ The **Form** UI component uses the built-in validation engine to validate form i
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form from 'devextreme-react/form';
@@ -381,7 +377,6 @@ Usually, **Form** editors should be submitted to the server after being successf
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm, {
@@ -404,7 +399,6 @@ Usually, **Form** editors should be submitted to the server after being successf
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form, {

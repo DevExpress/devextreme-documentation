@@ -66,7 +66,6 @@ Use the [uploadHeaders](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Conf
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {DxFileUploader} from 'devextreme-vue/file-uploader';
@@ -90,7 +89,6 @@ Use the [uploadHeaders](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Conf
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';

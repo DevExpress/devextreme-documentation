@@ -31,8 +31,7 @@ Use the `dx-gantt.css` and `dx-gantt.js` files to add an unminified version of t
 The **Gantt** UI component is a jQuery DevExtreme UI component, and thus requires common DevExtreme resources (listed below) to be included in your page.
 
     <!--HTML-->
-    <!-- DevExtreme themes -->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
+    <!-- DevExtreme theme -->
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

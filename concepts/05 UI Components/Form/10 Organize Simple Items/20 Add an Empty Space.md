@@ -68,7 +68,6 @@ If you need to add an empty space between neighboring items, use an [empty item]
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxEmptyItem, DxSimpleItem } from 'devextreme-vue/form';
@@ -94,7 +93,6 @@ If you need to add an empty space between neighboring items, use an [empty item]
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, EmptyItem, SimpleItem } from 'devextreme-react/form';

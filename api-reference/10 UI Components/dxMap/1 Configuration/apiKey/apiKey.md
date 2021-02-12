@@ -81,7 +81,6 @@ If you have more than one map provider in your application, specify the keys in 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxMap, {
@@ -101,7 +100,6 @@ If you have more than one map provider in your application, specify the keys in 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Map, {

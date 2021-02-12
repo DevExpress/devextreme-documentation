@@ -61,7 +61,6 @@ The following code adds the **Autocomplete** to your page. The simplest configur
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -85,7 +84,6 @@ The following code adds the **Autocomplete** to your page. The simplest configur
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
@@ -169,7 +167,6 @@ If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -193,7 +190,6 @@ If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
@@ -281,7 +277,6 @@ Usually, the data field that provides suggestions is the same data field that is
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -305,7 +300,6 @@ Usually, the data field that provides suggestions is the same data field that is
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';

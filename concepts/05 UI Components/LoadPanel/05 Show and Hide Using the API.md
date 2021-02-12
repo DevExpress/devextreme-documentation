@@ -108,7 +108,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
@@ -135,7 +134,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
@@ -257,7 +255,6 @@ To execute certain commands before or after the **LoadPanel** is shown/hidden, h
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
@@ -289,7 +286,6 @@ To execute certain commands before or after the **LoadPanel** is shown/hidden, h
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';

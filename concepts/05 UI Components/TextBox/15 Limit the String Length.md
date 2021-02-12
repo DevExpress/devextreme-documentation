@@ -37,7 +37,6 @@ To limit the string length, assign an integer number to the **maxLength** proper
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
@@ -52,7 +51,6 @@ To limit the string length, assign an integer number to the **maxLength** proper
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';

@@ -54,7 +54,6 @@ The following code adds the **Tabs** UI component to your page. One of the tabs 
             :items="tabs" />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabs from "devextreme-vue/tabs";
@@ -79,7 +78,6 @@ The following code adds the **Tabs** UI component to your page. One of the tabs 
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Tabs } from 'devextreme-react/tabs';

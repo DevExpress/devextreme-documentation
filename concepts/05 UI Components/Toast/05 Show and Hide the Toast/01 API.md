@@ -66,7 +66,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -93,7 +92,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';

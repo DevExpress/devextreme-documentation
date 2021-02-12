@@ -121,7 +121,6 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxPivotGrid, 
@@ -142,7 +141,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import PivotGrid, {
@@ -265,7 +263,6 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
@@ -306,7 +303,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import { Workbook } from 'exceljs';

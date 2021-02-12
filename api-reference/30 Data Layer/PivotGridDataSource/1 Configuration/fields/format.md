@@ -322,7 +322,6 @@ The following code declares a custom group for the `ShippingDate` data field. Th
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid from 'devextreme-react/pivot-grid';
@@ -476,7 +475,6 @@ Cannot be converted, the cell value is exported without formatting. To export th
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxPivotGrid, {
@@ -516,7 +514,6 @@ Cannot be converted, the cell value is exported without formatting. To export th
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import PivotGrid, {

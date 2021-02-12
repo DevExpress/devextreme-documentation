@@ -62,7 +62,6 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTileView } from 'devextreme-vue/tile-view';
@@ -87,7 +86,6 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TileView } from 'devextreme-react/tile-view';

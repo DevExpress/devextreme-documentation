@@ -46,7 +46,6 @@ For a minor customization of **RadioGroup** items, you can define [specific fiel
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
@@ -70,7 +69,6 @@ For a minor customization of **RadioGroup** items, you can define [specific fiel
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';
@@ -136,7 +134,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
@@ -156,7 +153,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';

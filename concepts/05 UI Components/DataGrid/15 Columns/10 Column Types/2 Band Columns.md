@@ -56,7 +56,6 @@ To set up this layout, describe the hierarchy of columns directly in an object o
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -77,7 +76,6 @@ To set up this layout, describe the hierarchy of columns directly in an object o
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -170,7 +168,6 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -201,7 +198,6 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -310,7 +306,6 @@ Band columns support hierarchies of any nesting level and enables you to use the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -331,7 +326,6 @@ Band columns support hierarchies of any nesting level and enables you to use the
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

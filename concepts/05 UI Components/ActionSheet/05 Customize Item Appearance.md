@@ -49,7 +49,6 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxActionSheet from 'devextreme-vue/action-sheet';
@@ -73,7 +72,6 @@ For a minor customization of **ActionSheet** buttons, you can define [specific f
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ActionSheet } from 'devextreme-react/action-sheet';
@@ -164,7 +162,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxActionSheet from 'devextreme-vue/action-sheet';
@@ -200,7 +197,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ActionSheet } from 'devextreme-react/action-sheet';

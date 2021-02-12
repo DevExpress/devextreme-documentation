@@ -45,7 +45,6 @@ The **DataGrid** UI component supports single and multiple row selection. Use th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -65,7 +64,6 @@ The **DataGrid** UI component supports single and multiple row selection. Use th
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -142,7 +140,6 @@ The check box in the column's header selects all rows or only the currently rend
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -162,7 +159,6 @@ The check box in the column's header selects all rows or only the currently rend
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -236,7 +232,6 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -256,7 +251,6 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -330,7 +324,6 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -350,7 +343,6 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

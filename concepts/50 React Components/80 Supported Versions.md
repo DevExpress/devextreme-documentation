@@ -4,7 +4,27 @@
         <th>React</th>
     </tr>
     <tr>
-        <td>v21.1.x <br/> v20.2.x <br/> v20.1.x <br/> v19.2.x <br/> v19.1.x <br/> v18.2.x <br/> v18.1.x</td>
-        <td>16.2+</td>
+        <td>v21.1.x</td>
+        <td>react_version_21_1</td>
+    </tr>
+    <tr>
+        <td>v20.2.x</td>
+        <td>react_version_20_2</td>
+    </tr>
+    <tr>
+        <td>v20.1.x</td>
+        <td>react_version_20_1</td>
+    </tr>
+    <tr>
+        <td>v19.2.x</td>
+        <td>react_version_19_2</td>
+    </tr>
+    <tr>
+        <td>v19.1.x</td>
+        <td>react_version_19_1</td>
+    </tr>
+    <tr>
+        <td>v18.2.x</td>
+        <td>react_version_18_2</td>
     </tr>
 </table>

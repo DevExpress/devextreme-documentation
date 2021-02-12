@@ -60,7 +60,6 @@ To change the size of the **Popup**, specify the [height](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
@@ -80,7 +79,6 @@ To change the size of the **Popup**, specify the [height](/api-reference/10%20UI
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup } from 'devextreme-react/popup';
@@ -174,7 +172,6 @@ To allow an end user to resize the **Popup**, assign **true** to the [resizeEnab
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
@@ -194,7 +191,6 @@ To allow an end user to resize the **Popup**, assign **true** to the [resizeEnab
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup } from 'devextreme-react/popup';
@@ -290,7 +286,6 @@ If you need to position the **Popup** against a specific element on your page, s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup, DxPosition } from 'devextreme-vue/popup';
@@ -311,7 +306,6 @@ If you need to position the **Popup** against a specific element on your page, s
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup, Position } from 'devextreme-react/popup';
@@ -402,7 +396,6 @@ By default, an end user is allowed to change the **Popup** position only on desk
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
@@ -422,7 +415,6 @@ By default, an end user is allowed to change the **Popup** position only on desk
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup } from 'devextreme-react/popup';

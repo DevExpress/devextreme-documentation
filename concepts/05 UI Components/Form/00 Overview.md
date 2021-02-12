@@ -67,7 +67,6 @@ The following code adds the **Form** UI component to your page. The simplest con
         <DxForm :form-data="employee" />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxForm from 'devextreme-vue/form';
@@ -101,7 +100,6 @@ The following code adds the **Form** UI component to your page. The simplest con
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Form from 'devextreme-react/form';

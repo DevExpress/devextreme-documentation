@@ -42,7 +42,6 @@ If the size of the UI component should be fixed, specify it using the [height](/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -57,7 +56,6 @@ If the size of the UI component should be fixed, specify it using the [height](/
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';
@@ -124,7 +122,6 @@ Alternatively, the UI component's height can adapt to the UI component's content
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTextArea } from 'devextreme-vue/text-area';
@@ -139,7 +136,6 @@ Alternatively, the UI component's height can adapt to the UI component's content
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';

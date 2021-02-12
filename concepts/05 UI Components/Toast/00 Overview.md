@@ -31,7 +31,6 @@ The **Toast** UI component does not need to be created on the page before it can
 ##### Vue
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import notify from "devextreme/ui/notify";
@@ -51,7 +50,6 @@ The **Toast** UI component does not need to be created on the page before it can
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import notify from "devextreme/ui/notify";
@@ -109,7 +107,6 @@ If you need to specify other **Toast** properties, call the same method, but thi
 ##### Vue
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import notify from "devextreme/ui/notify";
@@ -134,7 +131,6 @@ If you need to specify other **Toast** properties, call the same method, but thi
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import notify from "devextreme/ui/notify";
@@ -227,7 +223,6 @@ If you are going to reuse the **Toast**, then create it on the page using the fo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
@@ -254,7 +249,6 @@ If you are going to reuse the **Toast**, then create it on the page using the fo
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Toast } from 'devextreme-react/toast';

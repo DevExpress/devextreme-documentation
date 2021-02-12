@@ -55,7 +55,6 @@ The following code adds a primitive **TileView** to your page.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTileView } from 'devextreme-vue/tile-view';
@@ -80,7 +79,6 @@ The following code adds a primitive **TileView** to your page.
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TileView } from 'devextreme-react/tile-view';
@@ -146,7 +144,6 @@ By default, the UI component is oriented horizontally, but you can orient it ver
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxTileView } from 'devextreme-vue/tile-view';
@@ -161,7 +158,6 @@ By default, the UI component is oriented horizontally, but you can orient it ver
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { TileView } from 'devextreme-react/tile-view';

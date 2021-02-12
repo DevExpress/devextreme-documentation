@@ -165,7 +165,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
@@ -196,7 +195,6 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popover } from 'devextreme-react/popover';

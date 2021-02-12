@@ -18,7 +18,7 @@ This article describes how to create an ASP.NET Core Angular application and add
         
     Save the changes and wait until Visual Studio downloaded the dependencies.
 
-1. Reference `dx.common.css` and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
+1. Reference a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
 
     **For .NET Core SDK 2.1**, change the `ClientApp/.angular-cli.json` file as follows:
 
@@ -28,7 +28,6 @@ This article describes how to create an ASP.NET Core Angular application and add
             {
               ...
               "styles": [
-                "../node_modules/devextreme/dist/css/dx.common.css",
                 "../node_modules/devextreme/dist/css/dx.light.css",
                 ...
               ] 
@@ -50,7 +49,6 @@ This article describes how to create an ASP.NET Core Angular application and add
                     ...
                     "styles": [
                       ...
-                      "node_modules/devextreme/dist/css/dx.common.css",
                       "node_modules/devextreme/dist/css/dx.light.css"
                     ]
                   }

@@ -60,7 +60,6 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -86,7 +85,6 @@ By default, the value of the **SelectBox** is changed when the <a href="https://
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
@@ -165,7 +163,6 @@ To process a new **SelectBox** value, you need to handle the value change event.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
@@ -188,7 +185,6 @@ To process a new **SelectBox** value, you need to handle the value change event.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import SelectBox from 'devextreme-react/select-box';

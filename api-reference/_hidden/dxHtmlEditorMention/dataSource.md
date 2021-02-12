@@ -105,7 +105,6 @@ Use one of the following extensions to enable the server to process data accordi
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import CustomStore from 'devextreme/data/custom_store';
@@ -134,7 +133,6 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import CustomStore from 'devextreme/data/custom_store';

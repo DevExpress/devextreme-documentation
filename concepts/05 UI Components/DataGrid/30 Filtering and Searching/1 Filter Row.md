@@ -51,7 +51,6 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -72,7 +71,6 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -155,7 +153,6 @@ A user-specified filter is automatically applied with a delay by default. Altern
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -174,7 +171,6 @@ A user-specified filter is automatically applied with a delay by default. Altern
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -286,7 +282,6 @@ The set of available filter operations can be restricted using the [filterOperat
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -320,7 +315,6 @@ The set of available filter operations can be restricted using the [filterOperat
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

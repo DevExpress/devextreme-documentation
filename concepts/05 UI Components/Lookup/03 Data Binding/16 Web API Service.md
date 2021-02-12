@@ -54,7 +54,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
@@ -80,7 +79,6 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';

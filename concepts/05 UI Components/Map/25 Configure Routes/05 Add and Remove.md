@@ -57,7 +57,6 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -84,7 +83,6 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';
@@ -221,7 +219,6 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** prop
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
@@ -263,7 +260,6 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** prop
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Map } from 'devextreme-react/map';

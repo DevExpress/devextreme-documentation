@@ -57,7 +57,6 @@ By default, the **ContextMenu** appears when a user right-clicks the [target ele
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -82,7 +81,6 @@ By default, the **ContextMenu** appears when a user right-clicks the [target ele
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
@@ -173,7 +171,6 @@ The **ContextMenu** is closed when a user clicks anywhere outside it. You can re
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -203,7 +200,6 @@ The **ContextMenu** is closed when a user clicks anywhere outside it. You can re
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';

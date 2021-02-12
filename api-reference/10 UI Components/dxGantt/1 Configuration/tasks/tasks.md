@@ -145,7 +145,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
             "build": {
               "options": {
                 "styles": [
-                  "node_modules/devextreme/dist/css/dx.common.css",
                   "node_modules/devextreme/dist/css/dx.light.css",
                   "node_modules/devexpress-gantt/dist/dx-gantt.css",
                   "src/styles.css"
@@ -180,7 +179,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
@@ -228,7 +226,6 @@ Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 

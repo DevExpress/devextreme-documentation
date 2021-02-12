@@ -68,7 +68,6 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxResponsiveBox, DxCol, DxRow } from 'devextreme-vue/responsive-box';
@@ -89,7 +88,6 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
@@ -213,7 +211,6 @@ The collections of rows and columns may differ depending on the screen's [size q
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxResponsiveBox, DxCol, DxRow } from 'devextreme-vue/responsive-box';
@@ -234,7 +231,6 @@ The collections of rows and columns may differ depending on the screen's [size q
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';

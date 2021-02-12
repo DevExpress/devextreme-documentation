@@ -10,7 +10,6 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
             <link rel="stylesheet" href="index.css">
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
@@ -142,7 +141,6 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
     <!-- tab: NavigationDrawer.js -->
     import React from "react";
     
-    import "devextreme/dist/css/dx.common.css";
     import "devextreme/dist/css/dx.light.css";
     import "./NavigationDrawer.css";
 

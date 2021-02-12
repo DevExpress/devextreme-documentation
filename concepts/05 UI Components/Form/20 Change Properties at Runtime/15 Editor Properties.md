@@ -80,7 +80,6 @@ With Angular, Vue, or React, bind the property that should be changed in the [ed
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
@@ -118,7 +117,6 @@ With Angular, Vue, or React, bind the property that should be changed in the [ed
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem } from 'devextreme-react/form';

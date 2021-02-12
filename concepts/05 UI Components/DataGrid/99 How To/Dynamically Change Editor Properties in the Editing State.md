@@ -93,7 +93,6 @@ Use this handler's **editorOptions** parameter to change editor properties. The 
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxDataGrid, { 
@@ -127,7 +126,6 @@ Use this handler's **editorOptions** parameter to change editor properties. The 
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DataGrid, { 

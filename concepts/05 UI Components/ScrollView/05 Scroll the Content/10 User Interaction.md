@@ -47,7 +47,6 @@ An end user can scroll the **ScrollView** content with the swipe gesture or with
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScrollView } from 'devextreme-vue/scroll-view';
@@ -63,7 +62,6 @@ An end user can scroll the **ScrollView** content with the swipe gesture or with
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { ScrollView } from 'devextreme-react/scroll-view';

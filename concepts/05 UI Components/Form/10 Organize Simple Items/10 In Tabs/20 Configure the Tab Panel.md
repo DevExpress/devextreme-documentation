@@ -81,7 +81,6 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem, DxTabbedItem, DxTab, DxTabPanelOptions } from 'devextreme-vue/form';
@@ -117,7 +116,6 @@ For displaying tabs, the **Form** uses the [TabPanel](/concepts/05%20Widgets/Tab
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Form, SimpleItem, TabbedItem, Tab, TabPanelOptions } from 'devextreme-react/form';

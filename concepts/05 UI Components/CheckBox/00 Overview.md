@@ -53,7 +53,6 @@ The following code adds the **CheckBox** to your page.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxCheckBox from 'devextreme-vue/check-box';
@@ -74,7 +73,6 @@ The following code adds the **CheckBox** to your page.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import CheckBox from 'devextreme-react/check-box';

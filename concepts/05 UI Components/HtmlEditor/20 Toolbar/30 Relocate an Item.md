@@ -76,7 +76,6 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -97,7 +96,6 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
@@ -196,7 +194,6 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -217,7 +214,6 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';

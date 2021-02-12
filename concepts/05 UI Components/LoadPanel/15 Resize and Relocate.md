@@ -65,7 +65,6 @@ Specify the **height** and **width** properties to change the **LoadPanel**'s si
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
@@ -92,7 +91,6 @@ Specify the **height** and **width** properties to change the **LoadPanel**'s si
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
@@ -219,7 +217,6 @@ The [container](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/c
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxLoadPanel, DxPosition } from 'devextreme-vue/load-panel';
@@ -246,7 +243,6 @@ The [container](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/c
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { LoadPanel, Position } from 'devextreme-react/load-panel';

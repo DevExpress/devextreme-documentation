@@ -45,7 +45,6 @@ This property accepts the following value types:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import DxPopup, {
@@ -65,7 +64,6 @@ This property accepts the following value types:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import Popup, {
@@ -135,7 +133,6 @@ This property accepts the following value types:
         </template>
     
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
     
         import DxPopup, {
@@ -160,7 +157,6 @@ This property accepts the following value types:
         <!-- tab: App.js -->
         import React from 'react';
     
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
     
         import Popup, {
@@ -237,7 +233,6 @@ This property accepts the following value types:
         </template>
     
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
     
         import DxPopover, {
@@ -262,7 +257,6 @@ This property accepts the following value types:
         <!-- tab: App.js -->
         import React from 'react';
     
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
     
         import Popover, {

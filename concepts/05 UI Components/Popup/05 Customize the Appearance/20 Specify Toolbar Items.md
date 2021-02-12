@@ -89,7 +89,6 @@ The **Popup** has two toolbars: top and bottom. Items on these toolbars can be p
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -119,7 +118,6 @@ The **Popup** has two toolbars: top and bottom. Items on these toolbars can be p
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup, ToolbarItem } from 'devextreme-react/popup';

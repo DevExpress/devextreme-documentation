@@ -91,7 +91,6 @@ You can send the human-readable values from the server as a part of the main dat
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid, {
@@ -130,7 +129,6 @@ You can send the human-readable values from the server as a part of the main dat
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {

@@ -61,7 +61,6 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -92,7 +91,6 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

@@ -44,7 +44,6 @@ If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxNumberBox from 'devextreme-vue/number-box';
@@ -61,7 +60,6 @@ If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import NumberBox from 'devextreme-react/number-box';
@@ -128,7 +126,6 @@ To specify the step by which the value is changed, use the [step](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxNumberBox from 'devextreme-vue/number-box';
@@ -145,7 +142,6 @@ To specify the step by which the value is changed, use the [step](/api-reference
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import NumberBox from 'devextreme-react/number-box';

@@ -50,7 +50,6 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
@@ -66,7 +65,6 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DateBox from 'devextreme-react/date-box';

@@ -51,7 +51,6 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
@@ -81,7 +80,6 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
@@ -165,7 +163,6 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import "devextreme/data/odata/store";
 
@@ -198,7 +195,6 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import "devextreme/data/odata/store";
 

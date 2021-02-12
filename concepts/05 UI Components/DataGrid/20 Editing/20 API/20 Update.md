@@ -62,7 +62,6 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Wi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -99,7 +98,6 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Wi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
@@ -220,7 +218,6 @@ You can check if there are any unsaved changes by calling the [hasEditData()](/a
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
@@ -264,7 +261,6 @@ You can check if there are any unsaved changes by calling the [hasEditData()](/a
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';

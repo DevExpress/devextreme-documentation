@@ -54,7 +54,6 @@ For a minor customization of **Autocomplete** items, you can define [specific fi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -78,7 +77,6 @@ For a minor customization of **Autocomplete** items, you can define [specific fi
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
@@ -158,7 +156,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
@@ -182,7 +179,6 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Autocomplete } from 'devextreme-react/autocomplete';

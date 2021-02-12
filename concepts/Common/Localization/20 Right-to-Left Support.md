@@ -62,7 +62,6 @@ RTL layout can be specified for an individual UI component using its **rtlEnable
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxSlider from 'devextreme-vue/slider';
@@ -79,7 +78,6 @@ RTL layout can be specified for an individual UI component using its **rtlEnable
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Slider from 'devextreme-react/slider';

@@ -53,7 +53,6 @@ Configures the DevExtreme UI component used as a toolbar item.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxToolbar, {
@@ -78,7 +77,6 @@ Configures the DevExtreme UI component used as a toolbar item.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Toolbar, {

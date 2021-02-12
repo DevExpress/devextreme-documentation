@@ -56,7 +56,6 @@ When the **Popup** is shown, the area beneath it can be shaded. To enable this b
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
@@ -76,7 +75,6 @@ When the **Popup** is shown, the area beneath it can be shaded. To enable this b
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Popup } from 'devextreme-react/popup';

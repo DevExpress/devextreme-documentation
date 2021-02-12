@@ -102,7 +102,6 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
@@ -141,7 +140,6 @@ In the following code, the **customizeDateNavigatorText** function is used to sh
     <!-- tab: App.js -->
     import React, { useCallback, useState } from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';

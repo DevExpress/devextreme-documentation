@@ -665,7 +665,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
 
 ---
 
-You can find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button/tree/main/handle-screen-transitions" target="_blank">getting-started-with-floating-action-button/handle-screen-transitions</a>.
+You can find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-screen-transitions/" target="_blank">getting-started-with-floating-action-button-screen-transitions</a>.
 
 For more information on the Floating Action Button's functionality, explore the following resources:
 

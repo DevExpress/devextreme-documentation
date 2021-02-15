@@ -5,7 +5,7 @@ default: 1500
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the maximum filter query length in characters.
 
 ---
 <!-- Description goes here -->

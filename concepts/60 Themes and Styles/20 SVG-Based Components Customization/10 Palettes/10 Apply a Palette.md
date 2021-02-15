@@ -228,10 +228,9 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
                 palette: "Violet",
                 paletteSize: 7,
                 customize: function(elements) {
-                    var paletteIndex = 0;
-                    $.each(elements, function(_, element) {
+                    elements.forEach(function(element, index) {
                         element.applySettings({
-                            paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                            paletteIndex: index % 7
                         });
                     });
                 }
@@ -304,10 +303,9 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         worldMap: any = mapsData.world;
 
         colorizeMap(elements) {
-            let paletteIndex = 0;
-            elements.forEach((element) => {
+            elements.forEach((element, index) => {
                  element.applySettings({
-                    paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                    paletteIndex: index % 7
                 });
             });
         }
@@ -395,10 +393,9 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         },
         methods: {
             colorizeMap(elements) {
-                let paletteIndex = 0;
-                elements.forEach((element) => {
+                elements.forEach((element, index) => {
                     element.applySettings({
-                        paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                        paletteIndex: index % 7
                     });
                 });
             }
@@ -456,10 +453,9 @@ In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20D
         }
 
         colorizeMap(elements) {
-            let paletteIndex = 0;
-            elements.forEach((element) => {
+            elements.forEach((element, index) => {
                 element.applySettings({
-                    paletteIndex: paletteIndex == 7 ? paletteIndex = 0 : paletteIndex++
+                    paletteIndex: index % 7
                 });
             });
         }

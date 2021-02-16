@@ -25,7 +25,7 @@ Indicates the stage of the summary item calculation; equals *"start"*, *"calcula
 The resulting summary item's value.
 
 ##### field(options.value): any
-A column used to calculate the summary. If you need an entire data object in this field, do not specify the summary item's [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) property. To display the summary in this case, use the [showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) property instead.
+A column value used to calculate the summary. If you need an entire data object in this field, do not specify the summary item's [column](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#column) property. To display the summary in this case, use the [showInColumn](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn) property instead.
 
 ---
 This is a single function for all custom summary items. Specify a [name](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#name') for each item to identify it in the function.
@@ -290,7 +290,7 @@ You can use the **value** field to retrieve the column value. If you do not spec
 
 ##### Angular
 
-    <!-- app.component.ts -->
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     // ...
     export class AppComponent {
@@ -320,7 +320,7 @@ You can use the **value** field to retrieve the column value. If you do not spec
         }
     }
 
-    <!-- app.component.html -->
+    <!-- tab: app.component.html -->
     <dx-data-grid ... 
         [selectedRowKeys]="selectedRows">
         <dxi-column dataField="width"></dxi-column>

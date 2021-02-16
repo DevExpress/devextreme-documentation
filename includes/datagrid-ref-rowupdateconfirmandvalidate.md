@@ -8,8 +8,8 @@
             // ...
             onRowUpdating: function(e) {
                 var deferred = $.Deferred();
-                var promtPromise = DevExpress.ui.dialog.confirm("Are you sure?", "Confirm");
-                promtPromise.done((dialogResult) => {
+                var promptPromise = DevExpress.ui.dialog.confirm("Are you sure?", "Confirm");
+                promptPromise.done((dialogResult) => {
                     if (dialogResult) {
                         let params = "";
                         for (let key in e.newData) {
@@ -48,8 +48,8 @@
         // ...
         updateRow(e) {
             e.cancel = new Promise((resolve, reject) => {
-                const promtPromise = confirm("Are you sure?", "Confirm changes");
-                promtPromise.then((dialogResult) => {
+                const promptPromise = confirm("Are you sure?", "Confirm changes");
+                promptPromise.then((dialogResult) => {
                     if (dialogResult) {
                         let params = new HttpParams();
                         for (let key in e.newData) {
@@ -111,8 +111,8 @@
         methods: {
             updateRow(e) {
                 e.cancel = new Promise((resolve, reject) => {
-                    const promtPromise = dialog.confirm("Are you sure?", "Confirm changes");
-                    promtPromise.then((dialogResult) => {
+                    const promptPromise = dialog.confirm("Are you sure?", "Confirm changes");
+                    promptPromise.then((dialogResult) => {
                         if (dialogResult) {
                             let params = "?";
                             for (let key in e.newData) {
@@ -145,8 +145,8 @@
 
     function onRowUpdating(e) {
     e.cancel = new Promise((resolve, reject) => {
-        const promtPromise = dialog.confirm("Are you sure?", "Confirm changes");
-        promtPromise.then((dialogResult) => {
+        const promptPromise = dialog.confirm("Are you sure?", "Confirm changes");
+        promptPromise.then((dialogResult) => {
         if (dialogResult) {
             let params = "?";
             for (let key in e.newData) {

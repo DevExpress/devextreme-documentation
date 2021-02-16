@@ -38,4 +38,4 @@ The row's old data.
 
 The following code shows how to use the function parameter's **cancel** field to prevent or continue row updating. In this code, a Promise is assigned to this field. Row updating continues if a user confirms updating and row data validation on the server succeeds (the Promise is resolved); otherwise, row updating is prevented (the Promise is rejected).
 
-#include datagrid-ref-rowupdateconfirmandvalidate.md
+#include datagrid-ref-rowupdateconfirmandvalidate

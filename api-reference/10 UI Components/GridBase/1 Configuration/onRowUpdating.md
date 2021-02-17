@@ -34,7 +34,7 @@ The row's updated data.
 The row's old data.
 
 ---
-[note] 
+[note]
 
 - Use this function to perform checks before data is updated. If you need to implement a custom update logic, implement [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [update](Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function.
 

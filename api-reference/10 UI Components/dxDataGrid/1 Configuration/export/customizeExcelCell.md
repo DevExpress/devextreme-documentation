@@ -26,7 +26,7 @@ The cell fill pattern.
 The cell font.
 
 ##### field(options.gridCell): ExcelDataGridCell
-A **DataGrid** cell that corresponds to the Excel cell.
+A DataGrid cell that corresponds to the Excel cell.
 
 ##### field(options.horizontalAlignment): 'center' | 'centerContinuous' | 'distributed' | 'fill' | 'general' | 'justify' | 'left' | 'right'
 The horizontal cell alignment.

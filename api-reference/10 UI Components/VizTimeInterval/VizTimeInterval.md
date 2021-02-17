@@ -8,6 +8,6 @@ inlineType:
 ---
 ---
 ##### shortDescription
-A class describing various time intervals. Inherited by tick intervals in **Chart** and **RangeSelector**.
+A class describing various time intervals. Inherited by tick intervals in Chart and RangeSelector.
 
 ---

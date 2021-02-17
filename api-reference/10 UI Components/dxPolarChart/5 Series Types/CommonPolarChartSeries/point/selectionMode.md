@@ -12,7 +12,7 @@ Specifies what series points to highlight when a point is selected.
 dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.scatterpolarseries
 
 ---
-The **PolarChart** UI component comes with the API that allows you to select a point in code. Use the **selectionMode** property to specify what series points to select when a point is selected:
+The PolarChart UI component comes with the API that allows you to select a point in code. Use the **selectionMode** property to specify what series points to select when a point is selected:
 
 * **onlyPoint**   
 Changes the appearance of the selected point only.

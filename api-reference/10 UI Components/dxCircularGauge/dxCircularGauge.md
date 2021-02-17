@@ -6,7 +6,7 @@ inherits: BaseGauge
 ---
 ---
 ##### shortDescription
-The **CircularGauge** is a UI component that indicates values on a circular numeric scale.
+The CircularGauge is a UI component that indicates values on a circular numeric scale.
 
 ##### widgettree
 value: 48

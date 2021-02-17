@@ -7,7 +7,7 @@ type: function(filterValue, field)
 Specifies a function that returns a filter expression for this custom operation.
 
 ##### param(filterValue): any
-A **FilterBuilder** field's value.
+A FilterBuilder field's value.
 
 ##### param(field): dxFilterBuilderField
 The field's configuration.

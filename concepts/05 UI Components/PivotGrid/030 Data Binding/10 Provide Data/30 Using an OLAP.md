@@ -1,4 +1,4 @@
-DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/') Store type, which is used to interact with OLAP servers using an XMLA standard. If you intended to use OLAP technology for analyzing your data with the **PivotGrid** UI component, follow the steps below and you will learn how to configure the Microsoft Analysis Services and connect the **PivotGrid** UI component to it. 
+DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/') Store type, which is used to interact with OLAP servers using an XMLA standard. If you intended to use OLAP technology for analyzing your data with the PivotGrid UI component, follow the steps below and you will learn how to configure the Microsoft Analysis Services and connect the PivotGrid UI component to it. 
 
 [note] If you use another OLAP server that supports an XMLA standard, refer to the documentation for this server and learn how to configure HTTP access to it, then jump to step 6 of the list below.
 
@@ -23,7 +23,7 @@ DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/Xml
 
 &emsp;5.2.&nbsp;While configuring HTTP access, you added an "OLAP" script map to the OLAP application (Step 3, items 6-8 of the <a href="https://technet.microsoft.com/en-us/library/gg492140.aspx" target="_blank">Configure HTTP Access to Analysis Services on Internet Information Services (IIS) 8.0</a> MSDN article). To make the cross-domain access work, make sure the "OPTIONSVerbHandler" is at the top of the **Handler Mappings** list. To access the list's order, click **View Ordered List...** from the **Actions** menu. If the "OPTIONSVerbHandler" is not at the top of the list, select the "OPTIONSVerbHandler" and use the **Move Up** command from the Actions menu to move it to the top. Also make sure the **OLAP** handler is located above other *.dll handlers (even the disabled ones). 
 
-6.&nbsp;Configure the **PivotGrid**.**dataSource**.[store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') object for using your OLAP server.
+6.&nbsp;Configure the PivotGrid.**dataSource**.[store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') object for using your OLAP server.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/OLAPDataSource/"

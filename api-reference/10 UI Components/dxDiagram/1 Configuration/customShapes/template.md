@@ -18,7 +18,7 @@ The shapes object.
 ---
 The template content must be presented as SVG elements.
 
-Use the [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeTemplate') property to define a common template for all shapes in the **Diagram** UI component.
+Use the [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeTemplate') property to define a common template for all shapes in the Diagram UI component.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"

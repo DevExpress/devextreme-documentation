@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **MultiView** is a UI component that contains several views. An end user navigates through the views by swiping them in the horizontal direction.
+The MultiView is a UI component that contains several views. An end user navigates through the views by swiping them in the horizontal direction.
 
 ##### widgettree
 dataSource: [

@@ -1,4 +1,4 @@
-In addition to the major grid built on major ticks, the **Chart** provides a minor grid built on [minor ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/').
+In addition to the major grid built on major ticks, the Chart provides a minor grid built on [minor ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/').
 
 ![DevExtreme HTML5 JavaScript Charts MinorGridLines](/images/ChartJS/visual_elements/minor_grid_lines.png)
 
@@ -11,7 +11,7 @@ Settings for the minor grid lines that ascend from the argument axis.
 Settings for the minor grid lines that ascend from the value axis.
 
 - **commonAxisSettings**.[minorGrid](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/')         
-Settings for all minor grid lines in the **Chart**.
+Settings for all minor grid lines in the Chart.
 
 #####See Also#####
 - [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')

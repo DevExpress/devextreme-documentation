@@ -12,7 +12,7 @@ The default validation group.
 The object returned by the **getGroupConfig(group)** function has the following structure.
 
 - **validators**  
-    An array of **Validator** UI components that are included to the validated group.
+    An array of Validator UI components that are included to the validated group.
 - **validate()**   
     The method that allows you to validate the UI components included to the current group.
 - **validated**  

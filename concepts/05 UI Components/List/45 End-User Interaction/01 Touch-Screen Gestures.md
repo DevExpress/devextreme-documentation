@@ -1,4 +1,4 @@
-The **List** supports the following touch-screen gestures.
+The List supports the following touch-screen gestures.
 
 - **Swipe**     
 Swipe can be used to [delete an item](/concepts/05%20Widgets/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#User_Interaction') or access the commands of the [context menu](/concepts/05%20Widgets/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/UI_Components/List/Item_Context_Menu/'). Performing this gesture raises the [itemSwipe](/api-reference/10%20UI%20Widgets/dxList/4%20Events/itemSwipe.md '/Documentation/ApiReference/UI_Components/dxList/Events/#itemSwipe') event. To handle it, assign a function to the [onItemSwipe](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/onItemSwipe.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onItemSwipe') property, or subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method.
@@ -94,7 +94,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
     ---
 
 - **Pull Down to Refresh**          
-This gesture refreshes data in the **List**. To enable it, assign **true** to the [pullRefreshEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/pullRefreshEnabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#pullRefreshEnabled') property.
+This gesture refreshes data in the List. To enable it, assign **true** to the [pullRefreshEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/pullRefreshEnabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#pullRefreshEnabled') property.
 
     ---
     ##### jQuery

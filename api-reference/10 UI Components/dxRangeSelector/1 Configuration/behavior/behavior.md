@@ -4,6 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the **RangeSelector**'s behavior properties.
+Specifies the RangeSelector's behavior properties.
 
 ---

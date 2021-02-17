@@ -1,4 +1,4 @@
-Exposes the **Sparkline** UI component.
+Exposes the Sparkline UI component.
 
 Exports:
 

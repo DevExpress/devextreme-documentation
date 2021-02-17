@@ -1,10 +1,10 @@
-The **Autocomplete** UI component is a textbox that provides suggestions while a user types into it.
+The Autocomplete UI component is a textbox that provides suggestions while a user types into it.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview/"
 }
 
-The following code adds the **Autocomplete** to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#placeholder') to be displayed when the **Autocomplete** is empty.
+The following code adds the Autocomplete to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#placeholder') to be displayed when the Autocomplete is empty.
 
 ---
 ##### jQuery

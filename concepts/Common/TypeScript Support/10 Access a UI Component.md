@@ -1,4 +1,4 @@
-To access a UI component, you need to obtain its instance first. Note that the variable that will contain the UI component instance should have a `DevExpress.viz.WidgetName` or `DevExpress.ui.WidgetName` type. For example, see how you can obtain the instance of a **Chart** UI component.
+To access a UI component, you need to obtain its instance first. Note that the variable that will contain the UI component instance should have a `DevExpress.viz.WidgetName` or `DevExpress.ui.WidgetName` type. For example, see how you can obtain the instance of a Chart UI component.
 
     var chartInstance: DevExpress.viz.dxChart;
     chartInstance = $('#chartContainer').dxChart('instance');

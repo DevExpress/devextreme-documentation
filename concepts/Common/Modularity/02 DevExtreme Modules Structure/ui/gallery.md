@@ -1,4 +1,4 @@
-Exposes the **Gallery** UI component.
+Exposes the Gallery UI component.
 
 Exports:
 

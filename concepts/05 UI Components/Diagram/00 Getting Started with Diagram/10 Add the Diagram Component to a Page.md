@@ -64,7 +64,7 @@ You should also add the [canvg](https://github.com/canvg/canvg) library to your 
 [/note]
 
 
-Initialize the **Diagram** UI component in a DOM element.
+Initialize the Diagram UI component in a DOM element.
 
         <!--JavaScript-->
         $(function() {

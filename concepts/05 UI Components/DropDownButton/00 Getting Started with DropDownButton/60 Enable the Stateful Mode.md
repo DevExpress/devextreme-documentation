@@ -1,4 +1,4 @@
-If the **DropDownButton** should remember the selected drop-down menu item, switch it to the stateful mode. Set the **useSelectMode** property to **true** and make the following replacements in your code:
+If the DropDownButton should remember the selected drop-down menu item, switch it to the stateful mode. Set the **useSelectMode** property to **true** and make the following replacements in your code:
 
 - Use [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onSelectionChanged') instead of **onItemClick**.        
 
@@ -122,7 +122,7 @@ Run the code, open the drop-down menu, and select an item. You should see that t
     My profile was selected; Log out was deselected
     Contacts was selected; My profile was deselected
 
-You have configured basic **DropDownButton** features. For more information about this UI component, explore the following resources:
+You have configured basic DropDownButton features. For more information about this UI component, explore the following resources:
 
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton/Overview)
 - [API Reference](/api-reference/10%20UI%20Widgets/dxDropDownButton '/Documentation/ApiReference/UI_Components/dxDropDownButton/')

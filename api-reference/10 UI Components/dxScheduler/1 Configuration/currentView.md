@@ -11,7 +11,7 @@ Specifies the currently displayed view. Accepts the view's [name](/api-reference
 
 ---
 
-When more than one view matches the **currentView** value, the **Scheduler** displays the first matching view from the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array.
+When more than one view matches the **currentView** value, the Scheduler displays the first matching view from the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array.
 
 To subscribe to changes of the current view, use the [onOptionChanged](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onOptionChanged) handler.
 

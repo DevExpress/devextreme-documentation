@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods that can be called to manipulate the **TreeMap** UI component.
+This section describes methods that can be called to manipulate the TreeMap UI component.
 
 ---
 #####See Also#####

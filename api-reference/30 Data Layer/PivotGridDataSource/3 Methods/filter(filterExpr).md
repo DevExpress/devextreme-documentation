@@ -10,7 +10,7 @@ A filter expression.
 Pass **null** to clear filtering settings.
 
 ---
-Call the [reload()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#reload') method to update the **PivotGrid**:
+Call the [reload()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#reload') method to update the PivotGrid:
 
 ---
 ##### jQuery

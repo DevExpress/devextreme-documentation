@@ -1,4 +1,4 @@
-All **ResponsiveBox** elements are arranged in a layout grid according to the [rows](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. Each object in these arrays configures a single row or column. Populate these arrays with empty objects to get two sets of equally-sized rows and columns.
+All ResponsiveBox elements are arranged in a layout grid according to the [rows](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. Each object in these arrays configures a single row or column. Populate these arrays with empty objects to get two sets of equally-sized rows and columns.
 
 ---
 ##### jQuery
@@ -117,9 +117,9 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
 
 ---
 
-The **baseSize**, **ratio**, and **shrink** settings control a row or column's size. The **baseSize** defines the row's or column's initial size in pixels. The size then changes according to **ratio** and **shrink** if the **ResponsiveBox**'s size changes.
+The **baseSize**, **ratio**, and **shrink** settings control a row or column's size. The **baseSize** defines the row's or column's initial size in pixels. The size then changes according to **ratio** and **shrink** if the ResponsiveBox's size changes.
 
-The **ResponsiveBox** can provide more space than rows' and columns' **baseSize**s require:
+The ResponsiveBox can provide more space than rows' and columns' **baseSize**s require:
 
 ![DevExtreme ResponsiveBox: Available width and height](/images/UiWidgets/ResponsiveBox/responsivebox-basesize.png)
 

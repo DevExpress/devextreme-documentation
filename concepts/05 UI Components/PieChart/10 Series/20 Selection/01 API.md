@@ -204,7 +204,7 @@ In the previous code example, a specific point's selection was cleared. Call a s
 
 ---
 
-In a multi-series **PieChart**, you can clear the entire selection at once by calling the **PieChart** instance's [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#clearSelection') method.
+In a multi-series PieChart, you can clear the entire selection at once by calling the PieChart instance's [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#clearSelection') method.
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-Exposes the **NumberBox** UI component.
+Exposes the NumberBox UI component.
 
 Exports:
 

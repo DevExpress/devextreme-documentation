@@ -81,11 +81,11 @@ This article describes how to create an ASP.NET Core Angular application and add
             ] 
         })
 
-1. Open the `ClientApp/src/app/fetch-data/fetch-data.component.html` file and replace the table in it with the following code. This code creates the DevExtreme **DataGrid** UI component and binds it to sample data the `FetchDataComponent` provides:
+1. Open the `ClientApp/src/app/fetch-data/fetch-data.component.html` file and replace the table in it with the following code. This code creates the DevExtreme DataGrid UI component and binds it to sample data the `FetchDataComponent` provides:
 
         <!-- tab: fetch-data.component.html -->
         <dx-data-grid [dataSource]="forecasts"></dx-data-grid>
 
-Run the application and navigate to the Fetch data page. You should see a **DataGrid** that displays weather forecast.
+Run the application and navigate to the Fetch data page. You should see a DataGrid that displays weather forecast.
 
 #include ng-demos-and-code-examples

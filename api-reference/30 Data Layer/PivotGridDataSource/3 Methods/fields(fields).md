@@ -9,7 +9,7 @@ Specifies a new [fields](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%
 New fields.
 
 ---
-Call the [load()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#load') method to update the **PivotGrid**:
+Call the [load()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#load') method to update the PivotGrid:
 
 ---
 ##### jQuery

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events raised by the **SpeedDialAction** UI component.
+This section describes events raised by the SpeedDialAction UI component.
 
 ---
 #####See Also#####

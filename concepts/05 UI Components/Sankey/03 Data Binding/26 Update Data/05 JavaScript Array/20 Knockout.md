@@ -1,4 +1,4 @@
-Declare the array <a href="http://knockoutjs.com/documentation/observableArrays.html" target="_blank">observable</a> and bind the **dataSource** property to it. Whenever an item is added or removed from this array, the **Sankey** is updated accordingly.
+Declare the array <a href="http://knockoutjs.com/documentation/observableArrays.html" target="_blank">observable</a> and bind the **dataSource** property to it. Whenever an item is added or removed from this array, the Sankey is updated accordingly.
 
     <!--HTML--><div id="sankeyContainer" data-bind="dxSankey: {
         dataSource: sankeyData

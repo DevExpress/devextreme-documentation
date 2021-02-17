@@ -1,4 +1,4 @@
-The **Sankey**'s algorithm distributes nodes between columns. This distribution ensures a proper node-to-node flow direction. You cannot move nodes from one column to another because this alters the flow direction.
+The Sankey's algorithm distributes nodes between columns. This distribution ensures a proper node-to-node flow direction. You cannot move nodes from one column to another because this alters the flow direction.
 
 However, you can sort nodes within a column. Configure the [sortData](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/sortData.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#sortData') object so that its fields correspond to nodes. The field values should be node weights: the heavier the node, the lower it is in its column. Refer to the **sortData** description for an example.
 

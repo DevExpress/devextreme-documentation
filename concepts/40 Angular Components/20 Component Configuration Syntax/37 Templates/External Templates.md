@@ -16,7 +16,7 @@ The <a href="https://angular.io/api/common/NgTemplateOutlet" target="_blank">`ng
         {{index}} - {{data.itemProperty}}
     </ng-template>
 
-In the previous code, the external template is used in the same component in which it is declared. The following code illustrates the case when the external template is declared in another component. The `ngTemplateOutlet` directive should be set to an <a href="https://angular.io/api/core/Input" target="_blank">input property</a> in this case:
+In the previous code, the external template is used in the same component in which it is declared. The following code illustrates the case when the external template is declared in another component. The `ngTemplateOutlet` directive should be set to an <a href="https://angular.io/guide/inputs-outputs" target="_blank">input property</a> in this case:
 
     <!-- tab: parent.component.html -->
     <ng-template #customItemTemplate let-data="itemData" let-index="itemIndex">

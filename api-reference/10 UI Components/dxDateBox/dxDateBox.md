@@ -6,7 +6,7 @@ inherits: dxDropDownEditor
 ---
 ---
 ##### shortDescription
-The **DateBox** is a UI component that displays date and time in a specified format, and enables a user to pick or type in the required date/time value.
+The DateBox is a UI component that displays date and time in a specified format, and enables a user to pick or type in the required date/time value.
 
 ##### widgettree
 opened: true

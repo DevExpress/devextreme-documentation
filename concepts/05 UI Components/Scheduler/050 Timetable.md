@@ -1,4 +1,4 @@
-The **Scheduler** UI component allows you to customize its timetable. You can specify the time period and a single cell's duration via the [startDayHour](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour'), [endDayHour](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'), and [cellDuration](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') properties. Using the [firstDayOfWeek](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/firstDayOfWeek.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#firstDayOfWeek') property, you can define the weekday that is shown first.
+The Scheduler UI component allows you to customize its timetable. You can specify the time period and a single cell's duration via the [startDayHour](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour'), [endDayHour](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'), and [cellDuration](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') properties. Using the [firstDayOfWeek](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/firstDayOfWeek.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#firstDayOfWeek') property, you can define the weekday that is shown first.
 
 ---
 
@@ -156,7 +156,7 @@ You can also adjust cells' size in the table and around it using the DevExtreme 
         height: 200px;
     }
 
-For a more detailed customization, define custom templates for cells, time scales, and date scales. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component for Angular, AngularJS and Knockout apps. The following code shows how to use **dxTemplate** to define templates for timetable parts:
+For a more detailed customization, define custom templates for cells, time scales, and date scales. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component for Angular, AngularJS and Knockout apps. The following code shows how to use dxTemplate to define templates for timetable parts:
 
 ---
 

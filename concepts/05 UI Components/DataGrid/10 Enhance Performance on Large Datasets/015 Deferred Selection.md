@@ -1,4 +1,4 @@
-Use deferred mode to increase the **DataGrid**'s performance when [selecting multiple rows](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') at once. In this mode, only the API (for example, the [getSelectedRowsData()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowKeys().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowKeys') method) can request the **DataGrid** data. Assign **true** to the **selection**.[deferred](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/deferred.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred') property to use deferred selection.
+Use deferred mode to increase the DataGrid's performance when [selecting multiple rows](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') at once. In this mode, only the API (for example, the [getSelectedRowsData()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowKeys().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowKeys') method) can request the DataGrid data. Assign **true** to the **selection**.[deferred](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/deferred.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred') property to use deferred selection.
 
 ---
 
@@ -203,7 +203,7 @@ The following tasks require using different API in deferred mode:
 
     ---
     
-    The **DataGrid** changes the **selectionFilter** property's value internally when a user selects a row. You can use the following code to obtain this property's value and send it to the server:
+    The DataGrid changes the **selectionFilter** property's value internally when a user selects a row. You can use the following code to obtain this property's value and send it to the server:
 
     ---
     #####jQuery

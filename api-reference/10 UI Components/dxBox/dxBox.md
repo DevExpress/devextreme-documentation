@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-The **Box** UI component allows you to arrange various elements within it. Separate and adaptive, the **Box** UI component acts as a building block for the layout.
+The Box UI component allows you to arrange various elements within it. Separate and adaptive, the Box UI component acts as a building block for the layout.
 
 ##### lib
 dx.web.js, dx.all.js

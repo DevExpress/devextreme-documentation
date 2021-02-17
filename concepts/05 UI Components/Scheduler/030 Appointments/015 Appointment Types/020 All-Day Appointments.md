@@ -12,7 +12,7 @@ To create an all-day appointment, set its [allDay](/Documentation/ApiReference/C
     }];
 
 
-If your appointment data objects contain a different field that performs the functions of **allDay**, specify its name in the **Scheduler**'s [allDayExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr) property.
+If your appointment data objects contain a different field that performs the functions of **allDay**, specify its name in the Scheduler's [allDayExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr) property.
 
 ---
 ##### jQuery

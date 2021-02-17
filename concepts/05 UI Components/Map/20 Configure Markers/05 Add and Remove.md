@@ -129,7 +129,7 @@ To add or remove a marker at runtime, call the [addMarker(markerOptions)](/api-r
     // Removes the markers with indexes 0 and 4 in the "markers" array
     map.removeMarker([0, 4]);
 
-In the following code, a marker is added each time a user clicks someplace on the **Map**. The last marker from the **markers**  array is removed when the user clicks the [Button](/Documentation/ApiReference/UI_Components/dxButton/) under the **Map**.
+In the following code, a marker is added each time a user clicks someplace on the Map. The last marker from the **markers**  array is removed when the user clicks the [Button](/Documentation/ApiReference/UI_Components/dxButton/) under the Map.
 
     <!--JavaScript-->
     $(function() {
@@ -157,7 +157,7 @@ In the following code, a marker is added each time a user clicks someplace on th
         });
     });
 
-With Angular, Vue, or React, use a different technique. Bind the **markers** property of the **Map** UI component to a component property. 
+With Angular, Vue, or React, use a different technique. Bind the **markers** property of the Map UI component to a component property. 
 
 ---
 ##### Angular

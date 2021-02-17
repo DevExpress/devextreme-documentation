@@ -1,4 +1,4 @@
-A mask defines a pattern for the **TextBox** value. You can specify the mask using the [mask](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/mask.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#mask') property. A mask can contain the following elements.
+A mask defines a pattern for the TextBox value. You can specify the mask using the [mask](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/mask.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#mask') property. A mask can contain the following elements.
 
 <table class="dx-table">
     <tr>
@@ -261,7 +261,7 @@ By default, the UI component uses underscores to designate blanks in the masked 
 
 ---
 
-If the input value does not match the mask, the **TextBox** displays an error message specified by the [maskInvalidMessage](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskInvalidMessage.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maskInvalidMessage') property.
+If the input value does not match the mask, the TextBox displays an error message specified by the [maskInvalidMessage](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/maskInvalidMessage.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maskInvalidMessage') property.
 
 ---
 ##### jQuery

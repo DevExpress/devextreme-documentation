@@ -1,4 +1,4 @@
-Toolbar items allow users to format the **HtmlEditor**'s content and perform actions on it.
+Toolbar items allow users to format the HtmlEditor's content and perform actions on it.
 
 Predefined toolbar items include:
 

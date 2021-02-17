@@ -12,7 +12,7 @@ Configures task resources.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
 
-You can add resources to a project and assign them to tasks. Resources can be people responsible for tasks, equipment, materials, etc. The **Gantt**  displays resources as labels on the right of the tasks.
+You can add resources to a project and assign them to tasks. Resources can be people responsible for tasks, equipment, materials, etc. The Gantt  displays resources as labels on the right of the tasks.
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 

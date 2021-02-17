@@ -100,7 +100,7 @@ Items can be arranged in a row or in a column depending on the value of the [dir
     </script>
 </div>
 
-If the **Box** items do not occupy the entire **Box**, you can align them along and crosswise the specified **direction**. For this purpose, use the [align](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/align.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#align') and [crossAlign](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/crossAlign.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#crossAlign') properties, respectively.
+If the Box items do not occupy the entire Box, you can align them along and crosswise the specified **direction**. For this purpose, use the [align](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/align.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#align') and [crossAlign](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/crossAlign.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#crossAlign') properties, respectively.
 
 ---
 

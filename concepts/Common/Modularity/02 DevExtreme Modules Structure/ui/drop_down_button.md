@@ -1,4 +1,4 @@
-Exposes the **DropDownButton** UI component.
+Exposes the DropDownButton UI component.
 
 Exports:
 

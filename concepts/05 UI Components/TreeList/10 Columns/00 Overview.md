@@ -45,7 +45,7 @@ Columns represent sets of data values that have the same type. To configure colu
     
 ---
 
-The **TreeList** generates a column per data field if you do not specify the **columns** array. You can make minor adjustments to these columns with the [customizeColumns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#customizeColumns') function. Use the function's parameter to access the column configurations.
+The TreeList generates a column per data field if you do not specify the **columns** array. You can make minor adjustments to these columns with the [customizeColumns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#customizeColumns') function. Use the function's parameter to access the column configurations.
 
 ---
 ##### jQuery
@@ -86,7 +86,7 @@ The **TreeList** generates a column per data field if you do not specify the **c
     
 ---
 
-This topic has outlined the ways to configure columns in the **TreeList** UI component. For a detailed overview of column features, refer to other topics in this section.
+This topic has outlined the ways to configure columns in the TreeList UI component. For a detailed overview of column features, refer to other topics in this section.
 
 #####See Also#####
 - **Column Types**: [Data Columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Data_Columns/') | [Band Columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Band_Columns/') | [Lookup Columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/3%20Lookup%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Lookup_Columns/') | [Command Columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/')

@@ -1,4 +1,4 @@
-Exposes the **Tabs** UI component.
+Exposes the Tabs UI component.
 
 Exports:
 

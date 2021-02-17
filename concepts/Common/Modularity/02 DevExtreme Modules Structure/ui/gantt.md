@@ -1,4 +1,4 @@
-Exposes the **Gantt** UI component.
+Exposes the Gantt UI component.
 
 Exports:
 

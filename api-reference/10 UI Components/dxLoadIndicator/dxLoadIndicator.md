@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **LoadIndicator** is a UI element notifying the viewer that a process is in progress.
+The LoadIndicator is a UI element notifying the viewer that a process is in progress.
 
 ##### widgettree
 

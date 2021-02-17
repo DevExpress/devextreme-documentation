@@ -86,7 +86,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pag
 
 ---
 
-The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageIndexnewIndex') and [pageSize(value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageSize(value).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageSizevalue') methods that switch the grid to a specific page and change the page size. They can also be called without arguments, in which case, they return the index and size of the current page.
+The DataGrid also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageIndexnewIndex') and [pageSize(value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageSize(value).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageSizevalue') methods that switch the grid to a specific page and change the page size. They can also be called without arguments, in which case, they return the index and size of the current page.
 
 ---
 

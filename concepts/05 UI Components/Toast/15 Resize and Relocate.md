@@ -1,4 +1,4 @@
-To change the size of the **Toast**, specify the [height](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width') properties.
+To change the size of the Toast, specify the [height](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width') properties.
 
 ---
 ##### jQuery
@@ -150,7 +150,7 @@ To change the size of the **Toast**, specify the [height](/api-reference/10%20UI
 
 ---
 
-If you need to position the **Toast** against a specific element on your page, set the [position](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position') property.
+If you need to position the Toast against a specific element on your page, set the [position](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position') property.
 
 ---
 ##### jQuery

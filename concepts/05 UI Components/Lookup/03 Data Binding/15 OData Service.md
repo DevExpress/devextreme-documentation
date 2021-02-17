@@ -1,4 +1,4 @@
-Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the **Lookup** to data provided by an OData service.
+Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the Lookup to data provided by an OData service.
 
 ---
 ##### jQuery

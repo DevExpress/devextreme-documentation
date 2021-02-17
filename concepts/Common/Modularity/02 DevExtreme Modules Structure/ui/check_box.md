@@ -1,4 +1,4 @@
-Exposes the **CheckBox** UI component.
+Exposes the CheckBox UI component.
 
 Exports:
 

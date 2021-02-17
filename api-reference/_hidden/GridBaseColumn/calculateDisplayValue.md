@@ -264,7 +264,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     
 ---
 
-The UI component uses the specified display values in [sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/{WidgetName}/Sorting/'), [searching](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Search_Panel'), and [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') (in case of **DataGrid**).
+The UI component uses the specified display values in [sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/{WidgetName}/Sorting/'), [searching](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Search_Panel'), and [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') (in case of DataGrid).
 
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"

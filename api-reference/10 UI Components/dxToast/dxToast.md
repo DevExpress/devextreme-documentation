@@ -6,7 +6,7 @@ inherits: dxOverlay
 ---
 ---
 ##### shortDescription
-The **Toast** is a UI component that provides pop-up notifications.
+The Toast is a UI component that provides pop-up notifications.
 
 ##### widgettree
 displayTime: 20000,

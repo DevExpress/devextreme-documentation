@@ -1,4 +1,4 @@
-The **Lookup** can organize items in groups. If you use a simple array as a data source, its objects must have the **key** and **items** fields.
+The Lookup can organize items in groups. If you use a simple array as a data source, its objects must have the **key** and **items** fields.
 
 ---
 ##### jQuery
@@ -115,7 +115,7 @@ The **Lookup** can organize items in groups. If you use a simple array as a data
 
 [note]Only one-level grouping is supported.
 
-If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), specify its [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property. In both cases, you need to make the **Lookup** know that its data source is grouped by assigning **true** to the [grouped](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped') property.
+If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), specify its [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property. In both cases, you need to make the Lookup know that its data source is grouped by assigning **true** to the [grouped](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped') property.
 
 ---
 ##### jQuery

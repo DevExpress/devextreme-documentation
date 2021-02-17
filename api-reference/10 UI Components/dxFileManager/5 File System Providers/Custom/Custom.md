@@ -11,7 +11,7 @@ A custom file system provider allows you to implement custom APIs to access and 
 ---
 Use the custom provider's methods to handle file operations (add, delete, rename, and so on).
 
-The following code shows how to create a custom file system provider and bind the **FileManager** UI component to it:
+The following code shows how to create a custom file system provider and bind the FileManager UI component to it:
 
 ---
 ##### jQuery

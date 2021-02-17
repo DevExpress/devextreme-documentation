@@ -10,7 +10,7 @@ A template that can be used to replace the default editor with custom content.
 The item's data.
 
 ##### field(data.component): dxForm
-The **Form** instance.
+The Form instance.
 
 ##### field(data.dataField): String
 The item's [dataField](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField').
@@ -38,7 +38,7 @@ In Angular, Vue, and React, this template can be used instead of [editorType](/a
 
 - If you use validation, define validation rules in the editor, not in the form item.
 
-- Use the same [validationGroup](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#validationGroup') as the **Form** to ensure the custom editor is validated simultaneously with other form editors.
+- Use the same [validationGroup](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#validationGroup') as the Form to ensure the custom editor is validated simultaneously with other form editors.
 
 The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component in the template. The UI component is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
 

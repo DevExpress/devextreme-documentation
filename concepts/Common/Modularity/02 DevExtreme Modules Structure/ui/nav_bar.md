@@ -1,4 +1,4 @@
-Exposes the **NavBar** UI component.
+Exposes the NavBar UI component.
 
 Exports:
 

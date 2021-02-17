@@ -1,4 +1,4 @@
-For a minor customization of **List** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') in item data objects. For example, the following code generates three items: each item has a badge, the second is disabled and the third is hidden.
+For a minor customization of List items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') in item data objects. For example, the following code generates three items: each item has a badge, the second is disabled and the third is hidden.
 
 ---
 ##### jQuery
@@ -42,7 +42,7 @@ For a minor customization of **List** items, you can define [specific fields](/a
 
 ---
 
-If you need a more flexible solution, define a custom template for UI component items. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define a template for **List** items.
+If you need a more flexible solution, define a custom template for UI component items. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define a template for List items.
 
 ---
 
@@ -159,7 +159,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         });
     });
 
-You can also customize an individual **List** item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#template') field. 
+You can also customize an individual List item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#template') field. 
 
     <!--HTML-->
     <script id="individualTemplate" type="text/html">

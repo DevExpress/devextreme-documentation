@@ -1,6 +1,6 @@
-The **DataGrid** supports single and multiple record selection modes. Use the **selection**.[mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode) property to specify the mode.
+The DataGrid supports single and multiple record selection modes. Use the **selection**.[mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode) property to specify the mode.
 
-You can obtain the selected record's data in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onSelectionChanged) function. In the code below, this function displays the selected employee under the **DataGrid**:
+You can obtain the selected record's data in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onSelectionChanged) function. In the code below, this function displays the selected employee under the DataGrid:
 
 ---
 ##### jQuery

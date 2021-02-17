@@ -1,6 +1,6 @@
 A marker is a point on a map accompanied by text that helps you flag certain places on the map. For example, you can use map markers to designate cities.
 
-Four types of markers are available in **VectorMap**: dot, bubble, pie and image, each of which corresponds to particular representational needs. The image below demonstrates the appearance of each marker type. Note that despite the fact that this image depicts all four types of markers on one map, an actual **VectorMap** can contain markers of only one type at a time.
+Four types of markers are available in VectorMap: dot, bubble, pie and image, each of which corresponds to particular representational needs. The image below demonstrates the appearance of each marker type. Note that despite the fact that this image depicts all four types of markers on one map, an actual VectorMap can contain markers of only one type at a time.
 
 ![DevExtreme ChartJS VectorMap](/images/ChartJS/MapMarkerTypes.png)
 

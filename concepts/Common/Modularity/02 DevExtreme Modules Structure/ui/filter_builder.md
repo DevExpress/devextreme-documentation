@@ -1,4 +1,4 @@
-Exposes the **FilterBuilder** UI component.
+Exposes the FilterBuilder UI component.
 
 Exports:
 

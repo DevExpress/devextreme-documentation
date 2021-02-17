@@ -1,4 +1,4 @@
-For a minor customization of **Autocomplete** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
+For a minor customization of Autocomplete items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
 ##### jQuery
@@ -236,7 +236,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         });
     });
 
-You can also customize an individual **Autocomplete** item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#template') field. 
+You can also customize an individual Autocomplete item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#template') field. 
 
     <!--HTML-->
     <script id="individualTemplate" type="text/html">

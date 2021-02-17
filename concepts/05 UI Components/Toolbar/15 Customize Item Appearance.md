@@ -1,4 +1,4 @@
-For a minor customization of **Toolbar** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/') in item data objects. For example, the following code generates four toolbar items: the first is a UI component, the second is hidden, the third is disabled, the fourth is relocated.
+For a minor customization of Toolbar items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxToolbar/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/') in item data objects. For example, the following code generates four toolbar items: the first is a UI component, the second is hidden, the third is disabled, the fourth is relocated.
 
 ---
 

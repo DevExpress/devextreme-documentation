@@ -11,7 +11,7 @@ Settings for the grid lines that ascend from the argument axis.
 Settings for the grid lines that ascend from the value axis.
 
 - **commonAxisSettings**.[grid](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/grid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/grid/')         
-Settings for all grid lines in the **Chart**.
+Settings for all grid lines in the Chart.
 
 Note that axis-specific settings override common settings.
 

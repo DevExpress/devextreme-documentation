@@ -1,4 +1,4 @@
-**DateBox** UI components are often coupled for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one **DateBox**'s range depending on the other's value as shown in the example below.
+DateBox UI components are often coupled for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one DateBox's range depending on the other's value as shown in the example below.
 
 ---
 ##### jQuery
@@ -167,7 +167,7 @@
 
 ---
 
-Do not forget to call the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate" target="_blank">getDate()</a> method on the **DateBox** values when calculating the interval duration.
+Do not forget to call the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate" target="_blank">getDate()</a> method on the DateBox values when calculating the interval duration.
 
 #####See Also#####
 #include common-link-configurewidget

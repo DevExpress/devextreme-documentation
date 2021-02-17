@@ -1,4 +1,4 @@
-A value indicator is a pointer that designates the [main value](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/#value') on the **LinearGauge**. There is a set of predefined value indicator types for this UI component.
+A value indicator is a pointer that designates the [main value](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/#value') on the LinearGauge. There is a set of predefined value indicator types for this UI component.
 
 - [Circle](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types/Circle '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/Circle/')
 - [RangeBar](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge/5%20Indicator%20Types/RangeBar '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/RangeBar/')

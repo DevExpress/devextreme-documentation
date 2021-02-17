@@ -1,4 +1,4 @@
-Exposes the **VectorMap** UI component.
+Exposes the VectorMap UI component.
 
 Exports:
 

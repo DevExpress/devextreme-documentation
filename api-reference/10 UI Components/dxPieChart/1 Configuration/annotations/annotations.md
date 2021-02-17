@@ -197,7 +197,7 @@ Annotations can be unattached or anchored to a chart element. The following list
         }]
 
 
-The **PieChart** displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled) when a user long-presses an annotation or hovers the mouse pointer over it.
+The PieChart displays a [tooltip]({basewidgetpath}/Configuration/annotations/#tooltipEnabled) when a user long-presses an annotation or hovers the mouse pointer over it.
 
 Objects in the **annotations[]** array configure individual annotations. To specify properties that apply to all annotations, use the [commonAnnotationSettings]({basewidgetpath}/Configuration/commonAnnotationSettings/) object. Individual settings take precedence over common settings.
 

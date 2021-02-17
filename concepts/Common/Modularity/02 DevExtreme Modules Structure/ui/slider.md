@@ -1,4 +1,4 @@
-Exposes the **Slider** UI component.
+Exposes the Slider UI component.
 
 Exports:
 

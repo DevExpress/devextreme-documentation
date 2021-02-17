@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when the **Button** is clicked or tapped.
+A function that is executed when the Button is clicked or tapped.
 
 ##### param(e): Object
 Information about the event.
@@ -31,7 +31,7 @@ To validate the editors that are related to the [validation group](/api-referenc
 - **group**  
     The name or object of the validation group that is assigned to the button's **validationGroup** property.
 - **validators**  
-    An array of **Validator** UI components that are included to the validation group.
+    An array of Validator UI components that are included to the validation group.
 - **validate()**   
     The method that allows you to validate the UI components included in the validation group.
 - **validated**  

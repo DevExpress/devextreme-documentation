@@ -1,4 +1,4 @@
-For a minor customization of **ActionSheet** buttons, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/') in button data objects. For example, the following code generates three buttons, the first is not customized, the second is disabled, the [type](/api-reference/_hidden/dxActionSheetItem/type.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#type') of the third button is *danger*.
+For a minor customization of ActionSheet buttons, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxActionSheet/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/') in button data objects. For example, the following code generates three buttons, the first is not customized, the second is disabled, the [type](/api-reference/_hidden/dxActionSheetItem/type.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#type') of the third button is *danger*.
 
 ---
 ##### JQuery
@@ -270,7 +270,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         background-color: white;
     }
 
-You can also customize an individual **ActionSheet** button. For this purpose, declare a template for this button as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#template') field. 
+You can also customize an individual ActionSheet button. For this purpose, declare a template for this button as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#template') field. 
 
     <!--HTML-->
     <script id="individualTemplate" type="text/html">

@@ -9,7 +9,7 @@ Specifies a chunk size, in bytes.
 
 ---
 
-The **FileManager** can divide a large file in parts and upload them in separate requests. 
+The FileManager can divide a large file in parts and upload them in separate requests. 
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods that control the **HtmlEditor** UI component.
+This section describes methods that control the HtmlEditor UI component.
 
 ---
 #####See Also#####

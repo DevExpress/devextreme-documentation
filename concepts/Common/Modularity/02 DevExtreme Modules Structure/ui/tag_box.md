@@ -1,4 +1,4 @@
-Exposes the **TagBox** UI component.
+Exposes the TagBox UI component.
 
 Exports:
 

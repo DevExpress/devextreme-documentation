@@ -1,4 +1,4 @@
-Exposes the **ColorBox** UI component.
+Exposes the ColorBox UI component.
 
 Exports:
 

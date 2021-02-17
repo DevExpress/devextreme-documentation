@@ -6,7 +6,7 @@ inherits: Editor
 ---
 ---
 ##### shortDescription
-The **Switch** is a UI component that can be in two states: "On" and "Off".
+The Switch is a UI component that can be in two states: "On" and "Off".
 
 ##### widgettree
 

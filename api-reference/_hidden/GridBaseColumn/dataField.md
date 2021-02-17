@@ -13,7 +13,9 @@ The **columns** array can contain the names of data source fields, which is suff
 
 [note]
 
-- If you create an unbound column with [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue), specify the **columns[]**.[name](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name) property instead.
+Please review the following notes about data binding:
+
+- If you create an unbound column (use the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function), specify the **columns[]**.[name](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name) property instead.
 
 - Data field names cannot be `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 

@@ -11,7 +11,7 @@ The **Object** file system provider works with a file system represented by an i
 ---
 Assign the array to the [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/Configuration/#data') property. Data object fields should have conventional names listed in the **data** description. Otherwise, specify **[fieldName]Expr** properties: [nameExpr](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/nameExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/Configuration/#nameExpr'), [sizeExpr](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/sizeExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/Configuration/#sizeExpr'), [dateModifiedExpr](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/dateModifiedExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/Configuration/#dateModifiedExpr'), and so on.
 
-The following code shows how to bind the **FileManager** to the **Object** file system provider:
+The following code shows how to bind the FileManager to the **Object** file system provider:
 
 ---
 ##### jQuery

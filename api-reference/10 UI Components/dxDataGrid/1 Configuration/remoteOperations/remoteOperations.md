@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Notifies the **DataGrid** of the server's data processing operations.
+Notifies the DataGrid of the server's data processing operations.
 
 ---
 Server-side data processing improves the UI component's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the UI component may send queries to the server while executing a client-side operation.

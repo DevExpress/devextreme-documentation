@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed after the **ContextMenu** is shown.
+A function that is executed after the ContextMenu is shown.
 
 ##### param(e): Object
 Information about the event.

@@ -118,7 +118,7 @@ Each series point allows you to show or hide its tooltip programmatically. For t
 
 ---
 
-You can also hide the tooltip regardless of the point to which it belongs. To do this, call the **hideTooltip()** method of the **Chart** instance.
+You can also hide the tooltip regardless of the point to which it belongs. To do this, call the **hideTooltip()** method of the Chart instance.
 
 ---
 ##### jQuery

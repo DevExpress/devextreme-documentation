@@ -1,4 +1,4 @@
-If the **TreeView** performance is low, consider enabling the Virtual Mode. In this mode, the **TreeView** loads a set of child nodes once their parent node is expanded. The Virtual Mode can be enabled only if your data source satisfies the following conditions.
+If the TreeView performance is low, consider enabling the Virtual Mode. In this mode, the TreeView loads a set of child nodes once their parent node is expanded. The Virtual Mode can be enabled only if your data source satisfies the following conditions.
 
 - It has a [plain structure](/concepts/05%20Widgets/TreeView/07%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeView/Use_Plain_Data').
 - Root nodes have the [parentId](/api-reference/_hidden/dxTreeViewItem/parentId.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#parentId') field set to the [rootValue](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#rootValue').

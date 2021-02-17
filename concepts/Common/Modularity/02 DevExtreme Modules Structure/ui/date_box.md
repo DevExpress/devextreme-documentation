@@ -1,4 +1,4 @@
-Exposes the **DateBox** UI component.
+Exposes the DateBox UI component.
 
 Exports:
 

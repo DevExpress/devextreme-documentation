@@ -1,4 +1,4 @@
-Exposes the **Scheduler** UI component.
+Exposes the Scheduler UI component.
 
 Exports:
 

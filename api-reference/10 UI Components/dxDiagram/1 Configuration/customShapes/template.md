@@ -18,13 +18,13 @@ The shapes object.
 ---
 The template content must be presented as SVG elements.
 
-Use the [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeTemplate') property to define a common template for all shapes in the **Diagram** UI component.
+Use the [customShapeTemplate](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapeTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeTemplate') property to define a common template for all shapes in the Diagram UI component.
 
 [note]
 
 If the [textExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr) option is specified, template content may overlap with text from the data source. 
 
-Since the [textExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr) option has the default value `'text'`, the widget will obtain node texts from the data sourceâ€™s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
+Since the [textExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr) option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
 
 [/note]
 

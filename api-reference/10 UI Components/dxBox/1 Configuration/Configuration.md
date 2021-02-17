@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **Box** UI component.
+An object defining configuration properties for the Box UI component.
 
 ---
 #####See Also#####

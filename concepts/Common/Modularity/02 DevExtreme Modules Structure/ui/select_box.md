@@ -1,4 +1,4 @@
-Exposes the **SelectBox** UI component.
+Exposes the SelectBox UI component.
 
 Exports:
 

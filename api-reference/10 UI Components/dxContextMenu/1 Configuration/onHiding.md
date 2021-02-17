@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before the **ContextMenu** is hidden.
+A function that is executed before the ContextMenu is hidden.
 
 ##### param(e): Object
 Information about the event.

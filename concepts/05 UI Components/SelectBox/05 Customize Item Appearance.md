@@ -1,4 +1,4 @@
-For a minor customization of **SelectBox** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in their data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
+For a minor customization of SelectBox items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in their data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
 ##### jQuery
@@ -266,7 +266,7 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
         });
     });
 
-You can also customize an individual **SelectBox** item. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/) component. In jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this property:
+You can also customize an individual SelectBox item. In Angular, Vue, and React, declare them using the [dxItem](/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/) component. In jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this property:
 
 ---
 ##### jQuery
@@ -369,7 +369,7 @@ You can also customize an individual **SelectBox** item. In Angular, Vue, and Re
 
 ---
 
-Using similar techniques, you can customize the input field of the **SelectBox**. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldTemplate') property. Note that the input field must contain the [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') UI component.
+Using similar techniques, you can customize the input field of the SelectBox. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldTemplate') property. Note that the input field must contain the [TextBox](/api-reference/10%20UI%20Widgets/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') UI component.
 
 ---
 ##### jQuery

@@ -1,10 +1,10 @@
-The **NavBar** is a UI component that navigates the application views. 
+The NavBar is a UI component that navigates the application views. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview/"
 }
 
-The following code adds the **NavBar** to your page. All navigation items have icons and one of them has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/#badge'). 
+The following code adds the NavBar to your page. All navigation items have icons and one of them has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/#badge'). 
 
 ---
 ##### jQuery

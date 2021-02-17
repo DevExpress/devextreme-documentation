@@ -9,5 +9,5 @@ An object that provides information about a legend item in the [Chart](/api-refe
 
 ---
 #####See Also#####
-- **Chart**.[legend](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/')
-- **PolarChart**.[legend](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/legend/')
+- Chart.[legend](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/')
+- PolarChart.[legend](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/legend/')

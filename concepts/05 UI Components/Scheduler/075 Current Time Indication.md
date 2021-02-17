@@ -1,4 +1,4 @@
-The **Scheduler** displays a specific indicator that highlights the current time on a view by default. The indicator is available only on views containing the time scale.
+The Scheduler displays a specific indicator that highlights the current time on a view by default. The indicator is available only on views containing the time scale.
 
 ![Current Time Indicator](/images/UiWidgets/Scheduler_Current_Time_Indicator.png)
 

@@ -1,10 +1,10 @@
-The **FileUploader** UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files on the page's **FileUploader** area.
+The FileUploader UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files on the page's FileUploader area.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
 }
 
-The following code adds the **FileUploader** to your page. Use the [accept](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept') property to restrict the file types that can be uploaded to the server. This property is like the underlying `<input>` element's *"accept"* attribute and accepts the same values described <a href="http://www.w3schools.com/TAGs/att_input_accept.asp" target="_blank">here</a>.
+The following code adds the FileUploader to your page. Use the [accept](/api-reference/10%20UI%20Widgets/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept') property to restrict the file types that can be uploaded to the server. This property is like the underlying `<input>` element's *"accept"* attribute and accepts the same values described <a href="http://www.w3schools.com/TAGs/att_input_accept.asp" target="_blank">here</a>.
 
 ---
 #####jQuery
@@ -79,7 +79,7 @@ If you need to access the selected files at runtime, get the value of the [value
 
     <!--JavaScript-->var files = $("#fileUploaderContainer").dxFileUploader("option", "value");
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the **value** property of the **FileUploader** UI component to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, you can access the file array within any method. 
+With Angular, AngularJS, or Knockout, use a different technique. Bind the **value** property of the FileUploader UI component to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, you can access the file array within any method. 
 
 ---
 
@@ -147,7 +147,7 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **valu
 
 ---
 
-The **FileUploader** can operate in two different modes, each demanding a different client- and server-side configuration. See the [Client-Side Settings](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/') article for more details.
+The FileUploader can operate in two different modes, each demanding a different client- and server-side configuration. See the [Client-Side Settings](/concepts/05%20Widgets/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/') article for more details.
 
 #####See Also#####
 #include common-link-configurewidget

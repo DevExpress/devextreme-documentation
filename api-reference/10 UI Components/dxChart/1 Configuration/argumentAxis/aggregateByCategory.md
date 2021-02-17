@@ -12,7 +12,7 @@ Aggregates series points that fall into the same category.
 
 When **aggregateByCategory** is **true**, data is aggregated using the specified [aggregation method](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation/method.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/#method').
 
-The following code shows an example of a data source that can be aggregated by categories and the **Chart** configuration for this use-case:
+The following code shows an example of a data source that can be aggregated by categories and the Chart configuration for this use-case:
 
 ---
 ##### jQuery

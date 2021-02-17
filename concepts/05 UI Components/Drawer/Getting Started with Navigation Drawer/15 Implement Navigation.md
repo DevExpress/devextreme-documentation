@@ -1,4 +1,4 @@
-The **Drawer** is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/'), as done in this tutorial.
+The Drawer is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/'), as done in this tutorial.
 
 Each list item should navigate to a different view. To implement this, follow the steps below:
 
@@ -7,11 +7,11 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**        
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
 
 1. **Navigate to a view when selection is changed**
 
-    In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide) the **Drawer**.
+    In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide) the Drawer.
 
 <!-- -->
 
@@ -78,7 +78,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the Drawer.
 
 <!-- -->
 
@@ -232,7 +232,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the Drawer.
 
 <!-- -->
 
@@ -408,7 +408,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the **Drawer**.
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the Drawer.
 
 <!-- -->
 
@@ -578,11 +578,11 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**        
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the **TreeView**, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
+    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
 
 1. **Navigate to a view when selection is changed**
 
-    In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide) the **Drawer**.
+    In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide) the Drawer.
 
 <!-- -->
 
@@ -672,4 +672,4 @@ Each list item should navigate to a different view. To implement this, follow th
 
 ---
 
-Run the code, open the **Drawer**, and click its items to change the views.
+Run the code, open the Drawer, and click its items to change the views.

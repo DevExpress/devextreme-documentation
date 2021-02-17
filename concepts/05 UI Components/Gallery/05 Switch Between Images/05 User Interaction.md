@@ -208,7 +208,7 @@ With the buttons and swipe gesture, the user switches images in a particular ord
 
 ---
 
-Below the current image, the **Gallery** shows navigation bullets that allow the user to switch images ignoring their order. To disable the navigation bullets, set the [indicatorEnabled](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/indicatorEnabled.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#indicatorEnabled') property to **false**. If you need to hide them completely, assign **false** to the [showIndicator](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#showIndicator') property.
+Below the current image, the Gallery shows navigation bullets that allow the user to switch images ignoring their order. To disable the navigation bullets, set the [indicatorEnabled](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/indicatorEnabled.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#indicatorEnabled') property to **false**. If you need to hide them completely, assign **false** to the [showIndicator](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#showIndicator') property.
 
 ---
 ##### jQuery

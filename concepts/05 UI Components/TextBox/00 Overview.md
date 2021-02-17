@@ -1,10 +1,10 @@
-The **TextBox** is a UI component that enables a user to enter and edit a single line of text.
+The TextBox is a UI component that enables a user to enter and edit a single line of text.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
 }
 
-The following code adds a simple **TextBox** with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#placeholder') to your page.
+The following code adds a simple TextBox with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#placeholder') to your page.
 
 ---
 ##### jQuery
@@ -77,7 +77,7 @@ The following code adds a simple **TextBox** with a [placeholder](/api-reference
 
 ---
 
-If an end user should _not_ be able to edit the value in the **TextBox**, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
+If an end user should _not_ be able to edit the value in the TextBox, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
 
 ---
 ##### jQuery

@@ -1,6 +1,6 @@
-[note] In this article, the [Button](/Documentation/ApiReference/UI_Components/dxButton/) UI component is used to demonstrate how to show and hide the **Popup**. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
+[note] In this article, the [Button](/Documentation/ApiReference/UI_Components/dxButton/) UI component is used to demonstrate how to show and hide the Popup. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
-To show or hide the **Popup** programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the **Popup**, respectively.
+To show or hide the Popup programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the Popup, respectively.
 
 ---
 ##### jQuery
@@ -99,7 +99,7 @@ To show or hide the **Popup** programmatically, call the [show()](/api-reference
 
 ---
 
-With Angular, Vue or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible') property of the **Popup** UI component to a component property. After that, change this component property, and the **Popup** will appear or disappear.
+With Angular, Vue or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible') property of the Popup UI component to a component property. After that, change this component property, and the Popup will appear or disappear.
 
 ---
 ##### Angular

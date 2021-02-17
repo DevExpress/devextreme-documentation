@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events raised by the **Sortable** UI component.
+This section describes events raised by the Sortable UI component.
 
 ---
 #####See Also#####

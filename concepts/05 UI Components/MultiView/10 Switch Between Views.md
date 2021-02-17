@@ -210,7 +210,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
 ---
 
-By default, the **MultiView** UI component animates switching between views. You can disable animation by setting the [animationEnabled](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#animationEnabled') property to **false**.
+By default, the MultiView UI component animates switching between views. You can disable animation by setting the [animationEnabled](/api-reference/10%20UI%20Widgets/dxMultiView/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#animationEnabled') property to **false**.
 
 ---
 

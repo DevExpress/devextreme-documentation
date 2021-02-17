@@ -9,7 +9,7 @@ To specify the value indicated by the bullet bar, assign it to the [value](/api-
 		// ...
 	};
 
-This value must belong to a range determined by the [startScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/startScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#startScaleValue') and [endScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/endScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#endScaleValue') properties. When you arrange several **Bullet** UI components in a column, set the same range for them so that their bullet bars can be compared visually.
+This value must belong to a range determined by the [startScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/startScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#startScaleValue') and [endScaleValue](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/endScaleValue.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#endScaleValue') properties. When you arrange several Bullet UI components in a column, set the same range for them so that their bullet bars can be compared visually.
 
     <!--JavaScript-->var bulletOptions = {
         value: 42,
@@ -20,6 +20,6 @@ This value must belong to a range determined by the [startScaleValue](/api-refer
 
 [note]If you do not specify the scale range, the start scale value is 0 and the end scale value is calculated automatically depending on [primary](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#value') and [target](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#target') values.
 
-To distinguish positive and negative values visually, the **Bullet** UI component features a [zero level line](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements/30%20Zero%20Level%20Line.md '/Documentation/Guide/UI_Components/Bullet/Visual_Elements/#Zero_Level_Line'). Positive values are drawn to the right from this line; negative ones - to the left.
+To distinguish positive and negative values visually, the Bullet UI component features a [zero level line](/concepts/05%20Widgets/Bullet/10%20Visual%20Elements/30%20Zero%20Level%20Line.md '/Documentation/Guide/UI_Components/Bullet/Visual_Elements/#Zero_Level_Line'). Positive values are drawn to the right from this line; negative ones - to the left.
 
 You can change the bar color using the [color](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/color.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#color') property.

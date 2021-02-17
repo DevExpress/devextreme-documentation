@@ -6,7 +6,7 @@ inherits: dxSliderBase
 ---
 ---
 ##### shortDescription
-The **RangeSlider** is a UI component that allows an end user to choose a range of numeric values.
+The RangeSlider is a UI component that allows an end user to choose a range of numeric values.
 
 ##### widgettree
 

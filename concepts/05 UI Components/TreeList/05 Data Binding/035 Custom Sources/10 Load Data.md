@@ -1,4 +1,4 @@
-The **CustomStore** requires the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. It sends data processing settings to the server and gets processed data back. These settings depend on which [remoteOperations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/') are enabled. The following data processing settings apply to the **TreeList**:
+The **CustomStore** requires the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. It sends data processing settings to the server and gets processed data back. These settings depend on which [remoteOperations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/') are enabled. The following data processing settings apply to the TreeList:
 
 - **Sorting settings**: [sort](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/sort.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#sort')         
 
@@ -26,7 +26,7 @@ If the server has not received the **group** parameter, the resulting object sho
         data: [ ... ] // result data objects
     }
 
-Below is a generalized **CustomStore** configuration for the **TreeList** UI component:
+Below is a generalized **CustomStore** configuration for the TreeList UI component:
 
 ---
 ##### jQuery

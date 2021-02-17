@@ -1,10 +1,10 @@
-The **ProgressBar** is a UI component that shows current progress.
+The ProgressBar is a UI component that shows current progress.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/"
 }
 
-The following code adds a simple **ProgressBar** to your page. The **value** property specifies the current value. The **min** and **max** properties limit the range of accepted values. The progress is measured in percentages and calculated by the following formula: `(value / max) * 100`. If the current progress is unknown yet, set the **value** property to **false**.
+The following code adds a simple ProgressBar to your page. The **value** property specifies the current value. The **min** and **max** properties limit the range of accepted values. The progress is measured in percentages and calculated by the following formula: `(value / max) * 100`. If the current progress is unknown yet, set the **value** property to **false**.
 
 ---
 ##### jQuery
@@ -93,7 +93,7 @@ The following code adds a simple **ProgressBar** to your page. The **value** pro
 
 ---
 
-When the **ProgressBar** reaches the [maximum](/api-reference/10%20UI%20Widgets/dxTrackBar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#max') value, the [complete](/api-reference/10%20UI%20Widgets/dxProgressBar/4%20Events/complete.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Events/#complete') event is raised. You can handle it using the [onComplete](/api-reference/10%20UI%20Widgets/dxProgressBar/1%20Configuration/onComplete.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#onComplete') function.
+When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Widgets/dxTrackBar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#max') value, the [complete](/api-reference/10%20UI%20Widgets/dxProgressBar/4%20Events/complete.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Events/#complete') event is raised. You can handle it using the [onComplete](/api-reference/10%20UI%20Widgets/dxProgressBar/1%20Configuration/onComplete.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#onComplete') function.
 
 ---
 ##### jQuery

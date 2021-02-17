@@ -17,7 +17,7 @@ Dependencies specify the relationships between tasks. The following image illust
 
 ![DevExtreme Gantt Chart - Dependencies](/images/Gantt/Dependency.png)
 
-The **Gantt** UI component supports the following dependency types:
+The Gantt UI component supports the following dependency types:
 
 - Finish to Start (FS) - The predecessor task's endpoint specifies the successor task's start point.
 

@@ -1,4 +1,4 @@
-Use the code below to create an empty **SelectBox**:
+Use the code below to create an empty SelectBox:
 
 ---
 ##### jQuery
@@ -98,4 +98,4 @@ Use the code below to create an empty **SelectBox**:
 
 ---
 
-Run the code and ensure the **SelectBox** is displayed and its drop-down list says "No data to display." In the next step, we will add a data source.
+Run the code and ensure the SelectBox is displayed and its drop-down list says "No data to display." In the next step, we will add a data source.

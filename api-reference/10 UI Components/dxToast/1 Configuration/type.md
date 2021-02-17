@@ -6,7 +6,7 @@ default: 'info'
 ---
 ---
 ##### shortDescription
-Specifies the **Toast** UI component type.
+Specifies the Toast UI component type.
 
 ---
 The available toast types (except for "custom") only differ by the icon and background color.

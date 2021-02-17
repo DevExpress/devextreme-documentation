@@ -1,4 +1,4 @@
-The **FileManager** UI component provides the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/') file system provider to access files and folders located on the server. 
+The FileManager UI component provides the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/') file system provider to access files and folders located on the server. 
 
 ![FileManager - remote file system on the server](/images/FileManager/remote-file-provider.png)
 
@@ -6,7 +6,7 @@ Assign the [Remote](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20Sy
 
 Set the [endpointUrl](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl') property to the Url of an endpoint used to access and modify a file system.
 
-You can also use helpers for ASP.NET Core and ASP.NET MVC to access different file systems on the server side according to the protocol the **FileManager** UI component uses. Refer to the [online documentation](https://docs.devexpress.com/AspNetCore/DevExtreme.AspNet.Mvc.FileManagement) and [online demos](https://demos.devexpress.com/ASPNetCore/Demo/FileManager/Overview) to get more information about the helpers.
+You can also use helpers for ASP.NET Core and ASP.NET MVC to access different file systems on the server side according to the protocol the FileManager UI component uses. Refer to the [online documentation](https://docs.devexpress.com/AspNetCore/DevExtreme.AspNet.Mvc.FileManagement) and [online demos](https://demos.devexpress.com/ASPNetCore/Demo/FileManager/Overview) to get more information about the helpers.
 
 The data object, which is sent back from the server, contains attributes that store the file system items' key, name, size, modification date and so on. If these attribute names differ from the conventional names, use the **[fieldName]Expr** properties to map item properties.
 

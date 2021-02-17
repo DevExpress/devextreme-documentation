@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **Tooltip** UI component.
+An object defining configuration properties for the Tooltip UI component.
 
 ---
 #####See Also#####

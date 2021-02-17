@@ -1,4 +1,4 @@
-When adapting to a small container or screen, the **DataGrid** can hide columns. To enable this feature, set the [columnHidingEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnHidingEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnHidingEnabled') to **true**. Columns have hiding priorities - zero-based indexes that determine the order in which they are hidden. These indexes ascend from right to left by default, which means that the rightmost column is always at risk of being hidden. Use the [hidingPriority](/api-reference/_hidden/GridBaseColumn/hidingPriority.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#hidingPriority') property to specify a custom hiding priority and cancel the default priorities.
+When adapting to a small container or screen, the DataGrid can hide columns. To enable this feature, set the [columnHidingEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnHidingEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnHidingEnabled') to **true**. Columns have hiding priorities - zero-based indexes that determine the order in which they are hidden. These indexes ascend from right to left by default, which means that the rightmost column is always at risk of being hidden. Use the [hidingPriority](/api-reference/_hidden/GridBaseColumn/hidingPriority.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#hidingPriority') property to specify a custom hiding priority and cancel the default priorities.
 
 ---
 ##### jQuery
@@ -100,7 +100,7 @@ When adapting to a small container or screen, the **DataGrid** can hide columns.
 
 [note]
 
-The table layout does not automatically adapt to changes made in the UI component's container at runtime. Therefore, if you enable a user to resize the container, call the [updateDimensions()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method after each resizing to render the **DataGrid** in the new size.
+The table layout does not automatically adapt to changes made in the UI component's container at runtime. Therefore, if you enable a user to resize the container, call the [updateDimensions()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method after each resizing to render the DataGrid in the new size.
 
 ---
 ##### jQuery

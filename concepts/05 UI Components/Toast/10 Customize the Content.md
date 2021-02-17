@@ -1,4 +1,4 @@
-The **Toast** UI component provides four predefined appearances controlled by the [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') property. The **type** can be *"info"*, *"warning"*, *"error"* or *"success"*, depending on the mood of the message that the **Toast** displays. You can specify this message using the [message](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message') property.
+The Toast UI component provides four predefined appearances controlled by the [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') property. The **type** can be *"info"*, *"warning"*, *"error"* or *"success"*, depending on the mood of the message that the Toast displays. You can specify this message using the [message](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message') property.
 
 ---
 ##### jQuery
@@ -73,7 +73,7 @@ The **Toast** UI component provides four predefined appearances controlled by th
 
 ---
 
-If you need to define the **Toast** content completely, specify a template for it. You can simply put this template inside the **Toast** container...
+If you need to define the Toast content completely, specify a template for it. You can simply put this template inside the Toast container...
 
 ---
 ##### jQuery
@@ -154,7 +154,7 @@ If you need to define the **Toast** content completely, specify a template for i
 
 ---
 
-... or you can combine the HTML markup for the template in the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate') function. Note that this function will be called only once - when the **Toast** appears for the first time. This approach is more typical of jQuery.
+... or you can combine the HTML markup for the template in the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate') function. Note that this function will be called only once - when the Toast appears for the first time. This approach is more typical of jQuery.
 
     <!--JavaScript-->$(function() {
         $("#toastContainer").dxToast({
@@ -168,7 +168,7 @@ If you need to define the **Toast** content completely, specify a template for i
 
 [note]To avoid rendering issues, always set the [type](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') property to *"custom"* when you use a custom template.
 
-If you need to render different templates depending on a specific condition, define them inside the **Toast** container using the DevExtreme [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. To switch the templates on-the-fly, change the value of the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate') property.
+If you need to render different templates depending on a specific condition, define them inside the Toast container using the DevExtreme [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. To switch the templates on-the-fly, change the value of the [contentTemplate](/api-reference/10%20UI%20Widgets/dxToast/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate') property.
 
 ---
 ##### jQuery

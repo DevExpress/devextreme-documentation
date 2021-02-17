@@ -7,7 +7,7 @@ type: template
 Specifies a custom template for the UI component used to edit the field value.
 
 ##### param(conditionInfo): Object
-Information about a **FilterBuilder** field.
+Information about a FilterBuilder field.
 
 ##### field(conditionInfo.field): dxFilterBuilderField
 The field's configuration.

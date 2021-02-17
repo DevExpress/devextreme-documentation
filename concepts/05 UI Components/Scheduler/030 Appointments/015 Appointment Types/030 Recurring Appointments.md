@@ -14,7 +14,7 @@ To make an appointment recurring, specify the [recurrenceRule](/Documentation/Ap
         recurrenceException: "20210222T070000Z,20210223T070000Z"
     }];
 
-If your appointment data objects contain different fields that perform the functions of **recurrenceRule** and **recurrenceException**, specify their names in the **Scheduler**'s [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceExceptionExpr') properties:
+If your appointment data objects contain different fields that perform the functions of **recurrenceRule** and **recurrenceException**, specify their names in the Scheduler's [recurrenceRuleExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr') and [recurrenceExceptionExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceExceptionExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceExceptionExpr') properties:
 
 ---
 ##### jQuery

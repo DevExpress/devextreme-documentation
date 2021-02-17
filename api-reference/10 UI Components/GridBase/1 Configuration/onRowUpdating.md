@@ -40,7 +40,7 @@ The row's old data.
 
 - In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
 
-[note]
+[/note]
 
 The following code shows how to use the function parameter's **cancel** field to prevent or continue row updating. In this code, a Promise is assigned to this field. Row updating continues if a user confirms updating and row data validation on the server succeeds (the Promise is resolved); otherwise, row updating is prevented (the Promise is rejected).
 

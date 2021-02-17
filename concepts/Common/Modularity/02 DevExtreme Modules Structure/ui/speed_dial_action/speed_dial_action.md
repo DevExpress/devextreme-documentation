@@ -1,4 +1,4 @@
-Exposes the **SpeedDialAction** UI component.
+Exposes the SpeedDialAction UI component.
 
 Exports:
 

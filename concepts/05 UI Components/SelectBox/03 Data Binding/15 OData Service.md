@@ -1,4 +1,4 @@
-Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind **SelectBox** to data an OData service provides.
+Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind SelectBox to data an OData service provides.
 
 ---
 ##### jQuery

@@ -1,11 +1,11 @@
-The [center](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/center '/Documentation/ApiReference/UI_Components/dxMap/Configuration/center/') property centers the **Map** on a specific location. The **center** property accepts the following location formats in addition to the formats the [current provider](/concepts/05%20Widgets/Map/10%20Specify%20the%20Provider%20and%20Type.md '/Documentation/Guide/UI_Components/Map/Specify_the_Provider_and_Type/') accepts: 
+The [center](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/center '/Documentation/ApiReference/UI_Components/dxMap/Configuration/center/') property centers the Map on a specific location. The **center** property accepts the following location formats in addition to the formats the [current provider](/concepts/05%20Widgets/Map/10%20Specify%20the%20Provider%20and%20Type.md '/Documentation/Guide/UI_Components/Map/Specify_the_Provider_and_Type/') accepts: 
 
 - *{ lat: 40.749825, lng: -73.987963 }*
 - *"40.749825, -73.987963"*
 - *[ 40.749825, -73.987963 ]*
 - *"Brooklyn Bridge,New York,NY"*
 
-To zoom the **Map**, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/zoom.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom') property. The lower the value, the larger the displayed area. 
+To zoom the Map, set the [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/zoom.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom') property. The lower the value, the larger the displayed area. 
 
 ---
 ##### jQuery

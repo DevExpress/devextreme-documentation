@@ -8,4 +8,4 @@ default: 0
 The current UI component value.
 
 ---
-To create the indeterminate **ProgressBar**, assign **false** to the **value** property.
+To create the indeterminate ProgressBar, assign **false** to the **value** property.

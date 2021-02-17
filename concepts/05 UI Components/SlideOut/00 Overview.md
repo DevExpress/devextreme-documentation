@@ -1,10 +1,10 @@
-The **SlideOut** UI component is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
+The SlideOut UI component is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview/"
 }
 
-The following code adds a primitive **SlideOut** to your page.
+The following code adds a primitive SlideOut to your page.
 
     <!--HTML--><div id="slideOutContainer"></div>
     
@@ -49,7 +49,7 @@ Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Confi
         });
     });
 
-[note]The **SlideOut** contains the [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20Widgets/SlideOutView/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOutView/Overview/') instead of the **SlideOut**.
+[note]The SlideOut contains the [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20Widgets/SlideOutView/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOutView/Overview/') instead of the SlideOut.
 
 #####See Also#####
 #include common-link-configurewidget

@@ -1,10 +1,10 @@
-The **Box** UI component allows you to arrange various elements within it. This UI component is separate and adaptive and acts as the layout's building block.
+The Box UI component allows you to arrange various elements within it. This UI component is separate and adaptive and acts as the layout's building block.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview/"
 }
 
-The following code adds a simple **Box** containing three items to your page. These items are plain texts placed in differently-colored rectangles arranged in a row. Equal **ratio** property values ensure they have equal widths.
+The following code adds a simple Box containing three items to your page. These items are plain texts placed in differently-colored rectangles arranged in a row. Equal **ratio** property values ensure they have equal widths.
 
 ---
 
@@ -166,7 +166,7 @@ The following code adds a simple **Box** containing three items to your page. Th
 
 ---
 
-Note that the **Box** items in the code above are declared using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields:
+Note that the Box items in the code above are declared using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields:
 
 - [baseSize](/api-reference/_hidden/dxBoxItem/baseSize.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#baseSize')
 - [ratio](/api-reference/_hidden/dxBoxItem/ratio.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#ratio')

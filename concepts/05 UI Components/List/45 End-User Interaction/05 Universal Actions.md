@@ -53,7 +53,7 @@ Universal actions are those actions that raise the same event despite being perf
 
 ---
 
-The **List** supports other universal actions, which are provided as a part of basic **List** functionality. They are described in the following topics.
+The List supports other universal actions, which are provided as a part of basic List functionality. They are described in the following topics.
 
 - [Scrolling - Configure User Interaction](/concepts/05%20Widgets/List/20%20Scrolling/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Scrolling/#User_Interaction')
 - [Scrolling - Handle Related Events](/concepts/05%20Widgets/List/20%20Scrolling/10%20Events.md '/Documentation/Guide/UI_Components/List/Scrolling/#Events')

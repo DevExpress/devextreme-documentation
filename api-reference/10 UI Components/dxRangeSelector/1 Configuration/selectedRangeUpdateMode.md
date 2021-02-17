@@ -6,7 +6,7 @@ default: 'reset'
 ---
 ---
 ##### shortDescription
-Specifies how the selected range should behave when data is updated. Applies only when the **RangeSelector** is [bound to a data source](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#dataSource').
+Specifies how the selected range should behave when data is updated. Applies only when the RangeSelector is [bound to a data source](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#dataSource').
 
 ---
 The following modes are available:

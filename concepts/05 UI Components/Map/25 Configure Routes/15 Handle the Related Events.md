@@ -1,4 +1,4 @@
-The **Map** UI component fires the [routeAdded](/api-reference/10%20UI%20Widgets/dxMap/4%20Events/routeAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#routeAdded') and [routeRemoved](/api-reference/10%20UI%20Widgets/dxMap/4%20Events/routeRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#routeRemoved') events when a marker is added or removed.
+The Map UI component fires the [routeAdded](/api-reference/10%20UI%20Widgets/dxMap/4%20Events/routeAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#routeAdded') and [routeRemoved](/api-reference/10%20UI%20Widgets/dxMap/4%20Events/routeRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#routeRemoved') events when a marker is added or removed.
 To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/onRouteAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onRouteAdded') and [onRouteRemoved](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/onRouteRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onRouteRemoved') properties, respectively.
 
 ---

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes properties that configure **Sortable** UI component content, behavior, and appearance.
+This section describes properties that configure Sortable UI component content, behavior, and appearance.
 
 ---
 #####See Also#####

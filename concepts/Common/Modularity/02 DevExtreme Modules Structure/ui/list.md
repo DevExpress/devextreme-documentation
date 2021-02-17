@@ -1,4 +1,4 @@
-Exposes the **List** UI component.
+Exposes the List UI component.
 
 Exports:
 

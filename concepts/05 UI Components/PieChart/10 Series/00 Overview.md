@@ -1,4 +1,4 @@
-A series is a collection of related data points. The most important characteristic of a series is its type. The **PieChart** provides **Pie** and **Doughnut** series types; the only difference  between them is the **Doughnut** has a blank center.
+A series is a collection of related data points. The most important characteristic of a series is its type. The PieChart provides **Pie** and **Doughnut** series types; the only difference  between them is the **Doughnut** has a blank center.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/PieChartSeriesTypes/pie.html, /Content/Applications/20_1/DataVisualization/Guides/PieChartSeriesTypes/pie.js"></div>
 

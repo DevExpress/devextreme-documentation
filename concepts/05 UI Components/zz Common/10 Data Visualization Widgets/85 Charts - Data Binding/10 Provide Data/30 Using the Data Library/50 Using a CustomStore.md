@@ -1,4 +1,4 @@
-When you have a custom web service with its own data accessing logic, use a CustomStore to operate that data. This type of store requires the implementation of a function for each data access operation. To provide data for **Chart**, **PieChart** or **Sparkline**, implement the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function at least. As an example of such an implementation, consider the following code snippet.
+When you have a custom web service with its own data accessing logic, use a CustomStore to operate that data. This type of store requires the implementation of a function for each data access operation. To provide data for Chart, PieChart or Sparkline, implement the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function at least. As an example of such an implementation, consider the following code snippet.
 
 	<!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
 		load: function (loadOptions) {

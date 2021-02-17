@@ -1,4 +1,4 @@
-Exposes the **FileUploader** UI component.
+Exposes the FileUploader UI component.
 
 Exports:
 

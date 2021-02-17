@@ -1,4 +1,4 @@
-The **Scheduler** shows all available resource kinds in the appointment details form. By default, the UI component allows a user to assign only a single resource of one kind. 
+The Scheduler shows all available resource kinds in the appointment details form. By default, the UI component allows a user to assign only a single resource of one kind. 
 
 ![Scheduler Appointment Resources](/images/UiWidgets/Scheduler_Resources_SelectBox.png)
 

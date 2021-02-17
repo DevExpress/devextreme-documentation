@@ -1,4 +1,4 @@
-Exposes the **PolarChart** UI component.
+Exposes the PolarChart UI component.
 
 Exports:
 

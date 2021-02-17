@@ -1,10 +1,10 @@
-The **TextArea** is a UI component that enables a user to enter and edit a multi-line text.
+The TextArea is a UI component that enables a user to enter and edit a multi-line text.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/"
 }
 
-The following code adds a simple **TextArea** with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#placeholder') to your page.
+The following code adds a simple TextArea with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#placeholder') to your page.
 
 ---
 ##### jQuery
@@ -77,7 +77,7 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
 
 ---
 
-By default, the **TextArea** checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** property.
+By default, the TextArea checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** property.
 
 ---
 ##### jQuery
@@ -148,7 +148,7 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
 
 ---
 
-If an end user should _not_ be able to edit the text in the **TextArea**, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
+If an end user should _not_ be able to edit the text in the TextArea, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
 
 ---
 ##### jQuery

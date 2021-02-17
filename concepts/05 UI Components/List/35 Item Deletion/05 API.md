@@ -1,7 +1,7 @@
-You can delete **List** items programmatically in the following ways.
+You can delete List items programmatically in the following ways.
 
 - **By index**        
-Pass the index to the [deleteItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/deleteItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#deleteItemitemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/'), this method should be given an object with the indexes of the group and the item to be deleted.
+Pass the index to the [deleteItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/deleteItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#deleteItemitemIndex') method. If the List is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/'), this method should be given an object with the indexes of the group and the item to be deleted.
 
     ---
     ##### jQuery

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods that control the **{WidgetName}** UI component.
+This section describes methods that control the {WidgetName} UI component.
 
 ---
 #####See Also#####

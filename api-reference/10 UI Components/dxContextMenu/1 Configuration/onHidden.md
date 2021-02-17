@@ -6,7 +6,7 @@ EventForAction: dxContextMenu.hidden
 ---
 ---
 ##### shortDescription
-A function that is executed after the **ContextMenu** is hidden.
+A function that is executed after the ContextMenu is hidden.
 
 ##### param(e): Object
 Information about the event.

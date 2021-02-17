@@ -1,4 +1,4 @@
-Enclose the **dataSource** property in square brackets to bind it to an array using one-way binding. Now, whenever an item is added or removed from the array, the **Chart** will be updated accordingly.
+Enclose the **dataSource** property in square brackets to bind it to an array using one-way binding. Now, whenever an item is added or removed from the array, the Chart will be updated accordingly.
 
     <!--HTML--><dx-chart [dataSource]="fruits"></dx-chart>
     

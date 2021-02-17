@@ -1,4 +1,4 @@
-The following built-in shape types are available in the **Diagram** UI component:
+The following built-in shape types are available in the Diagram UI component:
 
 <table id="shapes">
 <tr>

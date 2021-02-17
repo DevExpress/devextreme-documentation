@@ -6,7 +6,7 @@ inherits: Editor,DataExpressionMixin
 ---
 ---
 ##### shortDescription
-The **RadioGroup** is a UI component that contains a set of radio buttons and allows an end user to make a single selection from the set.
+The RadioGroup is a UI component that contains a set of radio buttons and allows an end user to make a single selection from the set.
 
 ##### widgettree
 dataSource: [

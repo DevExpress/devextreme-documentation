@@ -9,7 +9,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies properties for **PolarChart** UI component [series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series').
+Specifies properties for PolarChart UI component [series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series').
 
 ---
 A series represents a grouping of related data points. The most important characteristic of a series is its type, which determines a particular visual representation of data. You can find more details on each series type in the corresponding topics in the [Series](/concepts/05%20Widgets/PolarChart/10%20Visual%20Elements/010%20Series.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Series') help section.

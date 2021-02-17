@@ -1,4 +1,4 @@
-You can enable data aggregation for individual series, all series of a specific type, or for all series in the **Chart**. The following code demonstrates all the three cases:
+You can enable data aggregation for individual series, all series of a specific type, or for all series in the Chart. The following code demonstrates all the three cases:
 
 ---
 ##### jQuery

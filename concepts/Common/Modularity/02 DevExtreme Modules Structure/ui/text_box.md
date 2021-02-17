@@ -1,4 +1,4 @@
-Exposes the **TextBox** UI component.
+Exposes the TextBox UI component.
 
 Exports:
 

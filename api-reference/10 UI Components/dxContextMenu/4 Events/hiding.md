@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised before the **ContextMenu** is hidden.
+Raised before the ContextMenu is hidden.
 
 ---
 Main article: [onHiding](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/onHiding.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onHiding')

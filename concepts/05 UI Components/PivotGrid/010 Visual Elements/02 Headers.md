@@ -1,4 +1,4 @@
-Headers are used to annotate numeric values in the UI component. There are three headers in **PivotGrid**: row, column and data. The row and column headers occupy the row and column area correspondingly and are always present. The data header may be located either in the row or column area depending on the value of the [dataFieldArea](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/dataFieldArea.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#dataFieldArea') property.
+Headers are used to annotate numeric values in the UI component. There are three headers in PivotGrid: row, column and data. The row and column headers occupy the row and column area correspondingly and are always present. The data header may be located either in the row or column area depending on the value of the [dataFieldArea](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/dataFieldArea.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#dataFieldArea') property.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

@@ -1,4 +1,4 @@
-The **LinearGauge** can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
+The LinearGauge can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
 
 <img src="/images/ChartJS/LinearGaugeTitleSubtitle.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeTitleSubtitle" style="display:block; margin:0 auto" />
 

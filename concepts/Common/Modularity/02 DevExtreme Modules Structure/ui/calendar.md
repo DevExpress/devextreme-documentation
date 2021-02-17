@@ -1,4 +1,4 @@
-Exposes the **Calendar** UI component.
+Exposes the Calendar UI component.
 
 Exports:
 

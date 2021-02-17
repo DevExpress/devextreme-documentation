@@ -5,6 +5,6 @@ default: ''
 ---
 ---
 ##### shortDescription
-The **Toast** message text.
+The Toast message text.
 
 ---

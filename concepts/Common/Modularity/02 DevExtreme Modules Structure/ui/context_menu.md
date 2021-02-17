@@ -1,4 +1,4 @@
-Exposes the **ContextMenu** UI component.
+Exposes the ContextMenu UI component.
 
 Exports:
 

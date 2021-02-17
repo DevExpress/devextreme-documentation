@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes methods that control the **DropDownButton** UI component.
+This section describes methods that control the DropDownButton UI component.
 
 ---
 #####See Also#####

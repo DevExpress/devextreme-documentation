@@ -1,4 +1,4 @@
-Exposes the **TreeList** UI component.
+Exposes the TreeList UI component.
 
 Exports:
 

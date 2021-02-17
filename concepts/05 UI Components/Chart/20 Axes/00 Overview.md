@@ -1,4 +1,4 @@
-The **Chart** UI component visualizes data on the rectangular coordinate system. In this system, each point is determined on a plane by two components: the argument and the value, each indicated on a devoted axis.
+The Chart UI component visualizes data on the rectangular coordinate system. In this system, each point is determined on a plane by two components: the argument and the value, each indicated on a devoted axis.
 
 ![DevExtreme HTML5 JavaScript Charts Axis Axes](/images/ChartJS/visual_elements/axes.png)
 
@@ -135,7 +135,7 @@ Displays numeric arguments/values, each being the [logarithmBase](/api-reference
 ![DevExtreme HTML5 JavaScript Charts DiscreteArgumentAxis](/images/ChartJS/visual_elements/argument_axis_discrete.png)
 ![DevExtreme HTML5 JavaScript Charts LogarithmicArgumentAxis](/images/ChartJS/visual_elements/argument_axis_logarithmic.png)
 
-Usually, the **Chart** chooses the axis type automatically according to the type of arguments/values, but you can force the **Chart** to use a specific axis type by specifying the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type') property. In addition, you can cast arguments/values to a specific data type using the [argumentType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType')/[valueType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType') property. You may want to do this if, for example, your data source stores dates as strings. 
+Usually, the Chart chooses the axis type automatically according to the type of arguments/values, but you can force the Chart to use a specific axis type by specifying the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type') property. In addition, you can cast arguments/values to a specific data type using the [argumentType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType')/[valueType](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType') property. You may want to do this if, for example, your data source stores dates as strings. 
 
 ---
 ##### jQuery

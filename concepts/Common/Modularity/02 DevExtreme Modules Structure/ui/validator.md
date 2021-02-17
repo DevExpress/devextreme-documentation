@@ -1,4 +1,4 @@
-Exposes the **Validator** UI component.
+Exposes the Validator UI component.
 
 Exports:
 

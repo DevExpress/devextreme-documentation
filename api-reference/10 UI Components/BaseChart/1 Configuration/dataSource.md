@@ -9,7 +9,7 @@ Binds the UI component to data.
 
 ---
 #include common-dataSource-description with {
-    widget_works_with: "The **{WidgetName}** works with collections of objects.",
+    widget_works_with: "The {WidgetName} works with collections of objects.",
 
     array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleArray)",
 

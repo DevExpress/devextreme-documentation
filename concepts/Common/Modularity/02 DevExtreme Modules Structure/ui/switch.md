@@ -1,4 +1,4 @@
-Exposes the **Switch** UI component.
+Exposes the Switch UI component.
 
 Exports:
 

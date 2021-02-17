@@ -2,7 +2,7 @@ If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.d
 
 ${{widget_works_with}}
 
-Depending on your data source, bind the **{WidgetName}** to data as follows. ${{object_structure_notes}}
+Depending on your data source, bind the {WidgetName} to data as follows. ${{object_structure_notes}}
 
 - **Data Array**        
 Assign the array to the **dataSource** property${{array_key_note}}. ${{array_view_demo}}
@@ -164,7 +164,7 @@ Use one of the following extensions to enable the server to process data accordi
 - **Any other data source**     
 Implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). ${{custom_store_view_demo}}
 
-Regardless of the data source on the input, the **{WidgetName}** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()]({basewidgetpath}/Methods/#getDataSource) method.
+Regardless of the data source on the input, the {WidgetName} always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()]({basewidgetpath}/Methods/#getDataSource) method.
 
 ${{additional_data_binding_actions}}
 

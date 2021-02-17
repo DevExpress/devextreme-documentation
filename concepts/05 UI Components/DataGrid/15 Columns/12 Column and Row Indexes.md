@@ -4,7 +4,7 @@ The following indexes can be used in methods and callback functions:
     Equals the column's index in the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array. 
 
 - **Visible Column Index**      
-    Depends on the column's current location in the **DataGrid** and changes dynamically when columns are [reordered](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/') or data is [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/'). You can get this index using the [getVisibleColumnIndex(id)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getVisibleColumnIndex(id).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getVisibleColumnIndexid') method.
+    Depends on the column's current location in the DataGrid and changes dynamically when columns are [reordered](/concepts/05%20Widgets/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/') or data is [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/'). You can get this index using the [getVisibleColumnIndex(id)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getVisibleColumnIndex(id).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getVisibleColumnIndexid') method.
 
     ![DevExtreme HTML5 JavaScript DataGrid Visible Column Index](/images/DataGrid/visual_elements/columnIndexes.png)
 

@@ -1,4 +1,4 @@
-Exposes the **Menu** UI component.
+Exposes the Menu UI component.
 
 Exports:
 

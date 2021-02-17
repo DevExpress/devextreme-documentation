@@ -1,6 +1,6 @@
 The visual and whole ranges help you control which part of the axis a user sees and interacts with. Both ranges are available for the argument and value axes.
 
-The **visual range** specifies the axis range visible to the user. Use it to focus the **Chart** on a specific part of the series. The following image illustrates the difference between charts with and without the specified visual range:
+The **visual range** specifies the axis range visible to the user. Use it to focus the Chart on a specific part of the series. The following image illustrates the difference between charts with and without the specified visual range:
 
 <div id="figures">
     <figure>

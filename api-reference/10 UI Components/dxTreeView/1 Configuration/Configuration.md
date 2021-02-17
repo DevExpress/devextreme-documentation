@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **TreeView** UI component.
+An object defining configuration properties for the TreeView UI component.
 
 ---
 #####See Also#####

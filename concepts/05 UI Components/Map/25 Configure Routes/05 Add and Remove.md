@@ -151,7 +151,7 @@ To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-refe
     // Removes the routes with indexes 0 and 2 in the "routes" array
     map.removeRoute([0, 2]);
 
-With Angular, Vue, or React, use a different technique. Bind the **routes** property of the **Map** UI component to a component property. 
+With Angular, Vue, or React, use a different technique. Bind the **routes** property of the Map UI component to a component property. 
 
 ---
 ##### Angular

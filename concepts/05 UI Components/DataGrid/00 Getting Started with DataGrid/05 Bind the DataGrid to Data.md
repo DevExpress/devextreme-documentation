@@ -1,4 +1,4 @@
-The **DataGrid** component can load and update data from different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property and specify the key field in the [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) property. If you want to use another data source type, refer to one of the following articles:
+The DataGrid component can load and update data from different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property and specify the key field in the [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) property. If you want to use another data source type, refer to one of the following articles:
 
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
@@ -755,4 +755,4 @@ The **DataGrid** component can load and update data from different data source t
 
 ---
 
-If you run this code, a **DataGrid** is created with a column for each data field. All the columns have equal widths and the same order as their data fields.
+If you run this code, a DataGrid is created with a column for each data field. All the columns have equal widths and the same order as their data fields.

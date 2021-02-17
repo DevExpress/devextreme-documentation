@@ -11,7 +11,7 @@ Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Widgets
 
 The **columns** array can contain the names of data source fields, which is sufficient if you do not need to specify any other column properties. But if you do, then this array can also contain objects that configure columns. To bind a column object to a data source field, use the **dataField** property. 
 
-[note] 
+[note]
 
 - If you create an unbound column with [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue), specify the **columns[]**.[name](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name) property instead.
 

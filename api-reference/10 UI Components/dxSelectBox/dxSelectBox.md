@@ -6,7 +6,7 @@ inherits: dxDropDownList
 ---
 ---
 ##### shortDescription
-The **SelectBox** UI component is an editor that allows an end user to select an item from a drop-down list.
+The SelectBox UI component is an editor that allows an end user to select an item from a drop-down list.
 
 ##### widgettree
 dataSource: [

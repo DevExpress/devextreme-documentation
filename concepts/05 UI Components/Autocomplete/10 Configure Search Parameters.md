@@ -1,4 +1,4 @@
-The **Autocomplete** can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode') property to change the mode.
+The Autocomplete can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode') property to change the mode.
 
 ---
 ##### jQuery
@@ -107,7 +107,7 @@ The **Autocomplete** can provide suggestions in two different modes: *'contains'
 
 ---
 
-By default, the **Autocomplete** UI component starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength') property. 
+By default, the Autocomplete UI component starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength') property. 
 
 ---
 ##### jQuery

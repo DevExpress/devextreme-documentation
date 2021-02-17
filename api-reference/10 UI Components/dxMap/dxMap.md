@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **Map** is an interactive UI component that displays a geographic map with markers and routes.
+The Map is an interactive UI component that displays a geographic map with markers and routes.
 
 ##### widgettree
 provider: "bing"

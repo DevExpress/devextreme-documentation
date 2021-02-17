@@ -1,4 +1,4 @@
-Subvalue indicators are pointers that indicate extra values on the **CircularGauge**. These extra values are called *"subvalues"*. There is a set of predefined subvalue indicator types for the **CircularGauge** UI component.
+Subvalue indicators are pointers that indicate extra values on the CircularGauge. These extra values are called *"subvalues"*. There is a set of predefined subvalue indicator types for the CircularGauge UI component.
 
 - [RangeBar](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/5%20Indicator%20Types/RangeBar '/Documentation/ApiReference/UI_Components/dxCircularGauge/Indicator_Types/RangeBar/')
 - [RectangleNeedle](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/5%20Indicator%20Types/RectangleNeedle '/Documentation/ApiReference/UI_Components/dxCircularGauge/Indicator_Types/RectangleNeedle/')
@@ -20,4 +20,4 @@ In order to customize the appearance of the subvalue indicators, use the [subval
         }
     };
 
-[note] Although the **CircularGauge** can indicate several subvalues at once, you cannot customize a particular subvalue indicator. The properties specified by the **subvalueIndicator** object apply to all subvalue indicators.
+[note] Although the CircularGauge can indicate several subvalues at once, you cannot customize a particular subvalue indicator. The properties specified by the **subvalueIndicator** object apply to all subvalue indicators.

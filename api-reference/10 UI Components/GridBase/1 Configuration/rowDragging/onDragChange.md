@@ -16,7 +16,7 @@ Allows you to cancel the gesture.
 The UI component's instance.
 
 ##### field(e.dropInsideItem): Boolean
-Indicates if the dragged row is dropped inside another row. Available only for the **TreeList** UI component.
+Indicates if the dragged row is dropped inside another row. Available only for the TreeList UI component.
 
 ##### field(e.event): event
 #include common-ref-eventparam

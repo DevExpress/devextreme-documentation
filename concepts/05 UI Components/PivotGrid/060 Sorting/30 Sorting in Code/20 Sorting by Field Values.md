@@ -6,4 +6,4 @@ To sort row or column fields by their own values, change the [sortOrder](/api-re
     });
     pivotGridDataSource.load();
     
-[note]After you have made changes in a PivotGridDataSource, call its [load()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#load') method to refresh data in the bound **PivotGrid**.
+[note]After you have made changes in a PivotGridDataSource, call its [load()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#load') method to refresh data in the bound PivotGrid.

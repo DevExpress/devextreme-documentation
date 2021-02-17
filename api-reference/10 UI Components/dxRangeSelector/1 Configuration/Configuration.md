@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object that defines configuration properties for the **RangeSelector** UI component.
+An object that defines configuration properties for the RangeSelector UI component.
 
 ---
 #####See Also#####

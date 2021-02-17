@@ -4,6 +4,6 @@ type: Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, 
 ---
 ---
 ##### shortDescription
-Validation rules specified for the **Validator**.
+Validation rules specified for the Validator.
 
 ---

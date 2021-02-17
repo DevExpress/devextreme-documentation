@@ -5,7 +5,7 @@ default: 'id'
 ---
 ---
 ##### shortDescription
-Specifies which data field provides keys for **TreeView** items.
+Specifies which data field provides keys for TreeView items.
 
 ---
 [note]The key value should be unique within the data array.

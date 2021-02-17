@@ -6,7 +6,7 @@ inherits: Widget,DataHelperMixin
 ---
 ---
 ##### shortDescription
-The **DropDownButton** is a button that opens a drop-down menu.
+The DropDownButton is a button that opens a drop-down menu.
 
 ##### widgettree
 displayExpr: "name",

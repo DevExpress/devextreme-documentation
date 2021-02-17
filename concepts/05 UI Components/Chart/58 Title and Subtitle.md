@@ -1,4 +1,4 @@
-Title and subtitle are textual elements that give an idea of what the **Chart** visualizes.
+Title and subtitle are textual elements that give an idea of what the Chart visualizes.
 
 ![DevExtreme HTML5 JavaScript Charts Title Subtitle](/images/ChartJS/visual_elements/chart_title.png)
 

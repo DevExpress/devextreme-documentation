@@ -1,4 +1,4 @@
-Exposes the **Sankey** UI component.
+Exposes the Sankey UI component.
 
 Exports:
 

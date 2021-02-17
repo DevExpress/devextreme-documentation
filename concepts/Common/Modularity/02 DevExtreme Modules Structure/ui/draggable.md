@@ -1,4 +1,4 @@
-Exposes the **Draggable** UI component.
+Exposes the Draggable UI component.
 
 Exports:
 

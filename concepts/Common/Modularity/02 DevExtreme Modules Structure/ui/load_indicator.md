@@ -1,4 +1,4 @@
-Exposes the **LoadIndicator** UI component.
+Exposes the LoadIndicator UI component.
 
 Exports:
 

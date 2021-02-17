@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **Calendar** UI component.
+An object defining configuration properties for the Calendar UI component.
 
 ---
 #####See Also#####

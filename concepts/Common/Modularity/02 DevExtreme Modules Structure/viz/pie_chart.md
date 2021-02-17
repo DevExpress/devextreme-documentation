@@ -1,4 +1,4 @@
-Exposes the **PieChart** UI component.
+Exposes the PieChart UI component.
 
 Exports:
 

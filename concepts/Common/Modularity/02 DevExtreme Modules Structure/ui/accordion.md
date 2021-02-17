@@ -1,4 +1,4 @@
-Exposes the **Accordion** UI component.
+Exposes the Accordion UI component.
 
 Exports:
 

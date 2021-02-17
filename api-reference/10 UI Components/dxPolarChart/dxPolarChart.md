@@ -6,7 +6,7 @@ inherits: BaseChart
 ---
 ---
 ##### shortDescription
-The **PolarChart** is a UI component that visualizes data in a polar coordinate system.
+The PolarChart is a UI component that visualizes data in a polar coordinate system.
 
 ##### widgettree
 dataSource: [{
@@ -36,7 +36,7 @@ dataSource: [{
 dx.viz.js, dx.all.js
 
 ---
-The **PolarChart** UI component visualizes data in a polar coordinate system. In this system, each point on a plane is determined by the distance from the center (the point's value) and the angle from a fixed direction (the point's argument). To understand how a chart is displayed in a polar coordinate system, imagine how it would be displayed in a rectangular coordinate system and then round off the argument axis in your mind.
+The PolarChart UI component visualizes data in a polar coordinate system. In this system, each point on a plane is determined by the distance from the center (the point's value) and the angle from a fixed direction (the point's argument). To understand how a chart is displayed in a polar coordinate system, imagine how it would be displayed in a rectangular coordinate system and then round off the argument axis in your mind.
 
 <img src="/images/ChartJS/PolarChart_rectangular.png" alt="DevExtreme HTML5 Charts DataVisualization" style="display:inline-block; vertical-align:bottom" />
 <img src="/images/ChartJS/PolarChart_polar.png" alt="DevExtreme HTML5 Charts PolarChart RadarChart DataVisualization" style="display:inline-block; vertical-align:bottom" />

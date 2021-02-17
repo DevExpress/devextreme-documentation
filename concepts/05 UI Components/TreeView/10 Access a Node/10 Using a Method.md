@@ -1,4 +1,4 @@
-Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getNodes().md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#getNodes') method to get **TreeView** nodes at any point in the application flow.
+Call the [getNodes()](/api-reference/10%20UI%20Widgets/dxTreeView/3%20Methods/getNodes().md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#getNodes') method to get TreeView nodes at any point in the application flow.
 
 ---
 ##### jQuery

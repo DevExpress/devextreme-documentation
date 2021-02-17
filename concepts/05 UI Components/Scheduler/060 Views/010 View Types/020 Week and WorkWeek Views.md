@@ -1,4 +1,4 @@
-The **week** and **workWeek** views display appointments for a week. The **workWeek** view does not include weekends. The **Scheduler** UI component arranges appointments from top to bottom. If their time intervals overlap, their width is decreased and they are placed next to each other.
+The **week** and **workWeek** views display appointments for a week. The **workWeek** view does not include weekends. The Scheduler UI component arranges appointments from top to bottom. If their time intervals overlap, their width is decreased and they are placed next to each other.
 
 ![Week View](/images/UiWidgets/Scheduler_Week_View.png)
 

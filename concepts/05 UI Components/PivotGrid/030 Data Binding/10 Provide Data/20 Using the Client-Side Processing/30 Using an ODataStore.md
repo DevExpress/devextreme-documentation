@@ -1,4 +1,4 @@
-<a href="http://www.odata.org" target="_blank">OData</a> is a universal open protocol for consuming data APIs. The DevExtreme data library provides a special type of Store to access OData web services, called [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/'). The following code is sufficient to provide data for **PivotGrid** using an ODataStore.
+<a href="http://www.odata.org" target="_blank">OData</a> is a universal open protocol for consuming data APIs. The DevExtreme data library provides a special type of Store to access OData web services, called [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/'). The following code is sufficient to provide data for PivotGrid using an ODataStore.
 
 	<!--JavaScript-->var pivotGridDataSource = {
 		store: {

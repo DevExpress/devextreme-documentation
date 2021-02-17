@@ -83,7 +83,7 @@ Every UI component that supports palettes has a [palette](/api-reference/20%20Da
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
 }
 
-In the **CircularGauge** and **LinearGauge**, the palette can be specified in the [rangeContainer](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/rangeContainer '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/rangeContainer/') and [subvalueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/subvalueIndicator/') objects.
+In the CircularGauge and LinearGauge, the palette can be specified in the [rangeContainer](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/rangeContainer '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/rangeContainer/') and [subvalueIndicator](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/subvalueIndicator/') objects.
 
 ---
 ##### jQuery  
@@ -207,7 +207,7 @@ In the **CircularGauge** and **LinearGauge**, the palette can be specified in th
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
 }
 
-In the **TreeMap**, the palette is part of the [colorizer](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/colorizer '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/'). In the **VectorMap**, it should be set for a specific [layer](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/'). In the **RangeSelector**, the palette is specified in the [chart](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/') object.
+In the TreeMap, the palette is part of the [colorizer](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/colorizer '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/'). In the VectorMap, it should be set for a specific [layer](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/'). In the RangeSelector, the palette is specified in the [chart](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/') object.
 
 ---
 ##### jQuery  

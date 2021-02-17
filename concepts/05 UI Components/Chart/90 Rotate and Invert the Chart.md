@@ -1,9 +1,9 @@
-When the **Chart** is rotated, its axes are swapped around.
+When the Chart is rotated, its axes are swapped around.
 
 <img src="/images/ChartJS/visual_elements/axis_standard.png" alt="DevExtreme HTML5 JavaScript Charts" style="display:inline-block" />
 <img src="/images/ChartJS/visual_elements/axis_rotated.png" alt="DevExtreme HTML5 JavaScript Charts RotatedChart" style="display:inline-block;margin-left:5px" />
 
-To rotate the **Chart**, set the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property to **true**.
+To rotate the Chart, set the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property to **true**.
 
 ---
 ##### jQuery

@@ -176,7 +176,7 @@ ${{dataSource_items_note}}
 
 ${{paginate_note}}
 
-- Data field names cannot be `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
+- Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 
 ${{remote_operations_note}}
 

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **Gallery** UI component.
+An object defining configuration properties for the Gallery UI component.
 
 ---
 #####See Also#####

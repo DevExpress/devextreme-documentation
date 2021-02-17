@@ -6,7 +6,7 @@ inherits: dxMenuBase
 ---
 ---
 ##### shortDescription
-The **ContextMenu** UI component displays a single- or multi-level context menu. An end user invokes this menu by a right click or a long press.
+The ContextMenu UI component displays a single- or multi-level context menu. An end user invokes this menu by a right click or a long press.
 
 ##### widgettree
 dataSource: [

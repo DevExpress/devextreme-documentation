@@ -1,4 +1,4 @@
-Exposes the **Popover** UI component.
+Exposes the Popover UI component.
 
 Exports:
 

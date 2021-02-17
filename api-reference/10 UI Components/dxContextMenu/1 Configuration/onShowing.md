@@ -6,7 +6,7 @@ EventForAction: dxContextMenu.showing
 ---
 ---
 ##### shortDescription
-A function that is executed before the **ContextMenu** is shown.
+A function that is executed before the ContextMenu is shown.
 
 ##### param(e): Object
 Information about the event.

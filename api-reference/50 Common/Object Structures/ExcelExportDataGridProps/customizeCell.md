@@ -21,7 +21,7 @@ An ExcelJS object that describes an Excel cell. Use the object's properties to c
 - <a href="https://github.com/exceljs/exceljs#number-formats" target="_blank">numFmt</a>
 
 ##### field(options.gridCell): ExcelDataGridCell
-A **DataGrid** cell.
+A DataGrid cell.
 
 ---
 

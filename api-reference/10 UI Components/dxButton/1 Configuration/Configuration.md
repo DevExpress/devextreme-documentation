@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **Button** UI component.
+An object defining configuration properties for the Button UI component.
 
 ---
 #####See Also#####

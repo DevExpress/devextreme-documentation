@@ -1,10 +1,10 @@
-The **TileView** UI component contains a collection of tiles. Tiles can store much more information than ordinary buttons, that is why they are very popular in apps designed for touch devices.
+The TileView UI component contains a collection of tiles. Tiles can store much more information than ordinary buttons, that is why they are very popular in apps designed for touch devices.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Basics/"
 }
 
-The following code adds a primitive **TileView** to your page.
+The following code adds a primitive TileView to your page.
 
 ---
 ##### jQuery

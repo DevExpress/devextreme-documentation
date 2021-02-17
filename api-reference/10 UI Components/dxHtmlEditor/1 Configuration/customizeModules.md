@@ -130,7 +130,7 @@ The DevExtreme Quill modules and the API you can use to customize them are descr
 
 ---
 
-If 3rd-party modules are used in the **HtmlEditor**, refer to their documentation for information on the API.
+If 3rd-party modules are used in the HtmlEditor, refer to their documentation for information on the API.
 
 #####See Also#####
 - [get(componentPath)](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/get(componentPath).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#getcomponentPath')

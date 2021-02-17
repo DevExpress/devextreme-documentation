@@ -1,4 +1,4 @@
-The **DataGrid** provides the following command columns:
+The DataGrid provides the following command columns:
 
 - **Adaptive column**       
 Contains ellipsis buttons that expand/collapse [adaptive detail rows](/concepts/05%20Widgets/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/'). Appears if [columnHidingEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnHidingEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnHidingEnabled') is **true** or [hidingPriority](/api-reference/_hidden/GridBaseColumn/hidingPriority.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#hidingPriority') is set for at least one column and only when certain columns do not fit into the screen or container size.

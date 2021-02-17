@@ -6,7 +6,7 @@ EventForAction: dxTreeView.itemSelectionChanged
 ---
 ---
 ##### shortDescription
-A function that is executed when a single **TreeView** item is selected or selection is canceled.
+A function that is executed when a single TreeView item is selected or selection is canceled.
 
 ##### param(e): Object
 Information about the event.

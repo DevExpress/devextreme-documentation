@@ -1,4 +1,4 @@
-Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#dataSource') property and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. To do this, configure the **bindingOptions** object in the **Sankey** as follows:
+Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#dataSource') property and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. To do this, configure the **bindingOptions** object in the Sankey as follows:
 
     <!--HTML-->
     <div ng-controller="DemoController">
@@ -23,7 +23,7 @@ Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visu
             ];
         });
 
-Now, whenever an item is added or removed from the `sankeyData` array, the **Sankey** is updated accordingly. If you need to track changes in objects, configure the **bindingOptions** object as follows:
+Now, whenever an item is added or removed from the `sankeyData` array, the Sankey is updated accordingly. If you need to track changes in objects, configure the **bindingOptions** object as follows:
 
     <!--HTML--><div ng-controller="DemoController">
         <div dx-sankey="{
@@ -36,7 +36,7 @@ Now, whenever an item is added or removed from the `sankeyData` array, the **San
         }"></div>
     </div>
 
-In this case, the **Sankey** uses the <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watch" target="_blank">$watch</a> listener instead of the default <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watchCollection" target="_blank">$watchCollection</a> listener. Note that this can impact the **Sankey**'s peformance.
+In this case, the Sankey uses the <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watch" target="_blank">$watch</a> listener instead of the default <a href="https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watchCollection" target="_blank">$watchCollection</a> listener. Note that this can impact the Sankey's peformance.
 
 #####See Also#####
 - [Change Options - AngularJS](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options/')

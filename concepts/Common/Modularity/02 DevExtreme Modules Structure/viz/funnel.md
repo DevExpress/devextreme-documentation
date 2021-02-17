@@ -1,4 +1,4 @@
-Exposes the **Funnel** UI component.
+Exposes the Funnel UI component.
 
 Exports:
 

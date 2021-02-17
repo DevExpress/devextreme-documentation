@@ -1,4 +1,4 @@
-Exposes the **Popup** UI component.
+Exposes the Popup UI component.
 
 Exports:
 

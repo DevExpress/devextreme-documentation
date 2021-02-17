@@ -38,7 +38,7 @@ The following code illustrates the first use-case. Here, each time a product is 
         });
     });
 
-In the second use-case, you have some component that gets updated each time a user selects a command on the slide-out menu. In the following example, this component is the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/') UI component. Note that it is the **List**, not **SlideOut** that is bound to the data source. Note also that the data source is not just a simple array, but a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object provides an interface for processing data, in this example, for mapping and filtering the underlying array.
+In the second use-case, you have some component that gets updated each time a user selects a command on the slide-out menu. In the following example, this component is the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/') UI component. Note that it is the List, not SlideOut that is bound to the data source. Note also that the data source is not just a simple array, but a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object provides an interface for processing data, in this example, for mapping and filtering the underlying array.
 
     <!--JavaScript-->var products = new DevExpress.data.DataSource({
         store: {
@@ -106,7 +106,7 @@ In the second use-case, you have some component that gets updated each time a us
         });
     });
 
-As you can see in the code above, a markup for the **SlideOut** view is defined in the [contentTemplate](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#contentTemplate') function. Unlike **itemTemplate**, this function is called only once - when the **SlideOut** is being rendered.
+As you can see in the code above, a markup for the SlideOut view is defined in the [contentTemplate](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#contentTemplate') function. Unlike **itemTemplate**, this function is called only once - when the SlideOut is being rendered.
 
 #####See Also#####
 - [SlideOut - Customize Menu Items](/concepts/05%20Widgets/SlideOut/05%20Customize%20Menu%20Items.md '/Documentation/Guide/UI_Components/SlideOut/Customize_Menu_Items')

@@ -5,7 +5,7 @@ inheritsType: dxPolarChartCommonAnnotationConfig
 ---
 ---
 ##### shortDescription
-Specifies settings common for all annotations in the **PolarChart**.
+Specifies settings common for all annotations in the PolarChart.
 
 ---
 Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.

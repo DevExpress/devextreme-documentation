@@ -1,10 +1,10 @@
-The **TagBox** UI component is an editor that allows an end user to select multiple items from a drop-down list.
+The TagBox UI component is an editor that allows an end user to select multiple items from a drop-down list.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/"
 }
 
-The following code adds the **TagBox** to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#placeholder') to be displayed when the **TagBox** is empty.
+The following code adds the TagBox to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#placeholder') to be displayed when the TagBox is empty.
 
 ---
 ##### jQuery

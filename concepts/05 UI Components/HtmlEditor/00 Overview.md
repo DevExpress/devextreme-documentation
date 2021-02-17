@@ -1,4 +1,4 @@
-**HtmlEditor** is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML or Markdown. **HtmlEditor** is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/" target="_blank">DevExtreme Quill</a>.
+HtmlEditor is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML or Markdown. HtmlEditor is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/" target="_blank">DevExtreme Quill</a>.
 
 #include common-ctp-note with {
     component: "HtmlEditor"
@@ -8,7 +8,7 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 
-Follow the steps below to add the **HtmlEditor** to a page.
+Follow the steps below to add the HtmlEditor to a page.
 
 1. Reference or import the DevExtreme Quill as shown in the code samples below.
 2. Set the output markup language (HTML or Markdown) in the [valueType](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/valueType.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#valueType') property.
@@ -151,7 +151,7 @@ Follow the steps below to add the **HtmlEditor** to a page.
 
 ---
 
-The **HtmlEditor** supports the following features:
+The HtmlEditor supports the following features:
 
 - Inline, block, and embedded [formats](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') 
 - [Adaptive toolbar](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') 
@@ -161,9 +161,9 @@ The **HtmlEditor** supports the following features:
 - Drag and drop images
 - Copy-paste rich content (unsupported formats are removed)
 
-The **HtmlEditor** has the following limitations:
+The HtmlEditor has the following limitations:
 
-- Users cannot edit the layout. The **HtmlEditor** is designed to format textual content only.
-- Users cannot save full HTML markup. The **HtmlEditor** supports only a subset (built-in or custom) of formats. Everything else is discarded.
+- Users cannot edit the layout. The HtmlEditor is designed to format textual content only.
+- Users cannot save full HTML markup. The HtmlEditor supports only a subset (built-in or custom) of formats. Everything else is discarded.
 
 [tags]dxhtmleditor

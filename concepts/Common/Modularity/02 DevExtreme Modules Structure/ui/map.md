@@ -1,4 +1,4 @@
-Exposes the **Map** UI component.
+Exposes the Map UI component.
 
 Exports:
 

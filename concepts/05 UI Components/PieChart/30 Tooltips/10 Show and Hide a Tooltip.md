@@ -119,7 +119,7 @@ Each series point allows you to show or hide its tooltip programmatically by cal
 
 ---
 
-You can also hide the tooltip regardless of the point to which it belongs by calling the **hideTooltip()** method of the **PieChart** instance.
+You can also hide the tooltip regardless of the point to which it belongs by calling the **hideTooltip()** method of the PieChart instance.
 
 ---
 ##### jQuery

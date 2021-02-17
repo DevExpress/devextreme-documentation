@@ -47,7 +47,7 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
     
 ---
 
-The **TreeList** UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
+The TreeList UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
 
 ---
 ##### jQuery

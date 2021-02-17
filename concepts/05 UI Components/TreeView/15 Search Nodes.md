@@ -1,4 +1,4 @@
-Searching is disabled in the **TreeView** UI component by default. Assign **true** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled') property to display the search panel. The [searchExpr](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchExpr') property specifies which data fields should be searched. Assign an _array_ of field names to it if you need to search several fields.
+Searching is disabled in the TreeView UI component by default. Assign **true** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled') property to display the search panel. The [searchExpr](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchExpr') property specifies which data fields should be searched. Assign an _array_ of field names to it if you need to search several fields.
 
 ---
 #####jQuery
@@ -144,7 +144,7 @@ Searching is disabled in the **TreeView** UI component by default. Assign **true
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/TreeViewWithSearchBar/"
 }
 
-When a user types a string in the input field, the **TreeView** suggests all nodes that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode') property if you want the **TreeView** to suggest only those nodes that _start_ with the input string.
+When a user types a string in the input field, the TreeView suggests all nodes that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Widgets/SearchBoxMixin/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode') property if you want the TreeView to suggest only those nodes that _start_ with the input string.
 
 ---
 #####jQuery

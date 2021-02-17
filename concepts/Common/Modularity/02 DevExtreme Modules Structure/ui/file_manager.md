@@ -1,4 +1,4 @@
-Exposes the **FileManager** UI component.
+Exposes the FileManager UI component.
 
 Exports:
 

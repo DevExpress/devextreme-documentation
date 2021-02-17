@@ -6,7 +6,7 @@ To understand how polar charts are built, imagine how a chart in a rectangular c
 
 ![Transformation from Rectangular to Polar Coordinates PolarScatterSeriesType ChartJS](/images/ChartJS/PolarScatter_TransformationFromStandardChart.png)
 
-**PolarChart** uses the *scatter* series type by default. But in some cases, you may need to specify this series type explicitly. For this purpose, assign *'scatter'* to the **type** property of the **series** configuration object.
+PolarChart uses the *scatter* series type by default. But in some cases, you may need to specify this series type explicitly. For this purpose, assign *'scatter'* to the **type** property of the **series** configuration object.
 
     <!--JavaScript-->var polarChartOptions = {
         // ...

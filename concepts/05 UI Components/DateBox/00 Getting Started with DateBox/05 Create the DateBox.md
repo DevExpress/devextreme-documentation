@@ -1,4 +1,4 @@
-Use the following code to create a basic **DateBox**:
+Use the following code to create a basic DateBox:
 
 ---
 ##### jQuery
@@ -110,4 +110,4 @@ Use the following code to create a basic **DateBox**:
 
 ---
 
-If you run this code, you will that see the **DateBox** that allows users to set the date only. Users will be allowed to set the time in the next step.
+If you run this code, you will that see the DateBox that allows users to set the date only. Users will be allowed to set the time in the next step.

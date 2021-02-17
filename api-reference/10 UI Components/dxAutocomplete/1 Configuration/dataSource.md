@@ -1,5 +1,5 @@
 #include common-dataSource-description with {
-    widget_works_with: "The **Autocomplete** works with collections of objects or `string`, `number`, or `boolean` values.",
+    widget_works_with: "The Autocomplete works with collections of objects or `string`, `number`, or `boolean` values.",
 
     object_structure_notes: "In each case, also specify the [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '{currentpath}/#valueExpr') if the data source provides objects.",
 

@@ -6,7 +6,7 @@ inherits: Editor
 ---
 ---
 ##### shortDescription
-The **FileUploader** UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files to the **FileUploader** area on the page.
+The FileUploader UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files to the FileUploader area on the page.
 
 ##### widgettree
 

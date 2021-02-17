@@ -1,4 +1,4 @@
-Exposes the **CircularGauge** UI component.
+Exposes the CircularGauge UI component.
 
 Exports:
 

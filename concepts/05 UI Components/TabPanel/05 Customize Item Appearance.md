@@ -1,4 +1,4 @@
-An item in the **TabPanel** UI component includes a tab and a view. For a minor customization of **TabPanel** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/') in item data objects. For example, the following code generates three items: the first has a [badge](/api-reference/_hidden/dxTabPanelItem/badge.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge'), the second is disabled, the third has an icon.
+An item in the TabPanel UI component includes a tab and a view. For a minor customization of TabPanel items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTabPanel/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/') in item data objects. For example, the following code generates three items: the first has a [badge](/api-reference/_hidden/dxTabPanelItem/badge.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge'), the second is disabled, the third has an icon.
 
 ---
 
@@ -300,7 +300,7 @@ If you need a more flexible solution, define [itemTemplate](/api-reference/10%20
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/"
 }
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for **TabPanel** items. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
+If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for TabPanel items. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
 
 ---
 

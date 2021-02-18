@@ -175,7 +175,7 @@ You can call the [getDataSource()](/api-reference/10%20UI%20Widgets/dxPivotGrid/
 
 Please review the following notes about data binding:
 
-- If the **PivotGrid** UI component gets data from a server, enable [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to notify the UI component that the server performs data processing operations.
+- If the **PivotGrid** UI component gets data from a server, enable [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to notify the UI component that the server processes data.
 
 - Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 

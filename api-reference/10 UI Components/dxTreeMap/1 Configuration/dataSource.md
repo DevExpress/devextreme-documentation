@@ -212,7 +212,7 @@ Regardless of the data source on the input, the **TreeMap** always wraps it in t
 
 [note]
 
-Please review the following notes about data binding:
+Review the following notes about data binding:
 
 - Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 

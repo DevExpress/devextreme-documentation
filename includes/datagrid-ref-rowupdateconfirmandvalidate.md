@@ -144,36 +144,34 @@
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
     function onRowUpdating(e) {
-    e.cancel = new Promise((resolve, reject) => {
-        const promptPromise = dialog.confirm("Are you sure?", "Confirm changes");
-        promptPromise.then((dialogResult) => {
-        if (dialogResult) {
-            let params = "?";
-            for (let key in e.newData) {
-            params += `${key}=${e.newData[key]}&`;
-            }
-            params = params.slice(0, -1);
-            fetch(`https://url/to/your/validation/service${params}`)
-            .then((validationResult) => {
-                !validationResult.errorText
-                ? resolve(false)
-                : reject(validationResult.errorText);
-            })
-            .catch(() => reject());
-        } else {
-            resolve(true);
-        }
+        e.cancel = new Promise((resolve, reject) => {
+            const promptPromise = dialog.confirm("Are you sure?", "Confirm changes");
+            promptPromise.then((dialogResult) => {
+                if (dialogResult) {
+                    let params = "?";
+                    for (let key in e.newData) {
+                        params += `${key}=${e.newData[key]}&`;
+                    }
+                    params = params.slice(0, -1);
+                    fetch(`https://url/to/your/validation/service${params}`)
+                        .then((validationResult) => {
+                            !validationResult.errorText ? resolve(false) : reject(validationResult.errorText);
+                        })
+                        .catch(() => reject());
+                } else {
+                    resolve(true);
+                }
+            });
         });
-    });
     }
 
     function App() {
-    return (
-        <{WidgetName} ...
-            onRowUpdating={onRowUpdating}>
-            // ...
-        </{WidgetName}>
-    );
+        return (
+            <{WidgetName} ...
+                onRowUpdating={onRowUpdating}>
+                // ...
+            </{WidgetName}>
+        );
     }
 
     export default App;

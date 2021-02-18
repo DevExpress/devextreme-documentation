@@ -74,7 +74,7 @@ Object type properties that depend on other properties' values are not implement
 
 [important] We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
-If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a> and need to define a configuration object inside a function, wrap this object in the <a href="https://reactjs.org/docs/hooks-reference.html#usememo" target="_blank">useMemo</a> hook to preserve the object's reference between state changes:
+If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a> and need to define a configuration object inside a function component, wrap this object in the <a href="https://reactjs.org/docs/hooks-reference.html#usememo" target="_blank">useMemo</a> hook to preserve the object's reference between state changes:
 
     <!-- tab: App.js -->
     import React, { useState, useMemo } from 'react';
@@ -83,7 +83,6 @@ If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">R
     const data = { isAddressRequired: false, Address: '' };
 
     export default function App() {
-
         const [visible, setVisible] = useState(false);
         const checkBoxOptions = useMemo(() => {
             return {

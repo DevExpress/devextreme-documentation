@@ -5,7 +5,37 @@ The `Template` element declares a named template. Its `name` property should be 
 - **Rendering function**        
 Pass the rendering function to the `Template`'s `render` property:
 
-        <!-- tab: App.js -->
+        <!-- tab: Function component -->
+        import Form, { Item } from 'devextreme-react/form';
+        import { Template } from 'devextreme-react/core/template';
+
+        import service from './data.js';
+
+        const renderSelectBoxItem = (item) => {
+            return <div>{item.toUpperCase()}</div>;
+        }
+        const employee = service.getEmployee();
+        const positions = service.getPositions();
+        const positionEditorOptions = {
+            items: positions,
+            value: '',
+            itemTemplate: 'selectBoxItem'
+        };
+
+        export default function App() {
+            return (
+                <Form formData={employee}>
+                    <Item
+                        dataField="Position"
+                        editorType="dxSelectBox"
+                        editorOptions={positionEditorOptions}
+                    />
+                    <Template name="selectBoxItem" render={renderSelectBoxItem} />
+                </Form>
+            );
+        }
+        
+        <!-- tab: Class component -->
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
 
@@ -76,7 +106,7 @@ Pass the rendering function to the `Template`'s `render` property:
 - **Custom component**          
 Assign the custom component to the `Template`'s `component` property:
 
-        <!-- tab: App.js -->
+        <!-- tab: Class component -->
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
 

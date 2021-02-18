@@ -9,9 +9,7 @@ Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Widgets
 
 ---
 
-The **columns** array can contain the names of data source fields, which is sufficient if you do not need to specify any other column properties. But if you do, then this array can also contain objects that configure columns. To bind a column object to a data source field, use the **dataField** property. 
-
-In the example below, the **columns** array contains names of data source fields and column objects:
+The **columns** array can contain column objects and data field names as strings. If you use column objects, specify the **dataField** property to bind the object to a column from a data source::
 
 ---
 ##### jQuery

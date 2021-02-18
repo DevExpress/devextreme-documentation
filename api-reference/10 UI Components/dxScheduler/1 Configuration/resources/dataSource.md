@@ -186,7 +186,7 @@ Implement a [CustomStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%
 
 [note]
 
-Please review the following notes about data binding:
+Review the following notes about data binding:
 
 - If you explicitly wrap the store in the **DataSource** object, set the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') property to **false** to prevent data from partitioning.
 

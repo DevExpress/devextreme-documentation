@@ -8,7 +8,7 @@ notUsedInTheme:
 Specifies the type of the legend grouping.
 
 ---
-The **VectorMap**'s legend supports three grouping types.
+The VectorMap's legend supports three grouping types.
 
 - **color**        
 Can be used if you have grouped map markers or areas in several differently-colored groups. For more information, refer to the layers's [colorGroupingField](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/colorGroupingField.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#colorGroupingField') and [colorGroups](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/colorGroups.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#colorGroups') property descriptions.

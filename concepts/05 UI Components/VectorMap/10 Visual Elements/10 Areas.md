@@ -1,4 +1,4 @@
-An area is the fundamental element of the **VectorMap** UI component. Map areas usually represent geographical objects, such as countries, continents, etc.
+An area is the fundamental element of the VectorMap UI component. Map areas usually represent geographical objects, such as countries, continents, etc.
 
 ![DevExtreme ChartJS VectorMap](/images/ChartJS/MapAreas.png)
 

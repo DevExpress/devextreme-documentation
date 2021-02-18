@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes methods that control the **{WidgetName}**.
+This section describes methods that control the {WidgetName}.
 
 ---

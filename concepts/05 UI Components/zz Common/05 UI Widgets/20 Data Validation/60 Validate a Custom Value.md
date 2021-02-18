@@ -1,4 +1,4 @@
-You can use the DevExtreme validation engine to validate a custom value, for example, a non-DevExtreme editor value or a concatenation of several editor values, by configuring the **Validator**'s [adapter](/api-reference/10%20UI%20Widgets/dxValidator/1%20Configuration/adapter 'Documentation/ApiReference/UI_Components/dxValidator/Configuration/#adapter') property. The following example creates two text boxes and a button. A button click checks that at least one of these text boxes is filled. Their values are provided by the **getValue** function.
+You can use the DevExtreme validation engine to validate a custom value, for example, a non-DevExtreme editor value or a concatenation of several editor values, by configuring the Validator's [adapter](/api-reference/10%20UI%20Widgets/dxValidator/1%20Configuration/adapter 'Documentation/ApiReference/UI_Components/dxValidator/Configuration/#adapter') property. The following example creates two text boxes and a button. A button click checks that at least one of these text boxes is filled. Their values are provided by the **getValue** function.
 
 ---
 ##### jQuery

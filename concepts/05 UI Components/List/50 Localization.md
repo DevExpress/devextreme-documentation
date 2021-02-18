@@ -1,4 +1,4 @@
-Static messages for any DevExtreme UI component are defined in a locale-specific dictionary as key-value pairs. To localize the **List** UI component, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
+Static messages for any DevExtreme UI component are defined in a locale-specific dictionary as key-value pairs. To localize the List UI component, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
 
 ---
 ##### jQuery
@@ -17,7 +17,7 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
             "dxListEditDecorator-more": "More"
         },
         "de": {
-            "dxCollectionWidget-noDataText": "Keine Daten verfÃ¼gbar",
+            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
             // ...
         }
     });
@@ -44,7 +44,7 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
             "dxListEditDecorator-more": "More"
         },
         "de": {
-            "dxCollectionWidget-noDataText": "Keine Daten verfÃ¼gbar",
+            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
             // ...
         }
     });
@@ -56,7 +56,7 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
 
 [note] DevExtreme ships several predefined dictionaries for most locales. See the [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') topic for more information. 
 
-Some messages can be defined by **List** properties as well as keys. The following table illustrates the properties and keys that define the same messages. Note that the properties always take precedence over keys.
+Some messages can be defined by List properties as well as keys. The following table illustrates the properties and keys that define the same messages. Note that the properties always take precedence over keys.
 
 <table class="dx-table">
     <tr>

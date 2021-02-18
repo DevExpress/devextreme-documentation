@@ -1,4 +1,4 @@
-Exposes the **ButtonGroup** UI component.
+Exposes the ButtonGroup UI component.
 
 Exports:
 

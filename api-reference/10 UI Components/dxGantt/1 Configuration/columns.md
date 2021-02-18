@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-An array of columns in the **Gantt**.
+An array of columns in the Gantt.
 
 ---
 

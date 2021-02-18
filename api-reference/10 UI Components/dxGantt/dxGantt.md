@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **Gantt** is a UI component that displays the task flow and dependencies between tasks.
+The Gantt is a UI component that displays the task flow and dependencies between tasks.
 
 ##### widgettree
 tasks: {

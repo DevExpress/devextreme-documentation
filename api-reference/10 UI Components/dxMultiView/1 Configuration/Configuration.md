@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **MultiView** UI component.
+An object defining configuration properties for the MultiView UI component.
 
 ---
 #####See Also#####

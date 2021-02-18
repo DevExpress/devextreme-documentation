@@ -1,4 +1,4 @@
-By default, the **ContextMenu** appears when a user right-clicks the [target element](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#target'). This action corresponds to the [dxcontextmenu](/api-reference/10%20UI%20Widgets/UI%20Events/dxcontextmenu.md '/Documentation/ApiReference/UI_Components/UI_Events/#dxcontextmenu') event. If you need the **ContextMenu** to appear when another event is raised, assign the event's name to the [showEvent](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/showEvent '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/showEvent/') property. This property can accept several events at once as well as an object.
+By default, the ContextMenu appears when a user right-clicks the [target element](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#target'). This action corresponds to the [dxcontextmenu](/api-reference/10%20UI%20Widgets/UI%20Events/dxcontextmenu.md '/Documentation/ApiReference/UI_Components/UI_Events/#dxcontextmenu') event. If you need the ContextMenu to appear when another event is raised, assign the event's name to the [showEvent](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/showEvent '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/showEvent/') property. This property can accept several events at once as well as an object.
 
 ---
 
@@ -109,7 +109,7 @@ By default, the **ContextMenu** appears when a user right-clicks the [target ele
 
 ---
 
-The **ContextMenu** is closed when a user clicks anywhere outside it. You can redefine this behavior or turn it off completely using the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#closeOnOutsideClick') property. For example, the **ContextMenu** in the following code will not be closed until its own target element is clicked.
+The ContextMenu is closed when a user clicks anywhere outside it. You can redefine this behavior or turn it off completely using the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#closeOnOutsideClick') property. For example, the ContextMenu in the following code will not be closed until its own target element is clicked.
 
 ---
 

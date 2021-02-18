@@ -8,4 +8,4 @@ default: false
 Specifies whether to show all field values or only those that satisfy the other applied filters.
 
 ---
-ForÂ example, a **PivotGrid** contains Continent and Country fields, and a user selectsÂ Europe in the Continent's header filter. If the Country's header filter should filter out all non-European countries, set this property to **true**.
+For example, a PivotGrid contains Continent and Country fields, and a user selects Europe in the Continent's header filter. If the Country's header filter should filter out all non-European countries, set this property to **true**.

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-The coordinates of the exported **DataGrid** in the Excel file.
+The coordinates of the exported DataGrid in the Excel file.
 
 ---
      

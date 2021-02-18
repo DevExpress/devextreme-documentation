@@ -1,7 +1,7 @@
 Although the legend's layout is virtually universal, in some cases, you may need to slightly adjust it, for example, rearrange legend items. You can learn how to do it from the following instructions.
 
 - **Choose legend orientation**        
-Depending on whether the legend is oriented vertically or horizontally, the **Chart** arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#orientation') property.
+Depending on whether the legend is oriented vertically or horizontally, the Chart arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/orientation.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#orientation') property.
 
     ---
     ##### jQuery

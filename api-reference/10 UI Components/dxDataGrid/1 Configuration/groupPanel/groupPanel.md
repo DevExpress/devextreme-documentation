@@ -7,7 +7,7 @@ type: Object
 Configures the [group panel](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/10%20Group%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Group_Data').
 
 ---
-Data in **DataGrid** can be grouped by one column or by several. Once a column is used for grouping, it is added to the group panel.
+Data in DataGrid can be grouped by one column or by several. Once a column is used for grouping, it is added to the group panel.
 
 By default, the group panel is hidden. To make it visible, set the **groupPanel**.[visible](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible') property to **true**. Alternatively, the visibility of the group panel can depend on the device's screen size. To accomplish this behavior, set the **visible** property to *"auto"*.
 

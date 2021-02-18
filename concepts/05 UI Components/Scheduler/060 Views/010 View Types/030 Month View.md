@@ -1,4 +1,4 @@
-The **month** view displays appointments for a month. The **Scheduler** UI component arranges appointments from left to right. An appointment's size depends on its duration in days. However, it occupies the entire day cell if an appointment lasts only for several hours or minutes. The time scale and All-day panel are not available in this view. 
+The **month** view displays appointments for a month. The Scheduler UI component arranges appointments from left to right. An appointment's size depends on its duration in days. However, it occupies the entire day cell if an appointment lasts only for several hours or minutes. The time scale and All-day panel are not available in this view. 
 
 ![Month View](/images/UiWidgets/Scheduler_Month_View.png)
 

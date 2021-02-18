@@ -198,7 +198,7 @@ In the previous code example, selection was cleared of a specific point. If you 
 
 ---
 
-If you need to clear selection of all series in the **Chart** along with their points, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#clearSelection') method of the **Chart** instance.
+If you need to clear selection of all series in the Chart along with their points, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#clearSelection') method of the Chart instance.
 
 ---
 ##### jQuery

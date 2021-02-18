@@ -6,7 +6,7 @@ default: 'instantly'
 ---
 ---
 ##### shortDescription
-Specifies when to apply changes made in the field chooser to the **PivotGrid**.
+Specifies when to apply changes made in the field chooser to the PivotGrid.
 
 ---
 The following modes are available: 

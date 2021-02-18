@@ -1,4 +1,4 @@
-The **Form** UI component allows you to place custom content, for example, an image, under the group caption.
+The Form UI component allows you to place custom content, for example, an image, under the group caption.
 
 ---
 ##### jQuery

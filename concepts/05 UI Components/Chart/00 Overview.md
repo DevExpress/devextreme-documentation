@@ -1,8 +1,8 @@
-The **Chart** is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/').
+The Chart is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/').
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_1/DataVisualization/Guides/ChartOverview/chartExample.html, /Content/Applications/20_1/DataVisualization/Guides/ChartOverview/chartExample.js"></div>
 
-The **Chart** can visualize data from any source. Refer to the following topics for details on how to bind the **Chart** to your data source.
+The Chart can visualize data from any source. Refer to the following topics for details on how to bind the Chart to your data source.
 
 - [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
@@ -18,7 +18,7 @@ The next step is to configure the most essential chart elements - series and axe
 - [Point Labels](/concepts/05%20Widgets/Chart/15%20Point%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Overview/')
 - [Axes](/concepts/05%20Widgets/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/')
 
-Then, make the **Chart** more informative with the following elements.
+Then, make the Chart more informative with the following elements.
 
 - [Legend](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/')
 - [Grid](/concepts/05%20Widgets/Chart/55%20Grid/00%20Grid.md '/Documentation/Guide/UI_Components/Chart/Grid/')

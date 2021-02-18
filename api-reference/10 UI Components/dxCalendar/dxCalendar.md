@@ -6,7 +6,7 @@ inherits: Editor
 ---
 ---
 ##### shortDescription
-The **Calendar** is a UI component that displays a calendar and allows an end user to select the required date within a specified date range.
+The Calendar is a UI component that displays a calendar and allows an end user to select the required date within a specified date range.
 
 ##### widgettree
 

@@ -1,4 +1,4 @@
-A custom function is useful when advanced formatting is required. The value to be formatted is passed to the function as the argument. In the following example, a custom function combines absolute and percentage values for the **Slider** UI component's tooltip:
+A custom function is useful when advanced formatting is required. The value to be formatted is passed to the function as the argument. In the following example, a custom function combines absolute and percentage values for the Slider UI component's tooltip:
 
 ---
 ##### jQuery

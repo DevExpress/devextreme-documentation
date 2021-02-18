@@ -36,6 +36,8 @@ The row's old data.
 ---
 [note]
 
+Please review the following notes:
+
 - Use this function to perform checks before data is updated. If you need to implement a custom update logic, implement [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [update](Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function.
 
 - In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.

@@ -7,8 +7,8 @@
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             onRowUpdating: function(e) {
-                var deferred = $.Deferred();
-                var promptPromise = DevExpress.ui.dialog.confirm("Are you sure?", "Confirm");
+                const deferred = $.Deferred();
+                const promptPromise = DevExpress.ui.dialog.confirm("Are you sure?", "Confirm changes");
                 promptPromise.done((dialogResult) => {
                     if (dialogResult) {
                         let params = "";
@@ -21,7 +21,7 @@
                             dataType: "json",
                             data: params,
                             success: function(validationResult) {
-                            !validationResult.errorText ? deferred.resolve(false) : deferred.reject(validationResult.errorText);
+                                !validationResult.errorText ? deferred.resolve(false) : deferred.reject(validationResult.errorText);
                             },
                             error: function() {
                                 deferred.reject("Data Loading Error");
@@ -29,7 +29,7 @@
                             timeout: 5000
                         });
                     } else {
-                    deferred.resolve(true);              
+                        deferred.resolve(true);              
                     }
                 });
                 e.cancel = deferred.promise();
@@ -77,7 +77,7 @@
 
     <!-- tab: app.module.ts -->
     // ... 
-    import { DxDataGridModule } from 'devextreme-angular'; 
+    import { Dx{WidgetName}Module } from 'devextreme-angular'; 
     import { HttpClientModule } from "@angular/common/http";
 
     @NgModule({
@@ -93,9 +93,9 @@
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ...
+        <Dx{WidgetName} ...
             @row-updating="updateRow">
-        </DxDataGrid>
+        </Dx{WidgetName}>
     </template>
     <script>
     import Dx{WidgetName}, { ... } from 'devextreme-vue/{widget-name}';
@@ -104,7 +104,7 @@
 
     export default {
         components: {
-            DxDataGrid,
+            Dx{WidgetName},
             // ...
         },
         // ...
@@ -169,10 +169,10 @@
 
     function App() {
     return (
-        <DataGrid ...
+        <{WidgetName} ...
             onRowUpdating={onRowUpdating}>
             // ...
-        </DataGrid>
+        </{WidgetName}>
     );
     }
 

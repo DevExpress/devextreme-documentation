@@ -49,7 +49,7 @@ You can pass the date to the **scrollToDate** method in the following formats:
 
     ---
 
-Note that the **scrollToDate** method scrolls to a date inside the current scroll area. You can zoom in and out the chart to resize the viewport.
+Note that the **scrollToDate** method scrolls to a date inside the current scroll area. You can zoom the chart to resize the viewport.
 
 ---
 ##### jQuery

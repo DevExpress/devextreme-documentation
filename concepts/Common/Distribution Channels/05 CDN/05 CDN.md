@@ -9,10 +9,8 @@ DevExtreme sources are available on cdnjs:
     <!-- DevExtreme Quill (required by the HtmlEditor UI component) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-quill/cdnjs_version/dx-quill.min.js"></script>
 
-    <!-- DevExtreme libraries (reference only one of them) -->
+    <!-- DevExtreme library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.viz.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.web.js"></script>
 
     <!-- DevExpress.AspNet.Data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-aspnet-data/cdnjs_version/dx.aspnet.data.min.js"></script>

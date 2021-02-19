@@ -1,4 +1,4 @@
-Exposes the **Button** UI component.
+Exposes the Button UI component.
 
 Exports:
 

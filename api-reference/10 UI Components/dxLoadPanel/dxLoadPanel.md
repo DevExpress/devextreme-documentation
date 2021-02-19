@@ -6,7 +6,7 @@ inherits: dxOverlay
 ---
 ---
 ##### shortDescription
-The **LoadPanel** is an overlay UI component notifying the viewer that loading is in progress.
+The LoadPanel is an overlay UI component notifying the viewer that loading is in progress.
 
 ##### widgettree
 visible: true

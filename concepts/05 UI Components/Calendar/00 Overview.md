@@ -1,10 +1,10 @@
-The **Calendar** is a UI component that displays a calendar and allows an end user to select the required date within a specified date range.
+The Calendar is a UI component that displays a calendar and allows an end user to select the required date within a specified date range.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 
-The following code adds a simple **Calendar** to your page.
+The following code adds a simple Calendar to your page.
 
 ---
 ##### jQuery
@@ -88,7 +88,7 @@ The following code adds a simple **Calendar** to your page.
 
 ---
 
-The **Calendar** accepts values of the following formats: <a href="http://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">dates</a>, numeric values specifying the number of milliseconds since January 1, 1970, 00:00:00, and strings that match the following patterns: `'yyyy-MM-dd'`, `'yyyy-MM-ddTHH:mm:ss'`, `'yyyy-MM-ddTHH:mm:ssZ'`, or `'yyyy-MM-ddTHH:mm:ssx'`. Note that in code, the format stays the same until a value of a different format is assigned to the **value** property. For example, numbers remain numbers until you pass a string to the **value** property.
+The Calendar accepts values of the following formats: <a href="http://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">dates</a>, numeric values specifying the number of milliseconds since January 1, 1970, 00:00:00, and strings that match the following patterns: `'yyyy-MM-dd'`, `'yyyy-MM-ddTHH:mm:ss'`, `'yyyy-MM-ddTHH:mm:ssZ'`, or `'yyyy-MM-ddTHH:mm:ssx'`. Note that in code, the format stays the same until a value of a different format is assigned to the **value** property. For example, numbers remain numbers until you pass a string to the **value** property.
 
 To specify which day should be considered the beginning of the week, pass its index (0 - for Sunday, 1 - for Monday, and so on) to the [firstDayOfWeek](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/firstDayOfWeek.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#firstDayOfWeek') property.
 

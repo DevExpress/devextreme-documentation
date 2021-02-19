@@ -10,9 +10,9 @@ A custom template's markup.
 dx.web.js, dx.viz-web.js, dx.all.js
 
 ---
-The **dxTemplate** markup component specifies a custom template for a container UI component or a collection UI component's items in Angular, AngularJS and Knockout apps. Place this template within the UI component's element, specify the template [name](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate/1%20Configuration/name.md '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/Configuration/#name') and assign it to the corresponding **xxxTemplate** property (for example, **itemTemplate**, **containerTemplate**). You can omit specifying the **xxxTemplate** property if you use the default template name, for instance, *item* for the **itemTemplate**, *content* for the **contentTemplate**. 
+The dxTemplate markup component specifies a custom template for a container UI component or a collection UI component's items in Angular, AngularJS and Knockout apps. Place this template within the UI component's element, specify the template [name](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate/1%20Configuration/name.md '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/Configuration/#name') and assign it to the corresponding **xxxTemplate** property (for example, **itemTemplate**, **containerTemplate**). You can omit specifying the **xxxTemplate** property if you use the default template name, for instance, *item* for the **itemTemplate**, *content* for the **contentTemplate**. 
 
-Commonly, the **dxTemplate** is in the component's (Angular), scope's (AngularJS) or view model's (Knockout) binding context, but it can differ depending on the UI component element you specify the template for. See the corresponding **xxxTemplate** property description for more information on a specific template's binding context. Use <a href="http://knockoutjs.com/documentation/binding-context.html" target="_blank">Knockout</a> or <a href="https://docs.angularjs.org/guide/scope" target="_blank">AngularJS</a> binding variables if you need to access another binding context from the template.
+Commonly, the dxTemplate is in the component's (Angular), scope's (AngularJS) or view model's (Knockout) binding context, but it can differ depending on the UI component element you specify the template for. See the corresponding **xxxTemplate** property description for more information on a specific template's binding context. Use <a href="http://knockoutjs.com/documentation/binding-context.html" target="_blank">Knockout</a> or <a href="https://docs.angularjs.org/guide/scope" target="_blank">AngularJS</a> binding variables if you need to access another binding context from the template.
 
 ---
 
@@ -210,7 +210,7 @@ When you specify an item template in Knockout apps, you can bind this template's
 
 ---
 
-In AngularJs and Knockout apps, you can define different templates intended for different devices. Specify the [device object's](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/') fields as the **dxTemplate**'s markup properties to set a target device for a template. 
+In AngularJs and Knockout apps, you can define different templates intended for different devices. Specify the [device object's](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/') fields as the dxTemplate's markup properties to set a target device for a template. 
 
     <!--JavaScript-->
     <div data-options="dxTemplate: { name: 'item', platform: 'ios', phone: true }">

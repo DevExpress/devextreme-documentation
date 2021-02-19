@@ -1,4 +1,4 @@
-A constant line is a straight line that extends over the entire **Chart** and indicates an axis value. Constant lines are always perpendicular to the axis to which they belong. 
+A constant line is a straight line that extends over the entire Chart and indicates an axis value. Constant lines are always perpendicular to the axis to which they belong. 
 
 ![DevExtreme HTML5 JavaScript Charts ConstantLines](/images/ChartJS/visual_elements/constant_lines.png)
 
@@ -125,7 +125,7 @@ Style for constant lines belonging to the argument axis.
 Style for constant lines belonging to the value axis.
 
 - **commonAxisSettings**.[constantLineStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/constantLineStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/constantLineStyle/')         
-Style for all constant lines in the **Chart**.
+Style for all constant lines in the Chart.
 
 Note that individual settings override axis-specific settings which, in turn, override common settings.
 

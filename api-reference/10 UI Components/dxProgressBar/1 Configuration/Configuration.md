@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **ProgressBar** UI component.
+An object defining configuration properties for the ProgressBar UI component.
 
 ---
 #####See Also#####

@@ -7,7 +7,7 @@ type: function(fieldInfo)
 Customizes the field value's text representation.
 
 ##### param(fieldInfo): Object
-Information about a **FilterBuilder** field.
+Information about a FilterBuilder field.
 
 ##### field(fieldInfo.field): dxFilterBuilderField
 The field's configuration.

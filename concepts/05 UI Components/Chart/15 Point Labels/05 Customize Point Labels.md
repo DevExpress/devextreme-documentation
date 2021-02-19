@@ -112,7 +112,7 @@ If you need to change the text displayed by point labels, declare the [customize
 
 ---
 
-You can also customize an individual label. For this purpose, assign a function to the [customizeLabel](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeLabel.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeLabel') property. This function must return an object with properties for the label that you want to customize. Note that the **customizeLabel** property should be declared at the root level of the **Chart** configuration.
+You can also customize an individual label. For this purpose, assign a function to the [customizeLabel](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeLabel.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeLabel') property. This function must return an object with properties for the label that you want to customize. Note that the **customizeLabel** property should be declared at the root level of the Chart configuration.
 
 ---
 ##### jQuery

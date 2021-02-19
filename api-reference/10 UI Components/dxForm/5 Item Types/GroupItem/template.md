@@ -7,10 +7,10 @@ type: template
 A template to be used for rendering a group item.
 
 ##### param(data): Object
-Information about the **Form**.
+Information about the Form.
 
 ##### field(data.component): dxForm
-The **Form** instance.
+The Form instance.
 
 ##### field(data.formData): Object
 The [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object.

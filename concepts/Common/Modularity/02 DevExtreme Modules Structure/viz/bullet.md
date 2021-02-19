@@ -1,4 +1,4 @@
-Exposes the **Bullet** UI component.
+Exposes the Bullet UI component.
 
 Exports:
 

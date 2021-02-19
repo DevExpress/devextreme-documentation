@@ -1,4 +1,4 @@
-Titles and subtitles are textual elements that provide an overview of what the **Funnel** visualizes.
+Titles and subtitles are textual elements that provide an overview of what the Funnel visualizes.
 
 ![Funnel Title and Subtitle](/images/funnel/visual_elements/funnel-title.png)
 

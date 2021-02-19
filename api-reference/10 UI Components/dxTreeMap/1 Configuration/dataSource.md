@@ -10,7 +10,7 @@ Binds the UI component to data.
 ---
 If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
-The **TreeMap** works with collections of objects. 
+The TreeMap works with collections of objects. 
 
 Objects that have a plain structure are visualized by tiles. For example, the following array of objects produces four tiles:
 
@@ -65,7 +65,7 @@ A plain data array can imply a hierarchical structure. An example of such array 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FlatDataStructure/"
 }
 
-Depending on your data source, bind the **TreeMap** to data as follows.
+Depending on your data source, bind the TreeMap to data as follows.
 
 - **Data Array**        
 Assign the array to the **dataSource** property. 
@@ -208,7 +208,7 @@ Use one of the following extensions to enable the server to process data accordi
 - **Any other data source**     
 Implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/').
 
-Regardless of the data source on the input, the **TreeMap** always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#getDataSource') method.
+Regardless of the data source on the input, the TreeMap always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object. This object allows you to sort, filter, group, and perform other data shaping operations. To get its instance, call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#getDataSource') method.
 
 [note]
 

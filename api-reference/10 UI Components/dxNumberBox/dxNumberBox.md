@@ -6,7 +6,7 @@ inherits: dxTextEditor
 ---
 ---
 ##### shortDescription
-The **NumberBox** is a UI component that displays a numeric value and allows a user to modify it by typing in a value, and incrementing or decrementing it using the keyboard or mouse.
+The NumberBox is a UI component that displays a numeric value and allows a user to modify it by typing in a value, and incrementing or decrementing it using the keyboard or mouse.
 
 ##### widgettree
 

@@ -1,4 +1,4 @@
-Declare the array <a href="http://knockoutjs.com/documentation/observableArrays.html" target="_blank">observable</a> and bind the **dataSource** property to it. Whenever an item is added or removed from this array, the **PieChart** will be updated accordingly.
+Declare the array <a href="http://knockoutjs.com/documentation/observableArrays.html" target="_blank">observable</a> and bind the **dataSource** property to it. Whenever an item is added or removed from this array, the PieChart will be updated accordingly.
 
     <!--HTML--><div id="pieChartContainer" data-bind="dxPieChart: {
         dataSource: fruits

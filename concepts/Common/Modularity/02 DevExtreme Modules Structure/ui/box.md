@@ -1,4 +1,4 @@
-Exposes the **Box** UI component.
+Exposes the Box UI component.
 
 Exports:
 

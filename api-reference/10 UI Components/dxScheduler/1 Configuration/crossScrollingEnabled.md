@@ -8,4 +8,4 @@ default: false
 Specifies whether or not an end-user can scroll the view in both directions at the same time.
 
 ---
-This property is useful when displaying **Scheduler** on narrow screens.
+This property is useful when displaying Scheduler on narrow screens.

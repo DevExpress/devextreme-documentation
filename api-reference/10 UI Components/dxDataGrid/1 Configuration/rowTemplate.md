@@ -10,7 +10,7 @@ Specifies a custom template for rows.
 #include common-ref-elementparam with { element: "row" }
 
 ##### param(rowInfo): Object
-The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') object extended by the **DataGrid**'s instance (the **component** field) and column configuration (**columns**).
+The [Row](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') object extended by the DataGrid's instance (the **component** field) and column configuration (**columns**).
 
 ---
 The following details should be taken into account when you use a **rowTemplate**:
@@ -19,7 +19,7 @@ The following details should be taken into account when you use a **rowTemplate*
 
 - You should implement the following features manually: [editing](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/editRow(rowIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#editRowrowIndex'), [adaptability](/concepts/05%20Widgets/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/'), [multiple selection](/concepts/05%20Widgets/DataGrid/50%20Selection/20%20API '/Documentation/Guide/UI_Components/DataGrid/Selection/#API'), and [master-detail interface](/concepts/05%20Widgets/DataGrid/60%20Master-Detail%20Interface/20%20API.md '/Documentation/Guide/UI_Components/DataGrid/Master-Detail_Interface/#API'). Follow the links to see the API that can help you with this task.
 
-- When the **DataGrid** is [exported](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. Use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function to do this.
+- When the DataGrid is [exported](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. Use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function to do this.
 
 In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') and declare it within a `<table>` element. In other cases, declare the markup in a `<tbody>` element with the `dx-row` class.
 
@@ -131,7 +131,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Widgets
 
     class Row extends React.PureComponent {
         render() {
-            const {Â data:Â {Â id,Â nameÂ }Â } = this.props.data;
+            const { data: { id, name } } = this.props.data;
             return (
                 <tbody className={"dx-row"}>
                     <tr>

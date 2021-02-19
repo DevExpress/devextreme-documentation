@@ -5,7 +5,7 @@ default: '#C0BAE1'
 ---
 ---
 ##### shortDescription
-Specifies the background color for the **RangeSelector**.
+Specifies the background color for the RangeSelector.
 
 ---
 You may need to use this property in the following cases:

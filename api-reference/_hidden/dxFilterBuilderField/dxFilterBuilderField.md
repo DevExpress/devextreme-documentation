@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-The **FilterBuilder**'s field structure.
+The FilterBuilder's field structure.
 
 ---
 #include common-demobutton with {

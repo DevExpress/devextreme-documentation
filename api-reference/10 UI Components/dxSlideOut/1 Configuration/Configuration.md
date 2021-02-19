@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **SlideOut** UI component.
+An object defining configuration properties for the SlideOut UI component.
 
 ---
 #####See Also#####

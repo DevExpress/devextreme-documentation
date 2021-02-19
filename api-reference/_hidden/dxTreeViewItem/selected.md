@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the **TreeView** item should be displayed as selected.
+Specifies whether the TreeView item should be displayed as selected.
 
 ---
 

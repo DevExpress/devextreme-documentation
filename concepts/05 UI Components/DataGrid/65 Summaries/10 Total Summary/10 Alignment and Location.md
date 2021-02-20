@@ -49,4 +49,62 @@ A summary item is under the [column providing data](/api-reference/10%20UI%20Wid
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary>
+                <DxTotalItem
+                    column="Amount"
+                    summary-type="avg"
+                    show-in-column="StoreCity"
+                    alignment="center" />     <!-- or "left" | "right" -->
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSummary,
+        DxTotalItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxSummary,
+            DxTotalItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Summary,
+        TotalItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Summary>
+                    <TotalItem
+                        column="Amount"
+                        summaryType="avg"
+                        showInColumn="StoreCity"
+                        alignment="center" /> {/* or "left" | "right" */}
+                </Summary>
+            </DataGrid>
+        );
+    }
+
 ---

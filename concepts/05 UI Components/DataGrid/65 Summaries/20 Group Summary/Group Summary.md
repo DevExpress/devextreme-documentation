@@ -64,6 +64,85 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="OrderNumber" />
+            <DxColumn data-field="Price" />
+            <DxSummary>
+                <DxGroupItem
+                    column="OrderNumber"
+                    summary-type="count"
+                />
+                <DxGroupItem
+                    column="Price"
+                    summary-type="sum"
+                />
+                <DxGroupItem
+                    column="Price"
+                    summary-type="max"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxSummary,
+        DxGroupItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxColumn,
+            DxSummary,
+            DxGroupItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column, 
+        Summary,
+        GroupItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="OrderNumber" />
+                <Column dataField="Price" />
+                <Summary>
+                    <GroupItem
+                        column="OrderNumber"
+                        summaryType="count"
+                    />
+                    <GroupItem
+                        column="Price"
+                        summaryType="sum"
+                    />
+                    <GroupItem
+                        column="Price"
+                        summaryType="max"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
+
 ---
 
 #include common-demobutton with {

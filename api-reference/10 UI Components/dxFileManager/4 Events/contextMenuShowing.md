@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before the context menu is rendered.
 
 ---
-<!-- Description goes here -->
+Main article: [onContextMenuShowing](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onContextMenuShowing)

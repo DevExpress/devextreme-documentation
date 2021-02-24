@@ -1,4 +1,4 @@
-In the **VectorMap** UI component, when a user hovers the mouse pointer over a map element (an area or a marker), this element changes its appearance. This state of the element is called "hovered state".
+In the VectorMap UI component, when a user hovers the mouse pointer over a map element (an area or a marker), this element changes its appearance. This state of the element is called "hovered state".
 
 Of all map elements, only areas and markers can be in the hovered state. To learn how to configure their hover-related features, see the [Area Hover](/concepts/05%20Widgets/VectorMap/40%20End-User%20Interaction/30%20Hovering/20%20Area%20Hover.md '/Documentation/Guide/UI_Components/VectorMap/End-User_Interaction/#Hovering/Area_Hover') and [Marker Hover](/concepts/05%20Widgets/VectorMap/40%20End-User%20Interaction/30%20Hovering/30%20Marker%20Hover.md '/Documentation/Guide/UI_Components/VectorMap/End-User_Interaction/#Hovering/Marker_Hover') topics.
 

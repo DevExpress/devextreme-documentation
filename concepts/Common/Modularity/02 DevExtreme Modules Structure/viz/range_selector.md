@@ -1,4 +1,4 @@
-Exposes the **RangeSelector** UI component.
+Exposes the RangeSelector UI component.
 
 Exports:
 

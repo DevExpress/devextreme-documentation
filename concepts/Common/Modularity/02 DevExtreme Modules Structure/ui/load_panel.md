@@ -1,4 +1,4 @@
-Exposes the **LoadPanel** UI component.
+Exposes the LoadPanel UI component.
 
 Exports:
 

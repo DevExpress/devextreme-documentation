@@ -9,7 +9,7 @@ default: undefined
 Specifies the colorizing algorithm.
 
 ---
-The **TreeMap** UI component provides three algorithms for tile colorization: *"discrete"*, *"gradient"* and *"range"*.
+The TreeMap UI component provides three algorithms for tile colorization: *"discrete"*, *"gradient"* and *"range"*.
 
 The *"discrete"* algorithm is the simplest of all. It paints each tile within a group in a color taken from the [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/colorizer/palette.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/#palette'). When there are several groups, colorization begins from scratch in each. Alternatively, you can force the UI component to continue colorization across groups. For this purpose, set the [colorizeGroups](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/colorizer/colorizeGroups.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/#colorizeGroups') property to **true**. It will colorize not each tile, but each group of tiles in a single color taken from the palette.
 

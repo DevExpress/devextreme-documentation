@@ -1,4 +1,4 @@
-Exposes the **Autocomplete** UI component.
+Exposes the Autocomplete UI component.
 
 Exports:
 

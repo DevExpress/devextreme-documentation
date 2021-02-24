@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the path that is used when the **FileManager** is initialized.
+Specifies the path that is used when the FileManager is initialized.
 
 ---
 #include common-demobutton with {

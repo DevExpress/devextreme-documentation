@@ -1,4 +1,4 @@
-Exposes the **ActionSheet** UI component.
+Exposes the ActionSheet UI component.
 
 Exports:
 

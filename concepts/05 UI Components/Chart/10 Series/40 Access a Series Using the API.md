@@ -1,7 +1,7 @@
-The **Chart** exposes the following methods for accessing a series. All of them return one or several objects whose fields and methods are described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') section of the API reference.
+The Chart exposes the following methods for accessing a series. All of them return one or several objects whose fields and methods are described in the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') section of the API reference.
 
 - [getAllSeries()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/getAllSeries().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#getAllSeries')        
-Gets all series of the **Chart**.
+Gets all series of the Chart.
 
     ---
     ##### jQuery

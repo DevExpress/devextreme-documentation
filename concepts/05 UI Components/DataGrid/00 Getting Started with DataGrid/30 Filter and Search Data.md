@@ -1,4 +1,4 @@
-The **DataGrid** includes the following UI elements used to filter and search data:
+The DataGrid includes the following UI elements used to filter and search data:
 
 - [filterRow](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/)
 - [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/)

@@ -110,7 +110,7 @@ Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/d
 
 ---
 
-Run the code, open the browser's console, and select or clear the button selection in the **ButtonGroup**. You should see messages like the following:
+Run the code, open the browser's console, and select or clear the button selection in the ButtonGroup. You should see messages like the following:
 
     The following style is added: underline
     The following style is removed: bold

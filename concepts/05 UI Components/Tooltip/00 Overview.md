@@ -1,10 +1,10 @@
-The **Tooltip** UI component displays a tooltip for a specified element on the page.
+The Tooltip UI component displays a tooltip for a specified element on the page.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview/"
 }
 
-The following code creates a simple **Tooltip** on your page and attaches it to another element (in this example, to an image).
+The following code creates a simple Tooltip on your page and attaches it to another element (in this example, to an image).
 
 ---
 ##### jQuery

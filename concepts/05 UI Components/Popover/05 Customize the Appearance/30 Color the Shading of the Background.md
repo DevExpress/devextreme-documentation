@@ -1,4 +1,4 @@
-When the **Popover** is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shadingColor') property.
+When the Popover is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shadingColor') property.
 
 ---
 ##### jQuery 

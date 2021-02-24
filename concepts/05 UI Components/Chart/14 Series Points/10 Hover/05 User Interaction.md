@@ -6,7 +6,7 @@ When a user pauses on a series point, it changes its style to the one specified 
 The hover style for all points of an individual series.
 
 - **commonSeriesSettings**.**point**.[hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/point/hoverStyle/')       
-The hover style for all series points in the **Chart**. Individual series settings override common settings.
+The hover style for all series points in the Chart. Individual series settings override common settings.
 
 ---
 ##### jQuery
@@ -143,7 +143,7 @@ The hover style for all series points in the **Chart**. Individual series settin
 
 ---
 
-To choose which series elements should be highlighted when a user pauses on a series point, specify the [hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#hoverMode') property. Just like **hoverStyle** above, this property can be specified for all points belonging to an individual series or for all series points in the **Chart**.
+To choose which series elements should be highlighted when a user pauses on a series point, specify the [hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#hoverMode') property. Just like **hoverStyle** above, this property can be specified for all points belonging to an individual series or for all series points in the Chart.
 
 ---
 ##### jQuery

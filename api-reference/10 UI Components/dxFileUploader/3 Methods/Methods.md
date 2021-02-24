@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes methods that manage the **FileUploader** UI component.
+This section describes methods that manage the FileUploader UI component.
 
 ---

@@ -1,4 +1,4 @@
-Exposes the **Drawer** UI component.
+Exposes the Drawer UI component.
 
 Exports:
 

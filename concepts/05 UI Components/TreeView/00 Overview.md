@@ -1,10 +1,10 @@
-The **TreeView** UI component is a tree-like representation of textual data.
+The TreeView UI component is a tree-like representation of textual data.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/"
 }
 
-The following code adds a simple **TreeView** to your page:
+The following code adds a simple TreeView to your page:
 
 ---
 ##### jQuery

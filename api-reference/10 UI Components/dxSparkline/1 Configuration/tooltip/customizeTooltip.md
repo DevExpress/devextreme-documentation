@@ -4,7 +4,7 @@
 ---
 #include dataviz-customize-tooltip-return
 
-You can access the following fields of the **Sparkline**:
+You can access the following fields of the Sparkline:
 
 <table class="dx-table full-width">
     <tr>

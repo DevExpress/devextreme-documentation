@@ -10,7 +10,7 @@ An object defining configuration properties for a selected point.
 dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.scatterpolarseries
 
 ---
-The **PolarChart** UI component comes with API members that allow you to select a point in code. To set a custom 'selected' style for points in all series at once, use the **point**.**selectionStyle** object within the **commonSeriesSettings** configuration object.
+The PolarChart UI component comes with API members that allow you to select a point in code. To set a custom 'selected' style for points in all series at once, use the **point**.**selectionStyle** object within the **commonSeriesSettings** configuration object.
 
 If you have several series of one type, you can set point selection style properties to the values specific to the series type using the corresponding object (**area**, **line** or another) within the **commonSeriesSettings** configuration object. The values that are set within series-type-specific configuration objects override the corresponding common values.
 

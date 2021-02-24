@@ -6,7 +6,7 @@ firedEvents: fieldDataChanged
 ---
 ---
 ##### shortDescription
-Provides the **Form**'s data. Gets updated every time form fields change.
+Provides the Form's data. Gets updated every time form fields change.
 
 ---
 #include common-demobutton with {

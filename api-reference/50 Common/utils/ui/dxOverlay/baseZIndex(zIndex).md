@@ -20,9 +20,9 @@ The following example demonstrates how to call the method.
     import * as overlay from 'devextreme/ui/overlay';
     overlay.baseZIndex(2000);
 
-By default, the base z-index for all overlay UI components except **Toast** is 1500.
+By default, the base z-index for all overlay UI components except Toast is 1500.
 
-[note]The base z-index for **Toast** UI components is greater than the value specified by this method by 8000. For example, if you pass 2000 to the **baseZIndex** method, the **Toast** base z-index is 10000.
+[note]The base z-index for Toast UI components is greater than the value specified by this method by 8000. For example, if you pass 2000 to the **baseZIndex** method, the Toast base z-index is 10000.
 
 The method affects the following UI components.
 

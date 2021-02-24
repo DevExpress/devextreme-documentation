@@ -6,11 +6,11 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies the zoom level of tasks in the **Gantt** chart.
+Specifies the zoom level of tasks in the Gantt chart.
 
 ---
 
-The **scaleType** property specifies the zoom level for tasks when the **Gantt** UI component is initialized or when you call the **option()** method.
+The **scaleType** property specifies the zoom level for tasks when the Gantt UI component is initialized or when you call the **option()** method.
 
 ---
 
@@ -26,6 +26,6 @@ The **scaleType** property specifies the zoom level for tasks when the **Gantt**
 
 ---
 
-If the **scaleType** property is set to *"auto"*, the UI component is scaled to fit all tasks in the **Gantt** chart's visible area. 
+If the **scaleType** property is set to *"auto"*, the UI component is scaled to fit all tasks in the Gantt chart's visible area. 
 
 To browse tasks across various levels of detail in real time, hold the CTRL key and scroll the mouse wheel to zoom (in or out).

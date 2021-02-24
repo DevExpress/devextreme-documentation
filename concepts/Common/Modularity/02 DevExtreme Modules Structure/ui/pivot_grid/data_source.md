@@ -1,4 +1,4 @@
-Exposes an object that provides acess to data for the **PivotGrid** data. 
+Exposes an object that provides acess to data for the PivotGrid data. 
 
 Exports:
 

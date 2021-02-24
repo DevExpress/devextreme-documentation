@@ -1,4 +1,4 @@
-Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the **DataGrid** to data an OData service supplies. It provides an interface for loading and editing data and allows you to handle data-related events.
+Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the DataGrid to data an OData service supplies. It provides an interface for loading and editing data and allows you to handle data-related events.
 
 ---
 
@@ -96,7 +96,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 
 ---
 
-[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the **DataGrid**. See this property's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
+[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the DataGrid. See this property's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
 
 Using the following features with the **ODataStore** may decrease the performance because they initiate data loading for all pages:
 

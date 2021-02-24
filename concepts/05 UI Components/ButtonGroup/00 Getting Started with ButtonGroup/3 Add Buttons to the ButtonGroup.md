@@ -141,4 +141,4 @@ Assign the array to the [items](/api-reference/10%20UI%20Widgets/dxButtonGroup/1
 
 ---
 
-If you run the code, you should see a **ButtonGroup** that contains four buttons but nothing happens when you click any of them.
+If you run the code, you should see a ButtonGroup that contains four buttons but nothing happens when you click any of them.

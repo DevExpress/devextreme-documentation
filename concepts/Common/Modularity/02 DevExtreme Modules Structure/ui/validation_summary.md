@@ -1,4 +1,4 @@
-Exposes the **ValidationSummary** UI component.
+Exposes the ValidationSummary UI component.
 
 Exports:
 

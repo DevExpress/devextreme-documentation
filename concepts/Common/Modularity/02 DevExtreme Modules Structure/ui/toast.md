@@ -1,4 +1,4 @@
-Exposes the **Toast** UI component.
+Exposes the Toast UI component.
 
 Exports:
 

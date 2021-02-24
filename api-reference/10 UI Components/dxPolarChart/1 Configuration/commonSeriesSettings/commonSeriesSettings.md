@@ -7,7 +7,7 @@ inheritAll:
 ---
 ---
 ##### shortDescription
-An object defining the configuration properties that are common for all series of the **PolarChart** UI component.
+An object defining the configuration properties that are common for all series of the PolarChart UI component.
 
 ---
 Use this object's properties to set properties for all chart series at once. These can be properties common to all series types and properties specific to series types.

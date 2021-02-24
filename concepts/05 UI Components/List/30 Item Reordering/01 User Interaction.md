@@ -1,4 +1,4 @@
-If you want to allow the user to reorder items on the List, define the the [itemDragging](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging) property, and within it set the [allowReordering](/Documentation/ApiReference/UI_Components/dxSortable/Configuration/#allowReordering) property to **true**. This setting supplies each List item with a button that enables the user to move the item with drag and drop on mouse-equipped platforms or with touch-and-drag on touch-enabled devices.
+If you want to allow the user to reorder items on the List, define the [itemDragging](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging) object and set the [allowReordering](/Documentation/ApiReference/UI_Components/dxSortable/Configuration/#allowReordering) property within it to **true**. This setting supplies each List item with a button that enables the user to move the item with drag and drop on mouse-equipped platforms or with touch-and-drag on touch-enabled devices.
 
 ---
 ##### jQuery

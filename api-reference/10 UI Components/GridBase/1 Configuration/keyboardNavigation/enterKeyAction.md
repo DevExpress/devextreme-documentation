@@ -6,7 +6,7 @@ default: 'startEdit'
 ---
 ---
 ##### shortDescription
-Specifies whether the Enter key switches the cell to the editing state or moves focus in the [enterKeyDirection](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/keyboardNavigation/enterKeyDirection.md '{basewidgetpath}/Configuration/keyboardNavigation/#enterKeyDirection'). Applies if **editing**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode') is *"cell"* or *"batch"*.
+Specifies whether the Enter key switches the cell or row to the editing state or moves focus in the [enterKeyDirection](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/keyboardNavigation/enterKeyDirection.md '{basewidgetpath}/Configuration/keyboardNavigation/#enterKeyDirection'). Applies if **editing**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode') is *"cell"*, *"batch"*, *"row"*, or *"form"*.
 
 ---
 #include common-demobutton with {

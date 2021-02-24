@@ -17,8 +17,8 @@ If you want to allow the user to reorder items on the List, define the [itemDrag
 
     <!--HTML-->
     <dx-list ...>
-        <dxo-item-dragging...
-            [allowReordering]="true"
+        <dxo-item-dragging
+            [allowReordering]="true">
         </dxo-item-dragging>
     </dx-list>
 

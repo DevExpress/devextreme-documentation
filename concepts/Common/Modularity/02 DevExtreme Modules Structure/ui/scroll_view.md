@@ -1,4 +1,4 @@
-Exposes the **ScrollView** UI component.
+Exposes the ScrollView UI component.
 
 Exports:
 

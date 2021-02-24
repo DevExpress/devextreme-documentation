@@ -25,7 +25,7 @@ The server should return data objects of the following structure:
 
 Fields in this structure have conventional names that you can change via **[fieldName]Expr** properties: [nameExpr](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/nameExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#nameExpr'), [sizeExpr](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/sizeExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#sizeExpr'), [dateModifiedExpr](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/dateModifiedExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#dateModifiedExpr'), and so on.
 
-The following code shows how to bind the **FileManager** to the **Remote** file system provider:
+The following code shows how to bind the FileManager to the **Remote** file system provider:
 
 ---
 ##### jQuery

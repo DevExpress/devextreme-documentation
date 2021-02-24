@@ -1,4 +1,4 @@
-Major scale ticks can be accompanied by scale labels. These labels display scale values. Scale labels are designed to make data represented by the **CircularGauge** more comprehensible.
+Major scale ticks can be accompanied by scale labels. These labels display scale values. Scale labels are designed to make data represented by the CircularGauge more comprehensible.
 
 <img src="/images/ChartJS/CircularGaugeScaleLabels.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeScaleLabels" style="display:block; margin:0 auto" />
 

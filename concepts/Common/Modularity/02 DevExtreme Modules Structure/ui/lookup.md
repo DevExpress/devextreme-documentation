@@ -1,4 +1,4 @@
-Exposes the **Lookup** UI component.
+Exposes the Lookup UI component.
 
 Exports:
 

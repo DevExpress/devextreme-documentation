@@ -40,7 +40,7 @@ The application already contains the [DataGrid](https://js.devexpress.com/Demos/
             }
         }
 
-If you go to the Home view in the browser, you should see the **Button**.
+If you go to the Home view in the browser, you should see the Button.
 
 For further information about DevExtreme Angular components, refer to the following resources:
 

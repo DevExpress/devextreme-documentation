@@ -264,7 +264,7 @@ The code below shows how to add a submit button, but does not show how to implem
 
 ---
 
-For further information on the **Form** UI component, refer to the following resources:
+For further information on the Form UI component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/)
 * [API Reference](/Documentation/ApiReference/UI_Components/dxForm/)

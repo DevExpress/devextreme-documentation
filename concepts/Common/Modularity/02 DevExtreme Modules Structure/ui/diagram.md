@@ -1,4 +1,4 @@
-Exposes the **Diagram** UI component.
+Exposes the Diagram UI component.
 
 Exports:
 

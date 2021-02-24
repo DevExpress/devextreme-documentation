@@ -1,4 +1,19 @@
-    <!-- tab: App.js -->
+    <!-- tab: Function component -->
+    import Button from 'devextreme-react/button';
+
+    export default function App() {
+        const handleButtonClick = (e) => {
+            alert("The button was clicked")
+        }
+
+        return (
+            <Button
+                onClick={handleButtonClick}
+            />
+        );
+    }
+    
+    <!-- tab: Class component -->
     import Button from 'devextreme-react/button';
 
     class App extends React.Component {

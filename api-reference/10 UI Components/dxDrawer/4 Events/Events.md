@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events that the **Drawer** UI component raises.
+This section describes events that the Drawer UI component raises.
 
 ---
 #####See Also#####

@@ -3,25 +3,25 @@ id: dxPivotGrid.bindChart(chart, integrationOptions)
 ---
 ---
 ##### shortDescription
-Binds a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') to the **PivotGrid**.
+Binds a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') to the PivotGrid.
 
 ##### return: function() | null
-Unbinds the **Chart**. If **null**, then binding failed.
+Unbinds the Chart. If **null**, then binding failed.
 
 ##### param(chart): String | jQuery | Object
-The **Chart** to be bound to the **PivotGrid**.    
-Accepts the **Chart**'s instance, <a href="http://api.jquery.com/Types/#jQuery" target="_blank">jQuery element</a> or container <a href="https://api.jquery.com/category/selectors/" target="_blank">selector</a>.
+The Chart to be bound to the PivotGrid.    
+Accepts the Chart's instance, <a href="http://api.jquery.com/Types/#jQuery" target="_blank">jQuery element</a> or container <a href="https://api.jquery.com/category/selectors/" target="_blank">selector</a>.
 
 ##### param(integrationOptions): Object
-The **Chart**'s configuration.
+The Chart's configuration.
 
 ##### field(integrationOptions.alternateDataFields): Boolean
 Default Value: **true**.   
 Specifies whether to alternate data fields in the resulting chart or not.   
-Applies only if the **PivotGrid** contains several data fields.
+Applies only if the PivotGrid contains several data fields.
 
 ##### field(integrationOptions.customizeChart): function()
-Allows you to customize the **Chart**'s appearance.
+Allows you to customize the Chart's appearance.
 
 ##### field(integrationOptions.customizeSeries): function()
 Allows you to customize the series.
@@ -34,14 +34,14 @@ Accepts one of the following values.
 - *"splitAxes"* - each data field gets an individual value axis. Applies only if **putDataFieldsInto** is *"series"*.  
 - *"splitPanes"* - each data field gets an individual [pane](/concepts/05%20Widgets/Chart/40%20Panes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Panes/Overview/'). Applies only if **putDataFieldsInto** is *"series"*.      
 
-Applies only if the **PivotGrid** contains several [data fields](/concepts/05%20Widgets/PivotGrid/020%20Fields%20and%20Areas/10%20Fields.md '/Documentation/Guide/UI_Components/PivotGrid/Fields_and_Areas/#Fields').
+Applies only if the PivotGrid contains several [data fields](/concepts/05%20Widgets/PivotGrid/020%20Fields%20and%20Areas/10%20Fields.md '/Documentation/Guide/UI_Components/PivotGrid/Fields_and_Areas/#Fields').
 
 ##### field(integrationOptions.inverted): Boolean
 Default Value: **false**.    
 If **true**, [row field](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers') values go to the [chart arguments](/concepts/05%20Widgets/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/') and [column field](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/02%20Headers.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Headers') values form [series](/concepts/05%20Widgets/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/'). If **false** - vice versa.
 
 ##### field(integrationOptions.processCell): function()
-Allows you to process cell data before the **Chart** visualizes it.
+Allows you to process cell data before the Chart visualizes it.
 
 ##### field(integrationOptions.putDataFieldsInto): String
 Default Value: *"series"*.   

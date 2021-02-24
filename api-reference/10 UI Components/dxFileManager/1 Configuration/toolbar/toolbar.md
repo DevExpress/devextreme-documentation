@@ -15,7 +15,7 @@ Configures toolbar settings.
 
 ![DevExtreme File Manager - Toolbar](/images/FileManager/toolbar.png)
 
-The **FileManager** UI component allows you to add default and custom toolbar items.
+The FileManager UI component allows you to add default and custom toolbar items.
 
 **Predefined Items**
 

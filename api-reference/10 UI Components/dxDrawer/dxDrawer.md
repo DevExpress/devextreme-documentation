@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **Drawer** is a dismissible or permanently visible panel used for navigation in responsive web application layouts.
+The Drawer is a dismissible or permanently visible panel used for navigation in responsive web application layouts.
 
 ---
 #include common-tutorialbutton with {

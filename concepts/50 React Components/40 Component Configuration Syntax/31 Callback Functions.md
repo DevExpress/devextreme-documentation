@@ -1,4 +1,21 @@
-    <!-- tab: App.js -->
+    <!-- tab: Function component -->
+    import VectorMap, { Layer } from 'devextreme-react/vector-map';
+
+    export default function App() {
+        const customizeLayers = (elements) => {
+            // ...
+        }
+
+        return (
+            <VectorMap>
+                <Layer
+                    customize={customizeLayers}
+                />
+            </VectorMap>
+        );
+    }
+    
+    <!-- tab: Class component -->
     import VectorMap, { Layer } from 'devextreme-react/vector-map';
 
     class App extends React.Component {
@@ -17,9 +34,9 @@
         }
     }
 
-Callback functions are executed _outside_ the React component's context. If the context is important, explicitly bind the callback function to it in the constructor.
+In class components, callback functions are executed _outside_ the React component's context. If the context is important, explicitly bind the callback function to it in the constructor.
 
-    <!-- tab: App.js -->
+    <!-- tab: Class component -->
     class App extends React.Component {
         myCountry: string = 'USA'; // we need to access this context variable in the callback function
 

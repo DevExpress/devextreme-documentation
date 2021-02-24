@@ -1,4 +1,4 @@
-The image below displays the **RangeSelector** element map. **Hover** over the image to show the **RangeSelector** element names. Click an element to navigate to a topic with more information.
+The image below displays the RangeSelector element map. **Hover** over the image to show the RangeSelector element names. Click an element to navigate to a topic with more information.
 
 <p><img style="margin:0px auto;display:block" src="/images/ChartJS/RangeSelectorElements.png" alt="" usemap="#rangeSelectorElements" /></p>
 	

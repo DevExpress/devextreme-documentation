@@ -1,4 +1,4 @@
-Exposes the **TreeMap** UI component.
+Exposes the TreeMap UI component.
 
 Exports:
 

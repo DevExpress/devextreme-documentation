@@ -1,10 +1,10 @@
-The **Form** UI component represents fields of a data object as a collection of label-editor pairs. These pairs can be arranged in several groups, tabs and columns.
+The Form UI component represents fields of a data object as a collection of label-editor pairs. These pairs can be arranged in several groups, tabs and columns.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
 }
 
-The following code adds the **Form** UI component to your page. The simplest configuration of this UI component includes only a data object. 
+The following code adds the Form UI component to your page. The simplest configuration of this UI component includes only a data object. 
 
 ---
 ##### jQuery

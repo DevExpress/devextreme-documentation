@@ -17,7 +17,7 @@ Usually, drilling down is performed when the user clicks a group of tiles in the
         }    
     };
     
-To implement drilling up, bind another UI component to **TreeMap**, e.g., [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/'). When the user clicks the button, the treemap navigates one level up using its **drillUp()** method. Alternatively, a click on the button may navigate the user straight to the root node using the [resetDrillDown()](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/3%20Methods/resetDrillDown().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#resetDrillDown') method of the treemap. Note that the following code configures the **onClick** handler of the button, not of the treemap.
+To implement drilling up, bind another UI component to TreeMap, e.g., [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/'). When the user clicks the button, the treemap navigates one level up using its **drillUp()** method. Alternatively, a click on the button may navigate the user straight to the root node using the [resetDrillDown()](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/3%20Methods/resetDrillDown().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#resetDrillDown') method of the treemap. Note that the following code configures the **onClick** handler of the button, not of the treemap.
 
     <!--JavaScript-->var buttonOptions = {
         // ...

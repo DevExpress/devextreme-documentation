@@ -1,10 +1,10 @@
-The **Funnel** is a UI component that visualizes a value at different stages in the form of a funnel. It helps assess value changes throughout these stages and identify potential issues.
+The Funnel is a UI component that visualizes a value at different stages in the form of a funnel. It helps assess value changes throughout these stages and identify potential issues.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
 }
 
-The **Funnel** can visualize data from any source. Refer to the following topics for details on how to bind the **Funnel** to your data source:
+The Funnel can visualize data from any source. Refer to the following topics for details on how to bind the Funnel to your data source:
 
 - [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')

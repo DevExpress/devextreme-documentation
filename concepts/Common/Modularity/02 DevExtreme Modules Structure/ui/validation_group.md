@@ -1,4 +1,4 @@
-Exposes the **ValidationGroup** UI component.
+Exposes the ValidationGroup UI component.
 
 Exports:
 

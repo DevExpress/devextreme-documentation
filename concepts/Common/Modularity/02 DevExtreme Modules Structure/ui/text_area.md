@@ -1,4 +1,4 @@
-Exposes the **TextArea** UI component.
+Exposes the TextArea UI component.
 
 Exports:
 

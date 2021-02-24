@@ -1,4 +1,4 @@
-To specify when the **Tooltip** should be shown and hidden, set the [showEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/showEvent/') and [hideEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/hideEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/hideEvent/') properties. These properties can accept several events at once as well as an object.
+To specify when the Tooltip should be shown and hidden, set the [showEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/showEvent/') and [hideEvent](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/hideEvent '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/hideEvent/') properties. These properties can accept several events at once as well as an object.
 
 ---
 ##### jQuery 
@@ -122,7 +122,7 @@ To specify when the **Tooltip** should be shown and hidden, set the [showEvent](
 
 ---
 
-The **Tooltip** can also be hidden when a user clicks outside it. To control this behavior of the **Tooltip**, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick') property.
+The Tooltip can also be hidden when a user clicks outside it. To control this behavior of the Tooltip, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick') property.
 
 ---
 ##### jQuery 

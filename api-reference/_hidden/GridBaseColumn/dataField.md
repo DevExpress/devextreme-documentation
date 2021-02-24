@@ -52,6 +52,59 @@ The **columns** array can contain only the names of data source fields, which is
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="CustomerID" />
+            <DxColumn data-field="EmployeeID" :width="200" />
+            <DxColumn data-field="OrderDate" />
+            <DxColumn data-field="Freight" format="fixedPoint" />
+            <DxColumn data-field="ShipName" />
+            <DxColumn data-field="ShipCity" />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column dataField="CustomerID" />
+                <Column dataField="EmployeeID" width={200} />
+                <Column dataField="OrderDate" />
+                <Column dataField="Freight" format="fixedPoint" />
+                <Column dataField="ShipName" />
+                <Column dataField="ShipCity" />
+            </{WidgetName}>
+        );
+    }
     
 ---
 

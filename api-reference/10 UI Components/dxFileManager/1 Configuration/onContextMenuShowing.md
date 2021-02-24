@@ -44,8 +44,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
         $("#file-manager").dxFileManager({
             // ...
             onContextMenuShowing: function (e) {
-                // your code
-                e.cancel = true;
+                if (e.viewArea == 'itemView'){
+                    // your code
+                    e.cancel = true;
+                }
             }
         });
     }); 
@@ -57,8 +59,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     // ...
     export class AppComponent {
         onContextMenuShowing(e) {
-            // your code
-            e.cancel = true;
+            if (e.viewArea == 'itemView'){
+                // your code
+                e.cancel = true;
+            }
         }
     }
     @NgModule({
@@ -95,8 +99,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
         },
         methods: {
             onContextMenuShowing(e) {
-                // your code
-                e.cancel = true;
+                if (e.viewArea == 'itemView'){
+                    // your code
+                    e.cancel = true;
+                }
             }
         }
     }
@@ -110,7 +116,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
 
     const App = () => {
         const onContextMenuShowing = (e) => {
-            // your code
+            if (e.viewArea == 'itemView'){
+                // your code
+                e.cancel = true;
+            }
         };
 
         return (
@@ -131,8 +140,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     )
     <script>
         function gantt_contextMenuShowing_handler(e) {
-            // your code
-            e.cancel = true;
+            if (e.viewArea == 'itemView'){
+                // your code
+                e.cancel = true;
+            }
         }
     </script>
 

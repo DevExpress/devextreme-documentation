@@ -11,7 +11,6 @@ To add a search bar to the **List**, set the [searchEnabled](/Documentation/ApiR
             searchMode: 'contains',
             searchExpr: ['Name'],
         });
-            // ...
     });
     
 ---

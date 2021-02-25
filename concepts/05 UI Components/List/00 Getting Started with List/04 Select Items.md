@@ -5,14 +5,10 @@ The **List** supports single and multiple selection modes. Use the [selectionMod
 
     <!-- tab: index.js -->
     $(function () {
-        $('#list1').dxList({
-            dataSource: new DevExpress.data.DataSource({
-                store: products,
-            }),
-            displayExpr: 'Name',
-        });
+        $('#list').dxList({
             // ...
             selectionMode: 'single',
+         });
     });
     
 ---

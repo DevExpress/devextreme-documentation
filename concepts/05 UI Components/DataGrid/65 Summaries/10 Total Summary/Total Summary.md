@@ -57,6 +57,77 @@ Configure each summary item in the **summary**.[totalItems](/api-reference/10%20
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="OrderNumber" />
+            <DxColumn data-field="Price" />
+            <DxSummary>
+                <DxTotalItem
+                    column="OrderNumber"
+                    summary-type="count"
+                />
+                <DxTotalItem
+                    column="Price"
+                    summary-type="sum"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxSummary,
+        DxTotalItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxColumn,
+            DxSummary,
+            DxTotalItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column, 
+        Summary,
+        TotalItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="OrderNumber" />
+                <Column dataField="Price" />
+                <Summary>
+                    <TotalItem
+                        column="OrderNumber"
+                        summaryType="count"
+                    />
+                    <TotalItem
+                        column="Price"
+                        summaryType="sum"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
+
 ---
 
 #include common-demobutton with {

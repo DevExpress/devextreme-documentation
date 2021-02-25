@@ -9,18 +9,6 @@ Follow the instructions below to implement custom server-side data aggregation. 
 1. Pass the string identifier you used to register the aggregator to a summary item's [summaryType](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') property:
 
     ---
-    ##### ASP.NET MVC Controls
-
-        <!--Razor C#-->
-        @(Html.DevExtreme().DataGrid()
-            .RemoteOperations(true)
-            .Summary(s => s
-                .TotalItems(i => {
-                    i.Add().SummaryType("totalSales");
-                })
-            )
-        )
-
     ##### jQuery
 
         <!--JavaScript-->
@@ -58,5 +46,73 @@ Follow the instructions below to implement custom server-side data aggregation. 
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :remote-operations="true">
+                <DxSummary>
+                    <DxTotalItem
+                        summary-type="totalSales"
+                    />
+                </DxSummary>
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxDataGrid, { 
+            DxSummary,
+            DxTotalItem
+        } from 'devextreme-vue/data-grid';
+
+        export default {
+            components: {              
+                DxDataGrid,
+                DxSummary,
+                DxTotalItem
+            },
+            // ...
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DataGrid, { 
+            Summary,
+            TotalItem
+        } from 'devextreme-react/data-grid';
+
+        export default function App() {
+            return (
+                <DataGrid ...
+                    remoteOperations={true}>
+                    <Summary>
+                        <TotalItem
+                            summaryType="totalSales"
+                        />
+                    </Summary>
+                </DataGrid>
+            );
+        }
+
+    ##### ASP.NET MVC Controls
+
+        <!--Razor C#-->
+        @(Html.DevExtreme().DataGrid()
+            .RemoteOperations(true)
+            .Summary(s => s
+                .TotalItems(i => {
+                    i.Add().SummaryType("totalSales");
+                })
+            )
+        )
 
     ---

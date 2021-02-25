@@ -346,10 +346,7 @@ The following alternative **CustomStore** configuration delegates data processin
                     .then(response => response.json())
                     .then(response => {
                         return {
-                            data: response.data,
-                            totalCount: response.totalCount,
-                            summary: response.summary,
-                            groupCount: response.groupCount
+                            data: response.data
                         };
                     })
                     .catch(() => { throw 'Network error' });
@@ -415,10 +412,7 @@ The following alternative **CustomStore** configuration delegates data processin
                     .then(response => response.json())
                     .then(response => {
                         return {
-                            data: response.data,
-                            totalCount: response.totalCount,
-                            summary: response.summary,
-                            groupCount: response.groupCount
+                            data: response.data
                         };
                     })
                     .catch(() => { throw 'Network error' });

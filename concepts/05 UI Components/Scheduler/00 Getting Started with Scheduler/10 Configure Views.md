@@ -1,4 +1,4 @@
-The **Scheduler** supports the following view types:
+The Scheduler supports the following view types:
 
 * [Day](/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/#Day_View)
 

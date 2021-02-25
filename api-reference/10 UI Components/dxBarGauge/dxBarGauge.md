@@ -6,7 +6,7 @@ inherits: BaseWidget
 ---
 ---
 ##### shortDescription
-The **BarGauge** UI component contains several circular bars that each indicates a single value.
+The BarGauge UI component contains several circular bars that each indicates a single value.
 
 ##### widgettree
 values: [50, 30, 90]

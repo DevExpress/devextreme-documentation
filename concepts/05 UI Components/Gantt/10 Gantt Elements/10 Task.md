@@ -20,7 +20,7 @@ A **milestone** is a task with the same start and endpoint. Milestones can be us
 
 ![DevExtreme Gantt Chart - Milestone](/images/Gantt/milestone.png)
 
-The **Gantt** UI component gets data for tasks from a data source ([dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#dataSource')). Task objects from the data source are automatically bound to the UI component if these objects have the default 'title', 'start', 'end', etc., data fields in their structure. For example:
+The Gantt UI component gets data for tasks from a data source ([dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#dataSource')). Task objects from the data source are automatically bound to the UI component if these objects have the default 'title', 'start', 'end', etc., data fields in their structure. For example:
 
     {
         'id': 1,
@@ -89,7 +89,7 @@ The list below provides the main members that affect task appearance and functio
             });
         });
 
-- [scaleType](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/scaleType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType') - Specifies the zoom level of tasks in the **Gantt** chart.
+- [scaleType](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/scaleType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType') - Specifies the zoom level of tasks in the Gantt chart.
 
         $(function() {
             $("#gantt").dxGantt({

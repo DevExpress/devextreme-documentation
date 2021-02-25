@@ -1,4 +1,4 @@
-This section describes the **Gantt** UI component's UI elements and lists the main members that affect their appearance and functionality.
+This section describes the Gantt UI component's UI elements and lists the main members that affect their appearance and functionality.
 
 ![DevExtreme Gantt Chart Elements](/images/Gantt/gantt-elements.png)
 

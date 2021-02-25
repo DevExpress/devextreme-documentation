@@ -1,11 +1,41 @@
-Several properties are not implemented as nested configuration components (**columns[].**[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') in the **DataGrid**, item's [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') in the **Form**, **items[]**.[options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') in the **Toolbar**). These properties do not have the `render` or `component` attribute to which you would pass your rendering function or custom component. However, you can still customize the markup &mdash; using the `Template` element.
+Several properties are not implemented as nested configuration components (**columns[].**[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') in the DataGrid, item's [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') in the Form, **items[]**.[options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') in the Toolbar). These properties do not have the `render` or `component` attribute to which you would pass your rendering function or custom component. However, you can still customize the markup &mdash; using the `Template` element.
 
 The `Template` element declares a named template. Its `name` property should be assigned to a `...Template` property of the UI component that uses the `Template`. The template's markup can be specified as follows:
 
 - **Rendering function**        
 Pass the rendering function to the `Template`'s `render` property:
 
-        <!-- tab: App.js -->
+        <!-- tab: Function component -->
+        import Form, { Item } from 'devextreme-react/form';
+        import { Template } from 'devextreme-react/core/template';
+
+        import service from './data.js';
+
+        const renderSelectBoxItem = (item) => {
+            return <div>{item.toUpperCase()}</div>;
+        }
+        const employee = service.getEmployee();
+        const positions = service.getPositions();
+        const positionEditorOptions = {
+            items: positions,
+            value: '',
+            itemTemplate: 'selectBoxItem'
+        };
+
+        export default function App() {
+            return (
+                <Form formData={employee}>
+                    <Item
+                        dataField="Position"
+                        editorType="dxSelectBox"
+                        editorOptions={positionEditorOptions}
+                    />
+                    <Template name="selectBoxItem" render={renderSelectBoxItem} />
+                </Form>
+            );
+        }
+        
+        <!-- tab: Class component -->
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
 
@@ -76,7 +106,7 @@ Pass the rendering function to the `Template`'s `render` property:
 - **Custom component**          
 Assign the custom component to the `Template`'s `component` property:
 
-        <!-- tab: App.js -->
+        <!-- tab: Class component -->
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
 

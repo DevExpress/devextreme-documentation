@@ -1,4 +1,4 @@
-Exposes the **DeferRendering** UI component.
+Exposes the DeferRendering UI component.
 
 Exports:
 

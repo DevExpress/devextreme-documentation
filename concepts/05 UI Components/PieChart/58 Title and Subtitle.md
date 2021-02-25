@@ -1,4 +1,4 @@
-Title and subtitle are textual elements that give an idea of what the **PieChart** visualizes.
+Title and subtitle are textual elements that give an idea of what the PieChart visualizes.
 
 ![DevExtreme HTML5 JavaScript PieChart Title Subtitle](/images/PieChart/visual_elements/chart_title.png)
 

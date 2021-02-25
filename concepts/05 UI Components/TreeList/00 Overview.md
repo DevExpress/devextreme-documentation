@@ -1,8 +1,8 @@
-The **TreeList** is a UI component that represents data from a local or remote source in the form of a multi-column tree view.
+The TreeList is a UI component that represents data from a local or remote source in the form of a multi-column tree view.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/UiWidgets/Guides/TreeListOverview/treeListExample.html, /Content/Applications/21_1/UiWidgets/Guides/TreeListOverview/treeListExample.js"></div>
 
-The **TreeList** can visualize [plain](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Plain_Data/') or [hierarchical](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Hierarchical_Data/') data taken from any source. Refer to the following topics for details on binding the **TreeList** to your data source:
+The TreeList can visualize [plain](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Plain_Data/') or [hierarchical](/concepts/05%20Widgets/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Hierarchical_Data/') data taken from any source. Refer to the following topics for details on binding the TreeList to your data source:
 
 - [Simple Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 - [JSON Data](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')

@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-[Add DevExtreme to your jQuery application](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/) and use the following code to create a **Scheduler**:
+[Add DevExtreme to your jQuery application](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/) and use the following code to create a Scheduler:
 
     <!-- tab: index.js -->
     $(function() { 
@@ -32,7 +32,7 @@
 
 ##### Angular 
 
-[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a **Scheduler**:
+[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a Scheduler:
 
     <!-- tab: app.component.html -->
     <dx-scheduler id="scheduler">
@@ -77,7 +77,7 @@
 
 ##### Vue 
 
-[Add DevExtreme to your Vue application](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/) and use the following code to create a **Scheduler**:
+[Add DevExtreme to your Vue application](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/) and use the following code to create a Scheduler:
 
     <!-- tab: App.vue -->
     <template> 
@@ -106,7 +106,7 @@
 
 ##### React 
 
-[Add DevExtreme to your React application](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/) and use the following code to create a **Scheduler**:
+[Add DevExtreme to your React application](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/) and use the following code to create a Scheduler:
 
     <!-- tab: App.js -->
     import 'devextreme/dist/css/dx.light.css';

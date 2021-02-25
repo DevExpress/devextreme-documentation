@@ -50,6 +50,70 @@ Follow the steps below to configure custom client-side data aggregation.
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ... >
+                <DxSummary>
+                    <DxTotalItem
+                        name="сustomSummary1"
+                        summary-type="custom"
+                    />
+                    <DxTotalItem
+                        name="сustomSummary2"
+                        summary-type="custom"
+                    />
+                </DxSummary>
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxDataGrid, { 
+            DxSummary,
+            DxTotalItem
+         } from 'devextreme-vue/data-grid';
+
+        export default {
+            components: {              
+                DxDataGrid,
+                DxSummary,
+                DxTotalItem
+            },
+            // ...
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DataGrid, { 
+            Summary,
+            TotalItem
+        } from 'devextreme-react/data-grid';
+
+        export default function App() {
+            return (
+                <DataGrid ... >
+                    <Summary>
+                        <TotalItem
+                            name="сustomSummary1"
+                            summaryType="custom"
+                        />
+                        <TotalItem
+                            name="сustomSummary2"
+                            summaryType="custom"
+                        />
+                    </Summary>
+                </DataGrid>
+            );
+        }
+
     ---
 
 1. Implement the [calculateCustomSummary](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/calculateCustomSummary.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#calculateCustomSummary') function as detailed in its description.

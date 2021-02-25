@@ -23,18 +23,71 @@ DevExtreme provides an [API](/api-reference/50%20Common/utils/localization '/Doc
     export class AppComponent {
         _date: Date = new Date();
         get date() {
-            return formatDate(this._date, "shortDate")
+            return formatDate(this._date, "shortDate");
         }
         set date(value) {
-            this._date = parseDate(value, "shortDate")
+            this._date = parseDate(value, "shortDate");
         }
     }
 
     <!--HTML-->
     <input 
-        #dateInput
         [value]="date"
-        (change)="date = dateInput.value;"/>
+        (change)="date = $event.target.value"
+    />
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <input
+            :value="date"
+            @change="date = $event.target.value"
+        />
+    </template>
+
+    <script>
+    import { formatDate, parseDate } from 'devextreme/localization';
+
+    let date = new Date();
+
+    export default {
+        computed: {
+            date: {
+                get: function() {
+                    return formatDate(date, "shortDate");
+                },
+                set: function(value) {
+                    date = parseDate(value, "shortDate");
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useState, useCallback } from "react";
+    import { formatDate, parseDate } from "devextreme/localization";
+
+    export default function App() {
+        const [date, setDate] = useState(new Date());
+        const getFormattedDate = useCallback(() => {
+            return formatDate(date, "shortDate")
+        }, [date]);
+        const setParsedDate = useCallback((event) => {
+            setDate(parseDate(event.target.value, "shortDate"));
+        }, []);
+
+        return (
+            <input
+                defaultValue={getFormattedDate()}
+                onChange={setParsedDate}
+            />
+        );
+    }
+
 
 ---
 

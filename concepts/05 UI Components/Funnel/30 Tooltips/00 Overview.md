@@ -80,7 +80,7 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 
 ---
 
-Properties declared in the **tooltip** object apply to all tooltips in the **Funnel**. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip you want to customize.
+Properties declared in the **tooltip** object apply to all tooltips in the Funnel. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip you want to customize.
 
 ---
 ##### jQuery

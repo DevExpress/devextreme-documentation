@@ -159,7 +159,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the PivotGrid**   
-    Implement the [onExporting](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the **PivotGrid** as is, but you can use [ExcelExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/#customizeCell). The **PivotGrid** is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Implement the [onExporting](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting) handler and call the [exportPivotGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) method in it. In the code below, this method exports the PivotGrid as is, but you can use [ExcelExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/) to configure export settings, including [cell customization](/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/#customizeCell). The PivotGrid is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
 
     ---
     ##### jQuery
@@ -341,7 +341,7 @@ The following instructions show how to enable and configure client-side export:
 
     --- 
 
-The following restrictions apply when users export **PivotGrid**:   
+The following restrictions apply when users export PivotGrid:   
 
 - Only XLSX files are supported.
 - Only visible rows and columns are exported.

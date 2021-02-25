@@ -7,7 +7,7 @@ type: Array<any>
 An array of items used to synchronize the DropDownBox with an embedded UI component.
 
 ---
-The **DropDownBox** uses other UI components to render **items**. Use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) to embed a UI component such as the [List](/Documentation/ApiReference/UI_Components/dxList/) or the [TreeView](/Documentation/ApiReference/UI_Components/dxTreeView/). In this case, **items** are displayed in accordance with the configuration and functionality of the embedded UI component.
+The DropDownBox uses other UI components to render **items**. Use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) to embed a UI component such as the [List](/Documentation/ApiReference/UI_Components/dxList/) or the [TreeView](/Documentation/ApiReference/UI_Components/dxTreeView/). In this case, **items** are displayed in accordance with the configuration and functionality of the embedded UI component.
 
 If you need to update UI component items, reassign the **items** array as shown in the following example:
 

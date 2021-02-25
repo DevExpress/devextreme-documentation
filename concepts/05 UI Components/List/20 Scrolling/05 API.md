@@ -1,4 +1,4 @@
-The following table gives an overview of scrolling-related methods exposed by the **List**.
+The following table gives an overview of scrolling-related methods exposed by the List.
 
 <table class="dx-table">
     <tr>

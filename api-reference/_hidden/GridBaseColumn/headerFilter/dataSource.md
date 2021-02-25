@@ -17,7 +17,7 @@ The UI component's instance.
 A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance.
 
 ---
-The **{WidgetName}** generates a header filter's data source automatically based on column values. Use the **dataSource** property to change the generated data source or specify a custom data source.
+The {WidgetName} generates a header filter's data source automatically based on column values. Use the **dataSource** property to change the generated data source or specify a custom data source.
 
 ### Specify a Custom Data Source
 

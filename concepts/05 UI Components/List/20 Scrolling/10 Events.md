@@ -1,4 +1,4 @@
-To execute certain commands when the **List** is scrolled, handle the [scroll](/api-reference/10%20UI%20Widgets/dxList/4%20Events/scroll.md '/Documentation/ApiReference/UI_Components/dxList/Events/#scroll') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the **onScroll** property when you configure the UI component.
+To execute certain commands when the List is scrolled, handle the [scroll](/api-reference/10%20UI%20Widgets/dxList/4%20Events/scroll.md '/Documentation/ApiReference/UI_Components/dxList/Events/#scroll') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the **onScroll** property when you configure the UI component.
 
 ---
 ##### jQuery

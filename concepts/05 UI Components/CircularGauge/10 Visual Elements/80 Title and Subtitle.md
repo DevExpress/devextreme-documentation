@@ -1,4 +1,4 @@
-The **CircularGauge** can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
+The CircularGauge can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
 
 <img src="/images/ChartJS/CircularGaugeTitleSubtitle.png" alt="DevExtreme HTML5 JavaScript Gauges  CircularGaugeTitleSubtitle" style="display:block; margin:0 auto" />
 

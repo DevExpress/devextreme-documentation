@@ -6,7 +6,7 @@ inherits: GridBase
 ---
 ---
 ##### shortDescription
-The **TreeList** is a UI component that represents data from a local or remote source in the form of a multi-column tree view. This UI component offers such features as sorting, filtering, editing, selection, etc.
+The TreeList is a UI component that represents data from a local or remote source in the form of a multi-column tree view. This UI component offers such features as sorting, filtering, editing, selection, etc.
 
 ##### widgettree
 dataSource: 

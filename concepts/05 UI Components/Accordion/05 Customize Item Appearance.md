@@ -1,4 +1,4 @@
-For a minor customization of **Accordion** panels, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/') in panel data objects. For example, the following code generates three panels, the first and third are not customized, the second is disabled.
+For a minor customization of Accordion panels, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/') in panel data objects. For example, the following code generates three panels, the first and third are not customized, the second is disabled.
    
 ---
 

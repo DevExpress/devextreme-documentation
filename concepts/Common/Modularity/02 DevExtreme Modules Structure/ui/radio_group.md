@@ -1,4 +1,4 @@
-Exposes the **RadioGroup** UI component.
+Exposes the RadioGroup UI component.
 
 Exports:
 

@@ -1,4 +1,4 @@
-A user can group data in the **DataGrid** using a column header's context menu or the group panel.
+A user can group data in the DataGrid using a column header's context menu or the group panel.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Grouping Group Panel Context Menu](/images/DataGrid/visual_elements/groupPanel_contextMenu.png)
 

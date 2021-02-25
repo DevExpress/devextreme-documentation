@@ -1,4 +1,4 @@
-By default, the **ColorBox** applies value after an end user clicks the "Apply" button. To change this behavior, assign *'instantly'* to the [applyValueMode](/api-reference/10%20UI%20Widgets/dxColorBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#applyValueMode') property. In this case, the UI component applies the value immediately after an end user chooses a color in the drop-down editor. 
+By default, the ColorBox applies value after an end user clicks the "Apply" button. To change this behavior, assign *'instantly'* to the [applyValueMode](/api-reference/10%20UI%20Widgets/dxColorBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#applyValueMode') property. In this case, the UI component applies the value immediately after an end user chooses a color in the drop-down editor. 
 
 ---
 ##### jQuery
@@ -98,7 +98,7 @@ By default, the **ColorBox** applies value after an end user clicks the "Apply" 
 
 ---
 
-To process a new **ColorBox** value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#onValueChanged') property when you configure the UI component.
+To process a new ColorBox value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
 ##### jQuery

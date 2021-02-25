@@ -110,4 +110,4 @@ Grid data can be edited in several modes. Set the **editing**.[mode](/api-refere
     
 ---
 
-The following sections detail the **DataGrid**'s appearance and behavior in each editing mode.
+The following sections detail the DataGrid's appearance and behavior in each editing mode.

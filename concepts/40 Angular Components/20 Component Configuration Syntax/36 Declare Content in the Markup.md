@@ -11,7 +11,7 @@ The following UI components allow you to declare their content directly in the m
 - [Tooltip](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 - [ValidationGroup](/api-reference/10%20UI%20Widgets/dxValidationGroup '/Documentation/ApiReference/UI_Components/dxValidationGroup/')
 
-The following is an example with **ScrollView**:
+The following is an example with ScrollView:
 
     <!--HTML-->
     <dx-scroll-view>

@@ -1,4 +1,4 @@
-The **ResponsiveBox** UI component allows you to create an application or a website with a layout adapted to different screen sizes.
+The ResponsiveBox UI component allows you to create an application or a website with a layout adapted to different screen sizes.
 
 ![DevExtreme HTML5 JavaScript ResponsiveBox](/images/UiWidgets/responsive-box.png)
 
@@ -6,7 +6,7 @@ The **ResponsiveBox** UI component allows you to create an application or a webs
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview/"
 }
 
-The following code creates a simple **ResponsiveBox**. The UI component defines an ordinary page layout: a header, a footer, content area, left- and right-side bars. On small and extra small screens, the bars are hidden to give more space to the content. Note that the height of all elements that are ancestors to the **ResponsiveBox** (such as `<body>` and `<html>`) is explicitly set to *"100%"*. This makes the **ResponsiveBox** occupy full screen height.
+The following code creates a simple ResponsiveBox. The UI component defines an ordinary page layout: a header, a footer, content area, left- and right-side bars. On small and extra small screens, the bars are hidden to give more space to the content. Note that the height of all elements that are ancestors to the ResponsiveBox (such as `<body>` and `<html>`) is explicitly set to *"100%"*. This makes the ResponsiveBox occupy full screen height.
 
 ---
 
@@ -309,13 +309,13 @@ The following code creates a simple **ResponsiveBox**. The UI component defines 
 
 ---
     
-The **ResponsiveBox** elements in the code above are declared using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields.
+The ResponsiveBox elements in the code above are declared using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields.
 
 - [location](/api-reference/_hidden/dxResponsiveBoxItem/location '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/items/location/')
 - [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#template')
 - [visible](/api-reference/_hidden/CollectionWidgetItem/visible.md '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/items/#visible')
 
-All **ResponsiveBox** elements are arranged against a layout grid defined by the [rows](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. For further information, see the [Create the Layout Grid](/concepts/05%20Widgets/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/') topic.
+All ResponsiveBox elements are arranged against a layout grid defined by the [rows](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. For further information, see the [Create the Layout Grid](/concepts/05%20Widgets/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/') topic.
 
 #####See Also#####
 #include common-link-configurewidget

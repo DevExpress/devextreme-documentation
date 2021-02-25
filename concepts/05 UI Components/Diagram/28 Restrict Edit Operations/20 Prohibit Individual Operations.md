@@ -133,7 +133,7 @@ Every time a user attempts an edit operation, the UI component raises the [reque
 
 - The **reason** parameter specifies whether the event responds to a user action or requests instruction on related UI command availability.
 
-    - The `true` value indicates that the **Diagram** is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
+    - The `true` value indicates that the Diagram is updating the UI. Set the **allowed** option to `false` to hide the UI element associated with the specified operation.
 
     - The `modelModification` value indicates that a user attempts an edit operation. You can specify whether the operation is allowed and display an error message if necessary.
 

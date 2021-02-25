@@ -1,4 +1,4 @@
-**Gallery** items are not sctrictly images. They can contain text or other elements of your choice. For a minor customization of **Gallery** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/') in item data objects. For example, the following code generates two items: one is disabled and the other has a specified <a href="http://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt attribute</a>.
+Gallery items are not sctrictly images. They can contain text or other elements of your choice. For a minor customization of Gallery items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/') in item data objects. For example, the following code generates two items: one is disabled and the other has a specified <a href="http://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt attribute</a>.
 
 ---
 ##### jQuery
@@ -232,7 +232,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         });
     });
 
-You can also customize an individual **Gallery** item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/#template') field of the item's data object.
+You can also customize an individual Gallery item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/#template') field of the item's data object.
 
     <!--HTML--><script id="individualTemplate" type="text/html">
         <!-- ... -->

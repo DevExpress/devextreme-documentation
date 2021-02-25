@@ -83,7 +83,7 @@ The selection capability is not provided out of the box, but it can be implement
 
 ---
 
-In the previous code example, selection was cleared of a specific item. If you need to clear selection of all items, call the **Funnel**'s [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#clearSelection') method.
+In the previous code example, selection was cleared of a specific item. If you need to clear selection of all items, call the Funnel's [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#clearSelection') method.
 
 ---
 ##### jQuery

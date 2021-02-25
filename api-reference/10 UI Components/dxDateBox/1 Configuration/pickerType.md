@@ -15,7 +15,7 @@ This property accepts the following values.
  The picker type depends on the current platform or web browser.
 
 - "calendar"  
- The date box uses the **Calendar** UI component to pick data. This value applies only when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to "date" or "datetime".
+ The date box uses the Calendar UI component to pick data. This value applies only when the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to "date" or "datetime".
 
 - "rollers"  
  The UI component uses rollers to pick the date and time.

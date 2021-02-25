@@ -13,7 +13,7 @@ An object that defines validation parameters.
 The column to which the cell being validated belongs. Exists only when you validate a built-in editor in the [DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Widgets/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
 
 ##### field(options.data): Object
-The current row's data. Exists only when you validate a **DataGrid** or **TreeList** cell's value.
+The current row's data. Exists only when you validate a DataGrid or TreeList cell's value.
 
 ##### field(options.formItem): Object
 The form item being validated. Exists only when you validate a built-in editor in the [Form](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') UI component.

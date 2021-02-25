@@ -12,7 +12,7 @@ The following code example shows how to declare a UI component configuration obj
         };  
     };
 
-Any configuration object should have a specific type. In this example, the `options` object has the `dxChartOptions` type, which configures the **Chart** UI component. Type names are formed by concatenating the UI component name (in this example, `dxChart`) and `Options`.
+Any configuration object should have a specific type. In this example, the `options` object has the `dxChartOptions` type, which configures the Chart UI component. Type names are formed by concatenating the UI component name (in this example, `dxChart`) and `Options`.
 
 The part that preceeds the type is its namespace. DevExtreme UI components are declared in the following namespaces.
 

@@ -1,4 +1,4 @@
-If you need to add spin buttons to the **NumberBox**, set the [showSpinButtons](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/showSpinButtons.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#showSpinButtons') to **true**.
+If you need to add spin buttons to the NumberBox, set the [showSpinButtons](/api-reference/10%20UI%20Widgets/dxNumberBox/1%20Configuration/showSpinButtons.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#showSpinButtons') to **true**.
 
 ---
 ##### jQuery

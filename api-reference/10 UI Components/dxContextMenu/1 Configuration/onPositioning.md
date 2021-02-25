@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before the **ContextMenu** is positioned.
+A function that is executed before the ContextMenu is positioned.
 
 ##### param(e): Object
 Information about the event.

@@ -20,7 +20,7 @@ The row's properties.
 **true** if the row can be deleted; otherwise **false**.
 
 ---
-The following code allows a user to delete only even data rows:
+The following code allows a user to delete only odd data rows:
 
 ---
 #####jQuery
@@ -31,8 +31,7 @@ The following code allows a user to delete only even data rows:
             // ...
             editing: {
                 allowDeleting: function(e) {
-                    if(e.row.rowIndex % 2 == 1) { return true }; 
-                    return false;
+                    return e.row.rowIndex % 2 === 1;
                 },
             }
         })
@@ -45,8 +44,7 @@ The following code allows a user to delete only even data rows:
     // ...
     export class AppComponent {
         allowDeleting(e) {
-            if(e.row.rowIndex % 2 == 1) { return true }; 
-            return false;
+            return e.row.rowIndex % 2 === 1;
         }
     }
     @NgModule({
@@ -63,6 +61,62 @@ The following code allows a user to delete only even data rows:
             [allowDeleting]="allowDeleting">
         </dxo-editing>
     </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxEditing
+                :allow-deleting="allowDeleting"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxEditing
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxEditing
+        },
+        // ...
+        methods: {
+            allowDeleting(e) {
+                return e.row.rowIndex % 2 === 1;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Editing
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        const allowDeleting = useCallback((e) => {
+            return e.row.rowIndex % 2 === 1;
+        }, []);
+
+        return (
+            <DataGrid ... >
+                <Editing
+                    allowDeleting={allowDeleting}
+                />
+            </DataGrid>
+        );
+    }
 
 ---
 

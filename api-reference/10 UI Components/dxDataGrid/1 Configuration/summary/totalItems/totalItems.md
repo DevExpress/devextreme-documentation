@@ -60,6 +60,70 @@ To specify the items of the total summary, declare an array of objects, each of 
         ],
         // ...
     })
+    
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary>
+                <DxTotalItem
+                    column="Age"
+                    summary-type="avg"
+                />
+                <DxTotalItem
+                    column="LastName"
+                    summary-type="count"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSummary,
+        DxTotalItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxSummary,
+            DxTotalItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Summary,
+        TotalItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Summary>
+                    <TotalItem
+                        column="Age"
+                        summaryType="avg"
+                    />
+                    <TotalItem
+                        column="LastName"
+                        summaryType="count"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
 
 ---
 

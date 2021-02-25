@@ -5,7 +5,7 @@ The List supports drag & drop functionality that allows users to reorder list it
 
     <!-- tab: index.js -->
     $(function () {
-        $('#list1').dxList({
+        $('#list').dxList({
             // ...
             itemDragging: {
                 allowReordering: true,

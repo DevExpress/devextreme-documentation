@@ -7,15 +7,14 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
 
     <!-- tab: index.js -->
     $(function () {
-        $('#list1').dxList({
+        $('#list').dxList({
             dataSource: new DevExpress.data.DataSource({
-                // ...
+                store: products,
                 group: 'Category',
             }),
             displayExpr: 'Name',
-        });
-            // ...
             grouped: true,
+        });    
     });
     
 ---

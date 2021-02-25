@@ -1,4 +1,4 @@
-The **List** can load data from different data source types. To bind the component to data, create an instance of [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) and assign it to the [dataSource](Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource) property. Pass the data to the [store](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/) property of the **DataSource** instance. Below the **dataSource** declare the [displayExpr](/Documentation/ApiReference/UI_Components/dxList/Configuration/#displayExpr) property and specify the name of the data field you would like to display. For information on data binding with other data source types, refer to the following articles:
+The **List** can load data from different data source types. To use a local array, assign it to the [dataSource](Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource) property and specify the name of the data field you would like to display in the [displayExpr](/Documentation/ApiReference/UI_Components/dxList/Configuration/#displayExpr) property. For information on data binding with other data source types, refer to the following articles:
 
 - [JSON Data](/Documentation/Guide/UI_Components/List/Data_Binding/JSON_Data/)
 - [OData Sevice](Documentation/Guide/UI_Components/List/Data_Binding/OData_Service/)
@@ -12,9 +12,7 @@ The **List** can load data from different data source types. To bind the compone
     <!-- tab: index.js -->
     $(function () {
         $('#list1').dxList({
-            dataSource: new DevExpress.data.DataSource({
-                store: products,
-            }),
+            dataSource: products,
             displayExpr: 'Name',
         });
     });

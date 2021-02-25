@@ -50,6 +50,68 @@ Customize a summary item's text and value format using the [displayFormat](/api-
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary>
+                <DxTotalItem
+                    column="SaleAmount"
+                    summary-type="sum"
+                    show-in-column="TotalAmount"
+                    value-format="currency"
+                    display-format="Column: {1}. Sales: {0}"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSummary,
+        DxTotalItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSummary,
+            DxTotalItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Summary,
+        TotalItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Summary>
+                    <TotalItem
+                        column="SaleAmount"
+                        summaryType="sum"
+                        showInColumn="TotalAmount"
+                        valueFormat="currency"
+                        displayFormat="Column: {1}. Sales: {0}"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
+
 ---
 
 Specify the **customizeText** function for a more detailed customization.
@@ -66,10 +128,7 @@ Specify the **customizeText** function for a more detailed customization.
                     column: "OrderNumber",
                     summaryType: "count",
                     customizeText: function (e) {
-                        if (e.value < 4) {
-                            return "Less than 4 items"
-                        }
-                        return "Items: " + e.value;
+                        return e.value < 4 ? "Less than 4 items" : "Items: " + e.value;
                     }
                 },
                 // ...
@@ -96,10 +155,7 @@ Specify the **customizeText** function for a more detailed customization.
     // ...
     export class AppComponent {
         customizeText (e) {
-            if (e.value < 4) {
-                return "Less than 4 items"
-            }
-            return "Items: " + e.value;
+            return e.value < 4 ? "Less than 4 items" : "Items: " + e.value;
         };
     }
     @NgModule({
@@ -109,6 +165,73 @@ Specify the **customizeText** function for a more detailed customization.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary>
+                <DxGroupItem
+                    column="OrderNumber"
+                    summary-type="count"
+                    :customize-text="customizeText"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSummary,
+        DxGroupItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxSummary,
+            DxGroupItem
+        },
+        // ...
+        methods: {
+            customizeText(e) {
+                return e.value < 4 ? "Less than 4 items" : "Items: " + e.value;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Summary,
+        GroupItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        const customizeText = useCallback((e) => {
+            return e.value < 4 ? "Less than 4 items" : "Items: " + e.value;
+        }, []);
+        
+        return (
+            <DataGrid ... >
+                <Summary>
+                    <GroupItem
+                        column="OrderNumber"
+                        summaryType="count"
+                        customizeText={customizeText}
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
 
 ---
 

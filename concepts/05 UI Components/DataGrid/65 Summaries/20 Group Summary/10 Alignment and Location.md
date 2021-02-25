@@ -10,7 +10,7 @@ All group items are displayed in parentheses after the group header by default. 
             columns: ["OrderNumber", "City", "Price"],
             summary: {
                 groupItems: [{
-                    column: "City",
+                    column: "OrderNumber",
                     summaryType: "count",
                     alignByColumn: true
                 }, {
@@ -36,7 +36,7 @@ All group items are displayed in parentheses after the group header by default. 
         [columns]="['OrderNumber', 'City', 'Price']" >
         <dxo-summary>
             <dxi-group-item
-                column="City"
+                column="OrderNumber"
                 summaryType="count"
                 [alignByColumn]="true">
             </dxi-group-item>
@@ -47,7 +47,7 @@ All group items are displayed in parentheses after the group header by default. 
             </dxi-group-item>
             <dxi-group-item
                 column="Price"
-                summaryType="sum"
+                summaryType="max"
                 [showInGroupFooter]="true"
                 showInColumn="City">
             </dxi-group-item>
@@ -67,6 +67,95 @@ All group items are displayed in parentheses after the group header by default. 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="OrderNumber" />
+            <DxColumn data-field="City" />
+            <DxColumn data-field="Price" />
+            <DxSummary>
+                <DxGroupItem
+                    column="OrderNumber"
+                    summary-type="count"
+                    :align-by-column="true"
+                />
+                <DxGroupItem
+                    column="Price"
+                    summary-type="sum"
+                    :show-in-group-footer="true"
+                />
+                <DxGroupItem
+                    column="Price"
+                    summary-type="max"
+                    :show-in-group-footer="true"
+                    show-in-column="City"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn,
+        DxSummary,
+        DxGroupItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxColumn,
+            DxSummary,
+            DxGroupItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column, 
+        Summary,
+        GroupItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="OrderNumber" />
+                <Column dataField="City" />
+                <Column dataField="Price" />
+                <Summary>
+                    <GroupItem
+                        column="OrderNumber"
+                        summaryType="count"
+                        alignByColumn
+                    />
+                    <GroupItem
+                        column="Price"
+                        summaryType="sum"
+                        showInGroupFooter
+                    />
+                    <GroupItem
+                        column="Price"
+                        summaryType="max"
+                        showInGroupFooter
+                        showInColumn="City"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
 
 ---
 

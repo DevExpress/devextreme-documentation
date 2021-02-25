@@ -37,6 +37,49 @@ The load panel is shown only for remote data sources by default. To show it rega
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxLoadPanel :enabled="true" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxLoadPanel
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxLoadPanel
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        LoadPanel
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <LoadPanel enabled />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -60,7 +103,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         @ViewChild(DxTreeListComponent, { static: false }) treeList: DxTreeListComponent;
         // Prior to Angular 8
         // @ViewChild(DxTreeListComponent) treeList: DxTreeListComponent;
-        doSomeLongOperation () {
+        performLongOperation() {
             this.treeList.instance.beginCustomLoading();
             // ...
             this.treeList.instance.endCustomLoading();
@@ -73,6 +116,74 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ref="TreeListRefKey">
+            <!-- ... -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        // ...
+    } from 'devextreme-vue/tree-list';
+
+    const TreeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList,
+            // ...
+        },
+        data: function() {
+            return {
+                TreeListRefKey
+            };
+        },
+        methods: {
+            performLongOperation: function() {
+                this.TreeList.beginCustomLoading();
+                // ...
+                this.TreeList.endCustomLoading();
+            }
+        },
+        computed: {
+            TreeList: function() {
+                return this.$refs[TreeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef, useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        // ...
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        const TreeList = useRef(null);
+        const performLongOperation = useCallback(() => {
+            TreeList.current.instance.beginCustomLoading();
+            // ...
+            TreeList.current.instance.endCustomLoading();
+        }, []);
+
+        return (
+            <TreeList ref="TreeList">
+                {/* ... */}
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -115,6 +226,57 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20Widgets/LoadPane
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxLoadPanel
+                :height="100"
+                :width="250"
+                indicator-src="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxLoadPanel
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxLoadPanel
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        LoadPanel
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <LoadPanel
+                    height={100}
+                    width={250}
+                    indicatorSrc="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+                />
+            </TreeList>
+        );
+    }
     
 ---
 

@@ -15,7 +15,7 @@ Import the required DevExtreme modules *after* the stylesheets in the same `NgMo
     })
     export class AppModule { }
 
-Now you can use the DevExtreme component in your application:
+Now you can use the DevExtreme UI component in your application:
 
     <!-- tab: app.component.html -->
     <dx-button

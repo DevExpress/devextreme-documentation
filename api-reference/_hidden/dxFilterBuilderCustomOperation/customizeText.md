@@ -7,7 +7,7 @@ type: function(fieldInfo)
 Customizes the field value's text representation.
 
 ##### param(fieldInfo): Object
-Information about a **FilterBuilder** field.
+Information about a FilterBuilder field.
 
 ##### field(fieldInfo.field): dxFilterBuilderField
 The field's configuration.
@@ -16,7 +16,7 @@ The field's configuration.
 The field's unformatted value (specified using the editor).
 
 ##### field(fieldInfo.valueText): String
-The value with the [format](/api-reference/_hidden/dxFilterBuilderField/format.md '/Documentation/ApiReference/UI_Widgets/dxFilterBuilder/Configuration/fields/#format') applied.
+The value with the [format](/api-reference/_hidden/dxFilterBuilderField/format.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#format') applied.
 
 ##### return: String
 The text to be displayed.

@@ -1,4 +1,4 @@
-This option accepts one of the following:
+This property accepts one of the following:
 
 - **A two-item array**    
 

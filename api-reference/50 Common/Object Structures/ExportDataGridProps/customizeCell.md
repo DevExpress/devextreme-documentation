@@ -21,11 +21,11 @@ An ExcelJS object that describes an Excel cell. Use the object's properties to c
 - <a href="https://github.com/exceljs/exceljs#number-formats" target="_blank">numFmt</a>
 
 ##### field(options.gridCell): ExcelDataGridCell
-A **DataGrid** cell.
+A DataGrid cell.
 
 ---
 
-The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Widgets/dxDataGrid/Row/#rowType') equals *"data"*:
+The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') equals *"data"*:
 
 ---
 ##### jQuery
@@ -69,7 +69,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
 

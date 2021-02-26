@@ -11,7 +11,7 @@ Configures context menu items' settings.
 
 ---
 
-The **FileManager** widget allows you to add default and create custom context menu items.
+The FileManager UI component allows you to add default and custom context menu items.
 
 
 ---
@@ -25,7 +25,36 @@ The **FileManager** widget allows you to add default and create custom context m
                 items: [
                     "create", // default item
                     {
-                        text: "Create new file", // custom item with sub items
+                        name: "create",
+                        text: "Create Directory",
+                        beginGroup: true
+                    }
+                    //...
+                ]
+            }            
+        });
+    });  
+
+---
+
+![DevExtreme FileManager - Predefined Context Menu Items](/images/FileManager/context-menu-default-item.png)
+
+**Custom Items**
+
+To add a custom context menu item, specify its [text](/api-reference/_hidden/dxMenuBaseItem/text.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/items/#text') and optional settings (for example, a file extension for a newly created file). Use the [contextMenuItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/contextMenuItemClick.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuItemClick') event to handle clicks on custom context menu items.
+
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function () {
+        $("#file-manager").dxFileManager({
+            contextMenu: {
+                items: [
+                    {
+                        text: "Create new file", 
+                        icon: "plus",
                         items: [
                             {
                                 text: "Plain text document",
@@ -44,3 +73,5 @@ The **FileManager** widget allows you to add default and create custom context m
     });
 
 ---
+
+![DevExtreme FileManager - Custom Context Menu Items](/images/FileManager/context-menu-custom-item.png)

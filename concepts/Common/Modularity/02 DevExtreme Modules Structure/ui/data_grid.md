@@ -1,8 +1,8 @@
-Exposes the **DataGrid** widget.
+Exposes the DataGrid UI component.
 
 Exports:
 
-- *default* - The [DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Widgets/dxDataGrid/') widget
+- *default* - The [DataGrid](/api-reference/10%20UI%20Widgets/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') UI component
 
         require("ui/data_grid");
         // ===== or =====

@@ -8,7 +8,8 @@ default: undefined
 Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
 
 ---
-The **columns** array can contain only the names of data source fields, which is sufficient if you do not need to specify any other column options. But if you do, then this array should contain objects that configure columns. To bind the columns to data source fields, use the **dataField** option. Note that you can combine both declarations in a single array as shown in the following code.
+
+The **columns** array can contain column objects and data field names as strings. If you use column objects, specify the **dataField** property to bind the object to a column from a data source:
 
 ---
 ##### jQuery
@@ -55,5 +56,15 @@ The **columns** array can contain only the names of data source fields, which is
     
 ---
 
+[note]
+
+Review the following notes about data binding:
+
+- If you create an unbound column (use the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function), specify the **columns[]**.[name](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name) property instead of **dataField**.
+
+- Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
+
+[/note]
+
 #####See Also#####
-- [Columns - Overview](/concepts/05%20Widgets/DataGrid/15%20Columns/00%20Overview.md '/Documentation/Guide/Widgets/{WidgetName}/Columns/Overview/')
+- [Columns - Overview](/concepts/05%20Widgets/DataGrid/15%20Columns/00%20Overview.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Overview/')

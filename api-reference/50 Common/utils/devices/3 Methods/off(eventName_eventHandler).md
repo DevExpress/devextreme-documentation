@@ -17,4 +17,4 @@ id: DevicesObject.off(eventName, eventHandler)
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Widgets\Component\3 Methods\off(eventName_eventHandler).md' -->
+<!-- import * from 'api-reference\10 UI Components\Component\3 Methods\off(eventName_eventHandler).md' -->

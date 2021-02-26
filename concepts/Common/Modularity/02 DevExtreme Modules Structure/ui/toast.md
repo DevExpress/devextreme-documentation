@@ -1,8 +1,8 @@
-Exposes the **Toast** widget.
+Exposes the Toast UI component.
 
 Exports:
 
-- *default* - The [Toast](/api-reference/10%20UI%20Widgets/dxToast '/Documentation/ApiReference/UI_Widgets/dxToast/') widget
+- *default* - The [Toast](/api-reference/10%20UI%20Widgets/dxToast '/Documentation/ApiReference/UI_Components/dxToast/') UI component
 
         require("ui/toast");
         // ===== or =====

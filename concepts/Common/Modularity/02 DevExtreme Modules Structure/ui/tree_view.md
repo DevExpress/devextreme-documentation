@@ -1,8 +1,8 @@
-Exposes the **TreeView** widget.
+Exposes the TreeView UI component.
 
 Exports:
 
-- *default* - The [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Widgets/dxTreeView/') widget
+- *default* - The [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component
 
         require("ui/tree_view");
         // ===== or =====

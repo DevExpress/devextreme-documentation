@@ -5,7 +5,7 @@ export: currentTheme
 ---
 ---
 ##### shortDescription
-Changes the current theme for all data visualization widgets on the page. The color scheme is defined separately.
+Changes the current theme for all data visualization UI components on the page. The color scheme is defined separately.
 
 ##### param(platform): String
 The platform name or *"generic"*.
@@ -14,8 +14,8 @@ The platform name or *"generic"*.
 The color scheme: *"light"* or *"dark"*.
 
 ---
-Only the widgets created after calling this method use the new theme. Refresh the styling settings in other widgets using the [DevExpress.viz.refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/utils/viz/#refreshTheme') method.
+Only the UI components created after calling this method use the new theme. Refresh the styling settings in other UI components using the [DevExpress.viz.refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/utils/viz/#refreshTheme') method.
 
 #####See Also#####
-- [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes')
+- [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes')
 - [DevExpress.viz.registerTheme(customTheme, baseTheme)](/api-reference/50%20Common/utils/viz/registerTheme(customTheme_baseTheme).md '/Documentation/ApiReference/Common/utils/viz/#registerThemecustomTheme_baseTheme')

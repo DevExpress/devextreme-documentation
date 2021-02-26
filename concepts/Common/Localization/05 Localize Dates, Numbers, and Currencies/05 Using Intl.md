@@ -6,7 +6,7 @@
     <!-- tab: index.js -->
     DevExpress.localization.locale(navigator.language);
     // ...
-    // DevExtreme widgets are configured here
+    // DevExtreme UI components are configured here
     // ...
 
     <!-- tab: index.html -->
@@ -224,7 +224,7 @@ Strings, numbers, dates, and currencies are now automatically localized and form
 
     <!-- tab: App.js -->
     import React from 'react';
-
+    import config from 'devextreme/core/config';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
@@ -257,4 +257,4 @@ Strings, numbers, dates, and currencies are now automatically localized and form
 
 ---
 
-You can use structures compatible with the Intl API for value formatting. Refer to the [Intl Formats](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/15%20Intl%20Formats.md '/Documentation/Guide/Common/Value_Formatting/#Format_Widget_Values/Intl_Formats') section in the [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') article for more information.
+You can use structures compatible with the Intl API for value formatting. Refer to the [Intl Formats](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/15%20Intl%20Formats.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Intl_Formats') section in the [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') article for more information.

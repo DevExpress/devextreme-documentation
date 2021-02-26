@@ -1,4 +1,4 @@
-To process data on the client, load all data from the server in the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. You should also switch the **CustomStore** to the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') in all widgets except **DataGrid**, **TreeList**, **PivotGrid**, and **Scheduler**, in which this mode is already enabled:
+To process data on the client, load all data from the server in the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. You should also switch the **CustomStore** to the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') in all UI components except DataGrid, TreeList, PivotGrid, and Scheduler, in which this mode is already enabled:
 
 ---
 ##### jQuery

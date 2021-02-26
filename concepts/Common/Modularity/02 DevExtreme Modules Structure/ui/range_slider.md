@@ -1,8 +1,8 @@
-Exposes the **RangeSlider** widget.
+Exposes the RangeSlider UI component.
 
 Exports:
 
-- *default* - The [RangeSlider](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Widgets/dxRangeSlider/') widget
+- *default* - The [RangeSlider](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/') UI component
 
         require("ui/range_slider");
         // ===== or =====

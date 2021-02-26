@@ -8,7 +8,7 @@ Configures settings of a context menu item's subitems.
 
 ---
 
-The **FileManager** widget allows you to add default and create custom context menu subitems.
+The FileManager UI component allows you to add default and create custom context menu subitems.
 
 ---
 

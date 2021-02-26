@@ -5,25 +5,25 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A handler for the [click]({basewidgetpath}/Events/#itemClick) event raised for a certain item in the drop-down field.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): dxDropDownButton
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.jQueryEvent): jQuery.Event
-<!-- Description goes here -->
+The jQuery event that caused handler execution. Deprecated in favor of the **event** field.
 
 ##### field(e.model): Object
-<!-- Description goes here -->
+Model data. Available only with the use of Knockout.
 
 ---
 <!-- Description goes here -->

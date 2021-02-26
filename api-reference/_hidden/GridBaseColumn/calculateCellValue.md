@@ -251,19 +251,19 @@ The following features are disabled in an unbound column, but you can enable the
     </tr>
     <tr>
         <td>Sorting</td>
-        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSorting">allowSorting</a> option to <b>true</b>.</td>
+        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSorting">allowSorting</a> property to <b>true</b>.</td>
     </tr>
     <tr>
         <td>Filtering</td>
-        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowFiltering">allowFiltering</a> option to <b>true</b>.</td>
+        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowFiltering">allowFiltering</a> property to <b>true</b>.</td>
     </tr>
     <tr>
         <td>Searching</td>
-        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSearch">allowSearch</a> option to <b>true</b>.</td>
+        <td>Set the <a href="{basewidgetpath}/Configuration/columns/#allowSearch">allowSearch</a> property to <b>true</b>.</td>
     </tr>
     <tr>
         <td>Grouping (<b>DataGrid</b> only)</td>
-        <td>Set the <a href="/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#allowGrouping">allowGrouping</a> option to <b>true</b>.</td>
+        <td>Set the <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping">allowGrouping</a> property to <b>true</b>.</td>
     </tr>
 </table>
 
@@ -365,7 +365,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
     value: "column's configuration"
 }
 
-[note] This function is called multiple times for every record: when the record is rendered, when sorting or filtering is applied, and when summaries are computed. It is recommend that you keep calculations inside this function as simple as possible to avoid hindering widget performance.
+[note] This function is called multiple times for every record: when the record is rendered, when sorting or filtering is applied, and when summaries are computed. It is recommend that you keep calculations inside this function as simple as possible to avoid hindering UI component performance.
 
 #####See Also#####
 - **columns[]**.[customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText')

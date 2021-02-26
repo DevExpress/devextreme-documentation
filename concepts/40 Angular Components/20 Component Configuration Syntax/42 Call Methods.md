@@ -1,4 +1,4 @@
-To call widget methods, you need the widget instance. To access it, use the `@ViewChild` or `@ViewChildren` decorator (depending on whether you are getting a single or multiple widget instances) and the component's `instance` property. These decorators accept a component name or a <a href="https://angular.io/guide/template-syntax#template-reference-variables--var-" target="_blank">template reference variable</a>. The following code illustrates this approach by the example of the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light) widget:  
+To call UI component methods, you need its instance. To access it, use the `@ViewChild` or `@ViewChildren` decorator (depending on whether you are getting a single or multiple UI component instances) and the component's `instance` property. These decorators accept a component name or a <a href="https://angular.io/guide/template-reference-variables" target="_blank">template reference variable</a>. The following code illustrates this approach by the example of the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light):  
 
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from "@angular/core";
@@ -16,7 +16,7 @@ To call widget methods, you need the widget instance. To access it, use the `@Vi
             this.dataGrid.instance.refresh();
         }
 
-        // Getting multiple instances of one widget
+        // Getting multiple instances of one UI component
         // @ViewChildren(DxDataGridComponent) dataGrids: QueryList<DxDataGridComponent>
     }
 
@@ -24,7 +24,7 @@ To call widget methods, you need the widget instance. To access it, use the `@Vi
     <dx-data-grid #targetDataGrid [dataSource]="dataSource"></dx-data-grid>
     <dx-button text="Refresh data" (onClick)="refresh()"></dx-button>
 
-Alternatively, you can save the widget instance in a component property once the widget is initialized:
+Alternatively, you can assign the UI component instance to a variable and use it to call the methods:
 
     <!-- tab: app.component.html -->
     <dx-data-grid

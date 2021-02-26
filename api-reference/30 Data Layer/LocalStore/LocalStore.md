@@ -30,7 +30,7 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
         key: "id",
         data: states,
         name: "myLocalData",
-        // Other LocalStore options go here
+        // Other LocalStore properties go here
     });
 
     // ===== or inside the DataSource =====
@@ -40,9 +40,9 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
             key: "id",
             data: states,
             name: "myLocalData",
-            // Other LocalStore options go here
+            // Other LocalStore properties go here
         },
-        // Other DataSource options go here
+        // Other DataSource properties go here
     });
 
 ##### Angular  
@@ -65,7 +65,7 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
                 key: "id",
                 data: this.states,
                 name: "myLocalData",
-                // Other LocalStore options go here
+                // Other LocalStore properties go here
             });
 
             // ===== or inside the DataSource =====
@@ -74,9 +74,9 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
                     key: "id",
                     data: this.states,
                     name: "myLocalData",
-                    // Other LocalStore options go here
+                    // Other LocalStore properties go here
                 }),
-                // Other DataSource options go here
+                // Other DataSource properties go here
             });
         }
     }
@@ -96,7 +96,7 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
                 key: "id",
                 data: states,
                 name: "myLocalData",
-                // Other LocalStore options go here
+                // Other LocalStore properties go here
             });
 
             // ===== or inside the DataSource =====
@@ -106,9 +106,9 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
                     key: "id",
                     data: states,
                     name: "myLocalData",
-                    // Other LocalStore options go here
+                    // Other LocalStore properties go here
                 },
-                // Other DataSource options go here
+                // Other DataSource properties go here
             });
         });
 
@@ -127,7 +127,7 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
             key: "id",
             data: states,
             name: "myLocalData",
-            // Other LocalStore options go here
+            // Other LocalStore properties go here
         })
 
         // ===== or inside the DataSource =====
@@ -137,9 +137,9 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
                 key: "id",
                 data: states,
                 name: "myLocalData",
-                // Other LocalStore options go here
+                // Other LocalStore properties go here
             },
-            // Other DataSource options go here
+            // Other DataSource properties go here
         })
     };
 
@@ -163,7 +163,7 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
         key: 'id',
         data: states,
         name: 'myLocalData',
-        // Other LocalStore options go here
+        // Other LocalStore properties go here
     });
 
     // ===== or inside the DataSource =====
@@ -172,9 +172,9 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
             key: 'id',
             data: states,
             name: 'myLocalData',
-            // Other LocalStore options go here
+            // Other LocalStore properties go here
         }),
-        // Other DataSource options go here
+        // Other DataSource properties go here
     });
 
     export default {
@@ -207,7 +207,7 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
         key: 'id',
         data: states,
         name: 'myLocalData',
-        // Other LocalStore options go here
+        // Other LocalStore properties go here
     });
 
     // ===== or inside the DataSource =====
@@ -216,9 +216,9 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
             key: 'id',
             data: states,
             name: 'myLocalData',
-            // Other LocalStore options go here
+            // Other LocalStore properties go here
         }),
-        // Other DataSource options go here
+        // Other DataSource properties go here
     });
 
     class App extends React.Component {

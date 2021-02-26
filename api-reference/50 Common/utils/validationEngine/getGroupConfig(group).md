@@ -17,9 +17,9 @@ The object returned by the **getGroupConfig(group)** function has the following 
 - **group**  
     The string or object passed as the parameter.
 - **validators**  
-    An array of **Validator** widgets that are included to the validated group.
+    An array of Validator UI components that are included to the validated group.
 - **validate()**   
-    The method that allows you to validate the widgets included to the current group.
+    The method that allows you to validate the UI components included to the current group.
 - **validated**  
     The event that occurs after the group is validated. You can attach/detach a handler using the **on(eventName, eventHandler)**/**off(eventName)** methods of the group.
 

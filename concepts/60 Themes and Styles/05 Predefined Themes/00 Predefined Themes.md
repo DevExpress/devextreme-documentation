@@ -5,67 +5,67 @@ DevExtreme provides Generic, Generic Compact, and Material Design themes. These 
 <div id="generic-themes" class="theme-images">
     <div>
         <p>Light</p>
-        <img src="/Content/images/doc/20_1/themes/generic-light.png" />
+        <img src="/images/themes/generic-light.png" />
     </div>
     <div>
         <p>Light Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-light-compact.png" />
+        <img src="/images/themes/generic-light-compact.png" />
     </div>
     <div>
         <p>Dark</p>
-        <img src="/Content/images/doc/20_1/themes/generic-dark.png" />
+        <img src="/images/themes/generic-dark.png" />
     </div>
     <div>
         <p>Dark Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-dark-compact.png" />
+        <img src="/images/themes/generic-dark-compact.png" />
     </div>
     <div>
         <p>Carmine</p>
-        <img src="/Content/images/doc/20_1/themes/generic-carmine.png" />
+        <img src="/images/themes/generic-carmine.png" />
     </div>
     <div>
         <p>Carmine Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-carmine-compact.png" />
+        <img src="/images/themes/generic-carmine-compact.png" />
     </div>
     <div>
         <p>Soft Blue</p>
-        <img src="/Content/images/doc/20_1/themes/generic-softblue.png" />
+        <img src="/images/themes/generic-softblue.png" />
     </div>
     <div>
         <p>Soft Blue Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-softblue-compact.png" />
+        <img src="/images/themes/generic-softblue-compact.png" />
     </div>
     <div>
         <p>Dark Moon</p>
-        <img src="/Content/images/doc/20_1/themes/generic-darkmoon.png" />
+        <img src="/images/themes/generic-darkmoon.png" />
     </div>
     <div>
         <p>Dark Moon Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-darkmoon-compact.png" />
+        <img src="/images/themes/generic-darkmoon-compact.png" />
     </div>
     <div>
         <p>Dark Violet</p>
-        <img src="/Content/images/doc/20_1/themes/generic-darkviolet.png" />
+        <img src="/images/themes/generic-darkviolet.png" />
     </div>
     <div>
         <p>Dark Violet Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-darkviolet-compact.png" />
+        <img src="/images/themes/generic-darkviolet-compact.png" />
     </div>
     <div>
         <p>Green Mist</p>
-        <img src="/Content/images/doc/20_1/themes/generic-greenmist.png" />
+        <img src="/images/themes/generic-greenmist.png" />
     </div>
     <div>
         <p>Green Mist Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-greenmist-compact.png" />
+        <img src="/images/themes/generic-greenmist-compact.png" />
     </div>
     <div>
         <p>Contrast</p>
-        <img src="/Content/images/doc/20_1/themes/generic-contrast.png" />
+        <img src="/images/themes/generic-contrast.png" />
     </div>
     <div>
         <p>Contrast Compact</p>
-        <img src="/Content/images/doc/20_1/themes/generic-contrast-compact.png" />
+        <img src="/images/themes/generic-contrast-compact.png" />
     </div>
 </div>
 
@@ -74,83 +74,83 @@ DevExtreme provides Generic, Generic Compact, and Material Design themes. These 
 <div id="material-themes" class="theme-images">
     <div>
         <p>Blue Light</p>
-        <img src="/Content/images/doc/20_1/themes/material-bluelight.png" />
+        <img src="/images/themes/material-bluelight.png" />
     </div>
     <div>
         <p>Blue Light Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-bluelight-compact.png" />
+        <img src="/images/themes/material-bluelight-compact.png" />
     </div>
     <div>
         <p>Blue Dark</p>
-        <img src="/Content/images/doc/20_1/themes/material-bluedark.png" />
+        <img src="/images/themes/material-bluedark.png" />
     </div>
     <div>
         <p>Blue Dark Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-bluedark-compact.png" />
+        <img src="/images/themes/material-bluedark-compact.png" />
     </div>
     <div>
         <p>Lime Light</p>
-        <img src="/Content/images/doc/20_1/themes/material-limelight.png" />
+        <img src="/images/themes/material-limelight.png" />
     </div>
     <div>
         <p>Lime Light Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-limelight-compact.png" />
+        <img src="/images/themes/material-limelight-compact.png" />
     </div>
     <div>
         <p>Lime Dark</p>
-        <img src="/Content/images/doc/20_1/themes/material-limedark.png" />
+        <img src="/images/themes/material-limedark.png" />
     </div>
     <div>
         <p>Lime Dark Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-limedark-compact.png" />
+        <img src="/images/themes/material-limedark-compact.png" />
     </div>
     <div>
         <p>Orange Light</p>
-        <img src="/Content/images/doc/20_1/themes/material-orangelight.png" />
+        <img src="/images/themes/material-orangelight.png" />
     </div>
     <div>
         <p>Orange Light Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-orangelight-compact.png" />
+        <img src="/images/themes/material-orangelight-compact.png" />
     </div>
     <div>
         <p>Orange Dark</p>
-        <img src="/Content/images/doc/20_1/themes/material-orangedark.png" />
+        <img src="/images/themes/material-orangedark.png" />
     </div>
     <div>
         <p>Orange Dark Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-orangedark-compact.png" />
+        <img src="/images/themes/material-orangedark-compact.png" />
     </div>
     <div>
         <p>Purple Light</p>
-        <img src="/Content/images/doc/20_1/themes/material-purplelight.png" />
+        <img src="/images/themes/material-purplelight.png" />
     </div>
     <div>
         <p>Purple Light Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-purplelight-compact.png" />
+        <img src="/images/themes/material-purplelight-compact.png" />
     </div>
     <div>
         <p>Purple Dark</p>
-        <img src="/Content/images/doc/20_1/themes/material-purpledark.png" />
+        <img src="/images/themes/material-purpledark.png" />
     </div>
     <div>
         <p>Purple Dark Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-purpledark-compact.png" />
+        <img src="/images/themes/material-purpledark-compact.png" />
     </div>
     <div>
         <p>Teal Light</p>
-        <img src="/Content/images/doc/20_1/themes/material-teallight.png" />
+        <img src="/images/themes/material-teallight.png" />
     </div>
     <div>
         <p>Teal Light Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-teallight-compact.png" />
+        <img src="/images/themes/material-teallight-compact.png" />
     </div>
     <div>
         <p>Teal Dark</p>
-        <img src="/Content/images/doc/20_1/themes/material-tealdark.png" />
+        <img src="/images/themes/material-tealdark.png" />
     </div>
     <div>
         <p>Teal Dark Compact</p>
-        <img src="/Content/images/doc/20_1/themes/material-tealdark-compact.png" />
+        <img src="/images/themes/material-tealdark-compact.png" />
     </div>
 </div>
 
@@ -219,7 +219,7 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
     </div>    
 </div>
 
-CSS themes are designed to customize HTML-based widgets. However, [SVG-based widgets](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/') use their own themes to assume an appearance that matches a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Widgets_Customization/#Themes') article for more information on themes in SVG-based widgets.
+CSS themes are designed to customize HTML-based UI components. However, [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20HTML-%20and%20SVG-Based%20Widgets.md '/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_UI_Components/') use their own themes to assume an appearance that matches a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Widgets%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes') article for more information on themes in SVG-based UI components.
 
 <style>
     #material-themes {

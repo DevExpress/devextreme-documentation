@@ -1,0 +1,1 @@
+Although DevExtreme data visualization UI components can be displayed on any device, a user may need a UI component printed or in the form of a document. For these cases, the UI components provide client-side exporting and printing. This guide shows how to configure these features for the user, and how to export and print the PieChart UI component using the API. 

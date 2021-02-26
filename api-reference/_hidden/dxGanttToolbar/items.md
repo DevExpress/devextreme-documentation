@@ -10,7 +10,7 @@ Configures toolbar items' settings.
 
 ---
 
-The **Gantt** widget allows you to add default and create custom toolbar items.
+The Gantt UI component allows you to add default and create custom toolbar items.
 
 ---
 

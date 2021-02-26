@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a context menu item is displayed.
+A function that is executed before a context menu is displayed.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

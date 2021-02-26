@@ -5,14 +5,14 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not to skip *empty strings*, **null** and **undefined** values when calculating a summary.
+Specifies whether to skip *empty strings*, **null** and **undefined** values when calculating a summary. Does not apply when you use a remote data source.
 
 ---
 Specified in the **summary** object, this property affects all summaries in the grid. In addition, the same property can be specified for an individual summary. It will override the global setting.
 
-[note]This property does not have any effect when you use a remote data source.
+[note]
 
-[note]Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary, which skips empty values, as follows.
+Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary that skips empty values, as follows:
     
 ---
 #####jQuery
@@ -80,4 +80,91 @@ Specified in the **summary** object, this property affects all summaries in the 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary
+                :calculate-custom-summary="calculateSummary">
+                <DxTotalItem
+                    summary-type="custom"
+                    name="customSummary1"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSummary,
+        DxTotalItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxSummary,
+            DxTotalItem
+        },
+        // ...
+        methods: {
+            calculateSummary (options) {
+                if (options.name == "customSummary1") {
+                    if (options.summaryProcess == "start") {
+                        options.totalValue = 0;
+                    }
+                    if (options.summaryProcess == "calculate") {
+                        if (e.value) {
+                            options.totalValue++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Summary,
+        TotalItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        const calculateSummary = useCallback((options) => {
+            if (options.name == "customSummary1") {
+                if (options.summaryProcess == "start") {
+                    options.totalValue = 0;
+                }
+                if (options.summaryProcess == "calculate") {
+                    if (e.value) {
+                        options.totalValue++;
+                    }
+                }
+            }
+        }, []);
+
+        return (
+            <DataGrid ... >
+                <Summary
+                    сalculateCustomSummary={calculateSummary}>
+                    <TotalItem
+                        summarType="custom"
+                        name="customSummary1"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
+
 ---
+
+[/note]

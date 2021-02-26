@@ -61,6 +61,70 @@ To specify the items of the group summary, declare an array of objects, each of 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxSummary>
+                <DxGroupItem
+                    column="Age"
+                    summary-type="avg"
+                />
+                <DxGroupItem
+                    column="LastName"
+                    summary-type="count"
+                />
+            </DxSummary>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxSummary,
+        DxGroupItem
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxSummary,
+            DxGroupItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Summary,
+        GroupItem
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Summary>
+                    <GroupItem
+                        column="Age"
+                        summaryType="avg"
+                    />
+                    <GroupItem
+                        column="LastName"
+                        summaryType="count"
+                    />
+                </Summary>
+            </DataGrid>
+        );
+    }
+
 ---
 
 

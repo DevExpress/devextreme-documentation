@@ -28,8 +28,8 @@ The following code uses the **isBand** and **ownerBand** properties to display t
                     isBand: true
                 });
                 
-                var addressFields = ["City", "Street", "Apartment"];
-                for (var i = 0; i < columns.length-1; i++) {
+                const addressFields = ["City", "Street", "Apartment"];
+                for (let i = 0; i < columns.length-1; i++) {
                     if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
                         columns[i].ownerBand = columns.length-1; // assigns "Address" as the owner band column
                 }
@@ -49,7 +49,7 @@ The following code uses the **isBand** and **ownerBand** properties to display t
                 isBand: true
             });
     
-            let addressFields = ["City", "Street", "Apartment"];
+            const addressFields = ["City", "Street", "Apartment"];
             for (let i = 0; i < columns.length - 1; i++) {
                 if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
                     columns[i].ownerBand = columns.length - 1; // assigns "Address" as the owner band column
@@ -68,6 +68,78 @@ The following code uses the **isBand** and **ownerBand** properties to display t
     <dx-{widget-name} ...
         [customizeColumns]="customizeColumns">
     </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :customize-columns="customizeColumns">
+            <!-- ... -->
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        // ...
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            // ...
+        },
+        // ...
+        methods: {
+            customizeColumns (columns) {
+                columns.push({ // Pushes the "Address" band column into the "columns" array
+                    caption: "Address",
+                    isBand: true
+                });
+        
+                const addressFields = ["City", "Street", "Apartment"];
+                for (let i = 0; i < columns.length - 1; i++) {
+                    if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
+                        columns[i].ownerBand = columns.length - 1; // assigns "Address" as the owner band column
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        // ...
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        const customizeColumns = useCallback((columns) => {
+            columns.push({ // Pushes the "Address" band column into the "columns" array
+                caption: "Address",
+                isBand: true
+            });
+
+            const addressFields = ["City", "Street", "Apartment"];
+            for (let i = 0; i < columns.length - 1; i++) {
+                if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
+                    columns[i].ownerBand = columns.length - 1; // assigns "Address" as the owner band column
+            }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                customizeColumns={customizeColumns}>
+                {/* ... */}
+            </{WidgetName}>
+        );
+    }
     
 ---
 

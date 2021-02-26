@@ -31,7 +31,7 @@ In the following code, the **Add** button is added to rows whose status is _not_
             // ...
             editing: {
                 allowAdding: function(e) {
-                    return !e.row.data.Task_Status === "Completed";
+                    return e.row.data.Task_Status !== "Completed";
                 }
             }
         })
@@ -44,7 +44,7 @@ In the following code, the **Add** button is added to rows whose status is _not_
     // ...
     export class AppComponent {
         allowAdding: function(e) {
-            return !e.row.data.Task_Status === "Completed";
+            return e.row.data.Task_Status !== "Completed";
         }
     }
     @NgModule({
@@ -88,7 +88,7 @@ In the following code, the **Add** button is added to rows whose status is _not_
         // ...
         methods: {
             allowAdding(e) {
-                return !e.row.data.Task_Status === "Completed";
+                return e.row.data.Task_Status !== "Completed";
             }
         }
     }
@@ -106,7 +106,7 @@ In the following code, the **Add** button is added to rows whose status is _not_
 
     export default function App() {
         const allowAdding = useCallback((e) => {
-            return !e.row.data.Task_Status === "Completed";
+            return e.row.data.Task_Status !== "Completed";
         }, []);
 
         return (

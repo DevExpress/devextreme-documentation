@@ -48,6 +48,57 @@ Unlike normal columns, band columns do not hold data. Instead, they collect two 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn caption="Address">
+                <DxColumn data-field="City" />
+                <DxColumn data-field="Street" />
+                <DxColumn data-field="Apartment" />
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column caption="Address">
+                    <Column dataField="City" />
+                    <Column dataField="Street" />
+                    <Column dataField="Apartment" />
+                </Column>
+            </{WidgetName}>
+        );
+    }
     
 ---
 
@@ -108,6 +159,63 @@ For example, the following code specifies the **width** and **sortOrder** proper
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn
+                caption="Address"
+                :fixed="true"
+                fixed-position="right">
+                <DxColumn data-field="City" />
+                <DxColumn data-field="Street" :width="100" sort-order="asc" />
+                <DxColumn data-field="Apartment" />
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column
+                    caption="Address"
+                    fixed={true}
+                    fixedPosition="right">
+                    <Column dataField="City" />
+                    <Column dataField="Street" width={100} sortOrder="asc" />
+                    <Column dataField="Apartment" />
+                </Column>
+            </{WidgetName}>
+        );
+    }
     
 ---
 
@@ -170,6 +278,80 @@ Band columns support hierarchies of any nesting level. It means that the followi
         ],
         // ...
     })
+
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn caption="A">
+                <DxColumn data-field="A1" />
+                <DxColumn data-field="A2" />
+                <DxColumn caption="A3">
+                    <DxColumn data-field="A31" />
+                    <DxColumn data-field="A32" />
+                    <DxColumn caption="A33">
+                        <DxColumn data-field="A331" />
+                        <DxColumn data-field="A332" />
+                        <DxColumn data-field="A333" />
+                    </DxColumn>
+                </DxColumn>
+            </DxColumn>
+            <DxColumn caption="B">
+                ...
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column caption="A">
+                    <Column dataField="A1" />
+                    <Column dataField="A2" />
+                    <Column caption="A3">
+                        <Column dataField="A31" />
+                        <Column dataField="A32" />
+                        <Column caption="A33">
+                            <Column dataField="A331" />
+                            <Column dataField="A332" />
+                            <Column dataField="A333" />
+                        </Column>
+                    </Column>
+                </Column>
+                <Column caption="B">
+                    ...
+                </Column>
+            </{WidgetName}>
+        );
+    }
     
 ---
 

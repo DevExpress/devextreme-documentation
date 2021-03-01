@@ -152,10 +152,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     @(Html.DevExtreme().FileManager()
         .ID("file-manager")
         // ...
-        .onContextMenuShowing("gantt_contextMenuShowing_handler")
+        .onContextMenuShowing("fm_contextMenuShowing_handler")
     )
     <script>
-        function gantt_contextMenuShowing_handler(e) {
+        function fm_contextMenuShowing_handler(e) {
             const contextMenuItems = ['create', 'rename', 'delete'];
             if (e.viewArea === 'itemView'){
                 // your code

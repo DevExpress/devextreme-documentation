@@ -18,26 +18,131 @@ To add a predefined item to the context menu, add its [name](/Documentation/ApiR
 
 ---
 
-##### jQuery
+##### jQuery 
 
     <!--JavaScript-->
     $(function () {
-        $("#file-manager").dxFileManager({
+        $("#gantt").dxGantt({
             contextMenu: {
                 items: [
-                    // Specify a predefined item's name only
-                    "expandAll",
-                    "redo",
-                    // Specify a predefined item's name and optional settings
+                    "addTask",
+                    "deleteTask",
                     {
-                        name: "zoomIn",
-                        text: "Zooming"
+                        text: "Zoom",
+                        items: [
+                            "zoomIn",
+                            "zoomOut"
+                        ]
                     }
-                    //...
                 ]
-            }            
+            }
+            //...            
         });
     });  
+
+##### Angular
+
+    <!--HTML--> 
+    <dx-gantt ... >
+        <dxo-context-menu>
+            <dxi-item name="addTask"></dxi-item>
+            <dxi-item name="deleteTask"></dxi-item>
+            <dxi-item text="Zoom">
+                <dxi-item name="zoomIn"></dxi-item>
+                <dxi-item name="zoomOut"></dxi-item>
+            </dxi-item>        
+        </dxo-context-menu>
+        ...
+    </dx-gantt>
+
+    <!--TypeScript-->
+    import { DxGanttModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        // ...
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxGanttModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt ... >
+            <DxContextMenu>
+                <DxItem name="addTask"/>
+                <DxItem name="deleteTask"/>
+                <DxItem text="Zoom">
+                    <DxItem name="zoomIn"/>
+                    <DxItem name="zoomOut"/>
+                </DxItem>
+            </DxContextMenu>            
+        </DxGantt>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { DxGantt, DxContextMenu } from 'devextreme-vue/gantt';
+    
+    export default {
+        components: {
+            DxGantt,
+            DxContextMenu
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Gantt, { ContextMenu } from 'devextreme-react/gantt';
+
+    const App = () => {
+        return (
+            <Gantt...>
+                <ContextMenu>
+                    <Item name="addTask" />
+                    <Item name="deleteTask" />
+                    <Item text="Zoom">
+                        <Item name="zoomIn" />
+                        <Item name="zoomOut" />
+                    </Item>
+                </ContextMenu>                
+            </Gantt>
+        );
+    };
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add().Name(GanttContextMenuItem.AddTask);
+                i.Add().Name(GanttContextMenuItem.DeleteTask);
+                i.Add().Text("Zoom").Items(ii => {
+                    ii.Add.Name(GanttContextMenuItem.ZoomIn);
+                    ii.Add.Name(GanttContextMenuItem.ZoomOut);
+                });
+            });
+        })
+        // ...
+    )
 
 ---
 
@@ -53,7 +158,7 @@ To add a custom context menu item, specify its [text](/Documentation/ApiReferenc
 
     <!--JavaScript-->
     $(function () {
-        $("#file-manager").dxFileManager({
+        $("#gantt").dxGantt({
             contextMenu: {
                 items: [
                     {
@@ -85,6 +190,134 @@ To add a custom context menu item, specify its [text](/Documentation/ApiReferenc
             // your code
         }
     }
+
+##### Angular
+
+    <!--HTML--> 
+    <dx-gantt (onCustomCommand)="onCustomCommand($event)" >
+        <dxo-context-menu>
+            <dxi-item text="Category">
+                <dxi-item name="item1" text="Item 1"></dxi-item>
+                <dxi-item name="item2" text="Item 2"></dxi-item>
+                <dxi-item name="item3" text="Item 3"></dxi-item>
+            </dxi-item>        
+        </dxo-context-menu>
+        ...
+    </dx-gantt>
+
+    <!--TypeScript-->
+    import { DxGanttModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onCustomCommand(e) {
+            if(e.name == 'item1') {
+                // your code
+            }
+        }        
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxGanttModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt 
+            @custom-command="onCustomCommand" >
+            <DxContextMenu>
+                <DxItem text="Category">
+                    <DxItem name="item1" text="Item 1" />
+                    <DxItem name="item2" text="Item 2" />
+                    <DxItem name="item3" text="Item 3" />
+                </DxItem>
+            </DxContextMenu>            
+        </DxGantt>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { DxGantt, DxContextMenu } from 'devextreme-vue/gantt';
+    
+    export default {
+        components: {
+            DxGantt,
+            DxContextMenu
+        },
+        methods: {
+            onCustomCommand(e) {
+                if(e.name == 'item1') {
+                    // your code
+                }
+            }
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Gantt, { ContextMenu } from 'devextreme-react/gantt';
+
+    const App = () => {
+        const onCustomCommand = (e) => {
+            if(e.name == 'item1') {
+                // your code
+            }
+        };
+
+        return (
+            <Gantt 
+                onCustomCommand={onCustomCommand} >
+                <ContextMenu>
+                    <Item text="Category">
+                        <Item name="item1" text="Item 1" />
+                        <Item name="item2" text="Item 2" />
+                        <Item name="item3" text="Item 3" />
+                    </Item>
+                </ContextMenu>                
+            </Gantt>
+        );
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add().Text("Category").Items(ii => {
+                    ii.Add.Name("item1").Text("Item 1");
+                    ii.Add.Name("item2").Text("Item 2");
+                    ii.Add.Name("item3").Text("Item 3");
+                });
+            });
+        })
+        .onCustomCommand("gantt_customCommand_handler")
+        // ...
+    )
+
+    <script>
+        function gantt_customCommand_handler(e) {
+            if(e.name == "item1") {
+                // your code
+            }
+        }
+    </script>
 
 ---
 

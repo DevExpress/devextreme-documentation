@@ -1,10 +1,9 @@
 The **List** can load data from different data source types. To use a local array, assign it to the [dataSource](Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource) property and use the [displayExpr](/Documentation/ApiReference/UI_Components/dxList/Configuration/#displayExpr) property to specify the name of the data field whose values you would like to display. For information on data binding with other data source types, refer to the following articles:
 
-- [JSON Data](/Documentation/Guide/UI_Components/List/Data_Binding/JSON_Data/)
-- [OData Sevice](Documentation/Guide/UI_Components/List/Data_Binding/OData_Service/)
-- [Web API service](Documentation/Guide/UI_Components/List/Data_Binding/Web_API_Service/)
-- [MongoDB Service](Documentation/Guide/UI_Components/List/Data_Binding/MongoDB_Service/)
-- [Custom Sources](/Documentation/Guide/UI_Components/List/Data_Binding/Custom_Sources//)
+- [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
+- [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
+- [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+- [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
 ---
 ##### jQuery

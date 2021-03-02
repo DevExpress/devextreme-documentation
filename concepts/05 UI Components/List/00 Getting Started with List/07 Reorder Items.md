@@ -11,7 +11,6 @@ The List supports drag & drop functionality that allows users to reorder list it
                 allowReordering: true,
             },
         });
-            // ...
     });
     
 ---

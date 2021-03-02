@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets whether the container is expanded.
 
 ---
-<!-- Description goes here -->
+This property is in effect for `horizontalContainer` or `verticalContainer` shapes. If the shape is not a container, its **containerExpanded** property always returns `true`.

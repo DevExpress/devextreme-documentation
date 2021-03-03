@@ -47,7 +47,7 @@
         constructor(private httpClient: HttpClient) { /*...*/}
         // ...
         async ${{functionName}}(e) {
-            const isCancel = async () => {
+            const isCanceled = async () => {
                 const dialogResult = await confirm("Are you sure?", "Confirm changes");
                 if (dialogResult) {
                     let params = new HttpParams();
@@ -66,7 +66,7 @@
                     return true;
                 }
             }
-            e.cancel = await isCancel();
+            e.cancel = await isCanceled();
         }
     }
 
@@ -110,7 +110,7 @@
         // ...
         methods: {
             async ${{functionName}}(e) {
-                const isCancel = async () => {
+                const isCanceled = async () => {
                     const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
                     if (dialogResult) {
                         let params = "?";
@@ -128,7 +128,7 @@
                         return true;
                     }
                 }
-                e.cancel = await isCancel();
+                e.cancel = await isCanceled();
             }
         },
     };
@@ -145,7 +145,7 @@
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
     async function ${{functionName}}(e) {
-        const isCancel = async () => {
+        const isCanceled = async () => {
             const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
             if (dialogResult) {
                 let params = "?";
@@ -163,7 +163,7 @@
                 return true;
             }
         }
-        e.cancel = await isCancel();
+        e.cancel = await isCanceled();
     }
 
     function App() {

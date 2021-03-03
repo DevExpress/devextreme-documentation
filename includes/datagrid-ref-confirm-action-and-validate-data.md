@@ -94,7 +94,7 @@
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ...
-            @row-updating="${{functionName}}">
+            @${{vueAttribute}}="${{functionName}}">
         </Dx{WidgetName}>
     </template>
     <script>

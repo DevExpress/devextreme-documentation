@@ -33,7 +33,8 @@ This function allows you to intercept row insert and perform additional actions.
 
 #include datagrid-ref-confirm-action-and-validate-data with {
     apiMember: "onRowInserting",
-    functionName: "insertRow"
+    functionName: "insertRow",
+    vueAttribute: "row-inserting"
 }
 
 [note]

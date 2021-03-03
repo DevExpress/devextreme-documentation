@@ -39,7 +39,8 @@ This function allows you to intercept row update and perform additional actions.
 
 #include datagrid-ref-confirm-action-and-validate-data with {
     apiMember: "onRowUpdating",
-    functionName: "updateRow"
+    functionName: "updateRow",
+    vueAttribute: "row-updating"
 }
 
 [note]

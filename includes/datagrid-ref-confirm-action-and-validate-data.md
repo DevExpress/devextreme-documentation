@@ -46,27 +46,27 @@
     export class AppComponent {
         constructor(private httpClient: HttpClient) { /*...*/}
         // ...
-        updateRow(e) {
-            e.cancel = new Promise((resolve, reject) => {
-                const promptPromise = confirm("Are you sure?", "Confirm changes");
-                promptPromise.then((dialogResult) => {
-                    if (dialogResult) {
-                        let params = new HttpParams();
-                        for (let key in e.newData) {
-                            params = params.set(key, e.newData[key]);
-                        }
-                        this.httpClient
-                            .get("https://url/to/your/validation/service", { params: params })
-                            .toPromise()
-                            .then((validationResult) => {
-                                !validationResult.errorText ? resolve(false) : reject(validationResult.errorText);
-                            })
-                            .catch(() => reject());
-                    } else {
-                        resolve(true);
+        async updateRow(e) {
+            const isCancel = async () => {
+                const dialogResult = await confirm("Are you sure?", "Confirm changes");
+                if (dialogResult) {
+                    let params = new HttpParams();
+                    for (let key in e.newData) {
+                        params = params.set(key, e.newData[key]);
                     }
-                });
-            });
+                    const validationResult = await this.httpClient
+                        .get("https://url/to/your/validation/service", { params: params })
+                        .toPromise();
+                    if (validationResult.errorText) {
+                        throw validationResult.errorText;
+                    } else {
+                        return false;
+                    } 
+                } else {
+                    return true;
+                }
+            }
+            e.cancel = await isCancel();
         }
     }
 
@@ -119,7 +119,7 @@
                         }
                         params = params.slice(0, -1);
                         const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
-                        if(validationResult.errorText) {
+                        if (validationResult.errorText) {
                             throw validationResult.errorText;
                         } else {
                             return false;
@@ -141,6 +141,7 @@
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
+    import dialog from 'devextreme/ui/dialog';
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
     async function onRowUpdating(e) {
@@ -153,7 +154,7 @@
                 }
                 params = params.slice(0, -1);
                 const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
-                if(validationResult.errorText) {
+                if (validationResult.errorText) {
                     throw validationResult.errorText;
                 } else {
                     return false;

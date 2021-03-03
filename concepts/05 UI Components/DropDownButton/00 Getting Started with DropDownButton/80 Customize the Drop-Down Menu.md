@@ -1,9 +1,9 @@
-#include common-customize-dropdown-menu For example, the following code sets the height of UI Component's drop-down menu to 150 pixels:
+#include common-customize-dropdown-menu For example, the following code sets the height of the DropDownButton's drop-down menu to 150 pixels:
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         $("#myDropDownButton").dxDropDownButton({
             // ...
@@ -15,14 +15,12 @@
 
 ##### Angular
 
-    <!--HTML-->
-    <dx-drop-down-button
-        // ...
+    <!-- tab: app.component.html -->
+    <dx-drop-down-button ...
         [dropDownOptions]="dropDownOptions">
     </dx-drop-down-button>
 
-    <!--TypeScript-->
-    import { DxDropDownButton } from "devextreme-angular";
+    <!-- tab: app.component.ts -->
     // ...
     export class AppComponent {
         // ...
@@ -30,31 +28,20 @@
             height: 150
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDropDownButton
-        ],
-        // ...
-    })
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
-        <DxDropDownButton
-            // ...
-            :drop-down-options="dropDownOptions">
-        </DxDropDownButton>
+        <DxDropDownButton ...
+            :drop-down-options="dropDownOptions"
+        />
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { DxDropDownButton } from 'devextreme-vue/drop-down-button';
-
+    // ...
     export default {
-        components: { DxDropDownButton },
+        // ...
         data() {
             return {
                 // ...
@@ -68,26 +55,18 @@
 
 ##### React
 
-    import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DropDownButton from 'devextreme-react/drop-down-button';
-
+    <!-- tab: App.js -->
     // ...
-    
     const dropDownOptions = {
         height: 150
-    }
+    };
 
     class App extends React.Component {
         render() {
             return (
-                <DropDownButton
-                    // ...
-                    dropDownOptions={dropDownOptions}>
-
-                </DropDownButton>
+                <DropDownButton ...
+                    dropDownOptions={dropDownOptions}
+                />
             );
         }
     }

@@ -1,4 +1,4 @@
-#include common-customize-dropdown-menu For example, the following code set the width of UI Component's drop-down menu to 300 pixels:
+#include common-customize-dropdown-menu For example, the following code sets the height of UI Component's drop-down menu to 150 pixels:
 
 ---
 ##### jQuery
@@ -8,7 +8,7 @@
         $("#myDropDownButton").dxDropDownButton({
             // ...
             dropDownOptions: {
-                width: 300
+                height: 150
             }
         });
     });
@@ -27,7 +27,7 @@
     export class AppComponent {
         // ...
         dropDownOptions = {
-            width: 300
+            height: 150
         }
     }
     @NgModule({
@@ -59,7 +59,7 @@
             return {
                 // ...
                 dropDownOptions: {
-                    width: 300
+                    height: 150
                 }
             };
         }
@@ -77,7 +77,7 @@
     // ...
     
     const dropDownOptions = {
-        width: 300
+        height: 150
     }
 
     class App extends React.Component {

@@ -1,29 +1,14 @@
-#include common-customize-dropdown-menu For example, the following code adds **Add Item** button to the bottom of the UI Component.
+#include common-customize-dropdown-menu For example, the following code sets the height of UI Component's drop-down menu to 150 pixels:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
     $(function() {
-        $("#selectBox").dxSelectBox({
-            dataSource: [
-                "HD Video Player",
-                "SuperHD Video Player",
-                "SuperPlasma 50",
-                // ...
-            ],
+        $("#selectBox").dxSelectBox{
+            // ...
             dropDownOptions: {
-                toolBarItems: [{
-                    widget: "dxButton",
-                    location: "center",
-                    toolbar: "bottom",
-                    options: { 
-                        text: "Add Item", 
-                        onClick: function(e) { 
-                            // Your implementation goes here
-                         }
-                    }
-                }]
+                height: 150
             }
         });
     });
@@ -37,28 +22,18 @@
     </dx-select-box>
 
     <!--TypeScript-->
-    import { DxSelectBoxModule } from "devextreme-angular";
+    import { DxSelectBox } from "devextreme-angular";
     // ...
     export class AppComponent {
         // ...
         dropDownOptions = {
-            toolbarItems: [{
-                widget: "dxButton",
-                location: "center",
-                toolbar: "bottom",
-                options: { 
-                    text: "Add Item", 
-                    onClick: function(e): void { 
-                        // Your implementation goes here
-                     }
-                }
-            }]
+            height: 150
         }
     }
     @NgModule({
         imports: [
             // ...
-            DxSelectBoxModule
+            DxSelectBox
         ],
         // ...
     })
@@ -84,17 +59,7 @@
             return {
                 // ...
                 dropDownOptions: {
-                    toolbarItems: [{
-                        widget: "dxButton",
-                        location: "center",
-                        toolbar: "bottom",
-                        options: { 
-                            text: "Add Item", 
-                            onClick: function(e) {
-                                // Your implementation goes here
-                              }
-                        }
-                    }]
+                    height: 150
                 }
             };
         }
@@ -112,17 +77,7 @@
     // ...
     
     const dropDownOptions = {
-        toolbarItems: [{
-            widget: "dxButton",
-            location: "center",
-            toolbar: "bottom",
-            options: { 
-                text: "Add Item", 
-                onClick: function(e) {
-                 // Your implementation goes here
-                }
-            }
-       }]
+        height: 150
     }
 
     class App extends React.Component {

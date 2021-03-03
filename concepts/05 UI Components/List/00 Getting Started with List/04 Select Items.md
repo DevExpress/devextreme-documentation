@@ -12,3 +12,7 @@ The **List** supports the following item selection modes: *"single"*, *"multiple
     });
     
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
+}

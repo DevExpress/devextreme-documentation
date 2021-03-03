@@ -12,3 +12,7 @@ To allow users to delete items from the **List**, set the [allowItemDeleting](/D
     });
     
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/"
+}

@@ -18,3 +18,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
     });
     
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
+}

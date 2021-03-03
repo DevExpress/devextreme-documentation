@@ -13,3 +13,7 @@ To add a search bar to the **List**, set the [searchEnabled](/Documentation/ApiR
     });
     
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/"
+}

@@ -14,3 +14,7 @@ The List supports drag & drop functionality that allows users to reorder list it
     });
     
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ItemDragging/"
+}

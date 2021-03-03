@@ -109,26 +109,26 @@
         },
         // ...
         methods: {
-            updateRow(e) {
-                e.cancel = new Promise((resolve, reject) => {
-                    const promptPromise = dialog.confirm("Are you sure?", "Confirm changes");
-                    promptPromise.then((dialogResult) => {
-                        if (dialogResult) {
-                            let params = "?";
-                            for (let key in e.newData) {
-                                params += `${key}=${e.newData[key]}&`;
-                            }
-                            params = params.slice(0, -1);
-                            fetch(`https://url/to/your/validation/service${params}`)
-                                .then((validationResult) => {
-                                    !validationResult.errorText ? resolve(false) : reject(validationResult.errorText);
-                                })
-                                .catch(() => reject());
-                        } else {
-                            resolve(true);
+            async updateRow(e) {
+                const isCancel = async () => {
+                    const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
+                    if (dialogResult) {
+                        let params = "?";
+                        for (let key in e.newData) {
+                            params += `${key}=${e.newData[key]}&`;
                         }
-                    });
-                });
+                        params = params.slice(0, -1);
+                        const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
+                        if(validationResult.errorText) {
+                            throw validationResult.errorText;
+                        } else {
+                            return false;
+                        } 
+                    } else {
+                        return true;
+                    }
+                }
+                e.cancel = await isCancel();
             }
         },
     };
@@ -143,26 +143,26 @@
     
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
-    function onRowUpdating(e) {
-        e.cancel = new Promise((resolve, reject) => {
-            const promptPromise = dialog.confirm("Are you sure?", "Confirm changes");
-            promptPromise.then((dialogResult) => {
-                if (dialogResult) {
-                    let params = "?";
-                    for (let key in e.newData) {
-                        params += `${key}=${e.newData[key]}&`;
-                    }
-                    params = params.slice(0, -1);
-                    fetch(`https://url/to/your/validation/service${params}`)
-                        .then((validationResult) => {
-                            !validationResult.errorText ? resolve(false) : reject(validationResult.errorText);
-                        })
-                        .catch(() => reject());
-                } else {
-                    resolve(true);
+    async function onRowUpdating(e) {
+        const isCancel = async () => {
+            const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
+            if (dialogResult) {
+                let params = "?";
+                for (let key in e.newData) {
+                    params += `${key}=${e.newData[key]}&`;
                 }
-            });
-        });
+                params = params.slice(0, -1);
+                const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
+                if(validationResult.errorText) {
+                    throw validationResult.errorText;
+                } else {
+                    return false;
+                } 
+            } else {
+                return true;
+            }
+        }
+        e.cancel = await isCancel();
     }
 
     function App() {

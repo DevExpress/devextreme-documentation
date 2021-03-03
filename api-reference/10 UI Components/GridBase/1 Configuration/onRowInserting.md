@@ -31,7 +31,10 @@ Model data. Available only if you use Knockout.
 
 This function allows you to intercept row insert and perform additional actions. The following code shows how to use the function parameter's **cancel** field to prevent or continue row insert. In this code, a Promise is assigned to this field. Row insert continues if a user confirms it and row data validation on the server succeeds (the Promise is resolved); otherwise, row insert is prevented (the Promise is rejected).
 
-#include datagrid-ref-confirm-action-and-validate-data
+#include datagrid-ref-confirm-action-and-validate-data with {
+    apiMember: "onRowInserting",
+    functionName: "insertRow"
+}
 
 [note]
 

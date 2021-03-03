@@ -6,7 +6,7 @@
     $(function(){
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            onRowUpdating: function(e) {
+            ${{apiMember}}: function(e) {
                 const deferred = $.Deferred();
                 const promptPromise = DevExpress.ui.dialog.confirm("Are you sure?", "Confirm changes");
                 promptPromise.done((dialogResult) => {
@@ -46,7 +46,7 @@
     export class AppComponent {
         constructor(private httpClient: HttpClient) { /*...*/}
         // ...
-        async updateRow(e) {
+        async ${{functionName}}(e) {
             const isCancel = async () => {
                 const dialogResult = await confirm("Are you sure?", "Confirm changes");
                 if (dialogResult) {
@@ -72,7 +72,7 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... 
-        (onRowUpdating)="updateRow($event)">
+        (${{apiMember}})="${{functionName}}($event)">
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->
@@ -94,7 +94,7 @@
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ...
-            @row-updating="updateRow">
+            @row-updating="${{functionName}}">
         </Dx{WidgetName}>
     </template>
     <script>
@@ -109,7 +109,7 @@
         },
         // ...
         methods: {
-            async updateRow(e) {
+            async ${{functionName}}(e) {
                 const isCancel = async () => {
                     const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
                     if (dialogResult) {
@@ -144,7 +144,7 @@
     import dialog from 'devextreme/ui/dialog';
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
-    async function onRowUpdating(e) {
+    async function ${{functionName}}(e) {
         const isCancel = async () => {
             const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
             if (dialogResult) {
@@ -169,7 +169,7 @@
     function App() {
         return (
             <{WidgetName} ...
-                onRowUpdating={onRowUpdating}>
+                ${{apiMember}}={${{functionName}}}>
                 // ...
             </{WidgetName}>
         );

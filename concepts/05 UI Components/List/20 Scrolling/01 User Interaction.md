@@ -34,6 +34,44 @@ An end user can scroll the List with a swipe gesture and with the scrollbar. Alt
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :scroll-by-content="true" <!-- the swipe gesture on all platforms -->
+            :scroll-by-thumb="true" <!-- the scrollbar on all platforms -->
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ...
+                scrollByContent={true} {/* the swipe gesture on all platforms */}
+                scrollByThumb={true} {/* the scrollbar on all platforms */}
+            />
+        );
+    }
+
 ---
 
 The List employs native scrolling on most platforms, except non-Mac desktops and devices based on Android older than version 4. To employ native scrolling on all platforms without exception, assign **true** to the [useNativeScrolling](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#useNativeScrolling') property. Note that if you assign **false** to this property, the List will simulate scrolling on all platforms.
@@ -69,6 +107,42 @@ The List employs native scrolling on most platforms, except non-Mac desktops and
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :use-native-scrolling="true"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ...
+                useNativeScrolling={true}
+            />
+        );
+    }
 
 ---
 
@@ -108,6 +182,44 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :use-native-scrolling="false"
+            show-scrollbar="always" <!-- or "onScroll" | "onHover" | "never" -->
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ...
+                useNativeScrolling={true}
+                showScrollbar="always" {/* or "onScroll" | "onHover" | "never" */}
+            />
+        );
+    }
+
 ---
 
 On mobile devices, the user can pull the List to scroll it slightly further than its top or bottom boundary. Once the user releases the List, it bounces back to the boundary position. You can disable this effect using the [bounceEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/bounceEnabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#bounceEnabled') property.
@@ -144,6 +256,42 @@ On mobile devices, the user can pull the List to scroll it slightly further than
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :bounce-enabled="false"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ...
+                bounceEnabled={false}
+            />
+        );
+    }
+
 ---
 
 If you want to disable scrolling completely, assign **false** to the [scrollingEnabled](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/scrollingEnabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#scrollingEnabled') property.
@@ -179,6 +327,42 @@ If you want to disable scrolling completely, assign **false** to the [scrollingE
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :scrolling-enabled="false"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ...
+                scrollingEnabled={false}
+            />
+        );
+    }
 
 ---
 

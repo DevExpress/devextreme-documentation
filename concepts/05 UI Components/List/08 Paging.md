@@ -40,6 +40,62 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
         [dataSource]="listDataSource">
     </dx-list>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="listDataSource"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const listDataSource = new DataSource({
+        store: /* A store is configured here */,
+        paginate: true,
+        pageSize: 10
+    });
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                listDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const listDataSource = new DataSource({
+        store: /* A store is configured here */,
+        paginate: true,
+        pageSize: 10
+    });
+
+    export default function App() {
+        return (
+            <List
+                dataSource={listDataSource}
+            />
+        );
+    }
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -88,6 +144,29 @@ The next page can be rendered when a user scrolls the List down to the bottom, o
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            page-load-mode="scrollBottom" /> <!-- or "nextButton" -->
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    export default function App() {
+        return (
+            <List ...
+                pageLoadMode="scrollBottom" /> {/* or "nextButton" */}
+        );
+    }
 
 ---
 

@@ -18,12 +18,7 @@ If the user should be able to collapse or expand a group in the List, set the [c
         $("#listContainer").dxList({
             dataSource: fruitsVegetables,
             grouped: true,
-            collapsibleGroups: true,
-            itemTemplate: function(data, _, element) {
-                element.append(
-                    $("<p>").text(data.name + " | " + data.count).css("margin", 0)
-                )
-            }
+            collapsibleGroups: true
         });
     });
 
@@ -34,9 +29,6 @@ If the user should be able to collapse or expand a group in the List, set the [c
         [dataSource]="fruitsVegetables"
         [grouped]="true"
         [collapsibleGroups]="true">
-        <div *dxTemplate="let data of 'item'">
-            <p style="margin:0px">{{data.name}} | {{data.count}}</p>
-        </div>
     </dx-list>
 
     <!--TypeScript-->
@@ -61,6 +53,74 @@ If the user should be able to collapse or expand a group in the List, set the [c
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="fruitsVegetables"
+            :grouped="true"
+            :collapsible-groups="true"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        // ...
+    }];
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                fruitsVegetables
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        // ...
+    }];
+
+    export default function App() {
+        return (
+            <List
+                dataSource={fruitsVegetables}
+                grouped={true}
+                collapsibleGroups={true}
+            />
+        );
+    }
 
 ---
 
@@ -102,6 +162,71 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :ref="listRefKey"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+
+    const listRefKey = "my-list";
+    // ...
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                // ...
+                listRefKey
+            }
+        },
+        methods: {
+            collapseGroup(groupIndex) {
+                this.list.collapseGroup(groupIndex);
+            },
+            expandGroup(groupIndex) {
+                this.list.expandGroup(groupIndex);
+            }
+        },
+        computed: {
+            list: function() {
+                return this.$refs[listRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+    // ...
+    export default function App() {
+        const list = useRef(null);
+        const collapseGroup = (groupIndex) => {
+            list.current.instance.collapseGroup(groupIndex);
+        };
+        const expandGroup = (groupIndex) => {
+            list.current.instance.expandGroup(groupIndex);
+        };
+        return (
+            <List ...
+                ref={list}
+            />
+        );
+    }
 
 ---
 

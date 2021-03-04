@@ -41,6 +41,57 @@ To execute certain commands when the List is scrolled, handle the [scroll](/api-
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            @scroll="onListScroll"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+        methods: {
+            onListScroll(e) {
+                const scrollOffset = e.scrollOffset.top;
+                const scrolledToTop = e.reachedTop;
+                const scrolledToBottom = e.reachedBottom;
+                // Handler of the "scroll" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    const onListScroll = (e) => {
+        const scrollOffset = e.scrollOffset.top;
+        const scrolledToTop = e.reachedTop;
+        const scrolledToBottom = e.reachedBottom;
+        // Handler of the "scroll" event
+    }
+
+    export default function App() {
+        return (
+            <List
+                onScroll={onListScroll}
+            />
+        );
+    }
+
 ---
 
 If you are going to change the **scroll** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

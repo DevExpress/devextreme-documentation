@@ -1,4 +1,4 @@
-By default, group headers contain the text of the **key** field in a bold font. You can define a custom template for group headers if you need to. For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define a template for group headers.
+You can define a [groupTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate) to customize group headers. In Angular and Vue, declare the template in the markup. In React, use a rendering function (shown in the code below) or component. Without a **groupTemplate**, group headers display the text of the **key** field in bold font.
 
 ---
 
@@ -57,103 +57,146 @@ By default, group headers contain the text of the **key** field in a bold font. 
         // ...
     })
 
-##### AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-list="{
-            dataSource: listDataSource,
-            grouped: true,
-            groupTemplate: 'group',
-            itemTemplate: 'item'
-        }" dx-item-alias="itemObj">
-            <div data-options="dxTemplate: { name: 'group' }">
-                <p>{{ itemObj.key }} | {{ itemObj.overallCount }}</p>
-            </div>
-            <div data-options="dxTemplate: { name: 'item' }">
-                <p style="margin:0">{{ itemObj.name }} | {{ itemObj.count }}</p>
-            </div>
-        </div>
-    </div>
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="listDataSource"
+            :grouped="true"
+            item-template="list-item"
+            group-template="group-header">
+            <template #list-item="{ data }">
+                <p style="margin:0px">{{ data.name }} | {{ data.count }}</p>
+            </template>
+            <template #group-header="{ data }">
+                <p>{{ data.key }} | {{ data.overallCount }}</p>
+            </template>
+        </DxList>
+    </template>
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            const fruitsVegetables = [{
-                key: "Fruits",
-                items: [
-                    { name: "Apples", count: 10 },
-                    { name: "Oranges", count: 12 },
-                    { name: "Lemons", count: 15 }
-                ]
-            }, {
-                key: "Vegetables",
-                items: [
-                    { name: "Potatoes", count: 5 },
-                    { name: "Tomatoes", count: 9 },
-                    { name: "Turnips", count: 8 }
-                ]
-            }];
-            $scope.listDataSource = new DevExpress.data.DataSource({
-                store: fruitsVegetables,
-                map: function(groupedItem) {
-                    let overallCount = 0;
-                    groupedItem.items.forEach(function(item) {
-                        overallCount += item.count;
-                    })
-                    return $.extend(groupedItem, { overallCount: overallCount })
-                }
-            });
-        });
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
 
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
+    import DxList from 'devextreme-vue/list';
+    import DataSource from 'devextreme/data/data_source';
 
-##### Knockout
-
-    <!--HTML-->
-    <div data-bind="dxList: {
-        dataSource: listDataSource,
-        grouped: true,
-        groupTemplate: 'group',
-        itemTemplate: 'item'
-    }">
-        <div data-options="dxTemplate: { name: 'group' }">
-            <p data-bind="text: key + ' | ' + overallCount"></p>
-        </div>
-        <div data-options="dxTemplate: { name: 'item' }">
-            <p data-bind="text: name + ' | ' + count" style="margin:0"></p>
-        </div>
-    </div>
-
-    <!--JavaScript-->const fruitsVegetables = [{
-        // ...
-        // omitted for brevity
-        // see the AngularJS code
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
     }];
 
-    const viewModel = {
-        listDataSource: new DevExpress.data.DataSource({
-            store: fruitsVegetables,
-            map: function(groupedItem) {
-                let overallCount = 0;
-                groupedItem.items.forEach(function(item) {
-                    overallCount += item.count;
-                })
-                return $.extend(groupedItem, { overallCount: overallCount })
+    const listDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function(groupedItem) {
+            let overallCount = 0;
+            groupedItem.items.forEach(function(item) {
+                overallCount += item.count;
+            });
+            return Object.assign(groupedItem, { overallCount: overallCount });
+        }
+    });
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                listDataSource
             }
-        })
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    const listDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function(groupedItem) {
+            let overallCount = 0;
+            groupedItem.items.forEach(function(item) {
+                overallCount += item.count;
+            });
+            return Object.assign(groupedItem, { overallCount: overallCount });
+        }
+    });
+
+    const ListItem = (data) => {
+        return (
+            <p style={{ margin: '0px' }}>{ data.name } | { data.count }</p>
+        );
     };
 
-    ko.applyBindings(viewModel);
+    const ListGroupHeader = (data) => {
+        return (
+            <p>{ data.key } | { data.overallCount }</p>
+        );
+    };
+
+    export default function App() {
+        return (
+            <List
+                dataSource={listDataSource}
+                grouped={true}
+                itemRender={ListItem}
+                groupRender={ListGroupHeader}
+            />
+        );
+    }
 
 ---
 
 If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the [groupTemplate](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->const fruitsVegetables = [{
-        // ...
-        // omitted for brevity
-        // see the AngularJS code
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
     }];
 
     $(function() {

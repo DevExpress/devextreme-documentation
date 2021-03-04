@@ -195,7 +195,7 @@ If you need a more flexible solution, define an [itemTemplate](/Documentation/Ap
             <div>
                 <b>{ data.name }</b>
                 <br />
-                <p style={{ margin: '0px' }} >{ data.count }</p>
+                <p style={{ margin: '0px' }}>{ data.count }</p>
             </div>
         );
     };

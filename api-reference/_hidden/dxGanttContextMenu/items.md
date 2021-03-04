@@ -321,4 +321,6 @@ To add a custom context menu item, specify its [text](/Documentation/ApiReferenc
 
 ---
 
+Result:
+
 ![DevExtreme Gantt - Custom Context Menu Items](/images/Gantt/context-menu-custom-items.png)

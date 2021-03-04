@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-The Diagram UI component reloads the modified diagram data every time the data source changes. The **onRequestLayoutUpdate** function is executed after diagram data is reloaded and allows you to specify whether or not the UI component should update the diagram layout.
+A function that is executed after diagram data is reloaded and allows you to specify whether or not the UI component should update the diagram layout.
 
 ##### param(e): Object
 Information about the event.
@@ -27,6 +27,10 @@ The UI component instance's name.
 Model data. Available only if you use Knockout.
 
 ---
+The Diagram component updates the bound data source and reloads the diagram content each time a user changes diagram data by the UI. If you modify the data source directly (beyond the Diagram), use [push services](/Documentation/Guide/Data_Binding/Data_Layer/#Data_Modification/Integration_with_Push_Services) to notify the component about data modifications. In this case Diagram gets notifications about data source changes and reloads diagram content.
+
+Write the **onRequestLayoutUpdate** function to specify whether the UI component should recalculate and update the diagram layout after the data is reloaded.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/"
 }

@@ -33,11 +33,14 @@ The processed operation.
 Identifies the reason why the event is raised.
 
 ---
-If you want to disable a specific operation type for the entire diagram, you can also set an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property to `false`.
+To disable a specific operation type for the entire diagram, set an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property to `false`.
+
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"
 }
+
+When a user pastes or clones several items in a diagram, the control adds the items to the model one by one. For each added item, the **RequestEditOperation** event fires. In the event handler, you can access the processed item. However, if you call the [getItemById(id)](/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#getItemByIdid) method to access an attached connector (see the [attachedConnectorIds](/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/#attachedConnectorIds) property) or a container's child item (see the [containerChildItemIds](/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/#containerChildItemIds) property), you can get the `undefined`result if the item is not added to the model yet.
 
 #####See Also#####
 - [Restrict Edit Operations](/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations)

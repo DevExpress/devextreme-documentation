@@ -5,71 +5,24 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies the button's visibility.
+<!-- %shortDescription% -->
 
 ##### param(options): Object
-Information about the row and column that contain the button.
+<!-- %param(options)% -->
 
 ##### field(options.column): dxTreeListColumn
-The column's properties.
+<!-- %field(options.column)% -->
 
 ##### field(options.component): dxTreeList
-The UI component's instance.
+<!-- %field(options.component)% -->
 
 ##### field(options.row): dxTreeListRowObject
-The row's properties.
+<!-- %field(options.row)% -->
 
 ##### return: Boolean
-**true** if the button should be visible; otherwise, **false**.
+<!-- %return% -->
 
 ---
-Use the function when you need to show or hide the button for specific rows. For example, the UI component lists online orders and allows users to edit them. A **Cancel** button should allow users to cancel their orders. However, completed orders should not be canceled. The **visible** function in this case may look as follows:
+<!-- %fullDescription% -->
 
----
-##### jQuery  
-
-    <!--JavaScript-->
-    $(function () {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            columns: [{
-                type: "buttons",
-                buttons: [{
-                    text: "Cancel",
-                    visible: function (e) {
-                        return !e.row.isEditing && !e.row.data.isCompleted;
-                    }
-                }]
-            }]
-        });
-    });
-
-##### Angular  
-
-    <!--HTML-->
-    <dx-tree-list ... >
-        <dxi-column type="buttons">
-            <dxi-button
-                text="Cancel"
-                [visible]="isCancelButtonVisible">
-            </dxi-button>
-        </dxi-column>
-    </dx-tree-list>
-
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        isCancelButtonVisible (e) {
-            return !e.row.isEditing && !e.row.data.isCompleted;
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
-    
----
+<!-- import * from 'api-reference\_hidden\dxDataGridColumnButton\visible.md' -->

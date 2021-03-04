@@ -40,9 +40,63 @@ For a minor customization of List items, you can define [specific fields](/api-r
         [dataSource]="fruits">
     </dx-list>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="fruits"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+
+    const fruits = [
+        { text: "Apples", badge: 10 },
+        { text: "Oranges", badge: 12, disabled: true },
+        { text: "Lemons", badge: 15, visible: false }
+    ];
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                fruits
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+
+    const fruits = [
+        { text: "Apples", badge: 10 },
+        { text: "Oranges", badge: 12, disabled: true },
+        { text: "Lemons", badge: 15, visible: false }
+    ];
+
+    export default function App() {
+        return (
+            <List
+                dataSource={fruits}
+            />
+        );
+    }
+
 ---
 
-If you need a more flexible solution, define a custom template for UI component items. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define a template for List items.
+If you need a more flexible solution, define an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
@@ -78,61 +132,82 @@ If you need a more flexible solution, define a custom template for UI component 
         // ...
     })
 
-##### AngularJS
+##### Vue
 
-    <!--HTML-->
-    <div ng-controller="DemoController">
-        <div dx-list="{
-            dataSource: fruits,
-            itemTemplate: 'listItem'
-        }" dx-item-alias="fruit">
-            <div data-options="dxTemplate: { name: 'listItem' }">
-                <b>{{ fruit.name }}</b><br />
-                <p style="margin:0px">{{ fruit.count }}</p>
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="fruits"
+            item-template="list-item">
+            <template #list-item="{ data }">
+                <div>
+                    <b>{{ data.name }}</b>
+                    <br />
+                    <p style="margin:0px">{{ data.count }}</p>
+                </div>
+            </template>
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+
+    const fruits = [
+        { name: "Apples", count: 10 },
+        { name: "Oranges", count: 12 },
+        { name: "Lemons", count: 15 },
+        { name: "Pears", count: 20 },
+        { name: "Pineapples", count: 3 }
+    ];
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                fruits
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+
+    const fruits = [
+        { name: "Apples", count: 10 },
+        { name: "Oranges", count: 12 },
+        { name: "Lemons", count: 15 },
+        { name: "Pears", count: 20 },
+        { name: "Pineapples", count: 3 }
+    ];
+
+    const ListItem = (data) => {
+        return (
+            <div>
+                <b>{ data.name }</b>
+                <br />
+                <p style={{ margin: '0px' }}>{ data.count }</p>
             </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.fruits = [
-                { name: "Apples", count: 10 },
-                { name: "Oranges", count: 12 },
-                { name: "Lemons", count: 15 },
-                { name: "Pears", count: 20 },
-                { name: "Pineapples", count: 3 }
-            ];
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-##### Knockout
-
-    <!--HTML-->
-    <div data-bind="dxList: {
-        dataSource: fruits,
-        itemTemplate: 'listItem'
-    }">
-        <div data-options="dxTemplate: { name: 'listItem' }">
-            <b data-bind="text: name"></b><br />
-            <p data-bind="text: count" style="margin:0px"></p>
-        </div>
-    </div>
-
-
-    <!--JavaScript-->
-    const viewModel = {
-        fruits: [
-            { name: "Apples", count: 10 },
-            { name: "Oranges", count: 12 },
-            { name: "Lemons", count: 15 },
-            { name: "Pears", count: 20 },
-            { name: "Pineapples", count: 3 }
-        ]
+        );
     };
 
-    ko.applyBindings(viewModel);
+    export default function App() {
+        return (
+            <List
+                dataSource={fruits}
+                itemRender={ListItem}
+            />
+        );
+    }
 
 ---
 

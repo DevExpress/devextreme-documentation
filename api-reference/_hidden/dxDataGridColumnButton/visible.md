@@ -30,7 +30,7 @@ Use the function to show or hide the button for specific rows. For example, the 
 
     <!--JavaScript-->
     $(function () {
-        $("#dataGridContainer").dxDataGrid({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             columns: [{
                 type: "buttons",
@@ -47,17 +47,17 @@ Use the function to show or hide the button for specific rows. For example, the 
 ##### Angular  
 
     <!--HTML-->
-    <dx-data-grid ... >
+    <dx-{widget-name} ... >
         <dxi-column type="buttons">
             <dxi-button
                 text="Cancel"
                 [visible]="isCancelButtonVisible">
             </dxi-button>
         </dxi-column>
-    </dx-data-grid>
+    </dx-{widget-name}>
 
     <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
+    import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
         isCancelButtonVisible (e) {
@@ -67,10 +67,75 @@ Use the function to show or hide the button for specific rows. For example, the 
     @NgModule({
         imports: [
             // ...
-            DxDataGridModule
+            Dx{WidgetName}Module
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn type="buttons">
+                <DxButton
+                    text="Cancel"
+                    :visible="isCancelButtonVisible"
+                />
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn,
+            DxButton
+        },
+        // ...
+        methods: {
+            isCancelButtonVisible (e) {
+                return !e.row.isEditing && !e.row.data.isCompleted;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column,
+        Button
+    } from 'devextreme-react/{widget-name}';
+
+    function isCancelButtonVisible (e) {
+        return !e.row.isEditing && !e.row.data.isCompleted;
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column type="buttons">
+                    <Button
+                        text="Cancel"
+                        visible={isCancelButtonVisible}
+                    />
+                </Column>
+            </{WidgetName}>
+        );
+    }
     
 ---
 

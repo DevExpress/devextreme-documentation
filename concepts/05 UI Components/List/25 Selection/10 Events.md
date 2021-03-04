@@ -31,12 +31,12 @@ The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Widg
     // ...
     export class AppComponent {
         onSelectionChanged (e) {
-            let addedItems = e.addedItems;
-            let removedItems = e.removedItems;
+            const addedItems = e.addedItems;
+            const removedItems = e.removedItems;
             // Handler of the "selectionChanged" event
         }
         onSelectAllValueChanged (e) {
-            let newCheckBoxValue = e.value;
+            const newCheckBoxValue = e.value;
             // Handler of the "selectAllValueChanged" event
         }
     }
@@ -47,6 +47,66 @@ The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Widg
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            @selection-changed="onSelectionChanged"
+            @select-all-value-changed="onSelectAllValueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+        methods: {
+            onSelectionChanged (e) {
+                const addedItems = e.addedItems;
+                const removedItems = e.removedItems;
+                // Handler of the "selectionChanged" event
+            },
+            onSelectAllValueChanged (e) {
+                const newCheckBoxValue = e.value;
+                // Handler of the "selectAllValueChanged" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+
+    const onSelectionChanged = (e) => {
+        const addedItems = e.addedItems;
+        const removedItems = e.removedItems;
+        // Handler of the "selectionChanged" event
+    };
+    const onSelectAllValueChanged = (e) => {
+        const newCheckBoxValue = e.value;
+        // Handler of the "selectAllValueChanged" event
+    }
+
+    export default function App() {
+        return (
+            <List ...
+                onSelectionChanged={onSelectionChanged}
+                onSelectAllValueChanged={onSelectAllValueChanged}
+            />
+        );
+    }
 
 ---
 

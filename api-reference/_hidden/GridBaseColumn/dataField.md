@@ -64,6 +64,8 @@ Review the following notes about data binding:
 
 - Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 
+- Column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption) property. Unlike **dataField**, **caption** can contain any characters.
+
 [/note]
 
 #####See Also#####

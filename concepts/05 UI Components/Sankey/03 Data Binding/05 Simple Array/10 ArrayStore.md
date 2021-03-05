@@ -1,4 +1,4 @@
-You can place a JavaScript array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') to extend its functionality. The **ArrayStore** provides an interface for loading and editing data, and allows you to handle data-related events. You should declare the **ArrayStore** inside the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') configuration object because the **Sankey** UI component requires disabled [pagination](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') to prevent data from partitioning.
+You can place a JavaScript array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') to extend its functionality. The **ArrayStore** provides an interface for loading and editing data, and allows you to handle data-related events. You should declare the **ArrayStore** inside the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') configuration object because the Sankey UI component requires disabled [pagination](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') to prevent data from partitioning.
 
 ---
 ##### jQuery
@@ -70,7 +70,7 @@ You can place a JavaScript array in an [ArrayStore](/api-reference/30%20Data%20L
 
 ---
 
-The **DataSource** can also be used for data processing. In the following example, it is used to [map](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping') an array of arrays provided originally to a **Sankey**-supported array of objects:
+The **DataSource** can also be used for data processing. In the following example, it is used to [map](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping') an array of arrays provided originally to a Sankey-supported array of objects:
 
 ---
 ##### jQuery

@@ -1,6 +1,6 @@
-The **Diagram** allows you to bind a number of shape and connector visual properties, like type, size, and style. 
+The Diagram allows you to bind a number of shape and connector visual properties, like type, size, and style. 
 
-[note] If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded **Diagram** UI component and is lost after a page is reloaded.
+[note] If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded Diagram UI component and is lost after a page is reloaded.
        
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 
@@ -76,7 +76,7 @@ The **Diagram** allows you to bind a number of shape and connector visual proper
     </tr>
 </table>
 
-[note] If you bind a **Diagram** to a [linear](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array'), edge binding properties are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
+[note] If you bind a Diagram to a [linear](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array'), edge binding properties are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
 
 <table class="dx-table">
     <tr>

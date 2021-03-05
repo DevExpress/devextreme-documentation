@@ -9,7 +9,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies properties for **Chart** UI component series.
+Specifies properties for Chart UI component series.
 
 ---
 A series represents a grouping of related data points. The most important characteristic of a series is its type, which determines a particular visual representation of data. You can find more details on each series type in the corresponding topics in the [Series](/concepts/05%20Widgets/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') help section.

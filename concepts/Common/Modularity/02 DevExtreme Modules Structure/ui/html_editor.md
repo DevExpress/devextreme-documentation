@@ -1,4 +1,4 @@
-Exposes the **HtmlEditor** UI component.
+Exposes the HtmlEditor UI component.
 
 Exports:
 

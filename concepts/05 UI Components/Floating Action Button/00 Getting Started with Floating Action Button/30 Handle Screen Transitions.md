@@ -4,9 +4,9 @@ Different screens use different FABs because a FAB should perform or contain onl
 
 To implement this behavior in Angular, Vue, and React, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
 
-The approach is different if the components have the same URL, or actions are in the same component, or when you configure this behavior in jQuery. Change the [visible](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each **SpeedDialAction** when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+The approach is different if the components have the same URL, or actions are in the same component, or when you configure this behavior in jQuery. Change the [visible](/api-reference/10%20UI%20Widgets/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
 
-The following code shows the **TabPanel** configuration and an empty `switchSDA` function. This function controls the actions' visibility when it is implemented later.
+The following code shows the TabPanel configuration and an empty `switchSDA` function. This function controls the actions' visibility when it is implemented later.
 
 ---
 ##### jQuery
@@ -328,7 +328,7 @@ The following code shows the **TabPanel** configuration and an empty `switchSDA`
 
 ---
 
-The following code adds four **SpeedDialAction**s to the page, but only the "Edit" action is **visible** at launch. The `switchSDA` function changes the actions' visibility based on the selected tab:
+The following code adds four SpeedDialActions to the page, but only the "Edit" action is **visible** at launch. The `switchSDA` function changes the actions' visibility based on the selected tab:
 
 ---
 ##### jQuery
@@ -661,7 +661,7 @@ The following code adds four **SpeedDialAction**s to the page, but only the "Edi
 
 ---
 
-You can find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button/tree/main/handle-screen-transitions" target="_blank">getting-started-with-floating-action-button/handle-screen-transitions</a>.
+You can find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-screen-transitions/" target="_blank">getting-started-with-floating-action-button-screen-transitions</a>.
 
 For more information on the Floating Action Button's functionality, explore the following resources:
 

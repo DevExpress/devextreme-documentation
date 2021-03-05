@@ -7,7 +7,7 @@ type: Object
 Configures the appearance of minor axis ticks.
 
 ---
-Along with [major ticks](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/tick/'), the **Chart** UI component supports minor ticks. They divide an axis segment limited by two neighboring major ticks.
+Along with [major ticks](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/tick/'), the Chart UI component supports minor ticks. They divide an axis segment limited by two neighboring major ticks.
 
 ![DevExtreme HTML5 Charts MinorTicks](/images/ChartJS/visual_elements/minor_ticks.png)
 

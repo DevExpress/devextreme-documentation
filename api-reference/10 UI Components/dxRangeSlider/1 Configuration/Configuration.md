@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **RangeSlider** UI component.
+An object defining configuration properties for the RangeSlider UI component.
 
 ---
 #####See Also#####

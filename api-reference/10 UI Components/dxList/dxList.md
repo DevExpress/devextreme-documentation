@@ -6,7 +6,7 @@ inherits: CollectionWidget,SearchBoxMixin
 ---
 ---
 ##### shortDescription
-The **List** is a UI component that represents a collection of items in a scrollable list.
+The List is a UI component that represents a collection of items in a scrollable list.
 
 ##### widgettree
 dataSource: ["Prepare 2013 Financial","Prepare 3013 Marketing Plan","Update Personnel Files","Review Health Insurance PropertiesUnder the Affordable Care Act","Choose between PPO and HMO Health Plan",

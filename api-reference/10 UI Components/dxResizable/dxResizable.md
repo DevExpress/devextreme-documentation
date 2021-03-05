@@ -6,7 +6,7 @@ inherits: DOMComponent
 ---
 ---
 ##### shortDescription
-The **Resizable** UI component enables its content to be resizable in the UI.
+The Resizable UI component enables its content to be resizable in the UI.
 
 ##### lib
 dx.web.js, dx.viz-web.js, dx.all.js

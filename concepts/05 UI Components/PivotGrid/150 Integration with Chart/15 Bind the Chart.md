@@ -136,4 +136,4 @@ The `bindChart(chart, integrationOptions)` method returns a function that unbind
     if (unbindChart)
         unbindChart();
 
-The next topic shows how **PivotGrid** transforms its data before sending it to **Chart** and how you can govern this process.
+The next topic shows how PivotGrid transforms its data before sending it to Chart and how you can govern this process.

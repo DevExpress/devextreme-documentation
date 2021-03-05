@@ -1,4 +1,4 @@
-Exposes the **RangeSlider** UI component.
+Exposes the RangeSlider UI component.
 
 Exports:
 

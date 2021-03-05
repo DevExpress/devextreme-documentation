@@ -1,4 +1,4 @@
-To bind the **Funnel** to an array, pass this array to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#dataSource') property. The array should contain objects.
+To bind the Funnel to an array, pass this array to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#dataSource') property. The array should contain objects.
 
 ---
 ##### jQuery

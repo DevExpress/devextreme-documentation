@@ -194,7 +194,7 @@ Bind each series to a value axis using the [axis](/api-reference/20%20Data%20Vis
 
     ---
 
-All value axes in the **Chart** are synchronized by default, but you can explicitly specify the value at which one axis should be synchronized with others. For this purpose, set the [synchronizedValue](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/synchronizedValue.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#synchronizedValue') property. In addition, you can add more space between two side-by-side axes using the [multipleAxesSpacing](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/multipleAxesSpacing.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#multipleAxesSpacing') property.
+All value axes in the Chart are synchronized by default, but you can explicitly specify the value at which one axis should be synchronized with others. For this purpose, set the [synchronizedValue](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/synchronizedValue.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#synchronizedValue') property. In addition, you can add more space between two side-by-side axes using the [multipleAxesSpacing](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/multipleAxesSpacing.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#multipleAxesSpacing') property.
 
 ---
 ##### jQuery

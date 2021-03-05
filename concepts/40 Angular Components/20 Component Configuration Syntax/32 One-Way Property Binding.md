@@ -1,4 +1,4 @@
-Changes in the `bindingProperty` are propagated to the **TextBox**'s **value**, but not vice versa:
+Changes in the `bindingProperty` are propagated to the TextBox's **value**, but not vice versa:
 
     <!-- tab: app.component.html -->
     <dx-text-box [value]="bindingProperty"></dx-text-box>

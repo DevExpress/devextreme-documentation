@@ -4,7 +4,7 @@ An OLAP cube is a multi-dimensional dataset that allows data mining and analysis
 
 To access an OLAP cube, implement the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'): specify the OLAP server's [url](/api-reference/30%20Data%20Layer/XmlaStore/1%20Configuration/url.md '/Documentation/ApiReference/Data_Layer/XmlaStore/Configuration/#url'), the [catalog](/api-reference/30%20Data%20Layer/XmlaStore/1%20Configuration/catalog.md '/Documentation/ApiReference/Data_Layer/XmlaStore/Configuration/#catalog') that contains the OLAP cube that you access, and the [cube](/api-reference/30%20Data%20Layer/XmlaStore/1%20Configuration/cube.md '/Documentation/ApiReference/Data_Layer/XmlaStore/Configuration/#cube').
 
-Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables you to group, sort, filter, and perform other data shaping operations on the store's data. Bind the **PivotGrid** to this **PivotGridDataSource**:
+Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables you to group, sort, filter, and perform other data shaping operations on the store's data. Bind the PivotGrid to this **PivotGridDataSource**:
 
 ---
 ##### jQuery

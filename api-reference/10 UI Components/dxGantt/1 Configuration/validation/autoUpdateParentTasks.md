@@ -9,7 +9,7 @@ Specifies whether to recalculate the parent task's duration and progress when it
 
 ---
 
-The **Gantt** uses the following rules to determine whether to update a parent task when its subtask is modified.
+The Gantt uses the following rules to determine whether to update a parent task when its subtask is modified.
 
 - A parent task's duration equals a summary duration of its child tasks.
 - A parent task and its first child starts at the same time.

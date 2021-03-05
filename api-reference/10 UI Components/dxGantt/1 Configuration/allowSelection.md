@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether users can select tasks in the **Gantt**.
+Specifies whether users can select tasks in the Gantt.
 
 ---
 #include common-demobutton with {

@@ -1,4 +1,4 @@
-A tooltip is a small pop-up rectangle that displays information on a hovered bar in **BarGauge**. By default, the tooltip shows the value indicated by the hovered element. However, it is possible to display other information in the tooltip. You can customize the text of the tooltip and its appearance in the way you require.
+A tooltip is a small pop-up rectangle that displays information on a hovered bar in BarGauge. By default, the tooltip shows the value indicated by the hovered element. However, it is possible to display other information in the tooltip. You can customize the text of the tooltip and its appearance in the way you require.
 
 <img src="/images/ChartJS/BarGaugeTooltip.png" alt="DevExtreme HTML5 JavaScript Gauges dxBarGauge BarGauge Tooltip" style="display:block; margin:0 auto" />
 

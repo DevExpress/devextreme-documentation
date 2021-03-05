@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the configuration properties of the **PivotGridFieldChooser** UI component.
+This section describes the configuration properties of the PivotGridFieldChooser UI component.
 
 ---
 #####See Also#####

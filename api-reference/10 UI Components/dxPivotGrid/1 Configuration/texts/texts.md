@@ -4,6 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Strings that can be changed or localized in the **PivotGrid** UI component.
+Strings that can be changed or localized in the PivotGrid UI component.
 
 ---

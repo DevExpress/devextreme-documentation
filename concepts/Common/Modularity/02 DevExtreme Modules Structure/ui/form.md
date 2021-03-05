@@ -1,4 +1,4 @@
-Exposes the **Form** UI component.
+Exposes the Form UI component.
 
 Exports:
 

@@ -1,4 +1,4 @@
-Exposes the **Chart** UI component.
+Exposes the Chart UI component.
 
 Exports:
 

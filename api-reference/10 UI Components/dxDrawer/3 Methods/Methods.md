@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes the methods that control the **Drawer** UI component.
+This section describes the methods that control the Drawer UI component.
 
 ---
 #####See Also#####

@@ -55,5 +55,17 @@ The **columns** array can contain only the names of data source fields, which is
     
 ---
 
+[note]
+
+Review the following notes about data binding:
+
+- If you create an unbound column (use the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) function), specify the **columns[]**.[name](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name) property instead of **dataField**.
+
+- Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
+
+- Column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption) property. Unlike **dataField**, **caption** can contain any characters.
+
+[/note]
+
 #####See Also#####
 - [Columns - Overview](/concepts/05%20Widgets/DataGrid/15%20Columns/00%20Overview.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Overview/')

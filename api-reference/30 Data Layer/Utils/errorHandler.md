@@ -3,6 +3,7 @@ id: Utils.errorHandler
 module: data/errors
 export: errorHandler
 type: function(e)
+deprecated: 
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
-[note] In this article, the [Button](/Documentation/ApiReference/UI_Components/dxButton/) UI component is used to demonstrate how to show and hide the **LoadPanel**. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
+[note] In this article, the [Button](/Documentation/ApiReference/UI_Components/dxButton/) UI component is used to demonstrate how to show and hide the LoadPanel. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
-To show or hide the **LoadPanel** programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the **LoadPanel**, respectively.
+To show or hide the LoadPanel programmatically, call the [show()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show') or [hide()](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Widgets/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the LoadPanel, respectively.
 
 ---
 ##### jQuery
@@ -62,7 +62,7 @@ To show or hide the **LoadPanel** programmatically, call the [show()](/api-refer
 
 ---
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the **LoadPanel** UI component to a component property. After that, change this property, and the **LoadPanel** will appear or disappear.
+With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the LoadPanel UI component to a component property. After that, change this property, and the LoadPanel will appear or disappear.
 
 ---
 ##### Angular
@@ -186,7 +186,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 
 ---
 
-To execute certain commands before or after the **LoadPanel** is shown/hidden, handle the [showing](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/showing.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#showing'), [shown](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/shown.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#shown'), [hiding](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hiding.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#hiding') or [hidden](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hidden.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** property. For example, in the following code, a handler of the **shown** event is assigned to the [onShown](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/onShown.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#onShown') property. This handler hides the **LoadPanel** three seconds after it was shown.
+To execute certain commands before or after the LoadPanel is shown/hidden, handle the [showing](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/showing.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#showing'), [shown](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/shown.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#shown'), [hiding](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hiding.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#hiding') or [hidden](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hidden.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** property. For example, in the following code, a handler of the **shown** event is assigned to the [onShown](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/onShown.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#onShown') property. This handler hides the LoadPanel three seconds after it was shown.
 
 ---
 ##### jQuery

@@ -6,7 +6,7 @@ inherits: BaseWidget,DataHelperMixin
 ---
 ---
 ##### shortDescription
-The **Sankey** is a UI component that visualizes the flow magnitude between value sets. The values being connected are called nodes; the connections - links. The higher the flow magnitude, the wider the link is.
+The Sankey is a UI component that visualizes the flow magnitude between value sets. The values being connected are called nodes; the connections - links. The higher the flow magnitude, the wider the link is.
 
 ##### widgettree
 dataSource: [

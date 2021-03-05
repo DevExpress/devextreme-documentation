@@ -1,4 +1,4 @@
-A nested **Box** is configured similarly to an ordinary **Box**. To nest one **Box** into another, add one more item to the parent **Box** and put the markup of the nested **Box** into this item.
+A nested Box is configured similarly to an ordinary Box. To nest one Box into another, add one more item to the parent Box and put the markup of the nested Box into this item.
 
 ---
 

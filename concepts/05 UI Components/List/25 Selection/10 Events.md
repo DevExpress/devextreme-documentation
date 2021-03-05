@@ -1,4 +1,4 @@
-The **List** UI component fires the [selectionChanged](/api-reference/10%20UI%20Widgets/CollectionWidget/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectionChanged') event when an item is selected or when the selection is cancelled. The UI component also fires the [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxList/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectAllValueChanged') event when the [*"Select All"*](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectAllMode') check box has changed its value. If the functions that handle these events are not going to be changed during the lifetime of the UI component, assign them to the corresponding **on*EventName*** properties when you configure the UI component.
+The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Widgets/CollectionWidget/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectionChanged') event when an item is selected or when the selection is cancelled. The UI component also fires the [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxList/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectAllValueChanged') event when the [*"Select All"*](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectAllMode') check box has changed its value. If the functions that handle these events are not going to be changed during the lifetime of the UI component, assign them to the corresponding **on*EventName*** properties when you configure the UI component.
 
 ---
 ##### jQuery
@@ -31,12 +31,12 @@ The **List** UI component fires the [selectionChanged](/api-reference/10%20UI%20
     // ...
     export class AppComponent {
         onSelectionChanged (e) {
-            let addedItems = e.addedItems;
-            let removedItems = e.removedItems;
+            const addedItems = e.addedItems;
+            const removedItems = e.removedItems;
             // Handler of the "selectionChanged" event
         }
         onSelectAllValueChanged (e) {
-            let newCheckBoxValue = e.value;
+            const newCheckBoxValue = e.value;
             // Handler of the "selectAllValueChanged" event
         }
     }
@@ -47,6 +47,66 @@ The **List** UI component fires the [selectionChanged](/api-reference/10%20UI%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            @selection-changed="onSelectionChanged"
+            @select-all-value-changed="onSelectAllValueChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+        methods: {
+            onSelectionChanged (e) {
+                const addedItems = e.addedItems;
+                const removedItems = e.removedItems;
+                // Handler of the "selectionChanged" event
+            },
+            onSelectAllValueChanged (e) {
+                const newCheckBoxValue = e.value;
+                // Handler of the "selectAllValueChanged" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+
+    const onSelectionChanged = (e) => {
+        const addedItems = e.addedItems;
+        const removedItems = e.removedItems;
+        // Handler of the "selectionChanged" event
+    };
+    const onSelectAllValueChanged = (e) => {
+        const newCheckBoxValue = e.value;
+        // Handler of the "selectAllValueChanged" event
+    }
+
+    export default function App() {
+        return (
+            <List ...
+                onSelectionChanged={onSelectionChanged}
+                onSelectAllValueChanged={onSelectAllValueChanged}
+            />
+        );
+    }
 
 ---
 

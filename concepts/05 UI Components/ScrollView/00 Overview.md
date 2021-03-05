@@ -1,10 +1,10 @@
-The **ScrollView** is a UI component that enables a user to scroll its content.
+The ScrollView is a UI component that enables a user to scroll its content.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/"
 }
 
-The following code adds a simple **ScrollView** to your page. The [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#width') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#height') properties specify the UI component size. By default, the **ScrollView** allows a user to scroll its content vertically. To change this behavior, use the [direction](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction') property. Note that horizontal scrolling appears only if the content is wider than the **ScrollView**. Otherwise, the content adapts to the width of the **ScrollView**.
+The following code adds a simple ScrollView to your page. The [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#width') and [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#height') properties specify the UI component size. By default, the ScrollView allows a user to scroll its content vertically. To change this behavior, use the [direction](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction') property. Note that horizontal scrolling appears only if the content is wider than the ScrollView. Otherwise, the content adapts to the width of the ScrollView.
 
 ---
 
@@ -98,7 +98,7 @@ The following code adds a simple **ScrollView** to your page. The [width](/api-r
 
 ---
 
-The **ScrollView** employs native scrolling on most platforms, except desktops. To employ it on all platforms without exception, assign **true** to the [useNative](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/useNative.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#useNative') property. Note that if you assign **false** to this property, the **ScrollView** will simulate scrolling on all platforms.
+The ScrollView employs native scrolling on most platforms, except desktops. To employ it on all platforms without exception, assign **true** to the [useNative](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/useNative.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#useNative') property. Note that if you assign **false** to this property, the ScrollView will simulate scrolling on all platforms.
 
 ---
 

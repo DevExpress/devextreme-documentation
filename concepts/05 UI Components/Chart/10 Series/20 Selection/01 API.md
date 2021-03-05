@@ -212,7 +212,7 @@ There are series that consist of points only, for example, [bar](/concepts/05%20
 
 ---
 
-In the previous code examples, selection was cleared of a specific series. If you need to clear selection of all series, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#clearSelection') method in the **Chart** instance.
+In the previous code examples, selection was cleared of a specific series. If you need to clear selection of all series, call the [clearSelection()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#clearSelection') method in the Chart instance.
 
 ---
 ##### jQuery

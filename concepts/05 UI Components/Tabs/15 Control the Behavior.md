@@ -1,4 +1,4 @@
-An end user can select **Tabs** items in two different modes: *'single'* (by default) or *'multiple'*. You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectionMode') property to change the mode. 
+An end user can select Tabs items in two different modes: *'single'* (by default) or *'multiple'*. You can use the [selectionMode](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectionMode') property to change the mode. 
 
 ---
 ##### jQuery
@@ -358,7 +358,7 @@ As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Widge
 
 ---
 
-When the total length of all tabs exceeds the **Tabs** container, the UI component shows navigation buttons that help an end user scroll the tab strip. This behavior is default only for desktops. To enable it on all types of devices, assign **true** to the [showNavButtons](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/showNavButtons.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#showNavButtons') property. Otherwise, assign **false**.
+When the total length of all tabs exceeds the Tabs container, the UI component shows navigation buttons that help an end user scroll the tab strip. This behavior is default only for desktops. To enable it on all types of devices, assign **true** to the [showNavButtons](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/showNavButtons.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#showNavButtons') property. Otherwise, assign **false**.
 
 ---
 ##### jQuery

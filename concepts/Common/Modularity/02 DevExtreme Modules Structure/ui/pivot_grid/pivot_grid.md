@@ -1,4 +1,4 @@
-Exposes the **PivotGrid** UI component.
+Exposes the PivotGrid UI component.
 
 Exports:
 

@@ -6,7 +6,7 @@ inherits: BaseChart
 ---
 ---
 ##### shortDescription
-The **PieChart** is a UI component that visualizes data as a circle divided into sectors that each represents a portion of the whole.
+The PieChart is a UI component that visualizes data as a circle divided into sectors that each represents a portion of the whole.
 
 ##### widgettree
 dataSource: [{

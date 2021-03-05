@@ -8,7 +8,8 @@ default: undefined
 Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
 
 ---
-The **columns** array can contain only the names of data source fields, which is sufficient if you do not need to specify any other column properties. But if you do, then this array should contain objects that configure columns. To bind the columns to data source fields, use the **dataField** property. Note that you can combine both declarations in a single array as shown in the following code.
+
+The **columns** array can contain column objects and data field names as strings. If you use column objects, specify the **dataField** property to bind the object to a column from a data source:
 
 ---
 ##### jQuery
@@ -52,6 +53,59 @@ The **columns** array can contain only the names of data source fields, which is
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn data-field="CustomerID" />
+            <DxColumn data-field="EmployeeID" :width="200" />
+            <DxColumn data-field="OrderDate" />
+            <DxColumn data-field="Freight" format="fixedPoint" />
+            <DxColumn data-field="ShipName" />
+            <DxColumn data-field="ShipCity" />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column dataField="CustomerID" />
+                <Column dataField="EmployeeID" width={200} />
+                <Column dataField="OrderDate" />
+                <Column dataField="Freight" format="fixedPoint" />
+                <Column dataField="ShipName" />
+                <Column dataField="ShipCity" />
+            </{WidgetName}>
+        );
+    }
     
 ---
 

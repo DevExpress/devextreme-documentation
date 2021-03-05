@@ -1,4 +1,4 @@
-Exposes the **Sortable** UI component.
+Exposes the Sortable UI component.
 
 Exports:
 

@@ -15,7 +15,7 @@ Open the following example to learn how disabling the **encodeHtml** property ca
     // ...
     ];
 
-When **encodeHtml** is **true**, the **DataGrid** interprets this code as text and simply displays it:
+When **encodeHtml** is **true**, the DataGrid interprets this code as text and simply displays it:
 
 ![DevExtreme DataGrid with enabled HTML encoding](/images/DataGrid/encodehtml-true.png)
 

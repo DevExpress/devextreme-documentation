@@ -1,4 +1,4 @@
-Exposes the **TabPanel** UI component.
+Exposes the TabPanel UI component.
 
 Exports:
 

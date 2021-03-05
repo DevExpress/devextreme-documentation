@@ -126,7 +126,7 @@ Style for strips belonging to the argument axis.
 Style for strips belonging to the value axis.
 
 - **commonAxisSettings**.[stripStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/stripStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/stripStyle/')         
-Style for all strips in the **Chart**.
+Style for all strips in the Chart.
 
 Note that individual settings override axis-specific settings which, in turn, override common settings.
 

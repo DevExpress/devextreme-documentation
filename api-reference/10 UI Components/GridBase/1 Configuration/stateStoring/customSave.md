@@ -111,4 +111,109 @@ In the following code, the state is saved and loaded from a remote storage:
         </dxo-state-storing>
     </dx-{widget-name}>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxStateStoring 
+                :enabled="true" 
+                type="custom" 
+                :custom-load="loadState"
+                :custom-save="saveState"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxStateStoring
+    } from 'devextreme-vue/{widget-name}';
+    import 'whatwg-fetch';
+
+    function sendStorageRequest (storageKey, method, data) {
+        const url = "https://url/to/your/storage/" + JSON.stringify(storageKey);
+        const requestOptions = {
+            method: method,
+            headers: {
+                "Accept": "text/html",
+                "Content-Type": "text/html"
+            }
+        };
+        if (data) {
+            requestOptions.body = JSON.stringify(data);
+        }
+        return fetch(url, requestOptions)
+                .then(response => response.json())
+                .catch(() => { throw 'Data Loading Error'; });
+    }
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxStateStoring
+        },
+        // ...
+        methods: {
+            loadState () {
+                return sendStorageRequest("storageKey", "GET");
+            },
+            saveState (state) {
+                sendStorageRequest("storageKey", "PUT", state);
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        StateStoring
+    } from 'devextreme-react/{widget-name}';
+    import 'whatwg-fetch';
+
+    function sendStorageRequest (storageKey, method, data) {
+        const url = "https://url/to/your/storage/" + JSON.stringify(storageKey);
+        const requestOptions = {
+            method: method,
+            headers: {
+                "Accept": "text/html",
+                "Content-Type": "text/html"
+            }
+        };
+        if (data) {
+            requestOptions.body = JSON.stringify(data);
+        }
+        return fetch(url, requestOptions)
+                .then(response => response.json())
+                .catch(() => { throw 'Data Loading Error'; });
+    }
+
+    export default function App() {
+        const loadState = useCallback(() => {
+            return sendStorageRequest("storageKey", "GET");
+        }, []);
+
+        const saveState = useCallback((state) => {
+            sendStorageRequest("storageKey", "PUT", state);
+        }, []);
+
+        return (
+            <{WidgetName} ... >
+                <StateStoring 
+                    enabled={true}
+                    type="custom"
+                    customLoad={loadState}
+                    customSave={saveState}
+                />
+            </{WidgetName}>
+        );
+    }
+
 ---

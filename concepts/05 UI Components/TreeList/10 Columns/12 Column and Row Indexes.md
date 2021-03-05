@@ -4,7 +4,7 @@ The following indexes can be used in methods and callback functions:
     Equals the column's index in the [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array. 
 
 - **Visible Column Index**      
-    Depends on the column's current location in the **TreeList** and changes dynamically when columns are [reordered](/concepts/05%20Widgets/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/'). You can get this index using the [getVisibleColumnIndex(id)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getVisibleColumnIndex(id).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getVisibleColumnIndexid') method.
+    Depends on the column's current location in the TreeList and changes dynamically when columns are [reordered](/concepts/05%20Widgets/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/'). You can get this index using the [getVisibleColumnIndex(id)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getVisibleColumnIndex(id).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getVisibleColumnIndexid') method.
 
     ![DevExtreme HTML5 JavaScript TreeList Visible Column Index](/images/TreeList/visual_elements/columnIndexes.png)
 

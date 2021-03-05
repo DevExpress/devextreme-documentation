@@ -8,19 +8,21 @@ The master-detail interface becomes available after you specify the detail secti
 
 #####jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#dataGridContainer").dxDataGrid({
             // ...
             masterDetail: {
                 enabled: true,
                 autoExpandAll: true,
                 template: function (container, info) {
-                    var currentEmployeeData = info.data;
+                    сonst currentEmployeeData = info.data;
                     container.append(
                         $('<div class="employeeInfo">
                             <img class="employeePhoto" src="' + currentEmployeeData.Picture + '" />
                             <p class="employeeNotes">' + currentEmployeeData.Notes + '</p>
-                        </div>'));
+                        </div>')
+                    );
                 } 
             }
         });
@@ -29,8 +31,12 @@ The master-detail interface becomes available after you specify the detail secti
 ##### Angular
     
     <!--HTML-->
-    <dx-data-grid ...
-        [masterDetail]="{ enabled: true, template: 'detail', autoExpandAll: true }">
+    <dx-data-grid ... >
+        <dxo-master-detail
+            [enabled]="true"
+            [autoExpandAll]="true"
+            [template]="'detail'">
+        </dxo-master-detail>
         <div *dxTemplate="let employee of 'detail'">
             <div class="employeeInfo">
                 <img class="employeePhoto" [src]="employee.data.Picture" />
@@ -53,9 +59,75 @@ The master-detail interface becomes available after you specify the detail secti
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxMasterDetail
+                :enabled="true"
+                :auto-expand-all="true"
+                template="detail"
+            />
+            <template #detail="{ data }">
+                <div class="employeeInfo">
+                    <img class="employeePhoto" :src="data.Picture" />
+                    <p class="employeeNotes">{{ data.Notes }}</p>
+                </div>
+            </template>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxMasterDetail
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxMasterDetail
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        MasterDetail
+    } from 'devextreme-react/data-grid';
+
+    const DetailSection = ({ data }) => {
+        return (
+            <div class="employeeInfo">
+                <img class="employeePhoto" src={data.Picture} />
+                <p class="employeeNotes">{data.Notes}</p>
+            </div>
+        );
+    };
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <MasterDetail
+                    enabled={true}
+                    autoExpandAll={true}
+                    render={DetailSection}
+                />
+            </DataGrid>
+        );
+    }
+
 ---
 
-Once loaded, a detail section's content remains cached until a user switches to another page in the **DataGrid** or reloads the web page.
+Once loaded, a detail section's content remains cached until a user switches to another page in the DataGrid or reloads the web page.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailView/"

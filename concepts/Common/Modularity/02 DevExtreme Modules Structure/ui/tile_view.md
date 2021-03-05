@@ -1,4 +1,4 @@
-Exposes the **TileView** UI component.
+Exposes the TileView UI component.
 
 Exports:
 

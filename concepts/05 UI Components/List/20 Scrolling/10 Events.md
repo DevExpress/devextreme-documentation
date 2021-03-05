@@ -1,4 +1,4 @@
-To execute certain commands when the **List** is scrolled, handle the [scroll](/api-reference/10%20UI%20Widgets/dxList/4%20Events/scroll.md '/Documentation/ApiReference/UI_Components/dxList/Events/#scroll') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the **onScroll** property when you configure the UI component.
+To execute certain commands when the List is scrolled, handle the [scroll](/api-reference/10%20UI%20Widgets/dxList/4%20Events/scroll.md '/Documentation/ApiReference/UI_Components/dxList/Events/#scroll') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the **onScroll** property when you configure the UI component.
 
 ---
 ##### jQuery
@@ -40,6 +40,57 @@ To execute certain commands when the **List** is scrolled, handle the [scroll](/
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            @scroll="onListScroll"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+        methods: {
+            onListScroll(e) {
+                const scrollOffset = e.scrollOffset.top;
+                const scrolledToTop = e.reachedTop;
+                const scrolledToBottom = e.reachedBottom;
+                // Handler of the "scroll" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    const onListScroll = (e) => {
+        const scrollOffset = e.scrollOffset.top;
+        const scrolledToTop = e.reachedTop;
+        const scrolledToBottom = e.reachedBottom;
+        // Handler of the "scroll" event
+    }
+
+    export default function App() {
+        return (
+            <List
+                onScroll={onListScroll}
+            />
+        );
+    }
 
 ---
 

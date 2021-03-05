@@ -6,7 +6,7 @@ inherits: dxDropDownList
 ---
 ---
 ##### shortDescription
-The **Lookup** is a UI component that allows an end user to search for an item in a collection shown in a drop-down menu.
+The Lookup is a UI component that allows an end user to search for an item in a collection shown in a drop-down menu.
 
 ##### widgettree
 dataSource: ["Prepare 2013 Financial","Prepare 3013 Marketing Plan","Update Personnel Files","Review Health Insurance Options Under the Affordable Care Act","Choose between PPO and HMO Health Plan",

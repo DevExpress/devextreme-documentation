@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **Button** UI component is a simple button that performs specified commands when a user clicks it.
+The Button UI component is a simple button that performs specified commands when a user clicks it.
 
 ##### widgettree
 icon: "favorites",

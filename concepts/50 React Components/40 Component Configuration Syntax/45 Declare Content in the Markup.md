@@ -11,17 +11,30 @@ The following UI components allow you to declare their content directly in the m
 - [Tooltip](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 - [ValidationGroup](/api-reference/10%20UI%20Widgets/dxValidationGroup '/Documentation/ApiReference/UI_Components/dxValidationGroup/')
 
-The following is an example with **ScrollView**:
+The following is an example with ScrollView:
 
-    <!-- tab: App.js -->
+    <!-- tab: Function component -->
     import ScrollView from 'devextreme-react/scroll-view';
 
-    function App() {
+    export default function App() {
         return (
             <ScrollView>
                 <div>Some scrollable content</div>
             </ScrollView>
         );
+    }
+    
+    <!-- tab: Class component -->
+    import ScrollView from 'devextreme-react/scroll-view';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <ScrollView>
+                    <div>Some scrollable content</div>
+                </ScrollView>
+            );
+        }
     }
 
 [important]

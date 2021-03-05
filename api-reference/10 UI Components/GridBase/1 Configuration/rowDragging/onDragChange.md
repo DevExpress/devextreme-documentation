@@ -16,7 +16,7 @@ Allows you to cancel the gesture.
 The UI component's instance.
 
 ##### field(e.dropInsideItem): Boolean
-Indicates if the dragged row is dropped inside another row. Available only for the **TreeList** UI component.
+Indicates if the dragged row is dropped inside another row. Available only for the TreeList UI component.
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -46,6 +46,3 @@ Custom [data](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/rowDra
 The position in which the row is placed. If the row is dragged away from the UI component, the value is **-1**.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
-} 

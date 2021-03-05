@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The **FileManager** UI component allows users to manage files and folders.
+The FileManager UI component allows users to manage files and folders.
 
 ![DevExtreme File Manager - Getting Started](/images/FileManager/getting-started-overview.png)
 

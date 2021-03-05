@@ -63,6 +63,74 @@ In the following code, the `Full_Name` grid column in the editing state produces
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxEditing
+                :allow-updating="true"
+                mode="form"
+            />
+            <DxColumn data-field="Full_Name">
+                <DxFormItem :col-span="2">
+                    <DxLabel location="top" />
+                </DxFormItem>
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxEditing,
+        DxColumn,
+        DxFormItem,
+        DxLabel
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxEditing,
+            DxColumn,
+            DxFormItem,
+            DxLabel
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Editing,
+        Column,
+        FormItem,
+        Label
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Editing
+                    allowUpdating={true}
+                    mode="form"
+                />
+                <Column dataField="Full_Name">
+                    <FormItem colSpan={2}>
+                        <Label location="top" />
+                    </FormItem>
+                </Column>
+            </{WidgetName}>
+        );
+    }
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -84,8 +152,6 @@ In the following code, the `Full_Name` grid column in the editing state produces
     )
     
 ---
-
-
 
 [note] The **formItem** object does not allow you to specify a [template](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template'). Use the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') instead.
 

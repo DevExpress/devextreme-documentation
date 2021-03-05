@@ -1,4 +1,4 @@
-Items in the **List** are grouped if they are grouped in the data source. The **List** recognizes a group when it encounters an object with the **key** and **items** fields. The **key** is the group header, the **items** are items that fell into the group. For example, the `fruitsVegetables` array from the following code produces two groups with three items each. Note that the **List** needs to be informed that it deals with grouped data, therefore its [grouped](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#grouped') property is set to **true**.
+Items in the List are grouped if they are grouped in the data source. The List recognizes a group when it encounters an object with the **key** and **items** fields. The **key** is the group header, the **items** are items that fell into the group. For example, the `fruitsVegetables` array from the following code produces two groups with three items each. Note that the List needs to be informed that it deals with grouped data, therefore its [grouped](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#grouped') property is set to **true**.
 
 ---
 ##### jQuery
@@ -69,6 +69,93 @@ Items in the **List** are grouped if they are grouped in the data source. The **
             <p style="margin:0px">{{data.name}} | {{data.count}}</p>
         </div>
     </dx-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="fruitsVegetables"
+            :grouped="true"
+            item-template="list-item">
+            <template #list-item="{ data }">
+                <p style="margin:0px">{{ data.name }} | {{ data.count }}</p>
+            </template>
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                fruitsVegetables
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+
+    const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    const ListItem = (data) => {
+        return (
+            <p style={{ margin: '0px' }}>{ data.name } | { data.count }</p>
+        );
+    };
+
+    export default function App() {
+        return (
+            <List
+                dataSource={fruitsVegetables}
+                grouped={true}
+                itemRender={ListItem}
+            />
+        );
+    }
 
 ---
 
@@ -168,6 +255,115 @@ If objects in your data source miss the **key** and **items** fields, use the [m
         </div>
     </dx-list>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="listDataSource"
+            :grouped="true"
+            item-template="list-item">
+            <template #list-item="{ data }">
+                <p style="margin:0px">{{ data.name }} | {{ data.count }}</p>
+            </template>
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruitsVegetables = [{
+        type: "Fruits",
+        collection: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        type: "Vegetables",
+        collection: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    const listDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function (item) {
+            return {
+                key: item.type,
+                items: item.collection
+            }  
+        }
+    });
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                listDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruitsVegetables = [{
+        type: "Fruits",
+        collection: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        type: "Vegetables",
+        collection: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    const listDataSource = new DataSource({
+        store: fruitsVegetables,
+        map: function (item) {
+            return {
+                key: item.type,
+                items: item.collection
+            }  
+        }
+    });
+
+    const ListItem = (data) => {
+        return (
+            <p style={{ margin: '0px' }}>{ data.name } | { data.count }</p>
+        );
+    };
+
+    export default function App() {
+        return (
+            <List
+                dataSource={listDataSource}
+                grouped={true}
+                itemRender={ListItem}
+            />
+        );
+    }
+
 ---
 
 If your data is not grouped at all, you can group it using the [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property of the **DataSource**. See the [Data Layer - Grouping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/4%20Grouping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Grouping') topic for details.
@@ -235,6 +431,91 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
             <p style="margin:0px">{{data.name}} | {{data.count}}</p>
         </div>
     </dx-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="listDataSource"
+            :grouped="true"
+            item-template="list-item">
+            <template #list-item="{ data }">
+                <p style="margin:0px">{{ data.name }} | {{ data.count }}</p>
+            </template>
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxList from 'devextreme-vue/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruitsVegetables = [
+        { type: "Fruits", name: "Apples", count: 10 },
+        { type: "Fruits", name: "Oranges", count: 12 },
+        { type: "Fruits", name: "Lemons", count: 15 },
+        { type: "Vegetables", name: "Potatoes", count: 5 },
+        { type: "Vegetables", name: "Tomatoes", count: 9 },
+        { type: "Vegetables", name: "Turnips", count: 8 }
+    ];
+
+    const listDataSource = new DataSource({
+        store: fruitsVegetables,
+        group: "type"
+    });
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                listDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import List from 'devextreme-react/list';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruitsVegetables = [
+        { type: "Fruits", name: "Apples", count: 10 },
+        { type: "Fruits", name: "Oranges", count: 12 },
+        { type: "Fruits", name: "Lemons", count: 15 },
+        { type: "Vegetables", name: "Potatoes", count: 5 },
+        { type: "Vegetables", name: "Tomatoes", count: 9 },
+        { type: "Vegetables", name: "Turnips", count: 8 }
+    ];
+
+    const listDataSource = new DataSource({
+        store: fruitsVegetables,
+        group: "type"
+    });
+
+    const ListItem = (data) => {
+        return (
+            <p style={{ margin: '0px' }}>{ data.name } | { data.count }</p>
+        );
+    };
+
+    export default function App() {
+        return (
+            <List
+                dataSource={listDataSource}
+                grouped={true}
+                itemRender={ListItem}
+            />
+        );
+    }
 
 ---
 

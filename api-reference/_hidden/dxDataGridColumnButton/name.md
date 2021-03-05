@@ -15,7 +15,7 @@ To configure a built-in button, assign its name to this property. The other prop
 
     <!--JavaScript-->
     $(function () {
-        $("#dataGridContainer").dxDataGrid({
+        $("#{widgetName}Container").dx{WidgetName}({
             // ...
             columns: [{
                 type: "buttons",
@@ -30,17 +30,17 @@ To configure a built-in button, assign its name to this property. The other prop
 ##### Angular  
 
     <!--HTML-->
-    <dx-data-grid ... >
+    <dx-{widget-name} ... >
         <dxi-column type="buttons">
             <dxi-button
                 name="save"
                 cssClass="my-class">
             </dxi-button>
         </dxi-column>
-    </dx-data-grid>
+    </dx-{widget-name}>
 
     <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
+    import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
         // ...
@@ -48,9 +48,65 @@ To configure a built-in button, assign its name to this property. The other prop
     @NgModule({
         imports: [
             // ...
-            DxDataGridModule
+            Dx{WidgetName}Module
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn type="buttons">
+                <DxButton
+                    name="save"
+                    css-class="my-class"
+                />
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn,
+            DxButton
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column,
+        Button
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column type="buttons">
+                    <Button
+                        name="save"
+                        cssClass="my-class"
+                    />
+                </Column>
+            </{WidgetName}>
+        );
+    }
     
 ---

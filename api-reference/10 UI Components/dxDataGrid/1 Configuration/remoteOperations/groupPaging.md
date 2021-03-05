@@ -8,7 +8,7 @@ default: false
 Specifies whether paging by groups should be performed on the server side.
 
 ---
-Remote group paging allows you to load groups from a remote source in portions. This feature speeds up grouping because the **DataGrid** transmits less data. However, requests are more frequent because the **DataGrid** sends several requests each time a user expands a group or sorts/filters data.
+Remote group paging allows you to load groups from a remote source in portions. This feature speeds up grouping because the DataGrid transmits less data. However, requests are more frequent because the DataGrid sends several requests each time a user expands a group or sorts/filters data.
 
 Remote group paging has the following specificities:
 

@@ -1,4 +1,4 @@
-In the **RangeSelector** UI component, sliders perform as the elements of control. By dragging them, you can select a range.
+In the RangeSelector UI component, sliders perform as the elements of control. By dragging them, you can select a range.
 
 ![ChartJS RangeSelector](/images/ChartJS/RangeSelectorSliders.png)
 

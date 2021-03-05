@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to display the **Popup** in full-screen mode.
+Specifies whether to display the Popup in full-screen mode.
 
 ---
 

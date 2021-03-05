@@ -6,11 +6,11 @@ id: dxFileManager.getCurrentDirectory()
 Gets the current directory object.
 
 ##### return: Object
-An object that contains information about the **FileManager** item.
+An object that contains information about the FileManager item.
 
 ---
 
-This method returns the following **FileManager** item's parameters: 
+This method returns the following FileManager item's parameters: 
 
 - **pathInfo**: Array<Object> - Information about the item's path.
 - **parentPath**: string - The item's parent path.

@@ -15,7 +15,7 @@ Contains all customization settings divided into groups:
     
     The settings list also contains a search box to search for a UI component or UI component group.
 
-- **Toolbar** (top panel)       
+- Toolbar (top panel)       
 Contains the theme switcher and **Import** and **Export** buttons.
 
 - **Preview area**      

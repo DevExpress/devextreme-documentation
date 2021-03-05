@@ -1,10 +1,10 @@
-The **CheckBox** is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
+The CheckBox is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
 }
 
-The following code adds the **CheckBox** to your page.
+The following code adds the CheckBox to your page.
 
 ---
 ##### jQuery
@@ -109,7 +109,7 @@ The following code adds the **CheckBox** to your page.
 
 ---
 
-The **CheckBox** UI component can have the following states: checked (the **value** property is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).
+The CheckBox UI component can have the following states: checked (the **value** property is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).
 
 #####See Also#####
 #include common-link-configurewidget

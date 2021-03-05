@@ -1,10 +1,10 @@
-Timeline views display appointments on a horizontal timeline. The **Scheduler** UI component arranges appointments from left to right. If their time intervals overlap, the width of appointments is decreased and they are placed alongside or under each other.
+Timeline views display appointments on a horizontal timeline. The Scheduler UI component arranges appointments from left to right. If their time intervals overlap, the width of appointments is decreased and they are placed alongside or under each other.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/"
 }
 
-The **Scheduler** UI component supports the following timeline views.
+The Scheduler UI component supports the following timeline views.
 
 - **timelineDay** 
 

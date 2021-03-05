@@ -1,4 +1,4 @@
-The **Scheduler** can load and update data from these data source types:
+The Scheduler can load and update data from these data source types:
 
 * [Local array](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/)
 
@@ -12,7 +12,7 @@ The **Scheduler** can load and update data from these data source types:
 
 Use the [dataSource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource) property to specify a data source. In this tutorial, we use a local array.
 
-Once you assign the data source, you need to map field values to appointment attributes. If data objects include fields that match the [predefined structure](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/), the **Scheduler** recognizes them automatically and displays appointments without further configuration. To map other fields, use **...Expr** properties. In this tutorial, the [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) and [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) fields are recognized automatically, whereas other field names are specified in the [textExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#textExpr), [allDayExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr) properties.
+Once you assign the data source, you need to map field values to appointment attributes. If data objects include fields that match the [predefined structure](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/), the Scheduler recognizes them automatically and displays appointments without further configuration. To map other fields, use **...Expr** properties. In this tutorial, the [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) and [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) fields are recognized automatically, whereas other field names are specified in the [textExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#textExpr), [allDayExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr) properties.
 
 ---
 ##### jQuery
@@ -334,4 +334,4 @@ Once you assign the data source, you need to map field values to appointment att
 
 ---
 
-Run the code and ensure that the **Scheduler** properly displays all appointments.
+Run the code and ensure that the Scheduler properly displays all appointments.

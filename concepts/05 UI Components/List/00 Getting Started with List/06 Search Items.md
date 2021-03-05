@@ -11,7 +11,61 @@ To add a search bar to the **List**, set the [searchEnabled](/Documentation/ApiR
             searchMode: 'contains',
         });
     });
-    
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-list...
+        [searchEnabled]="true"
+        searchMode="contains">
+    </dx-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app-container">
+            <DxList...
+                :search-enabled="true"
+                search-mode="contains">
+            </DxList>
+        </div>
+    </template>
+
+    <script>
+    // ...
+    import service from './products.service';
+
+    export default {
+        // ...
+        data() {
+            // ...
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    function App() {
+        return (
+            <div className="App">
+                <List...
+                    searchEnabled={true}
+                    searchMode="contains">
+                </List>
+            </div>
+        );
+    }
+
+    export default App;
+
+
+        
 ---
 
 #include common-demobutton with {

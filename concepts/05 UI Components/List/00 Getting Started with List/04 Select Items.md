@@ -10,6 +10,57 @@ The **List** supports the following item selection modes: *"single"*, *"multiple
             selectionMode: 'single',
          });
     });
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-list...
+        selectionMode="single">
+    </dx-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app-container">
+            <DxList...
+                selection-mode="single">
+            </DxList>
+        </div>
+    </template>
+
+    <script>
+    // ...
+    import service from './products.service';
+
+    export default {
+        // ...
+        data() {
+            // ...
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    function App() {
+        return (
+            <div className="App">
+                <List...
+                    selectionMode="single">
+                </List>
+            </div>
+        );
+    }
+
+    export default App;
+
+
     
 ---
 

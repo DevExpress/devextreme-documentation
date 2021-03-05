@@ -16,6 +16,87 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
             grouped: true,
         });    
     });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-list...
+        displayExpr="Name"
+        grouped="true">
+    </dx-list>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import DataSource from "devextreme/data/data_source";
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+        dataSource = new DataSource({
+            store: this.products,
+            group: "Category"
+        });
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app-container">
+            <DxList...
+                displayExpr="Name"
+                :grouped="true">
+            </DxList>
+        </div>
+    </template>
+
+    <script>
+    // ...
+    import service from './products.service';
+
+    export default {
+        // ...
+        data() {
+            // ...
+            dataSource: new DataSource({
+                store: products,
+                group: "Category"
+            }),
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    const dataSource = new DataSource({
+        store: products,
+        group: "Category"
+    });
+
+    function App() {
+        return (
+            <div className="App">
+                <List...
+                    displayExpr="Name"
+                    grouped={true}>
+                </List>
+            </div>
+        );
+    }
+
+    export default App;
+
+
     
 ---
 

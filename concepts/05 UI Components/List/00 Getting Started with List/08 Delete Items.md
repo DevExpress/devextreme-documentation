@@ -10,7 +10,58 @@ To allow users to delete items from the **List**, set the [allowItemDeleting](/D
             allowItemDeleting: true,
         });
     });
-    
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-list...
+        [allowItemDeleting]="true">
+    </dx-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div id="app-container">
+            <DxList...
+                :allow-item-deleting="true">
+            </DxList>
+        </div>
+    </template>
+
+    <script>
+    // ...
+    import service from './products.service';
+
+    export default {
+        // ...
+        data() {
+            // ...
+        },
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    function App() {
+        return (
+            <div className="App">
+                <List...
+                    allowItemDeleting={true}>
+                </List>
+            </div>
+        );
+    }
+
+    export default App;
+
+
+        
 ---
 
 #include common-demobutton with {

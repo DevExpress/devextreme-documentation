@@ -51,6 +51,51 @@ Universal actions are those actions that raise the same event despite being perf
         // ...
     })
 
+##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxList ...
+                @item-click="onItemClick"
+            />
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+        import DxList from 'devextreme-vue/list';
+
+        export default {
+            components: {
+                DxList
+            },
+            // ...
+            methods: {
+                onItemClick (e) {
+                    // Event handling commands go here
+                }
+            }
+        }
+        </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    const onItemClick = (e) => {
+        // Event handling commands go here
+    };
+    
+    export default function App() {
+        return (
+            <List ... 
+                onItemClick={onItemClick}
+            />
+        );
+    }
+
 ---
 
 The List supports other universal actions, which are provided as a part of basic List functionality. They are described in the following topics.

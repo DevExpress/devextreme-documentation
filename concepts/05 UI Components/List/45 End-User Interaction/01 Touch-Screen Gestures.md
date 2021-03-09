@@ -52,6 +52,51 @@ Swipe can be used to [delete an item](/concepts/05%20Widgets/List/35%20Item%20De
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxList ...
+                @item-swipe="onItemSwipe"
+            />
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+        import DxList from 'devextreme-vue/list';
+
+        export default {
+            components: {
+                DxList
+            },
+            // ...
+            methods: {
+                onItemSwipe (e) {
+                    // Event handling commands go here
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+        import List from 'devextreme-react/list';
+
+        const onItemSwipe = (e) => {
+            // Event handling commands go here
+        };
+
+        export default function App() {
+            return (
+                <List ... 
+                    onItemSwipe={onItemSwipe}
+                />
+            );
+        }
+
     ---
 
 - **Long Tap**      
@@ -66,7 +111,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
         $(function() {
             $("#listContainer").dxList({
                 // ...
-                itemHoldTimeout: 1000 // the UI component will wait one second before raising the "itemHold" event 
+                itemHoldTimeout: 1000 // wait one second before raising the "itemHold" event 
             });
         });
 
@@ -74,7 +119,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
 
         <!--HTML-->
         <dx-list ...
-            [itemHoldTimeout]="1000"> <!-- the UI component will wait one second before raising the "itemHold" event -->
+            [itemHoldTimeout]="1000"> <!-- wait one second before raising the "itemHold" event  -->
         </dx-list>
 
         <!--TypeScript-->
@@ -90,6 +135,42 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxList ...
+                :item-hold-timeout="1000"> <!-- wait one second before raising the "itemHold" event  -->
+            </DxList>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+        import DxList from 'devextreme-vue/list';
+
+        export default {
+            components: {
+                DxList
+            },
+            // ...
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+        import List from 'devextreme-react/list';
+
+        export default function App() {
+            return (
+                <List ... 
+                    itemHoldTimeout={1000}> {/* wait one second before raising the "itemHold" event */}
+                </List>
+            );
+        }
 
     ---
 
@@ -127,6 +208,42 @@ This gesture refreshes data in the List. To enable it, assign **true** to the [p
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxList ...
+                :pull-refresh-enabled="true"
+            />
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+        import DxList from 'devextreme-vue/list';
+
+        export default {
+            components: {
+                DxList
+            },
+            // ...
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+        import List from 'devextreme-react/list';
+
+        export default function App() {
+            return (
+                <List ... 
+                    pullRefreshEnabled={true}
+                />
+            );
+        }
 
     ---
 

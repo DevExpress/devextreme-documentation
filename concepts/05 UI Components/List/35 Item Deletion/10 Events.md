@@ -34,15 +34,15 @@ To execute certain commands before or after an item is deleted from the List, ha
     // ...
     export class AppComponent {
         onItemDeleting (e) {
-            let itemData = e.itemData;
-            let itemDomNode = e.itemElement;
-            let itemIndex = e.itemIndex;
+            const itemData = e.itemData;
+            const itemDomNode = e.itemElement;
+            const itemIndex = e.itemIndex;
             // Handler of the "itemDeleting" event
         }
         onItemDeleted (e) {
-            let itemData = e.itemData;
-            let itemDomNode = e.itemElement;
-            let itemIndex = e.itemIndex;
+            const itemData = e.itemData;
+            const itemDomNode = e.itemElement;
+            const itemIndex = e.itemIndex;
             // Handler of the "itemDeleted" event
         }
     }
@@ -53,6 +53,73 @@ To execute certain commands before or after an item is deleted from the List, ha
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            @item-deleting="onItemDeleting"
+            @item-deleted="onItemDeleted">
+            <!-- ... -->
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+        methods: {
+            onItemDeleting (e) {
+                const itemData = e.itemData;
+                const itemDomNode = e.itemElement;
+                const itemIndex = e.itemIndex;
+                // Handler of the "itemDeleting" event
+            },
+            onItemDeleted (e) {
+                const itemData = e.itemData;
+                const itemDomNode = e.itemElement;
+                const itemIndex = e.itemIndex;
+                // Handler of the "itemDeleted" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    const onItemDeleting = (e) => {
+        const itemData = e.itemData;
+        const itemDomNode = e.itemElement;
+        const itemIndex = e.itemIndex;
+        // Handler of the "itemDeleting" event
+    };
+
+    const onItemDeleted = (e) => {
+        const itemData = e.itemData;
+        const itemDomNode = e.itemElement;
+        const itemIndex = e.itemIndex;
+        // Handler of the "itemDeleted" event
+    };
+
+    export default function App() {
+        return (
+            <List ...
+                onItemDeleting={onItemDeleting}
+                onItemDeleted={onItemDeleted}>
+            </List>
+        );
+    }
 
 ---
 

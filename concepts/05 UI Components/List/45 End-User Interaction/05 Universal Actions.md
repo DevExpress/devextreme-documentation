@@ -77,24 +77,24 @@ Universal actions are those actions that raise the same event despite being perf
         }
         </script>
 
-    ##### React
+##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
-        import List from 'devextreme-react/list';
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
 
-        const onItemClick = (e) => {
-            // Event handling commands go here
-        };
-        
-        export default function App() {
-            return (
-                <List ... 
-                    onItemClick={onItemClick}
-                />
-            );
-        }
+    const onItemClick = (e) => {
+        // Event handling commands go here
+    };
+    
+    export default function App() {
+        return (
+            <List ... 
+                onItemClick={onItemClick}
+            />
+        );
+    }
 
 ---
 

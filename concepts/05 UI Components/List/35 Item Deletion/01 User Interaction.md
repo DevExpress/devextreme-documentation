@@ -34,6 +34,44 @@ To allow the user to delete items from the List, set the [allowItemDeleting](/ap
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            :allow-item-deleting="true"
+            item-delete-mode="toggle"> <!-- or "static" | "slideButton" | "slideItem" | "swipe" | "context" -->
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ...
+                allowItemDeleting={true}
+                itemDeleteMode="toggle"> {/* or "static" | "slideButton" | "slideItem" | "swipe" | "context" */}
+            </List>
+        );
+    }
+
 ---
 
 #include common-demobutton with {

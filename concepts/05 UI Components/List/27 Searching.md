@@ -54,6 +54,73 @@ Searching is disabled in the List UI component by default. Assign **true** to th
          // ...
      })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList
+            :data-source="listData"
+            :search-enabled="true"
+            :search-expr="['country', 'capital']"
+            item-template="list-item">
+            <template #list-item="{ data }">
+                <div>{{ data.capital }} ({{ data.country }})</div>
+            </template>
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
+
+    const listData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                listData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List from 'devextreme-react/list';
+
+    const listData = [
+        { id: 1, country: "Afghanistan", capital: "Kabul" },
+        { id: 2, country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    const ListItem = (data) => {
+        return (
+            <div>{ data.capital } ({ data.country })</div>
+        );
+    };
+
+    export default function App() {
+        return (
+            <List
+                dataSource={listData}
+                itemRender={ListItem}
+                searchEnabled={true}
+                searchExpr={['country', 'capital']}
+            />
+        );
+    }
+
 ---
 
 #include common-demobutton with {
@@ -68,47 +135,42 @@ When a user types a string in the input field, the List suggests all items that 
     <!--JavaScript-->
     $(function() {
         $("#listContainer").dxList({
-            dataSource: listData,
-            searchEnabled: true,
-            searchExpr: 'country',
-            searchMode: 'startswith',
-            itemTemplate: function(data) {
-                return $("<div>").text(data.capital + " (" + data.country + ")");
-            }
+            // ...
+            searchMode: 'startswith'
         });
     });
 
 ##### Angular
 
     <!--HTML-->
-    <dx-list
-        [dataSource]="listData"
-        [searchEnabled]="true"
-        [searchExpr]="['country', 'capital']"
-        searchMode="startswith"
-        itemTemplate="listItem">
-        <div *dxTemplate="let item of 'listItem'">
-            <div>{{item.capital}} ({{item.country}})</div>
-        </div>
+    <dx-list ...
+        searchMode="startswith">
     </dx-list>
 
-    <!--TypeScript-->
-    import { DxListModule } from "devextreme-angular";
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            search-mode="startswith">
+        </DxList>
+    </template>
+
+    <script>
     // ...
-    export class AppComponent {
-        listData = [
-            { id: 1, country: "Afghanistan", capital: "Kabul" },
-            { id: 2, country: "Albania", capital: "Tirana" },
-            // ...
-        ];
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    export default function App() {
+        return (
+            <List ...
+                searchMode="startswith"
+            />
+        );
     }
-    @NgModule({
-         imports: [
-             // ...
-             DxListModule
-         ],
-         // ...
-     })
 
 ---
 
@@ -120,15 +182,10 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
     <!--JavaScript-->
     $(function() {
         $("#listContainer").dxList({
-            dataSource: listData,
-            searchEnabled: true,
-            searchExpr: 'country',
+            // ...
             searchEditorOptions: {
                 placeholder: "Type search value here...",
                 width: 300
-            },
-            itemTemplate: function(data) {
-                return $("<div>").text(data.capital + " (" + data.country + ")");
             }
         });
     });
@@ -136,37 +193,59 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 ##### Angular
 
     <!--HTML-->
-    <dx-list
-        [dataSource]="listData"
-        [searchEnabled]="true"
-        [searchExpr]="['country', 'capital']"
-        itemTemplate="listItem">
+    <dx-list ... >
         <dxo-search-editor-options
             placeholder="Type search value here..."
             [width]="300">
         </dxo-search-editor-options>
-        <div *dxTemplate="let item of 'listItem'">
-            <div>{{item.capital}} ({{item.country}})</div>
-        </div>
     </dx-list>
 
-    <!--TypeScript-->
-    import { DxListModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        listData = [
-            { id: 1, country: "Afghanistan", capital: "Kabul" },
-            { id: 2, country: "Albania", capital: "Tirana" },
-            // ...
-        ];
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ... >
+            <DxSearchEditorOptions
+                placeholder="Type search value here..."
+                :width="300"
+            />
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList, {
+        DxSearchEditorOptions
+    } from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList,
+            DxSearchEditorOptions
+        },
+        // ...
     }
-    @NgModule({
-         imports: [
-             // ...
-             DxListModule
-         ],
-         // ...
-     })
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List, {
+        SearchEditorOptions
+    } from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ... >
+                <SearchEditorOptions
+                    placeholder="Type search value here..."
+                    width={300}
+                />
+            </List>
+        );
+    }
 
 ---
 

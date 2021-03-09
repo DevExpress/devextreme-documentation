@@ -13,12 +13,16 @@ The List supports drag & drop functionality that allows users to reorder list it
         });
     });
 
- ##### Angular
+##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-list...
-        [itemDragging]="itemDraggingSettings>
+    <dx-list...>
+        <dxo-item-dragging 
+            [allowReordering]="true"
+        >
+        </dxo-item-dragging>
     </dx-list>
+
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     //...
@@ -29,10 +33,7 @@ The List supports drag & drop functionality that allows users to reorder list it
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        // ...
-        itemDraggingSettings = {
-            allowReordering: true
-        };
+        // ...   
     }
 
 ##### Vue
@@ -40,23 +41,27 @@ The List supports drag & drop functionality that allows users to reorder list it
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxList...
-                :item-dragging="itemDraggingSettings">
+            <DxList...>
+                <DxItemDragging
+                    :allow-reordering="true"
+                 >
+                </DxItemDragging>
             </DxList>
         </div>
     </template>
 
     <script>
     // ...
+    import DxList, {DxItemDragging} from "devextreme-vue/list";
     import service from './products.service';
 
     export default {
-        // ...
+        components: {
+            // ...
+            DxItemDragging
+        },
         data() {
             // ...
-            itemDraggingSettings = {
-                allowReordering: true
-            };
         },
     }
     </script>
@@ -70,15 +75,15 @@ The List supports drag & drop functionality that allows users to reorder list it
     import 'devextreme/dist/css/dx.light.css';
 
     //...
-    const itemDraggingSettings = {
-        allowReordering: true
-    }
+    import List, { ItemDragging } from "devextreme-react/list";
 
     function App() {
         return (
             <div className="App">
-                <List...
-                    itemDragging={itemDraggingSettings}>
+                <List...>
+                    <ItemDragging 
+                        allowReordering={true} 
+                    />
                 </List>
             </div>
         );

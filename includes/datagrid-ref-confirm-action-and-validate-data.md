@@ -58,7 +58,8 @@
                         .get("https://url/to/your/validation/service", { params: params })
                         .toPromise();
                     if (validationResult.errorText) {
-                        throw validationResult.errorText;
+                        console.log(validationResult.errorText);
+                        return true;
                     } else {
                         return false;
                     } 
@@ -120,7 +121,8 @@
                         params = params.slice(0, -1);
                         const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
                         if (validationResult.errorText) {
-                            throw validationResult.errorText;
+                            console.log(validationResult.errorText);
+                            return true;
                         } else {
                             return false;
                         } 
@@ -155,7 +157,8 @@
                 params = params.slice(0, -1);
                 const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
                 if (validationResult.errorText) {
-                    throw validationResult.errorText;
+                    console.log(validationResult.errorText);
+                    return true;
                 } else {
                     return false;
                 } 

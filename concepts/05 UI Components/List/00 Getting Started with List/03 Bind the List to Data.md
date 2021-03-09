@@ -17,7 +17,7 @@ The **List** can load data from different data source types. To use a local arra
     });
 
     <!-- tab: data.js -->
-    var products = [{
+    const products = [{
         ID: 1,
         Name: 'HD Video Player',
         Price: 330,
@@ -206,7 +206,7 @@ The **List** can load data from different data source types. To use a local arra
     <!-- tab: products.service.ts -->
     import { Injectable } from '@angular/core';
 
-    export interface Employee {
+    export interface Product {
         ID: Number,
         Name: String,
         Price: Number,
@@ -393,7 +393,7 @@ The **List** can load data from different data source types. To use a local arra
     <template>
         <div id="app-container">
             <DxList
-                :data-source="employees"
+                :data-source="products"
                 display-expr="Name">
             </DxList>
         </div>
@@ -414,7 +414,7 @@ The **List** can load data from different data source types. To use a local arra
     </script>
 
     <!-- tab: products.service.js -->
-    const [products] = [{
+    const products = [{
         ID: 1,
         Name: 'HD Video Player',
         Price: 330,

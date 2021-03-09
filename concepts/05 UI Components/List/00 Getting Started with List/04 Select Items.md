@@ -30,14 +30,6 @@ The **List** supports the following item selection modes: *"single"*, *"multiple
 
     <script>
     // ...
-    import service from './products.service';
-
-    export default {
-        // ...
-        data() {
-            // ...
-        },
-    }
     </script>
 
 ##### React

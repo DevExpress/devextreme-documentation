@@ -36,6 +36,51 @@ If you want to allow the user to reorder items on the List, define the [itemDrag
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ... >
+            <DxItemDragging
+                :allow-reordering="true"
+            />
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList, {
+        DxItemDragging
+    } from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxList,
+            DxItemDragging
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import List, {
+        ItemDragging
+    } from 'devextreme-react/list';
+
+    export default function App() {
+        return (
+            <List ... >
+                <ItemDragging
+                    allowReordering={true}
+                />
+            </List>
+        );
+    }
+
 ---
 
 #####See Also#####

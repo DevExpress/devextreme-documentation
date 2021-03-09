@@ -12,7 +12,6 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
                 store: products,
                 group: 'Category',
             }),
-            displayExpr: 'Name',
             grouped: true,
         });    
     });
@@ -21,8 +20,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
 
     <!-- tab: app.component.html -->
     <dx-list...
-        displayExpr="Name"
-        grouped="true">
+        [grouped]="true">
     </dx-list>
 
     <!-- tab: app.component.ts -->
@@ -48,7 +46,6 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
     <template>
         <div id="app-container">
             <DxList...
-                displayExpr="Name"
                 :grouped="true">
             </DxList>
         </div>
@@ -87,7 +84,6 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
         return (
             <div className="App">
                 <List...
-                    displayExpr="Name"
                     grouped={true}>
                 </List>
             </div>

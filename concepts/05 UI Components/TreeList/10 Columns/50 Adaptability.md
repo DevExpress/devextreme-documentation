@@ -42,6 +42,56 @@ When adapting to a small container or screen, the TreeList can hide columns. To 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :column-hiding-enabled="true">
+            <DxColumn :hiding-priority="2" ... /> <!-- a valuable column -->
+            <DxColumn :hiding-priority="1" ... /> <!-- a not-so-valuable column -->
+            <DxColumn :hiding-priority="0" ... /> <!-- a first-to-hide column -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ...
+                columnHidingEnabled={true}>
+                <Column defaultHidingPriority={2} ... /> {/* a valuable column */}
+                <Column defaultHidingPriority={1} ... /> {/* a not-so-valuable column */}
+                <Column defaultHidingPriority={0} ... /> {/* a first-to-hide column */}
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -75,6 +125,64 @@ The table layout does not automatically adapt to changes made in the UI componen
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :ref="treeListRefKey">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return() {
+                treeListRefKey
+            }
+        },
+        methods: {
+            renderTreeList() {
+                this.treeList.updateDimensions();
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+        const treeList = useRef(null);
+        const renderTreeList = () => {
+            treeList.current.instance.updateDimensions();
+        };
+
+	    return (
+            <TreeList ref={treeList}>
+                {/* ... */ }
+            </TreeList>
+        );
+    }
 
 ---
 
@@ -122,6 +230,68 @@ You can expand or collapse adaptive detail rows programmatically by calling the 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :ref="treeListRefKey">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return() {
+                treeListRefKey
+            }
+        },
+        methods: {
+            expandAdaptiveDetailRow(key) {
+                if (!this.treeList.isAdaptiveDetailRowExpanded(key)) {
+                    this.treeList.expandAdaptiveDetailRow(key);
+                }
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+        const treeList = useRef(null);
+        const expandAdaptiveDetailRow = (key) => {
+            if (!treeList.current.instance.isAdaptiveDetailRowExpanded(key)) {
+                treeList.current.instance.expandAdaptiveDetailRow(key);
+            }
+        };
+
+	    return (
+            <TreeList ref={treeList}>
+                {/* ... */ }
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -169,6 +339,61 @@ All adaptive detail rows contain the [DevExtreme Form UI component](/api-referen
     <dx-tree-list ...
         (onAdaptiveDetailRowPreparing)="onAdaptiveDetailRowPreparing($event)">
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :@adaptive-detail-row-preparing="onAdaptiveDetailRowPreparing">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            onAdaptiveDetailRowPreparing(e) {
+                for (let formItem of e.formOptions.items) {
+                    if (formItem.dataField == 'OrderID') {
+                        formItem.isRequired = true;
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    const onAdaptiveDetailRowPreparing = (e) => {
+        for (let formItem of e.formOptions.items) {
+            if (formItem.dataField == 'OrderID') {
+                formItem.isRequired = true;
+            }
+        }
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ... 
+                onAdaptiveDetailRowPreparing={onAdaptiveDetailRowPreparing}>
+            </TreeList>
+        );
+    }
     
 ---
 

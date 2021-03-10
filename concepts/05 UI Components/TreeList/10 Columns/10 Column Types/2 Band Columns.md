@@ -41,6 +41,56 @@ To set up this layout, describe the hierarchy of columns directly in an object o
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn caption="Contacts">
+                <DxColumn data-field="Email" />
+                <DxColumn data-field="Mobile_Phone" />
+                <DxColumn data-field="Skype" />
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column caption="Contacts">
+                    <Column dataField="Email" />
+                    <Column dataField="Mobile_Phone" />
+                    <Column dataField="Skype" />
+                </Column>
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -58,7 +108,7 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxTreeList/1%
                     isBand: true
                 });
         
-                var contactsFields = ["Email", "Mobile_Phone", "Skype"];
+                const contactsFields = ["Email", "Mobile_Phone", "Skype"];
                 for (var i = 0; i < columns.length - 1; i++) {
                     if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
                         columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
@@ -79,7 +129,7 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxTreeList/1%
                 isBand: true
             });
     
-            var contactsFields = ["Email", "Mobile_Phone", "Skype"];
+            const contactsFields = ["Email", "Mobile_Phone", "Skype"];
             for (var i = 0; i < columns.length - 1; i++) {
                 if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
                     columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
@@ -98,6 +148,68 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxTreeList/1%
     <dx-tree-list ...
         [customizeColumns]="customizeColumns">
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :customize-columns="customizeColumns">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            customizeColumns(columns) {
+                columns.push({ // Pushes the "Contacts" band column into the "columns" array
+                    caption: 'Contacts',
+                    isBand: true
+                });
+        
+                const contactsFields = ['Email', 'Mobile_Phone', 'Skype'];
+                for (let i = 0; i < columns.length - 1; i++) {
+                    if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
+                        columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+
+    const customizeColumns = (columns) => {
+        columns.push({ // Pushes the "Contacts" band column into the "columns" array
+            caption: 'Contacts',
+            isBand: true
+        });
+
+        const contactsFields = ['Email', 'Mobile_Phone', 'Skype'];
+        for (let i = 0; i < columns.length - 1; i++) {
+            if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
+                columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
+        }
+    };
+
+    export default function App() {
+        return (
+            <TreeList ...
+                customizeColumns={customizeColumns}>
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -156,6 +268,71 @@ Band columns support hierarchies of any nesting level making the following struc
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn caption="A">
+                <DxColumn data-field="A1" />
+                <DxColumn data-field="A2" />
+                <DxColumn caption="A3">
+                    <DxColumn data-field="A31" />
+                    <DxColumn data-field="A32" />
+                    <DxColumn caption="A33">
+                        <DxColumn data-field="A331" />
+                        <DxColumn data-field="A332" />
+                        <DxColumn data-field="A333" />
+                    </DxColumn>
+                </DxColumn>
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column caption="A">
+                    <Column dataField="A1" />
+                    <Column dataField="A2" />
+                    <Column caption="A3">
+                        <Column dataField="A31" />
+                        <Column dataField="A32" />
+                        <Column caption="A33">
+                            <Column dataField="A331" />
+                            <Column dataField="A332" />
+                            <Column dataField="A333" />
+                        </Column>
+                    </Column>
+                </Column>
+            </TreeList>
+        );
+    }
     
 ---
 

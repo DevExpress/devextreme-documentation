@@ -36,6 +36,56 @@ The column chooser allows a user to change the set of columns at runtime. It is 
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumnChooser
+                :enabled="true"
+                mode="dragAndDrop" <!-- or "select" -->
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumnChooser
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumnChooser
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        ColumnChooser
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <ColumnChooser
+                    enabled={true}
+                    mode="dragAndDrop" {/* or "select" */}
+                />
+            </TreeList>
+        );
+    }
+
 ---
 
 <img src="/images/treelist/visual_elements/column-chooser_draganddrop-mode.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnChooser" style="margin-right:60px" /> <img src="/images/treelist/visual_elements/column-chooser_select-mode.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnChooser" style="margin-right:90px" />
@@ -84,7 +134,70 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
         ],
         // ...
     })
-    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumnChooser
+                :enabled="true"
+            />
+            <DxColumn ...
+                :allow-hiding="false" <!-- cannot be hidden -->
+            />
+            <DxColumn ...
+                :show-in-column-chooser="false" <!-- does not appear in the column chooser even when hidden -->
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumnChooser,
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumnChooser,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        ColumnChooser,
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <ColumnChooser
+                    enabled={true}
+                />
+                <Column ...
+                    allowHiding={false} {/* cannot be hidden */}
+                />
+                <Column ...
+                    showInColumnChooser={false}> {/* does not appear in the column chooser even when hidden */}
+                />
+            </TreeList>
+        );
+    }
+
 ---
 
 Call the [showColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/showColumnChooser().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#showColumnChooser') or [hideColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hideColumnChooser().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#hideColumnChooser') method to control the column chooser programmatically.
@@ -121,6 +234,71 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :ref="treeListRefKey">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return() {
+                treeListRefKey
+            }
+        },
+        methods: {
+            showColumnChooser() {
+                this.treeList.showColumnChooser();
+            },
+            hideColumnChooser() {
+                this.treeList.hideColumnChooser();
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+        const treeList = useRef(null);
+        const showColumnChooser = () => {
+            treeList.current.instance.showColumnChooser();
+        }
+
+        const hideColumnChooser = () => {
+            treeList.current.instance.hideColumnChooser();
+        }
+
+	    return (
+            <TreeList ref={treeList}>
+                {/* ... */ }
+            </TreeList>
+        );
+    }
     
 ---
 

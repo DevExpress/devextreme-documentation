@@ -38,6 +38,50 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn data-field="CompanyName" caption="Company" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column dataField="CompanyName" caption="Company" />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -100,6 +144,77 @@ If you need a more specific customization, define a custom template in the **col
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn
+                data-field="Title"
+                caption="Position"
+                header-cell-template="title-header"
+            />
+            <DxColumn
+                data-field="Address"
+                header-cell-template="address-header"
+            />
+            <template #title-header="{ data }">
+                <p style="font-size:16px">{{ data.column.caption }}</p>
+            </template>
+            <template #address-header">
+                <i style="color: black">Mailing Address</i>
+            </template>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    const renderTitleHeader = (data) => {
+        return <p style={{ font-size: '16px' }}>{data.column.caption}</p>;
+    }
+    const renderAddressHeader = () => {
+        return <i style={{ color: 'black' }}>Mailing Address</i>;
+    }
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column
+                    dataField="Title"
+                    caption="Position"
+                    headerCellRender={renderTitleHeader}
+                />
+                <Column
+                    dataField="Address"
+                    headerCellRender={renderAddressHeader}
+                />
+            </TreeList>
+        );
+    }    
     
 ---
 
@@ -137,6 +252,45 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
         // ...
     })
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :show-column-headers="false">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ...
+                showColumnHeaders={false}>
+            </TreeList>
+        );
+    }
+
 ---
 
 #####See Also#####

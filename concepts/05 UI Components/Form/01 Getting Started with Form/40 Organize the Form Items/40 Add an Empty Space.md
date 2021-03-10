@@ -95,7 +95,6 @@ In the following example, the empty item [spans](/Documentation/ApiReference/UI_
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem, DxEmptyItem } from 'devextreme-vue/form';
@@ -122,7 +121,6 @@ In the following example, the empty item [spans](/Documentation/ApiReference/UI_
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

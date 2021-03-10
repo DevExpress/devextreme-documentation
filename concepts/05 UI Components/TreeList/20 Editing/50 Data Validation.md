@@ -52,6 +52,74 @@ User input is validated against a set of [validation rules](/api-reference/10%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn data-field="Full_Name">
+                <DxRequiredRule />
+            </DxColumn>
+            <DxColumn data-field="Login">
+                <DxStringLengthRule
+                    :min="3"
+                    message="Login should be at least 3 symbols long"
+                />
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxRequiredRule,
+        DxStringLengthRule
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxRequiredRule,
+            DxStringLengthRule
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        RequiredRule,
+        StringLengthRule
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Column dataField="Full_Name">
+                        <RequiredRule />
+                    </Column>
+                    <Column dataField="Login">
+                        <StringLengthRule
+                            min={3}
+                            message="Login should be at least 3 symbols long"
+                        />
+                    </Column>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -98,6 +166,62 @@ The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuratio
     <dx-tree-list ...
         (onRowValidating)="barAdministratorLogin($event)">
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            @row-validating="denyAdminLogin">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            denyAdminLogin(e) {
+                if(e.isValid && e.newData.Login === "Administrator") {
+                    e.isValid = false;
+                    e.errorText = "Your cannot log in as Administrator";
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        denyAdminLogin(e) {
+            if(e.isValid && e.newData.Login === "Administrator") {
+                e.isValid = false;
+                e.errorText = "Your cannot log in as Administrator";
+            }
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    onRowValidating={this.denyAdminLogin}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

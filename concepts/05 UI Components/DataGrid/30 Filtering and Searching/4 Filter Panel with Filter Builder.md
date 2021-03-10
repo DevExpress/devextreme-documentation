@@ -276,8 +276,6 @@ The **filterValue** is updated when a user changes the filter expression from th
                 filterValue: filterExpression
             });
         }
-
-        
     }
 
 ##### ASP.NET MVC Controls

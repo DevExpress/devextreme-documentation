@@ -30,6 +30,50 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
         <dxo-filter-panel [visible]="true"></dxo-filter-panel>
     </dx-tree-list>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+           <DxFilterPanel :visible="true />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {      
+        DxFilterPanel
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxFilterPanel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        FilterPanel
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ...>
+                    <FilterPanel visible={true} />                  
+                </TreeList>
+            );
+        }
+    }
+
 ---
 
 If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the [filter row](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Filter_Row') and [header filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Header_Filter'), and vice versa. Set the [filterSyncEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterSyncEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#filterSyncEnabled') property to **false** to disable this synchronization. In this case, the filter panel remains synchronized with the filter builder.
@@ -51,6 +95,45 @@ If a user changes the filter expression in the filter panel or filter builder, t
     <dx-tree-list ...
         [filterSyncEnabled]="false">
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... 
+            :filter-sync-enabled="false"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ...
+                    filterSyncEnabled={false}
+                />
+            );
+        }
+    }
 
 ---
 
@@ -103,6 +186,81 @@ The **filterValue** is updated when a user changes the filter expression from th
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... 
+            v-model:filter-value="filterValue">
+            <DxFilterPanel :visible="true" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxFilterPanel
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxFilterPanel
+        },
+        data() {
+            return {
+                filterValue: ['SaleAmount', '<>', null]
+            };
+        },
+        methods: {
+            applyFilter (filterExpression) {
+                this.filterValue = filterExpression;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        FilterPanel
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                filterValue: ['SaleAmount', '<>', null]
+            }
+        }
+
+        render() {
+            let { filterValue } = this.state;
+            return (
+                <TreeList ...
+                    onOptionChanged={this.onOptionChanged} 
+                    filterValue={filterValue}>
+                    <FilterPanel visible={true} />                  
+                </TreeList>
+            );
+        }
+        onOptionChanged = (e) => {
+            if(e.fullName === "filterValue") {
+                this.applyFilter(e.value);
+            }      
+        }
+        applyFilter = (filterExpression) => {
+            this.setState({
+                filterValue: filterExpression
+            });
+        }
+    }
 
 ---
 
@@ -186,6 +344,128 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Widgets/GridB
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeList ... 
+                :filter-sync-enabled="true">
+                <DxFilterPanel :visible="false" />
+                <DxFilterBuilder :custom-operations="customOperations" />
+                <DxFilterBuilderPopup 
+                    :width="400"
+                    v-model:visible="popupVisible"
+                    title="Synchronized Filter"
+                />
+            </DxTreeList>
+            <DxButton
+                @click="showFilterBuilder"
+                text="Show Filter Builder"                
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxButton from 'devextreme-vue/button';
+
+    import DxTreeList, {
+        DxFilterPanel,
+        DxFilterBuilder,
+        DxFilterBuilderPopup
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxFilterPanel,
+            DxFilterBuilder,
+            DxFilterBuilderPopup,
+            DxButton
+        },
+        data() {
+            return {
+                customOperations: [{
+                    name: "isZero",
+                    caption: "Is Zero",
+                    dataTypes: ["number"],
+                    hasValue: false,
+                    calculateFilterExpression: function(filterValue, field) {
+                        return [field.dataField, "=", 0];
+                    }
+                }],
+                popupVisible: false                
+            };
+        },
+        methods: {
+            showFilterBuilder () {
+                this.popupVisible = true;
+            }            
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Button from 'devextreme-react/button';
+
+    import TreeList, {
+        FilterPanel,        
+        FilterBuilder,
+        FilterBuilderPopup
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                popupVisible: false
+            }
+            this.customOperations = [{
+                name: "isZero",
+                caption: "Is Zero",
+                dataTypes: ["number"],
+                hasValue: false,
+                calculateFilterExpression: function(filterValue, field) {
+                    return [field.dataField, "=", 0];
+                }
+            }]
+        }
+
+        render() {
+            let { popupVisible } = this.state;
+            return (
+                <React.Fragment>
+                    <TreeList ... 
+                        filterSyncEnabled={true} >
+                        <FilterPanel visible={false} />
+                        <FilterBuilder customOperations={this.customOperations} />
+                        <FilterBuilderPopup 
+                            width={400}
+                            title="Synchronized Filter"
+                            visible={popupVisible}
+                        />                  
+                    </TreeList>
+                    <Button 
+                        text="Show Filter Builder" 
+                        onClick={this.showFilterBuilder} 
+                    />
+                </React.Fragment>
+            );
+        }
+        showFilterBuilder = () => {
+            this.setState({
+                popupVisible: true
+            });
+        }
+    }
 
 ---
 

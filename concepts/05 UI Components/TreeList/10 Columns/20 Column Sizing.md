@@ -40,6 +40,54 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :column-min-width="100">
+            <DxColumn data-field="Title" :width="200" />
+            <DxColumn data-field="Address" :min-width="150" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ...
+                columnMinWidth={100}>
+                <Column dataField="Title" width={200} />
+                <Column dataField="Address" minWidth={150} />
+            </TreeList> 
+        );
+    }
     
 ---
 
@@ -76,6 +124,45 @@ Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configur
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :column-auto-width="true">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ...
+                columnAutoWidth={true}>
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -120,6 +207,55 @@ The UI component allows a user to resize columns in two different modes: by chan
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :allow-column-resizing="true"
+            column-resizing-mode="widget"> <!-- or "nextColumn" -->
+            <DxColumn data-field="Title" :allow-resizing="false" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ...
+                allowColumnResizing={true}
+                columnResizingMode="widget"> <!-- or 'nextColumn' -->
+                <Column dataField="Title" allowResizing={false} />
+            </TreeList>
+        );
+    }
+    
     
 ---
 

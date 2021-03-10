@@ -150,7 +150,7 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
             <dxi-item
                 [options]="sizeFormatOptions"
                 [acceptedValues]="sizeAcceptedValues"
-                formname="size"
+                name="size"
             />
         </dxo-toolbar>
     </dx-html-editor>
@@ -226,7 +226,7 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
                         <Item
                             options={sizeFormatOptions}
                             acceptedValues={sizeAcceptedValues}
-                            formname="size"
+                            name="size"
                         />
                     </Toolbar>
                 </HtmlEditor>

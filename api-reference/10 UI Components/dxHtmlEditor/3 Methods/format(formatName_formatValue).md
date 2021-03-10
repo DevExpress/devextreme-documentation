@@ -1,14 +1,14 @@
 ---
-id: dxHtmlEditor.format(name, acceptedValue)
+id: dxHtmlEditor.format(formatName, formatValue)
 ---
 ---
 ##### shortDescription
 Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
 
-##### param(name): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md).
+##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
+A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName').
 
-##### param(acceptedValue): any
+##### param(formatValue): any
 A format value.
 
 ---

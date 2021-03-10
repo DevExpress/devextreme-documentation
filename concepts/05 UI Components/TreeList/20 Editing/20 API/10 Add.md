@@ -142,7 +142,6 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -167,7 +166,6 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {

@@ -59,7 +59,6 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -79,7 +78,6 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Co
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -163,7 +161,6 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -183,7 +180,6 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {

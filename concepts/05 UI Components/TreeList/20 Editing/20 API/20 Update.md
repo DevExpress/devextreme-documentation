@@ -61,7 +61,6 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -98,7 +97,6 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
@@ -219,7 +217,6 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -263,7 +260,6 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';

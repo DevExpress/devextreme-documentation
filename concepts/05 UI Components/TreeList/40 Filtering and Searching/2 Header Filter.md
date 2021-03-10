@@ -55,7 +55,6 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Widgets/dxTreeLis
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -76,7 +75,6 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Widgets/dxTreeLis
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -165,7 +163,6 @@ A user can change the applied filter by including or excluding values. Use a col
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -196,7 +193,6 @@ A user can change the applied filter by including or excluding values. Use a col
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -308,7 +304,6 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Widgets/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -331,7 +326,6 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Widgets/
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {

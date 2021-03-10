@@ -155,7 +155,6 @@ With the TreeList you can edit data in several modes. Use the **editing**.[mode]
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {

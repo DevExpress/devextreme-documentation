@@ -69,7 +69,6 @@ The Form chooses default editors based on value types: [TextBox](/Documentation/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm } from 'devextreme-vue/form';
@@ -96,7 +95,6 @@ The Form chooses default editors based on value types: [TextBox](/Documentation/
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

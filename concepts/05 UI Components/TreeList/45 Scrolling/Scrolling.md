@@ -52,7 +52,6 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -72,7 +71,6 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Con
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -140,7 +138,6 @@ The TreeList adapts its scrolling mechanism to the current platform. It utilizes
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -160,7 +157,6 @@ The TreeList adapts its scrolling mechanism to the current platform. It utilizes
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -238,7 +234,6 @@ The current platform determines the native scrolling settings and you cannot adj
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -258,7 +253,6 @@ The current platform determines the native scrolling settings and you cannot adj
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {

@@ -96,7 +96,6 @@ You can change any properties of the form, its items or editors at runtime. To u
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, 
@@ -131,7 +130,6 @@ You can change any properties of the form, its items or editors at runtime. To u
 
     <!-- tab: App.js -->
     import React, {useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

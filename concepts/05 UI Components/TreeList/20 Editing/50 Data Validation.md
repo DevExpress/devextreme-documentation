@@ -71,7 +71,6 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -95,7 +94,6 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -179,7 +177,6 @@ The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuratio
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -204,7 +201,6 @@ The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuratio
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';

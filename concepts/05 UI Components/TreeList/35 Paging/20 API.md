@@ -39,7 +39,6 @@ Call the [pageCount()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/p
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -61,7 +60,6 @@ Call the [pageCount()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/p
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
@@ -143,7 +141,6 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Wi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -178,7 +175,6 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Wi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {

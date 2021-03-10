@@ -153,7 +153,6 @@ The code also shows how to configure the tab panel's [height](/Documentation/Api
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { 
@@ -196,7 +195,6 @@ The code also shows how to configure the tab panel's [height](/Documentation/Api
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

@@ -40,7 +40,6 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {      
@@ -59,7 +58,6 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -108,7 +106,6 @@ If a user changes the filter expression in the filter panel or filter builder, t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -124,7 +121,6 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
@@ -202,7 +198,6 @@ The **filterValue** is updated when a user changes the filter expression from th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList, {
@@ -231,7 +226,6 @@ The **filterValue** is updated when a user changes the filter expression from th
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList, {
@@ -374,7 +368,6 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Widgets/GridB
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxButton from 'devextreme-vue/button';
@@ -419,7 +412,6 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Widgets/GridB
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import Button from 'devextreme-react/button';

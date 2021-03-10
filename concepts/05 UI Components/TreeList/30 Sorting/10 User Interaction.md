@@ -33,6 +33,50 @@ With the TreeList UI component, a user can sort by single and multiple columns. 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList>
+            <DxSorting mode="single"/> <!-- or "multiple" | "none" -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxSorting } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxSorting
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Sorting } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList>
+                    <Sorting mode="single"/> {/* or "multiple" | "none" */}
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -82,6 +126,50 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList>
+            <DxColumn :allow-sorting="false"/>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Column } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList>
+                    <Column allowSorting={false}/>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

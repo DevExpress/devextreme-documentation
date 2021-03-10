@@ -64,6 +64,81 @@ The TreeList UI component has an integrated filter builder that can be invoked u
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeList :columns="columns" />
+            <DxFilterBuilder :fields="columns" />          
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+    import DxFilterBuilder from 'devextreme-vue/filter-builder';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxFilterBuilder
+        },
+        data() {
+            return {
+                columns: [{
+                    caption: "ID",
+                    dataField: "Product_ID",
+                    dataType: "number"
+                }, {
+                    dataField: "Product_Name"
+                }, {
+                    caption: "Cost",
+                    dataField: "Product_Cost",
+                    dataType: "number",
+                    format: "currency"
+                }]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+    import FilterBuilder from 'devextreme-react/filter-builder';
+    
+    const columns = [{
+        caption: "ID",
+        dataField: "Product_ID",
+        dataType: "number"
+    }, {
+        dataField: "Product_Name"
+    }, {
+        caption: "Cost",
+        dataField: "Product_Cost",
+        dataType: "number",
+        format: "currency"
+    }];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <React.Fragment>
+                    <TreeList defaultColumns={columns} />              
+                    <FilterBuilder defaultFields={columns} />
+                </React.Fragment>
+            );
+        }
+    }
+
 ---
 
 Then, add a button that updates a filter of the TreeList's data source according to the filter expression:
@@ -117,7 +192,104 @@ Then, add a button that updates a filter of the TreeList's data source according
     <dx-button 
         text="Apply Filter"
         (onClick)="buttonClick()">
-    </dx-button>   
+    </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeList ... 
+               :ref="gridRefKey"
+            />
+            <DxFilterBuilder ... 
+                :ref="fbRefKey"
+            />
+            <DxButton 
+                @click="buttonClick"
+                text="Apply Filter"   
+            />               
+        </div>    
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+    import DxFilterBuilder from 'devextreme-vue/filter-builder';
+    import DxButton from 'devextreme-vue/button';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxButton,
+            DxFilterBuilder
+        },
+        data() {
+            return {
+                // ...
+                gridRefKey: 'tree-list',
+                fbRefKey: 'filter-builder'
+            };
+        },
+        methods: {
+            buttonClick () {
+                this.treeList.filter(this.filterBuilder.getFilterExpression());
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[gridRefKey].instance;
+            },
+            filterBuilder: function(){
+                return this.$refs[fbRefKey].instance;                
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+    import FilterBuilder from 'devextreme-react/filter-builder';
+    import Button from 'devextreme-react/button';
+   
+    class App extends React.Component {
+        constructor(props) {
+            super(props);    
+            this.gridRef = React.createRef();
+            this.fbRef = React.createRef();                   
+        }
+        get treeList() {
+            return this.gridRef.current.instance;
+        }
+        get filterBuilder() {
+            return this.fbRef.current.instance;
+        }
+        
+        render() {
+            return (
+                <React.Fragment>
+                    <TreeList ... 
+                        :ref="gridRef" />              
+                    <FilterBuilder ...
+                        :ref="fbRef" />
+                    <Button 
+                        text="Apply Filter" 
+                        onClick={this.buttonClick} />    
+                </React.Fragment>
+            );
+        }
+        buttonClick = () => {
+            this.treeList.filter(this.filterBuilder.getFilterExpression());
+        }
+    }
 
 ---
 

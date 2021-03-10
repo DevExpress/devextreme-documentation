@@ -35,6 +35,66 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList>
+            <DxColumn
+                data-field="City"
+                :sort-index="1"
+                sort-order="asc"
+            />
+            <DxColumn
+                data-field="Country"
+                :sort-index="0"
+                sort-order="asc"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Column } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList>
+                    <Column
+                        dataField="City"
+                        defaultSortIndex={1}
+                        defaultSortOrder="asc" />
+                    <Column
+                        dataField="Country"
+                        defaultSortIndex={0}
+                        defaultSortOrder="asc" />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -73,6 +133,85 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...>
+            <DxColumn
+                data-field="Country"
+                v-model:sort-order="countrySortOrder"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        data() {
+            return {
+                countrySortOrder: "asc"
+            }
+        },
+        methods: {
+            sortByCountries(order) {
+                this.countrySortOrder = order;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Column } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                countrySortOrder: "asc"
+            };
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    onOptionChanged={this.onOptionChanged}>
+                    <Column
+                        dataField="Country"
+                        sortOrder={this.state.countrySortOrder} />
+                </TreeList>
+            );
+        }
+
+        sortByCountries = (order) => {
+            this.setState({
+                countrySortOrder: order
+            });
+        }
+
+        onOptionChanged = (e) => {
+            if (e.fullName === "columns[0].sortOrder") {
+                this.sortByCountries(e.value);
+            }
+        }
+    }
+    export default App;
     
 ---
 

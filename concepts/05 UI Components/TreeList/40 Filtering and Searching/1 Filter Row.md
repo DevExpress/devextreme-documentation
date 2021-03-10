@@ -43,6 +43,57 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxFilterRow :visible="true" />
+            <DxColumn :allow-filtering="false" ... />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxFilterRow
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxFilterRow
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        FilterRow
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <FilterRow visible={true} />
+                    <Column allowFiltering={false} ... />
+                </TreeList>
+            );
+        }
+    }
     
 ---
 
@@ -84,6 +135,58 @@ A user-specified filter is automatically applied with a delay by default. Altern
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...>
+            <DxFilterRow 
+                :visible="true" 
+                apply-filter="onClick"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxFilterRow
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxFilterRow
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        FilterRow
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <FilterRow 
+                        visible={true} 
+                        applyFilter="onClick" 
+                    />
+                </TreeList>
+            );
+        }
+    }
     
 ---
 
@@ -148,6 +251,108 @@ The set of available filter operations can be restricted using the [filterOperat
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxFilterRow :visible="true />
+            <DxColumn 
+                :filter-operations="allowedOperations"
+                v-model:selected-filter-operation="selectedOperation"
+                v-model:filter-value="filterValue" 
+                data-field="Status"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxFilterRow
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxFilterRow
+        },
+        data() {
+            return {
+                allowedOperations: ['contains', '='],
+                selectedOperation: 'contains',
+                filterValue: 'Pending'
+            }
+        },
+        methods: {
+            applyFilter (operation, value) {
+                this.selectedOperation = operation;
+                this.filterValue = value;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        FilterRow
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.filterOperations = ['contains', '='];
+            this.state = {
+                selectedOperation: 'contains',
+                filterValue: 'Pending'
+            }
+        }
+
+        render() {
+            let { selectedOperation, filterValue } = this.state;
+            return (
+                <TreeList (onOptionChanged)={this.optionChanged} ... >
+                    <FilterRow visible={true} />
+                    <Column 
+                        dataField="Status"
+                        filterOperations={this.filterOperations}
+                        selectedFilterOperation={selectedOperation}
+                        filterValue={filterValue}
+                    />
+                </TreeList>
+            );
+        }
+        optionChanged = (e) => {
+            if(e.fullName === "columns[0].filterValue") {
+                this.setState({ 
+                    filterValue: e.value
+                })
+            }
+            if(e.fullName === "columns[0].selectedFilterOperation") {
+                this.setState({ 
+                    selectedOperation: e.value
+                })
+            }
+        }
+        applyFilter = (operation, value) => {
+            this.setState({
+                selectedOperation: operation,
+                filterValue: value
+            })
+        }
+    }
     
 ---
 

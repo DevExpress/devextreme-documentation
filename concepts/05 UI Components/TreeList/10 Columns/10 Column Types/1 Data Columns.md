@@ -37,6 +37,48 @@ If data column values should be cast to another type (for example, date values s
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn data-field="HireDate" data-type="date" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column dataField="HireDate" dataType="date" />
+            </TreeList>
+        );
+    }
     
 ---
 

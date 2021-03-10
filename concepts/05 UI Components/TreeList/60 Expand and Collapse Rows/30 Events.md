@@ -54,6 +54,77 @@ To execute certain commands before or after a row was expanded or collapsed, han
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            @row-expanding="onRowExpanding"
+            @row-expanded="onRowExpanded"
+            @row-collapsing="onRowCollapsing"
+            @row-collapsed="onRowCollapsed">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        // ...
+        methods: {
+            onRowExpanding (e) {
+                // Handler of the "rowExpanding" event
+            },
+            onRowExpanded (e) {
+                // Handler of the "rowExpanded" event
+            },
+            onRowCollapsing (e) {
+                // Handler of the "rowCollapsing" event
+            },
+            onRowCollapsed (e) {
+                // Handler of the "rowCollapsed" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    const onRowExpanding = (e) => {
+        // Handler of the "rowExpanding" event
+    };
+    const onRowExpanded = (e) => {
+        // Handler of the "rowExpanded" event
+    };
+    const onRowCollapsing = (e) => {
+        // Handler of the "rowCollapsing" event
+    };
+    const onRowCollapsed = (e) => {
+        // Handler of the "rowCollapsed" event
+    };
+
+    export default function App() {
+        return (
+            <TreeList ...
+                onRowExpanding={onRowExpanding}
+                onRowExpanded={onRowExpanded}
+                onRowCollapsing={onRowCollapsing}
+                onRowCollapsed={onRowCollapsed}>
+            </TreeList>
+        );
+    }
     
 ---
 

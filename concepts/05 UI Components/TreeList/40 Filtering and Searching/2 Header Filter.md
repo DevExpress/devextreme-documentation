@@ -43,6 +43,57 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Widgets/dxTreeLis
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+           <DxHeaderFilter :visible="true" />
+           <DxColumn :allow-header-filtering="false" ... />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxHeaderFilter
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxHeaderFilter
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        HeaderFilter
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <HeaderFilter visible={true} />
+                    <Column allowHeaderFiltering={false} ... />
+                </TreeList>
+            );
+        }
+    }
     
 ---
 
@@ -99,6 +150,100 @@ A user can change the applied filter by including or excluding values. Use a col
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >           
+            <DxColumn 
+                v-model:filter-type="filterType"
+                v-model:filter-values="filterValues" 
+                data-field="OrderDate"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        data() {
+            return {
+               filterType: "exclude", // or "include" 
+               filterValues: [2014]
+            }
+        },
+        methods: {
+            applyFilter (filterType, values) {
+                this.filterType = filterType;
+                this.filterValues = values;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);            
+            this.state = {
+                filterType: 'exclude', // or 'include'
+                filterValues: [2014]
+            }
+        }
+
+        render() {
+            let { filterType, filterValues } = this.state;
+            return (
+                <TreeList ... 
+                    onOptionChanged={this.onOptionChanged}>                
+                    <Column 
+                        dataField="OrderDate"
+                        filterType={filterType}                   
+                        filterValues={filterValues}
+                    />
+                </TreeList>
+            );
+        }
+        onOptionChanged = (e) => {
+            if(e.fullName === "columns[0].filterValues") {
+                this.setState({ 
+                    filterValues: e.value
+                })
+            }
+            if(e.fullName === "columns[0].filterType") {
+                this.setState({ 
+                    filterType: e.value
+                })
+            }
+        }
+        applyFilter = (filterType, values) => {
+            this.setState({
+                filterType: filterType,
+                filterValues: values
+            })
+        }
+    }
     
 ---
 
@@ -146,6 +291,70 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Widgets/
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxHeaderFilter 
+                :allow-search="true" 
+                :visible="true" 
+            />
+            <DxColumn>
+                <DxColumnHeaderFilter :allow-search="false" />
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxHeaderFilter,
+        DxColumnHeaderFilter
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxHeaderFilter,
+            DxColumnHeaderFilter
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        HeaderFilter,
+        ColumnHeaderFilter
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <HeaderFilter 
+                        allowSearch={true} 
+                        visible={true} 
+                    />
+                    <Column>
+                        <ColumnHeaderFilter allowSearch={false} />
+                    </Column>
+                </TreeList>
+            );
+        }
+    }
     
 ---
 

@@ -27,6 +27,62 @@ Use the [addRow()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/addRo
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            ref="myTreeList">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            addNewRow() {
+                this.$refs['myTreeList'].instance.addRow();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeListRef = React.createRef();
+            this.addNewRow = this.addNewRow.bind(this);
+        }
+
+        addNewRow() {
+            this.treeListRef.current.instance.addRow();
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    ref={this.treeListRef}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -74,6 +130,65 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            @init-new-row="setHireDate">
+            <DxColumn data-field="Hire_Date" data-type="date" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        methods: {
+            setHireDate(e) {
+                e.data.Hire_Date = new Date();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        setHireDate(e) {
+            e.data.Hire_Date = new Date();
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    onInitNewRow={this.setHireDate}>
+                    <Column dataField="Hire_Date" dataType="date" />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

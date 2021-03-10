@@ -31,6 +31,92 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList :ref="treeListRefKey">
+            <DxColumn
+                data-field="Name"
+                v-model:sort-index="nameSortIndex"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return {
+                treeListRefKey,
+                nameSortIndex: 0
+            };
+        },
+        methods: {
+            clearNameColumnSorting() {
+                this.nameSortIndex = undefined;
+            },
+            clearAllSorting() {
+                this.treeList.clearSorting();
+            }
+        },
+        computed: {
+            treeList() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Column } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeListRef = React.createRef();
+        }
+
+        get treeList() {
+            return this.treeListRef.current.instance;
+        }
+
+        render() {
+            return (
+                <TreeList ref={this.treeListRef} ...>
+                    <Column
+                        dataField="Name"
+                        defaultSortIndex={0} />
+                </TreeList>
+            );
+        }
+
+        clearNameColumnSorting = () => {
+            this.treeList.columnOption("Name", "sortIndex", undefined);
+        }
+        
+        clearAllSorting = () => {
+            this.treeList.clearSorting();
+        }
+    }
+    export default App;
     
 ---
 

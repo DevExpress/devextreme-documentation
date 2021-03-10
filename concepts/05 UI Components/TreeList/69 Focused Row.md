@@ -52,7 +52,7 @@ You can specify the initially focused row using the [focusedRowKey](/api-referen
     </dx-tree-list>
 
     <!--TypeScript-->
-    import { dxTreeListModule } from "devextreme-angular";
+    import { DxTreeListModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         // ...
@@ -60,10 +60,52 @@ You can specify the initially focused row using the [focusedRowKey](/api-referen
     @NgModule({
         imports: [
             // ...
-            dxTreeListModule
+            DxTreeListModule
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :focused-row-enabled="true"
+            :focused-row-index="0" <!-- focus the first row -->
+            :focused-column-index="0"> <!-- focus the first cell -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ...
+                focusedRowEnabled={true}
+                focusedRowIndex={0} {/* focus the first row */}
+                focusedColumnIndex={0}> {/* focus the first cell */}
+            </TreeList>
+        );
+    }
 
 ---
 

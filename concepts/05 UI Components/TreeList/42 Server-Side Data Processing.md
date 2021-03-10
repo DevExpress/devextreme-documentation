@@ -41,4 +41,55 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20C
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxRemoteOperations
+                :filtering="true"
+                :sorting="true"
+                :grouping="true"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxRemoteOperations
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxRemoteOperations
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        RemoteOperations
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <RemoteOperations
+                    filtering={true}
+                    sorting={true}
+                    grouping={true}
+                />
+            </TreeList>
+        );
+    }
+
 ---

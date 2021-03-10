@@ -121,7 +121,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
 
     <!-- tab: App.vue -->
     <template>
-        <DxTreeList ref="TreeListRefKey">
+        <DxTreeList ref="treeListRefKey">
             <!-- ... -->
         </DxTreeList>
     </template>
@@ -133,7 +133,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         // ...
     } from 'devextreme-vue/tree-list';
 
-    const TreeListRefKey = "my-tree-list";
+    const treeListRefKey = "my-tree-list";
 
     export default {
         components: {
@@ -142,19 +142,19 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         },
         data: function() {
             return {
-                TreeListRefKey
+                treeListRefKey
             };
         },
         methods: {
             performLongOperation: function() {
-                this.TreeList.beginCustomLoading();
+                this.treeList.beginCustomLoading();
                 // ...
-                this.TreeList.endCustomLoading();
+                this.treeList.endCustomLoading();
             }
         },
         computed: {
-            TreeList: function() {
-                return this.$refs[TreeListRefKey].instance;
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
             }
         }
     }
@@ -171,15 +171,15 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     } from 'devextreme-react/tree-list';
 
     export default function App() {
-        const TreeList = useRef(null);
+        const treeList = useRef(null);
         const performLongOperation = useCallback(() => {
-            TreeList.current.instance.beginCustomLoading();
+            treeList.current.instance.beginCustomLoading();
             // ...
-            TreeList.current.instance.endCustomLoading();
+            treeList.current.instance.endCustomLoading();
         }, []);
 
         return (
-            <TreeList ref="TreeList">
+            <TreeList ref="treeList">
                 {/* ... */}
             </TreeList>
         );

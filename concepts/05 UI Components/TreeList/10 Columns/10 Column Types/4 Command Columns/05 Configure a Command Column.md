@@ -36,6 +36,51 @@ The following example shows how to specify the adaptive column's [width](/api-re
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn type="adaptive" :width="50" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column type="adaptive" width={50} />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -90,5 +135,72 @@ If a command column should have custom content, specify the column's [cellTempla
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn
+                type="selection"
+                cell-template="selectionCellTemplate"
+                header-cell-template="selectionHeaderCellTemplate"
+            />
+            <template #selectionCellTemplate="{ data }">
+                <!-- Declare custom cell content here -->
+            </template>
+            <template #selectionHeaderCellTemplate="{ data }">
+                <!-- Declare custom header content here -->
+            </template>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    const renderCell = (cellInfo) => {
+        {/* Declare custom cell content here */}
+    };
+
+    const renderHeaderCell = (headerInfo) => {
+        {/* Declare custom header content here */}
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column
+                    type="selection"
+                    cellRender={renderCell}
+                    headerCellRender={renderHeaderCell}
+                />
+            </TreeList>
+        );
+    }
     
 ---

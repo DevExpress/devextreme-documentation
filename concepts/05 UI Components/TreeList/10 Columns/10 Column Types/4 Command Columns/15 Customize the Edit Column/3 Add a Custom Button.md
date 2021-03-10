@@ -53,6 +53,83 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn type="buttons">
+                <DxButton name="add" />
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+                <DxButton 
+                    text="My Command"
+                    icon="/url/to/my/icon.ico"
+                    hint="My Command"
+                    :on-click="myCommand"
+                />
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxButton
+        },
+        data() {
+            return {
+                // ...
+            }
+        },
+        methods: {
+            myCommand(e) {
+                // Execute your command here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column,
+        Button
+    } from 'devextreme-react/tree-list';
+
+    const myCommand = (e) => {
+        // Execute your command here
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column type="buttons">
+                    <Button name="add" />
+                    <Button name="edit" />
+                    <Button name="delete" />
+                    <Button
+                        text="My Command"
+                        icon="/url/to/my/icon.ico"
+                        hint="My Command"
+                        onClick={myCommand}
+                    />
+                </Column>
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -105,5 +182,76 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn type="buttons">
+                <DxButton name="add" />
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+                <DxButton>
+                    <template #default>
+                        <!-- Declare custom markup here -->
+                    </template>
+                </DxButton>
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxButton
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        Button
+    } from 'devextreme-react/tree-list';
+
+    const renderMyCommand = () => {
+        return (
+            {/* Declare custom markup here */}
+        );
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column type="buttons">
+                    <Button name="add" />
+                    <Button name="edit" />
+                    <Button name="delete" />
+                    <Button render={renderMyCommand} />
+                </Column>
+            </TreeList>
+        );
+    }
     
 ---

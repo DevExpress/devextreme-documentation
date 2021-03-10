@@ -46,6 +46,69 @@ The **Add**, **Edit**, and **Delete** buttons can be hidden by omitting them whe
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxEditing
+                :allow-updating="true"
+                :allow-deleting="true"
+            />
+            <DxColumn type="buttons">
+                <DxButton name="edit" />
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxEditing,
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxEditing,
+            DxColumn,
+            DxButton
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Editing,
+        Column,
+        Button
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Editing
+                    allowUpdating={true}
+                    allowDeleting={true}
+                />
+                <Column type="buttons">
+                    <Button name="edit" />
+                </Column>
+            </TreeList>
+        );
+    }
     
 ---
 

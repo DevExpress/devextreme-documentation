@@ -10,11 +10,11 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
         $("#htmlEditorContainer").dxHtmlEditor({
             toolbar: {
                 items: [
-                    { formatName: "undo", location: "after" }, 
-                    { formatName: "redo", location: "after" },
+                    { name: "undo", location: "after" }, 
+                    { name: "redo", location: "after" },
                     "alignLeft", "alignRight",
-                    { formatName: "color", location: "center" }, 
-                    { formatName: "background", location: "center" }
+                    { name: "color", location: "center" }, 
+                    { name: "background", location: "center" }
                 ]
             }
         });
@@ -25,12 +25,12 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
     <!--HTML-->
     <dx-html-editor>
         <dxo-toolbar>
-            <dxi-item formatName="undo" location="after"></dxi-item>
-            <dxi-item formatName="redo" location="after"></dxi-item>
-            <dxi-item formatName="alignLeft"></dxi-item>
-            <dxi-item formatName="alignRight"></dxi-item>
-            <dxi-item formatName="color" location="center"></dxi-item>
-            <dxi-item formatName="background" location="center"></dxi-item>
+            <dxi-item name="undo" location="after"></dxi-item>
+            <dxi-item name="redo" location="after"></dxi-item>
+            <dxi-item name="alignLeft"></dxi-item>
+            <dxi-item name="alignRight"></dxi-item>
+            <dxi-item name="color" location="center"></dxi-item>
+            <dxi-item name="background" location="center"></dxi-item>
         </dxo-toolbar>
     </dx-html-editor>
 
@@ -106,21 +106,21 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
                 <HtmlEditor>
                     <Toolbar>
                         <Item
-                            formatName="undo"
+                            name="undo"
                             location="after"
                         />
                         <Item
-                            formatName="redo"
+                            name="redo"
                             location="after"
                         />
-                        <Item formatName="alignLeft"/>
-                        <Item formatName="alignRight"/>
+                        <Item name="alignLeft"/>
+                        <Item name="alignRight"/>
                         <Item
-                            formatName="color"
+                            name="color"
                             location="center"
                         />
                         <Item
-                            formatName="background"
+                            name="background"
                             location="center"
                         />
                     </Toolbar>
@@ -144,8 +144,8 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
             toolbar: {
                 items: [
                     // ...
-                    { formatName: "undo", locateInMenu: "always" }, 
-                    { formatName: "color", locateInMenu: "never" }
+                    { name: "undo", locateInMenu: "always" }, 
+                    { name: "color", locateInMenu: "never" }
                 ]
             }
         });
@@ -157,8 +157,8 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
     <dx-html-editor>
         <dxo-toolbar>
             <!-- ... -->
-            <dxi-item formatName="undo" locateInMenu="always"></dxi-item>
-            <dxi-item formatName="color" locateInMenu="never"></dxi-item>
+            <dxi-item name="undo" locateInMenu="always"></dxi-item>
+            <dxi-item name="color" locateInMenu="never"></dxi-item>
         </dxo-toolbar>
     </dx-html-editor>
 
@@ -182,11 +182,11 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
         <DxHtmlEditor>
             <DxToolbar>
                 <DxItem
-                    format-name="undo"
+                    name="undo"
                     locate-in-menu="always"
                 />
                 <DxItem
-                    format-name="color"
+                    name="color"
                     locate-in-menu="never"
                 />
             </DxToolbar>
@@ -224,11 +224,11 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
                 <HtmlEditor>
                     <Toolbar>
                         <Item
-                            formatName="undo"
+                            name="undo"
                             locateInMenu="always"
                         />
                         <Item
-                            formatName="color"
+                            name="color"
                             locateInMenu="never"
                         />
                     </Toolbar>

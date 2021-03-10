@@ -6,11 +6,11 @@ The HtmlEditor provides the following API methods to format the content:
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatformatName_formatValue">format(formatName, formatValue)</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatname_acceptedValue">format(name, acceptedValue)</a></td>
         <td>Applies a format to the selected content.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatLineindex_length_formatName_formatValue">formatLine(index, length, formatName, formatValue)</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatLineindex_length_name_facceptedValue">formatLine(index, length, name, acceptedValue)</a></td>
         <td>Applies a single block format to all lines in the given range.</td>
     </tr>
     <tr>
@@ -18,7 +18,7 @@ The HtmlEditor provides the following API methods to format the content:
         <td>Applies several block formats to all lines in the given range.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatTextindex_length_formatName_formatValue">formatText(index, length, formatName, formatValue)</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatTextindex_length_name_acceptedValue">formatText(index, length, name, acceptedValue)</a></td>
         <td>Applies a single text format to all characters in the given range.</td>
     </tr>
     <tr>

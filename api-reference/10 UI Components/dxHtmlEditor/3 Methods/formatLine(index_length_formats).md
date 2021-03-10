@@ -15,7 +15,7 @@ The length of the content to be formatted.
 ##### param(formats): Object
 Formats to be applied.      
 This object should have the following structure:        
-`{ "formatName1": "formatValue1", ... }`
+`{ "name1": "acceptedValue1", ... }`
 
 ---
 [note] The entire line will be formatted even if only a single character from it falls within the given range.

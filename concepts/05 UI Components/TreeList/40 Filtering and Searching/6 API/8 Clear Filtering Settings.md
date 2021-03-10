@@ -29,6 +29,75 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Widgets/GridBase/3%20Meth
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxTreeList ... 
+            :ref="gridRefKey"
+        />       
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+        },
+        data() {
+            return {
+                // ...
+                gridRefKey: 'tree-list',
+            };
+        },
+        methods: {
+            clearSearchPanel = () => {
+                this.treeList.clearFilter("search");
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[gridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);    
+            this.gridRef = React.createRef();                  
+        }
+        get treeList() {
+            return this.gridRef.current.instance;
+        }
+        
+        render() {
+            return (
+                <TreeList ... 
+                    :ref="gridRef" 
+                />
+            );
+        }
+
+        clearSearchPanel = () => {
+            this.treeList.clearFilter("search");
+        }
+    }
     
 ---
 

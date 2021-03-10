@@ -45,6 +45,64 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Widgets/GridBase/1%20Co
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxPager
+                :show-page-size-selector="true"
+                :allowed-page-sizes="[10, 20, 50]"
+                :show-navigation-buttons="true"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxPager
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxPager
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Pager
+    } from 'devextreme-react/tree-list';
+
+    const allowedPageSizes = [10, 20, 50];
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Pager
+                        showPageSizeSelector={true}
+                        allowedPageSizes={allowedPageSizes}
+                        showNavigationButtons={true}
+                    />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showInfo.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/pager/#showInfo') property to show the page information. You can change the default text by specifiyng the [infoText](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/infoText.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/pager/#infoText').
@@ -91,6 +149,60 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxPager
+                :show-info="true"
+                info-text="Page #{0}. Total: {1} ({2} items)"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxPager
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxPager
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Pager
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Pager
+                        showInfo={true}
+                        infoText="Page #{0}. Total: {1} ({2} items)"
+                    />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
 
 ---
 

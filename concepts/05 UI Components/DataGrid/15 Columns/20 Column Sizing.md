@@ -83,7 +83,7 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
         render() {
             return (
                 <DataGrid ...
-                    columnMinWidth={100}">
+                    columnMinWidth={100}>
                     <Column dataField="Title" width={200} />
                     <Column dataField="Address" minWidth={150} />
                 </DataGrid>
@@ -163,7 +163,7 @@ Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configur
         render() {
             return (
                 <DataGrid ...
-                    columnAutoWidth={true}">
+                    columnAutoWidth={true}>
                 </DataGrid>
             );
         }

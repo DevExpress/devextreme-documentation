@@ -44,66 +44,101 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20W
         text="Update Cell"
         (onClick)="updateCell()">
     </dx-button>
-    
----
 
-The TreeList UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. 
+##### Vue
 
----
-##### jQuery
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeList ...
+                :ref="treeListRefKey">
+            </DxTreeList>
+            <DxButton
+                text="Update Cell"
+                @click="updateCell"
+            />
+        </div>
+    </template>
 
-    <!--JavaScript-->
-    $(function() {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            editing: {
-                allowUpdating: true, 
-                allowAdding: true
-            },
-            columns: [
-                { dataField: "ID", visible: false },
-                {
-                    dataField: "Full_Name",
-                    setCellValue: function (rowData, value) {
-                        rowData.ID = value + Math.random() * 100;
-                        rowData.Full_Name = value;
-                    }
-                }
-                // ...
-            ]
-        });
-    });
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-##### Angular
-    
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        setCellValue (rowData, value) {
-            rowData.ID = value + Math.random() * 100;
-            rowData.Full_Name = value;
+    import DxTreeList from 'devextreme-vue/tree-list';
+    import DxButton from 'devextreme-vue/button';
+
+    const treeListRefKey = 'myTreeList';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxButton
+        },
+        data: function() {
+            return {
+                treeListRefKey
+            }
+        },
+        methods: {
+            updateCell() {
+                this.treeList.cellValue(1, "Position", "CTO");
+                this.treeList.saveEditData();
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
+    </script>
 
-    <!--HTML-->
-    <dx-tree-list>
-        <dxo-editing
-            [allowUpdating]="true"
-            [allowAdding]="true">
-        </dxo-editing>
-        <dxi-column dataField="ID" [visible]="false"></dxi-column>
-        <dxi-column dataField="Full_Name" [setCellValue]="setCellValue"></dxi-column>
-    </dx-tree-list>
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeListRef = React.createRef();
+            this.updateCell = this.updateCell.bind(this);
+        }
+
+        get treeList() {
+            return this.treeListRef.current.instance;
+        }
+
+        updateCell() {
+            this.treeList.cellValue(1, "Position", "CTO");
+            this.treeList.saveEditData();
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <TreeList ...
+                        ref={this.treeListRef}>
+                    </TreeList>
+                    <Button
+                        text="Update Cell"
+                        onClick={this.updateCell}
+                    />
+                </React.Fragment>
+            );
+        }
+    }
+    export default App;
     
 ---
+
+The TreeList UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. Refer to the function's description for an example.
 
 Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hasEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#hasEditData') to check if there are any unsaved changes. You can save or cancel them using the [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#saveEditData') or [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cancelEditData') method, respectively.
 
@@ -118,9 +153,14 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
             text: "Save changes",
             onClick: function() {
                 var treeList = $("#treeListContainer").dxTreeList("instance");
-                if (treeList.hasEditData()) {
-                    // Implement your logic here
-                    treeList.saveEditData();
+                if(treeList.hasEditData()) {
+                    treeList.saveEditData().then(() => {
+                        if(!treeList.hasEditData()) {
+                            // Saved successfully
+                        } else {
+                            // Saving failed
+                        }
+                    });
                 }
             }
         });
@@ -129,23 +169,29 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
 ##### Angular
 
     <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
+    import { DxTreeListModule, DxButtonModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         @ViewChild(DxTreeListComponent, { static: false }) treeList: DxTreeListComponent;
         // Prior to Angular 8
         // @ViewChild(DxTreeListComponent) treeList: DxTreeListComponent;
-        saveEditData () {
-            if (this.treeList.instance.hasEditData()) {
-                // Implement your logic here
-                this.treeList.instance.saveEditData();
+        saveEditData() {
+            if(this.treeList.instance.hasEditData()) {
+                this.treeList.instance.saveEditData().then(() => {
+                    if(!this.treeList.instance.hasEditData()) {
+                        // Saved successfully
+                    } else {
+                        // Saving failed
+                    }
+                });
             }
         }
     }
     @NgModule({
         imports: [
             // ...
-            DxTreeListModule
+            DxTreeListModule,
+            DxButtonModule
         ],
         // ...
     })
@@ -156,6 +202,111 @@ Call the [hasEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/h
         text="Save changes"
         (onClick)="saveEditData()">
     </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeList ...
+                :ref="treeListRefKey">
+            </DxTreeList>
+            <DxButton
+                text="Save changes"
+                @click="saveChanges"
+            />
+        </div>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+    import DxButton from 'devextreme-vue/button';
+
+    const treeListRefKey = 'myTreeList';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxButton
+        },
+        data: function() {
+            return {
+                treeListRefKey
+            }
+        },
+        methods: {
+            saveChanges() {
+                if(this.treeList.hasEditData()) {
+                    this.treeList.saveEditData().then(() => {
+                        if(!this.treeList.hasEditData()) {
+                            // Saved successfully
+                        } else {
+                            // Saving failed
+                        }
+                    });
+                }
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+    import Button from 'devextreme-react/button';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeListRef = React.createRef();
+            this.saveChanges = this.saveChanges.bind(this);
+        }
+
+        get treeList() {
+            return this.treeListRef.current.instance;
+        }
+
+        saveChanges() {
+            if(this.treeList.hasEditData()) {
+                this.treeList.saveEditData().then(() => {
+                    if(!this.treeList.hasEditData()) {
+                        // Saved successfully
+                    } else {
+                        // Saving failed
+                    }
+                });
+            }
+        }
+
+        render() {
+            return (
+                <React.Fragment>
+                    <TreeList ...
+                        ref={this.treeListRef}>
+                    </TreeList>
+                    <Button
+                        text="Save changes"
+                        onClick={this.saveChanges}
+                    />
+                </React.Fragment>
+            );
+        }
+    }
+    export default App;
     
 ---
 

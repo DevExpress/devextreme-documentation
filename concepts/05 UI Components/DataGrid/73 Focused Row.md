@@ -69,6 +69,48 @@ You can specify the initially focused row using the [focusedRowKey](/api-referen
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :focused-row-enabled="true"
+            :focused-row-index="0" <!-- focus the first row -->
+            :focused-column-index="0"> <!-- focus the first cell -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ...
+                focusedRowEnabled={true}
+                focusedRowIndex={0} {/* focus the first row */}
+                focusedColumnIndex={0}> {/* focus the first cell */}
+            </DataGrid>
+        );
+    }
+
 ---
 
 Change the same properties using the [option(optionName, optionValue)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName_optionValue') method to focus a row or cell programmatically. You can also use the [navigateToRow(key)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/navigateToRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#navigateToRowkey') method to focus a row. This approach is more typical of jQuery and ASP.NET MVC Controls. With JavaScript frameworks, use property binding.

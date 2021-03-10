@@ -40,6 +40,55 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumnFixing :enabled="true" />
+            <DxColumn :allow-fixing="false" ... />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxColumnFixing
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxColumnFixing
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        ColumnFixing
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <ColumnFixing enabled={true} />
+                <Column allowFixing={false} ... />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -78,6 +127,51 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn :fixed="true" fixed-position="left" ... />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxColumnFixing
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column fixed={true} fixedPosition="left" ... />
+            </TreeList>
+        );
+    }
     
 ---
 

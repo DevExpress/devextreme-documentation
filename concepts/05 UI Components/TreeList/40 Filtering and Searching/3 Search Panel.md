@@ -43,6 +43,57 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+           <DxSearchPanel :visible="true" />
+           <DxColumn :allow-search="false" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxSearchPanel
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxSearchPanel
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        SearchPanel
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                  <SearchPanel visible={true} />
+                  <Column allowSearch={false} />
+                </TreeList>
+            );
+        }
+    }
     
 ---
 
@@ -93,6 +144,87 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Widgets/GridBase/1%20Con
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxSearchPanel 
+                :visible="true"
+                v-model:text="searchText" 
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxSearchPanel
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxSearchPanel
+        },
+        data() {
+           return {
+               searchText: "4/1/2015",
+           }
+        },
+        methods: {
+            setSearchValue (searchText) {
+                this.searchText = searchText;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        SearchPanel
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                searchText: "4/1/2015"
+            }
+        }
+
+        render() {
+            let { searchText } = this.state;
+            return (
+                <TreeList ... 
+                    onOptionChanged={this.onOptionChanged}>
+                    <SearchPanel 
+                        visible={true}
+                        text={searchText} 
+                    />
+                </TreeList>
+            );
+        }
+        onOptionChanged = (e) => {
+            if(e.fullName === "searchPanel.text") {
+                this.setSearchValue(e.value);
+            }
+        }
+        setSearchValue = (searchText) => {
+            this.setState({
+                searchText: searchText
+            })
+        }
+    }
 
 ---
 

@@ -44,6 +44,65 @@ The TreeList UI component allows a user to add, delete and update data. Assign *
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxEditing
+                :allow-updating="true"
+                :allow-adding="true"
+                :allow-deleting="true"
+            />
+            <DxColumn data-field="id" :allow-editing="false" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxEditing,
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxEditing,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Editing,
+        Column
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Editing
+                        allowUpdating={true}
+                        allowAdding={true}
+                        allowDeleting={true}
+                    />
+                    <Column dataField="id" allowEditing={false} />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -84,6 +143,55 @@ With the TreeList you can edit data in several modes. Use the **editing**.[mode]
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxEditing ...
+                mode="row" /> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxEditing
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxEditing
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Editing
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Editing ...
+                        mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

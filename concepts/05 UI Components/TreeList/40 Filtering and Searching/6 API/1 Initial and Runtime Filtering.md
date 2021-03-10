@@ -34,6 +34,82 @@ The initial and runtime filtering API depends on the UI element and is described
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... 
+            :ref="gridRefKey"
+        />      
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+        },
+        data() {
+            return {
+                // ...
+                gridRefKey: 'tree-list'
+            };
+        },
+        methods: {
+            filterByCost() {
+                this.treeList.filter([
+                    [ "Cost", ">", 1000 ],
+                    "and",
+                    [ "Cost", "<=", 2000 ]
+                ]);
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[gridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);    
+            this.gridRef = React.createRef();                  
+        }
+        get treeList() {
+            return this.gridRef.current.instance;
+        }
+        
+        render() {
+            return (
+                <TreeList ... 
+                    :ref="gridRef" /> 
+            );
+        }
+
+        filterByCost = () => {
+            this.treeList.filter([
+                [ "Cost", ">", 1000 ],
+                "and",
+                [ "Cost", "<=", 2000 ]
+            ]);
+        }
+    }
     
 ---
 
@@ -65,6 +141,76 @@ You can create a filter that combines all the applied filters by calling the [ge
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxTreeList ... 
+               :ref="gridRefKey"
+            />   
+        </div>    
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+        },
+        data() {
+            return {
+                // ...
+                gridRefKey: 'tree-list'
+            };
+        },
+        methods: {
+            getCombinedFilter () {
+                return this.treeList.getCombinedFilter(true);
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[gridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);    
+            this.gridRef = React.createRef();                  
+        }
+        get treeList() {
+            return this.gridRef.current.instance;
+        }
+        
+        render() {
+            return (               
+                <TreeList ... 
+                    :ref="gridRef" />
+            );
+        }
+
+        getCombinedFilter = () => {
+            return this.treeList.getCombinedFilter(true);
+        }
+    }
     
 ---
 

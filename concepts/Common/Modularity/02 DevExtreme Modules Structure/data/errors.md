@@ -1,9 +1,9 @@
-Exposes errors and warnings that may occur when using the DevExtreme Data Library.
+Exposes a method that enables you to handle errors that may occur within the DevExtreme Data Layer.
 
 Exports:
 
-- *errorHandler* - The function called when the Store causes an error. Assign a function to perform a custom action.
+- *setErrorHandler* - The [setErrorHandler](/Documentation/ApiReference/Data_Layer/Utils/#setErrorHandler) method
 
-        require("data/errors").errorHandler = function(){
-            // Implement logic here
-        };
+        require("data/errors").setErrorHandler(function (error) {
+            console.log(error.message);
+        });

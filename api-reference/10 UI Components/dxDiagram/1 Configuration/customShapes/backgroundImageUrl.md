@@ -28,6 +28,7 @@ The **backgroundImageUrl** property is not in effect if the [baseType](/api-refe
     </svg>
 ---
 
+---
 ##### jQuery
 
     <!-- tab: index.js -->

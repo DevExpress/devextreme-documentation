@@ -34,7 +34,7 @@ The Diagram component allows you to specify default settings for its items in th
         <dxo-edges ... [styleExpr]="styleExpr"></dxo-edges>
     </dx-diagram>
 
-    <!-- tab: app.component.html -->
+    <!-- tab: app.component.ts -->
     export class AppComponent {
         //...
         styleExpr(obj) {

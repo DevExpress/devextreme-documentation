@@ -15,7 +15,7 @@ All rows are collapsed by default. Assign an array of keys to the [expandedRowKe
     <!--HTML-->
     <dx-tree-list ...
         [expandedRowKeys]="[1, 5, 18]">
-        <!-- autoExpandAll: true -->
+        <!-- [autoExpandAll]="true" -->
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -31,6 +31,46 @@ All rows are collapsed by default. Assign an array of keys to the [expandedRowKe
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :expanded-row-keys="[1, 5, 18]">
+            <!-- :auto-expand-all="true" -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ...
+                defaultExpandedRowKeys={[1, 5, 18]}>
+                <!-- autoExpandAll={true} -->
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -73,6 +113,78 @@ Call the [expandRow(key)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Method
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ref="treeListRefKey">
+            <!-- ... -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        // ...
+    } from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList,
+            // ...
+        },
+        data: function() {
+            return {
+                treeListRefKey
+            };
+        },
+        methods: {
+            toggleRow (key) {
+                if (this.treeList.isRowExpanded(key)) {
+                    this.treeList.collapseRow(key);
+                } else {
+                    this.treeList.expandRow(key);
+                }
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef, useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        // ...
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        const treeList = useRef(null);
+        const toggleRow = (key) => {
+            if (treeList.current.instance.isRowExpanded(key)) {
+                treeList.current.instance.collapseRow(key);
+            } else {
+                treeList.current.instance.expandRow(key);
+            }
+        };
+
+        return (
+            <TreeList ref="treeList">
+                {/* ... */}
+            </TreeList>
+        );
+    }
     
 ---
 

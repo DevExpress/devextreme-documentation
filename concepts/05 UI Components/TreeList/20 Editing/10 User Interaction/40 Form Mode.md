@@ -90,6 +90,115 @@ In the following code, the items with the specified **dataField** are simple ite
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxEditing
+                :allow-updating="true"
+                mode="form">
+                <DxForm>
+                    <DxGroupItem caption="Personal Data">
+                        <DxSimpleItem data-field="Prefix" />
+                        <DxSimpleItem data-field="Full_Name" />
+                        <DxSimpleItem data-field="Position" />
+                        <DxSimpleItem data-field="Duties" editor-type="dxTextArea" />
+                    </DxGroupItem>
+                    <DxGroupItem caption="Contacts">
+                        <DxSimpleItem data-field="Email" />
+                        <DxSimpleItem data-field="Skype" />
+                    </DxGroupItem>
+                </DxForm>
+            </DxEditing>
+            <DxColumn data-field="Full_Name" />
+            <DxColumn data-field="Prefix" />
+            <DxColumn data-field="Position" />
+            <DxColumn data-field="Duties" />
+            <DxColumn data-field="Email" />
+            <DxColumn data-field="Skype" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxEditing,
+        DxForm,
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    import {
+        DxSimpleItem,
+        DxGroupItem
+    } from 'devextreme-vue/form';
+
+    import 'devextreme-vue/text-area';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxEditing,
+            DxForm,
+            DxColumn,
+            DxSimpleItem,
+            DxGroupItem
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Editing,
+        Form,
+        Column
+    } from 'devextreme-react/tree-list';
+
+    import {
+        SimpleItem,
+        GroupItem
+    } from 'devextreme-react/form';
+    
+    import 'devextreme-react/text-area';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Editing
+                        allowUpdating={true}
+                        mode="form">
+                        <Form>
+                            <GroupItem caption="Personal Data">
+                                <SimpleItem dataField="Prefix" />
+                                <SimpleItem dataField="Full_Name" />
+                                <SimpleItem dataField="Position" />
+                                <SimpleItem dataField="Duties" editorType="dxTextArea" />
+                            </GroupItem>
+                            <GroupItem caption="Contacts">
+                                <SimpleItem dataField="Email" />
+                                <SimpleItem dataField="Skype" />
+                            </GroupItem>
+                        </Form>
+                    </Editing>
+                    <Column dataField="Full_Name" />
+                    <Column dataField="Prefix" />
+                    <Column dataField="Position" />
+                    <Column dataField="Duties" />
+                    <Column dataField="Email" />
+                    <Column dataField="Skype" />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

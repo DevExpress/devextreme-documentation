@@ -47,5 +47,61 @@ In the following code, a CSS class is added to the **Save** button. The **Add**,
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn type="buttons">
+                <DxButton name="save" css-class="my-class" />
+                <DxButton name="edit" />
+                <DxButton name="delete" />
+            </DxColumn>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxButton
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column,
+        Button
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column type="buttons">
+                    <Button name="save" cssClass="my-class" />
+                    <Button name="edit" />
+                    <Button name="delete" />
+                </Column>
+            </TreeList>
+        );
+    }
     
 ---

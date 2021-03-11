@@ -42,6 +42,56 @@ Columns represent sets of data values that have the same type. To configure colu
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn data-field="Title" caption="Position" />
+            <DxColumn data-field="FullName" :width="300" />
+            <DxColumn data-field="CompanyName" />
+            <DxColumn data-field="City" />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column dataField="Title" caption="Position" />
+                <Column dataField="FullName" width={300} />
+                <Column dataField="CompanyName" />
+                <Column dataField="City" />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -83,6 +133,53 @@ The TreeList generates a column per data field if you do not specify the **colum
     <dx-tree-list ...
         [customizeColumns]="customizeColumns">
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :customize-columns="customizeColumns">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            customizeColumns(columns) {
+                columns[0].width = 100;
+                columns[1].width = 210;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    const customizeColumns = (columns) => {
+        columns[0].width = 100;
+        columns[1].width = 210;
+    };
+
+    export default function App() {
+        return (
+            <TreeList ...
+                customizeColumns={customizeColumns}>
+            </TreeList>
+        );
+    }
     
 ---
 

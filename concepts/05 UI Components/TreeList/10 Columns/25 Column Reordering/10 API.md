@@ -35,6 +35,50 @@ The [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/colu
     <dx-tree-list ...
         [customizeColumns]="customizeColumns">
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :customize-columns="customizeColumns">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            customizeColumns(columns) {
+                column[2].visibleIndex = 1;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+
+    const customizeColumns = (columns) => {
+        column[2].visibleIndex = 1;
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ...
+                customizeColumns={customizeColumns}>
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -67,6 +111,62 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn ... />
+            <DxColumn ...
+                v-model:visible-index="secondColVisibleIndex"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        data() {
+            return() {
+                secondColVisibleIndex: 1
+            }
+        },
+        methods: {
+            swapColumns() {
+                this.secondColVisibleIndex = 0;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+    
+    export default function App() {
+        const treeList = useRef(null);
+        const swapColumns = () => {
+            treeList.current.instance.columnOption(1, 'visibleIndex', 0);
+        };
+
+	    return (
+            <TreeList ref={treeList}>
+                {/* ... */ }
+            </TreeList>
+        );
+    }
     
 ---
 

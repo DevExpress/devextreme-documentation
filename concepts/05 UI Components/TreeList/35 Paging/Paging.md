@@ -42,6 +42,58 @@ Paging improves the UI component's performance on large datasets because it rend
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxPaging
+                :enabled="true"
+                :page-size="15"
+                :page-index="1" /> <!-- Shows the second page -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxPaging
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxPaging
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Paging
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Paging
+                        enabled={true}
+                        defaultPageSize={15}
+                        defaultPageIndex={1} /> {/* Shows the second page */}
+                </TreeList>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 [tags]TreeList, tree list, paging, pager, page size, page navigator, page info, page count

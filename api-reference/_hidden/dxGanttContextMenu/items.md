@@ -86,7 +86,6 @@ To add a predefined item to the context menu, add its [name](/Documentation/ApiR
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
     import { DxGantt, DxContextMenu } from 'devextreme-vue/gantt';
@@ -240,7 +239,6 @@ To add a custom context menu item, specify its [text](/Documentation/ApiReferenc
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
     import { DxGantt, DxContextMenu } from 'devextreme-vue/gantt';

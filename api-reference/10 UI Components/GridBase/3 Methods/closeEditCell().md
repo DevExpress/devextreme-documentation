@@ -8,4 +8,4 @@ Switches the cell being edited back to the normal state. Takes effect only if **
 ---
 #####See Also#####
 #include common-link-callmethods
-- [cancelEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cancelEditData().md '{basewidgetpath}/Methods/#cancelEditData')
+- [cancelEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cancelEditData().md '{basewidgetpath}/Methods/#cancelEditData')

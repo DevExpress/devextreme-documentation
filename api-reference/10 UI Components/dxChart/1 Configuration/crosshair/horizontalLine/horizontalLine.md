@@ -12,7 +12,7 @@ Crosshair lines can be configured using the following objects.
 * **crosshair**.**horizontalLine**       
 Configures the horizontal crosshair line only.
 
-* **crosshair**.[verticalLine](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair/verticalLine '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/verticalLine/')     
+* **crosshair**.[verticalLine](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair/verticalLine '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/verticalLine/')     
 Configures the vertical crosshair line only.
 
 * **crosshair**    

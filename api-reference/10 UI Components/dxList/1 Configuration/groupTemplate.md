@@ -25,5 +25,5 @@ A template name or container.
 }
 
 #####See Also#####
-- [Customize Group Headers](/concepts/05%20Widgets/List/14%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/UI_Components/List/Grouping/Customize_Group_Headers/')
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [Customize Group Headers](/concepts/05%20UI%20Components/List/14%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/UI_Components/List/Grouping/Customize_Group_Headers/')
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

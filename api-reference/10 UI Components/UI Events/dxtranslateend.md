@@ -21,4 +21,4 @@ The distance between the initial and current position.
 
 ---
 #####See Also#####
-- [UI Events - Introduction](/api-reference/10%20UI%20Widgets/UI%20Events '/Documentation/ApiReference/UI_Components/UI_Events/')
+- [UI Events - Introduction](/api-reference/10%20UI%20Components/UI%20Events '/Documentation/ApiReference/UI_Components/UI_Events/')

@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can delete [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
+Specifies whether a user can delete [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
 
 ---
 ---

@@ -8,7 +8,7 @@ type: String
 Specifies which editor UI component is used to display and edit the form item value.
 
 ---
-[important]If you use [DevExtreme modules](/concepts/Common/Modularity '/Documentation/Guide/Common/Modularity/'), import the editor's module when specifying this property. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"* because the Form UI component imports them automatically when creating form items. 
+[important]If you use [DevExtreme modules](/Documentation/Guide/Common/Modularity/), import the editor's module when specifying this property. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"* because the Form UI component imports them automatically when creating form items. 
 
 #include common-ctp-note with {
     component: "HtmlEditor"
@@ -48,4 +48,4 @@ When using an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/de
 }
 
 #####See Also#####
-- [Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
+- [Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')

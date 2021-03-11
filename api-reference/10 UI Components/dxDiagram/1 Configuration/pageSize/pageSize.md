@@ -7,7 +7,7 @@ type: Object
 Specifies a size of pages.
 
 ---
-The [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') property specifies the page's measurement units.
+The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') property specifies the page's measurement units.
 
 ---
 ##### jQuery  
@@ -27,8 +27,8 @@ The [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.m
 
 [note]
 
-- If you call the [import](/api-reference/10%20UI%20Widgets/dxDiagram/3%20Methods/import(data_updateExistingItemsOnly).md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#importdata_updateExistingItemsOnly') method, it applies the imported page settings and the **pageSize** property is ignored.
+- If you call the [import](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/import(data_updateExistingItemsOnly).md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#importdata_updateExistingItemsOnly') method, it applies the imported page settings and the **pageSize** property is ignored.
 
-- Page settings are stored in a diagram model. The **pageSize** property is not in effect if the model is read-only (the [readOnly](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#readOnly')  property is set to **true**).
+- Page settings are stored in a diagram model. The **pageSize** property is not in effect if the model is read-only (the [readOnly](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#readOnly')  property is set to **true**).
 
 [/note]

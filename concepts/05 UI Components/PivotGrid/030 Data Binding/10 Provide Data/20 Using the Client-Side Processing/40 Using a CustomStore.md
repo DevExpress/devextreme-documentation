@@ -13,4 +13,4 @@ When you have a custom web service with its own data accessing logic, use a [Cus
 
 A CustomStore has many more configuration properties than those described in this topic. For a complete list, refer to the [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/') reference section.
 
-After you have created a data source configuration object, bind it to your grid. Refer to the [Bind Data](/concepts/05%20Widgets/PivotGrid/030%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/PivotGrid/Data_Binding/#Bind_Data') section to learn how to do this.
+After you have created a data source configuration object, bind it to your grid. Refer to the [Bind Data](/concepts/05%20UI%20Components/PivotGrid/030%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/PivotGrid/Data_Binding/#Bind_Data') section to learn how to do this.

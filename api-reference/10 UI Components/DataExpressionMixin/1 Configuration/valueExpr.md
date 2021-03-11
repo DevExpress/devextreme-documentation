@@ -19,4 +19,4 @@ Always set this property if the [dataSource](/api-reference/10%20UI%20Widgets/Da
 #include uiwidgets-ref-valueExpr-functionnote
 
 #####See Also#####
-- [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '{basewidgetpath}/Configuration/#displayExpr')
+- [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '{basewidgetpath}/Configuration/#displayExpr')

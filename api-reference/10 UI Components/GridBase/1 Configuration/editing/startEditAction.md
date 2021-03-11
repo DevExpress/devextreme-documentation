@@ -14,4 +14,4 @@ Specifies whether a single or double click should switch a cell to the editing s
 }
 
 #####See Also#####
-- **keyboardNavigation**.[editOnKeyPress](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/keyboardNavigation/editOnKeyPress.md '{basewidgetpath}/Configuration/keyboardNavigation/#editOnKeyPress')
+- **keyboardNavigation**.[editOnKeyPress](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/keyboardNavigation/editOnKeyPress.md '{basewidgetpath}/Configuration/keyboardNavigation/#editOnKeyPress')

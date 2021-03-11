@@ -14,4 +14,4 @@ The item's index. If the items are grouped, the index represents an object defin
 ---
 #####See Also#####
 #include common-link-callmethods
-- [List - Selection API](/concepts/05%20Widgets/List/25%20Selection/05%20API.md '/Documentation/Guide/UI_Components/List/Selection/#API')
+- [List - Selection API](/concepts/05%20UI%20Components/List/25%20Selection/05%20API.md '/Documentation/Guide/UI_Components/List/Selection/#API')

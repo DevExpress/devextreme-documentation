@@ -4,7 +4,7 @@ type: String | function(rowData)
 ---
 ---
 ##### shortDescription
-Calculates custom display values for column cells. Requires specifying the [dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') or [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue') property. Used in [lookup optimization](/concepts/05%20Widgets/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/020%20Lookup%20Optimization.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Lookup_Optimization').
+Calculates custom display values for column cells. Requires specifying the [dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') or [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue') property. Used in [lookup optimization](/concepts/05%20UI%20Components/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/020%20Lookup%20Optimization.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Lookup_Optimization').
 
 ##### param(rowData): Object
 The data of the row to which the cell belongs.
@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 The value for the cell to display.
 
 ---
-This property accepts the name of the [data source field](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides display values...
+This property accepts the name of the [data source field](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides display values...
 
 ---
 ##### jQuery
@@ -128,7 +128,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 ---
 
-... or a function that combines display values. Specify this function only if all data processing operations are [executed on the client](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/').
+... or a function that combines display values. Specify this function only if all data processing operations are [executed on the client](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/').
 
 ---
 ##### jQuery
@@ -268,7 +268,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     
 ---
 
-The UI component uses the specified display values in [sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/{WidgetName}/Sorting/'), [searching](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Search_Panel'), and [grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') (in case of DataGrid).
+The UI component uses the specified display values in [sorting](/concepts/05%20UI%20Components/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/{WidgetName}/Sorting/'), [searching](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Search_Panel'), and [grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') (in case of DataGrid).
 
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"

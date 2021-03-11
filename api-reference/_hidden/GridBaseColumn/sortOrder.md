@@ -18,6 +18,6 @@ By default, rows are sorted according to the data source. To sort rows in an asc
 }
 
 #####See Also#####
-- [sorting](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting '{basewidgetpath}/Configuration/sorting/')
+- [sorting](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting '{basewidgetpath}/Configuration/sorting/')
 - [sortingMethod]({basewidgetpath}/Configuration/columns/#sortingMethod)
 - [calculateSortValue]({basewidgetpath}/Configuration/columns/#calculateSortValue)

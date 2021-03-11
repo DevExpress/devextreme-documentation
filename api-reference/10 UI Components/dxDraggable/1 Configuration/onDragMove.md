@@ -27,7 +27,7 @@ The UI component that raised the event.
 The instance of the item's source UI component.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component.
 
 ##### field(e.itemData): any
 The dragged element's data.
@@ -42,7 +42,7 @@ Model data. Available only if you use Knockout.
 The instance of the item's target UI component.
 
 ##### field(e.toData): any
-Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target UI component.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target UI component.
 
 ---
 <!-- Description goes here -->

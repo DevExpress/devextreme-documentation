@@ -22,7 +22,7 @@ The Scheduler is a UI component that represents scheduled data and allows a user
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 
-The following code adds the Scheduler UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property.
+The following code adds the Scheduler UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate'') property.
 
 ---
 
@@ -152,7 +152,7 @@ The following code adds the Scheduler UI component to your page. The simplest co
 
 ---
 
-Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property. The fields listed below should be present in every appointment.
+Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property. The fields listed below should be present in every appointment.
 
 - **text**  
     The subject of an appointment.
@@ -314,8 +314,8 @@ If your appointments have a different structure, specify:
 ---
 
 #####See Also#####
-- [Scheduler - Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/')
-- [Scheduler - Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/UI_Components/Scheduler/Views/')
-- [Scheduler - Keyboard Support](/concepts/05%20Widgets/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Keyboard_Support/')
+- [Scheduler - Data Binding](/Documentation/Guide/UI_Components/Scheduler/Data_Binding/)
+- [Scheduler - Views](/Documentation/Guide/UI_Components/Scheduler/Views/)
+- [Scheduler - Keyboard Support](/concepts/05%20UI%20Components/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Keyboard_Support/')
 
 [tags]dxscheduler, scheduler, overview, textExpr, startDateExpr, endDateExpr

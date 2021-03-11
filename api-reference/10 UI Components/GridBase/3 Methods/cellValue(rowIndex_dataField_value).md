@@ -6,7 +6,7 @@ id: GridBase.cellValue(rowIndex, dataField, value)
 Sets a new value to a cell with a specific row index and a data field, column caption or name.
 
 ##### param(rowIndex): Number
-The index of the row to which the cell belongs. Refer to [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
+The index of the row to which the cell belongs. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### param(dataField): String
 The [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField'), [caption](/api-reference/_hidden/GridBaseColumn/caption.md '{basewidgetpath}/Configuration/columns/#caption'), or [unique name](/api-reference/_hidden/GridBaseColumn/name.md '{basewidgetpath}/Configuration/columns/#name') of the column to which the cell belongs.
@@ -15,7 +15,7 @@ The [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidget
 The cell's new value.
 
 ---
-Call [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData') after this method to save the changes:
+Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData') after this method to save the changes:
 
 ---
 #####jQuery

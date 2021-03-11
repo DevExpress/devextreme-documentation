@@ -7,7 +7,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Declares a custom scale break collection. Applies only if the axis' [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type') is *"continuous"* or *"logarithmic"*.
+Declares a custom scale break collection. Applies only if the axis' [type](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type') is *"continuous"* or *"logarithmic"*.
 
 ---
 A scale break allows breaking off a part of the axis to improve the readability of a chart with high amplitude values.
@@ -17,5 +17,5 @@ A scale break allows breaking off a part of the axis to improve the readability 
 Each object in the **breaks** array configures a single scale break. Note that a scale break is visible only if its range exceeds the tick interval.
 
 #####See Also#####
-- [breakStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/breakStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/breakStyle/')
-- [autoBreaksEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/autoBreaksEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#autoBreaksEnabled')
+- [breakStyle](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/breakStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/breakStyle/')
+- [autoBreaksEnabled](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/autoBreaksEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#autoBreaksEnabled')

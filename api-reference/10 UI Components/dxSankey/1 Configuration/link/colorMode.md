@@ -12,7 +12,7 @@ Specifies how to color links.
 This property accepts the following values:
 
 - *"none"*      
-The color specified in the [color](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#color') property is used.
+The color specified in the [color](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/link/color.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#color') property is used.
 
 - *"source"*        
 A source node's color is used.

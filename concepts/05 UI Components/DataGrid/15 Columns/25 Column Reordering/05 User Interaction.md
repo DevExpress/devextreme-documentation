@@ -1,4 +1,4 @@
-Set the [allowColumnReordering](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering') property to **true** to allow a user to reorder columns. 
+Set the [allowColumnReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering') property to **true** to allow a user to reorder columns. 
 If a specific column should not be moved, set its [allowReordering](/api-reference/_hidden/GridBaseColumn/allowReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowReordering') property to **false**.
 
 ---

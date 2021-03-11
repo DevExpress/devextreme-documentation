@@ -2,5 +2,5 @@ The VectorMap UI component can also receive data for areas from a binary source.
 
 There are two approaches to using a binary source as a data source for VectorMap.
 
-- [Web Approach](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/40%20Using%20a%20Binary%20Source/20%20Web%20Approach.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Binary_Source/Web_Approach')
-- [Node.js Approach](/concepts/05%20Widgets/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/40%20Using%20a%20Binary%20Source/30%20Node.js%20Approach.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Binary_Source/Nodejs_Approach')
+- [Web Approach](/concepts/05%20UI%20Components/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/40%20Using%20a%20Binary%20Source/20%20Web%20Approach.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Binary_Source/Web_Approach')
+- [Node.js Approach](/concepts/05%20UI%20Components/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas/40%20Using%20a%20Binary%20Source/30%20Node.js%20Approach.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data/#Data_for_Areas/Using_a_Binary_Source/Nodejs_Approach')

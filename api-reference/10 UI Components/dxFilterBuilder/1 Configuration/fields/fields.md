@@ -13,7 +13,7 @@ This property accepts an array of objects, each configuring a filter condition's
 
 ![DevExtreme HTML5 JavaScript Filter Builder Fields](/images/FilterBuilder/visual_elements/fields.png)
 
-See the [Field](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/') section for details on fields you can specify in each object.
+See the [Field](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/') section for details on fields you can specify in each object.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"

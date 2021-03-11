@@ -67,7 +67,7 @@ The following code allows a user to delete only even data rows:
 ---
 
 #####See Also#####
-- [onRowRemoved](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved')
-- [onRowRemoving](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowRemoving.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoving')
-- [deleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/deleteRow(rowIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#deleteRowrowIndex')
-- [undeleteRow(rowIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/undeleteRow(rowIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#undeleteRowrowIndex')
+- [onRowRemoved](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved')
+- [onRowRemoving](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onRowRemoving.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoving')
+- [deleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/deleteRow(rowIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#deleteRowrowIndex')
+- [undeleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/undeleteRow(rowIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#undeleteRowrowIndex')

@@ -1,4 +1,4 @@
-The Popup has two toolbars: top and bottom. Items on these toolbars can be plain text or UI components. To configure the items, populate the [toolbarItems](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/toolbarItems '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/') array with objects. Each object configures an individual toolbar item. For example, the following code adds two toolbar items to the Popup: one is plain text, another is the [Button](/concepts/05%20Widgets/Button '/Documentation/Guide/UI_Components/Button/') UI component. They both occupy the top toolbar, because their [toolbar](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/toolbarItems/toolbar.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#toolbar') property assumes its default value.
+The Popup has two toolbars: top and bottom. Items on these toolbars can be plain text or UI components. To configure the items, populate the [toolbarItems](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/') array with objects. Each object configures an individual toolbar item. For example, the following code adds two toolbar items to the Popup: one is plain text, another is the [Button](/Documentation/Guide/UI_Components/Button/) UI component. They both occupy the top toolbar, because their [toolbar](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/toolbar.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#toolbar') property assumes its default value.
 
 ---
 ##### jQuery
@@ -173,10 +173,10 @@ The Popup has two toolbars: top and bottom. Items on these toolbars can be plain
 ---
 
 #####See Also#####
-- [Popup - Customize the Content](/concepts/05%20Widgets/Popup/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Customize_the_Content/')
-- [Popup - Customize the Title](/concepts/05%20Widgets/Popup/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Customize_the_Title/')
-- [Popup - Color the Shading of the Background](/concepts/05%20Widgets/Popup/05%20Customize%20the%20Appearance/30%20Color%20the%20Shading%20of%20the%20Background.md '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Color_the_Shading_of_the_Background/')
+- [Popup - Customize the Content](/concepts/05%20UI%20Components/Popup/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Customize_the_Content/')
+- [Popup - Customize the Title](/concepts/05%20UI%20Components/Popup/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Customize_the_Title/')
+- [Popup - Color the Shading of the Background](/concepts/05%20UI%20Components/Popup/05%20Customize%20the%20Appearance/30%20Color%20the%20Shading%20of%20the%20Background.md '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Color_the_Shading_of_the_Background/')
 - [Popup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview)
-- [Popup API Reference](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
+- [Popup API Reference](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
 
 [tags]popup, overlay, customize, toolbar items, top toolbar, bottom toolbar

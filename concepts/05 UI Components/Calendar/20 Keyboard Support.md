@@ -28,6 +28,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
-- [Calendar API Reference](/api-reference/10%20UI%20Widgets/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
+- [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 
 [tags]calendar, accessibility, keyboard shortcuts

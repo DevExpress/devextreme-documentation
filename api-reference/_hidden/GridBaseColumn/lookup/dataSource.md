@@ -26,7 +26,7 @@ This property accepts one of the following:
 A JavaScript array that contains plain objects or primitives.
 
 - [**DataSource configuration object**](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/')       
-A **DataSource** configuration object. You can find code for this example in the following help topic: [Bind a Lookup Column to a Custom Data Source](/Documentation/Guide/UI_Components/{WidgetName}/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/). For more information about the **DataSource** and DevExtreme Data Layer, refer to the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') article.
+A **DataSource** configuration object. You can find code for this example in the following help topic: [Bind a Lookup Column to a Custom Data Source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Bind%20a%20Lookup%20Column%20to%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/{WidgetName}/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/'). For more information about the **DataSource** and DevExtreme Data Layer, refer to the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') article.
 
     [important] **DataSource** instances are not supported.
 

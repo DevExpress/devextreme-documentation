@@ -9,4 +9,4 @@ Specifies whether to show the vertical crosshair line or not.
 
 ---
 #####See Also#####
-- **crosshair**.[enabled](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/crosshair/enabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/#enabled') - enables the crosshair feature.
+- **crosshair**.[enabled](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair/enabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/#enabled') - enables the crosshair feature.

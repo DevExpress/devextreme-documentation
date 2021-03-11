@@ -5,7 +5,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Specifies a data source for the scale values and for the [chart](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/') at the background.
+Specifies a data source for the scale values and for the [chart](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/') at the background.
 
 ---
 Use this property in the following cases:
@@ -18,7 +18,7 @@ The maximum and minimum values of the field specified by the **argumentField**/*
 For details on how to configure a data source, refer to the [Data Binding](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') topic.
 
 #####See Also#####
-- [dataSourceField](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/dataSourceField.md '{basewidgetpath}/Configuration/dataSourceField')
+- [dataSourceField](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/dataSourceField.md '{basewidgetpath}/Configuration/dataSourceField')
 - [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource')
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer')
 - [Data Layer - Data Source Examples](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples '/Documentation/Guide/Data_Binding/Data_Source_Examples')

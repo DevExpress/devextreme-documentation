@@ -26,4 +26,4 @@ The series does not react to selection.
 } Note that although this enum accepts more values, only the listed ones can be applied to a stacked bar series.
 
 #####See Also#####
-- [selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/StackedBarSeries/selectionStyle/')
+- [selectionStyle](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/StackedBarSeries/selectionStyle/')

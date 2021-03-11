@@ -7,7 +7,7 @@ type: eventType
 Raised after the pointer enters or leaves a series point.
 
 ---
-Main article: [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '{basewidgetpath}/Configuration/#onPointHoverChanged')
+Main article: [onPointHoverChanged](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/onPointHoverChanged.md '{basewidgetpath}/Configuration/#onPointHoverChanged')
 
 #####See Also#####
 #include common-link-handleevents

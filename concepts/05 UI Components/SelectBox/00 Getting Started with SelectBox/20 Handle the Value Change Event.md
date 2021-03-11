@@ -1,4 +1,4 @@
-Implement the [onValueChanged](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onValueChanged') function to perform an action when a user selects an item. In the code below, this function logs the selected item's `ID` and `Name`.
+Implement the [onValueChanged](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onValueChanged') function to perform an action when a user selects an item. In the code below, this function logs the selected item's `ID` and `Name`.
 
 ---
 ##### jQuery

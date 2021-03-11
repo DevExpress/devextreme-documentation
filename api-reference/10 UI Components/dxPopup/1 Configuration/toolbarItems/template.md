@@ -13,4 +13,4 @@ The following types of the specified value are available.
 - Assign a DOM Node of the template's container.
 - Assign a function that returns the jQuery object or a DOM Node of the template's container.
 
-[note]The [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') component can not be used as a **toolbarItems** template.
+[note]The [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') component can not be used as a **toolbarItems** template.

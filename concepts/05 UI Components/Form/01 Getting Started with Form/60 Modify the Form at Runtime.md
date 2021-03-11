@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-You can change any properties of the form, its items or editors at runtime. Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value) to update the value of an item property. The code below modifies the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
+You can change any properties of the form, its items or editors at runtime. Use the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method to update a Form property, and the [itemOption(id, option, value)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/itemOption(id_option_value).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value') to update the value of an item property. The code below modifies the [readOnly](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly) property's value:
 
     <!-- tab: index.js -->
     $(function() {

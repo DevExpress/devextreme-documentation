@@ -1,6 +1,6 @@
 To create a data entry UI, assign an object to the [formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) property. The Form creates a [simple item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/) (a label-editor pair) for each field in the **formData** object.
 
-The Form chooses default editors based on value types: [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) for string values, [NumberBox](/Documentation/ApiReference/UI_Components/dxNumberBox/) for numbers, [DateBox](/Documentation/ApiReference/UI_Components/dxDateBox/) for dates. You can use the [editorType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) property to specify an editor explicitly. In the following example, the Form uses the default editors:
+The Form chooses default editors based on value types: [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) for string values, [NumberBox](/Documentation/ApiReference/UI_Components/dxNumberBox/) for numbers, [DateBox](/Documentation/ApiReference/UI_Components/dxDateBox/) for dates. You can use the [editorType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') property to specify an editor explicitly. In the following example, the Form uses the default editors:
 
 ---
 ##### jQuery

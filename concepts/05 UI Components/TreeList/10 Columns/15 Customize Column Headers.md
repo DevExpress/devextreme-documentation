@@ -218,7 +218,7 @@ If you need a more specific customization, define a custom template in the **col
     
 ---
 
-To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#showColumnHeaders') property.
+To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#showColumnHeaders') property.
 
 ---
 ##### jQuery

@@ -4,7 +4,7 @@ DevExtreme has five drop-down text editors:
 - [TagBox](/Documentation/ApiReference/UI_Components/dxTagBox/)
 - [Lookup](/Documentation/ApiReference/UI_Components/dxLookup/)
 - [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/)
-- [DropDownBox](/Documentation/ApiReference/UI_Components/dxDropDownBox/)
+- [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/')
 
 The following table compares the drop-down editors according to features:
 
@@ -23,7 +23,7 @@ The following table compares the drop-down editors according to features:
         <td><a href="/Documentation/Guide/UI_Components/TagBox/Create_a_User-Defined_Item/">Yes</a></td>
         <td>-</td>
         <td>Yes</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue">Yes</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/'Configuration/#acceptCustomValue">Yes</a></td>
     </tr>
     <tr>
         <td>Custom buttons</td>
@@ -31,7 +31,7 @@ The following table compares the drop-down editors according to features:
         <td><a href="/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/buttons/">Yes</a></td>
         <td>-</td>
         <td><a href="/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/buttons/">Yes</a></td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/buttons/">Yes</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/'Configuration/buttons/">Yes</a></td>
     </tr>
     <tr>
         <td>Keyboard navigation</td>

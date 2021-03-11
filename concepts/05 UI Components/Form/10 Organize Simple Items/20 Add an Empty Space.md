@@ -1,4 +1,4 @@
-If you need to add an empty space between neighboring items, use an [empty item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/'). To create it, assign *"empty"* to the [itemType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem/itemType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#itemType') property. To define how many columns the empty item must span, specify the [colSpan](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan') property. For the full list of available properties, visit the [Empty Item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/') section.
+If you need to add an empty space between neighboring items, use an [empty item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/'''). To create it, assign *"empty"* to the [itemType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem/itemType.md '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/''#itemType') property. To define how many columns the empty item must span, specify the [colSpan](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem/colSpan.md '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/''#colSpan') property. For the full list of available properties, visit the [Empty Item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/''') section.
 
 ---
 ##### jQuery
@@ -123,11 +123,11 @@ If you need to add an empty space between neighboring items, use an [empty item]
 ---
 
 #####See Also#####
-- [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
-- [Form - Organize Simple Items in Groups](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/')
-- [Form - Organize Simple Items in Tabs](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/')
-- [Form - Organize Simple Items in Columns](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Columns/')
+- [Form - Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
+- [Form - Organize Simple Items in Groups](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/')
+- [Form - Organize Simple Items in Tabs](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/')
+- [Form - Organize Simple Items in Columns](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Columns/')
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
-- [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
+- [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]form, empty item, empty space, colSpan

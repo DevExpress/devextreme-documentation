@@ -1,4 +1,4 @@
-Regardless of the data source you use, the TagBox always wraps it in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Call the [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxTagBox/Methods/#getDataSource') method to get the instance of the **DataSource**.
+Regardless of the data source you use, the TagBox always wraps it in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). Call the [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxTagBox/Methods/#getDataSource') method to get the instance of the **DataSource**.
 
 ---
 ##### jQuery

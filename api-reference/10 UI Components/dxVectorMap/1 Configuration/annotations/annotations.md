@@ -196,4 +196,4 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#customizeAnnotation')

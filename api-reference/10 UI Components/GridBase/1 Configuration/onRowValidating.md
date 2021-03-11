@@ -11,7 +11,7 @@ A function that is executed after cells in a row are validated against [validati
 Information about the event that caused the function's execution.
 
 ##### field(e.brokenRules): Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>
-An array of broken rules. The structure of rule objects is described in the [Validation Rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') section.
+An array of broken rules. The structure of rule objects is described in the [Validation Rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') section.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

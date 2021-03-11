@@ -7,7 +7,7 @@ type: Object
 Configures runtime sorting.
 
 ---
-A user can sort rows by values of a single or multiple columns depending on the value of the **sorting**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting/mode.md '{basewidgetpath}/Configuration/sorting/#mode') property.
+A user can sort rows by values of a single or multiple columns depending on the value of the **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '{basewidgetpath}/Configuration/sorting/#mode') property.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Sorting](/images/DataGrid/visual_elements/sorting_sorted_columns.png)
 
@@ -20,4 +20,4 @@ To apply sorting to a column, a user clicks its header or selects a command from
 }
 
 #####See Also#####
-- [Sorting](/concepts/05%20Widgets/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/DataGrid/Sorting/')
+- [Sorting](/concepts/05%20UI%20Components/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/DataGrid/Sorting/')

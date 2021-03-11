@@ -1,8 +1,8 @@
-Exposes the [DevExpress.pdfExporter](/Documentation/ApiReference/Common/Utils/pdfExporter/) object's methods.
+Exposes the [DevExpress.pdfExporter](/api-reference/50%20Common/utils/pdfExporter '/Documentation/ApiReference/Common/Utils/pdfExporter/') object's methods.
 
 Exports:
 
-- *exportDataGrid* - The [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions) method
+- *exportDataGrid* - The [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter '/Documentation/ApiReference/Common/Utils/pdfExporter/'#exportDataGridoptions) method
 
         require("pdf_exporter").exportDataGrid;
         // ===== or =====

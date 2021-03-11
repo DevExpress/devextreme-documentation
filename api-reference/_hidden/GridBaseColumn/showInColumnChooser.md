@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether the [column chooser](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnChooser '{basewidgetpath}/Configuration/columnChooser/') can contain the column header.
+Specifies whether the [column chooser](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser '{basewidgetpath}/Configuration/columnChooser/') can contain the column header.
 
 ---
 #####See Also#####

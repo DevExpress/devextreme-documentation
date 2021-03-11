@@ -9,7 +9,7 @@ Gets an editor instance. Takes effect only if the form item is visible.
 The editor instance.
 
 ##### param(dataField): String
-The item's [name](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name') or [dataField](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField').
+The item's [name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name') or [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField').
 
 ---
 The following code shows how to get an editor of an item in a group:
@@ -38,8 +38,8 @@ The following code shows how to get an editor of an item in a group:
         });
     });
 
-[note] This method works only for [predefined editors](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType'), and is unavailable when using a custom [template](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template').
+[note] This method works only for [predefined editors](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType''), and is unavailable when using a custom [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template').
 
 #####See Also#####
 #include common-link-callmethods
-- [Change Properties at Runtime - Editor Properties](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime/15%20Editor%20Options.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Editor_Properties/')
+- [Change Properties at Runtime - Editor Properties](/concepts/05%20UI%20Components/Form/20%20Change%20Properties%20at%20Runtime/15%20Editor%20Properties.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Editor_Properties/')

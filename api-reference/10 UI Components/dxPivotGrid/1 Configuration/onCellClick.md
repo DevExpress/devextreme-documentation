@@ -17,7 +17,7 @@ The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuratio
 Allows you to cancel field expansion.
 
 ##### field(e.cell): dxPivotGridPivotGridCell
-The cell [properties](/api-reference/10%20UI%20Widgets/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/'). This field is read-only.
+The cell [properties](/api-reference/10%20UI%20Components/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/'). This field is read-only.
 
 ##### field(e.cellElement): dxElement
 #include common-ref-elementparam with { element: "cell" }
@@ -29,7 +29,7 @@ The *column* area's fields.
 The index of the column to which the clicked cell belongs.
 
 ##### field(e.component): {WidgetName}
-The UI component [instance](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
+The UI component [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
 
 ##### field(e.dataFields): Array<PivotGridDataSource_Options_fields>
 The *data* area's fields.

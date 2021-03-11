@@ -1,4 +1,4 @@
-All group validation errors can be displayed in the [ValidationSummary](/api-reference/10%20UI%20Widgets/dxValidationSummary '/Documentation/ApiReference/UI_Components/dxValidationSummary/') UI component. The following code shows how to add this UI component to a page. The commented-out codelines associate the **Validation Summary** with a named **Validation Group**.
+All group validation errors can be displayed in the [ValidationSummary](/api-reference/10%20UI%20Components/dxValidationSummary '/Documentation/ApiReference/UI_Components/dxValidationSummary/') UI component. The following code shows how to add this UI component to a page. The commented-out codelines associate the **Validation Summary** with a named **Validation Group**.
 
 ---
 

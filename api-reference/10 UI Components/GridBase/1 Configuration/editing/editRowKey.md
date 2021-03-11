@@ -17,4 +17,4 @@ Values for this property are taken from the data field(s) specified in the [keyE
 }
 
 #####See Also#####
-- [editColumnName]({basewidgetpath}/Configuration/editing/#editColumnName)
+- [editColumnName](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/editColumnName.md '{basewidgetpath}/Configuration/editing/#editColumnName')

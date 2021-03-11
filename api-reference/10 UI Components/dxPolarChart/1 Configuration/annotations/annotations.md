@@ -225,4 +225,4 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#customizeAnnotation')

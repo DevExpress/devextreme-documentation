@@ -12,7 +12,7 @@ Annotations are containers for images, text blocks, and custom content that disp
 
 ![DevExtreme PieChart: Annotations](/images/ChartJS/annotations/pie-annotations.png)
 
-To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type]({basewidgetpath}/Configuration/annotations/#type') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/annotations/#template) property:
+To create annotations, assign an array of objects to the **annotations[]** property. Each object configures an individual annotation. You can set each annotation's [type](/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md '{basewidgetpath}/Configuration/annotations/#type'') property to *"text"*, *"image"*, or *"custom"*. Depending on the **type**, specify the annotation's [text]({basewidgetpath}/Configuration/annotations/#text), [image]({basewidgetpath}/Configuration/annotations/image/), or [template](/api-reference/_hidden/dxPieChartCommonAnnotationConfig/template.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/annotations/#template') property:
     
 ---
 ##### jQuery
@@ -206,4 +206,4 @@ Objects in the **annotations[]** array configure individual annotations. To spec
 }
 
 #####See Also#####
-- [customizeAnnotation](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizeAnnotation')

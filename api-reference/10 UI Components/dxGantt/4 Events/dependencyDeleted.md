@@ -7,4 +7,4 @@ type: eventType
 Raised when a dependency is deleted.
 
 ---
-Main article: [onDependencyDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleted)
+Main article: [onDependencyDeleted](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onDependencyDeleted.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleted')

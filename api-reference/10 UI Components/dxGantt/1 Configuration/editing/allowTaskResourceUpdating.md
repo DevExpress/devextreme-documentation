@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether users can update a [task's resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
+Specifies whether users can update a [task's resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
 
 ---
 
@@ -37,7 +37,7 @@ Click the cross icon (on the right side of the resource) to remove the resource 
 ---
 
 #####See Also#####
-- [assignResourceToTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#assignResourceToTaskresourceKey_taskKey)
-- [unassignResourceFromTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#unassignResourceFromTaskresourceKey_taskKey)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [assignResourceToTask](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/assignResourceToTask(resourceKey_taskKey).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#assignResourceToTaskresourceKey_taskKey')
+- [unassignResourceFromTask](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/unassignResourceFromTask(resourceKey_taskKey).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#unassignResourceFromTaskresourceKey_taskKey')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')
 

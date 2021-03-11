@@ -2,9 +2,9 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"
 }
 
-Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/Documentation/ApiReference/UI_Components/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
+Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/api-reference/10%20UI%20Components/dxDiagram/4%20Events/requestEditOperation.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#requestEditOperation') event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
 
-- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
+- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/') property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
 
 <table class="dx-table">
     <tr>
@@ -15,62 +15,62 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     <tr>
         <td>addShape</td>
         <td>A user is about to add a shape / The UI component determines the **Paste** command's visibility.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowAddShape">allowAddShape</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowAddShape">allowAddShape</a></td>
     </tr>
     <tr>
         <td>addShapeFromToolbox</td>
         <td>A user starts dragging a shape from the toolbox / The UI component determines the visibility of a shape in the context toolbox.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowAddShape">allowAddShape</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowAddShape">allowAddShape</a></td>
     </tr>
     <tr>
         <td>beforeChangeConnectorText</td>
         <td>A user is about to edit a connector's text.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowChangeConnectorText">allowChangeConnectorText</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowChangeConnectorText">allowChangeConnectorText</a></td>
     </tr>
     <tr>
         <td>beforeChangeShapeText</td>
         <td>A user is about to edit a shape's text.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowChangeShapeText">allowChangeShapeText</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowChangeShapeText">allowChangeShapeText</a></td>
     </tr>
     <tr>
         <td>changeConnection</td>
         <td>A user is about to link or delink a connector from a shape / The UI component determines a connection point's visibility.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowChangeConnection">allowChangeConnection</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowChangeConnection">allowChangeConnection</a></td>
     </tr>
     <tr>
         <td>changeConnectorPoints</td>
         <td>A user changed a connector's points.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowChangeConnectorPoints">allowChangeConnectorPoints</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowChangeConnectorPoints">allowChangeConnectorPoints</a></td>
     </tr>
     <tr>
         <td>changeConnectorText</td>
         <td>A user changed a connector's text.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowChangeConnectorText">allowChangeConnectorText</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowChangeConnectorText">allowChangeConnectorText</a></td>
     </tr>
     <tr>
         <td>changeShapeText</td>
         <td>A user changed a shape's text.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowChangeShapeText">allowChangeShapeText</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowChangeShapeText">allowChangeShapeText</a></td>
     </tr>
     <tr>
         <td>deleteConnector</td>
         <td>A user is about to delete a connector / The UI component determines the **Cut** and **Delete** commands' visibility.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowDeleteConnector">allowDeleteConnector</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowDeleteConnector">allowDeleteConnector</a></td>
     </tr>
     <tr>
         <td>deleteShape</td>
         <td>A user is about to delete a shape / The UI component determines the visibility of the **Cut** and **Delete** commands.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowDeleteShape">allowDeleteShape</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowDeleteShape">allowDeleteShape</a></td>
     </tr>
     <tr>
         <td>moveShape</td>
         <td>A user moved a shape.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowMoveShape">allowMoveShape</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowMoveShape">allowMoveShape</a></td>
     </tr>
     <tr>
         <td>resizeShape</td>
         <td>A user resized a shape.</td>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowResizeShape">allowResizeShape</a></td>
+        <td><a href="/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/'#allowResizeShape">allowResizeShape</a></td>
     </tr>
 </table>
 

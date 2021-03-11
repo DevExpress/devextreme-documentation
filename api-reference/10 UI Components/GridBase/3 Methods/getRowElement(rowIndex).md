@@ -9,10 +9,10 @@ Gets the container of a row with a specific index.
 The row's container.
 
 ##### param(rowIndex): Number
-The row's visible index. Refer to [Column and Row Indexes](/concepts/05%20Widgets/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
+The row's visible index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
 
 ---
-Note that if the UI component has [fixed columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the method returns an array of two separate elements: with unfixed and with fixed columns.
+Note that if the UI component has [fixed columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the method returns an array of two separate elements: with unfixed and with fixed columns.
 
 #####See Also#####
 #include common-link-callmethods

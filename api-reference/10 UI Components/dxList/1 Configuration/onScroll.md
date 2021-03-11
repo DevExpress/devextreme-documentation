@@ -39,4 +39,4 @@ The current scroll offset in the following format { top: topOffset, left: leftOf
 
 ---
 #####See Also#####
-- [List - Handle Scrolling-Related Events](/concepts/05%20Widgets/List/20%20Scrolling/10%20Events.md '/Documentation/Guide/UI_Components/List/Scrolling/#Events')
+- [List - Handle Scrolling-Related Events](/concepts/05%20UI%20Components/List/20%20Scrolling/10%20Events.md '/Documentation/Guide/UI_Components/List/Scrolling/#Events')

@@ -26,7 +26,7 @@ Indicates if the dragged item is dropped inside another item.
 The instance of the item's source UI component.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
 The item's original position. If the item is dragged from another UI component, the value is **-1**.
@@ -47,7 +47,7 @@ Assign a Promise to this field to perform an asynchronous operation.
 The instance of the item's target UI component.
 
 ##### field(e.toData): any
-Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target UI component.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target UI component.
 
 ##### field(e.toIndex): Number
 The position in which the item is placed. If the item is dragged away from the UI component, the value is **-1**.

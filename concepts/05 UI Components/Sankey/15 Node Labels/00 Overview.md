@@ -1,8 +1,8 @@
-A label is an element that accompanies a [node](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/00%20Overview.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Overview/') and displays the node's title or custom data.
+A label is an element that accompanies a [node](/concepts/05%20UI%20Components/Sankey/05%20Nodes%20and%20Links/00%20Overview.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Overview/') and displays the node's title or custom data.
 
 ![Sankey - Node Labels](/images/Sankey/visual_elements/node_labels.png)
 
-Properties that configure node labels are collected in the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/label '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/label/') object. Refer to its description in the API reference and to other articles in this section for information on node label settings.
+Properties that configure node labels are collected in the [label](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/label '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/label/') object. Refer to its description in the API reference and to other articles in this section for information on node label settings.
 
 ---
 ##### jQuery
@@ -79,6 +79,6 @@ Properties that configure node labels are collected in the [label](/api-referenc
 ---
 
 #####See Also#####
-- [Customize Labels](/concepts/05%20Widgets/Sankey/15%20Node%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/UI_Components/Sankey/Node_Labels/Customize_Labels/')
-- [Resolve Label Overlapping](/concepts/05%20Widgets/Sankey/15%20Node%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/Sankey/Node_Labels/Resolve_Overlapping/')
-- [Sankey API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey '/Documentation/ApiReference/UI_Components/dxSankey/')
+- [Customize Labels](/concepts/05%20UI%20Components/Sankey/15%20Node%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/UI_Components/Sankey/Node_Labels/Customize_Labels/')
+- [Resolve Label Overlapping](/concepts/05%20UI%20Components/Sankey/15%20Node%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/Sankey/Node_Labels/Resolve_Overlapping/')
+- [Sankey API Reference](/api-reference/10%20UI%20Components/dxSankey '/Documentation/ApiReference/UI_Components/dxSankey/')

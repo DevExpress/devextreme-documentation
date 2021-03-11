@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-A function that is executed when a [legend item](/concepts/05%20Widgets/PieChart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/PieChart/Legend/Overview/') is clicked or tapped.
+A function that is executed when a [legend item](/concepts/05%20UI%20Components/PieChart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/PieChart/Legend/Overview/') is clicked or tapped.
 
 ##### param(e): Object
 Information about the event.
@@ -24,7 +24,7 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ##### field(e.points): Array<piePointObject>
-The [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object(s).
+The [Point](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object(s).
 
 ##### field(e.target): String | Number
 The argument of the point(s) corresponding to the clicked legend item.

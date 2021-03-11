@@ -5,7 +5,7 @@ default: 'appointmentCollector'
 ---
 ---
 ##### shortDescription
-Specifies a custom template for [cell overflow indicators](/concepts/05%20Widgets/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/') in this view.
+Specifies a custom template for [cell overflow indicators](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/') in this view.
 
 ##### param(data): Object
 Information about a cell overflow indicator.
@@ -14,7 +14,7 @@ Information about a cell overflow indicator.
 The count of hidden appointments.
 
 ##### field(data.isCompact): Boolean
-Indicates whether the overflow indicator is [compact](/concepts/05%20Widgets/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/').
+Indicates whether the overflow indicator is [compact](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/').
 
 ##### param(collectorElement): dxElement
 #include common-ref-elementparam with { element: "overflow indicator" }
@@ -141,4 +141,4 @@ A template name or container.
 ---
 
 #####See Also#####
-- [appointmentCollectorTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentCollectorTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentCollectorTemplate')
+- [appointmentCollectorTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentCollectorTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentCollectorTemplate')

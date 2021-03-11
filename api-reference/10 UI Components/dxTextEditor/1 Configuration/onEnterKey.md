@@ -23,4 +23,4 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ---
-[note] This function is executed *after* the [onKeyUp](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/onKeyUp.md '{basewidgetpath}/Configuration/#onKeyUp'), [onKeyDown](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/onKeyDown.md '{basewidgetpath}/Configuration/#onKeyDown'), and [onKeyPress](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/onKeyPress.md '{basewidgetpath}/Configuration/#onKeyPress') functions.
+[note] This function is executed *after* the [onKeyUp](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyUp.md '{basewidgetpath}/Configuration/#onKeyUp'), [onKeyDown](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyDown.md '{basewidgetpath}/Configuration/#onKeyDown'), and [onKeyPress](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyPress.md '{basewidgetpath}/Configuration/#onKeyPress') functions.

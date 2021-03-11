@@ -6,7 +6,7 @@ inherits: BaseChart
 ---
 ---
 ##### shortDescription
-The Chart is a UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20Widgets/Chart/11%20Series%20Types '/Documentation/Guide/UI_Components/Chart/Series_Types/') along with different interactive elements, such as [tooltips](/concepts/05%20Widgets/Chart/30%20Tooltips/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Overview/'), [crosshair pointer](/concepts/05%20Widgets/Chart/80%20Crosshair.md '/Documentation/Guide/UI_Components/Chart/Crosshair/'), [legend](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/'), etc.
+The Chart is a UI component that visualizes data from a local or remote storage using a great variety of [series types](/Documentation/Guide/UI_Components/Chart/Series_Types/) along with different interactive elements, such as [tooltips](/concepts/05%20UI%20Components/Chart/30%20Tooltips/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Overview/'), [crosshair pointer](/concepts/05%20UI%20Components/Chart/80%20Crosshair.md '/Documentation/Guide/UI_Components/Chart/Crosshair/'), [legend](/concepts/05%20UI%20Components/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/'), etc.
 
 ##### widgettree
 dataSource: [{

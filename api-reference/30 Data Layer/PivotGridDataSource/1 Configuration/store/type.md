@@ -24,4 +24,4 @@ This property accepts one of the following values:
 
 Each store has properties that are detailed in the links above. Declare these properties in the **store** object.
 
-You can also implement custom data access logic as described in the [Use CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/') topic.
+You can also implement custom data access logic as described in the [Use CustomStore](/concepts/05%20UI%20Components/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/') topic.

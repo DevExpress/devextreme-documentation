@@ -174,4 +174,4 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
 }
 
 #####See Also#####
-- [contextMenuShowing](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuShowing)
+- [contextMenuShowing](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/contextMenuShowing.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuShowing')

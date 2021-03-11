@@ -1,4 +1,4 @@
-You can add a button that performs a custom action using a [button item](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') by setting the [itemType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/ButtonItem/itemType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/#itemType') property to *"button"*. Then, configure the button using the [buttonOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/ButtonItem/buttonOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/#buttonOptions') object which can contain any [Button UI component property](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/').
+You can add a button that performs a custom action using a [button item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') by setting the [itemType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem/itemType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/#itemType') property to *"button"*. Then, configure the button using the [buttonOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem/buttonOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/#buttonOptions') object which can contain any [Button UI component property](/api-reference/10%20UI%20Components/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/').
 
 ---
 #####jQuery
@@ -163,8 +163,8 @@ You can add a button that performs a custom action using a [button item](/api-re
 }
 
 #####See Also#####
-- [Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
-- [Organize Simple Items in Groups](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/')
-- [Organize Simple Items in Tabs](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/')
-- [Organize Simple Items in Columns](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Columns/')
-- [Add an Empty Space](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/20%20Add%20an%20Empty%20Space.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/Add_an_Empty_Space/')
+- [Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
+- [Organize Simple Items in Groups](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/')
+- [Organize Simple Items in Tabs](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/')
+- [Organize Simple Items in Columns](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Columns/')
+- [Add an Empty Space](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/20%20Add%20an%20Empty%20Space.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/Add_an_Empty_Space/')

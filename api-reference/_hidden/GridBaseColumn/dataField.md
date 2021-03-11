@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
+Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
 
 ---
 
@@ -117,9 +117,9 @@ Review the following notes about data binding:
 
 - Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 
-- Column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption) property. Unlike **dataField**, **caption** can contain any characters.
+- Column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') property. Unlike **dataField**, **caption** can contain any characters.
 
 [/note]
 
 #####See Also#####
-- [Columns - Overview](/concepts/05%20Widgets/DataGrid/15%20Columns/00%20Overview.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Overview/')
+- [Columns - Overview](/concepts/05%20UI%20Components/DataGrid/15%20Columns/00%20Overview.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Overview/')

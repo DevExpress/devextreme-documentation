@@ -73,4 +73,4 @@ The following code shows how you can handle a network error.
 ---
 
 #####See Also#####
-- [uploadFailedMessage](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFailedMessage)
+- [uploadFailedMessage](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadFailedMessage.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFailedMessage')

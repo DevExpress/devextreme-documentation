@@ -157,4 +157,4 @@ Model data. Available only if you use Knockout.
 
 #####See Also#####
 - [taskDblClick](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskDblClick`)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

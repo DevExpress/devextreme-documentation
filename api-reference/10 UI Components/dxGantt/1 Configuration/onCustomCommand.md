@@ -127,4 +127,4 @@ The name of the clicked item.
 ---
 
 #####See Also#####
-- [customCommand](/Documentation/ApiReference/UI_Components/dxGantt/Events/#customCommand)
+- [customCommand](/api-reference/10%20UI%20Components/dxGantt/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#customCommand')

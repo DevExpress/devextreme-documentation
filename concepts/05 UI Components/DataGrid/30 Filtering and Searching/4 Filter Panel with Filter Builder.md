@@ -10,7 +10,7 @@ You can click the filter expression to open the integrated filter builder.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
 }
 
-Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterPanel/#visible') property to **true** to make the filter panel visible. 
+Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterPanel/#visible') property to **true** to make the filter panel visible. 
 
 ---
 ##### jQuery
@@ -84,7 +84,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Widgets/GridBase/1%20
 
 ---
 
-If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the [filter row](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Filter_Row') and [header filter](/concepts/05%20Widgets/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Header_Filter'), and vice versa. Set the [filterSyncEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterSyncEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterSyncEnabled') property to **false** to disable this synchronization. In this case, the filter panel remains synchronized with the filter builder.
+If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the [filter row](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Filter_Row') and [header filter](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Header_Filter'), and vice versa. Set the [filterSyncEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterSyncEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterSyncEnabled') property to **false** to disable this synchronization. In this case, the filter panel remains synchronized with the filter builder.
 
 ---
 ##### jQuery
@@ -153,9 +153,9 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
 ---
 
-You can define the filter expression programmatically with the [filterValue](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterValue') property. See the property's description for the full list of available filter operations and their peculiarities.
+You can define the filter expression programmatically with the [filterValue](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterValue') property. See the property's description for the full list of available filter operations and their peculiarities.
 
-The **filterValue** is updated when a user changes the filter expression from the UI. Use the [option](/api-reference/10%20UI%20Widgets/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName_optionValue') method to update it from the API:
+The **filterValue** is updated when a user changes the filter expression from the UI. Use the [option](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName_optionValue') method to update it from the API:
 
 ---
 ##### jQuery
@@ -295,7 +295,7 @@ The **filterValue** is updated when a user changes the filter expression from th
 
 ---
 
-The DataGrid provides the [filterBuilder](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterBuilder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilder') and [filterBuilderPopup](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterBuilderPopup.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilderPopup') objects that configure the integrated filter builder and the popup in which it appears. These objects can contain the [FilterBuilder](/api-reference/10%20UI%20Widgets/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')'s and [Popup](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')'s properties. In the following code, the filter builder has an additional filter operation `Is Zero`; the filter builder's popup is customized and displayed on a button click:
+The DataGrid provides the [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilder') and [filterBuilderPopup](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilderPopup.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilderPopup') objects that configure the integrated filter builder and the popup in which it appears. These objects can contain the [FilterBuilder](/api-reference/10%20UI%20Components/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')'s and [Popup](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')'s properties. In the following code, the filter builder has an additional filter operation `Is Zero`; the filter builder's popup is customized and displayed on a button click:
 
 ---
 #####jQuery
@@ -534,5 +534,5 @@ The DataGrid provides the [filterBuilder](/api-reference/10%20UI%20Widgets/GridB
 ---
 
 #####See Also#####
-- [FilterBuilder - Overview](/concepts/05%20Widgets/FilterBuilder/010%20Overview.md '/Documentation/Guide/UI_Components/FilterBuilder/Overview/')
-- [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
+- [FilterBuilder - Overview](/concepts/05%20UI%20Components/FilterBuilder/010%20Overview.md '/Documentation/Guide/UI_Components/FilterBuilder/Overview/')
+- [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')

@@ -7,7 +7,7 @@ type: Promise<dxValidationGroupResult>
 A promise that is fulfilled when all async rules are validated.
 
 ---
-This promise exists only when the [status](/api-reference/10%20UI%20Widgets/dxValidationGroup/9%20Validation%20Result/status.md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Validation_Result/#status') is *"pending"*. Check the status before you attach callback functions to that promise.
+This promise exists only when the [status](/api-reference/10%20UI%20Components/dxValidationGroup/9%20Validation%20Result/status.md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Validation_Result/#status') is *"pending"*. Check the status before you attach callback functions to that promise.
 
 In the following example, a button validates a group of editors with async rules. The **status** is checked in the **onClick** event handler:
 

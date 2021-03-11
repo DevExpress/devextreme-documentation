@@ -1,4 +1,4 @@
-To allow a user to add, delete and update data in the DataGrid, assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/') object. 
+To allow a user to add, delete and update data in the DataGrid, assign **true** to the corresponding field of the [editing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing '/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/'') object. 
 
 ---
 

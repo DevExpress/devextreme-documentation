@@ -5,7 +5,7 @@ default: 1
 ---
 ---
 ##### shortDescription
-Multiplies the default view interval. Applies to all [view types](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') except *"agenda"*.
+Multiplies the default view interval. Applies to all [view types](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') except *"agenda"*.
 
 ---
 The following is a list of views and their default intervals:
@@ -20,4 +20,4 @@ The following is a list of views and their default intervals:
 }
 
 #####See Also#####
-- [agendaDuration](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#agendaDuration')
+- [agendaDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#agendaDuration')

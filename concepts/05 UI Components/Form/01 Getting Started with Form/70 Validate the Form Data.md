@@ -2,7 +2,7 @@ DevExtreme includes a validation engine that checks edited values before they ar
 
 To apply validation rules to a simple item, specify them in the [validationRules[]](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules) array. You can specify an item's [isRequired](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired) property to implicitly apply the [RequiredRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/).
 
-The following example sets the **isRequired** property for the `Name` item. It also adds the [NumericRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/NumericRule/) for `officeNumber` and [EmailRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/EmailRule/) for `Email`.
+The following example sets the **isRequired** property for the `Name` item. It also adds the [NumericRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/NumericRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/NumericRule/') for `officeNumber` and [EmailRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/EmailRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/EmailRule/') for `Email`.
 
 ---
 ##### jQuery

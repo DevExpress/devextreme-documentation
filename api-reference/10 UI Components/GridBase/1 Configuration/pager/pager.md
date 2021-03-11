@@ -16,4 +16,4 @@ The pager is an element that allows users to navigate through pages and change t
 }
 
 #####See Also#####
-- [Paging - User Interaction](/concepts/05%20Widgets/DataGrid/35%20Paging/10%20User%20Interaction.md '/Documentation/Guide/UI_Components/{WidgetName}/Paging/#User_Interaction')
+- [Paging - User Interaction](/concepts/05%20UI%20Components/DataGrid/35%20Paging/10%20User%20Interaction.md '/Documentation/Guide/UI_Components/{WidgetName}/Paging/#User_Interaction')

@@ -1,5 +1,5 @@
-The FilterBuilder's [fields](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#fields') array should 
-contain data fields from a UI component's data source. For example, the following code allows using the [List's](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') `Name` and `Price` fields in the FilterBuilder:
+The FilterBuilder's [fields](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#fields') array should 
+contain data fields from a UI component's data source. For example, the following code allows using the [List's](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') `Name` and `Price` fields in the FilterBuilder:
 
 ---
 #####jQuery
@@ -162,4 +162,4 @@ To filter data, update the data source's [filter](/api-reference/30%20Data%20Lay
 }
 
 #####See Also#####
-- [Predefine Filter Values](/concepts/05%20Widgets/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')
+- [Predefine Filter Values](/concepts/05%20UI%20Components/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')

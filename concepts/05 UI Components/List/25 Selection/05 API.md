@@ -1,4 +1,4 @@
-Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection to select the item or cancel its selection:
+Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection to select the item or cancel its selection:
 
 ---
 ##### jQuery
@@ -139,9 +139,9 @@ Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%2
 
 ---
 
-[note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
+[note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
 
 #####See Also#####
 #include common-link-callmethods
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')

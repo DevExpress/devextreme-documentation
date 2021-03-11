@@ -14,7 +14,7 @@ Information on the marker value.
 The raw value.
 
 ##### field(markerValue.valueText): String
-The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/marker/label/format.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/marker/label/#format') value converted to a string.
+The [formatted](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/marker/label/format.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/marker/label/#format') value converted to a string.
 
 ##### return: String
 The text for the label to display.

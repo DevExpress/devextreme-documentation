@@ -15,4 +15,4 @@ Specifies whether the next page is loaded when a user scrolls the UI component t
 }
 
 #####See Also#####
-- [List - Paging](/concepts/05%20Widgets/List/08%20Paging.md '/Documentation/Guide/UI_Components/List/Paging/')
+- [List - Paging](/concepts/05%20UI%20Components/List/08%20Paging.md '/Documentation/Guide/UI_Components/List/Paging/')

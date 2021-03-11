@@ -37,7 +37,7 @@ Options passed to the function depend on this value.
 Indicates whether the editor is read-only.
 
 ##### field(options.row): dxDataGridRowObject
-The [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row the editor belongs to.
+The [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row the editor belongs to.
 
 ##### field(options.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.

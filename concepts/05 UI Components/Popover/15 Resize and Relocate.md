@@ -1,4 +1,4 @@
-To change the size of the Popover, specify the [height](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#width') properties.
+To change the size of the Popover, specify the [height](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#width') properties.
 
 ---
 ##### jQuery 
@@ -129,7 +129,7 @@ To change the size of the Popover, specify the [height](/api-reference/10%20UI%2
 
 ---
 
-If you need to position the Popover against a certain side of the [target element](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'), set the [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#position') property.
+If you need to position the Popover against a certain side of the [target element](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'), set the [position](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#position') property.
 
 ---
 ##### jQuery 
@@ -252,8 +252,8 @@ If you need to position the Popover against a certain side of the [target elemen
 
 
 #####See Also#####
-- [Popover - Show and Hide the Popover](/concepts/05%20Widgets/Popover/10%20Show%20and%20Hide%20the%20Popover '/Documentation/Guide/UI_Components/Popover/Show_and_Hide_the_Popover/')
-- [Popover - Customize the Content](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
+- [Popover - Show and Hide the Popover](/concepts/05%20UI%20Components/Popover/10%20Show%20and%20Hide%20the%20Popover '/Documentation/Guide/UI_Components/Popover/Show_and_Hide_the_Popover/')
+- [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
 - [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
 
 [tags]popover, overlay, size, height, width, position

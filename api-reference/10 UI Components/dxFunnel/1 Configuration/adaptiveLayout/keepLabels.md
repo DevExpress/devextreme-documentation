@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether [item labels](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label '{basewidgetpath}/Configuration/label/') should be kept when the UI component adapts the layout.
+Specifies whether [item labels](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label '{basewidgetpath}/Configuration/label/') should be kept when the UI component adapts the layout.
 
 ---

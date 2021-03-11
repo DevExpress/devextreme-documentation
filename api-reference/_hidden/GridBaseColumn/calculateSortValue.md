@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 The value to be used in sorting.
 
 ---
-This property accepts the name of the [data source field](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values used to sort this column...
+This property accepts the name of the [data source field](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values used to sort this column...
 
 ---
 ##### jQuery
@@ -222,10 +222,10 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 - The `this` keyword refers to the column's configuration.
 
-- **calculateSortValue** does not affect group rows. To sort them, implement [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') in addition to **calculateSortValue**. You should also define the [groupCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate) to apply a custom template for group rows. Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>. 
+- **calculateSortValue** does not affect group rows. To sort them, implement [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue'') in addition to **calculateSortValue**. You should also define the [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate') to apply a custom template for group rows. Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>. 
 
 [/note]
 
 #####See Also#####
 - [sortingMethod](/api-reference/_hidden/GridBaseColumn/sortingMethod.md '{basewidgetpath}/Configuration/columns/#sortingMethod')
-- **columns[]**.[sortOrder]({basewidgetpath}/Configuration/columns/#sortOrder)
+- **columns[]**.[sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder')

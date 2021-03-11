@@ -1,8 +1,8 @@
-Unlike [data columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/#Data_Columns'), band columns do not hold any data. Instead, they collect two or more data columns under one column header. 
+Unlike [data columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/#Data_Columns'), band columns do not hold any data. Instead, they collect two or more data columns under one column header. 
 
 ![DevExtreme HTML5 JavaScript DataGrid BandColumns MultiRowHeaders BandedLayout](/images/DataGrid/BandColumns.png)
 
-To set up this layout, describe the hierarchy of columns directly in an object of the [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array. For example, the following code bands three columns under the *"Contacts"* header.
+To set up this layout, describe the hierarchy of columns directly in an object of the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array. For example, the following code bands three columns under the *"Contacts"* header.
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ To set up this layout, describe the hierarchy of columns directly in an object o
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultiRowHeadersBands/"
 }
 
-If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeColumns') function to configure columns, the hierarchy cannot be described declaratively. To band columns in this case, use the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation//ApiReference/UI_Components/dxDataGrid/Configuration/columns/#isBand') and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#ownerBand') properties. Using the same properties, you can distinguish band and nested columns from other columns in code.
+If you use the [customizeColumns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeColumns') function to configure columns, the hierarchy cannot be described declaratively. To band columns in this case, use the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation//ApiReference/UI_Components/dxDataGrid/Configuration/columns/#isBand') and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#ownerBand') properties. Using the same properties, you can distinguish band and nested columns from other columns in code.
 
 ---
 ##### jQuery
@@ -232,7 +232,7 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%
     
 ---
 
-[note] Nested columns have every [data column property](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') except [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed'), [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition'), [type](/api-reference/_hidden/dxDataGridColumn/type.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#type'), and [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/'). Band columns only support the properties listed in the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#isBand') property's description.
+[note] Nested columns have every [data column property](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') except [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed'), [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition'), [type](/api-reference/_hidden/dxDataGridColumn/type.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#type'), and [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/'). Band columns only support the properties listed in the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#isBand') property's description.
 
 Band columns support hierarchies of any nesting level and enables you to use the following structure:
 

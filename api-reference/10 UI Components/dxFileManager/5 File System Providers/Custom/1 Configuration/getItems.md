@@ -14,7 +14,7 @@ A Promise that is resolved after file system items are obtained. It is a <a href
 
 ---
 
-The **getItems** function returns data items and then passes them to the [dataItem](/Documentation/ApiReference/Common/Object_Structures/FileSystemItem/Fields/#dataItem) fields of the [FileSystemItem](/Documentation/ApiReference/Common/Object_Structures/FileSystemItem/) objects. You can call the [getItems](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Custom/Methods/#getItems) method to get these file system items.
+The **getItems** function returns data items and then passes them to the [dataItem](/api-reference/50%20Common/Object%20Structures/FileSystemItem/2%20Fields/dataItem.md '/api-reference/50%20Common/Object%20Structures/FileSystemItem '/Documentation/ApiReference/Common/Object_Structures/FileSystemItem/'Fields/#dataItem') fields of the [FileSystemItem](/api-reference/50%20Common/Object%20Structures/FileSystemItem '/Documentation/ApiReference/Common/Object_Structures/FileSystemItem/') objects. You can call the [getItems](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/3%20Methods/getItems().md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Custom/Methods/#getItems') method to get these file system items.
 
 ---
 

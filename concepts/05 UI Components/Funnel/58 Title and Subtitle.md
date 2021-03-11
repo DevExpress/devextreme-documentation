@@ -2,7 +2,7 @@ Titles and subtitles are textual elements that provide an overview of what the F
 
 ![Funnel Title and Subtitle](/images/funnel/visual_elements/funnel-title.png)
 
-The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/') object configures the title; the **title**.[subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/subtitle/') object configures the subtitle.
+The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/') object configures the title; the **title**.[subtitle](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/subtitle/') object configures the subtitle.
 
 ---
 ##### jQuery
@@ -163,7 +163,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 
 ---
 
-Refer to the API reference's [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/') section for information about all the title and subtitle properties.
+Refer to the API reference's [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/title/') section for information about all the title and subtitle properties.
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Funnel/Adaptive_Layout/')
+- [Adaptive Layout](/concepts/05%20UI%20Components/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Funnel/Adaptive_Layout/')

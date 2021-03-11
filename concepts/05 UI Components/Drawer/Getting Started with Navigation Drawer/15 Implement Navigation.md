@@ -1,4 +1,4 @@
-The Drawer is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Widgets/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/'), as done in this tutorial.
+The Drawer is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/'), as done in this tutorial.
 
 Each list item should navigate to a different view. To implement this, follow the steps below:
 
@@ -7,11 +7,11 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**        
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
 
 1. **Navigate to a view when selection is changed**
 
-    In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide) the Drawer.
+    In the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged''''') event handler, load the new view and [hide](/api-reference/10%20UI%20Components/dxDrawer/3%20Methods/hide().md '/api-reference/10%20UI%20Components/dxDrawer/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide'') the Drawer.
 
 <!-- -->
 
@@ -72,13 +72,13 @@ Each list item should navigate to a different view. To implement this, follow th
 
     Specify routes and set up the router in the `AppRountingModule`.
 
-1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate)**
+1. **Define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate'')**
 
     Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.io/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and text.
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the Drawer.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged''''') event handler, close the Drawer.
 
 <!-- -->
 
@@ -226,13 +226,13 @@ Each list item should navigate to a different view. To implement this, follow th
 
     Specify routes and set up the router in the `main.js` file.
 
-1. **Define an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate)**
+1. **Define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate'')**
 
     Specify the elements that the template should render and wrap them in a <a href="https://router.vuejs.org/api/#router-link" target="_blank">`<router-link>`</a> component. In the code below, the *"links"* **itemTemplate** renders an icon and text.
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the Drawer.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged''''') event handler, close the Drawer.
 
 <!-- -->
 
@@ -403,13 +403,13 @@ Each list item should navigate to a different view. To implement this, follow th
 
     Wrap the entire `App` component in a `BrowserRouter` and add a <a href="https://reactrouter.com/web/api/Route" target="_blank">`Route`</a> that renders the `NavigationDrawer` component. Define other `Routes` within the `Drawer` markup in the `NavigationDrawer` component.
 
-1. **Define the [itemRender](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender) function**
+1. **Define the [itemRender](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender') function**
 
     Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/web/api/Link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and text.
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, close the Drawer.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged''''') event handler, close the Drawer.
 
 <!-- -->
 
@@ -579,11 +579,11 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**        
 
-    Set the [selectionMode](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
 
 1. **Navigate to a view when selection is changed**
 
-    In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler, load the new view and [hide](/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide) the Drawer.
+    In the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged''''') event handler, load the new view and [hide](/api-reference/10%20UI%20Components/dxDrawer/3%20Methods/hide().md '/api-reference/10%20UI%20Components/dxDrawer/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxDrawer/Methods/#hide'') the Drawer.
 
 <!-- -->
 

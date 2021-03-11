@@ -6,7 +6,7 @@ id: dxTreeMap.getRootNode()
 Gets the root node.
 
 ##### return: dxTreeMapNode
-The root node; described in the [Node](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/3%20Methods/getCurrentNode().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#getCurrentNode') section.
+The root node; described in the [Node](/api-reference/10%20UI%20Components/dxTreeMap/3%20Methods/getCurrentNode().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Methods/#getCurrentNode') section.
 
 ---
 #####See Also#####

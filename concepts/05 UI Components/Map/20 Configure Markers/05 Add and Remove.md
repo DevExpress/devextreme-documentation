@@ -1,4 +1,4 @@
-To add markers at design-time, pass an array of objects to the [markers](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/') property. A marker requires only its [location](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/markers/location '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/location/') to be specified.
+To add markers at design-time, pass an array of objects to the [markers](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/') property. A marker requires only its [location](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/markers/location '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/location/') to be specified.
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers/"
 }
 
-To add or remove a marker at runtime, call the [addMarker(markerOptions)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/addMarker(markerOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addMarkermarkerOptions') or [removeMarker(marker)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/removeMarker(marker).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeMarkermarker') method.
+To add or remove a marker at runtime, call the [addMarker(markerOptions)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/addMarker(markerOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addMarkermarkerOptions') or [removeMarker(marker)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/removeMarker(marker).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeMarkermarker') method.
 
     <!--JavaScript-->
     const markersCollection = [
@@ -300,9 +300,9 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** pro
 ---
 
 #####See Also#####
-- [Map - Customize Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')
-- [Map - Handle Marker Related Events](/concepts/05%20Widgets/Map/20%20Configure%20Markers/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Handle_the_Related_Events/')
+- [Map - Customize Markers](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')
+- [Map - Handle Marker Related Events](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Handle_the_Related_Events/')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers)
-- [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
+- [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
 [tags]map, markers, location, add marker, remove marker, add on click

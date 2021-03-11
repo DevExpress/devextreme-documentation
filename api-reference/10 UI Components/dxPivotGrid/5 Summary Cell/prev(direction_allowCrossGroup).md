@@ -15,4 +15,4 @@ The direction in which to search for the previous cell. Can be "row" or "column"
 Specifies whether to allow this method to return cells from groups other than the current one.
 
 ---
-This method is opposite to the [next(direction, allowCrossGroup)](/api-reference/10%20UI%20Widgets/dxPivotGrid/5%20Summary%20Cell/next(direction_allowCrossGroup).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Summary_Cell/#nextdirection_allowCrossGroup') method.
+This method is opposite to the [next(direction, allowCrossGroup)](/api-reference/10%20UI%20Components/dxPivotGrid/5%20Summary%20Cell/next(direction_allowCrossGroup).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Summary_Cell/#nextdirection_allowCrossGroup') method.

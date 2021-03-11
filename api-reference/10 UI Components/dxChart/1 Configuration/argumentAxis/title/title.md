@@ -22,4 +22,4 @@ is the same as this:
     }
 
 #####See Also#####
-- **commonAxisSettings**.[title](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/title '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/title/') - specifies the appearance of all axis titles in the UI component.
+- **commonAxisSettings**.[title](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/title '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/title/') - specifies the appearance of all axis titles in the UI component.

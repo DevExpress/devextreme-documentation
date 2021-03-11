@@ -22,6 +22,6 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): MapLayerElement | dxVectorMapAnnotationConfig
-The layer element whose tooltip is shown; described in the [Layer Element](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') section.
+The layer element whose tooltip is shown; described in the [Layer Element](/api-reference/10%20UI%20Components/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') section.
 
 ---

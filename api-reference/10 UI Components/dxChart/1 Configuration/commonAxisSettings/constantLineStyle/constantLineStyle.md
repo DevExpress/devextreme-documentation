@@ -11,8 +11,8 @@ Configures the appearance of all constant lines in the UI component.
 
 The **commonAxisSettings**.**constantLineStyle** object, which is described here, specifies common settings for all constant lines in the chart. To configure only those constant lines that belong to a particular axis, use the following objects.
 
-- **argumentAxis**.[constantLineStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/constantLineStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/constantLineStyle/')     
-- **valueAxis**.[constantLineStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/constantLineStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLineStyle/')       
+- **argumentAxis**.[constantLineStyle](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/constantLineStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/constantLineStyle/')     
+- **valueAxis**.[constantLineStyle](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/constantLineStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLineStyle/')       
 
 To configure individual constant lines, use the following arrays of objects.
 

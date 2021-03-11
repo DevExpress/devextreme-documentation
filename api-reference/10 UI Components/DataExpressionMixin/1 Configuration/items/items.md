@@ -11,7 +11,7 @@ An array of items displayed by the UI component.
 The **items** array can contain:
 
 - Objects with fields described in this section
-- Objects with any other fields. In this case, specify the [itemTemplate](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/itemTemplate.md '{basewidgetpath}/Configuration/#itemTemplate').
+- Objects with any other fields. In this case, specify the [itemTemplate](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '{basewidgetpath}/Configuration/#itemTemplate').
 
 If you need to update the UI component items, reassign the entire **items** array as shown in the following example:
 

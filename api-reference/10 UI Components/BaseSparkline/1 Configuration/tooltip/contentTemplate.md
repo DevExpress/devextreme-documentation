@@ -59,7 +59,7 @@ You can access the following **pointsInfo** fields:
     </tr>
 </table>
 
-The following fields are available for a sparkline of the *"winloss"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline/1%20Configuration/type.md '{basewidgetpath}/Configuration/#type') only.
+The following fields are available for a sparkline of the *"winloss"* [type](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/type.md '{basewidgetpath}/Configuration/#type') only.
 
 <table class="dx-table full-width">
     <tr>

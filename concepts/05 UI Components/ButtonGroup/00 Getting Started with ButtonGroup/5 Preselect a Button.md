@@ -1,4 +1,4 @@
-Populate the [selectedItemKeys](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItemKeys') array with the keys of the buttons that should be preselected. In this tutorial, we add the *"italic"* button to this array.
+Populate the [selectedItemKeys](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItemKeys') array with the keys of the buttons that should be preselected. In this tutorial, we add the *"italic"* button to this array.
 
 ---
 ##### jQuery

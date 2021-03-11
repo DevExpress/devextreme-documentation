@@ -18,23 +18,10 @@ The List supports drag & drop functionality that allows users to reorder list it
     <!-- tab: app.component.html -->
     <dx-list...>
         <dxo-item-dragging 
-            [allowReordering]="true"
-        >
+            [allowReordering]="true">
         </dxo-item-dragging>
     </dx-list>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    //...
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...   
-    }
 
 ##### Vue
 
@@ -44,36 +31,27 @@ The List supports drag & drop functionality that allows users to reorder list it
             <DxList...>
                 <DxItemDragging
                     :allow-reordering="true"
-                 >
-                </DxItemDragging>
+                 />
             </DxList>
         </div>
     </template>
 
     <script>
     // ...
-    import DxList, {DxItemDragging} from "devextreme-vue/list";
-    import service from './products.service';
+    import DxList, { DxItemDragging } from "devextreme-vue/list";
 
     export default {
         components: {
             // ...
             DxItemDragging
         },
-        data() {
-            // ...
-        },
+        // ...
     }
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
     //...
     import List, { ItemDragging } from "devextreme-react/list";
 

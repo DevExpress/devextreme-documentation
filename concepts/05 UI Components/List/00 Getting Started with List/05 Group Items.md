@@ -20,6 +20,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
 
     <!-- tab: app.component.html -->
     <dx-list...
+        [dataSource]="dataSource"
         [grouped]="true">
     </dx-list>
 
@@ -46,6 +47,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
     <template>
         <div id="app-container">
             <DxList...
+                :data-source="dataSource"
                 :grouped="true">
             </DxList>
         </div>
@@ -58,11 +60,12 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
     export default {
         // ...
         data() {
-            // ...
-            dataSource: new DataSource({
-                store: products,
-                group: "Category"
-            }),
+            return {
+                dataSource: new DataSource({
+                    store: products,
+                    group: "Category"
+                }),
+            }
         },
     }
     </script>
@@ -84,6 +87,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
         return (
             <div className="App">
                 <List...
+                    dataSource={dataSource}
                     grouped={true}>
                 </List>
             </div>

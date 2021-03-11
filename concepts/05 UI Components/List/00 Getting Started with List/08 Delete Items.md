@@ -30,14 +30,6 @@ To allow users to delete items from the **List**, set the [allowItemDeleting](/D
 
     <script>
     // ...
-    import service from './products.service';
-
-    export default {
-        // ...
-        data() {
-            // ...
-        },
-    }
     </script>
 
 ##### React

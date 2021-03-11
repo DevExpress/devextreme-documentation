@@ -16,7 +16,7 @@ The **List** can load data from different data source types. To use a local arra
         });
     });
 
-    <!-- tab: data.js -->
+    <!-- tab: products.js -->
     const products = [{
         ID: 1,
         Name: "HD Video Player",
@@ -116,15 +116,10 @@ The **List** can load data from different data source types. To use a local arra
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        dataSource: DataSource;
         products: Product[] = [];
 
         constructor(service: ProductsService) {
             this.products = service.getProducts();
-            this.dataSource = new DataSource({
-                store: this.products,
-                group: "Category"
-            });
         }
     }
 
@@ -138,85 +133,85 @@ The **List** can load data from different data source types. To use a local arra
     }
 
     const products: Product[] = [{
-            ID: 1,
-            Name: "HD Video Player",
-            Category: "Video Players"
-        },
-        {
-            ID: 3,
-            Name: "SuperPlasma 50",
-            Category: "Televisions"
-        },
-        {
-            ID: 4,
-            Name: "SuperLED 50",
-            Category: "Televisions"
-        },
-        {
-            ID: 5,
-            Name: "SuperLED 42",
-            Category: "Televisions"
-        },
-        {
-            ID: 6,
-            Name: "SuperLCD 55",
-            Category: "Televisions"
-        },
-        {
-            ID: 7,
-            Name: "SuperLCD 42",
-            Category: "Televisions"
-        },
-        {
-            ID: 8,
-            Name: "SuperPlasma 65",
-            Category: "Televisions"
-        },
-        {
-            ID: 9,
-            Name: "SuperLCD 70",
-            Category: "Televisions"
-        },
-        {
-            ID: 10,
-            Name: "DesktopLED 21",
-            Category: "Monitors"
-        },
-        {
-            ID: 12,
-            Name: "DesktopLCD 21",
-            Category: "Monitors"
-        },
-        {
-            ID: 13,
-            Name: "DesktopLCD 19",
-            Category: "Monitors"
-        },
-        {
-            ID: 14,
-            Name: "Projector Plus",
-            Category: "Projectors"
-        },
-        {
-            ID: 15,
-            Name: "Projector PlusHD",
-            Category: "Projectors"
-        },
-        {
-            ID: 17,
-            Name: "ExcelRemote IR",
-            Category: "Automation"
-        },
-        {
-            ID: 18,
-            Name: "ExcelRemote BT",
-            Category: "Automation"
-        },
-        {
-            ID: 19,
-            Name: "ExcelRemote IP",
-            Category: "Automation"
-        }];
+        ID: 1,
+        Name: "HD Video Player",
+        Category: "Video Players"
+    },
+    {
+        ID: 3,
+        Name: "SuperPlasma 50",
+        Category: "Televisions"
+    },
+    {
+        ID: 4,
+        Name: "SuperLED 50",
+        Category: "Televisions"
+    },
+    {
+        ID: 5,
+        Name: "SuperLED 42",
+        Category: "Televisions"
+    },
+    {
+        ID: 6,
+        Name: "SuperLCD 55",
+        Category: "Televisions"
+    },
+    {
+        ID: 7,
+        Name: "SuperLCD 42",
+        Category: "Televisions"
+    },
+    {
+        ID: 8,
+        Name: "SuperPlasma 65",
+        Category: "Televisions"
+    },
+    {
+        ID: 9,
+        Name: "SuperLCD 70",
+        Category: "Televisions"
+    },
+    {
+        ID: 10,
+        Name: "DesktopLED 21",
+        Category: "Monitors"
+    },
+    {
+        ID: 12,
+        Name: "DesktopLCD 21",
+        Category: "Monitors"
+    },
+    {
+        ID: 13,
+        Name: "DesktopLCD 19",
+        Category: "Monitors"
+    },
+    {
+        ID: 14,
+        Name: "Projector Plus",
+        Category: "Projectors"
+    },
+    {
+        ID: 15,
+        Name: "Projector PlusHD",
+        Category: "Projectors"
+    },
+    {
+        ID: 17,
+        Name: "ExcelRemote IR",
+        Category: "Automation"
+    },
+    {
+        ID: 18,
+        Name: "ExcelRemote BT",
+        Category: "Automation"
+    },
+    {
+        ID: 19,
+        Name: "ExcelRemote IP",
+        Category: "Automation"
+    }];
 
     @Injectable({
         providedIn: 'root'
@@ -241,20 +236,20 @@ The **List** can load data from different data source types. To use a local arra
 
     <script>
     // ...
-    import service from './products.service';
+    import { products } from './products';
 
     export default {
         // ...
         data() {
             return {
-                products: service.getProducts(),
+                products: products.getProducts(),
             }
         },
     }
     </script>
 
-    <!-- tab: products.service.js -->
-    const products = [{
+    <!-- tab: products.js -->
+    export const products = [{
         ID: 1,
         Name: "HD Video Player",
         Category: "Video Players"

@@ -22,7 +22,7 @@
             <link rel="stylesheet" href="index.css">
 
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
-            <script src="data.js"></script>
+            <script src="products.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">

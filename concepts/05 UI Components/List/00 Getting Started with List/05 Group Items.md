@@ -27,6 +27,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import DataSource from "devextreme/data/data_source";
+    import { Product, ProductsService } from './products.service';
 
     @Component({
         selector: 'app-root',
@@ -34,11 +35,16 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        // ...
-        dataSource = new DataSource({
-            store: this.products,
-            group: "Category"
-        });
+        dataSource: DataSource;
+        products: Product[] = [];
+
+        constructor(service: ProductsService) {
+            this.products = service.getProducts();
+            this.dataSource = new DataSource({
+                store: this.products,
+                group: "Category"
+            });
+        }
     }
 
 ##### Vue

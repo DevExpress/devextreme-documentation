@@ -22,3 +22,5 @@ The Drawer is a dismissible or permanently visible panel used for navigation in 
 #####See Also#####
 #include common-link-setupdevextreme
 #include common-link-configurewidget
+
+[tags]hamburger

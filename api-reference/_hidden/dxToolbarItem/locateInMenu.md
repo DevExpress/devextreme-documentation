@@ -13,3 +13,5 @@ Specifies when to display an item in the toolbar's overflow menu.
     enum: "`ToolbarItemLocateInMenuMode`",
     values: "`Always`, `Never`, and `Auto`"
 }
+
+[tags]hamburger

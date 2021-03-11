@@ -47,7 +47,11 @@ This function allows you to intercept row removal and perform additional actions
                 $.ajax({
                     url: `https://url/to/your/validation/service/${e.key}`,
                     success: function(validationResult) {
-                        !validationResult.errorText ? deferred.resolve(false) : deferred.reject(validationResult.errorText);
+                        if (validationResult.errorText) {
+                            deferred.reject(validationResult.errorText);
+                        } else {
+                            deferred.resolve(false);
+                        }
                     },
                     error: function() {
                         deferred.reject("Data Loading Error");

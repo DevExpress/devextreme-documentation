@@ -242,5 +242,3 @@ The following code shows an example of a data source that can be aggregated by c
 This code produces the following result:
 
 ![DevExtreme RangeSelector: Aggregate by Category](/images/ChartJS/range-selector-aggregateByCategory.png)
-
-If **aggregateByCategory** is **false**, the aggregation methods are not applied. The first series point in each category is displayed instead.

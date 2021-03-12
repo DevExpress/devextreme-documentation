@@ -61,7 +61,8 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
 
     <script>
     // ...
-    import service from './products.service';
+    import { prdocuts } from './products';
+    import DataSource from "devextreme/data/data_source";
 
     export default {
         // ...
@@ -83,6 +84,10 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
 
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
+
+    // ...    
+    import { products } from './products';
+    import DataSource from "devextreme/data/data_source";
 
     const dataSource = new DataSource({
         store: products,

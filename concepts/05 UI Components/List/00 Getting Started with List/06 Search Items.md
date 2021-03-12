@@ -33,14 +33,6 @@ To add a search bar to the **List**, set the [searchEnabled](/Documentation/ApiR
 
     <script>
     // ...
-    import service from './products.service';
-
-    export default {
-        // ...
-        data() {
-            // ...
-        },
-    }
     </script>
 
 ##### React

@@ -145,7 +145,6 @@ This function allows you to intercept row removal and perform additional actions
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
     import dialog from 'devextreme/ui/dialog';

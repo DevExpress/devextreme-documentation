@@ -11,15 +11,10 @@
                 const promptPromise = DevExpress.ui.dialog.confirm("Are you sure?", "Confirm changes");
                 promptPromise.done((dialogResult) => {
                     if (dialogResult) {
-                        let params = "";
-                        for (let key in e.newData) {
-                            params += `${key}=${e.newData[key]}&`;
-                        }
-                        params = params.slice(0, -1);
                         $.ajax({
                             url: "https://url/to/your/validation/service",
                             dataType: "json",
-                            data: params,
+                            data: e.newData,
                             success: function(validationResult) {
                                 if (validationResult.errorText) {
                                     deferred.reject(validationResult.errorText);

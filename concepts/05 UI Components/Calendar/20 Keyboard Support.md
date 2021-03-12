@@ -21,6 +21,22 @@ An end user can use the following keys to interact with the UI component.
         <td>Enter</td>
         <td>Selects the focused day.</td>
     </tr>
+    <tr>
+        <td>Ctrl + &uarr;</td>
+        <td>Increases zoom level.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &darr;</td>
+        <td>Decreases zoom level.</td>
+    </tr>
+    <tr>
+        <td>Home</td>
+        <td>Moves focus to the first date in the view.</td>
+    </tr>
+    <tr>
+        <td>End</td>
+        <td>Moves focus to the last date in the view.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler

@@ -17,7 +17,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Closes the date/time picker.</td>
     </tr>
     <tr>
-        <td rowspan="4">Calendar</td>
+        <td rowspan="5">Calendar</td>
         <td style="font-style:italic; text-align:center">&larr; &rarr; &uarr; &darr;</td>
         <td>Moves focus to the day nearby.</td>
     </tr>
@@ -34,6 +34,14 @@ An end user can use the following keys to interact with the UI component.
         <td>Selects the focused day.</td>
     </tr>
     <tr>
+        <td>Alt + &uarr; / Alt + &darr;</td>
+        <td>Opens/closes the popup.</td>
+    </tr>
+    <tr>
+        <td>Esc</td>
+        <td>Closes the popup.</td>
+    </tr>
+    <tr>
         <td rowspan="2">List</td>
         <td style="font-style:italic; text-align:center">&uarr; / &darr;</td>
         <td>Moves focus to the previous/next time value.</td>
@@ -41,6 +49,10 @@ An end user can use the following keys to interact with the UI component.
     <tr>
         <td>Enter</td>
         <td>Selects the focused time value.</td>
+    </tr>
+    <tr>
+        <td>Page Up / Page Down</td>
+        <td>Moves focus to the first/last value.</td>
     </tr>
 </table>
 

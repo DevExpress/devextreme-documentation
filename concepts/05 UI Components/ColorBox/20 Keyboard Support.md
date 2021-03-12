@@ -29,6 +29,14 @@ An end user can use the following keys to interact with the UI component.
         <td>Enter</td>
         <td>Selects the color.</td>
     </tr>
+    <tr>
+        <td>Alt + &uarr;</td>
+        <td>Opens the popup.</td>
+    </tr>
+    <tr>
+        <td>Alt + &darr; or Esc</td>
+        <td>Closes the popup.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler

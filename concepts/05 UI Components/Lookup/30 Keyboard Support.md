@@ -25,6 +25,14 @@ An end user can use the following keys to interact with the UI component.
         <td>Tab / Shift + Tab</td>
         <td>If the drop-down menu is opened, moves focus to the list / search field.</td>
     </tr>
+    <tr>
+        <td>Page Up / Page Down</td>
+        <td>Moves focus to the first/last item of the list's page.</td>
+    </tr>
+    <tr>
+        <td>Home / End</td>
+        <td>Moves focus to the list's first/last item.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler

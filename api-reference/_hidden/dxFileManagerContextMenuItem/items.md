@@ -10,6 +10,8 @@ Configures settings of a context menu item's subitems.
 
 The FileManager UI component allows you to add default and create custom context menu subitems.
 
+[note] You can specify the **items** option for custom context menu items only.
+
 ---
 
 ##### jQuery

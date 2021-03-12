@@ -60,7 +60,7 @@
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxDataGridModule } from 'devextreme-angular';
+    import { DxTreeListModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -68,7 +68,7 @@
         ],
         imports: [
             BrowserModule,
-            DxDataGridModule
+            DxTreeListModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]

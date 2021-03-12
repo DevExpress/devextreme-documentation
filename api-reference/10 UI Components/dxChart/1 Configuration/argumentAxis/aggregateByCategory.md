@@ -231,4 +231,4 @@ This code produces the following result:
 
 ![DevExtreme Chart: Aggregate by Category](/images/ChartJS/chart-aggregateByCategory.png)
 
-If **aggregateByCategory** is **false**, the aggregation methods are not applied. The first series point in each category is displayed instead.
+If **aggregateByCategory** is **false**, the aggregation methods are not applied.

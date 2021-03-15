@@ -61,7 +61,7 @@ An alternative to the **key** + **items** structure is a flat array grouped usin
 
     <script>
     // ...
-    import { prdocuts } from './products';
+    import { products } from './products';
     import DataSource from "devextreme/data/data_source";
 
     export default {

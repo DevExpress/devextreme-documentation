@@ -242,7 +242,7 @@ The **List** can load data from different data source types. To use a local arra
         // ...
         data() {
             return {
-                products: products.getProducts(),
+                products
             }
         },
     }
@@ -329,12 +329,6 @@ The **List** can load data from different data source types. To use a local arra
         Name: "ExcelRemote IP",
         Category: "Automation"
     }];
-
-    export default {
-        getProducts() {
-            return products;
-        }
-    }
 
 ##### React
 

@@ -19,7 +19,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Esc</td>
-        <td>Close the dropdown menu.</td>
+        <td>Closes the drop-down menu.</td>
     </tr>
 </table>
 

@@ -31,11 +31,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Alt + &uarr;</td>
-        <td>Opens the popup.</td>
+        <td>Opens the drop-down editor.</td>
     </tr>
     <tr>
         <td>Alt + &darr; or Esc</td>
-        <td>Closes the popup.</td>
+        <td>Closes the drop-down editor.</td>
     </tr>
 </table>
 

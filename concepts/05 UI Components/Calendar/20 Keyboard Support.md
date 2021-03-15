@@ -23,11 +23,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Ctrl + &uarr;</td>
-        <td>Increases zoom level.</td>
+        <td>Increases <a href="/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel">zoomLevel</a>.</td>
     </tr>
     <tr>
         <td>Ctrl + &darr;</td>
-        <td>Decreases zoom level.</td>
+        <td>Decreases <b>zoomLevel</b>.</td>
     </tr>
     <tr>
         <td>Home</td>

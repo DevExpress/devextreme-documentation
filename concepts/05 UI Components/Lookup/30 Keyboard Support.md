@@ -27,11 +27,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Page Up / Page Down</td>
-        <td>Moves focus to the first/last item of the list's page.</td>
+        <td>Moves focus to the first/last menu item on the page.</td>
     </tr>
     <tr>
         <td>Home / End</td>
-        <td>Moves focus to the list's first/last item.</td>
+        <td>Moves focus to the first/last menu item.</td>
     </tr>
 </table>
 

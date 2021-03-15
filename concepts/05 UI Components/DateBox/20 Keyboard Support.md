@@ -17,7 +17,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Closes the date/time picker.</td>
     </tr>
     <tr>
-        <td rowspan="5">Calendar</td>
+        <td rowspan="6">Calendar</td>
         <td style="font-style:italic; text-align:center">&larr; &rarr; &uarr; &darr;</td>
         <td>Moves focus to the day nearby.</td>
     </tr>
@@ -35,11 +35,11 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Alt + &uarr; / Alt + &darr;</td>
-        <td>Opens/closes the popup.</td>
+        <td>Opens/closes the drop-down editor.</td>
     </tr>
     <tr>
         <td>Esc</td>
-        <td>Closes the popup.</td>
+        <td>Closes the drop-down editor.</td>
     </tr>
     <tr>
         <td rowspan="2">List</td>

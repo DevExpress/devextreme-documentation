@@ -7,7 +7,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Alt + &darr;</td>
-        <td>Opens the popup.</td>
+        <td>Opens the drop-down field.</td>
     </tr>
 </table>
 

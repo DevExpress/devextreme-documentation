@@ -7,7 +7,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>&uarr; &rarr; &darr; &larr;</td>
-        <td>Drags the popup when it is focused and drag is enabled.</td>
+        <td>Drags the popup when it is focused and <a href="/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled">dragEnabled</a> is <b>true</b>.</td>
     </tr>
     <tr>
         <td>Esc</td>

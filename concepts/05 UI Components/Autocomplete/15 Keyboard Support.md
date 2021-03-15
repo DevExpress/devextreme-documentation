@@ -7,15 +7,15 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>&uarr; / &darr;</td>
-        <td>Moves focus to the previous/following list item.</td>
+        <td>Moves focus to the previous/following menu item.</td>
     </tr>
     <tr>
         <td>Page Up / Page Down</td>
-        <td>Moves focus to the first/last list item.</td>
+        <td>Moves focus to the first/last menu item.</td>
     </tr>
     <tr>
         <td>Enter</td>
-        <td>Selects focused list item.</td>
+        <td>Selects focused menu item.</td>
     </tr>
     <tr>
         <td>Esc</td>

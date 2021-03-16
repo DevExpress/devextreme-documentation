@@ -1,12 +1,4 @@
-Users can drag and drop nodes to reorder them or change their hierarchy. To enable these features, do the following:
-
-1. Set the allowReordering and allowDropInsideItem properties to true.
-
-1. Implement the onDragChange function.           
-Inside the function, prevent a node from being placed among its child nodes: cancel the drop event if a user places a node in the invalid position.
-
-1. Implement the onReorder function.          
-Inside the function, change the parent ID of the reordered node and the node's index in the data array. If the node was dropped onto another node, changing the parent ID is sufficient.
+Users can drag and drop nodes to reorder them or change their hierarchy. To configure these features, enable the [allowReordering](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#allowReordering) and [allowDropInsideItem](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#allowDropInsideItem) properties of the [rowDragging](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/) object and implement the [onDragChange](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragChange) and [onReorder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onReorder) functions as shown below. For detailed instructions, refer to the [Node Drag & Drop](/Demos/WidgetsGallery/Demo/TreeList/LocalReordering/) demo.
 
 ---
 ##### jQuery
@@ -54,11 +46,11 @@ Inside the function, change the parent ID of the reordered node and the node's i
 
     <!-- tab: app.component.html -->
     <div id="app-container">
-        <dx-data-grid ...
+        <dx-tree-list ...
             (onSelectionChanged)="selectEmployee($event)">
             <!-- ... -->
             <dxo-selection mode="single"></dxo-selection>
-        </dx-data-grid>
+        </dx-tree-list>
         <p id="selected-employee" *ngIf="selectedEmployee">
             Selected employee: {{ selectedEmployee.FullName }}
         </p>
@@ -109,11 +101,11 @@ Inside the function, change the parent ID of the reordered node and the node's i
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ...
+            <DxTreeList ...
                 @selection-changed="selectEmployee">
                 <!-- ... -->
                 <DxSelection mode="single" />
-            </DxDataGrid>
+            </DxTreeList>
             <p id="selected-employee" v-if="selectedEmployee">
                 Selected employee: {{ selectedEmployee.FullName }}
             </p>
@@ -122,14 +114,14 @@ Inside the function, change the parent ID of the reordered node and the node's i
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         // ...
         DxSelection
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             // ...
             DxSelection
         },
@@ -178,7 +170,7 @@ Inside the function, change the parent ID of the reordered node and the node's i
         Column,
         // ...
         Selection
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function SelectedEmployee(props) {
         if(props.employee) {

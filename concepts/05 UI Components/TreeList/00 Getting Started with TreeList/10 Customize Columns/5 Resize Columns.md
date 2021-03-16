@@ -1,4 +1,4 @@
-Grid columns have equal widths by default. You can set each column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) or indicate that all columns should adjust their widths to their content ([columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth)). Users can resize columns if you enable the [allowColumnResizing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing) property.
+TreeList columns have equal widths by default. You can set each column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) or indicate that all columns should adjust their widths to their content ([columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth)). Users can resize columns if you enable the [allowColumnResizing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing) property.
 
 ---
 ##### jQuery
@@ -28,7 +28,7 @@ Grid columns have equal widths by default. You can set each column's [width](/Do
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ...
+    <dx-tree-list ...
         [allowColumnResizing]="true"
         [columnAutoWidth]="true">
         <!-- ... -->
@@ -43,14 +43,14 @@ Grid columns have equal widths by default. You can set each column's [width](/Do
             [width]="100">
         </dxi-column>
         <!-- ... -->
-    </dx-data-grid>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ...
+            <DxTreeList ...
                 :allow-column-reordering="true"
                 :column-auto-width="true">
                 <!-- ... -->
@@ -65,19 +65,19 @@ Grid columns have equal widths by default. You can set each column's [width](/Do
                     :width="100">
                 </DxColumn>
                 <!-- ... -->
-            </DxDataGrid>
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         DxColumn
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             DxColumn
         },
         // ...
@@ -94,7 +94,7 @@ Grid columns have equal widths by default. You can set each column's [width](/Do
     import {
         TreeList,
         Column
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (

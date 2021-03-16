@@ -1,4 +1,4 @@
-The TreeList displays all columns from the **columns** array. To hide a column, set its [visible](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#visible) property to **false**. Hidden columns appear in the [columnChooser](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/). Users can restore hidden columns from it. To enable the column chooser. set the **columnChooser**.[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#enabled) property to **true**. If a column should not be visible even in the column chooser, simply do not declare it in the **columns** array.
+The TreeList displays all columns from the **columns** array. To hide a column, set its [visible](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#visible) property to **false**. Hidden columns appear in the [columnChooser](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/). Users can hide and restore columns from it. To enable the column chooser, set the **columnChooser**.[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#enabled) property to **true**. If a column should not be visible even in the column chooser, simply do not declare it in the **columns** array.
 
 ---
 ##### jQuery
@@ -10,7 +10,7 @@ The TreeList displays all columns from the **columns** array. To hide a column, 
             columns: [
             // ...
             {
-                dataField: "PostalCode",
+                dataField: "Email",
                 visible: false
             }],
             columnChooser: { enabled: true },
@@ -20,35 +20,35 @@ The TreeList displays all columns from the **columns** array. To hide a column, 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-tree-list ... >
         <!-- ... -->
-        <dxi-column dataField="PostalCode" [visible]="false"></dxi-column>
+        <dxi-column dataField="Email" [visible]="false"></dxi-column>
         <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
-    </dx-data-grid>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ... >
+            <DxTreeList ... >
                 <!-- ... -->
-                <DxColumn data-field="PostalCode" :visible="false" />
+                <DxColumn data-field="Email" :visible="false" />
                 <DxColumnChooser :enabled="true" />
-            </DxDataGrid>
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         DxColumn,
         DxColumnChooser
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             DxColumn,
             DxColumnChooser
         },
@@ -67,14 +67,14 @@ The TreeList displays all columns from the **columns** array. To hide a column, 
         TreeList,
         Column,
         ColumnChooser
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (
             <div className="App">
                 <TreeList ... >
                     {/* ... */}
-                    <Column dataField="PostalCode" visible={false} />
+                    <Column dataField="Email" visible={false} />
                     <ColumnChooser enabled={true} />
                 </TreeList>
             </div>

@@ -1,4 +1,4 @@
-The **sorting**.[mode](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode) property specifies whether users can sort grid records by single or multiple columns. This tutorial uses the default sorting mode - single. 
+The **sorting**.[mode](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode) property specifies whether users can sort records by single or multiple columns. This tutorial uses the default sorting mode - single. 
 
 You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder) and [sortIndex](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex) properties to specify the initial sorting settings. **sortIndex** applies only in multiple sorting mode.
 
@@ -10,7 +10,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
         $("#treeList").dxTreeList({
             // ...
             columns: [{
-                dataField: "Country",
+                dataField: "Position",
                 sortOrder: "asc",
             },
             // ...
@@ -22,42 +22,42 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-tree-list ... >
         <!-- ... -->
         <dxi-column
-            dataField="Country"
+            dataField="Position"
             sortOrder="asc">
         </dxi-column>
         <!-- <dxo-sorting [mode]="single"></dxo-sorting> -->
-    </dx-data-grid>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ... >
+            <DxTreeList ... >
                 <!-- ... -->
                 <DxColumn
-                    data-field="Country"
+                    data-field="Position"
                     sort-order="asc">
                 </DxColumn>
                 <!-- <DxSorting mode="single" /> -->
-            </DxDataGrid>
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         DxColumn,
         // ...
         // DxSorting
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             DxColumn,
             // ...
             // DxSorting
@@ -78,7 +78,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
         Column,
         // ...
         // Sorting
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (
@@ -86,7 +86,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
                 <TreeList ... >
                     {/* ... */}
                     <Column
-                        dataField="Country"
+                        dataField="Position"
                         sortOrder="asc">
                     </Column>
                     {/* <Sorting mode="single" /> */}
@@ -100,4 +100,4 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
 
 ---
 
-Run the code and ensure that grid records are sorted by the `Country` column. Click a column header to sort the records by another column.
+Run the code and ensure that records are sorted by the `Position` column. Click a column header to sort the records by another column.

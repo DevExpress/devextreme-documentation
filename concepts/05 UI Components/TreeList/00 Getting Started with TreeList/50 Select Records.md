@@ -48,11 +48,11 @@ You can obtain the selected record's data in the [onSelectionChanged](/Documenta
 
     <!-- tab: app.component.html -->
     <div id="app-container">
-        <dx-data-grid ...
+        <dx-tree-list ...
             (onSelectionChanged)="selectEmployee($event)">
             <!-- ... -->
             <dxo-selection mode="single"></dxo-selection>
-        </dx-data-grid>
+        </dx-tree-list>
         <p id="selected-employee" *ngIf="selectedEmployee">
             Selected employee: {{ selectedEmployee.FullName }}
         </p>
@@ -103,11 +103,11 @@ You can obtain the selected record's data in the [onSelectionChanged](/Documenta
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ...
+            <DxTreeList ...
                 @selection-changed="selectEmployee">
                 <!-- ... -->
                 <DxSelection mode="single" />
-            </DxDataGrid>
+            </DxTreeList>
             <p id="selected-employee" v-if="selectedEmployee">
                 Selected employee: {{ selectedEmployee.FullName }}
             </p>
@@ -116,14 +116,14 @@ You can obtain the selected record's data in the [onSelectionChanged](/Documenta
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         // ...
         DxSelection
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             // ...
             DxSelection
         },
@@ -172,7 +172,7 @@ You can obtain the selected record's data in the [onSelectionChanged](/Documenta
         Column,
         // ...
         Selection
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function SelectedEmployee(props) {
         if(props.employee) {

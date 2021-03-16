@@ -22,36 +22,36 @@ In this tutorial, the **filterRow** and **searchPanel** are displayed:
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-tree-list ... >
         <!-- ... -->
         <dxo-filter-row [visible]="true"></dxo-filter-row>
         <dxo-search-panel [visible]="true"></dxo-search-panel>
-    </dx-data-grid>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ... >
+            <DxTreeList ... >
                 <!-- ... -->
                 <DxFilterRow :visible="true" />
                 <DxSearchPanel :visible="true" />
-            </DxDataGrid>
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         // ...
         DxFilterRow,
         DxSearchPanel
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             // ...
             DxFilterRow,
             DxSearchPanel
@@ -72,7 +72,7 @@ In this tutorial, the **filterRow** and **searchPanel** are displayed:
         // ...
         FilterRow,
         SearchPanel
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (
@@ -90,4 +90,4 @@ In this tutorial, the **filterRow** and **searchPanel** are displayed:
 
 ---
 
-Run the code and enter a value in a filter row cell or the search panel. Grid data is filtered according to this value.
+Run the code and enter a value in a filter row cell or the search panel. Data is filtered according to this value.

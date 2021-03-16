@@ -1,4 +1,4 @@
-To reorder grid columns, change their order in the **columns** array. Users can also reorder columns if you enable the [allowColumnReordering](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnReordering) property.
+To reorder columns, change their order in the **columns** array. Users can also reorder columns if you enable the [allowColumnReordering](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnReordering) property.
 
 ---
 ##### jQuery
@@ -8,85 +8,120 @@ To reorder grid columns, change their order in the **columns** array. Users can 
         $("#treeList").dxTreeList({
             // ...
             columns: [{
-                dataField: "FullName"
+                dataField: "FullName",
+                validationRules: [{
+                    type: "required"
+                }],
+                fixed: true
             }, {
-                dataField: "Position"
+                dataField: "Position",
+                validationRules: [{
+                    type: "required"
+                }]
             }, {
                 dataField: "BirthDate", 
                 dataType: "date",
+                width: 100,
+                validationRules: [{
+                    type: "required"
+                }]
             }, {
                 dataField: "HireDate", 
                 dataType: "date",
-            },"City", {
-                dataField: "Country"
-            },
-            "Address",
-            "HomePhone",
-            {
-                dataField: "PostalCode",
-            }],
-            allowColumnReordering: true,
+                width: 100,
+                validationRules: [{
+                    type: "required"
+                }]
+            }, "City", "State", {
+                dataField: "Email",
+                visible: false
+            }, "MobilePhone", "Skype"],
+            allowColumnReordering: true
         });
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ...
+    <dx-tree-list ...
         [allowColumnReordering]="true">
-        <dxi-column dataField="FullName"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
+        <dxi-column dataField="FullName" [fixed]="true">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column dataField="Position">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
         <dxi-column
             dataField="BirthDate"
-            dataType="date">
+            dataType="date"
+            [width]="100">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
         <dxi-column
             dataField="HireDate"
-            dataType="date">
+            dataType="date"
+            [width]="100">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
         <dxi-column dataField="City"></dxi-column>
-        <dxi-column dataField="Country"></dxi-column>
-        <dxi-column dataField="Address"></dxi-column>
-        <dxi-column dataField="HomePhone"></dxi-column>
-        <dxi-column dataField="PostalCode"></dxi-column>
-    </dx-data-grid>
+        <dxi-column
+            dataField="State"
+            sortOrder="asc">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column dataField="Email" [visible]="false"></dxi-column>
+        <dxi-column dataField="MobilePhone"></dxi-column>
+        <dxi-column dataField="Skype"></dxi-column>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ...
+            <DxTreeList ...
                 :allow-column-reordering="true">
-                <DxColumn data-field="FullName"></DxColumn>
-                <DxColumn data-field="Position"></DxColumn>
+                <DxColumn data-field="FullName" :fixed="true">
+                    <DxRequiredRule />
+                </DxColumn>
+                <DxColumn data-field="Position">
+                    <DxRequiredRule />
+                </DxColumn>
                 <DxColumn
                     data-field="BirthDate"
-                    data-type="date">
+                    data-type="date"
+                    :width="100">
+                    <DxRequiredRule />
                 </DxColumn>
                 <DxColumn
                     data-field="HireDate"
-                    data-type="date">
+                    data-type="date"
+                    :width="100">
+                    <DxRequiredRule />
                 </DxColumn>
                 <DxColumn data-field="City" />
-                <DxColumn data-field="Country"></DxColumn>
-                <DxColumn data-field="Address" />
-                <DxColumn data-field="HomePhone" />
-                <DxColumn data-field="PostalCode" />
-            </DxDataGrid>
+                <DxColumn
+                    data-field="State"
+                    sort-order="asc">
+                    <DxRequiredRule />
+                </DxColumn>
+                <DxColumn data-field="Email" :visible="false" />
+                <DxColumn data-field="MobilePhone" />
+                <DxColumn data-field="Skype" />
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     // ...
     import {
-        DxDataGrid,
+        DxTreeList,
         DxColumn
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             DxColumn
         },
         // ...
@@ -103,28 +138,40 @@ To reorder grid columns, change their order in the **columns** array. Users can 
     import {
         TreeList,
         Column
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (
             <div className="App">
                 <TreeList ...
                     allowColumnReordering={true}>
-                    <Column dataField="FullName"></Column>
-                    <Column dataField="Position"></Column>
+                    <Column dataField="FullName">
+                        <RequiredRule />
+                    </Column>
+                    <Column dataField="Position">
+                        <RequiredRule />
+                    </Column>
                     <Column
                         dataField="BirthDate"
-                        dataType="date">
+                        dataType="date"
+                        width={100}>
+                        <RequiredRule />
                     </Column>
                     <Column
                         dataField="HireDate"
-                        dataType="date">
+                        dataType="date"
+                        width={100}>
+                        <RequiredRule />
                     </Column>
                     <Column dataField="City" />
-                    <Column dataField="Country"></Column>
-                    <Column dataField="Address" />
-                    <Column dataField="HomePhone" />
-                    <Column dataField="PostalCode" />
+                    <Column
+                        dataField="State"
+                        sortOrder="asc">
+                        <RequiredRule />
+                    </Column>
+                    <Column dataField="Email" visible={false} />
+                    <Column dataField="MobilePhone" />
+                    <Column dataField="Skype" />
                 </TreeList>
             </div>
         );

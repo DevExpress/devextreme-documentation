@@ -1,4 +1,4 @@
-Users can add new records and update or delete existing records. To allow these operations, enable the [allowAdding](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowAdding), [allowUpdating](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowUpdating), and [allowDeleting](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowDeleting) properties in the [editing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/) object. Multiple [edit modes](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode) are available. This tutorial uses the pop-up edit mode.
+Users can add, update, and delete records. To allow these operations, enable the [allowAdding](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowAdding), [allowUpdating](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowUpdating), and [allowDeleting](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowDeleting) properties in the [editing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/) object. Multiple [edit modes](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode) are available. This tutorial uses the pop-up edit mode.
 
 DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different validation rule types, such as [Email](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/EmailRule/), [Compare](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/), [Range](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RangeRule/), and more. Validation rules are specified per column; one column can use multiple rules. The code below assigns the [Required](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/) rule to several columns.
 
@@ -19,19 +19,18 @@ DevExtreme includes a validation engine that checks edited values before they ar
                 validationRules: [{ type: "required" }]
             }, {
                 dataField: "Position",
-                validationRules: [{ type: "required" }]
+                validationRules: [{
+                    // ...
+                    type: "required" 
+                }]
             }, {
                 dataField: "BirthDate",
-                // ...
-                validationRules: [{ type: "required" }]
-            }, {
-                dataField: "HireDate", 
                 // ...
                 validationRules: [{ type: "required" }]
             },
             // ...
             {
-                dataField: "Country",
+                dataField: "HireDate", 
                 // ...
                 validationRules: [{ type: "required" }]
             },
@@ -43,12 +42,16 @@ DevExtreme includes a validation engine that checks edited values before they ar
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-tree-list ... >
         <!-- ... -->
         <dxi-column dataField="FullName">
             <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
-        <dxi-column dataField="Position">
+        <dxi-column 
+            dataField="Position"
+            <!-- ... -->
+            type="required"
+            >
             <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
         <dxi-column ...
@@ -59,42 +62,34 @@ DevExtreme includes a validation engine that checks edited values before they ar
             dataField="HireDate">
             <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
-        <dxi-column ...
-            dataField="Country">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
         <dxo-editing
             mode="popup"
             [allowUpdating]="true"
             [allowDeleting]="true"
             [allowAdding]="true">
         </dxo-editing>
-    </dx-data-grid>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ... >
+            <DxTreeList ... >
                 <!-- ... -->
                 <DxColumn data-field="FullName">
                     <DxRequiredRule />
                 </DxColumn>
-                <DxColumn data-field="Position">
+                <DxColumn data-field="Position" ... >
                     <DxRequiredRule />
                 </DxColumn>
                 <DxColumn ...
                     data-field="BirthDate">
                     <DxRequiredRule />
                 </DxColumn>
-                <DxColumn ...
-                    data-field="HireDate">
-                    <DxRequiredRule />
-                </DxColumn>
                 <!-- ... -->
                 <DxColumn ...
-                    data-field="Country">
+                    data-field="HireDate">
                     <DxRequiredRule />
                 </DxColumn>
                 <DxEditing
@@ -103,22 +98,22 @@ DevExtreme includes a validation engine that checks edited values before they ar
                     :allow-adding="true"
                     :allow-deleting="true"
                 />
-            </DxDataGrid>
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         DxColumn,
         // ...
         DxRequiredRule,
         DxEditing
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             DxColumn,
             // ...
             DxRequiredRule,
@@ -141,7 +136,7 @@ DevExtreme includes a validation engine that checks edited values before they ar
         // ...
         RequiredRule,
         Editing
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (
@@ -151,20 +146,16 @@ DevExtreme includes a validation engine that checks edited values before they ar
                     <Column dataField="FullName">
                         <RequiredRule />
                     </Column>
-                    <Column dataField="Position">
+                    <Column dataField="Position" ... >
                         <RequiredRule />
                     </Column>
                     <Column ...
                         dataField="BirthDate">
                         <RequiredRule />
                     </Column>
-                    <Column ...
-                        dataField="HireDate">
-                        <RequiredRule />
-                    </Column>
                     {/* ... */}
                     <Column ...
-                        dataField="Country">
+                        dataField="HireDate">
                         <RequiredRule />
                     </Column>
                     <Editing

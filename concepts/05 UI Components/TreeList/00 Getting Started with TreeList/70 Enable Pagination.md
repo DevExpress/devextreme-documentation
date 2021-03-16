@@ -1,4 +1,4 @@
-When paging is enabled, TreeList renders rows by pages instead of rendering them simultaneously. To add this feature, set the paging.enabled property to **true** and specify the optimal number of pages in the paging.pageSize property. Use pagination when the number of records is large.
+When pagination is enabled, TreeList loads records page by page instead of loading them all at once. To configure pagination, set the **paging**.[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#enabled) property to **true** and use the **paging**.[pageSize](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize) property to specify the optimal number of records per page. Use this feature if your tests show noticeable lags without it.
 
 
 ---
@@ -8,215 +8,86 @@ When paging is enabled, TreeList renders rows by pages instead of rendering them
     $(function() {
         $("#treeList").dxTreeList({
             // ...
-            selection: { mode: "single" },
-            onSelectionChanged: function(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
-                    }
-                });
-            },
+            paging: {
+                enabled: true,
+                pageSize: 10
+            }   
         });
     });
-
-    <!-- tab: index.html -->
-    <html>
-        <!-- ... -->
-        <body class="dx-viewport">
-            <div id="app-container">
-                <div id="treeList"></div>
-                <p id="selected-employee"></p>
-            </div>
-        </body>
-    </html>
-
-    <!-- tab: index.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <div id="app-container">
-        <dx-data-grid ...
-            (onSelectionChanged)="selectEmployee($event)">
-            <!-- ... -->
-            <dxo-selection mode="single"></dxo-selection>
-        </dx-data-grid>
-        <p id="selected-employee" *ngIf="selectedEmployee">
-            Selected employee: {{ selectedEmployee.FullName }}
-        </p>
-    </div>
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    import { Employee, EmployeesService } from './employees.service';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-        selectedEmployee: Employee;
-
-        constructor(service: EmployeesService) {
-            // ...
-            this.selectEmployee = this.selectEmployee.bind(this);
-        }
-        
-        selectEmployee(e) {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                if(employee) {
-                    this.selectedEmployee = employee;
-                }
-            });
-        }
-    }
-
-    <!-- tab: app.component.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+    <dx-tree-list ... >
+        <!-- ... -->
+        <dxo-paging 
+            [enabled]="true"
+            [pageSize]="10">
+        </dxo-paging>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ...
-                @selection-changed="selectEmployee">
+            <DxTreeList ... >
                 <!-- ... -->
-                <DxSelection mode="single" />
-            </DxDataGrid>
-            <p id="selected-employee" v-if="selectedEmployee">
-                Selected employee: {{ selectedEmployee.FullName }}
-            </p>
+                <DxPaging
+                    :enabled="true"
+                    :page-size="10"
+                />
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
         // ...
-        DxSelection
-    } from 'devextreme-vue/data-grid';
+        DxPaging
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
             // ...
-            DxSelection
+            DxPaging
         },
-        data() {
-            return {
-                // ...
-                selectedEmployee: undefined,
-            }
-        },
-        methods: {
-            selectEmployee(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        this.selectedEmployee = employee;
-                    }
-                });
-            }
-        }
+        // ...
     }
     </script>
-
-    <style>
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    </style>
 
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useState } from 'react';
+    import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
-    import './App.css';
 
     import {
-        TreeList,
-        Column,
         // ...
-        Selection
-    } from 'devextreme-react/data-grid';
-
-    function SelectedEmployee(props) {
-        if(props.employee) {
-            return (
-                <p id="selected-employee">
-                    Selected employee: {props.employee.FullName}
-                </p>
-            );
-        }
-        return null;
-    }
+        Paging
+    } from 'devextreme-react/tree-list';
 
     function App() {
-        const [selectedEmployee, setSelectedEmployee] = useState();
-        const selectEmployee = (e) => {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                setSelectedEmployee(employee);
-            });
-        }
-
         return (
             <div className="App">
-                <TreeList ...
-                    onSelectionChanged={selectEmployee}>
+                <TreeList ... >
                     {/* ... */}
-                    <Selection mode="single" />
+                    <Paging
+                        enabled={true}
+                        defaultPageSize={10} 
+                    />
                 </TreeList>
-                <SelectedEmployee employee={selectedEmployee} />
             </div>
         );
     }
 
     export default App;
 
-    <!-- tab: App.css -->
-    /* ... */
-    .App {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
 
 ---
+
+For further information on the TreeList component, refer to the following resources:
+
+* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/)
+* [API Reference](/Documentation/ApiReference/UI_Components/dxTreeList/)

@@ -1,4 +1,4 @@
-When the width of all columns exceeds the UI component's width, users can scroll the grid horizontally. If you set the [columnFixing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/).[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/#enabled) property to **true**, users can show certain columns in the view regardless of how far they scroll the grid.
+When the width of all columns exceeds the UI component's width, users can scroll the TreeList horizontally. If you set the [columnFixing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/).[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/#enabled) property to **true**, users can use a column header's context menu to show certain columns in the view regardless of how far they scroll the TreeList.
 
 You can also enable a column's [fixed](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#fixed) property in code. This fixes the column to the UI component's left edge. To change the position, set the [fixedPosition](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#fixedPosition) property.
 
@@ -25,41 +25,41 @@ The following code fixes the `FullName` column to the default position and allow
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-tree-list ... >
         <dxi-column
             dataField="FullName"
             [fixed]="true">
         </dxi-column>
         <!-- ... -->
         <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
-    </dx-data-grid>
+    </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ... >
+            <DxTreeList ... >
                 <DxColumn
                     data-field="FullName"
                     :fixed="true">
                 </DxColumn>
                 <!-- ... -->
                 <DxColumnFixing :enabled="true" />
-            </DxDataGrid>
+            </DxTreeList>
         </div>
     </template>
 
     <script>
     import {
-        DxDataGrid,
+        DxTreeList,
         DxColumn,
         DxColumnFixing
-    } from 'devextreme-vue/data-grid';
+    } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxDataGrid,
+            DxTreeList,
             DxColumn,
             DxColumnFixing
         },
@@ -78,7 +78,7 @@ The following code fixes the `FullName` column to the default position and allow
         TreeList,
         Column,
         ColumnFixing
-    } from 'devextreme-react/data-grid';
+    } from 'devextreme-react/tree-list';
 
     function App() {
         return (

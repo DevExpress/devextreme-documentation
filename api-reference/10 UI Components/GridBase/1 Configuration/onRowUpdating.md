@@ -33,64 +33,19 @@ The row's updated data.
 The row's old data.
 
 ---
-[note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
 
-The following code shows how to use the function parameter's **cancel** field to prevent or continue row updating. In this code, a Promise is assigned to this field. Row updating continues if row data validation on the server succeeds (the Promise is resolved); otherwise, row updating is prevented (the Promise is rejected).
+This function allows you to intercept row update and perform additional actions. The following code shows how to use the function parameter's **cancel** field to prevent or continue row update. In this code, a Promise is assigned to this field. Row update continues if a user confirms it and row data validation on the server succeeds (the Promise is resolved); otherwise, row update is prevented (the Promise is rejected).
 
----
-#####jQuery
+#include datagrid-ref-confirm-action-and-validate-data with {
+    apiMember: "onRowUpdating",
+    functionName: "updateRow",
+    vueAttribute: "row-updating"
+}
 
-    <!--JavaScript-->
-    $(function(){
-        $("#{widgetName}Container").dx{WidgetName}({
-            // ...
-            onRowUpdating: function(e) {
-                var d = $.Deferred();
-                $.getJSON("https://url/to/your/validation/service", JSON.stringify(e.data))
-                    .then(function(result) {
-                        return !result.errorText ? d.resolve() : d.reject(result.errorText); 
-                    })
-                    .fail(function() { 
-                        return d.reject(); 
-                    })
-                e.cancel = d.promise();
-            }
-        })
-    })
+[note]
 
-#####Angular
+- Do not use this function to update data. If you need a custom update logic, implement [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [update](Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function.
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
-    import "rxjs/add/operator/toPromise";
-    // ...
-    export class AppComponent {
-        constructor(private httpClient: HttpClient) { /*...*/}
-        onRowUpdating(e) {
-            let params = new HttpParams({ fromString: JSON.stringify(e.data) });
-            let result = this.httpClient.get("https://url/to/your/validation/service", { params: params })
-                .toPromise();
-            e.cancel = new Promise((resolve, reject) => {
-                result.then((validationResult) => {
-                    !validationResult.errorText ? resolve() : reject(validationResult.errorText)
-                })
-                .catch(() => reject());
-            })    
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module,
-            HttpClientModule
-        ],
-        // ...
-    })
+- In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
 
-    <!--HTML-->
-    <dx-{widget-name} ... 
-        (onRowUpdating)="onRowUpdating($event)">
-    </dx-{widget-name}>
-
----
+[/note]

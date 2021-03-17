@@ -216,3 +216,5 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Widgets/dxDr
 ---
 
 If you run the code, you should see a partially visible Drawer and a view that displays *View content*.
+
+[note]The Drawer UI component is not designed to contain another Drawer. Do not use nested Drawers to avoid possible issues in your application.

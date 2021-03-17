@@ -1,0 +1,14 @@
+#app-container {
+  height: 550px;
+  position: relative;
+}
+
+#treeList {
+  height: 500px;
+}
+
+#selected-employee {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

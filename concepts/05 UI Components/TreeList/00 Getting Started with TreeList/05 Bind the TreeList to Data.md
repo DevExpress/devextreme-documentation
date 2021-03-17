@@ -1,13 +1,13 @@
-TreeList supports tree and plain structures. If a data source has a hierarchical  structure, set the [dataStructure](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure) property to *"tree"*and use the [itemsExpr](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#itemsExpr) property to specify the data field that contains child nodes. The TreeList automatically generates identifiers for all nodes and links them with each other. Refer to the following demo for more information: [Simple Array: Hierarchical Structure](/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayHierarchicalStructure/).
+TreeList supports plain and hieararchical data structures. If a data source has a hierarchical structure, set the [dataStructure](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure) property to *"tree"* and use the [itemsExpr](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#itemsExpr) property to specify the data field that contains child nodes. The TreeList automatically generates identifiers for all nodes and links them with each other. Refer to the following demo for more information: [Simple Array: Hierarchical Structure](/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayHierarchicalStructure/).
 
 In plain data structure, each node must have a unique identifier and a reference to its parent node. To specify data fields that store the identifiers and the references, use the [keyExpr](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#keyExpr) and [parentIdExpr](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#parentIdExpr) properties. Top-level nodes descend from the root node. To specify its identifier, use the [rootValue](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#rootValue) property. In this tutorial, we use a plain data structure.
 
-The TreeList component can load and update data from different data source types. To use a local array as in this tutorial, assign it to the dataSource property. If you want to use another data source type, refer to the following articles:
+The TreeList component can load and update data from different data source types. To use a local array as in this tutorial, assign it to the [dataSource](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource) property. If you want to use another data source type, refer to one of the following articles:
 
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
 - [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
-- [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
+- [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
 ---
 ##### jQuery

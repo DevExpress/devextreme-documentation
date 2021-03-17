@@ -9,7 +9,7 @@ Specifies a function to be executed after a theme is loaded.
 The function.
 
 ---
-In some situations, UI components may apply their configuration or calculate their sizes before a theme is loaded. If you encounter issues with component appearance, use **initialized(callback)** to ensure that all styles and fonts are applied:
+In some situations, UI components may apply their configuration or calculate their sizes before a theme is loaded. If you encounter issues with component appearance, use **initialized(callback)** to ensure that all styles are applied:
 
 ---
 ##### Angular

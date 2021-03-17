@@ -1,5 +1,5 @@
 $(function() {
-    $("#treeList").dxTreeList({
+    const treeList = $("#treeList").dxTreeList({
         dataSource: employees,
         rootValue: -1,
         keyExpr: "ID",
@@ -20,8 +20,8 @@ $(function() {
             fixed: true
         }, {
             dataField: "Position",
+            sortOrder: "asc",
             validationRules: [{
-                sortOrder: "asc",
                 type: "required"
             }]
         }, {
@@ -101,7 +101,7 @@ $(function() {
             enabled: true,
             pageSize: 10
         }
-    });
+    }).dxTreeList("instance");
 });
 
 const employees = [{ 

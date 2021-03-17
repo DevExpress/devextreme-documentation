@@ -7,58 +7,65 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     $(function() {
         $("#treeList").dxTreeList({
             // ...
-            selection: { mode: "single" },
-            onSelectionChanged: function(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
+            rowDragging: {
+                allowDropInsideItem: true,
+                allowReordering: true,
+                onDragChange: function(e) {
+                    var visibleRows = treeList.getVisibleRows(),
+                        sourceNode = treeList.getNodeByKey(e.itemData.ID),
+                        targetNode = visibleRows[e.toIndex].node;
+
+                    while (targetNode && targetNode.data) {
+                        if (targetNode.data.ID === sourceNode.data.ID) {
+                            e.cancel = true;
+                            break;
+                        }
+                        targetNode = targetNode.parent;
                     }
-                });
-            },
+                },
+                onReorder: function(e) {
+                    var visibleRows = e.component.getVisibleRows(),
+                        sourceData = e.itemData,
+                        targetData = visibleRows[e.toIndex].data;
+
+                    if (e.dropInsideItem) {
+                        e.itemData.HeadID = targetData.ID;
+                    } else {
+                        var sourceIndex = employees.indexOf(sourceData),
+                            targetIndex = employees.indexOf(targetData);
+
+                        if (sourceData.HeadID !== targetData.HeadID) {
+                            sourceData.HeadID = targetData.HeadID;
+                            if (e.toIndex > e.fromIndex) {
+                                targetIndex++;
+                            }
+                        }
+                        employees.splice(sourceIndex, 1);
+                        employees.splice(targetIndex, 0, sourceData);
+                    }
+                    e.component.refresh();
+                }
+        },
         });
     });
-
-    <!-- tab: index.html -->
-    <html>
-        <!-- ... -->
-        <body class="dx-viewport">
-            <div id="app-container">
-                <div id="treeList"></div>
-                <p id="selected-employee"></p>
-            </div>
-        </body>
-    </html>
-
-    <!-- tab: index.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <div id="app-container">
         <dx-tree-list ...
-            (onSelectionChanged)="selectEmployee($event)">
             <!-- ... -->
-            <dxo-selection mode="single"></dxo-selection>
+            <dxo-row-dragging
+                [onDragChange]="onDragChange"
+                [onReorder]="onReorder"
+                [allowDropInsideItem]="true"
+                [allowReordering]="true"
+            ></dxo-row-dragging>
         </dx-tree-list>
-        <p id="selected-employee" *ngIf="selectedEmployee">
-            Selected employee: {{ selectedEmployee.FullName }}
-        </p>
     </div>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    import { Employee, EmployeesService } from './employees.service';
+    // ...
 
     @Component({
         selector: 'app-root',
@@ -70,30 +77,48 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
         selectedEmployee: Employee;
 
         constructor(service: EmployeesService) {
+            this.employees = service.getEmployees();
             // ...
-            this.selectEmployee = this.selectEmployee.bind(this);
+            this.onReorder = this.onReorder.bind(this);
         }
         
-        selectEmployee(e) {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                if(employee) {
-                    this.selectedEmployee = employee;
+        onDragChange(e) {
+            let visibleRows = e.component.getVisibleRows(),
+              sourceNode = e.component.getNodeByKey(e.itemData.ID),
+              targetNode = visibleRows[e.toIndex].node;
+
+            while(targetNode && targetNode.data) {
+                if (targetNode.data.ID === sourceNode.data.ID) {
+                    e.cancel = true;
+                    break;
                 }
-            });
+                targetNode = targetNode.parent;
+            }
         }
-    }
 
-    <!-- tab: app.component.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
+        onReorder(e) {
+            let visibleRows =  e.component.getVisibleRows(),
+              sourceData = e.itemData,
+              targetData = visibleRows[e.toIndex].data;
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
+            if (e.dropInsideItem) {
+                e.itemData.HeadID = targetData.ID;
+                e.component.refresh();
+            } else {
+                let sourceIndex = this.employees.indexOf(sourceData),
+                  targetIndex = this.employees.indexOf(targetData);
+
+                if (sourceData.HeadID !== targetData.HeadID) {
+                    sourceData.HeadID = targetData.HeadID;
+                    if (e.toIndex > e.fromIndex) {
+                        targetIndex++;
+                    }
+                }
+
+                this.employees.splice(sourceIndex, 1);
+                this.employees.splice(targetIndex, 0, sourceData);
+            }
+        }
     }
 
 ##### Vue
@@ -101,14 +126,16 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxTreeList ...
-                @selection-changed="selectEmployee">
+            <DxTreeList ... >
                 <!-- ... -->
-                <DxSelection mode="single" />
+                <DxRowDragging
+                    :on-drag-change="onDragChange"
+                    :on-reorder="onReorder"
+                    :allow-drop-inside-item="true"
+                    :allow-reordering="true"
+                    :show-drag-icons="true"
+                />
             </DxTreeList>
-            <p id="selected-employee" v-if="selectedEmployee">
-                Selected employee: {{ selectedEmployee.FullName }}
-            </p>
         </div>
     </template>
 
@@ -116,46 +143,63 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     import {
         DxTreeList,
         // ...
-        DxSelection
+        DxRowDragging
     } from 'devextreme-vue/tree-list';
 
     export default {
         components: {
-            DxTreeList,
             // ...
-            DxSelection
+            DxRowDragging
         },
         data() {
             return {
+                employees: service.getEmployees(),
                 // ...
-                selectedEmployee: undefined,
             }
         },
         methods: {
-            selectEmployee(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        this.selectedEmployee = employee;
+            // ...
+            onDragChange(e) {
+                let visibleRows = e.component.getVisibleRows(),
+                  sourceNode = e.component.getNodeByKey(e.itemData.ID),
+                  targetNode = visibleRows[e.toIndex].node;
+
+                while (targetNode && targetNode.data) {
+                    if (targetNode.data.ID === sourceNode.data.ID) {
+                        e.cancel = true;
+                        break;
                     }
-                });
+                    targetNode = targetNode.parent;
+                }
+            },
+            onReorder(e) {
+                let visibleRows = e.component.getVisibleRows(),
+                  sourceData = e.itemData,
+                  targetData = visibleRows[e.toIndex].data;
+
+                if (e.dropInsideItem) {
+                    e.itemData.HeadID = targetData.ID;
+                    e.component.refresh();
+                } else {
+                    let sourceIndex = this.employees.indexOf(sourceData),
+                      targetIndex = this.employees.indexOf(targetData);
+
+                    if (sourceData.HeadID !== targetData.HeadID) {
+                        sourceData.HeadID = targetData.HeadID;
+                        if (e.toIndex > e.fromIndex) {
+                            targetIndex++;
+                        }
+                    }
+                    this.employees.splice(sourceIndex, 1);
+                    this.employees.splice(targetIndex, 0, sourceData);
+                    this.employees = this.employees.slice();
+                }
             }
         }
     }
     </script>
 
-    <style>
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    </style>
+    // ...
 
 ##### React
 
@@ -166,37 +210,67 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     import './App.css';
 
     import {
-        TreeList,
-        Column,
         // ...
-        Selection
+        RowDragging
     } from 'devextreme-react/tree-list';
 
-    function SelectedEmployee(props) {
-        if(props.employee) {
-            return (
-                <p id="selected-employee">
-                    Selected employee: {props.employee.FullName}
-                </p>
-            );
-        }
-        return null;
-    }
+    // ...
 
     function App() {
-        const [selectedEmployee, setSelectedEmployee] = useState();
-        const selectEmployee = (e) => {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                setSelectedEmployee(employee);
-            });
+        // ...
+        const [currentEmployees, setCurrentEmployees] = useState(employees);
+        // ...
+
+        const onDragChange = (e) => {
+            let visibleRows = e.component.getVisibleRows(),
+              sourceNode = e.component.getNodeByKey(e.itemData.ID),
+              targetNode = visibleRows[e.toIndex].node;
+
+            while (targetNode && targetNode.data) {
+                if (targetNode.data.ID === sourceNode.data.ID) {
+                    e.cancel = true;
+                    break;
+                }
+                targetNode = targetNode.parent;
+            }
+        }
+
+        const onReorder = (e) => {
+            let visibleRows = e.component.getVisibleRows(),
+            sourceData = e.itemData,
+            targetData = visibleRows[e.toIndex].data,
+            employeesReordered = currentEmployees,
+            sourceIndex = employeesReordered.indexOf(sourceData),
+            targetIndex = employeesReordered.indexOf(targetData);
+
+            if (e.dropInsideItem) {
+                sourceData = { ...sourceData, HeadID: targetData.ID };
+                employeesReordered = [...employeesReordered.slice(0, sourceIndex), sourceData, ...employeesReordered.slice(sourceIndex + 1)];
+            } else {
+                if (sourceData.HeadID !== targetData.HeadID) {
+                    sourceData = { ...sourceData, HeadID: targetData.HeadID };
+                    if (e.toIndex > e.fromIndex) {
+                        targetIndex++;
+                    }
+                }
+                employeesReordered = [...employeesReordered.slice(0, sourceIndex), ...employeesReordered.slice(sourceIndex + 1)];
+                employeesReordered = [...employeesReordered.slice(0, targetIndex), sourceData, ...employeesReordered.slice(targetIndex)];
+            }
+
+            setCurrentEmployees(employeesReordered);
         }
 
         return (
             <div className="App">
-                <TreeList ...
-                    onSelectionChanged={selectEmployee}>
+                <TreeList ... >
                     {/* ... */}
-                    <Selection mode="single" />
+                    <RowDragging
+                        onDragChange={onDragChange}
+                        onReorder={onReorder}
+                        allowDropInsideItem={true}
+                        allowReordering={true}
+                        showDragIcons={true}
+                    />
                 </TreeList>
                 <SelectedEmployee employee={selectedEmployee} />
             </div>
@@ -204,18 +278,5 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     }
 
     export default App;
-
-    <!-- tab: App.css -->
-    /* ... */
-    .App {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
 
 ---

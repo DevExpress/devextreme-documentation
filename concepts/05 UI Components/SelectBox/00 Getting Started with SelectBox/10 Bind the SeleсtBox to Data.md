@@ -191,3 +191,5 @@ To bind the SelectBox to data, set the [dataSource](/api-reference/10%20UI%20Wid
 ---
 
 If you run this code and open the SelectBox, you will see the the populated drop-down list. Next, we will enable search.
+
+[tags] data binding

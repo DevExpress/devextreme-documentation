@@ -1,4 +1,4 @@
-TreeList can hide columns to adapt to screens of different sizes. Columns are hidden from right to left; their data is available in the adaptive detail row. To add this feature, set the [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnHidingEnabled) to **true**. Additionally, you can use the **columns[]**.[hidingPriority](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#hidingPriority) property to specify custom priorities.
+TreeList can hide columns to adapt to screens of different sizes. Columns are hidden from right to left; their data is available in the adaptive detail row. To add this feature, set the [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnHidingEnabled) to **true**. Additionally, you can use the **columns[]**.[hidingPriority](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#hidingPriority) property to specify custom hiding priorities.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Adaptability](/images/treelist/visual_elements/adaptive-column.png)
 
@@ -55,7 +55,7 @@ TreeList can hide columns to adapt to screens of different sizes. Columns are hi
 
 [note]
 
-If a TreeList is inside a responsive container, you must call the [updateDimensions()](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#updateDimensions) method on each container resize to rerender the TreeList:
+If your TreeList is inside a responsive container, you must call the [updateDimensions()](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#updateDimensions) method on each container resize to rerender the component:
 
 ---
 ##### jQuery

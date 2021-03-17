@@ -755,3 +755,5 @@ The DataGrid component can load and update data from different data source types
 ---
 
 If you run this code, a DataGrid is created with a column for each data field. All the columns have equal widths and the same order as their data fields.
+
+[tags] data binding

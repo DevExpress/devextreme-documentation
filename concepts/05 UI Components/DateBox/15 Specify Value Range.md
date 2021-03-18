@@ -1,6 +1,7 @@
 To specify the date or time range, use the [min](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#min') and [max](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#max') properties.
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->
@@ -73,7 +74,7 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
         render() {
             return (
                 <DateBox
-                    value="2015/12/31"
+                    defaultValue="2015/12/31"
                     type="date"
                     min="2015/1/1"
                     max="2015/12/31"
@@ -85,9 +86,10 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
 
 ---
 
-If an entered value falls out of the range, the UI component displays an error message. To change the message text, specify the [dateOutOfRangeMessage](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/dateOutOfRangeMessage.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateOutOfRangeMessage') property. 
+If an entered value falls out of the range, the UI component displays an error message. To change the message text, specify the [dateOutOfRangeMessage](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/dateOutOfRangeMessage.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateOutOfRangeMessage') property.
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->
@@ -126,9 +128,58 @@ If an entered value falls out of the range, the UI component displays an error m
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox
+            value="2015/12/31"
+            type="date"
+            min="2015/1/1"
+            max="2015/12/31"
+            date-out-of-range-message="Date is out of range"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDateBox from 'devextreme-vue/date-box';
+    export default {
+        components: {
+            DxDateBox
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DateBox from 'devextreme-react/date-box';
+    class App extends React.Component {
+        render() {
+            return (
+                <DateBox
+                    defaultValue="2015/12/31"
+                    type="date"
+                    min="2015/1/1"
+                    max="2015/12/31"
+                    dateOutOfRangeMessage="Date is out of range"
+                />
+            );
+        }
+    }
+    export default App;
+
 ---
 
 #####See Also#####
+
 - [DateBox - Control the Behavior](/concepts/05%20Widgets/DateBox/05%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/DateBox/Control_the_Behavior')
 - [DateBox - Handle the Value Change Event](/concepts/05%20Widgets/DateBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/DateBox/Handle_the_Value_Change_Event')
 - [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)

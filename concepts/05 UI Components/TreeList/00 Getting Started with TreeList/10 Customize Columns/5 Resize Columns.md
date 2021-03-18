@@ -51,7 +51,7 @@ TreeList columns have equal widths by default. You can set each column's [width]
     <template>
         <div id="app-container">
             <DxTreeList ...
-                :allow-column-reordering="true"
+                :allow-column-resizing="true"
                 :column-auto-width="true">
                 <!-- ... -->
                 <DxColumn
@@ -101,7 +101,7 @@ TreeList columns have equal widths by default. You can set each column's [width]
             <div className="App">
                 <TreeList ...
                     columnAutoWidth={true}
-                    allowColumnReordering={true}>
+                    allowColumnResizing={true}>
                     {/* ... */}
                     <Column
                         dataField="BirthDate"

@@ -17,23 +17,16 @@ A <a href="https://www.w3schools.com/js/js_dates.asp" target="_blank">Date</a> o
 The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') to be used for conversion.
 
 ---
----
-##### jQuery
 
-    <!--JavaScript-->
-    var dateString = DevExpress.localization.formatDate(new Date(2018, 4, 7), "longDate");
+    <!-- tab: JavaScript -->
+    const dateString = DevExpress.localization.formatDate(new Date(2018, 4, 7), "longDate");
     console.log(dateString); // logs "Monday, May 7, 2018"
 
-##### Angular
-
-    <!--TypeScript-->
+    // ===== or when using modules =====
     import { formatDate } from "devextreme/localization";
-    // ...
-    export class AppComponent {
-        constructor() {
-            let dateString = formatDate(new Date(2018, 4, 7), "longDate");
-            console.log(dateString); // logs "Monday, May 7, 2018"
-        }
-    }
 
----
+    const dateString = formatDate(new Date(2018, 4, 7), "longDate");
+    console.log(dateString); // logs "Monday, May 7, 2018"
+    
+#####See Also#####
+- [Format Custom Values](/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values)

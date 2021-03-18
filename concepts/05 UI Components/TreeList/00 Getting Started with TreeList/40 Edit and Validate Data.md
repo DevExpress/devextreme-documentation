@@ -19,10 +19,7 @@ DevExtreme includes a validation engine that checks edited values before they ar
                 validationRules: [{ type: "required" }]
             }, {
                 dataField: "Position",
-                validationRules: [{
-                    // ...
-                    type: "required" 
-                }]
+                validationRules: [{ type: "required" }]
             }, {
                 dataField: "BirthDate",
                 // ...
@@ -47,11 +44,7 @@ DevExtreme includes a validation engine that checks edited values before they ar
         <dxi-column dataField="FullName">
             <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
-        <dxi-column 
-            dataField="Position"
-            <!-- ... -->
-            type="required"
-            >
+        <dxi-column dataField="Position">
             <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
         <dxi-column ...
@@ -80,7 +73,7 @@ DevExtreme includes a validation engine that checks edited values before they ar
                 <DxColumn data-field="FullName">
                     <DxRequiredRule />
                 </DxColumn>
-                <DxColumn data-field="Position" ... >
+                <DxColumn data-field="Position">
                     <DxRequiredRule />
                 </DxColumn>
                 <DxColumn ...
@@ -146,7 +139,7 @@ DevExtreme includes a validation engine that checks edited values before they ar
                     <Column dataField="FullName">
                         <RequiredRule />
                     </Column>
-                    <Column dataField="Position" ... >
+                    <Column dataField="Position">
                         <RequiredRule />
                     </Column>
                     <Column ...

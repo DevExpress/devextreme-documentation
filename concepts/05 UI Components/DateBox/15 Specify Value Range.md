@@ -76,7 +76,7 @@ To specify the date or time range, use the [min](/api-reference/10%20UI%20Widget
         render() {
             return (
                 <DateBox
-                    value="2015/12/31"
+                    defaultValue="2015/12/31"
                     type="date"
                     min="2015/1/1"
                     max="2015/12/31"

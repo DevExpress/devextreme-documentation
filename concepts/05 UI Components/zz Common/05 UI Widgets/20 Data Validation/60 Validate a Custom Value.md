@@ -113,7 +113,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
             });
         };
         submit(e) {
-            let result = e.validationGroup.validate();
+            const result = e.validationGroup.validate();
             if (result.isValid) {
                 // Submit values to the server
             }
@@ -148,119 +148,150 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
     })
     export class AppModule { }
 
-##### AngularJS
+##### Vue
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('demoController', function ($scope) {
-            $scope.callbacks = [];
-            $scope.phone = "";
-            $scope.email = "";
-            $scope.borderStyle = "none";
-            $scope.rules = [{
-                type: "required",
-                message: "Specify your phone or email"
-            }];
-            $scope.adapterConfig = {
-                getValue: function () {
-                    return $scope.phone + $scope.email;
-                },
-                applyValidationResults: function (e) {
-                    $scope.borderStyle = e.isValid ? "none" : "1px solid red";
-                },
-                validationRequestsCallbacks: $scope.callbacks
-            };
-            $scope.revalidate = function () {
-                $scope.callbacks.forEach(func => {
-                    func();
-                })
-            };
-            $scope.submit = function (e) {
-                e.validationGroup.validate();
-            }
-        });
-
-    <!--HTML-->
-    <div ng-controller="demoController">
-        <div id="contacts" ngStyle="borderStyle">
-            <div dx-text-box="{
-                placeholder: 'Phone',
-                onValueChanged: revalidate,
-                bindingOptions: {
-                    value: 'phone'
-                }
-            }"></div>
-            <div dx-text-box="{
-                placeholder: 'Email',
-                onValueChanged: revalidate,
-                bindingOptions: {
-                    value: 'email'
-                }
-            }"></div>
-            <div dx-validator="{
-                validationRules: rules,
-                adapter: adapterConfig
-            }"></div>
-            <div dx-validation-summary="{ }"></div>
-            <div dx-button= "{
-                text: 'Contact me',
-                onClick: submit
-            }"></div>
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <div id="contacts" :style="{ border: borderStyle }">
+                <DxTextBox
+                    v-model:value="phone"
+                    placeholder="Phone"
+                    @value-changed="revalidate"
+                />
+                <DxTextBox
+                    v-model:value="email"
+                    placeholder="Email"
+                    @value-changed="revalidate"
+                    type="email"
+                />
+            </div>
+            <DxValidator :adapter="adapterConfig">
+                <DxRequiredRule message="Specify your phone or email." />
+            </DxValidator>
+            <DxValidationSummary />
+            <DxButton text="Contact me" @click="submit" />
         </div>
-    </div>
+    </template>
 
-##### Knockout#####
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
 
-    <!--JavaScript-->
-    callbacks = [];
-    var viewModel = {
-        phone: ko.observable(""),
-        email: ko.observable(""),
-        borderStyle: ko.observable("none"),
-        rules: [{
-            type: "required",
-            message: "Specify your phone or email"
-        }],
-        adapterConfig: {
-            getValue: function () {
-                return viewModel.phone() + viewModel.email();
-            },
-            applyValidationResults: function (e) {
-                viewModel.borderStyle(e.isValid ? "none" : "1px solid red");
-            },
-            validationRequestsCallbacks: callbacks
+    import DxTextBox from "devextreme-vue/text-box";
+    import DxValidator, { DxRequiredRule } from "devextreme-vue/validator";
+    import DxButton from "devextreme-vue/button";
+    import DxValidationSummary from "devextreme-vue/validation-summary";
+
+    export default {
+        components: {
+            DxTextBox,
+            DxValidator,
+            DxRequiredRule,
+            DxButton,
+            DxValidationSummary,
         },
-        revalidate: function () {
-            callbacks.forEach(func => {
+        data() {
+            const callbacks = [];
+            const adapterConfig = {
+                getValue: () => {
+                    return this.phone || this.email;
+                },
+                applyValidationResults: (e) => {
+                    this.borderStyle = e.isValid ? "none" : "1px solid red";
+                },
+                validationRequestsCallbacks: callbacks,
+            };
+            const revalidate = () => {
+                callbacks.forEach((func) => {
+                    func();
+                });
+            };
+            return {
+                phone: undefined,
+                email: undefined,
+                borderStyle: "none",
+                adapterConfig,
+                revalidate
+            };
+        },
+        methods: {
+            submit (e) {
+                const result = e.validationGroup.validate();
+                if (result.isValid) {
+                    // Submit values to the server
+                }
+            }
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useState } from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+    import { TextBox } from 'devextreme-react/text-box';
+    import { Button } from 'devextreme-react/button';
+    import { Validator, RequiredRule } from 'devextreme-react/validator';
+    import { ValidationSummary } from 'devextreme-react/validation-summary';
+
+    export default function App() {
+        const [phone, setPhone] = useState();
+        const [email, setEmail] = useState();
+        const [borderStyle, setBorderStyle] = useState("none");
+        const callbacks = [];
+        const adapterConfig = {
+            getValue: () => {
+                return phone || email;
+            },
+            applyValidationResults: (e) => {
+                setBorderStyle(e.isValid ? "none" : "1px solid red");
+            },
+            validationRequestsCallbacks: callbacks,
+        };
+        const revalidate = () => {
+            callbacks.forEach((func) => {
                 func();
-            })
-        },
-        submit: function (e) {
-            e.validationGroup.validate();
+            });
+        };
+        const handlePhoneChange = (e) => {
+            setPhone(e.value);
+            revalidate();
+        };
+        const handleEmailChange = (e) => {
+            setEmail(e.value);
+            revalidate();
+        };
+        const submit = (e) => {
+            const result = e.validationGroup.validate();
+            if (result.isValid) {
+                // Submit values to the server
+            }
         }
-    }
-    ko.applyBindings(viewModel);
 
-    <!--HTML--><div id="contacts" data-bind="style: { border: borderStyle }">
-        <div data-bind="dxTextBox: {
-            placeholder: 'Phone',
-            onValueChanged: revalidate,
-            value: phone
-        }"></div>
-        <div data-bind="dxTextBox: {
-            placeholder: 'Email',
-            onValueChanged: revalidate,
-            value: email
-        }"></div>
-        <div data-bind="dxValidator: {
-            validationRules: rules,
-            adapter: adapterConfig
-        }"></div>
-        <div data-bind="dxValidationSummary: { }"></div>
-        <div data-bind="dxButton:{
-            text: 'Contact me',
-            onClick: submit
-        }"></div>
-    </div>
+        return (
+            <div>
+                <div id="contacts" style={{ border: borderStyle }}>
+                    <TextBox
+                        value={phone}
+                        placeholder="Phone"
+                        onValueChanged={handlePhoneChange}
+                    />
+                    <TextBox
+                        value={email}
+                        placeholder="Email"
+                        onValueChanged={handleEmailChange}
+                        type="email"
+                    />
+                </div>
+                <Validator adapter={adapterConfig}>
+                    <RequiredRule message="Specify your phone or email." />
+                </Validator>
+                <ValidationSummary />
+                <Button text="Contact me" onClick={submit} />
+            </div>
+        );
+    }
 
 ---

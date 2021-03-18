@@ -142,13 +142,14 @@ DevExtreme includes a validation engine that checks edited values before they ar
                     <Column dataField="Position">
                         <RequiredRule />
                     </Column>
+                    {/* ... */}
                     <Column ...
-                        dataField="BirthDate">
+                        dataField="HireDate">
                         <RequiredRule />
                     </Column>
                     {/* ... */}
                     <Column ...
-                        dataField="HireDate">
+                        dataField="State">
                         <RequiredRule />
                     </Column>
                     <Editing
@@ -166,4 +167,4 @@ DevExtreme includes a validation engine that checks edited values before they ar
 
 ---
 
-Run the code and click the Edit button in any row. This invokes a pop-up window that contains an edit form. When you clear the Full Name text box on this form, the following validation error is shown: *"First Name is required"*.
+Run the code and click the Edit button in any row. This invokes a pop-up window that contains an edit form. When you clear the Full Name text box on this form, the following validation error is shown: *"Full Name is required"*.

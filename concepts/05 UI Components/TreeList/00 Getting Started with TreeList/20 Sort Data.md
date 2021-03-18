@@ -10,7 +10,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
         $("#treeList").dxTreeList({
             // ...
             columns: [{
-                dataField: "Position",
+                dataField: "State",
                 sortOrder: "asc",
             },
             // ...
@@ -25,7 +25,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
     <dx-tree-list ... >
         <!-- ... -->
         <dxi-column
-            dataField="Position"
+            dataField="State"
             sortOrder="asc">
         </dxi-column>
         <!-- <dxo-sorting [mode]="single"></dxo-sorting> -->
@@ -39,7 +39,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
             <DxTreeList ... >
                 <!-- ... -->
                 <DxColumn
-                    data-field="Position"
+                    data-field="State"
                     sort-order="asc">
                 </DxColumn>
                 <!-- <DxSorting mode="single" /> -->
@@ -86,7 +86,7 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
                 <TreeList ... >
                     {/* ... */}
                     <Column
-                        dataField="Position"
+                        dataField="State"
                         sortOrder="asc">
                     </Column>
                     {/* <Sorting mode="single" /> */}
@@ -100,4 +100,4 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
 
 ---
 
-Run the code and ensure that records are sorted by the `Position` column. Click a column header to sort the records by another column.
+Run the code and ensure that records are sorted by the `State` column. Click a column header to sort the records by another column.

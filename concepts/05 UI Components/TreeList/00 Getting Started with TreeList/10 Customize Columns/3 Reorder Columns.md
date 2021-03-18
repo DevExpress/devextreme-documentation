@@ -7,35 +7,13 @@ To reorder columns, change their order in the **columns** array. Users can also 
     $(function() {
         $("#treeList").dxTreeList({
             // ...
-            columns: [{
-                dataField: "FullName",
-                validationRules: [{
-                    type: "required"
-                }],
-                fixed: true
-            }, {
-                dataField: "Position",
-                validationRules: [{
-                    type: "required"
-                }]
-            }, {
+            columns: [ "FullName", "Position", {
                 dataField: "BirthDate", 
                 dataType: "date",
-                width: 100,
-                validationRules: [{
-                    type: "required"
-                }]
             }, {
                 dataField: "HireDate", 
                 dataType: "date",
-                width: 100,
-                validationRules: [{
-                    type: "required"
-                }]
-            }, "City", "State", {
-                dataField: "Email",
-                visible: false
-            }, "MobilePhone", "Skype"],
+            }, "City", "State", "Email", "MobilePhone", "Skype"],
             allowColumnReordering: true
         });
     });
@@ -45,31 +23,19 @@ To reorder columns, change their order in the **columns** array. Users can also 
     <!-- tab: app.component.html -->
     <dx-tree-list ...
         [allowColumnReordering]="true">
-        <dxi-column dataField="FullName" [fixed]="true">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column dataField="Position">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
+        <dxi-column dataField="FullName"></dxi-column>
+        <dxi-column dataField="Position"></dxi-column>
         <dxi-column
             dataField="BirthDate"
-            dataType="date"
-            [width]="100">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
+            dataType="date">
         </dxi-column>
         <dxi-column
             dataField="HireDate"
-            dataType="date"
-            [width]="100">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
+            dataType="date">
         </dxi-column>
         <dxi-column dataField="City"></dxi-column>
-        <dxi-column
-            dataField="State"
-            sortOrder="asc">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column dataField="Email" [visible]="false"></dxi-column>
+        <dxi-column dataField="State"></dxi-column>
+        <dxi-column dataField="Email"></dxi-column>
         <dxi-column dataField="MobilePhone"></dxi-column>
         <dxi-column dataField="Skype"></dxi-column>
     </dx-tree-list>
@@ -81,31 +47,19 @@ To reorder columns, change their order in the **columns** array. Users can also 
         <div id="app-container">
             <DxTreeList ...
                 :allow-column-reordering="true">
-                <DxColumn data-field="FullName" :fixed="true">
-                    <DxRequiredRule />
-                </DxColumn>
-                <DxColumn data-field="Position">
-                    <DxRequiredRule />
-                </DxColumn>
+                <DxColumn data-field="FullName"" />
+                <DxColumn data-field="Position" />
                 <DxColumn
                     data-field="BirthDate"
-                    data-type="date"
-                    :width="100">
-                    <DxRequiredRule />
+                    data-type="date">
                 </DxColumn>
                 <DxColumn
                     data-field="HireDate"
-                    data-type="date"
-                    :width="100">
-                    <DxRequiredRule />
+                    data-type="date">
                 </DxColumn>
                 <DxColumn data-field="City" />
-                <DxColumn
-                    data-field="State"
-                    sort-order="asc">
-                    <DxRequiredRule />
-                </DxColumn>
-                <DxColumn data-field="Email" :visible="false" />
+                <DxColumn data-field="State" />
+                <DxColumn data-field="Email" />
                 <DxColumn data-field="MobilePhone" />
                 <DxColumn data-field="Skype" />
             </DxTreeList>
@@ -145,31 +99,19 @@ To reorder columns, change their order in the **columns** array. Users can also 
             <div className="App">
                 <TreeList ...
                     allowColumnReordering={true}>
-                    <Column dataField="FullName">
-                        <RequiredRule />
-                    </Column>
-                    <Column dataField="Position">
-                        <RequiredRule />
-                    </Column>
+                    <Column dataField="FullName" />
+                    <Column dataField="Position" />
                     <Column
                         dataField="BirthDate"
-                        dataType="date"
-                        width={100}>
-                        <RequiredRule />
+                        dataType="date">
                     </Column>
                     <Column
                         dataField="HireDate"
-                        dataType="date"
-                        width={100}>
-                        <RequiredRule />
+                        dataType="date">
                     </Column>
                     <Column dataField="City" />
-                    <Column
-                        dataField="State"
-                        sortOrder="asc">
-                        <RequiredRule />
-                    </Column>
-                    <Column dataField="Email" visible={false} />
+                    <Column dataField="State" />
+                    <Column dataField="Email" />
                     <Column dataField="MobilePhone" />
                     <Column dataField="Skype" />
                 </TreeList>

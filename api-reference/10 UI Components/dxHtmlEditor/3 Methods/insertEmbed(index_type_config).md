@@ -52,4 +52,73 @@ An embedded format's [value](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Do
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor :ref="htmlEditorRefKey">
+            <!-- ... -->
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxHtmlEditor from 'devextreme-vue/html-editor';
+
+    const htmlEditorRefKey = "my-html-editor";
+
+    export default {
+        components: {
+            DxHtmlEditor
+        },
+        data() {
+            return {
+                htmlEditorRefKey
+            }
+        },
+        methods: {
+            insertImageAtTheBeginning() {
+                // Makes the first five characters bold and underlined
+                this.htmlEditor.insertEmbed(0, "extendedImage", {
+                    src: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                    alt: "Photo",
+                    width: "100px"
+                });
+            }
+        },
+        computed: {
+            htmlEditor: function() {
+                return this.$refs[htmlEditorRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const htmlEditor = useRef(null);
+        
+        const insertImageAtTheBeginning = () => {
+            // Makes the first five characters bold and underlined
+            htmlEditor.current.instance.insertEmbed(0, "extendedImage", {
+                src: "https://js.devexpress.com/Content/images/doc/20_2/PhoneJS/person1.png",
+                alt: "Photo",
+                width: "100px"
+            });
+        };
+
+        return (
+            <HtmlEditor ref={htmlEditor}>
+                {/* */}
+            </HtmlEditor>
+        );
+    }
+
 ---

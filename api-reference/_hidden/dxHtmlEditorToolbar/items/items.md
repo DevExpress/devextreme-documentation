@@ -27,7 +27,13 @@ The toolbar provides [predefined items](/concepts/05%20Widgets/HtmlEditor/20%20T
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar [items]="[ 'bold', 'italic', 'alignCenter', 'undo', 'redo' ]"></dxo-toolbar>
+        <dxo-toolbar>
+            <dxi-item formatName="bold"></dxi-item>
+            <dxi-item formatName="italic"></dxi-item>
+            <dxi-item formatName="alignCenter"></dxi-item>
+            <dxi-item formatName="undo"></dxi-item>
+            <dxi-item formatName="redo"></dxi-item>
+        </dxo-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->
@@ -43,6 +49,63 @@ The toolbar provides [predefined items](/concepts/05%20Widgets/HtmlEditor/20%20T
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <DxToolbar>
+                <DxItem format-name="bold" />
+                <DxItem format-name="italic" />
+                <DxItem format-name="alignCenter" />
+                <DxItem format-name="undo" />
+                <DxItem format-name="redo" />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxHtmlEditor, {
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor, {
+        Toolbar,
+        Item
+    } from 'devextreme-react/html-editor';
+
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item formatName="bold" />
+                    <Item formatName="italic" />
+                    <Item formatName="alignCenter" />
+                    <Item formatName="undo" />
+                    <Item formatName="redo" />
+                </Toolbar>
+            </HtmlEditor>
+        );
+    }
 
 ##### ASP.NET MVC Controls
 
@@ -82,15 +145,25 @@ Most of the predefined items are buttons. To customize a button, assign its name
 
 #####Angular
 
+    <!--HTML-->
+    <dx-html-editor>
+        <dxo-toolbar [items]="items">
+            <!-- ... -->
+            <dxi-item
+                formatName="clear"
+                [options]="clearFormatOptions">
+            </dxi-item>
+        </dxo-toolbar>
+    </dx-html-editor>
+
     <!--TypeScript-->
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        items: any = [ // ...
-        { 
-            formatName: "clear", 
-            options: { icon: "clear", type: "danger" }
-        }];
+        clearFormatOptions = {
+            icon: "clear",
+            type: "danger"
+        };
     }
     @NgModule({
         imports: [
@@ -100,10 +173,74 @@ Most of the predefined items are buttons. To customize a button, assign its name
         // ...
     })
 
-    <!--HTML-->
-    <dx-html-editor>
-        <dxo-toolbar [items]="items"></dxo-toolbar>
-    </dx-html-editor>
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <DxToolbar>
+                <!-- ... -->
+                <DxItem
+                    format-name="clear"
+                    :options="clearFormatOptions"
+                />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxHtmlEditor, {
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                clearFormatOptions: {
+                    icon: "clear",
+                    type: "danger"
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor, {
+        Toolbar,
+        Item
+    } from 'devextreme-react/html-editor';
+    
+    const clearFormatOptions = {
+        icon: "clear",
+        type: "danger"
+    };
+    
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    </* ... */}
+                    <Item
+                        formatName="clear"
+                        options={clearFormatOptions}
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
+    }
 
 ##### ASP.NET MVC Controls
 

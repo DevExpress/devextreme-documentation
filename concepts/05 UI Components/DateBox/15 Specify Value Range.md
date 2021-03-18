@@ -135,7 +135,7 @@ If an entered value falls out of the range, the UI component displays an error m
     <!-- tab: App.vue -->
     <template>
         <DxDateBox
-            :value="2015/12/31"
+            value="2015/12/31"
             type="date"
             min="2015/1/1"
             max="2015/12/31"
@@ -148,10 +148,8 @@ If an entered value falls out of the range, the UI component displays an error m
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
-    // ...
     export default {
         components: {
-            // ...
             DxDateBox
         }
     }
@@ -165,12 +163,11 @@ If an entered value falls out of the range, the UI component displays an error m
     import 'devextreme/dist/css/dx.light.css';
 
     import DateBox from 'devextreme-react/date-box';
-    // ...
     class App extends React.Component {
         render() {
             return (
                 <DateBox
-                    value="2015/12/31"
+                    defaultValue="2015/12/31"
                     type="date"
                     min="2015/1/1"
                     max="2015/12/31"

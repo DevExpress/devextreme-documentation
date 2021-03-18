@@ -1,6 +1,6 @@
 The **List** displays data from a local or remote data storage and allows users to group, select, search, reorder, and delete items.
 
-In this tutorial, you will learn how to add a **List** to a page, bind it to data, and configure its core features. The following control demonstrates the customization result:
+This tutorial explains how to add a **List** to a page, bind it to data, and configure its core features. The following control demonstrates the result:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/List/index.html, /Content/Applications/20_2/GettingStartedWith/List/index.js, /Content/Applications/20_2/GettingStartedWith/List/index.css"></div>
 

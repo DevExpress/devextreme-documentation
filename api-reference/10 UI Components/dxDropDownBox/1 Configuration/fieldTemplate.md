@@ -112,33 +112,24 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
 ##### Vue
 
     <template>
-        <DxDropDownBox
-            :field-template="fieldTemplate"
-        />
+        <DxDropDownBox...>
+            <template #field="{value}">
+                <div class="custom-item">
+                    <DxTextBox
+                        :value="value"
+                        :read-only="true"
+                    />
+                </div>
+            </template>
+        </DxDropDownBox>
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
 
-    import { DxDropDownBox } from 'devextreme-vue/drop-down-box';
-
-    export default {
-        components: {
-            DxDropDownBox
-        },
-        methods: {
-            fieldTemplate(value, fieldElement) {
-                const result = $('<div class="custom-item">');
-                result
-                    .dxTextBox({
-                        value: value,
-                        readOnly: true
-                    });
-                fieldElement.append(result);
-            }
-        }
-    }
+        import DxDropDownBox from 'devextreme-vue/drop-down-box';
+        import DxTextBox from 'devextreme-vue/text-box';
     </script>
 
 ##### React
@@ -148,18 +139,20 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
     import 'devextreme/dist/css/dx.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
+    import { TextBox } from 'devextreme-react/text-box';
 
-    const fieldTemplate = (value, fieldElement) => {
-        const result = $('<div class="custom-item">');
-        result
-            .dxTextBox({
-                value: value,
-                readOnly: true
-            });
-        fieldElement.append(result);
+    const fieldRender = value => {
+        return (
+            <div class="custom-item">
+                <TextBox
+                    defaultValue={value}
+                    readOnly={true}
+                />
+            </div>
+        );
     }
 
-    const App = () => <DropDownBox fieldTemplate={fieldTemplate}/>;
+    const App = () => <DropDownBox fieldRender={fieldRender}/>;
 
     export default App;
 

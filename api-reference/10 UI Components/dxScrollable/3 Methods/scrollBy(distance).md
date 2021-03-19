@@ -5,7 +5,7 @@ id: dxScrollable.scrollBy(distance)
 ##### shortDescription
 Scrolls the content by a specific distance.
 
-##### param(distance): Number
+##### param(distance): Number | Object
 The distance in pixels.
 
 ---

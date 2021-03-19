@@ -30,7 +30,7 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!--tab: index.js -->
     $(function () {
         $("#dropDownBoxContainer").dxDropDownBox({
             // ...
@@ -46,14 +46,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         });
     });
 
-    <!--CSS-->
+    <!--tab: style.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-drop-down-box ...
         fieldTemplate="field">
         <div *dxTemplate="let data of 'field'">
@@ -66,14 +66,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         </div>
     </dx-drop-down-box>
 
-    <!--CSS-->
+    <!-- tab: app.component.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### AngularJS
 
-    <!--HTML-->
+    <!-- tab: index.html -->
     <div dx-drop-down-box="{
         ...
         fieldTemplate: 'field'
@@ -85,14 +85,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         </div>
     </div>
 
-    <!--CSS-->
+    <!-- tab: style.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### Knockout
 
-    <!--HTML-->
+    <!-- tab: index.html -->
     <div data-bind="dxDropDownBox: {
         ...
         fieldTemplate: 'field'
@@ -104,13 +104,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         </div>
     </div>
 
-    <!--CSS-->
+    <!-- tab: style.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxDropDownBox...>
             <template #field="{value}">
@@ -132,8 +133,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         import DxTextBox from 'devextreme-vue/text-box';
     </script>
 
+    <!-- tab: style.css -->
+    .custom-item {
+        font-size: 16px;
+    }
+
 ##### React
 
+    <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
@@ -155,6 +162,11 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
     const App = () => <DropDownBox fieldRender={fieldRender}/>;
 
     export default App;
+
+    <!-- tab: style.css -->
+    .custom-item {
+        font-size: 16px;
+    }
 
 ---
 

@@ -28,64 +28,19 @@ The data of the row that should be inserted.
 Model data. Available only if you use Knockout.
 
 ---
-[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be inserted.
 
-The following code shows how to use the function parameter's **cancel** field to prevent or continue row insertion. In this code, a Promise is assigned to this field. Row insertion continues if row data validation on the server succeeds (the Promise is resolved); otherwise, row insertion is prevented (the Promise is rejected).
+This function allows you to intercept row insertion and perform additional actions. The following code shows how to use the function parameter's **cancel** field to prevent or continue row insertion. In this code, a Promise is assigned to this field. Row insertion continues if a user confirms it and row data validation on the server succeeds (the Promise is resolved); otherwise, row insertion is prevented (the Promise is rejected):
 
----
-#####jQuery
+#include datagrid-ref-confirm-action-and-validate-data with {
+    apiMember: "onRowInserting",
+    functionName: "insertRow",
+    vueAttribute: "row-inserting"
+}
 
-    <!--JavaScript-->
-    $(function(){
-        $("#{widgetName}Container").dx{WidgetName}({
-            // ...
-            onRowInserting: function(e) {
-                var d = $.Deferred();
-                $.getJSON("https://url/to/your/validation/service", JSON.stringify(e.data))
-                    .then(function(result) {
-                        return !result.errorText ? d.resolve() : d.reject(result.errorText);
-                    })
-                    .fail(function() { 
-                        return.reject(); 
-                    })
-                e.cancel = d.promise();
-            }
-        })
-    })
+[note]
 
-#####Angular
+- Do not use this function to insert data. If you need a custom insert logic, implement [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [insert](Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function.
 
-    <!--TypeScript-->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
-    import "rxjs/add/operator/toPromise";
-    // ...
-    export class AppComponent {
-        constructor(private httpClient: HttpClient) { /*...*/}
-        onRowInserting(e) {
-            let params = new HttpParams({ fromString: JSON.stringify(e.data) });
-            let result = this.httpClient.get("https://url/to/your/validation/service", { params: params })
-                .toPromise();
-            e.cancel = new Promise((resolve, reject) => {
-                result.then((validationResult) => {
-                    !validationResult.errorText ? resolve() : reject(validationResult.errorText)
-                })
-                .catch(() => reject());
-            })    
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module,
-            HttpClientModule
-        ],
-        // ...
-    })
+- In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be inserted.
 
-    <!--HTML-->
-    <dx-{widget-name} ... 
-        (onRowInserting)="onRowInserting($event)">
-    </dx-{widget-name}>
-
----
+[/note]

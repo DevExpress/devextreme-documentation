@@ -335,3 +335,5 @@ Once you assign the data source, you need to map field values to appointment att
 ---
 
 Run the code and ensure that the Scheduler properly displays all appointments.
+
+[tags] data binding

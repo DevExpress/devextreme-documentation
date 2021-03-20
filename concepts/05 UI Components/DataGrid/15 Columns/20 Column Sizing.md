@@ -94,7 +94,7 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     
 ---
 
-Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth'') property to **true** to make all columns adjust their widths to their content.
+Set the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth') property to **true** to make all columns adjust their widths to their content.
 
 ---
 ##### jQuery

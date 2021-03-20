@@ -6,7 +6,7 @@ The **agenda** view lists all available appointments grouped by date. This view 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/"
 }
 
-By default, the **agenda** view displays appointments for seven dates at a time from the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate'') onward. To change the number of dates, specify the [agendaDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#agendaDuration') property. For details on individual views customization, see [this topic](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/').
+By default, the **agenda** view displays appointments for seven dates at a time from the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') onward. To change the number of dates, specify the [agendaDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#agendaDuration') property. For details on individual views customization, see [this topic](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/').
 
 ---
 
@@ -106,6 +106,6 @@ If you [group appointmetns by resources](/concepts/05%20UI%20Components/Schedule
 
 #####See Also#####
 - [Scheduler - Customize Individual Views](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/')
-- [Scheduler - Appointments](/Documentation/Guide/UI_Components/Scheduler/Appointments/)
+- [Scheduler - Appointments](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/010%20One-Time%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/')
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

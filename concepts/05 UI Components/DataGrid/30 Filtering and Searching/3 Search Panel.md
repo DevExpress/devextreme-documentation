@@ -2,7 +2,7 @@ The search panel allows searching for values in several columns at once. Search 
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid SearchPanel](/images/DataGrid/visual_elements/search_panel.png)
 
-To make the search panel visible, assign **true** to the [searchPanel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel '/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/'').**visible** property. You can set a column's [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowSearch') property to **false** if it should be excluded from searching. Note that this property inherits the [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFiltering') property's value by default.
+To make the search panel visible, assign **true** to the [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/').**visible** property. You can set a column's [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowSearch') property to **false** if it should be excluded from searching. Note that this property inherits the [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFiltering') property's value by default.
 
 ---
 ##### jQuery
@@ -103,7 +103,7 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
 ---
 
 
-Use the **searchPanel**.[text](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/searchPanel/text.md '/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/'#text') property to predefine the search value. You can also change it at runtime by calling the [searchByText(text)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/searchByText(text).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#searchByTexttext') method:
+Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel/text.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#text') property to predefine the search value. You can also change it at runtime by calling the [searchByText(text)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/searchByText(text).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#searchByTexttext') method:
 
 ---
 ##### jQuery

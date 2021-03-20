@@ -226,7 +226,7 @@ If your data is an array of objects, specify:
 - [Lookup - Configure Search Parameters](/concepts/05%20UI%20Components/Lookup/05%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Lookup/Configure_Search_Parameters/')
 - [Lookup - Enable Grouping](/concepts/05%20UI%20Components/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
 - [Lookup - Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
-- [Lookup - Customize the Appearance](/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/)
+- [Lookup - Customize the Appearance](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
 - [Lookup - Handle the Value Change Event](/concepts/05%20UI%20Components/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Lookup/Handle_the_Value_Change_Event/')
 - [Lookup API Reference](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
 - [Lookup vs SelectBox](/concepts/05%20UI%20Components/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')

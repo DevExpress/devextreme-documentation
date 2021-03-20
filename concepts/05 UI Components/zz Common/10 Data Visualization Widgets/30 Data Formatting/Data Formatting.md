@@ -10,7 +10,7 @@ Chart and PolarChart
 PieChart
 
 - [legend items](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/legend/')       
-- [point labels](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/'')     
+- [point labels](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/')     
 - [tooltips](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/')     
 
 TreeMap       

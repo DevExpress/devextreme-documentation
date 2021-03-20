@@ -12,7 +12,7 @@ A date and time to scroll to.
 An appointment group (optional).
 
 ##### param(allDay): Boolean | undefined
-If **true**, scrolls the view to the all-day panel of the specified group. Applies only if the all-day panel is [visible](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#showAllDayPanel).
+If **true**, scrolls the view to the all-day panel of the specified group. Applies only if the all-day panel is [visible](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/showAllDayPanel.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#showAllDayPanel').
 
 ---
 
@@ -29,7 +29,7 @@ The following example shows how to use this method:
 
 #####See Also#####
 #include common-link-callmethods
-- [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/)
+- [Group Appointments by Resources](/concepts/05%20UI%20Components/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/')
 - [currentView](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentView.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView')
 - [scrolling](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/scrolling.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/scrolling/')
 - [crossScrollingEnabled](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/crossScrollingEnabled.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#crossScrollingEnabled')

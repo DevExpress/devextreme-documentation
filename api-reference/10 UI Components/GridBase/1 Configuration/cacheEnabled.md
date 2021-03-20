@@ -16,4 +16,4 @@ To update data in cache, call the [refresh()](/api-reference/10%20UI%20Component
 
 #####See Also#####
 - [Data Caching](/concepts/05%20UI%20Components/DataGrid/05%20Data%20Binding/35%20Data%20Caching.md '/Documentation/Guide/UI_Components/DataGrid/Data_Binding/Data_Caching/')
-- [getDataSource()](/api-reference/10%20UI%20Widgets/DataHelperMixin/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource')
+- [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource')

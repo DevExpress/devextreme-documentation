@@ -250,6 +250,6 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 ---
 
 #####See Also#####
-- [Grouping](/Documentation/Guide/UI_Components/List/Grouping/)
+- [Grouping](/concepts/05%20UI%20Components/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/')
 
 [tags]list, collection UI component, search, search mode, search expression

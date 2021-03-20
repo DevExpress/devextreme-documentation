@@ -212,6 +212,6 @@ In addition, you can use a 3rd-party template engine to perform the needed custo
 
 #####See Also#####
 - [TagBox - Customize Item Appearance](/concepts/05%20UI%20Components/TagBox/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/TagBox/Customize_Item_Appearance/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
+- [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 
 [tags]tagBox, group headers appearance, customize, templates, template

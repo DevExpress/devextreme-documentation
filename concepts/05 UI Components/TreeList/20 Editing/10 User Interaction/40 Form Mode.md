@@ -240,7 +240,7 @@ In the following code, the items with the specified **dataField** are simple ite
 ---
 
 #####See Also#####
-- [Organize Simple Items](/Documentation/Guide/UI_Components/Form/Organize_Simple_Items)
+- [Organize Simple Items](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/01%20Create%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items')
 
 You can use a column's [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#formItem') object to customize an individual simple item. See an example in its description. 
 

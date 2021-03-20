@@ -156,7 +156,7 @@ If you need to specify other Toast properties, call the same method, but this ti
 
 ---
 
-If you are going to reuse the Toast, then create it on the page using the following code. Note that in this code, the [Button](/Documentation/ApiReference/UI_Components/dxButton/) UI component invokes the Toast.
+If you are going to reuse the Toast, then create it on the page using the following code. Note that in this code, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component invokes the Toast.
 
 ---
 ##### jQuery

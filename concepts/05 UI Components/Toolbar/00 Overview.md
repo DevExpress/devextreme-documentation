@@ -4,7 +4,7 @@ The Toolbar is a UI component containing items that usually manage screen conten
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview/"
 }
 
-The following code adds a simple Toolbar to your page. Three items are plain text and one is a [Button](/Documentation/Guide/UI_Components/Button/) UI component. 
+The following code adds a simple Toolbar to your page. Three items are plain text and one is a [Button](/concepts/05%20UI%20Components/Button/00%20Getting%20Started%20with%20Button/02%20Create%20a%20Button.md '/Documentation/Guide/UI_Components/Button/') UI component. 
 
 ---
 ##### jQuery

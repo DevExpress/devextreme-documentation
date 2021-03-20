@@ -1,4 +1,4 @@
-The Chart is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/Documentation/Guide/UI_Components/Chart/Series_Types/).
+The Chart is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/').
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/ChartOverview/chartExample.html, /Content/Applications/21_1/DataVisualization/Guides/ChartOverview/chartExample.js"></div>
 
@@ -13,7 +13,7 @@ The next step is to configure the most essential chart elements - series and axe
 
 - [Bind Series to Data](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/')
 - [Series Overview](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/')
-- [Series Types](/Documentation/Guide/UI_Components/Chart/Series_Types/)
+- [Series Types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/')
 - [Series Points](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/')
 - [Point Labels](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Overview/')
 - [Axes](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/')

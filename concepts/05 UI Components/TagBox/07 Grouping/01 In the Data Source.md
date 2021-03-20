@@ -497,6 +497,6 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 
 #####See Also#####
 - [TagBox - Grouping | Customize Group Headers](/concepts/05%20UI%20Components/TagBox/07%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/UI_Components/TagBox/Grouping/Customize_Group_Headers/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
+- [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 
 [tags]tagBox, grouped, key, items, group items, map items

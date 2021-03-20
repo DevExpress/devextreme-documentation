@@ -234,6 +234,6 @@ If your data is an array of objects, specify:
 - [TagBox - Configure Search Parameters](/concepts/05%20UI%20Components/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/TagBox/Configure_Search_Parameters/')
 - [TagBox - Create a User-Defined Item](/concepts/05%20UI%20Components/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/TagBox/Create_a_User-Defined_Item/')
 - [TagBox - Keyboard Support](/concepts/05%20UI%20Components/TagBox/25%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/TagBox/Keyboard_Support/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
+- [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 
 [tags]dxtagbox, tagBox, tag box, editor, overview, data source, value, display expression

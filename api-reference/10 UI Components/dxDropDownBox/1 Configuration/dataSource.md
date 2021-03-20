@@ -10,5 +10,5 @@ default: null
 
     additional_data_binding_actions: "If the element embedded in the DropDownBox UI component is another DevExtreme UI component, their data sources should be interrelated. Refer to the [Synchronize with the Embedded Element](/concepts/05%20UI%20Components/DropDownBox/15%20Synchronize%20with%20the%20Embedded%20Element.md '/Documentation/Guide/UI_Components/DropDownBox/Synchronize_with_the_Embedded_Element/') article for more information.",
 
-    dataSource_items_note: "- Do not specify the [items](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '{basewidgetpath}/Configuration/items/') property if you specified the **dataSource**, and vice versa."
+    dataSource_items_note: "- Do not specify the [items](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/items.md '{basewidgetpath}/Configuration/items/') property if you specified the **dataSource**, and vice versa."
 }

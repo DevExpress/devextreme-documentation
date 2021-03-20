@@ -23,7 +23,7 @@ If the **items** property contains definition for form items, you usually do not
 - [Tabbed](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/')  
  An item representing a tabbed container of other form items.
 
-- [Empty](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/EmptyItem '/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/'')  
+- [Empty](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/')  
  An empty item used to add a space between neighboring form items.
 
 

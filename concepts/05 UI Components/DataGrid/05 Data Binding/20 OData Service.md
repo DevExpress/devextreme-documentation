@@ -100,7 +100,7 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 
 Using the following features with the **ODataStore** may decrease the performance because they initiate data loading for all pages:
 
-- [summary calculation](/Documentation/Guide/UI_Components/DataGrid/Summaries/)
+- [summary calculation](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/05%20Predefined%20Aggregate%20Functions.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/')
 - [grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') with the [autoExpandAll](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll') property set to **false**
 - a [header filter](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll') with the default data source
 

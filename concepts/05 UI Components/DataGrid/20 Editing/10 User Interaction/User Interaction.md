@@ -1,6 +1,6 @@
-Users can add, delete, and update grid data. To enable these operations, assign **true** to the corresponding fields of the [editing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing '/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/'') object. You can set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing') property to **false** if its data should not be edited.
+Users can add, delete, and update grid data. To enable these operations, assign **true** to the corresponding fields of the [editing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/') object. You can set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing') property to **false** if its data should not be edited.
 
-Grid data can be edited in several modes. Set the **editing**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/editing/mode.md '/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/'#mode') property to specify the mode.
+Grid data can be edited in several modes. Set the **editing**.[mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode') property to specify the mode.
 
 ---
 ##### jQuery

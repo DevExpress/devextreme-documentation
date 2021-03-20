@@ -457,7 +457,7 @@ The TagBox UI component starts searching after a user has typed at least one cha
 - [TagBox - Create a User-Defined Item](/concepts/05%20UI%20Components/TagBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/TagBox/Create_a_User-Defined_Item/')
 - [TagBox - Control the Behavior](/concepts/05%20UI%20Components/TagBox/03%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TagBox/Control_the_Behavior/')
 - [TagBox - Handle the Value Change Event](/concepts/05%20UI%20Components/TagBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TagBox/Handle_the_Value_Change_Event/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
+- [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
 [tags]tagBox, tag box, editor, search, search mode, search expression, time interval, delay, search timeout, min search length

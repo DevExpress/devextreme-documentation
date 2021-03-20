@@ -4,7 +4,7 @@ The LoadPanel is an overlay UI component notifying the viewer that loading is in
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"
 }
 
-The following code adds to your page a simple LoadPanel and a [Button](/Documentation/ApiReference/UI_Components/dxButton/) that invokes it. The [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick') property set to **true** instructs the LoadPanel to hide once a user clicks outside it.
+The following code adds to your page a simple LoadPanel and a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') that invokes it. The [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick') property set to **true** instructs the LoadPanel to hide once a user clicks outside it.
 
 ---
 ##### jQuery
@@ -147,7 +147,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/Document
 #####See Also#####
 #include common-link-configurewidget
 - [LoadPanel - Show and Hide Using the API](/concepts/05%20UI%20Components/LoadPanel/05%20Show%20and%20Hide%20Using%20the%20API.md '/Documentation/Guide/UI_Components/LoadPanel/Show_and_Hide_Using_the_API/')
-- [LoadPanel - Customize the Appearance](/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/)
+- [LoadPanel - Customize the Appearance](/concepts/05%20UI%20Components/LoadPanel/10%20Customize%20the%20Appearance/10%20Customize%20the%20Loading%20Indicator.md '/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/')
 - [LoadPanel - Resize and Relocate](/concepts/05%20UI%20Components/LoadPanel/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/LoadPanel/Resize_and_Relocate/')
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 

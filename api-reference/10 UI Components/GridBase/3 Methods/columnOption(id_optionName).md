@@ -17,4 +17,4 @@ The property's name.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [columns](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/')
+- [columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/')

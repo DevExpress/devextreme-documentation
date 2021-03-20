@@ -267,7 +267,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
 
     ---
 
-This method works only when **paging**.[enabled](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/paging/enabled.md '{basewidgetpath}/Configuration/paging/#enabled') is **false** or when **dataSource**.[reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') is **true** and [remoteOperations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/') is **false**.
+This method works only when **paging**.[enabled](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/paging/enabled.md '{basewidgetpath}/Configuration/paging/#enabled') is **false** or when **dataSource**.[reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') is **true** and [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/') is **false**.
 
 #####See Also#####
 #include common-link-callmethods

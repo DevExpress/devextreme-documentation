@@ -1,7 +1,7 @@
 The Diagram component allows you to specify default settings for its items in the following ways:
 
 * Specify settings contained in the [defaultItemProperties](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/defaultItemProperties '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/') property.
-* Specify data-binding expressions contained in the [edges](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/') and [nodes](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/) properties to define common settings for data-bound edges and nodes.
+* Specify data-binding expressions contained in the [edges](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/') and [nodes](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/') properties to define common settings for data-bound edges and nodes.
 
 ---
 ##### jQuery

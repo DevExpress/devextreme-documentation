@@ -1,8 +1,5 @@
 ---
-id: dxSVGElement
-type: SVGElement | jQuery
-hidden: 
-dep: TElement
+id: TEvent
 ---
 ---
 ##### shortDescription

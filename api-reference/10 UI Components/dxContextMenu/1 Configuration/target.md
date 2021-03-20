@@ -1,6 +1,6 @@
 ---
 id: dxContextMenu.Options.target
-type: String | Element | jQuery
+type: String | TElement
 default: undefined
 ---
 ---

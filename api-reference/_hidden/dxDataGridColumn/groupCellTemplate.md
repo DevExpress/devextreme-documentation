@@ -65,9 +65,9 @@ Group cells display the following data:
 
 * The caption and the value of the column by which data is grouped
 
-* [Group summary items](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/)
+* [Group summary items](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/')
 
-* [groupContinuesMessage](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuesMessage) and [groupContinuedMessage](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage) (if the group is spread across two or more pages)
+* [groupContinuesMessage](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/texts/groupContinuesMessage.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuesMessage') and [groupContinuedMessage](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/texts/groupContinuedMessage.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage') (if the group is spread across two or more pages)
 
 The following example shows how to display column value only:
 
@@ -159,7 +159,7 @@ The following example shows how to display column value only:
 
 The following details should be taken into account when you use a **groupCellTemplate**:
 
-- When the DataGrid is [exported](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell') function.
+- When the DataGrid is [exported](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/'), it omits customizations made in the template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell') function.
 
 - In [fixed columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
 

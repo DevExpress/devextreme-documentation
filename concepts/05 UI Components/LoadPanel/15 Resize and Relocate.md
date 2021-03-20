@@ -305,7 +305,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
 This configuration of the **position** property reads as follows: "place **my** _left_ side **at** the _left_ **of** the *"#targetElement"*.
 
 #####See Also#####
-- [Customize the Appearance](/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/)
+- [Customize the Appearance](/concepts/05%20UI%20Components/LoadPanel/10%20Customize%20the%20Appearance/10%20Customize%20the%20Loading%20Indicator.md '/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/')
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
 
 [tags]loadPanel, load panel, overlay, size, height, width, position

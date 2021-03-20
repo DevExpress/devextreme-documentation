@@ -17,7 +17,7 @@ You can create a diagram layout based on shape coordinates maintained in a data 
 
 If you bind a Diagram to an array of edges, you can specify a shape's connection point where an edge begins ([fromPointIndexExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/fromPointIndexExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#fromPointIndexExpr')) and ends ([toPointIndexExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/toPointIndexExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#toPointIndexExpr')) and provide additional points for connectors with the [pointsExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/pointsExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#pointsExpr') property.
 
-Shape and edge point coordinates are specified in [units](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/units.md '/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units'').
+Shape and edge point coordinates are specified in [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units').
 
 [note]
 
@@ -85,4 +85,4 @@ If the [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Confi
       },
     ];
 
-The Diagram UI component reloads the diagram every time the data source changes. The [onRequestLayoutUpdate](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#onRequestLayoutUpdate) function is executed after diagram data is reloaded and allows you to specify whether the UI component should update the diagram layout.
+The Diagram UI component reloads the diagram every time the data source changes. The [onRequestLayoutUpdate](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/onRequestLayoutUpdate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#onRequestLayoutUpdate') function is executed after diagram data is reloaded and allows you to specify whether the UI component should update the diagram layout.

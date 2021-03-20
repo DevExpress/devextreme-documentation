@@ -11,7 +11,7 @@ Hover-related marker settings reside in its [layer](/api-reference/10%20UI%20Com
 		}]
 	};
 
-Being set directly in the marker **layer**, the color-specifying properties are applied to all map markers at once. To set these properties for a specific marker, specify them within the object returned by the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize'') function. When implementing this function, use the [Layer Element](/api-reference/10%20UI%20Components/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') object to identify the marker. This object is accessible using the function's argument as well as using the **this** object.
+Being set directly in the marker **layer**, the color-specifying properties are applied to all map markers at once. To set these properties for a specific marker, specify them within the object returned by the [customize](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') function. When implementing this function, use the [Layer Element](/api-reference/10%20UI%20Components/dxVectorMap/7%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') object to identify the marker. This object is accessible using the function's argument as well as using the **this** object.
 
 	<!--JavaScript-->var vectorMapCfg = {
 		// ...

@@ -1,7 +1,7 @@
 By default, the UI component aligns all editors of all simple items in straight columns. To disable alignment, assign **false** to:
 
-- [alignItemLabels](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/alignItemLabels.md '/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabels'') - for all _root_ simple items;
-- [alignItemLabelsInAllGroups](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/alignItemLabelsInAllGroups.md '/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabels'InAllGroups') - for all simple items nested _in all groups_;
+- [alignItemLabels](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabels') - for all _root_ simple items;
+- [alignItemLabelsInAllGroups](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabelsInAllGroups.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabelsInAllGroups') - for all simple items nested _in all groups_;
 - **Group Item**.[alignItemLabels](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#alignItemLabels') - for simple items nested _in a specific group_;
 - **Tabbed Item**.**tabs[]**.[alignItemLabels](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabs/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#alignItemLabels') - for simple items nested _in a specific tab_.
 

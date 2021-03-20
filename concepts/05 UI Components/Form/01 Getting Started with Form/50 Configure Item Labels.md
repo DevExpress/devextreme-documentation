@@ -3,11 +3,11 @@ You can configure individual labels in the [label](/api-reference/10%20UI%20Comp
 The following properties apply to all labels in the Form:
 
 - [alignItemLabels](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabels')
-- [alignItemLabelsInAllGroups](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabels.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabels'InAllGroups)
-- [labelLocation](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelLocation)
-- [showColonAfterLabel](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showColonAfterLabel)
+- [alignItemLabelsInAllGroups](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/alignItemLabelsInAllGroups.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#alignItemLabelsInAllGroups')
+- [labelLocation](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/labelLocation.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelLocation')
+- [showColonAfterLabel](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/showColonAfterLabel.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showColonAfterLabel')
 
-The following code shows how to configure the **labelLocation** property to place labels on top of editors. The example sets the **label**.[alignment](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/'#alignment) property to align the `Notes` item label's text to the center:
+The following code shows how to configure the **labelLocation** property to place labels on top of editors. The example sets the **label**.[alignment](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label/alignment.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#alignment') property to align the `Notes` item label's text to the center:
 
 ![DevExtreme Form: Item Labels](/images/UiWidgets/form-getting-started-configure-labels.png)
 

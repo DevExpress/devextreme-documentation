@@ -51,4 +51,4 @@ For further information on the Scheduler component, refer to the following resou
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 
-* [API Reference](/Documentation/ApiReference/UI_Components/dxScheduler/)
+* [API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

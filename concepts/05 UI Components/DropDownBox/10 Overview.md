@@ -4,7 +4,7 @@ The DropDownBox is a UI component that consists of a text field, which displays 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/"
 }
 
-The simplest UI component configuration requires specifying a [dataSource](/api-reference/10%20UI%20Widgets/dxDropDownBox/1%20Configuration/dataSource '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dataSource'), [value](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') and [contentTemplate](/api-reference/10%20UI%20Widgets/dxDropDownBox/1%20Configuration/contentTemplate.md '/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate''). The following code adds the DropDownBox to your page: 
+The simplest UI component configuration requires specifying a [dataSource](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dataSource'), [value](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') and [contentTemplate](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate'). The following code adds the DropDownBox to your page: 
 
 ---
 

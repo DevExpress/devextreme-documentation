@@ -20,4 +20,4 @@ This function allows you to access and modify layer elements. You can use API li
 }
 
 #####See Also#####
-- [palette](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette)
+- [palette](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/palette.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#palette')

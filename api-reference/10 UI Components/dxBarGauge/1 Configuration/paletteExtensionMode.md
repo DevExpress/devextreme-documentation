@@ -6,7 +6,7 @@ default: 'blend'
 ---
 ---
 ##### shortDescription
-Specifies what to do with colors in the [palette](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge/1%20Configuration/palette.md '{basewidgetpath}/Configuration/#palette') when their number is less than the number of bars in the gauge.
+Specifies what to do with colors in the [palette](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/palette.md '{basewidgetpath}/Configuration/#palette') when their number is less than the number of bars in the gauge.
 
 ---
 #include dataviz-ref-paletteextensionmode

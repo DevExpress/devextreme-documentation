@@ -15,7 +15,7 @@ The visible index of the column to which the cell belongs.
 The cell's new value.
 
 ---
-Call [saveEditData()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/saveEditData().md '/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData'') after this method to save the changes:
+Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData') after this method to save the changes:
 
 ---
 #####jQuery

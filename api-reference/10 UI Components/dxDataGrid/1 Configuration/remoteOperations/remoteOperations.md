@@ -75,7 +75,7 @@ The following restrictions apply to UI component functionality when operations a
 
 - Columns with the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue') property set cannot be sorted, filtered, or used for grouping.
 
-- The [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue'') and [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateSortValue') properties accept only string values.
+- The [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') and [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateSortValue') properties accept only string values.
 
 - [Custom summary calculation](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/calculateCustomSummary.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#calculateCustomSummary') is not supported.
 

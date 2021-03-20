@@ -1,6 +1,6 @@
 Data modification is implemented by the store and its methods. To call them, you need a store instance that you can get using the **DataSource**'s [store()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/store().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#store') method.
 
-Stores provide three data modification methods: [insert(values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#insertvalues'), [update(key, values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/update(key_values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#updatekey_values'), and [remove(key)](/api-reference/30%20Data%20Layer/Store/3%20Methods/remove(key).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#removekey'). Use them to edit local and remote data. Call the **DataSource**'s [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method afterwards to update data in the **DataSource**.
+Stores provide three data modification methods: [insert(values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#insertvalues'), [update(key, values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/update(key_values).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#updatekey_values'), and [remove(key)](/api-reference/30%20Data%20Layer/Store/3%20Methods/remove(key).md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#removekey'). Use them to edit local and remote data. Call the **DataSource**'s [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method afterwards to update data in the **DataSource**.
 
 ---
 ##### jQuery
@@ -167,4 +167,4 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
 ---
 
 #####See Also#####
-- [Integration with Push Services](/concepts/70%20Data%20Binding/5%20Data%20Layer/3%20Data%20Modification/30%20Integration%20with%20Push%20Services.md '/concepts/70%20Data%20Binding/5%20Data%20Layer/3%20Data%20Modification/30%20Integration%20with%20Push%20Services.md '/Documentation/Guide/Data_Binding/Data_Layer/#Data_Modification/Integration_with_Push_Services'')
+- [Integration with Push Services](/concepts/70%20Data%20Binding/5%20Data%20Layer/3%20Data%20Modification/30%20Integration%20with%20Push%20Services.md '/Documentation/Guide/Data_Binding/Data_Layer/#Data_Modification/Integration_with_Push_Services')

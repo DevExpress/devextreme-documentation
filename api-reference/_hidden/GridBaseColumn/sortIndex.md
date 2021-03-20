@@ -18,7 +18,7 @@ This property accepts an integer specifying the index of the column in a collect
         // ...
     ];
 
-To sort data first by the *"Last Name"* and then by the *"First Name"* column, use the following code. Note that the [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder'') property should also be specified.
+To sort data first by the *"Last Name"* and then by the *"First Name"* column, use the following code. Note that the [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder') property should also be specified.
     
 ---
 ##### jQuery
@@ -119,4 +119,4 @@ To sort data first by the *"Last Name"* and then by the *"First Name"* column, u
     
 ---
 
-You can set the **sortIndex** property at design time to specify initial sorting, or change this property using the [columnOption](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '{basewidgetpath}/Methods/#columnOptionid_optionName_optionValue'') method to sort at runtime.
+You can set the **sortIndex** property at design time to specify initial sorting, or change this property using the [columnOption](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '{basewidgetpath}/Methods/#columnOptionid_optionName_optionValue') method to sort at runtime.

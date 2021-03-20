@@ -84,7 +84,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
     
 ---
 
-If a command column should have custom content, specify the column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate'') and [headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate'):
+If a command column should have custom content, specify the column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate') and [headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#headerCellTemplate'):
 
 ---
 ##### jQuery

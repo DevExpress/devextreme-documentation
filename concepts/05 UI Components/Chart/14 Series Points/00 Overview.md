@@ -1,4 +1,4 @@
-A series point is a visual representation of one or several data objects. Series points can have different shapes and sizes depending on the [series types](/Documentation/Guide/UI_Components/Chart/Series_Types/). 
+A series point is a visual representation of one or several data objects. Series points can have different shapes and sizes depending on the [series types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/'). 
 
 ![DevExtreme HTML5 JavaScript Charts SeriesPoints](/images/ChartJS/visual_elements/series_points.png)
 

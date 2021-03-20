@@ -11,4 +11,4 @@ A user can select rows in a single or multiple [mode](/api-reference/10%20UI%20C
 
 #####See Also#####
 - [Selection](/concepts/05%20UI%20Components/TreeList/50%20Selection '/Documentation/Guide/UI_Components/TreeList/Selection/')
-- [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onSelectionChanged.md '{basewidgetpath}/Configuration/#onSelectionChanged')
+- [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onSelectionChanged.md '{basewidgetpath}/Configuration/#onSelectionChanged')

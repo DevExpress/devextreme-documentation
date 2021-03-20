@@ -31,7 +31,7 @@ The row's key.
 Model data. Available only if you use Knockout.
 
 ---
-[note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be removed.
+[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be removed.
 
 The following code shows how to use the function parameter's **cancel** field to prevent or continue row removal. In this code, a Promise is assigned to this field. Row removal continues if checks on the server succeed (the Promise is resolved); otherwise, row removal is prevented (the Promise is rejected).
 

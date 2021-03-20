@@ -4,7 +4,7 @@ The Popup UI component is a pop-up window overlaying the current view.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/"
 }
 
-The following code adds a simple Popup to your page, along with a [Button](/Documentation/ApiReference/UI_Components/dxButton/) that invokes it. The simplest configuration of the Popup requires the content and [title](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title') to be specified. 
+The following code adds a simple Popup to your page, along with a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') that invokes it. The simplest configuration of the Popup requires the content and [title](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title') to be specified. 
 
 ---
 ##### jQuery

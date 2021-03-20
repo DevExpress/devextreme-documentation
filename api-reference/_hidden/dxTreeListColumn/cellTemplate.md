@@ -66,6 +66,6 @@ A function called when this variable changes.
 #####See Also#####
 - [Customize Cells Appearance](/concepts/05%20UI%20Components/TreeList/10%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Cells/#Customize_the_Appearance')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
-- [onCellPrepared](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellPrepared.md '{basewidgetpath}/Configuration/#onCellPrepared')
+- [onCellPrepared](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onCellPrepared.md '{basewidgetpath}/Configuration/#onCellPrepared')
 
 <!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->

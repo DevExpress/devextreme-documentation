@@ -24,7 +24,7 @@ The next page is loaded once the scrollbar reaches the end of its scale. Use thi
     name: "Remote Virtual Scrolling"
 }
 
-Use the **scrolling**.[mode](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/scrolling/mode.md '/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode'') property to specify the current scrolling mode.
+Use the **scrolling**.[mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode') property to specify the current scrolling mode.
 
 ---
 ##### jQuery

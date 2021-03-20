@@ -1,9 +1,9 @@
 DevExtreme has five drop-down text editors:
 
-- [SelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/)
-- [TagBox](/Documentation/ApiReference/UI_Components/dxTagBox/)
-- [Lookup](/Documentation/ApiReference/UI_Components/dxLookup/)
-- [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/)
+- [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
+- [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
+- [Lookup](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
+- [Autocomplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 - [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/')
 
 The following table compares the drop-down editors according to features:
@@ -23,7 +23,7 @@ The following table compares the drop-down editors according to features:
         <td><a href="/Documentation/Guide/UI_Components/TagBox/Create_a_User-Defined_Item/">Yes</a></td>
         <td>-</td>
         <td>Yes</td>
-        <td><a href="/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/'Configuration/#acceptCustomValue">Yes</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue">Yes</a></td>
     </tr>
     <tr>
         <td>Custom buttons</td>
@@ -31,7 +31,7 @@ The following table compares the drop-down editors according to features:
         <td><a href="/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/buttons/">Yes</a></td>
         <td>-</td>
         <td><a href="/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/buttons/">Yes</a></td>
-        <td><a href="/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/'Configuration/buttons/">Yes</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/buttons/">Yes</a></td>
     </tr>
     <tr>
         <td>Keyboard navigation</td>
@@ -83,7 +83,7 @@ The following table compares the drop-down editors according to features:
     </tr>
 </table>
 
-DropDownBox allows you to put any content in its drop-down field. This feature makes it more versatile but it is also more complex to implement. For instance, you can embed another DevExtreme component and use it to display data. Refer to the DropDownBox [help topics](/Documentation/Guide/UI_Components/DropDownBox/Overview/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) for further information.
+DropDownBox allows you to put any content in its drop-down field. This feature makes it more versatile but it is also more complex to implement. For instance, you can embed another DevExtreme component and use it to display data. Refer to the DropDownBox [help topics](/concepts/05%20UI%20Components/DropDownBox/10%20Overview.md '/Documentation/Guide/UI_Components/DropDownBox/Overview/') and [demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/) for further information.
 
 #####See Also#####
-- [Lookup vs SelectBox](/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/)
+- [Lookup vs SelectBox](/concepts/05%20UI%20Components/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')

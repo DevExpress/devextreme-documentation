@@ -19,5 +19,5 @@ By default, rows are sorted according to the data source. To sort rows in an asc
 
 #####See Also#####
 - [sorting](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting '{basewidgetpath}/Configuration/sorting/')
-- [sortingMethod]({basewidgetpath}/Configuration/columns/#sortingMethod)
-- [calculateSortValue]({basewidgetpath}/Configuration/columns/#calculateSortValue)
+- [sortingMethod](/api-reference/_hidden/GridBaseColumn/sortingMethod.md '{basewidgetpath}/Configuration/columns/#sortingMethod')
+- [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '{basewidgetpath}/Configuration/columns/#calculateSortValue')

@@ -45,7 +45,7 @@ The following code adds a simple List to your page. The simplest configuration o
 The List supports a great variety of features. To learn more about a particular feature, refer to a dedicated topic in this documentation section.
 
 #####See Also#####
-- [List - Data Binding](/Documentation/Guide/UI_Components/List/Data_Binding/)
+- [List - Data Binding](/concepts/05%20UI%20Components/List/03%20Data%20Binding/05%20Simple%20Array/05%20Array%20Only.md '/Documentation/Guide/UI_Components/List/Data_Binding/')
 #include common-link-configurewidget
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 

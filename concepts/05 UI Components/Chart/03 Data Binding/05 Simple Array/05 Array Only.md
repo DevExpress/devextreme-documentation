@@ -51,7 +51,7 @@ To bind the Chart to an array, pass this array to the [dataSource](/api-referenc
 
 ---
 
-After that, you need to bind one or several Chart series to data. Depending on the [series type](/Documentation/Guide/UI_Components/Chart/Series_Types/) you chose, use one of the techniques described in the [Bind Series to Data](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/') topic.
+After that, you need to bind one or several Chart series to data. Depending on the [series type](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/') you chose, use one of the techniques described in the [Bind Series to Data](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/') topic.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource/"

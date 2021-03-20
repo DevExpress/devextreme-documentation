@@ -103,7 +103,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
     
 ---
 
-If a command column should have custom content, specify the column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') and [headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate''):
+If a command column should have custom content, specify the column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') and [headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate'):
 
 ---
 ##### jQuery

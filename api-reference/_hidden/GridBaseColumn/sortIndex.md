@@ -17,7 +17,7 @@ This property accepts an integer specifying the index of the column in a collect
         // ...
     ];
 
-To sort data first by the *"Last Name"* and then by the *"First Name"* column, use the following code. Note that the [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder'') property should also be specified.
+To sort data first by the *"Last Name"* and then by the *"First Name"* column, use the following code. Note that the [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder') property should also be specified.
     
 ---
 ##### jQuery

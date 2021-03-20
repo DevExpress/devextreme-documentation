@@ -19,7 +19,7 @@ The DevExtreme Angular UI Component Suite provides the following platform-specif
 
 - [Angular Forms support](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/75%20Angular%20Forms%20Support.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Angular_Forms_Support')
 
-- [Visual Studio integration](/Documentation/Guide/Angular_Components/Visual_Studio_Integration/)
+- [Visual Studio integration](/concepts/40%20Angular%20Components/70%20Visual%20Studio%20Integration/20%20Add%20DevExtreme%20to%20an%20ASP.NET%20Core%20Angular%20Application/30%20Troubleshooting.md '/Documentation/Guide/Angular_Components/Visual_Studio_Integration/')
 
 All DevExtreme UI component suites, including Angular, share architecture and core features. The following core features are common to all suites:
 
@@ -37,4 +37,4 @@ All DevExtreme UI component suites, including Angular, share architecture and co
 
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
-For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/Documentation/Guide/Angular_Components/Getting_Started/).
+For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/concepts/40%20Angular%20Components/10%20Getting%20Started/02%20Create%20a%20DevExtreme%20Application/10%20Layouts.md '/Documentation/Guide/Angular_Components/Getting_Started/').

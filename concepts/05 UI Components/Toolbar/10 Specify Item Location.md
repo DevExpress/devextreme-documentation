@@ -112,7 +112,7 @@ Toolbar items with identical **location** preserve the order they have in the da
 
 ---
 
-When there is not enough width for all toolbar items, or if certain toolbar items are secondary, they can be rendered as commands on the overflow menu. This menu can be a [Popover](/Documentation/Guide/UI_Components/Popover/), an [Action Sheet](/Documentation/Guide/UI_Components/ActionSheet/) or a Drop-Down Menu, depending on which device the application is running on. To render a toolbar item as a command on the overflow menu, assign *"always"* or *"auto"* to the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu') property.
+When there is not enough width for all toolbar items, or if certain toolbar items are secondary, they can be rendered as commands on the overflow menu. This menu can be a [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/'), an [Action Sheet](/concepts/05%20UI%20Components/ActionSheet/00%20Overview.md '/Documentation/Guide/UI_Components/ActionSheet/') or a Drop-Down Menu, depending on which device the application is running on. To render a toolbar item as a command on the overflow menu, assign *"always"* or *"auto"* to the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu') property.
 
 ---
 #####jQuery 

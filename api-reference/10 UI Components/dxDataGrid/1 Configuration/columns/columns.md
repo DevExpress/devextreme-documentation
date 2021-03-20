@@ -20,7 +20,7 @@ To get or set an property or several properties for a column at runtime, use the
 }
 
 #####See Also#####
-- [Column Types](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/)
+- [Column Types](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/')
 - [Customize Column Headers](/concepts/05%20UI%20Components/DataGrid/15%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Column_Headers/')
 - [Column Sizing](/concepts/05%20UI%20Components/DataGrid/15%20Columns/20%20Column%20Sizing.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Sizing/')
 - [Column Reordering](/concepts/05%20UI%20Components/DataGrid/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/')

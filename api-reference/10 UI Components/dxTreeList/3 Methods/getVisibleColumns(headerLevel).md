@@ -14,5 +14,5 @@ The column headers' level.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [getVisibleColumns()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getVisibleColumns().md '{basewidgetpath}/Methods/#getVisibleColumns')
-- [columns](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/')
+- [getVisibleColumns()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getVisibleColumns().md '{basewidgetpath}/Methods/#getVisibleColumns')
+- [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/')

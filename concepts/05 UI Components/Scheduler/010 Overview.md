@@ -22,7 +22,7 @@ The Scheduler is a UI component that represents scheduled data and allows a user
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 
-The following code adds the Scheduler UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate'') property.
+The following code adds the Scheduler UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property.
 
 ---
 
@@ -314,8 +314,8 @@ If your appointments have a different structure, specify:
 ---
 
 #####See Also#####
-- [Scheduler - Data Binding](/Documentation/Guide/UI_Components/Scheduler/Data_Binding/)
-- [Scheduler - Views](/Documentation/Guide/UI_Components/Scheduler/Views/)
+- [Scheduler - Data Binding](/concepts/05%20UI%20Components/Scheduler/020%20Data%20Binding/10%20Simple%20Array/10%20Array%20Only.md '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/')
+- [Scheduler - Views](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types/010%20Day%20View.md '/Documentation/Guide/UI_Components/Scheduler/Views/')
 - [Scheduler - Keyboard Support](/concepts/05%20UI%20Components/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Keyboard_Support/')
 
 [tags]dxscheduler, scheduler, overview, textExpr, startDateExpr, endDateExpr

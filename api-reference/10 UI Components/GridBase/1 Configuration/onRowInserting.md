@@ -28,7 +28,7 @@ The data of the row that should be inserted.
 Model data. Available only if you use Knockout.
 
 ---
-[note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be inserted.
+[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be inserted.
 
 The following code shows how to use the function parameter's **cancel** field to prevent or continue row insertion. In this code, a Promise is assigned to this field. Row insertion continues if row data validation on the server succeeds (the Promise is resolved); otherwise, row insertion is prevented (the Promise is rejected).
 

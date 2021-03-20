@@ -36,13 +36,13 @@ The index of the row the cell belongs to. Begins with 0 on each page. Group rows
 Refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/') topic for more information on row indexes.
 
 ##### field(cellInfo.rowType): String
-The row's [type](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
+The row's [type](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
 
 ##### field(cellInfo.setValue(newValue, newText)): any
 A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.        
 See an example in the [Custom Editors](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors) demo.
 
-[note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), check that the value is actually changed before calling this method to ensure correct cell highlighting.
+[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), check that the value is actually changed before calling this method to ensure correct cell highlighting.
 
 ##### field(cellInfo.text): String
 **displayValue** after applying [format](/api-reference/_hidden/GridBaseColumn/format.md '{basewidgetpath}/Configuration/columns/#format') and [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText').

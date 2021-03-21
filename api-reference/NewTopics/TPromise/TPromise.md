@@ -1,8 +1,6 @@
 ---
-id: dxSVGElement
-type: SVGElement | jQuery
-hidden: 
-dep: TElement
+id: TPromise
+type: Promise<void>
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxDrawer.Options.target
-type: String | Element | jQuery
+type: String | TElement
 deprecated: 
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFileUploader.Options.dialogTrigger
-type: String | Element | jQuery
+type: String | TElement
 default: undefined
 ---
 ---

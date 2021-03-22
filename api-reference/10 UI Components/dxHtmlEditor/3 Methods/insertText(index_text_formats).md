@@ -53,4 +53,71 @@ This object should have the following structure:
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor :ref="htmlEditorRefKey">
+            <!-- ... -->
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxHtmlEditor from 'devextreme-vue/html-editor';
+
+    const htmlEditorRefKey = "my-html-editor";
+
+    export default {
+        components: {
+            DxHtmlEditor
+        },
+        data() {
+            return {
+                htmlEditorRefKey
+            }
+        },
+        methods: {
+            insertTextAtTheBeginning() {
+                // Inserts bold, green text at the beginning of the content
+                this.htmlEditor.insertText(0, "I will be the first", { 
+                    bold: true, 
+                    color: "green" 
+                });
+            }
+        },
+        computed: {
+            htmlEditor: function() {
+                return this.$refs[htmlEditorRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const htmlEditor = useRef(null);
+        
+        const insertTextAtTheBeginning = () => {
+            // Inserts bold, green text at the beginning of the content
+            htmlEditor.current.instance.insertText(0, "I will be the first", { 
+                bold: true, 
+                color: "green" 
+            });
+        };
+
+        return (
+            <HtmlEditor ref={htmlEditor}>
+                {/* */}
+            </HtmlEditor>
+        );
+    }
+
 ---

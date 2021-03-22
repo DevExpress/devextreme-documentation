@@ -43,21 +43,26 @@ In the following code, the `header` and `size` formats are configured as describ
 
 #####Angular
 
+    <!--HTML-->
+    <dx-html-editor>
+        <dxo-toolbar>
+            <dxi-item
+                name="header"
+                [acceptedValues]="[1, 2, 3, false]"
+                [options]="{ width: 150 }">
+            </dxi-item>
+            <dxi-item
+                name="size"
+                [acceptedValues]="['11px', '14px', '16px']">
+            </dxi-item>
+        </dxo-toolbar>
+    </dx-html-editor>   
+
     <!--TypeScript-->
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        items: any = [ // ...
-        {
-            name: "header",
-            acceptedValues: [1, 2, 3, false],
-            options: {
-                width: 150
-            }
-        }, {
-            name: "size",
-            acceptedValues: ["11px", "14px", "16px"]
-        }];
+        // ...
     }
     @NgModule({
         imports: [
@@ -67,10 +72,80 @@ In the following code, the `header` and `size` formats are configured as describ
         // ...
     })
 
-    <!--HTML-->
-    <dx-html-editor>
-        <dxo-toolbar [items]="items"></dxo-toolbar>
-    </dx-html-editor>   
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <DxToolbar>
+                <DxItem
+                    name="header"
+                    :accepted-values="headerFormatValues" 
+                    :options="headerFormatOptions"
+                />
+                <DxItem
+                    name="size"
+                    :accepted-values="sizeFormatValues"
+                />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxHtmlEditor, {
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                headerFormatValues: [1, 2, 3, false],
+                headerFormatOptions: { width: 150 },
+                sizeFormatValues: ["11px", "14px", "16px"]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor, {
+        Toolbar,
+        Item
+    } from 'devextreme-react/html-editor';
+
+    const headerFormatValues = [1, 2, 3, false];
+    const headerFormatOptions = { width: 150 };
+    const sizeFormatValues = ["11px", "14px", "16px"];
+
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        name="header"
+                        acceptedValues={headerFormatValues} 
+                        options={headerFormatOptions}
+                    />
+                    <Item
+                        name="size"
+                        acceptedValues={sizeFormatValues}
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
+    }
 
 ---
 

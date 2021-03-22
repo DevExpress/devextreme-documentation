@@ -50,4 +50,62 @@ Specifies the special character(s) that should surround the variables.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <DxVariables
+                :data-source="variables"
+                :escape-char="escapeCharacters" /> <!-- {FirstName} -->
+                <!-- or -->
+                <!-- escape-char="##" /> --> <!-- ##FirstName## -->
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxHtmlEditor, {
+        DxVariables
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxVariables
+        },
+        data() {
+            return {
+                variables: ['FirstName'],
+                escapeCharacters: ['{', '}']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor, {
+        Variables
+    } from 'devextreme-react/html-editor';
+
+    const variables = ['FirstName'];
+    const escapeCharacters = ['{', '}'];
+
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Variables
+                    dataSource={variables}
+                    escapeChar={escapeCharacters} /> {/* {FirstName} */}
+                    {/* or */}
+                    {/* escapeChar="##" /> */} {/* ##FirstName## */}
+            </HtmlEditor>
+        );
+    }
+
 ---

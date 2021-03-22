@@ -13,10 +13,10 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel showing the context menu.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileManager
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -25,7 +25,7 @@ The UI component's instance.
 ##### field(e.fileSystemItem): FileSystemItem
 The file system item for which you invoke the context menu.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.targetElement): dxElement

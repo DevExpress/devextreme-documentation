@@ -7,13 +7,13 @@ type: eventType
 ##### shortDescription
 Raised when the drag gesture has been completed.
 
-##### param(event): event
+##### param(event): Object
 #include common-ref-eventparam The following fields are added to existing fields of this argument object.
 
-##### field(event.cancel): boolean
+##### field(event.cancel): Boolean
 Allows you to cancel the gesture processing.
 
-##### field(event.offset): number
+##### field(event.offset): Number
 The ratio between the drag distance and the target element's width.
 
 ---

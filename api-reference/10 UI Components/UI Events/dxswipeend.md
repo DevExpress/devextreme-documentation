@@ -7,13 +7,13 @@ type: eventType
 ##### shortDescription
 Raised when the swipe gesture is finished.
 
-##### param(event): event
+##### param(event): Object
 #include common-ref-eventparam The following fields are added to existing fields of this argument object.
 
-##### field(event.offset): number
+##### field(event.offset): Number
 The ratio between the swipe distance and the target element's width or height.
 
-##### field(event.targetOffset): number
+##### field(event.targetOffset): Number
 The ratio between the distance that should be passed to finish the motion and the target element's width or height.
 
 ---

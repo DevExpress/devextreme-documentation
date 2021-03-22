@@ -14,16 +14,16 @@ Information about the event.
 ##### field(e.argument): Date | Number | String
 The clicked label's value.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxChart
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ---

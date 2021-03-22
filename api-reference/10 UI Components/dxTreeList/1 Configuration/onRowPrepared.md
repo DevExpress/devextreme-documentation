@@ -13,13 +13,13 @@ Information about the event that caused the function's execution.
 ##### field(e.columns): Array<dxTreeListColumn>
 All column [configurations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/').
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The UI component's instance.
 
 ##### field(e.data): Object
 The row's data. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
@@ -38,7 +38,7 @@ For plain data, the value of the key depends on the [keyExpr](/api-reference/10%
 ##### field(e.level): Number
 The node's [hierarchical level](/api-reference/10%20UI%20Components/dxTreeList/4%20Node/level.md '/Documentation/ApiReference/UI_Components/dxTreeList/Node/#level').
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.node): dxTreeListNode

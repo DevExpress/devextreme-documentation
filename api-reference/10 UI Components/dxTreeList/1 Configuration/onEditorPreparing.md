@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 <!-- %field(e.cancel)% -->
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The UI component's instance.
 
 ##### field(e.dataField): String
@@ -31,10 +31,10 @@ Indicates whether the editor is disabled.
 ##### field(e.editorOptions): Object
 <!-- %field(e.editorOptions)% -->
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentType): String

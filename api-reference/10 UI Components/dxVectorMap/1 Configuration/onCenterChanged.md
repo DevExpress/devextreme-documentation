@@ -14,13 +14,13 @@ Information about the event.
 ##### field(e.center): Array<Number>
 The updated geographical coordinates of the center.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxVectorMap
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ---

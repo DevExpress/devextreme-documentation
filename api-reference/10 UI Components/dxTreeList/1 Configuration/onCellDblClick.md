@@ -19,7 +19,7 @@ The column's configuration.
 ##### field(e.columnIndex): Number
 The index of the column the cell belongs to.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The UI component's instance.
 
 ##### field(e.data): Object
@@ -29,7 +29,7 @@ The data of the row the cell belongs to. Available if the **rowType** is *"data"
 The value displayed in the cell. Available if the **rowType** is *"data"*.      
 Differs from the **value** field only when the cell belongs to a [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') column.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -38,7 +38,7 @@ Differs from the **value** field only when the cell belongs to a [lookup](/api-r
 ##### field(e.key): any
 The row's [key](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#key'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxTreeListRowObject

@@ -7,16 +7,16 @@ type: eventType
 ##### shortDescription
 Raised when the rotate gesture has been performed.
 
-##### param(event): event
+##### param(event): Object
 #include common-ref-eventparam The following fields are added to existing fields of this argument object.
 
-##### field(event.cancel): boolean
+##### field(event.cancel): Boolean
 Allows you to cancel the gesture processing.
 
-##### field(event.deltaRotation): number
+##### field(event.deltaRotation): Number
 The rotation angle between the previous and current position.
 
-##### field(event.rotation): number
+##### field(event.rotation): Number
 The rotation angle between the initial and current position.
 
 ---

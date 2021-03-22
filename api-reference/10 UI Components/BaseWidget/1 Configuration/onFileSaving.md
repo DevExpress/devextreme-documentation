@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.data): Blob
 Exported data as a BLOB.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String

@@ -13,13 +13,13 @@ Information about the event that caused the function's execution.
 ##### field(e.columns): Array<dxDataGridColumn>
 The configurations of visible columns.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The UI component's instance.
 
 ##### field(e.data): Object
 The row's data.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -40,7 +40,7 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 ##### field(e.key): any
 The row's [key](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#key') or a group row's [key](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Group_Index_and_Key'). Available if the **rowType** is *"data"*, *"detail"*, *"detailAdaptive"*, or *"group"*.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.rowElement): dxElement

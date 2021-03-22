@@ -7,10 +7,10 @@ type: eventType
 ##### shortDescription
 Raised when the transform gesture has been started.
 
-##### param(event): event
+##### param(event): Object
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
-##### field(event.cancel): boolean
+##### field(event.cancel): Boolean
 Allows you to cancel the gesture processing.
 
 ---

@@ -16,7 +16,7 @@ An array of broken rules. The structure of rule objects is described in the [Val
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.errorText): String
@@ -28,7 +28,7 @@ Indicates whether data in all row cells satisfies the validation rules.
 ##### field(e.key): any
 The key of the row. If a field providing keys is not specified in the data source, the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newData): Object

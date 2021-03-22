@@ -28,13 +28,13 @@ Fields in the "column" area.
 The index of the column to which the clicked cell belongs.    
 Unavailable for fields in the [field panel](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/15%20Field%20Panel.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Panel').
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPivotGrid
 The UI component's instance.
 
 ##### field(e.dataFields): Array<PivotGridDataSource_Options_fields>
 Fields in the "data" area.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.field): PivotGridDataSource_Options_fields
@@ -44,7 +44,7 @@ Available for fields in the [field panel](/concepts/05%20UI%20Components/PivotGr
 ##### field(e.items): Array<Object>
 An array of items to be displayed by the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.rowFields): Array<PivotGridDataSource_Options_fields>

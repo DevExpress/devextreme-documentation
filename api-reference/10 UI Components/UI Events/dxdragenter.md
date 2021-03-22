@@ -7,7 +7,7 @@ type: eventType
 ##### shortDescription
 Raised when a user moves the pointer into the element, provided that the drag gesture is being performed.
 
-##### param(event): event
+##### param(event): Object
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
 ##### field(event.draggingElement): Element

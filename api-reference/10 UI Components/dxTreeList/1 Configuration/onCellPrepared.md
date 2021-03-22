@@ -19,7 +19,7 @@ This column's [configuration](/api-reference/10%20UI%20Components/dxTreeList/1%2
 ##### field(e.columnIndex): Number
 The visible column index described in the following topic: [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/').
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 The UI component's instance.
 
 ##### field(e.data): Object
@@ -29,7 +29,7 @@ The data of the row to which the cell belongs. Available if the **rowType** is *
 The cell's displayed value. Available if the **rowType** is *"data"*.       
 Differs from the **value** field only when the cell belongs to the [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') column.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
@@ -45,7 +45,7 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 The row's key. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.       
 For plain data, the key value depends on the [keyExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#keyExpr') property. For hierarchical data, the key is generated automatically or set in the underlying **Store** of the [data source](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource').
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.oldValue): any

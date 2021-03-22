@@ -19,10 +19,10 @@ Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.promise): Promise<void>

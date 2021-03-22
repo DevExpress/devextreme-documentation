@@ -38,8 +38,8 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
         $("#button").dxButton({
             text: "Contact me",
             onClick: function(e) {
-                var result = e.validationGroup.validate();
-                if (result.isValid) {
+                const { isValid } = e.validationGroup.validate();
+                if (isValid) {
                     // Submit values to the server
                 }
             }
@@ -113,8 +113,8 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
             });
         };
         submit(e) {
-            const result = e.validationGroup.validate();
-            if (result.isValid) {
+            const { isValid } = e.validationGroup.validate();
+            if (isValid) {
                 // Submit values to the server
             }
         }
@@ -216,8 +216,8 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
         },
         methods: {
             submit (e) {
-                const result = e.validationGroup.validate();
-                if (result.isValid) {
+                const { isValid } = e.validationGroup.validate();
+                if (isValid) {
                     // Submit values to the server
                 }
             }
@@ -264,8 +264,8 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
             revalidate();
         };
         const submit = (e) => {
-            const result = e.validationGroup.validate();
-            if (result.isValid) {
+            const { isValid } = e.validationGroup.validate();
+            if (isValid) {
                 // Submit values to the server
             }
         }

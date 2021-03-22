@@ -7,16 +7,16 @@ default: null
 ##### shortDescription
 Specifies a custom template for day scale items.
 
-##### param(itemData): Object
+##### param(itemData): any
 The data of the current date scale item.
 
 ##### param(itemIndex): Number
 The item's index.
 
-##### param(itemElement): dxElement
+##### param(itemElement): TElement
 #include common-ref-elementparam with { element: "item" }
 
-##### return: String | Element | jQuery
+##### return: String | TElement
 A template name or container.
 
 ---

@@ -16,10 +16,10 @@ The UI component's instance.
 ##### field(e.customItem): String | Object | Promise<any>
 The field where to place a custom item.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.text): String

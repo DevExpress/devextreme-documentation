@@ -7,10 +7,10 @@ type: eventType
 ##### shortDescription
 Raised when a pointer is moved to the hit test area of an element or one of its descendants.
 
-##### param(event): event
+##### param(event): Object
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
-##### field(event.pointerType): string
+##### field(event.pointerType): String
 The type of the device that raised the event: mouse, pen or touch.
 
 ---

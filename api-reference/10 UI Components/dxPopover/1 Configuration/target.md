@@ -1,6 +1,6 @@
 ---
 id: dxPopover.Options.target
-type: String | Element | jQuery
+type: String | TElement
 ---
 ---
 ##### shortDescription

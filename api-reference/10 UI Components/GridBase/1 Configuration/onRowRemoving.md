@@ -20,13 +20,13 @@ The UI component's instance.
 ##### field(e.data): Object
 The data of the row that should be removed.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

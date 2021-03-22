@@ -19,7 +19,7 @@ This column's [configuration](/api-reference/10%20UI%20Components/dxDataGrid/1%2
 ##### field(e.columnIndex): Number
 The index of the column to which the cell belongs. For details on indexes, see the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The UI component's instance.
 
 ##### field(e.data): Object
@@ -28,7 +28,7 @@ The data of the row to which the cell belongs.
 ##### field(e.displayValue): any
 The cell's displayed value. Differs from the **value** field only when the column to which the current cell belongs uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/').
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.eventType): String
@@ -37,7 +37,7 @@ Indicates whether the pointer entered or left the cell. Can be either *"mouseove
 ##### field(e.key): any
 The row's key. If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxDataGridRowObject

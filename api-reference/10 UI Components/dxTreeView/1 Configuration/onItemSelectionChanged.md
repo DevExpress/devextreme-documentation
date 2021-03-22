@@ -10,16 +10,16 @@ A function that is executed when a single TreeView item is selected or selection
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeView
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.itemElement): dxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.node): dxTreeViewNode

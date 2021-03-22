@@ -14,7 +14,7 @@ Information about the event.
 Allows you to cancel the creation of the editor.    
 Set it to **true** and implement a custom editor.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFilterBuilder
 The UI component's [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Methods/#instance').
 
 ##### field(e.dataField): String
@@ -33,13 +33,13 @@ Import a new editor's module when [DevExtreme modules](/concepts/Common/Modulari
 ##### field(e.editorOptions): Object
 Gets and sets the editor configuration.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.filterOperation): String
 The applied filter operation.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.readOnly): Boolean

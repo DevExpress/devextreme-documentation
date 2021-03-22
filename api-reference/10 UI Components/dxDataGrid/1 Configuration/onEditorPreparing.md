@@ -14,7 +14,7 @@ Information about the event that caused the function's execution.
 Allows you to cancel the editor's creation.        
 You can set this field's value to **true** and implement a custom editor.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The UI component's instance.
 
 ##### field(e.dataField): String
@@ -33,10 +33,10 @@ Import a new editor's module when [DevExtreme modules](/concepts/Common/Modulari
 ##### field(e.editorOptions): Object
 Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') specified in the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object have precedence over this parameter.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentType): String

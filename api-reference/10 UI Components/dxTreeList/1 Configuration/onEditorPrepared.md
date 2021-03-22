@@ -10,7 +10,7 @@ A function that is executed after an editor is created. Not executed for cells w
 ##### param(options): Object
 Information about the event that caused the function's execution.
 
-##### field(options.component): {WidgetName}
+##### field(options.component): dxTreeList
 The UI component's instance.
 
 ##### field(options.dataField): String
@@ -22,10 +22,10 @@ Indicates whether the editor is disabled.
 ##### field(options.editorElement): dxElement
 #include common-ref-elementparam with { element: "editor" }
 
-##### field(options.element): dxElement
+##### field(options.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(options.model): Object
+##### field(options.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(options.parentType): String

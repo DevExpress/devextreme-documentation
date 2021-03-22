@@ -10,19 +10,19 @@ Specifies a custom template for tooltips displayed when users click an appointme
 ##### param(model): Object
 The data of the appointment for which the tooltip is displayed.
 
-##### field(model.appointmentData): Object
+##### field(model.appointmentData): any
 The appointment's data object.
 
-##### field(model.targetedAppointmentData): Object
+##### field(model.targetedAppointmentData): any
 <!-- %field(model.targetedAppointmentData)% -->
 
 ##### param(itemIndex): Number
 The appointment's index.
 
-##### param(contentElement): dxElement
+##### param(contentElement): TElement
 #include common-ref-elementparam with { element: "appointment tooltip" }
 
-##### return: String | Element | jQuery
+##### return: String | TElement
 A template name or container.
 
 ---

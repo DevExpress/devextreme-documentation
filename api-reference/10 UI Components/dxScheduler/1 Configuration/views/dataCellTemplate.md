@@ -7,16 +7,16 @@ default: null
 ##### shortDescription
 Specifies a custom template for table cells.
 
-##### param(itemData): Object
+##### param(itemData): any
 The current table cell's data.
 
 ##### param(itemIndex): Number
 The current table cell's index.
 
-##### param(itemElement): dxElement
+##### param(itemElement): TElement
 #include common-ref-elementparam with { element: "table cell" }
 
-##### return: String | Element | jQuery
+##### return: String | TElement
 A template name or container.
 
 ---

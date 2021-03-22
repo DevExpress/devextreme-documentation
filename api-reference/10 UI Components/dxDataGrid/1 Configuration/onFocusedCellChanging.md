@@ -19,10 +19,10 @@ Allows you to cancel focusing a new cell.
 ##### field(e.columns): Array<dxDataGridColumn>
 The visible columns' properties.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -31,7 +31,7 @@ The UI component's instance.
 ##### field(e.isHighlighted): Boolean
 **true** if the cell is highlighted; otherwise **false**, even if the cell's row is highlighted.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newColumnIndex): Number

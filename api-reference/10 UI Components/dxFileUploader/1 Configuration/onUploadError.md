@@ -10,10 +10,10 @@ A function that is executed when an error occurs during the file upload.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileUploader
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.error): any
@@ -28,7 +28,7 @@ The uploaded file.
 ##### field(e.message): String
 The message displayed by the UI component on uploading failure.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.request): XMLHttpRequest

@@ -16,7 +16,7 @@ The UI component's instance.
 ##### field(e.data): Object
 The updated data of the row.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.error): Error
@@ -25,7 +25,7 @@ The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 ##### field(e.key): any
 The key of the row. If a field providing keys is not specified in the data source, the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

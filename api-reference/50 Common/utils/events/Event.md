@@ -11,10 +11,4 @@ hidden:
 ##### return: event
 <!-- Description goes here -->
 
-##### param(source): string|event
-<!-- Description goes here -->
-
-##### param(config): object
-<!-- Description goes here -->
-
 ---

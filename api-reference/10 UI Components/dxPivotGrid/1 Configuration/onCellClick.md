@@ -28,19 +28,19 @@ The *column* area's fields.
 ##### field(e.columnIndex): Number
 The index of the column to which the clicked cell belongs.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPivotGrid
 The UI component [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
 
 ##### field(e.dataFields): Array<PivotGridDataSource_Options_fields>
 The *data* area's fields.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.rowFields): Array<PivotGridDataSource_Options_fields>

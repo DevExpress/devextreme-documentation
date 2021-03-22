@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditorToolbar.container
-type: String | Element | jQuery
+type: String | TElement
 ---
 ---
 ##### shortDescription

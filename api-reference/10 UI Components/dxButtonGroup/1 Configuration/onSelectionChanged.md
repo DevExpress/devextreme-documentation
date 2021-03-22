@@ -13,13 +13,13 @@ Information about the event that caused the function's execution.
 ##### field(e.addedItems): Array<any>
 The data objects that correspond to the selected buttons.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxButtonGroup
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.removedItems): Array<any>

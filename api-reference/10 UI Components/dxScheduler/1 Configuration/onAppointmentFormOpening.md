@@ -16,16 +16,16 @@ The data of the appointment for which a form is opened.
 ##### field(e.cancel): Boolean
 If **true**, prevents the user from opening the appointment details form.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.form): dxForm
 The form's instance; created only once - when the function is executed for the first time.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.popup): dxPopup

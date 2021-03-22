@@ -10,10 +10,10 @@ A function that is executed when an error occurs.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileManager
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.errorCode): Number
@@ -41,7 +41,7 @@ The error message.
 ##### field(e.fileSystemItem): FileSystemItem
 The processed file or directory.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

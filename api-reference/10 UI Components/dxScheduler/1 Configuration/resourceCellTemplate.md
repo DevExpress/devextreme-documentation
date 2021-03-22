@@ -7,16 +7,16 @@ default: null
 ##### shortDescription
 Specifies a custom template for resource headers.
 
-##### param(itemData): Object
+##### param(itemData): any
 The current resource header's data.
 
 ##### param(itemIndex): Number
 The current resource header's index.
 
-##### param(itemElement): dxElement
+##### param(itemElement): TElement
 #include common-ref-elementparam with { element: "resource header" }
 
-##### return: String | Element | jQuery
+##### return: String | TElement
 A template name or container.
 
 ---

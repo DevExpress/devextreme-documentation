@@ -6,7 +6,7 @@ default: 'nextColumn'
 ---
 ---
 ##### shortDescription
-Specifies how the UI component resizes columns. Applies only if [allowColumnResizing](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/allowColumnResizing.md '{basewidgetpath}/Configuration/#allowColumnResizing') is **true**.
+Specifies how the UI component resizes columns. Applies only if [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '{basewidgetpath}/Configuration/#allowColumnResizing') is **true**.
 
 ---
 The **columnResizingMode** property accepts one of the following values:

@@ -110,7 +110,7 @@ Toolbar items with identical **location** preserve the order they have in the da
 
 ---
 
-When there is not enough width for all toolbar items, or if certain toolbar items are secondary, they can be rendered as commands on the overflow menu. This menu can be a [Popover](/concepts/05%20Widgets/Popover '/Documentation/Guide/UI_Components/Popover/'), an [Action Sheet](/concepts/05%20Widgets/ActionSheet '/Documentation/Guide/UI_Components/ActionSheet/') or a Drop-Down Menu, depending on which device the application is running on. To render a toolbar item as a command on the overflow menu, assign *"always"* or *"auto"* to the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu') property.
+When there is not enough width for all toolbar items, or if certain toolbar items are secondary, they can be rendered as commands on the overflow menu. This menu can be a [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/'), an [Action Sheet](/concepts/05%20UI%20Components/ActionSheet/00%20Overview.md '/Documentation/Guide/UI_Components/ActionSheet/') or a Drop-Down Menu, depending on which device the application is running on. To render a toolbar item as a command on the overflow menu, assign *"always"* or *"auto"* to the [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu') property.
 
 ---
 #####jQuery 
@@ -200,9 +200,9 @@ When there is not enough width for all toolbar items, or if certain toolbar item
 ---
 
 #####See Also#####
-- [Toolbar - Specify Item Type](/concepts/05%20Widgets/Toolbar/05%20Specify%20Item%20Type.md '/Documentation/Guide/UI_Components/Toolbar/#Specify_Item_Type')
-- [Toolbar - Customize Item Appearance](/concepts/05%20Widgets/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Toolbar/#Customize_Item_Appearance')
+- [Toolbar - Specify Item Type](/concepts/05%20UI%20Components/Toolbar/05%20Specify%20Item%20Type.md '/Documentation/Guide/UI_Components/Toolbar/#Specify_Item_Type')
+- [Toolbar - Customize Item Appearance](/concepts/05%20UI%20Components/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Toolbar/#Customize_Item_Appearance')
 - [Toolbar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview)
-- [Toolbar API Reference](/api-reference/10%20UI%20Widgets/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
+- [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
 [tags]toolbar, location, item location, locate in menu

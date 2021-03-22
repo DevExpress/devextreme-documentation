@@ -24,6 +24,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [Slider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview)
-- [Slider API Reference](/api-reference/10%20UI%20Widgets/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
+- [Slider API Reference](/api-reference/10%20UI%20Components/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
 
 [tags]slider, accessibility, keyboard shortcuts

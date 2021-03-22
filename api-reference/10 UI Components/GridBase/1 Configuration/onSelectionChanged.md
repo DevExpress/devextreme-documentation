@@ -19,10 +19,10 @@ The keys of the rows whose selection has been cleared.
 ##### field(e.currentSelectedRowKeys): Array<any>
 The keys of the rows that have been selected.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.selectedRowKeys): Array<any>
@@ -36,7 +36,7 @@ Does not include [calculated values](/api-reference/_hidden/GridBaseColumn/calcu
 This function has the following specifics:
 
 - If a field providing key values is not specified in the data source, the whole data object is considered the key. In this case, all arrays passed to the function contain data objects instead of keys.
-- When selection is [deferred](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/deferred.md '{basewidgetpath}/Configuration/selection/#deferred'), this function does not provide access to keys and data. Use the [getSelectedRowsData()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowsData().md '{basewidgetpath}/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowKeys().md '{basewidgetpath}/Methods/#getSelectedRowKeys') method instead.
+- When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/deferred.md '{basewidgetpath}/Configuration/selection/#deferred'), this function does not provide access to keys and data. Use the [getSelectedRowsData()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowsData().md '{basewidgetpath}/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowKeys().md '{basewidgetpath}/Methods/#getSelectedRowKeys') method instead.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/RowSelection/"

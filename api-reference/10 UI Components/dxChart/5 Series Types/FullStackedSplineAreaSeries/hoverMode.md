@@ -42,5 +42,5 @@ When a user points to a series, it may react in one of the following ways depend
 } Note that although this enum accepts more values, only the listed ones can be applied to a full-stacked spline area series.
 
 #####See Also#####
-- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedSplineAreaSeries/hoverStyle/') - specifies the appearance of series in the hover state.
-- **point**.[hoverMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedSplineAreaSeries/point/#hoverMode') - specifies the hover mode of series points.
+- [hoverStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedSplineAreaSeries/hoverStyle/') - specifies the appearance of series in the hover state.
+- **point**.[hoverMode](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedSplineAreaSeries/point/#hoverMode') - specifies the hover mode of series points.

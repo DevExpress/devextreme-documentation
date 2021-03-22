@@ -1,4 +1,4 @@
-The Chart provides the [onZoomEnd](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onZoomEnd.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onZoomEnd') event handler that can be used to stop zooming or panning when a specific condition is met.
+The Chart provides the [onZoomEnd](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onZoomEnd.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onZoomEnd') event handler that can be used to stop zooming or panning when a specific condition is met.
 
 For example, you can disallow users to zoom in further if the visual range's length is less than 1:
 

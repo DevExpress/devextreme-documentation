@@ -8,4 +8,4 @@ Configures a funnel item's appearance when a user presses the item or hovers the
 
 ---
 #####See Also#####
-- [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/hoverEnabled.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#hoverEnabled')
+- [hoverEnabled](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/hoverEnabled.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#hoverEnabled')

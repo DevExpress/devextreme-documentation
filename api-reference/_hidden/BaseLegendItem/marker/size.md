@@ -4,6 +4,6 @@ type: Number
 ---
 ---
 ##### shortDescription
-The [markerSize](/api-reference/20%20Data%20Visualization%20Widgets/BaseLegend/markerSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#markerSize') in pixels.
+The [markerSize](/api-reference/10%20UI%20Components/BaseLegend/markerSize.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#markerSize') in pixels.
 
 ---

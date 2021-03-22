@@ -11,20 +11,20 @@ A function that is executed when a node is clicked or tapped.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeMap
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.node): dxTreeMapNode
-The clicked node; described in the [Node](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/6%20Node '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/') section.
+The clicked node; described in the [Node](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/') section.
 
 ---
 This function is often used to implement item selection as shown in the following code:
@@ -114,4 +114,4 @@ This function is often used to implement item selection as shown in the followin
 
 ---
 
-To identify whether the clicked node is a single tile or a group of tiles, use the node's [isLeaf()](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/6%20Node/3%20Methods/isLeaf().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#isLeaf') method.
+To identify whether the clicked node is a single tile or a group of tiles, use the node's [isLeaf()](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node/3%20Methods/isLeaf().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#isLeaf') method.

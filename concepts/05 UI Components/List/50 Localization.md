@@ -95,6 +95,6 @@ Some messages can be defined by List properties as well as keys. The following t
 
 #####See Also#####
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, localization, translation, localization keys, localize messages, localize texts

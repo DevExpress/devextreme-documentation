@@ -10,17 +10,17 @@ A function that is executed when a button is clicked or tapped.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxButtonGroup
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 The UI component's container.
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
 ##### field(e.itemData): Object
-The clicked button's [data](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/').
+The clicked button's [data](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/').
 
 ##### field(e.itemElement): dxElement
 #include common-ref-elementparam with { element: "button" }
@@ -28,7 +28,7 @@ The clicked button's [data](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20C
 ##### field(e.itemIndex): Number
 The clicked button's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

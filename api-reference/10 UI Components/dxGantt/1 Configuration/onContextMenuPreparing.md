@@ -13,13 +13,13 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel showing the context menu.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component's instance.
 
 ##### field(e.data): any
 Data of the right-clicked task or dependency.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -151,4 +151,4 @@ The type of right-clicked task or dependency.
 }
 
 #####See Also#####
-- [contextMenuPreparing](/Documentation/ApiReference/UI_Components/dxGantt/Events/#contextMenuPreparing)
+- [contextMenuPreparing](/api-reference/10%20UI%20Components/dxGantt/4%20Events/contextMenuPreparing.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#contextMenuPreparing')

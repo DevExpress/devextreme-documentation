@@ -1,4 +1,4 @@
-By default, exactly one panel can be in the expanded state at one moment. To change this, switch the [collapsible](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/collapsible.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#collapsible') and [multiple](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#multiple') properties to _true_.
+By default, exactly one panel can be in the expanded state at one moment. To change this, switch the [collapsible](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/collapsible.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#collapsible') and [multiple](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#multiple') properties to _true_.
 
 ---
 
@@ -83,6 +83,6 @@ By default, exactly one panel can be in the expanded state at one moment. To cha
 
 #####See Also#####
 - [Accordion Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview)
-- [Accordion API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
+- [Accordion API Reference](/api-reference/10%20UI%20Components/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
 
 [tags]accordion, behavior, collapse, expand, multiple

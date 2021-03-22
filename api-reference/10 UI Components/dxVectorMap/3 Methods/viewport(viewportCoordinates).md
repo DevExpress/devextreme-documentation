@@ -13,7 +13,7 @@ To change the coordinates of the map viewport, pass an array of four values in t
 
 In addition, you can get the current coordinates of the map viewport by calling the same method without arguments.
 
-If you have implemented the [onCenterChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/onCenterChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onCenterChanged') or [onZoomFactorChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/onZoomFactorChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onZoomFactorChanged') callback functions, they will be triggered when the viewport coordinates are changed using the **viewport(viewportCoordinates)** method.
+If you have implemented the [onCenterChanged](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/onCenterChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onCenterChanged') or [onZoomFactorChanged](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/onZoomFactorChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onZoomFactorChanged') callback functions, they will be triggered when the viewport coordinates are changed using the **viewport(viewportCoordinates)** method.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/DynamicViewport/"

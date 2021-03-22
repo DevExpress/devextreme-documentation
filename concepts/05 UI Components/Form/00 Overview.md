@@ -128,18 +128,18 @@ The following code adds the Form UI component to your page. The simplest configu
 
 ---
 
-The configuration above creates one label-editor pair per each field of the data object. Such a pair is called ["simple item"](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/'). Simple items can be organized in [groups](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/'), [tabs](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/') and [columns](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Columns/').
+The configuration above creates one label-editor pair per each field of the data object. Such a pair is called ["simple item"](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/'). Simple items can be organized in [groups](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/'), [tabs](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/') and [columns](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/15%20In%20Columns '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Columns/').
 
 #####See Also#####
 #include common-link-configurewidget
-- [Form - Configure Simple Items](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
-- [Form - Organize Simple Items](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/')
-- [Form - Configure Item Labels](/concepts/05%20Widgets/Form/15%20Configure%20Item%20Labels/05%20Location%20and%20Alignment '/Documentation/Guide/UI_Components/Form/Configure_Item_Labels/Location_and_Alignment/')
-- [Form - Change Options at Runtime](/concepts/05%20Widgets/Form/20%20Change%20Options%20at%20Runtime '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/')
-- [Form - Handle the Value Change Event](/concepts/05%20Widgets/Form/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Form/Handle_the_Value_Change_Event/')
-- [Form - Update Form Data Using the API](/concepts/05%20Widgets/Form/30%20Update%20Form%20Data%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Form/Update_Form_Data_Using_the_API/')
-- [Form - Generate a Data Object from Form Items](/concepts/05%20Widgets/Form/35%20Generate%20a%20Data%20Object%20from%20Form%20Items.md '/Documentation/Guide/UI_Components/Form/Generate_a_Data_Object_from_Form_Items/')
-- [Form - Validate and Submit the Form](/concepts/05%20Widgets/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Validate_and_Submit_the_Form/')
-- [Form API Reference](/api-reference/10%20UI%20Widgets/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
+- [Form - Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
+- [Form - Organize Simple Items](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/')
+- [Form - Configure Item Labels](/concepts/05%20UI%20Components/Form/15%20Configure%20Item%20Labels/05%20Location%20and%20Alignment '/Documentation/Guide/UI_Components/Form/Configure_Item_Labels/Location_and_Alignment/')
+- [Form - Change Options at Runtime](/concepts/05%20UI%20Components/Form/20%20Change%20Properties%20at%20Runtime/05%20Form%20Properties.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/')
+- [Form - Handle the Value Change Event](/concepts/05%20UI%20Components/Form/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Form/Handle_the_Value_Change_Event/')
+- [Form - Update Form Data Using the API](/concepts/05%20UI%20Components/Form/30%20Update%20Form%20Data%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Form/Update_Form_Data_Using_the_API/')
+- [Form - Generate a Data Object from Form Items](/concepts/05%20UI%20Components/Form/35%20Generate%20a%20Data%20Object%20from%20Form%20Items.md '/Documentation/Guide/UI_Components/Form/Generate_a_Data_Object_from_Form_Items/')
+- [Form - Validate and Submit the Form](/concepts/05%20UI%20Components/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Validate_and_Submit_the_Form/')
+- [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]dxform, form, overview, form data

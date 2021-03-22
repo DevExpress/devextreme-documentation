@@ -2,7 +2,7 @@ The Field Panel is a component that displays the fields involved in calculation 
 
 ![DevExtreme PivotGrid FieldPanel](/images/DataGrid/PivotGrid_fieldPanel_areas.png)
 
-By default, the whole Field Panel is hidden. To make it visible, assign **true** to the **visible** property of the [fieldPanel](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldPanel '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/') object.
+By default, the whole Field Panel is hidden. To make it visible, assign **true** to the **visible** property of the [fieldPanel](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldPanel '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/') object.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
@@ -25,7 +25,7 @@ If the Field Panel is made visible, all field areas become visible as well. To h
         }
     };
     
-The Field Panel partially covers the functionality provided by the [Field Chooser](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser'). For example, the user can reorder fields within a single field area or even between them. If this capability is not required, assign **false** to the **fieldPanel**.[allowFieldDragging](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldPanel/allowFieldDragging.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/#allowFieldDragging') property.
+The Field Panel partially covers the functionality provided by the [Field Chooser](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser'). For example, the user can reorder fields within a single field area or even between them. If this capability is not required, assign **false** to the **fieldPanel**.[allowFieldDragging](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldPanel/allowFieldDragging.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/#allowFieldDragging') property.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
@@ -35,11 +35,11 @@ The Field Panel partially covers the functionality provided by the [Field Choose
         }
     };
 
-Moreover, if the [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') and [allowFiltering](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowFiltering') properties are **true**, the user can apply sorting and filtering to fields directly from the Field Panel.
+Moreover, if the [allowSorting](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') and [allowFiltering](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowFiltering') properties are **true**, the user can apply sorting and filtering to fields directly from the Field Panel.
 
 Functional similarities of the Field Panel and the Field Chooser allow them to work in conjunction. When the fields of the Field Panel are draggable, and the Field Chooser is invoked, the user can move the fields not only within these components, but between them as well.
 
-When empty, each field area of the Field Panel displays an individual placeholder. If you need to change it, use the properties of the **fieldPanel**.[texts](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/fieldPanel/texts '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/texts/') object.
+When empty, each field area of the Field Panel displays an individual placeholder. If you need to change it, use the properties of the **fieldPanel**.[texts](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldPanel/texts '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/texts/') object.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/FieldPanel/"

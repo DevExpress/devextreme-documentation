@@ -1,4 +1,4 @@
-This guide provides a detailed overview of [Sparkline](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline '/Documentation/ApiReference/UI_Components/dxSparkline/') elements. Each topic in this guide contains a brief description of an element and its main configurable features.
+This guide provides a detailed overview of [Sparkline](/api-reference/10%20UI%20Components/dxSparkline '/Documentation/ApiReference/UI_Components/dxSparkline/') elements. Each topic in this guide contains a brief description of an element and its main configurable features.
 
 Below is the element map of the Sparkline UI component. It may be helpful as you begin learning about the capabilities of this UI component. **Hover** over an element on the map to discover the name of this element. A **click** on an element navigates you to a topic devoted to this element.
 

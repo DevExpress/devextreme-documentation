@@ -1,4 +1,4 @@
-A logarithmic axis indicates numeric values; each of them is the [logarithmBase](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#logarithmBase') value raised to some power. For example, **logarithmBase** that is equal to 10 produces the following values: 10<sup>-2</sup>, 10<sup>-1</sup>, 10<sup>0</sup>, 10<sup>1</sup>, 10<sup>2</sup>, 10<sup>3</sup>, etc. That is so if the [tickInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tickInterval/') property is *1*. Changing  **tickInterval**, for example, to *2* removes every second value from this sequence, leaving the following: 10<sup>-1</sup>, 10<sup>1</sup>, 10<sup>3</sup>, etc.
+A logarithmic axis indicates numeric values; each of them is the [logarithmBase](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#logarithmBase') value raised to some power. For example, **logarithmBase** that is equal to 10 produces the following values: 10<sup>-2</sup>, 10<sup>-1</sup>, 10<sup>0</sup>, 10<sup>1</sup>, 10<sup>2</sup>, 10<sup>3</sup>, etc. That is so if the [tickInterval](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tickInterval/') property is *1*. Changing  **tickInterval**, for example, to *2* removes every second value from this sequence, leaving the following: 10<sup>-1</sup>, 10<sup>1</sup>, 10<sup>3</sup>, etc.
 
 ---
 ##### jQuery
@@ -95,7 +95,7 @@ A logarithmic axis indicates numeric values; each of them is the [logarithmBase]
 
 ---
 
-As an alternative to **tickInterval**, you can use the [axisDivisionFactor](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#axisDivisionFactor') property to arrange ticks. This property specifies the minimum distance between two side-by-side ticks in pixels.
+As an alternative to **tickInterval**, you can use the [axisDivisionFactor](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#axisDivisionFactor') property to arrange ticks. This property specifies the minimum distance between two side-by-side ticks in pixels.
 
 ---
 ##### jQuery
@@ -193,5 +193,5 @@ As an alternative to **tickInterval**, you can use the [axisDivisionFactor](/api
 ---
 
 #####See Also#####
-- [Axis Ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/')
+- [Axis Ticks](/concepts/05%20UI%20Components/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/')
 - [Logarithmic Axis Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LogarithmicAxis)

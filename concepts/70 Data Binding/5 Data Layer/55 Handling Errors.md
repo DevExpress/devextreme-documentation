@@ -1,4 +1,4 @@
-DevExtreme includes the [setErrorHandler](/Documentation/ApiReference/Data_Layer/Utils/#setErrorHandler) utility method to help you handle errors that occur within the entire data layer. Pass an error handler to this method. The handler accepts a JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object as a parameter.
+DevExtreme includes the [setErrorHandler](/api-reference/30%20Data%20Layer/Utils/setErrorHandler.md '/Documentation/ApiReference/Data_Layer/Utils/#setErrorHandler') utility method to help you handle errors that occur within the entire data layer. Pass an error handler to this method. The handler accepts a JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object as a parameter.
 
     <!--JavaScript-->
     DevExpress.data.setErrorHandler(function (error) {

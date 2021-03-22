@@ -7,4 +7,4 @@ type: eventType
 Raised when a task is updated.
 
 ---
-Main article: [onTaskUpdated](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskUpdated)
+Main article: [onTaskUpdated](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onTaskUpdated.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskUpdated')

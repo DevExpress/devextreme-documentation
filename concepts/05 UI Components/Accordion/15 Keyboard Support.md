@@ -36,6 +36,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [Accordion Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview)
-- [Accordion API Reference](/api-reference/10%20UI%20Widgets/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
+- [Accordion API Reference](/api-reference/10%20UI%20Components/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
 
 [tags]accordion, accessibility, keyboard shortcuts

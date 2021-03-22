@@ -3,7 +3,7 @@ id: DataSource.items()
 ---
 ---
 ##### shortDescription
-Gets an array of data items on the current [page](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Paging).
+Gets an array of data items on the current [page](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/0%20Paging.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Paging').
 
 ##### return: Array<any>
 Data items.

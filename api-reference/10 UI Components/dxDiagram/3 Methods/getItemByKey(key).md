@@ -12,4 +12,4 @@ A **dxDiagramItem** object descendant ([dxDiagramShape](/api-reference/50%20Comm
 The item key.
 
 ---
-An item key specifies the item's identifier in a data source. If a diagram is not bound to a data source, the key value is empty. In this instance, use the [GetItemById(id)](/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#getItemByIdid) method to get an item by its internal identifier. An item always has an identifier.
+An item key specifies the item's identifier in a data source. If a diagram is not bound to a data source, the key value is empty. In this instance, use the [GetItemById(id)](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/getItemById(id).md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#getItemByIdid') method to get an item by its internal identifier. An item always has an identifier.

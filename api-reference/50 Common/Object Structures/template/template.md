@@ -1,6 +1,6 @@
 ---
 id: template
-type: String | function() | Element | jQuery
+type: String | function() | TElement
 ---
 ---
 ##### shortDescription

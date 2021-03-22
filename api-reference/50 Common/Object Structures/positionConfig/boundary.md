@@ -1,6 +1,6 @@
 ---
 id: positionConfig.boundary
-type: String | Element | jQuery | Window
+type: String | TElement | Window
 ---
 ---
 ##### shortDescription

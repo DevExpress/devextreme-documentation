@@ -44,6 +44,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [ColorBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview)
-- [ColorBox API Reference](/api-reference/10%20UI%20Widgets/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
+- [ColorBox API Reference](/api-reference/10%20UI%20Components/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
 
 [tags]color box, colorBox, navigation, accessibility, keyboard shortcuts

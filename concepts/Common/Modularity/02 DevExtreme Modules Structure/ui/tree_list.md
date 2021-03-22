@@ -2,7 +2,7 @@ Exposes the TreeList UI component.
 
 Exports:
 
-- *default* - The [TreeList](/api-reference/10%20UI%20Widgets/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/') UI component
+- *default* - The [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/') UI component
 
         require("ui/tree_list");
         // ===== or =====

@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides a node'
 The current node's data object.
 
 ---
-Specify this property when your source data has a [hierarchical structure](/concepts/05%20Widgets/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array').
+Specify this property when your source data has a [hierarchical structure](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array').
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesArrayHierarchicalStructure/"

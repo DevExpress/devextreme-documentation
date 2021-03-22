@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.itemData): Object
@@ -25,7 +25,7 @@ The current item's data.
 ##### field(e.itemIndex): Number
 The current item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

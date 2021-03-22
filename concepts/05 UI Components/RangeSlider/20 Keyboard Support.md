@@ -28,6 +28,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [RangeSlider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview)
-- [RangeSlider API Reference](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/')
+- [RangeSlider API Reference](/api-reference/10%20UI%20Components/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/')
 
 [tags]range slider, rangeSlider, accessibility, keyboard shortcuts

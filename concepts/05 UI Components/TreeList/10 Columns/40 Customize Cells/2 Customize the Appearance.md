@@ -1,4 +1,4 @@
-To customize cell appearance, use a column's [cellTemplate](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate). In Angular and Vue, you can declare the template in the markup. In React, you can use a rendering function (shown in the code below) or component:
+To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate'). In Angular and Vue, you can declare the template in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
@@ -103,7 +103,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
 ---
 
-While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onCellPrepared') function can customize any cell. Unlike **cellTemplate**, this function does customizations after a cell is created, so you cannot use it to change the cell value. Check the [rowType](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType') field of the function's argument to detect the UI element that owns the cell.
+While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onCellPrepared') function can customize any cell. Unlike **cellTemplate**, this function does customizations after a cell is created, so you cannot use it to change the cell value. Check the [rowType](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType') field of the function's argument to detect the UI element that owns the cell.
 
 ---
 ##### jQuery
@@ -214,4 +214,4 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 ---
 
 #####See Also#####
-- [Customize Column Headers](/concepts/05%20Widgets/TreeList/10%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Column_Headers/')
+- [Customize Column Headers](/concepts/05%20UI%20Components/TreeList/10%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Column_Headers/')

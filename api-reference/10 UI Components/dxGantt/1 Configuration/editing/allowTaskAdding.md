@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can add [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
+Specifies whether a user can add [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
 
 ---
 
@@ -37,8 +37,8 @@ Right-click a task or a cell in the Gantt chart and select the "Add" context men
 ---
 
 #####See Also#####
-- [onTaskInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserting)
-- [onTaskInserted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserted)
-- [insertTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertTaskdata)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [onTaskInserting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onTaskInserting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserting')
+- [onTaskInserted](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onTaskInserted.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserted')
+- [insertTask](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/insertTask(data).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertTaskdata')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')
 

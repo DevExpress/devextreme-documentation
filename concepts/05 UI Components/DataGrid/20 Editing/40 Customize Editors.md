@@ -1,4 +1,4 @@
-The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') defines a cell's editor that can be configured using the [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') object. However, this object cannot be used to change the editor's type or **onValueChanged** event handler. Instead, use the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') function as shown in the following code. The function's parameter provides the **editorName** and **editorOptions** fields for changing the used editor and its configuration.
+The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') defines a cell's editor that can be configured using the [editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') object. However, this object cannot be used to change the editor's type or **onValueChanged** event handler. Instead, use the [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') function as shown in the following code. The function's parameter provides the **editorName** and **editorOptions** fields for changing the used editor and its configuration.
 
 ---
 ##### jQuery
@@ -200,7 +200,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     
 ---
 
-Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate') for more extensive customization. In this template, you should specify your custom component's appearance and behavior in full. The following code uses the template to substitute the [Switch](/concepts/05%20Widgets/Switch/00%20Overview.md '/Documentation/Guide/UI_Components/Switch/Overview/') UI component for a default editor. This configuration may be useful in [batch editing mode](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20User%20Interaction/30%20Batch%20Mode.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#User_Interaction/Batch_Mode').
+Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate') for more extensive customization. In this template, you should specify your custom component's appearance and behavior in full. The following code uses the template to substitute the [Switch](/concepts/05%20UI%20Components/Switch/00%20Overview.md '/Documentation/Guide/UI_Components/Switch/Overview/') UI component for a default editor. This configuration may be useful in [batch editing mode](/concepts/05%20UI%20Components/DataGrid/20%20Editing/10%20User%20Interaction/30%20Batch%20Mode.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#User_Interaction/Batch_Mode').
 
 ---
 ##### jQuery
@@ -501,5 +501,5 @@ Editors are displayed in cells in the normal state too if you set the **columns*
 ---
 
 #####See Also#####
-- [Columns - Customize Cells](/concepts/05%20Widgets/DataGrid/15%20Columns/40%20Customize%20Cells '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/')
-- [Create a Column with Custom Buttons](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/30%20Create%20a%20Column%20with%20Custom%20Buttons.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/#Create_a_Column_with_Custom_Buttons')
+- [Columns - Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/')
+- [Create a Column with Custom Buttons](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/30%20Create%20a%20Column%20with%20Custom%20Buttons.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/#Create_a_Column_with_Custom_Buttons')

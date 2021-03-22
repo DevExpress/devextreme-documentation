@@ -10,13 +10,13 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fullName): String
 The path to the modified property that includes all parent properties.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.name): String

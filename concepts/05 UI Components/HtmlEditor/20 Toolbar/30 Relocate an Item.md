@@ -54,21 +54,21 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
         <DxHtmlEditor>
             <DxToolbar>
                 <DxItem
-                    format-name="undo"
+                    name="undo"
                     location="after"
                 />
                 <DxItem
-                    format-name="redo"
+                    name="redo"
                     location="after"
                 />
-                <DxItem format-name="alignLeft"/>
-                <DxItem format-name="alignRight"/>
+                <DxItem name="alignLeft"/>
+                <DxItem name="alignRight"/>
                 <DxItem
-                    format-name="color"
+                    name="color"
                     location="center"
                 />
                 <DxItem
-                    format-name="background"
+                    name="background"
                     location="center"
                 />
             </DxToolbar>

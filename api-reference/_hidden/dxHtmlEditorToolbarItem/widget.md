@@ -38,22 +38,28 @@ In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxChec
 
 #####Angular
 
+    <!--HTML-->
+    <dx-html-editor>
+        <dxo-toolbar>
+            <dxi-item
+                widget="dxCheckBox"
+                [options]="checkboxOptions"
+                locateInMenu="never">
+            </dxi-item>
+        </dxo-toolbar>
+    </dx-html-editor>
+
     <!--TypeScript-->
     import { DxHtmlEditorModule, DxCheckBoxModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        items: any = [ // ...
-        {
-            widget: "dxCheckBox",
-            options: {
-                text: "My Format",
-                onValueChanged: function(e) {
-                    // Implement your logic here
-                },
-                // ...
+        checkboxOptions = {
+            text: "My Format",
+            onValueChanged: function(e) {
+                // Implement your logic here
             },
-            locateInMenu: "never"
-        }];
+            // ...
+        }
     }
     @NgModule({
         imports: [
@@ -64,10 +70,83 @@ In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxChec
         // ...
     })
 
-    <!--HTML-->
-    <dx-html-editor>
-        <dxo-toolbar [items]="items"></dxo-toolbar>
-    </dx-html-editor>
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <DxToolbar>
+                <DxItem
+                    widget="dxCheckBox"
+                    :options="checkboxOptions"
+                    locate-in-menu="never"
+                />
+            </DxToolbar>
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxHtmlEditor, {
+        DxToolbar,
+        DxItem
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxToolbar,
+            DxItem
+        },
+        data() {
+            return {
+                checkboxOptions: {
+                    text: "My Format",
+                    onValueChanged: function(e) {
+                        // Implement your logic here
+                    },
+                    // ...
+                }
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useMemo } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor, {
+        Toolbar,
+        Item
+    } from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const checkboxOptions = useMemo(() => {
+            return {
+                text: "My Format",
+                onValueChanged: function(e) {
+                    // Implement your logic here
+                },
+                // ...
+            }
+        }, []);
+
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        widget="dxCheckBox"
+                        options={checkboxOptions}
+                        locateInMenu="never"
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
+    }
 
 #####ASP.NET MVC Controls
 

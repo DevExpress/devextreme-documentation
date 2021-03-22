@@ -50,6 +50,65 @@ A format value.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor :ref="htmlEditorRefKey">
+            <!-- ... -->
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxHtmlEditor from 'devextreme-vue/html-editor';
+
+    const htmlEditorRefKey = "my-html-editor";
+
+    export default {
+        components: {
+            DxHtmlEditor
+        },
+        data() {
+            return {
+                htmlEditorRefKey
+            }
+        },
+        methods: {
+            alignFirstLineToRight() {
+                this.htmlEditor.formatLine(0, 1, "align", "right");
+            }
+        },
+        computed: {
+            htmlEditor: function() {
+                return this.$refs[htmlEditorRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const htmlEditor = useRef(null);
+        
+        const alignFirstLineToRight = () => {
+            htmlEditor.current.instance.formatLine(0, 1, "align", "right");
+        };
+
+        return (
+            <HtmlEditor ref={htmlEditor}>
+                {/* */}
+            </HtmlEditor>
+        );
+    }
+
 ---
 
 #####See Also#####

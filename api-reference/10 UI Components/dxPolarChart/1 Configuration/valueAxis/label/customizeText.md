@@ -14,7 +14,7 @@ Information on the axis value.
 The raw value.
 
 ##### field(axisValue.valueText): String
-The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/label/format.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/label/#format') value converted to a string.
+The [formatted](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/label/format.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/label/#format') value converted to a string.
 
 ##### return: String
 The text for the label to display.
@@ -23,4 +23,4 @@ The text for the label to display.
 #include dataviz-ref-functioncontext
 
 #####See Also#####
-- [Data Formatting](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')
+- [Data Formatting](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')

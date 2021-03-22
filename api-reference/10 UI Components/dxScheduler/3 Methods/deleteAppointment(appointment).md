@@ -6,7 +6,7 @@ id: dxScheduler.deleteAppointment(appointment)
 Deletes an appointment from the timetable and its object from the data source.
 
 ##### param(appointment): Object
-An appointment object from the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource').
+An appointment object from the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource').
 
 ---
 If you delete a recurring appointment from the data source, all its occurrences are also deleted from the timetable:
@@ -242,5 +242,5 @@ If you delete a recurring appointment from the data source, all its occurrences 
 
 #####See Also#####
 #include common-link-callmethods
-- [onAppointmentDeleting](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentDeleting.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting')
-- [onAppointmentDeleted](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentDeleted.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleted')
+- [onAppointmentDeleting](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentDeleting.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting')
+- [onAppointmentDeleted](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentDeleted.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleted')

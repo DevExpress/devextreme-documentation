@@ -27,4 +27,4 @@ The drawer expands from the closed position. The drawer's width is animated; its
 }
 
 #####See Also#####
-- [openedStateMode](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/openedStateMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#openedStateMode')
+- [openedStateMode](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/openedStateMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#openedStateMode')

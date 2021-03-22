@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether [point labels](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label') should be kept when the UI component adapts the layout.
+Specifies whether [point labels](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label') should be kept when the UI component adapts the layout.
 
 ---

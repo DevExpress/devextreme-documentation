@@ -33,4 +33,4 @@ The point does not react to pointing to it.
 }
 
 #####See Also#####
-- [stickyHovering](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/stickyHovering.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#stickyHovering')
+- [stickyHovering](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/stickyHovering.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#stickyHovering')

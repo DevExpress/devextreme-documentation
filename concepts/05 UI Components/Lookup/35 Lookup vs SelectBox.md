@@ -1,4 +1,4 @@
-The Lookup and [SelectBox](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/') UI components implement a similar functionality - while both consist of a text field and display a collection of items in the drop-down list, they also have differences:
+The Lookup and [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/') UI components implement a similar functionality - while both consist of a text field and display a collection of items in the drop-down list, they also have differences:
 
 - **Drop-down field content**   
 The SelectBox has only a list of items in a drop-down field whereas Lookup also has a search field and the Cancel button.
@@ -29,4 +29,4 @@ The SelectBox looks the same on any platform, while Lookup changes its appearanc
 }
 
 #####See Also#####
-- [How to Choose a Drop-Down Editor](/Documentation/Guide/UI_Components/SelectBox/How_to_Choose_a_Drop-Down_Editor/)
+- [How to Choose a Drop-Down Editor](/concepts/05%20UI%20Components/SelectBox/How%20to%20Choose%20a%20Drop-Down%20Editor.md '/Documentation/Guide/UI_Components/SelectBox/How_to_Choose_a_Drop-Down_Editor/')

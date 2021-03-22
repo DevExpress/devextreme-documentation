@@ -14,5 +14,5 @@ Indicates whether to show or hide the UI component.
 ---
 #####See Also#####
 #include common-link-handleevents
-- [show()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#show')
-- [hide()](/api-reference/10%20UI%20Widgets/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#hide')
+- [show()](/api-reference/10%20UI%20Components/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#show')
+- [hide()](/api-reference/10%20UI%20Components/dxContextMenu/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#hide')

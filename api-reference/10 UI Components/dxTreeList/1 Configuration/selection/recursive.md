@@ -13,4 +13,4 @@ Specifies whether selection is recursive.
 }
 
 #####See Also#####
-- [Selection](/concepts/05%20Widgets/TreeList/50%20Selection '/Documentation/Guide/UI_Components/TreeList/Selection/')
+- [Selection](/concepts/05%20UI%20Components/TreeList/50%20Selection '/Documentation/Guide/UI_Components/TreeList/Selection/')

@@ -6,7 +6,7 @@ EventForAction: dxProgressBar.complete
 ---
 ---
 ##### shortDescription
-A function that is executed when the [value](/api-reference/10%20UI%20Widgets/dxProgressBar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value') reaches the [maximum](/api-reference/10%20UI%20Widgets/dxTrackBar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#max').
+A function that is executed when the [value](/api-reference/10%20UI%20Components/dxProgressBar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value') reaches the [maximum](/api-reference/10%20UI%20Components/dxTrackBar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#max').
 
 ##### param(e): Object
 Information about the event.

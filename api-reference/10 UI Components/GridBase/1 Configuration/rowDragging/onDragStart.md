@@ -19,7 +19,7 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
 The row's original position. If the row is dragged from another UI component, the value is **-1**.

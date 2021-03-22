@@ -26,4 +26,4 @@ The series does not react to pointing to it.
 } Note that although this enum accepts more values, only the listed ones can be applied to a bar series.
 
 #####See Also#####
-- [hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/hoverStyle/')
+- [hoverStyle](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/hoverStyle/')

@@ -12,10 +12,10 @@ A function that is executed before the context menu is rendered.
 Information about the event that caused the function's execution.
 
 ##### field(e.column): dxTreeListColumn
-This column's [configuration](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/').
+This column's [configuration](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/').
 
 ##### field(e.columnIndex): Number
-The index of the column on which the context menu is invoked. For details on indexes, see the following help topic: [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/').
+The index of the column on which the context menu is invoked. For details on indexes, see the following help topic: [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/').
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
@@ -24,16 +24,16 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.items): Array<Object>
-Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Widgets/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
+Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
 
 ##### field(e.row): dxTreeListRowObject
-The row [properties](/api-reference/10%20UI%20Widgets/dxTreeList/6%20Row '/Documentation/ApiReference/UI_Components/dxTreeList/Row/').
+The row [properties](/api-reference/10%20UI%20Components/dxTreeList/6%20Row '/Documentation/ApiReference/UI_Components/dxTreeList/Row/').
 
 ##### field(e.rowIndex): Number
-The index of the row on which the context menu is invoked. Refer to the following help topic for more information: [Column and Row Indexes](/concepts/05%20Widgets/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/').
+The index of the row on which the context menu is invoked. Refer to the following help topic for more information: [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/').
 
 ##### field(e.target): String
 The name of the element on which the context menu is invoked: *"header"*, *"content"*, or *"footer"*. This field is read-only.

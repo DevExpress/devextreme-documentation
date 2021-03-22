@@ -15,6 +15,6 @@ Along with TypeScript definitions, you need to reference the libraries themselve
 
 
 #####See Also#####
-- [Configure a UI component Using TypeScript](/concepts/Common/TypeScript%20Support/05%20Configure%20a%20Widget.md '/Documentation/Guide/Common/TypeScript_Support/Configure_a_UI_Component/')
+- [Configure a UI component Using TypeScript](/concepts/Common/TypeScript%20Support/05%20Configure%20a%20UI%20Component.md '/Documentation/Guide/Common/TypeScript_Support/Configure_a_UI_Component/')
 
 [tags]typescript support, typescript definitions

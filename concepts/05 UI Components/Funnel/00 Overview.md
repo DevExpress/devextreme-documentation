@@ -13,23 +13,23 @@ The Funnel can visualize data from any source. Refer to the following topics for
 
 You can also check if a pyramid chart is more suitable for your needs: 
 
-- [Pyramid Chart](/concepts/05%20Widgets/Funnel/10%20Pyramid%20Chart.md '/Documentation/Guide/UI_Components/Funnel/Pyramid_Chart/')
+- [Pyramid Chart](/concepts/05%20UI%20Components/Funnel/10%20Pyramid%20Chart.md '/Documentation/Guide/UI_Components/Funnel/Pyramid_Chart/')
 
 After that, give the UI component a distinctive look and make it more informative with the following elements:
 
-- [Funnel Items](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Overview/')
-- [Item Labels](/concepts/05%20Widgets/Funnel/17%20Item%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Overview/')
-- [Legend](/concepts/05%20Widgets/Funnel/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Legend/Overview/')
-- [Title and Subtitle](/concepts/05%20Widgets/Funnel/58%20Title%20and%20Subtitle.md '/Documentation/Guide/UI_Components/Funnel/Title_and_Subtitle/')
+- [Funnel Items](/concepts/05%20UI%20Components/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Overview/')
+- [Item Labels](/concepts/05%20UI%20Components/Funnel/17%20Item%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Overview/')
+- [Legend](/concepts/05%20UI%20Components/Funnel/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Legend/Overview/')
+- [Title and Subtitle](/concepts/05%20UI%20Components/Funnel/58%20Title%20and%20Subtitle.md '/Documentation/Guide/UI_Components/Funnel/Title_and_Subtitle/')
 
 Finally, add some interactivity:
 
-- [Tooltips](/concepts/05%20Widgets/Funnel/30%20Tooltips/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Tooltips/Overview/')
-- [Client-Side Exporting and Printing](/concepts/05%20Widgets/Funnel/99%20Client-Side%20Exporting%20and%20Printing '/Documentation/Guide/UI_Components/Funnel/Client-Side_Exporting_and_Printing/')
-- [Adaptive Layout](/concepts/05%20Widgets/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Funnel/Adaptive_Layout/')
+- [Tooltips](/concepts/05%20UI%20Components/Funnel/30%20Tooltips/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Tooltips/Overview/')
+- [Client-Side Exporting and Printing](/concepts/05%20UI%20Components/Funnel/99%20Client-Side%20Exporting%20and%20Printing '/Documentation/Guide/UI_Components/Funnel/Client-Side_Exporting_and_Printing/')
+- [Adaptive Layout](/concepts/05%20UI%20Components/Funnel/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Funnel/Adaptive_Layout/')
 
 #####See Also#####
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
-- [Funnel API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel '/Documentation/ApiReference/UI_Components/dxFunnel/')
+- [Funnel API Reference](/api-reference/10%20UI%20Components/dxFunnel '/Documentation/ApiReference/UI_Components/dxFunnel/')
 
 [tags]dxfunnel

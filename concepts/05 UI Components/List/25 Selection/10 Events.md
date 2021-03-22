@@ -1,4 +1,4 @@
-The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Widgets/CollectionWidget/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectionChanged') event when an item is selected or when the selection is cancelled. The UI component also fires the [selectAllValueChanged](/api-reference/10%20UI%20Widgets/dxList/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectAllValueChanged') event when the [*"Select All"*](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectAllMode') check box has changed its value. If the functions that handle these events are not going to be changed during the lifetime of the UI component, assign them to the corresponding **on*EventName*** properties when you configure the UI component.
+The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectionChanged') event when an item is selected or when the selection is cancelled. The UI component also fires the [selectAllValueChanged](/api-reference/10%20UI%20Components/dxList/4%20Events/selectAllValueChanged.md '/Documentation/ApiReference/UI_Components/dxList/Events/#selectAllValueChanged') event when the [*"Select All"*](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectAllMode') check box has changed its value. If the functions that handle these events are not going to be changed during the lifetime of the UI component, assign them to the corresponding **on*EventName*** properties when you configure the UI component.
 
 ---
 ##### jQuery
@@ -114,7 +114,7 @@ The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Widg
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
 }
 
-If you are going to change the event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change the event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     const selectionChangedEventHandler1 = function(e) {
@@ -131,4 +131,4 @@ If you are going to change the event handlers at runtime, or if you need to atta
 
 #####See Also#####
 #include common-link-handleevents
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')

@@ -1,4 +1,4 @@
-Declare two-way binding between the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#dataSource') property and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. To do this, configure the **bindingOptions** object in the Sankey as follows:
+Declare two-way binding between the [dataSource](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#dataSource') property and the <a href="https://docs.angularjs.org/guide/scope" target="_blank">scope</a> property that contains an array. To do this, configure the **bindingOptions** object in the Sankey as follows:
 
     <!--HTML-->
     <div ng-controller="DemoController">

@@ -17,4 +17,4 @@ If this property is set to **true**, the tooltip also displays information about
 }
 
 #####See Also#####
-- [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '{basewidgetpath}/Configuration/tooltip/#customizeTooltip')
+- [customizeTooltip](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '{basewidgetpath}/Configuration/tooltip/#customizeTooltip')

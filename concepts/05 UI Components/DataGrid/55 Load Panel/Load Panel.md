@@ -2,7 +2,7 @@ The load panel is displayed while the UI component loads data. It consists of a 
 
 ![DevExtreme HTML5/JavaScript DataGrid UI component - Load Panel](/images/DataGrid/visual_elements/load_panel.png)
 
-The load panel is shown only for remote data sources by default. To show it regardless of the data source type, assign **true** to the **loadPanel**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/loadPanel/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/loadPanel/#enabled') property. Setting the same property to **false** disables the load panel completely.
+The load panel is shown only for remote data sources by default. To show it regardless of the data source type, assign **true** to the **loadPanel**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/loadPanel/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/loadPanel/#enabled') property. Setting the same property to **false** disables the load panel completely.
 
 ---
 ##### jQuery
@@ -83,7 +83,7 @@ The load panel is shown only for remote data sources by default. To show it rega
     
 ---
 
-You can also control the load panel programmatically using the [beginCustomLoading(messageText)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/beginCustomLoading(messageText).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#beginCustomLoadingmessageText') and [endCustomLoading()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/endCustomLoading().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#endCustomLoading') methods.
+You can also control the load panel programmatically using the [beginCustomLoading(messageText)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/beginCustomLoading(messageText).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#beginCustomLoadingmessageText') and [endCustomLoading()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/endCustomLoading().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#endCustomLoading') methods.
 
 ---
 ##### jQuery
@@ -187,7 +187,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     
 ---
 
-Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') UI component, you can declare any [properties of this UI component](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/') in the DataGrid's [loadPanel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/loadPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/loadPanel/') object. For example, you can change the panel's size with the [height](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#width') properties, or employ another loading indicator using the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
+Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') UI component, you can declare any [properties of this UI component](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/') in the DataGrid's [loadPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/loadPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/loadPanel/') object. For example, you can change the panel's size with the [height](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#width') properties, or employ another loading indicator using the [indicatorSrc](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
 
 ---
 ##### jQuery

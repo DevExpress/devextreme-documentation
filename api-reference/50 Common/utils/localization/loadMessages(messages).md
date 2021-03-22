@@ -11,45 +11,6 @@ Loads localized messages.
 The messages to be loaded.
 
 ---
----
-##### jQuery
-
-    <!--JavaScript-->
-    DevExpress.localization.loadMessages({
-        "en": {
-            "Yes": "Yes",
-            "No": "No",
-            // ...
-        },
-        "es": {
-            "Yes": "Si",
-            "No": "No",
-            // ...
-        }
-    });
-
-##### Angular
-
-    <!--TypeScript-->
-    import { loadMessages } from "devextreme/localization";
-    // ...
-    export class AppComponent {
-        constructor() {
-            loadMessages({
-                "en": {
-                    "Yes": "Yes",
-                    "No": "No",
-                    // ...
-                },
-                "es": {
-                    "Yes": "Si",
-                    "No": "No",
-                    // ...
-                }
-            });
-        }
-    }
-
----
+Refer to the following help topic for a code example: [Add Strings to a Dictionary](/Documentation/Guide/Common/Localization/#Dictionaries/Add_Strings_to_a_Dictionary).
 
 [note]It is necessary to reload the page each time you load new messages.

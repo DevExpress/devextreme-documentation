@@ -177,7 +177,7 @@ To scroll the ScrollView content by a specified distance, call the [scrollBy(dis
 
 ---
 
-To scroll the content both vertically and horizontally, call the [scrollBy(distanceObj)](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollBy(distanceObject).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistanceObject') method with an object as an argument. The format of the object is the following: { left: *value1*, top: *value2* }. Note that in this case, the [direction](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction') property must be set to *"both"*
+To scroll the content both vertically and horizontally, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method with an object as an argument. The format of the object is the following: { left: *value1*, top: *value2* }. In this case, set the [direction](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction') property to *"both"*:
 
 ---
 

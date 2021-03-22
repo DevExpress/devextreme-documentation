@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides an inde
 ##### param(data): Object
 The current edge's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The built-in shape's connection points are numbered clockwise from the leftmost point on the top border.
 

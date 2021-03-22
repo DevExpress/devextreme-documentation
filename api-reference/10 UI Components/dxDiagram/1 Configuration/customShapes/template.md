@@ -15,6 +15,9 @@ Information about the shape.
 ##### field(data.item): dxDiagramShape
 The shapes object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The template content must be presented as SVG elements.
 

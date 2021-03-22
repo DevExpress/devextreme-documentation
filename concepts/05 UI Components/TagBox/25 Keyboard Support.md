@@ -33,6 +33,14 @@ An end user can use the following keys to interact with the UI component.
         <td>Backspace</td>
         <td>Unselects the last selected item.</td>
     </tr>
+    <tr>
+        <td>&larr; / &rarr;</td>
+        <td>Focuses the previous/following tag.</td>
+    </tr>
+    <tr>
+        <td>Backspace / Delete</td>
+        <td>Removes focused tag.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler

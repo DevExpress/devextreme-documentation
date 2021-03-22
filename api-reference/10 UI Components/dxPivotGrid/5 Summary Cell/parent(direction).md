@@ -12,4 +12,4 @@ The parent cell.
 The direction in which to search for the parent cell. Can be "row" or "column".
 
 ---
-This method is opposite of the [child(direction, fieldValue)](/api-reference/10%20UI%20Widgets/dxPivotGrid/5%20Summary%20Cell/child(direction_fieldValue).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Summary_Cell/#childdirection_fieldValue') method.
+This method is opposite of the [child(direction, fieldValue)](/api-reference/10%20UI%20Components/dxPivotGrid/5%20Summary%20Cell/child(direction_fieldValue).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Summary_Cell/#childdirection_fieldValue') method.

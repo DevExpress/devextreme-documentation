@@ -12,7 +12,7 @@ Specifies whether a user changes the current filter by including (selecting) or 
 This property accepts the following values:
 
 - **include**       
-Values in the [header filter](/concepts/05%20Widgets/PivotGrid/080%20Filtering/020%20Filtering%20in%20the%20UI.md '/Documentation/Guide/UI_Components/PivotGrid/Filtering/#Filtering_in_the_UI') are unselected initially. Users change the filter by selecting the values.
+Values in the [header filter](/concepts/05%20UI%20Components/PivotGrid/080%20Filtering/020%20Filtering%20in%20the%20UI.md '/Documentation/Guide/UI_Components/PivotGrid/Filtering/#Filtering_in_the_UI') are unselected initially. Users change the filter by selecting the values.
 
 - **exclude**       
 All values in the header filter are selected initially. Users changes the filter by clearing the selection of certain values.

@@ -13,7 +13,7 @@ The value of this property determines the start and end point of the layout. See
 
 ![DevExpress DevExtreme HTML5 TreeMap LayoutDirection](/images/ChartJS/TreeMap_layoutDirections.png)
 
-[note]If you use a custom [layout algorithm](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/layoutAlgorithm.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#layoutAlgorithm'), this property will be ignored.
+[note]If you use a custom [layout algorithm](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/layoutAlgorithm.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#layoutAlgorithm'), this property will be ignored.
 
 #include common-ref-enum with {
     enum: "`TreeMapLayoutDirection`",

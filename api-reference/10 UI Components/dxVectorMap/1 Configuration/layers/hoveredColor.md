@@ -10,4 +10,4 @@ Specifies a color for a layer element when it is hovered over.
 ---
 #include common-colorlist
 
-[note] Make sure that the [hoverEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/hoverEnabled.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#hoverEnabled') property is set to **true**, so that the **hoveredColor** property takes effect.
+[note] Make sure that the [hoverEnabled](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/hoverEnabled.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#hoverEnabled') property is set to **true**, so that the **hoveredColor** property takes effect.

@@ -1,4 +1,4 @@
-Selection can be conducted in single or multiple mode. In single mode, which is enabled by default, only one map area or marker can be in the selected state at a time. In multiple mode, several map areas or markers can be in the selected state at the same time. To specify the required mode, use the [selectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/selectionMode.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#selectionMode') property of a layer.
+Selection can be conducted in single or multiple mode. In single mode, which is enabled by default, only one map area or marker can be in the selected state at a time. In multiple mode, several map areas or markers can be in the selected state at the same time. To specify the required mode, use the [selectionMode](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/selectionMode.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#selectionMode') property of a layer.
 
 	<!--JavaScript-->var vectorMapCfg = {
 		// ...

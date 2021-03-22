@@ -128,4 +128,4 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeAnnotation')

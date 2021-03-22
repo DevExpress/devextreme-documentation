@@ -24,7 +24,7 @@ The UI component that raised the event.
 #include common-ref-eventparam
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
 The item's original position. If the item is dragged from another UI component, the value is **-1**.

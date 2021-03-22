@@ -11,4 +11,4 @@ The cell's container.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [getCellElement(rowIndex, visibleColumnIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getCellElement(rowIndex_visibleColumnIndex).md '{basewidgetpath}/Methods/#getCellElementrowIndex_visibleColumnIndex')
+- [getCellElement(rowIndex, visibleColumnIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCellElement(rowIndex_visibleColumnIndex).md '{basewidgetpath}/Methods/#getCellElementrowIndex_visibleColumnIndex')

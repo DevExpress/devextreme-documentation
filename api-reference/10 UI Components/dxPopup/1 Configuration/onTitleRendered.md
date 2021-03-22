@@ -6,7 +6,7 @@ EventForAction: dxPopup.titleRendered
 ---
 ---
 ##### shortDescription
-A function that is executed when the UI component's [title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '{basewidgetpath}/Configuration/#title') is rendered.
+A function that is executed when the UI component's [title](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/title.md '{basewidgetpath}/Configuration/#title') is rendered.
 
 ##### param(e): Object
 Information about the event.

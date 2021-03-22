@@ -5,6 +5,6 @@ default: 'hasItems'
 ---
 ---
 ##### shortDescription
-Specifies the name of the data source item field whose value defines whether or not the corresponding [node](/api-reference/10%20UI%20Widgets/dxTreeView/4%20Node '/Documentation/ApiReference/UI_Components/dxTreeView/Node/') includes child nodes.
+Specifies the name of the data source item field whose value defines whether or not the corresponding [node](/api-reference/10%20UI%20Components/dxTreeView/4%20Node '/Documentation/ApiReference/UI_Components/dxTreeView/Node/') includes child nodes.
 
 ---

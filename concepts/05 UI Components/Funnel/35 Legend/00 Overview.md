@@ -2,7 +2,7 @@ The legend is a component that helps a user identify funnel items. The legend co
 
 ![Funnel Legend](/images/Funnel/visual_elements/legend.png)
 
-Propertiesthat configure the legend's appearance, location, and content are collected in the [legend](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/') object. To make the legend visible, set the **legend**.**visible** property to **true**.
+Propertiesthat configure the legend's appearance, location, and content are collected in the [legend](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/') object. To make the legend visible, set the **legend**.**visible** property to **true**.
 
 ---
 ##### jQuery
@@ -77,6 +77,6 @@ Propertiesthat configure the legend's appearance, location, and content are coll
 ---
 
 #####See Also#####
-- [Relocate the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Funnel/Legend/Relocate_the_Legend/')
-- [Rearrange Legend Items](/concepts/05%20Widgets/Funnel/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Funnel/Legend/Rearrange_Legend_Items/')
-- [User Interaction with the Legend](/concepts/05%20Widgets/Funnel/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/UI_Components/Funnel/Legend/User_Interaction/')
+- [Relocate the Legend](/concepts/05%20UI%20Components/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Funnel/Legend/Relocate_the_Legend/')
+- [Rearrange Legend Items](/concepts/05%20UI%20Components/Funnel/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Funnel/Legend/Rearrange_Legend_Items/')
+- [User Interaction with the Legend](/concepts/05%20UI%20Components/Funnel/35%20Legend/30%20User%20Interaction.md '/Documentation/Guide/UI_Components/Funnel/Legend/User_Interaction/')

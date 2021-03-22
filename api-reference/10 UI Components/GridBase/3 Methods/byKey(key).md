@@ -23,4 +23,4 @@ The following code shows how to get a data object whose key is 15.
 
 #####See Also#####
 #include common-link-callmethods
-- [instance()](/api-reference/10%20UI%20Widgets/Component/3%20Methods/instance().md '{basewidgetpath}/Methods/#instance')
+- [instance()](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '{basewidgetpath}/Methods/#instance')

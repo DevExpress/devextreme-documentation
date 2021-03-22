@@ -7,7 +7,7 @@ type: eventType
 Raised when the map is ready.
 
 ---
-Main article: [onReady](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/onReady.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onReady')
+Main article: [onReady](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/onReady.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onReady')
 
 #####See Also#####
 #include common-link-handleevents

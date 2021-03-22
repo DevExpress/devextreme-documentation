@@ -35,4 +35,4 @@ Topics in this section describe various elements of the LinearGauge UI component
 </map>
 
 #####See Also#####
-- [LinearGauge API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge '/Documentation/ApiReference/UI_Components/dxLinearGauge')
+- [LinearGauge API Reference](/api-reference/10%20UI%20Components/dxLinearGauge '/Documentation/ApiReference/UI_Components/dxLinearGauge')

@@ -13,7 +13,7 @@ Information about the Form.
 The Form instance.
 
 ##### field(data.formData): Object
-The [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object.
+The [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object.
 
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "current group item" }
@@ -29,4 +29,4 @@ Use the **template** property of a group item to display custom content under a 
 [note]To define a custom template used to render group items, assign the required template name or template container to each simple item's template property.
 
 #####See Also#####
-- [Custom Content within a Group](/concepts/05%20Widgets/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/10%20Custom%20Content%20within%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/#Custom_Content_within_a_Group')
+- [Custom Content within a Group](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/10%20Custom%20Content%20within%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/#Custom_Content_within_a_Group')

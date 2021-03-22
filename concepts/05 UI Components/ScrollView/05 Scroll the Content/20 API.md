@@ -1,5 +1,5 @@
 
-To scroll the ScrollView content by a specified distance, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method and pass a `Number` as a parameter. If you need to scroll in the opposite direction, the `distance` parameter should be a negative number.
+To scroll through ScrollView content by a specified distance, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method and pass a `Number` as a parameter. If you need to scroll in the opposite direction, the `distance` parameter should be a negative number.
 
 ---
 
@@ -179,7 +179,7 @@ To scroll the ScrollView content by a specified distance, call the [scrollBy(dis
 ---
 
 
-To scroll the content both vertically and horizontally, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method with an object as an argument. The format of the object is the following: { left: *value1*, top: *value2* }. In this case, set the [direction](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction) property to *"both"*:
+To scroll content vertically and horizontally, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method with an object as an argument. The format of the object is the following: { left: *value1*, top: *value2* }. In this case, set the [direction](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction) property to *"both"*:
 
 
 ---
@@ -492,7 +492,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
 
 ---
 
-To scroll the content to a specific element, call the [scrollToElement(element)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollToElementelement) method. 
+To scroll content to a specific element, call the [scrollToElement(element)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollToElementelement) method. 
 
 ---
 

@@ -1,4 +1,4 @@
-The Gallery UI component supports the display of images in a slideshow. To specify the time span that the UI component must wait before moving on to the next image, assign a positive number to the [slideshowDelay](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/slideshowDelay.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#slideshowDelay') property. This number specifies the time span in milliseconds. If it is zero, slideshow is disabled.
+The Gallery UI component supports the display of images in a slideshow. To specify the time span that the UI component must wait before moving on to the next image, assign a positive number to the [slideshowDelay](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/slideshowDelay.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#slideshowDelay') property. This number specifies the time span in milliseconds. If it is zero, slideshow is disabled.
 
 ---
 ##### jQuery
@@ -104,10 +104,10 @@ The Gallery UI component supports the display of images in a slideshow. To speci
 ---
 
 #####See Also#####
-- [Gallery - Switch Between Images](/concepts/05%20Widgets/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/UI_Components/Gallery/Switch_Between_Images/')
-- [Gallery - Animate the Image Change](/concepts/05%20Widgets/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
-- [Gallery - Transform and Combine Images](/concepts/05%20Widgets/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
+- [Gallery - Switch Between Images](/concepts/05%20UI%20Components/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/UI_Components/Gallery/Switch_Between_Images/')
+- [Gallery - Animate the Image Change](/concepts/05%20UI%20Components/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
+- [Gallery - Transform and Combine Images](/concepts/05%20UI%20Components/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
-- [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
+- [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]gallery, loop, slideshow, slideshowDelay

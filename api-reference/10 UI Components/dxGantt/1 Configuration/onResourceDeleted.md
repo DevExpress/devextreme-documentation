@@ -145,5 +145,5 @@ The values of the deleted resource.
 ---
 
 #####See Also#####
-- [resourceDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceDeleted)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [resourceDeleted](/api-reference/10%20UI%20Components/dxGantt/4%20Events/resourceDeleted.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceDeleted')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

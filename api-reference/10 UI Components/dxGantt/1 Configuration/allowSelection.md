@@ -27,5 +27,5 @@ Specifies whether users can select tasks in the Gantt.
 ---
 
 #####See Also#####
-- [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onSelectionChanged') 
-- [selectedRowKey](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/selectedRowKey.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#selectedRowKey')
+- [onSelectionChanged](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onSelectionChanged') 
+- [selectedRowKey](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/selectedRowKey.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#selectedRowKey')

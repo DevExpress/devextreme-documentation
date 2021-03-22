@@ -3,7 +3,7 @@ id: dxValidationGroup.validate()
 ---
 ---
 ##### shortDescription
-Validates rules of the [validators](/api-reference/10%20UI%20Widgets/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator/') that belong to the current validation group.
+Validates rules of the [validators](/api-reference/10%20UI%20Components/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator/') that belong to the current validation group.
 
 ##### return: dxValidationGroupResult
 The current group's validation result.

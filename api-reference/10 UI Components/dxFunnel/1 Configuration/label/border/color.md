@@ -10,4 +10,4 @@ Colors the label borders.
 ---
 #include common-colorlist
 
-[note] Make the label borders visible by setting the **label**.**border**.[visible](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label/border/visible.md '{basewidgetpath}/Configuration/label/border/#visible') property to **true**.
+[note] Make the label borders visible by setting the **label**.**border**.[visible](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label/border/visible.md '{basewidgetpath}/Configuration/label/border/#visible') property to **true**.

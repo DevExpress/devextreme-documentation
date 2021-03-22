@@ -2,7 +2,7 @@
 id: dxDataGrid.Options.onFileSaving
 type: function(e)
 default: null
-deprecated: Since v20.1, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/') which does not use this property.
+deprecated: Since v20.1, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/') which does not use this property.
 ---
 ---
 ##### shortDescription
@@ -31,5 +31,5 @@ The format of this file. Equals *"EXCEL"* for an Excel file.
 
 ---
 #####See Also#####
-- [onExporting](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting')
-- [onExported](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onExported.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExported')
+- [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting')
+- [onExported](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExported.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExported')

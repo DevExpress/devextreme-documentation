@@ -47,5 +47,5 @@ Ensure that one- or two-way binding is used to bind the **dataSource** property 
     export class AppModule { }
 
 #####See Also#####
-- [One-Way Option Binding](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/32%20One-Way%20Option%20Binding.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#One-Way_Property_Binding')
-- [Two-Way Option Binding](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Option%20Binding.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding')
+- [One-Way Option Binding](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/32%20One-Way%20Property%20Binding.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#One-Way_Property_Binding')
+- [Two-Way Option Binding](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Property%20Binding.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding')

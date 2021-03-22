@@ -1,6 +1,6 @@
 The following instructions explain how to dynamically change an editor's properties based on another editor's value:
 
-1. **Implement the [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') event handler**  
+1. **Implement the [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') event handler**  
 Use this handler's **editorOptions** parameter to change editor properties. The code below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no entered value:
 
     ---
@@ -293,4 +293,4 @@ Specify **setCellValue** for those columns whose editors should affect other edi
 The full project is available on GitHub: [DataGrid - How to hide/disable Edit Form items based on another item's value](https://github.com/DevExpress-Examples/DataGrid-How-to-hide-disable-certain-Edit-Form-items-based-on-another-item-s-value)
 
 #####See Also#####
-- [Customize Editors](/concepts/05%20Widgets/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors')
+- [Customize Editors](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors')

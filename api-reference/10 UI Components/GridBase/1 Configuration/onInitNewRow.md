@@ -26,7 +26,7 @@ Model data. Available only if you use Knockout.
 Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
-You can use this function to populate a new row with data. Add fields to the **data** object that correspond to the [data source](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') object's fields. Note that the **data** object can omit some fields from the data source object. Add only those fields that should initialize specific cells of a new row.
+You can use this function to populate a new row with data. Add fields to the **data** object that correspond to the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') object's fields. Note that the **data** object can omit some fields from the data source object. Add only those fields that should initialize specific cells of a new row.
 
 In the following code, the **onInitNewRow** function is used to provide default values for the new row's `ID`, `hireDate`, and `position` cells. The **promise** parameter is used to obtain values for the `ID` and `position` cell values asynchronously:
 

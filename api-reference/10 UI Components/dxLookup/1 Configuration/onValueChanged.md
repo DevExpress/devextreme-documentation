@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed after the UI component's [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') is changed.
+A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') is changed.
 
 ##### param(e): Object
 Information about the event.
@@ -34,4 +34,4 @@ The UI component's new value.
 }
 
 #####See Also#####
-- [valueChangeEvent]({basewidgetpath}/Configuration/#valueChangeEvent)
+- [valueChangeEvent](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/valueChangeEvent.md '{basewidgetpath}/Configuration/#valueChangeEvent')

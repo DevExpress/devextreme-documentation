@@ -1,4 +1,4 @@
-Use deferred mode to increase the DataGrid's performance when [selecting multiple rows](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') at once. In this mode, only the API (for example, the [getSelectedRowsData()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowKeys().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowKeys') method) can request the DataGrid data. Assign **true** to the **selection**.[deferred](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selection/deferred.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred') property to use deferred selection.
+Use deferred mode to increase the DataGrid's performance when [selecting multiple rows](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') at once. In this mode, only the API (for example, the [getSelectedRowsData()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowKeys().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowKeys') method) can request the DataGrid data. Assign **true** to the **selection**.[deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/deferred.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred') property to use deferred selection.
 
 ---
 
@@ -130,13 +130,13 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
 
 ---
 
-[note]You should specify the **key** property of the [Store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') underlying the [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') to ensure that deferred selection works properly.
+[note]You should specify the **key** property of the [Store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') underlying the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') to ensure that deferred selection works properly.
 
 The following tasks require using different API in deferred mode:
 
 - **Setting initial selection**  
 
-   You should use the [selectionFilter](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selectionFilter.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#selectionFilter') instead of the [selectedRowKeys](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/selectedRowKeys.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#selectedRowKeys') property to set the initially selected rows in deferred mode. Pass a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering') to define records that should be selected.
+   You should use the [selectionFilter](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selectionFilter.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#selectionFilter') instead of the [selectedRowKeys](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selectedRowKeys.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#selectedRowKeys') property to set the initially selected rows in deferred mode. Pass a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering') to define records that should be selected.
 
     ---
 
@@ -351,11 +351,11 @@ The following tasks require using different API in deferred mode:
 
 - **Checking whether a row is selected**  
 
-    Use the [isRowSelected(data)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/isRowSelected(data).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isRowSelecteddata') method to determine whether a row is selected. 
+    Use the [isRowSelected(data)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/isRowSelected(data).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isRowSelecteddata') method to determine whether a row is selected. 
 
 - **Getting the selected rows' data**  
 
-    In deferred mode, the [getSelectedRowsData()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowsData') and [getSelectedRowKeys()](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/getSelectedRowKeys().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowKeys') methods return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery. Get the data within the callback function that resolves the Promise. This is data before being processed in the **DataSource**.
+    In deferred mode, the [getSelectedRowsData()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowsData') and [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowKeys().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getSelectedRowKeys') methods return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery. Get the data within the callback function that resolves the Promise. This is data before being processed in the **DataSource**.
     
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/DeferredSelection/"

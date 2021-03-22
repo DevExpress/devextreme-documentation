@@ -2,7 +2,7 @@ A tooltip is a small pop-up rectangle that displays information about a sankey n
 
 ![Sankey Tooltip](/images/Sankey/visual_elements/tooltip.png)
 
-Properties that configure tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/tooltip/') object. If you want to customize a specific tooltip, assign a function to the [customizeNodeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/tooltip/customizeNodeTooltip.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/tooltip/#customizeNodeTooltip') or [customizeLinkTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/tooltip/customizeLinkTooltip.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/tooltip/#customizeLinkTooltip') property, depending on whether the tooltip belongs to a sankey node or link. This function should return a configuration object for the tooltip you want to customize.
+Properties that configure tooltips are collected in the [tooltip](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/tooltip/') object. If you want to customize a specific tooltip, assign a function to the [customizeNodeTooltip](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/tooltip/customizeNodeTooltip.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/tooltip/#customizeNodeTooltip') or [customizeLinkTooltip](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/tooltip/customizeLinkTooltip.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/tooltip/#customizeLinkTooltip') property, depending on whether the tooltip belongs to a sankey node or link. This function should return a configuration object for the tooltip you want to customize.
 
 ---
 ##### jQuery
@@ -112,4 +112,4 @@ Properties that configure tooltips are collected in the [tooltip](/api-reference
 }
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/Sankey/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Sankey/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Show and Hide a Tooltip](/concepts/05%20UI%20Components/Sankey/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Sankey/Tooltips/Show_and_Hide_a_Tooltip/')

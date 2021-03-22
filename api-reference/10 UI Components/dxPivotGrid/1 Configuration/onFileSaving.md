@@ -2,7 +2,7 @@
 id: dxPivotGrid.Options.onFileSaving
 type: function(e)
 default: null
-deprecated: Since v20.2, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/') which does not use this property.
+deprecated: Since v20.2, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/') which does not use this property.
 ---
 ---
 ##### shortDescription

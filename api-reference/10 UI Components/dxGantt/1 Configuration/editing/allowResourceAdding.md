@@ -5,8 +5,8 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can add [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
-[tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
+Specifies whether a user can add [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources').
+[tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
 
 ---
 
@@ -37,7 +37,7 @@ Set the **allowResourceAdding** option to **false** to disable the **Add** butto
 
 ---
 
-Note that you cannot open the "Resource Manager" dialog if the **allowResourceAdding** and [allowResourceDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowResourceDeleting) options are set to **false**.
+Note that you cannot open the "Resource Manager" dialog if the **allowResourceAdding** and [allowResourceDeleting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/editing/allowResourceDeleting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowResourceDeleting') options are set to **false**.
 
 ![DevExtreme Gantt Chart - Disabled Resource Manager](/images/Gantt/edit-dialog-diable-resource-manager.png)
 
@@ -58,7 +58,7 @@ Note that you cannot open the "Resource Manager" dialog if the **allowResourceAd
 ---
 
 #####See Also#####
-- [onResourceInserting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserting)
-- [onResourceInserted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserted)
-- [insertResource](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertResourcedata_taskKeys)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [onResourceInserting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onResourceInserting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserting')
+- [onResourceInserted](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onResourceInserted.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceInserted')
+- [insertResource](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/insertResource(data_taskKeys).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#insertResourcedata_taskKeys')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

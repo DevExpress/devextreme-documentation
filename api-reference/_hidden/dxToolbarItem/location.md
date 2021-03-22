@@ -17,4 +17,4 @@ Whatever template you use for UI component items (default or a custom) will be l
 }
 
 #####See Also#####
-- [Toolbar - Specify Item Location](/concepts/05%20Widgets/Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Location/')
+- [Toolbar - Specify Item Location](/concepts/05%20UI%20Components/Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Location/')

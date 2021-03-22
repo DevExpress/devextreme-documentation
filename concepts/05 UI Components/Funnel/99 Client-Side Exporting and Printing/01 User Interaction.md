@@ -2,7 +2,7 @@ To export or print the Funnel, a user clicks the *"Exporting/Printing"* button a
 
 ![Funnel Export Menu](/images/Funnel/visual_elements/export-menu.png)
 
-You can enable both exporting and printing by setting the [export](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/').**enabled** property to **true**. If you need only exporting to be available to the user, disable printing by assigning **false** to the **export**.[printingEnabled](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/printingEnabled.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/#printingEnabled') property.
+You can enable both exporting and printing by setting the [export](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/').**enabled** property to **true**. If you need only exporting to be available to the user, disable printing by assigning **false** to the **export**.[printingEnabled](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/printingEnabled.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/#printingEnabled') property.
 
 ---
 ##### jQuery
@@ -86,7 +86,7 @@ You can enable both exporting and printing by setting the [export](/api-referenc
 
 ---
 
-If you want to restrict the set of formats available for exporting, change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/#formats') array. You can also specify the default name for the exported file using the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/#fileName') property.
+If you want to restrict the set of formats available for exporting, change the **export**.[formats](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/#formats') array. You can also specify the default name for the exported file using the [fileName](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/export/#fileName') property.
 
 ---
 ##### jQuery

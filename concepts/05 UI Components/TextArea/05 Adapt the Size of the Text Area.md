@@ -1,4 +1,4 @@
-If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') properties.
+If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') properties.
 
 ---
 ##### jQuery
@@ -157,8 +157,8 @@ Alternatively, the UI component's height can adapt to the UI component's content
 ---
 
 #####See Also#####
-- [TextArea - Limit the Text Length](/concepts/05%20Widgets/TextArea/15%20Limit%20the%20Text%20Length.md '/Documentation/Guide/UI_Components/TextArea/Limit_the_Text_Length/')
+- [TextArea - Limit the Text Length](/concepts/05%20UI%20Components/TextArea/15%20Limit%20the%20Text%20Length.md '/Documentation/Guide/UI_Components/TextArea/Limit_the_Text_Length/')
 - [TextArea Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview)
-- [TextArea API Reference](/api-reference/10%20UI%20Widgets/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
+- [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
 
 [tags]textArea, text area, editor, size, height, width, adaptive, minimum height, maximum height, autoResizeEnabled

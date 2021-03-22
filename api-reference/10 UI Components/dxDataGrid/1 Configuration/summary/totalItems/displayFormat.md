@@ -10,8 +10,8 @@ Specifies the summary item's text.
 ---
 You can use the following position markers in this text: 
 
-- {0} - [formatted](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/valueFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#valueFormat') summary value.
-- {1} - the parent column's [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption'). Available if the [showInColumn](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/showInColumn.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn') property is specified.
+- {0} - [formatted](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/valueFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#valueFormat') summary value.
+- {1} - the parent column's [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption'). Available if the [showInColumn](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/showInColumn.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#showInColumn') property is specified.
 
 ---
 #####jQuery
@@ -125,4 +125,4 @@ You can use the following position markers in this text:
     
 ---
 
-Use the [customizeText](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/summary/totalItems/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#customizeText') property for more advanced text customizations.
+Use the [customizeText](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#customizeText') property for more advanced text customizations.

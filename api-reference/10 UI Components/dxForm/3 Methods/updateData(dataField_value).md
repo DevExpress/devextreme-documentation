@@ -3,7 +3,7 @@ id: dxForm.updateData(dataField, value)
 ---
 ---
 ##### shortDescription
-Updates a [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') field and the corresponding editor.
+Updates a [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') field and the corresponding editor.
 
 ##### param(dataField): String
 A path to the **formData** field.

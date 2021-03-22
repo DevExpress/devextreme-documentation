@@ -152,6 +152,6 @@ The key of the row whose selection state was changed.
 ---
 
 #####See Also#####
-- [selectionChanged](/Documentation/ApiReference/UI_Components/dxGantt/Events/#selectionChanged)
-- [allowSelection](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/allowSelection.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowSelection') 
-- [selectedRowKey](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/selectedRowKey.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#selectedRowKey')
+- [selectionChanged](/api-reference/10%20UI%20Components/dxGantt/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#selectionChanged')
+- [allowSelection](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/allowSelection.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowSelection') 
+- [selectedRowKey](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/selectedRowKey.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#selectedRowKey')

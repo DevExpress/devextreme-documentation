@@ -23,4 +23,4 @@ The following styles are available:
 }
 
 #####See Also#####
-- [type](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type')
+- [type](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type')

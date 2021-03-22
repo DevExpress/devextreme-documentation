@@ -1,4 +1,4 @@
-To change the size of the Tooltip, specify the [height](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#width') properties. Note that the Tooltip's arrow takes its share of the overall size.
+To change the size of the Tooltip, specify the [height](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#width') properties. Note that the Tooltip's arrow takes its share of the overall size.
 
 ---
 ##### jQuery 
@@ -132,7 +132,7 @@ To change the size of the Tooltip, specify the [height](/api-reference/10%20UI%2
 
 ---
 
-If you need to position the Tooltip against a certain side of the [target element](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#target'), set the [position](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#position') property.
+If you need to position the Tooltip against a certain side of the [target element](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#target'), set the [position](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#position') property.
 
 ---
 ##### jQuery 
@@ -260,8 +260,8 @@ If you need to position the Tooltip against a certain side of the [target elemen
 ---
 
 #####See Also#####
-- [Tooltip - Customize the Content](/concepts/05%20Widgets/Tooltip/10%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Tooltip/Customize_the_Content/')
+- [Tooltip - Customize the Content](/concepts/05%20UI%20Components/Tooltip/10%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Tooltip/Customize_the_Content/')
 - [Tooltip Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview)
-- [Tooltip API Reference](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
+- [Tooltip API Reference](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 
 [tags]tooltip, overlay, template, size, height, width, position

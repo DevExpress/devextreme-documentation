@@ -11,7 +11,7 @@ Decides how to arrange axis labels when there is not enough space to keep all of
 ---
 When axis labels overlap each other, you can rearrange them by setting the **overlappingBehavior** property. Depending on whether an axis is horizontal or vertical, this property accepts different values.
 
-[note]Unless the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property is set to **true**, the argument axis is horizontal and the value axis is vertical.
+[note]Unless the [rotated](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property is set to **true**, the argument axis is horizontal and the value axis is vertical.
 
 The following values can be specified for both horizontal and vertical axes.
 
@@ -37,4 +37,4 @@ Arranges axis labels in two rows in a staggering manner. An empty space between 
 }
 
 #####See Also#####
-- [Axis Labels](/concepts/05%20Widgets/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Labels/')
+- [Axis Labels](/concepts/05%20UI%20Components/Chart/20%20Axes/15%20Axis%20Labels.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Labels/')

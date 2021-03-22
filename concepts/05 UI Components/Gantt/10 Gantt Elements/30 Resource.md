@@ -5,7 +5,7 @@ Resources and resource assignments are optional in the Gantt UI component.
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources') property to specify whether the Gantt UI component hides resources or displays them as task labels.
+Use the [showResources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources') property to specify whether the Gantt UI component hides resources or displays them as task labels.
 
     $(function() {
         $("#gantt").dxGantt({
@@ -19,9 +19,9 @@ Use the [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configurati
 
 The Gantt UI component gets data for resources and resource assignments from the following data sources:
 
-- Resources: [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#dataSource')
+- Resources: [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#dataSource')
 
-- Resource Assignments: [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resourceAssignments/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resourceAssignments/#dataSource') 
+- Resource Assignments: [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resourceAssignments/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resourceAssignments/#dataSource') 
 
 The objects from the data sources are automatically bound to the UI component if these objects have the default data fields in its structure. For example:
 

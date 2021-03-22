@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether data can be filtered by this column. Applies only if [filterRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').**visible** is **true**.
+Specifies whether data can be filtered by this column. Applies only if [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').**visible** is **true**.
 
 ---
 #####See Also#####

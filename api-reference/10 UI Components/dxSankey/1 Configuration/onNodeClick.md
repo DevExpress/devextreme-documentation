@@ -24,8 +24,8 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): dxSankeyNode
-The [Node](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node '/Documentation/ApiReference/UI_Components/dxSankey/Node/') object.
+The [Node](/api-reference/10%20UI%20Components/dxSankey/6%20Node '/Documentation/ApiReference/UI_Components/dxSankey/Node/') object.
 
 ---
 #####See Also#####
-- [node](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/')
+- [node](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/node '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/')

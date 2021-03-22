@@ -11,4 +11,4 @@ Run the following commands:
     npm run build-themes
 
 #####See Also#####
-- [DevExtreme CLI: Create a New Application](/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application)
+- [DevExtreme CLI: Create a New Application](/concepts/Common/DevExtreme%20CLI/20%20DevExtreme%20Application '/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application')

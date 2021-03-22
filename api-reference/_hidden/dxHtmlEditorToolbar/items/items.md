@@ -9,7 +9,7 @@ inheritsType: dxHtmlEditorToolbarItem
 Configures toolbar items. These items allow users to format text and execute commands.
 
 ---
-The toolbar provides [predefined items](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') and supports custom items. To add a predefined item to the toolbar, include it in the **items** array:
+The toolbar provides [predefined items](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') and supports custom items. To add a predefined item to the toolbar, include it in the **items** array:
 
 ---
 #####jQuery
@@ -62,7 +62,7 @@ The toolbar provides [predefined items](/concepts/05%20Widgets/HtmlEditor/20%20T
 ---
 
 
-Most of the predefined items are buttons. To customize a button, assign its name to the [name](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name) property and specify the [button options](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/') in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object: 
+Most of the predefined items are buttons. To customize a button, assign its name to the [name](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name) property and specify the [button options](/api-reference/10%20UI%20Components/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/') in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object: 
 
 ---
 #####jQuery

@@ -24,4 +24,4 @@ The model data. Available only if you use Knockout.
 The series whose hover state has been changed.
 
 ---
-To identify whether the pointer has entered or left the series, call the series' [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isHovered') method.
+To identify whether the pointer has entered or left the series, call the series' [isHovered()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isHovered') method.

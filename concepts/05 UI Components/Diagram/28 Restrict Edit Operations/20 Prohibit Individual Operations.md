@@ -2,9 +2,9 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"
 }
 
-Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/Documentation/ApiReference/UI_Components/dxDiagram/Events/#requestEditOperation) event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
+Every time a user attempts an edit operation, the UI component raises the [requestEditOperation](/api-reference/10%20UI%20Components/dxDiagram/4%20Events/requestEditOperation.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#requestEditOperation') event. Use the **allowed** parameter to either permit or cancel the user action. To identify the operation type and target element, use the event parameters listed below. 
 
-- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
+- The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/') property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
 
 <table class="dx-table">
     <tr>

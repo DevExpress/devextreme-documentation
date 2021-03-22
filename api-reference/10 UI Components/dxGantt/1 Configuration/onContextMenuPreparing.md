@@ -151,4 +151,4 @@ The type of right-clicked task or dependency.
 }
 
 #####See Also#####
-- [contextMenuPreparing](/Documentation/ApiReference/UI_Components/dxGantt/Events/#contextMenuPreparing)
+- [contextMenuPreparing](/api-reference/10%20UI%20Components/dxGantt/4%20Events/contextMenuPreparing.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#contextMenuPreparing')

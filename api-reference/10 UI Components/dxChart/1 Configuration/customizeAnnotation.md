@@ -6,7 +6,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Customizes an individual [annotation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/annotations/').
+Customizes an individual [annotation](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/annotations/').
 
 ##### param(annotation): dxChartAnnotationConfig | any
 The annotation before customizations.
@@ -147,4 +147,4 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
 #####See Also#####
 - [annotations[]]({basewidgetpath}/Configuration/annotations/)
-- [commonAnnotationSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/')
+- [commonAnnotationSettings](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/')

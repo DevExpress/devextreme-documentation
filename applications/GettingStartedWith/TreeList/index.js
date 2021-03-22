@@ -39,7 +39,6 @@ $(function() {
             }]
         }, "City", {
             dataField: "State",
-            sortOrder: "asc",
             validationRules: [{
                 type: "required"
             }]

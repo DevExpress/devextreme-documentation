@@ -99,5 +99,3 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
 
 
 ---
-
-Run the code and ensure that records are sorted by the `State` column. Click a column header to sort the records by another column.

@@ -1,4 +1,4 @@
-To scroll the ScrollView content by a specified distance, call the [scrollBy(distance)](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollBy(distance).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance') method. If you need to scroll in the opposite direction, the `distance` parameter should be a negative number.
+To scroll the ScrollView content by a specified distance, call the [scrollBy(distance)](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollBy(distance).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance') method and pass a `Number` as a parameter. If you need to scroll in the opposite direction, the `distance` parameter should be a negative number.
 
 ---
 

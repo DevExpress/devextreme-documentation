@@ -1,4 +1,4 @@
-Adaptive detail row contains the [Form UI component](/Documentation/ApiReference/UI_Components/dxForm/). You can implement the [onAdaptiveDetailRowPreparing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onAdaptiveDetailRowPreparing') handler to customize the Form. The following code marks the form item whose data field is *"OrderID"* as required:
+Adaptive detail row contains the [Form UI component](/Documentation/ApiReference/UI_Components/dxForm/). You can implement the [onAdaptiveDetailRowPreparing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onAdaptiveDetailRowPreparing') handler to customize it. The following code marks the form item whose data field is *"OrderID"* as required:
 
 ---
 ##### jQuery

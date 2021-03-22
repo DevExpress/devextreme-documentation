@@ -20,7 +20,6 @@ $(function() {
             fixed: true
         }, {
             dataField: "Position",
-            sortOrder: "asc",
             validationRules: [{
                 type: "required"
             }]
@@ -38,7 +37,13 @@ $(function() {
             validationRules: [{
                 type: "required"
             }]
-        }, "City", "State", {
+        }, "City", {
+            dataField: "State",
+            sortOrder: "asc",
+            validationRules: [{
+                type: "required"
+            }]
+        }, {
             dataField: "Email",
             visible: false
         }, "MobilePhone", "Skype"],

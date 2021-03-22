@@ -489,7 +489,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
 
 ---
 
-To scroll the content to a specific element, call the [scrollToElement(targetLocation)](/api-reference/10%20UI%20Widgets/dxScrollable/3%20Methods/scrollToElement(targetLocation).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollToElementtargetLocation') method. 
+To scroll the content to a specific element, call the [scrollToElement(element)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollToElementelement) method. 
 
 ---
 

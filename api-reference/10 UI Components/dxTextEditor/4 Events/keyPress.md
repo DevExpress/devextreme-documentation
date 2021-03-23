@@ -8,7 +8,7 @@ deprecated: [important]This event is removed from the web standards and will be 
 Raised when a user presses a key on the keyboard.
 
 ---
-Main article: [onKeyPress](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/onKeyPress.md '{basewidgetpath}/Configuration/#onKeyPress')
+Main article: [onKeyPress](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyPress.md '{basewidgetpath}/Configuration/#onKeyPress')
 
 #####See Also#####
 #include common-link-handleevents

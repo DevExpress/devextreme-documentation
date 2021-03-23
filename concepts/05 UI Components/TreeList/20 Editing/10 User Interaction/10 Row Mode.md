@@ -1,8 +1,8 @@
-In this mode a user edits data row by row. When a user clicks an *"Edit"* button, the corresponding row enters the editing state, and the *"Save"* and *"Cancel"* buttons appear in the [edit column](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/'). The UI component saves changes only if the *"Save"* button is clicked. If a user starts editing another row, sorts or filters data, it discards the changes.
+In this mode a user edits data row by row. When a user clicks an *"Edit"* button, the corresponding row enters the editing state, and the *"Save"* and *"Cancel"* buttons appear in the [edit column](/concepts/05%20UI%20Components/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/'). The UI component saves changes only if the *"Save"* button is clicked. If a user starts editing another row, sorts or filters data, it discards the changes.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Row Mode Editing State](/images/treelist/editing/row_mode_editing_state.png)
 
-Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#confirmDelete') property to hide this dialog.
+Clicking the *"Delete"* button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#confirmDelete') property to hide this dialog.
 
 ---
 ##### jQuery
@@ -99,4 +99,4 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
 }
 
 #####See Also#####
-- [Data Validation](/concepts/05%20Widgets/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/TreeList/Editing/#Data_Validation')
+- [Data Validation](/concepts/05%20UI%20Components/TreeList/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/TreeList/Editing/#Data_Validation')

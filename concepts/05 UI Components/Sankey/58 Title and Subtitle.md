@@ -2,7 +2,7 @@ Titles and subtitles are textual elements that provide an overview of what the U
 
 ![Sankey Title and Subtitle](/images/sankey/visual_elements/title.png)
 
-The [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/title/') object configures the title; the **title**.[subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/title/subtitle/') object configures the subtitle.
+The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/title/') object configures the title; the **title**.[subtitle](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/title/subtitle/') object configures the subtitle.
 
 ---
 ##### jQuery
@@ -161,4 +161,4 @@ You can set the title's text more concisely if you assign it directly to the **t
 }
 
 #####See Also#####
-- [Adaptive Layout](/concepts/05%20Widgets/Sankey/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Sankey/Adaptive_Layout/')
+- [Adaptive Layout](/concepts/05%20UI%20Components/Sankey/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Sankey/Adaptive_Layout/')

@@ -122,4 +122,4 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 }
 
 #####See Also#####
-- [customizeAnnotation](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizeAnnotation)
+- [customizeAnnotation](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizeAnnotation')

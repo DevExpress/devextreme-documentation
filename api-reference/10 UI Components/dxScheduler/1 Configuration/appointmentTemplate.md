@@ -15,7 +15,7 @@ The appointment's data object.
 
 ##### field(model.targetedAppointmentData): Object
 The appointment's data object.      
-The difference between this and **appointmentData** fields is explained in the [onAppointmentClick](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/onAppointmentClick.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentClick') description.
+The difference between this and **appointmentData** fields is explained in the [onAppointmentClick](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentClick.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentClick') description.
 
 ##### param(itemIndex): Number
 The appointment's index.
@@ -32,5 +32,5 @@ A template name or container.
 }
 
 #####See Also#####
-- [Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

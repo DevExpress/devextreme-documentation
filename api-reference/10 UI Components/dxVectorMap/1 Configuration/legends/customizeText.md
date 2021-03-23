@@ -11,7 +11,7 @@ Specifies text for legend items.
 Information on a legend item.
 
 ##### field(itemInfo.color): String
-The legend item's color. This field is **undefined** if the [source](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/legends/source '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/#source') is *'markerSizeGroups'*.
+The legend item's color. This field is **undefined** if the [source](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/legends/source '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/#source') is *'markerSizeGroups'*.
 
 ##### field(itemInfo.end): Number
 The end value of the group indicated by the legend item.
@@ -20,7 +20,7 @@ The end value of the group indicated by the legend item.
 The group's index.
 
 ##### field(itemInfo.size): Number
-The diameter of the legend item in pixels. This field is **undefined** if the [source](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/legends/source '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/#source') is *'areaColorGroups'* or *'markerColorGroups'*.
+The diameter of the legend item in pixels. This field is **undefined** if the [source](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/legends/source '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/legends/#source') is *'areaColorGroups'* or *'markerColorGroups'*.
 
 ##### field(itemInfo.start): Number
 The start value of the group indicated by the legend item.

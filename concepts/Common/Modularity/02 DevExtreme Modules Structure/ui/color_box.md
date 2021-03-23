@@ -2,7 +2,7 @@ Exposes the ColorBox UI component.
 
 Exports:
 
-- *default* - The [ColorBox](/api-reference/10%20UI%20Widgets/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/') UI component
+- *default* - The [ColorBox](/api-reference/10%20UI%20Components/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/') UI component
 
         require("ui/color_box");
         // ===== or =====

@@ -30,5 +30,5 @@ A template name or container.
 
 ---
 #####See Also#####
-- [Customize Cell Appearance](/concepts/05%20Widgets/Calendar/15%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/Calendar/Customize_Cell_Appearance/')
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [Customize Cell Appearance](/concepts/05%20UI%20Components/Calendar/15%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/Calendar/Customize_Cell_Appearance/')
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

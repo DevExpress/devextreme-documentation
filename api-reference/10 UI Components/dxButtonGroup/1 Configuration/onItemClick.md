@@ -21,7 +21,7 @@ The UI component's container.
 #include common-ref-eventparam
 
 ##### field(e.itemData): Object
-The clicked button's [data](/api-reference/10%20UI%20Widgets/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/').
+The clicked button's [data](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/').
 
 ##### field(e.itemElement): dxElement
 #include common-ref-elementparam with { element: "button" }

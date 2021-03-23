@@ -11,7 +11,7 @@ Binds the UI component to data.
 #include common-dataSource-description with {
     widget_works_with: "The Scheduler works with collections of objects.",
 
-    object_structure_notes: "In each case, also specify the UI component's [startDateExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/startDateExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDateExpr') and [endDateExpr](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/endDateExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDateExpr') properties. Optionally, set other properties with the **Expr** postfix.",
+    object_structure_notes: "In each case, also specify the UI component's [startDateExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/startDateExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDateExpr') and [endDateExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/endDateExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDateExpr') properties. Optionally, set other properties with the **Expr** postfix.",
 
     array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SimpleArray)",
 

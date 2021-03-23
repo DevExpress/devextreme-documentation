@@ -35,8 +35,8 @@ An end user can use the following keys to interact with the UI component.
 
 #####See Also#####
 #include common-link-callmethods
-- [List - Item Deletion - User Interaction](/concepts/05%20Widgets/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#User_Interaction')
+- [List - Item Deletion - User Interaction](/concepts/05%20UI%20Components/List/35%20Item%20Deletion/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#User_Interaction')
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, accessibility, keyboard shortcuts

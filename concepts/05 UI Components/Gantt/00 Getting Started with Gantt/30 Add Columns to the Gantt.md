@@ -1,4 +1,4 @@
-Use the [columns](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/columns.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#columns/') property to specify columns that the Gantt UI component should display in the task list. The UI component gets columns from the [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/') data source.
+Use the [columns](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/columns.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#columns/') property to specify columns that the Gantt UI component should display in the task list. The UI component gets columns from the [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/') data source.
 
 [note] The Gantt UI component does not support data sorting.
 

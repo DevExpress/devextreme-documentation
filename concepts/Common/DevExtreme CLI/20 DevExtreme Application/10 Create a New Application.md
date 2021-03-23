@@ -2,7 +2,7 @@
 
 ##### Angular
 
-Create a new <a href="https://devexpress.github.io/devextreme-angular-template" target="_blank">DevExtreme Angular application</a> that uses the [DevExtreme layout template](/Documentation/Guide/Angular_Components/Application_Template/):
+Create a new <a href="https://devexpress.github.io/devextreme-angular-template" target="_blank">DevExtreme Angular application</a> that uses the [DevExtreme layout template](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/'):
 
     devextreme new angular-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====
@@ -10,7 +10,7 @@ Create a new <a href="https://devexpress.github.io/devextreme-angular-template" 
 
 ##### Vue
 
-Create a new <a href="https://devexpress.github.io/devextreme-vue-template" target="_blank">DevExtreme Vue application</a> that uses the [DevExtreme layout template](/Documentation/Guide/Vue_Components/Application_Template/):
+Create a new <a href="https://devexpress.github.io/devextreme-vue-template" target="_blank">DevExtreme Vue application</a> that uses the [DevExtreme layout template](/concepts/55%20Vue%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Vue_Components/Application_Template/'):
 
     devextreme new vue-app app-name [--layout][--empty][--version]
     // ===== or without installing the DevExtreme CLI =====
@@ -19,7 +19,7 @@ Create a new <a href="https://devexpress.github.io/devextreme-vue-template" targ
 
 ##### React
 
-Create a new <a href="https://devexpress.github.io/devextreme-react-template" target="_blank">DevExtreme React application</a> that uses the [DevExtreme layout template](/Documentation/Guide/React_Components/Application_Template/):
+Create a new <a href="https://devexpress.github.io/devextreme-react-template" target="_blank">DevExtreme React application</a> that uses the [DevExtreme layout template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/'):
 
     devextreme new react-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====
@@ -34,7 +34,7 @@ Specifies the DevExtreme layout to add. Available values:
     * `side-nav-outer-toolbar` (default)
     * `side-nav-inner-toolbar`
 
-    Both layouts are illustrated in the [Layouts](/Documentation/Guide/Angular_Components/Application_Template/#Layouts) article.
+    Both layouts are illustrated in the [Layouts](/concepts/40%20Angular%20Components/30%20Application%20Template/10%20Layouts.md '/Documentation/Guide/Angular_Components/Application_Template/#Layouts') article.
 
 * `--empty`     
 Specifies whether to skip sample views generation (default: `false`).

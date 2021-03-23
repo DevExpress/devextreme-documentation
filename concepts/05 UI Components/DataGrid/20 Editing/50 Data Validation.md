@@ -1,4 +1,4 @@
-User input is validated against a set of [validation rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/'). You can configure them in a column's [validationRules](/api-reference/_hidden/GridBaseColumn/validationRules.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#validationRules') array. Validation rules are attached to the editors and do not depend on the current edit mode.
+User input is validated against a set of [validation rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/'). You can configure them in a column's [validationRules](/api-reference/_hidden/GridBaseColumn/validationRules.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#validationRules') array. Validation rules are attached to the editors and do not depend on the current edit mode.
 
 ---
 ##### jQuery
@@ -126,7 +126,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     
 ---
 
-The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowValidating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowValidating') handler allows you to perform an action before a notification that a validation rule has been broken is displayed. For instance, you can perform additional checks in this handler and change the validation result by changing the handler parameter's **isValid** field. 
+The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onRowValidating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowValidating') handler allows you to perform an action before a notification that a validation rule has been broken is displayed. For instance, you can perform additional checks in this handler and change the validation result by changing the handler parameter's **isValid** field. 
 
 ---
 ##### jQuery
@@ -235,7 +235,7 @@ The [onRowValidating](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuratio
 }
 
 #####See Also#####
-- [Data Validation](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
+- [Data Validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
 
 
 

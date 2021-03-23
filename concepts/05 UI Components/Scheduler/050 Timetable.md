@@ -9,12 +9,12 @@ The Scheduler UI component allows you to customize its timetable. You can specif
         $("#schedulerContainer").dxScheduler({
             dataSource: [{
                 text: "Website Re-Design Plan",
-                startDate: new Date("2016-4-25T09:30:00.000Z"),
-                endDate: new Date("2016-4-25T11:30:00.000Z")
+                startDate: new Date("2016-04-25T09:30:00.000Z"),
+                endDate: new Date("2016-04-25T11:30:00.000Z")
             }, {
                 text: "Book Flights to San Fran for Sales Trip",
-                startDate: new Date("2016-4-25T12:00:00.000Z"),
-                endDate: new Date("2016-4-25T13:00:00.000Z")
+                startDate: new Date("2016-04-25T12:00:00.000Z"),
+                endDate: new Date("2016-04-25T13:00:00.000Z")
             }, 
             // ...
             ],
@@ -44,12 +44,12 @@ The Scheduler UI component allows you to customize its timetable. You can specif
     export class AppComponent  {
         schedulerData = [{
             text: "Website Re-Design Plan",
-            startDate: new Date("2016-4-25T09:30:00.000Z"),
-            endDate: new Date("2016-4-25T11:30:00.000Z")
+            startDate: new Date("2016-04-25T09:30:00.000Z"),
+            endDate: new Date("2016-04-25T11:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date("2016-4-25T12:00:00.000Z"),
-            endDate: new Date("2016-4-25T13:00:00.000Z")
+            startDate: new Date("2016-04-25T12:00:00.000Z"),
+            endDate: new Date("2016-04-25T13:00:00.000Z")
         }, 
         // ...
         ];
@@ -91,12 +91,12 @@ The Scheduler UI component allows you to customize its timetable. You can specif
             return {
                 dataSource: [{
                     text: 'Website Re-Design Plan',
-                    startDate: new Date("2016-4-25T09:30:00.000Z"),
-                    endDate: new Date("2016-4-25T11:30:00.000Z")
+                    startDate: new Date("2016-04-25T09:30:00.000Z"),
+                    endDate: new Date("2016-04-25T11:30:00.000Z")
                 }, {
                     text: 'Book Flights to San Fran for Sales Trip',
-                    startDate: new Date("2016-4-25T12:00:00.000Z"),
-                    endDate: new Date("2016-4-25T13:00:00.000Z")
+                    startDate: new Date("2016-04-25T12:00:00.000Z"),
+                    endDate: new Date("2016-04-25T13:00:00.000Z")
                 },
                 // ...
                 ],
@@ -117,12 +117,12 @@ The Scheduler UI component allows you to customize its timetable. You can specif
 
     const dataSource = [{
         text: 'Website Re-Design Plan',
-        startDate: new Date("2016-4-25T09:30:00.000Z"),
-        endDate: new Date("2016-4-25T11:30:00.000Z")
+        startDate: new Date("2016-04-25T09:30:00.000Z"),
+        endDate: new Date("2016-04-25T11:30:00.000Z")
     }, {
         text: 'Book Flights to San Fran for Sales Trip',
-        startDate: new Date("2016-4-25T12:00:00.000Z"),
-        endDate: new Date("2016-4-25T13:00:00.000Z")
+        startDate: new Date("2016-04-25T12:00:00.000Z"),
+        endDate: new Date("2016-04-25T13:00:00.000Z")
     },
     // ...
     ];
@@ -190,12 +190,12 @@ For a more detailed customization, define custom templates for cells, time scale
     export class AppComponent  {
         schedulerData = [{
             text: "His Girl Friday",
-            startDate: new Date("2016-4-24T09:10:00.000Z"),
-            endDate: new Date("2016-4-24T11:20:00.000Z")
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, {
             text: "Royal Wedding",
-            startDate: new Date("2016-4-24T10:05:00.000Z"),
-            endDate: new Date("2016-4-24T11:30:00.000Z")
+            startDate: new Date("2016-04-24T10:05:00.000Z"),
+            endDate: new Date("2016-04-24T11:30:00.000Z")
         }, 
         // ...
         ];
@@ -237,12 +237,12 @@ For a more detailed customization, define custom templates for cells, time scale
         .controller('DemoController', function DemoController($scope) {
             $scope.schedulerData = [{
                 text: "His Girl Friday",
-                startDate: new Date("2016-4-24T09:10:00.000Z"),
-                endDate: new Date("2016-4-24T11:20:00.000Z")
+                startDate: new Date("2016-04-24T09:10:00.000Z"),
+                endDate: new Date("2016-04-24T11:20:00.000Z")
             }, {
                 text: "Royal Wedding",
-                startDate: new Date("2016-4-24T10:05:00.000Z"),
-                endDate: new Date("2016-4-24T11:30:00.000Z")
+                startDate: new Date("2016-04-24T10:05:00.000Z"),
+                endDate: new Date("2016-04-24T11:30:00.000Z")
             }, 
             // ...
             ];
@@ -277,13 +277,13 @@ For a more detailed customization, define custom templates for cells, time scale
         schedulerData: [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date("2016-4-24T09:10:00.000Z"),
-            endDate: new Date("2016-4-24T11:20:00.000Z")
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
             price: 10,
-            startDate: new Date("2016-4-24T10:05:00.000Z"),
-            endDate: new Date("2016-4-24T11:30:00.000Z")
+            startDate: new Date("2016-04-24T10:05:00.000Z"),
+            endDate: new Date("2016-04-24T11:30:00.000Z")
         }, 
         // ...
         ],
@@ -385,12 +385,12 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
     <!--JavaScript-->var schedulerData = [{
         text: "His Girl Friday",
-        startDate: new Date("2016-4-24T09:10:00.000Z"),
-        endDate: new Date("2016-4-24T11:20:00.000Z")
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, {
         text: "Royal Wedding",
-        startDate: new Date("2016-4-24T10:05:00.000Z"),
-        endDate: new Date("2016-4-24T11:30:00.000Z")
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z")
     }, 
     // ...
     ];

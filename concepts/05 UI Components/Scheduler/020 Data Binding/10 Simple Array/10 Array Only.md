@@ -7,11 +7,11 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
     <!--JavaScript-->
     var appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date("2016-4-25T1:30:00.000Z"),
-        endDate: new Date("2016-4-25T3:30:00.000Z")
+        startDate: new Date("2016-4-25T01:30:00.000Z"),
+        endDate: new Date("2016-4-25T03:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date("2016-4-25T9:00:00.000Z"),
+        startDate: new Date("2016-4-25T09:00:00.000Z"),
         endDate: new Date("2016-4-25T10:00:00.000Z")
     }, // ...
     ];
@@ -30,11 +30,11 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
     export class AppComponent  {
         appointments = [{
             text: "Meet with a customer",
-            startDate: new Date("2016-4-25T1:30:00.000Z"),
-            endDate: new Date("2016-4-25T3:30:00.000Z")
+            startDate: new Date("2016-4-25T01:30:00.000Z"),
+            endDate: new Date("2016-4-25T03:30:00.000Z")
         }, {
             text: "Discuss results",
-            startDate: new Date("2016-4-25T9:00:00.000Z"),
+            startDate: new Date("2016-4-25T09:00:00.000Z"),
             endDate: new Date("2016-4-25T10:00:00.000Z")
         }];
     }
@@ -76,11 +76,11 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{ 
                     text: 'Meet with a customer', 
-                    startDate: new Date("2016-4-25T1:30:00.000Z"),
-                    endDate: new Date("2016-4-25T3:30:00.000Z")
+                    startDate: new Date("2016-4-25T01:30:00.000Z"),
+                    endDate: new Date("2016-4-25T03:30:00.000Z")
                 }, { 
                     text: 'Discuss results', 
-                    startDate: new Date("2016-4-25T9:00:00.000Z"),
+                    startDate: new Date("2016-4-25T09:00:00.000Z"),
                     endDate: new Date("2016-4-25T10:00:00.000Z")
                 }, // ...
                 ];
@@ -101,11 +101,11 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date("2016-4-25T1:30:00.000Z"),
-        endDate: new Date("2016-4-25T3:30:00.000Z")
+        startDate: new Date("2016-4-25T01:30:00.000Z"),
+        endDate: new Date("2016-4-25T03:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date("2016-4-25T9:00:00.000Z"),
+        startDate: new Date("2016-4-25T09:00:00.000Z"),
         endDate: new Date("2016-4-25T10:00:00.000Z")
     }, // ...
     ];

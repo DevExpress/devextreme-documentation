@@ -6,7 +6,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
     <!--JavaScript-->var appointments = [{
         text: "Website Re-Design Plan",
-        startDate: new Date("2016-4-25T9:30:00.000Z"),
+        startDate: new Date("2016-4-25T09:30:00.000Z"),
         endDate: new Date("2016-4-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
@@ -32,7 +32,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
     export class AppComponent  {
         appointments = [{
             text: "Website Re-Design Plan",
-            startDate: new Date("2016-4-25T9:30:00.000Z"),
+            startDate: new Date("2016-4-25T09:30:00.000Z"),
             endDate: new Date("2016-4-25T11:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
@@ -83,7 +83,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{
                     text: "Website Re-Design Plan",
-                    startDate: new Date("2016-4-25T9:30:00.000Z"),
+                    startDate: new Date("2016-4-25T09:30:00.000Z"),
                     endDate: new Date("2016-4-25T11:30:00.000Z")
                 }, {
                     text: "Book Flights to San Fran for Sales Trip",
@@ -110,7 +110,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
     const appointments = [{
         text: "Website Re-Design Plan",
-        startDate: new Date("2016-4-25T9:30:00.000Z"),
+        startDate: new Date("2016-4-25T09:30:00.000Z"),
         endDate: new Date("2016-4-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
@@ -159,7 +159,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         schedulerData = [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date("2016-4-24T9:10:00.000Z"),
+            startDate: new Date("2016-4-24T09:10:00.000Z"),
             endDate: new Date("2016-4-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
@@ -199,7 +199,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
             $scope.schedulerData = [{
                 movie: "His Girl Friday",
                 price: 5,
-                startDate: new Date("2016-4-24T9:10:00.000Z"),
+                startDate: new Date("2016-4-24T09:10:00.000Z"),
                 endDate: new Date("2016-4-24T11:20:00.000Z")
             }, {
                 movie: "Royal Wedding",
@@ -231,7 +231,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         schedulerData: [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date("2016-4-24T9:10:00.000Z"),
+            startDate: new Date("2016-4-24T09:10:00.000Z"),
             endDate: new Date("2016-4-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
@@ -278,7 +278,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
                 appointments: [{
                     movie: "His Girl Friday",
                     price: 5,
-                    startDate: new Date("2016-4-24T9:10:00.000Z"),
+                    startDate: new Date("2016-4-24T09:10:00.000Z"),
                     endDate: new Date("2016-4-24T11:20:00.000Z")
                 }, {
                     movie: "Royal Wedding",
@@ -306,7 +306,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     const appointments = [{
         movie: "His Girl Friday",
         price: 5,
-        startDate: new Date("2016-4-24T9:10:00.000Z"),
+        startDate: new Date("2016-4-24T09:10:00.000Z"),
         endDate: new Date("2016-4-24T11:20:00.000Z")
     }, {
         movie: "Royal Wedding",
@@ -348,7 +348,7 @@ If you use only jQuery, combine HTML markup for appointments manually with jQuer
     <!--JavaScript-->var schedulerData = [{
         movie: "His Girl Friday",
         price: 5,
-        startDate: new Date("2016-4-24T9:10:00.000Z"),
+        startDate: new Date("2016-4-24T09:10:00.000Z"),
         endDate: new Date("2016-4-24T11:20:00.000Z")
     }, {
         movie: "Royal Wedding",

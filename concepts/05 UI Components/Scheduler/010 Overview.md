@@ -33,7 +33,7 @@ The following code adds the Scheduler UI component to your page. The simplest co
         $("#schedulerContainer").dxScheduler({
             dataSource: [{
                 text: "Website Re-Design Plan",
-                startDate: new Date("2016-4-25T9:30:00.000Z"),
+                startDate: new Date("2016-4-25T09:30:00.000Z"),
                 endDate: new Date("2016-4-25T11:30:00.000Z")
             }, {
                 text: "Book Flights to San Fran for Sales Trip",
@@ -60,11 +60,11 @@ The following code adds the Scheduler UI component to your page. The simplest co
     export class AppComponent  {
         appointments = [{
             text: "Website Re-Design Plan",
-            startDate: new Date("2016-4-25T1:30:00.000Z"),
-            endDate: new Date("2016-4-25T3:30:00.000Z")
+            startDate: new Date("2016-4-25T01:30:00.000Z"),
+            endDate: new Date("2016-4-25T03:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date("2016-4-25T9:00:00.000Z"),
+            startDate: new Date("2016-4-25T09:00:00.000Z"),
             endDate: new Date("2016-4-25T10:00:00.000Z")
         }, 
         // ...
@@ -103,7 +103,7 @@ The following code adds the Scheduler UI component to your page. The simplest co
                 currentDate: new Date(2016, 4, 25),
                 dataSource: [{
                     text: "Website Re-Design Plan",
-                    startDate: new Date("2016-4-25T9:30:00.000Z"),
+                    startDate: new Date("2016-4-25T09:30:00.000Z"),
                     endDate: new Date("2016-4-25T11:30:00.000Z")
                 }, {
                     text: "Book Flights to San Fran for Sales Trip",
@@ -129,7 +129,7 @@ The following code adds the Scheduler UI component to your page. The simplest co
 
     const data = [{
         text: "Website Re-Design Plan",
-        startDate: new Date("2016-4-25T9:30:00.000Z"),
+        startDate: new Date("2016-4-25T09:30:00.000Z"),
         endDate: new Date("2016-4-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
@@ -217,11 +217,11 @@ If your appointments have a different structure, specify:
     export class AppComponent  {
         appointments = [{ 
             subject: 'Meet with a customer', 
-            from: new Date("2016-4-25T1:00:00.000Z"), 
-            to: new Date("2016-4-25T3:00:00.000Z") 
+            from: new Date("2016-4-25T01:00:00.000Z"), 
+            to: new Date("2016-4-25T03:00:00.000Z") 
         }, { 
             subject: 'Discuss results', 
-            from: new Date("2016-5-25T9:00:00.000Z"), 
+            from: new Date("2016-5-25T09:00:00.000Z"), 
             to: new Date("2016-4-25T10:00:00.000Z") 
         }, 
         // ...

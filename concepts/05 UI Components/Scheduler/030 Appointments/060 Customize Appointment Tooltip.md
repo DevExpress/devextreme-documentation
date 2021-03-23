@@ -23,8 +23,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
             text: "His Girl Friday",
             year: 1940,
             img: "images/movies/HisGirlFriday.jpg",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-4-24T9:10:00.000Z"),
+            endDate: new Date("2016-4-24T11:20:00.000Z")
         }, 
         // ...
         ];
@@ -61,8 +61,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
                 text: "His Girl Friday",
                 year: 1940,
                 img: "images/movies/HisGirlFriday.jpg",
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20)
+                startDate: new Date("2016-4-24T9:10:00.000Z"),
+                endDate: new Date("2016-4-24T11:20:00.000Z")
             }, 
             // ...
             ];
@@ -89,8 +89,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
             text: "His Girl Friday",
             year: 1940,
             img: "images/movies/HisGirlFriday.jpg",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-4-24T9:10:00.000Z"),
+            endDate: new Date("2016-4-24T11:20:00.000Z")
         }, 
         // ...
         ],
@@ -134,8 +134,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
                     text: "His Girl Friday",
                     year: 1940,
                     img: "images/movies/HisGirlFriday.jpg",
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20)
+                    startDate: new Date("2016-4-24T9:10:00.000Z"),
+                    endDate: new Date("2016-4-24T11:20:00.000Z")
                 }, 
                 // ...
                 ];
@@ -158,8 +158,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
         text: "His Girl Friday",
         year: 1940,
         img: "images/movies/HisGirlFriday.jpg",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-4-24T9:10:00.000Z"),
+        endDate: new Date("2016-4-24T11:20:00.000Z")
     }, 
     // ...
     ];
@@ -194,8 +194,8 @@ If you use only jQuery, combine HTML markup for tooltips manually with jQuery <a
         text: "His Girl Friday",
         year: 1940,
         img: "images/movies/HisGirlFriday.jpg",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-4-24T9:10:00.000Z"),
+        endDate: new Date("2016-4-24T11:20:00.000Z")
     }, 
     // ...
     ];

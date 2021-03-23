@@ -164,7 +164,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         }, {
             movie: "Royal Wedding",
             price: 10,
-            startDate: new Date("2016-4-24T10:5:00.000Z"),
+            startDate: new Date("2016-4-24T10:05:00.000Z"),
             endDate: new Date("2016-4-24T11:30:00.000Z")
         }, 
         // ...
@@ -283,7 +283,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
                 }, {
                     movie: "Royal Wedding",
                     price: 10,
-                    startDate: new Date("2016-4-24T10:5:00.000Z"),
+                    startDate: new Date("2016-4-24T10:05:00.000Z"),
                     endDate: new Date("2016-4-24T11:30:00.000Z")
                 }, 
                 // ...
@@ -311,7 +311,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     }, {
         movie: "Royal Wedding",
         price: 10,
-        startDate: new Date("2016-4-24T10:5:00.000Z"),
+        startDate: new Date("2016-4-24T10:05:00.000Z"),
         endDate: new Date("2016-4-24T11:30:00.000Z")
     }, 
     // ...

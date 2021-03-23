@@ -194,7 +194,7 @@ For a more detailed customization, define custom templates for cells, time scale
             endDate: new Date("2016-4-24T11:20:00.000Z")
         }, {
             text: "Royal Wedding",
-            startDate: new Date("2016-4-24T10:5:00.000Z"),
+            startDate: new Date("2016-4-24T10:05:00.000Z"),
             endDate: new Date("2016-4-24T11:30:00.000Z")
         }, 
         // ...

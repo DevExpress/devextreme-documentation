@@ -121,11 +121,24 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.common.css';
-        import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
 
-        import DxDropDownBox from 'devextreme-vue/drop-down-box';
-        import DxTextBox from 'devextreme-vue/text-box';
+    import DxDropDownBox from 'devextreme-vue/drop-down-box';
+    import DxTextBox from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxDropDownBox,
+            DxTextBox,
+        },
+        data() {
+            // ...
+        },
+        methods: {
+            // ...
+        }
+    };
     </script>
 
     <!-- tab: style.css -->

@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Notifies the TreeList of the server's data processing operations. Applies only if data has a [plain structure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure').
+Notifies the TreeList of the server's data processing operations. Applies only if data has a [plain structure](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure').
 
 ---
 Server-side data processing improves the UI component's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the UI component may send queries to the server while executing a client-side operation.

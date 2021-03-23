@@ -10,4 +10,4 @@ Specifies a color for the bullet bar.
 ---
 #include common-colorlist
 
-To specify a color for the target and zero level lines, use the [targetColor](/api-reference/20%20Data%20Visualization%20Widgets/dxBullet/1%20Configuration/targetColor.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetColor') property.
+To specify a color for the target and zero level lines, use the [targetColor](/api-reference/10%20UI%20Components/dxBullet/1%20Configuration/targetColor.md '/Documentation/ApiReference/UI_Components/dxBullet/Configuration/#targetColor') property.

@@ -14,4 +14,4 @@ The row's key.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [expandRow(key)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/expandRow(key).md '{basewidgetpath}/Methods/#expandRowkey')
+- [expandRow(key)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/expandRow(key).md '{basewidgetpath}/Methods/#expandRowkey')

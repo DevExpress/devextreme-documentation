@@ -14,7 +14,7 @@ Information on the scale value.
 The raw value.
 
 ##### field(scaleValue.valueText): String
-The [formatted](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/scale/label/format.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/label/#format') value converted to a string.
+The [formatted](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/label/format.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/label/#format') value converted to a string.
 
 ##### return: String
 The text for the label to display.
@@ -23,4 +23,4 @@ The text for the label to display.
 #include dataviz-ref-functioncontext
 
 #####See Also#####
-- [Data Formatting](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')
+- [Data Formatting](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')

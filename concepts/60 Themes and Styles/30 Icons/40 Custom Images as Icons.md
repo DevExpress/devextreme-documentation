@@ -9,7 +9,7 @@ Although Base64 code can be assigned directly to the **icon** property, we recom
         background-position: 0px 0px;
     }
 
-`customicon` here is the icon's name that you should [assign to the UI component's **icon** property](/concepts/60%20Themes%20and%20Styles/30%20Icons/20%20Icons%20in%20Widgets.md '/Documentation/Guide/Themes_and_Styles/Icons/#Icons_in_DevExtreme_UI_Components').
+`customicon` here is the icon's name that you should [assign to the UI component's **icon** property](/concepts/60%20Themes%20and%20Styles/30%20Icons/20%20Icons%20in%20DevExtreme%20UI%20Components.md '/Documentation/Guide/Themes_and_Styles/Icons/#Icons_in_DevExtreme_UI_Components').
 
 In addition, you can provide a specific icon variant for different states of a UI component element. In the following code, a special icon is provided for selected tabs:
 

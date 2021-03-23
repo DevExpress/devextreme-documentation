@@ -3,7 +3,7 @@ id: dxTreeList.getSelectedRowsData()
 ---
 ---
 ##### shortDescription
-Gets the data objects of the rows selected explicitly [via the API](/concepts/05%20Widgets/TreeList/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/TreeList/Selection/#API/Initial_and_Runtime_Selection') or via a click or tap.
+Gets the data objects of the rows selected explicitly [via the API](/concepts/05%20UI%20Components/TreeList/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/TreeList/Selection/#API/Initial_and_Runtime_Selection') or via a click or tap.
 
 ##### return: Array<any>
 The selected rows' data objects.        
@@ -165,6 +165,6 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
 
 #####See Also#####
 #include common-link-callmethods
-- [getSelectedRowsData(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowsData(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowsDatamode')
-- [cellValue(rowIndex, dataField)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cellValuerowIndex_dataField')
-- [cellValue(rowIndex, visibleColumnIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cellValuerowIndex_visibleColumnIndex')
+- [getSelectedRowsData(mode)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getSelectedRowsData(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowsDatamode')
+- [cellValue(rowIndex, dataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cellValuerowIndex_dataField')
+- [cellValue(rowIndex, visibleColumnIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_visibleColumnIndex).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#cellValuerowIndex_visibleColumnIndex')

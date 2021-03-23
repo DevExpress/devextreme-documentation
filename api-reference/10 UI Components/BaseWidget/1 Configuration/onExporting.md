@@ -31,5 +31,5 @@ The model data. Available only if you use Knockout.
 
 ---
 #####See Also#####
-- [onExported](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
-- [onFileSaving](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')
+- [onExported](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
+- [onFileSaving](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')

@@ -37,7 +37,7 @@ The model data. Available only if you use Knockout.
 The visual range when zooming or panning starts.
 
 ##### field(e.range): VizRange
-The [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') when zooming or panning ends.
+The [visual range](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') when zooming or panning ends.
 
 ##### field(e.shift): Number
 The visual range's shift from the previous position, measured in numeric values or milliseconds (for date-time axes).       
@@ -48,4 +48,4 @@ The zoom factor.
 
 ---
 #####See Also#####
-- [onZoomStart](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/onZoomStart.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#onZoomStart')
+- [onZoomStart](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/onZoomStart.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#onZoomStart')

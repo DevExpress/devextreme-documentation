@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether to hide [series point markers](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point/symbol.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#symbol') automatically to reduce visual clutter.
+Specifies whether to hide [series point markers](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/symbol.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#symbol') automatically to reduce visual clutter.
 
 ---
 Point markers are hidden when:
@@ -14,4 +14,4 @@ Point markers are hidden when:
 - In a multi-series chart, all point markers of a series are overlapped by adjacent markers and markers of other series.
 
 #####See Also#####
-- **series**.[aggregation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/')
+- **series**.[aggregation](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/aggregation '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/')

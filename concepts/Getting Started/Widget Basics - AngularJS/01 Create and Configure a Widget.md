@@ -6,9 +6,9 @@ For operating with AngularJS, DevExtreme includes an <a href="https://docs.angul
 
     <!--JavaScript-->angular.module('myApp', [ 'dx' ]);
 
-The *"dx"* module contains <a href="http://docs.angularjs.org/guide/directive" target="_blank">directives</a> that you use to create any DevExtreme UI component. For instance, the `dx-button` directive creates a [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component, `dx-range-slider` creates a [RangeSlider](/api-reference/10%20UI%20Widgets/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/'), etc. Note that all DevExtreme directives satisfy the <a href="https://docs.angularjs.org/guide/directive#normalization" target="_blank">AngularJS normalization rules</a>: **dx-***UI-component-name*.
+The *"dx"* module contains <a href="http://docs.angularjs.org/guide/directive" target="_blank">directives</a> that you use to create any DevExtreme UI component. For instance, the `dx-button` directive creates a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component, `dx-range-slider` creates a [RangeSlider](/api-reference/10%20UI%20Components/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/'), etc. Note that all DevExtreme directives satisfy the <a href="https://docs.angularjs.org/guide/directive#normalization" target="_blank">AngularJS normalization rules</a>: **dx-***UI-component-name*.
 
-Any DevExtreme directive should be associated with a `<div>` HTML element, which plays the role of a container for the UI component. For example, the following code creates a [Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') UI component in a `<div>` container.
+Any DevExtreme directive should be associated with a `<div>` HTML element, which plays the role of a container for the UI component. For example, the following code creates a [Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') UI component in a `<div>` container.
 
     <!--HTML--><div dx-chart=""></div>
 
@@ -64,7 +64,7 @@ As an alternative, you can declare the whole object of UI component properties i
     </div>
 
 #####See Also#####
-- **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
+- **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
 - [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options')
 
 [tags]basics, angularjs, create, configure, initialize, design time, scope properties

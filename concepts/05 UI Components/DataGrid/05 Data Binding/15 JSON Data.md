@@ -1,4 +1,4 @@
-To bind the DataGrid to data in the JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.  
+To bind the DataGrid to data in the JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.  
 
 ---
 
@@ -147,7 +147,7 @@ If you need to specify request headers or process response data, use the [Custom
 The **CustomStore** requires thorough configuration if data is processed on the server. See the [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/') topic for more details.
 
 #####See Also#####
-- [Access the DataSource](/concepts/05%20Widgets/DataGrid/05%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/DataGrid/Data_Binding/Access_the_DataSource/')
+- [Access the DataSource](/concepts/05%20UI%20Components/DataGrid/05%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/DataGrid/Data_Binding/Access_the_DataSource/')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AjaxRequest)
 
 [tags]dataGrid, data grid, data binding, json, jsonp, callback parameter

@@ -18,13 +18,13 @@ The processed shape's object.
 ---
 The template content must be presented as SVG elements.
 
-Use the [template](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
+Use the [template](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
 
 [note]
 
-If the [textExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr) option is specified, template content may overlap with text from the data source. 
+If the [textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/textExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr') option is specified, template content may overlap with text from the data source. 
 
-Since the [textExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr) option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
+Since the [textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/textExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr') option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
 
 [/note]
 
@@ -38,4 +38,4 @@ Since the [textExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configu
 }
 
 #####See Also#####
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

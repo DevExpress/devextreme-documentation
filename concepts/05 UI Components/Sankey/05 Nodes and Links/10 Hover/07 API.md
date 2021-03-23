@@ -1,4 +1,4 @@
-To change a node or link's hover state, pass **true** or **false** to their [hover(state)](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/3%20Methods/hover(state).md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Methods/#hoverstate') method. You can call the [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/6%20Node/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Methods/#isHovered') method to check the current state.
+To change a node or link's hover state, pass **true** or **false** to their [hover(state)](/api-reference/10%20UI%20Components/dxSankey/6%20Node/3%20Methods/hover(state).md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Methods/#hoverstate') method. You can call the [isHovered()](/api-reference/10%20UI%20Components/dxSankey/6%20Node/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxSankey/Node/Methods/#isHovered') method to check the current state.
 
 ---
 ##### jQuery
@@ -56,4 +56,4 @@ To change a node or link's hover state, pass **true** or **false** to their [hov
 ---
 
 #####See Also#####
-- [Access a Node or Link Using the API](/concepts/05%20Widgets/Sankey/05%20Nodes%20and%20Links/25%20Access%20a%20Node%20or%20Link%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Access_a_Node_or_Link_Using_the_API/')
+- [Access a Node or Link Using the API](/concepts/05%20UI%20Components/Sankey/05%20Nodes%20and%20Links/25%20Access%20a%20Node%20or%20Link%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Access_a_Node_or_Link_Using_the_API/')

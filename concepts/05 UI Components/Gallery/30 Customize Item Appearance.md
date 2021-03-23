@@ -1,4 +1,4 @@
-Gallery items are not sctrictly images. They can contain text or other elements of your choice. For a minor customization of Gallery items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/') in item data objects. For example, the following code generates two items: one is disabled and the other has a specified <a href="http://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt attribute</a>.
+Gallery items are not sctrictly images. They can contain text or other elements of your choice. For a minor customization of Gallery items, you can define [specific fields](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/') in item data objects. For example, the following code generates two items: one is disabled and the other has a specified <a href="http://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt attribute</a>.
 
 ---
 ##### jQuery
@@ -109,7 +109,7 @@ Gallery items are not sctrictly images. They can contain text or other elements 
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
@@ -221,7 +221,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#itemTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
     $(function () {
@@ -251,13 +251,13 @@ You can also customize an individual Gallery item. For this purpose, declare a t
         // ...
     ];
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 <a href="/Demos/WidgetsGallery/Demo/Gallery/ItemTemplate/" class="button orange small fix-width-155" style="margin-right: 5px; width:240px" target="_blank">View Built-In Template Engine Demo</a>
 <a href="/Demos/WidgetsGallery/Demo/Gallery/Item3rdPartyEngineTemplate/" class="button orange small fix-width-155" style="margin-right: 20px; width:240px" target="_blank">View 3rd-Party Template Engine Demo</a>
 
 #####See Also#####
-- [Gallery - Transform and Combine Images](/concepts/05%20Widgets/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
-- [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
+- [Gallery - Transform and Combine Images](/concepts/05%20UI%20Components/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
+- [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]gallery, item appearance, customize, templates

@@ -1,4 +1,4 @@
-To handle value changes, implement the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') function. In this tutorial, it logs the previous and current values.
+To handle value changes, implement the [onValueChanged](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') function. In this tutorial, it logs the previous and current values.
 
 ---
 ##### jQuery

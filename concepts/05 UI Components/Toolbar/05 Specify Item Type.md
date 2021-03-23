@@ -274,9 +274,9 @@ Items that contain a UI component should have the [widget](/api-reference/_hidde
 ---
 
 #####See Also#####
-- [Toolbar - Specify Item Location](/concepts/05%20Widgets/Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Location')
-- [Toolbar - Customize Item Appearance](/concepts/05%20Widgets/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Toolbar/Customize_Item_Appearance')
+- [Toolbar - Specify Item Location](/concepts/05%20UI%20Components/Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/UI_Components/Toolbar/Specify_Item_Location')
+- [Toolbar - Customize Item Appearance](/concepts/05%20UI%20Components/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Toolbar/Customize_Item_Appearance')
 - [Toolbar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview)
-- [Toolbar API Reference](/api-reference/10%20UI%20Widgets/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
+- [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
 [tags]toolbar, type, item type, UI component item

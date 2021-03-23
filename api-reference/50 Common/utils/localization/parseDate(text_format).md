@@ -17,3 +17,4 @@ A string value to be parsed.
 The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') of the string to be parsed.
 
 ---
+Refer to the following help topic for a code example: [Format Custom Values](/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values).

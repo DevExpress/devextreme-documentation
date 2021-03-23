@@ -46,7 +46,7 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
 
 ---
 
-You can change a column's **groupIndex** at runtime using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. 
+You can change a column's **groupIndex** at runtime using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. 
 
 ---
 
@@ -81,5 +81,5 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
 ---
 
 #####See Also#####
-- [User Interaction - Group Data](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/10%20Group%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Group_Data')
+- [User Interaction - Group Data](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/10%20User%20Interaction/10%20Group%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Group_Data')
 

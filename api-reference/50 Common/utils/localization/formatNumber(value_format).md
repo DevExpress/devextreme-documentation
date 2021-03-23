@@ -17,23 +17,16 @@ A numeric value to be converted.
 The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') to be used for conversion.
 
 ---
----
-##### jQuery
 
-    <!--JavaScript-->
-    var numberString = DevExpress.localization.formatNumber(0.25, "percent");
+    <!-- tab: JavaScript -->
+    const numberString = DevExpress.localization.formatNumber(0.25, "percent");
     console.log(numberString); // logs "25%"
 
-##### Angular
-
-    <!--TypeScript-->
+    // ===== or when using modules =====
     import { formatNumber } from "devextreme/localization";
-    // ...
-    export class AppComponent {
-        constructor() {
-            let numberString = formatNumber(0.25, "percent");
-            console.log(numberString); // logs "25%"
-        }
-    }
 
----
+    const numberString = formatNumber(0.25, "percent");
+    console.log(numberString); // logs "25%"
+
+#####See Also#####
+- [Format Custom Values](/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values)

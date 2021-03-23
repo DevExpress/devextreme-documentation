@@ -1,4 +1,4 @@
-All rows are collapsed by default. Assign an array of keys to the [expandedRowKeys](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/expandedRowKeys.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys') property to expand specific rows initially. If a to-be-expanded row lies deep in the hierarchy, make sure to include keys of all its parent rows as well. Set the [autoExpandAll](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#autoExpandAll') property to **true** if all rows should be expanded initially.
+All rows are collapsed by default. Assign an array of keys to the [expandedRowKeys](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/expandedRowKeys.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys') property to expand specific rows initially. If a to-be-expanded row lies deep in the hierarchy, make sure to include keys of all its parent rows as well. Set the [autoExpandAll](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#autoExpandAll') property to **true** if all rows should be expanded initially.
 
 ---
 ##### jQuery
@@ -74,7 +74,7 @@ All rows are collapsed by default. Assign an array of keys to the [expandedRowKe
     
 ---
 
-Call the [expandRow(key)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/expandRow(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#expandRowkey') or [collapseRow(key)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/collapseRow(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#collapseRowkey') method to respectively expand or collapse a row at runtime. You can check a row's current state by calling the [isRowExpanded(key)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/isRowExpanded(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#isRowExpandedkey') method.
+Call the [expandRow(key)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/expandRow(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#expandRowkey') or [collapseRow(key)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/collapseRow(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#collapseRowkey') method to respectively expand or collapse a row at runtime. You can check a row's current state by calling the [isRowExpanded(key)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/isRowExpanded(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#isRowExpandedkey') method.
 
 ---
 ##### jQuery

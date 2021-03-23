@@ -1,4 +1,4 @@
-Before accessing a series point, gain access to its series by calling the [getAllSeries()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/getAllSeries().md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#getAllSeries') method. You can call the [getSeriesByName(seriesName)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/getSeriesByName(seriesName).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#getSeriesByNameseriesName')  or [getSeriesByPos(seriesIndex)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/3%20Methods/getSeriesByPos(seriesIndex).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#getSeriesByPosseriesIndex') method as an alternative for multi-series **PieCharts**.
+Before accessing a series point, gain access to its series by calling the [getAllSeries()](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getAllSeries().md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#getAllSeries') method. You can call the [getSeriesByName(seriesName)](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getSeriesByName(seriesName).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#getSeriesByNameseriesName')  or [getSeriesByPos(seriesIndex)](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getSeriesByPos(seriesIndex).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#getSeriesByPosseriesIndex') method as an alternative for multi-series **PieCharts**.
 
 ---
 ##### jQuery
@@ -90,9 +90,9 @@ Before accessing a series point, gain access to its series by calling the [getAl
 
 ---
 
-Use the following methods to access series points. All of them return one or several objects whose fields and methods are described in the API reference's [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') section.
+Use the following methods to access series points. All of them return one or several objects whose fields and methods are described in the API reference's [Point](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') section.
 
-- [getAllPoints()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getAllPoints().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getAllPoints')        
+- [getAllPoints()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getAllPoints().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getAllPoints')        
 Gets all the series points.
 
     ---
@@ -191,7 +191,7 @@ Gets all the series points.
 
     ---
 
-- [getPointsByArg(pointArg)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getPointsByArg(pointArg).md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getPointsByArgpointArg')      
+- [getPointsByArg(pointArg)](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getPointsByArg(pointArg).md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getPointsByArgpointArg')      
 Gets those series points that have a specific argument.
 
     ---
@@ -289,7 +289,7 @@ Gets those series points that have a specific argument.
 
     ---
 
-- [getPointByPos(positionIndex)](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getPointByPos(positionIndex).md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getPointByPospositionIndex')          
+- [getPointByPos(positionIndex)](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Series/3%20Methods/getPointByPos(positionIndex).md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getPointByPospositionIndex')          
 Gets a point using its index. The index is zero-based.
 
     ---
@@ -387,8 +387,8 @@ Gets a point using its index. The index is zero-based.
 
     ---
 
-- [getVisiblePoints()](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Series/3%20Methods/getVisiblePoints().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getVisiblePoints')          
-Gets only [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point/3%20Methods/isVisible().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isVisible') series points.
+- [getVisiblePoints()](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Series/3%20Methods/getVisiblePoints().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Series/Methods/#getVisiblePoints')          
+Gets only [visible](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point/3%20Methods/isVisible().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isVisible') series points.
 
     ---
     ##### jQuery
@@ -485,7 +485,7 @@ Gets only [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChar
 
     ---
 
-Apart from the API methods, you can access a series point in the event handlers. For example, the [onPointClick](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#onPointClick') event handler gets the clicked series point in the argument.
+Apart from the API methods, you can access a series point in the event handlers. For example, the [onPointClick](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#onPointClick') event handler gets the clicked series point in the argument.
 
 ---
 ##### jQuery
@@ -572,8 +572,8 @@ Apart from the API methods, you can access a series point in the event handlers.
 
 ---
 
-[note] Each [Point](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object contains a reference to its parent series in the [series](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/2%20Fields/series.md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Fields/#series') field.
+[note] Each [Point](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object contains a reference to its parent series in the [series](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/2%20Fields/series.md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Fields/#series') field.
 
 #####See Also#####
-- [Access a Point Label Using the API](/concepts/05%20Widgets/PieChart/15%20Point%20Labels/15%20Access%20a%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Access_a_Label_Using_the_API/')
+- [Access a Point Label Using the API](/concepts/05%20UI%20Components/PieChart/15%20Point%20Labels/15%20Access%20a%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Access_a_Label_Using_the_API/')
 #include common-link-callmethods

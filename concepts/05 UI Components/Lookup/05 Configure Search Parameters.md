@@ -117,7 +117,7 @@ The Lookup UI component allows a user to search through its items. Moreover, the
 
 ---
 
-The Lookup UI component can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode') property to change the mode. You can also use the [searchPlaceholder](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/searchPlaceholder.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchPlaceholder') property to specify a placeholder for an empty search box.
+The Lookup UI component can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode') property to change the mode. You can also use the [searchPlaceholder](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/searchPlaceholder.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchPlaceholder') property to specify a placeholder for an empty search box.
 
 ---
 ##### jQuery
@@ -234,7 +234,7 @@ The Lookup UI component can provide suggestions in two different modes: *'contai
 
 ---
 
-The Lookup UI component starts providing suggestions once an end user types the first character by default. Use the [minSearchLength](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength') property to increase the number of characters that triggers suggestions. 
+The Lookup UI component starts providing suggestions once an end user types the first character by default. Use the [minSearchLength](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength') property to increase the number of characters that triggers suggestions. 
 
 ---
 ##### jQuery
@@ -311,7 +311,7 @@ The Lookup UI component starts providing suggestions once an end user types the 
 
 ---
 
-There is a delay between the moment a user finishes typing and the moment the Lookup starts providing suggestions. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchTimeout') property. The delay is measured in milliseconds.
+There is a delay between the moment a user finishes typing and the moment the Lookup starts providing suggestions. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchTimeout') property. The delay is measured in milliseconds.
 
 ---
 ##### jQuery
@@ -387,7 +387,7 @@ There is a delay between the moment a user finishes typing and the moment the Lo
 
 ---
 
-The Lookup UI component also clears previous search results before the drop-down menu is displayed by default. Assign **false** to the [cleanSearchOnOpening](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/cleanSearchOnOpening.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#cleanSearchOnOpening') property to keep them.
+The Lookup UI component also clears previous search results before the drop-down menu is displayed by default. Assign **false** to the [cleanSearchOnOpening](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/cleanSearchOnOpening.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#cleanSearchOnOpening') property to keep them.
 
 ---
 ##### jQuery
@@ -463,7 +463,7 @@ The Lookup UI component also clears previous search results before the drop-down
 
 ---
 
-Assign **false** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled') property if you need to disable searching.
+Assign **false** to the [searchEnabled](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled') property if you need to disable searching.
 
 ---
 ##### jQuery
@@ -540,8 +540,8 @@ Assign **false** to the [searchEnabled](/api-reference/10%20UI%20Widgets/dxLooku
 ---
 
 #####See Also#####
-- [Lookup - Enable Grouping](/concepts/05%20Widgets/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
-- [Lookup - Enable Paging](/concepts/05%20Widgets/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
+- [Lookup - Enable Grouping](/concepts/05%20UI%20Components/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
+- [Lookup - Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
 - [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
 
 [tags]lookup, search, search mode, time interval, min search length, disable searching, placeholder, clean search parameters, searchExpr

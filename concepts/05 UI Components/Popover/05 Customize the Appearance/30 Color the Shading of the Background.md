@@ -1,4 +1,4 @@
-When the Popover is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shadingColor') property.
+When the Popover is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shadingColor') property.
 
 ---
 ##### jQuery 
@@ -130,9 +130,9 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
 ---
 
 #####See Also#####
-- [Popover - Customize the Content](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
-- [Popover - Customize the Title](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/')
-- [Popover - Specify Toolbar Items](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
+- [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
+- [Popover - Customize the Title](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/')
+- [Popover - Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
 - [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
 
 [tags]popover, overlay, shading, background, shading color

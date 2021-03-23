@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.getSelectedRowKeys(leavesOnly)
-deprecated: Use the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowKeysmode') method instead.
+deprecated: Use the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowKeysmode') method instead.
 ---
 ---
 ##### shortDescription

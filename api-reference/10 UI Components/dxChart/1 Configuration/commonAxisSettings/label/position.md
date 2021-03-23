@@ -9,7 +9,7 @@ default: 'outside'
 Specifies the position of labels relative to the chart or its axis.
 
 ---
-You can specify the following positions for labels on the [valueAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/):
+You can specify the following positions for labels on the [valueAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/'):
 
 <table class="dx-table">
     <tr>
@@ -26,7 +26,7 @@ You can specify the following positions for labels on the [valueAxis](/Documenta
     </tr>
 </table>
 
-The following positions are available for labels on the [argumentAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/):
+The following positions are available for labels on the [argumentAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/'):
 
 <table class="dx-table">
     <tr>
@@ -43,4 +43,4 @@ The following positions are available for labels on the [argumentAxis](/Document
     </tr>
 </table>
 
-The *"inside"* and *"outside"* values allow you to keep the same label's position when the chart is [rotated](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated).
+The *"inside"* and *"outside"* values allow you to keep the same label's position when the chart is [rotated](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated').

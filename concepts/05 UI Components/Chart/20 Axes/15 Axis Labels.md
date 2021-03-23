@@ -1,8 +1,8 @@
-Axis labels display values indicated by [major axis ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/').
+Axis labels display values indicated by [major axis ticks](/concepts/05%20UI%20Components/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/').
 
 ![DevExtreme HTML5 JavaScript Charts AxisLabels](/images/ChartJS/visual_elements/axis_labels.png)
 
-You can configure axis labels using the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/') object. It comprises properties that specify the [alignment](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/label/alignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#alignment'), [font](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/label/font '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/font/'), [text](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/label/customizeText.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#customizeText'), and other attributes of axis labels. Pay particular attention to the [displayMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/label/displayMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#displayMode') property that allows you to rotate or stagger axis labels.
+You can configure axis labels using the [label](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/') object. It comprises properties that specify the [alignment](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/alignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#alignment'), [font](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/font '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/font/'), [text](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/label/customizeText.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#customizeText'), and other attributes of axis labels. Pay particular attention to the [displayMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/displayMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#displayMode') property that allows you to rotate or stagger axis labels.
 
 ---
 ##### jQuery
@@ -101,7 +101,7 @@ You can configure axis labels using the [label](/api-reference/20%20Data%20Visua
 
 ---
 
-Another noteworthy property is [overlappingBehavior](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/commonAxisSettings/label/overlappingBehavior.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#overlappingBehavior'). It allows you to decide how axis labels should behave when they overlap each other.
+Another noteworthy property is [overlappingBehavior](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/overlappingBehavior.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#overlappingBehavior'). It allows you to decide how axis labels should behave when they overlap each other.
 
 ---
 ##### jQuery
@@ -201,8 +201,8 @@ Another noteworthy property is [overlappingBehavior](/api-reference/20%20Data%20
 ---
 
 #####See Also#####
-- [Axis Ticks](/concepts/05%20Widgets/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/')
-- [Axis Titles](/concepts/05%20Widgets/Chart/20%20Axes/25%20Axis%20Titles.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Titles/')
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
+- [Axis Ticks](/concepts/05%20UI%20Components/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/')
+- [Axis Titles](/concepts/05%20UI%20Components/Chart/20%20Axes/25%20Axis%20Titles.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Titles/')
+- [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, axis labels, display mode, displayMode, overlapping behavior, overlappingBehavior

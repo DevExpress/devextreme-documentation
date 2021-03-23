@@ -4,7 +4,7 @@ The RadioGroup is a UI component that contains a set of radio buttons and allows
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview/"
 }
 
-The following code adds a simple RadioGroup to your page. Here, the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#value') property specifies the initially selected radio button.
+The following code adds a simple RadioGroup to your page. Here, the [value](/api-reference/10%20UI%20Components/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#value') property specifies the initially selected radio button.
 
 ---
 ##### jQuery
@@ -94,7 +94,7 @@ The following code adds a simple RadioGroup to your page. Here, the [value](/api
 
 ---
 
-If your data is an array of objects, bind it to the RadioGroup using the [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#displayExpr') and [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#valueExpr') properties. **displayExpr** specifies which data source field provides texts for buttons; **valueExpr** specifies which data source field provides values to be written to the [value](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#value') property when a button is selected. Leave **valueExpr** unspecified if you need the entire data object to be written to the **value** property.
+If your data is an array of objects, bind it to the RadioGroup using the [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#displayExpr') and [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#valueExpr') properties. **displayExpr** specifies which data source field provides texts for buttons; **valueExpr** specifies which data source field provides values to be written to the [value](/api-reference/10%20UI%20Components/dxRadioGroup/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#value') property when a button is selected. Leave **valueExpr** unspecified if you need the entire data object to be written to the **value** property.
 
 ---
 ##### jQuery
@@ -220,7 +220,7 @@ If your data is an array of objects, bind it to the RadioGroup using the [displa
 
 ---
 
-The RadioGroup UI component supports horizontal (default for tablets) and vertical (default for other devices) layouts. To change the layout for all types of devices, specify the [layout](/api-reference/10%20UI%20Widgets/dxRadioGroup/1%20Configuration/layout.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#layout') property.
+The RadioGroup UI component supports horizontal (default for tablets) and vertical (default for other devices) layouts. To change the layout for all types of devices, specify the [layout](/api-reference/10%20UI%20Components/dxRadioGroup/1%20Configuration/layout.md '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#layout') property.
 
 ---
 ##### jQuery
@@ -309,9 +309,9 @@ The RadioGroup UI component supports horizontal (default for tablets) and vertic
 
 #####See Also#####
 #include common-link-configurewidget
-- [RadioGroup - Handle the Value Change Event](/concepts/05%20Widgets/RadioGroup/05%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/RadioGroup/Handle_the_Value_Change_Event')
-- [RadioGroup - Customize Item Appearance](/concepts/05%20Widgets/RadioGroup/10%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/RadioGroup/Customize_Item_Appearance')
-- [RadioGroup - Keyboard Support](/concepts/05%20Widgets/RadioGroup/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/RadioGroup/Keyboard_Support')
-- [RadioGroup API Reference](/api-reference/10%20UI%20Widgets/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
+- [RadioGroup - Handle the Value Change Event](/concepts/05%20UI%20Components/RadioGroup/05%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/RadioGroup/Handle_the_Value_Change_Event')
+- [RadioGroup - Customize Item Appearance](/concepts/05%20UI%20Components/RadioGroup/10%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/RadioGroup/Customize_Item_Appearance')
+- [RadioGroup - Keyboard Support](/concepts/05%20UI%20Components/RadioGroup/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/RadioGroup/Keyboard_Support')
+- [RadioGroup API Reference](/api-reference/10%20UI%20Components/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
 
 [tags]dxradiogroup, radio group, radioGroup, layout, editor, overview

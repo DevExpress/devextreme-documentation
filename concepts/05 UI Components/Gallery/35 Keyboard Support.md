@@ -6,11 +6,11 @@ An end user can use the following keys to interact with the UI component.
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>&larr; / &uarr;</td>
         <td>Shows the previous image.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>&rarr; / &darr;</td>
         <td>Shows the following image.</td>
     </tr>
 </table>
@@ -20,6 +20,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
-- [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
+- [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]gallery, accessibility, keyboard shortcuts

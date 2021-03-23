@@ -4,7 +4,7 @@ The Lookup is a UI component that allows an end user to search for an item in a 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/"
 }
 
-The following code adds the Lookup UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dataSource') to be specified. In addition, you can define the [placeholder](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#placeholder') to be displayed when the Lookup input field is empty.
+The following code adds the Lookup UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dataSource') to be specified. In addition, you can define the [placeholder](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#placeholder') to be displayed when the Lookup input field is empty.
 
 ---
 ##### jQuery
@@ -111,10 +111,10 @@ The following code adds the Lookup UI component to your page. The simplest confi
 
 If your data is an array of objects, specify: 
 
-- [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#valueExpr')     
-    The data field whose value will be written into the [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') property.
-- [displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#displayExpr')     
-    The data field whose value will be displayed within the inner [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview') UI component and in the input field of the Lookup.
+- [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#valueExpr')     
+    The data field whose value will be written into the [value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') property.
+- [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#displayExpr')     
+    The data field whose value will be displayed within the inner [List](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview') UI component and in the input field of the Lookup.
 
 <!---->
 
@@ -227,12 +227,12 @@ If your data is an array of objects, specify:
 
 #####See Also#####
 #include common-link-configurewidget
-- [Lookup - Configure Search Parameters](/concepts/05%20Widgets/Lookup/05%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Lookup/Configure_Search_Parameters/')
-- [Lookup - Enable Grouping](/concepts/05%20Widgets/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
-- [Lookup - Enable Paging](/concepts/05%20Widgets/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
-- [Lookup - Customize the Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
-- [Lookup - Handle the Value Change Event](/concepts/05%20Widgets/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Lookup/Handle_the_Value_Change_Event/')
-- [Lookup API Reference](/api-reference/10%20UI%20Widgets/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
-- [Lookup vs SelectBox](/concepts/05%20Widgets/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')
+- [Lookup - Configure Search Parameters](/concepts/05%20UI%20Components/Lookup/05%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Lookup/Configure_Search_Parameters/')
+- [Lookup - Enable Grouping](/concepts/05%20UI%20Components/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
+- [Lookup - Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
+- [Lookup - Customize the Appearance](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
+- [Lookup - Handle the Value Change Event](/concepts/05%20UI%20Components/Lookup/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Lookup/Handle_the_Value_Change_Event/')
+- [Lookup API Reference](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
+- [Lookup vs SelectBox](/concepts/05%20UI%20Components/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')
 
 [tags]dxlookup, lookup, overview, data source, value, display expression, displayExpr, valueExpr

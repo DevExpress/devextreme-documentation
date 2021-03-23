@@ -3,7 +3,7 @@ id: PivotGridDataSource.createDrillDownDataSource(options)
 ---
 ---
 ##### shortDescription
-Provides access to the [facts](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/04%20Summary%20Values.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Summary_Values') that were used to calculate a specific summary value.
+Provides access to the [facts](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/04%20Summary%20Values.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Summary_Values') that were used to calculate a specific summary value.
 
 ##### return: DataSource
 A drill-down data source.
@@ -18,7 +18,7 @@ A path to the cell with the summary value by columns.
 The field names to be included for each fact.
 
 ##### field(options.dataIndex): Number
-The index of the [measure](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/04%20Summary%20Values.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Summary_Values') for which the summary value is calculated.
+The index of the [measure](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/04%20Summary%20Values.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Summary_Values') for which the summary value is calculated.
 
 ##### field(options.maxRowCount): Number
 Maximum number of facts to get.

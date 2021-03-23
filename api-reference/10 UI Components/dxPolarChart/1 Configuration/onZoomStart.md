@@ -34,8 +34,8 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ##### field(e.range): VizRange
-The [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') when zooming or panning starts.
+The [visual range](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') when zooming or panning starts.
 
 ---
 #####See Also#####
-- [onZoomEnd](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/onZoomEnd.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#onZoomEnd')
+- [onZoomEnd](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/onZoomEnd.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#onZoomEnd')

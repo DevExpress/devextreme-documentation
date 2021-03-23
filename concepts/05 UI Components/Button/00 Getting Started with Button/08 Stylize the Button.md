@@ -1,4 +1,4 @@
-You can use the [type](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type) property to apply predefined color schemes to Buttons. You can also use the [stylingMode](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#stylingMode) property to customize the fill and borders. Refer to the [Predefined Types](/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/) demo for more information about these properties.
+You can use the [type](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type') property to apply predefined color schemes to Buttons. You can also use the [stylingMode](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/stylingMode.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#stylingMode') property to customize the fill and borders. Refer to the [Predefined Types](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/) demo for more information about these properties.
 
 ---
 ##### jQuery

@@ -18,6 +18,9 @@ The total summary value.
 ##### field(options.value): any
 A value to be aggregated. If you need to access an entire data object in this field, do not specify the [dataField](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/dataField.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#dataField') property.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 A summary value calculation is conducted in three stages: *start* - in which the **totalValue** is initialized, *calculate* - in which it is modified, and *finalize* - in which the **totalValue** is adjusted. To identify the current stage, check the value of the **summaryProcess** field that belongs to the function's parameter.
 

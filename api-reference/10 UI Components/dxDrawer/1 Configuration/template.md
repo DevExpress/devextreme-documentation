@@ -10,6 +10,9 @@ Specifies the drawer's content.
 ##### param(Element): dxElement
 The container for the content. It is an <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target="_blank">HTML Element</a> or a <a href="http://api.jquery.com/Types/#jQuery" target="_blank">jQuery Element</a> when you use jQuery.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ![DevExtreme HTML5 JavaScript Drawer](/images/UiWidgets/drawer.png)
 

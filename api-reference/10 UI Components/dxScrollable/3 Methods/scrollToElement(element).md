@@ -3,10 +3,11 @@ id: dxScrollable.scrollToElement(element)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Scrolls content to an element.
 
 ##### param(element): Element | jQuery
-<!-- Description goes here -->
+A DOM Node or jQuery element to scroll to.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+#include common-link-callmethods

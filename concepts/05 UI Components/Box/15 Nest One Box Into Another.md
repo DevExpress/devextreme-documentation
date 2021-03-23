@@ -1,4 +1,4 @@
-A nested **Box** is configured similarly to an ordinary **Box**. To nest one **Box** into another, add one more item to the parent **Box** and put the markup of the nested **Box** into this item.
+A nested Box is configured similarly to an ordinary Box. To nest one Box into another, add one more item to the parent Box and put the markup of the nested Box into this item.
 
 ---
 
@@ -201,8 +201,8 @@ This code yields the following result.
 ![DevExtreme HTML5 LayoutWidget Box](/images/UiWidgets/Box/Box_nested-boxes.png)
 
 #####See Also#####
-- [Box - Arrange and Align Items](/concepts/05%20Widgets/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
+- [Box - Arrange and Align Items](/concepts/05%20UI%20Components/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
-- [Box API Reference](/api-reference/10%20UI%20Widgets/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
+- [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
 [tags]box, nest, nested, nest boxes, nested boxes

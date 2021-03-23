@@ -1,6 +1,6 @@
 The visual and whole ranges help you control which part of the axis a user sees and interacts with. Both ranges are available for the argument and value axes.
 
-The **visual range** specifies the axis range visible to the user. Use it to focus the **Chart** on a specific part of the series. The following image illustrates the difference between charts with and without the specified visual range:
+The **visual range** specifies the axis range visible to the user. Use it to focus the Chart on a specific part of the series. The following image illustrates the difference between charts with and without the specified visual range:
 
 <div id="figures">
     <figure>
@@ -14,11 +14,11 @@ The **visual range** specifies the axis range visible to the user. Use it to foc
     </figure>
 </div>
 
-Users can change the visual range if [zooming and panning](/concepts/05%20Widgets/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/') are enabled. However, users cannot move the visual range outside the data range (to an area with no data). If they should be able to do this, specify the **whole range**. It sets new limits for the visual range.
+Users can change the visual range if [zooming and panning](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/') are enabled. However, users cannot move the visual range outside the data range (to an area with no data). If they should be able to do this, specify the **whole range**. It sets new limits for the visual range.
 
-Both ranges can be specified using the start and end values or length. Refer to the [visualRange](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') or [wholeRange](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange/') property's description for more information.
+Both ranges can be specified using the start and end values or length. Refer to the [visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') or [wholeRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange/') property's description for more information.
 
-To change the visual range programmatically, call the [Axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Axis '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/') object's [visualRange(visualRange)](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange(visualRange).md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRangevisualRange') method. Calling the same method [without arguments](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRange') allows you to get the current visual range:
+To change the visual range programmatically, call the [Axis](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Axis '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/') object's [visualRange(visualRange)](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange(visualRange).md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRangevisualRange') method. Calling the same method [without arguments](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRange') allows you to get the current visual range:
 
 ---
 ##### jQuery
@@ -153,11 +153,11 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
 
 ---
 
-An axis' visual range can behave differently when chart data is updated. See the **visualRangeUpdateMode** property for the [argument axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') or [value axis](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode') for more information.
+An axis' visual range can behave differently when chart data is updated. See the **visualRangeUpdateMode** property for the [argument axis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode') or [value axis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode') for more information.
 
 #####See Also#####
-- [Scale Breaks](/concepts/05%20Widgets/Chart/20%20Axes/33%20Scale%20Breaks.md '/Documentation/Guide/UI_Components/Chart/Axes/Scale_Breaks/')
-- [Rotate and Invert the Chart](/concepts/05%20Widgets/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/UI_Components/Chart/Rotate_and_Invert_the_Chart/')
+- [Scale Breaks](/concepts/05%20UI%20Components/Chart/20%20Axes/33%20Scale%20Breaks.md '/Documentation/Guide/UI_Components/Chart/Axes/Scale_Breaks/')
+- [Rotate and Invert the Chart](/concepts/05%20UI%20Components/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/UI_Components/Chart/Rotate_and_Invert_the_Chart/')
 
 <style>
     #figures {

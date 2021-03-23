@@ -1,4 +1,4 @@
-You can use the following code to create a **DropDownButton**:
+You can use the following code to create a DropDownButton:
 
 ---
 ##### jQuery

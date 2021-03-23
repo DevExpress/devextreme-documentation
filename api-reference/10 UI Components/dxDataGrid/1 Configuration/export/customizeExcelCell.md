@@ -1,7 +1,7 @@
 ---
 id: dxDataGrid.Options.export.customizeExcelCell
 type: function(options)
-deprecated: Since v20.1, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/') which does not use this property.
+deprecated: Since v20.1, we recommend [ExcelJS-based export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/') which does not use this property.
 ---
 ---
 ##### shortDescription
@@ -26,7 +26,7 @@ The cell fill pattern.
 The cell font.
 
 ##### field(options.gridCell): ExcelDataGridCell
-A **DataGrid** cell that corresponds to the Excel cell.
+A DataGrid cell that corresponds to the Excel cell.
 
 ##### field(options.horizontalAlignment): 'center' | 'centerContinuous' | 'distributed' | 'fill' | 'general' | 'justify' | 'left' | 'right'
 The horizontal cell alignment.

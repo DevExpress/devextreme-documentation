@@ -1,4 +1,4 @@
-Topics in this section describe various elements of the **BarGauge** UI component. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the **BarGauge** UI component. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
+Topics in this section describe various elements of the BarGauge UI component. Each topic gives a detailed overview of the element's purpose and ways of configuring. Below is the element map of the BarGauge UI component. **Hover** over the map and you will discover how different gauge elements are called. **Click an element** to navigate to the topic with details on this element.
 
 <div style="text-align:center">
 
@@ -20,4 +20,4 @@ Topics in this section describe various elements of the **BarGauge** UI componen
 </div>
 
 #####See Also#####
-- [BarGauge API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxBarGauge '/Documentation/ApiReference/UI_Components/dxBarGauge')
+- [BarGauge API Reference](/api-reference/10%20UI%20Components/dxBarGauge '/Documentation/ApiReference/UI_Components/dxBarGauge')

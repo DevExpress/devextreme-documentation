@@ -1,8 +1,8 @@
-Exposes the **Map** UI component.
+Exposes the Map UI component.
 
 Exports:
 
-- *default* - The [Map](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/') UI component
+- *default* - The [Map](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/') UI component
 
         require("ui/map");
         // ===== or =====

@@ -1,10 +1,10 @@
-The **CheckBox** is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
+The CheckBox is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
 }
 
-The following code adds the **CheckBox** to your page.
+The following code adds the CheckBox to your page.
 
 ---
 ##### jQuery
@@ -109,12 +109,12 @@ The following code adds the **CheckBox** to your page.
 
 ---
 
-The **CheckBox** UI component can have the following states: checked (the **value** property is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).
+The CheckBox UI component can have the following states: checked (the **value** property is _true_), unchecked (**value** is _false_), undetermined (**value** is _undefined_).
 
 #####See Also#####
 #include common-link-configurewidget
-- [CheckBox - Handle the Value Change Event](/concepts/05%20Widgets/CheckBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/CheckBox/Handle_the_Value_Change_Event')
-- [CheckBox - Keyboard Support](/concepts/05%20Widgets/CheckBox/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/CheckBox/Keyboard_Support')
-- [CheckBox API Reference](/api-reference/10%20UI%20Widgets/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/')
+- [CheckBox - Handle the Value Change Event](/concepts/05%20UI%20Components/CheckBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/CheckBox/Handle_the_Value_Change_Event')
+- [CheckBox - Keyboard Support](/concepts/05%20UI%20Components/CheckBox/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/CheckBox/Keyboard_Support')
+- [CheckBox API Reference](/api-reference/10%20UI%20Components/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/')
 
 [tags]dxcheckbox, check box, checkBox, editor, overview

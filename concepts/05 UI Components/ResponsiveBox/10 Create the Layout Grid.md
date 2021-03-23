@@ -1,4 +1,4 @@
-All **ResponsiveBox** elements are arranged in a layout grid according to the [rows](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. Each object in these arrays configures a single row or column. Populate these arrays with empty objects to get two sets of equally-sized rows and columns.
+All ResponsiveBox elements are arranged in a layout grid according to the [rows](/api-reference/10%20UI%20Components/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Components/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. Each object in these arrays configures a single row or column. Populate these arrays with empty objects to get two sets of equally-sized rows and columns.
 
 ---
 ##### jQuery
@@ -117,9 +117,9 @@ All **ResponsiveBox** elements are arranged in a layout grid according to the [r
 
 ---
 
-The **baseSize**, **ratio**, and **shrink** settings control a row or column's size. The **baseSize** defines the row's or column's initial size in pixels. The size then changes according to **ratio** and **shrink** if the **ResponsiveBox**'s size changes.
+The **baseSize**, **ratio**, and **shrink** settings control a row or column's size. The **baseSize** defines the row's or column's initial size in pixels. The size then changes according to **ratio** and **shrink** if the ResponsiveBox's size changes.
 
-The **ResponsiveBox** can provide more space than rows' and columns' **baseSize**s require:
+The ResponsiveBox can provide more space than rows' and columns' **baseSize**s require:
 
 ![DevExtreme ResponsiveBox: Available width and height](/images/UiWidgets/ResponsiveBox/responsivebox-basesize.png)
 
@@ -139,7 +139,7 @@ In the following image, the middle column's **shrink** value is more than the ot
 
 ![DevExtreme ResponsiveBox: The middle column and the bottom row shrink more than the other columns and rows](/images/UiWidgets/ResponsiveBox/responsivebox-shrink-unevenly.png)
 
-The collections of rows and columns may differ depending on the screen's [size qualifier](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/'). You can use the **screen** property to specify on which screen types an individual row or column should appear.
+The collections of rows and columns may differ depending on the screen's [size qualifier](/concepts/05%20UI%20Components/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/'). You can use the **screen** property to specify on which screen types an individual row or column should appear.
 
 ---
 
@@ -263,9 +263,9 @@ The collections of rows and columns may differ depending on the screen's [size q
 ---
 
 #####See Also#####
-- [ResponsiveBox - Arrange Layout Elements](/concepts/05%20Widgets/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
-- [ResponsiveBox - Size Qualifiers](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/')
+- [ResponsiveBox - Arrange Layout Elements](/concepts/05%20UI%20Components/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
+- [ResponsiveBox - Size Qualifiers](/concepts/05%20UI%20Components/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/')
 - [ResponsiveBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview)
-- [ResponsiveBox API Reference](/api-reference/10%20UI%20Widgets/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
+- [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
 [tags]responsive box, responsiveBox, adaptive layout, layout grid, fixed columns, fixed rows, adaptive columns, adaptive rows, baseSize, ratio

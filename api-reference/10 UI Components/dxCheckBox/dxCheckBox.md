@@ -6,7 +6,7 @@ inherits: Editor
 ---
 ---
 ##### shortDescription
-The **CheckBox** is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
+The CheckBox is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
 
 ##### widgettree
 

@@ -3,7 +3,7 @@ id: DOMComponent.dispose()
 ---
 ---
 ##### shortDescription
-Disposes of all the resources allocated to the **{WidgetName}** instance.
+Disposes of all the resources allocated to the {WidgetName} instance.
 
 ---
 After calling this method, remove the DOM element associated with the UI component:

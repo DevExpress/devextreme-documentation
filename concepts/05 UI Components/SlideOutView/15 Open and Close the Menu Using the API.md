@@ -1,4 +1,4 @@
-To open or close the **SlideOutView** menu programmatically, call the [showMenu()](/api-reference/10%20UI%20Widgets/dxSlideOutView/3%20Methods/showMenu().md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Methods/#showMenu') or [hideMenu()](/api-reference/10%20UI%20Widgets/dxSlideOutView/3%20Methods/hideMenu().md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Methods/#hideMenu') method. You can do the same thing using the [toggleMenuVisibility()](/api-reference/10%20UI%20Widgets/dxSlideOutView/3%20Methods/toggleMenuVisibility().md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Methods/#toggleMenuVisibility') method. Pass **true** or **false** to this method to open or close the menu, respectively. For example, the following code shows how to open the slide-out menu when a user clicks the **Menu** button on the **Toolbar** (see the **onClick** function).
+To open or close the SlideOutView menu programmatically, call the [showMenu()](/api-reference/10%20UI%20Components/dxSlideOutView/3%20Methods/showMenu().md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Methods/#showMenu') or [hideMenu()](/api-reference/10%20UI%20Components/dxSlideOutView/3%20Methods/hideMenu().md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Methods/#hideMenu') method. You can do the same thing using the [toggleMenuVisibility()](/api-reference/10%20UI%20Components/dxSlideOutView/3%20Methods/toggleMenuVisibility().md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Methods/#toggleMenuVisibility') method. Pass **true** or **false** to this method to open or close the menu, respectively. For example, the following code shows how to open the slide-out menu when a user clicks the Menu button on the Toolbar (see the **onClick** function).
 
     <!--HTML--><div id="slideOutView">
         <div data-options="dxTemplate: { name: 'content' }">
@@ -44,7 +44,7 @@ To open or close the **SlideOutView** menu programmatically, call the [showMenu(
         width: 100%;
     }
 
-When using AngularJS or Knockout, you can still call the methods mentioned before, but as an alternative, you can bind the [menuVisible](/api-reference/10%20UI%20Widgets/dxSlideOutView/1%20Configuration/menuVisible.md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Configuration/#menuVisible') property of the **SlideOutView** UI component to a scope property (in AngularJS) or an observable variable (in Knockout). After that, change this scope property or observable variable, and the slide-out menu will be opened or closed.
+When using AngularJS or Knockout, you can still call the methods mentioned before, but as an alternative, you can bind the [menuVisible](/api-reference/10%20UI%20Components/dxSlideOutView/1%20Configuration/menuVisible.md '/Documentation/ApiReference/UI_Components/dxSlideOutView/Configuration/#menuVisible') property of the SlideOutView UI component to a scope property (in AngularJS) or an observable variable (in Knockout). After that, change this scope property or observable variable, and the slide-out menu will be opened or closed.
 
 ---
 #####**AngularJS**
@@ -127,6 +127,6 @@ When using AngularJS or Knockout, you can still call the methods mentioned befor
 ---
 
 #####See Also#####
-- [SlideOutView API Reference](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
+- [SlideOutView API Reference](/api-reference/10%20UI%20Components/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
 
 [tags]slideOutView, slide-out menu, open, show, close, hide

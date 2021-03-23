@@ -13,11 +13,11 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
 *"all"*, *"excludeRecursive"*, or *"leavesOnly"*.
 
 ---
-Below is an example of a **TreeList** with several selected rows:
+Below is an example of a TreeList with several selected rows:
 
 ![Selection in the DevExtreme TreeList](/images/treelist/getselectedrowkeys.png)
 
-The **getSelectedRowsData(mode)** method called for this **TreeList** returns different results depending on the **mode** argument:
+The **getSelectedRowsData(mode)** method called for this TreeList returns different results depending on the **mode** argument:
 
 - *"all"*        
 Returns all the selected rows' data objects.
@@ -190,4 +190,4 @@ Returns only leaves' data objects.
 
 #####See Also#####
 #include common-link-callmethods
-- [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowKeysmode')
+- [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowKeysmode')

@@ -12,7 +12,7 @@ All the [options](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Confi
 The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') that contains the fields to get.
 
 ##### param(collectGroups): Boolean
-Pass **true** to return [grouped fields](/concepts/05%20Widgets/PivotGrid/050%20Grouping/030%20Fields%20Grouping.md '/Documentation/Guide/UI_Components/PivotGrid/Grouping/#Fields_Grouping') in a single array entry or **false** to return them as separate entries.     
+Pass **true** to return [grouped fields](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping/030%20Fields%20Grouping.md '/Documentation/Guide/UI_Components/PivotGrid/Grouping/#Fields_Grouping') in a single array entry or **false** to return them as separate entries.     
 The default value is **false**.
 
 ---

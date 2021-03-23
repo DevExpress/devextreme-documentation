@@ -5,11 +5,11 @@ default: false
 ---
 ---
 ##### shortDescription
-Enables [task dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/') validation.
+Enables [task dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/') validation.
 
 ---
 
-The **Gantt** allows you to validate relationships between tasks when they are edited.
+The Gantt allows you to validate relationships between tasks when they are edited.
 
 <table class="dx-table">
     <tr>

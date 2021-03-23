@@ -1,10 +1,10 @@
 When a user selects a series, the series changes its style to the one specified by the following objects.
 
-- **series**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/selectionStyle/')        
+- **series**.[selectionStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/selectionStyle/')        
 The selection style for an individual series.
 
-- **commonSeriesSettings**.[selectionStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/selectionStyle/')         
-The selection style for all series in the **Chart**.
+- **commonSeriesSettings**.[selectionStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/selectionStyle/')         
+The selection style for all series in the Chart.
 
 Individual settings override common settings.
 
@@ -126,7 +126,7 @@ Individual settings override common settings.
 
 ---
 
-To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** property. Just like **selectionStyle**, this property can be specified for all series in the **Chart** or for an individual series. Depending on the series type, the **selectionMode** property accepts different values. For information about them, visit the [Series Types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** property description.
+To choose which series elements should be highlighted when a user selects a series, specify the **selectionMode** property. Just like **selectionStyle**, this property can be specified for all series in the Chart or for an individual series. Depending on the series type, the **selectionMode** property accepts different values. For information about them, visit the [Series Types](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API reference, choose the employed series type, and refer to its **selectionMode** property description.
 
 ---
 ##### jQuery
@@ -235,7 +235,7 @@ To choose which series elements should be highlighted when a user selects a seri
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
 }
 
-By default, only a single series can be in the selected state at a time. If you need to allow multiple series to be in this state, assign *"multiple"* to the [seriesSelectionMode](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') property.
+By default, only a single series can be in the selected state at a time. If you need to allow multiple series to be in this state, assign *"multiple"* to the [seriesSelectionMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') property.
 
 ---
 ##### jQuery
@@ -316,4 +316,4 @@ By default, only a single series can be in the selected state at a time. If you 
 }
 
 #####See Also#####
-- [Point Selection - User Interaction](/concepts/05%20Widgets/Chart/14%20Series%20Points/20%20Selection/05%20User%20Interaction.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Selection/#User_Interaction')
+- [Point Selection - User Interaction](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/20%20Selection/05%20User%20Interaction.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Selection/#User_Interaction')

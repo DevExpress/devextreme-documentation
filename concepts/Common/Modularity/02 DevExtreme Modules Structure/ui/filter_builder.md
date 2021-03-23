@@ -1,8 +1,8 @@
-Exposes the **FilterBuilder** UI component.
+Exposes the FilterBuilder UI component.
 
 Exports:
 
-- *default* - The [FilterBuilder](/api-reference/10%20UI%20Widgets/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/') UI component
+- *default* - The [FilterBuilder](/api-reference/10%20UI%20Components/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/') UI component
 
         require("ui/filter_builder");
         // ===== or =====

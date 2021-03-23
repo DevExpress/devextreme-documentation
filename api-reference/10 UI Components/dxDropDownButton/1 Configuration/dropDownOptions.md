@@ -8,7 +8,7 @@ default: {}
 Configures the drop-down field.
 
 ---
-See the [Popup configuration](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') for properties that you can specify in this object.
+See the [Popup configuration](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') for properties that you can specify in this object.
 
 #include widgets-config-object-option-note with {
     optionName: "dropDownOptions"

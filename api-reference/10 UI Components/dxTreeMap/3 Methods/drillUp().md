@@ -6,4 +6,4 @@ id: dxTreeMap.drillUp()
 Drills one level up.
 
 ---
-To learn how to implement the drill down functionality, see the [drillDown()](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/6%20Node/3%20Methods/drillDown().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#drillDown') method description.
+To learn how to implement the drill down functionality, see the [drillDown()](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node/3%20Methods/drillDown().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#drillDown') method description.

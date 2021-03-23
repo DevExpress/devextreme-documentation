@@ -6,12 +6,13 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies the index of a column when grid records are [grouped](/concepts/05%20Widgets/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') by the values of this column.
+Specifies the index of a column when grid records are [grouped](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') by the values of this column.
 
 ---
-At runtime, the user can group grid records using the [context menu](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#contextMenuEnabled') or the [group panel](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/'). But there may be cases when grid records must be grouped initially. To do this, assign an integer value to the **groupIndex** property of those columns that should be used for grouping grid records. For example, consider the following data source.
+At runtime, the user can group grid records using the [context menu](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#contextMenuEnabled') or the [group panel](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/'). But there may be cases when grid records must be grouped initially. To do this, assign an integer value to the **groupIndex** property of those columns that should be used for grouping grid records. For example, consider the following data source.
 
-    <!--JavaScript-->var dataSource = [
+    <!--JavaScript-->
+    const dataSource = [
         { FirstName: "John", LastName: "Doe", Title: "Sales Manager" },
         { FirstName: "Michael", LastName: "King", Title: "Sales Representative" },
         // ...
@@ -54,6 +55,63 @@ To group these records first by the *"LastName"* field and then by the *"FirstNa
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                data-field="FirstName"
+                :group-index="1"
+            />
+            <DxColumn
+                data-field="LastName"
+                :group-index="0"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    dataField="FirstName"
+                    groupIndex={1}
+                />
+                <Column
+                    dataField="LastName"
+                    groupIndex={0}
+                />
+            </DataGrid>
+        );
+    }
+
 ---
 
 #include common-demobutton with {
@@ -61,4 +119,4 @@ To group these records first by the *"LastName"* field and then by the *"FirstNa
 }
 
 #####See Also#####
--[Initial and Runtime Grouping](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping')
+-[Initial and Runtime Grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API/10%20Initial%20and%20Runtime%20Grouping.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Initial_and_Runtime_Grouping')

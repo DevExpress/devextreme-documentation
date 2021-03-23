@@ -15,7 +15,7 @@ Configures toolbar settings.
 
 ![DevExtreme File Manager - Toolbar](/images/FileManager/toolbar.png)
 
-The **FileManager** UI component allows you to add default and custom toolbar items.
+The FileManager UI component allows you to add default and custom toolbar items.
 
 **Predefined Items**
 
@@ -78,7 +78,7 @@ To add a custom toolbar item, specify its [text](/api-reference/_hidden/Collecti
 
 - [fileSelectionItems](/api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/fileSelectionItems/') - Displays toolbar items when one or more file system items are selected.
 
-The [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/items/#widget') property allows you to specify a UI component for a custom toolbar item ([dxButton](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') is the default UI component). Use the [toolbarItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/toolbarItemClick.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#toolbarItemClick') event to handle clicks on custom toolbar items.
+The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/items/#widget') property allows you to specify a UI component for a custom toolbar item ([dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') is the default UI component). Use the [toolbarItemClick](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/toolbarItemClick.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#toolbarItemClick') event to handle clicks on custom toolbar items.
 
 ---
 

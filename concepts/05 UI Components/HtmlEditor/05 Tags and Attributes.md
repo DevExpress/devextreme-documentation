@@ -1,4 +1,4 @@
-**HtmlEditor** generates the following HTML tags and attributes:
+HtmlEditor generates the following HTML tags and attributes:
 
 **HTML Tags**
 

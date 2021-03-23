@@ -1,6 +1,6 @@
 Predefined formats are string literals for formatting numbers and dates. See the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') description for a full list.
 
-Set the **format** UI component property to apply a predefined format. In the following code, this property specifies the format and precision of the tooltip's value in the **Slider** UI component. The value contains two decimal digits when the precision value is 2.
+Set the **format** UI component property to apply a predefined format. In the following code, this property specifies the format and precision of the tooltip's value in the Slider UI component. The value contains two decimal digits when the precision value is 2.
 
 ---
 ##### jQuery
@@ -48,6 +48,71 @@ Set the **format** UI component property to apply a predefined format. In the fo
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxSlider
+            :min="0" :max="10"
+            v-model:value="sliderValue" :step="0.01">
+            <DxTooltip
+                :enabled="true">
+                <DxFormat
+                    type="fixedPoint"
+                    :precision="2"
+                />
+            </DxTooltip>
+        </DxSlider>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxSlider, {
+        DxTooltip,
+        DxFormat
+    } from 'devextreme-vue/slider';
+
+    export default {
+        components: {
+            DxSlider,
+            DxTooltip,
+            DxFormat
+        },
+        data() {
+            return {
+                sliderValue: 6
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Slider, {
+        Tooltip,
+        Format
+    } from 'devextreme-react/slider';
+
+    export default function App() {
+        return (
+            <Slider
+                min={0} max={10}
+                defaultValue={6} step={0.01}>
+                <Tooltip enabled>
+                    <Format
+                        type="fixedPoint"
+                        precision={2}
+                    />
+                </Tooltip>
+            </Slider>
+        );
+    }
 
 ---
 

@@ -1,4 +1,4 @@
-Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidator/Methods/#validate') method in a [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')'s [onClick](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler to validate the group. You can access the **Validation Group** via the handler's argument. The **Button** always validates the group to which it belongs. If the membership is not specified, the **Button** validates the **Default Validation Group**.
+Call a group's [validate()](/api-reference/10%20UI%20Components/dxValidator/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidator/Methods/#validate') method in a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')'s [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler to validate the group. You can access the **Validation Group** via the handler's argument. The Button always validates the group to which it belongs. If the membership is not specified, the Button validates the **Default Validation Group**.
 
 ---
 
@@ -288,7 +288,7 @@ Call a group's [validate()](/api-reference/10%20UI%20Widgets/dxValidator/3%20Met
 
 ---
 
-Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-reference/50%20Common/utils/validationEngine/validateGroup().md '/Documentation/ApiReference/Common/utils/validationEngine/#validateGroup') method to validate a group in jQuery. If you use Angular, Vue, or React, get the group's instance and call its [validate](/api-reference/10%20UI%20Widgets/dxValidationGroup/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Methods/#validate') method:
+Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-reference/50%20Common/utils/validationEngine/validateGroup().md '/Documentation/ApiReference/Common/utils/validationEngine/#validateGroup') method to validate a group in jQuery. If you use Angular, Vue, or React, get the group's instance and call its [validate](/api-reference/10%20UI%20Components/dxValidationGroup/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Methods/#validate') method:
 
 ---
 ##### jQuery

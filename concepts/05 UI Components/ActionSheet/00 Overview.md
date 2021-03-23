@@ -1,10 +1,10 @@
-The **ActionSheet** UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
+The ActionSheet UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics/"
 }
 
-The following code adds a simple **ActionSheet** to your page. The UI component is shown on a button click.  
+The following code adds a simple ActionSheet to your page. The UI component is shown on a button click.  
 
 ---
 ##### jQuery
@@ -180,12 +180,12 @@ The following code adds a simple **ActionSheet** to your page. The UI component 
 
 ---
 
-Note that every data source object has a **text** field that is rendered on the buttons of the **ActionSheet**. Also, there is the **onClick** field that represents a click handler for a certain **ActionSheet** button.
+Note that every data source object has a **text** field that is rendered on the buttons of the ActionSheet. Also, there is the **onClick** field that represents a click handler for a certain ActionSheet button.
 
 #####See Also#####
 #include common-link-configurewidget
-- [ActionSheet - Customize Item Appearance](/concepts/05%20Widgets/ActionSheet/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/ActionSheet/Customize_Item_Appearance/')
-- [ActionSheet - Specify Display Mode](/concepts/05%20Widgets/ActionSheet/10%20Specify%20Display%20Mode.md '/Documentation/Guide/UI_Components/ActionSheet/Specify_Display_Mode')
-- [ActionSheet API Reference](/api-reference/10%20UI%20Widgets/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
+- [ActionSheet - Customize Item Appearance](/concepts/05%20UI%20Components/ActionSheet/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/ActionSheet/Customize_Item_Appearance/')
+- [ActionSheet - Specify Display Mode](/concepts/05%20UI%20Components/ActionSheet/10%20Specify%20Display%20Mode.md '/Documentation/Guide/UI_Components/ActionSheet/Specify_Display_Mode')
+- [ActionSheet API Reference](/api-reference/10%20UI%20Components/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
 
 [tags] dxactionsheet, action sheet, actionSheet, collection container, collection UI component, navigation, overview

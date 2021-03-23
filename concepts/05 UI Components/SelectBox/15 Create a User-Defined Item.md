@@ -1,4 +1,4 @@
-A user can select existing values and add new values to the **SelectBox**. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#acceptCustomValue') property. Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
+A user can select existing values and add new values to the SelectBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#acceptCustomValue') property. Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
 
 ---
 ##### jQuery
@@ -183,9 +183,9 @@ A user can select existing values and add new values to the **SelectBox**. To en
 }
 
 #####See Also#####
-- [SelectBox - Configure Search Parameters](/concepts/05%20Widgets/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/')
-- [SelectBox - Handle the Value Change Event](/concepts/05%20Widgets/SelectBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/SelectBox/Handle_the_Value_Change_Event/')
-- [SelectBox API Reference](/api-reference/10%20UI%20Widgets/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
+- [SelectBox - Configure Search Parameters](/concepts/05%20UI%20Components/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/')
+- [SelectBox - Handle the Value Change Event](/concepts/05%20UI%20Components/SelectBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/SelectBox/Handle_the_Value_Change_Event/')
+- [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 
 [tags]selectBox, select box, editor, user-defined entry, user-defined item, custom entry, custom item, user-defined value, custom value

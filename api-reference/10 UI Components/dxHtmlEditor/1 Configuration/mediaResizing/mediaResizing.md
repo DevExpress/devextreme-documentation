@@ -12,5 +12,5 @@ Configures media resizing.
 <!--
 TODO: This is the demo desc. Replace it with a View Demo button when there is a demo
 
-Set the [mediaResizing](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/mediaResizing '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/').**enabled** to **true** to allow users to resize images in the **HtmlEditor**.
+Set the [mediaResizing](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/mediaResizing '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/').**enabled** to **true** to allow users to resize images in the HtmlEditor.
 -->

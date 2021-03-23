@@ -10,7 +10,7 @@ Customizes a cell in PDF after creation.
 An object passed to this callback function.
 
 ##### field(options.gridCell): PdfDataGridCell
-A **DataGrid** cell.
+A DataGrid cell.
 
 ##### field(options.pdfCell): Object
 An object that describes a cell in a PDF file. Refer to the following <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">Autotable</a> documentation section to see available customizations: <a href="https://github.com/simonbengtsson/jsPDF-AutoTable#options" target="_blank">jsPDF-Autotable options</a>.
@@ -241,4 +241,4 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
 ---
 
 #####See Also#####
-- **pdfExporter**.[exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions)
+- **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions')

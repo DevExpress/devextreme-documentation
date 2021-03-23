@@ -1,4 +1,4 @@
-For a minor customization of **NavBar** items, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/') in item data objects. For example, the following code generates three items. Each of them has an [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library'). In addition, the second item is disabled, and the third item has a badge.
+For a minor customization of NavBar items, you can define [specific fields](/api-reference/10%20UI%20Components/dxTabs/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/') in item data objects. For example, the following code generates three items. Each of them has an [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library'). In addition, the second item is disabled, and the third item has a badge.
 
 ---
 ##### jQuery
@@ -39,7 +39,7 @@ For a minor customization of **NavBar** items, you can define [specific fields](
 
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use **dxTemplate** to customize items in the **NavBar**.
+If you need a more flexible solution, define a custom template. For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code gives a simple example of how you can use dxTemplate to customize items in the NavBar.
 
 ---
 ##### Angular
@@ -138,7 +138,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#itemTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
     $(function() {
@@ -170,11 +170,11 @@ You can also customize an individual navigation item. For this purpose, declare 
         // ...
     ];
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [NavBar - Items Selection](/concepts/05%20Widgets/NavBar/10%20Items%20Selection.md '/Documentation/Guide/UI_Components/NavBar/Items_Selection/')
+- [NavBar - Items Selection](/concepts/05%20UI%20Components/NavBar/10%20Items%20Selection.md '/Documentation/Guide/UI_Components/NavBar/Items_Selection/')
 - [NavBar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview)
-- [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Components/dxNavBar/')
+- [NavBar API Reference](/api-reference/10%20UI%20Components/dxNavBar '/Documentation/ApiReference/UI_Components/dxNavBar/')
 
 [tags]nav bar, navBar, navigation bar, item appearance, customize, templates, template, custom template

@@ -1,4 +1,4 @@
-The **Scheduler** UI component allows you to customize its timetable. You can specify the time period and a single cell's duration via the [startDayHour](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour'), [endDayHour](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'), and [cellDuration](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') properties. Using the [firstDayOfWeek](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/firstDayOfWeek.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#firstDayOfWeek') property, you can define the weekday that is shown first.
+The Scheduler UI component allows you to customize its timetable. You can specify the time period and a single cell's duration via the [startDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour'), [endDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'), and [cellDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') properties. Using the [firstDayOfWeek](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/firstDayOfWeek.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#firstDayOfWeek') property, you can define the weekday that is shown first.
 
 ---
 
@@ -148,7 +148,7 @@ The **Scheduler** UI component allows you to customize its timetable. You can sp
 
 ---
 
-You can also adjust cells' size in the table and around it using the DevExtreme CSS classes. For example, the `.dx-scheduler-cell-sizes-horizontal` and `.dx-scheduler-cell-sizes-vertical` classes specify the cells' width and height, respectively. These classes apply if the [crossScrollingEnabled](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/crossScrollingEnabled.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#crossScrollingEnabled') property is set to **true**.
+You can also adjust cells' size in the table and around it using the DevExtreme CSS classes. For example, the `.dx-scheduler-cell-sizes-horizontal` and `.dx-scheduler-cell-sizes-vertical` classes specify the cells' width and height, respectively. These classes apply if the [crossScrollingEnabled](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/crossScrollingEnabled.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#crossScrollingEnabled') property is set to **true**.
 
     <!--CSS-->
     #yourSchedulerID .dx-scheduler-cell-sizes-horizontal {
@@ -158,7 +158,7 @@ You can also adjust cells' size in the table and around it using the DevExtreme 
         height: 200px;
     }
 
-For a more detailed customization, define custom templates for cells, time scales, and date scales. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component for Angular, AngularJS and Knockout apps. The following code shows how to use **dxTemplate** to define templates for timetable parts:
+For a more detailed customization, define custom templates for cells, time scales, and date scales. DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component for Angular, AngularJS and Knockout apps. The following code shows how to use dxTemplate to define templates for timetable parts:
 
 ---
 
@@ -381,7 +381,7 @@ For a more detailed customization, define custom templates for cells, time scale
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for time scales and date scales. To apply this markup, use the [timeCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/timeCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeCellTemplate'), [dateCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dateCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dateCellTemplate') and [dataCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataCellTemplate') callback functions as shown in the following code:
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for time scales and date scales. To apply this markup, use the [timeCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/timeCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeCellTemplate'), [dateCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dateCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dateCellTemplate') and [dataCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataCellTemplate') callback functions as shown in the following code:
 
     <!--JavaScript-->var schedulerData = [{
         text: "His Girl Friday",
@@ -424,12 +424,12 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
 
-You can also use a 3rd-party template engine to customize UI component appearance. See the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article for more information.
+You can also use a 3rd-party template engine to customize UI component appearance. See the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article for more information.
 
 #####See Also#####
-- [Scheduler - Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Scheduler - Customize Resource Headers](/concepts/05%20Widgets/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
+- [Scheduler - Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
+- [Scheduler - Customize Resource Headers](/concepts/05%20UI%20Components/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 [tags]scheduler, timetable, template, start hour, end hour, cell duration, timeCellTemplate, dateCellTemplate, dataCellTemplate

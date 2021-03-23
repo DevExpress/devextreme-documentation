@@ -1,8 +1,8 @@
-The **LinearGauge** can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
+The LinearGauge can be displayed with a title and a subtitle. These elements usually contain general explanations about the data represented by the gauge. You can, however, place any kind of information in the gauge title and subtitle.
 
 <img src="/images/ChartJS/LinearGaugeTitleSubtitle.png" alt="DevExtreme HTML5 JavaScript Gauges LinearGaugeTitleSubtitle" style="display:block; margin:0 auto" />
 
-To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/') and its nested [subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/subtitle/') properties. Both these properties accept either a string with the title/subtitle text:
+To specify a gauge title and subtitle, use the [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/') and its nested [subtitle](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/subtitle/') properties. Both these properties accept either a string with the title/subtitle text:
 
     <!--JavaScript-->var gaugeOptions = {
         title: {
@@ -33,7 +33,7 @@ To specify a gauge title and subtitle, use the [title](/api-reference/20%20Data%
 Several title properties that can be set within the **title** and **subtitle** objects are categorized and listed below.
 
 * **Location**    
-You can place a title on any side of your gauge. For this purpose, use the [horizontalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/#horizontalAlignment') and [verticalAlignment](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/#verticalAlignment') properties. Note that if these properties are specified, the subtitle will be displayed at the same position as the title.
+You can place a title on any side of your gauge. For this purpose, use the [horizontalAlignment](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/#horizontalAlignment') and [verticalAlignment](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/#verticalAlignment') properties. Note that if these properties are specified, the subtitle will be displayed at the same position as the title.
 
 * **Font Settings**    
-To customize the appearance of the text, define the font properties within the [font](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/font '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/font/') configuration object.
+To customize the appearance of the text, define the font properties within the [font](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/font '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/title/font/') configuration object.

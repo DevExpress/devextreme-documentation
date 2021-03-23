@@ -16,7 +16,7 @@ Allows you to cancel the gesture.
 The UI component's instance.
 
 ##### field(e.dropInsideItem): Boolean
-Indicates if the dragged row is dropped inside another row. Available only for the **TreeList** UI component.
+Indicates if the dragged row is dropped inside another row. Available only for the TreeList UI component.
 
 ##### field(e.event): event
 #include common-ref-eventparam
@@ -25,7 +25,7 @@ Indicates if the dragged row is dropped inside another row. Available only for t
 The instance of the row's source UI component.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
 The row's original position. If the row is dragged from another UI component, the value is **-1**.
@@ -40,12 +40,9 @@ The dragged row's data.
 The instance of the row's target UI component.
 
 ##### field(e.toData): any
-Custom [data](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the target UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the target UI component.
 
 ##### field(e.toIndex): Number
 The position in which the row is placed. If the row is dragged away from the UI component, the value is **-1**.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
-} 

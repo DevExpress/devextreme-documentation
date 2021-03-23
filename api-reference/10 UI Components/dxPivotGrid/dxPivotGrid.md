@@ -6,7 +6,7 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-The **PivotGrid** is a UI component that allows you to display and analyze multi-dimensional data from a local storage or an OLAP cube.
+The PivotGrid is a UI component that allows you to display and analyze multi-dimensional data from a local storage or an OLAP cube.
 
 ##### widgettree
 fieldChooser: { width: 400 },

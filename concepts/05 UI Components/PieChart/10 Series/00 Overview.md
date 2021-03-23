@@ -1,8 +1,8 @@
-A series is a collection of related data points. The most important characteristic of a series is its type. The **PieChart** provides **Pie** and **Doughnut** series types; the only difference  between them is the **Doughnut** has a blank center.
+A series is a collection of related data points. The most important characteristic of a series is its type. The PieChart provides **Pie** and **Doughnut** series types; the only difference  between them is the **Doughnut** has a blank center.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/PieChartSeriesTypes/pie.html, /Content/Applications/20_2/DataVisualization/Guides/PieChartSeriesTypes/pie.js"></div>
 
-The **Pie** series type is used by default, but you can change it to **Doughnut** using the [type](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#type') property. 
+The **Pie** series type is used by default, but you can change it to **Doughnut** using the [type](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#type') property. 
 
 ---
 ##### jQuery
@@ -72,7 +72,7 @@ The **Pie** series type is used by default, but you can change it to **Doughnut*
 
 ---
 
-Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/') property to configure a series. Pass an object to this property if you have only one series, or an array of objects when you have multiple series. In the latter case, you can also specify settings common for all series in the [commonSeriesSettings](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/') object, for example: 
+Use the [series](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/') property to configure a series. Pass an object to this property if you have only one series, or an array of objects when you have multiple series. In the latter case, you can also specify settings common for all series in the [commonSeriesSettings](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/') object, for example: 
 
 ---
 ##### jQuery
@@ -169,7 +169,7 @@ Use the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1
 
 ---
 
-Settings specified for a series apply to all its points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/20%20Data%20Visualization%20Widgets/dxPieChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizePoint') property. This function must return an object with properties for the point that you want to customize.
+Settings specified for a series apply to all its points. If you need to customize an individual point, assign a function to the [customizePoint](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/customizePoint.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#customizePoint') property. This function must return an object with properties for the point that you want to customize.
 
 ---
 ##### jQuery
@@ -275,7 +275,7 @@ Settings specified for a series apply to all its points. If you need to customiz
 Refer to other topics in this section for details on main series features.
 
 #####See Also#####
-- [Series Hover](/concepts/05%20Widgets/PieChart/10%20Series/10%20Hover '/Documentation/Guide/UI_Components/PieChart/Series/Hover/')
-- [Series Selection](/concepts/05%20Widgets/PieChart/10%20Series/20%20Selection '/Documentation/Guide/UI_Components/PieChart/Series/Selection/')
-- [Access a Point Using the API](/concepts/05%20Widgets/PieChart/10%20Series/45%20Access%20a%20Point%20Using%20the%20API.md '/Documentation/Guide/UI_Components/PieChart/Series/Access_a_Point_Using_the_API/')
-- [Bind Series to Data](/concepts/05%20Widgets/PieChart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/PieChart/Data_Binding/Bind_Series_to_Data/')
+- [Series Hover](/concepts/05%20UI%20Components/PieChart/10%20Series/10%20Hover '/Documentation/Guide/UI_Components/PieChart/Series/Hover/')
+- [Series Selection](/concepts/05%20UI%20Components/PieChart/10%20Series/20%20Selection '/Documentation/Guide/UI_Components/PieChart/Series/Selection/')
+- [Access a Point Using the API](/concepts/05%20UI%20Components/PieChart/10%20Series/45%20Access%20a%20Point%20Using%20the%20API.md '/Documentation/Guide/UI_Components/PieChart/Series/Access_a_Point_Using_the_API/')
+- [Bind Series to Data](/concepts/05%20UI%20Components/PieChart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data '/Documentation/Guide/UI_Components/PieChart/Data_Binding/Bind_Series_to_Data/')

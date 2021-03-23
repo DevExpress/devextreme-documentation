@@ -1,4 +1,4 @@
-To submit a form, add a [Button Item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/) and set its [useSubmitBehavior](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior) property to **true**. The Form can be submitted to a server only if input validation is successful. 
+To submit a form, add a [Button Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') and set its [useSubmitBehavior](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to **true**. The Form can be submitted to a server only if input validation is successful. 
 
 The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to **true** to override the HTML form submit event as shown in the code example.
 
@@ -264,7 +264,7 @@ The code below shows how to add a submit button, but does not show how to implem
 
 ---
 
-For further information on the **Form** UI component, refer to the following resources:
+For further information on the Form UI component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxForm/)
+* [API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')

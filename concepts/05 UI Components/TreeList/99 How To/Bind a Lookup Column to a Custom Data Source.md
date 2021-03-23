@@ -1,4 +1,4 @@
-In the following code snippet, `Author Name` is a [lookup column](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/3%20Lookup%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Lookup_Columns/') bound to a custom data source. The **CustomStore** loads data from the data source [in the raw mode](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/1%20Load%20Data%20in%20Raw%20Mode.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Load_Data_in_Raw_Mode') (the data is processed on the client). Data processing in this example includes only sorting, but you can specify other operations using the [**DataSource** properties](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/').
+In the following code snippet, `Author Name` is a [lookup column](/concepts/05%20UI%20Components/TreeList/10%20Columns/10%20Column%20Types/3%20Lookup%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Lookup_Columns/') bound to a custom data source. The **CustomStore** loads data from the data source [in the raw mode](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/1%20Load%20Data%20in%20Raw%20Mode.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Load_Data_in_Raw_Mode') (the data is processed on the client). Data processing in this example includes only sorting, but you can specify other operations using the [**DataSource** properties](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/').
 
 ---
 ##### jQuery
@@ -84,6 +84,105 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
         </dxi-column>
         <!-- ... -->
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn
+                data-field="authorId"
+                caption="Author Name">
+                <DxLookup
+                    :data-source="lookupDataSource"
+                    display-expr="name"
+                    value-expr="id" /> <!-- "id" contains the same values as "authorId" -->
+            </DxColumn>
+            <!-- ... -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn,
+        DxLookup
+    } from 'devextreme-vue/tree-list';
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
+
+    const lookupDataSource = {
+        store: new CustomStore({
+            key: "id",
+            loadMode: "raw",
+            load: () => {
+                // Returns an array of objects that have the following structure:
+                // { id: 1, name: "John Doe" }
+                return fetch('https://mydomain.com/MyDataService/authors/')
+                    .then(response => response.json());
+                    .catch(() => { throw 'Network error' });
+            }
+        }),
+        sort: "name"
+    };
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxLookup
+        },
+        data() {
+            return {
+                lookupDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        Lookup
+    } from 'devextreme-react/tree-list';
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
+
+    const lookupDataSource = {
+        store: new CustomStore({
+            key: "id",
+            loadMode: "raw",
+            load: () => {
+                // Returns an array of objects that have the following structure:
+                // { id: 1, name: "John Doe" }
+                return fetch('https://mydomain.com/MyDataService/authors/')
+                    .then(response => response.json());
+                    .catch(() => { throw 'Network error' });
+            }
+        }),
+        sort: "name"
+    };
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column
+                    dataField="authorId"
+                    caption="Author Name">
+                    <Lookup
+                        dataSource={lookupDataSource}
+                        displayExpr="name"
+                        valueExpr="id" /> <!-- "id" contains the same values as "authorId" -->
+                </Column>
+                <!-- ... -->
+            </TreeList>
+        );
+    }
 
 ---
 
@@ -199,6 +298,141 @@ The following alternative **CustomStore** configuration delegates data processin
         <!-- The configuration repeats the previous code -->
         <!-- ... -->
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <!-- ... -->
+            <!-- The configuration repeats the previous code -->
+            <!-- ... -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn,
+        DxLookup
+    } from 'devextreme-vue/tree-list';
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
+
+    const isNotEmpty = (value) => value !== undefined && value !== null && value !== '';
+
+    const lookupDataSource = {
+        store: new CustomStore({
+            key: "id",
+            load: (loadOptions) => {
+                let params = '?';
+                [
+                    "sort", 
+                    // "skip",
+                    // "take", 
+                    // "filter", 
+                    // "searchExpr",
+                    // "searchOperation",
+                    // "searchValue",
+                    // "group"
+                ].forEach(function(i) {
+                    if(i in loadOptions && isNotEmpty(loadOptions[i])) {
+                        params += `${i}=${JSON.stringify(loadOptions[i])}&`;
+                    }
+                });
+                params = params.slice(0, -1);
+        
+                return fetch(`https://mydomain.com/MyDataService/authors${params}`)
+                    .then(response => response.json())
+                    .then(response => {
+                        return {
+                            data: response.data
+                        };
+                    })
+                    .catch(() => { throw 'Network error' });
+            },
+            byKey: (key) => {
+                return fetch(`https://mydomain.com/MyDataService/authors/${key}`);
+            }
+        }),
+        sort: "name"
+    };
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxLookup
+        },
+        data() {
+            return {
+                lookupDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        Lookup
+    } from 'devextreme-react/tree-list';
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
+
+    const isNotEmpty = (value) => value !== undefined && value !== null && value !== '';
+
+    const lookupDataSource = {
+        store: new CustomStore({
+            key: "id",
+            load: (loadOptions) => {
+                let params = '?';
+                [
+                    "sort", 
+                    // "skip",
+                    // "take", 
+                    // "filter", 
+                    // "searchExpr",
+                    // "searchOperation",
+                    // "searchValue",
+                    // "group"
+                ].forEach(function(i) {
+                    if(i in loadOptions && isNotEmpty(loadOptions[i])) {
+                        params += `${i}=${JSON.stringify(loadOptions[i])}&`;
+                    }
+                });
+                params = params.slice(0, -1);
+        
+                return fetch(`https://mydomain.com/MyDataService/authors${params}`)
+                    .then(response => response.json())
+                    .then(response => {
+                        return {
+                            data: response.data
+                        };
+                    })
+                    .catch(() => { throw 'Network error' });
+            },
+            byKey: (key) => {
+                return fetch(`https://mydomain.com/MyDataService/authors/${key}`);
+            }
+        }),
+        sort: "name"
+    };
+
+    export default function App() {
+        return (
+            <TreeList ... >
+                {/* ... */}
+                {/* The configuration repeats the previous code */}
+                {/* ... */}
+            </TreeList>
+        );
+    }
 
 ---
 

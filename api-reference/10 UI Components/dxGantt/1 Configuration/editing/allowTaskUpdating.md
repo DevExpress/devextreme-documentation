@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can update [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
+Specifies whether a user can update [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
 
 ---
 
@@ -33,4 +33,4 @@ Set the **allowTaskUpdating** option to **false** to make the "Task Details" dia
 ---
 
 #####See Also#####
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

@@ -1,6 +1,6 @@
-**Scheduler** component emulates the user interface of Calendar applications on Windows or Mac OS.
+Scheduler component emulates the user interface of Calendar applications on Windows or Mac OS.
 
-This tutorial shows you the basics of **Scheduler** configuration. The preview below shows the expected result:
+This tutorial shows you the basics of Scheduler configuration. The preview below shows the expected result:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/GettingStartedWith/Scheduler/index.html, /Content/Applications/20_2/GettingStartedWith/Scheduler/index.js, /Content/Applications/20_2/GettingStartedWith/Scheduler/index.css"></div>
 

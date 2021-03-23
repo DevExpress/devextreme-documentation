@@ -3,16 +3,16 @@ id: dxTextEditor.getButton(name)
 ---
 ---
 ##### shortDescription
-Gets an instance of a [custom action button](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/buttons '{basewidgetpath}/Configuration/buttons/').
+Gets an instance of a [custom action button](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/buttons '{basewidgetpath}/Configuration/buttons/').
 
 ##### return: dxButton | undefined
-The [Button](/api-reference/10%20UI%20Widgets/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component's instance.
+The [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component's instance.
 
 ##### param(name): String
 The button's [name](/api-reference/_hidden/dxTextEditorButton/name.md '{basewidgetpath}/Configuration/buttons/#name').
 
 ---
-Use the returned button instance to call the [**Button** UI component's methods](/api-reference/10%20UI%20Widgets/Widget/3%20Methods '/Documentation/ApiReference/UI_Components/dxButton/Methods/'), for example, [focus()](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/focus().md '/Documentation/ApiReference/UI_Components/dxButton/Methods/#focus'):
+Use the returned button instance to call the [Button UI component's methods](/api-reference/10%20UI%20Components/Widget/3%20Methods '/Documentation/ApiReference/UI_Components/dxButton/Methods/'), for example, [focus()](/api-reference/10%20UI%20Components/Widget/3%20Methods/focus().md '/Documentation/ApiReference/UI_Components/dxButton/Methods/#focus'):
 
 ---
 ##### jQuery

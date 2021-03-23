@@ -12,7 +12,7 @@ The field's [name](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Conf
 The [options](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') with their new values.
 
 ---
-Call the [load()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#load') method to update the **PivotGrid**:
+Call the [load()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#load') method to update the PivotGrid:
 
 ---
 ##### jQuery

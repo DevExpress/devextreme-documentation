@@ -6,7 +6,7 @@ The **CustomSource**'s configuration differs depending on whether data is proces
 
 [note]We recommend not using this mode with large amounts of data because all data is loaded at once.
 
-In the latter case, use the **CustomStore**'s **load** function to send data processing settings to the server. These settings are passed as a parameter to the **load** function and depend on the operations (paging, filtering, sorting, etc.) that you have enabled in the **DataSource**. The following settings are relevant for the **SelectBox**:
+In the latter case, use the **CustomStore**'s **load** function to send data processing settings to the server. These settings are passed as a parameter to the **load** function and depend on the operations (paging, filtering, sorting, etc.) that you have enabled in the **DataSource**. The following settings are relevant for the SelectBox:
 
 - **Paging settings**: [take](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/take.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#take') and [skip](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/skip.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#skip')       
 Present if [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') is **true** and [pageSize](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pageSize.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize') is set in the **DataSource**.
@@ -15,7 +15,7 @@ Present if [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configurat
 Present if the **DataSource**'s [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') property is set.
 
 - **Filtering settings**: [filter](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/filter.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#filter')    
-Present if the **DataSource**'s [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property is set or [searching is enabled](/concepts/05%20Widgets/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/') in the UI component.
+Present if the **DataSource**'s [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property is set or [searching is enabled](/concepts/05%20UI%20Components/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/') in the UI component.
 
 - **Searching settings**: [searchExpr](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/searchExpr.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#searchExpr'), [searchOperation](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/searchOperation.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#searchOperation'), and [searchValue](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/searchValue.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#searchValue')     
 Present if [corresponding properties](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr') are set in the **DataSource**.
@@ -40,7 +40,7 @@ If the **group** setting is absent, the object structure is different:
         data: [ ... ] // result data objects
     }
 
-If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value') beforehand, the **CustomStore** should implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') operation. If the **SelectBox** allows a user [to add custom items](/concepts/05%20Widgets/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/SelectBox/Create_a_User-Defined_Item/'), implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert') method. Below is a generalized **CustomStore** configuration for the **SelectBox** UI component.
+If you specify the SelectBox's [value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value') beforehand, the **CustomStore** should implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') operation. If the SelectBox allows a user [to add custom items](/concepts/05%20UI%20Components/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/SelectBox/Create_a_User-Defined_Item/'), implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert') method. Below is a generalized **CustomStore** configuration for the SelectBox UI component.
 
 ---
 ##### jQuery
@@ -308,9 +308,9 @@ If you specify the **SelectBox**'s [value](/api-reference/10%20UI%20Widgets/dxDr
 - [Data Layer - DataSource Examples | Custom Sources](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources')
 - [Data Layer - DataSource Examples | Connect to a RESTful Service](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/0%20Connect%20to%20RESTful%20Service.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Connect_to_RESTful_Service')
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
-- [Access the DataSource](/concepts/05%20Widgets/SelectBox/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/SelectBox/Data_Binding/Access_the_DataSource/')
-- [Grouping](/concepts/05%20Widgets/SelectBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/SelectBox/Grouping/In_the_Data_Source/')
-- [Configure Search Parameters](/concepts/05%20Widgets/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/')
+- [Access the DataSource](/concepts/05%20UI%20Components/SelectBox/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/SelectBox/Data_Binding/Access_the_DataSource/')
+- [Grouping](/concepts/05%20UI%20Components/SelectBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/SelectBox/Grouping/In_the_Data_Source/')
+- [Configure Search Parameters](/concepts/05%20UI%20Components/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/Overview)
 
 [tags]selectBox, data binding, provide data, custom data source, CustomStore, DataSource, load

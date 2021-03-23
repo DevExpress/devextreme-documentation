@@ -1,4 +1,4 @@
-The **Chart** provides an API for showing and hiding a series at runtime. The most common use-case for this API is to show or hide a series when a user clicks the [chart legend](/concepts/05%20Widgets/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/'). To implement this scenario, you need to handle the [legendClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/4%20Events/legendClick.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#legendClick') event in the following manner. The **isVisible()**, **hide()** and **show()** are methods of the [Series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') object. 
+The Chart provides an API for showing and hiding a series at runtime. The most common use-case for this API is to show or hide a series when a user clicks the [chart legend](/concepts/05%20UI%20Components/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/'). To implement this scenario, you need to handle the [legendClick](/api-reference/10%20UI%20Components/dxChart/4%20Events/legendClick.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#legendClick') event in the following manner. The **isVisible()**, **hide()** and **show()** are methods of the [Series](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') object. 
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ The **Chart** provides an API for showing and hiding a series at runtime. The mo
 
 ---
 
-A series can be hidden initially. For this, assign **false** to the [visible](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#visible') property of the object that configures the series.
+A series can be hidden initially. For this, assign **false** to the [visible](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#visible') property of the object that configures the series.
 
 ---
 ##### jQuery
@@ -188,7 +188,7 @@ A series can be hidden initially. For this, assign **false** to the [visible](/a
 ---
 
 #####See Also#####
-- [Access a Series Using the API](/concepts/05%20Widgets/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/')
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
+- [Access a Series Using the API](/concepts/05%20UI%20Components/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/')
+- [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, series, show series, hide series, series visibility 

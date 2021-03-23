@@ -1,10 +1,10 @@
-The **Popover** is a UI component that shows notifications within a box with an arrow pointing to a specified UI element.
+The Popover is a UI component that shows notifications within a box with an arrow pointing to a specified UI element.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
 }
 
-The following code creates a simple **Popover** on your page and attaches it to another element (in this example, to an image).
+The following code creates a simple Popover on your page and attaches it to another element (in this example, to an image).
 
 ---
 ##### jQuery
@@ -125,13 +125,13 @@ The following code creates a simple **Popover** on your page and attaches it to 
 
 ---
 
-There are several ways to specify the content of the **Popover**. Learn more in the [Customize the Content](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/') article. The **Popover** can also be displayed with a title and toolbars. For detailed information, see the [Customize the Title](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/') and [Specify Toolbar Items](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/') topics. 
+There are several ways to specify the content of the Popover. Learn more in the [Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/') article. The Popover can also be displayed with a title and toolbars. For detailed information, see the [Customize the Title](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/') and [Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/') topics. 
 
 #####See Also#####
 #include common-link-configurewidget
-- [Popover - Customize the Appearance](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
-- [Popover - Show and Hide the Popover](/concepts/05%20Widgets/Popover/10%20Show%20and%20Hide%20the%20Popover '/Documentation/Guide/UI_Components/Popover/Show_and_Hide_the_Popover/')
-- [Popover - Resize and Relocate](/concepts/05%20Widgets/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/Popover/Resize_and_Relocate/')
-- [Popover API Reference](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/')
+- [Popover - Customize the Appearance](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
+- [Popover - Show and Hide the Popover](/concepts/05%20UI%20Components/Popover/10%20Show%20and%20Hide%20the%20Popover '/Documentation/Guide/UI_Components/Popover/Show_and_Hide_the_Popover/')
+- [Popover - Resize and Relocate](/concepts/05%20UI%20Components/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/Popover/Resize_and_Relocate/')
+- [Popover API Reference](/api-reference/10%20UI%20Components/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/')
 
 [tags]dxpopover, popover, overview, overlay 

@@ -1,9 +1,9 @@
-Create a [file system provider](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/') that allows you to access and modify file systems.
+Create a [file system provider](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/') that allows you to access and modify file systems.
 
 [note]
-In this section, the Object file system is used to quickly bind the **FileManager** UI component to data. Refer to the [Bind to File Systems](/concepts/05%20Widgets/FileManager/10%20Bind%20to%20File%20Systems '/Documentation/Guide/UI_Components/FileManager/Bind_to_File_Systems/') section for more information on supported file systems.
+In this section, the Object file system is used to quickly bind the FileManager UI component to data. Refer to the [Bind to File Systems](/concepts/05%20UI%20Components/FileManager/10%20Bind%20to%20File%20Systems '/Documentation/Guide/UI_Components/FileManager/Bind_to_File_Systems/') section for more information on supported file systems.
 
-To bind the **FileManager** UI component to a hierarchical data structure, create an [Object](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/') file system provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Widgets/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/Configuration/#data') property. The Object file system provider automatically binds data objects to the UI component if the data objects have the default 'name', 'size', 'dateModified', etc., fields in their structure. For example:
+To bind the FileManager UI component to a hierarchical data structure, create an [Object](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/Object '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/') file system provider and assign the array of hierarchical JSON objects to the provider's [data](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/Object/1%20Configuration/data.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/Configuration/#data') property. The Object file system provider automatically binds data objects to the UI component if the data objects have the default 'name', 'size', 'dateModified', etc., fields in their structure. For example:
 
     var fileSystem = [
     {
@@ -20,7 +20,7 @@ To bind the **FileManager** UI component to a hierarchical data structure, creat
         // ...
     }];
 
-In the example below, the **FileManager** UI component displays hierarchical data stored in an in-memory array that contains fields with conventional names:
+In the example below, the FileManager UI component displays hierarchical data stored in an in-memory array that contains fields with conventional names:
 
 ---
 
@@ -250,4 +250,4 @@ In the example below, the **FileManager** UI component displays hierarchical dat
 ---
 
 #####See Also#####
-[Bind to an Object File System](/concepts/05%20Widgets/FileManager/10%20Bind%20to%20File%20Systems/10%20Object%20File%20System.md '/Documentation/Guide/UI_Components/FileManager/Bind_to_File_Systems/#Object_File_System')
+[Bind to an Object File System](/concepts/05%20UI%20Components/FileManager/10%20Bind%20to%20File%20Systems/10%20Object%20File%20System.md '/Documentation/Guide/UI_Components/FileManager/Bind_to_File_Systems/#Object_File_System')

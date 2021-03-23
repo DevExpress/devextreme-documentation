@@ -1,4 +1,4 @@
-DevExtreme provides an [API](/api-reference/50%20Common/utils/localization '/Documentation/ApiReference/Common/utils/localization/') for formatting any date or number in your app. The following example shows how to format dates. The [formatDate()](/api-reference/50%20Common/utils/localization/formatDate(value_format).md '/Documentation/ApiReference/Common/utils/localization/#formatDatevalue_format') method applies a [predefined format](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/10%20Predefined%20Formats.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Predefined_Formats') to a date. A [custom function](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/30%20Custom%20Function.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function') or [format string](/concepts/Common/Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String') can be applied instead. The result is a string. This string is then converted back to a date using the [parseDate()](/api-reference/50%20Common/utils/localization/parseDate(text_format).md '/Documentation/ApiReference/Common/utils/localization/#parseDatetext_format') method.
+DevExtreme provides an [API](/api-reference/50%20Common/utils/localization '/Documentation/ApiReference/Common/utils/localization/') for formatting any date or number in your app. The following example shows how to format dates. The [formatDate()](/api-reference/50%20Common/utils/localization/formatDate(value_format).md '/Documentation/ApiReference/Common/utils/localization/#formatDatevalue_format') method applies a [predefined format](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/10%20Predefined%20Formats.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Predefined_Formats') to a date. A [custom function](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function') or [format string](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String') can be applied instead. The result is a string. This string is then converted back to a date using the [parseDate()](/api-reference/50%20Common/utils/localization/parseDate(text_format).md '/Documentation/ApiReference/Common/utils/localization/#parseDatetext_format') method.
 
 ---
 ##### jQuery
@@ -23,18 +23,71 @@ DevExtreme provides an [API](/api-reference/50%20Common/utils/localization '/Doc
     export class AppComponent {
         _date: Date = new Date();
         get date() {
-            return formatDate(this._date, "shortDate")
+            return formatDate(this._date, "shortDate");
         }
         set date(value) {
-            this._date = parseDate(value, "shortDate")
+            this._date = parseDate(value, "shortDate");
         }
     }
 
     <!--HTML-->
     <input 
-        #dateInput
         [value]="date"
-        (change)="date = dateInput.value;"/>
+        (change)="date = $event.target.value"
+    />
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <input
+            :value="date"
+            @change="date = $event.target.value"
+        />
+    </template>
+
+    <script>
+    import { formatDate, parseDate } from 'devextreme/localization';
+
+    let date = new Date();
+
+    export default {
+        computed: {
+            date: {
+                get: function() {
+                    return formatDate(date, "shortDate");
+                },
+                set: function(value) {
+                    date = parseDate(value, "shortDate");
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useState, useCallback } from "react";
+    import { formatDate, parseDate } from "devextreme/localization";
+
+    export default function App() {
+        const [date, setDate] = useState(new Date());
+        const getFormattedDate = useCallback(() => {
+            return formatDate(date, "shortDate")
+        }, [date]);
+        const setParsedDate = useCallback((event) => {
+            setDate(parseDate(event.target.value, "shortDate"));
+        }, []);
+
+        return (
+            <input
+                defaultValue={getFormattedDate()}
+                onChange={setParsedDate}
+            />
+        );
+    }
+
 
 ---
 

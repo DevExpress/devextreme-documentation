@@ -1,313 +1,147 @@
-You can select an item or cancel its selection in the following ways.
+Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection to select the item or cancel its selection:
 
-- **By key**    
-Add or remove the key from the [selectedItemKeys](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection.
+---
+##### jQuery
 
-    ---
-    ##### jQuery
+    <!--JavaScript-->
+    const list = $("#listContainer").dxList("instance");
+    let selectedKeys = list.option("selectedItemKeys");
+    // Selects the item with key 5
+    selectedKeys.push(5);
+    list.option("selectedItemKeys", selectedKeys);
+    // Cancels the selection of the item with key 5
+    selectedKeys = $.grep(selectedKeys, function(key) {
+        return key !== 5;
+    });
+    list.option("selectedItemKeys", selectedKeys);
 
-        <!--JavaScript-->
-        const list = $("#listContainer").dxList("instance");
-        let selectedKeys = list.option("selectedItemKeys");
-        // Selects the item with key 5
-        selectedKeys.push(5);
-        list.option("selectedItemKeys", selectedKeys);
-        // Cancels the selection of the item with key 5
-        selectedKeys = $.grep(selectedKeys, function(key) {
-            return key != 5;
-        });
-        list.option("selectedItemKeys", selectedKeys);
+##### Angular
 
-    ##### Angular
+    <!-- tab: app.component.html -->
+    <dx-list ...
+        [(selectedItemKeys)]="selectedKeys">
+    </dx-list>
 
-        <!--TypeScript-->
-        import { ..., ViewChild } from "@angular/core";
-        import { DxListModule, DxListComponent } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            @ViewChild(DxListComponent, { static: false }) list: DxListComponent;
-            // Prior to Angular 8
-            // @ViewChild(DxListComponent) list: DxListComponent;
-            selectItem (key) {
-                let selectedKeys = this.list.instance.option("selectedItemKeys");
-                if(selectedKeys.includes(key)) {
-                    // Cancels the selection of the item with the key
-                    selectedKeys = selectedKeys.filter((data) => {
-                        return data != key;
-                    });
-                } else {
-                    // Selects the item with the key
-                    selectedKeys.push(key);
-                }
-                this.list.instance.option("selectedItemKeys", selectedKeys);
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        selectedKeys: Array<number> = [6, 2, 5];
+        selectItem(key) {
+            if(!this.selectedKeys.includes(key)) {
+                this.selectedKeys.push(key);
             }
         }
-        @NgModule({
-            imports: [
-                // ...
-                DxListModule
-            ],
-            // ...
-        })
-
-    ---
-
-    You can also use the **selectedItemKeys** collection to select items initially.
-
-    ---
-    ##### jQuery
-
-        <!--JavaScript-->
-        $(function() {
-            $("#listContainer").dxList({
-                // ...
-                selectedItemKeys: [0, 2, 5]
+        deselectItem(key) {
+            this.selectedKeys = this.selectedKeys.filter((data) => {
+                return data !== key;
             });
-        });
-
-    ##### Angular
-
-        <!--HTML-->
-        <dx-list ...
-            [selectedItemKeys]="[0, 2, 5]">
-        </dx-list>
-
-        <!--TypeScript-->
-        import { DxListModule } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            // ...
         }
-        @NgModule({
-            imports: [
-                // ...
-                DxListModule
-            ],
-            // ...
-        })
+    }
 
-    ---
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
 
-    [note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the **List** or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
+    import { DxListModule } from 'devextreme-angular';
 
-- **By data object**      
-Add or remove the data object from the [selectedItems](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItems') collection.
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxListModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
-    ---
-    ##### jQuery
+##### Vue
 
-        <!--JavaScript-->
-        const fruits = [
-            { fruit: "Apples", count: 10 },
-            { fruit: "Oranges", count: 12 },
-            { fruit: "Lemons", count: 15 }
-        ];
-        const list = $("#listContainer").dxList("instance");
-        let selectedItems = list.option("selectedItems");
-        // Selects the "Oranges" item
-        selectedItems.push(fruits[1]);
-        list.option("selectedItems", selectedItems);
-        // Cancels the selection of the "Oranges" item
-        selectedItems = $.grep(selectedItems, function(item) {
-            return item != fruits[1];
-        });
-        list.option("selectedItems", selectedItems);
+    <!-- tab: App.vue -->
+    <template>
+        <DxList ...
+            v-model:selected-item-keys="selectedKeys"
+        />
+    </template>
 
-    ##### Angular
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxList from 'devextreme-vue/list';
 
-        <!--TypeScript-->
-        import { ..., ViewChild } from "@angular/core";
-        import { DxListModule, DxListComponent } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            @ViewChild(DxListComponent, { static: false }) list: DxListComponent;
-            // Prior to Angular 8
-            // @ViewChild(DxListComponent) list: DxListComponent;
-            fruits = [
-                { fruit: "Apples", count: 10 },
-                { fruit: "Oranges", count: 12 },
-                { fruit: "Lemons", count: 15 }
-            ];
-            selectOranges () {
-                let selectedItems = this.list.instance.option("selectedItems");
-                selectedItems.push(fruits[1]);
-                this.list.instance.option("selectedItems", selectedItems);
+    export default {
+        components: {
+            DxList
+        },
+        data() {
+            return {
+                selectedKeys: [6, 2, 5]
             }
-            unselectOranges () {
-                let selectedItems = this.list.instance.option("selectedItems");
-                selectedItems = selectedItems.filter((item) => {
-                    return item != fruits[1];
+        },
+        methods: {
+            selectItem(key) {
+                if(!this.selectedKeys.includes(key)) {
+                    this.selectedKeys.push(key);
+                }
+            },
+            deselectItem(key) {
+                this.selectedKeys = this.selectedKeys.filter((data) => {
+                    return data !== key;
                 });
-                this.list.instance.option("selectedItems", selectedItems);
             }
         }
-        @NgModule({
-            imports: [
-                // ...
-                DxListModule
-            ],
-            // ...
-        })
+    }
+    </script>
 
-    ---
+##### React
 
-    You can also use the **selectedItems** collection to select items initially.
+    <!-- tab: App.js -->
+    import React, { useState } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
 
-    ---
-    ##### jQuery
+    import List from 'devextreme-react/list';
 
-        <!--JavaScript-->
-        const fruits = [
-            // ...
-        ];
-        $(function() {
-            $("#listContainer").dxList({
-                dataSource: fruits,
-                selectedItems: [fruits[0], fruits[2]]
+    export default function App() {
+        const [selectedKeys, setSelectedKeys] = useState([6, 2, 5]);
+        const selectItem = (key) => {
+            if (!selectedKeys.includes(key)) {
+                const newSelectedKeys = [...selectedKeys, key];
+                setSelectedKeys(newSelectedKeys);
+            }
+        };
+        const deselectItem = (key) => {
+            const filteredSelectedKeys = selectedKeys.filter((data) => {
+                return data !== key;
             });
-        });
-
-    ##### Angular
-
-        <!--HTML-->
-        <dx-list ...
-            [dataSource]="fruits"
-            [selectedItems]="[fruits[0], fruits[2]]">
-        </dx-list>
-
-        <!--TypeScript-->
-        import { DxListModule } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            fruits = [
-                // ...
-            ]
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxListModule
-            ],
-            // ...
-        })
-
-    ---
-
-- **By index**        
-Pass the index to the [selectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') or [unselectItem(itemIndex)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex') method. If the **List** is [grouped](/concepts/05%20Widgets/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/'), these methods should be given an object with the indexes of the group and the item.
-
-    ---
-    ##### jQuery
-
-        <!--JavaScript-->
-        const list = $("#listContainer").dxList("instance");
-        // Selects the item with index 1
-        list.selectItem(1);
-        // Checks that the item with index 1 is selected; if so, cancels the selection
-        if(list.isItemSelected(1)) {
-            list.unselectItem(1);
-        }
-        // Selects the item with index 3 in the group with index 2
-        list.selectItem({ group: 2, item: 3 });
-        // Checks that the item with index 3 in the group with index 2 is selected; if so, cancels the selection
-        const itemToUnselect = { group: 2, item: 3 };
-        if(list.isItemSelected(itemToUnselect)) {
-            list.unselectItem(itemToUnselect);
-        }
-
-
-    ##### Angular
-
-        <!--TypeScript-->
-        import { ..., ViewChild } from "@angular/core";
-        import { DxListModule, DxListComponent } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            @ViewChild(DxListComponent, { static: false }) list: DxListComponent;
-            // Prior to Angular 8
-            // @ViewChild(DxListComponent) list: DxListComponent;
-            selectItem (index) {
-                // Checks that the item with the index is selected
-                if (this.list.isItemSelected(index)) {
-                    // If the item is selected, clears its selection
-                    this.list.instance.unselectItem(index);
-                } else {
-                    // If the item is not selected, selects it
-                    this.list.instance.selectItem(index);
-                }
+            setSelectedKeys(filteredSelectedKeys);
+        };
+        const handleSelectionChange = (e) => {
+            if (e.name === "selectedItemKeys") {
+                setSelectedKeys(e.value);
             }
-            selectItemInGroup (groupIndex, itemIndex) {
-                let item = { group: groupIndex, item: itemIndex };
-                // Checks that the item is selected
-                if(this.list.instance.isItemSelected(item)) {
-                    // If the item is selected, clears its selection
-                    this.list.instance.unselectItem(item);
-                } else {
-                    // If the item is not selected, selects it
-                    this.list.instance.selectItem(item);
-                }
-            }
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxListModule
-            ],
-            // ...
-        })
+        };
+        
+        return (
+            <List ...
+                selectedItemKeys={selectedKeys}
+                onOptionChanged={handleSelectionChange}
+            />
+        );
+    }
 
-    ---
+---
 
-- **By DOM node**      
-Pass the <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_blank">DOM node</a> to the [selectItem(itemElement)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/selectItem(itemElement).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemElement') or [unselectItem(itemElement)](/api-reference/10%20UI%20Widgets/dxList/3%20Methods/unselectItem(itemElement).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemElement') method.
-
-    ---
-    ##### jQuery
-
-        <!--JavaScript-->
-        const list = $("#listContainer").dxList("instance");
-        const itemNodes = $("#listContainer").find(".dx-list-item");
-        // Selects the last item by its DOM node
-        list.selectItem(itemNodes[itemNodes.length-1]);
-        // Checks that the last item is selected; if so, cancels the selection
-        if(list.isItemSelected(itemNodes[itemNodes.length-1])) {
-            list.unselectItem(itemNodes[itemNodes.length-1]);
-        }
-
-    ##### Angular
-
-        <!--TypeScript-->
-        import { ..., ViewChild } from "@angular/core";
-        import { DxListModule, DxListComponent } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            @ViewChild(DxListComponent, { static: false }) list: DxListComponent;
-            // Prior to Angular 8
-            // @ViewChild(DxListComponent) list: DxListComponent;
-            selectLastItem () {
-                const itemNodes = document.getElementsByClassName("dx-list-item");
-                // Selects the last item by its DOM node
-                this.list.instance.selectItem(itemNodes[itemNodes.length-1]);
-            }
-            unselectLastItem () {
-                const itemNodes = document.getElementsByClassName("dx-list-item");
-                // Checks that the last item is selected; if so, cancels the selection
-                if(this.list.instance.isItemSelected(itemNodes[itemNodes.length-1])) {
-                    this.list.instance.unselectItem(itemNodes[itemNodes.length-1]);
-                }
-            }
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxListModule
-            ],
-            // ...
-        })
-
-    ---
+[note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
 
 #####See Also#####
 #include common-link-callmethods
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')

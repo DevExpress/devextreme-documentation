@@ -1,8 +1,8 @@
-Exposes the **DateBox** UI component.
+Exposes the DateBox UI component.
 
 Exports:
 
-- *default* - The [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component
+- *default* - The [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component
 
         require("ui/date_box");
         // ===== or =====

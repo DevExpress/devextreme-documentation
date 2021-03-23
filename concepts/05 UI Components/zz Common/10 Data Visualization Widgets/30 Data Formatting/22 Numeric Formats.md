@@ -2,7 +2,7 @@
 
 [note]Formats from the left column can be paired with formats from the right column using a space separator, e.g., *'fixedPoint thousands'*.
 
-To set a numeric format, use the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') property. Also, you can apply a precision to numeric values using the **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') property. For example, the following configuration makes **Chart**'s [series point labels](/concepts/05%20Widgets/Chart/15%20Point%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Overview/') display values rounded up to the nearest hundredth.
+To set a numeric format, use the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') property. Also, you can apply a precision to numeric values using the **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') property. For example, the following configuration makes Chart's [series point labels](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Overview/') display values rounded up to the nearest hundredth.
 
     <!--JavaScript-->var data = [
         { quarter: 'QI', quantity: 26.252 },

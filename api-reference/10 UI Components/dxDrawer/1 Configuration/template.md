@@ -13,7 +13,7 @@ The container for the content. It is an <a href="https://developer.mozilla.org/e
 ---
 ![DevExtreme HTML5 JavaScript Drawer](/images/UiWidgets/drawer.png)
 
-This property specifies the drawer's content. To specify the view's content, nest it inside the **Drawer**'s markup element as shown in the code below.
+This property specifies the drawer's content. To specify the view's content, nest it inside the Drawer's markup element as shown in the code below.
 
 [important] Always specify a fixed width for the drawer's content. This width is used to calculate the drawer's width.
 
@@ -106,9 +106,11 @@ This property specifies the drawer's content. To specify the view's content, nes
 
 ---
 
+[note]The Drawer UI component is not designed to contain another Drawer. Do not use nested Drawers to avoid possible issues in your application.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/LeftOrRightPosition/"
 }
 
 #####See Also#####
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

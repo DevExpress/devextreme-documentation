@@ -1,4 +1,4 @@
-When a funnel item's hover state is being changed, the **Funnel** raises the [hoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/4%20Events/hoverChanged.md '/Documentation/ApiReference/UI_Components/dxFunnel/Events/#hoverChanged') event that you can handle with a function. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/onHoverChanged.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#onHoverChanged') property when you configure the UI component. To check whether the pointer entered or left a funnel item, call the item's [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#isHovered') method.
+When a funnel item's hover state is being changed, the Funnel raises the [hoverChanged](/api-reference/10%20UI%20Components/dxFunnel/4%20Events/hoverChanged.md '/Documentation/ApiReference/UI_Components/dxFunnel/Events/#hoverChanged') event that you can handle with a function. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onHoverChanged](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/onHoverChanged.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#onHoverChanged') property when you configure the UI component. To check whether the pointer entered or left a funnel item, call the item's [isHovered()](/api-reference/10%20UI%20Components/dxFunnel/6%20Item/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#isHovered') method.
 
 ---
 ##### jQuery
@@ -99,7 +99,7 @@ When a funnel item's hover state is being changed, the **Funnel** raises the [ho
 
 ---
 
-If you are going to change the event handler at runtime or if you need to attach several handlers to the **hoverChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change the event handler at runtime or if you need to attach several handlers to the **hoverChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var hoverChangedHandler1 = function (e) {

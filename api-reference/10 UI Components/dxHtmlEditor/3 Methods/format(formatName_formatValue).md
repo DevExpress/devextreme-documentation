@@ -3,7 +3,7 @@ id: dxHtmlEditor.format(formatName, formatValue)
 ---
 ---
 ##### shortDescription
-Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20Widgets/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
+Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
 A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName').
@@ -57,7 +57,80 @@ If no content is selected, the format applies to the character typed next.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor :ref="htmlEditorRefKey">
+            <!-- ... -->
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxHtmlEditor from 'devextreme-vue/html-editor';
+
+    const htmlEditorRefKey = "my-html-editor";
+
+    export default {
+        components: {
+            DxHtmlEditor
+        },
+        data() {
+            return {
+                htmlEditorRefKey
+            }
+        },
+        methods: {
+            makeTextBold() {
+                this.htmlEditor.format("bold", true);
+            },
+            insertGoogleLink() {
+                this.htmlEditor.format("link", { 
+                    href: "https://www.google.com/", 
+                    text: "Google", 
+                    title: "Go to Google" 
+                });
+            }
+        },
+        computed: {
+            htmlEditor: function() {
+                return this.$refs[htmlEditorRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const htmlEditor = useRef(null);
+        
+        const makeTextBold = () => {
+            htmlEditor.current.instance.format("bold", true);
+        };
+        const insertGoogleLink = () => {
+            htmlEditor.current.instance.format("link", { 
+                href: "https://www.google.com/", 
+                text: "Google", 
+                title: "Go to Google" 
+            });
+        };
+
+        return (
+            <HtmlEditor ref={htmlEditor}>
+                {/* */}
+            </HtmlEditor>
+        );
+    }
+
 ---
 
 #####See Also#####
-- [insertEmbed()](/api-reference/10%20UI%20Widgets/dxHtmlEditor/3%20Methods/insertEmbed(index_type_config).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#insertEmbedindex_type_config')
+- [insertEmbed()](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/insertEmbed(index_type_config).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#insertEmbedindex_type_config')

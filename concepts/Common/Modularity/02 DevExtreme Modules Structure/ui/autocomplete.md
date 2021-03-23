@@ -1,8 +1,8 @@
-Exposes the **Autocomplete** UI component.
+Exposes the Autocomplete UI component.
 
 Exports:
 
-- *default* - The [Autocomplete](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/') UI component
+- *default* - The [Autocomplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/') UI component
 
         require("ui/autocomplete");
         // ===== or =====

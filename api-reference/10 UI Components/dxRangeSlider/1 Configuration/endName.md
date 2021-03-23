@@ -8,7 +8,7 @@ default: ''
 The value to be assigned to the <a href="http://www.w3schools.com/tags/att_input_name.asp" target="_blank">name</a> attribute of the underlying `<input>` element.
 
 ---
-Specify this and [startName](/api-reference/10%20UI%20Widgets/dxRangeSlider/1%20Configuration/startName.md '/Documentation/ApiReference/UI_Components/dxRangeSlider/Configuration/#startName') properties if the UI component lies within an HTML form that will be submitted.
+Specify this and [startName](/api-reference/10%20UI%20Components/dxRangeSlider/1%20Configuration/startName.md '/Documentation/ApiReference/UI_Components/dxRangeSlider/Configuration/#startName') properties if the UI component lies within an HTML form that will be submitted.
 
 If you configure the UI component as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, use this property to bind the UI component to a model property. If this model property contains <a href="https://www.asp.net/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6" target="_blank">Data Annotation validation attributes</a>, you get the <a href="https://docs.devexpress.com/AspNetCore/400576/devextreme-based-controls/concepts/data-validation" target="_blank">client-side validation</a> enabled by default.
 

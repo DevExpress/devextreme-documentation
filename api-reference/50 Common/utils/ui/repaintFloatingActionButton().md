@@ -94,4 +94,4 @@ Call this method to repaint the Floating Action Button after you change the **gl
 ---
 
 #####See Also#####
-- [SpeedDialAction](/api-reference/10%20UI%20Widgets/dxSpeedDialAction '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/')
+- [SpeedDialAction](/api-reference/10%20UI%20Components/dxSpeedDialAction '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/')

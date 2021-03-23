@@ -10,9 +10,9 @@ Binds the UI component to data.
 ---
 If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
-The **PivotGrid** is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and perform other data shaping operations. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
+The PivotGrid is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and perform other data shaping operations. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
  
-To bind the **PivotGrid** to data, assign a **PivotGridDataSource** to the UI component's **dataSource** property. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') property depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
+To bind the PivotGrid to data, assign a **PivotGridDataSource** to the UI component's **dataSource** property. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') property depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
 
 - **Data Array**        
 Assign the array to the **store** property. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray)
@@ -167,18 +167,18 @@ Use one of the following extensions to enable the server to process data accordi
 
 
 - **Any other data source**     
-Implement a [CustomStore](/concepts/05%20Widgets/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/').
+Implement a [CustomStore](/concepts/05%20UI%20Components/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/').
 
-You can call the [getDataSource()](/api-reference/10%20UI%20Widgets/dxPivotGrid/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource') method to access the **PivotGridDataSource** instance associated with the **PivotGrid**.
+You can call the [getDataSource()](/api-reference/10%20UI%20Components/dxPivotGrid/3%20Methods/getDataSource().md '{basewidgetpath}/Methods/#getDataSource') method to access the **PivotGridDataSource** instance associated with the PivotGrid.
 
 [note]
 
-Please review the following notes about data binding:
+Review the following notes about data binding:
 
-- If the **PivotGrid** UI component gets data from a server, enable [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to notify the UI component that the server performs data processing operations.
+- If the PivotGrid UI component gets data from a server, enable [remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to notify the UI component that the server processes data.
 
-- Data field names should not contain the following characters: `this`, `.`, `:`, `[`, and `]`.
+- Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 
-- **PivotGridDataSource** and stores provide methods to process and update data. However, the methods do not allow you to perform particular tasks (for example, replace the entire dataset, reconfigure data access at runtime). For such tasks, create a new **PivotGridDataSource** and assign it to the **dataSource** property as shown in the articles about changing properties in [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/05%20Get%20and%20Set%20Options/00%20Get%20and%20Set%20Options.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_and_Set_Properties'), [Angular](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Option%20Binding.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding'), [React](/concepts/50%20React%20Components/20%20State%20Management/3%20Controlled%20Mode.md '/Documentation/Guide/React_Components/State_Management/#Controlled_Mode'), and [Vue](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Option%20Binding.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding').
+- The stores and **PivotGridDataSource** have methods to process and update data. However, the methods do not allow you to perform particular tasks (for example, replace the entire dataset, reconfigure data access at runtime). For such tasks, create a new **PivotGridDataSource** and assign it to the **dataSource** property as shown in the articles about changing properties in [jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/05%20Get%20and%20Set%20Properties/00%20Get%20and%20Set%20Properties.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_and_Set_Properties'), [Angular](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Property%20Binding.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding'), [React](/concepts/50%20React%20Components/20%20State%20Management/3%20Controlled%20Mode.md '/Documentation/Guide/React_Components/State_Management/#Controlled_Mode'), and [Vue](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Property%20Binding.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding').
 
 [/note]

@@ -168,6 +168,60 @@ The following code shows how to apply LDML patterns to format numbers and dates:
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxNumberBox
+            v-model:value="numberBoxValue"
+            format="0.##" /> <!-- "0.01", "5", "5.01" -->
+        <DxDateBox
+            v-model:value="dateBoxValue"
+            format="MMM d, yyyy" /> <!-- "Jun 15, 2018" -->
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxNumberBox from 'devextreme-vue/number-box';
+    import DxDateBox from 'devextreme-vue/date-box';
+
+    export default {
+        components: {
+            DxNumberBox,
+            DxDateBox
+        },
+        data() {
+            return {
+                numberBoxValue: 5,
+                dateBoxValue: new Date()
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import NumberBox from 'devextreme-react/number-box';
+    import DateBox from 'devextreme-react/date-box';
+
+    export default function App() {
+        return (
+            <React.Fragment>
+                <NumberBox
+                    defaultValue={5}
+                    format="0.##" /> {/* "0.01", "5", "5.01" */}
+                <DateBox
+                    defaultValue={new Date()}
+                    format="MMM d, yyyy" />  {/* "Jun 15, 2018" */}
+            </React.Fragment>
+        );
+    }
+
 ---
 
 #####See Also#####

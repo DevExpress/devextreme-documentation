@@ -1,10 +1,10 @@
-The **FilterBuilder** UI component allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
+The FilterBuilder UI component allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"
 }
 
-The following code adds a simple **FilterBuilder** to your page. Note that each item in the [fields](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#fields') array contains the [dataField](/api-reference/_hidden/dxFilterBuilderField/dataField.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataField'). The filter expression is defined in the [value](/api-reference/10%20UI%20Widgets/dxFilterBuilder/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#value') property and should contain only those data fields that are present in the **fields** array.
+The following code adds a simple FilterBuilder to your page. Note that each item in the [fields](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#fields') array contains the [dataField](/api-reference/_hidden/dxFilterBuilderField/dataField.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataField'). The filter expression is defined in the [value](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#value') property and should contain only those data fields that are present in the **fields** array.
 
 ---
 #####jQuery
@@ -74,14 +74,14 @@ The following code adds a simple **FilterBuilder** to your page. Note that each 
 
 ---
 
-The **FilterBuilder** displays the filter expression as a tree structure, where nodes represent simple filter conditions. Each condition consists of a data field, operation and value. A logical operation combines conditions into groups. For example, the following image shows how the above filter expression looks in the UI:
+The FilterBuilder displays the filter expression as a tree structure, where nodes represent simple filter conditions. Each condition consists of a data field, operation and value. A logical operation combines conditions into groups. For example, the following image shows how the above filter expression looks in the UI:
 
 ![DevExtreme HTML5 JavaScript Filter Builder Groups](/images/FilterBuilder/visual_elements/groups.png)
 
 #####See Also#####
 #include common-link-configurewidget
-- [Integrate with a UI component](/concepts/05%20Widgets/FilterBuilder/020%20Integrate%20with%20a%20Widget.md '/Documentation/Guide/UI_Components/FilterBuilder/Integrate_with_a_DevExtreme_UI_Component/')
-- [Predefine Filter Values](/concepts/05%20Widgets/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')
-- [API Reference](/api-reference/10%20UI%20Widgets/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')
+- [Integrate with a UI component](/concepts/05%20UI%20Components/FilterBuilder/020%20Integrate%20with%20a%20DevExtreme%20UI%20Component.md '/Documentation/Guide/UI_Components/FilterBuilder/Integrate_with_a_DevExtreme_UI_Component/')
+- [Predefine Filter Values](/concepts/05%20UI%20Components/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')
+- [API Reference](/api-reference/10%20UI%20Components/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')
 
 [tags]dxfilterbuilder, filter builder, filterBuilder, filter expression, condition, overview

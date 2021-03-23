@@ -1,4 +1,4 @@
-With the **TreeList** UI component, a user can sort by single and multiple columns. Use the **sorting**.[mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property to specify the current sorting mode.
+With the TreeList UI component, a user can sort by single and multiple columns. Use the **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property to specify the current sorting mode.
 
 ---
 ##### jQuery
@@ -33,6 +33,50 @@ With the **TreeList** UI component, a user can sort by single and multiple colum
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList>
+            <DxSorting mode="single"/> <!-- or "multiple" | "none" -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxSorting } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxSorting
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Sorting } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList>
+                    <Sorting mode="single"/> {/* or "multiple" | "none" */}
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -82,8 +126,52 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList>
+            <DxColumn :allow-sorting="false"/>
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { TreeList, Column } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList>
+                    <Column allowSorting={false}/>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
 #####See Also#####
-- [remoteOperations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/')
+- [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/')

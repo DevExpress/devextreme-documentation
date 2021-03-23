@@ -8,9 +8,9 @@ Configures edit properties.
 
 ---
 
-The UI component allows users to add, modify and delete tasks, resources and dependencies. Set the [enabled](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/editing/enabled.md '{basewidgetpath}/Configuration/editing/#enabled') property to **true** to enable edit functionality. 
+The UI component allows users to add, modify and delete tasks, resources and dependencies. Set the [enabled](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/editing/enabled.md '{basewidgetpath}/Configuration/editing/#enabled') property to **true** to enable edit functionality. 
 
-[note] Make sure that your data sources ([tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks'), [resources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources') and [dependencies](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/dependencies '{basewidgetpath}/Configuration/#dependencies')) support edit actions.
+[note] Make sure that your data sources ([tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks'), [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources') and [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '{basewidgetpath}/Configuration/#dependencies')) support edit actions.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"

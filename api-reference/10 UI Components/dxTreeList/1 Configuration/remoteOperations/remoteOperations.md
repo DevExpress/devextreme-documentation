@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Notifies the **TreeList** of the server's data processing operations. Applies only if data has a [plain structure](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure').
+Notifies the TreeList of the server's data processing operations. Applies only if data has a [plain structure](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure').
 
 ---
 Server-side data processing improves the UI component's performance on large datasets. When the server does not implement particular operations (and/or the corresponding **remoteOperations** fields are **false**) they are executed on the client. Note that the UI component may send queries to the server while executing a client-side operation.
@@ -44,7 +44,7 @@ The following table lists the possible **remoteOperations** configurations and t
 
 [note] Filtering and sorting are performed on the server side for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to **false**. Other operations are always client-side.
 
-When operations are performed on the server side, the **TreeList** does not support:
+When operations are performed on the server side, the TreeList does not support:
 
 - sorting, grouping, and filtering by columns with the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue') property defined;
 - custom sorting using functions (that is, [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateSortValue') accepts strings only).

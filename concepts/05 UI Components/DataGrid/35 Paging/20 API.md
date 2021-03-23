@@ -1,4 +1,4 @@
-Call the [pageCount()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageCount().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageCount') method to get the total page count.
+Call the [pageCount()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/pageCount().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageCount') method to get the total page count.
 
 ---
 
@@ -88,7 +88,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pag
 
 ---
 
-The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageIndexnewIndex') and [pageSize(value)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/pageSize(value).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageSizevalue') methods that switch the grid to a specific page and change the page size. They can also be called without arguments, in which case, they return the index and size of the current page.
+The DataGrid also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageIndexnewIndex') and [pageSize(value)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/pageSize(value).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#pageSizevalue') methods that switch the grid to a specific page and change the page size. They can also be called without arguments, in which case, they return the index and size of the current page.
 
 ---
 
@@ -243,5 +243,5 @@ The **DataGrid** also provides the [pageIndex(newIndex)](/api-reference/10%20UI%
 ---
 
 #####See Also#####
-- [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
-- [Scrolling](/concepts/05%20Widgets/DataGrid/40%20Scrolling '/Documentation/Guide/UI_Components/DataGrid/Scrolling/')
+- [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
+- [Scrolling](/concepts/05%20UI%20Components/DataGrid/40%20Scrolling '/Documentation/Guide/UI_Components/DataGrid/Scrolling/')

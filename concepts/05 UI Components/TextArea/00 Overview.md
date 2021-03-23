@@ -1,10 +1,10 @@
-The **TextArea** is a UI component that enables a user to enter and edit a multi-line text.
+The TextArea is a UI component that enables a user to enter and edit a multi-line text.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/"
 }
 
-The following code adds a simple **TextArea** with a [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#placeholder') to your page.
+The following code adds a simple TextArea with a [placeholder](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#placeholder') to your page.
 
 ---
 ##### jQuery
@@ -77,7 +77,7 @@ The following code adds a simple **TextArea** with a [placeholder](/api-referenc
 
 ---
 
-By default, the **TextArea** checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** property.
+By default, the TextArea checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** property.
 
 ---
 ##### jQuery
@@ -148,7 +148,7 @@ By default, the **TextArea** checks the entered text for spelling errors. To dis
 
 ---
 
-If an end user should _not_ be able to edit the text in the **TextArea**, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
+If an end user should _not_ be able to edit the text in the TextArea, assign **true** to the **readOnly** property. In this case, make sure to set the **value** property too.
 
 ---
 ##### jQuery
@@ -229,11 +229,11 @@ If an end user should _not_ be able to edit the text in the **TextArea**, assign
 
 #####See Also#####
 #include common-link-configurewidget
-- [TextArea - Adapt the Size of the Text Area](/concepts/05%20Widgets/TextArea/05%20Adapt%20the%20Size%20of%20the%20Text%20Area.md '/Documentation/Guide/UI_Components/TextArea/Adapt_the_Size_of_the_Text_Area/')
-- [TextArea - Handle the Value Change Event](/concepts/05%20Widgets/TextArea/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Value_Change_Event/')
-- [TextArea - Handle the Keyboard Events](/concepts/05%20Widgets/TextArea/13%20Handle%20the%20Keyboard%20Events.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Keyboard_Events/')
-- [TextArea - Limit the Text Length](/concepts/05%20Widgets/TextArea/15%20Limit%20the%20Text%20Length.md '/Documentation/Guide/UI_Components/TextArea/Limit_the_Text_Length/')
-- [TextArea API Reference](/api-reference/10%20UI%20Widgets/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
-- [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
+- [TextArea - Adapt the Size of the Text Area](/concepts/05%20UI%20Components/TextArea/05%20Adapt%20the%20Size%20of%20the%20Text%20Area.md '/Documentation/Guide/UI_Components/TextArea/Adapt_the_Size_of_the_Text_Area/')
+- [TextArea - Handle the Value Change Event](/concepts/05%20UI%20Components/TextArea/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Value_Change_Event/')
+- [TextArea - Handle the Keyboard Events](/concepts/05%20UI%20Components/TextArea/13%20Handle%20the%20Keyboard%20Events.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Keyboard_Events/')
+- [TextArea - Limit the Text Length](/concepts/05%20UI%20Components/TextArea/15%20Limit%20the%20Text%20Length.md '/Documentation/Guide/UI_Components/TextArea/Limit_the_Text_Length/')
+- [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
+- [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
 
 [tags]dxtextarea, textArea, text area, editor, overview, spellcheck, read-only

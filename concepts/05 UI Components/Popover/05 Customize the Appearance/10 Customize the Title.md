@@ -1,4 +1,4 @@
-The **Popover** is displayed without a title by default. To add it, set the [showTitle](/api-reference/10%20UI%20Widgets/dxPopover/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showTitle') property to **true** and specify the title text using the [title](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#title') property. The title can contain a button that closes the **Popover**. To enable it, assign **true** to the [showCloseButton](/api-reference/10%20UI%20Widgets/dxPopup/1%20Configuration/showCloseButton.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showCloseButton') property. 
+The Popover is displayed without a title by default. To add it, set the [showTitle](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showTitle') property to **true** and specify the title text using the [title](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#title') property. The title can contain a button that closes the Popover. To enable it, assign **true** to the [showCloseButton](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/showCloseButton.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showCloseButton') property. 
 
 ---
 ##### jQuery
@@ -263,12 +263,12 @@ If you need to define the title completely, specify a template for it as shown i
 
 ---
 
-You can switch title templates on the fly just as you can do with content templates. Refer to the [Switching Templates On the Fly](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content/5%20Switching%20Templates%20On%20the%20Fly.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/#Switching_Templates_On_the_Fly') topic for more information.
+You can switch title templates on the fly just as you can do with content templates. Refer to the [Switching Templates On the Fly](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content/5%20Switching%20Templates%20On%20the%20Fly.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/#Switching_Templates_On_the_Fly') topic for more information.
 
 #####See Also#####
-- [Popover - Customize the Content](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
-- [Popover - Specify Toolbar Items](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
-- [Popover - Color the Shading of the Background](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/30%20Color%20the%20Shading%20of%20the%20Background.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Color_the_Shading_of_the_Background/')
+- [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
+- [Popover - Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
+- [Popover - Color the Shading of the Background](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/30%20Color%20the%20Shading%20of%20the%20Background.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Color_the_Shading_of_the_Background/')
 - [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
 
 [tags]popover, title, show title, title template, close button

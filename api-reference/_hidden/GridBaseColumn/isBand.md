@@ -12,7 +12,7 @@ Unlike standard columns, band columns do not contain data. Instead, a band colum
 
 * [Create nested column configurations](/api-reference/_hidden/GridBaseColumn/columns '{basewidgetpath}/Configuration/columns/columns/').
 
-* Specify the **isBand** and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand') properties inside the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '{basewidgetpath}/Configuration/#customizeColumns') function.
+* Specify the **isBand** and [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand') properties inside the [customizeColumns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/customizeColumns.md '{basewidgetpath}/Configuration/#customizeColumns') function.
 
 The following code uses the **isBand** and **ownerBand** properties to display the *"City"*, *"Street"*, and *"Apartment"* columns under the *"Address"* band:
 
@@ -28,8 +28,8 @@ The following code uses the **isBand** and **ownerBand** properties to display t
                     isBand: true
                 });
                 
-                var addressFields = ["City", "Street", "Apartment"];
-                for (var i = 0; i < columns.length-1; i++) {
+                const addressFields = ["City", "Street", "Apartment"];
+                for (let i = 0; i < columns.length-1; i++) {
                     if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
                         columns[i].ownerBand = columns.length-1; // assigns "Address" as the owner band column
                 }
@@ -49,7 +49,7 @@ The following code uses the **isBand** and **ownerBand** properties to display t
                 isBand: true
             });
     
-            let addressFields = ["City", "Street", "Apartment"];
+            const addressFields = ["City", "Street", "Apartment"];
             for (let i = 0; i < columns.length - 1; i++) {
                 if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
                     columns[i].ownerBand = columns.length - 1; // assigns "Address" as the owner band column
@@ -68,6 +68,78 @@ The following code uses the **isBand** and **ownerBand** properties to display t
     <dx-{widget-name} ...
         [customizeColumns]="customizeColumns">
     </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :customize-columns="customizeColumns">
+            <!-- ... -->
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        // ...
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            // ...
+        },
+        // ...
+        methods: {
+            customizeColumns (columns) {
+                columns.push({ // Pushes the "Address" band column into the "columns" array
+                    caption: "Address",
+                    isBand: true
+                });
+        
+                const addressFields = ["City", "Street", "Apartment"];
+                for (let i = 0; i < columns.length - 1; i++) {
+                    if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
+                        columns[i].ownerBand = columns.length - 1; // assigns "Address" as the owner band column
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        // ...
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        const customizeColumns = useCallback((columns) => {
+            columns.push({ // Pushes the "Address" band column into the "columns" array
+                caption: "Address",
+                isBand: true
+            });
+
+            const addressFields = ["City", "Street", "Apartment"];
+            for (let i = 0; i < columns.length - 1; i++) {
+                if (addressFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Address",
+                    columns[i].ownerBand = columns.length - 1; // assigns "Address" as the owner band column
+            }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                customizeColumns={customizeColumns}>
+                {/* ... */}
+            </{WidgetName}>
+        );
+    }
     
 ---
 
@@ -88,9 +160,9 @@ Band columns can have the following properties only:
 - [visible](/api-reference/_hidden/GridBaseColumn/visible.md '{basewidgetpath}/Configuration/columns/#visible')
 - [visibleIndex](/api-reference/_hidden/GridBaseColumn/visibleIndex.md '{basewidgetpath}/Configuration/columns/#visibleIndex')
 
-[note] Band columns cannot nest [command columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Command_Columns/').
+[note] Band columns cannot nest [command columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Command_Columns/').
 
 #####See Also#####
 
-- [Band Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Band_Columns/')
+- [Band Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Band_Columns/')
 <!--/fullDescription-->

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the **ContextMenu** UI component.
+An object defining configuration properties for the ContextMenu UI component.
 
 ---
 #####See Also#####

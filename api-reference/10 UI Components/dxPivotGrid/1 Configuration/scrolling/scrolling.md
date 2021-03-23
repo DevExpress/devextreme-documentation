@@ -7,7 +7,7 @@ type: Object
 A configuration object specifying scrolling properties.
 
 ---
-The **PivotGrid** UI component enables an end-user to scroll grid records. To specify required scrolling behavior, use the [mode](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/scrolling/#mode') property of the **scrolling** configuration object.
+The PivotGrid UI component enables an end-user to scroll grid records. To specify required scrolling behavior, use the [mode](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/scrolling/#mode') property of the **scrolling** configuration object.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/VirtualScrolling/"

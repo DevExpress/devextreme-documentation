@@ -1,4 +1,4 @@
-For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use **dxTemplate** to define templates for cells.
+For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for cells.
 
 ---
 ##### Angular
@@ -92,7 +92,7 @@ For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the [cellTemplate](/api-reference/10%20UI%20Widgets/dxCalendar/1%20Configuration/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#cellTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#cellTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
     $(function () {
@@ -107,10 +107,10 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
         });
     });
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
-- [Calendar API Reference](/api-reference/10%20UI%20Widgets/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
+- [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 
 [tags]calendar, cell appearance, customize, templates

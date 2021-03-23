@@ -1,11 +1,11 @@
-The **CustomStore** requires the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. It sends data processing settings to the server and gets processed data back. These settings depend on which [remoteOperations](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/') are enabled. The following data processing settings apply to the **TreeList**:
+The **CustomStore** requires the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function. It sends data processing settings to the server and gets processed data back. These settings depend on which [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/') are enabled. The following data processing settings apply to the TreeList:
 
 - **Sorting settings**: [sort](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/sort.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#sort')         
 
 - **Filtering settings**: [filter](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/filter.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#filter')    
 
 - **Grouping settings**: [group](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/group.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#group')      
- The **groupInterval** field of the **group** setting is present only when the UI component requests the [header filter](/concepts/05%20Widgets/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Header_Filter')'s data, and only if this data contains numbers or dates. Note that for numbers, the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/#groupInterval') property should be specified explicitly.
+ The **groupInterval** field of the **group** setting is present only when the UI component requests the [header filter](/concepts/05%20UI%20Components/TreeList/40%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/#Header_Filter')'s data, and only if this data contains numbers or dates. Note that for numbers, the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/#groupInterval') property should be specified explicitly.
 
 After receiving these settings, the server should apply them to data and send back an object with the following structure:
 
@@ -26,7 +26,7 @@ If the server has not received the **group** parameter, the resulting object sho
         data: [ ... ] // result data objects
     }
 
-Below is a generalized **CustomStore** configuration for the **TreeList** UI component:
+Below is a generalized **CustomStore** configuration for the TreeList UI component:
 
 ---
 ##### jQuery

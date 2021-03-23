@@ -1,4 +1,4 @@
-Bind the **TagBox** to an array by passing it to the [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource') property. The array may contain primitive values...
+Bind the TagBox to an array by passing it to the [dataSource](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource') property. The array may contain primitive values...
 
 ---
 ##### jQuery
@@ -329,7 +329,7 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 #####See Also#####
 - [Data Layer - Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')
 - [Bind to the ArrayStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
-- [Access the DataSource](/concepts/05%20Widgets/TagBox/02%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/TagBox/Data_Binding/Access_the_DataSource/')
+- [Access the DataSource](/concepts/05%20UI%20Components/TagBox/02%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/TagBox/Data_Binding/Access_the_DataSource/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/Overview)
 
 [tags]TagBox, data binding, provide data, array, process data, query

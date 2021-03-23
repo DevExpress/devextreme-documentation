@@ -1,4 +1,4 @@
-Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the **Scheduler** to data an OData service provides. It presents an interface for loading and editing data and allows you to handle data-related events.
+Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the Scheduler to data an OData service provides. It presents an interface for loading and editing data and allows you to handle data-related events.
 
 ---
 ##### jQuery
@@ -107,7 +107,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
 
 ---
 
-Data kept in the **ODataStore** can be processed in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can filter data as shown in the following code. Note that the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') property is set **false** to prevent data from being partitioned because the **Scheduler** does not support paging.
+Data kept in the **ODataStore** can be processed in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). For example, the **DataSource** can filter data as shown in the following code. Note that the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') property is set **false** to prevent data from being partitioned because the Scheduler does not support paging.
 
 ---
 ##### jQuery
@@ -227,12 +227,12 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 
 ---
 
-[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the **Scheduler**. See this property's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
+[note] Setting the **ODataStore**'s **deserializeDates** property to **false** may cause filtering issues in the Scheduler. See this property's [description](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/deserializeDates.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates') for details.
 
 #####See Also#####
 - [Data Layer - What Are Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores')
 - [Data Layer - Data Source Examples | OData](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData')
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 [tags]scheduler, data binding, provide data, odata, ODataStore, DataSource, process data

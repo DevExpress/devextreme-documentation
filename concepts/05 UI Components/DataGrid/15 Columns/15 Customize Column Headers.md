@@ -1,4 +1,4 @@
-The **DataGrid** generates column headers based on the names of [data fields](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') by default. For example, if a data field is *"fullName"*, the column header text is "Full Name". 
+The DataGrid generates column headers based on the names of [data fields](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') by default. For example, if a data field is *"fullName"*, the column header text is "Full Name". 
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid ColumnHeaders](/images/DataGrid/ColumnHeaders.png)
 
@@ -230,7 +230,7 @@ If you need a more specific customization, define a custom template in the **col
     
 ---
 
-To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#showColumnHeaders') property.
+To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#showColumnHeaders') property.
 
 ---
 ##### jQuery

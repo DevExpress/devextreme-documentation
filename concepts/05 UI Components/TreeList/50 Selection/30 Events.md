@@ -1,4 +1,4 @@
-The **TreeList** UI component raises the [selectionChanged](/api-reference/10%20UI%20Widgets/GridBase/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Events/#selectionChanged') event when a row is selected or when the selection is cancelled. If the function that handles this event is going to remain unchanged, assign it to the [onSelectionChanged](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onSelectionChanged') property when you configure the UI component.
+The TreeList UI component raises the [selectionChanged](/api-reference/10%20UI%20Components/GridBase/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Events/#selectionChanged') event when a row is selected or when the selection is cancelled. If the function that handles this event is going to remain unchanged, assign it to the [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onSelectionChanged') property when you configure the UI component.
 
 ---
 ##### jQuery
@@ -44,7 +44,7 @@ The **TreeList** UI component raises the [selectionChanged](/api-reference/10%20
     
 ---
 
-If you are going to change the event handler at runtime, or if you need to attach several handlers to the event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change the event handler at runtime, or if you need to attach several handlers to the event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var selectionChangedEventHandler1 = function(e) {

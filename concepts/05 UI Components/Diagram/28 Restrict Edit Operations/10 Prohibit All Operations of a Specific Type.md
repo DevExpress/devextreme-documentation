@@ -1,4 +1,4 @@
-To prohibit an operation, set the corresponding *allow{Operation}* [editing](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/) property to `false`.
+To prohibit an operation, set the corresponding *allow{Operation}* [editing](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/') property to `false`.
 
 ---
 ##### jQuery

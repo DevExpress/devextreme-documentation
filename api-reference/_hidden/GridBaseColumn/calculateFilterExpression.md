@@ -17,7 +17,7 @@ The UI element where the filter expression was set.
 Possible values: *"filterRow"*, *"headerFilter"*, *"filterBuilder", and *"search"*.
 
 ##### return: Filter expression
-A filter expression. If you are using [remoteOperations](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/'), it should not contain functions.
+A filter expression. If you are using [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/'), it should not contain functions.
 
 ---
 This function must return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). The simplest filter expression has the following format:
@@ -46,7 +46,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                 calculateFilterExpression: function (filterValue, selectedFilterOperation) {
                     // Implementation for the "between" comparison operator
                     if (selectedFilterOperation === "between" && $.isArray(filterValue)) {
-                        var filterExpression = [
+                        const filterExpression = [
                             [this.dataField, ">", filterValue[0]], 
                             "and", 
                             [this.dataField, "<", filterValue[1]]
@@ -68,10 +68,10 @@ In the following code, the **calculateFilterExpression** function implements an 
     // ...
     export class AppComponent {
         calculateFilterExpression (filterValue, selectedFilterOperation) {
-            let column = this as any;
+            const column = this as any;
             // Implementation for the "between" comparison operator
             if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
-                var filterExpression = [
+                const filterExpression = [
                     [column.dataField, ">", filterValue[0]], 
                     "and", 
                     [column.dataField, "<", filterValue[1]]
@@ -94,6 +94,84 @@ In the following code, the **calculateFilterExpression** function implements an 
     <dx-{widget-name} ... >
         <dxi-column [calculateFilterExpression]="calculateFilterExpression" ... ></dxi-column>
     </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}>
+            <DxColumn ...
+                :calculate-filter-expression="calculateFilterExpression">
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        data() {
+            return {
+                calculateFilterExpression (filterValue, selectedFilterOperation) {
+                    const column = this;
+                    // Implementation for the "between" comparison operator
+                    if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
+                        const filterExpression = [
+                            [column.dataField, ">", filterValue[0]], 
+                            "and", 
+                            [column.dataField, "<", filterValue[1]]
+                        ];
+                        return filterExpression;
+                    }
+                    // Invokes the default filtering behavior
+                    return column.defaultCalculateFilterExpression.apply(column, arguments);
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    function calculateFilterExpression (filterValue, selectedFilterOperation) {
+        // Implementation for the "between" comparison operator
+        if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
+            const filterExpression = [
+                [this.dataField, ">", filterValue[0]], 
+                "and", 
+                [this.dataField, "<", filterValue[1]]
+            ];
+            return filterExpression;
+        }
+        // Invokes the default filtering behavior
+        return this.defaultCalculateFilterExpression.apply(this, arguments);
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column ...
+                    calculateFilterExpression={calculateFilterExpression}>
+                </Column>
+            </{WidgetName}>
+        );
+    }
     
 ---
 

@@ -1,8 +1,8 @@
-Exposes the **Scheduler** UI component.
+Exposes the Scheduler UI component.
 
 Exports:
 
-- *default* - The [Scheduler](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/') UI component
+- *default* - The [Scheduler](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/') UI component
 
         require("ui/scheduler");
         // ===== or =====

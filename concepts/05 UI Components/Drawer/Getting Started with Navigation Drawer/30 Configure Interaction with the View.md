@@ -1,4 +1,4 @@
-When the **Drawer** opens, it can overlap, shrink, or partially displace the view, depending on the [openedStateMode](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/openedStateMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#openedStateMode') property:
+When the Drawer opens, it can overlap, shrink, or partially displace the view, depending on the [openedStateMode](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/openedStateMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#openedStateMode') property:
 
 ---
 ##### jQuery
@@ -63,4 +63,4 @@ When the **Drawer** opens, it can overlap, shrink, or partially displace the vie
 
 ---
 
-Run the code, open the **Drawer** and you should see that it overlaps the view's text.
+Run the code, open the Drawer and you should see that it overlaps the view's text.

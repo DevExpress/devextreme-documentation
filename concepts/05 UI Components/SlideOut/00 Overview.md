@@ -1,10 +1,10 @@
-The **SlideOut** UI component is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
+The SlideOut UI component is a classic slide-out menu paired with a view. An end user opens the menu by swiping away the view.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slideout/Overview/"
 }
 
-The following code adds a primitive **SlideOut** to your page.
+The following code adds a primitive SlideOut to your page.
 
     <!--HTML--><div id="slideOutContainer"></div>
     
@@ -27,7 +27,7 @@ The following code adds a primitive **SlideOut** to your page.
         width: 100%;
     }
 
-Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#dataSource') property accepts an array of strings. An individual menu item will be generated for each of these strings. As an alternative, the **dataSource** property accepts an array of objects. In this case, each of these objects should posess the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/#text') field, otherwise the menu item for it will be unnamed.
+Note that the [dataSource](/api-reference/10%20UI%20Components/dxSlideOut/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/#dataSource') property accepts an array of strings. An individual menu item will be generated for each of these strings. As an alternative, the **dataSource** property accepts an array of objects. In this case, each of these objects should posess the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxSlideOut/Configuration/items/#text') field, otherwise the menu item for it will be unnamed.
 
     <!--JavaScript-->var displays = [
         { text: "SuperLCD 42", price: "$1200" },
@@ -49,14 +49,14 @@ Note that the [dataSource](/api-reference/10%20UI%20Widgets/dxSlideOut/1%20Confi
         });
     });
 
-[note]The **SlideOut** contains the [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20Widgets/SlideOutView/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOutView/Overview/') instead of the **SlideOut**.
+[note]The SlideOut contains the [List](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20UI%20Components/SlideOutView/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOutView/Overview/') instead of the SlideOut.
 
 #####See Also#####
 #include common-link-configurewidget
-- [SlideOut - Customize Menu Items](/concepts/05%20Widgets/SlideOut/05%20Customize%20Menu%20Items.md '/Documentation/Guide/UI_Components/SlideOut/Customize_Menu_Items')
-- [SlideOut - Group Menu Items](/concepts/05%20Widgets/SlideOut/08%20Group%20Menu%20Items.md '/Documentation/Guide/UI_Components/SlideOut/Group_Menu_Items')
-- [SlideOut - Customize the View](/concepts/05%20Widgets/SlideOut/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOut/Customize_the_View')
-- [SlideOut - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOut/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/UI_Components/SlideOut/Open_and_Close_the_Menu_Using_the_API')
-- [SlideOut API Reference](/api-reference/10%20UI%20Widgets/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/')
+- [SlideOut - Customize Menu Items](/concepts/05%20UI%20Components/SlideOut/05%20Customize%20Menu%20Items.md '/Documentation/Guide/UI_Components/SlideOut/Customize_Menu_Items')
+- [SlideOut - Group Menu Items](/concepts/05%20UI%20Components/SlideOut/08%20Group%20Menu%20Items.md '/Documentation/Guide/UI_Components/SlideOut/Group_Menu_Items')
+- [SlideOut - Customize the View](/concepts/05%20UI%20Components/SlideOut/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOut/Customize_the_View')
+- [SlideOut - Open and Close the Menu Using the API](/concepts/05%20UI%20Components/SlideOut/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/UI_Components/SlideOut/Open_and_Close_the_Menu_Using_the_API')
+- [SlideOut API Reference](/api-reference/10%20UI%20Components/dxSlideOut '/Documentation/ApiReference/UI_Components/dxSlideOut/')
 
 [tags]dxslideout, slide-out menu, slideOut, navigation, collection container, collection UI component, overview

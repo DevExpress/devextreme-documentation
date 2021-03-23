@@ -1,8 +1,8 @@
-[note]In this document, "size" is an item's width or height, depending on whether the [direction](/api-reference/10%20UI%20Widgets/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#direction') property is set to *"row"* or *"col"*.
+[note]In this document, "size" is an item's width or height, depending on whether the [direction](/api-reference/10%20UI%20Components/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#direction') property is set to *"row"* or *"col"*.
 
-The [baseSize](/api-reference/_hidden/dxBoxItem/baseSize.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#baseSize'), [ratio](/api-reference/_hidden/dxBoxItem/ratio.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#ratio'), and [shrink](/api-reference/_hidden/dxBoxItem/shrink.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#shrink') settings specify an item's size. The **baseSize** defines the item's initial size in pixels. The item's size changes according to **ratio** and **shrink** if the **Box**'s size changes.
+The [baseSize](/api-reference/_hidden/dxBoxItem/baseSize.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#baseSize'), [ratio](/api-reference/_hidden/dxBoxItem/ratio.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#ratio'), and [shrink](/api-reference/_hidden/dxBoxItem/shrink.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#shrink') settings specify an item's size. The **baseSize** defines the item's initial size in pixels. The item's size changes according to **ratio** and **shrink** if the Box's size changes.
 
-An unoccupied area emerges when the **Box** provides more space than the items' **baseSize**s require.
+An unoccupied area emerges when the Box provides more space than the items' **baseSize**s require.
 
 ![DevExtreme Box: Unoccupied area](/images/UiWidgets/Box/Box_baseSize.png)
 
@@ -495,8 +495,8 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
 ---
 
 #####See Also#####
-- [Box - Arrange and Align Items](/concepts/05%20Widgets/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
+- [Box - Arrange and Align Items](/concepts/05%20UI%20Components/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
-- [Box API Reference](/api-reference/10%20UI%20Widgets/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
+- [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
 [tags]box, item size, item height, item width, baseSize, ratio

@@ -1,4 +1,4 @@
-When you open the **Drawer**, it can slide in or expand from the closed position. Use the [revealMode](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/revealMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#revealMode') property to specify this behavior.
+When you open the Drawer, it can slide in or expand from the closed position. Use the [revealMode](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/revealMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#revealMode') property to specify this behavior.
 
 ---
 ##### jQuery
@@ -63,4 +63,4 @@ When you open the **Drawer**, it can slide in or expand from the closed position
 
 ---
 
-Run the code and open the **Drawer**. You should see that the UI component gets wider, but its content stays in place, creating an impression that the **Drawer** expands. 
+Run the code and open the Drawer. You should see that the UI component gets wider, but its content stays in place, creating an impression that the Drawer expands. 

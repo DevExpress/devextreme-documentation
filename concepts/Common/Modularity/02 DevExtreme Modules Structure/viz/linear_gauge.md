@@ -1,8 +1,8 @@
-Exposes the **LinearGauge** UI component.
+Exposes the LinearGauge UI component.
 
 Exports:
 
-- *default* - The [LinearGauge](/api-reference/20%20Data%20Visualization%20Widgets/dxLinearGauge '/Documentation/ApiReference/UI_Components/dxLinearGauge/') UI component
+- *default* - The [LinearGauge](/api-reference/10%20UI%20Components/dxLinearGauge '/Documentation/ApiReference/UI_Components/dxLinearGauge/') UI component
 
         require("viz/linear_gauge");
         // ===== or =====

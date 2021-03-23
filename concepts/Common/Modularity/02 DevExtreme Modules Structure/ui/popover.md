@@ -1,8 +1,8 @@
-Exposes the **Popover** UI component.
+Exposes the Popover UI component.
 
 Exports:
 
-- *default* - The [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/') UI component
+- *default* - The [Popover](/api-reference/10%20UI%20Components/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/') UI component
 
         require("ui/popover");
         // ===== or =====

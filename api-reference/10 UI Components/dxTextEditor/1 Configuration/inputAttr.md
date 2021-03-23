@@ -41,6 +41,49 @@ Specifies the attributes to be passed on to the underlying HTML element.
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}
+            :input-attr="inputAttr"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        data() {
+            return {
+                inputAttr: { id: 'inputId' }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    const inputAttr = { id: 'inputId' };
+
+    export default function App() {
+        return (
+            <{WidgetName}
+                inputAttr={inputAttr}
+            />
+        );
+    }
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->@(Html.DevExtreme().{WidgetName}()

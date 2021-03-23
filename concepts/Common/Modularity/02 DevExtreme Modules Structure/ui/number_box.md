@@ -1,8 +1,8 @@
-Exposes the **NumberBox** UI component.
+Exposes the NumberBox UI component.
 
 Exports:
 
-- *default* - The [NumberBox](/api-reference/10%20UI%20Widgets/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') UI component
+- *default* - The [NumberBox](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') UI component
 
         require("ui/number_box");
         // ===== or =====

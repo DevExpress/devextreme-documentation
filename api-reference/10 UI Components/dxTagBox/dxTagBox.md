@@ -6,7 +6,7 @@ inherits: dxSelectBox
 ---
 ---
 ##### shortDescription
-The **TagBox** UI component is an editor that allows an end user to select multiple items from a drop-down list.
+The TagBox UI component is an editor that allows an end user to select multiple items from a drop-down list.
 
 ##### widgettree
 dataSource: [

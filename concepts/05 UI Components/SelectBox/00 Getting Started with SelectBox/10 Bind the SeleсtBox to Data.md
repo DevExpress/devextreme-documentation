@@ -1,4 +1,4 @@
-To bind the **SelectBox** to data, set the [dataSource](/api-reference/10%20UI%20Widgets/dxAccordion/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#dataSource') and the fields that provide the UI component's value ([valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueExpr')) and displayed value ([displayExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#displayExpr')). In this tutorial, the **SelectBox** is bound to a local array.
+To bind the SelectBox to data, set the [dataSource](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#dataSource') and the fields that provide the UI component's value ([valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueExpr')) and displayed value ([displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#displayExpr')). In this tutorial, the SelectBox is bound to a local array.
 
 ---
 ##### jQuery
@@ -190,4 +190,6 @@ To bind the **SelectBox** to data, set the [dataSource](/api-reference/10%20UI%2
 
 ---
 
-If you run this code and open the **SelectBox**, you will see the the populated drop-down list. Next, we will enable search.
+If you run this code and open the SelectBox, you will see the the populated drop-down list. Next, we will enable search.
+
+[tags] data binding

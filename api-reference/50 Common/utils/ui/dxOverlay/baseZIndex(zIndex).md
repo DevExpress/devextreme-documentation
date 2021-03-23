@@ -20,14 +20,14 @@ The following example demonstrates how to call the method.
     import * as overlay from 'devextreme/ui/overlay';
     overlay.baseZIndex(2000);
 
-By default, the base z-index for all overlay UI components except **Toast** is 1500.
+By default, the base z-index for all overlay UI components except Toast is 1500.
 
-[note]The base z-index for **Toast** UI components is greater than the value specified by this method by 8000. For example, if you pass 2000 to the **baseZIndex** method, the **Toast** base z-index is 10000.
+[note]The base z-index for Toast UI components is greater than the value specified by this method by 8000. For example, if you pass 2000 to the **baseZIndex** method, the Toast base z-index is 10000.
 
 The method affects the following UI components.
 
-- [LoadPanel](/api-reference/10%20UI%20Widgets/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
-- [Popover](/api-reference/10%20UI%20Widgets/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/')
-- [Popup](/api-reference/10%20UI%20Widgets/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
-- [Toast](/api-reference/10%20UI%20Widgets/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')
-- [Tooltip](/api-reference/10%20UI%20Widgets/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
+- [LoadPanel](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
+- [Popover](/api-reference/10%20UI%20Components/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/')
+- [Popup](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
+- [Toast](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')
+- [Tooltip](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')

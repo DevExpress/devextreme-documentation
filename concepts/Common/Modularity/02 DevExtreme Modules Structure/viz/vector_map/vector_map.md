@@ -1,8 +1,8 @@
-Exposes the **VectorMap** UI component.
+Exposes the VectorMap UI component.
 
 Exports:
 
-- *default* - The [VectorMap](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap '/Documentation/ApiReference/UI_Components/dxVectorMap/') UI component
+- *default* - The [VectorMap](/api-reference/10%20UI%20Components/dxVectorMap '/Documentation/ApiReference/UI_Components/dxVectorMap/') UI component
 
         require("viz/vector_map");
         // ===== or =====

@@ -1,10 +1,10 @@
-The **NavBar** is a UI component that navigates the application views. 
+The NavBar is a UI component that navigates the application views. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview/"
 }
 
-The following code adds the **NavBar** to your page. All navigation items have icons and one of them has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/#badge'). 
+The following code adds the NavBar to your page. All navigation items have icons and one of them has a [badge](/api-reference/_hidden/dxTabsItem/badge.md '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/#badge'). 
 
 ---
 ##### jQuery
@@ -50,12 +50,12 @@ The following code adds the **NavBar** to your page. All navigation items have i
 
 ---
 
-Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Widgets/dxTabs/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/'). This provides a default item appearance, which can be customized later.
+Note that field names in these data source items are [conventional](/api-reference/10%20UI%20Components/dxTabs/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxNavBar/Configuration/items/'). This provides a default item appearance, which can be customized later.
 
 #####See Also#####
 #include common-link-configurewidget
-- [NavBar - Customize Item Appearance](/concepts/05%20Widgets/NavBar/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/NavBar/Customize_Item_Appearance')
-- [NavBar - Items Selection](/concepts/05%20Widgets/NavBar/10%20Items%20Selection.md '/Documentation/Guide/UI_Components/NavBar/Items_Selection')
-- [NavBar API Reference](/api-reference/10%20UI%20Widgets/dxNavBar '/Documentation/ApiReference/UI_Components/dxNavBar/')
+- [NavBar - Customize Item Appearance](/concepts/05%20UI%20Components/NavBar/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/NavBar/Customize_Item_Appearance')
+- [NavBar - Items Selection](/concepts/05%20UI%20Components/NavBar/10%20Items%20Selection.md '/Documentation/Guide/UI_Components/NavBar/Items_Selection')
+- [NavBar API Reference](/api-reference/10%20UI%20Components/dxNavBar '/Documentation/ApiReference/UI_Components/dxNavBar/')
 
 [tags]dxnavbar, nav bar, navBar, navigation bar, collection container, collection UI component, navigation, overview

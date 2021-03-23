@@ -5,7 +5,7 @@ inheritsType: dxVectorMapCommonAnnotationConfig
 ---
 ---
 ##### shortDescription
-Specifies settings common for all annotations in the **VectorMap**.
+Specifies settings common for all annotations in the VectorMap.
 
 ---
 Settings specified here can be ignored in favor of individual annotation settings specified in the [annotations[]](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/annotations/) array. Refer to the array's description for information on how to configure annotations.
@@ -122,4 +122,4 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
 }
 
 #####See Also#####
-- [customizeAnnotation](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#customizeAnnotation')
+- [customizeAnnotation](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/customizeAnnotation.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#customizeAnnotation')

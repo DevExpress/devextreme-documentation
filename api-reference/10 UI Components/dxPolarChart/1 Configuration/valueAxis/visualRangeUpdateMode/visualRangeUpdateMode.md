@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies how the axis's [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') should behave when the **PolarChart** data is updated.
+Specifies how the axis's [visual range](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') should behave when the PolarChart data is updated.
 
 ---
 The following modes are available:
@@ -20,4 +20,4 @@ The applied mode changes depending on the visual range's position on the axis:
 The visual range does not change.
 
 - *"reset"*     
-The visual range becomes equal to the [whole range](/api-reference/20%20Data%20Visualization%20Widgets/dxPolarChart/1%20Configuration/valueAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/wholeRange/').
+The visual range becomes equal to the [whole range](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/wholeRange/').

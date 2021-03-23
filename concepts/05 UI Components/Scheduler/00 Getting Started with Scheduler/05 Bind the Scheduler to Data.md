@@ -1,18 +1,18 @@
-The **Scheduler** can load and update data from these data source types:
+The Scheduler can load and update data from these data source types:
 
-* [Local array](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/)
+* [Local array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 
-* [Read-only data in JSON format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
+* [Read-only data in JSON format](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
 
-* [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
+* [OData](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
 
-* [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+* [Web API, PHP, MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/')
 
-* [Custom data sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
+* [Custom data sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 
-Use the [dataSource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource) property to specify a data source. In this tutorial, we use a local array.
+Use the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property to specify a data source. In this tutorial, we use a local array.
 
-Once you assign the data source, you need to map field values to appointment attributes. If data objects include fields that match the [predefined structure](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/), the **Scheduler** recognizes them automatically and displays appointments without further configuration. To map other fields, use **...Expr** properties. In this tutorial, the [startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) and [endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) fields are recognized automatically, whereas other field names are specified in the [textExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#textExpr), [allDayExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr), and [recurrenceRuleExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr) properties.
+Once you assign the data source, you need to map field values to appointment attributes. If data objects include fields that match the [predefined structure](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/'), the Scheduler recognizes them automatically and displays appointments without further configuration. To map other fields, use **...Expr** properties. In this tutorial, the [startDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate') and [endDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate') fields are recognized automatically, whereas other field names are specified in the [textExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/textExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#textExpr'), [allDayExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/allDayExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr'), and [recurrenceRuleExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr') properties.
 
 ---
 ##### jQuery
@@ -334,4 +334,6 @@ Once you assign the data source, you need to map field values to appointment att
 
 ---
 
-Run the code and ensure that the **Scheduler** properly displays all appointments.
+Run the code and ensure that the Scheduler properly displays all appointments.
+
+[tags] data binding

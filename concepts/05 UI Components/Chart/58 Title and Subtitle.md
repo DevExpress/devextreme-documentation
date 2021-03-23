@@ -1,8 +1,8 @@
-Title and subtitle are textual elements that give an idea of what the **Chart** visualizes.
+Title and subtitle are textual elements that give an idea of what the Chart visualizes.
 
 ![DevExtreme HTML5 JavaScript Charts Title Subtitle](/images/ChartJS/visual_elements/chart_title.png)
 
-The title is configured by the [title](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/') object. The subtitle is configured by the [subtitle](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/subtitle/') object nested in the **title** object.
+The title is configured by the [title](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/') object. The subtitle is configured by the [subtitle](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/title/subtitle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/subtitle/') object nested in the **title** object.
 
 ---
 ##### jQuery
@@ -174,7 +174,7 @@ You can set the title's text more concisely by assigning it directly to the **ti
 
 ---
 
-For information about all properties of the title and subtitle, visit the [title](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/') section of the API reference.
+For information about all properties of the title and subtitle, visit the [title](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/title/') section of the API reference.
 
 #####See Also#####
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource)

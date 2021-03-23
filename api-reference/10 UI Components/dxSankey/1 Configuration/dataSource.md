@@ -9,9 +9,9 @@ Binds the UI component to data.
 
 ---
 #include common-dataSource-description with {
-    widget_works_with: "The **Sankey** works with collections of objects.",
+    widget_works_with: "The Sankey works with collections of objects.",
 
-    object_structure_notes: "In each case, also specify the [sourceField](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/sourceField.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#sourceField'), [targetField](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/targetField.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#targetField'), and [weightField](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/weightField.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#weightField') properties.",
+    object_structure_notes: "In each case, also specify the [sourceField](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/sourceField.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#sourceField'), [targetField](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/targetField.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#targetField'), and [weightField](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/weightField.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#weightField') properties.",
 
     array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart)",
 

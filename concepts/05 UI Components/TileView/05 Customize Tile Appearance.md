@@ -1,4 +1,4 @@
-For a minor customization of tiles, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/') in item data objects. For example, the following code generates three tiles: the first is disabled, the second is not customized, the third is hidden.
+For a minor customization of tiles, you can define [specific fields](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/') in item data objects. For example, the following code generates three tiles: the first is disabled, the second is not customized, the third is hidden.
 
 ---
 ##### jQuery
@@ -92,7 +92,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -235,7 +235,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tiles. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate') callback function as shown in the following code:
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tiles. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate') callback function as shown in the following code:
 
 ---
 ##### jQuery
@@ -269,7 +269,7 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
 ---
 
-You can also customize individual tiles. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the tiles as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') property or assign a customization function straight to this property.
+You can also customize individual tiles. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the tiles as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') property or assign a customization function straight to this property.
 
 ---
 ##### jQuery
@@ -374,14 +374,14 @@ You can also customize individual tiles. In Angular, Vue, and React, declare the
 
 ---
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 <a href="/Demos/WidgetsGallery/Demo/Tile_View/ItemTemplate/" class="button orange small fix-width-155" style="margin-right: 5px; width:240px" target="_blank">View Built-In Template Engine Demo</a>
 <a href="/Demos/WidgetsGallery/Demo/Tile_View/Item3RdPartyEngineTemplate/" class="button orange small fix-width-155" style="margin-right: 20px; width:240px" target="_blank">View 3rd-Party Template Engine Demo</a>
 
 #####See Also#####
-- [TileView - Specify the Size of Tiles](/concepts/05%20Widgets/TileView/03%20Specify%20the%20Size%20of%20Tiles.md '/Documentation/Guide/UI_Components/TileView/Specify_the_Size_of_Tiles')
+- [TileView - Specify the Size of Tiles](/concepts/05%20UI%20Components/TileView/03%20Specify%20the%20Size%20of%20Tiles.md '/Documentation/Guide/UI_Components/TileView/Specify_the_Size_of_Tiles')
 - [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview)
-- [TileView API Reference](/api-reference/10%20UI%20Widgets/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
+- [TileView API Reference](/api-reference/10%20UI%20Components/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
 [tags]tile view, tileView, item appearance, tile appearance, customize, templates, template, custom template

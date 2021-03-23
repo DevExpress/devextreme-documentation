@@ -1,4 +1,4 @@
-This type of store is great when you need a simple data source with the data lifetime equaling the lifetime of your application. An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') is created from an array of plain objects. The code snippet below illustrates the minimal configuration of an ArrayStore that can be used to provide data for the **PivotGrid** UI component.
+This type of store is great when you need a simple data source with the data lifetime equaling the lifetime of your application. An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/') is created from an array of plain objects. The code snippet below illustrates the minimal configuration of an ArrayStore that can be used to provide data for the PivotGrid UI component.
 
 	<!--JavaScript-->var pivotGridDataSource = {
 		store: {
@@ -32,7 +32,7 @@ This type of store is great when you need a simple data source with the data lif
 		}
 	};
 
-After you have created a data source configuration object, you need to bind it to your grid. Refer to the [Bind Data](/concepts/05%20Widgets/PivotGrid/030%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/PivotGrid/Data_Binding/#Bind_Data') section to learn how to do this.
+After you have created a data source configuration object, you need to bind it to your grid. Refer to the [Bind Data](/concepts/05%20UI%20Components/PivotGrid/030%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/PivotGrid/Data_Binding/#Bind_Data') section to learn how to do this.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/LocalDataSource/"

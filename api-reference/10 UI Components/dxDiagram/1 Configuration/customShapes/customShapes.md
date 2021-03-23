@@ -10,7 +10,7 @@ Provide access to an array of custom shapes.
 ---
 Use the **customShapes** property to extend a collection of built-in shapes with custom shapes.
 
-Use the [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/') property to add the custom shapes to the toolbox.
+Use the [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/') property to add the custom shapes to the toolbox.
 
 ---
 ##### jQuery
@@ -279,4 +279,4 @@ Use the [toolbox](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/t
 }
 
 #####See Also#####
-- [Custom Shapes](/Documentation/Guide/UI_Components/Diagram/Custom_Shapes/)
+- [Custom Shapes](/concepts/05%20UI%20Components/Diagram/20%20Custom%20Shapes '/Documentation/Guide/UI_Components/Diagram/Custom_Shapes/')

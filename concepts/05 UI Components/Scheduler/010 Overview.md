@@ -37,8 +37,8 @@ The following code adds the Scheduler UI component to your page. The simplest co
                 endDate: new Date("2016-4-25T11:30:00.000Z")
             }, {
                 text: "Book Flights to San Fran for Sales Trip",
-                startDate: new Date("2016-4-25T12:0:00.000Z"),
-                endDate: new Date("2016-4-25T13:0:00.000Z")
+                startDate: new Date("2016-4-25T12:00:00.000Z"),
+                endDate: new Date("2016-4-25T13:00:00.000Z")
             }, 
             // ...
             ],
@@ -64,8 +64,8 @@ The following code adds the Scheduler UI component to your page. The simplest co
             endDate: new Date("2016-4-25T3:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date("2016-4-25T9:0:00.000Z"),
-            endDate: new Date("2016-4-25T10:0:00.000Z")
+            startDate: new Date("2016-4-25T9:00:00.000Z"),
+            endDate: new Date("2016-4-25T10:00:00.000Z")
         }, 
         // ...
         ];
@@ -107,8 +107,8 @@ The following code adds the Scheduler UI component to your page. The simplest co
                     endDate: new Date("2016-4-25T11:30:00.000Z")
                 }, {
                     text: "Book Flights to San Fran for Sales Trip",
-                    startDate: new Date("2016-4-25T12:0:00.000Z"),
-                    endDate: new Date("2016-4-25T13:0:00.000Z")
+                    startDate: new Date("2016-4-25T12:00:00.000Z"),
+                    endDate: new Date("2016-4-25T13:00:00.000Z")
                 }, 
                 // ...
                 ]
@@ -133,8 +133,8 @@ The following code adds the Scheduler UI component to your page. The simplest co
         endDate: new Date("2016-4-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date("2016-4-25T12:0:00.000Z"),
-        endDate: new Date("2016-4-25T13:0:00.000Z")
+        startDate: new Date("2016-4-25T12:00:00.000Z"),
+        endDate: new Date("2016-4-25T13:00:00.000Z")
     }, 
     // ...
     ];
@@ -185,12 +185,12 @@ If your appointments have a different structure, specify:
         $("#schedulerContainer").dxScheduler({
             dataSource: [{ 
                 subject: 'Meet with a customer', 
-                from: new Date("2016-4-10T11:0:00.000Z"), 
-                to: new Date("2016-4-10T13:0:00.000Z") 
+                from: new Date("2016-4-10T11:00:00.000Z"), 
+                to: new Date("2016-4-10T13:00:00.000Z") 
             }, { 
                 subject: 'Discuss results', 
-                from: new Date("2016-5-11T12:0:00.000Z"), 
-                to: new Date("2016-4-11T13:0:00.000Z") 
+                from: new Date("2016-5-11T12:00:00.000Z"), 
+                to: new Date("2016-4-11T13:00:00.000Z") 
             }, 
             // ...
             ],
@@ -217,12 +217,12 @@ If your appointments have a different structure, specify:
     export class AppComponent  {
         appointments = [{ 
             subject: 'Meet with a customer', 
-            from: new Date("2016-4-25T1:0:00.000Z"), 
-            to: new Date("2016-4-25T3:0:00.000Z") 
+            from: new Date("2016-4-25T1:00:00.000Z"), 
+            to: new Date("2016-4-25T3:00:00.000Z") 
         }, { 
             subject: 'Discuss results', 
-            from: new Date("2016-5-25T9:0:00.000Z"), 
-            to: new Date("2016-4-25T10:0:00.000Z") 
+            from: new Date("2016-5-25T9:00:00.000Z"), 
+            to: new Date("2016-4-25T10:00:00.000Z") 
         }, 
         // ...
         ];
@@ -262,12 +262,12 @@ If your appointments have a different structure, specify:
                 currentDate: new Date(2016, 4, 25),
                 dataSource: [{ 
                     subject: 'Meet with a customer', 
-                    from: new Date("2016-4-10T11:0:00.000Z"), 
-                    to: new Date("2016-4-10T13:0:00.000Z") 
+                    from: new Date("2016-4-10T11:00:00.000Z"), 
+                    to: new Date("2016-4-10T13:00:00.000Z") 
                 }, { 
                     subject: 'Discuss results', 
-                    from: new Date("2016-5-11T12:0:00.000Z"), 
-                    to: new Date("2016-4-11T13:0:00.000Z") 
+                    from: new Date("2016-5-11T12:00:00.000Z"), 
+                    to: new Date("2016-4-11T13:00:00.000Z") 
                 }, 
                 // ...
                 ]
@@ -288,12 +288,12 @@ If your appointments have a different structure, specify:
 
     const data = [{ 
         subject: 'Meet with a customer', 
-        from: new Date("2016-4-10T11:0:00.000Z"), 
-        to: new Date("2016-4-10T13:0:00.000Z") 
+        from: new Date("2016-4-10T11:00:00.000Z"), 
+        to: new Date("2016-4-10T13:00:00.000Z") 
     }, { 
         subject: 'Discuss results', 
-        from: new Date("2016-5-11T12:0:00.000Z"), 
-        to: new Date("2016-4-11T13:0:00.000Z") 
+        from: new Date("2016-5-11T12:00:00.000Z"), 
+        to: new Date("2016-4-11T13:00:00.000Z") 
     }, 
     // ...
     ];

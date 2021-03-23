@@ -11,8 +11,8 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
         endDate: new Date("2016-4-25T3:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date("2016-4-25T9:0:00.000Z"),
-        endDate: new Date("2016-4-25T10:0:00.000Z")
+        startDate: new Date("2016-4-25T9:00:00.000Z"),
+        endDate: new Date("2016-4-25T10:00:00.000Z")
     }, // ...
     ];
 
@@ -34,8 +34,8 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
             endDate: new Date("2016-4-25T3:30:00.000Z")
         }, {
             text: "Discuss results",
-            startDate: new Date("2016-4-25T9:0:00.000Z"),
-            endDate: new Date("2016-4-25T10:0:00.000Z")
+            startDate: new Date("2016-4-25T9:00:00.000Z"),
+            endDate: new Date("2016-4-25T10:00:00.000Z")
         }];
     }
     @NgModule({
@@ -80,8 +80,8 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
                     endDate: new Date("2016-4-25T3:30:00.000Z")
                 }, { 
                     text: 'Discuss results', 
-                    startDate: new Date("2016-4-25T9:0:00.000Z"),
-                    endDate: new Date("2016-4-25T10:0:00.000Z")
+                    startDate: new Date("2016-4-25T9:00:00.000Z"),
+                    endDate: new Date("2016-4-25T10:00:00.000Z")
                 }, // ...
                 ];
             }
@@ -105,8 +105,8 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
         endDate: new Date("2016-4-25T3:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date("2016-4-25T9:0:00.000Z"),
-        endDate: new Date("2016-4-25T10:0:00.000Z")
+        startDate: new Date("2016-4-25T9:00:00.000Z"),
+        endDate: new Date("2016-4-25T10:00:00.000Z")
     }, // ...
     ];
 
@@ -137,8 +137,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     <!--JavaScript-->
     var appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date("2016-4-10T11:0:00.000Z"), 
-        endDate: new Date("2016-4-10T13:0:00.000Z") 
+        startDate: new Date("2016-4-10T11:00:00.000Z"), 
+        endDate: new Date("2016-4-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -160,8 +160,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     export class AppComponent {
         appointments = [{ 
             text: 'Meet with a customer', 
-            startDate: new Date("2016-4-10T11:0:00.000Z"), 
-            endDate: new Date("2016-4-10T13:0:00.000Z") 
+            startDate: new Date("2016-4-10T11:00:00.000Z"), 
+            endDate: new Date("2016-4-10T13:00:00.000Z") 
         }, 
         // ...
         ];
@@ -201,8 +201,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date("2016-4-10T11:0:00.000Z"), 
-        endDate: new Date("2016-4-10T13:0:00.000Z") 
+        startDate: new Date("2016-4-10T11:00:00.000Z"), 
+        endDate: new Date("2016-4-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -234,8 +234,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date("2016-4-10T11:0:00.000Z"), 
-        endDate: new Date("2016-4-10T13:0:00.000Z") 
+        startDate: new Date("2016-4-10T11:00:00.000Z"), 
+        endDate: new Date("2016-4-10T13:00:00.000Z") 
     }, 
     // ...
     ];

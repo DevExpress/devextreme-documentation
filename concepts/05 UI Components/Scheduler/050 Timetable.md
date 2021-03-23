@@ -13,8 +13,8 @@ The Scheduler UI component allows you to customize its timetable. You can specif
                 endDate: new Date("2016-4-25T11:30:00.000Z")
             }, {
                 text: "Book Flights to San Fran for Sales Trip",
-                startDate: new Date("2016-4-25T12:0:00.000Z"),
-                endDate: new Date("2016-4-25T13:0:00.000Z")
+                startDate: new Date("2016-4-25T12:00:00.000Z"),
+                endDate: new Date("2016-4-25T13:00:00.000Z")
             }, 
             // ...
             ],
@@ -48,8 +48,8 @@ The Scheduler UI component allows you to customize its timetable. You can specif
             endDate: new Date("2016-4-25T11:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date("2016-4-25T12:0:00.000Z"),
-            endDate: new Date("2016-4-25T13:0:00.000Z")
+            startDate: new Date("2016-4-25T12:00:00.000Z"),
+            endDate: new Date("2016-4-25T13:00:00.000Z")
         }, 
         // ...
         ];
@@ -95,8 +95,8 @@ The Scheduler UI component allows you to customize its timetable. You can specif
                     endDate: new Date("2016-4-25T11:30:00.000Z")
                 }, {
                     text: 'Book Flights to San Fran for Sales Trip',
-                    startDate: new Date("2016-4-25T12:0:00.000Z"),
-                    endDate: new Date("2016-4-25T13:0:00.000Z")
+                    startDate: new Date("2016-4-25T12:00:00.000Z"),
+                    endDate: new Date("2016-4-25T13:00:00.000Z")
                 },
                 // ...
                 ],
@@ -121,8 +121,8 @@ The Scheduler UI component allows you to customize its timetable. You can specif
         endDate: new Date("2016-4-25T11:30:00.000Z")
     }, {
         text: 'Book Flights to San Fran for Sales Trip',
-        startDate: new Date("2016-4-25T12:0:00.000Z"),
-        endDate: new Date("2016-4-25T13:0:00.000Z")
+        startDate: new Date("2016-4-25T12:00:00.000Z"),
+        endDate: new Date("2016-4-25T13:00:00.000Z")
     },
     // ...
     ];

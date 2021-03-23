@@ -33,7 +33,7 @@ The following code adds the Scheduler UI component to your page. The simplest co
         $("#schedulerContainer").dxScheduler({
             dataSource: [{
                 text: "Website Re-Design Plan",
-                startDate: new Date("2016-4-25T09:30:00.000Z"),
+                startDate: new Date("2016-04-25T09:30:00.000Z"),
                 endDate: new Date("2016-4-25T11:30:00.000Z")
             }, {
                 text: "Book Flights to San Fran for Sales Trip",

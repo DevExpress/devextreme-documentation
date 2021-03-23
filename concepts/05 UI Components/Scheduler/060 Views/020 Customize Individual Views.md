@@ -171,7 +171,7 @@ The following code defines three views: the first is not customized, the second 
     const schedulerData = [{
         text: 'Google AdWords Strategy',
         ownerId: [2],
-        startDate: new Date("2016-1-1T09:00:00.000Z"),
+        startDate: new Date("2016-01-01T09:00:00.000Z"),
         endDate: new Date("2016-1-1T10:30:00.000Z")
     }, {
         text: 'New Brochures',

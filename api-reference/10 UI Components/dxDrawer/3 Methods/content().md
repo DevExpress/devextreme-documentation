@@ -10,4 +10,4 @@ The drawer's content. It is an <a href="https://developer.mozilla.org/en-US/docs
 
 ---
 #####See Also#####
-- [template](/api-reference/10%20UI%20Widgets/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template')
+- [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template')

@@ -4,7 +4,7 @@ The Autocomplete UI component is a textbox that provides suggestions while a use
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview/"
 }
 
-The following code adds the Autocomplete to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Widgets/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#placeholder') to be displayed when the Autocomplete is empty.
+The following code adds the Autocomplete to your page. The simplest configuration of the UI component requires only a [dataSource](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource') to be specified. In addition, you can specify the [placeholder](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#placeholder') to be displayed when the Autocomplete is empty.
 
 ---
 ##### jQuery
@@ -109,7 +109,7 @@ The following code adds the Autocomplete to your page. The simplest configuratio
 
 ---
 
-If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%20Widgets/dxAutocomplete/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr') property to specify the field providing suggestions.
+If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr') property to specify the field providing suggestions.
 
 ---
 ##### jQuery
@@ -216,7 +216,7 @@ If your data is an array of objects, use the [valueExpr](/api-reference/10%20UI%
 
 ---
 
-Usually, the data field that provides suggestions is the same data field that is searched for the typed text. If in your case, it is two different fields: assign the field providing suggestions to the **valueExpr** property and the field to be searched - to the [searchExpr](/api-reference/10%20UI%20Widgets/dxDropDownList/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchExpr') property. Note that **searchExpr** also accepts arrays in case you need several fields to search in.
+Usually, the data field that provides suggestions is the same data field that is searched for the typed text. If in your case, it is two different fields: assign the field providing suggestions to the **valueExpr** property and the field to be searched - to the [searchExpr](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchExpr') property. Note that **searchExpr** also accepts arrays in case you need several fields to search in.
 
 ---
 ##### jQuery
@@ -329,8 +329,8 @@ Usually, the data field that provides suggestions is the same data field that is
 
 #####See Also#####
 #include common-link-configurewidget
-- [Autocomplete - Customize Item Appearance](/concepts/05%20Widgets/Autocomplete/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Autocomplete/Customize_Item_Appearance')
-- [Autocomplete - Configure Search Parameters](/concepts/05%20Widgets/Autocomplete/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Autocomplete/Configure_Search_Parameters')
-- [Autocomplete API Reference](/api-reference/10%20UI%20Widgets/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
+- [Autocomplete - Customize Item Appearance](/concepts/05%20UI%20Components/Autocomplete/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Autocomplete/Customize_Item_Appearance')
+- [Autocomplete - Configure Search Parameters](/concepts/05%20UI%20Components/Autocomplete/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Autocomplete/Configure_Search_Parameters')
+- [Autocomplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 
 [tags]dxautocomplete, autocomplete, collection container, collection UI component, editor, overview, data source

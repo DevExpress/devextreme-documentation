@@ -10,10 +10,10 @@ A function that is executed when resizing ends.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxResizable
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -22,7 +22,7 @@ The UI component's instance.
 ##### field(e.height): Number
 The current UI component height.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.width): Number

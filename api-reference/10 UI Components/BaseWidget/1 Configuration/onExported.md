@@ -13,13 +13,13 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ---
 #####See Also#####
-- [onExporting](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExporting.md '{basewidgetpath}/Configuration#onExporting')
-- [onFileSaving](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')
+- [onExporting](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onExporting.md '{basewidgetpath}/Configuration#onExporting')
+- [onFileSaving](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')

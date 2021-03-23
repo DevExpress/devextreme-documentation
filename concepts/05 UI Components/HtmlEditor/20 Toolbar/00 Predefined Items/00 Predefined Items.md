@@ -14,8 +14,8 @@ The following table lists toolbar items and the formats they apply (if applicabl
 <table class="dx-table">
     <tr>
         <th>Toolbar Item</th>
-        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName">formatName</a></th>
-        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues">formatValue</a></th>
+        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name">name</a></th>
+        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#acceptedValues">acceptedValue</a></th>
     </tr>
     <tr>
         <td>"background"</td>
@@ -149,7 +149,7 @@ The following table lists toolbar items and the formats they apply (if applicabl
     </tr>
 </table>
  
-To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') array:
+To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') array:
  
 ---
 ##### jQuery
@@ -168,10 +168,10 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
     <!--HTML-->
     <dx-html-editor>
         <dxo-toolbar>
-            <dxi-item formatName="bold"/>
-            <dxi-item formatName="italic"/>
-            <dxi-item formatName="alignRight"/>
-            <dxi-item formatName="alignLeft"/>
+            <dxi-item name="bold"/>
+            <dxi-item name="italic"/>
+            <dxi-item name="alignRight"/>
+            <dxi-item name="alignLeft"/>
         </dxo-toolbar>
     </dx-html-editor>
 
@@ -194,10 +194,10 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
     <template>
         <DxHtmlEditor>
             <DxToolbar>
-                <DxItem format-name="bold"/>
-                <DxItem format-name="italic"/>
-                <DxItem format-name="alignRight"/>
-                <DxItem format-name="alignLeft"/>
+                <DxItem name="bold"/>
+                <DxItem name="italic"/>
+                <DxItem name="alignRight"/>
+                <DxItem name="alignLeft"/>
             </DxToolbar>
         </DxHtmlEditor>
     </template>
@@ -232,10 +232,10 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
             return (
                 <HtmlEditor>
                     <Toolbar>
-                        <Item formatName="bold"/>
-                        <Item formatName="italic"/>
-                        <Item formatName="alignRight"/>
-                        <Item formatName="alignLeft"/>
+                        <Item name="bold"/>
+                        <Item name="italic"/>
+                        <Item name="alignRight"/>
+                        <Item name="alignLeft"/>
                     </Toolbar>
                 </HtmlEditor>
             );
@@ -251,17 +251,17 @@ To add a button to the toolbar, add its [name](/concepts/05%20Widgets/HtmlEditor
         .ID("htmlEditor")
         .Toolbar(t => t
             .Items(i => {
-                i.Add().FormatName("bold");
-                i.Add().FormatName("italic");
-                i.Add().FormatName("alignRight");
-                i.Add().FormatName("alignLeft");
+                i.Add().Name("bold");
+                i.Add().Name("italic");
+                i.Add().Name("alignRight");
+                i.Add().Name("alignLeft");
             })
         )
     )
 
 ---
  
-To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName') and [formatValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatValues.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues'):
+To add a select box, specify the [name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name') and [acceptedValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/acceptedValues.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#acceptedValues'):
  
 ---
 ##### jQuery
@@ -271,11 +271,11 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
         $("#htmlEditorContainer").dxHtmlEditor({
             toolbar: {
                 items: [{
-                    formatName: "header",
-                    formatValues: [1, 2, 3, false]
+                    name: "header",
+                    acceptedValues: [1, 2, 3, false]
                 }, {
-                    formatName: "align",
-                    formatValues: ["left", "right", "center"]
+                    name: "align",
+                    acceptedValues: ["left", "right", "center"]
                 }]
             }
         })
@@ -287,12 +287,12 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
     <dx-html-editor>
         <dxo-toolbar>
             <dxi-item
-                [formatValues]="headerFormatValues"
-                formatName="header"
+                [acceptedValues]="headerAcceptedValues"
+                name="header"
             />
             <dxi-item
-                [formatValues]="alignFormatValues"
-                formatName="align"
+                [acceptedValues]="alignAcceptedValues"
+                name="align"
             />
         </dxo-toolbar>
     </dx-html-editor>
@@ -301,8 +301,8 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        headerFormatValues =  [1, 2, 3, false];
-        alignFormatValues = ["left", "right", "center"];
+        headerAcceptedValues =  [1, 2, 3, false];
+        alignAcceptedValues = ["left", "right", "center"];
     }
     @NgModule({
         imports: [
@@ -318,12 +318,12 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
         <DxHtmlEditor>
             <DxToolbar>
                 <DxItem
-                    :format-values="headerFormatValues"
-                    format-name="header"
+                    :accepted-values="headerAcceptedValues"
+                    name="header"
                 />
                 <DxItem
-                    :format-values="alignFormatValues"
-                    format-name="align"
+                    :accepted-values="alignAcceptedValues"
+                    name="align"
                 />
             </DxToolbar>
         </DxHtmlEditor>
@@ -346,8 +346,8 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
         },
         data() {
             return {
-                headerFormatValues: [1, 2, 3, false],
-                alignFormatValues: ['left', 'right', 'center']
+                headerAcceptedValues: [1, 2, 3, false],
+                alignAcceptedValues: ['left', 'right', 'center']
             };
         }
     }
@@ -360,8 +360,8 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 
-    const headerFormatValues = [1, 2, 3, false];
-    const alignFormatValues = ['left', 'right', 'center'];
+    const headerAcceptedValues = [1, 2, 3, false];
+    const alignAcceptedValues = ['left', 'right', 'center'];
 
     class App extends React.Component {
         render() {
@@ -369,12 +369,12 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
                 <HtmlEditor>
                     <Toolbar>
                         <Item
-                            formatValues={headerFormatValues}
-                            formatName="header"
+                            acceptedValues={headerAcceptedValues}
+                            name="header"
                         />
                         <Item
-                            formatValues={alignFormatValues}
-                            formatName="align"
+                            acceptedValues={alignAcceptedValues}
+                            name="align"
                         />
                     </Toolbar>
                 </HtmlEditor>
@@ -390,10 +390,10 @@ To add a select box, specify the [formatName](/api-reference/_hidden/dxHtmlEdito
     @(Html.DevExtreme().HtmlEditor()
         .Toolbar(t => t
             .Items(i => {
-                i.Add().FormatName("header")
-                    .FormatValues(new JS ("[1, 2, 3, false]"));
-                i.Add().FormatName("align")
-                    .FormatValues(new[] { "left", "right", "center" })
+                i.Add().Name("header")
+                    .AcceptedValues(new JS ("[1, 2, 3, false]"));
+                i.Add().Name("align")
+                    .AcceptedValues(new[] { "left", "right", "center" })
             })
         )
     )

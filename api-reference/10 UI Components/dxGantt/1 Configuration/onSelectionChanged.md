@@ -10,13 +10,13 @@ A function that is executed after users select a task or clear its selection.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.selectedRowKey): any
@@ -152,6 +152,6 @@ The key of the row whose selection state was changed.
 ---
 
 #####See Also#####
-- [selectionChanged](/Documentation/ApiReference/UI_Components/dxGantt/Events/#selectionChanged)
-- [allowSelection](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/allowSelection.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowSelection') 
-- [selectedRowKey](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/selectedRowKey.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#selectedRowKey')
+- [selectionChanged](/api-reference/10%20UI%20Components/dxGantt/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#selectionChanged')
+- [allowSelection](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/allowSelection.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowSelection') 
+- [selectedRowKey](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/selectedRowKey.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#selectedRowKey')

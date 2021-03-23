@@ -1,4 +1,4 @@
-Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array to configure all form items. This array can contain strings (**formData** field names) and objects (item configurations). Use a string to create a label-editor pair (a [simple item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/)) with default configuration. To change the default settings, declare an item configuration object: specify the [dataField](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField) and other properties. The example below configures the `HireDate` item:
+Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array to configure all form items. This array can contain strings (**formData** field names) and objects (item configurations). Use a string to create a label-editor pair (a [simple item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/')) with default configuration. To change the default settings, declare an item configuration object: specify the [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') and other properties. The example below configures the `HireDate` item:
 
 ---
 ##### jQuery
@@ -89,7 +89,6 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
@@ -122,7 +121,6 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

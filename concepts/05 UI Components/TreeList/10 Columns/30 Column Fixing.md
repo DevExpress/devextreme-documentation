@@ -2,7 +2,7 @@ In some cases, the UI component contains so many columns that they cause horizon
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnFixing](/images/treelist/visual_elements/column_fixing.png)
 
-To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/#enabled') property to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowFixing') property to **false**.
+To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/#enabled') property to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowFixing') property to **false**.
 
 ---
 ##### jQuery
@@ -40,6 +40,55 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Widge
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumnFixing :enabled="true" />
+            <DxColumn :allow-fixing="false" ... />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn,
+        DxColumnFixing
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxColumnFixing
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column,
+        ColumnFixing
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <ColumnFixing enabled={true} />
+                <Column allowFixing={false} ... />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -78,16 +127,61 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn :fixed="true" fixed-position="left" ... />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn,
+            DxColumnFixing
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column fixed={true} fixedPosition="left" ... />
+            </TreeList>
+        );
+    }
     
 ---
 
-[note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** property, [command columns](/concepts/05%20Widgets/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/') become fixed automatically.
+[note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** property, [command columns](/concepts/05%20UI%20Components/TreeList/10%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/') become fixed automatically.
 
-Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') property is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
+Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') property is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/ColumnFixing/"
 }
 
 #####See Also#####
-- [Adaptability](/concepts/05%20Widgets/TreeList/10%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')
+- [Adaptability](/concepts/05%20UI%20Components/TreeList/10%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')

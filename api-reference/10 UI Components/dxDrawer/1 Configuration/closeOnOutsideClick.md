@@ -36,7 +36,7 @@ The function passed to this property enables you to specify a custom condition f
     // ...
     export class AppComponent {
         // ...
-        drawer_closeOnOutsideClick(e) {
+        closeOnOutsideClick(e) {
             return e.target === document.getElementById("someElement");
         }
     }
@@ -50,7 +50,53 @@ The function passed to this property enables you to specify a custom condition f
 
     <!--HTML-->
     <dx-drawer ...
-        [closeOnOutsideClick]="drawer_closeOnOutsideClick">
+        [closeOnOutsideClick]="closeOnOutsideClick">
     </dx-drawer>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDrawer ....
+            :close-on-outside-click="closeOnOutsideClick">
+        </DxDrawer>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDrawer from 'devextreme-vue/drawer';
+
+    export default {
+        components: {
+            DxDrawer
+        },
+        methods: {
+            closeOnOutsideClick (e) {
+                return e.target === document.getElementById("someElement");
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Drawer from 'devextreme-react/drawer';
+
+    const closeOnOutsideClick = (e) => {
+        return e.target === document.getElementById("someElement");
+    };
+
+    export default function App() {
+        return (
+            <Drawer ...
+                closeOnOutsideClick={closeOnOutsideClick}>
+            </Drawer>
+        );
+    }
 
 ---

@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, [markerTemplate](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/legend/markerTemplate.md '{basewidgetpath}/Configuration/legend/#markerTemplate')).
+A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, [markerTemplate](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/legend/markerTemplate.md '{basewidgetpath}/Configuration/legend/#markerTemplate')).
 
 ##### param(svg): SVGElement
 An SVG element that will be parsed.

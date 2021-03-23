@@ -10,7 +10,7 @@ Specifies the hint that appears when a user hovers the mouse pointer over a lege
 Information on the funnel item and its corresponding legend item.
 
 ##### field(itemInfo.item): dxFunnelItem
-The [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') object.
+The [Item](/api-reference/10%20UI%20Components/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') object.
 
 ##### field(itemInfo.text): String
 The legend item's text.

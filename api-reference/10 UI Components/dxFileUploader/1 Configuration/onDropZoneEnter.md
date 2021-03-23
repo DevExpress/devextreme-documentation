@@ -10,19 +10,19 @@ A function that is executed when the mouse enters a drop zone while dragging a f
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxFileUploader
 The UI component's instance.
 
 ##### field(e.dropZoneElement): dxElement
 A drop zone element.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ---
@@ -32,4 +32,4 @@ Model data. Available only if Knockout is used.
 }
 
 #####See Also#####
-- [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone)
+- [dropZone](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/dropZone.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone')

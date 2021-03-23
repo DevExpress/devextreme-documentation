@@ -35,7 +35,7 @@ If you need to sort fields by summary values, set the field's [sortBySummaryFiel
         }
     };
     
-The code snippet above will sort the *"Region"* field by [Grand Totals](/concepts/05%20Widgets/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals'). To sort the same field by Totals of a specific column, specify the path to this column using the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortBySummaryPath.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryPath') property. For example, the following code will sort the *"Region"* field by Totals of the *"2015"* column.
+The code snippet above will sort the *"Region"* field by [Grand Totals](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/05%20Totals '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals'). To sort the same field by Totals of a specific column, specify the path to this column using the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortBySummaryPath.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortBySummaryPath') property. For example, the following code will sort the *"Region"* field by Totals of the *"2015"* column.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
@@ -57,7 +57,7 @@ The code snippet above will sort the *"Region"* field by [Grand Totals](/concept
         }
     };
 
-In case you want to make initially set sorting impossible for the end-user to change, assign **false** to the [allowSorting](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') and/or [allowSortingBySummary](/api-reference/10%20UI%20Widgets/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSortingBySummary') properties.
+In case you want to make initially set sorting impossible for the end-user to change, assign **false** to the [allowSorting](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/allowSorting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSorting') and/or [allowSortingBySummary](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/allowSortingBySummary.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowSortingBySummary') properties.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

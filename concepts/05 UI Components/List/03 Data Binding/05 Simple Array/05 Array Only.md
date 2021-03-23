@@ -1,4 +1,4 @@
-To bind the List to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Widgets/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource') property. The array may contain primitive values...
+To bind the List to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource') property. The array may contain primitive values...
 
 ---
 ##### jQuery
@@ -154,8 +154,8 @@ If objects in an array need to be processed (sorted, filtered, grouped, etc.), y
 #####See Also#####
 - [Data Layer - Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')
 - [List - Bind to the ArrayStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
-- [List - Access the DataSource](/concepts/05%20Widgets/List/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/List/Data_Binding/Access_the_DataSource/')
+- [List - Access the DataSource](/concepts/05%20UI%20Components/List/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/List/Data_Binding/Access_the_DataSource/')
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, data binding, provide data, array, process data, query

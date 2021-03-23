@@ -9,7 +9,7 @@ Specifies whether nodes and links change their style when they are hovered over 
 
 ---
 #####See Also#####
-- **node**.[hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/node/hoverStyle '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/hoverStyle/')
-- **link**.[hoverStyle](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/hoverStyle '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/hoverStyle/')
-- [onNodeHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/onNodeHoverChanged.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#onNodeHoverChanged')
-- [onLinkHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/onLinkHoverChanged.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#onLinkHoverChanged')
+- **node**.[hoverStyle](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/node/hoverStyle '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/node/hoverStyle/')
+- **link**.[hoverStyle](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/link/hoverStyle '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/hoverStyle/')
+- [onNodeHoverChanged](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/onNodeHoverChanged.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#onNodeHoverChanged')
+- [onLinkHoverChanged](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/onLinkHoverChanged.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/#onLinkHoverChanged')

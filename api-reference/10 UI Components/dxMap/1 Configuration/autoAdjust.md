@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether the UI component automatically adjusts [center](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/center '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#center') and [zoom](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/zoom.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom') property values when adding a new marker or route, or if a new UI component contains markers or routes by default.
+Specifies whether the UI component automatically adjusts [center](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/center '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#center') and [zoom](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/zoom.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom') property values when adding a new marker or route, or if a new UI component contains markers or routes by default.
 
 ---
 If **autoAdjust** is enabled, **zoom** is set to the maximum value allowing all markers and routes to be displayed at the same time. The **center** is changed so that markers and routes are aligned with the UI component's center. Set the **autoAdjust** property to **false** to disable this behavior.

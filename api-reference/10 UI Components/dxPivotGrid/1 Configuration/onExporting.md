@@ -13,16 +13,16 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel exporting.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxPivotGrid
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
 The name of the file to which data is about to be exported.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ---

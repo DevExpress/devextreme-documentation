@@ -11,7 +11,7 @@ The **XmlaStore** is a store that provides an interface for accessing an OLAP cu
 dx.web.js, dx.all.js
 
 ---
-The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') which, in turn, is used in the [PivotGrid](/api-reference/10%20UI%20Widgets/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/') UI component.
+The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') which, in turn, is used in the [PivotGrid](/api-reference/10%20UI%20Components/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/') UI component.
 
 ---
 ##### jQuery  
@@ -198,7 +198,7 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
 
 ---
 
-The **XmlaStore** currently supports only the Microsoft Analysis Services OLAP tool. Refer to the <a href="https://docs.microsoft.com/en-us/sql/analysis-services/multidimensional-modeling-adventure-works-tutorial?view=sql-analysis-services-2017" target="_blank">Multidimensional Modeling</a> tutorial for more information on it. To learn how to configure HTTP access to Analysis Services on IIS, see <a href="https://docs.microsoft.com/en-us/sql/analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0?view=sql-analysis-services-2017" target="_blank">this article</a>.
+The **XmlaStore** currently supports only the Microsoft Analysis Services OLAP tool. Refer to the <a href="https://docs.microsoft.com/en-us/analysis-services/multidimensional-tutorial/multidimensional-modeling-adventure-works-tutorial?view=asallproducts-allversions" target="_blank">Multidimensional Modeling</a> tutorial for more information on it. To learn how to configure HTTP access to Analysis Services on IIS, see <a href="https://docs.microsoft.com/en-us/sql/analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0?view=sql-analysis-services-2017" target="_blank">this article</a>.
 
 #include datalayer-store-note-immutable with { name: "XmlaStore" }
 

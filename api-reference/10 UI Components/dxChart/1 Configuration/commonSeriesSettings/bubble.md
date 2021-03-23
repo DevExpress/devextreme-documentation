@@ -4,6 +4,6 @@ type: any
 ---
 ---
 ##### shortDescription
-Defines common settings for all [*bubble* series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/').
+Defines common settings for all [*bubble* series](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/').
 
 ---

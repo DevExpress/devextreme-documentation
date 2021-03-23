@@ -16,7 +16,7 @@ Allows you to prevent exporting.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
@@ -25,10 +25,10 @@ The name of the file to which the UI component is about to be exported.
 ##### field(e.format): String
 The resulting file format. One of PNG, PDF, JPEG, SVG and GIF.
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ---
 #####See Also#####
-- [onExported](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
-- [onFileSaving](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')
+- [onExported](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
+- [onFileSaving](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')

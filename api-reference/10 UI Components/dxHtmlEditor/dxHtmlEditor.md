@@ -20,8 +20,8 @@ value: "This is <b>HtmlEditor</b>.<br/>Select text and use a toolbar item.",
 toolbar: {
     items: ["bold", "italic", "color", "background", "link",
     {
-        formatName: "header",
-        formatValues: [1, 2, 3, false]
+        name: "header",
+        acceptedValues: [1, 2, 3, false]
     }, "variable"
     ]
 },

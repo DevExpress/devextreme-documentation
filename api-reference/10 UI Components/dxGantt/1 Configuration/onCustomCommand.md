@@ -10,10 +10,10 @@ A function that is executed after a custom command item was clicked. Allows you 
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component instance's name.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.name): String
@@ -127,4 +127,4 @@ The name of the clicked item.
 ---
 
 #####See Also#####
-- [customCommand](/Documentation/ApiReference/UI_Components/dxGantt/Events/#customCommand)
+- [customCommand](/api-reference/10%20UI%20Components/dxGantt/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#customCommand')

@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 The UI component's container.
 
 ##### field(e.event): event
@@ -28,7 +28,7 @@ The clicked item's data.
 ##### field(e.itemIndex): Number
 The clicked item's index.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

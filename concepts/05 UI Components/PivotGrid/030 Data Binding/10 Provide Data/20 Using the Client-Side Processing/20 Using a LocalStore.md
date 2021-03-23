@@ -7,4 +7,4 @@ This type of Store is helpful when you use an HTML5 Web Storage (also known as <
 		}
 	};
 
-After you have created a data source configuration object, you need to bind it to your grid. Refer to the [Bind Data](/concepts/05%20Widgets/PivotGrid/030%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/PivotGrid/Data_Binding/#Bind_Data') section to learn how to do this.
+After you have created a data source configuration object, you need to bind it to your grid. Refer to the [Bind Data](/concepts/05%20UI%20Components/PivotGrid/030%20Data%20Binding/20%20Bind%20Data.md '/Documentation/Guide/UI_Components/PivotGrid/Data_Binding/#Bind_Data') section to learn how to do this.

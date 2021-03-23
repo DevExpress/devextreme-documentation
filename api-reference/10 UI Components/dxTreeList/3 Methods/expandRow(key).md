@@ -14,4 +14,4 @@ The row's key.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [collapseRow(key)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/collapseRow(key).md '{basewidgetpath}/Methods/#collapseRowkey')
+- [collapseRow(key)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/collapseRow(key).md '{basewidgetpath}/Methods/#collapseRowkey')

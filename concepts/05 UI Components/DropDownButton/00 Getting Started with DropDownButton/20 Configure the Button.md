@@ -1,4 +1,4 @@
-Specify the button's [text](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/text.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#text') and/or [icon](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#icon'):
+Specify the button's [text](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/text.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#text') and/or [icon](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#icon'):
 
 ---
 ##### jQuery

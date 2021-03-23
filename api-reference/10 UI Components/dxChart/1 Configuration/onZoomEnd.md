@@ -20,23 +20,23 @@ The zoomed/panned axis.
 ##### field(e.cancel): Boolean
 Allows you to cancel zooming or panning.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxChart
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.previousRange): VizRange
 The visual range when zooming or panning starts.
 
 ##### field(e.range): VizRange
-The [visual range](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') when zooming or panning ends.
+The [visual range](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') when zooming or panning ends.
 
 ##### field(e.rangeEnd).deprecated
 Use 'range' instead.
@@ -59,5 +59,5 @@ The zoom factor.
 
 ---
 #####See Also#####
-- [zoomAndPan](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/')
-- [onZoomStart](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onZoomStart.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onZoomStart')
+- [zoomAndPan](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/')
+- [onZoomStart](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onZoomStart.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onZoomStart')

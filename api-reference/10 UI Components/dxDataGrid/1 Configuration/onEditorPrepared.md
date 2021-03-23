@@ -10,7 +10,7 @@ A function that is executed after an editor is created. Not executed for cells w
 ##### param(options): Object
 Information about the event that caused the function's execution.
 
-##### field(options.component): {WidgetName}
+##### field(options.component): dxDataGrid
 The UI component's instance.
 
 ##### field(options.dataField): String
@@ -22,10 +22,10 @@ Indicates whether the editor is disabled.
 ##### field(options.editorElement): dxElement
 #include common-ref-elementparam with { element: "editor" }
 
-##### field(options.element): dxElement
+##### field(options.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(options.model): Object
+##### field(options.model): any
 Model data. Only available when using Knockout.
 
 ##### field(options.parentType): String
@@ -36,7 +36,7 @@ Options passed to the function depend on this value.
 Indicates whether the editor is read-only.
 
 ##### field(options.row): dxDataGridRowObject
-The [properties](/api-reference/10%20UI%20Widgets/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row the editor belongs to.
+The [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row the editor belongs to.
 
 ##### field(options.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.

@@ -93,7 +93,6 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxForm } from 'devextreme-vue/form';
@@ -117,7 +116,6 @@
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

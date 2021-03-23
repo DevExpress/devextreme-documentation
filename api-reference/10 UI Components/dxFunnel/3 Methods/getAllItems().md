@@ -6,7 +6,7 @@ id: dxFunnel.getAllItems()
 Provides access to all funnel items.
 
 ##### return: Array<dxFunnelItem>
-A collection of [Item](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') objects.
+A collection of [Item](/api-reference/10%20UI%20Components/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') objects.
 
 ---
 #####See Also#####

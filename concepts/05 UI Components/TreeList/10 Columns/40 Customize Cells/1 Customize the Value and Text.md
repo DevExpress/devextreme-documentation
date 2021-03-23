@@ -38,6 +38,61 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
     <dx-tree-list ... >
         <dxi-column dataField="Price" [customizeText]="priceColumn_customizeText"></dxi-column>
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn
+                data-field="Price"
+                :customize-text="priceColumn_customizeText"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        methods: {
+            priceColumn_customizeText(cellInfo) {
+                return cellInfo.value + '$';
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    const priceColumn_customizeText = (cellInfo) => {
+        return cellInfo.value + '$';
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column
+                    dataField="Price"
+                    customizeText={priceColumn_customizeText}
+                />
+            </TreeList>
+        );
+    }
     
 ---
 
@@ -81,6 +136,64 @@ To use the text displayed in cells in those data processing operations, specify 
     <dx-tree-list ... >
         <dxi-column caption="Full Name" [calculateCellValue]="fullNameColumn_calculateCellValue"></dxi-column>
     </dx-tree-list>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn
+                caption="Full Name"
+                :calculate-cell-value="fullNameColumn_calculateCellValue"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        methods: {
+            fullNameColumn_calculateCellValue(rowData) {
+                return rowData.firstName + ' ' + rowData.lastName;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    const fullNameColumn_calculateCellValue = (rowData) => {
+        return rowData.firstName + ' ' + rowData.lastName;
+    };
+
+    export default function App() {
+	    return (
+            <TreeList ... >
+                <Column
+                    caption="Full Name"
+                    calculateCellValue={fullNameColumn_calculateCellValue}
+                />
+            </TreeList>
+        );
+    }
     
 ---
 

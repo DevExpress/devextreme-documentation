@@ -10,10 +10,10 @@ Customizes the appearance of an individual point label.
 Information on the series point.
 
 ##### return: dxChartSeriesTypes_CommonSeries_label
-The label's [configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label/').
+The label's [configuration](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label/').
 
 ---
-All point labels in a chart are identical by default, but you can specify a unique appearance for individual labels using the **customizeLabel** function. This function should return an object with properties that will be changed for a certain label. See the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/series/label') object for information about all properties available for changing.
+All point labels in a chart are identical by default, but you can specify a unique appearance for individual labels using the **customizeLabel** function. This function should return an object with properties that will be changed for a certain label. See the [label](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label '{basewidgetpath}/Configuration/series/label') object for information about all properties available for changing.
 
 The **customizeLabel** function accepts an object providing information about the series point that the label belongs to. This object contains the following fields.
 

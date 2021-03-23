@@ -10,16 +10,16 @@ A function that is executed when a resource is inserted.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "widget" }
 
 ##### field(e.key): any
 The key of the inserted resource.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
@@ -145,5 +145,5 @@ The values of the inserted resource.
 ---
 
 #####See Also#####
-- [resourceInserted](/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceInserted)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [resourceInserted](/api-reference/10%20UI%20Components/dxGantt/4%20Events/resourceInserted.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#resourceInserted')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

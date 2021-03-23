@@ -198,4 +198,4 @@ Note that the **scrollToDate** method scrolls to a date inside the current scrol
 ---
 
 #####See Also#####
-- [toolbar](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/)
+- [toolbar](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/')

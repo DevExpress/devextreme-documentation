@@ -17,7 +17,7 @@ The tooltip's text or markup and appearance settings.
 ---
 #include dataviz-customize-tooltip-return
 
-The **pointInfo** object has different fields for the different [series types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/'). The following fields are available for all the series types:
+The **pointInfo** object has different fields for the different [series types](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/'). The following fields are available for all the series types:
 
 <table class="dx-table full-width">
     <tr>
@@ -66,7 +66,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
+The folllowing **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -89,7 +89,7 @@ The folllowing **pointInfo** fields are available for the stacked-like series su
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/'):
+The folllowing **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -127,7 +127,7 @@ The folllowing **pointInfo** fields are available for the range-like series, suc
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/'):
+The folllowing **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -209,4 +209,4 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
 }
 
 #####See Also#####
-- [Data Formatting](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')
+- [Data Formatting](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')

@@ -19,4 +19,4 @@ The displayed value.
 Leave this property unspecified or set it to `this` if the data source contains primitives.
 
 #####See Also#####
-- [valueExpr](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/valueExpr.md '{basewidgetpath}/Configuration/#valueExpr')
+- [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '{basewidgetpath}/Configuration/#valueExpr')

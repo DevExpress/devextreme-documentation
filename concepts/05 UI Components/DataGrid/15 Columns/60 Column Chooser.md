@@ -1,4 +1,4 @@
-The column chooser allows a user to change the set of columns at runtime. It is configured using the [columnChooser](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnChooser '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/') object and may operate in two [modes](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnChooser/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#mode'): the default drag and drop mode and the select mode designed for touch devices.
+The column chooser allows a user to change the set of columns at runtime. It is configured using the [columnChooser](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/') object and may operate in two [modes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#mode'): the default drag and drop mode and the select mode designed for touch devices.
 
 ---
 ##### jQuery
@@ -206,7 +206,7 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
     
 ---
 
-Call the [showColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/showColumnChooser().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#showColumnChooser') or [hideColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/hideColumnChooser().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#hideColumnChooser') method to control the column chooser programmatically.
+Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/showColumnChooser().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#showColumnChooser') or [hideColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/hideColumnChooser().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#hideColumnChooser') method to control the column chooser programmatically.
 
 ---
 ##### jQuery
@@ -325,6 +325,6 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Widgets/GridBase/3%20Met
 ---
 
 #####See Also#####
-- [Hide a Column Using the API](/concepts/05%20Widgets/DataGrid/15%20Columns/35%20Hide%20a%20Column%20Using%20the%20API.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Hide_a_Column_Using_the_API/')
-- [Adaptability](/concepts/05%20Widgets/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/')
-- [Column Fixing](/concepts/05%20Widgets/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Fixing/')
+- [Hide a Column Using the API](/concepts/05%20UI%20Components/DataGrid/15%20Columns/35%20Hide%20a%20Column%20Using%20the%20API.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Hide_a_Column_Using_the_API/')
+- [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/')
+- [Column Fixing](/concepts/05%20UI%20Components/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Fixing/')

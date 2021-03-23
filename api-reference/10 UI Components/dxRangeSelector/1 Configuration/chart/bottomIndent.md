@@ -9,4 +9,4 @@ Specifies an indent from the background's bottom to the lowest chart point. Acce
 
 ---
 #####See Also#####
-- [topIndent](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/chart/topIndent.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/#topIndent')
+- [topIndent](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/chart/topIndent.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/#topIndent')

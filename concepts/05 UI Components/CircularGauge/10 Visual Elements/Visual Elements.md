@@ -54,4 +54,4 @@ Topics in this section describe various elements of the CircularGauge UI compone
 </div>
 
 #####See Also#####
-- [CircularGauge API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxCircularGauge '/Documentation/ApiReference/UI_Components/dxCircularGauge')
+- [CircularGauge API Reference](/api-reference/10%20UI%20Components/dxCircularGauge '/Documentation/ApiReference/UI_Components/dxCircularGauge')

@@ -10,13 +10,13 @@ A function that is executed when a user clicks a task.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component's instance.
 
 ##### field(e.data): any
 The task data.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -25,7 +25,7 @@ The task data.
 ##### field(e.key): any
 The task key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
@@ -148,5 +148,5 @@ Model data. Available only if you use Knockout.
 ---
 
 #####See Also#####
-- [taskClick](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskClick)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [taskClick](/api-reference/10%20UI%20Components/dxGantt/4%20Events/taskClick.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskClick')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

@@ -1,4 +1,4 @@
-You can change a funnel item's hover state by passing **true** or **false** to the item's [hover(state)](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/hover(state).md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#hoverstate') method. To check whether the funnel item is currently hovered over, call its [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/6%20Item/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#isHovered') method.
+You can change a funnel item's hover state by passing **true** or **false** to the item's [hover(state)](/api-reference/10%20UI%20Components/dxFunnel/6%20Item/3%20Methods/hover(state).md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#hoverstate') method. To check whether the funnel item is currently hovered over, call its [isHovered()](/api-reference/10%20UI%20Components/dxFunnel/6%20Item/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#isHovered') method.
 
 ---
 ##### jQuery
@@ -55,4 +55,4 @@ You can change a funnel item's hover state by passing **true** or **false** to t
 ---
 
 #####See Also#####
-- [Access a Funnel Item Using the API](/concepts/05%20Widgets/Funnel/14%20Funnel%20Items/25%20Access%20a%20Funnel%20Item%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Access_a_Funnel_Item_Using_the_API/')
+- [Access a Funnel Item Using the API](/concepts/05%20UI%20Components/Funnel/14%20Funnel%20Items/25%20Access%20a%20Funnel%20Item%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Access_a_Funnel_Item_Using_the_API/')

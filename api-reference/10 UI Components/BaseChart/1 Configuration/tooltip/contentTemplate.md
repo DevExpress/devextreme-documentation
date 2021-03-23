@@ -21,7 +21,7 @@ Information on the series point being pressed or hovered over.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/TooltipHTMLSupport/"
 }
 
-The **pointInfo** object has different fields for different [series types](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/'). The following fields are available for all series types:
+The **pointInfo** object has different fields for different [series types](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/'). The following fields are available for all series types:
 
 <table class="dx-table full-width">
     <tr>
@@ -70,7 +70,7 @@ The **pointInfo** object has different fields for different [series types](/api-
     </tr>
 </table>
 
-The following **pointInfo** fields are available for stacked series such as the [full-stacked bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
+The following **pointInfo** fields are available for stacked series such as the [full-stacked bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -93,7 +93,7 @@ The following **pointInfo** fields are available for stacked series such as the 
     </tr>
 </table>
 
-The following **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/'):
+The following **pointInfo** fields are available for the range-like series, such as [range area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') or [range bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -131,7 +131,7 @@ The following **pointInfo** fields are available for the range-like series, such
     </tr>
 </table>
 
-The following **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/'):
+The following **pointInfo** fields are available for the financial chart series, such as [candle stick](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') or [stock](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -213,4 +213,4 @@ The following **pointInfo** fields are available for the financial chart series,
 }
 
 #####See Also#####
-- [Data Formatting](/concepts/05%20Widgets/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')
+- [Data Formatting](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/')

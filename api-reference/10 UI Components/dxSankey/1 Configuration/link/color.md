@@ -5,7 +5,7 @@ default: '#000000'
 ---
 ---
 ##### shortDescription
-Colors the sankey links. Applies only if [colorMode](/api-reference/20%20Data%20Visualization%20Widgets/dxSankey/1%20Configuration/link/colorMode.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#colorMode') is *"none"*.
+Colors the sankey links. Applies only if [colorMode](/api-reference/10%20UI%20Components/dxSankey/1%20Configuration/link/colorMode.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/link/#colorMode') is *"none"*.
 
 ---
 #include common-colorlist

@@ -11,12 +11,12 @@ A function that is executed after cells in a row are validated against [validati
 Information about the event that caused the function's execution.
 
 ##### field(e.brokenRules): Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>
-An array of broken rules. The structure of rule objects is described in the [Validation Rules](/api-reference/10%20UI%20Widgets/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') section.
+An array of broken rules. The structure of rule objects is described in the [Validation Rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') section.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.errorText): String
@@ -28,7 +28,7 @@ Indicates whether data in all row cells satisfies the validation rules.
 ##### field(e.key): any
 The key of the row. If a field providing keys is not specified in the data source, the whole data object is considered the key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newData): Object
@@ -244,4 +244,4 @@ The following code illustrates how to validate an email address on the server an
 
 ---
 
-[note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), if changes in several rows are committed simultaneously, this function is executed for each row.
+[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), if changes in several rows are committed simultaneously, this function is executed for each row.

@@ -1,7 +1,7 @@
 Series points are grouped for aggregation using intervals: those points that fall within the same interval on the argument axis get aggregated together. You can specify the length of the intervals in axis units (numbers or dates), in pixels, or aggregate points by categories:
 
-- **Axis units** (for continuous and logarithmic [axes](/concepts/05%20Widgets/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/') only)       
-Use the **argumentAxis**.[aggregationInterval](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') property. 
+- **Axis units** (for continuous and logarithmic [axes](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/') only)       
+Use the **argumentAxis**.[aggregationInterval](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') property. 
 
     ---
     ##### jQuery
@@ -102,7 +102,7 @@ Use the **argumentAxis**.[aggregationInterval](/api-reference/20%20Data%20Visual
     ---
 
 - **Pixels**            
-Use the **argumentAxis**.[aggregationGroupWidth](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/aggregationGroupWidth.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregationGroupWidth') property.
+Use the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationGroupWidth.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregationGroupWidth') property.
 
     ---
     ##### jQuery
@@ -184,7 +184,7 @@ Use the **argumentAxis**.[aggregationGroupWidth](/api-reference/20%20Data%20Visu
     ---
 
 - **Categories**        
-Aggregation by categories can be applied only when the axis displays [categories](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/categories.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#categories'), and each category contains two or more points. To apply it, set **argumentAxis**.[aggregateByCategory](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/aggregateByCategory.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory') to **true**:
+Aggregation by categories can be applied only when the axis displays [categories](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/categories.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#categories'), and each category contains two or more points. To apply it, set **argumentAxis**.[aggregateByCategory](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregateByCategory.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory') to **true**:
 
     ---
     ##### jQuery

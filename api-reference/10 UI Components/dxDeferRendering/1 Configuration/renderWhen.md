@@ -1,6 +1,6 @@
 ---
 id: dxDeferRendering.Options.renderWhen
-type: Promise<void> | Boolean
+type: TPromise | Boolean
 default: undefined
 ---
 ---

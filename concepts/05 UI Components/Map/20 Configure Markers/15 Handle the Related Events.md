@@ -1,5 +1,5 @@
-The Map UI component fires the [markerAdded](/api-reference/10%20UI%20Widgets/dxMap/4%20Events/markerAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#markerAdded') and [markerRemoved](/api-reference/10%20UI%20Widgets/dxMap/4%20Events/markerRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#markerRemoved') events when a marker is added or removed.
-To handle them, assign functions to the [onMarkerAdded](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/onMarkerAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onMarkerAdded') and [onMarkerRemoved](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/onMarkerRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onMarkerRemoved') properties, respectively.
+The Map UI component fires the [markerAdded](/api-reference/10%20UI%20Components/dxMap/4%20Events/markerAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#markerAdded') and [markerRemoved](/api-reference/10%20UI%20Components/dxMap/4%20Events/markerRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#markerRemoved') events when a marker is added or removed.
+To handle them, assign functions to the [onMarkerAdded](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/onMarkerAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onMarkerAdded') and [onMarkerRemoved](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/onMarkerRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onMarkerRemoved') properties, respectively.
 
 ---
 ##### jQuery
@@ -140,7 +140,7 @@ To handle them, assign functions to the [onMarkerAdded](/api-reference/10%20UI%2
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the **markerAdded** and **markerRemoved** events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the **markerAdded** and **markerRemoved** events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     const markerRemovedHandler1 = function (e) {
@@ -158,9 +158,9 @@ If you are going to change event handlers at runtime, or if you need to attach s
         .on("markerRemoved", markerRemovedHandler2);
 
 #####See Also#####
-- [Map - Customize Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')
-- [Map - Add and Remove Markers](/concepts/05%20Widgets/Map/20%20Configure%20Markers/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Add_and_Remove/')
+- [Map - Customize Markers](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')
+- [Map - Add and Remove Markers](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Add_and_Remove/')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers)
-- [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
+- [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
 [tags]map, marker added, marker removed, markerAdded event, markerRemoved event

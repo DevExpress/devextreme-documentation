@@ -108,8 +108,9 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
 
     <!-- tab: App.vue -->
     <template>
-        <DxDropDownBox...>
-            <template #field="{value}">
+        <DxDropDownBox ...
+            field-template="field">
+            <template #field="{ value }">
                 <div class="custom-item">
                     <DxTextBox
                         :value="value"

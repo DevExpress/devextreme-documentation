@@ -133,7 +133,6 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
                     :on-reorder="onReorder"
                     :allow-drop-inside-item="true"
                     :allow-reordering="true"
-                    :show-drag-icons="true"
                 />
             </DxTreeList>
         </div>
@@ -269,7 +268,6 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
                         onReorder={onReorder}
                         allowDropInsideItem={true}
                         allowReordering={true}
-                        showDragIcons={true}
                     />
                 </TreeList>
                 <SelectedEmployee employee={selectedEmployee} />

@@ -13,13 +13,13 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel the resource unassignment.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component's instance.
 
 ##### field(e.data): any
 The task data.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -28,7 +28,7 @@ The task data.
 ##### field(e.key): any
 The task key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
@@ -157,4 +157,4 @@ Model data. Available only if you use Knockout.
 
 #####See Also#####
 - [taskDblClick](/Documentation/ApiReference/UI_Components/dxGantt/Events/#taskDblClick)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

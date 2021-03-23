@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -22,7 +22,7 @@ The event that caused the function to execute. It is a [dxEvent](/api-reference/
 ##### field(e.handled): Boolean
 Indicates whether the UI component has already handled this event.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---

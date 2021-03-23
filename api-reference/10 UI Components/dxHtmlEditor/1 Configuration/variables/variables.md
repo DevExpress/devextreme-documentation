@@ -33,7 +33,9 @@ A user can insert variables in the text and remove them, but never modify them.
     <!--HTML-->
     <dx-html-editor>
         <!-- Adds a toolbar item that allows users to insert variables -->
-        <dxo-toolbar [items]="[ 'variable' ]"></dxo-toolbar>
+        <dxo-toolbar>
+            <dxi-item name="variable"></dxi-item>
+        </dxo-toolbar>
         <dxo-variables
             [dataSource]="[ 'FirstName', 'LastName', 'Company' ]"
             [escapeChar]="[ '{', '}' ]">
@@ -53,5 +55,71 @@ A user can insert variables in the text and remove them, but never modify them.
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <!-- Adds a toolbar item that allows users to insert variables -->
+            <DxToolbar>
+                <DxItem name="variable" />
+            </DxToolbar>
+            <DxVariables
+                :data-source="variables"
+                :escape-char="escapeCharacters"
+            />
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxHtmlEditor, {
+        DxToolbar,
+        DxItem,
+        DxVariables
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxHtmlEditor,
+            DxVariables
+        },
+        data() {
+            return {
+                variables: ['FirstName', 'LastName', 'Company'],
+                escapeCharacters: ['{', '}']
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import HtmlEditor, {
+        Variables
+    } from 'devextreme-react/html-editor';
+
+    const variables = ['FirstName', 'LastName', 'Company'];
+    const escapeCharacters = ['{', '}'];
+
+    export default function App() {
+        return (
+            <HtmlEditor>
+                {/* Adds a toolbar item that allows users to insert variables */}
+                <Toolbar>
+                    <Item name="variable" />
+                </Toolbar>
+                <Variables
+                    dataSource={variables}
+                    escapeChar={escapeCharacters}
+                />
+            </HtmlEditor>
+        );
+    }
 
 ---

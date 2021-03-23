@@ -13,16 +13,16 @@ Information about the event.
 ##### field(e.cancel): Boolean
 Allows you to cancel the dependency's deletion.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxGantt
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The key of the deleted dependency.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.values): any
@@ -153,5 +153,5 @@ The values of the deleted dependency.
 ---
 
 #####See Also#####
-- [dependencyDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Events/#dependencyDeleting)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [dependencyDeleting](/api-reference/10%20UI%20Components/dxGantt/4%20Events/dependencyDeleting.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#dependencyDeleting')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

@@ -15,4 +15,4 @@ You can use the following position markers in this text:
 - {2} - shows the total row count.
 
 #####See Also#####
-- [showInfo](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/pager/showInfo.md '{basewidgetpath}/Configuration/pager/#showInfo')
+- [showInfo](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/showInfo.md '{basewidgetpath}/Configuration/pager/#showInfo')

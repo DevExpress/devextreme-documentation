@@ -1,8 +1,8 @@
-A scale break allows breaking off a part of the axis to improve the readability of a chart with high amplitude values. Scale breaks are available for continuous or logarithmic [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type') axes only.
+A scale break allows breaking off a part of the axis to improve the readability of a chart with high amplitude values. Scale breaks are available for continuous or logarithmic [type](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type') axes only.
 
 ![DevExtreme HTML5 JavaScript Charts Scale Breaks](/images/ChartJS/visual_elements/scale-breaks_val-axis.png)
 
-Use an axis' [breaks](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/breaks '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/breaks/') array to declare a scale break collection. Each object in this array must have the **startValue** and **endValue** fields that limit a single scale break. Note that a scale break is visible only if the range between the start and end values exceeds the tick interval.
+Use an axis' [breaks](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/breaks '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/breaks/') array to declare a scale break collection. Each object in this array must have the **startValue** and **endValue** fields that limit a single scale break. Note that a scale break is visible only if the range between the start and end values exceeds the tick interval.
 
 ---
 ##### jQuery
@@ -108,7 +108,7 @@ Use an axis' [breaks](/api-reference/20%20Data%20Visualization%20Widgets/dxChart
 
 ---
 
-The value axis supports auto-calculated scale breaks, which can be enabled by setting the [autoBreaksEnabled](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/autoBreaksEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#autoBreaksEnabled') property to **true**. You can specify the [maxAutoBreakCount](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/maxAutoBreakCount.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#maxAutoBreakCount') property to limit the number of a scale breaks the UI component can generate.
+The value axis supports auto-calculated scale breaks, which can be enabled by setting the [autoBreaksEnabled](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/autoBreaksEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#autoBreaksEnabled') property to **true**. You can specify the [maxAutoBreakCount](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/maxAutoBreakCount.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#maxAutoBreakCount') property to limit the number of a scale breaks the UI component can generate.
 
 ---
 ##### jQuery
@@ -198,5 +198,5 @@ The value axis supports auto-calculated scale breaks, which can be enabled by se
 ---
 
 #####See Also#####
-- [Strips](/concepts/05%20Widgets/Chart/60%20Strips.md '/Documentation/Guide/UI_Components/Chart/Strips/')
-- [Constant Lines](/concepts/05%20Widgets/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')
+- [Strips](/concepts/05%20UI%20Components/Chart/60%20Strips.md '/Documentation/Guide/UI_Components/Chart/Strips/')
+- [Constant Lines](/concepts/05%20UI%20Components/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')

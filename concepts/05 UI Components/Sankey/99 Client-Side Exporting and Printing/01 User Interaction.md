@@ -6,7 +6,7 @@ The other commands save a file in the selected format on the user's device.
 
 ![Sankey Export Menu](/images/Sankey/visual_elements/export-menu.png)
 
-Set [export](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/').**enabled** to **true** to enable exporting and printing. To allow a user to only export, assign **false** to **export**.[printingEnabled](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/printingEnabled.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/#printingEnabled').
+Set [export](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/').**enabled** to **true** to enable exporting and printing. To allow a user to only export, assign **false** to **export**.[printingEnabled](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/printingEnabled.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/#printingEnabled').
 
 ---
 ##### jQuery
@@ -90,7 +90,7 @@ Set [export](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20C
 
 ---
 
-Change the **export**.[formats](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/#formats') array to limit the set of export formats. You can also set the [fileName](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/#fileName') property to specify the export file's name.
+Change the **export**.[formats](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/#formats') array to limit the set of export formats. You can also set the [fileName](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/fileName.md '/Documentation/ApiReference/UI_Components/dxSankey/Configuration/export/#fileName') property to specify the export file's name.
 
 ---
 ##### jQuery

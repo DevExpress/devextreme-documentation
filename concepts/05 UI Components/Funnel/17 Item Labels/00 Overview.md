@@ -2,7 +2,7 @@ A label that displays the item's value or custom data can accompany each funnel 
 
 ![Funnel Item Labels](/images/funnel/visual_elements/item-labels.png)
 
-Properties that configure item labels are collected in the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/label '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/label/') object. Refer to its description in the API reference or to other topics in this section for details on item label settings.
+Properties that configure item labels are collected in the [label](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/label/') object. Refer to its description in the API reference or to other topics in this section for details on item label settings.
 
 ---
 ##### jQuery
@@ -81,6 +81,6 @@ Properties that configure item labels are collected in the [label](/api-referenc
 ---
 
 #####See Also#####
-- [Customize Labels](/concepts/05%20Widgets/Funnel/17%20Item%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Customize_Labels/')
-- [Relocate Labels](/concepts/05%20Widgets/Funnel/17%20Item%20Labels/07%20Relocate%20Labels.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Relocate_Labels/')
+- [Customize Labels](/concepts/05%20UI%20Components/Funnel/17%20Item%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Customize_Labels/')
+- [Relocate Labels](/concepts/05%20UI%20Components/Funnel/17%20Item%20Labels/07%20Relocate%20Labels.md '/Documentation/Guide/UI_Components/Funnel/Item_Labels/Relocate_Labels/')
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)

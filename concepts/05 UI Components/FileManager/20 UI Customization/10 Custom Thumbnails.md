@@ -2,11 +2,11 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
 }
 
-The FileManager UI component allows you to provide custom thumbnails for a file system's items in Thumbnails [mode](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/#mode').
+The FileManager UI component allows you to provide custom thumbnails for a file system's items in Thumbnails [mode](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/#mode').
 
 ![DevExtreme FileManager - Custom Thumbnails](/images/FileManager/custom-thumbnails.png)
 
-Handle the [customizeThumbnail](/api-reference/10%20UI%20Widgets/dxFileManager/1%20Configuration/customizeThumbnail.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#customizeThumbnail') function to specify which icons the UI component should display for files and folders. This function returns different icons based on a file system item's type (file or folder), extension, or other parameters.
+Handle the [customizeThumbnail](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/customizeThumbnail.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#customizeThumbnail') function to specify which icons the UI component should display for files and folders. This function returns different icons based on a file system item's type (file or folder), extension, or other parameters.
 
 You can specify an icon in the following formats: 
 

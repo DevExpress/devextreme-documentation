@@ -1,6 +1,6 @@
 ---
 id: DraggableBase.Options.boundary
-type: String | Element | jQuery
+type: String | TElement
 default: undefined
 ---
 ---

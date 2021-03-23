@@ -13,5 +13,5 @@ A row's key.
 
 ---
 #####See Also#####
-- [focusedRowEnabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowEnabled.md '{basewidgetpath}/Configuration/#focusedRowEnabled')
+- [focusedRowEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowEnabled.md '{basewidgetpath}/Configuration/#focusedRowEnabled')
 #include common-link-callmethods

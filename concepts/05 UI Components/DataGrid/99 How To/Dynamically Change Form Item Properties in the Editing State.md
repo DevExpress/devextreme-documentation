@@ -1,6 +1,6 @@
 The following instructions explain how to dynamically change a form item's properties based on another form editor's value:
 
-1. **Implement the [onEditingStart](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditingStart.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart') event handler**       
+1. **Implement the [onEditingStart](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditingStart.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart') event handler**       
 This handler is used to save the key of the row that enters the editing state, and we use this key to get this row's index in step 2.
 
     ---
@@ -231,8 +231,8 @@ This handler is used to save the key of the row that enters the editing state, a
         </script>
         
     ---
-1. **Specify the [form.customizeItem](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem') callback function**       
-This function allows you to change form item properties dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item properties.
+1. **Specify the [form.customizeItem](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem') callback function**       
+This function allows you to change form item properties dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item properties.
 
     In the following code, the `"AddressRequired"` value affects the `"Home Address"` item's visibility:
     
@@ -510,4 +510,4 @@ Specify **setCellValue** for those columns whose editors affect other form items
 The full project is available on GitHub: [DataGrid - How to hide/disable Edit Form items based on another item's value](https://github.com/DevExpress-Examples/DataGrid-How-to-hide-disable-certain-Edit-Form-items-based-on-another-item-s-value)
 
 #####See Also#####
-- [Customize Editors](/concepts/05%20Widgets/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors')
+- [Customize Editors](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors')

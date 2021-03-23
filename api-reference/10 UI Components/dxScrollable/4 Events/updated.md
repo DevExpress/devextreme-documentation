@@ -7,7 +7,7 @@ type: eventType
 Raised each time the UI component is updated.
 
 ---
-Main article: [onUpdated](/api-reference/10%20UI%20Widgets/dxScrollable/1%20Configuration/onUpdated.md '{basewidgetpath}/Configuration/#onUpdated')
+Main article: [onUpdated](/api-reference/10%20UI%20Components/dxScrollable/1%20Configuration/onUpdated.md '{basewidgetpath}/Configuration/#onUpdated')
 
 #####See Also#####
 #include common-link-handleevents

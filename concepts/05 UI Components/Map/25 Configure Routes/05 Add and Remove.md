@@ -1,4 +1,4 @@
-To add routes at design-time, pass an array of objects to the [routes](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/') property. A route requires only its [locations](/api-reference/10%20UI%20Widgets/dxMap/1%20Configuration/routes/locations '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/locations/') to be specified. The locations will be connected and make up the route.
+To add routes at design-time, pass an array of objects to the [routes](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/') property. A route requires only its [locations](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes/locations '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/locations/') to be specified. The locations will be connected and make up the route.
 
 ---
 ##### jQuery
@@ -115,7 +115,7 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
 }
 
-To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/addRoute(routeOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addRouterouteOptions') or [removeRoute(route)](/api-reference/10%20UI%20Widgets/dxMap/3%20Methods/removeRoute(route).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeRouteroute') method.
+To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/addRoute(routeOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addRouterouteOptions') or [removeRoute(route)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/removeRoute(route).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeRouteroute') method.
 
     <!--JavaScript-->
     const routesCollection = [{
@@ -322,9 +322,9 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** prop
 ---
 
 #####See Also#####
-- [Map - Customize Routes](/concepts/05%20Widgets/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Customize/')
-- [Map - Handle Route Related Events](/concepts/05%20Widgets/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Handle_the_Related_Events/')
+- [Map - Customize Routes](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Customize/')
+- [Map - Handle Route Related Events](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Handle_the_Related_Events/')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
-- [Map API Reference](/api-reference/10%20UI%20Widgets/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
+- [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
 [tags]map, routes, location, add route, remove route

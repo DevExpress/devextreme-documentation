@@ -96,4 +96,4 @@ Specified in a summary configuration object, this property affects an individual
 
 ---
 
-[note] Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary that skips empty values. Refer to the global [skipEmptyValues](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#skipEmptyValues) description for a code example.
+[note] Summaries of the *count* type do not skip empty values regardless of the **skipEmptyValues** property. However, you can implement a custom summary that skips empty values. Refer to the global [skipEmptyValues](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/skipEmptyValues.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#skipEmptyValues') description for a code example.

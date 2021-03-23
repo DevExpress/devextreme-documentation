@@ -1,4 +1,4 @@
-Use the [addRow()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/addRow().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#addRow') method to add an empty row.
+Use the [addRow()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/addRow().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#addRow') method to add an empty row.
 
 ---
 ##### jQuery
@@ -86,7 +86,7 @@ Use the [addRow()](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/addRo
     
 ---
 
-You can specify initial values for a newly added row in the [onInitNewRow](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onInitNewRow.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onInitNewRow') event handler.
+You can specify initial values for a newly added row in the [onInitNewRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onInitNewRow.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onInitNewRow') event handler.
 
 ---
 ##### jQuery

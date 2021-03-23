@@ -1,4 +1,4 @@
-Bars in the **Stacked Bar** series are vertical by default. Change them to horizontal by setting the [rotated](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property to **true**.
+Bars in the **Stacked Bar** series are vertical by default. Change them to horizontal by setting the [rotated](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/rotated.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#rotated') property to **true**.
 
 ---
 ##### jQuery
@@ -54,4 +54,4 @@ Bars in the **Stacked Bar** series are vertical by default. Change them to horiz
 ---
 
 #####See Also#####
-- [Rotate and Invert the Chart](/concepts/05%20Widgets/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/UI_Components/Chart/Rotate_and_Invert_the_Chart/')
+- [Rotate and Invert the Chart](/concepts/05%20UI%20Components/Chart/90%20Rotate%20and%20Invert%20the%20Chart.md '/Documentation/Guide/UI_Components/Chart/Rotate_and_Invert_the_Chart/')

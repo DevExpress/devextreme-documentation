@@ -7,7 +7,7 @@ type: Object | Array<Object>
 Specifies the item location and size against the UI component grid.
 
 ---
-If you need to specify different locations for [different screens](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/'), pass an array of objects with the same structure to the **location** field.
+If you need to specify different locations for [different screens](/concepts/05%20UI%20Components/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/'), pass an array of objects with the same structure to the **location** field.
 
     <!--HTML--><div data-options="dxItem: { 
         location: [
@@ -21,4 +21,4 @@ If you need to specify different locations for [different screens](/concepts/05%
 }
 
 #####See Also#####
-- [Arrange Layout Elements](/concepts/05%20Widgets/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
+- [Arrange Layout Elements](/concepts/05%20UI%20Components/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')

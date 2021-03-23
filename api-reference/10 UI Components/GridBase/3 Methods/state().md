@@ -85,4 +85,4 @@ The following example shows how to save the UI component state in the local stor
 
 #####See Also#####
 #include common-link-callmethods
-- [stateStoring](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/stateStoring '{basewidgetpath}/Configuration/stateStoring/')
+- [stateStoring](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring '{basewidgetpath}/Configuration/stateStoring/')

@@ -1,4 +1,4 @@
-By default, the Lookup applies a value immediately after an end user chooses an item from the drop-down menu. To change this behavior and apply the value after a user clicks the "Apply" button, assign *'useButtons'* to the [applyValueMode](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#applyValueMode') property.
+By default, the Lookup applies a value immediately after an end user chooses an item from the drop-down menu. To change this behavior and apply the value after a user clicks the "Apply" button, assign *'useButtons'* to the [applyValueMode](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#applyValueMode') property.
 
 ---
 ##### jQuery
@@ -109,7 +109,7 @@ By default, the Lookup applies a value immediately after an end user chooses an 
 
 ---
 
-To process a new Lookup value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#onValueChanged') property when you configure the UI component.
+To process a new Lookup value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
 ##### jQuery
@@ -214,7 +214,7 @@ To process a new Lookup value, you need to handle the value change event. If the
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/EventHandling/"
 }
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxLookup/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxLookup/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     const valueChangedHandler1 = function (e) {

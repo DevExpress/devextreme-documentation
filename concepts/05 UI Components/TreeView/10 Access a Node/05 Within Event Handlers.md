@@ -102,4 +102,4 @@ Usually, you need to access a TreeView node when an action was made on it, for e
 
 ---
 
-Not every event handler provides access to the node, only those whose name starts with **onItem...**. They are described in the [TreeView Configuration](/api-reference/10%20UI%20Widgets/dxTreeView/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/').
+Not every event handler provides access to the node, only those whose name starts with **onItem...**. They are described in the [TreeView Configuration](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/').

@@ -17,13 +17,13 @@ Information about the event that caused the function's execution.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newData): Object
@@ -46,6 +46,6 @@ This function allows you to intercept row update and perform additional actions.
 
 - Do not use this function to update data. If you need a custom update logic, implement [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [update](Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function.
 
-- In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
+- In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
 
 [/note]

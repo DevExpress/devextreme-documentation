@@ -19,10 +19,10 @@ Allows you to cancel focusing a new cell.
 ##### field(e.columns): Array<dxDataGridColumn>
 The visible columns' properties.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxDataGrid
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -31,7 +31,7 @@ The UI component's instance.
 ##### field(e.isHighlighted): Boolean
 **true** if the cell is highlighted; otherwise **false**, even if the cell's row is highlighted.
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.newColumnIndex): Number
@@ -151,5 +151,5 @@ In the following code, the **onFocusedCellChanging** function is used to customi
 ---
 
 #####See Also#####
-- [focusedRowIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#focusedRowKey')
-- [focusedColumnIndex](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#focusedColumnIndex')
+- [focusedRowIndex](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowIndex.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#focusedRowIndex') | [focusedRowKey](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#focusedRowKey')
+- [focusedColumnIndex](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedColumnIndex.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#focusedColumnIndex')

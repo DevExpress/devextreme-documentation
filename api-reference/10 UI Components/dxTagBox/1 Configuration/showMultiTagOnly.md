@@ -13,4 +13,4 @@ Specifies whether the multi-tag is shown without ordinary tags.
 }
 
 #####See Also#####
-- [onMultiTagPreparing](/api-reference/10%20UI%20Widgets/dxTagBox/1%20Configuration/onMultiTagPreparing.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onMultiTagPreparing')
+- [onMultiTagPreparing](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/onMultiTagPreparing.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onMultiTagPreparing')

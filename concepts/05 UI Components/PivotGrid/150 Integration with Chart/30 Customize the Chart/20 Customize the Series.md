@@ -19,7 +19,7 @@ The properties of the series.
     * **pane**: <span style="font-size:12px">String</span>      
     The name of the pane the series occupies. Has a value only when there are several panes in the chart.
     
-The **seriesOptions** can contain any appearance-related properties from the [series](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') section of the reference.
+The **seriesOptions** can contain any appearance-related properties from the [series](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') section of the reference.
 
 When series were generated from several data fields, they can be arranged in three different manners.
 
@@ -34,4 +34,4 @@ To specify the exact manner, use the **dataFieldsDisplayMode** field.
         dataFieldsDisplayMode: 'splitAxes' | 'singleAxis' | 'splitPanes'
     });
     
-[note]If you have set the [putDataFieldsInto](/concepts/05%20Widgets/PivotGrid/150%20Integration%20with%20Chart/20%20Convert%20Grid%20Fields%20into%20Chart%20Series.md '/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/#Convert_Grid_Fields_into_Chart_Series') field to *"args"*, **dataFieldsDisplayMode** will be set to *"singleAxis"* forcedly.
+[note]If you have set the [putDataFieldsInto](/concepts/05%20UI%20Components/PivotGrid/150%20Integration%20with%20Chart/20%20Convert%20Grid%20Fields%20into%20Chart%20Series.md '/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/#Convert_Grid_Fields_into_Chart_Series') field to *"args"*, **dataFieldsDisplayMode** will be set to *"singleAxis"* forcedly.

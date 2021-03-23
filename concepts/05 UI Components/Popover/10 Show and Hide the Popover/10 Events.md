@@ -1,4 +1,4 @@
-To execute certain commands before or after the Popover was shown/hidden, handle the [showing](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/showing.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#showing'), [shown](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/shown.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#shown'), [hiding](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hiding.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#hiding') or [hidden](/api-reference/10%20UI%20Widgets/dxOverlay/4%20Events/hidden.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** property when you configure the UI component.
+To execute certain commands before or after the Popover was shown/hidden, handle the [showing](/api-reference/10%20UI%20Components/dxOverlay/4%20Events/showing.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#showing'), [shown](/api-reference/10%20UI%20Components/dxOverlay/4%20Events/shown.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#shown'), [hiding](/api-reference/10%20UI%20Components/dxOverlay/4%20Events/hiding.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#hiding') or [hidden](/api-reference/10%20UI%20Components/dxOverlay/4%20Events/hidden.md '/Documentation/ApiReference/UI_Components/dxPopover/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** property when you configure the UI component.
 
 ---
 ##### jQuery 
@@ -159,7 +159,7 @@ To execute certain commands before or after the Popover was shown/hidden, handle
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     const hiddenEventHandler1 = function (e) {
@@ -176,6 +176,6 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [Popover - Customize the Content](/concepts/05%20Widgets/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
-- [Popover - Resize and Relocate](/concepts/05%20Widgets/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/Popover/Resize_and_Relocate/')
+- [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
+- [Popover - Resize and Relocate](/concepts/05%20UI%20Components/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/Popover/Resize_and_Relocate/')
 - [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)

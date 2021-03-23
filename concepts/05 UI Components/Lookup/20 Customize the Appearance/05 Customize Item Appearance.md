@@ -1,4 +1,4 @@
-For a minor customization of Lookup items, you can define [specific fields](/api-reference/10%20UI%20Widgets/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
+For a minor customization of Lookup items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
 ##### jQuery
@@ -103,7 +103,7 @@ For a minor customization of Lookup items, you can define [specific fields](/api
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 ##### Angular
@@ -240,7 +240,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
     const lookupData = [{
@@ -285,7 +285,7 @@ You can also customize an individual Lookup item. For this purpose, declare a te
         // ...
     ];
 
-Using similar techniques, you can customize the input field of the Lookup. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#fieldTemplate') property. 
+Using similar techniques, you can customize the input field of the Lookup. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#fieldTemplate') property. 
 
 ---
 ##### jQuery
@@ -428,9 +428,9 @@ Using similar techniques, you can customize the input field of the Lookup. The t
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Templates/"
 }
 
-In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [Lookup - Customize the Drop-Down Menu](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance/08%20Customize%20the%20Drop-Down%20Menu.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/Customize_the_Drop-Down_Menu/')
+- [Lookup - Customize the Drop-Down Menu](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/08%20Customize%20the%20Drop-Down%20Menu.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/Customize_the_Drop-Down_Menu/')
 
 [tags]lookup, item appearance, customize, templates, template, field template

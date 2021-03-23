@@ -1,4 +1,4 @@
-To process a new Switch value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Widgets/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#onValueChanged') property when you configure the UI component.
+To process a new Switch value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Components/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
 ##### jQuery
@@ -131,7 +131,7 @@ To process a new Switch value, you need to handle the value change event. If the
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxSwitch/Methods/#oneventName_eventHandler') method.
+If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxSwitch/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     const valueChangedHandler1 = function (e) {
@@ -153,6 +153,6 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #####See Also#####
 #include common-link-handleevents
 - [Switch Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview)
-- [Switch API Reference](/api-reference/10%20UI%20Widgets/dxSwitch '/Documentation/ApiReference/UI_Components/dxSwitch/')
+- [Switch API Reference](/api-reference/10%20UI%20Components/dxSwitch '/Documentation/ApiReference/UI_Components/dxSwitch/')
 
 [tags]switch, editor, get value, set value

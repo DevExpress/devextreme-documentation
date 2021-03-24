@@ -1,4 +1,4 @@
-TreeList columns have equal widths by default. You can set each column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) or indicate that all columns should adjust their widths to their content ([columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth)). Users can resize columns if you enable the [allowColumnResizing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing) property.
+TreeList columns have equal widths (the default setting). You can set each column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) or indicate that all columns should adjust their widths to their content ([columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth)). Users can resize columns if you enable the [allowColumnResizing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing) property.
 
 ---
 ##### jQuery

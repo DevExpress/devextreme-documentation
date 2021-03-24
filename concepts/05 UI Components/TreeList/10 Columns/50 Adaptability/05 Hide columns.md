@@ -10,7 +10,7 @@ Peculiar cases to set **columnHidingEnabled** to **true**:
 
 * TreeList truncates a column's cell text due to its length when the column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) is not set or set as a percentage. To display the full text, enable the property.
 
-* TreeList adds horizontal scrolling for adaptability when all columns have a fixed (columnWidth, columns[].width set in pixels) or adaptive (columnAutoWidth) widths. To hide columns until the full text is displayed, enable the property.
+* TreeList adds horizontal scrolling for adaptability when all columns have a fixed (columnWidth, columns[].width set in pixels) or adaptive (columnAutoWidth) widths. Enable the property to hide columns until the full text is displayed.
 
 [/note]
 

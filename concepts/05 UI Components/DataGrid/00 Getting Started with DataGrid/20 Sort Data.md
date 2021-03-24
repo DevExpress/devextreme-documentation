@@ -1,6 +1,6 @@
 The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode') property specifies whether users can sort grid records by single or multiple columns. This tutorial uses the default sorting mode - single. 
 
-You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') properties to specify the initial sorting settings. **sortIndex** applies only in multiple sorting mode.
+You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') properties to specify the initial sort settings. **sortIndex** applies only in multiple sorting mode.
 
 ---
 ##### jQuery

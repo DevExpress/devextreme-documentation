@@ -156,8 +156,8 @@ The following code shows how to call this method:
 
 ---
 
-[note] Calling the **refresh()** method ends the editing process. In *batch* [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), changes are saved in a buffer before they are saved to the data source. In other modes, all unsaved changes are discarded. 
+[note] Calling the **refresh()** method ends the editing process. In *batch* [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), changes are saved in a buffer before they are saved to the data source. In other modes, all unsaved changes are discarded. 
 
 #####See Also#####
-- [refresh(changesOnly)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/refresh(changesOnly).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#refreshchangesOnly')
+- [refresh(changesOnly)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/refresh(changesOnly).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#refreshchangesOnly')
 #include common-link-callmethods

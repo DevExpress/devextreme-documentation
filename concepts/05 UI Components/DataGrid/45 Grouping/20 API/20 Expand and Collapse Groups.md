@@ -1,7 +1,7 @@
 The DataGrid provides the following API for expanding and collapsing groups:
 
 - **All groups**    
-    You can expand and collapse all groups at once by calling the [expandAll(groupIndex)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAllgroupIndex') and [collapseAll(groupIndex)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/collapseAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAllgroupIndex') methods without arguments. Groups appear already expanded, a behavior you can change by setting the **grouping**.[autoExpandAll](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll') property to **false**.
+    You can expand and collapse all groups at once by calling the [expandAll(groupIndex)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAllgroupIndex') and [collapseAll(groupIndex)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/collapseAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAllgroupIndex') methods without arguments. Groups appear already expanded, a behavior you can change by setting the **grouping**.[autoExpandAll](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll') property to **false**.
     
     ---
 
@@ -117,7 +117,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
     ---
 
 - **Individual groups**     
-    The [expandRow(key)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/expandRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandRowkey') and [collapseRow(key)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/collapseRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseRowkey') methods expand and collapse an individual group. You can check the group's current state using the [isRowExpanded(key)](/api-reference/10%20UI%20Widgets/dxDataGrid/3%20Methods/isRowExpanded(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isRowExpandedkey')  method.
+    The [expandRow(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/expandRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandRowkey') and [collapseRow(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/collapseRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseRowkey') methods expand and collapse an individual group. You can check the group's current state using the [isRowExpanded(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/isRowExpanded(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isRowExpandedkey')  method.
 
     ---
 
@@ -162,5 +162,5 @@ The DataGrid provides the following API for expanding and collapsing groups:
     ---
 
 #####See Also#####
-- [Group Index and Key](/concepts/05%20Widgets/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Group_Index_and_Key')
-- [User Interaction - Expand and Collapse Groups](/concepts/05%20Widgets/DataGrid/45%20Grouping/10%20User%20Interaction/20%20Expand%20and%20Collapse%20Groups.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Expand_and_Collapse_Groups')
+- [Group Index and Key](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Group_Index_and_Key')
+- [User Interaction - Expand and Collapse Groups](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/10%20User%20Interaction/20%20Expand%20and%20Collapse%20Groups.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Expand_and_Collapse_Groups')

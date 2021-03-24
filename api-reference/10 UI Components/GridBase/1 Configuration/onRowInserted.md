@@ -30,4 +30,4 @@ The key of the row. If a field providing keys is not specified in the data sourc
 Model data. Available only if you use Knockout.
 
 ---
-[note] In batch [editing mode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), if several rows have been inserted, this function will be executed for each row individually.
+[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), if several rows have been inserted, this function will be executed for each row individually.

@@ -9,4 +9,4 @@ Specifies whether or not to display controls used to select list items.
 
 ---
 #####See Also#####
-- [List - Selection - User Interaction](/concepts/05%20Widgets/List/25%20Selection/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Selection/#User_Interaction')
+- [List - Selection - User Interaction](/concepts/05%20UI%20Components/List/25%20Selection/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Selection/#User_Interaction')

@@ -9,4 +9,4 @@ Specifies whether the shape's text can be edited.
 ---
 
 #####See Also#####
-[defaultText](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/defaultText.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultText')
+[defaultText](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/defaultText.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultText')

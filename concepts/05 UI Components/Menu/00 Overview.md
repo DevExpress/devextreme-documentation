@@ -208,9 +208,9 @@ The following code adds the Menu UI component to your page. Note that the data s
 
 #####See Also#####
 #include common-link-configurewidget
-- [Menu - Access the Clicked Item](/concepts/05%20Widgets/Menu/03%20Access%20the%20Clicked%20Item.md '/Documentation/Guide/UI_Components/Menu/Access_the_Clicked_Item/')
-- [Menu - Customize Item Appearance](/concepts/05%20Widgets/Menu/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Menu/Customize_Item_Appearance')
-- [Menu - Change the Orientation](/concepts/05%20Widgets/Menu/10%20Change%20the%20Orientation.md '/Documentation/Guide/UI_Components/Menu/Change_the_Orientation')
-- [Menu API Reference](/api-reference/10%20UI%20Widgets/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
+- [Menu - Access the Clicked Item](/concepts/05%20UI%20Components/Menu/03%20Access%20the%20Clicked%20Item.md '/Documentation/Guide/UI_Components/Menu/Access_the_Clicked_Item/')
+- [Menu - Customize Item Appearance](/concepts/05%20UI%20Components/Menu/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Menu/Customize_Item_Appearance')
+- [Menu - Change the Orientation](/concepts/05%20UI%20Components/Menu/10%20Change%20the%20Orientation.md '/Documentation/Guide/UI_Components/Menu/Change_the_Orientation')
+- [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
 [tags]dxmenu, menu, navigation, collection container, collection UI component, overview

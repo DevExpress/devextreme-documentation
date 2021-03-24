@@ -4,8 +4,9 @@ type: template
 default: null
 ---
 ---
+
 ##### shortDescription
-Specifies a custom template for the text field. Must contain the [TextBox](/concepts/05%20Widgets/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/') UI component.
+Specifies a custom template for the text field. Must contain the [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/') UI component.
 
 ##### param(value): Object
 Selected values.
@@ -17,13 +18,14 @@ Selected values.
 A template name or container.
 
 ---
+
 In the following code, the **fieldTemplate** is used to stylize the text field with a custom CSS class:
 
 ---
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!--tab: index.js -->
     $(function () {
         $("#dropDownBoxContainer").dxDropDownBox({
             // ...
@@ -32,41 +34,41 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
                 result
                     .dxTextBox({
                         value: value,
-                        readOnly: true 
+                        readOnly: true
                     });
                 fieldElement.append(result);
             }
         });
     });
 
-    <!--CSS-->
+    <!--tab: style.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-drop-down-box ...
         fieldTemplate="field">
         <div *dxTemplate="let data of 'field'">
             <div class="custom-item">
-                <dx-text-box 
-                    [value]="data" 
+                <dx-text-box
+                    [value]="data"
                     [readOnly]="true"
                 ></dx-text-box>
             </div>
         </div>
     </dx-drop-down-box>
 
-    <!--CSS-->
+    <!-- tab: app.component.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### AngularJS
 
-    <!--HTML-->
+    <!-- tab: index.html -->
     <div dx-drop-down-box="{
         ...
         fieldTemplate: 'field'
@@ -78,14 +80,14 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         </div>
     </div>
 
-    <!--CSS-->
+    <!-- tab: style.css -->
     .custom-item {
         font-size: 16px;
     }
 
 ##### Knockout
 
-    <!--HTML-->
+    <!-- tab: index.html -->
     <div data-bind="dxDropDownBox: {
         ...
         fieldTemplate: 'field'
@@ -97,7 +99,80 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         </div>
     </div>
 
-    <!--CSS-->
+    <!-- tab: style.css -->
+    .custom-item {
+        font-size: 16px;
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDropDownBox ...
+            field-template="field">
+            <template #field="{ value }">
+                <div class="custom-item">
+                    <DxTextBox
+                        :value="value"
+                        :read-only="true"
+                    />
+                </div>
+            </template>
+        </DxDropDownBox>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDropDownBox from 'devextreme-vue/drop-down-box';
+    import DxTextBox from 'devextreme-vue/text-box';
+
+    export default {
+        components: {
+            DxDropDownBox,
+            DxTextBox,
+        },
+        data() {
+            // ...
+        },
+        methods: {
+            // ...
+        }
+    };
+    </script>
+
+    <!-- tab: style.css -->
+    .custom-item {
+        font-size: 16px;
+    }
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DropDownBox } from 'devextreme-react/drop-down-box';
+    import { TextBox } from 'devextreme-react/text-box';
+
+    const fieldRender = value => {
+        return (
+            <div class="custom-item">
+                <TextBox
+                    defaultValue={value}
+                    readOnly={true}
+                />
+            </div>
+        );
+    }
+
+    const App = () => <DropDownBox fieldRender={fieldRender}/>;
+
+    export default App;
+
+    <!-- tab: style.css -->
     .custom-item {
         font-size: 16px;
     }
@@ -105,4 +180,5 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
 ---
 
 #####See Also#####
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

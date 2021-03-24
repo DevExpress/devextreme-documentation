@@ -1,4 +1,4 @@
-Assign a function to the [onItemClick](/api-reference/10%20UI%20Widgets/dxDropDownButton/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onItemClick') property. In this tutorial, the function logs the selected action's name in the browser's console: 
+Assign a function to the [onItemClick](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onItemClick') property. In this tutorial, the function logs the selected action's name in the browser's console: 
 
 ---
 ##### jQuery

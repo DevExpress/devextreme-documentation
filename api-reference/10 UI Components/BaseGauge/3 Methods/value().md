@@ -3,7 +3,7 @@ id: BaseGauge.value()
 ---
 ---
 ##### shortDescription
-Gets the [main value](/api-reference/20%20Data%20Visualization%20Widgets/BaseGauge/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value').
+Gets the [main value](/api-reference/10%20UI%20Components/BaseGauge/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value').
 
 ##### return: Number
 The main value.

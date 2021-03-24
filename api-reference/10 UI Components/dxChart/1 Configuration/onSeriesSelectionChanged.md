@@ -25,4 +25,4 @@ The model data. Available only if you use Knockout.
 The series whose selection state has been changed.
 
 ---
-To identify whether the selection has been applied or canceled, call the series' [isSelected()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isSelected') method.
+To identify whether the selection has been applied or canceled, call the series' [isSelected()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Series/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/Methods/#isSelected') method.

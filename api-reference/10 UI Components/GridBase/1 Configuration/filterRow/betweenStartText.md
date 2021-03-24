@@ -9,4 +9,4 @@ Specifies a placeholder for the editor that specifies the start of a range when 
 
 ---
 #####See Also#####
-- **filterRow**.[betweenEndText](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow/betweenEndText.md '{basewidgetpath}/Configuration/filterRow/#betweenEndText')
+- **filterRow**.[betweenEndText](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow/betweenEndText.md '{basewidgetpath}/Configuration/filterRow/#betweenEndText')

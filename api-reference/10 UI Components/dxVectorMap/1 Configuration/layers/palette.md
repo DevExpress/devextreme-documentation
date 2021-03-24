@@ -9,13 +9,13 @@ default: 'Material'
 Specifies the name of the palette or a custom range of colors to be used for coloring a layer.
 
 ---
-A palette defines a range of colors that are used to paint layer elements. This range is divided into segments using the value assigned to the [paletteSize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/paletteSize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteSize') property. Each segment contributes a color into a resulting array of colors. The more of these segments, the greater the variety of colors in this array. All available palettes are listed in the accepted values.
+A palette defines a range of colors that are used to paint layer elements. This range is divided into segments using the value assigned to the [paletteSize](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/paletteSize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#paletteSize') property. Each segment contributes a color into a resulting array of colors. The more of these segments, the greater the variety of colors in this array. All available palettes are listed in the accepted values.
 
 In order to apply a palette to a map, follow the next steps.
 
 - Assign the name of the required palette (or an array of two colors) to the **palette** property.
 - Use the **paletteSize** property to define how many colors should be produced from the palette or array specified in the previous step.
-- Specify the index of the color from the colors array, which should be used for coloring an area, using the **paletteIndex** field of the object returned by the [customize](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') callback function.
+- Specify the index of the color from the colors array, which should be used for coloring an area, using the **paletteIndex** field of the object returned by the [customize](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/customize.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#customize') callback function.
 
 #include common-ref-enum with {
     enum: "`VizPalette`",

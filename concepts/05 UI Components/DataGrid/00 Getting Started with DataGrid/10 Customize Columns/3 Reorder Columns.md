@@ -1,4 +1,4 @@
-To reorder grid columns, change their order in the **columns** array. Users can also reorder columns if you enable the [allowColumnReordering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering) property.
+To reorder grid columns, change their order in the **columns** array. Users can also reorder columns if you enable the [allowColumnReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering') property.
 
 ---
 ##### jQuery
@@ -134,4 +134,4 @@ To reorder grid columns, change their order in the **columns** array. Users can 
 
 ---
 
-In the code above, we also specify the *"date"* [dataType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType) for the `BirthDate` and `HireDate` columns because `BirthDate` and `HireDate` are stored as strings, but you want the DataGrid to treat them as date-time values.
+In the code above, we also specify the *"date"* [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') for the `BirthDate` and `HireDate` columns because `BirthDate` and `HireDate` are stored as strings, but you want the DataGrid to treat them as date-time values.

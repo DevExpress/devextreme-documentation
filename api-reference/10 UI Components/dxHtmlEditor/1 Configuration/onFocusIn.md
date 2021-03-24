@@ -25,4 +25,4 @@ Model data. Available only if you use Knockout.
 
 ---
 #####See Also#####
-- [onFocusOut](/api-reference/10%20UI%20Widgets/dxHtmlEditor/1%20Configuration/onFocusOut.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#onFocusOut')
+- [onFocusOut](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/onFocusOut.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#onFocusOut')

@@ -7,9 +7,9 @@ type: String
 Specifies the shape background image's URL.
 
 ---
-The **backgroundImageUrl** property is not in effect if the [baseType](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/baseType.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#baseType') is specified.
+The **backgroundImageUrl** property is not in effect if the [baseType](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/baseType.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#baseType') is specified.
 
 [note] Shape images should be supplied as SVG files.
 
 #####See Also#####
-[defaultImageUrl](/api-reference/10%20UI%20Widgets/dxDiagram/1%20Configuration/customShapes/defaultImageUrl.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultImageUrl')
+[defaultImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/defaultImageUrl.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultImageUrl')

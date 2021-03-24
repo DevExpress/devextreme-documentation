@@ -9,4 +9,4 @@ Specifies the button's name.
 
 ---
 #####See Also#####
-- [getButton(name)](/api-reference/10%20UI%20Widgets/dxTextEditor/3%20Methods/getButton(name).md '{basewidgetpath}/Methods/#getButtonname')
+- [getButton(name)](/api-reference/10%20UI%20Components/dxTextEditor/3%20Methods/getButton(name).md '{basewidgetpath}/Methods/#getButtonname')

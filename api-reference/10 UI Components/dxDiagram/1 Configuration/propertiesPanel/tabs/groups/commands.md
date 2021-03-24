@@ -8,7 +8,7 @@ type: Array<dxDiagramCustomCommand> | Array<String>
 Lists commands in a group.
 
 ---
-A properties panel group can contain default and custom commands. Handle the [CustomCommand](/api-reference/10%20UI%20Widgets/dxDiagram/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#customCommand') event to respond to a custom command click.
+A properties panel group can contain default and custom commands. Handle the [CustomCommand](/api-reference/10%20UI%20Components/dxDiagram/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#customCommand') event to respond to a custom command click.
 
     <!--JavaScript-->
     $(function() {

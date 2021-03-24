@@ -1,6 +1,6 @@
-[note] This topic focuses on properties that customize the text of point labels and allow you to customize an individual label. There are other properties that customize labels, such as [backgroundColor](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#backgroundColor'), [font](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/font '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/font/'), [border](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/border '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/border/'), etc., but their purpose and application is rather obvious, and for this reason, they are not detailed in this topic. For more information on them, please refer to the [label](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/') section of the API reference.
+[note] This topic focuses on properties that customize the text of point labels and allow you to customize an individual label. There are other properties that customize labels, such as [backgroundColor](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#backgroundColor'), [font](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/font '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/font/'), [border](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/border '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/border/'), etc., but their purpose and application is rather obvious, and for this reason, they are not detailed in this topic. For more information on them, please refer to the [label](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/') section of the API reference.
 
-If you need to change the text displayed by point labels, declare the [customizeText](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/label/customizeText.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#customizeText') function. It must return a string value. The argument of this function contains information about the point whose label is being customized. In the following example, the **customizeText** function instructs point labels to display both the argument and value of the point.
+If you need to change the text displayed by point labels, declare the [customizeText](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/customizeText.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#customizeText') function. It must return a string value. The argument of this function contains information about the point whose label is being customized. In the following example, the **customizeText** function instructs point labels to display both the argument and value of the point.
 
 ---
 ##### jQuery
@@ -112,7 +112,7 @@ If you need to change the text displayed by point labels, declare the [customize
 
 ---
 
-You can also customize an individual label. For this purpose, assign a function to the [customizeLabel](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/customizeLabel.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeLabel') property. This function must return an object with properties for the label that you want to customize. Note that the **customizeLabel** property should be declared at the root level of the Chart configuration.
+You can also customize an individual label. For this purpose, assign a function to the [customizeLabel](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/customizeLabel.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#customizeLabel') property. This function must return an object with properties for the label that you want to customize. Note that the **customizeLabel** property should be declared at the root level of the Chart configuration.
 
 ---
 ##### jQuery
@@ -241,8 +241,8 @@ You can also customize an individual label. For this purpose, assign a function 
 }
 
 #####See Also#####
-- [Resolve Label Overlapping](/concepts/05%20Widgets/Chart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Resolve_Overlapping/')
-- [Access a Point Label Using the API](/concepts/05%20Widgets/Chart/15%20Point%20Labels/15%20Access%20a%20Point%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Access_a_Point_Label_Using_the_API/')
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
+- [Resolve Label Overlapping](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Resolve_Overlapping/')
+- [Access a Point Label Using the API](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/15%20Access%20a%20Point%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Access_a_Point_Label_Using_the_API/')
+- [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, point labels, customize label, customizeLabel, customize text, customizeText

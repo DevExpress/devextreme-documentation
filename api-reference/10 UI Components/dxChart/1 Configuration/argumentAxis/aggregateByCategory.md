@@ -8,9 +8,9 @@ default: false
 Aggregates series points that fall into the same category.
 
 ---
-[Aggregation](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/') by categories can be applied only when the axis displays [categories](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/argumentAxis/categories.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#categories'), and each category contains two or more series points. 
+[Aggregation](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/aggregation '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/') by categories can be applied only when the axis displays [categories](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/categories.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#categories'), and each category contains two or more series points. 
 
-When **aggregateByCategory** is **true**, data is aggregated using the specified [aggregation method](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/aggregation/method.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/#method').
+When **aggregateByCategory** is **true**, data is aggregated using the specified [aggregation method](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/aggregation/method.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/#method').
 
 The following code shows an example of a data source that can be aggregated by categories and the Chart configuration for this use-case:
 

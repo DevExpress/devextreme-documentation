@@ -22,4 +22,4 @@ The image below demonstrates what cell will be returned by the following code.
 
 ![](/Content/images/doc/20_1/DataGrid/PivotGrid_child.png)
 
-This method is opposite to the [parent(direction)](/api-reference/10%20UI%20Widgets/dxPivotGrid/5%20Summary%20Cell/parent(direction).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Summary_Cell/#parentdirection') method.
+This method is opposite to the [parent(direction)](/api-reference/10%20UI%20Components/dxPivotGrid/5%20Summary%20Cell/parent(direction).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Summary_Cell/#parentdirection') method.

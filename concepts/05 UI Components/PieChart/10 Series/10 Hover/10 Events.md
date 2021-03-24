@@ -1,4 +1,4 @@
-When a user hovers the mouse pointer on a series point, the PieChart fires the [pointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/4%20Events/pointHoverChanged.md '/Documentation/ApiReference/UI_Components/dxPieChart/Events/#pointHoverChanged') event that you can handle with a function. Assign this function to the [onPointHoverChanged](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#onPointHoverChanged') property when you configure the UI component if it is going to remain unchanged during the UI component's lifetime. Call the point's [isHovered()](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isHovered') method to check whether the pointer entered or left a series point.
+When a user hovers the mouse pointer on a series point, the PieChart fires the [pointHoverChanged](/api-reference/10%20UI%20Components/BaseChart/4%20Events/pointHoverChanged.md '/Documentation/ApiReference/UI_Components/dxPieChart/Events/#pointHoverChanged') event that you can handle with a function. Assign this function to the [onPointHoverChanged](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/onPointHoverChanged.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#onPointHoverChanged') property when you configure the UI component if it is going to remain unchanged during the UI component's lifetime. Call the point's [isHovered()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isHovered().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isHovered') method to check whether the pointer entered or left a series point.
 
 ---
 ##### jQuery
@@ -99,7 +99,7 @@ When a user hovers the mouse pointer on a series point, the PieChart fires the [
 
 ---
 
-Subscribe to the **pointHoverChanged** event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Widgets/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#oneventName_eventHandler') method if you are going to change the event handler at runtime or if you need to attach several handlers to it. This approach is more typical of jQuery.
+Subscribe to the **pointHoverChanged** event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#oneventName_eventHandler') method if you are going to change the event handler at runtime or if you need to attach several handlers to it. This approach is more typical of jQuery.
 
     <!--JavaScript-->
     var pointHoverChangedHandler1 = function (e) {

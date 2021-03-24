@@ -11,6 +11,6 @@ Specifies a coefficient that determines the diameter of the largest bubble.
 dxChartSeriesTypes.BubbleSeries
 
 ---
-When defining a bubble series, you specify a [size field](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/#sizeField'). The largest size value is represented by the largest bubble. Its diameter is calculated as follows:
+When defining a bubble series, you specify a [size field](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/sizeField.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/#sizeField'). The largest size value is represented by the largest bubble. Its diameter is calculated as follows:
 
 *d = maxBubbleSize \* min(chartHeight, chartWidth)*

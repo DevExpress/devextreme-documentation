@@ -2,7 +2,7 @@ The load panel is displayed while the UI component loads data. It consists of a 
 
 ![DevExtreme HTML5/JavaScript TreeList Widget - Load Panel](/images/DataGrid/visual_elements/load_panel.png)
 
-The load panel is shown only for remote data sources by default. To show it regardless of the data source type, assign **true** to the **loadPanel**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/loadPanel/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/loadPanel/#enabled') property. Setting the same property to **false** disables the load panel completely.
+The load panel is shown only for remote data sources by default. To show it regardless of the data source type, assign **true** to the **loadPanel**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/loadPanel/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/loadPanel/#enabled') property. Setting the same property to **false** disables the load panel completely.
 
 ---
 ##### jQuery
@@ -83,7 +83,7 @@ The load panel is shown only for remote data sources by default. To show it rega
     
 ---
 
-You can also control the load panel programmatically using the [beginCustomLoading(messageText)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/beginCustomLoading(messageText).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#beginCustomLoadingmessageText') and [endCustomLoading()](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/endCustomLoading().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#endCustomLoading') methods.
+You can also control the load panel programmatically using the [beginCustomLoading(messageText)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/beginCustomLoading(messageText).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#beginCustomLoadingmessageText') and [endCustomLoading()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/endCustomLoading().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#endCustomLoading') methods.
 
 ---
 ##### jQuery
@@ -121,7 +121,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
 
     <!-- tab: App.vue -->
     <template>
-        <DxTreeList ref="TreeListRefKey">
+        <DxTreeList ref="treeListRefKey">
             <!-- ... -->
         </DxTreeList>
     </template>
@@ -133,7 +133,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         // ...
     } from 'devextreme-vue/tree-list';
 
-    const TreeListRefKey = "my-tree-list";
+    const treeListRefKey = "my-tree-list";
 
     export default {
         components: {
@@ -142,19 +142,19 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         },
         data: function() {
             return {
-                TreeListRefKey
+                treeListRefKey
             };
         },
         methods: {
             performLongOperation: function() {
-                this.TreeList.beginCustomLoading();
+                this.treeList.beginCustomLoading();
                 // ...
-                this.TreeList.endCustomLoading();
+                this.treeList.endCustomLoading();
             }
         },
         computed: {
-            TreeList: function() {
-                return this.$refs[TreeListRefKey].instance;
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
             }
         }
     }
@@ -171,15 +171,15 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     } from 'devextreme-react/tree-list';
 
     export default function App() {
-        const TreeList = useRef(null);
+        const treeList = useRef(null);
         const performLongOperation = useCallback(() => {
-            TreeList.current.instance.beginCustomLoading();
+            treeList.current.instance.beginCustomLoading();
             // ...
-            TreeList.current.instance.endCustomLoading();
+            treeList.current.instance.endCustomLoading();
         }, []);
 
         return (
-            <TreeList ref="TreeList">
+            <TreeList ref="treeList">
                 {/* ... */}
             </TreeList>
         );
@@ -187,7 +187,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     
 ---
 
-Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20Widgets/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') UI component, you can declare any [properties of this UI component](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/') in the TreeList's [loadPanel](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/loadPanel '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/loadPanel/') object. For example, you can change the panel's size with the [height](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#height') and [width](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#width') properties, or employ another loading indicator using the [indicatorSrc](/api-reference/10%20UI%20Widgets/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
+Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') UI component, you can declare any [properties of this UI component](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/') in the TreeList's [loadPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/loadPanel '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/loadPanel/') object. For example, you can change the panel's size with the [height](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#width') properties, or employ another loading indicator using the [indicatorSrc](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
 
 ---
 ##### jQuery

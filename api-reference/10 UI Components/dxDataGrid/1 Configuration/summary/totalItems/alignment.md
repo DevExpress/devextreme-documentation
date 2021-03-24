@@ -48,4 +48,4 @@ The default alignment of a summary item depends on the [type of data](/api-refer
 }
 
 #####See Also#####
-- [Total Summary - Alignment and Location](/concepts/05%20Widgets/DataGrid/65%20Summaries/10%20Total%20Summary/10%20Alignment%20and%20Location.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/#Alignment_and_Location')
+- [Total Summary - Alignment and Location](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/10%20Total%20Summary/10%20Alignment%20and%20Location.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/#Alignment_and_Location')

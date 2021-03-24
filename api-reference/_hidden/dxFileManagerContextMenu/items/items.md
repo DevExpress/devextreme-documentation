@@ -57,7 +57,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
 **Custom Items**
 
-To add a custom context menu item, specify its [text](/api-reference/_hidden/dxMenuBaseItem/text.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/items/#text') and optional settings (for example, a file extension for a newly created file). Use the [contextMenuItemClick](/api-reference/10%20UI%20Widgets/dxFileManager/4%20Events/contextMenuItemClick.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuItemClick') event to handle clicks on custom context menu items.
+To add a custom context menu item, specify its [text](/api-reference/_hidden/dxMenuBaseItem/text.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/items/#text') and optional settings (for example, a file extension for a newly created file). Use the [contextMenuItemClick](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/contextMenuItemClick.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuItemClick') event to handle clicks on custom context menu items.
 
 ---
 

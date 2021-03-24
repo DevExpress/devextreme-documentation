@@ -14,22 +14,22 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.target): basePointObject
-The clicked series point; described in the [Point](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
+The clicked series point; described in the [Point](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
 
 ---
 [note]
 
-The [onSeriesClick](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/onSeriesClick.md '{basewidgetpath}/Configuration/#onSeriesClick') function is executed after this function. The following code shows how to prevent this: 
+The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onSeriesClick.md '{basewidgetpath}/Configuration/#onSeriesClick') function is executed after this function. The following code shows how to prevent this: 
 
 ---
 ##### jQuery

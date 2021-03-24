@@ -16,11 +16,11 @@ You can add resources to a project and assign them to tasks. Resources can be pe
 
 ![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
 
-Use the [dataSource](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#dataSource') property to bind the UI component to a data source, which contains resources. If the field names in your data source differ from the 'id', 'text' and 'color' default names, use the [keyExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#keyExpr'), [textExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#textExpr') and/or [colorExpr](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/resources/colorExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#colorExpr') properties to map data fields.
+Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#dataSource') property to bind the UI component to a data source, which contains resources. If the field names in your data source differ from the 'id', 'text' and 'color' default names, use the [keyExpr](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources/keyExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#keyExpr'), [textExpr](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources/textExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#textExpr') and/or [colorExpr](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources/colorExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/#colorExpr') properties to map data fields.
 
 #####See Also#####
-- [showResources](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources')
-- [Gantt Elements - Resources](/concepts/05%20Widgets/Gantt/10%20Gantt%20Elements/30%20Resource.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/#Resource')
+- [showResources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources')
+- [Gantt Elements - Resources](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/30%20Resource.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/#Resource')
 
 ---
 

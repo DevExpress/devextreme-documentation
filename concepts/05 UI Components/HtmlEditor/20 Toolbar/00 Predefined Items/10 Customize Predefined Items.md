@@ -1,4 +1,4 @@
-To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') to the [formatName](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName') property and specify [button properties](/api-reference/10%20UI%20Widgets/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/') in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object: 
+To customize a button, assign its [name](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') to the [name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name') property and specify [button properties](/api-reference/10%20UI%20Components/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/') in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object: 
 
 ---
 ##### jQuery
@@ -8,7 +8,7 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
         $("#htmlEditorContainer").dxHtmlEditor({
             toolbar: {
                 items: [{
-                    formatName: "clear", 
+                    name: "clear", 
                     options: { icon: "clear", type: "danger" }
                 }, // ...
                 ]
@@ -23,7 +23,7 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
         <dxo-toolbar>
             <dxi-item
                 [options]="clearFormatOptions"
-                formatName="clear"
+                name="clear"
             />
         </dxo-toolbar>
     </dx-html-editor>
@@ -49,7 +49,7 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
             <DxToolbar>
                 <DxItem
                     :options="clearFormatOptions"
-                    format-name="clear"
+                    name="clear"
                 />
             </DxToolbar>
         </DxHtmlEditor>
@@ -94,7 +94,7 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
                     <Toolbar>
                         <Item
                             options={clearFormatOptions}
-                            formatName="clear"
+                            name="clear"
                         />
                     </Toolbar>
                 </HtmlEditor>
@@ -110,7 +110,7 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
     @(Html.DevExtreme().HtmlEditor()
         .Toolbar(t => t
             .Items(i => { 
-                i.Add().FormatName("clear")
+                i.Add().Name("clear")
                     .Widget(w => w.Button()
                         .Icon("clear")
                         .Type(ButtonType.Danger)
@@ -121,7 +121,7 @@ To customize a button, assign its [name](/concepts/05%20Widgets/HtmlEditor/20%20
 
 ---
 
-To customize a select box, specify [select box properties](/api-reference/10%20UI%20Widgets/dxSelectBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/') in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object in addition to the [formatName](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName') and [formatValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/formatValues.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues') properties:
+To customize a select box, specify [select box properties](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/') in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object in addition to the [name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name') and [acceptedValues](/api-reference/_hidden/dxHtmlEditorToolbarItem/acceptedValues.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#acceptedValues') properties:
 
 ---
 ##### jQuery
@@ -131,8 +131,8 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
         $("#htmlEditorContainer").dxHtmlEditor({
             toolbar: {
                 items: [{
-                    formatName: "size",
-                    formatValues: ["11px", "14px", "16px"],
+                    name: "size",
+                    acceptedValues: ["11px", "14px", "16px"],
                     options: {
                         width: 150
                     }
@@ -149,8 +149,8 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
         <dxo-toolbar>
             <dxi-item
                 [options]="sizeFormatOptions"
-                [formatValues]="sizeFormatValues"
-                formatName="size"
+                [acceptedValues]="sizeAcceptedValues"
+                name="size"
             />
         </dxo-toolbar>
     </dx-html-editor>
@@ -159,7 +159,7 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
     import { DxHtmlEditorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        sizeFormatValues = ["11px", "14px", "16px"];
+        sizeAcceptedValues = ["11px", "14px", "16px"];
         sizeFormatOptions = { width: 150 };
     }
     @NgModule({
@@ -177,8 +177,8 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
             <DxToolbar>
                 <DxItem
                     :options="sizeFormatOptions"
-                    :format-values="sizeFormatValues"
-                    format-name="size"
+                    :accepted-values="sizeAcceptedValues"
+                    name="size"
                 />
             </DxToolbar>
         </DxHtmlEditor>
@@ -202,7 +202,7 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
         data() {
             return {
                 sizeFormatOptions: { width: 150 },
-                sizeFormatValues: ["11px", "14px", "16px"]
+                sizeAcceptedValues: ["11px", "14px", "16px"]
             };
         }
     }
@@ -216,7 +216,7 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 
     const sizeFormatOptions = { width: 150 };
-    const sizeFormatValues = ["11px", "14px", "16px"];
+    const sizeAcceptedValues = ["11px", "14px", "16px"];
 
     class App extends React.Component {
         render() {
@@ -225,8 +225,8 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
                     <Toolbar>
                         <Item
                             options={sizeFormatOptions}
-                            formatValues={sizeFormatValues}
-                            formatName="size"
+                            acceptedValues={sizeAcceptedValues}
+                            name="size"
                         />
                     </Toolbar>
                 </HtmlEditor>
@@ -242,8 +242,8 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
     @(Html.DevExtreme().HtmlEditor()
         .Toolbar(t => t
             .Items(i => { 
-                i.Add().FormatName("size")
-                    .FormatValues(new[] { "11px", "14px", "16px" })
+                i.Add().Name("size")
+                    .AcceptedValues(new[] { "11px", "14px", "16px" })
                     .Widget(w => w.SelectBox()
                         .Width(150)
                     );
@@ -254,4 +254,4 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
 ---
 
 #####See Also#####
-- [Add a Custom Item](/concepts/05%20Widgets/HtmlEditor/20%20Toolbar/20%20Add%20a%20Custom%20Item.md '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Add_a_Custom_Item/')
+- [Add a Custom Item](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/20%20Add%20a%20Custom%20Item.md '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Add_a_Custom_Item/')

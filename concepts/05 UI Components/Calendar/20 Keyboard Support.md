@@ -21,6 +21,22 @@ An end user can use the following keys to interact with the UI component.
         <td>Enter</td>
         <td>Selects the focused day.</td>
     </tr>
+    <tr>
+        <td>Ctrl + &uarr;</td>
+        <td>Increases <a href="/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel">zoomLevel</a>.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &darr;</td>
+        <td>Decreases <b>zoomLevel</b>.</td>
+    </tr>
+    <tr>
+        <td>Home</td>
+        <td>Moves focus to the first date in the view.</td>
+    </tr>
+    <tr>
+        <td>End</td>
+        <td>Moves focus to the last date in the view.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler
@@ -28,6 +44,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
-- [Calendar API Reference](/api-reference/10%20UI%20Widgets/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
+- [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 
 [tags]calendar, accessibility, keyboard shortcuts

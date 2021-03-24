@@ -1,9 +1,7 @@
 Static messages for any DevExtreme UI component are defined in a locale-specific dictionary as key-value pairs. To localize the List UI component, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
 
----
-##### jQuery
-
-    <!--JavaScript-->DevExpress.localization.loadMessages({
+    <!--JavaScript-->
+    DevExpress.localization.loadMessages({
         // Replace "en" with the target locale of the dictionary
         "en": {
             "dxCollectionWidget-noDataText": "No data to display",
@@ -17,17 +15,18 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
             "dxListEditDecorator-more": "More"
         },
         "de": {
-            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
+            "dxCollectionWidget-noDataText": "Keine Daten verfÃ¼gbar",
             // ...
         }
     });
 
-    // Sets the locale
+    // Set the locale
     DevExpress.localization.locale(navigator.language);
 
-##### Angular
+<!----->
 
-    <!--TypeScript-->
+    <!--JavaScript-->
+    // or when using modules
     import { locale, loadMessages } from "devextreme/localization";
 
     loadMessages({
@@ -44,15 +43,13 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
             "dxListEditDecorator-more": "More"
         },
         "de": {
-            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
+            "dxCollectionWidget-noDataText": "Keine Daten verfÃ¼gbar",
             // ...
         }
     });
 
-    // Sets the locale
+    // Set the locale
     locale(navigator.language);
-
----
 
 [note] DevExtreme ships several predefined dictionaries for most locales. See the [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') topic for more information. 
 
@@ -98,6 +95,6 @@ Some messages can be defined by List properties as well as keys. The following t
 
 #####See Also#####
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
-- [List API Reference](/api-reference/10%20UI%20Widgets/dxList '/Documentation/ApiReference/UI_Components/dxList/')
+- [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, localization, translation, localization keys, localize messages, localize texts

@@ -4,10 +4,10 @@ type: any
 ---
 ---
 ##### shortDescription
-Configures the default UI component used for [editing](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/') and filtering in the [filter row](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
+Configures the default UI component used for [editing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/') and filtering in the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
 
 ---
-In this object, you can specify the default UI component's properties (except **onValueChanged**, which you can specify in [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')).
+In this object, you can specify the default UI component's properties (except **onValueChanged**, which you can specify in [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')).
 
 The default editor UI component depends on the column configuration. The following table illustrates the dependency:
 
@@ -139,11 +139,11 @@ Other properties that allow editor customization include:
 - **columns[]**.[editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate')         
 Use it to replace the default editor.
 
-- [onEditorPreparing](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')         
+- [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')         
 Use it to:
     - Change the editor type.
     - Override the default editor's **onValueChanged** handler.
-    - [Dynamically change editor properties in the editing state](/concepts/05%20Widgets/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Options%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Properties_in_the_Editing_State/').
+    - [Dynamically change editor properties in the editing state](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Properties%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Properties_in_the_Editing_State/').
     - Implement other customization cases.
 
 #####See Also#####

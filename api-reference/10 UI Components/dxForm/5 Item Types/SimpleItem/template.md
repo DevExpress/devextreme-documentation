@@ -13,16 +13,16 @@ The item's data.
 The Form instance.
 
 ##### field(data.dataField): String
-The item's [dataField](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField').
+The item's [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField').
 
 ##### field(data.editorOptions): Object
-The item editor's [configuration](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions').
+The item editor's [configuration](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions').
 
 ##### field(data.editorType): String
-The editor's [type](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType').
+The editor's [type](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType').
 
 ##### field(data.name): String
-The item's [name](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name').
+The item's [name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name').
 
 ##### param(itemElement): dxElement
 #include common-ref-elementparam with { element: "item" }
@@ -32,15 +32,15 @@ A template name or container.
 
 ---
 
-In Angular, Vue, and React, this template can be used instead of [editorType](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') and [editorOptions](/api-reference/10%20UI%20Widgets/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions')  to configure a custom editor. It gives you the advantage of using nested configuration components. When you configure a custom editor in the template, consider the following specificities:
+In Angular, Vue, and React, this template can be used instead of [editorType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') and [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions')  to configure a custom editor. It gives you the advantage of using nested configuration components. When you configure a custom editor in the template, consider the following specificities:
 
-- Use two-way binding to bind the custom editor to a [formData](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') field.
+- Use two-way binding to bind the custom editor to a [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') field.
 
 - If you use validation, define validation rules in the editor, not in the form item.
 
-- Use the same [validationGroup](/api-reference/10%20UI%20Widgets/dxForm/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#validationGroup') as the Form to ensure the custom editor is validated simultaneously with other form editors.
+- Use the same [validationGroup](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#validationGroup') as the Form to ensure the custom editor is validated simultaneously with other form editors.
 
-The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component in the template. The UI component is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
+The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component in the template. The UI component is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
 
 ---
 ##### Angular
@@ -235,4 +235,4 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Widgets/dxDateB
 }
 
 #####See Also#####
-- [Customize a Simple Item](/concepts/05%20Widgets/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Customize_a_Simple_Item')
+- [Customize a Simple Item](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Customize_a_Simple_Item')

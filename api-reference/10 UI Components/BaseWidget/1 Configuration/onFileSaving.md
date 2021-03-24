@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.data): Blob
 Exported data as a BLOB.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
@@ -31,5 +31,5 @@ Possible Values: 'PNG' | 'PDF' | 'JPEG' | 'SVG' | 'GIF'
 
 ---
 #####See Also#####
-- [onExporting](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExporting.md '{basewidgetpath}/Configuration#onExporting')
-- [onExported](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
+- [onExporting](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onExporting.md '{basewidgetpath}/Configuration#onExporting')
+- [onExported](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')

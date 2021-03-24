@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can delete [tasks](/api-reference/10%20UI%20Widgets/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
+Specifies whether a user can delete [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks').
 
 ---
 
@@ -33,8 +33,8 @@ The alert message notifies users that deleting a task creates a gap in the workf
 ---
 
 #####See Also#####
-- [onTaskDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleting|)
-- [onTaskDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#|onTaskDeleted)
-- [deleteTask](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#deleteTaskkey)
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [onTaskDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleting)
+- [onTaskDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleted)
+- [deleteTask](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/deleteTask(key).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#deleteTaskkey')
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')
 

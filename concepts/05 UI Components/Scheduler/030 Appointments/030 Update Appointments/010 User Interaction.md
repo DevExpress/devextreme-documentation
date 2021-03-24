@@ -10,9 +10,9 @@ An end user can update an appointment in one of the following ways.
     </video>
 </div>
 
-When a user finishes updates, they are saved to the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource'). 
+When a user finishes updates, they are saved to the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource'). 
 
-If a user updates a [recurring appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments'), the Scheduler displays a dialog that allows choosing between editing the current appointment and editing the entire series of recurring appointments. If you do not want this dialog to appear, choose the edit mode beforehand using the [recurrenceEditMode](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceEditMode') property.
+If a user updates a [recurring appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments'), the Scheduler displays a dialog that allows choosing between editing the current appointment and editing the entire series of recurring appointments. If you do not want this dialog to appear, choose the edit mode beforehand using the [recurrenceEditMode](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceEditMode') property.
 
 ---
 
@@ -85,7 +85,7 @@ If a user updates a [recurring appointment](/concepts/05%20Widgets/Scheduler/030
 
 ---
 
-To prevent a user from updating an appointment, set the **editing**.[allowUpdating](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/editing/allowUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowUpdating') property to **false**.
+To prevent a user from updating an appointment, set the **editing**.[allowUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowUpdating') property to **false**.
 
 ---
 

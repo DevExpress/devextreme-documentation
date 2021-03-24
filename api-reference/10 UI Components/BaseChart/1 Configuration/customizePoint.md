@@ -10,10 +10,10 @@ Customizes the appearance of an individual series point.
 Information on the series point.
 
 ##### return: dxChartSeriesTypes_CommonSeries_point
-The point's [configuration](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point/').
+The point's [configuration](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point/').
 
 ---
-By default, all series points in a chart are identical, but you can specify a unique appearance for individual points using the **customizePoint** function. This function should return an object with properties that will be changed for a certain point. See the [point](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point') object for information about all properties available for changing.
+By default, all series points in a chart are identical, but you can specify a unique appearance for individual points using the **customizePoint** function. This function should return an object with properties that will be changed for a certain point. See the [point](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point '{basewidgetpath}/Configuration/series/point') object for information about all properties available for changing.
 
 [note]The **hoverMode** and **selectionMode** properties cannot be changed using the **customizePoint** function, because they do not have anything to do with the appearance of series points.
 
@@ -50,7 +50,7 @@ The **customizePoint** function accepts an object providing information about th
     </tr>
 </table>
 
-In the [*range bar*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/') and [*range area*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') series, the **value** field is replaced by the following fields.
+In the [*range bar*](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/') and [*range area*](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') series, the **value** field is replaced by the following fields.
 
 <table class="dx-table full-width">
     <tr>
@@ -67,7 +67,7 @@ In the [*range bar*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/
     </tr>
 </table>
 
-In the financial series ([*candlestick*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') and [*stock*](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/')), the **value** field is replaced by the following fields.
+In the financial series ([*candlestick*](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CandleStickSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/') and [*stock*](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StockSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/')), the **value** field is replaced by the following fields.
 
 <table class="dx-table full-width">
     <tr>

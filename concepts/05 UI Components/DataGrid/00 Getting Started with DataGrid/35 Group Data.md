@@ -1,6 +1,6 @@
-Grid records can be grouped by single or multiple columns. To group records, users should drag and drop column headers onto the [groupPanel](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/). Enable the **groupPanel**.[visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible) property to display this UI element.
+Grid records can be grouped by single or multiple columns. To group records, users should drag and drop column headers onto the [groupPanel](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/'). Enable the **groupPanel**.[visible](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible') property to display this UI element.
 
-To group data in code, specify a column's [groupIndex](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex) property. In this tutorial, the **groupIndex** is specified for the `Country` column:
+To group data in code, specify a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex') property. In this tutorial, the **groupIndex** is specified for the `Country` column:
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-By default, the image that the Gallery UI component displays initially is the first item of the data source. To specify another item to be initially displayed, assign its index in the [dataSource](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#dataSource') to the [selectedIndex](/api-reference/10%20UI%20Widgets/dxGallery/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedIndex') property.
+By default, the image that the Gallery UI component displays initially is the first item of the data source. To specify another item to be initially displayed, assign its index in the [dataSource](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#dataSource') to the [selectedIndex](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedIndex') property.
 
 ---
 ##### jQuery
@@ -103,7 +103,7 @@ By default, the image that the Gallery UI component displays initially is the fi
 
 ---
 
-As an alternative, you can specify the initial image using its data source object. In this case, assign the object to the [selectedItem](/api-reference/10%20UI%20Widgets/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedItem') property.
+As an alternative, you can specify the initial image using its data source object. In this case, assign the object to the [selectedItem](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedItem') property.
 
 ---
 ##### jQuery
@@ -235,10 +235,10 @@ As an alternative, you can specify the initial image using its data source objec
 ---
 
 #####See Also#####
-- [Gallery - Switch Between Images](/concepts/05%20Widgets/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/UI_Components/Gallery/Switch_Between_Images/')
-- [Gallery - Enable the Slideshow](/concepts/05%20Widgets/Gallery/15%20Enable%20the%20Slideshow.md '/Documentation/Guide/UI_Components/Gallery/Enable_the_Slideshow/')
-- [Gallery - Animate the Image Change](/concepts/05%20Widgets/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
+- [Gallery - Switch Between Images](/concepts/05%20UI%20Components/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/UI_Components/Gallery/Switch_Between_Images/')
+- [Gallery - Enable the Slideshow](/concepts/05%20UI%20Components/Gallery/15%20Enable%20the%20Slideshow.md '/Documentation/Guide/UI_Components/Gallery/Enable_the_Slideshow/')
+- [Gallery - Animate the Image Change](/concepts/05%20UI%20Components/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
-- [Gallery API Reference](/api-reference/10%20UI%20Widgets/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
+- [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]gallery, initial image, selected image, selectedIndex, selectedItem

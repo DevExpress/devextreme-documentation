@@ -16,4 +16,4 @@ The UI component instances.
 ---
 
 #####See Also#####
-- [svg()](/api-reference/20%20Data%20Visualization%20Widgets/BaseWidget/3%20Methods/svg().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#svg')
+- [svg()](/api-reference/10%20UI%20Components/BaseWidget/3%20Methods/svg().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#svg')

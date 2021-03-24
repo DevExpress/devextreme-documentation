@@ -309,19 +309,19 @@ The following code creates a simple ResponsiveBox. The UI component defines an o
 
 ---
     
-The ResponsiveBox elements in the code above are declared using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields.
+The ResponsiveBox elements in the code above are declared using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields.
 
 - [location](/api-reference/_hidden/dxResponsiveBoxItem/location '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/items/location/')
 - [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#template')
 - [visible](/api-reference/_hidden/CollectionWidgetItem/visible.md '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/items/#visible')
 
-All ResponsiveBox elements are arranged against a layout grid defined by the [rows](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Widgets/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. For further information, see the [Create the Layout Grid](/concepts/05%20Widgets/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/') topic.
+All ResponsiveBox elements are arranged against a layout grid defined by the [rows](/api-reference/10%20UI%20Components/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Components/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. For further information, see the [Create the Layout Grid](/concepts/05%20UI%20Components/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/') topic.
 
 #####See Also#####
 #include common-link-configurewidget
-- [ResponsiveBox - Size Qualifiers](/concepts/05%20Widgets/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/')
-- [ResponsiveBox - Create the Layout Grid](/concepts/05%20Widgets/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/')
-- [ResponsiveBox - Arrange Layout Elements](/concepts/05%20Widgets/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
-- [ResponsiveBox API Reference](/api-reference/10%20UI%20Widgets/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
+- [ResponsiveBox - Size Qualifiers](/concepts/05%20UI%20Components/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/')
+- [ResponsiveBox - Create the Layout Grid](/concepts/05%20UI%20Components/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/')
+- [ResponsiveBox - Arrange Layout Elements](/concepts/05%20UI%20Components/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
+- [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
 [tags]dxresponsivebox, responsive box, responsiveBox, layout UI component, overview, dxItem, full screen UI component

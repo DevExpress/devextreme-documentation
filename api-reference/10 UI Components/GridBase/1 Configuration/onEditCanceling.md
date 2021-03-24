@@ -19,11 +19,11 @@ Row changes to be discarded.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ---
-An edit operation can be canceled from the UI (with the Cancel button) or programatically (with the [cancelEditData()]({basewidgetpath}/Methods/#cancelEditData) method).
+An edit operation can be canceled from the UI (with the Cancel button) or programatically (with the [cancelEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cancelEditData().md '{basewidgetpath}/Methods/#cancelEditData') method).

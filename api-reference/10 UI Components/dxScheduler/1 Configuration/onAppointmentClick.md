@@ -19,16 +19,16 @@ The initial appointment.
 ##### field(e.cancel): Boolean
 If **true**, hides the appointment tooltip.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 Model data. Available only if Knockout is used.
 
 ##### field(e.targetedAppointmentData): Object

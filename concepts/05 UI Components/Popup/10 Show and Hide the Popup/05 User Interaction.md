@@ -1,4 +1,4 @@
-The Popup can also be hidden when a user clicks outside it. To control this behavior of the Popup, use the [closeOnOutsideClick](/api-reference/10%20UI%20Widgets/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick') property.
+The Popup can also be hidden when a user clicks outside it. To control this behavior of the Popup, use the [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick') property.
 
 ---
 ##### jQuery

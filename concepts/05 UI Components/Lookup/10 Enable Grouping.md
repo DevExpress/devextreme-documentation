@@ -115,7 +115,7 @@ The Lookup can organize items in groups. If you use a simple array as a data sou
 
 [note]Only one-level grouping is supported.
 
-If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), specify its [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property. In both cases, you need to make the Lookup know that its data source is grouped by assigning **true** to the [grouped](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped') property.
+If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), specify its [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property. In both cases, you need to make the Lookup know that its data source is grouped by assigning **true** to the [grouped](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped') property.
 
 ---
 ##### jQuery
@@ -262,7 +262,7 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
 
 ---
 
-To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
 
 ---
 
@@ -380,7 +380,7 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20W
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Widgets/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->
     const lookupData = [{
@@ -403,8 +403,8 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
     });
 
 #####See Also#####
-- [Lookup - Customize the Appearance](/concepts/05%20Widgets/Lookup/20%20Customize%20the%20Appearance '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
-- [Lookup - Enable Paging](/concepts/05%20Widgets/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
+- [Lookup - Customize the Appearance](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
+- [Lookup - Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
 - [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
 
 [tags]lookup, group, group template, customize

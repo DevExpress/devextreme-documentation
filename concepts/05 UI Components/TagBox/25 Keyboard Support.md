@@ -33,15 +33,23 @@ An end user can use the following keys to interact with the UI component.
         <td>Backspace</td>
         <td>Unselects the last selected item.</td>
     </tr>
+    <tr>
+        <td>&larr; / &rarr;</td>
+        <td>Focuses the previous/following tag.</td>
+    </tr>
+    <tr>
+        <td>Backspace / Delete</td>
+        <td>Removes focused tag.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler
 
 #####See Also#####
 #include common-link-callmethods
-- [TagBox - Configure Search Parameters](/concepts/05%20Widgets/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/TagBox/Configure_Search_Parameters/')
-- [TagBox - Control the Behavior](/concepts/05%20Widgets/TagBox/03%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TagBox/Control_the_Behavior/')
-- [TagBox API Reference](/api-reference/10%20UI%20Widgets/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
+- [TagBox - Configure Search Parameters](/concepts/05%20UI%20Components/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/TagBox/Configure_Search_Parameters/')
+- [TagBox - Control the Behavior](/concepts/05%20UI%20Components/TagBox/03%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TagBox/Control_the_Behavior/')
+- [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
 [tags]tag box, tagBox, navigation, accessibility, keyboard shortcuts

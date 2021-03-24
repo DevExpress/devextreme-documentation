@@ -70,7 +70,6 @@ You can also set a column's [sortOrder](/Documentation/ApiReference/UI_Component
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

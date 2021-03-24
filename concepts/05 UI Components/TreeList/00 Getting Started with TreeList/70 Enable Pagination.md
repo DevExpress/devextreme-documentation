@@ -60,7 +60,6 @@ When pagination is enabled, TreeList loads records page by page instead of loadi
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

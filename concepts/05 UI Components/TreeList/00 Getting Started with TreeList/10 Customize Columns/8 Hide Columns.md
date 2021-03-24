@@ -60,7 +60,6 @@ The TreeList displays all columns from the **columns** array. To hide a column, 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

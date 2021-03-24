@@ -131,7 +131,6 @@ DevExtreme includes a validation engine that checks edited values before they ar
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

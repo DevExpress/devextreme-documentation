@@ -163,7 +163,6 @@ You can obtain the selected record's data in the [onSelectionChanged](/Documenta
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
 

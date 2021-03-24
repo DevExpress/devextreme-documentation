@@ -49,7 +49,7 @@ Note that the [dataSource](/api-reference/10%20UI%20Components/dxSlideOut/1%20Co
         });
     });
 
-[note]The SlideOut contains the [List](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20UI%20Components/SlideOutView/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOutView/Overview/') instead of the SlideOut.
+[note]The SlideOut contains the [List](/Documentation/Guide/UI_Components/List/Getting_Started_with_List) UI component in the slide-out menu. If you need to put another collection UI component there, use the [SlideOutView](/concepts/05%20UI%20Components/SlideOutView/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOutView/Overview/') instead of the SlideOut.
 
 #####See Also#####
 #include common-link-configurewidget

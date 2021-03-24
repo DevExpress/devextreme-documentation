@@ -10,6 +10,9 @@ Specifies a custom template for the UI component content.
 ##### param(contentElement): dxElement
 #include common-ref-elementparam with { element: "UI component content" }
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 #####See Also#####
 - [Customize the View](/concepts/05%20UI%20Components/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_View/')

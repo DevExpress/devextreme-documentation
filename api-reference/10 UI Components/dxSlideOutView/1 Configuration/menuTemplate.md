@@ -10,6 +10,9 @@ Specifies a custom template for the menu content.
 ##### param(menuElement): dxElement
 #include common-ref-elementparam with { element: "menu" }
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 #####See Also#####
 - [Customize the Menu](/concepts/05%20UI%20Components/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/')

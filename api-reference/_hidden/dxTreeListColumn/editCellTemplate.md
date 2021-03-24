@@ -60,6 +60,9 @@ A function that returns the variable that should be tracked.
 - **handler(newValue)**: Function       
 A function called when this variable changes.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 Use the **editCellTemplate** to replace the default editor. In the template, specify the replacement editor's appearance and behavior.
 

@@ -16,6 +16,9 @@ The UI component's instance.
 ##### field(options.dataSource): DataSource_Options
 A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The {WidgetName} generates a header filter's data source automatically based on column values. Use the **dataSource** property to change the generated data source or specify a custom data source.
 

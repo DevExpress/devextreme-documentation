@@ -33,8 +33,8 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
             dataField="status"> <!-- a field from a data source to be filtered -->
             <dxo-lookup
                 [dataSource]="lookupData"> <!-- contains values present in the dataField -->
-            </dxo-field>
-        </dxi-column>
+            </dxo-lookup>
+        </dxi-field>
     </dx-filter-builder>
 
     <!--TypeScript-->
@@ -55,6 +55,73 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder>
+            <DxField data-field="status"> <!-- a field from a data source to be filtered -->
+                <DxLookup :data-source="lookupData" /> <!-- contains values present in the dataField -->
+            </DxField>
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, {
+        DxField,
+        DxLookup
+    } from 'devextreme-vue/filter-builder';
+
+    const lookupData = [
+        'Not Started',
+        'Need Assistance',
+        'In Progress',
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField,
+            DxLookup
+        },
+        data() {
+            return {
+                lookupData
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, {
+        Field,
+        Lookup
+    } from 'devextreme-react/filter-builder';
+
+    const lookupData = [
+        'Not Started',
+        'Need Assistance',
+        'In Progress',
+        // ...
+    ];
+
+    export default function App() {
+        return (
+            <FilterBuilder>
+                <Field dataField="status"> {/* a field from a data source to be filtered */}
+                    <Lookup dataSource={lookupData}> {/* contains values present in the dataField */}
+                </Field>
+            </FilterBuilder>
+        );
+    }
 
 ---
 
@@ -88,9 +155,6 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
     <!--HTML-->
     <dx-filter-builder>
         <dxi-field
-            dataField="task">
-        </dxi-field>
-        <dxi-field
             dataField="statusId"> <!-- a field from a data source to be filtered -->
             <dxo-lookup 
                 [dataSource]="statuses"
@@ -118,6 +182,81 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder>
+            <DxField data-field="statusId"> <!-- a field from a data source to be filtered -->
+                <DxLookup
+                    :data-source="statuses"
+                    value-expr="id" <!-- contains values present in the dataField -->
+                    display-expr="name" <!-- provides display values -->
+                />
+            </DxField>
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, {
+        DxField,
+        DxLookup
+    } from 'devextreme-vue/filter-builder';
+
+    const statuses = [
+        { id: 1, name: 'Not Started' },
+        { id: 2, name: 'Need Assistance' },
+        { id: 3, name: 'In Progress' },
+        // ...
+    ];
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField,
+            DxLookup
+        },
+        data() {
+            return {
+                statuses
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, {
+        Field,
+        Lookup
+    } from 'devextreme-react/filter-builder';
+
+    const statuses = [
+        { id: 1, name: 'Not Started' },
+        { id: 2, name: 'Need Assistance' },
+        { id: 3, name: 'In Progress' },
+        // ...
+    ];
+
+    export default function App() {
+        return (
+            <FilterBuilder>
+                <Field dataField="statusId"> {/* a field from a data source to be filtered */}
+                    <Lookup
+                        dataSource={statuses}
+                        valueExpr="id" {/* contains values present in the dataField */}
+                        displayExpr="name" {/* provides display values */}
+                    />
+                </Field>
+            </FilterBuilder>
+        );
+    }
 
 ---
 

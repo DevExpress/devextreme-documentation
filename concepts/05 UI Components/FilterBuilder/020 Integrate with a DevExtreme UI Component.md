@@ -5,7 +5,7 @@ contain data fields from a UI component's data source. For example, the followin
 #####jQuery
 
     <!--JavaScript-->
-    var products = [{
+    const products = [{
         ID: 1,
         Name: "HD Video Player",
         Price: 330,
@@ -18,7 +18,10 @@ contain data fields from a UI component's data source. For example, the followin
     }, 
     // ...
     ];
-    var fields = [{
+    const fields = [{
+        dataField: "ID",
+        dataType: "number"
+    }, {
         dataField: "Name"
     }, {
         dataField: "Price",
@@ -41,8 +44,17 @@ contain data fields from a UI component's data source. For example, the followin
 #####Angular
 
     <!--HTML-->
-    <dx-filter-builder 
-        [fields]="fields">
+    <dx-filter-builder>
+        <dxi-field
+            dataField="ID"
+            dataType="number">
+        </dxi-field>
+        <dxi-field dataField="Name"></dxi-field>
+        <dxi-field
+            dataField="Price"
+            dataType="number"
+            format="currency">
+        </dxi-field>
     </dx-filter-builder>
     <dx-list 
         [dataSource]="products">
@@ -68,16 +80,6 @@ contain data fields from a UI component's data source. For example, the followin
         }, 
         // ...
         ];
-        fields = [{
-            dataField: "ID",
-            dataType: "number"
-        }, {
-            dataField: "Name"
-        }, {
-            dataField: "Price",
-            dataType: "number",
-            format: "currency"
-        }];
     }
     @NgModule({
         imports: [
@@ -87,6 +89,113 @@ contain data fields from a UI component's data source. For example, the followin
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder>
+            <DxField
+                data-field="ID"
+                data-type="number"
+            />
+            <DxField data-field="Name" />
+            <DxField
+                data-field="Price"
+                data-type="number"
+                format="currency"
+            />
+        </DxFilterBuilder>
+        <DxList :data-source="products">
+            <template #item="{ data }">
+                <div>{{ data.Category }}: {{ data.Name }}</div>
+            </template>
+        </DxList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, { DxField } from 'devextreme-vue/filter-builder';
+    import DxList from 'devextreme-vue/list';
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField,
+            DxList
+        },
+        data() {
+            return {
+                products: [{
+                    ID: 1,
+                    Name: "HD Video Player",
+                    Price: 330,
+                    Category: "Video Players"
+                }, {
+                    ID: 2,
+                    Name: "SuperPlasma 50",
+                    Price: 2400,
+                    Category: "Televisions"
+                }, 
+                // ...
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, { Field } from 'devextreme-react/filter-builder';
+    import List from 'devextreme-react/list';
+
+    const products = [{
+        ID: 1,
+        Name: "HD Video Player",
+        Price: 330,
+        Category: "Video Players"
+    }, {
+        ID: 2,
+        Name: "SuperPlasma 50",
+        Price: 2400,
+        Category: "Televisions"
+    }, 
+    // ...
+    ];
+
+    const ListItem = (data) => {
+        return (
+            <div>{ data.Category }: { data.Name }</div>
+        );
+    }
+
+    export default function App() {
+        return (
+            <React.Fragment>
+                <FilterBuilder>
+                    <Field
+                        dataField="ID"
+                        dataType="number"
+                    />
+                    <Field dataField="Name" />
+                    <Field
+                        dataField="Price"
+                        dataType="number"
+                        format="currency"
+                    />
+                </FilterBuilder>
+                <List
+                    dataSource={products}
+                    itemRender={ListItem}
+                />
+            </React.Fragment>
+        );
+    }
 
 ---
 
@@ -101,10 +210,10 @@ To filter data, update the data source's [filter](/api-reference/30%20Data%20Lay
         $("#button").dxButton({
             text: "Apply Filter",
             onClick: function () {
-                var filter = $("#filterBuilder").dxFilterBuilder("instance").getFilterExpression();
-                var listData = $("#list").dxList("instance").getDataSource();
-                listData.filter(filter);
-                listData.load();
+                const filterExpr = $("#filterBuilder").dxFilterBuilder("instance").getFilterExpression();
+                const listDataSource = $("#list").dxList("instance").getDataSource();
+                listDataSource.filter(filterExpr);
+                listDataSource.load();
             },
         });
     });
@@ -127,10 +236,10 @@ To filter data, update the data source's [filter](/api-reference/30%20Data%20Lay
         // @ViewChild(DxListComponent) list: DxListComponent;
         // @ViewChild(DxFilterBuilderComponent) filterBuilder: DxFilterBuilderComponent;
         // ...
-        buttonClick() {
-            let listData = this.list.getDataSource();
-            listData.filter(this.filterBuilder.getFilterExpression());
-            listData.load();
+        applyFilter() {
+            const listDataSource = this.list.getDataSource();
+            listDataSource.filter(this.filterBuilder.getFilterExpression());
+            listDataSource.load();
         }
     }
     @NgModule({
@@ -147,8 +256,94 @@ To filter data, update the data source's [filter](/api-reference/30%20Data%20Lay
     <!-- ... -->
     <dx-button 
         text="Apply Filter"
-        (onClick)="buttonClick()">
-    </dx-button>   
+        (onClick)="applyFilter()">
+    </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder :ref="filterBuilderRefKey">
+            <!-- ... -->
+        </DxFilterBuilder>
+        <DxList :ref="listRefKey" ... >
+            <!-- ... -->
+        </DxList>
+        <DxButton 
+            text="Apply Filter"
+            @click="applyFilter"
+        />
+    </template>
+
+    <script>
+    // ...
+    import DxButton from 'devextreme-vue/button';
+
+    const filterBuilderRefKey = "my-filter-builder";
+    const listRefKey = "my-list";
+
+    export default {
+        components: {
+            // ...
+            DxButton
+        },
+        data() {
+            return {
+                // ...
+                filterBuilderRefKey,
+                listRefKey
+            };
+        },
+        method: {
+            applyFilter() {
+                const listDataSource = this.list.getDataSource();
+                listDataSource.filter(this.filterBuilder.getFilterExpression());
+                listDataSource.load();
+            }
+        },
+        computed: {
+            filterBuilder: function() {
+                return this.$refs[filterBuilderRefKey].instance;
+            },
+            list: function() {
+                return this.$refs[listRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    // ...
+    import Button 'devextreme-react/button';
+
+    export default function App() {
+        const filterBuilder = useRef(null);
+        const list = useRef(null);
+
+        const applyFilter = () => {
+            const listDataSource = list.getDataSource();
+            listDataSource.filter(filterBuilder.getFilterExpression());
+            listDataSource.load();
+        };
+
+        return (
+            <React.Fragment>
+                <FilterBuilder ref={filterBuilder}>
+                    {/* ... */}
+                </FilterBuilder>
+                <List ref={list}>
+                    {/* ... */}
+                </List>
+                <Button 
+                    text="Apply Filter"
+                    onClick={applyFilter}
+                />
+            </React.Fragment>
+        );
+    }
 
 ---
 

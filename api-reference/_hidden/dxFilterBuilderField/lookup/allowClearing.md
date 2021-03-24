@@ -75,7 +75,7 @@ If you need to specify this property based on a condition, set the [showClearBut
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ...
-            :on-editor-preparing="onEditorPreparing">
+            @editor-preparing="onEditorPreparing">
             <!-- ... -->
         </Dx{WidgetName>
     </template>

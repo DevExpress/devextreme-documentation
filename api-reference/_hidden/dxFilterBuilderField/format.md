@@ -30,19 +30,22 @@ This property also controls the user input in cells that use the [DateBox](/api-
 
 #####Angular
 
+    <!--HTML-->
+    <dx-filter-builder ... >
+        <dxi-field
+            dataField="SaleAmount"
+            format="currency"
+            [editorOptions]="saleAmountEditorOptions">
+        </dxi-field>
+    </dx-filter-builder>
+
     <!--TypeScript-->
     import { DxFilterBuilderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        fields = [{
-            dataField: "SaleAmount",
-            format: "currency",
-            editorOptions: {
-                format: "$ #,##0.##"
-            }
-        }, 
-        // ...
-        ];
+        saleAmountEditorOptions = {
+            format: "$ #,##0.##"
+        };
     }
     @NgModule({
         imports: [
@@ -51,10 +54,66 @@ This property also controls the user input in cells that use the [DateBox](/api-
         ],
         // ...
     })
-    <!--HTML-->
-    <dx-filter-builder
-        [fields]="fields">
-    </dx-filter-builder>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder ... >
+            <DxField
+                data-field="SaleAmount"
+                format="currency"
+                :editor-options="saleAmountEditorOptions"
+            />
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, {
+        DxField
+    } from 'devextreme-vue/filter-builder';
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField
+        },
+        data() {
+            return {
+                saleAmountEditorOptions: {
+                    format: "$ #,##0.##"
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, {
+        Field
+    } from 'devextreme-react/filter-builder';
+
+    const saleAmountEditorOptions = {
+        format: "$ #,##0.##"
+    };
+
+    export default function App() {
+        return (
+            <FilterBuilder>
+                <Field
+                    dataField="SaleAmount"
+                    format="currency"
+                    editorOptions={saleAmountEditorOptions}
+                />
+            </FilterBuilder>
+        );
+    }
 
 ---
 

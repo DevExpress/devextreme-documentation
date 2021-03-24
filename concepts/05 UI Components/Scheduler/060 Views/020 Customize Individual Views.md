@@ -9,13 +9,13 @@ The following code defines three views: the first is not customized, the second 
     var data = [{
         text: "Google AdWords Strategy",
         ownerId: [2],
-        startDate: new Date(2016, 1, 1, 9, 0),
-        endDate: new Date(2016, 1, 1, 10, 30)
+        startDate: new Date("2016-01-01T09:00:00.000Z"),
+        endDate: new Date("2016-01-01T10:30:00.000Z")
     }, {
         text: "New Brochures",
         ownerId: [1],
-        startDate: new Date(2016, 1, 1, 11, 30),
-        endDate: new Date(2016, 1, 1, 14, 15)
+        startDate: new Date("2016-01-01T11:30:00.000Z"),
+        endDate: new Date("2016-01-01T14:15:00.000Z")
     },
     // ...
     ];
@@ -74,13 +74,13 @@ The following code defines three views: the first is not customized, the second 
         schedulerData = [{
             text: "Google AdWords Strategy",
             ownerId: [2],
-            startDate: new Date(2016, 1, 1, 9, 0),
-            endDate: new Date(2016, 1, 1, 10, 30)
+            startDate: new Date("2016-01-01T09:00:00.000Z"),
+            endDate: new Date("2016-01-01T10:30:00.000Z")
         }, {
             text: "New Brochures",
             ownerId: [1],
-            startDate: new Date(2016, 1, 1, 11, 30),
-            endDate: new Date(2016, 1, 1, 14, 15)
+            startDate: new Date("2016-01-01T11:30:00.000Z"),
+            endDate: new Date("2016-01-01T14:15:00.000Z")
         },
         // ...
         ];
@@ -138,13 +138,13 @@ The following code defines three views: the first is not customized, the second 
                 schedulerData: [{
                     text: "Google AdWords Strategy",
                     ownerId: [2],
-                    startDate: new Date(2016, 1, 1, 9, 0),
-                    endDate: new Date(2016, 1, 1, 10, 30)
+                    startDate: new Date("2016-01-01T09:00:00.000Z"),
+                    endDate: new Date("2016-01-01T10:30:00.000Z")
                 }, {
                     text: "New Brochures",
                     ownerId: [1],
-                    startDate: new Date(2016, 1, 1, 11, 30),
-                    endDate: new Date(2016, 1, 1, 14, 15)
+                    startDate: new Date("2016-01-01T11:30:00.000Z"),
+                    endDate: new Date("2016-01-01T14:15:00.000Z")
                 },
                 // ...
                 ],
@@ -171,13 +171,13 @@ The following code defines three views: the first is not customized, the second 
     const schedulerData = [{
         text: 'Google AdWords Strategy',
         ownerId: [2],
-        startDate: new Date(2016, 1, 1, 9, 0),
-        endDate: new Date(2016, 1, 1, 10, 30)
+        startDate: new Date("2016-01-01T09:00:00.000Z"),
+        endDate: new Date("2016-01-01T10:30:00.000Z")
     }, {
         text: 'New Brochures',
         ownerId: [1],
-        startDate: new Date(2016, 1, 1, 11, 30),
-        endDate: new Date(2016, 1, 1, 14, 15)
+        startDate: new Date("2016-01-01T11:30:00.000Z"),
+        endDate: new Date("2016-01-01T14:15:00.000Z")
     },
     // ...
     ];

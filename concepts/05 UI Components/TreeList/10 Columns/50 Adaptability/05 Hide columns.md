@@ -6,11 +6,11 @@ You can use the **columns[]**.[hidingPriority](/Documentation/ApiReference/UI_Co
 
 [note]
 
-Peculiar cases to set **columnHidingEnabled** to **true**:
+Peculiar cases to enable the **columnHidingEnabled** property:
 
-* TreeList truncates a column's cell text due to its length. This occurs when the column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) is not set or set as a percentage. If you need to hide columns until the full text is displayed, enable the columnHidingEnabled property.
+* TreeList truncates a column's cell text due to its length. This occurs when the column's [width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) is not set or set as a percentage. If you need to hide columns until the full text is displayed, set the columnHidingEnabled property to **true**.
 
-* TreeList adds horizontal scrolling for adaptability when all columns have a fixed (columnWidth, columns[].width set in pixels) or adaptive (columnAutoWidth) widths. Enable the columnHidingEnabled property if you need to disable the horizontal scrolling and hide columns instead.
+* TreeList adds horizontal scrolling for adaptability when all columns have a fixed (columnWidth, columns[].width set in pixels) or adaptive (columnAutoWidth) widths. Set the columnHidingEnabled property to **true** if you need to disable the horizontal scrolling and hide columns instead.
 
 [/note]
 

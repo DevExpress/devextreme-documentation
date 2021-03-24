@@ -24,16 +24,19 @@ DevExtreme includes a validation engine that checks edited values before they ar
                 dataField: "BirthDate",
                 // ...
                 validationRules: [{ type: "required" }]
-            },
-            // ...
-            {
+            }, {
                 dataField: "HireDate", 
                 // ...
                 validationRules: [{ type: "required" }]
             },
             // ...
-            ],
-        });
+            {
+                dataField: "State",
+                // ...
+                validationRules: [{ type: "required" }],
+            }
+            // ...
+        );
     });
 
 ##### Angular
@@ -53,6 +56,10 @@ DevExtreme includes a validation engine that checks edited values before they ar
         </dxi-column>
         <dxi-column ...
             dataField="HireDate">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+        </dxi-column>
+        <dxi-column ...
+            dataField="State">
             <dxi-validation-rule type="required"></dxi-validation-rule>
         </dxi-column>
         <dxo-editing
@@ -80,9 +87,13 @@ DevExtreme includes a validation engine that checks edited values before they ar
                     data-field="BirthDate">
                     <DxRequiredRule />
                 </DxColumn>
-                <!-- ... -->
                 <DxColumn ...
                     data-field="HireDate">
+                    <DxRequiredRule />
+                </DxColumn>
+                <!-- ... -->
+                <DxColumn ...
+                    data-field="State">
                     <DxRequiredRule />
                 </DxColumn>
                 <DxEditing

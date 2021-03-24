@@ -25,8 +25,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     export class AppComponent {
         schedulerData = [{
             text: "Meeting",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20),
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z"),
             roomId: 1
         },
         // ...
@@ -78,8 +78,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
             return {
                 schedulerData: [{
                     text: "Meeting",
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20),
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z"),
                     roomId: 1
                 },
                 // ...
@@ -106,8 +106,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
 
     const schedulerData = [{
         text: 'Meeting',
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20),
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z"),
         roomId: 1
     },
     // ...
@@ -158,8 +158,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         .controller('DemoController', function DemoController($scope) {
             $scope.schedulerData = [{
                 text: "Meeting",
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20),
+                startDate: new Date("2016-04-24T09:10:00.000Z"),
+                endDate: new Date("2016-04-24T11:20:00.000Z"),
                 roomId: 1
             },
             // ...
@@ -194,8 +194,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     <!--JavaScript-->var viewModel= {
         schedulerData: [{
             text: "Meeting",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20),
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z"),
             roomId: 1
         },
         // ...
@@ -248,8 +248,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
                 currentDate: new Date(2016, 4, 24),
                 appointments: [{
                     text: "Meeting",
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20),
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z"),
                     roomId: 1
                 }, 
                 // ...
@@ -278,8 +278,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         text: 'His Girl Friday',
         year: 1940,
         img: 'images/movies/HisGirlFriday.jpg',
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, 
     // ...
     ];
@@ -323,8 +323,8 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 
     <!--JavaScript-->var schedulerData = [{
         text: "Meeting",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20),
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z"),
         roomId: 1
     },
     // ...

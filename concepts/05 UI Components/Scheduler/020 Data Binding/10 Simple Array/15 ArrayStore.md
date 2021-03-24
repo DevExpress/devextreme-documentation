@@ -118,8 +118,8 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     var appointments = [{ 
         desc: 'Meet with a customer', 
         employee: "Mary Watson",
-        from: new Date(2016, 4, 10, 11, 0), 
-        to: new Date(2016, 4, 10, 13, 0) 
+        from: new Date("2016-04-10T11:00:00.000Z"), 
+        to: new Date("2016-04-10T13:00:00.000Z") 
     }, // ...
     ];
     
@@ -149,8 +149,8 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
         appointments = [{ 
             desc: 'Meet with a customer', 
             employee: "Mary Watson",
-            from: new Date(2016, 4, 10, 11, 0), 
-            to: new Date(2016, 4, 10, 13, 0) 
+            from: new Date("2016-04-10T11:00:00.000Z"), 
+            to: new Date("2016-04-10T13:00:00.000Z") 
         }, 
         // ...
         ];
@@ -197,8 +197,8 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     const appointments = [{ 
         desc: 'Meet with a customer', 
         employee: "Mary Watson",
-        from: new Date(2016, 4, 10, 11, 0), 
-        to: new Date(2016, 4, 10, 13, 0) 
+        from: new Date("2016-04-10T11:00:00.000Z"), 
+        to: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -239,8 +239,8 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
     const appointments = [{ 
         desc: 'Meet with a customer', 
         employee: "Mary Watson",
-        from: new Date(2016, 4, 10, 11, 0), 
-        to: new Date(2016, 4, 10, 13, 0) 
+        from: new Date("2016-04-10T11:00:00.000Z"), 
+        to: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];

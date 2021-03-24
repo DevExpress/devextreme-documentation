@@ -6,12 +6,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
     <!--JavaScript-->var appointments = [{
         text: "Website Re-Design Plan",
-        startDate: new Date(2016, 4, 25, 9, 30),
-        endDate: new Date(2016, 4, 25, 11, 30)
+        startDate: new Date("2016-04-25T09:30:00.000Z"),
+        endDate: new Date("2016-04-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date(2016, 4, 25, 12, 0),
-        endDate: new Date(2016, 4, 25, 13, 0),
+        startDate: new Date("2016-04-25T12:00:00.000Z"),
+        endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
     }, 
     // ...
@@ -32,12 +32,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
     export class AppComponent  {
         appointments = [{
             text: "Website Re-Design Plan",
-            startDate: new Date(2016, 4, 25, 9, 30),
-            endDate: new Date(2016, 4, 25, 11, 30)
+            startDate: new Date("2016-04-25T09:30:00.000Z"),
+            endDate: new Date("2016-04-25T11:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date(2016, 4, 25, 12, 0),
-            endDate: new Date(2016, 4, 25, 13, 0),
+            startDate: new Date("2016-04-25T12:00:00.000Z"),
+            endDate: new Date("2016-04-25T13:00:00.000Z"),
             hidden: true
         }, 
         // ...
@@ -82,12 +82,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{
                     text: "Website Re-Design Plan",
-                    startDate: new Date(2016, 4, 25, 9, 30),
-                    endDate: new Date(2016, 4, 25, 11, 30)
+                    startDate: new Date("2016-04-25T09:30:00.000Z"),
+                    endDate: new Date("2016-04-25T11:30:00.000Z")
                 }, {
                     text: "Book Flights to San Fran for Sales Trip",
-                    startDate: new Date(2016, 4, 25, 12, 0),
-                    endDate: new Date(2016, 4, 25, 13, 0),
+                    startDate: new Date("2016-04-25T12:00:00.000Z"),
+                    endDate: new Date("2016-04-25T13:00:00.000Z"),
                     hidden: true
                 }, 
                 // ...
@@ -108,12 +108,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
     const appointments = [{
         text: "Website Re-Design Plan",
-        startDate: new Date(2016, 4, 25, 9, 30),
-        endDate: new Date(2016, 4, 25, 11, 30)
+        startDate: new Date("2016-04-25T09:30:00.000Z"),
+        endDate: new Date("2016-04-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date(2016, 4, 25, 12, 0),
-        endDate: new Date(2016, 4, 25, 13, 0),
+        startDate: new Date("2016-04-25T12:00:00.000Z"),
+        endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
     }, 
     // ...
@@ -157,13 +157,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         schedulerData = [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
             price: 10,
-            startDate: new Date(2016, 4, 24, 10, 5),
-            endDate: new Date(2016, 4, 24, 11, 30)
+            startDate: new Date("2016-04-24T10:05:00.000Z"),
+            endDate: new Date("2016-04-24T11:30:00.000Z")
         }, 
         // ...
         ];
@@ -197,13 +197,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
             $scope.schedulerData = [{
                 movie: "His Girl Friday",
                 price: 5,
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20)
+                startDate: new Date("2016-04-24T09:10:00.000Z"),
+                endDate: new Date("2016-04-24T11:20:00.000Z")
             }, {
                 movie: "Royal Wedding",
                 price: 10,
-                startDate: new Date(2016, 4, 24, 10, 05),
-                endDate: new Date(2016, 4, 24, 11, 30)
+                startDate: new Date("2016-04-24T10:05:00.000Z"),
+                endDate: new Date("2016-04-24T11:30:00.000Z")
             }, 
             // ...
             ];
@@ -229,13 +229,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         schedulerData: [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
             price: 10,
-            startDate: new Date(2016, 4, 24, 10, 05),
-            endDate: new Date(2016, 4, 24, 11, 30)
+            startDate: new Date("2016-04-24T10:05:00.000Z"),
+            endDate: new Date("2016-04-24T11:30:00.000Z")
         }, 
         // ...
         ],
@@ -275,13 +275,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
                 appointments: [{
                     movie: "His Girl Friday",
                     price: 5,
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20)
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z")
                 }, {
                     movie: "Royal Wedding",
                     price: 10,
-                    startDate: new Date(2016, 4, 24, 10, 5),
-                    endDate: new Date(2016, 4, 24, 11, 30)
+                    startDate: new Date("2016-04-24T10:05:00.000Z"),
+                    endDate: new Date("2016-04-24T11:30:00.000Z")
                 }, 
                 // ...
                 ];
@@ -302,13 +302,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     const appointments = [{
         movie: "His Girl Friday",
         price: 5,
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, {
         movie: "Royal Wedding",
         price: 10,
-        startDate: new Date(2016, 4, 24, 10, 5),
-        endDate: new Date(2016, 4, 24, 11, 30)
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z")
     }, 
     // ...
     ];
@@ -344,13 +344,13 @@ If you use only jQuery, combine HTML markup for appointments manually with jQuer
     <!--JavaScript-->var schedulerData = [{
         movie: "His Girl Friday",
         price: 5,
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, {
         movie: "Royal Wedding",
         price: 10,
-        startDate: new Date(2016, 4, 24, 10, 05),
-        endDate: new Date(2016, 4, 24, 11, 30)
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z")
     }, 
     // ...
     ];
@@ -378,8 +378,8 @@ You can also customize an individual appointment. For this purpose, declare a te
 
     <!--JavaScript-->var schedulerData = [{
         movie: "Royal Wedding",
-        startDate: new Date(2016, 4, 24, 10, 05),
-        endDate: new Date(2016, 4, 24, 11, 30),
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z"),
         template: $("#individualTemplate")
     }, {
         // ...

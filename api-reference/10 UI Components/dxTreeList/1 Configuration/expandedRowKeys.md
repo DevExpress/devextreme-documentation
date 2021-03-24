@@ -13,4 +13,4 @@ Setting this property expands only the specified rows, but not their parents. If
 
 #####See Also#####
 - [autoExpandAll](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#autoExpandAll)
-- [Expand and Collapse Rows](/concepts/05%20Widgets/TreeList/60%20Expand%20and%20Collapse%20Rows/20%20API.md '/Documentation/Guide/UI_Components/TreeList/Expand_and_Collapse_Rows/#API')
+- [Expand and Collapse Rows](/concepts/05%20UI%20Components/TreeList/60%20Expand%20and%20Collapse%20Rows/20%20API.md '/Documentation/Guide/UI_Components/TreeList/Expand_and_Collapse_Rows/#API')

@@ -33,7 +33,7 @@ dx.web.js, dx.viz-web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/TreeList/Overview/"
+    url: "/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/"
 }
 
 #####See Also#####

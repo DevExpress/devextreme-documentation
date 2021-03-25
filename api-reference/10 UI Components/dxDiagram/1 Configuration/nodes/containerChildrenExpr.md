@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides a conta
 ##### param(data): Object
 The current node's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 This property is in effect for `"verticalContainer"` or `"horizontalContainer"` nodes.
 

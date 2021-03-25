@@ -33,5 +33,8 @@ type: template
 ##### field(item.taskSize): Object
 <!-- Description goes here -->
 
+##### return: String | TElement
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides edge te
 ##### param(data): Object
 The current edge's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The specified data source field or an expression should return a string or object value.
 

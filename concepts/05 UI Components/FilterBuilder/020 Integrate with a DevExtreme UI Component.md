@@ -1,5 +1,5 @@
 The FilterBuilder's [fields](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/fields '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#fields') array should 
-contain data fields from a UI component's data source. For example, the following code allows using the [List's](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') `Name` and `Price` fields in the FilterBuilder:
+contain data fields from a UI component's data source. For example, the following code allows using the [List's](/Documentation/Guide/UI_Components/List/Getting_Started_with_List) `Name` and `Price` fields in the FilterBuilder:
 
 ---
 #####jQuery

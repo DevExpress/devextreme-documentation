@@ -20,8 +20,8 @@ dx.web.js, dx.all.js
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndApi/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/List/Overview/"
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/List/Getting_Started_with_List/"
 }
 
 #####See Also#####

@@ -2,22 +2,48 @@ name: Node.js CI
 
 on: [push, pull_request]
 
+env:
+  node-version: 12.x
+
 jobs:
+
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
+    name: ContetMap
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run generate-content-map
-      env:
-        CI: true
+        node-version: ${{ env.nodeVersion }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate ContentMaps
+      run: npm generate-content-map
+
+  link:
+    runs-on: ubuntu-latest
+    name: Check links
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.nodeVersion }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate ContentMaps
+      run: npm run generate-content-map
+
+    - name: Check links
+      run: npm run update-links-validation

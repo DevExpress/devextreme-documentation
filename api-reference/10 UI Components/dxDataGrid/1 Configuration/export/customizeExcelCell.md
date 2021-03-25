@@ -45,6 +45,9 @@ The vertical cell alignment.
 ##### field(options.wrapTextEnabled): Boolean
 Specifies whether the cell text should be line-wrapped.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 
 The following table shows the available fill patterns:

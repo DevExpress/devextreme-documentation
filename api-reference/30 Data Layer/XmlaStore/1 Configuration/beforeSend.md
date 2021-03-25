@@ -27,6 +27,9 @@ The request URL.
 ##### field(options.xhrFields): Object
 Native <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest#Properties" target="_blank">XMLHttpRequest object properties</a>.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 ---
 ##### jQuery

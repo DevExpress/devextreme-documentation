@@ -12,4 +12,3 @@ Use this property when the annotation is positioned relative to an [argument](/a
 
 #####See Also#####
 - [x](/api-reference/_hidden/BaseWidgetAnnotationConfig/x.md '{basewidgetpath}/Configuration/annotations/#x') | [y](/api-reference/_hidden/BaseWidgetAnnotationConfig/y.md '{basewidgetpath}/Configuration/annotations/#y')
-- [value]({basewidgetpath}/Configuration/annotations/#value)

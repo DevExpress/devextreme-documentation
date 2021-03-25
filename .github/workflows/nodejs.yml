@@ -9,7 +9,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    name: ContetMap
+    name: ContentMap
     steps:
 
     - name: Checkout

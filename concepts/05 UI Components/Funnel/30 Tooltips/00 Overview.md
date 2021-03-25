@@ -2,7 +2,7 @@ A tooltip is a small pop-up rectangle that displays information about a funnel i
 
 ![Funnel Tooltip](/images/Funnel/visual_elements/tooltip.png)
 
-All properties configuring tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/') object. For example, to enable tooltips, assign **true** to this object's **enabled** property.
+All properties configuring tooltips are collected in the [tooltip](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/') object. For example, to enable tooltips, assign **true** to this object's **enabled** property.
 
 ---
 ##### jQuery
@@ -80,7 +80,7 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 
 ---
 
-Propertiesdeclared in the **tooltip** object apply to all tooltips in the Funnel. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip you want to customize.
+Propertiesdeclared in the **tooltip** object apply to all tooltips in the Funnel. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip you want to customize.
 
 ---
 ##### jQuery
@@ -187,5 +187,5 @@ Propertiesdeclared in the **tooltip** object apply to all tooltips in the Funnel
 ---
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/Funnel/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Funnel/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Show and Hide a Tooltip](/concepts/05%20UI%20Components/Funnel/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Funnel/Tooltips/Show_and_Hide_a_Tooltip/')
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)

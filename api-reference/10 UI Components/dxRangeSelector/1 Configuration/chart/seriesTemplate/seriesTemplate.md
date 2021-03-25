@@ -8,7 +8,7 @@ default: undefined
 Defines properties for the series template.
 
 ---
-In most cases, you can organize the array that is assigned to the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxRangeSelector/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#dataSource') property in the following way.
+In most cases, you can organize the array that is assigned to the [dataSource](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#dataSource') property in the following way.
 
     [
         { arg: arg1Value, series1Value: val11, series2Value: val12, ... }

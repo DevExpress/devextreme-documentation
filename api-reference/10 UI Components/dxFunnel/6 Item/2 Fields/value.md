@@ -8,4 +8,4 @@ The item's value.
 
 ---
 #####See Also#####
-- [valueField](/api-reference/20%20Data%20Visualization%20Widgets/dxFunnel/1%20Configuration/valueField.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#valueField')
+- [valueField](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/valueField.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#valueField')

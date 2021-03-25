@@ -1,6 +1,6 @@
-The SlideOutView UI component is a classic slide-out menu paired with a view. This UI component is very similar to the [SlideOut](/concepts/05%20Widgets/SlideOut/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOut/Overview/') with only one difference - the SlideOut always contains the [List](/concepts/05%20Widgets/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') in the slide-out menu, while the SlideOutView can hold any collection there.
+The SlideOutView UI component is a classic slide-out menu paired with a view. This UI component is very similar to the [SlideOut](/concepts/05%20UI%20Components/SlideOut/00%20Overview.md '/Documentation/Guide/UI_Components/SlideOut/Overview/') with only one difference - the SlideOut always contains the [List](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview/') in the slide-out menu, while the SlideOutView can hold any collection there.
 
-The following code adds the SlideOutView UI component to your page. The view contains a [Toolbar](/concepts/05%20Widgets/Toolbar/00%20Overview.md '/Documentation/Guide/UI_Components/Toolbar/Overview/') and a [Chart](/concepts/05%20Widgets/Chart/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Overview/'); the slide-out menu contains a [TreeView](/concepts/05%20Widgets/TreeView/00%20Overview.md '/Documentation/Guide/UI_Components/TreeView/Overview/'). This example is expanded further in the [Customize the View](/concepts/05%20Widgets/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_View/') and [Customize the Menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/') articles.
+The following code adds the SlideOutView UI component to your page. The view contains a [Toolbar](/concepts/05%20UI%20Components/Toolbar/00%20Overview.md '/Documentation/Guide/UI_Components/Toolbar/Overview/') and a [Chart](/concepts/05%20UI%20Components/Chart/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Overview/'); the slide-out menu contains a [TreeView](/concepts/05%20UI%20Components/TreeView/00%20Overview.md '/Documentation/Guide/UI_Components/TreeView/Overview/'). This example is expanded further in the [Customize the View](/concepts/05%20UI%20Components/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_View/') and [Customize the Menu](/concepts/05%20UI%20Components/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/') articles.
 
     <!--HTML--><div id="slideOutView">
         <div data-options="dxTemplate: { name: 'content' }">
@@ -42,9 +42,9 @@ The following code adds the SlideOutView UI component to your page. The view con
 
 #####See Also#####
 #include common-link-configurewidget
-- [SlideOutView - Customize the Menu](/concepts/05%20Widgets/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/')
-- [SlideOutView - Customize the View](/concepts/05%20Widgets/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_View/')
-- [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20Widgets/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/UI_Components/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
-- [SlideOutView API Reference](/api-reference/10%20UI%20Widgets/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
+- [SlideOutView - Customize the Menu](/concepts/05%20UI%20Components/SlideOutView/05%20Customize%20the%20Menu.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_Menu/')
+- [SlideOutView - Customize the View](/concepts/05%20UI%20Components/SlideOutView/10%20Customize%20the%20View.md '/Documentation/Guide/UI_Components/SlideOutView/Customize_the_View/')
+- [SlideOutView - Open and Close the Menu Using the API](/concepts/05%20UI%20Components/SlideOutView/15%20Open%20and%20Close%20the%20Menu%20Using%20the%20API.md '/Documentation/Guide/UI_Components/SlideOutView/Open_and_Close_the_Menu_Using_the_API/')
+- [SlideOutView API Reference](/api-reference/10%20UI%20Components/dxSlideOutView '/Documentation/ApiReference/UI_Components/dxSlideOutView/')
 
 [tags]dxslideoutview, slideOutView, slide-out menu, navigation, overview

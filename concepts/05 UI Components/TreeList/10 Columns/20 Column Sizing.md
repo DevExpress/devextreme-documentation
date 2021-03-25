@@ -1,4 +1,4 @@
-If you do not explicitly specify certain columns' [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width'), the TreeList distributes the available space equally among columns at startup. As a result, cell values may appear truncated. Use the [columnMinWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnMinWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth') property to specify a minimum width for all columns and the [minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth') for an individual column. Note that all these settings may cause horizontal scrolling if columns cannot fit into the UI component's width.
+If you do not explicitly specify certain columns' [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width'), the TreeList distributes the available space equally among columns at startup. As a result, cell values may appear truncated. Use the [columnMinWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnMinWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth') property to specify a minimum width for all columns and the [minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth') for an individual column. Note that all these settings may cause horizontal scrolling if columns cannot fit into the UI component's width.
 
 ---
 ##### jQuery
@@ -43,7 +43,7 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     
 ---
 
-Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') property to **true** to make all columns adjust their widths to their content.
+Set the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') property to **true** to make all columns adjust their widths to their content.
 
 ---
 ##### jQuery
@@ -79,7 +79,7 @@ Set the [columnAutoWidth](/api-reference/10%20UI%20Widgets/GridBase/1%20Configur
     
 ---
 
-The UI component allows a user to resize columns in two different modes: by changing the next column's width or the UI component's width. To enable this functionality and set the mode, specify the [allowColumnResizing](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing') and [columnResizingMode](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnResizingMode') properties, respectively. Note that you can prevent a specific column from being resized by assigning **false** to its [allowResizing](/api-reference/_hidden/GridBaseColumn/allowResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowResizing') property.
+The UI component allows a user to resize columns in two different modes: by changing the next column's width or the UI component's width. To enable this functionality and set the mode, specify the [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing') and [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnResizingMode') properties, respectively. Note that you can prevent a specific column from being resized by assigning **false** to its [allowResizing](/api-reference/_hidden/GridBaseColumn/allowResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowResizing') property.
 
 ---
 ##### jQuery
@@ -128,4 +128,4 @@ The UI component allows a user to resize columns in two different modes: by chan
 }
 
 #####See Also#####
-- [TreeList - Column Reordering](/concepts/05%20Widgets/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/')
+- [TreeList - Column Reordering](/concepts/05%20UI%20Components/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/')

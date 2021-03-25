@@ -1,4 +1,4 @@
-The different sections of this guide describe the [series](/concepts/05%20Widgets/Sparkline/10%20Visual%20Elements/10%20Series.md '/Documentation/Guide/UI_Components/Sparkline/Visual_Elements/#Series') types supported by the [Sparkline](/api-reference/20%20Data%20Visualization%20Widgets/dxSparkline '/Documentation/ApiReference/UI_Components/dxSparkline/') UI component. Each topic covers information about one series type, its purpose, distinctive features and configuration properties.
+The different sections of this guide describe the [series](/concepts/05%20UI%20Components/Sparkline/10%20Visual%20Elements/10%20Series.md '/Documentation/Guide/UI_Components/Sparkline/Visual_Elements/#Series') types supported by the [Sparkline](/api-reference/10%20UI%20Components/dxSparkline '/Documentation/ApiReference/UI_Components/dxSparkline/') UI component. Each topic covers information about one series type, its purpose, distinctive features and configuration properties.
 
 **Hover** over any one of the sparklines below to discover its series type. **Click** a sparkline to navigate to the topic describing the corresponding series type in detail.
 

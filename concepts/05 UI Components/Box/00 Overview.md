@@ -166,7 +166,7 @@ The following code adds a simple Box containing three items to your page. These 
 
 ---
 
-Note that the Box items in the code above are declared using the [dxItem](/api-reference/10%20UI%20Widgets/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields:
+Note that the Box items in the code above are declared using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/#dxItem') markup component. An object passed to this component can have the following fields:
 
 - [baseSize](/api-reference/_hidden/dxBoxItem/baseSize.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#baseSize')
 - [ratio](/api-reference/_hidden/dxBoxItem/ratio.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#ratio')
@@ -176,9 +176,9 @@ Note that the Box items in the code above are declared using the [dxItem](/api-r
 
 #####See Also#####
 #include common-link-configurewidget
-- [Box - Specify an Item Size](/concepts/05%20Widgets/Box/05%20Specify%20an%20Item%20Size.md '/Documentation/Guide/UI_Components/Box/Specify_an_Item_Size/')
-- [Box - Arrange and Align Items](/concepts/05%20Widgets/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
-- [Box - Nest One Box into Another](/concepts/05%20Widgets/Box/15%20Nest%20One%20Box%20Into%20Another.md '/Documentation/Guide/UI_Components/Box/Nest_One_Box_into_Another/')
-- [Box API Reference](/api-reference/10%20UI%20Widgets/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
+- [Box - Specify an Item Size](/concepts/05%20UI%20Components/Box/05%20Specify%20an%20Item%20Size.md '/Documentation/Guide/UI_Components/Box/Specify_an_Item_Size/')
+- [Box - Arrange and Align Items](/concepts/05%20UI%20Components/Box/10%20Arrange%20and%20Align%20Items.md '/Documentation/Guide/UI_Components/Box/Arrange_and_Align_Items/')
+- [Box - Nest One Box into Another](/concepts/05%20UI%20Components/Box/15%20Nest%20One%20Box%20Into%20Another.md '/Documentation/Guide/UI_Components/Box/Nest_One_Box_into_Another/')
+- [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
 [tags]dxbox, box, layout UI component, overview, dxItem

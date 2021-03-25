@@ -1,8 +1,8 @@
-A tooltip is a small pop-up rectangle displaying information about a [series point](/concepts/05%20Widgets/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') that the user pauses on. By default, the information is the point value, but it is possible to display anything in a tooltip.
+A tooltip is a small pop-up rectangle displaying information about a [series point](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') that the user pauses on. By default, the information is the point value, but it is possible to display anything in a tooltip.
 
 ![DevExtreme HTML5 JavaScript Charts Tooltip](/images/ChartJS/visual_elements/tooltip.png)
 
-All properties configuring tooltips are collected in the [tooltip](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/') object. For example, to enable the tooltips, assign **true** to the **enabled** property of this object.
+All properties configuring tooltips are collected in the [tooltip](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/') object. For example, to enable the tooltips, assign **true** to the **enabled** property of this object.
 
 ---
 ##### jQuery
@@ -86,7 +86,7 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 
 ---
 
-Propertiesdeclared in the **tooltip** object apply to all tooltips in the Chart. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/20%20Data%20Visualization%20Widgets/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip that you want to customize.
+Propertiesdeclared in the **tooltip** object apply to all tooltips in the Chart. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip that you want to customize.
 
 ---
 ##### jQuery
@@ -196,8 +196,8 @@ Propertiesdeclared in the **tooltip** object apply to all tooltips in the Chart.
 ---
 
 #####See Also#####
-- [Show and Hide a Tooltip](/concepts/05%20Widgets/Chart/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Show_and_Hide_a_Tooltip/')
-- [Handle Tooltip Events](/concepts/05%20Widgets/Chart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Handle_Tooltip_Events/')
-- [Chart API Reference](/api-reference/20%20Data%20Visualization%20Widgets/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
+- [Show and Hide a Tooltip](/concepts/05%20UI%20Components/Chart/30%20Tooltips/10%20Show%20and%20Hide%20a%20Tooltip.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Show_and_Hide_a_Tooltip/')
+- [Handle Tooltip Events](/concepts/05%20UI%20Components/Chart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Handle_Tooltip_Events/')
+- [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, tooltips, enable tooltips, customizeTooltip

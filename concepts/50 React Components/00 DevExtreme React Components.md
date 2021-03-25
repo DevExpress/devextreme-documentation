@@ -21,7 +21,7 @@ All DevExtreme UI component suites, including React, share architecture and core
 
 - [Data layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 
-- [Client-side data validation](/concepts/05%20Widgets/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
+- [Client-side data validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
 
 - [Themes and styles](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')
 
@@ -29,7 +29,7 @@ All DevExtreme UI component suites, including React, share architecture and core
 
 - [Modularity](/concepts/Common/Modularity/01%20Link%20Modules '/Documentation/Guide/Common/Modularity/Link_Modules/')
 
-- [Customization using templates](/concepts/05%20Widgets/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/')
+- [Customization using templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/')
 
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 

@@ -1,4 +1,4 @@
-When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for tooltips.
+When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for tooltips.
 
 ---
 
@@ -23,8 +23,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
             text: "His Girl Friday",
             year: 1940,
             img: "images/movies/HisGirlFriday.jpg",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, 
         // ...
         ];
@@ -61,8 +61,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
                 text: "His Girl Friday",
                 year: 1940,
                 img: "images/movies/HisGirlFriday.jpg",
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20)
+                startDate: new Date("2016-04-24T09:10:00.000Z"),
+                endDate: new Date("2016-04-24T11:20:00.000Z")
             }, 
             // ...
             ];
@@ -89,8 +89,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
             text: "His Girl Friday",
             year: 1940,
             img: "images/movies/HisGirlFriday.jpg",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, 
         // ...
         ],
@@ -134,8 +134,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
                     text: "His Girl Friday",
                     year: 1940,
                     img: "images/movies/HisGirlFriday.jpg",
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20)
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z")
                 }, 
                 // ...
                 ];
@@ -158,8 +158,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
         text: "His Girl Friday",
         year: 1940,
         img: "images/movies/HisGirlFriday.jpg",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, 
     // ...
     ];
@@ -188,14 +188,14 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
 
 ---
 
-If you use only jQuery, combine HTML markup for tooltips manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTooltipTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate') callback function as shown in the following code.
+If you use only jQuery, combine HTML markup for tooltips manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTooltipTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->var schedulerData = [{
         text: "His Girl Friday",
         year: 1940,
         img: "images/movies/HisGirlFriday.jpg",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, 
     // ...
     ];
@@ -215,11 +215,11 @@ If you use only jQuery, combine HTML markup for tooltips manually with jQuery <a
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"
 }
 
-In addition, you can use a 3rd-party template engine to customize the UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize the UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [Scheduler - Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Scheduler - Customize Appointment Details Form](/concepts/05%20Widgets/Scheduler/030%20Appointments/070%20Customize%20Appointment%20Details%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Details_Form/')
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler - Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
+- [Scheduler - Customize Appointment Details Form](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Customize%20Appointment%20Details%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Details_Form/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 [tags]scheduler, tooltip appearance, customize, templates

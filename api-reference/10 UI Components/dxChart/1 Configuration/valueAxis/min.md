@@ -6,6 +6,6 @@ dep: dxChart.Options.valueAxis.visualRange
 ---
 ---
 ##### shortDescription
-Coupled with the **max** property, focuses the UI component on a specific chart segment. Applies only to the axes of the *"continuous"* and *"logarithmic"* [type](/api-reference/20%20Data%20Visualization%20Widgets/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type').
+Coupled with the **max** property, focuses the UI component on a specific chart segment. Applies only to the axes of the *"continuous"* and *"logarithmic"* [type](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type').
 
 ---

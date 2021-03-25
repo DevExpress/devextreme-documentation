@@ -22,7 +22,7 @@ The index of the column to which the header belongs.
 The UI component's instance.
 
 ---
-When the DataGrid is [exported](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/), it omits customizations made in this template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell) function.
+When the DataGrid is [exported](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/'), it omits customizations made in this template. However, you can recreate them in the exported file using the ExcelJS API. To do so, use the [customizeCell](/api-reference/50%20Common/Object%20Structures/ExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#customizeCell') function.
 
 #####See Also#####
-- [Custom Templates](/concepts/05%20Widgets/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

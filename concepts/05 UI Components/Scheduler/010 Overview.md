@@ -22,7 +22,7 @@ The Scheduler is a UI component that represents scheduled data and allows a user
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }
 
-The following code adds the Scheduler UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property.
+The following code adds the Scheduler UI component to your page. The simplest configuration requires only a [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') to be specified. In addition, you can define a date that should be initially displayed in the date navigator using the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property.
 
 ---
 
@@ -33,12 +33,12 @@ The following code adds the Scheduler UI component to your page. The simplest co
         $("#schedulerContainer").dxScheduler({
             dataSource: [{
                 text: "Website Re-Design Plan",
-                startDate: new Date(2016, 4, 25, 9, 30),
-                endDate: new Date(2016, 4, 25, 11, 30)
+                startDate: new Date("2016-04-25T09:30:00.000Z"),
+                endDate: new Date("2016-04-25T11:30:00.000Z")
             }, {
                 text: "Book Flights to San Fran for Sales Trip",
-                startDate: new Date(2016, 4, 25, 12, 0),
-                endDate: new Date(2016, 4, 25, 13, 0)
+                startDate: new Date("2016-04-25T12:00:00.000Z"),
+                endDate: new Date("2016-04-25T13:00:00.000Z")
             }, 
             // ...
             ],
@@ -60,12 +60,12 @@ The following code adds the Scheduler UI component to your page. The simplest co
     export class AppComponent  {
         appointments = [{
             text: "Website Re-Design Plan",
-            startDate: new Date(2016, 4, 25, 1, 30),
-            endDate: new Date(2016, 4, 25, 3, 30)
+            startDate: new Date("2016-04-25T01:30:00.000Z"),
+            endDate: new Date("2016-04-25T03:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date(2016, 4, 25, 9, 0),
-            endDate: new Date(2016, 4, 25, 10, 0)
+            startDate: new Date("2016-04-25T09:00:00.000Z"),
+            endDate: new Date("2016-04-25T10:00:00.000Z")
         }, 
         // ...
         ];
@@ -103,12 +103,12 @@ The following code adds the Scheduler UI component to your page. The simplest co
                 currentDate: new Date(2016, 4, 25),
                 dataSource: [{
                     text: "Website Re-Design Plan",
-                    startDate: new Date(2016, 4, 25, 9, 30),
-                    endDate: new Date(2016, 4, 25, 11, 30)
+                    startDate: new Date("2016-04-25T09:30:00.000Z"),
+                    endDate: new Date("2016-04-25T11:30:00.000Z")
                 }, {
                     text: "Book Flights to San Fran for Sales Trip",
-                    startDate: new Date(2016, 4, 25, 12, 0),
-                    endDate: new Date(2016, 4, 25, 13, 0)
+                    startDate: new Date("2016-04-25T12:00:00.000Z"),
+                    endDate: new Date("2016-04-25T13:00:00.000Z")
                 }, 
                 // ...
                 ]
@@ -129,12 +129,12 @@ The following code adds the Scheduler UI component to your page. The simplest co
 
     const data = [{
         text: "Website Re-Design Plan",
-        startDate: new Date(2016, 4, 25, 9, 30),
-        endDate: new Date(2016, 4, 25, 11, 30)
+        startDate: new Date("2016-04-25T09:30:00.000Z"),
+        endDate: new Date("2016-04-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date(2016, 4, 25, 12, 0),
-        endDate: new Date(2016, 4, 25, 13, 0)
+        startDate: new Date("2016-04-25T12:00:00.000Z"),
+        endDate: new Date("2016-04-25T13:00:00.000Z")
     }, 
     // ...
     ];
@@ -152,7 +152,7 @@ The following code adds the Scheduler UI component to your page. The simplest co
 
 ---
 
-Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property. The fields listed below should be present in every appointment.
+Each data source object represents an appointment to be scheduled and has a special structure. This structure should be similar to that described in the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property. The fields listed below should be present in every appointment.
 
 - **text**  
     The subject of an appointment.
@@ -185,12 +185,12 @@ If your appointments have a different structure, specify:
         $("#schedulerContainer").dxScheduler({
             dataSource: [{ 
                 subject: 'Meet with a customer', 
-                from: new Date(2016, 4, 10, 11, 0), 
-                to: new Date(2016, 4, 10, 13, 0) 
+                from: new Date("2016-04-10T11:00:00.000Z"), 
+                to: new Date("2016-04-10T13:00:00.000Z") 
             }, { 
                 subject: 'Discuss results', 
-                from: new Date(2016, 5, 11, 12, 0), 
-                to: new Date(2016, 4, 11, 13, 0) 
+                from: new Date("2016-05-11T12:00:00.000Z"), 
+                to: new Date("2016-04-11T13:00:00.000Z") 
             }, 
             // ...
             ],
@@ -217,12 +217,12 @@ If your appointments have a different structure, specify:
     export class AppComponent  {
         appointments = [{ 
             subject: 'Meet with a customer', 
-            from: new Date(2016, 4, 25, 1, 0), 
-            to: new Date(2016, 4, 25, 3, 0) 
+            from: new Date("2016-04-25T01:00:00.000Z"), 
+            to: new Date("2016-04-25T03:00:00.000Z") 
         }, { 
             subject: 'Discuss results', 
-            from: new Date(2016, 5, 25, 9, 0), 
-            to: new Date(2016, 4, 25, 10, 0) 
+            from: new Date("2016-05-25T09:00:00.000Z"), 
+            to: new Date("2016-04-25T10:00:00.000Z") 
         }, 
         // ...
         ];
@@ -262,12 +262,12 @@ If your appointments have a different structure, specify:
                 currentDate: new Date(2016, 4, 25),
                 dataSource: [{ 
                     subject: 'Meet with a customer', 
-                    from: new Date(2016, 4, 10, 11, 0), 
-                    to: new Date(2016, 4, 10, 13, 0) 
+                    from: new Date("2016-04-10T11:00:00.000Z"), 
+                    to: new Date("2016-04-10T13:00:00.000Z") 
                 }, { 
                     subject: 'Discuss results', 
-                    from: new Date(2016, 5, 11, 12, 0), 
-                    to: new Date(2016, 4, 11, 13, 0) 
+                    from: new Date("2016-05-11T12:00:00.000Z"), 
+                    to: new Date("2016-04-11T13:00:00.000Z") 
                 }, 
                 // ...
                 ]
@@ -288,12 +288,12 @@ If your appointments have a different structure, specify:
 
     const data = [{ 
         subject: 'Meet with a customer', 
-        from: new Date(2016, 4, 10, 11, 0), 
-        to: new Date(2016, 4, 10, 13, 0) 
+        from: new Date("2016-04-10T11:00:00.000Z"), 
+        to: new Date("2016-04-10T13:00:00.000Z") 
     }, { 
         subject: 'Discuss results', 
-        from: new Date(2016, 5, 11, 12, 0), 
-        to: new Date(2016, 4, 11, 13, 0) 
+        from: new Date("2016-05-11T12:00:00.000Z"), 
+        to: new Date("2016-04-11T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -314,8 +314,8 @@ If your appointments have a different structure, specify:
 ---
 
 #####See Also#####
-- [Scheduler - Data Binding](/concepts/05%20Widgets/Scheduler/020%20Data%20Binding '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/')
-- [Scheduler - Views](/concepts/05%20Widgets/Scheduler/060%20Views '/Documentation/Guide/UI_Components/Scheduler/Views/')
-- [Scheduler - Keyboard Support](/concepts/05%20Widgets/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Keyboard_Support/')
+- [Scheduler - Data Binding](/concepts/05%20UI%20Components/Scheduler/020%20Data%20Binding/10%20Simple%20Array/10%20Array%20Only.md '/Documentation/Guide/UI_Components/Scheduler/Data_Binding/')
+- [Scheduler - Views](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types/010%20Day%20View.md '/Documentation/Guide/UI_Components/Scheduler/Views/')
+- [Scheduler - Keyboard Support](/concepts/05%20UI%20Components/Scheduler/080%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Keyboard_Support/')
 
 [tags]dxscheduler, scheduler, overview, textExpr, startDateExpr, endDateExpr

@@ -291,7 +291,7 @@ This property accepts the name of the data source field that provides values use
 
 ---
 
-Group captions and appearance can be customized. To do this, define the [groupCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
+Group captions and appearance can be customized. To do this, define the [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate'). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
 
 **calculateGroupValue** is also used to sort groups when grid records are grouped by this column.
 

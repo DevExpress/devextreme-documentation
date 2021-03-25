@@ -7,7 +7,7 @@ type: eventType
 Raised before a row is collapsed.
 
 ---
-Main article: [onRowCollapsing](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/onRowCollapsing.md '{basewidgetpath}/Configuration/#onRowCollapsing')
+Main article: [onRowCollapsing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onRowCollapsing.md '{basewidgetpath}/Configuration/#onRowCollapsing')
 
 #####See Also#####
 #include common-link-handleevents

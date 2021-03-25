@@ -1,4 +1,4 @@
-To bind the Scheduler to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property.
+To bind the Scheduler to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property.
 
 ---
 
@@ -7,12 +7,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
     <!--JavaScript-->
     var appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 25, 1, 30),
-        endDate: new Date(2016, 4, 25, 3, 30)
+        startDate: new Date("2016-04-25T01:30:00.000Z"),
+        endDate: new Date("2016-04-25T03:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date(2016, 4, 25, 9, 0),
-        endDate: new Date(2016, 4, 25, 10, 0)
+        startDate: new Date("2016-04-25T09:00:00.000Z"),
+        endDate: new Date("2016-04-25T10:00:00.000Z")
     }, // ...
     ];
 
@@ -30,12 +30,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
     export class AppComponent  {
         appointments = [{
             text: "Meet with a customer",
-            startDate: new Date(2016, 4, 25, 1, 30),
-            endDate: new Date(2016, 4, 25, 3, 30)
+            startDate: new Date("2016-04-25T01:30:00.000Z"),
+            endDate: new Date("2016-04-25T03:30:00.000Z")
         }, {
             text: "Discuss results",
-            startDate: new Date(2016, 4, 25, 9, 0),
-            endDate: new Date(2016, 4, 25, 10, 0)
+            startDate: new Date("2016-04-25T09:00:00.000Z"),
+            endDate: new Date("2016-04-25T10:00:00.000Z")
         }];
     }
     @NgModule({
@@ -76,12 +76,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{ 
                     text: 'Meet with a customer', 
-                    startDate: new Date(2016, 4, 25, 1, 30),
-                    endDate: new Date(2016, 4, 25, 3, 30)
+                    startDate: new Date("2016-04-25T01:30:00.000Z"),
+                    endDate: new Date("2016-04-25T03:30:00.000Z")
                 }, { 
                     text: 'Discuss results', 
-                    startDate: new Date(2016, 4, 25, 9, 0),
-                    endDate: new Date(2016, 4, 25, 10, 0)
+                    startDate: new Date("2016-04-25T09:00:00.000Z"),
+                    endDate: new Date("2016-04-25T10:00:00.000Z")
                 }, // ...
                 ];
             }
@@ -101,12 +101,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 25, 1, 30),
-        endDate: new Date(2016, 4, 25, 3, 30)
+        startDate: new Date("2016-04-25T01:30:00.000Z"),
+        endDate: new Date("2016-04-25T03:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date(2016, 4, 25, 9, 0),
-        endDate: new Date(2016, 4, 25, 10, 0)
+        startDate: new Date("2016-04-25T09:00:00.000Z"),
+        endDate: new Date("2016-04-25T10:00:00.000Z")
     }, // ...
     ];
 
@@ -137,8 +137,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     <!--JavaScript-->
     var appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 10, 11, 0), 
-        endDate: new Date(2016, 4, 10, 13, 0) 
+        startDate: new Date("2016-04-10T11:00:00.000Z"), 
+        endDate: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -160,8 +160,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     export class AppComponent {
         appointments = [{ 
             text: 'Meet with a customer', 
-            startDate: new Date(2016, 4, 10, 11, 0), 
-            endDate: new Date(2016, 4, 10, 13, 0) 
+            startDate: new Date("2016-04-10T11:00:00.000Z"), 
+            endDate: new Date("2016-04-10T13:00:00.000Z") 
         }, 
         // ...
         ];
@@ -201,8 +201,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 10, 11, 0), 
-        endDate: new Date(2016, 4, 10, 13, 0) 
+        startDate: new Date("2016-04-10T11:00:00.000Z"), 
+        endDate: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -234,8 +234,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 10, 11, 0), 
-        endDate: new Date(2016, 4, 10, 13, 0) 
+        startDate: new Date("2016-04-10T11:00:00.000Z"), 
+        endDate: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -258,6 +258,6 @@ If objects in the array need to be processed (for example, filtered), you can cr
 #####See Also#####
 - [Data Layer - Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')
 - [Data Binding - ArrayStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 [tags]scheduler, data binding, provide data, array, process data, query

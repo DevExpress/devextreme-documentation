@@ -1,4 +1,4 @@
-For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define custom templates for resource headers.
+For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define custom templates for resource headers.
 
 ---
 
@@ -25,8 +25,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     export class AppComponent {
         schedulerData = [{
             text: "Meeting",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20),
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z"),
             roomId: 1
         },
         // ...
@@ -79,8 +79,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
             return {
                 schedulerData: [{
                     text: "Meeting",
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20),
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z"),
                     roomId: 1
                 },
                 // ...
@@ -108,8 +108,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
 
     const schedulerData = [{
         text: 'Meeting',
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20),
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z"),
         roomId: 1
     },
     // ...
@@ -160,8 +160,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         .controller('DemoController', function DemoController($scope) {
             $scope.schedulerData = [{
                 text: "Meeting",
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20),
+                startDate: new Date("2016-04-24T09:10:00.000Z"),
+                endDate: new Date("2016-04-24T11:20:00.000Z"),
                 roomId: 1
             },
             // ...
@@ -196,8 +196,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
     <!--JavaScript-->var viewModel= {
         schedulerData: [{
             text: "Meeting",
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20),
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z"),
             roomId: 1
         },
         // ...
@@ -251,8 +251,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
                 currentDate: new Date(2016, 4, 24),
                 appointments: [{
                     text: "Meeting",
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20),
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z"),
                     roomId: 1
                 }, 
                 // ...
@@ -282,8 +282,8 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
         text: 'His Girl Friday',
         year: 1940,
         img: 'images/movies/HisGirlFriday.jpg',
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, 
     // ...
     ];
@@ -323,12 +323,12 @@ For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-refer
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, use the [resourceCellTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
+If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, use the [resourceCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
 
     <!--JavaScript-->var schedulerData = [{
         text: "Meeting",
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20),
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z"),
         roomId: 1
     },
     // ...
@@ -358,11 +358,11 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [Scheduler - Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Scheduler - Customize Timetable](/concepts/05%20Widgets/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler - Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
+- [Scheduler - Customize Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 [tags]scheduler, tooltip appearance, customize, templates

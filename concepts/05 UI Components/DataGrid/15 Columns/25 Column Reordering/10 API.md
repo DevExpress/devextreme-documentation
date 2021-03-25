@@ -1,4 +1,4 @@
-The [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array determines columns' order. You can reorder columns by moving their objects within the array or by changing the column's [visibleIndex](/api-reference/_hidden/GridBaseColumn/visibleIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visibleIndex') if you prefer to configure columns using the [customizeColumns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeColumns') function.
+The [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array determines columns' order. You can reorder columns by moving their objects within the array or by changing the column's [visibleIndex](/api-reference/_hidden/GridBaseColumn/visibleIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visibleIndex') if you prefer to configure columns using the [customizeColumns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/customizeColumns.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeColumns') function.
 
 ---
 ##### jQuery
@@ -90,7 +90,7 @@ The [columns](/api-reference/10%20UI%20Widgets/dxDataGrid/1%20Configuration/colu
     
 ---
 
-The **visibleIndex** property can also be changed at runtime to reorder columns regardless of the way you configured them. For this, call the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Widgets/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. The following code swaps the second and first column:
+The **visibleIndex** property can also be changed at runtime to reorder columns regardless of the way you configured them. For this, call the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. The following code swaps the second and first column:
 
 ---
 ##### jQuery
@@ -196,5 +196,5 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
 
 #####See Also#####
 #include common-link-callmethods
-- [Data Columns](/concepts/05%20Widgets/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Data_Columns/')
+- [Data Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Data_Columns/')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnCustomization)

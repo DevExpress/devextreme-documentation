@@ -1,4 +1,4 @@
-For a minor customization of Scheduler appointments, you can define [specific fields](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') in appointment data objects. For example, the following code generates three appointments: the first is not customized, the second is hidden, and the third is disabled.
+For a minor customization of Scheduler appointments, you can define [specific fields](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') in appointment data objects. For example, the following code generates three appointments: the first is not customized, the second is hidden, and the third is disabled.
 
 ---
 
@@ -6,12 +6,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
     <!--JavaScript-->var appointments = [{
         text: "Website Re-Design Plan",
-        startDate: new Date(2016, 4, 25, 9, 30),
-        endDate: new Date(2016, 4, 25, 11, 30)
+        startDate: new Date("2016-04-25T09:30:00.000Z"),
+        endDate: new Date("2016-04-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date(2016, 4, 25, 12, 0),
-        endDate: new Date(2016, 4, 25, 13, 0),
+        startDate: new Date("2016-04-25T12:00:00.000Z"),
+        endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
     }, 
     // ...
@@ -32,12 +32,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
     export class AppComponent  {
         appointments = [{
             text: "Website Re-Design Plan",
-            startDate: new Date(2016, 4, 25, 9, 30),
-            endDate: new Date(2016, 4, 25, 11, 30)
+            startDate: new Date("2016-04-25T09:30:00.000Z"),
+            endDate: new Date("2016-04-25T11:30:00.000Z")
         }, {
             text: "Book Flights to San Fran for Sales Trip",
-            startDate: new Date(2016, 4, 25, 12, 0),
-            endDate: new Date(2016, 4, 25, 13, 0),
+            startDate: new Date("2016-04-25T12:00:00.000Z"),
+            endDate: new Date("2016-04-25T13:00:00.000Z"),
             hidden: true
         }, 
         // ...
@@ -83,12 +83,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{
                     text: "Website Re-Design Plan",
-                    startDate: new Date(2016, 4, 25, 9, 30),
-                    endDate: new Date(2016, 4, 25, 11, 30)
+                    startDate: new Date("2016-04-25T09:30:00.000Z"),
+                    endDate: new Date("2016-04-25T11:30:00.000Z")
                 }, {
                     text: "Book Flights to San Fran for Sales Trip",
-                    startDate: new Date(2016, 4, 25, 12, 0),
-                    endDate: new Date(2016, 4, 25, 13, 0),
+                    startDate: new Date("2016-04-25T12:00:00.000Z"),
+                    endDate: new Date("2016-04-25T13:00:00.000Z"),
                     hidden: true
                 }, 
                 // ...
@@ -110,12 +110,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
     const appointments = [{
         text: "Website Re-Design Plan",
-        startDate: new Date(2016, 4, 25, 9, 30),
-        endDate: new Date(2016, 4, 25, 11, 30)
+        startDate: new Date("2016-04-25T09:30:00.000Z"),
+        endDate: new Date("2016-04-25T11:30:00.000Z")
     }, {
         text: "Book Flights to San Fran for Sales Trip",
-        startDate: new Date(2016, 4, 25, 12, 0),
-        endDate: new Date(2016, 4, 25, 13, 0),
+        startDate: new Date("2016-04-25T12:00:00.000Z"),
+        endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
     }, 
     // ...
@@ -135,7 +135,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
 ---
 
-If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Widgets/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for appointments.
+If you need a more flexible solution, define a custom template. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for appointments.
 
 ---
 
@@ -159,13 +159,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         schedulerData = [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
             price: 10,
-            startDate: new Date(2016, 4, 24, 10, 5),
-            endDate: new Date(2016, 4, 24, 11, 30)
+            startDate: new Date("2016-04-24T10:05:00.000Z"),
+            endDate: new Date("2016-04-24T11:30:00.000Z")
         }, 
         // ...
         ];
@@ -199,13 +199,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
             $scope.schedulerData = [{
                 movie: "His Girl Friday",
                 price: 5,
-                startDate: new Date(2016, 4, 24, 9, 10),
-                endDate: new Date(2016, 4, 24, 11, 20)
+                startDate: new Date("2016-04-24T09:10:00.000Z"),
+                endDate: new Date("2016-04-24T11:20:00.000Z")
             }, {
                 movie: "Royal Wedding",
                 price: 10,
-                startDate: new Date(2016, 4, 24, 10, 05),
-                endDate: new Date(2016, 4, 24, 11, 30)
+                startDate: new Date("2016-04-24T10:05:00.000Z"),
+                endDate: new Date("2016-04-24T11:30:00.000Z")
             }, 
             // ...
             ];
@@ -231,13 +231,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         schedulerData: [{
             movie: "His Girl Friday",
             price: 5,
-            startDate: new Date(2016, 4, 24, 9, 10),
-            endDate: new Date(2016, 4, 24, 11, 20)
+            startDate: new Date("2016-04-24T09:10:00.000Z"),
+            endDate: new Date("2016-04-24T11:20:00.000Z")
         }, {
             movie: "Royal Wedding",
             price: 10,
-            startDate: new Date(2016, 4, 24, 10, 05),
-            endDate: new Date(2016, 4, 24, 11, 30)
+            startDate: new Date("2016-04-24T10:05:00.000Z"),
+            endDate: new Date("2016-04-24T11:30:00.000Z")
         }, 
         // ...
         ],
@@ -278,13 +278,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
                 appointments: [{
                     movie: "His Girl Friday",
                     price: 5,
-                    startDate: new Date(2016, 4, 24, 9, 10),
-                    endDate: new Date(2016, 4, 24, 11, 20)
+                    startDate: new Date("2016-04-24T09:10:00.000Z"),
+                    endDate: new Date("2016-04-24T11:20:00.000Z")
                 }, {
                     movie: "Royal Wedding",
                     price: 10,
-                    startDate: new Date(2016, 4, 24, 10, 5),
-                    endDate: new Date(2016, 4, 24, 11, 30)
+                    startDate: new Date("2016-04-24T10:05:00.000Z"),
+                    endDate: new Date("2016-04-24T11:30:00.000Z")
                 }, 
                 // ...
                 ];
@@ -306,13 +306,13 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
     const appointments = [{
         movie: "His Girl Friday",
         price: 5,
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, {
         movie: "Royal Wedding",
         price: 10,
-        startDate: new Date(2016, 4, 24, 10, 5),
-        endDate: new Date(2016, 4, 24, 11, 30)
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z")
     }, 
     // ...
     ];
@@ -341,20 +341,20 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
 ---
 
-If you use only jQuery, combine HTML markup for appointments manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTemplate](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/appointmentTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTemplate') callback function as shown in the following code.
+If you use only jQuery, combine HTML markup for appointments manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTemplate') callback function as shown in the following code.
 
 [**jQuery**](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component')
 
     <!--JavaScript-->var schedulerData = [{
         movie: "His Girl Friday",
         price: 5,
-        startDate: new Date(2016, 4, 24, 9, 10),
-        endDate: new Date(2016, 4, 24, 11, 20)
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
     }, {
         movie: "Royal Wedding",
         price: 10,
-        startDate: new Date(2016, 4, 24, 10, 05),
-        endDate: new Date(2016, 4, 24, 11, 30)
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z")
     }, 
     // ...
     ];
@@ -382,21 +382,21 @@ You can also customize an individual appointment. For this purpose, declare a te
 
     <!--JavaScript-->var schedulerData = [{
         movie: "Royal Wedding",
-        startDate: new Date(2016, 4, 24, 10, 05),
-        endDate: new Date(2016, 4, 24, 11, 30),
+        startDate: new Date("2016-04-24T10:05:00.000Z"),
+        endDate: new Date("2016-04-24T11:30:00.000Z"),
         template: $("#individualTemplate")
     }, {
         // ...
     }];
 
-In addition, you can use a 3rd-party template engine to customize the UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20Widgets/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+In addition, you can use a 3rd-party template engine to customize the UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
-- [Scheduler - Customize Appointment Tooltip](/concepts/05%20Widgets/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')
-- [Scheduler - Customize Appointment Details Form](/concepts/05%20Widgets/Scheduler/030%20Appointments/070%20Customize%20Appointment%20Details%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Details_Form/')
-- [Scheduler - Customize Resource Headers](/concepts/05%20Widgets/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
-- [Scheduler - Customize Timetable](/concepts/05%20Widgets/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler - Customize Appointment Tooltip](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')
+- [Scheduler - Customize Appointment Details Form](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Customize%20Appointment%20Details%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Details_Form/')
+- [Scheduler - Customize Resource Headers](/concepts/05%20UI%20Components/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
+- [Scheduler - Customize Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 
 [tags]scheduler, appointment appearance, customize, templates

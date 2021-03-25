@@ -1,4 +1,4 @@
-To customize individual views, assign an array of configuration objects to the **views** property. Each object contains the [type](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') property that defines which view is customized. Refer to the [API Reference](/api-reference/10%20UI%20Widgets/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') for a list of properties.
+To customize individual views, assign an array of configuration objects to the **views** property. Each object contains the [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') property that defines which view is customized. Refer to the [API Reference](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') for a list of properties.
 
 The following code defines three views: the first is not customized, the second has a specific cell duration and a custom template for the time scale, and the third is grouped by resources.
 
@@ -9,13 +9,13 @@ The following code defines three views: the first is not customized, the second 
     var data = [{
         text: "Google AdWords Strategy",
         ownerId: [2],
-        startDate: new Date(2016, 1, 1, 9, 0),
-        endDate: new Date(2016, 1, 1, 10, 30)
+        startDate: new Date("2016-01-01T09:00:00.000Z"),
+        endDate: new Date("2016-01-01T10:30:00.000Z")
     }, {
         text: "New Brochures",
         ownerId: [1],
-        startDate: new Date(2016, 1, 1, 11, 30),
-        endDate: new Date(2016, 1, 1, 14, 15)
+        startDate: new Date("2016-01-01T11:30:00.000Z"),
+        endDate: new Date("2016-01-01T14:15:00.000Z")
     },
     // ...
     ];
@@ -74,13 +74,13 @@ The following code defines three views: the first is not customized, the second 
         schedulerData = [{
             text: "Google AdWords Strategy",
             ownerId: [2],
-            startDate: new Date(2016, 1, 1, 9, 0),
-            endDate: new Date(2016, 1, 1, 10, 30)
+            startDate: new Date("2016-01-01T09:00:00.000Z"),
+            endDate: new Date("2016-01-01T10:30:00.000Z")
         }, {
             text: "New Brochures",
             ownerId: [1],
-            startDate: new Date(2016, 1, 1, 11, 30),
-            endDate: new Date(2016, 1, 1, 14, 15)
+            startDate: new Date("2016-01-01T11:30:00.000Z"),
+            endDate: new Date("2016-01-01T14:15:00.000Z")
         },
         // ...
         ];
@@ -138,13 +138,13 @@ The following code defines three views: the first is not customized, the second 
                 schedulerData: [{
                     text: "Google AdWords Strategy",
                     ownerId: [2],
-                    startDate: new Date(2016, 1, 1, 9, 0),
-                    endDate: new Date(2016, 1, 1, 10, 30)
+                    startDate: new Date("2016-01-01T09:00:00.000Z"),
+                    endDate: new Date("2016-01-01T10:30:00.000Z")
                 }, {
                     text: "New Brochures",
                     ownerId: [1],
-                    startDate: new Date(2016, 1, 1, 11, 30),
-                    endDate: new Date(2016, 1, 1, 14, 15)
+                    startDate: new Date("2016-01-01T11:30:00.000Z"),
+                    endDate: new Date("2016-01-01T14:15:00.000Z")
                 },
                 // ...
                 ],
@@ -171,13 +171,13 @@ The following code defines three views: the first is not customized, the second 
     const schedulerData = [{
         text: 'Google AdWords Strategy',
         ownerId: [2],
-        startDate: new Date(2016, 1, 1, 9, 0),
-        endDate: new Date(2016, 1, 1, 10, 30)
+        startDate: new Date("2016-01-01T09:00:00.000Z"),
+        endDate: new Date("2016-01-01T10:30:00.000Z")
     }, {
         text: 'New Brochures',
         ownerId: [1],
-        startDate: new Date(2016, 1, 1, 11, 30),
-        endDate: new Date(2016, 1, 1, 14, 15)
+        startDate: new Date("2016-01-01T11:30:00.000Z"),
+        endDate: new Date("2016-01-01T14:15:00.000Z")
     },
     // ...
     ];
@@ -222,10 +222,10 @@ The following code defines three views: the first is not customized, the second 
 }
 
 #####See Also#####
-- [Scheduler - View Types](/concepts/05%20Widgets/Scheduler/060%20Views/010%20View%20Types '/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/')
-- [Scheduler - Customize Appointment](/concepts/05%20Widgets/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Scheduler - Customize Timetable](/concepts/05%20Widgets/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
+- [Scheduler - View Types](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types '/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/')
+- [Scheduler - Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
+- [Scheduler - Customize Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
-- [Scheduler API Reference](/api-reference/10%20UI%20Widgets/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
+- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 [tags]scheduler, customize individual view

@@ -58,7 +58,7 @@ If none of the predefined algorithms satisfy your needs, implement your own algo
         }
     };
 
-In addition, you can change the layout direction. For this purpose, use the [layoutDirection](/api-reference/20%20Data%20Visualization%20Widgets/dxTreeMap/1%20Configuration/layoutDirection.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#layoutDirection') property.
+In addition, you can change the layout direction. For this purpose, use the [layoutDirection](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/layoutDirection.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#layoutDirection') property.
 
 #include common-ref-enum with {
     enum: "`TreeMapLayoutAlgorithm`",

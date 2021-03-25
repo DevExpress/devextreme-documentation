@@ -9,7 +9,7 @@ Returns the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documenta
 The **DataSource** instance.
 
 ---
-[note] This method returns the **DataSource** instance even if the [dataSource](/api-reference/20%20Data%20Visualization%20Widgets/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource') property of the layer was given a simple array.
+[note] This method returns the **DataSource** instance even if the [dataSource](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource') property of the layer was given a simple array.
 
 #####See Also#####
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')

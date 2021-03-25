@@ -2,8 +2,6 @@ Users can add, update, and delete records. To allow these operations, enable the
 
 DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different validation rule types, such as [Email](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/EmailRule/), [Compare](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/), [Range](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RangeRule/), and more. Validation rules are specified per column; one column can use multiple rules. The code below assigns the [Required](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/) rule to several columns.
 
-[note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from the following knowledge base article to implement it: <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">TreeList - How to perform CRUD operations on a hierarchical data source</a>.
-
 ---
 ##### jQuery
 
@@ -181,3 +179,5 @@ DevExtreme includes a validation engine that checks edited values before they ar
 ---
 
 Run the code and click the Edit button in any row. This invokes a pop-up window that contains an edit form. When you clear the Full Name text box on this form, the following validation error is shown: *"Full Name is required"*.
+
+[note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from the following knowledge base article to implement it: <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">TreeList - How to perform CRUD operations on a hierarchical data source</a>.

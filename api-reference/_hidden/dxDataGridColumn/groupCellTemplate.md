@@ -59,6 +59,9 @@ The group cell's value with applied [format](/api-reference/_hidden/dxDataGridCo
 ##### field(cellInfo.value): any
 The group cell's value as it is specified in a data source.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The following details should be taken into account when you use a **groupCellTemplate**:
 

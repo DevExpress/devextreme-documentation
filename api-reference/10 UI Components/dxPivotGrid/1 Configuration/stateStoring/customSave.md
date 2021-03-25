@@ -9,6 +9,9 @@ type: function(state)
 ##### param(state): Object
 <!-- %param(gridState)% -->
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 <!-- %fullDescription% -->
 

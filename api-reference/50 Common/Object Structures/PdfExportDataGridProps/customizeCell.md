@@ -15,6 +15,9 @@ A DataGrid cell.
 ##### field(options.pdfCell): Object
 An object that describes a cell in a PDF file. Refer to the following <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">Autotable</a> documentation section to see available customizations: <a href="https://github.com/simonbengtsson/jsPDF-AutoTable#options" target="_blank">jsPDF-Autotable options</a>.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 
 ---

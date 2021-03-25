@@ -57,6 +57,9 @@ A function that returns the variable that should be tracked.
 - **handler(newValue)**: <font size="-1">Function</font>        
 A function called when this variable changes.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 The following details should be taken into account when you use a **cellTemplate**:
 

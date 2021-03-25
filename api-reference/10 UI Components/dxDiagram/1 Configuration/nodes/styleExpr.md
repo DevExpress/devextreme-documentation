@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides a node 
 ##### param(data): Object
 The current node's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"fill: #d9d9d9; stroke: #999999"`. 
 

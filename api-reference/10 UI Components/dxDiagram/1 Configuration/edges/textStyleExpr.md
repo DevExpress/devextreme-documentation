@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides an edge
 ##### param(data): Object
 The current edge's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 
 

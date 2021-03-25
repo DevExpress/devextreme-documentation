@@ -9,6 +9,9 @@ Specifies a function that customizes a form item after it has been created.
 ##### param(item): dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
 The item's object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 If you did not define form items using the [items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '{basewidgetpath}/Configuration/#items') property, the Form UI component creates them automatically according to the structure of an object passed to the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '{basewidgetpath}/Configuration/#formData') property. The **customizeItem** property enables you to modify properties of each generated item before this item is rendered. Each generated item passed to this function as an argument has a [Simple Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/') structure.
 

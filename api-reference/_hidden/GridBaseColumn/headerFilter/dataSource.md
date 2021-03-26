@@ -14,7 +14,7 @@ Data source properties.
 The UI component's instance.
 
 ##### field(options.dataSource): DataSource_Options
-A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance.
+A DataSource configuration.
 
 ##### return: any
 <!-- Description goes here -->
@@ -226,7 +226,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
             columns: [{
                 // ...
                 headerFilter: {
-                    dataSource: new DevExpress.data.DataSource({
+                    dataSource: {
                         store: categoriesStore,
                         map: function (item) {
                             return {
@@ -236,7 +236,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                                 categoryCode: item.categoryCode
                             }
                         }
-                    })
+                    }
                 }
             }]
         });
@@ -256,7 +256,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import ArrayStore from 'devextreme/data/array_store';
-    import DataSource from 'devextreme/data/data_source';
 
     @Component({
         selector: 'app-root',
@@ -264,7 +263,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        headerFilterData: DataSource;
+        headerFilterData;
         constructor() {
             const categoriesStore = new ArrayStore({
                 data: [
@@ -274,7 +273,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                 key: ["categoryId", "categoryCode"]
             });
 
-            this.headerFilterData = new DataSource({
+            this.headerFilterData = {
                 store: categoriesStore,
                 map: (item) => {
                     return {
@@ -284,7 +283,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                         categoryCode: item.categoryCode
                     }
                 }
-            });
+            };
         }
     }
 
@@ -330,7 +329,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
         DxHeaderFilter
     } from 'devextreme-vue/{widget-name}';
     import ArrayStore from 'devextreme/data/array_store';
-    import DataSource from 'devextreme/data/data_source';
 
     const categoriesStore = new ArrayStore({
         data: [
@@ -348,7 +346,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
         },
         data() {
             return {
-                headerFilterData: new DataSource({
+                headerFilterData: {
                     store: categoriesStore,
                     map: (item) => {
                         return {
@@ -358,7 +356,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                             categoryCode: item.categoryCode
                         }
                     }
-                })
+                }
             };
         }
     }
@@ -372,7 +370,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
     import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
     import ArrayStore from 'devextreme/data/array_store';
-    import DataSource from 'devextreme/data/data_source';
 
     const categoriesStore = new ArrayStore({
         data: [
@@ -382,7 +379,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
         key: ["categoryId", "categoryCode"]
     });
 
-    const headerFilterData = new DataSource({
+    const headerFilterData = {
         store: categoriesStore,
         map: (item) => {
             return {
@@ -392,7 +389,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                 categoryCode: item.categoryCode
             }
         }
-    });
+    };
 
     class App extends React.Component {
         render() {
@@ -414,7 +411,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
 ### Change the Generated Data Source
 
-To change the generated data source, set the **dataSource** property to a function. This function accepts an object whose `dataSource` field contains a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance. Define the **DataSource**'s [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') function in which you can change header filter items.
+To change the generated data source, set the **dataSource** property to a function. This function accepts an object whose `dataSource` field contains a [DataSource configuration](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/). Define the **DataSource**'s [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') function in which you can change header filter items.
 
 In the following code, the **postProcess** function adds a custom item to the generated data source:
 

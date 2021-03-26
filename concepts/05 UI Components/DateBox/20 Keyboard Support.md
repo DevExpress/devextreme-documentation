@@ -42,7 +42,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Closes the drop-down editor.</td>
     </tr>
     <tr>
-        <td rowspan="2">List</td>
+        <td rowspan="3">List</td>
         <td style="font-style:italic; text-align:center">&uarr; / &darr;</td>
         <td>Moves focus to the previous/next time value.</td>
     </tr>

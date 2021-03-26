@@ -1,4 +1,4 @@
-You can call the [expandAdaptiveDetailRow(key)](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#expandAdaptiveDetailRowkey) or [collapseAdaptiveDetailRow()](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#collapseAdaptiveDetailRow) method to expand or collapse an adaptive detail row. To check whether a specific row is expanded, use the isAdaptiveDetailRowExpanded(key) method. Note that only one detail row can be expanded at a time.
+You can call the [expandAdaptiveDetailRow(key)](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#expandAdaptiveDetailRowkey) or [collapseAdaptiveDetailRow()](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#collapseAdaptiveDetailRow) method to expand or collapse an adaptive detail row. To check whether a specific row is expanded, use the [isAdaptiveDetailRowExpanded(key)](/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#isAdaptiveDetailRowExpandedkey) method. Note that only one detail row can be expanded at a time.
 
 ---
 ##### jQuery

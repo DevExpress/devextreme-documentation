@@ -164,6 +164,80 @@ Do not specify the **onValueChanged** property in this object. If you need to ad
         (onEditorPreparing)="onEditorPreparing($event)">
     </dx-filter-builder>
     
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder ...
+            @editor-preparing="overrideOnValueChanged">
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder from 'devextreme-vue/filter-builder';
+
+    export default {
+        components: {
+            DxFilterBuilder
+        },
+        // ...
+        methods: {
+            overrideOnValueChanged(e) {
+                if (e.dataField === 'requiredDataField') {
+                    const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                    e.editorOptions.onValueChanged = function (args) { // Override the default handler
+                        // ...
+                        // Custom commands go here
+                        // ...
+                        // If you want to modify the editor value, call the setValue function:
+                        // e.setValue(newValue);
+                        // Otherwise, call the default handler:
+                        defaultValueChangeHandler(args);
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder from 'devextreme-react/filter-builder';
+
+    class App extends React.Component {
+        overrideOnValueChanged(e) {
+            if (e.dataField === 'requiredDataField') {
+                const defaultValueChangeHandler = e.editorOptions.onValueChanged;
+                e.editorOptions.onValueChanged = function (args) { // Override the default handler
+                    // ...
+                    // Custom commands go here
+                    // ...
+                    // If you want to modify the editor value, call the setValue function:
+                    // e.setValue(newValue);
+                    // Otherwise, call the default handler:
+                    defaultValueChangeHandler(args);
+                }
+            }
+        }
+        render() {
+            return (
+                <FilterBuilder ...
+                    onEditorPreparing={this.overrideOnValueChanged}>
+                </FilterBuilder>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 [/note]

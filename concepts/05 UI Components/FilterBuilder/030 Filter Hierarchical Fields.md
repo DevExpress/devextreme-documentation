@@ -4,7 +4,7 @@ In the following code, the FilterBuilder allows filtering by three fields, two o
 #####jQuery
 
     <!--JavaScript-->
-    var orders = [{
+    const orders = [{
         orderID: 35703,
         address: {
             state: "California",
@@ -33,6 +33,14 @@ In the following code, the FilterBuilder allows filtering by three fields, two o
 
 #####Angular
 
+    <!--HTML-->
+    <dx-filter-builder
+        [allowHierarchicalFields]="true">
+        <dxi-field dataField="orderID"></dxi-field>
+        <dxi-field dataField="address.state"></dxi-field>
+        <dxi-field dataField="address.city"></dxi-field>
+    </dx-filter-builder>
+
     <!--TypeScript-->
     import { DxFilterBuilderModule } from "devextreme-angular";
     // ...
@@ -52,12 +60,6 @@ In the following code, the FilterBuilder allows filtering by three fields, two o
         }, 
         // ...
         ];
-
-        fields = [
-            { dataField: "orderID" },
-            { dataField: "address.state" }, 
-            { dataField: "address.city" }
-        ];
     }
     @NgModule({
         imports: [
@@ -67,10 +69,89 @@ In the following code, the FilterBuilder allows filtering by three fields, two o
         // ...
     })
 
-    <!--HTML-->
-    <dx-filter-builder 
-        [fields]="fields">
-    </dx-filter-builder>
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder
+            :allow-hierarchical-fields="true">
+            <DxField data-field="orderID" />
+            <DxField data-field="address.state" />
+            <DxField data-field="address.city" />
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, {
+        DxField
+    } from 'devextreme-vue/filter-builder';
+
+    const orders = [{
+        orderID: 35703,
+        address: {
+            state: "California",
+            city: "Los Angeles"
+        }
+    }, {
+        orderID: 35711,
+        address: {
+            state: "California",
+            city: "San Jose"
+        }
+    }, 
+    // ...
+    ];
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField
+        },
+        data() {
+            return {
+                orders
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, {
+        Field
+    } from 'devextreme-react/filter-builder';
+
+    const orders = [{
+        orderID: 35703,
+        address: {
+            state: "California",
+            city: "Los Angeles"
+        }
+    }, {
+        orderID: 35711,
+        address: {
+            state: "California",
+            city: "San Jose"
+        }
+    }, 
+    // ...
+    ];
+
+    export default function App() {
+        return (
+            <FilterBuilder
+                allowHierarchicalFields={true}>
+                <Field dataField="orderID" />
+                <Field dataField="address.state" />
+                <Field dataField="address.city" />
+            </FilterBuilder>
+        );
+    }
 
 ---
 

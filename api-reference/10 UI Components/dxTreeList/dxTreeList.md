@@ -29,11 +29,11 @@ columns: ["position", "fullName", "email"]
 dx.web.js, dx.all.js
 
 ---
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/" 
+}
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
-}
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/TreeList/Overview/"
 }
 
 #####See Also#####

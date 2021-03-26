@@ -163,14 +163,10 @@ The following code adds a simple FilterBuilder to your page. Note that each item
             ]
         ]);
 
-        const handleFilterValueChange = ({ value }) => {
-            setFilterValue(value);
-        };
-
         return (
             <FilterBuilder
                 value={filterValue}
-                onValueChanged={handleFilterValueChange}>
+                onValueChange={setFilterValue}>
                 <Field
                     dataField="Product_ID"
                     dataType="number"

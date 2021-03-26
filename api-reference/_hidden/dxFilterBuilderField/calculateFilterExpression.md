@@ -124,7 +124,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                     if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
                         const filterExpression = [
                             [field.dataField, ">", filterValue[0]], 
-                            "field", 
+                            "and", 
                             [field.dataField, "<", filterValue[1]]
                         ];
                         return filterExpression;

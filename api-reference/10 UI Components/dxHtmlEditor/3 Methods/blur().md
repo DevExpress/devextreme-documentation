@@ -3,7 +3,9 @@ id: dxHtmlEditor.blur()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxTextEditor\3 Methods\blur().md' -->

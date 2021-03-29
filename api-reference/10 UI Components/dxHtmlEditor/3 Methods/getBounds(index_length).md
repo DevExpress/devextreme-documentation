@@ -3,16 +3,16 @@ id: dxHtmlEditor.getBounds(index, length)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Retrieves the pixel position and size of a selection at a specified location.
 
 ##### return: Object
-<!-- Description goes here -->
+An object that contains the data on the size and location of a selection.
 
 ##### param(index): Number
-<!-- Description goes here -->
+A zero-based index at which position retrieval begins.
 
 ##### param(length): Number
-<!-- Description goes here -->
+The length of the selection for which the position is retrieved. 
 
 ---
 <!-- Description goes here -->

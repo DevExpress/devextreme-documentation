@@ -15,6 +15,6 @@ A zero-based index at which the selection starts.
  [Embedded items](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') have a length of 1.
 
 ##### param(focus): Boolean | undefined
-<!-- Description goes here -->
+Optional parameter that focuses HTML Editor.
 
 ---

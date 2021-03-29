@@ -3,10 +3,10 @@ id: dxHtmlEditor.getFormat()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Retrieves formatting of the text within the current selection range.
 
 ##### return: Object
-<!-- Description goes here -->
+An object that contains formatting data.
 
 ---
 <!-- Description goes here -->

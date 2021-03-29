@@ -112,7 +112,7 @@ If your data is an array of objects, specify:
 - [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#valueExpr')     
     The data field whose value will be written into the [value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') property.
 - [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#displayExpr')     
-    The data field whose value will be displayed within the inner [List](/concepts/05%20UI%20Components/List/00%20Overview.md '/Documentation/Guide/UI_Components/List/Overview') UI component and in the input field of the Lookup.
+    The data field whose value will be displayed within the inner [List](/Documentation/Guide/UI_Components/List/Getting_Started_with_List) UI component and in the input field of the Lookup.
 
 <!---->
 

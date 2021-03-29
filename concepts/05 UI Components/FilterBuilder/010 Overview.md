@@ -18,7 +18,7 @@ The following code adds a simple FilterBuilder to your page. Note that each item
                     "and",
                     ["Product_Cost", ">=", 300]
                 ],
-                "Or",
+                "or",
                 [
                     ["Product_Name", "contains", "HD"],
                     "and",
@@ -43,26 +43,39 @@ The following code adds a simple FilterBuilder to your page. Note that each item
 #####Angular
 
     <!--HTML-->
-    <dx-filter-builder 
-        [fields]="fields">
+    <dx-filter-builder
+        [(value)]="filterValue">
+        <dxi-field
+            dataField="Product_ID"
+            dataType="number"
+            caption="ID">
+        </dxi-field>
+        <dxi-field dataField="Product_Name"></dxi-field>
+        <dxi-field
+            dataField="Product_Cost"
+            dataType="number"
+            caption="Cost"
+            format="currency">
+        </dxi-field>
     </dx-filter-builder>
 
     <!--TypeScript-->
     import { DxFilterBuilderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        fields = [{
-            caption: "ID",
-            dataField: "Product_ID",
-            dataType: "number"
-        }, {
-            dataField: "Product_Name"
-        }, {
-            caption: "Cost",
-            dataField: "Product_Cost",
-            dataType: "number",
-            format: "currency"
-        }];
+        filterValue = [
+            [
+                ["Product_Name", "startswith", "Super"],
+                "and",
+                ["Product_Cost", ">=", 300]
+            ],
+            "or",
+            [
+                ["Product_Name", "contains", "HD"],
+                "and",
+                ["Product_Cost", "<", 200]
+            ]
+        ];
     }
     @NgModule({
         imports: [
@@ -71,6 +84,104 @@ The following code adds a simple FilterBuilder to your page. Note that each item
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder
+            v-model:value="filterValue">
+            <DxField
+                data-field="Product_ID"
+                data-type="number"
+                caption="ID"
+            />
+            <DxField data-field="Product_Name" />
+            <DxField
+                data-field="Product_Cost"
+                data-type="number"
+                caption="Cost"
+                format="currency"
+            />
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, {
+        DxField
+    } from 'devextreme-vue/filter-builder';
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField
+        },
+        data() {
+            return {
+                filterValue: [
+                    [
+                        ["Product_Name", "startswith", "Super"],
+                        "and",
+                        ["Product_Cost", ">=", 300]
+                    ],
+                    "or",
+                    [
+                        ["Product_Name", "contains", "HD"],
+                        "and",
+                        ["Product_Cost", "<", 200]
+                    ]
+                ]
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import { useState } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, {
+        Field
+    } from 'devextreme-react/filter-builder';
+
+    export default function App() {
+        const [filterValue, setFilterValue] = useState([
+            [
+                ["Product_Name", "startswith", "Super"],
+                "and",
+                ["Product_Cost", ">=", 300]
+            ],
+            "or",
+            [
+                ["Product_Name", "contains", "HD"],
+                "and",
+                ["Product_Cost", "<", 200]
+            ]
+        ]);
+
+        return (
+            <FilterBuilder
+                value={filterValue}
+                onValueChange={setFilterValue}>
+                <Field
+                    dataField="Product_ID"
+                    dataType="number"
+                    caption="ID"
+                />
+                <Field dataField="Product_Name" />
+                <Field
+                    dataField="Product_Cost"
+                    dataType="number"
+                    caption="Cost"
+                    format="currency"
+                />
+            </FilterBuilder>
+        );
+    }
 
 ---
 

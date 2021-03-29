@@ -42,8 +42,9 @@ In the following code, the **calculateFilterExpression** function implements an 
             // ...
             fields: [{
                 calculateFilterExpression: function (filterValue, selectedFilterOperation) {
+                    // Implementation for the "between" comparison operator
                     if (selectedFilterOperation === "between" && $.isArray(filterValue)) {
-                        var filterExpression = [
+                        const filterExpression = [
                             [this.dataField, ">", filterValue[0]], 
                             "and", 
                             [this.dataField, "<", filterValue[1]]
@@ -65,9 +66,10 @@ In the following code, the **calculateFilterExpression** function implements an 
     // ...
     export class AppComponent {
         calculateFilterExpression (filterValue, selectedFilterOperation) {
-            let field = this as any;
+            const field = this as any;
+            // Implementation for the "between" comparison operator
             if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
-                var filterExpression = [
+                const filterExpression = [
                     [field.dataField, ">", filterValue[0]], 
                     "and", 
                     [field.dataField, "<", filterValue[1]]
@@ -90,6 +92,84 @@ In the following code, the **calculateFilterExpression** function implements an 
     <dx-filter-builder ... >
         <dxi-field [calculateFilterExpression]="calculateFilterExpression" ... ></dxi-field>
     </dx-filter-builder>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder>
+            <DxField ...
+                :calculate-filter-expression="calculateFilterExpression">
+            </DxField>
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder, {
+        DxField
+    } from 'devextreme-vue/filter-builder';
+
+    export default {
+        components: {
+            DxFilterBuilder,
+            DxField
+        },
+        data() {
+            return {
+                calculateFilterExpression (filterValue, selectedFilterOperation) {
+                    const field = this;
+                    // Implementation for the "between" comparison operator
+                    if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
+                        const filterExpression = [
+                            [field.dataField, ">", filterValue[0]], 
+                            "and", 
+                            [field.dataField, "<", filterValue[1]]
+                        ];
+                        return filterExpression;
+                    }
+                    // Invokes the default filtering behavior
+                    return field.defaultCalculateFilterExpression.apply(field, arguments);
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder, {
+        Field
+    } from 'devextreme-react/filter-builder';
+
+    function calculateFilterExpression (filterValue, selectedFilterOperation) {
+        // Implementation for the "between" comparison operator
+        if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
+            const filterExpression = [
+                [this.dataField, ">", filterValue[0]], 
+                "and", 
+                [this.dataField, "<", filterValue[1]]
+            ];
+            return filterExpression;
+        }
+        // Invokes the default filtering behavior
+        return this.defaultCalculateFilterExpression.apply(this, arguments);
+    }
+
+    export default function App() {
+        return (
+            <FilterBuilder>
+                <Field ...
+                    calculateFilterExpression={calculateFilterExpression}>
+                </Field>
+            </FilterBuilder>
+        );
+    }
     
 ---
 

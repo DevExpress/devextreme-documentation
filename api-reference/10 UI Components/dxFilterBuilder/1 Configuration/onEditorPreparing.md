@@ -114,6 +114,72 @@ In the following code, a default editor is replaced with the DevExtreme [TextAre
     <dx-filter-builder ...
         (onEditorPreparing)="onEditorPreparing($event)">
     </dx-filter-builder>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFilterBuilder ...
+            @editor-preparing="onEditorPreparing">
+        </DxFilterBuilder>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFilterBuilder from 'devextreme-vue/filter-builder';
+
+    export default {
+        components: {
+            DxFilterBuilder
+        },
+        // ...
+        methods: {
+            onEditorPreparing (e) { 
+                if (e.dataField == "description") {
+                    e.editorName = "dxTextArea"; 
+                    e.editorOptions.showClearButton = true;
+                    e.editorOptions.onValueChanged = (event) => {
+                        const value = event.value;
+                        e.setValue(value.toLowerCase()); 
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FilterBuilder from 'devextreme-react/filter-builder';
+
+    class App extends React.Component {
+        onEditorPreparing (e) { 
+            if (e.dataField == "description") {
+                e.editorName = "dxTextArea"; 
+                e.editorOptions.showClearButton = true;
+                e.editorOptions.onValueChanged = (event) => {
+                    const value = event.value;
+                    e.setValue(value.toLowerCase()); 
+                }
+            }
+        }
+        render() {
+            return (
+                <FilterBuilder ...
+                    onEditorPreparing={this.onEditorPreparing}>
+                </FilterBuilder>
+            );
+        }
+    }
+    export default App;
     
 ---
 

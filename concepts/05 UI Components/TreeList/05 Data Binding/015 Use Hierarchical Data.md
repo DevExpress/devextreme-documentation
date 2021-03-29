@@ -142,7 +142,7 @@ All items with children have the **items** field. If you use another name for th
 
 When you load data from a remote source, and your data objects have a field that defines whether a row has nested rows, assign this field name to the [hasItemsExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#hasItemsExpr') property. It will notify the UI component which rows do not need the expand button. 
 
-[note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">this KB</a> to implement it.
+[note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from the following knowledge base article to implement it: <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">TreeList - How to perform CRUD operations on a hierarchical data source</a>.
 
 #####See Also#####
 - [TreeList - Use Plain Data](/concepts/05%20UI%20Components/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Plain_Data/')

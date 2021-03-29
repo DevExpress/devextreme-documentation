@@ -10,6 +10,9 @@ Specifies the name of a data source field or an expression that provides the y-c
 ##### param(data): Object
 The current node's data object.
 
+##### return: any
+<!-- Description goes here -->
+
 ---
 A node's y-coordinate specifies the distance between the top border of a diagram work area and the top border of a shape, in [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units').
 

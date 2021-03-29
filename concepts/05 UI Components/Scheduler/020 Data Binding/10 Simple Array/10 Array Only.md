@@ -7,12 +7,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
     <!--JavaScript-->
     var appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 25, 1, 30),
-        endDate: new Date(2016, 4, 25, 3, 30)
+        startDate: new Date("2016-04-25T01:30:00.000Z"),
+        endDate: new Date("2016-04-25T03:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date(2016, 4, 25, 9, 0),
-        endDate: new Date(2016, 4, 25, 10, 0)
+        startDate: new Date("2016-04-25T09:00:00.000Z"),
+        endDate: new Date("2016-04-25T10:00:00.000Z")
     }, // ...
     ];
 
@@ -30,12 +30,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
     export class AppComponent  {
         appointments = [{
             text: "Meet with a customer",
-            startDate: new Date(2016, 4, 25, 1, 30),
-            endDate: new Date(2016, 4, 25, 3, 30)
+            startDate: new Date("2016-04-25T01:30:00.000Z"),
+            endDate: new Date("2016-04-25T03:30:00.000Z")
         }, {
             text: "Discuss results",
-            startDate: new Date(2016, 4, 25, 9, 0),
-            endDate: new Date(2016, 4, 25, 10, 0)
+            startDate: new Date("2016-04-25T09:00:00.000Z"),
+            endDate: new Date("2016-04-25T10:00:00.000Z")
         }];
     }
     @NgModule({
@@ -75,12 +75,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
                 currentDate: new Date(2016, 4, 25),
                 appointments: [{ 
                     text: 'Meet with a customer', 
-                    startDate: new Date(2016, 4, 25, 1, 30),
-                    endDate: new Date(2016, 4, 25, 3, 30)
+                    startDate: new Date("2016-04-25T01:30:00.000Z"),
+                    endDate: new Date("2016-04-25T03:30:00.000Z")
                 }, { 
                     text: 'Discuss results', 
-                    startDate: new Date(2016, 4, 25, 9, 0),
-                    endDate: new Date(2016, 4, 25, 10, 0)
+                    startDate: new Date("2016-04-25T09:00:00.000Z"),
+                    endDate: new Date("2016-04-25T10:00:00.000Z")
                 }, // ...
                 ];
             }
@@ -99,12 +99,12 @@ To bind the Scheduler to an array, pass this array to the [dataSource](/api-refe
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 25, 1, 30),
-        endDate: new Date(2016, 4, 25, 3, 30)
+        startDate: new Date("2016-04-25T01:30:00.000Z"),
+        endDate: new Date("2016-04-25T03:30:00.000Z")
     }, { 
         text: 'Discuss results', 
-        startDate: new Date(2016, 4, 25, 9, 0),
-        endDate: new Date(2016, 4, 25, 10, 0)
+        startDate: new Date("2016-04-25T09:00:00.000Z"),
+        endDate: new Date("2016-04-25T10:00:00.000Z")
     }, // ...
     ];
 
@@ -135,8 +135,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     <!--JavaScript-->
     var appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 10, 11, 0), 
-        endDate: new Date(2016, 4, 10, 13, 0) 
+        startDate: new Date("2016-04-10T11:00:00.000Z"), 
+        endDate: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -158,8 +158,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
     export class AppComponent {
         appointments = [{ 
             text: 'Meet with a customer', 
-            startDate: new Date(2016, 4, 10, 11, 0), 
-            endDate: new Date(2016, 4, 10, 13, 0) 
+            startDate: new Date("2016-04-10T11:00:00.000Z"), 
+            endDate: new Date("2016-04-10T13:00:00.000Z") 
         }, 
         // ...
         ];
@@ -198,8 +198,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 10, 11, 0), 
-        endDate: new Date(2016, 4, 10, 13, 0) 
+        startDate: new Date("2016-04-10T11:00:00.000Z"), 
+        endDate: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];
@@ -230,8 +230,8 @@ If objects in the array need to be processed (for example, filtered), you can cr
 
     const appointments = [{ 
         text: 'Meet with a customer', 
-        startDate: new Date(2016, 4, 10, 11, 0), 
-        endDate: new Date(2016, 4, 10, 13, 0) 
+        startDate: new Date("2016-04-10T11:00:00.000Z"), 
+        endDate: new Date("2016-04-10T13:00:00.000Z") 
     }, 
     // ...
     ];

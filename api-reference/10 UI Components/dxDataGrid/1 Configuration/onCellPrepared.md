@@ -1,8 +1,8 @@
 ---
-id: dx{WidgetName}.Options.onCellPrepared
+id: dxDataGrid.Options.onCellPrepared
 type: function(e)
 default: null
-EventForAction: dx{WidgetName}.cellPrepared
+EventForAction: dxDataGrid.cellPrepared
 ---
 ---
 ##### shortDescription
@@ -14,7 +14,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cellElement): dxElement
 #include common-ref-elementparam with { element: "cell" }
 
-##### field(e.column): dx{WidgetName}Column
+##### field(e.column): dxDataGridColumn
 This column's [configuration]({basewidgetpath}/Configuration/columns/).
 
 ##### field(e.columnIndex): Number
@@ -44,7 +44,7 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 
 ##### field(e.key): any
 The row's key. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.        
-If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#dataSource'), the whole data object is considered the key.
+If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
 ##### field(e.model): Object
 Model data. Available only if you use Knockout.
@@ -52,7 +52,7 @@ Model data. Available only if you use Knockout.
 ##### field(e.oldValue): any
 <!-- %field(cellInfo.oldValue)% -->
 
-##### field(e.row): dx{WidgetName}RowObject
+##### field(e.row): dxDataGridRowObject
 The row [properties]({basewidgetpath}/Row/).
 
 ##### field(e.rowIndex): Number

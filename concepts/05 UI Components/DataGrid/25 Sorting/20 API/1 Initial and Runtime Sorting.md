@@ -114,13 +114,14 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
 ##### jQuery
 
     <!--JavaScript-->
-    var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
+    const dataGrid = $("#dataGridContainer").dxDataGrid("instance");
     dataGrid.columnOption("Country", {
         sortIndex: 2,
         sortOrder: "desc"
     });
 
 ##### Angular
+
     <!--HTML-->
     <dx-data-grid ... >
         <dxi-column

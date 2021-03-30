@@ -9,7 +9,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
 
         <!--JavaScript-->
         $(function () {
-            var dataGrid = $("#dataGridContainer").dxDataGrid({
+            const dataGrid = $("#dataGridContainer").dxDataGrid({
                 // ...
                 grouping: { 
                     autoExpandAll: false
@@ -40,10 +40,10 @@ The DataGrid provides the following API for expanding and collapsing groups:
             @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
             // Prior to Angular 8
             // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-            collapseAll () {
+            collapseAllGroups () {
                 this.dataGrid.instance.collapseAll();
             }
-            expandAll () {
+            expandAllGroups () {
                 this.dataGrid.instance.expandAll();
             }
         }
@@ -54,6 +54,83 @@ The DataGrid provides the following API for expanding and collapsing groups:
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :ref="dataGridRefKey"> 
+                <DxGrouping 
+                    :auto-expand-all="false"
+                />
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import {
+            DxDataGrid,
+            DxGrouping
+        } from 'devextreme-vue/data-grid';
+
+        const dataGridRefKey = 'my-data-grid';
+
+        export default {
+            components: {
+                DxDataGrid,
+                DxGrouping
+            },
+            data() {
+                return {
+                    dataGridRefKey
+                };
+            },
+            methods: {
+                collapseAllGroups() {
+                    this.dataGrid.collapseAll();
+                },
+                expandAllGroups() {
+                    this.dataGrid.expandAll();
+                }
+            },
+            computed: {
+                dataGrid: function() {
+                    return this.$refs[dataGridRefKey].instance;
+                }
+            }
+        }
+        </script>
+
+    ##### React
+        
+        <!-- tab: App.js -->
+        import React, { useRef } from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+    
+        import DataGrid, {
+            Grouping
+        } from 'devextreme-react/data-grid';
+    
+        export default function App() {
+            const dataGrid = useRef(null);
+            const collapseAllGroups = () => {
+                dataGrid.current.instance.collapseAll();
+            };
+            const expandAllGroups = () => {
+                dataGrid.current.instance.expandAll();
+            };
+            return (
+                <DataGrid ...
+                    ref={dataGrid}>
+                    <Grouping 
+                        autoExpandAll={false}
+                    />
+                </DataGrid>
+            );
+        }
 
     ---
 
@@ -66,7 +143,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
 
         <!--JavaScript-->
         $(function () {
-            var dataGrid = $("#dataGridContainer").dxDataGrid({
+            const dataGrid = $("#dataGridContainer").dxDataGrid({
                 // ...
                 columns: [
                     { dataField: 'firstName', groupIndex: 0 },
@@ -114,6 +191,83 @@ The DataGrid provides the following API for expanding and collapsing groups:
             // ...
         })
 
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :ref="dataGridRefKey"> 
+                <DxGrouping 
+                    :auto-expand-all="false"
+                />
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import {
+            DxDataGrid,
+            DxGrouping
+        } from 'devextreme-vue/data-grid';
+
+        const dataGridRefKey = 'my-data-grid';
+
+        export default {
+            components: {
+                DxDataGrid,
+                DxGrouping
+            },
+            data() {
+                return {
+                    dataGridRefKey
+                };
+            },
+            methods: {
+                collapseAllGroups() {
+                    this.dataGrid.collapseAll();
+                },
+                expandAllGroups() {
+                    this.dataGrid.expandAll();
+                }
+            },
+            computed: {
+                dataGrid: function() {
+                    return this.$refs[dataGridRefKey].instance;
+                }
+            }
+        }
+        </script>
+
+    ##### React
+        
+        <!-- tab: App.js -->
+        import React, { useRef } from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+    
+        import DataGrid, {
+            Grouping
+        } from 'devextreme-react/data-grid';
+    
+        export default function App() {
+            const dataGrid = useRef(null);
+            const collapseAllGroups = () => {
+                dataGrid.current.instance.collapseAll();
+            };
+            const expandAllGroups = () => {
+                dataGrid.current.instance.expandAll();
+            };
+            return (
+                <DataGrid ...
+                    ref={dataGrid}>
+                    <Grouping 
+                        autoExpandAll={false}
+                    />
+                </DataGrid>
+            );
+        }
+
     ---
 
 - **Individual groups**     
@@ -125,7 +279,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
 
         <!--JavaScript-->
         function toggleGroup (groupKey) {
-            var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
+            const dataGrid = $("#dataGridContainer").dxDataGrid("instance");
             if (dataGrid.isRowExpanded(groupKey)) {
                 dataGrid.collapseRow(groupKey);
             } else {
@@ -158,6 +312,79 @@ The DataGrid provides the following API for expanding and collapsing groups:
             ],
             // ...
         })
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :ref="dataGridRefKey">
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import {
+            DxDataGrid,
+            // ...
+        } from 'devextreme-vue/data-grid';
+
+        const dataGridRefKey = 'my-data-grid';
+
+        export default {
+            components: {
+                DxDataGrid,
+                // ...
+            },
+            data() {
+                return {
+                    dataGridRefKey
+                };
+            },
+            methods: {
+                toggleGroup(groupKey) {
+                    if (this.dataGrid.isRowExpanded(groupKey)) {
+                        this.dataGrid.collapseRow(groupKey);
+                    } else {
+                        this.dataGrid.instance.expandRow(groupKey);
+                    }
+                }
+            },
+            computed: {
+                dataGrid: function() {
+                    return this.$refs[dataGridRefKey].instance;
+                }
+            }
+        }
+        </script>
+
+    ##### React
+        
+        <!-- tab: App.js -->
+        import React, { useRef } from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+    
+        import DataGrid, {
+            // ...
+        } from 'devextreme-react/data-grid';
+    
+        export default function App() {
+            const dataGrid = useRef(null);
+            const toggleGroup = (groupKey) => {
+                if (dataGrid.current.instance.isRowExpanded(groupKey)) {
+                    dataGrid.current.instance.collapseRow(groupKey);
+                } else {
+                    dataGrid.current.instance.expandRow(groupKey);
+                }
+            };
+            return (
+                <DataGrid ...
+                    ref={dataGrid}>
+                </DataGrid>
+            );
+        }
 
     ---
 

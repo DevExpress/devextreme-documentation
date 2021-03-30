@@ -3,7 +3,7 @@ id: dxHtmlEditor.blur()
 ---
 ---
 ##### shortDescription
-Removes focus from the editor.
+Removes focus from the content field of the editor.
 
 ---
 <!-- %fullDescription% -->

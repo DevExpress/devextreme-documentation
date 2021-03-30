@@ -12,17 +12,17 @@ The current UI component state.
 The following example shows how to save the UI component state in the local storage and load it from there:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function () {
-        var {widgetName} = $("#{widgetName}Container").dx{WidgetName}({ 
+        const {widgetName} = $("#{widgetName}Container").dx{WidgetName}({ 
             // ...
         }).dx{WidgetName};
         $("#save").dxButton({
             text: "Save State",
             onClick: function() {
-                var state = {widgetName}.state();
+                const state = {widgetName}.state();
                 // Saves the state in the local storage
                 localStorage.setItem("{widgetName}State", JSON.stringify(state));
             }
@@ -30,13 +30,13 @@ The following example shows how to save the UI component state in the local stor
         $("#load").dxButton({
             text: "Load State",
             onClick: function() {
-                let state = JSON.parse(localStorage.getItem("{widgetName}State"));
+                const state = JSON.parse(localStorage.getItem("{widgetName}State"));
                 {widgetName}.state(state);
             }
         });
     });
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { Component, ViewChild } from "@angular/core";
@@ -51,12 +51,12 @@ The following example shows how to save the UI component state in the local stor
         // Prior to Angular 8
         // @ViewChild(Dx{WidgetName}Component) {widgetName}: Dx{WidgetName}Component
         saveState() {
-            let state = this.{widgetName}.instance.state();
+            const state = this.{widgetName}.instance.state();
             // Saves the state in the local storage
             localStorage.setItem("{widgetName}State", JSON.stringify(state));
         }
         loadState() {
-            let state = JSON.parse(localStorage.getItem("{widgetName}State"));
+            const state = JSON.parse(localStorage.getItem("{widgetName}State"));
             this.{widgetName}.instance.state(state);
         }
     }
@@ -80,6 +80,102 @@ The following example shows how to save the UI component state in the local stor
         text="Load State"
         (onClick)="loadState()">
     </dx-button>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :ref="{widgetName}RefKey">
+        </Dx{WidgetName}>
+        <DxButton
+            text="Save State"
+            @click="saveState"
+        />
+        <DxButton
+            text="Load State"
+            @click="loadState"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        // ...
+    } from 'devextreme-vue/{widget-name}';
+    import DxButton from 'devextreme-vue/button';
+
+    const {widgetName}RefKey = "my-{widget-name}";
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            // ...
+            DxButton
+        },
+        data() {
+            return {
+                {widgetName}RefKey
+            }
+        },
+        methods: {
+            saveState() {
+                const state = this.{widgetName}.state();
+                // Saves the state in the local storage
+                localStorage.setItem("{widgetName}State", JSON.stringify(state));
+            },
+            loadState() {
+                const state = JSON.parse(localStorage.getItem("{widgetName}State"));
+                this.{widgetName}.state(state);
+            }
+        },
+        computed: {
+            {widgetName}: function() {
+                return this.$refs[{widgetName}RefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        // ...
+    } from 'devextreme-react/{widget-name}';
+    import Button from 'devextreme-react/button';
+
+    export default function App() {
+        const {widgetName} = useRef(null);
+        const saveState = () => {
+            const state = {widgetName}.current.instance.state();
+            // Saves the state in the local storage
+            localStorage.setItem("{widgetName}State", JSON.stringify(state));
+        };
+        const loadState = () => {
+            const state = JSON.parse(localStorage.getItem("{widgetName}State"));
+            {widgetName}.current.instance.state(state);
+        };
+        return (
+            <React.Fragment>
+                <{WidgetName} ...
+                    ref={{widgetName}}>
+                </{WidgetName}>
+                <Button
+                    text="Save State"
+                    onClick={saveState}
+                />
+                <Button
+                    text="Load State"
+                    onClick={loadState}
+                />
+            </React.Fragment>
+        );
+    }
 
 ---
 

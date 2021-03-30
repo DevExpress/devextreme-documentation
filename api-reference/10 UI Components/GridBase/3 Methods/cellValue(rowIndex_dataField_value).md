@@ -6,7 +6,7 @@ id: GridBase.cellValue(rowIndex, dataField, value)
 Sets a new value to a cell with a specific row index and a data field, column caption or name.
 
 ##### param(rowIndex): Number
-The index of the row to which the cell belongs. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
+The index of the row to which the cell belongs. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/{WidgetName}/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### param(dataField): String
 The [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField'), [caption](/api-reference/_hidden/GridBaseColumn/caption.md '{basewidgetpath}/Configuration/columns/#caption'), or [unique name](/api-reference/_hidden/GridBaseColumn/name.md '{basewidgetpath}/Configuration/columns/#name') of the column to which the cell belongs.
@@ -47,6 +47,67 @@ Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/s
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :ref="{widgetName}RefKey"> 
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
+
+    const {widgetName}RefKey = 'my-{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        data() {
+            return {
+                {widgetName}RefKey
+            };
+        },
+        methods: {
+            updateCell(rowIndex, dataField, value) {
+                this.{widgetName}.cellValue(rowIndex, dataField, value);
+                this.{widgetName}.saveEditData();
+            }
+        },
+        computed: {
+            {widgetName}: function() {
+                return this.$refs[{widgetName}RefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+    
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        const {widgetName} = useRef(null);
+        const updateCell = (rowIndex, dataField, value) => {
+            {widgetName}.current.instance.cellValue(rowIndex, dataField, value);
+            {widgetName}.current.instance.saveEditData();
+        };
+        return (
+            <{WidgetName} ...
+                ref={{widgetName}}>
+            </{WidgetName}>
+        );
+    }
 
 ---
 

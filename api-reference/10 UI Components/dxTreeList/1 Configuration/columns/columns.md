@@ -54,6 +54,74 @@ This property accepts an array of objects, where each object configures a single
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxColumn
+                data-field="Title"
+                caption="Position"
+            />
+            <DxColumn
+                data-field="FullName"
+                :width="300"
+            />
+            <DxColumn
+                data-field="CompanyName"
+            />
+            <DxColumn
+                data-field="City"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxColumn
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Column
+    } from 'devextreme-react/tree-list';
+
+    export default function App() {
+        return (
+            <TreeList>
+                <Column
+                    dataField="Title"
+                    caption="Position"
+                />
+                <Column
+                    dataField="FullName"
+                    width={300}
+                />
+                <Column
+                    dataField="CompanyName"
+                />
+                <Column
+                    dataField="City"
+                />
+            </TreeList>
+        );
+    }
     
 ---
 

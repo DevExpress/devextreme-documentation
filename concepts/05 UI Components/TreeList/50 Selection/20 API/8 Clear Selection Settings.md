@@ -26,6 +26,96 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            v-model:selected-row-keys="selectedRowKeys">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return {
+                selectedRowKeys: []
+            }
+        },
+        methods: {
+            deselectRows(keys) {
+                let selectedRowKeys = this.selectedRowKeys;
+                keys.forEach(function(item) {
+                    const index = selectedRowKeys.indexOf(item);
+                    if (index !== -1) {
+                        selectedRowKeys.splice(index, 1);
+                    }
+                });
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                selectedRowKeys: []
+            }
+            this.deselectRows = this.deselectRows.bind(this);
+        	this.handleOptionChange = this.handleOptionChange.bind(this);
+        }
+
+        deselectRows(keys) {
+            let selectedRowKeys = [...this.state.selectedRowKeys];
+            keys.forEach(function(item) {
+                const index = selectedRowKeys.indexOf(item);
+                if (index !== -1) {
+                    selectedRowKeys.splice(index, 1);
+                }
+            });
+            this.setState({
+                selectedRowKeys: selectedRowKeys
+            });
+        }
+
+        handleOptionChange(e) {
+            if(e.fullName === 'selectedRowKeys') {
+                this.setState({
+                    selectedRowKeys: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    selectedRowKeys={this.state.selectedRowKeys}
+                    onOptionChanged={this.handleOptionChange}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -62,6 +152,93 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            ref="treeList"
+            v-model:selected-row-keys="selectedRowKeys">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return {
+                selectedRowKeys: []
+            }
+        },
+        methods: {
+            deselectAllRows() {
+                this.selectedRowKeys.length = 0;
+            },
+            deselectVisibleRows() {
+                this.$refs['treeList'].instance.deselectAll();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                selectedRowKeys: []
+            }
+            this.treeListRef = React.createRef();
+            this.deselectAllRows = this.deselectAllRows.bind(this);
+            this.deselectVisibleRows = this.deselectVisibleRows.bind(this);
+        }
+
+        deselectAllRows() {
+            this.setState({
+                selectedRowKeys: []
+            });
+        }
+
+        deselectVisibleRows() {
+            this.treeListRef.current.instance.deselectAll();
+        }
+
+        handleOptionChange(e) {
+            if(e.fullName === 'selectedRowKeys') {
+                this.setState({
+                    selectedRowKeys: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    ref="treeListRef"
+                    selectedRowKeys={this.state.selectedRowKeys}
+                    onOptionChanged={this.handleOptionChange}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

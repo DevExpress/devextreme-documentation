@@ -3,7 +3,7 @@ id: dxHtmlEditor.insertText(index, text, formatName, formatValue)
 ---
 ---
 ##### shortDescription
-Inserts text into the HTML Editor.
+Inserts text into the HtmlEditor.
 
 ##### param(index): Number
 A zero-based index at which the text is inserted.

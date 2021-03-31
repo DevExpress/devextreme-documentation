@@ -3,7 +3,7 @@ id: dxHtmlEditor.blur()
 ---
 ---
 ##### shortDescription
-Removes focus from the content field of the editor.
+Removes [focus](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#focus) from the content field of the editor.
 
 ---
 <!-- %fullDescription% -->

@@ -10,7 +10,7 @@ Specifies the pager's display mode.
 
 ---
 
-The following table illustrates the full and compact display modes:
+The following table illustrates the *'full"* and *"compact"* display modes:
 
 <table class="dx-table">
     <tr>
@@ -19,11 +19,11 @@ The following table illustrates the full and compact display modes:
     </tr>
     <tr>
         <td><code>"full"</code></td>
-        <td><img src="/images/UiWidgets/datagrid-pager-display-mode-full.png"/></td>
+        <td><img src="/images/DataGrid/pager-display-mode-full.png"/></td>
     </tr>
     <tr>
         <td><code>"compact"</code></td>
-        <td><img src="/images/UiWidgets/datagrid-pager-display-mode-compact.png"/></td>
+        <td><img src="/images/DataGrid/pager-display-mode-compact.png"/></td>
     </tr>
 </table>
 

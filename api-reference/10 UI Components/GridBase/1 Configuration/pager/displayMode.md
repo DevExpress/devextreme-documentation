@@ -9,13 +9,22 @@ default: 'adaptive'
 Specifies the pager's display mode.
 
 ---
-The following display modes are available:
 
-* full
-Displays values of the page size selector and the page navigator as buttons.
+The following table illustrates the full and compact display modes:
 
-* compact
-Displays the page size selector as a drop-down list and the page navigator as an editor.
+<table class="dx-table">
+    <tr>
+        <th>Display mode</th>
+        <th>What it looks like</th>
+    </tr>
+    <tr>
+        <td><code>"full"</code></td>
+        <td><img src="/images/UiWidgets/datagrid-pager-display-mode-full.png"/></td>
+    </tr>
+    <tr>
+        <td><code>"compact"</code></td>
+        <td><img src="/images/UiWidgets/datagrid-pager-display-mode-compact.png/></td>
+    </tr>
+</table>
 
-* adaptive
-Switches between the compact and full modes based on the component size.
+The default adaptive display mode switches between these two modes based on the component size.

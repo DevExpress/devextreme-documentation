@@ -14,8 +14,8 @@ The following table illustrates the full and compact display modes:
 
 <table class="dx-table">
     <tr>
-        <th>Display mode</th>
-        <th>Appearance</th>
+        <th>displayMode</th>
+        <th>Pager appearance</th>
     </tr>
     <tr>
         <td><code>"full"</code></td>
@@ -27,4 +27,4 @@ The following table illustrates the full and compact display modes:
     </tr>
 </table>
 
-The *"adaptive"* display mode switches between these two modes based on the component size.
+The *"adaptive"* display mode switches between these two modes based on the component width.

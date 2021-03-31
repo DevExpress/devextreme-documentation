@@ -129,26 +129,6 @@ The task's size.
     }
     </script>
 
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Gantt from 'devextreme-react/gantt';
-    import { Template } from 'devextreme-react/core/template';
-
-    const App = () => {
-        
-
-        return (
-            <Gantt 
-                onCustomCommand={onCustomCommand} >
-        
-            </Gantt>
-        );
-    }
-
-    export default App;
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

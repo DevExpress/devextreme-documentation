@@ -4,37 +4,150 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies custom content for the task.
 
 ##### param(container): dxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "task" }
 
 ##### param(item): Object
-<!-- Description goes here -->
+An object that contains information about the task and its default settings.
 
 ##### field(item.cellSize): Object
-<!-- Description goes here -->
+The size of the cell that contains the task.
 
 ##### field(item.isMilestone): Boolean
-<!-- Description goes here -->
+Specifies whether the task is a milestone.
 
 ##### field(item.taskData): Object
-<!-- Description goes here -->
+The processed task. 
 
 ##### field(item.taskHTML): Object
-<!-- Description goes here -->
+The default HTML element of the processed task.
 
 ##### field(item.taskPosition): Object
-<!-- Description goes here -->
+The task's position.
 
 ##### field(item.taskResources): Array<Object>
-<!-- Description goes here -->
+The task's resources.
 
 ##### field(item.taskSize): Object
-<!-- Description goes here -->
+The task's size.
+
+---
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#gantt").dxGantt({
+            taskContentTemplate: getTaskContentTemplate,
+            // ...
+        });
+    }); 
+
+    function getTaskContentTemplate(item, container) {
+        var $customContainer = $(document.createElement("div")) 
+            .addClass("custom-task") 
+            .text(item.taskData.title) 
+            .attr("style", "width:" + item.taskSize.width + "px"); 
+        return $customContainer; 
+    }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-gantt taskContentTemplate="myTaskTemplate">
+        <div *dxTemplate="let data of 'myTaskTemplate'">
+            <div [style.width.px]="item.taskSize.width" class="custom-task">{{item.taskData.title}}</div>
+            <!-- ... -->
+        </div>    
+        ...
+    </dx-gantt>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        // ...
+    } 
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxGanttModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxGanttModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt 
+            :task-content-template="myTaskTemplate" >
+            <template #myTaskTemplate="{ data : item }">
+                <div [style.width.px]="item.taskSize.width" class="custom-task">{{item.taskData.title}}</div>
+                <!-- ... -->
+            </template>                       
+        </DxGantt>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { DxGantt } from 'devextreme-vue/gantt';
+    
+    export default {
+        components: {
+            DxGantt
+        },
+        methods: {
+            //...
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .TaskContentTemplate(new JS("getTaskContentTemplate"))
+        // ...
+    )
+
+    <script>
+        function getTaskContentTemplate(task, container) {
+            var $customContainer = $(document.createElement("div"))
+                .addClass("custom-task");
+                .text(item.Task.Title);
+                .attr("style", "width:" + item.TaskSize.Width + "px"); 
+            return $customContainer;
+        }    
+    </script>
 
 ##### return: String | TElement
 <!-- Description goes here -->
 
 ---
-<!-- Description goes here -->

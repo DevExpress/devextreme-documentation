@@ -6,7 +6,7 @@ id: dxHtmlEditor.getSelection()
 Gets the selected content's position and length.
 
 ##### return: Object
-The selected content's range. Has the following structure:          
+The selected content's range. It has the following structure:          
 
 - **index**     
 A zero-based index at which the selection starts.

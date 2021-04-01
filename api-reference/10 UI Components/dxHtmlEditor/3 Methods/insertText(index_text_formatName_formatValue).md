@@ -9,13 +9,13 @@ Inserts text into the HtmlEditor.
 A zero-based index at which the text is inserted.
 
 ##### param(text): String
-A text to be inserted.
+The text to be inserted.
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-A format name.
+The format name.
 
 ##### param(formatValue): any
-A format value.
+The format value.
 
 ---
 <!-- Description goes here -->

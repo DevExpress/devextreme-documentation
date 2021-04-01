@@ -129,6 +129,32 @@ The task's size.
     }
     </script>
 
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Gantt from 'devextreme-react/gantt';
+    import { Template } from 'devextreme-react/core/template';
+
+    const TaskTemplate = (item) => {
+        return ( 
+            <div className="custom-task" style={{width: item.taskSize.width + "px"}}> 
+                <div className="custom-task-title">{item.taskData.title}</div> 
+            </div> 
+        );         
+    }
+
+    export default function App() {
+        return (
+            <Gantt 
+                taskContentRender={TaskTemplate}>
+                //...
+            </Gantt>
+        );  
+    }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

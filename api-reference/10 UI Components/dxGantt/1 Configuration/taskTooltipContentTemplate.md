@@ -130,13 +130,20 @@ Note that the **container** parameter contains the content of the default toolti
     import Gantt from 'devextreme-react/gantt';
     import { Template } from 'devextreme-react/core/template';
 
-    const App = () => {
-        
+    const TaskTooltipTemplate = (task) => {
+        return ( 
+            <div class="custom-task-edit-tooltip">
+                <div class="custom-tooltip-title">{{ task.title }}</div>
+                <!-- ... -->
+            </div>
+        );         
+    }
 
+    export default function App() {
         return (
-            <Gantt 
-                onCustomCommand={onCustomCommand} >
-        
+            <Gantt
+                taskTooltipContentRender={TaskTooltipTemplate}>
+                //...
             </Gantt>
         );
     }

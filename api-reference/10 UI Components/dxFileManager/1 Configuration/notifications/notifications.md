@@ -4,7 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures notification settings.
 
 ---
-<!-- Description goes here -->

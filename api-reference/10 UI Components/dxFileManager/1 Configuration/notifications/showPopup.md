@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to show the pop-up notification window.
 
 ---
-<!-- Description goes here -->

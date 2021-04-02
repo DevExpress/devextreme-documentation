@@ -9,4 +9,4 @@ default: 'auto'
 Specifies the available page sizes in the page size selector.
 
 ---
-The UI component determines the allowed page sizes depending on the amount of data by default. If you need an option to display all rows on a single page, add *"all"* to the **allowedPageSizes** array. If this is the only element, set **paging**.[pageSize](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize) to 0.
+The amount of data determines the available page sizes in the page size selector. If you need an additional option to display all rows on a single page, add *"all"* to the **allowedPageSizes** array.

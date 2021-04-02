@@ -54,6 +54,88 @@ You can execute certain commands before or after a row was expanded or collapsed
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @row-expanding="onRowExpanding"
+            @row-expanded="onRowExpanded"
+            @row-collapsing="onRowCollapsing"
+            @row-collapsed="onRowCollapsed">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        // ...
+        methods: {
+            onRowExpanding (e) {
+                // Handler of the "rowExpanding" event
+            },
+            onRowExpanded (e) {
+                // Handler of the "rowExpanded" event
+            },
+            onRowCollapsing (e) {
+                // Handler of the "rowCollapsing" event
+            },
+            onRowCollapsed (e) {
+                // Handler of the "rowCollapsed" event
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... 
+                    onRowExpanding={this.onRowExpanding}
+                    onRowExpanded={this.onRowExpanded}
+                    onRowCollapsing={this.onRowCollapsing}
+                    onRowCollapsed={this.onRowCollapsed}>
+                </DataGrid>
+            );
+        }
+
+        onRowExpanding (e) {
+            // Handler of the "rowExpanding" event
+        }
+
+        onRowExpanded (e) {
+            // Handler of the "rowExpanded" event
+        }
+
+        onRowCollapsing (e) {
+            // Handler of the "rowCollapsing" event
+        }
+
+        onRowCollapsed (e) {
+            // Handler of the "rowCollapsed" event
+        }
+    }
+    export default App;
+
     
 ---
 

@@ -42,6 +42,55 @@ Set the **grouping**.[expandMode](/api-reference/10%20UI%20Components/dxDataGrid
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... > 
+            <DxGrouping expand-mode="rowClick" /> <!-- or "buttonClick" -->
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxGrouping
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxGrouping
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Grouping,
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Grouping expandMode="rowClick" /> {/* or "buttonClick" */}
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 You can prevent a user from expanding and collapsing groups by assigning **false** to the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property. After that, you can expand and collapse groups only [programmatically](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API/20%20Expand%20and%20Collapse%20Groups.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Expand_and_Collapse_Groups').
@@ -56,6 +105,7 @@ You can prevent a user from expanding and collapsing groups by assigning **false
             // ...
             grouping: {
                 // ...
+                autoExpandAll: true, 
                 allowCollapsing: false
             }
         });
@@ -84,5 +134,60 @@ You can prevent a user from expanding and collapsing groups by assigning **false
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... > 
+            <DxGrouping
+                :auto-expand-all="true"
+                :allow-collapsing="false"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxGrouping
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxGrouping
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Grouping,
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Grouping
+                        autoExpandAll={true}
+                        allowCollapsing={false}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
 
 ---

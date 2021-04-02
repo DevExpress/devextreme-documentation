@@ -21,8 +21,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
     $(function () {
         $("#file-manager").dxFileManager({
             notifications: {
-                showPanel: true,
-                showPopup: false
+                showPanel: false
             }
             //...            
         });
@@ -33,8 +32,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
     <!--HTML--> 
     <dx-file-manager id="fileManager">
         <dxo-notifications 
-            [showPanel]="true"
-            [showPopup]="false">
+            [showPanel]="false">
         </dxo-upload>
         <!-- ... -->
     </dx-file-manager>
@@ -59,8 +57,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
     <template>
         <DxFileManager>   
             <DxNotifications 
-                :show-panel="true"
-                :show-popup="false"
+                :show-panel="false"
             />
         </DxFileManager>
     </template>
@@ -93,8 +90,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
         return (
             <FileManager>
                 <Notifications 
-                    showPanel={true} 
-                    showPopup={false}
+                    showPanel={false} 
                 />
             </FileManager>
         );
@@ -107,8 +103,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
         .Notifications(nt => nt
-            .ShowPanel(true)
-            .ShowPopup(false)
+            .ShowPanel(false)
         )
         // ...
     )

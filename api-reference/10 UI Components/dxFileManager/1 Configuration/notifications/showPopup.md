@@ -19,7 +19,6 @@ Specifies whether to show the pop-up notification window.
     $(function () {
         $("#file-manager").dxFileManager({
             notifications: {
-                showPanel: true,
                 showPopup: false
             }
             //...            
@@ -30,9 +29,7 @@ Specifies whether to show the pop-up notification window.
 
     <!--HTML--> 
     <dx-file-manager id="fileManager">
-        <dxo-notifications 
-            [showPanel]="true"
-            [showPopup]="false">
+        <dxo-notifications [showPopup]="false">
         </dxo-upload>
         <!-- ... -->
     </dx-file-manager>
@@ -57,7 +54,6 @@ Specifies whether to show the pop-up notification window.
     <template>
         <DxFileManager>   
             <DxNotifications 
-                :show-panel="true"
                 :show-popup="false"
             />
         </DxFileManager>
@@ -90,10 +86,7 @@ Specifies whether to show the pop-up notification window.
     const App = () => {
         return (
             <FileManager>
-                <Notifications 
-                    showPanel={true} 
-                    showPopup={false}
-                />
+                <Notifications showPopup={false} />
             </FileManager>
         );
     };
@@ -105,7 +98,6 @@ Specifies whether to show the pop-up notification window.
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
         .Notifications(nt => nt
-            .ShowPanel(true)
             .ShowPopup(false)
         )
         // ...

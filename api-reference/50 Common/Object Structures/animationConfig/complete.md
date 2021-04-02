@@ -12,7 +12,4 @@ The animated element. It is an <a href="https://developer.mozilla.org/en-US/docs
 ##### param(config): Object
 The animation configuration.
 
-##### return: any
-<!-- Description goes here -->
-
 ---

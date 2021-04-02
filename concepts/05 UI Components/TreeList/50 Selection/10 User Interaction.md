@@ -33,6 +33,54 @@ The TreeList UI component supports single and multiple row selection. Use the **
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxSelection mode="single" /> <!-- "multiple" | "none" -->
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxSelection
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxSelection
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Selection
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Selection mode="single" /> {/* "multiple" | "none" */}
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -77,6 +125,60 @@ You can disable the latter feature by setting the **selection**.[allowSelectAll]
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxSelection
+                mode="single"
+                :allow-select-all="false"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxSelection
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxSelection
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Selection
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Selection
+                        mode="single"
+                        allowSelectAll={false}
+                    />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -117,6 +219,60 @@ Selection is non-recursive by default, that is, only the clicked row is selected
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ... >
+            <DxSelection
+                mode="multiple"
+                :recursive="true"
+            />
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList, {
+        DxSelection
+    } from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList,
+            DxSelection
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList, {
+        Selection
+    } from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <TreeList ... >
+                    <Selection
+                        mode="multiple"
+                        recursive={true}
+                    />
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

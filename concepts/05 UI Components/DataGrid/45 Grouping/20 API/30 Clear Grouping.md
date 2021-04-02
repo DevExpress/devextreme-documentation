@@ -2,33 +2,121 @@ Set a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.m
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $("#dataGridContainer").dxDataGrid("columnOption", "City", "groupIndex", undefined);
 
 
-#####Angular
+##### Angular
+
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="City"
+            [(groupIndex)]="cityGroupIndex">
+        </dxi-column>
+    </dx-data-grid>
 
     <!--TypeScript-->
-    import { ..., ViewChild } from "@angular/core";
-    import { DxDataGridModule, DxDataGridComponent } from "devextreme-angular";
-    // ...
+    import { DxDataGridModule } from "devextreme-angular";
+    
     export class AppComponent {
-        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        clearGroupingByCity() () {
-            this.dataGrid.instance.columnOption("City", "groupIndex", undefined);
+        cityGroupIndex: number = 1;
+
+        ungroupCity() {
+            this.cityGroupIndex = undefined;
         }
     }
+
     @NgModule({
         imports: [
-            // ...
+            //...
             DxDataGridModule
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...>
+            <DxColumn
+                data-field="City"
+                v-model:group-index="cityGroupIndex"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return {
+                cityGroupIndex: 0
+            }
+        },
+        methods: {
+            ungroupCity() {
+                this.cityGroupIndex = undefined;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                cityGroupIndex: 0
+            };
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onOptionChanged={this.onOptionChanged}>
+                    <Column
+                        dataField="City"
+                        groupIndex={this.state.cityGroupIndex} />
+                </DataGrid>
+            );
+        }
+
+        ungroupCity = () => {
+            this.setState({
+                cityGroupIndex: undefined
+            });
+        }
+
+        onOptionChanged = (e) => {
+            if (e.fullName === "columns[0].groupIndex") {
+                this.setState({
+                    cityGroupIndex: e.value
+                });
+            }
+        }
+    }
+    export default App;
 
 ---
 
@@ -63,6 +151,72 @@ You can ungroup data by all columns at once using the [clearGrouping()](/api-ref
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        // ...
+    } from 'devextreme-vue/data-grid';
+
+    const dataGridRefKey = 'my-data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            // ...
+        },
+        data() {
+            return {
+                dataGridRefKey
+            };
+        },
+        methods: {
+            clearGrouping() {
+                this.dataGrid.clearGrouping();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+    
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        // ...
+    } from 'devextreme-react/data-grid';
+
+    export default function App() {
+        const dataGrid = useRef(null);
+        const clearGrouping = () => {
+            dataGrid.current.instance.clearGrouping();
+        };
+
+        return (
+            <DataGrid ...
+                ref={dataGrid}>
+            </DataGrid>
+        );
+    }
 
 ---
 

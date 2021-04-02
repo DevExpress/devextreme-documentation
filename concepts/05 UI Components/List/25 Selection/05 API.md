@@ -89,7 +89,7 @@ Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%2
         methods: {
             selectItem(key) {
                 if(!this.selectedKeys.includes(key)) {
-                    this.selectedKeys.push(key);
+                    this.selectedKeys = [...this.selectedKeys, key];
                 }
             },
             deselectItem(key) {

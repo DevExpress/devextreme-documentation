@@ -44,6 +44,69 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... > 
+            <DxColumn
+                data-field="Country"
+                :group-index="1"
+            />
+            <DxColumn
+                data-field="Continent"
+                :group-index="0"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        DxDataGrid,
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+    } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <DataGrid ... >
+                    <Column
+                        dataField="Country"
+                        groupIndex={1}
+                    />
+                    <Column
+                        dataField="Continent"
+                        groupIndex={0}
+                    />
+                </DataGrid>
+            );
+        }
+    }
+    export default App;
+
 ---
 
 You can change a column's **groupIndex** at runtime using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. 
@@ -77,6 +140,114 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
         ],
         // ...
     })
+
+##### Angular
+
+    <!--HTML-->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="City"
+            [(groupIndex)]="cityGroupIndex">
+        </dxi-column>
+    </dx-data-grid>
+
+    <!--TypeScript-->
+    import { DxDataGridModule } from "devextreme-angular";
+    
+    export class AppComponent {
+        cityGroupIndex: number = 1;
+
+        groupByCity(index: number) {
+            this.cityGroupIndex = index;
+        }
+    }
+
+    @NgModule({
+        imports: [
+            //...
+            DxDataGridModule
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...>
+            <DxColumn
+                data-field="City"
+                v-model:group-index="cityGroupIndex"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn
+        },
+        data() {
+            return {
+                cityGroupIndex: 0
+            }
+        },
+        methods: {
+            groupByCity(index) {
+                this.cityGroupIndex = index;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                cityGroupIndex: 0
+            };
+        }
+
+        render() {
+            return (
+                <DataGrid ...
+                    onOptionChanged={this.onOptionChanged}>
+                    <Column
+                        dataField="City"
+                        groupIndex={this.state.cityGroupIndex} />
+                </DataGrid>
+            );
+        }
+
+        groupByCity = (index) => {
+            this.setState({
+                cityGroupIndex: index
+            });
+        }
+
+        onOptionChanged = (e) => {
+            if (e.fullName === "columns[0].groupIndex") {
+                this.groupByCity(e.value);
+            }
+        }
+    }
+    export default App;
 
 ---
 

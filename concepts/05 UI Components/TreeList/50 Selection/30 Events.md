@@ -6,10 +6,10 @@ The TreeList UI component raises the [selectionChanged](/api-reference/10%20UI%2
     <!--JavaScript-->$(function() {
         $("#treeListContainer").dxTreeList({
             onSelectionChanged: function(e) { // Handler of the "selectionChanged" event
-                var currentSelectedRowKeys = e.currentSelectedRowKeys;
-                var currentDeselectedRowKeys = e.currentDeselectedRowKeys;
-                var allSelectedRowKeys = e.selectedRowKeys;
-                var allSelectedRowsData = e.selectedRowsData;
+                const currentSelectedRowKeys = e.currentSelectedRowKeys;
+                const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+                const allSelectedRowKeys = e.selectedRowKeys;
+                const allSelectedRowsData = e.selectedRowsData;
                 // ...
             }
         });
@@ -27,10 +27,10 @@ The TreeList UI component raises the [selectionChanged](/api-reference/10%20UI%2
     // ...
     export class AppComponent {
         onSelectionChanged (e) { // Handler of the "selectionChanged" event
-            let currentSelectedRowKeys = e.currentSelectedRowKeys;
-            let currentDeselectedRowKeys = e.currentDeselectedRowKeys;
-            let allSelectedRowKeys = e.selectedRowKeys;
-            let allSelectedRowsData = e.selectedRowsData;
+            const currentSelectedRowKeys = e.currentSelectedRowKeys;
+            const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+            const allSelectedRowKeys = e.selectedRowKeys;
+            const allSelectedRowsData = e.selectedRowsData;
             // ...
         }
     }
@@ -41,6 +41,72 @@ The TreeList UI component raises the [selectionChanged](/api-reference/10%20UI%2
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            @selection-changed="onSelectionChanged">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        methods: {
+            onSelectionChanged(e) {
+                const currentSelectedRowKeys = e.currentSelectedRowKeys;
+                const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+                const allSelectedRowKeys = e.selectedRowKeys;
+                const allSelectedRowsData = e.selectedRowsData;
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.onSelectionChanged = this.onSelectionChanged.bind(this);
+        }
+        
+        onSelectionChanged(e) {
+            const currentSelectedRowKeys = e.currentSelectedRowKeys;
+            const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+            const allSelectedRowKeys = e.selectedRowKeys;
+            const allSelectedRowsData = e.selectedRowsData;
+            // ...
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    onSelectionChanged={this.onSelectionChanged}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 

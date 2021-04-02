@@ -56,7 +56,9 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
                 keys.forEach(function(item) {
                     const index = selectedRowKeys.indexOf(item);
                     if (index !== -1) {
-                        selectedRowKeys.splice(index, 1);
+                        const newRowKeys = [...this.selectedRowKeys];
+                        newRowKeys.splice(index, 1);
+                        this.selectedRowKeys = newRowKeys;
                     }
                 });
             }
@@ -177,7 +179,7 @@ Call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Met
         },
         methods: {
             deselectAllRows() {
-                this.selectedRowKeys.length = 0;
+                this.selectedRowKeys = [];
             },
             deselectVisibleRows() {
                 this.$refs['dataGrid'].instance.deselectAll();

@@ -207,7 +207,7 @@ The DataGrid provides two methods that select rows at runtime: [selectRows(keys,
         methods: {
             selectFirstRow(e) {
                 const rowKey = e.component.getKeyByRowIndex(0);
-                this.selectedRowKeys.push(rowKey);
+                this.selectedRowKeys = [...this.selectedRowKeys, rowKey];
             }
         }
     }

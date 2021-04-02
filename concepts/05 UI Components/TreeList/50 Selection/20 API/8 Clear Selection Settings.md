@@ -57,7 +57,9 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
                 keys.forEach(function(item) {
                     const index = selectedRowKeys.indexOf(item);
                     if (index !== -1) {
-                        selectedRowKeys.splice(index, 1);
+                        const newRowKeys = [...this.selectedRowKeys];
+                        newRowKeys.splice(index, 1);
+                        this.selectedRowKeys = newRowKeys;
                     }
                 });
             }
@@ -180,7 +182,7 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
         },
         methods: {
             deselectAllRows() {
-                this.selectedRowKeys.length = 0;
+                this.selectedRowKeys = [];
             },
             deselectVisibleRows() {
                 this.$refs['treeList'].instance.deselectAll();

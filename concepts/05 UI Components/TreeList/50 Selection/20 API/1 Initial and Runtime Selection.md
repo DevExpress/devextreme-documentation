@@ -196,7 +196,8 @@ You can select rows at runtime using the [selectRows(keys, preserve)](/api-refer
         methods: {
             selectFirstRow(e) {
                 const rowKey = e.component.getKeyByRowIndex(0);
-                this.selectedRowKeys.push(rowKey);
+                this.selectedRowKeys = [...this.selectedRowKeys, rowKey];
+                
             }
         }
     }

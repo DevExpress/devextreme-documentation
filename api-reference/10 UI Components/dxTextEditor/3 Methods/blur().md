@@ -8,3 +8,4 @@ Removes focus from the input element.
 ---
 #####See Also#####
 #include common-link-callmethods
+- [focus]({basewidgetpath}/Methods/#focus)

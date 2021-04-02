@@ -9,9 +9,6 @@ A function that downloads files.
 ##### param(items): Array<FileSystemItem>
 The file system items.
 
-##### return: any
-<!-- Description goes here -->
-
 ---
 
 ---

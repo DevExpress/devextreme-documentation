@@ -19,7 +19,7 @@ default: null
 ##### field(e.columnIndex): Number
 <!-- %field(e.columnIndex)% -->
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 <!-- %field(e.component)% -->
 
 ##### field(e.data): Object
@@ -28,7 +28,7 @@ The data of the row to which the cell belongs. Available if the **rowType** is *
 ##### field(e.displayValue): any
 <!-- %field(e.displayValue)% -->
 
-##### field(e.element): dxElement
+##### field(e.element): TElement
 <!-- %field(e.element)% -->
 
 ##### field(e.isExpanded): Boolean
@@ -44,7 +44,7 @@ Indicates whether the row is expanded or collapsed. Available if **rowType** is 
 The row's key. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.       
 For plain data, the key value depends on the [keyExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#keyExpr') property. For hierarchical data, the key is generated automatically or set in the underlying **Store** of the [data source](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource').
 
-##### field(e.model): Object
+##### field(e.model): any
 <!-- %field(e.model)% -->
 
 ##### field(e.oldValue): any

@@ -1,12 +1,11 @@
 ---
 id: GridBase.Options.editing.changes
-type: Array<any>
+type: Array<GridBaseEditingChange>
 default: []
 firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-
 Pending row changes.
 
 ---

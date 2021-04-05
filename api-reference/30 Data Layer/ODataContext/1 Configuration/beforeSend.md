@@ -31,9 +31,6 @@ The request timeout.
 ##### field(options.url): String
 The request URL.
 
-##### return: any
-<!-- Description goes here -->
-
 ---
 ---
 #####jQuery

@@ -17,20 +17,5 @@ Set the **allowTaskUpdating** option to **false** to make the "Task Details" dia
 
 ![DevExtreme Gantt - Read-Only Task Details Dialog](/images/Gantt/task-edit-dialog-read-only.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowTaskUpdating: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 #####See Also#####
 - [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

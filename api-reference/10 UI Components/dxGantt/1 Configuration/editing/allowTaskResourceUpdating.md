@@ -21,21 +21,6 @@ Click the cross icon (on the right side of the resource) to remove the resource 
 
 ![DevExtreme Gantt Chart - Remove Resources from Task](/images/Gantt/unassign-resource-from-task.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowTaskResourceUpdating: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 #####See Also#####
 - [assignResourceToTask](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/assignResourceToTask(resourceKey_taskKey).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#assignResourceToTaskresourceKey_taskKey')
 - [unassignResourceFromTask](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/unassignResourceFromTask(resourceKey_taskKey).md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#unassignResourceFromTaskresourceKey_taskKey')

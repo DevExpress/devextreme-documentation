@@ -10,7 +10,7 @@ A function that is executed after row changes are saved.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.changes): Array<GridBaseEditingChange>
+##### field(e.changes): Array<DataChange>
 Saved changes.
 
 ##### field(e.component): {WidgetName}

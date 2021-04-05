@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.editing.changes
-type: Array<GridBaseEditingChange>
+type: Array<DataChange>
 default: []
 firedEvents: optionChanged
 ---

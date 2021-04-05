@@ -9,7 +9,7 @@ Specifies whether to show the progress panel.
 
 ---
 
-The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress Panel](~/images/FileManager/open-progress-panel.png)) displays the red exclamation mark when the progress panel contains notifications and progress information. Click this button to show the progress panel. 
+The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress Panel](~/images/FileManager/open-progress-panel.png)) displays additional marks (check or exclamation mark) when the progress panel contains notifications and progress information. Click this button to show the progress panel.
 
 ![DevExtreme File Manager - Show/Hide Progress Panel](/images/FileManager/notifications-progress-panel.png)
 
@@ -69,7 +69,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
     
     export default {
         components: {
-            DxGantt,
+            DxFileManager,
             DxNotifications
         },
         data() {

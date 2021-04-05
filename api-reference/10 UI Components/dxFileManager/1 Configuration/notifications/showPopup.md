@@ -66,7 +66,7 @@ Specifies whether to show the pop-up notification window.
     
     export default {
         components: {
-            DxGantt,
+            DxFileManager,
             DxNotifications
         },
         data() {

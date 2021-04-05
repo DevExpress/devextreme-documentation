@@ -258,22 +258,21 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
         dependencies, 
         // ... 
     } from './data.js';
-    
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <Dependencies 
-                        dataSource={dependencies}
-                        keyExpr="dependencyId"
-                        typeExpr="dependencyType"
-                        predecessorIdExpr="taskPredecessorId"
-                        successorIdExpr="taskSuccessorId" />
-                    {/* ... */}
-                </Gantt>
-            );
-        }
-    }
+
+    const App = () => {
+        return (
+            <Gantt ... >
+                <Dependencies 
+                    dataSource={dependencies}
+                    keyExpr="dependencyId"
+                    typeExpr="dependencyType"
+                    predecessorIdExpr="taskPredecessorId"
+                    successorIdExpr="taskSuccessorId" />
+                {/* ... */}
+            </Gantt>
+        );
+    };
+
     export default App;
     
     <!-- tab: data.js -->

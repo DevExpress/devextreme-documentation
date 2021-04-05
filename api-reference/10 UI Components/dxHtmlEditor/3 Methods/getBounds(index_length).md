@@ -12,7 +12,7 @@ An object that contains the following fields: left, top, height, width.
 A zero-based index at which position retrieval begins.
 
 ##### param(length): Number
-The length of the selection for which the position is retrieved. 
+The length of the selection for which the position is retrieved.
 
 ---
 <!-- Description goes here -->

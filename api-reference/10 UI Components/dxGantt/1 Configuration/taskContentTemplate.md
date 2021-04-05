@@ -19,7 +19,7 @@ The size of the cell that contains the task.
 Specifies whether the task is a milestone.
 
 ##### field(item.taskData): Object
-The processed task. 
+The processed task.
 
 ##### field(item.taskHTML): Object
 The default HTML element of the processed task.
@@ -32,6 +32,9 @@ The task's resources.
 
 ##### field(item.taskSize): Object
 The task's size.
+
+##### return: String | Element | jQuery
+<!-- Description goes here -->
 
 ---
 

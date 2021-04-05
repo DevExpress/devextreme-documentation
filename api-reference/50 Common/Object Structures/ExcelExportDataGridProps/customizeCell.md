@@ -23,9 +23,6 @@ An ExcelJS object that describes an Excel cell. Use the object's properties to c
 ##### field(options.gridCell): ExcelDataGridCell
 A DataGrid cell.
 
-##### return: any
-<!-- Description goes here -->
-
 ---
 
 The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') equals *"data"*:

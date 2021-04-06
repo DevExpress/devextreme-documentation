@@ -9,7 +9,7 @@ Specifies whether to show the pop-up notification window.
 
 ---
 
-![DevExtreme File Manager - Show/Hide Popup Notification Panel](/images/FileManager/notifications-popup.png)
+![DevExtreme File Manager - Show and Hide Popup Notification Panel](/images/FileManager/notifications-popup.png)
 
 ---
 

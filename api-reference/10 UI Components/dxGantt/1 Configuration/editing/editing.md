@@ -43,14 +43,14 @@ The UI component allows users to add, modify and delete tasks, resources and dep
     <dx-gantt ... >
         <dxo-editing
             [enabled]="true" 
-            allowDependencyAdding="false" 
-            allowDependencyDeleting="false" 
-            allowResourceAdding="false"
-            allowResourceDeleting="false"
-            allowTaskAdding="false"
-            allowTaskDeleting="false"
-            allowTaskResourceUpdating="false"
-            allowTaskUpdating="false">
+            [allowDependencyAdding]="false" 
+            [allowDependencyDeleting]="false" 
+            [allowResourceAdding]="false"
+            [allowResourceDeleting]="false"
+            [allowTaskAdding]="false"
+            [allowTaskDeleting]="false"
+            [allowTaskResourceUpdating]="false"
+            [allowTaskUpdating]="false">
         </dxo-editing>
         <!-- ... -->
     </dx-gantt>

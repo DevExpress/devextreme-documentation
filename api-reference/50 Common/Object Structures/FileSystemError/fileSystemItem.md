@@ -4,7 +4,6 @@ type: FileSystemItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The processed file or directory.
 
 ---
-<!-- Description goes here -->

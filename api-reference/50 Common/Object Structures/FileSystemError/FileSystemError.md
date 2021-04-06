@@ -5,7 +5,6 @@ export: default
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that contains information about the error.
 
 ---
-<!-- Description goes here -->

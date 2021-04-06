@@ -9,9 +9,11 @@ Specifies whether to show the progress panel.
 
 ---
 
-The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress Panel](~/images/FileManager/open-progress-panel.png)) displays additional marks (check or exclamation mark) when the progress panel contains notifications and progress information. Click this button to show the progress panel.
+The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress Panel](~/images/FileManager/open-progress-panel.png)) displays additional marks (progress, check or exclamation mark) when the progress panel contains notifications and progress information. Click this button to show the progress panel.
 
 ![DevExtreme File Manager - Show/Hide Progress Panel](/images/FileManager/notifications-progress-panel.png)
+
+The **Refresh** button does not display notification marks if the **showPanel** option is set to **false**.
 
 ---
 
@@ -33,7 +35,7 @@ The File Manager's **Refresh** button (![DevExtreme File Manager - Show Progress
     <dx-file-manager id="fileManager">
         <dxo-notifications 
             [showPanel]="false">
-        </dxo-upload>
+        </dxo-notifications>
         <!-- ... -->
     </dx-file-manager>
 

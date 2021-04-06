@@ -30,7 +30,7 @@ Specifies whether to show the pop-up notification window.
     <!--HTML--> 
     <dx-file-manager id="fileManager">
         <dxo-notifications [showPopup]="false">
-        </dxo-upload>
+        </dxo-notifications>
         <!-- ... -->
     </dx-file-manager>
 

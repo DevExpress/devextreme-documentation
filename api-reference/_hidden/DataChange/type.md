@@ -1,11 +1,11 @@
 ---
-id: GridBaseEditingChange.type
+id: DataChange.type
 acceptValues: 'insert' | 'update' | 'remove'
 type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Data change type.
 
 ---
 <!-- Description goes here -->

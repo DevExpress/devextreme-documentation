@@ -1,10 +1,10 @@
 ---
-id: DataChange.key
-type: any
+id: DataChange.data
+type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object with updated row fields.
 
 ---
 <!-- Description goes here -->

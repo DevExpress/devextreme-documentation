@@ -1,7 +1,6 @@
 ---
-id: GridBaseEditingChange.type
-acceptValues: 'insert' | 'update' | 'remove'
-type: String
+id: DataChange.index
+type: Number
 ---
 ---
 ##### shortDescription

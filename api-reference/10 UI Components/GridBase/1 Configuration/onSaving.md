@@ -13,8 +13,8 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Set this field to **true** if the default saving logic should be disabled.
 
-##### field(e.changes): Array<GridBaseEditingChange>
-Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/changes.md '{basewidgetpath}/Configuration/editing/#changes') array.
+##### field(e.changes): Array<DataChange>
+Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

@@ -1,5 +1,5 @@
 ---
-id: GridBaseEditingChange.pageIndex
+id: DataChange.pageIndex
 type: Number
 ---
 ---

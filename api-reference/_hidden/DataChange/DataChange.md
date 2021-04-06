@@ -1,6 +1,5 @@
 ---
-id: GridBaseEditingChange.index
-type: Number
+id: DataChange
 ---
 ---
 ##### shortDescription

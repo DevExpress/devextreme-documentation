@@ -1,10 +1,10 @@
 ---
-id: GridBaseEditingChange.key
+id: DataChange.key
 type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The key of the row being updated or removed.
 
 ---
 <!-- Description goes here -->

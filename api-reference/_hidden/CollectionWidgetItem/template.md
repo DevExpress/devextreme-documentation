@@ -9,6 +9,15 @@ Specifies a template that should be used to render this item only.
 ##### return: String | Element | jQuery
 A template name or container.
 
+##### param(itemData): any
+<!-- Description goes here -->
+
+##### param(itemIndex): Number
+<!-- Description goes here -->
+
+##### param(itemElement): TElement
+<!-- Description goes here -->
+
 ---
 The following types of the specified value are available.
 

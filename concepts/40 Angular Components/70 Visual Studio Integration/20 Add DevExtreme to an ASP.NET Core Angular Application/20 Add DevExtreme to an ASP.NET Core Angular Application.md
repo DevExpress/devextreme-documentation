@@ -16,7 +16,7 @@ This article describes how to create an ASP.NET Core Angular application and add
           }
         }
         
-    Save the changes and wait until Visual Studio downloaded the dependencies.
+    Save the changes, rebuild the application, and wait until Visual Studio downloaded the dependencies.
 
 1. Reference a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
 

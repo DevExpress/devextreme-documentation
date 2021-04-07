@@ -185,7 +185,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
             // ...
         });
     });
-    function onCustomCommandClick(args) {
+    function onCustomCommandClick(e) {
         if(e.name == 'item1') {
             // your code
         }

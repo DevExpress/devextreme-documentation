@@ -42,7 +42,7 @@ Specifies the context menu item name.
             // ...
         });
     });
-    function onCustomCommandClick(args) {
+    function onCustomCommandClick(e) {
         if(e.name == 'item1') {
             // your code
         }

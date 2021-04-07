@@ -66,7 +66,7 @@ Specifies whether users can select tasks in the Gantt.
     <!-- tab: App.vue -->
     <template>
         <DxGantt
-            :allow-selection="true" >
+            :allow-selection="false" >
             <!-- ... -->
         </DxGantt>
     </template>
@@ -114,7 +114,7 @@ Specifies whether users can select tasks in the Gantt.
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
-        .AllowSelection(true)
+        .AllowSelection(false)
         // ...
     )
 ---

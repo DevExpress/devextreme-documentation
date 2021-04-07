@@ -238,24 +238,23 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
         // ... 
     } from './data.js';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <Tasks 
-                        dataSource={tasks}
-                        keyExpr="taskId"
-                        parentIdExpr="parentTaskId"
-                        titleExpr="taskTitle"
-                        progressExpr="taskProgress"
-                        startExpr="startDate"
-                        endExpr="endDate"
-                        colorExpr="taskColor" />
-                    {/* ... */}
-                </Gantt>
-            );
-        }
-    }
+    const App = () => {
+        return (
+            <Gantt ... >
+                <Tasks 
+                    dataSource={tasks}
+                    keyExpr="taskId"
+                    parentIdExpr="parentTaskId"
+                    titleExpr="taskTitle"
+                    progressExpr="taskProgress"
+                    startExpr="startDate"
+                    endExpr="endDate"
+                    colorExpr="taskColor" />
+                {/* ... */}
+            </Gantt>
+        );
+    };
+
     export default App;
     
     <!-- tab: data.js -->

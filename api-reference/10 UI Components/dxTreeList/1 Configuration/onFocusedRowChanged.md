@@ -22,7 +22,7 @@ Model data. Available only if you use Knockout.
 ##### field(e.row): dxTreeListRowObject
 The row's properties.
 
-##### field(e.rowElement): dxElement
+##### field(e.rowElement): TElement
 #include common-ref-elementparam with { element: "focused row" }
 
 ##### field(e.rowIndex): Number

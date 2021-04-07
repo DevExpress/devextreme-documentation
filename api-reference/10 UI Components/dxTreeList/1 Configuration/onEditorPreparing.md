@@ -22,7 +22,7 @@ The name of the field that provides data for the column the editor belongs to.
 ##### field(e.disabled): Boolean
 Indicates whether the editor is disabled.
 
-##### field(e.editorElement): dxElement
+##### field(e.editorElement): TElement
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(e.editorName): String

@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.onCellClick
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---
@@ -10,7 +10,7 @@ A function that is executed when a cell is clicked or tapped. Executed before [o
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): TElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### field(e.column): Object

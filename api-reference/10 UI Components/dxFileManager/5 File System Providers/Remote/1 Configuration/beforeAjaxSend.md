@@ -18,9 +18,6 @@ The request headers.
 ##### field(options.xhrFields): Object
 An object of fieldName-fieldValue pairs to set on the native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHttpRequest object</a>.
 
-##### return: any
-<!-- Description goes here -->
-
 ---
 
 [note] Use the [beforeSubmit](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/beforeSubmit.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#beforeSubmit') function to customize the **file download** requests.

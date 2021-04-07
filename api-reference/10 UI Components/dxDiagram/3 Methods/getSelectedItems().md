@@ -1,8 +1,11 @@
 ---
-id: dxHtmlEditor.update()
+id: dxDiagram.getSelectedItems()
 ---
 ---
 ##### shortDescription
+<!-- Description goes here -->
+
+##### return: Array<dxDiagramItem>
 <!-- Description goes here -->
 
 ---

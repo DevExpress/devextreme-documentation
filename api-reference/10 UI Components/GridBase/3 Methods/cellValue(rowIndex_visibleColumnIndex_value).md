@@ -48,6 +48,67 @@ Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/s
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :ref="{widgetName}RefKey"> 
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
+
+    const {widgetName}RefKey = 'my-{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        data() {
+            return {
+                {widgetName}RefKey
+            };
+        },
+        methods: {
+            updateCell(rowIndex, columnIndex, value) {
+                this.{widgetName}.cellValue(rowIndex, columnIndex, value);
+                this.{widgetName}.saveEditData();
+            }
+        },
+        computed: {
+            {widgetName}: function() {
+                return this.$refs[{widgetName}RefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+    
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        const {widgetName} = useRef(null);
+        const updateCell = (rowIndex, columnIndex, value) => {
+            {widgetName}.current.instance.cellValue(rowIndex, columnIndex, value);
+            {widgetName}.current.instance.saveEditData();
+        };
+        return (
+            <{WidgetName} ...
+                ref={{widgetName}}>
+            </{WidgetName}>
+        );
+    }
+
 ---
 
 #####See Also#####

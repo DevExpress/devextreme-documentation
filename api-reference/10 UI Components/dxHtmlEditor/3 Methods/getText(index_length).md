@@ -3,13 +3,13 @@ id: dxHtmlEditor.getText(index, length)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Retrieves text content from the HtmlEditor.
 
 ##### param(index): Number
-<!-- Description goes here -->
+A zero-based index at which the retrieved text starts.
 
 ##### param(length): Number
-<!-- Description goes here -->
+The number of characters to retrieve.
 
 ---
 <!-- Description goes here -->

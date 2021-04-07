@@ -47,6 +47,82 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/GridBase/1%20Confi
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :data-source="treeListDataSource"
+            :selected-row-keys="[1, 5, 18]">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+    import DataSource from 'devextreme/data/data_source';
+    import 'devextreme/data/array_store';
+    // or
+    // import 'devextreme/data/odata/store';
+    // import 'devextreme/data/custom_store';
+
+    const treeListDataSource = new DataSource({
+        store: {
+            // ...
+            key: 'id'
+        }
+    });
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return {
+                treeListDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+    import DataSource from 'devextreme/data/data_source';
+    import 'devextreme/data/array_store';
+    // or
+    // import 'devextreme/data/odata/store';
+    // import 'devextreme/data/custom_store';
+
+    const treeListDataSource = new DataSource({
+        store: {
+            // ...
+            key: 'id'
+        }
+    });
+
+    class App extends React.Component {
+        selectedRowKeys = [1, 5, 18];
+
+        render() {
+            return (
+                <TreeList ...
+                    dataSource={treeListDataSource}
+                    defaultSelectedRowKeys={this.selectedRowKeys}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -91,6 +167,88 @@ You can select rows at runtime using the [selectRows(keys, preserve)](/api-refer
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            v-model:selected-row-keys="selectedRowKeys"
+            @content-ready="selectFirstRow">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return {
+                selectedRowKeys: []
+            }
+        },
+        methods: {
+            selectFirstRow(e) {
+                const rowKey = e.component.getKeyByRowIndex(0);
+                this.selectedRowKeys = [...this.selectedRowKeys, rowKey];
+                
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                selectedRowKeys: []
+            }
+            this.selectFirstRow = this.selectFirstRow.bind(this);
+        	this.handleOptionChange = this.handleOptionChange.bind(this);
+        }
+
+        selectFirstRow(e) {
+            const rowKey = e.component.getKeyByRowIndex(0);
+            this.setState(prevState => ({
+                selectedRowKeys: [...prevState.selectedRowKeys, rowKey]
+            }));
+        }
+
+        handleOptionChange(e) {
+            if(e.fullName === 'selectedRowKeys') {
+                this.setState({
+                    selectedRowKeys: e.value
+                });
+            }
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    selectedRowKeys={this.state.selectedRowKeys}
+                    onContentReady={this.selectFirstRow}
+                    onOptionChanged={this.handleOptionChange}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---
 
@@ -127,5 +285,84 @@ Call the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeLi
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :ref="treeListRefKey">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = 'my-tree-list';
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return {
+                treeListRefKey
+            }
+        },
+        methods: {
+            getSelectedRowKeys() {
+                return this.treeList.getSelectedRowKeys("all"); // or "excludeRecursive" | "leavesOnly"
+            },
+            getSelectedRowsData() {
+                return this.treeList.getSelectedRowsData();
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import TreeList from 'devextreme-react/tree-list';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.treeListRef = React.createRef();
+    
+            this.getSelectedRowKeys = () => {
+                return this.treeList.getSelectedRowKeys("all"); // or "excludeRecursive" | "leavesOnly"
+            }
+            this.getSelectedRowsData = () => {
+                return this.treeList.getSelectedRowsData();
+            }
+        }
+
+        get treeList() {
+            return this.treeListRef.current.instance;
+        }
+
+        render() {
+            return (
+                <TreeList ...
+                    ref={this.treeListRef}>
+                </TreeList>
+            );
+        }
+    }
+    export default App;
     
 ---

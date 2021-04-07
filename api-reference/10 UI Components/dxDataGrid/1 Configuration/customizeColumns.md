@@ -9,9 +9,6 @@ Customizes columns after they are created.
 ##### param(columns): Array<dxDataGridColumn>
 All column [configurations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').
 
-##### return: any
-<!-- Description goes here -->
-
 ---
 Use this function to make minor adjustments to automatically generated columns. You can access and modify column configurations using the function's parameter. 
 

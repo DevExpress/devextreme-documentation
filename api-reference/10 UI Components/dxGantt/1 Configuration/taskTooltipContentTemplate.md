@@ -7,12 +7,12 @@ type: template
 Specifies custom content for the task tooltip.
 
 ##### param(container): dxElement
-#include common-ref-elementparam with { element: "editor" }
+#include common-ref-elementparam with { element: "task tooltip" }
 
 ##### param(task): any
 The processed task.
 
-##### return: String | TElement
+##### return: String | Element | jQuery
 <!-- Description goes here -->
 
 ---
@@ -35,8 +35,142 @@ Note that the **container** parameter contains the content of the default toolti
     }); 
 
     function getTaskTooltipContentTemplate(task, container) {
-        container[0].innerHTML = "";
-        return "<div class='custom-tooltip-title'>" + task.title + "</div>";
+        var $customTooltip = $(document.createElement("div"))
+            .addClass("custom-task-edit-tooltip");
+​
+        $(document.createElement("div"))
+            .addClass("custom-tooltip-title")
+            .text(task.title)
+            .appendTo($customTooltip);
+        // ...
+        return $customTooltip;
     }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-gantt taskTooltipContentTemplate="myTaskTooltipTemplate">
+        <div *dxTemplate="let task of 'taskTooltipContentTemplate'" class="custom-task-edit-tooltip">
+            <div class="custom-tooltip-title">{{task.title}}</div>
+            <!-- ... -->
+        </div>
+        ...
+    </dx-gantt>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        // ...
+    } 
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxGanttModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxGanttModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt 
+            :task-content-template="myTaskTemplate" >
+            <template #taskTooltipContentTemplate="{ data: task }">
+                <div class="custom-task-edit-tooltip">
+                    <div class="custom-tooltip-title">{{ task.title }}</div>
+                    <!-- ... -->
+                </div>
+            </template>
+        </DxGantt>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import { DxGantt } from 'devextreme-vue/gantt';
+    
+    export default {
+        components: {
+            DxGantt
+        },
+        methods: {
+            //...
+        },
+        data() {
+            return {
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Gantt from 'devextreme-react/gantt';
+    import { Template } from 'devextreme-react/core/template';
+
+    const TaskTooltipTemplate = (task) => {
+        return ( 
+            <div class="custom-task-edit-tooltip">
+                <div class="custom-tooltip-title">{{ task.title }}</div>
+                <!-- ... -->
+            </div>
+        );         
+    }
+
+    export default function App() {
+        return (
+            <Gantt
+                taskTooltipContentRender={TaskTooltipTemplate}>
+                //...
+            </Gantt>
+        );
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .TaskTooltipContentTemplate(new JS("getTaskTooltipContentTemplate"))
+        // ...
+    )
+
+    <script>
+        function getTaskTooltipContentTemplate(task, container) {
+            var $customTooltip = $(document.createElement("div"))
+                .addClass("custom-task-edit-tooltip");
+
+            $(document.createElement("div"))
+                .addClass("custom-tooltip-title")
+                .text(task.Title)
+                .appendTo($customTooltip);
+            // ...
+
+            return $customTooltip;            
+        }    
+    </script>
 
 ---

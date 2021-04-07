@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Set this field to **true** if the row changes should not be discarded.
 
-##### field(e.changes): Array<any>
+##### field(e.changes): Array<DataChange>
 Row changes to be discarded.
 
 ##### field(e.component): {WidgetName}

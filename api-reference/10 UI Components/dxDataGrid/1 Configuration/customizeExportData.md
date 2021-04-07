@@ -13,7 +13,4 @@ All column [configurations](/api-reference/10%20UI%20Components/dxDataGrid/1%20C
 ##### param(rows): Array<dxDataGridRowObject>
 The [Row](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') objects. This array contains only exported rows.
 
-##### return: any
-<!-- Description goes here -->
-
 ---

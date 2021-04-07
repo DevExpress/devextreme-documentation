@@ -3,19 +3,19 @@ id: dxHtmlEditor.insertText(index, text, formatName, formatValue)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Inserts text into the HtmlEditor.
 
 ##### param(index): Number
-<!-- Description goes here -->
+A zero-based index at which the text is inserted.
 
 ##### param(text): String
-<!-- Description goes here -->
+The text to be inserted.
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-<!-- Description goes here -->
+The format name.
 
 ##### param(formatValue): any
-<!-- Description goes here -->
+The format value.
 
 ---
 <!-- Description goes here -->

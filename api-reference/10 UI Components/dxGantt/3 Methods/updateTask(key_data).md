@@ -13,6 +13,8 @@ The task data.
 
 ---
 
+Note that the **updateTask** method does not allow you to change a task's parent task.
+
 ---
 
 ##### jQuery

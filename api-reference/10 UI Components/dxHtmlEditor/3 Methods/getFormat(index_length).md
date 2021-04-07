@@ -6,8 +6,8 @@ id: dxHtmlEditor.getFormat(index, length)
 Gets formats applied to the content in the specified range.
 
 ##### return: Object
-The applied formats.         
-This object has the following structure:        
+An object that contains applied formats.         
+It has the following structure:        
 `{ "formatName1": "formatValue1", ... }`
 
 ##### param(index): Number

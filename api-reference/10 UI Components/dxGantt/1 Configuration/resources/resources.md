@@ -215,21 +215,20 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
         resources, 
         // ... 
     } from './data.js';
-    
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <Resources 
-                        dataSource={resources}
-                        keyExpr="resourceId"
-                        textExpr="title" 
-                        colorExpr="resourceColor" />
-                    {/* ... */}
-                </Gantt>
-            );
-        }
-    }
+
+    const App = () => {
+        return (
+            <Gantt ... >
+                <Resources 
+                    dataSource={resources}
+                    keyExpr="resourceId"
+                    textExpr="title" 
+                    colorExpr="resourceColor" />
+                {/* ... */}
+            </Gantt>
+        );
+    };
+
     export default App;
     
     <!-- tab: data.js -->

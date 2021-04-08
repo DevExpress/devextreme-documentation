@@ -9,4 +9,4 @@ default: 'auto'
 Specifies the available page sizes in the page size selector.
 
 ---
-The component processes the data to determine the page sizes available in the page size selector. Use this property to specify custom page sizes. If you want an additional option to display all rows on a single page, add *"all"* to the **allowedPageSizes** array.
+Set this property to an array of numbers that specify available page sizes. If you want to let users display all records on a single page, add the *"all"* value to this array. The default value *"auto"* means that the component automatically determines available page sizes based on the total number of records.

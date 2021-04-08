@@ -16,23 +16,21 @@ Users can scroll popup's content. To enable this functionality, wrap the content
             },
             // ...
         });
-        // ...
     });
  
 ##### Angular
 
     <!-- tab: app.component.html -->
-    // ...
     <dx-popup...>
         <div *dxTemplate="let data of 'content'">
             <dx-scroll-view 
                 width="100%"
-                height="100%"
-            >
-                // ...
+                height="100%">
+                <!--...-->
             </dx-scroll-view>
         </div>
     </dx-popup>
+    <!-- ... -->
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -42,9 +40,6 @@ Users can scroll popup's content. To enable this functionality, wrap the content
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
-    export class AppComponent {
-        // ...
-    }
 
 
 ##### Vue
@@ -52,17 +47,17 @@ Users can scroll popup's content. To enable this functionality, wrap the content
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            // ...
+
             <DxPopup...>
                 <template #content>
                 <DxScrollView
                     height="100%"
-                    width="100%"
-                >
-                    // ...
+                    width="100%">
+                    <!--...-->
                 </DxScrollView>
                 </template>            
             </DxPopup>
+            <!-- ... -->
         </div>
     </template>
 
@@ -84,28 +79,21 @@ Users can scroll popup's content. To enable this functionality, wrap the content
 
     <!-- tab: App.js -->
     // ...
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    
-    // ...
     import ScrollView from 'devextreme-react/scroll-view';
 
-    function App() {
+    const App = () => {
         // ...
         return (
             <div className="App">
-                // ...
                 <Popup
                     width={500}
-                    height={500}            
-                >
+                    height={500}>
                     <ScrollView 
                         height="100%"
-                        width="100%"
-                    >
+                        width="100%">
                         // ...
                     <ScrollView />
+                    // ...
                 </Popup>
             </div>
         );

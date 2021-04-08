@@ -21,6 +21,7 @@ Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configurat
         title="Information">
         <!-- ... -->
     </dx-popup>
+    <!-- ... -->
 
 ##### Vue
 
@@ -32,6 +33,7 @@ Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configurat
                 title="Information">
                 <!-- ... -->
             </DxPopup>
+            <!-- ... -->
         </div>
     </template>
 
@@ -44,14 +46,14 @@ Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configurat
 
     <!-- tab: App.js -->
     // ...
-    function App() {
+    const App = () =>  {
         // ...
         return (
             <div className="App">
                 <Popup
                     showTitle={true}
-                    title="Information"              
-                />
+                    title="Information"/>
+                // ...
             </div>
         );
     }

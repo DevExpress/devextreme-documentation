@@ -116,7 +116,7 @@
         Popup
     } from 'devextreme-react/popup';
 
-    function App() {
+    const App = () =>  {
         return (
             <div className="App">
                 <Popup id="popup">

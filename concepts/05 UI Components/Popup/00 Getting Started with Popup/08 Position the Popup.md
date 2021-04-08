@@ -1,4 +1,4 @@
-Users can drag the popup. To configure this functionalty, use the [dragEnabled](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled) property.
+To position the Popup within the viewport, use the [position](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#position) property. The Popup supports drag and drop. To enable this functionalty, set the [dragEnabled](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled) property to **true**. Users drag the Popup by its title bar, so make sure that you [configured it](Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle).
 
 ---
 ##### jQuery
@@ -7,12 +7,12 @@ Users can drag the popup. To configure this functionalty, use the [dragEnabled](
     $(function () {
         $("#popup").dxPopup({
             // ...
-            dragEnabled: false,
+            dragEnabled: true,
+            position: "center"
         });
         // ...
     });
 
-    // ...
  
 ##### Angular
 
@@ -20,11 +20,12 @@ Users can drag the popup. To configure this functionalty, use the [dragEnabled](
     // ...
     <dx-popup...
         [dragEnabled]="true"
-    >
+        position="center">
         <div *dxTemplate="let data of 'content'">
-            // ...
+            <!--...-->
         </div>
     </dx-popup>
+    <!-- ... -->
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -34,9 +35,6 @@ Users can drag the popup. To configure this functionalty, use the [dragEnabled](
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
-    export class AppComponent {
-        // ...
-    }
 
 
 ##### Vue
@@ -46,21 +44,18 @@ Users can drag the popup. To configure this functionalty, use the [dragEnabled](
         <div id="app-container">
             // ...
             <DxPopup...
-                :drag-enabled="true"       
-            >
+                :drag-enabled="true"
+                position="center">
                 <template #content>
-                    // ...
+                    <!--...-->
                 </template>            
             </DxPopup>
+            <!-- ... -->
         </div>
     </template>
 
     <script>
-    // ...
-
-    export default {
         // ...
-    }
     </script>
 
 
@@ -68,22 +63,14 @@ Users can drag the popup. To configure this functionalty, use the [dragEnabled](
 
     <!-- tab: App.js -->
     // ...
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    
-    // ...
-
-    function App() {
+    const App = () => {
         // ...
         return (
             <div className="App">
-                // ...
                 <Popup
-                    dragEnabled={true}          
-                >
-                    // ...
-                </Popup>
+                    dragEnabled={true}
+                    position="center"/>
+                // ...
             </div>
         );
     }
@@ -92,7 +79,3 @@ Users can drag the popup. To configure this functionalty, use the [dragEnabled](
 
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup"
-}

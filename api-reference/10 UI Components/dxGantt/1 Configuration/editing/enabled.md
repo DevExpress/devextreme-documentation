@@ -8,4 +8,3 @@ default: false
 Specifies whether a user can edit tasks, resources and dependencies.
 
 ---
-

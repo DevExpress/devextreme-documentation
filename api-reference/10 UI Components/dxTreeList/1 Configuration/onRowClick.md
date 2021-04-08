@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.onRowClick
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---
@@ -50,7 +50,7 @@ Model data. Available only if you use Knockout.
 ##### field(e.node): dxTreeListNode
 The row's node.
 
-##### field(e.rowElement): dxElement
+##### field(e.rowElement): TElement
 #include common-ref-elementparam with { element: "row" }
 
 ##### field(e.rowIndex): Number

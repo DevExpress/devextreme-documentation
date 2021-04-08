@@ -37,7 +37,7 @@ The index of the row on which the context menu is invoked. Refer to the followin
 ##### field(e.target): String
 The name of the element on which the context menu is invoked: *"header"*, *"content"*, or *"footer"*. This field is read-only.
 
-##### field(e.targetElement): dxElement
+##### field(e.targetElement): TElement
 #include common-ref-elementparam with { element: "element" }
 
 ---

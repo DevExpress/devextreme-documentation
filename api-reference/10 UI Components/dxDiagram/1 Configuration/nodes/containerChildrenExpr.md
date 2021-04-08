@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides a conta
 The current node's data object.
 
 ##### return: any
-<!-- Description goes here -->
+A container's nested items.
 
 ---
 This property is in effect for `"verticalContainer"` or `"horizontalContainer"` nodes.

@@ -3,10 +3,8 @@ id: dxDiagram.setSelectedItems(items)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Selects the specified items.
 
 ##### param(items): Array<dxDiagramItem>
-<!-- Description goes here -->
-
+An array of items to select.
 ---
-<!-- Description goes here -->

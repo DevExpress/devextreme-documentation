@@ -3,10 +3,9 @@ id: dxDiagram.scrollToItem(item)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Scrolls the view area to the specified item.
 
 ##### param(item): dxDiagramItem
-<!-- Description goes here -->
+A diagram item (shape or connector).
 
 ---
-<!-- Description goes here -->

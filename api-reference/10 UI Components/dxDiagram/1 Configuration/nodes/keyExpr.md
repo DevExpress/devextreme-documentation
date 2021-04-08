@@ -11,6 +11,6 @@ Specifies the name of a data source field or an expression that provides node ke
 The current node's data object.
 
 ##### return: any
-<!-- Description goes here -->
+A node key.
 
 ---

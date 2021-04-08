@@ -3,10 +3,10 @@ id: dxDiagram.getItems()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Returns an array of diagram items.
 
 ##### return: Array<dxDiagramItem>
-<!-- Description goes here -->
+An array of items (shapes and connectors).
 
 ---
-<!-- Description goes here -->
+Call the **getItems** method to get the full collection of diagram items.

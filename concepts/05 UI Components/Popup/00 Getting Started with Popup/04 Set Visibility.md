@@ -30,16 +30,12 @@ Use the **visibile** parameter to control whether the popup is hidden or shown b
     <!-- tab: app.component.html -->
     <dx-button
         text="Open popup"
-        (onClick)="togglePopup()"
-    >
+        (onClick)="togglePopup()">
     </dx-button>
     <dx-popup
         [(visible)]="isPopupVisible"
-        [closeOnOutsideClick]="true"
-    >
-        <div *dxTemplate="let data of 'content'">
-            // ...
-        </div>
+        [closeOnOutsideClick]="true">
+        <!-- ... -->
     </dx-popup>
 
     <!-- tab: app.component.ts -->
@@ -76,11 +72,8 @@ Use the **visibile** parameter to control whether the popup is hidden or shown b
             />
             <DxPopup
                 v-model:visible="isPopupVisible"
-                :close-on-outside-click="true"            
-            >
-                <template #content>
-                    // ...
-                </template>            
+                :close-on-outside-click="true">
+                <!-- ... -->
             </DxPopup>
         </div>
     </template>
@@ -126,8 +119,7 @@ Use the **visibile** parameter to control whether the popup is hidden or shown b
                 <Popup
                     visible={isPopupVisible}
                     closeOnOutsideClick={true}
-                    onHiding={togglePopup}                
-                >
+                    onHiding={togglePopup}>
                     // ...
                 </Popup>
             </div>

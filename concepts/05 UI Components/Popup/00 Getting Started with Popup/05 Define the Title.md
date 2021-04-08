@@ -1,4 +1,4 @@
-Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle) property to **true** to display popup's title and use the [title](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title) property to define its content: 
+Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle) property to **true** to display popup's title bar and use the [title](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title) property to define its text: 
 
 ---
 ##### jQuery
@@ -12,82 +12,46 @@ Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configurat
         });
         // ...
     });
-
-    // ...
  
 ##### Angular
 
     <!-- tab: app.component.html -->
-    // ...
     <dx-popup
         [showTitle]="true"
-        title="Information"
-    >
-        <div *dxTemplate="let data of 'content'">
-            // ...
-        </div>
+        title="Information">
+        <!-- ... -->
     </dx-popup>
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            // ...
             <DxPopup
                 :show-title="true"
-                title="Information"         
-            >
-                <template #content>
-                    // ...
-                </template>            
+                title="Information">
+                <!-- ... -->
             </DxPopup>
         </div>
     </template>
 
     <script>
     // ...
-
-    export default {
-        // ...
-    }
     </script>
 
 
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useState } from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    
     // ...
-
     function App() {
         // ...
         return (
             <div className="App">
-                // ...
                 <Popup
                     showTitle={true}
                     title="Information"              
-                >
-                    // ...
-                </Popup>
+                />
             </div>
         );
     }

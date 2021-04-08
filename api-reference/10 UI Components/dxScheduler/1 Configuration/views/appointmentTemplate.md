@@ -10,10 +10,10 @@ Specifies a custom template for appointments.
 ##### param(model): Object
 The data of the appointment being customized.
 
-##### field(model.appointmentData): any
+##### field(model.appointmentData): Object
 The appointment's data object.
 
-##### field(model.targetedAppointmentData): any
+##### field(model.targetedAppointmentData): Object
 <!-- %field(model.targetedAppointmentData)% -->
 
 ##### param(itemIndex): Number

@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides a node'
 The current node's data object.
 
 ##### return: any
-<!-- Description goes here -->
+A node's text style.
 
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 

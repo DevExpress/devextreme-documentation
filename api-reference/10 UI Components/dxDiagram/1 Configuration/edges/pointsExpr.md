@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides an edge
 The current edge's data object.
 
 ##### return: any
-<!-- Description goes here -->
+An edge's key points.
 
 ---
     <!-- tab: index.js -->

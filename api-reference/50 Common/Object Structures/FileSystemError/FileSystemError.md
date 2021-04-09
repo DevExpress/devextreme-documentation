@@ -236,16 +236,17 @@ An object that contains information about the error.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .FileSystemProvider(provider => provider.Custom()
-            .GetItems("getItems")
-            .CreateDirectory("createDirectory")
-        )
+        .FileSystemProvider(noDuplicatesProvider)
         .Permissions(permissions => {
             permissions.Create(true);
         })
     )
     <script>
         const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+        const noDuplicatesProvider = new CustomFileSystemProvider({
+            getItems,
+            createDirectory
+        });
 
         function getItems(item) {
             return realProviderInstance.getItems(item);

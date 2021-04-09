@@ -81,20 +81,23 @@ Users can scroll popup's content. To enable this functionality, wrap the content
     // ...
     import ScrollView from 'devextreme-react/scroll-view';
 
+        const renderContent = () => {
+            return (
+                <>
+                    <ScrollView height="100%" width="100%">
+                        // ...
+                    </ScrollView>
+                </>
+            )
+        };
+
     const App = () => {
         // ...
         return (
             <div className="App">
                 <Popup
                     width={500}
-                    height={500}>
-                    <ScrollView 
-                        height="100%"
-                        width="100%">
-                        // ...
-                    <ScrollView />
-                    // ...
-                </Popup>
+                    height={500}/>
             </div>
         );
     }

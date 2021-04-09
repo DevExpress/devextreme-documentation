@@ -6,7 +6,7 @@ EventForAction: dxLookup.pullRefresh
 ---
 ---
 ##### shortDescription
-A function that is executed when the "pull to refresh" gesture is performed on the drop-down item list. Supported in mobile themes only.
+A function that is executed when the "pull to refresh" gesture is performed on the drop-down item list. Supported on mobile devices only.
 
 ##### param(e): Object
 Information about the event.

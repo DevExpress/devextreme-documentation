@@ -14,31 +14,34 @@ An object that contains information about the error.
 
     <!-- tab: index.js -->
     const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+    const noDuplicatesProvider = new DevExpress.fileManagement.CustomFileSystemProvider({
+        getItems: function(item) {
+            return realProviderInstance.getItems(item);
+        },
+        createDirectory: function(parentDir, name) {
+            const deferred = new Deferred();
+            this.getItems(this.parentDir).then(items => {
+                const duplicateItems = items.filter(i => i.name === itemName);
+                if(duplicateItems.length !== 0) {
+                    // 1 - deferred.reject()
+                    deferred
+                        .reject(new DevExpress.fileManagement.FileSystemError(3))
+                        .promise();
+                    // 2 - throw
+                    throw new DevExpress.fileManagement.FileSystemError(3)
+                } else {
+                    deferred
+                        .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
+                        .promise();
+                }
+            });
+            return deferred.promise();
+        }        
+    })
     
     $("#file-manager").dxFileManager({ 
-        fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
-            getItems: function(item) {
-                return realProviderInstance.getItems(item);
-            },
-            createDirectory: function(parentDir, name) {
-                const deferred = new Deferred();
-                this.getItems(this.parentDir).then(items => {
-                    const duplicateItems = items.filter(i => i.name === itemName);
-                    if(duplicateItems.length !== 0) {
-                        // 1 - deferred.reject()
-                        deferred
-                            .reject(new DevExpress.fileManagement.FileSystemError(3))
-                            .promise();
-                        // 2 - throw
-                        throw new DevExpress.fileManagement.FileSystemError(3)
-                    } else {
-                        deferred
-                            .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
-                            .promise();
-                    }
-                });
-                return deferred.promise();
-            }
+        fileSystemProvider: noDuplicatesProvider,
+        permissions: { create: true }
         });
     });
 
@@ -46,15 +49,17 @@ An object that contains information about the error.
 
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager">
-        <dxo-notifications 
-            [fileSystemProvider]="fileSystemProvider">
-        </dxo-notifications>
+        [fileSystemProvider]="noDuplicatesProvider">
+        <dxo-permissions create="true">
+        </dxo-permissions>
         <!-- ... -->
     </dx-file-manager>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
+    import FileSystemError from 'devextreme/file_management/error';
 
     @Component({
         selector: 'app-root',
@@ -63,13 +68,15 @@ An object that contains information about the error.
     })
 
     export class AppComponent {
+        const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+        const noDuplicatesProvider = new DevExpress.fileManagement.CustomFileSystemProvider({
+            getItems,
+            createDirectory            
+        })
         fileSystemProvider: CustomFileSystemProvider;
         
         constructor() {
-            this.fileSystemProvider = new CustomFileSystemProvider({
-                getItems,
-                createDirectory
-            });
+            this.fileSystemProvider = noDuplicatesProvider;
         }         
     } 
     function getItems(item) {
@@ -115,16 +122,22 @@ An object that contains information about the error.
 
     <!-- tab: App.vue -->
     <template>
-        <DxFileManager :file-provider="customFileProvider"></DxFileManager>
+        <DxFileManager :file-system-provider="noDuplicatesProvider">
+            <dx-permissions :create="true" />
+        </DxFileManager>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxFileManager } from 'devextreme-vue/file-manager';
-    import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';        
+    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
+    import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
+    import FileSystemError from 'devextreme/file_management/error';        
 
-    const customFileProvider = new CustomFileSystemProvider({
+    const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+
+    const noDuplicatesProvider = new CustomFileSystemProvider({
         getItems,
         createDirectory
     });
@@ -135,7 +148,7 @@ An object that contains information about the error.
             CustomFileSystemProvider
         },
         data() {
-            return { customFileProvider };
+            return { noDuplicatesProvider };
         }
     };
 
@@ -172,9 +185,13 @@ An object that contains information about the error.
     import 'devextreme/dist/css/dx.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
+    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
+    import FileSystemError from 'devextreme/file_management/error';
 
-    const customFileProvider = new CustomFileSystemProvider({
+    const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+
+    const noDuplicatesProvider = new CustomFileSystemProvider({
         getItems,
         createDirectory
     });
@@ -182,7 +199,9 @@ An object that contains information about the error.
     const App = () => {
         return (
             <FileManager
-                fileSystemProvider={customFileProvider} >
+                fileSystemProvider={noDuplicatesProvider} >
+                <Permissions create={true} >
+                </Permissions>                
             </FileManager>
         );
     };
@@ -221,8 +240,13 @@ An object that contains information about the error.
             .GetItems("getItems")
             .CreateDirectory("createDirectory")
         )
+        .Permissions(permissions => {
+            permissions.Create(true);
+        })
     )
     <script>
+        const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+
         function getItems(item) {
             return realProviderInstance.getItems(item);
 

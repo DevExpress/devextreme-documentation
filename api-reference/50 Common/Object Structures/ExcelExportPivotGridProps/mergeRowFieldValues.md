@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to merge neighbouring cells in the row field if they have the same values.
 
 ---
 <!-- Description goes here -->

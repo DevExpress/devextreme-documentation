@@ -20,4 +20,3 @@ The filter passed to this method is not reflected in [any of the filtering UI el
 #####See Also#####
 #include common-link-callmethods
 - [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '{basewidgetpath}/Methods/#getCombinedFilter')
-- [filterValue](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterValue.md '{basewidgetpath}/Configuration/#filterValue')

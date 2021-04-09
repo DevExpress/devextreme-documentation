@@ -10,7 +10,7 @@ Specifies the pager's display mode.
 
 ---
 
-The following table illustrates the *"full"* and *"compact"* display modes:
+The following table illustrates *"full"* and *"compact"* display modes:
 
 <table class="dx-table">
     <tr>

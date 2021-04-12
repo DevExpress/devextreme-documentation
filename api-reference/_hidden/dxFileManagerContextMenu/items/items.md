@@ -275,6 +275,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
         import { 
             DxFileManager, 
             DxContextMenu, 
+            DxItem
             // ... 
         } from 'devextreme-vue/file-manager';
         
@@ -282,6 +283,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
             components: { 
                 DxFileManager, 
                 DxContextMenu, 
+                DxItem
                 // ... 
             },
             methods: {
@@ -303,7 +305,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
 
     <!-- tab: App.js -->
     import React from 'react';
-    import FileManager, { ContextMenu } from 'devextreme-react/file-manager';
+    import FileManager, { ContextMenu, Item } from 'devextreme-react/file-manager';
 
     const App = () => {
         const onItemClick = (e) => {

@@ -125,7 +125,7 @@ The FileManager UI component allows you to add default and create custom context
 
     const App = () => {
         return (
-            <FileManager onContextMenuItemClick={onItemClick}>
+            <FileManager>
                 <ContextMenu>
                     <Item name="create"/>
                     <Item text="Create new file">

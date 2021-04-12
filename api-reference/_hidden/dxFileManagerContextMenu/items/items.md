@@ -111,7 +111,8 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
         import { 
             DxFileManager, 
-            DxContextMenu, 
+            DxContextMenu,
+            DxItem 
             // ... 
         } from 'devextreme-vue/file-manager';
         
@@ -119,6 +120,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
             components: { 
                 DxFileManager, 
                 DxContextMenu, 
+                DxItem
                 // ... 
             },
             data() {
@@ -133,7 +135,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
     <!-- tab: App.js -->
     import React from 'react';
-    import FileManager, { ContextMenu } from 'devextreme-react/file-manager';
+    import FileManager, { ContextMenu, Item } from 'devextreme-react/file-manager';
 
     const App = () => {
         return (

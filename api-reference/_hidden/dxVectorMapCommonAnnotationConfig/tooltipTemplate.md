@@ -8,7 +8,7 @@ default: undefined
 <!-- %shortDescription% -->
 
 ##### param(annotation): dxVectorMapAnnotationConfig | any
-<<!-- %param(annotation)% -->
+<!-- %param(annotation)% -->
 
 ##### param(element): dxElement
 <!-- %param(element)% -->

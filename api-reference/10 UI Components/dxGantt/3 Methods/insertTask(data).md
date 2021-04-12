@@ -10,6 +10,13 @@ The task data.
 
 ---
 
+The **insertTask** method does not update the following data fields in the data source:
+
+- Key value fields.
+
+- Fields that are not assigned to the Gantt's columns.
+
+
 ---
 
 ##### jQuery

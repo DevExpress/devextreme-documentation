@@ -99,14 +99,16 @@ The FileManager UI component allows you to add default and create custom context
 
         import { 
             DxFileManager, 
-            DxContextMenu, 
+            DxContextMenu,
+            DxItem
             // ... 
         } from 'devextreme-vue/file-manager';
         
         export default {
             components: { 
                 DxFileManager, 
-                DxContextMenu, 
+                DxContextMenu,
+                DxItem
                 // ... 
             },           
             data() {
@@ -121,7 +123,7 @@ The FileManager UI component allows you to add default and create custom context
 
     <!-- tab: App.js -->
     import React from 'react';
-    import FileManager, { ContextMenu } from 'devextreme-react/file-manager';
+    import FileManager, { ContextMenu, Item } from 'devextreme-react/file-manager';
 
     const App = () => {
         return (

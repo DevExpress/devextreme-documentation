@@ -2,7 +2,7 @@ In form edit mode, row cells become editable form fields. Form fields are sorted
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Editing Form Mode](/images/DataGrid/editing/form_mode.png)
 
-Configure the form using the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form') object. The DataGrid uses the DevExtreme [Form](/concepts/05%20UI%20Components/Form/00%20Overview.md '/Documentation/Guide/UI_Components/Form/Overview/') UI component, so you can specify [any Form properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') in this object except those listed in its description. 
+Configure the form using the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form') object. The DataGrid uses the DevExtreme [Form](/Documentation/ApiReference/UI_Components/dxForm/) UI component, so you can specify [any Form properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') in this object except those listed in its description. 
 
 For example, you can specify the [items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') array to reorder editable fields (or "simple items", as they are called in the Form UI component), or organize them in groups and tabs.
 

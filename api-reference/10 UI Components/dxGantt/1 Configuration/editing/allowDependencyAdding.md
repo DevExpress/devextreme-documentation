@@ -17,21 +17,6 @@ To add a dependency between two tasks, use the [insertDependency](/api-reference
 
 ![DevExtreme Gantt - Insert Dependency](/images/Gantt/add-dependency.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowDependencyAdding: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 #####See Also#####
 - [onDependencyInserting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onDependencyInserting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserting')
 - [onDependencyInserted](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onDependencyInserted.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyInserted')

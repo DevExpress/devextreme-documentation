@@ -28,8 +28,8 @@ dx.web.js, dx.all.js
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/Form/Overview/"
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/"
 }
  
 #####See Also#####

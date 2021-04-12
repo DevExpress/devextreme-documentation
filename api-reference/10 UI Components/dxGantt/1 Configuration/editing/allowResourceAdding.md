@@ -22,21 +22,6 @@ Set the **allowResourceAdding** option to **false** to disable the **Add** butto
 
 ![DevExtreme Gantt Chart - Resource Manager](/images/Gantt/resource-manager-disable-add-button.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowResourceAdding: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 Note that you cannot open the "Resource Manager" dialog if the **allowResourceAdding** and [allowResourceDeleting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/editing/allowResourceDeleting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowResourceDeleting') options are set to **false**.
 
 ![DevExtreme Gantt Chart - Disabled Resource Manager](/images/Gantt/edit-dialog-diable-resource-manager.png)

@@ -57,8 +57,9 @@ Use the [height](/Documentation/ApiReference/UI_Components/dxPopup/Configuration
                 <Popup
                     width={500}
                     height={500} 
-                    resizeEnabled={true}/>
-                // ...
+                    resizeEnabled={true}
+                />
+                {/* ... */}
             </div>
         );
     }

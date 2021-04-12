@@ -52,8 +52,9 @@ Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configurat
             <div className="App">
                 <Popup
                     showTitle={true}
-                    title="Information"/>
-                // ...
+                    title="Information"
+                />
+                {/* ... */}
             </div>
         );
     }

@@ -1,4 +1,4 @@
-You can define static content in the Popup's markup or use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate) when the content is dynamic. In the code below the content is static but we use **contentTemplate** as dynamic content will be added at a later stage.
+You can define static content in the Popup's markup or use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate) when the content is dynamic. In the code below, the content is static but we use **contentTemplate** as dynamic content will be added at a later stage.
 
 ---
 ##### jQuery
@@ -30,8 +30,9 @@ You can define static content in the Popup's markup or use the [contentTemplate]
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-popup>
-        <div *dxTemplate="let data of 'content'">
+    <dx-popup
+        contentTemplate="popup-content">
+        <div *dxTemplate="let data of 'popup-content'">
             <img src="assets/images/dx-logo.png" alt="logo">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -49,26 +50,14 @@ You can define static content in the Popup's markup or use the [contentTemplate]
         </div>
     </dx-popup>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        
-    }
-
-
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxPopup>
-                <template #content>
+            <DxPopup
+                content-template="popup-content">
+                <template #popup-content>
                     <img src="./assets/dx-logo.png" alt="logo">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -98,8 +87,6 @@ You can define static content in the Popup's markup or use the [contentTemplate]
 
 
 ##### React
-
-You can define the content directly between the Popup tags like you would with a normal `<div>`:
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -149,7 +136,8 @@ You can define the content directly between the Popup tags like you would with a
         return (
             <div className="App">
                 <Popup
-                    contentRender={renderContent}/>
+                    contentRender={renderContent}
+                />
             </div>
         );
     }

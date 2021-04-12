@@ -17,7 +17,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Closes the date/time picker.</td>
     </tr>
     <tr>
-        <td rowspan="6">Calendar</td>
+        <td rowspan="10">Calendar</td>
         <td style="font-style:italic; text-align:center">&larr; &rarr; &uarr; &darr;</td>
         <td>Moves focus to the day nearby.</td>
     </tr>
@@ -40,6 +40,22 @@ An end user can use the following keys to interact with the UI component.
     <tr>
         <td>Esc</td>
         <td>Closes the drop-down editor.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &uarr;</td>
+        <td>Increases <a href="/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel">zoomLevel</a>.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &darr;</td>
+        <td>Decreases <b>zoomLevel</b>.</td>
+    </tr>
+    <tr>
+        <td>Home</td>
+        <td>Moves focus to the first date in the view.</td>
+    </tr>
+    <tr>
+        <td>End</td>
+        <td>Moves focus to the last date in the view.</td>
     </tr>
     <tr>
         <td rowspan="3">List</td>

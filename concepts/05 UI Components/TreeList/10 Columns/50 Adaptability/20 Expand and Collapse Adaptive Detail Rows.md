@@ -32,6 +32,68 @@ You can call the [expandAdaptiveDetailRow(key)](/Documentation/ApiReference/UI_C
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxTreeList ...
+            :ref="treeListRefKey">
+        </DxTreeList>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxTreeList from 'devextreme-vue/tree-list';
+
+    const treeListRefKey = "my-tree-list";
+
+    export default {
+        components: {
+            DxTreeList
+        },
+        data() {
+            return() {
+                treeListRefKey
+            }
+        },
+        methods: {
+            expandAdaptiveDetailRow(key) {
+                if (!this.treeList.isAdaptiveDetailRowExpanded(key)) {
+                    this.treeList.expandAdaptiveDetailRow(key);
+                }
+            }
+        },
+        computed: {
+            treeList: function() {
+                return this.$refs[treeListRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import TreeList from 'devextreme-react/tree-list';
+
+    export default function App() {
+        const treeList = useRef(null);
+        const expandAdaptiveDetailRow = (key) => {
+            if (!treeList.current.instance.isAdaptiveDetailRowExpanded(key)) {
+                treeList.current.instance.expandAdaptiveDetailRow(key);
+            }
+        };
+
+	    return (
+            <TreeList ref={treeList}>
+                {/* ... */ }
+            </TreeList>
+        );
+    }
     
 ---
 

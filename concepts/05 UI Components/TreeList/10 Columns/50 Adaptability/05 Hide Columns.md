@@ -1,6 +1,6 @@
-When the total width of columns exceeds the component's width, the TreeList truncates column cell texts or adds horizontal scrolling. As an alternative, the component can hide one or several columns to prevent horizontal scrolling and display cell texts in full. To enable this feature, set the [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnHidingEnabled) property to **true**.
+When the total width of columns exceeds component width, the TreeList either truncates column cell text or adds horizontal scrolling. As an alternative, the component can hide one or several columns to prevent horizontal scrolling and display cell text in full. To enable this feature, set the [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnHidingEnabled) property to **true**.
 
-Each column has a unique default hiding priority. The rightmost column has the priority of 0. This value is incremented by 1 for columns from right to left; column with the lowest priority is hidden first.
+Each column has a unique default hiding priority. The rightmost column has the priority of 0. This value is incremented by 1 for columns from right to left; the column with the lowest priority is hidden first.
 
 You can use the **columns[]**.[hidingPriority](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#hidingPriority) property to specify custom hiding priorities for those columns that you want to hide. Other columns will never be hidden. This will override the default behavior described above. In this case, the **columnHidingEnabled** property can be omitted.
 

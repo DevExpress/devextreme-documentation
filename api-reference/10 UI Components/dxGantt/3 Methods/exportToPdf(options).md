@@ -19,8 +19,8 @@ The **export** method allows you to save information about the Gantt chart's lay
 - **landscape** {boolean} - Specifies whether to use horizontal orientation for the document.
 - **fileName** {string} - Specifies the file name.
 - **exportMode** {"all", "treeList", "chart"} -  Specifies which part of the component to export (chart area, tree list area or the entire component).
-- **dataRange**: {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Specifies the date range for which to export tasks.
-- **margin** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
+- **dateRange**: {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Specifies the date range for which to export tasks.
+- **margins** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
 
 ---
 
@@ -32,10 +32,9 @@ The **export** method allows you to save information about the Gantt chart's lay
         format: "A4",
         landscape: true,
         exportMode: "chart",
-        dataRange: "visible"
+        dateRange: "visible"
     ).then(function(doc) { 
-        doc.addPage(); 
-        doc.save('customDoc.pdf');	 
+        doc.save('customDoc.pdf');
     }
 
 

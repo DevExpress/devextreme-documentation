@@ -32,4 +32,5 @@ A Promise that is resolved after the file system item is moved. It is a <a href=
             }) 
         });     
     });
+
 ---

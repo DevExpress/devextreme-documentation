@@ -38,18 +38,136 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
             contextMenu: {
                 items: [
                     // Specify a predefined item's name only
-                    "rename", 
+                    "rename",
                     // Specify a predefined item's name and optional settings
                     {
-                        name: "create",
-                        text: "Create Directory",
+                        name: "download",
+                        text: "Download a File"
+                    },
+                    {
+                        name: "refresh",
                         beginGroup: true
                     }
-                    //...
                 ]
-            }            
+            }          
         });
     });  
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager ... >
+        <dxo-context-menu>
+            <dxi-item name="rename"></dxi-item>
+            <dxi-item name="download" text="Download a File"></dxi-item>
+            <dxi-item name="refresh" beginGroup="true"></dxi-item>        
+        </dxo-context-menu>
+        <!-- ... -->
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        // ...      
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            DxFileManagerModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager ... >
+            <DxContextMenu>
+                <DxItem name="rename"/>
+                <DxItem name="download" text="Download a File" />
+                <DxItem name="refresh" :begin-group="true" />
+            </DxContextMenu>            
+        </DxFileManager>
+    </template>
+
+    <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { 
+            DxFileManager, 
+            DxContextMenu,
+            DxItem 
+            // ... 
+        } from 'devextreme-vue/file-manager';
+        
+        export default {
+            components: { 
+                DxFileManager, 
+                DxContextMenu, 
+                DxItem
+                // ... 
+            },
+            data() {
+                return {
+                    //...
+                };
+            } 
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import FileManager, { ContextMenu, Item } from 'devextreme-react/file-manager';
+
+    const App = () => {
+        return (
+            <FileManager...>
+                <ContextMenu>
+                    <Item name="rename" />
+                    <Item name="download" text="Download a File" />
+                    <Item name="refresh" beginGroup="true" />
+                </ContextMenu>                
+            </FileManager>
+        );
+    };
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add().Name(FileManagerContextMenuItem.Rename);
+                i.Add()
+                    .Name(FileManagerContextMenuItem.Download)
+                    .Text("Download a File");
+                i.Add()
+                    .Name(FileManagerContextMenuItem.Refresh)
+                    .BeginGroup(true);
+            });
+        })
+        // ...
+    )
 
 ---
 
@@ -69,24 +187,17 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
             contextMenu: {
                 items: [
                     {
-                        text: "Create new file", 
-                        icon: "plus",
-                        items: [
-                            {
-                                text: "Text document",
-                                extension: ".txt"
-                            },
-                            {
-                                text: "RTF Document",
-                                extension: ".rtf"
-                            },
-                            {
-                                text: "Spreadsheet",
-                                extension: ".xls"
-                            }
-                        ]
+                        text: "Create .txt Document",
+                        extension: ".txt"
+                    },
+                    {
+                        text: "Create .rtf Document",
+                        extension: ".rtf"
+                    },
+                    {
+                        text: "Create .xls Document",
+                        extension: ".xls"
                     }
-                    // ...
                 ]
             }
             onContextMenuItemClick: onItemClick
@@ -98,6 +209,151 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
             // your code
         }
     }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager 
+        (onContextMenuItemClick)="onItemClick($event)">
+        <dxo-context-menu>
+            <dxi-item text="Create .txt Document" [options]="{ extension: '.txt' }"></dxi-item>
+            <dxi-item text="Create .rtf Document" [options]="{ extension: '.rtf' }"></dxi-item>
+            <dxi-item text="Create .xls Document" [options]="{ extension: '.xls' }"></dxi-item>
+        </dxo-context-menu>
+        <!-- ... -->
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        onItemClick(e){
+            if(e.itemData.extension) {
+                // your code
+            }            
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            DxFileManagerModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager 
+            :on-context-menu-item-click="onItemClick" >
+            <DxContextMenu>
+                <DxItem text="Create .txt Document" :options="{ extension: '.txt' }" />
+                <DxItem text="Create .rtf Document" :options="{ extension: '.rtf' }" />
+                <DxItem text="Create .xls Document" :options="{ extension: '.xls' }" />
+            </DxContextMenu>            
+        </DxFileManager>
+    </template>
+
+    <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { 
+            DxFileManager, 
+            DxContextMenu, 
+            DxItem
+            // ... 
+        } from 'devextreme-vue/file-manager';
+        
+        export default {
+            components: { 
+                DxFileManager, 
+                DxContextMenu, 
+                DxItem
+                // ... 
+            },
+            methods: {
+                onItemClick(e) {
+                    if(e.itemData.extension) {
+                        // your code
+                    }                     
+                }
+            },         
+            data() {
+                return {
+                    //...
+                };
+            } 
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import FileManager, { ContextMenu, Item } from 'devextreme-react/file-manager';
+
+    const App = () => {
+        const onItemClick = (e) => {
+            if(e.itemData.extension) {
+                // your code
+            }
+        };
+
+        return (
+            <FileManager onContextMenuItemClick={onItemClick}>
+                <ContextMenu>
+                    <Item text="Create .txt Document" extension=".txt" />
+                    <Item text="Create .rtf Document" extension=".rtf" />
+                    <Item text="Create .xls Document" extension=".xls" />
+                </ContextMenu>                
+            </FileManager>
+        );
+    };
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add()
+                    .Text("Create .txt Document")
+                    .Option("extension", ".txt");
+                i.Add()
+                    .Text("Create .rtf Document")
+                    .Option("extension", ".rtf");
+                i.Add()
+                    .Text("Create .xls Document")
+                    .Option("extension", ".xls");
+            });
+        })
+        .OnContextMenuItemClick("onItemClick");
+    )
+
+    <script>
+        function onItemClick(e) {
+            if(e.itemData.extension) {
+                // your code
+            }
+        }
+    </script>
 
 ---
 

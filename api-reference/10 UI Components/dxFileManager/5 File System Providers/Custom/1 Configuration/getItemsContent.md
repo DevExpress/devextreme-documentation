@@ -19,7 +19,7 @@ A Promise that is resolved after the content of the file system items is obtaine
 ##### jQuery
 
     <!--JavaScript-->
-	$(function () {
+    $(function () {
         $("#file-manager").dxFileManager({ 
             fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
                 getItemsContent: function(pathInfo) { 
@@ -29,4 +29,5 @@ A Promise that is resolved after the content of the file system items is obtaine
             }) 
         });     
     });
+
 ---

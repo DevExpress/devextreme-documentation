@@ -32,4 +32,5 @@ A Promise that is resolved after the file system item is renamed. It is a <a hre
             }) 
         });
     });
+
 ---

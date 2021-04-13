@@ -24,6 +24,26 @@ The **export** method allows you to save information about the Gantt chart's lay
 
 ---
 
+How to export the Gantt chart to PDF document with settings:
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.exportToPdf(
+        format: "A4",
+        landscape: true,
+        exportMode: "chart",
+        dateRange: "visible"
+    )
+
+
+---
+
+How to process the PDF document when the export is complete:
+
+---
+
 ##### jQuery
 
     <!-- tab: index.js -->
@@ -34,8 +54,30 @@ The **export** method allows you to save information about the Gantt chart's lay
         exportMode: "chart",
         dateRange: "visible"
     ).then(function(doc) { 
+        doc.addPage(); 
+        // your code
         doc.save('customDoc.pdf');
-    }
+    });
+
+---
+
+How to print the exported PDF document:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.exportToPdf(
+        format: "A4",
+        landscape: true,
+        exportMode: "chart",
+        dateRange: "visible"
+    ).then(function(doc) { 
+        doc.autoPrint(); 
+        window.open(doc.output('your_url'), '_blank');
+    });
 
 
 ---

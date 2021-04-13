@@ -7,4 +7,4 @@ type: Number
 Zero-based index of a new row.
 
 ---
-To add a row to the bottom, assign -1 to this field. If pageIndex is used, specifies the index relative to the specified page.
+When pageIndex is used, sets the index relative to the specified page. To add a row to the bottom, assign -1 to this field.

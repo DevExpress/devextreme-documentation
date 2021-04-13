@@ -136,7 +136,7 @@ The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configura
             onRowValidating: function (e) {
                 if (e.isValid && e.newData.Login === "Administrator") {
                     e.isValid = false;
-                    e.errorText = "Your cannot log in as Administrator";
+                    e.errorText = "You cannot log in as Administrator";
                 }
             }
         });
@@ -151,7 +151,7 @@ The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configura
         denyAdminLogin (e) {
             if (e.isValid && e.newData.Login === "Administrator") {
                 e.isValid = false;
-                e.errorText = "Your cannot log in as Administrator";
+                e.errorText = "You cannot log in as Administrator";
             }
         }
     }
@@ -190,7 +190,7 @@ The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configura
             denyAdminLogin(e) {
                 if(e.isValid && e.newData.Login === "Administrator") {
                     e.isValid = false;
-                    e.errorText = "Your cannot log in as Administrator";
+                    e.errorText = "You cannot log in as Administrator";
                 }
             }
         }
@@ -210,7 +210,7 @@ The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configura
         denyAdminLogin(e) {
             if(e.isValid && e.newData.Login === "Administrator") {
                 e.isValid = false;
-                e.errorText = "Your cannot log in as Administrator";
+                e.errorText = "You cannot log in as Administrator";
             }
         }
 

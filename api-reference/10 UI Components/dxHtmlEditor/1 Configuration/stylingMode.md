@@ -6,7 +6,7 @@ default: 'outlined'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies how editors' text fields are styled in your application.
 
 ---
 <!-- Description goes here -->

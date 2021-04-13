@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Zero-based page index for a new row. Applies if pager is used.
 
 ---
-<!-- Description goes here -->
+If you need to add a row to the last page, set this field to -1.

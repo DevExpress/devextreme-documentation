@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies custom content for the time fields in the task tooltip.
+Specifies custom content for the tooltip that displays the task's start and end time while the task is resized in the UI.
 
 ##### param(container): dxElement
 #include common-ref-elementparam with { element: "time fields in the task tooltip" }

@@ -58,7 +58,7 @@ If the **items** field is called differently in your dataset, specify the [items
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayHierarchicalStructure/"
 }
 
-[note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">this KB</a> to implement it.
+[note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from the following knowledge base article to implement it: <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">TreeList - How to perform CRUD operations on a hierarchical data source</a>.
 
 If each data item has a Boolean field that specifies whether this data item nests other items, assign the field's name to the [hasItemsExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#hasItemsExpr') property. The UI component uses this information to render the expand button. This is required only if the UI component is bound to a remote data source.
 

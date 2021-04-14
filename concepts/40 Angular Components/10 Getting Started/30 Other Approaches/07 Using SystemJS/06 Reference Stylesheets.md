@@ -8,4 +8,4 @@ Open the `index.html` file and reference `dx.common.css` and a [predefined theme
         <!-- ... -->
     </head>
 
-[note] [SVG-based UI components](/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_Widgets/) do not require theme stylesheets. If you choose to reference the stylesheets, the UI components apply an appearance that matches them.
+[note] [SVG-based UI components](/Documentation/Guide/Themes_and_Styles/HTML-_and_SVG-Based_UI_Components/) do not require theme stylesheets. If you choose to reference the stylesheets, the UI components apply an appearance that matches them.

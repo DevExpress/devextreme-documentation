@@ -12,4 +12,4 @@ Zero-based index of a new row. Applies only if the [type]({currentpath}/#type) i
 
 #include common-ctp-note-wo-devextreme 
 
-If you use the [pageIndex]({currentpath}/#pageIndex), this field sets the row index on the specified page. To add a row to the end of the page or dataset, set **index** to -1.
+If the [pageIndex]({currentpath}/#pageIndex) has a value, this field sets a row index on the specified page. In other cases, this field specifies the row index within the entire grid. Only data and group rows are indexed. To add a row to the end of the page or grid, set **index** to -1.

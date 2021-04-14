@@ -50,8 +50,8 @@ The task's start date.
 
     <!-- tab: app.component.html -->
     <dx-gantt taskTimeTooltipContentTemplate="myTaskTimeTooltipTemplate">
-        <div *dxTemplate="let task of 'myTaskTimeTooltipTemplate'" class="custom-tooltip">
-            <div class="custom-tooltip-time">{"End Date: " + item.end}</div>
+        <div *dxTemplate="let item of 'myTaskTimeTooltipTemplate'" class="custom-tooltip">
+            <div class="custom-tooltip-time">End Date: {{item.end}}</div>
             <!-- ... -->
         </div>
         ...
@@ -95,7 +95,7 @@ The task's start date.
             :task-time-tooltip-content-template="myTaskTimeTooltipTemplate" >
             <template #myTaskTimeTooltipTemplate="{ data: item }">
                 <div class="custom-tooltip">
-                    <div class="custom-tooltip-time">{"End Date: " + item.end}</div>
+                    <div class="custom-tooltip-time">End Date: {{item.end}}</div>
                     <!-- ... -->
                 </div>
             </template>
@@ -132,8 +132,8 @@ The task's start date.
 
     const TaskTimeTooltipTemplate = (item) => {
         return ( 
-            <div class="custom-tooltip">
-                <div class="custom-tooltip-time">{"End Date: " + item.end}</div>
+            <div className="custom-tooltip">
+                <div className="custom-tooltip-time">End Date: {item.end}</div>
                 <!-- ... -->
             </div>
         );         

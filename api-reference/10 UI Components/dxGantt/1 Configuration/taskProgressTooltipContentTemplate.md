@@ -47,8 +47,8 @@ The task's progress.
 
     <!-- tab: app.component.html -->
     <dx-gantt taskProgressTooltipContentTemplate="myTaskProgressTooltipTemplate">
-        <div *dxTemplate="let task of 'myTaskProgressTooltipTemplate'" class="custom-tooltip">
-            <div class="custom-tooltip-progress">{"Progress: " + {item.progress} + "%"}</div>
+        <div *dxTemplate="let item of 'myTaskProgressTooltipTemplate'" class="custom-tooltip">
+            <div class="custom-tooltip-progress">Progress: {{item.progress}}%</div>
             <!-- ... -->
         </div>
         ...
@@ -92,7 +92,7 @@ The task's progress.
             :task-progress-tooltip-content-template="myTaskProgressTooltipTemplate" >
             <template #myTaskProgressTooltipTemplate="{ data: item }">
                 <div class="custom-tooltip">
-                    <div class="custom-tooltip-progress">{"Progress: " + {item.progress} + "%"}</div>
+                    <div class="custom-tooltip-progress">Progress: {{ item.progress }}%</div>
                     <!-- ... -->
                 </div>            
             </template>
@@ -129,8 +129,8 @@ The task's progress.
 
     const TaskProgressTooltipTemplate = (item) => {
         return ( 
-            <div class="custom-tooltip">
-                <div class="custom-tooltip-progress">{"Progress: " + {item.progress} + "%"}</div>
+            <div className="custom-tooltip">
+                <div className="custom-tooltip-progress">Progress: {item.progress}%</div>
                 <!-- ... -->
             </div>            
         );         

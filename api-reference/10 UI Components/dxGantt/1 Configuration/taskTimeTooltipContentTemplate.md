@@ -49,7 +49,7 @@ The task's start date.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-gantt taskTooltipTimeContentTemplate="myTaskTimeTooltipTemplate">
+    <dx-gantt taskTimeTooltipContentTemplate="myTaskTimeTooltipTemplate">
         <div *dxTemplate="let task of 'myTaskTimeTooltipTemplate'" class="custom-tooltip">
             <div class="custom-tooltip-time">{"End Date: " + item.end}</div>
             <!-- ... -->

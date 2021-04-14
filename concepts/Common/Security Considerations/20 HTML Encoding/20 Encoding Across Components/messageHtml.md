@@ -1,1 +1,13 @@
-[DevExtreme Dialog UI methods](/api-reference/50%20Common/utils/ui/dialog/alert(messageHtml_title).md '/Documentation/ApiReference/Common/Utils/ui/dialog/#alertmessageHtml_title') accept an HTML string as a dialog message. This string is not encoded. You can use the `encodeHtml` utility method to encode the HTML string before it is passed to a Dialog UI method. The following example illustrates this technique: <a href="https://codepen.io/romantsukanov/pen/BazxOaE?editors=1010" target="_blank">HTML Encoding in a Dialog UI Method</a>.
+[DevExtreme Dialog UI methods](/api-reference/50%20Common/utils/ui/dialog/alert(messageHtml_title).md '/Documentation/ApiReference/Common/Utils/ui/dialog/#alertmessageHtml_title') accept an unencoded HTML string as a dialog message. Encode this string in the following manner:
+
+
+    <!-- tab: JavaScript -->
+    $(function() {
+        // Use your favorite sanitizing tool to encode the `message` string:
+        const message = "Are you sure?<script>alert('XSS')</script>";
+        DevExpress.ui.dialog.confirm(message, "Confirm changes");
+    });
+
+This code produces the following output:
+
+![DevExtreme Dialog: An Encoded String](/images/UiWidgets/dialog-encoded-string.png)

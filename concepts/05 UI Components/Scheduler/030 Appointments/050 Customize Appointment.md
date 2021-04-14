@@ -4,7 +4,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
 ##### jQuery
 
-    <!--JavaScript-->var appointments = [{
+    var appointments = [{
         text: "Website Re-Design Plan",
         startDate: new Date("2016-04-25T09:30:00.000Z"),
         endDate: new Date("2016-04-25T11:30:00.000Z")
@@ -13,7 +13,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
         startDate: new Date("2016-04-25T12:00:00.000Z"),
         endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
-    }, 
+    }, {
+        text: "Annual meeting in Berlin",
+        startDate: new Date("2016-04-26T11:00:00.000Z"),
+        endDate: new Date("2016-04-26T13:00:00.000Z"),
+        disabled: true
+    }
     // ...
     ];
 

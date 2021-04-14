@@ -14,7 +14,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
         endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
     }, {
-        text: "Annual meeting in Berlin",
+        text: "Annual Meeting in Berlin",
         startDate: new Date("2016-04-26T11:00:00.000Z"),
         endDate: new Date("2016-04-26T13:00:00.000Z"),
         disabled: true
@@ -45,7 +45,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
             endDate: new Date("2016-04-25T13:00:00.000Z"),
             hidden: true
         }, {
-            text: "Annual meeting in Berlin",
+            text: "Annual Meeting in Berlin",
             startDate: new Date("2016-04-26T11:00:00.000Z"),
             endDate: new Date("2016-04-26T13:00:00.000Z"),
             disabled: true
@@ -100,7 +100,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
                     endDate: new Date("2016-04-25T13:00:00.000Z"),
                     hidden: true
                 }, {
-                    text: "Annual meeting in Berlin",
+                    text: "Annual Meeting in Berlin",
                     startDate: new Date("2016-04-26T11:00:00.000Z"),
                     endDate: new Date("2016-04-26T13:00:00.000Z"),
                     disabled: true
@@ -131,7 +131,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
         endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
     }, {
-        text: "Annual meeting in Berlin",
+        text: "Annual Meeting in Berlin",
         startDate: new Date("2016-04-26T11:00:00.000Z"),
         endDate: new Date("2016-04-26T13:00:00.000Z"),
         disabled: true

@@ -18,7 +18,7 @@ The **export** method allows you to save information about the Gantt chart's lay
 - **format** {string | width?: number, height?: number } - Specifies the document size.
 - **landscape** {boolean} - Specifies whether to use horizontal orientation for the document.
 - **fileName** {string} - Specifies the file name.
-- **exportMode** {"all", "treeList", "chart"} -  Specifies which part of the component to export (chart area, tree list area or the entire component).
+- **exportMode** {"all", "treeList", "chart"} -  Specifies which part of the component to export (chart area, tree list area, or the entire component).
 - **dateRange**: {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Specifies the date range for which to export tasks.
 - **margins** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
 

@@ -4,6 +4,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
 ##### jQuery
 
+    <!-- tab: index.js -->
     var appointments = [{
         text: "Website Re-Design Plan",
         startDate: new Date("2016-04-25T09:30:00.000Z"),
@@ -365,6 +366,7 @@ If you use only jQuery, combine HTML markup for appointments manually with jQuer
 
 [**jQuery**](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component')
 
+    <!-- tab: index.js -->
     var schedulerData = [{
         movie: "His Girl Friday",
         price: 5,

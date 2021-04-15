@@ -184,7 +184,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
             // ...
         });
     });
-    function onCustomCommandClick(args) {
+    function onCustomCommandClick(e) {
         if(e.name == 'item1') {
             // your code
         }
@@ -318,5 +318,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
     </script>
 
 ---
+
+Result:
 
 ![DevExtreme Gantt - Custom Context Menu Items](/images/Gantt/context-menu-custom-items.png)

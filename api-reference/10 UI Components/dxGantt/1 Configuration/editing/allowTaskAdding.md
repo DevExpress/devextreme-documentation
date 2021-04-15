@@ -21,21 +21,6 @@ Right-click a task or a cell in the Gantt chart and select the "Add" context men
 
     ![DevExtreme Gantt Chart - Add Subtask](/images/Gantt/add-subtask.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowTaskAdding: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 #####See Also#####
 - [onTaskInserting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onTaskInserting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserting')
 - [onTaskInserted](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onTaskInserted.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskInserted')

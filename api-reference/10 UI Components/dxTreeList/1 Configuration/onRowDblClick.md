@@ -40,7 +40,7 @@ The row's [key](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/key.md '/
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.rowElement): dxElement
+##### field(e.rowElement): TElement
 #include common-ref-elementparam with { element: "row" }
 
 ##### field(e.rowIndex): Number

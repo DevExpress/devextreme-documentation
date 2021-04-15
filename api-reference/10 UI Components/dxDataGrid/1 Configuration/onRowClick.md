@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.onRowClick
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---

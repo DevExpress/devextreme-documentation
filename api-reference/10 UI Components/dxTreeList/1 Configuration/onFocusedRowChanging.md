@@ -31,7 +31,7 @@ The index of the row to be focused.
 ##### field(e.prevRowIndex): Number
 The index of the previously focused row.
 
-##### field(e.rowElement): dxElement
+##### field(e.rowElement): TElement
 #include common-ref-elementparam with { element: "to-be-focused row" }
 
 ##### field(e.rows): Array<dxTreeListRowObject>

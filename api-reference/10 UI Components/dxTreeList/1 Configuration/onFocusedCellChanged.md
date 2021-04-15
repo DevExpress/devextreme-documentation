@@ -10,7 +10,7 @@ A function that is executed after the focused cell changes. Applies only to cell
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): TElement
 #include common-ref-elementparam with { element: "focused cell" }
 
 ##### field(e.column): dxTreeListColumn

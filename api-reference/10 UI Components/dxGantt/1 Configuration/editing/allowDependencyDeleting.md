@@ -19,21 +19,6 @@ The widget displays a delete confirmation message when you want to remove a depe
 
 ![[DevExtreme Gantt - Confirm Dependency Deletion](/images/Gantt/confirm-delete-dependency.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowDependencyDeleting: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 #####See Also#####
 - [onDependencyDeleting](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onDependencyDeleting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleting')
 - [onDependencyDeleted](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onDependencyDeleted.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onDependencyDeleted')

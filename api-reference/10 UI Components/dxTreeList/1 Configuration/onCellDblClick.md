@@ -10,7 +10,7 @@ A function that is executed when a cell is double-clicked or double-tapped. Exec
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): TElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### field(e.column): dxTreeListColumn

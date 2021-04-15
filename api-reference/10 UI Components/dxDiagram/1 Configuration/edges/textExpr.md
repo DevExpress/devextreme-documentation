@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides edge te
 The current edge's data object.
 
 ##### return: any
-<!-- Description goes here -->
+An edge's text.
 
 ---
 The specified data source field or an expression should return a string or object value.

@@ -23,7 +23,7 @@ The properties of the [Form](/api-reference/10%20UI%20Components/dxForm/1%20Conf
 Model data. Available only if you use Knockout.
 
 ---
-Adaptive detail rows display information from columns that were hidden when the UI component adapted to the screen or container size. Each adaptive detail row contains the [Form](/concepts/05%20UI%20Components/Form/00%20Overview.md '/Documentation/Guide/UI_Components/Form/Overview/') UI component that you can customize within the **onAdaptiveDetailRowPreparing** function using the **formOptions** object. Refer to the [Form Configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') section for details on properties of the Form UI component.
+Adaptive detail rows display information from columns that were hidden when the UI component adapted to the screen or container size. Each adaptive detail row contains the [Form](/Documentation/ApiReference/UI_Components/dxForm/) UI component that you can customize within the **onAdaptiveDetailRowPreparing** function using the **formOptions** object. Refer to the [Form Configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') section for details on properties of the Form UI component.
 
 [note]
 

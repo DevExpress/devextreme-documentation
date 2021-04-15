@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides the sha
 The current node's data object.
 
 ##### return: any
-<!-- Description goes here -->
+The [shape type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') for a node.
 
 ---
 The built-in shape types are shown in the [Shape Types](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') section.

@@ -1,4 +1,4 @@
-Users can scroll popup's content. To enable this functionality, wrap the content into the [ScrollView](/Documentation/Guide/UI_Components/ScrollView/Overview/) component and set its **height** and **width** to be 100% of the popup content area:
+Users can scroll the Popup's content. To enable this functionality, wrap the content into the [ScrollView](/Documentation/Guide/UI_Components/ScrollView/Overview/) component and set its **height** and **width** to 100% of the Popup content area:
 
 ---
 ##### jQuery

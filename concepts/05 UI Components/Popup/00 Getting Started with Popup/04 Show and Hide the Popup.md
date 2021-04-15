@@ -3,7 +3,7 @@
 
 To show the Popup, call its [show()](/Documentation/ApiReference/UI_Components/dxPopup/Methods/#show) method. In the code below, this method is called when users click the Open Popup button. You can also enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property to show the Popup immediately after creation.
 
-To hide the Popup, call its [hide()](/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide) method. Users can hide the Popup when they click outside its boundaries. To enable this functionality, set the [closeOnOutsideClick](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick) property to **true**.
+Call the Popup's [hide()](/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide) method to hide the Popup. Users can also hide the Popup when they click outside its boundaries. To enable this functionality, set the [closeOnOutsideClick](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick) property to **true**.
 
     <!-- tab: index.js -->
     $(function () {
@@ -26,7 +26,7 @@ To hide the Popup, call its [hide()](/Documentation/ApiReference/UI_Components/d
 ##### Angular
 
 
-To show the Popup, enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property. In the code below, the value of this property is two-way bound to a variable. The `togglePopup()` method toggles the value between **true** and **false** when users click the Open Popup button.
+Enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property to show the Popup. In the code below, the value of this property is two-way bound to a variable. The `togglePopup()` method toggles the value between **true** and **false** when users click the Open Popup button.
 
 Users can hide the Popup when they click outside its boundaries. To enable this functionality, set the [closeOnOutsideClick](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick) property to **true**.
 
@@ -64,7 +64,7 @@ Users can hide the Popup when they click outside its boundaries. To enable this 
 
 ##### Vue
 
-To show the Popup, enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property. In the code below, the value of this property is two-way bound to a variable. The `togglePopup()` method toggles the value between **true** and **false** when users click the Open Popup button.
+Enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property to show the Popup. In the code below, the value of this property is two-way bound to a variable. The `togglePopup()` method toggles the value between **true** and **false** when users click the Open Popup button.
 
 Users can hide the Popup when they click outside its boundaries. To enable this functionality, set the [closeOnOutsideClick](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick) property to **true**.
 
@@ -98,9 +98,9 @@ Users can hide the Popup when they click outside its boundaries. To enable this 
 
 ##### React
 
-To show the Popup, enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property. In the code below, the value of this property is bound to a state variable with the React <a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a> hook. The `togglePopup` function toggles the value between **true** and **false** when users click the Open Popup button.
+Enable the [visible](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible) property to show the Popup. In the code below, the value of this property is bound to a state variable with the React <a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a> hook. The `togglePopup` function toggles the value between **true** and **false** when users click the Open Popup button.
 
-To hide the Popup, call the togglePopup function when the [onHiding](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#onHiding) event fires. Users can hide the Popup when they click outside its boundaries. To enable this functionality, set the [closeOnOutsideClick](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick) property to **true**.
+Call the togglePopup function when the [onHiding](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#onHiding) event fires to hide the Popup. Users can also hide the Popup when they click outside its boundaries. To enable this functionality, set the [closeOnOutsideClick](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick) property to **true**.
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';

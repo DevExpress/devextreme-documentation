@@ -1,4 +1,4 @@
-Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle) property to **true** to display popup's title bar and use the [title](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title) property to define its text: 
+Set the [showTitle](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle) property to **true** to display the Popup's title bar and use the [title](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title) property to define its text: 
 
 ---
 ##### jQuery

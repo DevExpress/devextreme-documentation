@@ -1,4 +1,4 @@
-To position the Popup within the viewport, use the [position](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#position) property. The Popup also allows users to change its position via drag and drop. To enable this functionalty, set the [dragEnabled](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled) property to **true**. Users drag the Popup by its title bar, so make sure that you [configured it](Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle).
+Use the [position](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#position) property to position the Popup within the viewport. Users can also drag and drop the Popup to change its position. To enable this functionalty, set the [dragEnabled](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled) property to **true**. Users drag the Popup by its title bar, so make sure that you have [configured it](Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle).
 
 ---
 ##### jQuery

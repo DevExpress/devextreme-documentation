@@ -4,7 +4,8 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
 ##### jQuery
 
-    <!--JavaScript-->var appointments = [{
+    <!-- tab: index.js -->
+    var appointments = [{
         text: "Website Re-Design Plan",
         startDate: new Date("2016-04-25T09:30:00.000Z"),
         endDate: new Date("2016-04-25T11:30:00.000Z")
@@ -13,7 +14,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
         startDate: new Date("2016-04-25T12:00:00.000Z"),
         endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
-    }, 
+    }, {
+        text: "Annual Meeting in Berlin",
+        startDate: new Date("2016-04-26T11:00:00.000Z"),
+        endDate: new Date("2016-04-26T13:00:00.000Z"),
+        disabled: true
+    }
     // ...
     ];
 
@@ -26,7 +32,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
 
 #####Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
     export class AppComponent  {
@@ -39,7 +45,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
             startDate: new Date("2016-04-25T12:00:00.000Z"),
             endDate: new Date("2016-04-25T13:00:00.000Z"),
             hidden: true
-        }, 
+        }, {
+            text: "Annual Meeting in Berlin",
+            startDate: new Date("2016-04-26T11:00:00.000Z"),
+            endDate: new Date("2016-04-26T13:00:00.000Z"),
+            disabled: true
+        }
         // ...
         ];
         currentDate = new Date(2016, 4, 25);
@@ -52,7 +63,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
         // ...
     })
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-scheduler
         [dataSource]="appointments"
         [currentDate]="currentDate">
@@ -90,7 +101,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
                     startDate: new Date("2016-04-25T12:00:00.000Z"),
                     endDate: new Date("2016-04-25T13:00:00.000Z"),
                     hidden: true
-                }, 
+                }, {
+                    text: "Annual Meeting in Berlin",
+                    startDate: new Date("2016-04-26T11:00:00.000Z"),
+                    endDate: new Date("2016-04-26T13:00:00.000Z"),
+                    disabled: true
+                }
                 // ...
                 ];
             }
@@ -117,7 +133,12 @@ For a minor customization of Scheduler appointments, you can define [specific fi
         startDate: new Date("2016-04-25T12:00:00.000Z"),
         endDate: new Date("2016-04-25T13:00:00.000Z"),
         hidden: true
-    }, 
+    }, {
+        text: "Annual Meeting in Berlin",
+        startDate: new Date("2016-04-26T11:00:00.000Z"),
+        endDate: new Date("2016-04-26T13:00:00.000Z"),
+        disabled: true
+    }
     // ...
     ];
 
@@ -141,7 +162,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-scheduler 
         [dataSource]="schedulerData"
         appointmentTemplate="appointmentTemplate"
@@ -152,7 +173,7 @@ If you need a more flexible solution, define a custom template. For Angular, Ang
         </div>
     </dx-scheduler>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
     export class AppComponent  {
@@ -345,7 +366,8 @@ If you use only jQuery, combine HTML markup for appointments manually with jQuer
 
 [**jQuery**](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/01%20Create%20and%20Configure%20a%20Component.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Create_and_Configure_a_Component')
 
-    <!--JavaScript-->var schedulerData = [{
+    <!-- tab: index.js -->
+    var schedulerData = [{
         movie: "His Girl Friday",
         price: 5,
         startDate: new Date("2016-04-24T09:10:00.000Z"),

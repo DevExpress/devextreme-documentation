@@ -26,7 +26,7 @@ Angular, Vue, and React always encode values interpolated in templates. With oth
 
 When you insert unencoded content, it can open your application to XSS attacks:
 
-![DevExtreme Tabs with disabled HTML encoding](tabs-itemTemplate-unsafe-html-wo-codepen.png)
+![DevExtreme Tabs with disabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-unsafe-html-wo-codepen.png)
 
 The encoded content is interpreted and displayed as text:
 

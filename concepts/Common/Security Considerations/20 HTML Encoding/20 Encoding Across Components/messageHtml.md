@@ -3,8 +3,10 @@
 
     <!-- tab: JavaScript -->
     $(function() {
-        // Use your favorite sanitizing tool to encode the `message` string:
         const message = "Are you sure?<script>alert('XSS')</script>";
+        // ...
+        // Encode the `message` string with your favorite sanitizing tool
+        // ...
         DevExpress.ui.dialog.confirm(message, "Confirm changes");
     });
 

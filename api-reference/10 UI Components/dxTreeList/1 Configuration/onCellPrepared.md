@@ -10,7 +10,7 @@ default: null
 ##### param(e): Object
 <!-- %param(e)% -->
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): TElement
 <!-- %field(e.cellElement)% -->
 
 ##### field(e.column): dxTreeListColumn

@@ -3,10 +3,9 @@ id: dxDiagram.getSelectedItems()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Returns an array of selected diagram items.
 
 ##### return: Array<dxDiagramItem>
-<!-- Description goes here -->
+An array of items (shapes and connectors).
 
 ---
-<!-- Description goes here -->

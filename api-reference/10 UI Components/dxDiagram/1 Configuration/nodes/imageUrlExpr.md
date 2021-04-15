@@ -11,7 +11,7 @@ Specifies the name of a data source field or expression that provides an image U
 The current node's data object.
 
 ##### return: any
-<!-- Description goes here -->
+An image URL or Base64 encoded image for a node.
 
 ---
 This property is in effect for nodes of the `"cardWithImageOnLeft"`, `"cardWithImageOnTop"`, or `"cardWithImageOnRight"` [type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/').

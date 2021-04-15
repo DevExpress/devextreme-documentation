@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.cancel): Boolean
 Allows you to cancel focusing a new cell.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): TElement
 #include common-ref-elementparam with { element: "to-be-focused cell" }
 
 ##### field(e.columns): Array<dxTreeListColumn>

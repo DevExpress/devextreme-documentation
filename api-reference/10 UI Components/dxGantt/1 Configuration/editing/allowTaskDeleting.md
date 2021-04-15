@@ -17,21 +17,6 @@ The alert message notifies users that deleting a task creates a gap in the workf
 
 ![DevExtreme Gantt Chart - Delete Task Confirmation](/images/Gantt/delete-task-confirmation-message.png)
 
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    $(function() {
-        $("#gantt").dxGantt({
-            editing: {
-                allowTaskDeleting: false, 
-                //...
-            }
-        });
-    }); 
-
----
-
 #####See Also#####
 - [onTaskDeleting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleting)
 - [onTaskDeleted](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onTaskDeleted)

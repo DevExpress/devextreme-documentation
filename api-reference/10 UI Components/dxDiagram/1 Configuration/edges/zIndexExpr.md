@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides an edge
 The current edge's data object.
 
 ##### return: any
-<!-- Description goes here -->
+An edge's z-index.
 
 ---
 The z-index specifies the edge stack order. An edge with greater stack order is in front of an edge with a lower stack order.

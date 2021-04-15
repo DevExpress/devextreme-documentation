@@ -11,7 +11,7 @@ Specifies the name of a data source field or an expression that provides a key o
 The current node's data object.
 
 ##### return: any
-<!-- Description goes here -->
+A node's parent container node.
 
 ---
 The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` [type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/').

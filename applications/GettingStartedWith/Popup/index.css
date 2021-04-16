@@ -1,5 +1,5 @@
-.app-container {
-  height: 30rem !important;
+#app-container {
+  height: 35rem;
 }
 
 img {

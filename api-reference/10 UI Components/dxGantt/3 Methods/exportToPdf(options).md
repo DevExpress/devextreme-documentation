@@ -24,7 +24,7 @@ The **export** method allows you to save information about the Gantt chart's lay
 
 ---
 
-How to export the Gantt chart to a PDF document with settings:
+Use the following settings to export the Gantt chart to a PDF document:
 
 ##### jQuery
 
@@ -40,7 +40,7 @@ How to export the Gantt chart to a PDF document with settings:
 
 ---
 
-How to process the PDF document when the export is complete:
+Use the following settings to process the PDF document when the export is complete:
 
 ---
 
@@ -61,7 +61,7 @@ How to process the PDF document when the export is complete:
 
 ---
 
-How to print the exported PDF document:
+Use the following settings to print the exported PDF document:
 
 ---
 

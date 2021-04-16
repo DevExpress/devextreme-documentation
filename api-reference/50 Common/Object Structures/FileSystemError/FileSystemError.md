@@ -13,36 +13,31 @@ An object that contains information about the error.
 ##### jQuery
 
     <!-- tab: index.js -->
-    const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+    const objectProvider = new DevExpress.fileManagement.ObjectFileSystemProvider({ data: fileSystem });
     const noDuplicatesProvider = new DevExpress.fileManagement.CustomFileSystemProvider({
-        getItems: function(item) {
-            return realProviderInstance.getItems(item);
+        getItems: function(parentDir) {
+            return objectProvider.getItems(parentDir);
         },
-        createDirectory: function(parentDir, name) {
-            const deferred = new Deferred();
-            this.getItems(this.parentDir).then(items => {
-                const duplicateItems = items.filter(i => i.name === itemName);
-                if(duplicateItems.length !== 0) {
-                    // 1 - deferred.reject()
-                    deferred
-                        .reject(new DevExpress.fileManagement.FileSystemError(3))
-                        .promise();
-                    // 2 - throw
-                    throw new DevExpress.fileManagement.FileSystemError(3)
-                } else {
-                    deferred
-                        .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
-                        .promise();
-                }
+        createDirectory: function(parentDir, itemName) {
+            return new Promise((resolve, reject) => {
+                this.getItems(parentDir).then(items => {
+                    const duplicateItems = items.filter(i => i.name === itemName);
+                    if(duplicateItems.length !== 0) {
+                        // 1 - reject
+                        reject(new DevExpress.fileManagement.FileSystemError(3));
+                        // 2 - throw
+                        // throw new DevExpress.fileManagement.FileSystemError(3)
+                    } else {
+                        resolve(objectProvider.createDirectory(parentDir, itemName));
+                    }
+                });
             });
-            return deferred.promise();
-        }        
-    })
-    
+        }
+    });
+
     $("#file-manager").dxFileManager({ 
         fileSystemProvider: noDuplicatesProvider,
         permissions: { create: true }
-        });
     });
 
 ##### Angular
@@ -123,78 +118,151 @@ An object that contains information about the error.
     <!-- tab: App.vue -->
     <template>
         <DxFileManager :file-system-provider="noDuplicatesProvider">
-            <dx-permissions :create="true" />
+            <DxPermissions :create="true" />
         </DxFileManager>
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { DxFileManager } from 'devextreme-vue/file-manager';
-    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
-    import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
-    import FileSystemError from 'devextreme/file_management/error';        
-
-    const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
-
-    const noDuplicatesProvider = new CustomFileSystemProvider({
-        getItems,
-        createDirectory
-    });
-
-    export default {
-        components: {
-            DxFileManager,
-            CustomFileSystemProvider
-        },
-        data() {
-            return { noDuplicatesProvider };
-        }
-    };
-
-    function getItems(item) {
-        return realProviderInstance.getItems(item);
-
-    }
-    function createDirectory(parentDir, name) {
-        const deferred = new Deferred();
-        this.getItems(this.parentDir).then(items => {
-            const duplicateItems = items.filter(i => i.name === itemName);
-            if(duplicateItems.length !== 0) {
-                // 1 - deferred.reject()
-                deferred
-                    .reject(new DevExpress.fileManagement.FileSystemError(3))
-                    .promise();
-                // 2 - throw
-                throw new DevExpress.fileManagement.FileSystemError(3)
-            } else {
-                deferred
-                    .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
-                    .promise();
-            }
-        });
-        return deferred.promise();        
-    } 
+        import ObjectFileSystemProvider from "devextreme/file_management/object_provider";
+        import CustomFileSystemProvider from "devextreme/file_management/custom_provider";
+        import FileSystemError from "devextreme/file_management/error";
+        import { DxFileManager, DxPermissions } from "devextreme-vue/file-manager";
+        import { fileItems } from "./data.js";
+        export default {
+            components: {
+                DxFileManager,
+                DxPermissions,
+            },
+            data() {
+                return {
+                    objectProvider: new ObjectFileSystemProvider({ data: fileItems }),
+                    noDuplicatesProvider: new CustomFileSystemProvider({
+                        getItems: (parentDir) => this.getItems(parentDir),
+                        createDirectory: (parentDir, itemName) =>
+                            this.createDirectory(parentDir, itemName),
+                    }),
+                };
+            },
+            methods: {
+                getItems(parentDir) {
+                    return this.objectProvider.getItems(parentDir);
+                },
+                createDirectory(parentDir, itemName) {
+                    return new Promise((resolve, reject) => {
+                        this.getItems(parentDir).then((items) => {
+                            const duplicateItems = items.filter((i) => i.name === itemName);
+                            if (duplicateItems.length !== 0) {
+                                // 1 - reject
+                                reject(new FileSystemError(3));
+                                // 2 - throw
+                                // throw new FileSystemError(3)
+                            } else {
+                                resolve(this.objectProvider.createDirectory(parentDir, itemName));
+                            }
+                        });
+                    });
+                },
+            },
+        };
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React from "react";
+    import ObjectFileSystemProvider from "devextreme/file_management/object_provider";
+    import CustomFileSystemProvider from "devextreme/file_management/custom_provider";
+    import FileSystemError from "devextreme/file_management/error";
+    import FileManager, { Permissions } from "devextreme-react/file-manager";
+    import { fileItems } from "./data.js";
 
     import 'devextreme/dist/css/dx.light.css';
 
-    import FileManager from 'devextreme-react/file-manager';
-    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
-    import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
-    import FileSystemError from 'devextreme/file_management/error';
-
-    const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
+    const objectProvider = new ObjectFileSystemProvider({ 
+        data: fileItems 
+    });
 
     const noDuplicatesProvider = new CustomFileSystemProvider({
-        getItems,
-        createDirectory
+        getItems: (parentDir) => this.getItems(parentDir),
+        createDirectory: (parentDir, itemName) =>
+            this.createDirectory(parentDir, itemName)
+        });        
     });
+
+    function getItems(parentDir) {
+        return objectProvider.getItems(parentDir);
+    }
+
+    function createDirectory(parentDir, itemName) {
+        return new Promise((resolve, reject) => {
+            this.getItems(parentDir).then((items) => {
+                const duplicateItems = items.filter((i) => i.name === itemName);
+                if (duplicateItems.length !== 0) {
+                    // 1 - reject
+                    reject(new FileSystemError(3));
+                    // 2 - throw
+                    // throw new FileSystemError(3)
+                } else {
+                    resolve(objectProvider.createDirectory(parentDir, itemName));
+                }
+            })                
+                
+                
+                
+                
+                
+            }
+        });
+        return deferred.promise();        
+    } 
+
+
+
+
+----------------
+
+
+    createDirectory(parentDir, itemName) {
+        return new Promise((resolve, reject) => {
+        this.getItems(parentDir).then((items) => {
+            const duplicateItems = items.filter((i) => i.name === itemName);
+            if (duplicateItems.length !== 0) {
+            // 1 - reject
+            reject(new FileSystemError(3));
+            // 2 - throw
+            // throw new FileSystemError(3)
+            } else {
+            resolve(this.objectProvider.createDirectory(parentDir, itemName));
+            }
+        });
+        });
+    }
+    render() {
+        return (
+        <FileManager fileSystemProvider={this.noDuplicatesProvider}>
+            <Permissions create={true}></Permissions>
+        </FileManager>
+        );
+    }
+    }
+    export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
     const App = () => {
         return (

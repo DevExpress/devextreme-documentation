@@ -17,8 +17,14 @@ The UI component's instance.
 ##### field(e.element): dxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.itemData): Object
+<!-- Description goes here -->
+
 ##### field(e.itemElement): dxElement
 #include common-ref-elementparam with { element: "item" }
+
+##### field(e.itemIndex): Number
+<!-- Description goes here -->
 
 ##### field(e.model): Object
 Model data. Available only if Knockout is used.

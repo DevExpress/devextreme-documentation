@@ -1,6 +1,5 @@
 ---
 ##### shortDescription
-[tags] expand
 
 Raised when a collection item is expanded or collapsed.
 
@@ -9,3 +8,5 @@ Main article: [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxA
 
 #####See Also#####
 #include common-link-handleevents
+
+[tags] expand

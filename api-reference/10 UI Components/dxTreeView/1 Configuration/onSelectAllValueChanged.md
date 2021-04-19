@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.value): Boolean
+##### field(e.value): Boolean | undefined
 The "Select All" check box's new state.
 
 ---

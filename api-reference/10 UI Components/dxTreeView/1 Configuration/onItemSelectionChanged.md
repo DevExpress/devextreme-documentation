@@ -25,6 +25,12 @@ Model data. Available only if Knockout is used.
 ##### field(e.node): dxTreeViewNode
 The item's node.
 
+##### field(e.itemData): Object
+<!-- Description goes here -->
+
+##### field(e.itemIndex): Number
+<!-- Description goes here -->
+
 ---
 This function is executed when:
 

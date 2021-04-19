@@ -18,7 +18,6 @@
   
   <MenuRule SourcePattern="Howto:^05 UI Components$" Destination="bb65 UI Components" />
   <MenuRule SourcePattern="Howto:^05 UI Components/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
-  <MenuRule SourcePattern="Howto:^05 UI Components/(DataGrid|Scheduler|SelectBox|List|TreeList)/(05|020|03) Data Binding.*?" Destination="" />
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" />
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />

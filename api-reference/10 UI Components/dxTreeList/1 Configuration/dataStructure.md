@@ -63,5 +63,5 @@ If the **items** field is called differently in your dataset, specify the [items
 If each data item has a Boolean field that specifies whether this data item nests other items, assign the field's name to the [hasItemsExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/hasItemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#hasItemsExpr') property. The UI component uses this information to render the expand button. This is required only if the UI component is bound to a remote data source.
 
 #####See Also#####
-- [Use Plain Data](/concepts/05%20UI%20Components/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Plain_Data/')
-- [Use Hierarchical Data](/concepts/05%20UI%20Components/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Hierarchical_Data/')
+- [Demo: Simple Array - Plain Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/)
+- [Demo: Simple Array - Hierarchical Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayHierarchicalStructure/)

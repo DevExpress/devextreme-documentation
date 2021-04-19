@@ -164,7 +164,7 @@ Specifies the context menu item name.
                 });
             });
         })
-        .onCustomCommand("gantt_customCommand_handler")
+        .OnCustomCommand("gantt_customCommand_handler")
         // ...
     )
 

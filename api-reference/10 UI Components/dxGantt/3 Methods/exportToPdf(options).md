@@ -13,7 +13,7 @@ PDF export options.
 
 ---
 
-The **export** method allows you to save information about the Gantt chart's layout, appearance, and tasks. This method supports the following options:
+The **exportToPdf** method allows you to save information about the Gantt chart's layout, appearance, and tasks. This method supports the following options:
 
 - **format** {string | width?: number, height?: number } - Specifies the document size.
 - **landscape** {boolean} - Specifies whether to use horizontal orientation for the document.

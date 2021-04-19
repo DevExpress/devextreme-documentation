@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An array of currently selected item objects.
+An array of currently expanded item objects.
 
 ---
 

@@ -26,10 +26,10 @@ Model data. Available only if Knockout is used.
 The item's node.
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The selected item's data.
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The item's index.
 
 ---
 This function is executed when:

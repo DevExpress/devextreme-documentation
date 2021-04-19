@@ -1,4 +1,4 @@
-The **List** supports *"single"*, *"multiple"*, and *"all"* item selection modes. To enable selection, assign one of these modes to the [selectionMode](/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode) property.
+The List supports *"single"*, *"multiple"*, and *"all"* item selection modes. To enable selection, assign one of these modes to the [selectionMode](/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode) property.
 
 ---
 ##### jQuery

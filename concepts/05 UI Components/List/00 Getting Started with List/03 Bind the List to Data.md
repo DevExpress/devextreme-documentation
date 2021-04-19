@@ -1,4 +1,4 @@
-The **List** can load data from different data source types. To use a local array, assign it to the [dataSource](Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource) property. If array elements are objects, use the [displayExpr](/Documentation/ApiReference/UI_Components/dxList/Configuration/#displayExpr) property to specify the data field that supplies values to the list. For information other data source types, refer to the following articles:
+The List can load data from different data source types. To use a local array, assign it to the [dataSource](Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource) property. If array elements are objects, use the [displayExpr](/Documentation/ApiReference/UI_Components/dxList/Configuration/#displayExpr) property to specify the data field that supplies values to the list. For information on other data source types, refer to the following articles:
 
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)

@@ -206,25 +206,15 @@
     "xlsxfile"
 ];
 
-var tds = $.map(iconNames, function (name) {
-    let $td = $("<td>").append(
+var divs = $.map(iconNames, function (name) {
+    return $("<div class='container'>").append(
         $("<i class='icon dx-icon-" + name + "'></i>"),
         $("<span class='icon-name'>" + name + "</span>")
     );
-    return $td;
 });
 
-var $table = $("#icons-table");
-var row = [];
-var columnCount = 6;
+var externalContainer = $("#external-container");
 
-while(tds.length) {
-    row.push(tds.shift());
-    if (row.length == columnCount || tds.length < 1) {
-        let $tr = $("<tr class='table-row'>");
-        while(row.length) {
-            $tr.append( row.shift() );
-        }
-        $table.append( $tr );
-    }
+while (divs.length) {
+    externalContainer.append(divs.shift());
 }

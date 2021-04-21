@@ -1,9 +1,7 @@
 ---
 ##### shortDescription
-
+[tags] expandedItem, expand
 
 The expanded item object.
 
 ---
-
-[tags] expandedItem, expand

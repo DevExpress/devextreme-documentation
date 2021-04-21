@@ -1,4 +1,4 @@
-To call UI component methods, you need the UI component instance. Create a <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">ref</a> and attach it to the target component via the `ref` attribute. Implement a getter that returns the instance taken from the ref. In the following code, this approach is used to get a `TextBox` instance:
+To call UI component methods, you need the UI component instance. Create a <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">ref</a> and attach it to the target component via the `ref` property. Implement a getter that returns the instance taken from the ref. In the following code, this approach is used to get a `TextBox` instance:
     
     <!-- tab: App.js -->
     import Button from 'devextreme-react/button';
@@ -61,7 +61,7 @@ Alternatively, you can assign the UI component instance to a variable and use it
         }
     }
 
-If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>, implement the <a href="https://reactjs.org/docs/hooks-reference.html#useref" target="_blank">useRef</a> hook and attach it to the target component via the `ref` attribute:
+If you use <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">React Hooks</a>, implement the <a href="https://reactjs.org/docs/hooks-reference.html#useref" target="_blank">useRef</a> hook and attach it to the target component via the `ref` property:
 
     <!-- tab: App.js -->
     import Button from 'devextreme-react/button';

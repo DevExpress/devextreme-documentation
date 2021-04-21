@@ -1,6 +1,6 @@
-In <a href="https://reactjs.org/docs/forms.html#controlled-components" target="_blank">controlled mode</a>, the parent React component updates a DevExtreme component's state. It should pass new values to the DevExtreme component via attributes, as with the `value` attribute of the `TextBox` component in the following code.
+In <a href="https://reactjs.org/docs/forms.html#controlled-components" target="_blank">controlled mode</a>, the parent React component updates a DevExtreme component's state. It should pass new values to the DevExtreme component via properties, as with the `value` property of the `TextBox` component in the following code.
 
-DevExtreme components raise events that you should handle to update the parent component's state (the `onValueChanged` handler in the code below). These events are raised only when a user interacts with the component, not when you update an attribute value programmatically.
+DevExtreme components raise events that you should handle to update the parent component's state (the `onValueChanged` handler in the code below). These events are raised only when a user interacts with the component, not when you update a property value programmatically.
 
     <!-- tab: App.js -->
     import React from 'react';

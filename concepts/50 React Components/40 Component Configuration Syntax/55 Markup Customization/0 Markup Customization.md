@@ -1,5 +1,5 @@
 Templates allow you to customize UI components. In the DevExtreme API, template properties end with `Template`: `itemTemplate`, `groupTemplate`, `contentTemplate`. When you specify them in React, replace `Template` in the name with `Render` or `Component`, depending on whether the template is a rendering function or custom component. For example, instead of `itemTemplate`, use `itemRender` or `itemComponent`.
 
-If the property is called `template`, without any prefix, (in the [Button](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#template'), [Drawer](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template'), and other UI components), use the `render` or `component` attribute instead.
+If the property is called `template`, without any prefix, (in the [Button](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#template'), [Drawer](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template'), and other UI components), use the `render` or `component` property instead.
 
 [tags] template

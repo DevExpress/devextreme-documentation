@@ -178,20 +178,18 @@ An object that contains information about the error.
 
     import 'devextreme/dist/css/dx.light.css';
 
-    const objectProvider = new ObjectFileSystemProvider({ 
-        data: fileItems 
+    const objectProvider = new ObjectFileSystemProvider({
+        data: fileItems
     });
 
     const noDuplicatesProvider = new CustomFileSystemProvider({
         getItems: (parentDir) => getItems(parentDir),
-        createDirectory: (parentDir, itemName) =>
-            createDirectory(parentDir, itemName)
-        });        
+        createDirectory: (parentDir, itemName) => createDirectory(parentDir, itemName)
     });
 
     const getItems = (parentDir) => {
         return objectProvider.getItems(parentDir);
-    }
+    };
 
     const createDirectory = (parentDir, itemName) => {
         return new Promise((resolve, reject) => {
@@ -207,17 +205,18 @@ An object that contains information about the error.
                 }
             });
         });
-    }
+    };
 
-    const App = () => {    
+    const App = () => {
         return (
-            <FileManager
-                fileSystemProvider={noDuplicatesProvider} >
-                <Permissions create={true} >
-                </Permissions>                
+            <FileManager 
+                fileSystemProvider={noDuplicatesProvider}>
+                <Permissions create={true}></Permissions>
             </FileManager>
         );
     };
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

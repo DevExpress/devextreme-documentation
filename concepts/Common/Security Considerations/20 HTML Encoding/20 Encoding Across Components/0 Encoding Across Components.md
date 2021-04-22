@@ -1,3 +1,1 @@
 DevExtreme components always encode HTML. However, several components include API members that allow you to disable or bypass the encoding. The following sections describe these potentially vulnerable API members.
-
-[note] The [HtmlEditor](/Documentation/ApiReference/UI_Components/dxHtmlEditor/) component does not provide an API to encode data out of the box. We recommend that you encode the HtmlEditor's output separately before you transfer this data to the server.

@@ -183,19 +183,19 @@ An object that contains information about the error.
     });
 
     const noDuplicatesProvider = new CustomFileSystemProvider({
-        getItems: (parentDir) => this.getItems(parentDir),
+        getItems: (parentDir) => getItems(parentDir),
         createDirectory: (parentDir, itemName) =>
-            this.createDirectory(parentDir, itemName)
+            createDirectory(parentDir, itemName)
         });        
     });
 
-    function getItems(parentDir) {
+    const getItems = (parentDir) => {
         return objectProvider.getItems(parentDir);
     }
 
-    function createDirectory(parentDir, itemName) {
+    const createDirectory = (parentDir, itemName) => {
         return new Promise((resolve, reject) => {
-            this.getItems(parentDir).then((items) => {
+            getItems(parentDir).then((items) => {
                 const duplicateItems = items.filter((i) => i.name === itemName);
                 if (duplicateItems.length !== 0) {
                     // 1 - reject
@@ -205,66 +205,11 @@ An object that contains information about the error.
                 } else {
                     resolve(objectProvider.createDirectory(parentDir, itemName));
                 }
-            })                
-                
-                
-                
-                
-                
-            }
-        });
-        return deferred.promise();        
-    } 
-
-
-
-
-----------------
-
-
-    createDirectory(parentDir, itemName) {
-        return new Promise((resolve, reject) => {
-        this.getItems(parentDir).then((items) => {
-            const duplicateItems = items.filter((i) => i.name === itemName);
-            if (duplicateItems.length !== 0) {
-            // 1 - reject
-            reject(new FileSystemError(3));
-            // 2 - throw
-            // throw new FileSystemError(3)
-            } else {
-            resolve(this.objectProvider.createDirectory(parentDir, itemName));
-            }
-        });
+            });
         });
     }
-    render() {
-        return (
-        <FileManager fileSystemProvider={this.noDuplicatesProvider}>
-            <Permissions create={true}></Permissions>
-        </FileManager>
-        );
-    }
-    }
-    export default App;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-    const App = () => {
+    const App = () => {    
         return (
             <FileManager
                 fileSystemProvider={noDuplicatesProvider} >
@@ -273,32 +218,6 @@ An object that contains information about the error.
             </FileManager>
         );
     };
-
-    function getItems(item) {
-        return realProviderInstance.getItems(item);
-
-    }
-    function createDirectory(parentDir, name) {
-        const deferred = new Deferred();
-        this.getItems(this.parentDir).then(items => {
-            const duplicateItems = items.filter(i => i.name === itemName);
-            if(duplicateItems.length !== 0) {
-                // 1 - deferred.reject()
-                deferred
-                    .reject(new DevExpress.fileManagement.FileSystemError(3))
-                    .promise();
-                // 2 - throw
-                throw new DevExpress.fileManagement.FileSystemError(3)
-            } else {
-                deferred
-                    .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
-                    .promise();
-            }
-        });
-        return deferred.promise();        
-    } 
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

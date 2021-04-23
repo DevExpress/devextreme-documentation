@@ -14,38 +14,39 @@ An object that contains information about the error.
 
     <!-- tab: index.js -->
     const objectProvider = new DevExpress.fileManagement.ObjectFileSystemProvider({ data: fileSystem });
-    const noDuplicatesProvider = new DevExpress.fileManagement.CustomFileSystemProvider({
-        getItems: function(parentDir) {
-            return objectProvider.getItems(parentDir);
+    const keepExtensionsProvider = new DevExpress.fileManagement.CustomFileSystemProvider({
+        getItems: function(item) {
+            return objectProvider.getItems(item);
         },
-        createDirectory: function(parentDir, itemName) {
+        renameItem: function(item, newName) {
             return new Promise((resolve, reject) => {
-                this.getItems(parentDir).then(items => {
-                    const duplicateItems = items.filter(i => i.name === itemName);
-                    if(duplicateItems.length !== 0) {
-                        // 1 - reject
-                        reject(new DevExpress.fileManagement.FileSystemError(3));
-                        // 2 - throw
-                        // throw new DevExpress.fileManagement.FileSystemError(3)
-                    } else {
-                        resolve(objectProvider.createDirectory(parentDir, itemName));
-                    }
-                });
+                if(item.getFileExtension() !== getExtension(newName)) {
+                    // 1 - reject
+                    reject(new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed"));
+                    // 2 - throw
+                    // throw new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed");
+                } else {
+                    resolve(objectProvider.renameItem(item, newName));
+                }
             });
         }
     });
+    const getExtension = function(path) {
+        const index = path.lastIndexOf(".");
+        return index !== -1 ? path.substr(index) : "";
+    }
 
     $("#file-manager").dxFileManager({ 
-        fileSystemProvider: noDuplicatesProvider,
-        permissions: { create: true }
+        fileSystemProvider: keepExtensionsProvider,
+        permissions: { rename: true }
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager">
-        [fileSystemProvider]="noDuplicatesProvider">
-        <dxo-permissions create="true">
+        [fileSystemProvider]="keepExtensionsProvider">
+        <dxo-permissions rename="true">
         </dxo-permissions>
         <!-- ... -->
     </dx-file-manager>
@@ -67,36 +68,36 @@ An object that contains information about the error.
     export class AppComponent {
         fileItems: FileItem[];
         objectProvider: ObjectFileSystemProvider;
-        noDuplicatesProvider: CustomFileSystemProvider;
+        keepExtensionsProvider: CustomFileSystemProvider;
 
         constructor(service: Service) {
             this.fileItems = service.getFileItems();
             this.objectProvider = new ObjectFileSystemProvider({
                 data: this.fileItems
             });
-            this.noDuplicatesProvider = new CustomFileSystemProvider({
+            this.keepExtensionsProvider = new CustomFileSystemProvider({
                 getItems: (parentDir) => this.getItems(parentDir),
-                createDirectory: (parentDir, itemName) =>
-                    this.createDirectory(parentDir, itemName)
+                renameItem: (item, newName) => this.renameItem(item, newName)
             });
         }      
         getItems(item) {
             return this.objectProvider.getItems(item);
         }
-        createDirectory(parentDir, itemName) {
+        renameItem(item, newName) {
             return new Promise<any>((resolve, reject) => {
-                this.getItems(parentDir).then((items) => {
-                    const duplicateItems = items.filter((i) => i.name === itemName);
-                    if(duplicateItems.length !== 0) {
-                        // 1 - reject
-                        reject(new FileSystemError(3));
-                        // 2 - throw
-                        // throw new FileSystemError(3)
-                    } else {
-                        resolve(this.objectProvider.createDirectory(parentDir, itemName));
-                    }
-                });
+            if(item.getFileExtension() !== this.getExtension(newName)) {
+                // 1 - reject
+                reject(new FileSystemError(5, item, "The file extension must not be changed"));
+                // 2 - throw
+                // throw new FileSystemError(5, item, "The file extension must not be changed");
+            } else {
+                resolve(this.objectProvider.renameItem(item, newName));
+            }
             });
+        }
+        getExtension(path) {
+            const index = path.lastIndexOf(".");
+            return index !== -1 ? path.substr(index) : "";
         }
     }  
 
@@ -120,8 +121,8 @@ An object that contains information about the error.
 
     <!-- tab: App.vue -->
     <template>
-        <DxFileManager :file-system-provider="noDuplicatesProvider">
-            <DxPermissions :create="true" />
+        <DxFileManager :file-system-provider="keepExtensionsProvider">
+            <DxPermissions :rename="true" />
         </DxFileManager>
     </template>
 
@@ -139,31 +140,28 @@ An object that contains information about the error.
             data() {
                 return {
                     objectProvider: new ObjectFileSystemProvider({ data: fileItems }),
-                    noDuplicatesProvider: new CustomFileSystemProvider({
+                    keepExtensionsProvider: new CustomFileSystemProvider({
                         getItems: (parentDir) => this.getItems(parentDir),
-                        createDirectory: (parentDir, itemName) =>
-                            this.createDirectory(parentDir, itemName),
+                        renameItem: (item, newName) => this.renameItem(item, newName),
                     }),
-                };
-            },
-            methods: {
-                getItems(parentDir) {
-                    return this.objectProvider.getItems(parentDir);
+                    };
                 },
-                createDirectory(parentDir, itemName) {
-                    return new Promise((resolve, reject) => {
-                        this.getItems(parentDir).then((items) => {
-                            const duplicateItems = items.filter((i) => i.name === itemName);
-                            if (duplicateItems.length !== 0) {
+                methods: {
+                    getItems(parentDir) {
+                        return this.objectProvider.getItems(parentDir);
+                    },
+                    renameItem(item, newName) {
+                        return new Promise((resolve, reject) => {
+                            if(item.getFileExtension() !== this.getExtension(newName)) {
                                 // 1 - reject
-                                reject(new FileSystemError(3));
+                                reject(new FileSystemError(5, item, "The file extension must not be changed"));
                                 // 2 - throw
-                                // throw new FileSystemError(3)
+                                // throw new FileSystemError(5, item, "The file extension must not be changed");
                             } else {
-                                resolve(this.objectProvider.createDirectory(parentDir, itemName));
+                                resolve(this.objectProvider.renameItem(item, newName));
                             }
                         });
-                    });
+                    },
                 },
             },
         };
@@ -185,36 +183,38 @@ An object that contains information about the error.
         data: fileItems
     });
 
-    const noDuplicatesProvider = new CustomFileSystemProvider({
+    const keepExtensionsProvider = new CustomFileSystemProvider({
         getItems: (parentDir) => getItems(parentDir),
-        createDirectory: (parentDir, itemName) => createDirectory(parentDir, itemName)
+        renameItem: (item, newName) => renameItem(item, newName),
     });
 
-    const getItems = (parentDir) => {
+    function getItems(parentDir) {
         return objectProvider.getItems(parentDir);
     };
 
-    const createDirectory = (parentDir, itemName) => {
+    function renameItem(item, newName) {
         return new Promise((resolve, reject) => {
-            getItems(parentDir).then((items) => {
-                const duplicateItems = items.filter((i) => i.name === itemName);
-                if (duplicateItems.length !== 0) {
-                    // 1 - reject
-                    reject(new FileSystemError(3));
-                    // 2 - throw
-                    // throw new FileSystemError(3)
-                } else {
-                    resolve(objectProvider.createDirectory(parentDir, itemName));
-                }
-            });
+        if(item.getFileExtension() !== getExtension(newName)) {
+            // 1 - reject
+            reject(new FileSystemError(5, item, "The file extension must not be changed"));
+            // 2 - throw
+            // throw new FileSystemError(5, item, "The file extension must not be changed");
+        } else {
+            resolve(objectProvider.renameItem(item, newName));
+        }
         });
+    };
+
+    function getExtension(path) {
+        const index = path.lastIndexOf(".");
+        return index !== -1 ? path.substr(index) : "";
     };
 
     const App = () => {
         return (
             <FileManager 
-                fileSystemProvider={noDuplicatesProvider}>
-                <Permissions create={true}></Permissions>
+                fileSystemProvider={keepExtensionsProvider}>
+                <Permissions rename={true}></Permissions>
             </FileManager>
         );
     };
@@ -225,34 +225,35 @@ An object that contains information about the error.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .FileSystemProvider(provider => provider.Custom()
-                .GetItems("getItems")
-                .CreateDirectory("createDirectory"))
-        .Permissions(permissions => {
-            permissions.Create(true);
-        })
+        .FileSystemProvider(provider => provider
+            .Custom()
+            .GetItems("getItems")
+            .RenameItem("renameItem"))
+        .Permissions(permissions => permissions.Rename(true))
     )
+    <script src="~/fileSystem.js"></script>
     <script>
-        const objectProvider = new DevExpress.fileManagement.ObjectFileSystemProvider({ data: createTestFileSystem() });
+        const objectProvider = new DevExpress.fileManagement.ObjectFileSystemProvider({ data: fileSystem });
 
         function getItems(item) {
             return objectProvider.getItems(item);
 
         }
-    function createDirectory(parentDir, itemName) {
-        return new Promise((resolve, reject) => {
-            this.getItems(parentDir).then(items => {
-                const duplicateItems = items.filter(i => i.name === itemName);
-                if(duplicateItems.length !== 0) {
+        function renameItem(item, newName) {
+            return new Promise((resolve, reject) => {
+                if(item.getFileExtension() !== getExtension(newName)) {
                     // 1 - reject
-                    reject(new DevExpress.fileManagement.FileSystemError(3));
+                    reject(new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed"));
                     // 2 - throw
-                    // throw new DevExpress.fileManagement.FileSystemError(3);
+                    // throw new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed");
                 } else {
-                    resolve(objectProvider.createDirectory(parentDir, itemName));
+                    resolve(objectProvider.renameItem(item, newName));
                 }
             });
-        });
-    }
-    </script> 
+        }
+        function getExtension(path) {
+            const index = path.lastIndexOf(".");
+            return index !== -1 ? path.substr(index) : "";
+        }
+    </script>
 ---

@@ -8,6 +8,7 @@ default: true
 Specifies whether users can select tasks in the Gantt.
 
 ---
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
@@ -86,7 +87,7 @@ Specifies whether users can select tasks in the Gantt.
             }
         };
     </script>
-	
+
 ##### React
 
     <!-- tab: App.js -->
@@ -117,6 +118,7 @@ Specifies whether users can select tasks in the Gantt.
         .AllowSelection(false)
         // ...
     )
+
 ---
 
 #####See Also#####

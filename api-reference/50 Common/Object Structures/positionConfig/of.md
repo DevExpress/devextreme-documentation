@@ -182,7 +182,7 @@ This property accepts the following value types:
     
     ---
 
-- [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') (or <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> if jQuery is used)
+- [EventObject](/api-reference/50%20Common/Object%20Structures/EventObject '/Documentation/ApiReference/Common/Object_Structures/EventObject/') (or <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> if jQuery is used)
 
  The overlay element is positioned at the **event.pageX** and **event.pageY** coordinates. In the following example, the [Popover](/api-reference/10%20UI%20Components/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/') UI component is positioned at the point where the user has clicked.
 

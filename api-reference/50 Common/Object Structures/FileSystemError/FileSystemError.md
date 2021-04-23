@@ -55,47 +55,50 @@ An object that contains information about the error.
     import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
     import FileSystemError from 'devextreme/file_management/error';
+    import { Service, FileItem } from "./app.service";
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        styleUrls: ['./app.component.css'],
+        providers: [Service]
     })
 
     export class AppComponent {
-        const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
-        const noDuplicatesProvider = new DevExpress.fileManagement.CustomFileSystemProvider({
-            getItems,
-            createDirectory            
-        })
-        fileSystemProvider: CustomFileSystemProvider;
-        
-        constructor() {
-            this.fileSystemProvider = noDuplicatesProvider;
-        }         
-    } 
-    function getItems(item) {
-        return realProviderInstance.getItems(item);
-    }
-    function createDirectory(parentDir, name) {
-        const deferred = new Deferred();
-        this.getItems(this.parentDir).then(items => {
-            const duplicateItems = items.filter(i => i.name === itemName);
-            if(duplicateItems.length !== 0) {
-                // 1 - deferred.reject()
-                deferred
-                    .reject(new DevExpress.fileManagement.FileSystemError(3))
-                    .promise();
-                // 2 - throw
-                throw new DevExpress.fileManagement.FileSystemError(3)
-            } else {
-                deferred
-                    .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
-                    .promise();
-            }
-        });
-        return deferred.promise();        
-    } 
+        fileItems: FileItem[];
+        objectProvider: ObjectFileSystemProvider;
+        noDuplicatesProvider: CustomFileSystemProvider;
+
+        constructor(service: Service) {
+            this.fileItems = service.getFileItems();
+            this.objectProvider = new ObjectFileSystemProvider({
+                data: this.fileItems
+            });
+            this.noDuplicatesProvider = new CustomFileSystemProvider({
+                getItems: (parentDir) => this.getItems(parentDir),
+                createDirectory: (parentDir, itemName) =>
+                    this.createDirectory(parentDir, itemName)
+            });
+        }      
+        getItems(item) {
+            return this.objectProvider.getItems(item);
+        }
+        createDirectory(parentDir, itemName) {
+            return new Promise<any>((resolve, reject) => {
+                this.getItems(parentDir).then((items) => {
+                    const duplicateItems = items.filter((i) => i.name === itemName);
+                    if(duplicateItems.length !== 0) {
+                        // 1 - reject
+                        reject(new FileSystemError(3));
+                        // 2 - throw
+                        // throw new FileSystemError(3)
+                    } else {
+                        resolve(this.objectProvider.createDirectory(parentDir, itemName));
+                    }
+                });
+            });
+        }
+    }  
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
@@ -222,40 +225,34 @@ An object that contains information about the error.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .FileSystemProvider(noDuplicatesProvider)
+        .FileSystemProvider(provider => provider.Custom()
+                .GetItems("getItems")
+                .CreateDirectory("createDirectory"))
         .Permissions(permissions => {
             permissions.Create(true);
         })
     )
     <script>
-        const realProviderInstance = new ObjectFileSystemProvider({ data: createTestFileSystem() });
-        const noDuplicatesProvider = new CustomFileSystemProvider({
-            getItems,
-            createDirectory
-        });
+        const objectProvider = new DevExpress.fileManagement.ObjectFileSystemProvider({ data: createTestFileSystem() });
 
         function getItems(item) {
-            return realProviderInstance.getItems(item);
+            return objectProvider.getItems(item);
 
         }
-        function createDirectory(parentDir, name) {
-            const deferred = new Deferred();
-            this.getItems(this.parentDir).then(items => {
+    function createDirectory(parentDir, itemName) {
+        return new Promise((resolve, reject) => {
+            this.getItems(parentDir).then(items => {
                 const duplicateItems = items.filter(i => i.name === itemName);
                 if(duplicateItems.length !== 0) {
-                    // 1 - deferred.reject()
-                    deferred
-                        .reject(new DevExpress.fileManagement.FileSystemError(3))
-                        .promise();
+                    // 1 - reject
+                    reject(new DevExpress.fileManagement.FileSystemError(3));
                     // 2 - throw
-                    throw new DevExpress.fileManagement.FileSystemError(3)
+                    // throw new DevExpress.fileManagement.FileSystemError(3);
                 } else {
-                    deferred
-                        .resolve(() => this._realProviderInstance.createDirectory(parentDir, name))
-                        .promise();
+                    resolve(objectProvider.createDirectory(parentDir, itemName));
                 }
             });
-            return deferred.promise();        
-        } 
+        });
+    }
     </script> 
 ---

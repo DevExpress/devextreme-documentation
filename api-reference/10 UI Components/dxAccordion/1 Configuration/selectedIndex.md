@@ -10,4 +10,3 @@ default: 0
 The index number of the currently expanded item.
 
 ---
-

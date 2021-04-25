@@ -1,0 +1,1 @@
+In the default mode, the filtering and search results include the matched rows and their ancestors. You can use the [filterMode](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#filterMode) property to display matched rows only (*"matchOnly"*) or matched rows with ancestors and descendants (*"fullBranch"*).

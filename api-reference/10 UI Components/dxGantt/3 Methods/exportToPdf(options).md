@@ -22,9 +22,9 @@ The **exportToPdf** method allows you to save information about the Gantt chart'
 - **dateRange**: {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Specifies the date range for which to export tasks.
 - **margins** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
 
----
-
 Use the following settings to export the Gantt chart to a PDF document:
+
+---
 
 ##### jQuery
 
@@ -81,3 +81,4 @@ Use the following settings to print the exported PDF document:
 
 
 ---
+

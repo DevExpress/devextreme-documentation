@@ -22,9 +22,9 @@ An object that contains information about the error.
             return new Promise((resolve, reject) => {
                 if(item.getFileExtension() !== getExtension(newName)) {
                     // 1 - reject
-                    reject(new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed"));
+                    reject(new DevExpress.fileManagement.FileSystemError(5, item, "You cannot change the file extension."));
                     // 2 - throw
-                    // throw new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed");
+                    // throw new DevExpress.fileManagement.FileSystemError(5, item, "You cannot change the file extension.");
                 } else {
                     resolve(objectProvider.renameItem(item, newName));
                 }
@@ -87,9 +87,9 @@ An object that contains information about the error.
             return new Promise<any>((resolve, reject) => {
             if(item.getFileExtension() !== this.getExtension(newName)) {
                 // 1 - reject
-                reject(new FileSystemError(5, item, "The file extension must not be changed"));
+                reject(new FileSystemError(5, item, "You cannot change the file extension."));
                 // 2 - throw
-                // throw new FileSystemError(5, item, "The file extension must not be changed");
+                // throw new FileSystemError(5, item, "You cannot change the file extension.");
             } else {
                 resolve(this.objectProvider.renameItem(item, newName));
             }
@@ -154,9 +154,9 @@ An object that contains information about the error.
                         return new Promise((resolve, reject) => {
                             if(item.getFileExtension() !== this.getExtension(newName)) {
                                 // 1 - reject
-                                reject(new FileSystemError(5, item, "The file extension must not be changed"));
+                                reject(new FileSystemError(5, item, "You cannot change the file extension."));
                                 // 2 - throw
-                                // throw new FileSystemError(5, item, "The file extension must not be changed");
+                                // throw new FileSystemError(5, item, "You cannot change the file extension.");
                             } else {
                                 resolve(this.objectProvider.renameItem(item, newName));
                             }
@@ -196,9 +196,9 @@ An object that contains information about the error.
         return new Promise((resolve, reject) => {
         if(item.getFileExtension() !== getExtension(newName)) {
             // 1 - reject
-            reject(new FileSystemError(5, item, "The file extension must not be changed"));
+            reject(new FileSystemError(5, item, "You cannot change the file extension."));
             // 2 - throw
-            // throw new FileSystemError(5, item, "The file extension must not be changed");
+            // throw new FileSystemError(5, item, "You cannot change the file extension.");
         } else {
             resolve(objectProvider.renameItem(item, newName));
         }
@@ -243,9 +243,9 @@ An object that contains information about the error.
             return new Promise((resolve, reject) => {
                 if(item.getFileExtension() !== getExtension(newName)) {
                     // 1 - reject
-                    reject(new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed"));
+                    reject(new DevExpress.fileManagement.FileSystemError(5, item, "You cannot change the file extension."));
                     // 2 - throw
-                    // throw new DevExpress.fileManagement.FileSystemError(5, item, "The file extension must not be changed");
+                    // throw new DevExpress.fileManagement.FileSystemError(5, item, "You cannot change the file extension.");
                 } else {
                     resolve(objectProvider.renameItem(item, newName));
                 }

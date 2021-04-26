@@ -1,3 +1,8 @@
+---
+id: dxGantt.exportToPdf(options)
+---
+---
+##### shortDescription
 Exports Gantt chart data to a PDF document.
 
 ##### return: Promise<any>

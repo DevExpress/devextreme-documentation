@@ -1,0 +1,1 @@
+HtmlEditor supports [mentions](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/) that allow users to reference oters within text or conversation threads. This functionality is not used in this tutorial. To learn more about it, refer to the [demo](/Demos/WidgetsGallery/Demo/HtmlEditor/Mentions/Vue/Light/).

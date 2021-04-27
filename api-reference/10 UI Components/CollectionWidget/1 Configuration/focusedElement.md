@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.focusedElement
-type: dxElement
+type: DxElement
 default: null
 hidden: 
 ---

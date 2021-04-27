@@ -7,6 +7,6 @@ hidden:
 ---
 ##### shortDescription
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 
 ---

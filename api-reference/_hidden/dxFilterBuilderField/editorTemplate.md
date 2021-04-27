@@ -21,7 +21,7 @@ A method you should call to change the field value after the editor's value is c
 ##### field(conditionInfo.value): String | Number | Date
 The condition's data field value.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "editor" }
 
 ##### return: String | Element | jQuery

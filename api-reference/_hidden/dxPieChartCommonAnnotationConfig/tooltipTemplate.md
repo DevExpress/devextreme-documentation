@@ -10,7 +10,7 @@ default: undefined
 ##### param(annotation): dxPieChartAnnotationConfig | any
 <!-- %param(annotation)% -->
 
-##### param(element): dxElement
+##### param(element): DxElement
 <!-- %param(element)% -->
 
 ##### return: String | Element | jQuery

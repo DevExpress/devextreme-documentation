@@ -13,10 +13,10 @@ The data of the current date scale item.
 ##### param(itemIndex): Number
 The item's index.
 
-##### param(itemElement): TElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### return: String | TElement
+##### return: String | UserDefinedElement
 A template name or container.
 
 ---

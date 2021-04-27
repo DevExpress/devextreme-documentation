@@ -19,7 +19,7 @@ The [marker](/api-reference/_hidden/dxHtmlEditorMention/marker.md '/Documentatio
 ##### field(mentionData.value): any
 The displayed value provided by the [displayExpr](/api-reference/_hidden/dxHtmlEditorMention/displayExpr.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#displayExpr').
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "mention" }
 
 ##### return: String | Element | jQuery

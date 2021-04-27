@@ -7,7 +7,7 @@ hidden:
 ##### shortDescription
 <!-- Description goes here -->
 
-##### return: String | TElement
+##### return: String | UserDefinedElement
 <!-- Description goes here -->
 
 ---

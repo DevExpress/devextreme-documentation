@@ -20,7 +20,7 @@ If you pass a Promise to this field, appointment deleting is continued or cancel
 ##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

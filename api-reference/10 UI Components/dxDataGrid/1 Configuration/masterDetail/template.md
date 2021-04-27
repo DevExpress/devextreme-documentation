@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom template for detail sections.
 
-##### param(detailElement): dxElement
+##### param(detailElement): DxElement
 #include common-ref-elementparam with { element: "detail section" }
 
 ##### param(detailInfo): Object

@@ -13,10 +13,10 @@
     <head>
         <!-- ... -->
         <!-- DevExtreme library -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_21_1/js/dx.all.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_21_2/js/dx.all.js"></script>
         <!-- Dictionary files for German and Russian languages -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_21_1/js/localization/dx.messages.de.js"></script>
-        <script src="https://cdn3.devexpress.com/jslib/minor_21_1/js/localization/dx.messages.ru.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_21_2/js/localization/dx.messages.de.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_21_2/js/localization/dx.messages.ru.js"></script>
         <script src="index.js"></script>
     </head>
 

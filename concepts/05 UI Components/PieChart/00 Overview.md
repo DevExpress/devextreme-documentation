@@ -1,6 +1,6 @@
 The PieChart is an interactive UI component that visualizes data as a circle divided into sectors that each represents a portion of the whole.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/DataVisualization/Guides/PieChartOverview/pieChartExample.html, /Content/Applications/21_1/DataVisualization/Guides/PieChartOverview/pieChartExample.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_2/DataVisualization/Guides/PieChartOverview/pieChartExample.html, /Content/Applications/21_2/DataVisualization/Guides/PieChartOverview/pieChartExample.js"></div>
 
 The PieChart can visualize data from any source. Refer to the following topics for details on how to bind the PieChart to your data source.
 

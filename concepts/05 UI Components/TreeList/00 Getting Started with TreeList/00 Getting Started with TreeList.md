@@ -2,7 +2,7 @@ The TreeList component uses a multi-column tree view to display data from a loca
 
 This tutorial shows how to add the TreeList to a page, bind it to data, and configure its core features. As a result, you will get a UI component that looks as follows:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/TreeList/index.html, /Content/Applications/21_1/GettingStartedWith/TreeList/index.js, /Content/Applications/21_1/GettingStartedWith/TreeList/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/21_2/GettingStartedWith/TreeList/index.html, /Content/Applications/21_2/GettingStartedWith/TreeList/index.js, /Content/Applications/21_2/GettingStartedWith/TreeList/index.css"></div>
 
 Refer to the following sections for details on each configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-treelist" target="_blank">getting-started-with-treelist</a>.
 

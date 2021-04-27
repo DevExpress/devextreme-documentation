@@ -1,6 +1,6 @@
 ---
 id: event
-type: dxEvent | jQuery.Event
+type: EventObject | jQuery.Event
 hidden: 
 dep: TEvent
 ---

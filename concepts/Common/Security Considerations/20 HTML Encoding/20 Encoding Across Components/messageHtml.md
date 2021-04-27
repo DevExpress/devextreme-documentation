@@ -2,13 +2,11 @@
 
 
     <!-- tab: JavaScript -->
-    $(function() {
-        const message = "Are you sure?<script>alert('XSS')</script>";
-        // ...
-        // Encode the `message` string with your favorite sanitizing tool
-        // ...
-        DevExpress.ui.dialog.confirm(message, "Confirm changes");
-    });
+    const message = "Are you sure?<script>alert('XSS')</script>";
+    // ...
+    // Encode the `message` string with your favorite sanitizing tool
+    // ...
+    DevExpress.ui.dialog.confirm(message, "Confirm changes");
 
 This code produces the following output:
 

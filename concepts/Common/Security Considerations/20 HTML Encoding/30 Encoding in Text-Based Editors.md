@@ -1,4 +1,4 @@
-Text-based editors such as [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/), [AutoComplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/), and [HtmlEditor](/Documentation/ApiReference/UI_Components/dxHtmlEditor/) do not provide an API to encode data out of the box. We recommend that you encode the editor output before you transfer this data to the server. One of the possible ways to do it is to wrap these editors into an HTML `form` element and override the `submit` event:
+Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/), [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/), [HtmlEditor](/Documentation/ApiReference/UI_Components/dxHtmlEditor/), do not encode user input. We recommend that you apply third-party sanitizing tools to the user input before you submit it to the server. One of the possible ways to do it is to wrap these editors into an HTML `form` element and override the `submit` event:
 
 
 ---
@@ -8,7 +8,7 @@ Text-based editors such as [TextBox](/Documentation/ApiReference/UI_Components/d
     $(function() {
         const editorInstance = $("#html-editor").dxHtmlEditor({
             // ...
-        }).dxhtmlEditor("instance");
+        }).dxHtmlEditor("instance");
 
         $("#button").dxButton({
             useSubmitBehavior: true,
@@ -16,8 +16,10 @@ Text-based editors such as [TextBox](/Documentation/ApiReference/UI_Components/d
         });
 
         $("#form-container").on("submit", function(e) {
-            const editorValue = editorInstance.value;
-            // Encode editor values here with your favorite sanitizing tool before sending them to the server 
+            const editorValue = editorInstance.option("value");
+            // ...
+            // Encode `editorValue` with your favorite sanitizing tool before sending it to the server
+            // ...
             
             e.preventDefault();
         });

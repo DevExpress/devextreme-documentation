@@ -1,5 +1,5 @@
 ---
-id: dxEvent.target
+id: EventObject.target
 type: Element
 ---
 ---

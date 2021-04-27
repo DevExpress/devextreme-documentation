@@ -1,5 +1,5 @@
 ---
-id: dxEvent.delegateTarget
+id: EventObject.delegateTarget
 type: Element
 ---
 ---

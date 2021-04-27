@@ -2,7 +2,7 @@
   "name": "devextreme-documentation",
   "description": "DevExtreme documentation",
   "author": "Developer Express Inc.",
-  "version": "21.1.0",
+  "version": "21.2.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   "scripts": {
     "update-links": "dx-tools update-links --docs-root ./",
     "update-links-validation": "dx-tools update-links --docs-root ./ --validation true",
-    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 21.1",
+    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 21.2",
     "update-topics": "dx-tools update-topics --docs-root ./"
   }
 }

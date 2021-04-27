@@ -20,4 +20,4 @@ The image below demonstrates what cell will be returned by the following code.
 
     <!--JavaScript-->var targetCell = sourceCell.slice("year", 1998);
 
-![](/Content/images/doc/21_1/DataGrid/PivotGrid_slice.png)
+![](/Content/images/doc/21_2/DataGrid/PivotGrid_slice.png)

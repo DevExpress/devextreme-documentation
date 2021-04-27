@@ -10,4 +10,4 @@ Specifies whether to vertically align the drop-down menu so that the selected it
 ---
 The drop-down menu can be displayed under the input field (**dropDownCentered** is **false**) or over it and centered on the selected item (**dropDownCentered** is **true**). The following live example illustrates the difference:
 
-<div class="simulator-desktop-container" style="height:220px" data-view="/Content/Applications/21_1/UIWidgets/Lookup/dropDownCentered.html, /Content/Applications/21_1/UIWidgets/Lookup/dropDownCentered.js, /Content/Applications/21_1/UIWidgets/Lookup/dropDownCentered.css"></div>
+<div class="simulator-desktop-container" style="height:220px" data-view="/Content/Applications/21_2/UIWidgets/Lookup/dropDownCentered.html, /Content/Applications/21_2/UIWidgets/Lookup/dropDownCentered.js, /Content/Applications/21_2/UIWidgets/Lookup/dropDownCentered.css"></div>

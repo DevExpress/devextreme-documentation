@@ -4,8 +4,8 @@
         <th>Angular</th>
     </tr>
     <tr>
-        <td>v21.1.x</td>
-        <td>angular_version_21_1</td>
+        <td>v21.2.x</td>
+        <td>angular_version_21_2</td>
     </tr>
     <tr>
         <td>v20.2.x</td>

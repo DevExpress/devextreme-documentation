@@ -13,7 +13,7 @@ $(function () {
         contentTemplate: () => {
             const content = $("<div />");
             content.append(
-                $("<img />").attr("src", "/Content/images/doc/21_1/Common/dx-logo.png"),
+                $("<img />").attr("src", "/Content/images/doc/21_2/Common/dx-logo.png"),
                 $(popupText)
             );
             content.dxScrollView({

@@ -1,6 +1,6 @@
 In addition to scrolling by mouse and touch gestures, you can display a separate visual element for scrolling called **scroll bar**.
 
-![](/Content/images/doc/21_1/ChartJS/Chart_ScrollBar.png)
+![](/Content/images/doc/21_2/ChartJS/Chart_ScrollBar.png)
 
 The scroll bar is configured using the [scrollBar](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/scrollBar '/Documentation/ApiReference/UI_Components/dxChart/Configuration/scrollBar/') object. Set the [visible](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/scrollBar/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/scrollBar/#visible') field of this object to **true** to display the scroll bar.
 

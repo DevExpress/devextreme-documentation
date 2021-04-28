@@ -1,6 +1,6 @@
 ---
 id: dxPopover.Options.target
-type: String | TElement
+type: String | UserDefinedElement
 default: Window
 ---
 ---

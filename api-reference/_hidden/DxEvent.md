@@ -1,5 +1,6 @@
 ---
-id: TEvent
+id: DxEvent
+type: EventObject | jQuery.Event
 ---
 ---
 ##### shortDescription

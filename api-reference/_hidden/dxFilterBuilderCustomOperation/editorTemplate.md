@@ -18,7 +18,7 @@ A method you should call to change the field value after the editor value change
 ##### field(conditionInfo.value): String | Number | Date
 The editor's value.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "editor" }
 
 ##### return: String | Element | jQuery

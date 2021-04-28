@@ -1,6 +1,6 @@
 ---
 id: dxFileUploader.Options.dropZone
-type: String | TElement
+type: String | UserDefinedElement
 default: undefined
 ---
 ---

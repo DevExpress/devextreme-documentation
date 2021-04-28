@@ -1,6 +1,6 @@
 ---
-id: TPromise
-type: Promise<void>
+id: DxElement
+type: HTMLElement | SVGElement | jQuery
 ---
 ---
 ##### shortDescription

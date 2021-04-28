@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom template for data cells.
 
-##### param(cellElement): dxElement
+##### param(cellElement): DxElement
 #include common-ref-elementparam with { element: "current cell" }
 
 ##### param(cellInfo): Object

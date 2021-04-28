@@ -1,6 +1,6 @@
 ---
-id: TElement
-type: dxElement | dxSVGElement
+id: DxPromise
+type: Promise<void>
 ---
 ---
 ##### shortDescription

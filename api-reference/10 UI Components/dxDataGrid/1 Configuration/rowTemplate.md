@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom template for rows.
 
-##### param(rowElement): dxElement
+##### param(rowElement): DxElement
 #include common-ref-elementparam with { element: "row" }
 
 ##### param(rowInfo): Object

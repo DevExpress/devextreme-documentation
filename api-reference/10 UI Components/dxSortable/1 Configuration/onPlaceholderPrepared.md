@@ -20,7 +20,7 @@ hidden:
 ##### field(e.dropInsideItem): Boolean
 <!-- Description goes here -->
 
-##### field(e.element): dxElement
+##### field(e.element): DxElement
 <!-- Description goes here -->
 
 ##### field(e.event): event
@@ -35,7 +35,7 @@ hidden:
 ##### field(e.itemData): any
 <!-- Description goes here -->
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 <!-- Description goes here -->
 
 ##### field(e.model): Object

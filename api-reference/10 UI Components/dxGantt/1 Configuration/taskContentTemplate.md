@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies custom content for the task.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "task" }
 
 ##### param(item): Object

@@ -5,7 +5,7 @@ id: GridBase.getCellElement(rowIndex, visibleColumnIndex)
 ##### shortDescription
 Gets a cell with specific row and column indexes.
 
-##### return: dxElement | undefined
+##### return: DxElement | undefined
 #include common-ref-elementparam with { element: "cell" }
 If the specified row or column does not exist, the method returns **undefined**.
 

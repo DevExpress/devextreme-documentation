@@ -85,6 +85,6 @@ Users can use the following keys to interact with the UI component:
 #####See Also#####
 #include common-link-callmethods
 - [HtmlEditor Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview)
-- [HtmlEditor API Reference](/Documentation/21_1/ApiReference/UI_Components/dxHtmlEditor/)
+- [HtmlEditor API Reference](/Documentation/ApiReference/UI_Components/dxHtmlEditor/)
 
 [tags]HTML Editor, HtmlEditor, accessibility, keyboard shortcuts

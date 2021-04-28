@@ -1,4 +1,6 @@
-If you need to customize HtmlEditor's toolbar, pass an array of [items](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/) to the [toolbar](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/). There is a number of [predefined items](/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/) available for customization. Some of the items, such as font size, support multiple values. In these cases use the [formatName](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName) property to define item name and the [formatValue](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues) property to assign an array of values you need to make available. Set the [multiline](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/#multiline) property to **true** to display the toolbar items on multiple lines.
+The HtmlEditor's toolbar contains buttons and drop-down menus that allow users to create, edit, and format content.
+
+If you need to customize HtmlEditor's toolbar, pass an array of [items](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/) to the [toolbar](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/). You can create [custom items](/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Add_a_Custom_Item/) or use [predefined items](/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/) to customize [buttons](/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/#Customize_Predefined_Items) and drop-down menus. Some of the items, such as font size, support multiple values. In these cases use the [name](/Documentation/21_1/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name) property to define item name and the [acceptedValues](/Documentation/21_1/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#acceptedValues) property to assign an array of values you need to make available. Set the [multiline](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/#multiline) property to **true** to display the toolbar items on multiple lines.
 
 ---
 ##### jQuery
@@ -13,8 +15,8 @@ If you need to customize HtmlEditor's toolbar, pass an array of [items](/Documen
                     "redo",
                     "separator",
                     {
-                        formatName: "size",
-                        formatValues: [
+                        name: "size",
+                        acceptedValues: [
                             "8pt",
                             "10pt",
                             "12pt",
@@ -25,8 +27,8 @@ If you need to customize HtmlEditor's toolbar, pass an array of [items](/Documen
                         ]
                     },
                     {
-                        formatName: "font",
-                        formatValues: [
+                        name: "font",
+                        acceptedValues: [
                             "Arial",
                             "Courier New",
                             "Georgia",
@@ -52,8 +54,8 @@ If you need to customize HtmlEditor's toolbar, pass an array of [items](/Documen
                     "bulletList",
                     "separator",
                     {
-                        formatName: "header",
-                        formatValues: [false, 1, 2, 3, 4, 5]
+                        name: "header",
+                        acceptedValues: [false, 1, 2, 3, 4, 5]
                     },
                     "separator",
                     "color",

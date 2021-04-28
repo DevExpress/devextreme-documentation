@@ -17,12 +17,20 @@
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.common.css">
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_20_2/css/dx.light.css">
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://unpkg.com/devextreme@21.1-next/dist/css/dx.common.css"
+            />
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://unpkg.com/devextreme@21.1-next/dist/css/dx.light.css"
+            />
             <link rel="stylesheet" href="index.css">
 
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_20_2/js/dx.all.js"></script>
-            <script src="products.js"></script>
+            <script src="https://unpkg.com/devextreme-quill/dist/dx-quill.min.js"></script>
+            <script src="https://unpkg.com/devextreme@21.1-next/dist/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">

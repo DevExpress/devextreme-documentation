@@ -16,7 +16,7 @@ In the following example, the [loadMessages(messages)](/api-reference/50%20Commo
         });
         DevExpress.localization.locale(navigator.language);
         $("#greeting").text(
-            DevExpress.localization.formatMessage("greetingMessage", userName);
+            DevExpress.localization.formatMessage("greetingMessage", userName)
         )
     })
 

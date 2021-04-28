@@ -1,4 +1,4 @@
-HtmlEditor can resize media embedded within its content. To enable this functionality pass the [enabled](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/#enabled) property to the [mediaResizing](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing) configuration object and set it to **true**.
+Users can resize images embedded within the content. To enable this functionality, set the [mediaResizing](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/).[enabled](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/#enabled) property to **true**.
 
 ---
 ##### jQuery

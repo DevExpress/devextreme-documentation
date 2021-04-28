@@ -43,7 +43,7 @@ Users can use the following keys to interact with the UI component:
     </tr>
     <tr>
         <td colspan="2">Enter</td>
-        <td>Insert a line break (e.g. a new paragraph)</td>
+        <td>Insert a line break (a new paragraph)</td>
     </tr>
     <tr>
         <td colspan="2" rowspan="3">Tab</td>

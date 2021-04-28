@@ -53,15 +53,14 @@ An end user can use the following keys to interact with the UI component.
         <td>Increase indentation (when at the start of a paragraph)</td>    
     </tr>
     <tr>
+        <td>Move the cursor to the next table cell</td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">Shift + Tab</td>
+        <td>Move the cursor to the previous table cell</td>
+    </tr>
+    <tr>
         <td>Decrease indentation (when at the start of a paragraph)</td>    
-    </tr>
-    <tr>
-        <td colspan="2">Tab</td>
-        <td>Move the selection to the next table cell</td>
-    </tr>
-    <tr>
-        <td colspan="2">Shift + Tab</td>
-        <td>Move the selection to the previous table cell</td>
     </tr>
     <tr>
         <td colspan="2">&uarr; &rarr; &darr; &larr;</td>
@@ -69,7 +68,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td colspan="2">Enter</td>
-        <td>Move the selection outside the table (when in the last row)</td>
+        <td>Move the cursor outside the table (when in the last row)</td>
     </tr>
     <tr>
         <td colspan="2">Esc</td>

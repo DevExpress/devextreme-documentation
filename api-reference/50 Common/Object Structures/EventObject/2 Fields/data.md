@@ -1,5 +1,5 @@
 ---
-id: dxEvent.data
+id: EventObject.data
 type: any
 ---
 ---

@@ -30,5 +30,5 @@ Specifies a comma-separated list of UI components whose styles should be include
 - `--assetsBasePath`            
 Specifies a path to the folder that contains the DevExtreme `icons` and `fonts` folders. Use this argument if the icons and fonts are not in the same folder as your custom theme.
 
-- `--remove-external-resources` (available since v20.2.7)     
+- `--remove-external-resources`     
 When present, removes links to external resources, such as fonts. The theme will use local fallbacks instead.

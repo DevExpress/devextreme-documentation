@@ -84,7 +84,7 @@ Users can use the following keys to interact with the UI component:
 
 #####See Also#####
 #include common-link-callmethods
-- [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview)
-- [DateBox API Reference](/api-reference/10%20UI%20Components/dxHtmlEditor)
+- [HtmlEditor Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview)
+- [HtmlEditor API Reference](/Documentation/ApiReference/UI_Components/dxHtmlEditor/)
 
 [tags]HTML Editor, HtmlEditor, accessibility, keyboard shortcuts

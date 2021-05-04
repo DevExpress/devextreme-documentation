@@ -18,7 +18,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
         $("#form-container").on("submit", function(e) {
             const editorValue = editorInstance.option("value");
             // ...
-            // Encode `editorValue` with your favorite sanitizing tool before sending it to the server
+            // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
             // ...
             
             e.preventDefault();
@@ -57,14 +57,13 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        constructor() {
-            this.onFormSubmit = this.onFormSubmit.bind(this);
-        }
 
-        editorValue;
+        editorValue = '';
 
         onFormSubmit = function(e) {
-            // Encode the editorValue component property here with your favorite sanitizing tool before sending them to the server 
+            // ...
+            // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
+            // ...
             
             e.preventDefault();
         }
@@ -115,7 +114,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
     import { DxButton } from 'devextreme-vue/button';
 
-    let editorValue;
+    let editorValue = '';
 
     export default {
         components: {
@@ -127,7 +126,9 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
         },
         methods: {
             handleSubmit(e) {
-                // Encode the editorValue variable here with your favorite sanitizing tool before sending them to the server 
+                // ...
+                // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
+                // ...
 
                 e.preventDefault();
             }
@@ -148,7 +149,9 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
         const [editorValue, setEditorValue] = useState("");
 
         const onFormSubmit = useCallback((e) => {
-            {/* Encode the editorValue variable here with your favorite sanitizing tool before sending them to the server */}
+            {/* ...
+            // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
+            ... */}
 
             e.preventDefault();
         }, []);

@@ -37,8 +37,8 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     <form
         action="your-action"
         (submit)="onFormSubmit($event)">
-        <dx-html-editor ... 
-            #editorRef>
+        <dx-html-editor ...
+            [(value)]="editorValue">
         </dx-html-editor>
             
         <dx-button
@@ -57,13 +57,14 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        @ViewChild('editorRef', { static: false }) htmlEditor: DxHtmlEditorComponent;
-        // Prior to Angular 8
-        // @ViewChild('editorRef') htmlEditor: DxHtmlEditorComponent;
+        constructor() {
+            this.onFormSubmit = this.onFormSubmit.bind(this);
+        }
+
+        editorValue;
 
         onFormSubmit = function(e) {
-            this.editorValue = this.htmlEditor.instance.value;
-            // Encode editor values here with your favorite sanitizing tool before sending them to the server 
+            // Encode the editorValue component property here with your favorite sanitizing tool before sending them to the server 
             
             e.preventDefault();
         }
@@ -98,7 +99,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
             action="your-action"
             @submit="onFormSubmit($event)">
             <DxHtmlEditor ... 
-                :ref="editorRef"
+                v-model:value="editorValue"
             />
                 
             <DxButton
@@ -114,7 +115,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
     import { DxButton } from 'devextreme-vue/button';
 
-    const editorRef = "htmlEditor";
+    let editorValue;
 
     export default {
         components: {
@@ -122,17 +123,11 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
             DxButton
         },
         data: {
-            editorRef
-        },
-        computed: {
-            htmlEditor: function() {
-                return this.$refs[editorRef].instance;
-            }
+            editorValue
         },
         methods: {
             handleSubmit(e) {
-                this.editorValue = this.htmlEditor.instance.value;
-                // Encode editor values here with your favorite sanitizing tool before sending them to the server 
+                // Encode the editorValue variable here with your favorite sanitizing tool before sending them to the server 
 
                 e.preventDefault();
             }
@@ -143,18 +138,17 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useCallback, useRef } from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor } from 'devextreme-react/html-editor';
     import { Button } from 'devextreme-react/button';
 
     const App = () => {
-        const editorRef = useRef(null);
+        const [editorValue, setEditorValue] = useState("");
 
         const onFormSubmit = useCallback((e) => {
-            const editorValue = editorRef.current.instance.value;
-            {/* Encode editor values here with your favorite sanitizing tool before sending them to the server */}
+            {/* Encode the editorValue variable here with your favorite sanitizing tool before sending them to the server */}
 
             e.preventDefault();
         }, []);
@@ -165,7 +159,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
                 action="your-action"
                 onSubmit={onFormSubmit}
                 <HtmlEditor ... 
-                    ref={editorRef}
+                    value={editorValue}
                 />
 
                 <Button

@@ -1,4 +1,4 @@
-Angular, Vue, and React always encode values interpolated in templates. With other frameworks and libraries, use one of the sanitizing tools as follows:
+Angular, Vue, and React always encode values interpolated in templates. With other frameworks and libraries, use a third-party sanitizing tool as follows:
 
     <!-- tab: JavaScript -->
     $(function() {

@@ -1,1 +1,1 @@
-DevExtreme components encode HTML in most cases. However, several components include API members that allow you to disable or bypass the encoding. The following sections describe these potentially vulnerable API members.
+Several components include API members that allow you insert unencoded HTML. The following sections describe these potentially vulnerable API members.

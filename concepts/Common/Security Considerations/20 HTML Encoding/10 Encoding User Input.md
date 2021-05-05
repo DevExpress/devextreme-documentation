@@ -60,9 +60,9 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
 
         editorValue = '';
 
-        onFormSubmit = function(e) {
+        onFormSubmit (e) {
             // ...
-            // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
+            // Encode this.editorValue here with your favorite sanitizing tool before sending this value to the server 
             // ...
             
             e.preventDefault();
@@ -96,7 +96,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     <template>
         <form
             action="your-action"
-            @submit="onFormSubmit($event)">
+            @submit="handleSubmit">
             <DxHtmlEditor ... 
                 v-model:value="editorValue"
             />
@@ -114,20 +114,18 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
     import { DxButton } from 'devextreme-vue/button';
 
-    let editorValue = '';
-
     export default {
         components: {
             DxHtmlEditor, 
             DxButton
         },
         data: {
-            editorValue
+            editorValue: ''
         },
         methods: {
             handleSubmit(e) {
                 // ...
-                // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
+                // Encode this.editorValue here with your favorite sanitizing tool before sending this value to the server 
                 // ...
 
                 e.preventDefault();
@@ -149,9 +147,9 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
         const [editorValue, setEditorValue] = useState("");
 
         const onFormSubmit = useCallback((e) => {
-            {/* ...
+            // ...
             // Encode editorValue here with your favorite sanitizing tool before sending this value to the server 
-            ... */}
+            // ...
 
             e.preventDefault();
         }, []);

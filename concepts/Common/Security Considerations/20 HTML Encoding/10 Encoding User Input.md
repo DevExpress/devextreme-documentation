@@ -1,4 +1,4 @@
-Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/), [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/), [HtmlEditor](/Documentation/ApiReference/UI_Components/dxHtmlEditor/), do not encode user input. We recommend that you apply third-party sanitizing tools to the user input before you submit it to the server. One of the possible ways to do it is to wrap these editors into an HTML `form` element and override the `submit` event:
+Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/), [Autocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/), [HtmlEditor](/Documentation/ApiReference/UI_Components/dxHtmlEditor/), do not encode user input. We recommend that you apply third-party sanitizing tools to the user input before you submit it to the server:
 
 
 ---

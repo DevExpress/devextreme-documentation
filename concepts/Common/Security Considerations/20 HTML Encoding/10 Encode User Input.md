@@ -109,6 +109,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     </template>
 
     <script>
+    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
@@ -138,6 +139,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
 
     <!-- tab: App.js -->
     import React, { useCallback, useState } from 'react';
+    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { HtmlEditor } from 'devextreme-react/html-editor';

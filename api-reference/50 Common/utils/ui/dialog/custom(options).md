@@ -69,7 +69,6 @@ In the following code, the clicked button is identified by its text. The **messa
     <!-- tab: app.component.ts -->
     import { Component, AfterViewInit } from '@angular/core';
     import { custom } from 'devextreme/ui/dialog';
-    import { encodeHtml } from 'devextreme/core/utils/string';
 
     @Component({
         selector: 'app-root',
@@ -103,7 +102,6 @@ In the following code, the clicked button is identified by its text. The **messa
     </template>
     <script>
     import { custom } from 'devextreme/ui/dialog';
-    import { encodeHtml } from 'devextreme/core/utils/string';
 
     export default {
         mounted: function() {
@@ -133,7 +131,6 @@ In the following code, the clicked button is identified by its text. The **messa
     <!-- tab: App.js -->
     import React from 'react';
     import { custom } from 'devextreme/ui/dialog';
-    import { encodeHtml } from 'devextreme/core/utils/string';
 
     class App extends React.Component {
         componentDidMount() {

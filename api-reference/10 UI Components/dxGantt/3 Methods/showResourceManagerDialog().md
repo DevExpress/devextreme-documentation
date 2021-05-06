@@ -3,7 +3,9 @@ id: dxGantt.showResourceManagerDialog()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Invokes the Resource Manager dialog.
 
 ---
-<!-- Description goes here -->
+
+image
+

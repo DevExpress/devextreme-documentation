@@ -156,6 +156,9 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
             e.preventDefault();
         }, []);
 
+        const handleValueChange = (e) => {
+            setEditorValue(e.value);
+        };
 
         return (
             <form
@@ -163,6 +166,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
                 onSubmit={onFormSubmit}
                 <HtmlEditor ... 
                     value={editorValue}
+                    onValueChanged={handleValueChange}
                 />
 
                 <Button

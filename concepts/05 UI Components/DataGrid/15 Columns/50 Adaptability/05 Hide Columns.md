@@ -105,7 +105,7 @@ You can use the **columns[]**.[hidingPriority](/Documentation/ApiReference/UI_Co
 ---
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Adaptability/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridAdaptabilityOverview/"
 }
 
 [note]

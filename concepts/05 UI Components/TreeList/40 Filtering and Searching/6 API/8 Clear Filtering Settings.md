@@ -44,6 +44,8 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
+    const treeListRefKey = 'tree-list';
+
     export default {
         components: {
             DxTreeList,
@@ -51,7 +53,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
         data() {
             return {
                 // ...
-                gridRefKey: 'tree-list',
+                treeListRefKey
             };
         },
         methods: {
@@ -61,7 +63,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
         },
         computed: {
             treeList: function() {
-                return this.$refs[gridRefKey].instance;
+                return this.$refs[treeListRefKey].instance;
             }
         }
     }

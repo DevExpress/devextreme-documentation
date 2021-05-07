@@ -51,6 +51,8 @@ The initial and runtime filtering API depends on the UI element and is described
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
+    const gridRefKey = 'data-grid';
+
     export default {
         components: {
             DxDataGrid,
@@ -58,7 +60,7 @@ The initial and runtime filtering API depends on the UI element and is described
         data() {
             return {
                 // ...
-                gridRefKey: 'data-grid'
+                gridRefKey
             };
         },
         methods: {
@@ -177,6 +179,8 @@ You can create a filter that combines all the applied filters by calling the [ge
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
+    const gridRefKey = 'data-grid';
+
     export default {
         components: {
             DxDataGrid,
@@ -184,7 +188,7 @@ You can create a filter that combines all the applied filters by calling the [ge
         data() {
             return {
                 // ...
-                gridRefKey: 'data-grid'
+                gridRefKey
             };
         },
         methods: {

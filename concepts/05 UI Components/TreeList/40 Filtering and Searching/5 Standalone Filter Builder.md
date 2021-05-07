@@ -220,6 +220,9 @@ Then, add a button that updates a filter of the TreeList's data source according
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
     import DxButton from 'devextreme-vue/button';
 
+    const treeListRefKey = 'tree-list';
+    const fbRefKey = 'filter-builder';
+
     export default {
         components: {
             DxTreeList,
@@ -229,8 +232,8 @@ Then, add a button that updates a filter of the TreeList's data source according
         data() {
             return {
                 // ...
-                gridRefKey: 'tree-list',
-                fbRefKey: 'filter-builder'
+                treeListRefKey,
+                fbRefKey
             };
         },
         methods: {
@@ -240,7 +243,7 @@ Then, add a button that updates a filter of the TreeList's data source according
         },
         computed: {
             treeList: function() {
-                return this.$refs[gridRefKey].instance;
+                return this.$refs[treeListRefKey].instance;
             },
             filterBuilder: function(){
                 return this.$refs[fbRefKey].instance;                

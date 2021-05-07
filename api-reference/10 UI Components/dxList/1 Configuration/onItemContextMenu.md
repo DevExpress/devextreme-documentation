@@ -10,7 +10,7 @@ Information about the event.
 ##### field(e.component): dxList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.itemData): Object
 The target item's data object.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "target item" }
 
 ##### field(e.itemIndex): Number | Object

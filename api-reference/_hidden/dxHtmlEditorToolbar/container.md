@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditorToolbar.container
-type: String | TElement
+type: String | UserDefinedElement
 ---
 ---
 ##### shortDescription

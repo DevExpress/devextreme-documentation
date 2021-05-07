@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip.container
-type: String | TElement
+type: String | UserDefinedElement
 default: undefined
 ---
 ---

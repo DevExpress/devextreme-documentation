@@ -13,13 +13,13 @@ Information about the event.
 ##### field(e.cellData): Object
 The data of the cell on which the context menu is invoked.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

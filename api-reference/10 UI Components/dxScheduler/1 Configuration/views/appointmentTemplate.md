@@ -19,10 +19,10 @@ The appointment's data object.
 ##### param(itemIndex): Number
 The appointment's index.
 
-##### param(contentElement): TElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "appointment" }
 
-##### return: String | TElement
+##### return: String | UserDefinedElement
 A template name or container.
 
 ---

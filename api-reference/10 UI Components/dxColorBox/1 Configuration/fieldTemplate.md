@@ -10,7 +10,7 @@ Specifies a custom template for the input field. Must contain the [TextBox](/con
 ##### param(value): String
 The selected value.
 
-##### param(fieldElement): dxElement
+##### param(fieldElement): DxElement
 #include common-ref-elementparam with { element: "field" }
 
 ##### return: String | Element | jQuery

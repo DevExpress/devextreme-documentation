@@ -25,7 +25,7 @@ The raw item value.
 ##### field(info.valueText): String
 The item's [formatted](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label/format.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/label/#format') value converted to a string.
 
-##### param(element): dxElement
+##### param(element): DxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
 ##### return: String | Element | jQuery

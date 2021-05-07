@@ -10,7 +10,7 @@ Specifies a template for all the buttons in the group.
 ##### param(buttonData): Object
 An object from the [items](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/') array, extended with the **icon** and **text** fields.
 
-##### param(buttonContent): dxElement
+##### param(buttonContent): DxElement
 The button content's container.
 
 ##### return: String | Element | jQuery

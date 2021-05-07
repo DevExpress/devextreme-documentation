@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.appointmentData): Object
 The initial appointment.
 
-##### field(e.appointmentElement): dxElement
+##### field(e.appointmentElement): DxElement
 #include common-ref-elementparam with { element: "clicked" }
 
 ##### field(e.cancel): Boolean
@@ -22,7 +22,7 @@ If **true**, does not allow the user to open the appointment details form with d
 ##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

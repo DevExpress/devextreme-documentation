@@ -16,7 +16,7 @@ Allows you to cancel the gesture.
 ##### field(e.component): dxDraggable
 The UI component that raised the event.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -31,7 +31,7 @@ Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuratio
 ##### field(e.itemData): any
 The dragged element's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.model): any

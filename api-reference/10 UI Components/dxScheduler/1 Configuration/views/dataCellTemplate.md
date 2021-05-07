@@ -13,10 +13,10 @@ The current table cell's data.
 ##### param(itemIndex): Number
 The current table cell's index.
 
-##### param(itemElement): TElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "table cell" }
 
-##### return: String | TElement
+##### return: String | UserDefinedElement
 A template name or container.
 
 ---

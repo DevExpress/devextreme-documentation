@@ -12,7 +12,7 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component instance's name.
 
-##### field(e.element): dxElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.name): String

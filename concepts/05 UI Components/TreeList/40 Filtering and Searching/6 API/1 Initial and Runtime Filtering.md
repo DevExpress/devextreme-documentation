@@ -50,6 +50,8 @@ The initial and runtime filtering API depends on the UI element and is described
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
+    const treeListRefKey = 'tree-list';
+
     export default {
         components: {
             DxTreeList,
@@ -57,7 +59,7 @@ The initial and runtime filtering API depends on the UI element and is described
         data() {
             return {
                 // ...
-                gridRefKey: 'tree-list'
+                treeListRefKey
             };
         },
         methods: {
@@ -71,7 +73,7 @@ The initial and runtime filtering API depends on the UI element and is described
         },
         computed: {
             treeList: function() {
-                return this.$refs[gridRefKey].instance;
+                return this.$refs[treeListRefKey].instance;
             }
         }
     }
@@ -159,6 +161,8 @@ You can create a filter that combines all the applied filters by calling the [ge
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
+    const treeListRefKey = 'tree-list';
+
     export default {
         components: {
             DxTreeList,
@@ -166,7 +170,7 @@ You can create a filter that combines all the applied filters by calling the [ge
         data() {
             return {
                 // ...
-                gridRefKey: 'tree-list'
+                treeListRefKey
             };
         },
         methods: {
@@ -176,7 +180,7 @@ You can create a filter that combines all the applied filters by calling the [ge
         },
         computed: {
             treeList: function() {
-                return this.$refs[gridRefKey].instance;
+                return this.$refs[treeListRefKey].instance;
             }
         }
     }

@@ -74,6 +74,8 @@ The following code shows how to call this method:
 
     import { Dx{WidgetName}, /* ... */ } from 'devextreme-vue/{widget-name}';
 
+    const {widgetName}RefKey = 'my-{widget-name}';
+
     export default {
         components: {
             Dx{WidgetName},
@@ -81,7 +83,7 @@ The following code shows how to call this method:
         },
         data() {
             return {
-                {widgetName}RefKey: '{widgetName}'
+                {widgetName}RefKey
             };
         },
         computed: {

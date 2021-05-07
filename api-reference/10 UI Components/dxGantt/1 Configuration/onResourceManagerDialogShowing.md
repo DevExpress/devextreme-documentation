@@ -16,7 +16,7 @@ default: null
 ##### field(e.component): dxGantt
 <!-- Description goes here -->
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 <!-- Description goes here -->
 
 ##### field(e.key): any

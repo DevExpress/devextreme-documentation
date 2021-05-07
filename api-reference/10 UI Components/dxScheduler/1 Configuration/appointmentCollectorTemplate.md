@@ -16,10 +16,10 @@ The count of hidden appointments.
 ##### field(data.isCompact): Boolean
 Indicates whether the overflow indicator is [compact](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/').
 
-##### param(collectorElement): TElement
+##### param(collectorElement): DxElement
 #include common-ref-elementparam with { element: "overflow indicator" }
 
-##### return: String | TElement
+##### return: String | UserDefinedElement
 A template name or container.
 
 ---

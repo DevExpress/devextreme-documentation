@@ -16,10 +16,10 @@ The item's original position.
 ##### field(dragInfo.itemData): any
 The item's data.
 
-##### field(dragInfo.itemElement): dxElement
+##### field(dragInfo.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
-##### param(containerElement): dxElement
+##### param(containerElement): DxElement
 A container in which the template should be rendered.
 
 ##### return: String | Element | jQuery

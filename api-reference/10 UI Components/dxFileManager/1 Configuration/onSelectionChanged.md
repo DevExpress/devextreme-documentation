@@ -19,7 +19,7 @@ The keys of the file system items whose selection has been cleared.
 ##### field(e.currentSelectedItemKeys): Array<String>
 The keys of the file system items that have been selected.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

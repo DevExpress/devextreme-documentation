@@ -10,7 +10,7 @@ Specifies a custom template for tags.
 ##### param(itemData): Object
 The current tag's data.
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "tag" }
 
 ##### return: String | Element | jQuery

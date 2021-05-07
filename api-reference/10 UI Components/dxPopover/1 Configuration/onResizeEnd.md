@@ -9,7 +9,7 @@ hidden:
 
 ##### field(e.component): {WidgetName}
 
-##### field(e.element): dxElement
+##### field(e.element): DxElement
 
 ##### field(e.model): Object
 

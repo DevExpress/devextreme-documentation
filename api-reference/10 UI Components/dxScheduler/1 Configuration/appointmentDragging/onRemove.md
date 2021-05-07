@@ -24,7 +24,7 @@ Custom [data](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/
 ##### field(e.itemData): any
 The data object of the appointment being dragged.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.toComponent): dxSortable | dxDraggable

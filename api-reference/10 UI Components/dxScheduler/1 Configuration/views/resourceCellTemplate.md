@@ -13,10 +13,10 @@ The current resource header's data.
 ##### param(itemIndex): Number
 The current resource header's index.
 
-##### param(itemElement): TElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "resource header" }
 
-##### return: String | TElement
+##### return: String | UserDefinedElement
 A template name or container.
 
 ---

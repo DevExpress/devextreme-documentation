@@ -2,7 +2,7 @@
 id: event
 type: EventObject | jQuery.Event
 hidden: 
-dep: TEvent
+dep: DxEvent
 ---
 ---
 ##### shortDescription

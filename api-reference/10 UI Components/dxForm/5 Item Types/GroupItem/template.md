@@ -15,7 +15,7 @@ The Form instance.
 ##### field(data.formData): Object
 The [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object.
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "current group item" }
 
 ##### return: String | Element | jQuery

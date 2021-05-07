@@ -16,7 +16,7 @@ Allows you to cancel hiding of the action sheet after the Cancel button is click
 ##### field(e.component): dxActionSheet
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

@@ -16,7 +16,7 @@ Allows you to cancel focusing a new row.
 ##### field(e.component): dxTreeList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -31,7 +31,7 @@ The index of the row to be focused.
 ##### field(e.prevRowIndex): Number
 The index of the previously focused row.
 
-##### field(e.rowElement): TElement
+##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "to-be-focused row" }
 
 ##### field(e.rows): Array<dxTreeListRowObject>

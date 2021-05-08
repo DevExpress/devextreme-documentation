@@ -1,6 +1,6 @@
 ---
 id: dxDrawer.Options.target
-type: String | TElement
+type: String | UserDefinedElement
 deprecated: 
 ---
 ---

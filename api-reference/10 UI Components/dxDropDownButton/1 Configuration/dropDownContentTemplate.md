@@ -10,7 +10,7 @@ Specifies custom content for the drop-down field.
 ##### param(data): Array<String, Number, Object> | DataSource
 The array passed to the [items](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/') property or a **DataSource** instance created using the [dataSource](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#dataSource') configuration.
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "drop-down field" }
 
 ##### return: String | Element | jQuery

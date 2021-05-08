@@ -24,7 +24,7 @@ The editor's [type](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/
 ##### field(data.name): String
 The item's [name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name').
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### return: String | Element | jQuery

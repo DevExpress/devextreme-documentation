@@ -10,7 +10,7 @@ default: null
 ##### param(e): Object
 <!-- %param(e)% -->
 
-##### field(e.cellElement): TElement
+##### field(e.cellElement): DxElement
 <!-- %field(e.cellElement)% -->
 
 ##### field(e.column): dxTreeListColumn
@@ -28,7 +28,7 @@ The data of the row to which the cell belongs. Available if the **rowType** is *
 ##### field(e.displayValue): any
 <!-- %field(e.displayValue)% -->
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 <!-- %field(e.element)% -->
 
 ##### field(e.isExpanded): Boolean

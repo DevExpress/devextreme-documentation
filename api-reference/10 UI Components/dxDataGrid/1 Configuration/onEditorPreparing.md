@@ -23,7 +23,7 @@ The name of the field that provides data for the column's editor.
 ##### field(e.disabled): Boolean
 Indicates whether the editor is disabled.
 
-##### field(e.editorElement): dxElement
+##### field(e.editorElement): DxElement
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(e.editorName): String
@@ -33,7 +33,7 @@ Import a new editor's module when [DevExtreme modules](/concepts/Common/Modulari
 ##### field(e.editorOptions): Object
 Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') specified in the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object have precedence over this parameter.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

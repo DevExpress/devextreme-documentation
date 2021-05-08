@@ -7,7 +7,7 @@ default: 'title'
 ##### shortDescription
 Specifies a custom template for the UI component title. Does not apply if the [title](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/title.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#title') is defined.
 
-##### param(titleElement): dxElement
+##### param(titleElement): DxElement
 #include common-ref-elementparam with { element: "title" }
 
 ##### return: String | Element | jQuery

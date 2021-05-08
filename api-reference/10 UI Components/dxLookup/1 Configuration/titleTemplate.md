@@ -8,7 +8,7 @@ dep: dxLookup.Options.dropDownOptions
 ##### shortDescription
 Specifies a custom template for the title.
 
-##### param(titleElement): dxElement
+##### param(titleElement): DxElement
 #include common-ref-elementparam with { element: "title" }
 
 ##### return: String | Element | jQuery

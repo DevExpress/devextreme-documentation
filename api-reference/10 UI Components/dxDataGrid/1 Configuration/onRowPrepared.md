@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.data): Object
 The row's raw data. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.groupIndex): Number
@@ -41,7 +41,7 @@ If a field providing keys is not specified in the [data source](/api-reference/1
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.rowElement): dxElement
+##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "row" }
 
 ##### field(e.rowIndex): Number

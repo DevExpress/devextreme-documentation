@@ -15,7 +15,7 @@ A template name or container.
 ##### param(itemIndex): Number
 <!-- Description goes here -->
 
-##### param(itemElement): TElement
+##### param(itemElement): DxElement
 <!-- Description goes here -->
 
 ---

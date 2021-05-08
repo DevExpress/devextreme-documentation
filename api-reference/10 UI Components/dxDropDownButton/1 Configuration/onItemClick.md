@@ -13,7 +13,7 @@ Information about the event that caused the function to execute.
 ##### field(e.component): dxDropDownButton
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -22,7 +22,7 @@ The UI component's instance.
 ##### field(e.itemData): Object
 The clicked item's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.model): any

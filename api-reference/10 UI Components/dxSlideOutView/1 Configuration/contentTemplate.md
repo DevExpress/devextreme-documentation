@@ -7,7 +7,7 @@ default: 'content'
 ##### shortDescription
 Specifies a custom template for the UI component content.
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "UI component content" }
 
 ##### return: any

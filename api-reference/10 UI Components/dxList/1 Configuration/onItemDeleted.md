@@ -14,13 +14,13 @@ Information about the event.
 ##### field(e.component): dxList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.itemData): Object
 The removed item's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number | Object

@@ -10,7 +10,7 @@ A function that is executed after a grid cell is created.
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### field(e.column): dxDataGridColumn
@@ -29,7 +29,7 @@ The data of the row to which the cell belongs. Unavailable if [rowType]({basewid
 The cell's displayed value. Available if the **rowType** is *"data"*.     
 Differs from the **value** field only when the column to which the prepared cell belongs uses [lookup]({basewidgetpath}/Configuration/columns/lookup/).
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean

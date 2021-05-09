@@ -16,7 +16,7 @@ The UI component's instance.
 ##### field(templateData.value): any
 The currently selected value.
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "UI component content" }
 
 ##### return: String | Element | jQuery

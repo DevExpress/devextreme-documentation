@@ -10,7 +10,7 @@ Specifies a custom template for tooltips.
 ##### param(pointsInfo): Object
 Information on the points that belong to the series that is pressed or hovered over.
 
-##### param(element): dxElement
+##### param(element): DxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
 ##### return: String | Element | jQuery

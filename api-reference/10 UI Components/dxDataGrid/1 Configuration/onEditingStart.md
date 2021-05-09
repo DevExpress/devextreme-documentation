@@ -22,7 +22,7 @@ The UI component's instance.
 ##### field(e.data): Object
 The data of a row to be edited.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any

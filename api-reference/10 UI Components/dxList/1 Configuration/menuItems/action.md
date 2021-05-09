@@ -6,7 +6,7 @@ type: function(itemElement, itemData)
 ##### shortDescription
 Holds on a function called when the item is clicked.
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "clicked item" }
 
 ##### param(itemData): Object

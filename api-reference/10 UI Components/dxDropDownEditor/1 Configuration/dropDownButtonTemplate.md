@@ -16,7 +16,7 @@ The button's icon.
 ##### field(buttonData.text): String
 The button's text.
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "button" }
 
 ##### return: String | Element | jQuery

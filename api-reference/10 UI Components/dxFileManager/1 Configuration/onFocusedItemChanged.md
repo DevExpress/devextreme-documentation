@@ -13,13 +13,13 @@ Information about the event that caused the function's execution.
 ##### field(e.component): dxFileManager
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.item): FileSystemItem
 The currently focused file or directory.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.model): any

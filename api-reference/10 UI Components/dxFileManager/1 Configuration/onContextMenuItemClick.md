@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.component): dxFileManager
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -25,7 +25,7 @@ The file system item for which you invoke the context menu.
 ##### field(e.itemData): Object
 The clicked item's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number

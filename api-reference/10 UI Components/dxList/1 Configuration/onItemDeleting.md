@@ -14,13 +14,13 @@ Allows you to cancel the item deletion.
 ##### field(e.component): dxList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.itemData): Object
 The data of the item to be removed.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number | Object

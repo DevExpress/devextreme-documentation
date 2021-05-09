@@ -16,13 +16,13 @@ Allows you to cancel submenu hiding.
 ##### field(e.component): dxMenu
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.rootItem): dxElement
+##### field(e.rootItem): DxElement
 #include common-ref-elementparam with { element: "root menu element" }
 
 ---

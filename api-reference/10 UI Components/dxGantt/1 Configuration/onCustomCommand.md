@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.component): dxGantt
 The UI component instance's name.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.name): String

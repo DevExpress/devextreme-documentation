@@ -10,7 +10,7 @@ A function that is executed when a cell is clicked or tapped. Executed before [o
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cellElement): TElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### field(e.column): Object
@@ -29,7 +29,7 @@ The data of the row to which the cell belongs. Available if the **rowType** is *
 The cell's displayed value. Available if the **rowType** is *"data"*.      
 Differs from the **value** field only when the cell belongs to the [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') column.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

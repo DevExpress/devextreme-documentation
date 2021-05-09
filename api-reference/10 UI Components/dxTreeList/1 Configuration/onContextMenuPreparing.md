@@ -19,7 +19,7 @@ The index of the column on which the context menu is invoked. For details on ind
 ##### field(e.component): dxTreeList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.items): Array<Object>
@@ -37,7 +37,7 @@ The index of the row on which the context menu is invoked. Refer to the followin
 ##### field(e.target): String
 The name of the element on which the context menu is invoked: *"header"*, *"content"*, or *"footer"*. This field is read-only.
 
-##### field(e.targetElement): TElement
+##### field(e.targetElement): DxElement
 #include common-ref-elementparam with { element: "element" }
 
 ---

@@ -16,13 +16,13 @@ Allows you to cancel execution of the default cell click handler.
 ##### field(e.cellData): Object
 The clicked cell's data.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "clicked cell" }
 
 ##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

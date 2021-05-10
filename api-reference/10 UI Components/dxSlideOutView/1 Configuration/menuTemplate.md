@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 Specifies a custom template for the menu content.
 
-##### param(menuElement): dxElement
+##### param(menuElement): DxElement
 #include common-ref-elementparam with { element: "menu" }
 
 ##### return: any

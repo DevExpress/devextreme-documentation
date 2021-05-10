@@ -16,13 +16,13 @@ Allows you to cancel replacing ordinary tags with the multi-tag.
 ##### field(e.component): dxTagBox
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
 Model data. Available only when using Knockout.
 
-##### field(e.multiTagElement): dxElement
+##### field(e.multiTagElement): DxElement
 #include common-ref-elementparam with { element: "multi-tag" }
 
 ##### field(e.selectedItems): Array<String, Number, Object>

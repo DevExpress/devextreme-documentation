@@ -1,4 +1,4 @@
-Users can insert and work with tables if you add the following items to the toolbar:
+Users can insert and modify tables if you add the following items to the toolbar:
 
 ---
 ##### jQuery

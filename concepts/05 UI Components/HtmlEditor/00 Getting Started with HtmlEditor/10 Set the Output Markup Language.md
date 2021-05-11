@@ -1,4 +1,4 @@
-The HtmlEditor can output markup in HTML or Markdown. Use the [valueType](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#valueType) property to define the language. If you use Markdown, add the <a href="https://www.npmjs.com/package/turndown" target="_blank" rel="noopener">turndown</a> and <a href="https://www.npmjs.com/package/showdown" target="_blank" rel="noopener">showdown</a> libraries to your project. In this tutorial, HTML is used as the output language.
+The HtmlEditor can output markup in HTML or Markdown. Use the [valueType](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#valueType) property to define the language. If you use Markdown, add the <a href="https://www.npmjs.com/package/turndown" target="_blank">turndown</a> and <a href="https://www.npmjs.com/package/showdown" target="_blank">showdown</a> libraries to your project. In this tutorial, HTML is used as the output language.
 
 Output markup is stored in the [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value) property. You can also use it to specify initial content, in which case the content's language should correspond to the **valueType**. Alternatively, HTML content can be declared directly inside the HtmlEditor element. In this case, the language (HTML) and the **valueType** can differ.
 
@@ -51,23 +51,23 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
                     <li>Tables support</li>
                 </ul>
                 <br>
-                <p>Supported frameworks and libraries</p>
+                <p>Supported frameworks and libraries:</p>
                 <table>
                     <tr>
                         <td><strong>jQuery</strong></td>
-                        <td style="text-align: right;">v2.1 - v2.2 and v3.x</td>
+                        <td>v2.1 - v2.2 and v3.x</td>
                     </tr>
                     <tr>
                         <td><strong>Angular</strong></td>
-                        <td style="text-align: right;">v7.0.x - v10.0.x</td>
+                        <td>v7.0.x - v10.0.x</td>
                     </tr>
                     <tr>
                         <td><strong>React</strong></td>
-                        <td style="text-align: right;">v16.2+</td>
+                        <td>v16.2+</td>
                     </tr>
                     <tr>
                         <td><strong>Vue</strong></td>
-                        <td style="text-align: right;">v2.6.3+</td>
+                        <td>v2.6.3+</td>
                     </tr>
                 </table>
             </div>
@@ -77,6 +77,14 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
     <!-- tab: index.css -->
     .dx-htmleditor-content img {
         vertical-align: middle;
+    }
+    
+    .dx-htmleditor-content table {
+        width: 50%;
+    }
+
+    .dx-htmleditor-content table td:last-child {
+        text-align: right;
     }
 
 ##### Angular
@@ -115,23 +123,23 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
             <li>Tables support</li>
         </ul>
         <br>
-        <p>Supported frameworks and libraries</p>
+        <p>Supported frameworks and libraries:</p>
         <table>
             <tr>
                 <td><strong>jQuery</strong></td>
-                <td style="text-align: right;">v2.1 - v2.2 and v3.x</td>
+                <td>v2.1 - v2.2 and v3.x</td>
             </tr>
             <tr>
                 <td><strong>Angular</strong></td>
-                <td style="text-align: right;">v7.0.x - v10.0.x</td>
+                <td>v7.0.x - v10.0.x</td>
             </tr>
             <tr>
                 <td><strong>React</strong></td>
-                <td style="text-align: right;">v16.2+</td>
+                <td>v16.2+</td>
             </tr>
             <tr>
                 <td><strong>Vue</strong></td>
-                <td style="text-align: right;">v2.6.3+</td>
+                <td>v2.6.3+</td>
             </tr>
         </table>
     </dx-html-editor>
@@ -139,6 +147,15 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
     <!-- tab: app.component.css -->
     ::ng-deep .dx-htmleditor-content img {
         vertical-align: middle;
+    }
+
+    
+    ::ng-deep .dx-htmleditor-content table {
+        width: 50%;
+    }
+
+    ::ng-deep .dx-htmleditor-content table td:last-child {
+        text-align: right;
     }
 
 ##### Vue
@@ -179,23 +196,23 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
                     <li>Tables support</li>
                 </ul>
                 <br>
-                <p>Supported frameworks and libraries</p>
+                <p>Supported frameworks and libraries:</p>
                 <table>
                     <tr>
                         <td><strong>jQuery</strong></td>
-                        <td style="text-align: right;">v2.1 - v2.2 and v3.x</td>
+                        <td>v2.1 - v2.2 and v3.x</td>
                     </tr>
                     <tr>
                         <td><strong>Angular</strong></td>
-                        <td style="text-align: right;">v7.0.x - v10.0.x</td>
+                        <td>v7.0.x - v10.0.x</td>
                     </tr>
                     <tr>
                         <td><strong>React</strong></td>
-                        <td style="text-align: right;">v16.2+</td>
+                        <td>v16.2+</td>
                     </tr>
                     <tr>
                         <td><strong>Vue</strong></td>
-                        <td style="text-align: right;">v2.6.3+</td>
+                        <td>v2.6.3+</td>
                     </tr>
                 </table>
             </div>
@@ -209,6 +226,14 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
     <style>
     .dx-htmleditor-content img {
         vertical-align: middle;
+    }
+
+    .dx-htmleditor-content table {
+        width: 50%;
+    }
+
+    .dx-htmleditor-content table td:last-child {
+        text-align: right;
     }
     </style>
 
@@ -250,23 +275,23 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
                 <li>Tables support</li>
             </ul>
             <br/>
-            <p>Supported frameworks and libraries</p>
+            <p>Supported frameworks and libraries:</p>
             <table>
                 <tr>
                     <td><strong>jQuery</strong></td>
-                    <td style="text-align: right;">v2.1 - v2.2 and v3.x</td>
+                    <td>v2.1 - v2.2 and v3.x</td>
                 </tr>
                 <tr>
                     <td><strong>Angular</strong></td>
-                    <td style="text-align: right;">v7.0.x - v10.0.x</td>
+                    <td>v7.0.x - v10.0.x</td>
                 </tr>
                 <tr>
                     <td><strong>React</strong></td>
-                    <td style="text-align: right;">v16.2+</td>
+                    <td>v16.2+</td>
                 </tr>
                 <tr>
                     <td><strong>Vue</strong></td>
-                    <td style="text-align: right;">v2.6.3+</td>
+                    <td>v2.6.3+</td>
                 </tr>
             </table>
         </div>
@@ -284,6 +309,14 @@ Output markup is stored in the [value](/Documentation/ApiReference/UI_Components
     <!-- tab: App.css -->
     .dx-htmleditor-content img {
         vertical-align: middle;
+    }
+
+    .dx-htmleditor-content table {
+        width: 50%;
+    }
+
+    .dx-htmleditor-content table td:last-child {
+        text-align: right;
     }
 
 ---

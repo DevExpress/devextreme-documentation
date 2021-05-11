@@ -13,7 +13,7 @@ The group's data.
 ##### param(itemIndex): Number
 The group's index.
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "group" }
 
 ##### return: String | Element | jQuery

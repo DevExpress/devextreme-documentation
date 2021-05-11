@@ -16,7 +16,7 @@ The UI component's instance.
 ##### field(e.data): any
 The task data.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

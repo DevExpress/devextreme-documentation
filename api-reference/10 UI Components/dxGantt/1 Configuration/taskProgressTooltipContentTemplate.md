@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies custom content for the tooltip that displays the task's progress while the progress handler is resized in the UI.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "progress area in the task tooltip" }
 
 ##### param(item): Object

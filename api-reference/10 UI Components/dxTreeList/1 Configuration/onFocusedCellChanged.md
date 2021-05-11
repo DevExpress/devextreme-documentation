@@ -10,7 +10,7 @@ A function that is executed after the focused cell changes. Applies only to cell
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cellElement): TElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "focused cell" }
 
 ##### field(e.column): dxTreeListColumn
@@ -22,7 +22,7 @@ The index of the cell's column.
 ##### field(e.component): dxTreeList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

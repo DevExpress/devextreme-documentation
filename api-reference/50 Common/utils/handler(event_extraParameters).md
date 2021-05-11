@@ -7,7 +7,7 @@ hidden:
 
 ##### return: Boolean
 
-##### param(event): EventObject
+##### param(event): DxEvent
 
 ##### param(extraParameters): Object
 

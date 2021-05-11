@@ -13,7 +13,7 @@ Information about the event.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 The UI component's container.
 
 ##### field(e.event): event
@@ -22,7 +22,7 @@ The UI component's container.
 ##### field(e.itemData): Object
 The clicked item's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number

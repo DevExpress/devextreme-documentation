@@ -1,6 +1,6 @@
 ---
 id: DraggableBase.Options.boundary
-type: String | TElement
+type: String | UserDefinedElement
 default: undefined
 ---
 ---

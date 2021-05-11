@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies custom content for the task tooltip.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "task tooltip" }
 
 ##### param(task): any

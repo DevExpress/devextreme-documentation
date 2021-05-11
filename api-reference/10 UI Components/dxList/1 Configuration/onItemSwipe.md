@@ -16,7 +16,7 @@ The UI component's instance.
 ##### field(e.direction): String
 The direction in which the item is swiped.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -25,7 +25,7 @@ The direction in which the item is swiped.
 ##### field(e.itemData): Object
 The swiped item's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number | Object

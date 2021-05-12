@@ -3,7 +3,7 @@ id: dxSchedulerScrolling
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A [scrolling](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/scrolling/) object.
 
 ---
 <!-- Description goes here -->

@@ -19,9 +19,6 @@ default: null
 ##### field(e.element): DxElement
 <!-- Description goes here -->
 
-##### field(e.key): any
-<!-- Description goes here -->
-
 ##### field(e.values): Array<any>
 <!-- Description goes here -->
 

@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression whose values indicate
 ##### param(data): Object
 The current node's data object.
 
-##### return: any
+##### return: void
 A Boolean value that indicates whether a node is locked.
 
 ---

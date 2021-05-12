@@ -43,6 +43,8 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
+    const gridRefKey = 'data-grid';
+
     export default {
         components: {
             DxDataGrid,
@@ -50,7 +52,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
         data() {
             return {
                 // ...
-                gridRefKey: 'data-grid',
+                gridRefKey
             };
         },
         methods: {

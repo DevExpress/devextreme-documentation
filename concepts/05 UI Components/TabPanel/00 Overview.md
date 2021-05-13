@@ -1,4 +1,4 @@
-The TabPanel is a UI component consisting of the [Tabs](/concepts/05%20UI%20Components/Tabs/00%20Overview.md '/Documentation/Guide/UI_Components/Tabs/Overview/') and [MultiView](/concepts/05%20UI%20Components/MultiView/00%20Overview.md '/Documentation/Guide/UI_Components/MultiView/Overview/') UI components. It automatically synchronizes the selected tab with the currently displayed view and vice versa.
+The TabPanel UI component consists of the [Tabs](/concepts/05%20UI%20Components/Tabs/00%20Overview.md '/Documentation/Guide/UI_Components/Tabs/Overview/') and [MultiView](/concepts/05%20UI%20Components/MultiView/00%20Overview.md '/Documentation/Guide/UI_Components/MultiView/Overview/') components. It automatically synchronizes the selected tab with the currently displayed view and vice versa.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/"

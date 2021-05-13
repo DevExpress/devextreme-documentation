@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression that provides a key o
 ##### param(data): Object
 The current node's data object.
 
-##### return: any
+##### return: void
 A node's parent container node.
 
 ---

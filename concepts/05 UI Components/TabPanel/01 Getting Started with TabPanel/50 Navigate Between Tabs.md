@@ -3,7 +3,7 @@ Specify the following properties to configure navigation between tabs:
 Configures swiping. This property's default value is **true** on touch devices and **false** on others.
 
 - [loop](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#loop)      
-Specifies whether looping is enabled.
+Specifies whether to loop items.
 
 - [animationEnabled](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#animationEnabled)      
 Specifies whether to animate the change of the selected item.

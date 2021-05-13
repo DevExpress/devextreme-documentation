@@ -4,6 +4,8 @@ type: Object
 ---
 ---
 ##### shortDescription
+[tags] xlsx, csv
+
 Configures client-side exporting.
 
 ---
@@ -364,7 +366,7 @@ The following instructions show how to enable and configure client-side export:
 
 The following restrictions apply when users export DataGrid:   
 
-- Only XLSX files are supported.
+- Only XLSX files are supported out of the box. To export DataGrid to CSV, implement the **exportDataGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
 
 - Excel limits the number of grouping levels to 7, while in the DataGrid it is unlimited.
 

@@ -4,6 +4,8 @@ module: excel_exporter
 ---
 ---
 ##### shortDescription
+[tags] xlsx, csv
+
 Exports pivot grid data to Excel.
 
 ##### return: Promise<CellRange>
@@ -189,9 +191,15 @@ You can call this method at any point in your application. In the example below,
         e.cancel = true;
     }
 
----     
+---    
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
 }
+
+[note]You can also export PivotGrid to CSV. to do this, implement the **exportPivotGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
+
+#####See Also#####
+- [export](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/)
 
 <!-- import * from 'api-reference\50 Common\utils\excelExporter\exportDataGrid(options).md' -->

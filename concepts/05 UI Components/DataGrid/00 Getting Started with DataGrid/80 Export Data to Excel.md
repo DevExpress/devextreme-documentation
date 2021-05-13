@@ -207,7 +207,7 @@ This method can be called at any point in your application. The following code c
 
 Run the code and click the Export button in the upper-right corner. Grid data should be exported to the DataGrid.xlsx file.
 
-[note]You can also export DataGrid to CSV. To do this, implement the **exportDataGrid(options)** method in the same way as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
+[note]#include uiwidgets-data-grid-csv-export
 
 For further information on the DataGrid component, refer to the following resources:
 

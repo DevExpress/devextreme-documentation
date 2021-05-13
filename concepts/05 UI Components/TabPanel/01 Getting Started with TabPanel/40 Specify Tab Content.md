@@ -54,6 +54,14 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
                 }
             }]
         });
+
+        const employeeData = {
+            name: 'John Heart',
+            position: 'CEO',
+            hireDate: new Date(2012, 4, 13),
+            officeNumber: 901,
+            notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.'
+        };
     });
 
 ##### Angular

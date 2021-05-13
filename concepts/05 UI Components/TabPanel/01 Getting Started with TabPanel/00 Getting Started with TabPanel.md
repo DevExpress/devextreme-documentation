@@ -1,4 +1,4 @@
-The TabPanel UI component consists of the [Tabs](/Documentation/Guide/UI_Components/Tabs/Overview/) and [MultiView](/Documentation/Guide/UI_Components/MultiView/Overview/) UI components. TabPanel automatically synchronizes the selected tab with the currently displayed view and vice versa. 
+The TabPanel UI component consists of the [Tabs](/Documentation/ApiReference/UI_Components/dxTabs/) and [MultiView](/Documentation/ApiReference/UI_Components/dxMultiView/) components. TabPanel automatically synchronizes the selected tab with the currently displayed view and vice versa. 
 
 This tutorial explains how to add a TabPanel to a page and configure its core features. The following control demonstrates the result:
 

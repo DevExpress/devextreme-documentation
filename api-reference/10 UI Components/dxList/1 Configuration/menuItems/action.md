@@ -12,7 +12,7 @@ Holds on a function called when the item is clicked.
 ##### param(itemData): Object
 The item's data.
 
-##### return: any
+##### return: void
 <!-- Description goes here -->
 
 ---

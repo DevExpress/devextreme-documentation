@@ -197,7 +197,7 @@ You can call this method at any point in your application. In the example below,
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
 }
 
-[note]You can also export PivotGrid to CSV. to do this, implement the **exportPivotGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
+[note]You can also export PivotGrid to CSV. To do this, implement the **exportPivotGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
 
 #####See Also#####
 - [export](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/)

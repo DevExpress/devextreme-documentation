@@ -19,9 +19,6 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.key): any
-<!-- Description goes here -->
-
 ##### field(e.values): Array<any>
 The resources' values.
 

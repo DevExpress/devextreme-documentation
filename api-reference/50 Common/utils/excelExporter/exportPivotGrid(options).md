@@ -197,7 +197,9 @@ You can call this method at any point in your application. In the example below,
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
 }
 
-[note]#include uiwidgets-pivot-grid-csv-export
+#include uiwidgets-grids-export-csv with {
+    componentName: "PivotGrid"
+}
 
 #####See Also#####
 - [export](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/)

@@ -202,7 +202,9 @@ You can call this method at any point in your application. In the example below,
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
 }
 
-[note]#include uiwidgets-data-grid-csv-export
+#include uiwidgets-grids-export-csv with {
+    componentName: "DataGrid"
+}
 
 #####See Also#####
 - [export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/')

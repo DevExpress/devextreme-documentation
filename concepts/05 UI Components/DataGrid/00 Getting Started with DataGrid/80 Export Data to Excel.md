@@ -207,7 +207,7 @@ This method can be called at any point in your application. The following code c
 
 Run the code and click the Export button in the upper-right corner. Grid data should be exported to the DataGrid.xlsx file.
 
-[note]#include uiwidgets-data-grid-csv-export
+#include uiwidgets-data-grid-csv-export
 
 For further information on the DataGrid component, refer to the following resources:
 

@@ -31,7 +31,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Enter</td>
-        <td>Selects the focused day.</td>
+        <td>Selects the focused day. When the <a href="/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type">type</a> is <i>dateTime</i> and user focuses the date other than the date chosen in the DateBox, the Enter key selects the new date without closing the calendar popup.</td>
     </tr>
     <tr>
         <td>Alt + &uarr; / Alt + &darr;</td>

@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression that provides an inde
 ##### param(data): Object
 The current edge's data object.
 
-##### return: any
+##### return: void
 An index of a shape connection point where an edge starts.
 
 ---

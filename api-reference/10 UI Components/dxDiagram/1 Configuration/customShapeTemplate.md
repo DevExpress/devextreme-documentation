@@ -15,7 +15,7 @@ Information about the currently processed shape.
 ##### field(data.item): dxDiagramShape
 The processed shape's object.
 
-##### return: any
+##### return: void
 <!-- Description goes here -->
 
 ---

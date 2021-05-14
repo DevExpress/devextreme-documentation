@@ -15,7 +15,7 @@ Information about the shape.
 ##### field(data.item): dxDiagramShape
 The shapes object.
 
-##### return: any
+##### return: void
 <!-- Description goes here -->
 
 ---

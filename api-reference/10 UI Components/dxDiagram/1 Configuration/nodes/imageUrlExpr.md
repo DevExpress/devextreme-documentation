@@ -10,7 +10,7 @@ Specifies the name of a data source field or expression that provides an image U
 ##### param(data): Object
 The current node's data object.
 
-##### return: void
+##### return: any
 An image URL or Base64 encoded image for a node.
 
 ---

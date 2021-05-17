@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression that provides a node'
 ##### param(data): Object
 The current node's data object.
 
-##### return: void
+##### return: any
 A node's z-index.
 
 ---

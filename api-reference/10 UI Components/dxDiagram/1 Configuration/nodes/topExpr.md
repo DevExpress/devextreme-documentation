@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression that provides the y-c
 ##### param(data): Object
 The current node's data object.
 
-##### return: void
+##### return: any
 The y-coordinate of a node's top border.
 
 ---

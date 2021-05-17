@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression that provides a paren
 ##### param(data): Object
 The current node's data object.
 
-##### return: void
+##### return: any
 A parent node key for a node.
 
 ---

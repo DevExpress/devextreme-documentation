@@ -10,7 +10,7 @@ Specifies the name of a data source field or an expression that provides edge ke
 ##### param(data): Object
 The current edge's data object.
 
-##### return: void
+##### return: any
 An edge key.
 
 ---

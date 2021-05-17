@@ -1,7 +1,7 @@
 The HtmlEditor is a WYSIWYG editor that allows users to format textual and visual content and output it in HTML or Markdown. The following features are supported:
 
 - Inline, block, and embedded [formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') 
-- [Adaptive toolbar](/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Customize_the_Toolbar) 
+- [Adaptive toolbar](/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Configure_the_Toolbar) 
 - [Built-in formats' and modules' extension](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/33%20Customize%20Built-In%20Formats%20and%20Modules '/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Customize_Built-In_Formats_and_Modules')
 - [Custom formats and modules](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/get(componentPath).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#getcomponentPath')
 - [Tables](/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Work_with_Tables)

@@ -165,7 +165,7 @@ If you need a more specific customization, define a custom template in the **col
             <template #title-header="{ data }">
                 <p style="font-size:16px">{{ data.column.caption }}</p>
             </template>
-            <template #address-header">
+            <template #address-header>
                 <i style="color: black">Mailing Address</i>
             </template>
         </DxDataGrid>

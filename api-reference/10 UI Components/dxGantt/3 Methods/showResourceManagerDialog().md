@@ -124,6 +124,7 @@ Invokes the Resource Manager dialog.
         }
     </script>
 
+---
 
 #####See Also#####
 - [onResourceManagerDialogShowing](/api-reference/10%20UI%20Components/dxGantt/4%20Events/resourceManagerDialogShowing.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing')

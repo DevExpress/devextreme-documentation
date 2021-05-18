@@ -2,68 +2,12 @@
 
 To get the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance, call the Chart's [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#getDataSource') method:
 
----
-
-#####**jQuery**
-
-    <!--JavaScript-->var ds = $("#chartContainer").dxChart("getDataSource");
-
-#####**AngularJS**
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.ds = {};
-            $scope.chartOptions = {
-                // ...
-                onInitialized: function (e) {
-                    $scope.ds = e.component.getDataSource();  
-                }
-            };
-        });
-
-#####**Knockout**
-
-    <!--JavaScript-->var viewModel = {
-        ds: {},
-        chartOptions: {
-            // ...
-            onInitialized: function (e) {
-                viewModel.ds = e.component.getDataSource();    
-            }
-        }
-    };
-    
-    ko.applyBindings(viewModel);
-    
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild } from "@angular/core";
-    import { DxChartModule, DxChartComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        @ViewChild(DxChartComponent, { static: false }) chart: DxChartComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxChartComponent) chart: DxChartComponent;
-        ds: any = {};
-        getDataSource() {
-            this.ds = this.chart.instance.getDataSource();
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxChartModule
-        ],
-        // ...
-    })
-    
----
+#include data-binding-examples-update-dx-datasource
 
 Then, access the underlying store with the [store()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/store().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#store') method, and call the store's [push(changes)](/api-reference/30%20Data%20Layer/Store/3%20Methods/push(changes).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#pushchanges') method to modify data. The Chart will be updated automatically.
 
     <!--JavaScript-->
-    ds.store().push([
+    getDataSource().store().push([
         { type: "update", key: "Oranges", data: { count: 10 } },
         { type: "remove", key: "Apples" }
     ]);

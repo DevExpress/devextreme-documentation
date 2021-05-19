@@ -158,5 +158,3 @@ Use the following properties to create a shape template:
             ...
 
 ---
-
-![Diagram - Shape Template](/images/diagram/shape-template.png) 

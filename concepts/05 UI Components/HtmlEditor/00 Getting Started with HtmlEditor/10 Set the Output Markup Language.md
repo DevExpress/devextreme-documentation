@@ -1,6 +1,6 @@
 The HtmlEditor can output markup in HTML or Markdown. Use the [valueType](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#valueType) property to define the language. If you use Markdown, add the <a href="https://www.npmjs.com/package/turndown" target="_blank">turndown</a> and <a href="https://www.npmjs.com/package/showdown" target="_blank">showdown</a> libraries to your project. In this tutorial, HTML is used as the output language.
 
-Output markup is stored in the [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value) property. You can also use it to specify initial content, in which case the content's language should correspond to the **valueType**. Alternatively, HTML content can be declared directly inside the HtmlEditor element. In this case, the language (HTML) and the **valueType** can differ.
+The control stores the document markup in the [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value) property. If you use this property to specify the document's initial content, the language should match **valueType**. You can also declare HTML content inside the HtmlEditor element. In this case, the language (HTML) and **valueType** can differ.
 
 ---
 ##### jQuery

@@ -1,5 +1,3 @@
-To bind the Funnel to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/#dataSource') property. The array should contain objects.
-
 ---
 ##### jQuery
 
@@ -13,21 +11,21 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
     ];
 
     $(function() {
-        $("#funnelContainer").dxFunnel({
+        $("#{widgetName}Container").dx{WidgetName}({
             dataSource: fruits,
-            argumentField: 'fruit',
-            valueField: 'count'
+            series: {
+                argumentField: 'fruit',
+                valueField: 'count'
+            }
         });
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-funnel
-        [dataSource]="fruits"
-        argumentField="fruit"
-        valueField="count">
-    </dx-funnel>
+    <dx-{widget-name} [dataSource]="fruits">
+        <dxi-series argumentField="fruit" valueField="count"></dxi-series>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -52,7 +50,7 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxFunnelModule } from 'devextreme-angular';
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -60,7 +58,7 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
         ],
         imports: [
             BrowserModule,
-            DxFunnelModule
+            Dx{WidgetName}Module
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -71,19 +69,20 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
 
     <!-- tab: App.vue -->
     <template>
-        <DxFunnel
-            :data-source="fruits"
-            argument-field="fruit"
-            value-field="count"
-        />
+        <Dx{WidgetName} :data-source="fruits">
+            <DxSeries argument-field="fruit" value-field="count" />
+        </Dx{WidgetName}>
     </template>
 
     <script>
-    import DxFunnel from 'devextreme-vue/funnel';
+    import Dx{WidgetName}, {
+        DxSeries
+    } from 'devextreme-vue/{widget-name}';
 
     export default {
         components: {
-            DxFunnel
+            Dx{WidgetName},
+            DxSeries
         },
         data() {
             return {
@@ -102,7 +101,9 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
 ##### React
 
     <!-- tab: App.js -->
-    import Funnel from 'devextreme-react/funnel';
+    import {WidgetName}, {
+        Series
+    } from 'devextreme-react/{widget-name}';
 
     const fruits = [
         { fruit: 'Apples', count: 10 },
@@ -114,15 +115,10 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
 
     export default function App() {
         return (
-            <Funnel
-                dataSource={fruits}
-                argumentField="fruit"
-                valueField="count"
-            />
+            <{WidgetName} dataSource={fruits}>
+                <Series argumentField="fruit" valueField="count" />
+            </{WidgetName}>
         );
     }
 
 ---
-
-#####See Also#####
-- [Update Data in the Funnel](/concepts/70%20Data%20Binding/03%20Update%20Data '/Documentation/Guide/Data_Binding/Update_Data/')

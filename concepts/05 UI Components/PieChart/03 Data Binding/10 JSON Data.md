@@ -1,70 +1,10 @@
 To bind the PieChart to data in a JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource') property.  
 
----
-##### jQuery
-
-    <!--JavaScript-->$(function() {
-        $("#pieChartContainer").dxPieChart({
-            dataSource: "http://www.example.com/dataservices/data.json"
-        });
-    });
-
-##### Angular
-
-    <!--HTML-->
-    <dx-pie-chart
-        dataSource="http://www.example.com/dataservices/data.json">
-    </dx-pie-chart>
-
-    <!--TypeScript-->
-    import { DxPieChartModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxPieChartModule
-        ],
-        // ...
-    })
-
----
+#include data-binding-examples-json
 
 Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
 
----
-##### jQuery
-
-    <!--JavaScript-->$(function() {
-        $("#pieChartContainer").dxPieChart({
-            dataSource: "http://www.example.com/dataservices/jsonpdata?callback=?"
-        });
-    });
-
-##### Angular
-
-    <!--HTML-->
-    <dx-pie-chart
-        dataSource="http://www.example.com/dataservices/jsonpdata?callback=?">
-    </dx-pie-chart>
-
-    <!--TypeScript-->
-    import { DxPieChartModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxPieChartModule
-        ],
-        // ...
-    })
-
----
+#include data-binding-examples-jsonp
 
 If you need to process data after obtaining it, implement the [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). For details, see the [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/') topic.
 

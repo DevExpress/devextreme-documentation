@@ -5,7 +5,7 @@
     
     <!-- tab: index.js -->
     $(function() {
-        $("#tab-panel").dxTabPanel({
+        $("#tabPanel").dxTabPanel({
             // Configuration goes here
         });
     });
@@ -24,7 +24,7 @@
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">
-            <div id="tab-panel"></div>
+            <div id="tabPanel"></div>
         </body>
     </html>
 
@@ -39,7 +39,7 @@
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a TabPanel:
 
     <!-- tab: app.component.html -->
-    <dx-tab-panel id="tab-panel">
+    <dx-tab-panel id="tabPanel">
         <!-- Configuration goes here -->
     </dx-tab-panel>
 
@@ -87,7 +87,7 @@
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel id="tab-panel">
+        <DxTabPanel id="tabPanel">
             <!-- Configuration goes here -->
         </DxTabPanel>
     </template>
@@ -124,7 +124,7 @@
     const App = () => {
         return (
             <div className="App">
-                <TabPanel id="tab-panel">
+                <TabPanel id="tabPanel">
                     {/* Configuration goes here */}
                 </TabPanel>
             </div>

@@ -1,66 +1,67 @@
 You can use the following properties to specify tab content:       
 - [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate)
-Specifies a custom template for content of all TabPanel items.
+Specifies a custom template for content of all TabPanel views.
 
 - **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text)        
-Specifies text displayed in a separate tab.
+Specifies text displayed in a separate view. This property overrides **itemTemplate**.
 
 - **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template)        
-Allows you to set a custom template for a separate tab's content. 
+Allows you to set a custom template for a separate view's content. This property overrides both properties above. 
 
 - [noDataText](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#noDataText)        
-Specifies text or markup to display when items do not have content.
+Specifies text or markup to display when views do not have content.
 
-This tutorial demonstrates the use of the **items[]**.**template** property. This property allows to specify different content for separate tabs. In the code below, the tabs contain [Form](/Documentation/ApiReference/UI_Components/dxForm/), [TextArea](/Documentation/ApiReference/UI_Components/dxTextArea/), and [RadioGroup](/Documentation/ApiReference/UI_Components/dxRadioGroup/) UI components. 
+This tutorial demonstrates the use of the **items[]**.**template** property. This property allows to specify different content for separate views. In the code below, the views contain [Form](/Documentation/ApiReference/UI_Components/dxForm/), [TextArea](/Documentation/ApiReference/UI_Components/dxTextArea/), and [RadioGroup](/Documentation/ApiReference/UI_Components/dxRadioGroup/) UI components. 
 
 ---
 ##### jQuery  
 
     <!-- tab: index.js -->
     $(function(){   
-        $("#tab-panel").dxTabPanel({
+        $("#tabPanel").dxTabPanel({
             items: [{ 
                 title: "Employee",
                 icon: "floppy",
                 template: function (itemData, itemIndex, element) {
-                    let formDiv = $("<div style='padding:15px'>")
-                    formDiv.appendTo(element);
+                    const formDiv = $("<div style='padding:15px'>")
                     formDiv.dxForm({
                         formData: employeeData,
                         items: ["name", "position", "hireDate", "officeNumber"]
-                    }).dxForm('instance');
+                    });
+                    formDiv.appendTo(element);
                 }
             }, {
                 title: "Notes",
                 icon: "comment",
                 template: function (itemData, itemIndex, element) {
-                    let textAreaDiv = $("<div style='padding:15px; height: 100%'>")
-                    textAreaDiv.appendTo(element);
+                    const textAreaDiv = $("<div style='padding:15px; height: 100%'>")
                     textAreaDiv.dxTextArea({
                         value: employeeData.notes
-                    }).dxTextArea('instance');
+                    });
+                    textAreaDiv.appendTo(element);
                 }
             }, {
                 title: "Role",
                 icon: "isnotblank",
                 badge: "new",
                 template: function (itemData, itemIndex, element) {
-                    let radioGroupDiv = $("<div style='padding:15px'>")
-                    radioGroupDiv.appendTo(element);
+                    const radioGroupDiv = $("<div style='padding:15px'>")
                     radioGroupDiv.dxRadioGroup({
-                        items: ["Owner", "Administrator", "Manager"],
-                        value: "Owner"
-                    }).dxRadioGroup('instance');
+                        items: employeeData.roles,
+                        value: employeeData.roles[0]
+                    });
+                    radioGroupDiv.appendTo(element);
                 }
             }]
         });
 
         const employeeData = {
-            name: 'John Heart',
-            position: 'CEO',
+            name: "John Heart",
+            position: "CEO",
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.'
+            notes: "John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.",
+            roles: ["Chief Officer", "Manager", "Administrator"]
         };
     });
 
@@ -82,15 +83,15 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
         <dxi-item title="Notes" icon="comment">
             <div *dxTemplate>
                 <dx-text-area
-                    [value]="employeeData.notes">
+                    [(value)]="employeeData.notes">
                 </dx-text-area>
             </div>
         </dxi-item>
         <dxi-item title="Role" icon="isnotblank" badge="new">
             <div *dxTemplate>
                 <dx-radio-group
-                    [items]="radioGroupItems"
-                    value="Owner">
+                    [items]="employeeData.roles"
+                    [(value)]="employeeData.roles[0]">
                 </dx-radio-group>
             </div>
         </dxi-item>
@@ -110,10 +111,9 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
             position: 'CEO',
             hireDate: new Date(2012, 4, 13),
             officeNumber: 901,
-            notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.'
+            notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.',
+            roles: ['Chief Officer', 'Administrator', 'Manager']
         }
-
-        radioGroupItems = ['Owner', 'Administrator', 'Manager']
     }
 
     <!-- tab: app.module.ts -->
@@ -159,16 +159,16 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
             </DxItem>
             <DxItem title="Notes" icon="comment">
                 <template #default>
-                    <DxTextArea
-                        :value="employeeData.notes"
+                    <DxTextArea 
+                        v-model:value="employeeData.notes"
                     />
                 </template>
             </DxItem>
             <DxItem title="Role" icon="isnotblank" badge="new">
                 <template #default>
                     <DxRadioGroup 
-                        :items="radioGroupItems"
-                        value="Owner"
+                        :items="employeeData.roles"
+                        v-model:value="employeeData.roles[0]"
                     />
                 </template>
             </DxItem>
@@ -198,16 +198,11 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
                 position: 'CEO',
                 hireDate: new Date(2012, 4, 13),
                 officeNumber: 901,
-                notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.'
+                notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.',
+                roles: ['Chief Officer', 'Manager', 'Administrator']
             };
-            const radioGroupItems = [
-                'Owner', 
-                'Administrator', 
-                'Manager'
-            ];
             return {
-                employeeData,
-                radioGroupItems
+                employeeData
             };
         },
     }
@@ -229,14 +224,9 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
         position: 'CEO',
         hireDate: new Date(2012, 4, 13),
         officeNumber: 901,
-        notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.'
+        notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.',
+        roles: ['Chief Officer', 'Administrator', 'Manager']
     };
-
-    const radioGroupItems = [
-        'Owner', 
-        'Administrator', 
-        'Manager'
-    ];
 
     const App = () => {
         return (
@@ -251,13 +241,13 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
                 </Item>
                 <Item title="Notes" icon="comment">
                     <TextArea
-                        value={employeeData.notes}
+                        defaultValue={employeeData.notes}
                     />
                 </Item>
                 <Item title="Role" icon="isnotblank" badge="new">
                     <RadioGroup 
-                        items={radioGroupItems}
-                        value="Owner"
+                        items={employeeData.roles}
+                        defaultValue={employeeData.roles[0]}
                     />
                 </Item>
             </TabPanel>

@@ -1,4 +1,6 @@
-To configure titles for individual items, specify the image for a tab in the **items[]**.[icon](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#icon) property. Refer to this property's description to see the available icons. You can also use the [badge](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge) property to create a badge with custom text as shown in code below. This code produces the following output:
+To create tabs, specify the [items[]](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/) array. TabPanel generates a tab with a view for each item in this array. 
+
+To configure an individual tab, specify a tab's [title](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#title). Use the [icon](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#icon) property to specify an image for a tab. Refer to this property's description to see the available icons. You can also use the [badge](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge) property to create a badge with custom text as shown in code below. This code produces the following output:
 
 ![DevExtreme TabPanel: Customized Tabs](/images/UiWidgets/tab-panel-getting-started-customized-tabs.png)
 
@@ -6,7 +8,7 @@ To configure titles for individual items, specify the image for a tab in the **i
 ##### jQuery  
     <!-- tab: index.js -->
     $(function(){   
-        $("#tab-panel").dxTabPanel({
+        $("#tabPanel").dxTabPanel({
             items: [{ 
                 title: "Employee",
                 icon: "floppy",
@@ -38,26 +40,6 @@ To configure titles for individual items, specify the image for a tab in the **i
             <!-- ... -->
         </dxi-item>
     </dx-tab-panel>
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxTabPanelModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxTabPanelModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -117,4 +99,4 @@ To configure titles for individual items, specify the image for a tab in the **i
 
 ---
 
-You can also use the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate) property to specify a custom template for titles of all items. The **items**.[tabTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#tabTemplate) property allows you to specify a template for a separate item's title. This approach is not shown in this tutorial but you can refer to this property's description for details.
+You can also use the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate) property to specify a custom template for all tabs. **items**.[tabTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#tabTemplate) overrides the **itemTitleTemplate** property and allows you to specify a template for an individual tab. This approach is not shown in this tutorial but you can refer to this property's description for details.

@@ -1,9 +1,10 @@
 .demo-container {
     margin: 50px 50px;
     width: 90vh;
+    height: 480px
 }
 
 #tabPanel {
-    height: 250px;
+    height: 350px;
     width: 500px;
 }

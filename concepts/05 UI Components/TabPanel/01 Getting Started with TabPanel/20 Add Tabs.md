@@ -1,4 +1,4 @@
-To create tabs, specify the [items[]](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/) property. TabPanel generates a tab for each item in this array. The following code creates three tabs with [titles](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#title) and empty views:
+To create tabs, specify the [items[]](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/) array. TabPanel generates a tab for each item in this array. The following code creates three tabs with [titles](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#title) and empty views:
 
 ![DevExtreme TabPanel: Empty Tabs](/images/UiWidgets/tab-panel-getting-started-empty-tabs.png)
 

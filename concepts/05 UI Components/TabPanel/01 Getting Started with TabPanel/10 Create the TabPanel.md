@@ -119,7 +119,7 @@
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { TabPanel} from 'devextreme-react/tab-panel';
+    import TabPanel from 'devextreme-react/tab-panel';
 
     const App = () => {
         return (

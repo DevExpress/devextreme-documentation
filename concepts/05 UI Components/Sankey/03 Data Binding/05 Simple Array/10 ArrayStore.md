@@ -3,7 +3,8 @@ You can place a JavaScript array in an [ArrayStore](/api-reference/30%20Data%20L
 ---
 ##### jQuery
 
-    <!--JavaScript-->var sankeyData = [
+    <!-- tab: index.js -->
+    const sankeyData = [
         { source: "Brazil", target: "Spain", weight: 4 },
         { source: "Brazil", target: "Portugal", weight: 5 },
         { source: "Brazil", target: "England", weight: 2 },
@@ -68,6 +69,87 @@ You can place a JavaScript array in an [ArrayStore](/api-reference/30%20Data%20L
         [dataSource]="sankeyDataSource">
     </dx-sankey>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+         <DxSankey
+            :data-source="sankeyDataSource"
+        />
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+    import DataSource from 'devextreme/data/data_source';
+
+    const sankeyData = [
+        { source: "Brazil", target: "Spain", weight: 4 },
+        { source: "Brazil", target: "Portugal", weight: 5 },
+        { source: "Brazil", target: "England", weight: 2 },
+        { source: "Canada", target: "Portugal", weight: 2 },
+        { source: "Canada", target: "England", weight: 1 },
+        { source: "Mexico", target: "Portugal", weight: 9 },
+        { source: "Mexico", target: "Spain", weight: 5 }
+    ];
+
+    const sankeyDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: sankeyData,
+            onLoaded: function () {
+                // Event handling commands go here
+            }
+        },
+        paginate: false
+    });
+
+    export default {
+        components: {
+            DxSankey
+        },
+        data() {
+            return {
+                sankeyDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Sankey from 'devextreme-react/sankey';
+    import DataSource from 'devextreme/data/data_source';
+
+    const sankeyData = [
+        { source: "Brazil", target: "Spain", weight: 4 },
+        { source: "Brazil", target: "Portugal", weight: 5 },
+        { source: "Brazil", target: "England", weight: 2 },
+        { source: "Canada", target: "Portugal", weight: 2 },
+        { source: "Canada", target: "England", weight: 1 },
+        { source: "Mexico", target: "Portugal", weight: 9 },
+        { source: "Mexico", target: "Spain", weight: 5 }
+    ];
+
+    const sankeyDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: sankeyData,
+            onLoaded: function () {
+                // Event handling commands go here
+            }
+        },
+        paginate: false
+    });
+
+    export default function App() {
+        return (
+            <Sankey
+                dataSource={sankeyDataSource}
+            />
+        );
+    }
+
 ---
 
 The **DataSource** can also be used for data processing. In the following example, it is used to [map](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping') an array of arrays provided originally to a Sankey-supported array of objects:
@@ -75,7 +157,8 @@ The **DataSource** can also be used for data processing. In the following exampl
 ---
 ##### jQuery
 
-    <!--JavaScript-->var sankeyArray = [
+    <!--JavaScript-->
+    const sankeyArray = [
         [ "Brazil", "Spain", 4 ],
         [ "Brazil", "Portugal", 5 ],
         [ "Brazil", "England", 2 ],
@@ -140,6 +223,95 @@ The **DataSource** can also be used for data processing. In the following exampl
     <!--HTML--><dx-sankey
         [dataSource]="sankeyDataSource">
     </dx-sankey>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+         <DxSankey
+            :data-source="sankeyDataSource"
+        />
+    </template>
+
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
+    import DataSource from 'devextreme/data/data_source';
+
+    const sankeyArray = [
+        [ "Brazil", "Spain", 4 ],
+        [ "Brazil", "Portugal", 5 ],
+        [ "Brazil", "England", 2 ],
+        [ "Canada", "Portugal", 2 ],
+        [ "Canada", "England", 1 ],
+        [ "Mexico", "Portugal", 9 ],
+        [ "Mexico", "Spain", 5 ]
+    ];
+
+    const sankeyDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: sankeyArray
+        },
+        map: (item) => {
+            return {
+                source: item[0],
+                target: item[1],
+                weight: item[2]
+            }
+        },
+        paginate: false
+    });
+
+    export default {
+        components: {
+            DxSankey
+        },
+        data() {
+            return {
+                sankeyDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Sankey from 'devextreme-react/sankey';
+    import DataSource from 'devextreme/data/data_source';
+
+    const sankeyArray = [
+        [ "Brazil", "Spain", 4 ],
+        [ "Brazil", "Portugal", 5 ],
+        [ "Brazil", "England", 2 ],
+        [ "Canada", "Portugal", 2 ],
+        [ "Canada", "England", 1 ],
+        [ "Mexico", "Portugal", 9 ],
+        [ "Mexico", "Spain", 5 ]
+    ];
+
+    const sankeyDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: sankeyArray
+        },
+        map: (item) => {
+            return {
+                source: item[0],
+                target: item[1],
+                weight: item[2]
+            }
+        },
+        paginate: false
+    });
+
+    export default function App() {
+        return (
+            <Sankey
+                dataSource={sankeyDataSource}
+            />
+        );
+    }
 
 ---
 

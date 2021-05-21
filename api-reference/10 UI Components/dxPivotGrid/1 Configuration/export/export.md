@@ -9,7 +9,7 @@ type: Object
 Configures client-side exporting.
 
 ---
-A user can click the **Export** button to save an Excel file with the exported data. Data types, sorting, filtering, and grouping settings are maintained.
+A user can click the **Export** button to save an Excel file with the exported data. Data types, sort, filter, and group settings are maintained.
 
 The following instructions show how to enable and configure client-side export:
 

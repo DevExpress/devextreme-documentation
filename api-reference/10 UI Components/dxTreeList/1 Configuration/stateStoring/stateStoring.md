@@ -27,7 +27,7 @@ State storing saves the following properties:
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#name">name</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#dataType">dataType</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#width">width</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a> (only if the <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/">column chooser</a> is <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#enabled">enabled</a>)</li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortOrder">sortOrder</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortIndex">sortIndex</a></li>
             </ul>

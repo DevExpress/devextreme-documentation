@@ -1,5 +1,6 @@
 ---
-id: ErrorsUIWidgets.W1020
+id: UserDefinedElement
+type: HTMLElement | SVGElement | jQuery
 ---
 ---
 ##### shortDescription

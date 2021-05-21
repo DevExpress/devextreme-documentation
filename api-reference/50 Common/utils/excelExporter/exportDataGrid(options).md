@@ -4,6 +4,8 @@ module: excel_exporter
 ---
 ---
 ##### shortDescription
+[tags] xlsx, csv
+
 Exports grid data to Excel.
 
 ##### return: Promise<CellRange>
@@ -198,6 +200,10 @@ You can call this method at any point in your application. In the example below,
 
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
+}
+
+#include uiwidgets-grids-export-csv with {
+    componentName: "DataGrid"
 }
 
 #####See Also#####

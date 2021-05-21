@@ -3,10 +3,10 @@ You can use the following properties to specify tab content:
 Specifies a custom template for content of all TabPanel views.
 
 - **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text)        
-Specifies text displayed in a separate view. This property overrides **itemTemplate**.
+Specifies text displayed in a separate view. 
 
 - **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template)        
-Allows you to set a custom template for a separate view's content. This property overrides both properties above. 
+Allows you to set a custom template for a separate view's content. This property overrides **itemTemplate**.
 
 - [noDataText](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#noDataText)        
 Specifies text or markup to display when views do not have content.

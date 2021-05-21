@@ -16,7 +16,7 @@ An array of broken rules. The structure of rule objects is described in the [Val
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.errorText): String

@@ -1,6 +1,6 @@
 ---
 id: positionConfig.of
-type: String | TElement | Window
+type: String | UserDefinedElement | Window
 ---
 ---
 ##### shortDescription

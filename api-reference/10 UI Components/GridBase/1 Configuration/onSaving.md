@@ -19,7 +19,7 @@ Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

@@ -22,7 +22,8 @@ If these extensions do not suit your needs, configure the **CustomStore** and im
 
 The example below shows how to implement the **load** function. Note that in this example, the **CustomStore** is not declared explicitly. Instead, its load operation is implemented directly in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') configuration object to shorten the example.
 
-    <!--JavaScript-->
+##### jQuery
+
     $(function(){
         $("#pivotGridContainer").dxPivotGrid({
             dataSource: {
@@ -53,6 +54,396 @@ The example below shows how to implement the **load** function. Note that in thi
             }
         });
     });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+<dx-pivot-grid [dataSource]="dataSource"> </dx-pivot-grid>
+
+    <!-- tab: app.component.ts -->
+import { NgModule, Component, enableProdMode } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
+import { DxPivotGridModule } from "devextreme-angular";
+import CustomStore from "devextreme/data/custom_store";
+
+@Component({
+  styleUrls: ["./app.component.css"],
+  selector: "demo-app",
+  templateUrl: "./app.component.html"
+})
+export class AppComponent {
+  dataSource: any;
+
+  constructor(httpClient: HttpClient) {
+    function isNotEmpty(value: any): boolean {
+      return value !== undefined && value !== null && value !== "";
+    }
+    this.dataSource = {
+      remoteOperations: true,
+      store: new CustomStore({
+        key: "OrderNumber",
+        load: function (loadOptions: any) {
+          let params: HttpParams = new HttpParams();
+          [
+            "skip",
+            "take",
+            "requireTotalCount",
+            "requireGroupCount",
+            "sort",
+            "filter",
+            "totalSummary",
+            "group",
+            "groupSummary"
+          ].forEach(function (i) {
+            if (i in loadOptions && isNotEmpty(loadOptions[i]))
+              params = params.set(i, JSON.stringify(loadOptions[i]));
+          });
+          return httpClient
+            .get(
+              "https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders",
+              { params: params }
+            )
+            .toPromise()
+            .then((result: any) => {
+              if ("data" in result) {
+                return {
+                  data: result.data,
+                  summary: result.summary
+                }
+              } else {
+                return result;
+              }
+            })
+            .catch((error) => {
+              throw "Data Loading Error";
+            });
+        }
+      }),
+      fields: [
+        {
+          caption: "Category",
+          dataField: "ProductCategoryName",
+          width: 250,
+          expanded: true,
+          sortBySummaryField: "SalesAmount",
+          sortBySummaryPath: [],
+          sortOrder: "desc",
+          area: "row"
+        },
+        {
+          caption: "Subcategory",
+          dataField: "ProductSubcategoryName",
+          width: 250,
+          sortBySummaryField: "SalesAmount",
+          sortBySummaryPath: [],
+          sortOrder: "desc",
+          area: "row"
+        },
+        {
+          caption: "Product",
+          dataField: "ProductName",
+          area: "row",
+          sortBySummaryField: "SalesAmount",
+          sortBySummaryPath: [],
+          sortOrder: "desc",
+          width: 250
+        },
+        {
+          caption: "Date",
+          dataField: "DateKey",
+          dataType: "date",
+          area: "column"
+        },
+        {
+          caption: "Amount",
+          dataField: "SalesAmount",
+          summaryType: "sum",
+          format: "currency",
+          area: "data"
+        },
+        {
+          caption: "Store",
+          dataField: "StoreName"
+        },
+        {
+          caption: "Quantity",
+          dataField: "SalesQuantity",
+          summaryType: "sum"
+        },
+        {
+          caption: "Unit Price",
+          dataField: "UnitPrice",
+          format: "currency",
+          summaryType: "sum"
+        },
+        {
+          dataField: "Id",
+          visible: false
+        }
+      ]
+    };
+  }
+}
+
+@NgModule({
+  imports: [BrowserModule, DxPivotGridModule, HttpClientModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+
+platformBrowserDynamic().bootstrapModule(AppModule);
+
+
+    <!--Vue-->
+<template>
+  <DxPivotGrid
+    :data-source="dataSource"
+  />
+</template>
+<script>
+import { DxPivotGrid, DxScrolling } from "devextreme-vue/pivot-grid";
+
+import CustomStore from "devextreme/data/custom_store";
+import "whatwg-fetch";
+
+function isNotEmpty(value) {
+  return value !== undefined && value !== null && value !== "";
+}
+
+export default {
+  components: {
+    DxPivotGrid,
+  },
+  data() {
+    return {
+      dataSource: {
+        remoteOperations: true,
+        store: new CustomStore({
+          key: "OrderNumber",
+          load: function (loadOptions) {
+            let params = "?";
+            [
+              "skip",
+              "take",
+              "requireTotalCount",
+              "requireGroupCount",
+              "sort",
+              "filter",
+              "totalSummary",
+              "group",
+              "groupSummary",
+            ].forEach(function (i) {
+              if (i in loadOptions && isNotEmpty(loadOptions[i])) {
+                params += `${i}=${JSON.stringify(loadOptions[i])}&`;
+              }
+            });
+            params = params.slice(0, -1);
+            return fetch(
+              `https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders${params}`
+            )
+              .then((response) => response.json())
+              .then((result) => {
+                return new Promise((resolve) => {
+                  // You can process the received data here
+                  if ("data" in result)
+                    resolve({ data: result.data, summary: result.summary });
+                  else resolve(result);
+                });
+              })
+              .catch(() => {
+                throw "Data Loading Error";
+              });
+          },
+        }),
+        fields: [
+          {
+            caption: "Category",
+            dataField: "ProductCategoryName",
+            width: 250,
+            expanded: true,
+            sortBySummaryField: "SalesAmount",
+            sortBySummaryPath: [],
+            sortOrder: "desc",
+            area: "row",
+          },
+          {
+            caption: "Subcategory",
+            dataField: "ProductSubcategoryName",
+            width: 250,
+            sortBySummaryField: "SalesAmount",
+            sortBySummaryPath: [],
+            sortOrder: "desc",
+            area: "row",
+          },
+          {
+            caption: "Product",
+            dataField: "ProductName",
+            area: "row",
+            sortBySummaryField: "SalesAmount",
+            sortBySummaryPath: [],
+            sortOrder: "desc",
+            width: 250,
+          },
+          {
+            caption: "Date",
+            dataField: "DateKey",
+            dataType: "date",
+            area: "column",
+          },
+          {
+            caption: "Amount",
+            dataField: "SalesAmount",
+            summaryType: "sum",
+            format: "currency",
+            area: "data",
+          },
+          {
+            caption: "Store",
+            dataField: "StoreName",
+          },
+          {
+            caption: "Quantity",
+            dataField: "SalesQuantity",
+            summaryType: "sum",
+          },
+          {
+            caption: "Unit Price",
+            dataField: "UnitPrice",
+            format: "currency",
+            summaryType: "sum",
+          },
+          {
+            dataField: "Id",
+            visible: false,
+          },
+        ],
+      },
+    };
+  },
+};
+</script>
+
+    <!--React-->
+import React from 'react';
+
+import { PivotGrid, Scrolling } from 'devextreme-react/pivot-grid';
+import CustomStore from "devextreme/data/custom_store";
+import "whatwg-fetch";
+
+function isNotEmpty(value) {
+  return value !== undefined && value !== null && value !== "";
+}
+
+const dataSource = {
+  remoteOperations: true,
+  store: new CustomStore({
+    key: "OrderNumber",
+    load: function (loadOptions) {
+      let params = "?";
+      [
+        "skip",
+        "take",
+        "requireTotalCount",
+        "requireGroupCount",
+        "sort",
+        "filter",
+        "totalSummary",
+        "group",
+        "groupSummary",
+      ].forEach(function (i) {
+        if (i in loadOptions && isNotEmpty(loadOptions[i])) {
+          params += `${i}=${JSON.stringify(loadOptions[i])}&`;
+        }
+      });
+      params = params.slice(0, -1);
+      return fetch(
+        `https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders${params}`
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          return new Promise((resolve) => {
+            // You can process the received data here
+            if ("data" in result){
+              resolve({ data: result.data, summary: result.summary });
+            }
+            else {
+              resolve(result);
+            }
+          });
+        })
+        .catch(() => {
+          throw "Data Loading Error";
+        });
+    },
+  }),
+  fields: [{
+    caption: 'Category',
+    dataField: 'ProductCategoryName',
+    width: 250,
+    expanded: true,
+    sortBySummaryField: 'SalesAmount',
+    sortBySummaryPath: [],
+    sortOrder: 'desc',
+    area: 'row'
+  }, {
+    caption: 'Subcategory',
+    dataField: 'ProductSubcategoryName',
+    width: 250,
+    sortBySummaryField: 'SalesAmount',
+    sortBySummaryPath: [],
+    sortOrder: 'desc',
+    area: 'row'
+  }, {
+    caption: 'Product',
+    dataField: 'ProductName',
+    area: 'row',
+    sortBySummaryField: 'SalesAmount',
+    sortBySummaryPath: [],
+    sortOrder: 'desc',
+    width: 250
+  }, {
+    caption: 'Date',
+    dataField: 'DateKey',
+    dataType: 'date',
+    area: 'column'
+  }, {
+    caption: 'Amount',
+    dataField: 'SalesAmount',
+    summaryType: 'sum',
+    format: 'currency',
+    area: 'data'
+  }, {
+    caption: 'Store',
+    dataField: 'StoreName'
+  }, {
+    caption: 'Quantity',
+    dataField: 'SalesQuantity',
+    summaryType: 'sum'
+  }, {
+    caption: 'Unit Price',
+    dataField: 'UnitPrice',
+    format: 'currency',
+    summaryType: 'sum'
+  }, {
+    dataField: 'Id',
+    visible: false
+  }]
+};
+
+class App extends React.Component {
+  render() {
+    return (
+      <PivotGrid
+        dataSource={dataSource} />
+    );
+  }
+}
+
+export default App;
+
 
 Now, the PivotGrid sends several requests to load data. At first launch, it sends the request that contains the following settings.
 

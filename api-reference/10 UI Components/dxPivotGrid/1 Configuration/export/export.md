@@ -4,10 +4,12 @@ type: Object
 ---
 ---
 ##### shortDescription
+[tags] xlsx, csv
+
 Configures client-side exporting.
 
 ---
-A user can click the **Export** button to save an Excel file with the exported data. Data types, sorting, filtering, and grouping settings are maintained.
+A user can click the **Export** button to save an Excel file with the exported data. Data types, sort, filter, and group settings are maintained.
 
 The following instructions show how to enable and configure client-side export:
 
@@ -347,5 +349,5 @@ The following instructions show how to enable and configure client-side export:
 
 The following restrictions apply when users export PivotGrid:   
 
-- Only XLSX files are supported.
+- Only XLSX files are supported out of the box. To export PivotGrid to CSV, implement the **exportPivotGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
 - Only visible rows and columns are exported.

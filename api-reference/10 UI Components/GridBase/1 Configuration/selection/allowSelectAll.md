@@ -13,14 +13,14 @@ If **true**, this property depends on the **selection**.[selectAllMode](/Documen
 <table class="dx-table">
     <tr>
         <th>selection.selectAllMode value</th>
-        <th>allowSelectAll mode</th>
+        <th>allowSelectAll description</th>
     </tr>
     <tr>
-        <td>*"allPages"* (default)</td>
+        <td>allPages (default)</td>
         <td>Selects all rows</td>
     </tr>
     <tr>
-        <td>*"page"*</td>
+        <td>page</td>
         <td>Selects only the current page rows</td>
     </tr> 
 </table>

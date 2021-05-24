@@ -5,9 +5,26 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can select all rows at once.
+Specifies whether a user can select all (default) or current page rows at once.
 
 ---
-If this property is set to **true**, it allows a user to select all rows at once by pressing Ctrl + A or clicking the check box in the selection column's header. The *"Select All"* check box also allows a user to deselect all rows. The select all functionality allows selecting/deselecting only those rows that meet filtering conditions if a filter is applied. 
+If **true**, this property depends on the **selection**.[selectAllMode](/Documentation/ApiReference/UI_Components/GridBase/Configuration/selection/#selectAllMode) value:
 
-If this property is set to **false**, it disables the select all functionality. In this case, the check box clears selection and is hidden if no rows are selected.
+<table class="dx-table">
+    <tr>
+        <th>selection.selectAllMode value</th>
+        <th>allowSelectAll mode</th>
+    </tr>
+    <tr>
+        <td>*"allPages"* (default)</td>
+        <td>Selects all rows</td>
+    </tr>
+    <tr>
+        <td>*"page"*</td>
+        <td>Selects only the current page rows</td>
+    </tr> 
+</table>
+
+To select rows, a user should press Ctrl + A is or click the check box in the selection column's header. The *"Select All"* check box also allows a user to deselect all rows. If a filter is applied, the select all functionality affects those rows that meet filtering conditions.
+
+If **false**, this property disables the select all functionality. In this case, the check box clears selection and is hidden if no rows are selected.

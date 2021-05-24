@@ -8,7 +8,7 @@ default: true
 Specifies whether a user can select all (default) or current page rows at once.
 
 ---
-If **true**, this property depends on the **selection**.[selectAllMode](/Documentation/ApiReference/UI_Components/GridBase/Configuration/selection/#selectAllMode) value:
+If **true**, this property depends on the **selection**.[selectAllMode]({basewidgetpath}/Configuration/selection/#selectAllMode) value:
 
 <table class="dx-table">
     <tr>

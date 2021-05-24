@@ -1,6 +1,6 @@
 ---
 id: template
-type: String | function() | TElement
+type: String | function() | UserDefinedElement
 ---
 ---
 ##### shortDescription

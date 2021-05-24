@@ -1,6 +1,6 @@
 ---
 id: positionConfig.boundary
-type: String | TElement | Window
+type: String | UserDefinedElement | Window
 ---
 ---
 ##### shortDescription

@@ -30,7 +30,7 @@ The row's original position. If the row is dragged from another UI component, th
 ##### field(e.itemData): any
 The data object of the row being dragged.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.toComponent): dxSortable | dxDraggable

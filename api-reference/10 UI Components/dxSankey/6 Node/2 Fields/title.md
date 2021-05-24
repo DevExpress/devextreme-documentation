@@ -1,7 +1,7 @@
 ---
 id: dxSankeyNode.title
 type: String
-dep: dxSankeyNode.label
+deprecated: 
 ---
 ---
 ##### shortDescription

@@ -34,7 +34,6 @@ The task's progress.
     function getTaskProgressTooltipContentTemplate(item, container) {
         var $customTooltipProgress = $(document.createElement("div"))
             .addClass("custom-tooltip");
-​
         $(document.createElement("div"))
             .addClass("custom-tooltip-progress")
             .text("Progress: " + item.progress + "%")

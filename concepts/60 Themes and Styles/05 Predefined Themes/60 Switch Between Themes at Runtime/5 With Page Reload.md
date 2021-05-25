@@ -24,3 +24,5 @@ This approach is suitable for switching between any themes, but it involves page
         import themes from "devextreme/ui/themes";
 
         themes.current(window.localStorage.getItem("dx-theme") || "material.blue.light");
+
+#include switch-themes-initialized-note

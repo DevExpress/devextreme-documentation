@@ -1,5 +1,6 @@
 ---
-id: TEvent
+id: UserDefinedElement
+type: HTMLElement | SVGElement | jQuery
 ---
 ---
 ##### shortDescription

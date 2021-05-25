@@ -5,9 +5,19 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can select all rows at once.
+Allows users to simultaneously select all or current page rows (depending on the [selectAllMode]({basewidgetpath}/Configuration/selection/#selectAllMode)).
 
 ---
-If this property is set to **true**, it allows a user to select all rows at once by pressing Ctrl + A or clicking the check box in the selection column's header. The *"Select All"* check box also allows a user to deselect all rows. The select all functionality allows selecting/deselecting only those rows that meet filtering conditions if a filter is applied. 
 
-If this property is set to **false**, it disables the select all functionality. In this case, the check box clears selection and is hidden if no rows are selected.
+To select rows, a user should press Ctrl + A or click the Select All check box in the selection column's header. This check box can also be used to deselect all rows. If a filter is applied, the Select All functionality affects all rows that meet filtering conditions.
+
+If **false**, this property disables the Select All functionality. In this case, the check box clears selection and is hidden if no rows are selected.
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/",
+    name: "DataGrid"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/",
+    name: "TreeList"
+}

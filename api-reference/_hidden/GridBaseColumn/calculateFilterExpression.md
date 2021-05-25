@@ -4,37 +4,40 @@ type: function(filterValue, selectedFilterOperation, target)
 ---
 ---
 ##### shortDescription
-Specifies the column's custom filtering rules.
+Specifies the column's custom rules to filter data. Does not apply if you set the column's [headerFilter]({basewidgetpath}//Configuration/columns/headerFilter/).[dataSource]({basewidgetpath}/Configuration/columns/headerFilter/#dataSource).
 
 ##### param(filterValue): any
-A user input value.
+A user input value.             
+Contains an array if the `selectedFilterOperation` is one of the following: *"between"*, *"anyof"*, *"noneof"*.
 
 ##### param(selectedFilterOperation): String
-The selected filter operation.
+A selected filter operation.
 
 ##### param(target): String
-The UI element where the filter expression was set.  
-Possible values: *"filterRow"*, *"headerFilter"*, *"filterBuilder", and *"search"*.
+A UI element used to filter data.     
+Possible values: [*"filterRow"*]({basewidgetpath}/Configuration/filterRow/), [*"headerFilter"*]({basewidgetpath}/Configuration/headerFilter/), [*"filterBuilder"*]({basewidgetpath}/Configuration/#filterBuilder), [*"search"*]({basewidgetpath}/Configuration/searchPanel/).
 
 ##### return: Filter expression
-A filter expression. If you are using [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/'), it should not contain functions.
+A filter expression.          
+If you filter data [remotely]({basewidgetpath}/Configuration/remoteOperations/), the filter expression must not contain functions.
 
 ---
-This function must return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). The simplest filter expression has the following format:
+The **calculateFilterExpression** function must return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). The simplest filter expression has the following format:
 
-    [selector, selectedFilterOperation, filterValue]
+    [selector, comparisonOperator, filterValue]
 
-- **selector**      
-A data source field or a function providing actual column values. Pass **this.calculateCellValue** if your column contains [calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue').
-- **selectedFilterOperation**       
-A comparison operator. One of the following: *"=", "<>", ">", ">=", "<", "<=", "between", "startswith", "endswith", "contains", "notcontains"*.    
+- `selector`      
+A [dataField]({basewidgetpath}/Configuration/columns/#dataField) or function that returns column values. Pass `this.calculateCellValue` if your column contains [calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue').
 
- [note] For the *"between"* operator, the returned filter expression has a slightly different format: `[[selector, ">=", startValue], "and", [selector, "<=", endValue]]`. 
+- `comparisonOperator`       
+One of the following operators: *"=", "<>", ">", ">=", "<", "<=", "startswith", "endswith", "contains", "notcontains"*.     
 
-- **filterValue**        
-A user input value. Values the **selector** provides are compared to this value.
+- `filterValue`        
+A user input value. Values from the `selector` are compared to this value.
 
-In the following code, the **calculateFilterExpression** function implements an exclusive **between** operation. This is done by overriding the default inclusive implementation.
+In the following code, the **calculateFilterExpression** function implements an exclusive *"between"* operation. The function overrides the default inclusive implementation. Note that for the *"between"* operation, the filter expression has a different format:
+
+    [ [selector, ">=", startValue], "and", [selector, "<=", endValue] ]
 
 ---
 ##### jQuery
@@ -44,7 +47,7 @@ In the following code, the **calculateFilterExpression** function implements an 
             // ...
             columns: [{
                 calculateFilterExpression: function (filterValue, selectedFilterOperation) {
-                    // Implementation for the "between" comparison operator
+                    // Override implementation for the "between" filter operation
                     if (selectedFilterOperation === "between" && $.isArray(filterValue)) {
                         const filterExpression = [
                             [this.dataField, ">", filterValue[0]], 
@@ -53,7 +56,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                         ];
                         return filterExpression;
                     }
-                    // Invokes the default filtering behavior
+                    // Invoke the default implementation for other filter operations
                     return this.defaultCalculateFilterExpression.apply(this, arguments);
                 },
                 // ...
@@ -69,7 +72,7 @@ In the following code, the **calculateFilterExpression** function implements an 
     export class AppComponent {
         calculateFilterExpression (filterValue, selectedFilterOperation) {
             const column = this as any;
-            // Implementation for the "between" comparison operator
+            // Override implementation for the "between" filter operation
             if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
                 const filterExpression = [
                     [column.dataField, ">", filterValue[0]], 
@@ -78,7 +81,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                 ];
                 return filterExpression;
             }
-            // Invokes the default filtering behavior
+            // Invoke the default implementation for other filter operations
             return column.defaultCalculateFilterExpression.apply(column, arguments);
         }
     }
@@ -92,7 +95,9 @@ In the following code, the **calculateFilterExpression** function implements an 
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column [calculateFilterExpression]="calculateFilterExpression" ... ></dxi-column>
+        <dxi-column ...
+            [calculateFilterExpression]="calculateFilterExpression">
+        </dxi-column>
     </dx-{widget-name}>
 
 ##### Vue
@@ -101,8 +106,8 @@ In the following code, the **calculateFilterExpression** function implements an 
     <template>
         <Dx{WidgetName}>
             <DxColumn ...
-                :calculate-filter-expression="calculateFilterExpression">
-            </DxColumn>
+                :calculate-filter-expression="calculateFilterExpression"
+            />
         </Dx{WidgetName}>
     </template>
 
@@ -122,7 +127,7 @@ In the following code, the **calculateFilterExpression** function implements an 
             return {
                 calculateFilterExpression (filterValue, selectedFilterOperation) {
                     const column = this;
-                    // Implementation for the "between" comparison operator
+                    // Override implementation for the "between" filter operation
                     if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
                         const filterExpression = [
                             [column.dataField, ">", filterValue[0]], 
@@ -131,7 +136,7 @@ In the following code, the **calculateFilterExpression** function implements an 
                         ];
                         return filterExpression;
                     }
-                    // Invokes the default filtering behavior
+                    // Invoke the default implementation for other filter operations
                     return column.defaultCalculateFilterExpression.apply(column, arguments);
                 }
             }
@@ -150,7 +155,7 @@ In the following code, the **calculateFilterExpression** function implements an 
     } from 'devextreme-react/{widget-name}';
 
     function calculateFilterExpression (filterValue, selectedFilterOperation) {
-        // Implementation for the "between" comparison operator
+        // Override implementation for the "between" filter operation
         if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
             const filterExpression = [
                 [this.dataField, ">", filterValue[0]], 
@@ -159,7 +164,7 @@ In the following code, the **calculateFilterExpression** function implements an 
             ];
             return filterExpression;
         }
-        // Invokes the default filtering behavior
+        // Invoke the default implementation for other filter operations
         return this.defaultCalculateFilterExpression.apply(this, arguments);
     }
 
@@ -167,17 +172,26 @@ In the following code, the **calculateFilterExpression** function implements an 
         return (
             <{WidgetName}>
                 <Column ...
-                    calculateFilterExpression={calculateFilterExpression}>
-                </Column>
+                    calculateFilterExpression={calculateFilterExpression}
+                />
             </{WidgetName}>
         );
     }
     
 ---
 
-In the previous code, the **defaultCalculateFilterExpression** function invokes default behavior. You can omit this function call if you so choose.
-
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"
 }
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
+}
+
+#####See Also#####
+- [filterValue]({basewidgetpath}/Configuration/#filterValue)
+- **columns[]**.[filterValue]({basewidgetpath}/Configuration/columns/#filterValue)
+- **columns[]**.[selectedFilterOperation]({basewidgetpath}/Configuration/columns/#selectedFilterOperation)
+- **columns[]**.[filterValues]({basewidgetpath}/Configuration/columns/#filterValues)
+- **columns[]**.[filterType]({basewidgetpath}/Configuration/columns/#filterType)
+- **columns[]**.[filterOperations]({basewidgetpath}/Configuration/columns/#filterOperations)

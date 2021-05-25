@@ -1,0 +1,1 @@
+[important] If you notice any issues with theme appearance, move your initialization routine to the [initialized(callback)](/Documentation/ApiReference/Common/Utils/ui/themes/#initializedcallback) method. Refer to the method's description for a code sample.

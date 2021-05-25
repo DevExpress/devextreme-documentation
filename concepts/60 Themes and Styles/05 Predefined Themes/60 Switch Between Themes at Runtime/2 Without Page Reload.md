@@ -27,3 +27,5 @@ You can use this approach only if the themes belong to the same group. For insta
         import themes from "devextreme/ui/themes";
 
         themes.current("generic.contrast");
+
+#include switch-themes-initialized-note

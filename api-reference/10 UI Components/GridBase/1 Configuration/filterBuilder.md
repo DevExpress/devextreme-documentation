@@ -8,11 +8,18 @@ default: {}
 Configures the integrated filter builder.
 
 ---
-See the [FilterBuilder configuration](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/') for properties that you can specify in this object.
+See the [FilterBuilder configuration](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/') for properties that you can specify in this object. Do not specify the [fields](/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/) array because the {WidgetName} automatically populates it to keep filter builder fields in sync with grid columns. 
 
 #include widgets-config-object-option-note with {
     optionName: "filterBuilder"
 }
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
+}
+
 #####See Also#####
-- [Filter Panel with Filter Builder](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/4%20Filter%20Panel%20with%20Filter%20Builder.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Filter_Panel_with_Filter_Builder')
+- [filterBuilderPopup]({basewidgetpath}/Configuration/#filterBuilderPopup)
+- [filterPanel]({basewidgetpath}/Configuration/filterPanel/)
+- [filterValue]({basewidgetpath}/Configuration/#filterValue)
+- [filterSyncEnabled]({basewidgetpath}/Configuration/#filterSyncEnabled)

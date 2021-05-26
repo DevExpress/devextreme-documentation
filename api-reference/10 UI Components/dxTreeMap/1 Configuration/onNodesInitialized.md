@@ -11,15 +11,6 @@ A function that is executed only once, after the nodes are initialized.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.component): dxTreeMap
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ##### field(e.root): dxTreeMapNode
 The root node; described in the [Node](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/') section.
 

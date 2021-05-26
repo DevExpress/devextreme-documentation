@@ -102,7 +102,7 @@ In the following code, the **calculateFilterExpression** function implements an 
     <!-- tab: App.vue -->
     <template>
         <DxFilterBuilder>
-            <DxColumn ...
+            <DxField ...
                 :calculate-filter-expression="calculateFilterExpression"
             />
         </DxFilterBuilder>
@@ -112,13 +112,13 @@ In the following code, the **calculateFilterExpression** function implements an 
     import 'devextreme/dist/css/dx.light.css';
 
     import DxFilterBuilder, {
-        DxColumn
+        DxField
     } from 'devextreme-vue/filter-builder';
 
     export default {
         components: {
             DxFilterBuilder,
-            DxColumn
+            DxField
         },
         data() {
             return {
@@ -148,7 +148,7 @@ In the following code, the **calculateFilterExpression** function implements an 
     import 'devextreme/dist/css/dx.light.css';
 
     import FilterBuilder, {
-        Column
+        Field
     } from 'devextreme-react/filter-builder';
 
     function calculateFilterExpression (filterValue, selectedFilterOperation) {
@@ -168,7 +168,7 @@ In the following code, the **calculateFilterExpression** function implements an 
     export default function App() {
         return (
             <FilterBuilder>
-                <Column ...
+                <Field ...
                     calculateFilterExpression={calculateFilterExpression}
                 />
             </FilterBuilder>

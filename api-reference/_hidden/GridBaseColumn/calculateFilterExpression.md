@@ -4,7 +4,7 @@ type: function(filterValue, selectedFilterOperation, target)
 ---
 ---
 ##### shortDescription
-Specifies the column's custom rules to filter data. Does not apply if you set the column's [headerFilter]({basewidgetpath}//Configuration/columns/headerFilter/).[dataSource]({basewidgetpath}/Configuration/columns/headerFilter/#dataSource).
+Specifies the column's custom rules to filter data.
 
 ##### param(filterValue): any
 A user input value.             
@@ -35,9 +35,11 @@ One of the following operators: *"=", "<>", ">", ">=", "<", "<=", "startswith", 
 - `filterValue`        
 A user input value. Values from the `selector` are compared to this value.
 
-In the following code, the **calculateFilterExpression** function implements an exclusive *"between"* operation. The function overrides the default inclusive implementation. Note that for the *"between"* operation, the filter expression has a different format:
+A filter expression for the *"between"* operation has a different format:
 
     [ [selector, ">=", startValue], "and", [selector, "<=", endValue] ]
+
+The default *"between"* implementation is inclusive (filter results include the boundary values). In the following code, the **calculateFilterExpression** function implements an exclusive *"between"* operation:
 
 ---
 ##### jQuery
@@ -180,13 +182,17 @@ In the following code, the **calculateFilterExpression** function implements an 
     
 ---
 
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
 }
+
+[note]
+
+- The `this` keyword refers to the column's configuration.
+
+- If you [specify a custom header filter data source]({basewidgetpath}/Configuration/columns/headerFilter/#Specify_a_Custom_Data_Source), a header filter item's `value` field can contain a single value (for example, 0) or a filter expression. If it is a filter expression, the **calculateFilterExpression** function does not apply.
+
+[/note]
 
 #####See Also#####
 - [filterValue]({basewidgetpath}/Configuration/#filterValue)

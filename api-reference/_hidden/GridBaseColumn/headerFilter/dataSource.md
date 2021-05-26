@@ -19,6 +19,8 @@ A DataSource configuration.
 ---
 The {WidgetName} generates a header filter's data source automatically based on column values. Use the **dataSource** property to change the generated data source or specify a custom data source.
 
+<div id="Specify_a_Custom_Data_Source"></div>
+
 ### Specify a Custom Data Source
 
 To define a data source, set the **dataSource** property to an array of objects. Each object configures one header filter item and should have the following fields:
@@ -198,6 +200,8 @@ The following code shows how to specify a custom data source:
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
 }
+
+<div id="Map_Data_Source_Fields"></div>
 
 ### Map Data Source Fields
 
@@ -410,6 +414,8 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
 ---
 
+<div id="Change_the_Generated_Data_Source"></div>
+
 ### Change the Generated Data Source
 
 To change the generated data source, set the **dataSource** property to a function. This function accepts an object whose `dataSource` field contains a [DataSource configuration](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/). Define the **DataSource**'s [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') function in which you can change header filter items.
@@ -590,6 +596,8 @@ In the following code, the **postProcess** function adds a custom item to the ge
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
 }
+
+<div id="Customize_Item_Appearance"></div>
 
 ### Customize Item Appearance
 

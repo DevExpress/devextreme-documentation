@@ -1,4 +1,4 @@
-To allow users to delete items from the **List**, set the [allowItemDeleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting) property to **true**. Use the [itemDeleteMode](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDeleteMode) property to select the UI elements and/or user actions that remove items.
+To allow users to delete items from the List, set the [allowItemDeleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting) property to **true**. Use the [itemDeleteMode](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDeleteMode) property to select the UI elements and/or user actions that remove items.
 
 ---
 ##### jQuery

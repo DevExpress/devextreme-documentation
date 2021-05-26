@@ -44,7 +44,7 @@ Use nested configuration components. The following example shows how to configur
         }
     }
 
-DevExtreme collection UI components also support the `Item` element. It allows you to declare collection items in the UI component markup. An `Item` element can contain custom markup and have attributes that control parts of item appearance, such as `badge` in the following code. The attributes are described in the [items](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') section of each collection UI component.
+DevExtreme collection UI components also support the `Item` element. It allows you to declare collection items in the UI component markup. An `Item` element can contain custom markup and have properties that control parts of item appearance, such as `badge` in the following code. The properties are described in the [items](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') section of each collection UI component.
 
     <!-- tab: Function component -->
     import List, {

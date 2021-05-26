@@ -1,6 +1,6 @@
 ---
 id: dxActionSheet.Options.target
-type: String | TElement
+type: String | UserDefinedElement
 ---
 ---
 ##### shortDescription

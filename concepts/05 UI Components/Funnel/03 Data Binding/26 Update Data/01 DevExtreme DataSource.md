@@ -2,68 +2,12 @@
 
 To get the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance, call the Funnel's [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#getDataSource') method:
 
----
-
-#####**jQuery**
-
-    <!--JavaScript-->var ds = $("#funnelContainer").dxFunnel("getDataSource");
-
-#####**AngularJS**
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            $scope.ds = {};
-            $scope.funnelOptions = {
-                // ...
-                onInitialized: function (e) {
-                    $scope.ds = e.component.getDataSource();  
-                }
-            };
-        });
-
-#####**Knockout**
-
-    <!--JavaScript-->var viewModel = {
-        ds: {},
-        funnelOptions: {
-            // ...
-            onInitialized: function (e) {
-                viewModel.ds = e.component.getDataSource();    
-            }
-        }
-    };
-    
-    ko.applyBindings(viewModel);
-    
-##### Angular
-
-    <!--TypeScript-->
-    import { ..., ViewChild } from "@angular/core";
-    import { DxFunnelModule, DxFunnelComponent } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        @ViewChild(DxFunnelComponent, { static: false }) funnel: DxFunnelComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxFunnelComponent) funnel: DxFunnelComponent;
-        ds: any = {};
-        getDataSource() {
-            this.ds = this.funnel.instance.getDataSource();
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxFunnelModule
-        ],
-        // ...
-    })
-    
----
+#include data-binding-examples-update-dx-datasource
 
 Then, access the underlying store with the [store()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/store().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#store') method, and call the store's [push(changes)](/api-reference/30%20Data%20Layer/Store/3%20Methods/push(changes).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#pushchanges') method to modify data. The Funnel will be updated automatically.
 
     <!--JavaScript-->
-    ds.store().push([
+    getDataSource().store().push([
         { type: "update", key: "Oranges", data: { count: 10 } },
         { type: "remove", key: "Apples" }
     ]);

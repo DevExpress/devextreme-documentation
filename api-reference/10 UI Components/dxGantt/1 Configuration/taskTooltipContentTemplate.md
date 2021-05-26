@@ -6,14 +6,14 @@ type: template
 ##### shortDescription
 Specifies custom content for the task tooltip.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "task tooltip" }
 
 ##### param(task): any
 The processed task.
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+#include common-template-return-value
 
 ---
 
@@ -50,7 +50,7 @@ Note that the **container** parameter contains the content of the default toolti
 
     <!-- tab: app.component.html -->
     <dx-gantt taskTooltipContentTemplate="myTaskTooltipTemplate">
-        <div *dxTemplate="let task of 'taskTooltipContentTemplate'" class="custom-task-edit-tooltip">
+        <div *dxTemplate="let task of 'myTaskTooltipTemplate'" class="custom-task-edit-tooltip">
             <div class="custom-tooltip-title">{{task.title}}</div>
             <!-- ... -->
         </div>
@@ -92,8 +92,8 @@ Note that the **container** parameter contains the content of the default toolti
     <!-- tab: App.vue -->
     <template>
         <DxGantt 
-            :task-content-template="myTaskTemplate" >
-            <template #taskTooltipContentTemplate="{ data: task }">
+            :task-tooltip-content-template="myTooltipContentTemplate" >
+            <template #myTooltipContentTemplate="{ data: task }">
                 <div class="custom-task-edit-tooltip">
                     <div class="custom-tooltip-title">{{ task.title }}</div>
                     <!-- ... -->

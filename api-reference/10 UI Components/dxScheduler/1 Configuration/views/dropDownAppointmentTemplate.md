@@ -14,7 +14,7 @@ The appointment's object.
 ##### param(itemIndex): Number
 The appointment's index.
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "appointment" }
 
 ##### return: String | Element | jQuery

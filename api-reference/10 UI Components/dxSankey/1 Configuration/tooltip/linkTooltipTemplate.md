@@ -19,7 +19,7 @@ The label of the link's target node.
 ##### field(info.weight): Number
 The link's weight.
 
-##### param(element): dxElement
+##### param(element): DxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
 ##### return: String | Element | jQuery

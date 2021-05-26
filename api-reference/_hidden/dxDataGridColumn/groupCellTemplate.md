@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom template for group cells (group rows).
 
-##### param(cellElement): dxElement
+##### param(cellElement): DxElement
 #include common-ref-elementparam with { element: "current group cell" }
 
 ##### param(cellInfo): Object

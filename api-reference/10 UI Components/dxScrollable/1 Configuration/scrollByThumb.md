@@ -5,6 +5,6 @@ default: false, true (desktop)
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not an end-user can scroll the UI component content using the scrollbar.
+Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNative]({basewidgetpath}/Configuration/#useNative) is **false**.
 
 ---

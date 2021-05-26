@@ -1,4 +1,9 @@
-To bind the SelectBox to data, set the [dataSource](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#dataSource') and the fields that provide the UI component's value ([valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueExpr')) and displayed value ([displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#displayExpr')). In this tutorial, the SelectBox is bound to a local array.
+The SelectBox can load data from different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dataSource) property. If array elements are objects, set the fields that supply the SelectBox's value ([valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueExpr')) and displayed value ([displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#displayExpr')). For information on other data source types, refer to the following articles:
+
+- [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
+- [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
+- [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+- [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
 ---
 ##### jQuery

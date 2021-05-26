@@ -16,7 +16,7 @@ Allows you to cancel UI component hiding.
 ##### field(e.component): dxContextMenu
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

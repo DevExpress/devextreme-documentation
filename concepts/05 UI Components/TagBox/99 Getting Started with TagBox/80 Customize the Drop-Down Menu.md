@@ -1,4 +1,4 @@
-#include common-customize-dropdown-menu For example, the following code sets the height of TagBox's drop-down menu to 350 pixels:
+#include common-customize-dropdown-menu For example, the following code sets the maximum height of TagBox's drop-down menu to 300 pixels:
 
 ---
 ##### jQuery
@@ -8,7 +8,7 @@
         $("#tagBox").dxTagBox({
             // ...
             dropDownOptions: {
-                height: 350
+                maxHeight: 300
             }
         });
     });
@@ -25,7 +25,7 @@
     export class AppComponent {
         // ...
         dropDownOptions = {
-            height: 350
+            maxHeight: 300
         }
     }
 
@@ -45,7 +45,7 @@
             return {
                 // ...
                 dropDownOptions: {
-                    height: 350
+                    maxHeight: 300
                 }
             };
         }
@@ -57,7 +57,7 @@
     <!-- tab: App.js -->
     // ...
     const dropDownOptions = {
-        height: 350
+        maxHeight: 300
     };
 
     function App() {

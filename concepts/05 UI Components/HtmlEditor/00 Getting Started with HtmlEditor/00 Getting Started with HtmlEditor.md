@@ -10,10 +10,10 @@ The HtmlEditor is a WYSIWYG editor that allows users to format textual and visua
 - Drag and drop images
 - Copy-paste rich content (unsupported formats are removed)
 
-The HtmlEditor has the following specificities:
+Note the following about the HtmlEditor functionality:
 
-- Users cannot edit the layout. The HtmlEditor is designed to format textual content only.
-- Users cannot save full HTML markup. The HtmlEditor supports only a subset of [tags and attributes](/Documentation/Guide/UI_Components/HtmlEditor/Tags_and_Attributes/). Everything else is discarded.
+- The HtmlEditor does not produce a fully structured HTML document with a `<!DOCTYPE>`, a `<head>`, and a `<body>`. Its purpose is to output markup that contains formatted rich content for an article, forum post, and the like.
+- The HtmlEditor saves only a subset of [tags and attributes](/Documentation/Guide/UI_Components/HtmlEditor/Tags_and_Attributes/). Everything else is discarded.
 
 This tutorial explains how to add an HtmlEditor to a page and configure its core features. The following control demonstrates the result:
 

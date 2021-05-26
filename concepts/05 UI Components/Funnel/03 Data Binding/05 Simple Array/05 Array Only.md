@@ -3,105 +3,124 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruits = [
-        { fruit: "Apples", count: 10 },
-        { fruit: "Oranges", count: 12 },
-        { fruit: "Lemons", count: 15 },
-        { fruit: "Pears", count: 20 },
-        { fruit: "Pineapples", count: 3 }
+    <!-- tab: index.js -->
+    const fruits = [
+        { fruit: 'Apples', count: 10 },
+        { fruit: 'Oranges', count: 12 },
+        { fruit: 'Lemons', count: 15 },
+        { fruit: 'Pears', count: 20 },
+        { fruit: 'Pineapples', count: 3 }
     ];
 
-    $(function () {
+    $(function() {
         $("#funnelContainer").dxFunnel({
             dataSource: fruits,
-            argumentField: "fruit",
-            valueField: "count"
+            argumentField: 'fruit',
+            valueField: 'count'
         });
     });
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { DxFunnelModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        fruits = [
-            { fruit: "Apples", count: 10 },
-            { fruit: "Oranges", count: 12 },
-            { fruit: "Lemons", count: 15 },
-            { fruit: "Pears", count: 20 },
-            { fruit: "Pineapples", count: 3 }
-        ];
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxFunnelModule
-        ],
-        // ...
-    })
-
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-funnel
         [dataSource]="fruits"
         argumentField="fruit"
         valueField="count">
     </dx-funnel>
 
----
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
 
-If objects in the array need to be processed (sorted, filtered, etc.), you can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept'). For example, in the following code, a Query applies a filter to the `fruits` array that excludes objects with `count` less than 10.
-
----
-##### jQuery
-
-    <!--JavaScript-->var fruits = [
-        { fruit: "Apples", count: 10 },
-        { fruit: "Oranges", count: 12 },
-        { fruit: "Lemons", count: 15 },
-        { fruit: "Pears", count: 20 },
-        { fruit: "Pineapples", count: 3 }
-    ];
-
-    $(function () {
-        $("#funnelContainer").dxFunnel({
-            dataSource: DevExpress.data.query(fruits).filter([ "count", ">=", 10 ]).toArray(),
-            argumentField: "fruit",
-            valueField: "count"
-        });
-    });
-
-##### Angular
-
-    <!--TypeScript-->
-    import { DxFunnelModule } from "devextreme-angular";
-    import query from "devextreme/data/query";
-    // ...
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         fruits = [
-            { fruit: "Apples", count: 10 },
-            { fruit: "Oranges", count: 12 },
-            { fruit: "Lemons", count: 15 },
-            { fruit: "Pears", count: 20 },
-            { fruit: "Pineapples", count: 3 }
+            { fruit: 'Apples', count: 10 },
+            { fruit: 'Oranges', count: 12 },
+            { fruit: 'Lemons', count: 15 },
+            { fruit: 'Pears', count: 20 },
+            { fruit: 'Pineapples', count: 3 }
         ];
-        getFilteredFruits () {
-            return query(this.fruits).filter([ "count", ">=", 10 ]).toArray();
-        }
     }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxFunnelModule } from 'devextreme-angular';
+
     @NgModule({
+        declarations: [
+            AppComponent
+        ],
         imports: [
-            // ...
+            BrowserModule,
             DxFunnelModule
         ],
-        // ...
+        providers: [ ],
+        bootstrap: [AppComponent]
     })
+    export class AppModule { }
 
-    <!--HTML--><dx-funnel
-        [dataSource]="getFilteredFruits()"
-        argumentField="fruit"
-        valueField="count">
-    </dx-funnel>
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFunnel
+            :data-source="fruits"
+            argument-field="fruit"
+            value-field="count"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        data() {
+            return {
+                fruits: [
+                    { fruit: 'Apples', count: 10 },
+                    { fruit: 'Oranges', count: 12 },
+                    { fruit: 'Lemons', count: 15 },
+                    { fruit: 'Pears', count: 20 },
+                    { fruit: 'Pineapples', count: 3 }
+                ]
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Funnel from 'devextreme-react/funnel';
+
+    const fruits = [
+        { fruit: 'Apples', count: 10 },
+        { fruit: 'Oranges', count: 12 },
+        { fruit: 'Lemons', count: 15 },
+        { fruit: 'Pears', count: 20 },
+        { fruit: 'Pineapples', count: 3 }
+    ];
+
+    export default function App() {
+        return (
+            <Funnel
+                dataSource={fruits}
+                argumentField="fruit"
+                valueField="count"
+            />
+        );
+    }
 
 ---
 

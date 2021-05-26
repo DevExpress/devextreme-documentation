@@ -254,6 +254,9 @@ Then, add a button that updates a filter of the DataGrid's data source according
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
     import DxButton from 'devextreme-vue/button';
 
+    const gridRefKey = 'data-grid';
+    const fbRefKey = 'filter-builder';
+
     export default {
         components: {
             DxDataGrid,
@@ -263,8 +266,8 @@ Then, add a button that updates a filter of the DataGrid's data source according
         data() {
             return {
                 // ...
-                gridRefKey: 'data-grid',
-                fbRefKey: 'filter-builder'
+                gridRefKey,
+                fbRefKey
             };
         },
         methods: {

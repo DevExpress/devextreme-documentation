@@ -1,4 +1,4 @@
-To call UI component methods, you need the UI component instance. Create a <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">ref</a> and attach it to the target component via the `ref` attribute. In the following code, this approach is used to get a `TextBox` instance:
+To call UI component methods, you need the UI component instance. Create a <a href="https://reactjs.org/docs/refs-and-the-dom.html" target="_blank">ref</a> and attach it to the target component via the `ref` property. In the following code, this approach is used to get a `TextBox` instance:
     
     <!-- tab: Function component -->
     import React, { useRef } from 'react';

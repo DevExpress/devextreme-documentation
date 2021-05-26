@@ -5,7 +5,7 @@ default: false, true (desktop)
 ---
 ---
 ##### shortDescription
-A Boolean value specifying if the list is scrolled using the scrollbar.
+Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNativeScrolling](/Documentation/ApiReference/UI_Components/dxList/Configuration/#useNativeScrolling) is **false**.
 
 ---
 #####See Also#####

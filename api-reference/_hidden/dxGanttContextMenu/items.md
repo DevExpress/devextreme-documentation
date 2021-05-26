@@ -305,7 +305,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
                 });
             });
         })
-        .onCustomCommand("gantt_customCommand_handler")
+        .OnCustomCommand("gantt_customCommand_handler")
         // ...
     )
 

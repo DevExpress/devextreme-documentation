@@ -23,7 +23,7 @@ The data field's name.
 ##### field(e.disabled): Boolean
 Indicates whether the editor is disabled.
 
-##### field(e.editorElement): dxElement
+##### field(e.editorElement): DxElement
 #include common-ref-elementparam with { element: "editor" }
 
 ##### field(e.editorName): String
@@ -33,7 +33,7 @@ Import a new editor's module when [DevExtreme modules](/concepts/Common/Modulari
 ##### field(e.editorOptions): Object
 Gets and sets the editor configuration.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.filterOperation): String

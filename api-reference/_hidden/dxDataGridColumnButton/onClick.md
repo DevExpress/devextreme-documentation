@@ -15,7 +15,7 @@ The properties of the button's column.
 ##### field(e.component): dxDataGrid
 The UI component's instance.
 
-##### field(e.element): dxElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

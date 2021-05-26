@@ -4,7 +4,6 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The error message.
 
 ---
-<!-- Description goes here -->

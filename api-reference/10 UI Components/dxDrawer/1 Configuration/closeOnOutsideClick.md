@@ -8,7 +8,7 @@ default: false
 Specifies whether to close the drawer if a user clicks or taps the view area.
 
 ##### param(event): event
-The raised event. It is a [dxEvent](/api-reference/50%20Common/Object%20Structures/dxEvent '/Documentation/ApiReference/Common/Object_Structures/dxEvent/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery.
+The raised event. It is a [EventObject](/api-reference/50%20Common/Object%20Structures/EventObject '/Documentation/ApiReference/Common/Object_Structures/EventObject/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery.
 
 ##### return: Boolean
 **true** if the UI component should be closed; otherwise **false**.

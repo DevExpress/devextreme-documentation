@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 ##### field(e.component): dxTreeList
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
@@ -22,7 +22,7 @@ Model data. Available only if you use Knockout.
 ##### field(e.row): dxTreeListRowObject
 The row's properties.
 
-##### field(e.rowElement): TElement
+##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "focused row" }
 
 ##### field(e.rowIndex): Number

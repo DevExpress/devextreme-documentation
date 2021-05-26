@@ -13,13 +13,13 @@ Information about the event.
 ##### field(e.component): dxTreeView
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.value): Boolean
+##### field(e.value): Boolean | undefined
 The "Select All" check box's new state.
 
 ---

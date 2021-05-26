@@ -20,7 +20,7 @@ An object that contains information about the processed shape or connector. The 
 ##### field(e.component): dxDiagram
 The UI component instance's name.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

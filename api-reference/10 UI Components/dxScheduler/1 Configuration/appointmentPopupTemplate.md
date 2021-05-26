@@ -11,7 +11,7 @@ The template to be used for rendering an appointment details popup.
 ##### param(appointmentData): Object
 The data of the appointment whose popup is rendered.
 
-##### param(contentElement): dxElement
+##### param(contentElement): DxElement
 #include common-ref-elementparam with { element: "appointment" }
 
 ##### return: String | Element | jQuery

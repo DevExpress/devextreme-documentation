@@ -7,7 +7,7 @@ default: 'content'
 ##### shortDescription
 Specifies a custom template for the UI component content. Rendered only once - when the UI component is created.
 
-##### param(container): dxElement
+##### param(container): DxElement
 #include common-ref-elementparam with { element: "UI component content" }
 
 ##### return: String | Element | jQuery

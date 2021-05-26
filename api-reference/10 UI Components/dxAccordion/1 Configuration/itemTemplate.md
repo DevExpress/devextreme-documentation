@@ -13,7 +13,7 @@ The current item's data.
 ##### param(itemIndex): Number
 The current item's index.
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
 ##### return: String | Element | jQuery

@@ -32,7 +32,7 @@ The HtmlEditor uses the <a href="https://github.com/DevExpress/devextreme-quill/
 
 ##### Angular
 
-The HtmlEditor is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. This library is installed automatically when you [add DevExtreme to your application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'). To create an HtmlEditor on your page, use the following code:
+The HtmlEditor uses the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. This library is installed automatically when you [add DevExtreme to your application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'). To create an HtmlEditor on your page, use the following code:
 
     <!-- tab: app.component.html -->
     <dx-html-editor>
@@ -73,7 +73,7 @@ The HtmlEditor is built on top of and requires the <a href="https://github.com/D
 
 ##### Vue
 
-The HtmlEditor is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. This library is installed automatically when you [add DevExtreme to your application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/'). To create an HtmlEditor on your page, use the following code:
+The HtmlEditor uses the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. This library is installed automatically when you [add DevExtreme to your application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/'). To create an HtmlEditor on your page, use the following code:
 
     <!-- tab: App.vue -->
     <template>
@@ -96,7 +96,7 @@ The HtmlEditor is built on top of and requires the <a href="https://github.com/D
 
 ##### React
 
-The HtmlEditor is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. This library is installed automatically when you [add DevExtreme to your application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/'). To create an HtmlEditor on your page, and use the following code:
+The HtmlEditor uses the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. This library is installed automatically when you [add DevExtreme to your application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/'). To create an HtmlEditor on your page, and use the following code:
 
     <!-- tab: App.js -->
     import React from 'react';

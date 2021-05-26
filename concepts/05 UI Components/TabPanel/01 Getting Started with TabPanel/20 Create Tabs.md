@@ -1,8 +1,7 @@
 To create tabs, specify the [items[]](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/) array. TabPanel generates a tab with a view for each item in this array. 
 
-To configure an individual tab, specify a tab's [title](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#title). Use the [icon](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#icon) property to specify an image for a tab. Refer to this property's description to see the available icons. You can also use the [badge](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge) property to create a badge with custom text as shown in code below. This code produces the following output:
+To configure an individual tab, specify a tab's [title](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#title). Use the [icon](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#icon) property to specify an image for a tab. The code below uses icons from the [DevExtreme icon library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library). You can also use the [badge](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge) property to create a badge with custom text:
 
-![DevExtreme TabPanel: Customized Tabs](/images/UiWidgets/tab-panel-getting-started-customized-tabs.png)
 
 ---
 ##### jQuery  
@@ -99,4 +98,8 @@ To configure an individual tab, specify a tab's [title](/Documentation/ApiRefere
 
 ---
 
-You can also use the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate) property to specify a custom template for all tabs. **items**.[tabTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#tabTemplate) overrides the **itemTitleTemplate** property and allows you to specify a template for an individual tab. This approach is not shown in this tutorial but you can refer to this property's description for details.
+The code above produces the following output:
+
+![DevExtreme TabPanel: Customized Tabs](/images/UiWidgets/tab-panel-getting-started-customized-tabs.png)
+
+You can also use the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate) property to specify a custom template for all tabs. **items**.[tabTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#tabTemplate) overrides the **itemTitleTemplate** property and allows you to specify a template for an individual tab. This approach is not shown in this tutorial but you can refer to the property descriptions for details.

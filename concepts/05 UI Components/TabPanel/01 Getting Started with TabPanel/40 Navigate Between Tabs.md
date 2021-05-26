@@ -1,4 +1,5 @@
-Specify the following properties to configure navigation between tabs:      
+Specify the following properties to configure navigation between tabs:
+
 - [swipeEnabled](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#swipeEnabled)      
 Specifies whether users can switch between views with the swipe gesture.
 

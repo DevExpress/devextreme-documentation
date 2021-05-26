@@ -1,17 +1,18 @@
-You can use the following properties to specify tab content:       
-- [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate)
-Specifies a custom template for content of all TabPanel views.
+You can use the following properties to specify view content:       
+
+- [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate)     
+Specifies a custom template for all views.
 
 - **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text)        
-Specifies text displayed in a separate view. 
+Specifies text displayed in an individual view. 
 
 - **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template)        
-Allows you to set a custom template for a separate view's content. This property overrides **itemTemplate**.
+Specifies a custom template for an individual view. This property overrides **itemTemplate**.
 
 - [noDataText](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#noDataText)        
 Specifies text or markup to display when views do not have content.
 
-This tutorial demonstrates the use of the **items[]**.**template** property. This property allows to specify different content for separate views. In the code below, the views contain [Form](/Documentation/ApiReference/UI_Components/dxForm/), [TextArea](/Documentation/ApiReference/UI_Components/dxTextArea/), and [RadioGroup](/Documentation/ApiReference/UI_Components/dxRadioGroup/) UI components. 
+This tutorial demonstrates the use of the **items[]**.**template** property. This property allows you to specify different content for individual views. In the code below, the views contain the [Form](/Documentation/ApiReference/UI_Components/dxForm/), [TextArea](/Documentation/ApiReference/UI_Components/dxTextArea/), and [RadioGroup](/Documentation/ApiReference/UI_Components/dxRadioGroup/) UI components. 
 
 ---
 ##### jQuery  
@@ -121,10 +122,12 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxTabPanelModule } from 'devextreme-angular';
-    import { DxFormModule } from 'devextreme-angular/ui/form';
-    import { DxTextAreaModule } from 'devextreme-angular/ui/text-area';
-    import { DxRadioGroupModule } from 'devextreme-angular/ui/radio-group';
+    import {
+        DxTabPanelModule,
+        DxFormModule,
+        DxTextAreaModule,
+        DxRadioGroupModule
+    } from 'devextreme-angular';
 
     @NgModule({
         declarations: [

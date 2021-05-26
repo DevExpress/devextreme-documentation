@@ -3,11 +3,11 @@ You can use the following properties to specify view content:
 - [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate)     
 Specifies a custom template for all views.
 
-- **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text)        
-Specifies text displayed in an individual view. 
-
 - **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template)        
 Specifies a custom template for an individual view. This property overrides **itemTemplate**.
+
+- **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text)        
+Specifies text displayed in an individual view. 
 
 - [noDataText](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#noDataText)        
 Specifies text or markup to display when views do not have content.

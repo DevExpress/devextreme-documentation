@@ -9,6 +9,9 @@ Specifies whether to loop views.
 - [animationEnabled](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#animationEnabled)      
 Specifies whether to animate the change of the current view.
 
+- [selectedIndex](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#selectedIndex)     
+Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. This property is not demonstrated in this demo.
+
 ---
 ##### jQuery  
 

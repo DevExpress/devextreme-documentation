@@ -16,7 +16,6 @@
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.common.css">
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_1/css/dx.light.css">
             <link rel="stylesheet" href="index.css">
 
@@ -29,7 +28,7 @@
     </html>
 
     <!-- tab: index.css -->
-    #tab-panel {
+    #tabPanel {
         height: 250px;
         width: 500px;
     }
@@ -76,7 +75,7 @@
     export class AppModule { }
 
     <!-- tab: app.component.css -->
-    #tab-panel {
+    #tabPanel {
         height: 250px;
         width: 500px;
     }
@@ -105,7 +104,7 @@
     </script>
 
     <style>
-    #tab-panel {
+    #tabPanel {
         height: 250px;
         width: 500px;
     }
@@ -123,18 +122,16 @@
 
     const App = () => {
         return (
-            <div className="App">
-                <TabPanel id="tabPanel">
-                    {/* Configuration goes here */}
-                </TabPanel>
-            </div>
+            <TabPanel id="tabPanel">
+                {/* Configuration goes here */}
+            </TabPanel>
         );
     }
 
     export default App;
 
     <!-- tab: App.css -->
-    #tab-panel {
+    #tabPanel {
         height: 250px;
         width: 500px;
     }

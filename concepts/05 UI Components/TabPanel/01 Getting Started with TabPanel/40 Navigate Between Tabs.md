@@ -57,9 +57,9 @@ Specifies whether to animate the change of the current view.
     const App = () => {
         return (
             <TabPanel
-            loop={true}
-            animationEnabled={true} 
-            swipeEnabled={true}>
+                loop={true}
+                animationEnabled={true} 
+                swipeEnabled={true}>
                 {/* ... */}
             </TabPanel>
         );

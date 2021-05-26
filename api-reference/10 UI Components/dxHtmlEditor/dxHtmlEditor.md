@@ -28,8 +28,8 @@ variables: {
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/HtmlEditor/Overview/"
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/"
 }
 
 #####See Also#####

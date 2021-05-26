@@ -1,0 +1,11 @@
+.dx-htmleditor-content img {
+    vertical-align: middle;
+}
+
+.dx-htmleditor-content table {
+    width: 50%;
+}
+
+.dx-htmleditor-content table td:last-child {
+    text-align: right;
+}

@@ -22,7 +22,7 @@ A filter expression.
 If you filter data [remotely]({basewidgetpath}/Configuration/remoteOperations/), the filter expression must not contain functions.
 
 ---
-The **calculateFilterExpression** function must return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). The simplest filter expression has the following format:
+The **calculateFilterExpression** function should return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). A basic filter expression has the following format:
 
     [selector, comparisonOperator, filterValue]
 

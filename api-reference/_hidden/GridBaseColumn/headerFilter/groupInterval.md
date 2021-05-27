@@ -11,6 +11,10 @@ Specifies how the header filter combines values into groups. Does not apply if y
 ---
 For numeric columns, assign a number to this property. This number designates a step with which to generate groups. Column values are classified into these groups.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
+}
+
 For date columns, set this property to one of the accepted string values above. Dates are grouped into a hierarchy, and the string value indicates its lowest level. The default level is *"day"*, which means that the header filter forms the following hierarchy: Year &rarr; Month &rarr; Day. You can disable the hierarchical display if you set the **groupInterval** to **null**. In this case, you also need to implement the column's [calculateFilterExpression](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression) function as follows:
 
 ---

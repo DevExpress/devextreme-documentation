@@ -20,17 +20,8 @@ The zoomed/panned axis.
 ##### field(e.cancel): Boolean
 Allows you to cancel zooming or panning.
 
-##### field(e.component): dxPolarChart
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
 ##### field(e.event): event
 #include common-ref-eventparam
-
-##### field(e.model): any
-The model data. Available only if you use Knockout.
 
 ##### field(e.range): VizRange
 The [visual range](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/visualRange/') when zooming or panning starts.

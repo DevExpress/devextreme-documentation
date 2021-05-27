@@ -1,4 +1,4 @@
-To call UI component methods, you need the UI component instance. Define its key in the [`ref`](https://vuejs.org/v2/api/#ref) attribute. Then, pass the key to the [`$refs`](https://vuejs.org/v2/api/#vm-refs) property to get the component. The UI component instance is stored in the component's  `instance` field:
+To call UI component methods, you need the UI component instance. Define its key in the <a href="https://v3.vuejs.org/api/special-attributes.html#ref" target="_blank">`ref`</a> attribute. Then, pass the key to the <a href="https://v3.vuejs.org/api/instance-properties.html#refs" target="_blank">`$refs`</a> property to get the component. The UI component instance is stored in the component's  `instance` field:
 
     <!-- tab: App.vue -->
     <template>

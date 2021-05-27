@@ -1,6 +1,6 @@
 #include common-troubleunderstanding-note with {
     technology: "Vue",
-    docsLink: "https://vuejs.org/v2/guide/#Getting-Started"
+    docsLink: "https://v3.vuejs.org/guide/introduction.html#getting-started"
 }
 
 The DevExtreme Vue UI Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Vue applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.

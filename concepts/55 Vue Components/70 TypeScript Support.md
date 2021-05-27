@@ -63,4 +63,4 @@ The following code shows an example of using TypeScript with DevExtreme componen
     </script>
 
 #####See Also#####
-- <a href="https://vuejs.org/v2/guide/typescript.html" target="_blank">TypeScript Support in Vue Documentation</a>
+- <a href="https://v3.vuejs.org/guide/typescript-support.html" target="_blank">TypeScript Support in Vue Documentation</a>

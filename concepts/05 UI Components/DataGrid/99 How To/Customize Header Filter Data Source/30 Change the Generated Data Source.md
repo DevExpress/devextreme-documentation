@@ -13,6 +13,8 @@ In the following code, the **postProcess** function adds a custom item to the ge
                 // ...
                 headerFilter: {
                     dataSource: function (options) {
+                        // Turn pagination off if header filter items are sorted incorrectly:
+                        // options.paginate = false
                         options.dataSource.postProcess = function (results) {
                             results.push({
                                 text: "Weekends",
@@ -51,6 +53,8 @@ In the following code, the **postProcess** function adds a custom item to the ge
     })
     export class AppComponent {
         customizeHeaderFilterData(options) {
+            // Turn pagination off if header filter items are sorted incorrectly:
+            // options.paginate = false
             options.dataSource.postProcess = (results) => {
                 results.push({
                     text: "Weekends",
@@ -116,6 +120,8 @@ In the following code, the **postProcess** function adds a custom item to the ge
         },
         methods: {
             customizeHeaderFilterData(options) {
+                // Turn pagination off if header filter items are sorted incorrectly:
+                // options.paginate = false
                 options.dataSource.postProcess = (results) => {
                     results.push({
                         text: 'Weekends',
@@ -155,6 +161,8 @@ In the following code, the **postProcess** function adds a custom item to the ge
         }
 
         customizeHeaderFilterData(options) {
+            // Turn pagination off if header filter items are sorted incorrectly:
+            // options.paginate = false
             options.dataSource.postProcess = function(results) {
                 results.push({
                     text: 'Weekends',

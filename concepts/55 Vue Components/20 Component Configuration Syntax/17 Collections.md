@@ -27,7 +27,7 @@ Use nested configuration components. The following example shows how to configur
     }
     </script>
 
-DevExtreme collection UI components also support the `DxItem` element. It allows you to declare collection items in the UI component markup. `DxItem` can contain custom markup and have attributes that control parts of item appearance, such as `badge` in the following code. The attributes are described in the [items](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') section of each collection UI component. Ensure to specify that an item's content is in the default [slot](https://vuejs.org/v2/guide/components-slots.html).
+DevExtreme collection UI components also support the `DxItem` element. It allows you to declare collection items in the UI component markup. `DxItem` can contain custom markup and have attributes that control parts of item appearance, such as `badge` in the following code. The attributes are described in the [items](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') section of each collection UI component. Ensure to specify that an item's content is in the default <a href="https://v3.vuejs.org/guide/component-slots.html" target="_blank">slot</a>.
 
     <!-- tab: App.vue -->
     <template>

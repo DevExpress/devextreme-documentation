@@ -10,7 +10,7 @@ Specifies whether to loop views.
 Specifies whether to animate the change of the current view.
 
 - [selectedIndex](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#selectedIndex)     
-Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. This property is not demonstrated in this demo.
+Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. In this tutorial, this property initially selects the first tab.
 
 ---
 ##### jQuery  
@@ -21,6 +21,7 @@ Specifies the index of the currently selected tab. Use this property to switch b
             loop: true,
             animationEnabled: true,
             swipeEnabled: true,
+            selectedIndex: 0
             // ...
         });
     });
@@ -31,7 +32,8 @@ Specifies the index of the currently selected tab. Use this property to switch b
     <dx-tab-panel
         [loop]="true"
         [animationEnabled]="true"
-        [swipeEnabled]="true">   
+        [swipeEnabled]="true"
+        [selectedIndex]="0">   
         <!-- ... -->
     </dx-tab-panel>
 
@@ -43,7 +45,8 @@ Specifies the index of the currently selected tab. Use this property to switch b
         <DxTabPanel
             :loop="true"
             :animation-enabled="true" 
-            :swipe-enabled="true">
+            :swipe-enabled="true"
+            :selected-index="0">
             <!-- ... -->
         </DxTabPanel>
     </template>
@@ -62,7 +65,8 @@ Specifies the index of the currently selected tab. Use this property to switch b
             <TabPanel
                 loop={true}
                 animationEnabled={true} 
-                swipeEnabled={true}>
+                swipeEnabled={true}
+                selectedIndex={0}>
                 {/* ... */}
             </TabPanel>
         );

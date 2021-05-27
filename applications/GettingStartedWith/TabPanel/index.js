@@ -3,6 +3,7 @@ $(function(){
         loop: true,
         animationEnabled: true,
         swipeEnabled: true,
+        selectedIndex: 0,
         items: [{
             title: "Employee",
             icon: "floppy",

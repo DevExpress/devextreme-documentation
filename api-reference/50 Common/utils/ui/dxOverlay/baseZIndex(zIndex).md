@@ -17,7 +17,7 @@ The following example demonstrates how to call the method.
 
     DevExpress.ui.dxOverlay.baseZIndex(2000);
     // ===== or when using modules =====
-    import * as overlay from 'devextreme/ui/overlay';
+    import overlay from 'devextreme/ui/overlay';
     overlay.baseZIndex(2000);
 
 By default, the base z-index for all overlay UI components except Toast is 1500.

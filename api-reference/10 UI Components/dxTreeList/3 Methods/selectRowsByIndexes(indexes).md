@@ -1,11 +1,11 @@
 ---
-##### merge
+id: dxTreeList.selectRowsByIndexes(indexes)
+---
+---
+##### return: Promise<any>
+<!-- Description goes here -->
+
+##### param(indexes): Array<Number>
+<!-- Description goes here -->
 
 ---
-This method has the following specifics:
-
-- A call of this method clears selection of all previously selected rows.
-- When calculating row indexes, the UI component ignores the hierarchy of rows.
-
-#####See Also#####
-#include common-link-callmethods

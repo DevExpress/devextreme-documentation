@@ -1,4 +1,4 @@
-Changes in the `bindingProperty` are propagated to the TextBox's **value**, but not vice versa. `:` before **value** is a shorthand for the [`v-bind`](https://vuejs.org/v2/api/#v-bind) directive.
+Changes in the `bindingProperty` are propagated to the TextBox's **value**, but not vice versa:
 
     <!-- tab: App.vue -->
     <template>

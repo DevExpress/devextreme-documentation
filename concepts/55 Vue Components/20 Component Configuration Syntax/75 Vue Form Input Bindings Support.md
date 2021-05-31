@@ -1,4 +1,4 @@
-DevExtreme editors support the [`v-model`](https://vuejs.org/v2/guide/forms.html) directive that creates two-way binding on the editor's value.
+DevExtreme editors support the <a href="https://v3.vuejs.org/guide/forms.html" target="_blank">`v-model`</a> directive that creates two-way binding on the editor's value.
 
     <!-- tab: App.vue -->
     <template>

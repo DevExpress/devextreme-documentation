@@ -9,7 +9,7 @@ default: undefined
 Specifies a set of available filter operations.
 
 ---
-The following table lists default operations by [data type](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType'):
+The following table lists available filter operations by [data type](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType'). The {WidgetName} uses the first operation in each array as the default operation for the specific data type.
 
 <table class="dx-table">
   <tr>

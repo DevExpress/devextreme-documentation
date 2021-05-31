@@ -7,10 +7,10 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies the column's filter operation displayed in the [filter row](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Filter_Row').
+Specifies a filter operation that applies when users use the [filter row](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/) to filter the column.
 
 ---
-The following table lists default filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'):
+The following table lists default selected filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'):
 
 <table class="dx-table">
   <tr>

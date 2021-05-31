@@ -10,21 +10,41 @@ Specifies whether to loop views.
 Specifies whether to animate the change of the current view.
 
 - [selectedIndex](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#selectedIndex)     
-Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. In this tutorial, this property initially selects the first tab.
+Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. In this tutorial, this property's value depends on the the RadioGroup's selected item (see `tabSwitcherRadioGroup`). 
+
+- [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#onSelectionChanged)        
+Allows you to specify a function that is executed when the selected tab changes. You can access the selected tab's data within this function. In the code below, this function binds the TabPanel's **selectedItem** with RadioGroup's [value](/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#value) properties for frameworks that do not support two-way binding.
 
 ---
 ##### jQuery  
 
     <!-- tab: index.js -->
     $(function(){   
-        $("#tabPanel").dxTabPanel({
+        let tabPanel = $("#tabPanel").dxTabPanel({
             loop: true,
             animationEnabled: true,
             swipeEnabled: true,
-            selectedIndex: 0
+            selectedIndex: 0,
+            onSelectionChanged: function(e) {
+                const selectedTab = e.addedItems[0].title;
+                tabSwitcherRadioGroup.option("value", selectedTab);
+            },
             // ...
-        });
+        }).dxTabPanel("instance");
+
+        let tabSwitcherRadioGroup = $("#radioGroup").dxRadioGroup({
+            items: tabNames,
+            value: tabNames[0],
+            layout: "horizontal",
+            onValueChanged: function(e) {
+                const selectedTabIndex = tabNames.indexOf(e.value);
+                tabPanel.option("selectedIndex", selectedTabIndex);
+            }
+        }).dxRadioGroup("instance");
     });
+
+    const tabNames = ["Employee", "Notes", "Role"];
+ 
 
 ##### Angular
 
@@ -33,42 +53,115 @@ Specifies the index of the currently selected tab. Use this property to switch b
         [loop]="true"
         [animationEnabled]="true"
         [swipeEnabled]="true"
-        [selectedIndex]="0">   
+        [(selectedIndex)]="selectedTabIndex">   
         <!-- ... -->
     </dx-tab-panel>
 
+    <dx-radio-group
+        [items]="tabNames"
+        [value]="tabNames[selectedTabIndex]"
+        layout="horizontal"
+        (onValueChanged)="onValueChanged($event)">
+    </dx-radio-group>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+
+        tabNames = ["Employee", "Notes", "Role"]
+
+        selectedTabIndex = 0;
+
+        onValueChanged(e){
+            this.selectedTabIndex = this.tabNames.indexOf(e.value);
+        }
+    }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxTabPanel
-            :loop="true"
-            :animation-enabled="true" 
-            :swipe-enabled="true"
-            :selected-index="0">
-            <!-- ... -->
-        </DxTabPanel>
+        <div>
+            <DxTabPanel
+                :loop="true"
+                :animation-enabled="true" 
+                :swipe-enabled="true"
+                v-model:selected-index="selectedTabIndex">
+                <!-- ... -->
+            </DxTabPanel>
+
+            <DxRadioGroup 
+                :items="tabNames"
+                :value="tabNames[selectedTabIndex]"
+                layout="horizontal"
+                @value-changed="onValueChanged"
+            />
+        </div>
     </template>
 
     <script>
         // ...
+    export default {
+        data() {
+            // ...
+            const tabNames = ['Employee', 'Notes', 'Role'];
+
+            return {
+                selectedTabIndex: 0,
+                tabNames
+            };
+        },
+        methods: {
+            onValueChanged(e){
+                this.selectedTabIndex = this.tabNames.indexOf(e.value);
+            }
+        }
+    }
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
+    import React, { useState, useCallback } from 'react';
     // ...
 
+    const tabNames = ['Employee', 'Notes', 'Role'];
+
     const App = () => {
+        const [selectedTabIndex, setSelectedTabIndex] = useState(0);
+ 
+        const onRadioGroupValueChanged = useCallback((e) => {
+            setSelectedTabIndex(tabNames.indexOf(e.value));
+        }, []);
+
+        const onTabSelectionChanged = useCallback((e) => {
+            setSelectedTabIndex(tabNames.indexOf(e.addedItems[0].title));
+        }, []);
         return (
-            <TabPanel
-                loop={true}
-                animationEnabled={true} 
-                swipeEnabled={true}
-                selectedIndex={0}>
-                {/* ... */}
-            </TabPanel>
+            <div>
+                <TabPanel
+                    loop={true}
+                    animationEnabled={true} 
+                    swipeEnabled={true}
+                    selectedIndex={selectedTabIndex}
+                    onSelectionChanged={onTabSelectionChanged}>
+                    {/* ... */}
+                </TabPanel>
+
+                <RadioGroup 
+                    items={tabNames}
+                    value={tabNames[selectedTabIndex]}
+                    layout="horizontal"
+                    onValueChanged={onRadioGroupValueChanged}
+                />
+            </div>
         );
     }
 

@@ -241,10 +241,13 @@ export default {
               }
             });
             params = params.slice(0, -1);
-            return fetch(
-              `https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders${params}`
-            )
-              .then((response) => response.json())
+            return fetch(`https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders${params}`)
+              .then(response => {
+                if (!response.ok) {
+                  throw new Error('Network response was not ok');
+                }
+                return response.json();
+              })
               .then((result) => {
                 return new Promise((resolve) => {
                   // You can process the received data here
@@ -359,10 +362,13 @@ const dataSource = {
         }
       });
       params = params.slice(0, -1);
-      return fetch(
-        `https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders${params}`
-      )
-        .then((response) => response.json())
+      return fetch(`https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/Sales/orders${params}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
         .then((result) => {
           return new Promise((resolve) => {
             // You can process the received data here

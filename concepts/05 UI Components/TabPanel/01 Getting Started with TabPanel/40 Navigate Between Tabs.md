@@ -12,9 +12,6 @@ Specifies whether to animate the change of the current view.
 - [selectedIndex](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#selectedIndex)     
 Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. In this tutorial, this property's value depends on the the RadioGroup's selected item (see `tabSwitcherRadioGroup`). 
 
-- [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#onSelectionChanged)        
-Allows you to specify a function that is executed when the selected tab changes. You can access the selected tab's data within this function. In the code below, this function binds the TabPanel's **selectedItem** with RadioGroup's [value](/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/#value) properties for frameworks that do not support two-way binding.
-
 ---
 ##### jQuery  
 

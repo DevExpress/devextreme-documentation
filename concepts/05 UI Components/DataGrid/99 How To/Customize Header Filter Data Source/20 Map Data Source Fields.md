@@ -31,9 +31,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                                 categoryId: item.categoryId,
                                 categoryCode: item.categoryCode
                             }
-                        },
-                        // Turn pagination off if header filter items are sorted incorrectly:
-                        // paginate: false
+                        }
                     }
                 }
             }]
@@ -80,9 +78,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                         categoryId: item.categoryId,
                         categoryCode: item.categoryCode
                     }
-                },
-                // Turn pagination off if header filter items are sorted incorrectly:
-                // paginate: false
+                }
             };
         }
     }
@@ -156,9 +152,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                             categoryId: item.categoryId,
                             categoryCode: item.categoryCode
                         }
-                    },
-                    // Turn pagination off if header filter items are sorted incorrectly:
-                    // paginate: false
+                    }
                 }
             };
         }
@@ -192,9 +186,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                 categoryId: item.categoryId,
                 categoryCode: item.categoryCode
             }
-        },
-        // Turn pagination off if header filter items are sorted incorrectly:
-        // paginate: false
+        }
     };
 
     class App extends React.Component {

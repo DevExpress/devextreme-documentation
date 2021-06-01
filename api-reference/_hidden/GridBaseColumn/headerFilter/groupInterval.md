@@ -31,7 +31,7 @@ For date columns, set this property to one of the accepted string values above. 
                 },
                 calculateFilterExpression(value, operation, target) {
                     if(value && target === "headerFilter") {
-                        return [this.dataField, operation, new Date(value)];
+                        return [this.dataField, operation, value];
                     }
                     return this.defaultCalculateFilterExpression.apply(this, arguments);
                 }
@@ -64,7 +64,7 @@ For date columns, set this property to one of the accepted string values above. 
             const column = this as any;
 
             if(value && target === "headerFilter") {
-                return [column.dataField, operation, new Date(value)];
+                return [column.dataField, operation, value];
             }
             return column.defaultCalculateFilterExpression.apply(column, arguments);
         }
@@ -124,7 +124,7 @@ For date columns, set this property to one of the accepted string values above. 
                     const column = this as any;
 
                     if(value && target === "headerFilter") {
-                        return [column.dataField, operation, new Date(value)];
+                        return [column.dataField, operation, value];
                     }
                     return column.defaultCalculateFilterExpression.apply(column, arguments);
                 }
@@ -146,7 +146,7 @@ For date columns, set this property to one of the accepted string values above. 
 
     function calculateFilterExpression (value, operation, target) {
         if(value && target === "headerFilter") {
-            return [this.dataField, operation, new Date(value)];
+            return [this.dataField, operation, value];
         }
         return this.defaultCalculateFilterExpression.apply(this, arguments);
     }

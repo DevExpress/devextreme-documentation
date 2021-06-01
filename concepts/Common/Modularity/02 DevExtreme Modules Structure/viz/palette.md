@@ -12,7 +12,7 @@ Exports:
 
         require("viz/palette").getPalette;
         // ===== or =====
-        import { getPalette } from "devextreme/viz/palette;
+        import { getPalette } from "devextreme/viz/palette";
 
 - *registerPalette* - The [registerPalette(paletteName, palette)](/api-reference/50%20Common/utils/viz/registerPalette(paletteName_palette).md '/Documentation/ApiReference/Common/utils/viz/#registerPalettepaletteName_palette') method
 

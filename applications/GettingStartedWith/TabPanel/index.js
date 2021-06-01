@@ -12,7 +12,7 @@ $(function(){
             title: "Employee",
             icon: "floppy",
             template: function (_, _, element) {
-                const formDiv = $("<div style='padding:15px'>")
+                const formDiv = $("<div id='form'>")
                 formDiv.dxForm({
                     formData: employeeData,
                     items: ["name", "position", "hireDate", "officeNumber"]
@@ -23,7 +23,7 @@ $(function(){
             title: "Notes",
             icon: "comment",
             template: function (_, _, element) {
-                const textAreaDiv = $("<div style='padding:15px; height: 100%'>")
+                const textAreaDiv = $("<div id='textArea'>")
                 textAreaDiv.dxTextArea({
                     value: employeeData.notes
                 });
@@ -34,7 +34,7 @@ $(function(){
             icon: "isnotblank",
             badge: "new",
             template: function (_, _, element) {
-                const radioGroupDiv = $("<div style='padding:15px'>")
+                const radioGroupDiv = $("<div id='radioGroup'>")
                 radioGroupDiv.dxRadioGroup({
                     items: employeeData.roles,
                     value: employeeData.roles[0]
@@ -44,7 +44,7 @@ $(function(){
         }]
     }).dxTabPanel("instance");
 
-    let tabSwitcherRadioGroup = $("#radioGroup").dxRadioGroup({
+    let tabSwitcherRadioGroup = $("#radioGroupSwitcher").dxRadioGroup({
         items: tabNames,
         value: tabNames[0],
         layout: "horizontal",
@@ -61,7 +61,7 @@ const employeeData = {
     hireDate: new Date(2012, 4, 13),
     officeNumber: 901,
     notes: "John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.",
-    roles: ["Chief Officer", "Manager", "Administrator"]
+    roles: ["Chief Officer", "Administrator", "Manager"]
 };
 
 const tabNames = ["Employee", "Notes", "Role"];

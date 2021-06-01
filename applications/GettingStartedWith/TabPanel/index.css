@@ -9,6 +9,15 @@
     width: 500px;
 }
 
-#radioGroup {
+#form, #radioGroup {
+    padding: 15px; 
+}
+
+#textArea {
+    padding: 15px; 
+    height: 100%;
+}
+
+#radioGroupSwitcher {
     margin-top: 20px;
 }

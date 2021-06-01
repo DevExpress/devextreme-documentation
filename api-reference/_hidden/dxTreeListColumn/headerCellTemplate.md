@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom template for column headers.
 
-##### param(columnHeader): dxElement
+##### param(columnHeader): DxElement
 #include common-ref-elementparam with { element: "current header" }
 
 ##### param(headerInfo): Object

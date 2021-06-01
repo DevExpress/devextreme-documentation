@@ -1,6 +1,6 @@
 ---
 id: dxDropDownEditor.Options.dropDownOptions
-type: dxPopup_Options
+type: dxPopup_Options | dxPopover_Options
 default: {}
 ---
 ---

@@ -2,7 +2,7 @@
 id: dxSVGElement
 type: SVGElement | jQuery
 hidden: 
-dep: TElement
+deprecated: 
 ---
 ---
 ##### shortDescription

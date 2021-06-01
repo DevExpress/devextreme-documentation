@@ -16,7 +16,7 @@ Allows you to cancel showing the context menu.
 ##### field(e.component): dxFileManager
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -28,7 +28,7 @@ The file system item for which you invoke the context menu.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.targetElement): dxElement
+##### field(e.targetElement): DxElement
 The file system item's container. It is an [HTML Element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) or a [jQuery Element](https://api.jquery.com/Types/#jQuery) when you use jQuery. This element can be a grid element or a thumbnail (for the items view area), or a tree view node (for the navigation panel). The **targetElement** field value is 'undefined' if you click on empty space in the items view area.
 
 ##### field(e.viewArea): 'navPane' | 'itemView'

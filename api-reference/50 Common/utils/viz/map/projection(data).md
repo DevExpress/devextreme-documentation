@@ -2,7 +2,6 @@
 id: viz.map.projection(data)
 module: viz/vector_map/projection
 export: projection
-hidden: 
 ---
 ---
 ##### shortDescription

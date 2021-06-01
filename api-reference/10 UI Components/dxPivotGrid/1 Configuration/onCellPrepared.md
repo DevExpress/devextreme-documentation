@@ -16,7 +16,7 @@ The [area](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuratio
 ##### field(e.cell): dxPivotGridPivotGridCell
 The cell [properties](/api-reference/10%20UI%20Components/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/'). This field is read-only.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "prepared cell" }
 
 ##### field(e.columnIndex): Number
@@ -25,7 +25,7 @@ The position of a cell's column.
 ##### field(e.component): dxPivotGrid
 The UI component [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

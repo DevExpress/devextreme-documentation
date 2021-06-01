@@ -19,7 +19,7 @@ If **true**, prevents the user from opening the appointment details form.
 ##### field(e.component): dxScheduler
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.form): dxForm

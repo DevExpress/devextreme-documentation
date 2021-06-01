@@ -19,7 +19,7 @@ The total weight of the node's incoming [links](/api-reference/10%20UI%20Compone
 ##### field(info.weightOut): Number
 The total weight of the node's outgoing links.
 
-##### param(element): dxElement
+##### param(element): DxElement
 #include common-ref-elementparam with { element: "tooltip" }
 
 ##### return: String | Element | jQuery

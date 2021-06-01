@@ -5,6 +5,6 @@ hidden:
 ---
 ##### shortDescription
 
-##### return: dxElement
+##### return: DxElement
 
 ---

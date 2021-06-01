@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.data): Object
 The row's data.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -46,7 +46,7 @@ The row's key.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.rowElement): dxElement
+##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "row" }
 
 ##### field(e.rowIndex): Number

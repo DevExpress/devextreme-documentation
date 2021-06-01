@@ -14,7 +14,7 @@ Information about the event.
 ##### field(e.component): dxPivotGrid
 The UI component's instance.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

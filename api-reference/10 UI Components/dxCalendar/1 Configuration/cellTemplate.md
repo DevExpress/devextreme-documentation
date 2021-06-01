@@ -22,7 +22,7 @@ The current view's name.
 ##### param(itemIndex): Number
 The current cell's index.
 
-##### param(itemElement): dxElement
+##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### return: String | Element | jQuery

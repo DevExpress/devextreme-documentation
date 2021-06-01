@@ -10,7 +10,7 @@ Specifies a custom template for the input field.
 ##### param(selectedItem): Object
 The selected item's data.
 
-##### param(fieldElement): dxElement
+##### param(fieldElement): DxElement
 #include common-ref-elementparam with { element: "field" }
 
 ##### return: String | Element | jQuery

@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 Specifies a custom button template.
 
-##### param(cellElement): TElement
+##### param(cellElement): DxElement
 The container of the cell that should display the button. It is an <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target="_blank">HTML Element</a> or a <a href="http://api.jquery.com/Types/#jQuery" target="_blank">jQuery Element</a> when you use jQuery.
 
 ##### param(cellInfo): Object

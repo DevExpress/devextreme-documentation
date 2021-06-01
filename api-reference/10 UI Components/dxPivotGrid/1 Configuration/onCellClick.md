@@ -19,7 +19,7 @@ Allows you to cancel field expansion.
 ##### field(e.cell): dxPivotGridPivotGridCell
 The cell [properties](/api-reference/10%20UI%20Components/dxPivotGrid/6%20Pivot%20Grid%20Cell '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/'). This field is read-only.
 
-##### field(e.cellElement): dxElement
+##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "cell" }
 
 ##### field(e.columnFields): Array<PivotGridDataSource_Options_fields>
@@ -34,7 +34,7 @@ The UI component [instance](/api-reference/10%20UI%20Components/Component/3%20Me
 ##### field(e.dataFields): Array<PivotGridDataSource_Options_fields>
 The *data* area's fields.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event

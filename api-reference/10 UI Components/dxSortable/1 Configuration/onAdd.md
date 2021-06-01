@@ -16,7 +16,7 @@ The UI component that raised the event.
 ##### field(e.dropInsideItem): Boolean
 Indicates if the dragged item is dropped inside another item.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
@@ -34,7 +34,7 @@ The item's original position. If the item is dragged from another UI component, 
 ##### field(e.itemData): any
 The dragged item's data.
 
-##### field(e.itemElement): dxElement
+##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.model): any

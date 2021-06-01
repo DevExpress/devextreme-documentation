@@ -22,11 +22,11 @@ The filter passed to this method is not reflected in [any of the filtering UI el
     </tr>
     <tr>
         <td><a href="{basewidgetpath}/Configuration/filterRow/">Filter Row</a></td>
-        <td><b>columns[]</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValue">filterValue</a></td>
+        <td><b>columns[]</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValue">filterValue</a> and <b>columns[]</b>.<a href="{basewidgetpath}/Configuration/columns/#selectedFilterOperation">selectedFilterOperation</a></td>
     </tr>
     <tr>
         <td><a href="{basewidgetpath}/Configuration/headerFilter/">Header Filter</a></td>
-        <td><b>columns[]</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValues">filterValues</a></td>
+        <td><b>columns[]</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValues">filterValues</a> and <b>columns[]</b>.<a href="{basewidgetpath}/Configuration/columns/#filterType">filterType</a></td>
     </tr>
     <tr>
         <td><a href="{basewidgetpath}/Configuration/#filterBuilder">Intergrated Filter Builder</a></td>

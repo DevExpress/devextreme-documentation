@@ -1,5 +1,5 @@
 ---
 id: dxBox.Options.dataSource
-type: String | Array<String, dxBoxItem, any> | DataSource | DataSource_Options
+type: String | Array<String, dxBoxItem, any> | Store | DataSource | DataSource_Options
 default: null
 ---

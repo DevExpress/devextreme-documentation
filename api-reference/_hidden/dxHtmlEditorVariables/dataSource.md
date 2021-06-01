@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditorVariables.dataSource
-type: String | Array<String> | DataSource | DataSource_Options
+type: String | Array<String> | Store | DataSource | DataSource_Options
 default: null
 ---
 ---

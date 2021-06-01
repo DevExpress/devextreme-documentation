@@ -6,4 +6,4 @@ Exports:
 
         require("data/endpoint_selector");
         // ===== or =====
-        import EndpointSelecror from "devextreme/data/endpoint_selector";
+        import EndpointSelector from "devextreme/data/endpoint_selector";

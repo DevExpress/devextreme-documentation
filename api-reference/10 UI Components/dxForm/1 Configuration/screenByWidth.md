@@ -78,6 +78,65 @@ Implement the **screenByWidth** function to change the relation between a size q
         [screenByWidth]="getSizeQualifier">
     </dx-form>
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...
+            :screen-by-width="getSizeQualifier">
+            <!-- ... -->
+        </DxForm>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxForm, {
+        // ...
+    } from 'devextreme-vue/form';
+
+    export default {
+        components: {
+            DxForm,
+            // ...
+        },
+        // ...
+        methods: {
+            getSizeQualifier(width) {
+                if (width < 768)  return "xs";
+                if (width < 992)  return "sm";
+                if (width < 1200) return "md";
+                return "lg";
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Form, {
+        // ...
+    } from 'devextreme-react/form';
+
+    const getSizeQualifier = (width) => {
+        if (width < 768)  return "xs";
+        if (width < 992)  return "sm";
+        if (width < 1200) return "md";
+        return "lg";
+    };
+
+    export default function App() {
+        return (
+            <Form ...
+                screenByWidth={getSizeQualifier}>
+                {/* ... */}
+            </Form>
+        );
+    }
+
 ---
 
 #include common-demobutton with {

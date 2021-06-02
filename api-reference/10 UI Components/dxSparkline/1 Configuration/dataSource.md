@@ -1,6 +1,6 @@
 ---
 id: dxSparkline.Options.dataSource
-type: Array<any> | DataSource | DataSource_Options | String
+type: Array<any> | Store | DataSource | DataSource_Options | String
 notUsedInTheme: 
 ---
 ---

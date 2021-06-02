@@ -8,4 +8,4 @@ default: true
 Specifies whether icons that open the filter lists are visible.
 
 ---
-[note] If certain columns do not display the filter icons, specify the columns' [dataType]({basewidgetpath}/Configuration/columns/#dataType) and make sure that you did not disable their [allowFiltering]({basewidgetpath}/Configuration/columns/#allowFiltering) property.
+[note] If a column does not display a filter icon, specify the column's [dataType]({basewidgetpath}/Configuration/columns/#dataType) and ensure that the column's [allowFiltering]({basewidgetpath}/Configuration/columns/#allowFiltering) property is not disabled.

@@ -8,6 +8,8 @@ inherits: Font
 Specifies font properties for the title.
 
 ---
+The following code sample illustrates how to set this property:
+
 ---
 ##### jQuery
 

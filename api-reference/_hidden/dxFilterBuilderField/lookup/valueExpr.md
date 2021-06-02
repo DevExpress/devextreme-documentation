@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the data source field whose values should be replaced.
+Specifies the data field whose values should be replaced with values from the [displayExpr]({basewidgetpath}/Configuration/fields/lookup/#displayExpr) field.
 
 ##### param(data): Object
 The current item's data object.
@@ -14,6 +14,6 @@ The current item's data object.
 A unique item identifier.
 
 ---
-This field's values are replaced with the **displayExpr** field's values.
+Values from this data field must have the same type as [dataField]({basewidgetpath}/Configuration/fields/#dataField) values.
 
 #include uiwidgets-ref-valueExpr-functionnote

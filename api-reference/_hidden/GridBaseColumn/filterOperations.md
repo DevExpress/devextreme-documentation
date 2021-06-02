@@ -6,10 +6,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the available filter operations. Applies if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') is **true** and the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/') and/or [filterPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '{basewidgetpath}/Configuration/filterPanel/') are visible.
+Specifies available filter operations. Applies if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') is **true** and the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/') and/or [filterPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '{basewidgetpath}/Configuration/filterPanel/') are visible.
 
 ---
-The following table lists the available filter operations by [data types](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations in the filter row and nested [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder') component. The same operations are assigned to columns of a specific data type.
+The following table lists available filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations in the filter row and nested [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder') component. The {WidgetName} uses the first operation in each array as the default operation for the specified data type.
 
 <table class="dx-table">
   <tr>
@@ -30,9 +30,9 @@ The following table lists the available filter operations by [data types](/api-r
   </tr>
 </table>
 
-The nested filter builder also allows users to select from an extended set of operations that include *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/api-reference/_hidden/dxFilterBuilderCustomOperation/name.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/#name') of custom operations (if there are any).
+The nested filter builder also allows users to select from an extended set of operations that include *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/api-reference/_hidden/dxFilterBuilderCustomOperation/name.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/#name') of custom operations (if any).
 
-The **filterOperations** property can also accept an empty array. In this case, the selected filter operation is *"="* for all data types, and a user cannot change it.
+The **filterOperations** property can also accept an empty array. In this case, the [selectedFilterOperation]({basewidgetpath}/Configuration/columns/#selectedFilterOperation) applies, and users cannot change it.
 
 #include common-ref-enum with {
     enum: "`FilterOperations`",

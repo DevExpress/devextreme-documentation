@@ -36,7 +36,7 @@ The state includes field configurations, expanded headers, and other settings. T
         $("#cancel").dxButton({
             text: "Cancel Changes",
             onClick: function () {
-                fieldChooser.option("state", pivotGridDataSource.state();
+                fieldChooser.option("state", pivotGridDataSource.state());
             }
         });
     });

@@ -9,25 +9,7 @@ Specifies data filtering conditions. Cannot be used with an [XmlaStore](/api-ref
 ---
 Possible variants:
 
-* Binary filter
-
-        [ "dataField", "=", 3 ]
-
-* Unary filter
-
-        [ "!", [ "dataField", "=", 3 ] ]
-
-* Complex filter
-
-        [
-            [ "dataField", "=", 10 ],
-            "and",
-            [
-                [ "otherDataField", "<", 3 ],
-                "or",
-                [ "otherDataField", ">", 11 ]
-            ]
-        ]
+#include datalayer-ref-filter-acceptedvalues
 
 ---
 ##### jQuery

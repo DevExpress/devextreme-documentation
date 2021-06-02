@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.headerFilter.dataSource
-type: Array<any> | function(options) | DataSource_Options
+type: Array<any> | Store | function(options) | DataSource_Options
 default: undefined
 ---
 ---

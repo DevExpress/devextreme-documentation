@@ -1,5 +1,5 @@
 ---
 id: dxContextMenu.Options.dataSource
-type: String | Array<dxContextMenuItem> | DataSource | DataSource_Options
+type: String | Array<dxContextMenuItem> | Store | DataSource | DataSource_Options
 default: null
 ---

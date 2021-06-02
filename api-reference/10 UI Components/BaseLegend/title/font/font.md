@@ -8,6 +8,8 @@ inherits: Font
 Specifies the legend title's font properties.
 
 ---
+The following code sample illustrates how to set this property:
+
 ---
 ##### jQuery
 

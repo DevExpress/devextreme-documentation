@@ -176,7 +176,4 @@ The task's size.
         }    
     </script>
 
-##### return: String | TElement
-<!-- Description goes here -->
-
 ---

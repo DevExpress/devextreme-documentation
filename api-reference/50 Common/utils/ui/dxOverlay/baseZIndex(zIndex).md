@@ -1,7 +1,7 @@
 ---
 id: ui.dxOverlay.baseZIndex(zIndex)
 module: ui/overlay
-export: dxOverlay.baseZIndex
+export: baseZIndex
 ---
 ---
 ##### shortDescription

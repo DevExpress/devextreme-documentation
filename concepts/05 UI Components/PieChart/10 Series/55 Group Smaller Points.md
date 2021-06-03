@@ -38,6 +38,50 @@ Top N points with the biggest values remain ungrouped; all other points form a g
             ],
             // ...
         })
+    
+    ##### Vue
+    
+        <!-- tab: App.vue -->
+        <template>
+            <DxPieChart ... >
+                <DxSmallValuesGrouping
+                    mode="topN"
+                    :top-count="5"
+                />
+            </DxPieChart>
+        </template>
+    
+        <script>
+        import DxPieChart, {
+            DxSmallValuesGrouping
+        } from 'devextreme-vue/pie-chart';
+    
+        export default {
+            components: {
+                DxPieChart,
+                DxSmallValuesGrouping
+            },
+            // ...
+        }
+        </script>
+    
+    ##### React
+    
+        <!-- tab: App.js -->
+        import PieChart, {
+            SmallValuesGrouping
+        } from 'devextreme-react/pie-chart';
+    
+        export default function App() {
+            return (
+                <PieChart ... >
+                    <SmallValuesGrouping
+                        mode="topN"
+                        topCount={5}
+                    />
+                </PieChart>
+            );
+        }
 
     ---
 
@@ -80,6 +124,50 @@ Points that fall beyond a threshold establish a group. The **smallValuesGrouping
             // ...
         })
 
+    ##### Vue
+    
+        <!-- tab: App.vue -->
+        <template>
+            <DxPieChart ... >
+                <DxSmallValuesGrouping
+                    mode="smallValueThreshold"
+                    :threshold="3.5"
+                />
+            </DxPieChart>
+        </template>
+    
+        <script>
+        import DxPieChart, {
+            DxSmallValuesGrouping
+        } from 'devextreme-vue/pie-chart';
+    
+        export default {
+            components: {
+                DxPieChart,
+                DxSmallValuesGrouping
+            },
+            // ...
+        }
+        </script>
+    
+    ##### React
+    
+        <!-- tab: App.js -->
+        import PieChart, {
+            SmallValuesGrouping
+        } from 'devextreme-react/pie-chart';
+    
+        export default function App() {
+            return (
+                <PieChart ... >
+                    <SmallValuesGrouping
+                        mode="smallValueThreshold"
+                        threshold={3.5}
+                    />
+                </PieChart>
+            );
+        }
+
     ---
 
 The group for small points is called *"others"* by default. You can change this using the **smallValuesGrouping**.[groupName](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/smallValuesGrouping/groupName.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/smallValuesGrouping/#groupName') property.
@@ -119,6 +207,48 @@ The group for small points is called *"others"* by default. You can change this 
         ],
         // ...
     })
+
+##### Vue
+    
+    <!-- tab: App.vue -->
+    <template>
+        <DxPieChart ... >
+            <DxSmallValuesGrouping ...
+                group-name="miscellaneous"
+            />
+        </DxPieChart>
+    </template>
+
+    <script>
+    import DxPieChart, {
+        DxSmallValuesGrouping
+    } from 'devextreme-vue/pie-chart';
+
+    export default {
+        components: {
+            DxPieChart,
+            DxSmallValuesGrouping
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import PieChart, {
+        SmallValuesGrouping
+    } from 'devextreme-react/pie-chart';
+
+    export default function App() {
+        return (
+            <PieChart ... >
+                <SmallValuesGrouping ...
+                    groupName="miscellaneous"
+                />
+            </PieChart>
+        );
+    }
 
 ---
 

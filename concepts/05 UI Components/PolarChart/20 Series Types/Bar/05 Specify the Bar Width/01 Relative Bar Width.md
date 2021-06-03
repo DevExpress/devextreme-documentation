@@ -46,6 +46,57 @@ Regulating the empty space on a bar's sides controls the relative angular bar wi
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPolarChart ... >
+            <DxSeries :bar-padding="0.1"/> <!-- for an individual series -->
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings :bar-padding="0.1"/> <!-- for all series in the chart -->
+        </DxPolarChart>
+    </template>
+
+    <script>
+    import DxPolarChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/polar-chart';
+
+    export default {
+        components: {
+            DxPolarChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PolarChart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/polar-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PolarChart ... >
+                    <Series barPadding={0.1} /> {/* for an individual series */}
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings barPadding={0.1}/> {/* for all series in the chart */}
+                </PolarChart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 In single-series charts, the available sector equals the interval between two [major ticks](/concepts/05%20UI%20Components/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Axis_Ticks'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20UI%20Components/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/UI_Components/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width') and the group's angular width.
@@ -83,6 +134,43 @@ The parent group's width can be specified using the [barGroupPadding](/api-refer
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPolarChart ...
+            :bar-group-padding="0.2">
+        </DxPolarChart>
+    </template>
+
+    <script>
+    import DxPolarChart from 'devextreme-vue/polar-chart';
+
+    export default {
+        components: {
+            DxPolarChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PolarChart from 'devextreme-react/polar-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PolarChart ...
+                    barGroupPadding={0.2}>
+                </PolarChart>
+            );
+        }
+    }
+
+    export default App;
 
 ---
 

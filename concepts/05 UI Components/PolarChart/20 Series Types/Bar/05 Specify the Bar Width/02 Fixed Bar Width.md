@@ -46,6 +46,57 @@ The [barWidth](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Typ
         // ...
     })
 
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPolarChart ... >
+            <DxSeries :bar-width="20"/> <!-- for an individual series -->
+            <DxSeries ... />
+            ...
+            <DxCommonSeriesSettings :bar-width="20"/> <!-- for all series in the chart -->
+        </DxPolarChart>
+    </template>
+
+    <script>
+    import DxPolarChart, {
+        DxSeries,
+        DxCommonSeriesSettings
+    } from 'devextreme-vue/polar-chart';
+
+    export default {
+        components: {
+            DxPolarChart,
+            DxSeries,
+            DxCommonSeriesSettings
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PolarChart, {
+        Series,
+        CommonSeriesSettings
+    } from 'devextreme-react/polar-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PolarChart ... >
+                    <Series barWidth={20} /> {/* for an individual series */}
+                    <Series ... />
+                    ...
+                    <CommonSeriesSettings barWidth={20}/> {/* for all series in the chart */}
+                </PolarChart>
+            );
+        }
+    }
+
+    export default App;
+
 ---
 
 A bar's maximum angular width is limited. In single-series charts, it cannot be greater than the interval between two [major ticks](/concepts/05%20UI%20Components/PolarChart/10%20Visual%20Elements/060%20Axis%20Ticks/01%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Axis_Ticks'). In multi-series charts, it depends on the number of [bars in the parent group](/concepts/05%20UI%20Components/PolarChart/20%20Series%20Types/Bar/05%20Specify%20the%20Bar%20Width '/Documentation/Guide/UI_Components/PolarChart/Series_Types/#Bar/Specify_the_Bar_Width') and this group's actual angular width. 
@@ -83,5 +134,42 @@ Bar groups' angular width can be changed using the [barGroupWidth](/api-referenc
         ],
         // ...
     })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template> 
+        <DxPolarChart ...
+            :bar-group-width="45">
+        </DxPolarChart>
+    </template>
+
+    <script>
+    import DxPolarChart from 'devextreme-vue/polar-chart';
+
+    export default {
+        components: {
+            DxPolarChart
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import PolarChart from 'devextreme-react/polar-chart';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <PolarChart ...
+                    barGroupWidth={45}>
+                </PolarChart>
+            );
+        }
+    }
+
+    export default App;
 
 ---

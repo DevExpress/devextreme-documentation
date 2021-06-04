@@ -134,7 +134,7 @@ The culture settings specify the property's default value.
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
-        .FirstDayOfWeek("1")
+        .FirstDayOfWeek(FirstDayOfWeek.Monday)
         // ...
     )
 

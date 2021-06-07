@@ -22,14 +22,18 @@ If these extensions do not suit your needs, configure the **CustomStore** and im
 
 The example below shows how to implement the **load** function. Note that in this example, the **CustomStore** is not declared explicitly. Instead, its load operation is implemented directly in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') configuration object to shorten the example.
 
-    <!--JavaScript-->
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
     $(function(){
-        $("#pivotGridContainer").dxPivotGrid({
+        $("#pivotGrid").dxPivotGrid({
             dataSource: {
                 // ...
                 remoteOperations: true,
                 load: function (loadOptions) {
-                    var d = $.Deferred();
+                    let d = $.Deferred();
                     $.getJSON('http://mydomain.com/MyDataService', {
                         // Passing settings to the server
                         
@@ -53,6 +57,217 @@ The example below shows how to implement the **load** function. Note that in thi
             }
         });
     });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-pivot-grid [dataSource]="dataSource"> 
+    </dx-pivot-grid>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { HttpClient } from '@angular/common/http';
+
+    @Component({
+      styleUrls: ["./app.component.css"],
+      selector: "demo-app",
+      templateUrl: "./app.component.html"
+    })
+    export class AppComponent {
+        dataSource: any;
+
+        constructor(httpClient: HttpClient) {
+            function isNotEmpty(value: any): boolean {
+                return value !== undefined && value !== null && value !== "";
+            }
+            this.dataSource = {
+                remoteOperations: true,
+                store: new CustomStore({
+                    // ...
+                    load: function (loadOptions: any) {
+                        let params: HttpParams = new HttpParams();
+                        // Passing settings to the server
+                        
+                        // Pass if the remoteOperations property is set to true
+                        [
+                            "skip",
+                            "take",
+                            "filter",
+                            "totalSummary",
+                            "group",
+                            "groupSummary"
+                        ].forEach(function (i) {
+                            if (i in loadOptions && isNotEmpty(loadOptions[i]))
+                                params = params.set(i, JSON.stringify(loadOptions[i]));
+                        });
+                        return httpClient
+                            .get(
+                                "http://mydomain.com/MyDataService",
+                                { params: params }
+                            )
+                            .toPromise()
+                            .then((result: any) => {
+                                if ("data" in result) {
+                                    return {
+                                        data: result.data,
+                                        summary: result.summary
+                                    }
+                                } else {
+                                    return result;
+                                }
+                            })
+                            .catch((error) => {
+                                throw "Data Loading Error";
+                            });
+                    }
+                })
+            };
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { HttpClientModule, HttpParams } from '@angular/common/http';
+    import { DxPivotGridModule } from "devextreme-angular";
+    import CustomStore from "devextreme/data/custom_store";
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxPivotGridModule,
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPivotGrid
+            :data-source="dataSource"
+        />
+    </template>
+    <script>
+    import { DxPivotGrid } from "devextreme-vue/pivot-grid";
+
+    import CustomStore from "devextreme/data/custom_store";
+    import "whatwg-fetch";
+
+    function isNotEmpty(value) {
+      return value !== undefined && value !== null && value !== "";
+    }
+
+    export default {
+        components: {
+            DxPivotGrid,
+        },
+        data() {
+            return {
+                dataSource: {
+                    remoteOperations: true,
+                    store: new CustomStore({
+                        // ...
+                        load: function(loadOptions) {
+                            let params = '?';
+                            // Passing settings to the server
+                        
+                            // Pass if the remoteOperations property is set to true 
+                            [
+                                "skip",
+                                "take",
+                                "filter",
+                                "totalSummary",
+                                "group",
+                                "groupSummary"
+                            ].forEach(function(i) {
+                                if(i in loadOptions && isNotEmpty(loadOptions[i]))
+                                { params += `${i}=${JSON.stringify(loadOptions[i])}&`; }
+                            });
+                            params = params.slice(0, -1);
+                            return fetch(`http://mydomain.com/MyDataService${params}`)
+                                .then(response => response.json())
+                                .then((data) => {
+                                    return {
+                                        data: data.data,
+                                        summary: data.summary
+                                    };
+                                })
+                                .catch(() => { throw 'Data Loading Error'; });
+                        }
+                    })
+                },
+            };
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import { PivotGrid } from 'devextreme-react/pivot-grid';
+    import CustomStore from "devextreme/data/custom_store";
+    import "whatwg-fetch";
+
+    function isNotEmpty(value) {
+        return value !== undefined && value !== null && value !== "";
+    }
+
+    const dataSource = {
+        remoteOperations: true,
+        store: new CustomStore({
+            // ...
+            load: function (loadOptions) {
+                let params = "?";
+                // Passing settings to the server
+                        
+                // Pass if the remoteOperations property is set to true
+                [
+                    "skip",
+                    "take",
+                    "filter",
+                    "totalSummary",
+                    "group",
+                    "groupSummary"
+                ].forEach(function (i) {
+                    if (i in loadOptions && isNotEmpty(loadOptions[i])) {
+                        params += `${i}=${JSON.stringify(loadOptions[i])}&`;
+                    }
+                });
+                params = params.slice(0, -1);
+                return fetch(`http://mydomain.com/MyDataService${params}`)
+                    .then(response => response.json())
+                    .then((data) => {
+                        return {
+                            data: data.data,
+                            summary: data.summary
+                        };
+                    })
+                    .catch(() => { throw 'Data Loading Error'; });
+        }),
+    };
+
+    function App() {
+        return (
+            <PivotGrid
+                dataSource={dataSource} 
+            />
+        );
+    }
+
+    export default App;
+
+
+---
+
 
 Now, the PivotGrid sends several requests to load data. At first launch, it sends the request that contains the following settings.
 

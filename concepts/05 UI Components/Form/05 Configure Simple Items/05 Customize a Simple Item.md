@@ -14,13 +14,14 @@ If none of the available editors suit your requirements, you can define a custom
             items: ["name", { 
                 dataField: "notes",
                 template: function (data, itemElement) {
-                    itemElement.append("<div id='textAreaContainer'>")
+                    itemElement.append( $("<div id='textAreaContainer'>")
                                .dxTextArea({
                                    value: data.component.option('formData')[data.dataField],
                                    onValueChanged: function(e) {
                                        data.component.updateData(data.dataField, e.value);
                                    }
                                });
+                    )
                 }
             }, {
                 dataField: "picture",

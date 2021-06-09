@@ -9,6 +9,8 @@ default: 'normal'
 Specifies how to wrap texts that do not fit into a single line.
 
 ---
+This property affects the vertical axis only when the [placeholderSize](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#placeholderSize) property limits space for labels.
+
 #include dataviz-ref-wordwrap with {
     textOverflow_link: "/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/label/#textOverflow"
 }

@@ -14,7 +14,7 @@ A scale break is an area across an axis that is displayed instead of a section o
 
 ![DevExtreme HTML5 JavaScript Charts Scale Breaks](/images/ChartJS/visual_elements/scale-breaks_range-selector.png)
 
-Each object in the **breaks** array configures a single scale break. We recommend that a scale break range exceeds the tick interval twice. Otherwise, the break might not be visible.
+Each object in the **breaks** array configures a single scale break.A scale break range should be at least two tick intervals. Otherwise, the break might not be visible.
 
 #####See Also#####
 - [breakStyle](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/breakStyle '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/breakStyle/')

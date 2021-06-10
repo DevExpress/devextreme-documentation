@@ -10,7 +10,7 @@ notUsedInTheme:
 Declares a custom scale break collection. Applies only if the axis' [type](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#type') is *"continuous"* or *"logarithmic"*.
 
 ---
-A scale break is an area across an axis that is displayed instead of a section of an axis range. It allows you to improve the readability of chart sections with large gaps in their ranges.
+A scale break is an area across an axis that is displayed instead of a section of an axis range. Scale breaks improve the readability of chart sections with large gaps in their ranges.
 
 ![DevExtreme HTML5 JavaScript Charts Scale Breaks](/images/ChartJS/visual_elements/scale-breaks_val-axis.png)
 

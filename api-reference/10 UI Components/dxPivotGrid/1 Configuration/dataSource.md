@@ -8,7 +8,6 @@ default: null
 Binds the UI component to data.
 
 ---
-If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
 The PivotGrid is bound to data via the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/'), a component that allows you to sort, filter, group, and perform other data shaping operations. The **PivotGridDataSource**'s underlying data access logic is isolated in the store. You use different store types for different data sources.
  

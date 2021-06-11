@@ -22,11 +22,6 @@ The series does not react to pointing to it.
 
 [note]Points in area series are hidden by default. To make them visible, assign **true** to the **point**.**visible** property.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesHoverMode`",
-    values: "`NearestPoint`, `IncludePoints`, `ExcludePoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to an area series.
-
 #####See Also#####
 - [hoverStyle](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/hoverStyle/')
 - **point**.[hoverMode](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/point/#hoverMode')

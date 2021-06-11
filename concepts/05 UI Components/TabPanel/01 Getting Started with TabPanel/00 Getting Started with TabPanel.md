@@ -4,6 +4,6 @@ This tutorial explains how to add a TabPanel to a page and configure its core fe
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/TabPanel/index.html, /Content/Applications/21_1/GettingStartedWith/TabPanel/index.js, /Content/Applications/21_1/GettingStartedWith/TabPanel/index.css"></div>
 
-Refer to the following sections for more information about each configuration step. The full code is available in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-tabpanel" target="_blank">getting-started-with-tabpanel</a>.
+Refer to the sections below for more information about each configuration step. The full code is available in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-tabpanel" target="_blank">getting-started-with-tabpanel</a>.
 
 [tags] dxtabpanel, dxtab

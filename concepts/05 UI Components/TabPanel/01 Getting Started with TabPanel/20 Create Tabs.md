@@ -1,4 +1,4 @@
-To create tabs, specify the [items[]](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/) array. TabPanel generates a tab with a view for each item in this array. 
+Populate the [items[]](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/) array with data items. The TabPanel generates a tab with a view for each item in this array.
 
 Specify a tab's [title](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#title) and/or [icon](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#icon) properties to configure an individual tab. The code below uses icons from the [DevExtreme icon library](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library). You can also use the [badge](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge) property to create a badge with custom text.
 

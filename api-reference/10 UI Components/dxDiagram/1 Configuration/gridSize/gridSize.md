@@ -28,6 +28,46 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->+
+    <dx-diagram #diagram id="diagram" viewUnits="cm" units="cm">
+        <dxo-grid-size 
+            [value]="2" 
+            [items]='[1, 2, 3]'>
+        </dxo-grid-size>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+        units="cm"
+        viewUnits="cm"
+    >
+        <DxGridSize
+        :value="2"
+        :items="['1', '2', '3']"
+        />
+    </DxDiagram>
+    </template>
+
+##### React
+
+    <!-- tab: App.js -->
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <Diagram id="diagram" ref={this.diagramRef} units="cm" viewUnits="cm">
+                    <GridSize value={2} items={[1, 2, 3]} />
+                </Diagram>
+            );
+        }
+    }
 ---
 
 #####See Also#####

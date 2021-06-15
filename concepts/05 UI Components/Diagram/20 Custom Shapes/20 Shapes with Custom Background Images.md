@@ -10,7 +10,7 @@ Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20C
 
 ---
 
-#####jQuery
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -172,7 +172,7 @@ Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20C
 ##### ASP.NET Core Controls
 
     <!-- tab: Diagram.cshtml -->
-@(Html.DevExtreme().Diagram()
+    @(Html.DevExtreme().Diagram()
         .ID("diagram")
         .CustomShapes(cs => {
             cs.Add()
@@ -203,7 +203,7 @@ Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20C
         .Toolbox(tb => tb
             .Groups(g => g.Add().Category("hardware").Title("Hardware"))
         )
-)
+    )
 
 
 ##### ASP.NET MVC Controls

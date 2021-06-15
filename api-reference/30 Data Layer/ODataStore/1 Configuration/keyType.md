@@ -88,5 +88,4 @@ Set this property if you do not need to [filter data](/concepts/70%20Data%20Bind
     export default App;
 
 ---
-
-When specifying this property in an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, use the `EdmType` enum that has the following values: `Int32`, `Int64`, `Guid`, `String`, `Boolean`, `Single` and `Decimal`.
+<!-- Description goes here -->

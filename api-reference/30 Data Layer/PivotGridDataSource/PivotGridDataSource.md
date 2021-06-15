@@ -268,6 +268,3 @@ When using a UI component as an <a href="https://docs.devexpress.com/DevExtremeA
     )
 
 #include datalayer-store-note-immutable with { name: "PivotGridDataSource" }
-
-#####See Also#####
-- <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">ASP.NET MVC Controls - Bind Controls to Data</a>

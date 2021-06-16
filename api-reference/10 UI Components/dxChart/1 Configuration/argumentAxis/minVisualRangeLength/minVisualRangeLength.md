@@ -122,7 +122,6 @@ If the visual range is set on a numeric axis, assign a number to this property. 
 
 ---
 
-<!-- Description goes here -->
 
 #####See Also#####
 - [Visual and Whole Ranges](/concepts/05%20UI%20Components/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/')

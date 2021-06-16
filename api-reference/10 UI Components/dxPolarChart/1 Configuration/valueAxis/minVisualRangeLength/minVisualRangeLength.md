@@ -122,7 +122,6 @@ Assign a number to this property if the visual range is set on a numeric axis. I
 
 ---
 
-<!-- Description goes here -->
 
 #####See Also#####
 - [wholeRange](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/wholeRange/')

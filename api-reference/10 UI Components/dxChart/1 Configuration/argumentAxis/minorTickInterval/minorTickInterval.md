@@ -98,7 +98,6 @@ If the axis displays numbers, assign a number to this property. If the axis disp
 
 ---
 
-<!-- Description goes here -->
 
 #####See Also#####
 - **argumentAxis**.[minorTickCount](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/minorTickCount.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#minorTickCount') - specifies how many minor ticks to place between two neighboring major ticks.

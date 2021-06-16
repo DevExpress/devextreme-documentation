@@ -103,7 +103,6 @@ Configures the form item's editor.
     export default App;
 
 ---
-<!-- Description goes here -->
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/Mvc/Light/"

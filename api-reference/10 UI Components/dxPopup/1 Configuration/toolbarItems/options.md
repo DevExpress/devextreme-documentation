@@ -102,4 +102,3 @@ Configures the DevExtreme UI component used as a toolbar item.
     export default App;
 
 ---
-<!-- Description goes here -->

@@ -166,7 +166,7 @@ The following instructions show how to enable and configure client-side export:
     ---
     ##### jQuery
 
-        <!--JavaScript-->
+        <!--tab: index.js-->
         $('#gridContainer').dxPivotGrid({
             export: {
                 enabled: true
@@ -315,7 +315,7 @@ The following instructions show how to enable and configure client-side export:
         export default function App() {
             return (
                 <PivotGrid ...
-                    onExporting={this.onExporting}>
+                    onExporting={onExporting}>
                     <Export enabled={true} />
                 </PivotGrid>
             );

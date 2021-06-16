@@ -20,10 +20,5 @@ The series point that a user pauses on changes its style. Points with the same a
 * **none**   
 The series does not react to pointing to it.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesHoverMode`",
-    values: "`OnlyPoint`, `AllSeriesPoints`, `AllArgumentPoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a stock series.
-
 #####See Also#####
 - [hoverStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StockSeries/hoverStyle/') - specifies the appearance of series in the hover state.

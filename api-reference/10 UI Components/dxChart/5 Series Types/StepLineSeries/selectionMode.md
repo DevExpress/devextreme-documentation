@@ -34,11 +34,6 @@ When a user selects a series, it may react in one of the following ways dependin
 
 [note]Points in step line series are hidden by default. To make them visible, assign **true** to the **point**.**visible** property.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesSelectionMode`",
-    values: "`IncludePoints`, `ExcludePoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a step line series.
-
 #####See Also#####
 - [seriesSelectionMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/seriesSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#seriesSelectionMode') - specifies whether only one or several series can stay selected.
 - **series**.[selectionStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StepLineSeries/selectionStyle/') - specifies the appearance of a series in the selected state.

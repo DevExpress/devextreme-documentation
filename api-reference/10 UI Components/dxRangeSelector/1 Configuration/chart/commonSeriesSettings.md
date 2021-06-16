@@ -4,7 +4,7 @@ type: dxChart_Options_commonSeriesSettings
 ---
 ---
 ##### shortDescription
-An object defining the common configuration properties for the chart�s series.
+An object defining the common configuration properties for the chart's series.
 
 ---
 Use this object's properties to set the properties for all chart series at once. These properties include properties common to all series types and properties specific to certain series types. So if you have several series of one type, you can set properties specific to this type. If you need to set an individual value for a common or type-specific property, use the corresponding **series** object within the **series** array. The values that are set individually override the corresponding common values.

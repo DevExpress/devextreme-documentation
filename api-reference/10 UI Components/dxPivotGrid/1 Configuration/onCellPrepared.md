@@ -72,9 +72,9 @@ This function allows you to customize cells and modify their content. Common use
         })
         export class AppComponent {
             onCellPrepared(e) {          
-                if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
-                    e.cellElement.style.fontSize = "14px";
-                    e.cellElement.style.fontWeight = "bold";
+                if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                    e.cellElement.style.fontSize = '14px';
+                    e.cellElement.style.fontWeight = 'bold';
                 }
             }
 
@@ -117,9 +117,9 @@ This function allows you to customize cells and modify their content. Common use
             },
             methods: {
                 onCellPrepared(e) {          
-                    if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
-                        e.cellElement.style.fontSize = "14px";
-                        e.cellElement.style.fontWeight = "bold";
+                    if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                        e.cellElement.style.fontSize = '14px';
+                        e.cellElement.style.fontWeight = 'bold';
                     }
                 }
             }
@@ -135,9 +135,9 @@ This function allows you to customize cells and modify their content. Common use
         
         export default function App() {
             const customizeCells = useCallback((e) {          
-                if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
-                    e.cellElement.style.fontSize = "14px";
-                    e.cellElement.style.fontWeight = "bold";
+                if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                    e.cellElement.style.fontSize = '14px';
+                    e.cellElement.style.fontWeight = 'bold';
                 }
             }, []);
             return (
@@ -184,9 +184,9 @@ This function allows you to customize cells and modify their content. Common use
         })
         export class AppComponent {
             onCellPrepared(e) {          
-                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.addClass("your-custom-class");
-                if(e.area === "row" || e.area === "column")
+                if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
+                    e.cellElement.addClass('your-custom-class');
+                if(e.area === 'row' || e.area === 'column')
                     e.cellElement.addClass("another-custom-class");
             }
 
@@ -229,10 +229,10 @@ This function allows you to customize cells and modify their content. Common use
             },
             methods: {
                 onCellPrepared(e) {          
-                    if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                        e.cellElement.addClass("your-custom-class");
-                    if(e.area === "row" || e.area === "column")
-                        e.cellElement.addClass("another-custom-class");
+                    if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
+                        e.cellElement.addClass('your-custom-class');
+                    if(e.area === 'row' || e.area === 'column')
+                        e.cellElement.addClass('another-custom-class');
                 }
             }
         }

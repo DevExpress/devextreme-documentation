@@ -10,7 +10,7 @@ Specifies whether columns should adjust their widths to the content.
 ---
 When this property is set to **true**, all columns adjust their width to the content.
 
-If the {WidgetName} is wider that its overall content, the columns are stretched to occupy all available width. To avoid this, set the **columns**.[width]({basewidgetpath}/Configuration/columns/headerFilter/#width) property to *"auto"*.
+If the {WidgetName} is wider than its overall content, the columns are stretched to occupy all available width. To avoid this, set the [columnWidth]({basewidgetpath}/Configuration/#columnWidth) or **columns**.[width]({basewidgetpath}/Configuration/columns/#width) property to *"auto"*.
 
 If the content is wider, the **columnAutoWidth** property set to **true** causes horizontal scrolling. You can set the [allowHiding]({basewidgetpath}/Configuration/columns/#allowHiding) property to **false** for columns you want to be displayed continuously.
 

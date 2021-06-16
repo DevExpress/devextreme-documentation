@@ -36,11 +36,6 @@ When a user points to a series, it may react in one of the following ways depend
 
 [note]Points in step area series are hidden by default. To make them visible, assign **true** to the **point**.**visible** property.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesHoverMode`",
-    values: "`NearestPoint`, `IncludePoints`, `ExcludePoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a step area series.
-
 #####See Also#####
 - [hoverStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StepAreaSeries/hoverstyle/hoverStyle.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StepAreaSeries/hoverStyle/') - specifies the appearance of series in the hover state.
 - **point**.[hoverMode](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StepAreaSeries/point/#hoverMode') - specifies the hover mode of series points.

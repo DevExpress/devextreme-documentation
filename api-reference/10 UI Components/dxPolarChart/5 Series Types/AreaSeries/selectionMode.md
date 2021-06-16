@@ -20,11 +20,6 @@ The series does not react to selection.
 
 [note]Points in area series are hidden by default. To make them visible, assign **true** to the **point**.**visible** property.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesSelectionMode`",
-    values: "`IncludePoints`, `ExcludePoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to an area series.
-
 #####See Also#####
 - [selectionStyle](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/selectionStyle/')
 - **point**.[selectionMode](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/selectionMode.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/point/#selectionMode')

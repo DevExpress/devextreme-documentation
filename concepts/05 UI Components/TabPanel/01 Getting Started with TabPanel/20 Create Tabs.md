@@ -102,4 +102,4 @@ The code above produces the following output:
 
 ![DevExtreme TabPanel: Customized Tabs](/images/UiWidgets/tab-panel-getting-started-customized-tabs.png)
 
-You can also use the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate) property to specify a custom template for all tabs. **items**.[tabTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#tabTemplate) overrides the **itemTitleTemplate** property and allows you to specify a template for an individual tab. This approach is not shown in this tutorial but you can refer to the property descriptions for details.
+You can also use the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate) property to specify a custom template for all tabs. **items**.[tabTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#tabTemplate) overrides the **itemTitleTemplate** property and allows you to specify a template for an individual tab. This approach is not shown in this tutorial, but you can refer to the property descriptions for details.

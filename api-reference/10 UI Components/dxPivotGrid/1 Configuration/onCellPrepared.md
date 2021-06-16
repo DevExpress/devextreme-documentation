@@ -263,7 +263,7 @@ This function allows you to customize cells and modify their content. Common use
             }, []);
             return (
                 <PivotGrid ...
-                    onCellPrepared={customizeCells}>
+                    onCellPrepared={customizeCells}
                 />
             );
         }

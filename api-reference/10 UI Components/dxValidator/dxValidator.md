@@ -20,6 +20,5 @@ dx.web.js, dx.all.js
 }
 
 #####See Also#####
-- <a href="https://docs.devexpress.com/AspNetCore/400576/devextreme-based-controls/concepts/data-validation" target="_blank">ASP.NET MVC Controls - Data Validation</a>
 #include common-link-setupdevextreme
 #include common-link-configurewidget

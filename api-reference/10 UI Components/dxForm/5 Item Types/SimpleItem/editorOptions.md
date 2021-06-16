@@ -104,35 +104,6 @@ Configures the form item's editor.
 
 ---
 
-When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, configure **editorOptions** as follows:
-
-    <!--Razor C#-->@(Html.DevExtreme().Form()
-        .FormData(Model.Data)
-        .Items(items => {
-            items.AddSimple().DataField("EmployeeID")
-                // Instead of TextBox here can be any other supported editor
-                .Editor(e => e.TextBox()
-                    .Placeholder("Type a text here...")
-                    // ...
-                    // other editor properties go here
-                )
-        })
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().Form() _
-        .FormData(Model.Data) _
-        .Items(Sub(items)
-            items.AddSimple().DataField("EmployeeID") _
-                .Editor(Function(e)
-                    ' Instead of TextBox here can be any other supported editor
-                    Return e.TextBox() _
-                        .Placeholder("Type a text here...") _
-                        ' ...
-                        ' other editor properties go here
-                End Function)
-        End Sub)
-    )
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/Mvc/Light/"
 }

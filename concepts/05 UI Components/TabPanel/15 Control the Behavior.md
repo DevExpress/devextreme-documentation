@@ -187,7 +187,7 @@ You can switch the views progrmmatically using the [selectedIndex](/api-referenc
 
 ---
 
-The TabPanel can loop the views, which enables an end user to swipe through the last view to the first and vice versa. Views are looped by default. To disable looping, assign **false** to the [loop](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/loop.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#loop') property.
+The TabPanel can loop the views, which enables an end user to swipe through the last view to the first and vice versa. To enable this behavior, set the [loop](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/loop.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#loop') property to **true**.
 
 ---
 

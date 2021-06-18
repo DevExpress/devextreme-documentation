@@ -1,7 +1,7 @@
 ---
 id: dxPivotGrid.Options.headerFilter.searchTimeout
 type: Number
-default: searchTimeout
+default: 500
 ---
 ---
 ##### shortDescription

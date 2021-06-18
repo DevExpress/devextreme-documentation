@@ -4,7 +4,9 @@ type: dxPopup_Options
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxDropDownEditor\1 Configuration\dropDownOptions.md' -->

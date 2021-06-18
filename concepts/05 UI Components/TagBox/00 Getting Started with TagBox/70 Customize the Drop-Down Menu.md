@@ -1,3 +1,3 @@
 #include tutorials-editors-customize-drop-down-menu with {
-    value: 150
+    value: 300
 } 

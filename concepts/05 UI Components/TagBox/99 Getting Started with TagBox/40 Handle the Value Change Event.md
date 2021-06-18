@@ -1,1 +1,0 @@
-Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onValueChanged) handler to perform an action when a user selects an item. In the code below, this function logs the selected item `ID`s.

@@ -1,14 +1,14 @@
-#include common-customize-dropdown-menu For example, the following code sets the maximum height of TagBox's drop-down menu to 300 pixels:
+The {WidgetName} uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/) component as the drop-down menu. To customize the menu, specify [Popup properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) in the [dropDownOptions](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#dropDownOptions) object. For example, the following code sets the height of {WidgetName}'s drop-down menu to ${{value}} pixels:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#tagBox").dxTagBox({
+        $("#{widgetName}").dx{WidgetName}({
             // ...
             dropDownOptions: {
-                maxHeight: 300
+                height: ${{value}}
             }
         });
     });
@@ -16,16 +16,16 @@
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-tag-box ...
+    <dx-{widget-name} ...
         [dropDownOptions]="dropDownOptions">
-    </dx-tag-box>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     // ...
     export class AppComponent {
         // ...
         dropDownOptions = {
-            maxHeight: 300
+            height: ${{value}}
         }
     }
 
@@ -33,7 +33,7 @@
 
     <!-- tab: App.vue -->
     <template>
-        <DxTagBox ...
+        <Dx{WidgetName} ...
             :drop-down-options="dropDownOptions"
         />
     </template>
@@ -45,7 +45,7 @@
             return {
                 // ...
                 dropDownOptions: {
-                    maxHeight: 300
+                    height: ${{value}}
                 }
             };
         }
@@ -57,12 +57,12 @@
     <!-- tab: App.js -->
     // ...
     const dropDownOptions = {
-        maxHeight: 300
+        height: ${{value}}
     };
 
     function App() {
         return (
-            <TagBox ...
+            <{WidgetName} ...
                 dropDownOptions={dropDownOptions}
             />
         );

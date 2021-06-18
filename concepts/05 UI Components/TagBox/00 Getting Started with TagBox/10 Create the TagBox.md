@@ -32,7 +32,7 @@
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a TagBox:
 
     <!-- tab: app.component.html -->
-    <dx-tag-box id="tagBox"
+    <dx-tag-box
         <!-- Configuration goes here -->
     >
     </dx-tag-box>
@@ -75,8 +75,9 @@
 
     <!-- tab: App.vue -->
     <template>
-        <DxTagBox id="tagBox">
+        <DxTagBox
             <!-- Configuration goes here -->
+        >
         </DxTagBox>
     </template>
 
@@ -106,8 +107,9 @@
 
     function App() {
         return (
-            <TagBox id="tagBox">
+            <TagBox id="tagBox"
                 {/* Configuration goes here */}
+            >
             </TagBox>
         );
     }

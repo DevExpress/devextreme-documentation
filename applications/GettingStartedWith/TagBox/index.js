@@ -1,20 +1,23 @@
 $(function() {
-    const products = new DevExpress.data.DataSource({
-        store: productsData,
+    const dataSource = new DevExpress.data.DataSource({
+        store: products,
         key: "ID",
         group: "Category"
     });
     
     $("#tagBox").dxTagBox({
-        dataSource: products,
+        id: "tagBox",
+        dataSource: dataSource,
+        valueExpr: "ID",
+        displayExpr: "Name",
         showSelectionControls: true,
         searchEnabled: true,
         grouped: true,
-        valueExpr: "ID",
-        displayExpr: "Name",
+        multiline: true,
         maxDisplayedTags: 6,
         onValueChanged: function(e) {
-          console.log(e.value);
+            console.log(e.previousValue);
+            console.log(e.value);
         },
         dropDownOptions: {
             maxHeight: 300
@@ -23,7 +26,7 @@ $(function() {
     
 });
 
-const productsData = [{
+const products = [{
     "ID": 1,
     "Name": "HD Video Player",
     "Category": "Video Players"

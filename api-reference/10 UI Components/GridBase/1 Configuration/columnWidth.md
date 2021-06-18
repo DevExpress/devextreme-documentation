@@ -1,7 +1,8 @@
 ---
 id: GridBase.Options.columnWidth
-type: Number
+type: Boolean | String
 default: undefined
+acceptValues: 'auto'
 ---
 ---
 ##### shortDescription

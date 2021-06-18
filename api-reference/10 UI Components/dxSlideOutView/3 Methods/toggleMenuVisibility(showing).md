@@ -3,13 +3,15 @@ id: dxSlideOutView.toggleMenuVisibility(showing)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### return: Promise<void>
-<!-- Description goes here -->
+<!-- %return% -->
 
 ##### param(showing): Boolean | undefined
-<!-- Description goes here -->
+<!-- %param(showing)% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxSlideOut\3 Methods\toggleMenuVisibility(showing).md' -->

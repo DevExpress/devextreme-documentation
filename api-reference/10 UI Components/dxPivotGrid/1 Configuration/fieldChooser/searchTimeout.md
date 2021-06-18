@@ -1,7 +1,7 @@
 ---
 id: dxPivotGrid.Options.fieldChooser.searchTimeout
 type: Number
-default: searchTimeout
+default: 500
 ---
 ---
 ##### shortDescription

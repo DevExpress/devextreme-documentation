@@ -8,6 +8,9 @@ Navigates to a row with the specified key.
 ##### param(key): any
 The row's key.
 
+##### return: Promise<void>
+<!-- Description goes here -->
+
 ---
 This method performs the following actions:
 

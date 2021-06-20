@@ -1,7 +1,7 @@
 ---
 id: Component
 module: core/component
-export: default
+export: Component
 hidden: 
 ---
 ---

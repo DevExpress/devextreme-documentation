@@ -19,11 +19,6 @@ Specifies the mode in which all the records are selected. Applies only if **sele
 - *"allPages"*  
  Selects records on all pages.
 
-#include common-ref-enum with {
-    enum: "`SelectAllMode`",
-    values: "`Page` and `AllPages`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"
 } 

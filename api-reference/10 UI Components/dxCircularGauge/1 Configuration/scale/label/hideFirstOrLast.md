@@ -9,7 +9,4 @@ default: 'last'
 Specifies which label to hide in case of overlapping.
 
 ---
-#include common-ref-enum with {
-    enum: "`GaugeOverlappingBehavior`",
-    values: "`HideFirstLabel` and `HideLastLabel`"
-}
+<!-- Description goes here -->

@@ -18,8 +18,3 @@ The 'logarithmic' type can be set when numeric values are specified in the serie
 On continuous and logarithmic axes, ticks and grid lines are generated automatically. In addition, you can set a custom tick interval (the [tickInterval](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/tickInterval/') or [axisDivisionFactor](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/axisDivisionFactor.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#axisDivisionFactor') properties).
 
 [note] If you require a discrete axis when numeric or date-time values are specified in the data source, set the **type** property to 'discrete' explicitly.
-
-#include common-ref-enum with {
-    enum: "`AxisScaleType`",
-    values: "`Discrete`, `Continuous`, and `Logarithmic`"
-}

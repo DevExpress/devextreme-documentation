@@ -9,7 +9,4 @@ default: 'driving'
 Specifies a transportation mode to be used in the displayed route.
 
 ---
-#include common-ref-enum with {
-    enum: "`GeoMapRouteMode`",
-    values: "`Driving` and `Walking`"
-}
+<!-- Description goes here -->

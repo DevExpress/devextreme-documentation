@@ -24,8 +24,3 @@ If you use JavaScript modules, import the Markdown converter:
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/OutputFormats/"
 }
-
-#include common-ref-enum with {
-    enum: "`HtmlEditorValueType`",
-    values: "`Html` and `Markdown`"
-}

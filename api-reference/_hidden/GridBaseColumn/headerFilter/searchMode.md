@@ -9,7 +9,4 @@ default: 'contains'
 Specifies a comparison operation used to search header filter values.
 
 ---
-#include common-ref-enum with {
-    enum: "`CollectionSearchMode`",
-    values: "`Contains`, `StartsWith`, and `Equals`"
-}
+<!-- Description goes here -->

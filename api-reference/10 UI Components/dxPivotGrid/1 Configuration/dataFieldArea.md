@@ -13,11 +13,6 @@ Data field headers appear only when more than one [data field](/api-reference/30
 
 ![DevExpress DevExtreme HTML5 PivotGrid](/images/DataGrid/PivotGrid_dataFieldArea.png)
 
-#include common-ref-enum with {
-    enum: "`PivotGridDataFieldArea`",
-    values: "`Row` and `Column`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/LayoutCustomization/"
 }

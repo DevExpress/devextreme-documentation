@@ -9,7 +9,4 @@ default: 'string'
 Casts field values to a specific data type.
 
 ---
-#include common-ref-enum with {
-    enum: "`FilterBuilderFieldDataType`",
-    values: "`String`, `Number`, `Date`, `DateTime`, `Boolean`, and `Object`"
-}
+<!-- Description goes here -->

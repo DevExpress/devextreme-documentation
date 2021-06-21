@@ -27,11 +27,6 @@ Rotates axis labels through the angle specified by the **rotationAngle** propert
 - **stagger**      
 Arranges axis labels in two rows in a staggering manner. An empty space between the rows is specified by the **staggeringSpacing** property.
 
-#include common-ref-enum with {
-    enum: "`OverlappingBehavior`",
-    values: "`Stagger`, `Rotate`, `Hide`, and `None`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsOverlapping/"
 }

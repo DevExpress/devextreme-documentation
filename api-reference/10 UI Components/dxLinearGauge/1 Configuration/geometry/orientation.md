@@ -9,7 +9,4 @@ default: 'horizontal'
 Indicates whether to display the LinearGauge UI component vertically or horizontally.
 
 ---
-#include common-ref-enum with {
-    enum: "`Orientation`",
-    values: "`Horizontal` and `Vertical`"
-}
+<!-- Description goes here -->

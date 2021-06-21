@@ -12,7 +12,3 @@ Specifies whether the tooltip must be located in the center of a series point or
 dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.StackedBarSeries,dxChartSeriesTypes.FullStackedBarSeries,dxChartSeriesTypes.BubbleSeries,dxChartSeriesTypes.StockSeries,dxChartSeriesTypes.CandleStickSeries
 
 ---
-#include common-ref-enum with {
-    enum: "`ChartTooltipLocation`",
-    values: "`Center` and `Edge`"
-}

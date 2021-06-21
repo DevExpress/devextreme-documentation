@@ -20,8 +20,3 @@ The property's value can be from 0 to 6.
 - 6 - Saturday
 
 The culture settings specify the property's default value.
-
-#include common-ref-enum with {
-    enum: "`FirstDayOfWeek`",
-    values: "`Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, and `Saturday`"
-}

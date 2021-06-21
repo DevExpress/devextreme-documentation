@@ -25,11 +25,6 @@ The selected point changes its style. Points with the same argument do it as wel
 * **none**   
 The point does not react to selecting.
 
-#include common-ref-enum with {
-    enum: "`ChartPointInteractionMode`",
-    values: "`OnlyPoint`, `AllSeriesPoints`, `AllArgumentPoints`, and `None`"
-}
-
 #####See Also#####
 - [pointSelectionMode](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') - specifies whether only one or several points can stay selected.
 - [pointSelectionChanged](/api-reference/10%20UI%20Components/BaseChart/4%20Events/pointSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#pointSelectionChanged') - an event that fires after the selection state of a point has been changed.

@@ -9,7 +9,4 @@ default: undefined
 Aligns items in the last column or row (depending on the legend's [orientation](/api-reference/10%20UI%20Components/BaseLegend/orientation.md '{basewidgetpath}/Configuration/legend/#orientation')). Applies when legend items are not divided into columns or rows equally.
 
 ---
-#include common-ref-enum with {
-    enum: "`HorizontalAlignment`",
-    values: "`Left`, `Center`, and `Right`"
-}
+<!-- Description goes here -->

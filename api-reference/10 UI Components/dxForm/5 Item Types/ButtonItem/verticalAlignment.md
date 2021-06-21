@@ -9,7 +9,4 @@ default: 'top'
 Specifies the button's vertical alignment.
 
 ---
-#include common-ref-enum with {
-    enum: "`VerticalAlignment`",
-    values: "`Bottom`, `Center`, and `Top`"
-}
+<!-- Description goes here -->

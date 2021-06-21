@@ -44,11 +44,6 @@ The sparkline type determines how data is visualized. The following list shows p
     - [winColor](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/winColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#winColor')
     - [winlossThreshold](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/winlossThreshold.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#winlossThreshold')
 
-#include common-ref-enum with {
-    enum: "`SparklineType`",
-    values: "`Line`, `Spline`, `StepLine`, `Area`, `SplineArea`, `StepArea`, `Bar`, and `WinLoss`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/"
 }

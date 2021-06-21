@@ -16,7 +16,3 @@ The animation starts fast and slows down gradually towards the end.
 * **linear**   
 The animation progresses at a constant pace.
 
-#include common-ref-enum with {
-    enum: "`VizAnimationEasing`",
-    values: "`EaseOutCubic` and `Linear`"
-}

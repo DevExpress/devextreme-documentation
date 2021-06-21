@@ -16,8 +16,3 @@ The property accepts the following values.
 
 - "instantly"  
  Applies the selected value immediately after a user clicks the required value in the drop-down menu. To cancel the selection, click outside the drop-down menu.
-
-#include common-ref-enum with {
-    enum: "`EditorApplyValueMode`",
-    values: "`Instantly` and `UseButtons`"
-}

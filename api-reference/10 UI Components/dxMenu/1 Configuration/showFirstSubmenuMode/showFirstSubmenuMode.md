@@ -14,11 +14,6 @@ If you assign a string that specifies the mode name to this property, the UI com
     <!--JavaScript-->
     showFirstSubmenuMode: "onHover"
 
-#include common-ref-enum with {
-    enum: "`ShowSubmenuMode`",
-    values: "`OnHover` and `OnClick`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
 }

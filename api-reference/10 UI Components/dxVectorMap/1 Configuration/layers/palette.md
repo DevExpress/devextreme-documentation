@@ -168,9 +168,3 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
     }
 
 ---
-
-
-#include common-ref-enum with {
-    enum: "`VizPalette`",
-    values: "`Default`, `SoftPastel`, `HarmonyLight`, `Pastel`, `Bright`, `Soft`, `Ocean`, `Vintage`, `Violet`, `Carmine`, `DarkMoon`, `SoftBlue`, `DarkViolet`, and `GreenMist`"
-}

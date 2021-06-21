@@ -30,8 +30,3 @@ A properties panel group can contain default and custom commands. Handle the [Cu
             },
         }).dxDiagram("instance");
     });
-
-#include common-ref-enum with {
-    enum: "`DiagramCommand`",
-    values: "`Separator`, `ExportSvg`, `ExportPng`, `ExportJpg`, `Undo`, `Redo`, `Cut`, `Copy`, `Paste`, `SelectAll`, `Delete`, `FontName`, `FontSize`, `Bold`, `Italic`, `Underline`, `FontColor`, `LineColor`, `FillColor`, `TextAlignLeft`, `TextAlignCenter`, `TextAlignRight`, `Lock`, `Unlock`, `SendToBack`, `BringToFront`, `InsertShapeImage`, `EditShapeImage`, `DeleteShapeImage`, `ConnectorLineType`, `ConnectorLineStart`, `ConnectorLineEnd`, `LayoutTreeTopToBottom`, `LayoutTreeBottomToTop`, `LayoutTreeLeftToRight`, `LayoutTreeRightToLeft`, `LayoutLayeredTopToBottom`, `LayoutLayeredBottomToTop`, `LayoutLayeredLeftToRight`, `LayoutLayeredRightToLeft`, `FullScreen`, `ZoomLevel`, `ShowGrid`, `SnapToGrid`, `GridSize`, `Units`, `PageSize`, `PageOrientation`, `PageColor`"
-}

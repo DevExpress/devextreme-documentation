@@ -41,11 +41,6 @@ Another example: a semidiscrete scale built on numeric values. This time, the sc
         }
     };
 
-#include common-ref-enum with {
-    enum: "`RangeSelectorAxisScaleType`",
-    values: "`Discrete`, `Continuous`, `Logarithmic`, and `Semidiscrete`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/LogarithmicScale/"
 }

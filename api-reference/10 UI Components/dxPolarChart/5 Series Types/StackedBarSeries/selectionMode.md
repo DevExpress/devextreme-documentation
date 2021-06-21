@@ -20,10 +20,5 @@ The selected series point changes its style. Points with the same argument do it
 * **none**   
 The series does not react to selection.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesSelectionMode`",
-    values: "`OnlyPoint`, `AllSeriesPoints`, `AllArgumentPoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a stacked bar series.
-
 #####See Also#####
 - [selectionStyle](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/StackedBarSeries/selectionStyle/')

@@ -34,11 +34,6 @@ When a user points to a series, it may react in one of the following ways depend
     </tr>
 </table>
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesHoverMode`",
-    values: "`NearestPoint`, `IncludePoints`, `ExcludePoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a stacked spline series.
-
 #####See Also#####
 - [hoverStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StackedSplineSeries/hoverStyle/') - specifies the appearance of series in the hover state.
 - **point**.[hoverMode](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StackedSplineSeries/point/#hoverMode') - specifies the hover mode of series points.

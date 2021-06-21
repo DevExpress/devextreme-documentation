@@ -31,8 +31,3 @@ This object contains the edited instance's data. The [onAppointmentAdding](/api-
 When a user deletes an instance, the Scheduler adds it to series' exceptions by updating the field specified in **recurrenceExceptionExpr**. Because this is an update, the **onAppointmentUpdating** and **onAppointmentUpdated** event handlers are executed instead of [onAppointmentDeleting](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentDeleting.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting') and [onAppointmentDeleted](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentDeleted.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleted').
 
 If a user edits a whole series, only the series data object is updated. When a whole series is deleted, its object is removed.
-
-#include common-ref-enum with {
-    enum: "`SchedulerRecurrenceEditMode`",
-    values: "`Dialog`, `Series`, and `Occurrence`"
-}

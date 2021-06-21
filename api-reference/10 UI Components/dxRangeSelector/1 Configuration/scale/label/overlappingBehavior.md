@@ -15,8 +15,3 @@ When scale labels overlap each other, you can rearrange them by setting this pro
 Hides certain scale labels leaving more space for the others.
 - **none**      
 Leaves scale labels overlapped.
-
-#include common-ref-enum with {
-    enum: "`ScaleLabelOverlappingBehavior`",
-    values: "`Hide` and `None`"
-}

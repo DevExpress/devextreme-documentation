@@ -11,11 +11,6 @@ Sets the palette to be used for colorizing bars in the gauge.
 ---
 #include dataviz-ref-palette
 
-#include common-ref-enum with {
-    enum: "`VizPalette`",
-    values: "`Default`, `SoftPastel`, `HarmonyLight`, `Pastel`, `Bright`, `Soft`, `Ocean`, `Vintage`, `Violet`, `Carmine`, `DarkMoon`, `SoftBlue`, `DarkViolet`, and `GreenMist`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Palette/"
 }

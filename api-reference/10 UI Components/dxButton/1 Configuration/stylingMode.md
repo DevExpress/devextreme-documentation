@@ -17,10 +17,5 @@ The following styles are available:
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }
 
-#include common-ref-enum with {
-    enum: "`ButtonStylingMode`",
-    values: "`Text`, `Outlined`, and `Contained`"
-}
-
 #####See Also#####
 - [type](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type')

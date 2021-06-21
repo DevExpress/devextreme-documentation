@@ -14,7 +14,3 @@ linearRangeBar
 ---
 This property specifies the orientation of an indicator relative to an invisible scale line.
 
-#include common-ref-enum with {
-    enum: "`VerticalEdge`",
-    values: "`Top` and `Bottom`"
-}

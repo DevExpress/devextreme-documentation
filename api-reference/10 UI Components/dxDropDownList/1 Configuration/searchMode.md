@@ -9,7 +9,4 @@ default: 'contains'
 Specifies a comparison operation used to search UI component items.
 
 ---
-#include common-ref-enum with {
-    enum: "`DropDownSearchMode`",
-    values: "`Contains` and `StartsWith`"
-}
+<!-- Description goes here -->

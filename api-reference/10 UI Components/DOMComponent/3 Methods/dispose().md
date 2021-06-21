@@ -71,6 +71,6 @@ Use this method only if the UI component was created with jQuery or pure JavaScr
 ---
 
 #####See Also#####
-- <a href="https://angular.io/guide/displaying-data#conditional-display-with-ngif" target="_blank">Conditional Rendering in Angular</a>
-- <a href="https://vuejs.org/v2/guide/conditional.html" target="_blank">Conditional Rendering in Vue</a>
+- <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Conditional Rendering in Angular</a>
+- <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">Conditional Rendering in Vue</a>
 - <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">Conditional Rendering in React</a>

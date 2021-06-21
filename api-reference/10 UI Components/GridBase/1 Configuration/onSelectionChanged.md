@@ -19,7 +19,7 @@ The keys of the rows whose selection has been cleared.
 ##### field(e.currentSelectedRowKeys): Array<any>
 The keys of the rows that have been selected.
 
-##### field(e.element): TElement
+##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any

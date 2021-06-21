@@ -3,6 +3,8 @@ id: dxGantt.exportToPdf(options)
 ---
 ---
 ##### shortDescription
+[tags] ctp
+
 Exports Gantt chart data to a PDF document.
 
 ##### return: Promise<any>
@@ -32,12 +34,12 @@ Use the following settings to export the Gantt chart to a PDF document:
 
     <!-- tab: index.js -->
     var gantt = $("#ganttContainer").dxGantt("instance");
-    gantt.exportToPdf(
+    gantt.exportToPdf({
         format: "A4",
         landscape: true,
         exportMode: "chart",
         dateRange: "visible"
-    )
+    });
 
 
 ---
@@ -50,12 +52,12 @@ Use the following settings to process the PDF document when the export is comple
 
     <!-- tab: index.js -->
     var gantt = $("#ganttContainer").dxGantt("instance");
-    gantt.exportToPdf(
+    gantt.exportToPdf({
         format: "A4",
         landscape: true,
         exportMode: "chart",
         dateRange: "visible"
-    ).then(function(doc) { 
+    }).then(function(doc) { 
         doc.addPage(); 
         // your code
         doc.save('customDoc.pdf');
@@ -71,12 +73,12 @@ Use the following settings to print the exported PDF document:
 
     <!-- tab: index.js -->
     var gantt = $("#ganttContainer").dxGantt("instance");
-    gantt.exportToPdf(
+    gantt.exportToPdf({
         format: "A4",
         landscape: true,
         exportMode: "chart",
         dateRange: "visible"
-    ).then(function(doc) { 
+    }).then(function(doc) { 
         doc.autoPrint(); 
         window.open(doc.output('your_url'), '_blank');
     });

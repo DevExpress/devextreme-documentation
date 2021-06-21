@@ -17,28 +17,28 @@ State storing saves the following properties:
                 <li><b>filterPanel</b>.<a href="{basewidgetpath}/Configuration/filterPanel/#filterEnabled">filterEnabled</a></li>
                 <li><b>paging</b>.<a href="{basewidgetpath}/Configuration/paging/#pageSize">pageSize</a></li>
                 <li><b>paging</b>.<a href="{basewidgetpath}/Configuration/paging/#pageIndex">pageIndex</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#fixedPosition">fixedPosition</a></li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visibleIndex">visibleIndex</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#dataField">dataField</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#name">name</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#dataType">dataType</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#width">width</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortOrder">sortOrder</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortIndex">sortIndex</a></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValue">filterValue</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#selectedFilterOperation">selectedFilterOperation</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValues">filterValues</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#dataType">dataType</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#filterType">filterType</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValue">filterValue</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValues">filterValues</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#fixed">fixed</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#fixedPosition">fixedPosition</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#name">name</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#selectedFilterOperation">selectedFilterOperation</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortIndex">sortIndex</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortOrder">sortOrder</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a> (only if the <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/">column chooser</a> is <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#enabled">enabled</a>)</li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visibleIndex">visibleIndex</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#width">width</a></li>
             </ul>
         </td>
     </tr>

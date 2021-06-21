@@ -23,6 +23,43 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->+
+    <dx-diagram #diagram id="diagram" units="cm">
+        <dxo-page-size [width]="10" [height]="10">
+        </dxo-page-size>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+        units="cm"
+    >
+        <DxPageSize
+        :width="10"
+        :height="10"
+        />
+    </DxDiagram>
+    </template>
+##### React
+
+    <!-- tab: App.js -->
+    class App extends React.Component {
+        // ...
+        render() {
+            return (
+                <Diagram id="diagram" ref={this.diagramRef} units="cm">
+                    <PageSize width={10} height={10} />
+                </Diagram>
+            );
+        }
+    }
+
 ---
 
 [note]

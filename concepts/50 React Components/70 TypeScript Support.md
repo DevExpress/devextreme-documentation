@@ -3,7 +3,7 @@ DevExtreme React components are supplied with TypeScript declarations. Strict ty
 The following code shows an example of using TypeScript with DevExtreme components:
 
     <!-- tab: App.tsx -->
-    import * as React from 'react';
+    import React from 'react';
     import List from 'devextreme-react/list';
 
     import 'devextreme/dist/css/dx.light.css';

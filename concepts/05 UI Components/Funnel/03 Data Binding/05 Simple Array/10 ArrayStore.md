@@ -3,7 +3,8 @@ If you want to extend the functionality of a JavaScript array, place it into an 
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!-- tab: index.js -->
+    const fruits = [
         { fruit: 'Apples', count: 10 },
         { fruit: 'Oranges', count: 12 },
         { fruit: 'Lemons', count: 15 },
@@ -11,7 +12,7 @@ If you want to extend the functionality of a JavaScript array, place it into an 
         { fruit: 'Pineapples', count: 3 }
     ];
 
-    $(function () {
+    $(function() {
         $("#funnelContainer").dxFunnel({
             dataSource: new DevExpress.data.DataSource({
                 store: {
@@ -30,11 +31,15 @@ If you want to extend the functionality of a JavaScript array, place it into an 
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { DxFunnelModule } from "devextreme-angular";
-    import DataSource from "devextreme/data/data_source";
-    import 'devextreme/data/array_store'
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import DataSource from 'devextreme/data/data_source';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         fruits = [
             { fruit: 'Apples', count: 10 },
@@ -54,19 +59,114 @@ If you want to extend the functionality of a JavaScript array, place it into an 
             paginate: false
         });
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxFunnelModule
-        ],
-        // ...
-    })
 
-    <!--HTML--><dx-funnel
+    <!-- tab: app.component.html -->
+    <dx-funnel
         [dataSource]="funnelDataSource"
         argumentField="fruit"
         valueField="count">
     </dx-funnel>
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxFunnelModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFunnelModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+         <DxFunnel
+            :data-source="funnelDataSource"
+            argument-field="fruit"
+            value-field="count"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruits = [
+        { fruit: 'Apples', count: 10 },
+        { fruit: 'Oranges', count: 12 },
+        { fruit: 'Lemons', count: 15 },
+        { fruit: 'Pears', count: 20 },
+        { fruit: 'Pineapples', count: 3 }
+    ];
+
+    const funnelDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: fruits,
+            onLoaded: function () {
+                // Event handling commands go here
+            }
+        },
+        paginate: false
+    });
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        data() {
+            return {
+                funnelDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Funnel from 'devextreme-react/funnel';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruits = [
+        { fruit: 'Apples', count: 10 },
+        { fruit: 'Oranges', count: 12 },
+        { fruit: 'Lemons', count: 15 },
+        { fruit: 'Pears', count: 20 },
+        { fruit: 'Pineapples', count: 3 }
+    ];
+
+    const funnelDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: fruits,
+            onLoaded: function () {
+                // Event handling commands go here
+            }
+        },
+        paginate: false
+    });
+
+    export default function App() {
+        return (
+            <Funnel
+                dataSource={funnelDataSource}
+                argumentField="fruit"
+                valueField="count"
+            />
+        );
+    }
 
 ---
 
@@ -75,20 +175,24 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
 ---
 ##### jQuery
 
-    <!--JavaScript-->var fruits = [
+    <!-- tab: index.js -->
+    const fruits = [
         { apples: 10 },
         { oranges: 12 },
         { lemons: 15 },
         { pears: 20 },
         { pineapples: 3 }
     ];
-    
-    $(function () {
+
+    $(function() {
         $("#funnelContainer").dxFunnel({
             dataSource: new DevExpress.data.DataSource({
-                store: fruits,
+                store: {
+                    type: 'array',
+                    data: fruits
+                },
                 map: function (item) {
-                    var fruitName = Object.keys(item)[0];
+                    const fruitName = Object.keys(item)[0];
                     return {
                         fruit: fruitName.charAt(0).toUpperCase() + fruitName.slice(1),
                         count: item[fruitName]
@@ -103,10 +207,15 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { DxFunnelModule } from "devextreme-angular";
-    import DataSource from "devextreme/data/data_source";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import DataSource from 'devextreme/data/data_source';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         fruits = [
             { apples: 10 },
@@ -116,9 +225,12 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
             { pineapples: 3 }
         ];
         funnelDataSource = new DataSource({
-            store: this.fruits,
+            store: {
+                type: 'array',
+                data: this.fruits
+            },
             map: function (item) {
-                var fruitName = Object.keys(item)[0];
+                const fruitName = Object.keys(item)[0];
                 return {
                     fruit: fruitName.charAt(0).toUpperCase() + fruitName.slice(1),
                     count: item[fruitName]
@@ -127,19 +239,122 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
             paginate: false
         });
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxFunnelModule
-        ],
-        // ...
-    })
 
-    <!--HTML--><dx-funnel
+    <!-- tab: app.component.html -->
+    <dx-funnel
         [dataSource]="funnelDataSource"
         argumentField="fruit"
         valueField="count">
     </dx-funnel>
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxFunnelModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFunnelModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+         <DxFunnel
+            :data-source="funnelDataSource"
+            argument-field="fruit"
+            value-field="count"
+        />
+    </template>
+
+    <script>
+    import DxFunnel from 'devextreme-vue/funnel';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruits = [
+        { apples: 10 },
+        { oranges: 12 },
+        { lemons: 15 },
+        { pears: 20 },
+        { pineapples: 3 }
+    ];
+
+    const funnelDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: fruits
+        },
+        map: function (item) {
+            const fruitName = Object.keys(item)[0];
+            return {
+                fruit: fruitName.charAt(0).toUpperCase() + fruitName.slice(1),
+                count: item[fruitName]
+            }
+        },
+        paginate: false
+    });
+
+    export default {
+        components: {
+            DxFunnel
+        },
+        data() {
+            return {
+                funnelDataSource
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Funnel from 'devextreme-react/funnel';
+    import DataSource from 'devextreme/data/data_source';
+
+    const fruits = [
+        { apples: 10 },
+        { oranges: 12 },
+        { lemons: 15 },
+        { pears: 20 },
+        { pineapples: 3 }
+    ];
+
+    const funnelDataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: fruits
+        },
+        map: function (item) {
+            const fruitName = Object.keys(item)[0];
+            return {
+                fruit: fruitName.charAt(0).toUpperCase() + fruitName.slice(1),
+                count: item[fruitName]
+            }
+        },
+        paginate: false
+    });
+
+    export default function App() {
+        return (
+            <Funnel
+                dataSource={funnelDataSource}
+                argumentField="fruit"
+                valueField="count"
+            />
+        );
+    }
 
 ---
 

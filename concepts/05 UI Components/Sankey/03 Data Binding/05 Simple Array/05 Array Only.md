@@ -3,7 +3,8 @@ To bind the Sankey to an array, pass this array to the [dataSource](/api-referen
 ---
 ##### jQuery
 
-    <!--JavaScript-->var sankeyData = [
+    <!-- tab: index.js -->
+    const sankeyData = [
         { from: "Brazil", to: "Spain", weight: 4 },
         { from: "Brazil", to: "Portugal", weight: 5 },
         { from: "Brazil", to: "England", weight: 2 },
@@ -52,60 +53,64 @@ To bind the Sankey to an array, pass this array to the [dataSource](/api-referen
         targetField="to">
     </dx-sankey>
 
----
+##### Vue
 
-You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept') if objects in the array should be processed (sorted, filtered, and so on). For example, in the following code, a Query filters the `sankeyData` array to exclude objects whose `weight` is less than 3:
+    <!-- tab: App.vue -->
+    <template>
+        <DxSankey
+            :data-source="sankeyData"
+            source-field="from"
+            target-field="to"
+        />
+    </template>
 
----
-##### jQuery
+    <script>
+    import DxSankey from 'devextreme-vue/sankey';
 
-    <!--JavaScript-->var sankeyData = [
-        { source: "Brazil", target: "Spain", weight: 4 },
-        { source: "Brazil", target: "Portugal", weight: 5 },
-        { source: "Brazil", target: "England", weight: 2 },
-        { source: "Canada", target: "Portugal", weight: 2 },
-        { source: "Canada", target: "England", weight: 1 },
-        { source: "Mexico", target: "Portugal", weight: 9 },
-        { source: "Mexico", target: "Spain", weight: 5 }
-    ];
-
-    $(function() {
-        $("#sankeyContainer").dxSankey({
-            dataSource: DevExpress.data.query(sankeyData).filter([ "weight", ">", 3 ]).toArray()
-        });
-    });
-
-##### Angular
-
-    <!--TypeScript-->
-    import { DxSankeyModule } from "devextreme-angular";
-    import query from "devextreme/data/query";
-    // ...
-    export class AppComponent {
-        sankeyData: Array<{ source: string, target: string, weight: number }> = [
-            { source: "Brazil", target: "Spain", weight: 4 },
-            { source: "Brazil", target: "Portugal", weight: 5 },
-            { source: "Brazil", target: "England", weight: 2 },
-            { source: "Canada", target: "Portugal", weight: 2 },
-            { source: "Canada", target: "England", weight: 1 },
-            { source: "Mexico", target: "Portugal", weight: 9 },
-            { source: "Mexico", target: "Spain", weight: 5 }
-        ];
-        getFilteredData() {
-            return query(this.sankeyData).filter([ "weight", ">", 3 ]).toArray();
+    export default {
+        components: {
+            DxSankey
+        },
+        data() {
+            return {
+                sankeyData: [
+                    { from: "Brazil", to: "Spain", weight: 4 },
+                    { from: "Brazil", to: "Portugal", weight: 5 },
+                    { from: "Brazil", to: "England", weight: 2 },
+                    { from: "Canada", to: "Portugal", weight: 2 },
+                    { from: "Canada", to: "England", weight: 1 },
+                    { from: "Mexico", to: "Portugal", weight: 9 },
+                    { from: "Mexico", to: "Spain", weight: 5 }
+                ]
+            }
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxSankeyModule
-        ],
-        // ...
-    })
+    </script>
 
-    <!--HTML--><dx-sankey
-        [dataSource]="getFilteredData()">
-    </dx-sankey>
+##### React
+
+    <!-- tab: App.js -->
+    import Sankey from 'devextreme-react/sankey';
+
+    const sankeyData = [
+        { from: "Brazil", to: "Spain", weight: 4 },
+        { from: "Brazil", to: "Portugal", weight: 5 },
+        { from: "Brazil", to: "England", weight: 2 },
+        { from: "Canada", to: "Portugal", weight: 2 },
+        { from: "Canada", to: "England", weight: 1 },
+        { from: "Mexico", to: "Portugal", weight: 9 },
+        { from: "Mexico", to: "Spain", weight: 5 }
+    ];
+
+    export default function App() {
+        return (
+            <Sankey
+                dataSource={sankeyData}
+                sourceField="from"
+                targetField="to"
+            />
+        );
+    }
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.resources.dataSource
-type: String | Array<any> | DataSource | DataSource_Options
+type: String | Array<any> | Store | DataSource | DataSource_Options
 default: null
 ---
 ---
@@ -8,7 +8,6 @@ default: null
 Specifies available resource instances.
 
 ---
-If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
 Each resource instance is an object with the  `id`, `color`, and `text` fields. If your resource instances have a different structure, specify the [valueExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/valueExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#valueExpr'), [colorExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/colorExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#colorExpr') and [displayExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/displayExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#displayExpr') properties.
 

@@ -126,13 +126,13 @@ The values of the deleted resource.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onResourceDeleted("gantt_resourceDeleted_handler")
+        // ...
     )
     <script>
         function gantt_resourceDeleted_handler(e) {

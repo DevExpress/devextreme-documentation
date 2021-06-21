@@ -100,26 +100,3 @@ Configures the DevExtreme UI component used as a toolbar item.
     export default App;
 
 ---
-
-When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, configure the UI component with a lambda expression as follows:
-
-    <!--Razor C#-->
-    @(Html.DevExtreme().{WidgetName}()
-        .ToolbarItems(items => {
-            items.Add().Widget(w => w
-                // Instead of Button here can be any other UI component
-                .Button()
-                .Text("Back")
-            );
-        })
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .ToolbarItems(Sub(items)
-            items.Add().Widget(Function(w)
-                ' Instead of Button here can be any other UI component
-                Return w.Button().Text("Back")
-            End Function)
-        End Sub)
-    )

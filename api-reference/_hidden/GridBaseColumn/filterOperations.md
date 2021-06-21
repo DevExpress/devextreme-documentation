@@ -34,11 +34,6 @@ The nested filter builder also allows users to select from an extended set of op
 
 The **filterOperations** property can also accept an empty array. In this case, the [selectedFilterOperation]({basewidgetpath}/Configuration/columns/#selectedFilterOperation) applies, and users cannot change it.
 
-#include common-ref-enum with {
-    enum: "`FilterOperations`",
-    values: "`Equal`, `NotEqual`, `LessThan`, `LessThanOrEqual`, `GreaterThan`, `GreaterThanOrEqual`, `NotContains`, `Contains`, `StartsWith`, `EndsWith`, and `Between`"
-}
-
 #####See Also#####
 - **columns[]**.[selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '{basewidgetpath}/Configuration/columns/#selectedFilterOperation')
 - **columns[]**.[filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '{basewidgetpath}/Configuration/columns/#filterValue')

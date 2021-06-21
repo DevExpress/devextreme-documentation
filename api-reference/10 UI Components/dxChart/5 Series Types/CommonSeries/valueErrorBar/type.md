@@ -37,8 +37,3 @@ Depending on the type of errors you need to visualize, use error bars of one of 
         <td>Defines the confidential interval in constant values. Error bar values are determined by the <b>value</b> property. The high and low error bar values are drawn symmetrically up and down from the series point.</td>
     </tr>
 </table>
-
-#include common-ref-enum with {
-    enum: "`ValueErrorBarType`",
-    values: "`Percent`, `StdError`, `StdDeviation`, `Variance`, and `Fixed`"
-}

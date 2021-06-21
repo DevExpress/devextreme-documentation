@@ -24,11 +24,6 @@ Rows are loaded when they get into the viewport and removed once they leave it. 
 
 Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#pageSize') property to specify the number of rows on a page.
 
-#include common-ref-enum with {
-    enum: "`GridScrollingMode`",
-    values: "`Standard`, `Virtual`, and `Infinite`"
-}
-
 <a href="/Demos/WidgetsGallery/Demo/Data_Grid/InfiniteScrolling/" class="button orange small fix-width-155" style="margin-right:5px;" target="_blank">Infinite Scrolling Demo</a>
 <a href="/Demos/WidgetsGallery/Demo/Data_Grid/VirtualScrolling/" class="button orange small fix-width-155" style="margin-right:5px;" target="_blank">Virtual Scrolling Demo</a>
 

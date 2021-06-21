@@ -20,10 +20,5 @@ Certain item labels hide.
 - *"none"*      
 Item labels overlap.
 
-#include common-ref-enum with {
-    enum: "`FunnelResolveLabelOverlapping`",
-    values: "`None`, `Hide`, and `Shift`"
-}
-
 #####See Also#####
 - **label**.[position](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label/position.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/label/#position')

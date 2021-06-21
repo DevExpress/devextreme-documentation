@@ -12,7 +12,4 @@ Specifies a symbol for presenting points of the line and area series.
 dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.scatterpolarseries
 
 ---
-#include common-ref-enum with {
-    enum: "`VizPointSymbol`",
-    values: "`Circle`, `Square`, `Polygon`, `Triangle`, and `Cross`"
-}
+<!-- Description goes here -->

@@ -19,8 +19,3 @@ This property accepts the following values:
 
 - *"custom"*       
     Puts state storing into manual mode. You need to implement the [customSave](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customSave.md '{basewidgetpath}/Configuration/stateStoring/#customSave') and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions. 
-
-#include common-ref-enum with {
-    enum: "`StateStoringType`",
-    values: "`LocalStorage`, `SessionStorage`, and `Custom`"
-}

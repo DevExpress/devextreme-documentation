@@ -21,8 +21,3 @@ The appearance of the hovered series is not changed.
 </ul>
 
 <p>To set custom properties for the 'hover' style (which is applied when a series is hovered over), use the <b>hoverStyle</b> configuration object.</p>
-
-#include common-ref-enum with {
-    enum: "`PieChartSeriesInteractionMode`",
-    values: "`OnlyPoint` and `None`"
-}

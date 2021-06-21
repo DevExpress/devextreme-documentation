@@ -14,7 +14,3 @@ dxChartSeriesTypes.BarSeries,dxChartSeriesTypes.StackedBarSeries,dxChartSeriesTy
 ---
 [note]The default value for [*full-stacked bar*](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') and [*stacked bar*](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StackedBarSeries/') series is *'inside'*.
 
-#include common-ref-enum with {
-    enum: "`RelativePosition`",
-    values: "`Inside` and `Outside`"
-}

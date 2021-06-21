@@ -15,8 +15,3 @@ The following property values are possible:
 The tooltip with the message is displayed when the editor is in focus.
 - **always**  
 The tooltip with the message is not hidden when the editor loses focus.
-
-#include common-ref-enum with {
-    enum: "`ValidationMessageMode`",
-    values: "`Auto` and `Always`"
-}

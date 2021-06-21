@@ -13,10 +13,6 @@ When the scale is built on values from a [data source](/api-reference/10%20UI%20
 
 [note]If dates in your data source are stored as strings, make sure that they have a <a href="http://www.w3schools.com/js/js_date_formats.asp" target="_blank">valid format</a>.
 
-#include common-ref-enum with {
-    enum: "`ChartDataType`",
-    values: "`Numeric`, `DateTime`, and `String`"
-}
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/NumericScaleLightweight/",

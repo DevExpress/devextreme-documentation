@@ -20,11 +20,6 @@ The series changes its style, but the points do not.
 * **none**   
 The series does not react to pointing to it.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesHoverMode`",
-    values: "`NearestPoint`, `IncludePoints`, `ExcludePoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a line series.
-
 #####See Also#####
 - [hoverStyle](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/hoverStyle/')
 - **point**.[hoverMode](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/point/hoverMode.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/LineSeries/point/#hoverMode')

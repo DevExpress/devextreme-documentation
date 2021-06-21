@@ -70,7 +70,7 @@ The Gantt UI component does not support:
     }    
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
+    import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
     import { DxGanttModule } from 'devextreme-angular';

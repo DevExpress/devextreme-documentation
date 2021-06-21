@@ -9,8 +9,3 @@ Specifies the base shape type for the custom shape. The built-in shape types are
 
 ---
 When the **baseType** property is specified, the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageUrl.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageUrl') property is not in effect.
-
-#include common-ref-enum with {
-    enum: "`DiagramShapeType`",
-    values: "`Text`, `Rectangle`, `Ellipse`, `Cross`, `Triangle`, `Diamond`, `Heart`, `Pentagon`, `Octagon`, `Star`, `ArrowLeft`, `ArrowTop`, `ArrowRight`, `ArrowBottom`, `ArrowNorthSouth`, `ArrowEastWest`, `Process`, `Decision`, `Terminator`, `PredefinedProcess`, `Document`, `MultipleDocuments`, `ManualInput`, `Preparation`, `Data`, `Database`, `HardDisk`, `InternalStorage`, `PaperTape`, `ManualOperation`, `Delay`, `StoredData`, `Display`, `Merge`, `Connector`, `Or`, `SummingJunction`, `VerticalContainer`, `HorizontalContainer`, `CardWithImageOnLeft`, `CardWithImageOnTop`, `CardWithImageOnRight`"
-}

@@ -41,8 +41,3 @@ The following table lists default operations by [data type](/api-reference/_hidd
 The *"isblank"* operation returns null values and empty strings; *"isnotblank"* returns other values.
 
 [note] [Lookup](/api-reference/_hidden/dxFilterBuilderField/lookup '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/lookup/')'s default operations are [ "=", "<>", "isblank", "isnotblank" ] regardless of the data type.
-
-#include common-ref-enum with {
-    enum: "`FilterBuilderFieldFilterOperations`",
-    values: "`Equal`, `NotEqual`, `LessThan`, `LessThanOrEqual`, `GreaterThan`, `GreaterThanOrEqual`, `Between`, `NotContains`, `Contains`, `StartsWith`, `EndsWith`, `IsBlank`, and `IsNotBlank`"
-}

@@ -9,7 +9,4 @@ default: 'top'
 Aligns constant line labels in the vertical direction.
 
 ---
-#include common-ref-enum with {
-    enum: "`VerticalAlignment`",
-    values: "`Top`, `Center`, and `Bottom`"
-}
+<!-- Description goes here -->

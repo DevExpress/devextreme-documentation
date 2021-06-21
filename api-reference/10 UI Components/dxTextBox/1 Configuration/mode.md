@@ -14,11 +14,6 @@ The value of this property affects the set of keyboard buttons shown on the mobi
  - "search" - the text box contains the "X" button, which clears the text box contents
  - "password" - the text box shows a password character instead of the actual characters typed
 
-#include common-ref-enum with {
-    enum: "`TextBoxMode`",
-    values: "`Text`, `Email`, `Search`, `Tel`, `Url`, and `Password`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
 }

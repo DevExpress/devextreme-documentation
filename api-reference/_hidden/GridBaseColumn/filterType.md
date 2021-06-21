@@ -33,11 +33,6 @@ This property changes when the user clicks the **Select All** checkbox in the [h
     </tr>
 </table>
 
-#include common-ref-enum with {
-    enum: "`FilterType`",
-    values: "`Include` and `Exclude`"
-}
-
 #####See Also#####
 - [Filtering API](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/6%20API '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#API')
 - **columns[]**.[filterValues](/api-reference/_hidden/GridBaseColumn/filterValues.md '{basewidgetpath}/Configuration/columns/#filterValues')

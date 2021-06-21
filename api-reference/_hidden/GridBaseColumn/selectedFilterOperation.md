@@ -27,10 +27,5 @@ The following table lists default filter operations by [data type](/api-referenc
   </tr>
 </table>
 
-#include common-ref-enum with {
-    enum: "`FilterOperations`",
-    values: "`Equal`, `NotEqual`, `LessThan`, `LessThanOrEqual`, `GreaterThan`, `GreaterThanOrEqual`, `NotContains`, `Contains`, `StartsWith`, `EndsWith`, and `Between`"
-}
-
 #####See Also#####
 - [Filtering API](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/6%20API '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#API')

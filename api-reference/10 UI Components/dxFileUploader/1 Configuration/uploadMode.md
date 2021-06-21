@@ -20,11 +20,6 @@ Ajax upload. Files are uploaded after a user clicks the **Upload** button.
 - *"useForm"*        
 HTML form upload. Files are uploaded when the HTML form is submitted.
 
-#include common-ref-enum with {
-    enum: "`FileUploadMode`",
-    values: "`Instantly`, `UseButtons`, and `UseForm`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/File_Uploader/FileUploading/"
 }

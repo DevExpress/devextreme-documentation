@@ -132,13 +132,13 @@ The type of right-clicked task or dependency.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onContextMenuPreparing("gantt_contextMenuPreparing_handler")
+        // ...
     )
     <script>
         function gantt_contextMenuPreparing_handler(e) {

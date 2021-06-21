@@ -132,13 +132,13 @@ Model data. Available only if you use Knockout.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onTaskClick("gantt_taskClick_handler")
+        // ...
     )
     <script>
         function gantt_taskClick_handler(e) {

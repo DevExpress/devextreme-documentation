@@ -134,8 +134,8 @@ The values of the inserted resource.
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onResourceInserted("gantt_resourceInserted_handler")
+        // ...
     )
     <script>
         function gantt_resourceInserted_handler(e) {

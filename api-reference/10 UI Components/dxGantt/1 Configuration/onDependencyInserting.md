@@ -130,13 +130,13 @@ The values of the inserted dependency.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onDependencyInserting("gantt_dependencyInserting_handler")
+        // ...
     )
     <script>
         function gantt_dependencyInserting_handler(e) {

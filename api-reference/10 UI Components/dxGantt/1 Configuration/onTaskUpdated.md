@@ -126,13 +126,13 @@ The task values after update.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onTaskUpdated("gantt_taskUpdated_handler")
+        // ...
     )
     <script>
         function gantt_taskUpdated_handler(e) {

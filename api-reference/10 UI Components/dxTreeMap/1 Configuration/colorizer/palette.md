@@ -11,11 +11,6 @@ Sets the palette to be used to colorize tiles.
 ---
 #include dataviz-ref-palette
 
-#include common-ref-enum with {
-    enum: "`VizPalette`",
-    values: "`Default`, `SoftPastel`, `HarmonyLight`, `Pastel`, `Bright`, `Soft`, `Ocean`, `Vintage`, `Violet`, `Carmine`, `DarkMoon`, `SoftBlue`, `DarkViolet`, and `GreenMist`"
-}
-
 When implementing a custom palette, take into account the [type](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/colorizer/type.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/#type') of a colorizer you use. The *"discrete"* type accepts an indefinite number of palette colors.
 
     <!--JavaScript-->var treeMapOptions = {

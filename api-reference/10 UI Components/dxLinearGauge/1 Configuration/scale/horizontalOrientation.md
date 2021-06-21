@@ -10,8 +10,3 @@ Specifies the orientation of scale ticks. Applies only if the **geometry**.[orie
 
 ---
 This property specifies the orientation of scale ticks relative to an invisible scale line.
-
-#include common-ref-enum with {
-    enum: "`HorizontalAlignment`",
-    values: "`Left`, `Center`, and `Right`"
-}

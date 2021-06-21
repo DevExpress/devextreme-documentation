@@ -25,11 +25,6 @@ The selection column with all the checkboxes is hidden. Users can select rows wi
 
 [Keyboard shortcuts](/concepts/05%20UI%20Components/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/DataGrid/Keyboard_Support/') work identically regardless of the chosen mode.
 
-#include common-ref-enum with {
-    enum: "`GridSelectionShowCheckBoxesMode`",
-    values: "`OnClick`, `OnLongTap`, `Always`, and `None`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"
 }

@@ -38,11 +38,6 @@ You can implement the capability to select the post-processing function at runti
 
 To specify a custom post-processing function, use the [calculateSummaryValue](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/calculateSummaryValue.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#calculateSummaryValue') property.
 
-#include common-ref-enum with {
-    enum: "`PivotGridSummaryDisplayMode`",
-    values: "`AbsoluteVariation`, `PercentVariation`, `PercentOfColumnTotal`, `PercentOfRowTotal`, `PercentOfColumnGrandTotal`, `PercentOfRowGrandTotal`, and `PercentOfGrandTotal`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/SummaryDisplayModes/"
 }

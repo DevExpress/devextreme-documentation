@@ -22,8 +22,3 @@ This property accepts the following values.
 
 - "list"  
  The UI component uses the list of time values to pick the time. This value applies only when the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to "time".
-
-#include common-ref-enum with {
-    enum: "`DateBoxPickerType`",
-    values: "`Native`, `Calendar`, `Rollers`, and `List`"
-}

@@ -16,9 +16,4 @@ Hides certain axis labels leaving more space for the others.
 - **none**      
 Leaves axis labels overlapped.
 
-#include common-ref-enum with {
-    enum: "`PolarChartOverlappingBehavior`",
-    values: "`Hide` and `None`"
-}
-
 [note] Specifying this property with the *"enlargeTickInterval"* and *"ignore"* values is <span style="color:red">deprecated</span>.

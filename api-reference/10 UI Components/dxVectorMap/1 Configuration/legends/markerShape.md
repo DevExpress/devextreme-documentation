@@ -9,7 +9,4 @@ default: 'square'
 Specifies the shape of item markers.
 
 ---
-#include common-ref-enum with {
-    enum: "`VectorMapMarkerShape`",
-    values: "`Circle` and `Square`"
-}
+<!-- Description goes here -->

@@ -32,8 +32,3 @@ Specifies the panel's visibility.
         <td>The panel is disabled. An element that can invoke the panel is hidden.</td>
     </tr>
 </table>
-
-#include common-ref-enum with {
-    enum: "`DiagramPanelVisibility`",
-    values: "`Auto`, `Visible`, `Collapsed`, `Disabled`"
-}

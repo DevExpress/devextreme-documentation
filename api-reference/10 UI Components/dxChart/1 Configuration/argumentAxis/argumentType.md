@@ -11,11 +11,6 @@ Casts arguments to a specified data type.
 ---
 If your data source stores numbers or dates as strings, specify the proper data type using this property. Make sure the dates have a <a href="http://www.w3schools.com/js/js_date_formats.asp" target="_blank">valid format</a>.
 
-#include common-ref-enum with {
-    enum: "`ChartDataType`",
-    values: "`Numeric`, `DateTime`, and `String`"
-}
-
 #####See Also#####
 - **valueAxis**.[valueType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType') - casts values to a specified data type.
 - **argumentAxis**.[type](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type') - specifies the axis type.

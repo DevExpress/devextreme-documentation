@@ -17,7 +17,3 @@ The following styles are available:
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview/"
 }
 
-#include common-ref-enum with {
-    enum: "`ButtonStylingMode`",
-    values: "`Text`, `Outlined`, and `Contained`"
-}

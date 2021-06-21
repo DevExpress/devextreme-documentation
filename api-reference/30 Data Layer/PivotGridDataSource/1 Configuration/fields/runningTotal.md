@@ -19,11 +19,6 @@ If the **runningTotal** property is set to *"row"*, each value in this row is ad
 
 This also applies to columns if the **runningTotal** property is set to *"column"*.
 
-#include common-ref-enum with {
-    enum: "`PivotGridRunningTotalMode`",
-    values: "`Row` and `Column`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/RunningTotals/"
 }

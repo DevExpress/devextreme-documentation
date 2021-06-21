@@ -10,8 +10,3 @@ Specifies where to show the total rows or columns. Applies only if [rowHeaderLay
 
 ---
 By default, total rows and columns are shown after data (columns at the right side, rows at the bottom). You can place total rows, total columns or both before data using this property.
-
-#include common-ref-enum with {
-    enum: "`PivotGridTotalsDisplayMode`",
-    values: "`Rows`, `Columns`, `Both`, and `None`"
-}

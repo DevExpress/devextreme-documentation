@@ -10,13 +10,13 @@ Specifies a function that customizes an Ajax request before it is sent to the se
 The request parameters.
 
 ##### field(options.formData): Object
-Custom data (key/value pairs) that are sent to the server with the request.
+Custom data (key/value pairs) that is sent to the server with the request.
 
 ##### field(options.headers): Object
 The request headers.
 
 ##### field(options.xhrFields): Object
-An object of fieldName-fieldValue pairs to set on the native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHttpRequest object</a>.
+An object (fieldName/fieldValue pairs) to set on the native <a href="https://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">XMLHttpRequest object</a>.
 
 ---
 

@@ -39,7 +39,7 @@ You can pass the date to the **scrollToDate** method in the following formats:
 
         <!--JavaScript-->
         var gantt = $("#ganttContainer").dxGantt("instance");
-        gantt.scrollToDate("01.01.2020");
+        gantt.scrollToDate("2020/01/01");
 
     ---
 

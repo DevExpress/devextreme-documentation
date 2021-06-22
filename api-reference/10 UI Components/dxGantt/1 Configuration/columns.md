@@ -39,8 +39,10 @@ The Gantt UI component does not support:
             }, {
                 dataField: "start",
                 caption: "Start Date"
-            }, "end"
-            ],
+            }, {
+                dataField: "end",
+                caption: "End Date"
+            }],
             // ...
         });
     });

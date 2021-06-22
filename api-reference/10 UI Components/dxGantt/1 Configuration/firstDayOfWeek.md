@@ -44,7 +44,7 @@ The culture settings specify the property's default value.
         });
     });
 
-##### Angular
+##### Angular 
 
     <!-- tab: app.component.html -->
     <dx-gantt
@@ -131,6 +131,14 @@ The culture settings specify the property's default value.
     export default App;
 
 ##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .FirstDayOfWeek(FirstDayOfWeek.Monday)
+        // ...
+    )
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()

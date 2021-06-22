@@ -218,4 +218,32 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
         }
     </script>
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add()
+                    .Text("Create .txt Document")
+                    .Option("extension", ".txt");
+                i.Add()
+                    .Text("Create .rtf Document")
+                    .Option("extension", ".rtf");
+                i.Add()
+                    .Text("Create .xls Document")
+                    .Option("extension", ".xls");
+            });
+        })
+        .OnContextMenuItemClick("onItemClick");
+    )
+
+    <script>
+        function onItemClick(e) {
+            if(e.itemData.extension) {
+                // your code
+            }
+        }
+    </script>
+
 ---

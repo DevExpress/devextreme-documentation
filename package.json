@@ -15,6 +15,7 @@
     "update-links": "dx-tools update-links --docs-root ./",
     "update-links-validation": "dx-tools update-links --docs-root ./ --validation true",
     "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 21.1",
-    "update-topics": "dx-tools update-topics --docs-root ./"
+    "update-topics": "dx-tools update-topics --docs-root ./",
+    "generate-extra-topic": "dx-tools generate-extra-topics --docs-root ./ --version 21.1"
   }
 }

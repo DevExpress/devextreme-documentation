@@ -119,6 +119,17 @@ Configures validation properties.
 
     export default App;
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .Validation(e => {
+            e.AutoUpdateParentTasks(true)
+            e.ValidateDependencies(true)
+        })
+        // ...
+    )
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

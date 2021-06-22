@@ -11,8 +11,6 @@ The file's index.
 ---
 ---
 
-##### jQuery
-
     <!-- tab: JavaScript -->
     var uploadControl = $("#uploaderContainer").dxFileUploader("instance");
 

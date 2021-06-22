@@ -150,7 +150,7 @@ Note that the **container** parameter contains the content of the default toolti
 
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()

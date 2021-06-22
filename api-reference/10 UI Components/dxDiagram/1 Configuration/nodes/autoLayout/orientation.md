@@ -8,7 +8,4 @@ type: String
 Specifies the diagram layout orientation.
 
 ---
-#include common-ref-enum with {
-    enum: "`DiagramDataLayoutOrientation`",
-    values: "`Auto`, `Vertical`, `Horizontal`"
-}
+<!-- Description goes here -->

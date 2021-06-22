@@ -12,7 +12,4 @@ Specifies whether high, low, open or close prices of points should be compared.
 dxChartSeriesTypes.CandleStickSeries,dxChartSeriesTypes.StockSeries
 
 ---
-#include common-ref-enum with {
-    enum: "`FinancialChartReductionLevel`",
-    values: "`Open`, `Close`, `High,` and `Low`"
-}
+<!-- Description goes here -->

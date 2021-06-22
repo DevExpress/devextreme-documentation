@@ -21,8 +21,3 @@ Differs from the batch mode in that the UI component saves changes when the cell
 On entering the editing state, a row becomes a form with editable fields. The UI component saves changes after a user clicks the *"Save"* button. See [demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/FormEditing).
 - [Popup](/concepts/05%20UI%20Components/DataGrid/20%20Editing/10%20User%20Interaction/50%20Popup%20Mode.md '/Documentation/Guide/UI_Components/{WidgetName}/Editing/#User_Interaction/Popup_Mode')     
 Differs from the form mode in that the form with editable fields is placed in a popup window. See [demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/PopupEditing).
-
-#include common-ref-enum with {
-    enum: "`GridEditMode`",
-    values: "`Row`, `Batch`, `Cell`, `Form`, and `Popup`"
-}

@@ -144,13 +144,13 @@ Note that the **hiddenFields** and **readOnlyFields** parameters affect only tas
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onTaskEditDialogShowing("gantt_taskEditDialogShowing_handler")
+        // ...
     )
     <script>
         function gantt_taskEditDialogShowing_handler(e) {

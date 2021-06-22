@@ -46,4 +46,123 @@ The currently selected file system items.
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager ...
+        (onSelectionChanged)="fileManager_onSelectionChanged($event)">
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        fileManager_onSelectionChanged(e) {
+            // Your code goes here
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxFileManagerModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager ...
+            :on-selection-changed="fileManager_onSelectionChanged"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFileManager from 'devextreme-vue/file-manager';
+
+    export default {
+        components: {
+            DxFileManager
+        },
+        methods: {
+            fileManager_onSelectionChanged(e) {
+                // Your code goes here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FileManager from 'devextreme-react/file-manager';
+
+    class App extends React.Component {
+        fileManager_onSelectionChanged(e) {
+            // Your code goes here
+        }
+
+        render() {
+            return (
+                <FileManager ...
+                    onSelectionChanged={this.fileManager_onSelectionChanged}
+                />
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .OnSelectionChanged("fileManager_onSelectionChanged");
+        // ...
+    )
+
+    <script>
+        function fileManager_onSelectionChanged(e) {
+            // your code
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .OnSelectionChanged("fileManager_onSelectionChanged");
+        // ...
+    )
+
+    <script>
+        function fileManager_onSelectionChanged(e) {
+            // your code
+        }
+    </script>
+
 ---

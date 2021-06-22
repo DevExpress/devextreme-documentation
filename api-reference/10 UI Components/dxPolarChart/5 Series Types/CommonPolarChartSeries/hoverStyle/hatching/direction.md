@@ -17,8 +17,3 @@ Do not apply hatching.
 Apply an upward diagonal hatching style from left to right.
 * **left**   
 Apply a downward diagonal hatching style from left to right.
-
-#include common-ref-enum with {
-    enum: "`HatchingDirection`",
-    values: "`Right`, `Left`, and `None`"
-}

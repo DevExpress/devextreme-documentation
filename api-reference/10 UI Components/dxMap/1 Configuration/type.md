@@ -14,11 +14,6 @@ The available property values are based on map types supported by the Google map
 - hybrid -> Aerial
 - roadmap -> Road
 
-#include common-ref-enum with {
-    enum: "`GeoMapType`",
-    values: "`Hybrid`, `Roadmap`, and `Satellite`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes/"
 }

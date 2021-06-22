@@ -37,8 +37,3 @@ The default alignment of the content depends on the [type of data](/api-referenc
     <td><i>'left'</i></td>
   </tr>
 </table>
-
-#include common-ref-enum with {
-    enum: "`HorizontalAlignment`",
-    values: "`Left`, `Center`, and `Right`"
-}

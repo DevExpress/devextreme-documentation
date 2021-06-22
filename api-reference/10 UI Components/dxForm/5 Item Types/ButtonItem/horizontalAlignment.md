@@ -9,7 +9,4 @@ default: 'right'
 Specifies the button's horizontal alignment.
 
 ---
-#include common-ref-enum with {
-    enum: "`HorizontalAlignment`",
-    values: "`Left`, `Right`, and `Center`"
-}
+<!-- Description goes here -->

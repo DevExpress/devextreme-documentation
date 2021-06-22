@@ -129,13 +129,13 @@ The values of the inserted resource.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onResourceInserted("gantt_resourceInserted_handler")
+        // ...
     )
     <script>
         function gantt_resourceInserted_handler(e) {

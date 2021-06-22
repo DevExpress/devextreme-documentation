@@ -33,8 +33,3 @@ This property accepts the following values.
         <td>Hides error bars.</td>
     </tr>
 </table>
-
-#include common-ref-enum with {
-    enum: "`ValueErrorBarDisplayMode`",
-    values: "`Auto`, `Low`, `High`, and `None`"
-}

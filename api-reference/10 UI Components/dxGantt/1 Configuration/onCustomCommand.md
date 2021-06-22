@@ -113,13 +113,13 @@ The name of the clicked item.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onCustomCommand("gantt_customCommand_handler")
+        // ...
     )
     <script>
         function gantt_customCommand_handler(e) {

@@ -240,4 +240,46 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
     // ...
     ];
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .Resources(r => r
+            .DataSource(ds => ds.Array().Data(SampleData.GanttResources).Key("ID"))
+            .KeyExpr("ID")
+            .TextExpr("Text")
+        )
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<Resource> GanttResources = new[] {
+            new Resource { ID = 1, Text = "Management" },
+            new Resource { ID = 2, Text = "Project Manager" },
+            // ...
+        }
+        // ...
+    }
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .Resources(r => r
+            .DataSource(ds => ds.Array().Data(SampleData.GanttResources).Key("ID"))
+            .KeyExpr("ID")
+            .TextExpr("Text")
+        )
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<Resource> GanttResources = new[] {
+            new Resource { ID = 1, Text = "Management" },
+            new Resource { ID = 2, Text = "Project Manager" },
+            // ...
+        }
+        // ...
+    }
+
 ---

@@ -18,7 +18,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
 - String
 
     ---
-    ##### jQuery
 
         <!-- tab: JavaScript -->
         dialogTrigger: '.open-button'
@@ -28,7 +27,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
 - jQuery object
 	 
     ---
-    ##### jQuery
 
         <!-- tab: JavaScript -->
         dialogTrigger: $('.open-button')
@@ -38,7 +36,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
 - DOM element
 
     ---
-    ##### jQuery
 
         <!-- tab: JavaScript -->
         dialogTrigger: $('.open-button')[0]

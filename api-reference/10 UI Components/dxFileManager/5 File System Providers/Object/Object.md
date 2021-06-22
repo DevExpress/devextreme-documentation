@@ -19,24 +19,206 @@ The following code shows how to bind the FileManager to the **Object** file syst
 
     <!-- tab: index.js -->
     $(function() {
-        $("#fileManagerContainer").dxFileManager({
-            fileSystemProvider: new DevExpress.fileManagement.ObjectFileSystemProvider({            
-                data: [ 
-                    // ...
-                    // Data objects that represent files and directories
-                    // ...
-                ],
-                thumbnailExpr: "icon",
-                // ...
-            })
-            // A shortcut that can be used if object fields have conventional names
-            fileSystemProvider: [ 
-                // ...
-                // Data objects that represent files and directories
-                // ...
-            ]
+        $("#file-manager").dxFileManager({            
+            fileSystemProvider: fileSystem,
+            // ...
         });
     });
+
+    <!-- tab: data.js -->
+    var fileSystem = [
+    {
+        name: "Documents",
+        isDirectory: true,
+        items: [{
+            name: "Projects",
+            isDirectory: true,
+            items: [{
+                name: "About.rtf",
+                isDirectory: false,
+                size: 1024
+            }, {
+                name: "Passwords.rtf",
+                isDirectory: false,
+                size: 2048
+            }]
+        }, {
+            name: "About.xml",
+            isDirectory: false,
+            size: 1024
+        }]
+    }];
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager id="fileManager"
+        [fileSystemProvider]="fileItems">
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider'; 
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    
+    export class AppComponent {
+        fileItems = [{
+            name: "Documents",
+            isDirectory: true,
+            items: [{
+                name: "Projects",
+                isDirectory: true,
+                items: [{
+                    name: "About.rtf",
+                    isDirectory: false,
+                    size: 1024
+                }, {
+                    name: "Passwords.rtf",
+                    isDirectory: false,
+                    size: 2048
+                }]
+            },{
+                name: "About.xml",
+                isDirectory: false,
+                size: 1024
+            }]
+        }];    
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        //...
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager
+            :file-system-provider="fileItems">
+        </DxFileManager>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.light.css';     
+    
+    import { 
+        DxFileManager
+    } from 'devextreme-vue/file-manager';
+    import { fileItems } from "./data.js";
+    
+    export default {
+        components: {
+            DxFileManager
+        },
+    
+        data() {
+            return {
+                fileItems
+            };
+        }
+    };
+    </script>
+
+    <!-- tab: data.js -->
+    export const fileItems = [{
+        'name': 'Documents',
+        'isDirectory': true,
+        'items': [{
+            'name': 'Projects',
+            'isDirectory': true,
+            'items': [{
+                'name': 'About.rtf',
+                'isDirectory': false,
+                'size': 1024
+            }, {
+                'name': 'Passwords.rtf',
+                'isDirectory': false,
+                'size': 2048
+            }]
+        }, {
+            'name': 'About.xml',
+            'isDirectory': false,
+            'size': 1024
+        }]
+    }];
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import FileManager from 'devextreme-react/file-manager';
+    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
+    
+    class App extends React.Component {
+        render() {
+            return (
+                <FileManager fileSystemProvider={fileItems}>
+                </FileManager>
+            );
+        }
+    }
+    export default App;
+
+    <!-- tab: data.js -->
+    export const fileItems = [{
+        'name': 'Documents',
+        'isDirectory': true,
+        'items': [{
+            'name': 'Projects',
+            'isDirectory': true,
+            'items': [{
+                'name': 'About.rtf',
+                'isDirectory': false,
+                'size': 1024
+            }, {
+                'name': 'Passwords.rtf',
+                'isDirectory': false,
+                'size': 2048
+            }]
+        }, {
+            'name': 'About.xml',
+            'isDirectory': false,
+            'size': 1024
+        }]
+    }];
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .FileSystemProvider(new JS("fileSystem"))
+    )
+
+    <script src="~/data/fileSystem.js"></script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .FileSystemProvider(new JS("fileSystem"))
+    )
+
+    <script src="~/data/fileSystem.js"></script>
 
 ---
 

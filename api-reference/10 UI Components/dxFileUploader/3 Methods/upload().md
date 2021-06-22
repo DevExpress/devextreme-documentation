@@ -9,8 +9,6 @@ Uploads all the selected files.
 
 ---
 
-##### jQuery
-
     <!-- tab: JavaScript -->
     var uploadControl = $("#file-uploader").dxFileUploader("instance");
 

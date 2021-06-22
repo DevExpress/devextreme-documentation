@@ -25,12 +25,122 @@ Configures the file and folder view.
     $(function () {
         $("#file-manager").dxFileManager({
             itemView: {
-                mode: "details",
+                mode: "thumbnails",
                 showFolders: false,
                 showParentFolder: false
             }
             // ...
         });
     });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager>
+        <dxo-item-view 
+            mode="thumbnails"
+            showFolders="false"
+            showParentFolder="false" >
+        </dxo-item-view>
+        <!-- ... -->
+    </dx-file-manager>
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        //...
+    })
+    export class AppModule { }    
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager>   
+            <DxItemView
+                mode="thumbnails"
+                :show-folders="false"
+                :show-parent-folder="false"
+            >
+            </DxItemView>
+        </DxFileManager>
+    </template>
+    <script>
+        import 'devextreme/dist/css/dx.light.css';    
+        
+        import {
+            DxFileManager,
+            DxItemView
+        } from 'devextreme-vue/file-manager';
+
+        export default {
+            components: {
+                DxFileManager,
+                DxItemView
+            },
+            data() {
+                return {
+                    //...
+                };
+            }            
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FileManager, { ItemView } from 'devextreme-react/file-manager';
+    
+    class App extends React.Component {
+        render() {
+            return (
+                <FileManager>
+                    <ItemView 
+                        mode="thumbnails"
+                        showFolder={false}
+                        showParentFolder={false}
+                    />
+                </FileManager>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ItemView(v => v
+            .Mode()
+            .ShowFolder(false)
+            .ShowParentFolder(false)
+        )
+    )
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ItemView(v => v
+            .Mode()
+            .ShowFolder(false)
+            .ShowParentFolder(false)
+        )
+    )
 
 ---

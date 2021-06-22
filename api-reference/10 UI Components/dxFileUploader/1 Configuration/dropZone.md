@@ -18,7 +18,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 - String
 
     ---
-    ##### jQuery
 
         <!-- tab: JavaScript -->
         dropZone: '.test-div'
@@ -28,7 +27,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 - jQuery object
 	 
     ---
-    ##### jQuery
 
         <!-- tab: JavaScript -->
         dropZone: $('.test-div')
@@ -38,7 +36,6 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 - DOM element
 
     ---
-    ##### jQuery
 
         <!-- tab: JavaScript -->
         dropZone: $('.test-div')[0]

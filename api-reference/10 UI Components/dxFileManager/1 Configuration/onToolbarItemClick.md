@@ -46,4 +46,123 @@ Model data. Available only if you use Knockout.
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager ...
+        (onToolbarItemClick)="fileManager_onToolbarItemClick($event)">
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        fileManager_onToolbarItemClick(e) {
+            // Your code goes here
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxFileManagerModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager ...
+            :on-toolbar-item-click="fileManager_onToolbarItemClick"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFileManager from 'devextreme-vue/file-manager';
+
+    export default {
+        components: {
+            DxFileManager
+        },
+        methods: {
+            fileManager_onToolbarItemClick(e) {
+                // Your code goes here
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FileManager from 'devextreme-react/file-manager';
+
+    class App extends React.Component {
+        fileManager_onToolbarItemClick(e) {
+            // Your code goes here
+        }
+
+        render() {
+            return (
+                <FileManager ...
+                    onToolbarItemClick={this.fileManager_onToolbarItemClick}
+                />
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .onToolbarItemClick("fileManager_onToolbarItemClick");
+        // ...
+    )
+
+    <script>
+        function fileManager_onToolbarItemClick(e) {
+            // your code
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .onToolbarItemClick("fileManager_onToolbarItemClick");
+        // ...
+    )
+
+    <script>
+        function fileManager_onToolbarItemClick(e) {
+            // your code
+        }
+    </script>
+
 ---

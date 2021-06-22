@@ -231,4 +231,48 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
     // ...
     ];
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .ResourceAssignments(ra => ra
+            .DataSource(ds => ds.Array().Data(SampleData.GanttResourceAssignments).Key("ID"))
+            .KeyExpr("ID")
+            .TaskIdExpr("TaskId")
+            .ResourceIdExpr("ResourceId")
+        )
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<ResourceAssignment> GanttResourceAssignments = new[] {
+            new ResourceAssignment { ID = 0, TaskId = 3, ResourceId = 1 },
+            new ResourceAssignment { ID = 1, TaskId = 4, ResourceId = 1 },
+            // ...
+        }
+        // ...
+    }
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .ResourceAssignments(ra => ra
+            .DataSource(ds => ds.Array().Data(SampleData.GanttResourceAssignments).Key("ID"))
+            .KeyExpr("ID")
+            .TaskIdExpr("TaskId")
+            .ResourceIdExpr("ResourceId")
+        )
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<ResourceAssignment> GanttResourceAssignments = new[] {
+            new ResourceAssignment { ID = 0, TaskId = 3, ResourceId = 1 },
+            new ResourceAssignment { ID = 1, TaskId = 4, ResourceId = 1 },
+            // ...
+        }
+        // ...
+    }
+
 ---

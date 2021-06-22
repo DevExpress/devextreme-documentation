@@ -119,6 +119,14 @@ Specifies whether users can select tasks in the Gantt.
         // ...
     )
 
+##### ASP.NET MVC Controls
+
+    <!-- Razor C# -->
+    @(Html.DevExtreme().Gantt()
+        .AllowSelection(false)
+        // ...
+    )
+
 ---
 
 #####See Also#####

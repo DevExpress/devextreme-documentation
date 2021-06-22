@@ -39,4 +39,122 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager id="fileManager"
+        [fileSystemProvider]="remoteFileProvider">
+        <!-- ... -->
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
+    
+    @Component({
+        selector: 'app-root',
+        templateUrl: 'app/app.component.html',
+        styleUrls: ['app/app.component.css']
+    })  
+    
+    export class AppComponent {
+        remoteFileProvider: RemoteFileSystemProvider;
+    
+        constructor(http: HttpClient) {
+            this.remoteFileProvider = new RemoteFileSystemProvider({
+                endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts",
+                beforeAjaxSend: function({ headers, formData, xhrFields }) {
+                    headers.RequestVerificationToken = document.getElementsByName("__RequestVerificationToken")[0].value;
+                    formData.dataValue = "some data";
+                    xhrFields.withCredentials = true;
+                }  
+            });
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule} from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager
+            :file-system-provider="remoteFileProvider">
+            <!-- ... -->
+        </DxFileManager>
+    </template>
+    
+    <script>
+    import 'devextreme/dist/css/dx.light.css'; 
+    
+    import { DxFileManager } from 'devextreme-vue/file-manager';
+    
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
+    
+    const remoteFileProvider = new RemoteFileSystemProvider({
+        endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts",
+        beforeAjaxSend: function({ headers, formData, xhrFields }) {
+            headers.RequestVerificationToken = document.getElementsByName("__RequestVerificationToken")[0].value;
+            formData.dataValue = "some data";
+            xhrFields.withCredentials = true;
+        }  
+    });
+    
+    export default {
+        components: {
+            DxFileManager
+        },
+        data() {
+            return {
+                remoteFileProvider
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    
+    import 'devextreme/dist/css/dx.light.css';
+    
+    import FileManager from 'devextreme-react/file-manager';
+    import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
+    
+    const remoteFileProvider = new RemoteFileSystemProvider({
+        endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts",
+        beforeAjaxSend: function({ headers, formData, xhrFields }) {
+            headers.RequestVerificationToken = document.getElementsByName("__RequestVerificationToken")[0].value;
+            formData.dataValue = "some data";
+            xhrFields.withCredentials = true;
+        }  
+    });
+    
+    class App extends React.Component {
+        render() {
+            return (
+                <FileManager 
+                    fileSystemProvider={remoteFileProvider}>
+                    {/* ... */}
+                </FileManager>
+            );
+        }
+    }
+    export default App;
+
 ---

@@ -38,7 +38,8 @@ Specifies an XMLHttpRequest for the file.
 The following code shows how you can handle a network error.
 
 ---
-#####jQuery
+
+##### jQuery
 
     <!--JavaScript-->
     $(function(){
@@ -53,24 +54,144 @@ The following code shows how you can handle a network error.
         });
     });
 
-#####Angular
+##### Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.component.html -->
+    <dx-file-uploader 
+        (onUploadError)="onUploadError($event)">
+        <!-- ... -->
+    </dx-file-uploader>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
-        handleNetworkError (e) {
+        onUploadError(e){
             var xhttp = e.request;
             if (xhttp.readyState == 4 && xhttp.status == 0) {
                 console.log("Connection refused.");
-            }      
+            } 
         }
     }
 
-    <!--HTML-->
-    <dx-file-uploader ...
-        (onUploadError)="handleNetworkError($event)">
-    </dx-fileUploader>
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileUploaderModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            DxFileUploaderModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileUploader 
+            :on-upload-error="onUploadError" >            
+        </DxFileUploader>
+    </template>
+
+    <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { 
+            DxFileUploader
+            // ... 
+        } from 'devextreme-vue/file-uploader';
+        
+        export default {
+            components: { 
+                DxFileUploader
+                // ... 
+            },
+            methods: {
+                onUploadError(e) {
+                    var xhttp = e.request;
+                    if (xhttp.readyState == 4 && xhttp.status == 0) {
+                        console.log("Connection refused.");
+                    } 
+                }
+            },         
+            data() {
+                return {
+                    //...
+                };
+            } 
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import FileUploader from 'devextreme-react/file-uploader';
+
+    const App = () => {
+        const onUploadError = (e) => {
+            var xhttp = e.request;
+            if (xhttp.readyState == 4 && xhttp.status == 0) {
+                console.log("Connection refused.");
+            } 
+        };
+
+        return (
+            <FileUploader onUploadError={onUploadError}>
+                <!-- ... -->               
+            </FileUploader>
+        );
+    };
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileUploader()
+        .OnUploadError("onUploadError");
+        // ...
+    )
+
+    <script>
+        function onUploadError(e) {
+            var xhttp = e.request;
+            if (xhttp.readyState == 4 && xhttp.status == 0) {
+                console.log("Connection refused.");
+            } 
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileUploader()
+        .OnUploadError("onUploadError");
+        // ...
+    )
+
+    <script>
+        function onUploadError(e) {
+            var xhttp = e.request;
+            if (xhttp.readyState == 4 && xhttp.status == 0) {
+                console.log("Connection refused.");
+            } 
+        }
+    </script>
 
 ---
+
 
 #####See Also#####
 - [uploadFailedMessage](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadFailedMessage.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFailedMessage')

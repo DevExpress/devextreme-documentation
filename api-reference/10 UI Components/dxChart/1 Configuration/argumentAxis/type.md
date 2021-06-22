@@ -20,7 +20,3 @@ Displays numeric arguments. Each argument is the [logarithmBase](/api-reference/
 
 Normally, there is no need to specify this property, because the axis type is determined automatically depending on the [type of arguments](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType'). However, you may force the use of a specific axis type, for example, to employ the *"discrete"* axis type with numeric or date-time arguments.
 
-#include common-ref-enum with {
-    enum: "`AxisScaleType`",
-    values: "`Discrete`, `Continuous`, and `Logarithmic`"
-}

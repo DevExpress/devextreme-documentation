@@ -8,7 +8,4 @@ type: String
 Specifies how shapes are displayed in the context toolbox.
 
 ---
-#include common-ref-enum with {
-    enum: "`DiagramToolboxDisplayMode`",
-    values: "`Icons`, `Texts`"
-}
+<!-- Description goes here -->

@@ -13,10 +13,5 @@ Dimension attributes have a value and a display text. For example, a "Month" att
 
 No sorting is applied when **sortBy** is set to *"none"*.
 
-#include common-ref-enum with {
-    enum: "`PivotGridSortBy`",
-    values: "`DisplayText`, `Value`, and `None`"
-}
-
 #####See Also#####
 - **fields[]**.[sortOrder](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/sortOrder.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#sortOrder')

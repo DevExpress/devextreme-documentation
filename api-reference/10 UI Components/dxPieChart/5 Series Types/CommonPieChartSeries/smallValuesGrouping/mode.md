@@ -17,11 +17,6 @@ To group all segments with a value less than the value of the **threshold** prop
 
 To switch the grouping off, assign *'none'* to the **mode** property.
 
-#include common-ref-enum with {
-    enum: "`SmallValuesGroupingMode`",
-    values: "`TopN`, `SmallValueThreshold`, and `None`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/DoughnutWithTopNSeries/"
 }

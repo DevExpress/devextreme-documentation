@@ -16,8 +16,3 @@ The following values are available.
 
 - "horizontal"  
     Radio buttons are arranged horizontally - as a row.
-
-#include common-ref-enum with {
-    enum: "`Orientation`",
-    values: "`Horizontal` and `Vertical`"
-}

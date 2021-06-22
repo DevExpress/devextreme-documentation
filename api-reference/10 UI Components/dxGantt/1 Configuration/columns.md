@@ -31,8 +31,10 @@ The **columns** property accepts an array of columns. To configure a column, use
             }, {
                 dataField: "start",
                 caption: "Start Date"
-            }, "end"
-            ],
+            }, {
+                dataField: "end",
+                caption: "End Date"
+            }],
             // ...
         });
     });

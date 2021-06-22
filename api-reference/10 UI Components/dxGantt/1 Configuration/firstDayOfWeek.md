@@ -138,6 +138,7 @@ The culture settings specify the property's default value.
         // ...
     )
 
+<<<<<<< HEAD
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -148,3 +149,6 @@ The culture settings specify the property's default value.
 
 ---
 
+=======
+---
+>>>>>>> 20_2

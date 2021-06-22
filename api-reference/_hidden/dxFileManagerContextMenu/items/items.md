@@ -169,6 +169,24 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
         // ...
     )
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add().Name(FileManagerContextMenuItem.Rename);
+                i.Add()
+                    .Name(FileManagerContextMenuItem.Download)
+                    .Text("Download a File");
+                i.Add()
+                    .Name(FileManagerContextMenuItem.Refresh)
+                    .BeginGroup(true);
+            });
+        })
+        // ...
+    )
+
 ---
 
 ![DevExtreme FileManager - Predefined Context Menu Items](/images/FileManager/context-menu-default-item.png)
@@ -234,7 +252,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
 
     export class AppComponent {
         onItemClick(e){
-            if(e.itemData.extension) {
+            if(e.itemData.options.extension) {
                 // your code
             }            
         }
@@ -288,7 +306,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
             },
             methods: {
                 onItemClick(e) {
-                    if(e.itemData.extension) {
+                    if(e.itemData.options.extension) {
                         // your code
                     }                     
                 }

@@ -97,7 +97,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
 
     export class AppComponent {
         onItemClick(e){
-            if(e.itemData.extension) {
+            if(e.itemData.options.extension) {
                 // your code
             }            
         }
@@ -151,7 +151,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
             },
             methods: {
                 onItemClick(e) {
-                    if(e.itemData.extension) {
+                    if(e.itemData.options.extension) {
                         // your code
                     }                     
                 }

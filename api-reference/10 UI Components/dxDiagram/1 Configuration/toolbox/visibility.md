@@ -32,8 +32,3 @@ Specifies the toolbar's visibility.
         <td>The toolbox is disabled. An element that can invoke the toolbox is hidden.</td>
     </tr>
 </table>
-
-#include common-ref-enum with {
-    enum: "`DiagramPanelVisibility`",
-    values: "`Auto`, `Visible`, `Collapsed`, `Disabled`"
-}

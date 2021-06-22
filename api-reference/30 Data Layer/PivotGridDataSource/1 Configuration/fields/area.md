@@ -10,11 +10,6 @@ Specifies the field's area.
 
 ---
 The field does not belong to any area if this property is **undefined**. However, the field's header is displayed in the [field chooser](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/10%20Field%20Chooser/01%20Field%20Chooser.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Chooser'), which enables the user to move this field to any area. In other cases, the field is displayed in the specified area.
- 
-#include common-ref-enum with {
-    enum: "`PivotGridArea`",
-    values: "`Row`, `Column`, `Data`, and `Filter`"
-}
 
 #####See Also#####
 - [Fields and Areas](/concepts/05%20UI%20Components/PivotGrid/020%20Fields%20and%20Areas '/Documentation/Guide/UI_Components/PivotGrid/Fields_and_Areas/')

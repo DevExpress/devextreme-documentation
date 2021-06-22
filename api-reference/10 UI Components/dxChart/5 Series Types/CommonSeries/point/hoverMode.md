@@ -23,11 +23,6 @@ The point that a user pauses on changes its style. Points with the same argument
 * **none**   
 The point does not react to pointing to it.
 
-#include common-ref-enum with {
-    enum: "`ChartPointInteractionMode`",
-    values: "`OnlyPoint`, `AllSeriesPoints`, `AllArgumentPoints`, and `None`"
-}
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
 }

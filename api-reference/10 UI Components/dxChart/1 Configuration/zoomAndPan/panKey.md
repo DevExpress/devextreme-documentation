@@ -11,7 +11,3 @@ Specifies the key that enables panning when [dragToZoom](/api-reference/10%20UI%
 ---
 [note] The Meta key depends on the keyboard: the Command key (&#8984;) on Macintosh keyboards; the Windows key (&#8862;) on Windows keyboards.
 
-#include common-ref-enum with {
-    enum: "`EventKeyModifier`",
-    values: "`Alt`, `Ctrl`, `Meta`, and `Shift`"
-}

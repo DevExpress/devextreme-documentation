@@ -21,8 +21,3 @@ Specifies an auto-layout algorithm that is used to automatically arrange shapes.
   ![Diagram - Layered Layout](/images/diagram/layout-layered.png)
 
 [note] When the **type** property is set to **layered** or **tree**, predefined shape coordinates ([leftExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#topExpr')) and edge points ([pointsExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/pointsExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#pointsExpr')) are ignored.
-
-#include common-ref-enum with {
-    enum: "`DiagramDataLayoutType`",
-    values: "`Auto`, `Off`, `Tree`, `Layered`"
-}

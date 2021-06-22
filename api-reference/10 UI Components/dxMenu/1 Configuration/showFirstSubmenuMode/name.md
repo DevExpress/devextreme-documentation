@@ -9,7 +9,4 @@ default: 'onClick'
 Specifies the mode name.
 
 ---
-#include common-ref-enum with {
-    enum: "`ShowSubmenuMode`",
-    values: "`OnHover` and `OnClick`"
-}
+<!-- Description goes here -->

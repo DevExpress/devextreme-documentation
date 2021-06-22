@@ -10,8 +10,3 @@ Specifies the value to be passed to the <a href="http://www.w3schools.com/tags/a
 
 ---
 [note] If you set the [format](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/format.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#format') property, the **mode** for mobile devices is changed to *"tel"*; *"number"* is not available.
-
-#include common-ref-enum with {
-    enum: "`NumberBoxMode`",
-    values: "`Text`, `Number`, and `Tel`"
-}

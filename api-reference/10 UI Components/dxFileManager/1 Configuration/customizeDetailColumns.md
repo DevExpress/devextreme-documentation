@@ -140,4 +140,38 @@ The columns after customization.
     }
     export default App;
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        @* ... *@
+        .CustomizeDetailColumns("customizeDetailColumns")
+    )
+
+    <script type="text/javascript">
+        function customizeDetailColumns(columns) {
+            // ...
+            // Customize the "columns" array objects here
+            // ...
+            return columns;
+        }
+    </script>
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        @* ... *@
+        .CustomizeDetailColumns("customizeDetailColumns")
+    )
+
+    <script type="text/javascript">
+        function customizeDetailColumns(columns) {
+            // ...
+            // Customize the "columns" array objects here
+            // ...
+            return columns;
+        }
+    </script>
+
 ---

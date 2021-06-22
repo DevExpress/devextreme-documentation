@@ -25,8 +25,3 @@ For information on variance, refer to the <a href="http://en.wikipedia.org/wiki/
 
 - **fixed**        
 Defines the confidential interval in constant values. Error bar values are determined by the **value** property. The high and low error bar values are drawn symmetrically up and down from the series point.
-
-#include common-ref-enum with {
-    enum: "`ValueErrorBarType`",
-    values: "`Percent`, `StdError`, `StdDeviation`, `Variance`, and `Fixed`"
-}

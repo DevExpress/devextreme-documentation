@@ -11,11 +11,6 @@ Sets the palette to be used to colorize funnel items.
 ---
 #include dataviz-ref-palette
 
-#include common-ref-enum with {
-    enum: "`VizPalette`",
-    values: "`Default`, `SoftPastel`, `HarmonyLight`, `Pastel`, `Bright`, `Soft`, `Ocean`, `Vintage`, `Violet`, `Carmine`, `DarkMoon`, `SoftBlue`, `DarkViolet`, and `GreenMist`"
-}
-
 #####See Also#####
 - [Palettes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes')
 - [paletteExtensionMode](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/paletteExtensionMode.md '{basewidgetpath}/Configuration/#paletteExtensionMode')

@@ -126,6 +126,23 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
     export default App;
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add().Name(GanttContextMenuItem.AddTask);
+                i.Add().Name(GanttContextMenuItem.DeleteTask);
+                i.Add().Text("Zoom").Items(ii => {
+                    ii.Add.Name(GanttContextMenuItem.ZoomIn);
+                    ii.Add.Name(GanttContextMenuItem.ZoomOut);
+                });
+            });
+        })
+        // ...
+    )
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

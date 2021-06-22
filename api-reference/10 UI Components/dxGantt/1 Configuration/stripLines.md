@@ -41,4 +41,151 @@ Strip lines allows you to highlight certain time or time intervals in the chart.
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-gantt>
+        <dxi-strip-line
+            [start]="tasks[0].start"
+            title="Start">
+        </dxi-strip-line>
+        <dxi-strip-line
+            [start]="tasks[tasks.length - 3].start"
+            [end]="tasks[tasks.length - 1].end"
+            title="Final Phase">
+        </dxi-strip-line>
+        <dxi-strip-line
+            [start]="currentTime"
+            title="Current Time"
+            cssClass="current-time">
+        </dxi-strip-line>
+    </dx-gantt>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        // ...      
+    }    
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxGanttModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxGanttModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxGantt >
+            <DxStripLine
+                :start="tasks[0].start"
+                title="Start"
+            />
+            <DxStripLine
+                :start="tasks[tasks.length - 3].start"
+                :end="tasks[tasks.length - 1].end"
+                title="Final Phase"
+            />
+            <DxStripLine
+                :start="currentTime"
+                title="Current Time"
+                css-class="current-time"
+            />
+            <!-- ... -->
+        </DxGantt>
+    </template>
+    <script>
+        import 'devextreme/dist/css/dx.light.css';
+        import 'devexpress-gantt/dist/dx-gantt.css'; 
+
+        import { 
+            DxGantt, DxStripLine
+            // ... 
+        } from 'devextreme-vue/gantt';
+        
+        export default {
+            components: { 
+                DxGantt, DxStripLine
+                // ... 
+            }
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+    import 'devexpress-gantt/dist/dx-gantt.css'; 
+
+    import Gantt, { 
+        // ... 
+    } from 'devextreme-react/gantt';
+
+    const App = () => {
+        return (
+            <Gantt>
+                <StripLine start={tasks[0].start} title="Start" />
+                <StripLine start={tasks[tasks.length - 3].start} end={tasks[tasks.length - 1].end} title="Final Phase" />
+                <StripLine start={currentDate} title="Current Time" cssClass="current-time" />                
+                {/* ... */}
+            </Gantt>
+        );
+    };
+
+    export default App;
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .StripLines(s => {
+            s.Add().Title("Start")
+                    .Start(SampleData.GanttTasksJohnsonResidence.First().Start);
+            s.Add().Title("Final Phase")
+                    .Start(SampleData.GanttTasksJohnsonResidence.Where(t => t.ID == 20).First().Start)
+                    .End(SampleData.GanttTasksJohnsonResidence.Where(t => t.ID == 22).First().End);
+            s.Add().Title("Current Time")
+                    .Start(DateTime.Now)
+                    .CssClass("current-time");
+        })
+        // ...
+    )
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .StripLines(s => {
+            s.Add().Title("Start")
+                    .Start(SampleData.GanttTasksJohnsonResidence.First().Start);
+            s.Add().Title("Final Phase")
+                    .Start(SampleData.GanttTasksJohnsonResidence.Where(t => t.ID == 20).First().Start)
+                    .End(SampleData.GanttTasksJohnsonResidence.Where(t => t.ID == 22).First().End);
+            s.Add().Title("Current Time")
+                    .Start(DateTime.Now)
+                    .CssClass("current-time");
+        })
+        // ...
+    )
+
 ---

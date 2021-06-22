@@ -167,6 +167,27 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
         }
     </script>
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ID("file-manager")
+        // ...
+        .onContextMenuShowing("fm_contextMenuShowing_handler")
+    )
+    <script>
+        function fm_contextMenuShowing_handler(e) {
+            const contextMenuItems = ['create', 'rename', 'delete'];
+            if (e.viewArea === 'itemView'){
+                // your code
+                e.cancel = true;
+            } else {
+                // your code
+                e.component.option('contextMenu.items', contextMenuItems);
+            }
+        }
+    </script>
+
 ---
 
 #include common-demobutton with {

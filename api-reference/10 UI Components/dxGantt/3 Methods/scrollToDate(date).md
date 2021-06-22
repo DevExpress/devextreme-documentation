@@ -16,8 +16,6 @@ You can pass the date to the **scrollToDate** method in the following formats:
 
     ---
 
-    ##### jQuery
-
         <!--JavaScript-->
         var gantt = $("#ganttContainer").dxGantt("instance");
         gantt.scrollToDate(new Date("December 17, 2020"));
@@ -27,8 +25,6 @@ You can pass the date to the **scrollToDate** method in the following formats:
 - Number - Specifies a date as a timestamp (total milliseconds since 1970/01/01). 
 
     ---
-
-    ##### jQuery
 
         <!--JavaScript-->
         var gantt = $("#ganttContainer").dxGantt("instance");
@@ -40,8 +36,6 @@ You can pass the date to the **scrollToDate** method in the following formats:
 - String - Specifies a date as a string value. 
 
     ---
-
-    ##### jQuery
 
         <!--JavaScript-->
         var gantt = $("#ganttContainer").dxGantt("instance");
@@ -180,7 +174,7 @@ Note that the **scrollToDate** method scrolls to a date inside the current scrol
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
@@ -189,13 +183,17 @@ Note that the **scrollToDate** method scrolls to a date inside the current scrol
     )
 
     <script type="text/javascript">
+        function getGanttInstance() {
+            return $("#gantt").dxGantt("instance");
+        }
         function yourCustomMethod() {
-            gantt.scrollToDate(new Date("December 17, 2020"));
+            var ganttInstance = getGanttInstance();
+            ganttInstance.scrollToDate(new Date("December 17, 2020"));
             // ...
         }
     </script>
 
----
+--- 
 
 #####See Also#####
 - [toolbar](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/')

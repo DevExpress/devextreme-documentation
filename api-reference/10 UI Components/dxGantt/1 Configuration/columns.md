@@ -50,7 +50,7 @@ The Gantt UI component does not support:
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-gantt
+    <dx-gantt>
         <dxi-column dataField="title" caption="Subject" [width]="300"></dxi-column>
         <dxi-column dataField="start" caption="Start Date"></dxi-column>
         <dxi-column dataField="end" caption="End Date"></dxi-column>
@@ -70,7 +70,7 @@ The Gantt UI component does not support:
     }    
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
+    import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
     import { DxGanttModule } from 'devextreme-angular';
@@ -150,6 +150,22 @@ The Gantt UI component does not support:
     export default App;
 
 ##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .Columns(columns => {
+            columns.AddFor(m => m.Title)
+                .Caption("Subject")
+                .Width(300);
+            columns.AddFor(m => m.Start)
+                .Caption("Start Date");
+            columns.AddFor(m => m.End)
+                .Caption("End Date");
+        })
+        // ...
+    )
+
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()

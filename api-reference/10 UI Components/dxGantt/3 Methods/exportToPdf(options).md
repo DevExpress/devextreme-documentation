@@ -15,6 +15,10 @@ PDF export options.
 
 ---
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
+}
+
 The **exportToPdf** method allows you to save information about the Gantt chart's layout, appearance, and tasks. This method supports the following options:
 
 - **format** {string | width?: number, height?: number } - Specifies the document size.

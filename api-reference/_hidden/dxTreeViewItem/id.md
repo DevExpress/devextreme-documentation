@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Holds the unique key of an item.
 
 ---
 <!-- Description goes here -->

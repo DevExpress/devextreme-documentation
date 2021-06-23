@@ -29,9 +29,6 @@ dx.web.js, dx.all.js
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Navbar/Overview/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/NavBar/Overview/"
-}
 
 #####See Also#####
 #include common-link-setupdevextreme

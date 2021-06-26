@@ -29,6 +29,15 @@ A function that returns the variable that should be tracked.
 A function called when this variable changes.
 
 ---
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailView/",
+    name: "Master-Detail View"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AdvancedMasterDetailView/",
+    name: "Advanced Master-Detail View"
+}
+
 You should call the [updateDimensions()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method each time the size of the detail section's content changes to make the table layout automatically adapt its size. In the following code, the [TabPanel](/Documentation/ApiReference/UI_Components/dxTabPanel/) in the detail section contains views that can have different heights. The **updateDimensions** method is called in the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#onSelectionChanged') handler to update the table layout when another view is selected.
 
 ---

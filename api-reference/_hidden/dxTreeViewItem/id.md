@@ -1,6 +1,7 @@
 ---
-id: dxDropDownList.Options.contentRender
-hidden: 
+id: dxTreeViewItem.id
+type: Number | String
+default: undefined
 ---
 ---
 ##### shortDescription

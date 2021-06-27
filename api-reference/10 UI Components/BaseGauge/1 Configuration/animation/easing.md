@@ -16,7 +16,3 @@ The animation progresses according to the Ease-out cubic interpolation function 
 * **linear**   
 The animation progresses at a constant pace.
 
-#include common-ref-enum with {
-    enum: "`VizAnimationEasing`",
-    values: "`EaseOutCubic` and `Linear`"
-}

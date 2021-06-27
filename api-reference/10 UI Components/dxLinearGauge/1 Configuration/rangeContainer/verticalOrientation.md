@@ -10,8 +10,3 @@ Specifies the orientation of the range container. Applies only if the **geometry
 
 ---
 This property specifies the range container orientation relative to an invisible scale line.
-
-#include common-ref-enum with {
-    enum: "`VerticalAlignment`",
-    values: "`Top`, `Center`, and `Bottom`"
-}

@@ -44,8 +44,3 @@ The following symbols are available.
         <td><img src="/images/ChartJS/point-symbols/cross.png" /></td>
     </tr>
 </table>
-
-#include common-ref-enum with {
-    enum: "`PointSymbol`",
-    values: "`Circle`, `Square`, `Polygon`, `TriangleDown`, `TriangleUp`, and `Cross`"
-}

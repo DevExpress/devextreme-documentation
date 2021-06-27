@@ -16,5 +16,3 @@ When the [snapToTicks](/api-reference/10%20UI%20Components/dxRangeSelector/1%20C
 To prohibit the display of minor ticks, set the scale's **showMinorTicks** property to **false**.
 
 To set a custom tick interval between major ticks, use the scale's **tickInterval** property.
-
-When using the UI component as an <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Control</a> or a <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Control</a>, specify this property using the `VizTimeInterval` enum. This enum accepts the same values, but they start with an upper-case letter, for example, *'day'* becomes `Day`.

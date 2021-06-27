@@ -134,13 +134,13 @@ The key of the row whose selection state was changed.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onSelectionChanged("gantt_selectionChanged_handler")
+        // ...
     )
     <script>
         function gantt_selectionChanged_handler(e) {

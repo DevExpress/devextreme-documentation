@@ -129,13 +129,13 @@ The values of the processed resource and task.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onResourceAssigned("gantt_resourceAssigned_handler")
+        // ...
     )
     <script>
         function gantt_resourceAssigned_handler(e) {

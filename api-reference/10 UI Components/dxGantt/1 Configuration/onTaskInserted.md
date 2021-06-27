@@ -129,13 +129,13 @@ The values of the inserted task.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onTaskInserted("gantt_taskInserted_handler")
+        // ...
     )
     <script>
         function gantt_taskInserted_handler(e) {

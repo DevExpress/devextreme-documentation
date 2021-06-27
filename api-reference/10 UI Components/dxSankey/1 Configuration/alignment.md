@@ -90,8 +90,3 @@ A string value aligns all node columns uniformly. An array of strings allows you
 ---
 
 With this setting, the leftmost node column is aligned to the top, and the next two columns are aligned to the bottom. The rightmost column does not have a value in the **alignment** array and is aligned to the center (according to the default value).
-
-#include common-ref-enum with {
-    enum: "`VerticalAlignment`",
-    values: "`Bottom`, `Center`, and `Top`"
-}

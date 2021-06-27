@@ -38,8 +38,3 @@ Use *"before"* and *"after"* if the Drawer should be positioned differently in r
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/LeftOrRightPosition/",
     name: "Left or Right Position"
 }
-
-#include common-ref-enum with {
-    enum: "`DrawerPosition`",
-    values: "`Left`, `Right`, `Top`, `Bottom`, `Before`, and `After`"
-}

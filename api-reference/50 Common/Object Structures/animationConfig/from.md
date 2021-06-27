@@ -51,21 +51,3 @@ Opacity is specified the same way as in the **fade** animation type. The UI comp
         <!--CSS-->
         .fade-out-visibility { opacity: 0; }
         .fade-out-text { font-size: 5pt; }
-
-When using <a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400943/devextreme-aspnet-mvc-controls" target="_blank">ASP.NET MVC 5 Controls</a> or <a href="https://docs.devexpress.com/AspNetCore/400263/aspnet-core-controls#devextreme-based-aspnet-core-controls" target="_blank">DevExtreme-Based ASP.NET Core Controls</a>, you can specify this property with an object instead of the usual lambda expression.
-
-    <!--Razor C#-->@(Html.DevExtreme().WidgetName()
-        .Animation(a => a
-            .Show(s => s
-                .From(new { scale = 0.2, opacity = 0.7 })
-            )
-        )
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().WidgetName() _
-        .Animation(Sub(a)
-            a.Show(Sub(s)
-                s.From(New With { .scale = 0.2, .opacity = 0.7 })
-            End Sub)
-        End Sub)
-    )

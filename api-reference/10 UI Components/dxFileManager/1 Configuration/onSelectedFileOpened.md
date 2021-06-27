@@ -83,7 +83,7 @@ Model data. Available only if you use Knockout.
     <!-- tab: App.vue -->
     <template>
         <DxFileManager ...
-            :selected-file-opened="fileManager_onSelectedFileOpened"
+            :on-selected-file-opened="fileManager_onSelectedFileOpened"
         />
     </template>
 
@@ -129,5 +129,33 @@ Model data. Available only if you use Knockout.
         }
     }
     export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .OnSelectedFileOpened("fileManager_onSelectedFileOpened");
+        // ...
+    )
+
+    <script>
+        function fileManager_onSelectedFileOpened(e) {
+            // your code
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .OnSelectedFileOpened("fileManager_onSelectedFileOpened");
+        // ...
+    )
+
+    <script>
+        function fileManager_onSelectedFileOpened(e) {
+            // your code
+        }
+    </script>
 
 ---

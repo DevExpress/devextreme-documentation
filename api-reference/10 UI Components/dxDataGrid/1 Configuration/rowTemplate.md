@@ -161,7 +161,7 @@ In AngularJS and Knockout, use the [dxTemplate](/api-reference/10%20UI%20Compone
 
     class Row extends React.PureComponent {
         render() {
-            const {�data:�{�id,�name�}�} = this.props.data;
+            const { data: { id, name } } = this.props.data;
             return (
                 <tbody className={"dx-row"}>
                     <tr>

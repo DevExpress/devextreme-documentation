@@ -176,4 +176,29 @@ Specifies the context menu item name.
         }
     </script>
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ContextMenu(cm => {
+            cm.Items(i => {
+                i.Add().Text("Category").Items(ii => {
+                    ii.Add.Name("item1").Text("Item 1");
+                    ii.Add.Name("item2").Text("Item 2");
+                    ii.Add.Name("item3").Text("Item 3");
+                });
+            });
+        })
+        .OnCustomCommand("gantt_customCommand_handler")
+        // ...
+    )
+
+    <script>
+        function gantt_customCommand_handler(e) {
+            if(e.name == "item1") {
+                // your code
+            }
+        }
+    </script>
+
 ---

@@ -24,10 +24,5 @@ The drawer partially displaces the view.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/HorizontalOpening/"
 }
 
-#include common-ref-enum with {
-    enum: "`DrawerOpenedStateMode`",
-    values: "`Overlap`, `Shrink`, and `Push`"
-}
-
 #####See Also#####
 - [revealMode](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/revealMode.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#revealMode')

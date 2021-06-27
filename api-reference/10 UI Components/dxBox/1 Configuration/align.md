@@ -9,7 +9,3 @@ default: 'start'
 Specifies how UI component items are aligned along the main direction.
 
 ---
-#include common-ref-enum with {
-    enum: "`BoxAlign`",
-    values: "`Start`, `End`, `Center`, `SpaceBetween`, and `SpaceAround`"
-}

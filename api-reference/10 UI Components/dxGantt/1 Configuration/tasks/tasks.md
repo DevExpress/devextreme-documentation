@@ -273,4 +273,66 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
     // ...
     ];
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .Tasks(t => t
+            .DataSource(ds => ds.Array().Data(SampleData.GanttTasks).Key("ID"))
+            .KeyExpr("ID")
+            .TitleExpr("Title")
+            .ParentIdExpr("ParentId")
+            .StartExpr("Start")
+            .EndExpr("End")
+            .ProgressExpr("Progress")
+        )
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<Task> GanttTasks = new[] {
+            new Task {
+                ID = 1,
+                ParentId = 0,
+                Title = "Software Development",
+                Start = DateTime.Parse("2019-02-21T05:00:00.000Z"),
+                End = DateTime.Parse("2019-07-04T12:00:00.000Z"),
+                Progress = 31
+            },        
+            // ...
+        }
+        // ...
+    }
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .Tasks(t => t
+            .DataSource(ds => ds.Array().Data(SampleData.GanttTasks).Key("ID"))
+            .KeyExpr("ID")
+            .TitleExpr("Title")
+            .ParentIdExpr("ParentId")
+            .StartExpr("Start")
+            .EndExpr("End")
+            .ProgressExpr("Progress")
+        )
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<Task> GanttTasks = new[] {
+            new Task {
+                ID = 1,
+                ParentId = 0,
+                Title = "Software Development",
+                Start = DateTime.Parse("2019-02-21T05:00:00.000Z"),
+                End = DateTime.Parse("2019-07-04T12:00:00.000Z"),
+                Progress = 31
+            },        
+            // ...
+        }
+        // ...
+    }
+
 ---

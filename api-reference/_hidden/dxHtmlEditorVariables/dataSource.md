@@ -8,7 +8,6 @@ default: null
 Specifies a collection of variables available for a user.
 
 ---
-If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
 The following list shows how to specify the **dataSource** property depending on your data source: 
 

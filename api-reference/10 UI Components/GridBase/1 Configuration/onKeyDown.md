@@ -28,6 +28,8 @@ Model data. Available only if you use Knockout.
 
 ---
 
+The following code shows how to handle a key combination:
+
 ---
 ##### jQuery
 

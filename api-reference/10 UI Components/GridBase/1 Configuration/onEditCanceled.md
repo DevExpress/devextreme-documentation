@@ -24,4 +24,6 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditingAndEditingEvents/"
+}

@@ -1,42 +1,20 @@
-The SelectBox can display data grouped by category. To implement this, we will use the data from the previous steps with the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component. Its API allows you to sort, filter, select, and group data. At its core, the **DataSource** has a [store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') - an object that keeps data and provides an API to access and modify it. To configure the store, use the **DataSource**'s [store](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/') object. Specify its [type](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store/type.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/#type') as *"array"*, pass the initial data array to the [data](/api-reference/30%20Data%20Layer/ArrayStore/1%20Configuration/data.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#data') field, and set the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') field. 
+The {WidgetName} can display data grouped by category. To implement this, we will use the data from the previous steps with the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component. Its API allows you to sort, filter, select, and group data. At its core, the **DataSource** has a [store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') - an object that keeps data and provides an API to access and modify it. To configure the store, use the **DataSource**'s [store](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/') object. Specify its [type](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/store/type.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/#type') as *"array"*, pass the initial data array to the [data](/api-reference/30%20Data%20Layer/ArrayStore/1%20Configuration/data.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#data') field, and set the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') field. 
 
-To group data, specify the data field to group by in the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property and set the SelectBox's [grouped](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#grouped') property to **true**.
+To group data, specify the data field to group by in the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property and set the {WidgetName}'s [grouped](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#grouped') property to **true**.
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        const data = [{
-            ID: 1,
-            Name: 'Banana',
-            Category: 'Fruits',
-        }, {
-            ID: 2,
-            Name: 'Cucumber',
-            Category: 'Vegetables',
-        }, {
-            ID: 3,
-            Name: 'Apple',
-            Category: 'Fruits',
-        }, {
-            ID: 4,
-            Name: 'Tomato',
-            Category: 'Vegetables',
-        }, {
-            ID: 5,
-            Name: 'Apricot',
-            Category: 'Fruits',
-        }]
-
         const dataSource = new DevExpress.data.DataSource({
             store: data,
-            type: 'array',
+            type: "array",
             key: "ID",
             group: "Category"
         });
 
-        $("#selectBox").dxSelectBox({
+        $("#{widgetName}").dx{WidgetName}({
             // ...
             grouped: true
         });
@@ -45,9 +23,9 @@ To group data, specify the data field to group by in the **DataSource**'s [group
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-select-box ...
+    <dx-{widget-name} ...
         [grouped]="true">
-    </dx-select-box>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     // ...
@@ -76,7 +54,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
 
     <!-- tab: App.vue -->
     <template>
-        <DxSelectBox ...
+        <Dx{WidgetName} ...
             :grouped="true"
         />
     </template>
@@ -87,7 +65,7 @@ To group data, specify the data field to group by in the **DataSource**'s [group
 
     export default {
         components: {
-            DxSelectBox
+            Dx{WidgetName}
         },
         data() {
             return {
@@ -120,21 +98,17 @@ To group data, specify the data field to group by in the **DataSource**'s [group
         group: "Category"
     })
 
-    class App extends React.Component {
+    function App() {
         // ...
-
-        render() {
-            return (
-                <SelectBox ...
-                    grouped={true}
-                />
-            );        
-        }
-
+        return (
+            <{WidgetName} ...
+                grouped={true}
+            />
+        );   
     }
 
     export default App;
     
 ---
 
-If your data is already grouped, ensure each group has the **key** and **items** fields as shown in [this article](/concepts/05%20UI%20Components/SelectBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/SelectBox/Grouping/In_the_Data_Source/'). If the fields are named differently, implement the **DataSource**'s [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') function to create **key** + **items** field mappings.
+If your data is already grouped, ensure each group has the **key** and **items** fields as shown in [this article](/Documentation/Guide/UI_Components/{WidgetName}/Grouping/In_the_Data_Source/). If the fields are named differently, implement the **DataSource**'s [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function to create **key** + **items** field mappings.

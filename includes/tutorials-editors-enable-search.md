@@ -1,12 +1,10 @@
-To allow users to search through SelectBox values, set [searchEnabled](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchEnabled') to **true**:
+To allow users to search through {WidgetName} values, set [searchEnabled](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#searchEnabled') to **true**:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        // ...
-
         $("#{widgetName}").dx{WidgetName}({
             // ...
             searchEnabled: true
@@ -48,3 +46,4 @@ To allow users to search through SelectBox values, set [searchEnabled](/api-refe
     export default App;
 
 ---
+

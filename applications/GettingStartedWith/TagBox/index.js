@@ -1,6 +1,6 @@
 $(function() {
     const dataSource = new DevExpress.data.DataSource({
-        store: products,
+        store: data,
         key: "ID",
         group: "Category"
     });
@@ -26,7 +26,7 @@ $(function() {
     
 });
 
-const products = [{
+const data = [{
     "ID": 1,
     "Name": "HD Video Player",
     "Category": "Video Players"

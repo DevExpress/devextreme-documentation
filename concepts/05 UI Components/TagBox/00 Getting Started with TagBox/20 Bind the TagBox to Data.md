@@ -6,14 +6,14 @@
     <!-- tab: index.js -->
     $(function() {
         $("#tagBox").dxTagBox({
-            dataSource: products,
+            dataSource: data,
             valueExpr: "ID",
             displayExpr: "Name"
         });
     });
 
     <!-- tab: data.js -->
-    const products = [{
+    const data = [{
         "ID": 1,
         "Name": "HD Video Player",
         "Category": "Video Players"
@@ -91,23 +91,23 @@
 
     // ...
     export class AppComponent {
-        data: Product[];
+        data: Item[];
 
         constructor(service: AppService) {
-            this.data = service.getProducts();
+            this.data = service.getItems();
         }
     }
 
     <!-- tab: app.service.ts -->
     import { Injectable } from '@angular/core';
 
-    export class Product {
+    export class Item {
         ID: number;
         Name: string;
         Category: string;
     }
 
-    const products: Product[] = [{
+    const data: Item[] = [{
         "ID": 1,
         "Name": "HD Video Player",
         "Category": "Video Players"
@@ -174,8 +174,8 @@
     })
 
     export class AppService {
-        getProducts(): Product[] {
-            return products;
+        getItems(): Item[] {
+            return data;
         }
     }
 
@@ -184,7 +184,7 @@
     <!-- tab: App.vue -->
     <template>
         <DxTagBox
-            :data-source="products"
+            :data-source="data"
             value-expr="ID"
             display-expr="Name"
         />
@@ -192,22 +192,22 @@
 
     <script>
     // ...
-    import { products } from './data';
+    import { data } from './data';
 
     export default {
         components: {
-            DxSelectBox
+            DxTagBox
         },
         data() {
             return {
-                products
+                data
             }
         }
     }
     </script>
 
     <!-- tab: data.js -->
-    export const products = [{
+    export const data = [{
         "ID": 1,
         "Name": "HD Video Player",
         "Category": "Video Players"
@@ -273,12 +273,12 @@
 
     <!-- tab: App.js -->
     // ...
-    import { products } from './data';
+    import { data } from './data';
 
     function App() {
         return (
             <TagBox
-                dataSource={products}
+                dataSource={data}
                 valueExpr="ID"
                 displayExpr="Name"
             />
@@ -288,7 +288,7 @@
     export default App;
 
     <!-- tab: data.js -->
-    export const products = [{
+    export const data = [{
         "ID": 1,
         "Name": "HD Video Player",
         "Category": "Video Players"
@@ -352,3 +352,6 @@
 
 ---
 
+If you run this code and open the TagBox, you will see the the populated drop-down list. Next, we will enable search.
+
+[tags] data binding

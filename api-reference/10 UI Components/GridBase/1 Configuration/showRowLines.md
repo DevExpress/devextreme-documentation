@@ -8,6 +8,9 @@ default: false, true (iOS, Material)
 Specifies whether horizontal lines that separate one row from another are visible.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/"
+}
 
 #####See Also#####
 - [showBorders](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/showBorders.md '{basewidgetpath}/Configuration/#showBorders')

@@ -8,6 +8,9 @@ default: false
 Specifies whether the outer borders of the UI component are visible.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/"
+}
 
 #####See Also#####
 - [showColumnLines](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/showColumnLines.md '{basewidgetpath}/Configuration/#showColumnLines')

@@ -4,6 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Overridden.
+<!-- Overridden -->
 
 ---
+<!-- Overridden -->

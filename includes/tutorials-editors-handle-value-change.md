@@ -1,11 +1,11 @@
-Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dx{ComponentName}/Configuration/#onValueChanged) handler to perform an action when a user selects an item. In the code below, this function logs ${{output}}.
+Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#onValueChanged) handler to perform an action when a user selects an item. In the code below, this function logs ${{output}}.
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{componentName}").dx{ComponentName}({
+        $("#{widgetName}").dx{WidgetName}({
             // ...
             onValueChanged: function(e) {
                 console.log(e.value);
@@ -17,9 +17,9 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dx{Comp
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{component-name} ...
+    <dx-{widget-name} ...
         (onValueChanged)="onValueChanged($event)">
-    </dx-{component-name}>
+    </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -41,7 +41,7 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dx{Comp
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{ComponentName} ...
+        <Dx{WidgetName} ...
             @value-changed="onValueChanged"
         />
     </template>
@@ -70,7 +70,7 @@ Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dx{Comp
         }, []);
 
         return (
-            <{ComponentName} ...
+            <{WidgetName} ...
                 onValueChanged={onValueChanged}
             />
         );

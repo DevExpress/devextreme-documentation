@@ -1,5 +1,3 @@
-#include tutorials-intro-installationnote
-
 TagBox is an editor that allows users to select multiple items from a drop-down list.
 
 This tutorial explains how to add a TagBox, populate its drop-down list, allow users to search through it, and log the selected items data to the console.

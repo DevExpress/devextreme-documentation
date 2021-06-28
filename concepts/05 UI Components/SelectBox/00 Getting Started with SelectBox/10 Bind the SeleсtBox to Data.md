@@ -150,17 +150,14 @@
     // ...
     import { data } from './data';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox
-                    dataSource={data}
-                    valueExpr="ID"
-                    displayExpr="Name"
-                />
-            );        
-        }
-
+    function App() {
+        return (
+            <SelectBox
+                dataSource={data}
+                valueExpr="ID"
+                displayExpr="Name"
+            />
+        ); 
     }
 
     export default App;

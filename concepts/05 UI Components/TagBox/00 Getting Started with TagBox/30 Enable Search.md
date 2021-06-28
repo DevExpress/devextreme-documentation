@@ -1,0 +1,1 @@
+#include tutorials-editors-enable-search

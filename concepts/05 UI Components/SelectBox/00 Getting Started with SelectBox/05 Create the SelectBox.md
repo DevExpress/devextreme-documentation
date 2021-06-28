@@ -87,14 +87,17 @@ Use the code below to create an empty SelectBox:
 
     import { SelectBox } from 'devextreme-react/select-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox/>
-            );
-        }
+    function App() {
+        return (
+            <TagBox id="tagBox"
+                {/* Configuration goes here */}
+            >
+            </TagBox>
+        );
     }
+
     export default App;
+
 
 ---
 

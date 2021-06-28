@@ -11,8 +11,6 @@ Specifies how the header filter combines values into groups. Does not apply if y
 ---
 For numeric columns, assign a number to this property. This number designates a step with which to generate groups. Column values are classified into these groups.
 
-For numeric columns, assign a number to this property. This number designates a step with which groups should be generated. Column values are classified into these groups.
-=======
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
 }

@@ -352,6 +352,6 @@
 
 ---
 
-If you run this code and open the TagBox, you will see the the populated drop-down list. Next, we will enable search.
+If you run this code and open the TagBox, you will see a populated drop-down list. Next, we will enable search.
 
 [tags] data binding

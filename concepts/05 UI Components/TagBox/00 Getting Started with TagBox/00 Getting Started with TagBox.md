@@ -1,6 +1,6 @@
 TagBox is an editor that allows users to select multiple items from a drop-down list.
 
-This tutorial explains how to add a TagBox, populate its drop-down list, allow users to search through it, and log the selected items data to the console.
+This tutorial explains how to add a TagBox to a page, populate its drop-down list, allow users to search through it, and log the selected items data to the console.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/TagBox/index.html, /Content/Applications/21_1/GettingStartedWith/TagBox/index.js, /Content/Applications/21_1/GettingStartedWith/TagBox/index.css"></div>
 

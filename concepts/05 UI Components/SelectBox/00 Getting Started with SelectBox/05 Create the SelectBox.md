@@ -89,10 +89,10 @@ Use the code below to create an empty SelectBox:
 
     function App() {
         return (
-            <TagBox id="tagBox"
+            <SelectBox id="selectBox"
                 {/* Configuration goes here */}
             >
-            </TagBox>
+            </SelectBox>
         );
     }
 

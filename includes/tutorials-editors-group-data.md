@@ -111,4 +111,4 @@ To group data, specify the data field to group by in the **DataSource**'s [group
     
 ---
 
-If your data is already grouped, ensure each group has the **key** and **items** fields as shown in [this article](/Documentation/Guide/UI_Components/{WidgetName}/Grouping/In_the_Data_Source/). If the fields are named differently, implement the **DataSource**'s [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function to create **key** + **items** field mappings.
+If your data is already grouped, ensure each group has the **key** and **items** fields as shown in the following article: [Grouping in the Data Source](/Documentation/Guide/UI_Components/{WidgetName}/Grouping/In_the_Data_Source/). If the fields are named differently, implement the **DataSource**'s [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function to create **key** + **items** field mappings.

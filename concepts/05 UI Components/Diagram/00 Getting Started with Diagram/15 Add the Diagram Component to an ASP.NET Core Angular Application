@@ -1,0 +1,45 @@
+1. Open the `package.json` file and add the `devextreme` and `devextreme-angular` packages to the `dependencies` section:
+
+        <!-- tab: package.json -->
+        "dependencies": {
+          ...
+          "devextreme": "minor_21_2_package",
+          "devextreme-angular": "minor_21_2_package",
+        }
+        
+  Save the changes and install the dependent packages as follows:
+    
+    * In Visual Studio, build the application.
+    * In [Angular CLI](https://github.com/angular/angular-cli), call the following command: `npm i`.
+
+1. Add global style references to the Diagram and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below) to the `angular.json` file:
+
+        <!-- tab: angular.json -->
+        "styles": [
+          ...
+          "node_modules/devexpress-diagram/dist/dx-diagram.min.css",
+          "node_modules/devextreme/dist/css/dx.light.css"
+        ]
+
+1. Open the `app.module.ts` file and import the Diagram component module:
+
+        <!-- tab: app.module.ts -->
+        // Imports the Diagram component
+        import { DxDiagramModule } from 'devextreme-angular'; 
+
+        @NgModule({ 
+            // ... 
+            imports: [
+                // ...
+                DxDiagramModule
+            ] 
+        })
+
+1. Open the `app.component.html` file and add the following code. This code creates the DevExtreme Diagram UI component:
+
+        <!-- tab: app.component.html -->
+        <dx-diagram></dx-diagram>
+
+Run the application.
+
+#include ng-demos-and-code-examples

@@ -10,7 +10,7 @@
   Save the changes and install the dependent packages as follows:
     
     * In Visual Studio, build the application.
-    * In [Angular CLI](https://github.com/angular/angular-cli), call the following command: `npm i`.
+    * In [Angular CLI](https://github.com/angular/angular-cli), run the following command: `npm i`.
 
 1. Add global style references to the Diagram and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below) to the `angular.json` file:
 

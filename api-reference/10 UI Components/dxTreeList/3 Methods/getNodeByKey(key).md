@@ -12,6 +12,10 @@ The [Node](/api-reference/10%20UI%20Components/dxTreeList/4%20Node '/Documentati
 The node's key.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [Node Structure](/api-reference/10%20UI%20Components/dxTreeList/4%20Node '/Documentation/ApiReference/UI_Components/dxTreeList/Node/')

@@ -10,6 +10,7 @@ $(function() {
         dataSource: dataSource,
         valueExpr: "ID",
         displayExpr: "Name",
+        opened: true,
         showSelectionControls: true,
         searchEnabled: true,
         grouped: true,

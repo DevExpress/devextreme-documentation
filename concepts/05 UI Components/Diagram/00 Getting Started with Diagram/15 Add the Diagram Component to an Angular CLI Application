@@ -1,16 +1,8 @@
-1. Open the `package.json` file and add the `devextreme` and `devextreme-angular` packages to the `dependencies` section:
+This tutorial adds the Diagram component to an Angular CLI Application. Refer to the <a href="https://cli.angular.io/" target="_blank">Angular CLI</a> documentation for information on how to create such an application.
 
-        <!-- tab: package.json -->
-        "dependencies": {
-          ...
-          "devextreme": "minor_21_2_package",
-          "devextreme-angular": "minor_21_2_package",
-        }
-        
-  Save the changes and install the dependent packages as follows:
-    
-    * In Visual Studio, build the application.
-    * In [Angular CLI](https://github.com/angular/angular-cli), run the following command: `npm i`.
+1. Install the `devextreme` and `devextreme-angular` npm packages:
+
+    `npm install devextreme@21.1.4 devextreme-angular@21.1.4 --save --save-exact`
 
 1. Add global style references to the Diagram and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below) to the `angular.json` file:
 
@@ -21,7 +13,7 @@
           "node_modules/devextreme/dist/css/dx.light.css"
         ]
 
-1. Open the `app.module.ts` file and import the Diagram component module:
+1. Go to the `NgModule` in which you are going to use DevExtreme UI components and import the Diagram module. 
 
         <!-- tab: app.module.ts -->
         // Imports the Diagram component
@@ -35,9 +27,14 @@
             ] 
         })
 
-1. Open the `app.component.html` file and add the following code. This code creates the DevExtreme Diagram UI component:
+Now you can use the Diagram UI in your application:
 
         <!-- tab: app.component.html -->
         <dx-diagram></dx-diagram>
 
-Run the application.
+Run the application with the following command:
+
+    `ng serve`
+
+Open <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a> to browse the application.
+

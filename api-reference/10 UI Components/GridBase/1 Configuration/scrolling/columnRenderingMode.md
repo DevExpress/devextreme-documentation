@@ -16,8 +16,3 @@ Renders all columns at once.
 
 - *"virtual"*     
 Renders only those columns that get into the viewport.          
-
-#include common-ref-enum with {
-    enum: "`GridColumnRenderingMode`",
-    values: "`Standard` and `Virtual`"
-}

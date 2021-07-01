@@ -9,7 +9,4 @@ default: 'vertical'
 A string value specifying available scrolling directions.
 
 ---
-#include common-ref-enum with {
-    enum: "`ScrollDirection`",
-    values: "`Vertical`, `Horizontal`, and `Both`"
-}
+<!-- Description goes here -->

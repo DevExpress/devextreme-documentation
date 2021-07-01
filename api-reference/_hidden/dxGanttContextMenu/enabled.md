@@ -88,6 +88,14 @@ Specifies whether the context menu is enabled in the UI component.
 
     export default App;
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .ContextMenu(cm => cm.Enabled(false))
+        // ...
+    )
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -95,5 +103,6 @@ Specifies whether the context menu is enabled in the UI component.
         .ContextMenu(cm => cm.Enabled(false))
         // ...
     )
+
 
 ---

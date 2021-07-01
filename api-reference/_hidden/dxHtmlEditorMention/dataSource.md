@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditorMention.dataSource
-type: Array<String> | DataSource | DataSource_Options
+type: Array<String> | Store | DataSource | DataSource_Options
 default: null
 ---
 ---
@@ -8,7 +8,6 @@ default: null
 Provides data for the suggestion list.
 
 ---
-If you use DevExtreme ASP.NET MVC Controls, refer to the <a href="https://docs.devexpress.com/AspNetCore/400575/devextreme-based-controls/concepts/bind-controls-to-data" target="_blank">Bind Controls to Data</a> article.
 
 Depending on your data source, specify this property as described in the following list. The data source can provide `string` values or objects. In the latter case, also specify the [displayExpr](/api-reference/_hidden/dxHtmlEditorMention/displayExpr.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#displayExpr') and [valueExpr](/api-reference/_hidden/dxHtmlEditorMention/valueExpr.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/#valueExpr').
 

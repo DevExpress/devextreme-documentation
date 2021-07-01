@@ -1,5 +1,5 @@
 ---
 id: dxActionSheet.Options.dataSource
-type: String | Array<String, dxActionSheetItem, any> | DataSource | DataSource_Options
+type: String | Array<String, dxActionSheetItem, any> | Store | DataSource | DataSource_Options
 default: null
 ---

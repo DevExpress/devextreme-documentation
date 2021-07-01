@@ -9,7 +9,4 @@ default: 'onHover'
 Specifies when the UI component shows a tooltip.
 
 ---
-#include common-ref-enum with {
-    enum: "`SliderTooltipShowMode`",
-    values: "`OnHover` and `Always`"
-}
+<!-- Description goes here -->

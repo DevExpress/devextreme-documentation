@@ -9,25 +9,7 @@ Specifies data filtering conditions.
 ---
 Possible variants:
 
-* Binary filter
-
-        [ "field", "=", 3 ]
-
-* Unary filter
-
-        [ "!", [ "field", "=", 3 ] ]
-
-* Complex filter
-
-        [
-            [ "field", "=", 10 ],
-            "and",
-            [
-                [ "otherField", "<", 3 ],
-                "or",
-                [ "otherField", ">", 11 ]
-            ]
-        ]
+#include datalayer-ref-filter-acceptedvalues
 
 ---
 ##### jQuery

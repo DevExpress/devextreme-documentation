@@ -1,0 +1,23 @@
+.demo-container {
+    margin: 50px 50px;
+    width: 90vh;
+    height: 480px
+}
+
+#tabPanel {
+    height: 350px;
+    width: 500px;
+}
+
+#form, #radioGroup {
+    padding: 15px; 
+}
+
+#textArea {
+    padding: 15px; 
+    height: 100%;
+}
+
+#radioGroupSwitcher {
+    margin-top: 20px;
+}

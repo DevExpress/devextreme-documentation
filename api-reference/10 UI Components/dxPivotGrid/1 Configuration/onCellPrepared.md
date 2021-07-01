@@ -72,9 +72,9 @@ This function allows you to customize cells and modify their content. Common use
         })
         export class AppComponent {
             onCellPrepared(e) {          
-                if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
-                    e.cellElement.style.fontSize = "14px";
-                    e.cellElement.style.fontWeight = "bold";
+                if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                    e.cellElement.style.fontSize = '14px';
+                    e.cellElement.style.fontWeight = 'bold';
                 }
             }
 
@@ -117,9 +117,9 @@ This function allows you to customize cells and modify their content. Common use
             },
             methods: {
                 onCellPrepared(e) {          
-                    if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
-                        e.cellElement.style.fontSize = "14px";
-                        e.cellElement.style.fontWeight = "bold";
+                    if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                        e.cellElement.style.fontSize = '14px';
+                        e.cellElement.style.fontWeight = 'bold';
                     }
                 }
             }
@@ -132,27 +132,24 @@ This function allows you to customize cells and modify their content. Common use
         import React, { useCallback } from 'react';
         import 'devextreme/dist/css/dx.light.css';
         import PivotGrid from 'devextreme-react/pivot-grid';
-
-        const App = () => {
+        
+        export default function App() {
             const customizeCells = useCallback((e) {          
-                if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
-                    e.cellElement.style.fontSize = "14px";
-                    e.cellElement.style.fontWeight = "bold";
+                if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                    e.cellElement.style.fontSize = '14px';
+                    e.cellElement.style.fontWeight = 'bold';
                 }
             }, []);
-            
             return (
                 <PivotGrid ...
                     onCellPrepared={customizeCells}
                 />
             );
         }
-        export default App;
 
-    ---
+    ---     
 
-
-- Add a class to a **cellElement**. The following code adds a custom class to cells in the [Grand Total](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/05%20Totals/03%20Grand%20Total%20Row%20and%20Column.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals/Grand_Total_Row_and_Column') row and column. This code also adds another class to all cells in the *"row"* and *"column"* areas:
+- Add a class to a **cellElement**. The following code adds a custom class to cells in the [Grand Total](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements/05%20Totals/03%20Grand%20Total%20Row%20and%20Column.md '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Totals/Grand_Total_Row_and_Column') row and column. This code also adds another class to all cells in the *"row"* and *"column"* areas:        
 
     ---
     ##### jQuery
@@ -187,9 +184,9 @@ This function allows you to customize cells and modify their content. Common use
         })
         export class AppComponent {
             onCellPrepared(e) {          
-                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.addClass("your-custom-class");
-                if(e.area === "row" || e.area === "column")
+                if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
+                    e.cellElement.addClass('your-custom-class');
+                if(e.area === 'row' || e.area === 'column')
                     e.cellElement.addClass("another-custom-class");
             }
 
@@ -232,10 +229,10 @@ This function allows you to customize cells and modify their content. Common use
             },
             methods: {
                 onCellPrepared(e) {          
-                    if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                        e.cellElement.addClass("your-custom-class");
-                    if(e.area === "row" || e.area === "column")
-                        e.cellElement.addClass("another-custom-class");
+                    if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
+                        e.cellElement.addClass('your-custom-class');
+                    if(e.area === 'row' || e.area === 'column')
+                        e.cellElement.addClass('another-custom-class');
                 }
             }
         }
@@ -249,25 +246,21 @@ This function allows you to customize cells and modify their content. Common use
 
         import PivotGrid from 'devextreme-react/pivot-grid';
 
-        const App = () => {
-            const customizeCells = useCallback((e) {          
-                if(e.cell.columnType === "GT" || e.cell.rowType === "GT")
-                    e.cellElement.addClass("your-custom-class")
-                if(e.area === "row" || e.area === "column")
-                    e.cellElement.addClass("another-custom-class");
+        export default function App() {
+            const customizeCells = useCallback((e) {
+                if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
+                    e.cellElement.addClass('your-custom-class');
+                if(e.area === 'row' || e.area === 'column')
+                    e.cellElement.addClass('another-custom-class');
             }, []);
-            
             return (
                 <PivotGrid ...
                     onCellPrepared={customizeCells}
                 />
             );
         }
-        export default App;
 
-    ---
-
-    
+    --- 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"

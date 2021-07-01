@@ -22,11 +22,6 @@ The selected series point changes its style. Points with the same argument do it
 * **none**   
 The series does not react in any way.
 
-#include common-ref-enum with {
-    enum: "`ChartSeriesSelectionMode`",
-    values: "`OnlyPoint`, `AllSeriesPoints`, `AllArgumentPoints`, and `None`"
-} Note that although this enum accepts more values, only the listed ones can be applied to a candlestick series.
-
 #####See Also#####
 - [pointSelectionMode](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') - specifies whether only one or several series points can stay selected.
 - **series**.[selectionStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CandleStickSeries/selectionStyle '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/CandleStickSeries/selectionStyle/') - specifies the appearance of series points in the selected state.

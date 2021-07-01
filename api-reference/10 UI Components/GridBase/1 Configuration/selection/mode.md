@@ -16,8 +16,3 @@ Only one row can be in the selected state at a time.
 
 - **Multiple**          
 Several rows can be in the selected state at a time.
-
-#include common-ref-enum with {
-    enum: "`SelectionMode`",
-    values: "`None`, `Single`, and `Multiple`"
-}

@@ -34,7 +34,6 @@ The task's progress.
     function getTaskProgressTooltipContentTemplate(item, container) {
         var $customTooltipProgress = $(document.createElement("div"))
             .addClass("custom-tooltip");
-​
         $(document.createElement("div"))
             .addClass("custom-tooltip-progress")
             .text("Progress: " + item.progress + "%")
@@ -147,7 +146,7 @@ The task's progress.
 
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()

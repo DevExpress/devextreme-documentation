@@ -118,13 +118,13 @@ The [allowTaskResourceUpdating](/Documentation/ApiReference/UI_Components/dxGant
 
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onResourceManagerDialogShowing("gantt_resourceManagerDialogShowing_handler")
+        // ...
     )
     <script>
         function gantt_resourceManagerDialogShowing_handler(e) {

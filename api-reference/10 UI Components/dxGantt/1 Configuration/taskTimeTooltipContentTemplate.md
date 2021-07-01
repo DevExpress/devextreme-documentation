@@ -37,7 +37,6 @@ The task's start date.
     function getTaskTimeTooltipContentTemplate(item, container) {
         var $customTooltipTime = $(document.createElement("div"))
             .addClass("custom-tooltip");
-​
         $(document.createElement("div"))
             .addClass("custom-tooltip-time")
             .text("End Date: " + item.end)
@@ -150,7 +149,7 @@ The task's start date.
 
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()

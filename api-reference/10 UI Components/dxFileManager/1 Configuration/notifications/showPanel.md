@@ -110,4 +110,14 @@ The **Refresh** button does not display notification marks if the **showPanel** 
         // ...
     )
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .Notifications(nt => nt
+            .ShowPanel(false)
+        )
+        // ...
+    )
+
 ---

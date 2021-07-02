@@ -8,8 +8,13 @@ default: false, true (iOS, Material)
 Specifies whether horizontal lines that separate one row from another are visible.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/",
+    name: "DataGrid"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/RowEditing/",
+    name: "TreeList"
 }
 
 #####See Also#####

@@ -1,10 +1,10 @@
 Use the following properties to adapt the TagBox text field to multiple selected tags:        
 
 - [multiline](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#multiline)     
-Specifies whether to display tags on multiple lines when the tags overflow the component's width.
+Set this property to **true** to display tags on multiple lines when the tags overflow the component's width.
 
 - [maxDisplayedTags](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags)      
-Specifies the limit after which the TagBox replaces selected tags with a single multi-tag.
+Use this property to specifiy the limit after which the TagBox replaces selected tags with a single multi-tag.
 
 - [showMultiTagOnly](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly)      
 Specifies whether to display the multi-tag without ordinary tags. This property is not demonstrated in this tutorial. Refer to the following demo to see it in action: [Tag Count Limitation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/TagCountLimitation/).

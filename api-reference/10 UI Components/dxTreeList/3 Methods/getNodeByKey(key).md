@@ -13,7 +13,7 @@ The node's key.
 
 ---
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/LocalReordering/"
 }
 
 #####See Also#####

@@ -108,4 +108,4 @@ Use the code below to create an empty {WidgetName}:
 
 ---
 
-Run the code and ensure the {WidgetName} is displayed and its drop-down list says "No data to display." In the next step, we will add a data source.
+Run the code and ensure the {WidgetName} is displayed, and its drop-down list says "No data to display." In the next step, we will add a data source.

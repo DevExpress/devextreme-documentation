@@ -1,4 +1,4 @@
-TagBox is an editor that allows users to select multiple items from a drop-down list.
+The TagBox is an editor that allows users to select multiple items from a drop-down list.
 
 This tutorial explains how to add a TagBox to a page, populate the drop-down list, allow users to search through it, and log the selected item data to the console.
 

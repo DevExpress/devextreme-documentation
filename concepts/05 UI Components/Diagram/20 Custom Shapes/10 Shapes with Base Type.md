@@ -12,24 +12,22 @@ Use the [baseType](/api-reference/10%20UI%20Components/dxDiagram/1%20Configurati
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        var diagram = $("#diagram").dxDiagram({
-            customShapes: employees.map(
-                function(emp) {
-                    return {
-                        category: "employees",
-                        type: "employee" + emp.ID,
-                        baseType: "rectangle",
-                        defaultText: emp.Full_Name,
-                        allowEditText: false
-                    }
+    var diagram = $("#diagram").dxDiagram({
+        customShapes: employees.map(
+            function(emp) {
+                return {
+                    category: "employees",
+                    type: "employee" + emp.ID,
+                    baseType: "rectangle",
+                    defaultText: emp.Full_Name,
+                    allowEditText: false
                 }
-            ),
-            toolbox: {
-                groups: [{ category: "employees", title: "Employees", displayMode: "texts" }]
             }
-        }).dxDiagram("instance");
-    });
+        ),
+        toolbox: {
+            groups: [{ category: "employees", title: "Employees", displayMode: "texts" }]
+        }
+    }).dxDiagram("instance");
 
 ##### Angular
 
@@ -101,34 +99,61 @@ Use the [baseType](/api-reference/10%20UI%20Components/dxDiagram/1%20Configurati
         }
     }
 
-##### ASP.NET Core Controls
+---
 
-    <!-- tab: Diagram.cshtml -->
-    @(Html.DevExtreme().Diagram()
-            .ID("diagram")
-            .CustomShapes(cs => {
-                foreach(var employee in Model) {
-                    cs.Add().Category("employees").Type("employee" + employee.ID).BaseType("rectangle").DefaultText(employee.FullName).AllowEditText(false);
-                }
-            })
-            .Toolbox(tb => tb
-                .Groups(g => g.Add().Category("employees").Title("Employees").DisplayMode(DiagramToolboxDisplayMode.Texts))
-            )
-    )
-
-##### ASP.NET MVC Controls
-
-    <!-- tab: Diagram.cshtml -->
-    @(Html.DevExtreme().Diagram()
-            .ID("diagram")
-            .CustomShapes(cs => {
-                foreach(var employee in Model) {
-                    cs.Add().Category("employees").Type("employee" + employee.ID).BaseType("rectangle").DefaultText(employee.FullName).AllowEditText(false);
-                }
-            })
-            .Toolbox(tb => tb
-                .Groups(g => g.Add().Category("employees").Title("Employees").DisplayMode(DiagramToolboxDisplayMode.Texts))
-            )
-    )
+You can use the [style](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#style) and [textStyle](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#textStyle) properties to specify the default style settings for a shape and a shape’s text.
 
 ---
+##### jQuery
+
+    <!-- tab: index.js -->
+    var diagram = $("#diagram").dxDiagram({
+        defaultItemProperties: {
+            style: "fill: yellow;",
+            textStyle: "font-size: 14pt;"
+        },
+        // ...
+    }).dxDiagram("instance");
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram">
+        <dxo-default-item-properties
+            style="fill: yellow;"
+            textStyle="font-size: 14pt;">
+        </dxo-default-item-properties>
+        <!-- ... -->
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxDefaultItemProperties
+            :style="'fill: yellow;'"
+            :textStyle="'font-size: 14pt;'"
+        />
+        <!-- ... -->
+    </DxDiagram>
+##### React
+
+    <!-- tab: App.js -->
+    class App extends React.Component {
+    // ...
+        render() {
+            return (
+                <Diagram id="diagram" ref={this.diagramRef}>
+                    <DefaultItemProperties style="fill: yellow;" textStyle="font-size: 14pt;"/>
+                    <!-- ... -->
+                </Diagram>
+            );
+        }
+    }
+
+---
+
+![Diagram custom shape styles](/images/diagram/custom-shape-with-base-type.png)

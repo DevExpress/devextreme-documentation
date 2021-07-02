@@ -1,4 +1,4 @@
-The {WidgetName} uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/) component as the drop-down menu. To customize the menu, specify [Popup properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) in the [dropDownOptions](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#dropDownOptions) object. For example, the following code sets the height of {WidgetName}'s drop-down menu to ${{value}} pixels:
+The {WidgetName} uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/) component as a drop-down menu. To customize the menu, specify [Popup properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) in the [dropDownOptions](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#dropDownOptions) object. For example, the following code sets the height of {WidgetName}'s drop-down menu to ${{value}} pixels:
 
 ---
 ##### jQuery
@@ -71,4 +71,3 @@ The {WidgetName} uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getti
     export default App;
 
 ---
-

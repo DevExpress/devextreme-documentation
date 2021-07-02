@@ -1,6 +1,6 @@
 #include tutorials-editors-group-data
 
-There are additional search properties demonstrated in the following demo:
+This demo shows additional search properties:
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/GroupedItems/"

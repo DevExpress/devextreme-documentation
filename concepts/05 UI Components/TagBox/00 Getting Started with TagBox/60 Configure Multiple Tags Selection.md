@@ -68,4 +68,4 @@ Drop-down list values can display selection checkboxes. To enable this feature, 
 ---
 
 
-Use the [applyValueMode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#applyValueMode) property to specify whether to apply values instantly or when users click the *"OK"* button. You can also enable the [hideSelectedItems](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#hideSelectedItems) property if you want already selected items to be removed from the drop-down list. These properties are not demonstrated in this tutorial.
+Use the [applyValueMode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#applyValueMode) property to specify whether to apply values instantly or when users click the *"OK"* button. You can also enable the [hideSelectedItems](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#hideSelectedItems) property if you want to remove already selected items from the drop-down list. These properties are not demonstrated in this tutorial.

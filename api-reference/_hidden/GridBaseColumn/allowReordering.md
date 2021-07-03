@@ -8,3 +8,6 @@ default: true
 Specifies whether this column can be used in column reordering at runtime. Applies only if [allowColumnReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '{basewidgetpath}/Configuration/#allowColumnReordering') is **true**.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Reordering/"
+}

@@ -8,4 +8,6 @@ default: undefined
 A container for custom data.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DnDBetweenGrids/"
+}

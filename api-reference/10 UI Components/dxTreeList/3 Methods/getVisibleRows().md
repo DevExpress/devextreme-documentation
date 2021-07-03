@@ -9,6 +9,10 @@ Gets currently rendered rows.
 Currently rendered rows.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/LocalReordering/"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [Row Structure](/api-reference/10%20UI%20Components/dxTreeList/6%20Row '/Documentation/ApiReference/UI_Components/dxTreeList/Row/')

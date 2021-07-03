@@ -10,5 +10,5 @@ Specifies whether the Enter key switches the cell or row to the edit state or mo
 
 ---
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomizeKeyboardNavigation/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/CustomizeKeyboardNavigation/"
 }

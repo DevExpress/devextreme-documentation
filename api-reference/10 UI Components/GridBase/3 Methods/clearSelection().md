@@ -6,6 +6,10 @@ id: GridBase.clearSelection()
 Clears selection of all rows on all pages.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [deselectAll()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/deselectAll().md '{basewidgetpath}/Methods/#deselectAll')

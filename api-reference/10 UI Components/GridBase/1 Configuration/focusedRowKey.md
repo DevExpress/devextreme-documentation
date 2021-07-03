@@ -14,7 +14,7 @@ The focused row has a key and [index](/api-reference/10%20UI%20Components/GridBa
 In the DataGrid, group rows can also be focused. See the [Group Index and Key](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API/05%20Group%20Index%20and%20Key.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API/Group_Index_and_Key') topic for more information on how group keys are formed.
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/FocusedRow/"
 }
 
 #####See Also#####

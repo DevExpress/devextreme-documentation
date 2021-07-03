@@ -12,6 +12,10 @@ The row's index; *-1* if nothing found. Refer to [Column and Row Indexes](/conce
 The row's key.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [getKeyByRowIndex(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getKeyByRowIndex(rowIndex).md '{basewidgetpath}/Methods/#getKeyByRowIndexrowIndex')

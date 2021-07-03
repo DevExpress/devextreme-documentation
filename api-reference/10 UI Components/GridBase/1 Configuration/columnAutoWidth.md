@@ -16,6 +16,15 @@ If the content is wider, the **columnAutoWidth** property set to **true** causes
 
 When the **columnAutoWidth** property is set to **false**, all columns have identical width, which in turn depends on the width of the UI component.
 
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/",
+    name: "DataGrid"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Resizing/",
+    name: "TreeList"
+}
+
 #####See Also#####
 - [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '{basewidgetpath}/Configuration/#width')
 - [columnFixing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/')

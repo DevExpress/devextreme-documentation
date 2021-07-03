@@ -19,6 +19,10 @@ By default, this method call clears selection of previously selected rows. To ke
 
     <!--JavaScript-->widgetInstance.selectRows([5, 10, 12], true);
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [Initial and Runtime Selection](/concepts/05%20UI%20Components/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/{WidgetName}/Selection/#API/Initial_and_Runtime_Selection')

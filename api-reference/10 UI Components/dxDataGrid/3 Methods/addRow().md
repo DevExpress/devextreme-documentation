@@ -9,6 +9,10 @@ Adds an empty data row and switches it to the editing state.
 A Promise that is resolved after a new empty row is added.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
+}
+
 Use this method if you want to add an empty row. If you need to add a row with data, do the following:    
 
 - For a remote data source, [insert](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#insertvalues') a new row with data into it and [reload](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') the data source:

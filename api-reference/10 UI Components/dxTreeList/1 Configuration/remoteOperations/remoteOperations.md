@@ -53,6 +53,10 @@ When operations are performed on the server side, the TreeList does not support:
     name: "Web API Service",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/WebAPIService/"
 }
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/LoadDataOnDemand/",
+    name: "Load Data on Demand"
+}
 
 #####See Also#####
 - **Data Binding**: [Web API, PHP, MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/') | [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')

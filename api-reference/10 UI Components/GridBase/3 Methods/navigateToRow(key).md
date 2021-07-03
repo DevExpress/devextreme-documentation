@@ -18,6 +18,10 @@ This method performs the following actions:
 1. Expands groups in which the row is nested (if rows are grouped and the groups are collapsed).
 1. Scrolls the UI component to display the row (if the row is outside the viewport).
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+}
+
 The following requirements apply when you use this method: 
 
 - The UI component's [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '{basewidgetpath}/Configuration/#keyExpr') or the [store's](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') **key** property should be specified.

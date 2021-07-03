@@ -8,4 +8,6 @@ default: true
 Shows or hides row dragging icons.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/LocalReordering/"
+}

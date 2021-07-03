@@ -8,5 +8,9 @@ default: 'id'
 Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"
+}
+
 #####See Also#####
 - [Demo: Simple Array - Plain Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/)

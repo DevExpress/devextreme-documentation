@@ -13,8 +13,13 @@ The search panel allows searching for values in several columns at once. The UI 
 
 To make the search panel visible, set the **searchPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel/visible.md '{basewidgetpath}/Configuration/searchPanel/#visible') property to **true**.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/Filtering/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/",
+    name: "DataGrid"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/UsingSearchPanel/",
+    name: "TreeList"
 }
 
 #####See Also#####

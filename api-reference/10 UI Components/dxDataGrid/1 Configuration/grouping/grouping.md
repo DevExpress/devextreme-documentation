@@ -7,8 +7,13 @@ type: Object
 Configures grouping.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordGrouping/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordGrouping/",
+    name: "Record Grouping"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteGrouping/",
+    name: "Remote Grouping"
 }
 
 #####See Also#####

@@ -242,7 +242,7 @@ The **summaryItem** property accepts one of the following values.
 
     ---
 
-- A summary type. In this case, the grid will use the first item from the **groupItems** array whose [summaryType](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#summaryType') property matches the **summaryItem** property. For example, the following code sorts groups according to the values of the group summary item whose **column** property is *"Income"*.        
+- A summary type. In this case, the grid will use the first item from the **groupItems** array whose [summaryType](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#summaryType') property matches the **summaryItem** property. For example, the following code sorts groups according to the values of the group summary item whose **column** property is *"Tasks"*.        
 
     ---
     #####jQuery
@@ -388,6 +388,10 @@ The **summaryItem** property accepts one of the following values.
         }
 
     ---
+
+    #include common-demobutton with {
+        url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
+    }
         
 - The [name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name'), [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') or [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') of a column. In this case, the grid will use the first item from the **groupItems** array whose [column](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems/column.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#column') property matches the **summaryItem** property. For example, the following code declares two group summary items with identical values to the **column** property. However, groups will be sorted only according to the values of the group summary item whose **summaryType** property equals *"min"*, because this item is declared before the other one.        
 
@@ -522,4 +526,4 @@ The **summaryItem** property accepts one of the following values.
     ---
 
 #####See Also#####
--[Sort by Group Summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/20%20Group%20Summary/15%20Sort%20by%20Group%20Summary.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/#Sort_by_Group_Summary')
+- [Sort by Group Summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/20%20Group%20Summary/15%20Sort%20by%20Group%20Summary.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/#Sort_by_Group_Summary')

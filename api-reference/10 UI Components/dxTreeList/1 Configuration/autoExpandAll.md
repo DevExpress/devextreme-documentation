@@ -8,6 +8,9 @@ default: false
 Specifies whether all rows are expanded initially.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Paging/"
+}
 
 #####See Also#####
 - [expandedRowKeys](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys) 

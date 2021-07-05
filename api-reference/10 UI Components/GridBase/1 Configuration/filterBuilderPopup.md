@@ -10,6 +10,10 @@ Configures the popup in which the integrated [filter builder](/api-reference/10%
 ---
 See the [Popup configuration](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/') for properties that you can specify in this object.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
+}
+
 #include widgets-config-object-option-note with {
     optionName: "filterBuilderPopup"
 }

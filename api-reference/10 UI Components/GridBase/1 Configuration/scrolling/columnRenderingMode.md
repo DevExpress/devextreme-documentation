@@ -15,4 +15,8 @@ The following rendering modes are available in the UI component:
 Renders all columns at once.
 
 - *"virtual"*     
-Renders only those columns that get into the viewport.          
+Renders only those columns that get into the viewport.        
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/HorizontalVirtualScrolling/"
+}

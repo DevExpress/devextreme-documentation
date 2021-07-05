@@ -1,7 +1,3 @@
----
-##### merge
-
----
 State storing enables the UI component to save applied settings and restore them the next time the UI component is loaded. Assign **true** to the **stateStoring**.[enabled](/api-reference/10%20UI%20Widgets/GridBase/1%20Configuration/stateStoring/enabled.md '{basewidgetpath}/Configuration/stateStoring/#enabled') property to enable this functionality.
 
 State storing saves the following properties:

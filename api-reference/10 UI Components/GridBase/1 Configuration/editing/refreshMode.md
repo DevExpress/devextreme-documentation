@@ -46,13 +46,12 @@ The following table shows the operations that are performed after saving changes
     </ol>
 </div>
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/"
+}
+
 [note]
 
 When the **refreshMode** is *"reshape"* or *"repaint"*, the server should respond to the insert or update request by sending back the data item saved in the database. See the `DataGridWebApiController` tab in the [CRUD Operations demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/Mvc/Light) for an example of the server-side implementation. The `InsertOrder` and `UpdateOrder` actions illustrate this case.
 
 [/note]
-
-#include common-ref-enum with {
-    enum: "`GridEditRefreshMode`",
-    values: "`Full`, `Reshape`, and `Repaint`"
-}

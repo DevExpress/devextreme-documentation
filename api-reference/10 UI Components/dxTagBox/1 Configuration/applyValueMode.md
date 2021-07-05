@@ -16,8 +16,3 @@ The property accepts the following values.
 
 - **useButtons**  
  Applies values when a user clicks the "OK" button.
-
-#include common-ref-enum with {
-    enum: "`EditorApplyValueMode`",
-    values: "`Instantly` and `UseButtons`"
-}

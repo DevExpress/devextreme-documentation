@@ -12,8 +12,6 @@ The file that is being uploaded.
 
 ---
 
-##### jQuery
-
     <!-- tab: JavaScript -->
     var uploadControl = $("#file-uploader").dxFileUploader("instance");
 

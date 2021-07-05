@@ -103,4 +103,14 @@ Specifies whether to show the pop-up notification window.
         // ...
     )
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .Notifications(nt => nt
+            .ShowPopup(false)
+        )
+        // ...
+    )
+
 ---

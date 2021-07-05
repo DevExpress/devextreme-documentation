@@ -1,49 +1,24 @@
-Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageUrl.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageUrl') property to specify a background image for a shape.
-
-[note] Shape images should be in SVG format. 
+Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageUrl.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageUrl') property to specify the custom shape's background image in SVG format. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithIcons/"
 }
 
-![Diagram control custom shapes](/images/diagram/custom-shapes.png)
+    <!-- tab: roundedRectangle.svg -->
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 26">
+    <g><rect rx="5" ry="5" x="0.5" y="0.5" width="47" height="25" 
+        style="fill:#FFFFFF;stroke:#000000;stroke-width:1px;"/></g>
+    </svg>
 
 ---
-
-#####jQuery
+##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        var diagram = $("#diagram").dxDiagram({
-            customShapes: [{
-                category: "hardware",
-                type: "internet",
-                title: "Internet",
-                backgroundImageUrl: "images/shapes/internet.svg",
-                backgroundImageLeft: 0.15,
-                backgroundImageTop: 0,
-                backgroundImageWidth: 0.7,
-                backgroundImageHeight: 0.7,
-                defaultWidth: 0.75,
-                defaultHeight: 0.75,
-                defaultText: "Internet",
-                allowEditText: true,
-                textLeft: 0,
-                textTop: 0.7,
-                textWidth: 1,
-                textHeight: 0.3,
-                connectionPoints: [
-                    { x: 0.5, y: 0 },
-                    { x: 0.9, y: 0.5 },
-                    { x: 0.5, y: 1 },
-                    { x: 0.1, y: 0.5 }
-                ]
-            },
-            // ...
-        ],
-        toolbox: {
-            groups: [{ category: "hardware", title: "Hardware" }]
-        }
+    var diagram = $("#diagram").dxDiagram({
+        customShapes: [{
+            type: "Rounded Rectangle",
+            backgroundImageUrl: "images/shapes/roundedRectangle.svg"
+        }],
     }).dxDiagram("instance");
 
 ##### Angular
@@ -51,196 +26,388 @@ Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20C
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
         <dxi-custom-shape 
-            category="hardware"
-            type="internet"
-            title="Internet"
-            backgroundImageUrl="images/shapes/internet.svg"
-            [backgroundImageLeft]="0.15"
-            [backgroundImageTop]="0"
-            [backgroundImageWidth]="0.7"
-            [backgroundImageHeight]="0.7"
-            [defaultWidth]="0.75"
-            [defaultHeight]="0.75"
-            defaultText="Internet"
-            [allowEditText]="false"
-            [textLeft]="0"
-            [textTop]="0.7"
-            [textWidth]="1"
-            [textHeight]="0.3">
-            <dxi-connection-point [x]="0.5" [y]="0"></dxi-connection-point>
-            <dxi-connection-point [x]="0.9" [y]="0.5"></dxi-connection-point>
-            <dxi-connection-point [x]="0.5" [y]="1"></dxi-connection-point>
-            <dxi-connection-point [x]="0.1" [y]="0.5"></dxi-connection-point>
+            type="Rounded Rectangle"
+            backgroundImageUrl="images/shapes/roundedRectangle.svg"
         </dxi-custom-shape>
-        // ...
-        <dxo-toolbox>
-            <dxi-group category="hardware" title="Hardware"></dxi-group>
-        </dxo-toolbox>
     </dx-diagram>
 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template>
-        <DxDiagram
-            id="diagram"
-            ref="diagram"
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxCustomShape
+            :type="'Rounded Rectangle'"
+            :background-image-url="'images/shapes/roundedRectangle.svg'"
         >
-            <DxCustomShape
-                :category="'hardware'"
-                :type="'internet'"
-                :title="'Internet'"
-                :background-image-url="'images/shapes/internet.svg'"
-                :background-image-left="0.15"
-                :background-image-top="0"
-                :background-image-width="0.7"
-                :background-image-height="0.7"
-                :default-width="0.75"
-                :default-height="0.75"
-                :default-text="'Internet'"
-                :allow-edit-text="true"
-                :text-left="0"
-                :text-top="0.7"
-                :text-width="1"
-                :text-height="0.3"
-            >
-                <DxConnectionPoint
-                        :x="0.5"
-                        :y="0"
-                />
-                <DxConnectionPoint
-                        :x="0.9"
-                        :y="0.5"
-                />
-                <DxConnectionPoint
-                        :x="0.5"
-                        :y="1"
-                />
-                <DxConnectionPoint
-                        :x="0.1"
-                        :y="0.5"
-                />
-            </DxCustomShape>
+        </DxCustomShape>
+    </DxDiagram>
+
+##### React
+
+    <!-- tab: App.js -->
+    <Diagram id="diagram" ref={this.diagramRef}>
+        <CustomShape
+            type="Rounded Rectangle"
+            backgroundImageUrl="images/shapes/roundedRectangle.svg">
+        </CustomShape>
+    </Diagram>
+
+---
+
+The image below shows the result:
+
+![Custom Shape Background Image](/images/diagram/custom-shape-background-image.png)
+
+The following properties allow you to customize the image size and position:
+
+* [backgroundImageWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageWidth)
+* [backgroundImageHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageHeight)
+* [backgroundImageTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageTop)
+* [backgroundImageLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageLeft)
+
+**Shape Size**
+
+Use the following properties to specify the shape size settings:
+
+* [defaultHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultHeight)
+* [defaultWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultWidth)
+* [allowResize](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowResize)
+* [minHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#minHeight)
+* [maxHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxHeight)
+* [minWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#minWidth)
+* [maxWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxWidth)
+* [keepRatioOnAutoSize](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#keepRatioOnAutoSize)
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    var diagram = $("#diagram").dxDiagram({
+        customShapes: [{
             // ...
-            <DxToolbox :visible="true">
-                <DxGroup
-                        :category="'hardware'"
-                        :title="'Hardware'"
-                />
-            </DxToolbox>
-        </DxDiagram>
-    </template>
+            defaultWidth: 2,
+            defaultHeight: 1,
+        }],
+    }).dxDiagram("instance");
+
+##### Angular 
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram">
+        <dxi-custom-shape 
+            <!-- ... -->
+            [defaultWidth]="2"
+            [defaultHeight]="1"
+        </dxi-custom-shape>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxCustomShape
+            <!-- ... -->
+            :default-width="2"
+            :default-height="1"
+        >
+        </DxCustomShape>
+    </DxDiagram>
+
+##### React
+
+    <!-- tab: App.js -->
+    <Diagram id="diagram" ref={this.diagramRef}>
+        <CustomShape
+            // ...
+            defaultWidth={2}
+            defaultHeight={1}>
+        </CustomShape>
+    </Diagram>
+
+---
+
+The image below shows the result:
+
+![Custom Shape Size](/images/diagram/custom-shape-size.png)
+
+**Shape Inner Image**
+
+A custom shape can display an inner image. Use the [defaultImageUrl](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultImageUrl) property to specify the image URL.
+
+The following properties allow you to specify the image size and position:
+
+* [imageHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageHeight)
+* [imageTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageTop)
+* [imageLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageLeft)
+* [imageWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageWidth)
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    var diagram = $("#diagram").dxDiagram({
+        customShapes: [{
+            // ...
+            defaultImageUrl: "images/photo.png",
+            imageHeight: 0.8,
+            imageWidth: 0.3,
+            imageTop: 0.1,
+            imageLeft: 0.1,
+        }],
+    }).dxDiagram("instance");
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram">
+        <dxi-custom-shape 
+            <!-- ... -->
+            defaultImageUrl="images/photo.png"
+            [imageHeight]="0.8"
+            [imageWidth]="0.3"
+            [imageTop]="0.1"
+            [imageLeft]="0.1"
+        </dxi-custom-shape>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxCustomShape
+            <!-- ... -->
+            :default-image-url="'images/photo.png'"
+            :image-height="0.8"
+            :image-width="0.3"
+            :image-top="0.1"
+            :image-left="0.1"
+        >
+        </DxCustomShape>
+    </DxDiagram>
+
+##### React
+
+    <!-- tab: App.js -->
+    <Diagram id="diagram" ref={this.diagramRef}>
+        <CustomShape
+            // ...
+            defaultImageUrl="images/photo.png"
+            imageHeight={0.8}
+            imageWidth={0.3}
+            imageTop={0.1}
+            imageLeft={0.1}>
+        </CustomShape>
+    </Diagram>
+
+---
+
+The image below shows the result:
+
+![Custom Shape Inner Image](/images/diagram/custom-shape-inner-image.png)
+
+If the [allowEditImage](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditImage) property is set to `true`, the Diagram context menu displays commands that allow users to change the image.
+
+
+![Custom Shape Image Context Menu](/images/diagram/custom-shape-inner-image-context-menu.png)
+
+**Shape Text**
+
+The [defaultText](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultText) property specifies the shape text. Users can change the text if the [allowEditText](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditText) property is set to `true`.
+
+Use the following properties to specify the size and position of the text container:
+
+* [textHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textHeight)
+* [textWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textWidth)
+* [textLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textLeft)
+* [textTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textTop)
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    var diagram = $("#diagram").dxDiagram({
+        customShapes: [{
+            // ...
+            defaultText: "Employee",
+            textLeft: 0.4,
+            textWidth: 0.6
+        }],
+    }).dxDiagram("instance");
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram">
+        <dxi-custom-shape 
+            <!-- ... -->
+            defaultText="Employee"
+            [textLeft]="0.4"
+            [textWidth]="0.6">
+        </dxi-custom-shape>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxCustomShape
+            <!-- ... -->
+            :default-text="'Employee'"
+            :text-left="0.4"
+            :text-width="0.6"
+        >
+        </DxCustomShape>
+    </DxDiagram>
+
+##### React
+
+    <!-- tab: App.js -->
+    <Diagram id="diagram" ref={this.diagramRef}>
+        <CustomShape
+            // ...
+            defaultText="Employee"
+            textLeft={0.4}
+            textWidth={0.6}>
+        </CustomShape>
+    </Diagram>
+
+---
+
+The image below shows the result:
+
+![Custom Shape Text](/images/diagram/custom-shape-text.png)
+
+You can use the [textStyle](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#textStyle) property to specify the default style settings for a shape's text.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    var diagram = $("#diagram").dxDiagram({
+        defaultItemProperties: {
+            textStyle: "font-size: 14pt;"
+        },
+        // ...
+    }).dxDiagram("instance");
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram">
+        <dxo-default-item-properties
+            textStyle="font-size: 14pt;">
+        </dxo-default-item-properties>
+        <!-- ... -->
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxDefaultItemProperties
+            :textStyle="'font-size: 14pt;'"
+        />
+        <!-- ... -->
+    </DxDiagram>
 ##### React
 
     <!-- tab: App.js -->
     class App extends React.Component {
-        // ...
+    // ...
         render() {
             return (
                 <Diagram id="diagram" ref={this.diagramRef}>
-                        <CustomShape
-                            category="hardware"
-                            type="internet"
-                            title="Internet"
-                            backgroundImageUrl="images/shapes/internet.svg"
-                            backgroundImageLeft={0.15}
-                            backgroundImageTop={0}
-                            backgroundImageWidth={0.7}
-                            backgroundImageHeight={0.7}
-                            defaultWidth={0.75}
-                            defaultHeight={0.75}
-                            defaultText="Internet"
-                            allowEditText={true}
-                            textLeft={0}
-                            textTop={0.7}
-                            textWidth={1}
-                            textHeight={0.3}>
-                            <ConnectionPoint x={0.5} y={0} />
-                            <ConnectionPoint x={0.9} y={0.5} />
-                            <ConnectionPoint x={0.5} y={1} />
-                            <ConnectionPoint x={0.1} y={0.5} />
-                        </CustomShape>
-                        // ...
-                        <Toolbox>
-                            <Group category="hardware" title="Hardware" />
-                        </Toolbox>
+                    <DefaultItemProperties textStyle="font-size: 14pt;"/>
+                    <!-- ... -->
                 </Diagram>
             );
         }
     }
 
-##### ASP.NET Core Controls
+---
 
-    <!-- tab: Diagram.cshtml -->
-@(Html.DevExtreme().Diagram()
-        .ID("diagram")
-        .CustomShapes(cs => {
-            cs.Add()
-                .Category("hardware")
-                .Type("internet")
-                .Title("Internet")
-                .BackgroundImageUrl(Url.Content("/images/shapes/internet.svg"))
-                .BackgroundImageLeft(0.15)
-                .BackgroundImageTop(0)
-                .BackgroundImageWidth(0.7)
-                .BackgroundImageHeight(0.7)
-                .DefaultWidth(0.75)
-                .DefaultHeight(0.75)
-                .DefaultText("Internet")
-                .AllowEditText(true)
-                .TextLeft(0)
-                .TextTop(0.7)
-                .TextWidth(1)
-                .TextHeight(0.3)
-                .ConnectionPoints(cp => {
-                    cp.Add().X(0.5).Y(0);
-                    cp.Add().X(0.9).Y(0.5);
-                    cp.Add().X(0.5).Y(1);
-                    cp.Add().X(0.1).Y(0.5);
-                });
-                // ...
-        })
-        .Toolbox(tb => tb
-            .Groups(g => g.Add().Category("hardware").Title("Hardware"))
-        )
-)
+The image below shows the result:
 
+![Custom Shape Text Size](/images/diagram/custom-shape-text-size.png)
 
-##### ASP.NET MVC Controls
+**Connection Points**
 
-    <!-- tab: Diagram.cshtml -->
-    @(Html.DevExtreme().Diagram()
-        .ID("diagram")
-        .CustomShapes(cs => {
-            cs.Add()
-                .Category("hardware")
-                .Type("internet")
-                .Title("Internet")
-                .BackgroundImageUrl(Url.Content("~/Content/Images/shapes/internet.svg"))
-                .BackgroundImageLeft(0.15)
-                .BackgroundImageTop(0)
-                .BackgroundImageWidth(0.7)
-                .BackgroundImageHeight(0.7)
-                .DefaultWidth(0.75)
-                .DefaultHeight(0.75)
-                .DefaultText("Internet")
-                .AllowEditText(true)
-                .TextLeft(0)
-                .TextTop(0.7)
-                .TextWidth(1)
-                .TextHeight(0.3)
-                .ConnectionPoints(cp => {
-                    cp.Add().X(0.5).Y(0);
-                    cp.Add().X(0.9).Y(0.5);
-                    cp.Add().X(0.5).Y(1);
-                    cp.Add().X(0.1).Y(0.5);
-
-                });
-                // ...
-        })
-        .Toolbox(tb => tb
-            .Groups(g => g.Add().Category("hardware").Title("Hardware"))
-        )
-    )
+Use the [connectionPoints](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#connectionPoints) property to specify a collection of custom connection points for a shape. If the property is not specified, the shape displays the default connection points.
 
 ---
+##### jQuery
+
+    <!-- tab: index.js -->
+    var diagram = $("#diagram").dxDiagram({
+        customShapes: [{
+            // ...
+            connectionPoints: [
+                    { x: 0.5, y: 0 },
+                    { x: 0.5, y: 1 },
+            ]
+        }],
+    }).dxDiagram("instance");
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram">
+        <dxi-custom-shape 
+            <!-- ... -->
+            <dxi-connection-point [x]="0.5" [y]="0"></dxi-connection-point>
+            <dxi-connection-point [x]="0.5" [y]="1"></dxi-connection-point>
+        </dxi-custom-shape>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxCustomShape
+            <!-- ... -->
+            <DxConnectionPoint
+                :x="0.5"
+                :y="0"
+            />
+            <DxConnectionPoint
+                :x="0.5"
+                :y="1"
+            />
+        >
+        </DxCustomShape>
+    </DxDiagram>
+
+##### React
+
+    <!-- tab: App.js -->
+    <Diagram id="diagram" ref={this.diagramRef}>
+        <CustomShape
+            // ...
+            <ConnectionPoint x={0.5} y={0} />
+            <ConnectionPoint x={0.5} y={1} />
+        </CustomShape>
+    </Diagram>
+
+---
+
+The image below shows the result:
+
+![Custom Shape Connection Points](/images/diagram/custom-shape-connection-points.png)

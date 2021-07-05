@@ -126,13 +126,13 @@ The values of the deleted task.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onTaskDeleted("gantt_taskDeleted_handler")
+        // ...
     )
     <script>
         function gantt_taskDeleted_handler(e) {

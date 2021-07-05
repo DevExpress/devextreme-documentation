@@ -165,8 +165,3 @@ For date columns, set this property to one of the accepted string values above. 
     }
 
 ---
-
-#include common-ref-enum with {
-    enum: "`HeaderFilterGroupInterval`",
-    values: "`Year`, `Quarter`, `Month`, `Day`, `Hour`, `Minute`, and `Second`"
-}

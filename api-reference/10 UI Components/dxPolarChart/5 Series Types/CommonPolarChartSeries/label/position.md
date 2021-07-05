@@ -12,7 +12,4 @@ Specifies a label position in bar-like series.
 dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries
 
 ---
-#include common-ref-enum with {
-    enum: "`RelativePosition`",
-    values: "`Inside` and `Outside`"
-}
+<!-- Description goes here -->

@@ -9,7 +9,4 @@ default: 'center'
 Specifies a location for the item on the toolbar.
 
 ---
-#include common-ref-enum with {
-    enum: "`ToolbarItemLocation`",
-    values: "`Before`, `After`, and `Center`"
-}
+<!-- Description goes here -->

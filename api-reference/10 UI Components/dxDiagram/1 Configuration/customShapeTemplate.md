@@ -23,21 +23,17 @@ The template content must be presented as SVG elements.
 
 Use the [template](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
 
-[note]
+Set a custom shape's [allowEditText](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditText) option to `false` to disable shape text editing. Otherwise, users can add shape text that may overlap with template content.
 
-If the [textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/textExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr') option is specified, template content may overlap with text from the data source. 
-
-Since the [textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/textExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr') option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent his behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
-
-[/note]
+If the[textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/textExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr') option is specified, template content may overlap with text from the data source. Since the [textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/textExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#textExpr') option has the default value `'text'`, the widget will obtain node texts from the data source’s 'text' field. To prevent this behavior, set the option to an empty string: `nodes: { textExpr: "", ...`.
 
 #include common-demobutton with {
-    name: "Templates",
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/",
+    name: "Templates"
 }
 #include common-demobutton with {
-    name: "Templates with Editing",
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/",
+    name: "Templates with Editing"
 }
 
 #####See Also#####

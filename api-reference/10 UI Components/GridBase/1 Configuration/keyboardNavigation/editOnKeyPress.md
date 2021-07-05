@@ -11,5 +11,5 @@ Specifies whether users can enter a new cell value on a key press. Applies if **
 Users can only enter a new value when they press a key on the numeric or alphanumeric keypad.
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomizeKeyboardNavigation/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/CustomizeKeyboardNavigation/"
 }

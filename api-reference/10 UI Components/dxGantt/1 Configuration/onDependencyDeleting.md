@@ -133,13 +133,13 @@ The values of the deleted dependency.
     }
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET Core Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        // ...
         .onDependencyDeleting("gantt_dependencyDeleting_handler")
+        // ...
     )
     <script>
         function gantt_dependencyDeleting_handler(e) {

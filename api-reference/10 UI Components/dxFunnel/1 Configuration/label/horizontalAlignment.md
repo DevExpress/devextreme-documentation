@@ -9,7 +9,4 @@ default: 'right'
 Specifies labels' position in relation to the funnel items.
 
 ---
-#include common-ref-enum with {
-    enum: "`HorizontalEdge`",
-    values: "`Left` and `Right`"
-}
+<!-- Description goes here -->

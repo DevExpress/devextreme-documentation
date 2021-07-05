@@ -17,8 +17,13 @@ Each cell in the filter row contains a magnifying glass icon, pausing on which o
 
 To make the filter row visible, assign **true** to the **filterRow**.[visible](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow/visible.md '{basewidgetpath}/Configuration/filterRow/#visible') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/Filtering/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/",
+    name: "DataGrid"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/UsingFilterRow/",
+    name: "TreeList"
 }
 
 #####See Also#####

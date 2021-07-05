@@ -16,8 +16,3 @@ Specifies the page orientation.
 - Page settings are stored in a diagram model. The **pageOrientation** property is not in effect if the model is read-only (the [readOnly](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#readOnly')  property is set to **true**).
 
 [/note]
-
-#include common-ref-enum with {
-    enum: "`DiagramPageOrientation`",
-    values: "`Portrait`, `Landscape`"
-}

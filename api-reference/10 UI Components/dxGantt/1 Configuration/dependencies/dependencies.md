@@ -285,4 +285,50 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
     // ...
     ];
 
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Gantt.Task>()
+        .Dependencies(d => d
+            .DataSource(ds => ds.Array().Data(SampleData.GanttDependencies).Key("ID"))
+            .KeyExpr("ID")
+            .PredecessorIdExpr("PredecessorId")
+            .SuccessorIdExpr("SuccessorId")
+            .TypeExpr("Type")
+        )        
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<Dependency> GanttDependencies = new[] {
+            new Dependency { ID = 1, PredecessorId = 3, SuccessorId = 4, Type = 0 },
+            new Dependency { ID = 2, PredecessorId = 4, SuccessorId = 5, Type = 0 },
+            // ...
+        }
+        // ...
+    }
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt<Task>()
+        .Dependencies(d => d
+            .DataSource(ds => ds.Array().Data(SampleData.GanttDependencies).Key("ID"))
+            .KeyExpr("ID")
+            .PredecessorIdExpr("PredecessorId")
+            .SuccessorIdExpr("SuccessorId")
+            .TypeExpr("Type")
+        )        
+        // ...
+    )
+    <!-- C# -->
+    public partial class SampleData {
+        public static readonly IEnumerable<Dependency> GanttDependencies = new[] {
+            new Dependency { ID = 1, PredecessorId = 3, SuccessorId = 4, Type = 0 },
+            new Dependency { ID = 2, PredecessorId = 4, SuccessorId = 5, Type = 0 },
+            // ...
+        }
+        // ...
+    }
+
 ---

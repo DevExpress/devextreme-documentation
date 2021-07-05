@@ -186,3 +186,8 @@ In the following code, two items are defined on the toolbar: one is plain text, 
     export default App;
 
 ---
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/",
+    name: "Popup"
+}

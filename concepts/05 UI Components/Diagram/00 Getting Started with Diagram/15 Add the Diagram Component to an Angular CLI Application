@@ -4,7 +4,7 @@ This tutorial adds the Diagram component to an Angular CLI Application. Refer to
 
     `npm install devextreme@21.1.4 devextreme-angular@21.1.4 --save --save-exact`
 
-1. Add global style references to the Diagram and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below) to the `angular.json` file:
+1. Open the `angular.json` file and reference the Diagram and a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below):
 
         <!-- tab: angular.json -->
         "styles": [
@@ -13,7 +13,7 @@ This tutorial adds the Diagram component to an Angular CLI Application. Refer to
           "node_modules/devextreme/dist/css/dx.light.css"
         ]
 
-1. Go to the `NgModule` in which you are going to use DevExtreme UI components and import the Diagram module. 
+1. Go to the `NgModule` and import the Diagram module. 
 
         <!-- tab: app.module.ts -->
         // Imports the Diagram component
@@ -27,7 +27,7 @@ This tutorial adds the Diagram component to an Angular CLI Application. Refer to
             ] 
         })
 
-Now you can use the Diagram UI in your application:
+Now you can use the Diagram component in your application:
 
         <!-- tab: app.component.html -->
         <dx-diagram></dx-diagram>

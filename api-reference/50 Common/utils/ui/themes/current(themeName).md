@@ -11,8 +11,8 @@ The theme's name.
 ---
 The theme name passed as a parameter should be the value of the **data-theme** attribute used within the **rel="dx-theme"** links to the theme. For instance, if you have links to two of your themes...
 
-    <!--HTML--><link rel="dx-theme" data-theme="mytheme-dark" href="css/mytheme-dark.css" data-active="true">
-    <link rel="dx-theme" data-theme="mytheme-light" href="css/mytheme-light.css" data-active="false">
+    <!--HTML--><link rel="dx-theme" data-theme="generic.dark" href="css/mytheme-dark.css" data-active="true">
+    <link rel="dx-theme" data-theme="generic.light" href="css/mytheme-light.css" data-active="false">
 
 ... you can switch between them as shown in the code below. Note that you should specify a callback function that repaints all UI components after the theme has been loaded using the [ready(callback)](/api-reference/50%20Common/utils/ui/themes/ready(callback).md '/Documentation/ApiReference/Common/utils/ui/themes/#readycallback') method.
 
@@ -23,8 +23,8 @@ The theme name passed as a parameter should be the value of the **data-theme** a
         $("#dataGridContainer").dxDataGrid("repaint");
         // Call other UI components' repaint() method here
     });
-    DevExpress.ui.themes.current('mytheme-light');
-    // DevExpress.ui.themes.current('mytheme-dark');
+    DevExpress.ui.themes.current('generic.light');
+    // DevExpress.ui.themes.current('generic.dark');
 
 ##### Angular
 
@@ -53,8 +53,8 @@ The theme name passed as a parameter should be the value of the **data-theme** a
                 this.dataGrid.instance.repaint();
                 this.button.instance.repaint();
             });
-            themes.current('mytheme-light');
-            // themes.current('mytheme-dark');
+            themes.current('generic.light');
+            // themes.current('generic.dark');
         }
     }
 
@@ -104,8 +104,8 @@ The theme name passed as a parameter should be the value of the **data-theme** a
                     this.dataGrid.repaint();
                     this.button.repaint();
                 });
-                themes.current('mytheme-light');
-                // themes.current('mytheme-dark');
+                themes.current('generic.light');
+                // themes.current('generic.dark');
             }
         }
     }
@@ -128,8 +128,8 @@ The theme name passed as a parameter should be the value of the **data-theme** a
                 dataGrid.current.instance.repaint();
                 button.current.instance.repaint();
             });
-            themes.current('mytheme-light');
-            // themes.current('mytheme-dark');
+            themes.current('generic.light');
+            // themes.current('generic.dark');
         }, []);
 
         return (

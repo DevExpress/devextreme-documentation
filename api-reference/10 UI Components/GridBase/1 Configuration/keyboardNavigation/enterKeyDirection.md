@@ -10,5 +10,5 @@ Specifies the direction in which to move focus when a user presses Enter. Applie
 
 ---
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomizeKeyboardNavigation/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/CustomizeKeyboardNavigation/"
 }

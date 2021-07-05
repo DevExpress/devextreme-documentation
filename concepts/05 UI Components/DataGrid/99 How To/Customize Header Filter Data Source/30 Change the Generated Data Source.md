@@ -1,5 +1,7 @@
 To change the generated data source, set the **dataSource** property to a function. This function accepts an object whose `dataSource` field contains a [DataSource configuration](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/). Define the **DataSource**'s [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') function in which you can change header filter items.
 
+[note] Keep the [allowSearch](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch) property set to **false** because searching produces incorrect results when the **postProcess** function is applied.
+
 In the following code, the **postProcess** function adds a custom item to the generated data source:
 
 ---

@@ -123,7 +123,7 @@ You can also export several UI components at once using their SVG markup. Gather
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";
     import { DxChartModule, DxChartComponent } from "devextreme-angular";
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
     // ...
     export class AppComponent {
         @ViewChild('chartContainer1', { static: false }) chart1: DxChartComponent;
@@ -131,9 +131,9 @@ You can also export several UI components at once using their SVG markup. Gather
         // Prior to Angular 8
         // @ViewChild('chartContainer1') chart1: DxChartComponent;
         // @ViewChild('chartContainer2') chart2: DxChartComponent;
-        exportSeveralCharts () {
-            let chartMarkup = exportMethods.getMarkup([this.chart1.instance, this.chart2.instance]);
-            exportMethods.exportFromMarkup(chartMarkup, {
+        exportMultipleCharts () {
+            const chartMarkup = getMarkup([this.chart1.instance, this.chart2.instance]);
+            exportFromMarkup(chartMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "Exported Charts",
@@ -152,5 +152,91 @@ You can also export several UI components at once using their SVG markup. Gather
     <!--HTML-->
     <dx-chart #chartContainer1 ... ></dx-chart>
     <dx-chart #chartContainer2 ... ></dx-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div>
+            <DxChart :ref="chart1RefKey">
+                <!-- ... -->
+            </DxChart>
+            <DxChart :ref="chart2RefKey">
+                <!-- ... -->
+            </DxChart>
+        </div>
+    </template>
+
+    <script>
+    import DxChart from 'devextreme-vue/chart';
+    import { getMarkup, exportFromMarkup } from 'devextreme/viz/export';
+
+    const chart1RefKey = 'chart1';
+    const chart2RefKey = 'chart2';
+
+    export default {
+        components: {
+            DxChart
+        },
+        data() {
+            return {
+                chart1RefKey,
+                chart2RefKey
+            }
+        },
+        computed: {
+            chart1: function() {
+                return this.$refs[chart1RefKey].instance;
+            },
+            chart2: function() {
+                return this.$refs[chart2RefKey].instance;
+            },
+        },
+        methods: {
+            exportMultipleCharts() {
+                const chartMarkup = getMarkup([this.chart1, this.chart2]);
+                exportFromMarkup(chartMarkup, {
+                    height: 768,
+                    width: 1024,
+                    fileName: "Exported Charts",
+                    format: "PDF"
+                });
+            };
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef, useCallback } from 'react';
+    import DxChart from 'devextreme-react/chart';
+    import { getMarkup, exportFromMarkup } from 'devextreme/viz/export';
+
+    export default function App() {
+        const chart1 = useRef(null);
+        const chart2 = useRef(null);
+
+        const exportMultipleCharts = useCallback(() => {
+            const chartMarkup = getMarkup([chart1.current.instance, chart2.current.instance]);
+            exportFromMarkup(chartMarkup, {
+                height: 768,
+                width: 1024,
+                fileName: "Exported Charts",
+                format: "PDF"
+            });
+        }, []);
+
+        return (
+            <React.Fragment>
+                <Chart ref={chart1}>
+                    {/* ... */}
+                </Chart>
+                <Chart ref={chart2}>
+                    {/* ... */}
+                </Chart>
+            </React.Fragment>
+        );
+    }
 
 ---

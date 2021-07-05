@@ -143,7 +143,7 @@ A custom shape can display an inner image. Use the [defaultImageUrl](/Documentat
 The following properties allow you to specify the image size and position:
 
 * [imageHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageHeight)
-* [imageTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageTop )
+* [imageTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageTop)
 * [imageLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageLeft)
 * [imageWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageWidth)
 

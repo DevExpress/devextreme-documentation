@@ -7,6 +7,6 @@ type: Number
 Specifies the shape image's fractional height.
 
 ---
-This property specifies a fraction from 0 to 1 that represents the shape image height in relation to the shape height. If the **imageHeight** property is set to 1, the image height is equal to the shape height.
+The [defaultImageUrl](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultImageUrl) option specifies the URL of an image displayed inside the shape. Use the **imageHeight** option to specify the ratio of the image's height to the shape's height. If the **imageHeight** property is set to 1, the image height is then equal to the shape height.
 
-The absolute image height is calculated by multiplying the **imageHeight** value by the shape's height.
+The **imageHeight** option is not in effect if the [baseType](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#baseType) option is specified.

@@ -8,3 +8,6 @@ default: false
 Specifies whether searching is enabled in the column chooser.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnChooser/"
+}

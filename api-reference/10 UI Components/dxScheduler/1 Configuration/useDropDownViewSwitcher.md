@@ -9,3 +9,7 @@ Specifies whether a user can switch views using tabs or a drop-down menu.
 
 ---
 Using a drop-down menu makes the view switcher more compact.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/"
+}

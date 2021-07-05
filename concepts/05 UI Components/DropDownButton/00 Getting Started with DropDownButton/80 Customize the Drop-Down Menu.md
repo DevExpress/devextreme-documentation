@@ -1,4 +1,4 @@
-#include common-customize-dropdown-menu For example, the following code sets the height of the DropDownButton's drop-down menu to 150 pixels:
+The DropDownButton uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/) component as a drop-down menu. To customize the menu, specify [Popup properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) in the [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#dropDownOptions) object. For example, the following code sets the height of the DropDownButton's menu to 150 pixels:
 
 ---
 ##### jQuery

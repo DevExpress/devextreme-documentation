@@ -5,7 +5,7 @@ default: 200
 ---
 ---
 ##### shortDescription
-The minimum column width used for calculating column count in the form layout. Applies only if [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '{basewidgetpath}/Configuration/#colCount') property is *"auto"*.
+The minimum column width used for calculating column count in the form layout. Applies only if [colCount](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount) property is *"auto"*.
 
 ---
 #include common-demobutton with {

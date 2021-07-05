@@ -12,6 +12,10 @@ A Promise that is resolved after the rows are selected. It is a <a href="https:/
 The row indexes.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/"
+}
+
 This method has the following specifics:
 
 - This method call clears selection of all previously selected rows.
@@ -20,4 +24,4 @@ This method has the following specifics:
 
 #####See Also#####
 #include common-link-callmethods
-- [Initial and Runtime Selection](/concepts/05%20UI%20Components/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/DataGrid/Selection/#API/Initial_and_Runtime_Selection')
+- [Initial and Runtime Selection](/concepts/05%20UI%20Components/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/{WidgetName}/Selection/#API/Initial_and_Runtime_Selection')

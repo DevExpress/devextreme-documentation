@@ -8,6 +8,10 @@ default: true, false (Material)
 Specifies whether vertical lines that separate one column from another are visible.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/"
+}
+
 [note]If you use the Android or iOS theme, specifying this property doesn't affect anything. These themes avoid displaying column lines in order to provide a native look for the UI component. In case you still require the column lines to be displayed, choose [another theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/').
 
 #####See Also#####

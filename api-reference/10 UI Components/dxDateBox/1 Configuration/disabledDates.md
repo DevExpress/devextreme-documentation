@@ -144,6 +144,10 @@ This property accepts an array of dates:
 
 ---
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
+}
+
 Alternatively, pass a function to **disabledDates**. This function should define the rules that determine whether the checked date is disabled. A separate set of rules should target every view individually.
 
 ---

@@ -9,14 +9,10 @@ Holds an array of form items.
 
 ---
 #include common-demobutton-named with {
-    name: "Simple Items",
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/",
+    name: "Overview"
 }
 #include common-demobutton-named with {
-    name: "Grouped and Tabbed Items",
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
-}
-#include common-demobutton-named with {
-    name: "Button Item",
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/UpdateItemsDynamically/",
+    name: "Customize Fields at Runtime"
 }

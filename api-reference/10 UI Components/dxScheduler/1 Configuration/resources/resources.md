@@ -18,6 +18,11 @@ The name of the appointment object field that specifies a resource of this kind 
 
 There are more fields that can be specified within a resource kind object. They are listed below. For details on how to define a resource and assign it to scheduler appointments, refer to the [Resources](/concepts/05%20UI%20Components/Scheduler/040%20Resources/020%20Assign%20Appointments%20to%20Resources '/Documentation/Guide/UI_Components/Scheduler/Resources/Assign_Appointments_to_Resources/') article.
 
-#####See Also#####
-- **Demos**: [Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources) | [Grouping by Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupedAppointments)
-- [Resources](/concepts/05%20UI%20Components/Scheduler/040%20Resources/020%20Assign%20Appointments%20to%20Resources '/Documentation/Guide/UI_Components/Scheduler/Resources/Assign_Appointments_to_Resources/')
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/",
+    name: "Resources"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/",
+    name: "Grouping by Resources"
+}

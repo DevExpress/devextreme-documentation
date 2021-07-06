@@ -8,3 +8,6 @@ default: true, false (Android, iOS)
 Specifies whether or not an end-user can drag appointments.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/"
+}

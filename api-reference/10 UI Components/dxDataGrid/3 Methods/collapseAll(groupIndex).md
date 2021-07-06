@@ -9,6 +9,10 @@ Collapses master rows or groups of a specific level.
 The group's level. Pass **undefined** to collapse all groups. Pass *-1* to collapse all master rows.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/"
+}
+
 [note] The [rowCollapsed](/api-reference/10%20UI%20Components/GridBase/4%20Events/rowCollapsed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Events/#rowCollapsed') event is not raised when you call this method.
 
 #####See Also#####

@@ -16,3 +16,12 @@ The **columnResizingMode** property accepts one of the following values:
 - **widget**  
     When a user resizes a column, the width of the UI component changes.  
     This mode is ignored if you specify the [width](/api-reference/_hidden/GridBaseColumn/width.md '{basewidgetpath}/Configuration/columns/#width') of any column in percent.
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/",
+    name: "DataGrid"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Resizing/",
+    name: "TreeList"
+}

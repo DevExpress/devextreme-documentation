@@ -8,6 +8,10 @@ default: undefined
 Configures the form item's editor.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
+}
+
 **editorOptions** should contain the properties of the DevExtreme editor specified in the [editorType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType'). Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering. Alternatively, you can configure a custom editor in a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template').
 
 ---
@@ -101,10 +105,6 @@ Configures the form item's editor.
     export default App;
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/Mvc/Light/"
-}
 
 [note] If you set the `id` and `name` attributes using the [inputAttr](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#inputAttr') property, they will be overwritten. The Form generates these attributes automatically and uses them for addressing the DOM elements.
 

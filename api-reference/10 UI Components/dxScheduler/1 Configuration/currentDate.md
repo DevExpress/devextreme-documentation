@@ -15,3 +15,7 @@ Users can change the current date in the [Date Navigator](/concepts/05%20UI%20Co
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 
 To subscribe to changes of the current date, use the [onOptionChanged](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/onOptionChanged.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onOptionChanged') handler.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"
+}

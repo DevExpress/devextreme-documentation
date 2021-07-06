@@ -30,3 +30,6 @@ The appointment with new data.
 The data of the appointment to be updated.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
+}

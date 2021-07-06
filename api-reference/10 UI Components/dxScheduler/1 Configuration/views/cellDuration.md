@@ -8,3 +8,6 @@ default: 30
 The cell duration in minutes.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/"
+}

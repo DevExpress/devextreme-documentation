@@ -9,3 +9,7 @@ An array of tab configuration objects.
 
 ---
 Each item of the array passed to this property can have fields described below.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
+}

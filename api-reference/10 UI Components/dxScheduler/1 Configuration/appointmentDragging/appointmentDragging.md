@@ -7,4 +7,6 @@ type: Object
 Configures appointment reordering using drag and drop gestures.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/"
+}

@@ -27,3 +27,6 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
+}

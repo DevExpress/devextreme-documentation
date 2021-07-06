@@ -19,3 +19,12 @@ Without a data source, the UI component cannot detect the date-time values' form
 - `"yyyy-MM-ddTHH:mm:ssx"` - date and time with a timezone
 
 This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/WebAPIService/",
+    name: "Web API Service"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SignalRService/",
+    name: "SignalR Service"
+}

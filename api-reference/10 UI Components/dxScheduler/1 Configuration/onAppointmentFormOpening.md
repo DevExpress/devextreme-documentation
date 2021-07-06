@@ -285,7 +285,11 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
 
 ---
 
-The `mainGroup` consists of two columns. To make a custom item span both columns, set its [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') to 2 - as shown in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`. 
+The `mainGroup` consists of two columns. To make a custom item span both columns, set its [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') to 2 - as shown in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"
+}
 
 #####See Also#####
 - [Form - Change Properties at Runtime](/concepts/05%20UI%20Components/Form/20%20Change%20Properties%20at%20Runtime/05%20Form%20Properties.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Form_Properties/')

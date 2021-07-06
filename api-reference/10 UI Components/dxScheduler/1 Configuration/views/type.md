@@ -9,5 +9,15 @@ default: undefined
 The type of the view.
 
 ---
-
-For information about available view types, refer to the [View Types](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types '/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/') article.
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/BasicViews/",
+    name: "Basic Views"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/",
+    name: "Timelines"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/",
+    name: "Agenda"
+}

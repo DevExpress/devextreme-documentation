@@ -16,6 +16,10 @@ The option's name.
 The new option value.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/UpdateItemsDynamically/"
+}
+
 The following code shows how to call this method for an item organized in a group:
 
     <!--JavaScript-->

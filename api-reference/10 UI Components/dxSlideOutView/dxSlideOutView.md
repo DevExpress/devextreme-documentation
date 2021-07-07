@@ -3,6 +3,7 @@ id: dxSlideOutView
 module: ui/slide_out_view
 export: default
 inherits: Widget
+dep: dxDrawer
 ---
 ---
 ##### shortDescription

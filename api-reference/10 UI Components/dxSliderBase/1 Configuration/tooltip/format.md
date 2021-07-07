@@ -1,6 +1,6 @@
 ---
 id: dxSliderBase.Options.tooltip.format
-type: format
+type: Format
 default: function(value) { return value }
 ---
 ---

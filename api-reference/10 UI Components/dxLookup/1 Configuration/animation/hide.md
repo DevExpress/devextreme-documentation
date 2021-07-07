@@ -1,6 +1,6 @@
 ---
 id: dxLookup.Options.animation.hide
-type: animationConfig
+type: AnimationConfig
 default: undefined
 ---
 ---

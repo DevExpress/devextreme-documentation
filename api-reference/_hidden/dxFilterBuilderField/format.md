@@ -1,6 +1,6 @@
 ---
 id: dxFilterBuilderField.format
-type: format
+type: Format
 default: ''
 ---
 ---

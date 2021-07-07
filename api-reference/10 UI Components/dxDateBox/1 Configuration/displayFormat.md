@@ -1,6 +1,6 @@
 ---
 id: dxDateBox.Options.displayFormat
-type: format
+type: Format
 default: null
 ---
 ---

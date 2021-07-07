@@ -1,6 +1,6 @@
 ---
 id: dxMenuBase.Options.animation.hide
-type: animationConfig
+type: AnimationConfig
 default: { type: 'fade', from: 1, to: 0, duration: 100 }
 ---
 ---

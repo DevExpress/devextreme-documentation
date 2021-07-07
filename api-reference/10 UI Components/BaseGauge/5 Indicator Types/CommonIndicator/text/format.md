@@ -1,6 +1,6 @@
 ---
 id: CommonIndicator.text.format
-type: format
+type: Format
 default: undefined
 ---
 ---

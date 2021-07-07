@@ -2,6 +2,7 @@
 id: animationPresets
 module: animation/presets
 export: default
+type: Object
 ---
 ---
 ##### shortDescription

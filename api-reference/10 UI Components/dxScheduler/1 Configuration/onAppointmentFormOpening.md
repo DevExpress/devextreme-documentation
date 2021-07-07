@@ -10,7 +10,7 @@ A function that is executed before an appointment details form is opened. Use th
 ##### param(e): Object
 Information about the event.
 
-##### field(e.appointmentData): Object
+##### field(e.appointmentData): dxSchedulerAppointment
 The data of the appointment for which a form is opened.
 
 ##### field(e.cancel): Boolean

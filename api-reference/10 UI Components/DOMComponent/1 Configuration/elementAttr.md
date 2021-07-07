@@ -1,6 +1,6 @@
 ---
 id: DOMComponent.Options.elementAttr
-type: any
+type: Object
 default: {}
 ---
 ---

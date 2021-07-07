@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.sliderMarker.format
-type: format
+type: Format
 default: undefined
 ---
 ---

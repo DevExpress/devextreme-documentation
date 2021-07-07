@@ -8,7 +8,7 @@ Registers a set of elements that should be animated as "leaving" using the speci
 ##### param(elements): jQuery
 The elements to be animated.
 
-##### param(animation): animationConfig | String
+##### param(animation): AnimationConfig | String
 The animation configuration or the name of an animation from the [animationPresets](/api-reference/50%20Common/utils/animationPresets '/Documentation/ApiReference/Common/Utils/animationPresets') repository.
 
 ---

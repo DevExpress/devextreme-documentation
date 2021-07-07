@@ -1,7 +1,7 @@
 ---
 id: dxPopover.Options.position
 acceptValues: 'bottom' | 'left' | 'right' | 'top'
-type: String | positionConfig
+type: String | PositionConfig
 default: 'bottom'
 ---
 ---

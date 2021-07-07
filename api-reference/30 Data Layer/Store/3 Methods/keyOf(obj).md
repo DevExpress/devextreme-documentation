@@ -5,7 +5,7 @@ id: Store.keyOf(obj)
 ##### shortDescription
 Gets a data item's key value.
 
-##### return: any
+##### return: any | String | Number
 The data item's key value.
 
 ##### param(obj): Object

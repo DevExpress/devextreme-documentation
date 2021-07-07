@@ -10,7 +10,7 @@ A function that is executed before an appointment is added to the data source.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.appointmentData): Object
+##### field(e.appointmentData): dxSchedulerAppointment
 The data of the appointment to be added.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>

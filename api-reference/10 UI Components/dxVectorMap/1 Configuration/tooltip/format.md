@@ -1,5 +1,5 @@
 ---
 id: dxVectorMap.Options.tooltip.format
-type: format
+type: Format
 hidden: 
 ---

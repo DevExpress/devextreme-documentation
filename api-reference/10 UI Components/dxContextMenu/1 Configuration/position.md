@@ -1,6 +1,6 @@
 ---
 id: dxContextMenu.Options.position
-type: positionConfig
+type: PositionConfig
 default: { my: 'top left', at: 'top left' }
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.format
-type: format
+type: Format
 default: ''
 ---
 ---

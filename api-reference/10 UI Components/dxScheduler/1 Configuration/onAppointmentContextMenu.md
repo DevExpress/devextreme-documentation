@@ -10,7 +10,7 @@ A function that is executed when a user attempts to open the browser's context m
 ##### param(e): Object
 Information about the event.
 
-##### field(e.appointmentData): Object
+##### field(e.appointmentData): dxSchedulerAppointment
 The initial appointment.
 
 ##### field(e.appointmentElement): DxElement
@@ -28,7 +28,7 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.targetedAppointmentData): Object
+##### field(e.targetedAppointmentData): dxSchedulerAppointment
 <!-- %field(model.targetedAppointmentData)% -->
 
 ---

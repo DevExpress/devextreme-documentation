@@ -19,4 +19,7 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
+##### field(e.cancel): Boolean
+<!-- Description goes here -->
+
 ---

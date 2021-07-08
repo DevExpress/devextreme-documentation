@@ -9,7 +9,7 @@
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
-    "devextreme-internal-tools": "^6.4.1"
+    "devextreme-internal-tools": "^6.4.2"
   },
   "scripts": {
     "update-links": "dx-tools update-links --docs-root ./",

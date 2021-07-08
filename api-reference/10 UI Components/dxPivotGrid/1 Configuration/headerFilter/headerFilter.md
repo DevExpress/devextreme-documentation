@@ -18,5 +18,9 @@ Assign **true** to the [allowFiltering](/api-reference/10%20UI%20Components/dxPi
     filterTypeLink: "/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#filterType"
 }
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/HeaderFilter/"
+}
+
 #####See Also#####
 - [Filtering](/concepts/05%20UI%20Components/PivotGrid/080%20Filtering '/Documentation/Guide/UI_Components/PivotGrid/Filtering/')

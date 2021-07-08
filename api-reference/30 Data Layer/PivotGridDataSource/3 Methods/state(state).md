@@ -10,3 +10,7 @@ The state returned by the [state()](/api-reference/30%20Data%20Layer/PivotGridDa
 
 ---
 Refer to the [state()](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/state().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#state') method's description for an example.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/StatePersistence/"
+}

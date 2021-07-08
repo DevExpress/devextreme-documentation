@@ -8,3 +8,6 @@ default: 'Filter Fields'
 The string to display instead of **Filter Fields**.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/StandaloneFieldChooser/"
+}

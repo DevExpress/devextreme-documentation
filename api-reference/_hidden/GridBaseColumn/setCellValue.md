@@ -15,7 +15,7 @@ The input value.
 ##### param(currentRowData): Object
 A read-only parameter providing access to the current row data.
 
-##### return: void | Promise<void>
+##### return: Promise<void>
 Return a promise for an asynchronous operation or return nothing.
 
 ---

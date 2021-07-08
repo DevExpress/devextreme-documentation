@@ -33,7 +33,7 @@ The task's resources.
 ##### field(item.taskSize): Object
 The task's size.
 
-##### return: void
+##### return: String | Element | jQuery
 <!-- Description goes here -->
 
 ---

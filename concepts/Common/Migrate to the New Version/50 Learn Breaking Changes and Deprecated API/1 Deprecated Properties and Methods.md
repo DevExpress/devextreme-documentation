@@ -64,6 +64,10 @@
 <td><a href="js.devexpress.com/Documentation/21_1/ApiReference/UI_Components/dxMap/Configuration/key">key</a></td>
 </tr>
 <tr>
+<td>NavBar</td>
+<td><a href="js.devexpress.com/Documentation/21_1/ApiReference/UI_Components/dxNavBar">dxNavBar</a></td>
+</tr>
+<tr>
 <td>NumberBox</td>
 <td><a href="js.devexpress.com/Documentation/21_1/ApiReference/UI_Components/dxNumberBox/Configuration/#onKeyPress">onKeyPress</a></td>
 </tr>
@@ -94,6 +98,14 @@
 <tr>
 <td>SelectBox</td>
 <td><a href="js.devexpress.com/Documentation/21_1/ApiReference/UI_Components/dxSelectBox/Configuration/#onKeyPress">onKeyPress</a></td>
+</tr>
+<tr>
+<td>SlideOut</td>
+<td><a href="js.devexpress.com/Documentation/21_1/ApiReference/UI_Components/dxSlideOut">dxSlideOut</a></td>
+</tr>
+<tr>
+<td>SlideOutView</td>
+<td><a href="js.devexpress.com/Documentation/21_1/ApiReference/UI_Components/dxSlideOutView">dxSlideOutView</a></td>
 </tr>
 <tr>
 <td>TagBox</td>

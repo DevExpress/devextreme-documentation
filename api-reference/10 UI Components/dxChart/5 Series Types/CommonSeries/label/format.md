@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.label.format
-type: format
+type: Format
 default: undefined
 ---
 ---

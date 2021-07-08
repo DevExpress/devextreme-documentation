@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.legend.itemTextFormat
-type: format
+type: Format
 default: undefined
 ---
 ---

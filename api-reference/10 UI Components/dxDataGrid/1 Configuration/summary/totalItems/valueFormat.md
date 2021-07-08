@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.valueFormat
-type: format
+type: Format
 default: undefined
 ---
 ---

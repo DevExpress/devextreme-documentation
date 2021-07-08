@@ -1,7 +1,7 @@
 ---
 id: globalConfig.floatingActionButtonConfig.position
 acceptValues: 'bottom' | 'center' | 'left' | 'left bottom' | 'left top' | 'right' | 'right bottom' | 'right top' | 'top'
-type: String | positionConfig | function()
+type: String | PositionConfig | function()
 default: '{ at: "right bottom", my: "right bottom", offset: "-16 -16" }'
 ---
 ---

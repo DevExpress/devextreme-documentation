@@ -1,6 +1,6 @@
 ---
 id: DataSource.Options.store
-type: Store | Store_Options | Array<any> | any
+type: Store | Store_Options | Array<any>
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.filter
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

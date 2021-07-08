@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.valueAxis.label.format
-type: format
+type: Format
 default: undefined
 ---
 ---

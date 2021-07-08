@@ -10,7 +10,7 @@ A function that is executed after an appointment is deleted from the data source
 ##### param(e): Object
 Information about the event.
 
-##### field(e.appointmentData): Object
+##### field(e.appointmentData): dxSchedulerAppointment
 The deleted appointment's data.
 
 ##### field(e.component): dxScheduler

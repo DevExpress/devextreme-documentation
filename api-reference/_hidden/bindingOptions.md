@@ -1,5 +1,5 @@
 ---
 id: DOMComponent.Options.bindingOptions
-type: any
+type: Object
 default: {}
 ---

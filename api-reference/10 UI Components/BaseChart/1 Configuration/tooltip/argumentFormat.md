@@ -1,6 +1,6 @@
 ---
 id: BaseChart.Options.tooltip.argumentFormat
-type: format
+type: Format
 default: undefined
 ---
 ---

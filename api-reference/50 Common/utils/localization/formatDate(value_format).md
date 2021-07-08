@@ -13,7 +13,7 @@ The formatted string.
 ##### param(value): Date
 A <a href="https://www.w3schools.com/js/js_dates.asp" target="_blank">Date</a> object to be converted.
 
-##### param(format): format
+##### param(format): Format
 The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') to be used for conversion.
 
 ---

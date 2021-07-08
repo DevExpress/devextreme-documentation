@@ -11,7 +11,7 @@ A Promise that is resolved after animation is completed. It is a <a href="https:
 ##### param(element): Element
 The element.
 
-##### param(config): animationConfig
+##### param(config): AnimationConfig
 The element's [animation properties](/api-reference/50%20Common/Object%20Structures/animationConfig '/Documentation/ApiReference/Common/Object_Structures/animationConfig').
 
 ---

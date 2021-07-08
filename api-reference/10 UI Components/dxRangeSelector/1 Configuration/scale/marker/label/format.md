@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.marker.label.format
-type: format
+type: Format
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.totalSummary
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

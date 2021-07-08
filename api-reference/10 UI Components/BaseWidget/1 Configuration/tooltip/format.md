@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip.format
-type: format
+type: Format
 default: undefined
 ---
 ---

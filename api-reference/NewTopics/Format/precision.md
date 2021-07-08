@@ -1,6 +1,6 @@
 ---
-id: dxDropDownList.Options.contentRender
-hidden: 
+id: Format.precision
+type: Number
 ---
 ---
 ##### shortDescription

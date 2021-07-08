@@ -1,6 +1,6 @@
 ---
 id: dxNumberBox.Options.format
-type: format
+type: Format
 default: ''
 ---
 ---

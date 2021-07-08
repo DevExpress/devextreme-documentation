@@ -1,5 +1,5 @@
 ---
-id: positionConfig.boundaryOffset.x
+id: PositionConfig.boundaryOffset.x
 type: Number
 default: 0
 ---
@@ -8,3 +8,4 @@ default: 0
 Specifies a horizontal offset.
 
 ---
+<!-- Description goes here -->

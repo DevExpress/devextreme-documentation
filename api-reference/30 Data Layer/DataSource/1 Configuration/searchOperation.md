@@ -1,7 +1,8 @@
 ---
 id: DataSource.Options.searchOperation
-type: String
+type: SearchOperation
 default: 'contains'
+inheritsType: SearchOperation
 ---
 ---
 ##### shortDescription

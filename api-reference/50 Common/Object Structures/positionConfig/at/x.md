@@ -1,5 +1,5 @@
 ---
-id: positionConfig.at.x
+id: PositionConfig.at.x
 acceptValues: 'center' | 'left' | 'right'
 type: String
 ---
@@ -8,3 +8,4 @@ type: String
 Specifies a position in the horizontal direction (for left, right, or center alignment).
 
 ---
+<!-- Description goes here -->

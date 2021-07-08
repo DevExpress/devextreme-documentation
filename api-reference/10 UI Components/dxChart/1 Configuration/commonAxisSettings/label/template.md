@@ -14,7 +14,7 @@ The label's data object.
 The raw value.
 
 ##### field(data.valueText): String
-The [formatted](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') value converted to a string.
+The [formatted](/api-reference/50%20Common/Object%20Structures/Format '/Documentation/ApiReference/Common/Object_Structures/Format/') value converted to a string.
 
 ##### param(element): SVGGElement
 A container for the template content.

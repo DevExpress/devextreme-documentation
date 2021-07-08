@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.select
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

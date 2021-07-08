@@ -1,6 +1,6 @@
 ---
 id: dxNumberBox.Options.format
-type: format
+type: Format
 default: ''
 ---
 ---
@@ -17,4 +17,4 @@ Specifies the value's display format and controls user input accordingly.
 }
 
 #####See Also#####
-- [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/')
+- [format](/api-reference/50%20Common/Object%20Structures/Format '/Documentation/ApiReference/Common/Object_Structures/Format/')

@@ -1,5 +1,5 @@
 ---
-id: animationConfig.duration
+id: AnimationConfig.duration
 type: Number
 default: 400
 ---
@@ -8,3 +8,4 @@ default: 400
 A number specifying the time in milliseconds spent on animation.
 
 ---
+<!-- Description goes here -->

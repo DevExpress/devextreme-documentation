@@ -5,7 +5,7 @@ id: animationPresets.getPreset(name)
 ##### shortDescription
 Gets the configuration of an animation with a specific name.
 
-##### return: any
+##### return: AnimationConfig
 The animation configuration.
 
 ##### param(name): String

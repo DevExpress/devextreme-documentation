@@ -1,6 +1,6 @@
 ---
 id: dxSliderBase.Options.tooltip.format
-type: format
+type: Format
 default: function(value) { return value }
 ---
 ---
@@ -8,4 +8,4 @@ default: function(value) { return value }
 Specifies a tooltip's display format.
 
 ---
-See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for details on accepted values.
+See the [format](/api-reference/50%20Common/Object%20Structures/Format '/Documentation/ApiReference/Common/Object_Structures/Format/') section for details on accepted values.

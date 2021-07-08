@@ -1,5 +1,5 @@
 ---
-id: positionConfig.at.y
+id: PositionConfig.at.y
 acceptValues: 'bottom' | 'center' | 'top'
 type: String
 ---
@@ -8,3 +8,4 @@ type: String
 Specifies a position in the vertical direction (for top, bottom, or center alignment).
 
 ---
+<!-- Description goes here -->

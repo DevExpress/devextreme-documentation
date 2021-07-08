@@ -1,6 +1,7 @@
 ---
 id: LoadOptions.searchOperation
-type: String
+type: SearchOperation
+inheritsType: SearchOperation
 ---
 ---
 ##### shortDescription

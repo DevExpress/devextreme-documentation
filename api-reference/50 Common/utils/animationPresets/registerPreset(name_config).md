@@ -11,7 +11,7 @@ The animation's name.
 ##### param(config): Object
 Information on the animation.
 
-##### field(config.animation): animationConfig
+##### field(config.animation): AnimationConfig
 The animation's configuration.
 
 ##### field(config.device): Device

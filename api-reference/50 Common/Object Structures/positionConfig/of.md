@@ -1,5 +1,5 @@
 ---
-id: positionConfig.of
+id: PositionConfig.of
 type: String | UserDefinedElement | Window
 ---
 ---

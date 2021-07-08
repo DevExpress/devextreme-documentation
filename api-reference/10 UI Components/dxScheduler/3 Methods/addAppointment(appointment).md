@@ -5,7 +5,7 @@ id: dxScheduler.addAppointment(appointment)
 ##### shortDescription
 Adds an appointment.
 
-##### param(appointment): Object
+##### param(appointment): dxSchedulerAppointment
 The appointment; should have the same structure as objects in the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource').
 
 ---

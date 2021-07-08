@@ -5,7 +5,7 @@ id: dxScheduler.deleteAppointment(appointment)
 ##### shortDescription
 Deletes an appointment from the timetable and its object from the data source.
 
-##### param(appointment): Object
+##### param(appointment): dxSchedulerAppointment
 An appointment object from the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource').
 
 ---

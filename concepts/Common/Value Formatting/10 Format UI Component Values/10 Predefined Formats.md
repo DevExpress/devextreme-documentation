@@ -1,4 +1,4 @@
-Predefined formats are string literals for formatting numbers and dates. See the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') description for a full list.
+Predefined formats are string literals for formatting numbers and dates. See the **format**.[type](/api-reference/50%20Common/Object%20Structures/Format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type') description for a full list.
 
 Set the **format** UI component property to apply a predefined format. In the following code, this property specifies the format and precision of the tooltip's value in the Slider UI component. The value contains two decimal digits when the precision value is 2.
 

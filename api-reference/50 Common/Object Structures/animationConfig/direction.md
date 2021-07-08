@@ -1,5 +1,5 @@
 ---
-id: animationConfig.direction
+id: AnimationConfig.direction
 acceptValues: 'bottom' | 'left' | 'right' | 'top'
 type: String
 default: undefined

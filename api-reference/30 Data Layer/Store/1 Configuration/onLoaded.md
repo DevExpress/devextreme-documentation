@@ -1,6 +1,6 @@
 ---
 id: Store.Options.onLoaded
-type: function(result)
+type: function(result, loadOptions)
 ---
 ---
 ##### shortDescription
@@ -8,6 +8,9 @@ A function that is executed after data is loaded to the store.
 
 ##### param(result): Array<any>
 The loaded data.
+
+##### param(loadOptions): LoadOptions
+<!-- Description goes here -->
 
 ---
 ---

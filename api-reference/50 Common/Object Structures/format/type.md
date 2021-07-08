@@ -1,11 +1,11 @@
 ---
-id: format.type
+id: Format.type
 acceptValues: 'billions' | 'currency' | 'day' | 'decimal' | 'exponential' | 'fixedPoint' | 'largeNumber' | 'longDate' | 'longTime' | 'millions' | 'millisecond' | 'month' | 'monthAndDay' | 'monthAndYear' | 'percent' | 'quarter' | 'quarterAndYear' | 'shortDate' | 'shortTime' | 'thousands' | 'trillions' | 'year' | 'dayOfWeek' | 'hour' | 'longDateLongTime' | 'minute' | 'second' | 'shortDateShortTime'
 type: String
 ---
 ---
 ##### shortDescription
-Specifies a predefined format. Does not apply if you have specified the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') function.
+Specifies a predefined format. Does not apply if you have specified the [formatter](/api-reference/50%20Common/Object%20Structures/Format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') function.
 
 ---
 You can choose one of the predefined formats, depending on the values you need to format, from the following groups:
@@ -46,11 +46,11 @@ You can choose one of the predefined formats, depending on the values you need t
 
 <div class="footnotes">
     <ul>
-        <li>to define any other currency, use <a href="/Documentation/ApiReference/Common/Object_Structures/format/#currency">currency</a> </li>
+        <li>to define any other currency, use <a href="/Documentation/ApiReference/Common/Object_Structures/Format/#currency">currency</a> </li>
     </ul> 
 </div>
 
-[note]Specify the [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') to show fractional numbers.
+[note]Specify the [precision](/api-reference/50%20Common/Object%20Structures/Format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision') to show fractional numbers.
 
 **Date-Time Formats**  
 
@@ -96,5 +96,5 @@ If the **type** is the only field you need to specify in the **format** object, 
 }
 
 #####See Also#####
-- **format**.[currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/format/#currency')
-- **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision')
+- **format**.[currency](/api-reference/50%20Common/Object%20Structures/Format/currency.md '/Documentation/ApiReference/Common/Object_Structures/Format/#currency')
+- **format**.[precision](/api-reference/50%20Common/Object%20Structures/Format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision')

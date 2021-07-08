@@ -1,5 +1,5 @@
 ---
-id: format
+id: Format
 acceptValues: 'billions' | 'currency' | 'day' | 'decimal' | 'exponential' | 'fixedPoint' | 'largeNumber' | 'longDate' | 'longTime' | 'millions' | 'millisecond' | 'month' | 'monthAndDay' | 'monthAndYear' | 'percent' | 'quarter' | 'quarterAndYear' | 'shortDate' | 'shortTime' | 'thousands' | 'trillions' | 'year' | 'dayOfWeek' | 'hour' | 'longDateLongTime' | 'minute' | 'second' | 'shortDateShortTime'
 type: String | function(value) | Object
 default: undefined
@@ -18,10 +18,10 @@ The value after formatting.
 This property accepts three types of values:
 
 * **String**  
- A [predefined format](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') or [custom format string](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String').
+ A [predefined format](/api-reference/50%20Common/Object%20Structures/Format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type') or [custom format string](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String').
 
 * **Function**  
- Applies a custom format to a value and returns this value as a string. A shortcut for the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') property.
+ Applies a custom format to a value and returns this value as a string. A shortcut for the [formatter](/api-reference/50%20Common/Object%20Structures/Format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') property.
  
 * **Object**  
  Allows you to configure the format. Can have one of the following structures:

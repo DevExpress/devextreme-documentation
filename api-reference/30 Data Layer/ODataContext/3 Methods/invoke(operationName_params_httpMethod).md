@@ -14,7 +14,7 @@ The operation's name
 ##### param(params): Object
 The operation's parameters.
 
-##### param(httpMethod): Object
+##### param(httpMethod): String
 The HTTP method for this operation ("GET", "POST", "PATCH", or "MERGE").            
 "POST" by default.
 

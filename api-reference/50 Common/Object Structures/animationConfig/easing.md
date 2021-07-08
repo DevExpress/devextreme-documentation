@@ -1,5 +1,5 @@
 ---
-id: animationConfig.easing
+id: AnimationConfig.easing
 type: String
 default: 'ease'
 ---

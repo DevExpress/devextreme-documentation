@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.expand
-type: any
+type: Array<String>
 ---
 ---
 ##### shortDescription

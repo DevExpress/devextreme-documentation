@@ -1,20 +1,20 @@
 ---
-id: positionConfig.collision
+id: PositionConfig.collision
 acceptValues: 'fit' | 'fit flip' | 'fit flipfit' | 'fit none' | 'flip' | 'flip fit' | 'flip none' | 'flipfit' | 'flipfit fit' | 'flipfit none' | 'none' | 'none fit' | 'none flip' | 'none flipfit'
 type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies how to resolve collisions - when the overlay element exceeds the [boundary](/api-reference/50%20Common/Object%20Structures/positionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary') element.
+Specifies how to resolve collisions - when the overlay element exceeds the [boundary](/api-reference/50%20Common/Object%20Structures/PositionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#boundary') element.
 
 ---
 You can use the following collision resolution algorithms:
 
 - *"flip"*      
-Move the overlay element to the opposite side of the [target](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of') if that side has more space.
+Move the overlay element to the opposite side of the [target](/api-reference/50%20Common/Object%20Structures/PositionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of') if that side has more space.
 
 - *"fit"*       
-Move the overlay element to the inside of the [boundary](/api-reference/50%20Common/Object%20Structures/positionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#boundary') element.
+Move the overlay element to the inside of the [boundary](/api-reference/50%20Common/Object%20Structures/PositionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#boundary') element.
 
 - *"flipfit"*       
 First apply *"flip"*, then *"fit"*.

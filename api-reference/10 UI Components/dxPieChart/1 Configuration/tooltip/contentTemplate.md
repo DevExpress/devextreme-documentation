@@ -27,7 +27,7 @@ You can access the following **pointInfo** object fields:
     </tr>
     <tr>
         <td><code>percentText</code></td>
-        <td>The percent value of the point being hovered over with <a href="/Documentation/ApiReference/Common/Object_Structures/format/#precision">percent precision</a> (optional) applied.</td>
+        <td>The percent value of the point being hovered over with <a href="/Documentation/ApiReference/Common/Object_Structures/Format/#precision">percent precision</a> (optional) applied.</td>
     </tr>
     <tr>
         <td><code>point</code></td>

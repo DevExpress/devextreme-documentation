@@ -8,9 +8,9 @@ default: ''
 Formats a value before it is displayed in a column cell.
 
 ---
-See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for details on accepted values.
+See the [format](/api-reference/50%20Common/Object%20Structures/Format '/Documentation/ApiReference/Common/Object_Structures/Format/') section for details on accepted values.
 
-In the following code, the *"fixedPoint"* [format type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') with a [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') of **2** decimal places is applied to column values:
+In the following code, the *"fixedPoint"* [format type](/api-reference/50%20Common/Object%20Structures/Format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type') with a [precision](/api-reference/50%20Common/Object%20Structures/Format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision') of **2** decimal places is applied to column values:
 
 ---
 ##### jQuery

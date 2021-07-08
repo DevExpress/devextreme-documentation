@@ -1,5 +1,5 @@
 ---
-id: positionConfig.offset.y
+id: PositionConfig.offset.y
 type: Number
 default: 0
 ---
@@ -8,3 +8,4 @@ default: 0
 Specifies a vertical offset.
 
 ---
+<!-- Description goes here -->

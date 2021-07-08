@@ -1,5 +1,5 @@
 ---
-id: animationConfig
+id: AnimationConfig
 type: Object
 ---
 ---
@@ -7,3 +7,4 @@ type: Object
 Defines animation properties.
 
 ---
+<!-- Description goes here -->

@@ -6,10 +6,10 @@ default: 'bottom'
 ---
 ---
 ##### shortDescription
-An object defining UI component [positioning properties](/api-reference/50%20Common/Object%20Structures/positionConfig '/Documentation/ApiReference/Common/Object_Structures/positionConfig/').
+An object defining UI component [positioning properties](/api-reference/50%20Common/Object%20Structures/PositionConfig '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/').
 
 ---
-You can use the **position**.[of](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of') property and the Popover's [target](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target') property to specify the element against which the UI component will be positioned. If you set both these properties, **position**.**of** takes precedence.
+You can use the **position**.[of](/api-reference/50%20Common/Object%20Structures/PositionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of') property and the Popover's [target](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target') property to specify the element against which the UI component will be positioned. If you set both these properties, **position**.**of** takes precedence.
 
 Besides the position configuration object, the property can take on the following string values, which are shortcuts for the corresponding position configuration.
 

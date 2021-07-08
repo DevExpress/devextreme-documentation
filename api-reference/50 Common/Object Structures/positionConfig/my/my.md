@@ -1,14 +1,13 @@
 ---
-id: positionConfig.my
+id: PositionConfig.my
 acceptValues: 'bottom' | 'center' | 'left' | 'left bottom' | 'left top' | 'right' | 'right bottom' | 'right top' | 'top'
 type: String | Object
 ---
 ---
 ##### shortDescription
-Specifies the overlay element's side or corner to align with a [target element](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/positionConfig/#of').
+Specifies the overlay element's side or corner to align with a [target element](/api-reference/50%20Common/Object%20Structures/PositionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of').
 
 ---
-
 To set this property, use an object with the **x** and **y** fields. These fields specify the overlay element's horizontal and vertical sides, respectively. Alternatively, you can use a string shortcut from the accepted values list.
 
 ---

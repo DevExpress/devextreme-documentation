@@ -1,5 +1,5 @@
 ---
-id: animationConfig.complete
+id: AnimationConfig.complete
 type: function($element, config)
 ---
 ---
@@ -13,3 +13,4 @@ The animated element. It is an <a href="https://developer.mozilla.org/en-US/docs
 The animation configuration.
 
 ---
+<!-- Description goes here -->

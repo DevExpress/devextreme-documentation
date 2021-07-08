@@ -1,5 +1,5 @@
 ---
-id: format.precision
+id: Format.precision
 type: Number
 ---
 ---
@@ -7,7 +7,7 @@ type: Number
 Specifies a precision for values of a numeric format.
 
 ---
-This property applies when the [type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type') property has one of the following values.
+This property applies when the [type](/api-reference/50%20Common/Object%20Structures/Format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type') property has one of the following values.
 
 - 'currency'
 - 'fixedPoint'

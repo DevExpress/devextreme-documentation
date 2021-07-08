@@ -1,5 +1,5 @@
 ---
-id: positionConfig.collision.y
+id: PositionConfig.collision.y
 acceptValues: 'fit' | 'flip' | 'flipfit' | 'none'
 type: String
 default: 'none'
@@ -9,3 +9,4 @@ default: 'none'
 Specifies how to resolve vertical collisions.
 
 ---
+<!-- Description goes here -->

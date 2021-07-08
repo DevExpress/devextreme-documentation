@@ -1,4 +1,4 @@
-If none of the predefined formats meet your requirements, specify a custom format using the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') function. This function accepts the original value as the parameter and returns a formatted string.
+If none of the predefined formats meet your requirements, specify a custom format using the [formatter](/api-reference/50%20Common/Object%20Structures/Format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') function. This function accepts the original value as the parameter and returns a formatted string.
 
     <!--JavaScript-->var widgetOptions = {
         // ...
@@ -12,7 +12,7 @@ If none of the predefined formats meet your requirements, specify a custom forma
         }
     };
 
-In addition, you can implement the [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') function to parse numbers or dates presented as strings into the correct format. This function may be called internally by the UI component at different points of your application's lifetime.
+In addition, you can implement the [parser](/api-reference/50%20Common/Object%20Structures/Format/parser.md '/Documentation/ApiReference/Common/Object_Structures/Format/#parser') function to parse numbers or dates presented as strings into the correct format. This function may be called internally by the UI component at different points of your application's lifetime.
 
     <!--JavaScript-->var widgetOptions = {
         // ...

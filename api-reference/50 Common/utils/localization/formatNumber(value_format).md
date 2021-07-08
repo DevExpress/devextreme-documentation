@@ -14,7 +14,7 @@ The formatted string.
 A numeric value to be converted.
 
 ##### param(format): Format
-The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') to be used for conversion.
+The [format](/api-reference/50%20Common/Object%20Structures/Format '/Documentation/ApiReference/Common/Object_Structures/Format/') to be used for conversion.
 
 ---
 

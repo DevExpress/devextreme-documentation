@@ -1,5 +1,5 @@
 ---
-id: positionConfig.offset
+id: PositionConfig.offset
 type: String | Object
 ---
 ---

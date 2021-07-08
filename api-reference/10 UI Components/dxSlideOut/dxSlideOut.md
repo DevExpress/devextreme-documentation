@@ -3,6 +3,7 @@ id: dxSlideOut
 module: ui/slide_out
 export: default
 inherits: CollectionWidget
+dep: dxDrawer
 ---
 ---
 ##### shortDescription

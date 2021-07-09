@@ -8,3 +8,4 @@ default: false
 Specifies whether the UI component responds to user interaction.
 
 ---
+<!-- Description goes here -->

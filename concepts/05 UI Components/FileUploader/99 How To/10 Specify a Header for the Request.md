@@ -108,4 +108,18 @@ Use the [uploadHeaders](/api-reference/10%20UI%20Components/dxFileUploader/1%20C
     }
     export default App;
 
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileUploader()
+        .UploadHeaders(headers)
+    )
+    </form>
+
+    <script>
+        var headers = {
+            YourHeaderName: 'YourHeaderValue'
+        }
+    </script>
+
 ---

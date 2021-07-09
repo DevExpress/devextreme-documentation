@@ -1,6 +1,6 @@
 ---
 id: dxTreeListToolbarItem
-type: Object
+inherits: dxToolbarItem
 ---
 ---
 ##### shortDescription

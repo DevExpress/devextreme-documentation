@@ -15,9 +15,6 @@ Information about the currently processed shape.
 ##### field(data.item): dxDiagramShape
 The processed shape's object.
 
-##### return: void
-<!-- Description goes here -->
-
 ---
 The template content must be presented as SVG elements.
 

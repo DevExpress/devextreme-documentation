@@ -1,6 +1,6 @@
 ---
 id: dxDataGridToolbarItem
-type: Object
+inherits: dxToolbarItem
 ---
 ---
 ##### shortDescription

@@ -111,3 +111,7 @@ The **PivotGridDataSource** state - fields configuration, filters, expanded head
     export default App;
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/StatePersistence/"
+}

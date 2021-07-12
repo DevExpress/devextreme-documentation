@@ -11,6 +11,10 @@ Specifies how the field's values are combined into groups for the [headers](/con
 ---
 If the field's values are dates, specify this property with one of the accepted string values.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/VirtualScrolling/"
+}
+
 If the field's values are numbers, specify this property with a number that designates a step with which groups should be generated.
 
 #####See Also#####

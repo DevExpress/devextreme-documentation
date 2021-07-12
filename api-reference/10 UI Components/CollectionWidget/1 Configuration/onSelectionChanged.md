@@ -27,3 +27,4 @@ Model data. Available only if you use Knockout.
 The data of the items whose selection has been canceled.
 
 ---
+<!-- Description goes here -->

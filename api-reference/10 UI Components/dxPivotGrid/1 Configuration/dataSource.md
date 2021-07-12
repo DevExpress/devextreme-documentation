@@ -162,6 +162,9 @@ Use one of the following extensions to enable the server to process data accordi
 
     ---
 
+    #include common-demobutton with {
+        url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/"
+    }
 
 - **Any other data source**     
 Implement a [CustomStore](/concepts/05%20UI%20Components/PivotGrid/035%20Use%20CustomStore '/Documentation/Guide/UI_Components/PivotGrid/Use_CustomStore/').

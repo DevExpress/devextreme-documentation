@@ -50,3 +50,6 @@ The *row* area's fields.
 The index of the row to which the clicked cell belongs.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/DrillDown/"
+}

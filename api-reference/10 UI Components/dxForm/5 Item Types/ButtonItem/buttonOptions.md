@@ -124,3 +124,12 @@ See the [Button configuration](/api-reference/10%20UI%20Components/dxButton/1%20
 #include widgets-config-object-option-note with {
     optionName: "buttonOptions"
 }
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/",
+    name: "Validation"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/UpdateItemsDynamically/",
+    name: "Customize Fields at Runtime"
+}

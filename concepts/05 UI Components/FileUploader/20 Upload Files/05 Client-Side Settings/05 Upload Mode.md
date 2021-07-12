@@ -9,11 +9,14 @@ The following examples show how to configure the FileUploader for each upload mo
 - **Ajax upload**
 
     ---
-    #####jQuery
 
-        <!--HTML--><div id="fileUploaderContainer"></div>
+    ##### jQuery
 
-        <!--JavaScript-->$(function() {
+        <!--HTML-->
+        <div id="fileUploaderContainer"></div>
+
+        <!--JavaScript-->
+        $(function() {
             $("#fileUploaderContainer").dxFileUploader({
                 name: "file",
                 // Uncomment the following line to allow a user to upload multiple files
@@ -23,33 +26,112 @@ The following examples show how to configure the FileUploader for each upload mo
             });
         });
 
-    #####Angular
+    ##### Angular
 
-        <!--HTML-->
-        <dx-file-uploader
-            name="file"
+        <!-- tab: app.component.html -->
+        <dx-file-uploader id="fileUploader"
             <!-- Uncomment the following line to allow a user to upload multiple files -->
             <!-- [multiple]="true" -->
             uploadMode="useButtons" <!-- or "instantly" -->
             uploadUrl="https://mydomain.com/MyUploadService">
-        </dx-file-uploader>
+        </dx-file-uploader>  
 
-        <!--TypeScript-->
-        import { DxFileUploaderModule } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            // ...
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxFileUploaderModule
-            ],
-            // ...
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';    
+
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
         })
 
-    ---
+        export class AppComponent {
+            //...
+        }
 
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxFileUploaderModule } from 'devextreme-angular';
+        
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxFileUploaderModule
+            ],
+            //...
+        })
+        export class AppModule { }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxFileUploader
+                <!-- Uncomment the following line to allow a user to upload multiple files -->
+                <!-- :multiple="true" -->
+                upload-mode="useButtons" <!-- or "instantly" -->
+                upload-url="https://mydomain.com/MyUploadService">
+            </DxFileUploader>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';     
+
+        import { 
+            DxFileUploader
+        } from 'devextreme-vue/file-uploader';
+
+        export default {
+            components: {
+                DxFileUploader
+            },
+
+            data() {
+                return {
+                    //...
+                };
+            }
+        };
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+
+        import 'devextreme/dist/css/dx.light.css';
+
+        import FileUploader from 'devextreme-react/file-uploader';
+        
+        class App extends React.Component {
+            render() {
+                return (
+                    <FileUploader 
+                        {/* Uncomment the following line to allow a user to upload multiple files */}
+                        {/* multiple={true} */}
+                        uploadMode="useButtons" {/* or "instantly" */} 
+                        uploadUrl="https://mydomain.com/MyUploadService">
+                    </FileUploader>
+                );
+            }
+        }
+        export default App;
+
+    ##### ASP.NET Core Controls
+
+        <!--Razor C#-->
+        @(Html.DevExtreme().FileUploader()
+            // Uncomment the following line to allow a user to upload multiple files
+            // .Multiple(true)
+            .UploadMode(FileUploadMode.UseButtons) // or "instantly" 
+            .UploadUrl("https://mydomain.com/MyUploadService")
+
+    ---
 
 <!---->
 
@@ -58,14 +140,17 @@ The following examples show how to configure the FileUploader for each upload mo
     <!---->
 
     ---
-    #####jQuery
 
-        <!--HTML--><form action="https://mydomain.com/MyUploadService" method="post" enctype="multipart/form-data">
+    ##### jQuery
+
+        <!--HTML-->
+        <form action="https://mydomain.com/MyUploadService" method="post" enctype="multipart/form-data">
             <div id="fileUploaderContainer"></div>
             <input type="submit">
         </form>
 
-        <!--JavaScript-->$(function() {
+        <!--JavaScript-->
+        $(function() {
             $("#fileUploaderContainer").dxFileUploader({
                 name: "file",
                 // Uncomment the following lines to allow a user to upload multiple files
@@ -75,9 +160,9 @@ The following examples show how to configure the FileUploader for each upload mo
             });
         });
 
-    #####Angular
+    ##### Angular
 
-        <!--HTML-->
+        <!-- tab: app.component.html -->
         <form action="https://mydomain.com/MyUploadService" method="post" enctype="multipart/form-data">
             <dx-file-uploader
                 name="file"
@@ -89,19 +174,115 @@ The following examples show how to configure the FileUploader for each upload mo
             <input type="submit">
         </form>
 
-        <!--TypeScript-->
-        import { DxFileUploaderModule } from "devextreme-angular";
-        // ...
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';    
+
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+
         export class AppComponent {
-            // ...
+            //...
         }
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxFileUploaderModule } from 'devextreme-angular';
+        
         @NgModule({
+            declarations: [
+                AppComponent
+            ],
             imports: [
-                // ...
+                BrowserModule,
                 DxFileUploaderModule
             ],
-            // ...
+            //...
         })
+        export class AppModule { }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <form id="form"
+                method="post"
+                action="https://mydomain.com/MyUploadService"
+                enctype="multipart/form-data">
+                <DxFileUploader
+                    <!-- Uncomment the following line to allow a user to upload multiple files -->
+                    <!-- :multiple="true" -->
+                    <!-- name="files[]" -->
+                    upload-mode="useForm">
+                </DxFileUploader>
+                <input type="submit" >
+            </form>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';     
+
+        import { 
+            DxFileUploader
+        } from 'devextreme-vue/file-uploader';
+
+        export default {
+            components: {
+                DxFileUploader
+            },
+
+            data() {
+                return {
+                    //...
+                };
+            }
+        };
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+
+        import 'devextreme/dist/css/dx.light.css';
+
+        import FileUploader from 'devextreme-react/file-uploader';
+        
+        class App extends React.Component {
+            render() {
+                return (
+                    <form id="form" 
+                        method="post" 
+                        action="https://mydomain.com/MyUploadService"
+                        enctype="multipart/form-data">
+                        <FileUploader 
+                            {/* Uncomment the following line to allow a user to upload multiple files */}
+                            {/* multiple={true} */}
+                            {/* name="files[]" */}
+                            uploadMode="useForm">
+                        </FileUploader>
+                        <input type="submit"/>
+                    </form>
+                );
+            }
+        }
+        export default App;
+
+    ##### ASP.NET Core Controls
+
+        <!--Razor C#-->
+        <form id="form" method="post" enctype="multipart/form-data" action="https://mydomain.com/MyUploadService">
+            @(Html.DevExtreme().FileUploader()
+                // Uncomment the following line to allow a user to upload multiple files
+                // .Multiple(true)
+                // .Name("files[]")
+                .UploadMode(FileUploadMode.UseForm)
+            )
+        </form>
 
     ---
 

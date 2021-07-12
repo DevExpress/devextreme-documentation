@@ -162,6 +162,10 @@ This and the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataS
 
 ---
 
+#include common-demobutton with {
+    url: ""https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/
+}
+
 #####See Also#####
 - [Sorting by Summary Values](/concepts/05%20UI%20Components/PivotGrid/060%20Sorting/30%20Sorting%20in%20Code/30%20Sorting%20by%20Summary%20Values.md '/Documentation/Guide/UI_Components/PivotGrid/Sorting/#Sorting_in_Code/Sorting_by_Summary_Values')
 - **fields[]**.[allowSortingBySummary](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSortingBySummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSortingBySummary')

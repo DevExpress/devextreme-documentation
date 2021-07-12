@@ -231,3 +231,7 @@ dx.web.js, dx.all.js
 [note] If you create a **PivotGridDataSource** instance outside the UI component (as shown above), make sure to [dispose](/api-reference/30%20Data%20Layer/PivotGridDataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Methods/#dispose') of it when it is no longer used. If the instance is created inside the UI component, it will be disposed of automatically.
 
 #include datalayer-store-note-immutable with { name: "PivotGridDataSource" }
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/"
+}

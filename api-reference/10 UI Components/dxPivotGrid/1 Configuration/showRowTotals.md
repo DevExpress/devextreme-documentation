@@ -9,3 +9,7 @@ Specifies whether to display the Total rows. Applies only if [rowHeaderLayout](/
 
 ---
 Total rows show the summary values calculated for all previous hierarchy levels starting with the deepest expanded one.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/RunningTotals/"
+}

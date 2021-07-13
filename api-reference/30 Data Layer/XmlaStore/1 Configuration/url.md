@@ -92,3 +92,7 @@ This should be the MSMDPUMP.dll URL and usually has the following format: *http:
     export default App;
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/OLAPDataSource/"
+}

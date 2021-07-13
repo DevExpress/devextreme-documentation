@@ -8,3 +8,6 @@ default: 'Row Fields'
 The string to display instead of **Row Fields**.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/StandaloneFieldChooser/"
+}

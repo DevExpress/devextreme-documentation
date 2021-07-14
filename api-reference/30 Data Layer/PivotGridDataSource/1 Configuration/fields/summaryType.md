@@ -29,4 +29,8 @@ Applies a custom client-side aggregate function ([calculateCustomSummary](/api-r
 - *Any other type*      
 Applies a custom server-side aggregate function. Refer to [Server-Side Data Aggregation](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries/07%20Custom%20Aggregate%20Function/20%20Server-Side%20Data%20Aggregation.md '/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Custom_Aggregate_Function/Server-Side_Data_Aggregation') for more information.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ChartIntegration/"
+}
+
 You can implement the capability to select the summary type at runtime using instructions from the [Runtime Summary Type Selection](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries/35%20Runtime%20Summary%20Type%20Selection.md '/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Runtime_Summary_Type_Selection') article.

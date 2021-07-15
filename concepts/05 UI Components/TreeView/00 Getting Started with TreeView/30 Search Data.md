@@ -4,83 +4,55 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#treeList").dxTreeView({
+    $(function(){
+        $("#treeView").dxTreeView({ 
             // ...
-            filterRow: { visible: true },
-            searchPanel: { visible: true },
+            searchEnabled: true,
         });
     });
+
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-tree-list ... >
-        <!-- ... -->
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxo-search-panel [visible]="true"></dxo-search-panel>
-    </dx-tree-list>
+    <dx-tree-view ...
+        searchEnabled=true
+    >
+          <!-- ... -->
+    </dx-tree-view>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxTreeView ... >
-                <!-- ... -->
-                <DxFilterRow :visible="true" />
-                <DxSearchPanel :visible="true" />
-            </DxTreeView>
-        </div>
+        <DxTreeView ...
+            :search-enabled="true"
+        />
     </template>
+    // ...
 
-    <script>
-    import {
-        DxTreeView,
-        // ...
-        DxFilterRow,
-        DxSearchPanel
-    } from 'devextreme-vue/tree-list';
-
-    export default {
-        components: {
-            DxTreeView,
-            // ...
-            DxFilterRow,
-            DxSearchPanel
-        },
-        // ...
-    }
-    </script>
 
 ##### React
 
     <!-- tab: App.js -->
     import React from 'react';
+
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {
-        TreeView,
-        // ...
-        FilterRow,
-        SearchPanel
-    } from 'devextreme-react/tree-list';
+    import TreeView from 'devextreme-react/tree-view';
+    import products from './products';
 
     function App() {
+        // ...
+
         return (
-            <div className="App">
-                <TreeView ... >
-                    {/* ... */}
-                    <FilterRow visible={true} />
-                    <SearchPanel visible={true} />
-                </TreeView>
-            </div>
+            <TreeView ...
+                searchEnabled={true}
+            />
         );
     }
 
     export default App;
 
 ---
-
-Run the code and enter a value in a filter row cell or the search panel. Data is filtered according to this value.

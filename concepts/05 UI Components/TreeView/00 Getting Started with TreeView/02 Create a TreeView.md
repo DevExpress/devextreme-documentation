@@ -1,16 +1,17 @@
 ---
 ##### jQuery
 
-[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the following code to create a TreeView:
+[Add DevExtreme to your jQuery application](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/) and use the following code to create a TreeView:
 
     <!-- tab: index.js -->
     $(function() {
-        $("#treeList").dxTreeView({
+        $("#treeView").dxTreeView({
             // Configuration goes here
         });
     });
 
     <!-- tab: index.html -->
+    <!DOCTYPE html>
     <html>
         <head>
             <!-- ... -->
@@ -24,13 +25,13 @@
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">
-            <div id="treeList"></div>
+            <div id="treeView"></div>
         </body>
     </html>
 
     <!-- tab: index.css -->
-    #treeList {
-        height: 500px;
+    #treeView {
+        width: 300px;
     }
 
 ##### Angular
@@ -38,10 +39,11 @@
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a TreeView:
 
     <!-- tab: app.component.html -->
-    <dx-tree-list id="treeList"
+    <dx-tree-view 
+        id="treeView"
         <!-- Configuration goes here -->
     >
-    </dx-tree-list>
+    </dx-tree-view>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -58,8 +60,8 @@
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
 
+    import { AppComponent } from './app.component';
     import { DxTreeViewModule } from 'devextreme-angular';
 
     @NgModule({
@@ -76,8 +78,8 @@
     export class AppModule { }
 
     <!-- tab: app.component.css -->
-    #treeList {
-        height: 500px;
+    #treeView {
+        width: 300px;
     }
 
 ##### Vue
@@ -86,18 +88,17 @@
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxTreeView id="treeList">
-                <!-- Configuration goes here -->
-            </DxTreeView>
-        </div>
+        <DxTreeView 
+            id="treeView"
+            <!-- Configuration goes here -->
+        />
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxTreeView } from 'devextreme-vue/tree-list';
+    import { DxTreeView } from 'devextreme-vue/tree-view';
 
     export default {
         components: {
@@ -107,8 +108,8 @@
     </script>
 
     <style>
-    #treeList {
-        height: 500px;
+    #treeView {
+        width: 300px;
     }
     </style>
 
@@ -121,23 +122,22 @@
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { TreeView } from 'devextreme-react/tree-list';
+    import { TreeView } from 'devextreme-react/tree-view';
 
     function App() {
         return (
-            <div className="App">
-                <TreeView id="treeList">
-                    {/* Configuration goes here */}
-                </TreeView>
-            </div>
+            <TreeView 
+                id="treeView"
+                {/* Configuration goes here */}
+            />
         );
     }
 
     export default App;
 
     <!-- tab: App.css -->
-    #treeList {
-        height: 500px;
+    #treeView {
+        width: 300px;
     }
 
 ---

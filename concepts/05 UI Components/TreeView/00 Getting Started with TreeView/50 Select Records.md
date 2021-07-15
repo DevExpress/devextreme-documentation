@@ -8,201 +8,235 @@ To obtain the selected node's data, use the [onSelectionChanged](/Documentation/
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#treeList").dxTreeView({
+    $(function(){
+        $("#treeView").dxTreeView({ 
             // ...
-            selection: { mode: "single" },
-            onSelectionChanged: function(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
-                    }
-                });
-            },
+            selectionMode: "single",
+            selectByClick: true,        
+            onItemSelectionChanged: function(e) {
+                var selectedProduct = e.itemData;
+                if(selectedProduct.price) {
+                    $("#product-details").removeClass("hidden");
+                    $("#product-details > img").attr("src", selectedProduct.image);
+                    $("#product-details > .price").text("$" + selectedProduct.price);
+                    $("#product-details > .name").text(selectedProduct.name);
+                } else {
+                    $("#product-details").addClass("hidden");
+                }
+            }
         });
     });
 
     <!-- tab: index.html -->
+    <!DOCTYPE html>
     <html>
-        <!-- ... -->
+        <head>
+            <!-- ... -->
+        </head>
         <body class="dx-viewport">
-            <div id="app-container">
-                <div id="treeList"></div>
-                <p id="selected-employee"></p>
+            <div id="treeView"></div>
+            <div id="product-details" class="hidden">
+                <img src="" />
+                <div class="name"></div>
+                <div class="price"></div>
             </div>
         </body>
     </html>
 
     <!-- tab: index.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
+    #treeView, #product-details {
+        display: inline-block;
+        width: 300px;
     }
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
+    #product-details {
+        vertical-align: top;
+        width: 400px;
+        height: 420px;
+        margin-left: 20px;
     }
+
+    #product-details > img {
+        border: none;
+        height: 300px;
+        width: 400px;
+    }
+
+    #product-details > .name {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #product-details > .price {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <div id="app-container">
-        <dx-tree-list ...
-            (onSelectionChanged)="selectEmployee($event)">
-            <!-- ... -->
-            <dxo-selection mode="single"></dxo-selection>
-        </dx-tree-list>
-        <p id="selected-employee" *ngIf="selectedEmployee">
-            Selected employee: {{ selectedEmployee.FullName }}
-        </p>
+    <dx-tree-view ...
+        selectionMode="single"
+        selectByClick=true
+        (onItemSelectionChanged)="selectProduct($event)"
+    >
+        <div *dxTemplate="let product of 'productTemplate'">
+            {{ product.price ? product.name + "(" + product.price + ")" : product.name }}
+        </div>
+    </dx-tree-view>
+    <div id="product-details" *ngIf="currentProduct.price">
+        <img [src]="currentProduct.image" />
+        <div class="name">{{currentProduct.name}}</div>
+        <div class="price">${{ currentProduct.price }}</div>
     </div>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    import { Employee, EmployeesService } from './employees.service';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         // ...
-        selectedEmployee: Employee;
+        currentProduct: Product;
 
-        constructor(service: EmployeesService) {
+        constructor(service: ProductsService) {
             // ...
-            this.selectEmployee = this.selectEmployee.bind(this);
-        }
-        
-        selectEmployee(e) {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                if(employee) {
-                    this.selectedEmployee = employee;
-                }
-            });
+            this.currentProduct = this.products[0];
+        } 
+
+        selectProduct(e) {
+            this.currentProduct = e.itemData;
         }
     }
+
 
     <!-- tab: app.component.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
+    #treeView, #product-details {
+        display: inline-block;
+        width: 300px;
     }
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
+    #product-details {
+        vertical-align: top;
+        width: 400px;
+        height: 420px;
+        margin-left: 20px;
+    }
+
+    #product-details > img {
+        border: none;
+        height: 300px;
+        width: 400px;
+    }
+
+    #product-details > .name {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #product-details > .price {
+        text-align: center;
+        font-size: 24px;
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
+        <div>
             <DxTreeView ...
-                @selection-changed="selectEmployee">
-                <!-- ... -->
-                <DxSelection mode="single" />
-            </DxTreeView>
-            <p id="selected-employee" v-if="selectedEmployee">
-                Selected employee: {{ selectedEmployee.FullName }}
-            </p>
+                selectionMode="single"
+                :select-by-click="true"
+                @item-selection-changed="selectProduct" 
+            />
+            <div id="product-details" v-if="currentProduct.price">
+                <img :src="currentProduct.image" >
+                <div class="name">{{ currentProduct.name }}</div>
+                <div class="price">${{ currentProduct.price }}</div> 
+            </div>
         </div>
     </template>
 
     <script>
-    import {
-        DxTreeView,
-        // ...
-        DxSelection
-    } from 'devextreme-vue/tree-list';
+    import DxTreeView from 'devextreme-vue/tree-view';
+    import products from './products';
 
     export default {
         components: {
-            DxTreeView,
-            // ...
-            DxSelection
+            DxTreeView
         },
         data() {
             return {
                 // ...
-                selectedEmployee: undefined,
+                currentProduct: products[0],
             }
         },
         methods: {
-            selectEmployee(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        this.selectedEmployee = employee;
-                    }
-                });
+            selectProduct(e) {
+                this.currentProduct = e.itemData;
             }
         }
     }
     </script>
 
     <style>
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
+        #treeView, #product-details {
+            display: inline-block;
+            width: 300px;
+        }
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+        #product-details {
+            vertical-align: top;
+            width: 400px;
+            height: 420px;
+            margin-left: 20px;
+        }
+
+        #product-details > img {
+            border: none;
+            height: 300px;
+            width: 400px;
+        }
+
+        #product-details > .name {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #product-details > .price {
+            text-align: center;
+            font-size: 24px;
+        }
     </style>
+
 
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-    import './App.css';
-
-    import {
-        TreeView,
-        Column,
-        // ...
-        Selection
-    } from 'devextreme-react/tree-list';
-
-    function SelectedEmployee(props) {
-        if(props.employee) {
-            return (
-                <p id="selected-employee">
-                    Selected employee: {props.employee.FullName}
-                </p>
-            );
-        }
-        return null;
-    }
-
+    // ...
     function App() {
-        const [selectedEmployee, setSelectedEmployee] = useState();
-        const selectEmployee = (e) => {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                setSelectedEmployee(employee);
-            });
+        const [selectedNode, setSelectedNode] = useState(products[0]);
+        const selectProduct = (e) => {
+            setSelectedNode(e.itemData);
         }
-
+        // ...
         return (
-            <div className="App">
+            <div>
                 <TreeView ...
-                    onSelectionChanged={selectEmployee}>
-                    {/* ... */}
-                    <Selection mode="single" />
-                </TreeView>
-                <SelectedEmployee employee={selectedEmployee} />
+                    selectionMode="single"
+                    selectByClick={true}
+                    onItemSelectionChanged={selectProduct}
+                />
+                {
+                    selectedNode.price &&
+                    <div id="product-details">
+                    <img src={selectedNode.image}/>
+                    <div className="name">{selectedNode.name}</div>
+                    <div className="price">{`$${ selectedNode.price}`}</div>
+                    </div>
+                }
             </div>
         );
     }
@@ -210,16 +244,33 @@ To obtain the selected node's data, use the [onSelectionChanged](/Documentation/
     export default App;
 
     <!-- tab: App.css -->
-    /* ... */
-    .App {
-        width: 900px;
-        position: relative;
+    #treeView, #product-details {
+        display: inline-block;
+        width: 300px;
+        margin: 10px;
     }
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
+    #product-details {
+        vertical-align: top;
+        width: 400px;
+        height: 420px;
+        margin-left: 20px;
+    }
+
+    #product-details > img {
+        border: none;
+        height: 300px;
+        width: 400px;
+    }
+
+    #product-details > .name {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #product-details > .price {
+        text-align: center;
+        font-size: 24px;
     }
 
 ---

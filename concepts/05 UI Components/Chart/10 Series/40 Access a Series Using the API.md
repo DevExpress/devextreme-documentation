@@ -29,7 +29,6 @@ Gets all series of the Chart.
             ],
             // ...
         })
-
     
     ##### Vue
 
@@ -194,7 +193,7 @@ Gets a series by its index in the [series](/api-reference/10%20UI%20Components/d
             // ...
         })
 
-        ##### Vue
+    ##### Vue
 
         <!-- tab: App.vue -->
         <template> 
@@ -284,51 +283,51 @@ Apart from the API methods, you can access a series in the event handlers. For e
         // ...
     })
     
-    ##### Vue
+##### Vue
 
-        <!-- tab: App.vue -->
-        <template> 
-            <DxChart @series-click="onSeriesClick">
-            </DxChart>
-        </template>
+    <!-- tab: App.vue -->
+    <template> 
+        <DxChart @series-click="onSeriesClick">
+        </DxChart>
+    </template>
 
-        <script>
-        import DxChart from 'devextreme-vue/chart';
+    <script>
+    import DxChart from 'devextreme-vue/chart';
 
-        export default {
-            components: {
-                DxChart
-            },
-            methods: {
-                onSeriesClick (e) {
-                    const series = e.target;
-                    // ...
-                }
+    export default {
+        components: {
+            DxChart
+        },
+        methods: {
+            onSeriesClick (e) {
+                const series = e.target;
+                // ...
             }
         }
-        </script>
+    }
+    </script>
 
-    ##### React
+##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart onSeriesClick={onSeriesClick}>
-                    </Chart>
-                );
-            }
+    class App extends React.Component {
+        render() {
+            return (
+                <Chart onSeriesClick={onSeriesClick}>
+                </Chart>
+            );
         }
+    }
 
-        function onSeriesClick (e) {
-            const series = e.target;
-            // ...
-        }
+    function onSeriesClick (e) {
+        const series = e.target;
+        // ...
+    }
 
-        export default App;
+    export default App;
 
 ---
 

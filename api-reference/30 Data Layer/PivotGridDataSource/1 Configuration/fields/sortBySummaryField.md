@@ -163,7 +163,7 @@ This and the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataS
 ---
 
 #include common-demobutton with {
-    url: ""https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/"
 }
 
 #####See Also#####

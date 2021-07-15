@@ -73,14 +73,12 @@ Gets all points of the series.
                 super(props);
                 this.chartRef = React.createRef();
             }
-
             render() {
                 return (
                     <Chart ref={this.chartRef} ... >
                     </Chart>
                 );
             }
-
             getSeriesPoints () {
                 const series = this.chartRef.current.instance.getSeriesByName("Series 1");
                 const seriesPoints = series.getAllPoints();
@@ -162,14 +160,12 @@ Gets those points of the series that has a specific argument. Returns more than 
                 super(props);
                 this.chartRef = React.createRef();
             }
-
             render() {
                 return (
                     <Chart ref={this.chartRef} ... >
                     </Chart>
                 );
             }
-
             getChinaPoints () {
                 const series = this.chartRef.current.instance.getSeriesByName("Series 1");
                 const chinaPoints = series.getPointsByArg("China");
@@ -251,14 +247,12 @@ Gets a point by its index in the series. The index is zero-based.
                 super(props);
                 this.chartRef = React.createRef();
             }
-
             render() {
                 return (
                     <Chart ref={this.chartRef} ... >
                     </Chart>
                 );
             }
-
             getFirstPoint () {
                 const series = this.chartRef.current.instance.getSeriesByName("Series 1");
                 const firstPoint = series.getPointByPos(0);
@@ -340,14 +334,12 @@ Gets those points of the series that fall into the axis's [visual range](/api-re
                 super(props);
                 this.chartRef = React.createRef();
             }
-
             render() {
                 return (
                     <Chart ref={this.chartRef} ... >
                     </Chart>
                 );
             }
-
             getVisiblePoints () {
                 const series = this.chartRef.current.instance.getSeriesByName("Series 1");
                 const visiblePoints = series.getVisiblePoints();

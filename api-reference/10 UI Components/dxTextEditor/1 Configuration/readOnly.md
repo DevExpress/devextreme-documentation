@@ -1,7 +1,3 @@
----
-##### merge
-
----
 When this property is set to **true**, the following applies:
 
 - The editor's value cannot be changed using the UI.

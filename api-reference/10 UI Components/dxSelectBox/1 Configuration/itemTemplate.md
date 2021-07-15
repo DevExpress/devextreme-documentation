@@ -4,4 +4,4 @@
 
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Components\dxDropDownList\1 Configuration\onValueChanged.md' -->
+<!-- import * from 'api-reference\10 UI Components\DataExpressionMixin\1 Configuration\itemTemplate.md' -->

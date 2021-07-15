@@ -24,8 +24,15 @@ You can supply data to this structure using the **DataSource** object's [group](
 
 [note]Only one-level grouping is supported.
 
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/GroupedItems/",
+    name: "SelectBox"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/GroupedItems/",
+    name: "TagBox"
+}
+
 #####See Also#####
-- [SelectBox - Grouped Items Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/GroupedItems)
-- [TagBox - Grouped Items Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/GroupedItems)
 - [SelectBox - Grouping](/concepts/05%20UI%20Components/SelectBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/SelectBox/Grouping/')
 - [TagBox - Grouping](/concepts/05%20UI%20Components/TagBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/TagBox/Grouping/')

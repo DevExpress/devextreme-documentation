@@ -8,6 +8,7 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
         $("#treeView").dxTreeView({ 
             // ...
             searchEnabled: true,
+            searchMode: "startswith"
         });
     });
 
@@ -17,6 +18,7 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
     <!-- tab: app.component.html -->
     <dx-tree-view ...
         searchEnabled=true
+        searchMode="startswith"
     >
           <!-- ... -->
     </dx-tree-view>
@@ -27,6 +29,7 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
     <template>
         <DxTreeView ...
             :search-enabled="true"
+            search-mode="startswith"
         />
     </template>
     // ...
@@ -49,6 +52,7 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
         return (
             <TreeView ...
                 searchEnabled={true}
+                searchMode="startswith"
             />
         );
     }

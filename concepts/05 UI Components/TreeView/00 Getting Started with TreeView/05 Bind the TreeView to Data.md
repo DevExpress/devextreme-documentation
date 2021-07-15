@@ -4,7 +4,7 @@ If a data source has a plain structure, set the [dataStructure](/Documentation/A
 
 The TreeView component can load data from different data source types. To use a local array, assign it to the [items](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#items) property. 
 
-If you want to use a remote data source or apply the data-shaping API, use the dataSource property instead. The following articles explain how to do this for different data structures:
+To bind the TreeView to a data source, use the [dataSource](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource) property. The following articles explain how to do this for different data structures:
 
 - [Local Array](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/)
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
@@ -12,7 +12,7 @@ If you want to use a remote data source or apply the data-shaping API, use the d
 - [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
 - [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
 
-In this tutorial, we use the **items[]** property to bind a hierarchical array. 
+In this tutorial, we use a local hierarchical array. 
 
 ---
 ##### jQuery

@@ -1,8 +1,8 @@
 To enable node selection, set the [selectByClick](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick) property to **true**. If you want to add checkboxes for each node, set the [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode) property to *"normal"* or *"selectAll"*. The latter mode additionally displays the "Select All" checkbox at the top of the TreeView.
 
-The default selection mode is multiple. As an alternative, you can set the [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode) property to *"single"*.
+The default selection mode is multiple. As an alternative, you can set the [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode) property to *"single"* as in this demo.
 
-To obtain the selected node's data, use the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onSelectionChanged) function. In the code below, this function displays the selected book and its author:
+To obtain the selected node's data, use the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onSelectionChanged) function. In the code below, this function displays the selected product and its price:
 
 ---
 ##### jQuery
@@ -14,7 +14,7 @@ To obtain the selected node's data, use the [onSelectionChanged](/Documentation/
             selectionMode: "single",
             selectByClick: true,        
             onItemSelectionChanged: function(e) {
-                var selectedProduct = e.itemData;
+                const selectedProduct = e.itemData;
                 if(selectedProduct.price) {
                     $("#product-details").removeClass("hidden");
                     $("#product-details > img").attr("src", selectedProduct.image);

@@ -1,4 +1,4 @@
-If you use a large remote dataset, enable the Virtual Mode to enhance performance. In this mode, the TreeView loads a set of child nodes once a user expands the parent node for the first time. Refer to the [Virtual Mode](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/VirtualMode/) demo for details.
+If you use a large remote dataset, you can make the TreeView load data as a user expands nodes and thus enhance performance. To do this, enable the [Virtual Mode](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/VirtualMode/) or specify the [createChildren](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#createChildren) function as shown in the [Load Data on Demand](/Demos/WidgetsGallery/Demo/TreeView/LoadDataOnDemand) demo.
 
 For further information on the TreeView component, refer to the following resources:
 

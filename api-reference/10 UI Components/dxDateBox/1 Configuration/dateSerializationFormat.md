@@ -5,19 +5,9 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the date-time value serialization format. Use it only if you do not specify the [value](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#value') at design time.
+<!-- %shortDescription% -->
 
 ---
-Without a value, the UI component cannot detect its format. In this case, specify the **dateSerializationFormat** property that supports the following formats:
+<!-- %fullDescription% -->
 
-- `"yyyy-MM-dd"` - a local date  
-
-- `"yyyy-MM-ddTHH:mm:ss"` - local date and time  
-
-- `"yyyy-MM-ddTHH:mm:ssZ"` - the UTC date and time  
-
-- `"yyyy-MM-ddTHH:mm:ssx"` - date and time with a timezone
-
-This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
-
-[note] If you are going to change the **value** using the API, make sure that it has the same format that you specified in this property.
+<!-- import * from 'api-reference\10 UI Components\dxCalendar\1 Configuration\dateSerializationFormat.md' -->

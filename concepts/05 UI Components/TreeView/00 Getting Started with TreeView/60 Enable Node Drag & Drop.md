@@ -1,0 +1,1 @@
+Drag & Drop allows users to reorder nodes and change their hierarchy. For details, refer to the [Drag & Drop for Plain Data Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/DragAndDropPlainDataStructure/) demo.

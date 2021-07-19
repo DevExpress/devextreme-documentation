@@ -2,7 +2,7 @@
 id: dxHtmlEditorTableResizing.minRowHeight
 hidden: 
 type: Number
-default: 20
+default: 24
 ---
 ---
 ##### shortDescription

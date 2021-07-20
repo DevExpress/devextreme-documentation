@@ -1,7 +1,7 @@
 ---
-id: dxHtmlEditorTableResizing.minRowHeight
-type: Number
-default: 24
+id: dxCheckBox.Options.iconHeight
+type: Number | String
+default: undefined
 ---
 ---
 ##### shortDescription

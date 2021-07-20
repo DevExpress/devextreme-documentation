@@ -2,6 +2,6 @@ Exposes the [DevExpress.viz.map.projection](/api-reference/50%20Common/utils/viz
 
 Exports:
 
-        require("viz/vector_map/projection").add;
+        require("viz/vector_map").projection;
         // ===== or =====
         import { projection } from "devextreme/viz/vector_map/projection";

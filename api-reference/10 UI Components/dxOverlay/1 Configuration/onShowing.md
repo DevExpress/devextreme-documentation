@@ -20,6 +20,6 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ##### field(e.cancel): Boolean
-Allows you to hide the UI component.
+Allows you to cancel overlay showing.
 
 ---

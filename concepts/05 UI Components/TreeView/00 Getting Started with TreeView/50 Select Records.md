@@ -82,9 +82,8 @@ To obtain the selected node's data, use the [onSelectionChanged](/Documentation/
     <!-- tab: app.component.html -->
     <dx-tree-view ...
         selectionMode="single"
-        selectByClick=true
-        (onItemSelectionChanged)="selectProduct($event)"
-    >
+        selectByClick="true"
+        (onItemSelectionChanged)="selectProduct($event)">
         <div *dxTemplate="let product of 'productTemplate'">
             {{ product.price ? product.name + "(" + product.price + ")" : product.name }}
         </div>

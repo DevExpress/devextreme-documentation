@@ -31,7 +31,8 @@ In this tutorial, we use a local hierarchical array.
     <!-- tab: products.js -->
     const IMAGE_URL = "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/products/";
 
-    const products = [{
+    const products = [
+        {
             ID: "1",
             name: "Stores",
             expanded: true
@@ -273,8 +274,7 @@ In this tutorial, we use a local hierarchical array.
     <!-- tab: App.vue -->
     <template>
         <DxTreeView
-            ...
-            :data-source=products
+            :data-source="products"
             dataStructure="plain"
             keyExpr="ID"
             displayExpr="name"
@@ -423,7 +423,8 @@ In this tutorial, we use a local hierarchical array.
     <!-- tab: products.js -->
     const IMAGE_URL = "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/products/";
 
-    const products = [{
+    const products = [
+        {
             ID: "1",
             name: "Stores",
             expanded: true

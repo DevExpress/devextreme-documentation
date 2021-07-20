@@ -1,4 +1,4 @@
-Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled) property to add the search bar. Use the [searchMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode) property to specify whether items should contain (default), start with, or match the search string. In this tutorial, the search mode is *"startswith"*:
+The TreeView can display a search bar that allows users to search nodes. Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled) property to add the search bar. Use the [searchMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode) property to specify whether nodes should contain (default), start with, or match the search string. In this tutorial, search results include only nodes that start with the entered string:
 
 ---
 ##### jQuery
@@ -17,9 +17,8 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
 
     <!-- tab: app.component.html -->
     <dx-tree-view ...
-        searchEnabled=true
-        searchMode="startswith"
-    >
+        searchEnabled="true"
+        searchMode="startswith">
           <!-- ... -->
     </dx-tree-view>
 
@@ -38,14 +37,7 @@ Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import TreeView from 'devextreme-react/tree-view';
-    import products from './products';
-
+    // ...
     function App() {
         // ...
 

@@ -26,8 +26,7 @@ In this tutorial, we make specific nodes [expanded](/Documentation/ApiReference/
 
     <!-- tab: app.component.html -->
     <dx-tree-view ...
-        itemTemplate="productTemplate"
-    >
+        itemTemplate="productTemplate">
         <div *dxTemplate="let product of 'productTemplate'">
             {{ product.price ? product.name + " $(" + product.price + ")" : product.name }}
         </div>
@@ -38,8 +37,7 @@ In this tutorial, we make specific nodes [expanded](/Documentation/ApiReference/
     <!-- tab: App.vue -->
     <template>
         <DxTreeView ...
-            item-template="product-template"
-        >
+            item-template="product-template">
             <template #product-template="product">
                 {{ product.data.price ? product.data.name + " ($" + product.data.price + ")" : product.data.name }}
             </template>
@@ -50,14 +48,7 @@ In this tutorial, we make specific nodes [expanded](/Documentation/ApiReference/
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import TreeView from 'devextreme-react/tree-view';
-    import products from './products';
-
+    // ...
     function App() {
         const itemTemplate = (item) => {
             if (item.price) {

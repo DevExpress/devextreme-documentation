@@ -6,7 +6,7 @@
     // ...
     // Encode the `message` string with your favorite sanitizing tool
     // ...
-    DevExpress.ui.dialog.confirm(message, "Confirm changes");
+    DevExpress.ui.dialog.confirm(messageEncoded, "Confirm changes");
 
 This code produces the following output:
 

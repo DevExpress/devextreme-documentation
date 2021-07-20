@@ -27,7 +27,7 @@ Use 'messageHtml' instead.
 The dialog's message. Deprecated in favor of the **messageHtml** field.
 
 ##### field(options.messageHtml): String
-The dialog's message. Can contain HTML elements.
+<!-- %param(messageHtml)% -->
 
 ##### field(options.showTitle): Boolean
 Specifies whether to show the title. Defaults to **true**.
@@ -36,8 +36,6 @@ Specifies whether to show the title. Defaults to **true**.
 The dialog's title.
 
 ---
-The dialog's message can contain HTML markup. Make sure this markup is secure. 
-
 The **custom(options)** method only creates a dialog. To display it, call the dialog instance's **show()** method. This method returns a Promise. To identify the clicked button, implement a Promise fulfillment handler. The dialog result is passed to the handler and contains anything you return from the clicked button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') function. 
 
 In the following code, the clicked button is identified by its text. The **messageHtml** field contains text with HTML tags. 
@@ -158,3 +156,5 @@ In the following code, the clicked button is identified by its text. The **messa
 Call the **hide()** method to close the dialog before any button is clicked. In the following code, the dialog is closed after 5 seconds if a user does not click any button:
 
     setTimeout(function() { myDialog.hide(); }, 5000);
+
+<!-- import * from 'api-reference\50 Common\utils\ui\dialog\alert(messageHtml_title).md' -->

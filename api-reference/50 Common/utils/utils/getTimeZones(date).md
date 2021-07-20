@@ -20,7 +20,7 @@ The following code illustrates how to use this method:
 
     const timeZones = DevExpress.utils.getTimeZones(new Date(2020, 6, 21));
     // ===== or when using modules =====
-    import timeZoneUtils from 'devextreme/time_zone_utils';
+    import { timeZoneUtils } from 'devextreme/time_zone_utils';
     const timeZones = timeZoneUtils.getTimeZones(new Date(2020, 6, 21));
     // The timeZones constant contains the following array:
     // [

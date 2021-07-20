@@ -137,10 +137,11 @@ The Diagram UI component allows you to customize its UI tools with the following
       </dx-diagram>
 
       <!-- tab: app.component.ts -->
+      import { confirm } from 'devextreme/ui/dialog';
       // ...
       onCustomCommand(e) {
             if(e.name === "clear") {
-                  let result = dialog.confirm("Are you sure you want to clear the diagram? This action cannot be undone.", "Warning");
+                  let result = confirm("Are you sure you want to clear the diagram? This action cannot be undone.", "Warning");
                   result.then(
                   function(dialogResult) {
                         if(dialogResult) {
@@ -281,7 +282,7 @@ The Diagram UI component allows you to customize its UI tools with the following
       <script>
       import { DxDiagram, DxContextMenu, DxContextToolbox, DxPropertiesPanel, DxGroup, DxTab, 
       DxHistoryToolbar, DxViewToolbar, DxMainToolbar, DxCommand, DxToolbox } from 'devextreme-vue/diagram';
-      import dialog from 'devextreme/ui/dialog';
+      import { confirm } from 'devextreme/ui/dialog';
       import 'whatwg-fetch';
       export default {
       components: {
@@ -304,7 +305,7 @@ The Diagram UI component allows you to customize its UI tools with the following
       methods: {
             onCustomCommand(e) {
                   if(e.name === 'clear') {
-                        var result = dialog.confirm('Are you sure you want to clear the diagram? 
+                        var result = confirm('Are you sure you want to clear the diagram? 
                         This action cannot be undone.', 'Warning');
                         result.then(
                               function(dialogResult) {
@@ -324,11 +325,14 @@ The Diagram UI component allows you to customize its UI tools with the following
 ##### React
 
       <!-- tab: App.js -->
+      // ...
+      import { confirm } from 'devextreme/ui/dialog';
+      // ...
       class App extends React.Component {
             // ...
             onCustomCommand(e) {
                   if(e.name === 'clear') {
-                        var result = dialog.confirm('Are you sure you want to clear the diagram? 
+                        var result = confirm('Are you sure you want to clear the diagram? 
                               This action cannot be undone.', 'Warning');
                         result.then(
                               function(dialogResult) {

@@ -1,9 +1,9 @@
 To enable node selection, you can use the following properties:
 
-* [selectByClick](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick)
+* [selectByClick](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick)           
 Enables selection by click.
 
-* [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode)
+* [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode)           
 Adds checkboxes. Set this property to *"normal"* or *"selectAll"*. The latter additionally displays the "Select All" checkbox at the top of the TreeView.
 
 The TreeView supports multiple (default) and single [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode). The code below shows how to enable the single mode and selection by click.
@@ -88,7 +88,7 @@ To obtain the selected node's data, use the [onItemSelectionChanged](/Documentat
     <!-- tab: app.component.html -->
     <dx-tree-view ...
         selectionMode="single"
-        selectByClick="true"
+        [selectByClick]="true"
         (onItemSelectionChanged)="selectProduct($event)">
         <div *dxTemplate="let product of 'productTemplate'">
             {{ product.price ? product.name + "(" + product.price + ")" : product.name }}
@@ -152,10 +152,12 @@ To obtain the selected node's data, use the [onItemSelectionChanged](/Documentat
     <template>
         <div>
             <DxTreeView ...
-                selectionMode="single"
+                selection-mode="single"
                 :select-by-click="true"
                 @item-selection-changed="selectProduct" 
-            />
+            >
+                <!-- ... -->
+            </DxTreeView>
             <div id="product-details" v-if="currentProduct.price">
                 <img :src="currentProduct.image" >
                 <div class="name">{{ currentProduct.name }}</div>

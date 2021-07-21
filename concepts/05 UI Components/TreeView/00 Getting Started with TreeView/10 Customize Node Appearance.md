@@ -93,7 +93,8 @@ As an alternative to individual templates, you can set an [itemTemplate](/Docume
     <!-- tab: App.vue -->
     <template>
         <DxTreeView ...
-            item-template="product-template">
+            item-template="product-template"
+        >
             <template #product-template="product">
                 {{ product.data.price ? product.data.name + " ($" + product.data.price + ")" : product.data.name }}
             </template>

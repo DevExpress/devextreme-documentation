@@ -1,30 +1,35 @@
 $(function(){
-    $("#simple-treeview").dxTreeView({ 
-        items: products,
-        searchEnabled: true,
-        selectByClick: true,
-        selectionMode: "single",
-        virtualModeEnabled: true,
+    $("#treeView").dxTreeView({ 
+        dataSource: products,
+        dataStructure: "plain",
+        keyExpr: "ID",
+        displayExpr: "name",
+        parentIdExpr: "categoryId",
         itemTemplate: function(item) {
           if (item.price) {
-            return `<div> ${item.text} (${item.price}$) </div>`;
+            return `<div> ${item.name} ($${item.price}) </div>`;
           } else {
-              return `<div> ${item.text} </div>`;
+            return `<div> ${item.name} </div>`;
           }
         },
-        onItemClick: function(e) {
-            var item = e.itemData;
-            if(item.price) {
-                $("#product-details").removeClass("hidden");
-                $("#product-details > img").attr("src", item.image);
-                $("#product-details > .price").text("$" + item.price);
-                $("#product-details > .name").text(item.text);
-            } else {
-                $("#product-details").addClass("hidden");
-            }
+        searchEnabled: true,
+        searchMode: "startswith",
+        selectionMode: "single",
+        selectByClick: true,        
+        onItemSelectionChanged: function(e) {
+          const selectedProduct = e.itemData;
+          if(selectedProduct.price) {
+              $("#product-details").removeClass("hidden");
+              $("#product-details > img").attr("src", selectedProduct.image);
+              $("#product-details > .price").text("$" + selectedProduct.price);
+              $("#product-details > .name").text(selectedProduct.name);
+          } else {
+              $("#product-details").addClass("hidden");
+          }
         }
-    }).dxTreeView("instance");
-});
+    });
+  });
+  
 
 var products = [{
     id: "1",

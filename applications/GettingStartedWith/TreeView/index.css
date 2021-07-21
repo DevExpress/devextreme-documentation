@@ -1,5 +1,6 @@
-#simple-treeview, #product-details {
+#treeView, #product-details {
     display: inline-block;
+    width: 300px;
 }
 
 #product-details {
@@ -23,10 +24,6 @@
 #product-details > .price {
     text-align: center;
     font-size: 24px;
-}
-
-.dark #product-details > div {
-    color: #f0f0f0;
 }
 
 .hidden {

@@ -154,8 +154,7 @@ To obtain the selected node's data, use the [onItemSelectionChanged](/Documentat
             <DxTreeView ...
                 selection-mode="single"
                 :select-by-click="true"
-                @item-selection-changed="selectProduct" 
-            >
+                @item-selection-changed="selectProduct">
                 <!-- ... -->
             </DxTreeView>
             <div id="product-details" v-if="currentProduct.price">

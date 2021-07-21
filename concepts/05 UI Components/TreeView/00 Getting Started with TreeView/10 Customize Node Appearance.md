@@ -143,7 +143,7 @@ As an alternative to individual templates, you can set an [itemTemplate](/Docume
     function App() {
         return (
             <TreeView ...
-                itemTemplate={itemTemplate}
+                itemRender={itemTemplate}
             />
         );
     }

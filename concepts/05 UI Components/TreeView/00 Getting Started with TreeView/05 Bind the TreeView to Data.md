@@ -267,7 +267,8 @@ The TreeView supports plain and hierarchical data structures. To use plain data,
             keyExpr="ID"
             displayExpr="name"
             parentIdExpr="categoryId"
-        />
+        >
+        </DxTreeView>
     </template>
 
     <script>

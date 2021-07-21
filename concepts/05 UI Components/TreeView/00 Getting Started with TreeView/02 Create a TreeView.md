@@ -79,7 +79,8 @@
         <DxTreeView 
             id="treeView"
             <!-- Configuration goes here -->
-        />
+        >
+    </DxTreeView>
     </template>
 
     <script>

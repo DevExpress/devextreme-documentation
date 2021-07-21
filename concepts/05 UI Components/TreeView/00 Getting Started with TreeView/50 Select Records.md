@@ -237,9 +237,9 @@ To obtain the selected node's data, use the [onItemSelectionChanged](/Documentat
                 {
                     selectedNode.price &&
                     <div id="product-details">
-                    <img src={selectedNode.image}/>
-                    <div className="name">{selectedNode.name}</div>
-                    <div className="price">{`$${ selectedNode.price}`}</div>
+                        <img src={selectedNode.image}/>
+                        <div className="name">{selectedNode.name}</div>
+                        <div className="price">{`$${ selectedNode.price}`}</div>
                     </div>
                 }
             </div>

@@ -513,3 +513,5 @@ The TreeView supports plain and hierarchical data structures. To use plain data,
     export default products;
 
 ---
+
+If your dataset has a hierarchical structure, refer to the following demo for information on how to bind the TreeView to it: [Hierarchical Data Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/).

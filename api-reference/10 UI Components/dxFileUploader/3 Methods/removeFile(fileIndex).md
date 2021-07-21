@@ -9,14 +9,10 @@ Removes a file with the specified index.
 The file's index.
 
 ---
----
 
     <!-- tab: JavaScript -->
     var uploadControl = $("#uploaderContainer").dxFileUploader("instance");
-
     uploadControl.removeFile(1)
-
----
 
 [note] 
 The **removeFile** method is not supported in **useForm** [upload mode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode').

@@ -10,14 +10,9 @@ The index of the file for which the upload is cancelled.
 
 ---
 
----
-
     <!-- tab: JavaScript -->
     var uploadControl = $("#uploaderContainer").dxFileUploader("instance");
-
     uploadControl.abortUpload(1)
-
----
 
 [note]
 

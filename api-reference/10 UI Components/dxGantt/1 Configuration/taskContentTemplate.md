@@ -34,7 +34,7 @@ The task's resources.
 The task's size.
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+#include common-template-return-value
 
 ---
 

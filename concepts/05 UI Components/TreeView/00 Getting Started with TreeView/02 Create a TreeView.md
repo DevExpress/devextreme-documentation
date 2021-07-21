@@ -80,7 +80,7 @@
             id="treeView"
             <!-- Configuration goes here -->
         >
-    </DxTreeView>
+        </DxTreeView>
     </template>
 
     <script>

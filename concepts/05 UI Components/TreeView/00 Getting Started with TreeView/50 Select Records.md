@@ -4,7 +4,7 @@ To enable node selection, you can use the following properties:
 Enables selection by click.
 
 * [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode)
-Adds checkboxes to select each node. Set this property to *"normal"* or *"selectAll"*. The latter additionally displays the "Select All" checkbox at the top of the TreeView.
+Adds checkboxes. Set this property to *"normal"* or *"selectAll"*. The latter additionally displays the "Select All" checkbox at the top of the TreeView.
 
 The TreeView supports multiple (default) and single [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode). The code below shows how to enable the single mode and selection by click.
 

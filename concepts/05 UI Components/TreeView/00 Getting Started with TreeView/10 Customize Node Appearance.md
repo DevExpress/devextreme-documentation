@@ -19,6 +19,29 @@ As an alternative to individual templates, you can set an [itemTemplate](/Docume
         });
     });
 
+    <!-- tab: products.js -->
+    // ...
+
+    const products = [
+        {
+            ID: "1",
+            name: "Stores",
+            expanded: true
+        }, {
+            ID: "1_1",
+            categoryId: "1",
+            name: "Super Mart of the West",
+            expanded: true
+        }, 
+        // ... 
+        {
+            ID: "1_1_2",
+            categoryId: "1_1",
+            name: "Televisions",
+            expanded: true
+        }, 
+        // ...
+    ];
 
 ##### Angular
 
@@ -29,6 +52,41 @@ As an alternative to individual templates, you can set an [itemTemplate](/Docume
             {{ product.price ? product.name + " $(" + product.price + ")" : product.name }}
         </div>
     </dx-tree-view>
+
+    <!-- tab: products.js -->
+    // ...
+
+    export class Product {
+        ID: string;
+        name: string;
+        categoryId?: string;
+        expanded?: boolean;
+        image?: string;
+        price?: number;
+    }
+
+    const products: Product[] = [
+        {
+            ID: "1",
+            name: "Stores",
+            expanded: true
+        }, {
+            ID: "1_1",
+            categoryId: "1",
+            name: "Super Mart of the West",
+            expanded: true
+        }, 
+        // ... 
+        {
+            ID: "1_1_2",
+            categoryId: "1_1",
+            name: "Televisions",
+            expanded: true
+        }, 
+        // ...
+    ];
+
+    // ...
 
 ##### Vue
 
@@ -43,19 +101,46 @@ As an alternative to individual templates, you can set an [itemTemplate](/Docume
     </template>
     // ...
 
+    <!-- tab: products.js -->
+    // ...
+
+    const products = [
+        {
+            ID: "1",
+            name: "Stores",
+            expanded: true
+        }, {
+            ID: "1_1",
+            categoryId: "1",
+            name: "Super Mart of the West",
+            expanded: true
+        }, 
+        // ... 
+        {
+            ID: "1_1_2",
+            categoryId: "1_1",
+            name: "Televisions",
+            expanded: true
+        }, 
+        // ...
+    ];
+
+    export default products;
+
 ##### React
 
     <!-- tab: App.js -->
     // ...
-    function App() {
-        const itemTemplate = (item) => {
-            if (item.price) {
-                return `<div> ${item.name} ($${item.price}) </div>`;
-            } else {
-                return `<div> ${item.name} </div>`;
-            }
-        }
 
+    const itemTemplate = (item) => {
+        if (item.price) {
+            return `<div> ${item.name} ($${item.price}) </div>`;
+        } else {
+            return `<div> ${item.name} </div>`;
+        }
+    }
+
+    function App() {
         return (
             <TreeView ...
                 itemTemplate={itemTemplate}
@@ -64,5 +149,31 @@ As an alternative to individual templates, you can set an [itemTemplate](/Docume
     }
 
     export default App;
+
+    <!-- tab: products.js -->
+    // ...
+
+    const products = [
+        {
+            ID: "1",
+            name: "Stores",
+            expanded: true
+        }, {
+            ID: "1_1",
+            categoryId: "1",
+            name: "Super Mart of the West",
+            expanded: true
+        }, 
+        // ... 
+        {
+            ID: "1_1_2",
+            categoryId: "1_1",
+            name: "Televisions",
+            expanded: true
+        }, 
+        // ...
+    ];
+
+    export default products;
 
 ---

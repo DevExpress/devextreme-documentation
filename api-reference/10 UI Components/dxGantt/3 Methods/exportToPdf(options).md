@@ -30,8 +30,6 @@ The **exportToPdf** method allows you to save information about the Gantt chart'
 
 Use the following settings to export the Gantt chart to a PDF document:
 
----
-
     <!--JavaScript-->
     var gantt = $("#ganttContainer").dxGantt("instance");
     gantt.exportToPdf({
@@ -41,11 +39,7 @@ Use the following settings to export the Gantt chart to a PDF document:
         dateRange: "visible"
     });
 
----
-
 Use the following settings to process the PDF document when the export is complete:
-
----
 
     <!--JavaScript-->
     var gantt = $("#ganttContainer").dxGantt("instance");
@@ -57,14 +51,10 @@ Use the following settings to process the PDF document when the export is comple
     }).then(function(doc) { 
         doc.addPage(); 
         // your code
-        doc.save('customDoc.pdf');
+        doc.save('customDoc.pdf'); 
     });
 
----
-
 Use the following settings to print the exported PDF document:
-
----
 
     <!--JavaScript-->
     var gantt = $("#ganttContainer").dxGantt("instance");
@@ -77,9 +67,6 @@ Use the following settings to print the exported PDF document:
         doc.autoPrint(); 
         window.open(doc.output('your_url'), '_blank');
     });
-
-
----
 
 ---
 
@@ -281,5 +268,3 @@ Use the following settings to print the exported PDF document:
 
 
 ---
-
-

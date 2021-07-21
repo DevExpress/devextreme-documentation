@@ -17,27 +17,15 @@ You can use a selector string, jQuery object or DOM element to specify the **dia
 
 - String
 
-    ---
-
-        <!-- tab: JavaScript -->
-        dialogTrigger: '.open-button'
-
-    ---
+    <!-- tab: JavaScript -->
+    dialogTrigger: '.open-button'
 
 - jQuery object
-	 
-    ---
 
-        <!-- tab: JavaScript -->
-        dialogTrigger: $('.open-button')
-
-    ---
+    <!-- tab: JavaScript -->
+    dialogTrigger: $('.open-button')
 
 - DOM element
 
-    ---
-
-        <!-- tab: JavaScript -->
-        dialogTrigger: $('.open-button')[0]
-
-    ---
+    <!-- tab: JavaScript -->
+    dialogTrigger: $('.open-button')[0]

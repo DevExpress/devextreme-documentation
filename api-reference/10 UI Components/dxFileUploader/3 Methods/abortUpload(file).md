@@ -10,14 +10,9 @@ The file for which the upload is cancelled.
 
 ---
 
----
-
     <!-- tab: JavaScript -->
     var uploadControl = $("#uploaderContainer").dxFileUploader("instance");
-
     uploadControl.abortUpload(uploader.option('value[1]'))
-
----
 
 [note]
 

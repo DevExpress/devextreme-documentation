@@ -14,34 +14,21 @@ You can pass the date to the **scrollToDate** method in the following formats:
 
 - [Date](https://www.w3schools.com/js/js_date_formats.asp)
 
-    ---
-
-        <!--JavaScript-->
-        var gantt = $("#ganttContainer").dxGantt("instance");
-        gantt.scrollToDate(new Date("December 17, 2020"));
-        
-    ---
+    <!--JavaScript-->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.scrollToDate(new Date("December 17, 2020"));
 
 - Number - Specifies a date as a timestamp (total milliseconds since 1970/01/01). 
 
-    ---
-
-        <!--JavaScript-->
-        var gantt = $("#ganttContainer").dxGantt("instance");
-        gantt.scrollToDate(1876800000000);
-
-    ---
-
+    <!--JavaScript-->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.scrollToDate(1876800000000);
 
 - String - Specifies a date as a string value. 
 
-    ---
-
-        <!--JavaScript-->
-        var gantt = $("#ganttContainer").dxGantt("instance");
-        gantt.scrollToDate("2020/01/01");
-
-    ---
+    <!--JavaScript-->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.scrollToDate("2020/01/01");
 
 Note that the **scrollToDate** method scrolls to a date inside the current scroll area. You can zoom the chart to resize the viewport.
 

@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attributes</a> for the UI component's wrapper element.
+Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attributes</a> for the UI component's wrapper element. The wrapper is the first element in the UI component's container and ususally has the `dx-overlay-wrapper` class.
 
 ---
 ---
@@ -90,15 +90,17 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useMemo } from 'react';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
     function App() {
-        const {widgetName}Attributes = {
-            id: 'elementId',
-            class: 'class-name'
-        }
+        const {widgetName}Attributes = useMemo(() => {
+            return {
+                id: 'elementId',
+                class: 'class-name'
+            }
+        }, []);
 
         return (
             <{WidgetName} ...

@@ -20,6 +20,6 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel overlay showing.
+Set this field to **true** if you do not want the {WidgetName} to be displayed.
 
 ---

@@ -17,30 +17,18 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 
 - String
 
-    ---
-
-        <!-- tab: JavaScript -->
-        dropZone: '.test-div'
-
-    ---
+    <!-- tab: JavaScript -->
+    dropZone: '.test-div'
 
 - jQuery object
-	 
-    ---
 
-        <!-- tab: JavaScript -->
-        dropZone: $('.test-div')
-
-    ---
+    <!-- tab: JavaScript -->
+    dropZone: $('.test-div')
 
 - DOM element
 
-    ---
-
-        <!-- tab: JavaScript -->
-        dropZone: $('.test-div')[0]
-
-    ---
+    <!-- tab: JavaScript -->
+    dropZone: $('.test-div')[0]
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"

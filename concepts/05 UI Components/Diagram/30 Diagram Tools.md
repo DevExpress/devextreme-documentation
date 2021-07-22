@@ -137,22 +137,50 @@ The Diagram UI component allows you to customize its UI tools with the following
       </dx-diagram>
 
       <!-- tab: app.component.ts -->
-      // ...
-      onCustomCommand(e) {
-            if(e.name === "clear") {
-                  let result = dialog.confirm("Are you sure you want to clear the diagram? This action cannot be undone.", "Warning");
-                  result.then(
-                  function(dialogResult) {
-                        if(dialogResult) {
-                              e.component.import("");
+      import { confirm } from 'devextreme/ui/dialog';
+      
+      @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+      })
+      export class AppComponent {
+            // ...
+            onCustomCommand(e) {
+                  if(e.name === "clear") {
+                        let result = confirm("Are you sure you want to clear the diagram? This action cannot be undone.", "Warning");
+                        result.then(
+                        function(dialogResult) {
+                              if(dialogResult) {
+                                    e.component.import("");
+                              }
                         }
+                        );
                   }
-                  );
+                  else if (e.name == "sayHello")
+                        alert("Hello!")
             }
-            else if (e.name == "sayHello")
-                  alert("Hello!")
       }
-      // ...
+
+      <!-- tab: app.module.ts -->
+      import { BrowserModule } from '@angular/platform-browser';
+      import { NgModule } from '@angular/core';
+      import { AppComponent } from './app.component';
+
+      import { DxDiagramModule } from 'devextreme-angular';
+
+      @NgModule({
+            declarations: [
+                  AppComponent
+            ],
+            imports: [
+                  BrowserModule,
+                  DxDiagramModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+      })
+      export class AppModule { }
 
 ##### Vue
 
@@ -281,7 +309,7 @@ The Diagram UI component allows you to customize its UI tools with the following
       <script>
       import { DxDiagram, DxContextMenu, DxContextToolbox, DxPropertiesPanel, DxGroup, DxTab, 
       DxHistoryToolbar, DxViewToolbar, DxMainToolbar, DxCommand, DxToolbox } from 'devextreme-vue/diagram';
-      import dialog from 'devextreme/ui/dialog';
+      import { confirm } from 'devextreme/ui/dialog';
       import 'whatwg-fetch';
       export default {
       components: {
@@ -304,7 +332,7 @@ The Diagram UI component allows you to customize its UI tools with the following
       methods: {
             onCustomCommand(e) {
                   if(e.name === 'clear') {
-                        var result = dialog.confirm('Are you sure you want to clear the diagram? 
+                        var result = confirm('Are you sure you want to clear the diagram? 
                         This action cannot be undone.', 'Warning');
                         result.then(
                               function(dialogResult) {
@@ -324,11 +352,14 @@ The Diagram UI component allows you to customize its UI tools with the following
 ##### React
 
       <!-- tab: App.js -->
+      // ...
+      import { confirm } from 'devextreme/ui/dialog';
+      // ...
       class App extends React.Component {
             // ...
             onCustomCommand(e) {
                   if(e.name === 'clear') {
-                        var result = dialog.confirm('Are you sure you want to clear the diagram? 
+                        var result = confirm('Are you sure you want to clear the diagram? 
                               This action cannot be undone.', 'Warning');
                         result.then(
                               function(dialogResult) {

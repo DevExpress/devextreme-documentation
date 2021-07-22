@@ -122,11 +122,11 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
 
     <!--TypeScript-->
     import { DxProgressBarModule } from "devextreme-angular";
-    import dialog from "devextreme/ui/dialog";
+    import { alert } from "devextreme/ui/dialog";
     // ...
     export class AppComponent {
         handleComplete(e) {
-            dialog.alert('Completed');
+            alert('Completed');
         }
     }
     @NgModule({
@@ -152,7 +152,7 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxProgressBar } from 'devextreme-vue/progress-bar';
-    import dialog from "devextreme/ui/dialog";
+    import { alert } from "devextreme/ui/dialog";
 
     export default {
         components: {
@@ -160,7 +160,7 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
         },
         methods: {
             handleComplete() {
-                dialog.alert('Completed');
+                alert('Completed');
             }
         }
     }
@@ -172,7 +172,7 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
     import 'devextreme/dist/css/dx.light.css';
 
     import { ProgressBar } from 'devextreme-react/progress-bar';
-    import dialog from "devextreme/ui/dialog";
+    import { alert } from "devextreme/ui/dialog";
 
     class App extends React.Component {
         constructor(props) {
@@ -180,7 +180,7 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
         }
 
         onComplete() {
-            dialog.alert('Completed');
+            alert('Completed');
         }
 
         render() {

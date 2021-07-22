@@ -23,7 +23,7 @@
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import CustomStore from 'devextreme/data/odata/custom_store';
+    import CustomStore from 'devextreme/data/custom_store';
     import { createStore } from "devextreme-aspnet-data-nojquery";
 
     @Component({

@@ -99,7 +99,7 @@
     </template>
     <script>
     import Dx{WidgetName}, { ... } from 'devextreme-vue/{widget-name}';
-    import dialog from 'devextreme/ui/dialog';
+    import { confirm } from 'devextreme/ui/dialog';
     // ...
 
     export default {
@@ -111,7 +111,7 @@
         methods: {
             async ${{functionName}}(e) {
                 const isCanceled = async () => {
-                    const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
+                    const dialogResult = await confirm("Are you sure?", "Confirm changes");
                     if (dialogResult) {
                         let params = "?";
                         for (let key in e.newData) {
@@ -141,12 +141,12 @@
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
     
-    import dialog from 'devextreme/ui/dialog';
+    import { confirm } from 'devextreme/ui/dialog';
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
     async function ${{functionName}}(e) {
         const isCanceled = async () => {
-            const dialogResult = await dialog.confirm("Are you sure?", "Confirm changes");
+            const dialogResult = await confirm("Are you sure?", "Confirm changes");
             if (dialogResult) {
                 let params = "?";
                 for (let key in e.newData) {

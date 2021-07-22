@@ -32,3 +32,6 @@ Specifies a path to the folder that contains the DevExtreme `icons` and `fonts` 
 
 - `--remove-external-resources`     
 When present, removes links to external resources, such as fonts. The theme will use local fallbacks instead.
+
+- `--bootstrap-version` (available since v21.1.5)
+Specifies Bootstrap version 4 or 5 if `--input-file` is a `.scss` file (default: `4`).

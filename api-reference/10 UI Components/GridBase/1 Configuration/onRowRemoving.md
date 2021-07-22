@@ -115,7 +115,6 @@ This function allows you to intercept row removal and perform additional actions
     </template>
     <script>
     import Dx{WidgetName}, { ... } from 'devextreme-vue/{widget-name}';
-    import dialog from 'devextreme/ui/dialog';
     // ...
 
     export default {
@@ -147,7 +146,6 @@ This function allows you to intercept row removal and perform additional actions
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
     
-    import dialog from 'devextreme/ui/dialog';
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
     async function validateRemove(e) {

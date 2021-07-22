@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the tooltip text.
+Specifies text or HTML markup displayed in the tooltip.
 
 ---
-If the tooltip should be hidden by default, pass the tooltip text directly to the **tooltip** property.
+The {WidgetName} component evaluates this property's value. This makes {WidgetName} potentially vulnerable to XSS attacks. If the **tooltip**.**text** value comes from an untrusted source, encode it as demonstrated in the following help topic: [Potentially Vulnerable API - markers[].tooltip.text](/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/markers[]tooltiptext).

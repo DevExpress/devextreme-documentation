@@ -34,4 +34,4 @@ Specifies a path to the folder that contains the DevExtreme `icons` and `fonts` 
 When present, removes links to external resources, such as fonts. The theme will use local fallbacks instead.
 
 - `--bootstrap-version`     
-Specifies bootstrap version if `--input-file` is SCSS file for Bootstrap version 4 or 5. If this arguments is not defined Bootstrap 4 will be used.
+Specifies Bootstrap version 4 or 5 if `--input-file` is a `.scss` file (default: `4`).

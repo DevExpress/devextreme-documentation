@@ -20,6 +20,10 @@ This property accepts the following values:
 - *"dialog"*   
  Displays a dialog that suggests a user to choose between editing the entire series or only the individual instance.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"
+}
+
 The Scheduler handles changes made to an instance and a series differently. If a user edits a recurring appointment instance, two actions are performed on the data objects:
 
 - The series' data object is updated.

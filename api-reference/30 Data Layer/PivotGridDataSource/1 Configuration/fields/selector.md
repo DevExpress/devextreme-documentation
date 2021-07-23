@@ -277,5 +277,9 @@ Another example: a **selector** that places values below and over 1000 into diff
     value: "field's configuration"
 }
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/"
+}
+
 #####See Also#####
 - [Data Grouping](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping/020%20Data%20Grouping '/Documentation/Guide/UI_Components/PivotGrid/Grouping/#Data_Grouping')

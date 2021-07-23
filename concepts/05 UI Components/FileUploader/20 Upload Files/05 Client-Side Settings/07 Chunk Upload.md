@@ -5,7 +5,7 @@ Chunk upload allows large files to be divided into parts called "chunks" and sen
 }
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->$(function() {
         $("#fileUploaderContainer").dxFileUploader({
@@ -18,29 +18,111 @@ Chunk upload allows large files to be divided into parts called "chunks" and sen
 
     <!--HTML--><div id="fileUploaderContainer"></div>
 
-#####Angular
+##### Angular
 
-    <!--HTML-->
-    <dx-file-uploader
+    <!-- tab: app.component.html -->
+    <dx-file-uploader id="fileUploader"
         name="file"
         uploadMode="useButtons" <!-- or "instantly" -->
         uploadUrl="https://mydomain.com/MyUploadService"
-        [chunkSize]="400000"> <!-- 400 KB -->
-    </dx-file-uploader>
+        [chunkSize]="400000"> <!-- 400 KB -->>
+    </dx-file-uploader>  
 
-    <!--TypeScript-->
-    import { DxFileUploaderModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';    
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
-        // ...
+        //...
     }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileUploaderModule } from 'devextreme-angular';
+    
     @NgModule({
+        declarations: [
+            AppComponent
+        ],
         imports: [
-            // ...
+            BrowserModule,
             DxFileUploaderModule
         ],
-        // ...
+        //...
     })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileUploader
+            name="file"
+            :chunk-size="400000"
+            upload-mode="useButtons" <!-- or "instantly" -->
+            upload-url="https://mydomain.com/MyUploadService">
+        </DxFileUploader>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';     
+
+    import { 
+        DxFileUploader
+    } from 'devextreme-vue/file-uploader';
+
+    export default {
+        components: {
+            DxFileUploader
+        },
+
+        data() {
+            return {
+                //...
+            };
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import FileUploader from 'devextreme-react/file-uploader';
+    
+    class App extends React.Component {
+        render() {
+            return (
+                <FileUploader 
+                    name="file"
+                    chunkSize={400000}
+                    uploadMode="useButtons" {/* or "instantly" */} 
+                    uploadUrl="https://mydomain.com/MyUploadService">
+                </FileUploader>
+            );
+        }
+    }
+    export default App;
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileUploader()
+        .Name("file")
+        .UploadMode(FileUploadMode.UseButtons) // or "instantly" 
+        .UploadUrl("https://mydomain.com/MyUploadService")
+        .ChunkSize(400000)
+    )
 
 ---
 

@@ -28,8 +28,7 @@ The TreeView can display a search bar that allows users to search nodes. Enable 
     <template>
         <DxTreeView ...
             :search-enabled="true"
-            search-mode="startswith"
-        >
+            search-mode="startswith">
             <!-- ... -->
         </DxTreeView>
     </template>
@@ -41,8 +40,6 @@ The TreeView can display a search bar that allows users to search nodes. Enable 
     <!-- tab: App.js -->
     // ...
     function App() {
-        // ...
-
         return (
             <TreeView ...
                 searchEnabled={true}

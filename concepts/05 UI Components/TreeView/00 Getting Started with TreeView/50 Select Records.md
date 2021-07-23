@@ -158,8 +158,7 @@ In this tutorial, we enable selection by a click and use the single-node selecti
             <DxTreeView ...
                 selection-mode="single"
                 :select-by-click="true"
-                @item-selection-changed="selectProduct" 
-            >
+                @item-selection-changed="selectProduct">
                 <!-- ... -->
             </DxTreeView>
             <div id="product-details" v-if="currentProduct.price">

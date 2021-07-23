@@ -158,8 +158,14 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
 Refer to the [Series Types](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API Reference for a full list of properties available to a specific series type.
 
-<a href="/Demos/WidgetsGallery/Demo/Charts/Line/" class="button orange small fix-width-155" style="margin-right:5px;" target="_blank">Line Demo</a>
-<a href="/Demos/WidgetsGallery/Demo/Charts/Spline/" class="button orange small fix-width-155" target="_blank">Spline Demo</a>
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Line/",
+    name: "Line Series"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Spline/",
+    name: "Spline Series"
+}
 
 #####See Also#####
 - [Series](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/')

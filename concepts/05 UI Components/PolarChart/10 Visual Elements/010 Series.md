@@ -11,7 +11,7 @@ To set a series type, use the [type](/api-reference/_hidden/PolarChartSeries/typ
 		}
 	};
 
-To set data for a series, there are several approaches. You can set a common data source for all series or specify data for each series individually. For details, refer to the [Data Binding](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') section.
+To set data for a series, there are several approaches. You can set a common data source for all series or specify data for each series individually. For details, refer to the [Data Binding](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/) section.
 
 There can be several series displayed in the polar chart. In this instance, **series** is an array of series objects. You can specify series settings in the following three layers.
 

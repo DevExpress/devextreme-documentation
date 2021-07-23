@@ -15,7 +15,7 @@ To use the *'line'* series type, assign *'line'* to the [type](/api-reference/_h
         }
     };
 
-To learn how to specify data for a series, refer to the [Data Binding](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/85%20Charts%20-%20Data%20Binding/10%20Provide%20Data '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Charts_-_Data_Binding/Provide_Data/') topic. Note that, you can use DateTime and Numeric types for points in the data source, as well as the String type. By default, the data of the DateTime and Numeric types is displayed on continuous axes, while string values are displayed on discrete axes (you can manage the axes types using their **type** property). When continuous axes are used in the UI component, the line chart is displayed using a smooth curve.
+To learn how to specify data for a series, refer to the [Data Binding](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/) topic. Note that, you can use DateTime and Numeric types for points in the data source, as well as the String type. By default, the data of the DateTime and Numeric types is displayed on continuous axes, while string values are displayed on discrete axes (you can manage the axes types using their **type** property). When continuous axes are used in the UI component, the line chart is displayed using a smooth curve.
 
 ![Smooth PolarLineSeriesType ChartJS](/images/ChartJS/PolarLine_Smooth.png)
 

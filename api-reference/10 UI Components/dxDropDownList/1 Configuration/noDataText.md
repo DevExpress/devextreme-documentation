@@ -5,7 +5,7 @@ default: 'No data to display'
 ---
 ---
 ##### shortDescription
-The text or HTML markup displayed by the UI component if the item collection is empty.
+Specifies the text or HTML markup displayed by the UI component if the item collection is empty.
 
 ---
 <!-- %fullDescription% -->

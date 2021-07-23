@@ -262,13 +262,12 @@ The TreeView supports plain and hierarchical data structures. To use plain data,
 
     <!-- tab: App.vue -->
     <template>
-        <DxTreeView
-            // ...
+        <DxTreeView ...
             :data-source="products"
-            dataStructure="plain"
-            keyExpr="ID"
-            displayExpr="name"
-            parentIdExpr="categoryId"
+            data-structure="plain"
+            key-expr="ID"
+            display-expr="name"
+            parent-id-expr="categoryId"
         >
         </DxTreeView>
     </template>
@@ -395,8 +394,7 @@ The TreeView supports plain and hierarchical data structures. To use plain data,
 
     function App() {
         return (
-            <TreeView 
-                ...
+            <TreeView ...
                 dataSource={products}
                 dataStructure="plain"
                 keyExpr="ID"

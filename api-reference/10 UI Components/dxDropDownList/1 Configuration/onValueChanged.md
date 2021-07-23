@@ -29,3 +29,5 @@ The UI component's previous value.
 The UI component's new value.
 
 ---
+#####See Also#####
+- [valueChangeEvent]({basewidgetpath}/Configuration/#valueChangeEvent)

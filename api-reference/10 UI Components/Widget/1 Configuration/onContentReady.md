@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when the UI component's content is ready and each time the content is changed.
+A function that is executed when the UI component's content is ready.
 
 ##### param(e): Object
 Information about the event.
@@ -20,3 +20,9 @@ The UI component's instance.
 Model data. Available only when using Knockout.
 
 ---
+
+This function is also executed in the following cases:      
+
+- When the component is rendered for the first time
+- Each time the content is changed
+- When you call the [repaint()](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Methods/#repaint) method

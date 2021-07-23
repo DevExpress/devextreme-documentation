@@ -1,5 +1,5 @@
 $(function(){
-    $("#treeView").dxTreeView({ 
+    const treeView = $("#treeView").dxTreeView({ 
         dataSource: products,
         dataStructure: "plain",
         keyExpr: "ID",
@@ -27,7 +27,9 @@ $(function(){
               $("#product-details").addClass("hidden");
           }
         }
-    });
+    }).dxTreeView("instance");
+    
+    treeView.selectItem("1_1_2_3");
   });
   
 

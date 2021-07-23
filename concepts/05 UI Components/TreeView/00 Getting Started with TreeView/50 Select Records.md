@@ -1,14 +1,18 @@
-To enable node selection, you can use the following properties:
+To configure node selection, use the following properties:
 
 * [selectByClick](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick)           
-Enables selection by click.
+Enables selection by a click.
 
 * [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode)           
-Adds checkboxes. Set this property to *"normal"* or *"selectAll"*. The latter additionally displays the "Select All" checkbox at the top of the TreeView.
+Adds checkboxes if you set this property to *"normal"* or *"selectAll"*. The latter mode additionally displays the "Select All" checkbox at the top of the TreeView.
 
-The TreeView supports multiple (default) and single [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode). The code below shows how to enable the single mode and selection by click.
+* [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode)             
+Sets the selection mode to *"single"* or *"multiple"* (default).
 
-To obtain the selected node's data, use the [onItemSelectionChanged](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onItemSelectionChanged) function. In the following code, this function displays the selected product, its picture, and price:
+* [onItemSelectionChanged](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onItemSelectionChanged)           
+Specifies a function that is executed when a single node is selected or deselected.
+
+In this tutorial, we enable selection by a click and use the single-node selection mode. Also, we specify the **onItemSelectionChanged** function to display the selected product, its picture, and price.
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-The TreeView can display a search bar that allows users to search nodes. Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled) property to add the search bar. Use the [searchMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode) property to specify whether nodes should contain (default), start with, or match the search string. In this tutorial, search results include only nodes that start with the entered string:
+The TreeView can display a search bar that allows users to search nodes. Enable the [searchEnabled](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled) property to add the search bar. Use the [searchMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode) property to specify whether nodes should contain (default), start with, or match the search string. In this tutorial, search results include only nodes that start with the search string:
 
 ---
 ##### jQuery

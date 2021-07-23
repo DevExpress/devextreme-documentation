@@ -1,6 +1,6 @@
-The TreeView component displays textual data from a local or remote source in a hierarchical form.
+The TreeView component displays a tree of text nodes from a local or remote source.
 
-This tutorial shows how to add the TreeView to a page, bind it to data, and configure its core features. As a result, you will get a UI component that looks as follows:
+This tutorial shows how to create and configure the TreeView. As a result, you will get a UI component that looks as follows:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/TreeView/index.html, /Content/Applications/21_1/GettingStartedWith/TreeView/index.js, /Content/Applications/21_1/GettingStartedWith/TreeView/index.css"></div>
 

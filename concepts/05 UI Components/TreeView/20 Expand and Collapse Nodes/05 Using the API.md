@@ -97,7 +97,6 @@ You can use the [expandAll()](/api-reference/10%20UI%20Components/dxTreeView/3%2
                 this.expandAllNodes = this.expandAllNodes.bind(this);
                 this.collapseAllNodes = this.collapseAllNodes.bind(this);                
             }
-
             render() {
                 return (
                     <TreeView
@@ -105,15 +104,12 @@ You can use the [expandAll()](/api-reference/10%20UI%20Components/dxTreeView/3%2
                         ref={this.treeViewRef} />
                 );
             }
-
             expandAllNodes() {
                 this.treeView.expandAll();
             }
-            
             collapseAllNodes() {
                 this.treeView.collapseAll();
-            }  
-
+            }
             get treeView() {
                 return this.treeViewRef.current.instance;
             }    
@@ -219,7 +215,6 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Components/dxTreeView/3%20Me
                 this.expandNode = this.expandNode.bind(this);
                 this.collapseNode = this.collapseNode.bind(this);
             }
-
             render() {
                 return (
                     <TreeView
@@ -227,15 +222,12 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Components/dxTreeView/3%20Me
                         ref={this.treeViewRef} />
                 );
             }
-
             expandNode(key) {
                 this.treeView.expandItem(key);
             }
-            
             collapseNode(key) {
                 this.treeView.collapseItem(key);
-            }  
-
+            }
             get treeView() {
                 return this.treeViewRef.current.instance;
             }    

@@ -9,6 +9,15 @@ notUsedInTheme:
 Specifies the type of a marker element. Setting this property makes sense only if the [layer type](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type') is *"marker"*.
 
 ---
-<a href="/Demos/WidgetsGallery/Demo/Vector_Map/ImageMarkers/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Image Markers Demo</a>
-<a href="/Demos/WidgetsGallery/Demo/Vector_Map/BubbleMarkers/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Bubble Markers Demo</a>
-<a href="/Demos/WidgetsGallery/Demo/Vector_Map/PieMarkers/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Pie Markers Demo</a>
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ImageMarkers/",
+    name: "Image Markers"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/BubbleMarkers/",
+    name: "Bubble Markers"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/PieMarkers/",
+    name: "Pie Markers"
+}

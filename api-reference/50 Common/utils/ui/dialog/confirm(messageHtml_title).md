@@ -11,7 +11,7 @@ Creates a confirmation dialog with a message and **Yes** and **No** buttons.
 A Promise that is resolved with a Boolean value indicating whether a user has clicked **Yes** or **No**. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ##### param(messageHtml): String
-The dialog's message. Can contain HTML elements.
+<!-- %param(messageHtml)% -->
 
 ##### param(title): String
 The dialog's title.
@@ -85,3 +85,5 @@ The dialog's title.
     export default App;
 
 ---
+
+<!-- import * from 'api-reference\50 Common\utils\ui\dialog\alert(messageHtml_title).md' -->

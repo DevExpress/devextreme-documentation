@@ -138,7 +138,10 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
 
 See the [RangeAreaSeries](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/') and [RangeBarSeries](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/') API Reference sections for a full list of properties available to a range series.
 
-<a href="/Demos/WidgetsGallery/Demo/Charts/RangeBar/" class="button orange small fix-width-155" target="_blank">Range Series Demos</a>
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/RangeBar/",
+    name: "Range Series"
+}
 
 #####See Also#####
 - [Series](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/')

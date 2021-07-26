@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attributes</a> for the UI component's wrapper element. The wrapper is the first element in the UI component's container and ususally has the `dx-overlay-wrapper` class.
+Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attributes</a> for the UI component's wrapper element. 
 
 ---
 ---
@@ -112,3 +112,17 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 
 
 ---
+
+The code above produces the markup similar to this:
+
+    <!--HTML--><div id="{widgetname}" class="dx-overlay dx-{widgetname}" ... > 
+    <!-- This is the root element. The dx{WidgetName} is attached to this element -->
+        <div id="elementId" class="dx-overlay-wrapper dx-{widgetname}-wrapper class-name" ... > 
+        <!-- This is the wrapper element. Customize this element to configure resize or dragging. -->
+            <div class="dx-{widgetname}-content" ... >
+            <!-- This is the content element. It displays the content specified in the `contentTemplate` property. -->
+                <!-- ... -->
+            </div>
+        </div>
+    </div>
+

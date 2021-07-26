@@ -6,7 +6,7 @@ inheritsType: dxTreeListToolbarItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures toolbar items' settings.
 
 ---
 <!-- Description goes here -->

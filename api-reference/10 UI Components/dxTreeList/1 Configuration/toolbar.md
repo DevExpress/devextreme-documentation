@@ -6,7 +6,7 @@ inheritsType: dxTreeListToolbar
 ---
 ---
 ##### shortDescription
-Configures toolbar.
+Customizes toolbar.
 
 ---
 
@@ -14,9 +14,7 @@ Configures toolbar.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/UICustomization/"
 }
 
-![DevExtreme TreeList - Toolbar](/images/TreeList/toolbar.png)
-
-The TreeList allows you to customize predefined items and add custom elements.
+Toolbar allows you to configure predefined items, add custom items, and reorder them all.
 
 **Predefined Items**
 
@@ -51,16 +49,18 @@ Predefined items include:
   <tr>
     <td><img src="/images/DataGrid/icons/toolbar_save.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Toolbar SaveButton" style="margin:1px; vertical-align:middle"/></td>
     <td><i>saveButton</i></td>
-    <td>editing.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode">mode</a> is set to <i>"batch"</i></td>
+    <td>editing.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode">mode</a> is set to <i>"batch"</i> and editing.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#allowUpdating">allowUpdating</a> is set to <b>true</b></td>
   </tr>
   <tr>
-    <td>SP</td>
+    <td><img src="/images/DataGrid/icons/toolbar_searchPanel.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Toolbar searchPanel" style="margin:1px; vertical-align:middle"/></td>
     <td><i>searchPanel</i></td>
     <td>searchPanel.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/searchPanel/#visible">visible</a> is set to <b>true</b></td>
   </tr>
 </table>
 
-To add a predefined item, add its string to the toolbar array. If you need to customize an item, add an object instead and specify the [name](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#name) and other [properties](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/).
+To add a predefined item, add its string to the toolbar array. If you need to configure an item, add an object instead and specify the [name](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#name) and other [properties](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/).
 
 **Custom Items**
-Custom items can display any html code.  To add such an item, specify its [template](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#template) and other properties. To embed a DevExtreme component, specify the widget and options properties instead.
+Custom items can display any html code.  To add such an item, specify its [template](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#template) and other properties. To embed a DevExtreme component, specify the [widget](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#widget) and other [properties](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/) instead.
+
+[note] If you use toolbar to specify a custom item and/or configure a predefined item, add corresponding strings for other used features. Otherwise, the TreeList will not display these controls.

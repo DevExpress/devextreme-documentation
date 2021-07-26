@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies HTML markup to insert into the appointment element.
+Specifies the HTML markup to be inserted into the appointment element.
 
 ---
 <!-- %fullDescription% -->

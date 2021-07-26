@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies HTML markup to insert into the toolbar item element.
+Specifies the HTML markup to be inserted into the toolbar item element.
 
 ---
 <!-- %fullDescription% -->

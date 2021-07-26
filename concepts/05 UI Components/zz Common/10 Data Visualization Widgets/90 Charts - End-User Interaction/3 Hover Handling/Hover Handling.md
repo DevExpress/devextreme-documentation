@@ -1,1 +1,0 @@
-This topic explains how to handle series and point hover events in the Chart and PieChart UI components.

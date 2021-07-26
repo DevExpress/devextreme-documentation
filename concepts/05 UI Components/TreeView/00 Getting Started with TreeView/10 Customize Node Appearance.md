@@ -134,9 +134,9 @@ You can also use additional fields to customize node appearance. For example, yo
 
     const itemTemplate = (item) => {
         if (item.price) {
-            return `<div> ${item.name} ($${item.price}) </div>`;
+            return `${item.name} ($${item.price})`;
         } else {
-            return `<div> ${item.name} </div>`;
+            return `${item.name}`;
         }
     }
 

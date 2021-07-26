@@ -4,6 +4,9 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies html code inserted into the toolbar item element.
+Specifies the HTML markup to be inserted into the toolbar item element.
 
 ---
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\_hidden\CollectionWidgetItem\html.md' -->

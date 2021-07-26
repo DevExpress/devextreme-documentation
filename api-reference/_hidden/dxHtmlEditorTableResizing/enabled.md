@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Allows you to resize tables.
+Enables users to resize tables.
 
 ---
 <!-- Description goes here -->

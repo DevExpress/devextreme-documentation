@@ -1,4 +1,4 @@
-To bind the TreeView to a local array, use the [dataSource](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource) property. The following articles explain how to do this for other storage types:
+To bind the TreeView to a local array, use the [dataSource](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource) property. Refer to the articles listed below for instructions on how to do this for other storage types:
 
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)

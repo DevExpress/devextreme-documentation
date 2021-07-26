@@ -158,7 +158,10 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
 Refer to the [Series Types](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/') section of the API Reference for a full list of properties available to a specific series type.
 
-<a href="/Demos/WidgetsGallery/Demo/Charts/Area/" class="button orange small fix-width-155" target="_blank">Area Series Demos</a>
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Area/",
+    name: "Area Series"
+}
 
 #####See Also#####
 - [Series](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/')

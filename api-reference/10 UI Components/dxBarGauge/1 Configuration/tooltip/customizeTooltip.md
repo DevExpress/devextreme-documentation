@@ -30,6 +30,3 @@ The tooltip's text or markup and color.
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Tooltip/"
 }
-
-#####See Also#####
-- [Customize Text](/concepts/05%20UI%20Components/zz%20Common/10%20Data%20Visualization%20Widgets/30%20Data%20Formatting/30%20Customize%20Text.md '/Documentation/Guide/UI_Components/Common/Data_Visualization_Widgets/Data_Formatting/#Customize_Text')

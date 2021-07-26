@@ -2,5 +2,11 @@ RangeSelector provides the capability to perform actions when a selected range i
 
 The function assigned to the **onValueChanged** property can be called either when moving a slider or after the movement has been completed. To specify when the **onValueChanged** function should be called, use the **behavior**.[callValueChanged](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/behavior/callValueChanged.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#callValueChanged') property. 
 
-<a href="/Demos/WidgetsGallery/Demo/Range_Selector/UseRangeSelectionForCalculation/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Use Range Selection for Calculation Demo</a>
-<a href="/Demos/WidgetsGallery/Demo/Range_Selector/UseRangeSelectionForFiltering/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Use Range Selection for Filtering Demo</a>
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/UseRangeSelectionForCalculation/",
+    name: "Use Range Selection for Calculation"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/UseRangeSelectionForFiltering/",
+    name: "Use Range Selection for Filtering"
+}

@@ -117,7 +117,7 @@ The code above produces the markup similar to this:
 
     <!--HTML--><body>
         <div id="elementId" class="dx-overlay-wrapper dx-{widgetname}-wrapper class-name" ... > 
-        <!-- This is the wrapper element. Customize this element to configure resize, shading, or dragging. The wrapper belongs to an element defined in the `container` property. -->
+        <!-- This is the wrapper element. This element belongs to an element defined by the `container` property. -->
             <div class="dx-overlay-content">
             <!-- This element contains toolbars and component content. -->
                 <div class="dx-{widgetname}-content" ... >

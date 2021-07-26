@@ -264,9 +264,18 @@ Need one **argumentField** and four value fields: [openValueField](/api-referenc
 - **[Range Series](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/')**      
 Need one **argumentField** and two value fields: [rangeValue1Field](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/rangeValue1Field.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/#rangeValue1Field') and [rangeValue2Field](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/rangeValue2Field.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/#rangeValue2Field').
 
-<a href="/Demos/WidgetsGallery/Demo/Charts/Bubble/" class="button orange small fix-width-155" target="_blank">Bubble Series Demo</a>
-<a href="/Demos/WidgetsGallery/Demo/Charts/Stock/" class="button orange small fix-width-155" target="_blank">Financial Series Demo</a> 
-<a href="/Demos/WidgetsGallery/Demo/Charts/RangeBar/" class="button orange small fix-width-155" target="_blank">Range Series Demo</a> 
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/",
+    name: "Bubble Series"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Stock/",
+    name: "Stock Series"
+}
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/RangeBar/",
+    name: "RangeBar Series"
+}
 
 #####See Also#####
 - [Update Data in the Chart](/concepts/70%20Data%20Binding/03%20Update%20Data '/Documentation/Guide/Data_Binding/Update_Data/')

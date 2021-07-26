@@ -4,6 +4,9 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies HTML code inserted into the appointment element.
+Specifies the HTML markup to be inserted into the appointment element.
 
 ---
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\_hidden\CollectionWidgetItem\html.md' -->

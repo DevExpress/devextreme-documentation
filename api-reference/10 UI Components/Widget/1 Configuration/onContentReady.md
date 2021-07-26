@@ -21,8 +21,9 @@ Model data. Available only when using Knockout.
 
 ---
 
-This function is also executed in the following cases:      
+The **contentReady** event fires in the following cases:     
 
-- When the component is rendered for the first time
+- The component is rendered for the first time
+- The data is fully loaded
 - Each time the content is changed
-- When you call the [repaint()](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Methods/#repaint) method
+- The [repaint()](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Methods/#repaint) method

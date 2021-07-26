@@ -117,10 +117,11 @@ The code above produces the markup similar to this:
 
     <!--HTML--><body>
         <div id="elementId" class="dx-overlay-wrapper dx-{widgetname}-wrapper class-name" ... > 
-        <!-- This is the wrapper element. Customize this element to configure resize or dragging. -->
+        <!-- This is the wrapper element. Customize this element to configure resize, shading, or dragging. The wrapper belongs to an element defined in the `container` property. -->
             <div class="dx-overlay-content">
+            <!-- This element contains toolbars and component content. -->
                 <div class="dx-{widgetname}-content" ... >
-                <!-- This is the content element. It displays the content specified in the `contentTemplate` property. -->
+                <!-- This is the content element. It displays the component's content specified in the `contentTemplate` property. -->
                     <!-- ... -->
                 </div>
             </div>

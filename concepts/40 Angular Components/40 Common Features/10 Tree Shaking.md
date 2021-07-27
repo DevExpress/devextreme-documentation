@@ -9,3 +9,5 @@ If tree shaking is not configured in your application, import exports from speci
 
     <!--TypeScript-->
     import { DxButtonModule } from 'devextreme-angular/ui/button';
+
+[tags] angular

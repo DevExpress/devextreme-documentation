@@ -38,3 +38,5 @@ All DevExtreme UI component suites, including Angular, share architecture and co
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
 For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/concepts/40%20Angular%20Components/10%20Getting%20Started/02%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Angular_Components/Getting_Started/').
+
+[tags] angular

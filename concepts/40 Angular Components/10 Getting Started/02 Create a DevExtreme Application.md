@@ -49,3 +49,5 @@ For further information about DevExtreme Angular components, refer to the follow
 - [API Reference](/api-reference/10%20UI%20Components '/Documentation/ApiReference/UI_Components/')
 
 For more information about the structure and contents of the DevExtreme Angular Template, refer to the [DevExtreme Application Template](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/') article.
+
+[tags] angular

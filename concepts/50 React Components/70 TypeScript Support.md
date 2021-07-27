@@ -55,3 +55,5 @@ The following code shows an example of using TypeScript with DevExtreme componen
     }
 
     export default App;
+
+[tags] react

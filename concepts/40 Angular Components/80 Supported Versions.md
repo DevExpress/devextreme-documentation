@@ -36,3 +36,5 @@
         <td>angular_version_17_2</td>
     </tr>
 </table>
+
+[tags] angular

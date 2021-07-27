@@ -7,6 +7,25 @@ env:
 
 jobs:
 
+  validation:
+    runs-on: ubuntu-latest
+    name: Validation docs
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.nodeVersion }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Validation
+      run: npm run validate-docs
+
   build:
     runs-on: ubuntu-latest
     name: ContentMap

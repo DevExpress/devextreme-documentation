@@ -2,6 +2,6 @@
 ##### shortDescription
 [tags] expandedItem, expand
 
-Specifies an array of currently exapanded item keys.
+Specifies an array of currently expanded item keys.
 
 ---

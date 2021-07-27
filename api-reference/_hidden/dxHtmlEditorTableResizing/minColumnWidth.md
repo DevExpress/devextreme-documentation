@@ -8,4 +8,4 @@ default: 40
 The minimum column width.
 
 ---
-When the content width exceeds this property's value and users resize the column, the minimum column width equals to the content width if it is impossible to break content into lines. 
+When a column's content exceeds **minColumnWidth**, and it is impossible to break the content into several lines, the minimum column width equals the content width. For example, if **minColumnWidth** is 50 but a column's content requires 60 pixels, users can narrow the column down to 60 pixels only.

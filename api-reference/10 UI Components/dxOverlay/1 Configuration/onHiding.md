@@ -11,7 +11,7 @@ A function that is executed before the UI component is hidden.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Set this field to **true** if you want the {WidgetName} to be displayed.
+Set this field to **true** if you want the {WidgetName} to stay on the screen.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

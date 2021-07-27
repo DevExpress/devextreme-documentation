@@ -89,3 +89,5 @@ This article describes how to create an ASP.NET Core Angular application and add
 Run the application and navigate to the Fetch data page. You should see a DataGrid that displays weather forecast.
 
 #include ng-demos-and-code-examples
+
+[tags] angular

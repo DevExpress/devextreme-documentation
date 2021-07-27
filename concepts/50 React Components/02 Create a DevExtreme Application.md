@@ -15,3 +15,5 @@ For further information about DevExtreme React UI components, refer to the follo
 - [API Reference](/api-reference/10%20UI%20Components '/Documentation/ApiReference/UI_Components/')
 
 For more information about the structure and contents of the DevExtreme React Template, refer to the [DevExtreme Application Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/') article.
+
+[tags] react

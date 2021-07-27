@@ -24,3 +24,5 @@
         <td>react_version_18_2</td>
     </tr>
 </table>
+
+[tags] react

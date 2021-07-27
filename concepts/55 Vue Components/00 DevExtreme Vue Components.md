@@ -30,3 +30,5 @@ All DevExtreme UI component suites, including Vue, share architecture and core f
 We also provide [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
 For information on how to integrate DevExtreme Vue UI components into your application, refer to the [Add DevExtreme to a Vue Application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') article.
+
+[tags] vue

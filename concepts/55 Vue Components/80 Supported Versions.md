@@ -28,3 +28,5 @@
         <td>vue_version_18_2</td>
     </tr>
 </table>
+
+[tags] vue

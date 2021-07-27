@@ -23,3 +23,5 @@ Follow the instructions below to scaffold a component:
     ![DevExtreme Angular Component Scaffolding - The Add Angular Component window](/images/AngularComponentScaffolding/ng-scaffolding-add-component.png)
 
 The component and data service are created in the ClientApp\src\app\%componentname% folder, and the component is registered in the app.module.ts file.
+
+[tags] angular

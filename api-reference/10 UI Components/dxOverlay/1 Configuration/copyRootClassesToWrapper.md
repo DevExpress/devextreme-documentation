@@ -8,6 +8,8 @@ default: false
 Copies user-defined classes from the root element to the wrapper element. 
 
 ---
+This property allows you to configure a single {widgetName}'s wrapper element to customize shade, resize, or drag zone.
+
 
 The following markup illustrates relations between wrapper and root elements when you set **copyRootClassesToWrapper** to **true**:
 

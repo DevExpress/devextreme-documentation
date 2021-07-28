@@ -3,7 +3,7 @@ name: Node.js CI
 on: [push, pull_request]
 
 env:
-  node-version: 14.x
+  nodeVersion: 14.x
 
 jobs:
 

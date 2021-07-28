@@ -6,7 +6,7 @@ inheritsType: dxHtmlEditorTableResizing
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures table resize.
 
 ---
 <!-- Description goes here -->

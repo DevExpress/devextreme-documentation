@@ -33,7 +33,7 @@
   <MenuRule SourcePattern="Howto:^34 ASP.NET MVC Controls(.*?)" Destination="" />
   
   <MenuRule SourcePattern="Howto:^40 Angular Components/(.*?)" Destination="bb10 Angular/ab$1" Approach="Angular" />
-  <MenuRule SourcePattern="Howto:^40 Angular Components" Destination="" Approach="Angular" />
+  <MenuRule SourcePattern="Howto:^40 Angular Components" Destination="" />
   
   <MenuRule SourcePattern="Howto:^50 React Components/(02 Create a DevExtreme Application|05 Add DevExtreme to a React Application)" Destination="bb12 React/ab02 Getting Started/$1" Approach="React" />
   <MenuRule SourcePattern="Howto:^50 React Components/(.*?)" Destination="bb12 React/ab$1" Approach="React" />

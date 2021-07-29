@@ -113,7 +113,7 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 
 ---
 
-The code above specifies the `id` and `class` attributes for the wrapper element and produces the markup similar to this:
+The code above specifies the `id` and `class` attributes for the wrapper element and produces markup similar to this:
 
     <!--HTML--><body>
         <!-- The following is the wrapper element. -->

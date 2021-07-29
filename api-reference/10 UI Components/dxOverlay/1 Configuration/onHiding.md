@@ -11,7 +11,7 @@ A function that is executed before the UI component is hidden.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel overlay hiding.
+Set this field to **true** if you want the {WidgetName} to remain visible.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

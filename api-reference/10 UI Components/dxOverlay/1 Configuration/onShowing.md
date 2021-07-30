@@ -20,6 +20,6 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to **true** if you want to prevent the {WidgetName} from being displayed.
 
 ---

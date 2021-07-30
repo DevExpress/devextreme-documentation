@@ -22,4 +22,4 @@ To configure a UI component, pass an object to the plugin as shown in the follow
 #####See Also#####
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').[Configuration](/api-reference/10%20UI%20Components/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/')
 
-[tags]basics, jquery, create, configure, initialize, design time
+[tags] basics, jquery, create, configure, initialize, design time

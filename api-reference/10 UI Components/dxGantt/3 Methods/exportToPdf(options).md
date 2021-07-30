@@ -3,8 +3,6 @@ id: dxGantt.exportToPdf(options)
 ---
 ---
 ##### shortDescription
-[tags] ctp
-
 Exports Gantt chart data to a PDF document.
 
 ##### return: Promise<any>
@@ -268,3 +266,5 @@ Use the following settings to print the exported PDF document:
 
 
 ---
+
+[tags] ctp

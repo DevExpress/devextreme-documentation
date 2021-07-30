@@ -12,7 +12,7 @@ With the PivotGrid UI component you can organize fields related to a single dime
 
 [note] Fields with no area defined will not be displayed in the pivot grid, although, they will be available in the [Field Chooser](/api-reference/10%20UI%20Components/dxPivotGridFieldChooser '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/'), which can be used to put a field into an area.
 
-![](/Content/images/doc/21_1/DataGrid/PivotGrid_3D.png)
+![DevExtreme PivotGrid: Dimensions](/images/DataGrid/PivotGrid_3D.png)
 
 The order of fields in an area is significant, because the area is hierarchical and its fields define different hierarchy levels. Changing the order of hierarchy levels will change the meaning of your area. For example, consider the "time" dimension: if an area is configured as follows, data will be grouped by years and within each year - by months.
 
@@ -31,7 +31,7 @@ The order of fields in an area is significant, because the area is hierarchical 
 	// ...
 	]
 
-![](/Content/images/doc/21_1/DataGrid/PivotGridAreas_YearMonth.png)
+![DevExtreme PivotGrid: Data grouping](/images/DataGrid/PivotGridAreas_YearMonth.png)
 
 <!-- link to Data Grouping -->
 
@@ -54,7 +54,7 @@ Alternatively, you can group data by months and within months &#8212; by years.
 
 In this case, you will see data for each month summarized across all years. If you expand a month, you will see years (only those containing data of the expanded month) and the data will be split more precisely.
 
-![](/Content/images/doc/21_1/DataGrid/PivotGridAreas_MonthYear.png)
+![DevExtreme PivotGrid: Data grouped in reverse order of fields](/images/DataGrid/PivotGridAreas_MonthYear.png)
 
 The ordering of fields in an area is defined either by their position in the [fields](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') array or by the [areaIndex](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/areaIndex.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#areaIndex') property (if it is set). Note that the fields whose [areaIndex](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/areaIndex.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#areaIndex') property is set to a value (any value) will be displayed before fields with no **areaIndex** defined.
 

@@ -4,7 +4,6 @@ module: pdf_exporter
 ---
 ---
 ##### shortDescription
-[tags] ctp
 Exports grid data to a PDF file.
 
 ##### return: Promise<void>
@@ -226,3 +225,5 @@ You can call this method at any point in your application. In this example, we c
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
 }
+
+[tags] ctp

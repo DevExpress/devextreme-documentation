@@ -16,4 +16,4 @@ If the [header items](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping/02
 
     <!--JavaScript-->var columnField = sourceCell.field("column");
 
-![](/Content/images/doc/20_2/DataGrid/PivotGrid_field.png)
+![DevExtreme PivotGrid: Access a field](/images/DataGrid/PivotGrid_field.png)

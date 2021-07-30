@@ -16,4 +16,4 @@ The image below demonstrates what cell will be returned by the following code.
 
     <!--JavaScript-->var targetCell = sourceCell.grandTotal("row");
 
-![](/Content/images/doc/21_1/DataGrid/PivotGrid_GT.png)
+![DevExtreme PivotGrid: Access a Grand Total cell](/images/DataGrid/PivotGrid_GT.png)

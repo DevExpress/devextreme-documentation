@@ -5,10 +5,10 @@ default: false
 ---
 ---
 ##### shortDescription
-Copies user-defined classes from the root element to the wrapper element. 
+Copies your custom CSS classes from the root element to the wrapper element. 
 
 ---
-This property allows you to configure a single {widgetName}'s wrapper element to customize shade, resize, or drag zone.
+This property allows you to use CSS for wrapper element configuration. You can customize shade, resize, or drag zone.
 
 
 The following markup illustrates relations between wrapper and root elements when you set **copyRootClassesToWrapper** to **true**:
@@ -21,7 +21,7 @@ The following markup illustrates relations between wrapper and root elements whe
 
         
         <!-- The following is the wrapper element. -->
-        <!-- User-defined classes ("custom-class" in this example) are automatically copied from the root element. -->
+        <!-- Custom classes are automatically copied from the root element. -->
         <div class="dx-overlay-wrapper dx-{widgetname}-wrapper custom-class" ... > 
 
             <!-- The following element contains toolbars and component content. -->
@@ -30,4 +30,3 @@ The following markup illustrates relations between wrapper and root elements whe
             </div>
         </div>
     </body>
-

@@ -6,7 +6,7 @@ Enables selection by a click.
 * [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode)           
 Adds checkboxes if you set this property to *"normal"* or *"selectAll"*. The latter mode additionally displays the "Select All" checkbox at the top of the TreeView.
 
-* [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/selectionMode)             
+* [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode)             
 Sets the selection mode to *"single"* or *"multiple"* (default).
 
 * [onItemSelectionChanged](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onItemSelectionChanged)           

@@ -15,12 +15,11 @@ The following markup illustrates relations between wrapper and root elements whe
 
     <!--HTML--><body>
         
-        <!-- The following is the root element on which the component is initialized. -->
+        <!-- The following element is the root element on which the component is initialized. -->
         <!-- Specify classes to be copied to the wrapper element here. -->
         <div id="{widgetname}" class="custom-class" ... ></div>
-
         
-        <!-- The following is the wrapper element. -->
+        <!-- The following element is the wrapper element. -->
         <!-- Custom classes are automatically copied from the root element. -->
         <div class="dx-overlay-wrapper dx-{widgetname}-wrapper custom-class" ... > 
 

@@ -11,7 +11,7 @@ A color swatch is defined by scoped CSS rules that are prefixed with a specific 
         </div>
     </div>
 
-[important] Color swatches do not allow compiling different themes and should be based on a single theme (Generic, Generic Compact, or Material).
+[important] Color swatches should belong to the same theme as the main application theme (Generic, Generic Compact, or Material). For example, if the main application theme is Material, you can use only the color swatches that are based on the Material theme.
 
 You can generate color swatches with the DevExtreme CLI or ThemeBuilder UI:
 

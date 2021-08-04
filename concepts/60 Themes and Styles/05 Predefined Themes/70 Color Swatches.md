@@ -17,7 +17,7 @@ You can generate color swatches with the DevExtreme CLI or ThemeBuilder UI:
 
 * **<a href="https://github.com/DevExpress/devextreme-cli/blob/master/README.md" target="_blank">DevExtreme CLI</a>**        
 
-    The following command generates a new `custom` color swatch that uses Generic Dark as a base theme.
+    The following command generates a new `custom` color swatch that uses Generic Dark as a base theme:
 
         > devextreme build-theme –-base-theme="generic.dark" --make-swatch --output-color-scheme="dark"
         // ===== or without installing DevExtreme CLI globally =====

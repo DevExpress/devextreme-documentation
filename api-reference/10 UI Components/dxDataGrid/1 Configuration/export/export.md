@@ -4,8 +4,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-[tags] xlsx, csv
-
 Configures client-side exporting.
 
 ---
@@ -392,3 +390,5 @@ The following restrictions apply when users export DataGrid:
     name: "Export Multiple Grids",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/"
 }
+
+[tags] xlsx, csv

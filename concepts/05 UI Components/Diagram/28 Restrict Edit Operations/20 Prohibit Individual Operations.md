@@ -19,7 +19,7 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     </tr>
     <tr>
         <td>addShapeFromToolbox</td>
-        <td>A user starts dragging a shape from the toolbox / The UI component determines the visibility of a shape in the context toolbox.</td>
+        <td>The UI component determines the visibility of a shape in the toolbox or context toolbox.</td>
         <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/#allowAddShape">allowAddShape</a></td>
     </tr>
     <tr>

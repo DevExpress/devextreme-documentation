@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Copies your custom CSS classes from the root element to the wrapper element. 
+Copies your custom CSS classes from the root element to the wrapper element.
 
 ---
 This property allows you to use CSS for wrapper element configuration. You can customize the shade, resize, and drag zones.

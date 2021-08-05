@@ -4,7 +4,7 @@
 
 1. Use the <a href="http://requirejs.org/docs/commonjs.html#autoconversion" target="_blank">RequireJS conversion tool</a> to convert the DevExtreme modules from CommonJS to AMD and save them in the **devextreme_amd** directory:
 
-        npx r_js -convert node_modules/devextreme devextreme_amd
+        npx r_js -convert node_modules/devextreme/cjs devextreme_amd
 
 1. Add [DevExtreme themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') to your application. 
 

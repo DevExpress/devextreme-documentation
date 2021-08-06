@@ -10,7 +10,9 @@ Configures default item properties.
 ---
 Default property values are applied to newly created items if no other values are provided.
 
-    <!-- tab: index.js -->
+##### jQuery  
+
+    <!--JavaScript-->
     $(function() {
         $("#diagram").dxDiagram({
             nodes: {
@@ -25,3 +27,46 @@ Default property values are applied to newly created items if no other values ar
             }
         });
     });
+
+##### Angular
+
+    <!-- tab: app.component.html -->+
+    <dx-diagram #diagram id="diagram">
+        <dxo-nodes ... />
+        <dxo-default-item-properties 
+            connectorLineStart="outlinedTriangle" 
+            connectorLineEnd="none" 
+            connectorLineType="straight" 
+            style="fill: #d9d9d9; stroke: #999999" 
+            textStyle="font-weight: bold; text-decoration: underline">
+        </dxo-default-item-properties>
+    </dx-diagram>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <DxDiagram
+        id="diagram"
+        ref="diagram"
+    >
+        <DxNodes ... >
+        <DxDefaultItemProperties 
+            :connector-line-start="'outlinedTriangle'" 
+            :connector-line-end="'none'" 
+            :connector-line-type="'straight'" 
+            :style="'fill: #d9d9d9; stroke: #999999'" 
+            :text-style="'font-weight: bold; text-decoration: underline'"/>
+    </DxDiagram>
+##### React
+
+    <!-- tab: App.js -->
+    <Diagram id="diagram">
+        <Nodes ... />
+        <DefaultItemProperties 
+            connectorLineStart="outlinedTriangle" 
+            connectorLineEnd="none" 
+            connectorLineType="straight" 
+            textStyle="font-weight: bold; text-decoration: underline"/>
+    </Diagram>
+
+---

@@ -10,8 +10,7 @@ Indicates whether diagram content has been changed.
 ---
 The **hasChanges** property is set to **true** on any diagram change. You can use this property together with the [optionChanged](/api-reference/10%20UI%20Components/DOMComponent/4%20Events/optionChanged.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#optionChanged') event to implement diagram content autosave.
 
-#####jQuery
-
+    <!-- tab: index.js -->
     var autoSaveIntervalMs = 2000;
     var autoSaveTimeout = -1;
     $("#diagram").dxDiagram({

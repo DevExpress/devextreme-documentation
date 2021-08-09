@@ -1,6 +1,8 @@
 ---
 id: BarGaugeBarInfo
 type: Object
+module: viz/bar_gauge
+export: BarGaugeBarInfo
 ---
 ---
 ##### shortDescription

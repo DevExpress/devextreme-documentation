@@ -1,5 +1,7 @@
 ---
 id: dxTreeMapNode
+module: viz/tree_map
+export: dxTreeMapNode
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,8 @@
 id: BaseWidget
 inherits: DOMComponent
 hidden: 
+module: viz/core/base_widget
+export: default
 ---
 ---
 ##### shortDescription

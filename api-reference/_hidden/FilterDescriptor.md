@@ -1,6 +1,8 @@
 ---
 id: FilterDescriptor
 type: any
+module: data/index
+export: FilterDescriptor
 ---
 ---
 ##### shortDescription

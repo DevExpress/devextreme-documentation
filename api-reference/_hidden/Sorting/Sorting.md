@@ -1,6 +1,8 @@
 ---
 id: Sorting
 type: Object
+module: ui/gantt
+export: Sorting
 ---
 ---
 ##### shortDescription

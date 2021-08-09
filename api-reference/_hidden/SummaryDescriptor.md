@@ -1,6 +1,8 @@
 ---
 id: SummaryDescriptor
 type: Object
+module: data/index
+export: SummaryDescriptor
 ---
 ---
 ##### shortDescription

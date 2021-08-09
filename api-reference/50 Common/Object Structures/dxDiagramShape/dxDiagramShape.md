@@ -1,6 +1,8 @@
 ---
 id: dxDiagramShape
 inherits: dxDiagramItem
+module: ui/diagram
+export: dxDiagramShape
 ---
 ---
 ##### shortDescription

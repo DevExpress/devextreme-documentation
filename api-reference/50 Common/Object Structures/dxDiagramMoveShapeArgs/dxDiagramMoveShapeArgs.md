@@ -1,5 +1,7 @@
 ---
 id: dxDiagramMoveShapeArgs
+module: ui/diagram
+export: dxDiagramMoveShapeArgs
 ---
 ---
 ##### shortDescription

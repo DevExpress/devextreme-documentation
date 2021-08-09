@@ -2,6 +2,8 @@
 id: piePointObject
 type: Object
 inherits: basePointObject
+module: viz/pie_chart
+export: piePointObject
 ---
 ---
 ##### shortDescription

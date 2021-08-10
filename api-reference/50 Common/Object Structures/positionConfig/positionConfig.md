@@ -1,6 +1,8 @@
 ---
 id: PositionConfig
 type: Object
+module: animation/position
+export: PositionConfig
 ---
 ---
 ##### shortDescription

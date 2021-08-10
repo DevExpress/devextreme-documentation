@@ -1,6 +1,8 @@
 ---
 id: dxItem
 type: any
+module: ui/widget/ui.widget
+export: dxItem
 ---
 ---
 ##### shortDescription

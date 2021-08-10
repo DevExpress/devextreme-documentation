@@ -2,6 +2,8 @@
 id: BaseChart
 inherits: BaseWidget,DataHelperMixin
 hidden: 
+module: viz/chart_components/base_chart
+export: BaseChart
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,8 @@ id: CommonIndicator
 type: Object
 hidden: 
 inlineType: 
+module: viz/gauges/base_gauge
+export: CommonIndicator
 ---
 ---
 ##### shortDescription

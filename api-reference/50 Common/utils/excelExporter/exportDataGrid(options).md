@@ -1,6 +1,7 @@
 ---
 id: excelExporter.exportDataGrid(options)
 module: excel_exporter
+export: exportDataGrid
 ---
 ---
 ##### shortDescription

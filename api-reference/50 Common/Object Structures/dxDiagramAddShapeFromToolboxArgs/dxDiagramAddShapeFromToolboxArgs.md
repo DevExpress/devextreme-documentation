@@ -1,5 +1,7 @@
 ---
 id: dxDiagramAddShapeFromToolboxArgs
+module: ui/diagram
+export: dxDiagramAddShapeFromToolboxArgs
 ---
 ---
 ##### shortDescription

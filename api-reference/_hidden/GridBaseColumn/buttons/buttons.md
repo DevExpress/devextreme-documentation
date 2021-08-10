@@ -1,6 +1,8 @@
 ---
 id: GridBaseColumnButton
 type: Object
+module: ui/data_grid
+export: ColumnButtonBase
 ---
 ---
 ##### shortDescription

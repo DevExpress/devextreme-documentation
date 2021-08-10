@@ -1,6 +1,8 @@
 ---
 id: eventsHandler
 hidden: 
+module: events/index
+export: eventsHandler
 ---
 ---
 ##### shortDescription

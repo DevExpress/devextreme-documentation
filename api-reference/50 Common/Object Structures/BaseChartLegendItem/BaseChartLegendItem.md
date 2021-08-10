@@ -2,6 +2,8 @@
 id: BaseChartLegendItem
 type: Object
 inherits: BaseLegendItem
+module: viz/chart_components/base_chart
+export: BaseChartLegendItem
 ---
 ---
 ##### shortDescription

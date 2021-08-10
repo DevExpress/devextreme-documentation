@@ -1,5 +1,7 @@
 ---
 id: dxDiagramAddShapeArgs
+module: ui/diagram
+export: dxDiagramAddShapeArgs
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxSchedulerScrolling
+module: ui/scheduler
+export: dxSchedulerScrolling
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,8 @@
 id: dxPolarChartCommonAnnotationConfig
 type: Object
 inherits: BaseChartAnnotationConfig
+module: viz/polar_chart
+export: dxPolarChartCommonAnnotationConfig
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: chartAxisObject
 type: Object
+module: viz/chart
+export: chartAxisObject
 ---
 ---
 ##### shortDescription

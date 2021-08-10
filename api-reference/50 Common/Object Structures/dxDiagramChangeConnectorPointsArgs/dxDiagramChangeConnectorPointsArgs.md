@@ -1,5 +1,7 @@
 ---
 id: dxDiagramChangeConnectorPointsArgs
+module: ui/diagram
+export: dxDiagramChangeConnectorPointsArgs
 ---
 ---
 ##### shortDescription

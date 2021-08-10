@@ -1,6 +1,8 @@
 ---
 id: StringLengthRule
 type: Object
+module: ui/validation_rules
+export: StringLengthRule
 ---
 ---
 ##### shortDescription

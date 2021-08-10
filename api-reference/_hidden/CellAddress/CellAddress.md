@@ -1,6 +1,8 @@
 ---
 id: CellAddress
 type: Object
+module: excel_exporter
+export: CellAddress
 ---
 ---
 ##### shortDescription

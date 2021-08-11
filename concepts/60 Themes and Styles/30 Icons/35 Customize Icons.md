@@ -17,7 +17,7 @@ Since DevExtreme icons are shipped as an icon font, they can be customized with 
     <!--CSS-->
     #saveButton .dx-icon {
         font-size: 24px;
-        color: blue;
+        color: green;
     }
     
 ##### Angular  

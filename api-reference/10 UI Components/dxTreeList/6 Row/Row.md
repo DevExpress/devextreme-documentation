@@ -1,6 +1,8 @@
 ---
 id: dxTreeListRowObject
 type: Object
+module: ui/tree_list
+export: RowObject
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxSankeyLink
+module: viz/sankey
+export: dxSankeyLink
 ---
 ---
 ##### shortDescription

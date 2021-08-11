@@ -1,5 +1,7 @@
 ---
 id: DataChange
+module: ui/data_grid
+export: DataChange
 ---
 ---
 ##### shortDescription

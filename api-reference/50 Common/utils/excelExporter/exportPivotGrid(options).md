@@ -1,6 +1,7 @@
 ---
 id: excelExporter.exportPivotGrid(options)
 module: excel_exporter
+export: exportPivotGrid
 ---
 ---
 ##### shortDescription

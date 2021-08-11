@@ -1,6 +1,8 @@
 ---
 id: AnimationState
 type: Object
+module: animation/fx
+export: AnimationState
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: baseLabelObject
 type: Object
+module: viz/chart
+export: baseLabelObject
 ---
 ---
 ##### shortDescription

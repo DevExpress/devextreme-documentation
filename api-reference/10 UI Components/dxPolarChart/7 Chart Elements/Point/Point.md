@@ -2,6 +2,8 @@
 id: polarPointObject
 type: Object
 inherits: basePointObject
+module: viz/polar_chart
+export: polarPointObject
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,8 @@
 id: chartSeriesObject
 type: Object
 inherits: baseSeriesObject
+module: viz/chart
+export: chartSeriesObject
 ---
 ---
 ##### shortDescription

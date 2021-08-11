@@ -1,6 +1,8 @@
 ---
 id: EmailRule
 type: Object
+module: ui/validation_rules
+export: EmailRule
 ---
 ---
 ##### shortDescription

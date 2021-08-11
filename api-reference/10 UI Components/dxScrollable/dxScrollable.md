@@ -2,6 +2,8 @@
 id: dxScrollable
 inherits: DOMComponent
 hidden: 
+module: ui/scroll_view/ui.scrollable
+export: default
 ---
 ---
 ##### shortDescription

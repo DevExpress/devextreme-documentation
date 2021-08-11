@@ -1,6 +1,8 @@
 ---
 id: dxChartSeriesTypes
 type: Object
+module: viz/chart
+export: dxChartSeriesTypes
 ---
 ---
 ##### shortDescription

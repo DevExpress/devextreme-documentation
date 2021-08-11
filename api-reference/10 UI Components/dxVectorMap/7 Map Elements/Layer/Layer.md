@@ -1,5 +1,7 @@
 ---
 id: MapLayer
+module: viz/vector_map
+export: MapLayer
 ---
 ---
 ##### shortDescription

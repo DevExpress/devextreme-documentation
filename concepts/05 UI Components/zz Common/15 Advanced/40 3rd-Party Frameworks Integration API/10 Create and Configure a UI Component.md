@@ -1,4 +1,4 @@
-To create a UI component, call its constructor passing the target element and a configuration object. The target element may need to have additional style properties set, for example, data visualization UI components' **display** should be set to "block".
+To create a UI component, call its constructor passing the target element and a configuration object. You may need to set additional properties for the target element (for example, the **display** property of data visualization UI components should be set to "block").
 
     import Accordion from "devextreme/ui/accordion";
     ...

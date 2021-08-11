@@ -1,4 +1,4 @@
-To create a UI component, call its constructor passing the target element and a configuration object. The target element may need to have additional style properties set, for example, data visualization UI components' **display** should be set to "block".
+To create a UI component, call its constructor passing the target element and a configuration object. You may need to set additional properties for the target element (for example, the **display** property of data visualization UI components should be set to "block").
 
     import Accordion from "devextreme/ui/accordion";
     ...
@@ -8,6 +8,7 @@ To create a UI component, call its constructor passing the target element and a 
     let instance = new Accordion(element, options);
     ...
 
-If you do not use modules, access the UI component's constructor via the **DevExpress.ui** namespace.
+If you do not use modules, you can use the **DevExpress.ui** namespace to access constructors of most of the UI components. The exceptions are data visualization components: [VectorMap](/Documentation/ApiReference/UI_Components/dxVectorMap/), [RangeSelector](/Documentation/ApiReference/UI_Components/dxRangeSelector/), and all types of Charts and Gauges. These components belong to the **DevExpress.viz** namespace.
 
     let instance = new DevExpress.ui.dxAccordion(element, options);
+    let dataVizInstance = new DevExpress.viz.dxPolarChart(element, options);

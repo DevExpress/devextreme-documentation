@@ -5,7 +5,13 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the check box icon's width and height.
 
 ---
-<!-- Description goes here -->
+This property accepts a value of one of the following types:
+
+- **Number**  
+The height in pixels.
+
+- **String**  
+A CSS-accepted measurement of height. For example, `"55px"`, `"80%"`, `"inherit"`.

@@ -1,6 +1,8 @@
 ---
 id: dxPivotGridSummaryCell
 type: Object
+module: ui/pivot_grid/data_source
+export: dxPivotGridSummaryCell
 ---
 ---
 ##### shortDescription

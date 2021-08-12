@@ -1,6 +1,8 @@
 ---
 id: UserDefinedElement
 type: HTMLElement | SVGElement | jQuery
+module: core/element
+export: UserDefinedElement
 ---
 ---
 ##### shortDescription

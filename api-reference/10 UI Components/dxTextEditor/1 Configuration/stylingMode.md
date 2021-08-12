@@ -2,7 +2,7 @@
 id: dxTextEditor.Options.stylingMode
 acceptValues: 'outlined' | 'underlined' | 'filled'
 type: String
-default: 'outlined', 'underlined' (Material)
+default: 'outlined', 'filled' (Material)
 ---
 ---
 ##### shortDescription

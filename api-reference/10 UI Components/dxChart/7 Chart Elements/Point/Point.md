@@ -2,6 +2,8 @@
 id: chartPointObject
 type: Object
 inherits: basePointObject
+module: viz/chart
+export: chartPointObject
 ---
 ---
 ##### shortDescription

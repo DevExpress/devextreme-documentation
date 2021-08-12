@@ -7,7 +7,7 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies the currently displayed view. Accepts [name](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/name.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#name') or [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') of a view available in the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array.
+Specifies the displayed view. Accepts [name](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/name.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#name') or [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') of a view available in the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array.
 
 ---
 #include common-demobutton with {

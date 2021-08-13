@@ -1,5 +1,7 @@
 ---
 id: dxDiagramBeforeChangeShapeTextArgs
+module: ui/diagram
+export: dxDiagramBeforeChangeShapeTextArgs
 ---
 ---
 ##### shortDescription

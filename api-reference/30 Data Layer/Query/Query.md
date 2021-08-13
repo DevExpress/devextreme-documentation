@@ -1,6 +1,8 @@
 ---
 id: Query
 type: Object
+module: data/query
+export: Query
 ---
 ---
 ##### shortDescription

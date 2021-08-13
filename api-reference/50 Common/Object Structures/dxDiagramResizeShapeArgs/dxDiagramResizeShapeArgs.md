@@ -1,5 +1,7 @@
 ---
 id: dxDiagramResizeShapeArgs
+module: ui/diagram
+export: dxDiagramResizeShapeArgs
 ---
 ---
 ##### shortDescription

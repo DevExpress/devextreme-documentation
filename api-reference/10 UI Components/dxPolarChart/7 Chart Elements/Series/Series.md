@@ -2,6 +2,8 @@
 id: polarChartSeriesObject
 type: Object
 inherits: baseSeriesObject
+module: viz/polar_chart
+export: polarChartSeriesObject
 ---
 ---
 ##### shortDescription

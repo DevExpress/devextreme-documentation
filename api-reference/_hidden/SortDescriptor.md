@@ -1,6 +1,8 @@
 ---
 id: SortDescriptor
 type: Object
+module: data/index
+export: SortDescriptor
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: AnimationConfig
 type: Object
+module: animation/fx
+export: AnimationConfig
 ---
 ---
 ##### shortDescription

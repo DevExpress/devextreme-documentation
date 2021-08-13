@@ -1,6 +1,8 @@
 ---
 id: SelectDescriptor
 type: Object
+module: data/index
+export: SelectDescriptor
 ---
 ---
 ##### shortDescription

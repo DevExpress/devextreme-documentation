@@ -1,5 +1,7 @@
 ---
 id: dxDiagramChangeConnectionArgs
+module: ui/diagram
+export: dxDiagramChangeConnectionArgs
 ---
 ---
 ##### shortDescription

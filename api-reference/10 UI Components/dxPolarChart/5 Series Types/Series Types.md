@@ -1,6 +1,8 @@
 ---
 id: dxPolarChartSeriesTypes
 type: Object
+module: viz/polar_chart
+export: dxPolarChartSeriesTypes
 ---
 ---
 ##### shortDescription

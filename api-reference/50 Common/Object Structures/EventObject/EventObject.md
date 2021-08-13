@@ -1,5 +1,7 @@
 ---
 id: EventObject
+module: events/index
+export: EventObject
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: template
 type: String | function() | UserDefinedElement
+module: core/templates/template
+export: template
 ---
 ---
 ##### shortDescription

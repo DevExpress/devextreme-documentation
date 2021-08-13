@@ -2,6 +2,8 @@
 id: ExcelFont
 type: Object
 deprecated: 
+module: exporter/excel/excel.doc_comments
+export: ExcelFont
 ---
 ---
 ##### shortDescription

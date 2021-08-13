@@ -6,7 +6,7 @@ You can generate this application with the [DevExtreme CLI](/concepts/Common/Dev
     cd app-name
     npm run start
 
-The application already contains the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light) and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Angular/Light) UI components. You can find their configurations in the `src\pages\display-data\display-data.component.html` and `src\pages\profile\profile.component.html` files correspondingly. The following instructions show how to employ any other DevExtreme UI component using the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/Angular/Light) UI component as an example:
+The application already contains the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light) and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Angular/Light) UI components. You can find their configurations in the `src\app\pages\tasks\tasks.component.html` and `src\app\pages\profile\profile.component.html` files correspondingly. The following instructions show how to employ any other DevExtreme UI component using the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/Angular/Light) UI component as an example:
 
 1. Import the DevExtreme UI component's module in the `NgModule` where you are going to use it. Open the `src\app\app-routing.module.ts` file and add the following code:
 

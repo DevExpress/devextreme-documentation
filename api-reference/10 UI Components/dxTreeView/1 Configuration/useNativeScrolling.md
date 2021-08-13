@@ -5,7 +5,7 @@ default: true, false (desktop except Mac)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+<!-- import * from 'api-reference\10 UI Components\dxLookup\1 Configuration\useNativeScrolling.md' -->

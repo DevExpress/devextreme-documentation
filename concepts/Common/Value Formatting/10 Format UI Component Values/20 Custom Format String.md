@@ -15,7 +15,7 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
       <td>&#35;</td>
       <td>
             A digit or nothing. One symbol represents several integer digits, but only one decimal digit.</br> 
-            For example, "#.#" represents "123.4", but not "123.45".
+            For example, "#0.#" represents "123.4", but not "123.45".
       </td>
     </tr>
     <tr>

@@ -69,7 +69,7 @@ Predefined controls include:
   </tr>
 </table>
 
-If you need to customize a predefined item, add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/) array. This object must contain the item's [name]({currentpath}/items/#name) and [properties]({currentpath}/items/) that you want to customize. If an item does not need customization, include its name in the **toolbar**.**items[]** array.
+If you need to customize a predefined item, add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/) array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, include its name in the **toolbar**.**items[]** array.
 
 [important] The DataGrid does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
 

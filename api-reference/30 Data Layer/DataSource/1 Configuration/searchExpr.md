@@ -77,5 +77,5 @@ You can use this property along with [searchOperation](/api-reference/30%20Data%
 [note] Searching works when inputting a plain data structure only. However, if you need the searching capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
 #####See Also#####
-- [Data Layer - Search Api](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/2%20Search%20Api.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Search_Api')
+- [Data Layer - Search API](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/2%20Search%20Api.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Search_Api')
 - [Data Layer - Getters and Setters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters')

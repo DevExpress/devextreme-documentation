@@ -59,12 +59,12 @@ Predefined controls include:
   </tr>
 </table>
 
-To add a predefined control, include its name in the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/) array. If you need to customize it, add an object instead and specify the [name](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#name) and other [properties](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/).
+If you need to customize a predefined item, add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/) array. This object must contain the item's [name]({currentpath}/items/#name) and [properties]({currentpath}/items/) that you want to customize. If an item does not need customization, include its name in the **toolbar**.**items[]** array.
+
+[important] The TreeList does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
 
 - **DevExtreme Components**          
 Add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/) array, specify one of the available [widgets](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#widget), its specific [settings](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#options) and toolbar item's [properties](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/).
 
 - **Custom Controls**             
 Add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/) array, specify the [template](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/#template) and toolbar item's [properties](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/toolbar/items/).
-
-[note] When you use the toolbar property, the TreeList will only display items added to the toolbar array. To display items of all enabled features, make sure to add the corresponding predefined controls too.

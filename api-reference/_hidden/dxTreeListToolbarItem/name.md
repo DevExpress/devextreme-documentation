@@ -5,7 +5,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the toolbar item's name.
+A name used to identify the toolbar item.
 
 ---
 <!-- Description goes here -->

@@ -14,6 +14,8 @@ Configures the toolbar.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
 }
 
+![DevExtreme TreeList - Toolbar](/images/treelist/toolbar.png)
+
 Toolbar allows you to configure predefined controls, add DevExtreme and custom components, and reorder these elements:
 
 - **Predefined Controls**             

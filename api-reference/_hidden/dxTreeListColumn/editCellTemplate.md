@@ -61,7 +61,7 @@ A function that returns the variable that should be tracked.
 A function called when this variable changes.
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 Use the **editCellTemplate** to replace the default editor. In the template, specify the replacement editor's appearance and behavior.

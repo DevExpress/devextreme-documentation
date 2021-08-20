@@ -43,7 +43,7 @@ The [Row](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation
 <!-- %field(e.values)% -->
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 The following details should be taken into account when you use a **rowTemplate**:

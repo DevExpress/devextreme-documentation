@@ -17,6 +17,6 @@ The index of the tab in the [tabs](/api-reference/10%20UI%20Components/dxForm/5%
 #include common-ref-elementparam with { element: "tab" }
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---

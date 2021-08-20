@@ -11,7 +11,7 @@ Specifies a custom template for the menu content.
 #include common-ref-elementparam with { element: "menu" }
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 #####See Also#####

@@ -5,7 +5,7 @@ dep: dxHtmlEditorToolbarItem.acceptedValues
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies values for a format with multiple choices.
 
 ---
 <!-- Description goes here -->

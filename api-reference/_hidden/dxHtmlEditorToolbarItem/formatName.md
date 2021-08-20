@@ -6,7 +6,7 @@ dep: dxHtmlEditorToolbarItem.name
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the predefined item that this object customizes or a format with multiple choices.
 
 ---
 <!-- Description goes here -->

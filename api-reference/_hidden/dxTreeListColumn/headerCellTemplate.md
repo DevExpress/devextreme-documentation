@@ -22,7 +22,7 @@ The index of the column to which the header belongs.
 The UI component's instance.
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 #####See Also#####

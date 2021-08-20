@@ -60,7 +60,7 @@ The group cell's value with applied [format](/api-reference/_hidden/dxDataGridCo
 The group cell's value as it is specified in a data source.
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 The following details should be taken into account when you use a **groupCellTemplate**:

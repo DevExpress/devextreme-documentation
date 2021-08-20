@@ -58,7 +58,7 @@ A function that returns the variable that should be tracked.
 A function called when this variable changes.
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 The following details should be taken into account when you use a **cellTemplate**:

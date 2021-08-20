@@ -14,4 +14,4 @@ This property accepts a value of one of the following types:
 The height in pixels.
 
 - **String**  
-A CSS-accepted measurement of height. For example, `"55px"`, `"80%"`, `"inherit"`.
+A CSS-accepted measurement of height. For example, `"55px"`, `"20vh"`, `"80%"`, `"inherit"`.

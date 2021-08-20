@@ -10,13 +10,13 @@ Specifies a template that should be used to render this item only.
 A template name or container.
 
 ##### param(itemData): any
-<!-- Description goes here -->
+<!-- %param(itemData)% -->
 
 ##### param(itemIndex): Number
-<!-- Description goes here -->
+<!-- %param(itemIndex)% -->
 
 ##### param(itemElement): DxElement
-<!-- Description goes here -->
+<!-- %param(itemElement)% --> 
 
 ---
 The following types of the specified value are available.
@@ -28,3 +28,5 @@ The following types of the specified value are available.
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+
+<!-- import * from 'api-reference\10 UI Components\CollectionWidget\1 Configuration\itemTemplate.md' -->

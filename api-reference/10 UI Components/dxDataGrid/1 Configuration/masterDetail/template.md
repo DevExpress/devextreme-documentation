@@ -29,7 +29,7 @@ A function that returns the variable that should be tracked.
 A function called when this variable changes.
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 #include common-demobutton-named with {

@@ -57,7 +57,7 @@ A function that returns the variable that should be tracked.
 A function called when this variable changes.
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 [note]If you implement two-way data binding in your template, make sure that you have switched off the built-in implementation of this feature by setting the [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '{basewidgetpath}/Configuration/#twoWayBindingEnabled') property to **false**.

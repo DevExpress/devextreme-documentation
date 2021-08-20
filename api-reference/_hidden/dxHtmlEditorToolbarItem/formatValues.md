@@ -5,7 +5,7 @@ type: Array<String, Number, Boolean>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies values for a format with multiple choices.
 
 ---
 <!-- Description goes here -->

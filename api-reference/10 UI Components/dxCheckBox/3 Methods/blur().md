@@ -1,7 +1,5 @@
 ---
-id: Sorting.showSortIndexes
-type: Boolean
-default: false
+id: dxCheckBox.blur()
 ---
 ---
 ##### shortDescription

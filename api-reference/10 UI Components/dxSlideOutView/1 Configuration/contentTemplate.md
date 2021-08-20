@@ -11,7 +11,7 @@ Specifies a custom template for the UI component content.
 #include common-ref-elementparam with { element: "UI component content" }
 
 ##### return: any
-<!-- Description goes here -->
+A template name or container.
 
 ---
 #####See Also#####

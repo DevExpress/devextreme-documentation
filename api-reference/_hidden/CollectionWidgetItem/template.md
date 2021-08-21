@@ -16,7 +16,7 @@ A template name or container.
 <!-- %param(itemIndex)% -->
 
 ##### param(itemElement): DxElement
-<!-- %param(itemElement)% --> 
+<!-- %param(itemElement)% -->
 
 ---
 The following types of the specified value are available.

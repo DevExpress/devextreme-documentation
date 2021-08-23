@@ -7,8 +7,7 @@ type: Object
 Configures toolbar items.
 
 ---
-
-Toolbar allows you to configure predefined controls, add DevExtreme and custom components, and reorder these elements:
+Predefined controls appear on the toolbar depending on whether a specific DataGrid feature is enabled. The following table illustrates the dependency:
 
 ##### Predefined Controls
 Predefined controls include:
@@ -22,42 +21,42 @@ Predefined controls include:
   <tr>
     <td><i>addRowButton</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_add.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar AddButton" style="margin:1px; vertical-align:middle"/></td>
-    <td><a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding">allowAdding</a> is set to <b>true</b></td>
+    <td><a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding">allowAdding</a> is set to <b>true</b></td>
   </tr>
   <tr>
     <td><i>applyFilterButton</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_applyFilter.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar ApplyFilterButton" style="margin:1px; vertical-align:middle"/></td>
-    <td>filterRow.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/#visible">visible</a> is set to <b>true</b> and filterRow.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/#applyFilter">applyFilter</a> is set to <i>"onClick"</i></td>
+    <td>filterRow.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/#visible">visible</a> is set to <b>true</b> and filterRow.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/#applyFilter">applyFilter</a> is set to <i>"onClick"</i></td>
   </tr>
   <tr>
     <td><i>columnChooserButton</i></td>
     <td><img src="/images/DataGrid/icons/columnChooser.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar ColumnChooserButton" style="margin:1px; vertical-align:middle"/></td>
-    <td>columnChooser.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#enabled">enabled</a> is set to <b>true</b></td>
+    <td>columnChooser.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#enabled">enabled</a> is set to <b>true</b></td>
   </tr>
   <tr>
     <td><i>exportButton</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_export.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar ColumnChooserButton" style="margin:1px; vertical-align:middle"/></td>
-    <td>The <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/">export</a> feature is configured.</td>
+    <td>The <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/">export</a> feature is configured.</td>
   </tr>
   <tr>
     <td><i>groupPanel</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_groupPanel.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar ColumnChooserButton" style="margin:1px; vertical-align:middle"/></td>
-    <td> <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/">groupPanel</a>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#enabled">visible</a> is set to <b>true</b> or <i>"auto"</i></td>
+    <td> <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/">groupPanel</a>.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#enabled">visible</a> is set to <b>true</b> or <i>"auto"</i></td>
   </tr>
   <tr>
     <td><i>revertButton</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_revert.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar RevertButton" style="margin:1px; vertical-align:middle"/></td>
-    <td><a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is set to <i>"batch"</i></td>
+    <td><a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is set to <i>"batch"</i></td>
   </tr>
   <tr>
     <td><i>saveButton</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_save.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar SaveButton" style="margin:1px; vertical-align:middle"/></td>
-    <td><a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is set to <i>"batch"</i> and <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating">allowUpdating</a> is set to <b>true</b></td>
+    <td><a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is set to <i>"batch"</i> and <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/">editing</a>.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating">allowUpdating</a> is set to <b>true</b></td>
   </tr>
   <tr>
     <td><i>searchPanel</i></td>
     <td><img src="/images/DataGrid/icons/toolbar_searchPanel.png" alt="DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Toolbar searchPanel" style="margin:1px; vertical-align:middle"/></td>
-    <td>searchPanel.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#visible">visible</a> is set to <b>true</b></td>
+    <td>searchPanel.<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#visible">visible</a> is set to <b>true</b></td>
   </tr>
 </table>
 

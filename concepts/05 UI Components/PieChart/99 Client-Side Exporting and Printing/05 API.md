@@ -120,7 +120,7 @@ You can also export several UI components at once using their SVG markup. Gather
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";
     import { DxPieChartModule, DxPieChartComponent } from "devextreme-angular";
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
     // ...
     export class AppComponent {
         @ViewChild('pieChartContainer1', { static: false }) pieChart1: DxPieChartComponent;
@@ -129,8 +129,8 @@ You can also export several UI components at once using their SVG markup. Gather
         // @ViewChild('pieChartContainer1') pieChart1: DxPieChartComponent;
         // @ViewChild('pieChartContainer2') pieChart2: DxPieChartComponent;
         exportSeveralCharts () {
-            const chartMarkup = exportMethods.getMarkup([this.pieChart1.instance, this.pieChart2.instance]);
-            exportMethods.exportFromMarkup(chartMarkup, {
+            const chartMarkup = getMarkup([this.pieChart1.instance, this.pieChart2.instance]);
+            exportFromMarkup(chartMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "Exported Charts",
@@ -164,7 +164,7 @@ You can also export several UI components at once using their SVG markup. Gather
 
     <script>
     import DxPieChart from 'devextreme-vue/pie-chart';
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
 
     export default {
         components: {
@@ -174,8 +174,8 @@ You can also export several UI components at once using their SVG markup. Gather
             exportSeveralCharts() {
                 const pieChart1 = this.$refs.pieChart1.instance;
                 const pieChart2 = this.$refs.pieChart2.instance;
-                const chartMarkup = exportMethods.getMarkup([pieChart1, pieChart2]);
-                exportMethods.exportFromMarkup(chartMarkup, {
+                const chartMarkup = getMarkup([pieChart1, pieChart2]);
+                exportFromMarkup(chartMarkup, {
                     height: 768,
                     width: 1024,
                     fileName: 'Exported Charts',
@@ -191,6 +191,7 @@ You can also export several UI components at once using their SVG markup. Gather
     <!-- tab: App.js -->
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
 
     class App extends React.Component {
         constructor(props) {
@@ -221,8 +222,8 @@ You can also export several UI components at once using their SVG markup. Gather
         }
 
         exportSeveralCharts() {
-            const chartMarkup = exportMethods.getMarkup([this.pieChart1, this.pieChart2]);
-            exportMethods.exportFromMarkup(chartMarkup, {
+            const chartMarkup = getMarkup([this.pieChart1, this.pieChart2]);
+            exportFromMarkup(chartMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: 'Exported Charts',

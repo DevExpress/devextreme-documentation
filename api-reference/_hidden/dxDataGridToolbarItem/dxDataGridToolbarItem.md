@@ -10,7 +10,7 @@ Configures toolbar items.
 
 Toolbar allows you to configure predefined controls, add DevExtreme and custom components, and reorder these elements:
 
-**Predefined Controls**             
+##### Predefined Controls
 Predefined controls include:
 
 <table class="dx-table">
@@ -65,8 +65,8 @@ If you need to customize a predefined item, add an object to the **toolbar**.[it
 
 [important] The DataGrid does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
 
-**DevExtreme Components**          
+##### DevExtreme Components
 Add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/) array, specify one of the available [widgets](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/#widget), its specific [settings](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/#options) and toolbar item's [properties](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/).
 
-**Custom Controls**             
+##### Custom Controls
 Add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/) array, specify the [template](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/#template) and toolbar item's [properties](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/).

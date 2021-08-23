@@ -6,7 +6,7 @@ inheritsType: dxDataGridToolbarItem
 ---
 ---
 ##### shortDescription
-Configures toolbar items.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

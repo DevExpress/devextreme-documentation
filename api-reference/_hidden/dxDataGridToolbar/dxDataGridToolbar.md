@@ -4,7 +4,10 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures toolbar settings.
-
+Configures the toolbar.
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
+}
+
+![DevExtreme DataGrid - Toolbar](/images/DataGrid/toolbar.png)

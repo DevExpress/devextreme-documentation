@@ -4,7 +4,10 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
+Configures the toolbar.
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ToolbarCustomization/"
+}
+
+![DevExtreme TreeList - Toolbar](/images/treelist/toolbar.png)

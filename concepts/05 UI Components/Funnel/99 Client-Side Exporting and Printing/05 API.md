@@ -111,7 +111,7 @@ You can also export several UI components at once using their SVG markup. Gather
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";
     import { DxFunnelModule, DxFunnelComponent } from "devextreme-angular";
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
     // ...
     export class AppComponent {
         @ViewChild('funnelContainer1', { static: false }) funnel1: DxFunnelComponent;
@@ -120,8 +120,8 @@ You can also export several UI components at once using their SVG markup. Gather
         // @ViewChild('funnelContainer1') funnel1: DxFunnelComponent;
         // @ViewChild('funnelContainer2') funnel2: DxFunnelComponent;
         exportSeveralFunnels () {
-            let funnelMarkup = exportMethods.getMarkup([this.funnel1.instance, this.funnel2.instance]);
-            exportMethods.exportFromMarkup(funnelMarkup, {
+            let funnelMarkup = getMarkup([this.funnel1.instance, this.funnel2.instance]);
+            exportFromMarkup(funnelMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "Exported Funnels",
@@ -151,7 +151,7 @@ You can also export several UI components at once using their SVG markup. Gather
 
     <script>
     import DxFunnel from 'devextreme-vue/funnel';
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
 
     export default {
         components: {
@@ -161,8 +161,8 @@ You can also export several UI components at once using their SVG markup. Gather
             exportSeveralFunnels () {
                 const funnel1 = this.$refs.funnel1.instance;
                 const funnel2 = this.$refs.funnel2.instance;
-                const funnelMarkup = exportMethods.getMarkup([funnel1, funnel2]);
-                exportMethods.exportFromMarkup(funnelMarkup, {
+                const funnelMarkup = getMarkup([funnel1, funnel2]);
+                exportFromMarkup(funnelMarkup, {
                     height: 768,
                     width: 1024,
                     fileName: "Exported Funnels",
@@ -178,7 +178,7 @@ You can also export several UI components at once using their SVG markup. Gather
     <!-- tab: App.js -->
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
 
     class App extends React.Component {
         constructor(props) {
@@ -199,8 +199,8 @@ You can also export several UI components at once using their SVG markup. Gather
             return this.funnel2Ref.current.instance;
         }
         exportSeveralFunnels () {
-            const funnelMarkup = exportMethods.getMarkup([this.funnel1, this.funnel2]);
-            exportMethods.exportFromMarkup(funnelMarkup, {
+            const funnelMarkup = getMarkup([this.funnel1, this.funnel2]);
+            exportFromMarkup(funnelMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "Exported Funnels",

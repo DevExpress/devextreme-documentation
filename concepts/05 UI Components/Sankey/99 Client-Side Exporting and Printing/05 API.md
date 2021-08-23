@@ -111,7 +111,7 @@ You can also export several UI components simultaneously using their SVG markup.
     <!--TypeScript-->
     import { ..., ViewChild } from "@angular/core";
     import { DxSankeyModule, DxSankeyComponent } from "devextreme-angular";
-    import exportMethods from "devextreme/viz/export";
+    import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
     // ...
     export class AppComponent {
         @ViewChild("sankeyContainer1", { static: false }) sankey1: DxSankeyComponent;
@@ -120,8 +120,8 @@ You can also export several UI components simultaneously using their SVG markup.
         // @ViewChild("sankeyContainer1") sankey1: DxSankeyComponent;
         // @ViewChild("sankeyContainer2") sankey2: DxSankeyComponent;
         exportSeveralSankeys() {
-            let sankeyMarkup = exportMethods.getMarkup([this.sankey1.instance, this.sankey2.instance]);
-            exportMethods.exportFromMarkup(sankeyMarkup, {
+            let sankeyMarkup = getMarkup([this.sankey1.instance, this.sankey2.instance]);
+            exportFromMarkup(sankeyMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "exported_sankeys",
@@ -151,7 +151,7 @@ You can also export several UI components simultaneously using their SVG markup.
 
     <script>
     import DxSankey from 'devextreme-vue/sankey';
-    import exportMethods from 'devextreme/viz/export';
+    import { getMarkup, exportFromMarkup } from 'devextreme/viz/export';
 
     export default {
         components: {
@@ -161,8 +161,8 @@ You can also export several UI components simultaneously using their SVG markup.
             exportSeveralSankeys () {
                 const sankey1 = this.$refs.sankey1.instance;
                 const sankey2 = this.$refs.sankey2.instance;
-                const sankeyMarkup = exportMethods.getMarkup([sankey1, sankey2]);
-                exportMethods.exportFromMarkup(sankeyMarkup, {
+                const sankeyMarkup = getMarkup([sankey1, sankey2]);
+                exportFromMarkup(sankeyMarkup, {
                     height: 768,
                     width: 1024,
                     fileName: "exported_sankeys",
@@ -178,7 +178,7 @@ You can also export several UI components simultaneously using their SVG markup.
     <!-- tab: App.js -->
     import React from 'react';
     import Sankey from 'devextreme-react/sankey';
-    import exportMethods from 'devextreme/viz/export';
+    import { getMarkup, exportFromMarkup } from 'devextreme/viz/export';
 
     class App extends React.Component {
         constructor(props) {
@@ -199,8 +199,8 @@ You can also export several UI components simultaneously using their SVG markup.
             return this.sankey2Ref.current.instance;
         }
         exportSeveralSankeys () {
-            const sankeyMarkup = exportMethods.getMarkup([this.sankey1, this.sankey2]);
-            exportMethods.exportFromMarkup(sankeyMarkup, {
+            const sankeyMarkup = getMarkup([this.sankey1, this.sankey2]);
+            exportFromMarkup(sankeyMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "exported_sankeys",

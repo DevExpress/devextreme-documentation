@@ -9,9 +9,6 @@ Specifies a function that is executed on state saving. Applies only if the [type
 ##### param(gridState): Object
 The current UI component state.
 
-##### return: any
-<!-- Description goes here -->
-
 ---
 Use the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.
  

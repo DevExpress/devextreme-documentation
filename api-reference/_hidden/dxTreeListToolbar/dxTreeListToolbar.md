@@ -5,6 +5,7 @@ type: Object
 ---
 ##### shortDescription
 Configures the toolbar.
+
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ToolbarCustomization/"

@@ -4,9 +4,3 @@ acceptValues: 'addRowButton' | 'applyFilterButton' | 'columnChooserButton' | 're
 type: Array<dxTreeListToolbarItem, String>
 inheritsType: dxTreeListToolbarItem
 ---
----
-##### shortDescription
-<!-- Description goes here -->
-
----
-<!-- Description goes here -->

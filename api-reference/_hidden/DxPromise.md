@@ -1,6 +1,8 @@
 ---
 id: DxPromise
 type: Promise<void>
+module: core/utils/deferred
+export: DxPromise
 ---
 ---
 ##### shortDescription

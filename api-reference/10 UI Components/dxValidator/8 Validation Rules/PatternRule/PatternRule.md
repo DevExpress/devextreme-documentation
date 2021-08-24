@@ -1,6 +1,8 @@
 ---
 id: PatternRule
 type: Object
+module: ui/validation_rules
+export: PatternRule
 ---
 ---
 ##### shortDescription

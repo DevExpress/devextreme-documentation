@@ -1,5 +1,7 @@
 ---
 id: dxDiagramDeleteShapeArgs
+module: ui/diagram
+export: dxDiagramDeleteShapeArgs
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: RangeRule
 type: Object
+module: ui/validation_rules
+export: RangeRule
 ---
 ---
 ##### shortDescription

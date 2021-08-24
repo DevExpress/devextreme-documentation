@@ -2,6 +2,8 @@
 id: dxTrackBar
 inherits: Editor
 hidden: 
+module: ui/track_bar
+export: default
 ---
 ---
 ##### shortDescription

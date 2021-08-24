@@ -1,6 +1,8 @@
 ---
 id: dxTreeListNode
 type: Object
+module: ui/tree_list
+export: Node
 ---
 ---
 ##### shortDescription

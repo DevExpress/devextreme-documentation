@@ -1,6 +1,8 @@
 ---
 id: baseSeriesObject
 type: Object
+module: viz/chart
+export: baseSeriesObject
 ---
 ---
 ##### shortDescription

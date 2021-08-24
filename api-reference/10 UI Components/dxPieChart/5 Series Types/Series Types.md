@@ -1,6 +1,8 @@
 ---
 id: dxPieChartSeriesTypes
 type: Object
+module: viz/pie_chart
+export: dxPieChartSeriesTypes
 ---
 ---
 ##### shortDescription

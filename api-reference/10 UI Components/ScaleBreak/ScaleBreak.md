@@ -2,6 +2,8 @@
 id: ScaleBreak
 type: Object
 hidden: 
+module: viz/common
+export: ScaleBreak
 ---
 ---
 ##### shortDescription

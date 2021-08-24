@@ -1,6 +1,8 @@
 ---
 id: NumericRule
 type: Object
+module: ui/validation_rules
+export: NumericRule
 ---
 ---
 ##### shortDescription

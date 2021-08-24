@@ -1,6 +1,8 @@
 ---
 id: dxTemplate
 type: Object
+module: core/templates/template
+export: dxTemplate
 ---
 ---
 ##### shortDescription

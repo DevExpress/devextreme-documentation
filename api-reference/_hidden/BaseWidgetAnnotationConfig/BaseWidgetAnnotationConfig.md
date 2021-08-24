@@ -1,6 +1,8 @@
 ---
 id: BaseWidgetAnnotationConfig
 type: Object
+module: viz/core/base_widget
+export: BaseWidgetAnnotationConfig
 ---
 ---
 ##### shortDescription

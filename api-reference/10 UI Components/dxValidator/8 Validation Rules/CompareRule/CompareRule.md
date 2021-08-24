@@ -1,6 +1,8 @@
 ---
 id: CompareRule
 type: Object
+module: ui/validation_rules
+export: CompareRule
 ---
 ---
 ##### shortDescription

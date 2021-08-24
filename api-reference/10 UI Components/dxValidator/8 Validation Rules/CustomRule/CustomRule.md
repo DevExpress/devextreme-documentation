@@ -1,6 +1,8 @@
 ---
 id: CustomRule
 type: Object
+module: ui/validation_rules
+export: CustomRule
 ---
 ---
 ##### shortDescription

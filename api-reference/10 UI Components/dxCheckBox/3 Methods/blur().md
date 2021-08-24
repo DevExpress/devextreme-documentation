@@ -3,7 +3,9 @@ id: dxCheckBox.blur()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Removes focus from the check box.
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxTextEditor\3 Methods\blur().md' -->

@@ -40,7 +40,7 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
     export class AppComponent {
         buttonGroupItems = [{
             // ...
-            elementAttr = {
+            elementAttr: {
                 class: "class-name"
             }
         }, // ...
@@ -72,8 +72,8 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
     <!-- tab: App.vue -->
     <template>
         <DxButtonGroup ...
-            :items="buttonGroupItems">
-        </DxButtonGroup>
+            :items="buttonGroupItems"
+        />
     </template>
 
     <script>
@@ -81,7 +81,7 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 
     const buttonGroupItems = [{
         // ...
-        elementAttr = {
+        elementAttr: {
             class: "class-name"
         }
     }, // ...
@@ -105,11 +105,11 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
-    import ButtonGroup from 'devextreme-react/{widget-name}';
+    import ButtonGroup from 'devextreme-react/button-group';
 
     const buttonGroupItems = [{
         // ...
-        elementAttr = {
+        elementAttr: {
             class: "class-name"
         }
     }, // ...

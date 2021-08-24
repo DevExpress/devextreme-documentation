@@ -7,7 +7,7 @@ type: Object
 Configures toolbar items.
 
 ---
-#include common-dataSource-description with {
+#include grids-toolbar with {
     datagrid_unique_toolbar_items: "
     <tr>
       <td><i>exportButton</i></td>

@@ -65,4 +65,4 @@ jobs:
       run: npm run generate-content-map
 
     - name: Check links
-      run: npm run update-links-validation
+      run: npm run validate-links

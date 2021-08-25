@@ -1,6 +1,8 @@
 ---
 id: RequiredRule
 type: Object
+module: ui/validation_rules
+export: RequiredRule
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: AsyncRule
 type: Object
+module: ui/validation_rules
+export: AsyncRule
 ---
 ---
 ##### shortDescription

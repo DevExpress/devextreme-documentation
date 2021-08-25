@@ -4,6 +4,8 @@ type: Object
 inherits: dxPieChartSeriesTypes.CommonPieChartSeries
 hidden: 
 inlineType: 
+module: viz/pie_chart
+export: PieChartSeries
 ---
 ---
 ##### shortDescription

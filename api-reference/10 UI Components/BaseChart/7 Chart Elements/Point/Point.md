@@ -1,6 +1,8 @@
 ---
 id: basePointObject
 type: Object
+module: viz/chart
+export: basePointObject
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,8 @@
 id: pieChartSeriesObject
 type: Object
 inherits: baseSeriesObject
+module: viz/pie_chart
+export: pieChartSeriesObject
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: dxOverlay
 module: ui/overlay
 inherits: Widget
 hidden: 
+export: default
 ---
 ---
 ##### shortDescription

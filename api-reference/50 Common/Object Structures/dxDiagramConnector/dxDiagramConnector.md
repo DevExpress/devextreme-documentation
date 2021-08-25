@@ -1,6 +1,8 @@
 ---
 id: dxDiagramConnector
 inherits: dxDiagramItem
+module: ui/diagram
+export: dxDiagramConnector
 ---
 ---
 ##### shortDescription

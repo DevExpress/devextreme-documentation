@@ -1,6 +1,8 @@
 ---
 id: ColCountResponsible
 hidden: 
+module: ui/form/ui.form
+export: ColCountResponsible
 ---
 ---
 ##### shortDescription

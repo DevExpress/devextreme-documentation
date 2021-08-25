@@ -9,14 +9,17 @@
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
-    "devextreme-internal-tools": "^6.4.10"
+    "devextreme-internal-tools": "7.1.0"
   },
   "scripts": {
-    "update-links": "dx-tools update-links --docs-root ./",
-    "update-links-validation": "dx-tools update-links --docs-root ./ --validation true",
-    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 21.1",
-    "update-topics": "dx-tools update-topics --docs-root ./",
+    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 21.1 --syntaxdata-path ./metadata/syntax-data.json",
+    "generate-syntax-data": "dx-tools generate-syntax-data --output-path ./metadata/syntax-data.json",
+    "generate-modules-meta": "dx-tools generate-modules-meta --output-path ./metadata/modules-meta.json",
     "generate-extra-topic": "dx-tools generate-extra-topics --docs-root ./ --version 21.1",
-    "validate-docs": "dx-tools validate-docs --docs-root ./"
+    "update-topics": "dx-tools update-topics --docs-root ./",
+    "update-links": "dx-tools update-links --docs-root ./",
+    "validate-docs": "dx-tools validate-docs --docs-root ./",
+    "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta ./modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
+    "validate-links": "dx-tools update-links --docs-root ./ --validation true"
   }
 }

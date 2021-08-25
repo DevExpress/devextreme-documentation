@@ -9,7 +9,7 @@ Scrolls the current view to a specified position. Available for all views except
 A date and time to scroll to.
 
 ##### param(group): Object | undefined
-If appointments are [grouped by resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/), specifies the appointment group id (optional).
+If appointments are [grouped by resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/), specifies a group ID (optional).
 
 ##### param(allDay): Boolean | undefined
 If **true**, scrolls the view to the all-day panel of the specified group. Applies only if the all-day panel is [visible](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/showAllDayPanel.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#showAllDayPanel').

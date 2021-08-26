@@ -19,7 +19,7 @@
     "update-topics": "dx-tools update-topics --docs-root ./",
     "update-links": "dx-tools update-links --docs-root ./",
     "validate-docs": "dx-tools validate-docs --docs-root ./",
-    "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta ./modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
+    "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta ./metadata/modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
     "validate-links": "dx-tools update-links --docs-root ./ --validation true"
   }
 }

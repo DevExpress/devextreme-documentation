@@ -66,3 +66,22 @@ jobs:
 
     - name: Check links
       run: npm run validate-links
+
+  modules:
+    runs-on: ubuntu-latest
+    name: Check modules guide
+    steps:
+
+     - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ env.nodeVersion }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Check modules guide
+      run: npm run validate-modules-guide

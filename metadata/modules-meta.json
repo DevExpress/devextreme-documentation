@@ -1,0 +1,702 @@
+{
+  "ScriptsRevision": "3564e61e5bb3510eba9b6e912deaa5510ad731f7",
+  "ToolsVersion": "7.0.0-beta.3",
+  "Modules": {
+    "animation/fx": {
+      "AnimationConfig": {},
+      "AnimationState": {},
+      "default": {}
+    },
+    "data/array_store": {
+      "default": {}
+    },
+    "ui/validation_rules": {
+      "AsyncRule": {},
+      "CompareRule": {},
+      "CustomRule": {},
+      "EmailRule": {},
+      "NumericRule": {},
+      "PatternRule": {},
+      "RangeRule": {},
+      "RequiredRule": {},
+      "StringLengthRule": {}
+    },
+    "viz/bar_gauge": {
+      "BarGaugeBarInfo": {},
+      "default": {}
+    },
+    "viz/chart_components/base_chart": {
+      "BaseChart": {},
+      "BaseChartAnnotationConfig": {},
+      "BaseChartLegendItem": {}
+    },
+    "viz/gauges/base_gauge": {
+      "BaseGauge": {},
+      "CommonIndicator": {},
+      "GaugeIndicator": {}
+    },
+    "viz/common": {
+      "BaseLegend": {},
+      "BaseLegendItem": {},
+      "ChartSeries": {},
+      "ScaleBreak": {},
+      "VizRange": {},
+      "VizTimeInterval": {}
+    },
+    "viz/sparklines/base_sparkline": {
+      "default": {}
+    },
+    "viz/core/base_widget": {
+      "default": {},
+      "BaseWidgetAnnotationConfig": {},
+      "Font": {}
+    },
+    "excel_exporter": {
+      "CellAddress": {},
+      "CellRange": {},
+      "ExcelExportBaseProps": {},
+      "ExcelExportDataGridProps": {},
+      "ExcelExportPivotGridProps": {},
+      "exportDataGrid": {},
+      "exportPivotGrid": {}
+    },
+    "ui/form/ui.form": {
+      "ColCountResponsible": {}
+    },
+    "ui/collection/ui.collection_widget.base": {
+      "default": {},
+      "CollectionWidgetItem": {}
+    },
+    "core/component": {
+      "Component": {}
+    },
+    "file_management/custom_provider": {
+      "default": {}
+    },
+    "data/custom_store": {
+      "default": {}
+    },
+    "core/dom_component": {
+      "default": {}
+    },
+    "ui/data_grid": {
+      "DataChange": {},
+      "ColumnBase": {},
+      "ColumnButtonBase": {},
+      "default": {},
+      "RowObject": {},
+      "dxDataGridToolbar": {},
+      "dxDataGridToolbarItem": {}
+    },
+    "ui/editor/ui.data_expression": {
+      "default": {}
+    },
+    "data_helper": {
+      "default": {}
+    },
+    "data/data_source": {
+      "default": {}
+    },
+    "core/devices": {
+      "default": {}
+    },
+    "ui/draggable": {
+      "default": {}
+    },
+    "core/element": {
+      "DxElement": {},
+      "UserDefinedElement": {},
+      "dxSVGElement": {}
+    },
+    "events/index": {
+      "DxEvent": {},
+      "EventObject": {},
+      "event": {},
+      "eventsHandler": {}
+    },
+    "core/utils/deferred": {
+      "DxPromise": {}
+    },
+    "ui/editor/editor": {
+      "default": {}
+    },
+    "data/odata/utils": {
+      "EdmLiteral": {},
+      "keyConverters": {}
+    },
+    "data/endpoint_selector": {
+      "default": {}
+    },
+    "exporter/excel/excel.doc_comments": {
+      "ExcelFont": {}
+    },
+    "exporter/export_load_panel": {
+      "ExportLoadPanel": {}
+    },
+    "file_management/error": {
+      "default": {}
+    },
+    "file_management/file_system_item": {
+      "default": {}
+    },
+    "file_management/provider_base": {
+      "default": {}
+    },
+    "data/index": {
+      "FilterDescriptor": {},
+      "GroupDescriptor": {},
+      "LoadOptions": {},
+      "SearchOperation": {},
+      "SelectDescriptor": {},
+      "SortDescriptor": {},
+      "SummaryDescriptor": {}
+    },
+    "localization": {
+      "Format": {},
+      "formatDate": {},
+      "formatMessage": {},
+      "formatNumber": {},
+      "loadMessages": {},
+      "locale": {},
+      "parseDate": {},
+      "parseNumber": {}
+    },
+    "ui/grid_base": {
+      "default": {}
+    },
+    "core/guid": {
+      "default": {}
+    },
+    "ui/hierarchical_collection/ui.hierarchical_collection_widget": {
+      "default": {}
+    },
+    "data/local_store": {
+      "default": {}
+    },
+    "viz/vector_map": {
+      "MapLayer": {},
+      "MapLayerElement": {},
+      "default": {},
+      "dxVectorMapAnnotationConfig": {},
+      "dxVectorMapCommonAnnotationConfig": {}
+    },
+    "data/odata/context": {
+      "default": {}
+    },
+    "data/odata/store": {
+      "default": {}
+    },
+    "file_management/object_provider": {
+      "default": {}
+    },
+    "pdf_exporter": {
+      "PdfDataGridCell": {},
+      "PdfExportDataGridProps": {},
+      "exportDataGrid": {}
+    },
+    "viz/pie_chart": {
+      "PieChartSeries": {},
+      "default": {},
+      "dxPieChartAnnotationConfig": {},
+      "dxPieChartCommonAnnotationConfig": {},
+      "dxPieChartSeriesTypes": {},
+      "pieChartSeriesObject": {},
+      "piePointObject": {}
+    },
+    "ui/pivot_grid/data_source": {
+      "default": {},
+      "dxPivotGridSummaryCell": {}
+    },
+    "viz/polar_chart": {
+      "PolarChartSeries": {},
+      "default": {},
+      "dxPolarChartAnnotationConfig": {},
+      "dxPolarChartCommonAnnotationConfig": {},
+      "dxPolarChartSeriesTypes": {},
+      "polarChartSeriesObject": {},
+      "polarPointObject": {}
+    },
+    "animation/position": {
+      "PositionConfig": {}
+    },
+    "data/query": {
+      "Query": {},
+      "default": {}
+    },
+    "file_management/remote_provider": {
+      "default": {}
+    },
+    "ui/widget/ui.search_box_mixin": {
+      "default": {}
+    },
+    "data/abstract_store": {
+      "default": {}
+    },
+    "animation/transition_executor": {
+      "default": {}
+    },
+    "events/click": {
+      "dxclick": {}
+    },
+    "events/contextmenu": {
+      "dxcontextmenu": {}
+    },
+    "events/dblclick": {
+      "dxdblclick": {}
+    },
+    "events/drag": {
+      "dxdrag": {},
+      "dxdragend": {},
+      "dxdragenter": {},
+      "dxdragleave": {},
+      "dxdragstart": {},
+      "dxdrop": {}
+    },
+    "events/hold": {
+      "dxhold": {}
+    },
+    "events/hover": {
+      "dxhoverend": {},
+      "dxhoverstart": {}
+    },
+    "events/transform": {
+      "dxpinch": {},
+      "dxpinchend": {},
+      "dxpinchstart": {},
+      "dxrotate": {},
+      "dxrotateend": {},
+      "dxrotatestart": {},
+      "dxtransform": {},
+      "dxtransformend": {},
+      "dxtransformstart": {},
+      "dxtranslate": {},
+      "dxtranslateend": {},
+      "dxtranslatestart": {}
+    },
+    "events/pointer": {
+      "dxpointercancel": {},
+      "dxpointerdown": {},
+      "dxpointerenter": {},
+      "dxpointerleave": {},
+      "dxpointermove": {},
+      "dxpointerout": {},
+      "dxpointerover": {},
+      "dxpointerup": {}
+    },
+    "events/remove": {
+      "dxremove": {}
+    },
+    "events/swipe": {
+      "dxswipe": {},
+      "dxswipeend": {},
+      "dxswipestart": {}
+    },
+    "file_management/upload_info": {
+      "default": {}
+    },
+    "data/apply_changes": {
+      "default": {}
+    },
+    "data/utils": {
+      "base64_encode": {}
+    },
+    "utils": {
+      "compileGetter": {},
+      "compileSetter": {}
+    },
+    "data/errors": {
+      "errorHandler": {},
+      "setErrorHandler": {}
+    },
+    "viz/vector_map/projection": {
+      "VectorMapProjectionConfig": {},
+      "projection": {}
+    },
+    "ui/widget/ui.widget": {
+      "default": {},
+      "dxItem": {}
+    },
+    "ui/pivot_grid/xmla_store": {
+      "default": {}
+    },
+    "animation/presets": {
+      "default": {}
+    },
+    "viz/chart": {
+      "baseLabelObject": {},
+      "basePointObject": {},
+      "baseSeriesObject": {},
+      "chartAxisObject": {},
+      "chartPointAggregationInfoObject": {},
+      "chartPointObject": {},
+      "chartSeriesObject": {},
+      "default": {},
+      "dxChartAnnotationConfig": {},
+      "dxChartCommonAnnotationConfig": {},
+      "dxChartSeriesTypes": {}
+    },
+    "core/config": {
+      "default": {}
+    },
+    "ui/accordion": {
+      "default": {}
+    },
+    "ui/action_sheet": {
+      "default": {}
+    },
+    "ui/autocomplete": {
+      "default": {}
+    },
+    "ui/box": {
+      "default": {}
+    },
+    "viz/bullet": {
+      "default": {}
+    },
+    "ui/button": {
+      "default": {}
+    },
+    "ui/button_group": {
+      "default": {}
+    },
+    "ui/calendar": {
+      "default": {}
+    },
+    "ui/check_box": {
+      "default": {}
+    },
+    "viz/circular_gauge": {
+      "default": {}
+    },
+    "ui/color_box": {
+      "default": {}
+    },
+    "ui/context_menu": {
+      "default": {}
+    },
+    "ui/date_box": {
+      "default": {}
+    },
+    "ui/defer_rendering": {
+      "default": {}
+    },
+    "ui/diagram": {
+      "default": {},
+      "dxDiagramAddShapeArgs": {},
+      "dxDiagramAddShapeFromToolboxArgs": {},
+      "dxDiagramBeforeChangeConnectorTextArgs": {},
+      "dxDiagramBeforeChangeShapeTextArgs": {},
+      "dxDiagramChangeConnectionArgs": {},
+      "dxDiagramChangeConnectorPointsArgs": {},
+      "dxDiagramChangeConnectorTextArgs": {},
+      "dxDiagramChangeShapeTextArgs": {},
+      "dxDiagramConnector": {},
+      "dxDiagramCustomCommand": {},
+      "dxDiagramDeleteConnectorArgs": {},
+      "dxDiagramDeleteShapeArgs": {},
+      "dxDiagramMoveShapeArgs": {},
+      "dxDiagramResizeShapeArgs": {},
+      "dxDiagramShape": {}
+    },
+    "ui/drawer": {
+      "default": {}
+    },
+    "ui/drop_down_box": {
+      "default": {}
+    },
+    "ui/drop_down_button": {
+      "default": {}
+    },
+    "ui/drop_down_editor/ui.drop_down_editor": {
+      "default": {}
+    },
+    "ui/drop_down_editor/ui.drop_down_list": {
+      "default": {}
+    },
+    "ui/file_manager": {
+      "default": {},
+      "dxFileManagerContextMenu": {},
+      "dxFileManagerDetailsColumn": {},
+      "dxFileManagerToolbar": {}
+    },
+    "ui/file_uploader": {
+      "default": {}
+    },
+    "ui/filter_builder": {
+      "default": {},
+      "dxFilterBuilderCustomOperation": {},
+      "dxFilterBuilderField": {}
+    },
+    "ui/form": {
+      "default": {}
+    },
+    "viz/funnel": {
+      "default": {}
+    },
+    "ui/gallery": {
+      "default": {}
+    },
+    "ui/gantt": {
+      "default": {},
+      "dxGanttContextMenu": {},
+      "dxGanttSorting": {},
+      "dxGanttStripLine": {},
+      "dxGanttToolbar": {}
+    },
+    "ui/html_editor": {
+      "default": {},
+      "dxHtmlEditorMediaResizing": {},
+      "dxHtmlEditorMention": {},
+      "dxHtmlEditorTableResizing": {},
+      "dxHtmlEditorToolbar": {},
+      "dxHtmlEditorVariables": {}
+    },
+    "viz/linear_gauge": {
+      "default": {}
+    },
+    "ui/list": {
+      "default": {}
+    },
+    "ui/load_indicator": {
+      "default": {}
+    },
+    "ui/load_panel": {
+      "default": {}
+    },
+    "ui/lookup": {
+      "default": {}
+    },
+    "ui/map": {
+      "default": {}
+    },
+    "ui/menu": {
+      "default": {},
+      "dxMenuBaseItem": {}
+    },
+    "ui/context_menu/ui.menu_base": {
+      "default": {}
+    },
+    "ui/multi_view": {
+      "default": {}
+    },
+    "ui/nav_bar": {
+      "default": {}
+    },
+    "ui/number_box": {
+      "default": {}
+    },
+    "ui/overlay": {
+      "default": {},
+      "baseZIndex": {}
+    },
+    "ui/pivot_grid": {
+      "default": {}
+    },
+    "ui/pivot_grid_field_chooser": {
+      "default": {}
+    },
+    "ui/popover": {
+      "default": {}
+    },
+    "ui/popup": {
+      "default": {}
+    },
+    "ui/progress_bar": {
+      "default": {}
+    },
+    "ui/radio_group": {
+      "default": {}
+    },
+    "viz/range_selector": {
+      "default": {}
+    },
+    "ui/range_slider": {
+      "default": {}
+    },
+    "ui/recurrence_editor": {
+      "default": {}
+    },
+    "ui/resizable": {
+      "default": {}
+    },
+    "ui/responsive_box": {
+      "default": {}
+    },
+    "viz/sankey": {
+      "default": {},
+      "dxSankeyConnectionInfoObject": {},
+      "dxSankeyLink": {},
+      "dxSankeyNode": {}
+    },
+    "ui/scheduler": {
+      "default": {},
+      "dxSchedulerScrolling": {}
+    },
+    "time_zone_utils": {
+      "dxSchedulerTimeZone": {},
+      "getTimeZones": {}
+    },
+    "ui/scroll_view": {
+      "default": {}
+    },
+    "ui/scroll_view/ui.scrollable": {
+      "default": {}
+    },
+    "ui/select_box": {
+      "default": {}
+    },
+    "ui/slide_out": {
+      "default": {}
+    },
+    "ui/slide_out_view": {
+      "default": {}
+    },
+    "ui/slider": {
+      "default": {},
+      "dxSliderBaseOptions": {}
+    },
+    "ui/sortable": {
+      "default": {}
+    },
+    "viz/sparkline": {
+      "default": {}
+    },
+    "ui/speed_dial_action": {
+      "default": {}
+    },
+    "ui/switch": {
+      "default": {}
+    },
+    "ui/tab_panel": {
+      "default": {}
+    },
+    "ui/tabs": {
+      "default": {}
+    },
+    "ui/tag_box": {
+      "default": {}
+    },
+    "core/templates/template": {
+      "dxTemplate": {},
+      "template": {}
+    },
+    "ui/text_area": {
+      "default": {}
+    },
+    "ui/text_box": {
+      "default": {}
+    },
+    "ui/text_box/ui.text_editor.base": {
+      "default": {},
+      "dxTextEditorButton": {}
+    },
+    "ui/tile_view": {
+      "default": {}
+    },
+    "ui/toast": {
+      "default": {}
+    },
+    "ui/toolbar": {
+      "default": {}
+    },
+    "ui/tooltip": {
+      "default": {}
+    },
+    "ui/track_bar": {
+      "default": {}
+    },
+    "ui/tree_list": {
+      "default": {},
+      "Node": {},
+      "RowObject": {},
+      "dxTreeListToolbar": {},
+      "dxTreeListToolbarItem": {}
+    },
+    "viz/tree_map": {
+      "default": {},
+      "dxTreeMapNode": {}
+    },
+    "ui/tree_view": {
+      "default": {},
+      "dxTreeViewNode": {}
+    },
+    "ui/validation_group": {
+      "default": {},
+      "dxValidationGroupResult": {}
+    },
+    "ui/validation_summary": {
+      "default": {}
+    },
+    "ui/validator": {
+      "default": {},
+      "dxValidatorResult": {}
+    },
+    "events": {
+      "Event": {},
+      "off": {},
+      "on": {},
+      "one": {},
+      "trigger": {},
+      "triggerHandler": {}
+    },
+    "mobile/hide_top_overlay": {
+      "default": {}
+    },
+    "core/component_registrator": {
+      "registerComponent": {}
+    },
+    "core/set_template_engine": {
+      "default": {}
+    },
+    "ui/dialog": {
+      "alert": {},
+      "confirm": {},
+      "custom": {}
+    },
+    "ui/notify": {
+      "default": {}
+    },
+    "ui/speed_dial_action/repaint_floating_action_button": {
+      "default": {}
+    },
+    "ui/set_template_engine": {
+      "default": {}
+    },
+    "ui/widget/template": {
+      "Template": {}
+    },
+    "ui/themes": {
+      "default": {}
+    },
+    "animation/frame": {
+      "cancel": {},
+      "request": {}
+    },
+    "mobile/init_mobile_viewport": {
+      "default": {}
+    },
+    "ui/validation_engine": {
+      "default": {}
+    },
+    "viz/palette": {
+      "currentPalette": {},
+      "generateColors": {},
+      "getPalette": {},
+      "registerPalette": {}
+    },
+    "viz/themes": {
+      "currentTheme": {},
+      "getTheme": {},
+      "refreshTheme": {},
+      "registerTheme": {}
+    },
+    "viz/export": {
+      "exportFromMarkup": {},
+      "exportWidgets": {},
+      "getMarkup": {}
+    },
+    "viz/utils": {
+      "refreshPaths": {}
+    }
+  }
+}

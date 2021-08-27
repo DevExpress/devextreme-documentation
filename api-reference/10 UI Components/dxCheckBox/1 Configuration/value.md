@@ -8,16 +8,6 @@ default: false
 Specifies the UI component state.
 
 ---
----
-id: dxCheckBox.Options.value
-type: Boolean | undefined
-default: false
----
----
-##### shortDescription
-Specifies the UI component state.
-
----
 The check box can be in one of the following states depending on the **value** property's value.
 
 - checked  

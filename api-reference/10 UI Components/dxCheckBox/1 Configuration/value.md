@@ -8,7 +8,17 @@ default: false
 Specifies the UI component state.
 
 ---
-The check box can be in one of the following states depending on the **value** property value.
+---
+id: dxCheckBox.Options.value
+type: Boolean | undefined
+default: false
+---
+---
+##### shortDescription
+Specifies the UI component state.
+
+---
+The check box can be in one of the following states depending on the **value** property's value.
 
 - checked  
  value is **true**
@@ -17,9 +27,9 @@ The check box can be in one of the following states depending on the **value** p
  value is **false**
 
 - undetermined  
- value is **undefined**
+ value is **undefined** or **null**
 
-An end-user can change the UI component value using the **Space** key.
+An end-user can use the **Space** key to change the UI component value.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"

@@ -11,15 +11,15 @@ Specifies the UI component state.
 The check box can be in one of the following states depending on the **value** property's value.
 
 - checked  
- value is **true**
+ **value** is **true**
 
 - unchecked  
- value is **false**
+ **value** is **false**
 
 - undetermined  
- value is **undefined** or **null**
+ **value** is **undefined** or **null**
 
-An end-user can use the **Space** key to change the UI component value.
+Users can press the Space key to change the **value**.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"

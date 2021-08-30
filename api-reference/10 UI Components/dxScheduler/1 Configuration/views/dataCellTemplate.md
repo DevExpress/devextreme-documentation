@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 Specifies a custom template for table cells.
 
-##### param(itemData): any
+##### param(itemData): Object
 The current table cell's data.
 
 ##### param(itemIndex): Number

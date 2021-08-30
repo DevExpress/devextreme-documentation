@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 Specifies a custom template for resource headers.
 
-##### param(itemData): any
+##### param(itemData): Object
 The current resource header's data.
 
 ##### param(itemIndex): Number

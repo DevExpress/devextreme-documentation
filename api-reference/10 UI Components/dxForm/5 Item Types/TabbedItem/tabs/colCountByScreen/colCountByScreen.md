@@ -1,6 +1,6 @@
 ---
 id: dxFormTabbedItem.tabs.colCountByScreen
-type: any
+type: Object
 inherits: ColCountResponsible
 default: undefined
 ---

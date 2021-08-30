@@ -50,6 +50,6 @@ An end user can use the following keys to interact with the UI component.
 #####See Also#####
 #include common-link-callmethods
 - [DropDownButton Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton)
-- [DropDownButton API Reference](/Documentation/ApiReference/UI_Components/dxDropDownButton)
+- [DropDownButton API Reference](/api-reference/10%20UI%20Components/dxDropDownButton '/Documentation/ApiReference/UI_Components/dxDropDownButton')
 
 [tags]dropDown button, accessibility, keyboard shortcuts

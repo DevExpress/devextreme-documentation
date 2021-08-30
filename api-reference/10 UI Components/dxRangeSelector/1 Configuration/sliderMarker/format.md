@@ -15,4 +15,4 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 }
 
 #####See Also#####
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

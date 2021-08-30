@@ -38,5 +38,5 @@ The item's current index. In a grouped list, the index represents an object defi
 
 ---
 #####See Also#####
-- [itemDragging](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging)
+- [itemDragging](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemDragging.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging')
 - [List - Handle Reordering-Related Events](/concepts/05%20UI%20Components/List/30%20Item%20Reordering/10%20Events.md '/Documentation/Guide/UI_Components/List/Item_Reordering/#Events')

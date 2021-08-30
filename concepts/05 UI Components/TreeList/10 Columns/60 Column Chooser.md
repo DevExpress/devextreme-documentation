@@ -308,5 +308,5 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
 
 #####See Also#####
 - [Hide a Column Using the API](/concepts/05%20UI%20Components/TreeList/10%20Columns/35%20Hide%20a%20Column%20Using%20the%20API.md '/Documentation/Guide/UI_Components/TreeList/Columns/Hide_a_Column_Using_the_API/')
-- [Adaptability](/concepts/05%20UI%20Components/TreeList/10%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')
+- [Adaptability](/concepts/05%20UI%20Components/TreeList/10%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')
 - [Column Fixing](/concepts/05%20UI%20Components/TreeList/10%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Fixing/')

@@ -16,7 +16,7 @@ A row containing data.
 A row that shows detail data. It appears when a user expands a [master row](/concepts/05%20UI%20Components/DataGrid/60%20Master-Detail%20Interface '/Documentation/Guide/UI_Components/DataGrid/Master-Detail_Interface/') or edits a row in [*"form"* editing mode](/concepts/05%20UI%20Components/DataGrid/20%20Editing/10%20User%20Interaction/40%20Form%20Mode.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#User_Interaction/Form_Mode'). To identify whether it is one or another, check the [isEditing](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/isEditing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#isEditing') field's value. It is **true** while the editing takes place.
 
 - *"detailAdaptive"*    
-An [adaptive detail row](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/').
+An [adaptive detail row](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/').
 
 - *"group"*     
 A [group row](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/10%20User%20Interaction/20%20Expand%20and%20Collapse%20Groups.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Expand_and_Collapse_Groups').        

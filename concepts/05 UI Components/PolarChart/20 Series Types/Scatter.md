@@ -15,7 +15,7 @@ PolarChart uses the *scatter* series type by default. But in some cases, you may
         }
     };
 
-To learn how to specify data for a chart series, refer to the [Data Binding](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/) topic.
+To learn how to specify data for a chart series, refer to the [Data Binding](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') topic.
 
 Note that you can use a spider web for polar charts displaying discrete data. For this purpose, set the UI component's [useSpiderWeb](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/useSpiderWeb.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#useSpiderWeb') property to **true**.
 

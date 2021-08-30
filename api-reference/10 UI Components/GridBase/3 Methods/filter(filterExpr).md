@@ -6,7 +6,7 @@ id: GridBase.filter(filterExpr)
 Applies a filter to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
 
 ##### param(filterExpr): any
-A [filter expression](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter).
+A [filter expression](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter').
 
 ---
 #include common-demobutton with {

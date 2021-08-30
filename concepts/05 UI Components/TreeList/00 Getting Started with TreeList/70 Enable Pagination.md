@@ -1,4 +1,4 @@
-When pagination is enabled, TreeList loads records page by page instead of loading them all at once. To configure pagination, set the **paging**.[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#enabled) property to **true** and use the **paging**.[pageSize](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize) property to specify the optimal number of records per page. Use this feature if your tests show noticeable lags without it.
+When pagination is enabled, TreeList loads records page by page instead of loading them all at once. To configure pagination, set the **paging**.[enabled](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#enabled') property to **true** and use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize') property to specify the optimal number of records per page. Use this feature if your tests show noticeable lags without it.
 
 
 ---
@@ -89,4 +89,4 @@ When pagination is enabled, TreeList loads records page by page instead of loadi
 For further information on the TreeList component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxTreeList/)
+* [API Reference](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')

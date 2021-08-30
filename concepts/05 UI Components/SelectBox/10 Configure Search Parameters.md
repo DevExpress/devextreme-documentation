@@ -1,6 +1,6 @@
 [note] Searching works when inputting a plain data structure only. However, if you need the searching capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
-The SelectBox UI component allows an end user to search through its items. This feature is disabled by default. To enable it, assign **true** to the [searchEnabled](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchEnabled') property. Use the [searchExpr](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchExpr') property to specify which data fields should be searched. Assign an _array_ of field names to this property if you need to search several fields.
+The SelectBox UI component allows an end user to search through its items. This feature is disabled by default. To enable it, assign **true** to the [searchEnabled](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchEnabled') property. Use the [searchExpr](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchExpr') property to specify which data fields should be searched. Assign an _array_ of field names to this property if you need to search several fields.
 
 ---
 ##### jQuery
@@ -121,7 +121,7 @@ The SelectBox UI component allows an end user to search through its items. This 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/SearchAndEditing/"
 }
 
-When a user types a string in the input field, the SelectBox suggests all items that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchMode') property if you want the SelectBox to suggest only those items that _start_ with the input string.
+When a user types a string in the input field, the SelectBox suggests all items that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchMode') property if you want the SelectBox to suggest only those items that _start_ with the input string.
 
 ---
 ##### jQuery
@@ -242,7 +242,7 @@ When a user types a string in the input field, the SelectBox suggests all items 
 
 ---
 
-There is a delay between the moment a user finishes typing and the moment the search is executed. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchTimeout') property. The delay is measured in milliseconds.
+There is a delay between the moment a user finishes typing and the moment the search is executed. To increase or descrease it, use the [searchTimeout](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/searchTimeout.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchTimeout') property. The delay is measured in milliseconds.
 
 ---
 ##### jQuery

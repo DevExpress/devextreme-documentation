@@ -29,4 +29,4 @@ The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentati
     console.log(numberString); // logs "25%"
 
 #####See Also#####
-- [Format Custom Values](/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values)
+- [Format Custom Values](/concepts/Common/Value%20Formatting/40%20Format%20Custom%20Values.md '/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values')

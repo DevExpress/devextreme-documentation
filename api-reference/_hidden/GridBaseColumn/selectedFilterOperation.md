@@ -7,7 +7,7 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies a filter operation that applies when users use the [filter row](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/) to filter the column.
+Specifies a filter operation that applies when users use the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') to filter the column.
 
 ---
 The following table lists default selected filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'):

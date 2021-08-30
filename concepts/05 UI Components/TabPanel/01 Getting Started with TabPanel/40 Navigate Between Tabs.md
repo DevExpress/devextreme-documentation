@@ -1,15 +1,15 @@
 Specify the following properties to configure navigation between tabs:
 
-- [swipeEnabled](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#swipeEnabled)      
+- [swipeEnabled](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/swipeEnabled.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#swipeEnabled')      
 Specifies whether users can switch between views with the swipe gesture.
 
-- [loop](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#loop)      
+- [loop](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/loop.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#loop')      
 Specifies whether to loop views.
 
-- [animationEnabled](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#animationEnabled)      
+- [animationEnabled](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#animationEnabled')      
 Specifies whether to animate the change of the current view.
 
-- [selectedIndex](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#selectedIndex)     
+- [selectedIndex](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#selectedIndex')     
 Specifies the index of the currently selected tab. Use this property to switch between tabs programmatically. In this tutorial, this property's value depends on the the RadioGroup's selected item (see `tabSwitcherRadioGroup`). 
 
 ---
@@ -169,4 +169,4 @@ Specifies the index of the currently selected tab. Use this property to switch b
 For further information on the TabPanel UI component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxTabPanel/)
+* [API Reference](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/')

@@ -1,4 +1,4 @@
-You can call the [expandAdaptiveDetailRow(key)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAdaptiveDetailRowkey) or [collapseAdaptiveDetailRow()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAdaptiveDetailRow) method to expand or collapse an adaptive detail row. To check whether a specific row is expanded, use the [isAdaptiveDetailRowExpanded(key)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isAdaptiveDetailRowExpandedkey) method. Note that only one detail row can be expanded at a time.
+You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/expandAdaptiveDetailRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAdaptiveDetailRowkey') or [collapseAdaptiveDetailRow()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/collapseAdaptiveDetailRow().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAdaptiveDetailRow') method to expand or collapse an adaptive detail row. To check whether a specific row is expanded, use the [isAdaptiveDetailRowExpanded(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/isAdaptiveDetailRowExpanded(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isAdaptiveDetailRowExpandedkey') method. Note that only one detail row can be expanded at a time.
 
 ---
 ##### jQuery
@@ -98,5 +98,5 @@ You can call the [expandAdaptiveDetailRow(key)](/Documentation/ApiReference/UI_C
 ---
 
 #####See Also#####
-- [Column Fixing](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Fixing/)
-- [Column Chooser](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Chooser/)
+- [Column Fixing](/concepts/05%20UI%20Components/DataGrid/15%20Columns/30%20Column%20Fixing.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Fixing/')
+- [Column Chooser](/concepts/05%20UI%20Components/DataGrid/15%20Columns/60%20Column%20Chooser.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Chooser/')

@@ -127,5 +127,5 @@ id: dxGantt.showResourceManagerDialog()
 ---
 
 #####See Also#####
-- [onResourceManagerDialogShowing](/api-reference/10%20UI%20Components/dxGantt/4%20Events/resourceManagerDialogShowing.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing')
+- [onResourceManagerDialogShowing](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onResourceManagerDialogShowing.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing')
 - [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

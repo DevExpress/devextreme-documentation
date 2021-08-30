@@ -1,4 +1,4 @@
-To add a search bar to the List, set the [searchEnabled](/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchEnabled) property to **true**. Use the [searchMode](/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchMode) property to specify whether found list items should start with, contain, or match the search string.
+To add a search bar to the List, set the [searchEnabled](/api-reference/10%20UI%20Components/dxList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchEnabled') property to **true**. Use the [searchMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchMode') property to specify whether found list items should start with, contain, or match the search string.
 
 ---
 ##### jQuery

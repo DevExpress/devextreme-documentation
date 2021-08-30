@@ -13,7 +13,7 @@ A Promise that is resolved after a user clicks the button. It is a <a href="http
 ##### param(messageHtml): String
 The dialog's message.       
 Can contain HTML markup that will be evaluated. Make sure that the markup does not contain malicious code.        
-Refer to the following help topic for more information: [Potentially Vulnerable API - messageHtml](/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/messageHtml).
+Refer to the following help topic for more information: [Potentially Vulnerable API - messageHtml](/concepts/Common/Security%20Considerations/20%20HTML%20Encoding/30%20Potentially%20Vulnerable%20API/messageHtml.md '/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/messageHtml').
 
 ##### param(title): String
 The dialog's title.

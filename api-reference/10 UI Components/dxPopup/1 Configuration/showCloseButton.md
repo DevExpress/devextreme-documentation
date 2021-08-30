@@ -1,7 +1,7 @@
 ---
 id: dxPopup.Options.showCloseButton
 type: Boolean
-default: false, true (desktop)
+default: false, true (desktop), false (Material)
 ---
 ---
 ##### shortDescription

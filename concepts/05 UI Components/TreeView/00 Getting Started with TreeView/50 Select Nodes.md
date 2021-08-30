@@ -1,15 +1,15 @@
 To configure node selection, use the following properties:
 
-* [selectByClick](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick)           
+* [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick')           
 Enables selection by a click.
 
-* [showCheckBoxesMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode)           
+* [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode')           
 Adds checkboxes if you set this property to *"normal"* or *"selectAll"*. The latter mode additionally displays the "Select All" checkbox at the top of the TreeView.
 
-* [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode)             
+* [selectionMode](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode')             
 Sets the selection mode to *"single"* or *"multiple"* (default).
 
-* [onItemSelectionChanged](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onItemSelectionChanged)           
+* [onItemSelectionChanged](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/onItemSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#onItemSelectionChanged')           
 Specifies a function that is executed when a single node is selected or deselected.
 
 In this tutorial, we enable selection by a click and use the single-node selection mode. Also, we specify the **onItemSelectionChanged** function to display the selected product, its picture, and price.

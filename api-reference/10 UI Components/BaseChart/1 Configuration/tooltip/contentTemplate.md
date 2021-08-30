@@ -213,4 +213,4 @@ The following **pointInfo** fields are available for the financial chart series,
 }
 
 #####See Also#####
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

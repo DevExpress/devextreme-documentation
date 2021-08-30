@@ -5,7 +5,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies a predefined format. Does not apply if you have specified the [formatter](/api-reference/50%20Common/Object%20Structures/Format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') function.
+Specifies a predefined format. Does not apply if you have specified the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') function.
 
 ---
 You can choose one of the predefined formats, depending on the values you need to format, from the following groups:
@@ -50,7 +50,7 @@ You can choose one of the predefined formats, depending on the values you need t
     </ul> 
 </div>
 
-[note]Specify the [precision](/api-reference/50%20Common/Object%20Structures/Format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision') to show fractional numbers.
+[note]Specify the [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision') to show fractional numbers.
 
 **Date-Time Formats**  
 
@@ -96,5 +96,5 @@ If the **type** is the only field you need to specify in the **format** object, 
 }
 
 #####See Also#####
-- **format**.[currency](/api-reference/50%20Common/Object%20Structures/Format/currency.md '/Documentation/ApiReference/Common/Object_Structures/Format/#currency')
-- **format**.[precision](/api-reference/50%20Common/Object%20Structures/Format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision')
+- **format**.[currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/Format/#currency')
+- **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision')

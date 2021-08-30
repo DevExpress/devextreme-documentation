@@ -14,7 +14,7 @@ The formatted string.
 A numeric value to be converted.
 
 ##### param(format): Format
-The [format](/api-reference/50%20Common/Object%20Structures/Format '/Documentation/ApiReference/Common/Object_Structures/Format/') to be used for conversion.
+The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') to be used for conversion.
 
 ---
 
@@ -29,4 +29,4 @@ The [format](/api-reference/50%20Common/Object%20Structures/Format '/Documentati
     console.log(numberString); // logs "25%"
 
 #####See Also#####
-- [Format Custom Values](/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values)
+- [Format Custom Values](/concepts/Common/Value%20Formatting/40%20Format%20Custom%20Values.md '/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values')

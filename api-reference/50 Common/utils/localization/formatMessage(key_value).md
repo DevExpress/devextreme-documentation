@@ -17,4 +17,4 @@ The key that identifies the message in a dictionary.
 One or several values used to fill placeholders in the message.
 
 ---
-Refer to the following help topic for a code example: [Add Strings to a Dictionary](/Documentation/Guide/Common/Localization/#Dictionaries/Add_Strings_to_a_Dictionary).
+Refer to the following help topic for a code example: [Add Strings to a Dictionary](/concepts/Common/Localization/01%20Dictionaries/05%20Add%20Strings%20to%20a%20Dictionary.md '/Documentation/Guide/Common/Localization/#Dictionaries/Add_Strings_to_a_Dictionary').

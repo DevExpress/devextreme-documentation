@@ -15,7 +15,7 @@ The alias of the entity's collection.
 The entity's key value.
 
 ---
-Call this method within the [insert()](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#insertvalues') or the [update()](/api-reference/30%20Data%20Layer/Store/3%20Methods/update(key_values).md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#updatekey_values') method to change the relationships between entities. The following code links the order with ID `1` to the customer with ID `2`:
+Call this method within the [insert()](/api-reference/30%20Data%20Layer/ODataStore/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#insertvalues') or the [update()](/api-reference/30%20Data%20Layer/Store/3%20Methods/update(key_values).md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#updatekey_values') method to change the relationships between entities. The following code links the order with ID `1` to the customer with ID `2`:
 
 ---
 #####jQuery

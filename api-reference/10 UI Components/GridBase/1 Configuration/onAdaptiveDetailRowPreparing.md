@@ -23,7 +23,7 @@ The properties of the [Form](/api-reference/10%20UI%20Components/dxForm/1%20Conf
 Model data. Available only if you use Knockout.
 
 ---
-Adaptive detail rows display information from columns that were hidden when the UI component adapted to the screen or container size. Each adaptive detail row contains the [Form](/Documentation/ApiReference/UI_Components/dxForm/) UI component that you can customize within the **onAdaptiveDetailRowPreparing** function using the **formOptions** object. Refer to the [Form Configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') section for details on properties of the Form UI component.
+Adaptive detail rows display information from columns that were hidden when the UI component adapted to the screen or container size. Each adaptive detail row contains the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') UI component that you can customize within the **onAdaptiveDetailRowPreparing** function using the **formOptions** object. Refer to the [Form Configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') section for details on properties of the Form UI component.
 
 [note]
 
@@ -38,4 +38,4 @@ The following Form properties cannot be specified using **formOptions**:
 #####See Also#####
 - [columnHidingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnHidingEnabled.md '{basewidgetpath}/Configuration/#columnHidingEnabled')
 - **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseColumn/hidingPriority.md '{basewidgetpath}/Configuration/columns/#hidingPriority')
-- [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Adaptability/')
+- [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Adaptability/')

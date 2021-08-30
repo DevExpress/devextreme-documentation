@@ -8,7 +8,7 @@ To create a UI component, call its constructor passing the target element and a 
     let instance = new Accordion(element, options);
     ...
 
-If you do not use modules, you can use the **DevExpress.ui** namespace to access constructors of most of the UI components. The exceptions are data visualization components: [VectorMap](/Documentation/ApiReference/UI_Components/dxVectorMap/), [RangeSelector](/Documentation/ApiReference/UI_Components/dxRangeSelector/), and all types of Charts and Gauges. These components belong to the **DevExpress.viz** namespace.
+If you do not use modules, you can use the **DevExpress.ui** namespace to access constructors of most of the UI components. The exceptions are data visualization components: [VectorMap](/api-reference/10%20UI%20Components/dxVectorMap '/Documentation/ApiReference/UI_Components/dxVectorMap/'), [RangeSelector](/api-reference/10%20UI%20Components/dxRangeSelector '/Documentation/ApiReference/UI_Components/dxRangeSelector/'), and all types of Charts and Gauges. These components belong to the **DevExpress.viz** namespace.
 
     let instance = new DevExpress.ui.dxAccordion(element, options);
     let dataVizInstance = new DevExpress.viz.dxPolarChart(element, options);

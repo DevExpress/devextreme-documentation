@@ -1,6 +1,6 @@
-Use the [itemTemplate](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#itemTemplate) property to specify a template for all nodes as shown in this tutorial. If you want to add a template for a specific node, use the [template](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#template) node's property. This setting overrides the global template.  
+Use the [itemTemplate](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#itemTemplate') property to specify a template for all nodes as shown in this tutorial. If you want to add a template for a specific node, use the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#template') node's property. This setting overrides the global template.  
 
-You can also use additional fields to customize node appearance. For example, you can enable the [expanded](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#expanded) field for those nodes that should be expanded on startup:
+You can also use additional fields to customize node appearance. For example, you can enable the [expanded](/api-reference/_hidden/dxTreeViewItem/expanded.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#expanded') field for those nodes that should be expanded on startup:
 
 ---
 ##### jQuery

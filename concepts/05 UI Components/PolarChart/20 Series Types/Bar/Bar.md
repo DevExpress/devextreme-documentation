@@ -15,7 +15,7 @@ To use the *bar* series type, assign *'bar'* to the **type** property of the **s
         }
     };
 
-To learn how to specify data for a series, refer to the [Data Binding](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/) topic.
+To learn how to specify data for a series, refer to the [Data Binding](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') topic.
 
 To change the series default appearance, set the properties of the **series** configuration object. For instance, you can change the following.
 

@@ -6,7 +6,7 @@ default: 'outlined'
 ---
 ---
 ##### shortDescription
-Specifies how the HtmlEditor's [toolbar](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/) and content field are styled.
+Specifies how the HtmlEditor's [toolbar](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/') and content field are styled.
 
 ---
 The following styles are available: 

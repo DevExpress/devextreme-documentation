@@ -1,18 +1,18 @@
 You can use the following properties to specify view content:       
 
-- [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate)     
+- [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate')     
 Specifies a custom template for all views.
 
-- **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template)        
+- **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template')        
 Specifies a custom template for an individual view. This property overrides **itemTemplate**.
 
-- **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text)        
+- **items[]**.[text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#text')        
 Specifies text displayed in an individual view. 
 
-- [noDataText](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#noDataText)        
+- [noDataText](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/noDataText.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#noDataText')        
 Specifies text or markup to display when views do not have content.
 
-This tutorial demonstrates the use of the **items[]**.**template** property. This property allows you to specify different content for individual views. In the code below, the views contain the [Form](/Documentation/ApiReference/UI_Components/dxForm/), [TextArea](/Documentation/ApiReference/UI_Components/dxTextArea/), and [RadioGroup](/Documentation/ApiReference/UI_Components/dxRadioGroup/) UI components. 
+This tutorial demonstrates the use of the **items[]**.**template** property. This property allows you to specify different content for individual views. In the code below, the views contain the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/'), [TextArea](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/'), and [RadioGroup](/api-reference/10%20UI%20Components/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/') UI components. 
 
 ---
 ##### jQuery  

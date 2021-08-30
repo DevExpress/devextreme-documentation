@@ -235,5 +235,5 @@ To choose which series elements should be highlighted when a user pauses on a se
 }
 
 #####See Also#####
-- [Point Hover](/Documentation/Guide/UI_Components/Chart/Series_Points/Hover/)
+- [Point Hover](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/10%20Hover '/Documentation/Guide/UI_Components/Chart/Series_Points/Hover/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')

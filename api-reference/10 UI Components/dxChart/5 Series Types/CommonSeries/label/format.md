@@ -20,4 +20,4 @@ This property accepts an object whose fields are described in the [format](/api-
 
 #####See Also#####
 - [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') - provides a comprehensive overview of formatting capabilities.
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/) - shows how to apply formatting to various UI component elements.
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') - shows how to apply formatting to various UI component elements.

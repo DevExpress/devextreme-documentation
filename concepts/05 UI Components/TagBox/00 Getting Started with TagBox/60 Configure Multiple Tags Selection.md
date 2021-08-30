@@ -1,15 +1,15 @@
 Use the following properties to adapt the TagBox text field to multiple selected tags:        
 
-- [multiline](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#multiline)     
+- [multiline](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/multiline.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#multiline')     
 Set this property to **true** to display tags on multiple lines when the tags overflow the component's width.
 
-- [maxDisplayedTags](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags)      
+- [maxDisplayedTags](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/maxDisplayedTags.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags')      
 Use this property to specifiy the limit after which the TagBox replaces selected tags with a single multi-tag.
 
-- [showMultiTagOnly](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly)      
+- [showMultiTagOnly](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly')      
 Specifies whether to display the multi-tag without ordinary tags. This property is not demonstrated in this tutorial. Refer to the following demo to see it in action: [Tag Count Limitation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/TagCountLimitation/).
 
-Drop-down list values can display selection checkboxes. To enable this feature, set the [showSelectionControls](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showSelectionControls) property to **true**. This property also adds the *"Select All"* checkbox to the list.
+Drop-down list values can display selection checkboxes. To enable this feature, set the [showSelectionControls](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showSelectionControls') property to **true**. This property also adds the *"Select All"* checkbox to the list.
 
 ---
 ##### jQuery
@@ -68,4 +68,4 @@ Drop-down list values can display selection checkboxes. To enable this feature, 
 ---
 
 
-Use the [applyValueMode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#applyValueMode) property to specify whether to apply values instantly or when users click the *"OK"* button. You can also enable the [hideSelectedItems](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#hideSelectedItems) property if you want to remove already selected items from the drop-down list. These properties are not demonstrated in this tutorial.
+Use the [applyValueMode](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#applyValueMode') property to specify whether to apply values instantly or when users click the *"OK"* button. You can also enable the [hideSelectedItems](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/hideSelectedItems.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#hideSelectedItems') property if you want to remove already selected items from the drop-down list. These properties are not demonstrated in this tutorial.

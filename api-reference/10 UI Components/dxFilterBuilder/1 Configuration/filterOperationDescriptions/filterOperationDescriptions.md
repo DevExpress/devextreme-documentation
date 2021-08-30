@@ -100,4 +100,4 @@ The following code sample illustrates how to set this property:
 ---
 
 #####See Also#####
-- **fields[]**.[filterOperations](/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#filterOperations)
+- **fields[]**.[filterOperations](/api-reference/_hidden/dxFilterBuilderField/filterOperations.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#filterOperations')

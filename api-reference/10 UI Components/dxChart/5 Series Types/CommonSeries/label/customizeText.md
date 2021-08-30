@@ -156,4 +156,4 @@ The following fields are inherent to financial series ([candlestick](/api-refere
 #include dataviz-ref-functioncontext
 
 #####See Also#####
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

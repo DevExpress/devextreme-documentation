@@ -26,9 +26,9 @@ The resources' values.
 
 ![DevExtreme Gantt - Invoke Resource Manager](/images/Gantt/invoke-resource-manager.png)
 
-Use the **onResourceManagerDialogShowing** function to customize the **Resource Manager** dialog before it is invoked. You can also use the [showResourceManagerDialog](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#showResourceManagerDialog) method or the "Resource Manager" [toolbar item](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/items/) to invoke the **Resource Manager**.
+Use the **onResourceManagerDialogShowing** function to customize the **Resource Manager** dialog before it is invoked. You can also use the [showResourceManagerDialog](/api-reference/10%20UI%20Components/dxGantt/3%20Methods/showResourceManagerDialog().md '/Documentation/ApiReference/UI_Components/dxGantt/Methods/#showResourceManagerDialog') method or the "Resource Manager" [toolbar item](/api-reference/_hidden/dxGanttToolbar/items.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/items/') to invoke the **Resource Manager**.
 
-The [allowTaskResourceUpdating](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowTaskResourceUpdating) property allows you to hide the **Resource Manager** button in the **Task Details** dialog.
+The [allowTaskResourceUpdating](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/editing/allowTaskResourceUpdating.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowTaskResourceUpdating') property allows you to hide the **Resource Manager** button in the **Task Details** dialog.
 
 ---
 

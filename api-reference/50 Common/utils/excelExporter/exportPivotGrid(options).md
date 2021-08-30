@@ -201,7 +201,7 @@ You can call this method at any point in your application. In the example below,
 }
 
 #####See Also#####
-- [export](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/)
+- [export](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/')
 
 <!-- import * from 'api-reference\50 Common\utils\excelExporter\exportDataGrid(options).md' -->
 

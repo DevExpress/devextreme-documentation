@@ -1,4 +1,4 @@
-Users can resize images embedded within the content. To enable this functionality, set the [mediaResizing](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/).[enabled](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/#enabled) property to **true**:
+Users can resize images embedded within the content. To enable this functionality, set the [mediaResizing](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/mediaResizing '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/').[enabled](/api-reference/_hidden/dxHtmlEditorMediaResizing/enabled.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mediaResizing/#enabled') property to **true**:
 
 ---
 ##### jQuery
@@ -72,4 +72,4 @@ Users can resize images embedded within the content. To enable this functionalit
 For further information on the HtmlEditor component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxHtmlEditor/)
+* [API Reference](/api-reference/10%20UI%20Components/dxHtmlEditor '/Documentation/ApiReference/UI_Components/dxHtmlEditor/')

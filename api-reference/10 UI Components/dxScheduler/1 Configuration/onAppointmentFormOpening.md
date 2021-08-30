@@ -32,7 +32,7 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/Documentation/ApiReference/UI_Components/dxForm/) and [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_popup/) UI components. Their instances are passed to the **onAppointmentFormOpening** function in the **form** and **popup** fields. Use the [Form API](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to customize the corresponding UI component.
+The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') and [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_popup/') UI components. Their instances are passed to the **onAppointmentFormOpening** function in the **form** and **popup** fields. Use the [Form API](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to customize the corresponding UI component.
 
 Form items are organized into two groups:
 

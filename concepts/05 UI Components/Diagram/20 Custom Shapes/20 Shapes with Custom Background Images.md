@@ -63,23 +63,23 @@ The image below shows the result:
 
 The following properties allow you to customize the image size and position:
 
-* [backgroundImageWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageWidth)
-* [backgroundImageHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageHeight)
-* [backgroundImageTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageTop)
-* [backgroundImageLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageLeft)
+* [backgroundImageWidth](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageWidth.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageWidth')
+* [backgroundImageHeight](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageHeight.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageHeight')
+* [backgroundImageTop](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageTop.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageTop')
+* [backgroundImageLeft](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/backgroundImageLeft.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#backgroundImageLeft')
 
 **Shape Size**
 
 Use the following properties to specify the shape size settings:
 
-* [defaultHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultHeight)
-* [defaultWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultWidth)
-* [allowResize](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowResize)
-* [minHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#minHeight)
-* [maxHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxHeight)
-* [minWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#minWidth)
-* [maxWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxWidth)
-* [keepRatioOnAutoSize](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#keepRatioOnAutoSize)
+* [defaultHeight](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/defaultHeight.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultHeight')
+* [defaultWidth](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/defaultWidth.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultWidth')
+* [allowResize](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/allowResize.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowResize')
+* [minHeight](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/minHeight.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#minHeight')
+* [maxHeight](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/maxHeight.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxHeight')
+* [minWidth](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/minWidth.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#minWidth')
+* [maxWidth](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/maxWidth.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#maxWidth')
+* [keepRatioOnAutoSize](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/keepRatioOnAutoSize.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#keepRatioOnAutoSize')
 
 ---
 ##### jQuery
@@ -138,14 +138,14 @@ The image below shows the result:
 
 **Shape Inner Image**
 
-A custom shape can display an inner image. Use the [defaultImageUrl](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultImageUrl) property to specify the image URL.
+A custom shape can display an inner image. Use the [defaultImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/defaultImageUrl.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultImageUrl') property to specify the image URL.
 
 The following properties allow you to specify the image size and position:
 
-* [imageHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageHeight)
-* [imageTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageTop)
-* [imageLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageLeft)
-* [imageWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageWidth)
+* [imageHeight](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/imageHeight.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageHeight')
+* [imageTop](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/imageTop.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageTop')
+* [imageLeft](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/imageLeft.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageLeft')
+* [imageWidth](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/imageWidth.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#imageWidth')
 
 ---
 ##### jQuery
@@ -214,21 +214,21 @@ The image below shows the result:
 
 ![Custom Shape Inner Image](/images/diagram/custom-shape-inner-image.png)
 
-If the [allowEditImage](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditImage) property is set to `true`, the Diagram context menu displays commands that allow users to change the image.
+If the [allowEditImage](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/allowEditImage.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditImage') property is set to `true`, the Diagram context menu displays commands that allow users to change the image.
 
 
 ![Custom Shape Image Context Menu](/images/diagram/custom-shape-inner-image-context-menu.png)
 
 **Shape Text**
 
-The [defaultText](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultText) property specifies the shape text. Users can change the text if the [allowEditText](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditText) property is set to `true`.
+The [defaultText](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/defaultText.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#defaultText') property specifies the shape text. Users can change the text if the [allowEditText](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/allowEditText.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#allowEditText') property is set to `true`.
 
 Use the following properties to specify the size and position of the text container:
 
-* [textHeight](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textHeight)
-* [textWidth](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textWidth)
-* [textLeft](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textLeft)
-* [textTop](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textTop)
+* [textHeight](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/textHeight.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textHeight')
+* [textWidth](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/textWidth.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textWidth')
+* [textLeft](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/textLeft.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textLeft')
+* [textTop](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/textTop.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#textTop')
 
 ---
 ##### jQuery
@@ -289,7 +289,7 @@ The image below shows the result:
 
 ![Custom Shape Text](/images/diagram/custom-shape-text.png)
 
-You can use the [textStyle](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#textStyle) property to specify the default style settings for a shape's text.
+You can use the [textStyle](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/defaultItemProperties/textStyle.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#textStyle') property to specify the default style settings for a shape's text.
 
 ---
 ##### jQuery
@@ -347,7 +347,7 @@ The image below shows the result:
 
 **Connection Points**
 
-Use the [connectionPoints](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#connectionPoints) property to specify a collection of custom connection points for a shape. If the property is not specified, the shape displays the default connection points.
+Use the [connectionPoints](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/connectionPoints '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#connectionPoints') property to specify a collection of custom connection points for a shape. If the property is not specified, the shape displays the default connection points.
 
 ---
 ##### jQuery

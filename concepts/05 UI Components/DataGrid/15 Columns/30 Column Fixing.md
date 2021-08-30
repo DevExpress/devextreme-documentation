@@ -186,5 +186,5 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
 Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth') property is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
 
 #####See Also#####
-- [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/')
+- [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalDataSource)

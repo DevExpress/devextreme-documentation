@@ -23,7 +23,7 @@ The **calculateFilterExpression** function should return a [filter expression](/
     [selector, comparisonOperator, filterValue]
 
 - `selector`      
-A [dataField]({basewidgetpath}/Configuration/fields/#dataField) to filter.
+A [dataField](/api-reference/_hidden/dxFilterBuilderField/dataField.md '{basewidgetpath}/Configuration/fields/#dataField') to filter.
 
 - `comparisonOperator`       
 One of the following operators: *"=", "<>", ">", ">=", "<", "<=", "startswith", "endswith", "contains", "notcontains"*.     
@@ -182,8 +182,8 @@ In the following code, the **calculateFilterExpression** function implements an 
 }
 
 #####See Also#####
-- **fields[]**.[filterOperations](/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#filterOperations)
-- [groupOperations](/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#groupOperations)
-- [customOperations](/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/)
+- **fields[]**.[filterOperations](/api-reference/_hidden/dxFilterBuilderField/filterOperations.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#filterOperations')
+- [groupOperations](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/groupOperations.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#groupOperations')
+- [customOperations](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/customOperations '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/')
 
 <!-- import * from 'api-reference\_hidden\GridBaseColumn\calculateFilterExpression.md' -->

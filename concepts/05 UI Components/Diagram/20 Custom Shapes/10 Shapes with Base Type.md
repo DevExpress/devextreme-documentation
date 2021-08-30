@@ -101,7 +101,7 @@ Use the [baseType](/api-reference/10%20UI%20Components/dxDiagram/1%20Configurati
 
 ---
 
-You can use the [style](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#style) and [textStyle](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#textStyle) properties to specify the default style settings for a shape and a shape’s text.
+You can use the [style](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/defaultItemProperties/style.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#style') and [textStyle](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/defaultItemProperties/textStyle.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/#textStyle') properties to specify the default style settings for a shape and a shape’s text.
 
 ---
 ##### jQuery

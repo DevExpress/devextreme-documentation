@@ -12,4 +12,3 @@ The image format.
 A function to be executed after a diagram image is prepared and allows you to save the image.
 
 ---
-

@@ -5,7 +5,7 @@ default: false, true (desktop)
 ---
 ---
 ##### shortDescription
-Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNativeScrolling](/Documentation/ApiReference/UI_Components/dxList/Configuration/#useNativeScrolling) is **false**.
+Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNativeScrolling](/api-reference/10%20UI%20Components/dxList/1%20Configuration/useNativeScrolling.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#useNativeScrolling') is **false**.
 
 ---
 #####See Also#####

@@ -13,4 +13,4 @@ Specifies whether all rows are expanded initially.
 }
 
 #####See Also#####
-- [expandedRowKeys](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys) 
+- [expandedRowKeys](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/expandedRowKeys.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys') 

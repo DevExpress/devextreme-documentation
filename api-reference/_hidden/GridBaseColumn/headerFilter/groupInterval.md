@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies how the header filter combines values into groups. Does not apply if you [specify a custom header filter data source](/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source).
+Specifies how the header filter combines values into groups. Does not apply if you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source').
 
 ---
 For numeric columns, assign a number to this property. This number designates a step with which to generate groups. Column values are classified into these groups.
@@ -15,7 +15,7 @@ For numeric columns, assign a number to this property. This number designates a 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
 }
 
-For date columns, set this property to one of the accepted string values above. Dates are grouped into a hierarchy, and the string value indicates its lowest level. The default level is *"day"* which means that the header filter forms the following hierarchy: Year &rarr; Month &rarr; Day. You can disable the hierarchical display if you set the **groupInterval** to **null**. In this case, you also need to implement the column's [calculateFilterExpression](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression) function as follows:
+For date columns, set this property to one of the accepted string values above. Dates are grouped into a hierarchy, and the string value indicates its lowest level. The default level is *"day"* which means that the header filter forms the following hierarchy: Year &rarr; Month &rarr; Day. You can disable the hierarchical display if you set the **groupInterval** to **null**. In this case, you also need to implement the column's [calculateFilterExpression](/api-reference/_hidden/GridBaseColumn/calculateFilterExpression.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression') function as follows:
 
 ---
 ##### jQuery

@@ -184,4 +184,4 @@ Since column fixing is effective only with horizontal scrolling, using it makes 
 }
 
 #####See Also#####
-- [Adaptability](/concepts/05%20UI%20Components/TreeList/10%20Columns/50%20Adaptability.md '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')
+- [Adaptability](/concepts/05%20UI%20Components/TreeList/10%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/TreeList/Columns/Adaptability/')

@@ -30,4 +30,4 @@ The UI component's new value.
 
 ---
 #####See Also#####
-- [valueChangeEvent]({basewidgetpath}/Configuration/#valueChangeEvent)
+- [valueChangeEvent](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/valueChangeEvent.md '{basewidgetpath}/Configuration/#valueChangeEvent')

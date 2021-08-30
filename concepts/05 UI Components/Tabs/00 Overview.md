@@ -1,4 +1,4 @@
-The Tabs is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/Documentation/ApiReference/UI_Components/dxTabPanel/) UI component, but you can use the Tabs separately as well.
+The Tabs is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/') UI component, but you can use the Tabs separately as well.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"

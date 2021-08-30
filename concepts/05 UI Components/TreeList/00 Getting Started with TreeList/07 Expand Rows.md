@@ -1,4 +1,4 @@
-You can use the [expandedRowKeys](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys) property to expand individual rows. Alternatively, you can enable the [autoExpandAll](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#autoExpandAll) property to expand all rows, as shown in the following code:
+You can use the [expandedRowKeys](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/expandedRowKeys.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#expandedRowKeys') property to expand individual rows. Alternatively, you can enable the [autoExpandAll](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/autoExpandAll.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#autoExpandAll') property to expand all rows, as shown in the following code:
 
 ---
 ##### jQuery

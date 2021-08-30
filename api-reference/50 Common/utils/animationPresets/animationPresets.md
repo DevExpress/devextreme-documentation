@@ -9,7 +9,7 @@ type: Object
 A repository of animations.
 
 ---
-To avoid [defining animations](/api-reference/50%20Common/Object%20Structures/AnimationConfig '/Documentation/ApiReference/Common/Object_Structures/AnimationConfig/') each time you animate an element(s), register different animations in the **DevExtreme.animationPresets** repository and request them by associated names when required. This repository has a built-in set of animations. Here they are:
+To avoid [defining animations](/api-reference/50%20Common/Object%20Structures/animationConfig '/Documentation/ApiReference/Common/Object_Structures/AnimationConfig/') each time you animate an element(s), register different animations in the **DevExtreme.animationPresets** repository and request them by associated names when required. This repository has a built-in set of animations. Here they are:
 
 - *fade*
 - *stagger-fade*  

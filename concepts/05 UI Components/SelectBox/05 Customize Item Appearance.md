@@ -1,4 +1,4 @@
-For a minor customization of SelectBox items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in their data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
+For a minor customization of SelectBox items, you can define [specific fields](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in their data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
 ##### jQuery
@@ -104,7 +104,7 @@ For a minor customization of SelectBox items, you can define [specific fields](/
 
 ---
 
-If you need a more flexible solution, specify [itemTemplate](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
+If you need a more flexible solution, specify [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
 
 ---
 ##### Angular

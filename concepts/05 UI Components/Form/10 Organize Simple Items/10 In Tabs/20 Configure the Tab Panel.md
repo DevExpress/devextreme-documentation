@@ -1,4 +1,4 @@
-For displaying tabs, the Form uses the [TabPanel](/Documentation/ApiReference/UI_Components/dxTabPanel/) UI component. Therefore, you can specify any [properties of the TabPanel](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/') in the [tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions') object.
+For displaying tabs, the Form uses the [TabPanel](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/') UI component. Therefore, you can specify any [properties of the TabPanel](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/') in the [tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions') object.
 
 ---
 ##### jQuery

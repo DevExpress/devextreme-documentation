@@ -32,7 +32,7 @@ The following table lists available filter operations by [data type](/api-refere
 
 The nested filter builder also allows users to select from an extended set of operations that include *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/api-reference/_hidden/dxFilterBuilderCustomOperation/name.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/#name') of custom operations (if any).
 
-The **filterOperations** property can also accept an empty array. In this case, the [selectedFilterOperation]({basewidgetpath}/Configuration/columns/#selectedFilterOperation) applies, and users cannot change it.
+The **filterOperations** property can also accept an empty array. In this case, the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '{basewidgetpath}/Configuration/columns/#selectedFilterOperation') applies, and users cannot change it.
 
 #####See Also#####
 - **columns[]**.[selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '{basewidgetpath}/Configuration/columns/#selectedFilterOperation')

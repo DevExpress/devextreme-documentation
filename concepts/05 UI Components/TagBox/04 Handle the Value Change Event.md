@@ -99,7 +99,7 @@ To process new TagBox values, you need to handle the value change event. If the 
 
 ---
 
-[note]The `previousValue` and `newValue` fields are _arrays_ that contain values taken from the [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#valueExpr') data field.
+[note]The `previousValue` and `newValue` fields are _arrays_ that contain values taken from the [valueExpr](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#valueExpr') data field.
 
 If you are going to change event handlers at runtime, or if you need to attach several handlers to the value change event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTagBox/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
 

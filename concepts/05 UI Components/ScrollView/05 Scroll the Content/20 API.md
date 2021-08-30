@@ -1,5 +1,5 @@
 
-To scroll through ScrollView content by a specified distance, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method and pass a `Number` as a parameter. If you need to scroll in the opposite direction, the `distance` parameter should be a negative number.
+To scroll through ScrollView content by a specified distance, call the [scrollBy(distance)](/api-reference/10%20UI%20Components/dxScrollable/3%20Methods/scrollBy(distance).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance') method and pass a `Number` as a parameter. If you need to scroll in the opposite direction, the `distance` parameter should be a negative number.
 
 ---
 
@@ -179,7 +179,7 @@ To scroll through ScrollView content by a specified distance, call the [scrollBy
 ---
 
 
-To scroll content vertically and horizontally, call the [scrollBy(distance)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance) method with an object as an argument. The format of the object is the following: { left: *value1*, top: *value2* }. In this case, set the [direction](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction) property to *"both"*:
+To scroll content vertically and horizontally, call the [scrollBy(distance)](/api-reference/10%20UI%20Components/dxScrollable/3%20Methods/scrollBy(distance).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollBydistance') method with an object as an argument. The format of the object is the following: { left: *value1*, top: *value2* }. In this case, set the [direction](/api-reference/10%20UI%20Components/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction') property to *"both"*:
 
 
 ---
@@ -492,7 +492,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
 
 ---
 
-To scroll content to a specific element, call the [scrollToElement(element)](/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollToElementelement) method. 
+To scroll content to a specific element, call the [scrollToElement(element)](/api-reference/10%20UI%20Components/dxScrollable/3%20Methods/scrollToElement(element).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#scrollToElementelement') method. 
 
 ---
 

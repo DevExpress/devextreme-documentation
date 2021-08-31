@@ -19,7 +19,7 @@ The check box can be in one of the following states depending on the **value** p
 - undetermined  
  **value** is **undefined** or **null**
 
-Users can press the Space key to change the **value**.
+Users can press the **Space** key to change the **value**.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"

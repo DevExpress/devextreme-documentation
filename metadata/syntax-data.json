@@ -5788,6 +5788,9 @@
     "dxGanttOptions.selectedRowKey": {
       "vue": "selected-row-key"
     },
+    "dxGanttOptions.showDependencies": {
+      "vue": "show-dependencies"
+    },
     "dxGanttOptions.showResources": {
       "vue": "show-resources"
     },
@@ -5934,6 +5937,9 @@
     },
     "dxHtmlEditorMention.valueExpr": {
       "vue": "value-expr"
+    },
+    "dxHtmlEditorOptions.allowSoftLineBreak": {
+      "vue": "allow-soft-line-break"
     },
     "dxHtmlEditorOptions.customizeModules": {
       "vue": "customize-modules"

@@ -1,5 +1,4 @@
 {
-  "ScriptsRevision": "3b19b8b1b1d3a33a764f22bda78c9e59c2a683fb",
   "ToolsVersion": "7.0.0",
   "Modules": {
     "data/array_store": {

@@ -1,6 +1,6 @@
 ---
 id: dxMap.Options.markers.location
-type: any | String | Array<Number>
+type: Object | String | Array<Number>
 inherits: MapLocation
 ---
 ---

@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 Specifies a custom template for time scale items.
 
-##### param(itemData): any
+##### param(itemData): Object
 The data of the current time scale item.
 
 ##### param(itemIndex): Number

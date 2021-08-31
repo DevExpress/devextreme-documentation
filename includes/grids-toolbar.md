@@ -42,12 +42,12 @@ Predefined controls include:
   ${{datagrid_unique_toolbar_items}}
 </table>
 
-If you need to customize a predefined item, add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, include its name in the **toolbar**.**items[]** array.
+If you need to customize a predefined item, add an object to the **items[]** array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, simply include its name in the **toolbar**.**items[]** array.
 
 [important] The {WidgetName} does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
 
 ## DevExtreme Components
-Add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) array, specify one of the available [widgets](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#widget), its specific [settings](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#options) and toolbar item's [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/).
+You can use DevExtreme components as toolbar items. Set the [widget]({currentpath}/#widget) property to specify the component that you want to use and configure the component's [options]({currentpath}/#options).
 
 ## Custom Controls
-Add an object to the **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) array, specify the [template](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#template) and toolbar item's [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/).
+To use a custom control, specify a [template](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#template) for it.

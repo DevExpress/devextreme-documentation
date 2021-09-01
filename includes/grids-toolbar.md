@@ -116,7 +116,164 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 [important] The {WidgetName} does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
 
 ## DevExtreme Components
-You can use DevExtreme components as toolbar items. Set the [widget]({currentpath}/#widget) property to specify the component that you want to use and configure the component's [options]({currentpath}/#options).
+You can use DevExtreme components as toolbar items. Set the [widget]({currentpath}/#widget) property to specify the component that you want to use and configure the component's [options]({currentpath}/#options):
+
+---
+##### jQuery
+
+    <!--tab: index.js-->
+    $(function(){
+        $("#gridContainer").dxDataGrid({
+            // ...
+            items: [{
+                location: "before",
+                widget: "dxTabs",
+                options: {
+                    dataSource: tabData,
+                    width: 300,
+                    scrollByContent: true,
+                    showNavButtons: true
+                }
+            }]
+        });
+    });
+
+    <!--tab: data.js-->
+    var tabData = [
+        {text: "Authors"},
+        {text: "Books"},
+        {text: "Genres"}
+    ];
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...>
+        <dxo-toolbar>
+            <dxi-item location="before">
+                <dx-tabs
+                    [dataSource]="tabData"
+                    [width]="300"
+                    [scrollByContent]="true"
+                    [showNavButtons]="true"
+                ></dx-tabs>
+            </dxi-item>
+        </dxo-toolbar>
+    </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { AppService, Tab } from './app.service';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+    })
+    export class AppComponent {
+        tabData: Tab[];
+
+        constructor(service: AppService) {
+            this.tabData = service.getTabs();
+        }
+    }
+
+    <!-- tab: app.service.ts -->
+    import { Injectable } from '@angular/core';
+
+    export class Tab {
+        text: string;
+    }
+
+    const tabs: Tab[] = [
+        {text: "Authors"},
+        {text: "Books"},
+        {text: "Genres"}
+    ];
+
+    @Injectable()
+    export class Service {
+        getTabs(): Tab[] {
+            return tabs;
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxToolbar>
+                <DxItem location="after">
+                    <DxTabs
+                        :data-source="tabData"
+                        :width="300"
+                        :scroll-by-content="true"
+                        :show-nav-buttons="true"
+                    />
+                </DxItem>
+            </DxToolbar>
+        </DxDataGrid>
+    </template>
+    <script>
+    import { DxDataGrid, DxToolbar, DxItem } from 'devextreme-vue/data-grid';
+    import DxTabs from 'devextreme-vue/tabs';
+    import { tabData } from './data.js';
+
+    export default {
+        components: {
+            DxDataGrid, 
+            DxToolbar, 
+            DxItem,
+            DxTabs
+        },
+        data() {
+            return {
+                tabData
+            };
+        }
+    };
+    </script>
+    // ...
+
+    <!--tab: data.js-->
+    var tabData = [
+        {text: "Authors"},
+        {text: "Books"},
+        {text: "Genres"}
+    ];
+
+##### React
+
+    <!-- tab: App.js -->
+    import Tabs from 'devextreme-react/tabs';
+    import DataGrid, { Toolbar, Item } from 'devextreme-react/data-grid';
+    import { tabData } from './data.js';
+    // ...
+    function App() {
+        return (
+            <DataGrid ... >
+                <Toolbar>
+                    <Item location="after">
+                        <Tabs
+                            dataSource={tabData}
+                            width={300}
+                            scrollByContent={true}
+                            showNavButtons={true}
+                        />
+                    </Item>
+                </Toolbar>
+            </DataGrid>
+        );
+    }
+
+    <!--tab: data.js-->
+    var tabData = [
+        {text: "Authors"},
+        {text: "Books"},
+        {text: "Genres"}
+    ];
+
+---
 
 ## Custom Controls
 To use a custom control, specify a [template](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#template) for it.

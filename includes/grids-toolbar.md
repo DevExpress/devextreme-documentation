@@ -49,7 +49,7 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 
     <!--tab: index.js-->
     $(function(){
-        var dataGrid = $("#gridContainer").dxDataGrid({
+        $("#gridContainer").dxDataGrid({
             // ...
             columnChooser: {
                 enabled: true

@@ -44,6 +44,76 @@ Predefined controls include:
 
 If you need to customize a predefined item, add an object to the **items[]** array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, simply include its name in the **toolbar**.**items[]** array.
 
+---
+##### jQuery
+
+    <!--tab: index.js-->
+    $(function(){
+      var dataGrid = $("#gridContainer").dxDataGrid({
+        // ...
+        columnChooser: {
+            enabled: true
+        },
+        items: [{
+          name: "columnChooserButton",      
+          locateInMenu: "auto",
+          location: "after"
+        }]
+      });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...>
+      <dxo-column-chooser [enabled]="true"></dxo-column-chooser
+      <dxo-toolbar>
+        <dxi-item 
+          name="columnChooserButton"
+          locateInMenu="auto"
+          location="after"
+        ></dxi-item>
+      </dxo-toolbar>
+    </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+      <DxDataGrid ... >
+        <DxColumnChooser :enabled="true"/>
+        <DxToolbar>
+          <DxItem
+            name="columnChooserButton"
+            locateInMenu="auto"
+            location="after"
+          />
+        </DxToolbar>
+      </DxDataGrid>
+    </template>
+    // ...
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    function App() {
+    return (
+      <DataGrid ... >
+        <ColumnChooser enabled={true} />
+        <Toolbar>
+          <Item
+            name="columnChooserButton"
+            locateInMenu="auto"
+            location="after"
+          />
+        </Toolbar>
+      </DataGrid>
+    );
+}
+
+---
+
 [important] The {WidgetName} does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
 
 ## DevExtreme Components

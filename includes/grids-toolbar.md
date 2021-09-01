@@ -139,7 +139,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
     });
 
     <!--tab: data.js-->
-    var tabData = [
+    const tabData = [
         {text: "Authors"},
         {text: "Books"},
         {text: "Genres"}
@@ -236,7 +236,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
     // ...
 
     <!--tab: data.js-->
-    var tabData = [
+    const tabData = [
         {text: "Authors"},
         {text: "Books"},
         {text: "Genres"}
@@ -267,7 +267,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
     }
 
     <!--tab: data.js-->
-    var tabData = [
+    const tabData = [
         {text: "Authors"},
         {text: "Books"},
         {text: "Genres"}

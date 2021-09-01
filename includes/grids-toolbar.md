@@ -49,48 +49,47 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 
     <!--tab: index.js-->
     $(function(){
-      var dataGrid = $("#gridContainer").dxDataGrid({
-        // ...
-        columnChooser: {
-            enabled: true
-        },
-        items: [{
-          name: "columnChooserButton",      
-          locateInMenu: "auto",
-          location: "after"
-        }]
-      });
+        var dataGrid = $("#gridContainer").dxDataGrid({
+            // ...
+            columnChooser: {
+                enabled: true
+            },
+            items: [{
+                name: "columnChooserButton",      
+                locateInMenu: "auto",
+                location: "after"
+            }]
+        });
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <dx-data-grid ...>
-      <dxo-column-chooser [enabled]="true"></dxo-column-chooser
-      <dxo-toolbar>
-        <dxi-item 
-          name="columnChooserButton"
-          locateInMenu="auto"
-          location="after"
-        ></dxi-item>
-      </dxo-toolbar>
+        <dxo-column-chooser [enabled]="true"></dxo-column-chooser
+        <dxo-toolbar>
+            <dxi-item 
+                name="columnChooserButton"
+                locateInMenu="auto"
+                location="after"
+            >
+            </dxi-item>
+        </dxo-toolbar>
     </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template>
-      <DxDataGrid ... >
-        <DxColumnChooser :enabled="true"/>
+    <DxDataGrid ... >
+        <DxColumChooser :enabled="true"/>
         <DxToolbar>
-          <DxItem
-            name="columnChooserButton"
-            locateInMenu="auto"
-            location="after"
-          />
+            <DxItem
+                name="columnChooserButton"
+                locateInMenu="auto"
+                location="after"
+            />
         </DxToolbar>
-      </DxDataGrid>
-    </template>
+    </DxDataGrid>
     // ...
 
 ##### React
@@ -98,19 +97,19 @@ If you need to customize a predefined item, add an object to the **items[]** arr
     <!-- tab: App.js -->
     // ...
     function App() {
-    return (
-      <DataGrid ... >
-        <ColumnChooser enabled={true} />
-        <Toolbar>
-          <Item
-            name="columnChooserButton"
-            locateInMenu="auto"
-            location="after"
-          />
-        </Toolbar>
-      </DataGrid>
-    );
-}
+        return (
+            <DataGrid ... >
+                <ColumnChooser enabled={true} />
+                <Toolbar>
+                    <Item
+                        name="columnChooserButton"
+                        locateInMenu="auto"
+                        location="after"
+                    />
+                </Toolbar>
+            </DataGrid>
+        );
+    }
 
 ---
 

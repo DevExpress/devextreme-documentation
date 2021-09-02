@@ -46,6 +46,10 @@ Users can use the following keys to interact with the UI component:
         <td>Insert a line break (a new paragraph)</td>
     </tr>
     <tr>
+        <td colspan="2">Shift + Enter</td>
+        <td>Insert a line break (in the same paragraph)</td>
+    </tr>
+    <tr>
         <td colspan="2" rowspan="3">Tab</td>
         <td>Nest current list item (when in a list)</td>
     </tr>

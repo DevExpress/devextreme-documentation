@@ -10,7 +10,7 @@ To enable this feature:
         @NgModule({
             // ...
             imports: [
-                //  ...
+                // ...
                 DxServerTransferStateModule
             ]
         })
@@ -19,11 +19,13 @@ To enable this feature:
 2. Import the `ServerTransferStateModule` in the `app.server.module.ts` file:
         
         <!-- tab: app.server.module.ts-->
+        import { DxServerModule } from 'devextreme-angular/server';
         import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
         // ...
         @NgModule({
             imports: [
                 AppModule,
+                DxServerModule,
                 ServerModule,
                 ServerTransferStateModule,
                 ModuleMapLoaderModule

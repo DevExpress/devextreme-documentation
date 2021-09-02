@@ -11,10 +11,11 @@ You can get an Angular Universal application in two ways:
 To enable SSR in your application, import the `DxServerModule` in the `app.server.module.ts` file:
 
     <!-- tab: app.server.module.ts -->
-    import { DxServerModule } from 'devextreme-angular/server'
+    import { DxServerModule } from 'devextreme-angular/server';
     // ...
     @NgModule({
         imports: [
+            // ...
             DxServerModule
         ],
         // ...

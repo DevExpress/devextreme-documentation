@@ -2,7 +2,7 @@ When the server caches requests, DevExtreme components are rendered using data a
 
 To enable this feature:
 
-1. import the `DxServerTransferStateModule` in the `app.module.ts` file:
+1. Import the `DxServerTransferStateModule` in the `app.module.ts` file:
 
         <!-- tab: app.module.ts-->
         import { DxServerTransferStateModule } from 'devextreme-angular';
@@ -10,20 +10,22 @@ To enable this feature:
         @NgModule({
             // ...
             imports: [
-                //  ...
+                // ...
                 DxServerTransferStateModule
             ]
         })
         export class AppModule { }
 
-2. import the `ServerTransferStateModule` in the `app.server.module.ts` file:
+2. Import the `ServerTransferStateModule` in the `app.server.module.ts` file:
         
         <!-- tab: app.server.module.ts-->
+        import { DxServerModule } from 'devextreme-angular/server';
         import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
         // ...
         @NgModule({
             imports: [
                 AppModule,
+                DxServerModule,
                 ServerModule,
                 ServerTransferStateModule,
                 ModuleMapLoaderModule

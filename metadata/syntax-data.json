@@ -942,6 +942,9 @@
     "dxActionSheetItem.onClick": {
       "vue": "@click"
     },
+    "dxActionSheetItem.stylingMode": {
+      "vue": "styling-mode"
+    },
     "dxActionSheetOptions.accessKey": {
       "vue": "access-key"
     },

@@ -73,7 +73,7 @@ Ensure that one- or two-way binding is used to bind the **dataSource** property 
 
 ##### Vue
 
-Ensure that one- or two-way binding is used to bind the **dataSource** property to the array. Then, use <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a> to change the array. This updates the UI component automatically.
+Ensure that one- or two-way binding is used to bind the **dataSource** property to the array. In Vue 2 applications, use <a href="http://www.w3schools.com/js/js_array_methods.asp" target="_blank">standard methods</a> to change the array. This updates the UI component automatically. In Vue 3 applications, create a new array and assign it to the data-bound property to replace the previous array:
 
     <!-- tab: App.vue -->
     <template>
@@ -100,7 +100,11 @@ Ensure that one- or two-way binding is used to bind the **dataSource** property 
         },
         methods: {
             addPineapple() {
+                // Vue 2
                 this.fruits.push({ fruit: 'Pineapples', count: 3 });
+
+                // Vue 3
+                this.fruits = [...this.fruits, { fruit: 'Pineapples', count: 3 }];
             }
         }
     }

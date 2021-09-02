@@ -1,7 +1,6 @@
-Predefined controls appear on the toolbar depending on whether a specific DataGrid feature is enabled. The following table illustrates the dependency:
-
 ## Predefined Controls
-Predefined controls include:
+
+Predefined controls appear on the toolbar depending on whether a specific {WidgetName} feature is enabled. The following table illustrates the dependency:
 
 <table class="dx-table">
 	<tr>
@@ -12,7 +11,7 @@ Predefined controls include:
 	<tr>
 		<td><i>addRowButton</i></td>
 		<td><img src="/images/DataGrid/icons/toolbar_add.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar AddButton" style="margin:1px; vertical-align:middle"/></td>
-		<td><a href="{basewidgetpath}/Configuration/editing/">editing</a>.<a href="{basewidgetpath}/Configuration/editing/#allowAdding">allowAdding</a> is set to <b>true</b></td>
+		<td><a href="{basewidgetpath}/Configuration/editing/">editing</a>.<a href="{basewidgetpath}/Configuration/editing/#allowAdding">allowAdding</a> to <b>true</b></td>
 	</tr>
 	<tr>
 		<td><i>applyFilterButton</i></td>
@@ -69,13 +68,12 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 
 		<!-- tab: app.component.html -->
 		<dx-data-grid ...>
-			<dxo-column-chooser [enabled]="true"></dxo-column-chooser
+			<dxo-column-chooser [enabled]="true"></dxo-column-chooser>
 			<dxo-toolbar>
 				<dxi-item 
 					name="columnChooserButton"
 					locateInMenu="auto"
-					location="after"
-				>
+					location="after">
 				</dxi-item>
 			</dxo-toolbar>
 		</dx-data-grid>
@@ -105,11 +103,11 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 		<!-- tab: App.vue -->
 		<template>
 			<DxDataGrid ... >
-				<DxColumChooser :enabled="true"/>
+				<DxColumnChooser :enabled="true"/>
 				<DxToolbar>
 					<DxItem
 						name="columnChooserButton"
-						locateInMenu="auto"
+						locate-in-menu="auto"
 						location="after"
 					/>
 				</DxToolbar>
@@ -127,7 +125,6 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 			}
 		};
 		</script>
-		// ...
 
 ##### React
 
@@ -177,9 +174,9 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 ##### Angular
 
 		<!-- tab: app.component.html -->
-		<dx-data-grid ...>
+		<dx-data-grid ... >
 			<dxo-toolbar>
-				<dxi-item location="before">
+				<dxi-item>
 					<dx-select-box
 						<!-- SelectBox properties are specified here -->
 					></dx-select-box>
@@ -215,7 +212,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 		<template>
 			<DxDataGrid ... >
 				<DxToolbar>
-					<DxItem location="after">
+					<DxItem>
 						<dxSelectBox
 							<!-- SelectBox properties are specified here -->
 						/>
@@ -232,11 +229,10 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 				DxDataGrid, 
 				DxToolbar, 
 				DxItem,
-				dxSelectBox
+				DxSelectBox
 			}
 		};
 		</script>
-		// ...
 
 ##### React
 
@@ -248,7 +244,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 			return (
 				<DataGrid ... >
 					<Toolbar>
-						<Item location="after">
+						<Item>
 							<SelectBox
 								// SelectBox properties are specified here
 							/>
@@ -261,4 +257,4 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 ---
 
 ## Custom Controls
-To use a custom control, specify a [template](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#template) for it.
+To use a custom control, specify a [template]({currentpath}/#template) for it.

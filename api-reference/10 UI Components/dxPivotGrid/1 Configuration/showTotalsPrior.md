@@ -15,4 +15,4 @@ By default, total rows and columns are shown after data (columns at the right si
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/LayoutCustomization/"
 }
 
-[note]This property does not affect [row totals](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#showRowTotals) when [rowHeaderLayout](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#rowHeaderLayout) is not *"standard"*.
+[note]This property does not affect [row totals](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#showRowTotals) when [rowHeaderLayout](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#rowHeaderLayout) is *"tree"*.

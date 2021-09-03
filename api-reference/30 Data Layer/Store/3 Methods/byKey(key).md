@@ -12,7 +12,7 @@ A Promise that is resolved after the data item is loaded. It is a <a href="https
 A data item's key value.
 
 ##### param(extraOptions): LoadOptions
-<!-- Description goes here -->
+Data processing settings.
 
 ---
 ---

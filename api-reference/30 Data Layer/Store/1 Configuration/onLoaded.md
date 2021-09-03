@@ -10,7 +10,7 @@ A function that is executed after data is loaded to the store.
 The loaded data.
 
 ##### param(loadOptions): LoadOptions
-<!-- Description goes here -->
+Data processing settings.
 
 ---
 ---

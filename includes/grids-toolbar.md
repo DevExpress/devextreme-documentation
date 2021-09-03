@@ -11,17 +11,17 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     <tr>
         <td><i>addRowButton</i></td>
         <td><img src="/images/DataGrid/icons/toolbar_add.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar AddButton" style="margin:1px; vertical-align:middle"/></td>
-        <td><a href="{basewidgetpath}/Configuration/editing/">editing</a>.<a href="{basewidgetpath}/Configuration/editing/#allowAdding">allowAdding</a> to <b>true</b></td>
+        <td><a href="{basewidgetpath}/Configuration/editing/">editing</a>.<a href="{basewidgetpath}/Configuration/editing/#allowAdding">allowAdding</a> is <b>true</b></td>
     </tr>
     <tr>
         <td><i>applyFilterButton</i></td>
         <td><img src="/images/DataGrid/icons/toolbar_applyFilter.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar ApplyFilterButton" style="margin:1px; vertical-align:middle"/></td>
-        <td><a href="{basewidgetpath}/Configuration/filterRow/">filterRow</a>.<a href="{basewidgetpath}/Configuration/filterRow/#visible">visible</a> is set to <b>true</b> and filterRow.<a href="{basewidgetpath}/Configuration/filterRow/#applyFilter">applyFilter</a> is set to <i>"onClick"</i></td>
+        <td><a href="{basewidgetpath}/Configuration/filterRow/">filterRow</a>.<a href="{basewidgetpath}/Configuration/filterRow/#visible">visible</a> is <b>true</b> and filterRow.<a href="{basewidgetpath}/Configuration/filterRow/#applyFilter">applyFilter</a> is set to <i>"onClick"</i></td>
     </tr>
     <tr>
         <td><i>columnChooserButton</i></td>
         <td><img src="/images/DataGrid/icons/columnChooser.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar ColumnChooserButton" style="margin:1px; vertical-align:middle"/></td>
-        <td><a href="{basewidgetpath}/Configuration/columnChooser/">columnChooser</a>.<a href="{basewidgetpath}/Configuration/columnChooser/#enabled">enabled</a> is set to <b>true</b></td>
+        <td><a href="{basewidgetpath}/Configuration/columnChooser/">columnChooser</a>.<a href="{basewidgetpath}/Configuration/columnChooser/#enabled">enabled</a> is <b>true</b></td>
     </tr>
     <tr>
         <td><i>revertButton</i></td>
@@ -36,23 +36,21 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     <tr>
         <td><i>searchPanel</i></td>
         <td><img src="/images/DataGrid/icons/toolbar_searchPanel.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar searchPanel" style="margin:1px; vertical-align:middle"/></td>
-        <td><a href="{basewidgetpath}/Configuration/searchPanel/">searchPanel</a>.<a href="{basewidgetpath}/Configuration/searchPanel/#visible">visible</a> is set to <b>true</b></td>
+        <td><a href="{basewidgetpath}/Configuration/searchPanel/">searchPanel</a>.<a href="{basewidgetpath}/Configuration/searchPanel/#visible">visible</a> is <b>true</b></td>
     </tr>
     ${{datagrid_unique_toolbar_items}}
 </table>
 
 If you need to customize a predefined item, add an object to the **items[]** array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, simply include its name in the **toolbar**.**items[]** array. 
 
-The below example shows how to add a simple Add Row button and a customized Column Chooser button.
-
-items with and without customization. Note that the corresponding {WidgetName} features are enabled:
+The example below customizes the Column Chooser button and adds an uncustomized Add Row button. Note that the corresponding {WidgetName} features are enabled:
 
 ---
 ##### jQuery
 
         <!--tab: index.js-->
         $(function(){
-            $("#gridContainer").dxDataGrid({
+            $("#{widgetName}Container").dx{WidgetName}({
                 // ...
                 editing: {
                     allowAdding: true
@@ -64,18 +62,16 @@ items with and without customization. Note that the corresponding {WidgetName} f
                     items: [ "addRowButton", {
                         name: "columnChooserButton",      
                         locateInMenu: "auto",
-                        location: "after"
                     }]  
                 }
-                    
             });
         });
 
 ##### Angular
 
         <!-- tab: app.component.html -->
-        <dx-data-grid ...>
-        <dxo-editing [allowAdding]="true"></dxo-editing>
+        <dx-{widget-name} ... >
+            <dxo-editing [allowAdding]="true"></dxo-editing>
             <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
             <dxo-toolbar>
                 <dxi-item name="addRowButton"></dxi-item>
@@ -85,14 +81,14 @@ items with and without customization. Note that the corresponding {WidgetName} f
                     location="after">
                 </dxi-item>
             </dxo-toolbar>
-        </dx-data-grid>
+        </dx-{widget-name}>
 
         <!-- tab: app.module.ts -->
         import { BrowserModule } from '@angular/platform-browser';
         import { NgModule } from '@angular/core';
         import { AppComponent } from './app.component';
          
-        import { DxDataGridModule } from 'devextreme-angular';
+        import { Dx{WidgetName}Module } from 'devextreme-angular';
          
         @NgModule({
             declarations: [
@@ -100,7 +96,7 @@ items with and without customization. Note that the corresponding {WidgetName} f
             ],
             imports: [
                 BrowserModule,
-                DxDataGridModule,
+                Dx{WidgetName}Module,
             ],
             providers: [ ],
             bootstrap: [AppComponent]
@@ -111,7 +107,7 @@ items with and without customization. Note that the corresponding {WidgetName} f
 
         <!-- tab: App.vue -->
         <template>
-            <DxDataGrid ... >
+            <Dx{WidgetName} ... >
                 <DxEditing :allow-adding="true" />
                 <DxColumnChooser :enabled="true"/>
                 <DxToolbar>
@@ -122,14 +118,14 @@ items with and without customization. Note that the corresponding {WidgetName} f
                         location="after"
                     />
                 </DxToolbar>
-            </DxDataGrid>
+            </Dx{WidgetName}>
         </template>
         <script>
-        import { DxDataGrid, DxEditing, DxColumnChooser, DxToolbar, DxItem } from 'devextreme-vue/data-grid';
+        import { Dx{WidgetName}, DxEditing, DxColumnChooser, DxToolbar, DxItem } from 'devextreme-vue/{widget-name}';
 
         export default {
             components: {
-                DxDataGrid,
+                Dx{WidgetName},
                 DxEditing,
                 DxToolbar, 
                 DxItem,
@@ -141,11 +137,11 @@ items with and without customization. Note that the corresponding {WidgetName} f
 ##### React
 
         <!-- tab: App.js -->
-        import DataGrid, { Editing, Toolbar, Item, ColumnChooser } from 'devextreme-react/data-grid';
+        import {WidgetName}, { Editing, Toolbar, Item, ColumnChooser } from 'devextreme-react/{widget-name}';
         // ...
         function App() {
             return (
-                <DataGrid ... >
+                <{WidgetName} ... >
                     <Editing allowAdding={true} />
                     <ColumnChooser enabled={true} />
                     <Toolbar>
@@ -156,7 +152,7 @@ items with and without customization. Note that the corresponding {WidgetName} f
                             location="after"
                         />
                     </Toolbar>
-                </DataGrid>
+                </{WidgetName}>
             );
         }
 
@@ -172,7 +168,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 
         <!--tab: index.js-->
         $(function(){
-            $("#gridContainer").dxDataGrid({
+            $("#{widgetName}Container").dx{WidgetName}({
                 // ...
                 toolbar: {
                     items: [{
@@ -188,22 +184,22 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 ##### Angular
 
         <!-- tab: app.component.html -->
-        <dx-data-grid ... >
+        <dx-{widget-name} ... >
             <dxo-toolbar>
                 <dxi-item>
-                    <dx-select-box
+                    <dx-select-box>
                         <!-- SelectBox properties are specified here -->
-                    ></dx-select-box>
+                    </dx-select-box>
                 </dxi-item>
             </dxo-toolbar>
-        </dx-data-grid>
+        </dx-{widget-name}>
 
         <!-- tab: app.module.ts -->
         import { BrowserModule } from '@angular/platform-browser';
         import { NgModule } from '@angular/core';
         import { AppComponent } from './app.component';
          
-        import { DxDataGridModule, DxSelectBoxModule } from 'devextreme-angular';
+        import { Dx{WidgetName}Module, DxSelectBoxModule } from 'devextreme-angular';
          
         @NgModule({
             declarations: [
@@ -211,7 +207,7 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
             ],
             imports: [
                 BrowserModule,
-                DxDataGridModule,
+                Dx{WidgetName}Module,
                 DxSelectBoxModule,
             ],
             providers: [ ],
@@ -224,23 +220,23 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 
         <!-- tab: App.vue -->
         <template>
-            <DxDataGrid ... >
+            <Dx{WidgetName} ... >
                 <DxToolbar>
                     <DxItem>
-                        <dxSelectBox
+                        <DxSelectBox>
                             <!-- SelectBox properties are specified here -->
-                        />
+                        </DxSelectBox>
                     </DxItem>
                 </DxToolbar>
-            </DxDataGrid>
+            </Dx{WidgetName}>
         </template>
         <script>
-        import { DxDataGrid, DxToolbar, DxItem } from 'devextreme-vue/data-grid';
+        import { Dx{WidgetName}, DxToolbar, DxItem } from 'devextreme-vue/{widget-name}';
         import { DxSelectBox } from 'devextreme-vue/select-box';
 
         export default {
             components: {
-                DxDataGrid, 
+                Dx{WidgetName}, 
                 DxToolbar, 
                 DxItem,
                 DxSelectBox
@@ -252,19 +248,19 @@ You can use DevExtreme components as toolbar items. Set the [widget]({currentpat
 
         <!-- tab: App.js -->
         import { SelectBox } from 'devextreme-react/select-box';
-        import DataGrid, { Toolbar, Item } from 'devextreme-react/data-grid';
+        import {WidgetName}, { Toolbar, Item } from 'devextreme-react/{widget-name}';
         // ...
         function App() {
             return (
-                <DataGrid ... >
+                <{WidgetName} ... >
                     <Toolbar>
                         <Item>
-                            <SelectBox
-                                // SelectBox properties are specified here
-                            />
+                            <SelectBox>
+                                {/* SelectBox properties are specified here */}
+                            </SelectBox>
                         </Item>
                     </Toolbar>
-                </DataGrid>
+                </{WidgetName}>
             );
         }
 

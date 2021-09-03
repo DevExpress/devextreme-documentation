@@ -41,7 +41,9 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 	${{datagrid_unique_toolbar_items}}
 </table>
 
-If you need to customize a predefined item, add an object to the **items[]** array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, simply include its name in the **toolbar**.**items[]** array.
+If you need to customize a predefined item, add an object to the **items[]** array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, simply include its name in the **toolbar**.**items[]** array. 
+
+The below example shows how to add items with and without customization. Note that the corresponding {WidgetName} features are enabled:
 
 ---
 ##### jQuery
@@ -50,11 +52,14 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 		$(function(){
 			$("#gridContainer").dxDataGrid({
 				// ...
+				editing: {
+					allowAdding: true
+				},
 				columnChooser: {
 					enabled: true
 				},
 				toolbar: {
-					items: [{
+					items: [ "addRowButton", {
 						name: "columnChooserButton",      
 						locateInMenu: "auto",
 						location: "after"
@@ -68,8 +73,10 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 
 		<!-- tab: app.component.html -->
 		<dx-data-grid ...>
+		<dxo-editing [allowAdding]="true"></dxo-editing>
 			<dxo-column-chooser [enabled]="true"></dxo-column-chooser>
 			<dxo-toolbar>
+				<dxi-item name="addRowButton"></dxi-item>
 				<dxi-item 
 					name="columnChooserButton"
 					locateInMenu="auto"
@@ -103,8 +110,10 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 		<!-- tab: App.vue -->
 		<template>
 			<DxDataGrid ... >
+				<DxEditing :allow-adding="true" />
 				<DxColumnChooser :enabled="true"/>
 				<DxToolbar>
+					<DxItem name="addRowButton" />
 					<DxItem
 						name="columnChooserButton"
 						locate-in-menu="auto"
@@ -114,11 +123,12 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 			</DxDataGrid>
 		</template>
 		<script>
-		import { DxDataGrid, DxColumnChooser, DxToolbar, DxItem } from 'devextreme-vue/data-grid';
+		import { DxDataGrid, DxEditing, DxColumnChooser, DxToolbar, DxItem } from 'devextreme-vue/data-grid';
 
 		export default {
 			components: {
 				DxDataGrid,
+				DxEditing,
 				DxToolbar, 
 				DxItem,
 				DxColumnChooser
@@ -129,13 +139,15 @@ If you need to customize a predefined item, add an object to the **items[]** arr
 ##### React
 
 		<!-- tab: App.js -->
-		import DataGrid, { Toolbar, Item, ColumnChooser } from 'devextreme-react/data-grid';
+		import DataGrid, { Editing, Toolbar, Item, ColumnChooser } from 'devextreme-react/data-grid';
 		// ...
 		function App() {
 			return (
 				<DataGrid ... >
+					<Editing allowAdding={true} />
 					<ColumnChooser enabled={true} />
 					<Toolbar>
+						<Item name="addRowButton" />
 						<Item
 							name="columnChooserButton"
 							locateInMenu="auto"

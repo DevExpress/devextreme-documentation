@@ -4,13 +4,27 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies a recurrence rule for generating recurring appointments in the scheduler.
+Specifies a recurrence rule based on which the Scheduler generates an appointment series.
 
 ---
-To define a recurring appointment, specify the **recurrenceRule** field in the appointment object. This field should be set using the <a href="http://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification.
-
-For details on recurring appointments, refer to the [Appointment Types](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments') article.
+The **recurrenceRule** value should contain an `RRULE` pattern as per the <a href="http://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"
 }
+
+If you need to obtain individual dates from an appointment series, use a 3rd-party library. In the following example, the <a href="https://github.com/jakubroztocil/rrule#rrulejs" target="_blank">rrule</a> library is used:
+
+    <!-- tab: JavaScript -->
+    const rule = new rrule.rrulestr(
+        "DTSTART:20210805T050000Z\n"
+        + "RRULE:FREQ=WEEKLY;UNTIL=20210905T045959Z;BYDAY=MO,TU,WE,TH,FR\n"
+        + "EXDATE:20210825T050000Z,20210819T050000Z"
+    );
+
+    const occurences = rule.all();
+    occurences.forEach(date => console.log(date));
+
+#####See Also#####
+- [recurrenceRuleExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr)
+- [recurrenceEditMode](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceEditMode)

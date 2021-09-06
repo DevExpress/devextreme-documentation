@@ -5,9 +5,14 @@ default: true, false (Android, iOS)
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can drag appointments.
+Specifies whether users can drag and drop appointments.
 
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/"
 }
+
+[note] When users drag and drop a [recurring appointment](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/), only its start and end date and time change, but not recurrence settings. If users want to change the recurrence settings, they should use the appointment details form.
+
+#####See Also#####
+- [appointmentDragging](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/)

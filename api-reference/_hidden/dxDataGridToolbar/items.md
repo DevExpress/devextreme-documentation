@@ -4,9 +4,3 @@ acceptValues: 'addRowButton' | 'applyFilterButton' | 'columnChooserButton' | 'ex
 type: Array<dxDataGridToolbarItem, String>
 inheritsType: dxDataGridToolbarItem
 ---
----
-##### shortDescription
-<!-- Description goes here -->
-
----
-<!-- Description goes here -->

@@ -6,7 +6,7 @@ export: dxTreeListToolbarItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures toolbar items.
 
 ---
-<!-- Description goes here -->
+#include grids-toolbar

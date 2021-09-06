@@ -6,7 +6,11 @@ export: dxTreeListToolbar
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the toolbar.
 
 ---
-<!-- Description goes here -->
+![DevExtreme TreeList - Toolbar](/images/treelist/toolbar.png)
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ToolbarCustomization/"
+}

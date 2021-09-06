@@ -6,7 +6,10 @@ export: dxDataGridToolbar
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
+Configures the toolbar.
 ---
-<!-- Description goes here -->
+![DevExtreme DataGrid - Toolbar](/images/DataGrid/toolbar.png)
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
+}

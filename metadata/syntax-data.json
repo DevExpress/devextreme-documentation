@@ -5969,6 +5969,11 @@
     "dxHtmlEditorOptions.stylingMode": {
       "vue": "styling-mode"
     },
+    "dxHtmlEditorOptions.tableContextMenu": {
+      "angular": "dxo-table-context-menu",
+      "react": "TableContextMenu",
+      "vue": "DxTableContextMenu"
+    },
     "dxHtmlEditorOptions.tableResizing": {
       "angular": "dxo-table-resizing",
       "react": "TableResizing",
@@ -5986,6 +5991,9 @@
       "angular": "dxo-variables",
       "react": "Variables",
       "vue": "DxVariables"
+    },
+    "dxHtmlEditorTableContextMenu": {
+      "vue": "dx-html-editor-table-context-menu"
     },
     "dxHtmlEditorTableResizing": {
       "angular": "dxo-dx-html-editor-table-resizing",

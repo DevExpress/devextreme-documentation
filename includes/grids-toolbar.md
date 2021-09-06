@@ -43,7 +43,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
 If you need to customize a predefined item, add an object to the **items[]** array. This object must contain the item's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If an item does not need customization, simply include its name in the **toolbar**.**items[]** array. 
 
-The example below customizes the Column Chooser button and adds an uncustomized Add Row button. Note that the corresponding {WidgetName} features are enabled:
+The example below customizes the Column Chooser button, adds an Add Row button, and enables the corresponding {WidgetName} features:
 
 ---
 ##### jQuery

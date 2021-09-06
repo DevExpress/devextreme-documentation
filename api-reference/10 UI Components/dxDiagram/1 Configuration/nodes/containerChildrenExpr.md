@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.nodes.containerChildrenExpr
-type: String | function(data)
+type: String | function(data, value)
 default: 'children'
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides a container's nested items.
 
-##### param(data): Object
+##### param(data): any
 The current node's data object.
 
 ##### return: any
 A container's nested items.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 This property is in effect for `"verticalContainer"` or `"horizontalContainer"` nodes.

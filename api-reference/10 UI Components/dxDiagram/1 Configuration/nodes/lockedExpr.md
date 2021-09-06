@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.nodes.lockedExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression whose values indicate whether a node is locked.
 
-##### param(data): Object
+##### param(data): any
 The current node's data object.
 
 ##### return: any
 A Boolean value that indicates whether a node is locked.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 A locked item can not be moved, changed, or delete. Users can use the [context menu](/concepts/05%20UI%20Components/Diagram/30%20Diagram%20Tools.md '/Documentation/Guide/UI_Components/Diagram/Diagram_Tools/') to lock and unlock an item.

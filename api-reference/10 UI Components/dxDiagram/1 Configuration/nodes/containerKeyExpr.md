@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.nodes.containerKeyExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides a key of a node's parent container node.
 
-##### param(data): Object
+##### param(data): any
 The current node's data object.
 
 ##### return: any
 A node's parent container node.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` [type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/').

@@ -7,6 +7,7 @@ export: dxDataGridToolbar
 ---
 ##### shortDescription
 Configures the toolbar.
+
 ---
 ![DevExtreme DataGrid - Toolbar](/images/DataGrid/toolbar.png)
 

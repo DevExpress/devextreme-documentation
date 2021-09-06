@@ -26,5 +26,5 @@ If you need to obtain individual dates from an appointment series, use a 3rd-par
     occurences.forEach(date => console.log(date));
 
 #####See Also#####
-- [recurrenceRuleExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr)
-- [recurrenceEditMode](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceEditMode)
+- [recurrenceRuleExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr')
+- [recurrenceEditMode](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/recurrenceEditMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceEditMode')

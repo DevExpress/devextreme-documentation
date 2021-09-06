@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.edges.toLineEndExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides an edge's line end tip.
 
-##### param(data): Object
+##### param(data): any
 The current edge's data object.
 
 ##### return: any
 An edge's line end tip.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 The specified field or expression should return `none`, `arrow`, `filledTriangle`, or `outlinedTriangle`.

@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.nodes.textStyleExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides a node's text style.
 
-##### param(data): Object
+##### param(data): any
 The current node's data object.
 
 ##### return: any
 A node's text style.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 

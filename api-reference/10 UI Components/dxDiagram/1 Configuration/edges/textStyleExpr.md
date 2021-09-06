@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.edges.textStyleExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides an edge's text style.
 
-##### param(data): Object
+##### param(data): any
 The current edge's data object.
 
 ##### return: any
 An edge's text style.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 

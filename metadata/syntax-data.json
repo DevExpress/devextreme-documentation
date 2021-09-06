@@ -4816,6 +4816,9 @@
     "dxFileUploaderOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
+    "dxFileUploaderOptions.hoverStateEnabled": {
+      "vue": "hover-state-enabled"
+    },
     "dxFileUploaderOptions.inputAttr": {
       "vue": "input-attr"
     },

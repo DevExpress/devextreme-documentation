@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.nodes.styleExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides a node style.
 
-##### param(data): Object
+##### param(data): any
 The current node's data object.
 
 ##### return: any
 A node style.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"fill: #d9d9d9; stroke: #999999"`. 

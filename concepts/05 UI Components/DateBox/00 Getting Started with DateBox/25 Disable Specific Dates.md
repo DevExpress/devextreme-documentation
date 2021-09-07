@@ -25,7 +25,7 @@ To prevent users from setting specific dates, use the [disabledDates](/api-refer
             new Date(0, 11, 31)
         ];
 
-        $("#dateBoxContainer").dxDateBox({
+        $("#dateBox").dxDateBox({
             // ...
             disabledDates: function(args) {
                 const dayOfWeek = args.date.getDay();

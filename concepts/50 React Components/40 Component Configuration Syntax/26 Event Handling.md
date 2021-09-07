@@ -1,10 +1,11 @@
     <!-- tab: Function component -->
+    import { useCallback } from 'react';
     import Button from 'devextreme-react/button';
 
     export default function App() {
-        const handleButtonClick = (e) => {
+        const handleButtonClick = useCallback((e) => {
             alert("The button was clicked")
-        }
+        }, []);
 
         return (
             <Button
@@ -35,3 +36,5 @@
             alert("The button was clicked")
         }
     }
+
+[important] In function components, wrap the event handler declaration into the `useCallback` React Hook to prevent possible issues caused by unnecessary re-rendering.

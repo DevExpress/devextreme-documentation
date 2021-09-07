@@ -1,7 +1,7 @@
 In the following example, two textboxes are placed in a [validation group](/api-reference/10%20UI%20Components/dxValidationGroup '/Documentation/ApiReference/UI_Components/dxValidationGroup/') that is validated on a button click. Each textbox has a set of [validation rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/'). The validation result is displayed under the textboxes in a [validation summary](/api-reference/10%20UI%20Components/dxValidationSummary '/Documentation/ApiReference/UI_Components/dxValidationSummary/').
 
     <!-- tab: Function component -->
-    import React, { useState } from 'react';
+    import React, { useState, useCallback } from 'react';
     import TextBox from 'devextreme-react/text-box';
     import Validator, { RequiredRule, EmailRule } from 'devextreme-react/validator';
     import ValidationGroup from 'devextreme-react/validation-group';
@@ -10,7 +10,7 @@ In the following example, two textboxes are placed in a [validation group](/api-
     export default function App() {
         const [email, setEmail] = useState(null);
         const [password, setPassword] = useState(null);
-        const validate = (params) => {
+        const validate = useCallback((params) => {
             const result = params.validationGroup.validate();
             if (result.isValid) {
                 // The values are valid
@@ -19,13 +19,13 @@ In the following example, two textboxes are placed in a [validation group](/api-
                 // ... and then reset
                 // params.validationGroup.reset();
             }
-        }
-        const handleEmailChange = (e) => {
+        }, []);
+        const handleEmailChange = useCallback((e) => {
             setEmail(e.value);
-        }
-        const handlePasswordChange = (e) => {
+        }, []);
+        const handlePasswordChange = useCallback((e) => {
             setPassword(e.value);
-        }
+        }, []);
 
         return (
             <ValidationGroup>

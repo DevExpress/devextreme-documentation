@@ -21,7 +21,7 @@ Axis properties can be set using the chart's [valueAxis](/api-reference/10%20UI%
 		}
 	};
 
-[note]If you have set an property within the **valueAxis** or **argumentAxis** configuration object, it will override the common value that is set using the **commonAxisSettings** object.
+[note]If you have set a property within the **valueAxis** or **argumentAxis** configuration object, it will override the common value that is set using the **commonAxisSettings** object.
 
 The following list gives an overview of the common axis properties.
 

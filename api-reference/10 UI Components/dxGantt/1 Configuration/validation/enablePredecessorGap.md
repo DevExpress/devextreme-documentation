@@ -9,13 +9,13 @@ Specifies whether users can move or resize a predecessor to change a gap before 
 
 ---
 
-The **Gantt** widget allows users to change the gap between tasks only if they move/resize a successor task. Note that users can use only a successor to create the gap between tasks.
+The **Gantt** component allows users to change the gap between tasks only if they move/resize a successor task. Note that users can use only a successor to create the gap between tasks.
 
 The following image illustrates that the Gantt does not resize the gap between tasks when users move the predecessor:
 
 ![DevExtreme Gantt - Move Successor to Change Gap](/images/Gantt/move-only-successor.gif) 
 
-The **enablePredecessorGap** option allows users to increase/decrease the gap between the tasks with a predecessor. The **Gantt** widget validates these changes and shifts the successor task to comply with the dependency rules if they are violated.
+The **enablePredecessorGap** option allows users to increase/decrease the gap between the tasks with a predecessor. The **Gantt** component validates these changes and shifts the successor task to comply with the dependency rules if they are violated.
 
 ![DevExtreme Gantt - Move Successor to Change Gap](/images/Gantt/enable-predecessor-gap.gif)
 

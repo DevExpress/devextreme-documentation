@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.edges.toPointIndexExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides an index of a shape connection point where an edge ends.
 
-##### param(data): Object
+##### param(data): any
 The current edge's data object.
 
 ##### return: any
 An index of a shape connection point where an edge ends.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 The built-in shape's connection points are numbered clockwise from the leftmost point on the top border.

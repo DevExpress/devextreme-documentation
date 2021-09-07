@@ -17,22 +17,15 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 
 - String
 
-    <!-- tab: JavaScript -->
     dropZone: '.test-div'
 
 - jQuery object
 
-    <!-- tab: JavaScript -->
     dropZone: $('.test-div')
 
 - DOM element
 
-    <!-- tab: JavaScript -->
     dropZone: $('.test-div')[0]
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
-}
 
 [note]
 A custom drop zone (**dropZone** property) is not supported in **useForm** [upload modes](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode').

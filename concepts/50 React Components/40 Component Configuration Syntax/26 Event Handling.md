@@ -1,10 +1,11 @@
     <!-- tab: Function component -->
+    import { useCallback } from 'react';
     import Button from 'devextreme-react/button';
 
     export default function App() {
-        const handleButtonClick = (e) => {
+        const handleButtonClick = useCallback((e) => {
             alert("The button was clicked")
-        }
+        }, []);
 
         return (
             <Button

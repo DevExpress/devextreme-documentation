@@ -1,10 +1,11 @@
     <!-- tab: Function component -->
+    import { useCallback } from 'react';
     import VectorMap, { Layer } from 'devextreme-react/vector-map';
 
     export default function App() {
-        const customizeLayers = (elements) => {
+        const customizeLayers = useCallback((elements) => {
             // ...
-        }
+        }, []);
 
         return (
             <VectorMap>

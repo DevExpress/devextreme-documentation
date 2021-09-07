@@ -5,7 +5,7 @@ To allow users to specify the date and time, set the [type](/api-reference/10%20
 
     <!-- tab: index.js -->
     $(function() {
-        $("#dateBoxContainer").dxDateBox({
+        $("#dateBox").dxDateBox({
             type: "datetime"
         });
     });

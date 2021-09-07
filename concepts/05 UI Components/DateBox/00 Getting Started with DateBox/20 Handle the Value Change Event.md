@@ -5,7 +5,7 @@ To handle value changes, implement the [onValueChanged](/api-reference/10%20UI%2
 
     <!-- tab: index.js -->
     $(function() {
-        $("#dateBoxContainer").dxDateBox({
+        $("#dateBox").dxDateBox({
             // ...
             onValueChanged: function(e) {
                 console.log(e.value);

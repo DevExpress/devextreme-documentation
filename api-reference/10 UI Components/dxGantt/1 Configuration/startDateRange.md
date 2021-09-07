@@ -5,7 +5,13 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the start date of the currently visible date interval in the Gantt chart.
 
 ---
-<!-- Description goes here -->
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ChartAppearance/"
+}
+
+#####See Also#####
+- [endDateRange](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#endDateRange')

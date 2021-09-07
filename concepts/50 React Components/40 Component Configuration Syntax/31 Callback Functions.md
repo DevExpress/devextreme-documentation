@@ -35,6 +35,8 @@
         }
     }
 
+[important] In function components, wrap the callback function declaration into the `useCallback` React Hook to prevent possible issues caused by unnecessary re-rendering.
+
 In class components, callback functions are executed _outside_ the React component's context. If the context is important, explicitly bind the callback function to it in the constructor.
 
     <!-- tab: Class component -->

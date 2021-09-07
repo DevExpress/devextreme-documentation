@@ -36,3 +36,5 @@
             alert("The button was clicked")
         }
     }
+
+[important] In function components, wrap the event handler declaration into the `useCallback` React Hook to prevent possible issues caused by unnecessary re-rendering.

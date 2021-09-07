@@ -7,7 +7,7 @@ To define the range from which users can select dates, specify the [min](/api-re
     $(function() {
         const now = new Date();
 
-        $("#dateBoxContainer").dxDateBox({
+        $("#dateBox").dxDateBox({
             max: now,
             min: new Date(1900, 0, 1),
          });

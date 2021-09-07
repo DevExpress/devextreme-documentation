@@ -12,9 +12,5 @@ When a user zooms or pans the argument axis, the range of displayed [series](/co
 
 Set this property to **false** if the visual range should be constant and equal to the series values' maximum range.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ZoomingAndScrolling/"
-}
-
 #####See Also#####
 - [zoomAndPan](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/')

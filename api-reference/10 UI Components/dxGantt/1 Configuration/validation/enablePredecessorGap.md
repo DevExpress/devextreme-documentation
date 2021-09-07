@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether users can move or resize a predecessor to change a gap before a successor according to the [dependency rules](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/validation/#validateDependencies).
+Specifies whether users can move or resize a predecessor to change a gap before a successor according to the [dependency rules](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/validation/validateDependencies.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/validation/#validateDependencies').
 
 ---
 
@@ -19,7 +19,7 @@ The **enablePredecessorGap** option allows users to increase/decrease the gap be
 
 ![DevExtreme Gantt - Move Successor to Change Gap](/images/Gantt/enable-predecessor-gap.gif)
 
-[note]The **enablePredecessorGap** option is in effect if the [validateDependencies](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/validation/#validateDependencies) option is set to **true**.
+[note]The **enablePredecessorGap** option is in effect if the [validateDependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/validation/validateDependencies.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/validation/#validateDependencies') option is set to **true**.
 
 ---
 ##### jQuery

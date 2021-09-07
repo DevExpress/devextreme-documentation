@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.nodes.topExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides the y-coordinate of a node's top border.
 
-##### param(data): Object
+##### param(data): any
 The current node's data object.
 
 ##### return: any
 The y-coordinate of a node's top border.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 A node's y-coordinate specifies the distance between the top border of a diagram work area and the top border of a shape, in [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units').

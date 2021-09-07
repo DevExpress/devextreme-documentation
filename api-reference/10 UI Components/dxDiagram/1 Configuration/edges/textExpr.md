@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.edges.textExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides edge texts.
 
-##### param(data): Object
+##### param(data): any
 The current edge's data object.
 
 ##### return: any
 An edge's text.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 The specified data source field or an expression should return a string or object value.

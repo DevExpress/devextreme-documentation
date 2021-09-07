@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.edges.pointsExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides an edge's key points.
 
-##### param(data): Object
+##### param(data): any
 The current edge's data object.
 
 ##### return: any
 An edge's key points.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
     <!-- tab: index.js -->

@@ -1,17 +1,20 @@
 ---
 id: dxDiagram.Options.edges.styleExpr
-type: String | function(data)
+type: String | function(data, value)
 default: undefined
 ---
 ---
 ##### shortDescription
 Specifies the name of a data source field or an expression that provides an edge style.
 
-##### param(data): Object
+##### param(data): any
 The current edge's data object.
 
 ##### return: any
 An edge style.
+
+##### param(value): any
+<!-- Description goes here -->
 
 ---
 A data source field specified by this property should contain inline style declarations in string format, for instance `"stroke: #999999"`. 

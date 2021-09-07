@@ -6,7 +6,7 @@ To set the UI component's value, specify the [value](/api-reference/10%20UI%20Co
     $(function() {
         const now = new Date();
 
-        $("#dateBoxContainer").dxDateBox({
+        $("#dateBox").dxDateBox({
             // ...
             value: now
         });

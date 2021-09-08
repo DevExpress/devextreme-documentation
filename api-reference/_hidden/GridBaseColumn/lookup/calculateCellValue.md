@@ -7,10 +7,10 @@ type: function(rowData)
 Returns value of a lookup item whose identifier equals the `id`.
 
 ##### param(rowData): Object
-Identifier of a lookup item to locate. Should be equal to the valueExpr field's value.
+Identifier of a lookup item to locate. Should be equal to the [valueExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#valueExpr) field's value.
 
 ##### return: any
-Lookup item value. `undefined` if not located. Corresponds to the displayExpr field's value.
+Lookup item value. `undefined` if not located. Corresponds to the [displayExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#displayExpr) field's value.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ default: 'default'
 ---
 ---
 ##### shortDescription
-Specifies which stack the series should belongs to. Applies only to *stacked bar* and *full-stacked bar* series.
+Specifies which stack the series should belong to. Applies only to *stacked bar* and *full-stacked bar* series.
 
 ##### propertyOf
 dxChartSeriesTypes.StackedBarSeries,dxChartSeriesTypes.FullStackedBarSeries

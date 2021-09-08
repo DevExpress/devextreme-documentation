@@ -4,13 +4,13 @@ type: function(rowData)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Returns value of a lookup item whose identifier equals the `id`.
 
 ##### param(rowData): Object
-<!-- Description goes here -->
+Identifier of a lookup item to locate. Should be equal to a value from the lookup's valueExpr field.
 
 ##### return: any
-<!-- Description goes here -->
+Lookup item value. `undefined` if not located. Corresponds to a value from the lookup's displayExpr field.
 
 ---
 <!-- Description goes here -->

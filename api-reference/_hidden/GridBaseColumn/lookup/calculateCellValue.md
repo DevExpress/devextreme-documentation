@@ -7,10 +7,10 @@ type: function(rowData)
 Returns value of a lookup item whose identifier equals the `id`.
 
 ##### param(rowData): Object
-Identifier of a lookup item to locate. Should be equal to a value from the lookup's valueExpr field.
+Identifier of a lookup item to locate. Should be equal to the valueExpr field's value.
 
 ##### return: any
-Lookup item value. `undefined` if not located. Corresponds to a value from the lookup's displayExpr field.
+Lookup item value. `undefined` if not located. Corresponds to the displayExpr field's value.
 
 ---
 <!-- Description goes here -->

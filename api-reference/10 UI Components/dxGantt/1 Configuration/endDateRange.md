@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the end date of the currently visible date interval in the Gantt chart.
+Specifies the end date of the visible date interval in the Gantt chart.
 
 ---
 

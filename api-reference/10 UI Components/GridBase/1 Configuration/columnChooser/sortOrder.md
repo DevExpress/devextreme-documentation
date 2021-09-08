@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the sort order of column headers.
 
 ---
-<!-- Description goes here -->
+If not set, the order is the same as in the [columns[]](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/) array.

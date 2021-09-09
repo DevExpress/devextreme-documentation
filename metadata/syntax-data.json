@@ -6311,6 +6311,9 @@
     "dxLoadPanelOptions.contentTemplate": {
       "vue": "content-template"
     },
+    "dxLoadPanelOptions.dragAndResizeArea": {
+      "vue": "drag-and-resize-area"
+    },
     "dxLoadPanelOptions.dragEnabled": {
       "vue": "drag-enabled"
     },
@@ -6896,9 +6899,6 @@
     },
     "dxOverlayOptions.deferRendering": {
       "vue": "defer-rendering"
-    },
-    "dxOverlayOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
     },
     "dxOverlayOptions.elementAttr": {
       "vue": "element-attr"
@@ -8218,6 +8218,9 @@
     },
     "dxPopoverOptions.closeOnOutsideClick": {
       "vue": "close-on-outside-click"
+    },
+    "dxPopoverOptions.dragAndResizeArea": {
+      "vue": "drag-and-resize-area"
     },
     "dxPopoverOptions.dragEnabled": {
       "vue": "drag-enabled"
@@ -10166,6 +10169,9 @@
     },
     "dxToastOptions.displayTime": {
       "vue": "display-time"
+    },
+    "dxToastOptions.dragAndResizeArea": {
+      "vue": "drag-and-resize-area"
     },
     "dxToastOptions.dragEnabled": {
       "vue": "drag-enabled"

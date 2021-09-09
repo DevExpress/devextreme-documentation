@@ -152,4 +152,4 @@ Specifies the end date of the date interval in the Gantt chart.
 
 
 #####See Also#####
-- [startDateRange](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#startDateRange')
+- [startDateRange](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/startDateRange.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#startDateRange'')

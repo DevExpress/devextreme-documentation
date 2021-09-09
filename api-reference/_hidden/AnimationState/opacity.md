@@ -4,7 +4,14 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Element opacity.
 
 ---
-<!-- Description goes here -->
+The following example shows how to use this property:
+
+    <!-- tab: JavaScript -->
+    // Transparent element
+    opacity: 0,
+
+    // Opaque element
+    opacity: 1

@@ -6290,6 +6290,9 @@
     "dxLoadPanelOptions.accessKey": {
       "vue": "access-key"
     },
+    "dxLoadPanelOptions.allowDragOutside": {
+      "vue": "allow-drag-outside"
+    },
     "dxLoadPanelOptions.animation": {
       "angular": "dxo-animation",
       "react": "Animation",
@@ -6881,9 +6884,6 @@
     },
     "dxOverlayOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
-    },
-    "dxOverlayOptions.allowDragOutside": {
-      "vue": "allow-drag-outside"
     },
     "dxOverlayOptions.closeOnOutsideClick": {
       "vue": "close-on-outside-click"
@@ -8197,6 +8197,9 @@
     },
     "dxPopoverOptions.accessKey": {
       "vue": "access-key"
+    },
+    "dxPopoverOptions.allowDragOutside": {
+      "vue": "allow-drag-outside"
     },
     "dxPopoverOptions.animation": {
       "angular": "dxo-animation",
@@ -10133,6 +10136,9 @@
       "angular": "dx-toast",
       "react": "Toast",
       "vue": "DxToast"
+    },
+    "dxToastOptions.allowDragOutside": {
+      "vue": "allow-drag-outside"
     },
     "dxToastOptions.animation": {
       "angular": "dxo-animation",

@@ -6900,6 +6900,12 @@
     "dxOverlayOptions.deferRendering": {
       "vue": "defer-rendering"
     },
+    "dxOverlayOptions.dragAndResizeArea": {
+      "vue": "drag-and-resize-area"
+    },
+    "dxOverlayOptions.dragOutsideBoundary": {
+      "vue": "drag-outside-boundary"
+    },
     "dxOverlayOptions.elementAttr": {
       "vue": "element-attr"
     },
@@ -8290,14 +8296,8 @@
       "react": "Show",
       "vue": "DxShow"
     },
-    "dxPopupOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
-    },
     "dxPopupOptions.dragEnabled": {
       "vue": "drag-enabled"
-    },
-    "dxPopupOptions.dragOutsideBoundary": {
-      "vue": "drag-outside-boundary"
     },
     "dxPopupOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"

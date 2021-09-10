@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an element within whose boundaries users can drag and resize the {WidgetName}.
 
 ---
-<!-- Description goes here -->
+If you leave this property unspecified, users can drag and resize the {WidgetName} within boundaries of the element defined by the [container]({basewidgetpath}/Configuration/#container) property.

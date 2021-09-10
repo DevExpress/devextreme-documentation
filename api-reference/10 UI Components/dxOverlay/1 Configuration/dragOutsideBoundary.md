@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to allow users to drag the {WidgetName} beyond the boundaries of the element defined by the [dragAndResizeArea]({basewidgetpath}/Configuration/#container) property.
 
 ---
-<!-- Description goes here -->
+If the **dragAndResizeArea** property is unspecified, **dragOutsideBoundary** allows users to drag the {WidgetName} beyond boundaries of the element defined by the [container]({basewidgetpath}/Configuration/#container) property.

@@ -5,7 +5,9 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
 <!-- Description goes here -->
+
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\hideOnParentScroll.md' -->

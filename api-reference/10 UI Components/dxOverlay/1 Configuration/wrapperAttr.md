@@ -113,20 +113,5 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 
 ---
 
+
 The code above specifies the `id` and `class` attributes for the wrapper element and produces markup similar to this:
-
-    <!--HTML--><body>
-        <!-- The following is the wrapper element. -->
-        <!-- It is nested inside an element defined by the `container` property (`<body>` by default). -->
-        <div id="elementId" class="dx-overlay-wrapper dx-{widgetname}-wrapper class-name" ... > 
-
-            <!-- The following element contains toolbars and component content. -->
-            <div class="dx-overlay-content">
-            
-                <!-- The following element displays content specified in the `contentTemplate`. -->
-                <div class="dx-{widgetname}-content" ... >
-                    <!-- ... -->
-                </div>
-            </div>
-        </div>
-    </body>

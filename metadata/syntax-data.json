@@ -6290,9 +6290,6 @@
     "dxLoadPanelOptions.accessKey": {
       "vue": "access-key"
     },
-    "dxLoadPanelOptions.allowDragOutside": {
-      "vue": "allow-drag-outside"
-    },
     "dxLoadPanelOptions.animation": {
       "angular": "dxo-animation",
       "react": "Animation",
@@ -6316,6 +6313,9 @@
     },
     "dxLoadPanelOptions.dragEnabled": {
       "vue": "drag-enabled"
+    },
+    "dxLoadPanelOptions.dragOutsideBoundary": {
+      "vue": "drag-outside-boundary"
     },
     "dxLoadPanelOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
@@ -8198,9 +8198,6 @@
     "dxPopoverOptions.accessKey": {
       "vue": "access-key"
     },
-    "dxPopoverOptions.allowDragOutside": {
-      "vue": "allow-drag-outside"
-    },
     "dxPopoverOptions.animation": {
       "angular": "dxo-animation",
       "react": "Animation",
@@ -8224,6 +8221,9 @@
     },
     "dxPopoverOptions.dragEnabled": {
       "vue": "drag-enabled"
+    },
+    "dxPopoverOptions.dragOutsideBoundary": {
+      "vue": "drag-outside-boundary"
     },
     "dxPopoverOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
@@ -8275,9 +8275,6 @@
     "dxPopupOptions": {
       "vue": "dx-popup-options"
     },
-    "dxPopupOptions.allowDragOutside": {
-      "vue": "allow-drag-outside"
-    },
     "dxPopupOptions.animation": {
       "angular": "dxo-animation",
       "react": "Animation",
@@ -8298,6 +8295,9 @@
     },
     "dxPopupOptions.dragEnabled": {
       "vue": "drag-enabled"
+    },
+    "dxPopupOptions.dragOutsideBoundary": {
+      "vue": "drag-outside-boundary"
     },
     "dxPopupOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
@@ -10140,9 +10140,6 @@
       "react": "Toast",
       "vue": "DxToast"
     },
-    "dxToastOptions.allowDragOutside": {
-      "vue": "allow-drag-outside"
-    },
     "dxToastOptions.animation": {
       "angular": "dxo-animation",
       "react": "Animation",
@@ -10175,6 +10172,9 @@
     },
     "dxToastOptions.dragEnabled": {
       "vue": "drag-enabled"
+    },
+    "dxToastOptions.dragOutsideBoundary": {
+      "vue": "drag-outside-boundary"
     },
     "dxToastOptions.maxWidth": {
       "vue": "max-width"

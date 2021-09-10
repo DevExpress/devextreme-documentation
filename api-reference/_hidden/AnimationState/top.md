@@ -19,7 +19,7 @@ The following example shows how to use this property:
     // Shifts the element 100 pixels up relative to the parent element
     top: -100
 
-If you need to specify the element's position in greater detail, use the [position]({currentpath}/#position) property.
+If you need to specify the element's position in greater detail, use the [position](/api-reference/_hidden/AnimationState/position.md '{currentpath}/#position') property.
 
 #####See Also#####
-- [left]({currentpath}/#left)
+- [left](/api-reference/_hidden/AnimationState/left.md '{currentpath}/#left')

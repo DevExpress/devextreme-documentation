@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to enable the table context menu.
 
 ---
 <!-- Description goes here -->

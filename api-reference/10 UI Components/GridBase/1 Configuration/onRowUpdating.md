@@ -45,7 +45,7 @@ This function allows you to intercept row update and perform additional actions.
 
 [note]
 
-- Do not implement custom update logic in this function. You can use [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [update](Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function for this purpose.
+- You can use this function to change `e.newData` values, but do not use it to implement custom update logic. For this purpose, you can implement the [onSaving]({basewidgetpath}/Configuration/#onSaving) or [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/)'s [update](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update) function.
 
 - In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
 

@@ -6,7 +6,12 @@ default: 'outlined'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies which style to apply to the button that represents an action sheet item.
 
 ---
-<!-- Description goes here -->
+The following styles are available: 
+
+![ActionSheet Item Styling Modes](/images/UiWidgets/actionSheetItem_stylingMode.png)
+
+#####See Also#####
+- [type](/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#type)

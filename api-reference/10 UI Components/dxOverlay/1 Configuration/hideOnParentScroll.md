@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to hide the {WidgetName} when users scroll one of the {WidgetName}'s parent elements. 
+Specifies whether to hide the {WidgetName} when users scroll one of its parent elements. 
 
 ---
 <!-- Description goes here -->

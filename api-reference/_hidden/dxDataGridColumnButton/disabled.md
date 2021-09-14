@@ -23,5 +23,4 @@ The row's properties.
 **true** if the button should be disabled; otherwise, **false**.
 
 ---
-#####See Also#####
-- **buttons[]**.[visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible)
+Use the function to activate or disable the button for specific rows. See a related example in the **buttons[]**.[visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible) topic.

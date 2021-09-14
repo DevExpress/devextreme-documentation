@@ -5,22 +5,23 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the button is disabled.
 
 ##### param(options): Object
-<!-- Description goes here -->
+Information about the current row and column that contain the button.
 
 ##### field(options.column): dxTreeListColumn
-<!-- Description goes here -->
+The column's properties.
 
 ##### field(options.component): dxTreeList
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(options.row): dxTreeListRowObject
-<!-- Description goes here -->
+The row's properties.
 
 ##### return: Boolean
-<!-- Description goes here -->
+**true** if the button should be disabled; otherwise, **false**.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- **buttons[]**.[visible](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/buttons/#visible)

@@ -8,7 +8,7 @@ default: false
 Specifies whether the button is disabled.
  
 ##### param(options): Object
-Information about the row and column that contain the button.
+Information about the current row and column that contain the button.
 
 ##### field(options.column): dxDataGridColumn
 The column's properties.

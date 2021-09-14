@@ -59,7 +59,7 @@ This method can be called at any point in your application. The following code c
             "paths": {
                 // ...
                 "exceljs": [
-                    "node_modules/exceljs/dist/exceljs.js"
+                    "node_modules/exceljs/dist/exceljs.min.js"
                 ]
             }
         },

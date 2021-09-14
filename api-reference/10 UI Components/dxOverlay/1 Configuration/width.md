@@ -1,7 +1,7 @@
 ---
 id: dxOverlay.Options.width
 type: Number | String | function()
-default: function() {return $(window).width() * 0.8 }
+default: '80vw'
 ---
 ---
 ##### shortDescription

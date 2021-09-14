@@ -1,7 +1,7 @@
 ---
 id: dxOverlay.Options.height
 type: Number | String | function()
-default: function() { return $(window).height() * 0.8 }
+default: '80vh'
 ---
 ---
 ##### shortDescription

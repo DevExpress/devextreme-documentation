@@ -14,4 +14,4 @@ The following styles are available:
 ![ActionSheet Item Styling Modes](/images/UiWidgets/actionSheetItem_stylingMode.png)
 
 #####See Also#####
-- [type](/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#type)
+- [type]({currentpath}/#type)

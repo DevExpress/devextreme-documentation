@@ -33,13 +33,15 @@ The following instructions show how to enable and configure client-side export:
         npm install --save exceljs file-saver
 
         <!-- tab: tsconfig.app.json -->
-        "compilerOptions": {
-            // ...
-            "paths": {
+        {
+            "compilerOptions": {
                 // ...
-                "exceljs": [
-                    "node_modules/exceljs/dist/exceljs.js"
-                ]
+                "paths": {
+                    // ...
+                    "exceljs": [
+                        "node_modules/exceljs/dist/exceljs.min.js"
+                    ]
+                }
             }
         }
 

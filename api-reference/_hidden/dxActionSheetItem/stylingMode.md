@@ -6,7 +6,7 @@ default: 'outlined'
 ---
 ---
 ##### shortDescription
-Specifies which style to apply to the button that represents an action sheet item.
+Specifies which style to apply to the button that is an action sheet item.
 
 ---
 The following styles are available: 

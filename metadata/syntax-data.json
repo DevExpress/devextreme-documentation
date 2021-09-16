@@ -4719,11 +4719,50 @@
     "dxFileManagerOptions.onCurrentDirectoryChanged": {
       "vue": "@current-directory-changed"
     },
+    "dxFileManagerOptions.onDirectoryCreated": {
+      "vue": "@directory-created"
+    },
+    "dxFileManagerOptions.onDirectoryCreating": {
+      "vue": "@directory-creating"
+    },
     "dxFileManagerOptions.onErrorOccurred": {
       "vue": "@error-occurred"
     },
+    "dxFileManagerOptions.onFileUploaded": {
+      "vue": "@file-uploaded"
+    },
+    "dxFileManagerOptions.onFileUploading": {
+      "vue": "@file-uploading"
+    },
     "dxFileManagerOptions.onFocusedItemChanged": {
       "vue": "@focused-item-changed"
+    },
+    "dxFileManagerOptions.onItemCopied": {
+      "vue": "@item-copied"
+    },
+    "dxFileManagerOptions.onItemCopying": {
+      "vue": "@item-copying"
+    },
+    "dxFileManagerOptions.onItemDeleted": {
+      "vue": "@item-deleted"
+    },
+    "dxFileManagerOptions.onItemDeleting": {
+      "vue": "@item-deleting"
+    },
+    "dxFileManagerOptions.onItemDownloading": {
+      "vue": "@item-downloading"
+    },
+    "dxFileManagerOptions.onItemMoved": {
+      "vue": "@item-moved"
+    },
+    "dxFileManagerOptions.onItemMoving": {
+      "vue": "@item-moving"
+    },
+    "dxFileManagerOptions.onItemRenamed": {
+      "vue": "@item-renamed"
+    },
+    "dxFileManagerOptions.onItemRenaming": {
+      "vue": "@item-renaming"
     },
     "dxFileManagerOptions.onSelectedFileOpened": {
       "vue": "@selected-file-opened"

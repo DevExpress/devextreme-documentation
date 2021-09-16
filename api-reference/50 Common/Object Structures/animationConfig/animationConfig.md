@@ -1,6 +1,6 @@
 ---
 id: AnimationConfig
-type: Object
+type: Object | Number | String
 module: animation/fx
 export: AnimationConfig
 ---

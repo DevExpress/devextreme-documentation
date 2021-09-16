@@ -1,7 +1,7 @@
 ---
 id: dxLookup.titleRendered
 type: eventType
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

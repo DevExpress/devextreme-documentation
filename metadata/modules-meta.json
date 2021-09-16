@@ -191,7 +191,9 @@
     "pdf_exporter": {
       "PdfDataGridCell": {},
       "PdfExportDataGridProps": {},
-      "exportDataGrid": {}
+      "PdfExportGanttProps": {},
+      "exportDataGrid": {},
+      "exportGantt": {}
     },
     "viz/pie_chart": {
       "PieChartSeries": {},

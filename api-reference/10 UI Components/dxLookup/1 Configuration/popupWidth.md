@@ -2,7 +2,7 @@
 id: dxLookup.Options.popupWidth
 type: Number | String | function()
 default: function() {return $(window).width() * 0.8 }, function() { return Math.min($(window).width(), $(window).height()) * 0.4; } (iPad)
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

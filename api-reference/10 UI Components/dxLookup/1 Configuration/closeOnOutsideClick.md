@@ -2,7 +2,7 @@
 id: dxLookup.Options.closeOnOutsideClick
 type: Boolean | function(event)
 default: false, true (Material)
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

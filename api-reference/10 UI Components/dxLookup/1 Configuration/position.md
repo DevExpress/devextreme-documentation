@@ -2,7 +2,7 @@
 id: dxLookup.Options.position
 type: PositionConfig
 default: undefined, { my: 'left top', at: 'left top', of: lookupContainer } (Material)
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

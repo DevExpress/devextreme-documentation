@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.convertCoordinates(x, y)
-dep: dxVectorMap.convertToGeo(x, y)
+deprecated: 
 ---
 ---
 ##### shortDescription

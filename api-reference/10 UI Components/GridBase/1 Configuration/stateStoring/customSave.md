@@ -10,6 +10,9 @@ Specifies a function that is executed on state saving. Applies only if the [type
 The current UI component state.
 
 ---
+
+The {WidgetName} automatically calls the **customSave** function on data source initialization and each time a user applies changes. If you need to specify state on demand, use the [state(state)]({basewidgetpath}/Methods/#statestate) method.  
+
 Use the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.
  
 In the following code, the state is saved and loaded from a remote storage:

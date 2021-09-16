@@ -11,3 +11,5 @@ The UI component state. As a rule, it is a state that you save within the [custo
 
 ---
 Use the **customSave** and **customLoad** functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions. See an example in the [customSave](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customSave.md '{basewidgetpath}/Configuration/stateStoring/#customSave') topic.
+
+If you need to get state on demand, call the [state(state)]({basewidgetpath}/Methods/#state) method.

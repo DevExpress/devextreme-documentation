@@ -5,22 +5,24 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### param(options): Object
-<!-- Description goes here -->
+<!-- %param(options)% -->
 
 ##### field(options.column): dxTreeListColumn
-<!-- Description goes here -->
+<!-- %field(options.column)% -->
 
 ##### field(options.component): dxTreeList
-<!-- Description goes here -->
+<!-- %field(options.component)% -->
 
 ##### field(options.row): dxTreeListRowObject
-<!-- Description goes here -->
+<!-- %field(options.row)% -->
 
 ##### return: Boolean
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference/_hidden/dxDataGridColumnButton/disabled.md' -->

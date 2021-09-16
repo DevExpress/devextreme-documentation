@@ -5,22 +5,22 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
+Specifies whether the button is disabled.
+ 
 ##### param(options): Object
-<!-- Description goes here -->
+Information about the current row and column that contain the button.
 
 ##### field(options.column): dxDataGridColumn
-<!-- Description goes here -->
+The column's properties.
 
 ##### field(options.component): dxDataGrid
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(options.row): dxDataGridRowObject
-<!-- Description goes here -->
+The row's properties.
 
 ##### return: Boolean
-<!-- Description goes here -->
+**true** if the button should be disabled; otherwise, **false**.
 
 ---
-<!-- Description goes here -->
+Use the function to activate or disable the button for specific rows. See a related example in the **buttons[]**.[visible]({currentpath}/#visible) topic.

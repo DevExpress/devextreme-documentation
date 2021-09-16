@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an element with boundaries within which users can drag and resize the {WidgetName}. Ignored if the [dragOutsideBoundary](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragOutsideBoundary) property is set to **true**.
 
 ---
-<!-- Description goes here -->
+If you leave this property unspecified, users can drag and resize the {WidgetName} within boundaries of the element defined by the [container]({basewidgetpath}/Configuration/#container) property.

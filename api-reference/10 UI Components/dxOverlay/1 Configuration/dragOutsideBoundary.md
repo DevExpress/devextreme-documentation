@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows users to drag the {WidgetName} within the browser window or beyond the window's borders.
 
 ---
-<!-- Description goes here -->
+When you set this property to **true**, drag area boundaries defined by [dragAndResizeArea]({basewidgetpath}/Configuration/#container) and [container]({basewidgetpath}/Configuration/#container) properties are ignored.

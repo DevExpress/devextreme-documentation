@@ -11,11 +11,11 @@ The current UI component state.
 
 ---
 
-The {WidgetName} automatically calls the **customSave** function on data source initialization and each time a user applies changes. If you need to specify state on demand, use the [state(state)]({basewidgetpath}/Methods/#statestate) method.  
+The {WidgetName} automatically calls the **customSave** function on data source initialization and each time a user applies changes. If you need to specify state on demand, use the [state(state)]({basewidgetpath}/Methods/#statestate) method.
 
-Use the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.
+Specify the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions, for example, omit specific properties.
  
-In the following code, the state is saved and loaded from a remote storage:
+In the following code, the state is saved and loaded from a remote storage; the **paging**.[pageIndex]({basewidgetpath}/Configuration/paging/#pageIndex) property is omitted on save:
 
 ---
 #####jQuery
@@ -39,6 +39,9 @@ In the following code, the state is saved and loaded from a remote storage:
             }
         };
         if (data) {
+            for (item in state) {
+                if (item == "pageIndex") delete state[item];
+            }
             storageRequestSettings.data = JSON.stringify(data);
         }
         $.ajax(storageRequestSettings);

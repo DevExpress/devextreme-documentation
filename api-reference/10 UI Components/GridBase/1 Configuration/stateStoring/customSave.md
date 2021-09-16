@@ -4,18 +4,16 @@ type: function(gridState)
 ---
 ---
 ##### shortDescription
-Specifies a function that is executed on state saving. Applies only if the [type](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/type.md '{basewidgetpath}/Configuration/stateStoring/#type') is *"custom"*.
+Specifies a function that is executed on state change. Applies only if the [type](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/type.md '{basewidgetpath}/Configuration/stateStoring/#type') is *"custom"*.
 
 ##### param(gridState): Object
 The current UI component state.
 
 ---
 
-The {WidgetName} automatically calls the **customSave** function on data source initialization and each time a user applies changes. If you need to specify state on demand, use the [state(state)]({basewidgetpath}/Methods/#statestate) method.
-
-Specify the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions, for example, omit specific properties.
+Specify the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.
  
-In the following code, the state is saved and loaded from a remote storage; the **paging**.[pageIndex]({basewidgetpath}/Configuration/paging/#pageIndex) property is omitted on save:
+In the following code, the state is saved and loaded from a remote storage:
 
 ---
 #####jQuery
@@ -63,7 +61,7 @@ In the following code, the state is saved and loaded from a remote storage; the 
         });
     })
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { HttpClient, HttpClientModule, HttpHeaders, HttpRequest } from "@angular/common/http";
@@ -223,3 +221,5 @@ In the following code, the state is saved and loaded from a remote storage; the 
     }
 
 ---
+
+If you need to specify state on demand, use the [state(state)]({basewidgetpath}/Methods/#statestate) method.

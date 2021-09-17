@@ -6,7 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures sorting.
 
 ---
-<!-- Description goes here -->

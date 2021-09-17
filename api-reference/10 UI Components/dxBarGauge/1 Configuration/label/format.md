@@ -15,4 +15,5 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 }
 
 #####See Also#####
+- [customizeText](/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/#customizeText)
 - [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)

@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.sorting
-type: dxGanttSorting
+id: PdfExportGanttProps.exportMode
+acceptValues: 'all' | 'treeList' | 'chart'
+type: String
 ---
 ---
 ##### shortDescription

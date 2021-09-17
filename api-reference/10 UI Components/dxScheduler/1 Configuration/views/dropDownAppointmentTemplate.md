@@ -2,7 +2,7 @@
 id: dxScheduler.Options.views.dropDownAppointmentTemplate
 type: template
 default: 'dropDownAppointment'
-dep: dxScheduler.Options.views.appointmentTooltipTemplate
+deprecated: 
 ---
 ---
 ##### shortDescription

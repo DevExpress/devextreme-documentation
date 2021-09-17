@@ -2,7 +2,7 @@
 id: dxLookup.Options.fullScreen
 type: Boolean
 default: false, true (iPhone)
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

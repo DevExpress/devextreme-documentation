@@ -1,7 +1,7 @@
 ---
 id: dxHtmlEditorToolbarItem.formatValues
 type: Array<String, Number, Boolean>
-dep: dxHtmlEditorToolbarItem.acceptedValues
+deprecated: 
 ---
 ---
 ##### shortDescription

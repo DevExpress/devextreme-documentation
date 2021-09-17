@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.exportToExcel(selectionOnly)
-dep: excelExporter.exportDataGrid(options)
+deprecated: 
 ---
 ---
 ##### shortDescription

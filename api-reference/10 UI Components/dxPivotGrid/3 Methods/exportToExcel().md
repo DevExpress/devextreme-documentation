@@ -1,6 +1,6 @@
 ---
 id: dxPivotGrid.exportToExcel()
-dep: excelExporter.exportPivotGrid(options)
+deprecated: 
 ---
 ---
 ##### shortDescription

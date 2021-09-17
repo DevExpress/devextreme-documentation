@@ -2,7 +2,7 @@
 id: dxLookup.Options.title
 type: String
 default: ''
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

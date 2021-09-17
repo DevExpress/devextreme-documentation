@@ -2,7 +2,7 @@
 id: dxLookup.Options.shading
 type: Boolean
 default: true
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

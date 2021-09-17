@@ -2,7 +2,7 @@
 id: dxMap.Options.key
 type: String | Object
 default: { bing: '', google: '', googleStatic: '' }
-dep: dxMap.Options.apiKey
+deprecated: 
 ---
 ---
 ##### shortDescription

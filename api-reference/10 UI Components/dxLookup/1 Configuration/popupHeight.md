@@ -2,7 +2,7 @@
 id: dxLookup.Options.popupHeight
 type: Number | String | function()
 default: function() { return $(window).height() * 0.8 }, 'auto' (desktop, iPad)
-dep: dxLookup.Options.dropDownOptions
+deprecated: 
 ---
 ---
 ##### shortDescription

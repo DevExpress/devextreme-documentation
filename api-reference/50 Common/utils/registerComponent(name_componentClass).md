@@ -2,6 +2,7 @@
 id: registerComponent(name, componentClass)
 module: core/component_registrator
 hidden: 
+export: default
 ---
 ---
 ##### shortDescription

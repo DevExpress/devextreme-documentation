@@ -1,5 +1,5 @@
 {
-  "ToolsVersion": "7.0.0",
+  "ToolsVersion": "7.2.1",
   "Modules": {
     "data/array_store": {
       "default": {}
@@ -630,7 +630,7 @@
       "positionConfig": {}
     },
     "core/component_registrator": {
-      "registerComponent": {}
+      "default": {}
     },
     "core/set_template_engine": {
       "default": {}

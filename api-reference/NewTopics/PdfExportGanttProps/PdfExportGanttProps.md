@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.sorting
-type: dxGanttSorting
+id: PdfExportGanttProps
+module: pdf_exporter
+export: PdfExportGanttProps
 ---
 ---
 ##### shortDescription

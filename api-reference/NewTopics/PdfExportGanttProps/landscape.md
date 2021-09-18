@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.sorting
-type: dxGanttSorting
+id: PdfExportGanttProps.landscape
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

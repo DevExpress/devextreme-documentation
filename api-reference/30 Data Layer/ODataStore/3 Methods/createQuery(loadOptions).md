@@ -11,6 +11,15 @@ The [Query](/api-reference/30%20Data%20Layer/Query '/Documentation/ApiReference/
 ##### param(loadOptions): Object
 An object containing the [expand](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/expand.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#expand'), [requireTotalCount](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/requireTotalCount.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#requireTotalCount'), and [customQueryParams](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/customQueryParams.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#customQueryParams') properties.
 
+##### field(loadOptions.customQueryParams): any
+<!-- Description goes here -->
+
+##### field(loadOptions.expand): String | Array<String>
+<!-- Description goes here -->
+
+##### field(loadOptions.requireTotalCount): Boolean
+<!-- Description goes here -->
+
 ---
 ---
 #####jQuery

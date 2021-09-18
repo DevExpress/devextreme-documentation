@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.sorting
-type: dxGanttSorting
+id: PdfExportGanttProps.format
+type: String | Object
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -11,4 +11,4 @@ Specifies the [type](/api-reference/10%20UI%20Components/dxButton/1%20Configurat
 ---
 
 #####See Also#####
-- [stylingMode]({currentpath}/#stylingMode)
+- [stylingMode](/api-reference/_hidden/dxActionSheetItem/stylingMode.md '{currentpath}/#stylingMode')

@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.sorting
-type: dxGanttSorting
+id: PdfExportGanttProps.dateRange
+acceptValues: 'all' | 'visible'
+type: String | Object
 ---
 ---
 ##### shortDescription

@@ -8,7 +8,7 @@ default: undefined
 Formats the item value before displaying it in the label.
 
 ---
-See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for details on accepted values.
+See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
 If you specify the format with an object, it can also contain the **percentPrecision** field. Funnel items have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:
 

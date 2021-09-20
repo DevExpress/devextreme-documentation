@@ -4,7 +4,7 @@ type: function(value)
 ---
 ---
 ##### shortDescription
-Parses string values into numeric or date-time values. Can be used with [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') or one of the [predefined formats](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type').
+Parses string values into numeric or date-time values. Should be used with [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') or one of the [predefined formats](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type').
 
 ##### param(value): String
 The string value to be parsed.
@@ -17,17 +17,17 @@ A UI component calls this function internally, for example, when a user enters a
 
     <!--JavaScript-->
     formatter: function (date) {
-        var month = date.getMonth() + 1,
-            day = date.getDate(),
-            year = date.getFullYear();
-        
-        return year + "." + month + "." + day;
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+
+        return `${day}.${month}.${year}`;
     },
     parser: function (e) {
-        var parts = e.split("."),
-            day = Number(parts[2]),
-            month = Number(parts[1] - 1),
-            year = Number(parts[0]);
-        
+        const parts = e.split(".");
+        const day = Number(parts[0]);
+        const month = Number(parts[1] - 1);
+        const year = Number(parts[2]);
+
         return new Date(year, month, day);
     }

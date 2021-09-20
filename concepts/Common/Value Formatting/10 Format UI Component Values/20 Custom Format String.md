@@ -52,6 +52,26 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
     </tr>
 </table>
 
+    <!-- tab: JavaScript -->
+    const largeNumber = 123456.789;
+
+    // Limit the decimal part to one digit
+    format: "#0.#" // 123456.7
+
+    // Add a group separator
+    format: ",##0.###" // 123,456.789
+    
+<!-- -->
+
+    <!-- tab: JavaScript -->
+    const smallNumber = 0.01234;
+
+    // Represent as a percentage and limit to two decimal digits
+    format: "#0.##%" // 1.23%
+
+    // Add a percent sign and limit to two decimal digits
+    format: "#0.##'%'" // 0.01%
+
  **Date-Time Formats** 
 
 <table class="dx-table">
@@ -120,109 +140,19 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
     </tr>
 </table>
 
+    <!-- tab: JavaScript -->
+    const date = new Date(2021, 6, 15, 20, 45, 34);
+
+    format: "MM/dd/yyyy" // 07/15/2021
+    format: "MM/dd/yy" // 07/15/21
+    format: "dd.MM.yyyy" // 15.07.2021
+    format: "MMMM dd, yyyy" // July 15, 2021
+    format: "EEEE, MMMM dd" // Thursday, July 15
+    format: "HH:mm:ss" // 20:45:34
+    format: "hh:mm a" // 08:45 PM
+    format: "MMMM dd, yyyy HH:mm:ss" // July 15, 2021 20:45:34
+
 [note] [Reference the Globalize library](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use other <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">datetime</a> format characters.
-
-The following code shows how to apply LDML patterns to format numbers and dates:
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#numberBoxContainer").dxNumberBox({
-            value: 5,
-            format: "0.##" // "0.01", "5", "5.01"
-        });
-        $("#dateBoxContainer").dxDateBox({
-            value: new Date(),
-            displayFormat: "MMM d, yyyy" // "Jun 15, 2018"
-        });
-    });
-
-
-##### Angular
-
-    <!--HTML-->
-    <dx-number-box
-        [(value)]="numberBoxValue"
-        format="0.##"> <!-- "0.01", "5", "5.01" -->
-    </dx-number-box>
-    <dx-date-box
-        [(value)]="dateBoxValue"
-        format="MMM d, yyyy"> <!-- "Jun 15, 2018" -->
-    </dx-date-box>
-
-    <!--TypeScript-->
-    import { DxNumberBoxModule, DxDateBoxModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        numberBoxValue: number = 5;
-        dateBoxValue: Date = new Date();
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxNumberBoxModule,
-            DxDateBoxModule,
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxNumberBox
-            v-model:value="numberBoxValue"
-            format="0.##" /> <!-- "0.01", "5", "5.01" -->
-        <DxDateBox
-            v-model:value="dateBoxValue"
-            format="MMM d, yyyy" /> <!-- "Jun 15, 2018" -->
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxNumberBox from 'devextreme-vue/number-box';
-    import DxDateBox from 'devextreme-vue/date-box';
-
-    export default {
-        components: {
-            DxNumberBox,
-            DxDateBox
-        },
-        data() {
-            return {
-                numberBoxValue: 5,
-                dateBoxValue: new Date()
-            }
-        }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import NumberBox from 'devextreme-react/number-box';
-    import DateBox from 'devextreme-react/date-box';
-
-    export default function App() {
-        return (
-            <React.Fragment>
-                <NumberBox
-                    defaultValue={5}
-                    format="0.##" /> {/* "0.01", "5", "5.01" */}
-                <DateBox
-                    defaultValue={new Date()}
-                    format="MMM d, yyyy" />  {/* "Jun 15, 2018" */}
-            </React.Fragment>
-        );
-    }
-
----
 
 #####See Also#####
 - [NumberBox Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting)

@@ -15,5 +15,5 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 }
 
 #####See Also#####
-- [customizeText]({currentpath}/#customizeText)
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [customizeText](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/sliderMarker/customizeText.md '{currentpath}/#customizeText')
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

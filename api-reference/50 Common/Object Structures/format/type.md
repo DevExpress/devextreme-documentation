@@ -36,11 +36,11 @@ Depending on the values you need to format, you can choose one of the following 
 
 - Set the [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') property to show fractional numbers.
 
-- Set the [currency](/Documentation/ApiReference/Common/Object_Structures/format/#currency) property to use a currency other than USD. Alternatively, you can set the [globalConfig](/Documentation/ApiReference/Common/Object_Structures/globalConfig/).[defaultCurrency](/Documentation/ApiReference/Common/Object_Structures/globalConfig/#defaultCurrency) property to apply the same currency to all DevExtreme components.
+- Set the [currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/format/#currency') property to use a currency other than USD. Alternatively, you can set the [globalConfig](/api-reference/50%20Common/Object%20Structures/globalConfig '/Documentation/ApiReference/Common/Object_Structures/globalConfig/').[defaultCurrency](/api-reference/50%20Common/Object%20Structures/globalConfig/defaultCurrency.md '/Documentation/ApiReference/Common/Object_Structures/globalConfig/#defaultCurrency') property to apply the same currency to all DevExtreme components.
 
 - The *"fixedPoint"*, *"decimal"*, and *"currency"* format types can be paired with *"largeNumber", "thousands", "millions", "billions"*, and *"trillions"*, for example: *"fixedPoint thousands"*.
 
-- Editor components, such as [NumberBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview/), do not support large number formats. If you want to apply these formats, you can implement the [formatter](/Documentation/ApiReference/Common/Object_Structures/format/#formatter) and [parser](/Documentation/ApiReference/Common/Object_Structures/format/#parser) functions or specify a [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String).
+- Editor components, such as [NumberBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview/), do not support large number formats. If you want to apply these formats, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a [custom format string](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String').
 
 [/note]
 
@@ -77,4 +77,4 @@ If the **type** is the only field you need to specify in the **format** object, 
 }
 
 #####See Also#####
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

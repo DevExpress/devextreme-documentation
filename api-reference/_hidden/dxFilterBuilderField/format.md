@@ -8,6 +8,8 @@ default: ''
 Formats a value before it is displayed.
 
 ---
+See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
+
 This property also controls the user input in cells that use the [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component for editing. For cells that use other UI components, you can specify the [editorOptions](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#editorOptions').**format** property.
 
 ---
@@ -118,4 +120,5 @@ This property also controls the user input in cells that use the [DateBox](/api-
 ---
 
 #####See Also#####
-- [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/')
+- [customizeText]({currentpath}/#customizeText)
+- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)

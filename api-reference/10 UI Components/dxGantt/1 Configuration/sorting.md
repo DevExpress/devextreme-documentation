@@ -1,7 +1,6 @@
 ---
 id: dxGantt.Options.sorting
-type: Object
-inheritsType: dxGanttSorting
+type: dxGanttSorting
 ---
 ---
 ##### shortDescription

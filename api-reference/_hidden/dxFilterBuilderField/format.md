@@ -120,5 +120,5 @@ This property also controls the user input in cells that use the [DateBox](/api-
 ---
 
 #####See Also#####
-- [customizeText]({currentpath}/#customizeText)
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [customizeText](/api-reference/_hidden/dxFilterBuilderField/customizeText.md '{currentpath}/#customizeText')
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

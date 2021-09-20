@@ -5830,6 +5830,11 @@
     "dxGanttOptions.scaleType": {
       "vue": "scale-type"
     },
+    "dxGanttOptions.scaleTypeRange": {
+      "angular": "dxo-scale-type-range",
+      "react": "ScaleTypeRange",
+      "vue": "DxScaleTypeRange"
+    },
     "dxGanttOptions.selectedRowKey": {
       "vue": "selected-row-key"
     },

@@ -133,5 +133,5 @@ The **format** property also limits user input in cells that use the [DateBox](/
 }
 
 #####See Also#####
-- [customizeText]({currentpath}/#customizeText)
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{currentpath}/#customizeText')
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

@@ -74,27 +74,26 @@ Options to be applied.
 
 ##### React
 
-    import React from "react";
+    import React, {useEffect} from "react";
     import dx{WidgetName} from "devextreme/ui/{widget_name}";
     import {WidgetName} from "devextreme-react/{widget-name}";
 
-    class App extends React.Component {
-        render () {
+    export default function App() {
+        useEffect(() => { 
             dx{WidgetName}.defaultOptions({
                 device: { deviceType: "desktop" },
                 options: {
                     // Here go the {WidgetName} properties
                 }
             })
-            return (
-                <div>
-                    <{WidgetName} id="{widgetName}1" />
-                    <{WidgetName} id="{widgetName}2" />
-                </div>
-            )
-        }
-    }
+        });
 
-    export default App;
+        return (
+            <div>
+                <{WidgetName} id="{widgetName}1" />
+                <{WidgetName} id="{widgetName}2" />
+            </div>
+        )
+    }
 
 ---

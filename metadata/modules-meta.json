@@ -1,5 +1,5 @@
 {
-  "ToolsVersion": "7.0.0-beta.3",
+  "ToolsVersion": "7.2.1",
   "Modules": {
     "animation/fx": {
       "AnimationConfig": {},
@@ -191,7 +191,9 @@
     "pdf_exporter": {
       "PdfDataGridCell": {},
       "PdfExportDataGridProps": {},
-      "exportDataGrid": {}
+      "PdfExportGanttProps": {},
+      "exportDataGrid": {},
+      "exportGantt": {}
     },
     "viz/pie_chart": {
       "PieChartSeries": {},
@@ -642,7 +644,7 @@
       "default": {}
     },
     "core/component_registrator": {
-      "registerComponent": {}
+      "default": {}
     },
     "core/set_template_engine": {
       "default": {}

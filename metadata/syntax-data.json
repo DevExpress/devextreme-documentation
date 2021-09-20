@@ -5921,6 +5921,23 @@
     "dxGanttOptions.validation.validateDependencies": {
       "vue": "validate-dependencies"
     },
+    "dxGanttSorting": {
+      "angular": "dxo-dx-gantt-sorting",
+      "react": "DxGanttSorting",
+      "vue": "DxDxGanttSorting"
+    },
+    "dxGanttSorting.ascendingText": {
+      "vue": "ascending-text"
+    },
+    "dxGanttSorting.clearText": {
+      "vue": "clear-text"
+    },
+    "dxGanttSorting.descendingText": {
+      "vue": "descending-text"
+    },
+    "dxGanttSorting.showSortIndexes": {
+      "vue": "show-sort-indexes"
+    },
     "dxGanttStripLine": {
       "angular": "dxo-dx-gantt-strip-line",
       "react": "DxGanttStripLine",
@@ -11538,6 +11555,9 @@
     },
     "enums.GanttScaleType": {
       "vue": "gantt-scale-type"
+    },
+    "enums.GanttSortingMode": {
+      "vue": "gantt-sorting-mode"
     },
     "enums.GanttTaskTitlePosition": {
       "vue": "gantt-task-title-position"

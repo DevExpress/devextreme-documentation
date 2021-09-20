@@ -1,6 +1,7 @@
 ---
-id: dxGantt.Options.sorting
-type: dxGanttSorting
+id: PdfExportGanttProps.margins
+type: Object
+default: undefined
 ---
 ---
 ##### shortDescription

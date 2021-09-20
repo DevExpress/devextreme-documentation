@@ -19,6 +19,5 @@ If none of the [predefined formats](/api-reference/50%20Common/Object%20Structur
         // ...
         return formattedValue;
     }
-    
-#####See Also#####
-- **format**.[parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/Format/#parser')
+
+[important] If you allow users to edit the formatted value, implement the [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') function to convert the value back to a number or date and time.

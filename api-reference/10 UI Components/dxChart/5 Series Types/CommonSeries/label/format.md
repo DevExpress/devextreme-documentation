@@ -5,19 +5,20 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Formats the point value before it will be displayed in the point label.
+Formats the point value before it is displayed in the point label.
 
 ---
-This property accepts an object whose fields are described in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') section. However, there is one more field, called **percentPrecision**, which is available only to full-stacked-like series, where one point always has an absolute and a percentage value. The **percentPrecision** field specifies how many digits after the decimal point to save in the percentage value. See an example in the following code.
+See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
+If you specify the format with an object and apply it to a full-stacked-like series, this object can also contain the **percentPrecision** field. Full-stacked-like series points have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:
+
+    <!-- tab: JavaScript -->
     format: {
         type: "fixedPoint", // the format of absolute values
         precision: 1, // the precision of absolute values (123.456 --> 123.4)
         percentPrecision: 2 // the precision of percentage values (12.3456 % --> 12.34 %)
     }
 
-[note]DevExtreme UI components provide a wide choice of [predefined formats](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type'). If you are, however, going to use custom formats, link the <a href="https://github.com/jquery/globalize" target="_blank">Globalize</a> library to your project. Learn how to do this from topics in the [Installation](/concepts/Common/Distribution%20Channels/15%20ZIP%20Archive.md '/Documentation/Guide/Common/Distribution_Channels/ZIP_Archive/') section.
-
 #####See Also#####
-- [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') - provides a comprehensive overview of formatting capabilities.
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') - shows how to apply formatting to various UI component elements.
+- [customizeText]({currentpath}/#customizeText)
+- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)

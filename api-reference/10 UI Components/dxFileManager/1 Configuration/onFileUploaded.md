@@ -5,25 +5,175 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a file is successfully uploaded.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): dxFileManager
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "component" }
 
 ##### field(e.fileData): File
-<!-- Description goes here -->
+The uploaded file.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.parentDirectory): FileSystemItem
-<!-- Description goes here -->
+The name of the parent directory.
 
 ---
-<!-- Description goes here -->
+---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#fileManagerContainer").dxFileManager({
+            // ...
+            onFileUploaded: function(e) {
+                if (e.parentDirectory === 'Images'){
+                    // your code
+                } 
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager 
+        (onFileUploaded)="onFileUploaded($event)">
+        <!-- ... -->
+    </dx-file-manager>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        onFileUploaded(e){
+            if (e.parentDirectory === 'Images'){
+                // your code
+            } 
+        }
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            DxFileManagerModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager
+            :on-file-uploaded="onFileUploaded" >            
+        </DxFileManager>
+    </template>
+
+    <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import { 
+            DxFileManager
+            // ... 
+        } from 'devextreme-vue/file-manager';
+        
+        export default {
+            components: { 
+                DxFileManager
+                // ... 
+            },
+            methods: {
+                onFileUploaded(e) {
+                    if (e.parentDirectory === 'Images'){
+                        // your code
+                    } 
+                }
+            },         
+            data() {
+                return {
+                    //...
+                };
+            } 
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import FileManager from 'devextreme-react/file-manager';
+
+    const App = () => {
+        const onFileUploaded = (e) => {
+            if (e.parentDirectory === 'Images'){
+                // your code
+            } 
+        };
+
+        return (
+            <FileManager onFileUploaded={onFileUploaded}>
+                <!-- ... -->               
+            </FileManager>
+        );
+    };
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .OnFileUploaded("onFileUploaded");
+        // ...
+    )
+
+    <script>
+        function onFileUploaded(e) {
+            if (e.parentDirectory === 'Images'){
+                // your code
+            } 
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .OnFileUploaded("onFileUploaded");
+        // ...
+    )
+
+    <script>
+        function onFileUploaded(e) {
+            if (e.parentDirectory === 'Images'){
+                // your code
+            } 
+        }
+    </script>
+
+---
+
+#####See Also#####
+- [fileUploaded](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploaded)

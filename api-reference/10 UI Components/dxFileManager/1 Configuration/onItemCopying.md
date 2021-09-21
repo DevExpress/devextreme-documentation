@@ -5,34 +5,173 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a file or folder is copied.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
-<!-- Description goes here -->
+Allows you to cancel the file or folder copy process.
 
 ##### field(e.component): dxFileManager
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.destinationDirectory): FileSystemItem
-<!-- Description goes here -->
+The directory where the file or folder is copied to.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "component" }
 
 ##### field(e.errorCode): Number
-<!-- Description goes here -->
+#include filemanager-error-codes
 
 ##### field(e.errorText): String
-<!-- Description goes here -->
+The error message.
 
 ##### field(e.item): FileSystemItem
-<!-- Description goes here -->
+The copied file or folder.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+
+Select a file/folder and click the **Copy to** context menu or toolbar item to invoke the "Copy to" dialog. The component executes the **onItemCopying** function when you select a destination folder and click **Copy** in the dialog.
+
+![DevExtreme File Manager - Copy File or Folder](/images/FileManager/copy-to-context-menu-item.png)
+
+![DevExtreme File Manager - Copy File or Folder](/images/FileManager/copy-to-dialog.png)
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#file-manager").dxFileManager({
+            // ...
+            onItemCopying: function (e) {
+                if (e.destinationDirectory === 'Images'){
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+##### Angular
+
+    <!--TypeScript-->
+    import { DxFileManagerModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onItemCopying(e) {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxFileManagerModule
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-file-manager ...
+        (onItemCopying)="onItemCopying($event)">
+    </dx-file-manager>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager
+            ...
+            @on-item-copying="onItemCopying"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFileManager from 'devextreme-vue/file-manager';
+  
+    export default {
+        components: {
+            DxFileManager
+        },
+        methods: {
+            onItemCopying(e) {
+                if (e.destinationDirectory === 'Images'){
+                    // your code
+                    e.cancel = true;
+                }                
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import FileManager from 'devextreme-react/file-manager';
+
+    const App = () => {
+        const onItemCopying = (e) => {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            }           
+        };
+
+        return (
+            <FileManager ...
+                onItemCopying={onItemCopying} />            
+        );
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ID("file-manager")
+        // ...
+        .OnItemCopying("fm_itemCopying_handler")
+    )
+    <script>
+        function fm_itemCopying_handler(e) {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            } 
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ID("file-manager")
+        // ...
+        .OnItemCopying("fm_itemCopying_handler")
+    )
+    <script>
+        function fm_itemCopying_handler(e) {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            } 
+        }
+    </script>
+
+---
+
+#####See Also#####
+- [itemCopying](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopying)

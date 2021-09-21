@@ -5,34 +5,170 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a file or folder is moved.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
-<!-- Description goes here -->
+Allows you to cancel the file or folder move process.
 
 ##### field(e.component): dxFileManager
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.destinationDirectory): FileSystemItem
-<!-- Description goes here -->
+The directory where a file is moved to.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "component" }
 
 ##### field(e.errorCode): Number
-<!-- Description goes here -->
+#include filemanager-error-codes
 
 ##### field(e.errorText): String
-<!-- Description goes here -->
+The error message.
 
 ##### field(e.item): FileSystemItem
-<!-- Description goes here -->
+The moved file or folder.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+Select a file/folder and click the **Move to** context menu or toolbar item to invoke the "Move to" dialog. The component executes the **onItemMoving** function when you select a destination folder and click **Move** in the dialog.
+
+![DevExtreme File Manager - Move File or Folder](/images/FileManager/move-to-dialog.png)
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#file-manager").dxFileManager({
+            // ...
+            onItemMoving: function (e) {
+                if (e.destinationDirectory === 'Images'){
+                    // your code
+                    e.cancel = true;
+                }
+            }
+        });
+    }); 
+
+##### Angular
+
+    <!--TypeScript-->
+    import { DxFileManagerModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        onItemMoving(e) {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            DxFileManagerModule
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-file-manager ...
+        (onItemMoving)="onItemMoving($event)">
+    </dx-file-manager>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileManager
+            ...
+            @on-item-moving="onItemMoving"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxFileManager from 'devextreme-vue/file-manager';
+  
+    export default {
+        components: {
+            DxFileManager
+        },
+        methods: {
+            onItemMoving(e) {
+                if (e.destinationDirectory === 'Images'){
+                    // your code
+                    e.cancel = true;
+                }                
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import FileManager from 'devextreme-react/file-manager';
+
+    const App = () => {
+        const onItemMoving = (e) => {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            }           
+        };
+
+        return (
+            <FileManager ...
+                onItemMoving={onItemMoving} />            
+        );
+    }
+
+    export default App;
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ID("file-manager")
+        // ...
+        .OnItemMoving("fm_itemMoving_handler")
+    )
+    <script>
+        function fm_itemMoving_handler(e) {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            } 
+        }
+    </script>
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().FileManager()
+        .ID("file-manager")
+        // ...
+        .OnItemMoving("fm_itemMoving_handler")
+    )
+    <script>
+        function fm_itemMoving_handler(e) {
+            if (e.destinationDirectory === 'Images'){
+                // your code
+                e.cancel = true;
+            } 
+        }
+    </script>
+
+---
+
+#####See Also#####
+- [itemMoving](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoving)

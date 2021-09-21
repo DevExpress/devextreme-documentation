@@ -8323,6 +8323,11 @@
     "dxPopoverOptions.resizeEnabled": {
       "vue": "resize-enabled"
     },
+    "dxPopoverOptions.restorePosition": {
+      "angular": "dxo-restore-position",
+      "react": "RestorePosition",
+      "vue": "DxRestorePosition"
+    },
     "dxPopoverOptions.showEvent": {
       "angular": "dxo-show-event",
       "react": "ShowEvent",
@@ -8385,6 +8390,11 @@
     },
     "dxPopupOptions.resizeEnabled": {
       "vue": "resize-enabled"
+    },
+    "dxPopupOptions.restorePosition": {
+      "angular": "dxo-restore-position",
+      "react": "RestorePosition",
+      "vue": "DxRestorePosition"
     },
     "dxPopupOptions.showCloseButton": {
       "vue": "show-close-button"

@@ -20,5 +20,5 @@ If you specify the format with an object, it can also contain the **percentPreci
     }
 
 #####See Also#####
-- [customizeText]({currentpath}/#customizeText)
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [customizeText](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label/customizeText.md '{currentpath}/#customizeText')
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

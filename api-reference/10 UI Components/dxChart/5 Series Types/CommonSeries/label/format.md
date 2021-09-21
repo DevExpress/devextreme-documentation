@@ -20,5 +20,5 @@ If you specify the format with an object and apply it to a full-stacked-like ser
     }
 
 #####See Also#####
-- [customizeText]({currentpath}/#customizeText)
-- [Value Formatting](/Documentation/Guide/Common/Value_Formatting/)
+- [customizeText](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/customizeText.md '{currentpath}/#customizeText')
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

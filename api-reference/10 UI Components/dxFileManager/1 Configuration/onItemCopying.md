@@ -17,7 +17,7 @@ Allows you to cancel the file or folder copy process.
 The UI component's instance.
 
 ##### field(e.destinationDirectory): FileSystemItem
-The directory where the file or folder is copied to.
+The directory where the file or folder is being copied to.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "component" }

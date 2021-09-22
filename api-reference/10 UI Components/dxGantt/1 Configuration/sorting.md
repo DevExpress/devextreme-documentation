@@ -5,7 +5,7 @@ inheritsType: dxGanttSorting
 ---
 ---
 ##### shortDescription
-Configures sorting settings.
+Configures sort settings.
 
 ---
 
@@ -13,7 +13,7 @@ Configures sorting settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/"
 }
 
-Users can sort Gantt data by a single or multiple columns. Use the [mode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode) option to specify the sort mode. 
+Users can sort Gantt data by a single or multiple columns. Use the [mode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode) option to specify sort mode. 
 
 - **Single Mode**. Click a column header to sort data by this column. Subsequent clicks on the same header reverse the sort order.
 
@@ -25,7 +25,7 @@ Users can sort Gantt data by a single or multiple columns. Use the [mode](/Docum
 
 [note] To disable sorting for a particular column, set the column’s **allowSorting** option to **false**.
 
-To clear sorting for a column, click Ctrl and the column header. You can also use the column header’s context menu to specify the column’s sort settings and clear sorting. Use the [ascendingText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#ascendingText), [descendingText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#descendingText) and the [clearText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#clearText) options to specify texts for the corresponding context menu items.
+To clear sorting for a column, hold Ctrl and click the column header. You can also use the column header’s context menu to specify the column’s sort settings and clear sorting. Use the [ascendingText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#ascendingText), [descendingText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#descendingText), and the [clearText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#clearText) options to specify text for the corresponding context menu items.
 
 ![DevExtreme Gantt - Sorting](/images/Gantt/sorting-context-menu.png)
 

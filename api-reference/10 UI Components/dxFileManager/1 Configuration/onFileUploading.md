@@ -26,7 +26,7 @@ The directory where a file is uploaded to.
 #include filemanager-error-codes
 
 ##### field(e.errorText): String
-The error message.
+Allows you to specify the error message.
 
 ##### field(e.fileData): File
 The file to be uploaded.

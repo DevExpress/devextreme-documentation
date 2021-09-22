@@ -26,7 +26,7 @@ The directory where the file or folder is being copied to.
 #include filemanager-error-codes
 
 ##### field(e.errorText): String
-The error message.
+Allows you to specify the error message.
 
 ##### field(e.item): FileSystemItem
 The file or folder to be copied.

@@ -20,7 +20,7 @@ The UI component's instance.
 #include filemanager-error-codes
 
 ##### field(e.errorText): String
-The error message.
+Allows you to specify the error message.
 
 ##### field(e.fileSystemItem): FileSystemItem
 The processed file or directory.

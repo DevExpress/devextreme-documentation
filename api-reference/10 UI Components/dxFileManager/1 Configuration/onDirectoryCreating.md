@@ -23,7 +23,7 @@ The UI component's instance.
 #include filemanager-error-codes
 
 ##### field(e.errorText): String
-The error message.
+Allows you to specify the error message.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

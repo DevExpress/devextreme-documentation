@@ -5,7 +5,7 @@ export: PdfExportGanttProps
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Properties that you can pass as a parameter to the [exportGantt(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method from the [pdfExporter](/api-reference/50%20Common/utils/pdfExporter '/Documentation/ApiReference/Common/Utils/pdfExporter/') module.
+
 
 ---
-<!-- Description goes here -->

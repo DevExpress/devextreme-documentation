@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to use horizontal orientation for the document.
 
 ---
-<!-- Description goes here -->

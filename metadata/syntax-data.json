@@ -5638,6 +5638,47 @@
       "react": "DxGanttContextMenuItem",
       "vue": "DxDxGanttContextMenuItem"
     },
+    "dxGanttFilterRow": {
+      "angular": "dxo-dx-gantt-filter-row",
+      "react": "DxGanttFilterRow",
+      "vue": "DxDxGanttFilterRow"
+    },
+    "dxGanttFilterRow.betweenEndText": {
+      "vue": "between-end-text"
+    },
+    "dxGanttFilterRow.betweenStartText": {
+      "vue": "between-start-text"
+    },
+    "dxGanttFilterRow.operationDescriptions": {
+      "angular": "dxo-operation-descriptions",
+      "react": "OperationDescriptions",
+      "vue": "DxOperationDescriptions"
+    },
+    "dxGanttFilterRow.resetOperationText": {
+      "vue": "reset-operation-text"
+    },
+    "dxGanttFilterRow.showAllText": {
+      "vue": "show-all-text"
+    },
+    "dxGanttFilterRow.showOperationChooser": {
+      "vue": "show-operation-chooser"
+    },
+    "dxGanttHeaderFilter": {
+      "angular": "dxo-dx-gantt-header-filter",
+      "react": "DxGanttHeaderFilter",
+      "vue": "DxDxGanttHeaderFilter"
+    },
+    "dxGanttHeaderFilter.allowSearch": {
+      "vue": "allow-search"
+    },
+    "dxGanttHeaderFilter.searchTimeout": {
+      "vue": "search-timeout"
+    },
+    "dxGanttHeaderFilter.texts": {
+      "angular": "dxo-texts",
+      "react": "Texts",
+      "vue": "DxTexts"
+    },
     "dxGanttOptions.allowSelection": {
       "vue": "allow-selection"
     },
@@ -5706,8 +5747,18 @@
     "dxGanttOptions.endDateRange": {
       "vue": "end-date-range"
     },
+    "dxGanttOptions.filterRow": {
+      "angular": "dxo-filter-row",
+      "react": "FilterRow",
+      "vue": "DxFilterRow"
+    },
     "dxGanttOptions.firstDayOfWeek": {
       "vue": "first-day-of-week"
+    },
+    "dxGanttOptions.headerFilter": {
+      "angular": "dxo-header-filter",
+      "react": "HeaderFilter",
+      "vue": "DxHeaderFilter"
     },
     "dxGanttOptions.onContextMenuPreparing": {
       "vue": "@context-menu-preparing"
@@ -8323,6 +8374,11 @@
     "dxPopoverOptions.resizeEnabled": {
       "vue": "resize-enabled"
     },
+    "dxPopoverOptions.restorePosition": {
+      "angular": "dxo-restore-position",
+      "react": "RestorePosition",
+      "vue": "DxRestorePosition"
+    },
     "dxPopoverOptions.showEvent": {
       "angular": "dxo-show-event",
       "react": "ShowEvent",
@@ -8385,6 +8441,11 @@
     },
     "dxPopupOptions.resizeEnabled": {
       "vue": "resize-enabled"
+    },
+    "dxPopupOptions.restorePosition": {
+      "angular": "dxo-restore-position",
+      "react": "RestorePosition",
+      "vue": "DxRestorePosition"
     },
     "dxPopupOptions.showCloseButton": {
       "vue": "show-close-button"
@@ -9981,6 +10042,9 @@
     },
     "dxTagBoxOptions.selectAllMode": {
       "vue": "select-all-mode"
+    },
+    "dxTagBoxOptions.selectAllText": {
+      "vue": "select-all-text"
     },
     "dxTagBoxOptions.selectedItem": {
       "vue": "selected-item"

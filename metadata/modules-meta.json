@@ -440,6 +440,10 @@
     "ui/gantt": {
       "default": {},
       "dxGanttContextMenu": {},
+      "dxGanttFilterRow": {},
+      "dxGanttFilterRowOperationDescriptions": {},
+      "dxGanttHeaderFilter": {},
+      "dxGanttHeaderFilterTexts": {},
       "dxGanttSorting": {},
       "dxGanttStripLine": {},
       "dxGanttToolbar": {}

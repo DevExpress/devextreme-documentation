@@ -176,4 +176,4 @@ The parent directory.
 ---
 
 #####See Also#####
-- [directoryCreated](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#directoryCreated)
+- [directoryCreated](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/directoryCreated.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#directoryCreated')

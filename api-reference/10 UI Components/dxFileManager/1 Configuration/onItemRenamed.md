@@ -176,4 +176,4 @@ The renamed file or folder.
 ---
 
 #####See Also#####
-- [itemRenamed](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemRenamed)
+- [itemRenamed](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemRenamed.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemRenamed')

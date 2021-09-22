@@ -151,4 +151,4 @@ Select a file/folder and click the **Delete** context menu or toolbar item to de
 ---
 
 #####See Also#####
-- [itemDeleting](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleting)
+- [itemDeleting](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleting.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleting')

@@ -182,4 +182,4 @@ The moved file or folder.
 ---
 
 #####See Also#####
-- [itemMoved](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoved)
+- [itemMoved](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemMoved.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoved')

@@ -152,4 +152,4 @@ Select a file and click the **Download** context menu or toolbar item to downloa
 ---
 
 #####See Also#####
-- [itemDownloading](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDownloading)
+- [itemDownloading](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDownloading.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDownloading')

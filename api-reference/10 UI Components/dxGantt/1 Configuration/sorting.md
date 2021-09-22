@@ -19,11 +19,11 @@ Users can sort Gantt data by a single or multiple columns. Use the [mode](/Docum
 
     ![DevExtreme Gantt - Sorting](/images/Gantt/sorting-single.png)
 
-- **Multiple Mode**. Hold Shift and click a column header to sort data by multiple columns. Subsequent clicks on the same header reverse the sort order and clear sorting for the column. Set the [showSortIndexes](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#showSortIndexes) option to **true** to show a column sort index within the header.
+- **Multiple Mode**. Hold Shift and click column headers to sort data by multiple columns. Subsequent clicks on the same header with the Shift key pressed reverse the column's sort order. Set the [showSortIndexes](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#showSortIndexes) option to **true** to show a column sort index within the header.
 
     ![DevExtreme Gantt - Sorting](/images/Gantt/sorting-multiple.png)
 
-[note] To disable sorting for a particular column, set the column’s **allowSorting** option to **false**.
+To disable sorting for a particular column, set the column’s **allowSorting** option to **false**.
 
 To clear sorting for a column, hold Ctrl and click the column header. You can also use the column header’s context menu to specify the column’s sort settings and clear sorting. Use the [ascendingText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#ascendingText), [descendingText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#descendingText), and the [clearText](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#clearText) options to specify text for the corresponding context menu items.
 

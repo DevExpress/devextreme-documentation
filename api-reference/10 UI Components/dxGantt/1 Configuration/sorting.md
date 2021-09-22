@@ -13,13 +13,13 @@ Configures sort settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/"
 }
 
-Users can sort Gantt data by a single or multiple columns. Use the [mode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode) option to specify sort mode. 
+Users can sort Gantt data by a single or multiple columns. Use the [mode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode) option to specify the sort mode. 
 
 - **Single Mode**. Click a column header to sort data by this column. Subsequent clicks on the same header reverse the sort order.
 
     ![DevExtreme Gantt - Sorting](/images/Gantt/sorting-single.png)
 
-- **Multiple Mode**. Hold Shift and click column headers to sort data by multiple columns. Subsequent clicks on the same header with the Shift key pressed reverse the column's sort order. Set the [showSortIndexes](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#showSortIndexes) option to **true** to show a column sort index within the header.
+- **Multiple Mode**. Hold Shift and click column headers to sort data by multiple columns. Subsequent clicks on the same header with the Shift key pressed reverse the column's sort order. Set the [showSortIndexes](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#showSortIndexes) option to **true** to show the column sort index in the header.
 
     ![DevExtreme Gantt - Sorting](/images/Gantt/sorting-multiple.png)
 

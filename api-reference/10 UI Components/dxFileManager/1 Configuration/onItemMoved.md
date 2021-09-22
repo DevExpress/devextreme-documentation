@@ -26,7 +26,7 @@ The path to the moved file or folder.
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentDirectory): FileSystemItem
-The name of the parent directory.
+The parent directory.
 
 ##### field(e.sourceItem): FileSystemItem
 The moved file or folder.
@@ -41,7 +41,7 @@ The moved file or folder.
         $("#fileManagerContainer").dxFileManager({
             // ...
             onItemMoved: function(e) {
-                if (e.parentDirectory === 'Images'){
+                if (e.parentDirectory.name === 'Images'){
                     // your code
                 } 
             }
@@ -67,7 +67,7 @@ The moved file or folder.
 
     export class AppComponent {
         onItemMoved(e){
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }
@@ -112,7 +112,7 @@ The moved file or folder.
             },
             methods: {
                 onItemMoved(e) {
-                    if (e.parentDirectory === 'Images'){
+                    if (e.parentDirectory.name === 'Images'){
                         // your code
                     } 
                 }
@@ -133,7 +133,7 @@ The moved file or folder.
 
     const App = () => {
         const onItemMoved = (e) => {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         };
@@ -157,7 +157,7 @@ The moved file or folder.
 
     <script>
         function onItemMoved(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }
@@ -173,7 +173,7 @@ The moved file or folder.
 
     <script>
         function onItemMoved(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }

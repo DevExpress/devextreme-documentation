@@ -29,7 +29,7 @@ The directory where the file or folder is copied to.
 The error message.
 
 ##### field(e.item): FileSystemItem
-The copied file or folder.
+The file or folder to be copied.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

@@ -29,7 +29,7 @@ The directory where a file is moved to.
 The error message.
 
 ##### field(e.item): FileSystemItem
-The moved file or folder.
+The file or folder to be moved.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

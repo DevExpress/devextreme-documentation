@@ -29,10 +29,10 @@ The error message.
 Model data. Available only if you use Knockout.
 
 ##### field(e.name): String
-The name of the created directory.
+The name of the directory.
 
 ##### field(e.parentDirectory): FileSystemItem
-The name of the parent directory.
+The parent directory.
 
 ---
 
@@ -49,7 +49,7 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
         $("#file-manager").dxFileManager({
             // ...
             onDirectoryCreating: function (e) {
-                if (e.parentDirectory === 'Images'){
+                if (e.parentDirectory.name === 'Images'){
                     // your code
                     e.cancel = true;
                 }
@@ -64,7 +64,7 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
     // ...
     export class AppComponent {
         onDirectoryCreating(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
                 e.cancel = true;
             }
@@ -104,7 +104,7 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
         },
         methods: {
             onDirectoryCreating(e) {
-                if (e.parentDirectory === 'Images'){
+                if (e.parentDirectory.name === 'Images'){
                     // your code
                     e.cancel = true;
                 }                
@@ -121,7 +121,7 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
 
     const App = () => {
         const onDirectoryCreating = (e) => {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
                 e.cancel = true;
             }           
@@ -145,7 +145,7 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
     )
     <script>
         function fm_directoryCreating_handler(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
                 e.cancel = true;
             } 
@@ -162,7 +162,7 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
     )
     <script>
         function fm_directoryCreating_handler(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
                 e.cancel = true;
             } 

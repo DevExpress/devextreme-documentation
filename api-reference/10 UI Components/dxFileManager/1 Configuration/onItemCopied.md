@@ -26,7 +26,7 @@ The path to the copied file or folder.
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentDirectory): FileSystemItem
-The name of the parent directory.
+The parent directory.
 
 ##### field(e.sourceItem): FileSystemItem
 The copied file or folder.
@@ -41,7 +41,7 @@ The copied file or folder.
         $("#fileManagerContainer").dxFileManager({
             // ...
             onItemCopied: function(e) {
-                if (e.parentDirectory === 'Images'){
+                if (e.parentDirectory.name === 'Images'){
                     // your code
                 } 
             }
@@ -67,7 +67,7 @@ The copied file or folder.
 
     export class AppComponent {
         onItemCopied(e){
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }
@@ -112,7 +112,7 @@ The copied file or folder.
             },
             methods: {
                 onItemCopied(e) {
-                    if (e.parentDirectory === 'Images'){
+                    if (e.parentDirectory.name === 'Images'){
                         // your code
                     } 
                 }
@@ -133,7 +133,7 @@ The copied file or folder.
 
     const App = () => {
         const onItemCopied = (e) => {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         };
@@ -157,7 +157,7 @@ The copied file or folder.
 
     <script>
         function onItemCopied(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }
@@ -173,7 +173,7 @@ The copied file or folder.
 
     <script>
         function onItemCopied(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }

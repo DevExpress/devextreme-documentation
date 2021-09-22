@@ -29,7 +29,7 @@ The directory where a file is uploaded to.
 The error message.
 
 ##### field(e.fileData): File
-The uploaded file.
+The file to be uploaded.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

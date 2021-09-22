@@ -23,7 +23,7 @@ The uploaded file.
 Model data. Available only if you use Knockout.
 
 ##### field(e.parentDirectory): FileSystemItem
-The name of the parent directory.
+The parent directory.
 
 ---
 ---
@@ -35,7 +35,7 @@ The name of the parent directory.
         $("#fileManagerContainer").dxFileManager({
             // ...
             onFileUploaded: function(e) {
-                if (e.parentDirectory === 'Images'){
+                if (e.parentDirectory.name === 'Images'){
                     // your code
                 } 
             }
@@ -61,7 +61,7 @@ The name of the parent directory.
 
     export class AppComponent {
         onFileUploaded(e){
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }
@@ -106,7 +106,7 @@ The name of the parent directory.
             },
             methods: {
                 onFileUploaded(e) {
-                    if (e.parentDirectory === 'Images'){
+                    if (e.parentDirectory.name === 'Images'){
                         // your code
                     } 
                 }
@@ -127,7 +127,7 @@ The name of the parent directory.
 
     const App = () => {
         const onFileUploaded = (e) => {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         };
@@ -151,7 +151,7 @@ The name of the parent directory.
 
     <script>
         function onFileUploaded(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }
@@ -167,7 +167,7 @@ The name of the parent directory.
 
     <script>
         function onFileUploaded(e) {
-            if (e.parentDirectory === 'Images'){
+            if (e.parentDirectory.name === 'Images'){
                 // your code
             } 
         }

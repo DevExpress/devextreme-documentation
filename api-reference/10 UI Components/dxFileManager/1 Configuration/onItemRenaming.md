@@ -26,7 +26,7 @@ The UI component's instance.
 The error message.
 
 ##### field(e.item): FileSystemItem
-The renamed file or folder.
+The file or folder to be renamed.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

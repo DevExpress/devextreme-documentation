@@ -26,7 +26,7 @@ The UI component's instance.
 The error message.
 
 ##### field(e.item): FileSystemItem
-The downloaded file.
+The file to be downloaded.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

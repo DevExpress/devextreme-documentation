@@ -82,7 +82,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
 
     You can also specify any other [Chart properties](/Documentation/ApiReference/UI_Components/dxChart/Configuration/) in this object, except [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource).
 
-- **customizeSeries** accepts two arguments: 
+- **customizeSeries** 
 
         <!--JavaScript-->customizeSeries: function (seriesName, seriesOptions) {
             // Change series properties here
@@ -111,7 +111,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
 
     You can also specify any other [series properties]/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) in this object, except [seriesTemplate](Documentation/ApiReference/UI_Components/dxChart/Configuration/seriesTemplate/).
 
-- **processCell** accepts a single argument:
+- **processCell**
 
         <!--JavaScript-->processCell: function (cellData) {
             // Process data here

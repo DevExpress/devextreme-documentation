@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Use the **Delete** context menu or toolbar item to delete a file/folder. The FileManager component displays a delete confirmation message when you want to delete the file/folder. The **onItemCopying** function is executed when you click  **Delete** in the dialog.
+Select a file/folder and click the **Delete** context menu or toolbar item to delete this file/folder. The FileManager component displays a delete confirmation message. The **onItemCopying** function is executed when you click  **Delete** in the dialog.
 
 ![DevExtreme File Manager - Copy File or Folder](/images/FileManager/delete-confirmation-dialog.png)
 

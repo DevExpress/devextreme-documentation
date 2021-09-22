@@ -34,7 +34,7 @@ Model data. Available only if you use Knockout.
 ---
 ---
 
-Use the **Download** context menu or toolbar item to download a file. The FileManager component displays the "Save As" dialog to download the file. The **onItemDownloading** function is executed when you select a destination folder and click  **Save** in the dialog.
+Select a file and click the **Download** context menu or toolbar item to download this file. The FileManager component displays the "Save As" dialog to select a directory where to download the file. The **onItemDownloading** function is executed when you click  **Save** in the dialog.
 
 ![DevExtreme File Manager - Copy File or Folder](/images/FileManager/delete-confirmation-dialog.png)
 

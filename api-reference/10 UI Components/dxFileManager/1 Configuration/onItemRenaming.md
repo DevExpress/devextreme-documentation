@@ -36,7 +36,7 @@ The new name of the file or folder.
 
 ---
 ---
-Select a file/folder and click the **Rename** context menu or toolbar item to invoke the "Rename" dialog. The component executes the **onItemRenaming** function when you input new file/folder name and click **Save** in the dialog.
+Select a file/folder and click the **Rename** context menu or toolbar item to invoke the "Rename" dialog. The component executes the **onItemRenaming** function when you enter a new file/folder name and click **Save** in the dialog.
 
 ![DevExtreme File Manager - Move File or Folder](/images/FileManager/rename-dialog.png)
 

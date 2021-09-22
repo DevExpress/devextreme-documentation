@@ -17,7 +17,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.itemName): String
-The name of the file or folder.
+The name of the copied file or folder.
 
 ##### field(e.itemPath): String
 The path to the copied file or folder.

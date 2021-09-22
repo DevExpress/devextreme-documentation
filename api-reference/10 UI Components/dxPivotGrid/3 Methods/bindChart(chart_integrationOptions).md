@@ -80,6 +80,8 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
         </tr>
     </table>
 
+    You can also specify any properties (except [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource)) listed in the Chart's [Configuration]/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) section in this object.
+
 - **customizeSeries** accepts two arguments: 
 
         <!--JavaScript-->customizeSeries: function (seriesName, seriesOptions) {
@@ -106,6 +108,8 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
             <td>The name of the pane the series occupies. Has a value only when the chart has multiple panes.</td>
         </tr>
     </table>
+
+    You can also specify any properties (except [seriesTemplate](Documentation/ApiReference/UI_Components/dxChart/Configuration/seriesTemplate/)) listed in the [series]/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) section in this object.
 
 - **processCell** accepts a single argument:
 

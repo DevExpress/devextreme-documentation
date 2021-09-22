@@ -5,7 +5,6 @@ default: 'Clear Sorting'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the context menu item that clears sorting settings for a column.
 
 ---
-<!-- Description goes here -->

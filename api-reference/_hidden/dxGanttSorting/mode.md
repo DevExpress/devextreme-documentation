@@ -6,7 +6,6 @@ default: 'single'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies sort mode.
 
 ---
-<!-- Description goes here -->

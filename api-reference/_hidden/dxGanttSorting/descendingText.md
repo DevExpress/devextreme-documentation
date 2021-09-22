@@ -5,7 +5,6 @@ default: 'Sort Descending'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the context menu item that sets a descending sort order in a column.
 
 ---
-<!-- Description goes here -->

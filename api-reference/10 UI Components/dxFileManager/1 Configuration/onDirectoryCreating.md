@@ -36,7 +36,7 @@ The name of the parent directory.
 
 ---
 
-Click the **Create Directory** context menu or toolbar item to invoke the "New Directory" dialog. The component executes the **onDirectoryCreating** function when you enter a directory name and click **Create** in the dialog.
+Use the **Create Directory** context menu or toolbar item to invoke the "New Directory" dialog. The component executes the **onDirectoryCreating** function when you enter a directory name and click **Create** in the dialog.
 
 ![DevExtreme File Manager - Create Directory](/images/FileManager/create-directory-dialog.png)
 

@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> instance. This setting is required.
 
 ---
-<!-- Description goes here -->

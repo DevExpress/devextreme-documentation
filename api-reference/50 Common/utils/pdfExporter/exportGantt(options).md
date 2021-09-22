@@ -5,10 +5,10 @@ export: exportGantt
 ---
 ---
 ##### shortDescription
-Exports grid data to a PDF file.
+Exports Gantt data to a PDF file.
 
 ##### return: Promise<any>
-A Promise that is resolved after the Gantt chart is exported. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that is resolved after the Gantt data is exported. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
 
 ##### param(options): PdfExportGanttProps
 Export settings.
@@ -17,7 +17,7 @@ Export settings.
 
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
-You can call this method at any point in your application. In this example, we call this method in a standalone toolbar item's [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
+You can call this method at any point in your application. In this example, this method is called in a standalone toolbar item's [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
 
 ---
 ##### jQuery
@@ -327,4 +327,3 @@ You can call this method at any point in your application. In this example, we c
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
 }
-

@@ -4,13 +4,12 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that creates a PDF document. 
 
 ##### param(options): Object
-<!-- Description goes here -->
+PDF document settings.
 
 ##### return: Object
-<!-- Description goes here -->
+The PDF document.
 
 ---
-<!-- Description goes here -->

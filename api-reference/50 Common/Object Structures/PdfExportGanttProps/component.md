@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A Gantt instance. This setting is required.
 
 ---
-<!-- Description goes here -->

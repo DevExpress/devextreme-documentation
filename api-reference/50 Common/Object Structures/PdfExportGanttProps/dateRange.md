@@ -5,7 +5,6 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the date range for which to export tasks.
 
 ---
-<!-- Description goes here -->

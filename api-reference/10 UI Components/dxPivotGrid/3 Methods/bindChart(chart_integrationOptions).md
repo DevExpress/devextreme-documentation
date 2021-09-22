@@ -51,9 +51,9 @@ Accepts one of the following values.
 - *"series"* - data fields go to the chart series.
 
 ---
-The **customizeChart**, **customizeSeries** and **processCell** fields of the **integrationOptions** objects are functions. They accept arguments whose structure is described below.
+The **customizeChart**, **customizeSeries**, and **processCell** fields of the **integrationOptions** object are functions. They accept arguments whose structure is described below.
 
-- **customizeChart** accepts a single argument:
+- **customizeChart**
 
         <!--JavaScript-->customizeChart: function (chartOptions) {
             // Change chart properties here
@@ -80,7 +80,7 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
         </tr>
     </table>
 
-    You can also specify any properties (except [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource)) listed in the Chart's [Configuration]/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) section in this object.
+    You can also specify any other [Chart properties](/Documentation/ApiReference/UI_Components/dxChart/Configuration/) in this object, except [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource).
 
 - **customizeSeries** accepts two arguments: 
 
@@ -100,7 +100,7 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
         <tr>
             <td><b>axis</b></td>
             <td>String</td>
-            <td>The name of the axis the series occupies. Has a value only when the chart has multiple axes.</td>
+            <td>The name of the axis to which the series belongs. Has a value only when the chart has multiple axes.</td>
         </tr>
         <tr>
             <td><b>pane</b></td>
@@ -109,7 +109,7 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
         </tr>
     </table>
 
-    You can also specify any properties (except [seriesTemplate](Documentation/ApiReference/UI_Components/dxChart/Configuration/seriesTemplate/)) listed in the [series]/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) section in this object.
+    You can also specify any other [series properties]/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) in this object, except [seriesTemplate](Documentation/ApiReference/UI_Components/dxChart/Configuration/seriesTemplate/).
 
 - **processCell** accepts a single argument:
 
@@ -134,7 +134,7 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
         <tr>
             <td><b>rowPathFormatted</b></td>
             <td>Array</td>
-            <td>Same as **rowPath**, but with <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#format" target="_blank">format</a> and <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText" target="_blank">customizeText</a> applied.</td>
+            <td>Same as <b>rowPath</b>, but with <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#format" target="_blank">format</a> and <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText" target="_blank">customizeText</a> applied.</td>
         </tr>
         <tr>
             <td><b>rowFields</b></td>
@@ -154,7 +154,7 @@ The **customizeChart**, **customizeSeries** and **processCell** fields of the **
         <tr>
             <td><b>columnPathFormatted</b></td>
             <td>Array</td>
-            <td>Same as **columnPath**, but with <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#format" target="_blank">format</a> and <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText" target="_blank">customizeText</a> applied.</td>
+            <td>Same as <b>columnPath</b>, but with <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#format" target="_blank">format</a> and <a href="/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#customizeText" target="_blank">customizeText</a> applied.</td>
         </tr>
         <tr>
             <td><b>columnFields</b></td>

@@ -27,4 +27,4 @@ The data of the items whose selection has been canceled.
 
 ---
 
-When [applyValueMode]({basewidgetpath}/Configuration/#applyValueMode) is *"useButtons"*, the **onSelectionChanged** handler is executed only when users click the `Ok` button.
+[note] When [applyValueMode]({basewidgetpath}/Configuration/#applyValueMode) is *"useButtons"*, the **onSelectionChanged** handler is executed only when users click the OK button.

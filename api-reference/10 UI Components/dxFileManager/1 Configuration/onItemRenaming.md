@@ -172,4 +172,4 @@ Select a file/folder and click the **Rename** context menu or toolbar item to in
 ---
 
 #####See Also#####
-- [itemRenaming](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemRenaming)
+- [itemRenaming](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemRenaming.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemRenaming')

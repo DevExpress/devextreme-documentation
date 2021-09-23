@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-A function that creates a PDF document. 
+A function that creates a PDF document.
 
 ##### param(options): Object
 PDF document settings.

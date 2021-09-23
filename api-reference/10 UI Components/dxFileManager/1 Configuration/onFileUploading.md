@@ -172,4 +172,4 @@ Use the **Upload Files** context menu or toolbar item to invoke the "Open" dialo
 ---
 
 #####See Also#####
-- [fileUploading](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploading)
+- [fileUploading](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/fileUploading.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploading')

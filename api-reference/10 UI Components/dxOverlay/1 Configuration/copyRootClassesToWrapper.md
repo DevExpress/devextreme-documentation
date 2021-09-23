@@ -2,6 +2,7 @@
 id: dxOverlay.Options.copyRootClassesToWrapper
 type: Boolean
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

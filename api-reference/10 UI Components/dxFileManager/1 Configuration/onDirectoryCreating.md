@@ -172,4 +172,4 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
 ---
 
 #####See Also#####
-- [directoryCreating](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#directoryCreating)
+- [directoryCreating](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/directoryCreating.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#directoryCreating')

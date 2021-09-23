@@ -174,4 +174,4 @@ Select a file/folder and click the **Copy to** context menu or toolbar item to i
 ---
 
 #####See Also#####
-- [itemCopying](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopying)
+- [itemCopying](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemCopying.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopying')

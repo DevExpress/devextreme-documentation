@@ -161,4 +161,4 @@ Model data. Available only if you use Knockout.
 ---
 
 #####See Also#####
-- [itemDeleted](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleted)
+- [itemDeleted](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleted.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleted')

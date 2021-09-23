@@ -176,4 +176,4 @@ The parent directory.
 ---
 
 #####See Also#####
-- [fileUploaded](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploaded)
+- [fileUploaded](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/fileUploaded.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploaded')

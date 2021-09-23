@@ -171,4 +171,4 @@ Select a file/folder and click the **Move to** context menu or toolbar item to i
 ---
 
 #####See Also#####
-- [itemMoving](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoving)
+- [itemMoving](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemMoving.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoving')

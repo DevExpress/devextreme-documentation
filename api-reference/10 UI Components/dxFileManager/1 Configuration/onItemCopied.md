@@ -182,4 +182,4 @@ The copied file or folder.
 ---
 
 #####See Also#####
-- [itemCopied](/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopied)
+- [itemCopied](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemCopied.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopied')

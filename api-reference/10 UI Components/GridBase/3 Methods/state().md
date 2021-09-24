@@ -18,7 +18,7 @@ The following example shows how to save the UI component state in the local stor
     $(function () {
         const {widgetName} = $("#{widgetName}Container").dx{WidgetName}({ 
             // ...
-        }).dx{WidgetName};
+        }).dx{WidgetName}("instance");
         $("#save").dxButton({
             text: "Save State",
             onClick: function() {

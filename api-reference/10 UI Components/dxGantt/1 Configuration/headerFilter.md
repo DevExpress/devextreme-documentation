@@ -1,6 +1,7 @@
 ---
 id: dxGantt.Options.headerFilter
 type: dxGanttHeaderFilter
+inheritsType: dxGanttHeaderFilter
 ---
 ---
 ##### shortDescription

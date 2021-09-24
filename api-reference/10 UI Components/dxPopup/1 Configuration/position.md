@@ -6,6 +6,6 @@ type: String | PositionConfig | function()
 <!-- %fullDescription% -->
 
 #####See Also#####
-- [restorePostion]({basewidgetpath}/Configuration/#restorePosition) - allows the {WidgetName} to persist the position when users reopen it.
+- [restorePostion]({basewidgetpath}/Configuration/#restorePosition)
 
 <!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\position.md' -->

@@ -20,8 +20,8 @@ Please review the following notes:
 
         <!-- tab: index.js -->
         const dataGrid = $("#dataGridContainer").dxDataGrid("instance");
-        const DataSource = dataGrid.getDataSource();
-        const recordCount = DataSource.items().length;
+        const dataSource = dataGrid.getDataSource();
+        const recordCount = dataSource.items().length;
 
     ##### Angular
 
@@ -39,8 +39,8 @@ Please review the following notes:
             // Prior to Angular 8
             // @ViewChild('dataGridRef') dataGrid: DxDataGridComponent;
             getRecordCount() {
-                const DataSource = this.dataGrid.instance.getDataSource();
-                return DataSource.items().length;
+                const dataSource = this.dataGrid.instance.getDataSource();
+                return dataSource.items().length;
             }
         }
 
@@ -102,8 +102,8 @@ Please review the following notes:
             },
             methods: {
                 getRecordCount() {
-                    const DataSource = this.dataGrid.getDataSource();
-                    return DataSource.items().length;
+                    const dataSource = this.dataGrid.getDataSource();
+                    return dataSource.items().length;
                 }
             }
         }
@@ -120,8 +120,8 @@ Please review the following notes:
         export default function App() {
             const dataGrid = useRef(null);
             const getRecordCount = useCallback(() => {
-                const DataSource = dataGrid.current.instance.getDataSource();
-                return DataSource.items().length;
+                const dataSource = dataGrid.current.instance.getDataSource();
+                return dataSource.items().length;
             }, []);
             return (
                 <DataGrid ref={dataGrid}>

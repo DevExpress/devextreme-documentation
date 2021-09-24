@@ -51,8 +51,7 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
     import { Component } from '@angular/core';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
-        #include angular-component-decorator
-
+    #include angular-component-decorator
     export class AppComponent {
         remoteFileProvider: RemoteFileSystemProvider;
     

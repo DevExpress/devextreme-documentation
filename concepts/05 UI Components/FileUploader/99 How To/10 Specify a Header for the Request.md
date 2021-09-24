@@ -38,22 +38,7 @@ Use the [uploadHeaders](/api-reference/10%20UI%20Components/dxFileUploader/1%20C
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFileUploaderModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [AppComponent],
-        imports: [
-            BrowserModule,
-            DxFileUploaderModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

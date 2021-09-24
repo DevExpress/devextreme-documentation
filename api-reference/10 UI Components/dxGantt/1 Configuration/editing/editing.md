@@ -69,20 +69,7 @@ The UI component allows users to add, modify and delete tasks, resources and dep
     }    
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxGanttModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxGanttModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

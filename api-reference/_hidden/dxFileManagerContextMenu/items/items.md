@@ -79,19 +79,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            DxFileManagerModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 
@@ -259,19 +247,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            DxFileManagerModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

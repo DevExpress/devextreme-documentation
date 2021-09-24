@@ -50,22 +50,7 @@ The following examples show how to configure the FileUploader for each upload mo
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-        import { DxFileUploaderModule } from 'devextreme-angular';
-        
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxFileUploaderModule
-            ],
-            //...
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 
@@ -188,22 +173,7 @@ The following examples show how to configure the FileUploader for each upload mo
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-        import { DxFileUploaderModule } from 'devextreme-angular';
-        
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxFileUploaderModule
-            ],
-            //...
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 

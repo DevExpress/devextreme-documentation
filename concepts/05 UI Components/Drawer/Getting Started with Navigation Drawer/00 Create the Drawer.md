@@ -70,24 +70,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/d
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from "@angular/platform-browser";
-    import { NgModule } from "@angular/core";
-    import { AppComponent } from "./app.component";
-
-    import { DxDrawerModule } from "devextreme-angular";
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxDrawerModule
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
     <!-- tab: app.component.css -->
     ::ng-deep .dx-overlay-content {

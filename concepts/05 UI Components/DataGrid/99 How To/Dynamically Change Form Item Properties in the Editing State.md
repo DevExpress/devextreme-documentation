@@ -76,24 +76,7 @@ This handler is used to save the key of the row that enters the editing state, a
         }
         
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxDataGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxDataGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 

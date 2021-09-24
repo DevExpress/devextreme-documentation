@@ -41,24 +41,7 @@ This property accepts the name of the data source field that provides values use
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser'; 
-    import { NgModule } from '@angular/core'; 
-    import { AppComponent } from './app.component'; 
-    import { DxDataGridModule } from 'devextreme-angular'; 
-    
-    @NgModule({ 
-        declarations: [ 
-            AppComponent 
-        ], 
-        imports: [ 
-            BrowserModule, 
-            DxDataGridModule 
-        ], 
-        providers: [ ], 
-        bootstrap: [AppComponent] 
-    }) 
-    
-    export class AppModule { }
+    #include angular-app-module-ts
     
 
 ##### Vue
@@ -183,24 +166,7 @@ This property accepts the name of the data source field that provides values use
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser'; 
-    import { NgModule } from '@angular/core'; 
-    import { AppComponent } from './app.component'; 
-    import { DxDataGridModule } from 'devextreme-angular'; 
-    
-    @NgModule({ 
-        declarations: [ 
-            AppComponent 
-        ], 
-        imports: [ 
-            BrowserModule, 
-            DxDataGridModule 
-        ], 
-        providers: [ ], 
-        bootstrap: [AppComponent] 
-    }) 
-    
-    export class AppModule { }
+    #include angular-app-module-ts
     
 
 ##### Vue

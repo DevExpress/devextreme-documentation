@@ -53,24 +53,7 @@ When this property is set to **true**, the following applies:
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { Dx{WidgetName}Module } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                Dx{WidgetName}Module
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 
@@ -197,24 +180,7 @@ When this property is set to **true**, the following applies:
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { Dx{WidgetName}Module } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                Dx{WidgetName}Module
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 

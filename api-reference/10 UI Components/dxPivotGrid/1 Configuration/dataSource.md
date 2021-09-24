@@ -77,24 +77,7 @@ Use one of the following extensions to enable the server to process data accordi
         </dx-pivot-grid>
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxPivotGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxPivotGridModule
-            ],
-            providers: [],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 

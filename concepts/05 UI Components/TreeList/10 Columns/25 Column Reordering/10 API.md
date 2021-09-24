@@ -8,7 +8,7 @@ The [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/c
         $("#treeListContainer").dxTreeList({
             // ...
             customizeColumns: function(columns) {
-                column[2].visibleIndex = 1;
+                columns[2].visibleIndex = 1;
             }
         });
     });
@@ -20,7 +20,7 @@ The [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/c
     // ...
     export class AppComponent {
         customizeColumns (columns) {
-            column[2].visibleIndex = 1;
+            columns[2].visibleIndex = 1;
         }
     }
     @NgModule({
@@ -55,7 +55,7 @@ The [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/c
         },
         methods: {
             customizeColumns(columns) {
-                column[2].visibleIndex = 1;
+                columns[2].visibleIndex = 1;
             }
         }
     }
@@ -69,7 +69,7 @@ The [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/c
     import TreeList from 'devextreme-react/tree-list';
 
     const customizeColumns = (columns) => {
-        column[2].visibleIndex = 1;
+        columns[2].visibleIndex = 1;
     };
 
     export default function App() {

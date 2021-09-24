@@ -62,17 +62,6 @@ To create annotations, assign an array of objects to the **annotations[]** prope
         </svg>
     </dx-polar-chart>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts
 

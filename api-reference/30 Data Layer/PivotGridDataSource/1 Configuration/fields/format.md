@@ -203,7 +203,7 @@ The following code declares a custom group for the `ShippingDate` data field. Th
 
 ##### Angular
 
-        <!-- tab: app.component.ts -->
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 

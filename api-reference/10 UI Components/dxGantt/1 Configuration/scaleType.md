@@ -32,19 +32,6 @@ The **scaleType** property specifies the zoom level for tasks when the Gantt UI 
         <!-- ... -->
     </dx-gantt>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
-    export class AppComponent {
-        // ...      
-    }    
-
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts
 

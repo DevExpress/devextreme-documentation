@@ -45,12 +45,7 @@ Note that the **scrollToDate** method scrolls to a date inside the current scrol
     import { Component, ViewChild } from '@angular/core';
     import { DxGanttComponent } from "devextreme-angular";
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })    
-    
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;
         // Prior to Angular 8

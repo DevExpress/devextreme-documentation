@@ -32,11 +32,7 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         buttonGroupItems = [{
             // ...

@@ -64,7 +64,6 @@ An object that contains information about the error.
         styleUrls: ['./app.component.css'],
         providers: [Service]
     })
-
     export class AppComponent {
         fileItems: FileItem[];
         objectProvider: ObjectFileSystemProvider;

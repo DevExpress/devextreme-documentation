@@ -61,11 +61,7 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
 
     import CustomStore from 'devextreme/data/custom_store';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         customDataSource: CustomStore;
         constructor(private http: HttpClient) {

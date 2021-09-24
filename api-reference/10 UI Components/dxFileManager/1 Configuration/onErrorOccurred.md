@@ -71,12 +71,7 @@ Model data. Available only if you use Knockout.
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         onOccurred(e){
             // your code

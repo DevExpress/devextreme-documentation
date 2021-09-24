@@ -26,20 +26,7 @@ Chunk upload allows large files to be divided into parts called "chunks" and sen
         uploadMode="useButtons" <!-- or "instantly" -->
         uploadUrl="https://mydomain.com/MyUploadService"
         [chunkSize]="400000"> <!-- 400 KB -->>
-    </dx-file-uploader>  
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';    
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
-    export class AppComponent {
-        //...
-    }
+    </dx-file-uploader>
 
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts

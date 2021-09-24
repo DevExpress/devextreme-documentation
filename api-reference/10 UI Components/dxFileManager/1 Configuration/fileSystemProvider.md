@@ -67,12 +67,7 @@ The following example illustrates how to configure an [Object](/api-reference/10
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';    
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         fileSystem = [{
             name: "Documents",

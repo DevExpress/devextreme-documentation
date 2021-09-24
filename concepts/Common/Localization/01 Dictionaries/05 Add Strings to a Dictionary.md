@@ -29,11 +29,7 @@ In the following example, the [loadMessages(messages)](/api-reference/50%20Commo
     import { Component } from '@angular/core';
     import { formatMessage, loadMessages, locale } from 'devextreme/localization';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor() {
             loadMessages({

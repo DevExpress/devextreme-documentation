@@ -30,11 +30,7 @@ When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20
     import { Component, ViewChild } from '@angular/core';
     import { DxDataGridComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild('dataGridRef', { static: false }) dataGrid: DxDataGridComponent;
         // Prior to Angular 8

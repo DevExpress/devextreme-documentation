@@ -57,12 +57,7 @@ If the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Confi
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';    
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         employee = { id: 1, name: "John Heart", position: "CEO", office: 614 };
         uploadUrl = "https://mydomain.com/MyUploadService";
@@ -315,12 +310,7 @@ When the **uploadMode** is *"useForm"*, define the parameters within hidden inpu
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';    
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         employee = { id: 1, name: "John Heart", position: "CEO", office: 614 };
         employeeId: any;

@@ -45,11 +45,7 @@ To access the server from the client, configure the [CustomStore](/api-reference
     import { Component } from '@angular/core';
     import { createStore } from 'devextreme-aspnet-data-nojquery';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         remoteDataSource: any;
 

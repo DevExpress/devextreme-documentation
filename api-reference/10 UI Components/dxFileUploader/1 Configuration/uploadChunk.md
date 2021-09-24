@@ -39,11 +39,7 @@ A Promise that is resolved after the chunk is uploaded. It is a <a href="https:/
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // Uncomment the following lines if the function should be executed in the component's context
         // constructor() {

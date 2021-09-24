@@ -52,11 +52,7 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
     import { Component } from '@angular/core';
     import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor() {
             this.colorizeMap = this.colorizeMap.bind(this);

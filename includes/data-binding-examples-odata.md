@@ -28,11 +28,7 @@
     import 'devextreme/data/odata/store';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         {widgetName}DataSource = new DataSource({
             store: {

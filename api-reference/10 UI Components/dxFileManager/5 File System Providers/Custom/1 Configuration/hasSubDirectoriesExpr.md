@@ -33,12 +33,7 @@ A function or the name of a data source field that provides information on wheth
     import { Component } from '@angular/core';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider'; 
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         fileSystemProvider: CustomFileSystemProvider;
         constructor(http: HttpClient) {

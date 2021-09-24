@@ -55,11 +55,7 @@ To prevent users from setting specific dates, use the [disabledDates](/api-refer
     import { Component } from '@angular/core';
     import { AppService } from './app.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // ...
         holidays: Date[];

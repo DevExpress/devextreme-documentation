@@ -90,11 +90,7 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
    
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // ...
         startEdit(e) {

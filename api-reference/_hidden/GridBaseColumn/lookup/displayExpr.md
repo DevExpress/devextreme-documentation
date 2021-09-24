@@ -56,11 +56,7 @@ Values in a lookup column are sorted by the **valueExpr** field. Implement the c
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         calculateSortValue (data) {
             const column = this as any;

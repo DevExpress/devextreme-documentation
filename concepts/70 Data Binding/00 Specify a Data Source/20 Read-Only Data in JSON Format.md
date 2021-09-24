@@ -22,11 +22,7 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         jsonUrl: String = 'https://jsonplaceholder.typicode.com/posts'
     }
@@ -140,11 +136,7 @@ The following code shows a **CustomStore** configuration in which the **load** f
 
     import CustomStore from 'devextreme/data/custom_store';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         jsonDataSource: CustomStore;
         

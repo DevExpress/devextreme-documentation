@@ -89,11 +89,7 @@ Use the [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuratio
 
     import { DxDiagramModule, DxDiagramComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild(DxDiagramComponent, { static: false }, { static: false }) diagram: DxDiagramComponent;
         // Prior to Angular 8

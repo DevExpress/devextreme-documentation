@@ -35,11 +35,7 @@ The **insertTask** method does not update the following data fields in the data 
     import { Component, ViewChild } from '@angular/core';
     import { DxGanttComponent } from "devextreme-angular";
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })    
+    #include angular-component-decorator    
     
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;

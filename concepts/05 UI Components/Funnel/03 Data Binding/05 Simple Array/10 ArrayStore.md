@@ -35,11 +35,7 @@ If you want to extend the functionality of a JavaScript array, place it into an 
     import { Component } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         fruits = [
             { fruit: 'Apples', count: 10 },
@@ -194,11 +190,7 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
     import { Component } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         fruits = [
             { apples: 10 },

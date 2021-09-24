@@ -32,11 +32,7 @@ If you need to specify this property based on a condition, set the [showClearBut
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         onEditorPreparing(e) {
             if (/* a condition to set the property's value */) {

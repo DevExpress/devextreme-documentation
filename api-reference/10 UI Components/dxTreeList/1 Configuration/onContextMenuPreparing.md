@@ -77,11 +77,7 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         addMenuItems(e) { 
             if (e.target == 'header') {

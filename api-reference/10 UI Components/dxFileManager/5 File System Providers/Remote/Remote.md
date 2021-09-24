@@ -51,12 +51,7 @@ The following code shows how to bind the FileManager to the **Remote** file syst
     import { Component } from '@angular/core';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: 'app/app.component.html',
-        styleUrls: ['app/app.component.css']
-    })  
-    
+    #include angular-component-decorator
     export class AppComponent {
         remoteFileProvider: RemoteFileSystemProvider;
     

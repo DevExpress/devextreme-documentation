@@ -111,11 +111,7 @@ Each list item should navigate to a different view. To implement this, follow th
     <!-- tab: app.component.ts -->
     import { Component } from "@angular/core";
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         navigation: any[] = [
             { id: 1, text: "Inbox", icon: "message", path: "inbox" },

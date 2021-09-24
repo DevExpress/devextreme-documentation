@@ -38,11 +38,7 @@ When this property is set to **true**, the following applies:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             myCustomButtonConfig = {
                 onClick: (e) => {
@@ -163,11 +159,7 @@ When this property is set to **true**, the following applies:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             changeButtonState(e) {
                 if(e.name == 'readOnly') {

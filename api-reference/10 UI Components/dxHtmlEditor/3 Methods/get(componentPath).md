@@ -51,11 +51,7 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
     import { Component, ViewChild, AfterViewInit } from '@angular/core';
     import { DxHtmlEditorComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild(DxHtmlEditorComponent, { static: false }) htmlEditor: DxHtmlEditorComponent;
         // Prior to Angular 8

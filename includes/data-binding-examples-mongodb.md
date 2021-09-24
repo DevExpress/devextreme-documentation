@@ -26,11 +26,7 @@
     import CustomStore from 'devextreme/data/custom_store';
     import { createStore } from "devextreme-aspnet-data-nojquery";
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         store: CustomStore;
         constructor() {

@@ -271,7 +271,6 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
         styleUrls: ['./app.component.css'],
         providers: [Service]
     })
-
     export class AppComponent {
         constructor(service: Service) {
             this.fileMenuOptions = {

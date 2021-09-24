@@ -70,7 +70,6 @@ The Gantt UI component allows you to add default and create custom toolbar items
         styleUrls: ['./app.component.css'],
         providers: [Service]
     })
-
     export class AppComponent {
         constructor(service: Service) {
             this.customButtonOptions = {

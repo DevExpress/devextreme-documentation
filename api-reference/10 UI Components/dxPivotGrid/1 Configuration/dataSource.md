@@ -53,11 +53,7 @@ Use one of the following extensions to enable the server to process data accordi
         import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             store: CustomStore;
             constructor() {

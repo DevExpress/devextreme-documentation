@@ -43,11 +43,7 @@ Use this handler's **editorOptions** parameter to change editor properties. The 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             // ...
             onEditorPreparing(e) {
@@ -196,11 +192,7 @@ Specify **setCellValue** for those columns whose editors should affect other edi
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             // ...
             setCellValue(newData, value) {

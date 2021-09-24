@@ -88,11 +88,7 @@ When you use a custom button template, the [onClick](/api-reference/_hidden/dxDa
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         logMyCommandClick() {
             console.log('My command was clicked');

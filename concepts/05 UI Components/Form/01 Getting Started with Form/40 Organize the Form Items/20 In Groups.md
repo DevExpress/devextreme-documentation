@@ -56,11 +56,7 @@ The following code creates two groups, each occupies a separate column. The resu
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employee = {
             name: 'John Heart',

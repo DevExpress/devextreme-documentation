@@ -90,11 +90,7 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
         
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             // ...
         }
@@ -206,11 +202,7 @@ The following instructions show how to enable and configure client-side export:
         import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             onExporting(e) {
                 const workbook = new Workbook();    

@@ -290,11 +290,7 @@ In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20
     import { Component } from '@angular/core';
     import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor(service: Service) {
             this.colorizeMap = this.colorizeMap.bind(this);

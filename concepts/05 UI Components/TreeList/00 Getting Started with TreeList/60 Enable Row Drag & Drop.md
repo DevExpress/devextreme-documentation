@@ -67,11 +67,7 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     <!-- tab: app.component.ts -->
     // ...
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // ...
         selectedEmployee: Employee;

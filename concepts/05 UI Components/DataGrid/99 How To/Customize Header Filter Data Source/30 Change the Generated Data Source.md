@@ -46,11 +46,7 @@ In the following code, the **postProcess** function adds a custom item to the ge
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         customizeHeaderFilterData(options) {
             options.dataSource.postProcess = (results) => {

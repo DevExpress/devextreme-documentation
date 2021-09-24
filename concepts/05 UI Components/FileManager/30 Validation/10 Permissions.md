@@ -45,11 +45,7 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         allowedFileExtensions: string[];
         

@@ -38,11 +38,7 @@ Stores provide three data modification methods: [insert(values)](/api-reference/
     import { Component } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         dataSource: DataSource;
         constructor() {

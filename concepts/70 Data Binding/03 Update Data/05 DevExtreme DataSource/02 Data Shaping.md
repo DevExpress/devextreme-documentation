@@ -29,11 +29,7 @@ The following code obtains a **DataSource** instance using both approaches and c
         import { Component } from '@angular/core';
         import DataSource from 'devextreme/data/data_source';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             dataSource: DataSource;
             constructor() {
@@ -55,11 +51,7 @@ The following code obtains a **DataSource** instance using both approaches and c
         import { Component } from '@angular/core';
         import { DxDataGridComponent } from 'devextreme-angular';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
             // Prior to Angular 8

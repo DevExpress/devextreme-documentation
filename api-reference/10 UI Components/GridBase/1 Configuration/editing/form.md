@@ -77,18 +77,6 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
         <dxi-column dataField="Skype"></dxi-column>
     </dx-{widget-name}>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts
 

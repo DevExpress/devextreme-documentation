@@ -46,19 +46,6 @@ The **enablePredecessorGap** option allows users to increase/decrease the gap be
         <!-- ... -->
     </dx-gantt>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
-    export class AppComponent {
-        // ...      
-    }    
-
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts
 

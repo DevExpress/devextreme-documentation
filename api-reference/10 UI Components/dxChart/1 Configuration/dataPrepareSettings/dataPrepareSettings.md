@@ -31,18 +31,6 @@ The following code shows the **dataPrepareSettings** declaration syntax:
         </dxo-data-prepare-settings>
     </dx-chart>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts
 

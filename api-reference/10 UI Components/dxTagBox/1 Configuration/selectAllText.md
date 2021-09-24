@@ -5,7 +5,9 @@ default: 'Select All'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
 <!-- Description goes here -->
+
+<!-- import * from 'api-reference\10 UI Components\dxTreeView\1 Configuration\selectAllText.md' -->

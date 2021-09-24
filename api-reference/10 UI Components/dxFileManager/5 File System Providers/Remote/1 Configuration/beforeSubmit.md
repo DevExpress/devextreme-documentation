@@ -43,12 +43,7 @@ Custom data (key-value pairs) that are sent to the server with the request.
     import { Component } from '@angular/core';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: 'app/app.component.html',
-        styleUrls: ['app/app.component.css']
-    })  
-    
+    #include angular-component-decorator
     export class AppComponent {
         remoteFileProvider: RemoteFileSystemProvider;
     

@@ -35,18 +35,6 @@ The UI component animates its elements at the beginning of its lifetime and when
         </dxo-animation>
     </dx-{widget-name}>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
     <!-- tab: app.module.ts -->
     #include angular-app-module-ts
 

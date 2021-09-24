@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a directory is created.
 
 ---
-<!-- Description goes here -->
+Main article: [onDirectoryCreating](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onDirectoryCreating)

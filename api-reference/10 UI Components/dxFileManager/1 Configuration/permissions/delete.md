@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a user is allowed to delete files and folders.
+Specifies whether a user is allowed to delete files and directories.
 
 ---

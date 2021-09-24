@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is moved.
+A function that is executed when a file or directory is moved.
 
 ##### param(e): Object
 Information about the event.
@@ -17,10 +17,10 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.itemName): String
-The name of the moved file or folder.
+The name of the moved file or directory.
 
 ##### field(e.itemPath): String
-The path to the moved file or folder.
+The path to the moved file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
@@ -29,7 +29,7 @@ Model data. Available only if you use Knockout.
 The parent directory.
 
 ##### field(e.sourceItem): FileSystemItem
-The moved file or folder.
+The moved file or directory.
 
 ---
 ---

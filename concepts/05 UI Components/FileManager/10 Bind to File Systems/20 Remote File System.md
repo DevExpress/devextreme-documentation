@@ -1,4 +1,4 @@
-The FileManager UI component provides the [Remote](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/Remote '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/') file system provider to access files and folders located on the server. 
+The FileManager UI component provides the [Remote](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/Remote '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/') file system provider to access files and directories located on the server. 
 
 ![FileManager - remote file system on the server](/images/FileManager/remote-file-provider.png)
 

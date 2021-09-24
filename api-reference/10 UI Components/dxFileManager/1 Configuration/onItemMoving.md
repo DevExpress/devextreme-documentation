@@ -5,13 +5,13 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a file or folder is moved.
+A function that is executed before a file or directory is moved.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
-Allows you to cancel the file or folder move process.
+Allows you to cancel the file or directory move process.
 
 ##### field(e.component): dxFileManager
 The UI component's instance.
@@ -29,15 +29,15 @@ The directory where a file is moved to.
 Allows you to specify the error message.
 
 ##### field(e.item): FileSystemItem
-The file or folder to be moved.
+The file or directory to be moved.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
-Select a file/folder and click the **Move to** context menu or toolbar item to invoke the "Move to" dialog. The component executes the **onItemMoving** function when you select a destination folder and click **Move** in the dialog.
+Select a file/directory and click the **Move to** context menu or toolbar item to invoke the "Move to" dialog. The component executes the **onItemMoving** function when you select a destination directory and click **Move** in the dialog.
 
-![DevExtreme File Manager - Move File or Folder](/images/FileManager/move-to-dialog.png)
+![DevExtreme File Manager - Move File or directory](/images/FileManager/move-to-dialog.png)
 
 ---
 

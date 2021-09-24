@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of the folder in which the field is located when displayed in the field chooser.
+Specifies the name of the directory in which the field is located when displayed in the field chooser.
 
 ---
 #####See Also#####

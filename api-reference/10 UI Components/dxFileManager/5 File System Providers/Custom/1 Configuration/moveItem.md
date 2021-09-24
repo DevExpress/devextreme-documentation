@@ -4,7 +4,7 @@ type: function(item, destinationDirectory)
 ---
 ---
 ##### shortDescription
-A function that moves files and folders.
+A function that moves files and directories.
 
 ##### param(item): FileSystemItem
 The current file system item.

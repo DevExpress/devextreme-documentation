@@ -4,7 +4,7 @@ type: function(item, newName)
 ---
 ---
 ##### shortDescription
-A function that renames files and folders.
+A function that renames files and directories.
 
 ##### param(item): FileSystemItem
 The current file system item.

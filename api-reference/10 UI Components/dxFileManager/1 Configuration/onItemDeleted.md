@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is deleted.
+A function that is executed when a file or directory is deleted.
 
 ##### param(e): Object
 Information about the event.
@@ -17,7 +17,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.item): FileSystemItem
-The deleted file or folder.
+The deleted file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

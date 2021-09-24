@@ -4,7 +4,7 @@ type: function(item, destinationDirectory)
 ---
 ---
 ##### shortDescription
-A function that copies files or folders.
+A function that copies files or directories.
 
 ##### param(item): FileSystemItem
 The current file system item.

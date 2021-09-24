@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether to display the parent folder in the view.
+Specifies whether to display the parent directory in the view.
 
 ---

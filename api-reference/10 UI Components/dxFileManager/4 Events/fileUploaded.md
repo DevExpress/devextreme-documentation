@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a file is uploaded.
 
 ---
-<!-- Description goes here -->
+Main article: [onFileUploaded](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onFileUploaded)

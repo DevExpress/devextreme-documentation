@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is renamed.
+A function that is executed when a file or directory is renamed.
 
 ##### param(e): Object
 Information about the event.
@@ -17,13 +17,13 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.itemName): String
-The current name of the renamed file or folder.
+The current name of the renamed file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.sourceItem): FileSystemItem
-The renamed file or folder.
+The renamed file or directory.
 
 ---
 ---

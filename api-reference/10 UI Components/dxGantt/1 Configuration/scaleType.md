@@ -46,20 +46,7 @@ The **scaleType** property specifies the zoom level for tasks when the Gantt UI 
     }    
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxGanttModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxGanttModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

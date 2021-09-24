@@ -73,20 +73,7 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule} from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

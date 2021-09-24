@@ -9,7 +9,128 @@ Gets the total row count.
 The total row count.
 
 ---
-[note]If any filter is applied, this method returns the count of records after [filtering](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/').
+Please review the following notes:
+
+- If any filter is applied, **totalCount()** returns the count of records after [filtering](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/').
+
+- If paging is disabled in the DataGrid ([paging](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/).[enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#enabled) is **false**) or in the underlying [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) ([paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) is **false**), **totalCount()** returns -1. To get the total record count in this case, you can use the following code:
+
+    ---
+    ##### jQuery
+
+        <!-- tab: index.js -->
+        const dataGrid = $("#dataGridContainer").dxDataGrid("instance");
+        const DataSource = dataGrid.getDataSource();
+        const recordCount = DataSource.items().length;
+
+    ##### Angular
+
+        <!-- tab: app.component.ts -->
+        import { Component, ViewChild } from '@angular/core';
+        import { DxDataGridComponent } from 'devextreme-angular';
+
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+        export class AppComponent {
+            @ViewChild('dataGridRef', { static: false }) dataGrid: DxDataGridComponent;
+            // Prior to Angular 8
+            // @ViewChild('dataGridRef') dataGrid: DxDataGridComponent;
+            getRecordCount() {
+                const DataSource = this.dataGrid.instance.getDataSource();
+                return DataSource.items().length;
+            }
+        }
+
+        <!-- tab: app.component.html -->
+        <dx-data-grid ...
+            #dataGridRef
+        ></dx-data-grid>
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ...
+                :ref="dataGridRef">
+            </DxDataGrid>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.common.css';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxDataGrid from 'devextreme-vue/data-grid';
+
+        const dataGridRef = 'dataGrid';
+
+        export default {
+            components: {
+                DxDataGrid
+            },
+            data() {
+                return {
+                    dataGridRef
+                }
+            },
+            computed: {
+                dataGrid: function() {
+                    return this.$refs[dataGridRef].instance;
+                }
+            },
+            methods: {
+                getRecordCount() {
+                    const DataSource = this.dataGrid.getDataSource();
+                    return DataSource.items().length;
+                }
+            }
+        }
+        </script>
+    
+    ##### React
+    
+        <!-- tab: App.js -->
+        import React, { useRef, useCallback } from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+    
+        import DataGrid from 'devextreme-react/data-grid';
+    
+        export default function App() {
+            const dataGrid = useRef(null);
+            const getRecordCount = useCallback(() => {
+                const DataSource = dataGrid.current.instance.getDataSource();
+                return DataSource.items().length;
+            }, []);
+            return (
+                <DataGrid ref={dataGrid}>
+                    {/* ... */}
+                </DataGrid>
+            );
+        }
+
+    ---
 
 #####See Also#####
 #include common-link-callmethods

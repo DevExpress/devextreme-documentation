@@ -60,11 +60,7 @@ The following code shows how to bind the FileManager to the **Object** file syst
     import { Component } from '@angular/core';
     import ObjectFileSystemProvider from 'devextreme/file_management/object_provider'; 
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     
     export class AppComponent {
         fileItems = [{

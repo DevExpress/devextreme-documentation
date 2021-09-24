@@ -31,11 +31,7 @@ The time interval in milliseconds for which the message is displayed.
     import { Component, AfterViewInit } from '@angular/core';
     import notify from 'devextreme/ui/notify';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent implements AfterViewInit {
         ngAfterViewInit() { 
             notify("Warning message", "warning", 500);

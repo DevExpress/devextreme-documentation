@@ -40,11 +40,7 @@ If you have more than one map provider in your application, specify the keys in 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent { }
 
     <!-- tab: app.module.ts -->

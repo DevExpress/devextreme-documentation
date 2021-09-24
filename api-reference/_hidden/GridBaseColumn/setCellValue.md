@@ -60,11 +60,7 @@ This function allows you to process user input before it is saved to the data so
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         setCellValue (newData, value, currentRowData) {
             newData.Count = value;
@@ -206,11 +202,7 @@ If you need to perform asynchronous operations in the **setCellValue** function,
     import { HttpClient, HttpParams } from '@angular/common/http';
     import 'rxjs/add/operator/toPromise';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor(private httpClient: HttpClient) {
             this.setCellValue = this.setCellValue.bind(this);

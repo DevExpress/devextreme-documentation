@@ -59,11 +59,7 @@ In the following code, the **calculateCellValue** function is used to create an 
     import { Component } from '@angular/core';
     import { Product, Service } from './app.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         products: Product[];
         constructor(service: Service) {
@@ -289,11 +285,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         calculateCellValue(rowData) {
             // ...

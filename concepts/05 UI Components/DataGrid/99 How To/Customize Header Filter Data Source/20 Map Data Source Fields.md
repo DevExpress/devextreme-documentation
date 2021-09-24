@@ -53,11 +53,7 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
     import { Component } from '@angular/core';
     import ArrayStore from 'devextreme/data/array_store';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         headerFilterData;
         constructor() {

@@ -85,11 +85,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employee = {
             name: 'John Heart',

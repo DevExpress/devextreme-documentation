@@ -58,11 +58,7 @@ If you delete a recurring appointment from the data source, all its occurrences 
     import { Component, ViewChild } from "@angular/core";
     import { Appointment, Service } from './app.service';
     import { DxSchedulerComponent } from "devextreme-angular";
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent  {
         @ViewChild(DxSchedulerComponent, { static: false }) scheduler: DxSchedulerComponent;
         // Prior to Angular 8

@@ -38,11 +38,7 @@ A key used to authenticate the application within the required map provider.
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent { }
 
     <!-- tab: app.module.ts -->

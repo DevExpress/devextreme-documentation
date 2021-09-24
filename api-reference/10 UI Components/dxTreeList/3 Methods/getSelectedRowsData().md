@@ -24,11 +24,7 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
     import { Component, ViewChild } from '@angular/core';
     import { DxTreeListComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild('treeListRef', { static: false }) treeList: DxTreeListComponent;
         // Prior to Angular 8

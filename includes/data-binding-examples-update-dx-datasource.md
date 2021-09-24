@@ -12,11 +12,7 @@
     import { Component, ViewChild } from '@angular/core';
     import { Dx{WidgetName}Component } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}: Dx{WidgetName}Component;
         // Prior to Angular 8

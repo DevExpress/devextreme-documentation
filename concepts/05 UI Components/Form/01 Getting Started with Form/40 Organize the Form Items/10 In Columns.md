@@ -42,11 +42,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employee = {
             name: 'John Heart',

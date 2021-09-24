@@ -38,11 +38,7 @@ The DevExtreme Quill modules and the API you can use to customize them are descr
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         customizeQuillModules(config) {
             config.history = {

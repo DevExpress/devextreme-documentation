@@ -36,11 +36,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employee = {
             name: 'John Heart',

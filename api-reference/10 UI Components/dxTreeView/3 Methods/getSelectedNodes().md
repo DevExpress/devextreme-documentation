@@ -21,11 +21,7 @@ Selected nodes.
     import { Component, ViewChild } from '@angular/core';
     import { DxTreeViewComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild('treeViewRef', { static: false }) treeView: DxTreeViewComponent;
         // Prior to Angular 8

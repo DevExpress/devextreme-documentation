@@ -50,11 +50,7 @@ In the following code, this property is assigned a `cell-highlighted` CSS class 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employees = [{
             ID: 1,

@@ -41,12 +41,7 @@ Assign the [Custom](/api-reference/10%20UI%20Components/dxFileManager/5%20File%2
     import { Component } from '@angular/core';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: 'app/app.component.html',
-        styleUrls: ['app/app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         customFileProvider: CustomFileSystemProvider;
 

@@ -70,11 +70,7 @@ The following code snippet demonstrates the use of the function to set a dynamic
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         rules = {
             H: char => char >= 0 && char <= 2,

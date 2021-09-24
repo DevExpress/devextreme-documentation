@@ -36,19 +36,6 @@ The following examples show how to configure the FileUploader for each upload mo
             uploadUrl="https://mydomain.com/MyUploadService">
         </dx-file-uploader>  
 
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';    
-
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-
-        export class AppComponent {
-            //...
-        }
-
         <!-- tab: app.module.ts -->
         #include angular-app-module-ts
 
@@ -162,11 +149,7 @@ The following examples show how to configure the FileUploader for each upload mo
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';    
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
 
         export class AppComponent {
             //...

@@ -66,11 +66,7 @@ This function allows you to customize cells and modify their content. Common use
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
     
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             onCellPrepared(e) {          
                 if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
@@ -166,11 +162,7 @@ This function allows you to customize cells and modify their content. Common use
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
     
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             onCellPrepared(e) {          
                 if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')

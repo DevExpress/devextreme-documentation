@@ -42,11 +42,7 @@ The following code demonstrates how to change separators from commas to semicolo
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // ...
         displayValueFormatter(value) {

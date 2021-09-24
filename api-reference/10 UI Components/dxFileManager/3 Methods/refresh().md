@@ -31,11 +31,7 @@ The following example illustrates how to use this method:
     import { Component, ViewChild } from '@angular/core';
     import { DxFileManagerModule } from "devextreme-angular";
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })    
+    #include angular-component-decorator    
     
     export class AppComponent {
         @ViewChild(DxFileManagerComponent, { static: false }) fileManager: DxFileManagerComponent;

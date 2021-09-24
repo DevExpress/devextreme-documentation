@@ -50,11 +50,7 @@ This property accepts an array of dates:
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         disabledDates: Date[] = [ 
             new Date("07/1/2017"),  
@@ -161,11 +157,7 @@ Alternatively, pass a function to **disabledDates**. This function should define
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         disableDates(args) {
             const dayOfWeek = args.date.getDay();

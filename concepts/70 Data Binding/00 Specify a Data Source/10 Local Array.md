@@ -42,11 +42,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
     import { Component } from '@angular/core';
     import { Employee, Service } from './app.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employees: Employee[];
         constructor(service: Service) {
@@ -268,11 +264,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     import ArrayStore from 'devextreme/data/array_store';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employeesDataSource: DataSource;
         constructor(service: Service) {

@@ -66,22 +66,7 @@ A Promise that is resolved after the file system item is renamed. It is a <a hre
     // other functions
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        //...
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

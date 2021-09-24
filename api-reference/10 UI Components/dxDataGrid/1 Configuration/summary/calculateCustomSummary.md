@@ -120,24 +120,7 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser'; 
-    import { NgModule } from '@angular/core'; 
-    import { AppComponent } from './app.component'; 
-    import { DxDataGridModule } from 'devextreme-angular'; 
-    
-    @NgModule({ 
-        declarations: [ 
-            AppComponent 
-        ], 
-        imports: [ 
-            BrowserModule, 
-            DxDataGridModule 
-        ], 
-        providers: [ ], 
-        bootstrap: [AppComponent] 
-    }) 
-    
-    export class AppModule { } 
+    #include angular-app-module-ts
 
 ##### Vue
 
@@ -340,24 +323,7 @@ You can use the **value** field to retrieve the column value. If you do not spec
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser'; 
-    import { NgModule } from '@angular/core'; 
-    import { AppComponent } from './app.component'; 
-    import { DxDataGridModule } from 'devextreme-angular'; 
-    
-    @NgModule({ 
-        declarations: [ 
-            AppComponent 
-        ], 
-        imports: [ 
-            BrowserModule, 
-            DxDataGridModule 
-        ], 
-        providers: [ ], 
-        bootstrap: [AppComponent] 
-    }) 
-    
-    export class AppModule { } 
+    #include angular-app-module-ts
     
 ##### Vue
 

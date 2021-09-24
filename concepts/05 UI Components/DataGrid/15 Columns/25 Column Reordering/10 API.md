@@ -8,7 +8,7 @@ The [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/c
         $("#dataGridContainer").dxDataGrid({
             // ...
             customizeColumns: function(columns) {
-                column[2].visibleIndex = 1;
+                columns[2].visibleIndex = 1;
             }
         });
     });
@@ -20,7 +20,7 @@ The [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/c
     // ...
     export class AppComponent {
         customizeColumns (columns) {
-            column[2].visibleIndex = 1;
+            columns[2].visibleIndex = 1;
         }
     }
     @NgModule({
@@ -56,7 +56,7 @@ The [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/c
         },
         methods: {
             customizeColumns(columns) {
-                column[2].visibleIndex = 1;
+                columns[2].visibleIndex = 1;
             }
         }
     }
@@ -73,7 +73,7 @@ The [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/c
 
     class App extends React.Component {
         customizeColumns(columns) {
-            column[2].visibleIndex = 1;
+            columns[2].visibleIndex = 1;
         }
 
         render() {

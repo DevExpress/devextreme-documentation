@@ -27,4 +27,4 @@ The data of the items whose selection has been canceled.
 
 ---
 
-[note] When [applyValueMode]({basewidgetpath}/Configuration/#applyValueMode) is *"useButtons"*, the **onSelectionChanged** handler is executed only when users click the OK button.
+[note] When [applyValueMode](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/applyValueMode.md '{basewidgetpath}/Configuration/#applyValueMode') is *"useButtons"*, the **onSelectionChanged** handler is executed only when users click the OK button.

@@ -78,7 +78,7 @@
       "ColumnBase": {},
       "ColumnButtonBase": {},
       "default": {},
-      "RowObject": {}
+      "Row": {}
     },
     "ui/editor/ui.data_expression": {
       "default": {}
@@ -585,7 +585,7 @@
     "ui/tree_list": {
       "default": {},
       "Node": {},
-      "RowObject": {}
+      "Row": {}
     },
     "viz/tree_map": {
       "default": {},

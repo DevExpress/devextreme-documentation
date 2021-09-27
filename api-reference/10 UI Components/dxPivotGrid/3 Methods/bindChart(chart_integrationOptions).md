@@ -80,7 +80,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         </tr>
     </table>
 
-    You can also specify any other [Chart properties](/Documentation/ApiReference/UI_Components/dxChart/Configuration/) in this object, except [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource).
+    You can also specify any other [Chart properties](/Documentation/ApiReference/UI_Components/dxChart/Configuration/) in this object, except [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource) and [seriesTemplate](Documentation/ApiReference/UI_Components/dxChart/Configuration/seriesTemplate/).
 
 - **customizeSeries** 
 
@@ -109,7 +109,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         </tr>
     </table>
 
-    You can also specify any other [series properties](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) in this object, except [seriesTemplate](Documentation/ApiReference/UI_Components/dxChart/Configuration/seriesTemplate/).
+    You can also specify any other [series properties](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/) in this object.
 
 - **processCell**
 

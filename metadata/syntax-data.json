@@ -827,6 +827,12 @@
     "dataChange": {
       "vue": "data-change"
     },
+    "dataChange.insertAfterKey": {
+      "vue": "insert-after-key"
+    },
+    "dataChange.insertBeforeKey": {
+      "vue": "insert-before-key"
+    },
     "dataChange.pageIndex": {
       "vue": "page-index"
     },
@@ -8375,9 +8381,7 @@
       "vue": "resize-enabled"
     },
     "dxPopoverOptions.restorePosition": {
-      "angular": "dxo-restore-position",
-      "react": "RestorePosition",
-      "vue": "DxRestorePosition"
+      "vue": "restore-position"
     },
     "dxPopoverOptions.showEvent": {
       "angular": "dxo-show-event",
@@ -8443,9 +8447,7 @@
       "vue": "resize-enabled"
     },
     "dxPopupOptions.restorePosition": {
-      "angular": "dxo-restore-position",
-      "react": "RestorePosition",
-      "vue": "DxRestorePosition"
+      "vue": "restore-position"
     },
     "dxPopupOptions.showCloseButton": {
       "vue": "show-close-button"
@@ -11685,6 +11687,9 @@
     "enums.GridGroupingExpandMode": {
       "vue": "grid-grouping-expand-mode"
     },
+    "enums.GridNewRowPosition": {
+      "vue": "grid-new-row-position"
+    },
     "enums.GridPagerDisplayMode": {
       "vue": "grid-pager-display-mode"
     },
@@ -12409,6 +12414,9 @@
       "angular": "dxo-form",
       "react": "Form",
       "vue": "DxForm"
+    },
+    "gridBaseOptions.editing.newRowPosition": {
+      "vue": "new-row-position"
     },
     "gridBaseOptions.editing.popup": {
       "angular": "dxo-popup",

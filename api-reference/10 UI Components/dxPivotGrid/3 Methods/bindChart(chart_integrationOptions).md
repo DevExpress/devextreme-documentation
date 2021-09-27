@@ -17,8 +17,8 @@ The Chart's configuration.
 
 ##### field(integrationOptions.alternateDataFields): Boolean
 Default Value: **true**.   
-Specifies whether to alternate data fields in the resulting chart or not.   
-Applies only if the PivotGrid contains several data fields.
+Specifies whether to alternate data fields in the resulting chart.   
+Applies only if the PivotGrid contains multiple data fields.
 
 ##### field(integrationOptions.customizeChart): function()
 Allows you to customize the Chart's appearance.
@@ -28,7 +28,7 @@ Allows you to customize the series.
 
 ##### field(integrationOptions.dataFieldsDisplayMode): String
 Default Value: *"splitAxes"*.   
-Accepts one of the following values.   
+Accepts one of the following values:   
 
 - *"singleAxis"* - values of all data fields are displayed on a single [value axis](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/').  
 - *"splitAxes"* - each data field gets an individual value axis. Applies only if **putDataFieldsInto** is *"series"*.  
@@ -45,7 +45,7 @@ Allows you to process cell data before the Chart visualizes it.
 
 ##### field(integrationOptions.putDataFieldsInto): String
 Default Value: *"series"*.   
-Accepts one of the following values.
+Accepts one of the following values:
 
 - *"args"* - data fields go to the chart arguments.  
 - *"series"* - data fields go to the chart series.
@@ -144,7 +144,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         <tr>
             <td><b>maxRowLevel</b></td>
             <td>Number</td>
-            <td>A zero-based index that indicates the maximum currently expanded row level. Equals to 0 when the pivot grid has no row fields, 1 when all rows are collapsed, 2 when at least one first-level row is expanded, etc.</td>
+            <td>A zero-based index that indicates the maximum currently expanded row level. Equals 0 when the pivot grid has no row fields, 1 when all rows are collapsed, 2 when at least one first-level row is expanded, etc.</td>
         </tr>
         <tr>
             <td><b>columnPath</b></td>
@@ -164,7 +164,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         <tr>
             <td><b>maxColumnLevel</b></td>
             <td>Number</td>
-            <td>A zero-based index that indicates the maximum currently expanded column level. Equals to 0 when the pivot grid has no column fields, 1 when all columns are collapsed, 2 when at least one first-level column is expanded, etc.</td>
+            <td>A zero-based index that indicates the maximum currently expanded column level. Equals 0 when the pivot grid has no column fields, 1 when all columns are collapsed, 2 when at least one first-level column is expanded, etc.</td>
         </tr>
         <tr>
             <td><b>dataFields</b></td>
@@ -174,7 +174,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         <tr>
             <td><b>dataValues</b></td>
             <td>Array</td>
-            <td>Data of the current cell. Contains several values if the pivot grid has several data fields.</td>
+            <td>Data of the current cell. Contains more than one value if the pivot grid has multiple data fields.</td>
         </tr>
         <tr>
             <td><b>dataIndex</b></td>

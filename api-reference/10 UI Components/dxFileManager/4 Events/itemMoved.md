@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a file or directory is moved.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemMoved](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemMoved)

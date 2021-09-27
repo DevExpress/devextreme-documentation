@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is copied.
+A function that is executed when a file or directory is copied.
 
 ##### param(e): Object
 Information about the event.
@@ -17,10 +17,10 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.itemName): String
-The name of the copied file or folder.
+The name of the copied file or directory.
 
 ##### field(e.itemPath): String
-The path to the copied file or folder.
+The path to the copied file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
@@ -29,9 +29,16 @@ Model data. Available only if you use Knockout.
 The parent directory.
 
 ##### field(e.sourceItem): FileSystemItem
-The copied file or folder.
+The copied file or directory.
 
 ---
+
+Select a file/folder and use the **Copy To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Copy To" dialog. In the dialog, select the destination directory and click **Copy**.  
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-context-menu-item.png)
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-dialog.png)
+
 ---
 
 ##### jQuery
@@ -183,3 +190,4 @@ The copied file or folder.
 
 #####See Also#####
 - [itemCopied](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemCopied.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopied')
+- [permissions.copy](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#copy)

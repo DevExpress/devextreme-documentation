@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is renamed.
+A function that is executed when a file or directory is renamed.
 
 ##### param(e): Object
 Information about the event.
@@ -17,15 +17,20 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.itemName): String
-The current name of the renamed file or folder.
+The current name of the renamed file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ##### field(e.sourceItem): FileSystemItem
-The renamed file or folder.
+The renamed file or directory.
 
 ---
+
+Select a file/directory and click the **Rename** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the dialog. In the dialog, enter a new name and click **Save**.
+
+![DevExtreme File Manager - Move File or Directory](/images/FileManager/rename-dialog.png)
+
 ---
 
 ##### jQuery
@@ -177,3 +182,4 @@ The renamed file or folder.
 
 #####See Also#####
 - [itemRenamed](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemRenamed.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemRenamed')
+- [permissions.rename](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#rename)

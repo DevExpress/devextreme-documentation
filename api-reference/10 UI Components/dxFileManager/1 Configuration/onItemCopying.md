@@ -5,19 +5,19 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a file or folder is copied.
+A function that is executed before a file or directory is copied.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
-Allows you to cancel the file or folder copy process.
+Allows you to cancel the file or directory copy process.
 
 ##### field(e.component): dxFileManager
 The UI component's instance.
 
 ##### field(e.destinationDirectory): FileSystemItem
-The directory where the file or folder is being copied to.
+The directory where the file or directory is being copied to.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "component" }
@@ -29,18 +29,20 @@ The directory where the file or folder is being copied to.
 Allows you to specify the error message.
 
 ##### field(e.item): FileSystemItem
-The file or folder to be copied.
+The file or directory to be copied.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and click the **Copy to** context menu or toolbar item to invoke the "Copy to" dialog. The component executes the **onItemCopying** function when you select a destination folder and click **Copy** in the dialog.
+Select a file/folder and use the **Copy To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Copy To" dialog. In the dialog, select the destination directory and click **Copy**.  
+ 
+The component executes the **onItemCopying** function when you click **Copy** in the dialog.
 
-![DevExtreme File Manager - Copy File or Folder](/images/FileManager/copy-to-context-menu-item.png)
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-context-menu-item.png)
 
-![DevExtreme File Manager - Copy File or Folder](/images/FileManager/copy-to-dialog.png)
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-dialog.png)
 
 ---
 
@@ -175,3 +177,4 @@ Select a file/folder and click the **Copy to** context menu or toolbar item to i
 
 #####See Also#####
 - [itemCopying](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemCopying.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopying')
+- [permissions.copy](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#copy)

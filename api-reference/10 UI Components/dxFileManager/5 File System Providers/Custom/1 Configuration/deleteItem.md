@@ -4,7 +4,7 @@ type: function(item)
 ---
 ---
 ##### shortDescription
-A function that deletes a file or folder.
+A function that deletes a file or directory.
 
 ##### param(item): FileSystemItem
 The current file system item.

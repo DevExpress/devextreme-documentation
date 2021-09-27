@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a file or directory is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemDeleting](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemDeleting)

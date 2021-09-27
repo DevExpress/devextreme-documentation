@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Configures the file and folder view.
+Configures the file and directory view.
 
 ---
 

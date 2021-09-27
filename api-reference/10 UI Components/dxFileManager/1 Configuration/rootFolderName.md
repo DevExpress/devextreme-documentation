@@ -5,7 +5,7 @@ default: 'Files'
 ---
 ---
 ##### shortDescription
-Specifies the root folder name.
+Specifies the root directory name.
 
 ---
 

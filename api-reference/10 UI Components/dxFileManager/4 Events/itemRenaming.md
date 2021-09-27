@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a file or directory is renamed.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemRenaming](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemRenaming)

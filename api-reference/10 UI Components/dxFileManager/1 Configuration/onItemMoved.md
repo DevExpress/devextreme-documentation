@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is moved.
+A function that is executed when a file or directory is moved.
 
 ##### param(e): Object
 Information about the event.
@@ -17,10 +17,10 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.itemName): String
-The name of the moved file or folder.
+The name of the moved file or directory.
 
 ##### field(e.itemPath): String
-The path to the moved file or folder.
+The path to the moved file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
@@ -29,9 +29,14 @@ Model data. Available only if you use Knockout.
 The parent directory.
 
 ##### field(e.sourceItem): FileSystemItem
-The moved file or folder.
+The moved file or directory.
 
 ---
+
+Select a file/folder and use the **Move To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Move To" dialog. In the dialog, select the destination directory and click **Move**.  
+
+![DevExtreme File Manager - Move File or directory](/images/FileManager/move-to-dialog.png)
+
 ---
 
 ##### jQuery
@@ -183,3 +188,4 @@ The moved file or folder.
 
 #####See Also#####
 - [itemMoved](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemMoved.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoved')
+- [permissions.move](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#move)

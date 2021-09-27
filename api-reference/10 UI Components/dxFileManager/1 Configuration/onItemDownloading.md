@@ -34,9 +34,11 @@ Model data. Available only if you use Knockout.
 ---
 ---
 
-Select a file and click the **Download** context menu or toolbar item to download this file. The FileManager component displays the "Save As" dialog to select a directory where to download the file. The **onItemDownloading** function is executed when you click  **Save** in the dialog.
+Select a file and use the **Download** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Save As" dialog. In the dialog, select a directory where to download the file and click **Save**. 
 
-![DevExtreme File Manager - Copy File or Folder](/images/FileManager/delete-confirmation-dialog.png)
+The component executes the **onItemDownloading** function when you click **Save** in the dialog.
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
 
 ---
 
@@ -153,3 +155,4 @@ Select a file and click the **Download** context menu or toolbar item to downloa
 
 #####See Also#####
 - [itemDownloading](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDownloading.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDownloading')
+- [permissions.download](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#download)

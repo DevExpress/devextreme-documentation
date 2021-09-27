@@ -1,4 +1,4 @@
-The FileManager UI component provides the Object file system provider to manage files and folders in an in-memory array of JSON objects.
+The FileManager UI component provides the Object file system provider to manage files and directories in an in-memory array of JSON objects.
 
 ![FileManager - Hierarchical Data Structure](/images/FileManager/array-file-system-provider.png)
 

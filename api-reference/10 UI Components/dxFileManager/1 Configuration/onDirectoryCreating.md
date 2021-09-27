@@ -36,7 +36,9 @@ The parent directory.
 
 ---
 
-Use the **Create Directory** context menu or toolbar item to invoke the "New Directory" dialog. The component executes the **onDirectoryCreating** function when you enter a directory name and click **Create** in the dialog.
+Use the **Create Directory** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the dialog. In the dialog, enter the directory name and click **Create** to create a new directory. 
+
+The component executes the **onDirectoryCreating** function when you enter a directory name and click **Create** in the dialog.
 
 ![DevExtreme File Manager - Create Directory](/images/FileManager/create-directory-dialog.png)
 
@@ -173,3 +175,4 @@ Use the **Create Directory** context menu or toolbar item to invoke the "New Dir
 
 #####See Also#####
 - [directoryCreating](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/directoryCreating.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#directoryCreating')
+- [permissions.create](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#create)

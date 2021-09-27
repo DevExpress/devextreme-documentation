@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a user is allowed to rename files and folders.
+Specifies whether a user is allowed to rename files and directories.
 
 ---

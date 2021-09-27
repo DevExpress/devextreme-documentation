@@ -5,13 +5,13 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a file or folder is deleted.
+A function that is executed before a file or directory is deleted.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
-Allows you to cancel the file or folder deletion.
+Allows you to cancel the file or directory deletion.
 
 ##### field(e.component): dxFileManager
 The UI component's instance.
@@ -26,16 +26,18 @@ The UI component's instance.
 Allows you to specify the error message.
 
 ##### field(e.item): FileSystemItem
-The file or folder to be deleted.
+The file or directory to be deleted.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and click the **Delete** context menu or toolbar item to delete this file/folder. The FileManager component displays a delete confirmation message. The **onItemCopying** function is executed when you click  **Delete** in the dialog.
+Select a file/folder and click the **Delete** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/). In the confirmation dialog, click "Delete" to delete the file/folder. 
 
-![DevExtreme File Manager - Copy File or Folder](/images/FileManager/delete-confirmation-dialog.png)
+The **onItemCopying** function is executed when you click  **Delete** in the confirmation dialog.
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
 
 ---
 
@@ -152,3 +154,4 @@ Select a file/folder and click the **Delete** context menu or toolbar item to de
 
 #####See Also#####
 - [itemDeleting](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleting.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleting')
+- [permissions.delete](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete)

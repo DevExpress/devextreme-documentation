@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a file or directory is copied.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemCopying](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemCopying)

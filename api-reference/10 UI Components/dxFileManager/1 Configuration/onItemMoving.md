@@ -5,13 +5,13 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a file or folder is moved.
+A function that is executed before a file or directory is moved.
 
 ##### param(e): Object
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
-Allows you to cancel the file or folder move process.
+Allows you to cancel the file or directory move process.
 
 ##### field(e.component): dxFileManager
 The UI component's instance.
@@ -29,15 +29,18 @@ The directory where a file is moved to.
 Allows you to specify the error message.
 
 ##### field(e.item): FileSystemItem
-The file or folder to be moved.
+The file or directory to be moved.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
-Select a file/folder and click the **Move to** context menu or toolbar item to invoke the "Move to" dialog. The component executes the **onItemMoving** function when you select a destination folder and click **Move** in the dialog.
 
-![DevExtreme File Manager - Move File or Folder](/images/FileManager/move-to-dialog.png)
+Select a file/folder and use the **Move To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Move To" dialog. In the dialog, select the destination directory and click **Move**.  
+
+The component executes the **onItemMoving** function when you click **Move** in the dialog.
+
+![DevExtreme File Manager - Move File or directory](/images/FileManager/move-to-dialog.png)
 
 ---
 
@@ -172,3 +175,4 @@ Select a file/folder and click the **Move to** context menu or toolbar item to i
 
 #####See Also#####
 - [itemMoving](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemMoving.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoving')
+- [permissions.move](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#move)

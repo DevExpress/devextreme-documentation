@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a file or folder is deleted.
+A function that is executed when a file or directory is deleted.
 
 ##### param(e): Object
 Information about the event.
@@ -17,12 +17,17 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "component" }
 
 ##### field(e.item): FileSystemItem
-The deleted file or folder.
+The deleted file or directory.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
 ---
+
+Select a file/folder and click the **Delete** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/). In the confirmation dialog, click "Delete" to delete the file/folder. 
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
+
 ---
 
 ##### jQuery
@@ -162,3 +167,4 @@ Model data. Available only if you use Knockout.
 
 #####See Also#####
 - [itemDeleted](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleted.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleted')
+- [permissions.delete](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete)

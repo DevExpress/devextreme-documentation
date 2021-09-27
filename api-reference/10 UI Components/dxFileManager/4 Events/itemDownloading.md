@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a file is downloaded.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemDownloading](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemDownloading)

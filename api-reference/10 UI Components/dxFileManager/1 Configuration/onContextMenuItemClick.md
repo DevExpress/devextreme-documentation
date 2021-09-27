@@ -89,12 +89,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         onItemClick(e){
             if(e.itemData.options.extension) {
@@ -104,19 +99,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            DxFileManagerModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

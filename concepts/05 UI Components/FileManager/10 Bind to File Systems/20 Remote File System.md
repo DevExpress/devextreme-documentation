@@ -36,12 +36,7 @@ The data object, which is sent back from the server, contains attributes that st
     import { Component } from '@angular/core';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: 'app/app.component.html',
-        styleUrls: ['app/app.component.css']
-    })  
-
+    #include angular-component-decorator
     export class AppComponent {
         remoteFileProvider: RemoteFileSystemProvider;
 
@@ -53,20 +48,7 @@ The data object, which is sent back from the server, contains attributes that st
     }
     
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule} from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

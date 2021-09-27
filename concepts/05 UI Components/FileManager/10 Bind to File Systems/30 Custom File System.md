@@ -41,12 +41,7 @@ Assign the [Custom](/api-reference/10%20UI%20Components/dxFileManager/5%20File%2
     import { Component } from '@angular/core';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: 'app/app.component.html',
-        styleUrls: ['app/app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         customFileProvider: CustomFileSystemProvider;
 
@@ -72,20 +67,7 @@ Assign the [Custom](/api-reference/10%20UI%20Components/dxFileManager/5%20File%2
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule} from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

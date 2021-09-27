@@ -139,11 +139,7 @@ The Diagram UI component allows you to customize its UI tools with the following
       <!-- tab: app.component.ts -->
       import { confirm } from 'devextreme/ui/dialog';
       
-      @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-      })
+      #include angular-component-decorator
       export class AppComponent {
             // ...
             onCustomCommand(e) {

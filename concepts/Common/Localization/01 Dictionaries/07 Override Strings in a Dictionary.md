@@ -21,11 +21,7 @@ In the following code, we override two strings from the <a href="https://github.
     import { Component } from '@angular/core';
     import { loadMessages } from 'devextreme/localization';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor() {
             loadMessages({

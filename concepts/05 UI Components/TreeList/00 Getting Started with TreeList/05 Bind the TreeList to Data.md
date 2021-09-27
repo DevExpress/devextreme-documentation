@@ -429,11 +429,7 @@ The TreeList component can load and update data from different data source types
     import { Component } from '@angular/core';
     import { Employee, EmployeesService } from './employees.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employees: Employee[] = [];
 

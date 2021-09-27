@@ -80,11 +80,7 @@ In the following example, a button validates a group of editors with async rules
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         validationGroupName = "myValidationGroup";
 

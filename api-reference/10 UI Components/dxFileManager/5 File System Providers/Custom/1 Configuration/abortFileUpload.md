@@ -48,12 +48,7 @@ A Promise that is resolved after the file upload in aborted. It is a <a href="ht
     import { Component } from '@angular/core';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider'; 
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         fileSystemProvider: CustomFileSystemProvider;
         constructor(http: HttpClient) {
@@ -70,22 +65,7 @@ A Promise that is resolved after the file upload in aborted. It is a <a href="ht
     // other functions
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        //...
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

@@ -83,11 +83,7 @@ You can use this function to adjust column properties before export. In the foll
     import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         onExporting(e) {
             e.component.beginUpdate();
@@ -112,23 +108,7 @@ You can use this function to adjust column properties before export. In the foll
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxDataGridModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxDataGridModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 
 ##### Vue

@@ -112,11 +112,7 @@ This property accepts the following value types:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
     
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             getWindow() {
                 return window;
@@ -207,11 +203,7 @@ This property accepts the following value types:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
     
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             eventHandler($event, item) {
                 this.target = $event;

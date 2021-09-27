@@ -1,6 +1,7 @@
 ---
 id: dxGantt.Options.filterRow
 type: dxGanttFilterRow
+inheritsType: dxGanttFilterRow
 ---
 ---
 ##### shortDescription

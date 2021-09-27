@@ -40,7 +40,6 @@ The theme name passed as a parameter should be the value of the **data-theme** a
             <dx-button text="Change Theme" (onClick)="changeTheme()"></dx-button>
         `
     })
-    
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
         @ViewChild(DxButtonComponent, { static: false }) button: DxButtonComponent;

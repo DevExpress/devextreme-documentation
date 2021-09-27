@@ -38,31 +38,11 @@
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent { }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { DxButtonModule } from 'devextreme-angular';
-    import { AppComponent } from './app.component';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxButtonModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

@@ -88,11 +88,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         callbacks = [];
         phone: string;

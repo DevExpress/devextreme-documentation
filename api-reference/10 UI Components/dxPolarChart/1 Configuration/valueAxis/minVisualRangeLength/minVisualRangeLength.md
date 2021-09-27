@@ -36,37 +36,8 @@ Assign a number to this property if the visual range is set on a numeric axis. I
         </dxi-value-axis>
     </dx-polar-chart>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxPolarChartModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxPolarChartModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 
 ##### Vue

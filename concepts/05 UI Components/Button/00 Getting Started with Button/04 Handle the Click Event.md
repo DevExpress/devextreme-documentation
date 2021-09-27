@@ -24,11 +24,7 @@ To respond to user clicks, write an [onClick](/api-reference/10%20UI%20Component
     import { Component } from '@angular/core';
     import notify from 'devextreme/ui/notify';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         showMessage = () => {
             notify("The button was clicked");

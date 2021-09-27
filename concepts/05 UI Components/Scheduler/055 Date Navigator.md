@@ -27,11 +27,7 @@ You can specify the range of available dates in the [min](/api-reference/10%20UI
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         minDate: Date = new Date(2018, 2, 3);
         maxDate: Date = new Date(2018, 4, 3);

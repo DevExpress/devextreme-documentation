@@ -61,36 +61,8 @@ To create annotations, assign an array of objects to the **annotations[]** prope
         </svg>
     </dx-vector-map>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        // ...
-    }
-
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxVectorMapModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxVectorMapModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

@@ -42,11 +42,7 @@ You can change any properties of the form, its items or editors at runtime. To u
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         employee = {
             // ...

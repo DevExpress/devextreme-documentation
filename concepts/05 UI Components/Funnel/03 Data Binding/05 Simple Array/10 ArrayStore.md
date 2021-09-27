@@ -35,11 +35,7 @@ If you want to extend the functionality of a JavaScript array, place it into an 
     import { Component } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         fruits = [
             { fruit: 'Apples', count: 10 },
@@ -68,24 +64,7 @@ If you want to extend the functionality of a JavaScript array, place it into an 
     </dx-funnel>
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFunnelModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFunnelModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 
@@ -211,11 +190,7 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
     import { Component } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         fruits = [
             { apples: 10 },
@@ -248,24 +223,7 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
     </dx-funnel>
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFunnelModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFunnelModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

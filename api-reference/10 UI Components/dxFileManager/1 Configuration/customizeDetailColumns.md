@@ -39,11 +39,7 @@ The columns after customization.
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // Uncomment the following lines if the function should be executed in the component's context
         // constructor() {
@@ -59,24 +55,7 @@ The columns after customization.
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFileManagerModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

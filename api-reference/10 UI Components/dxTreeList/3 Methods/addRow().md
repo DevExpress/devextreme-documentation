@@ -32,11 +32,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             constructor() {
                 this.dataSource = new DataSource({
@@ -52,23 +48,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxTreeListModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxTreeListModule
-            ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 
@@ -159,11 +139,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             constructor() {
                 this.dataSource = new DataSource({
@@ -179,23 +155,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxTreeListModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxTreeListModule
-            ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 

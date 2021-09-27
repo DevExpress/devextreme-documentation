@@ -24,11 +24,7 @@ The task key.
     import { Component, ViewChild } from '@angular/core';
     import { DxGanttComponent } from "devextreme-angular";
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })    
+    #include angular-component-decorator    
     
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;
@@ -46,24 +42,7 @@ The task key.
     </dx-gantt>
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxGanttModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxGanttModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

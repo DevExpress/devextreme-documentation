@@ -45,12 +45,7 @@ Note that the **scrollToDate** method scrolls to a date inside the current scrol
     import { Component, ViewChild } from '@angular/core';
     import { DxGanttComponent } from "devextreme-angular";
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })    
-    
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;
         // Prior to Angular 8
@@ -67,24 +62,7 @@ Note that the **scrollToDate** method scrolls to a date inside the current scrol
     </dx-gantt>
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxGanttModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxGanttModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

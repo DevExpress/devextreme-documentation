@@ -36,9 +36,12 @@ The new name of the file or directory.
 
 ---
 ---
-Select a file/directory and click the **Rename** context menu or toolbar item to invoke the "Rename" dialog. The component executes the **onItemRenaming** function when you enter a new file/directory name and click **Save** in the dialog.
 
-![DevExtreme File Manager - Move File or directory](/images/FileManager/rename-dialog.png)
+Select a file/directory and click the **Rename** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the dialog. In the dialog, enter a new name and click **Save**.
+
+The component executes the **onItemRenaming** function when you enter a new file/directory name and click **Save** in the dialog.
+
+![DevExtreme File Manager - Move File or Directory](/images/FileManager/rename-dialog.png)
 
 ---
 
@@ -173,3 +176,4 @@ Select a file/directory and click the **Rename** context menu or toolbar item to
 
 #####See Also#####
 - [itemRenaming](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemRenaming.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemRenaming')
+- [permissions.rename](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#rename)

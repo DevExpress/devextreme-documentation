@@ -33,7 +33,9 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/directory and click the **Delete** context menu or toolbar item to delete this file/directory. The FileManager component displays a delete confirmation message. The **onItemCopying** function is executed when you click  **Delete** in the dialog.
+Select a file/folder and click the **Delete** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/). In the confirmation dialog, click "Delete" to delete the file/folder. 
+
+The **onItemCopying** function is executed when you click  **Delete** in the confirmation dialog.
 
 ![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
 
@@ -152,3 +154,4 @@ Select a file/directory and click the **Delete** context menu or toolbar item to
 
 #####See Also#####
 - [itemDeleting](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleting.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleting')
+- [permissions.delete](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete)

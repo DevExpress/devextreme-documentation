@@ -36,7 +36,9 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/directory and click the **Copy to** context menu or toolbar item to invoke the "Copy to" dialog. The component executes the **onItemCopying** function when you select a destination directory and click **Copy** in the dialog.
+Select a file/folder and use the **Copy To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Copy To" dialog. In the dialog, select the destination directory and click **Copy**.  
+ 
+The component executes the **onItemCopying** function when you click **Copy** in the dialog.
 
 ![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-context-menu-item.png)
 
@@ -175,3 +177,4 @@ Select a file/directory and click the **Copy to** context menu or toolbar item t
 
 #####See Also#####
 - [itemCopying](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemCopying.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopying')
+- [permissions.copy](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#copy)

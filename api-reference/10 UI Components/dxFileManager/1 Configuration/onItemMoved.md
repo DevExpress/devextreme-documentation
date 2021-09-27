@@ -32,6 +32,11 @@ The parent directory.
 The moved file or directory.
 
 ---
+
+Select a file/folder and use the **Move To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Move To" dialog. In the dialog, select the destination directory and click **Move**.  
+
+![DevExtreme File Manager - Move File or directory](/images/FileManager/move-to-dialog.png)
+
 ---
 
 ##### jQuery
@@ -183,3 +188,4 @@ The moved file or directory.
 
 #####See Also#####
 - [itemMoved](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemMoved.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoved')
+- [permissions.move](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#move)

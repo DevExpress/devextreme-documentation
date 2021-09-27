@@ -32,6 +32,13 @@ The parent directory.
 The copied file or directory.
 
 ---
+
+Select a file/folder and use the **Copy To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Copy To" dialog. In the dialog, select the destination directory and click **Copy**.  
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-context-menu-item.png)
+
+![DevExtreme File Manager - Copy File or directory](/images/FileManager/copy-to-dialog.png)
+
 ---
 
 ##### jQuery
@@ -183,3 +190,4 @@ The copied file or directory.
 
 #####See Also#####
 - [itemCopied](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemCopied.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemCopied')
+- [permissions.copy](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#copy)

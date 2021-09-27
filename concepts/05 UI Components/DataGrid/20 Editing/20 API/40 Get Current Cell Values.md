@@ -30,11 +30,7 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
     import { Component, ViewChild } from "@angular/core";
     import { DxDataGridComponent } from "devextreme-angular";
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }, { static: false }) dataGrid: DxDataGridComponent
         // Prior to Angular 8
@@ -57,23 +53,7 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxDataGridModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxDataGridModule
-        ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 
@@ -210,11 +190,7 @@ To access a cell value after the user has edited it, but before it is saved to t
     import { Component } from "@angular/core";
     import { DxDataGridComponent } from "devextreme-angular";
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         setCellValue (newData, value, currentRowData) {
             // currentRowData contains the row data before the edit
@@ -223,23 +199,7 @@ To access a cell value after the user has edited it, but before it is saved to t
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxDataGridModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxDataGridModule
-        ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

@@ -32,11 +32,7 @@ To specify this property based on a condition, set the [showClearButton](/api-re
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         onEditorPreparing(e) {
             if (/* a condition to set the property's value */) {
@@ -46,23 +42,7 @@ To specify this property based on a condition, set the [showClearButton](/api-re
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            Dx{WidgetName}Module
-        ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...

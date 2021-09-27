@@ -27,3 +27,5 @@ Model data. Available only if Knockout is used.
 The data of the items whose selection has been canceled.
 
 ---
+
+[note] When [applyValueMode]({basewidgetpath}/Configuration/#applyValueMode) is *"useButtons"*, the **onSelectionChanged** handler is executed only when users click the OK button.

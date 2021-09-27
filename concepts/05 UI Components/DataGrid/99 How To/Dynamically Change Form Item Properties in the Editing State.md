@@ -62,11 +62,7 @@ This handler is used to save the key of the row that enters the editing state, a
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             rowKey: any = -1;
             // ...
@@ -76,24 +72,7 @@ This handler is used to save the key of the row that enters the editing state, a
         }
         
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxDataGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxDataGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        #include angular-app-module-ts
 
     ##### Vue
 
@@ -277,11 +256,7 @@ This function allows you to change form item properties dynamically. Within this
         <!-- tab: app.component.ts -->
         import { Component, ViewChild } from '@angular/core';
         import { DxDataGridComponent } from 'devextreme-angular';
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {            
             @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;            
             // Prior to Angular 8
@@ -432,11 +407,7 @@ Specify **setCellValue** for those columns whose editors affect other form items
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             // ...
             setCellValue(newData, value) {

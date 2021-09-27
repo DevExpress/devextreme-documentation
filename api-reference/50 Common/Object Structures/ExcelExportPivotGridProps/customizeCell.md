@@ -77,11 +77,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         onExporting(e) {
             const workbook = new Workbook();

@@ -27,11 +27,7 @@ Use the returned button instance to call the [Button UI component's methods](/ap
     import { Component, ViewChild } from '@angular/core';
     import { Dx{WidgetName}Component } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild('{widgetName}Ref', { static: false }) {widgetName}: Dx{WidgetName}Component;
         // Prior to Angular 8

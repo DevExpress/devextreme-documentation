@@ -51,11 +51,7 @@ Text editors, such as [TextBox](/Documentation/ApiReference/UI_Components/dxText
     import { Component, ViewChild } from '@angular/core';
     import { DxHtmlEditorComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
 
         editorValue = '';

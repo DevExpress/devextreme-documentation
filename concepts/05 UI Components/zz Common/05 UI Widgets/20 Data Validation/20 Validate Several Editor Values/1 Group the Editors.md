@@ -43,11 +43,7 @@ Editors belonging to a single **Validation Group** can be validated together. Al
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         login: string;
         password: string;

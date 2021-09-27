@@ -6,7 +6,7 @@ firedEvents: focusedRowChanged
 ---
 ---
 ##### shortDescription
-Specifies initially or currently focused grid row's key. Use it when [focusedRowEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowEnabled.md '{basewidgetpath}/Configuration/#focusedRowEnabled') is **true**.
+Specifies initially or currently focused grid row's key.
 
 ---
 The focused row has a key and [index](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowIndex.md '{basewidgetpath}/Configuration/#focusedRowIndex') on a page. When the [pager](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager '{basewidgetpath}/Configuration/pager/') is used for navigation, the focused row's index persists from page to page but corresponds to a different row with a different key on each page.

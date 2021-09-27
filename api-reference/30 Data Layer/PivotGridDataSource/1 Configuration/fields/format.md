@@ -8,7 +8,7 @@ default: ''
 Formats field values before they are displayed.
 
 ---
-See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for details on accepted values.
+See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
 ---
 ##### jQuery
@@ -203,15 +203,11 @@ The following code declares a custom group for the `ShippingDate` data field. Th
 
 ##### Angular
 
-        <!-- tab: app.component.ts -->
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         pivotGridDataSource: PivotGridDataSource;
         constructor() {
@@ -420,11 +416,7 @@ Cannot be converted, the cell value is exported without formatting. To export th
         import { Component } from '@angular/core';
         import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
 
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             pivotGridDataSource: PivotGridDataSource;
             constructor() {

@@ -70,12 +70,7 @@ In the example below, the FileManager UI component displays hierarchical data st
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';    
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         fileItems = [{
             name: "Documents",
@@ -101,22 +96,7 @@ In the example below, the FileManager UI component displays hierarchical data st
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        //...
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 
@@ -302,12 +282,7 @@ If the data source's field names differ from the standard field names mentioned 
     import { Component } from '@angular/core';
     import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';   
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
+    #include angular-component-decorator
     export class AppComponent {
         fileItems: object[];
         objectFileProvider: ObjectFileSystemProvider;
@@ -339,22 +314,7 @@ If the data source's field names differ from the standard field names mentioned 
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        //...
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

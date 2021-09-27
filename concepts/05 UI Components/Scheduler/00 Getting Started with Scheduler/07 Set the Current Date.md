@@ -21,11 +21,7 @@ To specify the current date, use the [currentDate](/api-reference/10%20UI%20Comp
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core'; 
 
-    @Component({ 
-        selector: 'app-root', 
-        templateUrl: './app.component.html', 
-        styleUrls: ['./app.component.css'] 
-    }) 
+    #include angular-component-decorator
     export class AppComponent { 
         currentDate: Date = new Date(2021, 4, 25);
     } 

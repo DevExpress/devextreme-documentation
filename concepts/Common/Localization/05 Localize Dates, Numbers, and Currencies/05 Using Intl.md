@@ -29,11 +29,7 @@
     import ruMessages from "devextreme/localization/messages/ru.json";  
     import { locale, loadMessages } from "devextreme/localization";
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor() {
             loadMessages(deMessages);
@@ -138,11 +134,7 @@ Strings, numbers, dates, and currencies are now automatically localized and form
     import { Component } from '@angular/core';
     import config from 'devextreme/core/config';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor() {
             // Specifying a currency globally

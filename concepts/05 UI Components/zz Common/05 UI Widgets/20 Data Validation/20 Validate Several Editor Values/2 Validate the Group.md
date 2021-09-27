@@ -58,11 +58,7 @@ Call a group's [validate()](/api-reference/10%20UI%20Components/dxValidator/3%20
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         login: string;
         password: string;
@@ -347,11 +343,7 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
     import { Component } from '@angular/core';
     import { DxValidationGroupComponent } from 'devextreme-angular/ui/validation-group';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         @ViewChild('targetGroup', {static: false}) validationGroup: DxValidationGroupComponent
 

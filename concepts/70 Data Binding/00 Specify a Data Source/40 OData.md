@@ -27,11 +27,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
     import { Component } from '@angular/core';
     import ODataStore from 'devextreme/data/odata/store';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         productsStore: ODataStore;
 
@@ -172,11 +168,7 @@ The following example declares an **ODataStore**, wraps it in a **DataSource**, 
     import ODataStore from 'devextreme/data/odata/store';
     import DataSource from 'devextreme/data/data_source';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         productsDataSource: DataSource;
 

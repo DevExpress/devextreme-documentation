@@ -29,11 +29,7 @@ You can also display a hierarchy in a list bound to a flat array. In this case, 
     import DataSource from "devextreme/data/data_source";
     import { Product, ProductsService } from './products.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         dataSource: DataSource;
         products: Product[] = [];

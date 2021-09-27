@@ -58,16 +58,7 @@ The following code shows how to use the **customizeAnnotation** function to appl
     }
 
     <!-- tab: app.module.ts -->
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
-    // ...
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

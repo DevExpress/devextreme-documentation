@@ -52,11 +52,7 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
     import { Component } from '@angular/core';
     import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         constructor() {
             this.colorizeMap = this.colorizeMap.bind(this);
@@ -74,24 +70,7 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxVectorMapModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxVectorMapModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    #include angular-app-module-ts
 
 ##### Vue
 

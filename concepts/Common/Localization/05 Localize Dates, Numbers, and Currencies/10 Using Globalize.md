@@ -187,11 +187,7 @@ In addition, you can now format values using structures accepted by <a href="htt
     // ...
     // import dictionaries and localization modules here
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    #include angular-component-decorator
     export class AppComponent {
         // ...
     }

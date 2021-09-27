@@ -81,39 +81,8 @@ The following instructions show how to enable and configure client-side export:
             <dxo-export [enabled]="true"></dxo-export>
         </dx-pivot-grid>
 
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-        
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-        export class AppComponent {
-            // ...
-        }
-
-
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxPivotGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxPivotGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
-
+        #include angular-app-module-ts
 
     ##### Vue
 
@@ -211,11 +180,7 @@ The following instructions show how to enable and configure client-side export:
         import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
+        #include angular-component-decorator
         export class AppComponent {
             onExporting(e) {
                 const workbook = new Workbook();    
@@ -239,24 +204,7 @@ The following instructions show how to enable and configure client-side export:
         }
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-        import { DxPivotGridModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxPivotGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
-
+        #include angular-app-module-ts
 
     ##### Vue
 

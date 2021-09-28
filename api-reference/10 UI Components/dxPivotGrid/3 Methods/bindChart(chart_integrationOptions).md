@@ -30,9 +30,9 @@ Allows you to customize the series.
 Default Value: *"splitAxes"*.   
 Accepts one of the following values:   
 
-- *"singleAxis"* - values of all data fields are displayed on a single [value axis](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/').  
-- *"splitAxes"* - each data field gets an individual value axis. Applies only if **putDataFieldsInto** is *"series"*.  
-- *"splitPanes"* - each data field gets an individual [pane](/concepts/05%20UI%20Components/Chart/40%20Panes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Panes/Overview/'). Applies only if **putDataFieldsInto** is *"series"*.      
+- *"singleAxis"* - Values of all data fields are displayed on a single [value axis](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/').  
+- *"splitAxes"* - Each data field gets an individual value axis. Applies only if **putDataFieldsInto** is *"series"*.  
+- *"splitPanes"* - Each data field gets an individual [pane](/concepts/05%20UI%20Components/Chart/40%20Panes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Panes/Overview/'). Applies only if **putDataFieldsInto** is *"series"*.      
 
 Applies only if the PivotGrid contains several [data fields](/concepts/05%20UI%20Components/PivotGrid/020%20Fields%20and%20Areas/10%20Fields.md '/Documentation/Guide/UI_Components/PivotGrid/Fields_and_Areas/#Fields').
 
@@ -47,8 +47,8 @@ Allows you to process cell data before the Chart visualizes it.
 Default Value: *"series"*.   
 Accepts one of the following values:
 
-- *"args"* - data fields go to the chart arguments.  
-- *"series"* - data fields go to the chart series.
+- *"args"* - Data fields constitute chart arguments.  
+- *"series"* - Data fields constitute chart series.
 
 ---
 The **customizeChart**, **customizeSeries**, and **processCell** fields of the **integrationOptions** object are functions. They accept arguments whose structure is described below.
@@ -144,7 +144,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         <tr>
             <td><b>maxRowLevel</b></td>
             <td>Number</td>
-            <td>A zero-based index that indicates the maximum currently expanded row level. Equals 0 when the pivot grid has no row fields, 1 when all rows are collapsed, 2 when at least one first-level row is expanded, etc.</td>
+            <td>A zero-based index that indicates the lowest expanded row level. Equals 0 when the pivot grid has no row fields, 1 when all rows are collapsed, 2 when at least one first-level row is expanded, etc.</td>
         </tr>
         <tr>
             <td><b>columnPath</b></td>
@@ -164,7 +164,7 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
         <tr>
             <td><b>maxColumnLevel</b></td>
             <td>Number</td>
-            <td>A zero-based index that indicates the maximum currently expanded column level. Equals 0 when the pivot grid has no column fields, 1 when all columns are collapsed, 2 when at least one first-level column is expanded, etc.</td>
+            <td>A zero-based index that indicates the lowest expanded column level. Equals 0 when the pivot grid has no column fields, 1 when all columns are collapsed, 2 when at least one first-level column is expanded, etc.</td>
         </tr>
         <tr>
             <td><b>dataFields</b></td>

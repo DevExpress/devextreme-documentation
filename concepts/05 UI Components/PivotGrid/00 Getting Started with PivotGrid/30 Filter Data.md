@@ -9,7 +9,7 @@ Selected values are saved in a field's [filterValues](/Documentation/ApiReferenc
 
     <!-- tab: index.js -->
     $(function() {
-        $("#pivotGridContainer").dxPivotGrid({
+        $("#pivotGrid").dxPivotGrid({
             allowFiltering: true,
             dataSource: {
                 // ...

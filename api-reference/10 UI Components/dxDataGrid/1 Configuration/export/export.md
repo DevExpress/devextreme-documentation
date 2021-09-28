@@ -60,7 +60,6 @@ The following instructions show how to enable and configure client-side export:
     Set the **export**.[enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#enabled') property to **true**. This property enables export for all columns. Set a column's [allowExporting](/api-reference/_hidden/dxDataGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowExporting') property to **false** to prevent it from being exported:
 
     ---
-
     ##### jQuery
 
         <!--JavaScript-->
@@ -94,7 +93,6 @@ The following instructions show how to enable and configure client-side export:
         export class AppComponent {
             // ...
         }
-
 
         <!-- tab: app.module.ts -->
         #include angular-app-module-ts

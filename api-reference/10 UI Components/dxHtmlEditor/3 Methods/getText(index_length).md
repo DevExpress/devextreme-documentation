@@ -12,7 +12,7 @@ A zero-based index at which the retrieved text starts.
 The number of characters to retrieve.
 
 ##### return: String
-<!-- Description goes here -->
+The retrieved text content.
 
 ---
 <!-- Description goes here -->

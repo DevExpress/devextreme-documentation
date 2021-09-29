@@ -10,7 +10,7 @@ The nesting level.
 
 ---
 
-Note that the **expandAllToLevel** method first collapses all expanded tasks and then expands them to the specified hierarchical level. 
+The **expandAllToLevel** method first collapses all expanded tasks and then expands them to the specified hierarchical level. 
 
 ---
 

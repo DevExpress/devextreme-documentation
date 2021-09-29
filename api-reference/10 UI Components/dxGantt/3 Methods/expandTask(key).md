@@ -10,6 +10,8 @@ The task key.
 
 ---
 
+The **expandTask** method expands a task's parent tasks and the task itself. 
+
 ---
 
 ##### jQuery

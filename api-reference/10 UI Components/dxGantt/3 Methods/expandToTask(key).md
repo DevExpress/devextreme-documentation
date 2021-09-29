@@ -10,7 +10,7 @@ The task key.
 
 ---
 
-Note that the **expandToTask** method does not expand the specified task's subtasks.
+The **expandToTask** method expands a task's parent tasks and does not expand the task itself. 
 
 ---
 

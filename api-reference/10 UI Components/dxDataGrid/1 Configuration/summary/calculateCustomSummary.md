@@ -89,7 +89,11 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         calculateSummary(options) {
             // Calculating "customSummary1"
@@ -116,7 +120,24 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { } 
 
 ##### Vue
 
@@ -319,7 +340,24 @@ You can use the **value** field to retrieve the column value. If you do not spec
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { } 
     
 ##### Vue
 

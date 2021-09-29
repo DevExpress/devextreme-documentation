@@ -46,7 +46,12 @@ Model data. Available only if Knockout is used.
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
         onBeforeSend(e){
             // ...
@@ -54,7 +59,19 @@ Model data. Available only if Knockout is used.
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileUploaderModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            DxFileUploaderModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

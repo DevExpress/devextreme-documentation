@@ -65,7 +65,12 @@ The following code shows how you can handle a network error.
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
         onUploadError(e){
             var xhttp = e.request;
@@ -76,7 +81,19 @@ The following code shows how you can handle a network error.
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileUploaderModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            DxFileUploaderModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

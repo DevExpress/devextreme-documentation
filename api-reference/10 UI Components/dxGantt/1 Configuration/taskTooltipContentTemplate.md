@@ -60,13 +60,32 @@ Note that the **container** parameter contains the content of the default toolti
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
         // ...
     } 
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxGanttModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxGanttModule
+        ],
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

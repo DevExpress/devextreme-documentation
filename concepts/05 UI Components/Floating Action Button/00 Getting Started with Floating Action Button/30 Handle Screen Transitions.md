@@ -107,7 +107,11 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         switchSDAs(e) {
             // To be implemented

@@ -39,7 +39,24 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { }
     
 
 ##### Vue
@@ -126,7 +143,24 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser'; 
+    import { NgModule } from '@angular/core'; 
+    import { AppComponent } from './app.component'; 
+    import { DxDataGridModule } from 'devextreme-angular'; 
+    
+    @NgModule({ 
+        declarations: [ 
+            AppComponent 
+        ], 
+        imports: [ 
+            BrowserModule, 
+            DxDataGridModule 
+        ], 
+        providers: [ ], 
+        bootstrap: [AppComponent] 
+    }) 
+    
+    export class AppModule { }
     
 ##### Vue
 

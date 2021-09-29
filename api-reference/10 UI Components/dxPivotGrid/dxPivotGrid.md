@@ -31,11 +31,11 @@ dataSource: {
 dx.web.js, dx.all.js
 
 ---
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/PivotGrid/Getting_Started_with_PivotGrid/" 
+}
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/"
-}
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/"
 }
 
 #####See Also#####

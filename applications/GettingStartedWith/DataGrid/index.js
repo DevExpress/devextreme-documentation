@@ -1,6 +1,6 @@
 const polyfill = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js" });
-const exceljs = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js" });
-const fileSaver = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js" });
+const exceljs = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.0.1/exceljs.min.js" });
+const fileSaver = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" });
 
 $("head").append(
     polyfill, exceljs, fileSaver

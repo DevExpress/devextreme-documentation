@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before the "Resource Manager" dialog is shown.
 
 ---
-<!-- Description goes here -->
+Main article: [onResourceManagerDialogShowing](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing)

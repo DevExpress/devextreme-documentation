@@ -153,7 +153,7 @@ Band columns can have the following properties only:
 - [cssClass](/api-reference/_hidden/GridBaseColumn/cssClass.md '{basewidgetpath}/Configuration/columns/#cssClass')
 - [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '{basewidgetpath}/Configuration/columns/#fixed')
 - [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '{basewidgetpath}/Configuration/columns/#fixedPosition')
-- [headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '{basewidgetpath}/Configuration/columns/#headerCellTemplate')
+- [headerCellTemplate](/api-reference/_hidden/dxTreeListColumn/headerCellTemplate.md '{basewidgetpath}/Configuration/columns/#headerCellTemplate')
 - [name](/api-reference/_hidden/GridBaseColumn/name.md '{basewidgetpath}/Configuration/columns/#name')
 - [ownerBand](/api-reference/_hidden/GridBaseColumn/ownerBand.md '{basewidgetpath}/Configuration/columns/#ownerBand')
 - [showInColumnChooser](/api-reference/_hidden/GridBaseColumn/showInColumnChooser.md '{basewidgetpath}/Configuration/columns/#showInColumnChooser')

@@ -24,7 +24,7 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and click the **Delete** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/). In the confirmation dialog, click "Delete" to delete the file/folder. 
+Select a file/folder and click the **Delete** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/'). In the confirmation dialog, click "Delete" to delete the file/folder. 
 
 ![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
 
@@ -167,4 +167,4 @@ Select a file/folder and click the **Delete** [context menu](/Documentation/ApiR
 
 #####See Also#####
 - [itemDeleted](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleted.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleted')
-- [permissions.delete](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete)
+- [permissions.delete](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/delete.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete')

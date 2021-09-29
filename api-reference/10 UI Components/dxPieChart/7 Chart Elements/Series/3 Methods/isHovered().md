@@ -5,4 +5,7 @@ hidden:
 ---
 ##### shortDescription
 
+##### return: Boolean
+<!-- Description goes here -->
+
 ---

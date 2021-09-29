@@ -4241,6 +4241,9 @@
     "dxDiagramOptions.toolbox.showSearch": {
       "vue": "show-search"
     },
+    "dxDiagramOptions.useNativeScrolling": {
+      "vue": "use-native-scrolling"
+    },
     "dxDiagramOptions.viewToolbar": {
       "angular": "dxo-view-toolbar",
       "react": "ViewToolbar",
@@ -6478,21 +6481,6 @@
     "dxLookupOptions.acceptCustomValue": {
       "vue": "accept-custom-value"
     },
-    "dxLookupOptions.animation": {
-      "angular": "dxo-animation",
-      "react": "Animation",
-      "vue": "DxAnimation"
-    },
-    "dxLookupOptions.animation.hide": {
-      "angular": "dxo-hide",
-      "react": "Hide",
-      "vue": "DxHide"
-    },
-    "dxLookupOptions.animation.show": {
-      "angular": "dxo-show",
-      "react": "Show",
-      "vue": "DxShow"
-    },
     "dxLookupOptions.applyButtonText": {
       "vue": "apply-button-text"
     },
@@ -6512,9 +6500,6 @@
     },
     "dxLookupOptions.clearButtonText": {
       "vue": "clear-button-text"
-    },
-    "dxLookupOptions.closeOnOutsideClick": {
-      "vue": "close-on-outside-click"
     },
     "dxLookupOptions.dropDownButtonTemplate": {
       "vue": "drop-down-button-template"
@@ -6567,9 +6552,6 @@
     "dxLookupOptions.onKeyDown": {
       "vue": "@key-down"
     },
-    "dxLookupOptions.onKeyPress": {
-      "vue": "@key-press"
-    },
     "dxLookupOptions.onKeyUp": {
       "vue": "@key-up"
     },
@@ -6585,9 +6567,6 @@
     "dxLookupOptions.onScroll": {
       "vue": "@scroll"
     },
-    "dxLookupOptions.onTitleRendered": {
-      "vue": "@title-rendered"
-    },
     "dxLookupOptions.onValueChanged": {
       "vue": "@value-changed"
     },
@@ -6599,17 +6578,6 @@
     },
     "dxLookupOptions.pageLoadMode": {
       "vue": "page-load-mode"
-    },
-    "dxLookupOptions.popupHeight": {
-      "vue": "popup-height"
-    },
-    "dxLookupOptions.popupWidth": {
-      "vue": "popup-width"
-    },
-    "dxLookupOptions.position": {
-      "angular": "dxo-position",
-      "react": "Position",
-      "vue": "DxPosition"
     },
     "dxLookupOptions.pulledDownText": {
       "vue": "pulled-down-text"
@@ -6640,12 +6608,6 @@
     },
     "dxLookupOptions.showDropDownButton": {
       "vue": "show-drop-down-button"
-    },
-    "dxLookupOptions.showPopupTitle": {
-      "vue": "show-popup-title"
-    },
-    "dxLookupOptions.titleTemplate": {
-      "vue": "title-template"
     },
     "dxLookupOptions.useNativeScrolling": {
       "vue": "use-native-scrolling"
@@ -6691,14 +6653,6 @@
     },
     "dxMapOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
-    },
-    "dxMapOptions.key": {
-      "angular": "dxo-key",
-      "react": "Key",
-      "vue": "DxKey"
-    },
-    "dxMapOptions.key.googleStatic": {
-      "vue": "google-static"
     },
     "dxMapOptions.markerIconSrc": {
       "vue": "marker-icon-src"
@@ -10142,6 +10096,9 @@
     "dxTextEditorOptions.inputAttr": {
       "vue": "input-attr"
     },
+    "dxTextEditorOptions.labelMode": {
+      "vue": "label-mode"
+    },
     "dxTextEditorOptions.maskChar": {
       "vue": "mask-char"
     },
@@ -10174,9 +10131,6 @@
     },
     "dxTextEditorOptions.onKeyDown": {
       "vue": "@key-down"
-    },
-    "dxTextEditorOptions.onKeyPress": {
-      "vue": "@key-press"
     },
     "dxTextEditorOptions.onKeyUp": {
       "vue": "@key-up"
@@ -11539,6 +11493,9 @@
     },
     "enums.EditorApplyValueMode": {
       "vue": "editor-apply-value-mode"
+    },
+    "enums.EditorLabelMode": {
+      "vue": "editor-label-mode"
     },
     "enums.EditorStylingMode": {
       "vue": "editor-styling-mode"

@@ -27,7 +27,7 @@ The parent directory.
 
 ---
 
-Use the **Upload Files** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Open" dialog and select a file to upload. 
+Use the **Upload Files** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') to invoke the "Open" dialog and select a file to upload. 
 
 ![DevExtreme File Manager - Upload Files](/images/FileManager/upload-files-toolbar-item.png)
 
@@ -182,4 +182,4 @@ Use the **Upload Files** [context menu](/Documentation/ApiReference/UI_Component
 
 #####See Also#####
 - [fileUploaded](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/fileUploaded.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploaded')
-- [permissions.upload](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#upload)
+- [permissions.upload](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/upload.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#upload')

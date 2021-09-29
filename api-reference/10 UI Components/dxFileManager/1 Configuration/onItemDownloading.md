@@ -34,7 +34,7 @@ Model data. Available only if you use Knockout.
 ---
 ---
 
-Select a file and use the **Download** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Save As" dialog. In the dialog, select a directory where to download the file and click **Save**. 
+Select a file and use the **Download** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') to invoke the "Save As" dialog. In the dialog, select a directory where to download the file and click **Save**. 
 
 The component executes the **onItemDownloading** function when you click **Save** in the dialog.
 
@@ -155,4 +155,4 @@ The component executes the **onItemDownloading** function when you click **Save*
 
 #####See Also#####
 - [itemDownloading](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDownloading.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDownloading')
-- [permissions.download](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#download)
+- [permissions.download](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/download.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#download')

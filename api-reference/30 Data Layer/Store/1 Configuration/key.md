@@ -1,6 +1,6 @@
 ---
 id: Store.Options.key
-type: String | Array<String>
+type: any
 ---
 ---
 ##### shortDescription

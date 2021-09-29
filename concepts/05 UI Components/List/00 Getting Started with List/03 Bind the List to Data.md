@@ -110,7 +110,11 @@ The **List** can load data from different data source types. To use a local arra
     import { Component } from '@angular/core';
     import { Product, ProductsService } from './products.service';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         products: Product[] = [];
 

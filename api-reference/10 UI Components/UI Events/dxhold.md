@@ -65,7 +65,11 @@ If you need to subscribe to **dxhold** for two elements that are in the parent-c
     import { on } from 'devextreme/events';
     import 'devextreme/events/hold';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent implements AfterViewInit {
         ngAfterViewInit() {
             const dxholdHandler = (event) => {

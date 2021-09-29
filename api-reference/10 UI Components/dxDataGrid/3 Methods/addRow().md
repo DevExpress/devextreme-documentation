@@ -36,7 +36,11 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             constructor() {
                 this.dataSource = new DataSource({
@@ -52,7 +56,23 @@ Use this method if you want to add an empty row. If you need to add a row with d
         }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
 
     ##### Vue
 
@@ -143,7 +163,11 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             constructor() {
                 this.dataSource = new DataSource({
@@ -159,7 +183,23 @@ Use this method if you want to add an empty row. If you need to add a row with d
         }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
 
     ##### Vue
 

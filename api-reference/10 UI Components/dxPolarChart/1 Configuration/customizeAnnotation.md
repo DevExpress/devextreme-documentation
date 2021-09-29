@@ -58,7 +58,16 @@ The following code shows how to use the **customizeAnnotation** function to appl
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { DxPolarChartModule } from 'devextreme-angular';
+    // ...
+    @NgModule({
+        imports: [
+            // ...
+            DxPolarChartModule
+        ],
+        // ...
+    })
+    export class AppModule { }
 
 ##### Vue
 

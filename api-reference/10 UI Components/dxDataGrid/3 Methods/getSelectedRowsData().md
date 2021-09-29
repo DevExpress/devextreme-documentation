@@ -30,7 +30,11 @@ When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20
     import { Component, ViewChild } from '@angular/core';
     import { DxDataGridComponent } from 'devextreme-angular';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         @ViewChild('dataGridRef', { static: false }) dataGrid: DxDataGridComponent;
         // Prior to Angular 8
@@ -54,7 +58,24 @@ When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20
     ></dx-data-grid>
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxDataGridModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

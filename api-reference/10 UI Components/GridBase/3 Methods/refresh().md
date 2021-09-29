@@ -38,7 +38,11 @@ The following code shows how to call this method:
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         @ViewChild('{widgetName}Var', { static: false }) {widgetName}: Dx{WidgetName}Component;
         // Prior to Angular 8

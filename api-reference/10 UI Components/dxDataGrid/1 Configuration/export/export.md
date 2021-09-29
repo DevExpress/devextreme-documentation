@@ -89,13 +89,35 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
         
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             // ...
         }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
 
     ##### Vue
 
@@ -202,7 +224,11 @@ The following instructions show how to enable and configure client-side export:
         import { Workbook } from 'exceljs';
         import saveAs from 'file-saver';
         
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             onExporting(e) {
                 const workbook = new Workbook();    
@@ -226,7 +252,24 @@ The following instructions show how to enable and configure client-side export:
         }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
 
     ##### Vue
 

@@ -68,7 +68,11 @@ In the following code, the clicked button is identified by its text. The **messa
     import { Component, AfterViewInit } from '@angular/core';
     import { custom } from 'devextreme/ui/dialog';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent implements AfterViewInit {
         ngAfterViewInit() { 
             let myDialog = custom({

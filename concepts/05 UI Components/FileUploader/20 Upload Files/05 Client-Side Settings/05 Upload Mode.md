@@ -36,8 +36,36 @@ The following examples show how to configure the FileUploader for each upload mo
             uploadUrl="https://mydomain.com/MyUploadService">
         </dx-file-uploader>  
 
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';    
+
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+
+        export class AppComponent {
+            //...
+        }
+
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxFileUploaderModule } from 'devextreme-angular';
+        
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxFileUploaderModule
+            ],
+            //...
+        })
+        export class AppModule { }
 
     ##### Vue
 
@@ -149,14 +177,33 @@ The following examples show how to configure the FileUploader for each upload mo
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';    
 
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
 
         export class AppComponent {
             //...
         }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxFileUploaderModule } from 'devextreme-angular';
+        
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxFileUploaderModule
+            ],
+            //...
+        })
+        export class AppModule { }
 
     ##### Vue
 

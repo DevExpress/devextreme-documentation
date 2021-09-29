@@ -101,7 +101,11 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         employeeData = {
             name: 'John Heart',

@@ -85,7 +85,22 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
     </dx-file-manager>
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        //...
+    })
+    export class AppModule { }    
 
 ##### Vue
 
@@ -271,6 +286,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
         styleUrls: ['./app.component.css'],
         providers: [Service]
     })
+
     export class AppComponent {
         constructor(service: Service) {
             this.fileMenuOptions = {
@@ -308,7 +324,20 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+
+    @NgModule({
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

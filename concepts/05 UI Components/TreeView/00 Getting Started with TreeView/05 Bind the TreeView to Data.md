@@ -131,7 +131,11 @@ The TreeView supports plain and hierarchical data structures. To use plain data,
     import { Component } from '@angular/core';
     import { Product, ProductsService } from './products.service';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         products: Product[];
 

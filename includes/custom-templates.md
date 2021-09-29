@@ -49,7 +49,11 @@ The following code shows how to declare a template and use these parameters. Thi
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         listData = [
             { itemProperty: "someValue" },

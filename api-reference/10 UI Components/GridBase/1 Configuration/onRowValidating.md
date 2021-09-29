@@ -85,7 +85,11 @@ The following code illustrates how to validate an email address on the server an
     import { Component } from '@angular/core';
     import { HttpClient, HttpParams } from '@angular/common/http';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         constructor(@Inject(HttpClient) http: HttpClient) {
             this.checkEmail = this.checkEmail.bind(this);

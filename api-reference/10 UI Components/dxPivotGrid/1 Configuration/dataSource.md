@@ -53,7 +53,11 @@ Use one of the following extensions to enable the server to process data accordi
         import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
 
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             store: CustomStore;
             constructor() {
@@ -73,7 +77,24 @@ Use one of the following extensions to enable the server to process data accordi
         </dx-pivot-grid>
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxPivotGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxPivotGridModule
+            ],
+            providers: [],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
 
     ##### Vue
 

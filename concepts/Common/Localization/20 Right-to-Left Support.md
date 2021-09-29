@@ -20,6 +20,18 @@ RTL layout can be specified for an individual UI component using its **rtlEnable
         [rtlEnabled]="true">
     </dx-slider>
 
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';    
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+    }
+
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
@@ -102,7 +114,11 @@ To apply RTL to your entire application, set the same property globally using th
     import { Component } from '@angular/core';
     import config from 'devextreme/core/config';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         constructor() {
             config({ rtlEnabled: true });      

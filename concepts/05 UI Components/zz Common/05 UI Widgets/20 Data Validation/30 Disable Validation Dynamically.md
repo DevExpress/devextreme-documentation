@@ -77,7 +77,11 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         constructor() {
             this.customCallback = this.customCallback.bind(this);

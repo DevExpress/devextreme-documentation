@@ -43,7 +43,11 @@ Use this handler's **editorOptions** parameter to change editor properties. The 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             // ...
             onEditorPreparing(e) {
@@ -54,7 +58,24 @@ Use this handler's **editorOptions** parameter to change editor properties. The 
         }
         
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
 
     ##### Vue
 
@@ -194,7 +215,11 @@ Specify **setCellValue** for those columns whose editors should affect other edi
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
 
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             // ...
             setCellValue(newData, value) {

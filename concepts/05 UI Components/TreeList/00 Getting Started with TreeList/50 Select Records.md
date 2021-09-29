@@ -62,7 +62,11 @@ You can obtain the selected record's data in the [onSelectionChanged](/Documenta
     import { Component } from '@angular/core';
     import { Employee, EmployeesService } from './employees.service';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         // ...
         selectedEmployee: Employee;

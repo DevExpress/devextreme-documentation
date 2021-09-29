@@ -72,7 +72,11 @@ You can call this method at any point in your application. In this example, we c
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
     
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
 

@@ -24,7 +24,11 @@ To define the range from which users can select dates, specify the [min](/api-re
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         minDate: Date = new Date(1900, 0, 1);
         now: Date = new Date();

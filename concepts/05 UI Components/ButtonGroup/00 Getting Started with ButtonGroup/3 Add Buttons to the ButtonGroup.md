@@ -38,7 +38,11 @@ Assign the array to the [items](/api-reference/10%20UI%20Components/dxButtonGrou
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         fontStyles: Array<{ icon: string, style: string }> = [{
             icon: "bold",

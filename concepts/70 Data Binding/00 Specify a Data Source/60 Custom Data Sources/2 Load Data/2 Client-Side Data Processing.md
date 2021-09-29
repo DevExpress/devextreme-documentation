@@ -30,7 +30,11 @@ To process data on the client, load all data from the server in the [load](/api-
 
     import CustomStore from 'devextreme/data/custom_store';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         customDataSource: CustomStore;
 

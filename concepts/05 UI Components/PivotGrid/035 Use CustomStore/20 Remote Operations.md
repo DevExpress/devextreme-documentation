@@ -68,7 +68,11 @@ The example below shows how to implement the **load** function. Note that in thi
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
 
-    #include angular-component-decorator
+    @Component({
+      styleUrls: ["./app.component.css"],
+      selector: "demo-app",
+      templateUrl: "./app.component.html"
+    })
     export class AppComponent {
         dataSource: any;
 

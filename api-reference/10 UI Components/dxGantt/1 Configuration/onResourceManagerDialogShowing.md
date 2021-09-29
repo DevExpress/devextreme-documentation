@@ -5,22 +5,21 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before the Resource Manager dialog is shown.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the Resource Manager dialog showing.
 
 ##### field(e.component): dxGantt
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.values): Array<any>
-<!-- Description goes here -->
+The resources.
 
 ---
-<!-- Description goes here -->

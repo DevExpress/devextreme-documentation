@@ -6,7 +6,7 @@ id: dxGantt.expandAllToLevel(level)
 Expands all tasks down to the specified hierarchical level.
 
 ##### param(level): Number
-The nesting level. 
+The hierarchical level. 
 
 ---
 

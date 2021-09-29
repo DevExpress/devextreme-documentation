@@ -54,7 +54,11 @@ Follow the steps below to get a file's GUID in 'chunk' [upload mode](/api-refere
     import { BrowserModule } from "@angular/platform-browser";
     import { DxFileUploaderModule } from "devextreme-angular";
     
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         onUploaded(e){
             console.log(e.request.getResponseHeader("File-Guid"));

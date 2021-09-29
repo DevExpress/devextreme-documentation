@@ -34,7 +34,22 @@ Specifies custom data for the upload request.
     </dx-file-uploader>
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileUploaderModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileUploaderModule
+        ],
+        //...
+    })
+    export class AppModule { }    
 
 ##### Vue
 

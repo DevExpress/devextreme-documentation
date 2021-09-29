@@ -25,7 +25,11 @@ Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%2
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         selectedKeys: Array<number> = [6, 2, 5];
         selectItem(key) {

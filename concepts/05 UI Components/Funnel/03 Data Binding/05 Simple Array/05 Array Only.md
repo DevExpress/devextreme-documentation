@@ -32,7 +32,11 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         fruits = [
             { fruit: 'Apples', count: 10 },
@@ -44,7 +48,24 @@ To bind the Funnel to an array, pass this array to the [dataSource](/api-referen
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxFunnelModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFunnelModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

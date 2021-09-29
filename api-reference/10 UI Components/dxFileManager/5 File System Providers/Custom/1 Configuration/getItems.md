@@ -43,7 +43,12 @@ The **getItems** function returns data items and then passes them to the [dataIt
     import { Component } from '@angular/core';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider'; 
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
         fileSystemProvider: CustomFileSystemProvider;
         constructor(http: HttpClient) {
@@ -60,7 +65,22 @@ The **getItems** function returns data items and then passes them to the [dataIt
     // other functions
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxFileManagerModule } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxFileManagerModule
+        ],
+        //...
+    })
+    export class AppModule { }
 
 ##### Vue
 

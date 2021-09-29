@@ -63,7 +63,11 @@ The following code shows an example of a data source that can be aggregated by c
     import { Component } from '@angular/core';
     import { DataPoint, Service } from './app.service';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         chartData: DataPoint[];
         constructor(service: Service) {

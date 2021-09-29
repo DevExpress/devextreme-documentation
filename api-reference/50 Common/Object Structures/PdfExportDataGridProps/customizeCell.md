@@ -67,7 +67,11 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
     
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
 

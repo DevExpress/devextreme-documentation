@@ -66,7 +66,11 @@ You can call this method at any point in your application. In the example below,
     import { Workbook } from 'exceljs';
     import saveAs from 'file-saver';
     
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         onExporting(e) {
             const workbook = new Workbook();    

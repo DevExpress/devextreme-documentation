@@ -31,7 +31,11 @@ Call this method to repaint the Floating Action Button after you change the **gl
     import config from 'devextreme/core/config';
     import repaintFloatingActionButton from 'devextreme/ui/speed_dial_action/repaint_floating_action_button';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         changeFabConfig() {
             config({

@@ -34,7 +34,11 @@ The dialog's title.
     import { Component, AfterViewInit } from '@angular/core';
     import { confirm } from 'devextreme/ui/dialog';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent implements AfterViewInit{
         ngAfterViewInit() { 
             let result = confirm("<i>Are you sure?</i>", "Confirm changes");

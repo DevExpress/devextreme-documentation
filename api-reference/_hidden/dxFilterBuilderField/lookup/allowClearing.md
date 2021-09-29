@@ -32,7 +32,11 @@ If you need to specify this property based on a condition, set the [showClearBut
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         onEditorPreparing(e) {
             if (/* a condition to set the property's value */) {
@@ -42,7 +46,23 @@ If you need to specify this property based on a condition, set the [showClearBut
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            Dx{WidgetName}Module
+        ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...

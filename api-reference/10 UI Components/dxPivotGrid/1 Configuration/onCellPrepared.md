@@ -65,7 +65,11 @@ This function allows you to customize cells and modify their content. Common use
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
     
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             onCellPrepared(e) {          
                 if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
@@ -75,7 +79,23 @@ This function allows you to customize cells and modify their content. Common use
             }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxPivotGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxPivotGridModule
+            ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
 
     ##### Vue
 
@@ -157,7 +177,11 @@ This function allows you to customize cells and modify their content. Common use
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
     
-        #include angular-component-decorator
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
         export class AppComponent {
             onCellPrepared(e) {          
                 if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
@@ -167,7 +191,23 @@ This function allows you to customize cells and modify their content. Common use
             }
 
         <!-- tab: app.module.ts -->
-        #include angular-app-module-ts
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxPivotGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxPivotGridModule
+            ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
 
     ##### Vue
 

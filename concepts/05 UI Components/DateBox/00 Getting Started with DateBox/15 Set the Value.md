@@ -22,7 +22,11 @@ To set the UI component's value, specify the [value](/api-reference/10%20UI%20Co
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         // ...
         now: Date = new Date();

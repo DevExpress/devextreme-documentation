@@ -36,7 +36,7 @@ The parent directory.
 
 ---
 
-Use the **Create Directory** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the dialog. In the dialog, enter the directory name and click **Create** to create a new directory. 
+Use the **Create Directory** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') to invoke the dialog. In the dialog, enter the directory name and click **Create** to create a new directory. 
 
 The component executes the **onDirectoryCreating** function when you enter a directory name and click **Create** in the dialog.
 
@@ -175,4 +175,4 @@ The component executes the **onDirectoryCreating** function when you enter a dir
 
 #####See Also#####
 - [directoryCreating](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/directoryCreating.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#directoryCreating')
-- [permissions.create](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#create)
+- [permissions.create](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/create.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#create')

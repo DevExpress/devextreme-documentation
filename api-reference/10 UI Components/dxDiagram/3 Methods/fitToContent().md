@@ -1,11 +1,9 @@
 ---
-id: pieChartSeriesObject.isHovered()
-hidden: 
+id: dxDiagram.fitToContent()
 ---
 ---
 ##### shortDescription
-
-##### return: Boolean
 <!-- Description goes here -->
 
 ---
+<!-- Description goes here -->

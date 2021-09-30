@@ -1,3 +1,5 @@
+#include tutorials-intro-installationnote
+
 The Form component creates a data entry UI for the underlying data object. The interface consists of automatically-arranged label-editor pairs that correspond to data fields. You can change data values, validate user input, and send the resulting data to the server.
 
 This tutorial shows basic Form component configuration.

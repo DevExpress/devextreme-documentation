@@ -41,9 +41,6 @@ A Promise that is resolved after data is loaded. It is a <a href="https://develo
     <dx-gantt ... >
     </dx-gantt>
 
-    <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
-
 ##### Vue
 
     <!-- tab: App.vue -->

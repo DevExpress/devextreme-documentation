@@ -42,9 +42,6 @@
         <!-- Configuration goes here -->
     </dx-pivot-grid>
 
-    <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
-
     <!-- tab: app.component.css -->
     #pivotGrid {
         height: 70vh;

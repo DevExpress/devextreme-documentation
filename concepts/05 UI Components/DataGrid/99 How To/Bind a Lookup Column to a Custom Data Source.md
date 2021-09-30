@@ -43,7 +43,7 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
     import CustomStore from "devextreme/data/custom_store";
     import "rxjs/add/operator/toPromise";
 
-    #include angular-component-decorator
+    @Component({ ... })
     export class AppComponent {
         lookupDataSource = {};
         constructor(@Inject(HttpClient) httpClient: HttpClient) {

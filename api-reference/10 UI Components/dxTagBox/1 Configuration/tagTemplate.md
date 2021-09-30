@@ -49,7 +49,24 @@ This template replaces the default tag template. If you need to recreate the def
     </dx-tag-box>
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxTagBoxModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxTagBoxModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

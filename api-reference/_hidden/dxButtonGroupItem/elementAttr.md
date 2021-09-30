@@ -32,7 +32,11 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
 
-    #include angular-component-decorator
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
     export class AppComponent {
         buttonGroupItems = [{
             // ...
@@ -44,7 +48,24 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
     }
 
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxButtonGroupModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxButtonGroupModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 ##### Vue
 

@@ -36,8 +36,37 @@ If the visual range is set on a numeric axis, assign a number to this property. 
         </dxo-argument-axis>
     </dx-chart>
 
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+    }
+
     <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxChartModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxChartModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
 
 ##### Vue

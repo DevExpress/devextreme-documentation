@@ -6,7 +6,8 @@ id: dxScrollView.release(preventScrollBottom)
 Notifies the ScrollView that data loading is finished.
 
 ##### return: Promise<void>
-A Promise that is resolved after the UI component is released. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that is resolved after the UI component is released.
+#include ref-promisedistinction
 
 ##### param(preventScrollBottom): Boolean
 Specifies whether to prevent the [onReachBottom](/api-reference/10%20UI%20Components/dxScrollView/1%20Configuration/onReachBottom.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#onReachBottom') handler execution.

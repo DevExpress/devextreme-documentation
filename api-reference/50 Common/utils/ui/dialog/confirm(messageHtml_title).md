@@ -8,7 +8,8 @@ export: confirm
 Creates a confirmation dialog with a message and **Yes** and **No** buttons.
 
 ##### return: Promise<Boolean>
-A Promise that is resolved with a Boolean value indicating whether a user has clicked **Yes** or **No**. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that is resolved with a Boolean value indicating whether a user has clicked **Yes** or **No**.
+#include ref-promisedistinction
 
 ##### param(messageHtml): String
 <!-- %param(messageHtml)% -->

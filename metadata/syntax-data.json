@@ -4178,6 +4178,9 @@
     "dxDiagramOptions.toolbox.showSearch": {
       "vue": "show-search"
     },
+    "dxDiagramOptions.useNativeScrolling": {
+      "vue": "use-native-scrolling"
+    },
     "dxDiagramOptions.viewToolbar": {
       "angular": "dxo-view-toolbar",
       "react": "ViewToolbar",

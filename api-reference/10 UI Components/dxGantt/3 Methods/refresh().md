@@ -22,9 +22,7 @@ A Promise that is resolved after data is loaded. It is a <a href="https://develo
 
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
-    import { DxGanttComponent } from "devextreme-angular";
-
-    #include angular-component-decorator    
+    import { DxGanttComponent } from "devextreme-angular";  
 
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;

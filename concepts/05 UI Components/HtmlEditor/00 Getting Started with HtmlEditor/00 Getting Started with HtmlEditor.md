@@ -1,3 +1,5 @@
+#include tutorials-intro-installationnote
+
 The HtmlEditor is a client-side WYSIWYG editor that allows its users to format textual and visual content and output it as HTML or Markdown. Supported features:
 
 - [Inline formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/'):

@@ -22,9 +22,7 @@ The task key.
 
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
-    import { DxGanttComponent } from "devextreme-angular";
-    
-    #include angular-component-decorator    
+    import { DxGanttComponent } from "devextreme-angular";  
     
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;
@@ -40,9 +38,6 @@ The task key.
     <!-- tab: app.component.html -->
     <dx-gantt ... >
     </dx-gantt>
-
-    <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
 
 ##### Vue
 

@@ -26,8 +26,6 @@ The **expandTask** method expands a task's parent tasks and the task itself.
     import { Component, ViewChild } from '@angular/core';
     import { DxGanttComponent } from "devextreme-angular";
     
-    #include angular-component-decorator    
-    
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;
         // Prior to Angular 8
@@ -42,9 +40,6 @@ The **expandTask** method expands a task's parent tasks and the task itself.
     <!-- tab: app.component.html -->
     <dx-gantt ... >
     </dx-gantt>
-
-    <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
 
 ##### Vue
 

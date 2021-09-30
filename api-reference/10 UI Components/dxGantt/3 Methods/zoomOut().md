@@ -22,8 +22,6 @@ Zooms out the Gantt chart.
     import { Component, ViewChild } from '@angular/core';
     import { DxGanttComponent } from "devextreme-angular";
     
-    #include angular-component-decorator    
-    
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent;
         // Prior to Angular 8
@@ -38,9 +36,6 @@ Zooms out the Gantt chart.
     <!-- tab: app.component.html -->
     <dx-gantt ... >
     </dx-gantt>
-
-    <!-- tab: app.module.ts -->
-    #include angular-app-module-ts
 
 ##### Vue
 

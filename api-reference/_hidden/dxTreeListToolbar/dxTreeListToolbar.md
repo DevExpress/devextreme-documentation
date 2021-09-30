@@ -11,6 +11,7 @@ Configures the toolbar.
 ---
 ![DevExtreme TreeList - Toolbar](/images/treelist/toolbar.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ToolbarCustomization/"
+#include common-demobutton-named with {
+    name: "DataGrid",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
 }

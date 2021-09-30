@@ -1,11 +1,11 @@
 ---
-id: dxDataGridToolbar.visible
+id: dxDataGridToolbarItem.visible
 type: Boolean
 default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the toolbar is visible.
+Specifies whether the toolbar item is visible.
 
 ---
 <!-- Description goes here -->

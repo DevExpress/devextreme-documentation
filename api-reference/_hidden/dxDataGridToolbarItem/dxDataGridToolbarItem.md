@@ -22,3 +22,7 @@ Configures toolbar items.
       <td> <a href="{basewidgetpath}/Configuration/groupPanel/">groupPanel</a>.<a href="{basewidgetpath}/Configuration/columnChooser/#enabled">visible</a> is set to <b>true</b> or <i>"auto"</i></td>
     </tr>'
 }
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
+}

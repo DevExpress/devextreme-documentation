@@ -6,7 +6,8 @@ id: dxList.reorderItem(itemIndex, toItemIndex)
 Reorders items with specific indexes.
 
 ##### return: Promise<void>
-A Promise that is resolved if the item is moved and rejected otherwise. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that is resolved if the item is moved and rejected otherwise.
+#include ref-promisedistinction
 
 ##### param(itemIndex): Number | Object
 The index of the item to be reordered.

@@ -9,7 +9,8 @@ Navigates to a row with the specified key.
 The row's key.
 
 ##### return: Promise<void>
-<!-- Description goes here -->
+A Promise that is resolved after the grid is navigated to the specified row.
+#include ref-promisedistinction
 
 ---
 This method performs the following actions:

@@ -6,7 +6,6 @@ default: 'years'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the minimum zoom level of tasks in the Gantt chart.
 
 ---
-<!-- Description goes here -->

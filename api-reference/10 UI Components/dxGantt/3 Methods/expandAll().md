@@ -157,4 +157,6 @@ Expands all tasks.
 ---
 
 #####See Also#####
+- [toolbar](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/)
+- [contextMenu](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu/)
 - [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)

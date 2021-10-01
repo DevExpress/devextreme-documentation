@@ -28,7 +28,6 @@ $(function () {
             }, {
                 dataField: "[Ship Date].[Calendar Year]",
                 area: "column",
-                // Filter Data
                 filterValues: [["CY 2003"], ["CY 2004"]]
             }, {
                 dataField: "[Ship Date].[Month of Year]",
@@ -41,8 +40,7 @@ $(function () {
                 dataField: "[Measures].[Tax Amount]",
                 area: "data",
                 format: "currency"
-            }],
-            retrieveFields: false
+            }]
         },
         allowSorting: true,
         allowSortingBySummary: true,
@@ -53,7 +51,8 @@ $(function () {
         },
         fieldChooser: {
             width: 500,
-            height: 450
+            height: 450,
+            allowSearch: true
         },
         export: {
             enabled: true
@@ -71,6 +70,9 @@ $(function () {
                 });
             });
             e.cancel = true;
+        },
+        onContentReady: function(e) {
+            e.component.getDataSource().expandHeaderItem("row", ["[Product].[Category].&[1]"]);
         }
-    });  
+    });
 });

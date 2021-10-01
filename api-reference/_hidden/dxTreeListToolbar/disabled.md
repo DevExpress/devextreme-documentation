@@ -1,7 +1,7 @@
 ---
 id: dxTreeListToolbar.disabled
 type: Boolean
-default: undefined
+default: false
 ---
 ---
 ##### shortDescription

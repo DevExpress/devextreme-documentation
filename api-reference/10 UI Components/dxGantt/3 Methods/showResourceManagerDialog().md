@@ -3,7 +3,7 @@ id: dxGantt.showResourceManagerDialog()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Invokes the Resource Manager dialog.
 
 ---
 
@@ -128,4 +128,5 @@ id: dxGantt.showResourceManagerDialog()
 
 #####See Also#####
 - [onResourceManagerDialogShowing](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onResourceManagerDialogShowing.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing')
+- [toolbar](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/)
 - [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

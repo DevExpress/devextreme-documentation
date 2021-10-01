@@ -28,7 +28,8 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
             headerFilter: {
                 visible: true,
                 width: 280,
-                height: 350
+                height: 350,
+                searchTimeout: 800
             },
             // ...
         });
@@ -41,7 +42,8 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
         <dxo-header-filter
             [visible]="true" 
             [width]="280"
-            [height]="350" >
+            [height]="350"
+            [searchTimeout]="800" >
         </dxo-header-filter>
         <!-- ... -->
     </dx-gantt>
@@ -84,6 +86,7 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
                 :visible="true"
                 :width="280"
                 :height="350" 
+                :search-timeout="800"
             />
             <!-- ... -->
         </DxGantt>
@@ -126,7 +129,8 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
                 <HeaderFilter
                     visible={true}
                     width={280} 
-                    height={350} />
+                    height={350}
+                    searchTimeout={800} />
                 {/* ... */}
             </Gantt>
         );
@@ -142,6 +146,7 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
             e.Visible(true)
             e.Width(280)
             e.Height(350)
+            e.SearchTimeout(800)
         })
         // ...
     )
@@ -154,6 +159,7 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
             e.Visible(true)
             e.Width(280)
             e.Height(350)
+            e.SearchTimeout(800)
         })
         // ...
     )

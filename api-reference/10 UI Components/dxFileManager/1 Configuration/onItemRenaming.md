@@ -37,7 +37,7 @@ The new name of the file or directory.
 ---
 ---
 
-Select a file/directory and click the **Rename** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') to invoke the dialog. In the dialog, enter a new name and click **Save**.
+Select a file/directory and click the **Rename** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') item to invoke the dialog. In the dialog, enter a new name and click **Save**.
 
 The component executes the **onItemRenaming** function when you enter a new file/directory name and click **Save** in the dialog.
 

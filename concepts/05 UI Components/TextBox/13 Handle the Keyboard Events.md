@@ -1,4 +1,4 @@
-The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyDown'), [keyPress](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyPress.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyPress'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#enterKey'). Within the functions that handle them, you can access the original keyboard events. If you are _not_ going to change the functions during the lifetime of the UI component, assign them to the respective UI component properties.
+The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyDown'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#enterKey'). Within the functions that handle them, you can access the original keyboard events. If you are _not_ going to change the functions during the lifetime of the UI component, assign them to the respective UI component properties.
 
 ---
 ##### jQuery
@@ -6,10 +6,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
     <!--JavaScript-->$(function() {
         $("#textBoxContainer").dxTextBox({
             onKeyDown: function (e) {
-                const keyCode = e.event.key;
-                // Event handling commands go here
-            },
-            onKeyPress: function (e) {
                 const keyCode = e.event.key;
                 // Event handling commands go here
             },
@@ -28,7 +24,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
     <!--HTML-->
     <dx-text-box
         (onKeyDown)="onKeyDown($event)"
-        (onKeyPress)="onKeyPress($event)"
         (onKeyUp)="onKeyUp($event)"
         (onEnterKey)="onEnterKey($event)">
     </dx-text-box>
@@ -38,10 +33,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
     // ...
     export class AppComponent {
         onKeyDown (e) {
-            let keyCode = e.event.key;
-            // Event handling commands go here
-        }
-        onKeyPress (e) {
             let keyCode = e.event.key;
             // Event handling commands go here
         }
@@ -66,7 +57,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
     <template>
         <DxTextBox
             @key-down="onKeyDown"
-            @key-press="onKeyPress"
             @key-up="onKeyUp"
             @enter-key="onEnterKey"
         />
@@ -83,10 +73,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
         },
         methods: {
             onKeyDown(e) {
-                const keyCode = e.event.key;
-                // Event handling commands go here
-            },
-            onKeyPress(e) {
                 const keyCode = e.event.key;
                 // Event handling commands go here
             },
@@ -113,7 +99,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
             return (
                 <TextBox
                     onKeyDown={this.onKeyDown}
-                    onKeyPress={this.onKeyPress}
                     onKeyUp={this.onKeyUp}
                     onEnterKey={this.onEnterKey}
                 />
@@ -121,10 +106,6 @@ The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Comp
         }
 
         onKeyDown(e) {
-            let keyCode = e.event.key;
-            // Event handling commands go here
-        }
-        onKeyPress(e) {
             let keyCode = e.event.key;
             // Event handling commands go here
         }

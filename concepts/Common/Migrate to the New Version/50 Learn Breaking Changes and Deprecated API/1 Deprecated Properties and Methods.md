@@ -4,10 +4,6 @@
 <th>API Member</th>
 </tr>
 <tr>
-<td>Autocomplete</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxAutocomplete/Configuration/#onKeyPress">onKeyPress</a></td>
-</tr>
-<tr>
 <td>BarGauge</td>
 <td><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxBarGauge/Configuration/export/#proxyUrl">proxyUrl</a></td>
 </tr>
@@ -20,16 +16,8 @@
 <td><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxCircularGauge/Configuration/export/#proxyUrl">proxyUrl</a></td>
 </tr>
 <tr>
-<td>ColorBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxColorBox/Configuration/#onKeyPress">onKeyPress</a></td>
-</tr>
-<tr>
 <td>DataGrid</td>
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeExportData">customizeExportData</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#customizeExcelCell">customizeExcelCell</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelFilterEnabled">excelFilterEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelWrapTextEnabled">excelWrapTextEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#fileName">fileName</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#ignoreExcelErrors">ignoreExcelErrors</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#proxyUrl">proxyUrl</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onExported">onExported</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onFileSaving">onFileSaving</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Methods/#exportToExcel(selectionOnly)">exportToExcel(selectionOnly)</a></td>
-</tr>
-<tr>
-<td>DateBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDateBox/Configuration/#onKeyPress">onKeyPress</a></td>
 </tr>
 <tr>
 <td>Diagram</td>
@@ -38,10 +26,6 @@
 <tr>
 <td>Drawer</td>
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDrawer/Configuration/#target">target</a></td>
-</tr>
-<tr>
-<td>DropDownBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDropDownBox/Configuration/#onKeyPress">onKeyPress</a></td>
 </tr>
 <tr>
 <td>Funnel</td>
@@ -61,19 +45,11 @@
 </tr>
 <tr>
 <td>Lookup</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/animation">animation</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#onTitleRendered">onTitleRendered</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#popupHeight">popupHeight</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#popupWidth">popupWidth</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#position">position</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#shading">shading</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#showPopupTitle">showPopupTitle</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#title">title</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#titleComponent">titleComponent</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#titleRender">titleRender</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#titleTemplate">titleTemplate</a></td>
-</tr>
-<tr>
-<td>Map</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxMap/Configuration/key">key</a></td>
+<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a></td>
 </tr>
 <tr>
 <td>NavBar</td>
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxNavBar">dxNavBar</a></td>
-</tr>
-<tr>
-<td>NumberBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxNumberBox/Configuration/#onKeyPress">onKeyPress</a></td>
 </tr>
 <tr>
 <td>PieChart</td>
@@ -108,28 +84,12 @@
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxScheduler/Methods/scrollToTime(hours_minutes_date)">scrollToTime(hours, minutes, date)</a></td>
 </tr>
 <tr>
-<td>SelectBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxSelectBox/Configuration/#onKeyPress">onKeyPress</a></td>
-</tr>
-<tr>
 <td>SlideOut</td>
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxSlideOut">dxSlideOut</a></td>
 </tr>
 <tr>
 <td>SlideOutView</td>
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxSlideOutView">dxSlideOutView</a></td>
-</tr>
-<tr>
-<td>TagBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxTagBox/Configuration/#onKeyPress">onKeyPress</a></td>
-</tr>
-<tr>
-<td>TextArea</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxTextArea/Configuration/#onKeyPress">onKeyPress</a></td>
-</tr>
-<tr>
-<td>TextBox</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxTextBox/Configuration/#onKeyPress">onKeyPress</a></td>
 </tr>
 <tr>
 <td>Toast</td>

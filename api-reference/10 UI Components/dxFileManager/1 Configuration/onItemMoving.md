@@ -36,7 +36,7 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and use the **Move To** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Move To" dialog. In the dialog, select the destination directory and click **Move**.  
+Select a file/folder and use the **Move To** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') to invoke the "Move To" dialog. In the dialog, select the destination directory and click **Move**.  
 
 The component executes the **onItemMoving** function when you click **Move** in the dialog.
 
@@ -175,4 +175,4 @@ The component executes the **onItemMoving** function when you click **Move** in 
 
 #####See Also#####
 - [itemMoving](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemMoving.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemMoving')
-- [permissions.move](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#move)
+- [permissions.move](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/move.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#move')

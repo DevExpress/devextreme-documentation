@@ -7,4 +7,4 @@ type: eventType
 Raised when a file or directory is copied.
 
 ---
-Main article: [onItemCopied](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemCopied)
+Main article: [onItemCopied](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/onItemCopied.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#onItemCopied')

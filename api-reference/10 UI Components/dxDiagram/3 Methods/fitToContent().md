@@ -1,7 +1,5 @@
 ---
-id: dxTreeListToolbarItem.disabled
-type: Boolean
-default: undefined
+id: dxDiagram.fitToContent()
 ---
 ---
 ##### shortDescription

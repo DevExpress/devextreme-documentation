@@ -6,7 +6,8 @@ id: GridBase.selectAll()
 Selects all rows.
 
 ##### return: Promise<void>
-A Promise that is resolved after all rows are selected. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that is resolved after all rows are selected.
+#include ref-promisedistinction
 
 ---
 Depending on the value of the [selectAllMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/selectAllMode.md '{basewidgetpath}/Configuration/selection/#selectAllMode') property, this method selects all rows on all pages or on the currently rendered pages only. If a filter is applied, this method selects only those rows that meet the filtering conditions.

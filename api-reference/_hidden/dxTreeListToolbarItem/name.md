@@ -5,7 +5,7 @@ type: String
 ---
 ---
 ##### shortDescription
-A name used to identify the toolbar item.
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+<!-- import * from 'api-reference\_hidden\dxDataGridToolbarItem\name.md' -->

@@ -1,7 +1,5 @@
 ---
-id: dxTreeListToolbarItem.visible
-type: Boolean
-default: undefined
+id: dxDiagram.fitToWidth()
 ---
 ---
 ##### shortDescription

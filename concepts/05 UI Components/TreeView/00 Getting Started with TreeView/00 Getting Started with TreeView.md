@@ -1,3 +1,5 @@
+#include tutorials-intro-installationnote
+
 The TreeView component displays a tree of text nodes from a local or remote source.
 
 This tutorial shows how to create and configure the TreeView. The demo below shows the resulting UI:

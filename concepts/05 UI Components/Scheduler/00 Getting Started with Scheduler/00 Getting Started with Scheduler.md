@@ -1,4 +1,6 @@
-Scheduler component emulates the user interface of Calendar applications on Windows or Mac OS.
+#include tutorials-intro-installationnote
+
+The Scheduler component emulates the user interface of Calendar applications on Windows or Mac OS.
 
 This tutorial shows you the basics of Scheduler configuration. The preview below shows the expected result:
 

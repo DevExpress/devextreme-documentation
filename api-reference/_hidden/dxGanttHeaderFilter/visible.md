@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether header filter icons are visible.
+Specifies whether to show header filter icons.
 
 ---

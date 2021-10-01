@@ -1,6 +1,7 @@
 ---
 id: dxGanttHeaderFilter.texts
 type: Object
+inheritsType: dxGanttHeaderFilterTexts
 ---
 ---
 ##### shortDescription

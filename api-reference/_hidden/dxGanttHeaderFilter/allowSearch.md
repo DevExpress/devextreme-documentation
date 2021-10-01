@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether searching is enabled in the header filter.
+Specifies whether to enable searching in the header filter.
 
 ---

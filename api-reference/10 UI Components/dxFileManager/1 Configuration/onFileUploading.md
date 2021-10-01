@@ -36,7 +36,7 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Use the **Upload Files** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/) to invoke the "Open" dialog and select a file to upload. 
+Use the **Upload Files** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') to invoke the "Open" dialog and select a file to upload. 
 
 The component executes the **onFileUploading** function when you click **Open** in the dialog.
 
@@ -175,4 +175,4 @@ The component executes the **onFileUploading** function when you click **Open** 
 
 #####See Also#####
 - [fileUploading](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/fileUploading.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#fileUploading')
-- [permissions.upload](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#upload)
+- [permissions.upload](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/upload.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#upload')

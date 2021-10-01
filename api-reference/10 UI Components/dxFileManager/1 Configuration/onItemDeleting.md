@@ -33,7 +33,7 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and click the **Delete** [context menu](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/) or [toolbar item](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/). In the confirmation dialog, click "Delete" to delete the file/folder. 
+Select a file/folder and click the **Delete** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/'). In the confirmation dialog, click "Delete" to delete the file/folder. 
 
 The **onItemCopying** function is executed when you click  **Delete** in the confirmation dialog.
 
@@ -154,4 +154,4 @@ The **onItemCopying** function is executed when you click  **Delete** in the con
 
 #####See Also#####
 - [itemDeleting](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/itemDeleting.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#itemDeleting')
-- [permissions.delete](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete)
+- [permissions.delete](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/permissions/delete.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#delete')

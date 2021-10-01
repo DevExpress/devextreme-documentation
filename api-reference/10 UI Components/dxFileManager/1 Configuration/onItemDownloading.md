@@ -32,11 +32,10 @@ The file to be downloaded.
 Model data. Available only if you use Knockout.
 
 ---
----
 
 Select a file and use the **Download** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') item to invoke the "Save As" dialog. In the dialog, select a directory where to download the file and click **Save**. 
 
-The component executes the **onItemDownloading** function when you click **Save** in the dialog.
+The component executes the **onItemDownloading** function when a user clicks **Save** in the dialog.
 
 ![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
 

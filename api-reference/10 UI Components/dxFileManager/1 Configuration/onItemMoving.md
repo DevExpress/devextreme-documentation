@@ -36,9 +36,9 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and use the **Move To** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') item to invoke the "Move To" dialog. In the dialog, select the destination directory and click **Move**.  
+Select a file/folder and use the **Move To** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') item to invoke the "Move to" dialog. In the dialog, select the destination directory and click **Move**.  
 
-The component executes the **onItemMoving** function when you click **Move** in the dialog.
+The component executes the **onItemMoving** function when a user clicks **Move** in the dialog.
 
 ![DevExtreme File Manager - Move File or directory](/images/FileManager/move-to-dialog.png)
 

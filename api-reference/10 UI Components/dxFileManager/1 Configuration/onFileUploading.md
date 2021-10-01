@@ -38,7 +38,7 @@ Model data. Available only if you use Knockout.
 
 Use the **Upload Files** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') item to invoke the "Open" dialog and select a file to upload. 
 
-The component executes the **onFileUploading** function when you click **Open** in the dialog.
+The component executes the **onFileUploading** function when a user clicks **Open** in the dialog.
 
 ![DevExtreme File Manager - Upload Files](/images/FileManager/upload-files-toolbar-item.png)
 

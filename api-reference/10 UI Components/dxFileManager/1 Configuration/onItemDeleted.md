@@ -24,7 +24,7 @@ Model data. Available only if you use Knockout.
 
 ---
 
-Select a file/folder and click the **Delete** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar item](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/'). In the confirmation dialog, click "Delete" to delete the file/folder. 
+Select a file/folder and click the **Delete** [context menu](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/contextMenu/') or [toolbar](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/') item. In the confirmation dialog, click "Delete" to delete the file/folder. 
 
 ![DevExtreme File Manager - Copy File or directory](/images/FileManager/delete-confirmation-dialog.png)
 

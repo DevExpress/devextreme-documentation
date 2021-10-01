@@ -5,7 +5,6 @@ default: 252
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the width of the popup menu that contains values for filtering.
 
 ---
-<!-- Description goes here -->

@@ -5,7 +5,6 @@ default: 325, 315 (Material)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the height of the popup menu that contains values for filtering.
 
 ---
-<!-- Description goes here -->

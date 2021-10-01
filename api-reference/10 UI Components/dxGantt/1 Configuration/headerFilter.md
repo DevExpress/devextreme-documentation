@@ -159,3 +159,6 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
     )
 
 ---
+
+#####See Also#####
+- [filterRow](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#filterRow)

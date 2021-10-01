@@ -85,7 +85,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
 
 ---
 
-When using maps, you should include an API key that authenticates your application. Specify this key using the [key](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/key '/Documentation/ApiReference/UI_Components/dxMap/Configuration/key/') property. Note that this property can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
+When using maps, you should include an API key that authenticates your application. Specify this key using the [apiKey](/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/) property. Note that this property can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
 
 ---
 ##### jQuery
@@ -96,7 +96,7 @@ When using maps, you should include an API key that authenticates your applicati
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
             provider: "bing",
-            key: {
+            apiKey: {
                 bing: "YOUR_BING_MAPS_API_KEY",
                 google: "YOUR_GOOGLE_MAPS_API_KEY",
                 googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
@@ -111,7 +111,7 @@ When using maps, you should include an API key that authenticates your applicati
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
         provider="bing"
-        [key]="authentificationKeys">
+        [apiKey]="authentificationKeys">
     </dx-map>
 
     <!--TypeScript-->
@@ -140,7 +140,7 @@ When using maps, you should include an API key that authenticates your applicati
             :zoom="10"
             :center="centerCoordinates"
             provider="bing"
-            :key="authentificationKeys"
+            :apiKey="authentificationKeys"
         />
     </template>
 
@@ -187,7 +187,7 @@ When using maps, you should include an API key that authenticates your applicati
                     defaultZoom={10}
                     defaultCenter={centerCoordinates}
                     provider="bing"
-                    key={authentificationKeys}
+                    apiKey={authentificationKeys}
                 />
             );
         }

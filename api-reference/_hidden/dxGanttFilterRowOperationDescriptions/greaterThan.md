@@ -5,7 +5,6 @@ default: 'Greater than'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Greater than" operation.
 
 ---
-<!-- Description goes here -->

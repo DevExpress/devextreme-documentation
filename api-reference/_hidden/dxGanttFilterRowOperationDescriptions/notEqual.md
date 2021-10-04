@@ -5,7 +5,6 @@ default: 'Does not equal'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Does not equal" operation.
 
 ---
-<!-- Description goes here -->

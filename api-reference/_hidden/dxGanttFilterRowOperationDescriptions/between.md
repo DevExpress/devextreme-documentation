@@ -5,7 +5,6 @@ default: 'Between'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Between" operation.
 
 ---
-<!-- Description goes here -->

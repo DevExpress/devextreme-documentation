@@ -5,7 +5,6 @@ default: 'Ends with'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Ends with" operation.
 
 ---
-<!-- Description goes here -->

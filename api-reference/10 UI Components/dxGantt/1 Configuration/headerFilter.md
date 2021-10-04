@@ -17,7 +17,7 @@ The header filter allows users to filter values in an individual column. The hea
 
 ![DevExtreme Gantt - Header Filter](/images/Gantt/header-filter.png)
 
-Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/headerFilter/#visible) property to **true** to display filter icons for all columns. To hide the filter icon for an individual column, set the column’s [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/columns/#allowHeaderFiltering) property to **false**.
+Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible) property to **true** to display filter icons for all columns. To hide the filter icon for an individual column, set the column’s [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering) property to **false**.
 
 ---
 ##### jQuery

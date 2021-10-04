@@ -5,7 +5,6 @@ default: 'Start'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the null text for the editor that is the start of a range for the "between" filter operation.
 
 ---
-<!-- Description goes here -->

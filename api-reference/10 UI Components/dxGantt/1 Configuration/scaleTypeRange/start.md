@@ -6,7 +6,6 @@ default: 'minutes'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the maximum zoom level of tasks in the Gantt chart.
 
 ---
-<!-- Description goes here -->

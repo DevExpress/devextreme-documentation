@@ -35,4 +35,101 @@ You can distribute fields between four different areas: row, column, filter, and
         });
     });
 
+##### Angular
+
+    <!-- tab: adventureworks.service.ts -->
+    // ...
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "[Product].[Category]",
+            area: "row"
+        }, {
+            dataField: "[Product].[Subcategory]",
+            area: "row"
+        }, {
+            dataField: "[Ship Date].[Calendar Year]",
+            area: "column"
+        }, {
+            dataField: "[Ship Date].[Month of Year]",
+            area: "column"
+        }, {
+            dataField: "[Measures].[Sales Amount]",
+            area: "data",
+            format: "currency"
+        }, {
+            dataField: "[Measures].[Tax Amount]",
+            area: "data",
+            format: "currency"
+        }]
+    });
+
+    // ...
+
+##### Vue
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "[Product].[Category]",
+            area: "row"
+        }, {
+            dataField: "[Product].[Subcategory]",
+            area: "row"
+        }, {
+            dataField: "[Ship Date].[Calendar Year]",
+            area: "column"
+        }, {
+            dataField: "[Ship Date].[Month of Year]",
+            area: "column"
+        }, {
+            dataField: "[Measures].[Sales Amount]",
+            area: "data",
+            format: "currency"
+        }, {
+            dataField: "[Measures].[Tax Amount]",
+            area: "data",
+            format: "currency"
+        }]
+    });
+
+    // ...
+
+##### React
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "[Product].[Category]",
+            area: "row"
+        }, {
+            dataField: "[Product].[Subcategory]",
+            area: "row"
+        }, {
+            dataField: "[Ship Date].[Calendar Year]",
+            area: "column"
+        }, {
+            dataField: "[Ship Date].[Month of Year]",
+            area: "column"
+        }, {
+            dataField: "[Measures].[Sales Amount]",
+            area: "data",
+            format: "currency"
+        }, {
+            dataField: "[Measures].[Tax Amount]",
+            area: "data",
+            format: "currency"
+        }]
+    });
+
+    // ...
+    
 ---

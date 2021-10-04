@@ -18,6 +18,65 @@ To display the field panel, enable the [fieldPanel](/Documentation/ApiReference/
         });
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-pivot-grid ... >
+        <dxo-field-panel
+            [visible]="true"
+            [showFilterFields]="false">
+        </dxo-field-panel>
+    </dx-pivot-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPivotGrid ... >
+            <DxFieldPanel
+                :visible="true"
+                :show-filter-fields="false"
+            />
+        </DxPivotGrid>
+    </template>
+
+    <script>
+    // ...
+    import {
+        // ...
+        DxFieldPanel
+    } from 'devextreme-vue/pivot-grid';
+
+    export default {
+        components: {
+            // ...
+            DxFieldPanel
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    import {
+        // ...
+        FieldPanel
+    } from 'devextreme-react/pivot-grid';
+
+    // ...
+    export default function App() {
+        return (
+            <PivotGrid ... >
+                <FieldPanel
+                    visible={true}
+                    showFilterFields={false}
+                /> 
+            </PivotGrid>
+        );
+    }
+
 ---
 
 #include common-demobutton with {

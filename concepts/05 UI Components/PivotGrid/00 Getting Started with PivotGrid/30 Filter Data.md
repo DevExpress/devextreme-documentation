@@ -14,17 +14,104 @@ Selected values are saved in a field's [filterValues](/Documentation/ApiReferenc
             dataSource: {
                 // ...
                 fields: [
-                // ...    
-                {
-                    dataField: "[Ship Date].[Calendar Year]",
-                    area: "column",
-                    filterValues: [["CY 2003"], ["CY 2004"]]
-                },
-                // ...
+                    // ...
+                    {
+                        dataField: "[Ship Date].[Calendar Year]",
+                        area: "column",
+                        filterValues: [["CY 2003"], ["CY 2004"]]
+                    },
+                    // ...
                 ],
             },
         });
     });
+
+##### Angular
+
+    <!-- tab: adventureworks.service.ts -->
+    // ...
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [
+            // ...
+            {
+                dataField: "[Ship Date].[Calendar Year]",
+                area: "column",
+                filterValues: [["CY 2003"], ["CY 2004"]]
+            },
+            // ...
+        ],
+    });
+
+    // ...
+
+    <!-- tab: app.component.html -->
+    <dx-pivot-grid ...
+        [allowFiltering]="true">
+    </dx-pivot-grid>
+
+##### Vue
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [
+            // ...
+            {
+                dataField: "[Ship Date].[Calendar Year]",
+                area: "column",
+                filterValues: [["CY 2003"], ["CY 2004"]]
+            },
+            // ...
+        ],
+    });
+
+    // ...
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPivotGrid ...
+            :allow-filtering="true">
+        </DxPivotGrid>
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [
+            // ...
+            {
+                dataField: "[Ship Date].[Calendar Year]",
+                area: "column",
+                filterValues: [["CY 2003"], ["CY 2004"]]
+            },
+            // ...
+        ],
+    });
+
+    // ...
+
+    <!-- tab: App.js -->
+    // ...
+    export default function App() {
+        return (
+            <PivotGrid ...
+                allowFiltering={true}>
+            </PivotGrid>
+        );
+    }
 
 ---
 

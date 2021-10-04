@@ -25,6 +25,92 @@ The All Fields section includes fields declared in the [fields[]](/Documentation
         });
     });
 
+##### Angular
+
+    <!-- tab: adventureworks.service.ts -->
+    // ...
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        // retrieveFields: false
+    });
+
+    // ...
+
+    <!-- tab: app.component.html -->
+    <dx-pivot-grid ... >
+        <dxo-field-chooser
+            [allowSearch]="true">
+        </dxo-field-chooser>
+    </dx-pivot-grid>
+
+##### Vue
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        // retrieveFields: false
+    });
+
+    // ...
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPivotGrid ... >
+            <DxFieldChooser :allow-search="true" />
+        </DxPivotGrid>
+    </template>
+
+    <script>
+    // ...
+    import { 
+        // ...
+        DxFieldChooser
+    } from 'devextreme-vue/pivot-grid';
+
+    export default {
+        components: {
+            // ...
+            DxFieldChooser
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        // retrieveFields: false
+    });
+
+    // ...
+
+    <!-- tab: App.js -->
+    // ...
+    import {
+        // ...
+        FieldChooser
+    } from 'devextreme-react/pivot-grid';
+
+    const dataSource = AdventureWorksService.getPivotGridDataSource();
+
+    export default function App() {
+        return (
+            <PivotGrid ... >
+                <FieldChooser
+                    allowSearch={true}
+                />
+            </PivotGrid>
+        );
+    }
+
 ---
 
 DevExtreme also includes a standalone [PivotGridFieldChooser](/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/) component. Unlike the field chooser integrated into the PivotGrid, the standalone field chooser can remain visible on the page at all times. Refer to the following demos for more information on both field choosers:

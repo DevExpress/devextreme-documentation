@@ -34,4 +34,103 @@ In the following code, the Category and Subcategory row field values are sorted 
         });
     });
 
+##### Angular
+
+    <!-- tab: adventureworks.service.ts -->
+    // ...
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "[Product].[Category]",
+            area: "row",
+            sortBySummaryField: "[Measures].[Sales Amount]",
+            sortOrder: "desc"
+        }, {
+            dataField: "[Product].[Subcategory]",
+            area: "row",
+            sortBySummaryField: "[Measures].[Sales Amount]",
+            sortOrder: "desc"
+        },
+        // ...
+        ],
+    });
+
+    // ...
+
+    <!-- tab: app.component.html -->
+    <dx-pivot-grid ...
+        [allowSortingBySummary]="true">
+    </dx-pivot-grid>
+
+##### Vue
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "[Product].[Category]",
+            area: "row",
+            sortBySummaryField: "[Measures].[Sales Amount]",
+            sortOrder: "desc"
+        }, {
+            dataField: "[Product].[Subcategory]",
+            area: "row",
+            sortBySummaryField: "[Measures].[Sales Amount]",
+            sortOrder: "desc"
+        },
+        // ...
+        ],
+    });
+
+    // ...
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPivotGrid ...
+            :allow-sorting-by-summary="true">
+        </DxPivotGrid>
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: adventureworks.service.js -->
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const dataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            dataField: "[Product].[Category]",
+            area: "row",
+            sortBySummaryField: "[Measures].[Sales Amount]",
+            sortOrder: "desc"
+        }, {
+            dataField: "[Product].[Subcategory]",
+            area: "row",
+            sortBySummaryField: "[Measures].[Sales Amount]",
+            sortOrder: "desc"
+        },
+        // ...
+        ],
+    });
+
+    // ...
+
+    <!-- tab: App.js -->
+    // ...
+    export default function App() {
+        return (
+            <PivotGrid ...
+                allowSortingBySummary={true}>
+            </PivotGrid>
+        );
+    }
+
 ---

@@ -6,7 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains descriptions for filter operations in the filter list.
 
 ---
-<!-- Description goes here -->

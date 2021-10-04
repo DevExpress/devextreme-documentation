@@ -5,6 +5,6 @@ default: '(Blanks)'
 ---
 ---
 ##### shortDescription
-Specifies text for the "(Blank)" item in the popup menu.
+Specifies text for the "(Blank)" item in the popup window.
 
 ---

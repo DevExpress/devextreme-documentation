@@ -1,5 +1,5 @@
 {
-  "ToolsVersion": "7.2.2",
+  "ToolsVersion": "7.2.3",
   "Modules": {
     "data/array_store": {
       "default": {}

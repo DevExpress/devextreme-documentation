@@ -6,7 +6,7 @@ default: 'left', 'top' (Material)
 ---
 ---
 ##### shortDescription
-Specifies the location of a label against the editor.
+Specifies the location of a label against the editor. Applies only if the [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode) is *"default"*.
 
 ---
 #include common-demobutton with {

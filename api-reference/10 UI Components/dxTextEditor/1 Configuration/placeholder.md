@@ -5,6 +5,8 @@ default: ''
 ---
 ---
 ##### shortDescription
-The text displayed by the UI component when the UI component value is empty.
+Specifies a text string displayed when the editor's [value]({currentpath}/#value) is empty.
 
 ---
+#####See Also#####
+- [label]({currentpath}/#label)

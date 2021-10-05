@@ -5,7 +5,7 @@ inheritsType: dxGanttFilterRow
 ---
 ---
 ##### shortDescription
-Configures the filter row settings.
+Configures filter row settings.
 
 ---
 

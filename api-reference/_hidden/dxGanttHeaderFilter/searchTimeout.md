@@ -5,7 +5,6 @@ default: 500
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a delay in milliseconds between typing a search string and the search execution.
 
 ---
-<!-- Description goes here -->

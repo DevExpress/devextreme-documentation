@@ -5,7 +5,6 @@ default: 'Cancel'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the "Cancel" button in the popup window.
 
 ---
-<!-- Description goes here -->

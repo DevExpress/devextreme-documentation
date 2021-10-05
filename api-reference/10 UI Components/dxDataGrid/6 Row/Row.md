@@ -2,7 +2,7 @@
 id: dxDataGridRowObject
 type: Object
 module: ui/data_grid
-export: RowObject
+export: Row
 ---
 ---
 ##### shortDescription

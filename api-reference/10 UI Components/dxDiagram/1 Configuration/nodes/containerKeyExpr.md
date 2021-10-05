@@ -1,7 +1,7 @@
 ---
 id: dxDiagram.Options.nodes.containerKeyExpr
 type: String | function(data, value)
-default: undefined
+default: 'containerKey'
 ---
 ---
 ##### shortDescription

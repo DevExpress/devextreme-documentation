@@ -1,6 +1,6 @@
 ---
 id: DataChange.data
-type: Object
+type: any
 ---
 ---
 ##### shortDescription

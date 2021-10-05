@@ -1,5 +1,5 @@
 {
-  "ToolsVersion": "7.2.2",
+  "ToolsVersion": "7.2.3",
   "Modules": {
     "animation/fx": {
       "AnimationConfig": {},
@@ -83,7 +83,7 @@
       "ColumnBase": {},
       "ColumnButtonBase": {},
       "default": {},
-      "RowObject": {},
+      "Row": {},
       "dxDataGridToolbar": {},
       "dxDataGridToolbarItem": {}
     },
@@ -613,7 +613,7 @@
     "ui/tree_list": {
       "default": {},
       "Node": {},
-      "RowObject": {},
+      "Row": {},
       "dxTreeListToolbar": {},
       "dxTreeListToolbarItem": {}
     },

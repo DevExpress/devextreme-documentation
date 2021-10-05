@@ -6,7 +6,7 @@ id: dxGantt.expandAllToLevel(level)
 Expands all tasks down to the specified hierarchical level.
 
 ##### param(level): Number
-The hierarchical level. 
+The hierarchical level.
 
 ---
 
@@ -157,4 +157,4 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
 ---
 
 #####See Also#####
-- [Gantt Elements](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/)
+- [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

@@ -3146,6 +3146,9 @@
     "dxDataGridOptions.customizeExportData": {
       "vue": "customize-export-data"
     },
+    "dxDataGridOptions.dataRowTemplate": {
+      "vue": "data-row-template"
+    },
     "dxDataGridOptions.editing": {
       "angular": "dxo-editing",
       "react": "Editing",

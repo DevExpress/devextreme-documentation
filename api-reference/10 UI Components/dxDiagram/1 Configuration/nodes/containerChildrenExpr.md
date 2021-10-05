@@ -1,7 +1,7 @@
 ---
 id: dxDiagram.Options.nodes.containerChildrenExpr
 type: String | function(data, value)
-default: 'children'
+default: undefined
 ---
 ---
 ##### shortDescription

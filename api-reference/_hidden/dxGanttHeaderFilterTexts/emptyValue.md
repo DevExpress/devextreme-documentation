@@ -5,7 +5,6 @@ default: '(Blanks)'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the "(Blank)" item in the popup window.
 
 ---
-<!-- Description goes here -->

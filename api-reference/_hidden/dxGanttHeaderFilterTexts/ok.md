@@ -5,7 +5,6 @@ default: 'Ok'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the "OK" button in the popup window.
 
 ---
-<!-- Description goes here -->

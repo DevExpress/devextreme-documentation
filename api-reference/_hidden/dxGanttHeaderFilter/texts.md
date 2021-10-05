@@ -1,10 +1,10 @@
 ---
 id: dxGanttHeaderFilter.texts
 type: Object
+inheritsType: dxGanttHeaderFilterTexts
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains properties that specify text for various elements of the popup window.
 
 ---
-<!-- Description goes here -->

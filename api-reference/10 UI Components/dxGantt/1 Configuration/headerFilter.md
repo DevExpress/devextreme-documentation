@@ -17,7 +17,7 @@ The header filter allows users to filter values in an individual column. The hea
 
 ![DevExtreme Gantt - Header Filter](/images/Gantt/header-filter.png)
 
-Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible) property to **true** to display filter icons for all columns. To hide the filter icon for an individual column, set the column’s [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering) property to **false**.
+Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/visible.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible') property to **true** to display filter icons for all columns. To hide the filter icon for an individual column, set the column’s [allowHeaderFiltering](/api-reference/_hidden/GridBaseColumn/allowHeaderFiltering.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering') property to **false**.
 
 ---
 ##### jQuery
@@ -167,4 +167,4 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
 ---
 
 #####See Also#####
-- [filterRow](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#filterRow)
+- [filterRow](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/filterRow.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#filterRow')

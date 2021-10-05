@@ -8,7 +8,7 @@ Configures zoom range settings.
 
 ---
 
-Use the [scaleTypeRange.start](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#start) and [scaleTypeRange.end](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#end) properties to limit zoom in the Gantt chart.
+Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/scaleTypeRange/start.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#start') and [scaleTypeRange.end](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/scaleTypeRange/end.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#end') properties to limit zoom in the Gantt chart.
 
 ---
 ##### jQuery
@@ -146,6 +146,6 @@ Use the [scaleTypeRange.start](/Documentation/ApiReference/UI_Components/dxGantt
 ---
 
 #####See Also#####
-- [scaleType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType)
-- [toolbar](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/)
-- [contextMenu](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu/)
+- [scaleType](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/scaleType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType')
+- [toolbar](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/')
+- [contextMenu](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/contextMenu/')

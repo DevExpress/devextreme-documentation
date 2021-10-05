@@ -85,7 +85,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
 
 ---
 
-When using maps, you should include an API key that authenticates your application. Specify this key using the [apiKey](/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/) property. Note that this property can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
+When using maps, you should include an API key that authenticates your application. Specify this key using the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. Note that this property can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
 
 ---
 ##### jQuery

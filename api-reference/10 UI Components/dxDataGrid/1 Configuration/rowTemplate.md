@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.rowTemplate
 type: template
+deprecated: 
 ---
 ---
 ##### shortDescription

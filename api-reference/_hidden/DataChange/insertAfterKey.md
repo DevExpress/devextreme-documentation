@@ -4,7 +4,23 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A key that identifies a record after which a new record should be inserted. Applies only if the [type](/api-reference/_hidden/DataChange/type.md '{currentpath}/#type') is *"insert"*.
 
 ---
-<!-- Description goes here -->
+The following code inserts a new record after a record with key 10:
+
+    <!-- tab: JavaScript -->
+    changes.push({
+        type: "insert",
+        data: [ ... ]
+        insertAfterKey: 10
+    });
+
+[important] Do not use **insertAfterKey** with [insertBeforeKey]({currentpath}/#insertBeforeKey).
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomNewRecordPosition/"
+}
+
+#####See Also#####
+- [newRowPosition]({basewidgetpath}/Configuration/editing/#newRowPosition)

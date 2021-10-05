@@ -18,6 +18,18 @@ Export settings.
 
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
+The **exportGantt(options)** method allows you to save information about the Gantt chart's layout, appearance, and tasks. This method supports the following options:
+
+- **createDocumentMethod** - Specifies a function that creates a PDF document.
+- **format** {string | width?: number, height?: number } - Specifies the document size.
+- **landscape** {boolean} - Specifies whether to use horizontal orientation for the document.
+- **fileName** {string} - Specifies the file name.
+- **exportMode** {"all", "treeList", "chart"} - Specifies the part of the component to export (chart area, tree list area, or the entire component).
+- **dateRange** {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Restricts data output against a specified date range.
+- **margins** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
+
+The exporter supports standard PDF fonts. Refer to the [Use of Unicode Characters / UTF-8](https://github.com/parallax/jsPDF#use-of-unicode-characters--utf-8) article to use custom fonts for exporting.
+
 You can call this method at any point in your application. In this example, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
 
 ---

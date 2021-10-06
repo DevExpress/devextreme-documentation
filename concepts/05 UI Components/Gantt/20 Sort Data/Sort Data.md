@@ -7,6 +7,10 @@ Use the following properties to specify whether users can sort column data:
 
 Use the **sorting**.[mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property to specify the sorting mode.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/"
+}
+
 ---
 
 ##### jQuery

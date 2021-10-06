@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether all item labels are aligned. Applies only if the [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode) is *"default"*.
+Specifies whether all item labels are aligned. Applies only if the [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode) is *"outside"*.
 
 ---
 #####See Also#####

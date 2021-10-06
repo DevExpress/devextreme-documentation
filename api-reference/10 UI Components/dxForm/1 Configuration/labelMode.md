@@ -10,9 +10,9 @@ Specifies a display mode for [item labels](/Documentation/ApiReference/UI_Compon
 
 ---
 #include texteditor-labelMode with {
-    manual_mode: '
+    outside_mode: '
     <tr>
-        <td><i>"default"</i></td>
+        <td><i>"outside"</i></td>
         <td>
             The label is displayed outside the editor, and its position depends on the following properties:
             <ul>

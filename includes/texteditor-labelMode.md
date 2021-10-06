@@ -21,5 +21,5 @@ This property can have one of the following values:
         <td>The label is hidden.</td>
         <td><img src="/images/UiWidgets/texteditor-hidden-label.png" alt="DevExtreme {WidgetName}: Hidden label mode" /></td>
     </tr>
-    ${{manual_mode}}
+    ${{outside_mode}}
 </table>

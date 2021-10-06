@@ -6,7 +6,7 @@ default: 'left'
 ---
 ---
 ##### shortDescription
-Specifies the label's horizontal alignment. Applies only if the [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode) is *"default"*.
+Specifies the label's horizontal alignment. Applies only if the [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode) is *"outside"*.
 
 ---
 

@@ -9228,6 +9228,9 @@
     "dxSchedulerOptions.descriptionExpr": {
       "vue": "description-expr"
     },
+    "dxSchedulerOptions.dropDownAppointmentTemplate": {
+      "vue": "drop-down-appointment-template"
+    },
     "dxSchedulerOptions.editing": {
       "angular": "dxo-editing",
       "react": "Editing",
@@ -9427,6 +9430,9 @@
     },
     "dxSchedulerOptions.views.dateCellTemplate": {
       "vue": "date-cell-template"
+    },
+    "dxSchedulerOptions.views.dropDownAppointmentTemplate": {
+      "vue": "drop-down-appointment-template"
     },
     "dxSchedulerOptions.views.endDayHour": {
       "vue": "end-day-hour"

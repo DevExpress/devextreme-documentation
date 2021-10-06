@@ -8,4 +8,3 @@ inheritsType: dxGanttFilterRowOperationDescriptions
 Specifies descriptions for filter operations in the filter list.
 
 ---
-

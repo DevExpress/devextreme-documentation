@@ -16,6 +16,10 @@ Export settings.
 
 ---
 
+#include common-demobutton with { 
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
+}
+
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
 The **exportGantt(options)** method allows you to save information about the Gantt chart's layout, appearance, and tasks. This method supports the following options:
@@ -337,6 +341,32 @@ You can call this method at any point in your application. In this example, this
 
 ---
 
-#include common-demobutton with { 
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
-}
+Use the following settings to process the PDF document when the export is complete:
+
+    <!--JavaScript-->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.exportToPdf({
+        format: "A4",
+        landscape: true,
+        exportMode: "chart",
+        dateRange: "visible"
+    }).then(function(doc) { 
+        doc.addPage(); 
+        // your code
+        doc.save('customDoc.pdf'); 
+    });
+
+Use the following settings to print the exported PDF document:
+
+    <!--JavaScript-->
+    var gantt = $("#ganttContainer").dxGantt("instance");
+    gantt.exportToPdf({
+        format: "A4",
+        landscape: true,
+        exportMode: "chart",
+        dateRange: "visible"
+    }).then(function(doc) { 
+        doc.autoPrint(); 
+        window.open(doc.output('your_url'), '_blank');
+    });
+

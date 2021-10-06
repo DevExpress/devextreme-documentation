@@ -12,7 +12,7 @@ The following code inserts a new record before a record with key 5:
     <!-- tab: JavaScript -->
     changes.push({
         type: "insert",
-        data: [ ... ]
+        data: { ... },
         insertBeforeKey: 5
     });
 

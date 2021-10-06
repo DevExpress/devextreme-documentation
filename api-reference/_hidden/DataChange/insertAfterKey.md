@@ -12,7 +12,7 @@ The following code inserts a new record after a record with key 10:
     <!-- tab: JavaScript -->
     changes.push({
         type: "insert",
-        data: [ ... ]
+        data: { ... },
         insertAfterKey: 10
     });
 

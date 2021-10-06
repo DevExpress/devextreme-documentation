@@ -5,7 +5,6 @@ default: 'Starts with'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Starts with" operation.
 
 ---
-<!-- Description goes here -->

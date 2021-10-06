@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the filter row is visible.
 
 ---
-<!-- Description goes here -->

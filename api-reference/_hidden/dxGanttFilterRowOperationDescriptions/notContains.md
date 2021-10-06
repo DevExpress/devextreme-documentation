@@ -5,7 +5,6 @@ default: 'Does not contain'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Does not contain" operation.
 
 ---
-<!-- Description goes here -->

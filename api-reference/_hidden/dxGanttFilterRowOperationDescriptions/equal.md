@@ -5,7 +5,6 @@ default: 'Equals'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Equals" operation.
 
 ---
-<!-- Description goes here -->

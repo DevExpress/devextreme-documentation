@@ -5,7 +5,6 @@ default: '(All)'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the "All" filter operation.
 
 ---
-<!-- Description goes here -->

@@ -5,7 +5,6 @@ default: 'Contains'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text for the "Contains" operation.
 
 ---
-<!-- Description goes here -->

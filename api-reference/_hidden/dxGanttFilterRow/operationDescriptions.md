@@ -5,7 +5,7 @@ inheritsType: dxGanttFilterRowOperationDescriptions
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies descriptions for filter operations in the filter list.
 
 ---
-<!-- Description goes here -->
+

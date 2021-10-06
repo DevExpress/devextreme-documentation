@@ -115,7 +115,7 @@ Selected values are saved in a field's [filterValues](/Documentation/ApiReferenc
 
 ---
 
-If you need to customize a header filter's appearance or contents, use the global [headerFilter](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/) object or a field's [headerFilter](/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/) object. Refer to the Header Filter demo for more information:
+If you need to customize a header filter's appearance or content, use the global [headerFilter](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/) object or a field's [headerFilter](/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/) object. Refer to the Header Filter demo for more information:
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/HeaderFilter/"

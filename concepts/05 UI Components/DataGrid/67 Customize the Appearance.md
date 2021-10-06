@@ -5,7 +5,7 @@ The following image is an element map. Click the element you want to customize t
 <p style="display:inline-block"><img src="/images/DataGrid/Customize_the_Appearance.png" usemap="#image-map" alt="DevExtreme HTML5 JavaScript DataGrid Appearance"></p>
 
 <map name="image-map">
-    <area alt="Toolbar" title="Toolbar" href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing" coords="565,50,4,3" shape="rect">
+    <area alt="Toolbar" title="Toolbar" href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/" coords="565,50,4,3" shape="rect">
     <area alt="Search Panel" title="Search Panel" href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing" coords="571,4,737,50" shape="rect">
     <area alt="Selection Column" title="Selection Column" href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/" coords="14,59,75,305" shape="rect">
     <area alt="Expand Column" title="Expand Column" href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/" coords="84,59,102,306" shape="rect">

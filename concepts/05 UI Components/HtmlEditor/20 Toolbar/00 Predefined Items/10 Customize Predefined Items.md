@@ -23,8 +23,8 @@ To customize a button, assign its [name](/concepts/05%20UI%20Components/HtmlEdit
         <dxo-toolbar>
             <dxi-item
                 [options]="clearFormatOptions"
-                formatName="clear"
-            />
+                formatName="clear">
+            </dxi-item>
         </dxo-toolbar>
     </dx-html-editor>
 

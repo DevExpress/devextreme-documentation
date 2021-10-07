@@ -32,9 +32,9 @@ The **exportGantt(options)** method allows you to save information about the Gan
 - **dateRange** {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Restricts data output against a specified date range.
 - **margins** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
 
-The exporter supports standard PDF fonts. Refer to the [Use of Unicode Characters / UTF-8](https://github.com/parallax/jsPDF#use-of-unicode-characters--utf-8) article to use custom fonts for exporting.
+The exporter supports standard PDF fonts. Refer to the [Use of Unicode Characters / UTF-8](https://github.com/parallax/jsPDF#use-of-unicode-characters--utf-8) article to get information on how to use custom fonts for exporting.
 
-You can call this method at any point in your application. In this example, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
+You can call the **exportGantt** method at any point in your application. In the example below, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
 
 ---
 ##### jQuery
@@ -341,7 +341,7 @@ You can call this method at any point in your application. In this example, this
 
 ---
 
-Use the following settings to process the PDF document when the export is complete:
+The following code snippet illustrates how to process the PDF document when the export is complete:
 
     <!--JavaScript-->
     var gantt = $("#ganttContainer").dxGantt("instance");
@@ -356,7 +356,7 @@ Use the following settings to process the PDF document when the export is comple
         doc.save('customDoc.pdf'); 
     });
 
-Use the following settings to print the exported PDF document:
+To print the exported PDF document, call the **autoPrint** method:
 
     <!--JavaScript-->
     var gantt = $("#ganttContainer").dxGantt("instance");

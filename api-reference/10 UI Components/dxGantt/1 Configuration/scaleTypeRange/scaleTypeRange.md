@@ -8,7 +8,7 @@ Configures zoom range settings.
 
 ---
 
-Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/scaleTypeRange/start.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#start') and [scaleTypeRange.end](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/scaleTypeRange/end.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#end') properties to limit zoom in the Gantt chart.
+Use the [scaleTypeRange.min]/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#min) and [scaleTypeRange.max](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/#max) properties to limit zoom in the Gantt chart.
 
 ---
 ##### jQuery

@@ -25,7 +25,7 @@ HtmlEditor generates the following HTML tags and attributes:
  </tr>
  <tr>
     <td>Table content</td>
-    <td>&lt;table&gt;,&lt;tbody&gt;,&lt;tr&gt;, &lt;td&gt;</td>
+    <td>&lt;table&gt;, &lt;thead&gt;, &lt;th&gt;,&lt;tbody&gt;, &lt;tr&gt;, &lt;td&gt;</td>
  </tr>
 </table>
 

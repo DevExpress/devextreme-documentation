@@ -13,10 +13,11 @@ The length of the content to be formatted.
 [Embedded items](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') have a length of 1.
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-A format name.
+A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name').
 
 ##### param(formatValue): any
-A format value.
+A format value.         
+Pass **null** to remove a format.
 
 ---
 [note] The entire line will be formatted even if only a single character from it falls within the given range.

@@ -13,14 +13,14 @@ The following table lists toolbar items and the formats they apply (if applicabl
 
 <table class="dx-table">
     <tr>
-        <th>Toolbar Item</th>
-        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name">name</a></th>
-        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#acceptedValues">acceptedValue</a></th>
+        <th>Toolbar item <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name">name</a></th>
+        <th><a href="/Documentation/Guide/UI_Components/HtmlEditor/Formats/">Format</a></th>
+        <th><a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#acceptedValues">acceptedValues</a></th>
     </tr>
     <tr>
         <td>"background"</td>
         <td>"background"</td>
-        <td>Any value the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background-color</a> CSS property accepts.</td>
+        <td>Any value the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"  target="_blank">background-color</a> CSS property accepts.</td>
     </tr>
     <tr>
         <td>"bold"</td>
@@ -30,7 +30,7 @@ The following table lists toolbar items and the formats they apply (if applicabl
     <tr>
         <td>"color"</td>
         <td>"color"</td>
-        <td>Any value the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">color</a> CSS property accepts.</td>
+        <td>Any value the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">color</a> CSS property accepts.</td>
     </tr>
     <tr>
         <td>"italic"</td>
@@ -125,7 +125,17 @@ The following table lists toolbar items and the formats they apply (if applicabl
     <tr>
         <td>"variable"</td>
         <td>"variable"</td>
-        <td>Object {{ value: String, escapeChar: String | Array&lt;String&gt; }}</td>
+        <td>Object ({ value: String, escapeChar: String | Array&lt;String&gt; })</td>
+    </tr>
+    <tr>
+        <td>"font"</td>
+        <td>"font"</td>
+        <td>Any value the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">font-family</a> CSS property accepts.</td>
+    </tr>
+    <tr>
+        <td>"size"</td>
+        <td>"size"</td>
+        <td>Any value the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size</a> CSS property accepts.</td>
     </tr>
     <tr>
         <td>"undo"</td>
@@ -144,6 +154,61 @@ The following table lists toolbar items and the formats they apply (if applicabl
     </tr>
     <tr>
         <td>"separator"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"cellProperties"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"tableProperties"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"insertTable"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"insertHeaderRow"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"insertRowAbove"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"insertRowBelow"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"insertColumnLeft"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"insertColumnRight"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"deleteColumn"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"deleteRow"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>"deleteTable"</td>
         <td>-</td>
         <td>-</td>
     </tr>

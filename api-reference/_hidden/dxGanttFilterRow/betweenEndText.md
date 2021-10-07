@@ -8,4 +8,3 @@ default: 'End'
 Specifies the null text for the editor that sets the end of a range for the "between" filter operation.
 
 ---
-

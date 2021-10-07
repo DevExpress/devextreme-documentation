@@ -6,17 +6,16 @@ id: dxHtmlEditor.formatText(index, length, formatName, formatValue)
 Applies a single [text format](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') to all characters in the given range.
 
 ##### param(index): Number
-A zero-based index at which to begin formatting.
+<!-- %param(index)% -->
 
 ##### param(length): Number
-The length of the content to be formatted.      
-[Embedded items](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') have a length of 1.
+<!-- %param(length)% -->
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-A format name.
+<!-- %param(formatName)% -->
 
 ##### param(formatValue): any
-A format value.
+<!-- %param(formatValue)% -->
 
 ---
 ---
@@ -115,3 +114,5 @@ A format value.
 #####See Also#####
 - [formatText(index, length, formats)](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/formatText(index_length_formats).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatTextindex_length_formats')
 - [formatLine(index, length, formatName, formatValue)](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/formatLine(index_length_formatName_formatValue).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatLineindex_length_formatName_formatValue') | [formatLine(index, length, formats)](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/formatLine(index_length_formats).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#formatLineindex_length_formats')
+
+<!-- import * from 'api-reference\10 UI Components\dxHtmlEditor\3 Methods\formatLine(index_length_formatName_formatValue).md' -->

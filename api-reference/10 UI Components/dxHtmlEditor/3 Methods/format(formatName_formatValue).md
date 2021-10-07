@@ -6,10 +6,10 @@ id: dxHtmlEditor.format(formatName, formatValue)
 Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
 
 ##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
-A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name').
+<!-- %param(formatName)% -->
 
 ##### param(formatValue): any
-A format value.
+<!-- %param(formatValue)% -->
 
 ---
 If no content is selected, the format applies to the character typed next.
@@ -134,3 +134,5 @@ If no content is selected, the format applies to the character typed next.
 
 #####See Also#####
 - [insertEmbed()](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/insertEmbed(index_type_config).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#insertEmbedindex_type_config')
+
+<!-- import * from 'api-reference\10 UI Components\dxHtmlEditor\3 Methods\formatLine(index_length_formatName_formatValue).md' -->

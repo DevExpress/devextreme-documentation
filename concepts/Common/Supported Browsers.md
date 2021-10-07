@@ -8,8 +8,8 @@
 
 **Browsers integrated in the following mobile OS**
 
-- ![Android](/images/PhoneJS/android.png) Android 4.4+
-- ![iOS Safari](/images/PhoneJS/safari-ios.png) iOS 9+
+- ![Chromium](/images/PhoneJS/chromium.png) Android 5+
+- ![iOS Safari](/images/PhoneJS/safari-ios.png) iOS 10+
 
 **Browsers integrated in the following frameworks**
 

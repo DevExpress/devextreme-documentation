@@ -17,8 +17,8 @@ Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20C
     $(function() {
         $("#gantt").dxGantt({
             scaleTypeRange: {
-                start: 'days',
-                end: 'years'
+                min: 'days',
+                max: 'years'
             },
             // ...
         });
@@ -29,8 +29,8 @@ Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20C
     <!-- tab: app.component.html -->
     <dx-gantt ... >
         <dxo-scale-type-range
-            [start]="days" 
-            [end]="years">
+            [min]="days" 
+            [max]="years">
         </dxo-scale-type-range>
         <!-- ... -->
     </dx-gantt>
@@ -70,8 +70,8 @@ Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20C
     <template>
         <DxGantt ... >
             <DxScaleTypeRange
-                start="days"
-                end="years"
+                min="days"
+                max="years"
             />
             <!-- ... -->
         </DxGantt>
@@ -112,8 +112,8 @@ Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20C
         return (
             <Gantt ... >
                 <ScaleTypeRange
-                    start="days"
-                    end="years" />
+                    min="days"
+                    max="years" />
                 {/* ... */}
             </Gantt>
         );
@@ -126,8 +126,8 @@ Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20C
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ScaleTypeRange(e => {
-            e.Start(GanttScaleType.Days)
-            e.End(GanttScaleType.Years)
+            e.Min(GanttScaleType.Days)
+            e.Max(GanttScaleType.Years)
         })
         // ...
     )
@@ -137,8 +137,8 @@ Use the [scaleTypeRange.start](/api-reference/10%20UI%20Components/dxGantt/1%20C
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ScaleTypeRange(e => {
-            e.Start(GanttScaleType.Days)
-            e.End(GanttScaleType.Years)
+            e.Min(GanttScaleType.Days)
+            e.Max(GanttScaleType.Years)
         })
         // ...
     )

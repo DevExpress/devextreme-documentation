@@ -139,7 +139,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
     export class AppComponent {
         onCellPrepared (e) {
             if (e.rowType == "detailAdaptive") {
-                e.cellElement.addClass("adaptiveRowStyle");
+                e.cellElement.classList.add("adaptiveRowStyle");
             }
         }
     }
@@ -183,7 +183,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
         methods: {
             onCellPrepared(e) {
                 if (e.rowType == 'detailAdaptive') {
-                    e.cellElement.addClass('adaptiveRowStyle');
+                    e.cellElement.classList.add('adaptiveRowStyle');
                 }
             }
         }
@@ -215,7 +215,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 
         onCellPrepared(e) {
             if (e.rowType == 'detailAdaptive') {
-                e.cellElement.addClass('adaptiveRowStyle');
+                e.cellElement.classList.add('adaptiveRowStyle');
             }
         }
 

@@ -80,7 +80,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
             insertImageAtTheBeginning() {
                 // Makes the first five characters bold and underlined
                 this.htmlEditor.insertEmbed(0, "extendedImage", {
-                    src: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
+                    src: "https://js.devexpress.com/Content/images/doc/21_2/PhoneJS/person1.png",
                     alt: "Photo",
                     width: "100px"
                 });
@@ -108,7 +108,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
         const insertImageAtTheBeginning = () => {
             // Makes the first five characters bold and underlined
             htmlEditor.current.instance.insertEmbed(0, "extendedImage", {
-                src: "https://js.devexpress.com/Content/images/doc/21_1/PhoneJS/person1.png",
+                src: "https://js.devexpress.com/Content/images/doc/21_2/PhoneJS/person1.png",
                 alt: "Photo",
                 width: "100px"
             });

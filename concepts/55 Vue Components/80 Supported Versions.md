@@ -8,6 +8,10 @@
         <td>vue_version_21_2</td>
     </tr>
     <tr>
+        <td>v21.1.x</td>
+        <td>vue_version_21_1</td>
+    </tr>
+    <tr>
         <td>v20.2.x</td>
         <td>vue_version_20_2</td>
     </tr>

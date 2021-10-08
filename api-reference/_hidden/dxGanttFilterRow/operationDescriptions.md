@@ -1,6 +1,6 @@
 ---
 id: dxGanttFilterRow.operationDescriptions
-type: Object
+type: dxGanttFilterRowOperationDescriptions
 inheritsType: dxGanttFilterRowOperationDescriptions
 ---
 ---

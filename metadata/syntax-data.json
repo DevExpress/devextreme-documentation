@@ -5678,6 +5678,35 @@
     "dxGanttFilterRow.showOperationChooser": {
       "vue": "show-operation-chooser"
     },
+    "dxGanttFilterRowOperationDescriptions": {
+      "angular": "dxo-dx-gantt-filter-row-operation-descriptions",
+      "react": "DxGanttFilterRowOperationDescriptions",
+      "vue": "DxDxGanttFilterRowOperationDescriptions"
+    },
+    "dxGanttFilterRowOperationDescriptions.endsWith": {
+      "vue": "ends-with"
+    },
+    "dxGanttFilterRowOperationDescriptions.greaterThan": {
+      "vue": "greater-than"
+    },
+    "dxGanttFilterRowOperationDescriptions.greaterThanOrEqual": {
+      "vue": "greater-than-or-equal"
+    },
+    "dxGanttFilterRowOperationDescriptions.lessThan": {
+      "vue": "less-than"
+    },
+    "dxGanttFilterRowOperationDescriptions.lessThanOrEqual": {
+      "vue": "less-than-or-equal"
+    },
+    "dxGanttFilterRowOperationDescriptions.notContains": {
+      "vue": "not-contains"
+    },
+    "dxGanttFilterRowOperationDescriptions.notEqual": {
+      "vue": "not-equal"
+    },
+    "dxGanttFilterRowOperationDescriptions.startsWith": {
+      "vue": "starts-with"
+    },
     "dxGanttHeaderFilter": {
       "angular": "dxo-dx-gantt-header-filter",
       "react": "DxGanttHeaderFilter",
@@ -5693,6 +5722,14 @@
       "angular": "dxo-texts",
       "react": "Texts",
       "vue": "DxTexts"
+    },
+    "dxGanttHeaderFilterTexts": {
+      "angular": "dxo-dx-gantt-header-filter-texts",
+      "react": "DxGanttHeaderFilterTexts",
+      "vue": "DxDxGanttHeaderFilterTexts"
+    },
+    "dxGanttHeaderFilterTexts.emptyValue": {
+      "vue": "empty-value"
     },
     "dxGanttOptions.allowSelection": {
       "vue": "allow-selection"

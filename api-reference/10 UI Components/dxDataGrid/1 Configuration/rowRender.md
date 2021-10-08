@@ -1,6 +1,5 @@
 ---
 id: dxDataGrid.Options.rowRender
-deprecated: 
 ---
 ---
 ##### shortDescription

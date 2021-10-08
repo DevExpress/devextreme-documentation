@@ -6,6 +6,6 @@ This tutorial shows how to add the DataGrid to a page, bind it to data, and conf
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_1/GettingStartedWith/DataGrid/index.html, /Content/Applications/21_1/GettingStartedWith/DataGrid/index.js, /Content/Applications/21_1/GettingStartedWith/DataGrid/index.css"></div>
 
-Refer to the following sections for details on each configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-datagrid" target="_blank">getting-started-with-datagrid</a>.
+Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-datagrid" target="_blank">getting-started-with-datagrid</a>.
 
 [tags] dxdatagrid

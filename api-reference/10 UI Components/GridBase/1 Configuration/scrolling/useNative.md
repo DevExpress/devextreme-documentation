@@ -6,7 +6,26 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies whether the UI component should use native or simulated scrolling.
+Specifies whether the {WidgetName} should use native or simulated scrolling.
 
 ---
-By default, the UI component employs native scrolling on most platforms, except non-Mac desktops and devices based on Android older than version 4. To employ native scrolling on all platforms without exception, assign **true** to this property. If you assign **false**, the UI component simulates scrolling on all platforms.
+This property can have one of the following values:
+
+<table class="dx-table">
+    <tr>
+        <th>scrolling.useNative</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><i>"auto"</i></td>
+        <td>Native scrolling on all platforms, except non-Mac desktops.</td>
+    </tr>
+    <tr>
+        <td><b>true</b></td>
+        <td>Native scrolling on all platforms, without exceptions.</td>
+    </tr>
+    <tr>
+        <td><b>false</b></td>
+        <td>Simulated scrolling on all platforms.</td>
+    </tr>
+</table>

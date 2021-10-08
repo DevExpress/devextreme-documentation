@@ -190,9 +190,9 @@ This function allows you to customize cells and modify their content. Common use
         export class AppComponent {
             onCellPrepared(e) {          
                 if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
-                    e.cellElement.addClass('your-custom-class');
+                    e.cellElement.classList.add('your-custom-class');
                 if(e.area === 'row' || e.area === 'column')
-                    e.cellElement.addClass("another-custom-class");
+                    e.cellElement.classList.add("another-custom-class");
             }
 
         <!-- tab: app.module.ts -->
@@ -236,9 +236,9 @@ This function allows you to customize cells and modify their content. Common use
             methods: {
                 onCellPrepared(e) {          
                     if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
-                        e.cellElement.addClass('your-custom-class');
+                        e.cellElement.classList.add('your-custom-class');
                     if(e.area === 'row' || e.area === 'column')
-                        e.cellElement.addClass('another-custom-class');
+                        e.cellElement.classList.add('another-custom-class');
                 }
             }
         }
@@ -257,9 +257,9 @@ This function allows you to customize cells and modify their content. Common use
         export default function App() {
             const customizeCells = useCallback((e) {
                 if(e.cell.columnType === 'GT' || e.cell.rowType === 'GT')
-                    e.cellElement.addClass('your-custom-class');
+                    e.cellElement.classList.add('your-custom-class');
                 if(e.area === 'row' || e.area === 'column')
-                    e.cellElement.addClass('another-custom-class');
+                    e.cellElement.classList.add('another-custom-class');
             }, []);
             return (
                 <PivotGrid ...

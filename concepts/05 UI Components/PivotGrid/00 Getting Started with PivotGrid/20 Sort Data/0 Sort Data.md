@@ -1,0 +1,1 @@
+PivotGrid allows you and end users to sort field values by summary values or alphabetically.

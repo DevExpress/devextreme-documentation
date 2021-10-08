@@ -8,3 +8,5 @@ default: undefined
 Specifies the label text.
 
 ---
+#####See Also#####
+- [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode)

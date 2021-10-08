@@ -6,7 +6,7 @@ default: 'left'
 ---
 ---
 ##### shortDescription
-Specifies the location of a label against the editor.
+Specifies the location of a label against the editor. Applies only if the [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode) is *"outside"*.
 
 ---
 [note]This property has higher priority than the [labelLocation](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/labelLocation.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelLocation') property of the form.

@@ -6,7 +6,7 @@ default: 'static', 'floating' (Material)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the [label]({currentpath}/#label)'s display mode.
 
 ---
-<!-- Description goes here -->
+#include texteditor-labelMode

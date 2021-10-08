@@ -5,7 +5,9 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a text string used to annotate the editor's [value]({currentpath}/#value).
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [labelMode]({currentpath}/#labelMode)
+- [placeholder]({currentpath}/#placeholder)

@@ -5,6 +5,8 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the current value displayed by the UI component.
+Specifies the editor's value.
 
 ---
+#####See Also#####
+- [label]({currentpath}/#label)

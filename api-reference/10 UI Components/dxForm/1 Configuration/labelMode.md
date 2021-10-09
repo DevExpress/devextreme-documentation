@@ -1,12 +1,12 @@
 ---
 id: dxForm.Options.labelMode
-acceptValues: 'static' | 'floating' | 'hidden' | 'default'
+acceptValues: 'static' | 'floating' | 'hidden' | 'outside'
 type: String
 default: 'default'
 ---
 ---
 ##### shortDescription
-Specifies a display mode for [item labels](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/).
+Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/').
 
 ---
 #include texteditor-labelMode with {

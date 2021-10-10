@@ -2,7 +2,7 @@ A field panel is an element that displays pivot grid fields involved in summary 
 
 ![DevExtreme PivotGrid: Field panel](/images/pivotgrid/field-panel.png)
 
-To display the field panel, enable the [fieldPanel](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/).[visible](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/#visible) property. Use other **fieldPanel** properties to configure optional features. For example, you can hide the filter field area:
+To display the field panel, enable the [fieldPanel](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldPanel '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/').[visible](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldPanel/visible.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/#visible') property. Use other **fieldPanel** properties to configure optional features. For example, you can hide the filter field area:
 
 ---
 ##### jQuery

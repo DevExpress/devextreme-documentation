@@ -3,7 +3,6 @@ id: dxDiagram.fitToWidth()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Fits the diagram content's width into the work area width. The maximum scale is 100%.
 
 ---
-<!-- Description goes here -->

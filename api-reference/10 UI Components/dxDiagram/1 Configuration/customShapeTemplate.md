@@ -16,7 +16,13 @@ Information about the currently processed shape.
 The processed shape's object.
 
 ---
-The template content must be presented as SVG elements.
+[important]
+
+- Template content must be presented as SVG elements.
+
+- The [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) element is not supported.
+
+[/important]
 
 Use the [template](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
 

@@ -17,11 +17,11 @@ This property can have one of the following values:
     </tr>
     <tr>
         <td><b>false</b></td>
-        <td>The tooltip displays information only about a series point being hovered over with the mouse pointer.</td>
+        <td>The tooltip only displays information about a series point that is hovered over with the mouse pointer.</td>
     </tr>
     <tr>
         <td><b>true</b></td>
-        <td>The tooltip displays information about all series points with the same argument as the point being hovered over. If this point is included in a <a href="{basewidgetpath}/Configuration/series/#stack">stack</a>, the tooltip displays information only about points in this stack and points that do not belong to any stack (if there are any).</td>
+        <td>The tooltip displays information about all series points with the same argument as the point that is hovered over. If this point is included in a <a href="{basewidgetpath}/Configuration/series/#stack">stack</a>, the tooltip only displays information about points in this stack and points that do not belong to any stack (if there are any).</td>
     </tr>
 </table>
 

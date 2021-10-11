@@ -7,11 +7,11 @@ This property can have one of the following values:
     </tr>
     <tr>
         <td><b>false</b></td>
-        <td>The tooltip displays information only about a series point being hovered over with the mouse pointer.</td>
+        <td>The tooltip only displays information about a series point that is hovered over with the mouse pointer.</td>
     </tr>
     <tr>
         <td><b>true</b></td>
-        <td>The tooltip displays information about all series points with the same argument as the point being hovered over.</td>
+        <td>The tooltip displays information about all series points with the same argument as the point that is hovered over.</td>
     </tr>
 </table>
 

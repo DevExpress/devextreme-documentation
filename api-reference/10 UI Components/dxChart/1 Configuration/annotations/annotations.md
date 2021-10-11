@@ -189,7 +189,7 @@ Annotations can be unattached or anchored to a chart element. The following list
             axis: "Value axis 2" // in a chart with multiple value axes
         }]
 
-- **Annotation anchored to a series or series point**
+- **Annotation anchored to a series point**
 
         annotations: [{
             argument: new Date(2019, 1, 16),

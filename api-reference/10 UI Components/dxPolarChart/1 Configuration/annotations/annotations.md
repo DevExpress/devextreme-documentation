@@ -191,7 +191,7 @@ Annotations can be anchored to a PolarChart element. The following list shows ho
             value: 15
         }]
 
-- **Annotation anchored to a series or series point**
+- **Annotation anchored to a series point**
 
         annotations: [{
             argument: new Date(2019, 1, 16),

@@ -14,5 +14,5 @@ Specifies a position for a new row.
 }
 
 #####See Also#####
-- **editing**.**changes**.[insertBeforeKey]({basewidgetpath}/Configuration/editing/changes/#insertBeforeKey)
-- **editing**.**changes**.[insertAfterKey]({basewidgetpath}/Configuration/editing/changes/#insertAfterKey)
+- **editing**.**changes**.[insertBeforeKey](/api-reference/_hidden/DataChange/insertBeforeKey.md '{basewidgetpath}/Configuration/editing/changes/#insertBeforeKey')
+- **editing**.**changes**.[insertAfterKey](/api-reference/_hidden/DataChange/insertAfterKey.md '{basewidgetpath}/Configuration/editing/changes/#insertAfterKey')

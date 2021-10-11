@@ -138,8 +138,10 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
                     // your code
                     e.cancel = true;
                 }
-                // If you dynamically change context menu items, use the following code to update the item states: 
-                // setContextMenuItems(filterMenuItems(contextMenuItems));
+                // else {
+                //   If you dynamically change context menu items, use the following code to update the item states: 
+                //   setContextMenuItems(filterMenuItems(contextMenuItems));
+                // }
             },
             [filterMenuItems, contextMenuItems]
         };

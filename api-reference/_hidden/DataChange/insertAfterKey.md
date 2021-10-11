@@ -16,11 +16,11 @@ The following code inserts a new record after a record with key 10:
         insertAfterKey: 10
     });
 
-[important] Do not use **insertAfterKey** with [insertBeforeKey]({currentpath}/#insertBeforeKey).
+[important] Do not use **insertAfterKey** with [insertBeforeKey](/api-reference/_hidden/DataChange/insertBeforeKey.md '{currentpath}/#insertBeforeKey').
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomNewRecordPosition/"
 }
 
 #####See Also#####
-- [newRowPosition]({basewidgetpath}/Configuration/editing/#newRowPosition)
+- [newRowPosition](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/newRowPosition.md '{basewidgetpath}/Configuration/editing/#newRowPosition')

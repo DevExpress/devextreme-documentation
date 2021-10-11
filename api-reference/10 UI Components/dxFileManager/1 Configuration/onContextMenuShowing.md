@@ -127,20 +127,30 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     import FileManager, { ContextMenu } from 'devextreme-react/file-manager';
 
     const App = () => {
-        const onContextMenuShowing = (e) => {
-            const contextMenuItems = ['create', 'rename', 'delete'];
-            if (e.viewArea === 'itemView'){
-                // your code
-                e.cancel = true;
-            } else {
-                // your code
-                e.component.option('contextMenu.items', contextMenuItems);
-            }            
+        const menuItems = ['create', 'rename', 'delete'];
+        const [contextMenuItems, setContextMenuItems] = useState(menuItems);
+        const filterMenuItems = useCallback((items) => {
+            return items.filter((item) => item !== "delete");
+        }, []);
+        const onContextMenuShowing = useCallback(
+            (e) => {
+                if (e.viewArea === "itemView") {
+                    // your code
+                    e.cancel = true;
+                }
+                // else {
+                //   If you dynamically change context menu items, use the following code to update the item states: 
+                //   setContextMenuItems(filterMenuItems(contextMenuItems));
+                // }
+            },
+            [filterMenuItems, contextMenuItems]
         };
 
         return (
-            <FileManager ...
-                onContextMenuShowing={onContextMenuShowing} />            
+            <FileManager 
+                onContextMenuShowing={onContextMenuShowing}>
+                <ContextMenu items={contextMenuItems}></ContextMenu>
+            </FileManager>
         );
     }
 

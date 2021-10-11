@@ -1,11 +1,8 @@
 The Gantt component allows users to sort data. 
 
-Use the following properties to specify whether users can sort column data:
+Use [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property to specify whether users can sort data by a single or multiple columns. 
 
-- [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') - For all columns.
-- **column.**[mode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode) - For an individual column. Note that this property is in effect if the [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property is not set to 'none'.
-
-Use the **sorting**.[mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property to specify the sorting mode.
+To disable sorting for an individual column, set the **column.**[allowSorting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/column/#allowSorting) property to **false**. Note that this property is in effect if the [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property is not set to 'none'.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/"

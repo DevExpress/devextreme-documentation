@@ -1,6 +1,6 @@
-Use a column's [sortOrder](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#sortOrder) property to specify sort order of the column values. You can also specify the [sortIndex](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#sortIndex) property for this column to sort data by multiple columns. If the [sortIndex](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#sortIndex) property is not specifies, each sorted column gets a sort index according to its position in the [columns](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/) array. To show column sort indexes in the column headers, set the [showSortIndexes](/api-reference/_hidden/dxGanttSorting/showSortIndexes.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#showSortIndexes') property to **true**.
+Use a column's [sortOrder](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#sortOrder) property to specify the sort order for column values. You can also specify the [sortIndex](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#sortIndex) property for this column to sort data by multiple columns. If the [sortIndex](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#sortIndex) property is not specified, each sorted column gets a sort index according to its position in the [columns](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/) array. To show column sort indexes in the column headers, set the [showSortIndexes](/api-reference/_hidden/dxGanttSorting/showSortIndexes.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#showSortIndexes') property to **true**.
 
-The following code sorts data by the "Start" and then by the "End" column:
+The following code sorts data by the "Start" and "End" columns:
 
 ---
 
@@ -168,7 +168,7 @@ The following code sorts data by the "Start" and then by the "End" column:
 
 ---
 
-Use the [ascendingText](/api-reference/_hidden/dxGanttSorting/ascendingText.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#ascendingText'), [descendingText](/api-reference/_hidden/dxGanttSorting/descendingText.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#descendingText'), and the [clearText](/api-reference/_hidden/dxGanttSorting/clearText.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#clearText') options to specify text for the corresponding context menu items.
+Use the [ascendingText](/api-reference/_hidden/dxGanttSorting/ascendingText.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#ascendingText'), [descendingText](/api-reference/_hidden/dxGanttSorting/descendingText.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#descendingText'), and the [clearText](/api-reference/_hidden/dxGanttSorting/clearText.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#clearText') options to specify text for corresponding context menu items.
 
 ---
 

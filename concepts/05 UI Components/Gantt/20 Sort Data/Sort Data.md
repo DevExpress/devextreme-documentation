@@ -1,6 +1,6 @@
 The Gantt component allows users to sort data. 
 
-Use [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property to specify whether users can sort data by a single or multiple columns. 
+Use the [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property to specify whether users can sort data by single or multiple columns. 
 
 To disable sorting for an individual column, set the **column.**[allowSorting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowSorting) property to **false**. Note that this property is in effect if the [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property is not set to 'none'.
 

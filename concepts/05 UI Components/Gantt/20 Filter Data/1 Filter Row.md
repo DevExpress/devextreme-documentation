@@ -1,6 +1,8 @@
-The Gantt component allows users to filter columns by filter row values.
+The **Gantt** component allows users to filter columns by filter row values.
 
-To apply filter criteria to a column, users enter a value in its filter row cell or select it with a specific editor.
+To apply filter criteria, users enter a value in a column's filter row cell or select the value with a specific editor.
+
+Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row.png)
 
@@ -8,7 +10,17 @@ To apply filter criteria to a column, users enter a value in its filter row cell
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/FilterRow/"
 }
 
-Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row.
+The filter row contains the magnifier icon in its cells. Users click this icon to select the desired filter operation. Set the [showOperationChooser](/Documentation/21_2/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser) property to **false** for a column to hide the magnifier icon. 
+
+![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
+
+The component automatically applies an entered or selected filter. To apply the filter by click on the "*Apply Filter*" button, set the **filterRow**.[applyFilter](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#applyFilter) property to "*onClick*".
+
+![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_applyFilter_button.png)
+
+The **Gantt** allows you to set initial filter settings in code. 
+
+Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply the filter criteria to the column. Otherwise, to disable a filter row cell for a specific column, set its [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to **false**.
 
 ---
 ##### jQuery
@@ -16,9 +28,19 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
     <!--JavaScript-->
     $(function() {
         $("#gantt").dxGantt({
+            columns: [{
+                dataField: 'title',
+                caption: 'Subject',
+                filterValue: 'Scope'
+            }, {
+                dataField: 'start',
+                caption: 'Start Date',
+                allowFiltering: false
+            }, { 
             // ...
             filterRow: { 
-                visible: true 
+                visible: true,
+                applyFilter: "onClick"
             }
         });
     });
@@ -28,8 +50,20 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
     <!-- tab: app.component.html -->
     <dx-gantt ... >
         <dxo-filter-row 
-            [visible]="true">
+            [visible]="true"
+            applyFilter="onClick">
         </dxo-filter-row>
+        <dxi-column
+            dataField="title"
+            caption="Subject"
+            filterValue="Scope">
+        </dxi-column>
+        <dxi-column
+            dataField="start"
+            caption="Start Date"
+            dataType="date"
+            [allowFiltering]="false">
+        </dxi-column>
         <!--...-->
     </dx-gantt>
     
@@ -68,7 +102,18 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
     <template>
         <DxGantt ... >
             <DxFilterRow 
-                :visible="true" 
+                :visible="true"
+                applyFilter="onClick" 
+            />
+            <DxColumn
+                data-field="title"
+                caption="Subject"
+                filterValue="Scope"
+            />
+            <DxColumn
+                data-field="start"
+                caption="Start Date"
+                :allowFiltering="false"
             />
             <!--...-->
         </DxGantt>
@@ -110,6 +155,17 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
             <Gantt ... >
                 <FilterRow
                     visible={true}
+                    applyFilter="onClick"
+                />
+                <Column 
+                    dataField="title"
+                    caption="Subject"
+                    filterValue="Scope"
+                />
+                <Column
+                    dataField="start"
+                    caption="Start Date"
+                    allowFiltering={false} 
                 />
                 {/* ... */}
             </Gantt>
@@ -122,9 +178,22 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
-        .FilterRow(e => {
-            e.Visible(true)
+        .Columns(columns => {
+            columns.AddFor(m => m.Title)
+                .DataField("title")
+                .Caption("Subject")
+                .FilterValue("Scope");
+            columns.AddFor(m => m.Title)
+                .DataField("start")
+                .Caption("Start Date")
+                .AllowFiltering(false);
+            @* ... *@
         })
+        .FilterRow(e => {
+            e.Visible(true);
+            e.ApplyFilter("OnClick");
+        })
+        
         // ...
     )
 
@@ -137,215 +206,6 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
         })
         // ...
     )
-
----
-
-The filter row contains the magnifier icon in its cells. Users click this icon to select the desired filter operation. Set the [showOperationChooser](/Documentation/21_2/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser) property to **false** for a column to hide the magnifier icon. 
-
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
-
-The component automatically applies an entered or selected filter. To apply the filter by click on the "*Apply Filter*" button, set the **filterRow**.[applyFilter](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#applyFilter) property to "*onClick*".
-
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_applyFilter_button.png)
-
----
-##### jQuery
-
-    <!--JavaScript-->$(function() {
-        $("#gantt").dxGantt({
-            // ...
-            filterRow: { 
-                visible: true,
-                applyFilter: "onClick"
-            },
-        });
-    });
-
-##### Angular
-    
-    <!--HTML-->
-    <dx-gantt ... >
-        <dxo-filter-row [visible]="true" applyFilter="onClick"></dxo-filter-row>
-        <!--...-->
-    </dx-gantt>
-
-    <!--TypeScript-->
-    import { DxGanttModule } from 'devextreme-angular';
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxGantt ... >
-            <DxFilterRow :visible="true"
-                         applyFilter="onClick" />
-            <!--...-->
-        </DxGantt>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import {
-      DxGantt,
-      DxFilterRow,
-      // ...
-    } from 'devextreme-vue/gantt';
-
-    export default {
-      components: {
-        DxGantt,
-        DxFilterRow,
-        // ...
-      }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import Gantt, {
-      Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing, FilterRow,
-    } from 'devextreme-react/gantt';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <FilterRow visible={true} applyFilter="onClick"/>
-                    <!--...-->
-                </Gantt>
-            );
-        }
-    }
-
----
-
-The **Gantt** allows you to set initial filter settings in code. 
-
-Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply the filter criteria to the column. Otherwise, to disable a filter row cell for a specific column, set its [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to **false**.
-
----
-##### jQuery
-
-    <!--JavaScript-->$(function() {
-        $("#gantt").dxGantt({
-            // ...
-            columns: [{
-                dataField: 'title',
-                caption: 'Subject',
-                filterValue: 'Scope'
-            }, {
-                dataField: 'start',
-                caption: 'Start Date',
-                allowFiltering: false
-            }, { 
-            //...
-            }],
-            filterRow: { 
-                visible: true
-            },      
-          });
-    });
-
-##### Angular
-    
-    <!--HTML-->
-    <dx-gantt ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxi-column dataField="title" caption="Subject" filterValue="Scope"></dxi-column>
-        <dxi-column dataField="start" caption="Start Date" dataType="date" [allowFiltering]="false"></dxi-column>
-        <!--...-->
-    </dx-gantt>
-
-    <!--TypeScript-->
-    import { DxGanttModule } from 'devextreme-angular';
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxGantt ... >
-            <DxFilterRow :visible="true" />
-            <DxColumn
-                data-field="title"
-                caption="Subject"
-                filterValue="Scope"
-            />
-            <DxColumn
-                data-field="start"
-                caption="Start Date"
-                :allowFiltering="false"
-            />
-            <!--...-->
-        </DxGantt>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import {
-      DxGantt,
-      DxFilterRow,
-      // ...
-    } from 'devextreme-vue/gantt';
-
-    export default {
-      components: {
-        DxGantt,
-        DxFilterRow,
-        // ...
-      }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import Gantt, {
-      Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing, FilterRow,
-    } from 'devextreme-react/gantt';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <FilterRow visible={true} />
-                    <Column dataField="title" caption="Subject" filterRow="Scope" />
-                    <Column dataField="start" caption="Start Date" allowFiltering={false} />
-                    <!--...-->
-                </Gantt>
-            );
-        }
-    }
 
 ---
 
@@ -378,112 +238,13 @@ Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configur
 
 You can specify the necessary filter operations for each column with the [filterOperations](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations) property.
 
----
-##### jQuery
-
-    <!--JavaScript-->$(function() {
-        $("#gantt").dxGantt({
-            // ...
-            columns: [{
-                dataField: 'title',
-                caption: 'Subject',
-                filterOperations: ["startswith", "endswith"]
-            }, { 
-            //...
-            }],
-            filterRow: { 
-                visible: true
-            },      
-          });
-    });
-
-##### Angular
-    
-    <!--HTML-->
-    <dx-gantt ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxi-column dataField="title" caption="Subject" [filterOperations]="['startswith', 'endswith']"></dxi-column>
-        <!--...-->
-    </dx-gantt>
-
-    <!--TypeScript-->
-    import { DxGanttModule } from 'devextreme-angular';
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxGanttModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxGantt ... >
-            <DxFilterRow :visible="true" />
-            <DxColumn
-                data-field="title"
-                caption="Subject"
-                :filter-operations="['startswith', 'endswith']"
-            />
-            <!--...-->
-        </DxGantt>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import {
-      DxGantt,
-      DxFilterRow,
-      // ...
-    } from 'devextreme-vue/gantt';
-
-    export default {
-      components: {
-        DxGantt,
-        DxFilterRow,
-        // ...
-      }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import Gantt, {
-      Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing, FilterRow,
-    } from 'devextreme-react/gantt';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <FilterRow visible={true} />
-                    <Column dataField="title" caption="Subject" filterOperations={['startswith', 'endswith']} />
-                    <Column dataField="start" caption="Start Date" />
-                    <!--...-->
-                </Gantt>
-            );
-        }
-    }
-
----
-
-Call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#columnOptionid_options) method for the corresponding column to change its specified filter settings. 
+To change a column's filter settings, call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Methods/#columnOptionid_options) method for the corresponding column.
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#gantt").dxGantt({
             // ...
             columns: [{
@@ -507,17 +268,34 @@ Call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Method
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxi-column dataField="title" caption="Subject" filterValue="Scope" [filterOperations]="['startswith', 'endswith']></dxi-column>
+        <dxo-filter-row 
+            [visible]="true">
+        </dxo-filter-row>
+        <dxi-column
+            dataField="title"
+            caption="Subject"
+            filterValue="Scope"
+            [filterOperations]="['startswith', 'endswith']>
+        </dxi-column>
         <!--...-->
     </dx-gantt>
 
-    <dx-button text="Update column options" (onClick)="setNewOptions()"></dx-button>
+    <dx-button 
+        text="Update column options"
+        (onClick)="setNewOptions()">
+    </dx-button>
 
-    <!--TypeScript-->
-    import { DxGanttModule } from 'devextreme-angular';
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
         @ViewChild(DxGanttComponent, { static: false }) gantt: DxGanttComponent
         
@@ -529,20 +307,31 @@ Call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Method
         }
         // ...
     }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxGanttModule } from 'devextreme-angular';
+
     @NgModule({
         imports: [
-            // ...
+            BrowserModule,
             DxGanttModule
         ],
-        // ...
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
     })
+    export class AppModule { }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxGantt ... >
-            <DxFilterRow :visible="true" />
+            <DxFilterRow 
+                :visible="true" 
+            />
             <DxColumn
                 data-field="title"
                 caption="Subject"
@@ -556,7 +345,7 @@ Call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Method
 
     <script>
     import 'devextreme/dist/css/dx.light.css';
-
+    import 'devexpress-gantt/dist/dx-gantt.css'; 
     import {
       DxGantt,
       DxFilterRow,
@@ -588,12 +377,13 @@ Call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Method
     <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
+    import 'devexpress-gantt/dist/dx-gantt.css';
 
     import Gantt, {
-      Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing, FilterRow,
+      FilterRow,
     } from 'devextreme-react/gantt';
 
-    class App extends React.Component {
+    const App = () => {
 
         constructor(props) {
             super(props);
@@ -616,12 +406,23 @@ Call the [columnOption](/Documentation/ApiReference/UI_Components/dxGantt/Method
         render() {
             return (
                 <Gantt onInitialized={this.saveGanttInstance} ... >
-                    <FilterRow visible={true} />
-                    <Column dataField="title" caption="Subject" filterOperations = {['startswith', 'endswith']} />
-                    <Column dataField="start" caption="Start Date" />
+                    <FilterRow
+                        visible={true}
+                    />
+                    <Column
+                        dataField="title"
+                        caption="Subject"
+                        filterOperations = {['startswith', 'endswith']}
+                    />
+                    <Column
+                        dataField="start"
+                        caption="Start Date" />
                     <!--...-->
                 </Gantt>
-                <Button text="Update column options" onClick={this.setNewOptions} />
+                <Button 
+                    text="Update column options"
+                    onClick={this.setNewOptions}
+                />
             );
         }
     }

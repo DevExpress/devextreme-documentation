@@ -833,9 +833,6 @@
     "dataChange.insertBeforeKey": {
       "vue": "insert-before-key"
     },
-    "dataChange.pageIndex": {
-      "vue": "page-index"
-    },
     "dataExpressionMixinOptions.dataSource": {
       "vue": "data-source"
     },
@@ -3162,6 +3159,9 @@
     },
     "dxDataGridOptions.editing.allowUpdating": {
       "vue": "allow-updating"
+    },
+    "dxDataGridOptions.editing.newRowPosition": {
+      "vue": "new-row-position"
     },
     "dxDataGridOptions.editing.texts": {
       "angular": "dxo-texts",
@@ -6160,7 +6160,24 @@
       "vue": "DxVariables"
     },
     "dxHtmlEditorTableContextMenu": {
-      "vue": "dx-html-editor-table-context-menu"
+      "angular": "dxo-dx-html-editor-table-context-menu",
+      "react": "DxHtmlEditorTableContextMenu",
+      "vue": "DxDxHtmlEditorTableContextMenu"
+    },
+    "dxHtmlEditorTableContextMenu.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxHtmlEditorTableContextMenuItem": {
+      "angular": "dxo-dx-html-editor-table-context-menu-item",
+      "react": "DxHtmlEditorTableContextMenuItem",
+      "vue": "DxDxHtmlEditorTableContextMenuItem"
+    },
+    "dxHtmlEditorTableContextMenuItem.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
     },
     "dxHtmlEditorTableResizing": {
       "angular": "dxo-dx-html-editor-table-resizing",
@@ -11732,6 +11749,9 @@
     "enums.HorizontalEdge": {
       "vue": "horizontal-edge"
     },
+    "enums.HtmlEditorContextMenuItem": {
+      "vue": "html-editor-context-menu-item"
+    },
     "enums.HtmlEditorToolbarItem": {
       "vue": "html-editor-toolbar-item"
     },
@@ -12423,9 +12443,6 @@
       "angular": "dxo-form",
       "react": "Form",
       "vue": "DxForm"
-    },
-    "gridBaseOptions.editing.newRowPosition": {
-      "vue": "new-row-position"
     },
     "gridBaseOptions.editing.popup": {
       "angular": "dxo-popup",

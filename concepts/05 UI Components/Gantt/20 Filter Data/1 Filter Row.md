@@ -13,48 +13,71 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#gantt").dxGantt({
             // ...
-            filterRow: { visible: true },
+            filterRow: { 
+                visible: true 
+            }
         });
     });
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
+        <dxo-filter-row 
+            [visible]="true">
+        </dxo-filter-row>
         <!--...-->
     </dx-gantt>
+    
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
 
-    <!--TypeScript-->
-    import { DxGanttModule } from 'devextreme-angular';
-    // ...
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
-        // ...
-    }
+        // ...      
+    }    
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+    import { DxGanttModule } from 'devextreme-angular';
+
     @NgModule({
         imports: [
-            // ...
+            BrowserModule,
             DxGanttModule
-        ],
-        // ...
+        ],        
+        declarations: [AppComponent],
+        bootstrap: [AppComponent]
     })
+    export class AppModule { }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxGantt ... >
-            <DxFilterRow :visible="true" />
+            <DxFilterRow 
+                :visible="true" 
+            />
             <!--...-->
         </DxGantt>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.light.css';
-
+    import 'devexpress-gantt/dist/dx-gantt.css'; 
+    
     import {
       DxGantt,
       DxFilterRow,
@@ -75,21 +98,45 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
     <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
+    import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, {
-      Tasks, Dependencies, Resources, ResourceAssignments, Column, Editing, FilterRow,
+        FilterRow,
+        // ...
     } from 'devextreme-react/gantt';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gantt ... >
-                    <FilterRow visible={true} />
-                    <!--...-->
-                </Gantt>
-            );
-        }
-    }
+    const App = () => {
+        return (
+            <Gantt ... >
+                <FilterRow
+                    visible={true}
+                />
+                {/* ... */}
+            </Gantt>
+        );
+    };
+
+   export default App;
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .FilterRow(e => {
+            e.Visible(true)
+        })
+        // ...
+    )
+
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().Gantt()
+        .FilterRow(e => {
+            e.Visible(true)
+        })
+        // ...
+    )
 
 ---
 
@@ -109,7 +156,7 @@ The component automatically applies an entered or selected filter. To apply the 
             // ...
             filterRow: { 
                 visible: true,
-                applyFilter: "onClick",
+                applyFilter: "onClick"
             },
         });
     });

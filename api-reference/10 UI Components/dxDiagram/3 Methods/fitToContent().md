@@ -3,7 +3,6 @@ id: dxDiagram.fitToContent()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Fits the diagram content into the work area. The maximum scale is 100%.
 
 ---
-<!-- Description goes here -->

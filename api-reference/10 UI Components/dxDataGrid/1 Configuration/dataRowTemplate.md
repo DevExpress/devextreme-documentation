@@ -21,9 +21,6 @@ type: template
 ##### field(rowInfo.data): any
 <!-- Description goes here -->
 
-##### field(rowInfo.groupIndex): Number
-<!-- Description goes here -->
-
 ##### field(rowInfo.isExpanded): Boolean
 <!-- Description goes here -->
 
@@ -34,9 +31,6 @@ type: template
 <!-- Description goes here -->
 
 ##### field(rowInfo.rowIndex): Number
-<!-- Description goes here -->
-
-##### field(rowInfo.rowType): String
 <!-- Description goes here -->
 
 ##### field(rowInfo.values): Array<any>

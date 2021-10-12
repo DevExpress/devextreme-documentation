@@ -1,6 +1,7 @@
 ---
 id: GridBase.toolbarPreparing
 type: eventType
+deprecated: 
 ---
 ---
 ##### shortDescription

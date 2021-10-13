@@ -35,6 +35,11 @@ The file system item's container. It is an [HTML Element](https://developer.mozi
 Specifies whether the context menu is invoked in the navigation panel or in the items view area.
 
 ---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/UICustomization/"
+}
+
 ---
 
 ##### jQuery
@@ -199,10 +204,6 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     </script>
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/UICustomization/"
-}
 
 #####See Also#####
 - [contextMenuShowing](/api-reference/10%20UI%20Components/dxFileManager/4%20Events/contextMenuShowing.md '/Documentation/ApiReference/UI_Components/dxFileManager/Events/#contextMenuShowing')

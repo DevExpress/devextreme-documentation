@@ -17,15 +17,18 @@ You can use a selector string, jQuery object or DOM element to specify the **dro
 
 - String
 
-    dropZone: '.test-div'
+        <!-- tab: JavaScript -->
+        dropZone: '.test-div'
 
 - jQuery object
 
-    dropZone: $('.test-div')
+        <!-- tab: JavaScript -->
+        dropZone: $('.test-div')
 
 - DOM element
 
-    dropZone: $('.test-div')[0]
+        <!-- tab: JavaScript -->
+        dropZone: $('.test-div')[0]
 
 [note]
 A custom drop zone (**dropZone** property) is not supported in **useForm** [upload modes](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode').

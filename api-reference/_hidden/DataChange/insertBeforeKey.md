@@ -17,6 +17,3 @@ The following code inserts a new record before a record with key 5:
     });
 
 [important] Do not use **insertBeforeKey** with [insertAfterKey](/api-reference/_hidden/DataChange/insertAfterKey.md '{currentpath}/#insertAfterKey').
-
-#####See Also#####
-- [newRowPosition](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/newRowPosition.md '{basewidgetpath}/Configuration/editing/#newRowPosition')

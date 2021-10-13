@@ -2,6 +2,7 @@
 id: GridBase.Options.onToolbarPreparing
 type: function(e)
 default: null
+deprecated: 
 ---
 ---
 ##### shortDescription

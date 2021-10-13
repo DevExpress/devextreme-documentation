@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td>DataGrid</td>
-<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeExportData">customizeExportData</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#customizeExcelCell">customizeExcelCell</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelFilterEnabled">excelFilterEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelWrapTextEnabled">excelWrapTextEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#fileName">fileName</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#ignoreExcelErrors">ignoreExcelErrors</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#proxyUrl">proxyUrl</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onExported">onExported</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onFileSaving">onFileSaving</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Methods/#exportToExcel(selectionOnly)">exportToExcel(selectionOnly)</a></td>
+<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeExportData">customizeExportData</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#customizeExcelCell">customizeExcelCell</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelFilterEnabled">excelFilterEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelWrapTextEnabled">excelWrapTextEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#fileName">fileName</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#ignoreExcelErrors">ignoreExcelErrors</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/export/#proxyUrl">proxyUrl</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onExported">onExported</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onFileSaving">onFileSaving</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing">onToolbarPreparing</a><br><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxDataGrid/Methods/#exportToExcel(selectionOnly)">exportToExcel(selectionOnly)</a></td>
 </tr>
 <tr>
 <td>Diagram</td>
@@ -102,6 +102,10 @@
 <tr>
 <td>Tooltip</td>
 <td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxTooltip/Configuration/#elementAttr">elementAttr</a></td>
+</tr>
+<tr>
+<td>TreeList</td>
+<td><a href="https://js.devexpress.com/Documentation/21_2/ApiReference/UI_Components/dxTreeList/Configuration/#onToolbarPreparing">onToolbarPreparing</a></td>
 </tr>
 <tr>
 <td>TreeMap</td>

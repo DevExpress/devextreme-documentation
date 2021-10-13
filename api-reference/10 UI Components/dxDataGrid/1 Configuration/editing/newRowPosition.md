@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.editing.newRowPosition
+id: dxDataGrid.Options.editing.newRowPosition
 acceptValues: 'first' | 'last' | 'pageBottom' | 'pageTop' | 'viewportBottom' | 'viewportTop'
 type: String
 default: 'viewportTop'

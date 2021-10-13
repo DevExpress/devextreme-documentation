@@ -21,6 +21,3 @@ The following code inserts a new record after a record with key 10:
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomNewRecordPosition/"
 }
-
-#####See Also#####
-- [newRowPosition](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/newRowPosition.md '{basewidgetpath}/Configuration/editing/#newRowPosition')

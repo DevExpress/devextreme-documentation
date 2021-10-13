@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.dataSource
-type: String | Array<String, CollectionWidgetItem> | Store | DataSource | DataSource_Options
+type: String | Array<String, CollectionWidgetItem, any> | Store | DataSource | DataSource_Options
 default: null
 ---
 ---

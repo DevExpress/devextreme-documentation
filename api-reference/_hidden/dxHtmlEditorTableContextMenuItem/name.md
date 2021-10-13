@@ -1,6 +1,7 @@
 ---
-id: DataChange.index
-type: Number
+id: dxHtmlEditorTableContextMenuItem.name
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

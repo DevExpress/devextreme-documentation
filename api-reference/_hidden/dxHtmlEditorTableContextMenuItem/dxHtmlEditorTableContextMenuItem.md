@@ -1,6 +1,6 @@
 ---
-id: DataChange.pageIndex
-type: Number
+id: dxHtmlEditorTableContextMenuItem
+inherits: dxContextMenuItem
 ---
 ---
 ##### shortDescription

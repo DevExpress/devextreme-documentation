@@ -10000,9 +10000,6 @@
     "dxTabsOptions.scrollingEnabled": {
       "vue": "scrolling-enabled"
     },
-    "dxTabsOptions.selectedItems": {
-      "vue": "selected-items"
-    },
     "dxTabsOptions.selectionMode": {
       "vue": "selection-mode"
     },

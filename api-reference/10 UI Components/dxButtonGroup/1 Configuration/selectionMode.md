@@ -1,6 +1,6 @@
 ---
 id: dxButtonGroup.Options.selectionMode
-acceptValues: 'multiple' | 'single'
+acceptValues: 'multiple' | 'single' | 'none'
 type: String
 default: 'single'
 ---

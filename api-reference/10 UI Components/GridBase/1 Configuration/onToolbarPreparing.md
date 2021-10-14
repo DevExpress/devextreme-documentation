@@ -2,7 +2,7 @@
 id: GridBase.Options.onToolbarPreparing
 type: function(e)
 default: null
-deprecated: 
+deprecated: [important] The **onToolbarPreparing** property is deprecated. Use the [toolbar]({basewidgetpath}/Configuration/toolbar/) property instead.
 ---
 ---
 ##### shortDescription

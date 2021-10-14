@@ -1,6 +1,6 @@
 The **Gantt** component allows users to filter a particular column by values listed in a pop-up window. Users click the filter icon to invoke the window and select the necessary filter criteria for a column. 
 
-Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible) property to **true** to display filter icons for all columns. Assign the [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering) property to **false** for a column to disable its filter icon. If this property is not specified, it inherits a value of the [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property.
+Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible) property to **true** to display filter icons for all columns. Assign **false** to the [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering) property for a column to disable its filter icon. If this property is not specified, it inherits a value of the [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter.png)
 
@@ -8,7 +8,7 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
 }
 
-You can use a column's [filterType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType) property to set the initial settings of header fiter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).
+You can use a column's [filterType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType) property to set initial settings of header fiter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SelectAll.png)
 
@@ -59,6 +59,7 @@ Users can search for the filter values in the header filter. Enable the **header
             [visible]="true"
             [allowSearch]="true">
         </dxo-header-filter>
+
         <dxi-column 
     	    dataField="title"
             caption="Subject"
@@ -67,6 +68,7 @@ Users can search for the filter values in the header filter. Enable the **header
             <dxo-header-filter 
                 searchMode="startswith"
             />
+            
         </dxi-column>
 
         <dxi-column
@@ -84,6 +86,7 @@ Users can search for the filter values in the header filter. Enable the **header
             <dxo-header-filter 
                 groupInterval="month"
             />
+
         </dxi-column>
         <!--...-->
     </dx-gantt>
@@ -126,6 +129,7 @@ Users can search for the filter values in the header filter. Enable the **header
                 :visible="true"
                 allowSearch="true"
             />
+            
             <DxColumn
                 data-field="title"
                 caption="Subject"
@@ -134,6 +138,7 @@ Users can search for the filter values in the header filter. Enable the **header
                 <DxGanttHeaderFilter
                     searchMode="startswith"
                 />
+
             </DxColumn>
             
             <DxColumn
@@ -145,8 +150,10 @@ Users can search for the filter values in the header filter. Enable the **header
             <DxColumn
                 data-field="start"
                 caption="Start Date">
+
                 <DxGanttHeaderFilter
         	        groupInterval="month" />
+
             </DxColumn>
 
             <!--...-->
@@ -190,6 +197,7 @@ Users can search for the filter values in the header filter. Enable the **header
                 <HeaderFilter
                     visible={true}
                     allowSearch={true}>
+
                 <Column 
                     dataField="title"
                     caption="Subject"
@@ -198,20 +206,23 @@ Users can search for the filter values in the header filter. Enable the **header
                     <HeaderFilter
                         searchMode="startswith">
                     </HeaderFilter>
+
                 </Column>
                 
                 <Column
                     dataField="start"
                     caption="Start Date"
-                    allowHeaderFiltering= {false}>
+                    allowHeaderFiltering={false}>
                 </Column>
 
                 <Column 
                     dataField="end"
                     caption="End Date">
+
       	            <HeaderFilter
                         groupInterval="month"
                     />
+
                 </Column>
                 {/* ... */}
             </Gantt>
@@ -228,8 +239,8 @@ Users can search for the filter values in the header filter. Enable the **header
             columns.AddFor(m => m.Title)
                 .DataField("title")
                 .Caption("Subject")
-                .FilterType("Exclude")
-                .HeaderFilter(headerFilter => headerFilter.SearchMode("StartsWith"));
+                .FilterType(FilterType.Exclude)
+                .HeaderFilter(headerFilter => headerFilter.SearchMode(CollectionSearchMode.StartsWith));
 
             columns.AddFor(m => m.Title)
                 .DataField("start")
@@ -239,7 +250,7 @@ Users can search for the filter values in the header filter. Enable the **header
             columns.AddFor(m => m.Title)
                 .DataField("end")
                 .Caption("End Date")
-                .HeaderFilter(headerFilter => headerFilter.GroupInterval("Month"));
+                .HeaderFilter(headerFilter => headerFilter.GroupInterval(HeaderFilterGroupInterval.Month));
             @* ... *@
         })
         .HeaderFilter(e => {
@@ -258,8 +269,8 @@ Users can search for the filter values in the header filter. Enable the **header
             columns.AddFor(m => m.Title)
                 .DataField("title")
                 .Caption("Subject")
-                .FilterType("Exclude")
-                .HeaderFilter(headerFilter => headerFilter.SearchMode("StartsWith"));
+                .FilterType(FilterType.Exclude)
+                .HeaderFilter(headerFilter => headerFilter.SearchMode(CollectionSearchMode.StartsWith));
 
             columns.AddFor(m => m.Title)
                 .DataField("start")
@@ -269,11 +280,11 @@ Users can search for the filter values in the header filter. Enable the **header
             columns.AddFor(m => m.Title)
                 .DataField("end")
                 .Caption("End Date")
-                .HeaderFilter(headerFilter => headerFilter.GroupInterval("Month"));
+                .HeaderFilter(headerFilter => headerFilter.GroupInterval(HeaderFilterGroupInterval.Month));
             @* ... *@
         })
         .HeaderFilter(e => {
-            e.Visible(true)
+            e.Visible(true);
             e.allowSearch(true);
         })
         
@@ -314,6 +325,7 @@ Specify a column's [filterValues](/Documentation/ApiReference/UI_Components/dxGa
         <dxo-header-filter 
             [visible]="true">
         </dxo-header-filter>
+        
         <dxi-column 
     	    dataField="title"
             caption="Subject"
@@ -449,7 +461,7 @@ Specify a column's [filterValues](/Documentation/ApiReference/UI_Components/dxGa
         .HeaderFilter(e => {
             e.Visible(true)
         })
-        
+
         // ...
     )
 

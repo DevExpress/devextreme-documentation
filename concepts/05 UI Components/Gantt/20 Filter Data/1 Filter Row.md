@@ -1,4 +1,6 @@
-The **Gantt** component allows users to filter columns by filter row values. To apply filter criteria, users enter a value in a column's filter row cell or select the value with a specific editor. Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row.
+The **Gantt** component allows users to filter columns by filter row values. To apply filter criteria, users enter a value in a column's filter row cell or select the value with a specific editor. 
+
+Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row. Assign **false** to the **columns.**[allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to disable the filtering feature for a column. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row.png)
 
@@ -6,7 +8,7 @@ The **Gantt** component allows users to filter columns by filter row values. To 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/FilterRow/"
 }
 
-The filter row contains the magnifier icon in its cells. Users click this icon to select the desired filter operation. Set the [showOperationChooser](/Documentation/21_2/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser) property to **false** for a column to hide the magnifier icon. 
+The filter row contains a magnifier icon in its cells. Users click this icon to select the desired filter operation. Set the [showOperationChooser](/Documentation/21_2/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser) property to **false** for a column to hide the magnifier icon. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
 
@@ -16,7 +18,7 @@ The component automatically applies an entered or selected filter. To apply the 
 
 The **Gantt** allows you to set initial filter settings in code. 
 
-Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply the filter criteria to the column. Otherwise, to disable a filter row cell for a specific column, set its [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to **false**.
+Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply filter criteria to the column.
 
 ---
 ##### jQuery

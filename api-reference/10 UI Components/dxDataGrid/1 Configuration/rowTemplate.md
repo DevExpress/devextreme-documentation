@@ -165,7 +165,7 @@ Follow these steps to migrate from the deprecated **rowTemplate** property to th
 
 1. Rename the **rowTemplate** property to **dataRowTemplate**.
 
-1. In Vue 3, remove `<tbody>`. In Vue 2, keep `<tbody>` but add the following attribute to it: `style="display: contents"`.
+1. In Vue 3, remove `<tbody>`. In Vue 2, change `<tbody>` for a `<div>` with the following attribute: `style="display: contents"`.
 
 #include datagrid-rowtemplate-migration-steps
 
@@ -177,6 +177,7 @@ Follow these steps to migrate from the deprecated **rowTemplate** property to th
     <template>
         <DxDataGrid ...
             row-template="rowTemplate">
+            <!-- Vue 3 -->
             <template #rowTemplate="{ data: { data: { id, name } }">
                 <tbody class="dx-row">
                     <tr>
@@ -185,6 +186,16 @@ Follow these steps to migrate from the deprecated **rowTemplate** property to th
                     </tr>
                 </tbody>
             </template>
+
+            <!-- Vue 2 -->
+            <tbody slot="rowTemplate"
+                slot-scope="{ data: { data: { id, name } } }"
+                class="dx-row">
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                </tr>
+            </tbody>
         </DxDataGrid>
     </template>
     <script>
@@ -205,12 +216,23 @@ Follow these steps to migrate from the deprecated **rowTemplate** property to th
             id="dataGridContainer"
             data-row-template="dataRowTemplate"
             @row-prepared="addRowClasses">
+            <!-- Vue 3 -->
             <template #dataRowTemplate="{ data: { data: { id, name } }">
                 <tr>
                     <td>{{id}}</td>
                     <td>{{name}}</td>
                 </tr>
             </template>
+
+            <!-- Vue 2 -->
+            <div slot="dataRowTemplate"
+                slot-scope="{ data: { data: { id, name } } }"
+                style="display: contents">
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                </tr>
+            </div>
         </DxDataGrid>
     </template>
     <script>

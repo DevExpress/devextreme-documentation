@@ -33,7 +33,7 @@ Differs from the **value** field only when the column to which the prepared cell
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.
+<!-- %field(e.isExpanded)% -->
 
 ##### field(e.isNewRow): Boolean
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.
@@ -229,4 +229,5 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 #####See Also#####
 - [Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Customize_Cells/#Customize_the_Appearance')
 
-<!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->
+<!-- import { field(cellInfo.oldValue) } from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->
+<!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onRowClick.md' -->

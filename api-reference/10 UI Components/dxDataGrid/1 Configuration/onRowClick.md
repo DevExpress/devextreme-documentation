@@ -32,7 +32,7 @@ The row's [group index](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/
 Indicates whether internal UI component functions have already handled the event.
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"*, *"detail"*, or *"group"*.
+Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"group"*.
 
 ##### field(e.isNewRow): Boolean
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.

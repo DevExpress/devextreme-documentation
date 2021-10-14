@@ -29,7 +29,7 @@ The row's data.
 The row's [group index](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex'). Available if **rowType** is *"group"*.
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"*, *"detail"*, or *"group"*.
+<!-- %field(e.isExpanded)% -->
 
 ##### field(e.isNewRow): Boolean
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.
@@ -66,3 +66,5 @@ This event handler is also not executed on mobile devices, because double tap ge
     <div style="touch-action:manipulation"></div>
 
 [/note]
+
+<!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onRowClick.md' -->

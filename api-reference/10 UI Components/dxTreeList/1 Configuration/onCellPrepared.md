@@ -32,7 +32,7 @@ The data of the row to which the cell belongs. Available if the **rowType** is *
 <!-- %field(e.element)% -->
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.
+Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"*.
 
 ##### field(e.isNewRow): Boolean
 <!-- %field(e.isNewRow)% -->

@@ -15,7 +15,7 @@ Unlike the [mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configurati
 Renders all the loaded rows at once.
 
 - *"virtual"*     
-Renders only those rows that get into the viewport. Use this mode if the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '{basewidgetpath}/Configuration/paging/#pageSize') is large. Rows that are being currently rendered can be shown as grey boxes.
+Renders only those rows that get into the viewport. Use this mode if the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '{basewidgetpath}/Configuration/paging/#pageSize') is large. Rows that are being currently rendered can be shown as gray boxes. If you do not want them to appear, disable the **scrolling**.[renderAsync]({basewidgetpath}/Configuration/scrolling/#renderAsync) property, but please be notified that this may lower the performance.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteVirtualScrolling/"

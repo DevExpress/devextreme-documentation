@@ -12,13 +12,7 @@ The filter row contains a magnifier icon in its cells. Users click this icon to 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
 
-The component automatically applies an entered or selected filter. To apply the filter by click on the "*Apply Filter*" button, set the **filterRow**.[applyFilter](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#applyFilter) property to "*onClick*".
-
-![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_applyFilter_button.png)
-
-The **Gantt** allows you to set initial filter settings in code. 
-
-Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply filter criteria to the column.
+The **Gantt** allows you to define initial filter settings in code. Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply filter criteria to the column.
 
 ---
 ##### jQuery
@@ -37,8 +31,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
             }, { 
             // ...
             filterRow: { 
-                visible: true,
-                applyFilter: "onClick"
+                visible: true
             }
         });
     });
@@ -48,8 +41,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
     <!-- tab: app.component.html -->
     <dx-gantt ... >
         <dxo-filter-row 
-            [visible]="true"
-            applyFilter="onClick">
+            [visible]="true">
         </dxo-filter-row>
         <dxi-column
             dataField="title"
@@ -101,7 +93,6 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
         <DxGantt ... >
             <DxFilterRow 
                 :visible="true"
-                applyFilter="onClick" 
             />
             <DxColumn
                 data-field="title"
@@ -124,6 +115,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
     import {
       DxGantt,
       DxFilterRow,
+      DxColumn,
       // ...
     } from 'devextreme-vue/gantt';
 
@@ -131,6 +123,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
       components: {
         DxGantt,
         DxFilterRow,
+        DxColumn,
         // ...
       }
     }
@@ -145,6 +138,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
 
     import Gantt, {
         FilterRow,
+        Column,
         // ...
     } from 'devextreme-react/gantt';
 
@@ -153,7 +147,6 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
             <Gantt ... >
                 <FilterRow
                     visible={true}
-                    applyFilter="onClick"
                 />
                 <Column 
                     dataField="title"
@@ -189,9 +182,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
         })
         .FilterRow(e => {
             e.Visible(true);
-            e.ApplyFilter("OnClick");
         })
-        
         // ...
     )
 
@@ -212,9 +203,7 @@ Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGan
         })
         .FilterRow(e => {
             e.Visible(true);
-            e.ApplyFilter("OnClick");
         })
-        
         // ...
     )
 
@@ -247,7 +236,7 @@ Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configur
 |-
 |}
 
-You can specify the necessary filter operations for each column with the [filterOperations](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations) property.
+You can specify necessary filter operations for each column with the [filterOperations](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations) property.
 
 ---
 ##### jQuery
@@ -336,6 +325,7 @@ You can specify the necessary filter operations for each column with the [filter
     import {
       DxGantt,
       DxFilterRow,
+      DxColumn,
       // ...
     } from 'devextreme-vue/gantt';
 
@@ -343,6 +333,7 @@ You can specify the necessary filter operations for each column with the [filter
       components: {
         DxGantt,
         DxFilterRow,
+        DxColumn,
         // ...
       }
     }
@@ -357,6 +348,7 @@ You can specify the necessary filter operations for each column with the [filter
 
     import Gantt, {
         FilterRow,
+        Column,
         // ...
     } from 'devextreme-react/gantt';
 
@@ -392,7 +384,6 @@ You can specify the necessary filter operations for each column with the [filter
         .FilterRow(e => {
             e.Visible(true);
         })
-        
         // ...
     )
 
@@ -410,7 +401,6 @@ You can specify the necessary filter operations for each column with the [filter
         .FilterRow(e => {
             e.Visible(true);
         })
-        
         // ...
     )
 

@@ -17,7 +17,7 @@ The settings of the column the cell belongs to.
 
 ##### field(cellInfo.columnIndex): Number
 The index of the column the cell belongs to.        
-Refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/') topic for more information on how this index is calculated.
+Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/) topic for more information on how this index is calculated.
 
 ##### field(cellInfo.component): dxDataGrid
 The UI component's instance.
@@ -33,7 +33,7 @@ The cell's row.
 
 ##### field(cellInfo.rowIndex): Number
 The index of the row the cell belongs to. Begins with 0 on each page. Group rows are included.      
-Refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/') topic for more information on row indexes.
+Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/) topic for more information on row indexes.
 
 ##### field(cellInfo.rowType): String
 The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
@@ -51,7 +51,7 @@ See an example in the [Custom Editors](https://js.devexpress.com/Demos/WidgetsGa
 The cell value as it is specified in the data source.
 
 ##### field(cellInfo.watch): function()
-Allows you to track a variable and perform actions when it changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly') is **true**.       
+Allows you to track a variable and perform actions when it changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.       
 This function has the following parameters:     
 
 - **getter(data)**: Function        
@@ -72,18 +72,26 @@ Use the **editCellTemplate** to replace the default editor. In the template, spe
 
 Other properties that allow editor customization include:
 
-- **columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions')         
-Use it to specify the default editor's properties (except **onValueChanged**).
+- **columns[]**.[editorOptions]({basewidgetpath}/Configuration/columns/#editorOptions)         
+Use it to specify default editor properties (except **onValueChanged**).
 
-- [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing')         
+- [onEditorPreparing]({basewidgetpath}/Configuration/#onEditorPreparing)         
 Use it to:
     - Change the editor's type.
     - Override the default editor's **onValueChanged** handler.
     - [Dynamically change the editor's properties in the editing state](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Properties%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Properties_in_the_Editing_State/').
     - Implement other customization cases.
 
-[note] If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#twoWayBindingEnabled') to **false** to disable this feature's default implementation.
+[note]
+
+Please review the following notes:
+
+- If you implement two-way data binding in your template, set [twoWayBindingEnabled]({basewidgetpath}/Configuration/#twoWayBindingEnabled) to **false** to disable this feature's default implementation.
+
+- If you specify [validationRules]({basewidgetpath}/Configuration/columns/#validationRules), the **editCellTemplate** must contain a DevExtreme editor to which the {WidgetName} will apply these rules.
+
+[/note]
 
 #####See Also#####
-- **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#showEditorAlways')
+- **columns[]**.[showEditorAlways]({basewidgetpath}/Configuration/columns/#showEditorAlways)
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

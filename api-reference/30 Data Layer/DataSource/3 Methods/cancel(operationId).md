@@ -9,7 +9,7 @@ Cancels the load operation with a specific identifier.
 **true** if the operation was canceled; **false** if it was not found.
 
 ##### param(operationId): Number
-<!-- Description goes here -->
+An operation identifier.
 
 ---
 You can access the operation identifier using the **operationId** field that extends the Promise object returned from the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') and [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') methods.

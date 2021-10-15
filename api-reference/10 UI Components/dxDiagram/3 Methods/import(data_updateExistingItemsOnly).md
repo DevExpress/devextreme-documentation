@@ -12,7 +12,7 @@ The diagram data in JSON format.
 **true** to apply diagram data without rewriting diagram items; **false** to apply diagram data and replace diagram items with items from the data parameter.
 
 ---
-The [export](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/export().md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#export') method allows you to save information about a diagram's layout, appearance, and the diagram's shape positions. Use the **import** method to load this data on demand.
+The [export](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/export().md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#export') method allows you to save information about a diagram's layout, appearance, and shape positions. Use the **import** method to load this data on demand.
 
 The diagram import updates the [bound data source](/Documentation/Guide/UI_Components/Diagram/Data_Binding/)'s field values. If the values are not changed, the corresponding events (for instance, **onInserted** and **onUpdated**) do not fire.
 

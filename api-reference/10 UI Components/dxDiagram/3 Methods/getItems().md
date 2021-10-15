@@ -55,8 +55,8 @@ The code sample below demonstrates how to get the full collection of diagram ite
         });
         var relativeShapes = [];
         connectors.forEach(element => {
-            if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all next shapes 
-            if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all pervious shapes
+            if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
+            if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
         });
     }
     // ...
@@ -91,8 +91,8 @@ The code sample below demonstrates how to get the full collection of diagram ite
       });
       var relativeShapes = [];
       connectors.forEach(element => {
-        if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all next shapes 
-        if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all pervious shapes
+        if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
+        if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
       });
       console.log(relativeShapes);
     },
@@ -112,8 +112,8 @@ class App extends React.Component {
       });
       var relativeShapes = [];
       connectors.forEach(element => {
-        if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all next shapes 
-        if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all pervious shapes
+        if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
+        if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
       });
     },
     // ...

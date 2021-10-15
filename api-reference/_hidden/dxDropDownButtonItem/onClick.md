@@ -23,10 +23,10 @@ The UI component's instance.
 Model data. Available only if you use Knockout.
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The item's data.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ---
 <!-- Description goes here -->

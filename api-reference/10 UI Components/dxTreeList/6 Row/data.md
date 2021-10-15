@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A data object that the row visualizes.
 
 ---
 <!-- Description goes here -->

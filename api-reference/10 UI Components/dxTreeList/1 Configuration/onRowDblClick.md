@@ -26,7 +26,7 @@ The row's data.
 #include common-ref-eventparam
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.
+<!-- %field(e.isExpanded)% -->
 
 ##### field(e.isNewRow): Boolean
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.
@@ -54,3 +54,5 @@ Raw values displayed in the row's cells.
 
 ---
 [note] **onRowDblClick** is not executed when the clicked row is in the editing state or switches to this state. You can use **onCellDblClick** instead.
+
+<!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxTreeList\1 Configuration\onRowClick.md' -->

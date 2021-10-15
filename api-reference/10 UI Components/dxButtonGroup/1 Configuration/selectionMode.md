@@ -6,7 +6,7 @@ default: 'single'
 ---
 ---
 ##### shortDescription
-Specifies a button selection mode.
+Specifies the button selection mode.
 
 ---
 This property can have one of the following values:

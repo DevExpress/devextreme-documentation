@@ -13,4 +13,4 @@ Table cells include a context menu with common table operation commands. To acti
 
 ![DevExtreme HTML5 JavaScript HtmlEditor: Table Context Menu](/images/htmlEditor/visual_elements/context-menu.png)
 
-You can also use the [items]({currentpath}/#enabled) array to rearrange or hide menu commands.
+You can also use the [items]({currentpath}/#items) array to rearrange or hide menu commands.

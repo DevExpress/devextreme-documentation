@@ -26,7 +26,7 @@ This property can have one of the following values:
         <td><b>false</b></td>
         <td>
             Rows are rendered <i>at the same time</i> as the user scrolls the {WidgetName}.<br>
-            In this mode, the gray boxes do not appear, but the performance may be lowered.
+            In this mode, the gray boxes do not appear, but the component performance during scrolling may be lowered.
         </td>
     </tr>
     <tr>

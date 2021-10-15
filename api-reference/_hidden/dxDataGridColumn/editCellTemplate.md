@@ -70,7 +70,7 @@ Use the **editCellTemplate** to replace the default editor. In the template, spe
 Other properties that allow editor customization include:
 
 - **columns[]**.[editorOptions]({basewidgetpath}/Configuration/columns/#editorOptions)         
-Use it to specify the default editor's properties (except **onValueChanged**).
+Use it to specify default editor properties (except **onValueChanged**).
 
 - [onEditorPreparing]({basewidgetpath}/Configuration/#onEditorPreparing)         
 Use it to:

@@ -33,7 +33,7 @@ You can pass the date to the **scrollToDate** method in the following formats:
 Note that the **scrollToDate** method scrolls to a date inside the current scroll area. You can zoom the chart to resize the viewport.
 
 [note]
-Specify a timeout if you call the **scrollToDate** method in the [contentReady](/Documentation/ApiReference/UI_Components/dxGantt/Events/#contentReady) event.
+Specify a timeout if you call the **scrollToDate** method in the [contentReady](/api-reference/10%20UI%20Components/Widget/4%20Events/contentReady.md '/Documentation/ApiReference/UI_Components/dxGantt/Events/#contentReady') event.
 
 ---
 ##### jQuery

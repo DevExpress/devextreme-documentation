@@ -5,7 +5,7 @@ default: 'containerKey'
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides a key of a node's parent container node.
+Specifies the name of a data source field or an expression that returns a key of a node's parent container node.
 
 ##### param(data): any
 The current node's data object.

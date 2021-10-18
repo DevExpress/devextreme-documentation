@@ -5,7 +5,7 @@ default: 'id'
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides node keys.
+Specifies the name of a data source field or an expression that returns node keys.
 
 ##### param(data): any
 The current node's data object.

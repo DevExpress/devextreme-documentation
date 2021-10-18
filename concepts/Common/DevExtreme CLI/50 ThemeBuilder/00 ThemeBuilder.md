@@ -10,7 +10,7 @@ If your application uses npm v7 or later, open `package.json` and ensure the fol
 
 If these conditions are not met, run the following commands to install the packages:
 
-    npm i devextreme@20.2 --save --save-exact
-    npm i devextreme-themebuilder@20.2 --save-dev --save-exact
+    npm i devextreme@21.1 --save --save-exact
+    npm i devextreme-themebuilder@21.1 --save-dev --save-exact
 
 [/important]

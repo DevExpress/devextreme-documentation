@@ -12,7 +12,11 @@ You can use a column's [filterType](/Documentation/ApiReference/UI_Components/dx
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SelectAll.png)
 
-The header filter contains unique column values. You can group these values with the [groupInterval](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#groupInterval) property or bind the header filter to a [data source](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#dataSource).
+The header filter contains unique column values. You can change them in the following ways:
+
+* Use the [groupInterval](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#groupInterval) property to group filter values.
+
+* Bind the header filter to a [data source](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#dataSource).
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_groupInterval.png)
 
@@ -296,7 +300,7 @@ Users can search for the filter values in the header filter. Enable the **header
 
 ---
 
-The **Gantt** allows you to define initial filter settings in code. Specify a column's [filterValues](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValues) property to apply the filter criteria to the column. 
+The **Gantt** allows you to define initial filter settings in code. Specify the [filterValues](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValues) property for a column to customize its filter settings. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_filterValues.png)
 

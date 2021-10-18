@@ -8,7 +8,7 @@ Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGant
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/FilterRow/"
 }
 
-The filter row contains a magnifier icon in its cells. Users click this icon to select the desired filter operation. Set the [showOperationChooser](/Documentation/21_2/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser) property to **false** for a column to hide the magnifier icon. 
+The filter row contains a magnifier icon in its cells. Users can click this icon to select a comparison type from a pop-up list. Set the [showOperationChooser](/Documentation/21_2/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser) property to **false** for a column to hide the magnifier icon. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
 
@@ -236,7 +236,7 @@ Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configur
 |-
 |}
 
-You can specify necessary filter operations for each column with the [filterOperations](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations) property.
+You can use the [filterOperations](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations) property to specify necessary filter operations for each column.
 
 ---
 ##### jQuery

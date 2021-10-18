@@ -1,4 +1,4 @@
-The **Gantt** component allows users to filter columns by filter row values. To apply filter criteria, users enter a value in a column's filter row cell or select the value with a specific editor. 
+The **Gantt** component allows users to filter columns by filter row values. To apply filter criteria, users can enter a value in a column's filter row cell or select the value in a specific editor. 
 
 Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row. Assign **false** to the **columns.**[allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to disable the filtering feature for a column. 
 
@@ -211,7 +211,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify a co
 
 The **Gantt** supports a predefined set of filter operations for each data type. 
 
-Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#dataType) defines editor types used within filter row cells:
+Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#dataType) defines in-place editor types for filter row cells:
 
 {|
 |-

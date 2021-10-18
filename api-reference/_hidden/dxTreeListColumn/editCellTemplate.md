@@ -6,7 +6,7 @@ type: template
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(cellElement): dxElement
+##### param(cellElement): DxElement
 <!-- %param(cellElement)% -->
 
 ##### param(cellInfo): Object

@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides an edge style.
+Specifies the name of a data source field or an expression that returns an edge style.
 
 ##### param(data): any
 The current edge's data object.

@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides an index of a shape connection point where an edge ends.
+Specifies the name of a data source field or an expression that returns an index of a shape connection point where an edge ends.
 
 ##### param(data): any
 The current edge's data object.

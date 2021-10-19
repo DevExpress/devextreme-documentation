@@ -103,5 +103,6 @@ dx-diagram.js, dx.all.js
 }
 
 #####See Also#####
+- [End-User Documentation](https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/diagram.html)
 #include common-link-setupdevextreme
 #include common-link-configurewidget

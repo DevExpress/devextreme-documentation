@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides the y-coordinate of a node's top border.
+Specifies the name of a data source field or an expression that returns the y-coordinate of a node's top border.
 
 ##### param(data): any
 The current node's data object.

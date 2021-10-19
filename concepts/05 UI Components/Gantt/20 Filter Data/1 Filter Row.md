@@ -1,6 +1,6 @@
 The **Gantt** component allows users to filter columns by filter row values. To apply filter criteria, users can enter a value in a column's filter row cell or select the value in a specific editor. 
 
-Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row. Assign **false** to the **columns.**[allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to disable the filtering feature for a column. 
+Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row. Assign **false** to the **columns.**[allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to disable filtering for a column. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row.png)
 

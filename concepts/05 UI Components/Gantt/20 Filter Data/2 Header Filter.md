@@ -8,7 +8,7 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
 }
 
-You can use a column's [filterType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType) property to specify initial settings of header filter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).
+You can use a column's [filterType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType) property to specify the initial settings of header filter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SelectAll.png)
 

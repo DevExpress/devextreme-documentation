@@ -13,11 +13,11 @@ type: template
 <!-- %param(cellInfo)% -->
 
 ##### field(cellInfo.column): dxTreeListColumn
-The index of the column the cell belongs to.        
-Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/) topic for more information on how this index is calculated.
+<!-- %field(cellInfo.column)% -->
 
 ##### field(cellInfo.columnIndex): Number
-<!-- %field(cellInfo.columnIndex)% -->
+The index of the column the cell belongs to.        
+Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/) topic for more information on how this index is calculated.
 
 ##### field(cellInfo.component): dxTreeList
 <!-- %field(cellInfo.component)% -->

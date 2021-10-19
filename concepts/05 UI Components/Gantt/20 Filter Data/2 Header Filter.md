@@ -1,4 +1,4 @@
-The **Gantt** component allows users to filter a particular column by values listed in a pop-up window. Users click the filter icon to invoke the window and select the necessary filter criteria for a column. 
+The **Gantt** component allows users to filter a particular column by values listed in a pop-up window. Users click the filter icon to invoke the window and select the filter criteria for a column. 
 
 Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible) property to **true** to display filter icons for all columns. Assign **false** to the [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering) property for a column to disable its filter icon. If this property is not specified, the filtering option depends on the [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property's value.
 

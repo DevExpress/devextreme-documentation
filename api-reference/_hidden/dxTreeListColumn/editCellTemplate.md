@@ -13,7 +13,8 @@ type: template
 <!-- %param(cellInfo)% -->
 
 ##### field(cellInfo.column): dxTreeListColumn
-<!-- %field(cellInfo.column)% -->
+The index of the column the cell belongs to.        
+Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/) topic for more information on how this index is calculated.
 
 ##### field(cellInfo.columnIndex): Number
 <!-- %field(cellInfo.columnIndex)% -->
@@ -31,7 +32,8 @@ type: template
 <!-- %field(cellInfo.row)% -->
 
 ##### field(cellInfo.rowIndex): Number
-<!-- %field(cellInfo.rowIndex)% -->
+The index of the row the cell belongs to. Begins with 0 on each page.      
+Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/) topic for more information on row indexes.
 
 ##### field(cellInfo.rowType): String
 <!-- %field(cellInfo.rowType)% -->

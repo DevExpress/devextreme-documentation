@@ -30,7 +30,7 @@ The position at which to display a new data item in a UI component bound to the 
 [note] 
 
 - The **DataSource** does not automatically sort, group, filter, or otherwise shape pushed data. For this reason, the **DataSource** and the UI component bound to it can be out of sync. To prevent this, enable the [reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') property. We also recommend specifying the [pushAggregationTimeout](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pushAggregationTimeout.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pushAggregationTimeout') to reduce the number of updates and recalculations.
-- The **push** method does not fire data source modification events (for instance, **onInserted**, **onRemoved**, **onUpdated**). Handle the [onPush](/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#onPush) event to perform actions when data changes are pushed to a store.
+- The **push** method does not raise data source modification events (for instance, **onInserted**, **onRemoved**, **onUpdated**). Handle the [onPush](/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#onPush) event to perform actions when data changes are pushed to a store.
 - The **push** method does not modify the remote data source. It is used to push changes from the remote data source to the local store without reloading all data.
 
 [/note]

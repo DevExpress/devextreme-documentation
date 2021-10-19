@@ -33,7 +33,7 @@ Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/TreeLis
 
 ##### field(cellInfo.rowIndex): Number
 The index of the row the cell belongs to. Begins with 0 on each page.      
-Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/) topic for more information on row indexes.
+Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/) topic for more information on row indexes.
 
 ##### field(cellInfo.rowType): String
 <!-- %field(cellInfo.rowType)% -->

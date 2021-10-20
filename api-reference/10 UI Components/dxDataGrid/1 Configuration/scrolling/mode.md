@@ -17,7 +17,7 @@ A user scrolls a single page only. Scrolling is available only if [all the page'
 - **Virtual**       
 Rows are loaded when they get into the viewport and removed once they leave it. In this mode, users can move to any page instantly.
 
-    If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/concepts/05%20UI%20Components/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/030%20Rendering%20Optimization.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization') can reduce rendering time and remove the gray boxes. Alternatively, you can disable the **scrolling**.[renderAsync]({basewidgetpath}/Configuration/scrolling/#renderAsync) property, but this can impact performance.
+    If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/concepts/05%20UI%20Components/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/030%20Rendering%20Optimization.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization') can reduce rendering time and remove the gray boxes. Alternatively, you can disable the **scrolling**.[renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/renderAsync.md '{basewidgetpath}/Configuration/scrolling/#renderAsync') property, but this can impact performance.
 
 - **Infinite**      
 Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually from the first to the last page.

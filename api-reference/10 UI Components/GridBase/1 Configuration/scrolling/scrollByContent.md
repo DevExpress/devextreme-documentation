@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.scrolling.scrollByContent
 type: Boolean
-default: true
+default: true, false (non-touch_devices)
 ---
 ---
 ##### shortDescription

@@ -31,6 +31,6 @@ This property can have one of the following values:
 </table>
 
 #####See Also#####
-- [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onSelectionChanged)
-- [selectedItems](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItems)
-- [selectedItemKeys](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItemKeys)
+- [onSelectionChanged](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onSelectionChanged')
+- [selectedItems](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItems')
+- [selectedItemKeys](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItemKeys')

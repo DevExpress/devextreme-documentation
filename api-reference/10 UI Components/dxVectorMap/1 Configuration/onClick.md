@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.onClick
-type: function(e) | String
+type: function(e)
 default: null
 notUsedInTheme: 
 ---

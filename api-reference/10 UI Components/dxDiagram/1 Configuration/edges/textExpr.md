@@ -14,7 +14,7 @@ The current edge's data object.
 An edge's text.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the edge's new text value; when the function is called as a getter, returns `undefined`.
 
 ---
 The specified data source field or an expression should return a string or object value.

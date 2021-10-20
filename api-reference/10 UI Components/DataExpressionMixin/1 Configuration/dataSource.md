@@ -1,6 +1,6 @@
 ---
 id: DataExpressionMixin.Options.dataSource
-type: String | Array<CollectionWidgetItem, any> | Store | DataSource | DataSource_Options
+type: Store | DataSource | DataSource_Options | String | Array<CollectionWidgetItem, any>
 default: null
 ---
 ---

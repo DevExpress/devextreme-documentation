@@ -17,7 +17,7 @@ The settings of the column the cell belongs to.
 
 ##### field(cellInfo.columnIndex): Number
 The index of the column the cell belongs to.        
-Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/) topic for more information on how this index is calculated.
+Refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') topic for more information on how this index is calculated.
 
 ##### field(cellInfo.component): dxDataGrid
 The UI component's instance.
@@ -33,7 +33,7 @@ The cell's row.
 
 ##### field(cellInfo.rowIndex): Number
 The index of the row the cell belongs to. Begins with 0 on each page. Group rows are included.      
-Refer to the [Column and Row Indexes](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/) topic for more information on row indexes.
+Refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') topic for more information on row indexes.
 
 ##### field(cellInfo.rowType): String
 The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
@@ -72,10 +72,10 @@ Use the **editCellTemplate** to replace the default editor. In the template, spe
 
 Other properties that allow editor customization include:
 
-- **columns[]**.[editorOptions]({basewidgetpath}/Configuration/columns/#editorOptions)         
+- **columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/Configuration/columns/#editorOptions')         
 Use it to specify default editor properties (except **onValueChanged**).
 
-- [onEditorPreparing]({basewidgetpath}/Configuration/#onEditorPreparing)         
+- [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')         
 Use it to:
     - Change the editor's type.
     - Override the default editor's **onValueChanged** handler.
@@ -86,12 +86,12 @@ Use it to:
 
 Please review the following notes:
 
-- If you implement two-way data binding in your template, set [twoWayBindingEnabled]({basewidgetpath}/Configuration/#twoWayBindingEnabled) to **false** to disable this feature's default implementation.
+- If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '{basewidgetpath}/Configuration/#twoWayBindingEnabled') to **false** to disable this feature's default implementation.
 
-- If you specify [validationRules]({basewidgetpath}/Configuration/columns/#validationRules), the **editCellTemplate** must contain a DevExtreme editor to which the {WidgetName} will apply these rules.
+- If you specify [validationRules](/api-reference/_hidden/GridBaseColumn/validationRules.md '{basewidgetpath}/Configuration/columns/#validationRules'), the **editCellTemplate** must contain a DevExtreme editor to which the {WidgetName} will apply these rules.
 
 [/note]
 
 #####See Also#####
-- **columns[]**.[showEditorAlways]({basewidgetpath}/Configuration/columns/#showEditorAlways)
+- **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/Configuration/columns/#showEditorAlways')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

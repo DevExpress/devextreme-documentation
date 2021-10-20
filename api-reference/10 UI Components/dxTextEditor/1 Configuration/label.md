@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.label
-type: Boolean
+type: String
 default: ''
 ---
 ---

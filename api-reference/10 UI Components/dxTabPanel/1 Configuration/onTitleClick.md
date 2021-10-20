@@ -1,6 +1,6 @@
 ---
 id: dxTabPanel.Options.onTitleClick
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---

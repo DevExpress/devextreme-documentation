@@ -9,7 +9,7 @@ inheritsType: dxHtmlEditorTableContextMenuItem
 Configures context menu items.
 
 ---
-Use this property to customize the context menu. For example, the following code creates a flat menu of table commands instead of the default hierarchical menu. The [beginGroup](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/items/#beginGroup) property is used to divide command groups.
+Use this property to customize the context menu. For example, the following code creates a flat menu of table commands instead of the default hierarchical menu. The [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/items/#beginGroup') property is used to divide command groups.
 
 ---
 ##### jQuery

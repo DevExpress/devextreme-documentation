@@ -23,7 +23,7 @@ The data object of the item being held.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-The index of the item being held. In a grouped list, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
+The item's index.
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.

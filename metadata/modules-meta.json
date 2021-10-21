@@ -94,7 +94,8 @@
       "default": {}
     },
     "data/data_source": {
-      "default": {}
+      "default": {},
+      "DataSourceLike": {}
     },
     "core/devices": {
       "default": {}

@@ -1,6 +1,6 @@
 ---
 id: dxMap.Options.onClick
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---

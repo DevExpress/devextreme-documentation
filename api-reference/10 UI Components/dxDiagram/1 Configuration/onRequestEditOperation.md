@@ -90,7 +90,7 @@ The **operation** parameter identifies the edit operation. Note that if an [Allo
     </tr>
 </table>
 
-For more information, refer to the following section: [Prohibit Individual Operations](/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations/#Prohibit_Individual_Operations)
+For more information, refer to the following section: [Prohibit Individual Operations](/concepts/05%20UI%20Components/Diagram/28%20Restrict%20Edit%20Operations/20%20Prohibit%20Individual%20Operations.md '/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations/#Prohibit_Individual_Operations')
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"

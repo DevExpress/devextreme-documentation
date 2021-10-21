@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.onSeriesClick
-type: function(e) | String
+type: function(e)
 default: null
 notUsedInTheme: 
 ---

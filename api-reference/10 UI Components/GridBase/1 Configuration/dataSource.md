@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.dataSource
-type: String | Array<any> | Store | DataSource | DataSource_Options
+type: Store | DataSource | DataSource_Options | String | Array<any>
 default: null
 ---
 ---

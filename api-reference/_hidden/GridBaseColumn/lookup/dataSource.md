@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.lookup.dataSource
-type: Array<any> | DataSource_Options | Store | function(options)
+type: Array<any> | Store | DataSource_Options | function(options)
 default: undefined
 ---
 ---
@@ -16,7 +16,7 @@ The row's data.
 ##### field(options.key): any
 The row's key.
 
-##### return: Array<any> | DataSource_Options | Store
+##### return: Array<any> | Store | DataSource_Options
 An array of objects or primitives, a store instance, or a **DataSource** configuration.
 
 ---

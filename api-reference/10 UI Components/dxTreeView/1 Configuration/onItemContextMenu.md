@@ -22,7 +22,7 @@ The target item's data object.
 ##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "target item" }
 
-##### field(e.itemIndex): Number | Object
+##### field(e.itemIndex): Number
 The target item's index.
 
 ##### field(e.model): any

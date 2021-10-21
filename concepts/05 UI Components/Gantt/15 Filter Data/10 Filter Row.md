@@ -1,6 +1,6 @@
 The **Gantt** component allows users to filter columns by filter row values. To apply filter criteria, users can enter a value in a column's filter row cell or select the value in this cell's editor.
 
-Set the **filterRow**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible) property to **true** to display the filter row. Assign **false** to the **columns.**[allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property to disable filtering for a column. 
+Set the **filterRow**.[visible](/api-reference/_hidden/dxGanttFilterRow/visible.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#visible') property to **true** to display the filter row. Assign **false** to the **columns.**[allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering') property to disable filtering for a column. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row.png)
 
@@ -12,7 +12,7 @@ The filter row contains a magnifier icon in its cells. Users can click this icon
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
 
-The **Gantt** allows you to define initial filter settings in code. Specify a column's [filterValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue) property to apply filter criteria to the column.
+The **Gantt** allows you to define initial filter settings in code. Specify a column's [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue') property to apply filter criteria to the column.
 
 ---
 ##### jQuery
@@ -211,7 +211,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify a co
 
 The **Gantt** supports a predefined set of filter operations for each data type. 
 
-Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#dataType) defines in-place editor types for filter row cells:
+Underlying [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#dataType') defines in-place editor types for filter row cells:
 
 <table class="dx-table">
     <tr>
@@ -236,7 +236,7 @@ Underlying [dataType](/Documentation/ApiReference/UI_Components/dxGantt/Configur
     </tr>
 </table>
 
-You can use the [filterOperations](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations) property to specify necessary filter operations for each column.
+You can use the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations') property to specify necessary filter operations for each column.
 
 ---
 ##### jQuery

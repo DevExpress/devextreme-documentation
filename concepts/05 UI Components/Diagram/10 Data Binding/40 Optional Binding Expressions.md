@@ -162,7 +162,7 @@ The Diagram allows you to bind a number of shape and connector visual properties
 
 You can set a binding property to the name of a data source field that supplies item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
 
-If your diagram includes container shapes, define the [containerKeyExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr) property to store information about a parent container in the data source. Otherwise, this information will be lost. 
+If your diagram includes container shapes, define the [containerKeyExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerKeyExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr') property to store information about a parent container in the data source. Otherwise, this information will be lost. 
 
 ![Diagram - Data Bound Diagram](/images/diagram/data-bound-diagram.png)
 

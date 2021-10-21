@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.onAppointmentContextMenu
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---

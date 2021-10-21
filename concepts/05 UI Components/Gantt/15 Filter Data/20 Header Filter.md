@@ -1,6 +1,6 @@
 The **Gantt** component allows users to filter a particular column by values listed in a pop-up window. Users click the filter icon to invoke the window and select the filter criteria for a column. 
 
-Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible) property to **true** to display filter icons for all columns. Assign **false** to the [allowHeaderFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering) property for a column to disable its filter icon. If this property is not specified, the filtering option depends on the [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) property's value.
+Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/visible.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#visible') property to **true** to display filter icons for all columns. Assign **false** to the [allowHeaderFiltering](/api-reference/_hidden/GridBaseColumn/allowHeaderFiltering.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowHeaderFiltering') property for a column to disable its filter icon. If this property is not specified, the filtering option depends on the [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering') property's value.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter.png)
 
@@ -8,19 +8,19 @@ Set the **headerFilter**.[visible](/Documentation/ApiReference/UI_Components/dxG
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
 }
 
-You can use a column's [filterType](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType) property to specify the initial settings of header filter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).
+You can use a column's [filterType](/api-reference/_hidden/GridBaseColumn/filterType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType') property to specify the initial settings of header filter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SelectAll.png)
 
 The header filter contains unique column values. You can change them in the following ways:
 
-* Use the [groupInterval](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#groupInterval) property to group filter values.
+* Use the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#groupInterval') property to group filter values.
 
-* Bind the header filter to a [data source](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#dataSource).
+* Bind the header filter to a [data source](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#dataSource').
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_groupInterval.png)
 
-Users can search for the filter values in the header filter. Enable the **headerFilter.**[allowSearch](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch) property at the component level or **columns.headerFilter.**[allowSearch](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowSearch) property at the column level to display the search panel. Use the [searchMode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode) property to define a comparison type for a specific column.
+Users can search for the filter values in the header filter. Enable the **headerFilter.**[allowSearch](/api-reference/_hidden/dxGanttHeaderFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch') property at the component level or **columns.headerFilter.**[allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowSearch') property at the column level to display the search panel. Use the [searchMode](/api-reference/_hidden/GridBaseColumn/headerFilter/searchMode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode') property to define a comparison type for a specific column.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SearchPanel.png)
 
@@ -300,7 +300,7 @@ Users can search for the filter values in the header filter. Enable the **header
 
 ---
 
-The **Gantt** allows you to define initial filter settings in code. Specify the [filterValues](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValues) property for a column to customize its filter settings. 
+The **Gantt** allows you to define initial filter settings in code. Specify the [filterValues](/api-reference/_hidden/GridBaseColumn/filterValues.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValues') property for a column to customize its filter settings. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_filterValues.png)
 

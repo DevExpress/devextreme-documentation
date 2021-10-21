@@ -22,7 +22,7 @@ The clicked item's data object.
 ##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "clicked item" }
 
-##### field(e.itemIndex): Number | Object
+##### field(e.itemIndex): Number
 The clicked item's index.
 
 ##### field(e.model): any

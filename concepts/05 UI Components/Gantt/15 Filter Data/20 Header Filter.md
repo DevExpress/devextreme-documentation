@@ -236,7 +236,7 @@ Users can search for the filter values in the header filter. Enable the **header
         );
     };
 
-   export default App;
+    export default App;
 
 ##### ASP.NET Core Controls
 
@@ -435,7 +435,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
         );
     };
 
-   export default App;
+    export default App;
 
 ##### ASP.NET Core Controls
 

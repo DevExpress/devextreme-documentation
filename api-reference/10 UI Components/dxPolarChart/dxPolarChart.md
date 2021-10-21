@@ -30,6 +30,11 @@ dataSource: [{
 }, {
     arg: "Sunday",
     val: 4
+}],
+series: [{
+    argumentField: "arg",
+    valueField: "val",
+    type: "bar"
 }]
 
 ##### lib

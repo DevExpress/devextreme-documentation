@@ -7,4 +7,4 @@ An object that specifies the UI component's position.
 A shortcut listed in the accepted values. Positions the UI component relative to the window.
 
 - **Function** (deprecated since v21.2)         
-Refer to the [W0018](/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0018) warning description for information on how you can migrate to other property values.
+Refer to the [W0018](/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0018) warning description for information on how to migrate to other property values.

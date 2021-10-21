@@ -155,12 +155,12 @@ The Diagram allows you to bind a number of shape and connector visual properties
     </tr> 
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#zIndexExpr">zIndexExpr</a></td>
-        <td>A edge's z-index.</td>
+        <td>An edge's z-index.</td>
         <td>0</td>
     </tr>
 </table>
 
-You can set a binding property to a name of a data source field that provides item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
+You can set a binding property to the name of a data source field that supplies item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
 
 If your diagram includes container shapes, define the [containerKeyExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr) property to store information about a parent container in the data source. Otherwise, this information will be lost. 
 

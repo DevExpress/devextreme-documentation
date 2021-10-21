@@ -33,8 +33,64 @@ The processed operation.
 Identifies the reason why the event is raised.
 
 ---
-To disable a specific operation type for the entire diagram, set an [Allow{Operation}](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/') property to `false`.
+The **operation** parameter identifies the edit operation. Note that if an [Allow{Operation}](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/editing/') property is set to `false`, the event does not fire for this operation. The table below lists all available operations.
 
+<table class="dx-table">
+    <tr>
+        <th>Operation</th>
+        <th>User action / IU update operation causes the event to be raised</th>
+    </tr>
+    <tr>
+        <td>addShape</td>
+        <td>A user is about to add a shape / The UI component determines the **Paste** command's visibility.</td>
+    </tr>
+    <tr>
+        <td>addShapeFromToolbox</td>
+        <td>The UI component determines the visibility of a shape in the toolbox or context toolbox.</td>
+    </tr>
+    <tr>
+        <td>beforeChangeConnectorText</td>
+        <td>A user is about to edit a connector's text.</td>
+    </tr>
+    <tr>
+        <td>beforeChangeShapeText</td>
+        <td>A user is about to edit a shape's text.</td>
+    </tr>
+    <tr>
+        <td>changeConnection</td>
+        <td>A user is about to link or delink a connector from a shape / The UI component determines a connection point's visibility.</td>
+    </tr>
+    <tr>
+        <td>changeConnectorPoints</td>
+        <td>A user changed a connector's points.</td>
+    </tr>
+    <tr>
+        <td>changeConnectorText</td>
+        <td>A user changed a connector's text.</td>
+    </tr>
+    <tr>
+        <td>changeShapeText</td>
+        <td>A user changed a shape's text.</td>
+    </tr>
+    <tr>
+        <td>deleteConnector</td>
+        <td>A user is about to delete a connector / The UI component determines the **Cut** and **Delete** commands' visibility.</td>
+    </tr>
+    <tr>
+        <td>deleteShape</td>
+        <td>A user is about to delete a shape / The UI component determines the visibility of the **Cut** and **Delete** commands.</td>
+    </tr>
+    <tr>
+        <td>moveShape</td>
+        <td>A user moved a shape.</td>
+    </tr>
+    <tr>
+        <td>resizeShape</td>
+        <td>A user resized a shape.</td>
+    </tr>
+</table>
+
+For more information, refer to the following section: [Prohibit Individual Operations](/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations/#Prohibit_Individual_Operations)
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"

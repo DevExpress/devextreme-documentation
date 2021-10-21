@@ -29,7 +29,7 @@ The row's data.
 Indicates whether internal UI component functions have already handled the event.
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.
+Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"*.
 
 ##### field(e.isNewRow): Boolean
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.

@@ -23,7 +23,7 @@ The row's data. Available if the **rowType** is *"data"*, *"detail"* or *"detail
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.isExpanded): Boolean
-Indicates whether the row is expanded or collapsed. Available if **rowType** is *"data"* or *"detail"*.
+<!-- %field(e.isExpanded)% -->
 
 ##### field(e.isNewRow): Boolean
 Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.
@@ -57,3 +57,5 @@ The row's [type](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.
 Values displayed in the row cells.
 
 ---
+
+<!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxTreeList\1 Configuration\onRowClick.md' -->

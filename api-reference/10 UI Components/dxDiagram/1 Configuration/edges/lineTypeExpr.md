@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides an edge's line type.
+Specifies the name of a data source field or an expression that returns an edge's line type.
 
 ##### param(data): any
 The current edge's data object.
@@ -14,7 +14,7 @@ The current edge's data object.
 An edge's line type (`orthogonal` or `straight`).
 
 ##### param(value): any
-<!-- Description goes here -->
+Returns the edge's line type for a newly created edge; otherwise, returns `undefined`.
 
 ---
 The specified field or expression should return `orthogonal` or `straight`.

@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A name used to identify the context menu item.
 
 ---
 <!-- Description goes here -->

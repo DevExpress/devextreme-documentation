@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the name of a data source field or an expression that provides a node's height.
+Specifies the name of a data source field or an expression that returns a node's height.
 
 ##### param(data): any
 The current node's data object.

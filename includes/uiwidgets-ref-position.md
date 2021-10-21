@@ -6,5 +6,5 @@ An object that specifies the UI component's position.
 - **String**        
 A shortcut listed in the accepted values. Positions the UI component relative to the window.
 
-- **Function**      
-A function that returns one of the above. Use it to position the UI component based on a condition.
+- **Function** (deprecated since v21.2)         
+Refer to the [W0018](/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0018) warning description for information on how to migrate to other property values.

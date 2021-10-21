@@ -10,6 +10,8 @@ Specifies whether to show or hide task resources.
 
 ---
 
+![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
+
 ---
 
 ##### jQuery

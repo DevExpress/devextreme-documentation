@@ -10,6 +10,8 @@ Specifies whether to show or hide dependencies.
 
 ---
 
+![DevExtreme Gantt Chart - Dependencies](/images/Gantt/Dependency.png)
+
 ---
 
 ##### jQuery
@@ -154,6 +156,7 @@ Specifies whether to show or hide dependencies.
         }
         function yourCustomMethod() {
             var ganttInstance = getGanttInstance();
+            ganttInstance.showDependencies(false);
             ganttInstance.showDependencies(false);
             // ...
         }

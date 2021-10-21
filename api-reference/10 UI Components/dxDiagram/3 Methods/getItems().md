@@ -11,6 +11,7 @@ An array of items (shapes and connectors).
 ---
 The code sample below demonstrates how to get the full collection of diagram items and filter the items that are directly connected to the clicked item.
 
+---
 ##### jQuery
 
     <!-- tab: index.js -->

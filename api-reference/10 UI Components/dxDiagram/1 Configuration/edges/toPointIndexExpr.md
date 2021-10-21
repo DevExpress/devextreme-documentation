@@ -14,7 +14,7 @@ The current edge's data object.
 An index of a shape connection point where an edge ends.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns an index of a shape connection point where the edge ends; when the function is called as a getter, returns `undefined`.
 
 ---
 The built-in shape's connection points are numbered clockwise from the leftmost point on the top border.

@@ -8,4 +8,3 @@ type: String
 Specifies the diagram layout orientation.
 
 ---
-<!-- Description goes here -->

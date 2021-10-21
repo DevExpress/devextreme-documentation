@@ -14,7 +14,7 @@ The current node's data object.
 The [shape type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') for a node.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the node's new shape type; when the function is called as a getter, returns `undefined`.
 
 ---
 The built-in shape types are shown in the [Shape Types](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') section.

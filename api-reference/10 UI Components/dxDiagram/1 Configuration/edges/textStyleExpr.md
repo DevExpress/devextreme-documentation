@@ -14,7 +14,7 @@ The current edge's data object.
 An edge's text style.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the edge's new text style; when the function is called as a getter, returns `undefined`.
 
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 

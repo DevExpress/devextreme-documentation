@@ -14,7 +14,7 @@ The current edge's data object.
 An edge's start node key.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the edge's new start node key value; when the function is called as a getter, returns `undefined`.
 
 ---
 Specify this property if you use [node and edge](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/10%20Node%20and%20Edge%20Arrays.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Node_and_Edge_Arrays') data sources.

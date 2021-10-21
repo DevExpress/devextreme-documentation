@@ -1,7 +1,8 @@
 ---
 id: LoadOptions.searchOperation
-type: SearchOperation
+type: String
 inheritsType: SearchOperation
+acceptValues: '=' | '<>' | '>' | '>=' | '<' | '<=' | 'startswith' | 'endswith' | 'contains' | 'notcontains'
 ---
 ---
 ##### shortDescription

@@ -127,5 +127,5 @@ Invokes the "Resource Manager" dialog.
 ---
 
 #####See Also#####
-- [editing.allowTaskResourceUpdating](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowTaskResourceUpdating)
+- [editing.allowTaskResourceUpdating](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/editing/allowTaskResourceUpdating.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowTaskResourceUpdating')
 - [onResourceManagerDialogShowing](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onResourceManagerDialogShowing.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing')

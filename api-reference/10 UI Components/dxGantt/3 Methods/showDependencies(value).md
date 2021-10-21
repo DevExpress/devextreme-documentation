@@ -3,7 +3,7 @@ id: dxGantt.showDependencies(value)
 ---
 ---
 ##### shortDescription
-Shows or hides [dependencies](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/) between tasks.
+Shows or hides [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/') between tasks.
 
 ##### param(value): Boolean
 Specifies whether to show or hide dependencies.
@@ -165,6 +165,6 @@ Specifies whether to show or hide dependencies.
 --- 
 
 #####See Also#####
-- [showDependencies](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showDependencies) property
+- [showDependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showDependencies.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showDependencies') property
 - [toolbar](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/')
 - [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

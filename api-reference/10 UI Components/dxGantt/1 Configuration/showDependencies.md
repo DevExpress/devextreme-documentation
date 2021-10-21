@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether to display [dependencies](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/) between tasks.
+Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/') between tasks.
 
 ---
 

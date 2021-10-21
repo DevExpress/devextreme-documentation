@@ -3,7 +3,7 @@ id: dxGantt.showResources(value)
 ---
 ---
 ##### shortDescription
-Shows or hides task [resources](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/).
+Shows or hides task [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/').
 
 ##### param(value): Boolean
 Specifies whether to show or hide task resources.
@@ -164,6 +164,6 @@ Specifies whether to show or hide task resources.
 --- 
 
 #####See Also#####
-- [showResources](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources) property
+- [showResources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources') property
 - [toolbar](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/toolbar/')
 - [Gantt Elements](/concepts/05%20UI%20Components/Gantt/10%20Gantt%20Elements/00%20Gantt%20Elements.md '/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/')

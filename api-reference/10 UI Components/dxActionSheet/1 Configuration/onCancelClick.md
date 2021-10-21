@@ -1,6 +1,6 @@
 ---
 id: dxActionSheet.Options.onCancelClick
-type: function(e) | String
+type: function(e)
 default: null
 ---
 ---

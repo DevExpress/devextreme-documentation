@@ -46,7 +46,7 @@ The [Row](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation
 A template name or container.
 
 ---
-Follow these steps to migrate from the deprecated **rowTemplate** property to the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property:
+Follow these steps to migrate from the deprecated **rowTemplate** property to the [dataRowTemplate](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/dataRowTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate') property:
 
 ---
 ##### jQuery

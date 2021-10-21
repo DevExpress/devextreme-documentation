@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.dependencies.dataSource
-type: Array<any> | Store | DataSource | DataSource_Options
+type: Store | DataSource | DataSource_Options | String | Array<any>
 default: null
 ---
 ---

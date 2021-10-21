@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.onItemClick
-type: function(e) | String
+type: function(e)
 default: null
 notUsedInTheme: 
 ---

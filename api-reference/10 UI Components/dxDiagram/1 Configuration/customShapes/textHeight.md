@@ -11,4 +11,4 @@ This property specifies a fraction from 0 to 1 that represents the height of a s
 
 The absolute text height is calculated by multiplying the **textHeight** value by the shape height.
 
-If the **textHeight** property is set to `0` (zero) or `undefined` and the [autoSizeEnabled](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#autoSizeEnabled) property is set to `true`, the **textHeight** property value is considered equal to `1`.
+If the **textHeight** property is set to `0` (zero) or `undefined` and the [autoSizeEnabled](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#autoSizeEnabled) property is set to `true`, the **textHeight** property value is equal to `1`.

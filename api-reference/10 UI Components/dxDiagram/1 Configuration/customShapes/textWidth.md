@@ -11,4 +11,4 @@ This property specifies a fraction from 0 to 1 that represents the shape text's 
 
 The absolute text width is calculated by multiplying the **textWidth** value by the shape width.
 
-If the **textWidth** property is set to `0` (zero) or `undefined` and the [autoSizeEnabled](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#autoSizeEnabled) property is set to `true`, the **textWidth** property value is considered equal to `1`.
+If the **textWidth** property is set to `0` (zero) or `undefined` and the [autoSizeEnabled](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#autoSizeEnabled) property is set to `true`, the **textWidth** property value is equal to `1`.

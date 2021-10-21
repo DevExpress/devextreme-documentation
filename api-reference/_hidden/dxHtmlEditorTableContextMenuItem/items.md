@@ -97,7 +97,7 @@ Use this property to create a hierarchical context menu. The following code demo
         return (
             <HtmlEditor>
                 <TableContextMenu
-                    enabled={true}
+                    enabled={true}>
                     <TableContextMenuItem
                         text="Font Style">
                         <TableContextMenuItem name="bold" />

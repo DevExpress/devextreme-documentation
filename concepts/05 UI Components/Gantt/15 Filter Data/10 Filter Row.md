@@ -163,7 +163,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify a co
         );
     };
 
-   export default App;
+    export default App;
 
 ##### ASP.NET Core Controls
 
@@ -213,28 +213,28 @@ The **Gantt** supports a predefined set of filter operations for each data type.
 
 Underlying [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#dataType') defines in-place editor types for filter row cells:
 
-{|
-|-
-! **dataType**
-! **Editor**
-|-
-
-| *"string", "number", "object"*
-| Text box
-|-
-
-| *"boolean"*
-| Drop-down list 
-|-
-
-| *"date"*
-| Date picker
-|-
-
-| *"datetime"*
-| Date and time picker 
-|-
-|}
+<table class="dx-table">
+    <tr>
+        <th>dataType</th>
+        <th>Editor</th>
+    </tr>     
+    <tr>
+        <td>string, number, object</td>
+        <td>Text box</td>
+    </tr>
+    <tr>
+        <td>boolean</td>
+        <td>Drop-down list</td>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>Date picker</td>
+    </tr>
+    <tr>
+        <td>datetime</td>
+        <td>Date and time picker</td>
+    </tr>
+</table>
 
 You can use the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations') property to specify necessary filter operations for each column.
 
@@ -368,7 +368,7 @@ You can use the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterO
         );
     };
 
-   export default App;
+    export default App;
 
 ##### ASP.NET Core Controls
 

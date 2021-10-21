@@ -13,6 +13,8 @@ The task key.
 
 ---
 
+![DevExtreme Gantt Chart - Resources](/images/Gantt/resources.png)
+
 ---
 
 ##### jQuery

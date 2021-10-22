@@ -183,5 +183,5 @@ A task key.
 ---
 
 #####See Also#####
-- [editing.allowTaskUpdating](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowTaskUpdating)
+- [editing.allowTaskUpdating](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/editing/allowTaskUpdating.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/#allowTaskUpdating')
 - [onResourceManagerDialogShowing](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/onResourceManagerDialogShowing.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onResourceManagerDialogShowing')

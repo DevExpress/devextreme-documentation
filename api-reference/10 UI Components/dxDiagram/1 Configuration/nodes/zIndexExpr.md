@@ -14,7 +14,7 @@ The current node's data object.
 A node's z-index.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the node's new z-index value; when the function is called as a getter, returns `undefined`.
 
 ---
 The z-index specifies the node stack order. A node with greater stack order is in front of a node with a lower stack order.

@@ -14,7 +14,7 @@ The current node's data object.
 A node style.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the node's new style; when the function is called as a getter, returns `undefined`.
 
 ---
 A data source field specified by this property must contain inline style declarations in string format, for instance `"fill: #d9d9d9; stroke: #999999"`. 

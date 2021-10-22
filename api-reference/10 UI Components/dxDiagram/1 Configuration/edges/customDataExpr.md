@@ -14,7 +14,7 @@ The current edge's data object.
 An edge's custom data.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the edge's new custom data; when the function is called as a getter, returns `undefined`.
 
 ---
 This property links custom data from a data source to the diagram edge. The edge contains the linked data copied from the data source. Changes in the data are reflected in the diagram history. You can use the UI to undo and redo these changes.

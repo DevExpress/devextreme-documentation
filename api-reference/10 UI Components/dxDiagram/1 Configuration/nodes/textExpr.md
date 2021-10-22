@@ -14,6 +14,6 @@ The current node's data object.
 A node text.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the node's new text value; when the function is called as a getter, returns `undefined`.
 
 ---

@@ -14,7 +14,7 @@ The current node's data object.
 A container's nested items.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the container's nested items; when the function is called as a getter, returns `undefined`.
 
 ---
 This property is in effect for `"verticalContainer"` or `"horizontalContainer"` nodes.

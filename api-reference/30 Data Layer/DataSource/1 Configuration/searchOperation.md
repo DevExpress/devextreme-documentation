@@ -2,7 +2,6 @@
 id: DataSource.Options.searchOperation
 type: String
 default: 'contains'
-inheritsType: SearchOperation
 acceptValues: '=' | '<>' | '>' | '>=' | '<' | '<=' | 'startswith' | 'endswith' | 'contains' | 'notcontains'
 ---
 ---

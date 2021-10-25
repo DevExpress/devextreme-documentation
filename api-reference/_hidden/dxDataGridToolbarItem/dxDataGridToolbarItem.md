@@ -2,7 +2,7 @@
 id: dxDataGridToolbarItem
 inherits: dxToolbarItem
 module: ui/data_grid
-export: dxDataGridToolbarItem
+export: ToolbarItem
 ---
 ---
 ##### shortDescription

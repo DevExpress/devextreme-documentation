@@ -2,7 +2,7 @@
 id: dxTreeListToolbar
 type: Object
 module: ui/tree_list
-export: dxTreeListToolbar
+export: Toolbar
 ---
 ---
 ##### shortDescription

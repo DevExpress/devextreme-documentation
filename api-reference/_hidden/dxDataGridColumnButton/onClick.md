@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed when the button is clicked or tapped. Not executed if a [template](/api-reference/_hidden/dxDataGridColumnButton/template.md '{basewidgetpath}/Configuration/columns/buttons/#template') is used.
+A function that is executed when the button is clicked or tapped.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

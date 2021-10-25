@@ -222,7 +222,7 @@ If you need a tab to be preselected or to select it programmatically, pass its i
 
 ---
 
-As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectedItem') (for *"single"* **selectionMode**) or [selectedItems](/api-reference/10%20UI%20Components/dxTabs/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectedItems') (for *"multiple"* **selectionMode**) properties.
+As an alternative, you can use the [selectedItem](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectedItem') (for *"single"* **selectionMode**) or [selectedItems](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItems.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectedItems') (for *"multiple"* **selectionMode**) properties.
 
 ---
 ##### jQuery

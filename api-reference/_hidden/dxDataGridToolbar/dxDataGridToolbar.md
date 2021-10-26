@@ -2,7 +2,7 @@
 id: dxDataGridToolbar
 type: Object
 module: ui/data_grid
-export: dxDataGridToolbar
+export: Toolbar
 ---
 ---
 ##### shortDescription

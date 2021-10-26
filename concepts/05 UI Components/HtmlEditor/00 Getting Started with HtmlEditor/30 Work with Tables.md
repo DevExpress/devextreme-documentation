@@ -17,7 +17,9 @@ Users can insert and modify tables if you add the following items to the toolbar
                     "deleteRow",
                     "insertColumnLeft",
                     "insertColumnRight",
-                    "deleteColumn"
+                    "deleteColumn",
+                    "cellProperties",
+                    "tableProperties"
                 ]
             }
         });
@@ -37,6 +39,8 @@ Users can insert and modify tables if you add the following items to the toolbar
             <dxi-item name="insertColumnLeft"></dxi-item>
             <dxi-item name="insertColumnRight"></dxi-item>
             <dxi-item name="deleteColumn"></dxi-item>
+            <dxi-item name="cellProperties"></dxi-item>
+            <dxi-item name="tableProperties"></dxi-item>
         </dxo-toolbar>
     </dx-html-editor>
 
@@ -55,6 +59,8 @@ Users can insert and modify tables if you add the following items to the toolbar
                 <DxItem name="insertColumnLeft" />
                 <DxItem name="insertColumnRight" />
                 <DxItem name="deleteColumn" />
+                <DxItem name="cellProperties" />
+                <DxItem name="tableProperties" />
             </DxToolbar>
         </DxHtmlEditor>
     </template>
@@ -77,6 +83,8 @@ Users can insert and modify tables if you add the following items to the toolbar
                     <Item name="insertColumnLeft" />
                     <Item name="insertColumnRight" />
                     <Item name="deleteColumn" />
+                    <Item name="cellProperties" />
+                    <Item name="tableProperties" />
                 </Toolbar>
             </HtmlEditor>
         );
@@ -85,3 +93,94 @@ Users can insert and modify tables if you add the following items to the toolbar
     export default App;
 
 ---
+
+Users can also modify tables with the context menu if you set the [tableContextMenu](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/).[enabled](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/#enabled) property to **true**. Note that the context menu cannot be used to create new tables because the menu is only available within table boundaries. If you want users to create tables, add an *"insertTable"* item to the toolbar.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function () {
+        $("#html-editor").dxHtmlEditor({
+            // ...
+            toolbar: {
+                items: [
+                    // ...
+                    "insertTable"
+                ]
+            },
+            tableContextMenu: {
+                enabled: true
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-html-editor ... >
+        <dxo-toolbar ... >
+            <!-- ... -->
+            <dxi-item name="insertTable"></dxi-item>
+        </dxo-toolbar>
+        <dxo-table-context-menu
+            [enabled]="true">
+        </dxo-table-context-menu>
+    </dx-html-editor>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor ... >
+            <DxToolbar ... >
+                <!-- ... -->
+                <DxItem name="insertTable" />
+            </DxToolbar>
+            <DxTableContextMenu :enabled="true" />
+        </DxHtmlEditor>
+    </template>
+
+    <script>
+    import {
+        // ...
+        DxTableContextMenu
+    } from 'devextreme-vue/html-editor';
+
+    export default {
+        components: {
+            DxTableContextMenu
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import HtmlEditor, {
+        // ...
+        TableContextMenu
+    } from "devextreme-react/html-editor";
+
+    // ...
+
+    const App = () => {
+        return (
+            <HtmlEditor ... >
+                <Toolbar ... >
+                    {/* ... */}
+                    <Item name="insertTable" />
+                </Toolbar>
+                <TableContextMenu enabled={true} />
+            </HtmlEditor>
+        );
+    }
+
+    export default App;
+
+---
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Tables/"
+}

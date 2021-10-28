@@ -1,0 +1,103 @@
+The following example prevents users from adding more than one shape of each type to a chart.
+
+##### jQuery
+
+    $(function() {
+        var diagram = $("#diagram").dxDiagram({
+            onRequestEditOperation(e) {
+                var diagram = $("#diagram").dxDiagram().dxDiagram("instance");
+                if (e.operation === 'addShape') {
+                    // Gets types of shapes the chart contains
+                    var itemsTypes = diagram.getItems().filter(function(item) {
+                        return (item.itemType === "shape") && (item.id !== e.args.shape.id);
+                    }).map(a => a.type);
+                    // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
+                    if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                        e.allowed = false;
+                        return;
+                    }
+                }
+            },
+            // ...
+        }).dxDiagram("instance");
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram" (onRequestEditOperation)="requestEditOperation($event)">
+        <!-- ... -->
+    </dx-diagram>
+
+    <!-- tab: app.component.ts -->
+    @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent
+    requestEditOperationHandler(e) {
+        var diagram = this.diagram.instance;
+        if (e.operation === 'addShape') {
+            // Gets types of shapes the chart contains
+            var itemsTypes = diagram.getItems().filter(function (item) {
+                return (item.itemType === "shape") && (item.id !==e.args.shape.id);
+            }).map(a => a.type);
+            // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
+            if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                e.allowed = false;
+                return;
+            }
+        }
+    }
+// ...
+
+##### Vue
+
+    <DxDiagram>
+        id="diagram"
+        ref="diagram"
+        @request-edit-operation="onRequestEditOperation">
+    </DxDiagram>
+    // ...
+    import DxDiagram from 'devextreme-vue/diagram';
+    export default {
+        components: {
+            DxDiagram
+        },
+        methods: {
+            onRequestEditOperation(e) {
+                var diagram = this.$refs['diagram'].instance;
+                if (e.operation === 'addShape') {
+                    // Gets types of shapes the chart contains
+                    var itemsTypes = diagram.getItems().filter(function (item) {
+                        return (item.itemType === "shape") && (item.id !==e.args.shape.id);
+                    }).map(a => a.type);
+                    // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
+                    if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                        e.allowed = false;
+                        return;
+                    }
+                }
+            },
+            // ...
+        }
+    };
+
+##### React
+
+    import Diagram from 'devextreme-react/diagram';
+    <Diagram id="diagram" ref={this.diagramRef} onRequestEditOperation={this.onRequestEditOperation} >
+        <!-- ... -->
+    </Diagram>
+    onRequestEditOperation(e) {
+        var diagram = this.diagramRef.current.instance;
+        if (e.operation === 'addShape') {
+            // Gets types of shapes the chart contains
+            var itemsTypes = diagram.getItems().filter(function (item) {
+                return (item.itemType === "shape") && (item.id !==e.args.shape.id);
+            }).map(a => a.type);
+            // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
+            if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                e.allowed = false;
+                return;
+            }
+        }
+    }
+
+---

@@ -1,0 +1,1 @@
+This article contains code samples that show how to restrict edit operations in the Diagram UI component.

@@ -67,12 +67,17 @@ $(function () {
                 "deleteRow",
                 "insertColumnLeft",
                 "insertColumnRight",
-                "deleteColumn"
+                "deleteColumn",
+                "cellProperties",
+                "tableProperties"
             ],
             multiline: true
         },
         mediaResizing: {
             enabled: true
+        },
+        tableContextMenu: {
+            enabled: true
         }
-    })
+    });
 });

@@ -17,7 +17,7 @@ The UI component instance's name.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.item): dxDiagramItem
-A **dxDiagramItem** object descendant ([DiagramShape](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/') or [DiagramConnector](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/')) related to the event.
+A **dxDiagramItem** object descendant (dxDiagramShape or dxDiagramConnector) related to the event.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

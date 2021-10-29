@@ -8,4 +8,3 @@ type: String
 Specifies how shapes are displayed in the toolbox.
 
 ---
-<!-- Description goes here -->

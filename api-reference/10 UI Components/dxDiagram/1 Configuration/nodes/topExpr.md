@@ -14,7 +14,7 @@ The current node's data object.
 The y-coordinate of a node's top border.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the y-coordinate of the node's top border; when the function is called as a getter, returns `undefined`.
 
 ---
 A node's y-coordinate specifies the distance between the top border of a diagram work area and the top border of a shape, in [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units').

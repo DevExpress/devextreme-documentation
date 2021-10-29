@@ -14,7 +14,7 @@ The current edge's data object.
 An edge's key points.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the edge's new key points; when the function is called as a getter, returns `undefined`.
 
 ---
     <!-- tab: index.js -->

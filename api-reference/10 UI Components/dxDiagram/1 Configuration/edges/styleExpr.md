@@ -14,7 +14,7 @@ The current edge's data object.
 An edge style.
 
 ##### param(value): any
-<!-- Description goes here -->
+When the function is called as a setter, returns the edge's new style; when the function is called as a getter, returns `undefined`.
 
 ---
 A data source field specified by this property should contain inline style declarations in string format, for instance `"stroke: #999999"`. 

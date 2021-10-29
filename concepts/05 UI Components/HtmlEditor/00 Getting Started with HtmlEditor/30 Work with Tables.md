@@ -94,7 +94,7 @@ Users can insert and modify tables if you add the following items to the toolbar
 
 ---
 
-Users can also modify tables with the context menu if you set the [tableContextMenu](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/).[enabled](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/#enabled) property to **true**. Note that the context menu cannot be used to create new tables because the menu is only available within table boundaries. If you want users to create tables, add an *"insertTable"* item to the toolbar.
+Users can also modify tables with the context menu if you set the [tableContextMenu](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/tableContextMenu.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/').[enabled](/api-reference/_hidden/dxHtmlEditorTableContextMenu/enabled.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableContextMenu/#enabled') property to **true**. Note that the context menu cannot be used to create new tables because the menu is only available within table boundaries. If you want users to create tables, add an *"insertTable"* item to the toolbar.
 
 ---
 ##### jQuery

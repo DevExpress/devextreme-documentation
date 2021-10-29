@@ -5,7 +5,7 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
 
     <!-- tab: index.js -->
     $(function() {
-        $("#treeList").dxTreeList({
+        const treeList = $("#treeList").dxTreeList({
             // ...
             rowDragging: {
                 allowDropInsideItem: true,
@@ -45,8 +45,8 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
                     }
                     e.component.refresh();
                 }
-        },
-        });
+            },
+        }).dxTreeList("instance");
     });
 
 ##### Angular
@@ -203,7 +203,7 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useState } from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
 
@@ -219,7 +219,7 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
         const [currentEmployees, setCurrentEmployees] = useState(employees);
         // ...
 
-        const onDragChange = (e) => {
+        const onDragChange = useCallback((e) => {
             let visibleRows = e.component.getVisibleRows(),
               sourceNode = e.component.getNodeByKey(e.itemData.ID),
               targetNode = visibleRows[e.toIndex].node;
@@ -231,9 +231,9 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
                 }
                 targetNode = targetNode.parent;
             }
-        }
+        }, []);
 
-        const onReorder = (e) => {
+        const onReorder = useCallback((e) => {
             let visibleRows = e.component.getVisibleRows(),
             sourceData = e.itemData,
             targetData = visibleRows[e.toIndex].data,
@@ -256,7 +256,7 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
             }
 
             setCurrentEmployees(employeesReordered);
-        }
+        }, []);
 
         return (
             <div className="App">

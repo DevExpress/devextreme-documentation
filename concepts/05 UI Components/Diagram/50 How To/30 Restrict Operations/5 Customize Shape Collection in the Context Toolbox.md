@@ -1,4 +1,4 @@
-The following example demonstrates how to hide shapes in the context toolbox depending on the connector's start node type.
+The following example demonstrates how to hide shapes in the context toolbox depending on the connector's start node type:
 
 ---
 ##### jQuery

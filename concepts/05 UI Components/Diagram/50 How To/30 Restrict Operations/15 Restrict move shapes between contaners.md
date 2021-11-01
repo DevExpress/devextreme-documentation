@@ -1,4 +1,4 @@
-The example below demonstrates how to prevent users from moving a shape from one container to another.
+The example below demonstrates how to prevent users from moving a shape from one container to another:
 
 ##### jQuery
 

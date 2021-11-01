@@ -1,6 +1,4 @@
-The **Context Toolbox** appears when user drag a connector from a shape and drop it without connecting it to another shape. Users can select a shape in this toolbox to insert it at the end of the connector.
-
-The following example demonstrates how to display different shapes collection in the context toolbox depending on the connector's start node type.
+The following example demonstrates how to hide shapes in the context toolbox depending on the connector's start node type.
 
 ---
 ##### jQuery
@@ -43,89 +41,104 @@ The following example demonstrates how to display different shapes collection in
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
-    @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent
-    currentShapeId : number;
-
-    requestEditOperation(e){
-        var diagram = this.diagram.instance;
-        if (e.operation === "changeConnection" && e.args.connector)
-            // Gets the connector's start node identifier
-            this.currentShapeId = e.args.connector.fromId;
-        if (e.operation === "addShapeFromToolbox") {
-            // Gets the connector's start node type
-            var currentShape = diagram.getItemById(this.currentShapeId);
-            if (e.args.shapeType === "terminator") 
-                // If the connector's start node type is "decision"
-                if (currentShape && currentShape.type === "decision")
-                    // Hides the "terminator" shape in the context toolbox
-                       e.allowed = false;
-        } 
+    ​export class AppComponent {
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent
+        currentShapeId : number;
+        requestEditOperation(e){
+            var diagram = this.diagram.instance;
+            if (e.operation === "changeConnection" && e.args.connector)
+                // Gets the connector's start node identifier
+                this.currentShapeId = e.args.connector.fromId;
+            if (e.operation === "addShapeFromToolbox") {
+                // Gets the connector's start node type
+                var currentShape = diagram.getItemById(this.currentShapeId);
+                if (e.args.shapeType === "terminator") 
+                    // If the connector's start node type is "decision"
+                    if (currentShape && currentShape.type === "decision")
+                        // Hides the "terminator" shape in the context toolbox
+                        e.allowed = false;
+            }
+        }
     }
 // ...
 
 ##### Vue
 
-    <DxDiagram>
-        id="diagram"
-        ref="diagram"
-        @request-edit-operation="onRequestEditOperation">
-    </DxDiagram>
-    <DxContextToolbox
-        :shape-icons-per-row="2"
-        :width="100"
-        :shapes="['process', 'decision', 'terminator']"
-    />
-    // ...
-    import { DxDiagram, DxContextToolbox} from 'devextreme-vue/diagram';
-    var currentShapeId;
-    export default {
-        components: {
-            DxDiagram, DxContextToolbox
-        },
-        methods: {
-            onRequestEditOperation(e) {
-                var diagram = this.$refs['diagram'].instance;
-                if (e.operation === "changeConnection" && e.args.connector)
-                    // Gets the connector's start node identifier
-                    this.currentShapeId = e.args.connector.fromId;
-                if (e.operation === "addShapeFromToolbox") {
-                    // Gets the connector's start node type
-                    var currentShape = diagram.getItemById(this.currentShapeId);
-                    if (e.args.shapeType === "terminator")
-                        // If the connector's start node type is "decision"
-                        if (currentShape && currentShape.type === "decision")
-                            // Hides the "terminator" shape in the context toolbox
-                            e.allowed = false;
-                } 
+    <template>
+        <DxDiagram
+            id="diagram"
+            ref="diagram"
+            @request-edit-operation="onRequestEditOperation">
+            <DxContextToolbox
+                :shape-icons-per-row="3"
+                :width="100"
+                :shapes="['process', 'decision', 'terminator']"
+            />
+        </DxDiagram>
+    </template>
+    <script>
+        import { DxDiagram, DxContextToolbox} from 'devextreme-vue/diagram';
+        var currentShapeId;
+        export default {
+            components: {
+                DxDiagram, DxContextToolbox
+            },
+            methods: {
+                onRequestEditOperation(e) {
+                    var diagram = this.$refs['diagram'].instance;
+                    if (e.operation === "changeConnection" && e.args.connector)
+                        // Gets the connector's start node identifier
+                        this.currentShapeId = e.args.connector.fromId;
+                    if (e.operation === "addShapeFromToolbox") {
+                        // Gets the connector's start node type
+                        var currentShape = diagram.getItemById(this.currentShapeId);
+                        if (e.args.shapeType === "terminator")
+                            // If the connector's start node type is "decision"
+                            if (currentShape && currentShape.type === "decision")
+                                // Hides the "terminator" shape in the context toolbox
+                                e.allowed = false;
+                    } 
+                }
             }
-        },
-        // ...
-    };
+        };
+    </script>
 
 ##### React
 
+    import React from 'react';
     import Diagram, { ContextToolbox,} from 'devextreme-react/diagram';
-    const shapes = ['process', 'decision', 'terminator'];
     var currentShapeId;
-    <Diagram id="diagram" ref={this.diagramRef} onRequestEditOperation={this.onRequestEditOperation} >
-        <ContextToolbox shapeIconsPerRow={3} width={100} shapes={shapes}>
-        </ContextToolbox>
-        <!-- ... -->
-    </Diagram>
-    onRequestEditOperation(e) {
-        var diagram = this.diagramRef.current.instance;
-        if (e.operation === 'changeConnection' && e.args.connector)
-            // Gets the connector's start node identifier
-            this.currentShapeId = e.args.connector.fromId;
-        if (e.operation === 'addShapeFromToolbox') {
-            // Gets the connector's start node type
-            var currentShape = diagram.getItemById(this.currentShapeId);
-            if (e.args.shapeType === 'terminator')
-                // If the connector's start node type is "decision" 
-                if (currentShape && currentShape.type === 'decision')
-                    // Hides the "terminator" shape in the context toolbox
-                    e.allowed = false;
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.diagramRef = React.createRef();
+            this.onRequestEditOperation = this.onRequestEditOperation.bind(this);
+        }
+        onRequestEditOperation(e) {
+            var diagram = this.diagramRef.current.instance;
+            if (e.operation === 'changeConnection' && e.args.connector)
+                // Gets the connector's start node identifier
+                this.currentShapeId = e.args.connector.fromId;
+            if (e.operation === 'addShapeFromToolbox') {
+                // Gets the connector's start node type
+                var currentShape = diagram.getItemById(this.currentShapeId);
+                if (e.args.shapeType === 'terminator')
+                    // If the connector's start node type is "decision" 
+                    if (currentShape && currentShape.type === 'decision')
+                        // Hides the "terminator" shape in the context toolbox
+                        e.allowed = false;
+            }
+        }
+        render() {
+            return (
+                <Diagram id="diagram" ref={this.diagramRef} onRequestEditOperation={this.onRequestEditOperation} >
+                    <ContextToolbox shapeIconsPerRow={3} width={100} shapes={['process', 'decision', 'terminator']}>
+                    </ContextToolbox>
+                </Diagram>
+            );
         }
     }
+    export default App;
 
 ---

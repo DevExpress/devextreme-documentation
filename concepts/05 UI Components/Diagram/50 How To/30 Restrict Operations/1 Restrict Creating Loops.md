@@ -11,7 +11,6 @@ The example below demonstrates how to prevent users from connecting a shape to i
                         e.allowed = false;
             },
         }).dxDiagram("instance");
-        // ...
     });
 
 ##### Angular
@@ -21,44 +20,63 @@ The example below demonstrates how to prevent users from connecting a shape to i
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
-    requestEditOperationHandler(e) {
-        if(e.operation === "changeConnection")
-            if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
-                e.allowed = false;
+    export class AppComponent {
+        requestEditOperationHandler(e) {
+            if(e.operation === "changeConnection")
+                if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+                    e.allowed = false;
+        }
     }
-// ...
 
 ##### Vue
 
-    <DxDiagram
-        id="diagram"
-        ref="diagram"
-    @request-edit-operation="onRequestEditOperation"
-    </DxDiagram>
-    // ...
-    import DxDiagram from 'devextreme-vue/diagram';
-    export default {
-    components: {
-        DxDiagram,
-    },
-    methods: {
-        onRequestEditOperation(e) {
-        if(e.operation === "changeConnection")
-            if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
-                e.allowed = false;
+    <template>
+        <DxDiagram
+            id="diagram"
+            ref="diagram"
+            @request-edit-operation="onRequestEditOperation">
+        </DxDiagram>
+    </template>
+    <script>
+        import DxDiagram from 'devextreme-vue/diagram';
+        export default {
+            components: {
+                DxDiagram,
             },
-        }
-    };
-    // ...
+            methods: {
+                onRequestEditOperation(e) {
+                    if(e.operation === "changeConnection")
+                        if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+                            e.allowed = false;
+                },
+            }
+        };
+    </script>
 
 ##### React
 
-    import Diagram, { Editing } from 'devextreme-react/diagram';
-    ...
-    <Diagram id="diagram" ref={this.diagramRef} >
-        <Editing 
-            allowAddShape={false}
-            />
-    </Diagram>
+    import React from 'react';
+    import Diagram from 'devextreme-react/diagram';
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.diagramRef = React.createRef();
+            this.onRequestEditOperation = this.onRequestEditOperation.bind(this);
+        }
+        onRequestEditOperation(e) {
+                if(e.operation === 'changeConnection')
+                    if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+                        e.allowed = false;
+        }
+        render() {
+            return (
+                <Diagram id="diagram" ref={this.diagramRef} onRequestEditOperation={this.onRequestEditOperation}>
+                </Diagram>
+            );
+        }
+    }
+
+    export default App;
 
 ---

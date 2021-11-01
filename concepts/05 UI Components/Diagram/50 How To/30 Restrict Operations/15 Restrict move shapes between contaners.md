@@ -1,66 +1,103 @@
-$(function() {
-    var it;
-    var diagram = $("#diagram").dxDiagram({
-      onRequestEditOperation: function(e) {
-            var diagram = $("#diagram").dxDiagram().dxDiagram("instance");
-            if(e.operation === "moveShape") {
-              
-              var currentShape = diagram.getItemById(it);
-             console.log(it+" "+e.args.shape.containerId); if(it!==e.args.shape.containerId)
+The example below demonstrates how to prevent users from moving a shape from one container to another.
+
+##### jQuery
+
+    $(function() {
+        var containers = {};
+        var diagram = $("#diagram").dxDiagram({
+            onRequestEditOperation: function(e) {
+                if(e.operation === "moveShape")
+                    if(containers[e.args.shape.id] !== e.args.shape.containerId)
+                        e.allowed = false;
+            },
+            onSelectionChanged: function(e) {
+                e.component.getItems().forEach((item) => {containers[item.id] = item.containerId;});
+            },
+            // ...
+        }).dxDiagram("instance");
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram #diagram id="diagram" (onSelectionChanged)="selectionChanged($event)" (onRequestEditOperation)="requestEditOperation($event)">
+        <!-- ... -->
+    </dx-diagram>
+
+    <!-- tab: app.component.ts -->
+    export class AppComponent {
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
+        containers: any = {};
+        requestEditOperation(e) {
+            if (e.operation === "moveShape")
+            if (this.containers[e.args.shape.id] !== e.args.shape.containerId)
                 e.allowed = false;
-            }
-        },
-        onSelectionChanged: function(e) {
-
-          if(e.items[0])
-            it = e.items[0].containerId;
-        },
-        toolbox: {
-            groups: [ "general", { category: "containers", title: "Containers", expanded: true }]
         }
-    }).dxDiagram("instance");
-
-    $.ajax({
-        url: "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/data/diagram-structure.json",
-        dataType: "text",
-        success: function(data) {
-            diagram.import(data);
+        selectionChanged(e) {
+            e.component.getItems().forEach((item) => {
+                this.containers[item.id] = item.containerId;
+            });
         }
-    });
-});
+    }
 
+##### Vue
 
-$(function() {
-    var selectedItems;
-    var diagram = $("#diagram").dxDiagram({
-        onRequestEditOperation: function(e) {
-            if(e.operation === "moveShape") {
-                var currentItem = selectedItems.find(function(item) {
-                    if(item && item.id === e.args.shape.id) {
-                        console.log(item.id+" - "+item.containerId);
-                        return item;
-                    }
-                });
-            if(currentItem)
-                var container = currentItem.containerId;
-            if(container && container !== e.args.shape.containerId){
-                console.log(container + " " +e.args.shape.containerId);
-                e.allowed = false;}
-            }
-        },
-        onSelectionChanged: function(e) {
-            selectedItems = e.items;
-        },
-        toolbox: {
-            groups: [ "general", { category: "containers", title: "Containers", expanded: true }]
+    <template>
+        <DxDiagram
+            id="diagram"
+            ref="diagram"
+            @request-edit-operation="onRequestEditOperation"
+            @selection-changed="onSelectionChanged">
+        </DxDiagram>
+    </template>
+    <script>
+        import DxDiagram from 'devextreme-vue/diagram';
+        var containers = {};
+        export default {
+            components: {
+                DxDiagram
+            },
+            methods: {
+                onRequestEditOperation(e) {
+                    if(e.operation === "moveShape")
+                        if(containers[e.args.shape.id] !== e.args.shape.containerId)
+                            e.allowed = false;
+                },
+                onSelectionChanged(e) {
+                    e.component.getItems().forEach((item) => {containers[item.id] = item.containerId;});
+                }
+            },
+            // ...
+        };
+    </script>
+
+##### React
+
+    import React from 'react';
+    import Diagram, from 'devextreme-react/diagram';
+    var containers = {};
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.diagramRef = React.createRef();
+            this.onRequestEditOperation = this.onRequestEditOperation.bind(this);
+            this.onSelectionChanged = this.onSelectionChanged.bind(this);
         }
-    }).dxDiagram("instance");
-
-    $.ajax({
-        url: "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/data/diagram-structure.json",
-        dataType: "text",
-        success: function(data) {
-            diagram.import(data);
+        onRequestEditOperation(e) {
+            if(e.operation === "moveShape")
+                if(containers[e.args.shape.id] !== e.args.shape.containerId)
+                    e.allowed = false;
         }
-    });
-});
+        onSelectionChanged(e) {
+             e.component.getItems().forEach((item) => {containers[item.id] = item.containerId;});
+        }
+        render() {
+            return (
+                <Diagram id="diagram" ref={this.diagramRef} onRequestEditOperation={this.onRequestEditOperation} onSelectionChanged={this.onSelectionChanged}>
+                </Diagram>
+            );
+        }
+    }
+    export default App;
+
+---

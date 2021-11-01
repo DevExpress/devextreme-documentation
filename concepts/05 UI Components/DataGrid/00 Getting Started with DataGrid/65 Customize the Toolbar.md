@@ -1,3 +1,4 @@
+#include grids-tutorial-customize-the-toolbar
 
 ---
 ##### jQuery

@@ -1,4 +1,4 @@
-The example below demonstrates how to prevent users from connecting a shape to itself:
+The example below demonstrates how to prevent users from connecting a shape to itself.
 
 ---
 ##### jQuery
@@ -20,7 +20,17 @@ The example below demonstrates how to prevent users from connecting a shape to i
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
+    import { Component, ViewChild} from '@angular/core';
+    import { DxDiagramModule, DxDiagramComponent } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         requestEditOperationHandler(e) {
             if(e.operation === "changeConnection")
                 if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)

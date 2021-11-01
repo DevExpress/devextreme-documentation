@@ -41,8 +41,17 @@ The following example demonstrates how to hide shapes in the context toolbox dep
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
-    ​export class AppComponent {
-        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent
+    import { Component, ViewChild} from '@angular/core';
+    import { DxDiagramModule, DxDiagramComponent } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         currentShapeId : number;
         requestEditOperation(e){
             var diagram = this.diagram.instance;

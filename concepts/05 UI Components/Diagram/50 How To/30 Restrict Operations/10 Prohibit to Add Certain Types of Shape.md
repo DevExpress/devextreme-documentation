@@ -30,8 +30,17 @@ The example below demonstrates how to prevent users from adding more than one sh
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
+    import { Component, ViewChild} from '@angular/core';
+    import { DxDiagramModule, DxDiagramComponent } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
     export class AppComponent {
-        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;diagram: DxDiagramComponent
         requestEditOperation(e) {
             var diagram = this.diagram.instance;
             if (e.operation === 'addShape') {

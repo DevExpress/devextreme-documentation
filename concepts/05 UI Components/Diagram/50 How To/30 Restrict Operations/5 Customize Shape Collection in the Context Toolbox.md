@@ -26,7 +26,6 @@ The following example demonstrates how to hide shapes in the context toolbox dep
                     shapeIconsPerRow: 3,
                     shapes: [ "process", "decision", "terminator" ],
                 },
-                // ...
             })
             .dxDiagram("instance");
     });
@@ -37,7 +36,6 @@ The following example demonstrates how to hide shapes in the context toolbox dep
     <dx-diagram #diagram id="diagram" (onRequestEditOperation)="requestEditOperation($event)">
         <dxo-context-toolbox [enabled]="true" [shapes]='["process", "decision", "terminator"]' [shapeIconsPerRow]="3">
         </dxo-context-toolbox>
-        <!-- ... -->
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
@@ -69,7 +67,6 @@ The following example demonstrates how to hide shapes in the context toolbox dep
             }
         }
     }
-// ...
 
 ##### Vue
 

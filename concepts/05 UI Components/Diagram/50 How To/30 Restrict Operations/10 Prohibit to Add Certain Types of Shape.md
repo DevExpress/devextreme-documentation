@@ -18,7 +18,6 @@ The example below demonstrates how to prevent users from adding more than one sh
                     }
                 }
             },
-            // ...
         }).dxDiagram("instance");
     });
 
@@ -26,7 +25,6 @@ The example below demonstrates how to prevent users from adding more than one sh
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram" (onRequestEditOperation)="requestEditOperation($event)">
-        <!-- ... -->
     </dx-diagram>
 
     <!-- tab: app.component.ts -->
@@ -56,7 +54,6 @@ The example below demonstrates how to prevent users from adding more than one sh
             }
         }
     }
-// ...
 
 ##### Vue
 
@@ -88,7 +85,6 @@ The example below demonstrates how to prevent users from adding more than one sh
                         }
                     }
                 },
-                // ...
             }
         };
     </script>

@@ -15,5 +15,6 @@ A node's width.
 
 ##### param(value): any
 When the function is called as a setter, returns the node's new width value; when the function is called as a getter, returns `undefined`.
+
 ---
 The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') property specifies the measurement unit.

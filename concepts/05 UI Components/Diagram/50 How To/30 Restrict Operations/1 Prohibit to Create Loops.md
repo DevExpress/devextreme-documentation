@@ -1,4 +1,4 @@
-The example below demonstrates how to prevent users from connecting a shape to itself.
+The example below demonstrates how to prevent users from connecting a shape to itself:
 
 ---
 ##### jQuery

@@ -12,7 +12,7 @@ The example below demonstrates how to prevent users from moving a shape from one
                         e.allowed = false;
             },
             onSelectionChanged: function(e) {
-                e.component.getItems().forEach((item) => {containerIds[item.id] = item.containerId;});
+                e.component.getItems().forEach(item => {containerIds[item.id] = item.containerId;});
             },
         }).dxDiagram("instance");
     });
@@ -42,7 +42,7 @@ The example below demonstrates how to prevent users from moving a shape from one
                 e.allowed = false;
         }
         selectionChanged(e) {
-            e.component.getItems().forEach((item) => {
+            e.component.getItems().forEach(item => {
                 this.containerIds[item.id] = item.containerId;
             });
         }
@@ -72,7 +72,7 @@ The example below demonstrates how to prevent users from moving a shape from one
                             e.allowed = false;
                 },
                 onSelectionChanged(e) {
-                    e.component.getItems().forEach((item) => {containerIds[item.id] = item.containerId;});
+                    e.component.getItems().forEach(item => {containerIds[item.id] = item.containerId;});
                 }
             },
         };
@@ -96,7 +96,7 @@ The example below demonstrates how to prevent users from moving a shape from one
                     e.allowed = false;
         }
         onSelectionChanged(e) {
-             e.component.getItems().forEach((item) => {containerIds[item.id] = item.containerId;});
+             e.component.getItems().forEach(item => {containerIds[item.id] = item.containerId;});
         }
         render() {
             return (

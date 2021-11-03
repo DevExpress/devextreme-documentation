@@ -62,6 +62,33 @@ $(function() {
                 }
             });
         },
+        toolbar: {
+            items: [
+                {
+                    location: "after",
+                    widget: "dxButton",
+                    options: {
+                        text: "Collapse All",
+                        width: 136,
+                        onClick(e) {
+                            const expanding = e.component.option("text") === "Expand All";
+                            treeList.option({
+                                autoExpandAll: expanding,
+                                expandedRowKeys: []
+                            });
+                            e.component.option("text", expanding ? "Collapse All" : "Expand All");
+                        },
+                    },
+                },
+                {
+                    name: "addRowButton",
+                    showText: "always"
+                },
+                "exportButton",
+                "columnChooserButton",
+                "searchPanel"
+            ]
+        },
         rowDragging: {
             allowDropInsideItem: true,
             allowReordering: true,

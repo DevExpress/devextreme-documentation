@@ -162,7 +162,7 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useState } from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
 
@@ -186,11 +186,11 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
 
     function App() {
         const [selectedEmployee, setSelectedEmployee] = useState();
-        const selectEmployee = (e) => {
+        const selectEmployee = useCallback((e) => {
             e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
                 setSelectedEmployee(employee);
             });
-        }
+        }, []);
 
         return (
             <div className="App">

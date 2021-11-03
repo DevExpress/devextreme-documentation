@@ -1,5 +1,6 @@
 The example below demonstrates how to prevent users from adding more than one shape of each type to a chart:
 
+---
 ##### jQuery
 
     $(function() {

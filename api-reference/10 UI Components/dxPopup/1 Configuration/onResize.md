@@ -19,4 +19,13 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
+##### field(e.event): event
+<!-- Description goes here -->
+
+##### field(e.height): Number
+<!-- Description goes here -->
+
+##### field(e.width): Number
+<!-- Description goes here -->
+
 ---

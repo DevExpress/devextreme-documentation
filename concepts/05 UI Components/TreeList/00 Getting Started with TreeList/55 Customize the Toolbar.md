@@ -82,18 +82,19 @@
                 :expanded-row-keys="expandedRowKeys">
                 <!-- ... -->
                 <DxToolbar>
-                    <DxItem location="after">
-                    <DxButton
-                        :text="expanded ? 'Collapse All' : 'Expand All'"
-                        :width="136"
-                        @click="expanded = !expanded; expandedRowKeys = []"
-                    />
-                    </DxItem>
+                    <DxItem location="after" template="button-template" />
                     <DxItem name="addRowButton" show-text="always" />
                     <DxItem name="exportButton" />
                     <DxItem name="columnChooserButton" />
                     <DxItem name="searchPanel" />
                 </DxToolbar>
+                <template #button-template>
+                    <DxButton
+                        :text="expanded ? 'Collapse All' : 'Expand All'"
+                        :width="136"
+                        @click="expanded = !expanded; expandedRowKeys = []"
+                    />
+                </template>
             </DxTreeList>
         </div>
     </template>

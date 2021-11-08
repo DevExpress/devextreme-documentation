@@ -18,7 +18,7 @@ To access a row using its key, specify the data field that provides key values. 
 }
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/",
-    name: "DataGrid"
+    name: "TreeList"
 }
 
 #####See Also#####

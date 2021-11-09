@@ -16,6 +16,8 @@ $(function() {
         grouped: true,
         multiline: true,
         maxDisplayedTags: 6,
+        label: "Products",
+        labelMode: "floating",
         onValueChanged: function(e) {
             console.log(e.previousValue);
             console.log(e.value);

@@ -40,6 +40,8 @@ $(function() {
             console.log(e.value);
         },
         grouped: true,
+        label: "Product",
+        labelMode: "floating",
         opened: true,
         dropDownOptions: {
             maxHeight: 400,

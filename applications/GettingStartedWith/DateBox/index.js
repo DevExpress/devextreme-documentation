@@ -25,6 +25,8 @@ $(function() {
         value: now,
         max: now,
         min: new Date(1900, 0, 1),
+        label: "Date and time",
+        labelMode: "floating",
         onValueChanged: function(e) {
             console.log(e.value);
             console.log(e.previousValue);

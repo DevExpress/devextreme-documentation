@@ -96,5 +96,3 @@ To handle value changes, implement the [onValueChanged](/api-reference/10%20UI%2
     export default App;
 
 ---
-
-In the next part, we will disable specific dates.

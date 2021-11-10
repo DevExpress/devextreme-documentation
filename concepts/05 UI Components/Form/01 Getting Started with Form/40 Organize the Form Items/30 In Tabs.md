@@ -36,7 +36,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
                     items: [{
                         itemType: "tabbed",
                         tabPanelOptions: {
-                            height: 280
+                            height: 260
                         },
                         tabs: [{
                             title: "Contacts",
@@ -68,7 +68,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
         </dxi-item>
         <dxi-item itemType="group" caption="Personal Information">
             <dxi-item itemType="tabbed">
-                <dxo-tab-panel-options [height]="280">
+                <dxo-tab-panel-options [height]="260">
                 </dxo-tab-panel-options>
                 <dxi-tab title="Contacts">
                 	<dxi-item dataField="skype"></dxi-item>
@@ -133,16 +133,16 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
             <DxGroupItem caption="Employee">
                 <DxSimpleItem data-field="name"/>
                 <DxSimpleItem data-field="position"/>
-                <DxSimpleItem dataField="hireDate"/>
-                <DxSimpleItem dataField="officeNumber"/>
+                <DxSimpleItem data-field="hireDate"/>
+                <DxSimpleItem data-field="officeNumber"/>
             </DxGroupItem>
             <DxGroupItem caption="Personal Information">
                 <DxTabbedItem>
-                    <DxTabPanelOptions :height="280"/>
+                    <DxTabPanelOptions :height="260"/>
                     <DxTab title="Contacts">
-                        <DxSimpleItem dataField="skype"/>
-                        <DxSimpleItem dataField="phone"/>
-                        <DxSimpleItem dataField="email"/>
+                        <DxSimpleItem data-field="skype"/>
+                        <DxSimpleItem data-field="phone"/>
+                        <DxSimpleItem data-field="email"/>
                     </DxTab>
                     <DxTab title="Note">
                         <DxSimpleItem data-field="notes"/>
@@ -230,7 +230,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
                 </GroupItem>
                 <GroupItem caption="Personal Information">
                     <TabbedItem>
-                        <TabPanelOptions height="280" />
+                        <TabPanelOptions height={260} />
                         <Tab title="Contacts">
                             <SimpleItem dataField="phone" />
                             <SimpleItem dataField="skype" />

@@ -172,8 +172,7 @@ The following code creates two groups, each occupies a separate column. The resu
                 formData={employee}
                 colCount={2}>
                 <GroupItem 
-                    caption="Personal Information"
-                    colCount={2}>
+                    caption="Personal Information">
                     <SimpleItem dataField="name" />
                     <SimpleItem dataField="position" />
                     <SimpleItem dataField="hireDate" />

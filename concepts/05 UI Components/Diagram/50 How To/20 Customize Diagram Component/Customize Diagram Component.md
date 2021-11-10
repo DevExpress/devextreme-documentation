@@ -1,0 +1,1 @@
+This article contains code samples that demonstrates how to customize the Diagram UI component and its items.

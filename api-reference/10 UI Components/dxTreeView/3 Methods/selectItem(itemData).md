@@ -8,7 +8,7 @@ Selects a node found using its data object.
 ##### return: Boolean
 **false** if no node was found.
 
-##### param(itemData): Object
+##### param(itemData): dxTreeViewItem
 A data object.
 
 ---

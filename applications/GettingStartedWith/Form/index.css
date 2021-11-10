@@ -1,5 +1,4 @@
 #form {
-    height: 480px;
     padding: 10px;
     border: 1px solid;
 }
@@ -10,6 +9,5 @@
 
 #app-container {
     width: 900px;
-    height: 500px;
     position: relative;
 }

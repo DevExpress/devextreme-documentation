@@ -1,4 +1,6 @@
-The example below removes a shape from the toolbox and context toolbox after a user adds this shape on a chart and brings a shape back after a user deletes it:
+In the example below, the Diagram component updates the shape collection in the toolbox and context toolbox as follows:
+* Removes a shape from these toolboxes after a user adds it on a chart
+* Returns a shape to these toolboxes after a user deletes it from a chart
 
 ---
 ##### jQuery
@@ -7,6 +9,7 @@ The example below removes a shape from the toolbox and context toolbox after a u
         var shapeCount = 0;
         var diagram = $("#diagram").dxDiagram({
             onOptionChanged: function (e) {
+                // Detects changes of the Diagram model
                 if (e.name === "hasChanges" && e.value) {
                     e.component.option("hasChanges", false);
                     var currentShapeCount = e.component.getItems().filter(function(item) {
@@ -22,12 +25,10 @@ The example below removes a shape from the toolbox and context toolbox after a u
                 }
             },
             onRequestEditOperation(e) {
-                 
                 if (e.operation === "addShapeFromToolbox") {
                     e.component.getItems().forEach(function(item) {
-                        // If the chart contains a shape of this type
+                        // Removes a shape from the toolboxes if the chart contains a shape of this type
                         if (item.itemType === "shape" && item.type === e.args.shapeType)
-                            // Removes the shape from the toolbox and context toolbox
                             e.allowed = false;
                     });
                 }
@@ -55,20 +56,14 @@ The example below removes a shape from the toolbox and context toolbox after a u
     export class AppComponent {
         @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         shapeCount: any;
-        requestEditOperation(e) {
-            if (e.operation === "addShapeFromToolbox") {
-                    e.component.getItems().forEach(function(item) {
-                        if (item.itemType === "shape" && item.type === e.args.shapeType)
-                            e.allowed = false;
-                    });
-                }
-        }
         optionChanged(e) {
+            // Detects changes of the Diagram model
             if (e.name === "hasChanges" && e.value) {
                 e.component.option("hasChanges", false);
                     var currentShapeCount = e.component.getItems().filter(function(item) {
                         return (item.itemType ==="shape")
                     }).length;
+                    // Updates the toolbox and context toolbox if a shape was added or deleted
                     if (this.shapeCount !== currentShapeCount) {
                         this.shapeCount = currentShapeCount;
                         window.setTimeout(function() {
@@ -76,6 +71,15 @@ The example below removes a shape from the toolbox and context toolbox after a u
                         }, 0);
                 }
             }
+        }
+        requestEditOperation(e) {
+            if (e.operation === "addShapeFromToolbox") {
+                    e.component.getItems().forEach(function(item) {
+                        // Removes a shape from the toolboxes if the chart contains a shape of this type
+                        if (item.itemType === "shape" && item.type === e.args.shapeType)
+                            e.allowed = false;
+                    });
+                }
         }
     }
 
@@ -97,26 +101,29 @@ The example below removes a shape from the toolbox and context toolbox after a u
                 DxDiagram
             },
             methods: {
-                onRequestEditOperation(e) {
-                    if (e.operation === "addShapeFromToolbox") {
-                        e.component.getItems().forEach(function(item) {
-                            if (item.itemType === "shape" && item.type === e.args.shapeType)
-                                e.allowed = false;
-                        });
-                    }
-                },
                 onOptionChanged(e) {
+                    // Detects changes of the Diagram model
                     if (e.name === "hasChanges" && e.value) {
                         e.component.option("hasChanges", false);
                         var currentShapeCount = e.component.getItems().filter(function(item) {
                             return (item.itemType ==="shape")
                         }).length;
+                        // Updates the toolbox and context toolbox if a shape was added or deleted
                         if (this.shapeCount !== currentShapeCount) {
                             this.shapeCount = currentShapeCount;
                             window.setTimeout(function() {
                                 e.component.updateToolbox();
                             }, 0);
                         }
+                    }
+                },
+                onRequestEditOperation(e) {
+                    if (e.operation === "addShapeFromToolbox") {
+                        e.component.getItems().forEach(function(item) {
+                            // Removes a shape from the toolboxes if the chart contains a shape of this type
+                            if (item.itemType === "shape" && item.type === e.args.shapeType)
+                                e.allowed = false;
+                        });
                     }
                 },
             }
@@ -137,20 +144,14 @@ The example below removes a shape from the toolbox and context toolbox after a u
             this.onRequestEditOperation = this.onRequestEditOperation.bind(this);
             this.onOptionChanged = this.onOptionChanged.bind(this);
         }
-        onRequestEditOperation(e) {
-            if (e.operation === "addShapeFromToolbox") {
-                    e.component.getItems().forEach(function(item) {
-                        if (item.itemType === "shape" && item.type === e.args.shapeType)
-                            e.allowed = false;
-                    });
-                }
-        }
         onOptionChanged(e) {
+            // Detects changes of the Diagram model
             if (e.name === "hasChanges" && e.value) {
                 e.component.option("hasChanges", false);
                     var currentShapeCount = e.component.getItems().filter(function(item) {
                         return (item.itemType ==="shape")
                     }).length;
+                    // Updates the toolbox and context toolbox if a shape was added or deleted
                     if (this.shapeCount !== currentShapeCount) {
                         this.shapeCount = currentShapeCount;
                         window.setTimeout(function() {
@@ -158,6 +159,15 @@ The example below removes a shape from the toolbox and context toolbox after a u
                         }, 0);
                 }
             }
+        }
+        onRequestEditOperation(e) {
+            if (e.operation === "addShapeFromToolbox") {
+                    e.component.getItems().forEach(function(item) {
+                        // Removes a shape from the toolboxes if the chart contains a shape of this type
+                        if (item.itemType === "shape" && item.type === e.args.shapeType)
+                            e.allowed = false;
+                    });
+                }
         }
         render() {
             return (

@@ -1,4 +1,4 @@
-Add the following [CSS rules](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/40%20Individual%20CSS%20Classes.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Individual_CSS_Classes') to change the color of connector points:
+Add the following CSS rules to change the color of connector points:
 
 ---
 ##### jQuery
@@ -44,3 +44,5 @@ Add the following [CSS rules](/concepts/60%20Themes%20and%20Styles/10%20HTML-Bas
     }
 
 ---
+
+![Change the connector points color](/images/diagram/change-connector-points-color.png)

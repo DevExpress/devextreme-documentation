@@ -1,4 +1,4 @@
-The example below demonstrates how to show various default and custom commands in the context menu depending on the selected item:
+The example below demonstrates how to show default and custom commands in the context menu depending on the selected item:
 
 ---
 ##### jQuery
@@ -6,10 +6,14 @@ The example below demonstrates how to show various default and custom commands i
     $(function () {
         var diagram = $("#diagram").dxDiagram({
             onSelectionChanged: function(e) {
+                // Displays the "showGrid" and "snapToGrid" commands when a user selects no items
                 if (e.items.length === 0)
                     e.component.option("contextMenu.commands", ["showGrid", "snapToGrid"]);
-                else if (e.items[0].itemType === "shape")   
-                    e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
+                else 
+                    // Displays the "fontName", "fontSize", and "selectShapes" commands when a user selects a shape
+                    if (e.items[0].itemType === "shape")   
+                        e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
+                    // Displays the "connectorLineStart", "connectorLineEnd", and "selectConnectors" commands when a user selects a connector
                     else 
                         e.component.option("contextMenu.commands", ["connectorLineStart", "connectorLineEnd", {name: "selectConnectors", text: "Select All Connectors"}]);
             },
@@ -49,12 +53,16 @@ The example below demonstrates how to show various default and custom commands i
     export class AppComponent {
         @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         selectionChanged(e) {
+            // Displays the "showGrid" and "snapToGrid" commands if a user selects no items
             if (e.items.length === 0)
                     e.component.option("contextMenu.commands", ["showGrid", "snapToGrid"]);
-                else if (e.items[0].itemType === "shape")   
+            else 
+                // Displays the "fontName", "fontSize", and "selectShapes" commands when a user selects a shape
+                if (e.items[0].itemType === "shape")   
                     e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
-                    else 
-                        e.component.option("contextMenu.commands", ["connectorLineStart", "connectorLineEnd", {name: "selectConnectors", text: "Select All Connectors"}]);
+                else
+                    // Displays the "connectorLineStart", "connectorLineEnd", and "selectConnectors" commands when a user selects a connector
+                    e.component.option("contextMenu.commands", ["connectorLineStart", "connectorLineEnd", {name: "selectConnectors", text: "Select All Connectors"}]);
         }
         customCommand(e) {
             if (e.name == "selectShapes") {
@@ -90,11 +98,15 @@ The example below demonstrates how to show various default and custom commands i
             },
             methods: {
                 onSelectionChanged(e) {
+                    // Displays the "showGrid" and "snapToGrid" commands if a user selects no items
                     if (e.items.length === 0)
                         e.component.option("contextMenu.commands", ["showGrid", "snapToGrid"]);
-                    else if (e.items[0].itemType === "shape")   
-                        e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
-                        else 
+                    else
+                        // Displays the "fontName", "fontSize", and "selectShapes" commands when a user selects a shape
+                        if (e.items[0].itemType === "shape")   
+                            e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
+                        else
+                            // Displays the "connectorLineStart", "connectorLineEnd", and "selectConnectors" commands when a user selects a connector
                             e.component.option("contextMenu.commands", ["connectorLineStart", "connectorLineEnd", {name: "selectConnectors", text: "Select All Connectors"}]);
                 },
                 onCustomCommand(e) {
@@ -128,11 +140,15 @@ The example below demonstrates how to show various default and custom commands i
             this.onCustomCommand = this.onCustomCommand.bind(this);
         }
         onSelectionChanged(e) {
+            // Displays the "showGrid" and "snapToGrid" commands when a user selects no items
             if (e.items.length === 0)
                     e.component.option("contextMenu.commands", ["showGrid", "snapToGrid"]);
-                else if (e.items[0].itemType === "shape")   
-                    e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
-                    else 
+                else
+                    // Displays the "fontName", "fontSize", and "selectShapes" commands when a user selects a shape
+                    if (e.items[0].itemType === "shape")   
+                        e.component.option("contextMenu.commands", ["fontName", "fontSize", {name: "selectShapes", text: "Select All Shapes"}]);
+                    else
+                        // Displays the "connectorLineStart", "connectorLineEnd", and "selectConnectors" commands when a user selects a connector
                         e.component.option("contextMenu.commands", ["connectorLineStart", "connectorLineEnd", {name: "selectConnectors", text: "Select All Connectors"}]);
         }
         onCustomCommand(e) {

@@ -6,8 +6,8 @@ The example below demonstrates how to prevent users from connecting a shape to i
     $(function() {
         var diagram = $("#diagram").dxDiagram({
             onRequestEditOperation: function(e) {
-                if(e.operation === "changeConnection")
-                    if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+                if (e.operation === "changeConnection")
+                    if (e.args.connector && e.args.connector.fromId === e.args.connector.toId)
                         e.allowed = false;
             },
         }).dxDiagram("instance");
@@ -32,8 +32,8 @@ The example below demonstrates how to prevent users from connecting a shape to i
     export class AppComponent {
         @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         requestEditOperationHandler(e) {
-            if(e.operation === "changeConnection")
-                if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+            if (e.operation === "changeConnection")
+                if (e.args.connector && e.args.connector.fromId === e.args.connector.toId)
                     e.allowed = false;
         }
     }
@@ -55,8 +55,8 @@ The example below demonstrates how to prevent users from connecting a shape to i
             },
             methods: {
                 onRequestEditOperation(e) {
-                    if(e.operation === "changeConnection")
-                        if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+                    if (e.operation === "changeConnection")
+                        if (e.args.connector && e.args.connector.fromId === e.args.connector.toId)
                             e.allowed = false;
                 },
             }
@@ -75,8 +75,8 @@ The example below demonstrates how to prevent users from connecting a shape to i
             this.onRequestEditOperation = this.onRequestEditOperation.bind(this);
         }
         onRequestEditOperation(e) {
-                if(e.operation === 'changeConnection')
-                    if(e.args.connector && e.args.connector.fromId === e.args.connector.toId)
+                if (e.operation === 'changeConnection')
+                    if (e.args.connector && e.args.connector.fromId === e.args.connector.toId)
                         e.allowed = false;
         }
         render() {

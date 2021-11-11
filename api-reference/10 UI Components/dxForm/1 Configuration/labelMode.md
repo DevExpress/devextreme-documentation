@@ -2,7 +2,7 @@
 id: dxForm.Options.labelMode
 acceptValues: 'static' | 'floating' | 'hidden' | 'outside'
 type: String
-default: 'default'
+default: 'outside'
 ---
 ---
 ##### shortDescription

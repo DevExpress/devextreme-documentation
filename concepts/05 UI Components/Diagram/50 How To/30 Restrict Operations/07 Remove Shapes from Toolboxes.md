@@ -1,5 +1,5 @@
 In the example below, the Diagram component updates the shape collection in the toolbox and context toolbox as follows:
-* Removes a shape from these toolboxes after a user adds it on a chart
+* Removes a shape from these toolboxes after a user adds it to a chart
 * Returns a shape to these toolboxes after a user deletes it from a chart
 
 ---

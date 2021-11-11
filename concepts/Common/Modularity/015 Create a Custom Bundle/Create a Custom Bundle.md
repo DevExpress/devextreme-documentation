@@ -1,7 +1,7 @@
 To create a custom bundle using the DevExtreme Bundler tool, you need <a href="https://webpack.js.org/" target="_blank">Webpack</a>, <a href="https://webpack.js.org/plugins/terser-webpack-plugin/" target="_blank">TerserWebpackPlugin</a>, and the DevExtreme package installed globally.  
 
     npm install -g webpack  
-    npm install -g webpack terser-webpack-plugin  
+    npm install -g terser-webpack-plugin  
     npm install -g devextreme  
 
 Create the DevExtreme configuration file in your project folder.  

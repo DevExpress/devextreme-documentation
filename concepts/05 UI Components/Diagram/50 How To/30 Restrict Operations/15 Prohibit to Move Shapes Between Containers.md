@@ -7,8 +7,8 @@ The example below demonstrates how to prevent users from moving a shape from one
         var containerIds = {};
         var diagram = $("#diagram").dxDiagram({
             onRequestEditOperation: function(e) {
-                if(e.operation === "moveShape")
-                    if(containerIds[e.args.shape.id] !== e.args.shape.containerId)
+                if (e.operation === "moveShape")
+                    if (containerIds[e.args.shape.id] !== e.args.shape.containerId)
                         e.allowed = false;
             },
             onSelectionChanged: function(e) {
@@ -34,7 +34,7 @@ The example below demonstrates how to prevent users from moving a shape from one
     })
 
     export class AppComponent {
-        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent; diagram: DxDiagramComponent;
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         containerIds: any = {};
         requestEditOperation(e) {
             if (e.operation === "moveShape")
@@ -67,8 +67,8 @@ The example below demonstrates how to prevent users from moving a shape from one
             },
             methods: {
                 onRequestEditOperation(e) {
-                    if(e.operation === "moveShape")
-                        if(containerIds[e.args.shape.id] !== e.args.shape.containerId)
+                    if (e.operation === "moveShape")
+                        if (containerIds[e.args.shape.id] !== e.args.shape.containerId)
                             e.allowed = false;
                 },
                 onSelectionChanged(e) {
@@ -91,8 +91,8 @@ The example below demonstrates how to prevent users from moving a shape from one
             this.onSelectionChanged = this.onSelectionChanged.bind(this);
         }
         onRequestEditOperation(e) {
-            if(e.operation === "moveShape")
-                if(containerIds[e.args.shape.id] !== e.args.shape.containerId)
+            if (e.operation === "moveShape")
+                if (containerIds[e.args.shape.id] !== e.args.shape.containerId)
                     e.allowed = false;
         }
         onSelectionChanged(e) {

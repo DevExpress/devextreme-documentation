@@ -38,7 +38,7 @@ The example below demonstrates how to prevent users from adding more than one sh
     })
 
     export class AppComponent {
-        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;diagram: DxDiagramComponent
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         requestEditOperation(e) {
             if (e.operation === 'addShape') {
                 // Gets types of shapes the chart contains
@@ -46,7 +46,7 @@ The example below demonstrates how to prevent users from adding more than one sh
                     return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                 }).map(a => a.type);
                 // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
-                if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
                     e.allowed = false;
                     return;
                 }
@@ -77,7 +77,7 @@ The example below demonstrates how to prevent users from adding more than one sh
                             return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                         }).map(a => a.type);
                         // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
-                        if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                        if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
                             e.allowed = false;
                             return;
                         }
@@ -106,7 +106,7 @@ The example below demonstrates how to prevent users from adding more than one sh
                     return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                 }).map(a => a.type);
                 // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
-                if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
                     e.allowed = false;
                     return;
                 }

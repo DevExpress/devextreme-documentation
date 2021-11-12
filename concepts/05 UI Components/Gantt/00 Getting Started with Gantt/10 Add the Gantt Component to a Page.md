@@ -13,8 +13,8 @@ Add Gantt resources (scripts and styles) onto the page.
     Add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
 
         <!--HTML-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_2/css/dx-gantt.min.css">
-        <script src="https://cdn3.devexpress.com/jslib/minor_21_2/js/dx-gantt.min.js"></script>
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_1/css/dx-gantt.min.css">
+        <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/dx-gantt.min.js"></script>
 
 - **Local Scripts**
 
@@ -32,11 +32,11 @@ The Gantt UI component is a jQuery DevExtreme UI component, and thus requires co
 
     <!--HTML-->
     <!-- DevExtreme theme -->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_21_2/css/dx.light.css">
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_1/css/dx.light.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- DevExtreme common scripts -->
-    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_21_2/js/dx.all.js"></script>
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_22_1/js/dx.all.js"></script>
         
 [/note]
 

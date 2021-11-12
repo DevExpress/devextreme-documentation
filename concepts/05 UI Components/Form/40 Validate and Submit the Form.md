@@ -300,7 +300,7 @@ The Form UI component uses the built-in validation engine to validate form item 
 
 A single Form editor is validated individually once its value changes. If the value fails to pass the validation check, the editor displays an error message. Note that you can also call the [validate()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#validate') method to validate all Form editors simultaneously. In this case, the Form can display all validation errors at the bottom if you set the [showValidationSummary](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/showValidationSummary.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showValidationSummary') property to **true**. 
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/21_2/UIWidgets/dxForm/Validation/markup.html, /Content/Applications/21_2/UIWidgets/dxForm/Validation/script.js, /Content/Applications/21_2/UIWidgets/dxForm/common-styles.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/22_1/UIWidgets/dxForm/Validation/markup.html, /Content/Applications/22_1/UIWidgets/dxForm/Validation/script.js, /Content/Applications/22_1/UIWidgets/dxForm/common-styles.css"></div>
 
 Usually, Form editors should be submitted to the server after being successfully validated on the client. The following code shows how to do this using a [button form item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/'). Note that the Form UI component is wrapped in the <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">`<form>`</a> tag in the markup.
 

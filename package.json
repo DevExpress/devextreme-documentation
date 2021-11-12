@@ -2,7 +2,7 @@
   "name": "devextreme-documentation",
   "description": "DevExtreme documentation",
   "author": "Developer Express Inc.",
-  "version": "21.2.0",
+  "version": "22.1.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -12,10 +12,10 @@
     "devextreme-internal-tools": "^7.1.0"
   },
   "scripts": {
-    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 21.2 --syntaxdata-path ./metadata/syntax-data.json",
+    "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 22.1 --syntaxdata-path ./metadata/syntax-data.json",
     "generate-syntax-data": "dx-tools generate-syntax-data --output-path ./metadata/syntax-data.json",
     "generate-modules-meta": "dx-tools generate-modules-meta --output-path ./metadata/modules-meta.json",
-    "generate-extra-topic": "dx-tools generate-extra-topics --docs-root ./ --version 21.2",
+    "generate-extra-topic": "dx-tools generate-extra-topics --docs-root ./ --version 22.1",
     "update-topics": "dx-tools update-topics --docs-root ./",
     "update-links": "dx-tools update-links --docs-root ./",
     "validate-docs": "dx-tools validate-docs --docs-root ./",

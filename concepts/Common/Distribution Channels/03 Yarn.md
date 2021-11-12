@@ -7,19 +7,19 @@ You can use Yarn to install the following DevExtreme npm packages:
 
 Install the latest stable version:
 
-    yarn add devextreme@21.2 --exact
+    yarn add devextreme@22.1 --exact
 
-    yarn add devextreme-angular@21.2 --exact // to use DevExtreme with Angular
-    yarn add devextreme-vue@21.2 --exact // to use DevExtreme with Vue
-    yarn add devextreme-react@21.2 --exact  // to use DevExtreme with React
+    yarn add devextreme-angular@22.1 --exact // to use DevExtreme with Angular
+    yarn add devextreme-vue@22.1 --exact // to use DevExtreme with Vue
+    yarn add devextreme-react@22.1 --exact  // to use DevExtreme with React
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    yarn add devextreme@21.2-next --exact
+    yarn add devextreme@22.1-next --exact
 
-    yarn add devextreme-angular@21.2-next --exact // to use DevExtreme with Angular
-    yarn add devextreme-vue@21.2-next --exact // to use DevExtreme with Vue
-    yarn add devextreme-react@21.2-next --exact  // to use DevExtreme with React
+    yarn add devextreme-angular@22.1-next --exact // to use DevExtreme with Angular
+    yarn add devextreme-vue@22.1-next --exact // to use DevExtreme with Vue
+    yarn add devextreme-react@22.1-next --exact  // to use DevExtreme with React
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 

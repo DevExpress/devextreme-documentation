@@ -18,7 +18,7 @@ Add Gantt resources (scripts and styles) onto the page.
 
 - **Local Scripts**
 
-    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles(x86)%\DevExpress 21.2\DevExtreme\Sources). Copy the **dx-gantt.min.js** and **dx-gantt.min.css** files into your application folder. Then, link the required files.
+    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles(x86)%\DevExpress 22.1\DevExtreme\Sources). Copy the **dx-gantt.min.js** and **dx-gantt.min.css** files into your application folder. Then, link the required files.
 
         <!--HTML-->
         <script type="text/javascript" src="js/dx-gantt.min.js"></script>

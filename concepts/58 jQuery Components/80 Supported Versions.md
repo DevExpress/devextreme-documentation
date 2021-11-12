@@ -6,6 +6,7 @@
     <tr>
         <td>
             v21.2.x <br/>
+            v22.1.x <br/>
         </td>
         <td>v3.x</td>
     </tr>

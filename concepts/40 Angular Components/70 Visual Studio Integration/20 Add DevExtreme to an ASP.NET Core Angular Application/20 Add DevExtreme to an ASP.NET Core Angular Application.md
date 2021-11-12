@@ -11,8 +11,8 @@ This article describes how to create an ASP.NET Core Angular application and add
           ...
           "dependencies": {
             ...
-            "devextreme": "minor_21_2_package",
-            "devextreme-angular": "minor_21_2_package"
+            "devextreme": "minor_22_1_package",
+            "devextreme-angular": "minor_22_1_package"
           }
         }
         

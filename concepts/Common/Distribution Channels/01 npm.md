@@ -7,19 +7,19 @@ npm is used to deliver DevExtreme to Angular, Vue, and React applications. The f
 
 Install the latest stable version:
 
-    npm install devextreme@21.2 --save --save-exact
+    npm install devextreme@22.1 --save --save-exact
 
-    npm install devextreme-angular@21.2 --save --save-exact // to use DevExtreme with Angular
-    npm install devextreme-vue@21.2 --save --save-exact // to use DevExtreme with Vue
-    npm install devextreme-react@21.2 --save --save-exact  // to use DevExtreme with React
+    npm install devextreme-angular@22.1 --save --save-exact // to use DevExtreme with Angular
+    npm install devextreme-vue@22.1 --save --save-exact // to use DevExtreme with Vue
+    npm install devextreme-react@22.1 --save --save-exact  // to use DevExtreme with React
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@21.2-next --save --save-exact
+    npm install devextreme@22.1-next --save --save-exact
 
-    npm install devextreme-angular@21.2-next --save --save-exact // to use DevExtreme with Angular
-    npm install devextreme-vue@21.2-next --save --save-exact // to use DevExtreme with Vue
-    npm install devextreme-react@21.2-next --save --save-exact  // to use DevExtreme with React
+    npm install devextreme-angular@22.1-next --save --save-exact // to use DevExtreme with Angular
+    npm install devextreme-vue@22.1-next --save --save-exact // to use DevExtreme with Vue
+    npm install devextreme-react@22.1-next --save --save-exact  // to use DevExtreme with React
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 

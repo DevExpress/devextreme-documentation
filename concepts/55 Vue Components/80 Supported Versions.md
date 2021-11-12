@@ -4,6 +4,10 @@
         <th>Vue</th>
     </tr>
     <tr>
+        <td>v22.1.x</td>
+        <td>vue_version_22_1</td>
+    </tr>
+    <tr>
         <td>v21.2.x</td>
         <td>vue_version_21_2</td>
     </tr>

@@ -19,14 +19,14 @@ This property can have one of the following values:
         <td><b>true</b></td>
         <td>
             Rows are rendered <i>after</i> a user stops scrolling.<br>
-            This mode ensures smoother scrolling, but gray boxes may appear instead of row content while the user scrolls the {WidgetName}.
+            In this mode, row content may take time to appear, but scrolling is smoother.
         </td>
     </tr>
     <tr>
         <td><b>false</b></td>
         <td>
             Rows are rendered <i>at the same time</i> as the user scrolls the {WidgetName}.<br>
-            In this mode, the gray boxes do not appear, but the component performance during scrolling may be lowered.
+            In this mode, row content is displayed quicker, but the component performance during scrolling may be lowered.
         </td>
     </tr>
     <tr>

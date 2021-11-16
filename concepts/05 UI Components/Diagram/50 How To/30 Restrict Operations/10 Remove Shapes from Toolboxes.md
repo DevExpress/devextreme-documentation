@@ -180,3 +180,6 @@ In the example below, the Diagram component updates the shape collection in the 
     export default App;
 
 ---
+
+#####See Also#####
+- [Prohibit Adding Shapes Twice](/concepts/05%20UI%20Components/Diagram/50%20How%20To/30%20Restrict%20Operations/05%20Prohibit%20Adding%20Shapes%20Twice.md '/Documentation/Guide/UI_Components/Diagram/How_To/Restrict_Operations/#Prohibit_Adding_Shapes_Twice')

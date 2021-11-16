@@ -12,7 +12,7 @@ The following example demonstrates how to hide shapes in the context toolbox dep
                     this.currentShapeId = e.args.connector.fromId;
                 if (e.operation === "addShapeFromToolbox") {
                     // Gets the connector's start node type
-                    var currentShape = $("#diagram").dxDiagram().dxDiagram("instance").getItemById(this.currentShapeId);
+                    var currentShape = e.component.getItemById(this.currentShapeId);
                     if (e.args.shapeType === "terminator") 
                         // If the connector's start node type is "decision"
                         if (currentShape && currentShape.type === "decision")
@@ -56,7 +56,7 @@ The following example demonstrates how to hide shapes in the context toolbox dep
                 this.currentShapeId = e.args.connector.fromId;
             if (e.operation === "addShapeFromToolbox") {
                 // Gets the connector's start node type
-                var currentShape = this.diagram.instance.getItemById(this.currentShapeId);
+                var currentShape = e.component.getItemById(this.currentShapeId);
                 if (e.args.shapeType === "terminator") 
                     // If the connector's start node type is "decision"
                     if (currentShape && currentShape.type === "decision")
@@ -94,7 +94,7 @@ The following example demonstrates how to hide shapes in the context toolbox dep
                         this.currentShapeId = e.args.connector.fromId;
                     if (e.operation === "addShapeFromToolbox") {
                         // Gets the connector's start node type
-                        var currentShape = this.$refs['diagram'].instance.getItemById(this.currentShapeId);
+                        var currentShape = e.component.getItemById(this.currentShapeId);
                         if (e.args.shapeType === "terminator")
                             // If the connector's start node type is "decision"
                             if (currentShape && currentShape.type === "decision")
@@ -124,7 +124,7 @@ The following example demonstrates how to hide shapes in the context toolbox dep
                 this.currentShapeId = e.args.connector.fromId;
             if (e.operation === 'addShapeFromToolbox') {
                 // Gets the connector's start node type
-                var currentShape = this.diagramRef.current.instance.getItemById(this.currentShapeId);
+                var currentShape = e.component.getItemById(this.currentShapeId);
                 if (e.args.shapeType === 'terminator')
                     // If the connector's start node type is "decision" 
                     if (currentShape && currentShape.type === 'decision')

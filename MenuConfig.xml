@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MenuRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
+<!-- Hidden topics -->
+<MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components$" />
+<MenuRule Destination="" SourcePattern="ApiReference:^(10 UI Components|30 Data Layer|50 Common/utils)/(zz )*Errors and Warnings" />
+
 <!-- Angular articles -->
 <MenuRule Destination="00 Angular/00 Overview" SourcePattern="Howto:^40 Angular Components/00 DevExtreme Angular Components" />
 <MenuRule Destination="00 Angular/10 Getting Started/05 Quick Start" SourcePattern="Howto:^40 Angular Components/10 Getting Started/02 Create a DevExtreme Application" />
@@ -51,112 +55,119 @@
 
 <!-- Overview + How To + API-->
 <MenuRule
-  Destination="05 UI Components2/$1/0 Overview"
-  SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)/00 Overview"
+    Destination="05 UI Components2/$1/0 Overview"
+    SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)/00 Overview"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/2 How To"
-  SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)"
+    Destination="05 UI Components2/$1/2 How To"
+    SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)"
 />
 
 <!-- Getting Started + API -->
 <MenuRule
-  Destination="05 UI Components2/$1/0 Getting Started"
-  SourcePattern="Howto:^05 UI Components/(ButtonGroup|Drawer|Floating Action Button)/00 Getting Started with (ButtonGroup|Navigation Drawer|Floating Action Button)"
+    Destination="05 UI Components2/$1/0 Getting Started"
+    SourcePattern="Howto:^05 UI Components/(ButtonGroup|Drawer|Floating Action Button)/00 Getting Started with (ButtonGroup|Navigation Drawer|Floating Action Button)"
 />
 <MenuRule
-  Destination=""
-  SourcePattern="Howto:^05 UI Components/(ButtonGroup|Drawer|Floating Action Button)"
+    Destination=""
+    SourcePattern="Howto:^05 UI Components/(ButtonGroup|Drawer|Floating Action Button)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(ButtonGroup|Drawer)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(ButtonGroup|Drawer)"
 />
 <MenuRule
-  Destination="05 UI Components2/Floating Action Button/3 SpeedDialAction API"
-  SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction"
+    Destination="05 UI Components2/Floating Action Button/3 SpeedDialAction API"
+    SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction"
 />
 
 <!-- Getting Started + How To + API -->
 <MenuRule
-  Destination="05 UI Components2/$1/0 Getting Started"
-  SourcePattern="Howto:^05 UI Components/(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)/00 Getting Started with (Button|DataGrid|DateBox|Diagram|DropDownButton|File Manager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
+    Destination="05 UI Components2/$1/0 Getting Started"
+    SourcePattern="Howto:^05 UI Components/(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)/00 Getting Started with (Button|DataGrid|DateBox|Diagram|DropDownButton|File Manager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/2 How To"
-  SourcePattern="Howto:^05 UI Components/(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
+    Destination="05 UI Components2/$1/2 How To"
+    SourcePattern="Howto:^05 UI Components/(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
 />
 
 <!-- Visual Elements + API -->
 <MenuRule
-  Destination="05 UI Components2/$1/0 Overview"
-  SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge)/10 Visual Elements"
+    Destination="05 UI Components2/$1/0 Overview"
+    SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge)/10 Visual Elements"
 />
 <MenuRule
-  Destination=""
-  SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge)"
+    Destination=""
+    SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(Bullet|BarGauge|CircularGauge|LinearGauge)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(Bullet|BarGauge|CircularGauge|LinearGauge)"
 />
 
 <!-- Visual Elements + How To + API -->
 <MenuRule
-  Destination="05 UI Components2/$1/0 Overview"
-  SourcePattern="Howto:^05 UI Components/(PolarChart|RangeSelector|Sparkline|VectorMap)/10 Visual Elements"
+    Destination="05 UI Components2/$1/0 Overview"
+    SourcePattern="Howto:^05 UI Components/(PolarChart|RangeSelector|Sparkline|VectorMap)/10 Visual Elements"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/2 How To"
-  SourcePattern="Howto:^05 UI Components/(PolarChart|RangeSelector|Sparkline|VectorMap)"
+    Destination="05 UI Components2/$1/2 How To"
+    SourcePattern="Howto:^05 UI Components/(PolarChart|RangeSelector|Sparkline|VectorMap)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(PolarChart|RangeSelector|Sparkline|VectorMap)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(PolarChart|RangeSelector|Sparkline|VectorMap)"
 />
 
 <!-- Overview + API -->
 <MenuRule
-  Destination="05 UI Components2/$1/0 Overview"
-  SourcePattern="Howto:^05 UI Components/(Resizable)/00 Overview"
+    Destination="05 UI Components2/$1/0 Overview"
+    SourcePattern="Howto:^05 UI Components/(Resizable)/00 Overview"
 />
 <MenuRule
-  Destination=""
-  SourcePattern="Howto:^05 UI Components/(Resizable)"
+    Destination=""
+    SourcePattern="Howto:^05 UI Components/(Resizable)"
 />
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(Resizable)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(Resizable)"
 />
 
 <!-- API only -->
 <MenuRule
-  Destination="05 UI Components2/$1/3 API"
-  SourcePattern="ApiReference:^10 UI Components/dx(DeferRendering|Draggable|NavBar|SlideOut|SlideOutView|Sortable|TreeMap)"
+    Destination="05 UI Components2/$1/3 API"
+    SourcePattern="ApiReference:^10 UI Components/dx(DeferRendering|Draggable|NavBar|SlideOut|SlideOutView|Sortable|TreeMap)"
 />
 
 <MenuRule Destination="10 Data Binding" SourcePattern="Howto:^70 Data Binding" />
 <MenuRule Destination="10 Data Binding/99 Data Layer API" SourcePattern="ApiReference:^30 Data Layer" />
 
-<MenuRule Destination="20 Data Validation/00 Data Validation" SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 Data Validation" />
-<MenuRule Destination="20 Data Validation/90 Validator API" SourcePattern="ApiReference:^10 UI Components/dxValidator" />
-<MenuRule Destination="20 Data Validation/92 ValidationGroup API" SourcePattern="ApiReference:^10 UI Components/dxValidationGroup" />
-<MenuRule Destination="20 Data Validation/94 ValidationSummary API" SourcePattern="ApiReference:^10 UI Components/dxValidationSummary" />
+<MenuRule Destination="20 Data Validation/00 Overview" SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 Data Validation" />
+<MenuRule Destination="20 Data Validation/99 API/$1" SourcePattern="ApiReference:^10 UI Components/dx(Validator|ValidationGroup|ValidationSummary)" />
+<!-- <MenuRule Destination="20 Data Validation/99 API/92 ValidationGroup API" SourcePattern="ApiReference:^10 UI Components/dxValidationGroup" /> -->
+<!-- <MenuRule Destination="20 Data Validation/99 API/94 ValidationSummary API" SourcePattern="ApiReference:^10 UI Components/dxValidationSummary" /> -->
+<MenuRule Destination="20 Data Validation/99 API/zz validationEngine" SourcePattern="ApiReference:^50 Common/utils/validationEngine" />
 
-<MenuRule Destination="30 Localization and Globalization/Localization and Globalization" SourcePattern="Howto:^Common/Localization" />
+
+<MenuRule Destination="30 Localization and Globalization/Overview" SourcePattern="Howto:^Common/Localization" />
 <MenuRule Destination="30 Localization and Globalization/Value Formatting" SourcePattern="Howto:^Common/Value Formatting" />
+<MenuRule Destination="30 Localization and Globalization/zz API/Methods" SourcePattern="ApiReference:^50 Common/utils/localization" />
+<MenuRule Destination="30 Localization and Globalization/zz API/zz Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/(Format)" />
 
 <MenuRule Destination="40 UI Customization/10 Themes and Styles" SourcePattern="Howto:^60 Themes and Styles" />
 <MenuRule Destination="40 UI Customization/20 Templates" SourcePattern="Howto:^05 UI Components/zz Common/30 Templates" />
-<MenuRule Destination="40 UI Customization/99 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
+<MenuRule Destination="40 UI Customization/10 Themes and Styles/98 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
+<MenuRule Destination="40 UI Customization/10 Themes and Styles/99 API/ui.themes" SourcePattern="ApiReference:^50 Common/utils/ui/themes" />
+<MenuRule Destination="40 UI Customization/10 Themes and Styles/99 API/viz/$1" SourcePattern="ApiReference:^50 Common/utils/viz/(.*((T|t)heme|(P|p)alette|(C|c)olor).*)" />
+
 
 <MenuRule Destination="50 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
 <MenuRule Destination="50 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />
@@ -173,27 +184,27 @@
 
 <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
 
-<MenuRule
-  Destination="05 UI Components2/zz Utilities/Data Export/API/$1"
-  SourcePattern="ApiReference:^50 Common/utils/(excel.*|pdf.*)"
-/>
-
-<MenuRule
-  Destination="05 UI Components2/zz Utilities/Data Export/Interfaces/$1"
-  SourcePattern="ApiReference:^50 Common/Object Structures/(Excel.*|Pdf.*)"
-/>
-
-<!-- Hidden topics -->
-<MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />
-<MenuRule Destination="" SourcePattern="ApiReference:^(10 UI Components|30 Data Layer|50 Common/utils)/(zz )*Errors and Warnings.*" />
-
-
+<MenuRule Destination="05 UI Components2/zz Utilities/Animation/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(AnimationConfig)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Animation/API/$1" SourcePattern="ApiReference:^50 Common/utils/(animationPresets|fx|TransitionExecutor)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Data Export/API/$1" SourcePattern="ApiReference:^50 Common/utils/(excel.*|pdf.*)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Data Export/Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/(Excel.*|Pdf.*|CellRange)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Device Detection/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(device)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Device Detection/API" SourcePattern="ApiReference:^50 Common/utils/devices/3 Methods" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Global Settings/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(globalConfig)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Global Settings/API/$1" SourcePattern="ApiReference:^50 Common/utils/(config)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/Positioning/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(PositionConfig)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/SVG Export/API/$1" SourcePattern="ApiReference:^50 Common/utils/viz/(.*((E|e)xport|(M|m)arkup).*)" />
+<MenuRule Destination="05 UI Components2/zz Utilities/UI Events/Event List" SourcePattern="ApiReference:^10 UI Components/UI Events" />
+<MenuRule Destination="05 UI Components2/zz Utilities/UI Events/zz API" SourcePattern="ApiReference:^50 Common/utils/events" />
+<MenuRule Destination="05 UI Components2/zz Utilities/UI Events/$1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(EventObject)" />
 
 
 
 
 
-<!-- =============================================================================================== -->
+
+
+  <!-- =============================================================================================== -->
 
 
   <MenuRule SourcePattern="ApiReference:^50 Common/utils(.*?)" Destination="aa01 API Reference/Utilities$1" />
@@ -206,14 +217,14 @@
   <MenuRule SourcePattern="Howto:^Getting Started" Destination="" />
 
   <!-- <MenuRule SourcePattern="Howto:^Common/(Migrate to the New Version.*?)" Destination="bz $1" /> -->
-  
+
   <MenuRule SourcePattern="Howto:^05 UI Components$" Destination="bb65 UI Components" />
   <MenuRule SourcePattern="Howto:^05 UI Components/(SlideOut|SlideOutView|NavBar).*?" Destination="" />
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/30 (Templates.*?)" Destination="bb80 Common Features/$1" />
   <!-- <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 (Data Validation.*?)" Destination="bb80 Common Features/$1" /> -->
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/40 (Keyboard Support.*?)" Destination="bb80 Common Features/$1" />
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 (3rd-Party Frameworks.*?)" Destination="bb80 Common Features/zz $1" />
- 
+
   <MenuRule SourcePattern="Howto:^05 UI Components/zz Common" Destination="" />
 
   <MenuRule SourcePattern="Howto:^05 UI Components/(.*?)" Destination="bb65 UI Components/$1" />
@@ -222,10 +233,10 @@
   <MenuRule SourcePattern="Howto:^99 VS Integration(.*?)" Destination="" />
 
   <MenuRule SourcePattern="Howto:^34 ASP.NET MVC Controls(.*?)" Destination="" />
-  
+
   <!-- <MenuRule SourcePattern="Howto:^40 Angular Components/(.*?)" Destination="bb10 Angular/ab$1" />
   <MenuRule SourcePattern="Howto:^40 Angular Components" Destination="" /> -->
-  
+
   <!-- <MenuRule SourcePattern="Howto:^50 React Components/(02 Create a DevExtreme Application|05 Add DevExtreme to a React Application)" Destination="bb12 React/ab02 Getting Started/$1" />
   <MenuRule SourcePattern="Howto:^50 React Components/(.*?)" Destination="bb12 React/ab$1" />
   <MenuRule SourcePattern="Howto:^50 React Components" Destination="" /> -->
@@ -235,7 +246,7 @@
   <MenuRule SourcePattern="Howto:^55 Vue Components" Destination="" /> -->
 
   <!-- <MenuRule SourcePattern="Howto:^58 jQuery Components/(.*?)" Destination="bb50 jQuery/ab$1" /> -->
-  
+
   <!-- <MenuRule SourcePattern="Howto:^60 (Themes and Styles.*)" Destination="bb80 Common Features/$1" /> -->
   <MenuRule SourcePattern="Howto:^Common/(.*?)" Destination="bb80 Common Features/$1" />
   <MenuRule SourcePattern="Howto:^Common" Destination="" />

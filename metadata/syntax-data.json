@@ -4955,9 +4955,6 @@
       "react": "CustomOperation",
       "vue": "DxCustomOperation"
     },
-    "dxFilterBuilderOptions.defaultGroupOperation": {
-      "vue": "default-group-operation"
-    },
     "dxFilterBuilderOptions.fields": {
       "angular": "dxi-field",
       "react": "Field",

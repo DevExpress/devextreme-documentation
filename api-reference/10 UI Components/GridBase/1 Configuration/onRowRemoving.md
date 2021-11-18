@@ -70,19 +70,20 @@ This function allows you to intercept row removal and perform additional actions
     // ...
     export class AppComponent {
         constructor(private httpClient: HttpClient) { /*...*/}
-        async validateRemove(e) {
-            const isCanceled = async () => {
-                const validationResult = await this.httpClient
+        validateRemove(e) {
+            const isCanceled = new Promise((resolve, reject) => {
+                this.httpClient
                     .get(`https://url/to/your/validation/service/${e.key}`)
-                    .toPromise();
-                if (validationResult.errorText) {
-                    console.log(validationResult.errorText);
-                    return true;
-                } else {
-                    return false;
-                } 
-            }
-            e.cancel = await isCanceled();
+                    .toPromise()
+                    .then((validationResult) => {
+                        if (validationResult.errorText) {
+                            reject(validationResult.errorText);
+                        } else {
+                            resolve(false);
+                        }
+                    });
+            });
+            e.cancel = isCanceled;
         }
     }
 
@@ -124,17 +125,18 @@ This function allows you to intercept row removal and perform additional actions
         },
         // ...
         methods: {
-            async validateRemove(e) {
-                const isCanceled = async () => {
-                    const validationResult = await fetch(`https://url/to/your/validation/service/${e.key}`);
-                    if (validationResult.errorText) {
-                        console.log(validationResult.errorText);
-                        return true;
-                    } else {
-                        return false;
-                    }
-                };
-                e.cancel = await isCanceled();
+            validateRemove(e) {
+                const isCanceled = new Promise((resolve, reject) => {
+                    fetch(`https://url/to/your/validation/service/${e.key}`)
+                        .then((validationResult) => {
+                            if (validationResult.errorText) {
+                                reject(validationResult.errorText);
+                            } else {
+                                resolve(false);
+                            }
+                        });
+                });
+                e.cancel = isCanceled;
             }
         },
     };
@@ -148,17 +150,18 @@ This function allows you to intercept row removal and perform additional actions
     
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
-    async function validateRemove(e) {
-        const isCanceled = async () => {
-            const validationResult = await fetch(`https://url/to/your/validation/service/${e.key}`);
-            if (validationResult.errorText) {
-                console.log(validationResult.errorText);
-                return true;
-            } else {
-                return false;
-            }
-        };
-        e.cancel = await isCanceled();
+    function validateRemove(e) {
+        const isCanceled = new Promise((resolve, reject) => {
+            fetch(`https://url/to/your/validation/service/${e.key}`)
+                .then((validationResult) => {
+                    if (validationResult.errorText) {
+                        reject(validationResult.errorText);
+                    } else {
+                        resolve(false);
+                    }
+                });
+        });
+        e.cancel = isCanceled;
     }
 
     function App() {

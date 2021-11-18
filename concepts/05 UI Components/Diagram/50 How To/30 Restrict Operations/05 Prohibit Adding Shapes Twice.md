@@ -8,7 +8,7 @@ The example below demonstrates how to prevent users from adding more than one sh
             onRequestEditOperation(e) {
                 if (e.operation === 'addShape') {
                     // Gets types of shapes the chart contains
-                    var itemsTypes = $("#diagram").dxDiagram().dxDiagram("instance").getItems().filter(function(item) {
+                    var itemsTypes = e.component.getItems().filter(function(item) {
                         return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                     }).map(a => a.type);
                     // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
@@ -38,15 +38,15 @@ The example below demonstrates how to prevent users from adding more than one sh
     })
 
     export class AppComponent {
-        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;diagram: DxDiagramComponent
+        @ViewChild(DxDiagramComponent, { static: false }) diagram: DxDiagramComponent;
         requestEditOperation(e) {
             if (e.operation === 'addShape') {
                 // Gets types of shapes the chart contains
-                var itemsTypes = this.diagram.instance.getItems().filter(function(item) {
+                var itemsTypes = e.component.getItems().filter(function(item) {
                     return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                 }).map(a => a.type);
                 // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
-                if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
                     e.allowed = false;
                     return;
                 }
@@ -73,11 +73,11 @@ The example below demonstrates how to prevent users from adding more than one sh
                 onRequestEditOperation(e) {
                     if (e.operation === 'addShape') {
                         // Gets types of shapes the chart contains
-                        var itemsTypes = this.$refs['diagram'].instance.getItems().filter(function(item) {
+                        var itemsTypes = e.component.getItems().filter(function(item) {
                             return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                         }).map(a => a.type);
                         // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
-                        if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                        if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
                             e.allowed = false;
                             return;
                         }
@@ -102,11 +102,11 @@ The example below demonstrates how to prevent users from adding more than one sh
         onRequestEditOperation(e) {
             if (e.operation === 'addShape') {
                 // Gets types of shapes the chart contains
-                var itemsTypes = this.diagramRef.current.instance.getItems().filter(function(item) {
+                var itemsTypes = e.component.getItems().filter(function(item) {
                     return (item.itemType === "shape") && (item.id !== e.args.shape.id);
                 }).map(a => a.type);
                 // Cancels the operation if the chart contains a shape with the same type as the shape that is about to be added
-                if(itemsTypes.indexOf(e.args.shape.type) !== -1) {
+                if (itemsTypes.indexOf(e.args.shape.type) !== -1) {
                     e.allowed = false;
                     return;
                 }
@@ -122,3 +122,6 @@ The example below demonstrates how to prevent users from adding more than one sh
     export default App;
 
 ---
+
+#####See Also#####
+- [Remove Shapes from Toolboxes](/concepts/05%20UI%20Components/Diagram/50%20How%20To/30%20Restrict%20Operations/05%20Remove%20Shapes%20from%20Toolboxes.md '/Documentation/Guide/UI_Components/Diagram/How_To/Restrict_Operations/#Remove_Shapes_from_Toolboxes')

@@ -1,5 +1,5 @@
 {
-  "ToolsVersion": "7.3.3",
+  "ToolsVersion": "7.3.4",
   "Modules": {
     "animation/fx": {
       "AnimationConfig": {},

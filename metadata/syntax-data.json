@@ -10881,7 +10881,9 @@
       "vue": "DxChildren"
     },
     "dxTreeViewNode.itemData": {
-      "vue": "item-data"
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
     },
     "dxTreeViewNode.parent": {
       "angular": "dxo-parent",

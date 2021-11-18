@@ -94,18 +94,19 @@
                 <DxGrouping :auto-expand-all="expanded" />
                 <DxToolbar>
                     <DxItem name="groupPanel" />
-                    <DxItem location="after">
-                    <DxButton
-                        :text="expanded ? 'Collapse All' : 'Expand All'"
-                        :width="136"
-                        @click="expanded = !expanded"
-                    />
-                    </DxItem>
+                    <DxItem location="after" template="button-template" />
                     <DxItem name="addRowButton" show-text="always" />
                     <DxItem name="exportButton" />
                     <DxItem name="columnChooserButton" />
                     <DxItem name="searchPanel" />
                 </DxToolbar>
+                <template #button-template>
+                    <DxButton
+                        :text="expanded ? 'Collapse All' : 'Expand All'"
+                        :width="136"
+                        @click="expanded = !expanded"
+                    />
+                </template>
             </DxDataGrid>
         </div>
     </template>

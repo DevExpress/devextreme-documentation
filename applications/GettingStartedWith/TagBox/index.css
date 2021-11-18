@@ -1,4 +1,5 @@
 #container {
     width: 320px;
-    height: 370px;  
+    height: 370px;
+    padding-top: 5px;
 }

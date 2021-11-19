@@ -92,11 +92,9 @@ jobs:
             jq -n \
               --arg head "$branch_name" \
               --arg base "${{ env.branch_name }}" \
-              --arg title "DocGen $(date +%D)" \
+              --arg title "DocGen ${{ env.branch_name }} [$(date +%D)]" \
               --rawfile body prbody.md \
               '{ "head": $head, "base": $base, "title": $title, "body": $body }' > prdata.json
-
-
 
             curl \
                 -X POST \

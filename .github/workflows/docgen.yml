@@ -66,7 +66,12 @@ jobs:
           run: npm run update-links
 
 #PR
-        - name: Create branch
+        - name: Configure Git
+          run: |
+            git config --global user.email "DXGitHubRobot@devexpress.com"
+            git config --global user.name "DX Robot"
+
+        - name: Publish changes
           working-directory: documentation
           run: |
             formatted_time=$(date +"%d_%m_%y_%Hh%Mm")
@@ -74,12 +79,7 @@ jobs:
 
             git checkout -b $branch_name
             git add ./api-reference ./concepts ./metadata
-            git commit -m "DocGen ${{ env.branch_name }} result"
-            
-            commit_result=$?
-            if [ $commit_result -ne 0 ]; then
-              exit $commit_result
-            fi
+            git commit -m "DocGen ${{ env.branch_name }} result" || exit 1
 
             git push --set-upstream origin $branch_name
 

@@ -1,6 +1,6 @@
 ---
 id: DraggableBase
-export: default
+export: DraggableBase
 inherits: DOMComponent
 hidden: 
 module: ui/draggable

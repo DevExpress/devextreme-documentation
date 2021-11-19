@@ -1,0 +1,98 @@
+name: DocGen
+
+on: 
+  pull_request:
+  # schedule:
+  #   - cron:  '0 8 * * *'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    name: Generate Documentation
+
+    steps:
+        - name: Checkout Docs
+          uses: actions/checkout@v2
+          with:
+            path: documentation
+            token: ${{ secrets.DXROBOT_PAT }}
+            ssh-key: ${{ secrets.DXROBOT_SK }}
+
+        - name: Checkout DevExtreme
+          uses: actions/checkout@v2
+          with:
+            path: devextreme
+            repository: devexpress/devextreme
+            ref: ${{ github.ref_name }}
+        
+        - name: NPM - devextreme
+          working-directory: devextreme
+          run: |
+            npm ci
+            npm update devextreme-internal-tools
+
+        - name: NPM - devextreme-documentation
+          working-directory: documentation
+          run: npm i
+
+#Generation
+        - name: Discover declarations
+          working-directory: devextreme
+          run: npm run discover-declarations -- --artifacts ../artifacts
+
+        - name: Update topics
+          working-directory: documentation
+          run: npm run update-topics -- --declarations-path ../artifacts/Declarations.json --artifacts ../artifacts
+
+        - name: Generate additional topics
+          working-directory: documentation
+          run: npm run generate-extra-topic
+
+        - name: Generate Syntax metadata
+          working-directory: documentation
+          run: npm run generate-syntax-data -- --declarations-path $(realpath ../artifacts/Declarations.json)
+
+        - name: Generate Modules metadata
+          working-directory: documentation
+          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json)
+
+        - name: Generate ContentMap
+          working-directory: documentation
+          run: npm run generate-content-map
+
+        - name: Update links
+          working-directory: documentation
+          run: npm run update-links
+
+#PR
+        - name: Create branch
+          working-directory: documentation
+          run: |
+            formatted_time=$(date +"%d_%m_%y_%Hh%Mm")
+            branch_name="dxrobot/${{ github.ref_name }}_D$formatted_time"
+
+            git checkout -b $branch_name
+            git add ./api-reference ./concepts ./metadata
+            git commit -m "DocGen ${{ github.ref_name }} result"
+            
+            commit_result=$?
+            if [ $commit_result -ne 0 ]; then
+              exit $commit_result
+            fi
+
+            git push --set-upstream origin $branch_name
+
+            escaped_pwd=$(pwd | sed --expression 's/\//\\\//g')
+            cat ../artifacts/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
+
+            curl \
+                -X POST \
+                -H "Accept: application/vnd.github.v3+json" \
+                -H "Authorization: Bearer ${{ secrets.DXROBOT_PAT }}" \
+                https://api.github.com/repos/${{ github.repository }}/pulls \
+                -d ''$(jq -n \
+                          --arg head "$branch_name" \
+                          --arg base "${{ github.ref_name }}" \
+                          --arg title "DocGen $(date +%D)" \
+                          --rawfile body prbody.md \
+                          '{ "head": $head, "base": $base, "title": $title, "body": $body }')''

@@ -1,5 +1,6 @@
 name: DocGen
-
+env:
+  branch_name: 22_1
 on: 
   pull_request:
   # schedule:
@@ -23,7 +24,7 @@ jobs:
           with:
             path: devextreme
             repository: devexpress/devextreme
-            ref: ${{ github.ref_name }}
+            ref: ${{ env.branch_name }}
         
         - name: NPM - devextreme
           working-directory: devextreme
@@ -69,11 +70,11 @@ jobs:
           working-directory: documentation
           run: |
             formatted_time=$(date +"%d_%m_%y_%Hh%Mm")
-            branch_name="dxrobot/${{ github.ref_name }}_D$formatted_time"
+            branch_name="dxrobot/${{ env.branch_name }}_D$formatted_time"
 
             git checkout -b $branch_name
             git add ./api-reference ./concepts ./metadata
-            git commit -m "DocGen ${{ github.ref_name }} result"
+            git commit -m "DocGen ${{ env.branch_name }} result"
             
             commit_result=$?
             if [ $commit_result -ne 0 ]; then
@@ -92,7 +93,7 @@ jobs:
                 https://api.github.com/repos/${{ github.repository }}/pulls \
                 -d ''$(jq -n \
                           --arg head "$branch_name" \
-                          --arg base "${{ github.ref_name }}" \
+                          --arg base "${{ env.branch_name }}" \
                           --arg title "DocGen $(date +%D)" \
                           --rawfile body prbody.md \
                           '{ "head": $head, "base": $base, "title": $title, "body": $body }')''

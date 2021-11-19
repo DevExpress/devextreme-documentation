@@ -1,7 +1,7 @@
 ---
 id: GridBase
-module: ui/grid_base
-export: default
+module: ui/data_grid
+export: GridBase
 inherits: Widget,DataHelperMixin
 hidden: 
 ---

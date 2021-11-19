@@ -1,7 +1,7 @@
 ---
 id: utils.requestAnimationFrame(callback)
 module: animation/frame
-export: request
+export: requestAnimationFrame
 ---
 ---
 ##### shortDescription

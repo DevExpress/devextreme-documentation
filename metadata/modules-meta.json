@@ -1,5 +1,6 @@
 {
-  "ToolsVersion": "7.3.4",
+  "ScriptsRevision": "0823b6ff0616f5cd17391247d50b87f1bbe6aead",
+  "ToolsVersion": "7.4.1",
   "Modules": {
     "animation/fx": {
       "AnimationConfig": {},
@@ -80,6 +81,7 @@
     },
     "ui/data_grid": {
       "DataChange": {},
+      "GridBase": {},
       "ColumnBase": {},
       "ColumnButtonBase": {},
       "default": {},
@@ -98,9 +100,11 @@
       "DataSourceLike": {}
     },
     "core/devices": {
+      "Device": {},
       "default": {}
     },
     "ui/draggable": {
+      "DraggableBase": {},
       "default": {}
     },
     "core/element": {
@@ -112,6 +116,11 @@
       "DxEvent": {},
       "EventObject": {},
       "event": {},
+      "off": {},
+      "on": {},
+      "one": {},
+      "trigger": {},
+      "triggerHandler": {},
       "eventsHandler": {}
     },
     "core/utils/deferred": {
@@ -160,9 +169,6 @@
       "locale": {},
       "parseDate": {},
       "parseNumber": {}
-    },
-    "ui/grid_base": {
-      "default": {}
     },
     "core/guid": {
       "default": {}
@@ -338,7 +344,8 @@
       "dxChartSeriesTypes": {}
     },
     "core/config": {
-      "default": {}
+      "default": {},
+      "globalConfig": {}
     },
     "ui/accordion": {
       "default": {}
@@ -639,12 +646,7 @@
       "dxValidatorResult": {}
     },
     "events": {
-      "Event": {},
-      "off": {},
-      "on": {},
-      "one": {},
-      "trigger": {},
-      "triggerHandler": {}
+      "Event": {}
     },
     "mobile/hide_top_overlay": {
       "default": {}
@@ -676,8 +678,8 @@
       "default": {}
     },
     "animation/frame": {
-      "cancel": {},
-      "request": {}
+      "cancelAnimationFrame": {},
+      "requestAnimationFrame": {}
     },
     "mobile/init_mobile_viewport": {
       "default": {}

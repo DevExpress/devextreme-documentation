@@ -1,7 +1,7 @@
 ---
 id: Device
 module: core/devices
-export: default
+export: Device
 type: Object
 ---
 ---

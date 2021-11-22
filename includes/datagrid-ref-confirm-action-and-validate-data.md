@@ -45,28 +45,31 @@
     export class AppComponent {
         constructor(private httpClient: HttpClient) { /*...*/}
         // ...
-        async ${{functionName}}(e) {
-            const isCanceled = async () => {
-                const dialogResult = await confirm("Are you sure?", "Confirm changes");
-                if (dialogResult) {
-                    let params = new HttpParams();
-                    for (let key in e.newData) {
-                        params = params.set(key, e.newData[key]);
-                    }
-                    const validationResult = await this.httpClient
-                        .get("https://url/to/your/validation/service", { params: params })
-                        .toPromise();
-                    if (validationResult.errorText) {
-                        console.log(validationResult.errorText);
-                        return true;
+        ${{functionName}}(e) {
+            const isCanceled = new Promise((resolve, reject) => {
+                const promptPromise = confirm("Are you sure?", "Confirm changes");
+                promptPromise.then((dialogResult) => {
+                    if (dialogResult) {
+                        let params = new HttpParams();
+                        for (let key in e.newData) {
+                            params = params.set(key, e.newData[key]);
+                        }
+                        this.httpClient
+                            .get("https://url/to/your/validation/service", { params: params })
+                            .toPromise()
+                            .then((validationResult) => {
+                                if (validationResult.errorText) {
+                                    reject(validationResult.errorText);
+                                } else {
+                                    resolve(false);
+                                } 
+                            });
                     } else {
-                        return false;
-                    } 
-                } else {
-                    return true;
-                }
-            }
-            e.cancel = await isCanceled();
+                        return resolve(true);
+                    }
+                });
+            });
+            e.cancel = isCanceled;
         }
     }
 
@@ -109,27 +112,29 @@
         },
         // ...
         methods: {
-            async ${{functionName}}(e) {
-                const isCanceled = async () => {
-                    const dialogResult = await confirm("Are you sure?", "Confirm changes");
-                    if (dialogResult) {
-                        let params = "?";
-                        for (let key in e.newData) {
-                            params += `${key}=${e.newData[key]}&`;
-                        }
-                        params = params.slice(0, -1);
-                        const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
-                        if (validationResult.errorText) {
-                            console.log(validationResult.errorText);
-                            return true;
+            ${{functionName}}(e) {
+                const isCanceled = new Promise((resolve, reject) => {
+                    const promptPromise = confirm("Are you sure?", "Confirm changes");
+                    promptPromise.then((dialogResult) => {
+                        if (dialogResult) {
+                            let params = new HttpParams();
+                            for (let key in e.newData) {
+                                params = params.set(key, e.newData[key]);
+                            }
+                            fetch(`https://url/to/your/validation/service${params}`)
+                                .then((validationResult) => {
+                                    if (validationResult.errorText) {
+                                        reject(validationResult.errorText);
+                                    } else {
+                                        resolve(false);
+                                    } 
+                                });
                         } else {
-                            return false;
-                        } 
-                    } else {
-                        return true;
-                    }
-                }
-                e.cancel = await isCanceled();
+                            return resolve(true);
+                        }
+                    });
+                });
+                e.cancel = isCanceled;
             }
         },
     };
@@ -144,27 +149,29 @@
     import { confirm } from 'devextreme/ui/dialog';
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 
-    async function ${{functionName}}(e) {
-        const isCanceled = async () => {
-            const dialogResult = await confirm("Are you sure?", "Confirm changes");
-            if (dialogResult) {
-                let params = "?";
-                for (let key in e.newData) {
-                    params += `${key}=${e.newData[key]}&`;
-                }
-                params = params.slice(0, -1);
-                const validationResult = await fetch(`https://url/to/your/validation/service${params}`);
-                if (validationResult.errorText) {
-                    console.log(validationResult.errorText);
-                    return true;
+    function ${{functionName}}(e) {
+        const isCanceled = new Promise((resolve, reject) => {
+            const promptPromise = confirm("Are you sure?", "Confirm changes");
+            promptPromise.then((dialogResult) => {
+                if (dialogResult) {
+                    let params = new HttpParams();
+                    for (let key in e.newData) {
+                        params = params.set(key, e.newData[key]);
+                    }
+                    fetch(`https://url/to/your/validation/service${params}`)
+                        .then((validationResult) => {
+                            if (validationResult.errorText) {
+                                reject(validationResult.errorText);
+                            } else {
+                                resolve(false);
+                            } 
+                        });
                 } else {
-                    return false;
-                } 
-            } else {
-                return true;
-            }
-        }
-        e.cancel = await isCanceled();
+                    return resolve(true);
+                }
+            });
+        });
+        e.cancel = isCanceled;
     }
 
     function App() {

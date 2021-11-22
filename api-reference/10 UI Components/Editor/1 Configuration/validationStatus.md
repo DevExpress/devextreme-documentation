@@ -29,3 +29,24 @@ The following table illustrates the validation status indicators:
         <td><img src="/images/UiWidgets/text-box-validation-invalid.png" alt="DevExtreme editor validation status: invalid" /></td>
     </tr>
 </table>
+
+When you assign *"invalid"* to **validationStatus**, you can also use the [validationErrors]({basewidgetpath}/Configuration/#validationErrors) array to set an error message as shown below:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        const {widgetName} = $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+        }).dx{WidgetName}("instance");
+
+        function setInvalidStatus(message) {
+            {widgetName}.option({
+                validationStatus: "invalid",
+                validationErrors: [{ message: message }]
+            });
+        }
+    });
+
+---

@@ -1,0 +1,32 @@
+name: DocGen Scheduler
+
+on:
+  schedule: 
+    - cron: '0 1 * * 1-5'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    name: Generate Documentation
+
+    steps:
+        - name: Run actions
+          run: |
+            FILE_NAME="docgen.yml"
+            WORKFLOW_NAME="DocGen"
+
+            WORKFLOW_ID=$(curl https://api.github.com/repos/${{ github.repository }}/actions/workflows | jq .[] | jq -c '.[] | select( .name == "'$WORKFLOW_NAME'" )' | jq .id)
+            MAJOR_REFS=$(curl https://api.github.com/repos/${{ github.repository }}/git/refs | jq .[].ref | grep -oP "(?<=refs\/heads\/)(1|2)\d_(1|2)")
+            for REF in $MAJOR_REFS
+            do
+              STATUS=$(curl -o /dev/null -s -w "%{http_code}\n" https://github.com/${{ github.repository }}/blob/$REF/.github/workflows/$FILE_NAME)
+              if [ "$STATUS" != "404" ]; then
+                echo "Starting $WORKFLOW_NAME for $REF branch"
+                curl \
+                  -X POST \
+                  -H "Accept: application/vnd.github.v3+json" \
+                  -H "Authorization: Bearer ${{ secrets.DXROBOT_PAT }}" \
+                  https://api.github.com/repos/${{ github.repository }}/actions/workflows/$WORKFLOW_ID/dispatches \
+                  -d '{"ref":"'$REF'"}'
+              fi
+            done

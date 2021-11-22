@@ -21,3 +21,6 @@ Without a value, the UI component cannot detect its format. In this case, specif
 This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
 
 [note] If you are going to change the **value** using the API, make sure that it has the same format that you specified in this property.
+
+#####See Also#####
+- [Troubleshooting - Date values are parsed or serialized incorrectly](/Documentation/Guide/Data_Binding/Troubleshooting/#Date_values_are_parsed_or_serialized_incorrectly)

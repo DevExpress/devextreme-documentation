@@ -1,6 +1,6 @@
 ---
 id: events.off(element, eventName, selector)
-module: events
+module: events/index
 export: off
 ---
 ---

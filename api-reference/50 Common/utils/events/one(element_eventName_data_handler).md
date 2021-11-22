@@ -1,6 +1,6 @@
 ---
 id: events.one(element, eventName, data, handler)
-module: events
+module: events/index
 export: one
 ---
 ---

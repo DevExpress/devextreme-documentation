@@ -1,7 +1,7 @@
 ---
 id: utils.cancelAnimationFrame(requestID)
 module: animation/frame
-export: cancel
+export: cancelAnimationFrame
 ---
 ---
 ##### shortDescription

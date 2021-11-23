@@ -150,5 +150,5 @@ If a data field provides values of one data type, but the UI component should ca
 ---
 
 #####See Also#####
-- [Troubleshooting - Date values are parsed or serialized incorrectly](/Documentation/Guide/Data_Binding/Troubleshooting/#Date_values_are_parsed_or_serialized_incorrectly)
+- [Troubleshooting - Date values are parsed or serialized incorrectly](/concepts/70%20Data%20Binding/90%20Troubleshooting/Date%20values%20are%20parsed%20or%20serialized%20incorrectly.md '/Documentation/Guide/Data_Binding/Troubleshooting/#Date_values_are_parsed_or_serialized_incorrectly')
 - [Data Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Data_Columns/')

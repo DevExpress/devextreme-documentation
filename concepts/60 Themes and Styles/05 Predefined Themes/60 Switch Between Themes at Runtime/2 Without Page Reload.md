@@ -20,12 +20,18 @@ You can use this approach only if the themes belong to the same group. For insta
             <!-- ... -->
         </head>
 
-1. Switch to a theme using the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method. It accepts the `data-theme` attribute's value from the previous code. The following example shows how to apply the Generic Contrast theme:
+1. Switch to a theme using the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method. It accepts the `data-theme` attribute's value from the previous code. If you use SVG components, you should also call the [refreshTheme()](/Documentation/ApiReference/Common/Utils/viz/#refreshTheme) method to update their theme. The following example shows how to apply the Generic Contrast theme:
 
         DevExpress.ui.themes.current("generic.contrast");
-        // ===== or when using modules =====
-        import themes from "devextreme/ui/themes";
+        // When using SVG components
+        // DevExpress.viz.refreshTheme();
 
+        // ===== or when using modules =====
+        import { themes } from "devextreme/ui/themes";
         themes.current("generic.contrast");
+
+        // When using SVG components
+        // import { refreshTheme } from "devextreme/viz/themes";
+        // refreshTheme();
 
 #include switch-themes-initialized-note

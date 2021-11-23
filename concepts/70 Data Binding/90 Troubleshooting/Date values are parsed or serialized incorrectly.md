@@ -15,8 +15,8 @@ Date strings in other formats are passed to the Date constructor. There are time
 
 If your date strings conform to ISO 8601, DevExtreme components can automatically detect their format and use it for date serialization. However, the detection does not work if the data source is empty. In this instance, set the **dateSerializationFormat** property to specify which ISO 8601 format should be used. This property is supported by all components that allow users to edit date values:
 
-- [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dateSerializationFormat)
-- [TreeList](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dateSerializationFormat)
-- [Scheduler](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dateSerializationFormat)
-- [Calendar](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#dateSerializationFormat)
-- [DateBox](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat)
+- [DataGrid](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dateSerializationFormat')
+- [TreeList](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dateSerializationFormat')
+- [Scheduler](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dateSerializationFormat')
+- [Calendar](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#dateSerializationFormat')
+- [DateBox](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat')

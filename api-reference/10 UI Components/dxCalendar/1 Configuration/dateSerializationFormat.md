@@ -23,4 +23,4 @@ This property applies only if the **forceIsoDateParsing** field is set to **true
 [note] If you are going to change the **value** using the API, make sure that it has the same format that you specified in this property.
 
 #####See Also#####
-- [Troubleshooting - Date values are parsed or serialized incorrectly](/Documentation/Guide/Data_Binding/Troubleshooting/#Date_values_are_parsed_or_serialized_incorrectly)
+- [Troubleshooting - Date values are parsed or serialized incorrectly](/concepts/70%20Data%20Binding/90%20Troubleshooting/Date%20values%20are%20parsed%20or%20serialized%20incorrectly.md '/Documentation/Guide/Data_Binding/Troubleshooting/#Date_values_are_parsed_or_serialized_incorrectly')

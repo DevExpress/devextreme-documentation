@@ -4,18 +4,22 @@ type: function(gridState)
 ---
 ---
 ##### shortDescription
-Specifies a function that is executed on state saving. Applies only if the [type](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/type.md '{basewidgetpath}/Configuration/stateStoring/#type') is *"custom"*.
+Specifies a function that is executed on state change. Applies only if the [type](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/type.md '{basewidgetpath}/Configuration/stateStoring/#type') is *"custom"*.
 
 ##### param(gridState): Object
 The current UI component state.
 
 ---
-Use the **customSave** and [customLoad](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring/customLoad.md '{basewidgetpath}/Configuration/stateStoring/#customLoad') functions to manually implement state storing: in **customSave**, save the state to a custom storage; in **customLoad**, load it. You can also adjust the state in both functions.
- 
-In the following code, the state is saved and loaded from a remote storage:
+Use the **customSave** and **customLoad** functions to manually implement state storing: in **customSave**, save the state to a storage; in **customLoad**, load it. You can also modify the state in both functions.
+
+#include common-githubbutton with {
+    url: "https://github.com/DevExpress-Examples/devextreme-datagrid-modify-persisted-state/"
+}
+
+If you need to save and load the state from a remote storage, use the following code:
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     function sendStorageRequest (storageKey, dataType, method, data) {
@@ -27,6 +31,7 @@ In the following code, the state is saved and loaded from a remote storage:
                 "Content-Type" : "text/html"
             },
             method: method,
+            data: data ? JSON.stringify(data) : null,
             dataType: dataType,
             success: function (data) {
                 deferred.resolve(data);
@@ -35,9 +40,6 @@ In the following code, the state is saved and loaded from a remote storage:
                 deferred.reject();
             }
         };
-        if (data) {
-            storageRequestSettings.data = JSON.stringify(data);
-        }
         $.ajax(storageRequestSettings);
         return deferred.promise();
     }
@@ -57,7 +59,7 @@ In the following code, the state is saved and loaded from a remote storage:
         });
     })
 
-#####Angular
+##### Angular
 
     <!--TypeScript-->
     import { HttpClient, HttpClientModule, HttpHeaders, HttpRequest } from "@angular/common/http";
@@ -70,16 +72,14 @@ In the following code, the state is saved and loaded from a remote storage:
 
         sendStorageRequest = (storageKey, dataType, method, data) => {
             let url  = "https://url/to/your/storage/" + JSON.stringify(storageKey);
-            let req: HttpRequest = new HttpRequest(method, url, {
+            let req: HttpRequest<any> = new HttpRequest(method, url, {
                 headers: new HttpHeaders({
                     "Accept": "text/html",
                     "Content-Type": "text/html"
                 }),
-                responseType: dataType
+                responseType: dataType,
+                body: data ? JSON.stringify(data) : null
             });
-            if (data) {
-                req.body = JSON.stringify(data);
-            }
             return httpClient.request(req)
                 .toPromise();
         }
@@ -140,11 +140,9 @@ In the following code, the state is saved and loaded from a remote storage:
             headers: {
                 "Accept": "text/html",
                 "Content-Type": "text/html"
-            }
+            },
+            body: data ? JSON.stringify(data) : null
         };
-        if (data) {
-            requestOptions.body = JSON.stringify(data);
-        }
         return fetch(url, requestOptions)
                 .then(response => response.json())
                 .catch(() => { throw 'Data Loading Error'; });
@@ -185,11 +183,9 @@ In the following code, the state is saved and loaded from a remote storage:
             headers: {
                 "Accept": "text/html",
                 "Content-Type": "text/html"
-            }
+            },
+            body: data ? JSON.stringify(data) : null
         };
-        if (data) {
-            requestOptions.body = JSON.stringify(data);
-        }
         return fetch(url, requestOptions)
                 .then(response => response.json())
                 .catch(() => { throw 'Data Loading Error'; });
@@ -217,3 +213,6 @@ In the following code, the state is saved and loaded from a remote storage:
     }
 
 ---
+
+#####See Also#####
+- [state(state)]({basewidgetpath}/Methods/#statestate)

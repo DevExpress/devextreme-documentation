@@ -6,6 +6,7 @@ State storing saves the following properties:
     <tr>
         <td>
             <ul>
+                <li><a href="{basewidgetpath}/Configuration/#expandedRowKeys">expandedRowKeys</a><sup>1</sup></li>
                 <li><a href="{basewidgetpath}/Configuration/#focusedRowKey">focusedRowKey</a></li>
                 <li><a href="{basewidgetpath}/Configuration/#filterValue">filterValue</a></li>
                 <li><a href="{basewidgetpath}/Configuration/#selectedRowKeys">selectedRowKeys</a></li>
@@ -26,11 +27,11 @@ State storing saves the following properties:
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#fixedPosition">fixedPosition</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#name">name</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#selectedFilterOperation">selectedFilterOperation</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortIndex">sortIndex</a></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortIndex">sortIndex</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortOrder">sortOrder</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a> (only if the <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/">column chooser</a> is <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#enabled">enabled</a>)</li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visibleIndex">visibleIndex</a></li>
@@ -38,9 +39,13 @@ State storing saves the following properties:
             </ul>
         </td>
     </tr>
-</table>  
+</table>
 
-[note] The expanded row keys are not saved if the [autoExpandAll](/api-reference/10%20UI%20Widgets/dxTreeList/1%20Configuration/autoExpandAll.md '{basewidgetpath}/Configuration/#autoExpandAll') is set to **true**.
+<div class="footnotes">
+    <ol>
+        <li><b>expandedRowKeys</b> are not saved if <a href="{basewidgetpath}/Configuration/#autoExpandAll" target="_blank">autoExpandAll</a> is <b>true</b>.</li>
+    </ol>
+</div>
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"

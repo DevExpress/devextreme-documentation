@@ -14,9 +14,9 @@ The current item's data object.
 A unique item identifier.
 
 ---
-When you do not set this property, the **value** contains a data item from [dataSource]({basewidgetpath}/Configuration/#dataSource) as it is. 
+When [dataSource]({basewidgetpath}/Configuration/#dataSource) contains objects, we encourage you to define **valueExpr** to correctly identify data items. Otherwise, the component uses referential equality to compare objects and may result in unexpected behavior.
 
-When you set this property, it should have the same value as the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') in the store.
+If you use a store, the **valueExpr** property should have the same value as the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') in the store.
 
 #include uiwidgets-ref-valueExpr-functionnote
 

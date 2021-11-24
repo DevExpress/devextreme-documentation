@@ -1,6 +1,6 @@
 ---
 id: events.triggerHandler(element, event, extraParameters)
-module: events
+module: events/index
 export: triggerHandler
 hidden: 
 ---

@@ -1,7 +1,7 @@
 ---
 id: globalConfig
 module: core/config
-export: default
+export: globalConfig
 type: Object
 ---
 ---

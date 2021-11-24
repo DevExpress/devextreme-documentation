@@ -9,4 +9,4 @@ The minimum number of characters that must be entered into the text box to begin
 
 ---
 #####See Also#####
-- [showDataBeforeSearch]({basewidgetpath}/Configuration/#showDataBeforeSearch)
+- [showDataBeforeSearch](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/showDataBeforeSearch.md '{basewidgetpath}/Configuration/#showDataBeforeSearch')

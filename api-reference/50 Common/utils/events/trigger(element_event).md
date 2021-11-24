@@ -1,6 +1,6 @@
 ---
 id: events.trigger(element, event)
-module: events
+module: events/index
 export: trigger
 ---
 ---

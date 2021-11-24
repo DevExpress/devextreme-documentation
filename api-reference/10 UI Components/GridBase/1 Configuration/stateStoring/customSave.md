@@ -215,4 +215,4 @@ If you need to save and load the state from a remote storage, use the following 
 ---
 
 #####See Also#####
-- [state(state)]({basewidgetpath}/Methods/#statestate)
+- [state(state)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/state(state).md '{basewidgetpath}/Methods/#statestate')

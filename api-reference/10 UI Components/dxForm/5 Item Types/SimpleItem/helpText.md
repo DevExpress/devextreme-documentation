@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the help text displayed for the current form item.
+Specifies the help text displayed for the current form item. if the [labelMode](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/labelMode.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode') has a *"static"* or a *"floating"* value and helpText property is not specified, then the [optionalMark](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/optionalMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#optionalMark') will be rendered as helpText.
 
 ---
 #include common-demobutton with {

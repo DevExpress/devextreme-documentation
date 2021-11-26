@@ -6,7 +6,7 @@ default: 'outside'
 ---
 ---
 ##### shortDescription
-Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/'). Can be by ovveriden for cpecific editor via labelMode of the [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions'). Not all editors supports floating labels. dxCalendar, dxCheckBox, dxHtmlEditor, dxRadioGroup, dxRangeSlider, dxSlider, dxSwitch dont support it and will show default labels as for outside mode.
+Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/').
 
 ---
 #include texteditor-labelMode with {
@@ -26,3 +26,20 @@ Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/d
         <td><img src="/images/UiWidgets/texteditor-default-label.png" alt="DevExtreme {WidgetName}: Default label mode" /></td>
     </tr>'
 }
+
+This property specifies a display mode for all item labels. If you want to override the mode for an individual label, specify the **labelMode** property within [editorOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions).
+
+[note]
+
+The following [editors](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) do not support the *"static"* and *"floating"* modes and will fall back on the *"outside"* mode:
+
+- *"dxCalendar"*
+- *"dxCheckBox"*
+- *"dxHtmlEditor"*
+- *"dxRadioGroup"*
+- *"dxRangeSlider"*
+- *"dxSlider"*
+- *"dxSwitch"*
+
+[/note]
+

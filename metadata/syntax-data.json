@@ -4948,6 +4948,9 @@
     "dxContextMenuOptions.dataSource": {
       "vue": "data-source"
     },
+    "dxContextMenuOptions.hideOnOutsideClick": {
+      "vue": "hide-on-outside-click"
+    },
     "dxContextMenuOptions.itemHoldAction": {
       "vue": "item-hold-action"
     },
@@ -8951,6 +8954,9 @@
     "dxOverlayOptions.elementAttr": {
       "vue": "element-attr"
     },
+    "dxOverlayOptions.hideOnOutsideClick": {
+      "vue": "hide-on-outside-click"
+    },
     "dxOverlayOptions.hideOnParentScroll": {
       "vue": "hide-on-parent-scroll"
     },
@@ -10283,6 +10289,9 @@
       "angular": "dxo-hide-event",
       "react": "HideEvent",
       "vue": "DxHideEvent"
+    },
+    "dxPopoverOptions.hideOnOutsideClick": {
+      "vue": "hide-on-outside-click"
     },
     "dxPopoverOptions.hideOnParentScroll": {
       "vue": "hide-on-parent-scroll"
@@ -12226,6 +12235,9 @@
     },
     "dxToastOptions.dragOutsideBoundary": {
       "vue": "drag-outside-boundary"
+    },
+    "dxToastOptions.hideOnOutsideClick": {
+      "vue": "hide-on-outside-click"
     },
     "dxToastOptions.maxWidth": {
       "vue": "max-width"

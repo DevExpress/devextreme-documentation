@@ -2,6 +2,7 @@
 id: dxOverlay.Options.closeOnOutsideClick
 type: Boolean | function(event)
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

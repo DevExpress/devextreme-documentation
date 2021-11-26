@@ -1,6 +1,6 @@
 {
-  "ScriptsRevision": "872c729c9de2b861d35db80a9354541b76db6d09",
-  "ToolsVersion": "7.4.1",
+  "ScriptsRevision": "b7e4a3ffda760189af5fdbfa35a69174f38a1c8f",
+  "ToolsVersion": "7.4.2",
   "Modules": {
     "animation/fx": {
       "AnimationConfig": {},

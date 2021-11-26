@@ -16,6 +16,10 @@
 <td><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxCircularGauge/Configuration/export/#proxyUrl">proxyUrl</a></td>
 </tr>
 <tr>
+<td>ContextMenu</td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxContextMenu/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
+</tr>
+<tr>
 <td>DataGrid</td>
 <td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/#customizeExportData">customizeExportData</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/export/#customizeExcelCell">customizeExcelCell</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelFilterEnabled">excelFilterEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/export/#excelWrapTextEnabled">excelWrapTextEnabled</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/export/#fileName">fileName</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/export/#ignoreExcelErrors">ignoreExcelErrors</a><br><b>export.</b><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/export/#proxyUrl">proxyUrl</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/#onExported">onExported</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/#onFileSaving">onFileSaving</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing">onToolbarPreparing</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxDataGrid/Methods/#exportToExcel(selectionOnly)">exportToExcel(selectionOnly)</a></td>
 </tr>
@@ -41,7 +45,7 @@
 </tr>
 <tr>
 <td>LoadPanel</td>
-<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxLoadPanel/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxLoadPanel/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
 <td>Lookup</td>
@@ -65,11 +69,11 @@
 </tr>
 <tr>
 <td>Popover</td>
-<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxPopover/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxPopover/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxPopover/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
 <td>Popup</td>
-<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxPopup/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxPopup/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
 <td>RangeSelector</td>
@@ -93,7 +97,7 @@
 </tr>
 <tr>
 <td>Toast</td>
-<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxToast/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxToast/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
 <td>Toolbar</td>
@@ -101,7 +105,7 @@
 </tr>
 <tr>
 <td>Tooltip</td>
-<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxTooltip/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxTooltip/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
 <td>TreeList</td>

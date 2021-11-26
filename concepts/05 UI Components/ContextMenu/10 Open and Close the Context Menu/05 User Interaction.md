@@ -107,7 +107,7 @@ By default, the ContextMenu appears when a user right-clicks the [target element
 
 ---
 
-The ContextMenu is closed when a user clicks anywhere outside it. You can redefine this behavior or turn it off completely using the [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#closeOnOutsideClick') property. For example, the ContextMenu in the following code will not be closed until its own target element is clicked.
+The ContextMenu is hidden when a user clicks anywhere outside it. You can redefine this behavior or turn it off completely using the [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#hideOnOutsideClick') property. For example, the ContextMenu in the following code will not be hidden until its own target element is clicked.
 
 ---
 
@@ -124,7 +124,7 @@ The ContextMenu is closed when a user clicks anywhere outside it. You can redefi
         $("#contextMenuContainer").dxContextMenu({
             items: contextMenuItems,
             target: "#someElement",
-            closeOnOutsideClick: function(e){
+            hideOnOutsideClick: function(e){
                 return e.target === $("#someElement").get()[0];
             }
         });
@@ -136,7 +136,7 @@ The ContextMenu is closed when a user clicks anywhere outside it. You can redefi
     <dx-context-menu
         [items]="contextMenuItems"
         target="#someElement"
-        (closeOnOutsideClick)="closeOnOutsideClick($event)">
+        (hideOnOutsideClick)="hideOnOutsideClick($event)">
     </dx-context-menu>
 
     <!--TypeScript-->
@@ -148,7 +148,7 @@ The ContextMenu is closed when a user clicks anywhere outside it. You can redefi
             { text: 'Share', icon: 'message' },
             { text: 'Download', icon: 'download' }
         ];
-        closeOnOutsideClick(e) {
+        hideOnOutsideClick(e) {
             return e.target === document.getElementById('someElement');
         }
     }
@@ -167,7 +167,7 @@ The ContextMenu is closed when a user clicks anywhere outside it. You can redefi
         <DxContextMenu
             :items="contextMenuItems"
             target="#someElement"
-            :close-on-outside-click="closeOnOutsideClick"
+            :hide-on-outside-click="hideOnOutsideClick"
         />
     </template>
     <script>
@@ -189,7 +189,7 @@ The ContextMenu is closed when a user clicks anywhere outside it. You can redefi
             };
         },
         methods: {
-            closeOnOutsideClick(e) {
+            hideOnOutsideClick(e) {
                 return e.target === document.getElementById('someElement');
             }
         }
@@ -216,12 +216,12 @@ The ContextMenu is closed when a user clicks anywhere outside it. You can redefi
                 <ContextMenu
                     items={contextMenuItems}
                     target="#someElement"
-                    closeOnOutsideClick={this.closeOnOutsideClick}
+                    hideOnOutsideClick={this.hideOnOutsideClick}
                 />
             );
         }
 
-        closeOnOutsideClick(e) {
+        hideOnOutsideClick(e) {
             return e.target === document.getElementById('someElement');
         }
     }

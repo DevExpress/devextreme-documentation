@@ -8,7 +8,7 @@ To show or hide the LoadPanel programmatically, call the [show()](/api-reference
     <!--JavaScript-->
     $(function() {
         $("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true
+            hideOnOutsideClick: true
         });
         $("#buttonContainer").dxButton({
             text: "Show the Load Panel", 
@@ -25,7 +25,7 @@ To show or hide the LoadPanel programmatically, call the [show()](/api-reference
     <!--Razor C#-->
     @(Html.DevExtreme().LoadPanel()
         .ID("loadPanel")
-        .CloseOnOutsideClick(true)
+        .HideOnOutsideClick(true)
     )
 
     @(Html.DevExtreme().Button()
@@ -43,7 +43,7 @@ To show or hide the LoadPanel programmatically, call the [show()](/api-reference
     <!--Razor VB-->
     @(Html.DevExtreme().LoadPanel() _
         .ID("loadPanel") _
-        .CloseOnOutsideClick(True)
+        .HideOnOutsideClick(True)
     )
 
     @(Html.DevExtreme().Button() _
@@ -69,7 +69,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible">
     </dx-load-panel>
     <dx-button
@@ -97,7 +97,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
             />
             <DxButton
@@ -167,7 +167,7 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}
                     />
@@ -243,7 +243,7 @@ To execute certain commands before or after the LoadPanel is shown/hidden, handl
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 @shown="hideLoadPanel"
             />
@@ -321,7 +321,7 @@ To execute certain commands before or after the LoadPanel is shown/hidden, handl
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
                         onShown={this.hideLoadPanel}
                     />

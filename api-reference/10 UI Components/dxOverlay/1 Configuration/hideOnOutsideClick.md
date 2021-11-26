@@ -5,13 +5,22 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ##### param(event): event
-<!-- Description goes here -->
+<!-- %param(event)% -->
 
 ##### return: Boolean
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+The **hideOnOutsideClick** function is called when a user clicks the UI component or outside it.
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/",
+    name: "Popup"
+}
+
+<!-- import * from 'api-reference\10 UI Components\dxContextMenu\1 Configuration\hideOnOutsideClick.md' -->

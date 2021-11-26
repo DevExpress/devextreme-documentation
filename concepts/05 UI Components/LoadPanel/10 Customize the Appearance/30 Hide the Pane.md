@@ -9,7 +9,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
 
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             showPane: false
         });
         
@@ -25,7 +25,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible"
         [showPane]="false">
     </dx-load-panel>
@@ -54,7 +54,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 :show-pane="false"
             />
@@ -125,7 +125,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         showPane={false}
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}

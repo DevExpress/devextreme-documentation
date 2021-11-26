@@ -10,7 +10,7 @@ Because the Toast is supposed to notify a user when something happens, it cannot
         <td>Hides the <b>Toast</b> when a user clicks/presses it.</td>
     </tr>
     <tr>
-        <td><a href="/Documentation/ApiReference/UI_Components/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxToast/Configuration/#hideOnOutsideClick">hideOnOutsideClick</a></td>
         <td>Hides the <b>Toast</b> when a user clicks/presses outside of it.</td>
     </tr>
     <tr>

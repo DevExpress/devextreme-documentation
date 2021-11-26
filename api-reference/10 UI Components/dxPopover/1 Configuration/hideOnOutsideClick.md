@@ -5,13 +5,16 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to hide the UI component if a user clicks outside the popover window or outside the target element.
 
 ##### param(event): event
-<!-- Description goes here -->
+<!-- %param(event)% -->
 
 ##### return: Boolean
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\hideOnOutsideClick.md' -->

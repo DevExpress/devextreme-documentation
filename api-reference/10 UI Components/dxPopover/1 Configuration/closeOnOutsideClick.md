@@ -16,6 +16,4 @@ Specifies whether to close the UI component if a user clicks outside the popover
 
 ---
 
-<!-- %fullDescription% -->
-
 <!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\closeOnOutsideClick.md' -->

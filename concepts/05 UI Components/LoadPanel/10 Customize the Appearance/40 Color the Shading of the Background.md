@@ -5,7 +5,7 @@ When the LoadPanel is shown, the area beneath it can be shaded. The shading colo
 
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             shadingColor: "rgba(0, 0, 0, 0.2)"
         });
         
@@ -21,7 +21,7 @@ When the LoadPanel is shown, the area beneath it can be shaded. The shading colo
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible"
         shadingColor="rgba(0, 0, 0, 0.2)">
     </dx-load-panel>
@@ -50,7 +50,7 @@ When the LoadPanel is shown, the area beneath it can be shaded. The shading colo
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 shading-color="rgba(0, 0, 0, 0.2)"
             />
@@ -121,7 +121,7 @@ When the LoadPanel is shown, the area beneath it can be shaded. The shading colo
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         shadingColor="rgba(0, 0, 0, 0.2)"
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}

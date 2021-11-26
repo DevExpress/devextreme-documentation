@@ -1,4 +1,4 @@
-The Popup can also be hidden when a user clicks outside it. To control this behavior of the Popup, use the [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick') property.
+The Popup can also be hidden when a user clicks outside it. To control this behavior of the Popup, use the [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#hideOnOutsideClick') property.
 
 ---
 ##### jQuery
@@ -8,7 +8,7 @@ The Popup can also be hidden when a user clicks outside it. To control this beha
         $("#popupContainer").dxPopup({
             title: "Popup Title",
             visible: true,
-            closeOnOutsideClick: true
+            hideOnOutsideClick: true
         });
     });
 
@@ -18,7 +18,7 @@ The Popup can also be hidden when a user clicks outside it. To control this beha
     <dx-popup
         title="Popup Title"
         [(visible)]="isPopupVisible"
-        [closeOnOutsideClick]="true">
+        [hideOnOutsideClick]="true">
     </dx-popup>
 
     <!--TypeScript-->
@@ -40,7 +40,7 @@ The Popup can also be hidden when a user clicks outside it. To control this beha
     <template>
         <DxPopup
             v-model:visible="isPopupVisible"
-            :close-on-outside-click="true"
+            :hide-on-outside-click="true"
             title="Popup Title"
         />
     </template>
@@ -90,7 +90,7 @@ The Popup can also be hidden when a user clicks outside it. To control this beha
             return (
                 <Popup
                     visible={this.state.isPopupVisible}
-                    closeOnOutsideClick={true}
+                    hideOnOutsideClick={true}
                     title="Popup Title"
                 />
             );

@@ -2,7 +2,7 @@
 id: dxContextMenu.Options.closeOnOutsideClick
 type: Boolean | function(event)
 default: true
-deprecated: 
+dep: dxContextMenu.Options.hideOnOutsideClick
 ---
 ---
 ##### shortDescription

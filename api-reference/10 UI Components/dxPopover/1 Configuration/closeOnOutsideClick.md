@@ -2,7 +2,7 @@
 id: dxPopover.Options.closeOnOutsideClick
 type: Boolean | function(event)
 default: true
-deprecated: 
+dep: dxPopover.Options.hideOnOutsideClick
 ---
 ---
 ##### shortDescription

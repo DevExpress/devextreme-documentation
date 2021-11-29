@@ -2,7 +2,7 @@
 id: dxToast.Options.closeOnOutsideClick
 type: Boolean | function(event)
 default: true (Android)
-deprecated: 
+dep: dxToast.Options.hideOnOutsideClick
 ---
 ---
 ##### param(event): event

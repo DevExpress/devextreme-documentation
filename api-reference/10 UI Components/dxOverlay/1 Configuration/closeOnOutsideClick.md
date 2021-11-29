@@ -2,7 +2,7 @@
 id: dxOverlay.Options.closeOnOutsideClick
 type: Boolean | function(event)
 default: false
-deprecated: 
+dep: dxOverlay.Options.hideOnOutsideClick
 ---
 ---
 ##### shortDescription

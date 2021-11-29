@@ -5,7 +5,7 @@ To change the text displayed by the LoadPanel, use the [message](/api-reference/
 
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             message: "Please, wait..."
         });
         
@@ -21,7 +21,7 @@ To change the text displayed by the LoadPanel, use the [message](/api-reference/
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible"
         message="Please, wait...">
     </dx-load-panel>
@@ -50,7 +50,7 @@ To change the text displayed by the LoadPanel, use the [message](/api-reference/
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 message="Please, wait..."
             />
@@ -121,7 +121,7 @@ To change the text displayed by the LoadPanel, use the [message](/api-reference/
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         message="Please, wait..."
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}

@@ -23,7 +23,7 @@ $(function () {
             return content;
         },
         visible: true,
-        closeOnOutsideClick: true,
+        hideOnOutsideClick: true,
         showTitle: true,
         title: "Information",
         width: 500,

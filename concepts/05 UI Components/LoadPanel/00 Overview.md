@@ -4,7 +4,7 @@ The LoadPanel is an overlay UI component notifying the viewer that loading is in
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"
 }
 
-The following code adds to your page a simple LoadPanel and a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') that invokes it. The [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick') property set to **true** instructs the LoadPanel to hide once a user clicks outside it.
+The following code adds to your page a simple LoadPanel and a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') that invokes it. The [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#hideOnOutsideClick') property set to **true** instructs the LoadPanel to hide once a user clicks outside it.
 
 ---
 ##### jQuery
@@ -14,7 +14,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
 
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true
+            hideOnOutsideClick: true
         });
         
         $("#buttonContainer").dxButton({
@@ -29,7 +29,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible">
     </dx-load-panel>
     <dx-button
@@ -57,7 +57,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
             />
             <DxButton
@@ -127,7 +127,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}
                     />

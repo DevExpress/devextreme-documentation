@@ -4,14 +4,15 @@ type: Boolean | function(event)
 default: true (Android)
 ---
 ---
-##### shortDescription
-<!-- Description goes here -->
 
 ##### param(event): event
-<!-- Description goes here -->
+<!-- %param(event)% -->
 
 ##### return: Boolean
-<!-- Description goes here -->
+<!-- %return% -->
 
 ---
-<!-- Description goes here -->
+
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\hideOnOutsideClick.md' -->

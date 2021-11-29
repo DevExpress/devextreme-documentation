@@ -120,7 +120,7 @@ To specify when the Tooltip should be shown and hidden, set the [showEvent](/api
 
 ---
 
-The Tooltip can also be hidden when a user clicks outside it. To control this behavior of the Tooltip, use the [closeOnOutsideClick](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/closeOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick') property.
+The Tooltip can also be hidden when a user clicks outside it. To control this behavior of the Tooltip, use the [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#hideOnOutsideClick') property.
 
 ---
 ##### jQuery 
@@ -130,7 +130,7 @@ The Tooltip can also be hidden when a user clicks outside it. To control this be
             target: "#image",
             showEvent: 'dxhoverstart',
             hideEvent: 'dxhoverend',
-            closeOnOutsideClick: false,
+            hideOnOutsideClick: false,
             contentTemplate: function (contentElement) {
                 contentElement.append(
                     $("<p />").text("Tooltip content")
@@ -150,7 +150,7 @@ The Tooltip can also be hidden when a user clicks outside it. To control this be
         target="#image"
         showEvent="dxhoverstart"
         hideEvent="dxhoverend"
-        [closeOnOutsideClick]="false">
+        [hideOnOutsideClick]="false">
         <div *dxTemplate="let data of 'content'">
             <p>Tooltip content</p>
         </div>
@@ -179,7 +179,7 @@ The Tooltip can also be hidden when a user clicks outside it. To control this be
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
-                :close-on-outside-click="false">
+                :hide-on-outside-click="false">
                 <template>
                     <p>Tooltip content</p>
                 </template>
@@ -222,7 +222,7 @@ The Tooltip can also be hidden when a user clicks outside it. To control this be
                         showEvent="dxhoverstart"
                         hideEvent="dxhoverend"
                         contentRender={renderContent}
-                        closeOnOutsideClick={false}
+                        hideOnOutsideClick={false}
                     />
                 </div>
             );
@@ -241,7 +241,7 @@ The Tooltip can also be hidden when a user clicks outside it. To control this be
         .ContentTemplate(@<text>
             <p>Tooltip content</p>
         </text>)
-        .CloseOnOutsideClick(false)
+        .HideOnOutsideClick(false)
     )
     <img id="image" src="https://url/to/an/image" />
 

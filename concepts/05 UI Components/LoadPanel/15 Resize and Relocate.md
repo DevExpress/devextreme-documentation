@@ -5,7 +5,7 @@ Specify the **height** and **width** properties to change the LoadPanel's size:
 
     <!--JavaScript-->$(function() {
         $("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             height: 300,
             width: 500
         });
@@ -22,7 +22,7 @@ Specify the **height** and **width** properties to change the LoadPanel's size:
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible"
         [height]="300"
         [width]="500">
@@ -52,7 +52,7 @@ Specify the **height** and **width** properties to change the LoadPanel's size:
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 :height="300"
                 :width="500"
@@ -124,7 +124,7 @@ Specify the **height** and **width** properties to change the LoadPanel's size:
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}
                         height={300}
@@ -150,7 +150,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
 
     <!--JavaScript-->$(function() {
         $("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             container: "#container",
             position: { my: "left", at: "left", of: "#targetElement" }
         });  
@@ -167,7 +167,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         container="#container"
         [(visible)]="isLoadPanelVisible">
         <dxo-position
@@ -201,7 +201,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 container="#container">
                 <DxPosition
@@ -276,7 +276,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         visible={this.state.isLoadPanelVisible}
                         inHidden={this.handleHide}
                         container="#container">

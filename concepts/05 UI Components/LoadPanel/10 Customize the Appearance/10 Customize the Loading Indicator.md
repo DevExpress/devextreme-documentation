@@ -5,7 +5,7 @@ If you need to use a 3rd-party loading indicator inside the LoadPanel, assign it
 
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             indicatorSrc: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg" 
         });
         
@@ -21,7 +21,7 @@ If you need to use a 3rd-party loading indicator inside the LoadPanel, assign it
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible"
         [indicatorSrc]="indicatorUrl">
     </dx-load-panel>
@@ -51,7 +51,7 @@ If you need to use a 3rd-party loading indicator inside the LoadPanel, assign it
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 :indicator-src="indicatorUrl"
             />
@@ -125,7 +125,7 @@ If you need to use a 3rd-party loading indicator inside the LoadPanel, assign it
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         indicatorSrc={indicatorUrl}
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}
@@ -150,7 +150,7 @@ In case you do not need any loading indicator to be shown at all, assign **false
 
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
-            closeOnOutsideClick: true,
+            hideOnOutsideClick: true,
             showIndicator: false
         });
         
@@ -166,7 +166,7 @@ In case you do not need any loading indicator to be shown at all, assign **false
 
     <!--HTML-->
     <dx-load-panel
-        [closeOnOutsideClick]="true"
+        [hideOnOutsideClick]="true"
         [(visible)]="isLoadPanelVisible"
         [showIndicator]="false">
     </dx-load-panel>
@@ -195,7 +195,7 @@ In case you do not need any loading indicator to be shown at all, assign **false
     <template>
         <div>
             <DxLoadPanel
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 v-model:visible="isLoadPanelVisible"
                 :show-indicator="false"
             />
@@ -266,7 +266,7 @@ In case you do not need any loading indicator to be shown at all, assign **false
             return (
                 <div>
                     <LoadPanel
-                        closeOnOutsideClick={true}
+                        hideOnOutsideClick={true}
                         showIndicator={false}
                         visible={this.state.isLoadPanelVisible}
                         onHidden={this.handleHide}

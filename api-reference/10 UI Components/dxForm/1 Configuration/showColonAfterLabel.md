@@ -5,7 +5,7 @@ default: true, false (Material)
 ---
 ---
 ##### shortDescription
-Specifies whether or not a colon is displayed at the end of form labels.
+Specifies whether a colon is displayed at the end of form labels. Applies only to labels outside their editors (see [labelMode](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode)).
 
 ---
 #include common-demobutton with {

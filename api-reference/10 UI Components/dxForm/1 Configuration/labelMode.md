@@ -31,7 +31,7 @@ This property specifies a display mode for all item labels. If you want to overr
 
 [note]
 
-The following [editors](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) do not support the *"static"* and *"floating"* modes and will fall back on the *"outside"* mode:
+The following [editors](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) do not support *"static"* and *"floating"* modes and will fall back on the *"outside"* mode:
 
 - *"dxCalendar"*
 - *"dxCheckBox"*

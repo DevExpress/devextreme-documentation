@@ -34,7 +34,7 @@ A Store can be specified implicitly. Two possibilities are described above ([Fro
 
 - Pass a Store configuration object. Besides the required Store configuration properties, this object should contain the **type** property that specifies which Store object will be created within the DataSource. 
 
-        <!--JavaScript-->var dataSource = new DevExpress.data.DataSource(
+        <!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
             store: {
                 type: "array",
                 data: array

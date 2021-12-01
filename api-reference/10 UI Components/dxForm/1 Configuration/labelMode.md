@@ -27,11 +27,11 @@ Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/d
     </tr>'
 }
 
-This property specifies a display mode for all item labels. If you want to override the mode for an individual label, specify the **labelMode** property within [editorOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions).
+This property specifies a display mode for all item labels. If you want to override the mode for an individual label, specify the **labelMode** property within [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions').
 
 [note]
 
-The following [editors](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) do not support *"static"* and *"floating"* modes and will fall back on the *"outside"* mode:
+The following [editors](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') do not support *"static"* and *"floating"* modes and will fall back on the *"outside"* mode:
 
 - *"dxCalendar"*
 - *"dxCheckBox"*

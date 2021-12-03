@@ -11,7 +11,7 @@ Use the [location](/api-reference/10%20UI%20Components/dxDiagram/1%20Configurati
 - **after**  
  Places the command after the central element(s).
 
-The Diagram UI component displays commands with identical location in the order in which you listed them. When the main toolbar cannot accommodate all commands, the component places excess commands in the overflow menu.
+The Diagram UI component displays commands with the same **location** property value in the order in which you listed them. When the main toolbar cannot accommodate all commands, the component places excess commands in the overflow menu.
 
 The example below demonstrates how to customize the main toolbar:
 

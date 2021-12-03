@@ -8402,15 +8402,6 @@
     "dxLoadPanelOptions.contentTemplate": {
       "vue": "content-template"
     },
-    "dxLoadPanelOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
-    },
-    "dxLoadPanelOptions.dragEnabled": {
-      "vue": "drag-enabled"
-    },
-    "dxLoadPanelOptions.dragOutsideBoundary": {
-      "vue": "drag-outside-boundary"
-    },
     "dxLoadPanelOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -8427,9 +8418,6 @@
       "angular": "dxo-position",
       "react": "Position",
       "vue": "DxPosition"
-    },
-    "dxLoadPanelOptions.resizeEnabled": {
-      "vue": "resize-enabled"
     },
     "dxLoadPanelOptions.shadingColor": {
       "vue": "shading-color"
@@ -8944,12 +8932,6 @@
     },
     "dxOverlayOptions.deferRendering": {
       "vue": "defer-rendering"
-    },
-    "dxOverlayOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
-    },
-    "dxOverlayOptions.dragOutsideBoundary": {
-      "vue": "drag-outside-boundary"
     },
     "dxOverlayOptions.elementAttr": {
       "vue": "element-attr"
@@ -10350,8 +10332,14 @@
       "react": "Show",
       "vue": "DxShow"
     },
+    "dxPopupOptions.dragAndResizeArea": {
+      "vue": "drag-and-resize-area"
+    },
     "dxPopupOptions.dragEnabled": {
       "vue": "drag-enabled"
+    },
+    "dxPopupOptions.dragOutsideBoundary": {
+      "vue": "drag-outside-boundary"
     },
     "dxPopupOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
@@ -12227,15 +12215,6 @@
     "dxToastOptions.displayTime": {
       "vue": "display-time"
     },
-    "dxToastOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
-    },
-    "dxToastOptions.dragEnabled": {
-      "vue": "drag-enabled"
-    },
-    "dxToastOptions.dragOutsideBoundary": {
-      "vue": "drag-outside-boundary"
-    },
     "dxToastOptions.hideOnOutsideClick": {
       "vue": "hide-on-outside-click"
     },
@@ -12249,9 +12228,6 @@
       "angular": "dxo-position",
       "react": "Position",
       "vue": "DxPosition"
-    },
-    "dxToastOptions.resizeEnabled": {
-      "vue": "resize-enabled"
     },
     "dxToolbar": {
       "angular": "dx-toolbar",

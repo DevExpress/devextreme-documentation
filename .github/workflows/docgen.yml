@@ -36,7 +36,7 @@ jobs:
         - name: NPM - devextreme
           working-directory: devextreme
           run: |
-            npm ci
+            npm i
             npm update devextreme-internal-tools
 
         - name: NPM - devextreme-documentation

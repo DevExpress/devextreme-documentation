@@ -1572,7 +1572,9 @@
       "vue": "viz-word-wrap"
     },
     "eventObject": {
-      "vue": "event-object"
+      "angular": "dxo-event-object",
+      "react": "EventObject",
+      "vue": "DxEventObject"
     },
     "eventObject.currentTarget": {
       "vue": "current-target"

@@ -71,6 +71,11 @@ jobs:
         - name: Update links
           working-directory: documentation
           run: npm run update-links
+#Git
+        - name: Configure Git
+          run: |
+            git config --global user.email "${{ secrets.DXROBOT_EMAIL }}"
+            git config --global user.name "DX Robot"
 
 #Tools
         - name: Update Tools files
@@ -86,11 +91,6 @@ jobs:
             git push
 
 #PR
-        - name: Configure Git
-          run: |
-            git config --global user.email "DXGitHubRobot@devexpress.com"
-            git config --global user.name "DX Robot"
-
         - name: Publish changes
           working-directory: documentation
           run: |

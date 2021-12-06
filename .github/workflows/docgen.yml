@@ -17,6 +17,15 @@ jobs:
             ssh-key: ${{ secrets.DXROBOT_SK }}
             ref: ${{ github.ref_name }}
 
+        - name: Checkout Tools
+          uses: actions/checkout@v2
+          with:
+            path: tools
+            repository: devexpress/devextreme-hgmirror-tools
+            token: ${{ secrets.DXROBOT_PAT }}
+            ssh-key: ${{ secrets.DXROBOT_SK }}
+            ref: ${{ github.ref_name }}
+
         - name: Checkout DevExtreme
           uses: actions/checkout@v2
           with:
@@ -53,7 +62,7 @@ jobs:
 
         - name: Generate Modules metadata
           working-directory: documentation
-          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json)
+          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json) --js-scripts ../devextreme/js
 
         - name: Generate ContentMap
           working-directory: documentation
@@ -62,6 +71,19 @@ jobs:
         - name: Update links
           working-directory: documentation
           run: npm run update-links
+
+#Tools
+        - name: Update Tools files
+          run: |
+            cp -f ./artifacts/Declarations.json ./tools/Declarations.json
+            cp -f ./artifacts/Descriptions.json ./tools/Descriptions.json
+
+        - name: Commit Tools files
+          working-directory: tools
+          run: |
+            git add ./Declarations.json ./Declarations.json
+            git commit -m "DocGen ${{ github.ref_name }} result"
+            git push
 
 #PR
         - name: Configure Git

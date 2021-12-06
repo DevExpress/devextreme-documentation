@@ -1,8 +1,6 @@
 ---
 id: dxFilterBuilderField
 type: Object
-module: ui/filter_builder
-export: dxFilterBuilderField
 ---
 ---
 ##### shortDescription

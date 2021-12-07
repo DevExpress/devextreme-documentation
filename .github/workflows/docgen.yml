@@ -74,7 +74,7 @@ jobs:
           working-directory: tools
           run: |
             git add ./Declarations.json
-            git commit -m "DocGen ${{ github.ref_name }} result"
+            git commit -m "DocGen ${{ github.ref_name }} result" || exit 0
             git push
 
 #PR
@@ -86,7 +86,7 @@ jobs:
 
             git checkout -b $branch_name
             git add ./api-reference
-            git commit -m "DocGen ${{ github.ref_name }} result" || exit 1
+            git commit -m "DocGen ${{ github.ref_name }} result" || exit 0
 
             git push --set-upstream origin $branch_name
 

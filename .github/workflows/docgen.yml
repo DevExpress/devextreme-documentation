@@ -86,7 +86,7 @@ jobs:
         - name: Commit Tools files
           working-directory: tools
           run: |
-            git add ./Declarations.json ./Declarations.json
+            git add ./Declarations.json ./Descriptions.json
             git commit -m "DocGen ${{ github.ref_name }} result"
             git push
 

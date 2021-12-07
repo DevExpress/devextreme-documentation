@@ -4,7 +4,6 @@ type: Boolean | function(event)
 default: true (Android)
 ---
 ---
-
 ##### param(event): event
 <!-- %param(event)% -->
 

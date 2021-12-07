@@ -52,7 +52,7 @@ jobs:
           run: |
             mkdir dx-tools && cd dx-tools
             cp ../devextreme/package.json ./package.json
-            npm install devextreme-internal-tools
+            npm install devextreme-internal-tools@latest
 
 #Generation
         - name: Update topics

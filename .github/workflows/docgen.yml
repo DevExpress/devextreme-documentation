@@ -48,34 +48,20 @@ jobs:
           working-directory: documentation
           run: npm i
 
-#Generation
-        - name: Discover declarations
-          working-directory: devextreme
-          run: npm run discover-declarations -- --artifacts ../artifacts
+        - name: Prepare dx-tools
+          run: |
+            mkdir dx-tools && cd dx-tools
+            npm install devextreme-internal-tools
 
+#Generation
         - name: Update topics
-          working-directory: documentation
-          run: npm run update-topics -- --declarations-path ../artifacts/Declarations.json --artifacts ../artifacts
+          working-directory: dx-tools
+          run: npm run internal-tool -- update-topics --js-scripts $(realpath  ../devextreme/js) --docs-root $(realpath ../documentation) --artifacts $(realpath ../artifacts)
 
         - name: Generate additional topics
           working-directory: documentation
-          run: npm run generate-extra-topic
+          run: npm run internal-tool -- generate-extra-topics --docs-root $(realpath ../documentation) --version ${{ github.ref_name }}
 
-        - name: Generate Syntax metadata
-          working-directory: documentation
-          run: npm run generate-syntax-data -- --declarations-path $(realpath ../artifacts/Declarations.json)
-
-        - name: Generate Modules metadata
-          working-directory: documentation
-          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json) --js-scripts ../devextreme/js
-
-        - name: Generate ContentMap
-          working-directory: documentation
-          run: npm run generate-content-map
-
-        - name: Update links
-          working-directory: documentation
-          run: npm run update-links
 #Git
         - name: Configure Git
           run: |
@@ -86,12 +72,11 @@ jobs:
         - name: Update Tools files
           run: |
             cp -f ./artifacts/Declarations.json ./tools/Declarations.json
-            cp -f ./artifacts/Descriptions.json ./tools/Descriptions.json
 
         - name: Commit Tools files
           working-directory: tools
           run: |
-            git add ./Declarations.json ./Declarations.json
+            git add ./Declarations.json
             git commit -m "DocGen ${{ github.ref_name }} result"
             git push
 

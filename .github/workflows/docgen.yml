@@ -60,7 +60,7 @@ jobs:
           run: npm run internal-tool -- update-topics --js-scripts $(realpath  ../devextreme/js) --docs-root $(realpath ../documentation) --artifacts $(realpath ../artifacts)
 
         - name: Generate additional topics
-          working-directory: documentation
+          working-directory: dx-tools
           run: npm run internal-tool -- generate-extra-topics --docs-root $(realpath ../documentation) --version ${{ github.ref_name }}
 
 #Git

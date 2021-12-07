@@ -51,6 +51,7 @@ jobs:
         - name: Prepare dx-tools
           run: |
             mkdir dx-tools && cd dx-tools
+            cp ../devextreme/package.json ./package.json
             npm install devextreme-internal-tools
 
 #Generation

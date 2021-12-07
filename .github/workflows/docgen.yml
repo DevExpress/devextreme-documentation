@@ -85,7 +85,7 @@ jobs:
             branch_name="dxrobot/${{ github.ref_name }}_D$formatted_time"
 
             git checkout -b $branch_name
-            git add ./api-reference ./concepts ./metadata
+            git add ./api-reference
             git commit -m "DocGen ${{ github.ref_name }} result" || exit 1
 
             git push --set-upstream origin $branch_name

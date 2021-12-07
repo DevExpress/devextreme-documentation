@@ -1,4 +1,4 @@
-Use the [location](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/#location) property to set the location of a command or separator on the main toolbar. This property accepts one of the following values:
+Use the [location](/api-reference/50%20Common/Object%20Structures/dxDiagramCustomCommand/location.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/#location') property to set the location of a command or separator on the main toolbar. This property accepts one of the following values:
 
 - **center**  
  Places the command in the center of the main toolbar.

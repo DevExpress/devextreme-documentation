@@ -14,12 +14,12 @@ The current node's data object.
 A node's width.
 
 ##### param(value): any
-When the Diagram calls this function as a setter, contains the node's new width value. When the Diagram calls this function as a getter, contains `undefined`.
+A node's new width or `undefined`.
 
 ---
 A function assigned to this property should do the following:
 * Return a node's width when the **value** parameter is set to `undefined`
-* When the **value** parameter contains a node's new width, assign this width to the **obj** parameter
+* Save a new width value to a data storage when the **value** parameter contains a node's width. For instance, assign this value to the **obj** parameter to save a node's width in your data source.
 
 The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') property specifies the measurement unit.
 
@@ -56,6 +56,7 @@ The example below demonstrates how to specify a node's width depending on the no
             id: '106',
             name: 'Development',
             type: 'group',
+            width: 2,
         },
         {
             id: '112',
@@ -117,6 +118,7 @@ The example below demonstrates how to specify a node's width depending on the no
         Name: string;
         Type?: string;
         Level?: string;
+        Width?: string;
     }
 
     const orgItems: OrgItem[] = [
@@ -124,6 +126,7 @@ The example below demonstrates how to specify a node's width depending on the no
             ID: '106',
             Name: 'Development',
             Type: 'group',
+            Width: '2',
         },
         {
             ID: '112',
@@ -191,6 +194,7 @@ The example below demonstrates how to specify a node's width depending on the no
             id: '106',
             name: 'Development',
             type: 'group',
+            width: '2'',
         },
         {
             id: '112',
@@ -251,6 +255,7 @@ The example below demonstrates how to specify a node's width depending on the no
             id: '106',
             name: 'Development',
             type: 'group',
+            width: '2',
         },
         {
             id: '112',

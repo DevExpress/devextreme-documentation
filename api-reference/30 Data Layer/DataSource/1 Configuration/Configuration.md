@@ -30,10 +30,16 @@ The **DataSource** allows specifying [**CustomStore** properties](/api-reference
         constructor() {
             this.infiniteList = new DataSource({
                 load: (loadOptions) => {
-                    // Loading data objects
+                    return new Promise((resolve, reject) => {
+                        const data = // Loading data objects
+                        resolve(data);
+                });
                 },
                 byKey: (key) => {
-                    // Retrieving a data object by key
+                    return new Promise((resolve, reject) => {
+                        const obj = // Retrieving a data object by key
+                        resolve(obj);
+                });
                 }
             });
         }

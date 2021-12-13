@@ -1,5 +1,5 @@
 To create a UI component, call its constructor passing the target element and a configuration object. You may need to set additional properties for the target element (for example, the **display** property of data visualization UI components should be set to "block").
-
+k
     import Accordion from "devextreme/ui/accordion";
     ...
     let container = document.getElementById("root");

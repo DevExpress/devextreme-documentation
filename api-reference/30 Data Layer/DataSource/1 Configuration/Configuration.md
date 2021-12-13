@@ -33,13 +33,13 @@ The **DataSource** allows specifying [**CustomStore** properties](/api-reference
                     return new Promise((resolve, reject) => {
                         const data = // Loading data objects
                         resolve(data);
-                });
+                    });
                 },
                 byKey: (key) => {
                     return new Promise((resolve, reject) => {
                         const obj = // Retrieving a data object by key
                         resolve(obj);
-                });
+                    });
                 }
             });
         }

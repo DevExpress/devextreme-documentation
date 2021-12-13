@@ -14,14 +14,10 @@ The current edge's data object.
 An edge's custom data.
 
 ##### param(value): any
-When the Diagram calls this function as a setter, contains an edge's new custom data. When the Diagram calls this function as a getter, contains `undefined`.
+When the function is called as a setter, returns the edge's new custom data; when the function is called as a getter, returns `undefined`.
 
 ---
 This property links custom data from a data source to the diagram edge. The edge contains the linked data copied from the data source. Changes in the data are reflected in the diagram history. You can use the UI to undo and redo these changes.
-
-A function assigned to this property should do the following:
-* Return an edge's custom data when the **value** parameter is set to `undefined`
-* When the **value** parameter contains an edge's new custom data, assign this data to the **obj** parameter
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/jQuery/Light/"

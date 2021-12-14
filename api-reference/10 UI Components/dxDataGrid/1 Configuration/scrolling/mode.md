@@ -24,7 +24,7 @@ Each next page is loaded once the scrollbar reaches the end of its scale. In thi
 
     [note]Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when using infinite scrolling in conjunction with grouping.
 
-Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is 'virtual' and cannot be changed if you set the **mode** property to 'virtual' or 'infinite'.
+Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is "_virtual_" and cannot be changed if you set the **mode** property to "_virtual_" or "_infinite_".
 
 Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#pageSize') property to specify the number of rows on a page.
 

@@ -19,7 +19,7 @@ A node's new width or `undefined`.
 ---
 A function assigned to this property should do the following:
 * Return a node's width when the **value** parameter is set to `undefined`
-* Save a new width value to a data storage when the **value** parameter contains a node's width. For instance, assign this value to the **obj** parameter to save a node's width in your data source.
+* Save a new width value to a data storage when the **value** parameter contains a node's width. For instance, assign this value to the **obj** parameter's field to save a node's width in your data source.
 
 The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units') property specifies the measurement unit.
 

@@ -17,4 +17,6 @@ Rows are rendered at once or by pages if [paging](/api-reference/10%20UI%20Compo
 - **Virtual**       
 This mode is an alternative to paging where pages are rendered when they get into the viewport and removed once they leave it. Use this mode if a user should be able to scroll data by pages.
 
+Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is 'virtual' and cannot be changed if you set the **mode** property to 'virtual' or 'infinite'.
+
 Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize') property to specify the number of rows on a page.

@@ -36,7 +36,7 @@ In multi-series charts, point labels often overlap. To decide how to resolve ove
     <!-- tab: App.vue -->
     <template> 
         <DxChart
-            :resolve-label-overlapping="stack"> <!-- or 'hide' | 'none' -->
+            resolve-label-overlapping="stack"> <!-- or 'hide' | 'none' -->
         </DxChart>
     </template>
 

@@ -5,9 +5,9 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The target element associated with the {WidgetName}.
+Specifies the element against which the {WidgetName} will be positioned.
 
 ---
 #include uiwidgets-ref-target
 
-To align the {WidgetName} against this element, use the [position](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/position.md '{basewidgetpath}/Configuration/#position') property.
+To change the {WidgetName} position against this element, use the [position](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/position.md '{basewidgetpath}/Configuration/#position') property.

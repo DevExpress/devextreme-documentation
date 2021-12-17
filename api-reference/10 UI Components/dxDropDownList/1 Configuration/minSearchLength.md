@@ -8,4 +8,5 @@ default: 0
 The minimum number of characters that must be entered into the text box to begin a search. Applies only if [searchEnabled](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchEnabled.md '{basewidgetpath}/Configuration/#searchEnabled') is **true**.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [showDataBeforeSearch](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/showDataBeforeSearch.md '{basewidgetpath}/Configuration/#showDataBeforeSearch')

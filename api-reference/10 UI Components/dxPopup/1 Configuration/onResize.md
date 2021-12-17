@@ -20,12 +20,12 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.height): Number
-<!-- Description goes here -->
+The UI component's height after resize.
 
 ##### field(e.width): Number
-<!-- Description goes here -->
+The UI component's width after resize.
 
 ---

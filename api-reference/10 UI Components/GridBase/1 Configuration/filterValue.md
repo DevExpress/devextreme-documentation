@@ -271,7 +271,7 @@ If a column's [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter
 ---
 
 
-[note] The **DataSource** does not support the *"anyof"*, *"noneof"*, and custom operations. Use the [getCombinedFilter(returnDataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter(returnDataField).md '{basewidgetpath}/Methods/#getCombinedFilterreturnDataField') method to get the **DataSource**-compatible filter expression.
+[note] The **DataSource** does not support the *"between"*, *"anyof"*, *"noneof"*, and custom operations. Use the [getCombinedFilter(returnDataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter(returnDataField).md '{basewidgetpath}/Methods/#getCombinedFilterreturnDataField') method to get the **DataSource**-compatible filter expression.
 
 #####See Also#####
 - [Filter Panel with Filter Builder](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/4%20Filter%20Panel%20with%20Filter%20Builder.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Filter_Panel_with_Filter_Builder')

@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when an appointment is clicked or tapped.
+A function that is executed when an appointment is clicked or tapped. 
 
 ##### param(e): Object
 Information about the event.
@@ -35,6 +35,7 @@ Model data. Available only if Knockout is used.
 The clicked appointment.
 
 ---
+
 In case of [recurring appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments) or appointments with [multiple resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources), you may need the data object of the clicked, not the initial, appointment. For this purpose, use the **targetedAppointmentData** field of the function's parameter. Otherwise, use the **appointmentData** field.
 
 For example, the data source contains the following data object:
@@ -63,6 +64,21 @@ This object describes a series of appointments that belong to two owners and rep
         /* {
             startDate: new Date(2016, 6, 19, 8), 
             endDate: new Date(2016, 6, 19, 9),
+            ownerId: 2,
+            recurrenceRule: "FREQ=DAILY"
+        } */
+    }
+
+Besides objects common to the **appointmentData** field, the **targetedAppointmentData** field has the **displayStartDate** and **displayEndDate** date objects. These objects contain time-zone adjusted dates if you specify the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) property. If the latter property is not specifies, the date objects mentioned above equal the **startDate** and **endDate** objects.
+
+    <!--JavaScript-->
+    onAppointmentClick: function(e) {
+        console.log(e.targetedAppointmentData);
+        /* {
+            startDate: new Date(2016, 6, 19, 8), 
+            endDate: new Date(2016, 6, 19, 9),
+            displayStartDate: new Date(2016, 6, 19, 10), 
+            displayEndDate: new Date(2016, 6, 19, 11),
             ownerId: 2,
             recurrenceRule: "FREQ=DAILY"
         } */

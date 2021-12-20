@@ -14,6 +14,10 @@ The current node's data object.
 A node key.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new key value; when the function is called as a getter, returns `undefined`.
+A node's new key or `undefined`.
 
 ---
+A function assigned to this property should do the following:
+
+* Return a node's new key when the **value** parameter is set to `undefined`.
+* Save a new key value to a data storage when the **value** parameter contains a node's key. For instance, assign this value to the **obj** parameter's field to save a node's key in your data source.

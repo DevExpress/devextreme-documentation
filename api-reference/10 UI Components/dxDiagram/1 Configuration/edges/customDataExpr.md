@@ -21,7 +21,7 @@ This property links custom data from a data source to the diagram edge. The edge
 
 A function assigned to this property should do the following:
 
-* Return an edge's new custom data when the **value** parameter is set to `undefined`
+* Return an edge's new custom data when the **value** parameter is set to `undefined`.
 * Save a new custom data value to a data storage when the **value** parameter contains an edge's custom data. For instance, assign this value to the **obj** parameter's field to save an edge's custom data in your data source.
 
 #include common-demobutton with {

@@ -14,10 +14,15 @@ The current node's data object.
 A node's custom data.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new custom data; when the function is called as a getter, returns `undefined`.
+A node's new custom data or `undefined`.
 
 ---
 This property links custom data from a data source to a diagram node. The node contains the linked data copied from the data source. Changes in the data are reflected in the diagram history. You can use the UI to undo and redo these changes.
+
+A function assigned to this property should do the following:
+
+* Return a node's new custom data when the **value** parameter is set to `undefined`.
+* Save a new custom data value to a data storage when the **value** parameter contains a node's custom data. For instance, assign this value to the **obj** parameter's field to save a node's custom data in your data source.
 
     <!--JavaScript-->
     // ...

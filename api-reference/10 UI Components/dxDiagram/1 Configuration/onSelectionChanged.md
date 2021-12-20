@@ -17,7 +17,7 @@ The UI component instance's name.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.items): Array<dxDiagramItem>
-An array of selected items ([DiagramShapes](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/') or [DiagramConnectors](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/')).
+An array of selected items ([DiagramShapes](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramShape/') or [DiagramConnectors](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramConnector/')).
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

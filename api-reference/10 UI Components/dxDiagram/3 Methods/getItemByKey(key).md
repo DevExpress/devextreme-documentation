@@ -3,7 +3,7 @@ id: dxDiagram.getItemByKey(key)
 ---
 ---
 ##### shortDescription
-Returns a [shape](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/Common/Object_Structures/dxDiagramShape/') or [connector](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/Common/Object_Structures/dxDiagramConnector/') object specified by its key.
+Returns a [shape](/api-reference/50%20Common/Object%20Structures/dxDiagramShape '/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramShape/') or [connector](/api-reference/50%20Common/Object%20Structures/dxDiagramConnector '/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramConnector/') object specified by its key.
 
 ##### return: dxDiagramItem
 A **dxDiagramItem** object descendant (dxDiagramShape or dxDiagramConnector).

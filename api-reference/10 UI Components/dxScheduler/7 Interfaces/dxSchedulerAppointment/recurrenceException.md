@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the start date and time of one or more appointments to exclude from a series. This property requires that you also set [recurrenceRule](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/recurrenceRule.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#recurrenceRule').
+Specifies the start date and time of one or more appointments to exclude from a series. This property requires that you also set [recurrenceRule](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/recurrenceRule.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#recurrenceRule').
 
 ---
 #include common-demobutton with {

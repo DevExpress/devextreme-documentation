@@ -31,15 +31,19 @@ This property specifies a display mode for all item labels. If you want to overr
 
 [note]
 
-The following [editors](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') do not support *"static"* and *"floating"* modes and will fall back on the *"outside"* mode:
+Please review the following notes:
 
-- *"dxCalendar"*
-- *"dxCheckBox"*
-- *"dxHtmlEditor"*
-- *"dxRadioGroup"*
-- *"dxRangeSlider"*
-- *"dxSlider"*
-- *"dxSwitch"*
+- The following [editors](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') do not support *"static"* and *"floating"* modes and will default to *"outside"* mode:
+
+    - *"dxCalendar"*
+    - *"dxCheckBox"*
+    - *"dxHtmlEditor"*
+    - *"dxRadioGroup"*
+    - *"dxRangeSlider"*
+    - *"dxSlider"*
+    - *"dxSwitch"*
+
+- If autofill is enabled in the browser, we do not recommend that you use "*floating*" mode. The autofill values will overlap the label when it is displayed as a placeholder. Use "*static*" mode instead.
 
 [/note]
 

@@ -1,0 +1,16 @@
+#include demos-intro
+
+- [Colors Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/jQuery/Light/)
+- [Zooming and Centering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ZoomingAndCentering/jQuery/Light/)
+- [Palette](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/Palette/jQuery/Light/)
+- [Image Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ImageMarkers/jQuery/Light/)
+- [Bubble Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/BubbleMarkers/jQuery/Light/)
+- [Pie Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/PieMarkers/jQuery/Light/)
+- [Dynamic Viewport](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/DynamicViewport/jQuery/Light/)
+- [Area with Labels and Two Legends](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/AreaWithLabelsAndTwoLegends/jQuery/Light/)
+- [Tooltips: HTML Markup Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/TooltipHTMLSupport/jQuery/Light/)
+- [Custom Projection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection/jQuery/Light/)
+- [Floor Plan](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/FloorPlan/jQuery/Light/)
+- [Multiple Layers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/MultipleLayers/jQuery/Light/)
+- [Custom Map Data](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomMapData/jQuery/Light/)
+- [Custom Annotations](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomAnnotations/jQuery/Light/)

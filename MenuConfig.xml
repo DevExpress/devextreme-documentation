@@ -3,7 +3,6 @@
 
 <MenuRule Destination="" SourcePattern="ApiReference:^(10 UI Components|30 Data Layer|50 Common/utils)/(zz )*Errors and Warnings" />
 
-<!-- Angular articles -->
 <MenuRule Destination="000 Overview" SourcePattern="Howto:^40 Angular Components/00 DevExtreme Angular Components" VisibleFor="Angular" />
 <MenuRule Destination="010 Overview" SourcePattern="Howto:^55 Vue Components/00 DevExtreme Vue Components" VisibleFor="Vue" />
 <MenuRule Destination="020 Overview" SourcePattern="Howto:^50 React Components/00 DevExtreme React Components" VisibleFor="React" />
@@ -40,6 +39,12 @@
 <MenuRule Destination="050 Getting Started/80 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
 <MenuRule Destination="050 Getting Started/90 CDN Links" SourcePattern="Howto:^Common/Distribution Channels/05 CDN" />
 
+<!-- Demos -->
+<MenuRule
+    Destination="10 UI Components/$1/1 Demos"
+    SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip|ButtonGroup|Drawer|Floating Action Button|Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView|Bullet|BarGauge|CircularGauge|LinearGauge|PolarChart|RangeSelector|Sparkline|VectorMap)/Demos"
+/>
+  
 <!-- Overview + How To-->
 <MenuRule
     Destination="10 UI Components/$1/0 Overview"

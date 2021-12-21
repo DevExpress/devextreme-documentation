@@ -1,8 +1,8 @@
 #include demos-intro
 
-- [Form Upload](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/jQuery/Light/)
-- [Async Upload](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileUploading/jQuery/Light/)
-- [Validation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/Validation/jQuery/Light/)
-- [Chunk Uploading](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/ChunkUploading/jQuery/Light/)
-- [Direct Upload to Azure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/AzureDirectUploading/jQuery/Light/)
-- [Custom Drop Zone](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/jQuery/Light/)
+- [Form Upload](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/)
+- [Async Upload](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileUploading/)
+- [Validation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/Validation/)
+- [Chunk Uploading](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/ChunkUploading/)
+- [Direct Upload to Azure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/AzureDirectUploading/)
+- [Custom Drop Zone](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/)

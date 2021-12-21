@@ -5,7 +5,7 @@ default: function() { return $(window).height() * 0.8 }
 ---
 ---
 ##### shortDescription
-Specifies the UI component's height in pixels.
+Specifies the UI component's height.
 
 ##### return: Number | String
 The UI component's height.

@@ -5,7 +5,7 @@ default: function() {return $(window).width() * 0.8 }
 ---
 ---
 ##### shortDescription
-Specifies the UI component's width in pixels.
+Specifies the UI component's width.
 
 ##### return: Number | String
 The UI component's width.

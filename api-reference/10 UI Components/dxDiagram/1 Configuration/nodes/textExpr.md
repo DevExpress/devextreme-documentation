@@ -14,6 +14,10 @@ The current node's data object.
 A node text.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new text value; when the function is called as a getter, returns `undefined`.
+A node's new text or `undefined`.
 
 ---
+A function assigned to this property should do the following:
+
+* Return a node's new text when the **value** parameter is set to `undefined`.
+* Save a new text value to a data storage when the **value** parameter contains a node's text. For instance, assign this value to the **obj** parameter's field to save a node's text in your data source.

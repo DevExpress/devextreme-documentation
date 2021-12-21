@@ -14,7 +14,12 @@ The current edge's data object.
 An edge key.
 
 ##### param(value): any
-When the function is called as a setter, returns the edge's new key value; when the function is called as a getter, returns `undefined`.
+An edge's new key or `undefined`.
 
 ---
 This property is required if you bind edges to a data source ([edges.dataSource](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/dataSource.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#dataSource')).
+
+A function assigned to this property should do the following:
+
+* Return an edge's new key when the **value** parameter is set to `undefined`.
+* Save a new key value to a data storage when the **value** parameter contains an edge's key. For instance, assign this value to the **obj** parameter's field to save an edge's key in your data source.

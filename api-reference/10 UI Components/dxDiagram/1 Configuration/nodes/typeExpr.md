@@ -14,9 +14,14 @@ The current node's data object.
 The [shape type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') for a node.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new shape type; when the function is called as a getter, returns `undefined`.
+A node's new shape type or `undefined`.
 
 ---
+A function assigned to this property should do the following:
+
+* Return a node's new shape type when the **value** parameter is set to `undefined`.
+* Save a new shape type value to a data storage when the **value** parameter contains a node's shape type. For instance, assign this value to the **obj** parameter's field to save a node's shape type in your data source.
+
 The built-in shape types are shown in the [Shape Types](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/') section.
 
     <!--JavaScript-->

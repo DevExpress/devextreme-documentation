@@ -1,3 +1,3 @@
 #include demos-intro
 
-- [Text Area](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/jQuery/Light/)
+- [Text Area](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/)

@@ -1,3 +1,3 @@
 #include demos-intro
 
-- [Popover](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/jQuery/Light/)
+- [Popover](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/)

@@ -1,44 +1,44 @@
 #include demos-intro
 
-- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/jQuery/Light/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 
 **Data Binding**
 
-- [Simple Array](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SimpleArray/jQuery/Light/)
-- [Web API Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/WebAPIService/jQuery/Light/)
-- [SignalR Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SignalRService/jQuery/Light/)
-- [Google Calendar Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GoogleCalendarIntegration/jQuery/Light/)
+- [Simple Array](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SimpleArray/)
+- [Web API Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/WebAPIService/)
+- [SignalR Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SignalRService/)
+- [Google Calendar Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GoogleCalendarIntegration/)
 
 **Views**
 
-- [Basic Views](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/BasicViews/jQuery/Light/)
-- [Timelines](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/jQuery/Light/)
-- [Agenda](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/jQuery/Light/)
+- [Basic Views](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/BasicViews/)
+- [Timelines](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/)
+- [Agenda](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/)
 
 **Features**
 
-- [Current Time Indicator](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CurrentTimeIndicator/jQuery/Light/)
-- [Time Zone Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/jQuery/Light/)
-- [Recurring Appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/jQuery/Light/)
-- [Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/jQuery/Light/)
-- [Custom Drag & Drop](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/jQuery/Light/)
-- [Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/jQuery/Light/)
+- [Current Time Indicator](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CurrentTimeIndicator/)
+- [Time Zone Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/)
+- [Recurring Appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/)
+- [Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/)
+- [Custom Drag & Drop](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/)
+- [Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/)
 
 **Grouping**
 
-- [Group Orientation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/jQuery/Light/)
-- [Grouping By Date](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupByDate/jQuery/Light/)
+- [Group Orientation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/)
+- [Grouping By Date](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupByDate/)
 
 **Customization**
 
-- [Custom Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/jQuery/Light/)
-- [Disabled Date/Time Ranges](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/jQuery/Light/)
-- [Customize Individual Views](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomizeIndividualViews/jQuery/Light/)
-- [Increased View Duration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IncreaseViewDuration/jQuery/Light/)
-- [Limit the Appointment Count per Cell](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/LimitAppointmentCountPerCell/jQuery/Light/)
-- [Context Menu Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/jQuery/Light/)
+- [Custom Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/)
+- [Disabled Date/Time Ranges](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/)
+- [Customize Individual Views](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomizeIndividualViews/)
+- [Increased View Duration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IncreaseViewDuration/)
+- [Limit the Appointment Count per Cell](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/LimitAppointmentCountPerCell/)
+- [Context Menu Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/)
 
 **More Features**
 
-- [Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/jQuery/Light/)
-- [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/jQuery/Light/)
+- [Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/)
+- [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/)

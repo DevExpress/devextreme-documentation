@@ -63,7 +63,6 @@ A function assigned to this property should do the following:
         // ... 
     ];
 
-
 ##### Angular
 
     <!-- tab: app.component.html -->

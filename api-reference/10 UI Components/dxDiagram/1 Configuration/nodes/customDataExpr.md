@@ -69,8 +69,7 @@ A function assigned to this property should do the following:
             Title: 'COO',
         },
         // ... 
-    ];
-
+    }];
 
 ##### Angular
 

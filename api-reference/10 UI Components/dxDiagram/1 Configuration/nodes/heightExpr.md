@@ -35,13 +35,13 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
                     key: 'id',
                     data: orgItems,
                 }),
-                heightExpr: itemHeightExpr,,
+                heightExpr: itemHeightExpr,
                 // ...
             },
         });
 
         function itemHeightExpr(obj, value) {
-            if (value)
+            if (value === undefined)
                 obj.height = value;
             else
                 return obj.height || (obj.type === 'group' && 1) || 0.75;
@@ -64,7 +64,6 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
         },
         // ... 
     ];
-
 
 ##### Angular
 
@@ -101,7 +100,7 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
         }
 
         itemHeightExpr(obj, value) {
-            if (value)
+            if (value === undefined)
                 obj.Height = value;
             else 
                 return obj.Height || (obj.Type === 'group' && 1) || 0.75;
@@ -175,7 +174,7 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
             },
             methods: {
                 itemHeightExpr(obj, value) {
-                    if (value)
+                    if (value === undefined)
                         obj.height = value;
                     else
                         return obj.height || (obj.type === 'group' && 1) || 0.75;
@@ -207,7 +206,6 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
         },
     };
 
-
 ##### React
 
     <!-- tab: App.js -->
@@ -236,7 +234,7 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
         }
 
         itemHeightExpr(obj, value) {
-            if (value)
+            if (value === undefined)
                 obj.height = value;
             else
                 return obj.height || (obj.type === 'group' && 1) || 0.75;

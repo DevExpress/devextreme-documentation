@@ -69,7 +69,7 @@ This object describes a series of appointments that belong to two owners and rep
         } */
     }
 
-Besides objects common to the **appointmentData** field, the **targetedAppointmentData** field has the **displayStartDate** and **displayEndDate** date objects. These objects contain time-zone adjusted dates if you specify the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) property. If the latter property is not specifies, the date objects mentioned above equal the **startDate** and **endDate** objects.
+Besides objects common with the **appointmentData** field, the **targetedAppointmentData** field has the **displayStartDate** and **displayEndDate** date objects. These objects contain time-zone adjusted dates if you specify the [timeZone](/Documentation/ApiReference/UI_Widgets/dxScheduler/Configuration/#timeZone) property. If the latter property is not specifies, the date objects mentioned above equal the **startDate** and **endDate** objects.
 
     <!--JavaScript-->
     onAppointmentClick: function(e) {

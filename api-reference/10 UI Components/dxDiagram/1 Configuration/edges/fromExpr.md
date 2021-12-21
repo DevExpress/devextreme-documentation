@@ -14,10 +14,15 @@ The current edge's data object.
 An edge's start node key.
 
 ##### param(value): any
-When the function is called as a setter, returns the edge's new start node key value; when the function is called as a getter, returns `undefined`.
+An edge's new start node key or `undefined`.
 
 ---
 Specify this property if you use [node and edge](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/10%20Node%20and%20Edge%20Arrays.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Node_and_Edge_Arrays') data sources.
+
+A function assigned to this property should do the following:
+
+* Return an edge's new start node key when the **value** parameter is set to `undefined`.
+* Save a new key value to a data storage when the **value** parameter contains an edge's start node key. For instance, assign this value to the **obj** parameter's field to save an edge's start node key in your data source.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"

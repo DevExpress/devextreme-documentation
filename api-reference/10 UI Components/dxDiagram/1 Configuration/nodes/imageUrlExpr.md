@@ -14,10 +14,15 @@ The current node's data object.
 An image URL or Base64 encoded image for a node.
 
 ##### param(value): any
-When the function is called as a setter, returns an image URL or Base64 encoded image for the node; when the function is called as a getter, returns `undefined`.
+An image URL or Base64 encoded image for a node or `undefined`.
 
 ---
 This property is in effect for nodes of the `"cardWithImageOnLeft"`, `"cardWithImageOnTop"`, or `"cardWithImageOnRight"` [type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/').
+
+A function assigned to this property should do the following:
+
+* Return an image URL or Base64 encoded image when the **value** parameter is set to `undefined`.
+* Save a new URL or image value to a data storage when the **value** parameter contains an image URL or Base64 encoded image. For instance, assign this value to the **obj** parameter's field to save an image URL or Base64 encoded image for a node in your data source.
 
     <!-- tab: index.js -->
         $(function() {

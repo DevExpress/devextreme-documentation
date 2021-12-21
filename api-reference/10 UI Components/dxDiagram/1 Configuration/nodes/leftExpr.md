@@ -14,9 +14,14 @@ The current node's data object.
 The x-coordinate of a node's left border.
 
 ##### param(value): any
-When the function is called as a setter, returns the x-coordinate of the node's left border; when the function is called as a getter, returns `undefined`.
+The x-coordinate of a node's left border or `undefined`.
 
 ---
+A function assigned to this property should do the following:
+
+* Return the x-coordinate of a node's left border when the **value** parameter is set to `undefined`.
+* Save the x-coordinate value to a data storage when the **value** parameter contains the x-coordinate of a node's left border. For instance, assign this value to the **obj** parameter's field to save the x-coordinate of a node's left border in your data source.
+
 A node's x-coordinate specifies the distance between the left border of a diagram work area and the left border of a shape, in [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/units.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#units').
 
 [note] Predefined shape coordinates are ignored when the [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout/type.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#type') property is set to **layered** or **tree**.

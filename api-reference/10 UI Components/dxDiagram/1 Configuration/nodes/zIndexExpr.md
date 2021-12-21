@@ -14,7 +14,12 @@ The current node's data object.
 A node's z-index.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new z-index value; when the function is called as a getter, returns `undefined`.
+A node's new z-index or `undefined`.
 
 ---
+A function assigned to this property should do the following:
+
+* Return a node's new z-index when the **value** parameter is set to `undefined`.
+* Save a new z-index value to a data storage when the **value** parameter contains a node's z-index. For instance, assign this value to the **obj** parameter's field to save a node's z-index in your data source.
+
 The z-index specifies the node stack order. A node with greater stack order is in front of a node with a lower stack order.

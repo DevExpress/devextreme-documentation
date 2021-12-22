@@ -28,4 +28,4 @@ Use a string or object value to specify an edge's text:
 Specifies the text in the middle of a connector. For instance, `"text"`.
 
 - **Object**  
-Contains multiple texts and their start positions on the connector. The position is a number between 0 and 1, where 0 corresponds to the connector's start point and 1 to the connector's end point. For instance, `{ 0.3: "text1", 0.8: "text2" }`.
+Contains multiple texts and their positions on the connector. The position is a number between 0 and 1, where 0 corresponds to the connector's start point and 1 to the connector's end point. For instance, `{ 0.3: "text1", 0.8: "text2" }`.

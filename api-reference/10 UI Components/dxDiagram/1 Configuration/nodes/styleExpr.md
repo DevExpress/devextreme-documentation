@@ -14,12 +14,16 @@ The current node's data object.
 A node style.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new style; when the function is called as a getter, returns `undefined`.
+A node's new style or `undefined`.
 
 ---
-A data source field specified by this property must contain inline style declarations in string format, for instance `"fill: #d9d9d9; stroke: #999999"`. 
+A data source field assigned to this property should contain in-line style declarations in string format. For instance, `"fill: #d9d9d9; stroke: #999999"`.
 
-If you provide a function for the **styleExpr** property, the function can return style settings as CSS rules presented in JSON format as well.
+A function assigned to this property should do the following:
+
+* Return a node's new style as a set of CSS rules in JSON format when the **value** parameter is set to `undefined`. For instance, `{"fill": "#d9d9d9"; "stroke": "#999999"}`.
+* Save a new style value to a data storage when the **value** parameter contains a node's style. For instance, assign this value to the **obj** parameter's field to save a node's style in your data source.
+
 
     <!-- tab: index.js -->
     $(function() {

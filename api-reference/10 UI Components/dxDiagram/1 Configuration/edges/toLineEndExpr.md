@@ -14,10 +14,20 @@ The current edge's data object.
 An edge's line end tip.
 
 ##### param(value): any
-When the function is called as a setter, returns the edge's new line end tip; when the function is called as a getter, returns `undefined`.
+An edge's new line end tip or `undefined`.
 
 ---
-The specified field or expression should return `none`, `arrow`, `filledTriangle`, or `outlinedTriangle`.
+A function assigned to this property should do the following:
+
+* Return an edge's new line end tip when the **value** parameter is set to `undefined`.
+* Save a new line end tip value to a data storage when the **value** parameter contains an edge's line end tip. For instance, assign this value to the **obj** parameter's field to save an edge's line end tip in your data source.
+
+An end line tip accepts one of the following values:
+* `none`
+* `arrow`
+* `filledTriangle`
+* `outlinedTriangle`
+
 
     <!-- tab: index.js -->
     $(function() {

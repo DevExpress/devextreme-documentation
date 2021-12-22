@@ -22,4 +22,4 @@ A function assigned to this property should do the following:
 * Return a Boolean value that indicates whether an edge is locked when the **value** parameter is set to `undefined`.
 * Save a new value to a data storage when the **value** parameter contains a Boolean value. For instance, assign this value to the **obj** parameter's field to save a value that indicates whether an edge is locked in your data source.
 
-A locked item can not be moved, changed, or delete. The [context menu](/concepts/05%20UI%20Components/Diagram/30%20Diagram%20Tools.md '/Documentation/Guide/UI_Components/Diagram/Diagram_Tools/') allows users to lock and unlock an item.
+A locked item can not be moved, changed, or deleted. The [context menu](/concepts/05%20UI%20Components/Diagram/30%20Diagram%20Tools.md '/Documentation/Guide/UI_Components/Diagram/Diagram_Tools/') allows users to lock and unlock an item.

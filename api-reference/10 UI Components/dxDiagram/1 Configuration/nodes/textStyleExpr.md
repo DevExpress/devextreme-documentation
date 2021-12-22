@@ -17,7 +17,7 @@ A node's text style.
 A node's new text style or `undefined`.
 
 ---
-A data source field assigned to this property should contain inline style declarations in string format. For instance, `"font-weight: bold; text-decoration: underline"`. 
+A data source field assigned to this property should contain in-line style declarations in string format. For instance, `"font-weight: bold; text-decoration: underline"`. 
 
 A function assigned to this property should do the following:
 

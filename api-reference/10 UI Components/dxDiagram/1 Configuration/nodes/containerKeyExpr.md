@@ -19,7 +19,7 @@ A node's parent container node or `undefined`.
 ---
 A function assigned to this property should do the following:
 
-* Return a node's new parent container node when the **value** parameter is set to `undefined`.
+* Return a node's parent container node when the **value** parameter is set to `undefined`.
 * Save a container node value to a data storage when the **value** parameter contains a node's parent container node. For instance, assign this value to the **obj** parameter's field to save a node's parent container node in your data source.
 
 The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` [type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/').

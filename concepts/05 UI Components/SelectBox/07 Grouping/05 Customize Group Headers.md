@@ -1,6 +1,35 @@
-By default, group headers display text of the **key** field in a bold font. If you need a more flexible solution, specify [groupTemplate](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
+By default, group headers display text of the **key** field in a bold font. If you need a more flexible solution, specify [groupTemplate](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#groupTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->const fruitsVegetables = [{
+        // ...
+    }];
+
+    $(function() {
+        $("#selectBoxContainer").dxSelectBox({
+            dataSource: new DevExpress.data.DataSource({
+                store: fruitsVegetables,
+                map: function(groupedItem) {
+                    let overallCount = 0;
+                    groupedItem.items.forEach(function(item) {
+                        overallCount += item.count;
+                    });
+                    return $.extend(groupedItem, { overallCount: overallCount })
+                }
+            }),
+            grouped: true,
+            groupTemplate: function(groupData, _, groupElement) {
+                groupElement.append(
+                    $("<p>").text(groupData.key + " | Count: " + groupData.overallCount)
+                )
+            },
+            displayExpr: 'name',
+            valueExpr: 'count'
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -176,37 +205,6 @@ By default, group headers display text of the **key** field in a bold font. If y
     export default App;
 
 ---
-
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the **groupTemplate** callback function as shown in the following code.
-
-    <!--JavaScript-->const fruitsVegetables = [{
-        // ...
-        // omitted for brevity
-        // see the AngularJS code
-    }];
-
-    $(function() {
-        $("#selectBoxContainer").dxSelectBox({
-            dataSource: new DevExpress.data.DataSource({
-                store: fruitsVegetables,
-                map: function(groupedItem) {
-                    let overallCount = 0;
-                    groupedItem.items.forEach(function(item) {
-                        overallCount += item.count;
-                    });
-                    return $.extend(groupedItem, { overallCount: overallCount })
-                }
-            }),
-            grouped: true,
-            groupTemplate: function(groupData, _, groupElement) {
-                groupElement.append(
-                    $("<p>").text(groupData.key + " | Count: " + groupData.overallCount)
-                )
-            },
-            displayExpr: 'name',
-            valueExpr: 'count'
-        });
-    });
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/GroupedItems/"

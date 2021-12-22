@@ -107,9 +107,31 @@ For a minor customization of ContextMenu items, you can define [specific fields]
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    var contextMenuItems = [
+        { text: "Zoom In", icon: "plus" },
+        { text: "Share", icon: "message" },
+        { text: "Download", icon: "download" }
+    ];
+
+    $(function() {
+        $("#contextMenuContainer").dxContextMenu({
+            items: contextMenuItems,
+            visible: true,
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                var iconElement = $("<span></span>");
+                iconElement.addClass("dx-icon-" + itemData.icon);
+                itemElement.append(iconElement);
+                itemElement.append("<i style='margin-left:5px'>" + itemData.text + "</i>" + " [" + itemIndex + "]");
+            },
+            target: '#someElement'
+        });
+    });
 
 ##### Angular
 
@@ -221,32 +243,12 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for context menu items. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
-
-    <!--JavaScript-->
-    var contextMenuItems = [
-        { text: "Zoom In", icon: "plus" },
-        { text: "Share", icon: "message" },
-        { text: "Download", icon: "download" }
-    ];
-
-    $(function() {
-        $("#contextMenuContainer").dxContextMenu({
-            items: contextMenuItems,
-            visible: true,
-            itemTemplate: function(itemData, itemIndex, itemElement) {
-                var iconElement = $("<span></span>");
-                iconElement.addClass("dx-icon-" + itemData.icon);
-                itemElement.append(iconElement);
-                itemElement.append("<i style='margin-left:5px'>" + itemData.text + "</i>" + " [" + itemIndex + "]");
-            },
-            target: '#someElement'
-        });
-    });
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Context_Menu/Templates/"
 }
+
+---
+##### jQuery
 
 You can also customize an individual context menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/#template') field of the item's data object.
 
@@ -266,7 +268,7 @@ You can also customize an individual context menu item. For this purpose, declar
         // ...
     ];
 
-
+---
 
 #####See Also#####
 - [ContextMenu API Reference](/api-reference/10%20UI%20Components/dxContextMenu '/Documentation/ApiReference/UI_Components/dxContextMenu/')

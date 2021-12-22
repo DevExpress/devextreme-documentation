@@ -167,9 +167,27 @@ For a minor customization of Toolbar items, you can define [specific fields](/ap
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#menuItemTemplate') to customize toolbar items and commands in the overflow menu, respectively. In Angular and Vue, you can declare the templates in the markup. In React, you can use rendering functions (shown in the code below) or components.
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#menuItemTemplate') to customize toolbar items and commands in the overflow menu, respectively.
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#toolbarContainer").dxToolbar({
+            items: toolbarItems,
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                itemElement.append("<b style='color: green;'>" + itemData.text + "</b>");
+            },
+            menuItemTemplate: function(itemData, itemIndex, itemElement) {
+                itemElement.append("<b style='font-style: italic;'>" + itemData.text + "</b>");
+            }
+        });
+    });
+
+    <!--HTML-->
+    <div id="tabPanelContainer"></div>
+
 ##### Angular
 
     <!--HTML-->
@@ -306,35 +324,10 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup. To apply this markup to toolbar items and commands in the overflow menu, use the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate') and [menuItemTemplate](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#menuItemTemplate') callback functions, respectively.
-
 ---
-
 ##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#toolbarContainer").dxToolbar({
-            items: toolbarItems,
-            itemTemplate: function(itemData, itemIndex, itemElement) {
-                itemElement.append("<b style='color: green;'>" + itemData.text + "</b>");
-            },
-            menuItemTemplate: function(itemData, itemIndex, itemElement) {
-                itemElement.append("<b style='font-style: italic;'>" + itemData.text + "</b>");
-            }
-        });
-    });
-
-    <!--HTML-->
-    <div id="tabPanelContainer"></div>
-
----
 
 You can also customize an individual toolbar item or menu command. For this purpose, declare a template for this item or command as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template') or [menuItemTemplate](/api-reference/_hidden/dxToolbarItem/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#menuItemTemplate') property, respectively.
-
----
-
-##### jQuery
 
     <!--JavaScript-->
     var toolbarItems = [{

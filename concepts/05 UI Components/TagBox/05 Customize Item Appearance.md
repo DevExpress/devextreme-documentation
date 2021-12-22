@@ -107,9 +107,39 @@ For a minor customization of TagBox items, you can define [specific fields](/api
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    const tagBoxData = [{
+        id: 1,
+        name: "HD Video Player",
+        imgSrc: "images/products/1-small.png"
+    }, {
+        id: 2,
+        name: "UltraHD Player",
+        imgSrc: "images/products/2-small.png"
+    },
+    // ...
+    ];
+
+    $(function() {
+        $("#tagBoxContainer").dxTagBox({
+            dataSource: tagBoxData,
+            valueExpr: 'id',
+            displayExpr: 'name',
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                return $("<div />").append(
+                	$("<img />").attr("src", itemData.imgSrc),
+                    $("<p />").text(itemData.name)
+                              .css("display", "inline-block")
+                );
+            }
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -235,35 +265,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    const tagBoxData = [{
-        id: 1,
-        name: "HD Video Player",
-        imgSrc: "images/products/1-small.png"
-    }, {
-        id: 2,
-        name: "UltraHD Player",
-        imgSrc: "images/products/2-small.png"
-    },
-    // ...
-    ];
-
-    $(function() {
-        $("#tagBoxContainer").dxTagBox({
-            dataSource: tagBoxData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                return $("<div />").append(
-                	$("<img />").attr("src", itemData.imgSrc),
-                    $("<p />").text(itemData.name)
-                              .css("display", "inline-block")
-                );
-            }
-        });
-    });
+---
+##### jQuery
 
 You can also customize an individual item in the drop-down list. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/items/#template') field. 
 
@@ -278,6 +281,8 @@ You can also customize an individual item in the drop-down list. For this purpos
         { text: "HD Video Player", template: $("#individualTemplate") },
         // ...
     ];
+
+---
 
 Using similar techniques, you can also customize tags of the selected items. The template for them should be assigned to the [tagTemplate](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/tagTemplate.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#tagTemplate') property. 
 

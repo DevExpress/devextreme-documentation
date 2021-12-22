@@ -18,6 +18,7 @@ A node's new width or `undefined`.
 
 ---
 A function assigned to this property should do the following:
+
 * Return a node's width when the **value** parameter is set to `undefined`.
 * Save a new width value to a data storage when the **value** parameter contains a node's width. For instance, assign this value to the **obj** parameter's field to save a node's width in your data source.
 
@@ -42,7 +43,7 @@ The example below demonstrates how to specify a node's width depending on the no
         });
 
         function itemWidthExpr(obj, value) {
-            if (value)
+            if (value === undefined)
                 obj.width = value;
             else
                 return obj.width || (obj.type === 'group' && 1.5) || 1;
@@ -103,7 +104,7 @@ The example below demonstrates how to specify a node's width depending on the no
         }
 
         itemWidthExpr(obj, value) {
-            if (value) 
+            if (value === undefined) 
                 obj.Width = value;
             else 
                 return obj.Width || (obj.Type === 'group' && 1.5) || 1;
@@ -178,7 +179,7 @@ The example below demonstrates how to specify a node's width depending on the no
             },
             methods: {
                 itemWidthExpr(obj, value) {
-                    if (value)
+                    if (value === undefined)
                         obj.width = value;
                     else
                         return obj.width || (obj.type === 'group' && 1.5) || 1;
@@ -239,7 +240,7 @@ The example below demonstrates how to specify a node's width depending on the no
         }
 
         itemWidthExpr(obj, value) {
-            if (value)
+            if (value === undefined)
                 obj.width = value;
             else
                 return obj.width || (obj.type === 'group' && 1.5) || 1;

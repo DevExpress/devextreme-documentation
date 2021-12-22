@@ -14,9 +14,14 @@ The current edge's data object.
 An edge's line type (`orthogonal` or `straight`).
 
 ##### param(value): any
-When the function is called as a setter, returns the edge's new line type; when the function is called as a getter, returns `undefined`.
+An edge's new line type or `undefined`.
 
 ---
-The specified field or expression should return `orthogonal` or `straight`.
+A function assigned to this property should do the following:
+
+* Return an edge's new line type when the **value** parameter is set to `undefined`.
+* Save a new line type value to a data storage when the **value** parameter contains an edge's line type. For instance, assign this value to the **obj** parameter's field to save an edge's line type in your data source.
+
+A line type can accept the `orthogonal` or `straight` value.
 
 ![Diagram - Line Types](/images/diagram/line-type.png)

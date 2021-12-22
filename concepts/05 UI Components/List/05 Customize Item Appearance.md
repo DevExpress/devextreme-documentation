@@ -96,9 +96,31 @@ For a minor customization of List items, you can define [specific fields](/api-r
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    const fruits = [
+        { name: "Apples", count: 10 },
+        { name: "Oranges", count: 12 },
+        { name: "Lemons", count: 15 },
+        { name: "Pears", count: 20 },
+        { name: "Pineapples", count: 3 }
+    ];
+
+    $(function() {
+        $("#listContainer").dxList({
+            dataSource: fruits,
+            itemTemplate: function(data, _, element) {
+                element.append(
+                    $("<b>").text(data.fruit), $("<br />"),
+                    $("<p>").text(data.count).css("margin", 0)
+                )
+            }
+        });
+    });
 
 ##### Angular
 
@@ -211,28 +233,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    const fruits = [
-        { name: "Apples", count: 10 },
-        { name: "Oranges", count: 12 },
-        { name: "Lemons", count: 15 },
-        { name: "Pears", count: 20 },
-        { name: "Pineapples", count: 3 }
-    ];
-
-    $(function() {
-        $("#listContainer").dxList({
-            dataSource: fruits,
-            itemTemplate: function(data, _, element) {
-                element.append(
-                    $("<b>").text(data.fruit), $("<br />"),
-                    $("<p>").text(data.count).css("margin", 0)
-                )
-            }
-        });
-    });
+---
+##### jQuery
 
 You can also customize an individual List item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#template') field. 
 
@@ -248,6 +250,7 @@ You can also customize an individual List item. For this purpose, declare a temp
         // ...
     ];
 
+---
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ItemTemplate/",

@@ -1,6 +1,49 @@
-You can define a [groupTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate') to customize group headers. In Angular and Vue, declare the template in the markup. In React, use a rendering function (shown in the code below) or component. Without a **groupTemplate**, group headers display the text of the **key** field in bold font.
+You can define a [groupTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate') to customize group headers. Without a **groupTemplate**, group headers display the text of the **key** field in bold font.
 
 ---
+##### jQuery
+
+    <!--JavaScript-->const fruitsVegetables = [{
+        key: "Fruits",
+        items: [
+            { name: "Apples", count: 10 },
+            { name: "Oranges", count: 12 },
+            { name: "Lemons", count: 15 }
+        ]
+    }, {
+        key: "Vegetables",
+        items: [
+            { name: "Potatoes", count: 5 },
+            { name: "Tomatoes", count: 9 },
+            { name: "Turnips", count: 8 }
+        ]
+    }];
+
+    $(function() {
+        $("#listContainer").dxList({
+            dataSource: new DevExpress.data.DataSource({
+                store: fruitsVegetables,
+                map: function(groupedItem) {
+                    let overallCount = 0;
+                    groupedItem.items.forEach(function(item) {
+                        overallCount += item.count;
+                    });
+                    return $.extend(groupedItem, { overallCount: overallCount })
+                }
+            }),
+            grouped: true,
+            groupTemplate: function(groupData, _, groupElement) {
+                groupElement.append(
+                    $("<p>").text(groupData.key + " | " + groupData.overallCount)
+                )
+            },
+            itemTemplate: function(data, _, element) {
+                element.append(
+                    $("<p>").text(data.name + " | " + data.count).css("margin", 0)
+                )
+            }
+        });
+    });
 
 ##### Angular
 
@@ -180,50 +223,6 @@ You can define a [groupTemplate](/api-reference/10%20UI%20Components/dxList/1%20
     }
 
 ---
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the [groupTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->const fruitsVegetables = [{
-        key: "Fruits",
-        items: [
-            { name: "Apples", count: 10 },
-            { name: "Oranges", count: 12 },
-            { name: "Lemons", count: 15 }
-        ]
-    }, {
-        key: "Vegetables",
-        items: [
-            { name: "Potatoes", count: 5 },
-            { name: "Tomatoes", count: 9 },
-            { name: "Turnips", count: 8 }
-        ]
-    }];
-
-    $(function() {
-        $("#listContainer").dxList({
-            dataSource: new DevExpress.data.DataSource({
-                store: fruitsVegetables,
-                map: function(groupedItem) {
-                    let overallCount = 0;
-                    groupedItem.items.forEach(function(item) {
-                        overallCount += item.count;
-                    });
-                    return $.extend(groupedItem, { overallCount: overallCount })
-                }
-            }),
-            grouped: true,
-            groupTemplate: function(groupData, _, groupElement) {
-                groupElement.append(
-                    $("<p>").text(groupData.key + " | " + groupData.overallCount)
-                )
-            },
-            itemTemplate: function(data, _, element) {
-                element.append(
-                    $("<p>").text(data.name + " | " + data.count).css("margin", 0)
-                )
-            }
-        });
-    });
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"

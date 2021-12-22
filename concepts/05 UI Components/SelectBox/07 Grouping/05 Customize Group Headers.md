@@ -212,8 +212,6 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/GroupedItems/"
 }
 
-In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
-
 #####See Also#####
 - [SelectBox - Customize Item Appearance](/concepts/05%20UI%20Components/SelectBox/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/SelectBox/Customize_Item_Appearance/')
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')

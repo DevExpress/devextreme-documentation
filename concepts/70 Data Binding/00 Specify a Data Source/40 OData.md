@@ -1,5 +1,3 @@
-[note] This article describes how to bind a DevExtreme UI component to an OData service in jQuery, Angular, Vue, and React. For information on data binding in ASP.NET MVC Controls, refer to <a href="https://docs.devexpress.com/AspNetCore/401022/devextreme-based-controls/concepts/bind-controls-to-data/odata" target="_blank">docs.devexpress.com</a>.
-
 To access an OData service, implement the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/'): specify the [url](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/url.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#url') of an OData entity collection, the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key') property, and the OData [version](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration/version.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#version'). You can also handle data-related events:
 
 ---

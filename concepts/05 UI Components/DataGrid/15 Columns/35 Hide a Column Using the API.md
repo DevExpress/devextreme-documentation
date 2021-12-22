@@ -1,11 +1,13 @@
-A column is considered hidden when its [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property is **false**. In Angular, Vue, and React, you can bind this property to a component or state property and change that property. In jQuery, you can change this property using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. For example, the following code hides an *"Email"* column:
-
 ---
 ##### jQuery
+
+A column is considered hidden when its [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property is **false**. You can change this property using the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. For example, the following code hides an *"Email"* column:
 
     <!--JavaScript-->$("#dataGridContainer").dxDataGrid("columnOption", "Email", "visible", false);
 
 ##### Angular
+
+A column is considered hidden when its [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property is **false**. You can bind this property to a component property and change the latter property. For example, the following code hides an *"Email"* column:
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
@@ -52,6 +54,8 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 
 ##### Vue
 
+A column is considered hidden when its [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property is **false**. You can bind this property to a component property and change the latter property. For example, the following code hides an *"Email"* column:
+
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... >
@@ -88,6 +92,8 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
     </script>
 
 ##### React
+
+A column is considered hidden when its [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property is **false**. You can bind this property to a state property and change the latter property. For example, the following code hides an *"Email"* column:
 
     <!-- tab: App.js -->
     import React from 'react';

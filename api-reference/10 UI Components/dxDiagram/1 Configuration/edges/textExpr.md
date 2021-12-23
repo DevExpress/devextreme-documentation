@@ -14,12 +14,18 @@ The current edge's data object.
 An edge's text.
 
 ##### param(value): any
-<!-- Description goes here -->
+An edge's new text or `undefined`.
 
 ---
-The specified data source field or an expression should return a string or object value.
+A function assigned to this property should do the following:
 
-- A string specifies the text displayed in the middle of a connector. 
-    Example: `"text"`.
-- An object can contain multiple texts and their positions on the connector. The position is a number from 0 to 1, where 0 corresponds to the connector's start point and 1 to the connector's end point.
-    Example: `{ 0.3: "text1", 0.8: "text2" }`.
+* Return an edge's new text when the **value** parameter is set to `undefined`.
+* Save a new text value to a data storage when the **value** parameter contains an edge's text. For instance, assign this value to the **obj** parameter's field to save an edge's text in your data source.
+
+Use a string or object value to specify an edge's text:
+
+- **String**  
+Specifies the text in the middle of a connector. For instance, `"text"`.
+
+- **Object**  
+Contains multiple texts and their positions on the connector. The position is a number between 0 and 1, where 0 corresponds to the connector's start point and 1 to the connector's end point. For instance, `{ 0.3: "text1", 0.8: "text2" }`.

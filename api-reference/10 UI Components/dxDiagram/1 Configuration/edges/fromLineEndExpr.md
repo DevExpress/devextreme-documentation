@@ -14,12 +14,22 @@ The current edge's data object.
 An edge's line start tip.
 
 ##### param(value): any
-When the function is called as a setter, returns the edge's new line start tip; when the function is called as a getter, returns `undefined`.
+An edge's new line start tip or `undefined`.
 
 ---
-The specified field or expression should return `none`, `arrow`, `filledTriangle`, or `outlinedTriangle`.
+A function assigned to this property should do the following:
 
-    <!-- tab: index.js -->
+* Return an edge's new line start tip when the **value** parameter is set to `undefined`.
+* Save a new line start tip value to a data storage when the **value** parameter contains an edge's line start tip. For instance, assign this value to the **obj** parameter's field to save an edge's line start tip in your data source.
+
+A start line tip accepts one of the following values:
+
+* `none`
+* `arrow`
+* `filledTriangle`
+* `outlinedTriangle`
+
+<!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
             nodes: {

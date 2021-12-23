@@ -23,13 +23,14 @@ A function assigned to this property should do the following:
 * Save a new line end tip value to a data storage when the **value** parameter contains an edge's line end tip. For instance, assign this value to the **obj** parameter's field to save an edge's line end tip in your data source.
 
 An end line tip accepts one of the following values:
+
 * `none`
 * `arrow`
 * `filledTriangle`
 * `outlinedTriangle`
 
 
-    <!-- tab: index.js -->
+<!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
             nodes: {

@@ -24,7 +24,9 @@ A function assigned to this property should do the following:
 * Return a node's text style as a set of CSS rules in JSON format when the **value** parameter is set to `undefined`. For instance, `{"font-weight": "bold"; "text-decoration": "underline"}`.
 * Save a new style value to a data storage when the **value** parameter contains a node's text style. For instance, assign this value to the **obj** parameter's field to save a node's text style in your data source.
 
-<!-- tab: index.js -->
+<!--->
+
+    <!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
             nodes: {

@@ -27,9 +27,11 @@ A start line tip accepts one of the following values:
 * `none`
 * `arrow`
 * `filledTriangle`
-* `outlinedTriangle` 
+* `outlinedTriangle`
 
-<!-- tab: index.js -->
+<!--->
+
+    <!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
             nodes: {

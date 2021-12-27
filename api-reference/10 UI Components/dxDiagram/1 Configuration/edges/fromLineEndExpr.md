@@ -27,7 +27,7 @@ A start line tip accepts one of the following values:
 * `none`
 * `arrow`
 * `filledTriangle`
-* `outlinedTriangle`
+* `outlinedTriangle` 
 
 <!-- tab: index.js -->
     $(function() {

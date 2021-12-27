@@ -24,7 +24,9 @@ A function assigned to this property should do the following:
 * Return an image URL or Base64 encoded image when the **value** parameter is set to `undefined`.
 * Save a new URL or image value to a data storage when the **value** parameter contains an image URL or Base64 encoded image. For instance, assign this value to the **obj** parameter's field to save an image URL or Base64 encoded image for a node in your data source.
 
-<!-- tab: index.js -->
+<!--->
+
+    <!-- tab: index.js -->
         $(function() {
             $("#diagram").dxDiagram({
                 nodes: {
@@ -43,7 +45,7 @@ A function assigned to this property should do the following:
             });
         });
     
-<!-- tab: data.js -->
+    <!-- tab: data.js -->
     var orgItems = [
         {  
             "id":"110",

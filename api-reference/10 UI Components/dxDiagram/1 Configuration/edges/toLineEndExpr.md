@@ -29,8 +29,9 @@ An end line tip accepts one of the following values:
 * `filledTriangle`
 * `outlinedTriangle`
 
+<!--->
 
-<!-- tab: index.js -->
+    <!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
             nodes: {

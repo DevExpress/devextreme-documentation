@@ -34,7 +34,7 @@ The instance of the popup that contains the form.
 ---
 Scheduler displays the appointment details form inside a popup. The elements inside the form are the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') and [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_popup/') UI components. Use the **onAppointmentFormOpening** function's **form** and **popup** fields and the [Form](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to access and customize the corresponding UI component.
 
-The form stores items in two groups:
+The form organizes its items in two groups:
 
 <table class="dx-table">
     <tr>

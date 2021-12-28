@@ -2,7 +2,7 @@
 id: dxOverlay.Options.copyRootClassesToWrapper
 type: Boolean
 default: false
-deprecated: 
+deprecated: [important] Use the [wrapperAttr]({basewidgetpath}/Configuration/#wrapperAttr) property instead.
 ---
 ---
 ##### shortDescription

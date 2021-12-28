@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The Lookup is component that allows users to search through its drop-down list and select an item.
+The Lookup is a component that allows users to search through its drop-down list and select an item.
 
 This tutorial shows how to add a Lookup to your application, bind it to data, and configure its core features.
 

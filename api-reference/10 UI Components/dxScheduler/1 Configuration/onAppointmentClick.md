@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when an appointment is clicked or tapped. 
+A function that is executed when an appointment is clicked or tapped.
 
 ##### param(e): Object
 Information about the event.
@@ -69,7 +69,7 @@ This object describes a series of appointments that belong to two owners and rep
         } */
     }
 
-Additionally, the **targetedAppointmentData** field has the **displayStartDate** and **displayEndDate** date objects. These objects contain time-zone adjusted dates if you specify the [timeZone](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeZone) property. If the latter property is not specified, the date objects mentioned above have the same values as the **startDate** and **endDate** objects.
+Additionally, the **targetedAppointmentData** field has the **displayStartDate** and **displayEndDate** date objects. These objects contain time-zone adjusted dates if you specify the [timeZone](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/timeZone.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeZone') property. If the latter property is not specified, the date objects mentioned above have the same values as the **startDate** and **endDate** objects.
 
     <!--JavaScript-->
     onAppointmentClick: function(e) {

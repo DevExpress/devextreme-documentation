@@ -75,10 +75,6 @@ The table below lists names of the editors in the 'mainGroup':
         <td>'allDay'. Corresponds to the [SchedulerAppointment.allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) property.</td>
     </tr>
     <tr>
-        <td>Repeat</td>
-        <td>'repeat'. Corresponds to the [SchedulerAppointment.repeat](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#repeat) property.</td>
-    </tr>
-    <tr>
         <td>Description</td>
         <td>'text'. Corresponds to the [SchedulerAppointment.text](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text) property.</td>
     </tr>

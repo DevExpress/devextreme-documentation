@@ -12,6 +12,8 @@ If this property is set to **true**, users can click the button to validate the 
 
 If the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler is specified, it is executed before validation and form submission.
 
+If you need to cancel form submission, handle a form's <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" target="_blank">submit</a> event.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }

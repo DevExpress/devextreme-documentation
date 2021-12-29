@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before an appointment details form is opened. Use this function to customize the form.
+A function that is executed before an appointment details form appears. Use this function to customize the form.
 
 ##### param(e): Object
 Information about the event.
@@ -32,9 +32,9 @@ Model data. Available only if you use Knockout.
 The instance of the popup that contains the form.
 
 ---
-The appointment details form is displayed inside a popup. These elements are implemented by the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') and [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_popup/') UI components. Their instances are passed to the **onAppointmentFormOpening** function in the **form** and **popup** fields. Use the [Form API](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to customize the corresponding UI component.
+The Scheduler displays the appointment details form inside a popup. The elements inside the form are the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') and [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_popup/') UI components. Use the **onAppointmentFormOpening** function's **form** and **popup** fields and the [Form](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to access and customize the corresponding UI component.
 
-Form items are organized into two groups:
+The form organizes its items into two groups:
 
 <table class="dx-table">
     <tr>
@@ -43,7 +43,7 @@ Form items are organized into two groups:
     </tr>
     <tr>
         <td>mainGroup</td>
-        <td>Contains form fields that define main appointment parameters (subject, start and end dates, etc.).</td>
+        <td>Contains form fields that define main appointment parameters (for example, subject, and description).</td>
     </tr>
     <tr>
         <td>recurrenceGroup</td>
@@ -51,11 +51,42 @@ Form items are organized into two groups:
     </tr> 
 </table>
 
-You can add a custom item to any group or create an ungrouped item and display it under the groups, as shown in the following image:
+The table below lists 'mainGroup' editor names:
+
+<table class="dx-table">
+    <tr>
+        <th>Editor Caption on a Form</th>
+        <th>Editor Name</th>
+    </tr>
+    <tr>
+        <td>Subject</td>
+        <td>'text'. Corresponds to the [SchedulerAppointment.text](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text) property.</td>
+    </tr>
+    <tr>
+        <td>Start Date</td>
+        <td>'startDate'. Corresponds to the [SchedulerAppointment.startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) property.</td>
+    </tr>
+    <tr>
+        <td>End Date</td>
+        <td>'endDate'. Corresponds to the [SchedulerAppointment.endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) property.</td>
+    </tr>
+    <tr>
+        <td>All Day</td>
+        <td>'allDay'. Corresponds to the [SchedulerAppointment.allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) property.</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>'text'. Corresponds to the [SchedulerAppointment.text](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text) property.</td>
+    </tr>
+</table>
+
+You can add a custom item to any group or create an ungrouped item and display it under the groups. If you use the **[fieldName]Expr** properties to map custom items to data fields, use these property values to access the items on the appointment form.
 
 ![DevExtreme Scheduler onAppointmentFormOpening](/images/UiWidgets/Scheduler_onAppointmentFormOpening.png)
 
-The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Note that the array of [form items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') should be checked to ensure that it does not already contain an item with the same data field. The following code also adds a title to the popup:
+The code below adds a new form item (`phone`) to the `mainGroup` and creates an ungrouped item (`location`). Check the array of [form items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') to ensure that it does not contain an item with the same data field. 
+
+The `mainGroup` consists of two columns. A custom item's [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') property value is 2. This means that the custom item spans two columns. 
 
 ---
 ##### jQuery
@@ -284,8 +315,6 @@ The code below adds a new form item (`phone`) to the `mainGroup` and creates an 
     export default App;
 
 ---
-
-The `mainGroup` consists of two columns. To make a custom item span both columns, set its [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') to 2 - as shown in the code above. Apply the same setting to an ungrouped item if it should span the `mainGroup` and `recurrenceGroup`.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"

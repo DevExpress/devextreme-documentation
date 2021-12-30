@@ -41,7 +41,7 @@ In the following code, the **searchMode** property is set to *"contains"*. This 
     <template>
         <DxLookup ...
             search-mode="contains"
-            :searchExpr="['Assignee', 'Subject']"
+            :search-expr="['Assignee', 'Subject']"
             :min-search-value="2"
         />
     </template>

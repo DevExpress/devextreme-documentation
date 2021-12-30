@@ -66,7 +66,7 @@ Use the **DataSource**'s [group](/Documentation/ApiReference/Data_Layer/DataSour
     function App() {
         return (
             <Lookup ...
-                grouped="true"
+                grouped={true}
             />
         );
     }

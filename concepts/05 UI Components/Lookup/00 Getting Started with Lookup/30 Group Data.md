@@ -1,4 +1,4 @@
-You can group data by category in the Lookup. To implement this, we will use the data from the previous steps with the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) component that allows you to sort, filter, select, and group data.
+You can group data by category in Lookup. To implement this, we will use the data from the previous steps with the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) component that allows you to sort, filter, select, and group data.
 
 Use the **DataSource**'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) property to specify the data field to group by and enable Lookup's [grouped](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped) property to notify the component that the data source is grouped.
 

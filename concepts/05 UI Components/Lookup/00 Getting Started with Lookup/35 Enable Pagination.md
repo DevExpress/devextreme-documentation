@@ -1,12 +1,12 @@
-If the number of items does not fit in the Lookup size, the scrolling bar appears. You can load items by parts on the "next" button click. Follow the steps below to enable this functionality:
+You can enable pagination of the Lookup component. This feature is intended to render the Lookup items. If the item data is remote, pagination allows to load items by parts to speed up the Lookup's working process. Follow the steps below to enable this functionality:
 
-1. Set the Lookup's [pageLoadMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#pageLoadMode) property to "nextButton".
+1. Set the DataSource's [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) property to **true**.
 
-2. Set the DataSource's [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) property to **true**.
+2. Use the DataSource's [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) property to specify the number of visible items on one page. If you group data (see the topic before), the page size equals the amount of groups.
 
-3. Use the DataSource's [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) property to specify the number of visible items.
+If the number of items does not fit in the Lookup size, the scrolling bar appears. You can load items by parts on the "Next" button click.
 
-Additionally, specify the [nextButtonText](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#nextButtonText) property to rename the "next" button.
+To do this, set the Lookup's [pageLoadMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#pageLoadMode) property to "nextButton". Additionally, specify the [nextButtonText](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#nextButtonText) property to rename the "Next" button.
 
 ---
 ##### jQuery

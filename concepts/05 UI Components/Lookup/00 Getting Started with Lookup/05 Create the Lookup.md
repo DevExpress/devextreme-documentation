@@ -96,9 +96,7 @@
 
     function App() {
         return (
-            <Lookup
-                {/* Configuration goes here */}
-            >
+            <Lookup>
             </Lookup>
         );
     }

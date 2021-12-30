@@ -93,7 +93,7 @@ To customize group titles appearance, use [groupTemplate](/Documentation/ApiRefe
 
     <!-- tab: app.component.html -->
     <dx-lookup>
-        // ...
+        <!-- ... -->
         <div *dxTemplate="let data of 'listGroup'">
             {{ data.key + " - " + data.items.length }}
         </div>

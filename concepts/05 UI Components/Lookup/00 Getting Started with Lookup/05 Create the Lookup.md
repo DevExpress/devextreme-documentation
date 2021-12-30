@@ -1,12 +1,11 @@
-Use the code below to create an empty {WidgetName}:
 
 ---
 ##### jQuery
-[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the following code to create a {WidgetName}:
+[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the following code to create a Lookup:
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}").dx{WidgetName}({ });
+        $("#lookup").dxLookup({ });
     });
 
     <!-- tab: index.html -->
@@ -19,17 +18,17 @@ Use the code below to create an empty {WidgetName}:
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body>
-            <div id="{widgetName}"></div>
+            <div id="lookup"></div>
         </body>
     </html>
 
 
 ##### Angular
 
-[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a {WidgetName}:
+[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a Lookup:
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name}></dx-{widget-name}>
+    <dx-lookup></dx-lookup>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -48,7 +47,7 @@ Use the code below to create an empty {WidgetName}:
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxLookupModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -56,7 +55,7 @@ Use the code below to create an empty {WidgetName}:
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxLookupModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -65,41 +64,41 @@ Use the code below to create an empty {WidgetName}:
 
 ##### Vue
 
-[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the following code to create a {WidgetName}:
+[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the following code to create a Lookup:
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName}/>
+        <DxLookup/>
     </template>
 
     <script>
     import 'devextreme/dist/css/dx.light.css';
-    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
+    import { DxLookup } from 'devextreme-vue/lookup';
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxLookup
         }
     }
     </script>
 
 ##### React
 
-[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code to create a {WidgetName}:
+[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code to create a Lookup:
 
     <!-- tab: App.js -->
     import React from 'react';
 
     import 'devextreme/dist/css/dx.light.css';
 
-    import { {WidgetName} } from 'devextreme-react/{widget-name}';
+    import { Lookup } from 'devextreme-react/lookup';
 
     function App() {
         return (
-            <{WidgetName}
+            <Lookup
                 {/* Configuration goes here */}
             >
-            </{WidgetName}>
+            </Lookup>
         );
     }
 
@@ -108,7 +107,7 @@ Use the code below to create an empty {WidgetName}:
 
 ---
 
-On desktops and iOS devices, the Lookup's drop-down menu is the [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/') UI component. To use the Popup on all devices, assign **false** to the [usePopover](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#usePopover') property.
+On desktops and iOS devices, the Lookup's drop-down menu is the [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/') component.
 
 To customize the Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dropDownOptions') object. For example, the following code allows the Lookup to be closed on outside click and removes the item list title:
 

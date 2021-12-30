@@ -1,25 +1,27 @@
-The Lookup allows users to search through the drop-down list items. To configure the search, set the following properties:
+Lookup allows users to search through the drop-down list items. To configure the search, set the following properties:
 
-- [searchMode]()    
-This property uses one of the two search modes: "contains" or "startswith".  
+- [searchMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode): *"contains"* | *"startswith"*     
+Specifies a comparison operation used to search Lookup's items. 
 
-- [searchExpr]()    
-You can specify the data source item field or several field values in an array to define the search criteria.
+- [searchExpr](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchExpr)    
+Specifies the name of a data source item field or an expression whose value is compared to the search criteria.
 
-- [minSearchLength]()    
-Specify the minimal search length with this property.
+- [minSearchLength](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength)    
+Specifies the minimal number of characters that must be entered into the text box to begin a search.
 
-To disable the search, set the [searchEnabled]() property to **false**.
+To disable the search, set the [searchEnabled](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled) property to **false**.
+
+For example, in the following code the **searchMode** property is set to "contains". This search mode allows users to search through the items that contain the search value. The **searchExpr** property is set to two data fields, and users can search through both. The **minSearchValue** property indicates that the search begins only when users type in two or more characters.
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}").dx{WidgetName}({
+        $("#lookup").dxLookup({
             // ...
-            searchMode: "startswith",
-            searchExpr: ['Assigned', 'Subject'],
+            searchMode: "contains",
+            searchExpr: ['Assignee', 'Subject'],
             minSearchValue: 2
         });
     });
@@ -27,20 +29,20 @@ To disable the search, set the [searchEnabled]() property to **false**.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} ...
-        searchMode="startswith"
-        [searchExpr]="['Assigned', 'Subject']"
-        minSearchValue="2">
-    </dx-{widget-name}>
+    <dx-lookup ...
+        searchMode="contains"
+        [searchExpr]="['Assignee', 'Subject']"
+        [minSearchValue]="2">
+    </dx-lookup>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ...
-            search-mode="startswith"
-            :searchExpr="['Assigned', 'Subject']"
-            min-search-value="2"
+        <DxLookup ...
+            search-mode="contains"
+            :searchExpr="['Assignee', 'Subject']"
+            :min-search-value="2"
         />
     </template>
 
@@ -52,14 +54,14 @@ To disable the search, set the [searchEnabled]() property to **false**.
 
     <!-- tab: App.js -->
     // ...
-    const searchExpression = ['Assigned', 'Subject'];
+    const searchExpression = ['Assignee', 'Subject'];
     
     function App() {
         return (
-            <{WidgetName} ...
-                searchMode="startswith"
+            <Lookup ...
+                searchMode="contains"
                 searchExpr={searchExpression}
-                minSearchValue="2"
+                minSearchValue={2}
             />
         );
     }

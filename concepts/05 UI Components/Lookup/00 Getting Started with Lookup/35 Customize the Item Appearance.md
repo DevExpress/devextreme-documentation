@@ -1,17 +1,14 @@
-To customize item and group titles appearance, use [itemTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate) and [groupTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate).
+To customize item appearance, use [itemTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate).
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}").dx{WidgetName}({
+        $("#lookup").dxLookup({
             // ...
             itemTemplate: function (itemData, itemIndex, itemElement) {
                 return itemData.disabled ? '\u274C ' + itemData.Subject : '\u2705 ' + itemData.Subject;
-            }, 
-            groupTemplate: function (data, index, element) {
-                return data.key + " - " + data.items.length;
             }
         });
     });
@@ -19,14 +16,12 @@ To customize item and group titles appearance, use [itemTemplate](/Documentation
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name}>
+    <dx-lookup>
+        // ...
         <div *dxTemplate="let itemData of 'listItem'">
             {{ itemData.disabled ? '\u274C ' + itemData.Subject : '\u2705 ' + itemData.Subject }}
         </div>
-        <div *dxTemplate="let data of 'listGroup'">
-            {{ data.key + " - " + data.items.length }}
-        </div>
-    </dx-{widget-name}>
+    </dx-lookup>
 
 ##### Vue
 
@@ -34,13 +29,9 @@ To customize item and group titles appearance, use [itemTemplate](/Documentation
     <template>
         <DxLookup ...
             item-template="list-item"
-            group-template="group-list"
         >
             <template #list-item="{ data: itemData }">
                 {{ itemData.disabled ? '\u274C ' + itemData.Subject : '\u2705 ' + itemData.Subject }}
-            </template>
-            <template #group-list="{ data }">
-                {{ data.key + " - " + data.items.length }}
             </template>
         </DxLookup>
     </template>
@@ -58,18 +49,11 @@ To customize item and group titles appearance, use [itemTemplate](/Documentation
             <div>{ data.disabled ? '\u274C ' + data.Subject : '\u2705 ' + data.Subject }</div>
         );
     }
-
-    const renderListGroup = (data) => {
-        return (
-            <div>{ data.key + " - " + data.items.length }</div>
-        );
-    }
     
     function App() {
         return (
-            <{WidgetName} ...
+            <Lookup ...
                 itemRender={renderListItem}
-                groupRender={renderListGroup}
             />
         );
     }

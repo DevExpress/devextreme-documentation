@@ -147,7 +147,15 @@ The following code shows how to declare a template and use these parameters. Thi
 
 ---
 
+
+
 Collection UI components also support templates for individual items. Do not specify the UI component's **dataSource** property if you use individual templates.
+
+[note]
+
+Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
+
+[/note/]
 
 ---
 ##### jQuery

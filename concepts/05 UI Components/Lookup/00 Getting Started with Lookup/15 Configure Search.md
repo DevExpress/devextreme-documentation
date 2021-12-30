@@ -11,7 +11,7 @@ Specifies the minimal number of characters that must be entered into the text bo
 
 To disable the search, set the [searchEnabled](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled) property to **false**.
 
-For example, in the following code the **searchMode** property is set to "contains". This search mode allows users to search through the items that contain the search value. The **searchExpr** property is set to two data fields, and users can search through both. The **minSearchValue** property indicates that the search begins only when users type in two or more characters.
+In the following code, the **searchMode** property is set to *"contains"*. This mode allows users to find items that contain the search value. The **searchExpr** property is set to an array of two data fields, and users can search through both. The **minSearchValue** property indicates that the search begins only when users type in two or more characters.
 
 ---
 ##### jQuery

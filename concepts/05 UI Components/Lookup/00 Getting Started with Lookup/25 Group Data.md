@@ -74,7 +74,7 @@ Use the **DataSource**'s [group](/Documentation/ApiReference/Data_Layer/DataSour
 
 ---
 
-To customize group titles appearance, use [groupTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate).
+To customize the appearance of group titles, use [groupTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate).
 
 ---
 ##### jQuery

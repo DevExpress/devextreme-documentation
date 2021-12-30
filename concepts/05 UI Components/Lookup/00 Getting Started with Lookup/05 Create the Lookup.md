@@ -68,7 +68,8 @@
 
     <!-- tab: App.vue -->
     <template>
-        <DxLookup/>
+        <DxLookup>
+        </DxLookup>
     </template>
 
     <script>

@@ -60,23 +60,23 @@ The table below lists 'mainGroup' editor names:
     </tr>
     <tr>
         <td>Subject</td>
-        <td>'text'. Corresponds to the [SchedulerAppointment.text](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text) property.</td>
+        <td>'text'. Corresponds to the [SchedulerAppointment.text](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/text.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text') property.</td>
     </tr>
     <tr>
         <td>Start Date</td>
-        <td>'startDate'. Corresponds to the [SchedulerAppointment.startDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate) property.</td>
+        <td>'startDate'. Corresponds to the [SchedulerAppointment.startDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate') property.</td>
     </tr>
     <tr>
         <td>End Date</td>
-        <td>'endDate'. Corresponds to the [SchedulerAppointment.endDate](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate) property.</td>
+        <td>'endDate'. Corresponds to the [SchedulerAppointment.endDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate') property.</td>
     </tr>
     <tr>
         <td>All Day</td>
-        <td>'allDay'. Corresponds to the [SchedulerAppointment.allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) property.</td>
+        <td>'allDay'. Corresponds to the [SchedulerAppointment.allDay](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/allDay.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay') property.</td>
     </tr>
     <tr>
         <td>Description</td>
-        <td>'text'. Corresponds to the [SchedulerAppointment.text](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text) property.</td>
+        <td>'text'. Corresponds to the [SchedulerAppointment.text](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/text.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text') property.</td>
     </tr>
 </table>
 

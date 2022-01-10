@@ -1,6 +1,6 @@
 ---
 id: dxProgressBar.Options.value
-type: Number | Boolean
+type: Number | false
 default: 0
 ---
 ---

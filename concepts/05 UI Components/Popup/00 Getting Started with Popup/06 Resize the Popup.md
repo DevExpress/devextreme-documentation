@@ -1,4 +1,4 @@
-Use the [height](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width') properties to set the Popup's size. Set the [resizeEnabled](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#resizeEnabled) property to **true** to allow users to resize the Popup.
+Use the [height](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width') properties to set the Popup's size. Set the [resizeEnabled](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/resizeEnabled.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#resizeEnabled') property to **true** to allow users to resize the Popup.
 
 ---
 ##### jQuery

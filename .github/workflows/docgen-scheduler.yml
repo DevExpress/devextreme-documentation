@@ -19,7 +19,7 @@ jobs:
             WORKFLOW_ID=$(curl https://api.github.com/repos/${{ github.repository }}/actions/workflows | jq -c '.workflows[] | select( .name == "'$WORKFLOW_NAME'" )' | jq .id)
             echo "Workflow id: $WORKFLOW_ID"
 
-            MAJOR_REFS=$(curl https://api.github.com/repos/${{ github.repository }}/git/refs | jq .[].ref | grep -oP "(?<=refs\/heads\/)(1|2)\d_(1|2)")
+            MAJOR_REFS=$(curl https://api.github.com/repos/${{ github.repository }}/branches | jq -r .[].name | grep -oP "^(1|2)\d_(1|2)")
             echo "Major refs: $MAJOR_REFS"
 
             for REF in $MAJOR_REFS

@@ -5,7 +5,6 @@ default: true, false (desktop except Mac)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not the UI component uses native scrolling.
 
 ---
-<!-- Description goes here -->

@@ -53,7 +53,7 @@ Model data. Available only if Knockout is used.
     })
 
     export class AppComponent {
-        onBeforeSend(e){
+        onFilesUploaded(e){
             // ...
         }
     }

@@ -29,7 +29,7 @@ In the most simple case, the MultiView UI component requires only the [dataSourc
 ##### Angular
 
     <!--HTML-->
-    <x-multi-view
+    <dx-multi-view
         [dataSource]="multiViewItems">
     </dx-multi-view>
 

@@ -225,7 +225,7 @@ You can call the **exportGantt** method at any point in your application. In the
     } from 'devextreme-react/gantt';
 
     import { exportGantt as exportGanttToPdf } from 'devextreme/pdf_exporter';
- ​   import { jsPDF } from 'jspdf';
+    import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
 
     const App = () => {

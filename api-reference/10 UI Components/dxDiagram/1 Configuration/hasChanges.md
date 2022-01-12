@@ -5,23 +5,25 @@ default: false
 ---
 ---
 ##### shortDescription
-Indicates whether diagram content has been changed.
+Indicates whether diagram content has unsaved changes.
 
 ---
-The **hasChanges** property is set to **true** on any diagram change. You can use this property together with the [optionChanged](/api-reference/10%20UI%20Components/DOMComponent/4%20Events/optionChanged.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#optionChanged') event to implement diagram content autosave. After the content is saved, set the **hasChanges** property to `false`.
+The Diagram UI component sets the **hasChanges** property to **true** after any change and never resets this value back to **false**. You should manually set the **hasChanges** property to **false** after you save the component's data.
+
+The [optionChanged](/api-reference/10%20UI%20Components/DOMComponent/4%20Events/optionChanged.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#optionChanged') event occurs when the **hasChanges** property value changes. Handle this event as shown below to automatically save diagram data in a storage:
 
     <!-- tab: index.js -->
     var autoSaveIntervalMs = 2000;
     var autoSaveTimeout = -1;
+
     $("#diagram").dxDiagram({
     onOptionChanged: function(e) {
         if(e.name === "hasChanges" && e.value && autoSaveTimeout === -1) {
             autoSaveTimeout = setTimeout(function() {
                 var data = e.component.export();
-                window.localStorage.setItem("foo", data); // store data in some storage
+                window.localStorage.setItem("foo", data); // saves data to a local storage
                 autoSaveTimeout = -1;
                 e.component.option("hasChanges", false);
             }, autoSaveIntervalMs);
         }
     }
-    ...  

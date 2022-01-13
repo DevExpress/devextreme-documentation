@@ -1,10 +1,10 @@
 ---
 id: PdfExportGanttProps.font
 type: PdfExportGanttFont
+inheritsType: PdfExportGanttFont
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the font.
 
 ---
-<!-- Description goes here -->

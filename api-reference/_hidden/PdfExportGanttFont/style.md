@@ -5,7 +5,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The font style.
 
 ---
-<!-- Description goes here -->
+
+Available property values: *"normal"*, *"bold"*, and *"italic"*.

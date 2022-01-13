@@ -51,10 +51,6 @@ A user can press the following keys to interact with the UI component:
     </tr>
     <tr>
         <td>&larr; / &rarr; / &uarr; / &darr;</td>
-        <td>Moves the selected elements in the specified direction.</td>
-    </tr>
-    <tr>
-        <td>Shift + &larr; / &rarr; / &uarr; / &darr;</td>
         <td>Moves the selected elements one grid cell in the specified direction.</td>
     </tr>
     <tr>
@@ -64,6 +60,18 @@ A user can press the following keys to interact with the UI component:
     <tr>
         <td>Alt + &larr; / &rarr; / &uarr; / &darr;</td>
         <td>Clones the selected elements.</td>
+    </tr>
+    <tr>
+        <td>Left Mouse Button Drag</td>
+        <td>Moves the selected elements. If you realize the mouse button above a container, places the elements inside this container.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + Left Mouse Button Drag</td>
+        <td>Moves the selected elements. If you realize the mouse button above a container, places the elements outside this container.</td>
+    </tr>
+    <tr>
+        <td>Shift + Left Mouse Button Drag</td>
+        <td>Moves the selected elements horizontally or vertically. If you realize the mouse button above a container, places the elements outside this container.</td>
     </tr>
     <tr>
         <td>Ctrl + Mouse Wheel</td>
@@ -78,3 +86,5 @@ A user can press the following keys to interact with the UI component:
         <td>Switches to full screen.</td>
     </tr>
 </table>
+
+Refer to the following section for more information: [Work with Chart Elements](https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/diagram.html).

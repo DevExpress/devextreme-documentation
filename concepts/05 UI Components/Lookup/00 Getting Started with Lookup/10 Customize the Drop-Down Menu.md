@@ -65,7 +65,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
         return (
             <Lookup>
                 <DropDownOptions
-                    closeOnOutsideClick="true"
+                    closeOnOutsideClick={true}
                     showTitle={false}
                 />
             </Lookup>

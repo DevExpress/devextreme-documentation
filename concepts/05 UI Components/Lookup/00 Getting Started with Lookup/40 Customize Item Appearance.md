@@ -16,7 +16,8 @@ To customize item appearance, use [itemTemplate](/Documentation/ApiReference/UI_
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-lookup>
+    <dx-lookup ...
+        itemTemplate="listItem">
         <!-- ... -->
         <div *dxTemplate="let itemData of 'listItem'">
             {{ itemData.disabled ? '\u274C ' + itemData.Subject : '\u2705 ' + itemData.Subject }}

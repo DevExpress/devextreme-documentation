@@ -21,7 +21,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
     <!-- tab: app.component.html -->
     <dx-lookup>
         <dxo-drop-down-options
-            closeOnOutsideClick="true"
+            [closeOnOutsideClick]="true"
             [showTitle]="false">
         </dxo-drop-down-options>
     </dx-lookup>

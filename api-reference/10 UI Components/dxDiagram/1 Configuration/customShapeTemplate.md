@@ -20,7 +20,7 @@ The processed shape's object.
 
 - Template content must be presented as SVG elements.
 
-- The Safari browser does not support [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) element. Refer to the following bug report for more information: [Bug 23113 - Layer content inside HTML in SVG foreignObject renders in the wrong place](https://bugs.webkit.org/show_bug.cgi?id=23113).
+- Safari does not support a [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) element. Refer to the following bug report for more information: [Bug 23113 - Layer content inside HTML in SVG foreignObject renders in the wrong place](https://bugs.webkit.org/show_bug.cgi?id=23113).
 
 [/important]
 

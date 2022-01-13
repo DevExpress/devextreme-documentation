@@ -1,4 +1,4 @@
-You can enable pagination of the Lookup component. This feature is intended to render the Lookup items. If the item data is remote, pagination allows to load items by parts to speed up the Lookup's working process. Follow the steps below to enable this functionality:
+Pagination allows Lookup to *render* items in batches. When data is remote, the component can also *load* items in batches if the server can partition data. Follow the steps below to enable this functionality:
 
 1. Set the DataSource's [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) property to **true**.
 

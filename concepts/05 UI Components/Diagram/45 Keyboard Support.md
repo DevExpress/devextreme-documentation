@@ -63,15 +63,15 @@ A user can press the following keys to interact with the UI component:
     </tr>
     <tr>
         <td>Left Mouse Button Drag</td>
-        <td>Moves the selected elements. If you realizes the mouse button above a container, places the elements inside this container.</td>
+        <td>Moves the selected elements. If you realize the mouse button above a container, places the elements inside this container.</td>
     </tr>
     <tr>
         <td>Ctrl + Left Mouse Button Drag</td>
-        <td>Moves the selected elements. If you realizes the mouse button above a container, places the elements outside this container.</td>
+        <td>Moves the selected elements. If you realize the mouse button above a container, places the elements outside this container.</td>
     </tr>
     <tr>
         <td>Shift + Left Mouse Button Drag</td>
-        <td>Moves the selected elements horizontally or vertically. If you realizes the mouse button above a container, places the elements outside this container.</td>
+        <td>Moves the selected elements horizontally or vertically. If you realize the mouse button above a container, places the elements outside this container.</td>
     </tr>
     <tr>
         <td>Ctrl + Mouse Wheel</td>

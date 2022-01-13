@@ -17,8 +17,6 @@ A container's nested items.
 A container's nested items or `undefined`.
 
 ---
-The [containerKeyExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerKeyExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr') property overlaps the **containerChildrenExpr** property. Use the **containerChildrenExpr** or [containerKeyExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerKeyExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr') property to provide a container's content. 
-
 This property is in effect for `"verticalContainer"` or `"horizontalContainer"` nodes.
 
 A function assigned to this property should do the following:
@@ -26,7 +24,8 @@ A function assigned to this property should do the following:
 * Return a container's nested items when the **value** parameter is set to `undefined`.
 * Save item values to a data storage when the **value** parameter contains a container's nested items. For instance, assign these values to the **obj** parameter's field to save a container's nested items in your data source.
 
-[note]The Diagram UI component does not update value of the data source's field assigned to this property.
+You can also use the [containerKeyExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerKeyExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr') property to provide a container's content.
+
 
     <!-- tab: index.js -->
     $(function() {

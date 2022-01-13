@@ -4,7 +4,6 @@ Pagination allows Lookup to *render* items in batches. When data is remote, the 
 
 2. Use the DataSource's [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) property to specify the number of visible items on one page. If you group data (see the topic before), the page size specifies the number of groups.
 
-If the number of items does not fit in the Lookup size, the scrolling bar appears. You can load items by parts on the "Next" button click.
 
 To do this, set the Lookup's [pageLoadMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#pageLoadMode) property to "nextButton". Additionally, specify the [nextButtonText](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#nextButtonText) property to rename the "Next" button.
 

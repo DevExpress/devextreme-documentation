@@ -105,8 +105,7 @@ To customize the appearance of group titles, use [groupTemplate](/Documentation/
     <!-- tab: App.vue -->
     <template>
         <DxLookup ...
-            group-template="group-list"
-        >
+            group-template="group-list">
             <template #group-list="{ data }">
                 {{ data.key + " - " + data.items.length }}
             </template>

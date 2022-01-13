@@ -2,7 +2,7 @@ Pagination allows Lookup to *render* items in batches. When data is remote, the 
 
 1. Set the DataSource's [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) property to **true**.
 
-2. Use the DataSource's [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) property to specify the number of visible items on one page. If you group data (see the topic before), the page size equals the amount of groups.
+2. Use the DataSource's [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) property to specify the number of visible items on one page. If you group data (see the topic before), the page size specifies the number of groups.
 
 If the number of items does not fit in the Lookup size, the scrolling bar appears. You can load items by parts on the "Next" button click.
 

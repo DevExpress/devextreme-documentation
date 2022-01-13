@@ -16,7 +16,13 @@ Information about the currently processed shape.
 The processed shape's object.
 
 ---
-The template content must be presented as SVG elements.
+[important]
+
+- Template content must be presented as SVG elements.
+
+- Safari does not support a [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) element. Refer to the following bug report for more information: [Bug 23113 - Layer content inside HTML in SVG foreignObject renders in the wrong place](https://bugs.webkit.org/show_bug.cgi?id=23113).
+
+[/important]
 
 Use the [template](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/template.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#template') property to define a template of an individual shape.
 

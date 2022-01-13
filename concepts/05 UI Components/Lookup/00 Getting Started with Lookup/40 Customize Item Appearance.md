@@ -29,8 +29,7 @@ To customize item appearance, use [itemTemplate](/Documentation/ApiReference/UI_
     <!-- tab: App.vue -->
     <template>
         <DxLookup ...
-            item-template="list-item"
-        >
+            item-template="list-item">
             <template #list-item="{ data: itemData }">
                 {{ itemData.disabled ? '\u274C ' + itemData.Subject : '\u2705 ' + itemData.Subject }}
             </template>

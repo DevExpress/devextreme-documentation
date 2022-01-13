@@ -92,7 +92,8 @@ To customize the appearance of group titles, use [groupTemplate](/Documentation/
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-lookup>
+    <dx-lookup ...
+        groupTemplate="listGroup">
         <!-- ... -->
         <div *dxTemplate="let data of 'listGroup'">
             {{ data.key + " - " + data.items.length }}

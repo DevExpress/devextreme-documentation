@@ -1,173 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MenuRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-<MenuRule Destination="" SourcePattern="ApiReference:^(10 UI Components|30 Data Layer|50 Common/utils)/(zz )*Errors and Warnings" />
+  <MenuRule Destination="" SourcePattern="ApiReference:^(10 UI Components|30 Data Layer|50 Common/utils)/(zz )*Errors and Warnings" />
 
-<MenuRule Destination="000 Overview" SourcePattern="Howto:^40 Angular Components/00 DevExtreme Angular Components" VisibleFor="Angular" />
-<MenuRule Destination="010 Overview" SourcePattern="Howto:^55 Vue Components/00 DevExtreme Vue Components" VisibleFor="Vue" />
-<MenuRule Destination="020 Overview" SourcePattern="Howto:^50 React Components/00 DevExtreme React Components" VisibleFor="React" />
-<MenuRule Destination="030 Overview" SourcePattern="Howto:^58 jQuery Components/00 DevExtreme jQuery Components" VisibleFor="jQuery" />
+  <MenuRule Destination="000 Overview" SourcePattern="Howto:^40 Angular Components/00 DevExtreme Angular Components" VisibleFor="Angular" />
+  <MenuRule Destination="010 Overview" SourcePattern="Howto:^55 Vue Components/00 DevExtreme Vue Components" VisibleFor="Vue" />
+  <MenuRule Destination="020 Overview" SourcePattern="Howto:^50 React Components/00 DevExtreme React Components" VisibleFor="React" />
+  <MenuRule Destination="030 Overview" SourcePattern="Howto:^58 jQuery Components/00 DevExtreme jQuery Components" VisibleFor="jQuery" />
 
-<MenuRule Destination="050 Getting Started/01 Quick Start" SourcePattern="Howto:^40 Angular Components/10 Getting Started/02 Create a DevExtreme Application" VisibleFor="Angular" />
-<MenuRule Destination="050 Getting Started/02 Quick Start" SourcePattern="Howto:^55 Vue Components/02 Create a DevExtreme Application" VisibleFor="Vue" />
-<MenuRule Destination="050 Getting Started/03 Quick Start" SourcePattern="Howto:^50 React Components/02 Create a DevExtreme Application" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/50 Accessibility" SourcePattern="Howto:^Common/Accessibility" />
+  <MenuRule Destination="050 Getting Started/55 Security Considerations" SourcePattern="Howto:^Common/Security Considerations" />
 
-<MenuRule Destination="050 Getting Started/10 Using with Angular CLI" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
-<MenuRule Destination="050 Getting Started/11 Using with Ionic" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
-<MenuRule Destination="050 Getting Started/12 Add DevExtreme to an Existing Vue Application" SourcePattern="Howto:^55 Vue Components/05 Add DevExtreme to a Vue Application" VisibleFor="Vue" />
-<MenuRule Destination="050 Getting Started/13 Add DevExtreme to an Existing React Application" SourcePattern="Howto:^50 React Components/05 Add DevExtreme to a React Application" VisibleFor="React" />
-<MenuRule Destination="050 Getting Started/14 State Management" SourcePattern="Howto:^50 React Components/20 State Management" VisibleFor="React" />
-<MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application" SourcePattern="Howto:^58 jQuery Components/05 Add DevExtreme to a jQuery Application" VisibleFor="jQuery" />
-
-<MenuRule Destination="050 Getting Started/21 Component Configuration Syntax" SourcePattern="Howto:^40 Angular Components/20 Component Configuration Syntax" VisibleFor="Angular" />
-<MenuRule Destination="050 Getting Started/22 Component Configuration Syntax" SourcePattern="Howto:^55 Vue Components/20 Component Configuration Syntax" VisibleFor="Vue" />
-<MenuRule Destination="050 Getting Started/23 Component Configuration Syntax" SourcePattern="Howto:^50 React Components/40 Component Configuration Syntax" VisibleFor="React" />
-<MenuRule Destination="050 Getting Started/24 Component Configuration Syntax" SourcePattern="Howto:^58 jQuery Components/20 Component Configuration Syntax" VisibleFor="jQuery" />
-
-<MenuRule Destination="050 Getting Started/50 Accessibility" SourcePattern="Howto:^Common/Accessibility" />
-<MenuRule Destination="050 Getting Started/55 Security Considerations" SourcePattern="Howto:^Common/Security Considerations" />
-
-<MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
-<MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
-<MenuRule Destination="050 Getting Started/63 TypeScript Support" SourcePattern="Howto:^Common/TypeScript Support" VisibleFor="jQuery" />
+  <MenuRule Destination="050 Getting Started/80 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
+  <MenuRule Destination="050 Getting Started/90 CDN Links" SourcePattern="Howto:^Common/Distribution Channels/05 CDN" />
   
-<MenuRule Destination="050 Getting Started/71 Supported Angular Versions" SourcePattern="Howto:^40 Angular Components/80 Supported Versions" VisibleFor="Angular" />
-<MenuRule Destination="050 Getting Started/72 Supported Vue Versions" SourcePattern="Howto:^55 Vue Components/80 Supported Versions" VisibleFor="Vue" />
-<MenuRule Destination="050 Getting Started/73 Supported React Versions" SourcePattern="Howto:^50 React Components/80 Supported Versions" VisibleFor="React" />
-<MenuRule Destination="050 Getting Started/74 Supported jQuery Versions" SourcePattern="Howto:^58 jQuery Components/80 Supported Versions" VisibleFor="jQuery" />
-  
-<MenuRule Destination="050 Getting Started/80 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
-<MenuRule Destination="050 Getting Started/90 CDN Links" SourcePattern="Howto:^Common/Distribution Channels/05 CDN" />
+  <MenuRule Destination="050 Getting Started/01 Quick Start" SourcePattern="Howto:^40 Angular Components/10 Getting Started/02 Create a DevExtreme Application" VisibleFor="Angular" />
+  <MenuRule Destination="050 Getting Started/02 Quick Start" SourcePattern="Howto:^55 Vue Components/02 Create a DevExtreme Application" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/03 Quick Start" SourcePattern="Howto:^50 React Components/02 Create a DevExtreme Application" VisibleFor="React" />
 
-<!-- Demos -->
-<MenuRule
-    Destination="10 UI Components/$1/1 Demos"
-    SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip|ButtonGroup|Drawer|Floating Action Button|Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView|Bullet|BarGauge|CircularGauge|LinearGauge|PolarChart|RangeSelector|Sparkline|VectorMap)/Demos"
-/>
-  
-<!-- Overview + How To-->
-<MenuRule
-    Destination="10 UI Components/$1/0 Overview"
-    SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)/[0-9]+ Overview"
-/>
-<MenuRule
-    Destination="10 UI Components/$1/2 How To"
-    SourcePattern="Howto:^05 UI Components/(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip)"
-/>
+  <MenuRule Destination="050 Getting Started/10 Using with Angular CLI" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
+  <MenuRule Destination="050 Getting Started/11 Using with Ionic" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
+  <MenuRule Destination="050 Getting Started/12 Add DevExtreme to an Existing Vue Application" SourcePattern="Howto:^55 Vue Components/05 Add DevExtreme to a Vue Application" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/13 Add DevExtreme to an Existing React Application" SourcePattern="Howto:^50 React Components/05 Add DevExtreme to a React Application" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/14 State Management" SourcePattern="Howto:^50 React Components/20 State Management" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application" SourcePattern="Howto:^58 jQuery Components/05 Add DevExtreme to a jQuery Application" VisibleFor="jQuery" />
 
-<!-- Getting Started -->
-<MenuRule
-    Destination="10 UI Components/$1/0 Getting Started"
-    SourcePattern="Howto:^05 UI Components/(ButtonGroup|Drawer|Floating Action Button)/[0-9]* Getting Started with (ButtonGroup|Navigation Drawer|Floating Action Button)"
-/>
-<MenuRule
-    Destination=""
-    SourcePattern="Howto:^05 UI Components/(ButtonGroup|Drawer|Floating Action Button)"
-/>
-<MenuRule
-    Destination="10 UI Components/Floating Action Button/3 SpeedDialAction API"
-    SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction"
-/>
+  <MenuRule Destination="050 Getting Started/21 Component Configuration Syntax" SourcePattern="Howto:^40 Angular Components/20 Component Configuration Syntax" VisibleFor="Angular" />
+  <MenuRule Destination="050 Getting Started/22 Component Configuration Syntax" SourcePattern="Howto:^55 Vue Components/20 Component Configuration Syntax" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/23 Component Configuration Syntax" SourcePattern="Howto:^50 React Components/40 Component Configuration Syntax" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/24 Component Configuration Syntax" SourcePattern="Howto:^58 jQuery Components/20 Component Configuration Syntax" VisibleFor="jQuery" />
 
-<!-- Getting Started + How To -->
-<MenuRule
-    Destination="10 UI Components/$1/0 Getting Started"
-    SourcePattern="Howto:^05 UI Components/(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)/[0-9]+ Getting Started with (Button|DataGrid|DateBox|Diagram|DropDownButton|File Manager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
-/>
-<MenuRule
-    Destination="10 UI Components/$1/2 How To"
-    SourcePattern="Howto:^05 UI Components/(Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
-/>
+  <MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/63 TypeScript Support" SourcePattern="Howto:^Common/TypeScript Support" VisibleFor="jQuery" />
 
-<!-- Visual Elements -->
-<MenuRule
-    Destination="10 UI Components/$1/0 Overview"
-    SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge)/10 Visual Elements"
-/>
-<MenuRule
-    Destination=""
-    SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge)"
-/>
+  <MenuRule Destination="050 Getting Started/71 Supported Angular Versions" SourcePattern="Howto:^40 Angular Components/80 Supported Versions" VisibleFor="Angular" />
+  <MenuRule Destination="050 Getting Started/72 Supported Vue Versions" SourcePattern="Howto:^55 Vue Components/80 Supported Versions" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/73 Supported React Versions" SourcePattern="Howto:^50 React Components/80 Supported Versions" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/74 Supported jQuery Versions" SourcePattern="Howto:^58 jQuery Components/80 Supported Versions" VisibleFor="jQuery" />
 
-<!-- Visual Elements + How To -->
-<MenuRule
-    Destination="10 UI Components/$1/0 Overview"
-    SourcePattern="Howto:^05 UI Components/(PolarChart|RangeSelector|Sparkline|VectorMap)/10 Visual Elements"
-/>
-<MenuRule
-    Destination="10 UI Components/$1/2 How To"
-    SourcePattern="Howto:^05 UI Components/(PolarChart|RangeSelector|Sparkline|VectorMap)"
-/>
+  <MenuRule Destination="15 Data Binding" SourcePattern="Howto:^70 Data Binding" />
+  <MenuRule Destination="15 Data Binding/99 Data Layer API" SourcePattern="ApiReference:^30 Data Layer" />
 
-<!-- Overview -->
-<MenuRule
-    Destination="10 UI Components/$1/0 Overview"
-    SourcePattern="Howto:^05 UI Components/(Resizable)/00 Overview"
-/>
-<MenuRule
-    Destination=""
-    SourcePattern="Howto:^05 UI Components/(Resizable)"
-/>
+  <MenuRule Destination="20 Data Validation/00 Overview" SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 Data Validation" />
+  <MenuRule Destination="20 Data Validation/99 API/$1" SourcePattern="ApiReference:^10 UI Components/dx(Validator|ValidationGroup|ValidationSummary)" />
+  <MenuRule Destination="20 Data Validation/99 API/zz validationEngine" SourcePattern="ApiReference:^50 Common/utils/validationEngine" />
 
-<!-- API reference -->
-<MenuRule
-    Destination="10 UI Components/$1/3 API"
-    SourcePattern="ApiReference:^10 UI Components/dx(Accordion|ActionSheet|Autocomplete|Box|Calendar|Chart|CheckBox|ColorBox|ContextMenu|DropDownBox|FileUploader|FilterBuilder|Funnel|Gallery|LoadIndicator|LoadPanel|Lookup|Map|Menu|MultiView|NumberBox|PieChart|Popover|ProgressBar|RadioGroup|RangeSlider|ResponsiveBox|Sankey|ScrollView|Slider|Switch|Tabs|TextArea|TextBox|TileView|Toast|Toolbar|Tooltip|ButtonGroup|Drawer|DeferRendering|Draggable|NavBar|PivotGridFieldChooser|SlideOut|SlideOutView|Sortable|TreeMap|Resizable|PolarChart|RangeSelector|Sparkline|VectorMap|Bullet|BarGauge|CircularGauge|LinearGauge|Button|DataGrid|DateBox|Diagram|DropDownButton|FileManager|Form|Gantt|HtmlEditor|List|PivotGrid|Popup|Scheduler|SelectBox|TabPanel|TagBox|TreeList|TreeView)"
-/>
+  <MenuRule Destination="30 Localization and Globalization/Overview" SourcePattern="Howto:^Common/Localization" />
+  <MenuRule Destination="30 Localization and Globalization/Value Formatting" SourcePattern="Howto:^Common/Value Formatting" />
+  <MenuRule Destination="30 Localization and Globalization/zz API/Methods" SourcePattern="ApiReference:^50 Common/utils/localization" />
+  <MenuRule Destination="30 Localization and Globalization/zz API/zz Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/((F|f)ormat)" />
 
-<MenuRule Destination="15 Data Binding" SourcePattern="Howto:^70 Data Binding" />
-<MenuRule Destination="15 Data Binding/99 Data Layer API" SourcePattern="ApiReference:^30 Data Layer" />
+  <MenuRule Destination="40 UI Customization/10 Themes and Styles" SourcePattern="Howto:^60 Themes and Styles" />
+  <MenuRule Destination="40 UI Customization/20 Templates" SourcePattern="Howto:^05 UI Components/zz Common/30 Templates" />
+  <MenuRule Destination="40 UI Customization/10 Themes and Styles/98 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
 
-<MenuRule Destination="20 Data Validation/00 Overview" SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 Data Validation" />
-<MenuRule Destination="20 Data Validation/99 API/$1" SourcePattern="ApiReference:^10 UI Components/dx(Validator|ValidationGroup|ValidationSummary)" />
-<MenuRule Destination="20 Data Validation/99 API/zz validationEngine" SourcePattern="ApiReference:^50 Common/utils/validationEngine" />
+  <MenuRule Destination="50 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
+  <MenuRule Destination="50 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />
+  <MenuRule Destination="50 React Application Template" SourcePattern="Howto:^50 React Components/50 Application Template" />
 
-<MenuRule Destination="30 Localization and Globalization/Overview" SourcePattern="Howto:^Common/Localization" />
-<MenuRule Destination="30 Localization and Globalization/Value Formatting" SourcePattern="Howto:^Common/Value Formatting" />
-<MenuRule Destination="30 Localization and Globalization/zz API/Methods" SourcePattern="ApiReference:^50 Common/utils/localization" />
-<MenuRule Destination="30 Localization and Globalization/zz API/zz Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/((F|f)ormat)" />
+  <MenuRule Destination="60 DevExtreme CLI" SourcePattern="Howto:^Common/DevExtreme CLI" />
 
-<MenuRule Destination="40 UI Customization/10 Themes and Styles" SourcePattern="Howto:^60 Themes and Styles" />
-<MenuRule Destination="40 UI Customization/20 Templates" SourcePattern="Howto:^05 UI Components/zz Common/30 Templates" />
-<MenuRule Destination="40 UI Customization/10 Themes and Styles/98 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
+  <MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
+  <MenuRule Destination="70 Advanced Topics/50 Webpack Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/04 Using Webpack" />
+  <MenuRule Destination="70 Advanced Topics/70 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" />
+  <MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
+  <MenuRule Destination="70 Advanced Topics/90 3rd-Party Frameworks Integration API" SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 3rd-Party Frameworks Integration API" />
+  <MenuRule Destination="70 Advanced Topics/99 Modularity" SourcePattern="Howto:^Common/Modularity" />
 
-<MenuRule Destination="50 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
-<MenuRule Destination="50 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />
-<MenuRule Destination="50 React Application Template" SourcePattern="Howto:^50 React Components/50 Application Template" />
+  <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
 
-<MenuRule Destination="60 DevExtreme CLI" SourcePattern="Howto:^Common/DevExtreme CLI" />
+  <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/((A|a)nimationConfig|(P|p)ositionConfig)" />
+  <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/API/$1" SourcePattern="ApiReference:^50 Common/utils/(animationPresets|fx|TransitionExecutor)" />
+  <MenuRule Destination="10 UI Components/zz Utilities/Data Export/API/$1" SourcePattern="ApiReference:^50 Common/utils/(excel.*|pdf.*)" />
+  <MenuRule Destination="10 UI Components/zz Utilities/Data Export/Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/(Excel.*|Pdf.*|CellRange)" />
+  <MenuRule Destination="10 UI Components/zz Utilities/Device Detection/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(device)" />
+  <MenuRule Destination="10 UI Components/zz Utilities/Device Detection/API" SourcePattern="ApiReference:^50 Common/utils/devices/3 Methods" />
+  <MenuRule Destination="" SourcePattern="ApiReference:^50 Common/utils/devices$" />
+  <MenuRule Destination="10 UI Components/zz Utilities/UI Events/Event List" SourcePattern="ApiReference:^10 UI Components/UI Events" />
+  <MenuRule Destination="10 UI Components/zz Utilities/UI Events/zz API" SourcePattern="ApiReference:^50 Common/utils/events" />
+  <MenuRule Destination="10 UI Components/zz Utilities/UI Events/$1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(EventObject)" />
+  <MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Interfaces" SourcePattern="ApiReference:^50 Common/Object Structures" />
+  <MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Methods" SourcePattern="ApiReference:^50 Common/utils" />
 
-<MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
-<MenuRule Destination="70 Advanced Topics/50 Webpack Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/04 Using Webpack" />
-<MenuRule Destination="70 Advanced Topics/70 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" />
-<MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
-<MenuRule Destination="70 Advanced Topics/90 3rd-Party Frameworks Integration API" SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 3rd-Party Frameworks Integration API" />
-<MenuRule Destination="70 Advanced Topics/99 Modularity" SourcePattern="Howto:^Common/Modularity" />
+  <MenuRule Destination="10 UI Components/$1/1 Demos" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/Demos" />
+  <MenuRule Destination="10 UI Components/$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Overview" />
+  <MenuRule Destination="10 UI Components/$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Visual Elements" />
+  <MenuRule Destination="10 UI Components/$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/(Drawer|FileManager|Floating Action Button)/[0-9]* Getting Started with (File Manager|Navigation Drawer|Floating Action Button)" />
+  <MenuRule Destination="10 UI Components/$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
+  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|zz Common)" />
+  <MenuRule Destination="10 UI Components/$1/2 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
+  <MenuRule Destination="10 UI Components/Floating Action Button/3 SpeedDialAction API" SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction" />
+  <MenuRule Destination="10 UI Components/$1/3 API" SourcePattern="ApiReference:^10 UI Components/dx([a-zA-Z]+)" />
 
-<MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
-
-<MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/((A|a)nimationConfig|(P|p)ositionConfig)" />
-<MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/API/$1" SourcePattern="ApiReference:^50 Common/utils/(animationPresets|fx|TransitionExecutor)" />
-<MenuRule Destination="10 UI Components/zz Utilities/Data Export/API/$1" SourcePattern="ApiReference:^50 Common/utils/(excel.*|pdf.*)" />
-<MenuRule Destination="10 UI Components/zz Utilities/Data Export/Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/(Excel.*|Pdf.*|CellRange)" />
-<MenuRule Destination="10 UI Components/zz Utilities/Device Detection/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(device)" />
-<MenuRule Destination="10 UI Components/zz Utilities/Device Detection/API" SourcePattern="ApiReference:^50 Common/utils/devices/3 Methods" />
-<MenuRule Destination="" SourcePattern="ApiReference:^50 Common/utils/devices$" />
-<MenuRule Destination="10 UI Components/zz Utilities/UI Events/Event List" SourcePattern="ApiReference:^10 UI Components/UI Events" />
-<MenuRule Destination="10 UI Components/zz Utilities/UI Events/zz API" SourcePattern="ApiReference:^50 Common/utils/events" />
-<MenuRule Destination="10 UI Components/zz Utilities/UI Events/$1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(EventObject)" />
-<MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Interfaces" SourcePattern="ApiReference:^50 Common/Object Structures" />
-<MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Methods" SourcePattern="ApiReference:^50 Common/utils" />
-
-<!-- Hidden topics -->
-<MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(SlideOut|SlideOutView|NavBar).*?" />
-<MenuRule Destination="" SourcePattern="Howto:^05 UI Components/zz Common" />
-<MenuRule Destination="" SourcePattern="Howto:^34 ASP.NET MVC Controls" />
-<MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />
-<MenuRule Destination="" SourcePattern="Howto:^Common/Distribution Channels" />
-<MenuRule Destination="" SourcePattern="Howto:^99 VS Integration" />
-<MenuRule Destination="" SourcePattern="Howto:^Getting Started" />
-<MenuRule Destination="" SourcePattern="ApiReference:^(.*?)" /> -->
-<MenuRule Destination="" SourcePattern="Howto:^(.*?)" />
+  <!-- Hidden topics -->
+  <MenuRule Destination="" SourcePattern="Howto:^34 ASP.NET MVC Controls" />
+  <MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />
+  <MenuRule Destination="" SourcePattern="Howto:^Common/Distribution Channels" />
+  <MenuRule Destination="" SourcePattern="Howto:^99 VS Integration" />
+  <MenuRule Destination="" SourcePattern="Howto:^Getting Started" />
+  <MenuRule Destination="" SourcePattern="ApiReference:^(.*?)" /> -->
+  <MenuRule Destination="" SourcePattern="Howto:^(.*?)" />
 
 </MenuRules>

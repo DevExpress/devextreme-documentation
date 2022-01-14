@@ -4,7 +4,7 @@ Pagination allows Lookup to *render* items in batches. When data is remote, the 
 
 2. Use the DataSource's [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) property to specify the number of visible items on one page. If you group data (see the topic before), the page size specifies the number of groups.
 
-Lookup renders the next page when users scroll the drop-down list down to the bottom or when they click the "Next" button. To specify the desired behavior, set the Lookup's [pageLoadMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#pageLoadMode) property to "nextButton". Additionally, you can specify the [nextButtonText](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#nextButtonText) property if you want to rename the "Next" button.
+Lookup renders the next page when users scroll the drop-down list down to the bottom or when they click the "Next" button. To specify the desired behavior, set the Lookup's [pageLoadMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#pageLoadMode) property to *"nextButton"*. Additionally, you can specify the [nextButtonText](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#nextButtonText) property if you want to rename the "Next" button.
 
 ---
 ##### jQuery

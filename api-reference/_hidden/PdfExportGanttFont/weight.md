@@ -9,4 +9,4 @@ The font weight.
 
 ---
 
-Available property values: *"normal"*, *"bold"*, and *"number (400, 700)"*.
+Acceptable property values: *"normal"*, *"bold"*, and *"number (400, 700)"*.

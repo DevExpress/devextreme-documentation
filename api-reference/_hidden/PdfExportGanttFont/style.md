@@ -9,4 +9,4 @@ The font style.
 
 ---
 
-Available property values: *"normal"*, *"bold"*, and *"italic"*.
+Acceptable property values: *"normal"*, *"bold"*, and *"italic"*.

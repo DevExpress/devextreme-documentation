@@ -84,13 +84,7 @@ To customize the appearance of group titles, use [groupTemplate](/Documentation/
         $("#lookup").dxLookup({
             // ... 
             groupTemplate: function (data, index, element) {
-                let countInvisible = 0;
-                for (let i = 0; i < data.items.length; i++) {
-                    if (data.items[i].visible === false) {
-                        countInvisible += 1;
-                    }
-                }
-                return data.key + " (" + (data.items.length - countInvisible) + " tasks)";
+                return data.key + " (" + data.items.length + " tasks)";
             },
         });
     });
@@ -102,24 +96,9 @@ To customize the appearance of group titles, use [groupTemplate](/Documentation/
         groupTemplate="listGroup">
         <!-- ... -->
         <div *dxTemplate="let data of 'listGroup'">
-            {{ groupTemplate(data) }}
+            {{ data.key + " (" + data.items.length + " tasks)" }}
         </div>
     </dx-lookup>
-
-    <!-- tab: app.component.ts -->
-    // ...
-    export class AppComponent {
-        // ...
-        groupTemplate(data) {
-            let countInvisible = 0;
-            for (let i = 0; i < data.items.length; i++) {
-                if (data.items[i].visible === false) {
-                    countInvisible += 1;
-                }
-            }
-            return data.key + " (" + (data.items.length - countInvisible) + " tasks)";
-        }
-    }
 
 ##### Vue
 
@@ -128,28 +107,13 @@ To customize the appearance of group titles, use [groupTemplate](/Documentation/
         <DxLookup ...
             group-template="group-list">
             <template #group-list="{ data }">
-                {{ groupTemplate(data) }}
+                {{ data.key + " (" + data.items.length + " tasks)" }}
             </template>
         </DxLookup>
     </template>
 
     <script>
         // ...
-        export default {
-            // ...
-            methods: {
-                // ...
-                groupTemplate(data) {
-                    let countInvisible = 0;
-                    for (let i = 0; i < data.items.length; i++) {
-                        if (data.items[i].visible === false) {
-                            countInvisible += 1;
-                        }
-                    }
-                    return data.key + " (" + (data.items.length - countInvisible) + " tasks)";
-                }
-            }
-        }
     </script>
 
 ##### React
@@ -157,15 +121,9 @@ To customize the appearance of group titles, use [groupTemplate](/Documentation/
     <!-- tab: App.js -->
     // ...
 
-    const renderListGroup = (data) => {
-        let countInvisible = 0;
-        for (let i = 0; i < data.items.length; i++) {
-            if (data.items[i].visible === false) {
-                countInvisible += 1;
-            }
-        }        
+    const renderListGroup = (data) => {        
         return (
-            <div>{ data.key + " (" + (data.items.length - countInvisible) + " tasks)" }</div>
+            <div>{ data.key + " (" + data.items.length + " tasks)" }</div>
         );
     }
     

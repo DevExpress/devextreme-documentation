@@ -36,8 +36,7 @@ Lookup can load data from different data source types. To use a local array, ass
         }, {
             ID: 2,
             Assignee: "Mr. John Heart",
-            Subject: "Google AdWords Strategy",
-            visible: false
+            Subject: "Google AdWords Strategy"
         }, {
             ID: 3,
             Assignee: "Mr. John Heart",
@@ -133,7 +132,6 @@ Lookup can load data from different data source types. To use a local array, ass
         Assignee: string;
         Subject: string;
         disabled?: boolean;
-        visible?: boolean;
     }
     
     const employeesTasks: Task[] = [
@@ -145,8 +143,7 @@ Lookup can load data from different data source types. To use a local array, ass
         }, {
             ID: 2,
             Assignee: "Mr. John Heart",
-            Subject: "Google AdWords Strategy",
-            visible: false
+            Subject: "Google AdWords Strategy"
         }, {
             ID: 3,
             Assignee: "Mr. John Heart",
@@ -256,8 +253,7 @@ Lookup can load data from different data source types. To use a local array, ass
         }, {
             ID: 2,
             Assignee: "Mr. John Heart",
-            Subject: "Google AdWords Strategy",
-            visible: false
+            Subject: "Google AdWords Strategy"
         }, {
             ID: 3,
             Assignee: "Mr. John Heart",
@@ -351,8 +347,7 @@ Lookup can load data from different data source types. To use a local array, ass
         }, {
             ID: 2,
             Assignee: "Mr. John Heart",
-            Subject: "Google AdWords Strategy",
-            visible: false
+            Subject: "Google AdWords Strategy"
         }, {
             ID: 3,
             Assignee: "Mr. John Heart",

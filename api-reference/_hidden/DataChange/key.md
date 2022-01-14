@@ -7,4 +7,17 @@ type: any
 The key of the row being updated or removed.
 
 ---
-<!-- Description goes here -->
+
+The **key** property supports a simple and composite keys.
+
+---
+
+    <!-- tab: JavaScript -->
+    changes.push({
+        type: 'update',
+        data: { FirstName : 'name1', LastName: 'name2' }
+
+        key: 1 // simple key
+        // or ...
+        key: {ID: 1, SecondID: 2} // composite key
+    });

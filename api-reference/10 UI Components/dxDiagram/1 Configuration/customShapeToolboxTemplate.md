@@ -16,7 +16,13 @@ Information about the currently processed shape.
 Information about the currently processed shape.
 
 ---
-The template content must be presented as SVG elements.
+[important]
+
+- Template content must be presented as SVG elements.
+
+- We recommend that you do not use the [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) element to define template content (Safari [does not support](https://bugs.webkit.org/show_bug.cgi?id=23113) this element).
+
+[/important]
 
 Use the [toolboxTemplate](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapes/toolboxTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/#toolboxTemplate') property to define a template for each shape in the toolbox.
 

@@ -21,22 +21,57 @@ A Promise that is resolved after the file system item is uploaded.
 
 ---
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/AzureClientBinding/"
+}
+
 ---
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!--JavaScript-->   
 	$(function () {
         $("#file-manager").dxFileManager({ 
-            fileSystemProvider: new DevExpress.fileManagement.CustomFileSystemProvider({ 
-                uploadFileChunk: function(fileData, chunksInfo, destinationDir) { 
-                    // Your code goes here
-                }
-                //...
-            }) 
+            fileSystemProvider: provider, 
         });
     });
 
+    const endpointUrl = 'https://js.devexpress.com/Demos/Mvc/api/file-manager-azure-access';
+    gateway = new AzureGateway(endpointUrl, onRequestExecuted);
+    azure = new AzureFileSystem(gateway);
+
+    const provider = new DevExpress.fileManagement.CustomFileSystemProvider({
+        uploadFileChunk,
+        //...
+    });    
+
+    function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
+        let deferred = null;
+        ​
+        if (uploadInfo.chunkIndex === 0) {
+            const filePath = destinationDirectory.path ? `${destinationDirectory.path}/${fileData.name}` : fileData.name;
+            deferred = gateway.getUploadAccessUrl(filePath).done((accessUrl) => {
+            uploadInfo.customData.accessUrl = accessUrl;
+            });
+        } else {
+            deferred = $.Deferred().resolve().promise();
+        }
+        ​
+        deferred = deferred.then(() => gateway.putBlock(
+            uploadInfo.customData.accessUrl,
+            uploadInfo.chunkIndex,
+            uploadInfo.chunkBlob,
+        ));
+        ​
+        if (uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
+            deferred = deferred.then(() => gateway.putBlockList(
+                uploadInfo.customData.accessUrl,
+                uploadInfo.chunkCount,
+            ));
+        }
+        ​
+        return deferred.promise();
+    }
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -57,6 +92,9 @@ A Promise that is resolved after the file system item is uploaded.
     export class AppComponent {
         fileSystemProvider: CustomFileSystemProvider;
         constructor(http: HttpClient) {
+            const endpointUrl = 'https://js.devexpress.com/Demos/Mvc/api/file-manager-azure-access';
+            gateway = new AzureGateway(endpointUrl, this.onRequestExecuted.bind(this));            
+
             this.fileSystemProvider = new CustomFileSystemProvider({
                 uploadFileChunk,
                 // ...
@@ -64,8 +102,32 @@ A Promise that is resolved after the file system item is uploaded.
         }
     }
 
-    function uploadFileChunk(fileData, chunksInfo, destinationDir) {
-        // ...
+    function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
+        let deferred = null;
+        ​
+        if (uploadInfo.chunkIndex === 0) {
+            const filePath = destinationDirectory.path ? `${destinationDirectory.path}/${fileData.name}` : fileData.name;
+            deferred = gateway.getUploadAccessUrl(filePath).done((accessUrl) => {
+            uploadInfo.customData.accessUrl = accessUrl;
+            });
+        } else {
+            deferred = $.Deferred().resolve().promise();
+        }
+        ​
+        deferred = deferred.then(() => gateway.putBlock(
+            uploadInfo.customData.accessUrl,
+            uploadInfo.chunkIndex,
+            uploadInfo.chunkBlob,
+        ));
+        ​
+        if (uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
+            deferred = deferred.then(() => gateway.putBlockList(
+                uploadInfo.customData.accessUrl,
+                uploadInfo.chunkCount,
+            ));
+        }
+        ​
+        return deferred.promise();
     }
     // other functions
 
@@ -113,11 +175,37 @@ A Promise that is resolved after the file system item is uploaded.
                     // ...
                 }),
             };
-        }
+        },
+        created() {
+            gateway = new AzureGateway(endpointUrl, onRequestExecuted);
+        },
     };
 
-    function uploadFileChunk(fileData, chunksInfo, destinationDir) {
-        // ...
+    function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
+        let promise = null;
+
+        if (uploadInfo.chunkIndex === 0) {
+            const filePath = destinationDirectory.path ? `${destinationDirectory.path}/${fileData.name}` : fileData.name;
+            promise = gateway.getUploadAccessUrl(filePath).done((accessUrl) => {
+                uploadInfo.customData.accessUrl = accessUrl;
+            });
+        } else {
+            promise = Promise.resolve();
+        }
+
+        promise = promise.then(() => gateway.putBlock(
+            uploadInfo.customData.accessUrl,
+            uploadInfo.chunkIndex,
+            uploadInfo.chunkBlob,
+        ));
+
+        if (uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
+            promise = promise.then(() => gateway.putBlockList(
+                uploadInfo.customData.accessUrl,
+                uploadInfo.chunkCount,
+            ));
+        }
+        return promise;
     }
     // other functions
 
@@ -135,6 +223,8 @@ A Promise that is resolved after the file system item is uploaded.
         render() {
             constructor() {
                 super();
+                gateway = new AzureGateway(endpointUrl, this.onRequestExecuted);
+                azure = new AzureFileSystem(gateway);
                 this.fileSystemProvider = new CustomFileSystemProvider({
                     uploadFileChunk,
                     // ...
@@ -147,8 +237,32 @@ A Promise that is resolved after the file system item is uploaded.
             );
         }
     }
-    function uploadFileChunk(fileData, chunksInfo, destinationDir) {
-        // ...
+    function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
+        let promise = null;
+
+        if (uploadInfo.chunkIndex === 0) {
+            const filePath = destinationDirectory.path ? `${destinationDirectory.path}/${fileData.name}` : fileData.name;
+            promise = gateway.getUploadAccessUrl(filePath).done((accessUrl) => {
+                uploadInfo.customData.accessUrl = accessUrl;
+            });
+        } else {
+            promise = Promise.resolve();
+        }
+
+        promise = promise.then(() => gateway.putBlock(
+            uploadInfo.customData.accessUrl,
+            uploadInfo.chunkIndex,
+            uploadInfo.chunkBlob,
+        ));
+
+        if (uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
+            promise = promise.then(() => gateway.putBlockList(
+                uploadInfo.customData.accessUrl,
+                uploadInfo.chunkCount,
+            ));
+        }
+
+        return promise;
     }
     // other functions
 
@@ -165,8 +279,33 @@ A Promise that is resolved after the file system item is uploaded.
     )
 
     <script>
-        function uploadFileChunk(fileData, chunksInfo, destinationDir) {
-            // ...
+        var endpointUrl = '@Url.RouteUrl("FileManagerAzureAccessApi")';
+        var gateway = new AzureGateway(endpointUrl, onRequestExecuted);
+        var azure = new AzureFileSystem(gateway);
+        
+        function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
+            var deferred = null;
+
+            if(uploadInfo.chunkIndex === 0) {
+                var filePath = destinationDirectory.path ? destinationDirectory.path + "/" + fileData.name : fileData.name;
+                deferred = gateway.getUploadAccessUrl(filePath).done(function(accessUrl) {
+                    uploadInfo.customData.accessUrl = accessUrl;
+                });
+            } else {
+                deferred = $.Deferred().resolve().promise();
+            }
+
+            deferred = deferred.then(function() {
+                return gateway.putBlock(uploadInfo.customData.accessUrl, uploadInfo.chunkIndex, uploadInfo.chunkBlob);
+            });
+
+            if(uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
+                deferred = deferred.then(function() {
+                    return gateway.putBlockList(uploadInfo.customData.accessUrl, uploadInfo.chunkCount);
+                });
+            }
+
+            return deferred.promise();
         }
         // other functions
     </script>
@@ -182,8 +321,33 @@ A Promise that is resolved after the file system item is uploaded.
     )
 
     <script>
-        function uploadFileChunk(fileData, chunksInfo, destinationDir) {
-            // ...
+        var endpointUrl = '@Url.RouteUrl("FileManagerAzureAccessApi")';
+        var gateway = new AzureGateway(endpointUrl, onRequestExecuted);
+        var azure = new AzureFileSystem(gateway);
+
+        function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
+            var deferred = null;
+
+            if(uploadInfo.chunkIndex === 0) {
+                var filePath = destinationDirectory.path ? destinationDirectory.path + "/" + fileData.name : fileData.name;
+                deferred = gateway.getUploadAccessUrl(filePath).done(function(accessUrl) {
+                    uploadInfo.customData.accessUrl = accessUrl;
+                });
+            } else {
+                deferred = $.Deferred().resolve().promise();
+            }
+
+            deferred = deferred.then(function() {
+                return gateway.putBlock(uploadInfo.customData.accessUrl, uploadInfo.chunkIndex, uploadInfo.chunkBlob);
+            });
+
+            if(uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
+                deferred = deferred.then(function() {
+                    return gateway.putBlockList(uploadInfo.customData.accessUrl, uploadInfo.chunkCount);
+                });
+            }
+
+            return deferred.promise();
         }
         // other functions
     </script>

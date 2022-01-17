@@ -49,4 +49,79 @@ When you assign *"invalid"* to **validationStatus**, you can also use the [valid
         }
     });
 
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { Component, ViewChild } from "@angular/core";
+    import { Dx{WidgetName}Component } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}: Dx{WidgetName}Component
+        // ...
+        setInvalidStatus(message) {
+            {widgetName}.option({
+                validationStatus: "invalid",
+                validationErrors: [{ message: message }]
+            });
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            :ref="{widgetName}RefKey"
+        />
+    </template>
+
+    <script>
+        // ...
+        const {widgetName}RefKey = "my-{widget-name}";
+ 
+        export default {
+            //...
+            data: function() {
+                return {
+                    {widgetName}RefKey
+                };
+            },
+            methods: {
+                setInvalidStatus(message) {
+                    {widgetName}.option({
+                        validationStatus: "invalid",
+                        validationErrors: [{ message: message }]
+                    });
+                }
+            },
+            computed: {
+                {widgetName}: function() {
+                    return this.$refs[{widgetName}RefKey].instance;
+                }
+            }
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef, useCallback } from 'react';
+    // ...
+    
+    function App() {
+        const {widgetName} = useRef(null);
+        setInvalidStatus(message) {
+            {widgetName}.current.instance.option({
+                validationStatus: "invalid",
+                validationErrors: [{ message: message }]
+            });
+        }
+        return (
+            <div>
+                <{WidgetName} ref={{widgetName}} />
+            </div>
+        );
+    }
+    export default App;
+
 ---

@@ -24,14 +24,14 @@ This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank
 
 The **exportGantt(options)** method allows you to save information about the Gantt chart's layout, appearance, and tasks. This method supports the following options:
 
-- **createDocumentMethod** - Specifies a function that creates a PDF document.
-- **format** {string | width?: number, height?: number } - Specifies the document size.
-- **landscape** {boolean} - Specifies whether to use horizontal orientation for the document.
-- **fileName** {string} - Specifies the file name.
-- **exportMode** {"all", "treeList", "chart"} - Specifies the part of the component to export (chart area, tree list area, or the entire component).
-- **font** {[PdfExportGanttFont](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#font)} - Specifies the font.
-- **dateRange** {"all" | "visible" | startDate? : Date, endDate? : Date, startIndex? : number, endIndex? : number } - Restricts data output against a specified date range.
-- **margins** { left?: number, top?: number, right?: number, bottom?: number } - Specifies the outer indents of the exported area.
+- [createDocumentMethod](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#createDocumentMethod) - Specifies a function that creates a PDF document.
+- [format](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#format) - Specifies the document size.
+- [landscape](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#landscape) - Specifies whether to use horizontal orientation for the document.
+- [fileName](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#fileName) - Specifies the file name.
+- [exportMode](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#exportMode) - Specifies the part of the component to export (chart area, tree list area, or the entire component).
+- [font](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/) - Specifies the font.
+- [dateRange](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#dateRange) - Restricts data output against a specified date range.
+- [margins](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#margins) - Specifies the outer indents of the exported area.
 
 You can call the **exportGantt** method at any point in your application. In the example below, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
 

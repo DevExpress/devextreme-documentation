@@ -1,6 +1,6 @@
 On desktops and iOS devices, Lookup's drop-down menu is the [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') UI component; on other devices, it is the [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/') component.
 
-To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dropDownOptions') object. For example, the following code allows Lookup to be closed on outside click and removes the item list title:
+To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dropDownOptions') object. For example, the following code allows users to close Lookup on outside click and removes the item list title:
 
 ---
 ##### jQuery

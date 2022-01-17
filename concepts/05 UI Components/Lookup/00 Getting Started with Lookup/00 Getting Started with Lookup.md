@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-Lookup is a component that allows users to search and select an item in its drop-down list.
+Lookup is a component that allows users to search and select an item in the drop-down list.
 
 This tutorial shows how to add a Lookup component to your application, bind it to data, and configure its core features.
 

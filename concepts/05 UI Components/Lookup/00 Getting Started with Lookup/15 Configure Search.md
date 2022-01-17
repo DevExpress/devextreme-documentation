@@ -1,7 +1,7 @@
 Lookup allows users to search through the drop-down list. To configure the search, set the following properties:
 
 - [searchMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode): *"contains"* | *"startswith"*     
-Specifies a comparison operation used to search Lookup's items. 
+Specifies a comparison operation used to search Lookup items. 
 
 - [searchExpr](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchExpr)    
 Specifies data fields or an expression against which the component compares the search criteria.

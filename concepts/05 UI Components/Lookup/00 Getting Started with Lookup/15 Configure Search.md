@@ -14,7 +14,7 @@ Specifies whether the UI component displays unfiltered values until users types 
 
 To disable the search, set the [searchEnabled](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled) property to **false**.
 
-In the following code, the **searchMode** property is set to *"contains"*. This mode allows users to find items that contain the search value. The **searchExpr** property is set to an array of two data fields, and the component searches across them both. The **minSearchLength** property indicates that the search begins only when users type in two or more characters. The **showDataBeforeSearch** property is set to **true**, and the component shows items before the search starts.
+In the following code, the **searchMode** property is set to *"contains"*. This mode allows users to find items that contain the search value. The **searchExpr** property is set to an array of two data fields to searches both fields. The **minSearchLength** property indicates that the search begins only when users type two or more characters. The **showDataBeforeSearch** property is set to **true**, and the component shows items before the search starts.
 
 ---
 ##### jQuery

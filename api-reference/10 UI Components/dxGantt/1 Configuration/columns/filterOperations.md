@@ -1,9 +1,9 @@
 ---
 ##### shortDescription
-Specifies available filter operations. Applies if [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '{basewidgetpath}/Configuration/columns/#allowFiltering') is **true** and the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/') is visible.
+Specifies available filter operations. Applies if [allowFiltering](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowFiltering) is **true** and the [filterRow](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/) is visible.
 
 ---
-The following table lists available filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations in the filter row. The {WidgetName} uses the first operation in each array as the default operation for the specified data type.
+The following table lists available filter operations by [data type](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#dataType). Users can apply these filter operations in the filter row. The Gantt uses the first operation in each array as the default operation for the specified data type.
 
 <table class="dx-table">
   <tr>

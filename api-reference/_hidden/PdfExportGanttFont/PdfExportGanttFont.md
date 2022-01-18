@@ -9,7 +9,19 @@ Configures a custom font used for the Gantt data export.
 
 Specify the [font](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#font) property in the [exportGantt](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions) method to use a custom font in the exported Gantt data.
 
-    <!-- tab: index.js -->
+    const timeZones = DevExpress.utils.getTimeZones(new Date(2020, 6, 21));
+    // ===== or when using modules =====
+    import { getTimeZones } from 'devextreme/time_zone_utils';
+    const timeZones = getTimeZones(new Date(2020, 6, 21));
+    // The timeZones constant contains the following array:
+    // [
+    //      { offset: 2, title: "(GMT +02:00) Europe/Berlin", id: "Europe/Berlin" },
+    //      { offset: 2, title: "(GMT +02:00) Europe/Amsterdam", id: "Europe/Amsterdam" }
+    //      ...
+    // ]
+
+
+    <!-- tab: JavaScript -->
     DevExpress.pdfExporter.exportGantt(
       {
         component: ganttInstance,
@@ -22,5 +34,17 @@ Specify the [font](/Documentation/ApiReference/Common/Object_Structures/PdfExpor
     ).then((doc) => {
       doc.save('gantt.pdf');
     });
-    <!-- tab: Roboto-BoldItalic-bolditalic.js -->
+    // ===== or when using modules =====
+    import { exportGantt as exportGanttToPdf } from 'devextreme/pdf_exporter';
+    exportGanttToPdf(
+      {
+        component: ganttInstance,
+        createDocumentMethod: (args) => new jsPDF(args),
+        font: {
+            fontObject: myfont,
+            name: 'Roboto-BoldItalic',
+        }
+      },
+    ).then((doc) => doc.save('gantt.pdf'));
+    <!-- tab: Roboto-BoldItalic.js -->
     var myfont = 'AAEAAAAS...';

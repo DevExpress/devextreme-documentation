@@ -21,7 +21,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/Lookup/Overview/"
+    url: "/Documentation/Guide/UI_Components/Lookup/Getting_Started_with_Lookup/"
 }
 
 #####See Also#####

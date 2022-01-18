@@ -22,6 +22,6 @@ The **format** property accepts the following formats:
             height: 300
         }
 
-- Auto. Gantt adjusts document size to the exported data. 
+- Auto (Gantt adjusts document size to the exported data) 
 
         format: 'auto'

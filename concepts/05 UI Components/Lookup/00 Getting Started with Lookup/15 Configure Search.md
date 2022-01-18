@@ -7,7 +7,7 @@ Specifies the comparison operation used to search Lookup items.
 Specifies data fields or an expression against which the component compares the search criteria.
 
 - [minSearchLength](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength)    
-Specifies the minimal number of characters that users should enter into the text box to begin a search.
+Specifies the minimum number of characters that users should enter into the text box to begin a search.
 
 - [showDataBeforeSearch](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#showDataBeforeSearch)    
 Specifies whether or not the UI component displays unfiltered values until users types a number of characters exceeding the **minSearchLength** property value.

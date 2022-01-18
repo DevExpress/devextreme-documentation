@@ -15,7 +15,7 @@ The **format** property accepts the following formats:
 
         format: 'a4'
 
-- Custom paper width and height.
+- Custom document width and height.
 
         format: {
             width: 210,

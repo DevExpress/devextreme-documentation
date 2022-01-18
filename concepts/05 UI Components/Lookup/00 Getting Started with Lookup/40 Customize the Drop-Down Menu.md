@@ -75,7 +75,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
 
 ---
 
-You have configured basic Lookup features. To take a more detailed look at this UI component, explore the following resources:
+You have configured basic Lookup features. For more information about this UI component and examples, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
 * [API Reference](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')

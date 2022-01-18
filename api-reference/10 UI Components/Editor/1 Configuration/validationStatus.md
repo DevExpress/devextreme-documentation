@@ -117,7 +117,7 @@ When you assign *"invalid"* to **validationStatus**, you can also use the [valid
             <{WidgetName}
                 validationStatus={validationStatus}
                 validationErrors={validationErrors}
-            >
+            />
         ); 
         
     };

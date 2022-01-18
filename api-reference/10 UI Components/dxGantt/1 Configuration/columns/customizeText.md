@@ -159,6 +159,7 @@ The text the cell should display.
 [note] 
 - The specified text is not used to filter data. If it should be, specify the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#calculateCellValue) function instead.
 - The `this` keyword refers to the column's configuration.
+[/note]
 
 #####See Also#####
 - **columns[]**.[calculateCellValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#calculateCellValue)

@@ -22,7 +22,7 @@ The **dateRange** property accepts the following values:
             endIndex: 5
         }
 
-- A range of <a href="https://www.w3schools.com/js/js_dates.asp" target="_blank">Date</a> values.
+- A range of <a href="https://www.w3schools.com/js/js_dates.asp" target="_blank">Date</a> values
 
         dateRange: {
             startDate: new Date(2020, 0, 1),

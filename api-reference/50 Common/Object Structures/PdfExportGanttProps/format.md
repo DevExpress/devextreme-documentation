@@ -11,11 +11,11 @@ Specifies the document size.
 
 The **format** property accepts the following formats: 
 
-- Standard document sizes from A0 to A10.
+- Standard document sizes from A0 to A10
 
         format: 'a4'
 
-- Custom document width and height.
+- Custom document width and height
 
         format: {
             width: 210,

@@ -1,3 +1,3 @@
 
 #####See Also#####
-- **columns[]**.[filterValues](/api-reference/_hidden/GridBaseColumn/filterValues.md '{basewidgetpath}/Configuration/columns/#filterValues')
+- **columns[]**.[filterValues](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValues)

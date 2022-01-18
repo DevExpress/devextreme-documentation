@@ -51,18 +51,21 @@ When you assign *"invalid"* to **validationStatus**, you can also use the [valid
 
 ##### Angular
 
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}
+        [validationStatus]="validationStatus"
+        [validationErrors]="validationErrors">
+    </dx-{widget-name}>
+
     <!-- tab: app.component.ts -->
-    import { Component, ViewChild } from "@angular/core";
-    import { Dx{WidgetName}Component } from "devextreme-angular";
     // ...
     export class AppComponent {
-        @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}: Dx{WidgetName}Component
+        validationStatus: string = "valid";
+        validationErrors: any;
         // ...
         setInvalidStatus(message) {
-            {widgetName}.option({
-                validationStatus: "invalid",
-                validationErrors: [{ message: message }]
-            });
+            this.validationStatus = "invalid";
+            this.validationErrors = [{ message: message }];
         }
     }
 
@@ -71,57 +74,53 @@ When you assign *"invalid"* to **validationStatus**, you can also use the [valid
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ...
-            :ref="{widgetName}RefKey"
+            :validation-status="validationStatus"
+            :validation-errors="validationErrors"
         />
     </template>
 
     <script>
         // ...
-        const {widgetName}RefKey = "my-{widget-name}";
- 
         export default {
-            //...
-            data: function() {
+            // ...
+            data() {
                 return {
-                    {widgetName}RefKey
-                };
+                    validationStatus: "valid",
+                    validationErrors: []
+                }
             },
             methods: {
                 setInvalidStatus(message) {
-                    {widgetName}.option({
-                        validationStatus: "invalid",
-                        validationErrors: [{ message: message }]
-                    });
-                }
-            },
-            computed: {
-                {widgetName}: function() {
-                    return this.$refs[{widgetName}RefKey].instance;
+                    this.validationStatus = "invalid";
+                    this.validationErrors = [{ message: message }];
                 }
             }
-        };
+        }
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useRef, useCallback } from 'react';
+    import React, { useState } from 'react';
     // ...
-    
+
     function App() {
-        const {widgetName} = useRef(null);
-        setInvalidStatus(message) {
-            {widgetName}.current.instance.option({
-                validationStatus: "invalid",
-                validationErrors: [{ message: message }]
-            });
+        const [validationStatus, setValidationStatus] = useState("valid");
+        const [validationErrors, setValidationErrors] = useState([]);
+
+        const setInvalidStatus = message => {
+            setValidationStatus("invalid");
+            setValidationErrors([{ message: message }]);
         }
+
         return (
-            <div>
-                <{WidgetName} ref={{widgetName}} />
-            </div>
-        );
-    }
+            <{WidgetName}
+                validationStatus={validationStatus}
+                validationErrors={validationErrors}
+            >
+        ); 
+        
+    };
     export default App;
 
 ---

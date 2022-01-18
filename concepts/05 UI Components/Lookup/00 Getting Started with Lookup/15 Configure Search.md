@@ -1,20 +1,20 @@
 Lookup allows users to search through the drop-down list. To configure the search, set the following properties:
 
 - [searchMode](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchMode): *"contains"* | *"startswith"*     
-Specifies a comparison operation used to search Lookup items. 
+Specifies the comparison operation used to search Lookup items. 
 
 - [searchExpr](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchExpr)    
 Specifies data fields or an expression against which the component compares the search criteria.
 
 - [minSearchLength](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#minSearchLength)    
-Specifies the minimal number of characters that users should enter into the text box to begin a search.
+Specifies the minimum number of characters that users should enter into the text box to begin a search.
 
 - [showDataBeforeSearch](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#showDataBeforeSearch)    
-Specifies whether or not the UI component displays unfiltered values until users types a number of characters exceeding the **minSearchLength** property value.
+Specifies whether the UI component displays unfiltered values until users types the number of characters that exceed the **minSearchLength** property value.
 
 To disable the search, set the [searchEnabled](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#searchEnabled) property to **false**.
 
-In the following code, the **searchMode** property is set to *"contains"*. This mode allows users to find items that contain the search value. The **searchExpr** property is set to an array of two data fields, and the component searches across them both. The **minSearchLength** property indicates that the search begins only when users type in two or more characters. The **showDataBeforeSearch** property is set to **true**, and the component shows items before the search starts.
+In the following code, the **searchMode** property is set to *"contains"*. This mode allows users to find items that contain the search value. The **searchExpr** property is set to an array of two data fields to searches both fields. The **minSearchLength** property indicates that the search begins only when users type two or more characters. The **showDataBeforeSearch** property is set to **true**, and the component shows items before the search starts.
 
 ---
 ##### jQuery

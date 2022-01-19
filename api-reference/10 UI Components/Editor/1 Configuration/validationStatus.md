@@ -30,7 +30,7 @@ The following table illustrates the validation status indicators:
     </tr>
 </table>
 
-When you assign *"invalid"* to **validationStatus**, you can also use the [validationErrors]({basewidgetpath}/Configuration/#validationErrors) array to set an error message as shown below:
+When you assign *"invalid"* to **validationStatus**, you can also use the [validationErrors](/api-reference/10%20UI%20Components/Editor/1%20Configuration/validationErrors.md '{basewidgetpath}/Configuration/#validationErrors') array to set an error message as shown below:
 
 ---
 ##### jQuery

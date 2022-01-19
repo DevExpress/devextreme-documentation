@@ -1,6 +1,6 @@
-You can group data by category in Lookup. To implement this, we use data from the previous steps with the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) component that allows you to sort, filter, select, and group data.
+You can group data by category in Lookup. To implement this, we use data from the previous steps with the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component that allows you to sort, filter, select, and group data.
 
-Use the **DataSource**'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) property to specify the data field to group by and enable Lookup's [grouped](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped) property to notify the component that the data source is grouped.
+Use the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property to specify the data field to group by and enable Lookup's [grouped](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#grouped') property to notify the component that the data source is grouped.
 
 ---
 ##### jQuery
@@ -74,7 +74,7 @@ Use the **DataSource**'s [group](/Documentation/ApiReference/Data_Layer/DataSour
 
 ---
 
-To customize the appearance of group titles, use [groupTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate).
+To customize the appearance of group titles, use [groupTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate').
 
 ---
 ##### jQuery

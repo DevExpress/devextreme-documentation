@@ -1,9 +1,9 @@
-Lookup can load data from different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dataSource) property. If array elements are objects, specify the fields that supply Lookup's value ([valueExpr](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#valueExpr)) and displayed value ([displayExpr](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#displayExpr)). For information on other data source types, refer to the following articles:
+Lookup can load data from different data source types. To use a local array, assign it to the [dataSource](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#dataSource') property. If array elements are objects, specify the fields that supply Lookup's value ([valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#valueExpr')) and displayed value ([displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#displayExpr')). For information on other data source types, refer to the following articles:
 
-- [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
-- [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
-- [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
-- [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)
+- [Read-Only Data in JSON Format](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
+- [OData](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
+- [Web API, PHP, MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/')
+- [Custom Data Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 
 ---
 ##### jQuery

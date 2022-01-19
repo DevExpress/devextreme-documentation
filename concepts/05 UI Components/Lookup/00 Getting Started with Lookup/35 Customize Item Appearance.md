@@ -1,4 +1,4 @@
-To customize item appearance, use [itemTemplate](/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate).
+To customize item appearance, use [itemTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate').
 
 ---
 ##### jQuery

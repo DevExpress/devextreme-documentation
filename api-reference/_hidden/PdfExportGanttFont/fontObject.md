@@ -13,32 +13,6 @@ Use the <a href="https://rawgit.com/MrRio/jsPDF/master/fontconverter/fontconvert
 
 ![DevExtreme Gantt - Custom Font for PDF Export](/images/Gantt/font-object-converter.png)
 
-Add the generated .js file or only a base64-encoded string from this file to your project to export data with your font.
+Add the generated .js file or only a base64-encoded string from this file to your project to export data with your font. 
 
-    <!-- tab: JavaScript -->
-    DevExpress.pdfExporter.exportGantt(
-      {
-        component: ganttInstance,
-        createDocumentMethod: (args) => new jsPDF(args),
-        font: {
-            fontObject: myfont,
-            name: 'Roboto-BoldItalic',
-        }
-      },
-    ).then((doc) => {
-      doc.save('gantt.pdf');
-    });
-    // ===== or when using modules =====
-    import { exportGantt as exportGanttToPdf } from 'devextreme/pdf_exporter';
-    exportGanttToPdf(
-      {
-        component: ganttInstance,
-        createDocumentMethod: (args) => new jsPDF(args),
-        font: {
-            fontObject: myfont,
-            name: 'Roboto-BoldItalic',
-        }
-      },
-    ).then((doc) => doc.save('gantt.pdf'));
-    <!-- tab: Roboto-BoldItalic.js -->
-    var myfont = 'AAEAAAAS...';
+Refer to the [font](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/#font) property description for the example.

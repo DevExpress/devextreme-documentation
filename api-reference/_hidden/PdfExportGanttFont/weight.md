@@ -5,7 +5,8 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The font weight.
 
 ---
-<!-- Description goes here -->
+
+Acceptable property values: *"normal"*, *"bold"*, and *"number (400, 700)"*.

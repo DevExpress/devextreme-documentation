@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The font name.
 
 ---
-<!-- Description goes here -->

@@ -7,3 +7,9 @@ Exports:
         require("pdf_exporter").exportDataGrid;
         // ===== or =====
         import { exportDataGrid } from "devextreme/pdf_exporter";
+
+- *exportGantt* - The [exportGantt(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions) method
+
+        require("pdf_exporter").exportGantt;
+        // ===== or =====
+        import { exportGantt } from "devextreme/pdf_exporter";

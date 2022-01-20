@@ -8,7 +8,7 @@ Exports:
         // ===== or =====
         import { exportDataGrid } from "devextreme/pdf_exporter";
 
-- *exportGantt* - The [exportGantt(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions) method
+- *exportGantt* - The [exportGantt(options)](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method
 
         require("pdf_exporter").exportGantt;
         // ===== or =====

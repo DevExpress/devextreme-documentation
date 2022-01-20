@@ -9,8 +9,4 @@ default: 'after'
 Specifies whether to place the button before or after the input text field.
 
 ---
-[note]
-
-You cannot use this property for built-in buttons.
-
-[/note]
+[note] This property does not work for built-in buttons.

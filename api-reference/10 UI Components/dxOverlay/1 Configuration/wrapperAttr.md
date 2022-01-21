@@ -8,6 +8,29 @@ default: {}
 Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attributes</a> for the UI component's wrapper element.
 
 ---
+
+You can specify attributes to the component's container directly in HTML code:
+
+- jQuery
+
+    <div id="myPopup" class="myClass"></div>
+
+- Angular
+
+    <dx-popup ... class="myClass"></dx-popup>
+
+- React
+
+    <Popup ... className="myClass" />
+
+- ASP.NET Core and MVC (the component's **OnInitialized** function)
+
+    @(Html.DevExtreme().Popup()...
+        .OnInitialized("(e) => e.element.addClass('myClass')")
+    )
+
+The following example illustrates how to specify the `id` and `class` attributes to the component's wrapper. 
+
 ---
 ##### jQuery
 

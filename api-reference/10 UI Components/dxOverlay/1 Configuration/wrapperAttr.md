@@ -9,7 +9,7 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 
 ---
 
-You can specify attributes to the component's container directly in HTML code:
+You can specify attributes to the component's root element directly in HTML code:
 
 - jQuery
 
@@ -29,7 +29,7 @@ You can specify attributes to the component's container directly in HTML code:
         .OnInitialized("(e) => e.element.addClass('myClass')")
     )
 
-The following example illustrates how to specify the `id` and `class` attributes to the component's wrapper. 
+The following example illustrates how to specify the `id` and `class` attributes to the component's wrapper: 
 
 ---
 ##### jQuery

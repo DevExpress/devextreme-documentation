@@ -14,12 +14,17 @@ The current node's data object.
 A node's text style.
 
 ##### param(value): any
-When the function is called as a setter, returns the node's new text style; when the function is called as a getter, returns `undefined`.
+A node's new text style or `undefined`.
 
 ---
-A data source field specified by this property must contain inline style declarations in string format, for instance `"font-weight: bold; text-decoration: underline"`. 
+A data source field assigned to this property should contain in-line style declarations in string format. For instance, `"font-weight: bold; text-decoration: underline"`. 
 
-If you provide a function for the **textStyleExpr** property, the function can return style settings as CSS rules in JSON format.
+A function assigned to this property should do the following:
+
+* Return a node's text style as a set of CSS rules in JSON format when the **value** parameter is set to `undefined`. For instance, `{"font-weight": "bold"; "text-decoration": "underline"}`.
+* Save a new style value to a data storage when the **value** parameter contains a node's text style. For instance, assign this value to the **obj** parameter's field to save a node's text style in your data source.
+
+<!--->
 
     <!-- tab: index.js -->
     $(function() {
@@ -29,11 +34,15 @@ If you provide a function for the **textStyleExpr** property, the function can r
             //...
         });
 
-        function itemTextStyleExpr(obj) {
-            let style = { "font-weight": "bold" };
-            if(obj.level === "senior")
-                style["text-decoration"] = "underline";
-            return style;
+        function itemTextStyleExpr(obj, value) {
+            if (value === "undefined") {
+                let style = { "font-weight": "bold" };
+                if(obj.level === "senior")
+                    style["text-decoration"] = "underline";
+                return style;
+            }
+            else
+                obj.style = value;
         }
     });
 

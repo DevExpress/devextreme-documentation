@@ -14,9 +14,14 @@ The current node's data object.
 A node's parent container node.
 
 ##### param(value): any
-When the function is called as a setter, returns a key of the node's parent container node; when the function is called as a getter, returns `undefined`.
+A node's parent container node or `undefined`.
 
 ---
+A function assigned to this property should do the following:
+
+* Return a node's parent container node when the **value** parameter is set to `undefined`.
+* Save a container node value to a data storage when the **value** parameter contains a node's parent container node. For instance, assign this value to the **obj** parameter's field to save a node's parent container node in your data source.
+
 The parent container node must be of the `"verticalContainer"` or `"horizontalContainer"` [type](/concepts/05%20UI%20Components/Diagram/40%20Shape%20Types.md '/Documentation/Guide/UI_Components/Diagram/Shape_Types/').
 
 You can also use the [containerChildrenExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerChildrenExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerChildrenExpr') property to provide a container's content.

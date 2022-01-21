@@ -12,7 +12,7 @@ The filter row contains a magnifier icon in its cells. Users can click this icon
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row_operation_chooser.png)
 
-The **Gantt** allows you to define initial filter settings in code. Specify a column's [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue') property to apply filter criteria to the column.
+The **Gantt** allows you to define initial filter settings in code. Specify a column's [filterValue](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/columns/filterValue.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue') property to apply filter criteria to the column.
 
 ---
 ##### jQuery
@@ -236,7 +236,7 @@ Underlying [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Docume
     </tr>
 </table>
 
-You can use the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations') property to specify necessary filter operations for each column.
+You can use the [filterOperations](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/columns/filterOperations.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterOperations') property to specify necessary filter operations for each column.
 
 ---
 ##### jQuery

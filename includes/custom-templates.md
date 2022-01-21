@@ -163,6 +163,8 @@ The following code shows how to declare a template and use these parameters. Thi
 
 ---
 
+#include named-templates-note
+
 Collection UI components also support templates for individual items. Do not specify the UI component's **dataSource** property if you use individual templates.
 
 ---

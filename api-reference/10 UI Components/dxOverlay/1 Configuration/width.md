@@ -5,7 +5,7 @@ default: '80vw'
 ---
 ---
 ##### shortDescription
-Specifies the UI component's width in pixels.
+Specifies the UI component's width.
 
 ##### return: Number | String
 The UI component's width.

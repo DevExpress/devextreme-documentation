@@ -16,4 +16,6 @@
         </div>
     </body>
 
+#include overlays-specify-attributes
+
 <!-- import * from 'api-reference\10 UI Components\dxOverlay\1 Configuration\wrapperAttr.md' -->

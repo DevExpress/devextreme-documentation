@@ -15,4 +15,4 @@ Use the <a href="https://rawgit.com/MrRio/jsPDF/master/fontconverter/fontconvert
 
 Add the generated .js file or only a base64-encoded string from this file to your project to export data with your font. 
 
-Refer to the [font](/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/) property description for the example.
+Refer to the [font](/api-reference/50%20Common/Object%20Structures/PdfExportGanttProps/font.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/') property description for the example.

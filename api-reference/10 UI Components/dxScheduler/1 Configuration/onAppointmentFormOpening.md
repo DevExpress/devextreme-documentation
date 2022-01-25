@@ -60,23 +60,23 @@ The table below lists 'mainGroup' editor names:
     </tr>
     <tr>
         <td>Subject</td>
-        <td>'text'. Corresponds to the [SchedulerAppointment.text](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/text.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text') property.</td>
+        <td>'text'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text">SchedulerAppointment.text</a> property.</td>
     </tr>
     <tr>
         <td>Start Date</td>
-        <td>'startDate'. Corresponds to the [SchedulerAppointment.startDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate') property.</td>
+        <td>'startDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate">SchedulerAppointment.startDate</a> property.</td>
     </tr>
     <tr>
         <td>End Date</td>
-        <td>'endDate'. Corresponds to the [SchedulerAppointment.endDate](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate') property.</td>
+        <td>'endDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate">SchedulerAppointment.endDate</a> property.</td>
     </tr>
     <tr>
         <td>All Day</td>
-        <td>'allDay'. Corresponds to the [SchedulerAppointment.allDay](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/allDay.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay') property.</td>
+        <td>'allDay'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay">SchedulerAppointment.allDay</a> property.</td>
     </tr>
     <tr>
         <td>Description</td>
-        <td>'text'. Corresponds to the [SchedulerAppointment.text](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/text.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text') property.</td>
+        <td>'description'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#description">SchedulerAppointment.description</a> property.</td>
     </tr>
 </table>
 

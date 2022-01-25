@@ -34,7 +34,7 @@ In the following code, the overlay element is shifted 50 pixels to the right and
         <dxo-position ...
             offset="50 -25">
             <!-- or -->
-            <dxo-offset [x]="50" [y]="-25"></dxo-at>
+            <dxo-offset [x]="50" [y]="-25"></dxo-offset>
         </dxo-position>
     </dx-popup>
 

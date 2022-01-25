@@ -60,15 +60,15 @@ The table below lists 'mainGroup' editor names:
     </tr>
     <tr>
         <td>Subject</td>
-        <td>'text'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text">SchedulerAppointment.text</a> property.</td>
+        <td>'text'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#text">SchedulerAppointment.text</a> property.</td>
     </tr>
     <tr>
         <td>Start Date</td>
-        <td>'startDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate">SchedulerAppointment.startDate</a> property.</td>
+        <td>'startDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#startDate">SchedulerAppointment.startDate</a> property.</td>
     </tr>
     <tr>
         <td>End Date</td>
-        <td>'endDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate">SchedulerAppointment.endDate</a> property.</td>
+        <td>'endDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#endDate">SchedulerAppointment.endDate</a> property.</td>
     </tr>
     <tr>
         <td>All Day</td>
@@ -76,7 +76,7 @@ The table below lists 'mainGroup' editor names:
     </tr>
     <tr>
         <td>Description</td>
-        <td>'description'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#description">SchedulerAppointment.description</a> property.</td>
+        <td>'description'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#description">SchedulerAppointment.description</a> property.</td>
     </tr>
 </table>
 

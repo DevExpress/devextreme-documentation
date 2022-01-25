@@ -60,23 +60,23 @@ The table below lists 'mainGroup' editor names:
     </tr>
     <tr>
         <td>Subject</td>
-        <td>'text'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text" target="_blank">SchedulerAppointment.text</a> property.</td>
+        <td>'text'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#text">SchedulerAppointment.text</a> property.</td>
     </tr>
     <tr>
         <td>Start Date</td>
-        <td>'startDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate" target="_blank">SchedulerAppointment.startDate</a> property.</td>
+        <td>'startDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#startDate">SchedulerAppointment.startDate</a> property.</td>
     </tr>
     <tr>
         <td>End Date</td>
-        <td>'endDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate" target="_blank">SchedulerAppointment.endDate</a> property.</td>
+        <td>'endDate'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#endDate">SchedulerAppointment.endDate</a> property.</td>
     </tr>
     <tr>
         <td>All Day</td>
-        <td>'allDay'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay" target="_blank">SchedulerAppointment.allDay</a> property.</td>
+        <td>'allDay'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay">SchedulerAppointment.allDay</a> property.</td>
     </tr>
     <tr>
         <td>Description</td>
-        <td>'description'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#description" target="_blank">SchedulerAppointment.description</a> property.</td>
+        <td>'description'. Corresponds to the <a href="https://js.devexpress.com/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#description">SchedulerAppointment.description</a> property.</td>
     </tr>
 </table>
 

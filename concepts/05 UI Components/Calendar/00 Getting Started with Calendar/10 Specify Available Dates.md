@@ -79,10 +79,11 @@ Use the [min](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration
             >
             </Calendar>
         );
-        function disabledDates(data) {
-            return data.view === 'month' && data.date.getDay() === 0;
-        }
-    }
+    };
+
+    function disabledDates(data) {
+        return data.view === 'month' && data.date.getDay() === 0;
+    };
 
     export default App;
 

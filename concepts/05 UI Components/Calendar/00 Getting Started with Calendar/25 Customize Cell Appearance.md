@@ -179,23 +179,27 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
             >
             </Calendar>
         );
-        function CustomCell(cell) {
-            return (
-                <span className={getCellCssClass(cell.date, cell.view)}>
-                    { cell.text }
-                </span>
-            );
-        }
-        function getCellCssClass(date, view) {
-            let cssClass = '';
-            federalHolidays.forEach((item) => {
-                if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                    cssClass = 'holiday';
-                }
-            });
-            return cssClass;
-        }
-    }
+    };
+
+    // ...
+    
+    function CustomCell(cell) {
+        return (
+            <span className={getCellCssClass(cell.date, cell.view)}>
+                { cell.text }
+            </span>
+        );
+    };
+
+    function getCellCssClass(date, view) {
+        let cssClass = '';
+        federalHolidays.forEach((item) => {
+            if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                cssClass = 'holiday';
+            }
+        });
+        return cssClass;
+    };
 
     export default App;
 

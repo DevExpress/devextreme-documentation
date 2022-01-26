@@ -1,4 +1,4 @@
-Set the [showTodayButton](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showTodayButton) property to **true** to add a **Today** button that selects the current date.
+Enable the [showTodayButton](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showTodayButton) property to add a **Today** button that selects the current date.
 
 ---
 ##### jQuery

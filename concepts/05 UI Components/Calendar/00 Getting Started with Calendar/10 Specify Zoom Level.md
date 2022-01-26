@@ -35,7 +35,7 @@ To specify which calendar view (month, year, decade, or century) should be displ
 
 ##### React
 
-When using React, it is necessary to add the `default` prefix to the **zoomLevel** property to control the change of the component state. For more information, refer to the following article: [Uncontrolled Mode](/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode).
+In the code above, the **zoomLevel** property has the `default` prefix. This prefix specifies that we will not handle property changes, and the Calendar should handle them internally. For more information, refer to the following article: [Uncontrolled Mode](/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode).
 
     <!-- tab: App.js -->
     // ...

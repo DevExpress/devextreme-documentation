@@ -26,9 +26,7 @@ $(function() {
             $.each(federalHolidays, (_, item) => {
                 if (data.date.getDate() === item.getDate() && data.date.getMonth() === item.getMonth() && data.view !== 'year') {
                     cssClass = 'holiday';
-                    return false;
                 }
-                return true;
             });
             return `<span class='${cssClass}'>${data.text}</span>`;
         }

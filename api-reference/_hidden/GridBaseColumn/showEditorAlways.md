@@ -5,11 +5,11 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the column displays its values in editors in browse state.
+Specifies whether the column displays its values in editors in display state.
 
 ---
 
-Column cells can be in browse and edit states. In browse state, a cell value is text. In edit state, the cell contains an editor with the value and allows users to edit it. To display cell values in editors in edit and browse modes, set the **showEditorAlways** property to **true**.
+Column cells can be in display and edit states. In display state, a cell value is text. In edit state, the cell contains an editor with the value and allows users to edit it. To show cell values in editors in edit and display states, set the **showEditorAlways** property to **true**.
 
 In "cell" or "batch" edit mode, users can edit cells. For "row", "form", or "popup" edit modes, the component shows editors but discards the changes. In these edit modes, users need to click the "edit" button to edit values. 
 

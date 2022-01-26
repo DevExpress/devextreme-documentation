@@ -96,7 +96,7 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
     <!-- tab: App.vue -->
     <template>
         <DxCalendar ...
-            :cell-template="cellTemplate"
+            cell-template="custom"
         >
             <template #custom="{ data: cell }">
                 <span :class="getCellCssClass(cell.date, cell.view)">
@@ -124,22 +124,14 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
 
     export default {
         // ...
-        data() {
-            return {
-                // ...
-                cellTemplate: 'custom'
-            }
-        },
         methods: {
             getCellCssClass(date, view) {
                 let cssClass = '';
-
                 federalHolidays.forEach((item) => {
                     if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
                         cssClass = 'holiday';
                     }
                 });
-
                 return cssClass;
             }
         }

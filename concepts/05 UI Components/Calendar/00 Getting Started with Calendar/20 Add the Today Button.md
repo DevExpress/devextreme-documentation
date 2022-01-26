@@ -49,8 +49,3 @@ Enable the [showTodayButton](/Documentation/ApiReference/UI_Components/dxCalenda
     export default App;
 
 ---
-
-You have configured basic Calendar features. For more information about this UI component and examples, refer to the following resources:
-
-* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxCalendar/)

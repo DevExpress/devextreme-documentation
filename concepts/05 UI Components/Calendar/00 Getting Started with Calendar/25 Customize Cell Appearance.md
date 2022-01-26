@@ -26,9 +26,7 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
                 $.each(federalHolidays, (_, item) => {
                     if (data.date.getDate() === item.getDate() && data.date.getMonth() === item.getMonth() && data.view !== 'year') {
                         cssClass = 'holiday';
-                        return false;
                     }
-                    return true;
                 });
                 return `<span class='${cssClass}'>${data.text}</span>`;
             }
@@ -76,13 +74,10 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
         
         getCellCssClass(date: any, view: any) {
             let cssClass = '';
-            console.log(date, view);
             this.federalHolidays.forEach((item) => {
-            if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                cssClass = 'holiday';
-                return false;
-            }
-            return true;
+                if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                    cssClass = 'holiday';
+                }
             });
 
             return cssClass;
@@ -140,11 +135,9 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
                 let cssClass = '';
 
                 federalHolidays.forEach((item) => {
-                if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                    cssClass = 'holiday';
-                    return false;
-                }
-                return true;
+                    if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                        cssClass = 'holiday';
+                    }
                 });
 
                 return cssClass;
@@ -198,9 +191,7 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
             federalHolidays.forEach((item) => {
                 if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
                     cssClass = 'holiday';
-                    return false;
                 }
-                return true;
             });
             return cssClass;
         }
@@ -217,3 +208,7 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
 
 ---
 
+You have configured basic Calendar features. For more information about this UI component and examples, refer to the following resources:
+
+* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/)
+* [API Reference](/Documentation/ApiReference/UI_Components/dxCalendar/)

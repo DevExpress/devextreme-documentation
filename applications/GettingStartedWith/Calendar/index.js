@@ -18,6 +18,9 @@ $(function() {
         zoomLevel: "year",
         min: new Date('2022-01-01T00:00:00.000Z'),
         max: new Date('2022-12-31T00:00:00.000Z'),
+        disabledDates: function(data) {
+            return data.view === 'month' && data.date.getDay() === 0;
+        },
         cellTemplate: function(data) {
             let cssClass = '';
             $.each(federalHolidays, (_, item) => {

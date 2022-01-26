@@ -1,4 +1,4 @@
-To specify which calendar view (month, year, decade, or century) should be displayed initially, set the [zoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel) property. To make certain calendar views inaccessible, specify the [maxZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#maxZoomLevel) and [minZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#minZoomLevel) properties. The **maxZoomLevel** and **minZoomLevel** properties are not demonstrated in this tutorial.
+To specify which calendar view (month, year, decade, or century) should be displayed initially, set the [zoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel) property. To make certain calendar views inaccessible, specify the [maxZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#maxZoomLevel) and [minZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#minZoomLevel) properties (not demonstrated in this tutorial).
 
 ---
 ##### jQuery

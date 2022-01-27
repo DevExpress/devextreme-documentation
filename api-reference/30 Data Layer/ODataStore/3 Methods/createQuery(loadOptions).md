@@ -15,7 +15,7 @@ An object containing the [expand](/api-reference/30%20Data%20Layer/CustomStore/L
 Stores settings that should be sent to the server.
 
 ##### field(loadOptions.expand): String | Array<String>
-Specify the names of navigation properties that the server loads with the ODataStore.
+Specifies the names of navigation properties that the server loads with the ODataStore.
 
 ##### field(loadOptions.requireTotalCount): Boolean
 Specifies whether the result data set should contain the total count of data objects.

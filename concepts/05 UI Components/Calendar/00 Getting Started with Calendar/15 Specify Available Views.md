@@ -1,4 +1,4 @@
-To specify which calendar view (month, year, decade, or century) should be displayed initially, set the [zoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel) property. To make certain calendar views inaccessible, specify the [maxZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#maxZoomLevel) and [minZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#minZoomLevel) properties (not demonstrated in this tutorial).
+Set the [zoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel) property to specify which calendar view (month, year, decade, or century) the component should display. To make certain calendar views inaccessible, specify the [maxZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#maxZoomLevel) and [minZoomLevel](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#minZoomLevel) properties (not demonstrated in this tutorial).
 
 ---
 ##### jQuery
@@ -50,6 +50,6 @@ To specify which calendar view (month, year, decade, or century) should be displ
 
     export default App;
 
-In the code above, the **zoomLevel** property has the `default` prefix. This prefix specifies that we will not handle property changes, and the Calendar should handle them internally. For more information, refer to the following article: [Uncontrolled Mode](/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode).
+In the code above, the **zoomLevel** property has the `default` prefix. This prefix specifies that the Calendar handles property changes internally. For more information, refer to the following article: [Uncontrolled Mode](/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode).
 
 ---

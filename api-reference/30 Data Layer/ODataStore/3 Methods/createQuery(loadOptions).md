@@ -12,13 +12,13 @@ The [Query](/api-reference/30%20Data%20Layer/Query '/Documentation/ApiReference/
 An object containing the [expand](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/expand.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#expand'), [requireTotalCount](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/requireTotalCount.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#requireTotalCount'), and [customQueryParams](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/customQueryParams.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#customQueryParams') properties.
 
 ##### field(loadOptions.customQueryParams): any
-<!-- Description goes here -->
+Stores settings that should be sent to the server.
 
 ##### field(loadOptions.expand): String | Array<String>
-<!-- Description goes here -->
+Specify the names of navigation properties that the server loads with the ODataStore.
 
 ##### field(loadOptions.requireTotalCount): Boolean
-<!-- Description goes here -->
+Specifies whether the result data set should contain the total count of data objects.
 
 ---
 ---

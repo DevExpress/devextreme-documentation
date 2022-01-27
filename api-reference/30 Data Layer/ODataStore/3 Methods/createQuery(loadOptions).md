@@ -18,7 +18,7 @@ Stores settings that should be sent to the server.
 Specify the names of navigation properties that the server loads with the ODataStore.
 
 ##### field(loadOptions.requireTotalCount): Boolean
-Specifies whether the result data set should contain the total count of data objects.
+Specifies whether the resulting data set should contain the total count of data objects.
 
 ---
 ---

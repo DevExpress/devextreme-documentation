@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The Calendar component allows users to select a required date within a specified date range. This tutorial shows how to add this component to your application and configure its core features.
+The Calendar component allows users to select a date within a specified date range. This tutorial shows how to add this component to your application and configure its core features.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_2/GettingStartedWith/Calendar/index.html, /Content/Applications/21_2/GettingStartedWith/Calendar/index.js, /Content/Applications/21_2/GettingStartedWith/Calendar/index.css"></div>
 

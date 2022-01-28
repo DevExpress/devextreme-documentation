@@ -5638,6 +5638,76 @@
       "react": "Gantt",
       "vue": "DxGantt"
     },
+    "dxGanttColumn": {
+      "angular": "dxo-dx-gantt-column",
+      "react": "DxGanttColumn",
+      "vue": "DxDxGanttColumn"
+    },
+    "dxGanttColumn.allowEditing": {
+      "vue": "allow-editing"
+    },
+    "dxGanttColumn.allowFixing": {
+      "vue": "allow-fixing"
+    },
+    "dxGanttColumn.allowHiding": {
+      "vue": "allow-hiding"
+    },
+    "dxGanttColumn.allowReordering": {
+      "vue": "allow-reordering"
+    },
+    "dxGanttColumn.allowResizing": {
+      "vue": "allow-resizing"
+    },
+    "dxGanttColumn.allowSearch": {
+      "vue": "allow-search"
+    },
+    "dxGanttColumn.editCellComponent": {
+      "vue": "edit-cell-component"
+    },
+    "dxGanttColumn.editCellRender": {
+      "vue": "edit-cell-render"
+    },
+    "dxGanttColumn.editCellTemplate": {
+      "vue": "edit-cell-template"
+    },
+    "dxGanttColumn.editorOptions": {
+      "vue": "editor-options"
+    },
+    "dxGanttColumn.fixedPosition": {
+      "vue": "fixed-position"
+    },
+    "dxGanttColumn.formItem": {
+      "vue": "form-item"
+    },
+    "dxGanttColumn.hidingPriority": {
+      "vue": "hiding-priority"
+    },
+    "dxGanttColumn.isBand": {
+      "vue": "is-band"
+    },
+    "dxGanttColumn.lookup": {
+      "angular": "dxo-lookup",
+      "react": "Lookup",
+      "vue": "DxLookup"
+    },
+    "dxGanttColumn.ownerBand": {
+      "vue": "owner-band"
+    },
+    "dxGanttColumn.renderAsync": {
+      "vue": "render-async"
+    },
+    "dxGanttColumn.setCellValue": {
+      "vue": "set-cell-value"
+    },
+    "dxGanttColumn.showEditorAlways": {
+      "vue": "show-editor-always"
+    },
+    "dxGanttColumn.showInColumnChooser": {
+      "vue": "show-in-column-chooser"
+    },
+    "dxGanttColumn.validationRules": {
+      "vue": "validation-rules"
+    },
     "dxGanttContextMenu": {
       "angular": "dxo-dx-gantt-context-menu",
       "react": "DxGanttContextMenu",

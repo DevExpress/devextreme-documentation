@@ -1,7 +1,7 @@
 ---
 id: PdfExportGanttFont.style
 type: String
-default: undefined
+default: 'normal'
 ---
 ---
 ##### shortDescription

@@ -1,0 +1,11 @@
+---
+id: dxGanttColumn.allowSearch
+hidden: 
+type: any
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

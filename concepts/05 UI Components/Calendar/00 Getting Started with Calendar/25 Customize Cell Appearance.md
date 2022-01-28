@@ -5,18 +5,19 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
 
     <!--tab: index.js-->
     $(function() {
+        // ...
         const federalHolidays = [
-            new Date('2022-01-01T00:00:00.000Z'),
-            new Date('2022-01-17T00:00:00.000Z'),
-            new Date('2022-02-21T00:00:00.000Z'),
-            new Date('2022-05-30T00:00:00.000Z'),
-            new Date('2022-06-19T00:00:00.000Z'),
-            new Date('2022-07-04T00:00:00.000Z'),
-            new Date('2022-09-05T00:00:00.000Z'),
-            new Date('2022-10-10T00:00:00.000Z'),
-            new Date('2022-11-11T00:00:00.000Z'),
-            new Date('2022-11-24T00:00:00.000Z'),
-            new Date('2022-12-25T00:00:00.000Z')
+            changeYear(new Date('2022-01-01T00:00:00.000Z')),
+            changeYear(new Date('2022-01-17T00:00:00.000Z')),
+            changeYear(new Date('2022-02-21T00:00:00.000Z')),
+            changeYear(new Date('2022-05-30T00:00:00.000Z')),
+            changeYear(new Date('2022-06-19T00:00:00.000Z')),
+            changeYear(new Date('2022-07-04T00:00:00.000Z')),
+            changeYear(new Date('2022-09-05T00:00:00.000Z')),
+            changeYear(new Date('2022-10-10T00:00:00.000Z')),
+            changeYear(new Date('2022-11-11T00:00:00.000Z')),
+            changeYear(new Date('2022-11-24T00:00:00.000Z')),
+            changeYear(new Date('2022-12-25T00:00:00.000Z'))
         ];
 
         $("#calendar").dxCalendar({
@@ -59,17 +60,17 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
     export class AppComponent {
         // ...
         federalHolidays = [
-            new Date('2022-01-01T00:00:00.000Z'),
-            new Date('2022-01-17T00:00:00.000Z'),
-            new Date('2022-02-21T00:00:00.000Z'),
-            new Date('2022-05-30T00:00:00.000Z'),
-            new Date('2022-06-19T00:00:00.000Z'),
-            new Date('2022-07-04T00:00:00.000Z'),
-            new Date('2022-09-05T00:00:00.000Z'),
-            new Date('2022-10-10T00:00:00.000Z'),
-            new Date('2022-11-11T00:00:00.000Z'),
-            new Date('2022-11-24T00:00:00.000Z'),
-            new Date('2022-12-25T00:00:00.000Z')
+            this.changeYear(new Date('2022-01-01T00:00:00.000Z')),
+            this.changeYear(new Date('2022-01-17T00:00:00.000Z')),
+            this.changeYear(new Date('2022-02-21T00:00:00.000Z')),
+            this.changeYear(new Date('2022-05-30T00:00:00.000Z')),
+            this.changeYear(new Date('2022-06-19T00:00:00.000Z')),
+            this.changeYear(new Date('2022-07-04T00:00:00.000Z')),
+            this.changeYear(new Date('2022-09-05T00:00:00.000Z')),
+            this.changeYear(new Date('2022-10-10T00:00:00.000Z')),
+            this.changeYear(new Date('2022-11-11T00:00:00.000Z')),
+            this.changeYear(new Date('2022-11-24T00:00:00.000Z')),
+            this.changeYear(new Date('2022-12-25T00:00:00.000Z'))
         ];
         
         getCellCssClass(date: any, view: any) {
@@ -109,17 +110,17 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
     <script>
     // ...
     const federalHolidays = [
-        new Date('2022-01-01T00:00:00.000Z'),
-        new Date('2022-01-17T00:00:00.000Z'),
-        new Date('2022-02-21T00:00:00.000Z'),
-        new Date('2022-05-30T00:00:00.000Z'),
-        new Date('2022-06-19T00:00:00.000Z'),
-        new Date('2022-07-04T00:00:00.000Z'),
-        new Date('2022-09-05T00:00:00.000Z'),
-        new Date('2022-10-10T00:00:00.000Z'),
-        new Date('2022-11-11T00:00:00.000Z'),
-        new Date('2022-11-24T00:00:00.000Z'),
-        new Date('2022-12-25T00:00:00.000Z')
+        changeYear(new Date('2022-01-01T00:00:00.000Z')),
+        changeYear(new Date('2022-01-17T00:00:00.000Z')),
+        changeYear(new Date('2022-02-21T00:00:00.000Z')),
+        changeYear(new Date('2022-05-30T00:00:00.000Z')),
+        changeYear(new Date('2022-06-19T00:00:00.000Z')),
+        changeYear(new Date('2022-07-04T00:00:00.000Z')),
+        changeYear(new Date('2022-09-05T00:00:00.000Z')),
+        changeYear(new Date('2022-10-10T00:00:00.000Z')),
+        changeYear(new Date('2022-11-11T00:00:00.000Z')),
+        changeYear(new Date('2022-11-24T00:00:00.000Z')),
+        changeYear(new Date('2022-12-25T00:00:00.000Z'))
     ];
 
     export default {
@@ -151,17 +152,17 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
     <!-- tab: App.js -->
     // ...
     const federalHolidays = [
-        new Date('2022-01-01T00:00:00.000Z'),
-        new Date('2022-01-17T00:00:00.000Z'),
-        new Date('2022-02-21T00:00:00.000Z'),
-        new Date('2022-05-30T00:00:00.000Z'),
-        new Date('2022-06-19T00:00:00.000Z'),
-        new Date('2022-07-04T00:00:00.000Z'),
-        new Date('2022-09-05T00:00:00.000Z'),
-        new Date('2022-10-10T00:00:00.000Z'),
-        new Date('2022-11-11T00:00:00.000Z'),
-        new Date('2022-11-24T00:00:00.000Z'),
-        new Date('2022-12-25T00:00:00.000Z')
+        changeYear(new Date('2022-01-01T00:00:00.000Z')),
+        changeYear(new Date('2022-01-17T00:00:00.000Z')),
+        changeYear(new Date('2022-02-21T00:00:00.000Z')),
+        changeYear(new Date('2022-05-30T00:00:00.000Z')),
+        changeYear(new Date('2022-06-19T00:00:00.000Z')),
+        changeYear(new Date('2022-07-04T00:00:00.000Z')),
+        changeYear(new Date('2022-09-05T00:00:00.000Z')),
+        changeYear(new Date('2022-10-10T00:00:00.000Z')),
+        changeYear(new Date('2022-11-11T00:00:00.000Z')),
+        changeYear(new Date('2022-11-24T00:00:00.000Z')),
+        changeYear(new Date('2022-12-25T00:00:00.000Z'))
     ];
 
     function App() {

@@ -82,7 +82,7 @@ You can also specify your own button type and define its CSS rules as shown in t
 
 ---
 
-Note that buttons get white background when you move them into the [Toolbar](). We recommend that you use the *'normal'* type for such buttons, otherwise the button text is not visible, or define custom CSS rules to override the initial styles.
+Note that buttons get white background when you move them into the [Toolbar](/Documentation/ApiReference/UI_Components/dxToolbar/). We recommend that you use the *'normal'* type for such buttons, otherwise the button text is not visible, or define custom CSS rules to override the initial styles.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"

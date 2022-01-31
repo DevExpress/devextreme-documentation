@@ -18,7 +18,7 @@ dx.web.js, dx.all.js
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 #include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/Calendar/Overview/"
+    url: "/Documentation/Guide/UI_Components/Calendar/Getting_Started_with_Calendar/"
 }
 
 #####See Also#####

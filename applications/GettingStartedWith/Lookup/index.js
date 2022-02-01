@@ -104,7 +104,6 @@ $(function() {
         }, 
         dropDownOptions: {
             closeOnOutsideClick: false,
-            hideOnParentScroll: false,
             showTitle: false
         },
         opened: true

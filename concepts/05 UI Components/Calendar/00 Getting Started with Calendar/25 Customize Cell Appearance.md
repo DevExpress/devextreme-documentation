@@ -1,4 +1,4 @@
-Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#cellTemplate) to customize cell appearance. For example, in the following code all the dates that are federal US hoildays become red in the `month` view:
+Use [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#cellTemplate') to customize cell appearance. For example, in the following code all the dates that are federal US hoildays become red in the `month` view:
 
 ---
 ##### jQuery
@@ -208,4 +208,4 @@ Use [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configur
 You have configured basic Calendar features. For more information about this UI component and examples, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxCalendar/)
+* [API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')

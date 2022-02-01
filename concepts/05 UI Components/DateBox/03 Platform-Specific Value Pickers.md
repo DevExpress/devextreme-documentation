@@ -1,6 +1,6 @@
 The DateBox provides the following controls for picking values.
 
-- [Calendar](/Documentation/ApiReference/UI_Components/dxCalendar/)       
+- [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')       
 Available when the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to *"date"* or *"datetime"*.
 
     ![DevExtreme DateBox PickerType DatePicker](/images/UiWidgets/DateBox/pickerTypes_calendar.png)

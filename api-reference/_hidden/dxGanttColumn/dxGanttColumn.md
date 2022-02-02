@@ -2,7 +2,7 @@
 id: dxGanttColumn
 module: ui/gantt
 export: dxGanttColumn
-inherits: dxGanttColumn
+inherits: dxTreeListColumn
 ---
 ---
 ##### shortDescription

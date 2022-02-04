@@ -103,7 +103,7 @@ dx-diagram.js, dx.all.js
 }
 
 #####See Also#####
-- [How to: Common Use Cases](/concepts/05%20UI%20Components/Diagram/50%20How%20To.md)
+- [How to: Common Use Cases](/concepts/05%20UI%20Components/Diagram/50%20How%20To.md '/Documentation/Guide/UI_Components/Diagram/How_To/')
 - [End-User Documentation](https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/diagram.html)
 #include common-link-setupdevextreme
 #include common-link-configurewidget

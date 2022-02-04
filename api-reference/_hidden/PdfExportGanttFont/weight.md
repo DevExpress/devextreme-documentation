@@ -9,5 +9,3 @@ acceptValues: 'normal' | 'bold' | 400 | 700
 The font weight.
 
 ---
-
-Acceptable property values: *"normal"*, *"bold"*, and *"number (400, 700)"*.

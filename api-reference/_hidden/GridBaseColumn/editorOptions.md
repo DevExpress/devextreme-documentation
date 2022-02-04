@@ -136,7 +136,7 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
 
 Other properties that allow editor customization include:
 
-- **columns[]**.[editCellTemplate](/api-reference/_hidden/dxTreeListColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate')         
+- **columns[]**.[editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate')         
 Use it to replace the default editor.
 
 - [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')         

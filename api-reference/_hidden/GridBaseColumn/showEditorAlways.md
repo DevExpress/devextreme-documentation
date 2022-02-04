@@ -13,9 +13,9 @@ Set the **showEditorAlways** property to **true** to display a column cell value
 
 Behavior of the editor in a cell depends on the component's edit mode:
 
-- The [mode]() property is set to *"cell"* or *"batch"*. Users can edit values directly in their cells without switching the component to edit mode.
+- The **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) property is set to *"cell"* or *"batch"*. Users can edit values directly in their cells without switching the component to edit mode.
 
-- The [mode]() property is set to *"row"*, *"form"* or *"popup"*. The component displays read-only cell editors. Users should click the Edit button to change cell values. 
+- The **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) property is set to *"row"*, *"form"* or *"popup"*. The component displays read-only cell editors. Users should click the Edit button to change cell values. 
 
 [note]
 

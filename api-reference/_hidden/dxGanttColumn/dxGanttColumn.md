@@ -6,7 +6,6 @@ inherits: dxTreeListColumn
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column.
 
 ---
-<!-- Description goes here -->

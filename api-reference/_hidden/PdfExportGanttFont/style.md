@@ -9,5 +9,3 @@ acceptValues: 'bold' | 'normal' | 'italic'
 The font style.
 
 ---
-
-Acceptable property values: *"normal"*, *"bold"*, and *"italic"*.

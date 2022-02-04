@@ -9,7 +9,7 @@ Specifies whether the column displays its values in editors.
 
 ---
 
-Set the **showEditorAlways** property to **true** to display a column cell value in an editor. 
+Set the **showEditorAlways** property to **true** to display a column cell value in an editor when a user does not edit data. For example, you can use this functionality to display boolean data as check boxes instead of the "true/false" strings.
 
 Behavior of the editor in a cell depends on the component's edit mode:
 

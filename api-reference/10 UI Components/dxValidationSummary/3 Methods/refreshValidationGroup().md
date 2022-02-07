@@ -3,10 +3,10 @@ id: dxValidationSummary.refreshValidationGroup()
 ---
 ---
 ##### shortDescription
-Refreshes the ValidationSummary subscription to a target ValidationGroup.
+Refreshes the ValidationSummary subscription to a target [ValidationGroup](/Documentation/ApiReference/UI_Components/dxValidationGroup/).
 
 ---
-Use this method if target ValidationGroup is recreated.
+Use this method if target **ValidationGroup** is recreated.
 
 ---
 ##### jQuery

@@ -186,8 +186,8 @@ Use this method if target ValidationGroup is recreated.
 
     function App() {
         const [visible, setVisible] = useState(true);
-        let validationGroup = React.createRef();
-        let summary = React.createRef();
+        const validationGroup = React.createRef();
+        const summary = React.createRef();
         const validate = () => {
             validationGroup.current.instance.validate();
         };

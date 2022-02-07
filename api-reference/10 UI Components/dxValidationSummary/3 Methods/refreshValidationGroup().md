@@ -27,11 +27,7 @@ Use this method if target ValidationGroup is recreated.
                     validationRules: [{ type: 'required' }],
                     validationGroup: "group"
                 }),
-                $("<div></div>").dxTextBox({}) 
-                .dxValidator({
-                    validationRules: [{ type: 'required' }],
-                    validationGroup: "group"
-                })
+                // Initialize other ValidationGroup members
             );
         }
 
@@ -72,21 +68,15 @@ Use this method if target ValidationGroup is recreated.
     <dx-validation-group #group>
         <dx-text-box *ngIf="visible">
             <dx-validator>
-                <dxi-validation-rule type="required">
-                </dxi-validation-rule>
+                <dxi-validation-rule type="required" />
             </dx-validator>
         </dx-text-box>
-        <dx-text-box *ngIf="visible">
-            <dx-validator>
-                <dxi-validation-rule type="required">
-                </dxi-validation-rule>
-            </dx-validator>
-        </dx-text-box>
-        <dx-validation-summary #summary></dx-validation-summary>
+        <!-- Initialize other ValidationGroup members -->
+        <dx-validation-summary #summary />
     </dx-validation-group>
     <dx-button
-        text="Validate group"
-        (onClick)="validateGroup()"
+        text="Validate"
+        (onClick)="validate()"
     >
     </dx-button>
     <dx-button
@@ -117,7 +107,7 @@ Use this method if target ValidationGroup is recreated.
             this.visible = true;
             this.summary.instance.refreshValidationGroup(); // Refresh the subscription to ValidationGroup after rendering
         }
-        validateGroup() {
+        validate() {
             this.validationGroup.instance.validate();
         }
     }
@@ -134,19 +124,15 @@ Use this method if target ValidationGroup is recreated.
                     <DxValidator>
                         <DxRequiredRule />
                     </DxValidator>
-                </DxTextBox> 
-                <DxTextBox v-if="visible">
-                    <DxValidator>
-                        <DxRequiredRule />
-                    </DxValidator>
                 </DxTextBox>
+                <!-- Initialize other ValidationGroup members -->
                 <DxValidationSummary 
                     :ref="summaryRefKey"
                 />
             </DxValidationGroup>
             <DxButton
                 text="Validate"
-                @click="validateGroup"
+                @click="validate"
             />
             <DxButton
                 text="Remove group"
@@ -171,7 +157,7 @@ Use this method if target ValidationGroup is recreated.
                 }
             },
             methods: {
-                validateGroup() {
+                validate() {
                     this.validationGroup.validate();
                 },
                 removeGroup() {
@@ -200,22 +186,22 @@ Use this method if target ValidationGroup is recreated.
 
     function App() {
         const [visible, setVisible] = useState(true);
-        let validationGroup = null;
-        let summary = null;
-        const validateGroup = () => {
-            validationGroup.instance.validate();
+        let validationGroup = React.createRef();
+        let summary = React.createRef();
+        const validate = () => {
+            validationGroup.current.instance.validate();
         };
         const removeGroup = () => {
             setVisible(false);
         }
         const renderGroup = () => {
             setVisible(true);
-            summary.instance.refreshValidationGroup(); // Refresh the subscription to ValidationGroup after rendering
+            summary.current.instance.refreshValidationGroup(); // Refresh the subscription to ValidationGroup after rendering
         }
         return (
             <div>
                 <ValidationGroup
-                    ref={ref => validationGroup = ref}
+                    ref={validationGroup}
                 >
                     { visible && <div>
                         <TextBox>
@@ -223,19 +209,15 @@ Use this method if target ValidationGroup is recreated.
                                 <RequiredRule />
                             </Validator>
                         </TextBox>
-                        <TextBox>
-                            <Validator>
-                                <RequiredRule />
-                            </Validator>
-                        </TextBox>
+                        {/* Initialize other ValidationGroup members */}
                     </div> }
                     <ValidationSummary 
-                        ref={ref => summary = ref}
+                        ref={summary}
                     />
                 </ValidationGroup>
                 <Button
                     text="Validate"
-                    onClick={validateGroup}
+                    onClick={validate}
                 />
                 <Button
                     text="Remove group"

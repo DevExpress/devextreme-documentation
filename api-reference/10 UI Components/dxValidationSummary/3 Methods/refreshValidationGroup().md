@@ -3,7 +3,7 @@ id: dxValidationSummary.refreshValidationGroup()
 ---
 ---
 ##### shortDescription
-Refreshes the ValidationSummary subscription to a target [ValidationGroup](/Documentation/ApiReference/UI_Components/dxValidationGroup/).
+Resubscribes the ValidationSummary to a target [ValidationGroup](/Documentation/ApiReference/UI_Components/dxValidationGroup/).
 
 ---
 Use this method if target **ValidationGroup** is recreated.

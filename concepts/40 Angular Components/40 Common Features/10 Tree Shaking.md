@@ -27,6 +27,59 @@ Data Visualization components code is independent. This means that you can impor
 The code of UI Components mostly independent. This means that you can import a simple component (such as dxButton) and the resulting bundle will contain only this component code. However, complex components, such as dxDataGrid, dxScheduler, dxPivotGrid, etc., depend on multiple simple components. So, if you import dxDataGrid to the application, the resulting bundle will contain the dxScrollView, dxButton, dxSelectBox, dxTextBox, DxPopup, dxForm and other components code.
 
 
-To summarize, if you use complex UI and Data Visualization in the application, the resulting bundle will include almost all DevExtreme controls. However, if you use only some components, the Tree Shaking mechanism will remove unnecessary code from the production bundle. You can read more about the bundle size in DevExtreme Angular applications in this [GitHub issue](https://github.com/DevExpress/devextreme-angular/issues/811). The following comment contains the detailed information about how Tree Shaking works for [different DevExtreme components](https://github.com/DevExpress/devextreme-angular/issues/811#issuecomment-1008557295).
+To summarize, if you use complex UI and Data Visualization in the application, the resulting bundle will include almost all DevExtreme controls. However, if you use only some components, the Tree Shaking mechanism will remove unnecessary code from the production bundle. You can read more about the bundle size in DevExtreme Angular applications in this [GitHub issue](https://github.com/DevExpress/devextreme-angular/issues/811). Here is a small comparison table that contains information about the size of common modules after you import them to the application:
+<table class="dx-table">
+<tr>
+<th>Module</th>
+<th>Raw Size</th>
+<th>Transfer Size</th>
+</tr>
+<tr>
+<td>Empty App</td>
+<td>216.09 kB</td>
+<td>60.11 kB</td>
+</tr>
+<tr>
+<td>DxDataGridModule</td>
+<td>2.01 MB</td>
+<td>456.46 kB</td>
+</tr>
+<tr>
+<td>DxButtonModule</td>
+<td>490.44 kB</td>
+<td>122.62 kB</td>
+</tr>
+<tr>
+<td>DxTextBoxModule</td>
+<td>688.89 kB</td>
+<td>162.69 kB</td>
+</tr>
+<tr>
+<td>DxFormModule</td>
+<td>1.11 MB</td>
+<td>249.49 kB</td>
+</tr>
+<tr>
+<td>DxChartModule</td>
+<td>1.10 MB</td>
+<td>283.46 kB</td>
+</tr>
+<tr>
+<td>DxVectorMapModule</td>
+<td>820.20 kB</td>
+<td>209.38 kB</td>
+</tr>
+<tr>
+<td>DxSelectBoxModule</td>
+<td>977.27 kB</td>
+<td>218.51 kB</td>
+</tr>
+<tr>
+<td>DxSchedulerModule</td>
+<td>2.00 MB</td>
+<td>389.43 kB</td>
+</tr>
+</table>
+
 
 [tags] angular

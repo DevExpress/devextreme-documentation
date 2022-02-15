@@ -228,6 +228,6 @@ If an end user should _not_ be able to edit the text in the TextArea, assign **t
 - [TextArea - Handle the Keyboard Events](/concepts/05%20UI%20Components/TextArea/13%20Handle%20the%20Keyboard%20Events.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Keyboard_Events/')
 - [TextArea - Limit the Text Length](/concepts/05%20UI%20Components/TextArea/15%20Limit%20the%20Text%20Length.md '/Documentation/Guide/UI_Components/TextArea/Limit_the_Text_Length/')
 - [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
-- [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
+- [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/)
 
 [tags]dxtextarea, textArea, text area, editor, overview, spellcheck, read-only

@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the text field. Must contain the [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/') UI component.
+Specifies a custom template for the text field. Must contain the [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) UI component.
 
 ##### param(selectedItem): Object
 The selected item's data.

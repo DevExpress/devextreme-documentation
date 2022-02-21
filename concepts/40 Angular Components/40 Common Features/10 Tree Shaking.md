@@ -1,6 +1,6 @@
 ## Tree Shaking
 
-Tree shaking removes unused portions of source and library code to reduce the downloaded size of the application.
+The tree shaking mechanism removes unused portions of source and library code to reduce the downloaded size of the application.
 
 The tree shaking mechanism checks whether you import only the modules used in your application. For instance, the following import takes the `DxButtonModule` from the `devextreme-angular` module:
 
@@ -27,7 +27,9 @@ DevExtreme code consists of three main code groups:
 The size of UI Components Code depends on components that you use in your application. For example, you can import a simple component (such as [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/)) and the resulting bundle will contain only this component code. Complex components (such as [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/), [Scheduler](/Documentation/Guide/UI_Components/Scheduler/Getting_Started_with_Scheduler/), or [PivotGrid](/Documentation/Guide/UI_Components/PivotGrid/Getting_Started_with_PivotGrid/)) include multiple simple components. If you import [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) to your application, the bundle includes code of the [ScrollView](/Documentation/Guide/UI_Components/ScrollView/Overview/), [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/), [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/), [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/) and other components .
 
 
-To summarize, if you use complex UI and Data Visualization in the application, the resulting bundle will include almost all DevExtreme controls. However, if you use only some components, the Tree Shaking mechanism will remove unnecessary code from the production bundle. You can read more about the bundle size in DevExtreme Angular applications in this [GitHub issue](https://github.com/DevExpress/devextreme-angular/issues/811). Here is a small comparison table that contains information about the size of common modules after you import them to the application:
+To summarize, the tree shaking mechanism does not affect the resulting bundle if you use complex UI and Data Visualization in the application. However, if you use simple components, the tree shaking mechanism will remove unnecessary code from the production bundle. Refer to the [GitHub issue](https://github.com/DevExpress/devextreme-angular/issues/811) to get more details about the bundle size in DevExtreme Angular applications.
+
+The table below contains information about the size of common modules after you import them to the application:
 <table class="dx-table">
 <tr>
 <th>Module</th>

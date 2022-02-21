@@ -1,5 +1,6 @@
 ---
 id: dxDataGrid.Options.rowComponent
+deprecated: 
 ---
 ---
 ##### shortDescription

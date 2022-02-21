@@ -16,12 +16,13 @@ An object for storing additional settings that should be sent to the server.
         var customDataSource = new DevExpress.data.CustomStore({
             key: "ID",
             load: function (loadOptions) {
-                if (!loadOptions.userData["someValue"]) {  
-                    loadOptions.userData["someValue"] = 5;  
-                    alert("Initial value is set");  
-                }  
-                else {  
-                    alert("Cached value: " + loadOptions.userData["someValue"]);  
+                let value = loadOptions.userData?.someValue;
+                if(!value) {
+                    value = 5;
+                    alert("Initial value is set");
+                } 
+                else {
+                    alert("Cached value: " + value);
                 }
             }
         });
@@ -45,12 +46,13 @@ An object for storing additional settings that should be sent to the server.
             this.customDataSource = new CustomStore({
                 key: 'ID',
                 load: (loadOptions) => {
-                    if (!loadOptions.userData["someValue"]) {  
-                        loadOptions.userData["someValue"] = 5;  
-                        alert("Initial value is set");  
-                    }  
-                    else {  
-                        alert("Cached value: " + loadOptions.userData["someValue"]);  
+                    let value = loadOptions.userData?.someValue;
+                    if(!value) {
+                        value = 5;
+                        alert("Initial value is set");
+                    } 
+                    else {
+                        alert("Cached value: " + value);
                     }
                 }
             });
@@ -71,15 +73,14 @@ An object for storing additional settings that should be sent to the server.
     const customDataSource = new CustomStore({
         key: 'ID',
         load: (loadOptions) => {
-            load: (loadOptions) => {
-                if (!loadOptions.userData["someValue"]) {  
-                    loadOptions.userData["someValue"] = 5;  
-                    alert("Initial value is set");  
-                }  
-                else {  
-                    alert("Cached value: " + loadOptions.userData["someValue"]);  
-                }
-            }            
+            let value = loadOptions.userData?.someValue;
+            if(!value) {
+                value = 5;
+                alert("Initial value is set");
+            } 
+            else {
+                alert("Cached value: " + value);
+            }
         }
     });
 
@@ -104,15 +105,14 @@ An object for storing additional settings that should be sent to the server.
     const customDataSource = new CustomStore({
         key: 'ID',
         load: (loadOptions) => {
-            load: (loadOptions) => {
-                if (!loadOptions.userData["someValue"]) {  
-                    loadOptions.userData["someValue"] = 5;  
-                    alert("Initial value is set");  
-                }  
-                else {  
-                    alert("Cached value: " + loadOptions.userData["someValue"]);  
-                }
+            let value = loadOptions.userData?.someValue;
+            if(!value) {
+                value = 5;
+                alert("Initial value is set");
             } 
+            else {
+                alert("Cached value: " + value);
+            }
         }
     });
 

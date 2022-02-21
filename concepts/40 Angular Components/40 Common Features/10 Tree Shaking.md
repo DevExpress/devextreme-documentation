@@ -2,7 +2,7 @@
 
 Tree shaking removes unused portions of source and library code to reduce the downloaded size of the application.
 
-Tree shaking already works if you import only the modules that you use in your application. For instance, the following import takes only the `DxButtonModule` from the `devextreme-angular` module:
+The tree shaking mechanism checks whether you import only the modules used in your application. For instance, the following import takes the `DxButtonModule` from the `devextreme-angular` module:
 
     <!--TypeScript-->
     import { DxButtonModule } from 'devextreme-angular';
@@ -12,19 +12,19 @@ If tree shaking is not configured in your application, import exports from speci
     <!--TypeScript-->
     import { DxButtonModule } from 'devextreme-angular/ui/button';
 
-Please note that the tree shaking mechanism works only when you create the **production** bundle.
+[note]The tree shaking mechanism works only when you create the **production** bundle.
 
 ## Bundle Size
 
-We divide DevExtreme code into three main groups:
-1) Utilities Code.
-All DevExtreme components use Utilities Code. The application always imports it when you add a DevExtreme component. It can't be removed by the Tree Shaking mechanim as our components won't work without it. An example of such code is our Option Manager or Events Engine.
+DevExtreme code consists of three main code groups:
+- Utilities Code
+    An application imports Utilities Code, when you add a DevExtreme component. Utilities Code is mandatory for DevExtreme components and the tree shaking mechanim does not remove it. 
 
-2) Data Visualization Components Code.
-Data Visualization components code is independent. This means that you can import the Chart module and this will add only the Chart component code to the bundle. However, the Chart component is quite complex, so it will affect the size of the resulting bundle.
+- Data Visualization Components Code
+    The bundle includes Data Visualization components code if you use the Chart component in your application. Data Visualization components code has a large size and may affect the resulting bundle.
 
-3) UI Components Code.
-The code of UI Components mostly independent. This means that you can import a simple component (such as dxButton) and the resulting bundle will contain only this component code. However, complex components, such as dxDataGrid, dxScheduler, dxPivotGrid, etc., depend on multiple simple components. So, if you import dxDataGrid to the application, the resulting bundle will contain the dxScrollView, dxButton, dxSelectBox, dxTextBox, DxPopup, dxForm and other components code.
+- UI Components Code
+The size of UI Components Code depends on components that you use in your application. For example, you can import a simple component (such as [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/)) and the resulting bundle will contain only this component code. Complex components (such as [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/), [Scheduler](/Documentation/Guide/UI_Components/Scheduler/Getting_Started_with_Scheduler/), or [PivotGrid](/Documentation/Guide/UI_Components/PivotGrid/Getting_Started_with_PivotGrid/)) include multiple simple components. If you import [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) to your application, the bundle includes code of the [ScrollView](/Documentation/Guide/UI_Components/ScrollView/Overview/), [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/), [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/), [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/) and other components .
 
 
 To summarize, if you use complex UI and Data Visualization in the application, the resulting bundle will include almost all DevExtreme controls. However, if you use only some components, the Tree Shaking mechanism will remove unnecessary code from the production bundle. You can read more about the bundle size in DevExtreme Angular applications in this [GitHub issue](https://github.com/DevExpress/devextreme-angular/issues/811). Here is a small comparison table that contains information about the size of common modules after you import them to the application:

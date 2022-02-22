@@ -14,7 +14,7 @@ Information about the event.
 Cells for the exported row.
 
 ##### field(e.rowHeight): Number
-Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, then the height will be automatically increased so that the text has enough space.
+Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, then the row height will be automatically increased so that the text has enough space.
 
 ---
 ---

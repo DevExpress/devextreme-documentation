@@ -5,7 +5,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Object containig informatiom about the font size, name and style
+Object containig informatiom about the **size**, **name** and **style** of the used font.
 
 ---
 <!-- Description goes here -->
@@ -28,7 +28,7 @@ Object containig informatiom about the font size, name and style
                         const { gridCell, pdfCell } = options;
         
                         if(gridCell.rowType === 'data') {
-                            pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                         }
                     }
                 }).then(function() {
@@ -76,7 +76,7 @@ Object containig informatiom about the font size, name and style
                     const { gridCell, pdfCell } = options;
     
                     if(gridCell.rowType === 'data') {
-                        pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                     }
                 }
             }).then(() => {
@@ -159,7 +159,7 @@ Object containig informatiom about the font size, name and style
                         const { gridCell, pdfCell } = options;
         
                         if(gridCell.rowType === 'data') {
-                            pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                         }
                     }
                 }).then(() => {
@@ -196,7 +196,7 @@ Object containig informatiom about the font size, name and style
                     const { gridCell, pdfCell } = options;
     
                     if(gridCell.rowType === 'data') {
-                        pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                     }
                 }
             }).then(() => {

@@ -1,30 +1,21 @@
 ---
-id: pdfExporter.exportDataGrid(options)
-module: pdf_exporter
-export: exportDataGrid
+id: PDFExportedDataGridCell.font
+type: Object
+
 ---
 ---
 ##### shortDescription
-Exports grid data to a PDF file.
-
-##### return: Promise<void>
-A Promise that is resolved when the grid data is prepared for export. It is a native <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
-
-##### param(options): PdfExportDataGridProps
-Export settings.
+Object containig informatiom about the font size, name and style
 
 ---
+<!-- Description goes here -->
 
-#include common-ctp-note-wo-devextreme
-
-This method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library to export data and create PDF files.
-
-You can call this method at any point in your application. In this example, we call this method in a standalone button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
+---
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function(){
         $('#exportButton').dxButton({
             // ...
@@ -32,7 +23,14 @@ You can call this method at any point in your application. In this example, we c
                 const doc = new jsPDF();
                 DevExpress.pdfExporter.exportDataGrid({
                     jsPDFDocument: doc,
-                    component: dataGrid
+                    component: dataGrid,
+                    customizeCell: function(options) {
+                        const { gridCell, pdfCell } = options;
+        
+                        if(gridCell.rowType === 'data') {
+                            pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                        }
+                    }
                 }).then(function() {
                     doc.save('Customers.pdf');
                 });
@@ -44,19 +42,7 @@ You can call this method at any point in your application. In this example, we c
         }).dxDataGrid('instance');
     });
 
-
-    <!--HTML-->
-    <head>
-        <!-- ... -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
-        <!-- DevExtreme sources are referenced here -->
-    </head>
-
-##### Angular   
-
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
+##### Angular
 
     <!-- tab: app.component.html -->
     <dx-button ... 
@@ -85,7 +71,14 @@ You can call this method at any point in your application. In this example, we c
             const doc = new jsPDF();
             exportDataGridToPdf({
                 jsPDFDocument: doc,
-                component: this.dataGrid.instance
+                component: this.dataGrid.instance,
+                customizeCell: function(options) {
+                    const { gridCell, pdfCell } = options;
+    
+                    if(gridCell.rowType === 'data') {
+                        pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                    }
+                }
             }).then(() => {
                 doc.save('Customers.pdf');
             })
@@ -114,11 +107,7 @@ You can call this method at any point in your application. In this example, we c
     })
     export class AppModule { }
 
-
 ##### Vue
-
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
 
     <!-- tab: App.vue -->
     <template>
@@ -165,7 +154,14 @@ You can call this method at any point in your application. In this example, we c
                 const doc = new jsPDF();
                 exportDataGridToPdf({
                     jsPDFDocument: doc,
-                    component: this.dataGrid
+                    component: this.dataGrid,
+                    customizeCell: function(options) {
+                        const { gridCell, pdfCell } = options;
+        
+                        if(gridCell.rowType === 'data') {
+                            pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                        }
+                    }
                 }).then(() => {
                     doc.save('Customers.pdf');
                 });
@@ -176,9 +172,6 @@ You can call this method at any point in your application. In this example, we c
 
 ##### React
 
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
-
     <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
@@ -187,9 +180,9 @@ You can call this method at any point in your application. In this example, we c
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
-    import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+    import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';    
 
-    export default function App() {
+    const App = () => {
         const dataGridRef = useRef(null);
 
         function exportGrid() {
@@ -198,7 +191,14 @@ You can call this method at any point in your application. In this example, we c
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,
-                component: dataGrid
+                component: dataGrid,
+                customizeCell: function(options) {
+                    const { gridCell, pdfCell } = options;
+    
+                    if(gridCell.rowType === 'data') {
+                        pdfCell.font = { size: 20, fontStyle: 'bold', name: 'Arial' };
+                    }
+                }
             }).then(() => {
                 doc.save('Customers.pdf');
             });
@@ -206,25 +206,17 @@ You can call this method at any point in your application. In this example, we c
 
         return (
             <React.Fragment>
-                <div>
-                    <Button ...
-                        onClick={exportGrid}
-                    />
-                    <DataGrid ...
-                        ref={dataGridRef}
-                        >
-                        {/* ... */}
-                    </DataGrid>
-                </div>
+                <Button ...
+                    onClick={exportGrid}
+                />
+                <DataGrid ...
+                    ref={dataGridRef}>
+                    {/* ... */}
+                </DataGrid>
             </React.Fragment>
         );
     }
 
----     
+    export default App;
 
-
-#include common-demobutton with { 
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
-}
-
-[tags] ctp
+---

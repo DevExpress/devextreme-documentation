@@ -10452,9 +10452,6 @@
     "dxToolbarOptions.selectedItems": {
       "vue": "selected-items"
     },
-    "dxToolbarOptions.submenuType": {
-      "vue": "submenu-type"
-    },
     "dxToolbarOptions.tabIndex": {
       "vue": "tab-index"
     },

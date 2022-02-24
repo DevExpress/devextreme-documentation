@@ -7,7 +7,7 @@ The tree shaking mechanism checks whether you import only the modules used in yo
     <!--TypeScript-->
     import { DxButtonModule } from 'devextreme-angular';
 
-If tree shaking is not configured in your application, import exports from specific modules instead of the main `devextreme-angular` module to reduce the bundle size:
+If tree shaking is not configured in your application, **import** exports from specific modules instead of the main `devextreme-angular` module to reduce the bundle size:
 
     <!--TypeScript-->
     import { DxButtonModule } from 'devextreme-angular/ui/button';

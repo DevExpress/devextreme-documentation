@@ -2,7 +2,7 @@
 
 The tree shaking mechanism removes unused portions of source and library code to reduce the downloaded size of the application.
 
-The tree shaking mechanism checks whether you import only the modules used in your application. For instance, the following import takes the `DxButtonModule` from the `devextreme-angular` module:
+The tree shaking mechanism checks whether you import only the modules used in your application. For instance, the following **import** takes the `DxButtonModule` from the `devextreme-angular` module:
 
     <!--TypeScript-->
     import { DxButtonModule } from 'devextreme-angular';
@@ -18,10 +18,10 @@ If tree shaking is not configured in your application, **import** exports from s
 
 DevExtreme code consists of three main code groups:
 - Utilities Code
-    An application imports Utilities Code, when you add a DevExtreme component. Utilities Code is mandatory for DevExtreme components and the tree shaking mechanim does not remove it. 
+    An application imports Utilities Code, when you add a DevExtreme component. Utilities Code is mandatory for DevExtreme components and the tree shaking mechanim does not remove this code. 
 
 - Data Visualization Components Code
-    The bundle includes Data Visualization components code if you use the Chart component in your application. Data Visualization components code has a large size and may affect the resulting bundle.
+    The bundle includes the Data Visualization components code if you use the Chart component in your application. The Data Visualization components code has a large file size and may affect the resulting bundle.
 
 - UI Components Code
     The size of the UI Components Code depends on components that you use in your application. For example, you can import a simple component (such as [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/)) and the resulting bundle will contain only this component code. Complex components (such as [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/), [Scheduler](/Documentation/Guide/UI_Components/Scheduler/Getting_Started_with_Scheduler/), or [PivotGrid](/Documentation/Guide/UI_Components/PivotGrid/Getting_Started_with_PivotGrid/)) include multiple simple components. If you import [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) to your application, the bundle includes code of the [ScrollView](/Documentation/Guide/UI_Components/ScrollView/Overview/), [Button](/Documentation/Guide/UI_Components/Button/Getting_Started_with_Button/), [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/), [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/), and other components .

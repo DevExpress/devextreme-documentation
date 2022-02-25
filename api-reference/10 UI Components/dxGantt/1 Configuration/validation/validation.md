@@ -8,6 +8,10 @@ Configures validation properties.
 
 ---
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Validation/"
+}
+
 ---
 ##### jQuery
 

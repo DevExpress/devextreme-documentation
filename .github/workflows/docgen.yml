@@ -35,6 +35,10 @@ jobs:
           run: npm i
 
 #Generation
+        - name: Discover ts declarations
+          working-direcory: devextreme
+          run: npm run discover-ts-declarations -- --artifacts ../artifacts --js-scripts ../devextreme/js
+
         - name: Discover declarations
           working-directory: devextreme
           run: npm run discover-declarations -- --artifacts ../artifacts
@@ -50,10 +54,6 @@ jobs:
         - name: Generate Syntax metadata
           working-directory: documentation
           run: npm run generate-syntax-data -- --declarations-path $(realpath ../artifacts/Declarations.json)
-
-        - name: Generate Modules metadata
-          working-directory: documentation
-          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json) --js-scripts ../devextreme/js
 
         - name: Generate ContentMap
           working-directory: documentation

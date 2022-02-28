@@ -23,7 +23,7 @@ This property has the following specifics:
 
 - The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For Boolean columns, the default value is **true**; for columns of other types - **false**.
 
-- If you specify a cell and edit cell templates, the component ignores the [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') and uses the [editCellTemplate](/api-reference/_hidden/dxTreeListColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') instead if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
+- The [editCellTemplate](/api-reference/_hidden/dxTreeListColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
 [/note]
 

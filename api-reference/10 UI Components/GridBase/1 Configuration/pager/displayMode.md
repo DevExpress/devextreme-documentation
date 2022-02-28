@@ -23,7 +23,7 @@ The following table illustrates *"full"* and *"compact"* display modes:
     </tr>
     <tr>
         <td><code>"compact"</code></td>
-        <td><img src="/images/DataGrid/pager-display-mode-compact.png"/></td>
+        <td><img src="/images/DataGrid/pager-display-mode-compact"/></td>
     </tr>
 </table>
 

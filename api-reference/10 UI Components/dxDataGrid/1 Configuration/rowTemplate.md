@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.rowTemplate
 type: template
+dep: dxDataGrid.Options.dataRowTemplate
 ---
 ---
 ##### shortDescription

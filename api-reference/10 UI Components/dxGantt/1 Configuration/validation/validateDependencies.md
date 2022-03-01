@@ -9,6 +9,13 @@ Enables [task dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Conf
 
 ---
 
+The Gantt supports the following dependency validation rules:
+
+* Finish to Start (FS) - A successor task's start point should be equal or later than the preceding task's end point.
+* Start to Start (SS) - A successor task's start point should be equal or later than the preceding task's start point.
+* Finish to Finish (FF) - A successor task's end point should be equal or later than the preceding task's end point.
+* Start to Finish (SF) - A successor task's end point should be equal or later than a preceding task's start point.
+
 The Gantt allows you to validate relationships between tasks when they are edited.
 
 <table class="dx-table">

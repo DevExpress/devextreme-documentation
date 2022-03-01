@@ -20,7 +20,7 @@ You can specify attributes to the component's root element directly in HTML code
 
     <{WidgetName} ... className="myClass" />
 
-##### ASP.NET Core Control
+##### ASP.NET Core Controls
 
 To add an attribute to an ASP.NET Core control, use its **OnInitialized** method:
 

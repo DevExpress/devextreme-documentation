@@ -1,4 +1,4 @@
-If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') properties.
+If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Components/dxTextArea/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') properties.
 
 ---
 ##### jQuery

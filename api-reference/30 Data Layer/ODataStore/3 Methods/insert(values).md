@@ -1,7 +1,4 @@
 ---
-id: ODataStore.insert(values)
----
----
 ##### shortDescription
 
 ##### return: Promise<any>

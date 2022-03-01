@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.text
+id: PdfCell.text
 type: String
 
 ---

@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.wordWrapEnabled
+id: PdfCell.wordWrapEnabled
 type: Boolean
 default: false
 ---

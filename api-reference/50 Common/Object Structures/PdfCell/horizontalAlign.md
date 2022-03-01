@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.horizontalAlign
+id: PdfCell.horizontalAlign
 acceptValues: 'left' | 'center' | 'right'
 type: String
 

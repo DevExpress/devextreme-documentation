@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.padding
+id: PdfCell.padding
 type: Number | Object
 default: 40
 ---

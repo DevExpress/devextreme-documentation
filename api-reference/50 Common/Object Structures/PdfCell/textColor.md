@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.textColor
+id: PdfCell.textColor
 type: String
 
 ---

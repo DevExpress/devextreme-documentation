@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.font
+id: PdfCell.font
 type: Object
 
 ---

@@ -1,5 +1,5 @@
 ---
-id: PDFExportedDataGridCell.verticalAlign
+id: PdfCell.verticalAlign
 acceptValues: 'top' | 'middle' | 'bottom'
 type: String
 default: 'middle'

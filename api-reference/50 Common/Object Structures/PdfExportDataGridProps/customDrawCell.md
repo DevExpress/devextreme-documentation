@@ -14,7 +14,7 @@ Information about the event.
 Instance of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') used for exporting.
 
 ##### field(e.rect): Object
-Object containign information about location of the cell and it's dimensions.
+Object containign information about location of the cell and it's dimensions. An object with the following content: *{ x: numeric, y: numeric, h: numeric, w: numeric }*.
 
 ##### field(e.gridCell): PdfDataGridCell
 A DataGrid cell

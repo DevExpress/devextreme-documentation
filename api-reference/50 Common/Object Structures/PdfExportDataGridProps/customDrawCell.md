@@ -19,7 +19,7 @@ Object containign information about location of the cell and it's dimensions. An
 ##### field(e.gridCell): PdfDataGridCell
 A DataGrid cell
 
-##### field(e.pdfCell): PdfExportedDataGridCell
+##### field(e.pdfCell): PdfCell
 An exporting cell
 
 ##### field(e.cancel): Boolean

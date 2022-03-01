@@ -12,7 +12,7 @@ An object passed to this callback function.
 ##### field(options.gridCell): PdfDataGridCell
 A DataGrid cell.
 
-##### field(options.pdfCell): PdfExportedDataGridCell
+##### field(options.pdfCell): PdfCell
 An object that describes a cell in a PDF file.
 
 ---

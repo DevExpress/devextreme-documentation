@@ -10,7 +10,7 @@ A function that is executed before the row of the DataGrid is exported. Allows y
 ##### param(e): Object
 Information about the event.
 
-##### field(e.rowCells): Array<PdfExportedDataGridCell>
+##### field(e.rowCells): Array<PdfCell>
 Cells for the exported row.
 
 ##### field(e.rowHeight): Number

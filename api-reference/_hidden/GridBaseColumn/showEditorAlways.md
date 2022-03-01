@@ -5,17 +5,25 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the column displays its values using editors.
+Specifies whether the column displays its values in editors.
 
 ---
-A column cell has normal and editing states. In a normal state, the cell value is text. In the editing state, the cell contains an editor that indicates the cell value and allows a user to edit it. In certain cases, a viewer reads the cell value easier if it is indicated by an editor even in the normal state. For example, boolean values are more comprehensible when they are indicated by check boxes. To display editors in cells permanently, set the **showEditorAlways** property to **true**.
+
+Set the **showEditorAlways** property to **true** to display a column cell value in an editor when a user does not edit data. For example, you can use this functionality to display Boolean data as check boxes instead of the "true/false" strings.
+
+Behavior of the editor in a cell depends on the component's edit mode:
+
+- The **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) property is set to *"cell"* or *"batch"*. Users can edit values directly in their cells without switching the component to edit mode.
+
+- The **editing**.[mode]({basewidgetpath}/Configuration/editing/#mode) property is set to *"row"*, *"form"* or *"popup"*. Relevant only for Boolean values. The component displays Boolean values in read-only check boxes. Users should click the Edit button to change cell values.
 
 [note]
 
-This property has the following peculiarities.
+This property has the following specifics:
 
-- The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For boolean columns, it is **true**; for columns of other types - **false**.
-- If you use templates, setting this property to **true** means that the column will always use [editCellTemplate](/api-reference/_hidden/dxTreeListColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') instead of [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate').
+- The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For Boolean columns, the default value is **true**; for columns of other types - **false**.
+
+- The [editCellTemplate]({basewidgetpath}/Configuration/columns/#editCellTemplate) has higher priority over the [cellTemplate]({basewidgetpath}/Configuration/columns/#cellTemplate) if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
 [/note]
 

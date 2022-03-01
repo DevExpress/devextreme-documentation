@@ -28,3 +28,4 @@ The following table illustrates *"full"* and *"compact"* display modes:
 </table>
 
 The *"adaptive"* display mode switches between these two modes based on the component width.
+

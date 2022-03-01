@@ -1,7 +1,6 @@
 ---
 id: PdfExportDataGridProps.margin
 type: Number | Object
-default: 40
 ---
 ---
 ##### shortDescription

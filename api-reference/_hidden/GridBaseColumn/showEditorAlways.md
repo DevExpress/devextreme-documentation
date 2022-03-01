@@ -25,7 +25,148 @@ This property has the following specifics:
 
 - The [editCellTemplate]({basewidgetpath}/Configuration/columns/#editCellTemplate) has higher priority over the [cellTemplate]({basewidgetpath}/Configuration/columns/#cellTemplate) if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
+- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+
 [/note]
+
+The following example illustrates how this property works for the Boolean and Date data types:
+
+![DevExtreme DataGrid TreeList - showEditorAlways](/images/DataGrid/showEditorAlways.png)
+
+---
+##### jQuery
+
+    <!--JavaScript-->$(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [
+                { 
+                    dataField: "BirthDate", 
+                    dataType: 'date'
+                },
+                { 
+                    dataField: "OrderDate", 
+                    dataType: 'date',
+                    showEditorAlways: true
+                },
+                //...
+                { 
+                    dataField: "CheckedState", 
+                    dataType: 'boolean',
+                    showEditorAlways: false
+                },
+                { 
+                    dataField: "AvailabilityState", 
+                    dataType: 'boolean'
+                },
+                // ...
+            ]
+        });
+    });
+
+##### Angular
+    
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column dataField="BirthDate" dataType="date"></dxi-column>
+        <dxi-column dataField="OrderDate" dataType="date" showEditorAlways="true"></dxi-column>
+        <dxi-column dataField="CheckedState" dataType="boolean" showEditorAlways="false"></dxi-column>
+        <dxi-column dataField="AvailabilityState" dataType="boolean" ></dxi-column>
+    </dx-{widget-name}>
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        // ...
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn
+                data-field="BirthDate"
+                data-type="date"
+            />
+            <DxColumn
+                data-field="OrderDate"
+                data-type="date"
+                :show-editor-always="true"
+            />
+            <DxColumn
+                data-field="CheckedState"
+                data-type="boolean"
+                :show-editor-always="false"
+            />
+            <DxColumn
+                data-field="AvailabilityState"
+                data-type="boolean"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column
+                    dataField="BirthDate"
+                    dataType="date"
+                />
+                <Column
+                    dataField="OrderDate"
+                    dataType="date"
+                    showEditorAlways={true}
+                />
+                <Column
+                    dataField="CheckedState"
+                    dataType="boolean"
+                    showEditorAlways={false}
+                />
+                <Column
+                    dataField="AvailabilityState"
+                    dataType="boolean"
+                />
+            </{WidgetName}>
+        );
+    }
+    
+---
+
 
 #####See Also#####
 - **columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/Configuration/columns/#editorOptions')

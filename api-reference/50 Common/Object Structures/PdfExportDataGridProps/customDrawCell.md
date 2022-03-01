@@ -1,5 +1,5 @@
 ---
-id: PdfExportDataGridProps.onRowExporting
+id: PdfExportDataGridProps.customDrawCell
 type: function(e)
 default: null
 ---

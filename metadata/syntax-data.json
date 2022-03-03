@@ -5927,6 +5927,9 @@
     "dxGanttOptions.onResourceUnassigning": {
       "vue": "@resource-unassigning"
     },
+    "dxGanttOptions.onScaleCellPrepared": {
+      "vue": "@scale-cell-prepared"
+    },
     "dxGanttOptions.onSelectionChanged": {
       "vue": "@selection-changed"
     },

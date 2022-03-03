@@ -103,7 +103,7 @@ $(function() {
             return itemData.disabled ? '\u274C ' + itemData.Subject : '\u2705 ' + itemData.Subject;
         }, 
         dropDownOptions: {
-            closeOnOutsideClick: true,
+            closeOnOutsideClick: false,
             showTitle: false
         },
         opened: true

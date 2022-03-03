@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.scaleType
-acceptValues: 'auto' | 'minutes' | 'hours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years'
+acceptValues: 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
 type: String
 default: 'auto'
 ---

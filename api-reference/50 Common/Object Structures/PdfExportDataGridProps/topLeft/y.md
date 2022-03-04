@@ -5,7 +5,7 @@ default: 0
 ---
 ---
 ##### shortDescription
-Allows you to specify vertical position of the exported grid.
+Allows you to specify vertical position of the exported DataGrid.
 
 ---
 <!-- Description goes here -->

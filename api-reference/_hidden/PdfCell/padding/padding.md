@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Generates space around the text of the cell inside the DataGrid. Uses the measure units which are specified in the constructor for the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
+Generates space around the text of the cell inside the DataGrid. Uses the measure units which are specified in the constructor of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
 
 ---
 <!-- Description goes here -->

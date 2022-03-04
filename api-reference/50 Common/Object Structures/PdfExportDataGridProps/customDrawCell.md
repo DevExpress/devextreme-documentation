@@ -22,7 +22,7 @@ A DataGrid cell.
 An object that describes a cell in a PDF file.
 
 ##### field(options.rect): Object
-Object that contains information about location of the cell and it's dimensions. An object with the following content: *{ x: numeric, y: numeric, h: numeric, w: numeric }*.
+Object that contains information about the location of the cell and its dimensions. An object with the following content: { x: numeric, y: numeric, h: numeric, w: numeric }.
 
 ---
 <!-- Description goes here -->

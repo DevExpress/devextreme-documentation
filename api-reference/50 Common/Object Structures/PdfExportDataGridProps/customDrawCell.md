@@ -10,19 +10,19 @@ A function that is executed before the cell of the DataGrid is exported. Allows 
 Information about the event.
 
 ##### field(options.cancel): Boolean
-Allows you to prevent default drawing logic
+Allows you to prevent default drawing logic.
 
 ##### field(options.doc): Object
 Instance of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') used for exporting.
 
 ##### field(options.gridCell): PdfDataGridCell
-A DataGrid cell
+A DataGrid cell.
 
 ##### field(options.pdfCell): PdfCell
 An object that describes a cell in a PDF file.
 
 ##### field(options.rect): Object
-Object containign information about location of the cell and it's dimensions. An object with the following content: *{ x: numeric, y: numeric, h: numeric, w: numeric }*.
+Object that contains information about location of the cell and it's dimensions. An object with the following content: *{ x: numeric, y: numeric, h: numeric, w: numeric }*.
 
 ---
 <!-- Description goes here -->

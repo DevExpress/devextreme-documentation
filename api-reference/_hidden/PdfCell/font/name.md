@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specify the name of the used font. Default font names are listed below:
+Specifies the name of the used font. Default font names are listed below:
 
 * Courier
 * Courier-Bold

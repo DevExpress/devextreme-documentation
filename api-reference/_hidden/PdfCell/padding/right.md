@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Generates the space from the right side of the cell inside the DataGrid
+Generates space at the right side of the cell inside the DataGrid.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-A function that is executed before the row of the DataGrid is exported. Allows you to custimize the height of the exported row.
+A function that is executed before the row of the DataGrid is exported. Allows you to customize the height of the exported row.
 
 ##### param(options): Object
 Information about the event.
@@ -13,7 +13,7 @@ Information about the event.
 Cells for the currently exporting row.
 
 ##### field(options.rowHeight): Number
-Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, then the row height will be automatically increased so that the text has enough space.
+Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, the row height will be automatically increased.
 
 ---
 <!-- Description goes here -->

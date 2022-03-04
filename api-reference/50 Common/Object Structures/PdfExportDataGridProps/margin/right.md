@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Generates space from the right side of the page.
+Generates space at the right of the page.
 
 ---
 <!-- Description goes here -->

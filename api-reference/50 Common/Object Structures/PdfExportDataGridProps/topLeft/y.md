@@ -5,7 +5,7 @@ default: 0
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows you to specify vertical position of the exported grid.
 
 ---
 <!-- Description goes here -->

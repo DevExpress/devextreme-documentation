@@ -13,7 +13,7 @@ An object passed to this callback function.
 A DataGrid cell.
 
 ##### field(options.pdfCell): PdfCell
-An object that describes a cell in a PDF file. Refer to the following <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">Autotable</a> documentation section to see available customizations: <a href="https://github.com/simonbengtsson/jsPDF-AutoTable#options" target="_blank">jsPDF-Autotable options</a>.
+An object that describes a cell in a PDF file.
 
 ---
 
@@ -33,10 +33,7 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
                         const { gridCell, pdfCell } = options;
         
                         if(gridCell.rowType === 'data') {
-                            pdfCell.styles = {
-                                font: 'times',
-                                fontSize: 14
-                            }
+                            pdfCell.font = { size: 20 };
                         }
                     }
                 }).then(function() {
@@ -84,10 +81,7 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
                     const { gridCell, pdfCell } = options;
     
                     if(gridCell.rowType === 'data') {
-                        pdfCell.styles = {
-                            font: 'times',
-                            fontSize: 14
-                        }
+                        pdfCell.font = { size: 20 };
                     }
                 }
             }).then(() => {
@@ -170,10 +164,7 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
                         const { gridCell, pdfCell } = options;
         
                         if(gridCell.rowType === 'data') {
-                            pdfCell.styles = {
-                                font: 'times',
-                                fontSize: 14
-                            }
+                            pdfCell.font = { size: 20 };
                         }
                     }
                 }).then(() => {
@@ -210,10 +201,7 @@ An object that describes a cell in a PDF file. Refer to the following <a href="h
                     const { gridCell, pdfCell } = options;
     
                     if(gridCell.rowType === 'data') {
-                        pdfCell.styles = {
-                            font: 'times',
-                            fontSize: 14
-                        }
+                        pdfCell.font = { size: 20 };
                     }
                 }
             }).then(() => {

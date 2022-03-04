@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A start position inside the page used for export of the DataGrid. Contains **x** and **y** properties. This position starts from the page margins.
 
 ---
 <!-- Description goes here -->

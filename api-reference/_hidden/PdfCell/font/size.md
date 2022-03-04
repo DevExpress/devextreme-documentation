@@ -5,7 +5,7 @@ default: 10
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specify the size of the used font.
 
 ---
 <!-- Description goes here -->

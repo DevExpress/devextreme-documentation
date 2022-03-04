@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not to repeat the grid headers on each page.
 
 ---
 <!-- Description goes here -->

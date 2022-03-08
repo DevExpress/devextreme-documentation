@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.scaleTypeRange.max
-acceptValues: 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
+acceptValues: 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years'
 type: String
 default: 'years'
 ---

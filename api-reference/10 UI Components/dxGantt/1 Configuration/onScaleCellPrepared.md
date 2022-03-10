@@ -25,7 +25,7 @@ default: null
 ##### field(e.scaleIndex): Number
 <!-- Description goes here -->
 
-##### field(e.scaleType): 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
+##### field(e.scaleType): 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
 <!-- Description goes here -->
 
 ##### field(e.separatorElement): DxElement

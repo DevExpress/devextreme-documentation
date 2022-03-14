@@ -11704,6 +11704,9 @@
     "enums.GanttContextMenuItem": {
       "vue": "gantt-context-menu-item"
     },
+    "enums.GanttRenderScaleType": {
+      "vue": "gantt-render-scale-type"
+    },
     "enums.GanttScaleType": {
       "vue": "gantt-scale-type"
     },

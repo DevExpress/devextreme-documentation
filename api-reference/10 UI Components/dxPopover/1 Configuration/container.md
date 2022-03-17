@@ -1,1 +1,1 @@
-The container is defined during the UI component's initialization. The container by default is the viewport. If the viewport is not found, it is the body element. If the viewport and the body element are absent, the **container** is the parent element.
+The UI component defines the default container on its initialization. It is the [color swatch container](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches), the viewport if the color swatch container is not found or the body element if the previous two are absent.

@@ -13,4 +13,4 @@ default: 222, 60 (Material)
 
 <!-- import * from 'api-reference\10 UI Components\DOMComponent\1 Configuration\width.md' -->
 
-The {WidgetName} calculates its width relatively to one of the options in the following sequence: [container]({basewidgetpath}/Configuration/#container) => [position]({basewidgetpath}/Configuration/#position).of => **window**.
+The {WidgetName} calculates its width relatively to one of the options in the following sequence: [container]({basewidgetpath}/Configuration/#container) => [position]({basewidgetpath}/Configuration/#position).[of](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of) => **window**.

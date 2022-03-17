@@ -3,4 +3,4 @@ id: dxPopover.Options.shading
 type: Boolean
 default: false
 ---
-Shading is always applied to the window.
+Shading always applies to the **window**.

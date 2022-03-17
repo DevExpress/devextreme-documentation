@@ -1,1 +1,1 @@
-The UI component defines the default container on its initialization. It is the [color swatch container](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches), the viewport if the color swatch container is not found or the body element if the previous two are absent.
+The UI component defines the default container on its initialization in the following sequence: [color swatch container](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches) => **.dx-viewport** => **body**.

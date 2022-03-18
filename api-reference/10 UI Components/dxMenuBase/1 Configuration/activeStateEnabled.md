@@ -9,8 +9,8 @@ A Boolean value specifying whether or not the UI component changes its state whe
 
 ---
 
-When this property is set to **true**, the CSS rules for the active state (the active state begins when users press down the primary mouse button) apply. You can change them to customize the component.
+The active state begins when users press down the primary mouse button. When this property is set to **true**, the CSS rules for the active state apply. You can change these rules to customize the component.
 
-Use this property when you display the UI component on a platform, such as [MUI](https://github.com/mui/material-ui), whose guidelines include the active state change for UI components.
+Use this property when you display the component on a platform whose guidelines include the active state change for UI components. See the example of such platform: [MUI](https://github.com/mui/material-ui).
 
 

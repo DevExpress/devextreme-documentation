@@ -8952,6 +8952,9 @@
       "react": "Resizable",
       "vue": "DxResizable"
     },
+    "dxResizableOptions.keepAspectRatio": {
+      "vue": "keep-aspect-ratio"
+    },
     "dxResizableOptions.maxHeight": {
       "vue": "max-height"
     },
@@ -11703,6 +11706,9 @@
     },
     "enums.GanttContextMenuItem": {
       "vue": "gantt-context-menu-item"
+    },
+    "enums.GanttRenderScaleType": {
+      "vue": "gantt-render-scale-type"
     },
     "enums.GanttScaleType": {
       "vue": "gantt-scale-type"

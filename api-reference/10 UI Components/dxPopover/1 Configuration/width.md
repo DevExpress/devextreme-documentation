@@ -12,3 +12,5 @@ The UI component's width.
 
 ---
 #include uiwidgets-ref-width
+
+The {WidgetName} calculates its width relative to the **window**.

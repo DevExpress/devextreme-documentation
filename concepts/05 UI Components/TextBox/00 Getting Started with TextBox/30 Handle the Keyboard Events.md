@@ -39,7 +39,7 @@ In this tutorial, users can see the TextBox [value](/Documentation/ApiReference/
     <template>
         <DxTextBox 
             v-model:value="value"
-            @enterKey="onEnterKey($event)"
+            @enter-key="onEnterKey($event)"
         />
     </template>
 

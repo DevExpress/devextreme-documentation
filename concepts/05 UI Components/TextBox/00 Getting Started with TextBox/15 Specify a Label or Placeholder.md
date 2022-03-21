@@ -4,7 +4,7 @@ Use the [placeholder](/Documentation/ApiReference/UI_Components/dxTextBox/Config
 The component displays the label above the input field.
 
 - *"floating"*    
-The component uses label as a placeholder, but when the editor gets focus, the label moves to the position above the input field.
+The component uses the label as a placeholder, but when the editor gets focus, the label moves to the position above the input field.
 
 - *"hidden"*    
 The label is hidden.

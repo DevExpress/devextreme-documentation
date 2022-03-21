@@ -44,7 +44,7 @@ Indicates whether the editor uses right-to-left representation.
 A method you need to call to change the field's value after the editor's value changes.
 
 ##### field(e.updateValueTimeout): Number
-Gets and sets the delay between when a user stops typing the field's value and when it is applied.
+Gets and sets the delay between when a user stops typing the field's value and when the change is applied.
 
 ##### field(e.value): any
 The editor's value.

@@ -1,4 +1,4 @@
-The TextArea is a UI component that enables a user to enter and edit a multi-line text.
+The TextArea is a UI component that enables users to enter and edit multi-line text.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/"
@@ -75,7 +75,7 @@ The following code adds a simple TextArea with a [placeholder](/api-reference/10
 
 ---
 
-By default, the TextArea checks the entered text for spelling errors. To disable this feature, assign **false** to the **spellcheck** property.
+The TextArea checks the entered text for spelling errors. To disable this feature, set the **spellcheck** property to **false**.
 
 ---
 ##### jQuery

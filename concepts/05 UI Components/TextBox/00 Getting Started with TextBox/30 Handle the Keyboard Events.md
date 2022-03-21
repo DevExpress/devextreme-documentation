@@ -79,6 +79,7 @@ In this tutorial, users can see the TextBox [value](/Documentation/ApiReference/
             <TextBox ...
                 value={value}
                 valueChangeEvent="input"
+                onValueChange={onValueChange}
                 onEnterKey={onEnterKey}
             />
         );

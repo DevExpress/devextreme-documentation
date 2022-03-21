@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not the UI component changes its state when interacting with a user.
+Specifies whether the UI component changes its state when interacting with a user.
 
 ---
 

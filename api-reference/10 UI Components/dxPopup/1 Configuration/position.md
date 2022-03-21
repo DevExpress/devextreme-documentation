@@ -17,5 +17,3 @@ If you do not specify the [container]({basewidgetpath}/Configuration/#container)
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/",
     name: "Popup"
 }
-#####See Also#####
-- [restorePostion](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/restorePosition.md '{basewidgetpath}/Configuration/#restorePosition')

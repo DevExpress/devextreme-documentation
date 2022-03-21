@@ -1,10 +1,6 @@
 ---
 id: dxPopup.Options.position
 acceptValues: 'bottom' | 'center' | 'left' | 'left bottom' | 'left top' | 'right' | 'right bottom' | 'right top' | 'top'
-<<<<<<< HEAD
-type: String | positionConfig | function()
----
-=======
 type: String | PositionConfig | function()
 default: { my: 'center', at: 'center', of: window }
 ---
@@ -23,4 +19,3 @@ If you do not specify the [container]({basewidgetpath}/Configuration/#container)
 }
 #####See Also#####
 - [restorePostion](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/restorePosition.md '{basewidgetpath}/Configuration/#restorePosition')
->>>>>>> 8fe262fac (Overlays: describe container and position options in more details (#3526))

@@ -13,5 +13,5 @@ The UI component defines the default container on its initialization. This defau
 - **.dx-viewport** 
 - **body**
 
-If you set this property to the particular element, the [shading]({basewidgetpath}/Configuration/#shading) applies to this element. The {WidgetName} calculates its size relatively to this element.
+If you set this property to a specific element, the [shading]({basewidgetpath}/Configuration/#shading) applies to this element. The {WidgetName} calculates its size relative to the element.
 

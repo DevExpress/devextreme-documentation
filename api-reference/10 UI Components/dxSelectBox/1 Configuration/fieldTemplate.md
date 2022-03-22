@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the text field. Must contain the [TextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) UI component.
+Specifies a custom template for the text field. Must contain the [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') UI component.
 
 ##### param(selectedItem): Object
 The selected item's data.

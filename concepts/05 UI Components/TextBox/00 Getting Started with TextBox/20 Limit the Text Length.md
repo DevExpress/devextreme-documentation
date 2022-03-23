@@ -1,4 +1,4 @@
-Assign an integer number to the [maxLength](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maxLength) property to limit the text length.
+Assign an integer number to the [maxLength](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/maxLength.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maxLength') property to limit the text length.
 
 ---
 ##### jQuery

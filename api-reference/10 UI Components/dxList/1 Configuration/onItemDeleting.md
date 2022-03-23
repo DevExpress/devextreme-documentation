@@ -8,7 +8,7 @@ hidden: false
 ##### param(e): Object
 Information about the event.
 
-##### field(e.cancel): Boolean | Promise<void>
+##### field(e.cancel): Boolean | Promise<Boolean> | Promise<void>
 Allows you to cancel the item deletion.
 
 ##### field(e.component): dxList

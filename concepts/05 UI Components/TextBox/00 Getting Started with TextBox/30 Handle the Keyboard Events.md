@@ -1,6 +1,6 @@
 The TextBox raises three keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyDown'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyUp'), and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#enterKey'). Handle these events to access the original keyboard events.
 
-In this tutorial, users can see the TextBox [value](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#value) in the browser console after they press the Enter key.
+In this tutorial, users can see the TextBox [value](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#value') in the browser console after they press the Enter key.
 
 ---
 ##### jQuery

@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a scale cell is prepared.
 
 ---
-<!-- Description goes here -->
+Main article: [onScaleCellPrepared](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#onScaleCellPrepared)

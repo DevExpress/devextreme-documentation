@@ -121,10 +121,10 @@ Model data. Available only if you use Knockout.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
 
-    import DxSortable, DxTreeView from 'devextreme-vue/gantt';
-  
+    import DxTreeView from 'devextreme-vue/tree-view';
+    import DxSortable from 'devextreme-vue/sortable';
+
     export default {
         components: {
             DxSortable,
@@ -143,8 +143,6 @@ Model data. Available only if you use Knockout.
 
     <!-- tab: App.js -->
     import React from 'react';
-
-    import 'devextreme/dist/css/dx.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
     import Sortable from 'devextreme-react/sortable';

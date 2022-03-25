@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Generates space at the top side of the cell inside the DataGrid.
+Specifies the padding at the top of the DataGrid cell.
 
 ---
 <!-- Description goes here -->

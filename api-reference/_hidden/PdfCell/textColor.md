@@ -5,7 +5,7 @@ default: '#000000'
 ---
 ---
 ##### shortDescription
-Specifies the color of the text for the cell.
+Specifies the text color for the cell.
 
 ---
 <!-- Description goes here -->

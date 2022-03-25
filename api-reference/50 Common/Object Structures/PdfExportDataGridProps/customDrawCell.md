@@ -13,7 +13,7 @@ Information about the event.
 Allows you to prevent default drawing logic.
 
 ##### field(options.doc): Object
-Instance of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') used for exporting.
+Instance of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
 
 ##### field(options.gridCell): PdfDataGridCell
 A DataGrid cell.
@@ -22,7 +22,7 @@ A DataGrid cell.
 An object that describes a cell in a PDF file.
 
 ##### field(options.rect): Object
-Object that contains information about the location of the cell and its dimensions. An object with the following content: { x: numeric, y: numeric, h: numeric, w: numeric }.
+Object that contains information about the location of the cell and its dimensions. An object with the following structure: { x: numeric, y: numeric, h: numeric, w: numeric }.
 
 ---
 <!-- Description goes here -->

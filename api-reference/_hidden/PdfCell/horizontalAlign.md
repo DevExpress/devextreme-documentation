@@ -10,7 +10,7 @@ Specifies the horizontal alignment for the text inside the exported cell.
 ---
 <!-- Description goes here -->
 
-The default alignment of the content depends on the [type of data](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). 
+The default alignment of the content depends on the [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType').
 
 <table class="dx-table">
   <tr>

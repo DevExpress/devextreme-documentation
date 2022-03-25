@@ -6,7 +6,7 @@ default: 'normal'
 ---
 ---
 ##### shortDescription
-Specifies the style of the used font.
+Specifies the style of the font.
 
 ---
 <!-- Description goes here -->

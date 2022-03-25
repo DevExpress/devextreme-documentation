@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Generates space at the top of the page.
+Specifies the margin at the top of the page.
 
 ---
 <!-- Description goes here -->

@@ -13,7 +13,7 @@ Information about the event.
 Cells for the currently exporting row.
 
 ##### field(options.rowHeight): Number
-Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, the row height will be automatically increased.
+Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, the component increases the row height automatically.
 
 ---
 <!-- Description goes here -->

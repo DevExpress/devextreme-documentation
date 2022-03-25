@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Generates space at the left side of the page.
+Specifies the margin at the left side of the page.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ default: '#979797'
 ---
 ---
 ##### shortDescription
-Specifies the color of the outer borders of the table.
+Specifies the color of the table's outer borders.
 
 ---
 <!-- Description goes here -->

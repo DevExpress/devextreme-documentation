@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not to repeat the DataGrid headers on each page.
+Specifies whether to repeat the DataGrid headers on each page.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to resize the UI component's content proportionally when you use corner handlers.
 
 ---
 <!-- Description goes here -->

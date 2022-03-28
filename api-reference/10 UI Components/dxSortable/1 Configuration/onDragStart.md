@@ -46,7 +46,7 @@ Model data. Available only if you use Knockout.
     <!-- tab: index.js -->
     $(function() {
         var treeView = $("#simple-treeview").dxTreeView({
-            items: employees,
+            items: treeViewItems,
             dataStructure: "plain",
             <!-- ... -->
         }).dxTreeView("instance");
@@ -54,13 +54,19 @@ Model data. Available only if you use Knockout.
         $("#simple-treeview").dxSortable({
             filter: ".dx-treeview-item",
             allowReordering: true,
-            // ...
+            dragTemplate: dragTemplateFunc,       
             onDragStart: function (e) {
                 e.itemData = e.element.find(".dx-treeview-item")[e.fromIndex].innerText;
                 // your code
             }
         });
     }); 
+
+    function dragTemplateFunc(item, customContainer){
+        var $customContainer = $(document.createElement("div")) 
+            .text(item.itemData + ' drag template');
+        return $customContainer;
+    }
 
     <!-- tab: index.html -->
     <div class="demo-container">
@@ -76,9 +82,9 @@ Model data. Available only if you use Knockout.
     import { DxSortableModule, DxTreeViewModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        onDragStart(e) {
-            e.itemData = e.element.find(".dx-treeview-item")[e.fromIndex].innerText;
-            //...
+        onDragStart(e){
+            e.itemData = this.treeViewItems[e.fromIndex].name;
+            // ...
         }
     }
     @NgModule({
@@ -94,10 +100,15 @@ Model data. Available only if you use Knockout.
     <dx-sortable
         filter=".dx-treeview-item"
         [allowReordering]="true"
-        (onDragStart)="onDragStart($event)">
+        (onDragStart)="onDragStart($event)"
+        dragTemplate="myDragTemplate"
+    >
+        <div *dxTemplate="let e of 'myDragTemplate'">
+            <div>{{ e.itemData + " drag template" }}</div>
+        </div>          
         <dx-tree-view
             id="simple-treeview"
-            [items]="employees"
+            [items]="treeViewItems"
             dataStructure="plain"
             ...>
         </dx-tree-view>
@@ -111,11 +122,15 @@ Model data. Available only if you use Knockout.
             filter=".dx-treeview-item"
             :allow-reordering="true"
             @drag-start="onDragStart"
+            :drag-template="myDragTemplate"
         >
+            <template #myDragTemplate="{ data }">
+                <div>{{ data.itemData.Task_Subject}} + "drag template"</div>
+            </template>        
             <DxTreeView
                 id="simple-treeview"
                 data-structure="plain"
-                :items="employees"
+                :items="treeViewItems"
             />
         </DxSortable>
     </template>
@@ -132,7 +147,7 @@ Model data. Available only if you use Knockout.
         },
         methods: {
             onDragStart(e) {
-                e.itemData = e.element.find(".dx-treeview-item")[e.fromIndex].innerText;
+                e.itemData = this.treeViewItems[e.fromIndex].name;
                 // ...
             }
         }
@@ -146,25 +161,35 @@ Model data. Available only if you use Knockout.
 
     import TreeView from 'devextreme-react/tree-view';
     import Sortable from 'devextreme-react/sortable';
+    import { Template } from 'devextreme-react/core/template';
+
+    function myDragTemplate(e) {
+        return (
+            e.itemData + " drag template";
+        );
+    }
 
     class App extends React.Component {
-        // ...
+        constructor(props) {
+            //...
+        }        
         render() {
             return (
                 <Sortable
                     filter=".dx-treeview-item"
                     allowReordering={true}
-                    onDragStart={this.onDragStart}>
+                    onDragStart={this.onDragStart}
+                    dragTemplate={myDragTemplate}>
                     <TreeView
                         id="simple-treeview"
                         dataStructure="plain"
-                        items={this.state.employees}
+                        items={this.state.treeViewItems}
                     />
                 </Sortable>                
             );
         }
         onDragStart = (e) => {
-            e.itemData = e.element.find(".dx-treeview-item")[e.fromIndex].innerText;
+            e.itemData = this.state.treeViewItems[e.fromIndex].name;
             // your code
         }
     }
@@ -177,6 +202,7 @@ Model data. Available only if you use Knockout.
         .Filter(".dx-treeview-item")
         .AllowReordering(true)
         .OnDragStart("onDragStart")
+        .DragTemplate(new JS("dragTemplateFunc"))
         .Content(
             Html.DevExtreme().TreeView()
                 .ID("simple-treeview")
@@ -191,6 +217,12 @@ Model data. Available only if you use Knockout.
             e.itemData = e.element.find(".dx-treeview-item")[e.fromIndex].innerText;
             // your code
         }
+
+        function dragTemplateFunc(item, customContainer){
+            var $customContainer = $(document.createElement("div")) 
+                .text(item.itemData + ' drag template');
+            return $customContainer;
+        }        
     </script>
 
 ---

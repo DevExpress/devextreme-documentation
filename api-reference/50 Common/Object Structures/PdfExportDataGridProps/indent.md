@@ -5,7 +5,7 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the value of the horizontal gap between data cells and groups and headers.
+Specifies the length of the horizontal gap between DataGrid group headers and rows.
 
 ---
 <!-- Description goes here -->

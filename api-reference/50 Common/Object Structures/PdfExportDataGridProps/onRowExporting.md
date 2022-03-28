@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-A function that is executed before the row of the DataGrid is exported. Allows you to customize the height of the exported row.
+A function that allows you to customize the height of the exported row. This function is executed before the row export.
 
 ##### param(options): Object
 Information about the event.

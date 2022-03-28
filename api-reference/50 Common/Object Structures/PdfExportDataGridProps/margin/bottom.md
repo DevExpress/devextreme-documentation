@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Generates space at the bottom of the page.
+Specifies the margin at the bottom of the page.
 
 ---
 <!-- Description goes here -->

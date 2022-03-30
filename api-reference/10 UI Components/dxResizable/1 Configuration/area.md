@@ -5,7 +5,11 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the area that limits the resize of the UI component.
 
 ---
-<!-- Description goes here -->
+This property accepts an element or CSS selector.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
+}

@@ -8,4 +8,6 @@ default: true
 Specifies whether to resize the UI component's content proportionally when you use corner handles.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
+}

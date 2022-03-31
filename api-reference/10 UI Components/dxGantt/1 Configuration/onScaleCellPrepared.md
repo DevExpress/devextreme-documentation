@@ -33,7 +33,7 @@ The separator after the scale cell.
 
 ---
 
-![DevExtreme Gantt - Customize Scale](~/images/Gantt/customize-scale.png)
+![DevExtreme Gantt - Customize Scale](/images/Gantt/customize-scale.png)
 
 ---
 

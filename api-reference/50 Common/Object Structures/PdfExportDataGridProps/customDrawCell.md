@@ -13,7 +13,7 @@ Information about the event.
 Allows you to prevent default drawing logic.
 
 ##### field(options.doc): Object
-Instance of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
+An instance of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
 
 ##### field(options.gridCell): PdfDataGridCell
 A DataGrid cell.

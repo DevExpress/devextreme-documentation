@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the padding around the text of the DataGrid cell.
+Specifies the top, bottom, left, and right paddings of the DataGrid cell.
 
 ---
 <!-- Description goes here -->

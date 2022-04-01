@@ -10,7 +10,7 @@ A function that allows you to customize the height of the exported row. This fun
 Information about the event.
 
 ##### field(options.rowCells): Array<PdfCell>
-Cells for the currently exporting row.
+An array of cells of the exported row.
 
 ##### field(options.rowHeight): Number
 Allows you to specify the minimum height of the exported row. If the specified value is less than the height of the text, the component increases the row height automatically.

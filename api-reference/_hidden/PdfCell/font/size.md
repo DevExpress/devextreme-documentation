@@ -5,7 +5,7 @@ default: 10
 ---
 ---
 ##### shortDescription
-Specifies the size of the font.
+Specifies the font size.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Object that contains information about the font's size, name and style.
+An object that contains information about the font's size, name and style.
 
 ---
 <!-- Description goes here -->

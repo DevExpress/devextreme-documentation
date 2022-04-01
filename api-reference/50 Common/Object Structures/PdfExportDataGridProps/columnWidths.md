@@ -6,7 +6,7 @@ default: undefined
 ---
 ##### shortDescription
 <!-- Description goes here -->
-Allows to specify custom width for the exporting columns of the DataGrid.
+Specifies a custom width for the exporting DataGrid columns.
 
 ---
 <!-- Description goes here -->

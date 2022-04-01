@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies the margin around the exported Grid.
+Specifies the margin for the top, bottom, left, and right sides of the exported Grid.
 
 ---
 <!-- Description goes here -->

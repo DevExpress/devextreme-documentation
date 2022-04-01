@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Specifies the padding at the top of the DataGrid cell.
+Specifies the top padding of the DataGrid cell.
 
 ---
 <!-- Description goes here -->

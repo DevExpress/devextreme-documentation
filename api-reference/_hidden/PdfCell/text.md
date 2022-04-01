@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-The cell's raw text.
+The cell's text.
 
 ---
 <!-- Description goes here -->

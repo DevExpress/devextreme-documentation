@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-Specifies whether to enable word wrapping for exported data in the resulting PDF file.
+Specifies whether to enable word wrapping in the resulting PDF file.
 
 ---
 <!-- Description goes here -->

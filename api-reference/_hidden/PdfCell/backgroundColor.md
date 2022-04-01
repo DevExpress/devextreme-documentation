@@ -8,4 +8,4 @@ default: '#FFFFFF'
 Specifies the background color of the cell.
 
 ---
-The color must be in the following format: hexadecimal color.
+The color must be in the hexadecimal format.

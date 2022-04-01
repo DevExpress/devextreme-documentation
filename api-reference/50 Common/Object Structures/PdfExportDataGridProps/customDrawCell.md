@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-A function that allows you to draw a content inside the cell of the exported DataGrid. This function is executed before the cell export.
+A function that allows you to draw a cell content of the exported DataGrid. This function is executed before the cell export.
 
 ##### param(options): Object
 Information about the event.

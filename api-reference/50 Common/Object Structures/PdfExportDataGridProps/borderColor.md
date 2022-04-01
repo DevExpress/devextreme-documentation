@@ -9,4 +9,4 @@ Specifies the color of the table's outer borders.
 
 ---
 <!-- Description goes here -->
-The color must be in the following format: hexadecimal color.
+The color must be in the hexadecimal format.

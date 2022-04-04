@@ -17,8 +17,8 @@ Specifies the font name. Default font names:
 * Symbol
 * Times-Roman
 * Times-Bold
-* Time-Italic
-* Time-BoldItalic
+* Times-Italic
+* Times-BoldItalic
 
 ---
 <!-- Description goes here -->

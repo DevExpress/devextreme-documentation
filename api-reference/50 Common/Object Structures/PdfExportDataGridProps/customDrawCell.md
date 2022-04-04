@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-A function that allows you to draw a cell content of the exported DataGrid. This function is executed before the cell export.
+A function that allows you to draw cell content of the exported DataGrid. This function is executed before the cell is exported.
 
 ##### param(options): Object
 Information about the event.
@@ -22,7 +22,7 @@ A DataGrid cell.
 An object that describes a cell in a PDF file.
 
 ##### field(options.rect): Object
-Object that contains information about the location of the cell and its dimensions. An object has the following structure: { x: numeric, y: numeric, h: numeric, w: numeric }.
+An object that contains information about the location of the cell and its dimensions. The object has the following structure: { x: numeric, y: numeric, h: numeric, w: numeric }.
 
 ---
 <!-- Description goes here -->

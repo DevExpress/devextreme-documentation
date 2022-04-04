@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a scale cell is prepared. 
+A function that is executed before a scale cell is prepared.
 
 ##### param(e): Object
 Information about the event.
@@ -23,9 +23,9 @@ The end date of the scale cell.
 The scale cell.
 
 ##### field(e.scaleIndex): Number
-Specifies the scale's index. 
+Specifies the scale's index.
 
-##### field(e.scaleType): 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
+##### field(e.scaleType): 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
 The scale type.
 
 ##### field(e.separatorElement): DxElement

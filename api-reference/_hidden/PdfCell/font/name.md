@@ -4,7 +4,21 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the font name. Default font names:
+
+* Courier
+* Courier-Bold
+* Courier-BoldOblique
+* Courier-Oblique
+* Helvetica
+* Helvetica-Bold
+* Helvetica-BoldOblique
+* Helvetica-Oblique
+* Symbol
+* Times-Roman
+* Times-Bold
+* Times-Italic
+* Times-BoldItalic
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ default: 'middle'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the vertical alignment for the text inside the exported cell.
 
 ---
 <!-- Description goes here -->

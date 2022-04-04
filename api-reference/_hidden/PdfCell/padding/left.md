@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the left padding of the DataGrid cell.
 
 ---
 <!-- Description goes here -->

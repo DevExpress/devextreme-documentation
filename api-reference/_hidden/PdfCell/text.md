@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The cell's text.
 
 ---
 <!-- Description goes here -->

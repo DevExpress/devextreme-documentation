@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a scale cell is prepared. 
+A function that is executed before a scale cell is prepared.
 
 ##### param(e): Object
 Information about the event.
@@ -16,20 +16,23 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.end): Date
-The end date of the scale cell.
-
 ##### field(e.scaleElement): DxElement
 The scale cell.
 
 ##### field(e.scaleIndex): Number
-Specifies the scale's index. 
+Specifies the scale's index.
 
-##### field(e.scaleType): 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
+##### field(e.scaleType): 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
 The scale type.
 
 ##### field(e.separatorElement): DxElement
 The separator after the scale cell.
+
+##### field(e.endDate): Date
+<!-- Description goes here -->
+
+##### field(e.startDate): Date
+<!-- Description goes here -->
 
 ---
 

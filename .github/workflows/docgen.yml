@@ -98,7 +98,9 @@ jobs:
                 https://api.github.com/repos/${{ github.repository }}/pulls \
                 --data-binary @prdata.json
 
-        - uses: actions/upload-artifact@v2
+        - name: Archive internal-tools artifacts
+          uses: actions/upload-artifact@v3
           with:
-            name: artifacts
-            path: artifacts/*
+            name: internal-tools-artifacts
+            path: artifacts/internal-tools/
+            retention-days: 7

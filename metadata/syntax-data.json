@@ -2316,6 +2316,9 @@
     "dxChartSeriesTypes.CommonSeries.label.customizeText": {
       "vue": "customize-text"
     },
+    "dxChartSeriesTypes.CommonSeries.label.displayFormat": {
+      "vue": "display-format"
+    },
     "dxChartSeriesTypes.CommonSeries.label.font": {
       "angular": "dxo-font",
       "react": "Font",
@@ -7303,6 +7306,9 @@
     "dxPieChartSeriesTypes.CommonPieChartSeries.label.customizeText": {
       "vue": "customize-text"
     },
+    "dxPieChartSeriesTypes.CommonPieChartSeries.label.displayFormat": {
+      "vue": "display-format"
+    },
     "dxPieChartSeriesTypes.CommonPieChartSeries.label.font": {
       "angular": "dxo-font",
       "react": "Font",
@@ -8249,6 +8255,9 @@
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.label.customizeText": {
       "vue": "customize-text"
+    },
+    "dxPolarChartSeriesTypes.CommonPolarChartSeries.label.displayFormat": {
+      "vue": "display-format"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.label.font": {
       "angular": "dxo-font",

@@ -5,7 +5,7 @@ export: default
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Hides all the Toast components in the application.
 
 ---
 <!-- Description goes here -->

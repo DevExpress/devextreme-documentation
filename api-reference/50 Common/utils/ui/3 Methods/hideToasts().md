@@ -29,13 +29,13 @@ The code below uses a [Button](/Documentation/ApiReference/UI_Components/dxButto
     <!-- tab: app.component.html -->
     <dx-button
         text="Hide all Toasts"
-        (onClick)="onClick()"
+        (onClick)="onClick($event)"
     >
     </dx-button>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import hideToasts from 'devextreme/ui/toast/hide_toasts';
+    import hideToasts from 'devextreme/ui/hideToasts';
 
     @Component({
         selector: 'app-root',
@@ -55,13 +55,13 @@ The code below uses a [Button](/Documentation/ApiReference/UI_Components/dxButto
     <template>
         <DxButton
             text="Hide all Toasts"
-            @click="onClick()"
+            @click="onClick"
         />
     </template>
 
     <script>
         import { DxButton } from 'devextreme-vue/button';
-        import hideToasts from 'devextreme/ui/toast/hide_toasts';
+        import hideToasts from 'devextreme/ui/hideToasts';
 
         export default {
             methods: {
@@ -77,7 +77,7 @@ The code below uses a [Button](/Documentation/ApiReference/UI_Components/dxButto
     <!-- tab: App.js -->
     import React from 'react';
     import { Button } from 'devextreme-react/button';
-    import hideToasts from 'devextreme/ui/toast/hide_toasts';
+    import hideToasts from 'devextreme/ui/hideToasts';
 
     function App() {
         const onClick = () => { 

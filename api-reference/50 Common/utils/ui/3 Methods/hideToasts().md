@@ -11,12 +11,25 @@ Hides all the Toast components in the application.
 ---
 #####jQuery
 
-    <!--JavaScript-->
-    $(function() {
-        DevExpress.ui.hideToasts();
-    })
+    <!-- tab: index.html -->
+    <div id="hide"></div>
+
+    <!-- tab: index.js -->
+    $("#hide").dxButton({
+        text: "Hide all Toasts",
+        onClick() {
+            DevExpress.ui.hideToasts();
+        }
+    });
 
 #####Angular
+
+    <!-- tab: app.component.html -->
+    <dx-button
+        text="Hide all Toasts"
+        (onClick)="onClick()"
+    >
+    </dx-button>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -28,7 +41,7 @@ Hides all the Toast components in the application.
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        function() {
+        onClick() {
             hideToasts();
         }
     }
@@ -37,13 +50,19 @@ Hides all the Toast components in the application.
 
     <!-- tab: App.vue -->
     <template>
+        <DxButton
+            text="Hide all Toasts"
+            @click="onClick()"
+        />
     </template>
+
     <script>
+    import { DxButton } from 'devextreme-vue/button';
     import hideToasts from 'devextreme/ui/toast/hide_toasts';
 
     export default {
         methods: {
-            function() {
+            onClick() {
                 hideToasts();
             }
         }
@@ -54,12 +73,19 @@ Hides all the Toast components in the application.
 
     <!-- tab: App.js -->
     import React from 'react';
+    import { Button } from 'devextreme-react/button';
     import hideToasts from 'devextreme/ui/toast/hide_toasts';
 
     function App() {
-        const hideAllToasts = () => { 
+        const onClick = () => { 
             hideToasts();
         }
+        return (
+            <Button 
+                text="Hide all Toasts"
+                onClick={onClick}
+            />
+        );
     }
     export default App;
 

@@ -1543,6 +1543,9 @@
       "react": "CommonAxisSettings",
       "vue": "DxCommonAxisSettings"
     },
+    "dxChartOptions.commonAxisSettings.aggregatedPointsPosition": {
+      "vue": "aggregated-points-position"
+    },
     "dxChartOptions.commonAxisSettings.allowDecimals": {
       "vue": "allow-decimals"
     },
@@ -8423,6 +8426,9 @@
       "react": "BreakStyle",
       "vue": "DxBreakStyle"
     },
+    "dxRangeSelectorOptions.scale.discreteAxisDivisionMode": {
+      "vue": "discrete-axis-division-mode"
+    },
     "dxRangeSelectorOptions.scale.endOnTick": {
       "vue": "end-on-tick"
     },
@@ -11079,6 +11085,9 @@
     },
     "emailRule.ignoreEmptyValue": {
       "vue": "ignore-empty-value"
+    },
+    "enums.AggregatedPointsPosition": {
+      "vue": "aggregated-points-position"
     },
     "enums.AnimationType": {
       "vue": "animation-type"

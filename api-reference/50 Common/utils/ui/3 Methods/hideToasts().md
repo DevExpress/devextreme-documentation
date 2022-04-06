@@ -8,6 +8,8 @@ export: default
 Hides all the Toast components in the application.
 
 ---
+The code below uses a [Button](/Documentation/ApiReference/UI_Components/dxButton/) to hide all the Toast components on click.
+
 ---
 #####jQuery
 
@@ -40,6 +42,7 @@ Hides all the Toast components in the application.
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
+
     export class AppComponent {
         onClick() {
             hideToasts();
@@ -57,16 +60,16 @@ Hides all the Toast components in the application.
     </template>
 
     <script>
-    import { DxButton } from 'devextreme-vue/button';
-    import hideToasts from 'devextreme/ui/toast/hide_toasts';
+        import { DxButton } from 'devextreme-vue/button';
+        import hideToasts from 'devextreme/ui/toast/hide_toasts';
 
-    export default {
-        methods: {
-            onClick() {
-                hideToasts();
+        export default {
+            methods: {
+                onClick() {
+                    hideToasts();
+                }
             }
         }
-    }
     </script>
 
 #####React

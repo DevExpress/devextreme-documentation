@@ -29,10 +29,10 @@ The scale type.
 The separator after the scale cell.
 
 ##### field(e.endDate): Date
-<!-- Description goes here -->
+The end date of the scale cell.
 
 ##### field(e.startDate): Date
-<!-- Description goes here -->
+The start date of the scale cell.
 
 ---
 

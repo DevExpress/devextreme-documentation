@@ -160,6 +160,12 @@ The position in which the item is placed. If the item is dragged away from the U
             DxSortable,
             DxTreeView
         },
+        data() {
+            return {
+                myDragTemplate: "myDragTemplate",
+                //...
+            };
+        },        
         methods: {
             onDragMove(e) {
                 e.itemData = this.treeViewItems[e.fromIndex].name;

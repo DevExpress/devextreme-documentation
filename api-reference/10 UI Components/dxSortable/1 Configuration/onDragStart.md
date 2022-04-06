@@ -145,6 +145,12 @@ Model data. Available only if you use Knockout.
             DxSortable,
             DxTreeView
         },
+        data() {
+            return {
+                myDragTemplate: "myDragTemplate",
+                //...
+            };
+        },
         methods: {
             onDragStart(e) {
                 e.itemData = this.treeViewItems[e.fromIndex].name;

@@ -11,7 +11,7 @@ Specifies the area within which users can resize the UI component.
 
 ![Area Available For Resize](/images/Editors/resizable-area.png)
 
-You can use a selector string, jQuery object or DOM element to specify this property:
+You can use a selector string, jQuery object, or DOM element to specify this property:
 
 - String
 

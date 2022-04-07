@@ -8,7 +8,7 @@ export: default
 Hides all the Toast components in the application.
 
 ---
-The code below uses a [Button](/Documentation/ApiReference/UI_Components/dxButton/) to hide all the Toast components on click.
+The code below uses a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') to hide all the Toast components on click.
 
 ---
 #####jQuery

@@ -8,7 +8,7 @@ Selects individual fields from data objects.
 ##### return: Query
 The **Query** with transformed data.
 
-##### param(getter): Object
+##### param(getter): Object | Array<getter>
 A getter; in most cases, the names of the data fields to select.
 
 ---

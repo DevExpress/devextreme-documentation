@@ -15,8 +15,6 @@ Export settings.
 
 ---
 
-#include common-ctp-note-wo-devextreme
-
 This method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library to export data and create PDF files.
 
 You can call this method at any point in your application. In this example, this method is called in a standalone button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
@@ -226,5 +224,3 @@ You can call this method at any point in your application. In this example, this
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
 }
-
-[tags] ctp

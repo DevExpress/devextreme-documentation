@@ -13,6 +13,26 @@ Default toolbar items support the following options:
 - **width**
 
 ---
+
+##### jQuery
+
+    <!--JavaScript-->
+    $(function () {
+        $("#file-manager").dxFileManager({
+            toolbar: {
+                items: [
+                    // Specifies a predefined item's name and optional settings
+                    {
+                        widget: "dxCheckBox",
+                        options: { 
+                            text: "Show IDs", 
+                        }                        
+                    },
+                ]
+            }
+        });
+    });
+
 ##### Angular
 
     <!-- tab: app.component.html -->

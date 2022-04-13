@@ -10,7 +10,7 @@ Specifies the start position of the aggregated series points in the aggregation 
 
 ---
 
-![DevExtreme Charts - Aggregated points position](~/images/ChartJS/aggregated-points-position.png)
+![DevExtreme Charts - Aggregated points position](/images/ChartJS/aggregated-points-position.png)
 
 ---
 ##### jQuery

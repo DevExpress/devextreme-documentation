@@ -13,7 +13,7 @@ This property is ignored if labels are [hidden](/Documentation/ApiReference/UI_C
 
 Use the parameters of the **label.customizeText** function as placeholders in the **displayFormat** property value.
 
-The example below illustrates how to customize label texts for all and individual series:
+The example below illustrates how to customize label text for all series and individual series:
 
 ![DevExtreme Charts - Format label text](/images/ChartJS/label-display-format.png)
 

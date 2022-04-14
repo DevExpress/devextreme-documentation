@@ -10,9 +10,6 @@ A function that is executed before the UI component is exported.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.cancel): Boolean
-Allows you to prevent exporting.
-
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 

@@ -19,9 +19,6 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.location): Object
-The clicked point's location on the map (if the "google" or "bing" provider is used).
-
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 

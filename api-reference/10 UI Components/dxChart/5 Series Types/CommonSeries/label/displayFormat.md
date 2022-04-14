@@ -9,7 +9,7 @@ Specifies the label's text.
 
 ---
 
-This property is ignored if labels are [hidden](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#visible). 
+This property is ignored if labels are [hidden](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#visible'). 
 
 Use the parameters of the **label.customizeText** function as placeholders in the **displayFormat** property value.
 

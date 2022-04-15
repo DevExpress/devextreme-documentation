@@ -39,7 +39,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
         $("#chartContainer").dxChart({
             // ...
             onLegendClick: function (e) {
-                e.event.cancel = true;
+                e.cancel = true;
             }
         });
     });
@@ -51,7 +51,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
     // ...
     export class AppComponent {
         cancelSeriesClick (e) {
-            e.event.cancel = true;
+            e.cancel = true;
         }
     }
     @NgModule({
@@ -84,7 +84,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
         },
         methods: {
             cancelSeriesClick (e) {
-                e.event.cancel = true;
+                e.cancel = true;
             }
         }
     }
@@ -107,7 +107,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
         }
 
         cancelSeriesClick (e) {
-            e.event.cancel = true;
+            e.cancel = true;
         }
     }
 

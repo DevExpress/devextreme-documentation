@@ -39,7 +39,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configu
         $("#polarChartContainer").dxPolarChart({
             // ...
             onLegendClick: function (e) {
-                e.event.cancel = true;
+                e.cancel = true;
             }
         });
     });
@@ -51,7 +51,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configu
     // ...
     export class AppComponent {
         cancelSeriesClick (e) {
-            e.event.cancel = true;
+            e.cancel = true;
         }
     }
     @NgModule({
@@ -84,7 +84,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configu
         },
         methods: {
             cancelSeriesClick (e) {
-                e.event.cancel = true;
+                e.cancel = true;
             }
         }
     }
@@ -107,7 +107,7 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configu
         }
 
         cancelSeriesClick (e) {
-            e.event.cancel = true;
+            e.cancel = true;
         }
     }
 

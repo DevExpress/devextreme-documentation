@@ -4622,6 +4622,11 @@
     "dxElement": {
       "vue": "dx-element"
     },
+    "dxEvent": {
+      "angular": "dxo-dx-event",
+      "react": "DxEvent",
+      "vue": "DxDxEvent"
+    },
     "dxFileManager": {
       "angular": "dx-file-manager",
       "react": "FileManager",

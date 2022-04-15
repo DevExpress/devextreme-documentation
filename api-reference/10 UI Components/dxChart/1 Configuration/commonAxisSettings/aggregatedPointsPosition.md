@@ -127,4 +127,4 @@ Specifies the start position of the aggregated series points in the aggregation 
 ---
 
 #####See Also#####
-- [Implement a Custom Aggregate Function](/Documentation/Guide/UI_Components/Chart/Data_Aggregation/#Implement_a_Custom_Aggregate_Function)
+- [Implement a Custom Aggregate Function](/concepts/05%20UI%20Components/Chart/88%20Data%20Aggregation/20%20Implement%20a%20Custom%20Aggregate%20Function.md '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/#Implement_a_Custom_Aggregate_Function')

@@ -216,10 +216,10 @@
     "attach",
     "return",
     "indeterminatestate",
-    "iconlock",
-    "iconunlock",
-    "iconimgarlock",
-    "iconimgarunlock"
+    "lock",
+    "unlock",
+    "imgarlock",
+    "imgarunlock"
 ];
 
 var divs = $.map(iconNames, function (name) {

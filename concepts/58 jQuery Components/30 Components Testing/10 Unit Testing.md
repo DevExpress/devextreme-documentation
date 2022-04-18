@@ -38,7 +38,7 @@ Add the following script to test the DataGrid configuration and the number of lo
     };
 
     QUnit.module("DataGrid", function () {
-        QUnit.test("DataGrid is ready and displaying data", function (assert) {
+        QUnit.test("DataGrid is initialized and displays data", function (assert) {
         // act
         const dataGrid = createDataGrid({
             dataSource: {

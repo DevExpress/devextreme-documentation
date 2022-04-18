@@ -11,6 +11,8 @@ Specifies a filter expression.
 ---
 If [filterSyncEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterSyncEnabled.md '{basewidgetpath}/Configuration/#filterSyncEnabled') is **true**, the filter expression includes a combination of the [filter row](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/1%20Filter%20Row.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Filter_Row'), [header filter](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Header_Filter'), and [filter builder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder') filters. Otherwise, it contains only the filter builder filter.
 
+Note that you should convert date strings into JavaScript [Date](https://www.w3schools.com/js/js_dates.asp) objects before using them in the filter expression. 
+
 The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*, *">"*, *"<="*, *">="*, *"between"*, *"contains"*, *"notcontains"*, *"startswith"*, *"endswith"*, *"anyof"*, *"noneof"*, and the filter builder's [custom operations](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/customOperations '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/'). Use *"anyof"* and *"noneof"* to select and clear the selection of items in the header filter's popup menu. In the following code, *"anyof"* is used to select items with IDs `500` and `700`:
 
 ---

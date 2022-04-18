@@ -9,6 +9,9 @@ firedEvents: optionChanged
 Specifies values selected in the column's [header filter](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/2%20Header%20Filter.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Header_Filter').
 
 ---
+
+Note that you should convert date strings into JavaScript [Date](https://www.w3schools.com/js/js_dates.asp) objects before using them in the filter expression. 
+
 If the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property is set, each value in the **filterValues** array specifies the beginning of an interval instead of an exact value:
 
 ---

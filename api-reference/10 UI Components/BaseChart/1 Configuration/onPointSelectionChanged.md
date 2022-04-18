@@ -19,5 +19,8 @@ The UI component's container.
 ##### field(e.target): basePointObject
 The series point whose selection state has been changed; described in the [Point](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
 
+##### field(e.model): any
+<!-- Description goes here -->
+
 ---
 To identify whether the selection has been applied or canceled, call the point's [isSelected()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isSelected().md '{basewidgetpath}/Chart_Elements/Point/Methods/#isSelected') method.

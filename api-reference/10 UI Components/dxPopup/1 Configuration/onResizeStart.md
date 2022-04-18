@@ -28,4 +28,7 @@ The UI component's height before resize.
 ##### field(e.width): Number
 The UI component's width before resize.
 
+##### field(e.handles): Object
+<!-- Description goes here -->
+
 ---

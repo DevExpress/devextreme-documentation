@@ -9,10 +9,6 @@ Open the `webpack.config.js` file and configure <a href="https://webpack.js.org/
         use: [
           { loader: "style-loader" },
           { loader: "css-loader" }]
-      },
-      { 
-        test: /\.(eot|svg|ttf|woff|woff2)$/, 
-        use: "url-loader?name=[name].[ext]"
       }
     ]
     ...

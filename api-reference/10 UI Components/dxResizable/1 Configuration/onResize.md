@@ -28,4 +28,7 @@ Model data. Available only if Knockout is used.
 ##### field(e.width): Number
 The UI component's current width.
 
+##### field(e.handles): Object
+<!-- Description goes here -->
+
 ---

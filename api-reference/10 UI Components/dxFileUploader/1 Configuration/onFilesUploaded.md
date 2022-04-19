@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when all files are successfully uploaded.
+A function that is executed when the file upload process is complete.
 
 ##### param(e): Object
 Information about the event.

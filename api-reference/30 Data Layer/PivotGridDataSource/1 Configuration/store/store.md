@@ -1,6 +1,6 @@
 ---
 id: PivotGridDataSource.Options.store
-type: Store | Store_Options | XmlaStore | XmlaStore_Options | Object | Array<Object>
+type: {data/index.Store} | {data/index.StoreOptions} | XmlaStore | XmlaStore_Options | Object | Array<Object>
 ---
 ---
 ##### shortDescription

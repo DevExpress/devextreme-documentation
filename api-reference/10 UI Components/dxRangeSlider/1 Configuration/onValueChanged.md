@@ -25,4 +25,10 @@ The left edge of the currently selected range.
 ##### field(e.value): Array<Number>
 The start and end values.
 
+##### field(e.event): DxEvent
+<!-- Description goes here -->
+
+##### field(e.previousValue): any
+<!-- Description goes here -->
+
 ---

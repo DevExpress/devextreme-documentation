@@ -25,7 +25,13 @@ An object that describes a cell in a PDF file.
 An object that contains information about the location of the cell and its dimensions. The object has the following structure: { x: numeric, y: numeric, h: numeric, w: numeric }.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with { 
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/"
+}
+
+In the following example, this function adds an image to a cell:
+
+---
 ##### jQuery
 
     <!-- tab: index.js -->
@@ -38,9 +44,10 @@ An object that contains information about the location of the cell and its dimen
                     jsPDFDocument: doc,
                     component: dataGrid,
                     customDrawCell: (e) => {
-                        const lines = doc.splitTextToSize(e.pdfCell.text, e.rect.w);
-                        doc.text(lines, e.rect.x, e.rect.y);
-                        e.cancel = true;
+                        if (e.gridCell.rowType === 'data' && e.gridCell.column.dataField === 'Picture') {
+                            doc.addImage(e.gridCell.value, 'PNG', e.rect.x, e.rect.y, e.rect.w, e.rect.h);
+                            e.cancel = true;
+                        }
                     },
                 }).then(function() {
                     doc.save('Customers.pdf');
@@ -84,9 +91,10 @@ An object that contains information about the location of the cell and its dimen
                 jsPDFDocument: doc,
                 component: this.dataGrid.instance,
                 customDrawCell: (e) => {
-                    const lines = doc.splitTextToSize(e.pdfCell.text, e.rect.w);
-                    doc.text(lines, e.rect.x, e.rect.y);
-                    e.cancel = true;
+                    if (e.gridCell.rowType === 'data' && e.gridCell.column.dataField === 'Picture') {
+                        doc.addImage(e.gridCell.value, 'PNG', e.rect.x, e.rect.y, e.rect.w, e.rect.h);
+                        e.cancel = true;
+                    }
                 },
             }).then(() => {
                 doc.save('Customers.pdf');
@@ -165,9 +173,10 @@ An object that contains information about the location of the cell and its dimen
                     jsPDFDocument: doc,
                     component: this.dataGrid,
                     customDrawCell: (e) => {
-                        const lines = doc.splitTextToSize(e.pdfCell.text, e.rect.w);
-                        doc.text(lines, e.rect.x, e.rect.y);
-                        e.cancel = true;
+                        if (e.gridCell.rowType === 'data' && e.gridCell.column.dataField === 'Picture') {
+                            doc.addImage(e.gridCell.value, 'PNG', e.rect.x, e.rect.y, e.rect.w, e.rect.h);
+                            e.cancel = true;
+                        }
                     },
                 }).then(() => {
                     doc.save('Customers.pdf');
@@ -200,9 +209,10 @@ An object that contains information about the location of the cell and its dimen
                 jsPDFDocument: doc,
                 component: dataGrid,
                 customDrawCell: (e) => {
-                    const lines = doc.splitTextToSize(e.pdfCell.text, e.rect.w);
-                    doc.text(lines, e.rect.x, e.rect.y);
-                    e.cancel = true;
+                    if (e.gridCell.rowType === 'data' && e.gridCell.column.dataField === 'Picture') {
+                        doc.addImage(e.gridCell.value, 'PNG', e.rect.x, e.rect.y, e.rect.w, e.rect.h);
+                        e.cancel = true;
+                    }
                 },
             }).then(() => {
                 doc.save('Customers.pdf');

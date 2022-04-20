@@ -16,7 +16,8 @@ An array of cells of the exported row.
 Specifies the height of the exported row. If the specified value is less than the height of the text, the component increases the row height automatically.
 
 ---
-<!-- Description goes here -->
+
+---
 ##### jQuery
 
     <!-- tab: index.js -->

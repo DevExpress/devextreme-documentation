@@ -14,8 +14,15 @@ A Promise that is resolved when the grid data is prepared for export. It is a na
 Export settings.
 
 ---
+#include common-demobutton with { 
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
+}
 
 This method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library to export data and create PDF files.
+
+If you use jQuery, declare the **jsPDF** CDN links within the `<head>` tag of the HTML markup (see an example below). If you use Angular, Vue or React, install the library with the following command:
+
+    npm install jspdf jspdf-autotable
 
 You can call this method at any point in your application. In this example, this method is called in a standalone button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
 
@@ -52,9 +59,6 @@ You can call this method at any point in your application. In this example, this
     </head>
 
 ##### Angular   
-
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
 
     <!-- tab: app.component.html -->
     <dx-button ... 
@@ -115,9 +119,6 @@ You can call this method at any point in your application. In this example, this
 
 ##### Vue
 
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
-
     <!-- tab: App.vue -->
     <template>
         <div>
@@ -174,9 +175,6 @@ You can call this method at any point in your application. In this example, this
 
 ##### React
 
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
-
     <!-- tab: App.js -->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
@@ -221,6 +219,3 @@ You can call this method at any point in your application. In this example, this
 ---     
 
 
-#include common-demobutton with { 
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
-}

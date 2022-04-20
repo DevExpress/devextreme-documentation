@@ -16,6 +16,11 @@ A DataGrid cell.
 An object that describes a cell in a PDF file.
 
 ---
+#include common-demobutton with { 
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/"
+}
+
+In the following example, this function changes the font size of the *'data'* group row cells:
 
 ---
 ##### jQuery

@@ -15,7 +15,7 @@ Export settings.
 
 ---
 #include common-demobutton with { 
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
 This method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library to export data and create PDF files.

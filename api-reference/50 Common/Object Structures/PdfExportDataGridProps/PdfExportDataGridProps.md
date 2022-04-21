@@ -48,9 +48,6 @@ The **exportDataGrid(options)** method requires the <a href="https://github.com/
 
 ##### Angular   
 
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
-
     <!-- tab: app.component.html -->
     <dx-button ... 
         (onClick)="exportGrid($event)">
@@ -110,9 +107,6 @@ The **exportDataGrid(options)** method requires the <a href="https://github.com/
 
 ##### Vue
 
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
-
     <!-- tab: App.vue -->
     <template>
         <div>
@@ -168,9 +162,6 @@ The **exportDataGrid(options)** method requires the <a href="https://github.com/
     </script>
 
 ##### React
-
-    <!-- tab: Installation command -->
-    npm install jspdf jspdf-autotable
 
     <!-- tab: App.js -->
     import React from 'react';

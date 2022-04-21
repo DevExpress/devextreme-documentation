@@ -25,6 +25,12 @@ The name of the file where grid data is about to be exported.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
+##### field(e.format): String
+<!-- Description goes here -->
+
+##### field(e.selectedRowsOnly): Boolean
+<!-- Description goes here -->
+
 ---
 You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column.  
 

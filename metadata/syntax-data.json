@@ -4622,6 +4622,11 @@
     "dxElement": {
       "vue": "dx-element"
     },
+    "dxEvent": {
+      "angular": "dxo-dx-event",
+      "react": "DxEvent",
+      "vue": "DxDxEvent"
+    },
     "dxFileManager": {
       "angular": "dx-file-manager",
       "react": "FileManager",
@@ -4851,6 +4856,9 @@
       "angular": "dx-file-uploader",
       "react": "FileUploader",
       "vue": "DxFileUploader"
+    },
+    "dxFileUploaderOptions": {
+      "vue": "dx-file-uploader-options"
     },
     "dxFileUploaderOptions.abortUpload": {
       "vue": "abort-upload"
@@ -6158,6 +6166,9 @@
       "react": "DxHtmlEditorImageUpload",
       "vue": "DxDxHtmlEditorImageUpload"
     },
+    "dxHtmlEditorImageUpload.fileUploaderOptions": {
+      "vue": "file-uploader-options"
+    },
     "dxHtmlEditorImageUpload.fileUploadMode": {
       "vue": "file-upload-mode"
     },
@@ -6751,6 +6762,9 @@
     "dxLookupOptions.searchPlaceholder": {
       "vue": "search-placeholder"
     },
+    "dxLookupOptions.searchStartEvent": {
+      "vue": "search-start-event"
+    },
     "dxLookupOptions.showCancelButton": {
       "vue": "show-cancel-button"
     },
@@ -6765,6 +6779,9 @@
     },
     "dxLookupOptions.usePopover": {
       "vue": "use-popover"
+    },
+    "dxLookupOptions.valueChangeEvent": {
+      "vue": "value-change-event"
     },
     "dxMap": {
       "angular": "dx-map",

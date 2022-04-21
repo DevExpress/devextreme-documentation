@@ -22,8 +22,8 @@ The key of the inserted task.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.values): any
-The values of the inserted task.
+##### field(e.value): any
+<!-- Description goes here -->
 
 ---
 

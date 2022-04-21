@@ -22,7 +22,7 @@ This method requires the <a href="https://github.com/parallax/jsPDF" target="_bl
 
 If you use jQuery, declare the **jsPDF** CDN links within the `<head>` tag of the HTML markup (see an example below). If you use Angular, Vue or React, install the library with the following command:
 
-    npm install jspdf jspdf-autotable
+    npm install jspdf
 
 You can call this method at any point in your application. In this example, this method is called in a standalone button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
 

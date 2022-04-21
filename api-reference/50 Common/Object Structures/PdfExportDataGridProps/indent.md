@@ -60,7 +60,6 @@ This property uses the measure units that are specified in the constructor of th
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     
     @Component({
         selector: 'app-root',

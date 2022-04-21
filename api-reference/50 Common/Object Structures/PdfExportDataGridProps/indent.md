@@ -41,7 +41,6 @@ This property uses the measure units that are specified in the constructor of th
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
         <!-- DevExtreme sources are referenced here -->
     </head>
 
@@ -60,7 +59,6 @@ This property uses the measure units that are specified in the constructor of th
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     
     @Component({
         selector: 'app-root',
@@ -127,7 +125,6 @@ This property uses the measure units that are specified in the constructor of th
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = 'dataGrid';
@@ -171,7 +168,6 @@ This property uses the measure units that are specified in the constructor of th
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     export default function App() {

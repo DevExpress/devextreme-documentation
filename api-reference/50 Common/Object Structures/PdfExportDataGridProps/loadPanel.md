@@ -43,7 +43,6 @@ The example below calls the [exportDataGrid(options)](/Documentation/ApiReferenc
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
         <!-- DevExtreme sources are referenced here -->
     </head>
 
@@ -62,7 +61,6 @@ The example below calls the [exportDataGrid(options)](/Documentation/ApiReferenc
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     
     @Component({
         selector: 'app-root',
@@ -133,7 +131,6 @@ The example below calls the [exportDataGrid(options)](/Documentation/ApiReferenc
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = 'dataGrid';
@@ -181,7 +178,6 @@ The example below calls the [exportDataGrid(options)](/Documentation/ApiReferenc
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     export default function App() {

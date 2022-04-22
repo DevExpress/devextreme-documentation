@@ -1,8 +1,8 @@
 ---
-id: dxHtmlEditorImageUpload.tabs
+id: dxHtmlEditorImageUploadTabItem.name
 acceptValues: 'url' | 'file'
-type: Array<dxHtmlEditorImageUploadTabItem, String>
-default: ['url']
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

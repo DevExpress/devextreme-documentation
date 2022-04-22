@@ -10,9 +10,6 @@ A function that is executed before the focused row changes. Applies only to data
 ##### param(e): Object
 Information about the event that caused the function's execution.
 
-##### field(e.cancel): Boolean
-Allows you to cancel focusing a new row.
-
 ##### field(e.component): dxTreeList
 The UI component's instance.
 

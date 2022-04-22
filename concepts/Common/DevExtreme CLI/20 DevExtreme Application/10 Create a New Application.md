@@ -34,13 +34,13 @@ Specifies the DevExtreme layout. Available values:
     * `side-nav-outer-toolbar` (default)
     * `side-nav-inner-toolbar`
 
-    Both layouts are illustrated in the [Layouts](/concepts/40%20Angular%20Components/30%20Application%20Template/10%20Layouts.md '/Documentation/Guide/Angular_Components/Application_Template/#Layouts') article.
+    Use the following topic to review both layouts: [Layouts](/concepts/40%20Angular%20Components/30%20Application%20Template/10%20Layouts.md '/Documentation/Guide/Angular_Components/Application_Template/#Layouts').
 
 * `--empty`     
 Specifies whether to skip sample views generation (default: `false`).
 
 * `--template` (React only)
-Specifies whether to create an application template with TypeScript support.
+Specifies whether to create an application template with TypeScript support. Available values: `javascript` (default) and `typescript`.
 
 * `--version`, `-v` (Vue only)        
 Specifies whether to generate a Vue 2 or Vue 3 application. Available values: 2 (default) and 3. 

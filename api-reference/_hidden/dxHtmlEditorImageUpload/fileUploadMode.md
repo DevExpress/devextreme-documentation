@@ -6,7 +6,19 @@ default: 'base64'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies how the HtmlEditor UI component uploads files.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
+}
+
+The **uploadMode** property accepts one of the following values:
+
+- *"base64"* (default)       
+
+
+- *"server"*        
+
+
+- *"both"*        

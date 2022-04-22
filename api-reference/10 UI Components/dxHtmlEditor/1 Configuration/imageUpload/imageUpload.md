@@ -5,7 +5,6 @@ default: { tabs: ['url'], fileUploadMode: 'base64', uploadUrl: undefined, upload
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the image upload.
 
 ---
-<!-- Description goes here -->

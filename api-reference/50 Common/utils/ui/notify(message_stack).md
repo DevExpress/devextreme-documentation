@@ -22,7 +22,7 @@ To stack toast messages, specify the `position` field in the **stack** object.
 
 The `position` field can be one of the following:
 
-- A string    
+- String    
 Available values:
 
     - *'top left'*
@@ -43,7 +43,7 @@ Available values:
 
     - *'bottom right'*
 
-- An object    
+- Object    
 Avaliable values: *{left | right, top | bottom}*.
 
 [note]

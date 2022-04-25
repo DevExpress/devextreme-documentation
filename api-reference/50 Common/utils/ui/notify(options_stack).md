@@ -76,7 +76,9 @@ The image below shows the difference between directions with and without the 're
 
 When you set the `direction` to *'up'*, the second and subsequent toasts push the first toast upwards. When you set the `direction` to *'up-reverse'*, toasts stack on top of each other.
 
-If you do not specify the `direction` field, its default value is *'down'* for `position: 'top left | top center | top right'`, and *'up'* for other `position` aliases.
+If you do not specify the `direction` field, its default value is *'down'* for `position: 'top left | top center | top right'`, and *'up'* for other `position` options.
+
+Note that the default [hide](/Documentation/ApiReference/UI_Components/dxToast/Configuration/animation/#hide) animation duration for toast messages is 400 milliseconds. When you specify the `direction` with the 'reverse' postfix, set the **hide** animation duration to a lesser number or disable it to prevent the last toast in a stack from staying longer on the screen.
 
 ---
 #####jQuery

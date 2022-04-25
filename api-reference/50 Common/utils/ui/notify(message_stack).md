@@ -76,7 +76,7 @@ The image below shows the difference between directions with and without the 're
 
 When you set the `direction` to *'up'*, the second and subsequent toasts push the first toast upwards. When you set the `direction` to *'up-reverse'*, toasts stack on top of each other.
 
-If you do not specify the `direction` field, its default value is *'down'* for `position: 'top left | top center | top right'`, and *'up'* for other `position` aliases.
+If you do not specify the `direction` field, its default value is *'down'* for `position: 'top left | top center | top right'`, and *'up'* for other `position` options.
 
 ---
 #####jQuery

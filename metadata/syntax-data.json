@@ -3197,6 +3197,11 @@
     "dxDataGridOptions.export.fileName": {
       "vue": "file-name"
     },
+    "dxDataGridOptions.export.formats": {
+      "angular": "dxi-format",
+      "react": "Format",
+      "vue": "DxFormat"
+    },
     "dxDataGridOptions.export.ignoreExcelErrors": {
       "vue": "ignore-excel-errors"
     },
@@ -4622,6 +4627,11 @@
     "dxElement": {
       "vue": "dx-element"
     },
+    "dxEvent": {
+      "angular": "dxo-dx-event",
+      "react": "DxEvent",
+      "vue": "DxDxEvent"
+    },
     "dxFileManager": {
       "angular": "dx-file-manager",
       "react": "FileManager",
@@ -4851,6 +4861,9 @@
       "angular": "dx-file-uploader",
       "react": "FileUploader",
       "vue": "DxFileUploader"
+    },
+    "dxFileUploaderOptions": {
+      "vue": "dx-file-uploader-options"
     },
     "dxFileUploaderOptions.abortUpload": {
       "vue": "abort-upload"
@@ -6158,6 +6171,9 @@
       "react": "DxHtmlEditorImageUpload",
       "vue": "DxDxHtmlEditorImageUpload"
     },
+    "dxHtmlEditorImageUpload.fileUploaderOptions": {
+      "vue": "file-uploader-options"
+    },
     "dxHtmlEditorImageUpload.fileUploadMode": {
       "vue": "file-upload-mode"
     },
@@ -6171,6 +6187,9 @@
     },
     "dxHtmlEditorImageUpload.uploadUrl": {
       "vue": "upload-url"
+    },
+    "dxHtmlEditorImageUploadTabItem": {
+      "vue": "dx-html-editor-image-upload-tab-item"
     },
     "dxHtmlEditorMediaResizing": {
       "angular": "dxo-dx-html-editor-media-resizing",
@@ -6751,6 +6770,9 @@
     "dxLookupOptions.searchPlaceholder": {
       "vue": "search-placeholder"
     },
+    "dxLookupOptions.searchStartEvent": {
+      "vue": "search-start-event"
+    },
     "dxLookupOptions.showCancelButton": {
       "vue": "show-cancel-button"
     },
@@ -6765,6 +6787,9 @@
     },
     "dxLookupOptions.usePopover": {
       "vue": "use-popover"
+    },
+    "dxLookupOptions.valueChangeEvent": {
+      "vue": "value-change-event"
     },
     "dxMap": {
       "angular": "dx-map",
@@ -11571,6 +11596,9 @@
     },
     "enums.DashStyle": {
       "vue": "dash-style"
+    },
+    "enums.DataGridExportFormat": {
+      "vue": "data-grid-export-format"
     },
     "enums.DataGridToolbarItem": {
       "vue": "data-grid-toolbar-item"

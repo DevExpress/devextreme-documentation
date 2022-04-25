@@ -1,8 +1,7 @@
 ---
-id: PdfCell
-module: pdf_exporter
-export: PdfCell
-type: Object
+id: dxHtmlEditorImageUpload.fileUploaderOptions
+type: dxFileUploader_Options
+default: null
 ---
 ---
 ##### shortDescription

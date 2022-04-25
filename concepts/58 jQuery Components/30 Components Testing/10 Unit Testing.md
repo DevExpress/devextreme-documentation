@@ -1,4 +1,8 @@
-Create a HTML file and add your markup to it. The example below illustrates a unit test for the DataGrid UI component. this markup also loads the jQuery, QUnit, and DevExtreme libraries from CDN.
+Unit testing implies separate testing of single features (units of the code). A unit can be a function or class. 
+
+The example below illustrates how to create a unit test for the DataGrid UI component. 
+
+Create a HTML file and add your markup to it. The markup also loads the jQuery, QUnit, and DevExtreme libraries from CDN.
 
     <!--HTML-->
     <meta charset="utf-8" />
@@ -26,7 +30,7 @@ Create a HTML file and add your markup to it. The example below illustrates a un
     <div id="qunit-fixture"></div>
     </body>
 
-Add the following script to test the DataGrid configuration and the number of loaded records. 
+Add the following script to test the DataGrid configuration and the number of loaded records: 
 
     <!--JavaScript-->
     <script>
@@ -53,4 +57,4 @@ Add the following script to test the DataGrid configuration and the number of lo
     });
     </script>
 
-Open your file in a browser to see the test report. If the test file contains multiple tests, you can filter the results or re-run specific tests.
+Open the test file in a browser to see the test report. If the test file contains multiple tests, you can filter the results or re-run specific tests.

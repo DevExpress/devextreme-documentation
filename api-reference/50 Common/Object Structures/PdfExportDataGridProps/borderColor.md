@@ -8,5 +8,6 @@ default: '#979797'
 Specifies the color of the table's outer borders.
 
 ---
-<!-- Description goes here -->
 The color must be in the hexadecimal format.
+
+

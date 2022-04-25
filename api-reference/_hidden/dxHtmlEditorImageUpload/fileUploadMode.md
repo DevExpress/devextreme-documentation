@@ -13,12 +13,4 @@ Specifies how the HtmlEditor UI component uploads files.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 
-The **uploadMode** property accepts one of the following values:
-
-- *"base64"* (default)       
-
-
-- *"server"*        
-
-
-- *"both"*        
+Refer to the [imageUpload](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/) topic to see the example.

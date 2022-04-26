@@ -1,4 +1,4 @@
-Unit testing implies separate testing of single features (units of the code). A unit can be a function or class. 
+Unit testing allows you to test single features (units of the code). A unit can be a function or class. 
 
 The example below illustrates how to create a unit test for the DataGrid UI component. 
 

@@ -78,7 +78,7 @@ When you set the `direction` to *'up'*, the second and subsequent toasts push th
 
 If you do not specify the `direction` field, its default value is *'down'* for `position: 'top left | top center | top right'`, and *'up'* for other `position` options.
 
-Note that the default [hide](/Documentation/ApiReference/UI_Components/dxToast/Configuration/animation/#hide) animation duration for toast messages is 400 milliseconds. When you specify the `direction` with the 'reverse' postfix, set the **hide** animation duration to a lesser number or disable it to prevent the last toast in a stack from staying longer on the screen.
+Note that toast messages disappear with an animated effect after their display time ends. The default [hide](/Documentation/ApiReference/UI_Components/dxToast/Configuration/animation/#hide) animation duration for toast messages is 400 milliseconds. If multiple messages can stack in your application and block important visual elements, you may want to disable the animation or reduce its duration.
 
 ---
 #####jQuery

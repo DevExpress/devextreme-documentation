@@ -1,56 +1,66 @@
-Create a HTML file and add your markup to it. The example below illustrates a unit test for the DataGrid UI component. this markup also loads the jQuery, QUnit, and DevExtreme libraries from CDN.
+Integration testing help test a component's functionality (units of the code, unit tests) as an entity. 
+
+The example bwelow illustrates how to test DataGrid. The test code adds a row, saves this row, and checks the results. 
+
+To get started with QUnit in the browser, create a HTML file as described in the [Unit Testing]() article and reference the SinonJS script.
 
     <!--HTML-->
-    <meta charset="utf-8" />
-    <title>Test DataGrid</title>
-    <head>
-    <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.1.4/js/dx.all.js"></script>
-    <link
-        rel="stylesheet"
-        href="https://code.jquery.com/qunit/qunit-2.16.0.css"
-    />
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/21.1.4/css/dx.light.css"
-        rel="stylesheet"
-    />
-    </head>
-    <body>
-    <div id="dataGrid"></div>
-    <div id="qunit"></div>
-    <div id="qunit-fixture"></div>
-    </body>
+    <!-- This script allows you to simulate timers. -->
+    <script src="https://cdn.jsdelivr.net/npm/sinon@9/pkg/sinon.js"></script>
 
-Add the following script to test the DataGrid configuration and the number of loaded records. 
+Add the test code. This code creates the DataGrid and calls the **addRow** and **saveEditData** methods to create a new row. Fake timers allow you to call methods continually since all the processes are asynchronous. The final step is to check whether the DataGrid has two visible rows - an initial and newly created rows.
 
     <!--JavaScript-->
     <script>
+    let clock;
     let createDataGrid = (options, $container) => {
         const dataGridElement = ($container || $("#dataGrid")).dxDataGrid(options);
-        QUnit.assert.ok(dataGridElement);
+        QUnit.assert.ok(dataGridElement, "DataGrid created");
         const dataGrid = dataGridElement.dxDataGrid("instance");
         return dataGrid;
     };
+    QUnit.module("DataGrid", {
+        beforeEach: function() {
+            clock = sinon.useFakeTimers();
+        },
+        afterEach: function() {
+            clock.restore();
+        }
+    }, () => {
+        QUnit.test('Add a row in batch edit mode', function(assert) {
+            // arrange, act
+            const array = [{ id: 1, name: 'Test 1' }];
 
-    QUnit.module("DataGrid", function () {
-        QUnit.test("DataGrid is initialized and displays data", function (assert) {
-        // act
-        const dataGrid = createDataGrid({
-            dataSource: {
-            pageSize: 3,
-            store: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
-            },
-        });
+            const dataGrid = createDataGrid({
+                editing: {
+                    mode: 'batch'
+                },
+                dataSource: {
+                    key: 'id',
+                    load: function() {
+                        return array;
+                    },
+                    insert: function(values) {
+                        array.push(values);
+                    }
+                }
+            });
+            clock.tick(100);
 
-        // assert
-        assert.equal($("#dataGrid").find(".dx-data-row").length, 3);
+            // Adds a row
+            dataGrid.addRow();
+
+            clock.tick(100);
+
+            dataGrid.saveEditData();
+
+            clock.tick(200);
+
+            // Check assertion
+            assert.strictEqual(dataGrid.getVisibleRows().length, 2, 'visible rows: 2');
+            assert.strictEqual(dataGrid.hasEditData(), false, 'DataGrid has no edit data');
         });
     });
     </script>
 
-Open your file in a browser to see the test report. If the test file contains multiple tests, you can filter the results or re-run specific tests.
+Open the test.html file in a browser to see the detailed report of the test and its result.

@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td>Lookup</td>
-<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a></td>
+<td><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a><br><a href="https://js.devexpress.com/Documentation/22_1/ApiReference/UI_Components/dxLookup/Configuration/#valueChangeEvent">valueChangeEvent</a></td>
 </tr>
 <tr>
 <td>NavBar</td>

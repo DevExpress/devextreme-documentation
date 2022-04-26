@@ -1,8 +1,6 @@
 ---
 id: PdfDataGridCell
-type: Object
-module: pdf_exporter
-export: PdfDataGridCell
+inherits: ExcelDataGridCell
 ---
 ---
 ##### shortDescription

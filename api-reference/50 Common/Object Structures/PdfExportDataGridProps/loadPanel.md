@@ -8,7 +8,7 @@ inheritsType: ExportLoadPanel
 Configures the load panel.
 
 ---
-The example below calls the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions) method on a button click. This method enables the load panel and applies shading to the grid.
+The example below calls the [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method on a button click. This method enables the load panel and applies shading to the grid.
 
 ---
 ##### jQuery

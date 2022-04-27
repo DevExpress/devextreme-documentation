@@ -10,7 +10,7 @@ Specifies a custom width for the exported DataGrid columns.
 ---
 Uses the measure units that are specified in the constructor of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
 
-The example below calls the [exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions) method on a button click. This method applies specific widths to the grid columns.
+The example below calls the [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method on a button click. This method applies specific widths to the grid columns.
 
 ---
 ##### jQuery

@@ -22,6 +22,9 @@ The UI component's instance.
 ##### field(e.values): Array<any>
 The resources.
 
+##### field(e.model): any
+<!-- Description goes here -->
+
 ---
 
 ![DevExtreme Gantt - Invoke Resource Manager](/images/Gantt/invoke-resource-manager.png)

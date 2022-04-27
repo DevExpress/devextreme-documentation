@@ -1,7 +1,7 @@
 ---
-id: PdfCell
-module: pdf_exporter
-export: Cell
+id: dxLookup.Options.searchStartEvent
+type: String
+default: 'input change keyup'
 ---
 ---
 ##### shortDescription

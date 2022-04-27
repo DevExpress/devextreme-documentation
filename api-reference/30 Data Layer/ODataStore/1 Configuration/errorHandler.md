@@ -12,9 +12,6 @@ A JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 ##### field(e.errorDetails): Object
 Error details. It is an OData <a href="http://docs.oasis-open.org/odata/odata-json-format/v4.0/cs01/odata-json-format-v4.0-cs01.html#_Toc365464725" target="_blank">error response object</a> for OData-specific errors or a <a href="http://api.jquery.com/jQuery.ajax/#jqXHR" target="_blank">jqXHR object</a> for other errors when you use jQuery.
 
-##### field(e.httpStatus): Number
-The error code.
-
 ##### field(e.requestOptions): Object
 Request details. Contains the following fields:
 

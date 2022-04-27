@@ -20,10 +20,10 @@ Rows are loaded when they get into the viewport and removed once they leave it. 
     If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/concepts/05%20UI%20Components/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/030%20Rendering%20Optimization.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization') can reduce rendering time and remove the gray boxes. Alternatively, you can disable the **scrolling**.[renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/renderAsync.md '{basewidgetpath}/Configuration/scrolling/#renderAsync') property, but this can impact performance.
 
 - **Infinite**      
-Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually from the first to the last page. Row selection in **infinite** scroll mode with Shift+Click does not work in the following cases: 
+Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually from the first to the last page. Row selection in **infinite** and **virtual** scroll mode with Shift+Click does not work in the following cases: 
     - Deferred selection is enabled.
     - Rows grouping is enabled.
-    - The [allowSelectAll](Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll) property is disabled.
+    - The [allowSelectAll](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll) property is set to **false**.
 
     [note] Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when using infinite scrolling in conjunction with grouping.
 

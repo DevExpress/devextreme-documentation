@@ -28,6 +28,10 @@ The `position` field can be one of the following:
         <th>Object</th>
     </tr>    
     <tr>
+        <td>Cannot specify coordinates</td>
+        <td><code>{x, y}</code>, e.g. <code>{100, 50}</code></td>
+    </tr>    
+    <tr>
         <td><code>'top left'</code></td>
         <td><code>{left, top}</code></td>
     </tr>

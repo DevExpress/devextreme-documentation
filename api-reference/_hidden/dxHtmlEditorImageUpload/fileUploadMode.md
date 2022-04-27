@@ -13,4 +13,4 @@ Specifies how the HtmlEditor UI component uploads files.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 
-Refer to the [imageUpload](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/) topic to see the example.
+Refer to the [imageUpload](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/) topic to see an example.

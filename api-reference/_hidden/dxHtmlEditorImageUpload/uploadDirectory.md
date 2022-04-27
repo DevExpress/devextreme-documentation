@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a target directory for the uploaded images.
+Specifies a target directory for uploaded images.
 
 ---
 #include common-demobutton with {

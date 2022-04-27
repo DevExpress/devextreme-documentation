@@ -17,7 +17,7 @@ Click the 'Add Image' [toolbar button](/Documentation/ApiReference/UI_Components
 
 ![DevExtreme Html Editor - Upload Images Dialog](/images/htmlEditor/image-upload-dialog.png)
 
-Use the [fileUploadMode](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode) property to specify whether to upload images on the server or to the Base64 binary format. The [tabs](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#tabs) property specifies the visibility of tabs in the 'Add Image' dialog. 
+Use the [fileUploadMode](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode) property to specify whether to upload images as is or in Base64 binary format. The [tabs](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#tabs) property specifies the visibility of tabs in the 'Add Image' dialog. 
 
 
 ---

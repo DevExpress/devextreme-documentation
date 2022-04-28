@@ -18,6 +18,6 @@ Rows are rendered at once or by pages if [paging](/api-reference/10%20UI%20Compo
 This mode is an alternative to paging where pages are rendered when they get into the viewport and removed once they leave it. Use this mode if a user should be able to scroll data by pages. Node selection in **virtual** scroll mode with Shift+Click does not work in the following cases: 
     - Deferred selection is enabled.
     - Rows grouping is enabled.
-    - The [allowSelectAll](Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll) property is disabled.
+    - The [allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md 'Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') property is disabled.
 
 Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize') property to specify the number of rows on a page.

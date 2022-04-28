@@ -23,7 +23,7 @@ Rows are loaded when they get into the viewport and removed once they leave it. 
 Each next page is loaded once the scrollbar reaches the end of its scale. In this mode, users scroll data gradually from the first to the last page. Row selection in **infinite** and **virtual** scroll mode with Shift+Click does not work in the following cases: 
     - Deferred selection is enabled.
     - Rows grouping is enabled.
-    - The [allowSelectAll](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll) property is set to **false**.
+    - The [allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') property is set to **false**.
 
     [note] Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when using infinite scrolling in conjunction with grouping.
 

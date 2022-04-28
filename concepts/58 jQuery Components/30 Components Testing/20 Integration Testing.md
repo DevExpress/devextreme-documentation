@@ -1,14 +1,14 @@
-Integration testing helps test a component across multiple units. Integration testing does not test unit by unit, it tests all the units as an entity. 
+Integration testing helps test a component across multiple units. Integration testing does not test unit by unit, but tests all the units as an entity.
 
-The example bwelow illustrates how to test the DataGrid's functionality. The test code adds a new row, saves it, and checks the results. 
+The example below illustrates how to test the DataGrid's functionality. The test code adds a new row, saves it, and checks the results.
 
-To get started with QUnit in your browser, create a HTML file as described in the [Unit Testing](/Documentation/Guide/jQuery_Components/Components_Testing/#Unit_Testing) article and reference the SinonJS script.
+To get started with QUnit in your browser, create an HTML file as described in the [Unit Testing](/Documentation/Guide/jQuery_Components/Components_Testing/#Unit_Testing) article and reference the SinonJS script.
 
     <!--HTML-->
     <!-- This script allows you to simulate timers. -->
     <script src="https://cdn.jsdelivr.net/npm/sinon@9/pkg/sinon.js"></script>
 
-Add the test code. This code creates the DataGrid and calls the **addRow** and **saveEditData** methods to create a new row. Timers allow you to call methods continually since all the processes are asynchronous. The final step is to check whether the DataGrid has two visible rows - an initial and newly created rows.
+Add the test code. This code creates the DataGrid and calls the **addRow** and **saveEditData** methods to create a new row. Timers allow you to call methods continually since all the processes are asynchronous. The final step is to check whether the DataGrid has two visible rows — an initial row and a newly created row.
 
     <!--JavaScript-->
     <script>
@@ -47,7 +47,7 @@ Add the test code. This code creates the DataGrid and calls the **addRow** and *
             });
             clock.tick(100);
 
-            // Adds a row
+            // Add a row
             dataGrid.addRow();
 
             clock.tick(100);

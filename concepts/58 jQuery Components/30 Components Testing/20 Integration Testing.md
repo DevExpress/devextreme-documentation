@@ -28,7 +28,6 @@ Add the test code. This code creates the DataGrid and calls the **addRow** and *
         }
     }, () => {
         QUnit.test('Add a row in batch edit mode', function(assert) {
-            // arrange, act
             const array = [{ id: 1, name: 'Test 1' }];
 
             const dataGrid = createDataGrid({

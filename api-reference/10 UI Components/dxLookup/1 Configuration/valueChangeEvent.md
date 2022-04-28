@@ -1,9 +1,6 @@
 ---
 default: 'input change keyup'
-type: string
----
----
-##### shortDescription
-Specifies the <a href="https://en.wikipedia.org/wiki/DOM_events" target="_blank">DOM events</a> after which the UI component's search results should be updated.
-
+type: String
+id: dxLookup.Options.valueChangeEvent
+deprecated: 
 ---

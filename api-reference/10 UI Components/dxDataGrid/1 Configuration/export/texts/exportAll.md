@@ -1,7 +1,7 @@
 ---
 id: dxDataGrid.Options.export.texts.exportAll
 type: String
-default: 'Export all data'
+default: 'Export all data to {0}'
 ---
 ---
 ##### shortDescription

@@ -8,5 +8,4 @@ default: '#000000'
 Specifies the text color for the cell.
 
 ---
-<!-- Description goes here -->
 The color must be in the hexadecimal format.

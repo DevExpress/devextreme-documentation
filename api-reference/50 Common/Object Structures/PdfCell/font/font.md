@@ -1,15 +1,14 @@
 ---
-id: PdfCell.padding
+id: PdfCell.font
 type: Object
 ---
 ---
 ##### shortDescription
-Specifies the top, bottom, left, and right paddings of the DataGrid cell.
+An object that contains information about the font's size, name, and style.
 
 ---
-<!-- Description goes here -->
-Uses the measure units which are specified in the constructor of the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') object.
 
+---
 ##### jQuery
 
     <!-- tab: index.js -->
@@ -23,8 +22,9 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
                     component: dataGrid,
                     customizeCell: function(options) {
                         const { gridCell, pdfCell } = options;
+
                         if(gridCell.rowType === 'data') {
-                            pdfCell.padding = { top: 10, right: 10, bottom: 10, left: 10 };
+                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                         }
                     }
                 }).then(function() {
@@ -53,7 +53,6 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
 
     @Component({
         selector: 'app-root',
@@ -70,8 +69,9 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
                 component: this.dataGrid.instance,
                 customizeCell: function(options) {
                     const { gridCell, pdfCell } = options;
+
                     if(gridCell.rowType === 'data') {
-                        pdfCell.padding = { top: 10, right: 10, bottom: 10, left: 10 };
+                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                     }
                 }
             }).then(() => {
@@ -124,7 +124,6 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = 'dataGrid';
@@ -154,7 +153,7 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
                         const { gridCell, pdfCell } = options;
 
                         if(gridCell.rowType === 'data') {
-                            pdfCell.padding = { top: 10, right: 10, bottom: 10, left: 10 };
+                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                         }
                     }
                 }).then(() => {
@@ -174,7 +173,6 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';    
 
     const App = () => {
@@ -191,7 +189,7 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
                     const { gridCell, pdfCell } = options;
 
                     if(gridCell.rowType === 'data') {
-                        pdfCell.padding = { top: 10, right: 10, bottom: 10, left: 10 };
+                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
                     }
                 }
             }).then(() => {

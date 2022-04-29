@@ -26,9 +26,9 @@ The left edge of the currently selected range.
 The start and end values.
 
 ##### field(e.event): DxEvent
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.previousValue): any
-<!-- Description goes here -->
+The UI component's previous value.
 
 ---

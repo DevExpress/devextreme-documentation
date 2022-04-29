@@ -13,11 +13,11 @@ Configures the image upload.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 
-Click the 'Add Image' [toolbar button](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/) to invoke the 'Add an Image' dialog.
+Click the 'Add Image' [toolbar button](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') to invoke the 'Add an Image' dialog.
 
 ![DevExtreme Html Editor - Upload Images Dialog](/images/htmlEditor/image-upload-dialog.png)
 
-Use the [fileUploadMode](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode) property to specify whether to upload images as is or in Base64 binary format. The [tabs](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#tabs) property specifies the visibility of tabs in the 'Add Image' dialog. 
+Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUploadMode.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode') property to specify whether to upload images as is or in Base64 binary format. The [tabs](/api-reference/_hidden/dxHtmlEditorImageUpload/tabs.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#tabs') property specifies the visibility of tabs in the 'Add Image' dialog. 
 
 
 ---

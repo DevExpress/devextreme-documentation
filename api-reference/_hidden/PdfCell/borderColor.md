@@ -1,7 +1,7 @@
 ---
-id: PdfCell
-module: pdf_exporter
-export: Cell
+id: PdfCell.borderColor
+type: String
+default: '#979797'
 ---
 ---
 ##### shortDescription

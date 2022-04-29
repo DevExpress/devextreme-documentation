@@ -1,7 +1,5 @@
 ---
-id: PdfCell
-module: pdf_exporter
-export: Cell
+id: dxHtmlEditorImageUploadTabItem
 ---
 ---
 ##### shortDescription

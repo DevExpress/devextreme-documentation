@@ -2,7 +2,7 @@ End-to-End (Functional) testing ignores the component's internal structure and a
 
 The example below illustrates how to create an End-to-End test for the DataGrid's functionality. The test code emulates a click on the pager. 
 
-Create a HTML file and add your markup to it:
+Create an HTML file and add your markup to it:
 
     <!--HTML-->
     <!DOCTYPE html>

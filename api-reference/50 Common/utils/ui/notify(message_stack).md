@@ -8,7 +8,7 @@ export: default
 Creates a stackable toast message.
 
 ##### param(message): String
-The message's text.
+The message content.
 
 ##### param(stack): Object
 An object with the following structure: *{position, direction}*.

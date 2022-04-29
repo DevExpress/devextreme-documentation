@@ -67,29 +67,29 @@ The `position` field can be one of the following:
 
 You can also specify the `direction` field in the **stack** object. It is a string that can be one of the following:
 
-- *'up'*
+- *'up-push'*
 
-- *'down'*
+- *'down-push'*
 
-- *'left'*
+- *'left-push'*
 
-- *'right'*
+- *'right-push'*
 
-- *'up-reverse'*
+- *'up-stack'*
 
-- *'down-reverse'*
+- *'down-stack'*
 
-- *'left-reverse'*
+- *'left-stack'*
 
-- *'right-reverse'*
+- *'right-stack'*
 
-The image below shows the difference between directions with and without the 'reverse' postfix:
+The image below shows the difference between directions with 'push' and 'stack' postfixes:
 
-![Toast Messages When Direction Is 'Up'](/images/Utilities/notify-stack-up.png) ![Toast Messages When Direction Is 'Up-Reverse'](/images/Utilities/notify-stack-up-reverse.png)
+![Toast Messages When Direction Is 'up-push'](/images/Utilities/notify-stack-up-push.png) ![Toast Messages When Direction Is 'up-stack'](/images/Utilities/notify-stack-up-stack.png)
 
-When you set the `direction` to *'up'*, the second and subsequent toasts push the first toast upwards. When you set the `direction` to *'up-reverse'*, toasts stack on top of each other.
+When you set the `direction` to *'up-push'*, the second and subsequent toasts push the first toast upwards. When you set the `direction` to *'up-stack'*, toasts stack on top of each other.
 
-If you do not specify the `direction` field, its default value is *'down'* for `position: 'top left | top center | top right'`, and *'up'* for other `position` options.
+If you do not specify the `direction` field, its default value is *'down-push'* for `position: 'top left | top center | top right'`, and *'up-push'* for other `position` options.
 
 Note that toast messages disappear with an animated effect after their display time ends. The default [hide](/Documentation/ApiReference/UI_Components/dxToast/Configuration/animation/#hide) animation duration for toast messages is 400 milliseconds. If multiple messages can stack in your application and block important visual elements, you may want to disable the animation or reduce its duration.
 
@@ -98,7 +98,7 @@ Note that toast messages disappear with an animated effect after their display t
 
     <!--JavaScript-->
     $(function() {
-        DevExpress.ui.notify({ message: "Error message", width: 300, shading: true }, {"center", "up"});
+        DevExpress.ui.notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
     })
 
 #####Angular
@@ -114,7 +114,7 @@ Note that toast messages disappear with an animated effect after their display t
     })
     export class AppComponent implements AfterViewInit {
         ngAfterViewInit() { 
-            notify({ message: "Error message", width: 300, shading: true }, {"center", "up"});
+            notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
         }
     }
 
@@ -129,7 +129,7 @@ Note that toast messages disappear with an animated effect after their display t
     export default {
         mounted: function() {
             this.$nextTick(() => {
-                notify({ message: "Error message", width: 300, shading: true }, {"center", "up"});
+                notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
             })
         }
     }
@@ -143,7 +143,7 @@ Note that toast messages disappear with an animated effect after their display t
 
     class App extends React.Component {
         componentDidMount() { 
-            notify({ message: "Error message", width: 300, shading: true }, {"center", "up"});
+            notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
         }
     }
     export default App;

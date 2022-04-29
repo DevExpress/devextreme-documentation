@@ -1,7 +1,7 @@
 ---
-id: PdfCell
-module: pdf_exporter
-export: Cell
+id: PdfCell.borderWidth
+type: Number
+default: 0.5
 ---
 ---
 ##### shortDescription

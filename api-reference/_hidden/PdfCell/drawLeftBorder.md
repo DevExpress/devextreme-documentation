@@ -1,7 +1,6 @@
 ---
-id: PdfCell
-module: pdf_exporter
-export: Cell
+id: PdfCell.drawLeftBorder
+type: Boolean
 ---
 ---
 ##### shortDescription

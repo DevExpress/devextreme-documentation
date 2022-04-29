@@ -2,7 +2,7 @@ Integration testing helps test a component across multiple units. Integration te
 
 The example below illustrates how to test the DataGrid's functionality. The test code adds a new row, saves it, and checks the results.
 
-To get started with QUnit in your browser, create an HTML file as described in the [Unit Testing](/Documentation/Guide/jQuery_Components/Components_Testing/#Unit_Testing) article and reference the SinonJS script.
+To get started with QUnit in your browser, create an HTML file as described in the [Unit Testing](/concepts/58%20jQuery%20Components/30%20Components%20Testing/10%20Unit%20Testing.md '/Documentation/Guide/jQuery_Components/Components_Testing/#Unit_Testing') article and reference the SinonJS script.
 
     <!--HTML-->
     <!-- This script allows you to simulate timers. -->

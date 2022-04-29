@@ -28,7 +28,7 @@ The recommended events are "keyup", "blur", "change", "input", and "focusout", b
 
     <!-- tab: app.component.html -->
     <dx-lookup ...
-        [searchStartEvent]="change"
+        searchStartEvent="change"
     </dx-lookup> 
 
     <!-- tab: app.module.ts -->
@@ -56,7 +56,7 @@ The recommended events are "keyup", "blur", "change", "input", and "focusout", b
     <!-- tab: App.vue -->
     <template> 
         <DxLookup ...
-            :search-start-event="change"
+            search-start-event="change"
         />            
     </template> 
   
@@ -84,7 +84,7 @@ The recommended events are "keyup", "blur", "change", "input", and "focusout", b
     export default function App() { 
         return ( 
             <Lookup ...
-                searchStartEvent={change}
+                searchStartEvent="change"
             />        
         ); 
     } 

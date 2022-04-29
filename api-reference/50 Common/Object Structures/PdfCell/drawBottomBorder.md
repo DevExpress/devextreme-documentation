@@ -1,13 +1,13 @@
 ---
-id: PdfCell.font
-type: Object
+id: PdfCell.drawBottomBorder
+type: Boolean
 ---
 ---
 ##### shortDescription
-An object that contains information about the font's size, name, and style.
+Specifies whether to show cell's bottom border.
 
 ---
-<!-- Description goes here -->
+
 ---
 ##### jQuery
 
@@ -22,9 +22,8 @@ An object that contains information about the font's size, name, and style.
                     component: dataGrid,
                     customizeCell: function(options) {
                         const { gridCell, pdfCell } = options;
-
                         if(gridCell.rowType === 'data') {
-                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                            pdfCell.drawBottomBorder = false;
                         }
                     }
                 }).then(function() {
@@ -53,7 +52,6 @@ An object that contains information about the font's size, name, and style.
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
 
     @Component({
         selector: 'app-root',
@@ -70,9 +68,8 @@ An object that contains information about the font's size, name, and style.
                 component: this.dataGrid.instance,
                 customizeCell: function(options) {
                     const { gridCell, pdfCell } = options;
-
                     if(gridCell.rowType === 'data') {
-                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                        pdfCell.drawBottomBorder = false;
                     }
                 }
             }).then(() => {
@@ -125,7 +122,6 @@ An object that contains information about the font's size, name, and style.
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
 
     const dataGridRef = 'dataGrid';
@@ -155,7 +151,7 @@ An object that contains information about the font's size, name, and style.
                         const { gridCell, pdfCell } = options;
 
                         if(gridCell.rowType === 'data') {
-                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                            pdfCell.drawBottomBorder = false;
                         }
                     }
                 }).then(() => {
@@ -175,7 +171,6 @@ An object that contains information about the font's size, name, and style.
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
     import { jsPDF } from 'jspdf';
-    import 'jspdf-autotable';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';    
 
     const App = () => {
@@ -192,7 +187,7 @@ An object that contains information about the font's size, name, and style.
                     const { gridCell, pdfCell } = options;
 
                     if(gridCell.rowType === 'data') {
-                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                        pdfCell.drawBottomBorder = false;
                     }
                 }
             }).then(() => {

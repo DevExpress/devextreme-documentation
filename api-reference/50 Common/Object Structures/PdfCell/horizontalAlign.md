@@ -8,7 +8,7 @@ type: String
 Specifies the horizontal alignment for the text inside the exported cell.
 
 ---
-The default alignment of the content depends on the [dataType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType).
+The default alignment of the content depends on the [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType').
 
 <table class="dx-table">
   <tr>

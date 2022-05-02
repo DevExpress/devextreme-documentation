@@ -5,10 +5,10 @@ export: Cell
 ---
 ---
 ##### shortDescription
-An object that configures export to PDF settings in a [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) cell.
+An object that configures export to PDF settings in a [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') cell.
 
 ---
-The [customDrawCell](/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customDrawCell) and [customizeCell](/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customizeCell) functions use this object.
+The [customDrawCell](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/customDrawCell.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customDrawCell') and [customizeCell](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customizeCell') functions use this object.
 
 #include common-demobutton with { 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/"

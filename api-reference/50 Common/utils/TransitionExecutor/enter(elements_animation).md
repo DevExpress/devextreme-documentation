@@ -5,7 +5,7 @@ id: TransitionExecutor.enter(elements, animation)
 ##### shortDescription
 Registers the set of elements that should be animated as "entering" using the specified animation configuration.
 
-##### param(elements): Object
+##### param(elements): jQuery
 The elements to be animated.
 
 ##### param(animation): AnimationConfig | String

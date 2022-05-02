@@ -5,7 +5,7 @@ id: TransitionExecutor.leave(elements, animation)
 ##### shortDescription
 Registers a set of elements that should be animated as "leaving" using the specified animation configuration.
 
-##### param(elements): Object
+##### param(elements): jQuery
 The elements to be animated.
 
 ##### param(animation): AnimationConfig | String

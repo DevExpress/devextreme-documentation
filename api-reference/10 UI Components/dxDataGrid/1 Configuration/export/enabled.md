@@ -12,9 +12,9 @@ Refer to the [export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configu
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/",
-    name: "Export to Excel Demo"
+    name: "Export to Excel"
 }
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/",
-    name: "Export to PDF Demo"
+    name: "Export to PDF"
 }

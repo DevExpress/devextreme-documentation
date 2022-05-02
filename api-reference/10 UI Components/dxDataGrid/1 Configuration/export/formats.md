@@ -22,19 +22,53 @@ The default **formats** value is `['xlsx']`. To enable PDF export, set the **for
                 enabled: true,
                 formats: ['pdf'],
             },
+            onExporting(e) {
+                const doc = new jsPDF();
+                DevExpress.pdfExporter.exportDataGrid({
+                    jsPDFDocument: doc,
+                    component: e.component,
+                }).then(() => {
+                    doc.save('Companies.pdf');
+                });
+            },
         }).dxDataGrid('instance');
     });
 
 ##### Angular   
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-data-grid ... 
+        (onExporting)="onExporting($event)"
+    >
         <!-- ... -->
         <dxo-export
             [enabled]="true"
             [formats]="['pdf']"
         ></dxo-export>
     </dx-data-grid>
+    
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+    import { jsPDF } from 'jspdf';
+    
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
+        exportGrid() {
+            const doc = new jsPDF();
+            exportDataGridToPdf({
+                jsPDFDocument: doc,
+                component: this.dataGrid.instance
+            }).then(() => {
+                doc.save('Customers.pdf');
+            })
+        }
+    }
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser';
@@ -62,7 +96,9 @@ The default **formats** value is `['xlsx']`. To enable PDF export, set the **for
     <!-- tab: App.vue -->
     <template>
         <div>
-            <DxDataGrid ...>
+            <DxDataGrid ...
+                @exporting="onExporting"
+            >
                 <!-- ... -->
                 <DxExport
                     :enabled="true"
@@ -80,6 +116,22 @@ The default **formats** value is `['xlsx']`. To enable PDF export, set the **for
         components: {
             DxDataGrid
         }
+        data() {
+            return {
+                // ...
+            };
+        },
+        methods: {
+            onExporting(e) {
+                const doc = new jsPDF();
+                exportDataGrid({
+                    jsPDFDocument: doc,
+                    component: e.component,
+                }).then(() => {
+                    doc.save('Companies.pdf');
+                });
+            },
+        },
     }
     </script>
 
@@ -91,12 +143,23 @@ The default **formats** value is `['xlsx']`. To enable PDF export, set the **for
     import DataGrid, { Export } from 'devextreme-react/data-grid';
 
     const exportFormats = ['pdf'];
-    
+
     export default function App() {
+        const onExporting = React.useCallback((e) => {
+            const doc = new jsPDF();
+            exportDataGrid({
+                jsPDFDocument: doc,
+                component: e.component,
+            }).then(() => {
+                doc.save('Companies.pdf');
+            });
+        });
         return (
             <React.Fragment>
                 <div>
-                    <DataGrid ...>
+                    <DataGrid ...
+                        onExporting={onExporting}
+                    >
                         {/* ... */}
                         <Export enabled={true} formats={exportFormats}>
                     </DataGrid>

@@ -95,7 +95,7 @@ When you set the `direction` to *'up-push'*, the second and subsequent toasts pu
 
 If you do not specify the `direction` field, its default value is *'down-push'* for `position: 'top left | top center | top right'`, and *'up-push'* for other `position` options.
 
-Note that toast messages disappear with an animated effect after their display time ends. The default [hide](/Documentation/ApiReference/UI_Components/dxToast/Configuration/animation/#hide) animation duration for toast messages is 400 milliseconds. If multiple messages can stack in your application and block important visual elements, you may want to disable the animation or reduce its duration.
+Note that toast messages disappear with an animated effect after their display time ends. The default [hide](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/animation/hide.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/animation/#hide') animation duration for toast messages is 400 milliseconds. If multiple messages can stack in your application and block important visual elements, you may want to disable the animation or reduce its duration.
 
 ---
 #####jQuery

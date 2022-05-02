@@ -14,11 +14,11 @@ When this property is set to **true**, a click on <img src="/images/DataGrid/ico
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/",
-    name: "Export to Excel Demo"
+    name: "Export to Excel"
 }
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/",
-    name: "Export to PDF Demo"
+    name: "Export to PDF"
 }
 
 [note]This property cannot be enabled when [custom server-side summaries](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function/20%20Server-Side%20Data%20Aggregation.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Custom_Aggregate_Function/#Server-Side_Data_Aggregation') are used.

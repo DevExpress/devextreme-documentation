@@ -19,7 +19,7 @@ If you do not specify the additional properties, only one panel can be in the ex
     <dx-accordion ...
         [collapsible]="true"
         [multiple]="true"
-        [animationDuration]="450"
+        animationDuration="450"
     >
     </dx-accordion>
 
@@ -30,7 +30,7 @@ If you do not specify the additional properties, only one panel can be in the ex
         <DxAccordion ...
             :collapsible="true"
             :multiple="true"
-            :animation-duration="450"
+            animation-duration="450"
         /> 
     </template>
 
@@ -48,7 +48,7 @@ If you do not specify the additional properties, only one panel can be in the ex
             <Accordion ...
                 collapsible={true}
                 multiple={true}
-                animationDuration={450}
+                animationDuration="450"
             />
         ); 
     }

@@ -13,8 +13,13 @@ A user can click the **Export** button to save an Excel or PDF file with the exp
 
 The following instructions show how to enable and configure client-side export:
 
-1. **Install or reference the required libraries**  
-    For Excel export, install <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+. For PDF export, install the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library.  
+1. **Install or reference the required libraries**
+
+    Install the following libraries for the export:
+
+    - Excel: The <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ libraries.
+
+    - PDF: The <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library.  
 
     ---
     ##### jQuery

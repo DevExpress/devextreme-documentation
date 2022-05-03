@@ -9,7 +9,7 @@ default: 'DataGrid'
 Specifies export formats.
 
 ---
-The default **formats** value is `['xlsx']`. To enable PDF export, set the **formats** property to `['pdf']`.
+The **formats** property's default value is `['xlsx']`. To enable PDF export, set the **formats** property to `['pdf']`.
 
 ---
 ##### jQuery

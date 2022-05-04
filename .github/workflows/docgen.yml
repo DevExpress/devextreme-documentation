@@ -28,7 +28,7 @@ jobs:
           working-directory: devextreme
           run: |
             npm ci
-            npm update devextreme-internal-tools
+            npm i devextreme-internal-tools@$(node -p "require('./package-lock').dependencies['devextreme-internal-tools'].version")
 
         - name: NPM - devextreme-documentation
           working-directory: documentation

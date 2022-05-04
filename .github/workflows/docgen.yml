@@ -37,31 +37,31 @@ jobs:
 #Generation
         - name: Discover declarations
           working-directory: devextreme
-          run: npm run discover-declarations -- --artifacts $(realpath ../artifacts/internal-tools)
+          run: npm run discover-declarations -- --artifacts ../artifacts/internal-tools
 
         - name: Update topics
           working-directory: documentation
-          run: npm run update-topics -- --artifacts $(realpath ../artifacts/internal-tools)
+          run: npm run update-topics -- --artifacts ../artifacts/internal-tools
 
         - name: Generate additional topics
           working-directory: documentation
-          run: npm run generate-extra-topic --artifacts $(realpath ../artifacts/internal-tools)
+          run: npm run generate-extra-topic --artifacts ../artifacts/internal-tools
 
         - name: Generate Syntax metadata
           working-directory: documentation
-          run: npm run generate-syntax-data -- --artifacts $(realpath ../artifacts/internal-tools)
+          run: npm run generate-syntax-data -- --artifacts ../artifacts/internal-tools
 
         - name: Generate Modules metadata
           working-directory: documentation
-          run: npm run generate-modules-meta -- --artifacts $(realpath ../artifacts/internal-tools) --js-scripts ../devextreme/js 
+          run: npm run generate-modules-meta -- --artifacts ../artifacts/internal-tools --js-scripts ../devextreme/js 
 
         - name: Generate ContentMap
           working-directory: documentation
-          run: npm run generate-content-map --artifacts $(realpath ../artifacts/internal-tools)
+          run: npm run generate-content-map --artifacts ../artifacts/internal-tools
 
         - name: Update links
           working-directory: documentation
-          run: npm run update-links --artifacts $(realpath ../artifacts/internal-tools)
+          run: npm run update-links --artifacts ../artifacts/internal-tools
 
 #PR
         - name: Configure Git

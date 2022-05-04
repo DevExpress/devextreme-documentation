@@ -564,7 +564,7 @@ The following instructions show how to enable and configure client-side export:
 
 The following restrictions apply when users export DataGrid:   
 
-- Only XLSX an PDF files are supported out of the box. To export DataGrid to CSV, call the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method as shown in the [formats](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#formats) property example.
+- Only XLSX and PDF files are supported out of the box. To export DataGrid to CSV, call the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method as shown in the [formats](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#formats) property example.
 
 - Excel limits the number of grouping levels to 7, while in the DataGrid it is unlimited.
 

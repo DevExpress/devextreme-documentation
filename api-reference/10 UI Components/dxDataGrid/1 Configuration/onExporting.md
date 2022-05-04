@@ -26,13 +26,13 @@ The name of the file where grid data is about to be exported.
 Model data. Available only if Knockout is used.
 
 ##### field(e.format): String | 'pdf' | 'xlsx'
-<!-- Description goes here -->
+Specifies the availability and captions of data export buttons.
 
 ##### field(e.selectedRowsOnly): Boolean
-<!-- Description goes here -->
+Specifies whether to export only selected data.
 
 ---
-You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column.  
+You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column to Excel file.  
 
 ---
 
@@ -233,8 +233,13 @@ You can use this function to adjust column properties before export. In the foll
 
 ---
 
-#include common-demobutton with {
+#include common-demobutton-named with {
+    name: "Export to Excel Overview",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
+}
+#include common-demobutton-named with {
+    name: "Export to PDF Overview",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
 #####See Also#####

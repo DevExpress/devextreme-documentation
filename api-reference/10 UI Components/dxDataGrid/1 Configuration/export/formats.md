@@ -9,7 +9,18 @@ default: 'DataGrid'
 Specifies the availability and captions of data export buttons.
 
 ---
-The **formats** property's default value is `['xlsx']`. This means that the Grid displays the export button and its menu contains a command titled "Export all data (selected rows) to XLSX". If you would rather implement PDF export in your application, set the **formats** property to `['pdf']`. The command text changes to "Export data to PDF". You can then implement the **onExporting** handler accordingly. 
+The **formats** property's default value is `['xlsx']`. This means that the DataGrid displays the export button and its menu contains a command titled "Export all data (selected rows) to Excel". If you would rather implement PDF export in your application, set the **formats** property to `['pdf']`. The command text changes to "Export all data (selected rows) to PDF". You can then implement the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler accordingly.
+
+#include common-demobutton-named with {
+    name: "Export to Excel Overview",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
+}
+#include common-demobutton-named with {
+    name: "Export to PDF Overview",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
+}
+
+Since the **formats** property accepts an array, you can specify multiple formats. For example, you can set the property to  `['xlsx', 'pdf']`. In this case, the grid displays multiple export commands: "Export all data (selected rows) to Excel" and "Export all data (selected rows) to PDF". In the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler, add logic that checks which button initiated the export operation.
 
 ---
 ##### jQuery
@@ -20,16 +31,32 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
             // ...
             export: {
                 enabled: true,
-                formats: ['pdf'],
+                formats: ['xlsx', 'pdf'],
             },
             onExporting(e) {
-                const doc = new jsPDF();
-                DevExpress.pdfExporter.exportDataGrid({
-                    jsPDFDocument: doc,
-                    component: e.component,
-                }).then(() => {
-                    doc.save('Companies.pdf');
-                });
+                if (e.format === 'xlsx') {
+                    const workbook = new ExcelJS.Workbook();
+                    const worksheet = workbook.addWorksheet('Companies');
+                    DevExpress.excelExporter.exportDataGrid({
+                        component: e.component,
+                        worksheet,
+                        autoFilterEnabled: true,
+                    }).then(() => {
+                        workbook.xlsx.writeBuffer().then((buffer) => {
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
+                        });
+                    });
+                    e.cancel = true;
+                } 
+                else if (e.format === 'pdf') {
+                    const doc = new jsPDF();
+                    DevExpress.pdfExporter.exportDataGrid({
+                        jsPDFDocument: doc,
+                        component: e.component,
+                    }).then(() => {
+                        doc.save('Companies.pdf');
+                    });
+                }
             },
         }).dxDataGrid('instance');
     });
@@ -43,7 +70,7 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
         <!-- ... -->
         <dxo-export
             [enabled]="true"
-            [formats]="['pdf']"
+            [formats]="['xlsx', 'pdf']"
         ></dxo-export>
     </dx-data-grid>
     
@@ -51,6 +78,9 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
+    import { Workbook } from 'exceljs';
+    import { saveAs } from 'file-saver-es';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
     
     @Component({
         selector: 'app-root',
@@ -58,38 +88,32 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
-        onExporting() {
-            const doc = new jsPDF();
-            exportDataGridToPdf({
-                jsPDFDocument: doc,
-                component: this.dataGrid.instance
-            }).then(() => {
-                doc.save('Customers.pdf');
-            })
+        onExporting(e) {
+            if (e.format === 'xlsx') {
+                const workbook = new Workbook();
+                const worksheet = workbook.addWorksheet('Companies');
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet,
+                    autoFilterEnabled: true,
+                }).then(() => {
+                    workbook.xlsx.writeBuffer().then((buffer) => {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
+                    });
+                });
+                e.cancel = true;
+            } 
+            else if (e.format === 'pdf') {
+                const doc = new jsPDF();
+                exportDataGridToPdf({
+                    jsPDFDocument: doc,
+                    component: e.component
+                }).then(() => {
+                    doc.save('Companies.pdf');
+                })
+            }
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxDataGridModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxDataGridModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
 
 ##### Vue
 
@@ -102,7 +126,7 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
                 <!-- ... -->
                 <DxExport
                     :enabled="true"
-                    :formats="['pdf']"
+                    :formats="['xlsx', 'pdf']"
                 />
             </DxDataGrid>
         </div>
@@ -112,7 +136,10 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
     import 'devextreme/dist/css/dx.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { jsPDF } from 'jspdf';
-    import { exportDataGrid } from 'devextreme/pdf_exporter';
+    import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
+    import { Workbook } from 'exceljs';
+    import { saveAs } from 'file-saver-es';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
 
     export default {
         components: {
@@ -125,13 +152,29 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
         },
         methods: {
             onExporting(e) {
-                const doc = new jsPDF();
-                exportDataGrid({
-                    jsPDFDocument: doc,
-                    component: e.component,
-                }).then(() => {
-                    doc.save('Companies.pdf');
-                });
+                if (e.format === 'xlsx') {
+                    const workbook = new Workbook();
+                    const worksheet = workbook.addWorksheet('Companies');
+                    DevExpress.excelExporter.exportDataGrid({
+                        component: e.component,
+                        worksheet,
+                        autoFilterEnabled: true,
+                    }).then(() => {
+                        workbook.xlsx.writeBuffer().then((buffer) => {
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
+                        });
+                    });
+                    e.cancel = true;
+                } 
+                else if (e.format === 'pdf') {
+                    const doc = new jsPDF();
+                    exportDataGridToPdf({
+                        jsPDFDocument: doc,
+                        component: e.component
+                    }).then(() => {
+                        doc.save('Companies.pdf');
+                    })
+                }
             },
         },
     }
@@ -144,19 +187,38 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
     import 'devextreme/dist/css/dx.light.css';
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import { jsPDF } from 'jspdf';
-    import { exportDataGrid } from 'devextreme/pdf_exporter';
+    import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
+    import { Workbook } from 'exceljs';
+    import { saveAs } from 'file-saver-es';
+    import { exportDataGrid } from 'devextreme/excel_exporter';
 
-    const exportFormats = ['pdf'];
+    const exportFormats = ['xlsx', 'pdf'];
 
     export default function App() {
         const onExporting = React.useCallback((e) => {
-            const doc = new jsPDF();
-            exportDataGrid({
-                jsPDFDocument: doc,
-                component: e.component,
-            }).then(() => {
-                doc.save('Companies.pdf');
-            });
+            if (e.format === 'xlsx') {
+                const workbook = new Workbook();
+                const worksheet = workbook.addWorksheet('Companies');
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet,
+                    autoFilterEnabled: true,
+                }).then(() => {
+                    workbook.xlsx.writeBuffer().then((buffer) => {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
+                    });
+                });
+                e.cancel = true;
+            } 
+            else if (e.format === 'pdf') {
+                const doc = new jsPDF();
+                exportDataGridToPdf({
+                    jsPDFDocument: doc,
+                    component: e.component
+                }).then(() => {
+                    doc.save('Companies.pdf');
+                })
+            };
         });
         return (
             <React.Fragment>
@@ -174,9 +236,7 @@ The **formats** property's default value is `['xlsx']`. This means that the Grid
 
 ---
 
-The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['CSV']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the onExporting handler to produce a file in that format. 
-
-Since the **formats** property accepts an array, you can specify multiple formats. For example, you can set the property to  `['pdf', 'CSV']`. In this case, the grid displays multiple export commands: "Export all data (selected rows) to PDF" and "Export all data (selected rows) to CSV". In the onExporting handler, add logic that checks which button initiated the export operation.
+The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['csv']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler to produce a file in that format. 
 
 The example below shows how to export DataGrid to CSV format.
 
@@ -237,7 +297,7 @@ The example below shows how to export DataGrid to CSV format.
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
         onExporting: function(e) {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
             DevExpress.excelExporter.exportDataGrid({
                 component: e.component,
@@ -310,7 +370,7 @@ The example below shows how to export DataGrid to CSV format.
         },
         methods: {
             onExporting: function(e) {
-                const workbook = new ExcelJS.Workbook();
+                const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Employees');
                 DevExpress.excelExporter.exportDataGrid({
                     component: e.component,
@@ -343,7 +403,7 @@ The example below shows how to export DataGrid to CSV format.
 
     export default function App() {
         const onExporting = React.useCallback((e) => {
-            const workbook = new ExcelJS.Workbook();
+            const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
             DevExpress.excelExporter.exportDataGrid({
                 component: e.component,

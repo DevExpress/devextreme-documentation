@@ -5,7 +5,7 @@ The DataGrid includes the following UI elements used to filter and search data:
 - [filterPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterPanel/') with [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilder')
 - [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/')
 
-In this tutorial, the **filterRow** and **searchPanel** are displayed:
+In this tutorial, the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') and [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/') are displayed:
 
 ---
 ##### jQuery

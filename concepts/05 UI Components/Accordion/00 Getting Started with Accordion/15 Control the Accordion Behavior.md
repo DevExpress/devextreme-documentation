@@ -1,4 +1,4 @@
-If you do not specify additional properties, only one panel can be expanded at a time. To change this behavior, set the [collapsible](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/collapsible.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#collapsible') and [multiple](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#multiple') properties to _true_. You can also change the duration of the panel expand and collapse animations.
+If you do not specify additional properties, only one panel can be expanded at a time. To change this behavior, set the [collapsible](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/collapsible.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#collapsible') and [multiple](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#multiple') properties to **true**. You can also change the duration of the panel expand and collapse animations.
 
 ---
 ##### jQuery

@@ -6,10 +6,10 @@ default: 'DataGrid'
 ---
 ---
 ##### shortDescription
-Specifies export formats.
+Specifies the availability and captions of data export buttons.
 
 ---
-The **formats** property's default value is `['xlsx']`. To enable PDF export, set the **formats** property to `['pdf']`.
+The **formats** property's default value is `['xlsx']`. This means that the Grid displays the export button and its menu contains a command titled "Export all data (selected rows) to XLSX". If you would rather implement PDF export in your application, set the **formats** property to `['pdf']`. The command text changes to "Export data to PDF". You can then implement the **onExporting** handler accordingly. 
 
 ---
 ##### jQuery
@@ -174,7 +174,9 @@ The **formats** property's default value is `['xlsx']`. To enable PDF export, se
 
 ---
 
-You can specify multiple formats: `['xlsx', 'pdf', string]`. The `string` format specifies the custom text shown in the **Export** button.
+The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['CSV']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the onExporting handler to produce a file in that format. 
+
+Since the **formats** property accepts an array, you can specify multiple formats. For example, you can set the property to  `['pdf', 'CSV']`. In this case, the grid displays multiple export commands: "Export all data (selected rows) to PDF" and "Export all data (selected rows) to CSV". In the onExporting handler, add logic that checks which button initiated the export operation.
 
 The example below shows how to export DataGrid to CSV format.
 

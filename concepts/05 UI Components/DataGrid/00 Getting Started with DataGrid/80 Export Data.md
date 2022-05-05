@@ -260,7 +260,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
             <DataGrid ...
                 onExporting={exportGrid}>
                 {/* ... */}
-                <Export enabled={true} formats={exportFormats}>
+                <Export enabled={true} formats={exportFormats} />
             </DataGrid>
         );
     }

@@ -1,4 +1,4 @@
-You can display Accordion data from [dataSource](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#dataSource) or [items](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/) array. Note that each data source object must contain the **title** field whose value goes to the panel's title. If you want to customize the title, refer to the following section of this tutorial: [Customize Item Appearance](/Documentation/Guide/UI_Components/Accordion/Getting_Started_with_Accordion/#Customize_Item_Appearance).
+You can display Accordion data from [dataSource](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#dataSource) or [items](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/) array. Note that each data source object must contain the **title** field whose value specifies the panel's title. If you want to customize the title, refer to the following section of this tutorial: [Customize Item Appearance](/Documentation/Guide/UI_Components/Accordion/Getting_Started_with_Accordion/#Customize_Item_Appearance).
 
 ---
 ##### jQuery

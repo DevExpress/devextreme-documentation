@@ -32,7 +32,7 @@ Specifies the availability and captions of data export buttons.
 Specifies whether to export only selected data.
 
 ---
-You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column to Excel file.  
+You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column to an Excel file.  
 
 ---
 

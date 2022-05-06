@@ -280,10 +280,10 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 }
 
 #include uiwidgets-grids-export-csv with {
-    componentName: "{WidgetName}"
+    componentName: "DataGrid"
 }
 
-For further information on the {WidgetName} component, refer to the following resources:
+For further information on the DataGrid component, refer to the following resources:
 
-* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dx{WidgetName}/)
+* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)
+* [API Reference](/Documentation/ApiReference/UI_Components/dxDataGrid/)

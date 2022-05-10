@@ -39,27 +39,27 @@ The format property can accept the following value types:
         </tr>
         <tr>
         <td>0</td>
-        <td>A digit. Displays '0' if it is not specified in the UI.</td>
+        <td>A digit. Displays '0' if the formatted number doesn't have a digit in that position.</td>
         </tr>
         <tr>
         <td>&#35;</td>
         <td>
-                A digit or nothing. One symbol represents several integer digits, but only one decimal digit.</br> 
-                For example, "#0.#" represents "123.4", but not "123.45".
+                Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Consequent characters match a single digit. If the formatted number doesn't have a digit in the corresponding position, displays nothing.</br> 
+                For example, if you apply format "#0.#" to "123.45", the result is "123.4".
         </td>
         </tr>
         <tr>
         <td>.</td>
         <td>
                 A decimal separator. </br>
-                Displayed according to the specified locale.
+                Actual character depends on locale.
         </td>
         </tr>
         <tr>
         <td>,</td>
         <td>
                 A group separator. </br>
-                Displayed according to the specified locale.
+                Actual character depends on locale.
         </td>
         </tr>
         <tr>
@@ -71,12 +71,12 @@ The format property can accept the following value types:
         </tr>
         <tr>
         <td>;</td>
-        <td>Separates positive and negative numbers. If there is no explicit negative format, a positive number receives the "-" prefix. </td>
+        <td>Separates positive and negative format patterns. This character is optional. If you don't use it, then you specify a common format for positive and negative numbers. Negative numbers simply display a minus ("-") prefix. </td>
         </tr>
         <tr>
         <td>Other characters</td>
         <td>
-                Any character. Should be placed only at the format string's beginning or end. </br>
+                You can add any literal characters to the beginning or end of the format string. </br>
                 You can use the special characters above as well (in single quotation marks).
         </td>
         </tr>
@@ -91,7 +91,7 @@ The format property can accept the following value types:
         // Add a group separator
         format: ",##0.###" // 123,456.789
         
-    The example below shows how to specify percentages when you work with decimals. It is necessary to add a `#` character at the start of an LDML pattern to avoid digits before `.` to be deleted.
+    The examples below show different ways to apply percentage formatting to decimals. 
 
         <!-- tab: JavaScript -->
         const smallNumber = 0.01234;
@@ -116,7 +116,7 @@ Full format configuration. The object structure is shown in the [format](/Docume
 
 [note] With this property specified, a press on Minus Sign (-) inverts the current value instead of entering "-".
 
-[note] If you set this property, the telephone keyboard is used for editing on mobile devices. However, it may not have a point, comma, or other symbols for entering decimals. Set the [mode](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/mode.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#mode') property to *"text"* to use the standard keyboard instead.
+[note] If you set this property, the number pad keyboard appears on mobile devices when users focus the editor. Such keyboards may not have a decimal character. Set the [mode](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/mode.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#mode') property to *"text"* to use the standard keyboard instead.
 
 #####See Also#####
 - [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/')

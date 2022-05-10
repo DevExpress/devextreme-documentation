@@ -65,19 +65,23 @@ The format property can accept the following value types:
         <tr>
         <td>%</td>
         <td>
-                The percent sign. Multiplies the input value by 100. </br>    
-                If it is enclosed in single quotes ('%'), it only adds this sign to the input value.
+                The percent sign. Multiplies the input value by 100.
         </td>
         </tr>
         <tr>
         <td>;</td>
-        <td>Separates positive and negative format patterns. This character is optional. If you don't use it, then you specify a common format for positive and negative numbers. Negative numbers simply display a minus ("-") prefix. </td>
+        <td>Separates positive and negative format patterns. This character is optional. If you do not use it, then you specify a common format for positive and negative numbers. Negative numbers simply display a minus ("-") prefix. </td>
         </tr>
         <tr>
+        <td>Escape characters</td>
+        <td>
+                You can display the special characters above as literals if you enclose them in single quotation marks. <br/>
+                For example, '%'.
+        </td>
+        </tr>
         <td>Other characters</td>
         <td>
-                You can add any literal characters to the beginning or end of the format string. </br>
-                You can use the special characters above as well (in single quotation marks).
+                You can add any literal characters to the beginning or end of the format string.
         </td>
         </tr>
     </table>
@@ -91,7 +95,7 @@ The format property can accept the following value types:
         // Add a group separator
         format: ",##0.###" // 123,456.789
         
-    The examples below show different ways to apply percentage formatting to decimals. 
+    The examples below show different ways to apply percentage formatting to decimals. Use caution if your format strings starts with a zero ('0'), because the formatted number may lose leading digits.
 
         <!-- tab: JavaScript -->
         const smallNumber = 0.01234;
@@ -101,11 +105,6 @@ The format property can accept the following value types:
 
         // Add a percent sign and limit to two decimal digits
         format: "#0.##'%'" // 0.01%
-
-        const number = 0.80785;
-
-        // Remove all the numbers except the last digit before '.'
-        format: "0.##%" // 0.79%, would be 80.79% if the format is "#0.##%"
 
     
 - Function    

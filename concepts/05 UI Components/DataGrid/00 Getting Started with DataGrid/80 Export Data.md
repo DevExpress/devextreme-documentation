@@ -4,13 +4,13 @@ The DataGrid allows users to export grid data as Excel and PDF documents. This f
 
 - PDF: <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a>
 
-To configure export operations, use the **excelExporter**.[exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) or **pdfExporter**.[exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions) method. It requires a DataGrid instance and a target Excel worksheet or a PDF document. You can call these methods at any point in your application.
+To configure export operations, use the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') or **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method. It requires a DataGrid instance and a target Excel worksheet or a PDF document. You can call these methods at any point in your application.
 
-The following code calls export methods in the DataGrid's [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) event handler. The control executes this handler when users select one of the operations available in the **Export** button drop-down menu. The [export](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#enabled) property adds this button to the DataGrid. Use the [formats](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#formats) property to configure available export operation types.
+The following code calls export methods in the DataGrid's [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') event handler. The control executes this handler when users select one of the operations available in the **Export** button drop-down menu. The [export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/').[enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#enabled') property adds this button to the DataGrid. Use the [formats](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#formats') property to configure available export operation types.
 
-When users click "Export all data to Excel", **excelExporter**.[exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) exports grid data as a <a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank">blob</a> that is then saved to an XLSX file. The `e.cancel` parameter disables the deprecated built-in export functionality. 
+When users click "Export all data to Excel", **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') exports grid data as a <a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank">blob</a> that is then saved to an XLSX file. The `e.cancel` parameter disables the deprecated built-in export functionality. 
 
-When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions) exports grid data as a PDF document. 
+When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') exports grid data as a PDF document. 
 
 ---
 ##### jQuery
@@ -286,4 +286,4 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 For further information on the DataGrid component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)
-* [API Reference](/Documentation/ApiReference/UI_Components/dxDataGrid/)
+* [API Reference](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/')

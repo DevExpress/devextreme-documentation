@@ -9,7 +9,7 @@ default: 'DataGrid'
 Specifies the availability and captions of data export buttons.
 
 ---
-The **formats** property's default value is `['xlsx']`. This means that the DataGrid displays the export button and its menu contains a command titled "Export all data (selected rows) to Excel". If you would rather implement PDF export in your application, set the **formats** property to `['pdf']`. The command text changes to "Export all data (selected rows) to PDF". You can then implement the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler accordingly.
+The **formats** property's default value is `['xlsx']`. This means that the DataGrid displays the export button and its menu contains a command titled "Export all data (selected rows) to Excel". If you would rather implement PDF export in your application, set the **formats** property to `['pdf']`. The command text changes to "Export all data (selected rows) to PDF". You can then implement the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler accordingly.
 
 #include common-demobutton-named with {
     name: "Export to Excel Overview",
@@ -20,7 +20,7 @@ The **formats** property's default value is `['xlsx']`. This means that the Data
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
-Since the **formats** property accepts an array, you can specify multiple formats. For example, you can set the property to  `['xlsx', 'pdf']`. In this case, the grid displays multiple export commands: "Export all data (selected rows) to Excel" and "Export all data (selected rows) to PDF". In the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler, add logic that checks which button initiated the export operation.
+Since the **formats** property accepts an array, you can specify multiple formats. For example, you can set the property to  `['xlsx', 'pdf']`. In this case, the grid displays multiple export commands: "Export all data (selected rows) to Excel" and "Export all data (selected rows) to PDF". In the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler, add logic that checks which button initiated the export operation.
 
 ---
 ##### jQuery
@@ -236,7 +236,7 @@ Since the **formats** property accepts an array, you can specify multiple format
 
 ---
 
-The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['csv']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler to produce a file in that format. 
+The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['csv']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler to produce a file in that format. 
 
 The example below shows how to export DataGrid to CSV format.
 

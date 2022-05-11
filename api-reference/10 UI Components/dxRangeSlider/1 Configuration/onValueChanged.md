@@ -25,10 +25,4 @@ The left edge of the currently selected range.
 ##### field(e.value): Array<Number>
 The start and end values.
 
-##### field(e.event): DxEvent
-#include common-ref-eventparam
-
-##### field(e.previousValue): any
-The UI component's previous value.
-
 ---

@@ -26,7 +26,7 @@ The format property can accept the following value types:
 
     You can specify the [precision](/Documentation/ApiReference/Common/Object_Structures/format/#precision) property for decimal numbers.
 
-    NumberBox does not support large number formats. If you want to apply these formats, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a custom format string.
+    If you want to apply a different format, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a custom format string. For example, you can use this functionality to enable [large number formats](/Documentation/ApiReference/Common/Object_Structures/format/#type).
 
 - Custom format string    
 

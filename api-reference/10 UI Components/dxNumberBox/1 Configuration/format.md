@@ -44,7 +44,7 @@ The format property can accept the following value types:
         <tr>
         <td>&#35;</td>
         <td>
-                Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Consequent characters match a single digit. If the formatted number doesn't have a digit in the corresponding position, displays nothing.</br> 
+                Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number doesn't have a digit in the corresponding position, it displays nothing.</br>
                 For example, if you apply format "#0.#" to "123.45", the result is "123.4".
         </td>
         </tr>
@@ -95,7 +95,7 @@ The format property can accept the following value types:
         // Add a group separator
         format: ",##0.###" // 123,456.789
         
-    The examples below show different ways to apply percentage formatting to decimals. Use caution if your format strings starts with a zero ('0'), because the formatted number may lose leading digits.
+    The examples below show different ways to apply percentage formatting to decimals. Use caution if your format string starts with a zero ('0'), because the formatted number may lose leading digits.
 
         <!-- tab: JavaScript -->
         const smallNumber = 0.01234;
@@ -113,7 +113,7 @@ A function should apply a custom format to a value and return the formatted valu
 - Object    
 Full format configuration. The object structure is shown in the [format](/Documentation/ApiReference/Common/Object_Structures/format/) API section.
 
-[note] With this property specified, a press on Minus Sign (-) inverts the current value instead of entering "-".
+[note] With this property specified, a press on the minus sign (-) inverts the current value instead of entering "-".
 
 [note] If you set this property, the number pad keyboard appears on mobile devices when users focus the editor. Such keyboards may not have a decimal character. Set the [mode](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/mode.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#mode') property to *"text"* to use the standard keyboard instead.
 

@@ -70,7 +70,10 @@ The format property can accept the following value types:
         </tr>
         <tr>
         <td>;</td>
-        <td>Separates positive and negative format patterns. This character is optional. If you do not use it, then you specify a common format for positive and negative numbers. Negative numbers simply display a minus ("-") prefix. </td>
+        <td>    Separates positive and negative format patterns.  </br>
+                For example, the "#0.##;(#0.##)" format displays positive number according to the pattern before ";", and negative number according to the pattern after the ";". </br>
+                If you do not use this character and the additional pattern, negative numbers display a minus ("-") prefix.
+        </td>
         </tr>
         <tr>
         <td>Escape characters</td>

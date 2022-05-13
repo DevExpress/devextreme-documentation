@@ -59,13 +59,13 @@ Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom form
     </tr>
 </table>
 
-The example below demonstrates the behavior of "#" and "0" in fractional numbers:
+The examples below demonstrate the behavior of "#" and "0" in fractional numbers:
 
     <!-- tab: JavaScript -->
-    const number = 12.34;
+    const number = 1234.567;
     
-    // Delete all digits except the digits around the decimal point
-    format: "0.0" // 2.3
+    // Leave the first digit before the decimal point and round up the decimal
+    format: "0.0" // 4.6
 
     const smallNumber = 0.1234;
 

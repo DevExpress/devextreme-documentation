@@ -89,7 +89,7 @@ The format property can accept the following value types:
         </tr>
     </table>
 
-    The example below demonstrates the behavior of "#" and "0" in fractional numbers:
+    The examples below demonstrate the behavior of "#" and "0" in fractional numbers:
 
         <!-- tab: JavaScript -->
         const number = 12.34;
@@ -110,7 +110,7 @@ The format property can accept the following value types:
         // Add a group separator
         format: ",##0.###" // 123,456.789
         
-    The example below shows different ways to apply percentage formatting to decimals. Use caution if your format string starts with a zero ('0'), because the formatted number may lose leading digits.
+    The examples below show different ways to apply percentage formatting to decimals. Use caution if your format string starts with a zero ('0'), because the formatted number may lose leading digits.
 
         <!-- tab: JavaScript -->
         const smallNumber = 0.01234;

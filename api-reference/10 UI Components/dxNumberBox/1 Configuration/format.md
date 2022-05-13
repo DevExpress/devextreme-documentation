@@ -71,7 +71,7 @@ The format property can accept the following value types:
         <tr>
         <td>;</td>
         <td>    Separates positive and negative format patterns.  </br>
-                For example, the "#0.##;(#0.##)" format displays positive number according to the pattern before ";", and negative number according to the pattern after the ";". </br>
+                For example, the "#0.##;(#0.##)" format displays a positive number according to the pattern before the semicolon (";"), and a negative number according to the pattern after the semicolon (";").</br>
                 If you do not use this character and the additional pattern, negative numbers display a minus ("-") prefix.
         </td>
         </tr>

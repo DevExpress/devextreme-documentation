@@ -1,54 +1,61 @@
-A custom format string specifies a format using Unicode Locale Data Markup Language (LDML) patterns. An LDML pattern consists of wildcard characters and characters displayed as is. The following wildcard characters are supported:
+Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard characters and characters displayed as is. The **format** property supports the following wildcard characters:
 
 **Numeric Formats**
 
 <table class="dx-table">
     <tr>
-      <th>Format character</th>
-      <th>Description</th>
+    <th>Format character</th>
+    <th>Description</th>
     </tr>
     <tr>
-      <td>0</td>
-      <td>A digit. Displays '0' if it is not specified in the UI.</td>
+    <td>0</td>
+    <td>A digit. Displays '0' if the formatted number doesn't have a digit in that position.</td>
     </tr>
     <tr>
-      <td>&#35;</td>
-      <td>
-            A digit or nothing. One symbol represents several integer digits, but only one decimal digit.</br> 
-            For example, "#0.#" represents "123.4", but not "123.45".
-      </td>
+    <td>&#35;</td>
+    <td>
+            Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number doesn't have a digit in the corresponding position, it displays nothing.</br>
+            For example, if you apply format "#0.#" to "123.45", the result is "123.4".
+    </td>
     </tr>
     <tr>
-      <td>.</td>
-      <td>
+    <td>.</td>
+    <td>
             A decimal separator. </br>
-            Displayed according to the specified locale.
-      </td>
+            Actual character depends on locale.
+    </td>
     </tr>
     <tr>
-      <td>,</td>
-      <td>
+    <td>,</td>
+    <td>
             A group separator. </br>
-            Displayed according to the specified locale.
-      </td>
+            Actual character depends on locale.
+    </td>
     </tr>
     <tr>
-      <td>%</td>
-      <td>
-            The percent sign. Multiplies the input value by 100. </br>    
-            If it is enclosed in single quotes ('%'), it only adds this sign to the input value.
-      </td>
+    <td>%</td>
+    <td>
+            The percent sign. Multiplies the input value by 100.
+    </td>
     </tr>
     <tr>
-      <td>;</td>
-      <td>Separates positive and negative numbers. If there is no explicit negative format, a positive number receives the "-" prefix. </td>
+    <td>;</td>
+    <td>    Separates positive and negative format patterns.  </br>
+            For example, the "#0.##;(#0.##)" format displays a positive number according to the pattern before the semicolon (";"), and a negative number according to the pattern after the semicolon (";").</br>
+            If you do not use this character and the additional pattern, negative numbers display a minus ("-") prefix.
+    </td>
     </tr>
     <tr>
-      <td>Other characters</td>
-      <td>
-            Any character. Should be placed only at the format string's beginning or end. </br>
-            You can use the special characters above as well (in single quotation marks).
-      </td>
+    <td>Escape characters</td>
+    <td>
+            You can display the special characters above as literals if you enclose them in single quotation marks. <br/>
+            For example, '%'.
+    </td>
+    </tr>
+    <td>Other characters</td>
+    <td>
+            You can add any literal characters to the beginning or end of the format string.
+    </td>
     </tr>
 </table>
 
@@ -61,7 +68,7 @@ A custom format string specifies a format using Unicode Locale Data Markup Langu
     // Add a group separator
     format: ",##0.###" // 123,456.789
     
-<!-- -->
+The examples below show different ways to apply percentage formatting to decimals. Use caution if your format string starts with a zero ('0'), because the formatted number may lose leading digits.
 
     <!-- tab: JavaScript -->
     const smallNumber = 0.01234;

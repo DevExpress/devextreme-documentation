@@ -74,9 +74,6 @@ The examples below demonstrate the behavior of "#" and "0" in fractional numbers
 
     const largeNumber = 123456.789;
 
-    // Limit the decimal part to one digit
-    format: "#0.#" // 123456.7
-
     // Add a group separator
     format: ",##0.###" // 123,456.789
     

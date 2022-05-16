@@ -39,12 +39,12 @@ The format property can accept the following value types:
         </tr>
         <tr>
         <td>0</td>
-        <td>A digit. Displays '0' if the formatted number doesn't have a digit in that position.</td>
+        <td>A digit. Displays '0' if the formatted number does not have a digit in that position.</td>
         </tr>
         <tr>
         <td>&#35;</td>
         <td>
-                Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number doesn't have a digit in the corresponding position, it displays nothing.</br>
+                Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number does not have a digit in the corresponding position, it displays nothing.</br>
                 For example, if you apply format "#0.#" to "123.45", the result is "123.4".
         </td>
         </tr>
@@ -89,11 +89,20 @@ The format property can accept the following value types:
         </tr>
     </table>
 
-        <!-- tab: JavaScript -->
-        const largeNumber = 123456.789;
+    The examples below demonstrate the behavior of "#" and "0" in fractional numbers:
 
-        // Limit the decimal part to one digit
-        format: "#0.#" // 123456.7
+        <!-- tab: JavaScript -->
+        const number = 1234.567;
+    
+        // Leave the first digit before the decimal point and round up the decimal
+        format: "0.0" // 4.6
+
+        const smallNumber = 0.1234;
+
+        // Display nothing in place of a digit
+        format: "#.#" // .1
+
+        const largeNumber = 123456.789;
 
         // Add a group separator
         format: ",##0.###" // 123,456.789

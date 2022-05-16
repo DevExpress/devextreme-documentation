@@ -1,0 +1,15 @@
+#container {
+    width: 300px;
+    height: 120px;
+    margin: 5px;
+}
+
+#buttons {
+    display: flex;
+}
+
+.custom-toast {
+    background-color: #F05B41;
+    border-radius: 20%;
+    padding: 17px;
+}

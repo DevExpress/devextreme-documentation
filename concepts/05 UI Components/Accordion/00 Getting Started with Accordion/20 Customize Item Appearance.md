@@ -1,4 +1,4 @@
-To customize panel appearance, use the [itemTemplate](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#itemTemplate) for panel content and the [itemTitleTemplate](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#itemTitleTemplate) for the panel's title.
+To customize panel appearance, use the [itemTemplate](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#itemTemplate') for panel content and the [itemTitleTemplate](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#itemTitleTemplate') for the panel's title.
 
 ---
 ##### jQuery

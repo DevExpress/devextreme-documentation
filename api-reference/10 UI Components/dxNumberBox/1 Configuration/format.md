@@ -24,9 +24,9 @@ The format property can accept the following value types:
         type: "percent" // 123%
         type: "currency" // $1
 
-    You can specify the [precision](/Documentation/ApiReference/Common/Object_Structures/format/#precision) property for fractional numbers.
+    You can specify the [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') property for fractional numbers.
 
-    If you want to apply a different format, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a custom format string as described below. For example, you can use this functionality to enable [large number formats](/Documentation/ApiReference/Common/Object_Structures/format/#type).
+    If you want to apply a different format, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a custom format string as described below. For example, you can use this functionality to enable [large number formats](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/format/#type').
 
 - Custom format string    
 
@@ -120,10 +120,10 @@ The format property can accept the following value types:
 
     
 - Function    
-A function should apply a custom format to a value and return the formatted value as a string. Functions are useful for advanced formatting. Refer to the following article for more information: [Custom Function](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function).
+A function should apply a custom format to a value and return the formatted value as a string. Functions are useful for advanced formatting. Refer to the following article for more information: [Custom Function](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function').
 
 - Object    
-Full format configuration. The object structure is shown in the [format](/Documentation/ApiReference/Common/Object_Structures/format/) API section.
+Full format configuration. The object structure is shown in the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') API section.
 
 [note] With this property specified, a press on the minus sign (-) inverts the current value instead of entering "-".
 

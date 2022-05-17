@@ -1,4 +1,4 @@
-To customize a toast, either specify a [contentTemplate](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate) function or a custom template inside a component. In jQuery, you can apply any CSS class to the custom toast. Use `.dx-custom-toast` CSS class in Angular, Vue and React. Do not forget to set the [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) property to `custom`.
+To customize toast content, either specify a [contentTemplate](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate) function or a custom template inside a component. In jQuery, you can apply any CSS class to the custom toast. Use `.dx-custom-toast` CSS class in Angular, Vue and React. Do not forget to set the [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) property to `custom`.
 
 ---
 ##### jQuery

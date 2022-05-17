@@ -1,4 +1,8 @@
-When you need to display a notification, call the [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime) method with values for the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime) properties passed as arguments.
+Call the **notify** two methods to display a Toast. This method can accept two slightly different sets of arguments. 
+
+A simpler syntax is [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime).  You specify the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime).
+
+To specify additional Toast properties, call the [notify(options, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) method and pass an object as the first argument. The example below uses this syntax.
 
 You can specify one of the four predefined types of notifications, depending on the mood of the message:
 
@@ -14,9 +18,7 @@ A red toast with an **X** icon.
 - *'success'*   
 A green toast with a check mark icon.
 
-If you need to specify other Toast properties in addition to [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime), call the [notify(options, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) method and pass an object as the argument. This tutorial uses the second approach.
-
-You can specify the [width](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width) and [height](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height) properties to resize a toast. Use the [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position) property to specify toast location. The configuration of the **position** property in the example reads as follows: "place **my** *bottom* side **at** the *bottom* side **of** the *"#container"*.
+If you call the method that allows additional options, you can set the [width](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width), [height](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height), and [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position) options. The configuration of the **position** property in the example below reads as follows: "place **my** *bottom* side **at** the *bottom* side **of** the *"#container"*.
 
 ---
 ##### jQuery

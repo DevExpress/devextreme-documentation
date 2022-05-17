@@ -1,4 +1,6 @@
-When you need to show a notification in Angular, Vue, or React, you can use one of the **notify** methods described in the section above. If you want to customize Toast content, bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast component to a component (Button in the example) property. After that, you can change this property to show or hide the Toast notification.
+When you need to show a notification in Angular, Vue, or React, you can use one of the **notify** methods described in the section above. If you want, for example, to customize Toast content, bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast component to a component (Button in the example) property. After that, you can change this property to show or hide the Toast notification.
+
+The example below shows how you can show and hide the Toast component without the content customization. To learn how to customize Toast content, refer to the section below.
 
 ---
 ##### Angular

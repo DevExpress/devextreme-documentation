@@ -1,4 +1,4 @@
-To customize toast content, either specify a [contentTemplate](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate) function or a custom template inside a component. In jQuery, you can apply any CSS class to the custom toast. Use `.dx-custom-toast` CSS class in Angular, Vue, and React and set the [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) property to `custom`.
+To customize toast content, either specify a [contentTemplate](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate) function or a custom template inside a component. Use `.dx-custom-toast` CSS class for the template and set the [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) property to `custom`.
 
 ---
 ##### jQuery
@@ -9,23 +9,24 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         $("#custom").dxButton({
             text: "Show custom message",
             onClick: function() {
-                DevExpress.ui.notify({
-                    width: 230,
-                    height: 50,
-                    position: {
-                        my: "bottom",
-                        at: "bottom",
-                        of: "#container"
-                    },
-                    contentTemplate: function () {
-                        return $("<p />")
-                            .text("You have a new message ")
-                            .addClass("custom-toast")
-                            .append('<i class="dx-icon-email"></i>');
-                    }
-                }, 
-                "custom", 
-                2000
+                DevExpress.ui.notify(
+                    {
+                        width: 230,
+                        height: 50,
+                        position: {
+                            my: "bottom",
+                            at: "bottom",
+                            of: "#container"
+                        },
+                        contentTemplate: function () {
+                            return $("<p />")
+                                .text("You have a new message ")
+                                .addClass(".dx-custom-toast")
+                                .append('<i class="dx-icon-email"></i>');
+                        }
+                    }, 
+                    "custom", 
+                    2000
                 );
             },
         });
@@ -49,7 +50,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
     <!-- tab: index.css -->
     /*  */
 
-    .custom-toast {
+    .dx-custom-toast {
         background-color: #F05B41;
         border-radius: 20%;
         padding: 17px;

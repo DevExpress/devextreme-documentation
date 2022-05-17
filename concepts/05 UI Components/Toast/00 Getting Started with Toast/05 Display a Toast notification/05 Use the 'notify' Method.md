@@ -1,10 +1,10 @@
-Call the **notify** method to display a Toast. This method can accept two slightly different sets of arguments. 
+Call the **notify** method to display a Toast. This method can accept two different sets of arguments. 
 
-A simpler syntax is [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime). You specify the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime).
+A basic syntax is [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime). You specify the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime).
 
 To specify additional Toast properties, call the [notify(options, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) method and pass an object as the first argument. The example below uses this syntax.
 
-You can specify one of the four predefined types of notifications, depending on the mood of the message:
+You can specify one of the four predefined types of notifications, depending on the message:
 
 - *'info'*   
 A blue toast with a message bubble icon.
@@ -30,17 +30,18 @@ If you call the method that allows additional options, you can set the [width](/
         $("#show").dxButton({
             text: "Show message",
             onClick: function() {
-                DevExpress.ui.notify({
-                    message: "You have a new message", 
-                    width: 230,
-                    position: {
-                        my: "bottom",
-                        at: "bottom",
-                        of: "#container"
-                    }
-                }, 
-                types[Math.floor(Math.random() * 4)], 
-                500
+                DevExpress.ui.notify(
+                    {
+                        message: "You have a new message", 
+                        width: 230,
+                        position: {
+                            my: "bottom",
+                            at: "bottom",
+                            of: "#container"
+                        }
+                    }, 
+                    types[Math.floor(Math.random() * 4)], 
+                    500
                 );
             },
         });
@@ -101,17 +102,18 @@ If you call the method that allows additional options, you can set the [width](/
     export class AppComponent {
         types = ['error', 'info', 'success', 'warning'];
         showMessage() {
-            notify({
-                message: "You have a new message", 
-                width: 230,
-                position: {
-                    at: "bottom",
-                    my: "bottom",
-                    of: "#container"
-                }
-            }, 
-            this.types[Math.floor(Math.random() * 4)], 
-            500
+            notify(
+                {
+                    message: "You have a new message", 
+                    width: 230,
+                    position: {
+                        at: "bottom",
+                        my: "bottom",
+                        of: "#container"
+                    }
+                }, 
+                this.types[Math.floor(Math.random() * 4)], 
+                500
             );
         }
     }
@@ -178,17 +180,18 @@ If you call the method that allows additional options, you can set the [width](/
         },
         methods: {    
             showMessage() {
-                notify({
-                message: "You have a new message", 
-                width: 230,
-                position: {
-                    at: "bottom",
-                    my: "bottom",
-                    of: "#container"
-                }
-                }, 
-                this.types[Math.floor(Math.random() * 4)], 
-                500
+                notify(
+                    {
+                        message: "You have a new message", 
+                        width: 230,
+                        position: {
+                            at: "bottom",
+                            my: "bottom",
+                            of: "#container"
+                        }
+                    }, 
+                    this.types[Math.floor(Math.random() * 4)], 
+                    500
                 );
             }
         }
@@ -220,14 +223,15 @@ If you call the method that allows additional options, you can set the [width](/
     const types = ['error', 'info', 'success', 'warning'];
 
     const showMessage = () => {
-        notify({
-            message: "You have a new message", 
-            width: 230,
-            position: {
-                at: "bottom",
-                my: "bottom",
-                of: "#container"
-            }
+        notify(
+            {
+                message: "You have a new message", 
+                width: 230,
+                position: {
+                    at: "bottom",
+                    my: "bottom",
+                    of: "#container"
+                }
             }, 
             types[Math.floor(Math.random() * 4)], 
             500

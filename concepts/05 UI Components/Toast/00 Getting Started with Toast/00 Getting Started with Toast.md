@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The Toast is a UI component that displays pop-up notifications. 
+Toast is a UI component that displays pop-up notifications. 
 
 This tutorial shows how to add the Toast component to your application and configure its core features.
 

@@ -2,7 +2,7 @@
 id: dxDateBox.Options.pickerType
 acceptValues: 'calendar' | 'list' | 'native' | 'rollers'
 type: String
-default: 'calendar', 'native' (iOS, Android)
+default: 'calendar', 'native' (Android, iOS)
 ---
 ---
 ##### shortDescription

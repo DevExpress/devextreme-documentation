@@ -18,7 +18,7 @@ A red toast with an **X** icon.
 - *'success'*   
 A green toast with a check mark icon.
 
-If you call the method that allows additional options, you can set the [width](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width), [height](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height), and [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position) options. The configuration of the **position** property in the example below reads as follows: "place **my** *bottom* side **at** the *bottom* side **of** the *"#container"*.
+If you call the method that allows additional options, you can set the [width](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width), [height](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height) [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position), and [other options](/Documentation/ApiReference/UI_Components/dxToast/Configuration/). The configuration of the **position** property in the example below reads as follows: "place **my** *bottom* side **at** the *bottom* side **of** the *"#container"*.
 
 ---
 ##### jQuery
@@ -27,7 +27,7 @@ If you call the method that allows additional options, you can set the [width](/
     $(function() {
         const types = ['error', 'info', 'success', 'warning'];
 
-        $("#show").dxButton({
+        $("#show-message").dxButton({
             text: "Show message",
             onClick: function() {
                 DevExpress.ui.notify(
@@ -45,6 +45,7 @@ If you call the method that allows additional options, you can set the [width](/
                 );
             },
         });
+
     });
 
     <!-- tab: index.html -->
@@ -60,7 +61,7 @@ If you call the method that allows additional options, you can set the [width](/
         <body>
             <div id="container">
                 <div id="buttons">
-                    <div id="show"></div>
+                    <div id="show-message"></div>
                 </div>
             </div>
         </body>

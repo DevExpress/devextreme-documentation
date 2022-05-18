@@ -8,8 +8,12 @@
     display: flex;
 }
 
-.dx-custom-toast {
+.dx-toast-custom {
     background-color: #F05B41;
-    border-radius: 20%;
-    padding: 17px;
+    color: white;
+    border-radius: 5%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

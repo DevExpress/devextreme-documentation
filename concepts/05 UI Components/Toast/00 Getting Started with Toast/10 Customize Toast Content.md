@@ -6,7 +6,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
     <!-- tab: index.js -->
     $(function() {
         // ...
-        $("#custom").dxButton({
+        $("#show-custom-message").dxButton({
             text: "Show custom message",
             onClick: function() {
                 DevExpress.ui.notify(
@@ -30,6 +30,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                 );
             },
         });
+        
     });
 
     <!-- tab: index.html -->
@@ -41,7 +42,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
             <div id="container">
                 <div id="buttons">
                     <!-- ... -->
-                    <div id="custom"></div>
+                    <div id="show-custom-message"></div>
                 </div>
             </div>
         </body>
@@ -52,8 +53,12 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
 
     .dx-custom-toast {
         background-color: #F05B41;
-        border-radius: 20%;
-        padding: 17px;
+        color: white;
+        border-radius: 5%;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 ##### Angular
@@ -70,7 +75,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
             <dx-toast
                 [(visible)]="isVisible"
                 [width]="230"
-                [height]="70"
+                [height]="50"
                 type="custom"
             >  
                 <dxo-position
@@ -128,6 +133,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
 
     .dx-toast-custom {
         background-color: #F05B41;
+        color: white;
         border-radius: 5%;
         padding: 2px;
         display: flex;
@@ -150,8 +156,8 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
             </div>
             <dxToast
                 v-model:visible="isVisible"
-                :content-template="customMessage"
-                :width="210"
+                content-template="custom-template"
+                :width="230"
                 :height="50"
                 type="custom"    
             >   
@@ -160,6 +166,9 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                     at="bottom"
                     of="#container"
                 />
+                <template #custom-template>
+                    You have a new message &nbsp; <i class='dx-icon-email'></i>
+                </template>
             </dxToast>
             </div>
         </div>
@@ -180,8 +189,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         data() {
             return {
                 // ...
-                isVisible: false,
-                customMessage: "You have a new message &nbsp; <i class='dx-icon-email'></i>"
+                isVisible: false
             };
         },
         methods: {    
@@ -243,7 +251,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                 </div>
                 <Toast
                     visible={isVisible}
-                    width={210}
+                    width={230}
                     height={50}
                     type="custom"
                     contentRender={contentRender}

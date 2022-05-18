@@ -1,7 +1,7 @@
 $(function () {
     const types = ['error', 'info', 'success', 'warning'];
 
-    $("#show").dxButton({
+    $("#show-message").dxButton({
         text: "Show message",
         onClick: function() {
             DevExpress.ui.notify(
@@ -20,7 +20,7 @@ $(function () {
         },
     });
 
-    $("#custom").dxButton({
+    $("#show-custom-message").dxButton({
         text: "Show custom message",
         onClick: function() {
             DevExpress.ui.notify(
@@ -34,9 +34,8 @@ $(function () {
                     },
                     contentTemplate: function () {
                         return $("<p />")
-                        .text("You have a new message ")
-                        .addClass("dx-custom-toast")
-                        .append('<i class="dx-icon-email"></i>');
+                            .text("You have a new message ")
+                            .append('<i class="dx-icon-email"></i>');
                     }
                 }, 
                 "custom", 
@@ -44,4 +43,5 @@ $(function () {
             );
         },
     });
+
 });

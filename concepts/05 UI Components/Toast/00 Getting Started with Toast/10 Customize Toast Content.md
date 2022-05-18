@@ -53,7 +53,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
     .dx-toast-custom {
         background-color: #F05B41;
         color: white;
-        border-radius: 5%;
+        border-radius: 5px;
         padding: 2px;
         display: flex;
         align-items: center;
@@ -133,7 +133,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
     .dx-toast-custom {
         background-color: #F05B41;
         color: white;
-        border-radius: 5%;
+        border-radius: 5px;
         padding: 2px;
         display: flex;
         align-items: center;
@@ -206,7 +206,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         .dx-toast-custom {
             background-color: #F05B41;
             color: white;
-            border-radius: 5%;
+            border-radius: 5px;
             padding: 2px;
             display: flex;
             align-items: center;
@@ -274,7 +274,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         .dx-toast-custom {
             background-color: #F05B41;
             color: white;
-            border-radius: 5%;
+            border-radius: 5px;
             padding: 2px;
             display: flex;
             align-items: center;

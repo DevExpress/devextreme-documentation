@@ -33,9 +33,9 @@ $(function () {
                         of: "#container"
                     },
                     contentTemplate: function () {
-                        return $("<p />")
-                            .text("You have a new message ")
-                            .append('<i class="dx-icon-email"></i>');
+                        return $('.dx-toast-custom')
+                            .append('<p>You have a new message</p> &nbsp;')
+                            .append('<i class="dx-icon-email icon-style"></i>');
                     }
                 }, 
                 "custom", 

@@ -19,9 +19,9 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                             of: "#container"
                         },
                         contentTemplate: function () {
-                            return $("<p />")
-                                .text("You have a new message ")
-                                .append('<i class="dx-icon-email"></i>');
+                            return $('.dx-toast-custom')
+                            .append('<p>You have a new message</p> &nbsp;')
+                            .append('<i class="dx-icon-email icon-style"></i>');
                         }
                     }, 
                     "custom", 
@@ -60,6 +60,10 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         justify-content: center;
     }
 
+    .icon-style {
+        margin-top: 3px;
+    }
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -83,7 +87,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                     of="#container">
                 </dxo-position>
                 <div *dxTemplate="let data of 'content'" class="dx-toast-custom">
-                    <span>You have a new message <i class="dx-icon-email"></i></span>
+                    <span>You have a new message &nbsp;</span><i class="dx-icon-email icon-style"></i>
                 </div>
             </dx-toast>
         </div>
@@ -140,6 +144,10 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         justify-content: center;
     }
 
+    .icon-style {
+        margin-top: 3px;
+    }
+
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -166,7 +174,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                     of="#container"
                 />
                 <template #custom-template>
-                    You have a new message &nbsp; <i class='dx-icon-email'></i>
+                    <span>You have a new message &nbsp;</span><i class='dx-icon-email icon-style'></i>
                 </template>
             </dxToast>
             </div>
@@ -212,6 +220,10 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
             align-items: center;
             justify-content: center;
         }
+
+        .icon-style {
+            margin-top: 3px;
+        }
     </style>
 
 ##### React
@@ -235,7 +247,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         }
         const contentRender = () => {
             return (
-                <span>You have a new message &nbsp; <i class='dx-icon-email'></i></span>
+                <div class="flexbox"><span>You have a new message &nbsp;</span><i class='dx-icon-email icon-style'></i></div>
             );
         }
         return (
@@ -271,14 +283,24 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
     <!-- tab: index.css -->
         /*  */
 
-        .dx-toast-custom {
-            background-color: #F05B41;
-            color: white;
-            border-radius: 5px;
-            padding: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .dx-toast-custom {
+        background-color: #F05B41;
+        color: white;
+        border-radius: 5px;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
         
+    .flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-style {
+        margin-top: 3px;
+    }
+
 ---

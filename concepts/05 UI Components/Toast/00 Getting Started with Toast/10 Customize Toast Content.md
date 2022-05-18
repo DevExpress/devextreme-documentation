@@ -26,7 +26,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                         }
                     }, 
                     "custom", 
-                    2000
+                    500
                 );
             },
         });

@@ -21,7 +21,6 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                         contentTemplate: function () {
                             return $("<p />")
                                 .text("You have a new message ")
-                                .addClass(".dx-custom-toast")
                                 .append('<i class="dx-icon-email"></i>');
                         }
                     }, 
@@ -51,7 +50,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
     <!-- tab: index.css -->
     /*  */
 
-    .dx-custom-toast {
+    .dx-toast-custom {
         background-color: #F05B41;
         color: white;
         border-radius: 5%;

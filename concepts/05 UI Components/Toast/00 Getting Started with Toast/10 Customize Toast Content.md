@@ -1,4 +1,4 @@
-To customize toast content, either specify a [contentTemplate](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate) function or a custom template inside a component. Use `.dx-custom-toast` CSS class for the template and set the [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) property to `custom`.
+To customize toast content, either specify a [contentTemplate](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#contentTemplate) function or a custom template inside a component. Use `.dx-toast-custom` CSS class for the template and set the [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type) property to `custom`.
 
 ---
 ##### jQuery

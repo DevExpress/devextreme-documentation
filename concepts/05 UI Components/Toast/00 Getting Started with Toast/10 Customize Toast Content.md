@@ -18,10 +18,9 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                             at: "bottom",
                             of: "#container"
                         },
-                        contentTemplate: function () {
-                            return $('.dx-toast-custom')
-                            .append('<p>You have a new message</p> &nbsp;')
-                            .append('<i class="dx-icon-email icon-style"></i>');
+                        contentTemplate: (element) => {
+                            element.append('<p>You have a new message</p> &nbsp;');
+                            element.append('<i class="dx-icon-email icon-style"></i>');
                         }
                     }, 
                     "custom", 

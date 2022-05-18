@@ -2,7 +2,7 @@
 id: CommonIndicator.horizontalOrientation
 acceptValues: 'left' | 'right'
 type: String
-default: 'right' (value_indicators), 'left' (subvalue_indicators)
+default: 'left' (subvalue_indicators), 'right' (value_indicators)
 ---
 ---
 ##### shortDescription

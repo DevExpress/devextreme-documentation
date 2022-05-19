@@ -1,0 +1,23 @@
+#container {
+    width: 300px;
+    height: 120px;
+    margin: 5px;
+}
+
+#buttons {
+    display: flex;
+}
+
+.dx-toast-custom {
+    background-color: #F05B41;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-style {
+    margin-top: 3px;
+}

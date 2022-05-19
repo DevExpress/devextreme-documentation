@@ -1,7 +1,7 @@
 ---
 id: dxLookup.Options.usePopover
 type: Boolean
-default: false, true (desktop, iOS), false (Material)
+default: false, false (Material), true (desktop, iOS)
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxToast.Options.width
 type: Number | String | function()
-default: '80vw', 'auto' (Android), '100vw' (phones_on_Android)
+default: '80vw', '100vw' (phones_on_Android), 'auto' (Android)
 ---
 ---
 ##### return: Number | String

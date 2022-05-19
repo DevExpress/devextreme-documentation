@@ -2,7 +2,7 @@
 id: dxDropDownEditor.Options.opened
 type: Boolean
 default: false
-firedEvents: opened, closed
+firedEvents: closed, opened
 ---
 ---
 ##### shortDescription

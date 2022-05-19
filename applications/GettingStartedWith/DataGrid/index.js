@@ -7,7 +7,9 @@ $("head").append(
     polyfill, exceljs, fileSaver, jsPdf
 );
 
-window.jsPDF = window.jspdf.jsPDF;
+// This code is used for backwards compatibility with the older jsPDF variable name
+// Read more: https://github.com/MrRio/jsPDF/releases/tag/v2.0.0
+// window.jsPDF = w jsPDF;
 
 $(function() {
     const dataGrid = $("#dataGrid").dxDataGrid({

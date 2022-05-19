@@ -1,8 +1,12 @@
-Call the **notify** method to display a Toast. This method can accept two different sets of arguments. 
+Call the **notify** method to display a Toast. This method can accept four different sets of arguments. 
 
-A basic syntax is [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime). You specify the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime).
+The basic syntax is [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime). You should specify the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime).
 
 To specify additional Toast properties, call the [notify(options, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) method and pass an object as the first argument. The example below uses this syntax.
+
+To stack Toasts, call the [notify(message, stack)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack) or [notify(options, stack)](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_stack) method (depending on the complexity of the notification content). The first method accepts only the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message) as the first argument, while the second method accepts a Toast configuration object. The second argument in both methods specifies stacking settings.
+
+For more information about stacking Toasts, refer to the following online demo: [Toast Stack Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Stack/).
 
 You can specify one of the four predefined types of notifications, depending on the message:
 

@@ -85,8 +85,11 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                     at="bottom"
                     of="#container">
                 </dxo-position>
-                <div *dxTemplate="let data of 'content'" class="dx-toast-custom">
-                    <span>You have a new message &nbsp;</span><i class="dx-icon-email icon-style"></i>
+                <div *dxTemplate="let data of 'content'">
+                    <div class="flex-box">
+                        <span>You have a new message &nbsp;</span>
+                        <i class="dx-icon-email icon-style"></i>
+                    </div>
                 </div>
             </dx-toast>
         </div>
@@ -147,6 +150,14 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         margin-top: 3px;
     }
 
+    .flex-box {
+        width: 230px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -173,7 +184,8 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
                     of="#container"
                 />
                 <template #custom-template>
-                    <span>You have a new message &nbsp;</span><i class='dx-icon-email icon-style'></i>
+                    <span>You have a new message &nbsp;</span>
+                    <i class='dx-icon-email icon-style'></i>
                 </template>
             </dxToast>
             </div>
@@ -246,7 +258,10 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         }
         const contentRender = () => {
             return (
-                <div class="flexbox"><span>You have a new message &nbsp;</span><i class='dx-icon-email icon-style'></i></div>
+                <div class="flex-box">
+                    <span>You have a new message &nbsp;</span>
+                    <i class='dx-icon-email icon-style'></i>
+                </div>
             );
         }
         return (
@@ -292,7 +307,7 @@ To customize toast content, either specify a [contentTemplate](/Documentation/Ap
         justify-content: center;
     }
         
-    .flexbox {
+    .flex-box {
         display: flex;
         align-items: center;
         justify-content: center;

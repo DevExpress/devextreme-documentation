@@ -9,7 +9,7 @@ $("head").append(
 
 // This code is used for backwards compatibility with the older jsPDF variable name
 // Read more: https://github.com/MrRio/jsPDF/releases/tag/v2.0.0
-// window.jsPDF = w jsPDF;
+// window.jsPDF = window.jspdf.jsPDF;
 
 $(function() {
     const dataGrid = $("#dataGrid").dxDataGrid({

@@ -1,8 +1,8 @@
 Call the **notify** method to display a Toast. This method can accept two different sets of arguments. 
 
-A basic syntax is [notify(message, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime). You specify the [message](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message), [type](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type), and [displayTime](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime).
+A basic syntax is [notify(message, type, displayTime)](/api-reference/50%20Common/utils/ui/notify(message_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime'). You specify the [message](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message'), [type](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type'), and [displayTime](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/displayTime.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#displayTime').
 
-To specify additional Toast properties, call the [notify(options, type, displayTime)](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) method and pass an object as the first argument. The example below uses this syntax.
+To specify additional Toast properties, call the [notify(options, type, displayTime)](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime') method and pass an object as the first argument. The example below uses this syntax.
 
 You can specify one of the four predefined types of notifications, depending on the message:
 
@@ -18,7 +18,7 @@ A red toast with an **X** icon.
 - *'success'*   
 A green toast with a check mark icon.
 
-If you call the method that allows additional options, you can set the [width](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width), [height](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height) [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position), and [other options](/Documentation/ApiReference/UI_Components/dxToast/Configuration/). The configuration of the **position** property in the example below reads as follows: "place **my** *bottom* side **at** the *bottom* side **of** the *"#container"*.
+If you call the method that allows additional options, you can set the [width](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width'), [height](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height') [position](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position'), and [other options](/api-reference/10%20UI%20Components/dxToast/1%20Configuration '/Documentation/ApiReference/UI_Components/dxToast/Configuration/'). The configuration of the **position** property in the example below reads as follows: "place **my** *bottom* side **at** the *bottom* side **of** the *"#container"*.
 
 ---
 ##### jQuery

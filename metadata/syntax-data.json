@@ -11576,8 +11576,8 @@
     "enums.ChartZoomAndPanMode": {
       "vue": "chart-zoom-and-pan-mode"
     },
-    "enums.ChartZoomPanActionType": {
-      "vue": "chart-zoom-pan-action-type"
+    "enums.ChartZoomPanAction": {
+      "vue": "chart-zoom-pan-action"
     },
     "enums.CircularGaugeElementOrientation": {
       "vue": "circular-gauge-element-orientation"
@@ -12304,6 +12304,9 @@
       "angular": "dxo-format",
       "react": "Format",
       "vue": "DxFormat"
+    },
+    "format.useCurrencyAccountingStyle": {
+      "vue": "use-currency-accounting-style"
     },
     "funnelLegendItem": {
       "angular": "dxo-funnel-legend-item",

@@ -265,7 +265,7 @@ You can call the **exportGantt** method at any point in your application. In the
         );
     };
 
-    export default App;    
+    export default App; 
 
 ##### ASP.NET Core Controls
 

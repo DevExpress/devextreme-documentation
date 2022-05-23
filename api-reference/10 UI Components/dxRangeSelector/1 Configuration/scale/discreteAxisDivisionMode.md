@@ -6,11 +6,11 @@ default: 'betweenLabels'
 ---
 ---
 ##### shortDescription
-Specifies whether ticks and grid lines should cross the labels or lie between them. Applies only if the [scale](Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#type) is *"discrete"*.
+Specifies whether ticks and grid lines should cross the labels or lie between them. Applies only if the scale's [type](Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#type) is *"discrete"*.
 
 ---
 
-The scale displays ticks and grid lines between labels. You can set the **discreteAxisDivisionMode** property to *"crossLabels"* to display scale labels next to major ticks and grid lines.
+The RangeSelector UI widget displays ticks and grid lines between the scale's labels. You can set the **discreteAxisDivisionMode** property to *"crossLabels"* to display scale labels next to major ticks and grid lines.
 
 ![dxRangeSelector - discreteAxisDivisionMode](/images/ChartJS/range-selector-discreteAxisDivisionMode.png)
 

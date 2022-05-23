@@ -8,9 +8,13 @@ default: true
 Specifies whether to apply the accounting style to formatted numbers of the `currency` [type](/Documentation/ApiReference/Common/Object_Structures/format/#type).
 
 ---
-The accounting style adds parentheses to negative numbers instead of the minus sign. To disable the accounting style in the component and display formatted numbers of the `currency` [type](/Documentation/ApiReference/Common/Object_Structures/format/#type) with the minus sign, set this property to **false**. This property overrides the [global config](/Documentation/ApiReference/Common/Object_Structures/globalConfig/#defaultUseCurrencyAccountingStyle).
+The accounting style adds parentheses to negative numbers instead of the minus sign. To disable the accounting style in the component and display formatted numbers of the `currency` [type](/Documentation/ApiReference/Common/Object_Structures/format/#type) with the minus sign, set this property to **false**.
 
     format({
         type: "currency",
         useCurrencyAccountingStyle: false 
     });
+
+If you do not specify this property, the [defaultUseCurrencyAccountingStyle](/Documentation/ApiReference/Common/Object_Structures/globalConfig/#defaultUseCurrencyAccountingStyle) global configuration setting is applied. This property overrides the global configuration.
+
+![How to Override the defaultUseCurrencyAccountingStyle](/images/types/use-currency-accounting-style.png)

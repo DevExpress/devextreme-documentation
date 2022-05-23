@@ -82,7 +82,7 @@ The scale displays ticks and grid lines between labels. You can set the **discre
         
         export default {
             components: { 
-                DxGantt
+                DxRangeSelector
                 // ... 
             }
         };

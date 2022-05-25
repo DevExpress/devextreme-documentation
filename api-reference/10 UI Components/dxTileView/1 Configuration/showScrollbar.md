@@ -6,6 +6,7 @@ acceptValues: 'always' | 'never' | 'onHover' | 'onScroll'
 ---
 ---
 ##### shortDescription
-A Boolean value specifying whether or not to display a scrollbar.
+Specifies when the UI component shows the scrollbar.
 
 ---
+MacOS, iOS, and Android devices use native scrolling. 'onHover' and 'always' values do not have an effect in native scrolling mode, the component applies the 'onScroll' value instead.

@@ -6,7 +6,7 @@ default: 'hide'
 ---
 ---
 ##### shortDescription
-Decides how to arrange axis labels when there is not enough space to keep all of them.
+Decides how to arrange axis labels when there is not enough space to display all of them.
 
 ---
 When axis labels overlap each other, you can specify the **overlappingBehavior** property to rearrange them. Depending on whether an axis is horizontal or vertical, this property accepts different values.
@@ -25,7 +25,7 @@ The following values can be specified for horizontal axes only:
 - **rotate**      
 Rotates axis labels at the angle specified by the [rotationAngle](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#rotationAngle) property.
 - **stagger**      
-Arranges axis labels in two rows in a staggering manner. Use the [staggeringSpacing](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#staggeringSpacing) property to specify an empty space between the rows.
+Arranges axis labels in two rows in a staggered manner. Use the [staggeringSpacing](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#staggeringSpacing) property to specify an empty space between rows.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsOverlapping/"

@@ -5,7 +5,9 @@
 
     <!-- tab: index.js -->
     $(function() {
-        $("#pie-chart").dxPieChart({ });
+        $("#pie-chart").dxPieChart({
+            // Configuration goes here
+        });
     });
 
     <!-- tab: index.html -->
@@ -28,7 +30,9 @@
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a PieChart:
 
     <!-- tab: app.component.html -->
-    <dx-pie-chart></dx-pie-chart>
+    <dx-pie-chart>
+        <!-- Configuration goes here -->
+    </dx-pie-chart>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -68,7 +72,9 @@
 
     <!-- tab: App.vue -->
     <template>
-        <DxPieChart />
+        <DxPieChart>
+            <!-- Configuration goes here -->
+        </DxPieChart>
     </template>
 
     <script>
@@ -95,7 +101,9 @@
 
     function App() {
         return (
-            <PieChart />
+            <PieChart>
+                <!-- Configuration goes here -->
+            </PieChart>
         );
     }
 

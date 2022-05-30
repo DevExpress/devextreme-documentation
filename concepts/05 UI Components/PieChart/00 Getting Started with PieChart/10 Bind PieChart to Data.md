@@ -77,8 +77,8 @@ This tutorial uses an array as a PieChart data source. To bind the PieChart to d
     import { Injectable } from '@angular/core';
 
     export class Billionaires {
-        country: string | undefined;
-        amount: number | undefined;
+        country: string;
+        amount: number;
     }
 
     const billionaires: Billionaires[] = [
@@ -106,7 +106,7 @@ This tutorial uses an array as a PieChart data source. To bind the PieChart to d
 
     @Injectable()
     export class Service {
-        getBillionaires() {
+        getBillionaires(): Billionaires[] {
             return billionaires;
         }
     }

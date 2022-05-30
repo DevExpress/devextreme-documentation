@@ -1,4 +1,5 @@
 $(function () {
+  
   const billionaires = [
     {
       country: "China",
@@ -20,7 +21,8 @@ $(function () {
       country: "Germany",
       amount: 145
     }
-  ]
+  ];
+
   $("#pie-chart").dxPieChart({
     dataSource: billionaires,
     series: {
@@ -54,4 +56,5 @@ $(function () {
         }
     }
 });
+
 });

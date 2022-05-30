@@ -9345,6 +9345,9 @@
     "dxSchedulerOptions.allDayExpr": {
       "vue": "all-day-expr"
     },
+    "dxSchedulerOptions.allDayPanelMode": {
+      "vue": "all-day-panel-mode"
+    },
     "dxSchedulerOptions.appointmentCollectorTemplate": {
       "vue": "appointment-collector-template"
     },
@@ -9600,6 +9603,9 @@
     },
     "dxSchedulerOptions.views.agendaDuration": {
       "vue": "agenda-duration"
+    },
+    "dxSchedulerOptions.views.allDayPanelMode": {
+      "vue": "all-day-panel-mode"
     },
     "dxSchedulerOptions.views.appointmentCollectorTemplate": {
       "vue": "appointment-collector-template"

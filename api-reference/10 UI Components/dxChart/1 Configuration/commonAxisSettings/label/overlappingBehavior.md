@@ -23,9 +23,9 @@ Leaves axis labels overlapped.
 The following values can be specified for horizontal axes only:
 
 - **rotate**      
-Rotates axis labels at the angle specified by the [rotationAngle](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#rotationAngle) property.
+Rotates axis labels at the angle specified by the [rotationAngle](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/rotationAngle.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#rotationAngle') property.
 - **stagger**      
-Arranges axis labels in two rows in a staggered manner. Use the [staggeringSpacing](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#staggeringSpacing) property to specify an empty space between rows.
+Arranges axis labels in two rows in a staggered manner. Use the [staggeringSpacing](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/staggeringSpacing.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#staggeringSpacing') property to specify an empty space between rows.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsOverlapping/"

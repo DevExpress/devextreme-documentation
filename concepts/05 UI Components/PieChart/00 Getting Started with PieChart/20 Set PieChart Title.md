@@ -1,0 +1,55 @@
+Use the [title](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/title/) property to specify and configure the chart's title.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#pie-chart").dxPieChart({
+            // ...
+            title: "Top-5 Countries by Number of Billionaires"
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-pie-chart ...
+        title="Top-5 Countries by Number of Billionaires"
+    >
+        <!-- ... -->
+    </dx-pie-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxPieChart ...
+            title="Top-5 Countries by Number of Billionaires"
+        >
+            <!-- ... -->
+        </DxPieChart> 
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+
+    function App() {
+        return (
+            <PieChart ...
+                title="Top-5 Countries by Number of Billionaires"
+            >
+                <!-- ... -->
+            </PieChart>
+        ); 
+    }
+
+    export default App;
+
+--- 

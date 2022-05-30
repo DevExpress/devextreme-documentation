@@ -5,7 +5,6 @@ DevExpress curates the following dictionaries:
 - English (en) (default)
 - German (de)
 - Japanese (ja)
-- Russian (ru)
 
 There are also dictionaries that the community contributes and curates. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/22_1/js/localization/messages" target="_blank">on GitHub</a>.
 
@@ -23,9 +22,8 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
             <!-- ... -->
             <!-- DevExtreme library -->
             <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/dx.all.js"></script>
-            <!-- Dictionary files for German and Russian languages -->
+            <!-- Dictionary files for German language -->
             <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/localization/dx.messages.de.js"></script>
-            <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/localization/dx.messages.ru.js"></script>
         </head>
         <body>
             <script>
@@ -47,16 +45,14 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
 
         <!--JavaScript-->
         // ...
-        // Dictionaries for German and Russian languages
+        // Dictionaries for German language
         import deMessages from "devextreme/localization/messages/de.json";
-        import ruMessages from "devextreme/localization/messages/ru.json";
         import { locale, loadMessages } from "devextreme/localization";
 
         // ===== Angular ======
         export class AppComponent {
             constructor() {
                 loadMessages(deMessages);
-                loadMessages(ruMessages);
                 locale(navigator.language);
             }
         }
@@ -65,7 +61,6 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
         export default {
             created() {
                 loadMessages(deMessages);
-                loadMessages(ruMessages);
                 locale(navigator.language);
             }
         }
@@ -75,7 +70,6 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
             constructor(props) {
                 super(props);
                 loadMessages(deMessages);
-                loadMessages(ruMessages);
                 locale(navigator.language);
             }
         }
@@ -84,13 +78,11 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
 
         <!--JavaScript-->
         // ...
-        // Dictionaries for German and Russian languages
+        // Dictionaries for German language
         const deMessages = require('devextreme/localization/messages/de.json');
-        const ruMessages = require('devextreme/localization/messages/ru.json');
         const localization = require('devextreme/localization');
 
         localization.loadMessages(deMessages);
-        localization.loadMessages(ruMessages);
         localization.locale(navigator.language);
         
     ---

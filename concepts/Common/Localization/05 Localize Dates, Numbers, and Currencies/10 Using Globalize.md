@@ -10,7 +10,7 @@ All the components are available via CDN and npm.
 
 * **CDN or local files**      
 
-    Include the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, German and Russian [dictionaries](/concepts/Common/Localization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') are also included. Note that the order you include the libraries is important. Then, set the locale using the `Globalize.locale()` method:
+    Include the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, German [dictionary](/concepts/Common/Localization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Note that the order you include the libraries is important. Then, set the locale using the `Globalize.locale()` method:
 
     ---
     ##### CDN
@@ -29,13 +29,11 @@ All the components are available via CDN and npm.
             <script src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.3.0/globalize/date.min.js"></script>
             <!-- DevExtreme library -->
             <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/dx.all.js"></script>
-            <!-- Dictionary files for German and Russian languages -->
+            <!-- Dictionary files for German language -->
             <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/localization/dx.messages.de.js"></script>
-            <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/localization/dx.messages.ru.js"></script>
             <!-- Common and language-specific CLDR data -->
             <script src="https://unpkg.com/devextreme-cldr-data/supplemental.js"></script>
             <script src="https://unpkg.com/devextreme-cldr-data/de.js"></script>
-            <script src="https://unpkg.com/devextreme-cldr-data/ru.js"></script>
         </head>
         <script>
             $(function() {
@@ -57,7 +55,7 @@ All the components are available via CDN and npm.
 
     Register Globalize in your project as described in the [Angular](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/08%20Register%203rd-Party%20Dependencies/02%20Globalize%20Registration.md '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Register_3rd-Party_Dependencies/Globalize_Registration'), [Vue](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/63%20Register%203rd-Party%20Dependencies/2%20Globalize%20Registration.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Register_3rd-Party_Dependencies/Globalize_Registration'), or [React](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/65%20Additional%20Configuration%20for%20Webpack.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Additional_Configuration_for_Webpack') articles.
     
-    Then, include Globalize, CLDR, and language-specific CLDR data using the `import` or `require` statement&mdash;the statement depends on the syntax for working with modules. The code below shows ECMAScript 6 and CommonJS syntaxes. These examples include German and Russian dictionaries.
+    Then, include Globalize, CLDR, and language-specific CLDR data using the `import` or `require` statement&mdash;the statement depends on the syntax for working with modules. The code below shows ECMAScript 6 and CommonJS syntaxes. These examples include German dictionary.
 
     ---
     ##### npm: ECMAScript 6 syntax
@@ -68,14 +66,12 @@ All the components are available via CDN and npm.
         import "devextreme/localization/globalize/currency";
         import "devextreme/localization/globalize/message";
 
-        // Dictionaries for German and Russian languages
+        // Dictionaries for German language
         import deMessages from "devextreme/localization/messages/de.json";
-        import ruMessages from "devextreme/localization/messages/ru.json";
         
         // Common and language-specific CLDR JSONs
         import supplemental from "devextreme-cldr-data/supplemental.json";
         import deCldrData from "devextreme-cldr-data/de.json";
-        import ruCldrData from "devextreme-cldr-data/ru.json";
         
         import Globalize from "globalize";
 
@@ -83,10 +79,9 @@ All the components are available via CDN and npm.
         export class AppComponent {
             constructor() {
                 Globalize.load(
-                    supplemental, deCldrData, ruCldrData
+                    supplemental, deCldrData
                 );
                 Globalize.loadMessages(deMessages);
-                Globalize.loadMessages(ruMessages);
                 Globalize.locale(navigator.language);
             }
         }
@@ -95,10 +90,9 @@ All the components are available via CDN and npm.
         export default {
             created() {
                 Globalize.load(
-                    supplemental, deCldrData, ruCldrData
+                    supplemental, deCldrData
                 );
                 Globalize.loadMessages(deMessages);
-                Globalize.loadMessages(ruMessages);
                 Globalize.locale(navigator.language);
             }
         }
@@ -108,10 +102,9 @@ All the components are available via CDN and npm.
             constructor(props) {
                 super(props);
                 Globalize.load(
-                    supplemental, deCldrData, ruCldrData
+                    supplemental, deCldrData
                 );
                 Globalize.loadMessages(deMessages);
-                Globalize.loadMessages(ruMessages);
                 Globalize.locale(navigator.language);
             }
         }
@@ -124,20 +117,17 @@ All the components are available via CDN and npm.
         require('devextreme/localization/globalize/currency');
         require('devextreme/localization/globalize/date');
 
-        // Dictionaries for German and Russian languages
+        // Dictionaries for German language
         const deMessages = require('devextreme/localization/messages/de.json');
-        const ruMessages = require('devextreme/localization/messages/ru.json');
         
         const Globalize = require('globalize');
         Globalize.load(
             // Common and language-specific CLDR JSONs
             require('devextreme-cldr-data/supplemental.json'),
-            require('devextreme-cldr-data/main/de.json'),
-            require('devextreme-cldr-data/main/ru.json')
+            require('devextreme-cldr-data/main/de.json')
         );
 
         Globalize.loadMessages(deMessages);
-        Globalize.loadMessages(ruMessages);
 
         Globalize.locale(navigator.language);
 

@@ -250,9 +250,12 @@ This function allows you to change form item properties dynamically. Within this
                         customizeItem: function(item) {
                             if(item && item.itemType === "group" && item.caption === "Home Address") {
                                 // Get the index of the row being edited; 0 if it is a new row
-                                var index = dataGrid.getRowIndexByKey(rowKey) || 0;
+                                let editRowKey = gridInstance.option('editing.editRowKey');
+                                let index = gridInstance.getRowIndexByKey(editRowKey);
+                                index = index === -1 ? 0 : index;
                                 // Display "Home Address" if "AddressRequired" is true
-                                item.visible = dataGrid.cellValue(index, "AddressRequired");      
+                                let isVisible = gridInstance.cellValue(index, "AddressRequired");
+                                item.visible = isVisible;
                             }
                         }
                     }
@@ -288,9 +291,12 @@ This function allows you to change form item properties dynamically. Within this
             customizeItem = (item) => {
                 if(item && item.itemType === "group" && item.caption === "Home Address") {
                     // Get the index of the row being edited; 0 if it is a new row
-                    let index = this.dataGrid.instance.getRowIndexByKey(rowKey) || 0;
+                    let editRowKey = gridInstance.option('editing.editRowKey');
+                    let index = gridInstance.getRowIndexByKey(editRowKey);
+                    index = index === -1 ? 0 : index;
                     // Display "Home Address" if "AddressRequired" is true
-                    item.visible = this.dataGrid.instance.cellValue(index, "AddressRequired");      
+                    let isVisible = gridInstance.cellValue(index, "AddressRequired");
+                    item.visible = isVisible;
                 }
             }
         }
@@ -317,9 +323,12 @@ This function allows you to change form item properties dynamically. Within this
                 customizeItem(item) {
                     if(item && item.itemType === "group" && item.caption === "Home Address") {
                         // Get the index of the row being edited; 0 if it is a new row
-                        let index = this.dataGrid.getRowIndexByKey(rowKey) || 0;
+                        let editRowKey = gridInstance.option('editing.editRowKey');
+                        let index = gridInstance.getRowIndexByKey(editRowKey);
+                        index = index === -1 ? 0 : index;
                         // Display "Home Address" if "AddressRequired" is true
-                        item.visible = this.dataGrid.cellValue(index, "AddressRequired");      
+                        let isVisible = gridInstance.cellValue(index, "AddressRequired");
+                        item.visible = isVisible;
                     }
                 }
             },
@@ -358,9 +367,12 @@ This function allows you to change form item properties dynamically. Within this
             customizeItem = (item) => {
                 if(item && item.itemType === "group" && item.caption === "Home Address") {
                     // Get the index of the row being edited; 0 if it is a new row
-                    let index = this.dataGrid.getRowIndexByKey(rowKey) || 0;
+                    let editRowKey = gridInstance.option('editing.editRowKey');
+                    let index = gridInstance.getRowIndexByKey(editRowKey);
+                    index = index === -1 ? 0 : index;
                     // Display "Home Address" if "AddressRequired" is true
-                    item.visible = this.dataGrid.cellValue(index, "AddressRequired");      
+                    let isVisible = gridInstance.cellValue(index, "AddressRequired");
+                    item.visible = isVisible;
                 }
             }
         }
@@ -384,11 +396,13 @@ This function allows you to change form item properties dynamically. Within this
             // ...
             function customizeItem(item) {
                 if(item && item.itemType === "group" && item.caption === "Home Address") {
-                    var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
                     // Get the index of the row being edited; 0 if it is a new row
-                    let index = dataGrid.getRowIndexByKey(rowKey) || 0;
+                    let editRowKey = gridInstance.option('editing.editRowKey');
+                    let index = gridInstance.getRowIndexByKey(editRowKey);
+                    index = index === -1 ? 0 : index;
                     // Display "Home Address" if "AddressRequired" is true
-                    item.visible = dataGrid.cellValue(index, "AddressRequired");      
+                    let isVisible = gridInstance.cellValue(index, "AddressRequired");
+                    item.visible = isVisible;
                 }
             }
         </script>

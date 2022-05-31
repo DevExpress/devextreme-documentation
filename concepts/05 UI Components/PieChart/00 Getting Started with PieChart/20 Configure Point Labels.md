@@ -1,4 +1,4 @@
-Each series point can be accompanied with a label that displays the point's value or custom data.
+You can accompany each series point with a label that displays the point's value or custom data.
 
 To make point labels visible, assign **true** to the [series](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/).[label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[visible](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#visible) property. With this configuration, the component displays point labels detached from their respective series points. To make the connection between labels and points visible, set the [label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[connector](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/connector/).[visible](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/connector/#visible) property to **true**.
 

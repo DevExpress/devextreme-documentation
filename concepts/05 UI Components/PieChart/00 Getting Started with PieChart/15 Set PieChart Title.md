@@ -53,3 +53,6 @@ Use the [title](/Documentation/ApiReference/UI_Components/dxPieChart/Configurati
     export default App;
 
 --- 
+
+#####See Also#####
+- [Title and Subtitle](/Documentation/Guide/UI_Components/PieChart/Title_and_Subtitle/)

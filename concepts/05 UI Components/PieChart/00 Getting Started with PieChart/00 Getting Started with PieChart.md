@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The PieChart UI component visualizes data as a circle divided into sectors that each represents a portion of the whole.
+The PieChart UI component visualizes data as a circle divided into portions (slices) to illustrate data proportions.
 
 This tutorial shows how to add a PieChart to the page and configure the component's core settings. As a result, you will create the following UI component:
 

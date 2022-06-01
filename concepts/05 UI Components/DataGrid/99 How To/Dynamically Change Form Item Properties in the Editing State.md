@@ -6,7 +6,7 @@ This function allows you to change form item properties dynamically. Within this
     In the following code, the `"AddressRequired"` value affects the `"Home Address"` item's visibility:
     
     ---
-    #####jQuery
+    ##### jQuery
 
         <!--JavaScript-->
         $(function() {

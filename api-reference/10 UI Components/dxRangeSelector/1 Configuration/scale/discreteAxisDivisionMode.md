@@ -6,7 +6,7 @@ default: 'betweenLabels'
 ---
 ---
 ##### shortDescription
-Specifies whether ticks and grid lines should cross the labels or lie between them. Applies only if the scale's [type](Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#type) is *"discrete"*.
+Specifies whether ticks and grid lines should cross the labels or lie between them. Applies only if the scale's [type](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/type.md 'Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#type') is *"discrete"*.
 
 ---
 

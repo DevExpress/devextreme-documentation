@@ -1,7 +1,7 @@
 The following instructions explain how to dynamically change a form item's properties based on another form editor's value:
 
 1. **Specify the [form.customizeItem](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem') callback function**       
-This function allows you to change form item properties dynamically. Within this function, [get the index of the row being edited](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item properties.
+This function allows you to change form item properties dynamically. Within this function, [get the index of the row that a user edits](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item properties.
 
     In the following code, the `"AddressRequired"` value affects the `"Home Address"` item's visibility:
     
@@ -12,10 +12,25 @@ This function allows you to change form item properties dynamically. Within this
         $(function() {
             var dataGrid = $("#dataGridСontainer").dxDataGrid({ 
                 // ...
+                columns: [
+                    "State",
+                    { dataField: "Address", visible: false },
+                    { dataField: "AddressRequired", visible: false }
+                ],
                 editing: {
-                    // ...
+                    mode: "form",
+                    allowUpdating: true,
+                    allowAdding: true,
                     form: {
-                        // ...               
+                        items: [
+                            // ...
+                            "AddressRequired",
+                            { 
+                                itemType: "group", 
+                                caption: "Home Address",
+                                items: ["State", "Address"] 
+                            }
+                        ]               
                         customizeItem: function(item) {
                             if(item && item.itemType === "group" && item.caption === "Home Address") {
                                 // Get the index of the row being edited; 0 if it is a new row
@@ -37,9 +52,17 @@ This function allows you to change form item properties dynamically. Within this
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
             <!-- ... -->
-            <dxo-editing ... >
+            <dxi-column dataField="State"></dxi-column>
+            <dxi-column dataField="Address" [visible]="false"></dxi-column>
+            <dxi-column dataField="AddressRequired" [visible]="false"></dxi-column>   
+            <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true">
                <dxo-form [customizeItem]="customizeItem">
                     <!-- ... -->
+                    <dxi-item dataField="AddressRequired"></dxi-item>
+                    <dxi-item itemType="group" caption="Home Address">
+                        <dxi-item dataField="State"></dxi-item>
+                        <dxi-item dataField="Address"></dxi-item>
+                    </dxi-item>
                </dxo-form>
             </dxo-editing>            
         </dx-data-grid>
@@ -69,6 +92,26 @@ This function allows you to change form item properties dynamically. Within this
                 }
             }
         }
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+
+        import { DxDataGridModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
  
     ##### Vue
 
@@ -76,18 +119,48 @@ This function allows you to change form item properties dynamically. Within this
         <template>
             <DxDataGrid :ref="gridRefName" ... >
                 <!-- ... -->
-                <DxEditing ... >
+                <DxColumn data-field="State" />       
+                <DxColumn data-field="AddressRequired" :visible="false" />
+                <DxColumn data-field="Address" :visible="false" />
+                <DxEditing :allow-updating="true" :allow-adding="true" mode="form">
                     <DxForm :customize-item="customizeItem">
                         <!-- ... -->
-                    </DxForm>
-                </DxEditing>    
+                        <DxSimpleItem data-field="AddressRequired" />
+                        <DxGroupItem caption="Home Address">
+                            <DxSimpleItem data-field="State" />
+                            <DxSimpleItem data-field="Address" />
+                        <DxGroupItem>
+                    </DxForm>    
+                </DxEditing>
             </DxDataGrid>
         </template>
 
         <script>
-        // ...
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxDataGrid, { 
+            DxColumn,
+            DxEditing,
+            DxForm,
+            DxSimpleItem,
+            DxGroupItem
+        } from "devextreme-vue/data-grid";
+
         export default {
-            // ...
+            components: {              
+                DxDataGrid,
+                DxColumn,  
+                DxEditing,
+                DxForm,
+                DxSimpleItem,
+                DxGroupItem
+            },
+            data() {
+                return {
+                    // ...
+                    rowKey: -1           
+                }
+            },
             methods: {
                 customizeItem(item) {
                     if(item && item.itemType === "group" && item.caption === "Home Address") {
@@ -112,7 +185,18 @@ This function allows you to change form item properties dynamically. Within this
     ##### React
 
         <!--tab: App.js-->
-        // ...
+        import React from 'react';
+
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DataGrid, { 
+            Column,
+            Editing,
+            Form,
+            SimpleItem,
+            GroupItem
+        } from 'devextreme-react/data-grid';
+
         class App extends React.Component {         
             constructor(props) {
                 super(props);
@@ -125,11 +209,19 @@ This function allows you to change form item properties dynamically. Within this
                 return (
                     <DataGrid ref={this.dataGridRef} ... >
                         {/* ... */}
-                        <Editing ... >           
+                        <Column dataField="State" /> 
+                        <Column dataField="Address" visible={false} />
+                        <Column dataField="AddressRequired" visible={false} />
+                        <Editing allowUpdating={true} allowAdding={true} mode="form">
                             <Form customizeItem={this.customizeItem}>
                                 {/* ... */}
-                            </Form>
-                        </Editing>
+                                <SimpleItem dataField="AddressRequired" />
+                                <GroupItem caption="Home Address">
+                                    <SimpleItem dataField="StateID" />
+                                    <SimpleItem dataField="Address" />
+                                </GroupItem>
+                            </Form>         
+                        </Editing>   
                     </DataGrid>
                 );
             }
@@ -147,20 +239,35 @@ This function allows you to change form item properties dynamically. Within this
         }
         export default App;
 
-    ##### ASP.NET MVC Controls
-    
+    ##### ASP.NET Core Controls
+
         <!--Razor C#-->
         @(Html.DevExtreme().DataGrid()
-            .ID("dataGridContainer")
             // ...
-            .Editing(e => e
+            .ID("dataGridContainer")
+            .Columns(columns => {
                 // ...
-                .Form(f => f
-                    // ...
+                columns.Add().DataField("State");                   
+                columns.Add().DataField("AddressRequired").Visible(false);
+                columns.Add().DataField("Address").Visible(false);
+            })
+            .Editing(e => e.Mode(GridEditMode.Form)
+                .AllowUpdating(true)
+                .AllowAdding(true)
+                .Form(f => f.Items(items => {
+                    // ... 
+                    items.AddSimple().DataField("AddressRequired");
+                    items.AddGroup()
+                        .Caption("Home Address")
+                        .Items(groupItems => {
+                            groupItems.AddSimple().DataField("State");
+                            groupItems.AddSimple().DataField("Address");
+                        });
                     .CustomizeItem("customizeItem")
                 }))
             )
         )
+
         <script type="text/javascript">
             // ...
             function customizeItem(item) {
@@ -270,7 +377,7 @@ Specify **setCellValue** for those columns whose editors affect other form items
         }
         export default App;
 
-    ##### ASP.NET MVC Controls
+    ##### ASP.NET Core Controls
     
         <!--Razor C#-->
         @(Html.DevExtreme().DataGrid()

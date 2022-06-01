@@ -153,7 +153,7 @@ You can display Accordion data from [dataSource](/api-reference/10%20UI%20Compon
 
     export default {
         components: {
-            DxLookup
+            DxAccordion
         },
         data() {
             return {

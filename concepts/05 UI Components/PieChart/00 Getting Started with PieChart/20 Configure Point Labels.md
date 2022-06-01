@@ -2,9 +2,9 @@ You can accompany each series point with a label that displays the point's value
 
 To make point labels visible, assign **true** to the [series](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/).[label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[visible](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#visible) property. With this configuration, the component displays point labels detached from their respective series points. To make the connection between labels and points visible, set the [label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[connector](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/connector/).[visible](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/connector/#visible) property to **true**.
 
-The component displays labels besides the points. Change the [label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[position](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#position) property to rearrange labels in columns or place them inside series points.
+The component displays labels next to points. Change the [label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[position](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#position) property to rearrange labels in columns or place them inside series points.
 
-If you need to change the point labels text, declare the [label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[customizeText](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#customizeText) function. It must return a string value.
+If you need to change the point's label text, declare the [label](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/).[customizeText](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#customizeText) function. It must return a string value.
 
 ---
 ##### jQuery

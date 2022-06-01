@@ -1,10 +1,13 @@
-The Chart component calculates its size, depending on the following:
+The Chart component's size depends on the following priority:
 
-1. If you specify the **size** object, the Chart changes its dimensions depending on this object.
+1. You specify the **size** object.    
+The Chart changes its dimensions depending on this object.
 
-2. If you do not specify the **size** object, the Chart occupies the container area.
+2. You do not specify the **size** object.   
+The Chart occupies the container area.
 
-3. If you do not set the container, the Chart's size is `width: 400px; height: 400px`.
+3. You do not specify neither the **size** object nor the container.   
+The Chart's size is `width: 400px; height: 400px`.
 
 Assign 0 to **size** object's **height** and **width** properties to hide the Chart component.
 
@@ -116,7 +119,7 @@ Assign 0 to **size** object's **height** and **width** properties to hide the Ch
 
 ---
 
-Alternatively, you can style the UI component's container using CSS:
+Alternatively, you can use CSS to style the UI component's container:
 
 ---
 ##### jQuery

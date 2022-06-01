@@ -1,4 +1,4 @@
-A user can select existing values and add new values to the TagBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#acceptCustomValue') property. Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
+A user can select existing values and add new values to the TagBox. To enable this feature, assign **true** to the [acceptCustomValue](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#acceptCustomValue) property. Note that you need to implement the [onCustomItemCreating](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onCustomItemCreating) handler to create a new data source entry.
 
 ---
 ##### jQuery
@@ -23,7 +23,7 @@ A user can select existing values and add new values to the TagBox. To enable th
         onCustomItemCreating: function(e){
             // Generates a new 'id'
             let nextId;
-            selectBoxData.store().totalCount().done(count => {nextId = count + 1});
+            tagBoxData.store().totalCount().done(count => {nextId = count + 1});
             // Creates a new entry
             e.customItem = { id: nextId, firstName: e.text };
             // Adds the entry to the data source
@@ -59,7 +59,7 @@ A user can select existing values and add new values to the TagBox. To enable th
         onCustomItemCreating (e) {
             // Generates a new 'id'
             let nextId;
-            selectBoxData.store().totalCount().done(count => {nextId = count + 1});
+            tagBoxData.store().totalCount().done(count => {nextId = count + 1});
             // Creates a new entry
             e.customItem = { id: nextId, firstName: e.text };
             // Adds the entry to the data source
@@ -113,7 +113,7 @@ A user can select existing values and add new values to the TagBox. To enable th
             onCustomItemCreating(e) {
                 // Generates a new 'id'
                 let nextId;
-                selectBoxData.store().totalCount().done(count => {nextId = count + 1});
+                tagBoxData.store().totalCount().done(count => {nextId = count + 1});
                 // Creates a new entry
                 e.customItem = {
                     id: nextId,
@@ -154,7 +154,7 @@ A user can select existing values and add new values to the TagBox. To enable th
         onCustomItemCreating(e) {
             // Generates a new 'id'
             let nextId;
-            selectBoxData.store().totalCount().done(count => {nextId = count + 1});
+            tagBoxData.store().totalCount().done(count => {nextId = count + 1});
             // Creates a new entry
             e.customItem = {
                 id: nextId,

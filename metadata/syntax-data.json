@@ -9505,6 +9505,9 @@
     "dxSchedulerOptions.onAppointmentRendered": {
       "vue": "@appointment-rendered"
     },
+    "dxSchedulerOptions.onAppointmentTooltipShowing": {
+      "vue": "@appointment-tooltip-showing"
+    },
     "dxSchedulerOptions.onAppointmentUpdated": {
       "vue": "@appointment-updated"
     },

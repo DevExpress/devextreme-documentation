@@ -1,13 +1,12 @@
-The Chart component's size depends on the following priority:
+The Chart's default size is `width: 400px; height: 400px`. You can specify custom width and height for the component:
 
-1. You specify the **size** object.    
-The Chart changes its dimensions depending on this object.
+- fixed    
+Assign values to to **size** object's **height** and **width** properties.
 
-2. You do not specify the **size** object.   
-The Chart occupies the container area.
+- relative    
+Specify a container for the component. The Chart occupies the container area.
 
-3. You do not specify neither the **size** object nor the container.   
-The Chart's size is `width: 400px; height: 400px`.
+[note] The **size** object has a priority over the container.
 
 Assign 0 to **size** object's **height** and **width** properties to hide the Chart component.
 

@@ -8,7 +8,7 @@ The following UI components are SVG-based:
 - [CircularGauge](/concepts/05%20UI%20Components/CircularGauge/10%20Visual%20Elements '/Documentation/Guide/UI_Components/CircularGauge/Visual_Elements/')
 - [Funnel](/concepts/05%20UI%20Components/Funnel/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Overview/')
 - [LinearGauge](/concepts/05%20UI%20Components/LinearGauge/10%20Visual%20Elements '/Documentation/Guide/UI_Components/LinearGauge/Visual_Elements/')
-- [PieChart](/Documentation/Guide/UI_Components/PieChart/Getting_Started_with_PieChart/)
+- [PieChart](/concepts/05%20UI%20Components/PieChart/00%20Getting%20Started%20with%20PieChart '/Documentation/Guide/UI_Components/PieChart/Getting_Started_with_PieChart/')
 - [PolarChart](/concepts/05%20UI%20Components/PolarChart/10%20Visual%20Elements '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/')
 - [RangeSelector](/concepts/05%20UI%20Components/RangeSelector/10%20Visual%20Elements '/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/')
 - [Sankey](/concepts/05%20UI%20Components/Sankey/00%20Overview.md '/Documentation/Guide/UI_Components/Sankey/Overview/')

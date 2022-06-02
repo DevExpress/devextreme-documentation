@@ -5,11 +5,11 @@ The PieChart can visualize data from different sources. Refer to the following d
 - [OData Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ServerSideDataProcessing/)
 - [SignalR Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SignalRService/)
 
-This tutorial uses an array as a PieChart data source. To bind the PieChart to data, pass the array to the PieChart's [dataSource](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource) property.
+This tutorial uses an array as a PieChart data source. To bind the PieChart to data, pass the array to the PieChart's [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource') property.
 
-Once you assign the data source, specify the [series](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/) [type](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#type). The PieChart has two series types: the **Pie** (default) and **Doughnut**. The only difference between them is the **Doughnut** has a blank center. 
+Once you assign the data source, specify the [series](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/') [type](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#type'). The PieChart has two series types: the **Pie** (default) and **Doughnut**. The only difference between them is the **Doughnut** has a blank center. 
 
-To display data, specify the [series](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/) nested options: [argumentField](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#argumentField) and [valueField](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#valueField). This allows the component to determine the corresponding object fields (arguments and values) in the array.
+To display data, specify the [series](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/') nested options: [argumentField](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/argumentField.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#argumentField') and [valueField](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/valueField.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#valueField'). This allows the component to determine the corresponding object fields (arguments and values) in the array.
 
 ---
 ##### jQuery

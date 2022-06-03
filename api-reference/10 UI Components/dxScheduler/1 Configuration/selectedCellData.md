@@ -5,7 +5,7 @@ default: []
 ---
 ---
 ##### shortDescription
-Currently selected cells' data.
+The data of the currently selected cells.
 
 ##### readonly
 

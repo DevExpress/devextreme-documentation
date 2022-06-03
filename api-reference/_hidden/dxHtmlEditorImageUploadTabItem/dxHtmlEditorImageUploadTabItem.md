@@ -3,7 +3,6 @@ id: dxHtmlEditorImageUploadTabItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the tab item in the upload image dialog.
 
 ---
-<!-- Description goes here -->

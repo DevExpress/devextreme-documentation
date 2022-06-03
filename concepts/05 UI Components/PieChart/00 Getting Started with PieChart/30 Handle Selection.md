@@ -1,4 +1,4 @@
-Use the [onPointClick](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#onPointClick) function to implement the selection functionality. Call a point's [isSelected()](/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isSelected) method to check whether a user selected it.
+Use the [onPointClick](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#onPointClick') function to implement the selection functionality. Call a point's [isSelected()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/isSelected().md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Methods/#isSelected') method to check whether a user selected it.
 
 In this tutorial, when a user clicks on a point, the point is selected. When the user clicks on the point again, the component clears the selection.
 

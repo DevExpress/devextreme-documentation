@@ -1,6 +1,6 @@
-To enable tooltips, assign **true** to the [enabled](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#enabled) property of the [tooltip](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/) object. A PieChart tooltip displays information about the point value, but you can display custom content in a tooltip.
+To enable tooltips, assign **true** to the [enabled](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tooltip/enabled.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#enabled') property of the [tooltip](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/') object. A PieChart tooltip displays information about the point value, but you can display custom content in a tooltip.
 
-In this tutorial, the tooltip displays information about the point argument. Use the [tooltip](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/).[contentTemplate](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#contentTemplate) function to assign a custom template for all PieChart tooltips.
+In this tutorial, the tooltip displays information about the point argument. Use the [tooltip](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/').[contentTemplate](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/tooltip/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#contentTemplate') function to assign a custom template for all PieChart tooltips.
 
 ---
 ##### jQuery

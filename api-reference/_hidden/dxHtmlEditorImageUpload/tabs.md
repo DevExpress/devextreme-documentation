@@ -2,6 +2,7 @@
 id: dxHtmlEditorImageUpload.tabs
 acceptValues: 'url' | 'file'
 type: Array<dxHtmlEditorImageUploadTabItem, String>
+inheritsType: dxHtmlEditorImageUploadTabItem
 default: ['url']
 ---
 ---

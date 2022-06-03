@@ -29,6 +29,6 @@ The start and end values.
 <!-- Description goes here -->
 
 ##### field(e.previousValue): any
-<!-- Description goes here -->
+The UI component's previous value.
 
 ---

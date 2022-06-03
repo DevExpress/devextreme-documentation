@@ -23,7 +23,7 @@ default: null
 <!-- Description goes here -->
 
 ##### field(e.model): any
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ##### field(e.targetElement): DxElement
 <!-- Description goes here -->

@@ -28,3 +28,5 @@ The **dateRange** property accepts the following values:
             startDate: new Date(2020, 0, 1),
             endDate: new Date(2020, 1, 1)
         }
+
+Refer to the [pdfExporter.exportGantt(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions) topic to see an example.

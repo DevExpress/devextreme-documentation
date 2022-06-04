@@ -14,8 +14,8 @@ The HtmlEditor is a client-side WYSIWYG editor that allows its users to format t
 - [HTML and Markdown support](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/10%20Set%20the%20Output%20Markup%20Language.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Set_the_Output_Markup_Language')
 - [Mail Merge](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/variables '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/variables/')
 - [Adaptive toolbar](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/20%20Configure%20the%20Toolbar.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Configure_the_Toolbar') for working with images, links, and color formats
+- Image upload: drag-and-drop images onto the form, select files from the file system, or specify a URL.
 - Copy-paste rich content (the control strips unsupported formats)
-- Embedded images specified as a link to an image file or as base64-encoded binary data
 - [Mentions](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Mentions/) (for example, @person)
 - [Tables](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/30%20Work%20with%20Tables.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Work_with_Tables')
 

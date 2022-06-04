@@ -25,3 +25,5 @@ The **format** property accepts the following formats:
 - Auto (Gantt adjusts document size to the exported data) 
 
         format: 'auto'
+
+Refer to the [pdfExporter.exportGantt(options)](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions) topic to see an example.

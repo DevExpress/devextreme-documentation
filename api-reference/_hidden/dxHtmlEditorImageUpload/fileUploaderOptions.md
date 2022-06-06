@@ -5,11 +5,11 @@ default: null
 ---
 ---
 ##### shortDescription
-Configures the file uploader options. 
+Configures the file uploader options.
 
 ---
 
-See [FileUploader Configuration](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) for properties that you can specify in this object.
+See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/') for properties that you can specify in this object.
 
 ---
 ##### jQuery

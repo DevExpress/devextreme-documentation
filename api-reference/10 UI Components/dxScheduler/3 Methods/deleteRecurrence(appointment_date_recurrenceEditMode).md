@@ -3,16 +3,38 @@ id: dxScheduler.deleteRecurrence(appointment, date, recurrenceEditMode)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Deletes a recurring appointment occurrence.
 
 ##### param(appointmentData): dxSchedulerAppointment
-<!-- Description goes here -->
+The initial appointment.
 
 ##### param(date): Date | String
-<!-- Description goes here -->
+A date for which to delete a recurrence.
 
 ##### param(recurrenceEditMode): 'dialog' | 'occurrence' | 'series'
-<!-- Description goes here -->
+An edit mode for recurring appointments.
 
 ---
-<!-- Description goes here -->
+
+    <!--JavaScript-->
+    $(function() {
+        var appointments = [{
+            text: "Website Re-Design Plan",
+            startDate: new Date(2018, 4, 25, 9, 00),
+            endDate: new Date(2018, 4, 25, 9, 30),
+            recurrenceRule: "FREQ=DAILY;COUNT=10"
+        }, 
+        // ...
+        ];
+
+        var scheduler = $("#schedulerContainer").dxScheduler({
+            dataSource: appointments,
+            // ...
+            onAppointmentClick: function(e) {
+                if (condition){
+                    e.component.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'ocurrence');
+                }
+            }
+        }).dxScheduler("instance");
+    });
+

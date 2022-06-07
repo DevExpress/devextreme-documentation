@@ -9,9 +9,9 @@ The Toolbar can render its items in the overflow menu. Specify the [locateInMenu
 - *"auto"*  
  Places the item outside of the overflow menu. If all items cannot fit within the [width](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width) of the Toolbar, it renders this item in the overflow menu.
 
-Note that you cannot specify the order of the items with `locateinMenu="auto"` placed in the overflow menu.
+Note that you can only specify the order of the items with `locateInMenu="always"` placed in the overflow menu.
 
-The following code specifies `locateinMenu="auto"` to the **About** button and creates an overflow menu with three items. It also specifies the Toolbar [width](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width).
+The following code specifies `locateInMenu="auto"` of the **About** button and creates an overflow menu with three items. It also specifies the Toolbar [width](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width).
 
 ---
 ##### jQuery

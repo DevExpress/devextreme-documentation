@@ -1,8 +1,8 @@
-To customize the appearance of every item, use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate). To customize a specific item, specify the [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) property of the item.
+To customize the content of every item, use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate). To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) property of the item.
 
 Note that Angular and Vue use [custom templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates) instead of the [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) property. In React, specify the [render](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render) property.
 
-In this section of the tutorial, we add a custom item after the **Back** button. 
+The following code adds a custom item after the **Back** button. 
 
 ---
 ##### jQuery

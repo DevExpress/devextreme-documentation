@@ -1,4 +1,4 @@
-Specify the [location](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location) property for each item. The [location](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location) value can be one of the following:
+Specify the [location](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location) property for each item. The following [location](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location) values are available:
 
 - *"center"* (default)  
  Places the item in the center of the toolbar.
@@ -9,7 +9,7 @@ Specify the [location](/Documentation/ApiReference/UI_Components/dxToolbar/Confi
 - *"after"*  
  Places the item after the central element(s).
 
-The following code snippet adds a button before the central elements and a button after. Note that the order of the items is not the same as the order in the code. For example, in the last tutorial section two central items were created. The order of the items in their area is important, the placement of the TextBox before the **Search** button was intentional. Now, to place an item *before* the central elements, you only need to specify `location: 'before'`, not move the code of the item.
+The following code snippet adds a button before the central elements and a button after.
 
 ---
 ##### jQuery

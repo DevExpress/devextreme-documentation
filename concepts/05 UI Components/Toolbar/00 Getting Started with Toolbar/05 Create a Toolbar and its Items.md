@@ -15,9 +15,9 @@ The following list shows all UI components that you can use in the Toolbar:
 - [dxButtonGroup](/Documentation/ApiReference/UI_Components/dxButtonGroup/) 
 - [dxDropDownButton](/Documentation/ApiReference/UI_Components/dxDropDownButton/)
 
-The Toolbar supports [dxButton](/Documentation/ApiReference/UI_Components/dxButton/). For all the other UI components, do not forget to import modules in Angular, Vue and React.
+In Angular, Vue, and React, import modules for all the components except the [dxButton](/Documentation/ApiReference/UI_Components/dxButton/).
 
-The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) and a [dxButton](/Documentation/ApiReference/UI_Components/dxButton/) that notifies users on click. The Toolbar displays the items in the center.
+The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) and a [dxButton](/Documentation/ApiReference/UI_Components/dxButton/). The button notifies users on click. The Toolbar displays these items in the center.
 
 ---
 ##### jQuery

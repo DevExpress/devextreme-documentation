@@ -8,7 +8,7 @@ default: undefined
 Specifies the label's text.
 
 ---
-This property is ignored if labels are [hidden](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/label/#visible'). 
+This property is ignored if labels are [hidden](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label/visible.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/label/#visible''). 
 
 Use the parameters of the **label.customizeLabel** function as placeholders in the **displayFormat** property value.
 

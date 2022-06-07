@@ -1,6 +1,6 @@
 To create a Toolbar, declare the component in the markup and add at least one item.
 
-You can display Toolbar items from an [items](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/) array or a [dataSource](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#dataSource). A Toolbar item may be plain text or a UI component. You should specify the [text](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text) or the [widget](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget) property depending on the item. If the item is a UI component, declare its [options](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options).
+You can display Toolbar items from the [items](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/) array or a [dataSource](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#dataSource). A Toolbar item may be plain text ([text](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text)) or a UI component ([widget](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget)). If the item is a UI component, declare its [options](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options).
 
 The following list shows all UI components that you can use in the Toolbar:
 

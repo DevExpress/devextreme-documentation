@@ -13,7 +13,7 @@ The Toolbar is divided into four sections: left area, central area, right area, 
 - The central area   
 [Create a Toolbar and its Items](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_a_Toolbar_and_its_Items)
 
-- The left and right area   
+- The left and right areas   
 [Specify Item Location](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Specify_Item_Location)
 
 - The overflow menu   

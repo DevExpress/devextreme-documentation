@@ -8,7 +8,7 @@ This tutorial shows how to add the Toolbar component to your application and con
 
 Each section in this tutorial describes a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-devextreme-toolbar" target="_blank">getting-started-with-toolbar</a>.
 
-The Toolbar is divided into four sections: left area, central area, right area, and overflow menu. Use the following navigation list to learn how to add items into:
+The Toolbar consists of four sections: left area, central area, right area, and overflow menu. Follow the list below to learn how to add items to the Toolbar:
 
 - The central area   
 [Create a Toolbar and its Items](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_a_Toolbar_and_its_Items)

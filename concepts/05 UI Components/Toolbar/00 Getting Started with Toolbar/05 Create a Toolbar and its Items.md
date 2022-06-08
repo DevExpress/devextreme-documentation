@@ -27,7 +27,7 @@ The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiRe
         function showMessage(name) {
             DevExpress.ui.notify(
                 {
-                    message: name + ' button has been clicked!',
+                    message: `${name} button has been clicked!`,
                     width: 300
                 },
                 'info',
@@ -116,7 +116,7 @@ The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiRe
     function showMessage(name: string) {
         notify(
             {
-                message: name + ' button has been clicked!',
+                message: `${name} button has been clicked!`,
                 width: 300
             },
             'info',
@@ -169,7 +169,6 @@ The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiRe
     import notify from "devextreme/ui/notify";
     import 'devextreme/ui/text_box';
 
-
     export default {
         components: {
             DxToolbar
@@ -193,7 +192,7 @@ The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiRe
             showMessage(name) {
                 notify(
                     {
-                        message: name + ' button has been clicked!',
+                        message: `${name} button has been clicked!`,
                         width: 300
                     },
                     'info',
@@ -217,7 +216,7 @@ The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiRe
     const showMessage = (name) => {
         notify(
             {
-                message: name + ' button has been clicked!',
+                message: `${name} button has been clicked!`,
                 width: 300
             },
             'info',

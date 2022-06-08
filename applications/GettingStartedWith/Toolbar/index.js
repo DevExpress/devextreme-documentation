@@ -2,7 +2,7 @@ $(() => {
     function showMessage(name) {
         DevExpress.ui.notify(
             {
-                message: name + ' button has been clicked!',
+                message: `${name} button has been clicked!`,
                 width: 300,
                 position: {
                     my: 'bottom',
@@ -93,5 +93,4 @@ $(() => {
             }
         ]
     });
-
 });

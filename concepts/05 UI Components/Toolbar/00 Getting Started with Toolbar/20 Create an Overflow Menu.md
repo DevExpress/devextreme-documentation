@@ -11,6 +11,8 @@ The Toolbar can render its items in the overflow menu. Specify the [locateInMenu
 
 Note that you can only specify the order of the items with `locateInMenu="always"` placed in the overflow menu.
 
+The previous section of the tutorial describes how to customize Toolbar items. If you use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate) to customize items in the Toolbar with `locateInMenu="auto"` and you want to keep the customization if the items get into the overflow menu, specify the [menuItemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#menuItemTemplate). You can also use this property to customize the overflow menu item appearance.
+
 The following code specifies `locateInMenu="auto"` of the **About** button and creates an overflow menu with three items. It also specifies the Toolbar [width](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width).
 
 ---

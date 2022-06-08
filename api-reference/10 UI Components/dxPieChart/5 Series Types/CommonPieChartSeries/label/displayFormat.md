@@ -8,7 +8,7 @@ default: undefined
 Specifies the label's text.
 
 ---
-This property is ignored if labels are [hidden](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#visible'). 
+This property is ignored if labels are [hidden](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label/visible.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/label/#visible''). 
 
 Use the parameters of the **label.customizeLabel** function as placeholders in the **displayFormat** property value.
 

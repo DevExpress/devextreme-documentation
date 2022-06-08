@@ -238,8 +238,8 @@ You can also customize an individual label. For this purpose, assign a function 
 
 You can also use the following properties to customize label texts:
 
-- [commonSeriesSettings.label.displayFormat](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#displayFormat) - for all labels.
-- [series.label.displayFormat](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#displayFormat) - for indifidual label.
+- [commonSeriesSettings.label.displayFormat](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/displayFormat.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#displayFormat') - for all labels.
+- [series.label.displayFormat](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/label/displayFormat.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/label/#displayFormat') - for indifidual label.
 
 ![DevExtreme Charts - Format label text](/images/ChartJS/label-display-format.png)
 

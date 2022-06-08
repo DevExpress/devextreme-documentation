@@ -21,7 +21,7 @@ This array contains objects with the following structure:
         }     
     }
 
-You can implement the [onOptionChanged](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onOptionChanged) function to track all user actions that change selection. The following code logs the **selectedCellData** value in the browser console.
+You can implement the [onOptionChanged](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/onOptionChanged.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onOptionChanged') function to track all user actions that change selection. The following code logs the **selectedCellData** value in the browser console.
 
 
     <!--JavaScript-->const onOptionChanged = ({ name, value }) => {

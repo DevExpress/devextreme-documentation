@@ -1,4 +1,4 @@
-1. Check that <a href="http://webpack.github.io/docs/" target="_blank">Webpack</a> is installed globally. If not, execute the following command:
+1. Install <a href="http://webpack.github.io/docs/" target="_blank">Webpack</a> globally.
 
         npm install webpack -g
 
@@ -31,14 +31,14 @@
 1. Create your application's entry script and specify modules in it.
 
         <!--JavaScript-->
-        var dialog = require('devextreme/ui/button');
+        import "devextreme/ui/button";
         ...
 
 1. Create the bundle.
 
         webpack
 
-See examples of using Webpack with <a href="https://github.com/DevExpress/devextreme-examples/tree/21_2/webpack-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/21_2/webpack-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/21_2/webpack-knockout" target="_blank">Knockout</a> on GitHub. The **webpack.config.js**, **index.js**, and **index.html** files contain the main code. 
+Refer to the following examples to see how to use Webpack with <a href="https://github.com/DevExpress/devextreme-examples/tree/21_2/webpack-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/21_2/webpack-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/21_2/webpack-knockout" target="_blank">Knockout</a> on GitHub. The **webpack.config.js**, **index.js**, and **index.html** files contain the main code. 
 
 The following list shows additional modules each library/framework requires: 
 

@@ -1,4 +1,4 @@
-The Toolbar can render its items in the overflow menu. Specify the [locateInMenu](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu) property for each item with one of the following values:
+The Toolbar can render its items in the overflow menu. Specify the [locateInMenu](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu) property for an item. Use one of the following values:
 
 - *"always"*  
  Always places the item in the overflow menu.

@@ -1,4 +1,4 @@
-To customize the content of every item, use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate). To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) property of the item.
+To apply the same customization to all items, use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate). To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) property of the item.
 
 Note that Angular and Vue use [custom templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates) instead of the [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) property. In React, specify the [render](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render) property.
 

@@ -1,4 +1,4 @@
-1. Check that you installed <a href="http://webpack.github.io/docs/" target="_blank">Webpack</a> globally. If not, execute the following command:
+1. Install <a href="http://webpack.github.io/docs/" target="_blank">Webpack</a> globally.
 
         npm install webpack -g
 

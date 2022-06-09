@@ -31,7 +31,7 @@
 1. Create your application's entry script and specify modules in it.
 
         <!--JavaScript-->
-        import devextreme/ui/button;
+        import "devextreme/ui/button";
         ...
 
 1. Create the bundle.

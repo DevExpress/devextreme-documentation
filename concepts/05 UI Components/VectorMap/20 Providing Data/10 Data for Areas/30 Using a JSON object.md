@@ -1,4 +1,4 @@
-If you have your data as a JSON object, assign its <a href="http://en.wikipedia.org/wiki/Uniform_resource_identifier" target="_blank">URI</a> to the [layers](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/).[dataSource](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource) property.
+If your data source is a JSON object, assign its <a href="http://en.wikipedia.org/wiki/Uniform_resource_identifier" target="_blank">URI</a> to the [layers](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/).[dataSource](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource) property.
 
 	<!--JavaScript-->var vectorMapCfg = {
         // ...

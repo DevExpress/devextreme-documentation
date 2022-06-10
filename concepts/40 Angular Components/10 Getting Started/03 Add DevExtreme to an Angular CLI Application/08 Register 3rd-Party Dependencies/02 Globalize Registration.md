@@ -2,9 +2,9 @@ If you want to use <a href="https://github.com/globalizejs/globalize#globalize" 
 
     npm install --save-dev devextreme-cldr-data globalize
 
-Then, register the Globalize and CLDR scripts in the `tsconfig.json` file...
+Then, register the Globalize and CLDR scripts in the TypeScript configuration file...
 
-    <!-- tab: tsconfig.json -->
+    <!-- tab: tsconfig.app.json -->
     {
       ...
       "compilerOptions": {

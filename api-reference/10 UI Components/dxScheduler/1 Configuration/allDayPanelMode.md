@@ -17,7 +17,7 @@ Specifies a display mode for the **All day** panel.
 
 To hide the **All day** panel, set this property to `hidden`. 
 
-When you set this property to `allDay`, the **All day** panel displays only the appointments that have the [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) property set to **true**.
+If you set the `allDayPanelMode` property to `allDay`, the **All day** panel displays only the appointments whose [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) property is set to `true`.
 
 To additionally display the appointments that have the length equal to or more than 24 hours, assign `all` to this property.
 

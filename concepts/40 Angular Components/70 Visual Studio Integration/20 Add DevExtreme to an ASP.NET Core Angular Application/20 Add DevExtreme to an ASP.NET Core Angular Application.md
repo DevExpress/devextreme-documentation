@@ -2,7 +2,7 @@ This article describes how to create an ASP.NET Core Angular application and add
 
 [note] Earlier Visual Studio and .NET Core SDK versions are supported by DevExtreme v17.2. You can find instructions in [this article](/Documentation/17_2/Guide/VS_Integration/Add_DevExtreme_to_an_ASP.NET_Core_Angular_Application/).
 
-1. Open Visual Studio 2017 and use the ASP.NET Core Web Application template to create a new ASP.NET Core Angular application.
+1. Open Visual Studio and use the ASP.NET Core Web Application template to create a new ASP.NET Core Angular application.
 
 1. Open the `ClientApp/package.json` file and add the `devextreme` and `devextreme-angular` packages to the `dependencies` section:
 
@@ -16,7 +16,7 @@ This article describes how to create an ASP.NET Core Angular application and add
           }
         }
         
-    Save the changes, rebuild the application, and wait until Visual Studio downloaded the dependencies.
+    Save the changes, rebuild the application, and wait until Visual Studio downloads the dependencies.
 
 1. Reference a [predefined theme stylesheet](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (`dx.light.css` in the code below).
 

@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Occures before showing an appointment's tooltip.
+Occurs before showing an appointment's tooltip.
 
 ##### param(e): Object
 Information about the event.
@@ -14,7 +14,7 @@ Information about the event.
 An array of appointments. 
 
 ##### field(e.cancel): Boolean
-Allows you to prevent a tooltip showing.
+Allows you to prevent a tooltip from showing.
 
 ##### field(e.component): dxScheduler
 The UI component's instance.

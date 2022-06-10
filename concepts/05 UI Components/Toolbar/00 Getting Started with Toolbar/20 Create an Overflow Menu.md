@@ -1,13 +1,13 @@
 The Toolbar can render its items in the overflow menu. Specify the [locateInMenu](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu) property for an item. Use one of the following values:
 
 - *"always"*  
- Always places the item in the overflow menu. You can specify the order of such items in the overflow menu.
+ Always places the item in the overflow menu. You can specify the order of items in the overflow menu.
 
 - *"never"* (default)  
  Places the item outside of the overflow menu.
 
 - *"auto"*  
- Places the item outside of the overflow menu. If all items cannot fit within the [width](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width) of the Toolbar, it renders this item in the overflow menu. The Toolbar component determines the order of such items in the overflow menu automatically.
+ Places the item outside of the overflow menu. If all items cannot fit within the [width](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width) of the Toolbar, it renders this item in the overflow menu. The Toolbar component determines the order of items in the overflow menu automatically.
 
 If you want to customize an item in the overflow menu, specify [menuItemTemplate](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#menuItemTemplate).
 

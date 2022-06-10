@@ -1,6 +1,6 @@
 To create a Toolbar, declare the component in the markup and add at least one item.
 
-You can use the [items](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/) array or specify a [dataSource](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#dataSource) to populate a Toolbar with items. A Toolbar item may display plain text ([text](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text)) or a UI component ([widget](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget)). If the item is a UI component, declare its [options](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options).
+You can use the [items](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/) array or specify a [dataSource](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#dataSource) to populate a Toolbar with items. A Toolbar item can display plain text ([text](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text)) or a UI component ([widget](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget)). If the item is a UI component, declare its [options](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options).
 
 The following list shows all UI components that you can use in the Toolbar:
 
@@ -17,7 +17,7 @@ The following list shows all UI components that you can use in the Toolbar:
 
 In Angular, Vue, and React, import modules for all the components except the [dxButton](/Documentation/ApiReference/UI_Components/dxButton/).
 
-The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) and a [dxButton](/Documentation/ApiReference/UI_Components/dxButton/). The button responds to user clicks. The Toolbar displays these items in the center.
+The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) and [dxButton](/Documentation/ApiReference/UI_Components/dxButton/). The button responds to user clicks. The Toolbar displays these items in the center.
 
 ---
 ##### jQuery

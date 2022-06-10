@@ -26,6 +26,6 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ##### field(e.targetElement): DxElement
-An element to which target the appointment.
+The target element of the tooltip.
 
 ---

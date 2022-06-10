@@ -6,7 +6,7 @@ default: 'allDay'
 ---
 ---
 ##### shortDescription
-Specifies a display mode for the **All day** panel.
+Specifies the display mode for the **All day** panel.
 
 ---
 #include common-demobutton with {
@@ -19,7 +19,7 @@ To hide the **All day** panel, set this property to `hidden`.
 
 If you set the `allDayPanelMode` property to `allDay`, the **All day** panel displays only the appointments whose [allDay](/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#allDay) property is set to `true`.
 
-To additionally display the appointments that have the length equal to or more than 24 hours, assign `all` to this property.
+To also display appointments that have a duration equal to or more than 24 hours, assign `all` to this property.
 
 ---
 ##### jQuery

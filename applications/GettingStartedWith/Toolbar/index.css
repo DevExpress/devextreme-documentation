@@ -1,0 +1,14 @@
+#container {
+    width: 500px;
+    height: 180px;
+    margin-bottom: 5px;
+}
+
+#back {
+    margin-left: 5px;
+}
+
+#greeting {
+    text-align: center;
+    margin: 7px;
+}

@@ -5,7 +5,7 @@ default: 'Files'
 ---
 ---
 ##### shortDescription
-Specifies the root directory name.
+Specifies the root directory display name.
 
 ---
 
@@ -17,7 +17,7 @@ Specifies the root directory name.
     <!--JavaScript-->
     $(function () {
         $("#file-manager").dxFileManager({
-            rootFolderName: "~/Files"
+            rootFolderName: "Custom Root Folder"
             // ...
         });
     });
@@ -25,9 +25,11 @@ Specifies the root directory name.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-file-manager id="fileManager"
-        [rootFolderName]="~/Files">
-        <!-- ... -->
+    <dx-file-manager 
+        id="fileManager"
+        rootFolderName="Custom Root Folder"
+    >
+    <!-- ... -->
     </dx-file-manager>
 
     <!-- tab: app.module.ts -->
@@ -53,9 +55,11 @@ Specifies the root directory name.
     <!-- tab: App.vue -->
     <template>
         <DxFileManager
-            :root-folder-name="~/Files" >   
+            root-folder-name="Custom Root Folder"
+        >   
         </DxFileManager>
     </template>
+
     <script>
         import 'devextreme/dist/css/dx.light.css';    
         
@@ -87,7 +91,9 @@ Specifies the root directory name.
     class App extends React.Component {
         render() {
             return (
-                <FileManager rootFolderName="~/Files" >
+                <FileManager 
+                    rootFolderName="Custom Root Folder" 
+                >
                 </FileManager>
             );
         }
@@ -98,7 +104,7 @@ Specifies the root directory name.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .RootFolderName("~/Files")
+        .RootFolderName("Custom Root Folder")
         // ...
     )
 
@@ -106,7 +112,7 @@ Specifies the root directory name.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .RootFolderName("~/Files")
+        .RootFolderName("Custom Root Folder")
         // ...
     )
 

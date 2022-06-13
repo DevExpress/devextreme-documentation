@@ -1,4 +1,4 @@
-To return to customization later, save the theme's metadata beforehand. Click **Export** on the toolbar to open the **Theme Export** popup dialog. In this dialog, enter the color scheme name.
+To return to customization later, save the theme's metadata in advance. Click **Export** on the toolbar to open the **Theme Export** popup dialog. In this dialog, enter the color scheme name.
 
 ![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Enter Name](/images/Common/ThemeBuilder/themebuilder-themeexport-name.png)
 

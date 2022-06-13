@@ -29,7 +29,7 @@ You can generate color swatches with the DevExtreme CLI or ThemeBuilder UI:
 
 * **[ThemeBuilder UI](/concepts/60%20Themes%20and%20Styles/08%20ThemeBuilder '/Documentation/Guide/Themes_and_Styles/ThemeBuilder/')**       
 
-    Click **Export** on the toolbar to open the **Theme Export** popup dialog. Enter the color swatch's name, check the **Save as a color swatch** checkbox, and proceed to the last step.
+    Click **Export** on the toolbar to open the **Theme Export** pop-up dialog. Enter the color swatch's name, check the **Save as a color swatch** checkbox, and proceed to the last step.
 
     ![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Enter Name](/images/Common/ThemeBuilder/themebuilder-themeexport-name.png)
 

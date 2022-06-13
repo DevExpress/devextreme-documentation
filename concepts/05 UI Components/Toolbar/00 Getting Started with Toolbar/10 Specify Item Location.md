@@ -1,4 +1,4 @@
-Specify the [location](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location) property for each item. The following [location](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location) values are available:
+Specify the [location](/api-reference/_hidden/dxToolbarItem/location.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location') property for each item. The following [location](/api-reference/_hidden/dxToolbarItem/location.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location') values are available:
 
 - *"center"* (default)  
  Places the item in the center of the toolbar.

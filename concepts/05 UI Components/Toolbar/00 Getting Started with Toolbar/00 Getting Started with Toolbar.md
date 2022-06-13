@@ -9,15 +9,15 @@ Each section in this tutorial describes a single configuration step. You can als
 You can add items to the Toolbar in four areas: left area, central area, right area, and overflow menu. Templates help you customize items displayed in any of these sections. Refer to the following tutorial steps for details:
 
 - Central area   
-[Create a Toolbar and its Items](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_a_Toolbar_and_its_Items)
+[Create a Toolbar and its Items](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar/05%20Create%20a%20Toolbar%20and%20its%20Items.md '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_a_Toolbar_and_its_Items')
 
 - Left and right areas   
-[Specify Item Location](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Specify_Item_Location)
+[Specify Item Location](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar/10%20Specify%20Item%20Location.md '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Specify_Item_Location')
 
 - Overflow menu   
-[Create an Overflow Menu](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_an_Overflow_Menu)
+[Create an Overflow Menu](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar/20%20Create%20an%20Overflow%20Menu.md '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_an_Overflow_Menu')
 
 - Item customization   
-[Customize items](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Customize_Items)
+[Customize items](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar/15%20Customize%20Items.md '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Customize_Items')
 
 [tags] dxtoolbar

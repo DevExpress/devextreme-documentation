@@ -1,23 +1,23 @@
 To create a Toolbar, declare the component in the markup and add at least one item.
 
-You can use the [items](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/) array or specify a [dataSource](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#dataSource) to populate a Toolbar with items. A Toolbar item can display plain text ([text](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text)) or a UI component ([widget](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget)). If the item is a UI component, declare its [options](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options).
+You can use the [items](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/') array or specify a [dataSource](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#dataSource') to populate a Toolbar with items. A Toolbar item can display plain text ([text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text')) or a UI component ([widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget')). If the item is a UI component, declare its [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options').
 
 The following list shows all UI components that you can use in the Toolbar:
 
-- [dxButton](/Documentation/ApiReference/UI_Components/dxButton/) 
-- [dxAutocomplete](/Documentation/ApiReference/UI_Components/dxAutocomplete/)
-- [dxCheckBox](/Documentation/ApiReference/UI_Components/dxCheckBox/) 
-- [dxDateBox](/Documentation/ApiReference/UI_Components/dxDateBox/)
-- [dxMenu](/Documentation/ApiReference/UI_Components/dxMenu/)
-- [dxSelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/)
-- [dxTabs](/Documentation/ApiReference/UI_Components/dxTabs/)
-- [dxTextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) 
-- [dxButtonGroup](/Documentation/ApiReference/UI_Components/dxButtonGroup/) 
-- [dxDropDownButton](/Documentation/ApiReference/UI_Components/dxDropDownButton/)
+- [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') 
+- [dxAutocomplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
+- [dxCheckBox](/api-reference/10%20UI%20Components/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/') 
+- [dxDateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
+- [dxMenu](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
+- [dxSelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
+- [dxTabs](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
+- [dxTextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') 
+- [dxButtonGroup](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup/') 
+- [dxDropDownButton](/api-reference/10%20UI%20Components/dxDropDownButton '/Documentation/ApiReference/UI_Components/dxDropDownButton/')
 
-In Angular, Vue, and React, import modules for all the components except the [dxButton](/Documentation/ApiReference/UI_Components/dxButton/).
+In Angular, Vue, and React, import modules for all the components except the [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').
 
-The following code creates a Toolbar and adds a [dxTextBox](/Documentation/ApiReference/UI_Components/dxTextBox/) and [dxButton](/Documentation/ApiReference/UI_Components/dxButton/). The button responds to user clicks. The Toolbar displays these items in the center.
+The following code creates a Toolbar and adds a [dxTextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') and [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/'). The button responds to user clicks. The Toolbar displays these items in the center.
 
 ---
 ##### jQuery

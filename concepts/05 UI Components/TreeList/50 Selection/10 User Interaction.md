@@ -88,7 +88,7 @@ In the single mode, only one row can be selected at a time. In multiple mode, ro
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Sorting](/images/treelist/selection.png)
 
-You can disable the latter feature by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#allowSelectAll') property to **false**.
+You can disable the latter feature by setting the **selection**.[allowSelectAll](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#allowSelectAll') property to **false**.
 
 ---
 ##### jQuery

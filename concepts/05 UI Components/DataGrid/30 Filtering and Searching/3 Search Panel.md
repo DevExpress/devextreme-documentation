@@ -2,7 +2,7 @@ The search panel allows searching for values in several columns at once. Search 
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid SearchPanel](/images/DataGrid/visual_elements/search_panel.png)
 
-To make the search panel visible, assign **true** to the [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/').**visible** property. You can set a column's [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowSearch') property to **false** if it should be excluded from searching. Note that this property inherits the [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFiltering') property's value by default.
+To make the search panel visible, assign **true** to the [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/').**visible** property. You can set a column's [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowSearch') property to **false** if it should be excluded from searching. Note that this property inherits the [allowFiltering](/api-reference/_hidden/dxDataGridColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFiltering') property's value by default.
 
 ---
 ##### jQuery

@@ -7,7 +7,7 @@ type: eventType
 Fires before showing an appointment's tooltip.
 
 ---
-Main article: [onAppointmentTooltipShowing](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentTooltipShowing)
+Main article: [onAppointmentTooltipShowing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentTooltipShowing.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentTooltipShowing')
 
 #####See Also#####
 #include common-link-handleevents

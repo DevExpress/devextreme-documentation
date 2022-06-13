@@ -11,7 +11,7 @@ Occurs before showing an appointment's tooltip.
 Information about the event.
 
 ##### field(e.appointments): Array<Object>
-An array of appointments. 
+An array of appointments.
 
 ##### field(e.cancel): Boolean
 Allows you to prevent a tooltip from showing.

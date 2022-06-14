@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.seriesSelectionMode
-acceptValues: 'multiple' | 'single'
+acceptValues: 'single' | 'multiple'
 type: String
 default: 'single'
 ---

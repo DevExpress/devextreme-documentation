@@ -1,6 +1,6 @@
 ---
 id: dxMenuBase.Options.selectionMode
-acceptValues: 'none' | 'single'
+acceptValues: 'single' | 'none'
 type: String
 default: none
 ---

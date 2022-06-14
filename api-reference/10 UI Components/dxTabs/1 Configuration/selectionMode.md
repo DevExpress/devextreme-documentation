@@ -1,6 +1,6 @@
 ---
 id: dxTabs.Options.selectionMode
-acceptValues: 'multiple' | 'single'
+acceptValues: 'single' | 'multiple'
 type: String
 default: 'single'
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxList.Options.selectionMode
-acceptValues: 'all' | 'multiple' | 'none' | 'single'
+acceptValues: 'single' | 'multiple' | 'all' | 'none'
 type: String
 default: 'none'
 ---

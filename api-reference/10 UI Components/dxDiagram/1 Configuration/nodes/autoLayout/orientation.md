@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.autoLayout.orientation
-acceptValues: 'vertical' | 'horizontal'
+acceptValues: 'horizontal' | 'vertical'
 type: String
 ---
 ---

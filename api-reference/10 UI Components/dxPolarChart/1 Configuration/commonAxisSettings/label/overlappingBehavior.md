@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.label.overlappingBehavior
-acceptValues: 'none' | 'hide'
+acceptValues: 'hide' | 'none'
 type: String
 default: 'hide'
 ---

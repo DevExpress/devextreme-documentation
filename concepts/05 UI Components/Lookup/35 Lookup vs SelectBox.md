@@ -29,4 +29,4 @@ The SelectBox looks the same on any platform, while Lookup changes its appearanc
 }
 
 #####See Also#####
-- [How to Choose a Drop-Down Editor](/concepts/05%20UI%20Components/SelectBox/How%20to%20Choose%20a%20Drop-Down%20Editor.md '/Documentation/Guide/UI_Components/SelectBox/How_to_Choose_a_Drop-Down_Editor/')
+- [How to Choose a Drop-Down Editor](/Documentation/Guide/Common/Editors_Concepts/How_to_Choose_a_Drop-Down_Editor/)

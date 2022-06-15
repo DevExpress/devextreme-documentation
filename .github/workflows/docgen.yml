@@ -51,10 +51,6 @@ jobs:
           working-directory: documentation
           run: npm run generate-syntax-data -- --artifacts ../artifacts/internal-tools
 
-        - name: Generate Modules metadata
-          working-directory: documentation
-          run: npm run generate-modules-meta -- --artifacts ../artifacts/internal-tools --js-scripts ../devextreme/js 
-
         - name: Generate ContentMap
           working-directory: documentation
           run: npm run generate-content-map --artifacts ../artifacts/internal-tools

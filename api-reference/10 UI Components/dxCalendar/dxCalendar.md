@@ -14,6 +14,8 @@ The Calendar is a UI component that displays a calendar and allows an end user t
 dx.web.js, dx.all.js
 
 ---
+#include uiwidgets-modules
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }

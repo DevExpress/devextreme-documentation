@@ -10,10 +10,8 @@ The key of the row being updated or removed.
 
 The **key** property supports a simple and composite keys.
 
----
 
-    <!-- tab: JavaScript -->
-    changes.push({
+    <!-- tab: JavaScript -->changes.push({
         type: 'update',
         data: { FirstName : 'name1', LastName: 'name2' }
 

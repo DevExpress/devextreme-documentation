@@ -1,0 +1,1 @@
+If you enable adaptive rendering, the Menu is shown as a list icon, and items have a tree structure like the [TreeView]() items. This functionality works only if the container size is smaller than the Menu width. Set the [enableAdaptivity]() property to **true** to enable adaptive rendering.

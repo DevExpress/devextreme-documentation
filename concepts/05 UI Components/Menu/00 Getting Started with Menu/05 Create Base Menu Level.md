@@ -1,0 +1,3 @@
+You can display Menu items from the [items]() array or a [dataSource](). This tutorial uses the first approach. To see how to use the [dataSource](), refer to the following demo: [Menu Overview Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/).
+
+To create a base Menu level, define the component in the markup and populate it with items one by one. You can use predefined item properties to customize the items. For example, the code below uses [icon]() and [text]() item properties. To further customize item appearance and content, use an [itemTemplate]() for all item customization or the item [template]() property to customize individual items.

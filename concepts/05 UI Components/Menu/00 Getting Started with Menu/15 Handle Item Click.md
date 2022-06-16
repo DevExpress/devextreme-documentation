@@ -1,0 +1,1 @@
+To access the clicked item, use the [onItemClick]() event handler function. The following code displays item name in the console.

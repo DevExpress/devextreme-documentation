@@ -8,8 +8,9 @@ default: {}
 Configures default item properties.
 
 ---
-Default property values are applied to newly created items if no other values are provided.
+The component applies default property values to newly created items if you do not specify the values.
 
+---
 ##### jQuery  
 
     <!--JavaScript-->

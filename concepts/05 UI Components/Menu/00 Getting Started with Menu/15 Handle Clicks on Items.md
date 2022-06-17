@@ -1,4 +1,4 @@
-To access the clicked item, use the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler function. The following code displays the clicked item's name in the console.
+To access the clicked item, use the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler function. The following code displays the clicked item's name in the console:
 
 ---
 ##### jQuery

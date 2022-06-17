@@ -12,7 +12,6 @@ The following code sets the [selectionMode](/Documentation/ApiReference/UI_Compo
             selectedIndex: 2,
             selectionMode: 'multiple'
         });
-
     });
 
 ##### Angular

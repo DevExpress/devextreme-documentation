@@ -17,7 +17,6 @@ The following code adds a fourth custom tab.
                 },
             ]
         });
-
     });
 
     <!-- tab: index.css -->

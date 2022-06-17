@@ -23,7 +23,6 @@ You can use predefined item features to customize the items. The code below crea
                 }
             ]
         });
-
     });
 
     <!-- tab: index.html -->

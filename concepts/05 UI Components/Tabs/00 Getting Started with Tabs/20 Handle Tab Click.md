@@ -21,7 +21,6 @@ Use the [onItemClick](/Documentation/ApiReference/UI_Components/dxTabs/Configura
                 showMessage(e.itemIndex + 1);
             }
         });
-
     });
 
 ##### Angular

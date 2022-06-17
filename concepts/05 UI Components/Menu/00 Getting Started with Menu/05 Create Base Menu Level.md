@@ -23,7 +23,6 @@ To create a base Menu level, define the component in the markup and populate it 
                 }
             ]
         }).dxMenu('instance');
-
     });
 
     <!-- tab: index.html -->

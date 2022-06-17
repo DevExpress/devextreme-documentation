@@ -16,7 +16,6 @@ To access the clicked item, use the [onItemClick](/Documentation/ApiReference/UI
                 }
             }
         }).dxMenu('instance');
-
     });
 
 ##### Angular

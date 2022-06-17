@@ -17,7 +17,6 @@ In the code below, the [CheckBox](/Documentation/ApiReference/UI_Components/dxCh
                 menu.option('adaptivityEnabled', e.value)
             }
         });
-
     });
 
     <!-- tab: index.html -->

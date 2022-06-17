@@ -40,7 +40,6 @@ Use the [beginGroup](/Documentation/ApiReference/UI_Components/dxMenu/Configurat
                 // ...
             ]
         }).dxMenu('instance');
-
     });
 
 ##### Angular

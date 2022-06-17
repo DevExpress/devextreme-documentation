@@ -54,5 +54,4 @@ $(() => {
             menu.option('adaptivityEnabled', e.value)
         }
     });
-
 });

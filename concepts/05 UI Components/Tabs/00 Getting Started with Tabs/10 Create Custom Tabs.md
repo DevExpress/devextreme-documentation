@@ -1,8 +1,8 @@
-To apply customization to all items, use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate). To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template) property of the item.
+Use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate) to apply customization to all items. To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template) property of the item.
 
 Note that Angular and Vue use [custom templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates) instead of the [template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template) property. In React, specify the [render](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#render) property.
 
-The following code adds a fourth custom tab.
+The following code adds a fourth custom tab:
 
 ---
 ##### jQuery

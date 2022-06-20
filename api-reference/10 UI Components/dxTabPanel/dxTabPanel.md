@@ -20,7 +20,7 @@ dataSource: [
         },
         {
             title: "Address",
-            text: "CA San Francisco Stanford Ave st."
+            text: "CA San Francisco Stanford Ave"
         }
 ],
 height: 200

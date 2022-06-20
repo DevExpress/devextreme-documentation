@@ -2,3 +2,12 @@
     width: 200px;
     height: 200px;
 }
+
+#flexbox {
+    display: flex;
+}
+#checkbox{
+    margin-top: 3px;
+    margin-left: 100px;
+    align-self: flex-start;
+}

@@ -10,7 +10,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
         $("#lookupContainer").dxLookup({
             // ...
             dropDownOptions: {
-                closeOnOutsideClick: true,
+                hideOnOutsideClick: true,
                 showTitle: false
             }
         });
@@ -21,7 +21,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
     <!-- tab: app.component.html -->
     <dx-lookup>
         <dxo-drop-down-options
-            [closeOnOutsideClick]="true"
+            [hideOnOutsideClick]="true"
             [showTitle]="false">
         </dxo-drop-down-options>
     </dx-lookup>
@@ -32,7 +32,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
     <template>
         <DxLookup>
             <DxDropDownOptions
-                :close-on-outside-click="true"
+                :hide-on-outside-click="true"
                 :show-title="false"
             />
         </DxLookup>
@@ -65,7 +65,7 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
         return (
             <Lookup>
                 <DropDownOptions
-                    closeOnOutsideClick={true}
+                    hideOnOutsideClick={true}
                     showTitle={false}
                 />
             </Lookup>

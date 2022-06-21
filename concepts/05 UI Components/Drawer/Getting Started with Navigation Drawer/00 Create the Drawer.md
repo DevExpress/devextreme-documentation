@@ -156,7 +156,7 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/d
                     <Drawer
                         minSize={37}
                         height={250}
-                        render={ () => <div style="width: 150px">Drawer content</div> } >
+                        render={ () => <div style={{width: "150px"}}>Drawer content</div> } >
                         <div>View content</div>
                     </Drawer>
                 </React.Fragment>

@@ -23,7 +23,7 @@ The UI component's instance.
 The resources.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ---
 

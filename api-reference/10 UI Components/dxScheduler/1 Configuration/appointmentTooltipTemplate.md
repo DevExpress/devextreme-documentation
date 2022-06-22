@@ -14,7 +14,7 @@ The data of the appointment for which the tooltip is displayed.
 The appointment's data object.
 
 ##### field(model.targetedAppointmentData): Object
-<!-- %field(model.targetedAppointmentData)% -->
+The clicked appointment's data object.
 
 ##### param(itemIndex): Number
 The appointment's index.

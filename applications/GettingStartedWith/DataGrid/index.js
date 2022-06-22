@@ -1,10 +1,15 @@
 const polyfill = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js" });
 const exceljs = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.0.1/exceljs.min.js" });
 const fileSaver = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" });
+const jsPdf = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js" });
 
 $("head").append(
-    polyfill, exceljs, fileSaver
+    polyfill, exceljs, fileSaver, jsPdf
 );
+
+// This code is used for backwards compatibility with the older jsPDF variable name
+// Read more: https://github.com/MrRio/jsPDF/releases/tag/v2.0.0
+// window.jsPDF = window.jspdf.jsPDF;
 
 $(function() {
     const dataGrid = $("#dataGrid").dxDataGrid({
@@ -116,20 +121,32 @@ $(function() {
             }
         },
         export: {
-            enabled: true
+            enabled: true,
+            formats: ['xlsx', 'pdf']
         },
-        onExporting: function(e) { 
-            const workbook = new ExcelJS.Workbook(); 
-            const worksheet = workbook.addWorksheet("Main sheet"); 
-            DevExpress.excelExporter.exportDataGrid({ 
-                worksheet: worksheet, 
-                component: e.component,
-            }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) { 
-                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
+        onExporting(e) {
+            if (e.format === 'xlsx') {
+                const workbook = new ExcelJS.Workbook(); 
+                const worksheet = workbook.addWorksheet("Main sheet"); 
+                DevExpress.excelExporter.exportDataGrid({ 
+                    worksheet: worksheet, 
+                    component: e.component,
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) { 
+                        saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
+                    }); 
                 }); 
-            }); 
-            e.cancel = true; 
+                e.cancel = true;
+            } 
+            else if (e.format === 'pdf') {
+                const doc = new jsPDF();
+                DevExpress.pdfExporter.exportDataGrid({
+                    jsPDFDocument: doc,
+                    component: e.component,
+                }).then(() => {
+                    doc.save('DataGrid.pdf');
+                });
+            }
         }
     }).dxDataGrid("instance");
 });

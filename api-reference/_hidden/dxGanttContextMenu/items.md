@@ -1,6 +1,6 @@
 ---
 id: dxGanttContextMenu.items
-acceptValues: 'undo' | 'redo' | 'expandAll' | 'collapseAll' | 'addTask' | 'deleteTask' | 'zoomIn' | 'zoomOut' | 'deleteDependency' | 'taskDetails'
+acceptValues: 'undo' | 'redo' | 'expandAll' | 'collapseAll' | 'addTask' | 'deleteTask' | 'zoomIn' | 'zoomOut' | 'deleteDependency' | 'taskDetails' | 'resourceManager'
 type: Array<dxGanttContextMenuItem, String>
 inheritsType: dxGanttContextMenuItem
 ---

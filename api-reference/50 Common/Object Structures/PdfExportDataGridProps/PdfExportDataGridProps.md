@@ -10,7 +10,7 @@ Properties that can be passed as a parameter to the [exportDataGrid(options)](/a
 ---
 [note]
 
-The **exportDataGrid(options)** method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library to export data and create PDF files.
+The [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library to export data and create PDF files.
 
 [/note]
 

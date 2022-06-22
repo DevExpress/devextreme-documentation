@@ -21,7 +21,7 @@ The main idea is to filter the data source by the `parentID` for different drill
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     var population = [
         // ...
     ];
@@ -45,7 +45,7 @@ The main idea is to filter the data source by the `parentID` for different drill
 
 ##### Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.service.ts -->
     import { Injectable } from "@angular/core";
 
     export class DataItem {
@@ -67,14 +67,13 @@ The main idea is to filter the data source by the `parentID` for different drill
         }
     }
 
-<!---->
-
-    <!--HTML--><dx-chart
+    <!-- tab: app.component.html -->
+    <dx-chart
         [dataSource]="dataSource">
         <dxi-series argumentField="arg" valueField="val" type="bar"></dxi-series>
     </dx-chart>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxChartModule } from "devextreme-angular";
     import { Service, DataItem } from "./app.service";
     @Component({
@@ -181,7 +180,7 @@ The main idea is to filter the data source by the `parentID` for different drill
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     var population = [
         // ...
     ];
@@ -207,12 +206,13 @@ The main idea is to filter the data source by the `parentID` for different drill
 
 ##### Angular
 
-    <!--HTML--><dx-chart
+    <!-- tab: app.component.html -->
+    <dx-chart
         [dataSource]="dxDataSource">
         <dxi-series argumentField="arg" valueField="val" type="bar"></dxi-series>
     </dx-chart>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxChartModule } from "devextreme-angular";
     import DataSource from "devextreme/data/data_source";
     // ...

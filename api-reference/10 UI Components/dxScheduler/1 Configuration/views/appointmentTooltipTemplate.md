@@ -14,7 +14,7 @@ The data of the appointment for which the tooltip is displayed.
 The appointment's data object.
 
 ##### field(model.targetedAppointmentData): Object
-<!-- %field(model.targetedAppointmentData)% -->
+The clicked appointment's data object.
 
 ##### param(itemIndex): Number
 The appointment's index.
@@ -24,6 +24,9 @@ The appointment's index.
 
 ##### return: String | UserDefinedElement
 A template name or container.
+
+##### field(model.isButtonClicked): Boolean
+Specifies whether you click a button or an appointment element.
 
 ---
 #include common-demobutton with {

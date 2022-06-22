@@ -40,4 +40,4 @@ Add the following script to test the DataGrid configuration and the number of lo
         })
     });
 
-In a project, run the `npm test` command to see the test report. 
+In a project, use the `npm test` command to run the test and see the result. 

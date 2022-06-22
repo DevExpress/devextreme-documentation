@@ -1,0 +1,1 @@
+Projects created with Angular CLI have built-in testing support with the [Jasmine test framework](https://jasmine.github.io/).

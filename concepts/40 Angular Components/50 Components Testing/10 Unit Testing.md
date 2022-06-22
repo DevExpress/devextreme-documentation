@@ -87,5 +87,3 @@ Add the following script to test the DataGrid configuration and the number of lo
     }
 
 Run `ng test` command to see the test report.
-
-You can find the full code in the following GitHub repository: <a href="https://github.com/onebalaban/DevExtreme-Testing/tree/main/Angular/Unit%20tests/Jasmine/my-app" target="_blank">DevExtreme-Testing/Angular/Unit tests/Jasmine/my-app</a>.

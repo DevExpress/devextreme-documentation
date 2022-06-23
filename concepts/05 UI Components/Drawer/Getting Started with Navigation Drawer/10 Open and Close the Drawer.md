@@ -123,7 +123,7 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
                 />
             </DxToolbar>
             <DxDrawer ...
-                :opened.sync="isDrawerOpen">
+                v-model:opened="isDrawerOpen">
                 <!-- ... -->
             </DxDrawer>
         </div>
@@ -172,25 +172,23 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
 
     <!-- tab: NavigationDrawer.js -->
     // ...
+    import React, { useState, useMemo, useCallback } from "react";
     import { Drawer } from "devextreme-react/drawer";
     import { Toolbar, Item } from "devextreme-react/toolbar";
 
-    class NavigationDrawer extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isDrawerOpen: false
-            };
-            this.buttonOptions = {
+    function NavigationDrawer() {
+        const [isOpened, setState] = useState(false);
+        const buttonOptions = useMemo(() => {
+            return {
                 icon: "menu",
                 onClick: () => {
-                    this.setState({ isDrawerOpen: !this.state.isDrawerOpen })
+                    setState(!isOpened );
                 }
             };
-        }
+        }, [isOpened]);
         render() {
             return (
-                <React.Fragment>
+                <div>
                     <Toolbar id="toolbar">
                         <Item 
                             widget="dxButton" 
@@ -198,13 +196,14 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
                             location="before" />
                     </Toolbar>
                     <Drawer ...
-                        opened={this.state.isDrawerOpen} >
+                        opened={isOpened} >
                         <div>View content</div>
                     </Drawer>
-                </React.Fragment>
+                </div>
             );
         }
     }
+    
     export default NavigationDrawer;
 
     <!-- tab: NavigationDrawer.css -->

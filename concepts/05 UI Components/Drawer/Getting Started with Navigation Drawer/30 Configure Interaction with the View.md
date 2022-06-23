@@ -43,11 +43,12 @@ When the Drawer opens, it can overlap, shrink, or partially displace the view, d
         // ...
         render() {
             return (
-                <React.Fragment>
+                <div>
+                    { /* ... */ }
                     <Drawer ...
                         openedStateMode="overlap" >
                     </Drawer>
-                </React.Fragment>
+                </div>
             );
         }
     }

@@ -5,7 +5,7 @@ You can display an image in the background of RangeSelector. To do this, use the
 		// ...
 		background: {
 			image: {
-				url: '/Content/images/doc/22_1/ChartJS/flight.png',
+				url: '/Content/images/doc/22_2/ChartJS/flight.png',
 				location: 'center'
 			}
 		}

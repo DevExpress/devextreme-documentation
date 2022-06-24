@@ -2,7 +2,7 @@
 
 The Drawer is a dismissible or permanently visible panel that you can use for navigation in responsive web application layouts.
 
-DevExtreme supplies application templates for <a href="https://devexpress.github.io/devextreme-angular-template/#/home" target="_blank">Angular</a>, <a href="https://devexpress.github.io/devextreme-vue-template/#/home" target="_blank">Vue</a>, and <a href="https://devexpress.github.io/devextreme-react-template/#/home" target="_blank">React</a>. They implement a responsive layout that uses the Drawer. You can use these templates instead of following the tutorial. Refer to the following articles for more information:
+DevExtreme supplies application templates for <a href="https://devexpress.github.io/devextreme-angular-template/#/home" target="_blank">Angular</a>, <a href="https://devexpress.github.io/devextreme-vue-template/#/home" target="_blank">Vue</a>, and <a href="https://devexpress.github.io/devextreme-react-template/#/home" target="_blank">React</a>. They implement a responsive layout that uses the Drawer. You can use these templates instead of following the tutorial. Refer to the articles below for more information:
 
 - [DevExtreme Angular Template](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/')
 - [DevExtreme Vue Template](/concepts/55%20Vue%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Vue_Components/Application_Template/')

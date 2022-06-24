@@ -23,6 +23,6 @@ To enable SSR in your application, import the `DxServerModule` in the `app.serve
 
 [note] DevExtreme Angular components do not support [switching between themes at runtime](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/60%20Switch%20Between%20Themes%20at%20Runtime '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Switch_Between_Themes_at_Runtime') in the SSR mode. You can only [use a single theme](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/03%20Configure%20Stylesheets.md '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Configure_Stylesheets').
 
-<a href="https://github.com/DevExpress/devextreme-examples/tree/22_1/universal-angular#universal-angular" target="_blank">This example</a> demonstrates DevExtreme components used in an Angular Universal application with server-side rendering.
+<a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/universal-angular#universal-angular" target="_blank">This example</a> demonstrates DevExtreme components used in an Angular Universal application with server-side rendering.
 
 [tags] angular, ssr

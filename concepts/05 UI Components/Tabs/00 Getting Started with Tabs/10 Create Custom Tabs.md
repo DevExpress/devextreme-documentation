@@ -1,6 +1,6 @@
-Use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate) to apply customization to all items. To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template) property of the item.
+Use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate') to apply customization to all items. To customize an individual item, specify the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template') property of the item.
 
-Note that Angular and Vue use [custom templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates) instead of the [template](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template) property. In React, specify the [render](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#render) property.
+Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template') property. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#render') property.
 
 The following code adds a fourth custom tab:
 

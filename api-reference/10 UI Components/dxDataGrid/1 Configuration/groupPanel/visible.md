@@ -3,6 +3,7 @@ id: dxDataGrid.Options.groupPanel.visible
 acceptValues: 'auto'
 type: Boolean | String
 default: false
+firedEvents: optionChanged
 ---
 ---
 ##### shortDescription

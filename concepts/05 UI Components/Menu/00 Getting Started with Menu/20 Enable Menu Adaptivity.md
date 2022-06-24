@@ -1,6 +1,6 @@
-In adaptive render mode, the Menu is shown as a list icon, and Menu items are arranged hierarchically like [TreeView](/concepts/05%20UI%20Components/TreeView/00%20Getting%20Started%20with%20TreeView '/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/') items. This functionality is in effect only if the container's width is less than the Menu width. Set the [adaptivityEnabled](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled) property to **true** to enable adaptive rendering.
+In adaptive render mode, the Menu is shown as a list icon, and Menu items are arranged hierarchically like [TreeView](/concepts/05%20UI%20Components/TreeView/00%20Getting%20Started%20with%20TreeView '/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/') items. This functionality is in effect only if the container's width is less than the Menu width. Set the [adaptivityEnabled](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled') property to **true** to enable adaptive rendering.
 
-In the code below, the [CheckBox](/Documentation/ApiReference/UI_Components/dxCheckBox/) toggles Menu render mode.
+In the code below, the [CheckBox](/api-reference/10%20UI%20Components/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/') toggles Menu render mode.
 
 ---
 ##### jQuery

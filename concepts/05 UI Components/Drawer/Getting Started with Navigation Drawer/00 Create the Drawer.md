@@ -1,4 +1,4 @@
-Wrap the view in the Drawer and specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. Inside the **template**, set the Drawer's width. You can use the nested UI component's **width** property for this (see [Implement Navigation](/concepts/05%20UI%20Components/Drawer/Getting%20Started%20with%20Navigation%20Drawer/15%20Implement%20Navigation.md '/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation')), but in this tutorial, we use the `width` CSS property. The Drawer's height adjusts to the view's height (specified via the [height](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height') property).
+Wrap the view in the Drawer and specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. Inside the **template**, set the Drawer's width. You can use the nested UI component's **width** property for this (see [Implement Navigation](/concepts/05%20UI%20Components/Drawer/Getting%20Started%20with%20Navigation%20Drawer/15%20Implement%20Navigation.md '/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation')), but this tutorial uses the `width` CSS property. The Drawer's height adjusts to the view's height (specified via the [height](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height') property).
 
 In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible in the closed state. 
 
@@ -146,23 +146,21 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/d
 
     import { Drawer } from "devextreme-react/drawer";
 
-    class NavigationDrawer extends React.Component {
-        constructor(props) {
-            super(props);
-        }
+    function NavigationDrawer() {
         render() {
             return (
                 <React.Fragment>
                     <Drawer
                         minSize={37}
                         height={250}
-                        render={ () => <div style={{width: "150px"}}>Drawer content</div> } >
+                        render={ () => <div style={{width: 150 + "px"}}>Drawer content</div> }
                         <div>View content</div>
                     </Drawer>
                 </React.Fragment>
             );
         }
     }
+
     export default NavigationDrawer;
 
     <!-- tab: NavigationDrawer.css -->
@@ -175,19 +173,19 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/d
     }
 
     <!-- tab: App.js -->
-    import React, { Component } from "react";
-
+    import 'devextreme/dist/css/dx.common.css';
+    import 'devextreme/dist/css/dx.light.css';
+    import './App.css';
     import NavigationDrawer from "./components/NavigationDrawer";
 
-    class App extends Component {
-        render() {
-            return (
-                <div className="App">
-                    <NavigationDrawer />
-                </div>
-            );
-        }
+    function App() {
+        return (
+            <div>
+                <NavigationDrawer />
+            </div>
+        );
     }
+
     export default App;
 
 ##### ASP.NET MVC Controls
@@ -213,6 +211,6 @@ In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/d
 
 ---
 
-If you run the code, you should see a partially visible Drawer and a view that displays *View content*.
+If you run the code, you can see a partially visible Drawer and a view that displays *View content*.
 
 [note]The Drawer UI component is not designed to contain another Drawer. Do not use nested Drawers to avoid possible issues in your application.

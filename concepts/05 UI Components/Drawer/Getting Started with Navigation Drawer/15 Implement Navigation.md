@@ -1,4 +1,4 @@
-The Drawer is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/'), as done in this tutorial.
+The Drawer is designed to contain navigation items. If they should nest other items, use the [TreeView](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/') UI component to implement navigation. Otherwise, use the [List](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/'), as this tutorial does.
 
 Each list item should navigate to a different view. To implement this, follow the steps below:
 
@@ -7,7 +7,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**        
 
-    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
 
 1. **Navigate to a view when selection is changed**
 
@@ -78,7 +78,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler, close the Drawer.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler, close the Drawer.
 
 <!-- -->
 
@@ -232,7 +232,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler, close the Drawer.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler, close the Drawer.
 
 <!-- -->
 
@@ -323,40 +323,38 @@ Each list item should navigate to a different view. To implement this, follow th
     </style>
 
     <!-- tab: main.js -->
-    import Vue from 'vue';
-    import VueRouter from 'vue-router';
-
+    import { createApp, h } from 'vue';
+    import { createRouter, createWebHashHistory } from 'vue-router';
+    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
-
     import App from './App.vue';
-    import InboxComponent from "./components/Inbox.vue";
+    import InboxItemComponent from "./components/InboxItem.vue";
     import SentMailComponent from "./components/SentMail.vue";
-    import TrashComponent from "./components/Trash.vue";
-    import SpamComponent from "./components/Spam.vue";
-
-    Vue.config.productionTip = false;
-
-    Vue.use(VueRouter);
+    import TrashItemComponent from "./components/TrashItem.vue";
+    import SpamItemComponent from "./components/SpamItem.vue";
 
     const routes = [
-        { path: "", redirect: "/inbox" },
-        { path: "/inbox", component: InboxComponent },
+        { path: "", redirect: "/inbox-item" },
+        { path: "/inbox-item", component: InboxItemComponent },
         { path: "/sent-mail", component: SentMailComponent },
-        { path: "/trash", component: TrashComponent },
-        { path: "/spam", component: SpamComponent }
+        { path: "/trash-item", component: TrashItemComponent },
+        { path: "/spam-item", component: SpamItemComponent }
     ];
 
-    const router = new VueRouter({
-        mode: "history",
-        routes
+    const router = createRouter({
+        history: createWebHashHistory(),
+        routes,
+    })
+
+    const app  = createApp({
+        render: ()=>h(App)
     });
 
-    new Vue({
-        render: h => h(App),
-        router
-    }).$mount('#app')
+    app.use(router);
 
-    <!-- tab: Inbox.vue -->
+    app.mount('#app');
+
+    <!-- tab: InboxItem.vue -->
     <template>
         <div>Inbox</div>
     </template>
@@ -374,7 +372,7 @@ Each list item should navigate to a different view. To implement this, follow th
     export default {}
     </script>
 
-    <!-- tab: Spam.vue -->
+    <!-- tab: SpamItem.vue -->
     <template>
         <div>Spam</div>
     </template>
@@ -383,7 +381,7 @@ Each list item should navigate to a different view. To implement this, follow th
     export default {}
     </script>
 
-    <!-- tab: Trash.vue -->
+    <!-- tab: TrashItem.vue -->
     <template>
         <div>Trash</div>
     </template>
@@ -396,128 +394,123 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Install <a href="https://reactrouter.com/" target="_blank">React Router</a>**
 
-        npm install react-router-dom --save
+        npm install react-router-dom
 
 1. **Configure routing**
 
-    Wrap the entire `App` component in a `BrowserRouter` and add a <a href="https://reactrouter.com/web/api/Route" target="_blank">`Route`</a> that renders the `NavigationDrawer` component. Define other `Routes` within the `Drawer` markup in the `NavigationDrawer` component.
+    Wrap the entire `App` component in a `BrowserRouter` in the `index.js`. Define <a href="https://reactrouter.com/docs/en/v6/components/routes" target="_blank">`Routes`</a> within the `Drawer` markup in the `NavigationDrawer` component.
 
 1. **Define the [itemRender](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender') function**
 
-    Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/web/api/Link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and text.
+    Specify the elements that the function should render and wrap them in a <a href="https://reactrouter.com/docs/en/v6/components/link" target="_blank">`Link`</a>. In the code below, the `renderItem` function renders an icon and text.
 
 1. **Enable item selection**
 
-    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler, close the Drawer.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**. In the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler, close the Drawer.
 
 <!-- -->
 
-    <!-- tab: App.js -->
-    // ...
-    import { BrowserRouter, Route } from 'react-router-dom'
+    <!-- tab: index.js -->
+    import React from 'react';
+    import ReactDOM from 'react-dom/client';
+    import { BrowserRouter } from "react-router-dom";
+    import './index.css';
+    import App from './App';
 
-    class App extends Component {
-        render() {
-            return (
-                <BrowserRouter>
-                    <div className="App">
-                        <Route component={NavigationDrawer} />
-                    </div>
-                </BrowserRouter>
-            );
-        }
-    }
-    export default App;
-
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    );
 
     <!-- tab: NavigationDrawer.js -->
     // ...
+    import { Routes, Route } from 'react-router-dom'; 
+
     import NavigationList from "./NavigationList";
+    import Inbox from "../views/Inbox";
+    import Trash from "../views/Trash";
+    import SentMail from "../views/SentMail";
+    import Spam from "../views/Spam";
 
-    import { Switch, Route } from "react-router-dom";
-
-    import Inbox from "./views/Inbox";
-    import Trash from "./views/Trash";
-    import SentMail from "./views/SentMail";
-    import Spam from "./views/Spam";
-
-    class NavigationDrawer extends React.Component {
+    function NavigationDrawer() {
         // ...
-        renderList = () => {
-            const stateHandler = (newState) => this.setState(newState);
+        const renderList = useCallback(() => {
+            const stateHandler = (newState) => setState(newState);
             return (
                 <NavigationList stateHandler={stateHandler} />
             );
-        }
+        }, []);
 
         render() {
             return (
-                <React.Fragment>
+                <div>
                     { /* ... */ }
                     <Drawer ...
-                        render={this.renderList}>
+                        render={renderList}>
                         <div id="view">
-                            <Switch>
-                                <Route exact path="/" component={Inbox} />
-                                <Route exact path="/inbox" component={Inbox} />
-                                <Route exact path="/sent-mail" component={SentMail} />
-                                <Route exact path="/spam" component={Spam} />
-                                <Route exact path="/trash" component={Trash} />
-                            </Switch>
+                            <Routes>
+                                <Route exact path="views/inbox" element={<Inbox />} />
+                                <Route path="views/sent-mail" element={<SentMail />} />
+                                <Route path="views/spam" element={<Spam />} />
+                                <Route path="views/trash" element={<Trash />} />
+                            </Routes>
                         </div>
                     </Drawer>
-                </React.Fragment>
+                </div>
             );
         }
     }
+
     export default NavigationDrawer;
 
     <!-- tab: NavigationList.js -->
-    import React from "react";
+    import React, { useCallback } from "react";
     import List from "devextreme-react/list";
     import { Link } from "react-router-dom";
 
     const navigation = [
-        { id: 1, text: "Inbox", icon: "message", path: "inbox" },
-        { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
-        { id: 3, text: "Trash", icon: "trash", path: "trash" },
-        { id: 4, text: "Spam", icon: "mention", path: "spam" }
+        { id: 1, text: "Inbox", icon: "message", path: "views/inbox" },
+        { id: 2, text: "Sent Mail", icon: "check", path: "views/sent-mail" },
+        { id: 3, text: "Trash", icon: "trash", path: "views/trash" },
+        { id: 4, text: "Spam", icon: "mention", path: "views/spam" }
     ];
 
-    class NavigationList extends React.PureComponent {
-        closeDrawer = () => {
-            this.props.stateHandler({ isDrawerOpen: false });
+    function NavigationList(props){
+        const closeDrawer = () => {
+            props.stateHandler(false);
         }
 
-        renderItem = (data) => {
+        const renderItem = useCallback((data) => {
             return (
                 <div>
                     <Link to={'/' + data.path}>
                         <div>
                             <div className="dx-list-item-icon-container">
-                                <i className={`dx-icon dx-list-item-icon dx-icon-${data.icon}`}></i>
+                                <i className={`dx-icon dx-list-item-icon dx-icon-${data.icon}`}/>
                             </div>
                             <span>{data.text}</span>
                         </div>
                     </Link>
                 </div>
             );
-        }
+        }, [])
 
-        render() {
             return (
-                <React.Fragment>
+                <div>
                     <List
                         items={navigation}
-                        width={200} 
+                        width={200}
                         selectionMode="single"
-                        onSelectionChanged={this.closeDrawer}
-                        itemRender={this.renderItem}
+                        onSelectionChanged={closeDrawer}
+                        itemRender={renderItem}
                     />
-                </React.Fragment>
+                </div>
             );
-        }
+
     }
+
     export default NavigationList;
 
     <!-- tab: NavigationDrawer.css -->
@@ -529,48 +522,40 @@ Each list item should navigate to a different view. To implement this, follow th
     <!-- tab: views/Inbox.js -->
     import React from "react";
 
-    class Inbox extends React.Component {
-        render() {
+    function Inbox(){
             return (
                 <div>Inbox</div>
             );
-        }
     }
     export default Inbox;
 
     <!-- tab: views/SentMail.js -->
     import React from "react";
 
-    class SentMail extends React.Component {
-        render() {
+    function SentMail(){
             return (
                 <div>Sent Mail</div>
             );
-        }
     }
     export default SentMail;
 
     <!-- tab: views/Spam.js -->
     import React from "react";
 
-    class Spam extends React.Component {
-        render() {
+    function Spam(){
             return (
                 <div>Spam</div>
             );
-        }
     }
     export default Spam;
 
     <!-- tab: views/Trash.js -->
     import React from "react";
 
-    class Trash extends React.Component {
-        render() {
+    function Trash(){
             return (
                 <div>Trash</div>
             );
-        }
     }
     export default Trash;
 
@@ -578,7 +563,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Enable item selection**        
 
-    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, you should also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
+    Set the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') to *"single"*. If you use the TreeView, also set the [selectByClick](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/selectByClick.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick') property to **true**.
 
 1. **Navigate to a view when selection is changed**
 

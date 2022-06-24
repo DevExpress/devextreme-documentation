@@ -39,18 +39,20 @@ When you open the Drawer, it can slide in or expand from the closed position. Us
 
     <!-- tab: NavigationDrawer.js -->
     // ...
-    class NavigationDrawer extends React.Component {
+    function NavigationDrawer() {
         // ...
         render() {
             return (
-                <React.Fragment>
+                <div>
+                    { /* ... */ }
                     <Drawer ...
                         revealMode="expand" >
                     </Drawer>
-                </React.Fragment>
+                </div>
             );
         }
     }
+    
     export default NavigationDrawer;
 
 ##### ASP.NET MVC Controls

@@ -182,7 +182,7 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
             return {
                 icon: "menu",
                 onClick: () => {
-                    setState(!isOpened );
+                    setState(!isOpened);
                 }
             };
         }, [isOpened]);

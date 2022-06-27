@@ -19,7 +19,7 @@ A template name or container.
 ---
 If you define a **fieldTemplate**, the component does not render the underlying HTML. In this case, manually render hidden input with the corresponding name attribute to submit values through HTML form.
 
-The example below shows how to define the **fieldTemplate**. If you want to customize field text, use the TextBox [text](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#text) property.
+The example below shows how to define the **fieldTemplate**. If you want to customize field text, use the TextBox's [text](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#text) property.
 
 ---
 ##### jQuery

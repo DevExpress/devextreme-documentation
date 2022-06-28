@@ -24,3 +24,6 @@ Model data. Available only if you use Knockout.
 The [properties of the toolbar](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/').
 
 ---
+If you use DevExtreme ASP.NET components or JQuery in your application, specify this property to get the component's instance. In Angular, Vue, or React, use the [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) property instead.
+
+#include datagrid-ontoolbarpreparing-jquery

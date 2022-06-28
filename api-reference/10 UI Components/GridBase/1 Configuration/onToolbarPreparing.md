@@ -2,7 +2,6 @@
 id: GridBase.Options.onToolbarPreparing
 type: function(e)
 default: null
-deprecated: [important] The **onToolbarPreparing** property is deprecated. Use the [toolbar](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/toolbar.md '{basewidgetpath}/Configuration/toolbar/') property instead.
 ---
 ---
 ##### shortDescription

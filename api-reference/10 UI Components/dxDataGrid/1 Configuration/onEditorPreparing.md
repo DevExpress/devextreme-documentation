@@ -260,7 +260,7 @@ Use the **parentType** function parameter to check if the editor being customize
 
 - We do not recommend that you use the **onEditorPreparing** function to specify an editor's default value. Use the [onInitNewRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') function instead.
 
-- This function has the highest priority over the other customization tools. The priority is the following: **onEditorPreparing** > [columns]({basewidgetpath}/Configuration/columns/).[formItem]({basewidgetpath}/Configuration/columns/#formItem) > [editing]({basewidgetpath}/Configuration/editing/).[form]({basewidgetpath}/Configuration/editing/#form).
+- This function has the highest priority over the other editing tools. The priority order is the following: **onEditorPreparing** > [columns]({basewidgetpath}/Configuration/columns/).[formItem]({basewidgetpath}/Configuration/columns/#formItem) > [editing]({basewidgetpath}/Configuration/editing/).[form]({basewidgetpath}/Configuration/editing/#form).
 
 [/note]
 

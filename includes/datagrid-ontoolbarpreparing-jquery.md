@@ -1,4 +1,4 @@
-The following code adds a refresh button to Toolbar:
+The following code adds a refresh button to the toolbar:
     
     <!--JavaScript-->$(function() {
         $("#container").dx{WidgetName}({

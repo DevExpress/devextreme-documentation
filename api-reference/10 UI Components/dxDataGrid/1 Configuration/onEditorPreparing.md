@@ -28,10 +28,10 @@ Indicates whether the editor is disabled.
 
 ##### field(e.editorName): String
 Allows you to change the editor. Accepts names of DevExtreme UI components only, for example, *"dxTextBox"*.      
-Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity/01%20Link%20Modules/10%20Use%20Webpack.md '/Documentation/Guide/Common/Modularity/') are used. The [editorType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') property specified in the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object has precedence over this parameter.
+Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity/01%20Link%20Modules/10%20Use%20Webpack.md '/Documentation/Guide/Common/Modularity/') are used.
 
 ##### field(e.editorOptions): Object
-Gets and sets the editor's configuration. [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') specified in the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form') object have precedence over this parameter.
+Gets and sets the editor's configuration.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
@@ -256,7 +256,13 @@ Use the **parentType** function parameter to check if the editor being customize
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"
 }
 
-[note]We do not recommend that you use the **onEditorPreparing** function to specify an editor's default value. Use the [onInitNewRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') function instead.
+[note]
+
+- We do not recommend that you use the **onEditorPreparing** function to specify an editor's default value. Use the [onInitNewRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') function instead.
+
+- This function has the highest priority over the other customization tools. The priority is the following: **onEditorPreparing** > [columns]({basewidgetpath}/Configuration/columns/).[formItem]({basewidgetpath}/Configuration/columns/#formItem) > [editing]({basewidgetpath}/Configuration/editing/).[form]({basewidgetpath}/Configuration/editing/#form).
+
+[/note]
 
 #####See Also#####
 - **columns[]**.[showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '{basewidgetpath}/Configuration/columns/#showEditorAlways')

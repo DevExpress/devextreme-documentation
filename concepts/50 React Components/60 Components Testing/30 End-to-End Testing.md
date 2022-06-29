@@ -2,7 +2,7 @@ End-to-End (Functional) testing ignores the component's internal structure and a
 
 The example below illustrates how to create an End-to-End test for the DataGrid's functionality. The test code emulates a click on the pager. 
 
-Сreate a React application as described in the [Unit Testing](/Documentation/Guide/React_Components/Components_Testing/#Unit_Testing) article and add the test code. This code finds the specified link on the pager and clicks it. A click on the pager triggers the `click` event. The test checks whether the result page index is the same as the expected page index. 
+Сreate a React application as described in the [Unit Testing](/concepts/50%20React%20Components/60%20Components%20Testing/10%20Unit%20Testing.md '/Documentation/Guide/React_Components/Components_Testing/#Unit_Testing') article and add the test code. This code finds the specified link on the pager and clicks it. A click on the pager triggers the `click` event. The test checks whether the result page index is the same as the expected page index. 
 
     <!--JavaScript-->
     import React from 'react';

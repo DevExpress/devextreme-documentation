@@ -2,7 +2,7 @@ End-to-End (Functional) testing ignores the component's internal structure and a
 
 The example below illustrates how to create an End-to-End test for the DataGrid's functionality. The test code emulates a click on the pager.  
 
-To get started, create an Angular application and import modules as described in the [Unit Testing](/Documentation/Guide/Angular_Components/Components_Testing/#Unit_Testing) article.
+To get started, create an Angular application and import modules as described in the [Unit Testing](/concepts/40%20Angular%20Components/50%20Components%20Testing/10%20Unit%20Testing.md '/Documentation/Guide/Angular_Components/Components_Testing/#Unit_Testing') article.
 
 Add the following script to your test file. This code finds the specified link on the pager and clicks it. A click on the pager triggers the `dxclick` event. The test checks whether the result page index is the same as the expected page index.
 

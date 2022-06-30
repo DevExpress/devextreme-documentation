@@ -2,4 +2,6 @@ When [dataSource]({basewidgetpath}/Configuration/#dataSource) contains objects, 
 
 If you use a store, the **valueExpr** property should have the same value as the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') in the store.
 
+Do not use `template` as a **valueExpr** value.
+
 #include uiwidgets-ref-valueExpr-functionnote

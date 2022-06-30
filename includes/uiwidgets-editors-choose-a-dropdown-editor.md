@@ -1,1 +1,1 @@
-To make a choice between DevExtreme drop-down editors and learn more about the component features, refer to the following article: [How to Choose a Drop-Down Editor](/Documentation/Guide/Common/Editors_Concepts/How_to_Choose_a_Drop-Down_Editor/).
+To choose between DevExtreme drop-down editors and learn more about the component features, refer to the following article: [How to Choose a Drop-Down Editor](/Documentation/Guide/Common/Editors_Concepts/How_to_Choose_a_Drop-Down_Editor/).

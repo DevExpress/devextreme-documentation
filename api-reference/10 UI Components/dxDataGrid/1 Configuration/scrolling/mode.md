@@ -3,19 +3,22 @@ id: dxDataGrid.Options.scrolling.mode
 acceptValues: 'infinite' | 'standard' | 'virtual'
 type: String
 default: 'standard'
+firedEvents: contentReady
 ---
 ---
 ##### shortDescription
 Specifies the scrolling mode.
 
 ---
+If you change this option, the DataGrid reloads.
+
 The following scrolling modes are available:
 
 - **Standard**      
-A user scrolls a single page only. Scrolling is available only if [all the page's rows](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#pageSize') do not fit into the UI component's height. In this mode, the [pager](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/') performs the main navigation and scrolling is auxiliary. If [paging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/') is disabled, the UI component loads all rows simultaneously which can reduce the UI component's performance. In this case, we recommend that you use another scrolling mode.
+A user scrolls a single page only. Scrolling is available only if [all the page's rows](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#pageSize') do not fit into the UI component's height. In this mode, the [pager](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/') performs the main navigation and scrolling is auxiliary. If [paging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/') is disabled, the UI component loads all rows simultaneously. This action can reduce the UI component's performance. In this case, use another scrolling mode.
 
 - **Virtual**       
-Rows are loaded when they get into the viewport and removed once they leave it. In this mode, users can move to any page instantly.
+Pages are loaded when they get into the viewport and removed once they leave it. In this mode, users can move to any page instantly.
 
     If the rows take time to be loaded and rendered, they display gray boxes. [Rendering optimization](/concepts/05%20UI%20Components/DataGrid/10%20Enhance%20Performance%20on%20Large%20Datasets/030%20Rendering%20Optimization.md '/Documentation/Guide/UI_Components/DataGrid/Enhance_Performance_on_Large_Datasets/#Rendering_Optimization') can reduce rendering time and remove the gray boxes. Alternatively, you can disable the **scrolling**.[renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/renderAsync.md '{basewidgetpath}/Configuration/scrolling/#renderAsync') property, but this can impact performance.
 
@@ -25,7 +28,15 @@ Each next page is loaded once the scrollbar reaches the end of its scale. In thi
     - Rows grouping is enabled.
     - The [allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') property is set to **false**.
 
-    [note] Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when using infinite scrolling in conjunction with grouping.
+[note]
+
+- Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when you use infinite scrolling in conjunction with grouping.
+
+- Specify the component's [height](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height) if you use virtual or infinite scrolling.
+
+- Set **editing**.[refreshMode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#refreshMode) to `repaint` to support editing if you use infinite scrolling.
+
+[/note]
 
 Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is "_virtual_" and cannot be changed if you set the **mode** property to "_virtual_" or "_infinite_".
 

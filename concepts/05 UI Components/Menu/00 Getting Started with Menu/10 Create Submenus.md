@@ -1,6 +1,6 @@
-To create a submenu, use nested [items](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items). In jQuery, an array within the base item object corresponds to a submenu. In Angular, Vue and React, a submenu is defined as another item in the base item's markup.
+To create a submenu, use nested [items](/api-reference/_hidden/dxMenuItem/items.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items'). In jQuery, an array within the base item object corresponds to a submenu. In Angular, Vue and React, a submenu is defined as another item in the base item's markup.
 
-Use the [beginGroup](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup) property to separate items in the submenu.
+Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup') property to separate items in the submenu.
 
 ---
 ##### jQuery

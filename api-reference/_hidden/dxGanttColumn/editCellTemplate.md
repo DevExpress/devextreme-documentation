@@ -1,7 +1,7 @@
 ---
 id: dxGanttColumn.editCellTemplate
 hidden: 
-type: any
+type: template
 ---
 ---
 ##### shortDescription

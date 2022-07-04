@@ -4,7 +4,7 @@ type: function(newData, value, currentRowData)
 ---
 ---
 ##### shortDescription
-Specifies a function to be invoked after the user has edited a cell value, but before it will be saved in the data source.
+Specifies a function to be invoked after the user has edited a cell value, but before it is saved in the data source.
 
 ##### param(newData): Object
 The data object where new data should be set.

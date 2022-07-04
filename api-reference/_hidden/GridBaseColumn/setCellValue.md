@@ -170,7 +170,7 @@ This function allows you to process user input before it is saved to the data so
 
 ---
 
-If you use **setCellValue** and the [editing]({basewidgetpath}/Configuration/editing/).[mode]({basewidgetpath}/Configuration/editing/#mode) is `form` or `popup`, the **setCellValue** forces the component to repaint all items in the editing form. Set the [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) to **true** so the component re-renders only the fields with the changed values.
+If you use **setCellValue** and the [editing]({basewidgetpath}/Configuration/editing/).[mode]({basewidgetpath}/Configuration/editing/#mode) is `form` or `popup`, the **setCellValue** forces the component to repaint all items in the edit form. Set [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) to **true** so the component re-renders only the fields with the changed values.
 
 To perform asynchronous operations in the **setCellValue** function, return a promise from it. The following code uses this technique to get the `Tax` value from the server when the `State` value is changed:
 

@@ -4,7 +4,7 @@ type: function(newData, value, currentRowData)
 ---
 ---
 ##### shortDescription
-Specifies a function to be invoked after the user has edited a cell value, but before it will be saved in the data source.
+Specifies a function to be invoked after the user has edited a cell value, but before it is saved in the data source.
 
 ##### param(newData): Object
 The data object where new data should be set.
@@ -19,7 +19,7 @@ A read-only parameter providing access to the current row data.
 Return a promise for an asynchronous operation or return nothing.
 
 ---
-This function allows you to process user input before it is saved to the data source. It accepts the **newData**, **value**, and **currentRowData** parameters. **value** is the user input that you should assign to one of the **newData** fields. Fill the empty **newData** object with fields whose values should be saved in the current row's data object. The read-only **currentRowData** parameter can be used to access the current row's data.
+This function allows you to process user input before it is saved to the data source. It accepts the **newData**, **value**, and **currentRowData** parameters. **value** is the user input that you should assign to one of the **newData** fields. Fill the empty **newData** object with fields whose values should be saved in the current row's data object. You can use the read-only **currentRowData** parameter to access the current row's data.
 
 ---
 ##### jQuery
@@ -98,8 +98,8 @@ This function allows you to process user input before it is saved to the data so
     <template>
         <Dx{WidgetName} ... >
             <DxColumn data-field="Price" />
-            <DxColumn data-field="Count" data-type="number" />
-            <DxColumn data-field="TotalPrice" :set-cell-value="setCellValue" />
+            <DxColumn data-field="Count" data-type="number" :set-cell-value="setCellValue" />
+            <DxColumn data-field="TotalPrice" />
         </Dx{WidgetName}>
     </template>
     <script>
@@ -170,7 +170,9 @@ This function allows you to process user input before it is saved to the data so
 
 ---
 
-If you need to perform asynchronous operations in the **setCellValue** function, return a promise from it. In the following code, this technique is used to get the `Tax` value from the server when the `State` value is changed:
+If you use **setCellValue** and the [editing]({basewidgetpath}/Configuration/editing/).[mode]({basewidgetpath}/Configuration/editing/#mode) is `form` or `popup`, the **setCellValue** forces the component to repaint all items in the edit form. Set [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) to **true** so the component re-renders only the fields with the changed values.
+
+To perform asynchronous operations in the **setCellValue** function, return a promise from it. The following code uses this technique to get the `Tax` value from the server when the `State` value is changed:
 
 ---
 ##### jQuery

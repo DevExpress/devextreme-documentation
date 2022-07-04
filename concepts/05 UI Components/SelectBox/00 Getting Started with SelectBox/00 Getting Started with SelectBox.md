@@ -1,3 +1,5 @@
+#include uiwidgets-editors-choose-a-dropdown-editor
+
 #include tutorials-intro-installationnote
 
 SelectBox is an editor that allows users to select a value from a drop-down list or add a new value.
@@ -6,6 +8,6 @@ In this tutorial, we will create the SelectBox and configure its basic features.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/21_2/GettingStartedWith/SelectBox/index.html, /Content/Applications/21_2/GettingStartedWith/SelectBox/index.js, /Content/Applications/21_2/GettingStartedWith/SelectBox/index.css"></div>
 
-Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">getting-started-with-selectbox</a>.
+Each section in this tutorial describes a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">getting-started-with-selectbox</a>.
 
 [tags] dxselectbox

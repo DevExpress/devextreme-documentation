@@ -3,14 +3,13 @@ id: dxDataGrid.Options.scrolling.mode
 acceptValues: 'infinite' | 'standard' | 'virtual'
 type: String
 default: 'standard'
-firedEvents: contentReady
 ---
 ---
 ##### shortDescription
 Specifies the scrolling mode.
 
 ---
-If you change this option, the DataGrid reloads.
+If you change this property, the DataGrid reloads.
 
 The following scrolling modes are available:
 

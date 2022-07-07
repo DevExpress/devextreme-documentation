@@ -2,7 +2,7 @@ Unit testing allows you to test single features (units of the code). A unit can 
 
 The example below illustrates how to create a unit test for the DataGrid UI component. 
 
-Create a simple React application and [add DevExtereme](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#One-Command_Setup) to it. 
+Create a simple React application and [add DevExtereme](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/01%20One-Command%20Setup.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#One-Command_Setup') to it. 
 
     npx -p devextreme-cli devextreme add devextreme-react
 

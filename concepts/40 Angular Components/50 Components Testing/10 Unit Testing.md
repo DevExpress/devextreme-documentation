@@ -2,7 +2,7 @@ Unit testing allows you to test single features (units of the code). A unit can 
 
 The example below illustrates how to create a unit test for the DataGrid UI component.
 
-To get started, create an Angular application and [add DevExtreme](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/). Then, add the following imports:
+To get started, create an Angular application and [add DevExtreme](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'). Then, add the following imports:
 
     <!-- tab: app.component.spec.ts -->
     // Import dependencies

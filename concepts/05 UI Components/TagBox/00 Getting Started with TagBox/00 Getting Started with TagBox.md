@@ -1,5 +1,3 @@
-#include uiwidgets-editors-choose-a-dropdown-editor
-
 #include tutorials-intro-installationnote
 
 The TagBox is an editor that allows users to select multiple items from a drop-down list.

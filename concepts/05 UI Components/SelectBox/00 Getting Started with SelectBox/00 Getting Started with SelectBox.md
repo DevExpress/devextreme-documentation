@@ -1,5 +1,3 @@
-#include uiwidgets-editors-choose-a-dropdown-editor
-
 #include tutorials-intro-installationnote
 
 SelectBox is an editor that allows users to select a value from a drop-down list or add a new value.

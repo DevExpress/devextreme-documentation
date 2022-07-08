@@ -2,7 +2,7 @@ Integration testing helps test a component across multiple units. Integration te
 
 The example below illustrates how to test the DataGrid's functionality. The test code adds a new row, saves it, and checks the results.
 
-To get started, create a React application as described in the [Unit Testing](/Documentation/Guide/React_Components/Components_Testing/#Unit_Testing) article and add the test code. This code creates the DataGrid and calls the **addRow** and **saveEditData** methods to create a new row. Timers allow you to call methods continually since all the processes are asynchronous. The final step is to check whether the DataGrid has two visible rows — an initial row and a newly created row.
+To get started, create a React application as described in the [Unit Testing](/concepts/50%20React%20Components/60%20Components%20Testing/10%20Unit%20Testing.md '/Documentation/Guide/React_Components/Components_Testing/#Unit_Testing') article and add the test code. This code creates the DataGrid and calls the **addRow** and **saveEditData** methods to create a new row. Timers allow you to call methods continually since all the processes are asynchronous. The final step is to check whether the DataGrid has two visible rows — an initial row and a newly created row.
 
     <!--JavaScript-->
     import React from 'react';

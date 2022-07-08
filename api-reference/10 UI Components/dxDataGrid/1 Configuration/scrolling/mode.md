@@ -29,9 +29,9 @@ The component loads the next page once the scrollbar reaches the end of its scal
 
 - Set the **grouping**.[allowCollapsing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/allowCollapsing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#allowCollapsing') property to **false** when you use infinite scrolling in conjunction with grouping.
 
-- Specify the component's [height](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height) if you use virtual or infinite scrolling.
+- Specify the component's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height') if you use virtual or infinite scrolling.
 
-- Set **editing**.[refreshMode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#refreshMode) to `repaint` to support editing if you use infinite scrolling.
+- Set **editing**.[refreshMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/refreshMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#refreshMode') to `repaint` to support editing if you use infinite scrolling.
 
 [/note]
 

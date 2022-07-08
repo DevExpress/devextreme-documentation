@@ -1,5 +1,3 @@
-#include uiwidgets-editors-choose-a-dropdown-editor
-
 #include tutorials-intro-installationnote
 
 Lookup is a component that allows users to search and select an item in the drop-down list.

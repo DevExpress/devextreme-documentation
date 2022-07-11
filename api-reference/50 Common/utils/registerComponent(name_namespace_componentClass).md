@@ -17,7 +17,4 @@ The namespace.
 ##### param(componentClass): Object
 A DevExpress.Class inheritor implementing the component's functionality.
 
-##### field(componentClass.getInstance): function()
-<!-- Description goes here -->
-
 ---

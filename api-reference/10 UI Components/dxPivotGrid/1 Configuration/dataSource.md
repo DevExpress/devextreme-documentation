@@ -1,6 +1,6 @@
 ---
 id: dxPivotGrid.Options.dataSource
-type: Array<any> | PivotGridDataSource | PivotGridDataSource_Options
+type: Array<any> | PivotGridDataSource | PivotGridDataSource_Options | null
 default: null
 ---
 ---

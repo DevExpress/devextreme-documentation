@@ -79,7 +79,7 @@ $(function() {
         });
         
         $('#autocomplete').dxAutocomplete({
-            dataSource: dataSource,
+            dataSource,
             valueExpr: "Subject",
             label: "Search for a task",
             labelMode: "floating",

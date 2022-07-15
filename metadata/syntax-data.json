@@ -13016,6 +13016,9 @@
     "gridBaseOptions.stateStoring.storageKey": {
       "vue": "storage-key"
     },
+    "gridBaseOptions.syncLookupFilterValues": {
+      "vue": "sync-lookup-filter-values"
+    },
     "gridBaseOptions.twoWayBindingEnabled": {
       "vue": "two-way-binding-enabled"
     },

@@ -4561,6 +4561,9 @@
     "dxDropDownEditorOptions.useMaskedValue": {
       "vue": "use-masked-value"
     },
+    "dxDropDownEditorOptions.validationMessagePosition": {
+      "vue": "validation-message-position"
+    },
     "dxDropDownListOptions": {
       "vue": "dx-drop-down-list-options"
     },
@@ -4987,6 +4990,9 @@
     },
     "dxFileUploaderOptions.validationMessageMode": {
       "vue": "validation-message-mode"
+    },
+    "dxFileUploaderOptions.validationMessagePosition": {
+      "vue": "validation-message-position"
     },
     "dxFilterBuilder": {
       "angular": "dx-filter-builder",
@@ -11481,6 +11487,9 @@
     "editorOptions.validationMessageMode": {
       "vue": "validation-message-mode"
     },
+    "editorOptions.validationMessagePosition": {
+      "vue": "validation-message-position"
+    },
     "editorOptions.validationStatus": {
       "vue": "validation-status"
     },
@@ -13015,6 +13024,9 @@
     },
     "gridBaseOptions.stateStoring.storageKey": {
       "vue": "storage-key"
+    },
+    "gridBaseOptions.syncLookupFilterValues": {
+      "vue": "sync-lookup-filter-values"
     },
     "gridBaseOptions.twoWayBindingEnabled": {
       "vue": "two-way-binding-enabled"

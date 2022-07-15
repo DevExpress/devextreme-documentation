@@ -100,10 +100,6 @@
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxToast/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
-<td>Toolbar</td>
-<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxToolbar/Configuration/#height">height</a></td>
-</tr>
-<tr>
 <td>Tooltip</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxTooltip/Configuration/#elementAttr">elementAttr</a></td>
 </tr>

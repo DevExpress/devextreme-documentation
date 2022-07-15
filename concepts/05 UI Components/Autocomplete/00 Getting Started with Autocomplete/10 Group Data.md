@@ -22,7 +22,7 @@ If data objects are grouped but use other field names, implement the [DataSource
 
 [note]Only one-level grouping is supported.
 
-Regardless of the data source structure, enable the [grouped](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#grouped) property.
+Regardless of the data source structure, enable the [grouped](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#grouped) property.
 
 The following code groups the data source by `Assignee` field and supplies it to the component:
 
@@ -41,7 +41,7 @@ The following code groups the data source by `Assignee` field and supplies it to
         });
 
         $("#autocomplete").dxAutocomplete({
-            dataSource: dataSource,
+            dataSource,
             valueExpr: "Subject",
             grouped: true
         });

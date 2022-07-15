@@ -247,8 +247,8 @@ The code below specifies the [dataSource](/Documentation/ApiReference/UI_Compone
         <DxAutocomplete 
             :data-source="employeesTasks"
             value-expr="Subject"
-        >
-        </DxAutocomplete>
+        />
+     
     </template>
 
     <script>
@@ -351,8 +351,7 @@ The code below specifies the [dataSource](/Documentation/ApiReference/UI_Compone
             <Autocomplete
                 dataSource={employeesTasks}
                 valueExpr="Subject"
-            >
-            </Autocomplete>
+            />
         );
     }
 

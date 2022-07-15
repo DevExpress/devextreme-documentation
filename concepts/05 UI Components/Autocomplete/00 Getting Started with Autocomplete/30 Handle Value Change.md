@@ -1,4 +1,4 @@
-Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#onValueChanged) handler to perform an action when a user selects an item or types in the Autocomplete text field. In the code below, this function logs previous and new values in the console.
+Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#onValueChanged) handler to perform an action when a user selects an item or types in the Autocomplete text field. In the code example below, this function logs previous and new values in the console.
 
 ---
 ##### jQuery

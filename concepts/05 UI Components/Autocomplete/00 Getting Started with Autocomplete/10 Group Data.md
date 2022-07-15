@@ -18,13 +18,13 @@ The component can also work with initially grouped data items. In this case, the
         ]
     }];
 
-If data objects are grouped but use other field names, implement the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/)'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group)'s [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function to create `key` and `items` field mappings.
+If data objects are grouped but use other field names, implement the [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function of the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/)'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) to create `key` and `items` field mappings.
 
 [note]Only one-level grouping is supported.
 
 Regardless of the data source structure, enable the [grouped](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#grouped) property.
 
-The following code groups the data source by `Assignee` field and supplies it to the component:
+The following code example groups the data source by `Assignee` field and supplies it to the component:
 
 ---
 ##### jQuery

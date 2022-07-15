@@ -1,4 +1,4 @@
-To create an Autocomplete, declare the component in the markup and bind it to a data source.
+To create an Autocomplete component, declare it in the markup and bind the component to a data source.
 
 Use one of the following properties to supply data to the component:
 
@@ -8,9 +8,9 @@ Accepts a local data array.
 - [dataSource](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource)            
 Accepts a local data array, [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) object, or DevExtreme data store.
 
-If the data source contains objects, you should specify the [valueExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) property. It accepts a data field name that uniquely identifies each data object.
+If the data source contains objects, you should specify the [valueExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) property. It accepts the name of the data field that uniquely identifies each data object.
 
-The code below specifies the [dataSource](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource) as an array and sets [valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) to `Subject`.
+The code example below specifies the [dataSource](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource) as an array and sets [valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) to `Subject`.
 
 ---
 ##### jQuery

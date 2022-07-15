@@ -1,10 +1,15 @@
-Usually, the data field that supplies Autocomplete with suggestions ([valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr)) is the same data field that is searched for the typed text. If you use two different fields, assign the field that supplies Autocomplete with suggestions to the [valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) property and the field to be searched to the [searchExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchExpr) property. Note that [searchExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchExpr) also accepts arrays if you want to search multiple fields.
+Usually, the data field that supplies Autocomplete with suggestions ([valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr)) is the same data field where users search text. If you use two different fields, do the following:
 
-The Autocomplete can supply suggestions in two different modes: *'contains'* (default) and *'startswith'*. You can use the [searchMode](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode) property to change the mode.
+* Assign the field that supplies Autocomplete with suggestions to the [valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) property.
+* Assign the field for search queries to the [searchExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchExpr) property.
 
-When a user types the first character, Autocomplete displays suggestions. To increase the number of characters that triggers suggestions, use the [minSearchLength](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength) property. To limit the number of characters that user can type in, use the [maxLength](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#maxLength) property. You can also specify the time interval Autocomplete should wait before it displays suggestions. Assign this time interval in milliseconds to the [searchTimeout](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchTimeout) property.
+Note that [searchExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchExpr) also accepts arrays if you want to search by multiple fields.
 
-The following code specifies two search settings properties: [searchTimeout](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchTimeout) and [maxLength](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#maxLength).
+The Autocomplete component can supply suggestions in two different modes: *'contains'* (default) and *'startswith'*. You can use the [searchMode](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode) property to change the mode.
+
+When a user types the first character, Autocomplete displays suggestions. To increase the threshold number of typed characters, use the [minSearchLength](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength) property. To limit the maximum number of characters that a user can type in, use the [maxLength](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#maxLength) property. You can also specify the time interval before the Autocomplete component displays a suggestion after user input. Assign this time interval in milliseconds to the [searchTimeout](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchTimeout) property.
+
+The following code example specifies the [searchTimeout](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchTimeout) and [maxLength](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#maxLength) properties:
 
 ---
 ##### jQuery

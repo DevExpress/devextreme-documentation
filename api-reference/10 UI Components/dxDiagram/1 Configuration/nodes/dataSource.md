@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.dataSource
-type: Store | DataSource | DataSource_Options | String | Array<any>
+type: Store | DataSource | DataSource_Options | String | Array<any> | null
 default: null
 ---
 ---

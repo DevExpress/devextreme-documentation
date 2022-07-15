@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.dataSource
-type: String | Array<dxSchedulerAppointment> | Store | DataSource | DataSource_Options
+type: String | Array<dxSchedulerAppointment> | Store | DataSource | DataSource_Options | null
 default: null
 ---
 ---

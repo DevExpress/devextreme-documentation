@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.headerFilter.dataSource
-type: Array<any> | Store | DataSource_Options | function(options)
+type: Array<any> | Store | DataSource_Options | function(options) | null
 default: undefined
 ---
 ---
@@ -13,7 +13,7 @@ Data source properties.
 ##### field(options.component): Object
 The UI component's instance.
 
-##### field(options.dataSource): DataSource_Options
+##### field(options.dataSource): DataSource_Options | null
 A DataSource configuration.
 
 ##### return: Array<any> | Store | DataSource_Options

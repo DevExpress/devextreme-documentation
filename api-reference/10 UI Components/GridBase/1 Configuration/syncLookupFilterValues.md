@@ -5,7 +5,25 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not to show only relevant values in the [header filter]({basewidgetpath}/Configuration/headerFilter/) and [filter row]({basewidgetpath}/Configuration/filterRow/).
 
 ---
-<!-- Description goes here -->
+The following table shows how the component behaves when you assign different values to this property. The 'State' column is filtered by the 'Alabama' value. If you set the **syncLookupFilterValues** to `false`, the 'City' column's header filter and filter row display all the cities instead of showing cities that belong to Alabama only. 
+
+<table class="dx-table">
+    <tr>
+        <th>Filter type</th>
+        <th><code>false</code></th>
+        <th><code>true</code></th>
+    </tr>
+    <tr>
+        <td>Filter row</td>
+        <td><img src="/images/DataGrid/sync-lookup-filter-values/filter-row-false.png" alt="Filter row is not synced with Grid values" /></td>
+        <td><img src="/images/DataGrid/sync-lookup-filter-values/filter-row-true.png" alt="Filter row is synced with Grid values" /></td>
+    </tr>
+    <tr>
+        <td>Header filter</td>
+        <td><img src="/images/DataGrid/sync-lookup-filter-values/header-filter-false.png" alt="Header filter is not synced with Grid values" /></td>
+        <td><img src="/images/DataGrid/sync-lookup-filter-values/header-filter-true.png" alt="Header filter is synced with Grid values" /></td>
+    </tr>
+</table>

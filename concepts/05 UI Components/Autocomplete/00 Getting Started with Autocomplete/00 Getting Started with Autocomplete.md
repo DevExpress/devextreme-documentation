@@ -1,5 +1,3 @@
-#include uiwidgets-editors-choose-a-dropdown-editor
-
 #include tutorials-intro-installationnote
 
 Autocomplete is a text box that displays suggestions while a user types.

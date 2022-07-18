@@ -1,6 +1,6 @@
 You can group data items in the Autocomplete drop-down list.
 
-If the data source contains ungrouped data items, use the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/)'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) property to specify the data field to group by.
+If the data source contains ungrouped data items, use the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/)'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) property to specify the data field by which to group.
 
 The component can also work with initially grouped data items. In this case, the data array should contain objects with the `key` and `items` fields:
 
@@ -24,7 +24,7 @@ If data objects are grouped but use other field names, implement the [map](/Docu
 
 Regardless of the data source structure, enable the [grouped](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#grouped) property.
 
-The following code example groups the data source by `Assignee` field and supplies it to the component:
+The following code example groups the data source by the `Assignee` field and supplies it to the component:
 
 ---
 ##### jQuery

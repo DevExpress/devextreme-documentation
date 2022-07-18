@@ -13,15 +13,15 @@ Configures the DevExtreme UI component used as a toolbar item.
 
 ##### jQuery
 
-  $('#toolbar').dxToolbar({
-    items: [{
-      <!-- ... -->
-      widget: 'dxCheckBox',
-      options: {
-        text: 'Show IDs'
-      },
-    }]
-  });
+    $('#toolbar').dxToolbar({
+        items: [{
+            // ...
+            widget: 'dxCheckBox',
+            options: {
+                text: 'Show IDs'
+            },
+        }]
+    });
 
 ##### Angular
 

@@ -30,3 +30,5 @@ The **dateRange** property accepts the following values:
         }
 
 Refer to the [pdfExporter.exportGantt(options)](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') topic to see an example.
+
+Note that the `startDate` and `endDate` properties do not filter Gantt tasks. For example, the exported Gantt chart displays rows even if their tasks are invisible within the specified date range. 

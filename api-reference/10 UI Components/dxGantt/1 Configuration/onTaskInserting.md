@@ -29,6 +29,8 @@ The values of the inserted task.
 
 ![DevExtreme Gantt Chart - Task Element](/images/Gantt/task-element.png)
 
+Note that you should not specify a task ID in the `onTaskInserting` function. 
+
 ---
 
 ##### jQuery

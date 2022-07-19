@@ -2,15 +2,15 @@ To create an Autocomplete component, declare it in the markup and bind the compo
 
 Use one of the following properties to supply data to the component:
 
-- [items](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/)             
+- [items](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/')             
 Accepts a local data array.
 
-- [dataSource](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource)            
-Accepts a local data array, [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) object, or DevExtreme data store.
+- [dataSource](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource')            
+Accepts a local data array, [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object, or DevExtreme data store.
 
-If the data source contains objects, you should specify the [valueExpr](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) property. It accepts the name of the data field that uniquely identifies each data object.
+If the data source contains objects, you should specify the [valueExpr](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr') property. It accepts the name of the data field that uniquely identifies each data object.
 
-The code example below specifies the [dataSource](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource) as an array and sets [valueExpr](Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr) to `Subject`.
+The code example below specifies the [dataSource](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#dataSource') as an array and sets [valueExpr](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/valueExpr.md 'Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#valueExpr') to `Subject`.
 
 ---
 ##### jQuery

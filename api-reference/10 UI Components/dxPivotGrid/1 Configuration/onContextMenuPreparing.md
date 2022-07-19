@@ -76,8 +76,9 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
                     // Add a custom menu item
                     e.items.push({
                         text: 'test name',
+                        value: '1',
                         onItemClick() {
-                            console.log('item clicked');
+                            console.log('value is ' + e.itemData.value);
                         }
                     });
                 }
@@ -108,8 +109,9 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
                 // Add a custom menu item
                 e.items.push({
                     text: 'test name',
+                    value: '1',
                     onItemClick() {
-                        console.log('item clicked');
+                        console.log('value is ' + e.itemData.value);
                     }
                 });
             }
@@ -167,8 +169,9 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
                     // Add a custom menu item
                     e.items.push({
                         text: 'test name',
+                        value: '1',
                         onItemClick() {
-                            console.log('item clicked');
+                            console.log('value is ' + e.itemData.value);
                         }
                     });
                 }
@@ -195,8 +198,9 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
                 // Add a custom menu item
                 e.items.push({
                     text: 'test name',
+                    value: '1',
                     onItemClick() {
-                        console.log('item clicked');
+                        console.log('value is ' + e.itemData.value);
                     }
                 });
             }

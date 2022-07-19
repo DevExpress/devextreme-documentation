@@ -1,4 +1,14 @@
-Wrap the view in the Drawer and specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. Inside the **template**, set the Drawer's width. You can use the nested UI component's **width** property for this (see [Implement Navigation](/concepts/05%20UI%20Components/Drawer/Getting%20Started%20with%20Navigation%20Drawer/15%20Implement%20Navigation.md '/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation')), but this tutorial uses the `width` CSS property. The Drawer's height adjusts to the view's height (specified via the [height](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height') property).
+To create the Drawer component, you need to specify its content [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template'). The image below shows the difference between the Drawer content and the view content:
+
+![DevExtreme HTML5 JavaScript Drawer](/images/UiWidgets/drawer.png)
+
+Wrap the view in the Drawer in HTML markup,. Then, specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. 
+
+It is important to specify Drawer's dimensions: [height](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#width). Alternatively, if you implement a UI component inside the Drawer content, you can specify the component's **width** property (see [Implement Navigation](https://js.devexpress.com/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation)) and set the view's **height**. The Drawer's height adjusts to the view's height in this case. 
+
+[note]You cannot set the Drawer's height or width in percentages.
+
+This tutorial uses the `width` CSS property of the Drawer's nested html element and specifies the component's [height](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) property.
 
 In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible in the closed state. 
 

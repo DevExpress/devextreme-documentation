@@ -1,14 +1,5 @@
----
-id: Editor.Options.validationMessagePosition
-acceptValues: 'bottom' | 'left' | 'right' | 'top'
-type: String
-default: 'bottom'
----
----
-##### shortDescription
-Specifies the position of a validation message relative to the component. The validation message describes the [validation rules](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/) that this component's value does not satisfy.
+This property also applies position rules to the component's [inner validation message](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#invalidValueMessage).
 
----
 The following example positions a validation message at the component's right:
 
 ---

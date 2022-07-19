@@ -8,7 +8,7 @@ default: true
 Specifies whether to show only relevant values in the [header filter]({basewidgetpath}/Configuration/headerFilter/) and [filter row]({basewidgetpath}/Configuration/filterRow/).
 
 ---
-The following table shows how the component behaves when you assign different values to this property. The 'State' column is filtered by the 'Alabama' value. If you set the **syncLookupFilterValues** to `false`, the 'City' column's header filter and filter row display all the cities instead of showing cities that belong to Alabama only. 
+The following table shows how the component behaves when you assign different values to this property. The 'State' column is filtered by the 'Alabama' value. If you set the **syncLookupFilterValues** to `false`, the 'City' column's header filter and filter row display all cities instead of showing cities within Alabama only.
 
 <table class="dx-table">
     <tr>

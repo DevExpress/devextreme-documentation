@@ -1,6 +1,6 @@
 You can group data items in the Autocomplete drop-down list.
 
-If the data source contains ungrouped data items, use the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/)'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) property to specify the data field by which to group.
+If the data source contains ungrouped data items, use the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/')'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property to specify the data field by which to group.
 
 The component can also work with initially grouped data items. In this case, the data array should contain objects with the `key` and `items` fields:
 
@@ -18,11 +18,11 @@ The component can also work with initially grouped data items. In this case, the
         ]
     }];
 
-If data objects are grouped but use other field names, implement the [map](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map) function of the [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/)'s [group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) to create `key` and `items` field mappings.
+If data objects are grouped but use other field names, implement the [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') function of the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/')'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') to create `key` and `items` field mappings.
 
 [note]Only one-level grouping is supported.
 
-Regardless of the data source structure, enable the [grouped](/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#grouped) property.
+Regardless of the data source structure, enable the [grouped](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#grouped') property.
 
 The following code example groups the data source by the `Assignee` field and supplies it to the component:
 

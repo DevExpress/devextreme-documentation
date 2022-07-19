@@ -38,3 +38,5 @@ An XMLHttpRequest for the file.
 The size of the uploaded file segment.
 
 ---
+
+Note that the `onProgress` function is not in effect if you use FileUploader in `useForm` [upload mode](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode) or call the [form.submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) method.

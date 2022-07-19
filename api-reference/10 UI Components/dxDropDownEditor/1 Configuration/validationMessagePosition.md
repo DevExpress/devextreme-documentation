@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies the position of a validation message relative to the component. A validation message is a message about the [validation rules](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/) that this component's value does not satisfy.
+Specifies the position of a validation message relative to the component. The validation message describes the [validation rules](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/) that this component's value does not satisfy.
 
 ---
 If you set this property to `auto`, the component specifies the validation message position automatically.

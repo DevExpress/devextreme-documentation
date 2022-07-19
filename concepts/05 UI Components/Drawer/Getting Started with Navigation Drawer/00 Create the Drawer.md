@@ -2,7 +2,7 @@ To create the Drawer component, you need to specify its content [template](/api-
 
 ![DevExtreme HTML5 JavaScript Drawer](/images/UiWidgets/drawer.png)
 
-Wrap the view in the Drawer in HTML markup,. Then, specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. 
+Wrap the view in the Drawer in HTML markup. Then, specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. 
 
 It is important to specify Drawer's dimensions: [height](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#width). Alternatively, if you implement a UI component inside the Drawer content, you can specify the component's **width** property (see [Implement Navigation](https://js.devexpress.com/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation)) and set the view's **height**. The Drawer's height adjusts to the view's height in this case. 
 

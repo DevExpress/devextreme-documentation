@@ -4,13 +4,13 @@ To create the Drawer component, you need to specify its content [template](/api-
 
 Wrap the view in the Drawer in HTML markup. Then, specify a [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') for the Drawer's content. 
 
-It is important to specify Drawer's dimensions: [height](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#width). Alternatively, if you implement a UI component inside the Drawer content, you can specify the component's **width** property (see [Implement Navigation](https://js.devexpress.com/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation)) and set the view's **height**. The Drawer's height adjusts to the view's height in this case. 
+It is important to specify the Drawer's [height](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#width). Alternatively, if you implement a UI component within the Drawer component's content, you can specify the component's **width** property and set the view's **height**. The Drawer's height automatically adjusts to the view's height in this case. Refer to the following topic for details: [Implement Navigation](https://js.devexpress.com/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/#Implement_Navigation).
 
-[note]You cannot set the Drawer's height or width in percentages.
+[note]You cannot set the Drawer's height or width as a percentage.
 
 This tutorial uses the `width` CSS property of the Drawer's nested html element and specifies the component's [height](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) property.
 
-In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible in the closed state. 
+In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible in closed state. 
 
 ---
 ##### jQuery

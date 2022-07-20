@@ -56,14 +56,20 @@ This property accepts one of the following values:
 
     ---
 
-- A jQuery wrapper
+- A jQuery wrapper    
 
-    <!--tab: index.js-->$(function(){
+    ---
+    ##### jQuery
+
+        <!--tab: index.js-->
+        $(function(){
             $("#{widgetName}Container").dx{WidgetName}({
                 // ...
                 target: $('#targetElement')
             });
         });
+
+    ---
 
 - A DOM element
 
@@ -82,7 +88,7 @@ This property accepts one of the following values:
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... 
-            target="targetElement"
+            [target]="targetElement"
         >
         </dx-{widget-name}>
 
@@ -100,7 +106,7 @@ This property accepts one of the following values:
         <!-- tab: App.vue -->
         <template>
             <Dx{WidgetName} ... 
-                target="#targetElement"
+                :target="targetElement"
             >
             </Dx{WidgetName}>
         </template>
@@ -110,6 +116,14 @@ This property accepts one of the following values:
         export default {
             components: {
                 Dx{WidgetName}
+            },
+            data() {
+                return {
+                    targetElement: null
+                }
+            },
+            mounted() {
+                this.targetElement = document.getElementById('targetElement');
             }
         };
         </script>
@@ -117,12 +131,17 @@ This property accepts one of the following values:
     ##### React
 
         <!-- tab: App.js -->
+        import React, { useEffect, useState } from 'react';
         import {WidgetName} from 'devextreme-react/{widget-name}';
         // ...
         function App() {
+            const [targetElement, setTargetElement] = useState(null);
+            useEffect(() => {
+                setTargetElement(document.getElementById('targetElement'));
+            }, []);
             return (
                 <{WidgetName} ... 
-                    target="#targetElement"
+                    target={targetElement}
                 >
                 </{WidgetName}>
             );

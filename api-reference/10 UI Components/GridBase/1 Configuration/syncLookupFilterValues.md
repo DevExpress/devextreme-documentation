@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether to show only relevant values in the [header filter]({basewidgetpath}/Configuration/headerFilter/) and [filter row]({basewidgetpath}/Configuration/filterRow/).
+Specifies whether to show only relevant values in the [header filter](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter '{basewidgetpath}/Configuration/headerFilter/') and [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
 
 ---
 The following table shows how the component behaves when you assign different values to this property. The 'State' column is filtered by the 'Alabama' value. If you set the **syncLookupFilterValues** to `false`, the 'City' column's header filter and filter row display all cities instead of showing cities within Alabama only.

@@ -1,4 +1,4 @@
-To create the Drawer component, you need to specify its content [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template'). The image below shows the difference between the Drawer content and the view content:
+To create the Drawer component, you need to specify its content [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template'). The image below shows the difference between Drawer and view content:
 
 ![DevExtreme HTML5 JavaScript Drawer](/images/UiWidgets/drawer.png)
 
@@ -8,9 +8,9 @@ It is important to specify the Drawer's [height](/Documentation/ApiReference/UI_
 
 [note]You cannot set the Drawer's height or width as a percentage.
 
-This tutorial uses the `width` CSS property of the Drawer's nested html element and specifies the component's [height](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) property.
+This tutorial uses the `width` CSS property of the Drawer's nested HTML element and specifies the component's [height](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) property.
 
-In addition, you can specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible in closed state. 
+You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible when it is closed. 
 
 ---
 ##### jQuery

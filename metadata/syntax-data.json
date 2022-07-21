@@ -897,6 +897,9 @@
       "react": "DxAccordionItem",
       "vue": "DxAccordionItem"
     },
+    "dxAccordionItem.titleTemplate": {
+      "vue": "title-template"
+    },
     "dxAccordionOptions.animationDuration": {
       "vue": "animation-duration"
     },

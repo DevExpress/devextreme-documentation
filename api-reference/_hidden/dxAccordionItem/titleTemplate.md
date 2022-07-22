@@ -10,7 +10,7 @@ Specifies a template that should be used to render the title for this item only.
 A template name or container.
 
 ---
-The following types of the specified value are available.
+The following types of the specified value are available:
 
 - Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
 - Assign a jQuery object of the template's container.

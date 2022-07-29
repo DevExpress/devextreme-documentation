@@ -8,7 +8,7 @@ It is important to specify the Drawer's [height](/api-reference/10%20UI%20Compon
 
 [note]You cannot set the Drawer's height or width as a percentage.
 
-This tutorial uses the `width` CSS property of the Drawer's nested HTML element and specifies the component's [height](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height) property.
+This tutorial uses the `width` CSS property of the Drawer's nested HTML element and specifies the component's [height](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#height') property.
 
 You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to make the Drawer partially visible when it is closed. 
 

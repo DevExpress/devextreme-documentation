@@ -1,7 +1,7 @@
 ---
 id: dxPopover.Options.animation
 type: Object
-default: { show: { type: 'fade', from: 0, to: 1 }, hide: { type: 'fade', to: 0 } }
+default: { show: { type: 'fade', from: 0, to: 1 }, hide: { type: 'fade', from: 1, to: 0 } }
 ---
 ---
 ##### shortDescription

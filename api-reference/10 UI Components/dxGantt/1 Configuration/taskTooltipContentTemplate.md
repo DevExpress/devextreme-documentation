@@ -27,7 +27,7 @@ Note that the **container** parameter contains the content of the default toolti
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         $("#gantt").dxGantt({
             taskTooltipContentTemplate: getTaskTooltipContentTemplate,
@@ -38,7 +38,6 @@ Note that the **container** parameter contains the content of the default toolti
     function getTaskTooltipContentTemplate(task, container) {
         var $customTooltip = $(document.createElement("div"))
             .addClass("custom-task-edit-tooltip");
-​
         $(document.createElement("div"))
             .addClass("custom-tooltip-title")
             .text(task.title)

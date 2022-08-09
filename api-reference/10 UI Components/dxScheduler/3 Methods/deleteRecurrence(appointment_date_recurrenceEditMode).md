@@ -50,26 +50,22 @@ An edit mode for recurring appointments.
     </dx-scheduler>
 
     <!-- tab: app.component.ts -->
-    import { Component, ViewChild } from "@angular/core";
+    import { Component } from "@angular/core";
     import { Appointment, Service } from './app.service';
-    import { DxSchedulerComponent } from "devextreme-angular";
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
     export class AppComponent  {
-        @ViewChild(DxSchedulerComponent, { static: false }) scheduler: DxSchedulerComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxSchedulerComponent) scheduler: DxSchedulerComponent;
         appointments: Appointment[];
 
         constructor(service: Service) {
             this.appointments = service.getAppointments();
         }
 
-        deleteAppointment(e: any) {
-            this.scheduler.instance.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'occurrence');
+        deleteAppointment(e) {
+            e.component.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'occurrence');
         }
     }
 
@@ -128,7 +124,6 @@ An edit mode for recurring appointments.
     <!-- tab: App.vue -->
     <template>
         <DxScheduler ...
-            :ref="schedulerRef"
             :data-source="dataSource"
             @appointment-click="deleteRecurrence"
         />
@@ -136,11 +131,8 @@ An edit mode for recurring appointments.
 
     <script>
     import 'devextreme/dist/css/dx.light.css';
-
     import DxScheduler from 'devextreme-vue/scheduler';
     import { appointments } from './data.js';
-
-    const schedulerRef = "scheduler";
 
     export default {
         components: {
@@ -148,19 +140,13 @@ An edit mode for recurring appointments.
         },
         data() {
             return {
-                schedulerRef,
                 dataSource: appointments
             };
         },
         methods: {
             deleteRecurrence(e) {
-                this.scheduler.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'occurrence');
+                e.component.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'occurrence');
             } 
-        },
-        computed: {
-            scheduler: function() {
-                return this.$refs[schedulerRef].instance;
-            }
         }
     };
     </script>
@@ -178,20 +164,17 @@ An edit mode for recurring appointments.
 #####React
 
     <!-- tab: App.js -->
-    import React, { useRef, useCallback } from 'react';
+    import React, { useCallback } from 'react';
     import Scheduler from 'devextreme-react/scheduler';
     import { appointments } from './data.js';
 
     function App() {
-        const scheduler = useRef(null);
-
         const deleteRecurrence = useCallback((e) => { 
-            scheduler.current.instance.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'occurrence');
+            e.component.deleteRecurrence(e.appointmentData, e.targetedAppointmentData.startDate, 'occurrence');
         }, []);
 
         return (
             <Scheduler ...
-                ref={scheduler}
                 dataSource={appointments}
                 onAppointmentClick={deleteRecurrence} 
             />

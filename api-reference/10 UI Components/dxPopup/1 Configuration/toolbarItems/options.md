@@ -1,18 +1,9 @@
----
-id: dxPopup.Options.toolbarItems.options
-type: any
----
----
-##### shortDescription
-Configures the DevExtreme UI component used as a toolbar item.
-
----
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/",
     name: "Popup"
 }
 
-**options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#widget') property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
+**options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#widget') property. Because of this dependency, you cannot type and implement **options** as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
 
 ---
 
@@ -104,19 +95,16 @@ Configures the DevExtreme UI component used as a toolbar item.
         ToolbarItem
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
+    function App() {
         checkBoxOptions = { text: 'Show IDs' };
-
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <ToolbarItem
-                        widget="dxCheckBox"
-                        options={this.checkBoxOptions}
-                    />
-                </{WidgetName}>
-            );
-        }
+        return (
+            <{WidgetName} ... >
+                <ToolbarItem
+                    widget="dxCheckBox"
+                    options={this.checkBoxOptions}
+                />
+            </{WidgetName}>
+        );
     }
     export default App;
 

@@ -8611,6 +8611,11 @@
       "react": "ToolbarItem",
       "vue": "DxToolbarItem"
     },
+    "dxPopupToolbarItem": {
+      "angular": "dxo-popup-toolbar-item",
+      "react": "DxPopupToolbarItem",
+      "vue": "DxPopupToolbarItem"
+    },
     "dxProgressBar": {
       "angular": "dx-progress-bar",
       "react": "ProgressBar",

@@ -1,12 +1,3 @@
----
-id: dxPopup.Options.toolbarItems.options
-type: any
----
----
-##### shortDescription
-Configures the DevExtreme UI component used as a toolbar item.
-
----
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/",
     name: "Popup"
@@ -104,19 +95,16 @@ Configures the DevExtreme UI component used as a toolbar item.
         ToolbarItem
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
+    function App() {
         checkBoxOptions = { text: 'Show IDs' };
-
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <ToolbarItem
-                        widget="dxCheckBox"
-                        options={this.checkBoxOptions}
-                    />
-                </{WidgetName}>
-            );
-        }
+        return (
+            <{WidgetName} ... >
+                <ToolbarItem
+                    widget="dxCheckBox"
+                    options={this.checkBoxOptions}
+                />
+            </{WidgetName}>
+        );
     }
     export default App;
 

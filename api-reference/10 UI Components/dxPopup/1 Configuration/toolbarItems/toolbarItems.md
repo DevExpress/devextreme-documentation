@@ -1,8 +1,6 @@
 ---
 id: dxPopup.Options.toolbarItems
-module: ui/popup
-export: ToolbarItem
-inherits: dxToolbarItem
+type: Array<dxPopupToolbarItem>
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 id: dxPopup.Options.toolbarItems
 type: Array<dxPopupToolbarItem>
+inheritsType: dxPopupToolbarItem
 ---
 ---
 ##### shortDescription

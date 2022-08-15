@@ -209,7 +209,7 @@ With Angular, Vue, or React, use a different technique. Bind the [value](/api-re
     <!-- tab: App.vue -->
     <template>
         <DxFileUploader ...
-            v-model:value="value"
+            @value-changed="e => value = e.value"
         />
         </div>
     </template>

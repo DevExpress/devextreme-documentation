@@ -4,7 +4,7 @@ If an object literal does not require an access to the variables, you can extrac
     function App() {
     // ...
     return (
-            <!-- ... -->
+        <!-- ... -->
             <Item
                 dataField="Position"
                 editorType="dxSelectBox"

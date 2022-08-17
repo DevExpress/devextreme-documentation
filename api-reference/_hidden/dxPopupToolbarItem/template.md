@@ -109,7 +109,6 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
     }
 
     function App() {
-        checkBoxOptions = { text: 'Show IDs' };
         return (
             <{WidgetName} ... >
                 <ToolbarItem ... 

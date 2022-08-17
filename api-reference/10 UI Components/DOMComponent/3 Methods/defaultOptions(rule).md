@@ -8,7 +8,7 @@ Specifies the device-dependent default configuration properties for this compone
 ##### param(rule): Object
 The component's default device properties.
 
-##### field(rule.device): Device | Array<Device> | function()
+##### field(rule.device): Device | function()
 [Device parameters](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/').      
 When you specify a function, get information about the current device from the argument. Return **true** if the properties should be applied to the device.
 

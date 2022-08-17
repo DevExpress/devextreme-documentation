@@ -1,1 +1,0 @@
-When children elements specify [key](https://reactjs.org/docs/lists-and-keys.html#keys) attributes, React uses the keys to compare the children of current and previous VDOM nodes. Keys allow children components to stay stable between renders.

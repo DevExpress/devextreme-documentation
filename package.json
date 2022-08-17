@@ -9,7 +9,7 @@
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
-    "devextreme-internal-tools": "^8.0.0"
+    "devextreme-internal-tools": "^9.1.0"
   },
   "scripts": {
     "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 22.1 --syntaxdata-path ./metadata/syntax-data.json",

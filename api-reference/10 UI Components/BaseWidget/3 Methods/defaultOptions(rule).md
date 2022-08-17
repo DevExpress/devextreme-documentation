@@ -8,7 +8,7 @@ hidden:
 ##### param(rule): Object
 <!-- Description goes here -->
 
-##### field(rule.device): Device | Array<Device> | function()
+##### field(rule.device): Device | function()
 <!-- Description goes here -->
 
 ##### field(rule.options): Object

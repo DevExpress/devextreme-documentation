@@ -31,7 +31,7 @@ Do not use properties that exist as nested components inside the component marku
 
 If an object literal does not require an access to component properties, you can extract if from the function body.
 
-	<!-- tab: App.js -->// Incorrect:
+    <!-- tab: App.js -->// Incorrect:
     function App() {
         // ...
         return (
@@ -50,7 +50,7 @@ If an object literal does not require an access to component properties, you can
 
     export default App;
 	
-	// Correct:
+    // Correct:
     const options = {
         items: positions,
         searchEnabled: true,

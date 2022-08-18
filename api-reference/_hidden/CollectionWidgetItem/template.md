@@ -26,7 +26,7 @@ The following types of the specified value are available.
 - Assign a DOM Node of the template's container.
 - Assign a function that returns the jQuery object or a DOM Node of the template's container.
 
-The following example adds a custom item to the component. Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '{basewidgetpath}/Configuration/items/#render') or [component]({basewidgetpath}/Configuration/items/#component) properties.
+The following example adds a custom item to the component. Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '{basewidgetpath}/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '{basewidgetpath}/Configuration/items/#component') properties.
 
 ---
 ##### jQuery

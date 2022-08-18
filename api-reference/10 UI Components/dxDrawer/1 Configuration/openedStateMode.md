@@ -20,6 +20,8 @@ The view's width decreases to accommodate the drawer.
 - *"push"*      
 The drawer partially displaces the view.
 
+Note that if the value of this property changes, the Drawer [template](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template) is re-rendered.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/HorizontalOpening/"
 }

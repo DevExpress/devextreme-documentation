@@ -18,7 +18,7 @@ A template name or container.
 
 This property specifies the drawer's content. To specify the view's content, nest it inside the Drawer's markup element as shown in the code below.
 
-[important] Always specify a fixed width for the drawer's content. This width is used to calculate the drawer's width.
+[important] Always specify a fixed width for the drawer's content because this is used to calculate the drawer's width. If the drawer is [positioned](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#position) on the y-axis, specify a fixed height for the drawer's content because it determines the drawer's height.
 
 ---
 ##### jQuery

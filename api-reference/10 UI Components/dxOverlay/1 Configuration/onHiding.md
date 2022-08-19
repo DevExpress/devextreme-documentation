@@ -10,7 +10,7 @@ A function that is executed before the UI component is hidden.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.cancel): Boolean
+##### field(e.cancel): Boolean | Promise<Boolean>
 Set this field to **true** if you want the {WidgetName} to remain visible.
 
 ##### field(e.component): {WidgetName}

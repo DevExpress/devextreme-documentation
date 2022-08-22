@@ -157,18 +157,16 @@ You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/
     import { Drawer } from "devextreme-react/drawer";
 
     function NavigationDrawer() {
-        render() {
-            return (
-                <React.Fragment>
-                    <Drawer
-                        minSize={37}
-                        height={250}
-                        render={ () => <div style={{width: 150 + "px"}}>Drawer content</div> }
-                        <div>View content</div>
-                    </Drawer>
-                </React.Fragment>
-            );
-        }
+        return (
+            <div>
+                <Drawer
+                    minSize={37}
+                    height={250}
+                    render={ () => <div style={{width: 150 + "px"}}>Drawer content</div> }
+                    <div>View content</div>
+                </Drawer>
+            </div>
+        );
     }
 
     export default NavigationDrawer;

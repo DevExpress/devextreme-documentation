@@ -39,7 +39,7 @@ When the Drawer opens, it can overlap, shrink, or partially displace the view, d
 
     <!-- tab: NavigationDrawer.js -->
     // ...
-    class NavigationDrawer extends React.Component {
+    function NavigationDrawer() {
         // ...
         render() {
             return (
@@ -52,6 +52,7 @@ When the Drawer opens, it can overlap, shrink, or partially displace the view, d
             );
         }
     }
+
     export default NavigationDrawer;
 
 ##### ASP.NET MVC Controls

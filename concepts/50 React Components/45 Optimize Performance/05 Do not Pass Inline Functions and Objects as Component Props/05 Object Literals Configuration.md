@@ -1,4 +1,4 @@
-Do not use properties that exist as nested components inside the component markup:
+Most properties of DevExtreme React Components are implemented as nested configuration components. Do not use objects to specify these properties:
 
     <!-- tab: App.js -->// Incorrect:
     function App() {
@@ -29,7 +29,7 @@ Do not use properties that exist as nested components inside the component marku
     url: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-z2bigu?file=/App.js:"
 }
 
-If an object literal does not require an access to component properties, you can extract if from the function body:
+If you need to use objects, define them outside component class or function body or wrap them in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook as shown in the following code. In class components, use the constructor to assign the objects to class properties.
 
     <!-- tab: App.js -->// Incorrect:
     function App() {
@@ -116,7 +116,6 @@ If an element includes a component variable, wrap this element in the [useMemo](
         );
     }
 
-If you use class components, declare a variable in the constructor.
 
 #include common-githubbutton with {
     url: "https://codesandbox.io/s/list-non-working-selection-forked-t76knr?file=/App.js"

@@ -1,4 +1,4 @@
-If the in-line handlers do not require an access to the component variables, keep them out of the component body. Otherwise, keep them out of the render function (if you use class components) or wrap them in the [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) hook (if you use functions).
+Extract inline handlers from the component class or function body. As an alternative, you can leave them within the component, but in this case wrap them in the [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) hook (in function components) or extract them from the render function (in class components).
 
     <!-- tab: App.js -->// Incorrect:
     function App() {

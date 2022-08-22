@@ -186,22 +186,21 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
                 }
             };
         }, [isOpened]);
-        render() {
-            return (
-                <div>
-                    <Toolbar id="toolbar">
-                        <Item 
-                            widget="dxButton" 
-                            options={this.buttonOptions} 
-                            location="before" />
-                    </Toolbar>
-                    <Drawer ...
-                        opened={isOpened} >
-                        <div>View content</div>
-                    </Drawer>
-                </div>
-            );
-        }
+        
+        return (
+            <div>
+                <Toolbar id="toolbar">
+                    <Item 
+                        widget="dxButton" 
+                        options={this.buttonOptions} 
+                        location="before" />
+                </Toolbar>
+                <Drawer ...
+                    opened={isOpened} >
+                    <div>View content</div>
+                </Drawer>
+            </div>
+        );
     }
     
     export default NavigationDrawer;

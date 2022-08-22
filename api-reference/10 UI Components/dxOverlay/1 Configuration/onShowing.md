@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.cancel): Boolean
+##### field(e.cancel): Boolean | Promise<Boolean>
 Set this field to **true** if you want to prevent the {WidgetName} from being displayed.
 
 ---

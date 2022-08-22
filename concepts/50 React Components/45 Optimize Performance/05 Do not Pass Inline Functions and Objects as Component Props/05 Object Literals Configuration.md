@@ -1,4 +1,4 @@
-Do not use properties that exist as nested components inside the component markup.
+Do not use properties that exist as nested components inside the component markup:
 
     <!-- tab: App.js -->// Incorrect:
     function App() {
@@ -29,7 +29,7 @@ Do not use properties that exist as nested components inside the component marku
     url: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-z2bigu?file=/App.js:"
 }
 
-If an object literal does not require an access to component properties, you can extract if from the function body.
+If an object literal does not require an access to component properties, you can extract if from the function body:
 
     <!-- tab: App.js -->// Incorrect:
     function App() {
@@ -75,7 +75,7 @@ If an object literal does not require an access to component properties, you can
     url: "https://codesandbox.io/s/customize-item-devextreme-form-forked-imysxl?file=/App.js"
 }
 
-If an element includes a component variable, wrap this element in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook. 
+If an element includes a component variable, wrap this element in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook:
 
 
     <!-- tab: App.js -->// Incorrect:

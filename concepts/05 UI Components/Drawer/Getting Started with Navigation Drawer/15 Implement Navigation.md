@@ -443,24 +443,22 @@ Each list item should navigate to a different view. To implement this, follow th
             );
         }, []);
 
-        render() {
-            return (
-                <div>
-                    { /* ... */ }
-                    <Drawer ...
-                        render={renderList}>
-                        <div id="view">
-                            <Routes>
-                                <Route exact path="views/inbox" element={<Inbox />} />
-                                <Route path="views/sent-mail" element={<SentMail />} />
-                                <Route path="views/spam" element={<Spam />} />
-                                <Route path="views/trash" element={<Trash />} />
-                            </Routes>
-                        </div>
-                    </Drawer>
-                </div>
-            );
-        }
+        return (
+            <div>
+                { /* ... */ }
+                <Drawer ...
+                    render={renderList}>
+                    <div id="view">
+                        <Routes>
+                            <Route exact path="views/inbox" element={<Inbox />} />
+                            <Route path="views/sent-mail" element={<SentMail />} />
+                            <Route path="views/spam" element={<Spam />} />
+                            <Route path="views/trash" element={<Trash />} />
+                        </Routes>
+                    </div>
+                </Drawer>
+            </div>
+        );
     }
 
     export default NavigationDrawer;
@@ -495,19 +493,19 @@ Each list item should navigate to a different view. To implement this, follow th
                     </Link>
                 </div>
             );
-        }, [])
+        }, []);
 
-            return (
-                <div>
-                    <List
-                        items={navigation}
-                        width={200}
-                        selectionMode="single"
-                        onSelectionChanged={closeDrawer}
-                        itemRender={renderItem}
-                    />
-                </div>
-            );
+        return (
+            <div>
+                <List
+                    items={navigation}
+                    width={200}
+                    selectionMode="single"
+                    onSelectionChanged={closeDrawer}
+                    itemRender={renderItem}
+                />
+            </div>
+        );
 
     }
 
@@ -523,9 +521,9 @@ Each list item should navigate to a different view. To implement this, follow th
     import React from "react";
 
     function Inbox(){
-            return (
-                <div>Inbox</div>
-            );
+        return (
+            <div>Inbox</div>
+        );
     }
     export default Inbox;
 
@@ -533,9 +531,9 @@ Each list item should navigate to a different view. To implement this, follow th
     import React from "react";
 
     function SentMail(){
-            return (
-                <div>Sent Mail</div>
-            );
+        return (
+            <div>Sent Mail</div>
+        );
     }
     export default SentMail;
 
@@ -543,9 +541,9 @@ Each list item should navigate to a different view. To implement this, follow th
     import React from "react";
 
     function Spam(){
-            return (
-                <div>Spam</div>
-            );
+        return (
+            <div>Spam</div>
+        );
     }
     export default Spam;
 
@@ -553,9 +551,9 @@ Each list item should navigate to a different view. To implement this, follow th
     import React from "react";
 
     function Trash(){
-            return (
-                <div>Trash</div>
-            );
+        return (
+            <div>Trash</div>
+        );
     }
     export default Trash;
 

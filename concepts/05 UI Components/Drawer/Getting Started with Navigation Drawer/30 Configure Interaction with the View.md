@@ -41,16 +41,14 @@ When the Drawer opens, it can overlap, shrink, or partially displace the view, d
     // ...
     function NavigationDrawer() {
         // ...
-        render() {
-            return (
-                <div>
-                    { /* ... */ }
-                    <Drawer ...
-                        openedStateMode="overlap" >
-                    </Drawer>
-                </div>
-            );
-        }
+        return (
+            <div>
+                { /* ... */ }
+                <Drawer ...
+                    openedStateMode="overlap" >
+                </Drawer>
+            </div>
+        );
     }
 
     export default NavigationDrawer;

@@ -4,18 +4,14 @@ Extract inline handlers from the component class or function body. As an alterna
     function App() {
         // ...
         return (
-            <DataGrid
-                id="grid-container"
-                dataSource={employees}
-                selectedRowKeys={keys}
+            <DataGrid ...
                 keyExpr="ID"
+                selectedRowKeys={keys}
                 onCellPrepared={(e) => {
                     if (e.row && e.row.isSelected) {
                         e.cellElement.style.backgroundColor = "green";
-                        console.log("re-render");
                     }
                 }}
-                showBorders={true}
             >
             </DataGrid>
         );
@@ -27,20 +23,38 @@ Extract inline handlers from the component class or function body. As an alterna
     const cellPrepared = (e) => {
         if (e.row && e.row.isSelected) {
             e.cellElement.style.backgroundColor = "green";
-            console.log("re-render");
         }
     };
 
     function App() {
         // ...
         return (
-            <DataGrid
-                id="grid-container"
-                dataSource={employees}
-                selectedRowKeys={keys}
+            <DataGrid ...
                 keyExpr="ID"
+                selectedRowKeys={keys}
                 onCellPrepared={cellPrepared}
-                showBorders={true}
+            >
+            </DataGrid>
+        );
+    }
+
+    export default App;
+
+    // Or implement inline handler inside the function:
+
+    function App() {
+        // ...
+        const cellPrepared = React.useCallback((e) => {
+            if (e.row && e.row.isSelected) {
+                e.cellElement.style.backgroundColor = "green";
+            }
+        }, []);
+
+        return (
+            <DataGrid ...
+                keyExpr="ID"
+                selectedRowKeys={keys}
+                onCellPrepared={cellPrepared}
             >
             </DataGrid>
         );

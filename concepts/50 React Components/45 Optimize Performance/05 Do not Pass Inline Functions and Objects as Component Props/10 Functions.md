@@ -40,7 +40,7 @@ Extract inline handlers from the component class or function body. As an alterna
 
     export default App;
 
-    // Or implement inline handler inside the function:
+    // Or implement inline handler inside the function component:
 
     function App() {
         // ...

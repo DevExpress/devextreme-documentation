@@ -69,7 +69,7 @@ If you need to use objects, define them outside component class or function body
 
     export default App;
 
-    // Or implement inline object inside the function:
+    // Or implement inline object inside the function component:
 
     function App() {
         // ...

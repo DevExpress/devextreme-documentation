@@ -1,6 +1,7 @@
 Extract inline handlers from the component class or function body. As an alternative, you can leave them within the component, but in this case wrap them in the [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) hook (in function components) or extract them from the render function (in class components).
 
-    <!-- tab: App.js -->// Incorrect:
+    <!-- tab: App.js -->
+    // Incorrect: Inline function
     function App() {
         // ...
         return (
@@ -19,7 +20,7 @@ Extract inline handlers from the component class or function body. As an alterna
 
     export default App;
 
-    // Correct:
+    // Correct: Function declared outside the component
     const cellPrepared = (e) => {
         if (e.row && e.row.isSelected) {
             e.cellElement.style.backgroundColor = "green";
@@ -40,8 +41,7 @@ Extract inline handlers from the component class or function body. As an alterna
 
     export default App;
 
-    // Or implement inline handler inside the function component:
-
+    // Correct: Function wrapped in `useCallback`
     function App() {
         // ...
         const cellPrepared = React.useCallback((e) => {

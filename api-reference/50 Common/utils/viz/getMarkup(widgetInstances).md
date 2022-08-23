@@ -10,7 +10,7 @@ Gets the SVG markup of specific UI components for their subsequent export.
 ##### return: String
 The UI components' SVG markup. Pass it to the [exportFromMarkup(markup, options)](/api-reference/50%20Common/utils/viz/exportFromMarkup(markup_options).md '/Documentation/ApiReference/Common/utils/viz/#exportFromMarkupmarkup_options') method to export the UI components.
 
-##### param(widgetInstances): Array<DOMComponent>
+##### param(widgetInstances): Array<Array<dxChart, dxPieChart, dxFunnel, dxSankey, dxTreeMap, dxVectorMap, dxSparkline, dxBullet, dxBarGauge>>
 The UI component instances.
 
 ---

@@ -1,7 +1,6 @@
 Extract inline handlers from the component class or function body. As an alternative, you can leave them within the component, but in this case wrap them in the [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) hook (in function components) or extract them from the render function (in class components).
 
-    <!-- tab: App.js -->
-    // Incorrect: Inline function
+    <!-- tab: App.js -->// Incorrect: Inline function
     function App() {
         // ...
         return (

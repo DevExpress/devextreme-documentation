@@ -31,8 +31,7 @@ Most properties of DevExtreme React Components are implemented as nested configu
 
 If you need to use objects, define them outside component class or function body or wrap them in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook as shown in the following code. In class components, use the constructor to assign the objects to class properties.
 
-    <!-- tab: App.js -->
-    // Incorrect: Inline object
+    <!-- tab: App.js -->// Incorrect: Inline object
     function App() {
         // ...
         return (

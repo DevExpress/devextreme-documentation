@@ -2,13 +2,13 @@ As you may know, React includes Virtual DOM (VDOM). It is a "virtual" representa
 
 For example, implement the code below:
 
-    <!-- tab: App.js -->const MyComponent = ({props}) => {
-        return <Button>{props.text}</Button>
+    <!-- tab: App.js -->const MyComponent = (props) => {
+        return <Button>{props.hello.text}</Button>
     }
 
     function App() {
         return (
-            <MyComponent props={{text: 'Hello World'}} />
+            <MyComponent hello={{text: 'Hello World'}} />
         );
     }
 

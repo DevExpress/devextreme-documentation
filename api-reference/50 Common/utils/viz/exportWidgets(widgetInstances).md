@@ -7,7 +7,7 @@ export: exportWidgets
 ##### shortDescription
 Exports one or several UI components to PNG.
 
-##### param(widgetInstances): Array<Array<DOMComponent>>
+##### param(widgetInstances): Array<Array<dxChart, dxPieChart, dxFunnel, dxSankey, dxTreeMap, dxVectorMap, dxSparkline, dxBullet, dxBarGauge>>
 An array with the following format:
 
     [

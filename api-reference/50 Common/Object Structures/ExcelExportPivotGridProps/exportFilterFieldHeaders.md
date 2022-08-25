@@ -5,7 +5,12 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to export headers of the filter fields on the [field panel](/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Panel).
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJsHeaderAndFooter/jQuery/Light/"
+}
+
+#####See Also#####
+- [headerType](/Documentation/ApiReference/Common/Object_Structures/ExcelPivotGridCell/#headerType)

@@ -12249,6 +12249,9 @@
     "excelPivotGridCell.columnIndex": {
       "vue": "column-index"
     },
+    "excelPivotGridCell.headerType": {
+      "vue": "header-type"
+    },
     "excelPivotGridCell.rowIndex": {
       "vue": "row-index"
     },

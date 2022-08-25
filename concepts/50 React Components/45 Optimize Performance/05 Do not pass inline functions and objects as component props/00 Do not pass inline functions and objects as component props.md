@@ -1,4 +1,4 @@
-As you may know, React includes Virtual DOM (VDOM). It is a "virtual" representation of a UI that is kept in sync with the "real" DOM. When you change a VDOM element, React compares the new and previous VDOMs and re-renders the updated part. The main way you can change a DevExtreme React Component VDOM element is via component props. If you pass an object literal or function as props _inline_, it becomes a new object in memory, different from the previous object. Therefore, the VDOM comparison shows that the component has changed and should be re-rendered even though the actual value remains the same.
+React includes Virtual DOM (VDOM) which is a "virtual" representation of a UI that is kept in sync with the "real" DOM. When you change a VDOM element, React compares the new and previous VDOMs and re-renders the updated part. The main way you can change a DevExtreme React Component VDOM element is via component props. If you pass an object literal or function as props _inline_, it becomes a new object in memory that differs from the previous object. The VDOM comparison shows that the component has changed and should be re-rendered even though the actual value remains the same.
 
 For example, implement the code below:
 
@@ -14,4 +14,4 @@ For example, implement the code below:
 
     export default App;
 
-In this case, the `MyComponent` component always re-renders, even if a value does not change.
+In this case, the `MyComponent` component is always re-rendered, even if a value does not change.

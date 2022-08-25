@@ -29,7 +29,7 @@ Most properties of DevExtreme React Components are implemented as nested configu
     url: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-z2bigu?file=/App.js:"
 }
 
-If you need to use objects, define them outside component class or function body or wrap them in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook as shown in the following code. In class components, use the constructor to assign the objects to class properties.
+If you need to use objects, define them outside the component class or function body or wrap them in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook as shown in the following code. In class components, use the constructor to assign the objects to class properties.
 
     <!-- tab: App.js -->// Incorrect: Inline object
     function App() {

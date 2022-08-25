@@ -1,4 +1,4 @@
-DevExtreme React Components may exhibit lower performance due to unnecessary component re-renders that may also produce the following side effects:
+DevExtreme React Components may have reduced performance due to unnecessary component re-renders that can also cause the following side effects:
 
 - The component responds to a click incorrectly. 
 - The component discards its value on input.

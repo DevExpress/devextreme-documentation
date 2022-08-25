@@ -5,7 +5,9 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to export headers of the filter fields on the [field panel](/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/#Field_Panel).
 
 ---
-<!-- Description goes here -->
+
+#####See Also#####
+- [headerType](/Documentation/ApiReference/Common/Object_Structures/ExcelPivotGridCell/#headerType)

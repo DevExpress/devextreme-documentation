@@ -1,6 +1,7 @@
 ---
 id: ExcelPivotGridCell.area
 type: String
+acceptValues: 'column' | 'row' | 'data'
 ---
 ---
 ##### shortDescription

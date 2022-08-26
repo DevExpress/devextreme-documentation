@@ -37,4 +37,4 @@ When child elements specify [key](https://reactjs.org/docs/lists-and-keys.html#k
 }
 
 #####See Also#####
-- [Component Configuration Syntax](https://js.devexpress.com/Documentation/Guide/React_Components/Component_Configuration_Syntax/)
+- [Component Configuration Syntax](/Documentation/Guide/React_Components/Component_Configuration_Syntax/)

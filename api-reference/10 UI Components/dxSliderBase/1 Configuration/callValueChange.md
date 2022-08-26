@@ -6,10 +6,10 @@ default: 'onMoving'
 ---
 ---
 ##### shortDescription
-Specifies when to call the [onValueChanged]({basewidgetpath}/Configuration/#onValueChanged) function.
+Specifies when to change the component's [value]({basewidgetpath}/Configuration/#value).
 
 ---
-If you want to call the [onValueChanged]({basewidgetpath}/Configuration/#onValueChanged) after a user finishes moving the component's handle, set this property to `onMovingComplete`:
+If you want to change the component's [value]({basewidgetpath}/Configuration/#value) after a user finishes moving the component's handle, set this property to `onMovingComplete`. The moment when the [onValueChanged]({basewidgetpath}/Configuration/#onValueChanged) function is called depends on this property:
 
 ---
 ##### jQuery

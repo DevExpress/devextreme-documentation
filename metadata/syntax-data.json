@@ -9874,6 +9874,9 @@
     "dxSliderBaseOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
+    "dxSliderBaseOptions.callValueChange": {
+      "vue": "call-value-change"
+    },
     "dxSliderBaseOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -12057,6 +12060,9 @@
     },
     "enums.SlideOutMenuPosition": {
       "vue": "slide-out-menu-position"
+    },
+    "enums.SliderCallValueChange": {
+      "vue": "slider-call-value-change"
     },
     "enums.SmallValuesGroupingMode": {
       "vue": "small-values-grouping-mode"

@@ -2,7 +2,7 @@ DevExtreme components consist of HTML elements and obey CSS rules. If the compon
 
 #### Case 
 
-DataGrid colorizes its toolbar without any colorizing properties specified.
+The [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) colorizes its [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) without any colorizing properties specified.
 
 #### Troubleshooting  
 

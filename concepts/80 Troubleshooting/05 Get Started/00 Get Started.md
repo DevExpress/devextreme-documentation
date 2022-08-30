@@ -1,0 +1,1 @@
+This section describes common issues and steps you can follow to diagnose and resolve these issues. If the solutions listed here do not help, [create a ticket](https://supportcenter.devexpress.com/ticket/create) in our Support Center.

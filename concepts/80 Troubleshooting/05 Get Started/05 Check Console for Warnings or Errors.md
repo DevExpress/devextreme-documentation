@@ -2,7 +2,7 @@ If DevExtreme components work unexpectedly, the first step of troubleshooting is
 
 #### Case 
 
-The [Chart]() component does not display the [legend](). The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled.
+The [Chart](/Documentation/ApiReference/UI_Components/dxChart/) component does not display the [legend](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/). The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled.
 
 #### Troubleshooting
 
@@ -14,11 +14,11 @@ The Chart gives priority to series area if it does not have enough space to acco
 
 #### Case 
 
-The [SelectBox]() is bound to the [CustomStore](). The **SelectBox.**[value]() is specified, but the value is not displayed.
+The [SelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/) is bound to the [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/). The **SelectBox.**[value](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value) is specified, but the value is not displayed.
 
 #### Troubleshooting
 
-The component logs an error related to [CustomStore]() implementation:
+The component logs an error related to [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) implementation:
 
     > E4011 - Custom Store method is not implemented or is not a function: byKey. See: http://js.devexpress.com/error/22_1/E4011
 

@@ -6,10 +6,10 @@ default: 'onMoving'
 ---
 ---
 ##### shortDescription
-Specifies when to change the component's [value]({basewidgetpath}/Configuration/#value).
+Specifies when to change the component's [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value').
 
 ---
-If you want to change the component's [value]({basewidgetpath}/Configuration/#value) after a user finishes moving the component's handle, set this property to `onMovingComplete`. The moment when the [onValueChanged]({basewidgetpath}/Configuration/#onValueChanged) function is called depends on this property:
+If you want to change the component's [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') after a user finishes moving the component's handle, set this property to `onMovingComplete`. The moment when the [onValueChanged](/api-reference/10%20UI%20Components/Editor/1%20Configuration/onValueChanged.md '{basewidgetpath}/Configuration/#onValueChanged') function is called depends on this property:
 
 ---
 ##### jQuery

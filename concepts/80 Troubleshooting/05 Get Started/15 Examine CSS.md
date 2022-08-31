@@ -10,14 +10,14 @@ Inspect the toolbar element. Right-click the element and choose the **Inspect** 
 
 Open the **Computed** tab and check the `background-color` CSS property.
 
-![CSS Image 1](/images/Troubleshooting/css_image_1.png)
+![Inspect CSS: the Computed tab opened](/images/Troubleshooting/troubleshooting-inspect-css-1.png)
 
 If this property does not exist, inspect the parent element.
 
-![CSS Image 2](/images/Troubleshooting/css_image_2.png)
+![Inspect CSS: parent element](/images/Troubleshooting/troubleshooting-inspect-css-2.png)
 
 The parent element has the `background-color` property. Expand it to see that the unexpected color comes from a rule for `.dx-toolbar` class in the *styles.css* file.
 
-![CSS Image 3](/images/Troubleshooting/css_image_3.png)
+![Inspect CSS: the `background-color` property expanded](/images/Troubleshooting/troubleshooting-inspect-css-3.png)
 
-Use a more specific CSS selector for this style to take effect only to the standalone toolbar. For example, assign an ID to the Toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.
+Use a more specific CSS selector for this style to take effect only on the standalone toolbar. For example, assign an ID to the Toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.

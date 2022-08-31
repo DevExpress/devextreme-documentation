@@ -1,22 +1,22 @@
 If DevExtreme components work unexpectedly, the first step of troubleshooting is to check the console.
 
-#### Case 
+### Issue 
 
 The [Chart](/Documentation/ApiReference/UI_Components/dxChart/) component does not display the [legend](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/). The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled.
 
-#### Troubleshooting
+### Solution
 
 The component logs a warning in the console:
 
     > W2104 - The legend was hidden due to the container size. See: http://js.devexpress.com/error/22_1/W2104
 
-The Chart gives priority to series area if it does not have enough space to accommodate all elements. Change the container size.
+The Chart gives priority to a series area if the Chart does not have enough space to accommodate all elements. Change the container size.
 
-#### Case 
+### Issue 
 
 The [SelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/) is bound to the [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/). The **SelectBox.**[value](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value) is specified, but the value is not displayed.
 
-#### Troubleshooting
+### Solution
 
 The component logs an error related to [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) implementation:
 

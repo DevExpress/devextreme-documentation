@@ -20,8 +20,8 @@ HtmlEditor generates the following HTML tags and attributes:
     <td>&lt;a&gt;, &lt;b&gt;, &lt;br&gt;, &lt;code&gt;, &lt;em&gt;, &lt;i&gt;, &lt;s&gt;, &lt;span&gt;, &lt;strike&gt;, &lt;strong&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;u&gt;</td>
  </tr>
 <tr>
-    <td>Images and frames</td>
-    <td>&lt;img&gt;, &lt;iframe&gt;</td>
+    <td>Images</td>
+    <td>&lt;img&gt;</td>
  </tr>
  <tr>
     <td>Table content</td>

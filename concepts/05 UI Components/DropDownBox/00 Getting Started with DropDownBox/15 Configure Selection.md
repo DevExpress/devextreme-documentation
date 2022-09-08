@@ -1,4 +1,4 @@
-The previous topic shows how to embed the List component into the DropDownBox' drop-down field. To implement a scenario where selected in the List values appear in the DropDownBox' text field, do the following:
+The previous topic shows how to embed the List component into the DropDownBox's drop-down field. To implement a scenario where selected in the List values appear in the DropDownBox's text field, do the following:
 
 1. Bind the same data source to the List and DropDownBox. This tutorial uses a basic array as a data source.
 
@@ -6,7 +6,7 @@ The previous topic shows how to embed the List component into the DropDownBox' d
 
 3. Implement the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler. In this handler, pass the selected value to the DropDownBox [value](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value) option.
 
-If you want to implement different scenarios, like bind the DropDownBox and the embedded element to different data sources, or more complex data sources, or select the initial value, refer to the following article: [Synchronize with the Embedded Element](/Documentation/Guide/UI_Components/DropDownBox/Synchronize_with_the_Embedded_Element/)
+If you want to implement different scenarios, like bind the DropDownBox and the embedded element to different data sources or more complex data sources, or select the initial value, refer to the following article: [Synchronize with the Embedded Element](/Documentation/Guide/UI_Components/DropDownBox/Synchronize_with_the_Embedded_Element/)
 
 ---
 ##### jQuery

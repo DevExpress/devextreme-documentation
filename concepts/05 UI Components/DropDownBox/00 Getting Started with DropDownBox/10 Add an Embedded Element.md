@@ -2,7 +2,7 @@ You can add any element in a DropDownBox content field. This tutorial uses the [
 
 Use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) function or specify content inside the DropDownBox markup, depending on the framework.
 
-The following code adds the List component, [binds it to data](/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource), enables [item deleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting) and [forbids deleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onItemDeleting) the last item. Additionally, the code gets the List's [instance](/Documentation/ApiReference/UI_Components/dxList/Methods/#instance).
+The following code adds the List component, [binds it to data](/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource), enables [item deleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting) and [forbids users to delete](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onItemDeleting) the last item. Additionally, the code gets the List's [instance](/Documentation/ApiReference/UI_Components/dxList/Methods/#instance).
 
 ---
 ##### jQuery

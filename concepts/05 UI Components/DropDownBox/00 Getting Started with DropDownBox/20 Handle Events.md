@@ -1,4 +1,4 @@
-You can allow users to type in the DropDownBox text field to add more values to the List. In this tutorial, a press on the Enter key passes values to the List. To implement this functionality, handle the [enterKey](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onEnterKey) event. In this handler, update the shared data source and [reload](/Documentation/ApiReference/UI_Components/dxList/Methods/#reload) the List.
+You can allow users to type in the DropDownBox text field to add more values to the List. In this tutorial, a press on the Enter key passes values to the List. To implement this functionality, enable the [acceptCustomValue](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue) property, disable the [openOnFieldClick](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#openOnFieldClick) property, and handle the [enterKey](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onEnterKey) event. In this handler, update the shared data source and [reload](/Documentation/ApiReference/UI_Components/dxList/Methods/#reload) the List.
 
 ---
 ##### jQuery
@@ -8,6 +8,8 @@ You can allow users to type in the DropDownBox text field to add more values to 
     $(function() {
         $("#drop-down-box").dxDropDownBox({
             // ...
+            acceptCustomValue: true,
+            openOnFieldClick: false,
             onEnterKey: function(e) {
                 dataSource.push(e.component.option("value"));
                 e.component.option("value", "");
@@ -20,6 +22,8 @@ You can allow users to type in the DropDownBox text field to add more values to 
 
     <!-- tab: app.component.html -->
     <dx-drop-down-box ...
+        [acceptCustomValue]="true"
+        [openOnFieldClick]="false"
         (onEnterKey)="addItem()"
     >
         <dx-list ...
@@ -49,6 +53,8 @@ You can allow users to type in the DropDownBox text field to add more values to 
     <!-- tab: App.vue -->
     <template>
         <DxDropDownBox ...
+            :accept-custom-value="true"
+            :open-on-field-click="false"
             @enter-key="addItem"
         >
             <DxList ...
@@ -102,6 +108,8 @@ You can allow users to type in the DropDownBox text field to add more values to 
         }, [dataSource, selectedFruit]);
         return (
             <DropDownBox ...
+                acceptCustomValue={true}
+                openOnFieldClick={false}
                 onEnterKey={addItem}
             >
                 <List ...

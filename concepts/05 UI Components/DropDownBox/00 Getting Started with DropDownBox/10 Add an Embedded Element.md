@@ -1,8 +1,8 @@
 You can add any element in a DropDownBox content field. This tutorial uses the [List](/Documentation/Guide/UI_Components/List/Getting_Started_with_List/) component as an embedded element. To see how to use other components, such as [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) or [TreeView](/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/), refer to the following demo: [DropDownBox: Single Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/Angular/Light/)
 
-Use the [contentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) function or specify content inside the DropDownBox markup, depending on the framework.
+Call the [contentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) function or specify content inside the DropDownBox markup, depending on the target framework.
 
-The following code adds the List component, [binds it to data](/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource), enables [item deleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting) and [forbids users to delete](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onItemDeleting) the last item. Additionally, the code gets the List's [instance](/Documentation/ApiReference/UI_Components/dxList/Methods/#instance).
+The following code adds the List component, [binds it to data](/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource), enables the [item deletion functionality](/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemDeleting) and [prevents users from deleting](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onItemDeleting) the last item. Additionally, the code gets the List's [instance](/Documentation/ApiReference/UI_Components/dxList/Methods/#instance).
 
 ---
 ##### jQuery

@@ -24,7 +24,7 @@ Specify the [showClearButton](/Documentation/ApiReference/UI_Components/dxDropDo
 Specify the [showDropDownButton](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#showDropDownButton) property. You can use the [drop-down button template](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#dropDownButtonTemplate) to customize the button appearance.
 
 - Custom buttons    
-Implement the [buttons](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/buttons/) array.
+Use the [buttons](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/buttons/) array.
 
 ---
 ##### jQuery

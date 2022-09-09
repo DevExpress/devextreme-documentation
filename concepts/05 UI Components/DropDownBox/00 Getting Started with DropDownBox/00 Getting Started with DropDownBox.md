@@ -2,7 +2,7 @@
 
 #include tutorials-intro-installationnote
 
-The DropDownBox consists of a text field that displays the current value, and a drop-down field that can contain any UI element.
+The DropDownBox component consists of a text field that displays the current value, and a drop-down field that can contain any UI element.
 
 This tutorial shows how to add the DropDownBox component to your application and configure the component's core features.
 

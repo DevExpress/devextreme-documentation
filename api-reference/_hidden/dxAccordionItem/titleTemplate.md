@@ -64,8 +64,6 @@ The following types of the specified value are available:
 ##### React
 
     <!-- tab: App.js -->
-    // ...
-
     function App() {
         return (
             <Accordion ... >

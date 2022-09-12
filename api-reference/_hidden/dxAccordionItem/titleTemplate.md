@@ -35,10 +35,10 @@ The following types of the specified value are available:
 
     <!-- tab: app.component.html -->
     <dx-accordion ... >
-        <dxi-item titleTemplate="firstItemTemplate">
+        <dxi-item titleTemplate="firstItemTitleTemplate">
             Item content
         </dxi-item>
-        <div *dxTemplate="let data of 'firstItemTemplate'">
+        <div *dxTemplate="let data of 'firstItemTitleTemplate'">
             <b>First item title</b>
         </div>
     </dx-accordion>

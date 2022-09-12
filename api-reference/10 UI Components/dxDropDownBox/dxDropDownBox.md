@@ -15,8 +15,8 @@ dx.web.js, dx.all.js
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/DropDownBox/Overview/"
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/DropDownBox/Getting_Started_with_DropDownBox/"
 }
 
 #####See Also#####

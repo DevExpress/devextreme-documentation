@@ -15,7 +15,7 @@ Unlike the [mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configurati
 Renders all the loaded rows at once.
 
 - *"virtual"*     
-Renders only those rows that get into the viewport. Use this mode if the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '{basewidgetpath}/Configuration/paging/#pageSize') is large. Specify the component's [height](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/#height.md '{basewidgetpath}/Configuration/#height') and height of its container if you use the *virtual* mode. 
+Renders only those rows that get into the viewport. Use this mode if the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '{basewidgetpath}/Configuration/paging/#pageSize') is large. Specify the component's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '{basewidgetpath}/Configuration/#height') and height of its container if you use the *virtual* mode. 
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteVirtualScrolling/"

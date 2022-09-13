@@ -2,7 +2,7 @@ DevExtreme components consist of HTML elements and obey CSS rules. If the compon
 
 ### Issue 
 
-The color for the standalone [Toolbar](/Documentation/ApiReference/UI_Components/dxToolbar/) is specified. The [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) colorizes its [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) without any specific DataGrid colorizing properties enabled.
+The CSS `background-color` rules are specified for the standalone [Toolbar](/Documentation/ApiReference/UI_Components/dxToolbar/). The [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) colorizes its [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) without any specific DataGrid colorizing properties enabled.
 
 ### Solution  
 
@@ -20,4 +20,4 @@ The parent element has the `background-color` property. Expand it to see that th
 
 ![Inspect CSS: the `background-color` property expanded](/images/Troubleshooting/troubleshooting-inspect-css-3.png)
 
-Use a more specific CSS selector for this style to take effect only on the standalone toolbar. For example, assign an ID to the grid  toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.
+Use a more specific CSS selector for this style to take effect only on the standalone toolbar. For example, assign an ID to the grid toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.

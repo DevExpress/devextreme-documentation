@@ -18,10 +18,10 @@ The master-detail interface becomes available after you specify the detail secti
                 template: function (container, info) {
                     сonst currentEmployeeData = info.data;
                     container.append(
-                        $('<div class="employeeInfo">
-                            <img class="employeePhoto" src="' + currentEmployeeData.Picture + '" />
-                            <p class="employeeNotes">' + currentEmployeeData.Notes + '</p>
-                        </div>')
+                        $(`<div class="employeeInfo">
+                            <img class="employeePhoto" src=${currentEmployeeData.Picture}/>
+                            <p class="employeeNotes">${currentEmployeeData.Notes}</p>
+                        </div>`)
                     );
                 } 
             }

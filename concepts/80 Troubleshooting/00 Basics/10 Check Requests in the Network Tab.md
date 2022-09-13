@@ -1,4 +1,4 @@
-DevExtreme data-bound components may not display data or display unexpected data. The components use network requests to communicate with servers.
+DevExtreme data-bound components may not display data or display unexpected data. The components use network requests to communicate with servers. You may need to resolve network communication issues.
 
 ### Issue 
 
@@ -10,7 +10,7 @@ Check request parameters and data that DataGrid receives from the server:
 
 1. Open your browser's DevTools and navigate to the Network tab.
 
-2. Reload the page. There will be multiple networks requests.
+2. Reload the page. Review the request list.
 
 3. Find the request to your data end-point and click it to see the details.
 

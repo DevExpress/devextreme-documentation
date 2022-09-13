@@ -22,7 +22,6 @@ The master-detail interface becomes available after you specify the detail secti
                             <img class="employeePhoto" src=${currentEmployeeData.Picture}/>
                             <p class="employeeNotes">${currentEmployeeData.Notes}</p>
                         </div>`)
-                      
                     );
                 } 
             }

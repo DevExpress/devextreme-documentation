@@ -28,5 +28,5 @@ A template name or container.
 }
 
 #####See Also#####
-- [DropDownBox - Getting Started](/Documentation/Guide/UI_Components/DropDownBox/Getting_Started_with_DropDownBox/)
+- [DropDownBox - Getting Started](/concepts/05%20UI%20Components/DropDownBox/00%20Getting%20Started%20with%20DropDownBox '/Documentation/Guide/UI_Components/DropDownBox/Getting_Started_with_DropDownBox/')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

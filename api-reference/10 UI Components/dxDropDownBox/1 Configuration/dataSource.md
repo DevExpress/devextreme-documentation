@@ -4,7 +4,7 @@ type: Store | DataSource | DataSource_Options | String | Array<any> | null
 default: null
 ---
 #include common-dataSource-description with {
-    widget_works_with: "The DropDownBox works with collections of objects or `string`, `number`, or `boolean` values. The component does not support a hierarchical data source. ",
+    widget_works_with: "The DropDownBox works with collections of objects or `string`, `number`, or `boolean` values. The component does not support hierarchical data sources. ",
 
     object_structure_notes: "In each case, also specify the [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueExpr') and [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') properties if the data source provides objects. ",
 

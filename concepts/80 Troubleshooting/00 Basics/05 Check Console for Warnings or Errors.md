@@ -2,7 +2,7 @@ If DevExtreme components work unexpectedly, the first step of troubleshooting is
 
 ### Issue 
 
-The [Chart](/Documentation/ApiReference/UI_Components/dxChart/) component does not display the [legend](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/). The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled.
+The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled but the [Chart](/Documentation/ApiReference/UI_Components/dxChart/) component does not display the [legend](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/).
 
 ### Solution
 
@@ -18,7 +18,7 @@ The [SelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/) is bound
 
 ### Solution
 
-The component logs an error related to [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) implementation:
+The component logs an error related to the [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) implementation:
 
     > E4011 - Custom Store method is not implemented or is not a function: byKey. See: http://js.devexpress.com/error/22_1/E4011
 

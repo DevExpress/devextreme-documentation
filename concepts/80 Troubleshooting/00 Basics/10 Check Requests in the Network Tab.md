@@ -1,4 +1,4 @@
-DevExtreme data-bound components may not display data or display unexpected data. The components use network requests to communicate with servers. You may need to resolve network communication issues.
+DevExtreme data-bound components may not display data or display unexpected data. The components use network requests to communicate with servers, and you may need to resolve network communication issues.
 
 ### Issue 
 

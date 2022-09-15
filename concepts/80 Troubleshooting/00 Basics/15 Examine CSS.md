@@ -2,7 +2,7 @@ DevExtreme components consist of HTML elements and obey CSS rules. If the compon
 
 ### Issue 
 
-The CSS `background-color` rules are specified for the standalone [Toolbar](/Documentation/ApiReference/UI_Components/dxToolbar/). The [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) colorizes its [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) without any specific DataGrid colorizing properties enabled.
+The CSS `background-color` rules are specified for the standalone [Toolbar](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/'). The [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') colorizes its [toolbar](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/') without any specific DataGrid colorizing properties enabled.
 
 ### Solution  
 

@@ -2,7 +2,7 @@ If DevExtreme components work unexpectedly, the first step of troubleshooting is
 
 ### Issue 
 
-The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled but the [Chart](/Documentation/ApiReference/UI_Components/dxChart/) component does not display the [legend](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/).
+The **Chart.legend.**[visible](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled but the [Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') component does not display the [legend](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/').
 
 ### Solution
 
@@ -14,11 +14,11 @@ The Chart gives priority to a series area if the Chart does not have enough spac
 
 ### Issue 
 
-The [SelectBox](/Documentation/ApiReference/UI_Components/dxSelectBox/) is bound to the [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/). The **SelectBox.**[value](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value) is specified, but the value is not displayed.
+The [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/') is bound to the [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). The **SelectBox.**[value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value') is specified, but the value is not displayed.
 
 ### Solution
 
-The component logs an error related to the [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) implementation:
+The component logs an error related to the [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/') implementation:
 
     > E4011 - Custom Store method is not implemented or is not a function: byKey. See: http://js.devexpress.com/error/22_1/E4011
 

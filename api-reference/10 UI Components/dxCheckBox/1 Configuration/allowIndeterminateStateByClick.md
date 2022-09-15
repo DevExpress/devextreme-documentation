@@ -17,3 +17,7 @@ If this property is set to `false`, users can change checkbox states in the foll
 Set this property to `true` to allow users to set the indeterminate state:
 
 *Indeterminate (default) → Checked → Unchecked → Indeterminate.*
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
+}

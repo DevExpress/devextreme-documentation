@@ -2926,6 +2926,9 @@
     "dxCheckBoxOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
+    "dxCheckBoxOptions.allowIndeterminateStateByClick": {
+      "vue": "allow-indeterminate-state-by-click"
+    },
     "dxCheckBoxOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },

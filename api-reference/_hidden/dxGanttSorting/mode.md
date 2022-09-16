@@ -1,6 +1,6 @@
 ---
 id: dxGanttSorting.mode
-acceptValues: 'multiple' | 'none' | 'single'
+acceptValues: 'single' | 'multiple' | 'none'
 type: String
 default: 'single'
 ---

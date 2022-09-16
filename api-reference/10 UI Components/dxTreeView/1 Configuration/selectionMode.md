@@ -1,6 +1,6 @@
 ---
 id: dxTreeView.Options.selectionMode
-acceptValues: 'multiple' | 'single'
+acceptValues: 'single' | 'multiple'
 type: String
 default: 'multiple'
 ---

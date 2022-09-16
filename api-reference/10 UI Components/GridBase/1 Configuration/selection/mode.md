@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.selection.mode
-acceptValues: 'multiple' | 'none' | 'single'
+acceptValues: 'single' | 'multiple' | 'none'
 type: String
 default: 'none'
 ---

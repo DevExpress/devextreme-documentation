@@ -5,7 +5,7 @@ default: 'Page Navigation'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) attribute for the pager.
 
 ---
 <!-- Description goes here -->

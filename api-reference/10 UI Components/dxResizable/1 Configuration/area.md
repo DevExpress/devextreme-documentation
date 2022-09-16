@@ -5,7 +5,31 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the area within which users can resize the UI component.
 
 ---
-<!-- Description goes here -->
+
+![Area Available For Resize](/images/Editors/resizable-area.png)
+
+You can use a selector string, jQuery object, or DOM element to specify this property:
+
+- String
+
+        <!-- tab: JavaScript -->
+        area: '.test-div'
+
+- jQuery object
+
+        <!-- tab: JavaScript -->
+        area: $('.test-div')
+
+- DOM element
+
+        <!-- tab: JavaScript -->
+        area: $('.test-div')[0]
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
+}
+
+

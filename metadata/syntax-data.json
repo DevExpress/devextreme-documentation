@@ -6153,6 +6153,25 @@
       "react": "HtmlEditor",
       "vue": "DxHtmlEditor"
     },
+    "dxHtmlEditorImageUpload": {
+      "angular": "dxo-dx-html-editor-image-upload",
+      "react": "DxHtmlEditorImageUpload",
+      "vue": "DxDxHtmlEditorImageUpload"
+    },
+    "dxHtmlEditorImageUpload.fileUploadMode": {
+      "vue": "file-upload-mode"
+    },
+    "dxHtmlEditorImageUpload.tabs": {
+      "angular": "dxi-tab",
+      "react": "Tab",
+      "vue": "DxTab"
+    },
+    "dxHtmlEditorImageUpload.uploadDirectory": {
+      "vue": "upload-directory"
+    },
+    "dxHtmlEditorImageUpload.uploadUrl": {
+      "vue": "upload-url"
+    },
     "dxHtmlEditorMediaResizing": {
       "angular": "dxo-dx-html-editor-media-resizing",
       "react": "DxHtmlEditorMediaResizing",
@@ -6195,6 +6214,11 @@
     },
     "dxHtmlEditorOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
+    },
+    "dxHtmlEditorOptions.imageUpload": {
+      "angular": "dxo-image-upload",
+      "react": "ImageUpload",
+      "vue": "DxImageUpload"
     },
     "dxHtmlEditorOptions.mediaResizing": {
       "angular": "dxo-media-resizing",
@@ -11829,6 +11853,12 @@
     },
     "enums.HtmlEditorContextMenuItem": {
       "vue": "html-editor-context-menu-item"
+    },
+    "enums.HtmlEditorImageUploadFileUploadMode": {
+      "vue": "html-editor-image-upload-file-upload-mode"
+    },
+    "enums.HtmlEditorImageUploadTab": {
+      "vue": "html-editor-image-upload-tab"
     },
     "enums.HtmlEditorToolbarItem": {
       "vue": "html-editor-toolbar-item"

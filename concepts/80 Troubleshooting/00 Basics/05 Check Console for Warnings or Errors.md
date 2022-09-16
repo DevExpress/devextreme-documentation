@@ -2,7 +2,7 @@ If DevExtreme components work unexpectedly, the first step of troubleshooting is
 
 ### Issue 
 
-The **Chart.legend.**[visible](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible) option is enabled but the [Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') component does not display the [legend](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/').
+The **Chart.legend.**[visible](/api-reference/10%20UI%20Components/BaseLegend/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#visible') option is enabled but the [Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') component does not display the [legend](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/').
 
 ### Solution
 
@@ -22,6 +22,6 @@ The component logs an error related to the [CustomStore](/api-reference/30%20Dat
 
     > E4011 - Custom Store method is not implemented or is not a function: byKey. See: http://js.devexpress.com/error/22_1/E4011
 
-Implement the [byKey](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey) function to resolve the issue.
+Implement the [byKey](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/byKey.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#byKey') function to resolve the issue.
 
-You can see the full list of warnings end errors on the following page: [Errors and Warnings](/Documentation/ApiReference/UI_Components/Errors_and_Warnings/).
+You can see the full list of warnings end errors on the following page: [Errors and Warnings](/api-reference/10%20UI%20Components/Errors%20and%20Warnings '/Documentation/ApiReference/UI_Components/Errors_and_Warnings/').

@@ -40,10 +40,8 @@ Specifies the DevExtreme layout. Available values:
 Specifies whether to skip sample view generation (default: `false`).
 
 * `--template` (React only)
-Specifies whether to create an application template with TypeScript support. Available values:
-* `javascript` (default)
-* `typescript`
+Specifies whether to create an application template with TypeScript support. Available values: `javascript` (default) and `typescript`.
 
 * `--version`, `-v` (Vue only)        
-Specifies whether to generate a Vue 2 or Vue 3 application. Available values: 2 (default) and 3. 
+Specifies whether to generate a Vue 2 or Vue 3 application. Available values: `2` (default) and `3`. 
 

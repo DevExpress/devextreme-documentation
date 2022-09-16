@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.views.allDayPanelMode
-acceptValues: 'all' | 'allDay' | 'no'
+acceptValues: 'all' | 'allDay' | 'hidden'
 type: String
 default: 'allDay'
 ---

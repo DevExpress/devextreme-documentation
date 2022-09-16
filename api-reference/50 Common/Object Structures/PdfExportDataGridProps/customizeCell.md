@@ -12,7 +12,7 @@ An object passed to this callback function.
 ##### field(options.gridCell): PdfDataGridCell
 A DataGrid cell.
 
-##### field(options.pdfCell): Object
+##### field(options.pdfCell): PdfCell
 An object that describes a cell in a PDF file. Refer to the following <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">Autotable</a> documentation section to see available customizations: <a href="https://github.com/simonbengtsson/jsPDF-AutoTable#options" target="_blank">jsPDF-Autotable options</a>.
 
 ---

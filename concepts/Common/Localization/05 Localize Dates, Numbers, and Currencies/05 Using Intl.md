@@ -14,9 +14,8 @@
         <!-- ... -->
         <!-- DevExtreme library -->
         <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/dx.all.js"></script>
-        <!-- Dictionary files for German and Russian languages -->
+        <!-- Dictionary files for German language -->
         <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/localization/dx.messages.de.js"></script>
-        <script src="https://cdn3.devexpress.com/jslib/minor_22_1/js/localization/dx.messages.ru.js"></script>
         <script src="index.js"></script>
     </head>
 
@@ -24,9 +23,8 @@
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    // Dictionaries for German and Russian languages
+    // Dictionaries for German language
     import deMessages from "devextreme/localization/messages/de.json";
-    import ruMessages from "devextreme/localization/messages/ru.json";  
     import { locale, loadMessages } from "devextreme/localization";
 
     @Component({
@@ -37,7 +35,6 @@
     export class AppComponent {
         constructor() {
             loadMessages(deMessages);
-            loadMessages(ruMessages);
             locale(navigator.language);
         }
     }
@@ -50,16 +47,14 @@
     </template>
 
     <script>
-    // Dictionaries for German and Russian languages
+    // Dictionaries for German language
     import deMessages from "devextreme/localization/messages/de.json";
-    import ruMessages from "devextreme/localization/messages/ru.json";
     
     import { locale, loadMessages } from "devextreme/localization";
 
     export default {
         created() {
             loadMessages(deMessages);
-            loadMessages(ruMessages);
             locale(navigator.language);
         }
     }
@@ -68,9 +63,8 @@
 ##### React
 
     <!-- tab: App.js -->
-    // Dictionaries for German and Russian languages
+    // Dictionaries for German language
     import deMessages from "devextreme/localization/messages/de.json";
-    import ruMessages from "devextreme/localization/messages/ru.json";
     
     import { locale, loadMessages } from "devextreme/localization";
 
@@ -78,7 +72,6 @@
         constructor(props) {
             super(props);
             loadMessages(deMessages);
-            loadMessages(ruMessages);
             locale(navigator.language);
         }
 
@@ -94,13 +87,11 @@
 
     <!--JavaScript-->
     // ...
-    // Dictionaries for German and Russian languages
+    // Dictionaries for German language
     const deMessages = require('devextreme/localization/messages/de.json');
-    const ruMessages = require('devextreme/localization/messages/ru.json');
     const localization = require('devextreme/localization');
 
     localization.loadMessages(deMessages);
-    localization.loadMessages(ruMessages);
     localization.locale(navigator.language);
 
 ---

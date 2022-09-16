@@ -22,7 +22,7 @@ A DOM element in which the UI component is initialized. It is an <a href="https:
 #include common-ref-eventparam
 
 ##### field(e.model): any
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ---
 #include common-demobutton with {

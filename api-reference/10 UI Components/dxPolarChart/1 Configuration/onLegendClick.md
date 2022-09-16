@@ -27,7 +27,7 @@ The model data. Available only if you use Knockout.
 The series that corresponds to the clicked legend item; described in the [Series](/api-reference/10%20UI%20Components/dxPolarChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxPolarChart/Chart_Elements/Series/') section.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the legend item click.
 
 ---
 [note]

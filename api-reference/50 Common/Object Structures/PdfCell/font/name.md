@@ -4,7 +4,10 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the font name. Default font names:
+Specifies the font name.
+
+---
+Default font names:
 
 * Courier
 * Courier-Bold
@@ -19,6 +22,3 @@ Specifies the font name. Default font names:
 * Times-Bold
 * Times-Italic
 * Times-BoldItalic
-
----
-<!-- Description goes here -->

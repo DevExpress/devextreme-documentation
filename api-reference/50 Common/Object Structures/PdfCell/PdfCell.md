@@ -1,13 +1,19 @@
 ---
-id: PdfCell.font
-type: Object
+id: PdfCell
+module: pdf_exporter
+export: Cell
 ---
 ---
 ##### shortDescription
-An object that contains information about the font's size, name, and style.
+An object that configures export to PDF settings in a [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') cell.
 
 ---
-<!-- Description goes here -->
+The [customDrawCell](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/customDrawCell.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customDrawCell') and [customizeCell](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customizeCell') functions use this object.
+
+#include common-demobutton with { 
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/"
+}
+
 ---
 ##### jQuery
 
@@ -22,9 +28,9 @@ An object that contains information about the font's size, name, and style.
                     component: dataGrid,
                     customizeCell: function(options) {
                         const { gridCell, pdfCell } = options;
-
+        
                         if(gridCell.rowType === 'data') {
-                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                            pdfCell.font = { size: 20 };
                         }
                     }
                 }).then(function() {
@@ -54,7 +60,7 @@ An object that contains information about the font's size, name, and style.
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
     import 'jspdf-autotable';
-
+    
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
@@ -70,9 +76,9 @@ An object that contains information about the font's size, name, and style.
                 component: this.dataGrid.instance,
                 customizeCell: function(options) {
                     const { gridCell, pdfCell } = options;
-
+    
                     if(gridCell.rowType === 'data') {
-                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                        pdfCell.font = { size: 20 };
                     }
                 }
             }).then(() => {
@@ -153,9 +159,9 @@ An object that contains information about the font's size, name, and style.
                     component: this.dataGrid,
                     customizeCell: function(options) {
                         const { gridCell, pdfCell } = options;
-
+        
                         if(gridCell.rowType === 'data') {
-                            pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                            pdfCell.font = { size: 20 };
                         }
                     }
                 }).then(() => {
@@ -190,9 +196,9 @@ An object that contains information about the font's size, name, and style.
                 component: dataGrid,
                 customizeCell: function(options) {
                     const { gridCell, pdfCell } = options;
-
+    
                     if(gridCell.rowType === 'data') {
-                        pdfCell.font = { size: 20, style: 'bold', name: 'Arial' };
+                        pdfCell.font = { size: 20 };
                     }
                 }
             }).then(() => {

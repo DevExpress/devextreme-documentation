@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the margin at the top of the page.
 
 ---
 <!-- Description goes here -->

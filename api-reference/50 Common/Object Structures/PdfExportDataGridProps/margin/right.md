@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the margin at the right side of the page.
 
 ---
 <!-- Description goes here -->

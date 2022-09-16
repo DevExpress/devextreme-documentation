@@ -5,7 +5,7 @@ default: '#FFFFFF'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the background color of the cell.
 
 ---
-<!-- Description goes here -->
+The color must be in the hexadecimal format.

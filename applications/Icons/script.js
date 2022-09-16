@@ -215,7 +215,11 @@
     "svgfile",
     "attach",
     "return",
-    "indeterminatestate"
+    "indeterminatestate",
+    "lock",
+    "unlock",
+    "imgarlock",
+    "imgarunlock"
 ];
 
 var divs = $.map(iconNames, function (name) {

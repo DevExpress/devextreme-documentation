@@ -5,28 +5,27 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Occurs before showing an appointment's tooltip.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.appointments): Array<Object>
-<!-- Description goes here -->
+An array of appointments.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to prevent a tooltip from showing.
 
 ##### field(e.component): dxScheduler
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.targetElement): DxElement
-<!-- Description goes here -->
+The target element of the tooltip.
 
 ---
-<!-- Description goes here -->

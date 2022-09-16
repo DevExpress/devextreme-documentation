@@ -2,6 +2,7 @@
 id: PdfExportGanttProps.exportMode
 acceptValues: 'all' | 'treeList' | 'chart'
 type: String
+default: 'all'
 ---
 ---
 ##### shortDescription

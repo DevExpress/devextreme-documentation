@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.columns
-type: Array<dxTreeListColumn, String>
+type: Array<dxGanttColumn, String>
 default: undefined
 inheritsType: dxTreeListColumn
 ---

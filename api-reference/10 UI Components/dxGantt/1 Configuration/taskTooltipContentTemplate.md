@@ -24,6 +24,7 @@ The processed task.
 Note that the **container** parameter contains the content of the default tooltip. You should clear the **container** parameter to specify custom content for the task tooltip.
 
 ---
+
 ##### jQuery
 
     <!--JavaScript-->

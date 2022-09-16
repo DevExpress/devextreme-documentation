@@ -9,6 +9,19 @@ Configures the DevExtreme UI component used as a toolbar item.
 ---
 
 ---
+
+##### jQuery
+
+  $('#toolbar').dxToolbar({
+    items: [{
+      <!-- ... -->
+      widget: 'dxCheckBox',
+      options: {
+        text: 'Show IDs'
+      },
+    }]
+  });
+
 ##### Angular
 
 **options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#widget') property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components. Specify **options** with an object.

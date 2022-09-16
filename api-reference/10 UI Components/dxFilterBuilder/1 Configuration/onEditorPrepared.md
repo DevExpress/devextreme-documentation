@@ -44,7 +44,7 @@ Indicates whether the editor uses right-to-left representation.
 A method you need to call to change the field's value after the editor's value changes.
 
 ##### field(e.updateValueTimeout): Number
-Gets and sets the delay between when a user stops typing the field's value and when it is applied.
+Gets and sets the delay between when a user stops typing the field's value and when the change is applied.
 
 ##### field(e.value): any
 The editor's value.
@@ -53,6 +53,6 @@ The editor's value.
 The editor's width.
 
 ---
-The UI component offers a user a different editor for entering a value depending on the field's [dataType](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType'): [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/'), [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/'), [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/'), etc. You can customize automatically created editors using this function.
+The UI component offers users different editors to enter a value depending on the field's [dataType](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType'): [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/'), [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/'), and so on. Use this function to customize those editors.
 
-[note]This function is not executed for fields that use the [editorTemplate](/api-reference/_hidden/dxFilterBuilderField/editorTemplate.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#editorTemplate').
+[note]You cannot execute this function for fields that use the [editorTemplate](/api-reference/_hidden/dxFilterBuilderField/editorTemplate.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#editorTemplate').

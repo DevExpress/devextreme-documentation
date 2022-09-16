@@ -12,3 +12,5 @@ The UI component height.
 
 ---
 #include uiwidgets-ref-height
+
+The {WidgetName} calculates its height relative to the **window**.

@@ -8,15 +8,21 @@ default: false
 Specifies whether users can set the CheckBox state to indeterminate.
 
 ---
-The component can be in three states (checked, unchecked, and indeterminate). When the CheckBox [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `null` or `undefined`, the default state is indeterminate.
+*dxCheckBox* supports three states: checked, unchecked, and indeterminate. The following table specifies the relation between the editor's state and its [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value).
 
-If this property is set to `false`, users can change checkbox states in the following order:
+| Value | State |
+| --- | --- |
+| `null` or `undefined` | Indeterminate |
+| `true` | Checked |
+| `false` | Unchecked |
 
-*Indeterminate (default) → Checked → Unchecked → Checked → Unchecked.*
+If you set *allowIndeterminateStateByClick* to `true`, users can cycles through check box states in the following order:
 
-Set this property to `true` to allow users to set the indeterminate state:
+*Indeterminate → Checked → Unchecked → Indeterminate →  ...*
 
-*Indeterminate (default) → Checked → Unchecked → Indeterminate.*
+If you set *allowIndeterminateStateByClick* property to `false`, users can only cycle between the checked and unchecked states. Note that a check box can initially appear in the indeterminate state, if you haven't set the value to either `true` or `false`.
+
+*Indeterminate → Checked → Unchecked → Checked → Unchecked → ...*
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"

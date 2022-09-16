@@ -1,7 +1,8 @@
 ---
 id: dxTileView.Options.showScrollbar
-type: Boolean
-default: false
+type: String
+default: 'never', 'onScroll' (Mac, Android, iOS)
+acceptValues: 'onScroll' | 'onHover' | 'always' | 'never'
 ---
 ---
 ##### shortDescription

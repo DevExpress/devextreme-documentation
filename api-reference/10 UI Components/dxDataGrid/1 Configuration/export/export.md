@@ -7,32 +7,48 @@ type: Object
 Configures client-side exporting.
 
 ---
-A user can click the **Export** button to save an Excel file with the exported data. Data types, sort, filter, and group settings are maintained.
+A user can click the **Export** button to save an Excel or PDF file with the exported data. Data types, sort, filter, and group settings are maintained.
 
 ![DevExtreme HTML5 JavaScript DataGrid Export Button](/images/DataGrid/exported_data.png)
 
 The following instructions show how to enable and configure client-side export:
 
-1. **Install or reference the required libraries**  
-    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+. 
+1. **Install or reference the required libraries**
+
+    Install the following libraries for the export:
+
+    - Excel: The <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ libraries.
+
+    - PDF: The <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library.  
 
     ---
     ##### jQuery
-        <!--HTML-->
+
+        <!-- Export to Excel -->
         <head>
-            <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
-            <!-- reference the DevExtreme sources here -->
+            <!-- Reference the DevExtreme sources here -->
         </head>
 
-    ##### Angular   
+        <!-- Export to Pdf -->
+        <head>
+            <!-- ... -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script>
+            <!-- Reference the DevExtreme sources here -->
+        </head>
 
+    ##### Angular
         <!-- tab: Installation command -->
+        <!-- Export to Pdf  -->
+        npm install jspdf
+
+        <!-- Export to Excel -->
         npm install --save exceljs file-saver
 
         <!-- tab: tsconfig.app.json -->
+        <!-- Export to Excel -->
         {
             "compilerOptions": {
                 // ...
@@ -47,14 +63,23 @@ The following instructions show how to enable and configure client-side export:
 
     ##### Vue
 
-        npm install --save exceljs file-saver
+        <!-- tab: Installation command -->
+        <!-- Export to Pdf  -->
+        npm install jspdf
 
+        <!-- Export to Excel -->
+        npm install --save exceljs file-saver
         
     ##### React
 
+        <!-- tab: Installation command -->
+        <!-- Export to Pdf  -->
+        npm install jspdf
+
+        <!-- Export to Excel -->
         npm install --save exceljs file-saver
         
-    ---     
+    --- 
 
 2. **Enable the export UI**   
     Set the **export**.[enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#enabled') property to **true**. This property enables export for all columns. Set a column's [allowExporting](/api-reference/_hidden/dxDataGridColumn/allowExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowExporting') property to **false** to prevent it from being exported:
@@ -178,7 +203,9 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the DataGrid**   
-    Implement the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler and call the [exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method in it. In the code below, this method exports the DataGrid as is, but you can use [ExcelExportDataGridProps](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/') to configure export settings, including [cell customization](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell'). The DataGrid is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Implement the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler and call the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') or **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method. In the code below, the **exportDataGrid** method exports the DataGrid as is. You can use [ExcelExportDataGridProps](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/')/[PdfExportDataGridProps](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/') to configure export settings. The DataGrid exports its data to an Excel worksheet or a PDF document. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities. To save the PDF document, call the jsPDF's **save** method.
+
+    The example below shows how to export DataGrid to Excel file.
 
     ---
     ##### jQuery
@@ -362,9 +389,182 @@ The following instructions show how to enable and configure client-side export:
 
     --- 
 
+    The example below shows how to export DataGrid to PDF document.
+
+    ---
+    ##### jQuery
+
+        <!--JavaScript-->
+        $(function(){
+            $('#exportButton').dxButton({
+                // ...
+                onClick: function() {
+                    const doc = new jsPDF();
+                    DevExpress.pdfExporter.exportDataGrid({
+                        jsPDFDocument: doc,
+                        component: dataGrid
+                    }).then(function() {
+                        doc.save('Customers.pdf');
+                    });
+                }
+            });
+            const dataGrid = $('#gridContainer').dxDataGrid({
+                // ...
+            }).dxDataGrid('instance');
+        });
+
+    ##### Angular   
+
+        <!-- tab: app.component.html -->
+        <dx-button ... 
+            (onClick)="exportGrid($event)">
+        </dx-button>
+
+        <dx-data-grid ... >
+            <!-- ... -->
+        </dx-data-grid>
+
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+        import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+        import { jsPDF } from 'jspdf';
+        
+        @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
+        })
+        export class AppComponent {
+            @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
+            exportGrid() {
+                const doc = new jsPDF();
+                exportDataGridToPdf({
+                    jsPDFDocument: doc,
+                    component: this.dataGrid.instance
+                }).then(() => {
+                    doc.save('Customers.pdf');
+                })
+            }
+        }
+
+
+        <!-- tab: app.module.ts -->
+        import { BrowserModule } from '@angular/platform-browser';
+        import { NgModule } from '@angular/core';
+        import { AppComponent } from './app.component';
+        import { DxDataGridModule, DxButtonModule } from 'devextreme-angular';
+
+        @NgModule({
+            declarations: [
+                AppComponent
+            ],
+            imports: [
+                BrowserModule,
+                DxDataGridModule,
+                DxButtonModule
+            ],
+            providers: [ ],
+            bootstrap: [AppComponent]
+        })
+        export class AppModule { }
+
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <div>
+                <DxButton ...
+                    @click="exportGrid()"
+                />
+                <DxDataGrid ...
+                    :ref="dataGridRef">
+                    <!-- ... -->
+                </DxDataGrid>
+            </div>
+        </template>
+
+        <script>
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DxDataGrid from 'devextreme-vue/data-grid';
+        import DxButton from 'devextreme-vue/button';
+        import { jsPDF } from 'jspdf';
+        import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+        const dataGridRef = 'dataGrid';
+        export default {
+            components: {
+                DxDataGrid,
+                DxButton
+            },
+            data() {
+                return {
+                    dataGridRef
+                };
+            },
+            computed: {
+                dataGrid: function() {
+                    return this.$refs[dataGridRef].instance;
+                }
+            },
+            methods: {
+                exportGrid() {
+                    const doc = new jsPDF();
+                    exportDataGridToPdf({
+                        jsPDFDocument: doc,
+                        component: this.dataGrid
+                    }).then(() => {
+                        doc.save('Customers.pdf');
+                    });
+                }
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import 'devextreme/dist/css/dx.light.css';
+
+        import DataGrid from 'devextreme-react/data-grid';
+        import Button from 'devextreme-react/button';
+        import { jsPDF } from 'jspdf';
+        import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
+        export default function App() {
+            const dataGridRef = useRef(null);
+            function exportGrid() {
+                const doc = new jsPDF();
+                const dataGrid = dataGridRef.current.instance;
+                exportDataGridToPdf({
+                    jsPDFDocument: doc,
+                    component: dataGrid
+                }).then(() => {
+                    doc.save('Customers.pdf');
+                });
+            }
+            return (
+                <React.Fragment>
+                    <div>
+                        <Button ...
+                            onClick={exportGrid}
+                        />
+                        <DataGrid ...
+                            ref={dataGridRef}
+                            >
+                            {/* ... */}
+                        </DataGrid>
+                    </div>
+                </React.Fragment>
+            );
+        }
+
+    ---     
+
+
 The following restrictions apply when users export DataGrid:   
 
-- Only XLSX files are supported out of the box. To export DataGrid to CSV, call the **exportDataGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
+- Only XLSX and PDF files are supported out of the box. To export DataGrid to CSV, call the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method as shown in the [formats](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#formats') property example.
 
 - Excel limits the number of grouping levels to 7, while in the DataGrid it is unlimited.
 
@@ -374,21 +574,24 @@ The following restrictions apply when users export DataGrid:
 
 - [Group rows](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') are always exported in an expanded state and the [isExpanded](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/isExpanded.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#isExpanded') property is ignored.
 
-- Customizations made in the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate'), [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate'), [headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate'), and [dataRowTemplate](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/dataRowTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate') are omitted, but you can recreate them in the exported file using the ExcelJS API. Use the [customizeCell](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell') function to do this. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSCellCustomization/)
+- Customizations made in the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate'), [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate'), [headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate'), and [dataRowTemplate](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/dataRowTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate') are omitted, but you can recreate them in the exported file. For this purpose, use the **excelExporter**.[customizeCell](/api-reference/50%20Common/Object%20Structures/ExcelExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#customizeCell') or **pdfExporter**.[customizeCell](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#customizeCell') function. Refer to the following demos for more information: [Excel Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSCellCustomization/), [PDF Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/).
 
 - [Data mapping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping') is ignored. Use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') instead.
 
 #include common-demobutton-named with {
-    name: "Overview",
+    name: "Export to Excel Overview",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/"
 }
 #include common-demobutton-named with {
-    name: "Export Images",
+    name: "Export to PDF Overview",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
+}
+#include common-demobutton-named with {
+    name: "Export Images to Excel",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportImages/"
 }
 #include common-demobutton-named with {
-    name: "Export Multiple Grids",
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/"
+    name: "Export Images to PDF",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportImages/"
 }
-
-[tags] xlsx, csv
+[tags] xlsx, csv, pdf

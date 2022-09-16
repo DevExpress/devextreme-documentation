@@ -28,7 +28,7 @@ jobs:
           working-directory: devextreme
           run: |
             npm ci
-            npm update devextreme-internal-tools
+            npm i devextreme-internal-tools@$(node -p "require('./package-lock').dependencies['devextreme-internal-tools'].version")
 
         - name: NPM - devextreme-documentation
           working-directory: documentation
@@ -37,31 +37,31 @@ jobs:
 #Generation
         - name: Discover declarations
           working-directory: devextreme
-          run: npm run discover-declarations -- --artifacts ../artifacts
+          run: npm run discover-declarations -- --artifacts ../artifacts/internal-tools
 
         - name: Update topics
           working-directory: documentation
-          run: npm run update-topics -- --declarations-path ../artifacts/Declarations.json --artifacts ../artifacts
+          run: npm run update-topics -- --artifacts ../artifacts/internal-tools
 
         - name: Generate additional topics
           working-directory: documentation
-          run: npm run generate-extra-topic
+          run: npm run generate-extra-topic --artifacts ../artifacts/internal-tools
 
         - name: Generate Syntax metadata
           working-directory: documentation
-          run: npm run generate-syntax-data -- --declarations-path $(realpath ../artifacts/Declarations.json)
+          run: npm run generate-syntax-data -- --artifacts ../artifacts/internal-tools
 
         - name: Generate Modules metadata
           working-directory: documentation
-          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json) --js-scripts ../devextreme/js
+          run: npm run generate-modules-meta -- --artifacts ../artifacts/internal-tools --js-scripts ../devextreme/js 
 
         - name: Generate ContentMap
           working-directory: documentation
-          run: npm run generate-content-map
+          run: npm run generate-content-map --artifacts ../artifacts/internal-tools
 
         - name: Update links
           working-directory: documentation
-          run: npm run update-links
+          run: npm run update-links --artifacts ../artifacts/internal-tools
 
 #PR
         - name: Configure Git
@@ -82,7 +82,7 @@ jobs:
             git push --set-upstream origin $branch_name
 
             escaped_pwd=$(echo $(pwd)/ | sed --expression 's/\//\\\//g')
-            cat ../artifacts/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
+            cat ../artifacts/internal-tools/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
 
             jq -n \
               --arg head "$branch_name" \

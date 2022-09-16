@@ -25,7 +25,4 @@ The modified property if it belongs to the first level. Otherwise, the first-lev
 ##### field(e.value): any
 The modified property's new value.
 
-##### field(e.previousValue): any
-The UI component's previous value.
-
 ---

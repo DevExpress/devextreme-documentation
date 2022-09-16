@@ -2,7 +2,7 @@
 id: dxContextMenu.Options.visible
 type: Boolean
 default: false
-firedEvents: showing, hiding
+firedEvents: hiding, showing
 ---
 ---
 ##### shortDescription

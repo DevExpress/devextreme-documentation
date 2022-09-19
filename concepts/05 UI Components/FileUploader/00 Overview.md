@@ -9,9 +9,11 @@ The following code adds the FileUploader to your page. Use the [accept](/api-ref
 ---
 ##### jQuery
 
-    <!--HTML--><div id="fileUploaderContainer"></div>
+    <!-- tab: index.html -->
+    <div id="fileUploaderContainer"></div>
 
-    <!--JavaScript-->$(function() {
+    <!-- tab: index.js -->
+    $(function() {
         $("#fileUploaderContainer").dxFileUploader({
             // ...
             accept: "image/*"
@@ -20,12 +22,12 @@ The following code adds the FileUploader to your page. Use the [accept](/api-ref
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-file-uploader ...
         accept="image/*">
     </dx-file-uploader>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxFileUploaderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -75,41 +77,23 @@ The following code adds the FileUploader to your page. Use the [accept](/api-ref
 
     import FileUploader from 'devextreme-react/file-uploader';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileUploader accept="image/*" >
-                </FileUploader>
-            );
-        }
+    function App() {
+        return (
+            <FileUploader accept="image/*" >
+            </FileUploader>
+        );
     }
     export default App;
 
-##### ASP.NET MVC Controls
-
-    <!--Razor C#-->
-    @(Html.DevExtreme().FileUploader()
-        .Accept("image/*")
-        // ...
-    )
-
-##### ASP.NET Core Controls
-
-    <!--Razor C#-->
-    @(Html.DevExtreme().FileUploader()
-        .Accept("image/*")
-        // ...
-    )
-
-
 ---
 
-A user is allowed to upload only one file at a time by default. Set the [multiple](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') property to **true** to allow uploading several files at once.
+A user can upload only one file at a time. Set the [multiple](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') property to **true** to allow uploading several files at once.
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!-- tab: index.js -->
+    $(function() {
         $("#fileUploaderContainer").dxFileUploader({
             multiple: true
         });
@@ -117,12 +101,12 @@ A user is allowed to upload only one file at a time by default. Set the [multipl
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-file-uploader ...
         [multiple]="true">
     </dx-file-uploader>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxFileUploaderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -172,43 +156,32 @@ A user is allowed to upload only one file at a time by default. Set the [multipl
 
     import FileUploader from 'devextreme-react/file-uploader';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileUploader multiple={true} >
-                </FileUploader>
-            );
-        }
+    function App() {
+        return (
+            <FileUploader multiple={true} >
+            </FileUploader>
+        );
     }
     export default App;
 
-##### ASP.NET MVC Controls
+---
 
-    <!--Razor C#-->
-    @(Html.DevExtreme().FileUploader()
-        .Multiple(true)
-        // ...
-    )
+If you need to access the selected files at runtime, get the value of the [value](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#value') property. The following command returns an array, whose members are each an instance implementing the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File" target="_blank">File interface</a>.
 
-##### ASP.NET Core Controls
+---
+##### jQuery
 
-    <!--Razor C#-->
-    @(Html.DevExtreme().FileUploader()
-        .Multiple(true)
-        // ...
-    )
+    <!-- tab: index.js -->
+    const files = $("#fileUploaderContainer").dxFileUploader("option", "value");
 
 ---
 
-If you need to access the selected files at runtime, get the value of the [value](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#value') property using the following command. It returns an array, whose members are each an instance implementing the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File" target="_blank">File interface</a>.
+With Angular, Vue, or React, use a different technique. Bind the [value](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#value') property of the FileUploader UI component to a component property. After that, you can access the file array within any method. 
 
-    <!--JavaScript-->var files = $("#fileUploaderContainer").dxFileUploader("option", "value");
+---
+##### Angular
 
-With Angular, AngularJS, or Knockout, use a different technique. Bind the **value** property of the FileUploader UI component to a component property (in Angular), a scope property (in AngularJS), or an observable variable (in Knockout). After that, you can access the file array within any method. 
-
-- **Angular**
-
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxFileUploaderModule } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -226,47 +199,64 @@ With Angular, AngularJS, or Knockout, use a different technique. Bind the **valu
         // ...
     })
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-file-uploader ...
         [(value)]="value">
     </dx-file-uploader>
 
-- **AngularJS**
+##### Vue
 
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.value = [];
-            $scope.getSelectedFiles = function () {
-                return $scope.value;
-            }
-        });
+    <!-- tab: App.vue -->
+    <template>
+        <DxFileUploader ...
+            @value-changed="e => value = e.value"
+        />
+        </div>
+    </template>
 
-    <!--HTML-->
-    <div dx-file-uploader="{ 
-        ...
-        bindingOptions: {
-            value: 'value'
+    <script>
+    import { DxFileUploader } from 'devextreme-vue/file-uploader';
+
+    export default {
+    components: {
+        DxFileUploader,
+    },
+    data() {
+        return {
+            value: []
+        };
+    },
+    methods: {
+        getSelectedFiles () {
+            return this.value;
         }
-    }"></div>
-
-- **Knockout**
-
-    <!--JavaScript-->
-    var viewModel = {
-        value: ko.observableArray(),
-        getSelectedFiles: function () {
-            return viewModel.value();
-        }
+    },
     };
+    </script>
 
-    ko.applyBindings(viewModel);
+##### React
 
-    <!--HTML-->
-    <div data-bind="dxFileUploader: { 
-        ...
-        value: value
-    }"></div>
+    <!-- tab: App.js -->
+    import React, {useState} from 'react';
+    import FileUploader from 'devextreme-react/file-uploader';
+
+    function App() {
+        const [value, setValue] = useState([]);
+        const changeValue = (e) => {
+            setValue(e.value);
+        }
+        const getSelectedFiles = () => {
+            return value;
+        }
+        return (
+            <FileUploader ...
+                value={value}
+                onValueChanged={changeValue}
+            />
+        );
+    }
+
+    export default App;
 
 ---
 

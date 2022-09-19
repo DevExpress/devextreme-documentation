@@ -120,6 +120,6 @@ The **scaleType** property specifies the zoom level for tasks when the Gantt UI 
 
 ---
 
-If the **scaleType** property is set to *"auto"*, the UI component is scaled to fit all tasks in the Gantt chart's visible area. 
+If the **scaleType** property is set to *"auto"*, the UI component's scale type is calculated based on the time difference between the start of the first task and the end of the final task. For example, if this difference is more than a year, the scaleType property is set to 'years'. 
 
 To browse tasks across various levels of detail in real time, hold the CTRL key and scroll the mouse wheel to zoom (in or out).

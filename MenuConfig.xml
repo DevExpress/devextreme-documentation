@@ -30,6 +30,8 @@
   <MenuRule Destination="050 Getting Started/23 Component Configuration Syntax" SourcePattern="Howto:^50 React Components/40 Component Configuration Syntax" VisibleFor="React" />
   <MenuRule Destination="050 Getting Started/24 Component Configuration Syntax" SourcePattern="Howto:^58 jQuery Components/20 Component Configuration Syntax" VisibleFor="jQuery" />
 
+  <MenuRule Destination="050 Getting Started/30 Optimize Performance" SourcePattern="Howto:^50 React Components/45 Optimize Performance" VisibleFor="React" />
+
   <MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
   <MenuRule Destination="050 Getting Started/63 TypeScript Support" SourcePattern="Howto:^Common/TypeScript Support" VisibleFor="jQuery" />
@@ -64,9 +66,13 @@
   <MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
   <MenuRule Destination="70 Advanced Topics/50 Webpack Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/04 Using Webpack" />
   <MenuRule Destination="70 Advanced Topics/70 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" />
-  <MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
+  <MenuRule Destination="70 Advanced Topics/81 Components Testing" SourcePattern="Howto:^40 Angular Components/50 Components Testing" VisibleFor="Angular" />
+  <MenuRule Destination="70 Advanced Topics/82 Components Testing" SourcePattern="Howto:^50 React Components/60 Components Testing" VisibleFor="React" />
+  <MenuRule Destination="70 Advanced Topics/83 Components Testing" SourcePattern="Howto:^58 jQuery Components/30 Components Testing" VisibleFor="jQuery" />
   <MenuRule Destination="70 Advanced Topics/90 3rd-Party Frameworks Integration API" SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 3rd-Party Frameworks Integration API" />
   <MenuRule Destination="70 Advanced Topics/99 Modularity" SourcePattern="Howto:^Common/Modularity" />
+
+  <MenuRule Destination="75 Troubleshooting" SourcePattern="Howto:^80 Troubleshooting" />
 
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
 

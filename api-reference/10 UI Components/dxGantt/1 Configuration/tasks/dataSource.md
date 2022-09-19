@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.tasks.dataSource
-type: Store | DataSource | DataSource_Options | String | Array<any>
+type: Store | DataSource | DataSource_Options | String | Array<any> | null
 default: null
 ---
 ---

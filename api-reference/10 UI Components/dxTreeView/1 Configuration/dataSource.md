@@ -1,6 +1,6 @@
 ---
 id: dxTreeView.Options.dataSource
-type: String | Array<dxTreeViewItem> | Store | DataSource | DataSource_Options
+type: String | Array<dxTreeViewItem> | Store | DataSource | DataSource_Options | null
 default: null
 ---
 #include common-dataSource-description with {

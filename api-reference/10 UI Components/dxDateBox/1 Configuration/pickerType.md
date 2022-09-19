@@ -9,20 +9,20 @@ default: 'calendar', 'native' (Android, iOS)
 Specifies the type of the date/time picker.
 
 ---
-This property accepts the following values.
+This property accepts the following values:
 
-- "native"  
- The picker type depends on the current platform or web browser.
+- *"calendar"*  
+The DateBox displays the [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/') UI component for users to select a date. Set the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property to *"date"* or *"datetime"* to use this picker type.
 
-- "calendar"  
- The date box uses the Calendar UI component to pick data. This value applies only when the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to "date" or "datetime".
+- *"list"*  
+The DateBox displays a list of time values. Set the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property to *"time"* to use this picker type.
 
-- "rollers"  
- The UI component uses rollers to pick the date and time.
+- *"native"*  
+The picker type depends on the current platform or web browser.
 
-- "list"  
- The UI component uses the list of time values to pick the time. This value applies only when the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property is set to "time".
+- *"rollers"*  
+The DateBox displays rollers for users to select date and time. Users cannot edit the selected value in the input field.
 
- #include common-demobutton with {
+#include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }

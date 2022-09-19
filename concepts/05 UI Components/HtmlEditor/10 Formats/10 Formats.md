@@ -97,6 +97,10 @@ The following tables list available formats and their values grouped into four c
     <td>"variable"</td>
     <td>Object ({ value: String, escapeChar: String | Array&lt;String&gt; })</td>
  </tr>
+ <tr>
+    <td>"mention"</td>
+    <td>Object ({ marker: String, id: String | Number, value: String })</td>
+ </tr>
 </table>
 
 **Table formats**

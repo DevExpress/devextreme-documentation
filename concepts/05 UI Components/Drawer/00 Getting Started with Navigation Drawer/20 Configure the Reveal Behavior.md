@@ -41,16 +41,14 @@ When you open the Drawer, it can slide in or expand from the closed position. Us
     // ...
     function NavigationDrawer() {
         // ...
-        render() {
-            return (
-                <div>
-                    { /* ... */ }
-                    <Drawer ...
-                        revealMode="expand" >
-                    </Drawer>
-                </div>
-            );
-        }
+        return (
+            <div>
+                { /* ... */ }
+                <Drawer ...
+                    revealMode="expand" >
+                </Drawer>
+            </div>
+        );
     }
     
     export default NavigationDrawer;

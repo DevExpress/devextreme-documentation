@@ -12,6 +12,10 @@ This function's parameter has the following fields:
         <th>Description</th>
     </tr>
     <tr>
+        <td><code>originalValue</code></td>
+        <td>The value of the represented point as it is set in the data source.</td>
+    </tr>
+    <tr>
         <td><code>value</code></td>
         <td>The value of the currently hovered point.</td>
     </tr>
@@ -20,12 +24,20 @@ This function's parameter has the following fields:
         <td>The value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#format">format</a> property is specified.</td>
     </tr>
     <tr>
+        <td><code>originalArgument</code></td>
+        <td>The argument value of the represented point as it is set in the data source.</td>
+    </tr>
+    <tr>
         <td><code>argument</code></td>
         <td>The argument value of the point being hovered over.</td>
     </tr>
     <tr>
         <td><code>argumentText</code></td>
         <td>The argument value of the point being hovered over with formatting applied if the <a href="/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/#argumentFormat">argumentFormat</a> property is specified.</td>
+    </tr>
+    <tr>
+        <td><code>seriesName</code></td>
+        <td>The series name of the point being hovered over.</td>
     </tr>
     <tr>
         <td><code>percent</code></td>
@@ -44,7 +56,8 @@ This function's parameter has the following fields:
 #include dataviz-ref-functioncontext
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/TooltipHtmlSupport/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/APIDisplayATooltip/"
+          
 }
 
 #####See Also#####

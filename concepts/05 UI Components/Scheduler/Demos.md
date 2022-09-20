@@ -23,6 +23,7 @@
 - [Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/)
 - [Custom Drag & Drop](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/)
 - [Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/)
+- [All Day Panel Mode](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/AllDayPanelMode/)
 
 **Grouping**
 

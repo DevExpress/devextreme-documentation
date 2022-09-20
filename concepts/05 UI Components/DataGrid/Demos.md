@@ -93,14 +93,21 @@
 - [Master-Detail API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/)
 - [Advanced Master-Detail View](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AdvancedMasterDetailView/)
 
-**Export to Excel and PDF**
+**Export to PDF**
+
+- [Export to PDF Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/)
+- [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/)
+- [Header and Footer](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFHeaderAndFooter/)
+- [Export Multiple Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportMultipleGrids/)
+- [Export Images](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportImages/)
+
+**Export to Excel**
 
 - [Export to Excel Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/)
 - [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSCellCustomization/)
 - [Header and Footer](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSHeaderAndFooter/)
 - [Export Multiple Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/)
 - [Export Images](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportImages/)
-- [Export to PDF (CTP)](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/)
 
 **Adaptability**
 

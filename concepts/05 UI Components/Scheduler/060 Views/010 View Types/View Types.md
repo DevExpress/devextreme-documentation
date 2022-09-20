@@ -42,7 +42,7 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-            :views="['day', 'week', 'agenda']"
+            :views=views
             current-view="week"
         />
     </template>
@@ -58,6 +58,11 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
             DxScheduler
         },
         // ...
+         data() {
+            return {
+             views: ['day', 'week', 'agenda'],
+           };
+        },
     }
     </script>
 
@@ -69,12 +74,14 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
     import 'devextreme/dist/css/dx.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
-
+    
+    const views = ['day', 'week', 'agenda'];
+    
     class App extends React.Component {
         render() {
             return (
                 <Scheduler
-                    views={['day', 'week', 'agenda']}
+                    views={views}
                     currentView="week"
                 />
             );

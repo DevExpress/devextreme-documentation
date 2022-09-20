@@ -30,6 +30,8 @@
   <MenuRule Destination="050 Getting Started/23 Component Configuration Syntax" SourcePattern="Howto:^50 React Components/40 Component Configuration Syntax" VisibleFor="React" />
   <MenuRule Destination="050 Getting Started/24 Component Configuration Syntax" SourcePattern="Howto:^58 jQuery Components/20 Component Configuration Syntax" VisibleFor="jQuery" />
 
+  <MenuRule Destination="050 Getting Started/30 Optimize Performance" SourcePattern="Howto:^50 React Components/45 Optimize Performance" VisibleFor="React" />
+
   <MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
   <MenuRule Destination="050 Getting Started/63 TypeScript Support" SourcePattern="Howto:^Common/TypeScript Support" VisibleFor="jQuery" />

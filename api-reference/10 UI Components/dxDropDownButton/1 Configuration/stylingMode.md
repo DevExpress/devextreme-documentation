@@ -9,6 +9,9 @@ default: 'outlined'
 Specifies how the button is styled.
 
 ---
-The following styles are available: 
 
-![DevExtreme DropDownButton: Styling modes](/images/UiWidgets/dropdownbutton_stylingMode.png)
+You can see the available styles in the demo. 
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
+}

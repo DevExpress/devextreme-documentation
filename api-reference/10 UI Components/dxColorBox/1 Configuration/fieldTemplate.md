@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the input field. Must contain the [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/') UI component.
+Specifies a custom template for the input field. Must contain the [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') UI component.
 
 ##### param(value): String
 The selected value.

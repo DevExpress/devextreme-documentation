@@ -7330,6 +7330,9 @@
     "dxPivotGridFieldChooserOptions.dataSource": {
       "vue": "data-source"
     },
+    "dxPivotGridFieldChooserOptions.encodeHtml": {
+      "vue": "encode-html"
+    },
     "dxPivotGridFieldChooserOptions.headerFilter": {
       "angular": "dxo-header-filter",
       "react": "HeaderFilter",

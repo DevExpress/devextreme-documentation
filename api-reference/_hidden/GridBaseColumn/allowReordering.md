@@ -11,5 +11,3 @@ Specifies whether users can reorder this column. Overrides the [allowColumnReord
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Reordering/"
 }
-
-[note] The **allowReordering** property has a higher priority than the [**allowColumnReordering**](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '{basewidgetpath}/Configuration/#allowColumnReordering') property.

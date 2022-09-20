@@ -1,6 +1,6 @@
 ---
 id: dxPivotGridFieldChooser.Options.dataSource
-type: PivotGridDataSource
+type: PivotGridDataSource | null
 default: null
 ---
 ---

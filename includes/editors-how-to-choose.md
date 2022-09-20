@@ -88,4 +88,4 @@ DropDownBox allows you to put any content in its drop-down field. For instance, 
 #####See Also#####
 - [Lookup vs SelectBox](/concepts/05%20UI%20Components/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')
 
-[tags] tagbox, lookup, autocomplete, dropdownbox
+[tags] tagbox, lookup, autocomplete, dropdownbox, selectbox

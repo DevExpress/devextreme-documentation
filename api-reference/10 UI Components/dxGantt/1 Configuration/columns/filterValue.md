@@ -1,4 +1,6 @@
+---
 
+---
 ---
 ##### shortDescription
 Specifies the column's filter value displayed in the [filter row](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/).

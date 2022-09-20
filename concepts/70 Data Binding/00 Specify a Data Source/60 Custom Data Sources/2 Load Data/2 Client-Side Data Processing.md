@@ -27,6 +27,7 @@ To process data on the client, load all data from the server in the [load](/api-
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     import CustomStore from 'devextreme/data/custom_store';
 
@@ -43,8 +44,7 @@ To process data on the client, load all data from the server in the [load](/api-
                 key: 'ID',
                 loadMode: 'raw', // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
                 load: () => {
-                    return this.http.get('https://mydomain.com/MyDataService')
-                        .toPromise()
+                    return lastValueFrom(this.http.get('https://mydomain.com/MyDataService'))
                         .catch(() => { throw 'Data loading error' });
                 }
             });

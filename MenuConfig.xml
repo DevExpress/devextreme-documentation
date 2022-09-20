@@ -70,6 +70,8 @@
   <MenuRule Destination="70 Advanced Topics/90 3rd-Party Frameworks Integration API" SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 3rd-Party Frameworks Integration API" />
   <MenuRule Destination="70 Advanced Topics/99 Modularity" SourcePattern="Howto:^Common/Modularity" />
 
+  <MenuRule Destination="75 Troubleshooting" SourcePattern="Howto:^80 Troubleshooting" />
+
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
 
   <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/((A|a)nimationConfig|(P|p)ositionConfig)" />

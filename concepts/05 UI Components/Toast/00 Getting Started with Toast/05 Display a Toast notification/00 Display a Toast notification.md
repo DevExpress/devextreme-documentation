@@ -1,0 +1,1 @@
+[note] This tutorial displays a Toast notification in response to a click on a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/'). However, you can re-use the code for different application logic.

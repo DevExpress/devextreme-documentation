@@ -1366,6 +1366,9 @@
     "dxCalendarOptions.showTodayButton": {
       "vue": "show-today-button"
     },
+    "dxCalendarOptions.showWeekNumbers": {
+      "vue": "show-week-numbers"
+    },
     "dxCalendarOptions.zoomLevel": {
       "vue": "zoom-level"
     },
@@ -2926,8 +2929,8 @@
     "dxCheckBoxOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
-    "dxCheckBoxOptions.allowIndeterminateStateByClick": {
-      "vue": "allow-indeterminate-state-by-click"
+    "dxCheckBoxOptions.enableThreeStateBehavior": {
+      "vue": "enable-three-state-behavior"
     },
     "dxCheckBoxOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"

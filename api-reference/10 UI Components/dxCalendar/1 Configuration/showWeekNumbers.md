@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not the UI component displays a column with the week numbers.
 
 ---
-<!-- Description goes here -->
+The first week of the year starts from January 1.

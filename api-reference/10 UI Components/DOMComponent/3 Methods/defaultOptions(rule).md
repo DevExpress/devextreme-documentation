@@ -10,7 +10,7 @@ The component's default device properties.
 
 ##### field(rule.device): Device | Array<Device> | function()
 [Device parameters](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/').      
-When specifying a function, get information about the current device from the argument. Return **true** if the properties should be applied to the device.
+When you specify a function, get information about the current device from the argument. Return **true** if the properties should be applied to the device.
 
 ##### field(rule.options): Object
 Options to be applied.
@@ -32,11 +32,11 @@ Options to be applied.
 ##### Angular
 
     <!--TypeScript-->
-    import {WidgetName} from "devextreme/ui/{widget_name}";
+    import {WidgetName}, { Properties } from "devextreme/ui/{widget_name}";
     // ...
     export class AppComponent {
         constructor () {
-            {WidgetName}.defaultOptions({
+            {WidgetName}.defaultOptions<Properties>({
                 device: { deviceType: "desktop" },
                 options: {
                     // Here go the {WidgetName} properties
@@ -74,20 +74,17 @@ Options to be applied.
 
 ##### React
 
-    import React, {useEffect} from "react";
     import dx{WidgetName} from "devextreme/ui/{widget_name}";
     import {WidgetName} from "devextreme-react/{widget-name}";
-
+     
+    dx{WidgetName}.defaultOptions({
+        device: { deviceType: "desktop" },
+        options: {
+            // Here go the {WidgetName} properties
+        }
+    });
+        
     export default function App() {
-        useEffect(() => { 
-            dx{WidgetName}.defaultOptions({
-                device: { deviceType: "desktop" },
-                options: {
-                    // Here go the {WidgetName} properties
-                }
-            })
-        });
-
         return (
             <div>
                 <{WidgetName} id="{widgetName}1" />

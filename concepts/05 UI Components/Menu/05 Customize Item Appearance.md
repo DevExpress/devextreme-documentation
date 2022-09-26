@@ -134,9 +134,37 @@ For a minor customization of Menu items, you can define [specific fields](/api-r
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    var menuItems = [{
+        text: 'Upload',
+        items: [
+            { text: 'From your computer' },
+            { text: 'From a cloud service' }
+        ]
+    }, {
+        text: 'Share',
+        items: [
+            { text: 'Log in with Facebook' },
+            { text: 'Log in with Twitter' }
+        ]
+    }];
+
+    $(function() {
+        $("#menuContainer").dxMenu({
+            items: menuItems,
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                itemElement.append("<i>" + itemData.text + "</i>");
+            }
+        });
+    });
+
+    <!--HTML-->
+    <div id="menuContainer"></div>
 
 ##### Angular
 
@@ -259,46 +287,10 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
-
 ---
-
 ##### jQuery
-
-    <!--JavaScript-->
-    var menuItems = [{
-        text: 'Upload',
-        items: [
-            { text: 'From your computer' },
-            { text: 'From a cloud service' }
-        ]
-    }, {
-        text: 'Share',
-        items: [
-            { text: 'Log in with Facebook' },
-            { text: 'Log in with Twitter' }
-        ]
-    }];
-
-    $(function() {
-        $("#menuContainer").dxMenu({
-            items: menuItems,
-            itemTemplate: function(itemData, itemIndex, itemElement) {
-                itemElement.append("<i>" + itemData.text + "</i>");
-            }
-        });
-    });
-
-    <!--HTML-->
-    <div id="menuContainer"></div>
-
----
 
 You can also customize an individual menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#template') field of the item's data object.
-
----
-
-##### jQuery
 
     <!--HTML-->
     <script id="individualTemplate" type="text/html">
@@ -326,7 +318,7 @@ You can also customize an individual menu item. For this purpose, declare a temp
 
 ---
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+
 
 #####See Also#####
 - [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)

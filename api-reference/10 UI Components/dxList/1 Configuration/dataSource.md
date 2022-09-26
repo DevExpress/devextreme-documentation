@@ -1,6 +1,6 @@
 ---
 id: dxList.Options.dataSource
-type: String | Array<String, dxListItem, any> | Store | DataSource | DataSource_Options
+type: String | Array<String, dxListItem, any> | Store | DataSource | DataSource_Options | null
 default: null
 ---
 #include common-dataSource-description with {

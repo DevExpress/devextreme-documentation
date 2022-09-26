@@ -60,10 +60,6 @@ jobs:
           working-directory: documentation
           run: npm run generate-syntax-data -- --declarations-path $(realpath ../artifacts/Declarations.json)
 
-        - name: Generate Modules metadata
-          working-directory: documentation
-          run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json) --js-scripts ../devextreme/js
-
         - name: Generate ContentMap
           working-directory: documentation
           run: npm run generate-content-map

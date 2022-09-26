@@ -1,4 +1,8 @@
-To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') at runtime, call the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue') method. This approach is more typical of jQuery.
+
+---
+##### jQuery
+
+To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') at runtime, call the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue') method.
 
     <!--JavaScript-->
     $(function() {
@@ -20,11 +24,9 @@ To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%
         });
     });
 
-With Angular, Vue, or React, bind the property that should be changed to a component property.
-
----
-
 ##### Angular
+
+To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') at runtime, bind the property that should be changed to a component property:
 
     <!--HTML-->
     <dx-form
@@ -57,6 +59,8 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
     })
 
 ##### Vue
+
+To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') at runtime, bind the property that should be changed to a component property:
 
     <!-- tab: App.vue -->
     <template>
@@ -96,6 +100,8 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
     </script>
 
 ##### React
+
+To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') at runtime, bind the property that should be changed to a state property:
 
     <!-- tab: App.js -->
     import React from 'react';

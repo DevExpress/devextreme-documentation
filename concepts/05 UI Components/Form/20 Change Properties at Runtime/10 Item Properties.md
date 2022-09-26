@@ -1,3 +1,7 @@
+
+---
+##### jQuery
+
 To change a single item property at runtime, call the [itemOption(id, option, value)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/itemOption(id_option_value).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid_option_value') method.  This approach is more typical of jQuery. If the needed item is [in a group](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/') or [in a tab](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/'), the *field* parameter should be given the group caption or tab title followed by the item's name. An example is shown below.
 
     <!--JavaScript-->
@@ -42,11 +46,9 @@ When you call it with the *id* parameter only, this method returns the current c
         });
     });
 
-In Angular, Vue, or React, bind the property that should be changed to a component property.
-
----
-
 ##### Angular
+
+To change an item property at runtime, bind the property that should be changed to a component property:
 
     <!--HTML-->
     <dx-form
@@ -84,6 +86,8 @@ In Angular, Vue, or React, bind the property that should be changed to a compone
     })
 
 ##### Vue
+
+To change an item property at runtime, bind the property that should be changed to a component property:
 
     <!-- tab: App.vue -->
     <template>
@@ -128,6 +132,8 @@ In Angular, Vue, or React, bind the property that should be changed to a compone
     </script>
 
 ##### React
+
+To change an item property at runtime, bind the property that should be changed to a state property:
 
     <!-- tab: App.js -->
     import React from 'react';

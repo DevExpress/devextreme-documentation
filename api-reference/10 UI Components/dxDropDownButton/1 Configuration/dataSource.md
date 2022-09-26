@@ -1,6 +1,6 @@
 ---
 id: dxDropDownButton.Options.dataSource
-type: String | Array<dxDropDownButtonItem, any> | Store | DataSource | DataSource_Options
+type: String | Array<dxDropDownButtonItem, any> | Store | DataSource | DataSource_Options | null
 default: null
 ---
 ---

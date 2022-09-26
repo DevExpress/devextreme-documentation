@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.layers.dataSource
-type: Object | Store | DataSource | DataSource_Options | String | Array<any>
+type: Object | Store | DataSource | DataSource_Options | String | Array<any> | null
 notUsedInTheme: 
 ---
 ---

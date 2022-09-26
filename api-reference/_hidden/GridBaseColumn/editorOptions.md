@@ -39,10 +39,10 @@ The default editor UI component depends on the column configuration. The followi
     </tr>
 </table>
 
-Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
-
 ---
 ##### Angular
+
+Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components. Specify **editorOptions** with an object.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
@@ -72,6 +72,8 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
     export class AppModule { }
 
 ##### Vue
+
+Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components. Specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
     <!-- tab: App.vue -->
     <template>
@@ -103,6 +105,8 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
     </script>
 
 ##### React
+
+Because of this dependency, **editorOptions** cannot be typed and are not implemented as nested configuration components. Specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
     <!-- tab: App.js -->
     import React from 'react';

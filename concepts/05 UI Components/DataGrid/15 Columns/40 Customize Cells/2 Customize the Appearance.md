@@ -1,6 +1,22 @@
-Cell appearance is customized using a column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate'). In Angular and Vue, you can declare the template in the markup. In React, you can use a rendering function (shown in the code below) or component:
+Cell appearance is customized using a column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#dataGridContainer").dxDataGrid({
+            // ...
+            columns: [{
+                dataField: "Title",
+                cellTemplate: function(element, info) {
+                     element.append("<div>" + info.text + "</div>")
+                            .css("color", "blue");
+                }
+            }]
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -84,27 +100,6 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
         }
     }
     export default App;
-
----
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the **cellTemplate** function as shown in the following code:
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#dataGridContainer").dxDataGrid({
-            // ...
-            columns: [{
-                dataField: "Title",
-                cellTemplate: function(element, info) {
-                     element.append("<div>" + info.text + "</div>")
-                            .css("color", "blue");
-                }
-            }]
-        });
-    });
 
 ---
 

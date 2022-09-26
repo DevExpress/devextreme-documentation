@@ -115,6 +115,9 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
 }
 
+---
+##### jQuery
+
 To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/addRoute(routeOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addRouterouteOptions') or [removeRoute(route)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/removeRoute(route).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeRouteroute') method.
 
     <!--JavaScript-->
@@ -149,10 +152,9 @@ To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-refe
     // Removes the routes with indexes 0 and 2 in the "routes" array
     map.removeRoute([0, 2]);
 
-With Angular, Vue, or React, use a different technique. Bind the **routes** property of the Map UI component to a component property. 
-
----
 ##### Angular
+
+To add or remove a route at runtime, bind the **routes** property of the Map to a component property.
 
     <!--HTML-->
     <dx-map
@@ -200,6 +202,8 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** prop
     })
 
 ##### Vue
+
+To add or remove a route at runtime, bind the **routes** property of the Map to a component property.
 
     <template>
         <div>
@@ -258,6 +262,8 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** prop
     </script>
 
 ##### React
+
+To add or remove a route at runtime, bind the **routes** property of the Map to a state property.
 
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';

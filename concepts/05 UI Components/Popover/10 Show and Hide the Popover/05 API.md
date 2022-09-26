@@ -1,9 +1,9 @@
 [note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the Popover. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
-To show or hide the Popover programmatically, call the [show()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the Popover, respectively. This approach is more typical of jQuery Controls.
-
 ---
 ##### jQuery 
+
+To show or hide the Popover programmatically, call the [show()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the Popover, respectively.
 
     <!--JavaScript-->$(function() {
 		$("#popoverContainer").dxPopover({
@@ -37,6 +37,8 @@ To show or hide the Popover programmatically, call the [show()](/api-reference/1
     <div id="hideButton"></div>
 
 ##### ASP.NET MVC Controls
+
+To show or hide the Popover programmatically, call the [show()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the Popover, respectively.
 
     <!--Razor C#-->
     @(Html.DevExtreme().Popover()
@@ -76,10 +78,10 @@ To show or hide the Popover programmatically, call the [show()](/api-reference/1
 
 ---
 
-The **show()** method called without arguments shows the Popover for the [target specified beforehand](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'). If you need to change the target once, call the [show(target)](/api-reference/10%20UI%20Components/dxPopover/3%20Methods/show(target).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#showtarget') method.
-
 ---
 ##### jQuery 
+
+The **show()** method called without arguments shows the Popover for the [target specified beforehand](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'). If you need to change the target once, call the [show(target)](/api-reference/10%20UI%20Components/dxPopover/3%20Methods/show(target).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#showtarget') method.
 
     <!--JavaScript-->$(function() {
         // ...
@@ -93,6 +95,8 @@ The **show()** method called without arguments shows the Popover for the [target
 
 ##### ASP.NET MVC Controls
 
+The **show()** method called without arguments shows the Popover for the [target specified beforehand](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#target'). If you need to change the target once, call the [show(target)](/api-reference/10%20UI%20Components/dxPopover/3%20Methods/show(target).md '/Documentation/ApiReference/UI_Components/dxPopover/Methods/#showtarget') method.
+
     <!--Razor C#-->
     // ...
 
@@ -103,12 +107,9 @@ The **show()** method called without arguments shows the Popover for the [target
         // ...
     </script>
 
----
-
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#visible') property of the Popover UI component to a component property. After that, change them, and the Popover will appear or disappear.
-
----
 ##### Angular
+
+To show or hide the Popover programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#visible') property of Popover to a component property. After that, change the latter property, and the Popover will appear or disappear.
 
     <!--HTML-->
     <img id="image" src="https://url/to/an/image" />
@@ -143,6 +144,9 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     })
 
 ##### Vue
+
+To show or hide the Popover programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#visible') property of Popover to a component property. After that, change the latter property, and the Popover will appear or disappear.
+
     <template>
         <div>
             <img id="image" src="https://url/to/an/image" />
@@ -193,6 +197,8 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </script>
 
 ##### React
+
+To show or hide the Popover programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#visible') property of Popover to a state property. After that, change the latter property, and the Popover will appear or disappear.
 
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';

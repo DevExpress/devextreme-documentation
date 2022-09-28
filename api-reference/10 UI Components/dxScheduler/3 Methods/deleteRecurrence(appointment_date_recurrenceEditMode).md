@@ -119,7 +119,7 @@ An edit mode for recurring appointments.
     })
     export class AppModule { }
 
-#####Vue 
+##### Vue 
 
     <!-- tab: App.vue -->
     <template>
@@ -161,7 +161,7 @@ An edit mode for recurring appointments.
     // ...
     ];
 
-#####React
+##### React
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';

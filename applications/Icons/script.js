@@ -219,7 +219,8 @@
     "lock",
     "unlock",
     "imgarlock",
-    "imgarunlock"
+    "imgarunlock",
+    "bell"
 ];
 
 var divs = $.map(iconNames, function (name) {

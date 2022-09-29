@@ -1,5 +1,8 @@
 To customize the automatically-generated value axes or panes, assign a callback function to the **customizeChart** field. This function will be called once - before rendering the chart.
 
+---
+##### jQuery
+
     <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
         // ...
         customizeChart: function (chartOptions) {
@@ -8,6 +11,8 @@ To customize the automatically-generated value axes or panes, assign a callback 
         }
     });
     
+---
+
 The **chartOptions** object contains the following fields.
 
 - **valueAxis**: <span style="font-size:12px">Array</span>     

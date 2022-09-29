@@ -26,6 +26,8 @@ The parent container node must be of the `"verticalContainer"` or `"horizontalCo
 
 You can also use the [containerChildrenExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerChildrenExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerChildrenExpr') property to provide a container's content.
 
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -69,5 +71,7 @@ You can also use the [containerChildrenExpr](/api-reference/10%20UI%20Components
             "team": "110"
         },
     ];
+
+---
 
 ![Diagram - Container](/images/diagram/children-container-expr.png)

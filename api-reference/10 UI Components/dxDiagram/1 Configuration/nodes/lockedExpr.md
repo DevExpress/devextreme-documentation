@@ -24,6 +24,8 @@ A function assigned to this property should do the following:
 
 A locked item can not be moved, changed, or deleted. The [context menu](/concepts/05%20UI%20Components/Diagram/30%20Diagram%20Tools.md '/Documentation/Guide/UI_Components/Diagram/Diagram_Tools/') allows users to lock and unlock an item.
 
+---
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -46,3 +48,5 @@ A locked item can not be moved, changed, or deleted. The [context menu](/concept
             return null;
         }
     });
+
+---

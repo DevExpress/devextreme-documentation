@@ -8,7 +8,7 @@ default: false
 Specifies the UI component state.
 
 ---
-The check box can be in one of the following states depending on the **value** property's value.
+The CheckBox can be in one of the following states depending on the **value** property's value.
 
 - checked  
  **value** is `true`

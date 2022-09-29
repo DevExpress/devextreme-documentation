@@ -8,7 +8,7 @@ default: false
 Specifies whether users can set the CheckBox state to indeterminate.
 
 ---
-The CheckBox component supports three states: checked, unchecked, and indeterminate. The following table specifies the relation between the editor's state and its [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value).
+The CheckBox component supports three states: checked, unchecked, and indeterminate. The following table specifies the relation between the editor's state and its [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value):
 
 <table class="dx-table">
     <tr>
@@ -29,11 +29,11 @@ The CheckBox component supports three states: checked, unchecked, and indetermin
     </tr>
 </table>
 
-If you set **enableThreeStateBehavior** to `true`, users can cycle through check box states in the following order:
+If you set **enableThreeStateBehavior** to `true`, users can cycle through CheckBox states in the following order:
 
 *Indeterminate → Checked → Unchecked → Indeterminate →  ...*
 
-If you set **enableThreeStateBehavior** property to `false`, users can only cycle between the checked and unchecked states. Note that a check box can initially appear in the indeterminate state, if you haven't set the value to either `true` or `false`.
+If you set **enableThreeStateBehavior** property to `false`, users can only cycle between the checked and unchecked states. Note that the CheckBox can initially appear in the indeterminate state, if you haven't set the value to either `true` or `false`.
 
 *Indeterminate → Checked → Unchecked → Checked → Unchecked → ...*
 

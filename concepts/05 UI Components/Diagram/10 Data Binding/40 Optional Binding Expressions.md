@@ -166,6 +166,9 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
 
 ![Diagram - Data Bound Diagram](/images/diagram/data-bound-diagram.png)
 
+---
+##### jQuery
+
     <!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
@@ -272,3 +275,5 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
             toPointIndex: 11,
         },
     ];
+
+---

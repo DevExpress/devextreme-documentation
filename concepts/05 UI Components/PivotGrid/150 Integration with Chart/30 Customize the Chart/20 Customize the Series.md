@@ -1,5 +1,8 @@
 If you need to customize the automatically-formed series, assign a callback function to the **customizeSeries** field. This function will be called once for each series.
 
+---
+##### jQuery
+
     <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
         // ...
         customizeSeries: function (seriesName, seriesOptions) {
@@ -8,6 +11,8 @@ If you need to customize the automatically-formed series, assign a callback func
         }
     });
     
+---
+
 The function accepts the following arguments.
 
 - **seriesName**: <span style="font-size:12px">String</span>    
@@ -29,9 +34,14 @@ When series were generated from several data fields, they can be arranged in thr
 
 To specify the exact manner, use the **dataFieldsDisplayMode** field.
 
+---
+##### jQuery
+
     <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
         // ...
         dataFieldsDisplayMode: 'splitAxes' | 'singleAxis' | 'splitPanes'
     });
     
+---
+
 [note]If you have set the [putDataFieldsInto](/concepts/05%20UI%20Components/PivotGrid/150%20Integration%20with%20Chart/20%20Convert%20Grid%20Fields%20into%20Chart%20Series.md '/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/#Convert_Grid_Fields_into_Chart_Series') field to *"args"*, **dataFieldsDisplayMode** will be set to *"singleAxis"* forcedly.

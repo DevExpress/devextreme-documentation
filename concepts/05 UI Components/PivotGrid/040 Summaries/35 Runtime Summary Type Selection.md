@@ -1,4 +1,9 @@
-Frequently, the user requires changing the summary type at runtime. Although this capability is not provided out-of-the-box, you can easily implement it using the [onContextMenuPreparing](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onContextMenuPreparing.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onContextMenuPreparing') event handler. For example, consider the following self-explanatory code sample.
+Frequently, the user requires changing the summary type at runtime. Although this capability is not provided out-of-the-box, you can easily implement it using the [onContextMenuPreparing](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onContextMenuPreparing.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onContextMenuPreparing') event handler.
+
+---
+##### jQuery
+
+For example, consider the following code sample:
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
@@ -38,7 +43,12 @@ Frequently, the user requires changing the summary type at runtime. Although thi
         }
     };
 
+---
+
 [note]Applying the *"custom"* summary type demands implementing the [calculateCustomSummary](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/calculateCustomSummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#calculateCustomSummary') callback function.
+
+---
+##### jQuery
 
 Altering certain parts of this code, you can enable the user to perform a wide range of actions using the context menu. For example, to allow the user to change the [summaryDisplayMode](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryDisplayMode.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode') property at runtime, slightly modify the click handler and the array of items.
 
@@ -71,6 +81,10 @@ Altering certain parts of this code, you can enable the user to perform a wide r
         }
     };
 
+---
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/SummaryDisplayModes/"
 }
+
+[tags] jquery

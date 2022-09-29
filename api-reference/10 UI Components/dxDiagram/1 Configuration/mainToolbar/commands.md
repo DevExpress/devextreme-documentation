@@ -12,6 +12,9 @@ Lists commands in the toolbar.
 ---
 The main toolbar can contain default and custom commands. Handle the [CustomCommand](/api-reference/10%20UI%20Components/dxDiagram/4%20Events/customCommand.md '/Documentation/ApiReference/UI_Components/dxDiagram/Events/#customCommand') event to respond to a custom command click.
 
+---
+##### jQuery
+
     <!--JavaScript-->
     $(function() {
         var diagram = $("#diagram").dxDiagram({
@@ -25,3 +28,5 @@ The main toolbar can contain default and custom commands. Handle the [CustomComm
             },
         }).dxDiagram("instance");
     });
+
+---

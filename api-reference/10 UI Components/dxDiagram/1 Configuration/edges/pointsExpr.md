@@ -22,7 +22,8 @@ A function assigned to this property should do the following:
 * Return an edge's new key points when the **value** parameter is set to `undefined`.
 * Save new point values to a data storage when the **value** parameter contains an edge's key points. For instance, assign these values to the **obj** parameter's field to save an edge's key points in your data source.
 
-<!--->
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -48,6 +49,8 @@ A function assigned to this property should do the following:
         },
         //...
     ];
+
+---
 
 [note]
 

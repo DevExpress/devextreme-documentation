@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 A cell's custom value.
 
 ---
-Unlike data columns bound to a [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField'), unbound columns display custom values returned from the **calculateCellValue** function. It is called each time a new row is rendered.
+Unlike data columns bound to a [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField'), unbound columns display custom values returned from the **calculateCellValue** function. The component executes this function multiple times for each record: when records are rendered, when users sort or filter them, and when summaries are computed. To avoid errors and enhance the UI component performance, make sure that properties of the **rowData** object used in calculation exist and keep calculations inside this function as simple as possible.
 
 In the following code, the **calculateCellValue** function is used to create an unbound column that displays a calculated sales amount. Data objects contain the `Price` and `UnitsSold` fields used in the calculation:
 
@@ -362,8 +362,6 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
 #include uiwidgets-ref-functioncontext with { 
     value: "column's configuration"
 }
-
-[note] This function is called multiple times for every record: when the record is rendered, when sorting or filtering is applied, and when summaries are computed. It is recommend that you keep calculations inside this function as simple as possible to avoid hindering UI component performance.
 
 #####See Also#####
 - **columns[]**.[customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText')

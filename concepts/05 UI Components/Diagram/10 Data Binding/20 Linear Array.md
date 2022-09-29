@@ -10,57 +10,62 @@ Specify the following **required properties**: [nodes.keyExpr](/api-reference/10
 
 During the binding process, the UI component creates a shape for every bound node and a connector between every pair of nodes linked by the _Key_ - _Parent Key_ reference. Note that edges are not maintained as entities in a data source, thus a detached connector disappears after rebinding.
 
-        <!-- tab: index.js -->
-        $(function() {
-            $("#diagram").dxDiagram({
-                nodes: {
-                    dataSource: new DevExpress.data.ArrayStore({
-                        key: "this",
-                        data: employees
-                    }),
-                    keyExpr: "ID",
-                    parentKeyExpr: "Head_ID",            
-                    textExpr: "Title",
-                    heightExpr: function() {return 0.4} 
-                },
-            });
-        });
+---
+##### jQuery
 
-        <!-- tab: data.js -->
-        var employees = [{
-            "ID": 3,
-            "Full_Name": "Arthur Miller",
-            "Title": "CTO",
-        }, {
-            "ID": 6,
-            "Head_ID": 3,
-            "Full_Name": "Brett Wade",
-            "Title": "IT Manager",
-        }, {
-            "ID": 9,
-            "Head_ID": 3,
-            "Full_Name": "Barb Banks",
-            "Title": "Support Manager",
-        }, {
-            "ID": 18,
-            "Head_ID": 9,
-            "Full_Name": "James Anderson",
-            "Title": "Support Assistant",
-        }, {
-            "ID": 21,
-            "Head_ID": 6,
-            "Full_Name": "Taylor Riley",
-            "Title": "Network Admin",
-        }, {
-            "ID": 23,
-            "Head_ID": 6,
-            "Full_Name": "Wally Hobbs",
-            "Title": "Programmer",
-        }, {
-            "ID": 24,
-            "Head_ID": 6,
-            "Full_Name": "Brad Jameson",
-            "Title": "Programmer",
-        }];
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                dataSource: new DevExpress.data.ArrayStore({
+                    key: "this",
+                    data: employees
+                }),
+                keyExpr: "ID",
+                parentKeyExpr: "Head_ID",            
+                textExpr: "Title",
+                heightExpr: function() {return 0.4} 
+            },
+        });
+    });
+
+    <!-- tab: data.js -->
+    var employees = [{
+        "ID": 3,
+        "Full_Name": "Arthur Miller",
+        "Title": "CTO",
+    }, {
+        "ID": 6,
+        "Head_ID": 3,
+        "Full_Name": "Brett Wade",
+        "Title": "IT Manager",
+    }, {
+        "ID": 9,
+        "Head_ID": 3,
+        "Full_Name": "Barb Banks",
+        "Title": "Support Manager",
+    }, {
+        "ID": 18,
+        "Head_ID": 9,
+        "Full_Name": "James Anderson",
+        "Title": "Support Assistant",
+    }, {
+        "ID": 21,
+        "Head_ID": 6,
+        "Full_Name": "Taylor Riley",
+        "Title": "Network Admin",
+    }, {
+        "ID": 23,
+        "Head_ID": 6,
+        "Full_Name": "Wally Hobbs",
+        "Title": "Programmer",
+    }, {
+        "ID": 24,
+        "Head_ID": 6,
+        "Full_Name": "Brad Jameson",
+        "Title": "Programmer",
+    }];
+
+---
 
 ![Diagram - Node and Edge Arrays](/images/diagram/db-linear-array.png)

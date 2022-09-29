@@ -7,9 +7,14 @@ Cancels the file upload.
 
 ---
 
+---
+##### jQuery
+
     <!-- tab: JavaScript -->
     var uploadControl = $("#uploaderContainer").dxFileUploader("instance");
     uploadControl.abortUpload()
+
+---
 
 [note]
 

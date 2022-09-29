@@ -29,6 +29,9 @@ The Gantt UI component gets data for dependencies from a data source ([dataSourc
         'type': 0
     }
 
+---
+##### jQuery
+
 The following example illustrates how to bind the UI component to dependencies stored in the data source that contains data fields with conventional names:
 
     <!-- tab: index.js -->
@@ -50,7 +53,12 @@ The following example illustrates how to bind the UI component to dependencies s
     // your code
     ];
 
+---
+
 If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map dependency's id, type, etc.
+
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -72,3 +80,5 @@ If the data source's field names differ from the standard field names mentioned 
     },
     // your code
     ];
+
+---

@@ -24,7 +24,8 @@ A function assigned to this property should do the following:
 * Return a node's new style as a set of CSS rules in JSON format when the **value** parameter is set to `undefined`. For instance, `{"fill": "#d9d9d9"; "stroke": "#999999"}`.
 * Save a new style value to a data storage when the **value** parameter contains a node's style. For instance, assign this value to the **obj** parameter's field to save a node's style in your data source.
 
-<!--->
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -41,6 +42,8 @@ A function assigned to this property should do the following:
             return style;
         }
     });
+
+---
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"

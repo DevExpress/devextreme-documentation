@@ -7,11 +7,16 @@ Resources and resource assignments are optional in the Gantt UI component.
 
 Use the [showResources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources') property to specify whether the Gantt UI component hides resources or displays them as task labels.
 
+---
+##### jQuery
+
     $(function() {
         $("#gantt").dxGantt({
             showResources: false
         });
     }); 
+
+---
 
 **Resource assignments** specify which resources are assigned to tasks. You can assign multiple resources to a task.
 
@@ -36,6 +41,10 @@ The objects from the data sources are automatically bound to the UI component if
         'taskId': 3,
         'resourceId': 1
     }
+
+---
+##### jQuery
+
 The following example illustrates how to bind the UI component to resources and resource assignment objects stored in the data sources that contain data fields with conventional names:
 
     <!-- tab: index.js -->
@@ -65,7 +74,12 @@ The following example illustrates how to bind the UI component to resources and 
     // your code
     ];
 
+---
+
 If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map resources and resource assignments fields.
+
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -95,3 +109,5 @@ If the data source's field names differ from the standard field names mentioned 
     },
     // your code
     ];
+
+---

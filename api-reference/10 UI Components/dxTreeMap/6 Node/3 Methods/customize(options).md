@@ -13,7 +13,12 @@ Use this method to customize a specific node. Depending on whether the node is a
 
 [note]You can specify any fields of the **tile** or **group** objects, except the [headerHeight](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/group/headerHeight.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/group/#headerHeight') field. This restriction exists because the layout of tiles and groups is calculated long before any customization can be applied.
 
-You can call the **customize(options)** method at any point of the application flow, for example, when the nodes are [being rendered](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/onNodesRendering.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#onNodesRendering'). The following code paints the label of a child node in blue or red depending on the node's value.
+You can call the **customize(options)** method at any point of the application flow, for example, when the nodes are [being rendered](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/onNodesRendering.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#onNodesRendering'). 
+
+---
+##### jQuery
+
+The following code paints the label of a child node in blue or red depending on the node's value.
 
     <!--JavaScript-->var treeMapOptions = {
         // ...
@@ -31,4 +36,6 @@ You can call the **customize(options)** method at any point of the application f
         }
     };
     
+---
+
 [note]When a node is being drilled down/up, its visual representation is converted from tile to group and back. However, the customizations made in that node by the **customize(options)** method remain. If you need to revert the appearance of the node to the initial state, call the node's [resetCustomization()](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node/3%20Methods/resetCustomization().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#resetCustomization') method.

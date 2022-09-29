@@ -28,6 +28,9 @@ A function assigned to this property should do the following:
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"
 }
 
+---
+##### jQuery
+
     <!-- tab: index.js -->
     $(function() {
         $("#diagram").dxDiagram({
@@ -75,3 +78,5 @@ A function assigned to this property should do the following:
         },
         // ...
     ];
+
+---

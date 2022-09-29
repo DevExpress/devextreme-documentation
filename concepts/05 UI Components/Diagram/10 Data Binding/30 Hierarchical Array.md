@@ -10,53 +10,58 @@ Specify the following **required properties**: [nodes.keyExpr](/api-reference/10
 
 During the binding process, the UI component creates a shape for every bound node and all connectors that are between a node and its children. Note that the edges are not maintained as entities in a data source, thus the detached connector disappears after it is rebound.
 
-        <!-- tab: index.js -->
-        $(function() {
-            $("#diagram").dxDiagram({
-                nodes: {
-                    dataSource: new DevExpress.data.ArrayStore({
-                        key: "this",
-                        data: employees
-                    }),
-                    keyExpr: "ID",
-                    textExpr: "Title",
-                    itemsExpr: "Items",
-                },
-            });
-        });
+---
+##### jQuery
 
-        <!-- tab: data.js -->
-        var employees = [{
-            "ID": 3,
-            "Full_Name": "Arthur Miller",
-            "Title": "CTO",
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                dataSource: new DevExpress.data.ArrayStore({
+                    key: "this",
+                    data: employees
+                }),
+                keyExpr: "ID",
+                textExpr: "Title",
+                itemsExpr: "Items",
+            },
+        });
+    });
+
+    <!-- tab: data.js -->
+    var employees = [{
+        "ID": 3,
+        "Full_Name": "Arthur Miller",
+        "Title": "CTO",
+        "Items": [{
+            "ID": 6,
+            "Full_Name": "Brett Wade",
+            "Title": "IT Manager",
             "Items": [{
-                "ID": 6,
-                "Full_Name": "Brett Wade",
-                "Title": "IT Manager",
-                "Items": [{
-                    "ID": 21,
-                    "Full_Name": "Taylor Riley",
-                    "Title": "Network Admin",
-                }, {
-                    "ID": 23,
-                    "Full_Name": "Wally Hobbs",
-                    "Title": "Programmer",
-                }, {
-                    "ID": 24,
-                    "Full_Name": "Brad Jameson",
-                    "Title": "Programmer",
-                }]
+                "ID": 21,
+                "Full_Name": "Taylor Riley",
+                "Title": "Network Admin",
             }, {
-                "ID": 9,
-                "Full_Name": "Barb Banks",
-                "Title": "Support Manager",
-                "Items": [{
-                    "ID": 18,
-                    "Full_Name": "James Anderson",
-                    "Title": "Support Assistant",
-                }]
+                "ID": 23,
+                "Full_Name": "Wally Hobbs",
+                "Title": "Programmer",
+            }, {
+                "ID": 24,
+                "Full_Name": "Brad Jameson",
+                "Title": "Programmer",
             }]
-        }];
+        }, {
+            "ID": 9,
+            "Full_Name": "Barb Banks",
+            "Title": "Support Manager",
+            "Items": [{
+                "ID": 18,
+                "Full_Name": "James Anderson",
+                "Title": "Support Assistant",
+            }]
+        }]
+    }];
+
+---
 
 ![Diagram - Node and Edge Arrays](/images/diagram/db-linear-array.png)

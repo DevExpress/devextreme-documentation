@@ -31,6 +31,9 @@ The Gantt UI component gets data for tasks from a data source ([dataSource](/api
         'progress': 31       
     }
 
+---
+##### jQuery
+
 The following example illustrates how to bind the UI component to tasks stored in the data source, which contains data fields with conventional names:
 
     <!-- tab: index.js -->
@@ -54,7 +57,12 @@ The following example illustrates how to bind the UI component to tasks stored i
     // your code
     ];
 
+---
+
 If the data source's field names differ from the standard field names mentioned above, use the **[fieldName]Expr** properties to map task title, progress, start/end points, etc.
+
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -79,9 +87,14 @@ If the data source's field names differ from the standard field names mentioned 
     // your code
     ];
 
+---
+
 The list below provides the main members that affect task appearance and functionality.
 
 - [allowSelection](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/allowSelection.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowSelection') - Specifies whether users can select tasks.
+
+    ---
+    ##### jQuery
 
         $(function() {
             $("#gantt").dxGantt({
@@ -89,7 +102,12 @@ The list below provides the main members that affect task appearance and functio
             });
         });
 
+    ---
+
 - [scaleType](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/scaleType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType') - Specifies the zoom level of tasks in the Gantt chart.
+
+    ---
+    ##### jQuery
 
         $(function() {
             $("#gantt").dxGantt({
@@ -97,7 +115,12 @@ The list below provides the main members that affect task appearance and functio
             });
         });  
 
+    ---
+
 - [showResources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/showResources.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#showResources') - Specifies whether to display task resources.
+
+    ---
+    ##### jQuery
 
         $(function() {
             $("#gantt").dxGantt({
@@ -105,10 +128,17 @@ The list below provides the main members that affect task appearance and functio
             });
         });  
 
+    ---
+
 - [taskTitlePosition](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/taskTitlePosition.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#taskTitlePosition') - Specifies a task's title position.
+
+    ---
+    ##### jQuery
 
         $(function() {
             $("#gantt").dxGantt({
                 taskTitlePosition: 'none'
             });
         });
+
+    ---

@@ -29,7 +29,8 @@ An end line tip accepts one of the following values:
 * `filledTriangle`
 * `outlinedTriangle`
 
-<!--->
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -57,3 +58,5 @@ An end line tip accepts one of the following values:
             return "none";
         }
     });
+
+---

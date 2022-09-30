@@ -1,17 +1,22 @@
 The UI component creates a diagram layout based on the algorithm specified by the [autoLayout.orientation](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout/orientation.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#orientation') and [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout/type.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#type') properties.
 
-        <!-- tab: index.js -->
-        $(function() {
-            $("#diagram").dxDiagram({
-                nodes: {
-                    autoLayout: {
-                        orientation: "horizontal"
-                        type: "tree",
-                    },
-                    ...
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({
+            nodes: {
+                autoLayout: {
+                    orientation: "horizontal"
+                    type: "tree",
                 },
-            });
+                ...
+            },
         });
+    });
+
+---
 
 You can create a diagram layout based on shape coordinates maintained in a data source. Set the [leftExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#topExpr') properties to names of data source fields that provide shape coordinates. 
 
@@ -26,6 +31,9 @@ If the [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Confi
 If the [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout/type.md 'Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/#type') property is set to **layered** or **tree**, predefined shape coordinates ([leftExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/leftExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#leftExpr') and [topExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/topExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#topExpr')) and edge points ([pointsExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/pointsExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#pointsExpr')) are ignored.
 
 [/note]
+
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -84,5 +92,7 @@ If the [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Confi
             points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
       },
     ];
+
+---
 
 The Diagram UI component reloads the diagram every time the data source changes. The [onRequestLayoutUpdate](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/onRequestLayoutUpdate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#onRequestLayoutUpdate') function is executed after diagram data is reloaded and allows you to specify whether the UI component should update the diagram layout.

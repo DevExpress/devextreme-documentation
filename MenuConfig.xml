@@ -93,6 +93,7 @@
   <MenuRule Destination="10 UI Components/$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Overview" />
   <MenuRule Destination="10 UI Components/$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Visual Elements" />
   <MenuRule Destination="10 UI Components/$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/(Drawer|FileManager|Floating Action Button)/[0-9]* Getting Started with (File Manager|Navigation Drawer|Floating Action Button)" />
+  <MenuRule Destination="10 UI Components/Diagram/0 Getting Started" SourcePattern="Howto:^05 UI Components/Diagram/00 Getting Started with Diagram" VisibleFor="jQuery"/>
   <MenuRule Destination="10 UI Components/$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|zz Common)" />
   <MenuRule Destination="10 UI Components/$1/2 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />

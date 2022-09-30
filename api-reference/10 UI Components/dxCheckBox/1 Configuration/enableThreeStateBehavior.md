@@ -8,7 +8,7 @@ default: false
 Specifies whether users can set the CheckBox state to indeterminate.
 
 ---
-The CheckBox component supports three states: checked, unchecked, and indeterminate. The following table specifies the relation between the editor's state and its [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value):
+The CheckBox component supports three states: checked, unchecked, and indeterminate. The following table specifies the relation between the editor's state and its [value](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value'):
 
 <table class="dx-table">
     <tr>

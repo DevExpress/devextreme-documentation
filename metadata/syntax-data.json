@@ -12067,9 +12067,6 @@
     "enums.SlideOutMenuPosition": {
       "vue": "slide-out-menu-position"
     },
-    "enums.SliderCallValueChange": {
-      "vue": "slider-call-value-change"
-    },
     "enums.SmallValuesGroupingMode": {
       "vue": "small-values-grouping-mode"
     },

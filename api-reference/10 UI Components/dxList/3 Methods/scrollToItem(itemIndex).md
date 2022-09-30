@@ -17,7 +17,8 @@ If the UI component displays a grouped list, specify the target item index using
 - **item**  
  Specifies the item index within the specified group.
 
-<!---->
+---
+##### jQuery
 
     <!--JavaScript-->
     const list = $("#myList").dxList("instance");
@@ -25,6 +26,8 @@ If the UI component displays a grouped list, specify the target item index using
         group: 3,
         item: 8
     });
+
+---
 
 #####See Also#####
 #include common-link-callmethods

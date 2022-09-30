@@ -26,6 +26,8 @@ A function assigned to this property should do the following:
 
 You can also use the [containerKeyExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/containerKeyExpr.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#containerKeyExpr') property to provide a container's content.
 
+---
+##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -68,5 +70,7 @@ You can also use the [containerKeyExpr](/api-reference/10%20UI%20Components/dxDi
             }]
         }
     ];
+
+---
 
 ![Diagram - Container](/images/diagram/children-container-expr.png)

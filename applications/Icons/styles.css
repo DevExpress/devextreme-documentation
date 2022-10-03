@@ -9,7 +9,7 @@
     color: #86929d;
 }
 .container {
-    display: inline-block;
+    display: inline-flex;
     width: 180px;
     padding: 0 10px 10px 0;
 }

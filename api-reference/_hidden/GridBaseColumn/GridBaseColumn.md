@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn
 type: Object
-module: ui/data_grid
+module: common/grids
 export: ColumnBase
 ---

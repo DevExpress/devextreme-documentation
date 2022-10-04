@@ -825,7 +825,9 @@
       "vue": "validation-callback"
     },
     "dataChange": {
-      "vue": "data-change"
+      "angular": "dxo-data-change",
+      "react": "DataChange",
+      "vue": "DxDataChange"
     },
     "dataChange.insertAfterKey": {
       "vue": "insert-after-key"

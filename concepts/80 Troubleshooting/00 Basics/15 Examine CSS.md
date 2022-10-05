@@ -6,7 +6,7 @@ The CSS `background-color` rules are specified for the standalone [Toolbar](/api
 
 ### Solution  
 
-Inspect the [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') toolbar element. Right-click the element and choose the **Inspect** menu item or press Ctrl+Shift+C (Chrome) and click the element. Both actions navigate you to this element in the Elements tab of your browser's DevTools.
+Inspect the DataGrid toolbar element. Right-click the element and choose the **Inspect** menu item or press Ctrl+Shift+C (Chrome) and click the element. Both actions navigate you to this element in the Elements tab of your browser's DevTools.
 
 Open the **Computed** tab and check the `background-color` CSS property.
 

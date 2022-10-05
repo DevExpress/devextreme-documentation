@@ -6,7 +6,7 @@ The CSS `background-color` rules are specified for the standalone [Toolbar](/api
 
 ### Solution  
 
-Inspect the toolbar element. Right-click the element and choose the **Inspect** menu item or press Ctrl+Shift+C (Chrome) and click the element. Both actions navigate you to this element in the Elements tab of your browser's DevTools.
+Inspect the DataGrid toolbar element. Right-click the element and choose the **Inspect** menu item or press Ctrl+Shift+C (Chrome) and click the element. Both actions navigate you to this element in the Elements tab of your browser's DevTools.
 
 Open the **Computed** tab and check the `background-color` CSS property.
 
@@ -20,4 +20,4 @@ The parent element has the `background-color` property. Expand it to see that th
 
 ![Inspect CSS: the `background-color` property expanded](/images/Troubleshooting/troubleshooting-inspect-css-3.png)
 
-Use a more specific CSS selector for this style to take effect only on the standalone toolbar. For example, assign an ID to the grid toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.
+Use a more specific CSS selector for this style to take effect only on the standalone toolbar. For example, assign an ID to the standalone toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.

@@ -39,5 +39,5 @@ A **DataSource** configuration object. For more information, refer to the [Map D
 An [ArrayStore](/Documentation/ApiReference/Data_Layer/ArrayStore/), [LocalStore](/Documentation/ApiReference/Data_Layer/LocalStore/), [ODataStore](/Documentation/ApiReference/Data_Layer/ODataStore/), or [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) instance.
 
 - **Function**      
-A function that allows you to modify the incoming `options.dataSource` parameter or override it and set it to one of the above. For more information, refer to the [Change the Generated Data Source](/concepts/UI%20Components/DataGrid/How%20To/Customize%20Header%20Filter%20Data%20Source/#Change%20the%20Generated%20Data%20Source '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Change_the_Generated_Data_Source') article.
+A function that allows you to modify the incoming `options.dataSource` parameter or override it and set it to one of the above. For more information, refer to the [Change the Generated Data Source](/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Change_the_Generated_Data_Source) article.
 

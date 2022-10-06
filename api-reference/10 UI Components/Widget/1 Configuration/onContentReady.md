@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when the UI component's content is ready and each time the content is changed.
+A function that is executed when the UI component is rendered and each time the component is repainted.
 
 ##### param(e): Object
 Information about the event.

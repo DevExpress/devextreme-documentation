@@ -17,9 +17,15 @@ The UI component's instance.
 A DataSource configuration.
 
 ---
+The {WidgetName} generates a header filter's data source automatically based on column values. Each header filter item is an object that includes the following fields:
 
-Each header filter item is configured as a separate object and should include the `text` and `value` fields.
-The **dataSource** property accepts one of the following data sources, that includes the item configuration objects:
+- `text`     
+A text string that represents the item in the header filter.
+
+- `value`        
+A filter that the item applies. It can be a single value (for example, 0) or a filter expression. Refer to the [filter](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter) help topic for information on the filter expression syntax.
+
+Use the **dataSource** property to change the generated data source or specify a custom data source. You can set the **dataSource** property to one of the following:
 
 - **Array of objects**       
 A JavaScript array that contains plain objects. For more information, refer to the [Specify a Custom Data Source](/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source) article.

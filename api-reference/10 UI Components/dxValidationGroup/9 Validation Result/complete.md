@@ -220,7 +220,7 @@ In the following example, a button validates a group of editors with async rules
         res.status === "pending" && res.complete.then((r) => {
             console.log(r.status);
         });
-    });
+    };
 
     class App extends React.Component {
         render() {
@@ -242,6 +242,7 @@ In the following example, a button validates a group of editors with async rules
                 </DateBox>
 
                 <Button 
+                    text="Submit"
                     validationGroup={validationGroupName}
                     onClick={validateGroup} />
             );

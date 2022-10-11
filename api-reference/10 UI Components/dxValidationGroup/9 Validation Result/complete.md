@@ -151,7 +151,7 @@ In the following example, a button validates a group of editors with async rules
         </DxDateBox>
 
         <DxButton
-            text: "Submit"
+            text="Submit"
             :validation-group="validationGroupName"
             @click="validateGroup()"
         />

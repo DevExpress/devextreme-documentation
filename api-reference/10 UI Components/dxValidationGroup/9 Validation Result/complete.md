@@ -41,6 +41,7 @@ In the following example, a button validates a group of editors with async rules
             });
 
         $("#button").dxButton({
+            text: "Submit",
             validationGroup: validationGroupName,
             onClick: function(e) {
                 const res = e.validationGroup.validate(); 
@@ -73,6 +74,7 @@ In the following example, a button validates a group of editors with async rules
     </dx-date-box>
 
     <dx-button 
+        text="Submit"
         [validationGroup]="validationGroupName"
         (onClick)="validateGroup($event)">
     </dx-button>
@@ -149,6 +151,7 @@ In the following example, a button validates a group of editors with async rules
         </DxDateBox>
 
         <DxButton
+            text="Submit"
             :validation-group="validationGroupName"
             @click="validateGroup()"
         />
@@ -220,7 +223,7 @@ In the following example, a button validates a group of editors with async rules
         res.status === "pending" && res.complete.then((r) => {
             console.log(r.status);
         });
-    });
+    };
 
     class App extends React.Component {
         render() {
@@ -242,6 +245,7 @@ In the following example, a button validates a group of editors with async rules
                 </DateBox>
 
                 <Button 
+                    text="Submit"
                     validationGroup={validationGroupName}
                     onClick={validateGroup} />
             );

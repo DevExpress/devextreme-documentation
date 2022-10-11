@@ -74,7 +74,7 @@ In the following example, a button validates a group of editors with async rules
     </dx-date-box>
 
     <dx-button 
-        text: "Submit"
+        text="Submit"
         [validationGroup]="validationGroupName"
         (onClick)="validateGroup($event)">
     </dx-button>

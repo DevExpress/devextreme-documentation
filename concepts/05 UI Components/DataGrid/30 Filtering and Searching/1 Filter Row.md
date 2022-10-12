@@ -335,7 +335,7 @@ The set of available filter operations can be restricted using the [filterOperat
         render() {
             let { selectedOperation, filterValue } = this.state;
             return (
-                <DataGrid (onOptionChanged)={this.optionChanged} ... >
+                <DataGrid onOptionChanged={this.optionChanged} ... >
                     <FilterRow visible={true} />
                     <Column 
                         dataField="Status"

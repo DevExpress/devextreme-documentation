@@ -5,7 +5,7 @@ export: default
 ---
 ---
 ##### shortDescription
-The **ODataContent** is an object that provides access to an entire OData service.
+The **ODataContext** is an object that provides access to an entire OData service.
 
 ##### lib
 dx.web.js, dx.viz.js, dx.all.js

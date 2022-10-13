@@ -20,6 +20,10 @@ By default, this method call clears selection of previously selected rows. To ke
 
     <!--JavaScript-->widgetInstance.selectRows([5, 10, 12], true);
 
+If you specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) as an array of keys, you can call this method as follows:
+
+    <!--JavaScript-->widgetInstance.selectRows([{id: 5}, {id: 10}, {id: 12}], true);
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/"
 }

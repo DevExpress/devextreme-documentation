@@ -9749,6 +9749,9 @@
     "dxSelectBoxOptions.allowClearing": {
       "vue": "allow-clearing"
     },
+    "dxSelectBoxOptions.customItemCreateEvent": {
+      "vue": "custom-item-create-event"
+    },
     "dxSelectBoxOptions.dropDownOptions": {
       "vue": "drop-down-options"
     },
@@ -10253,9 +10256,6 @@
     },
     "dxTagBoxOptions.useSubmitBehavior": {
       "vue": "use-submit-behavior"
-    },
-    "dxTagBoxOptions.valueChangeEvent": {
-      "vue": "value-change-event"
     },
     "dxTextArea": {
       "angular": "dx-text-area",

@@ -2,6 +2,7 @@
 id: dxSelectBox.Options.valueChangeEvent
 type: String
 default: 'change'
+dep: dxSelectBox.Options.customItemCreateEvent
 ---
 ---
 ##### shortDescription

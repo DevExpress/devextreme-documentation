@@ -1371,6 +1371,9 @@
     "dxCalendarOptions.showWeekNumbers": {
       "vue": "show-week-numbers"
     },
+    "dxCalendarOptions.weekNumberRule": {
+      "vue": "week-number-rule"
+    },
     "dxCalendarOptions.zoomLevel": {
       "vue": "zoom-level"
     },
@@ -12200,6 +12203,9 @@
     },
     "enums.VisualRangeUpdateMode": {
       "vue": "visual-range-update-mode"
+    },
+    "enums.WeekNumberRule": {
+      "vue": "week-number-rule"
     },
     "enums.WordWrap": {
       "vue": "word-wrap"

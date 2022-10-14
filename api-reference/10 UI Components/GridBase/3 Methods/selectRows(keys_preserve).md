@@ -20,7 +20,7 @@ By default, this method call clears selection of previously selected rows. To ke
 
     <!--JavaScript-->widgetInstance.selectRows([5, 10, 12], true);
 
-If you specify DataGrid's key as composite, for example `key = ['id', 'name']`, you need call this method as follows:
+If you specify DataGrid's key as composite (for example, `key: ['id', 'name']`), you need to call this method as follows:
 
     <!--JavaScript-->widgetInstance.selectRows([{id: 5, name: 'Alex' }, {id: 10: name: 'Bob' }], true);
 

@@ -22,7 +22,7 @@ By default, this method call clears selection of previously selected rows. To ke
 
 If you specify DataGrid's key as composite (for example, `key: ['id', 'name']`), you need to call this method as follows:
 
-    <!--JavaScript-->widgetInstance.selectRows([{id: 5, name: 'Alex' }, {id: 10: name: 'Bob' }], true);
+    <!--JavaScript-->widgetInstance.selectRows([ { id: 5, name: 'Alex' }, { id: 10: name: 'Bob' } ], true);
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/"

@@ -88,6 +88,10 @@
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentComponent">dropDownAppointmentComponent</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentRender">dropDownAppointmentRender</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentTemplate">dropDownAppointmentTemplate</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentComponent">dropDownAppointmentComponent</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentRender">dropDownAppointmentRender</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentTemplate">dropDownAppointmentTemplate</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxScheduler/Methods/scrollToTime(hours_minutes_date)">scrollToTime(hours, minutes, date)</a></td>
 </tr>
 <tr>
+<td>SelectBox</td>
+<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxSelectBox/Configuration/#valueChangeEvent">valueChangeEvent</a></td>
+</tr>
+<tr>
 <td>SlideOut</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxSlideOut">dxSlideOut</a></td>
 </tr>

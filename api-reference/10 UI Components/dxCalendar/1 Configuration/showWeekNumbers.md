@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not the UI component displays a column with the week numbers.
 
 ---
-<!-- Description goes here -->
+The [weekNumberRule]('{currentpath}/#weekNumberRule') property defines the beginning of the first week of year.

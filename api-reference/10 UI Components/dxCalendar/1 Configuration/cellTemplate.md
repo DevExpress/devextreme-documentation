@@ -29,6 +29,12 @@ The current cell's index.
 A template name or container.
 
 ---
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
+}
+
+If a cell is a [week number](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers), the `date` field value is `undefined`.
+
 #####See Also#####
 - [Customize Cell Appearance](/concepts/05%20UI%20Components/Calendar/15%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/Calendar/Customize_Cell_Appearance/')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

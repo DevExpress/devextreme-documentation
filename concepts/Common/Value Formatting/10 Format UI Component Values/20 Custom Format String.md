@@ -15,7 +15,7 @@ Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom form
     <td>&#35;</td>
     <td>
             Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number does not have a digit in the corresponding position, it displays nothing.</br>
-            For example, if you apply format "#0.#" to "123.45", the result is "123.4".
+            For example, if you apply format "#0.#" to "123.45", the result is "123.5".
     </td>
     </tr>
     <tr>

@@ -131,7 +131,7 @@ If you want to implement your own calculation rule, use the [cellTemplate](/Docu
                 currentValue: new Date(2000, 0, 1),
                 lastDateOfWeek: 0
             }
-        }б
+        }
         methods: {
             getCellCssClass({ date, view, text }) {
                 let cssClass = '';
@@ -153,6 +153,7 @@ If you want to implement your own calculation rule, use the [cellTemplate](/Docu
 ##### React
 
     <!-- tab: App.js -->
+    // ...
     let lastDateOfWeek;
     const currentValue = new Date(2000, 0, 1);
 

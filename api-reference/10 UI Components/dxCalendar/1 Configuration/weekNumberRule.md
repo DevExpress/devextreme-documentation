@@ -108,7 +108,7 @@ If you want to implement your own calculation rule, use the [cellTemplate](/Docu
         <DxCalendar
             :value="currentValue"
             :show-week-numbers="true"
-            :cell-template="custom"
+            cell-template="custom"
         >
             <template #custom="{ data: cell }">
                 <span :class="getCellCssClass(cell)">

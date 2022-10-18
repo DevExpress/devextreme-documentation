@@ -19,7 +19,7 @@ This property can take on one of the following values:
 The first week of a year is the week that contains January 1. 
 
 - `firstFourDays`    
-The first week of a year is the week that starts on one of the first four week days: Monday, Tuesday, Wednesday, or Thursday. This rule is defined by the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard. If the first week of the year begins on a Friday, Saturday, or Sunday, this week considered the last week of the previous year.
+The first week of a year is the week that starts on one of the first four weekdays: Monday, Tuesday, Wednesday, or Thursday. This rule is defined by the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard. If the first week of the year begins on a Friday, Saturday, or Sunday, this week is considered the last week of the previous year.
  
 - `fullWeek`
 The first week of a year is the week that begins with a day that matches the [firstDayOfWeek](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#firstDayOfWeek) option value.

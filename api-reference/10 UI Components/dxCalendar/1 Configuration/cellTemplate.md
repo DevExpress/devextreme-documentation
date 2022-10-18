@@ -33,7 +33,7 @@ A template name or container.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 
-If a cell is a [week number](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers), the `date` field value is `undefined`.
+If a cell is a [week number](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/showWeekNumbers.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers'), the `date` field value is `undefined`.
 
 #####See Also#####
 - [Customize Cell Appearance](/concepts/05%20UI%20Components/Calendar/15%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/Calendar/Customize_Cell_Appearance/')

@@ -5,7 +5,9 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to display a column with week numbers.
 
 ---
-<!-- Description goes here -->
+
+#####See Also#####
+- [weekNumberRule](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#weekNumberRule)

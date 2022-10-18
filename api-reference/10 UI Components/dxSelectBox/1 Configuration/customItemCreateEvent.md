@@ -67,6 +67,7 @@ The following code shows how to enable item creation on **Space** key pressed do
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         [items]="itemsArray"
+        displayExpr="text"
         [acceptCustomValue]="true"
         (onCustomItemCreating)="onCustomItemCreating($event)"
         (onKeyDown)="onKeyDown($event)"
@@ -121,6 +122,7 @@ The following code shows how to enable item creation on **Space** key pressed do
     <template>
         <Dx{WidgetName} ...
             :items="itemsArray"
+            display-expr="text"
             :accept-custom-value="true"
             @customItemCreating="onCustomItemCreating"
             @keyDown="onKeyDown"
@@ -226,6 +228,7 @@ The following code shows how to enable item creation on **Space** key pressed do
         return (
             <{WidgetName} ...
                 items={itemsArray}
+                displayExpr="text"
                 acceptCustomValue={true}
                 onCustomItemCreating={onCustomItemCreating}
                 onKeyDown={onKeyDown}

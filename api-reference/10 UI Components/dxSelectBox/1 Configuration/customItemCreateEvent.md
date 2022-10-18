@@ -8,11 +8,11 @@ default: 'change'
 Specifies the <a href="https://en.wikipedia.org/wiki/DOM_events" target="_blank">DOM event</a> after which the custom item should be created. Applies only if [acceptCustomValue]({basewidgetpath}/Configuration/#acceptCustomValue) is enabled.
 
 ---
-The default custom item creating event is `change`, and items are created when users press the **Enter** key, or when the component loses focus.
+The default custom item creation event is `change`, and items are created when users press the **Enter** key or when the component loses focus.
 
 To allow users to create items only when they press the **Enter** key, pass an empty string to this property.
 
-The following code shows how to enable item creation on **Space** key pressed down:
+The following code shows how to enable item creation when the **Space** key is pressed:
 
 ---
 ##### jQuery

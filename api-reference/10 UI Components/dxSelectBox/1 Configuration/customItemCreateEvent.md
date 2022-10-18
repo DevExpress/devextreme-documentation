@@ -10,7 +10,7 @@ Specifies the <a href="https://en.wikipedia.org/wiki/DOM_events" target="_blank"
 ---
 The default custom item creating event is `change`, and items are created when users press the **Enter** key, or when the component loses focus.
 
-To allow users create items only when they press the **Enter** key, pass an empty string to this property.
+To allow users to create items only when they press the **Enter** key, pass an empty string to this property.
 
 The following code shows how to enable item creation on **Space** key pressed down:
 

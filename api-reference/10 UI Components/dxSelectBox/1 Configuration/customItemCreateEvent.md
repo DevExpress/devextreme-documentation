@@ -5,7 +5,7 @@ default: 'change'
 ---
 ---
 ##### shortDescription
-Specifies the <a href="https://en.wikipedia.org/wiki/DOM_events" target="_blank">DOM event</a> after which the custom item should be created. Applies only if [acceptCustomValue]({basewidgetpath}/Configuration/#acceptCustomValue) is enabled.
+Specifies the <a href="https://en.wikipedia.org/wiki/DOM_events" target="_blank">DOM event</a> after which the custom item should be created. Applies only if [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '{basewidgetpath}/Configuration/#acceptCustomValue') is enabled.
 
 ---
 The default custom item creation event is `change`, and items are created when users press the **Enter** key or when the component loses focus.

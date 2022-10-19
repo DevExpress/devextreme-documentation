@@ -6,7 +6,7 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies a [week number](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers) calculation rule. 
+Specifies a [week number](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/showWeekNumbers.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers') calculation rule.
 
 ---
 #include common-demobutton with {
@@ -22,12 +22,12 @@ The first week of a year is the week that contains January 1.
 The first week of a year is the week that starts on one of the first four weekdays: Monday, Tuesday, Wednesday, or Thursday. This rule is defined by the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard. If the first week of the year begins on a Friday, Saturday, or Sunday, this week is considered the last week of the previous year.
  
 - `fullWeek`
-The first week of a year is the week that begins with a day that matches the [firstDayOfWeek](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#firstDayOfWeek) option value.
+The first week of a year is the week that begins with a day that matches the [firstDayOfWeek](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/firstDayOfWeek.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#firstDayOfWeek') option value.
  
 - `auto` (default)    
 The week calculation rule depends on the locale. If a week starts on Monday, the `firstFourDays` rule is applied. Otherwise, the `firstDay` rule is in effect.
 
-If you want to implement your own week number calculation rule, use the [cellTemplate](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#cellTemplate) function:
+If you want to implement your own week number calculation rule, use the [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#cellTemplate') function:
 
 ---
 ##### jQuery

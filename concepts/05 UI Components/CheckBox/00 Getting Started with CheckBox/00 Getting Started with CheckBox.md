@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The CheckBox component allows users to select a date within a specified date range. This tutorial shows how to add this component to your application and configure its core features.
+This tutorial shows how to add the CheckBox to your application and configure its core features.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/22_1/GettingStartedWith/CheckBox/index.html, /Content/Applications/22_1/GettingStartedWith/CheckBox/index.js, /Content/Applications/22_1/GettingStartedWith/CheckBox/index.css"></div>
 

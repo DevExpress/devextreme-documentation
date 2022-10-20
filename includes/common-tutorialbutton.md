@@ -1,1 +1,1 @@
-<a href="${{url}}" class="button orange small fix-width-155" style="margin-right: 5px;" target="_blank">Start Tutorial</a>
+<a href="${{url}}" class="button tutorial" style="margin-right: 5px;" target="_blank">Start Tutorial</a>

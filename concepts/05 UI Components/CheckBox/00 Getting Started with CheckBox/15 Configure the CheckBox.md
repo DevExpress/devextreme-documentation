@@ -1,4 +1,4 @@
-To make the CheckBox more accessible, specify the [text](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#text) and [hint](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#hint) properties.
+To label the CheckBox and add a pop-up hint, specify the [text](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#text) and [hint](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#hint) properties.
 
 You can also use the [iconSize](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#iconSize) property to specify a custom width and height for the CheckBox.
 

@@ -52,7 +52,9 @@ The following types of the specified value are available:
                 Item content
             </DxItem>
             <template #firstItemTitleTemplate>
-                <b>First item template</b>
+                <div>
+                    <b>First item template</b>
+                </div>
             </template>
         </DxAccordion> 
     </template>

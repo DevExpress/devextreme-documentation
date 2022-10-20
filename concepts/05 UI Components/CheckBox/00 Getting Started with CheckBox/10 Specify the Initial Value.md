@@ -1,4 +1,4 @@
-The CheckBox can be in one of the following states depending on the [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) property's value:
+The CheckBox can be in one of the following states depending on its [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value):
 
 - checked  
 the [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `true`

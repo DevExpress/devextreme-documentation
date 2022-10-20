@@ -1,15 +1,15 @@
 The CheckBox can be in one of the following states depending on the [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) property's value:
 
 - checked  
-[value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `true`
+the [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `true`
 
 - unchecked  
-[value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `false`
+the [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `false`
 
 - indeterminate 
-[value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `undefined` or `null`
+the [value](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value) is `undefined` or `null`
 
-The following code specifies the initial value as `null`.
+The following code specifies the initial value as `null`:
 
 ---
 ##### jQuery

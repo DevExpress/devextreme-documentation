@@ -1,4 +1,4 @@
-Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#onValueChanged) handler to perform an action when users click the CheckBox.
+Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#onValueChanged) event handler to perform an action when users click the CheckBox.
 
 The code below notifies a user every time the CheckBox is checked.
 

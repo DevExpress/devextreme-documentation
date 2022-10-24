@@ -4,34 +4,33 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A template that can be used to replace the label with custom content.
 
 ##### param(itemData): Object
-<!-- Description goes here -->
+The item's data.
 
 ##### field(itemData.component): dxForm
-<!-- Description goes here -->
+The Form instance.
 
 ##### field(itemData.dataField): String
-<!-- Description goes here -->
+The item's [dataField](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField).
 
 ##### field(itemData.editorOptions): any
-<!-- Description goes here -->
+The item editor's [configuration](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions).
 
 ##### field(itemData.editorType): String
-<!-- Description goes here -->
+The editor's [type](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType).
 
 ##### field(itemData.name): String
-<!-- Description goes here -->
+The item's [name](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name).
 
 ##### field(itemData.text): String
-<!-- Description goes here -->
+The label's [text](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#text).
 
 ##### param(itemElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+A template name or container.
 
 ---
-<!-- Description goes here -->

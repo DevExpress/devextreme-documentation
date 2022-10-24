@@ -14,7 +14,7 @@ All operations with UI component properties are carried out through the scope pr
         $scope.checkBoxValue = true;
     }
 
-Now, if you change the `checkBoxValue` scope property in code, the [CheckBox](/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/) will receive the changes. And vice versa, if an end user selects the CheckBox in the UI, the `checkBoxValue` scope property will be updated.
+Now, if you change the `checkBoxValue` scope property in code, the [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/') will receive the changes. And vice versa, if an end user selects the CheckBox in the UI, the `checkBoxValue` scope property will be updated.
 
 If you bind a UI component to a collection, the UI component gets updated only when an object is added to or removed from this collection. To make the UI component listen for changes even in the _fields_ of any object in the collection, configure the **bindingOptions** object as follows.
 

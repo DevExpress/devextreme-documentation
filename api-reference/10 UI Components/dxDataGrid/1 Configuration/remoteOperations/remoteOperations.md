@@ -42,7 +42,7 @@ The following table lists the possible **remoteOperations** configurations and t
   <tr>
     <td><code>remoteOperations: { filtering: true }</code></td>
     <td>filtering</td>
-    <td>-</td>
+    <td>grouping<sup>4</sup></td>
  </tr>
  <tr>
     <td><code>remoteOperations: { sorting: true }</code></td>
@@ -66,6 +66,7 @@ The following table lists the possible **remoteOperations** configurations and t
         <li>If this functionality is used in the UI component.</li>
         <li>If <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/">group summary calculation</a> is used.</li>
         <li>If <b>grouping</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is set to <b>false</b>.</li>
+        <li>If DataGrid contains a lookup column and <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#syncLookupFilterValues">syncLookupFilterValues</a> is set to <b>true</b> (default value).</li>
     </ol>
 </div>
 

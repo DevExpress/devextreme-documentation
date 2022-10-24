@@ -1,6 +1,6 @@
-To label the CheckBox and add a pop-up hint, specify the [text](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#text) and [hint](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#hint) properties.
+To label the CheckBox and add a pop-up hint, specify the [text](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/text.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#text') and [hint](/api-reference/10%20UI%20Components/Widget/1%20Configuration/hint.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#hint') properties.
 
-You can also use the [iconSize](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#iconSize) property to specify a custom width and height for the CheckBox.
+You can also use the [iconSize](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/iconSize.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#iconSize') property to specify a custom width and height for the CheckBox.
 
 ---
 ##### jQuery

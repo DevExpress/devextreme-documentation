@@ -2,7 +2,7 @@
 id: dxVectorMap.Options.controlBar.horizontalAlignment
 acceptValues: 'center' | 'left' | 'right'
 type: String
-default: 'left'
+default: 'true'
 ---
 ---
 ##### shortDescription

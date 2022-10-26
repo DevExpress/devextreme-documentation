@@ -11303,8 +11303,14 @@
     "dxVectorMapOptions.controlBar.horizontalAlignment": {
       "vue": "horizontal-alignment"
     },
+    "dxVectorMapOptions.controlBar.panVisible": {
+      "vue": "pan-visible"
+    },
     "dxVectorMapOptions.controlBar.verticalAlignment": {
       "vue": "vertical-alignment"
+    },
+    "dxVectorMapOptions.controlBar.zoomVisible": {
+      "vue": "zoom-visible"
     },
     "dxVectorMapOptions.customizeAnnotation": {
       "vue": "customize-annotation"

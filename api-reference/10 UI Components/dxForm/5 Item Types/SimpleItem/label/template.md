@@ -31,7 +31,7 @@ The label's [text](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/S
 #include common-ref-elementparam with { element: "item" }
 
 ##### return: String | Element | jQuery
-A template name or container.
+The template name or container.
 
 ---
 #include common-demobutton with {

@@ -3578,6 +3578,9 @@
     "dxDateBoxOptions.showAnalogClock": {
       "vue": "show-analog-clock"
     },
+    "dxDateBoxOptions.todayButtonText": {
+      "vue": "today-button-text"
+    },
     "dxDateBoxOptions.useMaskBehavior": {
       "vue": "use-mask-behavior"
     },

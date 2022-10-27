@@ -4,34 +4,109 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A template that can be used to replace the label with custom content.
 
 ##### param(itemData): Object
-<!-- Description goes here -->
+The item's data.
 
 ##### field(itemData.component): dxForm
-<!-- Description goes here -->
+The Form instance.
 
 ##### field(itemData.dataField): String
-<!-- Description goes here -->
+The item's [dataField](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField).
 
 ##### field(itemData.editorOptions): any
-<!-- Description goes here -->
+The item editor's [configuration](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions).
 
 ##### field(itemData.editorType): String
-<!-- Description goes here -->
+The editor's [type](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType).
 
 ##### field(itemData.name): String
-<!-- Description goes here -->
+The item's [name](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name).
 
 ##### field(itemData.text): String
-<!-- Description goes here -->
+The label's [text](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#text).
 
 ##### param(itemElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+The template name or container.
 
 ---
-<!-- Description goes here -->
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
+}
+
+The following code adds a custom label to the SimpleItem:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#formContainer").dxForm({
+            // ...
+            items: [{
+                label: {
+                    template(data) {
+                        return `Custom ${data.text}`;
+                    }
+                }
+            }]
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-form ... >
+        <dxi-item ... >
+            <dxo-label template="customLabel"></dxo-label>
+        </dxi-item>
+        <div *dxTemplate="let data of 'customLabel'">
+            <span>Custom {{ data.text }}</span>
+        </div>
+    </dx-form>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm ...>
+            <DxSimpleItem ...>
+                <DxLabel template="customLabel"/>
+            </DxSimpleItem>
+            <template #customLabel="{ data }">
+                <span>
+                    Custom {{ data.text }}
+                </span>
+            </template>
+        </DxForm>
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+
+    const customItem = (data) => {
+        return `Custom ${data.text}`;
+    }
+
+    function App() {
+        return (
+            <Form ...>
+                <SimpleItem ...>
+                    <Label render={customItem} />
+                </SimpleItem>
+            </Form>
+        );
+    };
+
+    export default App;
+
+---

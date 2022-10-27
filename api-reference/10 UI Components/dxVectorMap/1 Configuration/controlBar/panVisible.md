@@ -5,7 +5,7 @@ default: 'true'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the pan control is visible.
 
 ---
 <!-- Description goes here -->

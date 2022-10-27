@@ -5,7 +5,7 @@ default: 'true'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the zoom bar is visible.
 
 ---
 <!-- Description goes here -->

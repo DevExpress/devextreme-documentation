@@ -13,19 +13,19 @@ The item's data.
 The Form instance.
 
 ##### field(itemData.dataField): String
-The item's [dataField](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField).
+The item's [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField').
 
 ##### field(itemData.editorOptions): any
-The item editor's [configuration](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions).
+The item editor's [configuration](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions').
 
 ##### field(itemData.editorType): String
-The editor's [type](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType).
+The editor's [type](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType').
 
 ##### field(itemData.name): String
-The item's [name](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name).
+The item's [name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#name').
 
 ##### field(itemData.text): String
-The label's [text](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#text).
+The label's [text](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label/text.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#text').
 
 ##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }

@@ -7092,25 +7092,6 @@
     "dxMultiViewOptions.swipeEnabled": {
       "vue": "swipe-enabled"
     },
-    "dxNavBar": {
-      "angular": "dx-nav-bar",
-      "react": "NavBar",
-      "vue": "DxNavBar"
-    },
-    "dxNavBarItem": {
-      "angular": "dxo-nav-bar-item",
-      "react": "DxNavBarItem",
-      "vue": "DxNavBarItem"
-    },
-    "dxNavBarOptions.scrollByContent": {
-      "vue": "scroll-by-content"
-    },
-    "dxNavBarOptions.scrollingEnabled": {
-      "vue": "scrolling-enabled"
-    },
-    "dxNavBarOptions.showNavButtons": {
-      "vue": "show-nav-buttons"
-    },
     "dxNumberBox": {
       "angular": "dx-number-box",
       "react": "NumberBox",
@@ -9776,113 +9757,6 @@
     "dxSelectBoxOptions.valueChangeEvent": {
       "vue": "value-change-event"
     },
-    "dxSlideOut": {
-      "angular": "dx-slide-out",
-      "react": "SlideOut",
-      "vue": "DxSlideOut"
-    },
-    "dxSlideOutItem": {
-      "angular": "dxo-slide-out-item",
-      "react": "DxSlideOutItem",
-      "vue": "DxSlideOutItem"
-    },
-    "dxSlideOutItem.menuTemplate": {
-      "vue": "menu-template"
-    },
-    "dxSlideOutOptions.accessKey": {
-      "vue": "access-key"
-    },
-    "dxSlideOutOptions.activeStateEnabled": {
-      "vue": "active-state-enabled"
-    },
-    "dxSlideOutOptions.contentTemplate": {
-      "vue": "content-template"
-    },
-    "dxSlideOutOptions.dataSource": {
-      "vue": "data-source"
-    },
-    "dxSlideOutOptions.focusStateEnabled": {
-      "vue": "focus-state-enabled"
-    },
-    "dxSlideOutOptions.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
-    "dxSlideOutOptions.keyExpr": {
-      "vue": "key-expr"
-    },
-    "dxSlideOutOptions.menuGrouped": {
-      "vue": "menu-grouped"
-    },
-    "dxSlideOutOptions.menuGroupTemplate": {
-      "vue": "menu-group-template"
-    },
-    "dxSlideOutOptions.menuItemTemplate": {
-      "vue": "menu-item-template"
-    },
-    "dxSlideOutOptions.menuPosition": {
-      "vue": "menu-position"
-    },
-    "dxSlideOutOptions.menuVisible": {
-      "vue": "menu-visible"
-    },
-    "dxSlideOutOptions.onMenuGroupRendered": {
-      "vue": "@menu-group-rendered"
-    },
-    "dxSlideOutOptions.onMenuItemRendered": {
-      "vue": "@menu-item-rendered"
-    },
-    "dxSlideOutOptions.selectedIndex": {
-      "vue": "selected-index"
-    },
-    "dxSlideOutOptions.selectedItemKeys": {
-      "vue": "selected-item-keys"
-    },
-    "dxSlideOutOptions.selectedItems": {
-      "vue": "selected-items"
-    },
-    "dxSlideOutOptions.swipeEnabled": {
-      "vue": "swipe-enabled"
-    },
-    "dxSlideOutOptions.tabIndex": {
-      "vue": "tab-index"
-    },
-    "dxSlideOutView": {
-      "angular": "dx-slide-out-view",
-      "react": "SlideOutView",
-      "vue": "DxSlideOutView"
-    },
-    "dxSlideOutViewOptions.accessKey": {
-      "vue": "access-key"
-    },
-    "dxSlideOutViewOptions.contentOffset": {
-      "vue": "content-offset"
-    },
-    "dxSlideOutViewOptions.contentTemplate": {
-      "vue": "content-template"
-    },
-    "dxSlideOutViewOptions.focusStateEnabled": {
-      "vue": "focus-state-enabled"
-    },
-    "dxSlideOutViewOptions.menuPosition": {
-      "vue": "menu-position"
-    },
-    "dxSlideOutViewOptions.menuTemplate": {
-      "vue": "menu-template"
-    },
-    "dxSlideOutViewOptions.menuVisible": {
-      "vue": "menu-visible"
-    },
-    "dxSlideOutViewOptions.onContentReady": {
-      "vue": "@content-ready"
-    },
-    "dxSlideOutViewOptions.swipeEnabled": {
-      "vue": "swipe-enabled"
-    },
-    "dxSlideOutViewOptions.tabIndex": {
-      "vue": "tab-index"
-    },
     "dxSlider": {
       "angular": "dx-slider",
       "react": "Slider",
@@ -12077,9 +11951,6 @@
     },
     "enums.SingleOrNone": {
       "vue": "single-or-none"
-    },
-    "enums.SlideOutMenuPosition": {
-      "vue": "slide-out-menu-position"
     },
     "enums.SmallValuesGroupingMode": {
       "vue": "small-values-grouping-mode"

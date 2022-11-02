@@ -28,10 +28,6 @@
 <td><b>export.</b><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxDiagram/Configuration/export/#proxyUrl">proxyUrl</a></td>
 </tr>
 <tr>
-<td>Drawer</td>
-<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxDrawer/Configuration/#target">target</a></td>
-</tr>
-<tr>
 <td>Funnel</td>
 <td><b>export.</b><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxFunnel/Configuration/export/#proxyUrl">proxyUrl</a></td>
 </tr>
@@ -50,10 +46,6 @@
 <tr>
 <td>Lookup</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxLookup/Configuration/#valueChangeEvent">valueChangeEvent</a></td>
-</tr>
-<tr>
-<td>NavBar</td>
-<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxNavBar">dxNavBar</a></td>
 </tr>
 <tr>
 <td>PieChart</td>
@@ -90,14 +82,6 @@
 <tr>
 <td>SelectBox</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxSelectBox/Configuration/#valueChangeEvent">valueChangeEvent</a></td>
-</tr>
-<tr>
-<td>SlideOut</td>
-<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxSlideOut">dxSlideOut</a></td>
-</tr>
-<tr>
-<td>SlideOutView</td>
-<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxSlideOutView">dxSlideOutView</a></td>
 </tr>
 <tr>
 <td>Toast</td>

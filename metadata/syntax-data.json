@@ -9765,9 +9765,6 @@
     "dxSliderBaseOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
-    "dxSliderBaseOptions.callValueChange": {
-      "vue": "call-value-change"
-    },
     "dxSliderBaseOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -9802,6 +9799,9 @@
     },
     "dxSliderBaseOptions.tooltip.showMode": {
       "vue": "show-mode"
+    },
+    "dxSliderBaseOptions.valueChangeMode": {
+      "vue": "value-change-mode"
     },
     "dxSortable": {
       "angular": "dx-sortable",
@@ -12053,6 +12053,9 @@
     },
     "enums.ValueChangedCallMode": {
       "vue": "value-changed-call-mode"
+    },
+    "enums.ValueChangeMode": {
+      "vue": "value-change-mode"
     },
     "enums.ValueErrorBarDisplayMode": {
       "vue": "value-error-bar-display-mode"

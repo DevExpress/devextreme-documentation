@@ -26,7 +26,7 @@ The appointment's index.
 A template name or container.
 
 ##### field(model.isButtonClicked): Boolean
-<!-- Description goes here -->
+Specifies whether you click a button or an appointment element.
 
 ---
 #include common-demobutton with {

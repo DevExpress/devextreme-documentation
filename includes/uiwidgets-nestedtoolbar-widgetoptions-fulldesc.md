@@ -9,12 +9,12 @@
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             toolbar: {
-                {nestedOption}: [
+                ${{nestedOption}}: [{
                     widget: 'dxCheckBox',
                     options: {
                         text: 'Show IDs'
                     },
-                ]                    
+                }]                    
             }
         });
     }); 

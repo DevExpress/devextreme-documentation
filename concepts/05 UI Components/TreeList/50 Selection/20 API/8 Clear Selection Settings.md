@@ -37,7 +37,6 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -72,7 +71,6 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
@@ -166,7 +164,6 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -196,7 +193,6 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';

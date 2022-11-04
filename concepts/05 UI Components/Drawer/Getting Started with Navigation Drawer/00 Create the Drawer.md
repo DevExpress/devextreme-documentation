@@ -181,7 +181,6 @@ You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/
     }
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
     import NavigationDrawer from "./components/NavigationDrawer";

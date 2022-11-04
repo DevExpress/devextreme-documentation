@@ -59,7 +59,6 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/GridBase/1%20Confi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -93,7 +92,6 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/GridBase/1%20Confi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
@@ -179,7 +177,6 @@ You can select rows at runtime using the [selectRows(keys, preserve)](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -208,7 +205,6 @@ You can select rows at runtime using the [selectRows(keys, preserve)](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
@@ -296,7 +292,6 @@ Call the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeLi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
@@ -333,7 +328,6 @@ Call the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeLi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import TreeList from 'devextreme-react/tree-list';

@@ -117,7 +117,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {
@@ -163,7 +162,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';

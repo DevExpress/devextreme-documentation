@@ -97,7 +97,6 @@ Specifies the context menu item name.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     
     import { DxGantt, DxContextMenu } from 'devextreme-vue/gantt';

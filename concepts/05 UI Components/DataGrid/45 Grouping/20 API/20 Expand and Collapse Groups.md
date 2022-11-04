@@ -68,7 +68,6 @@ The DataGrid provides the following API for expanding and collapsing groups:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import {
@@ -204,7 +203,6 @@ The DataGrid provides the following API for expanding and collapsing groups:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import {
@@ -323,7 +321,6 @@ The DataGrid provides the following API for expanding and collapsing groups:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.common.css';
         import 'devextreme/dist/css/dx.light.css';
 
         import {

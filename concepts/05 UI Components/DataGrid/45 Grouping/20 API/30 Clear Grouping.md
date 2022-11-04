@@ -50,7 +50,6 @@ Set a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
@@ -78,7 +77,6 @@ Set a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.m
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
@@ -162,7 +160,6 @@ You can ungroup data by all columns at once using the [clearGrouping()](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import {

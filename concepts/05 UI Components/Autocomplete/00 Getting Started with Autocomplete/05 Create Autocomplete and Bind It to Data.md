@@ -341,7 +341,6 @@ The code example below specifies the [dataSource](/api-reference/10%20UI%20Compo
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import { employeesTasks } from './data';
     import { Autocomplete } from 'devextreme-react';

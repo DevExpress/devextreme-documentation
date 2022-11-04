@@ -10,7 +10,7 @@ Specifies a custom post-processing function for summary values.
 ##### param(e): dxPivotGridSummaryCell
 The cell whose summary value is being processed.
 
-##### return: Number
+##### return: Number | null
 The cell's new summary value.
 
 ---

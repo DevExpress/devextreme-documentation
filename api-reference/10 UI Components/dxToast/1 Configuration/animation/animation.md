@@ -2,7 +2,7 @@
 id: dxToast.Options.animation
 type: Object
 ---
-The following code shows default values of the object depending on a device type:
+The following code shows default values of the object depending on the device type:
 
     <!-- tab: Desktop, iOS -->{
         show: {
@@ -44,4 +44,4 @@ The following code shows default values of the object depending on a device type
         }
     }
 
-Set the **animation** object to `null` or `undefined` to disable animation.
+Set the **animation** object to `null` or `undefined` to disable animations.

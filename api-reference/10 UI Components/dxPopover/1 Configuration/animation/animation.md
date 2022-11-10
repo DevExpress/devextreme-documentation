@@ -7,7 +7,7 @@ type: Object
 Configures UI component visibility animations. This object contains two fields: [show]({basewidgetpath}/Configuration/animation/#show') and [hide]({basewidgetpath}/Configuration/animation/#hide).
 
 ---
-The following code specifies a default value of the object:
+The following code specifies the default value of the object:
 
     {
         show: {
@@ -22,4 +22,4 @@ The following code specifies a default value of the object:
         }
     }
 
-Set this object to `null` or `undefined` to disable animation.
+Set this object to `null` or `undefined` to disable animations.

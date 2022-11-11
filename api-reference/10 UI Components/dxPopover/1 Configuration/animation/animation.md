@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures UI component visibility animations. This object contains two fields: [show]({basewidgetpath}/Configuration/animation/#show') and [hide]({basewidgetpath}/Configuration/animation/#hide).
+Configures UI component visibility animations. This object contains two fields: [show](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/animation/show.md '{basewidgetpath}/Configuration/animation/#show'') and [hide](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/animation/hide.md '{basewidgetpath}/Configuration/animation/#hide').
 
 ---
 The following code specifies the default value of the object:

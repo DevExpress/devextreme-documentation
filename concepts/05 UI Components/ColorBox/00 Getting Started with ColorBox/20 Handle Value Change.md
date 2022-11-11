@@ -115,9 +115,7 @@ The following code displays a notification every time users change the ColorBox 
                 });
             }
         }, []);
-    
-    function App() {
-        // ...
+
         return (
             <ColorBox ...
                 onValueChanged={onValueChanged}

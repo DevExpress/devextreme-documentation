@@ -15,7 +15,7 @@ DevExtreme provides the following button types.
 
 [note]
 
-The `back` type is deprecated. Use a `back` [icon](/Documentation/Guide/Themes_and_Styles/Icons/) instead:
+The `back` type is deprecated. Use the `back` [icon](/Documentation/Guide/Themes_and_Styles/Icons/) instead:
 
 ---
 ##### jQuery

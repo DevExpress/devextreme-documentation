@@ -25,6 +25,9 @@ The appointment's index.
 ##### return: String | UserDefinedElement
 A template name or container.
 
+##### field(model.isButtonClicked): Boolean
+Specifies whether you click a button or an appointment element.
+
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"

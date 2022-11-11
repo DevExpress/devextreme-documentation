@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.renderAsync
 type: Boolean
-default: false
+default: undefined
 ---
 ---
 ##### shortDescription

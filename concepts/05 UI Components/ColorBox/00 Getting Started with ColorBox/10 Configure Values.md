@@ -5,3 +5,56 @@ To allow users to control the transparency of the selected color, enable the [ed
 To specify the initial picked color, use the [value](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#value) property.
 
 The following code specifies the initial color and enables transparency:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#color-box").dxColorBox({
+            value: "#000000",
+            editAlphaChannel: true
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-color-box
+        value="#000000"
+        [editAlphaChannel]="true"
+    >
+    </dx-color-box>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox
+            value="#000000"
+            :edit-alpha-channel="true"
+        />
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    
+    function App() {
+        // ...
+        return (
+            <ColorBox
+                value="#000000"
+                editAlphaChannel={true}
+            />
+        );
+    }
+
+    export default App;
+
+---

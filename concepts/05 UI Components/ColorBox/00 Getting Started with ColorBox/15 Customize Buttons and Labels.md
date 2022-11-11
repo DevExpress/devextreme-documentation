@@ -14,4 +14,73 @@ Specifies the text for the button that cancels changes and closes the drop-down 
 
 You can hide the editor's drop-down button to allow users to only type in a color code. To do this, disable the [showDropDownButton](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#showDropDownButton) property.
 
-You can add a [label]() to the ColorBox.
+To add a label to the ColorBox, specify the [label](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#label) property. To change the label appearance, set the [labelMode](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#labelMode) property to one of the following values:
+
+- *"static"* (default)    
+The component displays the label above the input field.
+
+- *"floating"*    
+The component uses the label as a placeholder, but when the editor receives focus, the label moves to the position above the input field.
+
+- *"hidden"*    
+The label is hidden.
+
+The following code displays a Clear button, changes the Apply button text and specifies a label for the ColorBox.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#color-box").dxColorBox({
+            // ...
+            showClearButton: true,
+            applyButtonText: "Show notification",
+            label: "Pick a color"
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-color-box ...
+        [showClearButton]="true"
+        applyButtonText="Show notification"
+        label="Pick a color"
+    >
+    </dx-color-box>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxColorBox ...
+            :show-clear-button="true"
+            apply-button-text="Show notification"
+            label="Pick a color"
+        />
+    </template>
+
+    <script>
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    
+    function App() {
+        // ...
+        return (
+            <ColorBox ...
+                showClearButton={true}
+                applyButtonText="Show notification"
+                label="Pick a color"
+            />
+        );
+    }
+
+    export default App;
+
+---

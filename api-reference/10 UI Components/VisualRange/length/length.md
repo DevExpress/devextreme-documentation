@@ -1,5 +1,5 @@
 ---
-id: VizRange.length
+id: VisualRange.length
 acceptValues: 'day' | 'hour' | 'millisecond' | 'minute' | 'month' | 'quarter' | 'second' | 'week' | 'year'
 type: Number | Object | String
 inherits: VizTimeInterval

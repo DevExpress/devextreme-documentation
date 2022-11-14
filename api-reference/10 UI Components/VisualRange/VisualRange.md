@@ -1,13 +1,12 @@
 ---
 id: VisualRange
+type: Object
+hidden: 
+inlineType: 
 module: common/charts
 export: VisualRange
-hidden: 
-type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
 
 ---
-<!-- Description goes here -->

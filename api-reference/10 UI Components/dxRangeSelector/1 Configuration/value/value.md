@@ -1,8 +1,9 @@
 ---
 id: dxRangeSelector.Options.value
-type: Array<Number, String, Date> | VisualRange
+type: Array<Number, String, Date> | Object
 firedEvents: valueChanged
 notUsedInTheme: 
+inherits: VisualRange
 ---
 ---
 ##### shortDescription

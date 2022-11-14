@@ -1,4 +1,4 @@
-Specify the following properties to add custom buttons into the input field, or configure the drop-down editor's buttons:
+Specify the following properties to add custom buttons to the input field, or configure the drop-down editor's buttons:
 
 - [buttons](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/buttons/)    
 Allows you to add custom buttons to the input text field.
@@ -7,12 +7,12 @@ Allows you to add custom buttons to the input text field.
 Specifies whether to display the Clear button in the ColorBox.
 
 - [applyButtonText](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#applyButtonText)    
-Specifies the text for the button that applies changes and closes the drop-down editor.
+Specifies the caption of the button that applies changes and closes the drop-down editor.
 
 - [cancelButtonText](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#cancelButtonText)    
-Specifies the text for the button that cancels changes and closes the drop-down editor.
+Specifies the caption of the button that cancels changes and closes the drop-down editor.
 
-You can hide the editor's drop-down button to allow users to only type in a color code. To do this, disable the [showDropDownButton](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#showDropDownButton) property.
+You can hide the editor's drop-down button to limit user input options down to color code entry. To do this, disable the [showDropDownButton](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#showDropDownButton) property.
 
 To add a label to the ColorBox, specify the [label](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#label) property. To change the label appearance, set the [labelMode](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#labelMode) property to one of the following values:
 
@@ -20,12 +20,12 @@ To add a label to the ColorBox, specify the [label](/Documentation/ApiReference/
 The component displays the label above the input field.
 
 - *"floating"*    
-The component uses the label as a placeholder, but when the editor receives focus, the label moves to the position above the input field.
+The component uses the label as a placeholder but the label moves to the position above the input field when the editor receives focus.
 
 - *"hidden"*    
 The label is hidden.
 
-The following code displays a Clear button, changes the Apply button text and specifies a label for the ColorBox.
+The following code displays a Clear button, changes the Apply button's caption and specifies a label for the ColorBox.
 
 ---
 ##### jQuery

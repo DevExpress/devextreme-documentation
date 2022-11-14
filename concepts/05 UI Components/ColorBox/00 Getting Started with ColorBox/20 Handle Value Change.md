@@ -1,6 +1,6 @@
-Users can change the value after they pick a shade, or after they click the **OK** button. To specify the mode, use the [applyValueMode](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#applyValueMode) property. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#onValueChanged) function to handle the value change when users select a color in the drop-down editor or type it in.
+Users can change the value after they pick a shade or after they click the **OK** button. To switch between value change modes, use the [applyValueMode](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#applyValueMode) property. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#onValueChanged) function to handle value changes when users select a color in the drop-down editor or type a color code in.
 
-The following code displays a notification every time users change the ColorBox value. The background color of the notification is the color they picked. 
+The following code displays a notification every time users change the ColorBox value. The notification's background assumes the picked color. 
 
 ---
 ##### jQuery

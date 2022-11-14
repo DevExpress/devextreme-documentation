@@ -1,10 +1,10 @@
 ---
-id: VizRange
+id: VisualRange
 type: Object
 hidden: 
 inlineType: 
 module: viz/common
-export: VizRange
+export: VisualRange
 ---
 ---
 ##### shortDescription

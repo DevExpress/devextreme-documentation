@@ -1,7 +1,7 @@
 ---
 id: RequiredRule
 type: Object
-module: ui/validation_rules
+module: common
 export: RequiredRule
 ---
 ---

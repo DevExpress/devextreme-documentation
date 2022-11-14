@@ -1,7 +1,7 @@
 ---
 id: RangeRule
 type: Object
-module: ui/validation_rules
+module: common
 export: RangeRule
 ---
 ---

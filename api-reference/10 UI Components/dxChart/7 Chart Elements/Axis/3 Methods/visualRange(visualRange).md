@@ -5,7 +5,7 @@ id: chartAxisObject.visualRange(visualRange)
 ##### shortDescription
 Sets the axis's displayed range.
 
-##### param(visualRange): Array<Number, String, Date> | VizRange
+##### param(visualRange): Array<Number, String, Date> | VisualRange
 The axis' new displayed range.
 
 ---

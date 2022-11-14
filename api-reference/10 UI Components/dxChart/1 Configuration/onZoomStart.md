@@ -32,7 +32,7 @@ The UI component's instance.
 ##### field(e.model): any
 The model data. Available only if you use Knockout.
 
-##### field(e.range): VizRange
+##### field(e.range): VisualRange
 The [visual range](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') when zooming or panning starts.
 
 ---

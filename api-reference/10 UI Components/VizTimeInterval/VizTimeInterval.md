@@ -5,8 +5,8 @@ type: Number | Object | String
 default: undefined
 hidden: 
 inlineType: 
-module: viz/common
-export: VizTimeInterval
+module: common/charts
+export: TimeIntervalConfig
 ---
 ---
 ##### shortDescription

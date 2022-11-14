@@ -12201,6 +12201,11 @@
       "react": "GaugeIndicator",
       "vue": "DxGaugeIndicator"
     },
+    "gridBaseColumn": {
+      "angular": "dxo-grid-base-column",
+      "react": "GridBaseColumn",
+      "vue": "DxGridBaseColumn"
+    },
     "gridBaseColumn.allowEditing": {
       "vue": "allow-editing"
     },
@@ -13255,20 +13260,20 @@
     "vectorMapProjectionConfig.aspectRatio": {
       "vue": "aspect-ratio"
     },
-    "vizRange": {
-      "angular": "dxo-viz-range",
-      "react": "VizRange",
-      "vue": "DxVizRange"
+    "visualRange": {
+      "angular": "dxo-visual-range",
+      "react": "VisualRange",
+      "vue": "DxVisualRange"
     },
-    "vizRange.endValue": {
+    "visualRange.endValue": {
       "vue": "end-value"
     },
-    "vizRange.length": {
+    "visualRange.length": {
       "angular": "dxo-length",
       "react": "Length",
       "vue": "DxLength"
     },
-    "vizRange.startValue": {
+    "visualRange.startValue": {
       "vue": "start-value"
     },
     "widgetOptions.accessKey": {

@@ -1,11 +1,11 @@
 ---
-id: VizRange.endValue
+id: VisualRange.startValue
 type: Number | Date | String
 default: undefined
 firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-The range's end value.
+The range's start value.
 
 ---

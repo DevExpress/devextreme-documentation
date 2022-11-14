@@ -5,7 +5,7 @@ id: chartAxisObject.visualRange()
 ##### shortDescription
 Gets the axis' displayed range.
 
-##### return: VizRange
+##### return: VisualRange
 The axis's displayed range.
 
 ---

@@ -1,7 +1,7 @@
 ---
 id: dxRangeSelector.Options.value
 type: Array<Number, String, Date> | Object
-inherits: VizRange
+inherits: VisualRange
 firedEvents: valueChanged
 notUsedInTheme: 
 ---

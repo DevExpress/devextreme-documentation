@@ -2,7 +2,7 @@
 id: ScaleBreak
 type: Object
 hidden: 
-module: viz/common
+module: common/charts
 export: ScaleBreak
 ---
 ---

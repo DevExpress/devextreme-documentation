@@ -469,9 +469,6 @@
     "baseWidgetOptions.export.printingEnabled": {
       "vue": "printing-enabled"
     },
-    "baseWidgetOptions.export.proxyUrl": {
-      "vue": "proxy-url"
-    },
     "baseWidgetOptions.export.svgToCanvas": {
       "vue": "svg-to-canvas"
     },
@@ -3163,9 +3160,6 @@
     "dxDataGridOptions.customizeColumns": {
       "vue": "customize-columns"
     },
-    "dxDataGridOptions.customizeExportData": {
-      "vue": "customize-export-data"
-    },
     "dxDataGridOptions.dataRowTemplate": {
       "vue": "data-row-template"
     },
@@ -3199,28 +3193,10 @@
     "dxDataGridOptions.export.allowExportSelectedData": {
       "vue": "allow-export-selected-data"
     },
-    "dxDataGridOptions.export.customizeExcelCell": {
-      "vue": "customize-excel-cell"
-    },
-    "dxDataGridOptions.export.excelFilterEnabled": {
-      "vue": "excel-filter-enabled"
-    },
-    "dxDataGridOptions.export.excelWrapTextEnabled": {
-      "vue": "excel-wrap-text-enabled"
-    },
-    "dxDataGridOptions.export.fileName": {
-      "vue": "file-name"
-    },
     "dxDataGridOptions.export.formats": {
       "angular": "dxi-format",
       "react": "Format",
       "vue": "DxFormat"
-    },
-    "dxDataGridOptions.export.ignoreExcelErrors": {
-      "vue": "ignore-excel-errors"
-    },
-    "dxDataGridOptions.export.proxyUrl": {
-      "vue": "proxy-url"
     },
     "dxDataGridOptions.export.texts": {
       "angular": "dxo-texts",
@@ -3316,14 +3292,8 @@
     "dxDataGridOptions.onEditorPreparing": {
       "vue": "@editor-preparing"
     },
-    "dxDataGridOptions.onExported": {
-      "vue": "@exported"
-    },
     "dxDataGridOptions.onExporting": {
       "vue": "@exporting"
-    },
-    "dxDataGridOptions.onFileSaving": {
-      "vue": "@file-saving"
     },
     "dxDataGridOptions.onFocusedCellChanged": {
       "vue": "@focused-cell-changed"
@@ -4069,9 +4039,6 @@
     },
     "dxDiagramOptions.export.fileName": {
       "vue": "file-name"
-    },
-    "dxDiagramOptions.export.proxyUrl": {
-      "vue": "proxy-url"
     },
     "dxDiagramOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
@@ -7527,15 +7494,6 @@
       "react": "Export",
       "vue": "DxExport"
     },
-    "dxPivotGridOptions.export.fileName": {
-      "vue": "file-name"
-    },
-    "dxPivotGridOptions.export.ignoreExcelErrors": {
-      "vue": "ignore-excel-errors"
-    },
-    "dxPivotGridOptions.export.proxyUrl": {
-      "vue": "proxy-url"
-    },
     "dxPivotGridOptions.fieldChooser": {
       "angular": "dxo-field-chooser",
       "react": "FieldChooser",
@@ -7664,14 +7622,8 @@
     "dxPivotGridOptions.onContextMenuPreparing": {
       "vue": "@context-menu-preparing"
     },
-    "dxPivotGridOptions.onExported": {
-      "vue": "@exported"
-    },
     "dxPivotGridOptions.onExporting": {
       "vue": "@exporting"
-    },
-    "dxPivotGridOptions.onFileSaving": {
-      "vue": "@file-saving"
     },
     "dxPivotGridOptions.rowHeaderLayout": {
       "vue": "row-header-layout"
@@ -11628,18 +11580,6 @@
     "enums.EventKeyModifier": {
       "vue": "event-key-modifier"
     },
-    "enums.ExcelCellHorizontalAlignment": {
-      "vue": "excel-cell-horizontal-alignment"
-    },
-    "enums.ExcelCellPatternType": {
-      "vue": "excel-cell-pattern-type"
-    },
-    "enums.ExcelCellVerticalAlignment": {
-      "vue": "excel-cell-vertical-alignment"
-    },
-    "enums.ExcelUnderlineType": {
-      "vue": "excel-underline-type"
-    },
     "enums.ExportFormat": {
       "vue": "export-format"
     },
@@ -12111,35 +12051,6 @@
     },
     "eventObject.delegateTarget": {
       "vue": "delegate-target"
-    },
-    "excelDataGridCell": {
-      "angular": "dxo-excel-data-grid-cell",
-      "react": "ExcelDataGridCell",
-      "vue": "DxExcelDataGridCell"
-    },
-    "excelDataGridCell.column": {
-      "angular": "dxo-column",
-      "react": "Column",
-      "vue": "DxColumn"
-    },
-    "excelDataGridCell.groupIndex": {
-      "vue": "group-index"
-    },
-    "excelDataGridCell.groupSummaryItems": {
-      "angular": "dxi-group-summary-item",
-      "react": "GroupSummaryItem",
-      "vue": "DxGroupSummaryItem"
-    },
-    "excelDataGridCell.rowType": {
-      "vue": "row-type"
-    },
-    "excelDataGridCell.totalSummaryItemName": {
-      "vue": "total-summary-item-name"
-    },
-    "excelFont": {
-      "angular": "dxo-excel-font",
-      "react": "ExcelFont",
-      "vue": "DxExcelFont"
     },
     "excelPivotGridCell": {
       "angular": "dxo-excel-pivot-grid-cell",
@@ -12989,11 +12900,6 @@
     },
     "patternRule.ignoreEmptyValue": {
       "vue": "ignore-empty-value"
-    },
-    "pdfDataGridCell": {
-      "angular": "dxo-pdf-data-grid-cell",
-      "react": "PdfDataGridCell",
-      "vue": "DxPdfDataGridCell"
     },
     "pieChartLegendItem": {
       "angular": "dxo-pie-chart-legend-item",

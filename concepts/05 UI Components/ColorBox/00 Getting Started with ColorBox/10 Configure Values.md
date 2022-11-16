@@ -2,7 +2,7 @@ The ColorBox accepts colors in hexadecimal (_"#FF0000"_), RGB (_"rgb(255, 0, 0)"
 
 To allow users to control the transparency of the selected color, enable the [editAlphaChannel](/api-reference/10%20UI%20Components/dxColorBox/1%20Configuration/editAlphaChannel.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#editAlphaChannel') property. If you enable this property, the component displays the selected color in RGBA format.
 
-To specify the initially selected color, use the [value](/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#value) property.
+To specify the initially selected color, use the [value](/api-reference/10%20UI%20Components/dxColorBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#value') property.
 
 The following code specifies the initial color and enables transparency:
 

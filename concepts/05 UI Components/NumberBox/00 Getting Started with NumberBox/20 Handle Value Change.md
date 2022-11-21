@@ -1,6 +1,6 @@
-Users can process a value after they enter it or after they click the spin buttons. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#onValueChanged) callback to handle value changes.
+Users can enter a new value or change the component value with spin buttons, Up and Down arrow keys, and mouse wheel. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#onValueChanged) callback to handle value changes.
 
-The following code displays a notification every time users change the NumberBox value.
+The following code displays a notification every time users change the NumberBox value:
 
 ---
 ##### jQuery
@@ -24,7 +24,7 @@ The following code displays a notification every time users change the NumberBox
 
     <!-- tab: app.component.html -->
     <dx-number-box ...
-        (onValueChanged) = "onValueChanged($event)"
+        (onValueChanged)="onValueChanged($event)"
     >
     </dx-number-box>
 
@@ -55,7 +55,7 @@ The following code displays a notification every time users change the NumberBox
     <!-- tab: App.vue -->
     <template>
         <DxNumberBox ...
-            @value-changed = "onValueChanged($event)"
+            @value-changed="onValueChanged($event)"
         />
     </template>
 
@@ -107,7 +107,7 @@ The following code displays a notification every time users change the NumberBox
 
         return (
             <NumberBox ...
-                onValueChanged = {onValueChanged}
+                onValueChanged={onValueChanged}
             />
         );
     }

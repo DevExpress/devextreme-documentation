@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.customizeText
-type: function(this, cellInfo)
+type: function(cellInfo)
 ---
 ---
 ##### shortDescription
@@ -24,9 +24,6 @@ The [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentatio
 
 ##### return: String
 The text the cell should display.
-
-##### param(this): GridBaseColumn
-<!-- Description goes here -->
 
 ---
 

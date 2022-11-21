@@ -2,7 +2,7 @@ If you need to specify the initial value, assign it to the [value](/Documentatio
 
 NumberBox allows you to display the input values in a custom format. To define this format, assign it to the [format](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#format) property.
 
-In the following code, you can see how to specify the initial value, limit the input values, and apply a custom format:
+In the following code, you can see how to specify the initial value, limit the input values, and apply a custom format.
 
 ---
 ##### jQuery

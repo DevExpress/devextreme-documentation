@@ -1,6 +1,6 @@
 Users can enter a new value or change the component value with spin buttons, Up and Down arrow keys, and mouse wheel. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#onValueChanged) callback to handle value changes.
 
-The following code displays a notification every time users change the NumberBox value:
+The following code displays a notification every time users change the NumberBox value.
 
 ---
 ##### jQuery
@@ -10,10 +10,9 @@ The following code displays a notification every time users change the NumberBox
         $("#number-box").dxNumberBox({
             // ...
             onValueChanged(e) {
-                const currentNumber = e.value;
-                if (currentNumber) {
+                if (e.value) {
                     DevExpress.ui.notify({
-                        message: "The sum is $" + currentNumber
+                        message: "The sum is $" + e.value
                     });
                 }
             }
@@ -39,12 +38,10 @@ The following code displays a notification every time users change the NumberBox
     })
     export class AppComponent {
         // ...
-        currentNumber: string;
         onValueChanged(e) {
-            this.currentNumber = e.value;
-            if (this.currentNumber) {
+            if (e.value) {
                 notify({
-                    message: "The sum is $" + this.currentNumber
+                    message: "The sum is $" + e.value
                 });
             }
         }
@@ -68,17 +65,11 @@ The following code displays a notification every time users change the NumberBox
         components: {
             DxNumberBox
         },
-        data() {
-            return {
-                currentNumber: ""
-            };
-        },
         methods: {
             onValueChanged(e) {
-                this.currentNumber = e.value;
-                if (this.currentNumber) {
+                if (e.value) {
                     notify({
-                        message: "The sum is $" + this.currentNumber
+                        message: "The sum is $" + e.value
                     });
                 }
             }
@@ -97,10 +88,9 @@ The following code displays a notification every time users change the NumberBox
 
     function App() {
         const onValueChanged = useCallback((e) => {
-            const currentNumber = e.value;
-            if (currentNumber) {
+            if (e.value) {
                 notify({
-                    message: "The sum is $" + currentNumber
+                    message: "The sum is $" + e.value
                 });
             }
         }, []);

@@ -9,6 +9,6 @@ Adds a new projection to the internal projection storage.
 The projection's name.
 
 ##### param(projectionConfig): VectorMapProjectionConfig | Object
-<!-- Description goes here -->
+The projection.
 
 ---

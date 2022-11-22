@@ -9,7 +9,6 @@ The component uses the label as a placeholder, but the label moves to the positi
 - *"hidden"*    
 The label is hidden.
 
-In the following code you can see how to define a label for the NumberBox and specify its mode.
 
 ---
 ##### jQuery
@@ -38,7 +37,7 @@ In the following code you can see how to define a label for the NumberBox and sp
     <template>
         <DxNumberBox ...
             label="Enter a sum in dollars"
-            :label-mode="floating"
+            label-mode="floating"
         />
     </template>
 

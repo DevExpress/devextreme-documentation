@@ -1,6 +1,6 @@
-If you need to specify the initial value, assign it to the [value](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#value) property. You can also define a range of the [min](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#max) values the user can enter into the input field. 
+If you need to specify the initial value, assign it to the [value](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#value') property. You can also define a range of the [min](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#max') values the user can enter into the input field. 
 
-NumberBox allows you to display the input values in a custom format. To define this format, assign it to the [format](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#format) property.
+NumberBox allows you to display the input values in a custom format. To define this format, assign it to the [format](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/format.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#format') property.
 
 
 ---

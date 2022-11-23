@@ -1,4 +1,4 @@
-Users can enter a new value or change the component value with spin buttons, Up and Down arrow keys, and mouse wheel. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#onValueChanged) callback to handle value changes.
+Users can enter a new value or change the component value with spin buttons, Up and Down arrow keys, and mouse wheel. Implement the [onValueChanged](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#onValueChanged') callback to handle value changes.
 
 The following code displays a notification every time users change the NumberBox value:
 

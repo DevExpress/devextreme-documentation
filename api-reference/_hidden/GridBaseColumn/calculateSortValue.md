@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.calculateSortValue
-type: String | function(rowData)
+type: String | function(this, rowData)
 ---
 ---
 ##### shortDescription
@@ -11,6 +11,9 @@ The data of the row to which the cell belongs.
 
 ##### return: any
 The value to be used in sorting.
+
+##### param(this): GridBaseColumn
+<!-- Description goes here -->
 
 ---
 This property accepts the name of the [data source field](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides values used to sort this column.

@@ -87,7 +87,6 @@
   <MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Interfaces" SourcePattern="ApiReference:^50 Common/Object Structures" />
   <MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Methods" SourcePattern="ApiReference:^50 Common/utils" />
 
-  <MenuRule Destination="10 UI Components/$1/1 Demos" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/Demos" />
   <MenuRule Destination="10 UI Components/Diagram/0 Overview" SourcePattern="Howto:^05 UI Components/Diagram/05 Add the Diagram Component to an Angular CLI Application" VisibleFor="Angular"/>
   <MenuRule Destination="10 UI Components/$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Overview" />
   <MenuRule Destination="10 UI Components/$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Visual Elements" />
@@ -95,6 +94,7 @@
   <MenuRule Destination="10 UI Components/$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/(Diagram|Gantt)/00 Getting Started with (Diagram|Gantt)" VisibleFor="jQuery"/>
   <MenuRule Destination="10 UI Components/$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|zz Common)" />
+  <MenuRule Destination="10 UI Components/$1/3 Demos" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/Demos" />
   <MenuRule Destination="10 UI Components/$1/2 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/Floating Action Button/3 SpeedDialAction API" SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction" />
   <MenuRule Destination="10 UI Components/$1/3 API" SourcePattern="ApiReference:^10 UI Components/dx([a-zA-Z]+)" />

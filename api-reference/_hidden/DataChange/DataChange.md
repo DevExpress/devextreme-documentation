@@ -1,7 +1,8 @@
 ---
 id: DataChange
-module: ui/data_grid
+module: common/grids
 export: DataChange
+type: Object
 ---
 ---
 ##### shortDescription

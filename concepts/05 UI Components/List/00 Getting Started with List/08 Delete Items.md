@@ -37,7 +37,6 @@ To allow users to delete items from the List, set the [allowItemDeleting](/api-r
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     function App() {

@@ -142,7 +142,6 @@ If an entered value falls out of the range, the UI component displays an error m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
@@ -157,7 +156,6 @@ If an entered value falls out of the range, the UI component displays an error m
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DateBox from 'devextreme-react/date-box';

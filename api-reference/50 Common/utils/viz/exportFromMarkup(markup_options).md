@@ -72,12 +72,6 @@ The parameter contains the following fields:
     </ul>
 </div>
 
-##### field(options.proxyUrl).deprecated
-[important] Since v10, Safari browser supports API for saving files, and this property is no longer required.
-
-##### field(options.proxyUrl): String
-The URL of a server-side proxy required for export in Safari on Mac OS. See [proxyUrl](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/proxyUrl.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#proxyUrl') for details.
-
 ##### field(options.svgToCanvas): function()
 A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/svgToCanvas.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#svgToCanvas') description for details.
 

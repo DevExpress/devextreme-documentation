@@ -3,7 +3,7 @@
     docsLink: "https://angular.io/docs"
 }
 
-The DevExtreme Angular UI Component Suite is a feature-complete set of [65+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
+The DevExtreme Angular UI Component Suite is a feature-complete set of [70+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
 
 The DevExtreme Angular UI Component Suite provides the following platform-specific features:
 
@@ -18,8 +18,6 @@ The DevExtreme Angular UI Component Suite provides the following platform-specif
 - [Server-side rendering](/concepts/40%20Angular%20Components/40%20Common%20Features/05%20Server-Side%20Rendering/00%20Server-Side%20Rendering.md '/Documentation/Guide/Angular_Components/Common_Features/Server-Side_Rendering/')
 
 - [Angular Forms support](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/75%20Angular%20Forms%20Support.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Angular_Forms_Support')
-
-- [Visual Studio integration](/concepts/40%20Angular%20Components/70%20Visual%20Studio%20Integration/20%20Add%20DevExtreme%20to%20an%20ASP.NET%20Core%20Angular%20Application/30%20Troubleshooting.md '/Documentation/Guide/Angular_Components/Visual_Studio_Integration/')
 
 All DevExtreme UI component suites, including Angular, share architecture and core features. The following core features are common to all suites:
 

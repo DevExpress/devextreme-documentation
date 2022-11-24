@@ -176,7 +176,6 @@ Do not specify the **onValueChanged** property in this object. If you need to ad
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
@@ -210,7 +209,6 @@ Do not specify the **onValueChanged** property in this object. If you need to ad
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import FilterBuilder from 'devextreme-react/filter-builder';

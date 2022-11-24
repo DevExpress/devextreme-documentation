@@ -13,6 +13,61 @@ DevExtreme provides the following button types.
 
 ![Button Types](/images/UiWidgets/Button_Types.png) 
 
+[note]
+
+The `back` type is deprecated. Use the `back` [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/') instead:
+
+---
+##### jQuery
+
+    <!--tab: index.js-->
+    $(function() {
+        $("#button").dxButton({
+            type: "normal",
+            icon: "back"
+        });
+    });
+
+##### Angular
+
+    <!--tab: app.component.html-->
+    <dx-button
+        type="normal"
+        icon="back"
+    />
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxButton ...
+            type="normal"
+            icon="back"
+        />
+    </template>
+
+    <script>
+        // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    function App() {
+        return (
+            <Button ...
+                type="normal"
+                icon="back" 
+            />
+        );
+    };
+
+    export default App;
+
+---
+
+[/note]
+
 You can also specify your own button type and define its CSS rules as shown in the example:
 
 ---

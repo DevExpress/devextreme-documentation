@@ -20,9 +20,9 @@ You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_1/css/dx.light.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_2/css/dx.light.css">
             <link rel="stylesheet" href="index.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_22_1/js/dx.all.js"></script>
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_22_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body>
@@ -181,7 +181,6 @@ You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/
     }
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
     import './App.css';
     import NavigationDrawer from "./components/NavigationDrawer";

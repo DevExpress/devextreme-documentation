@@ -5,7 +5,7 @@ id: dxRangeSelector.setValue(value)
 ##### shortDescription
 Sets the selected range.
 
-##### param(value): Array<Number, String, Date> | VizRange
+##### param(value): Array<Number, String, Date> | VisualRange
 New start and end values.
 
 ---

@@ -1,15 +1,10 @@
 ---
 id: dxToolbar.Options.height
-type: Number | String | function()
-default: undefined
-deprecated: 
+hidden: 
 ---
 ---
 ##### shortDescription
 Specifies the UI component's height in pixels.
-
-##### return: Number | String
-The UI component's height.
 
 ---
 This property is deprecated. Use CSS rules to change the height. For example:

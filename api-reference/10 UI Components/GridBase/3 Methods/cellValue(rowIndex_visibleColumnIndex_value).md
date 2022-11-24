@@ -58,7 +58,6 @@ Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.light.css';
 
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';

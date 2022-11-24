@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.calculateCellValue
-type: function(rowData)
+type: function(this, rowData)
 ---
 ---
 ##### shortDescription
@@ -11,6 +11,9 @@ The data of the row to which the cell belongs.
 
 ##### return: any
 A cell's custom value.
+
+##### param(this): GridBaseColumn
+<!-- Description goes here -->
 
 ---
 Unlike data columns bound to a [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField'), unbound columns display custom values returned from the **calculateCellValue** function. The component executes this function multiple times for each record: when records are rendered, when users sort or filter them, and when summaries are computed. To avoid errors and enhance the UI component performance, make sure that properties of the **rowData** object used in calculation exist and keep calculations inside this function as simple as possible.

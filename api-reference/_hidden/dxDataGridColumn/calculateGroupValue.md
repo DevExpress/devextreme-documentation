@@ -1,6 +1,6 @@
 ---
 id: dxDataGridColumn.calculateGroupValue
-type: String | function(rowData)
+type: String | function(this, rowData)
 ---
 ---
 ##### shortDescription
@@ -11,6 +11,9 @@ Current row data.
 
 ##### return: any
 The calculated value used to create and sort groups.
+
+##### param(this): GridBaseColumn
+<!-- Description goes here -->
 
 ---
 This property accepts the name of the data source field that provides values used to group grid records...

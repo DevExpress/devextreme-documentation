@@ -12112,11 +12112,6 @@
       "react": "GaugeIndicator",
       "vue": "DxGaugeIndicator"
     },
-    "gridBaseColumn": {
-      "angular": "dxo-grid-base-column",
-      "react": "GridBaseColumn",
-      "vue": "DxGridBaseColumn"
-    },
     "gridBaseColumn.allowEditing": {
       "vue": "allow-editing"
     },

@@ -21,6 +21,9 @@ Possible values: [*"filterRow"*](/api-reference/10%20UI%20Components/GridBase/1%
 A filter expression.          
 If you filter data [remotely](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/'), the filter expression must not contain functions.
 
+##### context: GridBaseColumn
+<!-- Description goes here -->
+
 ---
 The **calculateFilterExpression** function should return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). A basic filter expression has the following format:
 

@@ -25,6 +25,9 @@ The [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentatio
 ##### return: String
 The text the cell should display.
 
+##### context: GridBaseColumn
+<!-- Description goes here -->
+
 ---
 
 ---

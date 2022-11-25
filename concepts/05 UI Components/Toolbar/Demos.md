@@ -1,3 +1,4 @@
 #include demos-intro
 
-- [Toolbar](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview/)
+- [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Adaptability/)

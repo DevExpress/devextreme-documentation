@@ -16,6 +16,9 @@ A value to be compared.
 ##### return: Number
 Specifies whether *value1* goes before *value2*.
 
+##### context: GridBaseColumn
+<!-- Description goes here -->
+
 ---
 This function accepts two cell values and should return a number indicating their sort order:
 

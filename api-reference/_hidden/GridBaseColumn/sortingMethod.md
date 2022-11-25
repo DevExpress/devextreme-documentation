@@ -17,7 +17,7 @@ A value to be compared.
 Specifies whether *value1* goes before *value2*.
 
 ##### context: GridBaseColumn
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration
 
 ---
 This function accepts two cell values and should return a number indicating their sort order:

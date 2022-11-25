@@ -13,7 +13,7 @@ The data of the row to which the cell belongs.
 The value for the cell to display.
 
 ##### context: GridBaseColumn
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration
 
 ---
 This property accepts the name of the [data source field](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides display values...

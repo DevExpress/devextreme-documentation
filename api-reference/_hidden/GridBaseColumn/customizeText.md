@@ -26,7 +26,7 @@ The [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentatio
 The text the cell should display.
 
 ##### context: GridBaseColumn
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration
 
 ---
 

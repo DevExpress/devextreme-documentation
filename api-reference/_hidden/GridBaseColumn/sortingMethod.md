@@ -154,7 +154,3 @@ The string comparison is culture-insensitive by default. Use the following code 
 ---
 
 [note]The **sortingMethod**'s *value1* and *value2* are the values returned from the [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '{basewidgetpath}/Configuration/columns/#calculateSortValue') function if the latter is specified.
-
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}

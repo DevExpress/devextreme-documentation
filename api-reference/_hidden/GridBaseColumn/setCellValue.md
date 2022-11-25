@@ -399,6 +399,3 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
 
 To invoke the default behavior, call the **this.defaultSetCellValue(newData, value)** function.
 
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}

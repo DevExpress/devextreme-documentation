@@ -18,8 +18,8 @@ A read-only parameter providing access to the current row data.
 ##### return: void | Promise<void>
 Return a promise for an asynchronous operation or return nothing.
 
-##### param(this): GridBaseColumn
-<!-- Description goes here -->
+##### context: GridBaseColumn
+The `this` keyword refers to the column's configuration.
 
 ---
 This function allows you to process user input before it is saved to the data source. It accepts the **newData**, **value**, and **currentRowData** parameters. **value** is the user input that you should assign to one of the **newData** fields. Fill the empty **newData** object with fields whose values should be saved in the current row's data object. You can use the read-only **currentRowData** parameter to access the current row's data.
@@ -399,6 +399,3 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
 
 To invoke the default behavior, call the **this.defaultSetCellValue(newData, value)** function.
 
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}

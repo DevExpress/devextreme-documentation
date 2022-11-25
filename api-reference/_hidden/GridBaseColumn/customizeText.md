@@ -25,8 +25,8 @@ The [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentatio
 ##### return: String
 The text the cell should display.
 
-##### param(this): GridBaseColumn
-<!-- Description goes here -->
+##### context: GridBaseColumn
+The `this` keyword refers to the column's configuration.
 
 ---
 
@@ -167,10 +167,6 @@ The text the cell should display.
 [note] The component does not use the specified text to sort, filter, and group data or calculate summaries. If you want to implement described functionality, specify the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#calculateCellValue') function.
 
 You can call the **customizeText** function to highlight the matching text correctly when the data displayed in the column matches the search condition.
-
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}
 
 #####See Also#####
 - [Customize the Value and Text](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells/1%20Customize%20the%20Value%20and%20Text.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Customize_Cells/#Customize_the_Value_and_Text')

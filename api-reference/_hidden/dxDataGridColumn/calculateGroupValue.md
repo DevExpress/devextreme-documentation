@@ -12,8 +12,8 @@ Current row data.
 ##### return: any
 The calculated value used to create and sort groups.
 
-##### param(this): GridBaseColumn
-<!-- Description goes here -->
+##### context: GridBaseColumn
+The `this` keyword refers to the column's configuration.
 
 ---
 This property accepts the name of the data source field that provides values used to group grid records...

@@ -1,4 +1,4 @@
-You can add a label to the NumberBox and define its appearance. To display the label, assign the text to the [label](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#label) property. To change the label's appearance, set the [labelMode](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#labelMode) property to one of the following values:
+You can add a label to the NumberBox and define its appearance. To display the label, assign the text to the [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/label.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#label') property. To change the label's appearance, set the [labelMode](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/labelMode.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#labelMode') property to one of the following values:
 
 - *"static"* (default)    
 The component displays the label above the input field.

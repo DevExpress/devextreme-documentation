@@ -12,6 +12,9 @@ Current row data.
 ##### return: any
 The calculated value used to create and sort groups.
 
+##### context: GridBaseColumn
+<!-- Description goes here -->
+
 ---
 This property accepts the name of the data source field that provides values used to group grid records...
 

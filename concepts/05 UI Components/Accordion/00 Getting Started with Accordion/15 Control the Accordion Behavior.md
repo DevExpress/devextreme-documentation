@@ -19,7 +19,7 @@ If you do not specify additional properties, only one panel can be expanded at a
     <dx-accordion ...
         [collapsible]="true"
         [multiple]="true"
-        animationDuration="450"
+        [animationDuration]="450"
     >
     </dx-accordion>
 
@@ -30,7 +30,7 @@ If you do not specify additional properties, only one panel can be expanded at a
         <DxAccordion ...
             :collapsible="true"
             :multiple="true"
-            animation-duration="450"
+            :animation-duration="450"
         /> 
     </template>
 

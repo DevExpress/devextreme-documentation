@@ -228,7 +228,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
 ##### React
 
     <!-- tab: App.js -->
-    import { useState } from 'react';
+    import { useState, useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.light.css';
     import { TextBox } from 'devextreme-react/text-box';

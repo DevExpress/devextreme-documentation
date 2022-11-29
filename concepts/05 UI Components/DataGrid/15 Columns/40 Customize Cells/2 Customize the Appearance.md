@@ -6,8 +6,8 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
     <!--HTML-->
     <dx-data-grid ... >
         <dxi-column dataField="Title" cellTemplate="cellTemplate"></dxi-column>
-        <div *dxTemplate="let cell of 'cellTemplate'">
-            <div style="color:blue">{{cell.text}}</div>
+        <div *dxTemplate="let data of 'cellTemplate'">
+            <div style="color:blue">{{data.text}}</div>
         </div>
     </dx-data-grid>
 
@@ -35,7 +35,7 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
                 cell-template="grid-cell"
             />
             <template #grid-cell="{ data }">
-                <div style="color:blue">{{ data.cell.text }}</div>
+                <div style="color:blue">{{ data.text }}</div>
             </template>
         </DxDataGrid>
     </template>
@@ -68,7 +68,7 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
     } from 'devextreme-react/data-grid';
 
     const renderGridCell = (data) => {
-        return <div style={{ color: 'blue' }}>{data.cell.text}</div>;
+        return <div style={{ color: 'blue' }}>{data.text}</div>;
     }
 
     class App extends React.Component {

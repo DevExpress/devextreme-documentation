@@ -17,7 +17,7 @@ A value to be compared.
 Specifies whether *value1* goes before *value2*.
 
 ##### context: GridBaseColumn
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration.
 
 ---
 This function accepts two cell values and should return a number indicating their sort order:
@@ -154,7 +154,3 @@ The string comparison is culture-insensitive by default. Use the following code 
 ---
 
 [note]The **sortingMethod**'s *value1* and *value2* are the values returned from the [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '{basewidgetpath}/Configuration/columns/#calculateSortValue') function if the latter is specified.
-
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}

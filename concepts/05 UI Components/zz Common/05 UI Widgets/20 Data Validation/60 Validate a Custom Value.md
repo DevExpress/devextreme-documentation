@@ -228,7 +228,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
 ##### React
 
     <!-- tab: App.js -->
-    import { useState, useMemo, useCallback } from 'react';
+    import { useState, useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.light.css';
     import { TextBox } from 'devextreme-react/text-box';
@@ -241,7 +241,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
         const [email, setEmail] = useState();
         const [borderStyle, setBorderStyle] = useState("none");
         const callbacks = [];
-        const adapterConfig = React.useMemo({
+        const adapterConfig = {
             getValue: () => {
                 return phone || email;
             },
@@ -249,21 +249,21 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
                 setBorderStyle(e.isValid ? "none" : "1px solid red");
             },
             validationRequestsCallbacks: callbacks,
-        }, []);
-        const revalidate = React.useCallback(() => {
+        };
+        const revalidate = useCallback(() => {
             callbacks.forEach((func) => {
                 func();
             });
         }, []);
-        const handlePhoneChange = React.useCallback((e) => {
+        const handlePhoneChange = useCallback((e) => {
             setPhone(e.value);
             revalidate();
         }, []);
-        const handleEmailChange = React.useCallback((e) => {
+        const handleEmailChange = useCallback((e) => {
             setEmail(e.value);
             revalidate();
         }, []);
-        const submit = React.useCallback((e) => {
+        const submit = useCallback((e) => {
             const { isValid } = e.validationGroup.validate();
             if (isValid) {
                 // Submit values to the server

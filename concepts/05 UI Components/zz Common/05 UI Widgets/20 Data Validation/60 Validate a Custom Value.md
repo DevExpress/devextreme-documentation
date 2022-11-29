@@ -250,25 +250,25 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
             },
             validationRequestsCallbacks: callbacks,
         };
-        const revalidate = () => {
+        const revalidate = useCallback(() => {
             callbacks.forEach((func) => {
                 func();
             });
-        };
-        const handlePhoneChange = (e) => {
+        }, []);
+        const handlePhoneChange = useCallback((e) => {
             setPhone(e.value);
             revalidate();
-        };
-        const handleEmailChange = (e) => {
+        }, []);
+        const handleEmailChange = useCallback((e) => {
             setEmail(e.value);
             revalidate();
-        };
-        const submit = (e) => {
+        }, []);
+        const submit = useCallback((e) => {
             const { isValid } = e.validationGroup.validate();
             if (isValid) {
                 // Submit values to the server
             }
-        }
+        }, []);
 
         return (
             <div>

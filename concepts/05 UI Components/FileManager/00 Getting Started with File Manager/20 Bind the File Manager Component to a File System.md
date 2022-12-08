@@ -248,4 +248,4 @@ In the example below, the FileManager UI component displays hierarchical data st
 ---
 
 #####See Also#####
-[Bind to an Object File System](/concepts/05%20UI%20Components/FileManager/10%20Bind%20to%20File%20Systems/10%20Object%20File%20System.md '/Documentation/Guide/UI_Components/FileManager/Bind_to_File_Systems/#Object_File_System')
+- [Bind to an Object File System](/concepts/05%20UI%20Components/FileManager/10%20Bind%20to%20File%20Systems/10%20Object%20File%20System.md '/Documentation/Guide/UI_Components/FileManager/Bind_to_File_Systems/#Object_File_System')

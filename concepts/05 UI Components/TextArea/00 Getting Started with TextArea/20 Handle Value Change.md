@@ -1,4 +1,4 @@
-When users type text into the TextArea, the UI component writes this text into the [value](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#value) property when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. To specify another value change event, use the [valueChangeEvent](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#valueChangeEvent) property.
+If a user edits the text in a TextArea, the UI component updates the [value](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#value) property. The update happens on the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event. To specify another value change event, use the [valueChangeEvent](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#valueChangeEvent) property.
 
 To handle the value change event, implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#onValueChanged) function.
 

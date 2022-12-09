@@ -16,7 +16,7 @@ The CheckBox can be in one of the following states depending on the **value** pr
 - unchecked  
  **value** is `false`
 
-- indeterminate 
+- indeterminate  
  **value** is `undefined` or `null`
 
 Users can press the Space key to change the **value**.

@@ -132,7 +132,24 @@ The Form UI component displays labels on the left side of their editors and alig
 
 ---
 
-A label placed on the left or right side of the editor is centered vertically in most cases. The labels of the editors that occupy much screen space like the [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/'), [TextArea](/Documentation/ApiReference/UI_Components/dxTextArea/), and [RadioGroup](/concepts/05%20UI%20Components/RadioGroup/00%20Overview.md '/Documentation/Guide/UI_Components/RadioGroup/Overview/') are aligned at the top, but you can center them using the following code:
+If a label's position is left or right, the label's vertical alignment depends on the control type:
+
+<table class="dx-table">
+    <tr>
+        <th>Control Type</th>
+        <th>Default Vertical Alignment</th>
+    </tr>
+    <tr>
+        <td>Single-line editors</td>
+        <td>Middle</td>
+    </tr>
+    <tr>
+        <td>Multi-line editors and bigger controls</td>
+        <td>Top</td>
+    </tr>
+</table>
+
+The code below changes the default vertical alignment for a label to the middle:
 
     <!--CSS-->
     .dx-label-h-align {

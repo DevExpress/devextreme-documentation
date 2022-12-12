@@ -17,8 +17,8 @@ dx.web.js, dx.all.js
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/"
 }
-#include common-readguidesbutton with {
-    url: "/Documentation/Guide/UI_Components/TextArea/Overview/"
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/"
 }
 
 #####See Also#####

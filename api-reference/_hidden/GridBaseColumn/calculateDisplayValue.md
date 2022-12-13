@@ -12,6 +12,9 @@ The data of the row to which the cell belongs.
 ##### return: any
 The value for the cell to display.
 
+##### context: GridBaseColumn
+The `this` keyword refers to the column's configuration.
+
 ---
 This property accepts the name of the [data source field](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') that provides display values...
 
@@ -265,9 +268,5 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 ---
 
 The UI component uses the specified display values in [sorting](/concepts/05%20UI%20Components/DataGrid/25%20Sorting '/Documentation/Guide/UI_Components/{WidgetName}/Sorting/'), [searching](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Search_Panel'), and [grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') (in case of DataGrid).
-
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}
 
 Do not use this property to format text in cells. Instead, use the [format](/api-reference/_hidden/GridBaseColumn/format.md '{basewidgetpath}/Configuration/columns/#format'), [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText'), or [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') property.

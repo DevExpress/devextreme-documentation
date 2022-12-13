@@ -20,13 +20,16 @@ To customize panel appearance, use the [itemTemplate](/api-reference/10%20UI%20C
 
     <!-- tab: app.component.html -->
     <dx-accordion ...
+        itemTemplate="item"
+        itemTitleTemplate="title" 
+    >
         <div *dxTemplate="let data of 'title'">
             {{ data.FirstName + " " + data.LastName }}
         </div>
         <div *dxTemplate="let data of 'item'">
             {{ data.Position + " from " + data.State }}
         </div>
-    >
+    
     </dx-accordion>
 
 ##### Vue
@@ -34,6 +37,8 @@ To customize panel appearance, use the [itemTemplate](/api-reference/10%20UI%20C
     <!-- tab: App.vue -->
     <template>
         <DxAccordion ...
+            item-template="item"
+            item-title-template="title"
         >
             <template #title="{ data }">
                 {{ data.FirstName + " " + data.LastName }}

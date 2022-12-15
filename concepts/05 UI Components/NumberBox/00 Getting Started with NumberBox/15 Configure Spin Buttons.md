@@ -17,12 +17,12 @@ Users can click the spin buttons to increase or decrease the NumberBox's input v
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-color-box ...
+    <dx-number-box ...
         [step]="5"
         [showSpinButtons]="true"
         [showClearButton]="true"
     >
-    </dx-color-box>
+    </dx-number-box>
 
 ##### Vue
 

@@ -30,12 +30,16 @@ $(function() {
         cellTemplate: function(data) {
             let cssClass = '';
             $.each(federalHolidays, (_, item) => {
-                if (data.date.getDate() === item.getDate() && data.date.getMonth() === item.getMonth() && data.view !== 'year') {
-                    cssClass = 'holiday';
+                if (data.date !== undefined) {
+                    if (data.date.getDate() === item.getDate() && data.date.getMonth() === item.getMonth() && data.view !== 'year') {
+                        cssClass = 'holiday';
+                    }
                 }
             });
             return `<span class='${cssClass}'>${data.text}</span>`;
-        }
+        },
+        showWeekNumbers: true,
+        weekNumberRule: "firstDay"
     });
 
 });

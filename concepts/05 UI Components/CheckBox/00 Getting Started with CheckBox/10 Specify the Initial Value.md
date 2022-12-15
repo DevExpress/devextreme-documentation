@@ -9,7 +9,7 @@ the [value](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/val
 - indeterminate   
 the [value](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value') is `undefined` or `null`
 
-You can turn on the [enableThreeStateBehavior](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#enableThreeStateBehavior) option to allow users to cycle through all three states.
+You can turn on the [enableThreeStateBehavior](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/enableThreeStateBehavior.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#enableThreeStateBehavior') option to allow users to cycle through all three states.
 
 The following code specifies the initial value as `null`:
 

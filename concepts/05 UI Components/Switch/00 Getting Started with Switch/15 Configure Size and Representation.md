@@ -1,4 +1,4 @@
-The component allows you to configure its size and representation. To specify a width, assign the needed value to the [width]('/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#width') property. Use the [rtlEnabled]('/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#rtlEnabled') property to switch the widget to a right-to-left representation. If you set this property to `true`, the Switch label flows from right to left, and the layout of elements is reversed.
+The component allows you to configure its size and representation. To specify a width, assign the needed value to the [width](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#width) property. Use the [rtlEnabled](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#rtlEnabled) property to switch the widget to a right-to-left representation. If you set this property to `true`, the Switch label flows from right to left, and the layout of elements is reversed.
 
 
 ---

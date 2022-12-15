@@ -1,4 +1,4 @@
-If you need to specify the initial state, assign a boolean value to the [value]('/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#value') property. You can also change the Switch component labels with the [switchedOnText]('/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#switchedOnText') and the [switchedOffText]('/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#switchedOffText') properties. 
+If you need to specify the initial state, assign a boolean value to the [value](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#value) property. You can also change the Switch component labels with the [switchedOnText](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#switchedOnText) and the [switchedOffText](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#switchedOffText) properties. 
 
 ---
 ##### jQuery

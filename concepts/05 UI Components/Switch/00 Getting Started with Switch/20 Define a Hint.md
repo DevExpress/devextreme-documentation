@@ -20,13 +20,13 @@ You can add a hint message to the Switch and show it when the user hover the mou
 
     <!-- tab: app.component.html -->
     <dx-switch ...
-        [hint]="hint_message",
+        [hint]="hint_message"
     >
     </dx-switch>
 
     <!-- tab: app.component.ts -->
     import { Component } from "@angular/core";
-    import notify from "devextreme/ui/notify";
+    // ...
 
     @Component({
         selector: "app-root",
@@ -52,9 +52,8 @@ You can add a hint message to the Switch and show it when the user hover the mou
     </template>
 
     <script>
-    // ...
     import { DxSwitch } from "devextreme-vue/switch";
-    import notify from "devextreme/ui/notify";
+    // ...
 
     export default {
         components: {

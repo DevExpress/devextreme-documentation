@@ -108,8 +108,3 @@ The following code displays a notification every time users change the Switch st
     export default App;
 
 ---
-
-You have configured basic Switch features. For more information about this UI component and examples, refer to the following resources:
-
-* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Basics)
-* [API Reference]('/Documentation/ApiReference/UI_Components/dxSwitch/')

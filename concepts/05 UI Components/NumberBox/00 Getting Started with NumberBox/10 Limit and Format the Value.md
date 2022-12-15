@@ -19,13 +19,13 @@ NumberBox allows you to display the input values in a custom format. To define t
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-color-box
+    <dx-number-box
         [value]="261991"
         [min]="0"
         [max]="1000000"
         format="$ #,##0.##"
     >
-    </dx-color-box>
+    </dx-number-box>
 
 ##### Vue
 

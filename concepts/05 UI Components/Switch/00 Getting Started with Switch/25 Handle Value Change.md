@@ -49,7 +49,7 @@ The following code displays a notification every time users change the Switch st
     <!-- tab: App.vue -->
     <template>
         <DxSwitch ...
-            @value-changed="onValueChanged($event)"
+            @value-changed="onValueChanged"
         />
     </template>
 

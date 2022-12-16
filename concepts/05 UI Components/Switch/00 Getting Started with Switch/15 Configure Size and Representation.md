@@ -45,7 +45,7 @@ The component allows you to configure its size and representation. To specify a 
         // ...
         return (
             <Switch ...
-                width="80"
+                width={80}
                 rtlEnabled={true}
             />
         );

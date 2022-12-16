@@ -21,6 +21,7 @@ You can add a hint message to the Switch and show it when the user hover the mou
     <!-- tab: app.component.html -->
     <dx-switch ...
         [hint]="hint_message"
+        (onValueChanged)="onValueChanged($event)"
     >
     </dx-switch>
 
@@ -48,6 +49,7 @@ You can add a hint message to the Switch and show it when the user hover the mou
     <template>
         <DxSwitch ...
             :hint="hint_message"
+            @value-changed="onValueChanged"
         />
     </template>
 
@@ -93,6 +95,7 @@ You can add a hint message to the Switch and show it when the user hover the mou
         return (
             <Switch ...
                 hint={hint_message}
+                onValueChanged={onValueChanged}
             />
         );
     }

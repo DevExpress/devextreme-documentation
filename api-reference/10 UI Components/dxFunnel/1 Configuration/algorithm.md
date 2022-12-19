@@ -13,7 +13,7 @@ Two algorithms are available:
 
 - *"dynamicSlope"*
 
-    The each funnel item's form depends on the ratio between the current and the next item's value.
+    Each funnel item's form depends on the ratio between the current and the next item's value.
 
 - *"dynamicHeight"*
 

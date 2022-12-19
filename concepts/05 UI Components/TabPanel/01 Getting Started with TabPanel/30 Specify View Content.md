@@ -20,40 +20,58 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     <!-- tab: index.js -->
     $(function(){   
         $("#tabPanel").dxTabPanel({
-            items: [{ 
-                title: "Employee",
-                icon: "floppy",
-                template: function (itemData, itemIndex, element) {
-                    const formDiv = $("<div style='padding:15px'>")
-                    formDiv.dxForm({
-                        formData: employeeData,
-                        items: ["name", "position", "hireDate", "officeNumber"]
-                    });
-                    formDiv.appendTo(element);
-                }
-            }, {
-                title: "Notes",
-                icon: "comment",
-                template: function (itemData, itemIndex, element) {
-                    const textAreaDiv = $("<div style='padding:15px; height: 100%'>")
-                    textAreaDiv.dxTextArea({
-                        value: employeeData.notes
-                    });
-                    textAreaDiv.appendTo(element);
-                }
-            }, {
-                title: "Role",
-                icon: "isnotblank",
-                badge: "new",
-                template: function (itemData, itemIndex, element) {
-                    const radioGroupDiv = $("<div style='padding:15px'>")
-                    radioGroupDiv.dxRadioGroup({
-                        items: employeeData.roles,
-                        value: employeeData.roles[0]
-                    });
-                    radioGroupDiv.appendTo(element);
-                }
-            }]
+            items: [
+                {
+                    title: "Employee",
+                    icon: "floppy",
+                    template: function () {
+                        return $("<div id='form'>").dxForm({
+                            formData: employeeData,
+                            items: [
+                                {
+                                    dataField: "name",
+                                    label: {
+                                        template: labelTemplate("user"),
+                                    },
+                                },
+                                {
+                                    dataField: "position",
+                                    label: {
+                                        template: labelTemplate("group"),
+                                    },
+                                },
+                                "hireDate",
+                                {
+                                    dataField: "officeNumber",
+                                    label: {
+                                        template: labelTemplate("info"),
+                                    },
+                                },
+                            ],
+                        });
+                    },
+                },
+                {
+                    title: "Notes",
+                    icon: "comment",
+                    template: function () {
+                        return $("<div id='textArea'>").dxTextArea({
+                            value: employeeData.notes,
+                        });
+                    },
+                },
+                {
+                    title: "Role",
+                    icon: "isnotblank",
+                    badge: "new",
+                    template: function () {
+                        return $("<div id='radioGroup'>").dxRadioGroup({
+                            items: employeeData.roles,
+                            value: employeeData.roles[0],
+                        });
+                    },
+                },
+            ]
         });
 
         const employeeData = {
@@ -73,11 +91,24 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
         <dxi-item title="Employee" icon="floppy">
             <div *dxTemplate>
                 <dx-form
-                    [formData]="employeeData">
-                    <dxi-item dataField="name"></dxi-item>
-                    <dxi-item dataField="position"></dxi-item>
-                    <dxi-item dataField="hireDate"></dxi-item>
-                    <dxi-item dataField="officeNumber"></dxi-item>      
+                    id="form"
+                    [formData]="employeeData"
+                >
+                    <dxi-item dataField="name">
+                        <dxo-label template="name"></dxo-label>
+                    </dxi-item>
+                    <dxi-item dataField="position">
+                        <dxo-label template="position"></dxo-label>
+                    </dxi-item>
+                    <<dxi-item dataField="hireDate"></dxi-item>
+                    <dxi-item dataField="officeNumber">
+                        <dxo-label template="officeNumber"></dxo-label>
+                    </dxi-item>
+                    <ng-container *ngFor="let label of labelTemplates">
+                        <div *dxTemplate="let data of label.name">
+                            <div><i class="dx-icon {{ label.icon }}"></i>{{ data.text }}</div>
+                        </div>
+                    </ng-container>
                 </dx-form>
             </div>
         </dxi-item>
@@ -115,6 +146,11 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
             notes: 'John has been in the Audio/Video industry since 1990. He has led DevAV as its CEO since 2003.',
             roles: ['Chief Officer', 'Administrator', 'Manager']
         }
+        labelTemplates = [
+            {name: 'name', icon: 'dx-icon-info'},
+            {name: 'position', icon: 'dx-icon-group'},
+            {name: 'officeNumber', icon: 'dx-icon-info'}
+        ]
     }
 
     <!-- tab: app.module.ts -->
@@ -152,11 +188,29 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
         <DxTabPanel>
             <DxItem title="Employee" icon="floppy">
                 <template #default>
-                    <DxForm :form-data="employeeData">
-                        <DxSimpleItem data-field="name" />
-                        <DxSimpleItem data-field="position" />
+                    <DxForm 
+                        id="form"
+                        :form-data="employeeData"
+                    >
+                        <DxSimpleItem data-field="name">
+                            <DxLabel template="nameLabel"/>
+                        </DxSimpleItem>
+                        <DxSimpleItem data-field="position">
+                            <DxLabel template="positionLabel"/>
+                        </DxSimpleItem>
                         <DxSimpleItem data-field="hireDate" />
-                        <DxSimpleItem data-field="officeNumber" />
+                        <DxSimpleItem data-field="officeNumber">
+                            <DxLabel template="officeNumberLabel"/>
+                        </DxSimpleItem>
+                        <template #nameLabel="{ data }">
+                            <i class="dx-icon dx-icon-user"/>{{ data.text }}
+                        </template>
+                        <template #positionLabel="{ data }">
+                            <i class="dx-icon dx-icon-group"/>{{ data.text }}
+                        </template>
+                        <template #officeNumberLabel="{ data }">
+                            <i class="dx-icon dx-icon-info"/>{{ data.text }}
+                        </template>
                     </DxForm>
                 </template>
             </DxItem>
@@ -182,7 +236,7 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     import 'devextreme/dist/css/dx.light.css';
 
     import DxTabPanel, { DxItem } from "devextreme-vue/tab-panel";
-    import DxForm, { DxSimpleItem } from "devextreme-vue/form";
+    import DxForm, { DxSimpleItem, DxLabel } from "devextreme-vue/form";
     import DxTextArea from "devextreme-vue/text-area";
     import DxRadioGroup from "devextreme-vue/radio-group";
 
@@ -192,6 +246,7 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
             DxItem,
             DxForm,
             DxSimpleItem,
+            DxLabel,
             DxTextArea,
             DxRadioGroup
         },
@@ -218,7 +273,7 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     import 'devextreme/dist/css/dx.light.css';
 
     import TabPanel, { Item } from "devextreme-react/tab-panel";
-    import Form, { SimpleItem } from "devextreme-react/form";
+    import Form, { SimpleItem, Label } from "devextreme-react/form";
     import TextArea from "devextreme-react/text-area";
     import RadioGroup from "devextreme-react/radio-group";
 
@@ -231,15 +286,30 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
         roles: ['Chief Officer', 'Administrator', 'Manager']
     };
 
+    const labelTemplate = (iconName) => {
+        return function template(data) {
+            return (<div><i className={`dx-icon dx-icon-${iconName}`}></i>{ data.text }</div>);
+        };
+    }
+
     const App = () => {
         return (
             <TabPanel>
                 <Item title="Employee" icon="floppy">
-                    <Form formData={employeeData}>
-                        <SimpleItem dataField="name" />
-                        <SimpleItem dataField="position" />
+                    <Form 
+                        id="form"
+                        formData={employeeData}
+                    >
+                        <SimpleItem dataField="name">
+                            <Label render={labelTemplate('user')} />
+                        </SimpleItem>
+                        <SimpleItem dataField="position">
+                            <Label render={labelTemplate('group')} />
+                        </SimpleItem>
                         <SimpleItem dataField="hireDate" />
-                        <SimpleItem dataField="officeNumber" />
+                        <SimpleItem dataField="officeNumber">
+                            <Label render={labelTemplate('info')} />
+                        </SimpleItem>
                     </Form>
                 </Item>
                 <Item title="Notes" icon="comment">

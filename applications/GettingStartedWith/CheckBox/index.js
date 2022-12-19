@@ -1,6 +1,7 @@
 $(() => {
     $("#check-box").dxCheckBox({
         value: null,
+        enableThreeStateBehavior: true,
         iconSize: 25,
         text: "Approve",
         hint: "Approve",

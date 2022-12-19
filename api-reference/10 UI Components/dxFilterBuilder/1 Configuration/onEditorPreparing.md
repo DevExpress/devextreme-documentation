@@ -63,7 +63,7 @@ The editor's width.
 ---
 The FilterBuilder offers users different editors used to enter a value depending on the field's [dataType](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType'): [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/'), [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/'), and so on. Use this function to customize those default editors or substitute them for other editors. 
 
-In the following code, the DevExtreme [TextArea](/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/) UI component replaces the default editor. Note that the **onValueChanged** function declaration ends with the **setValue(newValue, newText)** method's call. This method updates the value.
+In the following code, the DevExtreme [TextArea](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/') UI component replaces the default editor. Note that the **onValueChanged** function declaration ends with the **setValue(newValue, newText)** method's call. This method updates the value.
 
 ---
 ##### jQuery

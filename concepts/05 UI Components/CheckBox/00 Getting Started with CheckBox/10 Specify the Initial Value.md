@@ -6,8 +6,10 @@ the [value](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/val
 - unchecked  
 the [value](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value') is `false`
 
-- indeterminate 
+- indeterminate   
 the [value](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#value') is `undefined` or `null`
+
+You can turn on the [enableThreeStateBehavior](/api-reference/10%20UI%20Components/dxCheckBox/1%20Configuration/enableThreeStateBehavior.md '/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#enableThreeStateBehavior') option to allow users to cycle through all three states.
 
 The following code specifies the initial value as `null`:
 
@@ -17,7 +19,8 @@ The following code specifies the initial value as `null`:
     <!-- tab: index.js -->
     $(function() {
         $("#check-box").dxCheckBox({
-            value: null
+            value: null,
+            enableThreeStateBehavior: true
         });
     });
 
@@ -26,6 +29,7 @@ The following code specifies the initial value as `null`:
     <!-- tab: app.component.html -->
     <dx-check-box
         [value]="null"
+        [enableThreeStateBehavior]="true"
     >
     </dx-check-box>
 
@@ -35,6 +39,7 @@ The following code specifies the initial value as `null`:
     <template>
         <DxCheckBox
             :value="null"
+            :enable-three-state-behavior="true"
         />
     </template>
 
@@ -51,6 +56,7 @@ The following code specifies the initial value as `null`:
         return (
             <CheckBox
                 value={null}
+                enableThreeStateBehavior={true}
             />
         );
     }

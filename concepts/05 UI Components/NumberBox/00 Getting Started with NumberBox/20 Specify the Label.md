@@ -25,11 +25,11 @@ The label is hidden.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-color-box ...
+    <dx-number-box ...
         label="Enter a sum in dollars"
         labelMode="floating"
     >
-    </dx-color-box>
+    </dx-number-box>
 
 ##### Vue
 

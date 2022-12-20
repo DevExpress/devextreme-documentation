@@ -1,4 +1,5 @@
-You can add a hint message to the Switch and show it when the user hover the mouse pointer over the component. To specify the hint, assign the text to the [hint](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#hint) property. 
+The following code specifies a [hint](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#hint) - a message that appears when 
+ users hover the mouse pointer over the Switch. 
 
 ---
 ##### jQuery

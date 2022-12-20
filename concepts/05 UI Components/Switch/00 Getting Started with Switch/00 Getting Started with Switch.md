@@ -1,8 +1,8 @@
 #include tutorials-intro-installationnote
 
-The Switch component allows users to switch between two states: ON (when the value is `true`) and OFF (when the value is `false`).
+The Switch component allows users to switch between two states: ON (the value is `true`) and OFF (the value is `false`).
 
-This tutorial shows how to add Switch to a page and configure its core features. As a result, you will create the following UI component:
+This tutorial shows how to add Switch to a page and configure its core features. The following sample shows the customization result:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/22_1/GettingStartedWith/Switch/index.html, /Content/Applications/22_1/GettingStartedWith/Switch/index.js, /Content/Applications/22_1/GettingStartedWith/Switch/index.css"></div>
 

@@ -3,10 +3,11 @@ id: CustomStore.load()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Starts loading data.
 
 ##### return: Promise<any>
-<!-- Description goes here -->
+A Promise that is resolved after data is loaded.
+#include ref-promisedistinction
 
 ---
 <!-- Description goes here -->

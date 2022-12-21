@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The Switch component allows users to switch between two states: ON (the value is `true`) and OFF (the value is `false`).
+The Switch component allows users to switch between ON (the value is `true`) and OFF (the value is `false`) states.
 
 This tutorial shows how to add Switch to a page and configure its core features. The following sample shows the customization result:
 

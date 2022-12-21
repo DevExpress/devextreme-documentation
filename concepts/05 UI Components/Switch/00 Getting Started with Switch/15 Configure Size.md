@@ -1,6 +1,6 @@
 The component allows you to change its [width](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#width). 
 
-You can also use [rtlEnabled](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#rtlEnabled) property to enable Right-to-Left layout. 
+You can also use [rtlEnabled](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#rtlEnabled) property to enable the Right-to-Left layout. 
 
 
 ---

@@ -38,7 +38,7 @@
 
         webpack
 
-Refer to the following examples to see how to use Webpack with <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/webpack-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/webpack-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/webpack-knockout" target="_blank">Knockout</a> on GitHub. The **webpack.config.js**, **index.js**, and **index.html** files contain the main code. 
+Refer to the following examples to see how to use Webpack with <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/webpack-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/webpack-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/webpack-knockout" target="_blank">Knockout</a> on GitHub. The **webpack.config.js**, **index.js**, and **index.html** files contain the main code. 
 
 The following list shows additional modules each library/framework requires: 
 

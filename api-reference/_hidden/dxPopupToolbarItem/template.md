@@ -6,7 +6,7 @@ The following types of the specified value are available.
 
 [note]You cannot use the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') component as a **toolbarItems** template.
 
-The following example adds a custom item to the Popup toolbar. Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property. In React, specify the [render](/Documentation/22_2/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#render) or [component](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#component) properties.
+The following example adds a custom item to the Popup toolbar. Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property. In React, specify the [render](/Documentation/23_1/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#render) or [component](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#component) properties.
 
 ---
 ##### jQuery

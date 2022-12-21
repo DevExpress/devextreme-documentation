@@ -1,7 +1,8 @@
-Note that the [element_Name]**Render** and [element_Name]**Component** (for example, the **cellRender** and **cellComponent**) do not work within the **customizeColumn** function. Instead, use the [columns](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/) array.
 
 ---
 ##### React
+
+Note that the [element_Name]**Render** and [element_Name]**Component** (for example, the **cellRender** and **cellComponent**) do not work within the **customizeColumn** function. Instead, use the [columns](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/) array.
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -41,5 +42,3 @@ Note that the [element_Name]**Render** and [element_Name]**Component** (for exam
     export default App;
 
 ---
-
-[tags] react

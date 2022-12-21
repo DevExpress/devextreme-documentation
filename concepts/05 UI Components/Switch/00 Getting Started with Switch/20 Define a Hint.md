@@ -1,4 +1,4 @@
-The following code specifies a [hint](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#hint) - a message that appears when 
+The following code specifies the [hint](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#hint) that appears when 
  users hover the mouse pointer over the Switch. 
 
 ---

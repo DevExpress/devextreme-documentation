@@ -1,4 +1,4 @@
-Users can change a component value (*state*) in a number of ways: mouse click, SPACE key, or tap. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#onValueChanged) callback to handle value changes.
+Users can change a component value (*state*) with a mouse click, SPACE key, or tap. Implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#onValueChanged) callback to handle value changes.
 
 The following code displays a notification every time users change the Switch state:
 

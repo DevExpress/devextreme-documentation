@@ -1,13 +1,13 @@
 Run the following commands:
 
-    npm install devextreme@22.2 --save --save-exact
+    npm install devextreme@23.1 --save --save-exact
     
-    npm install devextreme-angular@22.2 --save --save-exact // If you use DevExtreme with Angular
-    npm install devextreme-vue@22.2 --save --save-exact // If you use DevExtreme with Vue
-    npm install devextreme-react@22.2 --save --save-exact // If you use DevExtreme with React
+    npm install devextreme-angular@23.1 --save --save-exact // If you use DevExtreme with Angular
+    npm install devextreme-vue@23.1 --save --save-exact // If you use DevExtreme with Vue
+    npm install devextreme-react@23.1 --save --save-exact // If you use DevExtreme with React
 
     // If the application is created using the DevExtreme CLI
-    npm install devextreme-themebuilder@22.2 --save --save-exact
+    npm install devextreme-themebuilder@23.1 --save --save-exact
     npm run build-themes
 
 #####See Also#####

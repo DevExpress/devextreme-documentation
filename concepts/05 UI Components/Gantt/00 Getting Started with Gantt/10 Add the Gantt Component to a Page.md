@@ -13,12 +13,12 @@ Add Gantt resources (scripts and styles) onto the page.
     Add the `dx-gantt.min.css` and `dx-gantt.min.js` files to your page.
 
         <!--HTML-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_2/css/dx-gantt.min.css">
-        <script src="https://cdn3.devexpress.com/jslib/minor_22_2/js/dx-gantt.min.js"></script>
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx-gantt.min.css">
+        <script src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx-gantt.min.js"></script>
 
 - **Local Scripts**
 
-    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles%\DevExpress 22.2\DevExtreme\Sources). Copy the **dx-gantt.min.js** and **dx-gantt.min.css** files into your application folder. Then, link the required files.
+    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles%\DevExpress 23.1\DevExtreme\Sources). Copy the **dx-gantt.min.js** and **dx-gantt.min.css** files into your application folder. Then, link the required files.
 
         <!--HTML-->
         <script type="text/javascript" src="js/dx-gantt.min.js"></script>
@@ -32,11 +32,11 @@ The Gantt UI component is a jQuery DevExtreme UI component, and thus requires co
 
     <!--HTML-->
     <!-- DevExtreme theme -->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_2/css/dx.light.css">
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- DevExtreme common scripts -->
-    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_22_2/js/dx.all.js"></script>
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.all.js"></script>
         
 [/note]
 

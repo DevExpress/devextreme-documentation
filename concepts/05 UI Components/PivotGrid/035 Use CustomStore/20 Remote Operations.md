@@ -16,7 +16,7 @@ Now, the PivotGrid needs a special configuration of the **CustomStore** on the c
 }
 
 #####See Also#####
-- <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/pivotgrid-webapi" target="_blank">PivotGrid and Web API Example</a>
+- <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/pivotgrid-webapi" target="_blank">PivotGrid and Web API Example</a>
 
 If these extensions do not suit your needs, configure the **CustomStore** and implement server-side data processing by yourself, following the instructions given below. Define the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function for the **CustomStore**. This function accepts a bag of **loadOptions** and passes them to the server. The server must process data according to the **loadOptions** and send processed data back. 
 

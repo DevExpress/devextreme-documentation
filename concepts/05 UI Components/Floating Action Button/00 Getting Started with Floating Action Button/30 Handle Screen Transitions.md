@@ -1,6 +1,6 @@
 Different screens use different FABs because a FAB should perform or contain only actions that can be performed on a particular screen. The DevExtreme [TabPanel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/jQuery/MaterialBlueLight) is used to emulate switching between screens.
 
-<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/22_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/22_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/22_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
+<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/23_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/23_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/23_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
 
 To implement this behavior in Angular, Vue, and React, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
 
@@ -42,8 +42,8 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
             <!-- DevExtreme resources -->
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_22_2/css/dx.material.blue.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_22_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.material.blue.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.all.js"></script>
 
             <!-- Custom icons by Ionicons -->
             <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">

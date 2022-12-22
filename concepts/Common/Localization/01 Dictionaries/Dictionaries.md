@@ -6,7 +6,7 @@ DevExpress curates the following dictionaries:
 - German (de)
 - Japanese (ja)
 
-There are also dictionaries that the community contributes and curates. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/22_2/js/localization/messages" target="_blank">on GitHub</a>.
+There are also dictionaries that the community contributes and curates. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/23_1/js/localization/messages" target="_blank">on GitHub</a>.
 
 You can find all the dictionaries on your local machine in the DevExtreme installation folder's or ZIP archive's Lib\js\localization directory. These dictionaries are also available on CDN or npm.
 
@@ -21,9 +21,9 @@ You can find all the dictionaries on your local machine in the DevExtreme instal
         <head>
             <!-- ... -->
             <!-- DevExtreme library -->
-            <script src="https://cdn3.devexpress.com/jslib/minor_22_2/js/dx.all.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.all.js"></script>
             <!-- Dictionary files for German language -->
-            <script src="https://cdn3.devexpress.com/jslib/minor_22_2/js/localization/dx.messages.de.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_23_1/js/localization/dx.messages.de.js"></script>
         </head>
         <body>
             <script>

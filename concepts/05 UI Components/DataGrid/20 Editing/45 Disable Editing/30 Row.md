@@ -1,4 +1,4 @@
-DataGrid has API to disable editing a specific column, row and cell.
+DataGrid includes API that allows users to disable editing a specific column, row and cell.
 
 ### Column
 Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing) property to **false** to prevent editing its data.

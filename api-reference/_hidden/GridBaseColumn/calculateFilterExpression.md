@@ -10,7 +10,7 @@ Specifies the column's custom rules to filter data.
 A user input value.             
 Contains an array if the `selectedFilterOperation` is one of the following: *"between"*, *"anyof"*, *"noneof"*.
 
-##### param(selectedFilterOperation): String
+##### param(selectedFilterOperation): String | null
 A selected filter operation.
 
 ##### param(target): String

@@ -1,3 +1,6 @@
+---
+tags: form, validation, validation rules, validate, validation summary, validation group, validationGroup, submit form, submit behavior
+---
 The Form UI component uses the built-in validation engine to validate form item values. You can attach validation rules to a simple item using its [validationRules](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules') property when you [create items explicitly](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items/01%20Create%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Create_a_Simple_Item')...
 
 ---
@@ -442,4 +445,4 @@ Usually, Form editors should be submitted to the server after being successfully
 - [Data Validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
 - [Button - Validate and Submit an HTML Form](/concepts/05%20UI%20Components/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/UI_Components/Button/Validate_and_Submit_an_HTML_Form/')
 
-[tags]form, validation, validation rules, validate, validation summary, validation group, validationGroup, submit form, submit behavior
+

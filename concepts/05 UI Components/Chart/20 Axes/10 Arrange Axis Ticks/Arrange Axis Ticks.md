@@ -1,1 +1,3 @@
-[tags]chart, panes, overview, single-pane chart
+---
+tags: chart, panes, overview, single-pane chart
+---

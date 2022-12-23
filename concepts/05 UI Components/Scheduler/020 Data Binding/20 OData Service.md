@@ -1,3 +1,6 @@
+---
+tags: scheduler, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the Scheduler to data an OData service provides. It presents an interface for loading and editing data and allows you to handle data-related events.
 
 ---
@@ -235,4 +238,4 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-[tags]scheduler, data binding, provide data, odata, ODataStore, DataSource, process data
+

@@ -1,3 +1,6 @@
+---
+tags: toolbar, type, item type, UI component item
+---
 A Toolbar item may be plain text or a UI component. Text items should have the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#text') field specified.
 
 ---
@@ -279,4 +282,4 @@ Items that contain a UI component should have the [widget](/api-reference/_hidde
 - [Toolbar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview)
 - [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
-[tags]toolbar, type, item type, UI component item
+

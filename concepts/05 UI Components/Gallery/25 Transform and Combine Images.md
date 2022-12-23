@@ -1,3 +1,6 @@
+---
+tags: gallery, item width, show several images, stretch image
+---
 By default, the Gallery UI component displays one image at a time. To fit more images into a single Gallery view, specify the [initialItemWidth](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/initialItemWidth.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#initialItemWidth') property. In this case, the UI component shows as many images scaled down to the **initialItemWidth** as it can display without cropping them.
 
 ---
@@ -358,4 +361,3 @@ The Gallery UI component allows you to display not only the current image, but a
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]gallery, item width, show several images, stretch image

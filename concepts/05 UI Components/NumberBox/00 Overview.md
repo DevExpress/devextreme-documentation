@@ -1,3 +1,6 @@
+---
+tags: dxnumberbox, number box, numberBox, editor, overview
+---
 The NumberBox is a UI component that displays a numeric value and allows a user to modify it by typing in a value, and incrementing or decrementing it using the keyboard or mouse.
 
 #include common-demobutton with {
@@ -176,4 +179,3 @@ If the entered value falls out of the range, the UI component sets the value to 
 - [NumberBox - Keyboard Support](/concepts/05%20UI%20Components/NumberBox/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/NumberBox/Keyboard_Support')
 - [NumberBox API Reference](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/')
 
-[tags]dxnumberbox, number box, numberBox, editor, overview

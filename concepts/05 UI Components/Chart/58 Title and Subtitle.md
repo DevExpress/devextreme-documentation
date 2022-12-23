@@ -1,3 +1,6 @@
+---
+tags: chart, title, subtitle, text
+---
 Title and subtitle are textual elements that give an idea of what the Chart visualizes.
 
 ![DevExtreme HTML5 JavaScript Charts Title Subtitle](/images/ChartJS/visual_elements/chart_title.png)
@@ -179,4 +182,4 @@ For information about all properties of the title and subtitle, visit the [title
 #####See Also#####
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource)
 
-[tags]chart, title, subtitle, text
+

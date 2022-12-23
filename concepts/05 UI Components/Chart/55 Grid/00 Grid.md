@@ -1,3 +1,6 @@
+---
+tags: chart, grid, minor grid, grid lines
+---
 A grid is a set of mutually-crossing vertical and horizontal lines that stretch throughout the entire chart. Visually, grid lines can be considered extensions of [major ticks](/concepts/05%20UI%20Components/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/'). The grid improves the readability of chart data.
 
 ![DevExtreme HTML5 JavaScript Charts GridLines](/images/ChartJS/visual_elements/grid_lines.png)
@@ -154,4 +157,3 @@ Note that axis-specific settings override common settings.
 
 ---
 
-[tags]chart, grid, minor grid, grid lines

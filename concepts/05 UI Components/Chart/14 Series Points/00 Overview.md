@@ -1,3 +1,6 @@
+---
+tags: chart, overview, series points, common point settings
+---
 A series point is a visual representation of one or several data objects. Series points can have different shapes and sizes depending on the [series types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/'). 
 
 ![DevExtreme HTML5 JavaScript Charts SeriesPoints](/images/ChartJS/visual_elements/series_points.png)
@@ -255,4 +258,4 @@ Settings specified in the manner described above apply to a congregation of seri
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, overview, series points, common point settings
+

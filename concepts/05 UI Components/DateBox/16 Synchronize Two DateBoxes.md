@@ -1,3 +1,6 @@
+---
+tags: date box, dateBox, editor, scheduling, overview, validate date interval
+---
 DateBox UI components are often coupled for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one DateBox's range depending on the other's value as shown in the example below.
 
 ---
@@ -177,4 +180,4 @@ Do not forget to call the <a href="https://developer.mozilla.org/en/docs/Web/Jav
 - [DateBox - Handle the Value Change Event](/concepts/05%20UI%20Components/DateBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/DateBox/Handle_the_Value_Change_Event')
 - [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
 
-[tags]date box, dateBox, editor, scheduling, overview, validate date interval
+

@@ -1,1 +1,3 @@
-[tags]list, enable item reordering, allowItemReordering, reorder by index, reorder by dom node, reorderItem, handle item reorder, onItemReordered
+---
+tags: list, enable item reordering, allowItemReordering, reorder by index, reorder by dom node, reorderItem, handle item reorder, onItemReordered
+---

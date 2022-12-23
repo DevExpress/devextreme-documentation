@@ -1,3 +1,6 @@
+---
+tags: chart, crosshair, pointer
+---
 Crosshair is a pointer represented by two mutually-crossing lines stretched over the entire chart plot. The crosshair helps a user identify values of the [series points](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') precisely. When enabled, the crosshair follows the cursor and snaps to the nearest series point.
 
 ![DevExtreme HTML5 JavaScript Charts Crosshair](/images/ChartJS/visual_elements/crosshair.png)
@@ -98,4 +101,4 @@ For information about all properties of the crosshair and its labels, visit the 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"
 }
 
-[tags]chart, crosshair, pointer
+

@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, data binding, provide data, ArrayStore, DataSource, process data
+---
 If you want to extend the functionality of a JavaScript array, place it into an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data, and allows you to handle data-related events.
 
 ---
@@ -102,4 +105,3 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
 - [Data Layer - What Are Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores')
 - [Data Layer - DataSource Examples | In-memory Data](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/0%20In-memory%20Data.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#In-memory_Data')
 
-[tags]dataGrid, data grid, data binding, provide data, ArrayStore, DataSource, process data

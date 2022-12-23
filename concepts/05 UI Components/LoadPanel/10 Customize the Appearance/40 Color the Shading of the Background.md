@@ -1,3 +1,6 @@
+---
+tags: loadPanel, load panel, overlay, load panel shading, background, shading color
+---
 When the LoadPanel is shown, the area beneath it can be shaded. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#shadingColor') property.
 
 ---
@@ -149,4 +152,3 @@ When the LoadPanel is shown, the area beneath it can be shaded. The shading colo
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
-[tags]loadPanel, load panel, overlay, load panel shading, background, shading color

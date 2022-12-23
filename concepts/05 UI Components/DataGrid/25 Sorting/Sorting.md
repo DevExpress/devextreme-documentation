@@ -1,1 +1,3 @@
-[tags]dataGrid, data grid, single sorting, multiple sorting, custom sorting, clear sorting, clearSorting, calculateSortValue, sortOrder, sortIndex
+---
+tags: dataGrid, data grid, single sorting, multiple sorting, custom sorting, clear sorting, clearSorting, calculateSortValue, sortOrder, sortIndex
+---

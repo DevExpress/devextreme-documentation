@@ -1,3 +1,6 @@
+---
+tags: gallery, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -22,4 +25,3 @@ An end user can use the following keys to interact with the UI component.
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]gallery, accessibility, keyboard shortcuts

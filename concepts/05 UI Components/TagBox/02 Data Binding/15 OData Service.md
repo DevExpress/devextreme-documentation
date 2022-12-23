@@ -1,3 +1,6 @@
+---
+tags: tagBox, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the TagBox to data an OData service provides.
 
 ---
@@ -230,4 +233,4 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
 - [Access the DataSource](/concepts/05%20UI%20Components/TagBox/02%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/TagBox/Data_Binding/Access_the_DataSource/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/Overview)
 
-[tags]tagBox, data binding, provide data, odata, ODataStore, DataSource, process data
+

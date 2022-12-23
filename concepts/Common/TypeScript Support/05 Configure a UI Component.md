@@ -1,3 +1,6 @@
+---
+tags: typescript support, configure, initialize, type definitions, namespaces
+---
 The following code example shows how to declare a UI component configuration object using TypeScript.
 
     window.onload = () => {
@@ -58,4 +61,3 @@ After you have declared a configuration object, pass it to the [jQuery plugin](/
 #####See Also#####
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
 
-[tags]typescript support, configure, initialize, type definitions, namespaces

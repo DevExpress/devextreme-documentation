@@ -1,3 +1,6 @@
+---
+tags: map, route added, Route removed, routeAdded event, routeRemoved event
+---
 The Map UI component fires the [routeAdded](/api-reference/10%20UI%20Components/dxMap/4%20Events/routeAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#routeAdded') and [routeRemoved](/api-reference/10%20UI%20Components/dxMap/4%20Events/routeRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Events/#routeRemoved') events when a marker is added or removed.
 To handle them, assign functions to the [onRouteAdded](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/onRouteAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onRouteAdded') and [onRouteRemoved](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/onRouteRemoved.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onRouteRemoved') properties, respectively.
 
@@ -165,4 +168,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, route added, Route removed, routeAdded event, routeRemoved event

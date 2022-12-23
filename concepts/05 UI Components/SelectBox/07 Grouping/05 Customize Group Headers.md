@@ -1,3 +1,6 @@
+---
+tags: selectBox, group headers appearance, customize, templates, template
+---
 By default, group headers display text of the **key** field in a bold font. If you need a more flexible solution, specify [groupTemplate](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
 
 ---
@@ -220,4 +223,4 @@ In addition, you can use a 3rd-party template engine to perform the needed custo
 - [SelectBox - Customize Item Appearance](/concepts/05%20UI%20Components/SelectBox/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/SelectBox/Customize_Item_Appearance/')
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 
-[tags]selectBox, group headers appearance, customize, templates, template
+

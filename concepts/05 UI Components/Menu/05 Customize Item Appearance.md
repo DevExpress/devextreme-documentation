@@ -1,3 +1,6 @@
+---
+tags: menu, item appearance, customize, templates
+---
 For a minor customization of Menu items, you can define [specific fields](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/') in item data objects. For example, the following code generates two root items with two drop-down menu items each. The root items are supplied with [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
 
 ---
@@ -336,4 +339,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
-[tags]menu, item appearance, customize, templates
+

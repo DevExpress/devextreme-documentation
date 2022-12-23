@@ -1,1 +1,3 @@
-[tags] vue
+---
+frameworks: vue
+---

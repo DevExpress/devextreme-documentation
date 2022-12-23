@@ -1,3 +1,6 @@
+---
+tags: menu, access the clicked item, onItemClick, itemClick
+---
 To access the clicked item, handle the [itemClick](/api-reference/10%20UI%20Components/CollectionWidget/4%20Events/itemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Events/#itemClick') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') property when you configure the UI component.
 
 ---
@@ -116,4 +119,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
-[tags]menu, access the clicked item, onItemClick, itemClick

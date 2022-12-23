@@ -1,3 +1,6 @@
+---
+tags: dxpopover, popover, overview, overlay
+---
 The Popover is a UI component that shows notifications within a box with an arrow pointing to a specified UI element.
 
 #include common-demobutton with {
@@ -134,4 +137,3 @@ There are several ways to specify the content of the Popover. Learn more in the 
 - [Popover - Resize and Relocate](/concepts/05%20UI%20Components/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/Popover/Resize_and_Relocate/')
 - [Popover API Reference](/api-reference/10%20UI%20Components/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/')
 
-[tags]dxpopover, popover, overview, overlay 

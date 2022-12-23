@@ -1,3 +1,6 @@
+---
+tags: dxcolorbox, color box, colorBox, editor, overview
+---
 The ColorBox is a UI component that allows an end user to enter a color or pick it out from the drop-down editor.
 
 #include common-demobutton with {
@@ -114,4 +117,3 @@ The ColorBox accepts colors in hexadecimal (_"#FF0000"_), RGB (_"rgb(255, 0, 0)"
 - [ColorBox - Keyboard Support](/concepts/05%20UI%20Components/ColorBox/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/ColorBox/Keyboard_Support')
 - [ColorBox API Reference](/api-reference/10%20UI%20Components/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
 
-[tags]dxcolorbox, color box, colorBox, editor, overview

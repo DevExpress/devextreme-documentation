@@ -1,3 +1,6 @@
+---
+tags: list, collection UI component, search, search mode, search expression
+---
 [note] Searching works when inputting a plain data structure only. However, if you need the searching capability and grouped data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
 Searching is disabled in the List UI component by default. Assign **true** to the [searchEnabled](/api-reference/10%20UI%20Components/dxList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchEnabled') property to display the search panel. The [searchExpr](/api-reference/10%20UI%20Components/SearchBoxMixin/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchExpr') property specifies which data fields should be searched. Assign an _array_ of field names to it if you need to search several fields.
@@ -252,4 +255,4 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 #####See Also#####
 - [Grouping](/concepts/05%20UI%20Components/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/')
 
-[tags]list, collection UI component, search, search mode, search expression
+

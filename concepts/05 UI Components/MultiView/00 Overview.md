@@ -1,3 +1,6 @@
+---
+tags: dxmultiview, multi view, multiView, collection container, collection UI component, navigation, overview
+---
 The MultiView is a UI component that contains several views. An end user navigates through the views by swiping them in the horizontal direction. The UI component is often used along with the [Tabs](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/') UI component.
 
 #include common-demobutton with {
@@ -119,4 +122,3 @@ More often, structure of the data source item differs from the default. For corr
 - [MultiView - Loop the Views](/concepts/05%20UI%20Components/MultiView/15%20Loop%20the%20Views.md '/Documentation/Guide/UI_Components/MultiView/Loop_the_Views')
 - [MultiView API Reference](/api-reference/10%20UI%20Components/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/')
 
-[tags]dxmultiview, multi view, multiView, collection container, collection UI component, navigation, overview

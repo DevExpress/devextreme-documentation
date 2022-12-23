@@ -1,3 +1,6 @@
+---
+tags: dxspeeddialaction
+---
 #include tutorials-intro-installationnote
 
 The Floating Action Button (FAB) is the primary action button on a screen that is displayed in front of all screen content. The FAB can execute an action or open a stack of two to five related actions (speed dial).
@@ -21,4 +24,3 @@ With jQuery, reference the Ionicons stylesheet in the `<head>` of your page:
 
 [/note]
 
-[tags]dxspeeddialaction

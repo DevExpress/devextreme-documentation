@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, data binding, access data source, getDataSource, reload data
+---
 Regardless of the data source you use, the DataGrid always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). To get a **DataSource** instance, call the [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getDataSource') method.
 
 ---
@@ -40,4 +43,4 @@ You can now call [any method](/api-reference/30%20Data%20Layer/DataSource/3%20Me
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalDataSource)
 
-[tags]dataGrid, data grid, data binding, access data source, getDataSource, reload data
+

@@ -1,3 +1,6 @@
+---
+tags: dxbox, box, layout UI component, overview, dxItem
+---
 The Box UI component allows you to arrange various elements within it. This UI component is separate and adaptive and acts as the layout's building block.
 
 #include common-demobutton with {
@@ -181,4 +184,4 @@ Note that the Box items in the code above are declared using the [dxItem](/api-r
 - [Box - Nest One Box into Another](/concepts/05%20UI%20Components/Box/15%20Nest%20One%20Box%20Into%20Another.md '/Documentation/Guide/UI_Components/Box/Nest_One_Box_into_Another/')
 - [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
-[tags]dxbox, box, layout UI component, overview, dxItem
+

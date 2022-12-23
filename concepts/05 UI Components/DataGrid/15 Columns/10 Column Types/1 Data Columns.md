@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, column types, data columns
+---
 Data columns are the most common type of columns used in the DataGrid UI component. They are generated for all [column](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array members that do not configure [band columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/#Band_Columns'). Data columns display values from a [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') to which they are bound, but you can populate them with custom values (see [Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/')).
 
 ![DevExtreme HTML5 JavaScript DataGrid DataColumns](/images/DataGrid/visual_elements/column-types_data.png)
@@ -100,4 +103,4 @@ A data column automatically detects the type of its values. However, if the valu
 - [Lookup Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/3%20Lookup%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/#Lookup_Columns')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SimpleArray)
 
-[tags] dataGrid, data grid, column types, data columns
+

@@ -1,3 +1,6 @@
+---
+tags: dxscrollview, scrollView, scroll view, overview, scrolling direction, native scrolling, simulated scrolling, scrollbar
+---
 The ScrollView is a UI component that enables a user to scroll its content.
 
 #include common-demobutton with {
@@ -270,4 +273,4 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 - [ScrollView - Scroll the Content](/concepts/05%20UI%20Components/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/UI_Components/ScrollView/Scroll_the_Content/')
 - [ScrollView API Reference](/api-reference/10%20UI%20Components/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')
 
-[tags]dxscrollview, scrollView, scroll view, overview, scrolling direction, native scrolling, simulated scrolling, scrollbar
+

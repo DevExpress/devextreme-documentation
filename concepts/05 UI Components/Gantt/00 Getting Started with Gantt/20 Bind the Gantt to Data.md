@@ -1,3 +1,6 @@
+---
+tags: data binding
+---
 The Gantt UI component requires separate data sources for [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/'), [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/'), [resource assignments](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resourceAssignments '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resourceAssignments/') and [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/'). 
 
 [note]
@@ -146,4 +149,4 @@ If your data sources' field names differ from the standard field names mentioned
         // ...
     ];
 
-[tags] data binding
+

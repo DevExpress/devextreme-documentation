@@ -1,3 +1,6 @@
+---
+tags: scheduler, data binding, provide data, json, jsonp
+---
 To bind the Scheduler to data in the JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property.  
 
 ---
@@ -169,4 +172,3 @@ If you need to process data after obtaining it, implement the [CustomStore](/api
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-[tags]scheduler, data binding, provide data, json, jsonp

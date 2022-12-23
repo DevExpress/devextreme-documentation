@@ -1,3 +1,6 @@
+---
+tags: radio group, radioGroup, button appearance, item appearance, customize, templates, template, custom template
+---
 For a minor customization of RadioGroup items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxRadioGroup/Configuration/items/') in item data objects. For example, the following code generates three radio buttons: the first is disabled, the second is not customized, the third is hidden.
 
 ---
@@ -228,4 +231,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [RadioGroup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview)
 - [RadioGroup API Reference](/api-reference/10%20UI%20Components/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
 
-[tags]radio group, radioGroup, button appearance, item appearance, customize, templates, template, custom template
+

@@ -1,1 +1,3 @@
-[tags] angular
+---
+frameworks: angular
+---

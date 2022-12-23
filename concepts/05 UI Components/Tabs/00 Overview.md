@@ -1,3 +1,6 @@
+---
+tags: dxtabs, tabs, collection container, collection UI component, navigation, overview
+---
 The Tabs is a tab strip used to switch between pages or views. This UI component is included in the [TabPanel](/Documentation/ApiReference/UI_Components/dxTabPanel/) UI component, but you can use the Tabs separately as well.
 
 #include common-demobutton with {
@@ -113,4 +116,3 @@ Note that field names in these data source items are [conventional](/api-referen
 - [Tabs - Keyboard Support](/concepts/05%20UI%20Components/Tabs/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Tabs/Keyboard_Support')
 - [Tabs API Reference](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
 
-[tags]dxtabs, tabs, collection container, collection UI component, navigation, overview

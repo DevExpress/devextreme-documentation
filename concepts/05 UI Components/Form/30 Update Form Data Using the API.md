@@ -1,3 +1,6 @@
+---
+tags: form, form data, formData, change form data, update data, update form data
+---
 If you need to update form data at runtime, redefine the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object. In this case, form item values are updated automatically and the UI component is rerendered from scratch. In the following example, the [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/') UI component changes the **formData** object.
 
     <!--JavaScript-->
@@ -187,4 +190,4 @@ With Angular, Vue or React, two-way binding to a component property is sufficien
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-[tags]form, form data, formData, change form data, update data, update form data
+

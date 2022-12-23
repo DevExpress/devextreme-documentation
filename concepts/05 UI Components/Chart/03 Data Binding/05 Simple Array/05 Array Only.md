@@ -1,3 +1,6 @@
+---
+tags: chart, data binding, provide data, array, process data, Query
+---
 To bind the Chart to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource') property. The array should contain objects.
 
 #include data-binding-examples-js-array
@@ -13,4 +16,3 @@ After that, you need to bind one or several Chart series to data. Depending on t
 - [Data Aggregation](/concepts/05%20UI%20Components/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, data binding, provide data, array, process data, Query

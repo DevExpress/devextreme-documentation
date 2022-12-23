@@ -1,3 +1,6 @@
+---
+tags: menu, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -38,4 +41,3 @@ An end user can use the following keys to interact with the UI component.
 - [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
-[tags]menu, accessibility, keyboard shortcuts

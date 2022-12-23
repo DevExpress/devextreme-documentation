@@ -1,3 +1,6 @@
+---
+tags: tabs, item appearance, customize, templates, template, custom template
+---
 For a minor customization of tabs, you can define [specific fields](/api-reference/10%20UI%20Components/dxTabs/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/') in item data objects. For example, the following code generates three tabs: the first has an icon, the second has a [badge](/api-reference/_hidden/dxTabPanelItem/badge.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge'), the third is disabled.
 
 ---
@@ -335,4 +338,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Tabs Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview)
 - [Tabs API Reference](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
 
-[tags]tabs, item appearance, customize, templates, template, custom template
+

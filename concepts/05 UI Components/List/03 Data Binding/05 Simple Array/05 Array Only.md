@@ -1,3 +1,6 @@
+---
+tags: list, data binding, provide data, array, process data, query
+---
 To bind the List to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource') property. The array may contain primitive values...
 
 ---
@@ -158,4 +161,3 @@ If objects in an array need to be processed (sorted, filtered, grouped, etc.), y
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, data binding, provide data, array, process data, query

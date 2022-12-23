@@ -1,3 +1,6 @@
+---
+tags: treelist, tree list, column types, band columns, banded layout, multi-row headers
+---
 Unlike [data columns](/concepts/05%20UI%20Components/TreeList/10%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/#Data_Columns'), band columns do not hold any data. Instead, they collect two or more data columns under one column header. 
 
 ![DevExtreme HTML5 JavaScript TreeList BandColumns MultiRowHeaders BandedLayout](/images/treelist/visual_elements/column-types_band.png)
@@ -336,4 +339,4 @@ Band columns support hierarchies of any nesting level making the following struc
     
 ---
 
-[tags] treelist, tree list, column types, band columns, banded layout, multi-row headers
+

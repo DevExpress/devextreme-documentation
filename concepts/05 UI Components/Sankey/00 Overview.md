@@ -1,3 +1,6 @@
+---
+tags: dxsankey
+---
 The Sankey is a UI component that visualizes the flow magnitude between value sets. The values are connected. A wider connection denotes a higher flow magnitude.
 
 Start configuring the Sankey by binding it to your data source. Refer to the articles in the [Data Binding](/concepts/05%20UI%20Components/Sankey/03%20Data%20Binding/05%20Simple%20Array/05%20Array%20Only.md '/Documentation/Guide/UI_Components/Sankey/Data_Binding/') section for more information.
@@ -41,4 +44,3 @@ Next, get familiar with the UI component's elements using the following element 
 #####See Also#####
 - [Sankey API Reference](/api-reference/10%20UI%20Components/dxSankey '/Documentation/ApiReference/UI_Components/dxSankey/')
 
-[tags] dxsankey

@@ -1,3 +1,6 @@
+---
+tags: list, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 To bind the List to data provided by an OData service, use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').
 
 ---
@@ -142,4 +145,3 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, data binding, provide data, odata, ODataStore, DataSource, process data

@@ -1,3 +1,6 @@
+---
+frameworks: angular
+---
 Scaffolding in Visual Studio allows you to generate a component that contains a DevExtreme UI component and a data service for the UI component. You can scaffold the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light), [TreeList](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/Angular/Light), and [Form](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/Angular/Light).
 
 Scaffolding has the following requirements:
@@ -24,4 +27,3 @@ Follow the instructions below to scaffold a component:
 
 The component and data service are created in the ClientApp\src\app\%componentname% folder, and the component is registered in the app.module.ts file.
 
-[tags] angular

@@ -1,3 +1,6 @@
+---
+tags: gallery, initial image, selected image, selectedIndex, selectedItem
+---
 By default, the image that the Gallery UI component displays initially is the first item of the data source. To specify another item to be initially displayed, assign its index in the [dataSource](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#dataSource') to the [selectedIndex](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#selectedIndex') property.
 
 ---
@@ -245,4 +248,3 @@ As an alternative, you can specify the initial image using its data source objec
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]gallery, initial image, selected image, selectedIndex, selectedItem

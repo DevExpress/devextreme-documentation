@@ -1,3 +1,6 @@
+---
+tags: multi view, multiView, views, switch, swipe, animate
+---
 By default, an end user can switch between views by swiping. Assign **false** to the [swipeEnabled](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/swipeEnabled.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#swipeEnabled') property to disable this feature.
 
 ---
@@ -302,4 +305,4 @@ By default, the MultiView UI component animates switching between views. You can
 - [MultiView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview)
 - [MultiView API Reference](/api-reference/10%20UI%20Components/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/')
 
-[tags]multi view, multiView, views, switch, swipe, animate
+

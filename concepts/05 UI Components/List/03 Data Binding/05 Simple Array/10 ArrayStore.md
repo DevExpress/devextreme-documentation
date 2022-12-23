@@ -1,3 +1,6 @@
+---
+tags: list, data binding, provide data, ArrayStore, DataSource, process data
+---
 If you want to extend the functionality of a JavaScript array, place it into an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data, and allows you to handle data-related events.
 
 ---
@@ -122,4 +125,3 @@ Data kept in an **ArrayStore** can be processed in the [DataSource](/api-referen
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, data binding, provide data, ArrayStore, DataSource, process data

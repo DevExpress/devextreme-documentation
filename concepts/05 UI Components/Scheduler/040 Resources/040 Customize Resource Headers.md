@@ -1,3 +1,6 @@
+---
+tags: scheduler, tooltip appearance, customize, templates
+---
 For AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define custom templates for resource headers.
 
 ---
@@ -365,4 +368,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Scheduler - Customize Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-[tags]scheduler, tooltip appearance, customize, templates
+

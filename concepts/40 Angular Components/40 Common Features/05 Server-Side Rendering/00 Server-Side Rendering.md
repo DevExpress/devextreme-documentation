@@ -1,3 +1,6 @@
+---
+frameworks: angular
+---
 <a href="https://angular.io/guide/universal#angular-universal-server-side-rendering" target="_blank">Server-side rendering</a> (SSR) generates static pages on the server to reduce the application's loading time.
 
 SSR is used only in Angular Universal applications, but for DevExtreme components, there is no difference between Angular Universal and normal Angular applications.
@@ -14,4 +17,3 @@ You can get an Angular Universal application in two ways:
 
 <a href="https://github.com/DevExpress/devextreme-examples/tree/20_2/universal-angular#universal-angular" target="_blank">This example</a> demonstrates DevExtreme components used in an Angular Universal application with server-side rendering.
 
-[tags] angular

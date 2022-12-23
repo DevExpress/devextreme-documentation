@@ -1,3 +1,6 @@
+---
+tags: selectBox, select box, editor, item appearance, customize, templates, template, field template
+---
 For a minor customization of SelectBox items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in their data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
@@ -538,4 +541,4 @@ In addition, you can use a 3rd-party template engine to perform the needed custo
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 
-[tags]selectBox, select box, editor, item appearance, customize, templates, template, field template
+

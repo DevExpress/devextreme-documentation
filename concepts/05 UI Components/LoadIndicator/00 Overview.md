@@ -1,3 +1,6 @@
+---
+tags: dxloadindicator, loadIndicator, load indicator, loading indicator, overview, overlay
+---
 The LoadIndicator is a UI element notifying the viewer that a process is in progress.
 
 #include common-demobutton with {
@@ -204,4 +207,3 @@ If you need to use a custom image in the LoadIndicator, assign its URL to the [i
 - [LoadIndicator API Reference](/api-reference/10%20UI%20Components/dxLoadIndicator '/Documentation/ApiReference/UI_Components/dxLoadIndicator/')
 - [LoadPanel - Overview](/concepts/05%20UI%20Components/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/')
 
-[tags]dxloadindicator, loadIndicator, load indicator, loading indicator, overview, overlay

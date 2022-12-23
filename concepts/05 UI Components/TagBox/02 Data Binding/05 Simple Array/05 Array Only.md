@@ -1,3 +1,6 @@
+---
+tags: TagBox, data binding, provide data, array, process data, query
+---
 Bind the TagBox to an array by passing it to the [dataSource](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource') property. The array may contain primitive values...
 
 ---
@@ -332,4 +335,3 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 - [Access the DataSource](/concepts/05%20UI%20Components/TagBox/02%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/TagBox/Data_Binding/Access_the_DataSource/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/Overview)
 
-[tags]TagBox, data binding, provide data, array, process data, query

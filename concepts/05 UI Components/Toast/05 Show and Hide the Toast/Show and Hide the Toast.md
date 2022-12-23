@@ -1,1 +1,3 @@
-[tags]toast, overlay, show, hide, open, close, showing, shown, hiding, hidden
+---
+tags: toast, overlay, show, hide, open, close, showing, shown, hiding, hidden
+---

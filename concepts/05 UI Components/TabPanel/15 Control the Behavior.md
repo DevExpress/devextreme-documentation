@@ -1,3 +1,6 @@
+---
+tags: tab panel, tabPanel, switch views, animate switching, swipe
+---
 An end user can switch the views by swiping them or selecting tabs. Note that tab navigation is always enabled, while swiping is active only on touch devices by default. To enable it on all types of devices, assign **true** to the [swipeEnabled](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/swipeEnabled.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#swipeEnabled') property. Otherwise, assign **false**.
 
 ---
@@ -356,4 +359,4 @@ To specify whether or not to animate switching between views, use the [animation
 - [TabPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview)
 - [TabPanel API Reference](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/')
 
-[tags]tab panel, tabPanel, switch views, animate switching, swipe
+

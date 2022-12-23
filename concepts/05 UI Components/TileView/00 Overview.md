@@ -1,3 +1,6 @@
+---
+tags: dxtileview, tile view, tileView, collection container, collection UI component, navigation, overview
+---
 The TileView UI component contains a collection of tiles. Tiles can store much more information than ordinary buttons, that is why they are very popular in apps designed for touch devices.
 
 #include common-demobutton with {
@@ -188,4 +191,3 @@ By default, the UI component is oriented horizontally, but you can orient it ver
 - [TileView - Customize Tile Appearance](/concepts/05%20UI%20Components/TileView/05%20Customize%20Tile%20Appearance.md '/Documentation/Guide/UI_Components/TileView/Customize_Tile_Appearance')
 - [TileView API Reference](/api-reference/10%20UI%20Components/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
-[tags]dxtileview, tile view, tileView, collection container, collection UI component, navigation, overview

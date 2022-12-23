@@ -1,3 +1,6 @@
+---
+tags: context menu, contextMenu, item appearance, customize, templates
+---
 For a minor customization of ContextMenu items, you can define [specific fields](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') in item data objects. For example, the following code generates three context menu items. Between the first and the second items lies a separator dividing one group of items from another. All the items are supplied with [icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
 
 ---
@@ -275,4 +278,3 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 #####See Also#####
 - [ContextMenu API Reference](/api-reference/10%20UI%20Components/dxContextMenu '/Documentation/ApiReference/UI_Components/dxContextMenu/')
 
-[tags]context menu, contextMenu, item appearance, customize, templates

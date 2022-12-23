@@ -1,3 +1,6 @@
+---
+tags: scheduler, tooltip appearance, customize, templates
+---
 When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for tooltips.
 
 ---
@@ -222,4 +225,4 @@ In addition, you can use a 3rd-party template engine to customize the UI compone
 - [Scheduler - Customize Appointment Details Form](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Customize%20Appointment%20Details%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Details_Form/')
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-[tags]scheduler, tooltip appearance, customize, templates
+

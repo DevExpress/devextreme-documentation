@@ -1,3 +1,6 @@
+---
+tags: chart, legend, overview
+---
 The legend is a chart component that helps a user identify series. It contains several colored items, one per series. 
 
 ![DevExtreme HTML5 JavaScript Charts Legend](/images/ChartJS/visual_elements/legend.png)
@@ -87,4 +90,3 @@ To configure the appearance, location, and content of the legend, use properties
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, legend, overview

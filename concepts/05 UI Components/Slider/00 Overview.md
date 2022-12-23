@@ -1,3 +1,6 @@
+---
+tags: dxslider, slider, editor, overview, min, max, step
+---
 The Slider is a UI component that allows an end user to set a numeric value on a continuous range of possible values.
 
 #include common-demobutton with {
@@ -238,4 +241,3 @@ In addition, you can specify the step of Slider values using the [step](/api-ref
 - [Slider API Reference](/api-reference/10%20UI%20Components/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
 - [RangeSlider - Overview](/concepts/05%20UI%20Components/RangeSlider/00%20Overview.md '/Documentation/Guide/UI_Components/RangeSlider/Overview/')
 
-[tags]dxslider, slider, editor, overview, min, max, step

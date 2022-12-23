@@ -1,3 +1,6 @@
+---
+tags: treeList, data binding, json, jsonp, callback parameter
+---
 To bind the TreeList to data in the JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource') property.  
 
 ---
@@ -145,4 +148,4 @@ The **CustomStore** requires requires thorough configuration if data is processe
 - [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview)
 - [TreeList API Reference](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')
 
-[tags]treeList, data binding, json, jsonp, callback parameter
+

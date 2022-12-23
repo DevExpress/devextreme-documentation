@@ -1,3 +1,6 @@
+---
+tags: textBox, text box, editor, keyboard events, keyup, keydown, keypress, enterkey
+---
 The TextBox raises four keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyDown'), [keyPress](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyPress.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyPress'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextBox/Events/#enterKey'). Within the functions that handle them, you can access the original keyboard events. If you are _not_ going to change the functions during the lifetime of the UI component, assign them to the respective UI component properties.
 
 ---
@@ -168,4 +171,4 @@ If you are going to change the handling functions at runtime, or if you need to 
 - [TextBox - Handle the Value Change Event](/concepts/05%20UI%20Components/TextBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TextBox/Handle_the_Value_Change_Event/')
 - [TextBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview)
 
-[tags]textBox, text box, editor, keyboard events, keyup, keydown, keypress, enterkey
+

@@ -1,3 +1,6 @@
+---
+tags: chart, series, get series, getAllSeries, get series by name, getSeriesByName, get series by index, getSeriesByPos
+---
 The Chart exposes the following methods for accessing a series. All of them return one or several objects whose fields and methods are described in the [Series](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Series/') section of the API reference.
 
 - [getAllSeries()](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getAllSeries().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#getAllSeries')        
@@ -337,4 +340,3 @@ Once you get the series, you can access its child points. For further informatio
 - [Show and Hide a Series](/concepts/05%20UI%20Components/Chart/10%20Series/50%20Show%20and%20Hide%20a%20Series.md '/Documentation/Guide/UI_Components/Chart/Series/Show_and_Hide_a_Series/')
 #include common-link-callmethods
 
-[tags]chart, series, get series, getAllSeries, get series by name, getSeriesByName, get series by index, getSeriesByPos

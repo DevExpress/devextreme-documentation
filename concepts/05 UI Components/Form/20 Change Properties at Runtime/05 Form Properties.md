@@ -1,3 +1,6 @@
+---
+tags: form, UI component properties, change property
+---
 To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') at runtime, call the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue') method. This approach is more typical of jQuery.
 
     <!--JavaScript-->
@@ -154,4 +157,4 @@ With Angular, Vue, or React, bind the property that should be changed to a compo
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-[tags]form, UI component properties, change property
+

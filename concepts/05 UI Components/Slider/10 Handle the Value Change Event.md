@@ -1,3 +1,6 @@
+---
+tags: slider, editor, get value, set value
+---
 To process a new Slider value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Components/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSlider/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
@@ -142,4 +145,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [Slider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview)
 - [Slider API Reference](/api-reference/10%20UI%20Components/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
 
-[tags]slider, editor, get value, set value

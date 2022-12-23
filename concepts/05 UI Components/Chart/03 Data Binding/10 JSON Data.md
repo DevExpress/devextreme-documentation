@@ -1,3 +1,6 @@
+---
+tags: chart, data binding, provide data, json, jsonp
+---
 To bind the Chart to data in a JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource') property.  
 
 #include data-binding-examples-json
@@ -18,4 +21,4 @@ If you need to process data after obtaining it, implement the [CustomStore](/api
 - [Data Aggregation](/concepts/05%20UI%20Components/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, data binding, provide data, json, jsonp
+

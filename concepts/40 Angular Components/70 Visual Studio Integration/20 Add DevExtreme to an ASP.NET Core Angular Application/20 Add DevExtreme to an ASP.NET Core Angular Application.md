@@ -1,3 +1,6 @@
+---
+frameworks: angular
+---
 This article describes how to create an ASP.NET Core Angular application and add a DevExtreme UI component to it. You need Visual Studio 2017 v15.7 or later and .NET Core 2.1 SDK to do this.
 
 [note] Earlier Visual Studio and .NET Core SDK versions are supported by DevExtreme v17.2. You can find instructions in [this article](/Documentation/17_2/Guide/VS_Integration/Add_DevExtreme_to_an_ASP.NET_Core_Angular_Application/).
@@ -90,4 +93,3 @@ Run the application and navigate to the Fetch data page. You should see a DataGr
 
 #include ng-demos-and-code-examples
 
-[tags] angular

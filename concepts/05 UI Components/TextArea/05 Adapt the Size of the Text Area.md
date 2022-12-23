@@ -1,3 +1,6 @@
+---
+tags: textArea, text area, editor, size, height, width, adaptive, minimum height, maximum height, autoResizeEnabled
+---
 If the size of the UI component should be fixed, specify it using the [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#height') and [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#width') properties.
 
 ---
@@ -165,4 +168,3 @@ Alternatively, the UI component's height can adapt to the UI component's content
 - [TextArea Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview)
 - [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
 
-[tags]textArea, text area, editor, size, height, width, adaptive, minimum height, maximum height, autoResizeEnabled

@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the DataGrid to data an OData service supplies. It provides an interface for loading and editing data and allows you to handle data-related events.
 
 ---
@@ -114,4 +117,4 @@ We recommend using a [Custom Source](/concepts/70%20Data%20Binding/00%20Specify%
 - [Data Layer - What Are Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores')
 - [Data Layer - Data Source Examples | OData](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData')
 
-[tags]dataGrid, data grid, data binding, provide data, odata, ODataStore, DataSource, process data
+

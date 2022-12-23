@@ -1,3 +1,6 @@
+---
+tags: scheduler, view, type, month, day, timeline views, timelineWeek, timelineWorkWeek, timelineMonth, workWeek, week, agenda, collapsed appointments, current view
+---
 The Scheduler UI component provides several types of views. This topic describes visual elements and their position for each view.
 
 A user switches between views with the [View Switcher](/concepts/05%20UI%20Components/Scheduler/070%20View%20Switcher.md '/Documentation/Guide/UI_Components/Scheduler/View_Switcher/'). To specify which views are available in it, assign an array to the [views](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#views') property. To define what view is displayed after the first launch, set the [currentView](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentView.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView') property.
@@ -90,4 +93,4 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/BasicViews/"
 }
 
-[tags]scheduler, view, type, month, day, timeline views, timelineWeek, timelineWorkWeek, timelineMonth, workWeek, week, agenda, collapsed appointments, current view
+

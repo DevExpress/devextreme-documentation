@@ -1,3 +1,6 @@
+---
+tags: select box, selectBox, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -40,4 +43,3 @@ An end user can use the following keys to interact with the UI component.
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 
-[tags]select box, selectBox, navigation, accessibility, keyboard shortcuts

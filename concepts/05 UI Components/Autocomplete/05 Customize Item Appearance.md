@@ -1,3 +1,6 @@
+---
+tags: autocomplete, item appearance, customize, templates, template
+---
 For a minor customization of Autocomplete items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
@@ -261,4 +264,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Autocomplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview)
 - [Autocomplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 
-[tags]autocomplete, item appearance, customize, templates, template
+

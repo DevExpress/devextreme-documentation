@@ -1,3 +1,6 @@
+---
+tags: scheduler, appointment, resource, resource kind, resource structure, assign resource, fieldExpr
+---
 The Scheduler UI component allows you to assign appointments to a set of predefined resources. Consider the following example: in an educational center lectures are held in two rooms. In scheduling terms, a lecture is an appointment, a room is a resource instance, and all rooms are considered the resource kind.
 
 To define resource kinds, assign an array of objects specifying them to the [resources](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/') property. Each object must have at least the following fields.
@@ -276,4 +279,4 @@ Note that every resource instance should have a special structure that includes 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/"
 }
 
-[tags]scheduler, appointment, resource, resource kind, resource structure, assign resource, fieldExpr
+

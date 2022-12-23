@@ -1,3 +1,6 @@
+---
+tags: treeList, hierarchical data, tree-like data, tree data structure, dataStructure, children, itemsExpr
+---
 If you use hierarchical data, set the [dataStructure](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure') property to *'tree'*. For an example of hierarchical data, see the following code.
 
 ---
@@ -148,4 +151,4 @@ When you load data from a remote source, and your data objects have a field that
 - [TreeList - Use Plain Data](/concepts/05%20UI%20Components/TreeList/05%20Data%20Binding/010%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Plain_Data/')
 - [TreeList API Reference](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')
 
-[tags]treeList, hierarchical data, tree-like data, tree data structure, dataStructure, children, itemsExpr
+

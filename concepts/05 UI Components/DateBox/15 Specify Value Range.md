@@ -1,3 +1,6 @@
+---
+tags: date box, dateBox, editor, range, min, max, out of range error message
+---
 To specify the date or time range, use the [min](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#max') properties.
 
 ---
@@ -187,4 +190,4 @@ If an entered value falls out of the range, the UI component displays an error m
 - [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
 - [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
 
-[tags]date box, dateBox, editor, range, min, max, out of range error message
+

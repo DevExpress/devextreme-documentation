@@ -1,3 +1,6 @@
+---
+tags: treeList, data binding, access data source, getDataSource, reload data
+---
 Regardless of the data source you use, the TreeList always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). To get a **DataSource** instance, call the [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getDataSource') method.
 
 ---
@@ -41,4 +44,4 @@ You can now call [any method](/api-reference/30%20Data%20Layer/DataSource/3%20Me
 - [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview)
 - [TreeList API Reference](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')
 
-[tags]treeList, data binding, access data source, getDataSource, reload data
+

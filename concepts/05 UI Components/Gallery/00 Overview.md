@@ -1,3 +1,6 @@
+---
+tags: dxgallery, gallery, overview
+---
 The Gallery is a UI component that displays a collection of images in a carousel. The UI component is supplied with various navigation controls that allow a user to switch between images.
 
 #include common-demobutton with {
@@ -124,4 +127,3 @@ The following code adds the Gallery UI component to your page. The simplest conf
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]dxgallery, gallery, overview

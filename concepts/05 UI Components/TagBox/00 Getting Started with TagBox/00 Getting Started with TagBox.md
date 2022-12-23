@@ -1,3 +1,6 @@
+---
+tags: dxtagbox
+---
 #include tutorials-intro-installationnote
 
 The TagBox is an editor that allows users to select multiple items from a drop-down list.
@@ -8,4 +11,4 @@ This tutorial explains how to add a TagBox to a page, populate the drop-down lis
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-tagbox" target="_blank">getting-started-with-tagbox</a>.
 
-[tags] dxtagbox
+

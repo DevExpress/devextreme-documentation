@@ -1,3 +1,6 @@
+---
+tags: tagBox, tag box, editor, get value, set value, change value, valueChanged
+---
 To process new TagBox values, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
@@ -130,4 +133,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
-[tags]tagBox, tag box, editor, get value, set value, change value, valueChanged

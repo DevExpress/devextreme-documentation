@@ -1,3 +1,6 @@
+---
+tags: tabs, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -38,4 +41,3 @@ An end user can use the following keys to interact with the UI component.
 - [Tabs Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview)
 - [Tabs API Reference](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
 
-[tags]tabs, navigation, accessibility, keyboard shortcuts

@@ -1,1 +1,4 @@
-[tags]form, label, label location, label position, align, align groups
+---
+tags: form, label, label location, label position, align, align groups
+---
+

@@ -1,3 +1,6 @@
+---
+tags: popup, title, show title, title template, close button
+---
 By default, the Popup allocates a part of its area to the title, regardless of whether you specified the title text or did not. To hide the title, set the [showTitle](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle') property to **false**. Besides the text, the title area also contains a button that closes the Popup. To hide this button alone, assign **false** to the [showCloseButton](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/showCloseButton.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showCloseButton') property. 
 
 ---
@@ -243,4 +246,3 @@ You can switch title templates on the fly just as you can do with content templa
 - [Popup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview)
 - [Popup API Reference](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
 
-[tags]popup, title, show title, title template, close button

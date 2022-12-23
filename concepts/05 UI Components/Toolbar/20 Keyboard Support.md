@@ -1,3 +1,6 @@
+---
+tags: toolbar, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -20,4 +23,3 @@ An end user can use the following keys to interact with the UI component.
 - [Toolbar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview)
 - [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
-[tags]toolbar, navigation, accessibility, keyboard shortcuts

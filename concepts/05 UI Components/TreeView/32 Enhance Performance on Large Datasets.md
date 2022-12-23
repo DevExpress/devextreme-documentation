@@ -1,3 +1,6 @@
+---
+tags: treeview, tree view, enhance performance, big data, large data, virtual mode, virtualModeEnabled, createChildren
+---
 If the TreeView performance is low, consider enabling the Virtual Mode. In this mode, the TreeView loads a set of child nodes once their parent node is expanded. The Virtual Mode can be enabled only if your data source satisfies the following conditions.
 
 - It has a [plain structure](/concepts/05%20UI%20Components/TreeView/07%20Use%20Plain%20Data.md '/Documentation/Guide/UI_Components/TreeView/Use_Plain_Data').
@@ -261,4 +264,4 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
 - [TreeView - Expand and Collapse Nodes](/concepts/05%20UI%20Components/TreeView/20%20Expand%20and%20Collapse%20Nodes '/Documentation/Guide/UI_Components/TreeView/Expand_and_Collapse_Nodes')
 - [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
-[tags]treeview, tree view, enhance performance, big data, large data, virtual mode, virtualModeEnabled, createChildren
+

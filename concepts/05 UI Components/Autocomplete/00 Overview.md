@@ -1,3 +1,6 @@
+---
+tags: dxautocomplete, autocomplete, collection container, collection UI component, editor, overview, data source
+---
 The Autocomplete UI component is a textbox that provides suggestions while a user types into it.
 
 #include common-demobutton with {
@@ -339,4 +342,3 @@ Usually, the data field that provides suggestions is the same data field that is
 - [Autocomplete - Configure Search Parameters](/concepts/05%20UI%20Components/Autocomplete/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Autocomplete/Configure_Search_Parameters')
 - [Autocomplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 
-[tags]dxautocomplete, autocomplete, collection container, collection UI component, editor, overview, data source

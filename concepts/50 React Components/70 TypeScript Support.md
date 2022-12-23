@@ -1,3 +1,6 @@
+---
+frameworks: react
+---
 DevExtreme React components are supplied with TypeScript declarations. Strict typing allows you to catch bugs at earlier stages and use features like code completion and automated refactoring.
 
 The following code shows an example of using TypeScript with DevExtreme components:
@@ -57,4 +60,3 @@ The following code shows an example of using TypeScript with DevExtreme componen
 
     export default App;
 
-[tags] react

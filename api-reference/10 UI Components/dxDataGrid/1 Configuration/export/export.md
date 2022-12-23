@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.export
 type: Object
+tags: xlsx, csv
 ---
 ---
 ##### shortDescription
@@ -395,4 +396,3 @@ The following restrictions apply when users export DataGrid:
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/"
 }
 
-[tags] xlsx, csv

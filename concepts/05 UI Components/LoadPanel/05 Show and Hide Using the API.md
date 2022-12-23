@@ -1,3 +1,6 @@
+---
+tags: loadPanel, load panel, overlay, show, hide, open, close, showing, shown, hiding, hidden
+---
 [note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the LoadPanel. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
 To show or hide the LoadPanel programmatically, call the [show()](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the LoadPanel, respectively.
@@ -364,4 +367,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
-[tags]loadPanel, load panel, overlay, show, hide, open, close, showing, shown, hiding, hidden

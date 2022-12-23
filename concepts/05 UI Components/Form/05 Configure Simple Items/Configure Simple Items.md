@@ -1,1 +1,3 @@
-[tags]form, simple item, editor type, editor configuration, required, help text, customize item, item template
+---
+tags: form, simple item, editor type, editor configuration, required, help text, customize item, item template
+---

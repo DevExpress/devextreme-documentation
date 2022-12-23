@@ -1,1 +1,3 @@
-[tags]scheduler, appointment type, all-day, recurring, one-time, object structure
+---
+tags: scheduler, appointment type, all-day, recurring, one-time, object structure
+---

@@ -1,3 +1,6 @@
+---
+tags: dxradiogroup, radio group, radioGroup, layout, editor, overview
+---
 The RadioGroup is a UI component that contains a set of radio buttons and allows an end user to make a single selection from the set.
 
 #include common-demobutton with {
@@ -314,4 +317,3 @@ The RadioGroup UI component supports horizontal (default for tablets) and vertic
 - [RadioGroup - Keyboard Support](/concepts/05%20UI%20Components/RadioGroup/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/RadioGroup/Keyboard_Support')
 - [RadioGroup API Reference](/api-reference/10%20UI%20Components/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
 
-[tags]dxradiogroup, radio group, radioGroup, layout, editor, overview

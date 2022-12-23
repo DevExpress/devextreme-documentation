@@ -1,3 +1,6 @@
+---
+tags: list, data binding, provide data, json, jsonp
+---
 To bind the List to data in a JSON format, assign the data's URL to the [dataSource](/api-reference/10%20UI%20Components/dxList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#dataSource') property.  
     
 ---
@@ -88,4 +91,3 @@ If you need to process data after obtaining it, implement the [CustomStore](/api
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, data binding, provide data, json, jsonp

@@ -1,3 +1,6 @@
+---
+tags: chart, legend, position, horizontal alignment, horizontalAlignment, vertical alignment, verticalAlignment, move the legend
+---
 The legend can be moved inside the chart using the [position](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/legend/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#position') property, and also aligned in the horizontal or vertical direction using the [horizontalAlignment](/api-reference/10%20UI%20Components/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#horizontalAlignment') or [verticalAlignment](/api-reference/10%20UI%20Components/BaseLegend/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#verticalAlignment') property.
 
 ---
@@ -99,4 +102,4 @@ Below, you can try out these properties in action.
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, legend, position, horizontal alignment, horizontalAlignment, vertical alignment, verticalAlignment, move the legend
+

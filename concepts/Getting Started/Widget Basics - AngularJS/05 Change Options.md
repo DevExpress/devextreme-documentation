@@ -1,3 +1,6 @@
+---
+tags: basics, angularjs, change properties, get, set, runtime, binding properties, deep tracking, watch, watchCollection, two-way binding
+---
 All operations with UI component properties are carried out through the scope properties these properties are bound to. To bind a UI component property to a scope property, use the **bindingOptions** object as shown in the following code. Note that the scope property name in this object is enclosed in quotes.
 
     <!--HTML--><div ng-controller="Controller">
@@ -51,4 +54,3 @@ The code above forces the UI component to use the <a href="https://docs.angularj
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
 - [Create and Configure a Widget](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/01%20Create%20and%20Configure%20a%20Widget.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Create_and_Configure_a_Widget')
 
-[tags]basics, angularjs, change properties, get, set, runtime, binding properties, deep tracking, watch, watchCollection, two-way binding

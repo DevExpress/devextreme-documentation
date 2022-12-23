@@ -1,3 +1,6 @@
+---
+tags: dxdropdownbutton
+---
 #include tutorials-intro-installationnote
 
 The DropDownButton combines the functionality of a button and a drop-down menu. You can replace the menu with a custom drop-down control. 
@@ -8,4 +11,3 @@ This tutorial describes how to configure a DropDownButton that logs user clicks 
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-dropdownbutton" target="_blank">getting-started-with-dropdownbutton</a>.
 
-[tags] dxdropdownbutton

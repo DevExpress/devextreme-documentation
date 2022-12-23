@@ -1,3 +1,6 @@
+---
+tags: dxprogressbar, progress bar, progressBar, editor, overview, range, min, max, complete
+---
 The ProgressBar is a UI component that shows current progress.
 
 #include common-demobutton with {
@@ -209,4 +212,3 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
 - [ProgressBar - Handle the Value Change Event](/concepts/05%20UI%20Components/ProgressBar/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/ProgressBar/Handle_the_Value_Change_Event')
 - [ProgressBar API Reference](/api-reference/10%20UI%20Components/dxProgressBar '/Documentation/ApiReference/UI_Components/dxProgressBar/')
 
-[tags]dxprogressbar, progress bar, progressBar, editor, overview, range, min, max, complete

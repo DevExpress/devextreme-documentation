@@ -1,3 +1,7 @@
+---
+frameworks: jquery
+tags: basics, create, configure, initialize, design time
+---
 Any DevExtreme UI component must be placed in a container. This role is played by a `<div>` HTML element. Add a `<div>` to the `<body>` tag of your page. Make sure that this `<div>` has the `id` attribute specified.
 
     <!--HTML--><div id="buttonContainer"></div>
@@ -22,4 +26,4 @@ To configure a UI component, pass an object to the plugin as shown in the follow
 #####See Also#####
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').[Configuration](/api-reference/10%20UI%20Components/dxButton/1%20Configuration '/Documentation/ApiReference/UI_Components/dxButton/Configuration/')
 
-[tags] basics, jquery, create, configure, initialize, design time
+

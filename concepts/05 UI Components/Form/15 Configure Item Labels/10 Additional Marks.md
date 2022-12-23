@@ -1,3 +1,6 @@
+---
+tags: form, required, optional, mark, colon
+---
 [Simple items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/') may require a value or may allow a user to skip it. Both types of items can be marked with a symbol or text. Required items are those whose [isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') property is **true**, others are considered optional.
 
 To specify the mark or text for required and optional items, use the [requiredMark](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/requiredMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#requiredMark') and [optionalMark](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/optionalMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#optionalMark') properties. Note that the "optional" mark will not be displayed until you set the [showOptionalMark](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/showOptionalMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showOptionalMark') property to **true**. You can also hide the "required" mark using the [showRequiredMark](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/showRequiredMark.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showRequiredMark') property.
@@ -262,4 +265,4 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-[tags]form, required, optional, mark, colon
+

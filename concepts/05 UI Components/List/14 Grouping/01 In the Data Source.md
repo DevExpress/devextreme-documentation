@@ -1,3 +1,6 @@
+---
+tags: list, grouped, key, items, group items, map items
+---
 Items in the List are grouped if they are grouped in the data source. The List recognizes a group when it encounters an object with the **key** and **items** fields. The **key** is the group header, the **items** are items that fell into the group. For example, the `fruitsVegetables` array from the following code produces two groups with three items each. Note that the List needs to be informed that it deals with grouped data, therefore its [grouped](/api-reference/10%20UI%20Components/dxList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#grouped') property is set to **true**.
 
 ---
@@ -525,4 +528,3 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 - [List - Data Binding | Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, grouped, key, items, group items, map items

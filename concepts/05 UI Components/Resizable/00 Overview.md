@@ -1,3 +1,6 @@
+---
+tags: dxresizable, resizable, overview, resize a UI component, resize
+---
 The Resizable UI component enables its content to be resizable in the UI.
 
 The following code adds a resizable image to your page. Note that the image occupies 100% of the Resizable UI component.
@@ -75,4 +78,3 @@ In addition to the **resizeEnd** event, the Resizable UI component fires the [re
 #include common-link-configurewidget
 - [Resizable API Reference](/api-reference/10%20UI%20Components/dxResizable '/Documentation/ApiReference/UI_Components/dxResizable/')
 
-[tags]dxresizable, resizable, overview, resize a UI component, resize

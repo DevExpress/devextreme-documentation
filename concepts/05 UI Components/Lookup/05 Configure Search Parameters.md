@@ -1,3 +1,6 @@
+---
+tags: lookup, search, search mode, time interval, min search length, disable searching, placeholder, clean search parameters, searchExpr
+---
 [note] Searching works when inputting a plain data structure only. However, if you need the searching capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
 The Lookup UI component allows a user to search through its items. Moreover, the UI component offers suggestions while the user types a value into the search box. Usually, the data field that provides suggestions is the same data field that is searched for the typed value. If there are two different fields, assign the field providing suggestions to the **valueExpr** property and the field to be searched to the **searchExpr** property. Assign an array of field names to the **searchExpr** property if you need to search several fields.
@@ -544,4 +547,4 @@ Assign **false** to the [searchEnabled](/api-reference/10%20UI%20Components/dxLo
 - [Lookup - Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
 - [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
 
-[tags]lookup, search, search mode, time interval, min search length, disable searching, placeholder, clean search parameters, searchExpr
+

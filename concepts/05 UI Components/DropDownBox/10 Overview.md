@@ -1,3 +1,6 @@
+---
+tags: dxdropdownbox
+---
 The DropDownBox is a UI component that consists of a text field, which displays the current value, and a drop-down field, which can contain any UI element.
 
 #include common-demobutton with {
@@ -466,4 +469,3 @@ If your data is an array of objects, specify:
 #####See Also#####
 - [DropDownBox - Customize the Appearance](/concepts/05%20UI%20Components/DropDownBox/20%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/DropDownBox/Customize_the_Appearance/')
 
-[tags]dxdropdownbox

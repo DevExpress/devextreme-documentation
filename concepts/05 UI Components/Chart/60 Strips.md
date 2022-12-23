@@ -1,3 +1,6 @@
+---
+tags: chart, strips
+---
 A strip is a colored piece of the chart's background that highlights a range of values. Strips allow a viewer to see whether a certain series point falls in or out of a range.
 
 ![DevExtreme HTML5 JavaScript Charts Strips](/images/ChartJS/visual_elements/strips.png)
@@ -301,4 +304,4 @@ For information about all properties of the strips, visit the [strips](/api-refe
 #####See Also#####
 - [Constant Lines](/concepts/05%20UI%20Components/Chart/65%20Constant%20Lines.md '/Documentation/Guide/UI_Components/Chart/Constant_Lines/')
 
-[tags]chart, strips
+

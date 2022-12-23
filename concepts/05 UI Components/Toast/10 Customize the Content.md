@@ -1,3 +1,6 @@
+---
+tags: toast, overlay, template, customize the content, content template
+---
 The Toast UI component provides four predefined appearances controlled by the [type](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#type') property. The **type** can be *"info"*, *"warning"*, *"error"* or *"success"*, depending on the mood of the message that the Toast displays. You can specify this message using the [message](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#message') property.
 
 ---
@@ -368,4 +371,3 @@ If you need to render different templates depending on a specific condition, def
 - [Toast Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Overview)
 - [Toast API Reference](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')
 
-[tags]toast, overlay, template, customize the content, content template

@@ -1,3 +1,6 @@
+---
+tags: list, context menu, menuItems, context menu mode, menuMode
+---
 If you want to offer the user a set of commands related to a List item, you can do so with the context menu. To specify the commands, use the [menuItems](/api-reference/10%20UI%20Components/dxList/1%20Configuration/menuItems '/Documentation/ApiReference/UI_Components/dxList/Configuration/menuItems/') array. Each object in this array configures a single command.
 
 ---
@@ -281,4 +284,3 @@ The user swipes an item to access the commands. If the **menuItems** array conta
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, context menu, menuItems, context menu mode, menuMode

@@ -1,3 +1,6 @@
+---
+tags: chart, line, bar, area, financial series, range, bubble, argumentField, valueField, series template
+---
 This article describes two ways of binding series to data. To decide which way to use, check whether or not [names](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#name') for series are provided by a data source field. If so, you need to [use a series template](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data/10%20Using%20a%20Series%20Template.md '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Using_a_Series_Template'). Otherwise, you can bind series to data [directly](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data/05%20Directly.md '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Directly'). For example, assume that you have the following data source.
 
     <!--JavaScript-->var fruitProduction = [
@@ -18,4 +21,4 @@ Depending on the configuration, this data source can produce either two series, 
 
 In this case, you can have up to three series bound to the `year2014`, `year2015` and `year2016` fields respectively, but note that there is no data field that provides names for them. Instead, you need to specify the names using the [name](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/name.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#name') property. This is the case when you can bind series to data directly.
 
-[tags]chart, line, bar, area, financial series, range, bubble, argumentField, valueField, series template
+

@@ -1,3 +1,6 @@
+---
+tags: chart, rotate, invert, mirror
+---
 When the Chart is rotated, its axes are swapped around.
 
 <img src="/images/ChartJS/visual_elements/axis_standard.png" alt="DevExtreme HTML5 JavaScript Charts" style="display:inline-block" />
@@ -188,4 +191,4 @@ To invert both argument and value axes, assign **true** to the [inverted](/api-r
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AjaxRequest)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, rotate, invert, mirror
+

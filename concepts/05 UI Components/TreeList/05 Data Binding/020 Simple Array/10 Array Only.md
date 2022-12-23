@@ -1,3 +1,6 @@
+---
+tags: treeList, data binding, provide data, array, process data, query
+---
 To bind the TreeList to an array, pass this array to the [dataSource](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataSource') property.
 
 ---
@@ -100,4 +103,3 @@ If objects in the array need to be processed (sorted or filtered), you can creat
 - [Data Layer - Query Concept](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Query%20Concept.md '/Documentation/Guide/Data_Binding/Data_Layer/#Query_Concept')
 - [TreeList | Data Binding - ArrayStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
 
-[tags]treeList, data binding, provide data, array, process data, query

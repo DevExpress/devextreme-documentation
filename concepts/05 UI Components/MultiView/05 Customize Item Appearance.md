@@ -1,3 +1,6 @@
+---
+tags: multi view, multiView, item appearance, customize, templates, template, custom template
+---
 To customize views in the MultiView, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component.
 
 ---
@@ -287,4 +290,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [MultiView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview)
 - [MultiView API Reference](/api-reference/10%20UI%20Components/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/')
 
-[tags]multi view, multiView, item appearance, customize, templates, template, custom template
+

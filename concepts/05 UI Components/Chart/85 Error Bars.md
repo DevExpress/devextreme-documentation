@@ -1,3 +1,6 @@
+---
+tags: chart, error bar, valueErrorBar, highValueField, lowValueField
+---
 Error bars are used on charts to indicate an error or uncertainty in a reported measurement. They give a general idea of how precise the measurement is.
 
 ![DevExtreme HTML5 JavaScript Charts Error Bars](/images/ChartJS/visual_elements/error_bars.png)
@@ -354,4 +357,4 @@ For information about all properties of the error bars, visit the [valueErrorBar
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ErrorBars/"
 }
 
-[tags]chart, error bar, valueErrorBar, highValueField, lowValueField
+

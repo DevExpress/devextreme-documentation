@@ -1,3 +1,6 @@
+---
+tags: loadIndicator, load indicator, loading indicator, overlay, show, hide, open, close, showing, shown, hiding, hidden
+---
 [note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the LoadIndicator. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
 To specify whether the LoadIndicator is shown, change the [visible](/api-reference/10%20UI%20Components/Widget/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#visible') property.
@@ -180,4 +183,3 @@ To specify whether the LoadIndicator is shown, change the [visible](/api-referen
 - [LoadIndicator Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadIndicator/Overview)
 - [LoadIndicator API Reference](/api-reference/10%20UI%20Components/dxLoadIndicator '/Documentation/ApiReference/UI_Components/dxLoadIndicator/')
 
-[tags]loadIndicator, load indicator, loading indicator, overlay, show, hide, open, close, showing, shown, hiding, hidden

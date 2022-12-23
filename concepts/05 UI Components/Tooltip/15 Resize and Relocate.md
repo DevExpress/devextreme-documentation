@@ -1,3 +1,6 @@
+---
+tags: tooltip, overlay, template, size, height, width, position
+---
 To change the size of the Tooltip, specify the [height](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#width') properties. Note that the Tooltip's arrow takes its share of the overall size.
 
 ---
@@ -268,4 +271,3 @@ If you need to position the Tooltip against a certain side of the [target elemen
 - [Tooltip Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview)
 - [Tooltip API Reference](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 
-[tags]tooltip, overlay, template, size, height, width, position

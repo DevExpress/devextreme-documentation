@@ -1,3 +1,6 @@
+---
+tags: chart, constant lines
+---
 A constant line is a straight line that extends over the entire Chart and indicates an axis value. Constant lines are always perpendicular to the axis to which they belong. 
 
 ![DevExtreme HTML5 JavaScript Charts ConstantLines](/images/ChartJS/visual_elements/constant_lines.png)
@@ -305,4 +308,4 @@ For information about all properties of the constant lines, visit the [constantL
 - [Grid](/concepts/05%20UI%20Components/Chart/55%20Grid/00%20Grid.md '/Documentation/Guide/UI_Components/Chart/Grid/')
 - [Strips](/concepts/05%20UI%20Components/Chart/60%20Strips.md '/Documentation/Guide/UI_Components/Chart/Strips/')
 
-[tags]chart, constant lines
+

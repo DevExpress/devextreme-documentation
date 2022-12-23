@@ -1,3 +1,6 @@
+---
+frameworks: angular
+---
 <table class="dx-table">
     <tr>
         <th>DevExtreme</th>
@@ -33,4 +36,3 @@
     </tr>
 </table>
 
-[tags] angular

@@ -1,3 +1,6 @@
+---
+tags: box, item size, item height, item width, baseSize, ratio
+---
 [note]In this document, "size" is an item's width or height, depending on whether the [direction](/api-reference/10%20UI%20Components/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#direction') property is set to *"row"* or *"col"*.
 
 The [baseSize](/api-reference/_hidden/dxBoxItem/baseSize.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#baseSize'), [ratio](/api-reference/_hidden/dxBoxItem/ratio.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#ratio'), and [shrink](/api-reference/_hidden/dxBoxItem/shrink.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/items/#shrink') settings specify an item's size. The **baseSize** defines the item's initial size in pixels. The item's size changes according to **ratio** and **shrink** if the Box's size changes.
@@ -499,4 +502,4 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
 - [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
-[tags]box, item size, item height, item width, baseSize, ratio
+

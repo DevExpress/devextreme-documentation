@@ -1,3 +1,6 @@
+---
+tags: chart, point labels, overview, common label settings, label connector
+---
 Each [series point](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') can be accompanied with a label that displays the point's value(s) or custom data.
 
 ![DevExtreme HTML5 JavaScript Charts SeriesPoints](/images/ChartJS/visual_elements/point_labels.png)
@@ -231,4 +234,3 @@ For details on other properties of point labels, refer to the [label](/api-refer
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, point labels, overview, common label settings, label connector

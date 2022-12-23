@@ -1,3 +1,6 @@
+---
+tags: progress bar, progressBar, editor, progress status, showStatus, statusFormat
+---
 The progress status displays a numeric value indicating the made progress. Whether the progress status is visible or not depends on the [showStatus](/api-reference/10%20UI%20Components/dxProgressBar/1%20Configuration/showStatus.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#showStatus') property. To format the status string, use the [statusFormat](/api-reference/10%20UI%20Components/dxProgressBar/1%20Configuration/statusFormat.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#statusFormat') function. It should return a string value.
 
 ---
@@ -112,4 +115,3 @@ The progress status displays a numeric value indicating the made progress. Wheth
 - [ProgressBar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview)
 - [ProgressBar API Reference](/api-reference/10%20UI%20Components/dxProgressBar '/Documentation/ApiReference/UI_Components/dxProgressBar/')
 
-[tags]progress bar, progressBar, editor, progress status, showStatus, statusFormat

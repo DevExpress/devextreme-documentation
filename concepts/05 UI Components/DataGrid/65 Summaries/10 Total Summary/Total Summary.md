@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, total summary, aggregate function, summaryType, alignment, location, showInColumn
+---
 A total summary aggregates all data by columns. You can associate each column with one or more summary items of different types.
 
 ![DevExtreme HTML5/JavaScript DataGrid UI component Total Summary](/images/DataGrid/TotalSummary.png)
@@ -137,4 +140,4 @@ Configure each summary item in the **summary**.[totalItems](/api-reference/10%20
 #####See Also#####
 - [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
 
-[tags]dataGrid, data grid, total summary, aggregate function, summaryType, alignment, location, showInColumn
+

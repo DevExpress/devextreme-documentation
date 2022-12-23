@@ -1,3 +1,6 @@
+---
+tags: scheduler, appointment details form, customize details form, onAppointmentFormCreated
+---
 Use the [onAppointmentFormOpening](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentFormOpening.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening') function to customize the appointment details form. Refer to the function's description for an example.
 
 #include common-demobutton with {
@@ -9,4 +12,4 @@ Use the [onAppointmentFormOpening](/api-reference/10%20UI%20Components/dxSchedul
 - [Scheduler - Customize Appointment Tooltip](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-[tags]scheduler, appointment details form, customize details form, onAppointmentFormCreated
+

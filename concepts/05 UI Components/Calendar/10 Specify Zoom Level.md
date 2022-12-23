@@ -1,3 +1,6 @@
+---
+tags: calendar, editor, calendar view, zoomLevel, zoom level
+---
 To specify which calendar view (month, year, decade or century) should be displayed at first, set the [zoomLevel](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/zoomLevel.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel') property.
 
 ---
@@ -160,4 +163,3 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
 - [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
 
-[tags]calendar, editor, calendar view, zoomLevel, zoom level

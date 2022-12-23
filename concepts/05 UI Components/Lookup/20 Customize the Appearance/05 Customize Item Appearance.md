@@ -1,3 +1,6 @@
+---
+tags: lookup, item appearance, customize, templates, template, field template
+---
 For a minor customization of Lookup items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
@@ -439,4 +442,4 @@ In addition, you can use a 3rd-party template engine to perform the needed custo
 #####See Also#####
 - [Lookup - Customize the Drop-Down Menu](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/08%20Customize%20the%20Drop-Down%20Menu.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/Customize_the_Drop-Down_Menu/')
 
-[tags]lookup, item appearance, customize, templates, template, field template
+

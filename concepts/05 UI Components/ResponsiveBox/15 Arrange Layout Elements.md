@@ -1,3 +1,6 @@
+---
+tags: responsive box, responsiveBox, adaptive layout, location, arrange in one column, singleColumnScreen
+---
 All layout elements are arranged against a [layout grid](/concepts/05%20UI%20Components/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/'). For example, suppose that you have the following layout grid.
 
 ---
@@ -504,4 +507,3 @@ If on some screens, all elements should be arranged in a single column, assign t
 - [ResponsiveBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview)
 - [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
-[tags]responsive box, responsiveBox, adaptive layout, location, arrange in one column, singleColumnScreen

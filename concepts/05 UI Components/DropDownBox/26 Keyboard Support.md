@@ -1,3 +1,6 @@
+---
+tags: dropdown box, dropDownBox, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -18,4 +21,4 @@ An end user can use the following keys to interact with the UI component.
 - [DropDownBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox)
 - [DropDownBox API Reference](/Documentation/ApiReference/UI_Components/dxDropDownBox/)
 
-[tags]dropdown box, dropDownBox, navigation, accessibility, keyboard shortcuts
+

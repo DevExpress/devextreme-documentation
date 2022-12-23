@@ -1,3 +1,6 @@
+---
+tags: dxcheckbox, check box, checkBox, editor, overview
+---
 The CheckBox is a small box, which when selected by the end user, shows that a particular feature has been enabled or a specific property has been chosen.
 
 #include common-demobutton with {
@@ -117,4 +120,3 @@ The CheckBox UI component can have the following states: checked (the **value** 
 - [CheckBox - Keyboard Support](/concepts/05%20UI%20Components/CheckBox/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/CheckBox/Keyboard_Support')
 - [CheckBox API Reference](/api-reference/10%20UI%20Components/dxCheckBox '/Documentation/ApiReference/UI_Components/dxCheckBox/')
 
-[tags]dxcheckbox, check box, checkBox, editor, overview

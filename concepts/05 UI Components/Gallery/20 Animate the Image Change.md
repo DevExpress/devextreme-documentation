@@ -1,3 +1,6 @@
+---
+tags: gallery, animate, animation duration, disable animation
+---
 By default, the change of the image is animated. You can specify how long the animation is using the [animationDuration](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/animationDuration.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#animationDuration') property. The lower its value, the faster the animation. In case you need to disable animation completely, set the [animationEnabled](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/animationEnabled.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#animationEnabled') property to **false**.
 
 ---
@@ -116,4 +119,3 @@ By default, the change of the image is animated. You can specify how long the an
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]gallery, animate, animation duration, disable animation

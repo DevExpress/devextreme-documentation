@@ -1,3 +1,6 @@
+---
+tags: form, empty item, empty space, colSpan
+---
 If you need to add an empty space between neighboring items, use an [empty item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/'). To create it, assign *"empty"* to the [itemType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/itemType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#itemType') property. To define how many columns the empty item must span, specify the [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan') property. For the full list of available properties, visit the [Empty Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/') section.
 
 ---
@@ -132,4 +135,3 @@ If you need to add an empty space between neighboring items, use an [empty item]
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-[tags]form, empty item, empty space, colSpan

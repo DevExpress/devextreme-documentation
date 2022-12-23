@@ -1,3 +1,6 @@
+---
+tags: textArea, text area, editor, string length, text length, maxLength
+---
 To limit the text length, assign an integer number to the **maxLength** property. By default, the text length is unlimited.
 
 ---
@@ -73,4 +76,3 @@ To limit the text length, assign an integer number to the **maxLength** property
 - [TextArea Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview)
 - [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
 
-[tags]textArea, text area, editor, string length, text length, maxLength

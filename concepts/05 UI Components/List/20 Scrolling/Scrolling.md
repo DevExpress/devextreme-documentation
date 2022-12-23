@@ -1,1 +1,3 @@
-[tags]list, swipe, disable swiping, scrollbar, scroll bar, scrollByContent, scrollByThumb, native scrolling, useNativeScrolling, disable scrolling, bounce effect, bounceEnabled, scroll to item, scroll to dom node, get content height, scroll to location, scroll to position, handle scroll
+---
+tags: list, swipe, disable swiping, scrollbar, scroll bar, scrollByContent, scrollByThumb, native scrolling, useNativeScrolling, disable scrolling, bounce effect, bounceEnabled, scroll to item, scroll to dom node, get content height, scroll to location, scroll to position, handle scroll
+---

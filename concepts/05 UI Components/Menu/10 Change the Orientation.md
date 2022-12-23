@@ -1,3 +1,6 @@
+---
+tags: menu, orientation, direction, position, padding
+---
 To arrange items on the menu panel in a row (horizontally) or in a column (vertically), use the [orientation](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/orientation.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#orientation') property.
 
 ---
@@ -171,4 +174,3 @@ When the UI component is positioned at the bottom or at the left side, you may w
 - [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
-[tags]menu, orientation, direction, position, padding

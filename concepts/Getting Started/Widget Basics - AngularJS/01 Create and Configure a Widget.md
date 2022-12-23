@@ -1,3 +1,6 @@
+---
+tags: basics, angularjs, create, configure, initialize, design time, scope properties
+---
 Make sure you linked all the required resources before creating a UI component:
 
 - **Link Resources**: [Local Scripts](/concepts/Common/Distribution%20Channels/15%20ZIP%20Archive.md '/Documentation/Guide/Common/Distribution_Channels/ZIP_Archive/') | [CDN Services](/concepts/Common/Distribution%20Channels/05%20CDN '/Documentation/Guide/Common/Distribution_Channels/CDN/') | [NuGet Package](/concepts/Common/Distribution%20Channels/10%20NuGet.md '/Documentation/Guide/Common/Distribution_Channels/NuGet/') | [npm Package](/concepts/Common/Distribution%20Channels/01%20npm.md '/Documentation/Guide/Common/Distribution_Channels/npm/')
@@ -67,4 +70,4 @@ As an alternative, you can declare the whole object of UI component properties i
 - **API Reference**.**WidgetName**.**Configuration**, for example, **API Reference**.[Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart').[Configuration](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/')
 - [Change Options](/concepts/Getting%20Started/Widget%20Basics%20-%20AngularJS/05%20Change%20Options.md '/Documentation/Guide/Getting_Started/Widget_Basics_-_AngularJS/Change_Options')
 
-[tags]basics, angularjs, create, configure, initialize, design time, scope properties
+

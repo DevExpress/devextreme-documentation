@@ -1,3 +1,6 @@
+---
+tags: tagBox, tag box, editor, apply value mode, select all, selection controls, hide selected items, clear selection, clear button
+---
 By default, the TagBox closes the drop-down list _immediately_ after a user selects an item from it. Therefore, the user has to open the list again if he/she wants to select another item. To enable the user to select multiple items without reopening the list, set the [applyValueMode](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#applyValueMode') property to *"useButtons"*. In this case, the list is not closed until the user clicks the **OK** button. To make multiple selection even easier for the user, add selection controls to the TagBox using the [showSelectionControls](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showSelectionControls') property.
 
 ---
@@ -437,4 +440,3 @@ The TagBox allows a user to clear selection in one click on the **Clear** button
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
-[tags]tagBox, tag box, editor, apply value mode, select all, selection controls, hide selected items, clear selection, clear button

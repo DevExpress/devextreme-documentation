@@ -1,3 +1,6 @@
+---
+tags: list, item appearance, customize, templates, template
+---
 For a minor customization of List items, you can define [specific fields](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') in item data objects. For example, the following code generates three items: each item has a badge, the second is disabled and the third is hidden.
 
 ---
@@ -262,4 +265,3 @@ In addition, you can use a 3rd-party template engine to perform the needed custo
 #####See Also#####
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, item appearance, customize, templates, template

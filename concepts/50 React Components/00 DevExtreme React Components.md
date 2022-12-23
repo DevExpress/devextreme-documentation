@@ -1,3 +1,6 @@
+---
+frameworks: react
+---
 #include common-troubleunderstanding-note with {
     technology: "React",
     docsLink: "https://reactjs.org/docs/getting-started.html"
@@ -35,4 +38,3 @@ We also provide [over 250 technical demos](https://js.devexpress.com/Demos/Widge
 
 For information on how to integrate DevExtreme React UI components into your application, refer to the [Add DevExtreme to a React Application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') article.
 
-[tags] react

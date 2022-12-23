@@ -1,3 +1,6 @@
+---
+tags: toast, overlay, template, size, height, width, position
+---
 To change the size of the Toast, specify the [height](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxToast/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#width') properties.
 
 ---
@@ -324,4 +327,3 @@ This configuration of the **position** property reads as follows: "place **my** 
 - [Toast Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Overview)
 - [Toast API Reference](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')
 
-[tags]toast, overlay, template, size, height, width, position

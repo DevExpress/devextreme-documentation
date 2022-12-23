@@ -1,3 +1,6 @@
+---
+tags: scheduler, appointment appearance, customize, templates
+---
 For a minor customization of Scheduler appointments, you can define [specific fields](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') in appointment data objects. For example, the following code generates three appointments: the first is not customized, the second is hidden, and the third is disabled.
 
 ---
@@ -421,4 +424,4 @@ In addition, you can use a 3rd-party template engine to customize the UI compone
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
 
-[tags]scheduler, appointment appearance, customize, templates
+

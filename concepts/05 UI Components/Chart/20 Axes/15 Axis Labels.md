@@ -1,3 +1,6 @@
+---
+tags: chart, axis labels, display mode, displayMode, overlapping behavior, overlappingBehavior
+---
 Axis labels display values indicated by [major axis ticks](/concepts/05%20UI%20Components/Chart/20%20Axes/07%20Axis%20Ticks.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Ticks/').
 
 ![DevExtreme HTML5 JavaScript Charts AxisLabels](/images/ChartJS/visual_elements/axis_labels.png)
@@ -205,4 +208,4 @@ Another noteworthy property is [overlappingBehavior](/api-reference/10%20UI%20Co
 - [Axis Titles](/concepts/05%20UI%20Components/Chart/20%20Axes/25%20Axis%20Titles.md '/Documentation/Guide/UI_Components/Chart/Axes/Axis_Titles/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, axis labels, display mode, displayMode, overlapping behavior, overlappingBehavior
+

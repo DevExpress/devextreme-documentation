@@ -1,3 +1,6 @@
+---
+tags: basics, knockout, handle events, subscribe
+---
 You can subscribe to an event using a configuration property. All event handling properties are given names that begin with *on*.
 
     <!--JavaScript-->
@@ -25,4 +28,3 @@ You can subscribe to an event using a configuration property. All event handling
 #####See Also#####
 - **API Reference**.**WidgetName**.**Events**, for example, **API Reference**.[Menu](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/').[Events](/api-reference/10%20UI%20Components/dxMenu/4%20Events '/Documentation/ApiReference/UI_Components/dxMenu/Events/')
 
-[tags]basics, knockout, handle events, subscribe

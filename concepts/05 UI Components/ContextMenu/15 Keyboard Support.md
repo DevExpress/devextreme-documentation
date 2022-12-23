@@ -1,3 +1,6 @@
+---
+tags: context menu, contextMenu, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -38,4 +41,3 @@ An end user can use the following keys to interact with the UI component.
 - [ContextMenu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ContextMenu/Basics)
 - [ContextMenu API Reference](/api-reference/10%20UI%20Components/dxContextMenu '/Documentation/ApiReference/UI_Components/dxContextMenu/')
 
-[tags]context menu, contextMenu, accessibility, keyboard shortcuts

@@ -1,3 +1,6 @@
+---
+tags: calendar, cell appearance, customize, templates
+---
 For Angular, AngularJS, and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for cells.
 
 ---
@@ -113,4 +116,3 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
 - [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 
-[tags]calendar, cell appearance, customize, templates

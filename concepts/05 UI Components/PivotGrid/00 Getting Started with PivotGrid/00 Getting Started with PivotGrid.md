@@ -1,3 +1,6 @@
+---
+tags: dxpivotgrid
+---
 #include tutorials-intro-installationnote
 
 The PivotGrid component allows you to display and analyze multi-dimensional data from a local storage or an OLAP cube.
@@ -8,4 +11,3 @@ This tutorial shows how to add the PivotGrid component to a page, bind the compo
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-devextreme-pivotgrid" target="_blank">Getting Started with DevExtreme PivotGrid</a>.
 
-[tags] dxpivotgrid

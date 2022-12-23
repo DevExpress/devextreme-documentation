@@ -1,3 +1,6 @@
+---
+tags: dxselectbox
+---
 #include tutorials-intro-installationnote
 
 SelectBox is an editor that allows users to select a value from a drop-down list or add a new value.
@@ -8,4 +11,4 @@ In this tutorial, we will create the SelectBox and configure its basic features.
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-selectbox" target="_blank">getting-started-with-selectbox</a>.
 
-[tags] dxselectbox
+

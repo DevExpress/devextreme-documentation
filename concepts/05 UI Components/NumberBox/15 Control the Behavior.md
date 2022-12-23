@@ -1,3 +1,6 @@
+---
+tags: number box, numberBox, editor, spin buttons, showSpinButtons, step
+---
 If you need to add spin buttons to the NumberBox, set the [showSpinButtons](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/showSpinButtons.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#showSpinButtons') to **true**.
 
 ---
@@ -169,4 +172,3 @@ To specify the step by which the value is changed, use the [step](/api-reference
 - [NumberBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview)
 - [NumberBox API Reference](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/')
 
-[tags]number box, numberBox, editor, spin buttons, showSpinButtons, step

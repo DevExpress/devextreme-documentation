@@ -200,7 +200,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     
 ---
 
-Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate') for more extensive customization. In this template, you should specify your custom component's appearance and behavior in full. The following code uses the template to substitute the [Switch](/Documentation/Guide/UI_Components/Switch/Getting_Started_with_Switch/) UI component for a default editor.
+Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate') for more extensive customization. In this template, you should specify your custom component's appearance and behavior in full. The following code uses the template to substitute the [Switch](/concepts/05%20UI%20Components/Switch/00%20Getting%20Started%20with%20Switch '/Documentation/Guide/UI_Components/Switch/Getting_Started_with_Switch/') UI component for a default editor.
 
 ---
 ##### jQuery

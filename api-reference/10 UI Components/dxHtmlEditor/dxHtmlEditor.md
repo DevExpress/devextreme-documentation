@@ -40,6 +40,3 @@ variables: {
 #####See Also#####
 #include common-link-setupdevextreme
 #include common-link-configurewidget
-
-
-

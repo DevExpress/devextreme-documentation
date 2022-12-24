@@ -29,5 +29,3 @@ The **changes** array can be changed from the UI, with native JavaScript methods
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
 }
-
-

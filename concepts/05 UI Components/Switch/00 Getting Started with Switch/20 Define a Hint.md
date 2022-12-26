@@ -10,8 +10,8 @@ The following code specifies the [hint](/api-reference/10%20UI%20Components/Widg
             // ...
             hint: "Click to switch on",
             onValueChanged(e) {
-                const message_text= e.value ? "Click to switch off" : "Click to switch on";
-                e.component.option("hint", message_text);
+                const messageText= e.value ? "Click to switch off" : "Click to switch on";
+                e.component.option("hint", messageText);
                 // ...
             }
         });
@@ -21,7 +21,7 @@ The following code specifies the [hint](/api-reference/10%20UI%20Components/Widg
 
     <!-- tab: app.component.html -->
     <dx-switch ...
-        [hint]="hint_message"
+        [hint]="hintMessage"
         (onValueChanged)="onValueChanged($event)"
     >
     </dx-switch>
@@ -37,9 +37,9 @@ The following code specifies the [hint](/api-reference/10%20UI%20Components/Widg
     })
 
     export class AppComponent {
-        hint_message: string = "Click to switch on";
+        hintMessage: string = "Click to switch on";
         onValueChanged(e: {value: boolean}) {
-            this.hint_message = e.value ? "Click to switch off" : "Click to switch on";
+            this.hintMessage = e.value ? "Click to switch off" : "Click to switch on";
             // ...
         }
     }
@@ -49,7 +49,7 @@ The following code specifies the [hint](/api-reference/10%20UI%20Components/Widg
     <!-- tab: App.vue -->
     <template>
         <DxSwitch ...
-            :hint="hint_message"
+            :hint="hintMessage"
             @value-changed="onValueChanged"
         />
     </template>
@@ -64,12 +64,12 @@ The following code specifies the [hint](/api-reference/10%20UI%20Components/Widg
         },
         data() {
             return {
-                hint_message: "Click to switch on",
+                hintMessage: "Click to switch on",
             };
         },
         methods: {
             onValueChanged(e) {
-                this.hint_message = e.value ? "Click to switch off" : "Click to switch on";
+                this.hintMessage = e.value ? "Click to switch off" : "Click to switch on";
                 // ...
             }
         }
@@ -85,17 +85,17 @@ The following code specifies the [hint](/api-reference/10%20UI%20Components/Widg
     import { Switch } from "devextreme-react/switch";
 
     function App() {
-        const [hint_message, setHintMessage] = useState("Click to switch on");
+        const [hintMessage, setHintMessage] = useState("Click to switch on");
 
         const onValueChanged = useCallback((e) => {
-            const message_text = e.value ? "Click to switch off" : "Click to switch on";
-            setHintMessage(message_text);
+            const messageText = e.value ? "Click to switch off" : "Click to switch on";
+            setHintMessage(messageText);
             // ...
         }, []);
 
         return (
             <Switch ...
-                hint={hint_message}
+                hint={hintMessage}
                 onValueChanged={onValueChanged}
             />
         );

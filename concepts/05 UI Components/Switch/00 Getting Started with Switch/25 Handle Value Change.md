@@ -11,8 +11,8 @@ The following code displays a notification every time users change the Switch st
             // ...
             onValueChanged(e) {
                 // ...
-                const state_label = e.value ? "ON" : "OFF";
-                DevExpress.ui.notify(`The component is switched ${state_label}`); 
+                const stateLabel = e.value ? "ON" : "OFF";
+                DevExpress.ui.notify(`The component is switched ${stateLabel}`); 
             }
         });
     });
@@ -39,8 +39,8 @@ The following code displays a notification every time users change the Switch st
         // ...
         onValueChanged(e: {value: boolean}) {
             // ...
-            const state_label = e.value ? "ON" : "OFF";
-            notify(`The component is switched ${state_label}`); 
+            const stateLabel = e.value ? "ON" : "OFF";
+            notify(`The component is switched ${stateLabel}`); 
         }
     }
 
@@ -66,8 +66,8 @@ The following code displays a notification every time users change the Switch st
         methods: {
             onValueChanged(e) {
                 // ...
-                const state_label = e.value ? "ON" : "OFF";
-                notify(`The component is switched ${state_label}`);
+                const stateLabel = e.value ? "ON" : "OFF";
+                notify(`The component is switched ${stateLabel}`);
             }
         }
     }
@@ -86,8 +86,8 @@ The following code displays a notification every time users change the Switch st
         // ...
         const onValueChanged = useCallback((e) => {
             // ...
-            const state_label = e.value ? "ON" : "OFF";
-            notify(`The component is switched ${state_label}`); 
+            const stateLabel = e.value ? "ON" : "OFF";
+            notify(`The component is switched ${stateLabel}`); 
         }, []);
 
         return (

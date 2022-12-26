@@ -37,7 +37,6 @@ The task's start date.
     function getTaskTimeTooltipContentTemplate(item, container) {
         var $customTooltipTime = $(document.createElement("div"))
             .addClass("custom-tooltip");
-​
         $(document.createElement("div"))
             .addClass("custom-tooltip-time")
             .text("End Date: " + item.end)

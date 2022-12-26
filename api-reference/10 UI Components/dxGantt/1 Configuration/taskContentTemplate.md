@@ -157,7 +157,7 @@ The task's size.
 
     export default App;
 
-##### ASP.NET MVC Controls
+##### ASP.NET MVC
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
@@ -174,8 +174,5 @@ The task's size.
             return $customContainer;
         }    
     </script>
-
-##### return: String | TElement
-<!-- Description goes here -->
 
 ---

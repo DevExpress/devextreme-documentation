@@ -1,1 +1,1 @@
-DataGrid includes API that allows users to disable editing a specific column, row and cell.
+DataGrid includes API that allows users to disable editing data within specific elements. In the sections below you can see how to prevent editing in a separate colum, row and cell. 

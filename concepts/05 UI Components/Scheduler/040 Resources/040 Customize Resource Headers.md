@@ -1,8 +1,8 @@
-For Angular app, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define custom templates for resource headers.
-
 ---
 
 ##### Angular
+
+    For an Angular app, DevExtreme includes the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define custom templates for resource headers.
 
     <!-- tab: app.component.html -->
     <dx-scheduler
@@ -47,6 +47,8 @@ For Angular app, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20C
     })
 
 ##### Vue
+
+    The following code shows how to define custom templates for resource headers in the Vue app.
 
     <!-- tab: App.vue -->
     <template>
@@ -96,6 +98,8 @@ For Angular app, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20C
     </script>
 
 ##### React
+
+    The following code shows how to define custom templates for resource headers in the React app. 
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -147,11 +151,11 @@ For Angular app, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20C
     }
     export default App;
 
----
+##### jQuery
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, use the [resourceCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
+    If you work with jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, use the [resourceCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     var schedulerData = [{
         text: "Meeting",
         startDate: new Date("2016-04-24T09:10:00.000Z"),
@@ -180,6 +184,8 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
             }
         });
     });
+
+---
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"

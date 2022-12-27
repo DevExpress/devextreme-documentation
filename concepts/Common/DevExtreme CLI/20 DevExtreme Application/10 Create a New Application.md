@@ -6,7 +6,7 @@ Creates a new <a href="https://devexpress.github.io/devextreme-angular-template"
 
     devextreme new angular-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme new angular-app app-name [--layout][--empty]
+    npx devextreme-cli new angular-app app-name [--layout][--empty]
 
 ##### Vue
 
@@ -14,7 +14,7 @@ Creates a new <a href="https://devexpress.github.io/devextreme-vue-template" tar
 
     devextreme new vue-app app-name [--layout][--empty][--version]
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme new vue-app app-name [--layout][--empty][--version]
+    npx devextreme-cli new vue-app app-name [--layout][--empty][--version]
 
 
 ##### React

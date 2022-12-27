@@ -1,12 +1,5 @@
 Handle the DataGrid [onEditorPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing) event to conditionally set the **editorOptions.disabled** option. You also need to check the **parentType** parameter to determine to which row type this cell belongs: "dataRow" or "filterRow". To see for which editor this event raises, check the **dataField** parameter. Finally, check the **row.data** object which contains row data values.
 
-    <!--JavaScript-->
-    onEditorPreparing(e) {
-	    if (e.dataField === "LastName" && e.parentType === "dataRow") {
-	        e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
-	    }
-    }
-
 ---
 ##### jQuery
 

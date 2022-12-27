@@ -23,7 +23,7 @@ Creates a new <a href="https://devexpress.github.io/devextreme-react-template" t
 
     devextreme new react-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme new react-app app-name [--layout][--empty]
+    npx devextreme-cli new react-app app-name [--layout][--empty]
 
 ---
 
@@ -40,8 +40,8 @@ Specifies the DevExtreme layout. Available values:
 Specifies whether to skip sample view generation (default: `false`).
 
 * `--template` (React only)
-Specifies whether to create an application template with TypeScript support. Available values: `javascript` (default) and `typescript`.
+Specifies whether to create an application template with TypeScript support. Available values: `javascript` and `typescript`.
 
 * `--version`, `-v` (Vue only)        
-Specifies whether to generate a Vue 2 or Vue 3 application. Available values: `2` (default) and `3`. 
+Specifies whether to generate a Vue 2 or Vue 3 application. Available values: `2` and `3`. 
 

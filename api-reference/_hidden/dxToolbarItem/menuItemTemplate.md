@@ -23,12 +23,12 @@ The following types of the specified value are available.
     <!-- tab: index.js -->
     $(function() {
         $("#toolbar").dxToolbar({
-            items: [
+            items: [{
                 // ...
-            ],
-            menuItemTemplate (data, index) {
-                return $(`<div><i class='dx-icon-favorites'></i>${data.options.text}</div>`);
-            }
+                menuItemTemplate (data, index) {
+                    return $(`<div><i class='dx-icon-favorites'></i>${data.options.text}</div>`);
+                }
+            }],
         });
     });
 
@@ -39,7 +39,7 @@ The following types of the specified value are available.
         <dxi-item ... 
             menuItemTemplate="menu-item"
         >
-            <div *dxTemplate="let data of 'menu-item'; let index = index">
+            <div *dxTemplate="let data of 'menu-item'">
                 <i class="dx-icon-favorites"></i> {{data.options.text}}
             </div>
         </dxi-item>
@@ -53,7 +53,7 @@ The following types of the specified value are available.
             <dxItem ... 
                 menu-item-template="menu-item"
             >
-                <template #menu-item="{ data, index }">
+                <template #menu-item="{ data }">
                     <i class="dx-icon-favorites"></i> {{data.options.text}}
                 </template>
             </dxItem>
@@ -70,7 +70,7 @@ The following types of the specified value are available.
     import React from 'react';
     import Toolbar, { Item } from 'devextreme-react/toolbar';
 
-    const renderMenuItem = (data, index) => {
+    const renderMenuItem = (data) => {
         return <div><i class="dx-icon-favorites"></i> {data.options.text}</div>;
     }
 

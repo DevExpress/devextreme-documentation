@@ -1,7 +1,7 @@
 If you want to forbid editing in a specific row, take the following steps:
 
-- Handle the DataGrid [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event. 
-- Check the **data** parameter's values and assign **true** to **e.cancel**.
+1. Handle the DataGrid [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event. 
+2. Check the **data** parameter's values and assign **true** to **e.cancel**.
 
 ---
 ##### jQuery

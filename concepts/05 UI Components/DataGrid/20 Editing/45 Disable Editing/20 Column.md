@@ -1,7 +1,4 @@
-Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing) property to **false** to disable editing its data.
-
-    <!--JavaScript-->
-    allowEditing: false
+Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing) property to **false** to disable editing a specific column.
 
 ---
 ##### jQuery
@@ -11,7 +8,10 @@ Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGr
         $("#dataGrid").dxDataGrid({
             // ...
             columns: [
-                allowEditing: false,
+                {
+                    allowEditing: false,
+                    // ...
+                }
             ] 
         });
     });
@@ -24,33 +24,39 @@ Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGr
         <dxi-column [allowEditing]="false" ></dxi-column>
     </dx-data-grid>
 
+     <!-- tab: app.component.ts -->
+    import { DxDataGridModule } from "devextreme-angular";
+    // ...
+    export class AppComponent { ... }
+    @NgModule({
+        imports: [
+            // ...
+            DxDataGridModule
+        ],
+        // ...
+    })
+
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxFilterRow :visible="true" />
-                <DxSearchPanel :visible="true" />
-            </DxDataGrid>
-        </div>
+        <DxDataGrid ... >
+            <DxColumn :allowEditing="false" />
+        </DxDataGrid>
     </template>
 
     <script>
     import {
         DxDataGrid,
+        DxColumn,
         // ...
-        DxFilterRow,
-        DxSearchPanel
     } from 'devextreme-vue/data-grid';
 
     export default {
         components: {
             DxDataGrid,
+            DxColumn,
             // ...
-            DxFilterRow,
-            DxSearchPanel
         },
         // ...
     }
@@ -62,22 +68,14 @@ Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGr
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
-    import {
-        DataGrid,
-        // ...
-        FilterRow,
-        SearchPanel
-    } from 'devextreme-react/data-grid';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
 
     function App() {
         return (
-            <div className="App">
-                <DataGrid ... >
-                    {/* ... */}
-                    <FilterRow visible={true} />
-                    <SearchPanel visible={true} />
-                </DataGrid>
-            </div>
+            <DataGrid ... >
+                {/* ... */}
+                <Column allowEditing={false} />
+            </DataGrid>
         );
     }
 

@@ -1,12 +1,12 @@
 To correctly substitute displayed values with required values in a DataGrid/TreeList lookup column, follow these steps:
 
-1. Define the [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#dataSource).
+1. Define the [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#dataSource) property.
 
-2. Specify the [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[valueExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#valueExpr). It should match the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField). Refer to the following topic for detailed explanation: [lookup - API Section](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).
+2. Specify the [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[valueExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#valueExpr) property. Its value should match the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField) property value. Refer to the following topic for detailed explanation: [lookup - API Section](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).
 
 3. Use the [displayExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#displayExpr) property to specify displayed values.
 
-In the example below, `StateID` and `ID` store the same keys.
+The example below configures the DataGrid so `StateID` and `ID` store the same keys.
 
 ---
 ##### jQuery

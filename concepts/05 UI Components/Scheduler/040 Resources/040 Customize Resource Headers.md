@@ -28,9 +28,7 @@
             startDate: new Date("2016-04-24T09:10:00.000Z"),
             endDate: new Date("2016-04-24T11:20:00.000Z"),
             roomId: 1
-        },
-        // ...
-        ];
+        }, // ... ];
         rooms = [
             { id: 1, text: 'Room101', color: 'green' },
             { id: 2, text: 'Room102', color: 'red' },
@@ -48,7 +46,7 @@
 
 ##### Vue
 
-    The following code shows how to define custom templates for resource headers in the Vue app.
+Templates allow you to customize UI components. DevExtreme templates make use of the functionality provided by Vue. Implement a custom template and assign it to the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) property as shown in the following code.
 
     <!-- tab: App.vue -->
     <template>
@@ -61,7 +59,7 @@
                 field-expr="roomId"
                 :data-source="rooms" />
             <template #resource-cell="{ data }">
-                <i style="color: blue">{{data.text}}</i>
+                <i style="color: blue">{{ data.text }}</i>
             </template>
         </DxScheduler>
     </template>
@@ -99,7 +97,7 @@
 
 ##### React
 
-    The following code shows how to define custom templates for resource headers in the React app. 
+    Templates allow you to customize UI components. Implement a callback function with custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property as shown in the following code.
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -114,9 +112,7 @@
         img: 'images/movies/HisGirlFriday.jpg',
         startDate: new Date("2016-04-24T09:10:00.000Z"),
         endDate: new Date("2016-04-24T11:20:00.000Z")
-    }, 
-    // ...
-    ];
+    }, // ... ];
     
     const rooms = [
         { id: 1, text: 'Room101', color: 'green' },
@@ -153,7 +149,7 @@
 
 ##### jQuery
 
-    If you work with jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, use the [resourceCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
+    Use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, implement the [resourceCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
 
     <!-- tab: index.js -->
     var schedulerData = [{
@@ -161,9 +157,8 @@
         startDate: new Date("2016-04-24T09:10:00.000Z"),
         endDate: new Date("2016-04-24T11:20:00.000Z"),
         roomId: 1
-    },
-    // ...
-    ];
+    }, // ... ];
+
     var roomResource = {
         fieldExpr: 'roomId',
         dataSource: [

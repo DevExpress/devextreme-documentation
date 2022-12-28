@@ -1,4 +1,6 @@
-A user can select existing values and add new values to the SelectBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#acceptCustomValue') property. Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
+A user can select existing values and add new values to the SelectBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#acceptCustomValue') property. 
+
+Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onCustomItemCreating') function to create a new data source entry. You can specify DOM events after which the component calls this function. Use the [customItemCreateEvent](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#customItemCreateEvent) property for this purpose. In addition to the event passed to this property, the item can also be created when users press the **Enter** key.
 
 ---
 ##### jQuery
@@ -20,6 +22,7 @@ A user can select existing values and add new values to the SelectBox. To enable
             valueExpr: 'id',
             displayExpr: 'firstName',
             acceptCustomValue: true,
+            customItemCreateEvent: 'focusout',
             onCustomItemCreating: function(e) {
                 // Generates a new 'id'
                 let nextId;
@@ -74,6 +77,7 @@ A user can select existing values and add new values to the SelectBox. To enable
         valueExpr="id"
         displayExpr="firstName"
         [acceptCustomValue]="true"
+        customItemCreateEvent="focusout"
         (onCustomItemCreating)="onCustomItemCreating($event)">
     </dx-select-box>
 
@@ -86,6 +90,7 @@ A user can select existing values and add new values to the SelectBox. To enable
             :accept-custom-value="true"
             display-expr="firstName"
             value-expr="id"
+            custom-item-create-event="focusout"
             @custom-item-creating="customItemCreating"
         />
     </template>
@@ -167,6 +172,7 @@ A user can select existing values and add new values to the SelectBox. To enable
                     valueExpr="id"
                     displayExpr="firstName"
                     acceptCustomValue={true}
+                    customItemCreateEvent="focusout"
                     onCustomItemCreating={this.customItemCreating}
                 />
             );

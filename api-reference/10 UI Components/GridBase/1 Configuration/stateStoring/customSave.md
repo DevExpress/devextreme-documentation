@@ -64,7 +64,7 @@ If you need to save and load the state from a remote storage, use the following 
     <!--TypeScript-->
     import { HttpClient, HttpClientModule, HttpHeaders, HttpRequest } from "@angular/common/http";
     import { Dx{WidgetName}Module } from "devextreme-angular";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     import "rxjs/add/operator/catch";
     // ...
     export class AppComponent {
@@ -81,7 +81,7 @@ If you need to save and load the state from a remote storage, use the following 
                 body: data ? JSON.stringify(data) : null
             });
             return httpClient.request(req)
-                .toPromise();
+                .lastValueFrom();
         }
 
         loadState = () => {

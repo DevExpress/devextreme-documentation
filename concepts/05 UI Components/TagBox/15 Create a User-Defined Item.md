@@ -1,4 +1,6 @@
-A user can select existing values and add new values to the TagBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#acceptCustomValue') property. Note that you need to implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
+A user can select existing values and add new values to the TagBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#acceptCustomValue') property. 
+
+Note that you need to implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onCustomItemCreating') function to create a new data source entry. You can specify DOM events after which the component calls this function. Use the [customItemCreateEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/customItemCreateEvent.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#customItemCreateEvent') property for this purpose. In addition to the event passed to this property, the item can also be created when users press the **Enter** key.
 
 ---
 ##### jQuery
@@ -20,6 +22,7 @@ A user can select existing values and add new values to the TagBox. To enable th
         valueExpr: 'id',
         displayExpr: 'firstName',
         acceptCustomValue: true,
+        customItemCreateEvent: 'focusout',
         onCustomItemCreating: function(e){
             // Generates a new 'id'
             let nextId;
@@ -41,6 +44,7 @@ A user can select existing values and add new values to the TagBox. To enable th
         valueExpr="id"
         displayExpr="firstName"
         [acceptCustomValue]="true"
+        customItemCreateEvent="focusout"
         (onCustomItemCreating)="onCustomItemCreating($event)">
     </dx-tag-box>
 
@@ -84,6 +88,7 @@ A user can select existing values and add new values to the TagBox. To enable th
             :accept-custom-value="true"
             value-expr="id"
             display-expr="firstName"
+            custom-item-create-event="focusout"
             @custom-item-creating="onCustomItemCreating"
         />
     </template>
@@ -173,6 +178,7 @@ A user can select existing values and add new values to the TagBox. To enable th
                     acceptCustomValue={true}
                     valueExpr="id"
                     displayExpr="firstName"
+                    customItemCreateEvent="focusout"
                     onCustomItemCreating={this.onCustomItemCreating}
                 />
             );

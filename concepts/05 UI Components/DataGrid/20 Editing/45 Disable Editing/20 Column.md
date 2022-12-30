@@ -1,4 +1,4 @@
-Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing) property to **false** to disable editing a specific column.
+Set a column's [allowEditing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowEditing) property to **false** to disable data editing within a specific column.
 
 ---
 ##### jQuery

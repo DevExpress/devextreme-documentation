@@ -1,7 +1,7 @@
-If you want to forbid editing in a specific row, take the following steps:
+If you want to disable data editing within a specific row, take the following steps:
 
-1. Handle the DataGrid [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event. 
-2. Check the **data** parameter's values and assign **true** to **e.cancel**.
+1. Handle the DataGrid's [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event. 
+2. Check the **data** parameter's values. If you want don't want users to edit this row, assign **true** to **e.cancel**.
 
 ---
 ##### jQuery
@@ -97,7 +97,7 @@ If you want to forbid editing in a specific row, take the following steps:
 
 ---
 
-The DataGrid [editing mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode) defines whether to display the **Edit** button opposite every row. To hide this button for the required rows, use the button's [visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible) property. You can also assign a function to this property and check a row's data in a similar manner as in the DataGrid [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) case.
+The DataGrid's [editing mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode) defines whether to display the **Edit** button opposite every row. To hide this button for the required rows, use the button's [visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible) property. Assign a function to this property and check a row's data in a similar manner as in the DataGrid's [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event.
 
 ---
 ##### jQuery

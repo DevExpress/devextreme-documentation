@@ -2,7 +2,7 @@
 
 ##### Angular
 
-    For an Angular app, DevExtreme includes the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define custom templates for resource headers.
+    Use the [dxTemplate](/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/) markup component designed by DevExpress.
 
     <!-- tab: app.component.html -->
     <dx-scheduler
@@ -46,7 +46,7 @@
 
 ##### Vue
 
-Templates allow you to customize UI components. DevExtreme templates make use of the functionality provided by Vue. Implement a custom template and assign it to the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) property as shown in the following code.
+Implement a Vue template and assign it to the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) property.
 
     <!-- tab: App.vue -->
     <template>
@@ -97,7 +97,7 @@ Templates allow you to customize UI components. DevExtreme templates make use of
 
 ##### React
 
-    Templates allow you to customize UI components. Implement a callback function with custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property as shown in the following code.
+    Implement a callback function with custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property.
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -149,7 +149,7 @@ Templates allow you to customize UI components. DevExtreme templates make use of
 
 ##### jQuery
 
-    Use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for resource headers. To apply this markup, implement the [resourceCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resourceCellTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate') callback function as shown in the following code.
+    Specify the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) callback function. Combine HTML markup with jQuery’s <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>.
 
     <!-- tab: index.js -->
     var schedulerData = [{

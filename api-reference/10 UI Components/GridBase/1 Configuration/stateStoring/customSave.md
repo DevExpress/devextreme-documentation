@@ -80,8 +80,7 @@ If you need to save and load the state from a remote storage, use the following 
                 responseType: dataType,
                 body: data ? JSON.stringify(data) : null
             });
-            return httpClient.request(req)
-                .lastValueFrom();
+            return lastValueFrom(httpClient.request(req));
         }
 
         loadState = () => {

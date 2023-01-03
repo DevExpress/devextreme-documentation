@@ -226,10 +226,6 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
 
 ---
 
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
-}
 #include common-githubbutton with {
     url: "https://github.com/DevExpress-Examples/Form-Custom-items"
 }

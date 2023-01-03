@@ -12704,6 +12704,9 @@
     "gridBaseOptions.focusedRowKey": {
       "vue": "focused-row-key"
     },
+    "gridBaseOptions.focusStateEnabled": {
+      "vue": "focus-state-enabled"
+    },
     "gridBaseOptions.headerFilter": {
       "angular": "dxo-header-filter",
       "react": "HeaderFilter",

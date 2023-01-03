@@ -1,12 +1,4 @@
-To correctly substitute displayed values with required values in a DataGrid/TreeList lookup column, follow these steps:
-
-1. Define the [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#dataSource) property.
-
-2. Specify the [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[valueExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#valueExpr) property. Its value should match the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField) property value. Refer to the following topic for detailed explanation: [lookup - API Section](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).
-
-3. Use the [displayExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#displayExpr) property to specify displayed values.
-
-The example below configures the DataGrid so `StateID` and `ID` store the same keys.
+If you use a lookup column editor in the DataGrid or TreeList, you need to specify the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField) property. The value of that field should match the values in [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/).[valueExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/#valueExpr). In the code below, the `StateID` and `ID` fields should store the same keys and have the same type (for example, `String`).
 
 ---
 ##### jQuery
@@ -17,9 +9,14 @@ The example below configures the DataGrid so `StateID` and `ID` store the same k
             {
                 dataField: 'StateID',
                 lookup: {
-                    dataSource: sampleData,
-                    valueExpr: 'ID',
-                    displayExpr: 'State'
+                    dataSource: new DevExpress.data.DataSource({
+                        store: {
+                            type: 'array',
+                            data: sampleData,
+                            key: 'ID',
+                        },
+                    }),
+                    valueExpr: 'ID'
                 }
             }
         ]
@@ -33,13 +30,29 @@ The example below configures the DataGrid so `StateID` and `ID` store the same k
             dataField="StateID"
         >
             <dxo-lookup 
-                [dataSource]="sampleData" 
+                [dataSource]="dataSource" 
                 valueExpr="ID"
-                displayExpr="State"
             >
             </dxo-lookup>
         </dxi-column>
      </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    import DataSource from 'devextreme/data/data_source';
+    import ArrayStore from 'devextreme/data/array_store';
+
+    // ...
+    export class AppComponent {
+        dataSource: DataSource;
+        constructor(service: Service) {
+            this.dataSource = new DataSource({
+                store: new ArrayStore({
+                    data: sampleData,
+                    key: 'ID',
+                })
+            });
+        }
+    }
 
 ##### Vue
 
@@ -50,22 +63,52 @@ The example below configures the DataGrid so `StateID` and `ID` store the same k
                 data-field="StateID"
             >
                 <DxLookup
-                    :data-source="sampleData"
+                    :data-source="dataSource"
                     value-expr="ID"
-                    display-expr="State"
                 />
             </DxColumn>
         </DxDataGrid>
     </template>
 
     <script>
+        import { DxDataGrid, DxColumn, DxLookup } from 'devextreme-vue/data-grid';
+        import DataSource from 'devextreme/data/data_source';
         // ...
+
+        export default {
+            components: {
+                DxDataGrid, 
+                DxColumn, 
+                DxLookup
+            },
+        data() {
+            return {
+                dataSource: new DataSource({
+                    store: {
+                        type: 'array',
+                        data: sampleData,
+                        key: 'ID'
+                    }
+                })
+            }
+        };
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
-    // ...
+    import React from 'react';
+    import DataGrid, { Column, Lookup } from 'devextreme-react/data-grid';
+
+    import DataSource from 'devextreme/data/data_source';
+
+    const dataSource = new DataSource({
+        store: {
+            type: 'array',
+            data: sampleData,
+            key: 'ID',
+        },
+    });
 
     function App() {
         render (
@@ -74,11 +117,7 @@ The example below configures the DataGrid so `StateID` and `ID` store the same k
                     <Column
                         dataField="StateID"
                     >
-                        <Lookup 
-                            dataSource={sampleData}
-                            valueExpr="ID" 
-                            displayExpr="State"
-                        />
+                        <Lookup dataSource={dataSource} valueExpr="ID" />
                     </Column>
                 </DataGrid>
             </React.Fragment>
@@ -88,11 +127,3 @@ The example below configures the DataGrid so `StateID` and `ID` store the same k
     export default App;
 
 ---
-
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/WebAPIService/jQuery/Light/",
-    name: "DataGrid Web API Service Demo"
-}
-
-#####See Also#####
-- DataGrid/TreeList [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/)

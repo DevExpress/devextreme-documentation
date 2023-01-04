@@ -1,5 +1,38 @@
 ---
 
+##### jQuery
+
+Specify the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) callback function. Combine HTML markup with jQuery’s <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>.
+
+    <!-- tab: index.js -->
+    var schedulerData = [{
+        text: "Meeting",
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z"),
+        roomId: 1
+    }, // ... ];
+
+    var roomResource = {
+        fieldExpr: 'roomId',
+        dataSource: [
+            { id: 1, text: 'Room101', color: 'green' },
+            { id: 2, text: 'Room102', color: 'red' },
+            // ...
+        ]
+    };
+
+    $(function () {
+        $("#schedulerContainer").dxScheduler({
+            dataSource: schedulerData,
+            currentDate: new Date(2016, 4, 24),
+            resources: [ roomResource ],
+            groups: [ 'roomId' ],
+            resourceCellTemplate: function (data, index, element) {
+                element.append("<i style='color: blue'>" + data.text + "</i>");
+            }
+        });
+    });
+
 ##### Angular
 
 Use the [dxTemplate](/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/) markup component designed by DevExpress.
@@ -146,39 +179,6 @@ Implement a callback function with custom template and assign it to the [resourc
         }
     }
     export default App;
-
-##### jQuery
-
-Specify the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) callback function. Combine HTML markup with jQuery’s <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>.
-
-    <!-- tab: index.js -->
-    var schedulerData = [{
-        text: "Meeting",
-        startDate: new Date("2016-04-24T09:10:00.000Z"),
-        endDate: new Date("2016-04-24T11:20:00.000Z"),
-        roomId: 1
-    }, // ... ];
-
-    var roomResource = {
-        fieldExpr: 'roomId',
-        dataSource: [
-            { id: 1, text: 'Room101', color: 'green' },
-            { id: 2, text: 'Room102', color: 'red' },
-            // ...
-        ]
-    };
-
-    $(function () {
-        $("#schedulerContainer").dxScheduler({
-            dataSource: schedulerData,
-            currentDate: new Date(2016, 4, 24),
-            resources: [ roomResource ],
-            groups: [ 'roomId' ],
-            resourceCellTemplate: function (data, index, element) {
-                element.append("<i style='color: blue'>" + data.text + "</i>");
-            }
-        });
-    });
 
 ---
 

@@ -2,7 +2,7 @@
 
 ##### Angular
 
-    Use the [dxTemplate](/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/) markup component designed by DevExpress.
+Use the [dxTemplate](/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/) markup component designed by DevExpress.
 
     <!-- tab: app.component.html -->
     <dx-scheduler
@@ -19,7 +19,7 @@
         </div>
     </dx-scheduler>
 
-     <!-- tab: app.component.ts -->
+    <!-- tab: app.component.ts -->
     import { DxSchedulerModule } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -58,8 +58,8 @@ Implement a Vue template and assign it to the [resourceCellTemplate](/Documentat
             <DxResource
                 field-expr="roomId"
                 :data-source="rooms" />
-            <template #resource-cell="{ data }">
-                <i style="color: blue">{{ data.text }}</i>
+            <template #resource-cell="{data}">
+                <i style="color: blue">{{data.text}}</i>
             </template>
         </DxScheduler>
     </template>
@@ -97,7 +97,7 @@ Implement a Vue template and assign it to the [resourceCellTemplate](/Documentat
 
 ##### React
 
-    Implement a callback function with custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property.
+Implement a callback function with custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property.
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -149,7 +149,7 @@ Implement a Vue template and assign it to the [resourceCellTemplate](/Documentat
 
 ##### jQuery
 
-    Specify the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) callback function. Combine HTML markup with jQuery’s <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>.
+Specify the [resourceCellTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellTemplate) callback function. Combine HTML markup with jQuery’s <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>.
 
     <!-- tab: index.js -->
     var schedulerData = [{

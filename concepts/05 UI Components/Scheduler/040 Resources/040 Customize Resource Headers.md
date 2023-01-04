@@ -97,7 +97,7 @@ Implement a Vue template and assign it to the [resourceCellTemplate](/Documentat
 
 ##### React
 
-    Implement a callback function with custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property.
+    Implement a callback function with a custom template and assign it to the [resourceCellRender](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#resourceCellRender) property.
 
     <!-- tab: App.js -->
     import React from 'react';

@@ -136,3 +136,5 @@ In the following code, the `strike` format is extended so that the stricken out 
     export default App;
 
 ---
+
+[note] Quill registers modules globally in a static function. You cannot register different modules for different HtmlEditor instances. If you register a module for one HtmlEditor, this module will be registered for all other HtmlEditors on the page/application.

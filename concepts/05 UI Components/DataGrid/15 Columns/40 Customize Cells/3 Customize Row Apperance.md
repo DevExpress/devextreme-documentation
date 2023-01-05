@@ -1,4 +1,4 @@
-Use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance. If a customization is not immediately applied, use the [repaintRows()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRows) method to repaint DataGrid rows.
+Use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"

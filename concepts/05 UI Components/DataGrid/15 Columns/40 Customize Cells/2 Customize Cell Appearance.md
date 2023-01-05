@@ -1,29 +1,35 @@
-Cell appearance is customized using a column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate'). In Angular and Vue, you can declare the template in the markup. In React, you can use a rendering function (shown in the code below) or component:
+Use a column's [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') to customize cell appearance. If a customization is not immediately applied, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid cells.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
+}
 
 ---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#dataGridContainer").dxDataGrid({
+            // ...
+            columns: [{
+                dataField: "Title",
+                cellTemplate: function(element, info) {
+                    element.append("<div>" + info.text + "</div>")
+                        .css("color", "blue");
+                }
+            }]
+        });
+    });
+
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <dxi-column dataField="Title" cellTemplate="cellTemplate"></dxi-column>
         <div *dxTemplate="let data of 'cellTemplate'">
             <div style="color:blue">{{data.text}}</div>
         </div>
     </dx-data-grid>
-
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
@@ -71,40 +77,17 @@ Cell appearance is customized using a column's [cellTemplate](/api-reference/_hi
         return <div style={{ color: 'blue' }}>{data.text}</div>;
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="Title"
-                        cellRender={renderGridCell}
-                    />
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    dataField="Title"
+                    cellRender={renderGridCell}
+                />
+            </DataGrid>
+        );
     }
     export default App;
-
----
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the **cellTemplate** function as shown in the following code:
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#dataGridContainer").dxDataGrid({
-            // ...
-            columns: [{
-                dataField: "Title",
-                cellTemplate: function(element, info) {
-                     element.append("<div>" + info.text + "</div>")
-                            .css("color", "blue");
-                }
-            }]
-        });
-    });
 
 ---
 
@@ -113,7 +96,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         $("#dataGridContainer").dxDataGrid({
             // ...
@@ -125,7 +108,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
         });
     });
 
-    <!--CSS-->
+    <!-- tab: index.css -->
     .adaptiveRowStyle { 
         background-color: #cce6ff;
         font-size: 12pt
@@ -133,8 +116,12 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
+    <!-- tab: app.component.html -->
+    <dx-data-grid
+        (onCellPrepared)="onCellPrepared($event)">
+    </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
     // ...
     export class AppComponent {
         onCellPrepared (e) {
@@ -143,20 +130,8 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
             }
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
-    <!--HTML-->
-    <dx-data-grid
-        (onCellPrepared)="onCellPrepared($event)">
-    </dx-data-grid>
-
-    <!--CSS-->
+    <!-- tab: app.component.css -->
     .adaptiveRowStyle { 
         background-color: #cce6ff;
         font-size: 12pt
@@ -189,7 +164,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
         }
     }
     </script>
-    <style scoped>
+    <style>
         .adaptiveRowStyle { 
             background-color: #cce6ff;
             font-size: 12pt
@@ -205,35 +180,25 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 
     import DataGrid from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            // Uncomment the line below if the function should be executed in the component's context
-            // this.onCellPrepared = this.onCellPrepared.bind(this);
-        }
-
-        onCellPrepared(e) {
-            if (e.rowType == 'detailAdaptive') {
-                e.cellElement.classList.add('adaptiveRowStyle');
-            }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onCellPrepared={this.onCellPrepared}>
-                </DataGrid>
-            );
+    const cellPrepared = (e) => {
+        if (e.rowType == 'detailAdaptive') {
+            e.cellElement.classList.add('adaptiveRowStyle');
         }
     }
+
+    function App() {
+        return (
+            <DataGrid ...
+                onCellPrepared={cellPrepared}>
+            </DataGrid>
+        );
+    }
+
     export default App;
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
-}
+You can also use the [cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to specify a CSS class for a column. 
 
 #####See Also#####
 - [Customize Column Headers](/concepts/05%20UI%20Components/DataGrid/15%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Column_Headers/')

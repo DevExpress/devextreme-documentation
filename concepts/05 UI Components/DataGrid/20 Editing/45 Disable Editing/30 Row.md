@@ -1,4 +1,4 @@
-If you want to disable data editing within a specific row, take the following steps:
+To disable data editing within a specific row, follow the steps below:
 
 1. Handle the DataGrid's [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event. 
 2. Check the **data** parameter's values. If you want don't want users to edit this row, assign **true** to **e.cancel**.

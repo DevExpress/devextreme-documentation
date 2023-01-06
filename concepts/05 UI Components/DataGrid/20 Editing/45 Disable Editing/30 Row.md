@@ -97,7 +97,7 @@ If you want to disable data editing within a specific row, take the following st
 
 ---
 
-The DataGrid's [editing mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode) defines whether to display the **Edit** button opposite every row. To hide this button for the required rows, use the button's [visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible) property. Assign a function to this property and check a row's data in a similar manner as in the DataGrid's [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event.
+DataGrid's [editing mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode) defines whether to display an **Edit** button opposite every row. To hide this button, use the button's [visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible) property. Assign a callback to this property and check row data within this function.
 
 ---
 ##### jQuery
@@ -107,13 +107,14 @@ The DataGrid's [editing mode](/Documentation/ApiReference/UI_Components/dxDataGr
         $("#dataGrid").dxDataGrid({
             // ...
             columns: [{
-            type: "buttons",
-            buttons: [{
-                name: "edit",
-                visible: function(e) {
-                    return e.row.data.Position !== "CEO";
-                }
-            }, "delete"]
+                type: "buttons",
+                buttons: [{
+                    name: "edit",
+                    visible: function(e) {
+                        return e.row.data.Position !== "CEO";
+                    }
+                }, "delete"]
+            }],
         });
     });
 

@@ -6,7 +6,7 @@ id: Widget.repaint()
 Repaints the UI component without reloading data. Call it to update the UI component's markup.
 
 ---
-[note] This method repaints Toolbar and re-initializes all its items.
+The method repaints Toolbar and re-initializes all its items.
 
 #####See Also#####
 - **reload()** in [DataSource](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') | [List](/api-reference/10%20UI%20Components/dxList/3%20Methods/reload().md '/Documentation/ApiReference/UI_Components/dxList/Methods/#reload')

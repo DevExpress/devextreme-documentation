@@ -1,4 +1,4 @@
-This section describes the solutions to the issues (an empty edit box or an empty dropdown list) related to the following drop-down editors:
+This section describes what you can do if the following drop-down editors display an empty edit box or an empty dropdown list:
 
 - [SelectBox](/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/)
 - [Lookup](/Documentation/Guide/UI_Components/Lookup/Getting_Started_with_Lookup/)

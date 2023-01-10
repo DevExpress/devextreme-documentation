@@ -1,4 +1,4 @@
-If you specify a [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) for a drop-down editor, the [store](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/).[key](/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key) value and the drop-down editor's [valueExpr](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueExpr) should be the same. In the examples below, the `ID` is used as both `key` and `valueExpr`. This rule applies both to standalone editors and DataGrid/TreeList lookup column editor.
+If you specify a [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) for a drop-down editor, the [store](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/store/).[key](/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key) value and the drop-down editor's [valueExpr](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueExpr) should be the same. In the examples below, the `ID` is used as both `key` and `valueExpr`. This rule applies to standalone editors and DataGrid/TreeList lookup column editors.
 
 ---
 ##### jQuery

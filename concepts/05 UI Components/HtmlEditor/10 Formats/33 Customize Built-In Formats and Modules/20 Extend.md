@@ -1,6 +1,6 @@
 You can extend the HtmlEditor's <a href="https://github.com/DevExpress/DevExtreme/tree/22_1/js/ui/html_editor/formats" target="_blank">formats</a> and <a href="https://github.com/DevExpress/DevExtreme/tree/22_1/js/ui/html_editor/modules" target="_blank">modules</a>, and also the DevExtreme Quill's <a href="https://github.com/DevExpress/devextreme-quill/tree/master/formats" target="_blank">formats</a> and <a href="https://github.com/DevExpress/devextreme-quill/tree/master/modules" target="_blank">modules</a>. To get a format or module for further extension, pass *"formats/[formatName]"* or *"modules/[moduleName]"* to the [get(componentPath)](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/get(componentPath).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#getcomponentPath') method.
 
-In the following code, the `strike` format is extended so that the stricken out text is non-editable when the format is applied. The extended format is then [registered](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#registercomponents').
+In the following code, the `strike` format is extended so that the strikethrough text is non-editable when the format is applied. The extended format is then [registered](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/register(components).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#registercomponents').
 
 ---
 ##### jQuery
@@ -136,3 +136,5 @@ In the following code, the `strike` format is extended so that the stricken out 
     export default App;
 
 ---
+
+[note] Quill registers modules globally in a static function. You cannot register different modules for different HtmlEditor instances. If you register a module for one HtmlEditor, this module will be registered for all other HtmlEditors on the page/application.

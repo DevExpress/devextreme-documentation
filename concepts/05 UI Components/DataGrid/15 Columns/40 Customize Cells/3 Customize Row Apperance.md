@@ -1,10 +1,12 @@
-Use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
+To customize the existing row layout, implement the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
 }
 
-To customize the existing row layout, implement the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) event handler.
+The following example demonstrates how to use the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) function to change cell color conditionally. As a result, the DataGrid component paints the rows where velocity is higher than speed limit red.
+
+![Change Color Conditionally with onRowPrepared](/images/DataGrid/customize-appearance/onRowPrepared.png)
 
 ---
 ##### jQuery
@@ -16,10 +18,10 @@ To customize the existing row layout, implement the [onRowPrepared](/Documentati
             onRowPrepared: function(e) {
                 if (e.rowType === "data") {
                     if (e.data.Velocity > e.data.SpeedLimit) {
-                        e.rowElement.css("background-color", "red");
+                        e.rowElement.css({"color":"white", "background-color":"red"});
                         // or
                         e.rowElement.addClass("my-class");
-                        // to override alternation color
+                        // To override alternation color
                         e.rowElement.removeClass("dx-row-alt");
                     }
                 }
@@ -40,10 +42,10 @@ To customize the existing row layout, implement the [onRowPrepared](/Documentati
         onRowPrepared(e) {
             if (e.rowType === "data") {
                 if (e.data.Velocity > e.data.SpeedLimit) {
-                    e.rowElement.style.backgroundColor = "red";
+                    e.cellElement.style.cssText = "color: white; background-color: red";
                     // or
                     e.rowElement.classList.add("my-class");
-                    // to override alternation color
+                    // To override alternation color
                     e.rowElement.className = e.rowElement.className.replace("dx-row-alt", "");
                 }
             }
@@ -72,10 +74,10 @@ To customize the existing row layout, implement the [onRowPrepared](/Documentati
             onRowPrepared(e) {
                 if (e.rowType === "data") {
                     if (e.data.Velocity > e.data.SpeedLimit) {
-                        e.rowElement.style.backgroundColor = "red";
+                        e.cellElement.style.cssText = "color: white; background-color: red";
                         // or
                         e.rowElement.classList.add("my-class");
-                        // to override alternation color
+                        // To override alternation color
                         e.rowElement.className = e.rowElement.className.replace("dx-row-alt", "");
                     }
                 }
@@ -96,10 +98,10 @@ To customize the existing row layout, implement the [onRowPrepared](/Documentati
     const rowPrepared = (e) => {
         if (e.rowType === "data") {
             if (e.data.Velocity > e.data.SpeedLimit) {
-                e.rowElement.style.backgroundColor = "red";
+                e.cellElement.style.cssText = "color: white; background-color: red";
                 // or
                 e.rowElement.classList.add("my-class");
-                // to override alternation color
+                // To override alternation color
                 e.rowElement.className = e.rowElement.className.replace("dx-row-alt", "");
             }
         }
@@ -116,6 +118,8 @@ To customize the existing row layout, implement the [onRowPrepared](/Documentati
     export default App;
     
 ---
+
+You can also use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance.
 
 To change row selection color, use the following CSS rules:
 

@@ -8644,6 +8644,9 @@
     "dxRangeSelectorOptions.behavior.snapToTicks": {
       "vue": "snap-to-ticks"
     },
+    "dxRangeSelectorOptions.behavior.valueChangeMode": {
+      "vue": "value-change-mode"
+    },
     "dxRangeSelectorOptions.chart": {
       "angular": "dxo-chart",
       "react": "Chart",
@@ -11892,6 +11895,9 @@
     "enums.SingleOrNone": {
       "vue": "single-or-none"
     },
+    "enums.SliderValueChangeMode": {
+      "vue": "slider-value-change-mode"
+    },
     "enums.SmallValuesGroupingMode": {
       "vue": "small-values-grouping-mode"
     },
@@ -11993,9 +11999,6 @@
     },
     "enums.ValueChangedCallMode": {
       "vue": "value-changed-call-mode"
-    },
-    "enums.ValueChangeMode": {
-      "vue": "value-change-mode"
     },
     "enums.ValueErrorBarDisplayMode": {
       "vue": "value-error-bar-display-mode"

@@ -6,7 +6,7 @@ If you place DevExtreme components in a [Bootstrap modal](https://getbootstrap.c
 - [TextArea](/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/) loses focus.
 - DataGrid [ColumnChooser](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/) loses focus.
 
-On page load, Bootstrap locates all modals and places their children into special collections. A modal only allows items from its children collection to receive focus. At the same time, DevExtreme components can generate elements on the fly. Such dynamically-generated elements do not get attached to the focusable collection.
+On page load, Bootstrap locates all modals and places their child elements into special collections. A modal only allows items from its child element collection to receive focus. At the same time, DevExtreme components can generate elements on the fly. Such dynamically-generated elements do not get attached to the focusable collection.
 
 To allow any element to obtain input focus, specify a specially-designed option as shown in the code below.
 

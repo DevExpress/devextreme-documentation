@@ -8,7 +8,7 @@ If you place DevExtreme components in a [Bootstrap modal](https://getbootstrap.c
 
 On page load, Bootstrap locates all modals and places their children into special collections. A modal only allows items from its children collection to receive focus. At the same time, DevExtreme components can generate elements on the fly. Such dynamically-generated elements do not get attached to the focusable collection.
 
-To prevent this behavior, configure the option that maintains focus inside the modal itself.
+To allow any element to obtain input focus, specify a specially-designed option as shown in the code below.
 
 ---
 

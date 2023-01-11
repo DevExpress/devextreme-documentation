@@ -1,5 +1,5 @@
 ---
-id: globalConfig.floatingActionButtonConfig.icon
+id: GlobalConfig.floatingActionButtonConfig.icon
 type: String
 default: 'add'
 ---

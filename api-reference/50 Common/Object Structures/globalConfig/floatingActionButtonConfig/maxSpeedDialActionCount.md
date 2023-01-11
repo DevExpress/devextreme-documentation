@@ -1,5 +1,5 @@
 ---
-id: globalConfig.floatingActionButtonConfig.maxSpeedDialActionCount
+id: GlobalConfig.floatingActionButtonConfig.maxSpeedDialActionCount
 type: Number
 default: 5
 ---

@@ -1,5 +1,5 @@
 ---
-id: globalConfig.floatingActionButtonConfig
+id: GlobalConfig.floatingActionButtonConfig
 type: Object
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: globalConfig.useJQuery
+id: GlobalConfig.useJQuery
 type: Boolean
 hidden: 
 ---

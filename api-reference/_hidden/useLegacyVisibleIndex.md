@@ -1,5 +1,5 @@
 ---
-id: globalConfig.useLegacyVisibleIndex
+id: GlobalConfig.useLegacyVisibleIndex
 type: Boolean
 default: false
 ---

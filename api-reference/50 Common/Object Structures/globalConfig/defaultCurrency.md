@@ -1,5 +1,5 @@
 ---
-id: globalConfig.defaultCurrency
+id: GlobalConfig.defaultCurrency
 type: String
 default: 'USD'
 ---

@@ -1,5 +1,5 @@
 ---
-id: globalConfig.serverDecimalSeparator
+id: GlobalConfig.serverDecimalSeparator
 type: String
 default: '.'
 ---

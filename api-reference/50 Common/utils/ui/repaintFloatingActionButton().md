@@ -8,7 +8,7 @@ export: default
 Repaints the [Floating Action Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview).
 
 ---
-Call this method to repaint the Floating Action Button after you change the **globalConfig**.[floatingActionButtonConfig](/api-reference/50%20Common/Object%20Structures/globalConfig/floatingActionButtonConfig '/Documentation/ApiReference/Common/Object_Structures/globalConfig/floatingActionButtonConfig/') at runtime:
+Call this method to repaint the Floating Action Button after you change the **GlobalConfig**.[floatingActionButtonConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/') at runtime:
 
 ---
 ##### jQuery

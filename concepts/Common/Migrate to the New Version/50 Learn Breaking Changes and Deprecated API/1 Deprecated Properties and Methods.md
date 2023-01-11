@@ -32,6 +32,10 @@
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxPopup/Configuration/#elementAttr">elementAttr</a></td>
 </tr>
 <tr>
+<td>RangeSelector</td>
+<td><b>behavior.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#callValueChanged">callValueChanged</a></td>
+</tr>
+<tr>
 <td>Sankey</td>
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxSankey/Node/Fields/#title">title</a></td>
 </tr>
@@ -66,5 +70,9 @@
 <tr>
 <td>Object Structures</td>
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common/Object_Structures/globalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common/Object_Structures/globalConfig/#thousandsSeparator">thousandsSeparator</a></td>
+</tr>
+<tr>
+<td>GlobalConfig</td>
+<td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/NewTopics/GlobalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/NewTopics/GlobalConfig/#thousandsSeparator">thousandsSeparator</a></td>
 </tr>
 </table>

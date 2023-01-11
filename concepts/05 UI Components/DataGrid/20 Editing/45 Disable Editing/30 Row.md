@@ -1,6 +1,6 @@
 To disable data editing within a specific row, follow the steps below:
 
-1. Handle the DataGrid's [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) event. 
+1. Handle the DataGrid's [onEditingStart](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditingStart.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart') event. 
 2. Check the **data** parameter's values. If you want don't want users to edit this row, assign **true** to **e.cancel**.
 
 ---
@@ -97,7 +97,7 @@ To disable data editing within a specific row, follow the steps below:
 
 ---
 
-DataGrid's [editing mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode) defines whether to display an **Edit** button opposite every row. To hide this button, use the button's [visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible) property. Assign a callback to this property and check row data within this function.
+DataGrid's [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode') defines whether to display an **Edit** button opposite every row. To hide this button, use the button's [visible](/api-reference/_hidden/dxDataGridColumnButton/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#visible') property. Assign a callback to this property and check row data within this function.
 
 ---
 ##### jQuery
@@ -207,5 +207,5 @@ DataGrid's [editing mode](/Documentation/ApiReference/UI_Components/dxDataGrid/C
 ---
 
 #####See Also#####
-- [Customize the Edit Column](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/#Customize_the_Edit_Column)
+- [Customize the Edit Column](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/15%20Customize%20the%20Edit%20Column/0%20Customize%20the%20Edit%20Column.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/#Customize_the_Edit_Column')
 

@@ -67,4 +67,8 @@
 <td>Object Structures</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Common/Object_Structures/globalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Common/Object_Structures/globalConfig/#thousandsSeparator">thousandsSeparator</a></td>
 </tr>
+<tr>
+<td>GlobalConfig</td>
+<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/NewTopics/GlobalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/NewTopics/GlobalConfig/#thousandsSeparator">thousandsSeparator</a></td>
+</tr>
 </table>

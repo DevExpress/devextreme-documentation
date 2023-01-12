@@ -1,5 +1,5 @@
 ---
-id: globalConfig.thousandsSeparator
+id: GlobalConfig.thousandsSeparator
 type: String
 default: ','
 deprecated: 

@@ -15,6 +15,6 @@ The accounting style adds parentheses to negative numbers instead of the minus s
         useCurrencyAccountingStyle: false 
     });
 
-If you do not specify this property, the [defaultUseCurrencyAccountingStyle](/api-reference/50%20Common/Object%20Structures/globalConfig/defaultUseCurrencyAccountingStyle.md '/Documentation/ApiReference/Common/Object_Structures/globalConfig/#defaultUseCurrencyAccountingStyle') global configuration setting is in effect. The `useCurrencyAccountingStyle` property has priority over the global setting.
+If you do not specify this property, the [defaultUseCurrencyAccountingStyle](/api-reference/50%20Common/Object%20Structures/GlobalConfig/defaultUseCurrencyAccountingStyle.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultUseCurrencyAccountingStyle') global configuration setting is in effect. The `useCurrencyAccountingStyle` property has priority over the global setting.
 
 ![How to Override the defaultUseCurrencyAccountingStyle](/images/types/use-currency-accounting-style.png)

@@ -1,5 +1,5 @@
 ---
-id: globalConfig.floatingActionButtonConfig.label
+id: GlobalConfig.floatingActionButtonConfig.label
 type: String
 default: ''
 ---

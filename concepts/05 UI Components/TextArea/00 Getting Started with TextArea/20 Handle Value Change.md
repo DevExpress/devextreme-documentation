@@ -1,6 +1,6 @@
-If a user edits the text in a TextArea, the UI component updates the [value](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#value) property. The update happens on the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event. To specify another value change event, use the [valueChangeEvent](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#valueChangeEvent) property.
+If a user edits the text in a TextArea, the UI component updates the [value](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#value') property. The update happens on the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event. To specify another value change event, use the [valueChangeEvent](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#valueChangeEvent') property.
 
-To handle the value change event, implement the [onValueChanged](/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#onValueChanged) function.
+To handle the value change event, implement the [onValueChanged](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#onValueChanged') function.
 
 ---
 ##### jQuery

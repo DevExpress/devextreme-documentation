@@ -1,6 +1,6 @@
 To customize cell appearance, use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property or the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function. The [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') option allows you to replace the default cell layout with a custom markup. The [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') event handler allows you to customize the existing layout after it is generated.
 
-You can also use CSS rules and assign a class to the [cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to customize cell appearance. 
+You can also use CSS rules and assign a class to the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to customize cell appearance. 
 
 If a customization is not immediately applied, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid or the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint specific rows only.
 
@@ -8,9 +8,9 @@ If a customization is not immediately applied, use the [repaint()](/Documentatio
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
 }
 
-The following example demonstrates how to use the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function to change cell color conditionally. As a result, the DataGrid component paints the cells where velocity is higher than speed limit red.
+The following example demonstrates how to use the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function to change cell color conditionally. As a result, the DataGrid component paints the cells where speed is higher than speed limit red.
 
-Remove the `e.column.dataField === "Velocity"` condition to apply the appearance to all cells in a row.
+Remove the `e.column.dataField === "Speed"` condition to apply the appearance to all cells in a row.
 
 ![Change Color Conditionally with onCellPrepared](/images/DataGrid/customize-appearance/onCellPrepared.png)
 
@@ -23,7 +23,7 @@ Remove the `e.column.dataField === "Velocity"` condition to apply the appearance
             // ...
             onCellPrepared: function(e) {
                 if (e.rowType === "data") {
-                    if (e.column.dataField === "Velocity" && e.data.Velocity > e.data.SpeedLimit) {
+                    if (e.column.dataField === "Speed" && e.data.Speed > e.data.SpeedLimit) {
                         e.cellElement.css({"color":"white", "background-color":"red"});
                         // or
                         e.cellElement.addClass("my-class");
@@ -45,7 +45,7 @@ Remove the `e.column.dataField === "Velocity"` condition to apply the appearance
     export class AppComponent {
         onCellPrepared (e) {
             if (e.rowType === "data") {
-                if (e.column.dataField === "Velocity" && e.data.Velocity > e.data.SpeedLimit) {
+                if (e.column.dataField === "Speed" && e.data.Speed > e.data.SpeedLimit) {
                     e.cellElement.style.cssText = "color: white; background-color: red";
                     // or
                     e.cellElement.classList.add("my-class");
@@ -75,7 +75,7 @@ Remove the `e.column.dataField === "Velocity"` condition to apply the appearance
         methods: {
             onCellPrepared(e) {
                 if (e.rowType === "data") {
-                    if (e.column.dataField === "Velocity" && e.data.Velocity > e.data.SpeedLimit) {
+                    if (e.column.dataField === "Speed" && e.data.Speed > e.data.SpeedLimit) {
                         e.cellElement.style.cssText = "color: white; background-color: red";
                         // or
                         e.cellElement.classList.add("my-class");
@@ -97,7 +97,7 @@ Remove the `e.column.dataField === "Velocity"` condition to apply the appearance
 
     const cellPrepared = (e) => {
         if (e.rowType === "data") {
-            if (e.column.dataField === "Velocity" && e.data.Velocity > e.data.SpeedLimit) {
+            if (e.column.dataField === "Speed" && e.data.Speed > e.data.SpeedLimit) {
                 e.cellElement.style.cssText = "color: white; background-color: red";
                 // or
                 e.cellElement.classList.add("my-class");
@@ -117,7 +117,9 @@ Remove the `e.column.dataField === "Velocity"` condition to apply the appearance
     
 ---
 
-The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same task.
+The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same task. 
+
+The [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function allows you to apply custom styles directly to the cell element. But a [cell template](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') cannot access the cell element. If you create a custom cell template, it is applied to the cell after a DataGrid is rendered. This is why the image below differs from the previous image.
 
 ![Change Color Conditionally with cellTemplate](/images/DataGrid/customize-appearance/column-cellTemplate.png)
 
@@ -129,10 +131,10 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
         $("#dataGridContainer").dxDataGrid({
             // ...
             columns: [{
-                dataField: 'Velocity',
+                dataField: 'Speed',
                 cellTemplate: function(container, cellInfo) {
                     const valueDiv = $("<div>").text(cellInfo.value);
-                    if (cellInfo.data.Velocity > cellInfo.data.SpeedLimit) {
+                    if (cellInfo.data.Speed > cellInfo.data.SpeedLimit) {
                         valueDiv.css({"color":"white", "background-color":"red"});
                     }
                     return valueDiv;
@@ -146,11 +148,11 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <dxi-column
-            dataField="Velocity"
+            dataField="Speed"
             cellTemplate="limitTemplate"
         ></dxi-column>
         <div *dxTemplate="let cellInfo of 'limitTemplate'">
-            <div [ngClass]="{'my-class': cellInfo.data.Velocity > cellInfo.data.SpeedLimit}">
+            <div [ngClass]="{'my-class': cellInfo.data.Speed > cellInfo.data.SpeedLimit}">
                 {{cellInfo.value}}
             </div>                                                 
         </div>
@@ -168,13 +170,13 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
     <template>
         <DxDataGrid ... >
             <DxColumn
-                data-field="Velocity"
+                data-field="Speed"
                 cell-template="grid-cell"
             />
             <template #grid-cell="{ data }">
                 <div
                     :class="{
-                        'my-class': cellInfo.data.Velocity > cellInfo.data.SpeedLimit,
+                        'my-class': cellInfo.data.Speed > cellInfo.data.SpeedLimit,
                     }"
                 >{{data.value}}</div>
             </template>
@@ -217,7 +219,7 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
 
     const renderGridCell = (data) => {
         let className = '';
-        if (cellInfo.data.Velocity > cellInfo.data.SpeedLimit) {
+        if (cellInfo.data.Speed > cellInfo.data.SpeedLimit) {
             className += 'my-class';
         }
         return <div className={className}>{cellInfo.value}</div>;
@@ -227,7 +229,7 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
         return (
             <DataGrid ... >
                 <Column
-                    dataField="Velocity"
+                    dataField="Speed"
                     cellRender={renderGridCell}
                 />
             </DataGrid>

@@ -1,10 +1,10 @@
-To customize the existing row layout, implement the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
+To customize the existing row appearance, implement the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
 }
 
-The following example demonstrates how to use the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) function to change cell color conditionally. As a result, the DataGrid component paints the rows where velocity is higher than speed limit red.
+The following example demonstrates how to use the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) function to change cell color conditionally. As a result, the DataGrid component paints the rows where speed is higher than speed limit red.
 
 ![Change Color Conditionally with onRowPrepared](/images/DataGrid/customize-appearance/onRowPrepared.png)
 
@@ -17,7 +17,7 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
             // ...
             onRowPrepared: function(e) {
                 if (e.rowType === "data") {
-                    if (e.data.Velocity > e.data.SpeedLimit) {
+                    if (e.data.Speed > e.data.SpeedLimit) {
                         e.rowElement.css({"color":"white", "background-color":"red"});
                         // or
                         e.rowElement.addClass("my-class");
@@ -41,7 +41,7 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
     export class AppComponent {
         onRowPrepared(e) {
             if (e.rowType === "data") {
-                if (e.data.Velocity > e.data.SpeedLimit) {
+                if (e.data.Speed > e.data.SpeedLimit) {
                     e.cellElement.style.cssText = "color: white; background-color: red";
                     // or
                     e.rowElement.classList.add("my-class");
@@ -73,7 +73,7 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
         methods: {
             onRowPrepared(e) {
                 if (e.rowType === "data") {
-                    if (e.data.Velocity > e.data.SpeedLimit) {
+                    if (e.data.Speed > e.data.SpeedLimit) {
                         e.cellElement.style.cssText = "color: white; background-color: red";
                         // or
                         e.rowElement.classList.add("my-class");
@@ -97,7 +97,7 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
 
     const rowPrepared = (e) => {
         if (e.rowType === "data") {
-            if (e.data.Velocity > e.data.SpeedLimit) {
+            if (e.data.Speed > e.data.SpeedLimit) {
                 e.cellElement.style.cssText = "color: white; background-color: red";
                 // or
                 e.rowElement.classList.add("my-class");
@@ -120,6 +120,8 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
 ---
 
 You can also use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance.
+
+Besides row appearance in the active state, you can also specify CSS rules for selected, focused and hovered rows.
 
 To change row selection color, use the following CSS rules:
 

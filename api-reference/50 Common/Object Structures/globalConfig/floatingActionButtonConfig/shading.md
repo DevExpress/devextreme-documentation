@@ -1,5 +1,5 @@
 ---
-id: globalConfig.floatingActionButtonConfig.shading
+id: GlobalConfig.floatingActionButtonConfig.shading
 type: Boolean
 default: false
 ---

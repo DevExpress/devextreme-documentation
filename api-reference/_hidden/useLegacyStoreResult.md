@@ -1,5 +1,5 @@
 ---
-id: globalConfig.useLegacyStoreResult
+id: GlobalConfig.useLegacyStoreResult
 type: Boolean
 default: false
 ---

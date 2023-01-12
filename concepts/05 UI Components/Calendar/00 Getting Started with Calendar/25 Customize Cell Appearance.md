@@ -25,8 +25,10 @@ Use [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configurat
             cellTemplate: function(data) {
                 let cssClass = '';
                 $.each(federalHolidays, (_, item) => {
-                    if (data.date.getDate() === item.getDate() && data.date.getMonth() === item.getMonth() && data.view !== 'year') {
-                        cssClass = 'holiday';
+                    if (data.date !== undefined) {
+                        if (data.date.getDate() === item.getDate() && data.date.getMonth() === item.getMonth() && data.view !== 'year') {
+                            cssClass = 'holiday';
+                        }
                     }
                 });
                 return `<span class='${cssClass}'>${data.text}</span>`;
@@ -76,11 +78,12 @@ Use [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configurat
         getCellCssClass(date: any, view: any) {
             let cssClass = '';
             this.federalHolidays.forEach((item) => {
-                if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                    cssClass = 'holiday';
+                if (date !== undefined) {
+                    if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                        cssClass = 'holiday';
+                    }
                 }
             });
-
             return cssClass;
         }
     }
@@ -129,8 +132,10 @@ Use [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configurat
             getCellCssClass(date, view) {
                 let cssClass = '';
                 federalHolidays.forEach((item) => {
-                    if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                        cssClass = 'holiday';
+                    if (date !== undefined) {
+                        if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                            cssClass = 'holiday';
+                        }
                     }
                 });
                 return cssClass;
@@ -187,8 +192,10 @@ Use [cellTemplate](/api-reference/10%20UI%20Components/dxCalendar/1%20Configurat
     function getCellCssClass(date, view) {
         let cssClass = '';
         federalHolidays.forEach((item) => {
-            if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
-                cssClass = 'holiday';
+            if (date !== undefined) {
+                if (date.getDate() === item.getDate() && date.getMonth() === item.getMonth() && view !== 'year') {
+                    cssClass = 'holiday';
+                }
             }
         });
         return cssClass;

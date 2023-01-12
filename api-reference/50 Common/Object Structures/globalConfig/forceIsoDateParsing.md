@@ -1,5 +1,5 @@
 ---
-id: globalConfig.forceIsoDateParsing
+id: GlobalConfig.forceIsoDateParsing
 type: Boolean
 default: true
 ---

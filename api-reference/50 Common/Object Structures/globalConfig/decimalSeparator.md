@@ -1,5 +1,5 @@
 ---
-id: globalConfig.decimalSeparator
+id: GlobalConfig.decimalSeparator
 type: String
 default: '.'
 deprecated: 

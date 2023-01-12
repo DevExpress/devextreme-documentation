@@ -345,7 +345,7 @@
     },
     "core/config": {
       "default": {},
-      "globalConfig": {}
+      "GlobalConfig": {}
     },
     "ui/accordion": {
       "default": {}

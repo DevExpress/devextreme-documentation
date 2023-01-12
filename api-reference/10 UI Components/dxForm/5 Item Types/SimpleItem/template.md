@@ -222,10 +222,6 @@ A template name or container.
 
 ---
 
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
-}
 #include common-githubbutton with {
     url: "https://github.com/DevExpress-Examples/Form-Custom-items"
 }

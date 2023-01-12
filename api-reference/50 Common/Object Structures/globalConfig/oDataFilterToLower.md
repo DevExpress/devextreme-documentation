@@ -1,5 +1,5 @@
 ---
-id: globalConfig.oDataFilterToLower
+id: GlobalConfig.oDataFilterToLower
 type: Boolean
 default: true
 ---

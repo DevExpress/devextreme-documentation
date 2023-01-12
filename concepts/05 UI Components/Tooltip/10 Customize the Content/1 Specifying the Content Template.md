@@ -1,4 +1,4 @@
-The following code shows how to create a template consisting of static (text) and dynamic (the [Switch](/concepts/05%20UI%20Components/Switch/00%20Overview.md '/Documentation/Guide/UI_Components/Switch/Overview/') UI component) content:
+The following code shows how to create a template consisting of static (text) and dynamic (the [Switch](/concepts/05%20UI%20Components/Switch/00%20Getting%20Started%20with%20Switch '/Documentation/Guide/UI_Components/Switch/Getting_Started_with_Switch/') UI component) content:
 
 ---
 ##### jQuery 

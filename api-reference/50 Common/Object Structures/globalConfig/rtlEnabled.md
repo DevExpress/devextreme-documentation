@@ -1,5 +1,5 @@
 ---
-id: globalConfig.rtlEnabled
+id: GlobalConfig.rtlEnabled
 type: Boolean
 default: false
 ---

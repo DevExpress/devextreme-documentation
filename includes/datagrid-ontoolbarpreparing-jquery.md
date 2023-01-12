@@ -1,6 +1,10 @@
+
+---
+##### jQuery
+
 The following code adds a refresh button to the toolbar:
     
-    <!--JavaScript-->$(function() {
+    $(function() {
         $("#container").dx{WidgetName}({
             // ...
             onToolbarPreparing: function(e) {
@@ -19,4 +23,4 @@ The following code adds a refresh button to the toolbar:
         });
     });
 
-[tags] jquery
+---

@@ -1,5 +1,5 @@
 ---
-id: globalConfig.floatingActionButtonConfig.closeIcon
+id: GlobalConfig.floatingActionButtonConfig.closeIcon
 type: String
 default: 'close'
 ---

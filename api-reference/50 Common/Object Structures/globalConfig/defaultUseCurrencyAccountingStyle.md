@@ -1,5 +1,5 @@
 ---
-id: globalConfig.defaultUseCurrencyAccountingStyle
+id: GlobalConfig.defaultUseCurrencyAccountingStyle
 type: Boolean
 default: true
 ---

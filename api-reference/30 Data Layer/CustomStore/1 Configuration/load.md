@@ -4,7 +4,7 @@ type: function(options)
 ---
 ---
 ##### shortDescription
-Specifies a custom implementation of the [load(options)](/api-reference/30%20Data%20Layer/Store/3%20Methods/load(options).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#loadoptions') method.
+Specifies a custom implementation of the [load(options)](/api-reference/30%20Data%20Layer/CustomStore/3%20Methods/load(options).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#loadoptions') method.
 
 ##### param(options): LoadOptions
 Data processing settings.

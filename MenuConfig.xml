@@ -99,8 +99,8 @@
   <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|zz Common)" />
   <MenuRule Destination="10 UI Components/Floating Action Button/2 SpeedDialAction API" SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction" />
   <MenuRule Destination="10 UI Components/$1/2 API" SourcePattern="ApiReference:^10 UI Components/dx([a-zA-Z]+)" />
+  <MenuRule Destination="10 UI Components/$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList)/99 How To" />
   <MenuRule Destination="10 UI Components/$1/1 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
-
   <!-- Hidden topics -->
   <MenuRule Destination="" SourcePattern="Howto:^34 ASP.NET MVC Controls" />
   <MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />

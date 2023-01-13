@@ -6,10 +6,21 @@ env:
   node-version: 12.x
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    name: Prepare
+    steps:
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: |
+          3.1
 
   build:
     runs-on: ubuntu-latest
     name: ContentMap
+    needs: [prepare]
     steps:
 
     - name: Checkout
@@ -29,6 +40,7 @@ jobs:
   link:
     runs-on: ubuntu-latest
     name: Check links
+    needs: [prepare]
     steps:
 
     - name: Checkout

@@ -100,7 +100,7 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"
 }
 
-Strings, numbers, dates, and currencies are now automatically localized and formatted according to the specified locale. You can also specify a currency other than USD globally (using the [defaultCurrency](/api-reference/50%20Common/Object%20Structures/globalConfig/defaultCurrency.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultCurrency') setting) or in format definitions:
+Strings, numbers, dates, and currencies are now automatically localized and formatted according to the specified locale. You can also specify a currency other than USD globally (using the [defaultCurrency](/api-reference/50%20Common/Object%20Structures/GlobalConfig/defaultCurrency.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultCurrency') setting) or in format definitions:
 
 ---
 #####jQuery

@@ -9,6 +9,11 @@ jobs:
     name: Generate Documentation
 
     steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
       - name: Checkout Docs
         uses: actions/checkout@v3
         with:
@@ -27,47 +32,29 @@ jobs:
       - name: NPM - devextreme
         working-directory: devextreme
         run: |
-          npm i
+          npm i --legacy-peer-deps
           npm update devextreme-internal-tools
 
       - name: NPM - devextreme-documentation
         working-directory: documentation
         run: npm i
 
+      - name: Prepare dx-tools
+        run: |
+          mkdir dx-tools && cd dx-tools
+          cp ../devextreme/package.json ./package.json
+          npm install devextreme-internal-tools
+
       #Generation
       - name: Setup dotnet
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: |
-            3.1  
-
-      - name: Discover declarations
-        working-directory: devextreme
-        run: npm run discover-declarations -- --artifacts ../artifacts
+            3.1
 
       - name: Update topics
-        working-directory: documentation
-        run: npm run update-topics -- --declarations-path ../artifacts/Declarations.json --artifacts ../artifacts
-
-      - name: Generate additional topics
-        working-directory: documentation
-        run: npm run generate-extra-topic
-
-      - name: Generate Syntax metadata
-        working-directory: documentation
-        run: npm run generate-syntax-data -- --declarations-path $(realpath ../artifacts/Declarations.json)
-
-      - name: Generate Modules metadata
-        working-directory: documentation
-        run: npm run generate-modules-meta -- --declarations-path $(realpath ../artifacts/Declarations.json) --js-scripts ../devextreme/js
-
-      - name: Generate ContentMap
-        working-directory: documentation
-        run: npm run generate-content-map
-
-      - name: Update links
-        working-directory: documentation
-        run: npm run update-links
+        working-directory: dx-tools
+        run: npm run internal-tool -- update-topics --js-scripts $(realpath  ../devextreme/js) --docs-root $(realpath ../documentation) --artifacts $(realpath ../artifacts)
 
       #Git
       - name: Configure Git
@@ -83,7 +70,7 @@ jobs:
           branch_name="dxrobot/${{ github.ref_name }}_D$formatted_time"
           
           git checkout -b $branch_name
-          git add ./api-reference ./concepts ./metadata
+          git add ./api-reference
           git commit -m "DocGen ${{ github.ref_name }} result" || exit 0
           
           git push --set-upstream origin $branch_name

@@ -6,7 +6,6 @@ env:
   node-version: 12.x
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     name: ContentMap
@@ -14,6 +13,12 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: |
+          3.1
 
     - name: Setup Node.js
       uses: actions/setup-node@v1
@@ -33,6 +38,12 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: |
+          3.1
 
     - name: Setup Node.js
       uses: actions/setup-node@v1

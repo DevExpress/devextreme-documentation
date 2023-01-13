@@ -1,6 +1,7 @@
 ---
 id: ExcelExportBaseProps.loadPanel
 type: ExportLoadPanel
+default: false
 inheritsType: ExportLoadPanel
 ---
 ---

@@ -15,4 +15,4 @@ The following styles are available:
 ![DevExtreme HTML5 JavaScript HtmlEditor Underlined Style](/images/htmlEditor/styling_modes/htmEditor_stylingMode_underlined.png)
 ![DevExtreme HTML5 JavaScript HtmlEditor Filled Style](/images/htmlEditor/styling_modes/htmEditor_stylingMode_filled.png)
 
-You can also use the global [editorStylingMode](/api-reference/50%20Common/Object%20Structures/GlobalConfig/editorStylingMode.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#editorStylingMode') setting to specify how the text fields of all editors in your application are styled.
+You can also use the global [editorStylingMode](/api-reference/50%20Common/Object%20Structures/globalConfig/editorStylingMode.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#editorStylingMode') setting to specify how the text fields of all editors in your application are styled.

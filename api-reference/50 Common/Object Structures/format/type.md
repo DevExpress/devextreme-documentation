@@ -36,7 +36,7 @@ Depending on the values you need to format, you can choose one of the following 
 
 - Set the [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/format/#precision') property to show fractional numbers.
 
-- Set the [currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/format/#currency') property to use a currency other than USD. Alternatively, you can set the [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/').[defaultCurrency](/api-reference/50%20Common/Object%20Structures/GlobalConfig/defaultCurrency.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultCurrency') property to apply the same currency to all DevExtreme components.
+- Set the [currency](/api-reference/50%20Common/Object%20Structures/format/currency.md '/Documentation/ApiReference/Common/Object_Structures/format/#currency') property to use a currency other than USD. Alternatively, you can set the [GlobalConfig](/api-reference/50%20Common/Object%20Structures/globalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/').[defaultCurrency](/api-reference/50%20Common/Object%20Structures/globalConfig/defaultCurrency.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultCurrency') property to apply the same currency to all DevExtreme components.
 
 - The *"fixedPoint"*, *"decimal"*, and *"currency"* format types can be paired with *"largeNumber", "thousands", "millions", "billions"*, and *"trillions"*, for example: *"fixedPoint thousands"*.
 

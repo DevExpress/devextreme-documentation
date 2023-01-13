@@ -9,7 +9,7 @@ default: 'left'
 Specifies the drawer's position in relation to the view.
 
 ---
-Use *"before"* and *"after"* if the Drawer should be positioned differently in right-to-left and regular representations. The following table shows the dependency between the [rtlEnabled](/api-reference/50%20Common/Object%20Structures/globalConfig/rtlEnabled.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#rtlEnabled') value and *"before"* and *"after"* positions:
+Use *"before"* and *"after"* if the Drawer should be positioned differently in right-to-left and regular representations. The following table shows the dependency between the [rtlEnabled](/api-reference/50%20Common/Object%20Structures/GlobalConfig/rtlEnabled.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#rtlEnabled') value and *"before"* and *"after"* positions:
 
 <table class="dx-table">
  <tr>

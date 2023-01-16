@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onModified
 type: function()
-EventForAction: Store.modified
 ---
 ---
 ##### shortDescription

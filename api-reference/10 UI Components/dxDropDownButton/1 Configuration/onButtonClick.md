@@ -2,7 +2,6 @@
 id: dxDropDownButton.Options.onButtonClick
 type: function(e) | String
 default: null
-EventForAction: dxDropDownButton.buttonClick
 ---
 ---
 ##### shortDescription

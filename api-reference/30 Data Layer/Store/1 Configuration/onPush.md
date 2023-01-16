@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onPush
 type: function(changes)
-EventForAction: Store.push
 ---
 ---
 ##### shortDescription

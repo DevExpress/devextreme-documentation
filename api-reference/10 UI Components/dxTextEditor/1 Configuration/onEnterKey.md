@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onEnterKey
 type: function(e)
 default: null
-EventForAction: dxTextEditor.enterKey
 ---
 ---
 ##### shortDescription

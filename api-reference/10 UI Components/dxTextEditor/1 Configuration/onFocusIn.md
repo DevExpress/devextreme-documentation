@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onFocusIn
 type: function(e)
 default: null
-EventForAction: dxTextEditor.focusIn
 ---
 ---
 ##### shortDescription

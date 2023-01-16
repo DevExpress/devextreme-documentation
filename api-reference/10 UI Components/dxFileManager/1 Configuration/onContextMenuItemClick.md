@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onContextMenuItemClick
 type: function(e)
 default: null
-EventForAction: dxFileManager.contextMenuItemClick
 ---
 ---
 ##### shortDescription

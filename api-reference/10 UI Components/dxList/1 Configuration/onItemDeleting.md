@@ -3,7 +3,6 @@ id: dxList.Options.onItemDeleting
 type: function(e)
 default: null
 hidden: false
-EventForAction: dxList.itemDeleting
 ---
 ---
 ##### param(e): Object

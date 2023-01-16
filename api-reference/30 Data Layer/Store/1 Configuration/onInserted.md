@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onInserted
 type: function(values, key)
-EventForAction: Store.inserted
 ---
 ---
 ##### shortDescription

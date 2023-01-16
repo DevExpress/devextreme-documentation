@@ -1,7 +1,6 @@
 ---
 id: BaseChart.Options.onPointHoverChanged
 type: function(e)
-EventForAction: BaseChart.pointHoverChanged
 notUsedInTheme: 
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxSpeedDialAction.Options.onClick
 type: function(e)
-EventForAction: dxSpeedDialAction.click
 ---
 ---
 ##### shortDescription

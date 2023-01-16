@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemClick
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemClick
 ---
 ---
 ##### param(e): Object

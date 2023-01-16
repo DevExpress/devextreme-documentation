@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onFocusedItemChanged
 type: function(e)
 default: null
-EventForAction: dxFileManager.focusedItemChanged
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxHtmlEditor.Options.onFocusOut
 type: function(e)
 default: null
-EventForAction: dxHtmlEditor.focusOut
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxOverlay.Options.onShowing
 type: function(e)
 default: null
-EventForAction: dxOverlay.showing
 ---
 ---
 ##### shortDescription

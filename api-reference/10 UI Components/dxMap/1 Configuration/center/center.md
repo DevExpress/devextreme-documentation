@@ -1,6 +1,6 @@
 ---
 id: dxMap.Options.center
-type: Object | String | Array<Number>
+type: any | String | Array<Number>
 inherits: MapLocation
 firedEvents: optionChanged
 ---

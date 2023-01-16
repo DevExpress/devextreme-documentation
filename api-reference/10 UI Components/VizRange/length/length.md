@@ -1,5 +1,6 @@
 ---
 id: VizRange.length
+type: Number | any | TimeIntervalType
 inherits: VizTimeInterval
 default: undefined
 ---

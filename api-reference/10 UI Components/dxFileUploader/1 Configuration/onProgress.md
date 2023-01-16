@@ -2,7 +2,6 @@
 id: dxFileUploader.Options.onProgress
 type: function(e)
 default: null
-EventForAction: dxFileUploader.progress
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: BaseChart.Options.onDone
 type: function(e)
 default: null
-EventForAction: BaseChart.done
 notUsedInTheme: 
 ---
 ---

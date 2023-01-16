@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onPaste
 type: function(e)
 default: null
-EventForAction: dxTextEditor.paste
 ---
 ---
 ##### shortDescription

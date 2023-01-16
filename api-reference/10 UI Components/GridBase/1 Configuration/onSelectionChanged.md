@@ -2,7 +2,6 @@
 id: GridBase.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: GridBase.selectionChanged
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxDropDownEditor.Options.onOpened
 type: function(e)
 default: null
-EventForAction: dxDropDownEditor.opened
 ---
 ---
 ##### shortDescription

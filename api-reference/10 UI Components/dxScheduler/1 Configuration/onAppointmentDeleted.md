@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentDeleted
 type: function(e)
 default: null
-EventForAction: dxScheduler.appointmentDeleted
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxHtmlEditor.Options.onFocusIn
 type: function(e)
 default: null
-EventForAction: dxHtmlEditor.focusIn
 ---
 ---
 ##### shortDescription

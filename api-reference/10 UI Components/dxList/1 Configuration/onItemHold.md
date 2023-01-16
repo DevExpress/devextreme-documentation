@@ -2,7 +2,6 @@
 id: dxList.Options.onItemHold
 type: function(e)
 default: null
-EventForAction: dxList.itemHold
 ---
 ---
 ##### param(e): Object

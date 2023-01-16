@@ -2,7 +2,6 @@
 id: dxDropDownList.Options.onItemClick
 type: function(e)
 default: null
-EventForAction: dxDropDownList.itemClick
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onNodesInitialized
 type: function(e)
 default: null
-EventForAction: dxTreeList.nodesInitialized
 ---
 ---
 ##### shortDescription

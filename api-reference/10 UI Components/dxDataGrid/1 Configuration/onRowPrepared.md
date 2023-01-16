@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onRowPrepared
 type: function(e)
 default: null
-EventForAction: dxDataGrid.rowPrepared
 ---
 ---
 ##### shortDescription

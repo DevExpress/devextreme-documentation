@@ -2,7 +2,6 @@
 id: dxGantt.Options.onTaskUpdated
 type: function(e)
 default: null
-EventForAction: dxGantt.taskUpdated
 ---
 ---
 ##### shortDescription

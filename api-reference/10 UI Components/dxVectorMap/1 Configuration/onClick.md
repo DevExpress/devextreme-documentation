@@ -2,7 +2,6 @@
 id: dxVectorMap.Options.onClick
 type: function(e) | String
 default: null
-EventForAction: dxVectorMap.click
 notUsedInTheme: 
 ---
 ---

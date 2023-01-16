@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onEditingStart
 type: function(e)
 default: null
-EventForAction: dxTreeList.editingStart
 ---
 ---
 ##### shortDescription

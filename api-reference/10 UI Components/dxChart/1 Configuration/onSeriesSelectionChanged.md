@@ -2,7 +2,6 @@
 id: dxChart.Options.onSeriesSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxChart.seriesSelectionChanged
 notUsedInTheme: 
 ---
 ---

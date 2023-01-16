@@ -2,7 +2,6 @@
 id: dxVectorMap.Options.onTooltipHidden
 type: function(e)
 default: null
-EventForAction: dxVectorMap.tooltipHidden
 notUsedInTheme: 
 ---
 ---

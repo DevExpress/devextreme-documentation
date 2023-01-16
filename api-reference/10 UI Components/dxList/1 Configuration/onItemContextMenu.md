@@ -2,7 +2,6 @@
 id: dxList.Options.onItemContextMenu
 type: function(e)
 default: null
-EventForAction: dxList.itemContextMenu
 ---
 ---
 ##### param(e): Object

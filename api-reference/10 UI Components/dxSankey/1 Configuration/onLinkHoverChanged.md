@@ -2,7 +2,6 @@
 id: dxSankey.Options.onLinkHoverChanged
 type: function(e)
 default: null
-EventForAction: dxSankey.linkHoverChanged
 notUsedInTheme: 
 ---
 ---

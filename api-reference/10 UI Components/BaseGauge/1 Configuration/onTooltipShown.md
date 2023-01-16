@@ -2,7 +2,6 @@
 id: BaseGauge.Options.onTooltipShown
 type: function(e)
 default: null
-EventForAction: BaseGauge.tooltipShown
 notUsedInTheme: 
 ---
 ---

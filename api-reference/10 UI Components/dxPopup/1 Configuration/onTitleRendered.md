@@ -2,7 +2,6 @@
 id: dxPopup.Options.onTitleRendered
 type: function(e)
 default: null
-EventForAction: dxPopup.titleRendered
 ---
 ---
 ##### shortDescription

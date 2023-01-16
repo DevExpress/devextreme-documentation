@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.onCustomCommand
 type: function(e)
-EventForAction: dxDiagram.customCommand
 ---
 ---
 ##### shortDescription

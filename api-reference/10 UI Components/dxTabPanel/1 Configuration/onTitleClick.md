@@ -2,7 +2,6 @@
 id: dxTabPanel.Options.onTitleClick
 type: function(e) | String
 default: null
-EventForAction: dxTabPanel.titleClick
 ---
 ---
 ##### shortDescription

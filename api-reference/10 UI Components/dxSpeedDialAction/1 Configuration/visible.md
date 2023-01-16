@@ -1,5 +1,6 @@
 ---
 id: dxSpeedDialAction.Options.visible
+type: Boolean
 ---
 ---
 ##### shortDescription

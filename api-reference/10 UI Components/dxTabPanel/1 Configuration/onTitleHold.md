@@ -2,7 +2,6 @@
 id: dxTabPanel.Options.onTitleHold
 type: function(e)
 default: null
-EventForAction: dxTabPanel.titleHold
 ---
 ---
 ##### shortDescription

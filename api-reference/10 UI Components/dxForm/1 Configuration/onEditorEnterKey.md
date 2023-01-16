@@ -2,7 +2,6 @@
 id: dxForm.Options.onEditorEnterKey
 type: function(e)
 default: null
-EventForAction: dxForm.editorEnterKey
 ---
 ---
 ##### shortDescription

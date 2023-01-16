@@ -2,7 +2,6 @@
 id: GridBase.Options.onRowExpanding
 type: function(e)
 default: null
-EventForAction: GridBase.rowExpanding
 ---
 ---
 ##### shortDescription

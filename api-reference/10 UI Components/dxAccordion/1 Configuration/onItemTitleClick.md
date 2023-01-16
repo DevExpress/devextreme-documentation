@@ -2,7 +2,6 @@
 id: dxAccordion.Options.onItemTitleClick
 type: function(e) | String
 default: null
-EventForAction: dxAccordion.itemTitleClick
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: Component.Options.onOptionChanged
 type: function(e)
 default: null
-EventForAction: Component.optionChanged
 ---
 ---
 ##### shortDescription

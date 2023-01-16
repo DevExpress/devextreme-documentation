@@ -2,7 +2,6 @@
 id: dxMenu.Options.onSubmenuShown
 type: function(e)
 default: null
-EventForAction: dxMenu.submenuShown
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onRowClick
 type: function(e) | String
 default: null
-EventForAction: dxDataGrid.rowClick
 ---
 ---
 ##### shortDescription

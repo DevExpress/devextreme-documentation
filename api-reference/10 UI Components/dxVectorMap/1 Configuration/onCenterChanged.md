@@ -2,7 +2,6 @@
 id: dxVectorMap.Options.onCenterChanged
 type: function(e)
 default: null
-EventForAction: dxVectorMap.centerChanged
 notUsedInTheme: 
 ---
 ---

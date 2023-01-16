@@ -2,7 +2,6 @@
 id: dxGantt.Options.onResourceAssigned
 type: function(e)
 default: null
-EventForAction: dxGantt.resourceAssigned
 ---
 ---
 ##### shortDescription

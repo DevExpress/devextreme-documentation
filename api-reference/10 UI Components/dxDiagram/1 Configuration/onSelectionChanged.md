@@ -2,7 +2,6 @@
 id: dxDiagram.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxDiagram.selectionChanged
 ---
 ---
 ##### shortDescription

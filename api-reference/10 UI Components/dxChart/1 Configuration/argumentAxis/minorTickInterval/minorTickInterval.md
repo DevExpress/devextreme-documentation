@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.minorTickInterval
+type: Number | any | TimeIntervalType
 inherits: VizTimeInterval
 ---
 ---

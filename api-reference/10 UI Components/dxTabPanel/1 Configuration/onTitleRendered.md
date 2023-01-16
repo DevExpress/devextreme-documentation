@@ -2,7 +2,6 @@
 id: dxTabPanel.Options.onTitleRendered
 type: function(e)
 default: null
-EventForAction: dxTabPanel.titleRendered
 ---
 ---
 ##### shortDescription

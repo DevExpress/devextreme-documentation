@@ -2,7 +2,6 @@
 id: GridBase.Options.onRowCollapsing
 type: function(e)
 default: null
-EventForAction: GridBase.rowCollapsing
 ---
 ---
 ##### shortDescription

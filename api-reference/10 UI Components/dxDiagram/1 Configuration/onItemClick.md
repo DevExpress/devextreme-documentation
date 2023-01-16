@@ -2,7 +2,6 @@
 id: dxDiagram.Options.onItemClick
 type: function(e)
 default: null
-EventForAction: dxDiagram.itemClick
 ---
 ---
 ##### shortDescription

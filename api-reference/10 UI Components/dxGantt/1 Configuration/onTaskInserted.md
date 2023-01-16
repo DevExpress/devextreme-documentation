@@ -2,7 +2,6 @@
 id: dxGantt.Options.onTaskInserted
 type: function(e)
 default: null
-EventForAction: dxGantt.taskInserted
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onCut
 type: function(e)
 default: null
-EventForAction: dxTextEditor.cut
 ---
 ---
 ##### shortDescription

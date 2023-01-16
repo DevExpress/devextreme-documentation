@@ -1,7 +1,6 @@
 ---
 id: DataSource.Options.onLoadError
 type: function(error)
-EventForAction: DataSource.loadError
 ---
 ---
 ##### shortDescription

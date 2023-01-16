@@ -2,7 +2,6 @@
 id: dxList.Options.onItemSwipe
 type: function(e)
 default: null
-EventForAction: dxList.itemSwipe
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxPivotGrid.Options.onContextMenuPreparing
 type: function(e)
 default: null
-EventForAction: dxPivotGrid.contextMenuPreparing
 ---
 ---
 ##### shortDescription

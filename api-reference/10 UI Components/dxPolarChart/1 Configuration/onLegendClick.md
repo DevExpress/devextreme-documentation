@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onLegendClick
 type: function(e) | String
 default: null
-EventForAction: dxPolarChart.legendClick
 notUsedInTheme: 
 ---
 ---

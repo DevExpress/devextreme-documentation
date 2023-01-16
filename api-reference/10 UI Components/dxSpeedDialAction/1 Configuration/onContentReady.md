@@ -2,7 +2,6 @@
 id: dxSpeedDialAction.Options.onContentReady
 type: function(e)
 default: null
-EventForAction: dxSpeedDialAction.contentReady
 ---
 ---
 ##### param(e): Object

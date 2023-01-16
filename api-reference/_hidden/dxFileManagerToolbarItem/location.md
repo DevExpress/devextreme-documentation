@@ -1,5 +1,6 @@
 ---
 id: dxFileManagerToolbarItem.location
+type: 'after' | 'before' | 'center'
 default: 'before'
 ---
 ---

@@ -2,7 +2,6 @@
 id: dxChart.Options.onZoomStart
 type: function(e)
 default: null
-EventForAction: dxChart.zoomStart
 notUsedInTheme: 
 ---
 ---

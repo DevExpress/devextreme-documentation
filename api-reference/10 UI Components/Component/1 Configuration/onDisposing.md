@@ -2,7 +2,6 @@
 id: Component.Options.onDisposing
 type: function(e)
 default: null
-EventForAction: Component.disposing
 ---
 ---
 ##### shortDescription

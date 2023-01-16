@@ -2,7 +2,6 @@
 id: dxGantt.Options.onResourceDeleting
 type: function(e)
 default: null
-EventForAction: dxGantt.resourceDeleting
 ---
 ---
 ##### shortDescription

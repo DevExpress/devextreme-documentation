@@ -1,7 +1,6 @@
 ---
 id: DataSource.Options.onLoadingChanged
 type: function(isLoading)
-EventForAction: DataSource.loadingChanged
 ---
 ---
 ##### shortDescription

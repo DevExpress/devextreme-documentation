@@ -2,7 +2,6 @@
 id: dxDraggable.Options.onDragEnd
 type: function(e)
 default: null
-EventForAction: dxDraggable.dragEnd
 ---
 ---
 ##### shortDescription

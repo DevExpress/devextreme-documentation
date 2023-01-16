@@ -2,7 +2,6 @@
 id: dxChart.Options.onSeriesClick
 type: function(e) | String
 default: null
-EventForAction: dxChart.seriesClick
 notUsedInTheme: 
 ---
 ---

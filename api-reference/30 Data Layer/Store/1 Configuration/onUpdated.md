@@ -1,7 +1,6 @@
 ---
 id: Store.Options.onUpdated
 type: function(key, values)
-EventForAction: Store.updated
 ---
 ---
 ##### shortDescription

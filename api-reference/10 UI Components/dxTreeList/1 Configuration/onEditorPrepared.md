@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onEditorPrepared
 type: function(options)
 default: null
-EventForAction: dxTreeList.editorPrepared
 ---
 ---
 ##### shortDescription

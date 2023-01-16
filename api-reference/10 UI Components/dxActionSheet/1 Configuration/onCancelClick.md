@@ -2,7 +2,6 @@
 id: dxActionSheet.Options.onCancelClick
 type: function(e) | String
 default: null
-EventForAction: dxActionSheet.cancelClick
 ---
 ---
 ##### shortDescription

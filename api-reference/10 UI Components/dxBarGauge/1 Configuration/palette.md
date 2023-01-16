@@ -1,7 +1,6 @@
 ---
 id: dxBarGauge.Options.palette
-acceptValues: 'Bright' | 'Harmony Light' | 'Ocean' | 'Pastel' | 'Soft' | 'Soft Pastel' | 'Vintage' | 'Violet' | 'Carmine' | 'Dark Moon' | 'Dark Violet' | 'Green Mist' | 'Soft Blue' | 'Material' | 'Office'
-type: Array<String> | String
+type: Array<String> | PaletteType
 default: 'Material'
 ---
 ---

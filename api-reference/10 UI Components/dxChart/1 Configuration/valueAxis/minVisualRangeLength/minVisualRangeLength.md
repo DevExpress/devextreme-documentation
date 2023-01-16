@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.valueAxis.minVisualRangeLength
+type: Number | any | TimeIntervalType
 inherits: VizTimeInterval
 default: undefined
 notUsedInTheme: 

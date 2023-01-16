@@ -2,7 +2,6 @@
 id: dxSortable.Options.onRemove
 type: function(e)
 default: null
-EventForAction: dxSortable.remove
 ---
 ---
 ##### shortDescription

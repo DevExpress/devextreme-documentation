@@ -2,7 +2,6 @@
 id: dxList.Options.onPullRefresh
 type: function(e)
 default: null
-EventForAction: dxList.pullRefresh
 ---
 ---
 ##### shortDescription

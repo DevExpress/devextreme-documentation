@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.onFieldsPrepared
 type: function(fields)
-EventForAction: PivotGridDataSource.fieldsPrepared
 ---
 ---
 ##### shortDescription

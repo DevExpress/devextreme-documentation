@@ -2,7 +2,6 @@
 id: GridBase.Options.onRowValidating
 type: function(e)
 default: null
-EventForAction: GridBase.rowValidating
 ---
 ---
 ##### shortDescription

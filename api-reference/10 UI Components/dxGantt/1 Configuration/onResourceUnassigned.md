@@ -2,7 +2,6 @@
 id: dxGantt.Options.onResourceUnassigned
 type: function(e)
 default: null
-EventForAction: dxGantt.resourceUnassigned
 ---
 ---
 ##### shortDescription

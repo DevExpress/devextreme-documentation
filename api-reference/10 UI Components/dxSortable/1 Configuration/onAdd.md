@@ -2,7 +2,6 @@
 id: dxSortable.Options.onAdd
 type: function(e)
 default: null
-EventForAction: dxSortable.add
 ---
 ---
 ##### shortDescription

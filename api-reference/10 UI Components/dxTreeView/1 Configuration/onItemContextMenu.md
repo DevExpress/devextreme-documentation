@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemContextMenu
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemContextMenu
 ---
 ---
 ##### param(e): Object

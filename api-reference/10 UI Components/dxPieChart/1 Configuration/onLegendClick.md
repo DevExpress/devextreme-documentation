@@ -2,7 +2,6 @@
 id: dxPieChart.Options.onLegendClick
 type: function(e) | String
 default: null
-EventForAction: dxPieChart.legendClick
 notUsedInTheme: 
 ---
 ---

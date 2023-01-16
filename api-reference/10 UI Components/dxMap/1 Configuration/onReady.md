@@ -2,7 +2,6 @@
 id: dxMap.Options.onReady
 type: function(e)
 default: null
-EventForAction: dxMap.ready
 ---
 ---
 ##### shortDescription

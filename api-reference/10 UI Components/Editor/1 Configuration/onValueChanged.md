@@ -2,7 +2,6 @@
 id: Editor.Options.onValueChanged
 type: function(e)
 default: null
-EventForAction: Editor.valueChanged
 ---
 ---
 ##### shortDescription

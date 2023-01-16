@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentUpdating
 type: function(e)
 default: null
-EventForAction: dxScheduler.appointmentUpdating
 ---
 ---
 ##### shortDescription

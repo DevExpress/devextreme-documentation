@@ -2,7 +2,6 @@
 id: dxSortable.Options.onDragEnd
 type: function(e)
 default: null
-EventForAction: dxSortable.dragEnd
 ---
 ---
 ##### shortDescription

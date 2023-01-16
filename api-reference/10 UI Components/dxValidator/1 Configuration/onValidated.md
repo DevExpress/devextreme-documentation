@@ -1,7 +1,6 @@
 ---
 id: dxValidator.Options.onValidated
 type: function(validatedInfo)
-EventForAction: dxValidator.validated
 ---
 ---
 ##### shortDescription

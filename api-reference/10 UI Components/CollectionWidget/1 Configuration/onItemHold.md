@@ -2,7 +2,6 @@
 id: CollectionWidget.Options.onItemHold
 type: function(e)
 default: null
-EventForAction: CollectionWidget.itemHold
 ---
 ---
 ##### shortDescription

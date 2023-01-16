@@ -2,7 +2,6 @@
 id: dxPopup.Options.onResize
 type: function(e)
 default: null
-EventForAction: dxPopup.resize
 ---
 ---
 ##### shortDescription

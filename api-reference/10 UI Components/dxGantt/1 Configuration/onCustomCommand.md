@@ -2,7 +2,6 @@
 id: dxGantt.Options.onCustomCommand
 type: function(e)
 default: null
-EventForAction: dxGantt.customCommand
 ---
 ---
 ##### shortDescription

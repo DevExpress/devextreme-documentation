@@ -3,7 +3,6 @@ id: dxSortable.Options.onPlaceholderPrepared
 type: function(e)
 default: null
 hidden: 
-EventForAction: dxSortable.placeholderPrepared
 ---
 ---
 ##### shortDescription

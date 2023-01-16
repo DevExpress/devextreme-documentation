@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.onLoadError
 type: function(error)
-EventForAction: PivotGridDataSource.loadError
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxFileUploader.Options.onUploadError
 type: function(e)
 default: null
-EventForAction: dxFileUploader.uploadError
 ---
 ---
 ##### shortDescription

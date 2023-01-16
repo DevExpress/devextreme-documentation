@@ -2,7 +2,6 @@
 id: dxVectorMap.Options.onZoomFactorChanged
 type: function(e)
 default: null
-EventForAction: dxVectorMap.zoomFactorChanged
 notUsedInTheme: 
 ---
 ---

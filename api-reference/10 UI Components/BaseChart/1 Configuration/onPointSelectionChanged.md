@@ -1,7 +1,6 @@
 ---
 id: BaseChart.Options.onPointSelectionChanged
 type: function(e)
-EventForAction: BaseChart.pointSelectionChanged
 notUsedInTheme: 
 ---
 ---

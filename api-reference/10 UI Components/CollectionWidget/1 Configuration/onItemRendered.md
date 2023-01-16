@@ -2,7 +2,6 @@
 id: CollectionWidget.Options.onItemRendered
 type: function(e)
 default: null
-EventForAction: CollectionWidget.itemRendered
 ---
 ---
 ##### shortDescription

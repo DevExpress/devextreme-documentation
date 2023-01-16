@@ -2,7 +2,6 @@
 id: dxContextMenu.Options.onHidden
 type: function(e)
 default: null
-EventForAction: dxContextMenu.hidden
 ---
 ---
 ##### shortDescription

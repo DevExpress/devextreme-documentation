@@ -1,5 +1,6 @@
 ---
 id: dxGanttToolbarItem.location
+type: 'after' | 'before' | 'center'
 default: 'before'
 ---
 ---

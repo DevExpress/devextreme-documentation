@@ -2,7 +2,6 @@
 id: GridBase.Options.onRowInserted
 type: function(e)
 default: null
-EventForAction: GridBase.rowInserted
 ---
 ---
 ##### shortDescription

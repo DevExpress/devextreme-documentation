@@ -2,7 +2,6 @@
 id: dxGantt.Options.onTaskClick
 type: function(e)
 default: null
-EventForAction: dxGantt.taskClick
 ---
 ---
 ##### shortDescription

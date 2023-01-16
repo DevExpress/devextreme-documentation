@@ -2,7 +2,6 @@
 id: dxProgressBar.Options.onComplete
 type: function(e)
 default: null
-EventForAction: dxProgressBar.complete
 ---
 ---
 ##### shortDescription

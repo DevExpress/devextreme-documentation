@@ -2,7 +2,6 @@
 id: dxGantt.Options.onTaskDeleted
 type: function(e)
 default: null
-EventForAction: dxGantt.taskDeleted
 ---
 ---
 ##### shortDescription

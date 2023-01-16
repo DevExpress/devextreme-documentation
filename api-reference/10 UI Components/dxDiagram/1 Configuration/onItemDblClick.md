@@ -2,7 +2,6 @@
 id: dxDiagram.Options.onItemDblClick
 type: function(e)
 default: null
-EventForAction: dxDiagram.itemDblClick
 ---
 ---
 ##### shortDescription

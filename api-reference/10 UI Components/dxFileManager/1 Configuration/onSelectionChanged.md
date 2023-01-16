@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxFileManager.selectionChanged
 ---
 ---
 ##### shortDescription

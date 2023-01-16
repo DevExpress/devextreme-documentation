@@ -2,7 +2,6 @@
 id: dxDeferRendering.Options.onRendered
 type: function(e)
 default: null
-EventForAction: dxDeferRendering.rendered
 ---
 ---
 ##### shortDescription

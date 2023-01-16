@@ -2,7 +2,6 @@
 id: dxTextEditor.Options.onKeyUp
 type: function(e)
 default: null
-EventForAction: dxTextEditor.keyUp
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxVectorMap.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxVectorMap.selectionChanged
 notUsedInTheme: 
 ---
 ---

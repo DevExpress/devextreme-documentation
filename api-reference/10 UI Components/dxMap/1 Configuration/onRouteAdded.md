@@ -2,7 +2,6 @@
 id: dxMap.Options.onRouteAdded
 type: function(e)
 default: null
-EventForAction: dxMap.routeAdded
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxGantt.Options.onDependencyDeleted
 type: function(e)
 default: null
-EventForAction: dxGantt.dependencyDeleted
 ---
 ---
 ##### shortDescription

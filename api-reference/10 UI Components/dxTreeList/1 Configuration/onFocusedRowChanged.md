@@ -2,7 +2,6 @@
 id: dxTreeList.Options.onFocusedRowChanged
 type: function(e)
 default: null
-EventForAction: dxTreeList.focusedRowChanged
 ---
 ---
 ##### shortDescription

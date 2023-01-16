@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentContextMenu
 type: function(e) | String
 default: null
-EventForAction: dxScheduler.appointmentContextMenu
 ---
 ---
 ##### shortDescription

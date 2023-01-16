@@ -3,7 +3,6 @@ id: dxList.Options.onItemReordered
 type: function(e)
 default: null
 hidden: false
-EventForAction: dxList.itemReordered
 ---
 ---
 ##### shortDescription

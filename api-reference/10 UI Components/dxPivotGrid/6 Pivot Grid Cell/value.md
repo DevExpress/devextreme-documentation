@@ -1,5 +1,6 @@
 ---
 id: dxPivotGridPivotGridCell.value
+type: any
 ---
 ---
 ##### shortDescription

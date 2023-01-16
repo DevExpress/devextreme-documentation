@@ -2,7 +2,6 @@
 id: dxTreeView.Options.onItemExpanded
 type: function(e)
 default: null
-EventForAction: dxTreeView.itemExpanded
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: dxDataGrid.Options.onFocusedRowChanged
 type: function(e)
 default: null
-EventForAction: dxDataGrid.focusedRowChanged
 ---
 ---
 ##### shortDescription

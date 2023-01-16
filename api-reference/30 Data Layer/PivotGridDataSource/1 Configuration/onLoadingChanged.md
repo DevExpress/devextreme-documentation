@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.onLoadingChanged
 type: function(isLoading)
-EventForAction: PivotGridDataSource.loadingChanged
 ---
 ---
 ##### shortDescription

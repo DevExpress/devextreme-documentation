@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.onChanged
 type: function()
-EventForAction: PivotGridDataSource.changed
 ---
 ---
 ##### shortDescription

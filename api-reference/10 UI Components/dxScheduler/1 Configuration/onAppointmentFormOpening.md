@@ -2,7 +2,6 @@
 id: dxScheduler.Options.onAppointmentFormOpening
 type: function(e)
 default: null
-EventForAction: dxScheduler.appointmentFormOpening
 ---
 ---
 ##### shortDescription

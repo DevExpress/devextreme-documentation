@@ -1,5 +1,6 @@
 ---
 id: dxPolarChart.Options.valueAxis.tickInterval
+type: Number | any | TimeIntervalType
 inherits: VizTimeInterval
 ---
 ---

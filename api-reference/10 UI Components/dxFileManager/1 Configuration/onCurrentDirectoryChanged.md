@@ -2,7 +2,6 @@
 id: dxFileManager.Options.onCurrentDirectoryChanged
 type: function(e)
 default: null
-EventForAction: dxFileManager.currentDirectoryChanged
 ---
 ---
 ##### shortDescription

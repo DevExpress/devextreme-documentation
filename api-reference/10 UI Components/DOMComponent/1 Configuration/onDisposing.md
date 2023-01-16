@@ -2,7 +2,6 @@
 id: DOMComponent.Options.onDisposing
 type: function(e)
 default: null
-EventForAction: DOMComponent.disposing
 ---
 ---
 ##### param(e): Object

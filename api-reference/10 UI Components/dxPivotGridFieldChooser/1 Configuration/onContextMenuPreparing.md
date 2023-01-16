@@ -2,7 +2,6 @@
 id: dxPivotGridFieldChooser.Options.onContextMenuPreparing
 type: function(e)
 default: null
-EventForAction: dxPivotGridFieldChooser.contextMenuPreparing
 ---
 ---
 ##### shortDescription

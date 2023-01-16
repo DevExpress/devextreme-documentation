@@ -3,7 +3,6 @@ id: CollectionWidget.Options.onItemDeleting
 type: function(e)
 default: null
 hidden: 
-EventForAction: CollectionWidget.itemDeleting
 ---
 ---
 ##### shortDescription

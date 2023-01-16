@@ -2,7 +2,6 @@
 id: dxPivotGrid.Options.onCellClick
 type: function(e)
 default: null
-EventForAction: dxPivotGrid.cellClick
 ---
 ---
 ##### shortDescription

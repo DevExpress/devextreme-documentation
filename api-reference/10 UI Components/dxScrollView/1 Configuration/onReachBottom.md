@@ -2,7 +2,6 @@
 id: dxScrollView.Options.onReachBottom
 type: function(e)
 default: null
-EventForAction: dxScrollView.reachBottom
 ---
 ---
 ##### shortDescription

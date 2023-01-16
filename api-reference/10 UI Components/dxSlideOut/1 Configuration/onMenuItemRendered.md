@@ -2,7 +2,6 @@
 id: dxSlideOut.Options.onMenuItemRendered
 type: function(e)
 default: null
-EventForAction: dxSlideOut.menuItemRendered
 ---
 ---
 ##### shortDescription

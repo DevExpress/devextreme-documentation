@@ -2,7 +2,6 @@
 id: dxMap.Options.onRouteRemoved
 type: function(e)
 default: null
-EventForAction: dxMap.routeRemoved
 ---
 ---
 ##### shortDescription

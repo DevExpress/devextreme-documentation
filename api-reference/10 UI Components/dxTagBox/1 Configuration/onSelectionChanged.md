@@ -2,7 +2,6 @@
 id: dxTagBox.Options.onSelectionChanged
 type: function(e)
 default: null
-EventForAction: dxTagBox.selectionChanged
 ---
 ---
 ##### shortDescription

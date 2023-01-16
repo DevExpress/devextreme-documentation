@@ -2,7 +2,6 @@
 id: dxPolarChart.Options.onSeriesHoverChanged
 type: function(e)
 default: null
-EventForAction: dxPolarChart.seriesHoverChanged
 notUsedInTheme: 
 ---
 ---

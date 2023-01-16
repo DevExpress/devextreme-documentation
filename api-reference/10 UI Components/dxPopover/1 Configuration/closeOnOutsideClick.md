@@ -1,5 +1,6 @@
 ---
 id: dxPopover.Options.closeOnOutsideClick
+type: Boolean | function()
 default: true
 ---
 ---

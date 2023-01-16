@@ -2,7 +2,6 @@
 id: dxFilterBuilder.Options.onEditorPreparing
 type: function(e)
 default: null
-EventForAction: dxFilterBuilder.editorPreparing
 ---
 ---
 ##### shortDescription

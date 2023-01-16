@@ -2,7 +2,6 @@
 id: dxBarGauge.Options.onTooltipHidden
 type: function(e)
 default: null
-EventForAction: dxBarGauge.tooltipHidden
 notUsedInTheme: 
 ---
 ---

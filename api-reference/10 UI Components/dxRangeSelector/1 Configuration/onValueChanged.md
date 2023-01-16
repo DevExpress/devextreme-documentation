@@ -2,7 +2,6 @@
 id: dxRangeSelector.Options.onValueChanged
 type: function(e)
 default: null
-EventForAction: dxRangeSelector.valueChanged
 notUsedInTheme: 
 ---
 ---

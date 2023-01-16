@@ -2,7 +2,6 @@
 id: dxForm.Options.onFieldDataChanged
 type: function(e)
 default: null
-EventForAction: dxForm.fieldDataChanged
 ---
 ---
 ##### shortDescription

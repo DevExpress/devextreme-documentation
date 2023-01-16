@@ -102,7 +102,7 @@ Note that toast messages disappear with an animated effect after their display t
 
     <!--JavaScript-->
     $(function() {
-        DevExpress.ui.notify("Warning message", {"center", "up-push"});
+        DevExpress.ui.notify("Warning message", { position: "center", direction: "up-push" });
     })
 
 #####Angular
@@ -118,7 +118,7 @@ Note that toast messages disappear with an animated effect after their display t
     })
     export class AppComponent implements AfterViewInit {
         ngAfterViewInit() { 
-            notify("Warning message", {"center", "up-push"});
+            notify("Warning message", { position: "center", direction: "up-push" });
         }
     }
 
@@ -133,7 +133,7 @@ Note that toast messages disappear with an animated effect after their display t
     export default {
         mounted: function() {
             this.$nextTick(() => {
-                notify("Warning message", {"center", "up-push"});
+                notify("Warning message", { position: "center", direction: "up-push" });
             })
         }
     }
@@ -147,7 +147,7 @@ Note that toast messages disappear with an animated effect after their display t
 
     class App extends React.Component {
         componentDidMount() { 
-            notify("Warning message", {"center", "up-push"});
+            notify("Warning message", { position: "center", direction: "up-push" });
         }
     }
     export default App;

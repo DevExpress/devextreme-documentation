@@ -98,7 +98,7 @@ Note that toast messages disappear with an animated effect after their display t
 
     <!--JavaScript-->
     $(function() {
-        DevExpress.ui.notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
+        DevExpress.ui.notify({ message: "Error message", width: 300, shading: true }, { position: "center", direction: "up-push" });
     })
 
 #####Angular
@@ -114,7 +114,7 @@ Note that toast messages disappear with an animated effect after their display t
     })
     export class AppComponent implements AfterViewInit {
         ngAfterViewInit() { 
-            notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
+            notify({ message: "Error message", width: 300, shading: true }, { position: "center", direction: "up-push" });
         }
     }
 
@@ -129,7 +129,7 @@ Note that toast messages disappear with an animated effect after their display t
     export default {
         mounted: function() {
             this.$nextTick(() => {
-                notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
+                notify({ message: "Error message", width: 300, shading: true }, { position: "center", direction: "up-push" });
             })
         }
     }
@@ -143,7 +143,7 @@ Note that toast messages disappear with an animated effect after their display t
 
     class App extends React.Component {
         componentDidMount() { 
-            notify({ message: "Error message", width: 300, shading: true }, {"center", "up-push"});
+            notify({ message: "Error message", width: 300, shading: true }, { position: "center", direction: "up-push" });
         }
     }
     export default App;

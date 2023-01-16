@@ -55,6 +55,7 @@ In the following code, a CSS class is added to the **Save** button. The **Add**,
         <DxTreeList ... >
             <DxColumn type="buttons">
                 <DxButton name="save" css-class="my-class" />
+                <DxButton name="add" />
                 <DxButton name="edit" />
                 <DxButton name="delete" />
             </DxColumn>
@@ -97,6 +98,7 @@ In the following code, a CSS class is added to the **Save** button. The **Add**,
             <TreeList ... >
                 <Column type="buttons">
                     <Button name="save" cssClass="my-class" />
+                    <Button name="add" />
                     <Button name="edit" />
                     <Button name="delete" />
                 </Column>

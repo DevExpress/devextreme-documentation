@@ -110,7 +110,7 @@ A container in which the template should be rendered.
             filter=".dx-treeview-item"
             :allow-reordering="true"
             @drag-change="onDragChange"
-            :drag-template="myDragTemplate"
+            drag-template="myDragTemplate"
         >
             <template #myDragTemplate="{ data }">
                 <div>{{ data.itemData.Task_Subject}} + "drag template"</div>

@@ -3316,9 +3316,6 @@
     "dxDataGridOptions.onRowPrepared": {
       "vue": "@row-prepared"
     },
-    "dxDataGridOptions.regenerateColumnsByVisibleItems": {
-      "vue": "regenerate-columns-by-visible-items"
-    },
     "dxDataGridOptions.remoteOperations": {
       "angular": "dxo-remote-operations",
       "react": "RemoteOperations",

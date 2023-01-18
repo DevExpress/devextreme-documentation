@@ -8,4 +8,4 @@ default: false
 Specifies whether to shade the UI component when the load panel is shown.
 
 ---
-The property prevents interaction with the component, while loading is in progress.
+Enable this property to prevent interaction with the component, while loading is in progress.

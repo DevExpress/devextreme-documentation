@@ -145,7 +145,7 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useCallback } from 'react';
     // ...
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
@@ -153,17 +153,8 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...
-                    onExporting={this.onExporting}>
-                    <Export enabled={true} />
-                </DataGrid>
-            );
-        }
-
-        onExporting(e) {
+    const App = () => {
+        const onExporting = useCallback((e) => {
             const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
 
@@ -177,8 +168,16 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
                 });
             });
             e.cancel = true;
-        }
+        }, []);
+
+        return (
+            <DataGrid ...
+                onExporting={onExporting}>
+                <Export enabled={true} />
+            </DataGrid>
+        );
     }
+
     export default App;
 
 ---

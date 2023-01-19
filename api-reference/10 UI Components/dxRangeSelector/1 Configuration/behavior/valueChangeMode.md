@@ -6,7 +6,14 @@ default: 'onHandleRelease'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies when to change the component's [value](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/value '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#value').
 
 ---
-<!-- Description goes here -->
+If you want to change the component's [value](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/value '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#value') while a user moves the component's handle, set this property to `onHandleMove`. The moment when the [onValueChanged](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#onValueChanged') function is called depends on this property.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/UseRangeSelectionForCalculation/"
+}
+
+#####See Also#####
+- [selectedRangeUpdateMode](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/selectedRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#selectedRangeUpdateMode')

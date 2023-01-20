@@ -31,7 +31,7 @@ This function allows you to change form item properties dynamically. Within this
                                 items: ["State", "Address"] 
                             }
                         ],               
-                        customizeItem: function(item){
+                        customizeItem: function(item) {
                             if(item && item.itemType === "group" && item.caption === "Home Address") {
                                 const editRowKey = gridInstance.option('editing.editRowKey');
                                 const rowIndex = gridInstance.getRowIndexByKey(editRowKey);

@@ -1,4 +1,4 @@
-If you export data from DataGrid or PivotGrid in CSV format, you should take a thread of a CSV Injection Attack (also known as a formula injection attack). Such attacks involve an injection of a malicious character sequence that is interpreted as a formula and executed within a computer network. Cell values that start with the **=**, **+**, **-**, and **@** characters can initiate an injection attack.
+If you export data from DataGrid or PivotGrid in CSV format, you should take the threat of a CSV Injection Attack (also known as a formula injection attack) into account. Such attacks involve an injection of a malicious character sequence that is interpreted as a formula and executed within a computer network. Cell values that start with the **=**, **+**, **-**, and **@** characters can initiate an injection attack.
 
 When executed, malicious code in a formula can tamper with user data or provide unauthorized access to data and internal resources.
 

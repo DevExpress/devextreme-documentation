@@ -12,7 +12,8 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
         $("#dataGridContainer").dxDataGrid({
             // ...
             export: {
-                enabled: true
+                enabled: true,
+                formats: ['csv']
             },
             onExporting(e) {
                 const workbook = new ExcelJS.Workbook();
@@ -46,7 +47,10 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-export
+            [enabled]="true"
+            [formats]="['csv']"
+        ></dxo-export>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -106,6 +110,7 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
             @exporting="onExporting">
             <DxExport
                 :enabled="true"
+                :formats="['csv']"
             />
         </DxDataGrid>
     </template>
@@ -173,7 +178,10 @@ You can encode the CSV files to prevent execution of harmful code in the exporte
         return (
             <DataGrid ...
                 onExporting={onExporting}>
-                <Export enabled={true} />
+                <Export 
+                    enabled={true}
+                    formats={['csv']}
+                />
             </DataGrid>
         );
     }

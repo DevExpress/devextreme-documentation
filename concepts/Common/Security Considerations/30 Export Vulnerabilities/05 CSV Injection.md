@@ -1,8 +1,8 @@
-If you use DataGrid or PivotGrid Export functionality, you should consider a threat of a CSV Injection Attack (also called formula injection attack). It involves the injection of harmful characters that act as a formula and are executed within a computer network. Cell values that begin with the **=, +, -** and **@** characters can initiate an injection attack.
+If you export data from DataGrid or PivotGrid in CSV format, you should take a thread of a CSV Injection Attack (also known as a formula injection attack). Such attacks involve an injection of a malicious character sequence that is interpreted as a formula and executed within a computer network. Cell values that start with the **=**, **+**, **-**, and **@** characters can initiate an injection attack.
 
-When you enter the malicious code into CSV files (in the form of a formula), the formula can be executed. Once executed, the malicious formula can manipulate/delete user data or provide unauthorized access to data/internal resources.
+When executed, malicious code in a formula can tamper with user data or provide unauthorized access to data and internal resources.
 
-You can encode the CSV files to prevent execution of harmful code in the exported files. Pass the [encodeExecutableContent](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#encodeExecutableContent) option as an argument of the configuration object of the [exportDataGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) or [exportPivotGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) function.
+You can encode CSV files to prevent execution of potentially harmful code in them. Pass the [encodeExecutableContent](/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#encodeExecutableContent) option as an argument of the configuration object of the [exportDataGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) or [exportPivotGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) function.
 
 ---
 ##### jQuery

@@ -1,3 +1,31 @@
+### Change Style Based on Row State (Selected, Focused, Hovered)
+
+To change row selection color, use the following CSS rules:
+
+    <!-- tab: Selected -->
+    .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-removed) > td {
+        background-color: red;
+        color: unset;
+    }
+
+Set the [focusedRowEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled) and/or [hoverStateEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#hoverStateEnabled) properties to `true` to enable focused row and hover features. Specify the following CSS rules to change row color:
+
+    <!-- tab: Focused -->
+    .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link,
+    .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
+    .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
+        background-color: red;
+        color: #fff;
+    }
+
+    <!-- tab: Hovered -->
+    .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td:not(.dx-focused) {  
+        background-color: orange !important;  
+        color: unset !important;  
+    }  
+
+### Change Style Based on Row Data (Conditional Formatting)
+
 To customize the existing row appearance, implement the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
 
 #include common-demobutton with {
@@ -120,30 +148,3 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
 ---
 
 You can also use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance.
-
-Besides row appearance in the active state, you can also specify CSS rules for selected, focused and hovered rows.
-
-To change row selection color, use the following CSS rules:
-
-    <!-- tab: Selection -->
-    .dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):not(.dx-row-removed) > td {
-        background-color: red;
-        color: unset;
-    }
-
-Set the [focusedRowEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled) and/or [hoverStateEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#hoverStateEnabled) properties to `true` to enable focused row and hover features. Specify the following CSS rules to change row color:
-
-    <!-- tab: Focused -->
-    .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link,
-    .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
-    .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
-        background-color: red;
-        color: #fff;
-    }
-
-    <!-- tab: Hover -->
-    .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td:not(.dx-focused) {  
-        background-color: orange !important;  
-        color: unset !important;  
-    }  
-

@@ -1,12 +1,10 @@
-To customize cell appearance, use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property or the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function. The [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') option allows you to replace the default cell layout with a custom markup. The [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') event handler allows you to customize the existing layout after it is generated.
+### Apply a Style to All Cells in a Column
 
-You can also use CSS rules and assign a class to the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to customize cell appearance. 
+You can use CSS rules and assign a class to the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to apply styles to all cells in a column. 
 
-If a customization is not immediately applied, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid or the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint specific rows only.
+### Apply a Style to Individual Cells or Rows (Conditional Formatting)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
-}
+Implement the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function. It allows you to customize the entire cell's markup after the layout has been generated.
 
 The following example demonstrates how to use the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function to change cell color conditionally. As a result, the DataGrid component paints the cells where speed is higher than speed limit red.
 
@@ -117,9 +115,9 @@ Remove the `e.column.dataField === "Speed"` condition to apply the appearance to
     
 ---
 
-The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same task. 
+You can also specify the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property. It allows you to replace cell content with custom markup, but does not give you access to the entire cell element.
 
-The [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function allows you to apply custom styles directly to the cell element. But a [cell template](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') cannot access the cell element. If you create a custom cell template, it is applied to the cell after a DataGrid is rendered. This is why the image below differs from the previous image.
+The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same task. 
 
 ![Change Color Conditionally with cellTemplate](/images/DataGrid/customize-appearance/column-cellTemplate.png)
 
@@ -245,6 +243,11 @@ The [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configur
 
 ---
 
+If a customization is not immediately applied, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid or the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint specific rows only.
+
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
+}
 
 #####See Also#####
 - [Customize Column Headers](/concepts/05%20UI%20Components/DataGrid/15%20Columns/15%20Customize%20Column%20Headers.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Column_Headers/')

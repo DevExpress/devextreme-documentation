@@ -32,7 +32,7 @@ This function allows you to change form item properties dynamically. Within this
                             }
                         ],               
                         customizeItem: function(item) {
-                            if(item && item.itemType === "group" && item.caption === "Home Address") {
+                            if (item && item.itemType === "group" && item.caption === "Home Address") {
                                 const editRowKey = gridInstance.option('editing.editRowKey');
                                 const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
                                 item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
@@ -156,7 +156,7 @@ This function allows you to change form item properties dynamically. Within this
             },
             methods: {
                 customizeItem(item) {
-                    if(item && item.itemType === "group" && item.caption === "Home Address") {
+                    if (item && item.itemType === "group" && item.caption === "Home Address") {
                         const gridInstance = this.dataGrid;
                         const editRowKey = gridInstance.option('editing.editRowKey');
                         const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
@@ -216,7 +216,7 @@ This function allows you to change form item properties dynamically. Within this
                 );
             }
             customizeItem = (item) => {
-                if(item && item.itemType === "group" && item.caption === "Home Address") {
+                if (item && item.itemType === "group" && item.caption === "Home Address") {
                     let gridInstance = this.dataGrid.current.instance;
                     const editRowKey = gridInstance.option('editing.editRowKey');
                     const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
@@ -258,7 +258,7 @@ This function allows you to change form item properties dynamically. Within this
         <script type="text/javascript">
             // ...
             function customizeItem(item) {
-                if(item && item.itemType === "group" && item.caption === "Home Address") {
+                if (item && item.itemType === "group" && item.caption === "Home Address") {
                     const gridInstance = $("#gridContainer").dxDataGrid("instance");
                     const editRowKey = gridInstance.option('editing.editRowKey');
                     const rowIndex = gridInstance.getRowIndexByKey(editRowKey);

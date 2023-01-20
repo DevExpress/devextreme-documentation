@@ -30,18 +30,14 @@ This function allows you to change form item properties dynamically. Within this
                                 caption: "Home Address",
                                 items: ["State", "Address"] 
                             }
-                        ]               
-                        customizeItem: function(item) {
+                        ],               
+                        customizeItem: function(item){
                             if(item && item.itemType === "group" && item.caption === "Home Address") {
-                                // Get the index of the row being edited; 0 if it is a new row
-                                let editRowKey = gridInstance.option('editing.editRowKey');
-                                let index = gridInstance.getRowIndexByKey(editRowKey);
-                                index = index === -1 ? 0 : index;
-                                // Display "Home Address" if "AddressRequired" is true
-                                let isVisible = gridInstance.cellValue(index, "AddressRequired");
-                                item.visible = isVisible;
+                                const editRowKey = gridInstance.option('editing.editRowKey');
+                                const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
+                                item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
                             }
-                        }
+                        },
                     }
                 }
             }).dxDataGrid("instance");
@@ -81,14 +77,11 @@ This function allows you to change form item properties dynamically. Within this
             // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;            
             // ...            
             customizeItem = (item) => {
-                if(item && item.itemType === "group" && item.caption === "Home Address") {
-                    // Get the index of the row being edited; 0 if it is a new row
-                    let editRowKey = gridInstance.option('editing.editRowKey');
-                    let index = gridInstance.getRowIndexByKey(editRowKey);
-                    index = index === -1 ? 0 : index;
-                    // Display "Home Address" if "AddressRequired" is true
-                    let isVisible = gridInstance.cellValue(index, "AddressRequired");
-                    item.visible = isVisible;
+                if (item && item.itemType === 'group' && item.caption === 'Home Address') {
+                    const gridInstance = this.dataGrid.instance;
+                    const editRowKey = gridInstance.option('editing.editRowKey');
+                    const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
+                    item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
                 }
             }
         }
@@ -164,13 +157,10 @@ This function allows you to change form item properties dynamically. Within this
             methods: {
                 customizeItem(item) {
                     if(item && item.itemType === "group" && item.caption === "Home Address") {
-                        // Get the index of the row being edited; 0 if it is a new row
-                        let editRowKey = gridInstance.option('editing.editRowKey');
-                        let index = gridInstance.getRowIndexByKey(editRowKey);
-                        index = index === -1 ? 0 : index;
-                        // Display "Home Address" if "AddressRequired" is true
-                        let isVisible = gridInstance.cellValue(index, "AddressRequired");
-                        item.visible = isVisible;
+                        const gridInstance = this.dataGrid;
+                        const editRowKey = gridInstance.option('editing.editRowKey');
+                        const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
+                        item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
                     }
                 }
             },
@@ -227,13 +217,10 @@ This function allows you to change form item properties dynamically. Within this
             }
             customizeItem = (item) => {
                 if(item && item.itemType === "group" && item.caption === "Home Address") {
-                    // Get the index of the row being edited; 0 if it is a new row
-                    let editRowKey = gridInstance.option('editing.editRowKey');
-                    let index = gridInstance.getRowIndexByKey(editRowKey);
-                    index = index === -1 ? 0 : index;
-                    // Display "Home Address" if "AddressRequired" is true
-                    let isVisible = gridInstance.cellValue(index, "AddressRequired");
-                    item.visible = isVisible;
+                    let gridInstance = this.dataGrid.current.instance;
+                    const editRowKey = gridInstance.option('editing.editRowKey');
+                    const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
+                    item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
                 }
             }
         }
@@ -272,13 +259,10 @@ This function allows you to change form item properties dynamically. Within this
             // ...
             function customizeItem(item) {
                 if(item && item.itemType === "group" && item.caption === "Home Address") {
-                    // Get the index of the row being edited; 0 if it is a new row
-                    let editRowKey = gridInstance.option('editing.editRowKey');
-                    let index = gridInstance.getRowIndexByKey(editRowKey);
-                    index = index === -1 ? 0 : index;
-                    // Display "Home Address" if "AddressRequired" is true
-                    let isVisible = gridInstance.cellValue(index, "AddressRequired");
-                    item.visible = isVisible;
+                    const gridInstance = $("#gridContainer").dxDataGrid("instance");
+                    const editRowKey = gridInstance.option('editing.editRowKey');
+                    const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
+                    item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
                 }
             }
         </script>

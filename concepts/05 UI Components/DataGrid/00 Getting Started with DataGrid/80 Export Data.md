@@ -51,7 +51,6 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
                             saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
                         }); 
                     }); 
-                    e.cancel = true;
                 } 
                 else if (e.format === 'pdf') {
                     const doc = new jsPDF();
@@ -122,7 +121,6 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
                         saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
                     }); 
                 }); 
-                e.cancel = true;
             } 
             else if (e.format === 'pdf') {
                 const doc = new jsPDF();
@@ -186,7 +184,6 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
                             saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
                         }); 
                     }); 
-                    e.cancel = true;
                 } 
                 else if (e.format === 'pdf') {
                     const doc = new jsPDF();
@@ -244,7 +241,6 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
                 }); 
             }); 
-            e.cancel = true;
         } 
         else if (e.format === 'pdf') {
             const doc = new jsPDF();

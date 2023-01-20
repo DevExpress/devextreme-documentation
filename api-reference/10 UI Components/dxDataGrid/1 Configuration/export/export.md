@@ -231,7 +231,6 @@ The following instructions show how to enable and configure client-side export:
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
                     }); 
                 }); 
-                e.cancel = true; 
             }
         });
 
@@ -272,7 +271,6 @@ The following instructions show how to enable and configure client-side export:
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
                 });
-                e.cancel = true; 
             }
         }
 
@@ -339,7 +337,6 @@ The following instructions show how to enable and configure client-side export:
                                 saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                             });
                     });
-                    e.cancel = true;
                 }
             }
         }
@@ -382,7 +379,6 @@ The following instructions show how to enable and configure client-side export:
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
                 });
-                e.cancel = true;
             }
         }
         export default App;

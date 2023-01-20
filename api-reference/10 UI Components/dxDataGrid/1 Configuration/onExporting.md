@@ -11,7 +11,7 @@ A function that is executed before data is exported.
 Information about the event that caused the function execution.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel exporting data.
+Deprecated.
 
 ##### field(e.component): dxDataGrid
 The UI component's instance.
@@ -20,7 +20,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
-The name of the file where grid data is about to be exported.
+Deprecated.
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
@@ -68,8 +68,6 @@ You can use this function to adjust column properties before export. In the foll
                     e.component.columnOption('ID', 'visible', false);
                     e.component.endUpdate();
                 });
-            
-                e.cancel = true;
             }
         });
     });
@@ -112,8 +110,6 @@ You can use this function to adjust column properties before export. In the foll
                 e.component.columnOption('ID', 'visible', false);
                 e.component.endUpdate();
             });
-        
-            e.cancel = true;
         }
     }
 
@@ -180,8 +176,6 @@ You can use this function to adjust column properties before export. In the foll
                     e.component.columnOption('ID', 'visible', false);
                     e.component.endUpdate();
                 });
-            
-                e.cancel = true;
             }
         }
     }
@@ -225,8 +219,6 @@ You can use this function to adjust column properties before export. In the foll
                 e.component.columnOption('ID', 'visible', false);
                 e.component.endUpdate();
             });
-        
-            e.cancel = true;
         }
     }
     export default App;

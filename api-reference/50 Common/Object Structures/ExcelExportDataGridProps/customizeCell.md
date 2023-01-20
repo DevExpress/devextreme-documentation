@@ -58,7 +58,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
                         saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                     });
                 });
-                e.cancel = true;
             }
         });
     });
@@ -113,7 +112,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });
-            e.cancel = true;
         }
     }
 
@@ -185,7 +183,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
                         saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                     });
                 });
-                e.cancel = true;
             }
         }
     }
@@ -233,7 +230,6 @@ The following code illustrates how to customize <a href="https://github.com/exce
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });
-            e.cancel = true;
         }
     }
     export default App;

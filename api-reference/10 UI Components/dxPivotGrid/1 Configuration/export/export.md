@@ -190,8 +190,7 @@ The following instructions show how to enable and configure client-side export:
                     workbook.xlsx.writeBuffer().then(function(buffer) { 
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx'); 
                     }); 
-                }); 
-                e.cancel = true; 
+                });  
             }
         });
 
@@ -232,7 +231,6 @@ The following instructions show how to enable and configure client-side export:
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                         });
                 });
-                e.cancel = true; 
             }
         }
 
@@ -299,7 +297,6 @@ The following instructions show how to enable and configure client-side export:
                                 saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                             });
                     });
-                    e.cancel = true;
                 }
             }
         }
@@ -342,7 +339,6 @@ The following instructions show how to enable and configure client-side export:
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                     });
             });
-            e.cancel = true;
         }
 
     --- 

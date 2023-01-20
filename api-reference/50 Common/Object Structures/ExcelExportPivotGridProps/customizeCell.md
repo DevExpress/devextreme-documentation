@@ -49,7 +49,6 @@ In the following code, the **customizeCell** function customizes <a href="https:
                         saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                     });
                 });
-                e.cancel = true;
             }
         });
     });
@@ -104,7 +103,6 @@ In the following code, the **customizeCell** function customizes <a href="https:
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                 });
             });
-            e.cancel = true;
         }
     }
 
@@ -176,7 +174,6 @@ In the following code, the **customizeCell** function customizes <a href="https:
                         saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
                     });
                 });
-                e.cancel = true;
             }
         }
     }
@@ -224,7 +221,6 @@ In the following code, the **customizeCell** function customizes <a href="https:
                 saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Companies.xlsx");
             });
         });
-        e.cancel = true;
     }
 
 --- 

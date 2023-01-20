@@ -11,7 +11,7 @@ A function that is executed before data is exported.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel exporting.
+Deprecated.
 
 ##### field(e.component): dxPivotGrid
 The UI component's instance.
@@ -20,7 +20,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
-The name of the file to which data is about to be exported.
+Deprecated.
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.

@@ -38,8 +38,7 @@ You can call this method at any point in your application. In the example below,
                 workbook.xlsx.writeBuffer().then(function(buffer) { 
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
                 }); 
-            }); 
-            e.cancel = true; 
+            });  
         }
     });
 
@@ -84,7 +83,6 @@ You can call this method at any point in your application. In the example below,
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
             });
-            e.cancel = true; 
         }
     }
 
@@ -148,8 +146,7 @@ You can call this method at any point in your application. In the example below,
                         .then(function(buffer) {
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
-                });
-                e.cancel = true;
+                }); 
             }
         }
     }
@@ -189,7 +186,6 @@ You can call this method at any point in your application. In the example below,
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
             });
-            e.cancel = true;
         }
     }
     export default App;

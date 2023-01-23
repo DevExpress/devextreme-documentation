@@ -1,8 +1,8 @@
-If you export data from DataGrid or PivotGrid in CSV format, you should take the threat of a CSV Injection Attack (also known as a formula injection attack) into account. Such attacks involve an injection of a malicious character sequence that is interpreted as a formula and executed within a computer network. Cell values that start with the **=**, **+**, **-**, and **@** characters can initiate an injection attack.
+If you export data from DataGrid in CSV format, you should take the threat of a CSV Injection Attack (also known as a formula injection attack) into account. Such attacks involve an injection of a malicious character sequence that is interpreted as a formula and executed within a computer network. Cell values that start with the **=**, **+**, **-**, and **@** characters can initiate an injection attack.
 
 When executed, malicious code in a formula can tamper with user data, or allow unauthorized access to data and internal resources.
 
-You can encode CSV files to prevent execution of potentially harmful code within them. Pass the [encodeExecutableContent](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#encodeExecutableContent) option as an argument of the configuration object of the [exportDataGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) or [exportPivotGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions) function.
+You can encode CSV files to prevent execution of potentially harmful code within them. Pass the [encodeExecutableContent](/Documentation/ApiReference/Common/Object_Structures/ExportDataGridProps/#encodeExecutableContent) option as an argument of the configuration object of the [exportDataGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions) function.
 
 ---
 ##### jQuery

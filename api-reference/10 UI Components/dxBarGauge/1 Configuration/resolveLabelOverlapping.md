@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.resolveLabelOverlapping
-acceptValues: 'hide' | 'none'
+acceptValues: 'hide' | 'none' | 'shift'
 type: String
 default: 'hide'
 ---

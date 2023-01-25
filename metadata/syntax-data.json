@@ -11634,9 +11634,6 @@
     "enums.FunnelAlgorithm": {
       "vue": "funnel-algorithm"
     },
-    "enums.FunnelLabelOverlap": {
-      "vue": "funnel-label-overlap"
-    },
     "enums.GanttPredefinedContextMenuItem": {
       "vue": "gantt-predefined-context-menu-item"
     },
@@ -11769,9 +11766,6 @@
     "enums.PieChartAnnotationLocation": {
       "vue": "pie-chart-annotation-location"
     },
-    "enums.PieChartLabelOverlap": {
-      "vue": "pie-chart-label-overlap"
-    },
     "enums.PieChartLegendHoverMode": {
       "vue": "pie-chart-legend-hover-mode"
     },
@@ -11876,6 +11870,9 @@
     },
     "enums.SeriesType": {
       "vue": "series-type"
+    },
+    "enums.ShiftLabelOverlap": {
+      "vue": "shift-label-overlap"
     },
     "enums.ShowTextMode": {
       "vue": "show-text-mode"

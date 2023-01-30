@@ -236,7 +236,7 @@ Since the **formats** property accepts an array, you can specify multiple format
 
 ---
 
-The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['csv']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler to produce a file in that format. Refer to the [CSV Injection](/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/CSV_Injection) section to take the threat of a CSV Injection Attack into account. 
+The predefined values for the **formats** property are 'xlsx' and 'pdf'. You can also specify any custom string, such as `['csv']`. If you do that, the export command caption will read "Export all data (selected rows) to CSV". Once again, you'll need to change the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler to produce a file in that format. Refer to the [CSV Injection](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/05%20CSV%20Injection.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/CSV_Injection') section to take the threat of a CSV Injection Attack into account. 
 
 The example below shows how to export DataGrid to CSV format.
 

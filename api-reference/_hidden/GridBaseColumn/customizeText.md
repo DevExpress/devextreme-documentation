@@ -16,7 +16,7 @@ See the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/h
 ##### field(cellInfo.target): String
 The UI element where the **customizeText** function was called: *"row"*, *"filterRow"*, *"headerFilter"*, *"search"*, *"filterPanel"*, or *"filterBuilder"*.
 
-##### field(cellInfo.value): String | Number | Date
+##### field(cellInfo.value): any
 The cell value.
 
 ##### field(cellInfo.valueText): String

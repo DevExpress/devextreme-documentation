@@ -227,7 +227,7 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 ---
 
 #####See Also#####
-- [Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Customize_Cells/#Customize_the_Appearance')
+- [Customize Cells](/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_Cell_Appearance)
 
 <!-- import { field(cellInfo.oldValue) } from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->
 <!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onRowClick.md' -->

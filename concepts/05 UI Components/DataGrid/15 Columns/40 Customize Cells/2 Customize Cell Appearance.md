@@ -117,7 +117,7 @@ Remove the `e.column.dataField === "Speed"` condition to apply the appearance to
 
 You can also specify the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property. It allows you to replace cell content with custom markup, but does not give you access to the entire cell element.
 
-The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same task. 
+The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same functionality. 
 
 ![Change Color Conditionally with cellTemplate](/images/DataGrid/customize-appearance/column-cellTemplate.png)
 

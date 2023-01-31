@@ -32,7 +32,7 @@ To customize the existing row appearance, implement the [onRowPrepared](/Documen
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
 }
 
-The following example demonstrates how to use the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) function to change cell color conditionally. As a result, the DataGrid component paints the rows where speed is higher than speed limit red.
+The following example demonstrates how to use the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) function to conditionally change the cell color. As a result, the DataGrid component paints the rows red where the speed exceeds the speed limit.
 
 ![Change Color Conditionally with onRowPrepared](/images/DataGrid/customize-appearance/onRowPrepared.png)
 

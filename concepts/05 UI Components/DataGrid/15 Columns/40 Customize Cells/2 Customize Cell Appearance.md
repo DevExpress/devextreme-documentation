@@ -1,14 +1,14 @@
 ### Apply a Style to All Cells in a Column
 
-You can use CSS rules and assign a class to the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to apply styles to all cells in a column. 
+You can use CSS rules and assign a class to the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to apply styles to all the cells in a column. 
 
 ### Apply a Style to Individual Cells or Rows (Conditional Formatting)
 
-Implement the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function. It allows you to customize the entire cell's markup after the layout has been generated.
+Implement the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function. It allows you to customize the entire cell's markup after the layout is generated.
 
-The following example demonstrates how to use the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function to change cell color conditionally. As a result, the DataGrid component paints the cells where speed is higher than speed limit red.
+The following example demonstrates how to use the [onCellPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared') function to conditionally change the cell color. As a result, the DataGrid component paints the cells red where the speed exceeds the speed limit.
 
-Remove the `e.column.dataField === "Speed"` condition to apply the appearance to all cells in a row.
+Remove the `e.column.dataField === "Speed"` condition to apply the appearance to all the cells in a row.
 
 ![Change Color Conditionally with onCellPrepared](/images/DataGrid/customize-appearance/onCellPrepared.png)
 
@@ -243,7 +243,7 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
 
 ---
 
-If a customization is not immediately applied, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid or the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint specific rows only.
+If the changes are not applied immediately, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid or the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint specific rows only.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"

@@ -8,7 +8,7 @@ To change row selection color, use the following CSS rules:
         color: unset;
     }
 
-Set the [focusedRowEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled) and/or [hoverStateEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#hoverStateEnabled) properties to `true` to enable focused row and hover features. Specify the following CSS rules to change row color:
+Set the [focusedRowEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled') and/or [hoverStateEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/hoverStateEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#hoverStateEnabled') properties to `true` to enable focused row and hover features. Specify the following CSS rules to change row color:
 
     <!-- tab: Focused -->
     .dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link,
@@ -26,13 +26,13 @@ Set the [focusedRowEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid
 
 ### Change Style Based on Row Data (Conditional Formatting)
 
-To customize the existing row appearance, implement the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint DataGrid rows.
+To customize the existing row appearance, implement the [onRowPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared') event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/repaintRows(rowIndexes).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes') method to repaint DataGrid rows.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
 }
 
-The following example demonstrates how to use the [onRowPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared) function to conditionally change the cell color. As a result, the DataGrid component paints the rows red where the speed exceeds the speed limit.
+The following example demonstrates how to use the [onRowPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared') function to conditionally change the cell color. As a result, the DataGrid component paints the rows red where the speed exceeds the speed limit.
 
 ![Change Color Conditionally with onRowPrepared](/images/DataGrid/customize-appearance/onRowPrepared.png)
 
@@ -147,4 +147,4 @@ The following example demonstrates how to use the [onRowPrepared](/Documentation
     
 ---
 
-You can also use the [dataRowTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate) property to customize row appearance.
+You can also use the [dataRowTemplate](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/dataRowTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataRowTemplate') property to customize row appearance.

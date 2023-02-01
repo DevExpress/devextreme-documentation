@@ -1,4 +1,4 @@
-To conditionally validate an editor, use a conditional rendering on a validation rule. In the example below, the TextBox can be validated only if the SelectBox value is `Germany`.
+To conditionally validate an editor, use conditional rendering on a validation rule. In the example below, the TextBox can be validated only if the SelectBox value is `Germany`.
 
 ---
 ##### Angular

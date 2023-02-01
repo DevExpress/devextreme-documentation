@@ -3,7 +3,7 @@ To conditionally validate an editor, use conditional rendering on a validation r
 ---
 ##### Angular
 
-Refer to the following article to learn more about conditional rendering: <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Adding or removing an element with NgIf</a>.
+Refer to the following article for more information about conditional rendering: <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Adding or removing an element with NgIf</a>.
 
     <!-- tab: app.component.html -->
     <dx-text-box>
@@ -38,7 +38,7 @@ Refer to the following article to learn more about conditional rendering: <a hre
 
 ##### Vue
 
-Refer to the following article to learn more about conditional rendering: <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">Conditional Rendering</a>.
+Refer to the following article for more information about conditional rendering: <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">Conditional Rendering</a>.
 
     <!-- tab: App.vue -->
     <template>
@@ -80,7 +80,7 @@ Refer to the following article to learn more about conditional rendering: <a hre
 
 ##### React
 
-Refer to the following article to learn more about conditional rendering: <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">Conditional Rendering</a>.
+Refer to the following article for more information about conditional rendering: <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">Conditional Rendering</a>.
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from "react";

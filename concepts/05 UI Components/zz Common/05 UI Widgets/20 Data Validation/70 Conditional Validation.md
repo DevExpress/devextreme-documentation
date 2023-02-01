@@ -3,8 +3,7 @@ To conditionally validate an editor, use a conditional rendering on a validation
 ---
 ##### Angular
 
-Refer to the following article to learn more about conditional rendering: <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Adding or removing an element with NgIf
-</a>.
+Refer to the following article to learn more about conditional rendering: <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Adding or removing an element with NgIf</a>.
 
     <!-- tab: app.component.html -->
     <dx-text-box>

@@ -1,6 +1,6 @@
 ### Apply a Style to All Cells in a Column
 
-You can use CSS rules and assign a class to the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cssClass](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass) property to apply styles to all the cells in a column. 
+You can use CSS rules and assign a class to the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').[cssClass](/api-reference/_hidden/GridBaseColumn/cssClass.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cssClass') property to apply styles to all the cells in a column. 
 
 ### Apply a Style to Individual Cells or Rows (Conditional Formatting)
 
@@ -115,9 +115,9 @@ Remove the `e.column.dataField === "Speed"` condition to apply the appearance to
     
 ---
 
-You can also specify the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property. It allows you to replace cell content with custom markup, but does not give you access to the entire cell element.
+You can also specify the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property. It allows you to replace cell content with custom markup, but does not give you access to the entire cell element.
 
-The example below shows how to use the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/).[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same functionality. 
+The example below shows how to use the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') property to implement the same functionality. 
 
 ![Change Color Conditionally with cellTemplate](/images/DataGrid/customize-appearance/column-cellTemplate.png)
 
@@ -243,7 +243,7 @@ The example below shows how to use the [columns](/Documentation/ApiReference/UI_
 
 ---
 
-If the changes are not applied immediately, use the [repaint()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint) method to repaint DataGrid or the [repaintRows(rowIndexes)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes) method to repaint specific rows only.
+If the changes are not applied immediately, use the [repaint()](/api-reference/10%20UI%20Components/Widget/3%20Methods/repaint().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint') method to repaint DataGrid or the [repaintRows(rowIndexes)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/repaintRows(rowIndexes).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes') method to repaint specific rows only.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"

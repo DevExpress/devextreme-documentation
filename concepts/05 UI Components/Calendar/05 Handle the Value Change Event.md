@@ -135,7 +135,6 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #####See Also#####
 #include common-link-handleevents
 - [Calendar - Specify Zoom Level](/concepts/05%20UI%20Components/Calendar/10%20Specify%20Zoom%20Level.md '/Documentation/Guide/UI_Components/Calendar/Specify_Zoom_Level')
-- [Calendar - Customize Cell Appearance](/concepts/05%20UI%20Components/Calendar/15%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/Calendar/Customize_Cell_Appearance')
 - [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
 - [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 

@@ -21,5 +21,5 @@ A template name or container.
 
 ---
 #####See Also#####
-- [Customize Item Appearance](/concepts/05%20UI%20Components/Accordion/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Accordion/Customize_Item_Appearance/')
+- [Customize Item Appearance](/Documentation/Guide/UI_Components/Accordion/Getting_Started_with_Accordion/#Customize_Item_Appearance)
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

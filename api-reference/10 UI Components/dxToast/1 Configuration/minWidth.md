@@ -18,4 +18,4 @@ The width in pixels.
 A CSS-accepted measurement of width. For example, `"55px"`, `"20vw"`, `"auto"`, `"inherit"`.
 
 - **Function** (deprecated since v21.2)        
-Refer to the [W0017](/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0017) warning description for information on how you can migrate to viewport units.
+Refer to the [W0017](/api-reference/50%20Common/utils/zz%20Errors%20and%20Warnings/W0017.md '/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0017') warning description for information on how you can migrate to viewport units.

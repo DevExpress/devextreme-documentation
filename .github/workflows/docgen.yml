@@ -10,7 +10,7 @@ jobs:
 
     steps:
         - name: Checkout Docs
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
           with:
             path: documentation
             token: ${{ secrets.DXROBOT_PAT }}
@@ -18,7 +18,7 @@ jobs:
             ref: ${{ github.ref_name }}
 
         - name: Checkout Tools
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
           with:
             path: tools
             repository: devexpress/devextreme-hgmirror-tools
@@ -27,12 +27,12 @@ jobs:
             ref: ${{ github.ref_name }}
 
         - name: Checkout DevExtreme
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
           with:
             path: devextreme
             repository: devexpress/devextreme
             ref: ${{ github.ref_name }}
-        
+
         - name: NPM - devextreme
           working-directory: devextreme
           run: |
@@ -44,6 +44,12 @@ jobs:
           run: npm i
 
 #Generation
+        - name: Setup dotnet
+          uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: |
+              3.1  
+
         - name: Discover declarations
           working-directory: devextreme
           run: npm run discover-declarations -- --artifacts ../artifacts
@@ -116,7 +122,7 @@ jobs:
                 https://api.github.com/repos/${{ github.repository }}/pulls \
                 --data-binary @prdata.json
 
-        - uses: actions/upload-artifact@v2
+        - uses: actions/upload-artifact@v3
           with:
             name: artifacts
             path: artifacts/*

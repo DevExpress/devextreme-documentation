@@ -9,13 +9,13 @@ If you use a lookup column editor in the DataGrid or TreeList, you need to speci
             {
                 dataField: 'StateID',
                 lookup: {
-                    dataSource: new DevExpress.data.DataSource({
+                    dataSource: {
                         store: {
                             type: 'array',
                             data: sampleData,
                             key: 'ID',
                         },
-                    }),
+                    },
                     valueExpr: 'ID'
                 }
             }
@@ -38,25 +38,24 @@ If you use a lookup column editor in the DataGrid or TreeList, you need to speci
      </dx-data-grid>
 
     <!-- tab: app.component.ts -->
-    import DataSource from 'devextreme/data/data_source';
     import ArrayStore from 'devextreme/data/array_store';
 
     // ...
     export class AppComponent {
-        dataSource: DataSource;
+        dataSource: any;
         constructor(service: Service) {
-            this.dataSource = new DataSource({
+            this.dataSource = {
                 store: new ArrayStore({
                     data: sampleData,
                     key: 'ID',
                 })
-            });
+            };
         }
     }
 
 ##### Vue
 
-    <!-- tab: App.vue-->
+    <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... >
             <DxColumn
@@ -72,7 +71,6 @@ If you use a lookup column editor in the DataGrid or TreeList, you need to speci
 
     <script>
         import { DxDataGrid, DxColumn, DxLookup } from 'devextreme-vue/data-grid';
-        import DataSource from 'devextreme/data/data_source';
         // ...
 
         export default {
@@ -83,13 +81,13 @@ If you use a lookup column editor in the DataGrid or TreeList, you need to speci
             },
         data() {
             return {
-                dataSource: new DataSource({
+                dataSource: {
                     store: {
                         type: 'array',
                         data: sampleData,
                         key: 'ID'
                     }
-                })
+                }
             }
         };
     </script>
@@ -100,15 +98,13 @@ If you use a lookup column editor in the DataGrid or TreeList, you need to speci
     import React from 'react';
     import DataGrid, { Column, Lookup } from 'devextreme-react/data-grid';
 
-    import DataSource from 'devextreme/data/data_source';
-
-    const dataSource = new DataSource({
+    const dataSource = {
         store: {
             type: 'array',
             data: sampleData,
             key: 'ID',
         },
-    });
+    };
 
     function App() {
         render (

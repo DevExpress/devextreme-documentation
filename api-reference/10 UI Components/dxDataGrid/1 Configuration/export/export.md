@@ -52,12 +52,13 @@ The following instructions show how to enable and configure client-side export:
         {
             "compilerOptions": {
                 // ...
-                "paths": {
-                    // ...
-                    "exceljs": [
-                        "node_modules/exceljs/dist/exceljs.min.js"
-                    ]
-                }
+                "types": ["node"]
+            },
+            "paths": {
+                // ...
+                "exceljs": [
+                    "node_modules/exceljs/dist/exceljs.min.js"
+                ]
             }
         }
 

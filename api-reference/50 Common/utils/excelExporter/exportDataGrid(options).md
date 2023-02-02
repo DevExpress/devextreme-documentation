@@ -17,7 +17,7 @@ Export settings.
      
 This method requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ to save files.
 
-You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') function that is executed before data is exported. The **cancel** parameter is enabled to prevent the built-in export. As a result, the DataGrid is exported to a single worksheet. 
+You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') function that is executed before data is exported. As a result, the DataGrid is exported to a single worksheet. 
 
 ---
 ##### jQuery
@@ -38,8 +38,7 @@ You can call this method at any point in your application. In the example below,
                 workbook.xlsx.writeBuffer().then(function(buffer) { 
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx'); 
                 }); 
-            }); 
-            e.cancel = true; 
+            });  
         }
     });
 
@@ -84,7 +83,6 @@ You can call this method at any point in your application. In the example below,
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
             });
-            e.cancel = true; 
         }
     }
 
@@ -148,8 +146,7 @@ You can call this method at any point in your application. In the example below,
                         .then(function(buffer) {
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
-                });
-                e.cancel = true;
+                }); 
             }
         }
     }
@@ -189,7 +186,6 @@ You can call this method at any point in your application. In the example below,
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
             });
-            e.cancel = true;
         }
     }
     export default App;

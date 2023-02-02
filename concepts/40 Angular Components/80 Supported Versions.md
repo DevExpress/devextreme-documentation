@@ -4,6 +4,10 @@
         <th>Angular</th>
     </tr>
     <tr>
+        <td>v23.1.x</td>
+        <td>angular_version_23_1</td>
+    </tr>
+    <tr>
         <td>v22.2.x</td>
         <td>angular_version_22_2</td>
     </tr>

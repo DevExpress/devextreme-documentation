@@ -28,7 +28,6 @@ You can encode CSV files to prevent execution of potentially harmful code within
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.csv');
                     });
                 });
-                e.cancel = true;
             }
         });
     });
@@ -78,7 +77,6 @@ You can encode CSV files to prevent execution of potentially harmful code within
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.csv');
                 });
             });
-            e.cancel = true;
         }
     }
 
@@ -141,7 +139,6 @@ You can encode CSV files to prevent execution of potentially harmful code within
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.csv');
                     });
                 });
-                e.cancel = true;
             }
         }
     }
@@ -172,7 +169,6 @@ You can encode CSV files to prevent execution of potentially harmful code within
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.csv');
                 });
             });
-            e.cancel = true;
         }, []);
 
         return (

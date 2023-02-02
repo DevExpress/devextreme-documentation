@@ -46,7 +46,6 @@ Since the **formats** property accepts an array, you can specify multiple format
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
                         });
                     });
-                    e.cancel = true;
                 } 
                 else if (e.format === 'pdf') {
                     const doc = new jsPDF();
@@ -101,7 +100,6 @@ Since the **formats** property accepts an array, you can specify multiple format
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
                     });
                 });
-                e.cancel = true;
             } 
             else if (e.format === 'pdf') {
                 const doc = new jsPDF();
@@ -164,7 +162,6 @@ Since the **formats** property accepts an array, you can specify multiple format
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
                         });
                     });
-                    e.cancel = true;
                 } 
                 else if (e.format === 'pdf') {
                     const doc = new jsPDF();
@@ -208,7 +205,6 @@ Since the **formats** property accepts an array, you can specify multiple format
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Companies.xlsx');
                     });
                 });
-                e.cancel = true;
             } 
             else if (e.format === 'pdf') {
                 const doc = new jsPDF();
@@ -258,14 +254,12 @@ The example below shows how to export DataGrid to CSV format.
                     component: e.component,
                     worksheet: worksheet
                 }).then(function() {
-                // https://github.com/exceljs/exceljs#writing-csv
-                // https://github.com/exceljs/exceljs#reading-csv
-                workbook.csv.writeBuffer().then(function(buffer) {
-                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                    // https://github.com/exceljs/exceljs#writing-csv
+                    // https://github.com/exceljs/exceljs#reading-csv
+                    workbook.csv.writeBuffer().then(function(buffer) {
+                        saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                    });
                 });
-                });
-
-                e.cancel = true;
             },
         }).dxDataGrid('instance');
     });
@@ -303,14 +297,12 @@ The example below shows how to export DataGrid to CSV format.
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {
-            // https://github.com/exceljs/exceljs#writing-csv
-            // https://github.com/exceljs/exceljs#reading-csv
-            workbook.csv.writeBuffer().then(function(buffer) {
-                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                // https://github.com/exceljs/exceljs#writing-csv
+                // https://github.com/exceljs/exceljs#reading-csv
+                workbook.csv.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                });
             });
-            });
-
-            e.cancel = true;
         }
     }
 
@@ -376,14 +368,12 @@ The example below shows how to export DataGrid to CSV format.
                     component: e.component,
                     worksheet: worksheet
                 }).then(function() {
-                // https://github.com/exceljs/exceljs#writing-csv
-                // https://github.com/exceljs/exceljs#reading-csv
-                workbook.csv.writeBuffer().then(function(buffer) {
-                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                    // https://github.com/exceljs/exceljs#writing-csv
+                    // https://github.com/exceljs/exceljs#reading-csv
+                    workbook.csv.writeBuffer().then(function(buffer) {
+                        saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                    });
                 });
-                });
-
-                e.cancel = true;
             },
         },
     }
@@ -409,14 +399,12 @@ The example below shows how to export DataGrid to CSV format.
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {
-            // https://github.com/exceljs/exceljs#writing-csv
-            // https://github.com/exceljs/exceljs#reading-csv
-            workbook.csv.writeBuffer().then(function(buffer) {
-                saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                // https://github.com/exceljs/exceljs#writing-csv
+                // https://github.com/exceljs/exceljs#reading-csv
+                workbook.csv.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Report.csv");
+                });
             });
-            });
-
-            e.cancel = true;
         });
         return (
             <React.Fragment>

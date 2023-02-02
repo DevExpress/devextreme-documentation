@@ -8666,6 +8666,9 @@
     "dxRangeSelectorOptions.behavior.snapToTicks": {
       "vue": "snap-to-ticks"
     },
+    "dxRangeSelectorOptions.behavior.valueChangeMode": {
+      "vue": "value-change-mode"
+    },
     "dxRangeSelectorOptions.chart": {
       "angular": "dxo-chart",
       "react": "Chart",
@@ -11760,9 +11763,6 @@
     "enums.FunnelAlgorithm": {
       "vue": "funnel-algorithm"
     },
-    "enums.FunnelLabelOverlap": {
-      "vue": "funnel-label-overlap"
-    },
     "enums.GanttPredefinedContextMenuItem": {
       "vue": "gantt-predefined-context-menu-item"
     },
@@ -11895,9 +11895,6 @@
     "enums.PieChartAnnotationLocation": {
       "vue": "pie-chart-annotation-location"
     },
-    "enums.PieChartLabelOverlap": {
-      "vue": "pie-chart-label-overlap"
-    },
     "enums.PieChartLegendHoverMode": {
       "vue": "pie-chart-legend-hover-mode"
     },
@@ -12003,6 +12000,9 @@
     "enums.SeriesType": {
       "vue": "series-type"
     },
+    "enums.ShiftLabelOverlap": {
+      "vue": "shift-label-overlap"
+    },
     "enums.ShowTextMode": {
       "vue": "show-text-mode"
     },
@@ -12020,6 +12020,9 @@
     },
     "enums.SingleOrNone": {
       "vue": "single-or-none"
+    },
+    "enums.SliderValueChangeMode": {
+      "vue": "slider-value-change-mode"
     },
     "enums.SmallValuesGroupingMode": {
       "vue": "small-values-grouping-mode"
@@ -12122,9 +12125,6 @@
     },
     "enums.ValueChangedCallMode": {
       "vue": "value-changed-call-mode"
-    },
-    "enums.ValueChangeMode": {
-      "vue": "value-change-mode"
     },
     "enums.ValueErrorBarDisplayMode": {
       "vue": "value-error-bar-display-mode"

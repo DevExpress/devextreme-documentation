@@ -25,7 +25,7 @@
             System.import('./index.js');
         </script>
 
-See examples of using jspm with <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/jspm-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/jspm-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/jspm-knockout" target="_blank">Knockout</a> on GitHub. The **index.js** and **index.html** files contain the main code. 
+See examples of using jspm with <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/jspm-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/jspm-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/23_1/jspm-knockout" target="_blank">Knockout</a> on GitHub. The **index.js** and **index.html** files contain the main code. 
 
 The following list shows additional modules each library/framework requires: 
 

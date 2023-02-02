@@ -165,7 +165,7 @@ The following instructions show how to enable and configure client-side export:
     ---
 
 3. **Export the PivotGrid**   
-    Implement the [onExporting](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting') handler and call the [exportPivotGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') method in it. In the code below, this method exports the PivotGrid as is, but you can use [ExcelExportPivotGridProps](/api-reference/50%20Common/Object%20Structures/ExcelExportPivotGridProps '/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/') to configure export settings, including [cell customization](/api-reference/50%20Common/Object%20Structures/ExcelExportPivotGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/#customizeCell'). The PivotGrid is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method. The `e.cancel` parameter disables the deprecated built-in export implementation with fewer capabilities.
+    Implement the [onExporting](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting') handler and call the [exportPivotGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') method in it. In the code below, this method exports the PivotGrid as is, but you can use [ExcelExportPivotGridProps](/api-reference/50%20Common/Object%20Structures/ExcelExportPivotGridProps '/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/') to configure export settings, including [cell customization](/api-reference/50%20Common/Object%20Structures/ExcelExportPivotGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/#customizeCell'). The PivotGrid is exported to an Excel worksheet that is created using the ExcelJS API. To save the Excel document, call the FileSaver's **saveAs** method.
 
     ---
     ##### jQuery
@@ -190,8 +190,7 @@ The following instructions show how to enable and configure client-side export:
                     workbook.xlsx.writeBuffer().then(function(buffer) { 
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx'); 
                     }); 
-                }); 
-                e.cancel = true; 
+                });  
             }
         });
 
@@ -232,7 +231,6 @@ The following instructions show how to enable and configure client-side export:
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                         });
                 });
-                e.cancel = true; 
             }
         }
 
@@ -299,7 +297,6 @@ The following instructions show how to enable and configure client-side export:
                                 saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                             });
                     });
-                    e.cancel = true;
                 }
             }
         }
@@ -342,7 +339,6 @@ The following instructions show how to enable and configure client-side export:
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'PivotGrid.xlsx');
                     });
             });
-            e.cancel = true;
         }
 
     --- 

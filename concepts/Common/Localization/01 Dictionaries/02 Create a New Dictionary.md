@@ -4,5 +4,5 @@ To make a dictionary for a new locale:
 2. Rename it according to the new locale.
 3. Translate the strings in it and change the locale key.
 
-You can submit JSON dictionaries to our <a href="https://github.com/DevExpress/DevExtreme/tree/22_2/js/localization/messages" target="_blank">repository on GitHub</a>. You should refer to our <a href="https://github.com/DevExpress/DevExtreme/blob/22_2/CONTRIBUTING.md" target="_blank">Contribution Guide</a> before submitting content.
+You can submit JSON dictionaries to our <a href="https://github.com/DevExpress/DevExtreme/tree/23_1/js/localization/messages" target="_blank">repository on GitHub</a>. You should refer to our <a href="https://github.com/DevExpress/DevExtreme/blob/23_1/CONTRIBUTING.md" target="_blank">Contribution Guide</a> before submitting content.
 

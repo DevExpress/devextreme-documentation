@@ -1,4 +1,4 @@
-Nuxt uses server-side rendering (SSR) as a default deployment. DevExtreme Vue components do not support SSR. To disable this Nuxt functionality, do one of the following:
+Nuxt uses server-side rendering (SSR) as the default deployment. DevExtreme Vue components do not support SSR. To disable this Nuxt functionality, do one of the following:
 
 - Disable SSR for an entire application in the `nuxt.config.ts` file:
 

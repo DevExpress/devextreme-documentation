@@ -36,5 +36,5 @@ A template name or container.
 If a cell is a [week number](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/showWeekNumbers.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers'), the `date` field value is `undefined`.
 
 #####See Also#####
-- [Customize Cell Appearance](/Documentation/Guide/UI_Components/Calendar/Getting_Started_with_Calendar/#Customize_Cell_Appearance)
+- [Customize Cell Appearance](/concepts/05%20UI%20Components/Calendar/00%20Getting%20Started%20with%20Calendar/25%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/Calendar/Getting_Started_with_Calendar/#Customize_Cell_Appearance')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

@@ -149,7 +149,8 @@ DevExtreme editors may belong to different [validation groups](/api-reference/10
 [note]Although the Button may validate different validation groups, it always submits a definite HTML form - the one in which it is nested. To avoid mixing up validated and submitted values, we recommend that a single HTML form contain only a single validation group.
 
 #####See Also#####
-- [Form - Validate and Submit](/concepts/05%20UI%20Components/Form/40%20Validate%20and%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Validate_and_Submit_the_Form/')
+- [Validate the Form Data](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Validate_the_Form_Data)
+- [Submit the Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Submit_the_Form)
 - [Button Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons)
 - [Button API Reference](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 

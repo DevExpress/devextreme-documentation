@@ -77,7 +77,7 @@ The following table compares the drop-down editors according to features:
         <td>Paging</td>
         <td><a href="/Documentation/Guide/UI_Components/SelectBox/Enable_Paging/">Yes</a></td>
         <td><a href="/Documentation/Guide/UI_Components/TagBox/Enable_Paging/">Yes</a></td>
-        <td><a href="/Documentation/Guide/UI_Components/Lookup/Enable_Paging/">Yes</a></td>
+        <td><a href="/Documentation/Guide/UI_Components/Lookup/Getting_Started_with_Lookup/#Enable_Pagination">Yes</a></td>
         <td>-</td>
         <td>Requires custom configuration</a></td>
     </tr>

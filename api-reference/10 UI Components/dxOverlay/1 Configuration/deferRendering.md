@@ -12,10 +12,10 @@ Specifies whether to render the UI component's content when it is displayed. If 
 ---
 ##### Angular
 
-If you set the `deferRendering` property to **true**, wrap the required content in the Angular named [template](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Templates).
+If you set the `deferRendering` property to **true**, wrap the content in the Angular named [template](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Templates).
 
 ##### Vue
 
-If you set the `deferRendering` property to **true**, wrap the required content in the Vue named [template](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Templates).
+If you set the `deferRendering` property to **true**, wrap the content in the Vue named [template](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Templates).
 
 ---

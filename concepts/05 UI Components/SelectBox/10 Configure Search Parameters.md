@@ -482,7 +482,7 @@ The SelectBox UI component starts searching after a user has typed at least one 
 
 #####See Also#####
 - [SelectBox - Create a User-Defined Item](/concepts/05%20UI%20Components/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/SelectBox/Create_a_User-Defined_Item/')
-- [SelectBox - Handle the Value Change Event](/concepts/05%20UI%20Components/SelectBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/SelectBox/Handle_the_Value_Change_Event/')
+- [SelectBox - Handle the Value Change Event](/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/#Handle_the_Value_Change_Event)
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 
 [tags]selectBox, select box, editor, search, search mode, search expression, time interval, delay, search timeout, min search length

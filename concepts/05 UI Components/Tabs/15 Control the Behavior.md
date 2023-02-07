@@ -454,7 +454,7 @@ When the total length of all tabs exceeds the Tabs container, the UI component s
 ---
 
 #####See Also#####
-- [Tabs - Customize Item Appearance](/concepts/05%20UI%20Components/Tabs/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Tabs/Customize_Item_Appearance')
+- [Tabs - Create Predefined Tabs](/Documentation/Guide/UI_Components/Tabs/Getting_Started_with_Tabs/#Create_Predefined_Tabs)
 - [Tabs Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview)
 - [Tabs API Reference](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
 

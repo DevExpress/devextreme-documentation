@@ -2,8 +2,217 @@
 ##### merge
 
 ---
-By default, the UI component occupies the entire area of the container. If you need to set a particular size for the UI component, different from the container's size, assign a height and width in pixels to **height** and **width** properties of the **size** object.
+You can specify custom width and height for the component:
 
-Using the **size** object, you can hide the UI component. For this purpose, simply assign 0 to both the height and width of the UI component.
+<table class="dx-table">
+    <tr>
+        <th>Fixed</th>
+        <th>Relative</th>
+    </tr>
+    <tr>
+        <td>Assign values to the <b>size</b> object's <b>height</b> and <b>width</b> properties or specify a container for the component.</td>
+        <td>Specify a container for the component. The component occupies the container area.</td>
+    </tr>
+</table>
 
-[note]The **size** configuration object reserves space for the main UI component elements, while displaying a tooltip may require extra space. To reserve the area around the UI component for the tooltip, you can apply a <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">margin</a> to the UI component's container.
+[note]
+
+- The **size** object has priority over the container.
+
+- The **size** configuration object reserves space for the main UI component elements, while displaying a tooltip may require extra space. To reserve the area around the UI component for the tooltip, you can apply a <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">margin</a> to the UI component's container.
+
+[/note]
+
+Assign 0 to the **size** object's **height** and **width** properties to hide the component.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            size: {
+                height: 300,
+                width: 600
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ... >
+        <dxo-size
+            [height]="300"
+            [width]="600">
+        </dxo-size>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+    }
+
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            Dx{WidgetName}Module
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxSize
+                :height="300"
+                :width="600"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+
+    import Dx{WidgetName}, {
+        DxSize
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxSize
+        },
+        // ...
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import {WidgetName}, {
+        Size
+    } from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <{WidgetName} ... >
+                    <Size
+                        height={300}
+                        width={600}
+                    />
+                </{WidgetName}>
+            );
+        }
+    }
+    export default App;
+
+---
+
+Alternatively, you can use CSS to style the UI component's container:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#{widgetName}").dx{WidgetName}({
+            // ...
+        });
+    });
+
+    <!-- tab: styles.css -->
+    #{widgetName} {
+        width: 85%;
+        height: 70%;
+    }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ...
+        id="{widgetName}">
+    </dx-{widget-name}>
+
+    <!-- tab: app.styles.css -->
+    #{widgetName} {
+        width: 85%;
+        height: 70%;
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            id="{widgetName}">
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        },
+        // ...
+    }
+    </script>
+
+    <style>
+    #{widgetName} {
+        width: 85%;
+        height: 70%;
+    }
+    </style>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import {WidgetName} from 'devextreme-react/{widget-name}';
+
+    class App extends React.Component {
+        render() {
+            return (
+                <{WidgetName} ...
+                    id="{widgetName}">
+                </{WidgetName}>
+            );
+        }
+    }
+    export default App;
+
+    <!-- tab: styles.css -->
+    #{widgetName} {
+        width: 85%;
+        height: 70%;
+    }
+
+---

@@ -1,13 +1,18 @@
 ---
-id: BaseWidget.Options.size
-type: Object
-default: undefined
+default:  {height: 100, width: 300} or {height: 300, width: 100}
 ---
----
-##### shortDescription
-Specifies the UI component's size in pixels.
+The default size of the component depends on the [geometry](/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/geometry/).[orientation](/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/geometry/#orientation) property value:
 
----
+    <!-- tab: 'horizontal' -->{
+        height: 100,
+        width: 300
+    }
+
+    <!-- tab: 'vertical' -->{
+        height: 300,
+        width: 100
+    }
+
 You can specify custom width and height for the component:
 
 <table class="dx-table">

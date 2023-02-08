@@ -1,29 +1,18 @@
 ---
-id: BaseWidget.Options.size
-type: Object
-default: undefined
+default:  {height: 400, width: 800}
 ---
----
-##### shortDescription
-Specifies the UI component's size in pixels.
 
----
 You can specify custom width and height for the component:
 
-<table class="dx-table">
-    <tr>
-        <th>Fixed</th>
-        <th>Relative</th>
-    </tr>
-    <tr>
-        <td>Assign values to the <b>size</b> object's <b>height</b> and <b>width</b> properties or specify a container for the component.</td>
-        <td>Specify a container for the component. The component occupies the container area.</td>
-    </tr>
-</table>
+- Fixed    
+Assign values to the **size** object's **height** and **width** properties.
+
+- Relative    
+Specify a container for the component. The Chart occupies the container area.
 
 [note] The **size** object has priority over the container.
 
-Assign 0 to the **size** object's **height** and **width** properties to hide the component.
+Assign 0 to the **size** object's **height** and **width** properties to hide the Chart component.
 
 ---
 ##### jQuery

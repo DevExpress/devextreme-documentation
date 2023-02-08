@@ -151,6 +151,6 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #####See Also#####
 #include common-link-handleevents
 - [Popup - Customize the Content](/concepts/05%20UI%20Components/Popup/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popup/Customize_the_Appearance/Customize_the_Content/')
-- [Popup - Resize the Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/#Resize_the_Popup)
+- [Popup - Resize the Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup/06%20Resize%20the%20Popup.md '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/#Resize_the_Popup')
 - [Popup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview)
 - [Popup API Reference](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')

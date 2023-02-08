@@ -372,7 +372,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 #####See Also#####
 - [TreeView - Use Hierarchical Data](/concepts/05%20UI%20Components/TreeView/05%20Use%20Hierarchical%20Data.md '/Documentation/Guide/UI_Components/TreeView/Use_Hierarchical_Data')
 - [TreeView - Access a Node](/concepts/05%20UI%20Components/TreeView/10%20Access%20a%20Node '/Documentation/Guide/UI_Components/TreeView/Access_a_Node')
-- [TreeView - Customize Node Appearance](/concepts/05%20UI%20Components/TreeView/30%20Customize%20Node%20Appearance.md '/Documentation/Guide/UI_Components/TreeView/Customize_Node_Appearance')
+- [TreeView - Customize Node Appearance](/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/#Customize_Node_Appearance)
 - [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
 [tags]treeview, tree view, plain data structure, dataSctructure, keyExpr, displayExpr, parentIdExpr

@@ -23,8 +23,6 @@ You can specify custom width and height for the component:
 
 [note] The **size** object has priority over the container.
 
-Assign 0 to the **size** object's **height** and **width** properties to hide the component.
-
 ---
 ##### jQuery
 

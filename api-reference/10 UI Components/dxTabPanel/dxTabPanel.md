@@ -6,7 +6,7 @@ inherits: dxMultiView
 ---
 ---
 ##### shortDescription
-The TabPanel is a UI component consisting of the [Tabs](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/') and [MultiView](/Documentation/ApiReference/UI_Components/dxMultiView/) UI components. It automatically synchronizes the selected tab with the currently displayed view, and vice versa.
+The TabPanel is a UI component consisting of the [Tabs](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/') and [MultiView](/api-reference/10%20UI%20Components/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/') UI components. It automatically synchronizes the selected tab with the currently displayed view, and vice versa.
 
 ##### widgettree
 dataSource: [

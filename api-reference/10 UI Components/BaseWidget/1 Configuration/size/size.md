@@ -8,7 +8,7 @@ default: undefined
 Specifies the UI component's size in pixels.
 
 ---
-You can specify custom width and height for the component:
+You can specify a custom width and height for the component:
 
 <table class="dx-table">
     <tr>

@@ -1,5 +1,10 @@
 ---
-default:  {height: 100, width: 300} or {height: 300, width: 100}
+default:  {height: 100, width: 300} | {height: 300, width: 100}
+---
+---
+##### shortDescription
+Specifies the UI component's size in pixels. The default value depends on the component orientation.
+
 ---
 The default size of the component depends on the [geometry](/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/geometry/).[orientation](/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/geometry/#orientation) property value:
 

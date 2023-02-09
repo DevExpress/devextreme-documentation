@@ -18,7 +18,7 @@ The default size of the component depends on the [geometry](/Documentation/ApiRe
         width: 100
     }
 
-You can specify custom width and height for the component:
+You can specify a custom width and height for the component:
 
 <table class="dx-table">
     <tr>

@@ -117,4 +117,4 @@ Configures the DevExtreme UI component used as a toolbar item.
 [note]If you use the Menu UI component as a toolbar item, the [adaptivityEnabled](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled') property does not apply.
 
 #####See Also#####
-- [Create a Toolbar and its Items](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_a_Toolbar_and_its_Items)
+- [Create a Toolbar and its Items](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar/05%20Create%20a%20Toolbar%20and%20its%20Items.md '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Create_a_Toolbar_and_its_Items')

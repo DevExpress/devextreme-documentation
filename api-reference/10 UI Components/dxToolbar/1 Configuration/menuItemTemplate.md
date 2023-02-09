@@ -94,5 +94,5 @@ A template name or container.
 ---
 
 #####See Also#####
-- [Customize Items](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Customize_Items)
+- [Customize Items](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar/15%20Customize%20Items.md '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/#Customize_Items')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

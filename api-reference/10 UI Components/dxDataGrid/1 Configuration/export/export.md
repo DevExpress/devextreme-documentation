@@ -46,19 +46,16 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- Export to Excel -->
         npm install --save exceljs file-saver
+        npm i --save-dev @types/file-saver
 
         <!-- tab: tsconfig.app.json -->
         <!-- Export to Excel -->
         {
             "compilerOptions": {
                 // ...
-                "paths": {
-                    // ...
-                    "exceljs": [
-                        "node_modules/exceljs/dist/exceljs.min.js"
-                    ]
-                }
-            }
+                "outDir": "./out-tsc/app",
+                "types": ["node"]
+            },
         }
 
     ##### Vue
@@ -143,7 +140,6 @@ The following instructions show how to enable and configure client-side export:
         })
         export class AppModule { }
 
-
     ##### Vue
 
         <!-- tab: App.vue -->
@@ -222,9 +218,8 @@ The following instructions show how to enable and configure client-side export:
                     worksheet: worksheet, 
                     component: e.component,
                     customizeCell: function(options) {
-                        var excelCell = options;
-                        excelCell.font = { name: 'Arial', size: 12 };
-                        excelCell.alignment = { horizontal: 'left' };
+                        options.excelCell.font = { name: 'Arial', size: 12 };
+                        options.excelCell.alignment = { horizontal: 'left' };
                     } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer().then(function(buffer) { 
@@ -246,7 +241,8 @@ The following instructions show how to enable and configure client-side export:
         import { Component } from '@angular/core';
         import { exportDataGrid } from 'devextreme/excel_exporter';
         import { Workbook } from 'exceljs';
-        import saveAs from 'file-saver';
+        import { saveAs } from 'file-saver';
+        import { ExportingEvent } from 'devextreme/ui/data_grid';
         
         @Component({
             selector: 'app-root',
@@ -254,16 +250,15 @@ The following instructions show how to enable and configure client-side export:
             styleUrls: ['./app.component.css']
         })
         export class AppComponent {
-            onExporting(e) {
+            onExporting(e: ExportingEvent) {
                 const workbook = new Workbook();    
                 const worksheet = workbook.addWorksheet('Main sheet');
                 exportDataGrid({
                     component: e.component,
                     worksheet: worksheet,
                     customizeCell: function(options) {
-                        const excelCell = options;
-                        excelCell.font = { name: 'Arial', size: 12 };
-                        excelCell.alignment = { horizontal: 'left' };
+                        options.excelCell.font = { name: 'Arial', size: 12 };
+                        options.excelCell.alignment = { horizontal: 'left' };
                     } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()
@@ -327,9 +322,8 @@ The following instructions show how to enable and configure client-side export:
                         component: e.component,
                         worksheet: worksheet,
                         customizeCell: function(options) {
-                            const excelCell = options;
-                            excelCell.font = { name: 'Arial', size: 12 };
-                            excelCell.alignment = { horizontal: 'left' };
+                            options.excelCell.font = { name: 'Arial', size: 12 };
+                            options.excelCell.alignment = { horizontal: 'left' };
                         } 
                     }).then(function() {
                         workbook.xlsx.writeBuffer()
@@ -369,9 +363,8 @@ The following instructions show how to enable and configure client-side export:
                     component: e.component,
                     worksheet: worksheet,
                     customizeCell: function(options) {
-                        const excelCell = options;
-                        excelCell.font = { name: 'Arial', size: 12 };
-                        excelCell.alignment = { horizontal: 'left' };
+                        options.excelCell.font = { name: 'Arial', size: 12 };
+                        options.excelCell.alignment = { horizontal: 'left' };
                     } 
                 }).then(function() {
                     workbook.xlsx.writeBuffer()

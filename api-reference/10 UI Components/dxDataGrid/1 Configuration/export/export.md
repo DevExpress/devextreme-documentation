@@ -66,8 +66,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- Export to Excel -->
         npm install --save exceljs file-saver
-
-        npm i --save-dev @types/file-saver
         
     ##### React
 
@@ -77,8 +75,6 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- Export to Excel -->
         npm install --save exceljs file-saver
-
-        npm i --save-dev @types/file-saver
         
     --- 
 

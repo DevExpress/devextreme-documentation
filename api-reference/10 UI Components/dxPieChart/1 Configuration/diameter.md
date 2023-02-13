@@ -14,5 +14,5 @@ This property accepts a number that identifies the ratio between the pie's diame
 
 #####See Also#####
 - [minDiameter](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/minDiameter.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#minDiameter')
-- [size](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/size/')
+- [size](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/size/')
 - [sizeGroup](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#sizeGroup')

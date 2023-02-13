@@ -20,7 +20,7 @@ The sparkline type determines how data is visualized. The following list shows p
     - [maxColor](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/maxColor.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#maxColor')
     - [showFirstLast](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/showFirstLast.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#showFirstLast')
     - [showMinMax](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/showMinMax.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#showMinMax')
-    - [size](/api-reference/10%20UI%20Components/BaseSparkline/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/size/')
+    - [size](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/size/')
     - [theme](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/theme.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#theme')
     - [tooltip](/api-reference/10%20UI%20Components/BaseSparkline/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/tooltip/')
     - [valueField](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/valueField.md '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/#valueField')

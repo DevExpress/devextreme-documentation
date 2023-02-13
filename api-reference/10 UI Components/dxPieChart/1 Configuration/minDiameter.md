@@ -15,5 +15,5 @@ This property specifies the minimum ratio between the pie's diameter and the UI 
 [note]This property is ignored if the [diameter](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/diameter.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#diameter') property is set.
 
 #####See Also#####
-- [size](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/size/')
+- [size](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/size '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/size/')
 - [sizeGroup](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/sizeGroup.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#sizeGroup')

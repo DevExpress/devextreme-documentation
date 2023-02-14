@@ -10,9 +10,7 @@ Formats a value before it is displayed in an axis label.
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
-For date-time axes, default formatting rules are the following. 
-
-When labels switch from one *point of time* to another, the Chart adds this *point of time* to the label. For example, if labels are numbers of month, the name of the month is added after every switch.
+When this property value is `undefined`, the date-time axes display larger date range boundaries in labels. For example, if an axis displays months, it also displays a year near each January. If an axis displays days, it also displays a month name near each first visible day mark.
 
 #####See Also#####
 - [customizeText](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/label/customizeText.md '{currentpath}/#customizeText')

@@ -4,6 +4,10 @@
 <th>API Member</th>
 </tr>
 <tr>
+<td>Chart</td>
+<td><b>argumentAxis.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory">aggregateByCategory</a></td>
+</tr>
+<tr>
 <td>ContextMenu</td>
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxContextMenu/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
 </tr>
@@ -33,7 +37,7 @@
 </tr>
 <tr>
 <td>RangeSelector</td>
-<td><b>behavior.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#callValueChanged">callValueChanged</a></td>
+<td><b>behavior.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#callValueChanged">callValueChanged</a><br><b>scale.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/#aggregateByCategory">aggregateByCategory</a></td>
 </tr>
 <tr>
 <td>Sankey</td>

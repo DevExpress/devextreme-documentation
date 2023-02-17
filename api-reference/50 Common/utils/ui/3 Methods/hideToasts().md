@@ -35,7 +35,7 @@ The code below uses a [Button](/api-reference/10%20UI%20Components/dxButton '/Do
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import hideToasts from 'devextreme/ui/hideToasts';
+    import hideToasts from 'devextreme/ui/toast/hide_toasts';
 
     @Component({
         selector: 'app-root',
@@ -61,7 +61,7 @@ The code below uses a [Button](/api-reference/10%20UI%20Components/dxButton '/Do
 
     <script>
         import { DxButton } from 'devextreme-vue/button';
-        import hideToasts from 'devextreme/ui/hideToasts';
+        import hideToasts from 'devextreme/ui/toast/hide_toasts';
 
         export default {
             methods: {
@@ -77,7 +77,7 @@ The code below uses a [Button](/api-reference/10%20UI%20Components/dxButton '/Do
     <!-- tab: App.js -->
     import React from 'react';
     import { Button } from 'devextreme-react/button';
-    import hideToasts from 'devextreme/ui/hideToasts';
+    import hideToasts from 'devextreme/ui/toast/hide_toasts';
 
     function App() {
         const onClick = () => { 

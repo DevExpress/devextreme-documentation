@@ -99,7 +99,7 @@ By default, the ColorBox does _not_ allow an end user to control the transparenc
 ---
 
 #####See Also#####
-- [ColorBox - Handle the Value Change Event](/concepts/05%20UI%20Components/ColorBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/ColorBox/Handle_the_Value_Change_Event')
+- [ColorBox - Handle the Value Change Event](/concepts/05%20UI%20Components/ColorBox/00%20Getting%20Started%20with%20ColorBox/20%20Handle%20Value%20Change.md '/Documentation/Guide/UI_Components/ColorBox/Getting_Started_with_ColorBox/#Handle_Value_Change')
 - [ColorBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview)
 - [ColorBox API Reference](/api-reference/10%20UI%20Components/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
 

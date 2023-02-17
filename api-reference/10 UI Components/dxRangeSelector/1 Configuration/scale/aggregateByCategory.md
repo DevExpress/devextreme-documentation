@@ -1,7 +1,8 @@
 ---
 id: dxRangeSelector.Options.scale.aggregateByCategory
 type: Boolean
-default: false
+default: true
+dep: dxChartSeriesTypes.CommonSeries.aggregation.enabled
 ---
 ---
 ##### shortDescription

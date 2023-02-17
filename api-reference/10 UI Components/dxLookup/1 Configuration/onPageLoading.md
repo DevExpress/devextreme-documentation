@@ -21,4 +21,4 @@ Model data. Available only if Knockout is used.
 
 ---
 #####See Also#####
-- [Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
+- [Enable Pagination](/concepts/05%20UI%20Components/Lookup/00%20Getting%20Started%20with%20Lookup/30%20Enable%20Pagination.md '/Documentation/Guide/UI_Components/Lookup/Getting_Started_with_Lookup/#Enable_Pagination')

@@ -190,7 +190,7 @@ Note that you need to implement the [onCustomItemCreating](/api-reference/10%20U
 ---
 
 #####See Also#####
-- [TagBox - Handle the Value Change Event](/concepts/05%20UI%20Components/TagBox/04%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TagBox/Handle_the_Value_Change_Event/')
+- [TagBox - Handle the Value Change Event](/concepts/05%20UI%20Components/TagBox/00%20Getting%20Started%20with%20TagBox/40%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TagBox/Getting_Started_with_TagBox/#Handle_the_Value_Change_Event')
 - [TagBox - Configure Search Parameters](/concepts/05%20UI%20Components/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/TagBox/Configure_Search_Parameters/')
 - [TagBox - Control the Behavior](/concepts/05%20UI%20Components/TagBox/03%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TagBox/Control_the_Behavior/')
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')

@@ -8,7 +8,20 @@ default: undefined
 Specifies the UI component's size in pixels.
 
 ---
-The UI component occupies its container's entire area by default. Use the **size** object to specify the UI component's size if it should be different from that of its container. Assign 0 to **size** object's **height** and **width** properties to hide the UI component.
+You can specify a custom width and height for the component:
+
+<table class="dx-table">
+    <tr>
+        <th>Fixed</th>
+        <th>Relative</th>
+    </tr>
+    <tr>
+        <td>Assign values to the <b>size</b> object's <b>height</b> and <b>width</b> properties or specify a container for the component.</td>
+        <td>Specify a container for the component. The component occupies the container area.</td>
+    </tr>
+</table>
+
+[note] The **size** object has priority over the container.
 
 ---
 ##### jQuery
@@ -118,7 +131,7 @@ The UI component occupies its container's entire area by default. Use the **size
 
 ---
 
-Alternatively, you can style the UI component's container using CSS:
+Alternatively, you can use CSS to style the UI component's container:
 
 ---
 ##### jQuery

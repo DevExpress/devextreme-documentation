@@ -158,7 +158,7 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [Toast - Customize the Content](/concepts/05%20UI%20Components/Toast/10%20Customize%20the%20Content.md '/Documentation/Guide/UI_Components/Toast/Customize_the_Content/')
+- [Toast - Customize the Content](/concepts/05%20UI%20Components/Toast/00%20Getting%20Started%20with%20Toast/10%20Customize%20Toast%20Content.md '/Documentation/Guide/UI_Components/Toast/Getting_Started_with_Toast/#Customize_Toast_Content')
 - [Toast - Resize and Relocate](/concepts/05%20UI%20Components/Toast/15%20Resize%20and%20Relocate.md '/Documentation//Guide/UI_Components/Toast/Resize_and_Relocate/')
 - [Toast Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toast/Overview)
 - [Toast API Reference](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')

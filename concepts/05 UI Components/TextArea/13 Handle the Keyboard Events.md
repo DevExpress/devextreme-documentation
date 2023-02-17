@@ -143,7 +143,7 @@ If you are going to change the handling functions at runtime, or if you need to 
 #####See Also#####
 #include common-link-handleevents
 #include common-link-callmethods
-- [TextArea - Handle the Value Change Event](/concepts/05%20UI%20Components/TextArea/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Value_Change_Event/')
+- [TextArea - Handle the Value Change Event](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea/20%20Handle%20Value%20Change.md '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/#Handle_Value_Change')
 - [TextArea Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview)
 
 [tags]textArea, text area, editor, keyboard events, keyup, keydown, keypress, enterkey

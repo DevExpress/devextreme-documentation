@@ -1,7 +1,8 @@
 ---
 id: dxChart.Options.argumentAxis.aggregateByCategory
 type: Boolean
-default: false
+default: true
+dep: dxChartSeriesTypes.CommonSeries.aggregation.enabled
 ---
 ---
 ##### shortDescription

@@ -97,8 +97,8 @@ The DateBox UI component allows an end user to pick or type a value. To specify 
 
 #####See Also#####
 #include common-link-handleevents
-- [DateBox - Handle the Value Change Event](/concepts/05%20UI%20Components/DateBox/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/DateBox/Handle_the_Value_Change_Event')
-- [DateBox - Specify Value Range](/concepts/05%20UI%20Components/DateBox/15%20Specify%20Value%20Range.md '/Documentation/Guide/UI_Components/DateBox/Specify_Value_Range')
+- [DateBox - Handle the Value Change Event](/concepts/05%20UI%20Components/DateBox/00%20Getting%20Started%20with%20DateBox/20%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateBox/#Handle_the_Value_Change_Event')
+- [DateBox - Set the Accepted Date Range](/concepts/05%20UI%20Components/DateBox/00%20Getting%20Started%20with%20DateBox/13%20Set%20the%20Accepted%20Date%20Range.md '/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateBox/#Set_the_Accepted_Date_Range')
 - [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
 - [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
 

@@ -9,19 +9,6 @@ Customizes the text displayed in column cells.
 ##### param(cellInfo): Object
 Information on the current cell.
 
-##### field(cellInfo.groupInterval): String | Number
-Indicates how header filter values were combined into groups. Available if **target** is *"headerFilter"*.  
-See the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property's description for possible values.
-
-##### field(cellInfo.target): String
-The UI element where the **customizeText** function was called: *"row"*, *"filterRow"*, *"headerFilter"*, *"search"*, *"filterPanel"*, or *"filterBuilder"*.
-
-##### field(cellInfo.value): any
-The cell value.
-
-##### field(cellInfo.valueText): String
-The [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#format') value converted to a string.
-
 ##### return: String
 The text the cell should display.
 

@@ -20,7 +20,7 @@ Remote group paging has the following specificities:
 
     - Disable the **column**.[autoExpandGroup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#autoExpandGroup) property for the column the DataGrid is grouped by.
 
-- If you call the [expandAll(groupIndex)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAllgroupIndex') method, the remote group paging does not apply.
+- If you call the [expandAll(groupIndex)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/expandAll(groupIndex).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#expandAllgroupIndex') method, remote group paging does not apply.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteGrouping/"

@@ -75,70 +75,79 @@ The following example shows a **CustomStore** that sends data processing setting
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
     import { HttpClient, HttpParams } from '@angular/common/http';
-
+    import { LoadOptions } from 'devextreme/data';
     import CustomStore from 'devextreme/data/custom_store';
+    import { lastValueFrom } from 'rxjs';
+    import DataSource from 'devextreme/data/data_source';
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css']
     })
+
     export class AppComponent {
-        customDataSource: CustomStore;
+        customDataSource: DataSource;
         constructor(private http: HttpClient) {
-            const isNotEmpty = (value) => value !== undefined && value !== null && value !== '';
-            
-            this.customDataSource = new CustomStore({
-                key: 'ID',
-                load: (loadOptions) => {
-                    let params: HttpParams = new HttpParams();
+            const isNotEmpty = (value: unknown) => value !== undefined && value !== null && value !== '';
 
-                    [
-                        'filter',
-                        'group', 
-                        'groupSummary',
-                        'parentIds',
-                        'requireGroupCount',
-                        'requireTotalCount',
-                        'searchExpr',
-                        'searchOperation',
-                        'searchValue',
-                        'select',
-                        'sort',
-                        'skip',     
-                        'take',
-                        'totalSummary', 
-                        'userData'
-                    ].forEach(function(i) {
-                        if(i in loadOptions && isNotEmpty(loadOptions[i])) {
-                            params[i] = JSON.stringify(loadOptions[i]);
-                        }
-                    });
+            this.customDataSource = new DataSource({
+                store: new CustomStore({
+                    key: 'ID',
+                    load: (loadOptions: LoadOptions) => {
+                        let params: HttpParams = new HttpParams();
 
-                    return this.http.get('https://mydomain.com/MyDataService', { params: params })
-                        .toPromise()
-                        .then(response => {
+                        [
+                            'filter',
+                            'group',
+                            'groupSummary',
+                            'parentIds',
+                            'requireGroupCount',
+                            'requireTotalCount',
+                            'searchExpr',
+                            'searchOperation',
+                            'searchValue',
+                            'select',
+                            'sort',
+                            'skip',
+                            'take',
+                            'totalSummary',
+                            'userData',
+                        ].forEach(function (i) {
+                            if (i in loadOptions && isNotEmpty(loadOptions[i as keyof LoadOptions])) {
+                                params = params.set(i, JSON.stringify(loadOptions[i as keyof LoadOptions]));
+                            }
+                        });
+
+                        return lastValueFrom(
+                            this.http.get(
+                                'https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/orders',
+                                { params }
+                            )
+                        ).then((response: any) => {
                             return {
-                                data: response.data,
-                                totalCount: response.totalCount,
-                                summary: response.summary,
-                                groupCount: response.groupCount
+                                data: response?.data,
+                                totalCount: response?.totalCount,
+                                summary: response?.summary,
+                                groupCount: response?.groupCount,
                             };
-                        })
-                        .catch(() => { throw 'Data loading error' });
-                },
-                // Needed to process selected value(s) in the SelectBox, Lookup, Autocomplete, and DropDownBox
-                // byKey: (key) => {
-                //     return this.http.get('https://mydomain.com/MyDataService?id=' + key)
-                //         .toPromise();
-                // }
+                        }).catch(() => {
+                            throw 'Data loading error';
+                        });
+                    },
+                    // Needed to process selected value(s) in the SelectBox, Lookup, Autocomplete, and DropDownBox
+                    // byKey: (key: number) => {
+                    //     return lastValueFrom(
+                    //        this.http.get(`$https://mydomain.com/MyDataService?id=${key}`)
+                    //     );
+                    // },
+                }),
             });
         }
     }
 
-     <!-- tab: app.component.html -->
+    <!-- tab: app.component.html -->
     <dx-data-grid
         [dataSource]="customDataSource">
         <dxo-remote-operations

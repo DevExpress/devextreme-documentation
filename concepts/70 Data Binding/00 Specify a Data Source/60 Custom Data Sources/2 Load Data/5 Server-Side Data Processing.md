@@ -75,16 +75,19 @@ The following example shows a **CustomStore** that sends data processing setting
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { HttpClient, HttpParams } from '@angular/common/http';
-    import { LoadOptions } from 'devextreme/data';
-    import CustomStore from 'devextreme/data/custom_store';
+    import { Component } from '@angular/core';
+    import { HttpClient, HttpParams } from '@angular/common/http';   
     import { lastValueFrom } from 'rxjs';
+ 
     import DataSource from 'devextreme/data/data_source';
+    import CustomStore from 'devextreme/data/custom_store';   
+    import { LoadOptions } from 'devextreme/data';
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        styleUrls: ['./app.component.css'],
+        providers: [HttpClient]
     })
 
     export class AppComponent {
@@ -115,14 +118,15 @@ The following example shows a **CustomStore** that sends data processing setting
                             'totalSummary',
                             'userData',
                         ].forEach(function (i) {
-                            if (i in loadOptions && isNotEmpty(loadOptions[i as keyof LoadOptions])) {
-                                params = params.set(i, JSON.stringify(loadOptions[i as keyof LoadOptions]));
+                            const optionValue = loadOptions[i as keyof LoadOptions];
+                            if (i in loadOptions && isNotEmpty(optionValue)) {
+                                params = params.set(i, JSON.stringify(optionValue));
                             }
                         });
 
                         return lastValueFrom(
                             this.http.get(
-                                'https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/orders',
+                                'https://mydomain.com/MyDataService',
                                 { params }
                             )
                         ).then((response: any) => {

@@ -1,7 +1,6 @@
 ---
 id: dxBox.Options.align
-acceptValues: 'center' | 'end' | 'space-around' | 'space-between' | 'start'
-type: String
+type: Enums.Distribution
 default: 'start'
 ---
 ---

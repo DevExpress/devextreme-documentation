@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.rowDragging.dropFeedbackMode
-acceptValues: 'push' | 'indicate'
-type: String
+type: Enums.DragHighlight
 default: 'indicate'
 ---
 ---

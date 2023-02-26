@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.stateStoring.type
-acceptValues: 'custom' | 'localStorage' | 'sessionStorage'
-type: String
+type: Enums.StateStoreType
 default: 'localStorage'
 ---
 ---

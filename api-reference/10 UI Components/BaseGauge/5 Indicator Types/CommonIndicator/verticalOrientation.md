@@ -1,7 +1,6 @@
 ---
 id: CommonIndicator.verticalOrientation
-acceptValues: 'bottom' | 'top'
-type: String
+type: Enums.VerticalEdge
 default: 'bottom' (value_indicators), 'top' (subvalue_indicators)
 ---
 ---

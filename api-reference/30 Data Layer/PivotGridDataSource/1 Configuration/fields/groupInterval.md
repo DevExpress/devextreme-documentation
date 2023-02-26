@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.groupInterval
-acceptValues: 'day' | 'dayOfWeek' | 'month' | 'quarter' | 'year'
-type: String | Number
+type: Enums.PivotGridGroupInterval | Number
 default: undefined
 ---
 ---

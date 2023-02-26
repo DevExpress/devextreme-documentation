@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.selectionMode
-acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'none' | 'onlyPoint'
-type: String
+type: Enums.PointInteractionMode
 default: 'onlyPoint'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.title.textOverflow
-acceptValues: 'ellipsis' | 'hide' | 'none'
-type: String
+type: Enums.TextOverflow
 default: 'ellipsis'
 ---
 ---

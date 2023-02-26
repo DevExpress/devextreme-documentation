@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.BubbleSeries.aggregation.method
-acceptValues: 'avg' | 'custom'
-type: String
+type: Enums.ChartBubbleSeriesAggregationMethod
 default: 'avg'
 ---
 ---

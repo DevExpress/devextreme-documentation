@@ -1,7 +1,6 @@
 ---
 id: dxPivotGrid.Options.rowHeaderLayout
-acceptValues: 'standard' | 'tree'
-type: String
+type: Enums.PivotGridRowHeaderLayout
 default: 'standard'
 ---
 ---

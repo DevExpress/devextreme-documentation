@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.dataType
-acceptValues: 'date' | 'number' | 'string'
-type: String
+type: Enums.PivotGridDataType
 default: undefined
 ---
 ---

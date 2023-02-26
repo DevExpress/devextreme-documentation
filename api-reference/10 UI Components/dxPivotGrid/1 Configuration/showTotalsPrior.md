@@ -1,7 +1,6 @@
 ---
 id: dxPivotGrid.Options.showTotalsPrior
-acceptValues: 'both' | 'columns' | 'none' | 'rows'
-type: String
+type: Enums.PivotGridTotalDisplayMode
 default: 'none'
 ---
 ---

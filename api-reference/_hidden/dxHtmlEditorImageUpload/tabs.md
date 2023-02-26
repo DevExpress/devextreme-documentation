@@ -1,7 +1,6 @@
 ---
 id: dxHtmlEditorImageUpload.tabs
-acceptValues: 'url' | 'file'
-type: Array<dxHtmlEditorImageUploadTabItem, String>
+type: Array<dxHtmlEditorImageUploadTabItem, Enums.HtmlEditorImageUploadTab>
 inheritsType: dxHtmlEditorImageUploadTabItem
 default: ['url']
 ---

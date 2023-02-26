@@ -1,7 +1,6 @@
 ---
 id: dxFormButtonItem.horizontalAlignment
-acceptValues: 'center' | 'left' | 'right'
-type: String
+type: Enums.HorizontalAlignment
 default: 'right'
 ---
 ---

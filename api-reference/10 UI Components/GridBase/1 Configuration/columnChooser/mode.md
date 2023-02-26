@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.columnChooser.mode
-acceptValues: 'dragAndDrop' | 'select'
-type: String
+type: Enums.ColumnChooserMode
 default: 'dragAndDrop'
 ---
 ---

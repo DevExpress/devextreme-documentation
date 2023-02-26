@@ -1,7 +1,6 @@
 ---
 id: BaseLegendItem.marker.state
-acceptValues: 'normal' | 'hovered' | 'selected'
-type: String
+type: Enums.LegendMarkerState
 ---
 ---
 ##### shortDescription

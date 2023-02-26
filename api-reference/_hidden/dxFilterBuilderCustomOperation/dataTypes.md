@@ -1,7 +1,6 @@
 ---
 id: dxFilterBuilderCustomOperation.dataTypes
-acceptValues: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
-type: Array<String>
+type: Array<Enums.DataType>
 default: undefined
 ---
 ---

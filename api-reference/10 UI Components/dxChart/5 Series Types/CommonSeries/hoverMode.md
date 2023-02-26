@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.hoverMode
-acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'excludePoints' | 'includePoints' | 'nearestPoint' | 'none' | 'onlyPoint'
-type: String
+type: Enums.SeriesHoverMode
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.autoLayout.type
-acceptValues: 'auto' | 'off' | 'tree' | 'layered'
-type: String
+type: Enums.DiagramDataLayoutType
 ---
 ---
 ##### shortDescription

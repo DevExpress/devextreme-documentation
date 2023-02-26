@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.runningTotal
-acceptValues: 'column' | 'row'
-type: String
+type: Enums.PivotGridRunningTotalMode
 default: undefined
 ---
 ---

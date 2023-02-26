@@ -1,7 +1,6 @@
 ---
 id: DataChange.type
-acceptValues: 'insert' | 'update' | 'remove'
-type: String
+type: Enums.DataChangeType
 ---
 ---
 ##### shortDescription

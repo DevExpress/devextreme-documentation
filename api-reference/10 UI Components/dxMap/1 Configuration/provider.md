@@ -1,7 +1,6 @@
 ---
 id: dxMap.Options.provider
-acceptValues: 'bing' | 'google' | 'googleStatic'
-type: String
+type: Enums.MapProvider
 default: 'google'
 ---
 ---

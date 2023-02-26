@@ -1,7 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.dashStyle
-acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
-type: String
+type: Enums.DashStyle
 default: 'solid'
 ---
 ---

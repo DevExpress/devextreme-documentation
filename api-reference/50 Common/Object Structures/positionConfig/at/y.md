@@ -1,7 +1,6 @@
 ---
 id: PositionConfig.at.y
-acceptValues: 'bottom' | 'center' | 'top'
-type: String
+type: Enums.VerticalAlignment
 ---
 ---
 ##### shortDescription

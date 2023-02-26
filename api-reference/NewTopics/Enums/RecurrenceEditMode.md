@@ -1,0 +1,15 @@
+---
+id: Enums.RecurrenceEditMode
+acceptValues: 'dialog' | 'occurrence' | 'series'
+type: Union
+---
+---
+##### shortDescription
+Deletes a recurring appointment occurrence.
+Specifies the edit mode for recurring appointments.
+
+---
+<!--
+dxScheduler.deleteRecurrence(appointment, date, recurrenceEditMode)(10 UI Components\dxScheduler\3 Methods\deleteRecurrence(appointment_date_recurrenceEditMode).md)
+dxSchedulerOptions.recurrenceEditMode(10 UI Components\dxScheduler\1 Configuration\recurrenceEditMode.md)(ui\scheduler.d.ts)
+-->

@@ -1,7 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionMode
-acceptValues: 'none' | 'onlyPoint'
-type: String
+type: Enums.PieChartSeriesInteractionMode
 default: 'onlyPoint'
 ---
 ---

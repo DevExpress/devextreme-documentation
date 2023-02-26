@@ -1,0 +1,15 @@
+---
+id: Enums.DataGridPredefinedColumnButton
+acceptValues: 'cancel' | 'delete' | 'edit' | 'save' | 'undelete'
+type: Union
+---
+---
+##### shortDescription
+Allows you to customize buttons in the edit column or create a custom [command column](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/'). Applies only if the column's [type](/api-reference/_hidden/dxDataGridColumn/type.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#type') is *"buttons"*.
+The name used to identify a built-in button.
+
+---
+<!--
+dxDataGridColumn.buttons(_hidden\dxDataGridColumn\buttons\buttons.md)
+dxDataGridColumnButton.name(_hidden\dxDataGridColumnButton\name.md)
+-->

@@ -1,7 +1,6 @@
 ---
 id: dxSankey.Options.link.colorMode
-acceptValues: 'none' | 'source' | 'target' | 'gradient'
-type: String
+type: Enums.SankeyColorMode
 default: 'none'
 ---
 ---

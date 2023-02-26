@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.maxRange
-acceptValues: 'day' | 'hour' | 'millisecond' | 'minute' | 'month' | 'quarter' | 'second' | 'week' | 'year'
-type: Number | Object | String
+type: Number | Object | Enums.TimeInterval
 inherits: VizTimeInterval
 ---
 ---

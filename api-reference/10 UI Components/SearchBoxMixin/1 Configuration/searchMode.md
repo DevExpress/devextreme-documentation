@@ -1,7 +1,6 @@
 ---
 id: SearchBoxMixin.Options.searchMode
-acceptValues: 'contains' | 'startswith' | 'equals'
-type: String
+type: Enums.SearchMode
 default: 'contains'
 ---
 ---

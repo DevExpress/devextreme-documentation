@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.paletteExtensionMode
-acceptValues: 'alternate' | 'blend' | 'extrapolate'
-type: String
+type: Enums.PaletteExtensionMode
 default: 'blend'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxGantt.Options.scaleTypeRange.min
-acceptValues: 'auto' | 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years'
-type: String
+type: Enums.GanttScaleType
 default: 'minutes'
 ---
 ---

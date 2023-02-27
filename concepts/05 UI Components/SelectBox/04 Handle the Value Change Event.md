@@ -1,4 +1,4 @@
-By default, the value of the SelectBox is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueChangeEvent') property.
+By default, the value of the SelectBox is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [customItemCreateEvent](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#customItemCreateEvent) property.
 
 ---
 ##### jQuery
@@ -15,7 +15,8 @@ By default, the value of the SelectBox is changed when the <a href="https://deve
             dataSource: selectBoxData,
             valueExpr: 'id',
             displayExpr: 'country',
-            valueChangeEvent: 'keyup'
+            acceptCustomValue: true,
+            customItemCreateEvent: 'keyup'
         });
     });
 
@@ -26,7 +27,8 @@ By default, the value of the SelectBox is changed when the <a href="https://deve
         [dataSource]="selectBoxData"
         valueExpr="id"
         displayExpr="country"
-        valueChangeEvent="keyup">
+        [acceptCustomValue]="true"
+        customItemCreateEvent="keyup">
     </dx-select-box>
 
     <!--TypeScript-->
@@ -55,7 +57,8 @@ By default, the value of the SelectBox is changed when the <a href="https://deve
             :data-source="selectBoxData"
             display-expr="country"
             value-expr="id"
-            value-change-event="keyup"
+            :accept-custom-value="true",
+            custom-item-create-event="keyup"
         />
     </template>
 
@@ -102,7 +105,8 @@ By default, the value of the SelectBox is changed when the <a href="https://deve
                     dataSource={selectBoxData} 
                     displayExpr="country"
                     valueExpr="id"
-                    valueChangeEvent="keyup"
+                    acceptCustomValue={true}
+                    customItemCreateEvent="keyup"
                 />
             );
         }

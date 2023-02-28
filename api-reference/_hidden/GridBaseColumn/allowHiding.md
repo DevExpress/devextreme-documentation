@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether a user can hide the column using the column chooser at runtime. Applies only if **columnChooser**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser/enabled.md '{basewidgetpath}/Configuration/columnChooser/#enabled') is **true**.
+Specifies whether a user can hide the column using the column chooser at runtime. Applies only if **columnChooser**.[enabled](/api-reference/40%20Common%20Types/ColumnChooser/enabled.md '{basewidgetpath}/Configuration/columnChooser/#enabled') is **true**.
 
 ---
 #include common-demobutton with {

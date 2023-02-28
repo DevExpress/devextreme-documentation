@@ -1,4 +1,4 @@
-The column chooser allows a user to change the set of columns at runtime. It is configured using the [columnChooser](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/') object and may operate in two [modes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#mode'): the default drag and drop mode and the select mode designed for touch devices.
+The column chooser allows a user to change the set of columns at runtime. It is configured using the [columnChooser](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/') object and may operate in two [modes](/api-reference/40%20Common%20Types/ColumnChooser/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#mode'): the default drag and drop mode and the select mode designed for touch devices.
 
 ---
 ##### jQuery

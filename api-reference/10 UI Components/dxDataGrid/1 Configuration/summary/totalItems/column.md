@@ -16,3 +16,4 @@ To provide data for a summary item, assign the [name](/api-reference/_hidden/Gri
 
 #####See Also#####
 - [Total Summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/10%20Total%20Summary '/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/')
+- [calculateCustomSummary](Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#calculateCustomSummary)

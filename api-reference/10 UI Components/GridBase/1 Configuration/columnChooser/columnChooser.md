@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.columnChooser
 type: Object
+inherits: ColumnChooser
 ---
 ---
 ##### shortDescription

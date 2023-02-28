@@ -1,4 +1,4 @@
-The SelectBox value changes when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event raises. If you need the value to be changed on another event, set the [customItemCreateEvent](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#customItemCreateEvent) property.
+The SelectBox value changes when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event raises. If you need the value to be changed on another event, set the [customItemCreateEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/customItemCreateEvent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#customItemCreateEvent') property.
 
 ---
 ##### jQuery

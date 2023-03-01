@@ -76,6 +76,7 @@
 
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
   
+  <MenuRule Destination="10 UI Components/zz Common Types/" SourcePattern="ApiReference:^40 Common Types/" />
   <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/((A|a)nimationConfig|(P|p)ositionConfig)" />
   <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/API/$1" SourcePattern="ApiReference:^50 Common/utils/(animationPresets|fx|TransitionExecutor)" />
   <MenuRule Destination="10 UI Components/zz Utilities/Data Export/API/$1" SourcePattern="ApiReference:^50 Common/utils/(excel.*|pdf.*)" />

@@ -730,9 +730,6 @@
     "collectionWidgetOptions.selectedItems": {
       "vue": "selected-items"
     },
-    "collectionWidgetOptions.selectionByClick": {
-      "vue": "selection-by-click"
-    },
     "collectionWidgetOptions.selectionMode": {
       "vue": "selection-mode"
     },
@@ -1059,6 +1056,9 @@
     },
     "dxBarGaugeOptions.baseValue": {
       "vue": "base-value"
+    },
+    "dxBarGaugeOptions.centerTemplate": {
+      "vue": "center-template"
     },
     "dxBarGaugeOptions.endValue": {
       "vue": "end-value"
@@ -2947,6 +2947,9 @@
       "angular": "dx-circular-gauge",
       "react": "CircularGauge",
       "vue": "DxCircularGauge"
+    },
+    "dxCircularGaugeOptions.centerTemplate": {
+      "vue": "center-template"
     },
     "dxCircularGaugeOptions.geometry": {
       "angular": "dxo-geometry",
@@ -6527,6 +6530,9 @@
     },
     "dxListOptions.selectAllText": {
       "vue": "select-all-text"
+    },
+    "dxListOptions.selectByClick": {
+      "vue": "select-by-click"
     },
     "dxListOptions.selectedIndex": {
       "vue": "selected-index"

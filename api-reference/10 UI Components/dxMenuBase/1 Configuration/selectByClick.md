@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not an item becomes selected if a user clicks it.
+Specifies whether an item is selected if a user clicks it.
 
 ---

@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether an item becomes selected if a user clicks it.
+Specifies whether an item is selected if a user clicks it.
 
 ---
 #include common-demobutton with {

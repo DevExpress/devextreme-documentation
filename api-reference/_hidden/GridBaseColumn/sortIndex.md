@@ -2,7 +2,6 @@
 id: GridBaseColumn.sortIndex
 type: Number
 default: undefined
-firedEvents: optionChanged
 ---
 ---
 ##### shortDescription

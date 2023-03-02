@@ -1,8 +1,7 @@
 ---
 id: GridBase.Options.columnWidth
-type: Number | String
+type: Number | Enums.Mode
 default: undefined
-acceptValues: 'auto'
 ---
 ---
 ##### shortDescription

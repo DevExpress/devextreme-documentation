@@ -1,7 +1,6 @@
 ---
 id: DataSource.Options.store.type
-acceptValues: 'array' | 'local' | 'odata'
-type: String
+type: Enums.StoreType
 ---
 ---
 ##### shortDescription

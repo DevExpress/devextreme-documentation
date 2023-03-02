@@ -1,7 +1,6 @@
 ---
 id: dxTextBox.Options.mode
-acceptValues: 'email' | 'password' | 'search' | 'tel' | 'text' | 'url'
-type: String
+type: Enums.TextBoxType
 default: 'text'
 ---
 ---

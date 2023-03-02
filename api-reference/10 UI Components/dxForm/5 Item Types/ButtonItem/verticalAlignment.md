@@ -1,7 +1,6 @@
 ---
 id: dxFormButtonItem.verticalAlignment
-acceptValues: 'bottom' | 'center' | 'top'
-type: String
+type: Enums.VerticalAlignment
 default: 'top'
 ---
 ---

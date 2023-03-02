@@ -1,7 +1,6 @@
 ---
 id: dxPieChart.Options.resolveLabelOverlapping
-acceptValues: 'hide' | 'none' | 'shift'
-type: String
+type: Enums.ShiftLabelOverlap
 default: 'none'
 ---
 ---

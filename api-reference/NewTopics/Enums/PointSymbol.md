@@ -1,0 +1,17 @@
+---
+id: Enums.PointSymbol
+acceptValues: 'circle' | 'cross' | 'polygon' | 'square' | 'triangle' | 'triangleDown' | 'triangleUp'
+type: Union
+---
+---
+##### shortDescription
+Specifies which symbol should represent series points in scatter, line- and area-like series.
+Specifies a symbol for presenting points of the line and area series.
+Specifies a symbol to use as a point marker on a sparkline. Available for the sparklines of the line- and area-like types.
+
+---
+<!--
+dxChartSeriesTypes.CommonSeries.point.symbol(10 UI Components\dxChart\5 Series Types\CommonSeries\point\symbol.md)(common\charts.d.ts)
+dxPolarChartSeriesTypes.CommonPolarChartSeries.point.symbol(10 UI Components\dxPolarChart\5 Series Types\CommonPolarChartSeries\point\symbol.md)(common\charts.d.ts)
+dxSparklineOptions.pointSymbol(10 UI Components\dxSparkline\1 Configuration\pointSymbol.md)(common\charts.d.ts)
+-->

@@ -1,7 +1,6 @@
 ---
 id: dxRadioGroup.Options.layout
-acceptValues: 'horizontal' | 'vertical'
-type: String
+type: Enums.Orientation
 default: 'vertical', 'horizontal' (tablets)
 ---
 ---

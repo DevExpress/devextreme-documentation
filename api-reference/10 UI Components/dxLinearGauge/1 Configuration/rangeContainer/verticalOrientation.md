@@ -1,7 +1,6 @@
 ---
 id: dxLinearGauge.Options.rangeContainer.verticalOrientation
-acceptValues: 'bottom' | 'center' | 'top'
-type: String
+type: Enums.VerticalAlignment
 default: 'bottom'
 ---
 ---

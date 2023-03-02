@@ -1,0 +1,17 @@
+---
+id: Enums.DiscreteAxisDivisionMode
+acceptValues: 'betweenLabels' | 'crossLabels'
+type: Union
+---
+---
+##### shortDescription
+Specifies whether ticks and grid lines should cross axis labels or lie between them. Applies only to the axes of the *"discrete"* type.
+Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels.
+Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels.
+
+---
+<!--
+dxChartOptions.commonAxisSettings.discreteAxisDivisionMode(10 UI Components\dxChart\1 Configuration\commonAxisSettings\discreteAxisDivisionMode.md)(common\charts.d.ts)
+dxPolarChartOptions.commonAxisSettings.discreteAxisDivisionMode(10 UI Components\dxPolarChart\1 Configuration\commonAxisSettings\discreteAxisDivisionMode.md)(common\charts.d.ts)
+dxRangeSelectorOptions.scale.discreteAxisDivisionMode(10 UI Components\dxRangeSelector\1 Configuration\scale\discreteAxisDivisionMode.md)(common\charts.d.ts)
+-->

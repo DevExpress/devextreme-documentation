@@ -11,7 +11,7 @@ Applies a single [text format](/concepts/05%20UI%20Components/HtmlEditor/10%20Fo
 ##### param(length): Number
 <!-- %param(length)% -->
 
-##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
+##### param(formatName): Enums.HtmlEditorFormat | String
 <!-- %param(formatName)% -->
 
 ##### param(formatValue): any

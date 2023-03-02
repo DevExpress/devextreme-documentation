@@ -1,7 +1,6 @@
 ---
 id: dxFileManagerContextMenu.items
-acceptValues: 'create' | 'upload' | 'refresh' | 'download' | 'move' | 'copy' | 'rename' | 'delete'
-type: Array<dxFileManagerContextMenuItem, String>
+type: Array<dxFileManagerContextMenuItem, Enums.FileManagerPredefinedContextMenuItem>
 default: [ 'create', 'upload', 'rename', 'move', 'copy', 'delete', 'refresh', 'download' ]
 inheritsType: dxFileManagerContextMenuItem
 ---

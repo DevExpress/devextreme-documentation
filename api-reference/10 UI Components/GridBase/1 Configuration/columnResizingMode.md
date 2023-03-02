@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.columnResizingMode
-acceptValues: 'nextColumn' | 'widget'
-type: String
+type: Enums.ColumnResizeMode
 default: 'nextColumn'
 ---
 ---

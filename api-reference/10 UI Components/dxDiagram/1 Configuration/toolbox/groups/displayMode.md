@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.toolbox.groups.displayMode
-acceptValues: 'icons' | 'texts'
-type: String
+type: Enums.DiagramToolboxDisplayMode
 ---
 ---
 ##### shortDescription

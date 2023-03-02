@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.pager.allowedPageSizes
-acceptValues: 'all' | 'auto'
-type: Array<Number, String> | String
+type: Array<Number, Enums.PagerPageSize> | Enums.Mode
 default: 'auto'
 ---
 ---

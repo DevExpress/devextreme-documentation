@@ -1,7 +1,6 @@
 ---
 id: dxScheduler.Options.views.groupOrientation
-acceptValues: 'horizontal' | 'vertical'
-type: String
+type: Enums.Orientation
 ---
 ---
 ##### shortDescription

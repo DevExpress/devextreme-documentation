@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.filterRow.applyFilter
-acceptValues: 'auto' | 'onClick'
-type: String
+type: Enums.ApplyFilterMode
 default: 'auto'
 ---
 ---

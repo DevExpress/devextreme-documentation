@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.position
-acceptValues: 'bottom' | 'left' | 'right' | 'top'
-type: String
+type: Enums.Position
 default: 'bottom'
 ---
 ---

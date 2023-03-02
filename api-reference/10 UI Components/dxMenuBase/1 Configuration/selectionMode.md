@@ -1,7 +1,6 @@
 ---
 id: dxMenuBase.Options.selectionMode
-acceptValues: 'single' | 'none'
-type: String
+type: Enums.SingleOrNone
 default: none
 ---
 ---

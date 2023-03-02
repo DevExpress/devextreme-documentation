@@ -1,7 +1,6 @@
 ---
 id: dxHtmlEditor.Options.stylingMode
-acceptValues: 'outlined' | 'underlined' | 'filled'
-type: String
+type: Enums.EditorStyle
 default: 'outlined'
 ---
 ---

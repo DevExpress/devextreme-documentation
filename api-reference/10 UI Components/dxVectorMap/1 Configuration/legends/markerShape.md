@@ -1,7 +1,6 @@
 ---
 id: dxVectorMap.Options.legends.markerShape
-acceptValues: 'circle' | 'square'
-type: String
+type: Enums.VectorMapMarkerShape
 default: 'square'
 ---
 ---

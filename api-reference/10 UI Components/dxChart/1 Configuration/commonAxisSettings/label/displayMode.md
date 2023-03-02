@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.displayMode
-acceptValues: 'rotate' | 'stagger' | 'standard'
-type: String
+type: Enums.ChartLabelDisplayMode
 default: 'standard'
 ---
 ---

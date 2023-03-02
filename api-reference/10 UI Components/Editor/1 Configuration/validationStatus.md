@@ -1,7 +1,6 @@
 ---
 id: Editor.Options.validationStatus
-acceptValues: 'valid' | 'invalid' | 'pending'
-type: String
+type: Enums.ValidationStatus
 default: 'valid'
 ---
 ---

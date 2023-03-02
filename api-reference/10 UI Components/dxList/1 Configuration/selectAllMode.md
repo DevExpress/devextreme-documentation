@@ -1,7 +1,6 @@
 ---
 id: dxList.Options.selectAllMode
-acceptValues: 'allPages' | 'page'
-type: String
+type: Enums.SelectAllMode
 default: 'page'
 ---
 ---

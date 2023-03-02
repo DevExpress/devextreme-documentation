@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.grouping.expandMode
-acceptValues: 'buttonClick' | 'rowClick'
-type: String
+type: Enums.GroupExpandMode
 default: 'buttonClick', 'rowClick' (mobile_devices)
 ---
 ---

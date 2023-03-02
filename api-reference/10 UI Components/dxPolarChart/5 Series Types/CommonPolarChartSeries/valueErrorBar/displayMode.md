@@ -1,7 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.displayMode
-acceptValues: 'auto' | 'high' | 'low' | 'none'
-type: String
+type: Enums.ValueErrorBarDisplayMode
 default: 'auto'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.argumentAxis.type
-acceptValues: 'continuous' | 'discrete' | 'logarithmic'
-type: String
+type: Enums.AxisScaleType
 default: undefined
 ---
 ---

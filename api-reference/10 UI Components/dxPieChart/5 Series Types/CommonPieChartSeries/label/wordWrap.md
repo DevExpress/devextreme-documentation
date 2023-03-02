@@ -1,7 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.label.wordWrap
-acceptValues: 'normal' | 'breakWord' | 'none'
-type: String
+type: Enums.WordWrap
 default: 'normal'
 ---
 ---

@@ -1,6 +1,5 @@
 ---
 id: dxChartSeriesTypes.FullStackedBarSeries.label.position
-acceptValues: 'inside' | 'outside'
-type: String
+type: Enums.RelativePosition
 default: 'inside'
 ---

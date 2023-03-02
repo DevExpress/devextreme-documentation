@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Arranges legend items vertically (in a column) or horizontally (in a row). The default value is *"horizontal"* if the **legend**.[horizontalAlignment](/api-reference/10%20UI%20Components/BaseLegend/horizontalAlignment.md '{basewidgetpath}/Configuration/legend/#horizontalAlignment') is *"center"*. Otherwise, it is *"vertical"*.
+Arranges legend items vertically (in a column) or horizontally (in a row). The default value is *"horizontal"* if the **legend**.[horizontalAlignment](/api-reference/10%20UI%20Components/BaseLegend/horizontalAlignment.md '[basewidgetpath]/Configuration/legend/#horizontalAlignment') is *"center"*. Otherwise, it is *"vertical"*.
 Specifies the diagram layout orientation.
 Indicates whether to display the LinearGauge UI component vertically or horizontally.
 Specifies whether the menu has horizontal or vertical orientation.

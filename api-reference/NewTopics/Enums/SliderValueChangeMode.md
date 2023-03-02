@@ -6,7 +6,7 @@ type: Union
 ---
 ##### shortDescription
 Specifies when to change the component's [value](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/value '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#value').
-Specifies when to change the component's [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value').
+Specifies when to change the component's [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '[basewidgetpath]/Configuration/#value').
 
 ---
 <!--

@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies how to wrap the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '{basewidgetpath}/Configuration/annotations/#text') if it does not fit into a single line.
+Specifies how to wrap the annotation's [text](/api-reference/_hidden/BaseWidgetAnnotationConfig/text.md '[basewidgetpath]/Configuration/annotations/#text') if it does not fit into a single line.
 Specifies how to wrap the subtitle if it does not fit into a single line.
 Specifies how to wrap the title if it does not fit into a single line.
 Specifies how to wrap texts that do not fit into a single line.

@@ -6,7 +6,7 @@ type: Union
 ---
 ##### shortDescription
 Specifies the legend title's vertical alignment.
-Along with [horizontalAlignment](/api-reference/10%20UI%20Components/BaseLegend/horizontalAlignment.md '{basewidgetpath}/Configuration/legend/#horizontalAlignment'), specifies the legend's position.
+Along with [horizontalAlignment](/api-reference/10%20UI%20Components/BaseLegend/horizontalAlignment.md '[basewidgetpath]/Configuration/legend/#horizontalAlignment'), specifies the legend's position.
 Specifies the title's alignment in a vertical direction.
 Specifies the orientation of the *rangeBar* indicator. Applies only if the **geometry**.[orientation](/api-reference/10%20UI%20Components/dxLinearGauge/1%20Configuration/geometry/orientation.md '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/geometry/#orientation') property is *"horizontal"*.
 Specifies whether labels are over or under the scale.

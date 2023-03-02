@@ -1,4 +1,4 @@
-Enable the [repaintChangesOnly]() property to optimize performance in the cases below:
+Enable the [repaintChangesOnly]() property to optimize performance in the following cases:
 
 - If you enable editing and use the **columns**.[setCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue) method.
 

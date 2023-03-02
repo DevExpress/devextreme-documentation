@@ -1,0 +1,1 @@
+If you work with a large data set, follow the recommendations below to improve rendering performance.

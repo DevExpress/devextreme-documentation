@@ -3,6 +3,8 @@ The following instructions explain how to dynamically change a form item's prope
 1. **Specify the [form.customizeItem](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/customizeItem.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem') callback function**       
 This function allows you to change form item properties dynamically. Within this function, [get the index of the row that a user edits](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') and use this index to [get the cell value](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField') that should affect form item properties.
 
+    [note] If you enable the [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly) property, the [form.customizeItem](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#customizeItem) is not executed.
+
     In the following code, the `"AddressRequired"` value affects the `"Home Address"` item's visibility:
     
     ---

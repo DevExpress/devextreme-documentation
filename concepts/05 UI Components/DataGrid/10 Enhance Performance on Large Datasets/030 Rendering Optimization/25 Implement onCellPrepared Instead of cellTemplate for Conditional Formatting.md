@@ -1,0 +1,1 @@
+Due to the design of DevExtreme UI components, [onCellPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellPrepared) works faster when you need to stylize cells based on a certain condition.

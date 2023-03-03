@@ -11016,6 +11016,9 @@
     "dxTreeViewOptions.animationEnabled": {
       "vue": "animation-enabled"
     },
+    "dxTreeViewOptions.collapseIcon": {
+      "vue": "collapse-icon"
+    },
     "dxTreeViewOptions.createChildren": {
       "vue": "create-children"
     },
@@ -11033,6 +11036,9 @@
     },
     "dxTreeViewOptions.expandEvent": {
       "vue": "expand-event"
+    },
+    "dxTreeViewOptions.expandIcon": {
+      "vue": "expand-icon"
     },
     "dxTreeViewOptions.expandNodesRecursive": {
       "vue": "expand-nodes-recursive"

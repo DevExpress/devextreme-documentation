@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- %shortDescription% -->
 A name used to identify the toolbar item.
 
 ---

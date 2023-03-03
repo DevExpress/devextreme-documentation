@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the availability and captions of data export buttons.
-A function that is executed before data is exported.
 
 ---
 <!--

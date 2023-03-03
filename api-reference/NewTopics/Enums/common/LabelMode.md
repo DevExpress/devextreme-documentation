@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/label.md '{currentpath}/#label')'s display mode.
+Specifies the [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/label.md '[currentpath]/#label')'s display mode.
 
 ---
 <!--

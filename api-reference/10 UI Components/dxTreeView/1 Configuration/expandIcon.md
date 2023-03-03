@@ -1,6 +1,6 @@
 ---
 id: dxTreeView.Options.expandIcon
-type: String | null
+type: String
 default: null
 ---
 ---

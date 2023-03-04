@@ -1,6 +1,6 @@
 DevExtreme editors support the <a href="https://v3.vuejs.org/guide/forms.html" target="_blank">`v-model`</a> directive that creates two-way binding on the editor's value.
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxTextBox v-model="bindingProperty" />
     </template>
@@ -18,6 +18,17 @@ DevExtreme editors support the <a href="https://v3.vuejs.org/guide/forms.html" t
             }
         }
     }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxTextBox v-model="bindingProperty" />
+    </template>
+
+    <script setup>
+    import DxTextBox from 'devextreme-vue/text-box';
+
+    let bindingProperty = 'Some value';
     </script>
 
 Alternatively, you can [use the `sync` modifier](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/33%20Two-Way%20Property%20Binding.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Two-Way_Property_Binding').

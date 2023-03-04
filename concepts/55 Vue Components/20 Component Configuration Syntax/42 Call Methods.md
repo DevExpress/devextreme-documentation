@@ -1,6 +1,6 @@
 To call UI component methods, you need the UI component instance. Define its key in the <a href="https://v3.vuejs.org/api/special-attributes.html#ref" target="_blank">`ref`</a> attribute. Then, pass the key to the <a href="https://v3.vuejs.org/api/instance-properties.html#refs" target="_blank">`$refs`</a> property to get the component. The UI component instance is stored in the component's  `instance` field:
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <div>
             <DxTextBox :ref="textBoxRefKey" />
@@ -37,9 +37,29 @@ To call UI component methods, you need the UI component instance. Define its key
     };
     </script>
 
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <div>
+            <DxTextBox :ref="textBoxRefKey" />
+            <DxButton text="Focus TextBox" @click="focusTextBox" />
+        </div>
+    </template>
+
+    <script setup>
+    import DxButton from 'devextreme-vue/button';
+    import DxTextBox from 'devextreme-vue/text-box';
+
+    import { ref } from 'vue';
+
+    const textBoxRef = ref(null);
+    const focusTextBox = () => {  
+        textBoxRef.value?.instance.focus();
+    };
+    </script>
+
 Alternatively, you can assign the UI component instance to a variable and use it to call the methods:
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <div>
             <DxDataGrid ...
@@ -72,4 +92,29 @@ Alternatively, you can assign the UI component instance to a variable and use it
             }
         }
     };
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <div>
+            <DxDataGrid ...
+                @initialized="saveGridInstance">
+            </DxDataGrid>
+            <DxButton text="Refresh data" @click="refresh"/>
+        </div>
+    </template>
+
+    <script setup>
+    import DxDataGrid from 'devextreme-vue/data-grid';
+    import DxButton from 'devextreme-vue/button';
+
+    let dataGridInstance = null;
+ 
+    const saveGridInstance = (e) => {
+        dataGridInstance = e.component;
+    }
+
+    const refresh = () => {
+        dataGridInstance.refresh();
+    }
     </script>

@@ -6,7 +6,7 @@ The DataGrid uses the DevExtreme [Form](/api-reference/10%20UI%20Components/dxFo
 
 For example, you can specify the [items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') array to reorder editable fields (or "simple items", as they are called in the Form UI component), or organize them in groups and tabs.
 
-[note] We recommend that you wrap all items in groups to ensure that the form fields works properly.
+[note] The recommended way is to wrap all items in groups.
 
 In the following code, the items with the specified **dataField** are simple items. Identical **dataFields** connect a simple item with a column:
 

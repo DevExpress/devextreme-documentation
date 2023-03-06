@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.color
-type: String
+type: String | ChartsColor
 default: undefined
 ---
 ---

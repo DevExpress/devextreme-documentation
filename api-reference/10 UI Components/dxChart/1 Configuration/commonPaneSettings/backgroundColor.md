@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonPaneSettings.backgroundColor
-type: String
+type: String | ChartsColor
 default: 'none'
 ---
 ---

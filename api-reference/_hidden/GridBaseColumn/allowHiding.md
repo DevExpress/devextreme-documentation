@@ -1,7 +1,7 @@
 ---
 id: GridBaseColumn.allowHiding
 type: Boolean
-default: true
+default: true, false (command column)
 ---
 ---
 ##### shortDescription

@@ -40,7 +40,7 @@ To call UI component methods, you need the UI component instance. Define its key
     <!-- tab: App.vue (Composition API) -->
     <template>
         <div>
-            <DxTextBox :ref="textBoxRefKey" />
+            <DxTextBox ref="textBoxRef" />
             <DxButton text="Focus TextBox" @click="focusTextBox" />
         </div>
     </template>
@@ -53,7 +53,7 @@ To call UI component methods, you need the UI component instance. Define its key
 
     const textBoxRef = ref(null);
     const focusTextBox = () => {  
-        textBoxRef.value?.instance.focus();
+        textBoxRef.value.instance.focus();
     };
     </script>
 

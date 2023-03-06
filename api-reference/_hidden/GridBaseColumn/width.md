@@ -28,5 +28,5 @@ The property supports the following types of values:
 
 #####See Also#####
 - [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '{basewidgetpath}/Configuration/#columnAutoWidth')
-- [columnWidth]({basewidgetpath}/Configuration/#columnWidth)
+- [columnWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnWidth.md '{basewidgetpath}/Configuration/#columnWidth')
 - [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '{basewidgetpath}/Configuration/#width')

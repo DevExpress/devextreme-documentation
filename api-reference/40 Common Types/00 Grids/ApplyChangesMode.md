@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies when to apply changes made in the UI component to the PivotGrid.
 Specifies when to apply changes made in the field chooser to the PivotGrid.
 
 ---

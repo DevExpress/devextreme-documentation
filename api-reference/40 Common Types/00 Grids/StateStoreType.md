@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the type of storage to be used for state storing.
 Specifies the type of storage where the state is saved.
 
 ---

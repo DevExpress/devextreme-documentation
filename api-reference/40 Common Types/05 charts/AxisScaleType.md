@@ -5,10 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the type of the argument axis.
-Specifies the type of the value axis.
-Specifies the required type of the argument axis.
-Specifies the required type of the value axis.
+Specifies the type of the axis.
 
 ---
 <!--

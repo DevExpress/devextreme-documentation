@@ -5,10 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-A function that is executed when zooming or panning ends.
-A function that is executed when zooming or panning begins.
-A function that is executed when zooming or panning ends.
-A function that is executed when zooming or panning begins.
+Specifies zoom or pan mode.
 
 ---
 <!--

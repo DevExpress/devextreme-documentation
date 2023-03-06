@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies series elements to be highlighted when a user points to a series.
-Specifies the series elements to highlight when a series is hovered over.
 
 ---
 <!--

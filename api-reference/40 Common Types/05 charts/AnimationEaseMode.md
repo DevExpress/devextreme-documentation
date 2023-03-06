@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the easing function of the animation.
 Specifies the animation easing mode.
 
 ---

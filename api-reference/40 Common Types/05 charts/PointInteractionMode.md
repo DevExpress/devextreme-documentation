@@ -5,10 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies series elements to be highlighted when a user pauses on a series point.
-Specifies series elements to be highlighted when a user selects a series point.
-Specifies what series points to highlight when a point is hovered over.
-Specifies what series points to highlight when a point is selected.
+Specifies series elements to be highlighted when a user interacts with a series point.
 
 ---
 <!--

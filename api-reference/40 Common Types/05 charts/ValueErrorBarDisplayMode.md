@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies whether error bars must be displayed in full or partially.
-Specifies whether error bars must be displayed in full or partially.
 
 ---
 <!--

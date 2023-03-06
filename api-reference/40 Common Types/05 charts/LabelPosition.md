@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies whether to display labels inside or outside funnel items or arrange them in columns.
 Specifies a label position relative to the chart.
 
 ---

@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Sets the series type.
-Specifies the type of the series.
 
 ---
 <!--

@@ -5,17 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Sets the palette to be used for colorizing series and their elements.
-Specifies the palette to be used for colorizing ranges in the range container.
-Sets the palette to be used to colorize indicators differently.
-Sets the palette to be used for colorizing bars in the gauge.
-Sets the palette to be used to colorize funnel items.
-Sets the palette to be used to colorize series and their elements.
-Sets the palette to be used to colorize series in the chart.
-Sets the palette to be used to colorize sankey nodes.
-Sets the palette to be used to colorize tiles.
-The name of a predefined palette or a custom range of colors to be used as a palette.
-Returns a subset of palette colors.
+Sets the palette to be used for colorizing chart elements.
 
 ---
 <!--

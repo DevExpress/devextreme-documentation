@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the scale breaks' line style.
-Specifies the scale breaks' line style.
 
 ---
 <!--

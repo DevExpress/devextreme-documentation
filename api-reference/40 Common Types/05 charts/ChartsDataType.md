@@ -5,13 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Casts arguments to a specified data type.
-Casts values to a specified data type.
-Specifies the required type for series arguments.
-Specifies the desired type of axis values.
-Specifies the desired type of axis values.
-Specifies the desired type of axis values.
-Specifies the type of values on the scale.
+Specifies the type of axis values.
 
 ---
 <!--

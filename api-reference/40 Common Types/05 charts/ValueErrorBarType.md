@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies how error bar values must be calculated.
-Specifies how error bar values must be calculated.
 
 ---
 <!--

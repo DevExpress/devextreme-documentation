@@ -5,8 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies how to resolve horizontal collisions.
-Specifies how to resolve vertical collisions.
+Specifies how to resolve horizontal or vertical collisions.
 
 ---
 <!--

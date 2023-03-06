@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the comparison operation used in searching.
-A comparison operation.
 
 ---
 <!--

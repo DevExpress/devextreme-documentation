@@ -8,7 +8,7 @@ inherits: ColumnChooser
 Configures the column chooser.
 
 ---
-The column chooser allows a user to hide columns at runtime. To enable it, assign **true** to the **columnChooser**.[enabled](/api-reference/40%20Common%20Types/00%20Grids/ColumnChooser/enabled.md '{basewidgetpath}/Configuration/columnChooser/#enabled') property.
+The column chooser allows a user to hide columns at runtime. To enable it, assign **true** to the **columnChooser**.[enabled](/api-reference/40%20Common%20Types/15%20grids/ColumnChooser/enabled.md '{basewidgetpath}/Configuration/columnChooser/#enabled') property.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout {WidgetName} Column Chooser](/images/{WidgetName}/visual_elements/column_chooser.png)
 

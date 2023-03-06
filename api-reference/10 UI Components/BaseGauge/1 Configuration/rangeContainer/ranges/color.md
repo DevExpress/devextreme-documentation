@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.rangeContainer.ranges.color
-type: String
+type: String | ChartsColor
 ---
 ---
 ##### shortDescription

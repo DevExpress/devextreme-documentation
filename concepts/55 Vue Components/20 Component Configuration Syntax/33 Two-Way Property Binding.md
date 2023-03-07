@@ -30,3 +30,5 @@ Changes in the `bindingProperty` are propagated to the TextBox's **value** and v
 
     let bindingProperty = 'Some value';
     </script>
+
+[important] In Vue 2 applications, use the `.sync` modifier to implement two-way binding.

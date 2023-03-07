@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Casts field values to a specific data type.
+Specifies field values for a specific data type.
 
 ---
 <!--

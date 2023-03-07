@@ -12,7 +12,7 @@ The following UI components allow you to declare their content directly in the m
 
 The following is an example with ScrollView:
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxScrollView>
             <div>Some scrollable content</div>
@@ -29,20 +29,47 @@ The following is an example with ScrollView:
     }
     </script>
 
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxScrollView>
+            <div>Some scrollable content</div>
+        </DxScrollView>
+    </template>
+
+    <script setup>
+    import DxScrollView from 'devextreme-vue/scroll-view';
+    </script>
+
 [important]
 
 These UI components do not support dynamically or conditionally rendered content in their root element. For example, the following code **does not work**:
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxDrawer ... >
             <router-view></router-view>
         </DxDrawer>
     </template>
 
+    <script>
+        //...
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxDrawer ... >
+            <router-view></router-view>
+        </DxDrawer>
+    </template>
+
+    <script setup>
+        //...
+    </script>
+
+
 Wrap the content in a static element:
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxDrawer ... >
             <div>
@@ -50,5 +77,22 @@ Wrap the content in a static element:
             </div>
         </DxDrawer>
     </template>
+
+    <script>
+        //...
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxDrawer ... >
+            <div>
+                <router-view></router-view>
+            </div>
+        </DxDrawer>
+    </template>
+
+    <script setup>
+        //...
+    </script>
 
 [/important]

@@ -1,4 +1,4 @@
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxVectorMap>
             <DxLayer :customize="customizeLayers" />
@@ -20,6 +20,23 @@
                 // ...
             }
         }
+    }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxVectorMap>
+            <DxLayer :customize="customizeLayers" />
+        </DxVectorMap>
+    </template>
+
+    <script setup>
+    import DxVectorMap, {
+        DxLayer
+    } from 'devextreme-vue/vector-map';
+
+    const customizeLayers = (elements) => {
+        // ...
     }
     </script>
     

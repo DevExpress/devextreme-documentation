@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the chart elements to highlight when a series is hovered over.
-<p>Specifies the chart elements to highlight when the series is selected.</p>
 
 ---
 <!--

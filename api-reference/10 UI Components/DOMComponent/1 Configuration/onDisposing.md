@@ -14,6 +14,6 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-Model data. Available only if you use Knockout.
+The model data. Available only if you use Knockout.
 
 ---

@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the orientation of the range container in the CircularGauge UI component.
 Specifies the orientation of scale ticks.
 
 ---

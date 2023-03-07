@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the direction at which submenus are displayed.
+Specifies the submenu direction.
 
 ---
 <!--

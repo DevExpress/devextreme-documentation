@@ -2308,11 +2308,6 @@
       "react": "Border",
       "vue": "DxBorder"
     },
-    "dxChartSeriesTypes.CommonSeries.hoverStyle.border.color": {
-      "angular": "dxo-color",
-      "react": "Color",
-      "vue": "DxColor"
-    },
     "dxChartSeriesTypes.CommonSeries.hoverStyle.border.dashStyle": {
       "vue": "dash-style"
     },
@@ -8384,6 +8379,11 @@
       "react": "Border",
       "vue": "DxBorder"
     },
+    "dxPolarChartSeriesTypes.CommonPolarChartSeries.point.color": {
+      "angular": "dxo-color",
+      "react": "Color",
+      "vue": "DxColor"
+    },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverMode": {
       "vue": "hover-mode"
     },
@@ -8396,6 +8396,11 @@
       "angular": "dxo-border",
       "react": "Border",
       "vue": "DxBorder"
+    },
+    "dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverStyle.color": {
+      "angular": "dxo-color",
+      "react": "Color",
+      "vue": "DxColor"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.point.image": {
       "angular": "dxo-image",
@@ -8414,6 +8419,11 @@
       "angular": "dxo-border",
       "react": "Border",
       "vue": "DxBorder"
+    },
+    "dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionStyle.color": {
+      "angular": "dxo-color",
+      "react": "Color",
+      "vue": "DxColor"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionMode": {
       "vue": "selection-mode"

@@ -4,7 +4,7 @@ In form edit mode, row cells become editable form fields. Form fields are sorted
 
 The DataGrid uses the DevExtreme [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') UI component. To configure the form, specify [any Form properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') in the **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form') object except properties mentioned in the description of this object. 
 
-For example, you can specify [groups](/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/), [tabs](/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/), or leave [items](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) ungrouped.
+For example, you can specify [groups](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/'), [tabs](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/10%20In%20Tabs '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Tabs/'), or leave [items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') ungrouped.
 
 [note] The recommended way is to wrap all items in groups.
 

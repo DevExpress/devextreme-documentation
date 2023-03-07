@@ -5,9 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Configures toolbar items. These items allow users to format text and execute commands.
-Specifies the predefined item that this object customizes or a format with multiple choices.
-Specifies the predefined item that this object customizes or a format with multiple choices.
+Configures toolbar items.
 
 ---
 <!--

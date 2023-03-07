@@ -6,8 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Configures context menu items.
-Configures nested context menu items.
-A name used to identify the context menu item.
 
 ---
 <!--

@@ -5,10 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
-Applies a single [block format](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') to all lines in the given range.
-Applies a single [text format](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') to all characters in the given range.
-Inserts text into the HtmlEditor.
+Specifies a format of the selected content. 
 
 ---
 <!--

@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Contains an array of tabs in the "Add an Image" dialog.
 Specifies the tab's name.
 
 ---

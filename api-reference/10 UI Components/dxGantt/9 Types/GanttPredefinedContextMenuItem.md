@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Configures context menu item settings.
-Specifies the context menu item name.
 
 ---
 <!--

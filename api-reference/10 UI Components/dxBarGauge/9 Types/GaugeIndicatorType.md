@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the gauge indicator type.
 
 ---
-<!-- Description goes here -->

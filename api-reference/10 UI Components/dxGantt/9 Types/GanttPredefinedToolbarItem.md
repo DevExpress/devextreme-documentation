@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Configures toolbar items' settings.
-Specifies the toolbar item's name.
 
 ---
 <!--

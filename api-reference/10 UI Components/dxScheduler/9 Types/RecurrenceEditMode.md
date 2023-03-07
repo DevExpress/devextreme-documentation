@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Deletes a recurring appointment occurrence.
 Specifies the edit mode for recurring appointments.
 
 ---

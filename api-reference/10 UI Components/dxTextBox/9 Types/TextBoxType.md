@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-The "mode" attribute value of the actual HTML input element representing the text box.
+Specifies the text box type.
 
 ---
 <!--

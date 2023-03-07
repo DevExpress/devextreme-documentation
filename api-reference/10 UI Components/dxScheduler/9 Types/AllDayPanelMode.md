@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the display mode for the **All day** panel.
-Specifies the display mode for the **All day** panel.
 
 ---
 <!--

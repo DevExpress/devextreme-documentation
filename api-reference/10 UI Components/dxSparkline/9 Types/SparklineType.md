@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Determines the type of a sparkline.
+Specifies the sparkline type.
 
 ---
 <!--

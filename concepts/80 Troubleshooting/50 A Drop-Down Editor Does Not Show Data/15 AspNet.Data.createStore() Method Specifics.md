@@ -8,5 +8,5 @@ If your back-end does not support server operations, set the [createStore()](htt
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/",
-    name: "DropDownBox Demo"
+    name: "DropDownBox"
 }

@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.rangeContainer.backgroundColor
-type: String
+type: String | ChartsColor
 default: '#808080'
 ---
 ---

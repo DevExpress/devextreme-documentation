@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies how to aggregate series points.
-Specifies how to aggregate series points.
 
 ---
 <!--

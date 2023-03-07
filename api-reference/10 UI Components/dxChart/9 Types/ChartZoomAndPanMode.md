@@ -5,8 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies whether users are allowed to zoom and/or pan the argument axis.
-Specifies whether users are allowed to zoom and/or pan the value axis.
+Specifies whether users are allowed to zoom and/or pan the argument and value axis.
 
 ---
 <!--

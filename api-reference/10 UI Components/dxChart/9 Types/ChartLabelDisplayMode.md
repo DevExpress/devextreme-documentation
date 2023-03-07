@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Allows you to rotate or stagger axis labels. Applies to the horizontal axis only.
+Specifies how to rotate or stagger horizontal axis labels.
 
 ---
 <!--

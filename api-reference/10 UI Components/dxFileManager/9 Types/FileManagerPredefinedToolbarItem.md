@@ -5,9 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Configures settings of the toolbar items that are visible when users select files.
 Configures toolbar items' settings.
-Specifies the toolbar item's name.
 
 ---
 <!--

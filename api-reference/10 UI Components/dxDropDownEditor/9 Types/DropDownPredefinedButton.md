@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Allows you to add custom buttons to the input text field.
+Specifies a custom button for an input text field.
 
 ---
 <!--

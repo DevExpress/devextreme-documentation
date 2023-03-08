@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the map projection.
-Gets a predefined or custom projection from the projection storage.
 
 ---
 <!--

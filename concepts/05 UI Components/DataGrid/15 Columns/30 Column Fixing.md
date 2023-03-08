@@ -4,6 +4,8 @@ In some cases, the UI component contains so many columns that they cause horizon
 
 To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/#enabled') property to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFixing') property to **false**.
 
+[note] Fixed columns are a separate table. Consider this if you want to customize fixed columns.
+
 ---
 ##### jQuery
 

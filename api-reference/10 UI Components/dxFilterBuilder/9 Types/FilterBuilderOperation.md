@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-A default filter operation.
 Specifies a set of available filter operations.
 
 ---

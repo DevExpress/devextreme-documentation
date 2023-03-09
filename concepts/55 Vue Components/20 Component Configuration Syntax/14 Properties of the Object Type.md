@@ -1,6 +1,6 @@
 Use nested configuration components. In the following example, we configure the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/Vue/Light)'s [tooltip](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/') property:
  
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxChart>
             <DxTooltip
@@ -23,9 +23,25 @@ Use nested configuration components. In the following example, we configure the 
     }
     </script>
 
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxChart>
+            <DxTooltip
+                :enabled="true"
+                format="thousands"
+            />
+        </DxChart>
+    </template>
+
+    <script setup>
+    import DxChart, {
+        DxTooltip
+    } from 'devextreme-vue/chart';
+    </script>
+
 Object type properties that depend on other properties' values are not implemented as nested configuration components because they cannot be typed (**columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') in the DataGrid, item's [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') in the Form, **items[]**.[options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') in the Toolbar). These properties should be specified with an object.
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxDataGrid>
             <DxColumn
@@ -50,6 +66,23 @@ Object type properties that depend on other properties' values are not implement
             }
         }
     }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxDataGrid>
+            <DxColumn
+                :editor-options="columnEditorOptions"
+            />
+        </DxDataGrid>
+    </template>
+
+    <script setup>
+    import DxDataGrid, {
+        DxColumn
+    } from 'devextreme-vue/data-grid';
+
+    const columnEditorOptions = { width: 100 };
     </script>
 
 [important] We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.

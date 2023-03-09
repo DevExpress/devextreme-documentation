@@ -1,6 +1,6 @@
 ---
 id: CommonIndicator.color
-type: String
+type: String | ChartsColor
 ---
 ---
 ##### shortDescription

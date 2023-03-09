@@ -5,22 +5,24 @@ export: registerPattern
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Registers a new pattern.
 
 ##### return: String
-<!-- Description goes here -->
+The fill id.
 
 ##### param(options): Object
-<!-- Description goes here -->
+The pattern settings.
 
 ##### field(options.height): Number | String
-<!-- Description goes here -->
+The pattern height.
 
 ##### field(options.template): template
-<!-- Description goes here -->
+The SVG-based pattern template.
 
 ##### field(options.width): Number | String
-<!-- Description goes here -->
+The pattern width.
 
 ---
-<!-- Description goes here -->
+Implement this method to register a pattern id. Then, use the id in the component color.fillId field.
+
+[note] If you specify width and height of a pattern in percents, the exported component may look different. 

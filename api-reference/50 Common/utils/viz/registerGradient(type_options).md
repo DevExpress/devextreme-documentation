@@ -5,22 +5,30 @@ export: registerGradient
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Registers a new gradient.
 
 ##### return: String
-<!-- Description goes here -->
+The fill id.
 
 ##### param(type): String
-<!-- Description goes here -->
+The gradient type: 'linear' or 'radial'.
 
 ##### param(options): Object
-<!-- Description goes here -->
+The gradient's settings.
 
 ##### field(options.colors): Array<GradientColor>
-<!-- Description goes here -->
+The array of gradient colors.
 
 ##### field(options.rotationAngle): Number
-<!-- Description goes here -->
+The rotation angle for linear gradients.
 
 ---
-<!-- Description goes here -->
+Implement this method to register a gradient id. Then, use the id in the component color.fillId field.
+
+[note]
+
+- To correctly export a component with transparent gradient, specify gradient colors in the RGBA format.
+
+- Radial and rotated linear gradients may look slightly different when exported. 
+
+[/note]

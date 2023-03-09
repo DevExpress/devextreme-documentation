@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-A string value specifying the animation type.
+Specifies the animation type.
 
 ---
 <!--

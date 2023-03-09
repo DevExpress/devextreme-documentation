@@ -5,8 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the default tip of a connector's end point.
-Specifies the default tip of a connector's start point.
+Specifies the default tip of a connector's start/end point.
 
 ---
 <!--

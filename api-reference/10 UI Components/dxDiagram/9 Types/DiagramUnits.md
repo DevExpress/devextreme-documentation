@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the measurement unit for size properties.
-Specifies the measurement unit that is displayed in user interface elements.
 
 ---
 <!--

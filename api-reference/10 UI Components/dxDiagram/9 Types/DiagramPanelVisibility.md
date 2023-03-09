@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the panel's visibility.
-Specifies the toolbar's visibility.
 
 ---
 <!--

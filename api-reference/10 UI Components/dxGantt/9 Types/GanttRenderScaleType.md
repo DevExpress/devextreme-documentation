@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-A function that is executed before a scale cell is prepared.
+Specifies a scale type to render.
 
 ---
 <!--

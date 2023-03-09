@@ -6,8 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies the zoom level of tasks in the Gantt chart.
-Specifies the maximum zoom level of tasks in the Gantt chart.
-Specifies the minimum zoom level of tasks in the Gantt chart.
 
 ---
 <!--

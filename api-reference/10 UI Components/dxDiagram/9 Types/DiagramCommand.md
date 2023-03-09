@@ -5,14 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the custom command's identifier.
-Lists commands in the context menu.
-Lists commands in the history toolbar.
-Lists commands in the toolbar.
-Lists commands in a tab.
-Lists commands in a group.
-Lists commands in the toolbar.
-
+Specifies the Diagram command's identifier.
 ---
 <!--
 dxDiagramCustomCommand.name(50 Common\Object Structures\dxDiagramCustomCommand\name.md)

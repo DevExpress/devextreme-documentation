@@ -6,7 +6,6 @@ type: Union
 ---
 ##### shortDescription
 Specifies an auto-layout algorithm that the UI component uses to build a diagram.
-Specifies an auto-layout algorithm that is used to automatically arrange shapes.
 
 ---
 <!--

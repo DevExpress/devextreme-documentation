@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-A function that allows you to prohibit an edit operation at run time.
+Specifies the reason to request edit operation.
 
 ---
 <!--

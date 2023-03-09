@@ -5,8 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-A function that is executed when a context menu item is clicked.
-A function that is executed before a context menu is displayed.
+Specifies the view area.
 
 ---
 <!--

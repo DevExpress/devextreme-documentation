@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies how shapes are displayed in the context toolbox.
 Specifies how shapes are displayed in the toolbox.
 
 ---

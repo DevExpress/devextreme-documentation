@@ -5,9 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the category of shapes that are displayed in the context toolbox.
-Lists toolbox groups.
-Specifies the category of shapes that are displayed in the group.
+Specifies the category of shapes.
 
 ---
 <!--

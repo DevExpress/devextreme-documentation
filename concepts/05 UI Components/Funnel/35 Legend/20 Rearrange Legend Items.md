@@ -3,7 +3,7 @@ Although the legend's layout is virtually universal, in some cases, you may need
 - **Choose legend orientation**        
 Depending on whether the legend is oriented vertically or horizontally, the Funnel arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/10%20UI%20Components/BaseLegend/orientation.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#orientation') property.
 
-    ---
+---
 ##### jQuery
 
     <!--JavaScript-->$(function() {

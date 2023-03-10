@@ -1,4 +1,4 @@
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxButton
             text="OK"
@@ -19,5 +19,22 @@
                 notify('The OK button was clicked')
             }
         }
+    }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxButton
+            text="OK"
+            @click="okClicked"
+        />
+    </template>
+
+    <script setup>
+    import DxButton from 'devextreme-vue/button';
+    import notify from 'devextreme/ui/notify';
+
+    const okClicked = (e) => {
+        notify('The OK button was clicked')
     }
     </script>

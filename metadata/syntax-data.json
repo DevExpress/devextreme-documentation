@@ -8618,6 +8618,9 @@
     "dxPopupOptions.dragOutsideBoundary": {
       "vue": "drag-outside-boundary"
     },
+    "dxPopupOptions.enableBodyScroll": {
+      "vue": "enable-body-scroll"
+    },
     "dxPopupOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -10501,6 +10504,9 @@
     },
     "dxTooltipOptions": {
       "vue": "dx-tooltip-options"
+    },
+    "dxTooltipOptions.enableBodyScroll": {
+      "vue": "enable-body-scroll"
     },
     "dxTooltipOptions.onTitleRendered": {
       "vue": "@title-rendered"

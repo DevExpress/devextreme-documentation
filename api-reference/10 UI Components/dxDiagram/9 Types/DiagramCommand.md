@@ -6,6 +6,7 @@ type: Union
 ---
 ##### shortDescription
 Specifies the Diagram command's identifier.
+
 ---
 <!--
 dxDiagramCustomCommand.name(50 Common\Object Structures\dxDiagramCustomCommand\name.md)

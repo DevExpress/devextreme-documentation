@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies buttons in the edit column or create a custom [command column](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/). 
+Specifies buttons in the edit column or create a custom [command column](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/Command_Columns/).
 
 ---
 <!--

@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies a format of the selected content. 
+Specifies a format of the selected content.
 
 ---
 <!--

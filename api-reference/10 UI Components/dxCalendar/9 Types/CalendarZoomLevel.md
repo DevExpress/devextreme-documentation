@@ -5,7 +5,6 @@ type: Union
 ---
 ---
 ##### shortDescription
-
 Specifies the current calendar zoom level.
 
 ---

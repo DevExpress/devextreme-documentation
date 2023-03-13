@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies the type of a marker element. 
+Specifies the type of a marker element.
 
 ---
 <!--

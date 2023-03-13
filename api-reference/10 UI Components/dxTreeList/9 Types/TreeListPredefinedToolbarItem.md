@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-Specifies buttons in the toolbar. 
+Specifies buttons in the toolbar.
 
 ---
 <!--

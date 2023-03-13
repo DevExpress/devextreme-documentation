@@ -9,5 +9,5 @@ Returns a subset of palette colors.
 
 ---
 <!--
-viz.generateColors(palette, count, options)(50 Common\utils\viz\generateColors(palette_count_options).md)
+viz.generateColors(palette, count, options)(/api-reference/50 Common/utils/viz/generateColors(palette_count_options).md)
 -->

@@ -9,5 +9,5 @@ Specifies how UI component items are aligned cross-wise.
 
 ---
 <!--
-dxBoxOptions.crossAlign(10 UI Components\dxBox\1 Configuration\crossAlign.md)(ui\box.d.ts)
+dxBoxOptions.crossAlign(/api-reference/10 UI Components/dxBox/1 Configuration/crossAlign.md)(ui/box.d.ts)
 -->

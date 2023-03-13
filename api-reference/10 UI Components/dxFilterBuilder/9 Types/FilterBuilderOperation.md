@@ -9,6 +9,6 @@ Specifies a set of available filter operations.
 
 ---
 <!--
-dxFilterBuilderField.defaultFilterOperation(_hidden\dxFilterBuilderField\defaultFilterOperation.md)
-dxFilterBuilderField.filterOperations(_hidden\dxFilterBuilderField\filterOperations.md)
+dxFilterBuilderField.defaultFilterOperation(/api-reference/_hidden/dxFilterBuilderField/defaultFilterOperation.md)
+dxFilterBuilderField.filterOperations(/api-reference/_hidden/dxFilterBuilderField/filterOperations.md)
 -->

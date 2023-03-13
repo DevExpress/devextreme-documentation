@@ -9,5 +9,5 @@ Specifies how to sort the field's values in the [headers](/Documentation/Guide/U
 
 ---
 <!--
-PivotGridDataSourceOptions.fields.sortBy(30 Data Layer\PivotGridDataSource\1 Configuration\fields\sortBy.md)(ui\pivot_grid\data_source.d.ts)
+PivotGridDataSourceOptions.fields.sortBy(/api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/sortBy.md)(ui/pivot_grid/data_source.d.ts)
 -->

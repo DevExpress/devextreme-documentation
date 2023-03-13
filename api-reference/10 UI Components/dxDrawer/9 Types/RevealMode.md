@@ -9,5 +9,5 @@ Specifies the drawer's reveal mode.
 
 ---
 <!--
-dxDrawerOptions.revealMode(10 UI Components\dxDrawer\1 Configuration\revealMode.md)(ui\drawer.d.ts)
+dxDrawerOptions.revealMode(/api-reference/10 UI Components/dxDrawer/1 Configuration/revealMode.md)(ui/drawer.d.ts)
 -->

@@ -9,5 +9,5 @@ Exports the diagram to an image format.
 
 ---
 <!--
-dxDiagram.exportTo(format, callback)(10 UI Components\dxDiagram\3 Methods\exportTo(format_callback).md)
+dxDiagram.exportTo(format, callback)(/api-reference/10 UI Components/dxDiagram/3 Methods/exportTo(format_callback).md)
 -->

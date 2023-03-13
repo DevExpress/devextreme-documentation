@@ -9,7 +9,7 @@ Specifies how to aggregate data for the group summary item, total summary item, 
 
 ---
 <!--
-dxDataGridOptions.summary.groupItems.summaryType(10 UI Components\dxDataGrid\1 Configuration\summary\groupItems\summaryType.md)
-dxDataGridOptions.summary.totalItems.summaryType(10 UI Components\dxDataGrid\1 Configuration\summary\totalItems\summaryType.md)
-PivotGridDataSourceOptions.fields.summaryType(30 Data Layer\PivotGridDataSource\1 Configuration\fields\summaryType.md)
+dxDataGridOptions.summary.groupItems.summaryType(/api-reference/10 UI Components/dxDataGrid/1 Configuration/summary/groupItems/summaryType.md)
+dxDataGridOptions.summary.totalItems.summaryType(/api-reference/10 UI Components/dxDataGrid/1 Configuration/summary/totalItems/summaryType.md)
+PivotGridDataSourceOptions.fields.summaryType(/api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/summaryType.md)
 -->

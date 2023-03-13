@@ -9,5 +9,5 @@ Specifies the animation type.
 
 ---
 <!--
-AnimationConfig.type(50 Common\Object Structures\animationConfig\type.md)(animation\fx.d.ts)
+AnimationConfig.type(/api-reference/50 Common/Object Structures/animationConfig/type.md)(animation/fx.d.ts)
 -->

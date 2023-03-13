@@ -9,5 +9,5 @@ Specifies a custom button for an input text field.
 
 ---
 <!--
-dxDropDownEditorOptions.buttons(10 UI Components\dxDropDownEditor\1 Configuration\buttons\buttons.md)
+dxDropDownEditorOptions.buttons(/api-reference/10 UI Components/dxDropDownEditor/1 Configuration/buttons/buttons.md)
 -->

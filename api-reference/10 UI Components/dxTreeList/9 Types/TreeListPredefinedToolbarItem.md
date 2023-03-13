@@ -9,6 +9,6 @@ Specifies buttons in the toolbar.
 
 ---
 <!--
-dxTreeListToolbar.items(_hidden\dxTreeListToolbar\items.md)
-dxTreeListToolbarItem.name(_hidden\dxTreeListToolbarItem\name.md)
+dxTreeListToolbar.items(/api-reference/_hidden/dxTreeListToolbar/items.md)
+dxTreeListToolbarItem.name(/api-reference/_hidden/dxTreeListToolbarItem/name.md)
 -->

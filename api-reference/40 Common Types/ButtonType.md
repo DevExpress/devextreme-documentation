@@ -9,7 +9,7 @@ Specifies the button type.
 
 ---
 <!--
-dxActionSheetItem.type(_hidden\dxActionSheetItem\type.md)(common.d.ts)
-dxButtonGroupItem.type(_hidden\dxButtonGroupItem\type.md)(common.d.ts)
-dxButtonOptions.type(10 UI Components\dxButton\1 Configuration\type.md)(common.d.ts)
+dxActionSheetItem.type(/api-reference/_hidden/dxActionSheetItem/type.md)(common.d.ts)
+dxButtonGroupItem.type(/api-reference/_hidden/dxButtonGroupItem/type.md)(common.d.ts)
+dxButtonOptions.type(/api-reference/10 UI Components/dxButton/1 Configuration/type.md)(common.d.ts)
 -->

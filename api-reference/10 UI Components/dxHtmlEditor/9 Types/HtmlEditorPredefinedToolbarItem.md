@@ -9,7 +9,7 @@ Configures toolbar items.
 
 ---
 <!--
-dxHtmlEditorToolbar.items(_hidden\dxHtmlEditorToolbar\items\items.md)
-dxHtmlEditorToolbarItem.formatName(_hidden\dxHtmlEditorToolbarItem\formatName.md)
-dxHtmlEditorToolbarItem.name(_hidden\dxHtmlEditorToolbarItem\name.md)
+dxHtmlEditorToolbar.items(/api-reference/_hidden/dxHtmlEditorToolbar/items/items.md)
+dxHtmlEditorToolbarItem.formatName(/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md)
+dxHtmlEditorToolbarItem.name(/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md)
 -->

@@ -9,5 +9,5 @@ Specifies the Toast UI component type.
 
 ---
 <!--
-dxToastOptions.type(10 UI Components\dxToast\1 Configuration\type.md)(ui\toast.d.ts)
+dxToastOptions.type(/api-reference/10 UI Components/dxToast/1 Configuration/type.md)(ui/toast.d.ts)
 -->

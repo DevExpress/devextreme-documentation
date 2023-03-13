@@ -9,7 +9,7 @@ Specifies the scrolling mode.
 
 ---
 <!--
-dxPivotGridOptions.scrolling.mode(10 UI Components\dxPivotGrid\1 Configuration\scrolling\mode.md)(common.d.ts)
-dxSchedulerScrolling.mode(_hidden\dxSchedulerScrolling\mode.md)(common.d.ts)
-dxTreeListOptions.scrolling.mode(10 UI Components\dxTreeList\1 Configuration\scrolling\mode.md)(common.d.ts)
+dxPivotGridOptions.scrolling.mode(/api-reference/10 UI Components/dxPivotGrid/1 Configuration/scrolling/mode.md)(common.d.ts)
+dxSchedulerScrolling.mode(/api-reference/_hidden/dxSchedulerScrolling/mode.md)(common.d.ts)
+dxTreeListOptions.scrolling.mode(/api-reference/10 UI Components/dxTreeList/1 Configuration/scrolling/mode.md)(common.d.ts)
 -->

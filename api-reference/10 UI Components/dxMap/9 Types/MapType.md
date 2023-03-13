@@ -9,5 +9,5 @@ The type of a map to display.
 
 ---
 <!--
-dxMapOptions.type(10 UI Components\dxMap\1 Configuration\type.md)(ui\map.d.ts)
+dxMapOptions.type(/api-reference/10 UI Components/dxMap/1 Configuration/type.md)(ui/map.d.ts)
 -->

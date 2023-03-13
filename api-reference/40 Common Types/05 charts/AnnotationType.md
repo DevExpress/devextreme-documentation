@@ -9,5 +9,5 @@ Specifies whether the annotation displays text, an image, or a template.
 
 ---
 <!--
-BaseWidgetAnnotationConfig.type(_hidden\BaseWidgetAnnotationConfig\type.md)(common\charts.d.ts)
+BaseWidgetAnnotationConfig.type(/api-reference/_hidden/BaseWidgetAnnotationConfig/type.md)(common/charts.d.ts)
 -->

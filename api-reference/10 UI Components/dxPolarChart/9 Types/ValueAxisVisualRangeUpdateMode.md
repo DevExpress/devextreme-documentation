@@ -9,5 +9,5 @@ Specifies how the axis's [visual range](/Documentation/ApiReference/UI_Component
 
 ---
 <!--
-dxPolarChartOptions.valueAxis.visualRangeUpdateMode(10 UI Components\dxPolarChart\1 Configuration\valueAxis\visualRangeUpdateMode\visualRangeUpdateMode.md)(viz\polar_chart.d.ts)
+dxPolarChartOptions.valueAxis.visualRangeUpdateMode(/api-reference/10 UI Components/dxPolarChart/1 Configuration/valueAxis/visualRangeUpdateMode/visualRangeUpdateMode.md)(viz/polar_chart.d.ts)
 -->

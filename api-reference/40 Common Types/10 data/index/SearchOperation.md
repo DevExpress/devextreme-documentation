@@ -9,6 +9,6 @@ Specifies the comparison operation used in searching.
 
 ---
 <!--
-DataSourceOptions.searchOperation(30 Data Layer\DataSource\1 Configuration\searchOperation.md)(data\index.d.ts)
-LoadOptions.searchOperation(30 Data Layer\CustomStore\LoadOptions\searchOperation.md)(data\index.d.ts)
+DataSourceOptions.searchOperation(/api-reference/30 Data Layer/DataSource/1 Configuration/searchOperation.md)(data/index.d.ts)
+LoadOptions.searchOperation(/api-reference/30 Data Layer/CustomStore/LoadOptions/searchOperation.md)(data/index.d.ts)
 -->

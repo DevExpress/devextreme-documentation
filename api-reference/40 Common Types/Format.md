@@ -9,6 +9,6 @@ Specifies a predefined format.
 
 ---
 <!--
-Format(50 Common\Object Structures\format\format.md)
-Format.type(50 Common\Object Structures\format\type.md)
+Format(/api-reference/50 Common/Object Structures/format/format.md)
+Format.type(/api-reference/50 Common/Object Structures/format/type.md)
 -->

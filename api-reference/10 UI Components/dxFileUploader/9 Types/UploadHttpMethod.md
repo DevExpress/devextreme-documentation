@@ -9,5 +9,5 @@ Specifies the method for the upload request.
 
 ---
 <!--
-dxFileUploaderOptions.uploadMethod(10 UI Components\dxFileUploader\1 Configuration\uploadMethod.md)(ui\file_uploader.d.ts)
+dxFileUploaderOptions.uploadMethod(/api-reference/10 UI Components/dxFileUploader/1 Configuration/uploadMethod.md)(ui/file_uploader.d.ts)
 -->

@@ -9,5 +9,5 @@ Specifies the sparkline type.
 
 ---
 <!--
-dxSparklineOptions.type(10 UI Components\dxSparkline\1 Configuration\type.md)(viz\sparkline.d.ts)
+dxSparklineOptions.type(/api-reference/10 UI Components/dxSparkline/1 Configuration/type.md)(viz/sparkline.d.ts)
 -->

@@ -9,6 +9,6 @@ Specifies buttons in the edit column or create a custom [command column](/Docume
 
 ---
 <!--
-dxTreeListColumn.buttons(_hidden\dxTreeListColumn\buttons\buttons.md)
-dxTreeListColumnButton.name(_hidden\dxTreeListColumnButton\name.md)
+dxTreeListColumn.buttons(/api-reference/_hidden/dxTreeListColumn/buttons/buttons.md)
+dxTreeListColumnButton.name(/api-reference/_hidden/dxTreeListColumnButton/name.md)
 -->

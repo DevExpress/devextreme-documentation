@@ -9,6 +9,6 @@ Sets the series type.
 
 ---
 <!--
-ChartSeries.type(10 UI Components\dxChart\5 Series Types\ChartSeries\type.md)(common\charts.d.ts)
-dxChartOptions.commonSeriesSettings.type(10 UI Components\dxChart\1 Configuration\commonSeriesSettings\type.md)(common\charts.d.ts)
+ChartSeries.type(/api-reference/10 UI Components/dxChart/5 Series Types/ChartSeries/type.md)(common/charts.d.ts)
+dxChartOptions.commonSeriesSettings.type(/api-reference/10 UI Components/dxChart/1 Configuration/commonSeriesSettings/type.md)(common/charts.d.ts)
 -->

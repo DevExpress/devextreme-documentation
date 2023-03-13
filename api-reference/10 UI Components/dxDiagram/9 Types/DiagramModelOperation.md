@@ -9,5 +9,5 @@ Specifies the edit operation.
 
 ---
 <!--
-dxDiagramOptions.onRequestEditOperation(10 UI Components\dxDiagram\1 Configuration\onRequestEditOperation.md)
+dxDiagramOptions.onRequestEditOperation(/api-reference/10 UI Components/dxDiagram/1 Configuration/onRequestEditOperation.md)
 -->

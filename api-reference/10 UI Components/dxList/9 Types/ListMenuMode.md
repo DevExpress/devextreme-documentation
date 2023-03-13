@@ -9,5 +9,5 @@ Specifies whether an item context menu is shown when a user holds or swipes an i
 
 ---
 <!--
-dxListOptions.menuMode(10 UI Components\dxList\1 Configuration\menuMode.md)(ui\list.d.ts)
+dxListOptions.menuMode(/api-reference/10 UI Components/dxList/1 Configuration/menuMode.md)(ui/list.d.ts)
 -->

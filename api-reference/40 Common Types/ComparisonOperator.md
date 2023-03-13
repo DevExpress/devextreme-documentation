@@ -9,5 +9,5 @@ Specifies the operator to be used for comparing the validated value with the [ta
 
 ---
 <!--
-CompareRule.comparisonType(10 UI Components\dxValidator\8 Validation Rules\CompareRule\comparisonType.md)(common.d.ts)
+CompareRule.comparisonType(/api-reference/10 UI Components/dxValidator/8 Validation Rules/CompareRule/comparisonType.md)(common.d.ts)
 -->

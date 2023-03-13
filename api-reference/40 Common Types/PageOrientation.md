@@ -9,5 +9,5 @@ Specifies the page orientation.
 
 ---
 <!--
-dxDiagramOptions.pageOrientation(10 UI Components\dxDiagram\1 Configuration\pageOrientation.md)(common.d.ts)
+dxDiagramOptions.pageOrientation(/api-reference/10 UI Components/dxDiagram/1 Configuration/pageOrientation.md)(common.d.ts)
 -->

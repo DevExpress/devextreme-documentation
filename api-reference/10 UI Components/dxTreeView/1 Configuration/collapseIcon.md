@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom collapse icon.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-icon

@@ -9,3 +9,5 @@ Specifies a custom collapse icon.
 
 ---
 #include uiwidgets-ref-icon
+
+#include dataviz-code-treeview-custom-icons

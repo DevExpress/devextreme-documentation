@@ -7,17 +7,8 @@ default: null
 ##### shortDescription
 Specifies dates that users cannot select.
 
-##### param(data): Object
+##### param(data): DisabledDate
 Information about the checked date.
-
-##### field(data.component): Object
-The UI component's [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxCalendar/Methods/#instance').
-
-##### field(data.date): Date
-The currently checked date.
-
-##### field(data.view): String
-The current view.
 
 ##### return: Boolean
 **true** if the date should be disabled; otherwise **false**.

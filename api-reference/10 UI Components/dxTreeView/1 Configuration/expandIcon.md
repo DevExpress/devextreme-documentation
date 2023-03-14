@@ -10,4 +10,6 @@ Specifies a custom expand icon.
 ---
 #include uiwidgets-ref-icon
 
-#include dataviz-code-treeview-custom-icons
+The following code shows how to specify custom expand and collapse icons:
+
+#include treeview-custom-icons

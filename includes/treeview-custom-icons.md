@@ -3,20 +3,21 @@
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#treeView").dxTreeView({
             // ...
-            collapseIcon: "minus",
-            expandIcon: "https://path/to/the/expand_icon.svg",
+            collapseIcon: "minus",  // icon from the DevExtreme icon library
+            expandIcon: "https://path/to/the/expand_icon.svg", // icon in the SVG format
         });
     });
 
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} ...
-        collapseIcon: "minus"
-        expandIcon: "https://path/to/the/expand_icon.svg" > 
-    </dx-{widget-name}> 
+    <dx-tree-view ...
+        collapseIcon="minus" <!-- icon from the DevExtreme icon library -->
+        expandIcon="https://path/to/the/expand_icon.svg" <!-- icon in the SVG format -->
+    > 
+    </dx-tree-view> 
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core'; 
@@ -35,7 +36,7 @@
     import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core'; 
     import { AppComponent } from './app.component'; 
-    import { Dx{WidgetName}Module } from 'devextreme-angular'; 
+    import { DxTreeViewModule } from 'devextreme-angular'; 
   
     @NgModule({ 
         declarations: [ 
@@ -43,7 +44,7 @@
         ], 
         imports: [ 
             BrowserModule, 
-            Dx{WidgetName}Module 
+            DxTreeViewModule 
         ], 
         providers: [ ], 
         bootstrap: [AppComponent] 
@@ -55,19 +56,19 @@
   
     <!-- tab: App.vue (Options API) -->
     <template> 
-        <Dx{WidgetName} ...
-            collapseIcon="minus"
-            expandIcon="https://path/to/the/expand_icon.svg"
+        <DxTreeView ...
+            collapseIcon="minus" <!-- icon from the DevExtreme icon library -->
+            expandIcon="https://path/to/the/expand_icon.svg" <!-- icon in the SVG format -->
         />            
     </template> 
   
     <script>  
     import 'devextreme/dist/css/dx.light.css'; 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}'; 
+    import DxTreeView from 'devextreme-vue/tree-view'; 
 
     export default { 
         components: { 
-            Dx{WidgetName}
+            DxTreeView
         }, 
         // ...
     } 
@@ -75,15 +76,15 @@
 
     <!-- tab: App.vue (Composition API) -->
     <template> 
-        <Dx{WidgetName} ...
-            collapseIcon="minus"
-            expandIcon="https://path/to/the/expand_icon.svg"
+        <DxTreeView ...
+            collapseIcon="minus" <!-- icon from the DevExtreme icon library -->
+            expandIcon="https://path/to/the/expand_icon.svg" <!-- icon in the SVG format -->
         />            
     </template> 
   
     <script setup>  
     import 'devextreme/dist/css/dx.light.css'; 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}'; 
+    import DxTreeView from 'devextreme-vue/tree-view'; 
 
     // ...
     </script> 
@@ -94,13 +95,13 @@
     import React from 'react';  
     import 'devextreme/dist/css/dx.light.css'; 
 
-    import {WidgetName} from 'devextreme-react/{widget-name}'; 
+    import TreeView from 'devextreme-react/tree-view'; 
 
     export default function App() { 
         return ( 
-            <{WidgetName} ...
-                collapseIcon="minus"
-                expandIcon="https://path/to/the/expand_icon.svg"
+            <TreeView ...
+                collapseIcon="minus" // icon from the DevExtreme icon library
+                expandIcon="https://path/to/the/expand_icon.svg" // icon in the SVG format
             />        
         ); 
     } 

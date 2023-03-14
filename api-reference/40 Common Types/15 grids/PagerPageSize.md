@@ -9,5 +9,5 @@ Specifies the available page sizes in the page size selector.
 
 ---
 <!--
-GridBaseOptions.pager.allowedPageSizes(/api-reference/10 UI Components/GridBase/1 Configuration/pager/allowedPageSizes.md)
+GridBaseOptions.pager.allowedPageSizes(api-reference/10 UI Components/GridBase/1 Configuration/pager/allowedPageSizes.md)
 -->

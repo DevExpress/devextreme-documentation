@@ -9,5 +9,5 @@ Specifies a [week number](/Documentation/ApiReference/UI_Components/dxCalendar/C
 
 ---
 <!--
-dxCalendarOptions.weekNumberRule(/api-reference/10 UI Components/dxCalendar/1 Configuration/weekNumberRule.md)(ui/calendar.d.ts)
+dxCalendarOptions.weekNumberRule(api-reference/10 UI Components/dxCalendar/1 Configuration/weekNumberRule.md)(ui/calendar.d.ts)
 -->

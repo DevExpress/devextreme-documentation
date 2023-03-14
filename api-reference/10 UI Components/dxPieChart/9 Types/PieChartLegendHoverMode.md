@@ -9,5 +9,5 @@ Specifies what chart elements to highlight when a corresponding item in the lege
 
 ---
 <!--
-dxPieChartOptions.legend.hoverMode(/api-reference/10 UI Components/dxPieChart/1 Configuration/legend/hoverMode.md)(viz/pie_chart.d.ts)
+dxPieChartOptions.legend.hoverMode(api-reference/10 UI Components/dxPieChart/1 Configuration/legend/hoverMode.md)(viz/pie_chart.d.ts)
 -->

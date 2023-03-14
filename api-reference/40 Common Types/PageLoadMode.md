@@ -9,6 +9,6 @@ Specifies whether the next page is loaded when a user scrolls the UI component t
 
 ---
 <!--
-dxListOptions.pageLoadMode(/api-reference/10 UI Components/dxList/1 Configuration/pageLoadMode.md)(common.d.ts)
-dxLookupOptions.pageLoadMode(/api-reference/10 UI Components/dxLookup/1 Configuration/pageLoadMode.md)(common.d.ts)
+dxListOptions.pageLoadMode(api-reference/10 UI Components/dxList/1 Configuration/pageLoadMode.md)(common.d.ts)
+dxLookupOptions.pageLoadMode(api-reference/10 UI Components/dxLookup/1 Configuration/pageLoadMode.md)(common.d.ts)
 -->

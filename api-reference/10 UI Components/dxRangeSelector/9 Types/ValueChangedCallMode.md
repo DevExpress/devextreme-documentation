@@ -9,5 +9,5 @@ Specifies when to call the [onValueChanged](/Documentation/ApiReference/UI_Compo
 
 ---
 <!--
-dxRangeSelectorOptions.behavior.callValueChanged(/api-reference/10 UI Components/dxRangeSelector/1 Configuration/behavior/callValueChanged.md)(viz/range_selector.d.ts)
+dxRangeSelectorOptions.behavior.callValueChanged(api-reference/10 UI Components/dxRangeSelector/1 Configuration/behavior/callValueChanged.md)(viz/range_selector.d.ts)
 -->

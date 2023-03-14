@@ -9,5 +9,5 @@ Specifies the [command column](/concepts/05%20UI%20Components/DataGrid/15%20Colu
 
 ---
 <!--
-dxDataGridColumn.type(/api-reference/_hidden/dxDataGridColumn/type.md)(ui/data_grid.d.ts)
+dxDataGridColumn.type(api-reference/_hidden/dxDataGridColumn/type.md)(ui/data_grid.d.ts)
 -->

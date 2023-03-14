@@ -9,5 +9,5 @@ The name of the current map data provider.
 
 ---
 <!--
-dxMapOptions.provider(/api-reference/10 UI Components/dxMap/1 Configuration/provider.md)(ui/map.d.ts)
+dxMapOptions.provider(api-reference/10 UI Components/dxMap/1 Configuration/provider.md)(ui/map.d.ts)
 -->

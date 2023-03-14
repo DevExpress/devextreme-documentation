@@ -9,5 +9,5 @@ Specifies the direction in which the items will be laid out.
 
 ---
 <!--
-dxTreeMapOptions.layoutDirection(/api-reference/10 UI Components/dxTreeMap/1 Configuration/layoutDirection.md)(viz/tree_map.d.ts)
+dxTreeMapOptions.layoutDirection(api-reference/10 UI Components/dxTreeMap/1 Configuration/layoutDirection.md)(viz/tree_map.d.ts)
 -->

@@ -9,5 +9,5 @@ Specifies whether the UI component enables an end-user to select only a single i
 
 ---
 <!--
-dxListOptions.selectionMode(/api-reference/10 UI Components/dxList/1 Configuration/selectionMode.md)(common.d.ts)
+dxListOptions.selectionMode(api-reference/10 UI Components/dxList/1 Configuration/selectionMode.md)(common.d.ts)
 -->

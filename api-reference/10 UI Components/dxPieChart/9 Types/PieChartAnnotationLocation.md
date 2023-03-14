@@ -9,5 +9,5 @@ Specifies an annotation's position on the surface of a specific [argument](/api-
 
 ---
 <!--
-dxPieChartCommonAnnotationConfig.location(/api-reference/_hidden/dxPieChartCommonAnnotationConfig/location.md)(viz/pie_chart.d.ts)
+dxPieChartCommonAnnotationConfig.location(api-reference/_hidden/dxPieChartCommonAnnotationConfig/location.md)(viz/pie_chart.d.ts)
 -->

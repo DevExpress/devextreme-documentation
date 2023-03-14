@@ -9,5 +9,5 @@ Specifies how to rotate or stagger horizontal axis labels.
 
 ---
 <!--
-dxChartOptions.commonAxisSettings.label.displayMode(/api-reference/10 UI Components/dxChart/1 Configuration/commonAxisSettings/label/displayMode.md)(viz/chart.d.ts)
+dxChartOptions.commonAxisSettings.label.displayMode(api-reference/10 UI Components/dxChart/1 Configuration/commonAxisSettings/label/displayMode.md)(viz/chart.d.ts)
 -->

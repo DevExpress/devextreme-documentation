@@ -9,5 +9,5 @@ Specifies the scrolling mode.
 
 ---
 <!--
-dxDataGridOptions.scrolling.mode(/api-reference/10 UI Components/dxDataGrid/1 Configuration/scrolling/mode.md)(ui/data_grid.d.ts)
+dxDataGridOptions.scrolling.mode(api-reference/10 UI Components/dxDataGrid/1 Configuration/scrolling/mode.md)(ui/data_grid.d.ts)
 -->

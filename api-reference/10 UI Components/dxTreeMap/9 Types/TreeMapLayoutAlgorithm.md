@@ -9,5 +9,5 @@ Specifies the layout algorithm.
 
 ---
 <!--
-dxTreeMapOptions.layoutAlgorithm(/api-reference/10 UI Components/dxTreeMap/1 Configuration/layoutAlgorithm.md)
+dxTreeMapOptions.layoutAlgorithm(api-reference/10 UI Components/dxTreeMap/1 Configuration/layoutAlgorithm.md)
 -->

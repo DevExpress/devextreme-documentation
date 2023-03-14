@@ -9,5 +9,5 @@ Specifies how UI component items are aligned along the main direction.
 
 ---
 <!--
-dxBoxOptions.align(/api-reference/10 UI Components/dxBox/1 Configuration/align.md)(ui/box.d.ts)
+dxBoxOptions.align(api-reference/10 UI Components/dxBox/1 Configuration/align.md)(ui/box.d.ts)
 -->

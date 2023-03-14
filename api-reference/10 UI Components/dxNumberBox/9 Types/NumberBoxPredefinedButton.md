@@ -9,5 +9,5 @@ Specifies a custom button for the input text field.
 
 ---
 <!--
-dxNumberBoxOptions.buttons(/api-reference/10 UI Components/dxNumberBox/1 Configuration/buttons/buttons.md)
+dxNumberBoxOptions.buttons(api-reference/10 UI Components/dxNumberBox/1 Configuration/buttons/buttons.md)
 -->

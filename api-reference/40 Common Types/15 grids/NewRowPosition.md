@@ -9,5 +9,5 @@ Specifies a position for a new row.
 
 ---
 <!--
-dxDataGridOptions.editing.newRowPosition(/api-reference/10 UI Components/dxDataGrid/1 Configuration/editing/newRowPosition.md)(common/grids.d.ts)
+dxDataGridOptions.editing.newRowPosition(api-reference/10 UI Components/dxDataGrid/1 Configuration/editing/newRowPosition.md)(common/grids.d.ts)
 -->

@@ -9,5 +9,5 @@ Specifies when to display the selection column and row selection checkboxes.
 
 ---
 <!--
-dxDataGridOptions.selection.showCheckBoxesMode(/api-reference/10 UI Components/dxDataGrid/1 Configuration/selection/showCheckBoxesMode.md)(common/grids.d.ts)
+dxDataGridOptions.selection.showCheckBoxesMode(api-reference/10 UI Components/dxDataGrid/1 Configuration/selection/showCheckBoxesMode.md)(common/grids.d.ts)
 -->

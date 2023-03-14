@@ -9,5 +9,5 @@ Specifies the animation direction for the "slideIn" and "slideOut" animation typ
 
 ---
 <!--
-AnimationConfig.direction(/api-reference/50 Common/Object Structures/animationConfig/direction.md)(common.d.ts)
+AnimationConfig.direction(api-reference/50 Common/Object Structures/animationConfig/direction.md)(common.d.ts)
 -->

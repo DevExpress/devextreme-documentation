@@ -9,5 +9,5 @@ Specifies which editor UI component is used to display and edit the form item va
 
 ---
 <!--
-dxFormSimpleItem.editorType(/api-reference/10 UI Components/dxForm/5 Item Types/SimpleItem/editorType.md)(ui/form.d.ts)
+dxFormSimpleItem.editorType(api-reference/10 UI Components/dxForm/5 Item Types/SimpleItem/editorType.md)(ui/form.d.ts)
 -->

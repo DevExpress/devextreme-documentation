@@ -9,5 +9,5 @@ Specifies the start position of the aggregated series points in the aggregation 
 
 ---
 <!--
-dxChartOptions.commonAxisSettings.aggregatedPointsPosition(/api-reference/10 UI Components/dxChart/1 Configuration/commonAxisSettings/aggregatedPointsPosition.md)(viz/chart.d.ts)
+dxChartOptions.commonAxisSettings.aggregatedPointsPosition(api-reference/10 UI Components/dxChart/1 Configuration/commonAxisSettings/aggregatedPointsPosition.md)(viz/chart.d.ts)
 -->

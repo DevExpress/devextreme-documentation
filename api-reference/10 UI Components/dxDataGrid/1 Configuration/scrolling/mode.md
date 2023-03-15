@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.scrolling.mode
-acceptValues: 'infinite' | 'standard' | 'virtual'
-type: String
+type: Enums.DataGridScrollMode
 default: 'standard'
 ---
 ---

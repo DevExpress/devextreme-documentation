@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.aggregatedPointsPosition
-acceptValues: 'betweenTicks' | 'crossTicks'
-type: String
+type: Enums.AggregatedPointsPosition
 default: 'betweenTicks'
 ---
 ---

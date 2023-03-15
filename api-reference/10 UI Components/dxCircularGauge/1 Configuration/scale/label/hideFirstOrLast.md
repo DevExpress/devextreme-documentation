@@ -1,7 +1,6 @@
 ---
 id: dxCircularGauge.Options.scale.label.hideFirstOrLast
-acceptValues: 'first' | 'last'
-type: String
+type: Enums.CircularGaugeLabelOverlap
 default: 'last'
 ---
 ---

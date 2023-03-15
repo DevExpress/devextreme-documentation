@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.headerFilter.groupInterval
-acceptValues: 'day' | 'hour' | 'minute' | 'month' | 'quarter' | 'second' | 'year'
-type: String | Number
+type: Enums.HeaderFilterGroupInterval | Number
 default: undefined
 ---
 ---

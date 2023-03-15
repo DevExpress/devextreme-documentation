@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.keyboardNavigation.enterKeyAction
-acceptValues: 'startEdit' | 'moveFocus'
-type: String
+type: Enums.EnterKeyAction
 default: 'startEdit'
 ---
 ---

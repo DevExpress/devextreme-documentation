@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.reduction.level
-acceptValues: 'close' | 'high' | 'low' | 'open'
-type: String
+type: Enums.FinancialChartReductionLevel
 default: 'close'
 ---
 ---

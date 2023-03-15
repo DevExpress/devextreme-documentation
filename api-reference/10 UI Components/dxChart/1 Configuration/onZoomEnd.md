@@ -11,7 +11,7 @@ A function that is executed when zooming or panning ends.
 ##### param(e): Object
 Information about the event.
 
-##### field(e.actionType): 'zoom' | 'pan'
+##### field(e.actionType): Enums.ZoomPanAction
 Indicates whether the user has zoomed or panned the chart.
 
 ##### field(e.axis): chartAxisObject

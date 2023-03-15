@@ -1,7 +1,6 @@
 ---
 id: dxTreeMap.Options.layoutDirection
-acceptValues: 'leftBottomRightTop' | 'leftTopRightBottom' | 'rightBottomLeftTop' | 'rightTopLeftBottom'
-type: String
+type: Enums.TreeMapLayoutDirection
 default: 'leftTopRightBottom'
 ---
 ---

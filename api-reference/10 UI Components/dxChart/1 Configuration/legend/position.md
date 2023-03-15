@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.legend.position
-acceptValues: 'inside' | 'outside'
-type: String
+type: Enums.RelativePosition
 default: 'outside'
 ---
 ---

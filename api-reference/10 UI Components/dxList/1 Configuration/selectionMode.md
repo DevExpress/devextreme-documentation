@@ -1,7 +1,6 @@
 ---
 id: dxList.Options.selectionMode
-acceptValues: 'single' | 'multiple' | 'all' | 'none'
-type: String
+type: Enums.SingleMultipleAllOrNone
 default: 'none'
 ---
 ---

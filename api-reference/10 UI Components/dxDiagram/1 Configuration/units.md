@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.units
-acceptValues: 'in' | 'cm' | 'px'
-type: String
+type: Enums.DiagramUnits
 default: 'in'
 ---
 ---

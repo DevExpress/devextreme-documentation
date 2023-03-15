@@ -1,7 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.type
-acceptValues: 'fixed' | 'percent' | 'stdDeviation' | 'stdError' | 'variance'
-type: String
+type: Enums.ValueErrorBarType
 default: undefined
 ---
 ---

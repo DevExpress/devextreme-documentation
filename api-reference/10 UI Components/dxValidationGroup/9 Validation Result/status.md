@@ -1,7 +1,6 @@
 ---
 id: dxValidationGroupResult.status
-acceptValues: 'valid' | 'invalid' | 'pending'
-type: String
+type: Enums.ValidationStatus
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: PdfExportGanttProps.dateRange
-acceptValues: 'all' | 'visible'
-type: String | Object
+type: Enums.GanttPdfExportDateRange | Object
 ---
 ---
 ##### shortDescription

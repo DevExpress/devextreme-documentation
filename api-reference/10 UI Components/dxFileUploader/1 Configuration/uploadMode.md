@@ -1,7 +1,6 @@
 ---
 id: dxFileUploader.Options.uploadMode
-acceptValues: 'instantly' | 'useButtons' | 'useForm'
-type: String
+type: Enums.FileUploadMode
 default: 'instantly'
 ---
 ---

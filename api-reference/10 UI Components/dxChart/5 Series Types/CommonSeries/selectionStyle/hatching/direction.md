@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.direction
-acceptValues: 'left' | 'none' | 'right'
-type: String
+type: Enums.HatchDirection
 default: 'right'
 ---
 ---

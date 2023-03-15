@@ -1,7 +1,6 @@
 ---
 id: dxSankey.Options.alignment
-acceptValues: 'bottom' | 'center' | 'top'
-type: String | Array<String>
+type: Enums.VerticalAlignment | Array<Enums.VerticalAlignment>
 default: 'center'
 ---
 ---

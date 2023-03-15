@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.RangeAreaSeries.aggregation.method
-acceptValues: 'range' | 'custom'
-type: String
+type: Enums.ChartRangeSeriesAggregationMethod
 default: 'range'
 ---
 ---

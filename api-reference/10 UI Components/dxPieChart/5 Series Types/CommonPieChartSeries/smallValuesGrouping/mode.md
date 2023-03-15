@@ -1,7 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.mode
-acceptValues: 'none' | 'smallValueThreshold' | 'topN'
-type: String
+type: Enums.SmallValuesGroupingMode
 default: 'none'
 ---
 ---

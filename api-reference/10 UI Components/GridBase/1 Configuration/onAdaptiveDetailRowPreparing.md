@@ -161,4 +161,4 @@ The following Form properties cannot be specified using **formOptions**:
 - [columnHidingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnHidingEnabled.md '{basewidgetpath}/Configuration/#columnHidingEnabled')
 - **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseColumn/hidingPriority.md '{basewidgetpath}/Configuration/columns/#hidingPriority')
 - [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Adaptability/')
-- [Customize Adaptive Detail Row](/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/#Customize_Adaptive_Detail_Row)
+- [Customize Adaptive Detail Row](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability/15%20Customize%20Adaptive%20Detail%20Row.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/#Customize_Adaptive_Detail_Row')

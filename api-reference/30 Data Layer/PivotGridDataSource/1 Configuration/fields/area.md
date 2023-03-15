@@ -1,7 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.area
-acceptValues: undefined | 'column' | 'data' | 'filter' | 'row'
-type: String
+acceptValues: undefined
+type: Enums.PivotGridArea
 default: undefined
 ---
 ---

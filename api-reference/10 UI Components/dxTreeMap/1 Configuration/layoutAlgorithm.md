@@ -1,7 +1,6 @@
 ---
 id: dxTreeMap.Options.layoutAlgorithm
-acceptValues: 'sliceanddice' | 'squarified' | 'strip'
-type: String | function(e)
+type: Enums.TreeMapLayoutAlgorithm | function(e)
 default: 'squarified'
 ---
 ---

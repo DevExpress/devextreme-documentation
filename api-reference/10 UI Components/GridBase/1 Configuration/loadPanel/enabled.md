@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.loadPanel.enabled
-acceptValues: 'auto'
-type: Boolean | String
+type: Boolean | Enums.Mode
 default: 'auto'
 ---
 ---

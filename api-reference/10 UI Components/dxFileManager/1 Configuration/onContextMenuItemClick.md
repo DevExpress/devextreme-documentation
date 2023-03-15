@@ -34,7 +34,7 @@ The clicked item's index.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.viewArea): 'navPane' | 'itemView'
+##### field(e.viewArea): Enums.FileManagerViewArea
 Specifies whether the context menu is invoked in the navigation panel or in the items area.
 
 ---

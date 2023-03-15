@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.aggregation.method
-acceptValues: 'avg' | 'count' | 'max' | 'min' | 'ohlc' | 'range' | 'sum' | 'custom'
-type: String
+type: Enums.ChartSeriesAggregationMethod
 ---
 ---
 ##### shortDescription

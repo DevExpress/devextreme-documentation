@@ -1,7 +1,6 @@
 ---
 id: dxDiagramItem.itemType
-acceptValues: 'shape' | 'connector'
-type: String
+type: Enums.DiagramItemType
 ---
 ---
 ##### shortDescription

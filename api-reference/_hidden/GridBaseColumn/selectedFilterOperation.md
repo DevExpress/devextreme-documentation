@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.selectedFilterOperation
-acceptValues: '<' | '<=' | '<>' | '=' | '>' | '>=' | 'between' | 'contains' | 'endswith' | 'notcontains' | 'startswith'
-type: String
+type: Enums.SelectedFilterOperation
 default: undefined
 firedEvents: optionChanged
 ---

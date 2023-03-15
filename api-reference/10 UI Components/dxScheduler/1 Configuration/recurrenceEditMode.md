@@ -1,7 +1,6 @@
 ---
 id: dxScheduler.Options.recurrenceEditMode
-acceptValues: 'dialog' | 'occurrence' | 'series'
-type: String
+type: Enums.RecurrenceEditMode
 default: 'dialog'
 ---
 ---

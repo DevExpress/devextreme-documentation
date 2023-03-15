@@ -1,7 +1,6 @@
 ---
 id: dxDrawer.Options.openedStateMode
-acceptValues: 'overlap' | 'shrink' | 'push'
-type: String
+type: Enums.OpenedStateMode
 default: 'shrink'
 ---
 ---

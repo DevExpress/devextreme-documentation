@@ -1,7 +1,6 @@
 ---
 id: dxFunnel.Options.label.position
-acceptValues: 'columns' | 'inside' | 'outside'
-type: String
+type: Enums.LabelPosition
 default: 'columns'
 ---
 ---

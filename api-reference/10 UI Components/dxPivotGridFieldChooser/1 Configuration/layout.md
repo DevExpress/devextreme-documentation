@@ -1,7 +1,6 @@
 ---
 id: dxPivotGridFieldChooser.Options.layout
-acceptValues: 0 | 1 | 2
-type: Number
+type: Enums.FieldChooserLayout
 default: 0
 ---
 ---

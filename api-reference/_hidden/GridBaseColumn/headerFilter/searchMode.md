@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.headerFilter.searchMode
-acceptValues: 'contains' | 'startswith' | 'equals'
-type: String
+type: Enums.SearchMode
 default: 'contains'
 ---
 ---

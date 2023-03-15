@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.defaultItemProperties.connectorLineStart
-acceptValues: 'none' | 'arrow' | 'outlinedTriangle' | 'filledTriangle'
-type: String
+type: Enums.DiagramConnectorLineEnd
 default: 'none'
 ---
 ---

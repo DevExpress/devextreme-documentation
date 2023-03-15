@@ -1,7 +1,6 @@
 ---
 id: dxPivotGrid.Options.scrolling.mode
-acceptValues: 'standard' | 'virtual'
-type: String
+type: Enums.ScrollMode
 default: 'standard'
 ---
 ---

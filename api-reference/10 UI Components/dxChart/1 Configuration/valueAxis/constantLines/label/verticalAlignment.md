@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.valueAxis.constantLines.label.verticalAlignment
-acceptValues: 'bottom' | 'center' | 'top'
-type: String
+type: Enums.VerticalAlignment
 default: 'top'
 ---
 ---

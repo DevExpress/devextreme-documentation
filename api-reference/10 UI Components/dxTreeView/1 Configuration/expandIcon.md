@@ -13,3 +13,7 @@ Specifies a custom expand icon.
 The following code shows how to specify custom expand and collapse icons:
 
 #include treeview-custom-icons
+---
+
+#####See Also#####
+- [collapseIcon](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#collapseIcon)

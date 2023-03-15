@@ -1,7 +1,6 @@
 ---
 id: BaseChart.Options.pointSelectionMode
-acceptValues: 'single' | 'multiple'
-type: String
+type: Enums.SingleOrMultiple
 default: 'single'
 ---
 ---

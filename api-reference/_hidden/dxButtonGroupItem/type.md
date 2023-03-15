@@ -1,7 +1,6 @@
 ---
 id: dxButtonGroupItem.type
-acceptValues: 'back' | 'danger' | 'default' | 'normal' | 'success'
-type: String
+type: Enums.ButtonType
 default: 'normal'
 ---
 ---

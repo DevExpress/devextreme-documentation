@@ -1,7 +1,6 @@
 ---
 id: dxToolbarItem.widget
-acceptValues: 'dxAutocomplete' | 'dxButton' | 'dxCheckBox' | 'dxDateBox' | 'dxMenu' | 'dxSelectBox' | 'dxTabs' | 'dxTextBox' | 'dxButtonGroup' | 'dxDropDownButton'
-type: String
+type: Enums.ToolbarItemComponent
 ---
 ---
 ##### shortDescription

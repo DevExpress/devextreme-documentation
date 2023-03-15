@@ -1,7 +1,6 @@
 ---
 id: LoadOptions.searchOperation
-type: String
-acceptValues: '=' | '<>' | '>' | '>=' | '<' | '<=' | 'startswith' | 'endswith' | 'contains' | 'notcontains'
+type: Enums.SearchOperation
 ---
 ---
 ##### shortDescription

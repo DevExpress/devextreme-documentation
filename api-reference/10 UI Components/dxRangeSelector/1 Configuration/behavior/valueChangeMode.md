@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.behavior.valueChangeMode
-acceptValues: 'onHandleMove' | 'onHandleRelease'
-type: String
+type: Enums.SliderValueChangeMode
 default: 'onHandleRelease'
 ---
 ---

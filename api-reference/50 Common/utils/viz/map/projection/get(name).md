@@ -9,7 +9,7 @@ Gets a predefined or custom projection from the projection storage.
 ##### return: Object
 The projection.
 
-##### param(name): String | 'equirectangular' | 'lambert' | 'mercator' | 'miller'
+##### param(name): Enums.VectorMapProjection | String
 The projection's name.
 
 ---

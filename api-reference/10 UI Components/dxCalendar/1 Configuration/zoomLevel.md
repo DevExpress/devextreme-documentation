@@ -1,7 +1,6 @@
 ---
 id: dxCalendar.Options.zoomLevel
-acceptValues: 'century' | 'decade' | 'month' | 'year'
-type: String
+type: Enums.CalendarZoomLevel
 default: 'month'
 firedEvents: optionChanged
 ---

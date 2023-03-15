@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.theme
-acceptValues: 'generic.dark' | 'generic.light' | 'generic.contrast' | 'generic.carmine' | 'generic.darkmoon' | 'generic.darkviolet' | 'generic.greenmist' | 'generic.softblue' | 'material.blue.light' | 'material.lime.light' | 'material.orange.light' | 'material.purple.light' | 'material.teal.light'
-type: String
+type: Enums.Theme
 default: 'generic.light'
 ---
 ---

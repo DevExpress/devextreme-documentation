@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.autoLayout.orientation
-acceptValues: 'horizontal' | 'vertical'
-type: String
+type: Enums.Orientation
 ---
 ---
 ##### shortDescription

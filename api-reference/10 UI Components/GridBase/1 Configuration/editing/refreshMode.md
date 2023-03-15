@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.editing.refreshMode
-acceptValues: 'full' | 'reshape' | 'repaint'
-type: String
+type: Enums.GridsEditRefreshMode
 default: 'full'
 ---
 ---

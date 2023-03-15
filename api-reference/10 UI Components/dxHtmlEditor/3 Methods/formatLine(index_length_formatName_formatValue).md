@@ -12,7 +12,7 @@ A zero-based index at which to begin formatting.
 The length of the content to be formatted.      
 [Embedded items](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') have a length of 1.
 
-##### param(formatName): String | 'background' | 'bold' | 'color' | 'font' | 'italic' | 'link' | 'size' | 'strike' | 'script' | 'underline' | 'blockquote' | 'header' | 'indent' | 'list' | 'align' | 'code-block'
+##### param(formatName): Enums.HtmlEditorFormat | String
 A [format name](/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#name').
 
 ##### param(formatValue): any

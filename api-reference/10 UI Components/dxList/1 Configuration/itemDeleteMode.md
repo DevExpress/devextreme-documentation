@@ -1,7 +1,6 @@
 ---
 id: dxList.Options.itemDeleteMode
-acceptValues: 'context' | 'slideButton' | 'slideItem' | 'static' | 'swipe' | 'toggle'
-type: String
+type: Enums.ItemDeleteMode
 default: 'static', 'slideItem' (iOS), 'swipe' (Android)
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.alignment
-acceptValues: 'center' | 'left' | 'right'
-type: String
+type: Enums.HorizontalAlignment
 default: undefined
 ---
 ---

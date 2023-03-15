@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.autoZoomMode
-acceptValues: 'fitContent' | 'fitWidth' | 'disabled'
-type: String
+type: Enums.DiagramAutoZoomMode
 default: 'disabled'
 ---
 ---

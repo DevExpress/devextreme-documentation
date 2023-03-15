@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.position
-acceptValues: 'inside' | 'outside' | 'bottom' | 'left' | 'right' | 'top'
-type: String
+type: Enums.RelativePosition | Enums.Position
 default: 'outside'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxFileManagerToolbar.fileSelectionItems
-acceptValues: 'showNavPane' | 'create' | 'upload' | 'refresh' | 'switchView' | 'download' | 'move' | 'copy' | 'rename' | 'delete' | 'clearSelection' | 'separator'
-type: Array<dxFileManagerToolbarItem, String>
+type: Array<dxFileManagerToolbarItem, Enums.FileManagerPredefinedToolbarItem>
 default: [ 'download', 'separator', 'move', 'copy', 'rename', 'separator', 'delete', 'clearSelection', { name: 'separator', location: 'after' }, 'refresh' ]
 inheritsType: dxFileManagerToolbarItem
 ---

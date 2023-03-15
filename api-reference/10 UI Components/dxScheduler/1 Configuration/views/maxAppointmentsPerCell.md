@@ -1,7 +1,6 @@
 ---
 id: dxScheduler.Options.views.maxAppointmentsPerCell
-acceptValues: 'auto' | 'unlimited'
-type: Number | String
+type: Number | Enums.CellAppointmentsLimit
 default: 'auto'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxFilterBuilder.Options.groupOperations
-acceptValues: 'and' | 'or' | 'notAnd' | 'notOr'
-type: Array<String>
+type: Array<Enums.GroupOperation>
 default: ['and', 'or', 'notAnd', 'notOr']
 ---
 ---

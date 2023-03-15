@@ -1,7 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverMode
-acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'none' | 'onlyPoint'
-type: String
+type: Enums.PointInteractionMode
 default: 'onlyPoint'
 ---
 ---

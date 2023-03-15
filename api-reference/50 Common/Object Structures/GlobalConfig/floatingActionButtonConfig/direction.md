@@ -1,7 +1,6 @@
 ---
 id: GlobalConfig.floatingActionButtonConfig.direction
-acceptValues: 'auto' | 'up' | 'down'
-type: String
+type: Enums.FloatingActionButtonDirection
 default: 'auto'
 ---
 ---

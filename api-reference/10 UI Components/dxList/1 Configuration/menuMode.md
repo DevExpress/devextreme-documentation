@@ -1,7 +1,6 @@
 ---
 id: dxList.Options.menuMode
-acceptValues: 'context' | 'slide'
-type: String
+type: Enums.ListMenuMode
 default: 'context', 'slide' (iOS)
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.selection.showCheckBoxesMode
-acceptValues: 'always' | 'none' | 'onClick' | 'onLongTap'
-type: String
+type: Enums.SelectionColumnDisplayMode
 default: 'onClick', 'always' (Material)
 ---
 ---

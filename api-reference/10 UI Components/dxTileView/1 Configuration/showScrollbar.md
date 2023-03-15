@@ -1,8 +1,7 @@
 ---
 id: dxTileView.Options.showScrollbar
-type: String
+type: Enums.ScrollbarMode
 default: 'never', 'onScroll' (Mac, Android, iOS)
-acceptValues: 'always' | 'never' | 'onHover' | 'onScroll'
 ---
 ---
 ##### shortDescription

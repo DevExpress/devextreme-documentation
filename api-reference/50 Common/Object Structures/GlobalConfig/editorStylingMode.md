@@ -1,7 +1,6 @@
 ---
 id: GlobalConfig.editorStylingMode
-acceptValues: 'outlined' | 'underlined' | 'filled'
-type: String
+type: Enums.EditorStyle
 default: undefined
 ---
 ---

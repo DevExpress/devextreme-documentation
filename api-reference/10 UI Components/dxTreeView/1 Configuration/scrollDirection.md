@@ -1,7 +1,6 @@
 ---
 id: dxTreeView.Options.scrollDirection
-acceptValues: 'both' | 'horizontal' | 'vertical'
-type: String
+type: Enums.ScrollDirection
 default: 'vertical'
 ---
 ---

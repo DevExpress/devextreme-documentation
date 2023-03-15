@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.seriesSelectionMode
-acceptValues: 'single' | 'multiple'
-type: String
+type: Enums.SingleOrMultiple
 default: 'single'
 ---
 ---

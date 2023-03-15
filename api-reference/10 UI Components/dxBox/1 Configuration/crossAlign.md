@@ -1,7 +1,6 @@
 ---
 id: dxBox.Options.crossAlign
-acceptValues: 'center' | 'end' | 'start' | 'stretch'
-type: String
+type: Enums.CrosswiseDistribution
 default: 'start'
 ---
 ---

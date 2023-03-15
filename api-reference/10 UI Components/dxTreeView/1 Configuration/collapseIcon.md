@@ -5,7 +5,15 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom collapse icon.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-icon
+
+The following code snippet shows how to specify custom collapse and expand icons:
+
+#include treeview-custom-icons
+---
+
+#####See Also#####
+- [expandIcon](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandIcon)

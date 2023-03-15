@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.filterSyncEnabled
-acceptValues: 'auto'
-type: Boolean | String
+type: Boolean | Enums.Mode
 default: 'auto'
 ---
 ---

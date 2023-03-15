@@ -1,7 +1,6 @@
 ---
 id: dxMenu.Options.showFirstSubmenuMode
-acceptValues: 'onClick' | 'onHover'
-type: Object | String
+type: Object | Enums.SubmenuShowMode
 default: { name: 'onClick', delay: { show: 50, hide: 300 } }
 ---
 ---

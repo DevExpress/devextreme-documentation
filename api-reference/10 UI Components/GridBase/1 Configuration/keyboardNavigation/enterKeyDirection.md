@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.keyboardNavigation.enterKeyDirection
-acceptValues: 'none' | 'column' | 'row'
-type: String
+type: Enums.EnterKeyDirection
 default: 'none'
 ---
 ---

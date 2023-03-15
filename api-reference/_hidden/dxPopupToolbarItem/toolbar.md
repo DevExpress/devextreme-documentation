@@ -1,7 +1,6 @@
 ---
 id: dxPopupToolbarItem.toolbar
-acceptValues: 'bottom' | 'top'
-type: String
+type: Enums.ToolbarLocation
 default: 'top'
 ---
 ---

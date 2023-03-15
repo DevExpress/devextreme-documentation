@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.selection.selectAllMode
-acceptValues: 'allPages' | 'page'
-type: String
+type: Enums.SelectAllMode
 default: 'allPages'
 ---
 ---

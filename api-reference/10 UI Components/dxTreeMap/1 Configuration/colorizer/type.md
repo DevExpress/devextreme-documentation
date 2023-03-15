@@ -1,7 +1,6 @@
 ---
 id: dxTreeMap.Options.colorizer.type
-acceptValues: 'discrete' | 'gradient' | 'none' | 'range'
-type: String
+type: Enums.TreeMapColorizerType
 default: undefined
 ---
 ---

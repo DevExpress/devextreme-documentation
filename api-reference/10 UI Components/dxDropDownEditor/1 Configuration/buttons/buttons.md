@@ -1,7 +1,6 @@
 ---
 id: dxDropDownEditor.Options.buttons
-acceptValues: 'clear' | 'dropDown'
-type: Array<String, dxTextEditorButton>
+type: Array<Enums.DropDownPredefinedButton, dxTextEditorButton>
 default: undefined
 inheritsType: dxTextEditorButton
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxDrawer.Options.revealMode
-acceptValues: 'slide' | 'expand'
-type: String
+type: Enums.RevealMode
 default: 'slide'
 ---
 ---

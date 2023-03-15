@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.scrolling.rowRenderingMode
-acceptValues: 'standard' | 'virtual'
-type: String
+type: Enums.DataRenderMode
 default: 'standard'
 ---
 ---

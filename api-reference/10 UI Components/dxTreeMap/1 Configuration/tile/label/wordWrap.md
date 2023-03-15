@@ -1,7 +1,6 @@
 ---
 id: dxTreeMap.Options.tile.label.wordWrap
-acceptValues: 'normal' | 'breakWord' | 'none'
-type: String
+type: Enums.WordWrap
 default: 'normal'
 ---
 ---

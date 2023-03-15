@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.crosshair.verticalLine.dashStyle
-acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
-type: String
+type: Enums.DashStyle
 default: 'solid'
 ---
 ---

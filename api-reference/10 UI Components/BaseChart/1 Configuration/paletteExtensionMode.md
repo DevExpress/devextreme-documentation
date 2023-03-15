@@ -1,7 +1,6 @@
 ---
 id: BaseChart.Options.paletteExtensionMode
-acceptValues: 'alternate' | 'blend' | 'extrapolate'
-type: String
+type: Enums.PaletteExtensionMode
 default: 'blend'
 ---
 ---

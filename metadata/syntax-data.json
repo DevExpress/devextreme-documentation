@@ -866,6 +866,11 @@
     "dataExpressionMixinOptions.valueExpr": {
       "vue": "value-expr"
     },
+    "disabledDate": {
+      "angular": "dxo-disabled-date",
+      "react": "DisabledDate",
+      "vue": "DxDisabledDate"
+    },
     "domComponentOptions.bindingOptions": {
       "vue": "binding-options"
     },
@@ -8640,6 +8645,9 @@
     "dxPopupOptions.dragOutsideBoundary": {
       "vue": "drag-outside-boundary"
     },
+    "dxPopupOptions.enableBodyScroll": {
+      "vue": "enable-body-scroll"
+    },
     "dxPopupOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -10631,6 +10639,9 @@
     "dxTooltipOptions": {
       "vue": "dx-tooltip-options"
     },
+    "dxTooltipOptions.enableBodyScroll": {
+      "vue": "enable-body-scroll"
+    },
     "dxTooltipOptions.onTitleRendered": {
       "vue": "@title-rendered"
     },
@@ -12279,6 +12290,9 @@
       "react": "Event",
       "vue": "DxEvent"
     },
+    "eventInfo": {
+      "vue": "event-info"
+    },
     "eventObject": {
       "angular": "dxo-event-object",
       "react": "EventObject",
@@ -13117,6 +13131,9 @@
     },
     "mapLayerElement": {
       "vue": "map-layer-element"
+    },
+    "nativeEventInfo": {
+      "vue": "native-event-info"
     },
     "numericRule": {
       "angular": "dxo-numeric-rule",

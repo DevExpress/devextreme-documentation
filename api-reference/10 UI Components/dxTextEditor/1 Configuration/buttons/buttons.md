@@ -1,7 +1,6 @@
 ---
 id: dxTextEditor.Options.buttons
-acceptValues: 'clear'
-type: Array<String, dxTextEditorButton>
+type: Array<String, Enums.TextBoxPredefinedButton, dxTextEditorButton>
 default: undefined
 inheritsType: dxTextEditorButton
 ---

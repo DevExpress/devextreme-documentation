@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.toolbox.visibility
-acceptValues: 'auto' | 'visible' | 'collapsed' | 'disabled'
-type: String
+type: Enums.DiagramPanelVisibility
 default: 'auto'
 ---
 ---

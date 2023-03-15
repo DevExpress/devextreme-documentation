@@ -1,7 +1,6 @@
 ---
 id: dxFormSimpleItem.editorType
-acceptValues: 'dxAutocomplete' | 'dxCalendar' | 'dxCheckBox' | 'dxColorBox' | 'dxDateBox' | 'dxDropDownBox' | 'dxHtmlEditor' | 'dxLookup' | 'dxNumberBox' | 'dxRadioGroup' | 'dxRangeSlider' | 'dxSelectBox' | 'dxSlider' | 'dxSwitch' | 'dxTagBox' | 'dxTextArea' | 'dxTextBox'
-type: String
+type: Enums.FormItemComponent
 ---
 ---
 ##### shortDescription

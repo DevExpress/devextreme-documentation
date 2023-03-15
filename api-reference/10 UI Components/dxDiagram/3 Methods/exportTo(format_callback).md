@@ -5,7 +5,7 @@ id: dxDiagram.exportTo(format, callback)
 ##### shortDescription
 Exports the diagram to an image format.
 
-##### param(format): 'svg' | 'png' | 'jpg'
+##### param(format): Enums.DiagramExportFormat
 The image format.
 
 ##### param(callback): function()

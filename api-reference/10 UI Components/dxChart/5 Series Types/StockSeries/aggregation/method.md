@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.StockSeries.aggregation.method
-acceptValues: 'ohlc' | 'custom'
-type: String
+type: Enums.ChartFinancialSeriesAggregationMethod
 default: 'ohlc'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxSankey.Options.label.overlappingBehavior
-acceptValues: 'ellipsis' | 'hide' | 'none'
-type: String
+type: Enums.TextOverflow
 default: 'ellipsis'
 ---
 ---

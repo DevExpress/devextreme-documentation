@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.sorting.mode
-acceptValues: 'single' | 'multiple' | 'none'
-type: String
+type: Enums.SingleMultipleOrNone
 default: 'single'
 ---
 ---

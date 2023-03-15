@@ -22,7 +22,7 @@ The scale cell.
 ##### field(e.scaleIndex): Number
 Specifies the scale's index.
 
-##### field(e.scaleType): 'minutes' | 'hours' | 'sixHours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years' | 'fiveYears'
+##### field(e.scaleType): Enums.GanttRenderScaleType
 The scale type.
 
 ##### field(e.separatorElement): DxElement

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.export.formats
-acceptValues: 'pdf' | 'xlsx'
-type: Array<String>
+type: Array<Enums.DataGridExportFormat, String>
 default: 'DataGrid'
 ---
 ---

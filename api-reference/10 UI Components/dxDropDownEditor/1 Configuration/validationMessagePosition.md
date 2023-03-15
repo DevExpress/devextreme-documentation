@@ -1,7 +1,6 @@
 ---
 id: dxDropDownEditor.Options.validationMessagePosition
-acceptValues: 'bottom' | 'left' | 'right' | 'top' | 'auto'
-type: String
+type: Enums.Position | Enums.Mode
 default: 'auto'
 ---
 ---

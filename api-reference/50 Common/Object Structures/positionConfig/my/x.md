@@ -1,7 +1,6 @@
 ---
 id: PositionConfig.my.x
-acceptValues: 'center' | 'left' | 'right'
-type: String
+type: Enums.HorizontalAlignment
 ---
 ---
 ##### shortDescription

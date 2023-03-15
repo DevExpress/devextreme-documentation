@@ -26,10 +26,10 @@ The UI component instance's name.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.operation): 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText' | 'resizeShape' | 'moveShape'
+##### field(e.operation): Enums.DiagramModelOperation
 The processed operation.
 
-##### field(e.reason): 'checkUIElementAvailability' | 'modelModification'
+##### field(e.reason): Enums.DiagramRequestEditOperationReason
 Identifies the reason why the event is raised.
 
 ---

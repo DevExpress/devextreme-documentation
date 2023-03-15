@@ -1,7 +1,6 @@
 ---
 id: dxMap.Options.type
-acceptValues: 'hybrid' | 'roadmap' | 'satellite'
-type: String
+type: Enums.MapType
 default: 'roadmap'
 ---
 ---

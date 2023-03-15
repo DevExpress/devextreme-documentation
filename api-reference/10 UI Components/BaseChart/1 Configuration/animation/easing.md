@@ -1,7 +1,6 @@
 ---
 id: BaseChart.Options.animation.easing
-acceptValues: 'easeOutCubic' | 'linear'
-type: String
+type: Enums.AnimationEaseMode
 default: 'easeOutCubic'
 ---
 ---

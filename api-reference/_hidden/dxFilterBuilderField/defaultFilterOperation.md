@@ -1,7 +1,6 @@
 ---
 id: dxFilterBuilderField.defaultFilterOperation
-acceptValues: '=' | '<>' | '<' | '<=' | '>' | '>=' | 'contains' | 'endswith' | 'isblank' | 'isnotblank' | 'notcontains' | 'startswith' | 'between'
-type: String
+type: Enums.FilterBuilderOperation | String
 hidden: 
 ---
 ---

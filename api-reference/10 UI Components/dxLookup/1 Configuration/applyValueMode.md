@@ -1,6 +1,5 @@
 ---
 id: dxLookup.Options.applyValueMode
-acceptValues: 'instantly' | 'useButtons'
-type: String
+type: Enums.ApplyValueMode
 hidden: false
 ---

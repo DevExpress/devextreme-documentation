@@ -1,7 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.label.position
-acceptValues: 'columns' | 'inside' | 'outside'
-type: String
+type: Enums.LabelPosition
 default: 'outside'
 ---
 ---

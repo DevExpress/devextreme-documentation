@@ -121,7 +121,10 @@ You can handle these events with functions. If the handling functions are not go
 
 ---
 
-Otherwise, or if you need several handlers for a single event, subscribe to the exporting-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+Otherwise, or if you need several handlers for a single event, subscribe to the exporting-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var exportedHandler1 = function (e) {
@@ -135,6 +138,8 @@ Otherwise, or if you need several handlers for a single event, subscribe to the 
     $("#chartContainer").dxChart("instance")
         .on("exported", exportedHandler1)
         .on("exported", exportedHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

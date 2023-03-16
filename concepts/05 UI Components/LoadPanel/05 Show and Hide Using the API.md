@@ -1,9 +1,9 @@
 [note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the LoadPanel. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
-To show or hide the LoadPanel programmatically, call the [show()](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the LoadPanel, respectively.
-
 ---
 ##### jQuery
+
+To show or hide the LoadPanel programmatically, call the [show()](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the LoadPanel, respectively.
 
     <!--JavaScript-->
     $(function() {
@@ -20,52 +20,9 @@ To show or hide the LoadPanel programmatically, call the [show()](/api-reference
         });
     });
 
-##### ASP.NET MVC Controls
-
-    <!--Razor C#-->
-    @(Html.DevExtreme().LoadPanel()
-        .ID("loadPanel")
-        .HideOnOutsideClick(true)
-    )
-
-    @(Html.DevExtreme().Button()
-        .ID("button")
-        .Text("Show the Load Panel")
-        .OnClick(@<text>
-            function () {
-                $("#loadPanel").dxLoadPanel("show");
-                // ==== or ====
-                $("#loadPanel").dxLoadPanel("toggle", true);
-            } 
-        </text>)
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().LoadPanel() _
-        .ID("loadPanel") _
-        .HideOnOutsideClick(True)
-    )
-
-    @(Html.DevExtreme().Button() _
-        .ID("button") _
-        .Text("Show the Load Panel") _
-        .OnClick("button_click")
-    )
-
-    <script>
-        function button_click() {
-            $("#loadPanel").dxLoadPanel("show");
-            // ==== or ====
-            $("#loadPanel").dxLoadPanel("toggle", true);
-        }
-    </script>
-
----
-
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the LoadPanel UI component to a component property. After that, change this property, and the LoadPanel will appear or disappear.
-
----
 ##### Angular
+
+To show or hide the LoadPanel programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the LoadPanel UI component to a component property. After that, change this property, and the LoadPanel will appear or disappear.
 
     <!--HTML-->
     <dx-load-panel
@@ -93,6 +50,8 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     })
 
 ##### Vue
+
+To show or hide the LoadPanel programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the LoadPanel UI component to a component property. After that, change this property, and the LoadPanel will appear or disappear.
 
     <template>
         <div>
@@ -132,6 +91,8 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </script>
 
 ##### React
+
+To show or hide the LoadPanel programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the LoadPanel UI component to a component property. After that, change this property, and the LoadPanel will appear or disappear.
 
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
@@ -338,7 +299,10 @@ To execute certain commands before or after the LoadPanel is shown/hidden, handl
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     const shownEventHandler1 = function (e) {
@@ -352,6 +316,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#loadPanelContainer").dxLoadPanel("instance")
         .on("shown", shownEventHandler1)
         .on("shown", shownEventHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

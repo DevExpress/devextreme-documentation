@@ -105,7 +105,10 @@ When a user selects a series, the Chart fires the [seriesSelectionChanged](/api-
 
 ---
 
-If you are going to change the event handler at runtime or if you need to attach several handlers to the **seriesSelectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change the event handler at runtime or if you need to attach several handlers to the **seriesSelectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var seriesSelectionChangedHandler1 = function (e) {
@@ -121,6 +124,8 @@ If you are going to change the event handler at runtime or if you need to attach
     $("#chartContainer").dxChart("instance")
         .on("seriesSelectionChanged", seriesSelectionChangedHandler1)
         .on("seriesSelectionChanged", seriesSelectionChangedHandler2);
+
+---
 
 [note]There are series that consist of points only, for example, [bar](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/') or [financial](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/') series. For these series, subscribe to the [pointSelectionChanged](/api-reference/10%20UI%20Components/BaseChart/4%20Events/pointSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#pointSelectionChanged') event instead of **seriesSelectionChanged** (see the [Point Selection Events](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/20%20Selection/10%20Events.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Selection/#Events') topic).
 

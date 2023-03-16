@@ -108,7 +108,10 @@ The DataGrid UI component raises the [selectionChanged](/api-reference/10%20UI%2
     
 ---
 
-If you are going to change the event handler at runtime, or if you need to attach several handlers to the event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change the event handler at runtime, or if you need to attach several handlers to the event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var selectionChangedEventHandler1 = function(e) {
@@ -122,6 +125,8 @@ If you are going to change the event handler at runtime, or if you need to attac
     $("#dataGridContainer").dxDataGrid("instance")
         .on("selectionChanged", selectionChangedEventHandler1)
         .on("selectionChanged", selectionChangedEventHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

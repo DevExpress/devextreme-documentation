@@ -156,7 +156,7 @@ The Form UI component allows you to specify custom templates for an individual t
 
 ##### React
 
-The Form UI component allows you to specify custom templates for an individual tab and its content. Assign callback functions to the [tabTemplate](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabs/tabTemplate.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#tabTemplate') and [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabs/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#template') properties, respectively.
+The Form UI component allows you to specify custom templates for an individual tab and its content. Assign callback functions to the [tabRender](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#tabRender) and [render](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#render) properties, respectively.
 
     <!-- tab: App.js -->
     import React from 'react';

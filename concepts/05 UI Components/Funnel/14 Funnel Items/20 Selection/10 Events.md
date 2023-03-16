@@ -99,7 +99,10 @@ When a funnel item's selection state is being changed, the Funnel raises the [se
 
 ---
 
-If you are going to change the event handler at runtime, or if you need to attach several handlers to the **selectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change the event handler at runtime, or if you need to attach several handlers to the **selectionChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var selectionChangedHandler1 = function (e) {
@@ -113,6 +116,8 @@ If you are going to change the event handler at runtime, or if you need to attac
     $("#funnelContainer").dxFunnel("instance")
         .on("selectionChanged", selectionChangedHandler1)
         .on("selectionChanged", selectionChangedHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

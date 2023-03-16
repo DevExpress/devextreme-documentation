@@ -113,12 +113,17 @@ You can specify the initially focused row using the [focusedRowKey](/api-referen
 
 ---
 
-Change the same properties using the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName_optionValue') method to focus a row or cell programmatically. You can also use the [navigateToRow(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/navigateToRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#navigateToRowkey') method to focus a row. This approach is more typical of jQuery Controls. With JavaScript frameworks, use property binding.
+---
+##### jQuery
+
+Change the same properties using the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName_optionValue') method to focus a row or cell programmatically. You can also use the [navigateToRow(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/navigateToRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#navigateToRowkey') method to focus a row.
 
     <!--JavaScript-->
     var dataGrid = $("#dataGridContainer").dxDataGrid("instance");
     dataGrid.option("focusedRowKey", 100);
     // or
     dataGrid.navigateToRow(100);
+
+---
 
 The DataGrid raises events before and after a row or cell is focused. Use the [onFocusedRowChanging](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onFocusedRowChanging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedRowChanging')/[onFocusedRowChanged](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onFocusedRowChanged.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedRowChanged') and [onFocusedCellChanging](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onFocusedCellChanging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedCellChanging')/[onFocusedCellChanged](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onFocusedCellChanged.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedCellChanged') functions to handle these events. You can perform custom actions in these functions, for instance, customize keyboard navigation, as shown in the [onFocusedCellChanging](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onFocusedRowChanging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedRowChanging') example.

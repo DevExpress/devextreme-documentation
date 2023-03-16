@@ -30,3 +30,5 @@ To use one of them, pass its name to the [DevExpress.setTemplateEngine(name)](/a
 }
 
 You can also use other template engines, but you need to implement functions that compile and render templates in this case. See [DevExpress.setTemplateEngine(options)](/api-reference/50%20Common/utils/setTemplateEngine(options).md '/Documentation/ApiReference/Common/Utils/#setTemplateEngineoptions') for details.
+
+[tags] jquery

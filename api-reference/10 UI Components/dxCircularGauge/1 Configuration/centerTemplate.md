@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for content in the component's center.
 
 ---
-<!-- Description goes here -->
+#include gauges-centertemplate-code

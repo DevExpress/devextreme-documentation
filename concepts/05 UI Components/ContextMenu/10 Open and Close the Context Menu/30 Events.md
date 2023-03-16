@@ -1,7 +1,6 @@
 To execute certain commands before or after the ContextMenu was opened/closed, handle the [showing](/api-reference/10%20UI%20Components/dxContextMenu/4%20Events/showing.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Events/#showing'), [shown](/api-reference/10%20UI%20Components/dxContextMenu/4%20Events/shown.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Events/#shown'), [hiding](/api-reference/10%20UI%20Components/dxContextMenu/4%20Events/hiding.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Events/#hiding') or [hidden](/api-reference/10%20UI%20Components/dxContextMenu/4%20Events/hidden.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Events/#hidden') event. If the event handling function is not going to be changed during the lifetime of the UI component, assign it to the corresponding **on*EventName*** property when you configure the UI component.
 
 ---
-
 ##### jQuery
 
     <!--JavaScript-->$(function() {
@@ -134,7 +133,10 @@ To execute certain commands before or after the ContextMenu was opened/closed, h
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var hiddenEventHandler1 = function(e) {
@@ -148,6 +150,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#contextMenuContainer").dxContextMenu("instance")
         .on("hidden", hiddenEventHandler1)
         .on("hidden", hiddenEventHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

@@ -106,7 +106,10 @@ To process a new form item value, you need to handle the [fieldDataChanged](/api
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to the **fieldDataChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to the **fieldDataChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var fieldDataChangedHandler1 = function (e) {
@@ -124,6 +127,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#formContainer").dxForm("instance")
         .on("fieldDataChanged", fieldDataChangedHandler1)
         .on("fieldDataChanged", fieldDataChangedHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

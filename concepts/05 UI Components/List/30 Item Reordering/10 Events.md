@@ -103,7 +103,10 @@ To execute certain commands when an item changes its position, handle the [itemR
 
 ---
 
-If you are going to change the **itemReordered** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change the **itemReordered** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. 
 
     <!--JavaScript-->
     const itemReorderedEventHandler1 = function(e) {
@@ -117,6 +120,8 @@ If you are going to change the **itemReordered** event handler at runtime, or if
     $("#listContainer").dxList("instance")
         .on("itemReordered", itemReorderedEventHandler1)
         .on("itemReordered", itemReorderedEventHandler2);
+
+--- 
 
 #####See Also#####
 #include common-link-handleevents

@@ -379,6 +379,3 @@ This step's implementation depends on the embedded UI component's API and the li
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/MultipleSelection/",
     name: "Multiple Selection"
 }
-
-#####See Also#####
-- **Use the DropDownBox as a column editor in the DataGrid**: <a href="https://github.com/DevExpress-Examples/datagrid-how-to-use-dropdownbox-as-a-column-editor-in-edit-mode-t548916" target="_blank">jQuery</a>

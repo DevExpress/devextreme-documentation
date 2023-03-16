@@ -80,7 +80,7 @@ The following code adds a custom item after the **Back** button.
 
 ##### React
 
-To apply the same customization to all items, use an [itemRender](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate') function. To customize an individual item, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render') property of the item.
+To apply the same customization to all items, use an [itemRender](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate) function. To customize an individual item, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render') property of the item.
 
 The following code adds a custom item after the **Back** button. 
 

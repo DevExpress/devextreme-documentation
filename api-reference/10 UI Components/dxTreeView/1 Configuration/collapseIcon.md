@@ -16,4 +16,4 @@ The following code snippet shows how to specify custom collapse and expand icons
 ---
 
 #####See Also#####
-- [expandIcon](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/expandIcon.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandIcon')
+- [expandIcon](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandIcon)

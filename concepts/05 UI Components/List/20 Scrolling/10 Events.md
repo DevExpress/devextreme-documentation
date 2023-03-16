@@ -94,7 +94,10 @@ To execute certain commands when the List is scrolled, handle the [scroll](/api-
 
 ---
 
-If you are going to change the **scroll** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change the **scroll** event handler at runtime, or if you need to attach several handlers to this event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     const scrollEventHandler1 = function(e) {
@@ -108,6 +111,8 @@ If you are going to change the **scroll** event handler at runtime, or if you ne
     $("#listContainer").dxList("instance")
         .on("scroll", scrollEventHandler1)
         .on("scroll", scrollEventHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

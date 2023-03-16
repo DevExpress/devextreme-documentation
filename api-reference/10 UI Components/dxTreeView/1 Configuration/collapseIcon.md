@@ -1,6 +1,6 @@
 ---
 id: dxTreeView.Options.collapseIcon
-type: String | null
+type: String
 default: null
 ---
 ---

@@ -1,11 +1,9 @@
-To apply the same customization to all items, use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate'). To customize an individual item, specify the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template') property of the item.
-
-Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template') property. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render') property.
-
-The following code adds a custom item after the **Back** button. 
-
 ---
 ##### jQuery
+
+To apply the same customization to all items, use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate'). To customize an individual item, specify the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template') property of the item.
+
+The following code adds a custom item after the **Back** button. 
 
     <!-- tab: index.js -->
     $(function() {
@@ -31,6 +29,10 @@ The following code adds a custom item after the **Back** button.
 
 ##### Angular
 
+To apply the same customization to all items, use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate'). To customize an individual item, use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
+
+The following code adds a custom item after the **Back** button.
+
     <!-- tab: app.component.html -->
     <dx-toolbar>
         <!-- ... -->
@@ -49,6 +51,10 @@ The following code adds a custom item after the **Back** button.
     }
 
 ##### Vue
+
+To apply the same customization to all items, use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate'). To customize an individual item, use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
+
+The following code adds a custom item after the **Back** button.
 
     <!-- tab: App.vue -->
     <template>
@@ -73,6 +79,10 @@ The following code adds a custom item after the **Back** button.
     </style>
 
 ##### React
+
+To apply the same customization to all items, use an [itemRender](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#itemTemplate) function. To customize an individual item, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render') property of the item.
+
+The following code adds a custom item after the **Back** button. 
 
     <!-- tab: App.js -->
     // ...

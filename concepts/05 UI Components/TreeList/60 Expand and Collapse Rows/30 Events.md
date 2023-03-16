@@ -128,7 +128,11 @@ To execute certain commands before or after a row was expanded or collapsed, han
     
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var rowCollapsedEventHandler1 = function (e) {
@@ -142,6 +146,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#treeListContainer").dxTreeList("instance")
         .on("rowCollapsed", rowCollapsedEventHandler1)
         .on("rowCollapsed", rowCollapsedEventHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

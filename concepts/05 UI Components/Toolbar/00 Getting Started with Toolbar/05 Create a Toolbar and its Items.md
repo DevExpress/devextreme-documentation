@@ -15,7 +15,21 @@ The following list shows all UI components that you can use in the Toolbar:
 - [dxButtonGroup](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup/') 
 - [dxDropDownButton](/api-reference/10%20UI%20Components/dxDropDownButton '/Documentation/ApiReference/UI_Components/dxDropDownButton/')
 
-In Angular, Vue, and React, import modules for all the components except the [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').
+---
+
+##### Angular 
+
+Import modules for all the components except the [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').
+
+##### Vue
+
+Import modules for all the components except the [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').
+
+##### React
+
+Import modules for all the components except the [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/').
+
+---
 
 The following code creates a Toolbar and adds a [dxTextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') and [dxButton](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/'). The button responds to user clicks. The Toolbar displays these items in the center.
 

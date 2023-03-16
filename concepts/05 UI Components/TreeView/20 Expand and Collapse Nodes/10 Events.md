@@ -112,7 +112,11 @@ To execute certain commands when a node is expanded or collapsed, handle the [it
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var itemCollapsedEventHandler1 = function (e) {
@@ -126,6 +130,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#treeViewContainer").dxTreeView("instance")
         .on("itemCollapsed", itemCollapsedEventHandler1)
         .on("itemCollapsed", itemCollapsedEventHandler2);
+
+---
 
 #####See Also#####
 - [TreeView - Access a Node](/concepts/05%20UI%20Components/TreeView/10%20Access%20a%20Node '/Documentation/Guide/UI_Components/TreeView/Access_a_Node')

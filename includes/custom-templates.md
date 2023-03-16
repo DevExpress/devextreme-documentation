@@ -1,6 +1,8 @@
-Templates are passed as properties that end with **...Template** (in jQuery, Angular, and Vue) or **...Render**/**...Component** (in React).
 
-Each template has access to the following parameters:
+---
+##### jQuery
+
+Templates are passed as properties that end with **...Template**. Each template has access to the following parameters:
 
 - `data`     
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
@@ -12,9 +14,6 @@ A zero-based index of the item in the collection. Available only in collection U
 A jQuery element that represents the UI component element being customized. Available only if you use jQuery.
 
 The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
-
----
-##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -36,6 +35,16 @@ The following code shows how to declare a template and use these parameters. Thi
     });
 
 ##### Angular
+
+Templates are passed as properties that end with **...Template**. Each template has access to the following parameters:
+
+- `data`     
+A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
+
+- `index`       
+A zero-based index of the item in the collection. Available only in collection UI component templates.
+
+The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
     <!-- tab: app.component.html -->
     <dx-list
@@ -83,6 +92,16 @@ The following code shows how to declare a template and use these parameters. Thi
 
 ##### Vue
 
+Templates are passed as properties that end with **...Template**. Each template has access to the following parameters:
+
+- `data`     
+A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
+
+- `index`       
+A zero-based index of the item in the collection. Available only in collection UI component templates.
+
+The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
+
     <!-- tab: App.vue -->
     <template>
         <DxList
@@ -115,6 +134,16 @@ The following code shows how to declare a template and use these parameters. Thi
     </script>
 
 ##### React
+
+Templates are passed as properties that end with **...Render** or **...Component**. Each template has access to the following parameters:
+
+- `data`     
+A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
+
+- `index`       
+A zero-based index of the item in the collection. Available only in collection UI component templates.
+
+The following code shows how to declare a template and use these parameters. This code declares an [itemRender](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -293,5 +322,20 @@ Declare **named** templates within the component's markup but outside the templa
 
 ---
 
+---
+##### Angular
+
 #####See Also#####
-- **Declare Content in the Markup**: [Angular](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Declare_Content_in_the_Markup) | [Vue](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Declare_Content_in_the_Markup) | [React](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Declare_Content_in_the_Markup)
+- [Declare Content in the Markup](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Declare_Content_in_the_Markup)
+
+##### Vue
+
+#####See Also#####
+- [Declare Content in the Markup](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Declare_Content_in_the_Markup)
+
+##### React
+
+#####See Also#####
+- [Declare Content in the Markup](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Declare_Content_in_the_Markup)
+
+---

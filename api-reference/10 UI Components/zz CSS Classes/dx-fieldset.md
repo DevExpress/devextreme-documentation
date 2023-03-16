@@ -18,7 +18,7 @@ Each fieldset item is displayed within a separate field element, which has the [
         <div class="dx-field-value-static">John Smith</div>
     </div>
 
-The field label and value elements can hold plain text, UI components, knockout bindings or custom markup.
+The field label and value elements can hold plain text, UI components, or custom markup.
 
 DevExtreme UI components include <a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">WAI-ARIA</a> markup to support screen readers. If you use a UI component within a field value element, associate the UI component with the field label to allow a screen reader to properly read the field. For this purpose, specify a unique ID for the field label element and assign this ID to the **aria-labeledby** attribute of the associated UI component as demonstrated below.
 
@@ -27,26 +27,6 @@ DevExtreme UI components include <a href="http://www.w3.org/WAI/intro/aria.php" 
         <div class="dx-field-label" id="fullnameLabel">Full Name</div>
         <div class="dx-field-value">
             <div aria-labeledby="fullnameLabel" id="fullNameTextBox"></div>
-        </div>
-    </div>
-
-#####AngularJS#####
-
-    <!--HTML-->
-    <div class="dx-field">
-        <div class="dx-field-label" id="fullnameLabel">Full Name</div>
-        <div class="dx-field-value">
-            <div aria-labeledby="fullnameLabel" dx-text-box="{ value: fullName }"></div>
-        </div>
-    </div>
-
-#####Knockout#####
-
-    <!--HTML-->
-    <div class="dx-field">
-        <div class="dx-field-label" id="fullnameLabel">Full Name</div>
-        <div class="dx-field-value">
-            <div aria-labeledby="fullnameLabel" data-bind="dxTextBox: { value: fullName }"></div>
         </div>
     </div>
 

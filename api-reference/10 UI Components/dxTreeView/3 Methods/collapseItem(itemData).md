@@ -13,39 +13,39 @@ A Promise that is resolved after the item is collapsed and rejected if the item 
 The key.
 
 ##### field(itemData.disabled): Boolean
-<!-- Description goes here -->
+Specifies whether the UI component item responds to user interaction.
 
 ##### field(itemData.expanded): Boolean
-<!-- Description goes here -->
+Specifies whether or not the tree view item is displayed expanded.
 
 ##### field(itemData.hasItems): Boolean
-<!-- Description goes here -->
+Specifies whether or not the tree view item has children.
 
 ##### field(itemData.html): String
-<!-- Description goes here -->
+Specifies the HTML markup to be inserted into the item element.
 
 ##### field(itemData.icon): String
-<!-- Description goes here -->
+Specifies the tree view item's icon.
 
 ##### field(itemData.id): Number | String
-<!-- Description goes here -->
+Holds the unique key of an item.
 
 ##### field(itemData.items): Array<dxTreeViewItem>
-<!-- Description goes here -->
+Specifies nested tree view items.
 
 ##### field(itemData.parentId): Number | String
-<!-- Description goes here -->
+Holds the key of the parent item.
 
 ##### field(itemData.selected): Boolean
-<!-- Description goes here -->
+Specifies whether the TreeView item should be displayed as selected.
 
 ##### field(itemData.template): template | function()
-<!-- Description goes here -->
+Specifies a template that should be used to render this item only.
 
 ##### field(itemData.text): String
-<!-- Description goes here -->
+Specifies text displayed for the UI component item.
 
 ##### field(itemData.visible): Boolean
-<!-- Description goes here -->
+Specifies whether or not a UI component item must be displayed.
 
 ---

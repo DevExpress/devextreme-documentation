@@ -13,39 +13,40 @@ A Promise that is resolved after the content is scrolled to the target item and 
 The item's data object.
 
 ##### field(itemData.disabled): Boolean
-<!-- Description goes here -->
+<!-- %field(itemData.disabled)% -->
 
 ##### field(itemData.expanded): Boolean
-<!-- Description goes here -->
+<!-- %field(itemData.expanded)% -->
 
 ##### field(itemData.hasItems): Boolean
-<!-- Description goes here -->
+<!-- %field(itemData.hasItems)% -->
 
 ##### field(itemData.html): String
-<!-- Description goes here -->
+<!-- %field(itemData.html)% -->
 
 ##### field(itemData.icon): String
-<!-- Description goes here -->
+<!-- %field(itemData.icon)% -->
 
 ##### field(itemData.id): Number | String
-<!-- Description goes here -->
+<!-- %field(itemData.id)% -->
 
 ##### field(itemData.items): Array<dxTreeViewItem>
-<!-- Description goes here -->
+<!-- %field(itemData.items)% -->
 
 ##### field(itemData.parentId): Number | String
-<!-- Description goes here -->
+<!-- %field(itemData.parentId)% -->
 
 ##### field(itemData.selected): Boolean
-<!-- Description goes here -->
+<!-- %field(itemData.selected)% -->
 
 ##### field(itemData.template): template | function()
-<!-- Description goes here -->
+<!-- %field(itemData.template)% -->
 
 ##### field(itemData.text): String
-<!-- Description goes here -->
+<!-- %field(itemData.text)% -->
 
 ##### field(itemData.visible): Boolean
-<!-- Description goes here -->
+<!-- %field(itemData.visible)% -->
 
 ---
+<!-- import * from 'api-reference\10 UI Components\dxTreeView\3 Methods\collapseItem(itemData).md' -->

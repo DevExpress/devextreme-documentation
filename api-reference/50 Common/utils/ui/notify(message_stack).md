@@ -13,6 +13,12 @@ The message content.
 ##### param(stack): Object
 An object with the following structure: *{position, direction}*.
 
+##### field(stack.direction): String
+<!-- Description goes here -->
+
+##### field(stack.position): String
+<!-- Description goes here -->
+
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos//WidgetsGallery/Demo/Toast/Stack/"

@@ -2,7 +2,7 @@
 id: dxTreeViewNode
 type: Object
 module: ui/tree_view
-export: dxTreeViewNode
+export: Node
 ---
 ---
 ##### shortDescription

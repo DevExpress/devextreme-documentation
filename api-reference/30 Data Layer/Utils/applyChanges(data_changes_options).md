@@ -16,7 +16,7 @@ A source data array to be updated.
 ##### param(changes): Array<any>
 An array of changes to be applied.
 
-##### param(options?): Object
+##### param(options?): any | Object
 Configures how to apply changes.
 
 ##### field(options?.immutable): Boolean

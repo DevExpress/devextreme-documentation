@@ -2,6 +2,8 @@
 id: BarGaugeLegendItem
 type: Object
 inherits: BaseLegendItem
+module: viz/bar_gauge
+export: LegendItem
 ---
 ---
 ##### shortDescription

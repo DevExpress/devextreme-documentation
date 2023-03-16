@@ -7,7 +7,7 @@ type: eventType
 ##### shortDescription
 Raised when a pointer is moved to either the hit test area of an element or one of its descendants.
 
-##### param(event): Object
+##### param(event): event | Object
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
 ##### field(event.pointerType): String

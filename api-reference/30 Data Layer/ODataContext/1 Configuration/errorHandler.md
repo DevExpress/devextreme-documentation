@@ -6,7 +6,7 @@ type: function(e)
 ##### shortDescription
 Specifies a function that is executed when the **ODataContext** throws an error.
 
-##### param(e): Object
+##### param(e): Error | Object
 A JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object extended with the following fields:
 
 ##### field(e.errorDetails): Object

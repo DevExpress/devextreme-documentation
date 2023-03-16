@@ -105,7 +105,10 @@ When a user pauses on a series, the Chart fires the [seriesHoverChanged](/api-re
 
 ---
 
-If you are going to change the event handler at runtime or if you need to attach several handlers to the **seriesHoverChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change the event handler at runtime or if you need to attach several handlers to the **seriesHoverChanged** event, subscribe to this event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var seriesHoverChangedHandler1 = function (e) {
@@ -121,6 +124,8 @@ If you are going to change the event handler at runtime or if you need to attach
     $("#chartContainer").dxChart("instance")
         .on("seriesHoverChanged", seriesHoverChangedHandler1)
         .on("seriesHoverChanged", seriesHoverChangedHandler2);
+
+---
 
 [note]There are series that consist of points only, for example, [bar](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/') or [financial](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/') series. For these series, subscribe to the [pointHoverChanged](/api-reference/10%20UI%20Components/BaseChart/4%20Events/pointHoverChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#pointHoverChanged') event instead of **seriesHoverChanged** (see the [Point Hover Events](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/10%20Hover/10%20Events.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Hover/#Events') topic).
 

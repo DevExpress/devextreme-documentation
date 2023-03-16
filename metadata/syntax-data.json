@@ -3740,7 +3740,9 @@
       "vue": "DxShape"
     },
     "dxDiagramConnector": {
-      "vue": "dx-diagram-connector"
+      "angular": "dxo-diagram-connector",
+      "react": "DxDiagramConnector",
+      "vue": "DxDiagramConnector"
     },
     "dxDiagramConnector.fromId": {
       "vue": "from-id"
@@ -3790,7 +3792,9 @@
       "vue": "DxShape"
     },
     "dxDiagramItem": {
-      "vue": "dx-diagram-item"
+      "angular": "dxo-diagram-item",
+      "react": "DxDiagramItem",
+      "vue": "DxDiagramItem"
     },
     "dxDiagramItem.dataItem": {
       "vue": "data-item"
@@ -4342,7 +4346,9 @@
       "vue": "DxShape"
     },
     "dxDiagramShape": {
-      "vue": "dx-diagram-shape"
+      "angular": "dxo-diagram-shape",
+      "react": "DxDiagramShape",
+      "vue": "DxDiagramShape"
     },
     "dxDiagramShape.attachedConnectorIds": {
       "vue": "attached-connector-ids"

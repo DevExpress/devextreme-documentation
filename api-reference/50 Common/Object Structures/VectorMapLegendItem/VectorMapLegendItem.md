@@ -2,6 +2,8 @@
 id: VectorMapLegendItem
 type: Object
 inherits: BaseLegendItem
+module: viz/vector_map
+export: LegendItem
 ---
 ---
 ##### shortDescription

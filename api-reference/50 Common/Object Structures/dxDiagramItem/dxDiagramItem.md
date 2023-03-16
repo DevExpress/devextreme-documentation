@@ -1,5 +1,8 @@
 ---
 id: dxDiagramItem
+module: ui/diagram
+export: Item
+type: dxDiagramItem
 ---
 ---
 ##### shortDescription

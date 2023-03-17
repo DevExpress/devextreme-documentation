@@ -162,7 +162,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     
 ---
 
-... or use a [template](/api-reference/_hidden/dxDataGridColumnButton/template.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#template') to render the button with custom appearance. In this case, the **onClick** function is not executed, and you should handle the `click` event of the element placed inside the template.
+... or use a [template](/api-reference/_hidden/dxDataGridColumnButton/template.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#template') to render the button with custom appearance.
 
 ---
 ##### jQuery  

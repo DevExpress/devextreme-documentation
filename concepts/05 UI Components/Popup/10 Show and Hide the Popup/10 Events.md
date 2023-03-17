@@ -133,7 +133,11 @@ To execute certain commands before or after the Popup was shown/hidden, handle t
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     const hiddenEventHandler1 = function (e) {
@@ -147,6 +151,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#popupContainer").dxPopup("instance")
         .on("hidden", hiddenEventHandler1)
         .on("hidden", hiddenEventHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

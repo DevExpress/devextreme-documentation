@@ -14,10 +14,10 @@ The message content.
 An object with the following structure: *{position, direction}*.
 
 ##### field(stack.direction): String
-<!-- Description goes here -->
+The toast stacking direction.
 
 ##### field(stack.position): String
-<!-- Description goes here -->
+The initial toast position.
 
 ---
 #include common-demobutton with {

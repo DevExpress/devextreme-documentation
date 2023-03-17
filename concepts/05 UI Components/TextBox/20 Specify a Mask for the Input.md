@@ -179,11 +179,20 @@ You can also define custom masking elements using the [maskRules](/api-reference
 
 ---
 
-The masked value goes to the read-only [text](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/text.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#text') property, while its unmasked equivalent goes to the [value](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#value') property. If you use jQuery, you can get the value of either of these properties using the [option(optionName)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#optionoptionName') method.
+The masked value goes to the read-only [text](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/text.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#text') property, while its unmasked equivalent goes to the [value](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#value') property. 
 
-    <!--JavaScript-->const maskedValue = $("#textBoxContainer").dxTextBox("option", "text");
+---
+
+##### jQuery
+
+You can get the value of either of these properties using the [option(optionName)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName).md '/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#optionoptionName') method.
+
+    <!--JavaScript-->
+    const maskedValue = $("#textBoxContainer").dxTextBox("option", "text");
     const unmaskedValue = $("#textBoxContainer").dxTextBox("option", "value");
-    
+
+---
+
 By default, the UI component uses underscores to designate blanks in the masked value. You can specify another symbol using the [maskChar](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/maskChar.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maskChar') property.
 
 ---

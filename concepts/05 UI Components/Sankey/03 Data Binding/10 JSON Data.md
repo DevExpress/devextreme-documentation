@@ -2,7 +2,7 @@ To bind the Sankey to data in a JSON format, assign the data's URL to the [dataS
 
 #include data-binding-examples-json
 
-Note that you can also use a <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>-supported JSONP callback parameter.
+Note that you can also use a JSONP callback parameter.
 
 #include data-binding-examples-jsonp
 

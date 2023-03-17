@@ -13,6 +13,12 @@ The Toast [configuration](/api-reference/10%20UI%20Components/dxToast/1%20Config
 ##### param(stack): Object
 An object with the following structure: *{position, direction}*.
 
+##### field(stack.direction): String
+The toast stacking direction.
+
+##### field(stack.position): String
+The initial toast position.
+
 ---
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos//WidgetsGallery/Demo/Toast/Stack/"

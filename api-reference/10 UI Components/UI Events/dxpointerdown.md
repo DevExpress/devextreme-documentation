@@ -7,7 +7,7 @@ type: eventType
 ##### shortDescription
 Raised when the pointer takes on the active buttons state.
 
-##### param(event): Object
+##### param(event): event | Object
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
 ##### field(event.pointerType): String

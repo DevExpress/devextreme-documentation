@@ -2,6 +2,8 @@
 id: PivotGridDataSource.Options.fields
 type: Array<Object>
 default: undefined
+module: ui/pivot_grid/data_source
+export: Field
 ---
 ---
 ##### shortDescription

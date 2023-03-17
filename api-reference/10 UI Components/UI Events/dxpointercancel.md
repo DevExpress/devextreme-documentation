@@ -7,7 +7,7 @@ type: eventType
 ##### shortDescription
 Raised when the browser decides that the pointer is unlikely to produce any more events.
 
-##### param(event): Object
+##### param(event): event | Object
 #include common-ref-eventparam The following field is added to existing fields of this argument object.
 
 ##### field(event.pointerType): String

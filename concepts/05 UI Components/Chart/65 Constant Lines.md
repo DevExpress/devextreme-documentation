@@ -298,7 +298,7 @@ Note that individual settings override axis-specific settings which, in turn, ov
 For information about all properties of the constant lines, visit the [constantLines](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/constantLines '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/constantLines/') section of the API reference.
 
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ServerSideDataProcessing/Knockout/Light/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demos/WidgetsGallery/Demo/Charts/ParetoChart/"
 }
 
 #####See Also#####

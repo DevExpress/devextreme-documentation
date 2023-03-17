@@ -17,6 +17,9 @@ You can use the <a href="http://www.w3schools.com/js/js_array_methods.asp" targe
     // Reassigns the "sankeyData" array to the Sankey 
     $("#sankeyContainer").dxSankey("option", "dataSource", sankeyData);
 
+#####See Also#####
+- [Get and Set Properties - jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/05%20Get%20and%20Set%20Properties/00%20Get%20and%20Set%20Properties.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_and_Set_Properties')
+
 ##### Angular
 
 Enclose the **dataSource** property in square brackets to bind it to an array using one-way binding. Now, whenever an item is added or removed from the array, the Sankey is updated accordingly.
@@ -56,6 +59,3 @@ Bind the **dataSource** property to an array using one-way binding. Now, wheneve
 Bind the **dataSource** property to an array using one-way binding. Now, whenever an item is added or removed from the array, the Sankey is updated accordingly.
 
 ---
-
-#####See Also#####
-- [Get and Set Properties - jQuery](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/05%20Get%20and%20Set%20Properties/00%20Get%20and%20Set%20Properties.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_and_Set_Properties')

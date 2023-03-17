@@ -1,8 +1,34 @@
-When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. For Angular, AngularJS and Knockout apps, DevExtreme provides the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') markup component. The following code shows how to use dxTemplate to define templates for tooltips.
-
 ---
 
+##### jQuery
+
+When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. Combine HTML markup for tooltips manually with <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTooltipTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate') callback function as shown in the following code:
+
+    <!--JavaScript-->
+    var schedulerData = [{
+        text: "His Girl Friday",
+        year: 1940,
+        img: "images/movies/HisGirlFriday.jpg",
+        startDate: new Date("2016-04-24T09:10:00.000Z"),
+        endDate: new Date("2016-04-24T11:20:00.000Z")
+    }, 
+    // ...
+    ];
+
+    $(function () {
+        $("#schedulerContainer").dxScheduler({
+            dataSource: schedulerData,
+            currentDate: new Date(2016, 4, 24),
+            appointmentTooltipTemplate: function (model, index, element) {
+                element.append("<i>" + model.appointmentData.text + "(" + model.appointmentData.year + ")</i>");
+                element.append("<p><img style='height: 80px' src='" + model.appointmentData.img + "' /></p>");
+            }
+        });
+    });
+
 ##### Angular
+
+When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. The following code shows how to use [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') to define templates for tooltips:
 
     <!--HTML-->
     <dx-scheduler 
@@ -38,68 +64,9 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
         // ...
     })
 
-#####**AngularJS**
-
-    <!--HTML--><div ng-controller="DemoController">
-        <div dx-scheduler="{
-            dataSource: schedulerData,
-            appointmentTooltipTemplate: 'tooltip',
-            currentDate: currentDate,
-        }" dx-item-alias="model">
-            <div data-options="dxTemplate: { name: 'tooltip' }">
-                <div style="height: 100px">
-                    <i>{{model.appointmentData.text}} ({{model.appointmentData.year}})</i>
-                    <p><img src="{{model.appointmentData.img}}" style="height: 80px"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--JavaScript-->angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.schedulerData = [{
-                text: "His Girl Friday",
-                year: 1940,
-                img: "images/movies/HisGirlFriday.jpg",
-                startDate: new Date("2016-04-24T09:10:00.000Z"),
-                endDate: new Date("2016-04-24T11:20:00.000Z")
-            }, 
-            // ...
-            ];
-            $scope.currentDate = new Date(2016, 4, 24); 
-        });
-
-[note] The `dx-item-alias` directive specifies the variable that is used to access the item object.
-
-#####**Knockout**
-
-    <!--HTML--><div data-bind="dxScheduler: {
-        dataSource: schedulerData,
-        appointmentTooltipTemplate: 'tooltip',
-        currentDate: currentDate
-    }">
-        <div style="height: 100px" data-options="dxTemplate: { name: 'tooltip' }">
-            <i> <span data-bind="text: appointmentData.text"></span>(<span data-bind="text: appointmentData.year"></span>)</i>
-            <p><img style="height: 80px" data-bind="attr: { src: appointmentData.img }" /></p>
-        </div>
-    </div>
-    
-    <!--JavaScript-->var viewModel= {
-        schedulerData: [{
-            text: "His Girl Friday",
-            year: 1940,
-            img: "images/movies/HisGirlFriday.jpg",
-            startDate: new Date("2016-04-24T09:10:00.000Z"),
-            endDate: new Date("2016-04-24T11:20:00.000Z")
-        }, 
-        // ...
-        ],
-        currentDate: new Date(2016, 4, 24)
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
+
+When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. The following code shows how to define templates for tooltips:
 
     <!-- tab: App.vue -->
     <template>
@@ -145,6 +112,8 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
 
 ##### React
 
+When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. The following code shows how to define a rendering function for tooltips:
+
     <!-- tab: App.js -->
     import React from 'react';
 
@@ -185,29 +154,6 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
     export default App;
 
 ---
-
-If you use only jQuery, combine HTML markup for tooltips manually with jQuery <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a>. To apply this markup, use the [appointmentTooltipTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->var schedulerData = [{
-        text: "His Girl Friday",
-        year: 1940,
-        img: "images/movies/HisGirlFriday.jpg",
-        startDate: new Date("2016-04-24T09:10:00.000Z"),
-        endDate: new Date("2016-04-24T11:20:00.000Z")
-    }, 
-    // ...
-    ];
-
-    $(function () {
-        $("#schedulerContainer").dxScheduler({
-            dataSource: schedulerData,
-            currentDate: new Date(2016, 4, 24),
-            appointmentTooltipTemplate: function (model, index, element) {
-                element.append("<i>" + model.appointmentData.text + "(" + model.appointmentData.year + ")</i>");
-                element.append("<p><img style='height: 80px' src='" + model.appointmentData.img + "' /></p>");
-            }
-        });
-    });
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"

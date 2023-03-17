@@ -14,10 +14,10 @@ The Toast [configuration](/api-reference/10%20UI%20Components/dxToast/1%20Config
 An object with the following structure: *{position, direction}*.
 
 ##### field(stack.direction): String
-<!-- Description goes here -->
+A direction of toast stacking.
 
 ##### field(stack.position): String
-<!-- Description goes here -->
+An initial toast position.
 
 ---
 #include common-demobutton with {

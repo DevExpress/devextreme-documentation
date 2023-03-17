@@ -1,3 +1,5 @@
+The following code snippet shows how to specify a custom template for content in the {WidgetName}'s center:
+
 ---
 ##### jQuery
 

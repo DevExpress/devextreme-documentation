@@ -7,8 +7,8 @@ The following code snippet shows how to specify a custom template for content in
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             centerTemplate: (gauge, container) => {
-                const rect = createRect(50, 50, '#fff');
-                const text = createText(15, 23, 12, 'start', gauge.value());
+                const rect = createRect(50, 50, 'transparent');
+                const text = createText(10, 200, 12, 'start', gauge.value());
 
                 container.appendChild(rect);
                 container.appendChild(text);
@@ -20,7 +20,7 @@ The following code snippet shows how to specify a custom template for content in
         const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
 
         rect.setAttribute('x', 0);
-        rect.setAttribute('y', -150);
+        rect.setAttribute('y', 0);
         rect.setAttribute('width', width);
         rect.setAttribute('height', height);
         rect.setAttribute('fill', fill);
@@ -47,8 +47,8 @@ The following code snippet shows how to specify a custom template for content in
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         <svg *dxTemplate="let gauge of 'centerTemplate'">
-            <rect x="0" y="-150" width="50" height="50"></rect>
-            <text text-anchor="start" y="23" x="15" fill="#000" font-size="12">
+            <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
+            <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
                {{gauge.value()}}
             </text>
         </svg>
@@ -81,8 +81,8 @@ The following code snippet shows how to specify a custom template for content in
         <Dx{WidgetName} ...
             <template #centerTemplate="data">
                 <svg>
-                    <rect x="0" y="-150" width="50" height="50"></rect>
-                    <text text-anchor="start" y="23" x="15" fill="#000" font-size="12">
+                    <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
+                    <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
                         {{ data.data.value() }}
                     </text>
                 </svg>
@@ -92,7 +92,6 @@ The following code snippet shows how to specify a custom template for content in
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css'; 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}'; 
 
     export default {
@@ -112,8 +111,8 @@ The following code snippet shows how to specify a custom template for content in
         <Dx{WidgetName} ...
             <template #centerTemplate="data">
                 <svg>
-                    <rect x="0" y="-150" width="50" height="50"></rect>
-                    <text text-anchor="start" y="23" x="15" fill="#000" font-size="12">
+                    <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
+                    <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
                         {{ data.data.value() }}
                     </text>
                 </svg>
@@ -125,7 +124,7 @@ The following code snippet shows how to specify a custom template for content in
     <script setup>
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
-    const data = {...};
+    const data = { ... };
     // ...
     </script>
 
@@ -143,8 +142,8 @@ The following code snippet shows how to specify a custom template for content in
         const CenterTemplate = useCallback((gauge) => {
             return (
                 <svg>
-                    <rect x="0" y="-150" width="50" height="50"></rect>
-                    <text text-anchor="start" y="23" x="15" fill="#000" font-size="12">
+                    <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
+                    <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
                         {gauge.value()}
                     </text>
                 </svg>

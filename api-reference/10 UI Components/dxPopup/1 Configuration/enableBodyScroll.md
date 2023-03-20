@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to enable page scrolling when the UI component is visible.
 
 ---
-<!-- Description goes here -->
+Disable this property to hide the body scrollbar and prevent scrolling of the page. Use this property if the UI component is displayed over the page body.

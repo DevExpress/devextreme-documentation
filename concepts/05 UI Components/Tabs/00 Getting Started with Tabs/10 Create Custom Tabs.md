@@ -2,7 +2,7 @@
 
 ##### jQuery
 
-Use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate) to apply customization to all items. To customize an individual item, specify the [template](/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template) property of the item.
+Use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate') to apply customization to all items. To customize an individual item, specify the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') property of the item.
 
 The following code adds a fourth custom tab:
 
@@ -28,7 +28,7 @@ The following code adds a fourth custom tab:
 
 ##### Angular
 
-Use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate) to apply customization to all items. To customize an individual item, specify a [custom template](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
+Use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate') to apply customization to all items. To customize an individual item, specify a [custom template](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
 The following code adds a fourth custom tab:
 
@@ -51,7 +51,7 @@ The following code adds a fourth custom tab:
 
 ##### Vue
 
-Use an [itemTemplate](/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate) to apply customization to all items. To customize an individual item, specify a [custom template](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
+Use an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate') to apply customization to all items. To customize an individual item, specify a [custom template](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
 The following code adds a fourth custom tab:
 
@@ -79,7 +79,7 @@ The following code adds a fourth custom tab:
 
 ##### React
 
-Use an [itemRender](/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemRender) to apply customization to all items. To customize an individual item, specify the [render](/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#render) property of the item.
+Use an [itemRender](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemRender') to apply customization to all items. To customize an individual item, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#render') property of the item.
 
 The following code adds a fourth custom tab:
 

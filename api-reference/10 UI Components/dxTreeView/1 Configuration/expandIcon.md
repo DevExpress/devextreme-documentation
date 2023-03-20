@@ -1,6 +1,6 @@
 ---
 id: dxTreeView.Options.expandIcon
-type: String
+type: String | null
 default: null
 ---
 ---
@@ -16,4 +16,4 @@ The following code snippet shows how to specify custom expand and collapse icons
 ---
 
 #####See Also#####
-- [collapseIcon](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#collapseIcon)
+- [collapseIcon](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/collapseIcon.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#collapseIcon')

@@ -1,9 +1,9 @@
-To create a submenu, use nested [items](/api-reference/_hidden/dxMenuItem/items.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items'). In jQuery, an array within the base item object corresponds to a submenu. In Angular, Vue and React, a submenu is defined as another item in the base item's markup.
-
-Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup') property to separate items in the submenu.
-
 ---
 ##### jQuery
+
+To create a submenu, use nested [items](/api-reference/_hidden/dxMenuItem/items.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items'). An array within the base item object corresponds to a submenu. 
+
+Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup') property to separate items in the submenu.
 
     <!-- tab: index.js -->
     $(function() {
@@ -44,6 +44,10 @@ Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Docum
 
 ##### Angular
 
+To create a submenu, use nested [items](/api-reference/_hidden/dxMenuItem/items.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items'). A submenu is defined as another item in the base item's markup.
+
+Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup') property to separate items in the submenu.
+
     <!-- tab: app.component.html -->
     <div id="container">
         <dx-menu>
@@ -83,6 +87,10 @@ Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Docum
     </div>
 
 ##### Vue
+
+To create a submenu, use nested [items](/api-reference/_hidden/dxMenuItem/items.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items'). A submenu is defined as another item in the base item's markup.
+
+Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup') property to separate items in the submenu.
 
     <!-- tab: App.vue -->
     <template>
@@ -129,6 +137,10 @@ Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Docum
     </script>
 
 ##### React
+
+To create a submenu, use nested [items](/api-reference/_hidden/dxMenuItem/items.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#items'). A submenu is defined as another item in the base item's markup.
+
+Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#beginGroup') property to separate items in the submenu.
 
     <!-- tab: App.js -->
     // ...

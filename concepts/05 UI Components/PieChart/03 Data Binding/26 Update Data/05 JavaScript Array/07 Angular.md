@@ -19,3 +19,5 @@ Enclose the **dataSource** property in square brackets to bind it to an array us
         ],
         // ...
     })
+
+[tags] angular

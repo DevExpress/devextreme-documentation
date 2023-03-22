@@ -100,7 +100,10 @@ When a user selects a series point, the PieChart fires the [pointSelectionChange
 
 ---
 
-Subscribe to the **pointSelectionChanged** event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#oneventName_eventHandler') method if you are going to change the event handler at runtime or if you need to attach several handlers to the event. This approach is more typical of jQuery.
+---
+##### jQuery
+
+Subscribe to the **pointSelectionChanged** event using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxPieChart/Methods/#oneventName_eventHandler') method if you are going to change the event handler at runtime or if you need to attach several handlers to the event.
 
     <!--JavaScript-->
     var pointSelectionChangedHandler1 = function (e) {
@@ -116,6 +119,8 @@ Subscribe to the **pointSelectionChanged** event using the [on(eventName, eventH
     $("#pieChartContainer").dxPieChart("instance")
         .on("pointSelectionChanged", pointSelectionChangedHandler1)
         .on("pointSelectionChanged", pointSelectionChangedHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

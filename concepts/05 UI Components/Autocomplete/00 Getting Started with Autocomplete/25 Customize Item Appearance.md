@@ -5,7 +5,7 @@ To customize the appearance of all Autocomplete suggestions, define an [item tem
 
 If your data is grouped, you may want to customize the group headings. Define a [group template](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#groupTemplate') for that purpose. 
 
-You can also enable [wrapItemText](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/wrapItemText.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#wrapItemText') if item text exceeds the drop-down list width to wrap the text.
+You can also enable [wrapItemText](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/wrapItemText.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#wrapItemText') to wrap the text if the item's text exceeds the width of the drop-down list.
 
     <!-- tab: index.js -->
     $(function() {

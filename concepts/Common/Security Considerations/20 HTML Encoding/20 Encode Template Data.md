@@ -1,4 +1,4 @@
-To encode values in template, use a third-party sanitizing tool as follows:
+To encode values in a template, use a third-party sanitizing tool as follows:
 
     <!-- tab: JavaScript -->
     $(function() {

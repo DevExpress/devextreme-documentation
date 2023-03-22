@@ -1,8 +1,8 @@
     // Generate a Vue 2 application
-    npx -p devextreme-cli devextreme new vue-app app-name
+    npx devextreme-cli new vue-app app-name
 
     // Generate a Vue 3 application
-    npx -p devextreme-cli devextreme new vue-app app-name --version=3
+    npx devextreme-cli new vue-app app-name --version=3
 
     cd app-name
     npm run serve

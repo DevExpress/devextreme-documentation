@@ -2,7 +2,7 @@ Add the [DevExtreme layout template](/concepts/40%20Angular%20Components/30%20Ap
 
     devextreme add angular-template [--layout][--empty][--resolve-conflicts]
     // ===== or =====
-    npx -p devextreme-cli devextreme add angular-template [--layout][--empty][--resolve-conflicts]
+    npx devextreme-cli add angular-template [--layout][--empty][--resolve-conflicts]
 
 Arguments:
 
@@ -28,4 +28,4 @@ Specifies whether to override the existing `app.component` or create a component
         import { AppComponent } from './app1.component';
         // ...
 
-[note] This command is not supported for Vue and React.
+[tags] angular

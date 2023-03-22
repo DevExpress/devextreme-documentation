@@ -2,9 +2,9 @@ If you are starting a project from scratch, use the [DevExtreme React Template](
 
 You can generate this application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):
 
-    npx -p devextreme-cli devextreme new react-app app-name
+    npx devextreme-cli new react-app app-name
     // ===== or generate a template with TypeScript =====
-    npx -p devextreme-cli devextreme new react-app app-name --template=typescript
+    npx devextreme-cli new react-app app-name --template=typescript
     cd app-name
     npm run start
 

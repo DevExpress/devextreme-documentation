@@ -140,7 +140,10 @@ To handle them, assign functions to the [onMarkerAdded](/api-reference/10%20UI%2
 
 ---
 
-If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the **markerAdded** and **markerRemoved** events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+##### jQuery
+
+If you are going to change event handlers at runtime, or if you need to attach several handlers to a single event, subscribe to the **markerAdded** and **markerRemoved** events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     const markerRemovedHandler1 = function (e) {
@@ -156,6 +159,8 @@ If you are going to change event handlers at runtime, or if you need to attach s
     $("#mapContainer").dxMap("instance")
         .on("markerRemoved", markerRemovedHandler1)
         .on("markerRemoved", markerRemovedHandler2);
+
+---
 
 #####See Also#####
 - [Map - Customize Markers](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')

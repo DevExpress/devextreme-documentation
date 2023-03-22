@@ -79,7 +79,7 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
 
 ---
 
-Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
+Note that you can also use a JSONP callback parameter.
 
 ---
 ##### jQuery

@@ -35,7 +35,7 @@ Specifies the DevExtreme layout. Available values:
     * `side-nav-outer-toolbar` (default)
     * `side-nav-inner-toolbar`
 
-    See the following topic to review both layouts: [Layouts](/Documentation/Guide/Vue_Components/Application_Template/#Layouts).
+    See the following topic to review both layouts: [Layouts](/concepts/55%20Vue%20Components/50%20Application%20Template/10%20Layouts.md '/Documentation/Guide/Vue_Components/Application_Template/#Layouts').
 
 * `--empty`     
 Specifies whether to skip sample view generation (default: `false`).
@@ -58,7 +58,7 @@ Specifies the DevExtreme layout. Available values:
     * `side-nav-outer-toolbar` (default)
     * `side-nav-inner-toolbar`
 
-    See the following topic to review both layouts: [Layouts](/Documentation/Guide/React_Components/Application_Template/#Layouts).
+    See the following topic to review both layouts: [Layouts](/concepts/50%20React%20Components/50%20Application%20Template/10%20Layouts.md '/Documentation/Guide/React_Components/Application_Template/#Layouts').
 
 * `--empty`     
 Specifies whether to skip sample view generation (default: `false`). 

@@ -10,43 +10,257 @@ Such services can have their own URL conventions and additional query-string par
 
 For the service type described above, you can apply the following simple custom DataSource implementation.
 
-    <!--JavaScript-->
-    new DevExpress.data.CustomStore({
+---
+##### jQuery
 
-        load: function(loadOptions) {
-            return $.getJSON(SERVICE_URL);
-        },
+    <!-- tab: index.js -->
+    $(function() {
+        var customDataSource = new DevExpress.data.CustomStore({
+            load: (loadOptions) => {
+                return $.getJSON(SERVICE_URL);
+            },
 
-        byKey: function(key) {
-            return $.getJSON(SERVICE_URL + "/" + encodeURIComponent(key));
-        },
+            byKey: (key) => {
+                return $.getJSON(SERVICE_URL + "/" + encodeURIComponent(key));
+            },
 
-        insert: function(values) {
-            return $.post(SERVICE_URL, values);
-        },
+            insert: (values) => {
+                return $.ajax({
+                    url: SERVICE_URL,
+                    method: "POST",
+                    data: values
+                });
+            },
 
-        update: function(key, values) {
-            return $.ajax({
-                url: SERVICE_URL + "/" + encodeURIComponent(key),
-                method: "PUT",
-                data: values
-            });
-        },
+            update: (key, values) => {
+                return $.ajax({
+                    url: SERVICE_URL + "/" + encodeURIComponent(key),
+                    method: "PUT",
+                    data: values
+                });
+            },
 
-        remove: function(key) {
-            return $.ajax({
-                url: SERVICE_URL + "/" + encodeURIComponent(key),
-                method: "DELETE",
+            remove: (key) => {
+                return $.ajax({
+                    url: SERVICE_URL + "/" + encodeURIComponent(key),
+                    method: "DELETE",
+                });
+            },
+        });
+    });
+
+Note that all user functions return the result of the jQuery AJAX call, which is compatible with the **jQuery.Deferred** promise. In fact, you may use any promise-compatible object to connect to any asynchronous data storage; for example - to an HTML5 File API, and not necessarily to HTTP endpoints.
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { HttpClient } from '@angular/common/http';
+    import "rxjs/add/operator/toPromise";
+
+    import CustomStore from 'devextreme/data/custom_store';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        customDataSource: CustomStore;
+        constructor(private http: HttpClient) {
+            this.customDataSource = new CustomStore({
+                load: (loadOptions) => {
+                    return httpClient.get(SERVICE_URL)
+                        .toPromise();
+                },
+
+                byKey: (key) => {
+                    return httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key))
+                        .toPromise();
+                },
+
+                insert: (values) => {
+                    return httpClient.post(SERVICE_URL, values)
+                        .toPromise();
+                },
+
+                update: (key, values) => {
+                    return httpClient.put(SERVICE_URL + encodeURIComponent(key), values)
+                        .toPromise();
+                },
+
+                remove: (key) => {
+                    return httpClient.delete(SERVICE_URL + encodeURIComponent(key))
+                        .toPromise();
+                },
             });
         }
+    }
 
-    });
+##### Vue
+
+    <!-- tab: App.vue (Options API) -->
+    <template>
+        <!-- ... -->
+    </template>
+
+    <script>
+    // ...
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
     
-Note that all user functions return the result of the jQuery AJAX call, which is compatible with the **jQuery.Deferred** promise. In fact, you may use any promise-compatible object to connect to any asynchronous data storage; for example - to an HTML5 File API, and not necessarily to HTTP endpoints.
+    const customDataSource = new CustomStore({
+
+        load: (loadOptions) => {
+            return fetch(SERVICE_URL);
+        },
+
+        byKey: (key) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key));
+        },
+
+        insert: (values) => {
+            return fetch(SERVICE_URL, {
+                method: "POST",
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        },
+
+        update: (key, values) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                method: "PUT",
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        },
+
+        remove: (key) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                method: "DELETE",
+            });
+        },
+    });
+
+    export default {
+        components: {
+            // ...
+        },
+        data() {
+            return {
+                customDataSource
+            }
+        }
+    }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <!-- ... -->
+    </template>
+
+    <script setup>
+    // ...
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
+    
+    const customDataSource = new CustomStore({
+        
+        load: (loadOptions) => {
+            return fetch(SERVICE_URL);
+        },
+
+        byKey: (key) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key));
+        },
+
+        insert: (values) => {
+            return fetch(SERVICE_URL, {
+                method: "POST",
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        },
+
+        update: (key, values) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                method: "PUT",
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        },
+
+        remove: (key) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                method: "DELETE",
+            });
+        },
+    });
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // ...
+    import CustomStore from 'devextreme/data/custom_store';
+    import 'whatwg-fetch';
+
+    export default function App() {
+        const customDataSource = new CustomStore({
+            load: (loadOptions) => {
+                return fetch(SERVICE_URL);
+            },
+
+            byKey: (key) => {
+                return fetch(SERVICE_URL + "/" + encodeURIComponent(key));
+            },
+
+            insert: (values) => {
+                return fetch(SERVICE_URL, {
+                    method: "POST",
+                    body: JSON.stringify(values),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            },
+
+            update: (key, values) => {
+                return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                    method: "PUT",
+                    body: JSON.stringify(values),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            },
+
+            remove: (key) => {
+                return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                    method: "DELETE",
+                });
+            },
+        });
+
+        return (
+            {/* ... */}
+        );
+    }
+
+---
 
 The **load** function accepts a number of **loadOptions** (sorting, filtering, paging, etc.). Send them to a remote storage where you can generate the resulting dataset based on these properties.
 
-Note that certain UI components have peculiarities in the **CustomStore** implemenation. For example, in case of the [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/'), the **load** function should also return the total count of received records.
+Note that certain UI components have peculiarities in the **CustomStore** implementation. For example, in case of the [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/'), the **load** function should also return the total count of received records.
 
 #####See Also#####
 - [DataGrid - Use CustomStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')

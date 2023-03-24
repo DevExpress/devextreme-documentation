@@ -23,6 +23,167 @@ The SVG-based pattern template.
 The pattern width.
 
 ---
-Implement this method to register a pattern id. Then, use the id in the component color.fillId field.
+Implement this method to register a pattern id. Then, use the id in the component color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
+
+The following example demonstrates how to create a stroke pattern. Use a [d](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) SVG attribute to draw a path for a pattern.
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(() => {
+        $('#chart').dxChart({
+            // ...
+            commonSeriesSettings: {
+                color: {
+                    base: "#f5564a",
+                    fillId: DevExpress.common.charts.registerPattern({
+                        width: 5,
+                        height: 5,
+                        template: (container) => {
+                            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                            path.setAttribute('stroke', '#ffffff');
+                            path.setAttribute('stroke-width', 1.5);
+                            path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
+                            container.appendChild(path);
+                        },
+                    })
+                }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-chart ... >
+        <dxo-common-series-settings [color]="seriesColor">
+        </dxo-common-series-settings>
+    </dx-chart>
+
+    <!-- tab: app.component.ts -->
+    import { registerPattern } from "devextreme/common/charts";
+
+    export class AppComponent {
+        seriesColor = {
+            base: "#f5564a",
+            fillId: registerPattern({
+                width: 5,
+                height: 5,
+                template: (container) => {
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttribute('stroke', '#ffffff');
+                    path.setAttribute('stroke-width', 1.5);
+                    path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
+                    container.appendChild(path);
+                },
+            })
+        };
+    }
+
+##### Vue
+
+    <!-- tab: App.vue (Options API) -->
+    <template>
+        <DxChart ... >
+            <DxCommonSeriesSettings 
+                :color="seriesColor"
+            />
+        </DxChart>
+    </template>
+    <script>
+        import DxChart, { DxCommonSeriesSettings } from 'devextreme-vue/chart';
+        import { registerPattern } from 'devextreme/common/charts';
+
+        export default {
+            components: {
+                DxChart,
+                DxCommonSeriesSettings
+            },
+            data() {
+                return {
+                    // ...
+                    seriesColor: {
+                        base: '#000000',
+                        fillId: registerPattern({
+                            width: 5,
+                            height: 5,
+                            template: (container) => {
+                                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                path.setAttribute('stroke', '#ffffff');
+                                path.setAttribute('stroke-width', 1.5);
+                                path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
+                                container.appendChild(path);
+                            },
+                        })
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxChart ... >
+            <DxCommonSeriesSettings 
+                :color="seriesColor"
+            />
+        </DxChart>
+    </template>
+    <script setup>
+        import DxChart, { DxCommonSeriesSettings } from 'devextreme-vue/chart';
+        import { registerPattern } from 'devextreme/common/charts';
+
+        // ...
+
+        const seriesColor = {
+            base: '#000000',
+            fillId: registerPattern({
+                width: 5,
+                height: 5,
+                template: (container) => {
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttribute('stroke', '#ffffff');
+                    path.setAttribute('stroke-width', 1.5);
+                    path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
+                    container.appendChild(path);
+                },
+            })
+        };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Chart, { CommonSeriesSettings } from 'devextreme-react/chart';
+    import { registerPattern } from 'devextreme/common/charts';
+
+    const seriesColor = {
+        base: "#f5564a",
+        fillId: registerPattern({
+            width: 5,
+            height: 5,
+            template: (container) => {
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('stroke', '#ffffff');
+                path.setAttribute('stroke-width', 1.5);
+                path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
+                container.appendChild(path);
+            },
+        })
+    };
+
+    function App() {
+        return (
+            <Chart ... >
+                <CommonSeriesSettings 
+                    color={seriesColor}
+                />
+            </Chart>
+        );
+    }
+
+---
 
 [note] If you specify width and height of a pattern in percents, the exported component may look different. 

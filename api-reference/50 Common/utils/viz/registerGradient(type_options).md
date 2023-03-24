@@ -62,8 +62,9 @@ Implement this method to register a gradient id. Then, use the id in the compone
     import { registerGradient } from "devextreme/common/charts";
 
     export class AppComponent {
-        getGradientId = () =>
-            registerGradient("linear", {
+        seriesColor = {
+            base: "#f5564a",
+            fillId: registerGradient("linear", {
                 colors: [{
                     offset: "20%",
                     color: "#97c95c"
@@ -72,10 +73,6 @@ Implement this method to register a gradient id. Then, use the id in the compone
                     color: "#eb3573"
                 }]
             });
-
-        seriesColor = {
-            base: "#f5564a",
-            fillId: this.getGradientId()
         };
     }
 
@@ -145,6 +142,7 @@ Implement this method to register a gradient id. Then, use the id in the compone
             })
         };
     </script>
+
 ##### React
 
     <!-- tab: App.js -->

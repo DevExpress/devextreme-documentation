@@ -8,18 +8,18 @@ default: undefined
 Specifies a custom template for content in the pie's center.
 
 ---
-You need to render template content as an [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) element. The following code snippet shows how to specify a custom template for content in the {WidgetName}'s center:
+You need to render template content as an [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) element. The following code snippet shows how to specify a custom template for content in the PieChart's center:
 
 ---
 ##### jQuery
 
     $(function(){
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#pieChartContainer").dxPieChart({
             // ...
             type: "doughnut", 
             centerTemplate: (pie, container) => {
                 const circle = createCircle("green", "yellow");
-                const text = createText(20, 80, 12, 'start', "Doughnut {WidgetName}");
+                const text = createText(20, 80, 12, 'start', "Doughnut PieChart");
 
                 container.appendChild(circle);
                 container.appendChild(text);
@@ -57,20 +57,20 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} type="doughnut" centerTemplate="centerTemplate" ... >
+    <dx-pie-chart type="doughnut" centerTemplate="centerTemplate" ... >
         <svg *dxTemplate="let pie of 'centerTemplate'">
             <circle cx="72" cy="80" r="70" stroke="green" stroke-width="4" fill="yellow" />
             <text text-anchor="start" y="80" x="20" fill="#000" font-size="12">
-               Doughnut {WidgetName}
+               Doughnut PieChart
             </text>
         </svg>
-    </dx-{widget-name}>
+    </dx-pie-chart>
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core'; 
     import { AppComponent } from './app.component'; 
-    import { Dx{WidgetName}Module } from 'devextreme-angular'; 
+    import { DxPieChartModule } from 'devextreme-angular'; 
 
     @NgModule({ 
         declarations: [ 
@@ -78,7 +78,7 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
         ], 
         imports: [ 
             BrowserModule, 
-            Dx{WidgetName}Module 
+            DxPieChartModule 
         ], 
         providers: [ ], 
         bootstrap: [AppComponent] 
@@ -90,25 +90,25 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
     <!-- tab: App.vue (Options API) -->
     <template>
-        <Dx{WidgetName} type="doughnut" center-template="centerTemplate" ... >
+        <DxPieChart type="doughnut" center-template="centerTemplate" ... >
             <template #centerTemplate="data">
                 <svg>
                     <circle cx="72" cy="80" r="70" stroke="green" stroke-width="4" fill="yellow" />
                     <text text-anchor="start" y="80" x="20" fill="#000" font-size="12">
-                        Doughnut {WidgetName}
+                        Doughnut PieChart
                     </text>
                 </svg>
             </template>
         >
-        </Dx{WidgetName}>
+        </DxPieChart>
     </template>
 
     <script>
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}'; 
+    import DxPieChart from 'devextreme-vue/pie-chart'; 
 
     export default {
         components: {
-            Dx{WidgetName}
+            DxPieChart
         },
         data() {
             return {
@@ -120,21 +120,21 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
     <!-- tab: App.vue (Composition API) -->
     <template>
-        <Dx{WidgetName} type="doughnut" center-template="centerTemplate" ... >
+        <DxPieChart type="doughnut" center-template="centerTemplate" ... >
             <template #centerTemplate="data">
                 <svg>
                     <circle cx="72" cy="80" r="70" stroke="green" stroke-width="4" fill="yellow" />
                     <text text-anchor="start" y="80" x="20" fill="#000" font-size="12">
-                        Doughnut {WidgetName}
+                        Doughnut PieChart
                     </text>
                 </svg>
             </template>
         >
-        </Dx{WidgetName}>
+        </DxPieChart>
     </template>
 
     <script setup>
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    import DxPieChart from 'devextreme-vue/pie-chart';
 
     const data = { ... };
     // ...
@@ -147,7 +147,7 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
     import 'devextreme/dist/css/dx.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import PieChart from 'devextreme-react/pie-chart';
 
     export default function App() { 
 
@@ -163,9 +163,9 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
         }, []);
 
         return ( 
-            <{WidgetName} type="doughnut" centerRender={CenterTemplate} ... >   
+            <PieChart type="doughnut" centerRender={CenterTemplate} ... >   
                 // ...
-            </{WidgetName}>       
+            </PieChart>       
         ); 
     } 
 

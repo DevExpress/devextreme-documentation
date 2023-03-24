@@ -14,3 +14,6 @@ Configures the toolbar.
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
 }
+
+#####See Also#####
+- [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing)

@@ -32,18 +32,20 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
 ##### jQuery
 
     <!-- tab: index.js -->
+    const registerPattern = DevExpress.common.charts.registerPattern;
+
     $(() => {
         $('#chart').dxChart({
             // ...
             commonSeriesSettings: {
                 color: {
                     base: "#f5564a",
-                    fillId: DevExpress.common.charts.registerPattern({
+                    fillId: registerPattern({
                         width: 5,
                         height: 5,
                         template: (container) => {
                             const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                            path.setAttribute('stroke', '#ffffff');
+                            path.setAttribute('stroke', '#97c95c');
                             path.setAttribute('stroke-width', 1.5);
                             path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
                             container.appendChild(path);
@@ -73,7 +75,7 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
                 height: 5,
                 template: (container) => {
                     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                    path.setAttribute('stroke', '#ffffff');
+                    path.setAttribute('stroke', '#97c95c');
                     path.setAttribute('stroke-width', 1.5);
                     path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
                     container.appendChild(path);
@@ -105,13 +107,13 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
                 return {
                     // ...
                     seriesColor: {
-                        base: '#000000',
+                        base: '#f5564a',
                         fillId: registerPattern({
                             width: 5,
                             height: 5,
                             template: (container) => {
                                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                                path.setAttribute('stroke', '#ffffff');
+                                path.setAttribute('stroke', '#97c95c');
                                 path.setAttribute('stroke-width', 1.5);
                                 path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
                                 container.appendChild(path);
@@ -138,13 +140,13 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
         // ...
 
         const seriesColor = {
-            base: '#000000',
+            base: '#f5564a',
             fillId: registerPattern({
                 width: 5,
                 height: 5,
                 template: (container) => {
                     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                    path.setAttribute('stroke', '#ffffff');
+                    path.setAttribute('stroke', '#97c95c');
                     path.setAttribute('stroke-width', 1.5);
                     path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
                     container.appendChild(path);
@@ -166,7 +168,7 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
             height: 5,
             template: (container) => {
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                path.setAttribute('stroke', '#ffffff');
+                path.setAttribute('stroke', '#97c95c');
                 path.setAttribute('stroke-width', 1.5);
                 path.setAttribute('d', `M 2.5 -2.5 L -2.5 2.5 M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5`);
                 container.appendChild(path);

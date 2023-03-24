@@ -30,13 +30,15 @@ Implement this method to register a gradient id. Then, use the id in the compone
 ##### jQuery
 
     <!-- tab: index.js -->
+    const registerGradient = DevExpress.common.charts.registerGradient;
+    
     $(() => {
         $('#chart').dxChart({
             // ...
             commonSeriesSettings: {
                 color: {
                     base: "#f5564a",
-                    fillId: DevExpress.common.charts.registerGradient("linear", {
+                    fillId: registerGradient("linear", {
                         colors: [{
                             offset: "20%",
                             color: "#97c95c"
@@ -99,7 +101,7 @@ Implement this method to register a gradient id. Then, use the id in the compone
                 return {
                     // ...
                     seriesColor: {
-                        base: '#000000',
+                        base: '#f5564a',
                         fillId: registerGradient("linear", {
                             colors: [{
                                 offset: "20%",
@@ -130,7 +132,7 @@ Implement this method to register a gradient id. Then, use the id in the compone
         // ...
 
         const seriesColor = {
-            base: '#000000',
+            base: '#f5564a',
             fillId: registerGradient("linear", {
                 colors: [{
                     offset: "20%",

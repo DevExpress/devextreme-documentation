@@ -5,11 +5,10 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
     $(function(){
         $("#{widgetName}Container").dx{WidgetName}({
-            {Name}
             // ...
-            centerTemplate: (instance, container) => {
+            centerTemplate: (gauge, container) => {
                 const rect = createRect(50, 50, 'transparent');
-                const text = createText(10, 200, 12, 'start', "{WidgetName}");
+                const text = createText(10, 200, 12, 'start', gauge.value());
 
                 container.appendChild(rect);
                 container.appendChild(text);
@@ -47,10 +46,10 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} centerTemplate="centerTemplate" ... >
-        <svg *dxTemplate="let instance of 'centerTemplate'">
+        <svg *dxTemplate="let gauge of 'centerTemplate'">
             <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
             <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-               {WidgetName}
+               {{gauge.value()}}
             </text>
         </svg>
     </dx-{widget-name}>
@@ -84,7 +83,7 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
                 <svg>
                     <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
                     <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {WidgetName}
+                        {{data.data.value()}}
                     </text>
                 </svg>
             </template>
@@ -114,7 +113,7 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
                 <svg>
                     <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
                     <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {WidgetName}
+                        {{data.data.value()}}
                     </text>
                 </svg>
             </template>
@@ -140,12 +139,12 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
     export default function App() { 
 
-        const CenterTemplate = useCallback((instance) => {
+        const CenterTemplate = useCallback((gauge) => {
             return (
                 <svg>
                     <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
                     <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {WidgetName}
+                        {gauge.value()}
                     </text>
                 </svg>
             );

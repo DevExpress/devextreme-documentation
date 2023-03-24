@@ -10,7 +10,7 @@ The row's index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Component
 
 ---
 #include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellEditingAndEditingAPI/"
 }
 
 [note] You cannot call this method to delete a row if this row is being edited in row or form editing mode. In these modes, you can modify only one row at a time and you should finish the row edit to call this method.
@@ -19,3 +19,4 @@ The row's index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Component
 #include common-link-callmethods
 - [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/addRow().md '{basewidgetpath}/Methods/#addRow')
 - [deleteColumn(id)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/deleteColumn(id).md '{basewidgetpath}/Methods/#deleteColumnid')
+- [Delete Rows API](/Documentation/Guide/UI_Components/DataGrid/Editing/#API/Delete)

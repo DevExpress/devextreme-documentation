@@ -214,43 +214,43 @@ Note that all user functions return the result of the jQuery AJAX call, which is
     import CustomStore from 'devextreme/data/custom_store';
     import 'whatwg-fetch';
 
+    const customDataSource = new CustomStore({
+        load: (loadOptions) => {
+            return fetch(SERVICE_URL);
+        },
+
+        byKey: (key) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key));
+        },
+
+        insert: (values) => {
+            return fetch(SERVICE_URL, {
+                method: "POST",
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        },
+
+        update: (key, values) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                method: "PUT",
+                body: JSON.stringify(values),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+        },
+
+        remove: (key) => {
+            return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
+                method: "DELETE",
+            });
+        },
+    });
+
     export default function App() {
-        const customDataSource = new CustomStore({
-            load: (loadOptions) => {
-                return fetch(SERVICE_URL);
-            },
-
-            byKey: (key) => {
-                return fetch(SERVICE_URL + "/" + encodeURIComponent(key));
-            },
-
-            insert: (values) => {
-                return fetch(SERVICE_URL, {
-                    method: "POST",
-                    body: JSON.stringify(values),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-            },
-
-            update: (key, values) => {
-                return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
-                    method: "PUT",
-                    body: JSON.stringify(values),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-            },
-
-            remove: (key) => {
-                return fetch(SERVICE_URL + "/" + encodeURIComponent(key), {
-                    method: "DELETE",
-                });
-            },
-        });
-
         return (
             {/* ... */}
         );

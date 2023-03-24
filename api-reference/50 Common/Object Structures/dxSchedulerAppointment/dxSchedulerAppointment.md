@@ -2,6 +2,8 @@
 id: dxSchedulerAppointment
 type: Object
 inherits: CollectionWidgetItem
+module: ui/scheduler
+export: Appointment
 ---
 ---
 ##### shortDescription

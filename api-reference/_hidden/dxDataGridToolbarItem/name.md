@@ -1,7 +1,6 @@
 ---
 id: dxDataGridToolbarItem.name
-acceptValues: 'addRowButton' | 'applyFilterButton' | 'columnChooserButton' | 'exportButton' | 'groupPanel' | 'revertButton' | 'saveButton' | 'searchPanel'
-type: String
+type: Enums.DataGridPredefinedToolbarItem | String
 ---
 ---
 ##### shortDescription

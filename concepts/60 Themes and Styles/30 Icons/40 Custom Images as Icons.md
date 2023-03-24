@@ -2,12 +2,44 @@ The UI component's **icon** property accepts URLs, so you can assign the image's
 
 Although Base64 code can be assigned directly to the **icon** property, we recommend placing it in the CSS because of its length. Add the following CSS rule to your stylesheet:
 
+---
+##### jQuery
+
     <!--CSS-->
-    .dx-icon-customicon { // in Angular apps, add ::ng-deep before
+    .dx-icon-customicon {
         background-image: url(data:image/png;base64,... LONG BASE64 CODE IS HERE ...);
         background-repeat: no-repeat;
         background-position: 0px 0px;
     }
+
+##### Angular
+
+    <!--CSS-->
+    ::ng-deep .dx-icon-customicon {
+        background-image: url(data:image/png;base64,... LONG BASE64 CODE IS HERE ...);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+##### Vue
+
+    <!--CSS-->
+    .dx-icon-customicon {
+        background-image: url(data:image/png;base64,... LONG BASE64 CODE IS HERE ...);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+##### React
+
+    <!--CSS-->
+    .dx-icon-customicon {
+        background-image: url(data:image/png;base64,... LONG BASE64 CODE IS HERE ...);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+---
 
 `customicon` here is the icon's name that you should [assign to the UI component's **icon** property](/concepts/60%20Themes%20and%20Styles/30%20Icons/20%20Icons%20in%20DevExtreme%20UI%20Components.md '/Documentation/Guide/Themes_and_Styles/Icons/#Icons_in_DevExtreme_UI_Components').
 

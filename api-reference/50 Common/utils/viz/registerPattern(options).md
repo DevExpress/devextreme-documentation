@@ -16,7 +16,7 @@ The pattern settings.
 ##### field(options.height): Number | String
 The pattern height.
 
-##### field(options.template): template
+##### field(options.template): function()
 The SVG-based pattern template.
 
 ##### field(options.width): Number | String

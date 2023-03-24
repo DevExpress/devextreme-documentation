@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.editing.startEditAction
-acceptValues: 'click' | 'dblClick'
-type: String
+type: Enums.StartEditAction
 default: 'click'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxFileUploader.Options.uploadMethod
-acceptValues: 'POST' | 'PUT'
-type: String
+type: Enums.UploadHttpMethod
 default: 'POST'
 ---
 ---

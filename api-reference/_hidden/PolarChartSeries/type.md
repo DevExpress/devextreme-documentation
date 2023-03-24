@@ -1,7 +1,6 @@
 ---
 id: PolarChartSeries.type
-acceptValues: 'area' | 'bar' | 'line' | 'scatter' | 'stackedbar'
-type: String
+type: Enums.PolarChartSeriesType
 default: 'scatter'
 ---
 ---

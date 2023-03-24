@@ -11,7 +11,7 @@ The initial appointment.
 ##### param(date): Date | String
 A date for which to delete a recurrence.
 
-##### param(recurrenceEditMode): 'dialog' | 'occurrence' | 'series'
+##### param(recurrenceEditMode): Enums.RecurrenceEditMode
 An edit mode for recurring appointments.
 
 ---

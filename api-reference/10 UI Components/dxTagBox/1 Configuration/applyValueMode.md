@@ -1,7 +1,6 @@
 ---
 id: dxTagBox.Options.applyValueMode
-acceptValues: 'instantly' | 'useButtons'
-type: String
+type: Enums.ApplyValueMode
 default: 'instantly'
 ---
 ---

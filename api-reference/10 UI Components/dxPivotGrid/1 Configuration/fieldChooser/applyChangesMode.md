@@ -1,7 +1,6 @@
 ---
 id: dxPivotGrid.Options.fieldChooser.applyChangesMode
-acceptValues: 'instantly' | 'onDemand'
-type: String
+type: Enums.ApplyChangesMode
 default: 'instantly'
 ---
 ---

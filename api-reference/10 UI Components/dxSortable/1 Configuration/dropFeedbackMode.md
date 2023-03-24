@@ -1,7 +1,6 @@
 ---
 id: dxSortable.Options.dropFeedbackMode
-acceptValues: 'push' | 'indicate'
-type: String
+type: Enums.DragHighlight
 default: 'push'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.textOverflow
-acceptValues: 'ellipsis' | 'hide' | 'none'
-type: String
+type: Enums.TextOverflow
 default: 'none'
 ---
 ---

@@ -31,7 +31,7 @@ Model data. Available only if you use Knockout.
 ##### field(e.targetElement): DxElement
 The file system item's container. It is an [HTML Element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) or a [jQuery Element](https://api.jquery.com/Types/#jQuery) when you use jQuery. This element can be a grid element or a thumbnail (for the items view area), or a tree view node (for the navigation panel). The **targetElement** field value is 'undefined' if you click on empty space in the items view area.
 
-##### field(e.viewArea): 'navPane' | 'itemView'
+##### field(e.viewArea): Enums.FileManagerViewArea
 Specifies whether the context menu is invoked in the navigation panel or in the items view area.
 
 ---

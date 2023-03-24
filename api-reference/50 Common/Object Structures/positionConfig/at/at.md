@@ -1,7 +1,6 @@
 ---
 id: PositionConfig.at
-acceptValues: 'bottom' | 'center' | 'left' | 'left bottom' | 'left top' | 'right' | 'right bottom' | 'right top' | 'top'
-type: String | Object
+type: Enums.PositionAlignment | Object
 ---
 ---
 ##### shortDescription

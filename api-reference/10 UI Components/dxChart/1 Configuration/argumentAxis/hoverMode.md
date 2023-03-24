@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.hoverMode
-acceptValues: 'allArgumentPoints' | 'none'
-type: String
+type: Enums.ArgumentAxisHoverMode
 default: 'none'
 ---
 ---

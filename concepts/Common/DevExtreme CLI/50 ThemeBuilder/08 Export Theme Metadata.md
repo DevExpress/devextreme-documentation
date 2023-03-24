@@ -50,4 +50,4 @@ Run the following command to export the metadata as a `.json` file:
 
     devextreme export-theme-meta [--base-theme][--input-file][--output-file][--base][--help]
     // ===== or =====
-    npx -p devextreme-cli devextreme export-theme-meta [--base-theme][--input-file][--output-file][--base]
+    npx devextreme-cli export-theme-meta [--base-theme][--input-file][--output-file][--base]

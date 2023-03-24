@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.StepLineSeries.aggregation.method
-acceptValues: 'avg' | 'count' | 'max' | 'min' | 'sum' | 'custom'
-type: String
+type: Enums.ChartSingleValueSeriesAggregationMethod
 default: 'avg'
 ---
 ---

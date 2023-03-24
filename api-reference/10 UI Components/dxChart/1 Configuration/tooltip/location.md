@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.tooltip.location
-acceptValues: 'center' | 'edge'
-type: String
+type: Enums.ChartTooltipLocation
 default: 'center'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxScheduler.Options.currentView
-acceptValues: 'agenda' | 'day' | 'month' | 'timelineDay' | 'timelineMonth' | 'timelineWeek' | 'timelineWorkWeek' | 'week' | 'workWeek'
-type: String
+type: Enums.ViewType
 default: 'day'
 firedEvents: optionChanged
 ---

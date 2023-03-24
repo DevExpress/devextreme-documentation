@@ -1,7 +1,6 @@
 ---
 id: dxSchedulerScrolling.mode
-acceptValues: 'standard' | 'virtual'
-type: String
+type: Enums.ScrollMode
 default: 'standard'
 ---
 ---

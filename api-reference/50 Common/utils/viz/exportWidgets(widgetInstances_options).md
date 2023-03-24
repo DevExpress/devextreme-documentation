@@ -28,7 +28,7 @@ The background color.
 ##### field(options.fileName): String
 The name of the file to be saved.
 
-##### field(options.format): 'GIF' | 'JPEG' | 'PDF' | 'PNG' | 'SVG'
+##### field(options.format): Enums.ExportFormat
 The file's format. PNG is used if the browser cannot export the file in the specified format.
 
 ##### field(options.gridLayout): Boolean
@@ -36,7 +36,7 @@ If **true**, UI components are arranged in columns with equal widths (the width 
 If **false**, UI components are placed next to each other in rows (default).      
 In any case, each row has the height of the highest UI component in it.
 
-##### field(options.horizontalAlignment): 'center' | 'left' | 'right'
+##### field(options.horizontalAlignment): Enums.HorizontalAlignment
 Horizontally aligns UI components in their columns. Applies only when **gridLayout** is **true**.
 
 ##### field(options.margin): Number
@@ -65,7 +65,7 @@ The parameter contains the following fields:
 ##### field(options.svgToCanvas): function()
 A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export/svgToCanvas.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/#svgToCanvas') description for details.
 
-##### field(options.verticalAlignment): 'bottom' | 'center' | 'top'
+##### field(options.verticalAlignment): Enums.VerticalAlignment
 Vertically aligns UI components in their rows.
 
 ---

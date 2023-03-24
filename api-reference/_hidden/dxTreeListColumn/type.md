@@ -1,7 +1,6 @@
 ---
 id: dxTreeListColumn.type
-acceptValues: 'adaptive' | 'buttons' | 'drag'
-type: String
+type: Enums.TreeListCommandColumnType
 ---
 ---
 ##### shortDescription

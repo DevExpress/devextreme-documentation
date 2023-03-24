@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.export.formats
-acceptValues: 'GIF' | 'JPEG' | 'PDF' | 'PNG' | 'SVG'
-type: Array<String>
+type: Array<Enums.ExportFormat>
 default: ['PNG', 'PDF', 'JPEG', 'SVG', 'GIF']
 ---
 ---

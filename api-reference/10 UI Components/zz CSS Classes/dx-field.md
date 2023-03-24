@@ -21,26 +21,6 @@ DevExtreme UI components include <a href="http://www.w3.org/WAI/intro/aria.php" 
         </div>
     </div>
 
-#####AngularJS#####
-
-    <!--HTML-->
-    <div class="dx-field">
-        <div class="dx-field-label" id="fullnameLabel">Full Name</div>
-        <div class="dx-field-value">
-            <div aria-labeledby="fullnameLabel" dx-text-box="{ value: fullName }"></div>
-        </div>
-    </div>
-
-#####Knockout#####
-
-    <!--HTML-->
-    <div class="dx-field">
-        <div class="dx-field-label" id="fullnameLabel">Full Name</div>
-        <div class="dx-field-value">
-            <div aria-labeledby="fullnameLabel" data-bind="dxTextBox: { value: fullName }"></div>
-        </div>
-    </div>
-
 [note]The `dx-field-label` and `dx-field-value` / `dx-field-value-static` classes are designed to have the label always be before the value. If you need to swap them around, override the `float` CSS property of these classes in the following way.
 
     <!--CSS-->

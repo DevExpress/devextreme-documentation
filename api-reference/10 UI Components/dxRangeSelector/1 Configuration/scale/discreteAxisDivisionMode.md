@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.discreteAxisDivisionMode
-acceptValues: 'betweenLabels' | 'crossLabels'
-type: String
+type: Enums.DiscreteAxisDivisionMode
 default: 'betweenLabels'
 ---
 ---

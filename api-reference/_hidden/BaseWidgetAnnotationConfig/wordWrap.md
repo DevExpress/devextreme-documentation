@@ -1,7 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.wordWrap
-acceptValues: 'normal' | 'breakWord' | 'none'
-type: String
+type: Enums.WordWrap
 default: 'normal'
 ---
 ---

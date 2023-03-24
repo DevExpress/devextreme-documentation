@@ -1,7 +1,6 @@
 ---
 id: dxVectorMap.Options.projection
-acceptValues: 'equirectangular' | 'lambert' | 'mercator' | 'miller'
-type: String | VectorMapProjectionConfig | Object
+type: Enums.VectorMapProjection | VectorMapProjectionConfig | String | Object
 default: 'mercator'
 notUsedInTheme: 
 inheritsType: VectorMapProjectionConfig

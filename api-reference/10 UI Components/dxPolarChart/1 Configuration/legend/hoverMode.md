@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.legend.hoverMode
-acceptValues: 'excludePoints' | 'includePoints' | 'none'
-type: String
+type: Enums.LegendHoverMode
 default: 'includePoints'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxToolbarItem.locateInMenu
-acceptValues: 'always' | 'auto' | 'never'
-type: String
+type: Enums.LocateInMenuMode
 default: 'never'
 ---
 ---

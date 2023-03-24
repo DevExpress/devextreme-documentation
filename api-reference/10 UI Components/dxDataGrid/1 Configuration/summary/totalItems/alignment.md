@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.alignment
-acceptValues: 'center' | 'left' | 'right'
-type: String
+type: Enums.HorizontalAlignment
 default: undefined
 ---
 ---

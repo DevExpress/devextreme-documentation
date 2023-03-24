@@ -1,7 +1,6 @@
 ---
 id: dxPivotGrid.Options.dataFieldArea
-acceptValues: 'column' | 'row'
-type: String
+type: Enums.PivotGridDataFieldArea
 default: 'column'
 ---
 ---

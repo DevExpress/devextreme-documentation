@@ -1,7 +1,6 @@
 ---
 id: dxContextMenu.Options.submenuDirection
-acceptValues: 'auto' | 'left' | 'right'
-type: String
+type: Enums.ContextSubmenuDirection
 default: 'auto'
 ---
 ---

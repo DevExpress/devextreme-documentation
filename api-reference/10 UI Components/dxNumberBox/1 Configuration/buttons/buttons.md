@@ -1,7 +1,6 @@
 ---
 id: dxNumberBox.Options.buttons
-acceptValues: 'clear' | 'spins'
-type: Array<String, dxTextEditorButton>
+type: Array<Enums.NumberBoxPredefinedButton, dxTextEditorButton>
 default: undefined
 inheritsType: dxTextEditorButton
 ---

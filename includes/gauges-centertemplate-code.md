@@ -1,4 +1,4 @@
-The following code snippet shows how to specify a custom template for content in the {WidgetName}'s center:
+You need to render template content as an [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) element. The following code snippet shows how to specify a custom template for content in the {WidgetName}'s center:
 
 ---
 ##### jQuery
@@ -45,7 +45,7 @@ The following code snippet shows how to specify a custom template for content in
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} ...
+    <dx-{widget-name} centerTemplate="centerTemplate" ... >
         <svg *dxTemplate="let gauge of 'centerTemplate'">
             <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
             <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
@@ -78,12 +78,12 @@ The following code snippet shows how to specify a custom template for content in
 
     <!-- tab: App.vue (Options API) -->
     <template>
-        <Dx{WidgetName} ...
+        <Dx{WidgetName} center-template="centerTemplate" ... >
             <template #centerTemplate="data">
                 <svg>
                     <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
                     <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {{ data.data.value() }}
+                        {{data.data.value()}}
                     </text>
                 </svg>
             </template>
@@ -108,12 +108,12 @@ The following code snippet shows how to specify a custom template for content in
 
     <!-- tab: App.vue (Composition API) -->
     <template>
-        <Dx{WidgetName} ...
+        <Dx{WidgetName} center-template="centerTemplate" ... >
             <template #centerTemplate="data">
                 <svg>
                     <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
                     <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {{ data.data.value() }}
+                        {{data.data.value()}}
                     </text>
                 </svg>
             </template>
@@ -131,29 +131,24 @@ The following code snippet shows how to specify a custom template for content in
 ##### React
 
     <!-- tab: App.js -->
-    import { useCallback } from 'react';
-
-    import 'devextreme/dist/css/dx.light.css';
-
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
+    const CenterTemplate = (gauge) => {
+        return (
+            <svg>
+                <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
+                <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
+                    {gauge.value()}
+                </text>
+            </svg>
+        );
+    }
+
     export default function App() { 
-
-        const CenterTemplate = useCallback((gauge) => {
-            return (
-                <svg>
-                    <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
-                    <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {gauge.value()}
-                    </text>
-                </svg>
-            );
-        }, []);
-
         return ( 
-            <{WidgetName} ...
-                centerRender={CenterTemplate}
-            />        
+            <{WidgetName} centerRender={CenterTemplate} ... >   
+                { /* ... */ } 
+            </{WidgetName}>       
         ); 
     } 
 

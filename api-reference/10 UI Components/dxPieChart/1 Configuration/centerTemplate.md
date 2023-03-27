@@ -145,8 +145,6 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
     <!-- tab: App.js -->
     import { useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
-
     import PieChart from 'devextreme-react/pie-chart';
 
     export default function App() { 

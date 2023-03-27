@@ -164,7 +164,7 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 
         return ( 
             <PieChart type="doughnut" centerRender={CenterTemplate} ... >   
-                // ...
+                { /* ... */ } 
             </PieChart>       
         ); 
     } 

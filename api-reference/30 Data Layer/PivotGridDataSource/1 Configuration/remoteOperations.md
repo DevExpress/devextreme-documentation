@@ -58,7 +58,7 @@ Subsequent requests are different and contain the following **loadOptions**:
         ]
     }
 
-A sorting operation executes on a back-end if you enable the `remoteOperations` property and set the ['scrolling.mode'](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/scrolling/#mode) property to **'virtual'**
+A sorting operation executes on a back-end if you enable the `remoteOperations` property and set the ['scrolling.mode'](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/scrolling/#mode) property to **'virtual'**.
 In all other cases, a sorting operation executes locally. 
 
 Refer to the [Server-Side Data Processing](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources/2%20Load%20Data/5%20Server-Side%20Data%20Processing.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/#Load_Data/Server-Side_Data_Processing') article for more information on how DevExtreme components communicate with the server.

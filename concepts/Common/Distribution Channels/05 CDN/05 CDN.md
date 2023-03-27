@@ -147,3 +147,5 @@ Alternatively, you can get DevExtreme sources from DevExpress CDN:
     <!-- <link href="https://cdn3.devexpress.com/jslib/minor_22_1/css/dx-gantt.css" rel="stylesheet"> -->
 
 ---
+
+[tags] jquery

@@ -19,4 +19,4 @@ The row's index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Component
 #include common-link-callmethods
 - [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/addRow().md '{basewidgetpath}/Methods/#addRow')
 - [deleteColumn(id)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/deleteColumn(id).md '{basewidgetpath}/Methods/#deleteColumnid')
-- [Delete Rows API](/Documentation/Guide/UI_Components/DataGrid/Editing/#API/Delete)
+- [Delete Rows API](/concepts/05%20UI%20Components/DataGrid/20%20Editing/20%20API/30%20Delete.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#API/Delete')

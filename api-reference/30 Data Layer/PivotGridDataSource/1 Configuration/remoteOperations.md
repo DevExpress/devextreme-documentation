@@ -23,7 +23,7 @@ The server should return an array of data objects. It may contain a single objec
 Subsequent requests are different and contain the following **loadOptions**:
 
     <!--JavaScript-->
-    {
+    { 
         filter: [
             [ "dataFieldName1", "operator", "value" ],
             "and", // "or"

@@ -143,23 +143,20 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 ##### React
 
     <!-- tab: App.js -->
-    import { useCallback } from 'react';
-
     import PieChart from 'devextreme-react/pie-chart';
 
-    export default function App() { 
+    const CenterTemplate = (pie) => {
+        return (
+            <svg>
+                <circle cx="72" cy="80" r="70" stroke="green" stroke-width="4" fill="yellow" />
+                <text text-anchor="start" y="80" x="20" fill="#000" font-size="12">
+                    Doughnut Pie Chart
+                </text>
+            </svg>
+        );
+    }
 
-        const CenterTemplate = useCallback((pie) => {
-            return (
-                <svg>
-                    <circle cx="72" cy="80" r="70" stroke="green" stroke-width="4" fill="yellow" />
-                    <text text-anchor="start" y="80" x="20" fill="#000" font-size="12">
-                        Doughnut Pie Chart
-                    </text>
-                </svg>
-            );
-        }, []);
-
+    export default function App() {   
         return ( 
             <PieChart type="doughnut" centerRender={CenterTemplate} ... >   
                 { /* ... */ } 

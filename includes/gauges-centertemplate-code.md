@@ -131,23 +131,20 @@ You need to render template content as an [SVG](https://developer.mozilla.org/en
 ##### React
 
     <!-- tab: App.js -->
-    import { useCallback } from 'react';
-
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
+    const CenterTemplate = (gauge) => {
+        return (
+            <svg>
+                <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
+                <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
+                    {gauge.value()}
+                </text>
+            </svg>
+        );
+    }
+
     export default function App() { 
-
-        const CenterTemplate = useCallback((gauge) => {
-            return (
-                <svg>
-                    <rect x="0" y="0" width="50" height="50" fill="transparent"></rect>
-                    <text text-anchor="start" y="200" x="10" fill="#000" font-size="12">
-                        {gauge.value()}
-                    </text>
-                </svg>
-            );
-        }, []);
-
         return ( 
             <{WidgetName} centerRender={CenterTemplate} ... >   
                 { /* ... */ } 

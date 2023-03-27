@@ -16,7 +16,7 @@ If you enable this property, the PivotGrid sends several requests to load data. 
         take: 20
     }
 
-[note]If you use [local stores](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/) in the PivotGridDataSource, disable the `remoteOperations` property to ensure that usage scenarios works properly.
+[note]If you use [local stores](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/) (ArrayStore or LocalStore) in the PivotGridDataSource, disable the `remoteOperations` property to ensure that usage scenarios works properly.
 
 The server should return an array of data objects. It may contain a single object if this object reflects the entire data structure.
 

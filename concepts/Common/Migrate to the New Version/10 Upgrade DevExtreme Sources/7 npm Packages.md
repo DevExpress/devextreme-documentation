@@ -3,13 +3,13 @@ Run the following commands:
 ---
 ##### jQuery
 
-    npm install devextreme@22.3 --save --save-exact
+    npm install devextreme@23.1 --save --save-exact
 
 ##### Angular
 
-    npm install devextreme@22.3 --save --save-exact
+    npm install devextreme@23.1 --save --save-exact
 
-    npm install devextreme-angular@22.3 --save --save-exact
+    npm install devextreme-angular@23.1 --save --save-exact
 
     // If the application is created using the DevExtreme CLI
     npm install devextreme-themebuilder@23.1 --save --save-exact
@@ -17,22 +17,22 @@ Run the following commands:
 
 ##### Vue
 
-    npm install devextreme@22.3 --save --save-exact
+    npm install devextreme@23.1 --save --save-exact
 
-    npm install devextreme-vue@22.3 --save --save-exact
+    npm install devextreme-vue@23.1 --save --save-exact
 
     // If the application is created using the DevExtreme CLI
-    npm install devextreme-themebuilder@22.3 --save --save-exact
+    npm install devextreme-themebuilder@23.1 --save --save-exact
     npm run build-themes
 
 ##### React
 
-    npm install devextreme@22.3 --save --save-exact
+    npm install devextreme@23.1 --save --save-exact
 
-    npm install devextreme-react@22.3 --save --save-exact
+    npm install devextreme-react@23.1 --save --save-exact
 
     // If the application is created using the DevExtreme CLI
-    npm install devextreme-themebuilder@22.3 --save --save-exact
+    npm install devextreme-themebuilder@23.1 --save --save-exact
     npm run build-themes
 
 ---

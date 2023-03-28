@@ -12,7 +12,7 @@
   <MenuRule Destination="050 Getting Started/55 Security Considerations" SourcePattern="Howto:^Common/Security Considerations" />
 
   <MenuRule Destination="050 Getting Started/80 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
-  <MenuRule Destination="050 Getting Started/90 CDN Links" SourcePattern="Howto:^Common/Distribution Channels/05 CDN" />
+  <MenuRule Destination="050 Getting Started/90 Distribution Channels" SourcePattern="Howto:^Common/Distribution Channels" />
   
   <MenuRule Destination="050 Getting Started/01 Quick Start" SourcePattern="Howto:^40 Angular Components/10 Getting Started/02 Create a DevExtreme Application" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/02 Quick Start" SourcePattern="Howto:^55 Vue Components/02 Create a DevExtreme Application" VisibleFor="Vue" />
@@ -84,7 +84,7 @@
   <MenuRule Destination="10 UI Components/zz Utilities/Device Detection/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(device)" />
   <MenuRule Destination="10 UI Components/zz Utilities/Device Detection/API" SourcePattern="ApiReference:^50 Common/utils/devices/3 Methods" />
   <MenuRule Destination="" SourcePattern="ApiReference:^50 Common/utils/devices$" />
-  <MenuRule Destination="10 UI Components/zz Utilities/UI Events/Event List" SourcePattern="ApiReference:^10 UI Components/UI Events" />
+  <MenuRule Destination="10 UI Components/zz Utilities/UI Events/Event List" SourcePattern="ApiReference:^10 UI Components/UI Events" VisibleFor="jQuery"/>
   <MenuRule Destination="10 UI Components/zz Utilities/UI Events/zz API" SourcePattern="ApiReference:^50 Common/utils/events" />
   <MenuRule Destination="10 UI Components/zz Utilities/UI Events/$1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/(EventObject)" />
   <MenuRule Destination="10 UI Components/zz Utilities/zz Other Utilities API/Interfaces" SourcePattern="ApiReference:^50 Common/Object Structures" />
@@ -105,7 +105,6 @@
   <!-- Hidden topics -->
   <MenuRule Destination="" SourcePattern="Howto:^34 ASP.NET MVC Controls" />
   <MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />
-  <MenuRule Destination="" SourcePattern="Howto:^Common/Distribution Channels" />
   <MenuRule Destination="" SourcePattern="Howto:^99 VS Integration" />
   <MenuRule Destination="" SourcePattern="Howto:^Getting Started" />
   <MenuRule Destination="" SourcePattern="ApiReference:^(.*?)" /> -->

@@ -1,19 +1,8 @@
----
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.color
-type: String | ChartsColor
-default: undefined
----
----
-##### shortDescription
-Specifies the points color.
+You can also specify a custom pattern or gradient instead of a plain color. Implement the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to get an id. Then, do the following:
 
-##### propertyOf
-dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.scatterpolarseries
+1. Specify the `base` color for labels and connectors in the **color** configuration object.
 
----
-#include common-colorlist
-
-#include dataviz-chartscolor
+1. Set the `fillId` field to the obtained id.
 
 ---
 ##### jQuery
@@ -24,10 +13,9 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
             // ...
             series: {
                 // ...
-                point: {
-                    color: {
-                        fillId: customPatternId
-                    }
+                color: {
+                    base: "#000000",
+                    fillId: customPatternId
                 }
             }
         });
@@ -37,10 +25,9 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-series ... >
-            <dxo-point
-                [color]="customPattern"
-            ></dxo-point>
+        <dxi-series ...
+            [color]="customPattern"
+        >
         </dxi-series>
     </dx-polar-chart>
 
@@ -51,6 +38,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
         // ...
         
         customPattern = {
+            base: "#000000",
             fillId: this.customPatternId
         };
     } 
@@ -60,26 +48,24 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     <!-- tab: App.vue (Options API) -->
     <template>
         <DxPolarChart ... >
-            <DxSeries ... >
-                <DxPoint :color="customPattern" />
-            </DxSeries>
+            <DxSeries :color="customPattern" />
         </DxPolarChart>
     </template>
 
     <script>
-    import DxPolarChart, { DxSeries, DxPoint } from 'devextreme-vue/chart'; 
+    import DxPolarChart, { DxSeries } from 'devextreme-vue/chart'; 
     // ...
 
     export default {
         components: {
             DxPolarChart,
-            DxSeries,
-            DxPoint
+            DxSeries
         },
         data() {
             return {
                 // ...
                 customPattern: {
+                    base: "#000000",
                     fillId: this.customPatternId
                 }
             }
@@ -90,17 +76,16 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     <!-- tab: App.vue (Composition API) -->
     <template>
         <DxPolarChart ... >
-            <DxSeries ... >
-                <DxPoint :color="customPattern" />
-            </DxSeries>
+            <DxSeries :color="customPattern" />
         </DxPolarChart>
     </template>
 
     <script setup>
-    import DxPolarChart, { DxSeries, DxPoint } from 'devextreme-vue/chart';  
+    import DxPolarChart, { DxSeries } from 'devextreme-vue/chart';  
     // ...
 
     const customPattern = {
+        base: "#000000",
         fillId: customPatternId
     };
     </script>
@@ -109,19 +94,18 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PolarChart, { Series, Point } from 'devextreme-vue/chart'; 
+    import PolarChart, { Series } from 'devextreme-vue/chart'; 
 
     // ...
     const customPattern = {
+        base: "#000000",
         fillId: customPatternId
     };
 
     export default function App() { 
         return ( 
             <PolarChart ... >
-                <Series ... >
-                    <Point color={customPattern} />
-                </Series>
+                <Series color={customPattern} />
             </PolarChart>        
         ); 
     } 

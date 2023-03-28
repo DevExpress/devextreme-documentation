@@ -1,17 +1,3 @@
----
-id: dxPieChartSeriesTypes.CommonPieChartSeries.color
-type: String | ChartsColor
-default: undefined
----
----
-##### shortDescription
-Specifies a series color.
-
----
-You can use this property to paint all pie slices in one color.
-
-#include common-colorlist
-
 You can also specify a custom pattern or gradient instead of a plain color. Implement the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to get an id. Then, do the following:
 
 1. Specify the `base` color for labels and connectors in the **color** configuration object.
@@ -23,7 +9,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     <!-- tab: index.js -->
     $(function(){
-        $("#pieChartContainer").dxPieChart({
+        $("#chartContainer").dxChart({
             // ...
             series: {
                 // ...
@@ -38,12 +24,12 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-pie-chart ... >
+    <dx-chart ... >
         <dxi-series ...
             [color]="customPattern"
         >
         </dxi-series>
-    </dx-pie-chart>
+    </dx-chart>
 
     <!-- tab: app.component.ts -->
     // ...
@@ -61,18 +47,18 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     <!-- tab: App.vue (Options API) -->
     <template>
-        <DxPieChart ... >
+        <DxChart ... >
             <DxSeries :color="customPattern" />
-        </DxPieChart>
+        </DxChart>
     </template>
 
     <script>
-    import DxPieChart, { DxSeries } from 'devextreme-vue/chart'; 
+    import DxChart, { DxSeries } from 'devextreme-vue/chart'; 
     // ...
 
     export default {
         components: {
-            DxPieChart,
+            DxChart,
             DxSeries
         },
         data() {
@@ -89,13 +75,13 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     <!-- tab: App.vue (Composition API) -->
     <template>
-        <DxPieChart ... >
+        <DxChart ... >
             <DxSeries :color="customPattern" />
-        </DxPieChart>
+        </DxChart>
     </template>
 
     <script setup>
-    import DxPieChart, { DxSeries } from 'devextreme-vue/chart';  
+    import DxChart, { DxSeries } from 'devextreme-vue/chart';  
     // ...
 
     const customPattern = {
@@ -108,7 +94,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PieChart, { Series } from 'devextreme-vue/chart'; 
+    import Chart, { Series } from 'devextreme-vue/chart'; 
 
     // ...
     const customPattern = {
@@ -118,14 +104,10 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     export default function App() { 
         return ( 
-            <PieChart ... >
+            <Chart ... >
                 <Series color={customPattern} />
-            </PieChart>        
+            </Chart>        
         ); 
     } 
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
-}

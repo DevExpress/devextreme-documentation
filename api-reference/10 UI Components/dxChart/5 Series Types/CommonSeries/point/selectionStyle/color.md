@@ -12,3 +12,129 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
 
 ---
 #include common-colorlist
+
+#include dataviz-chartscolor
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function(){
+        $("#chartContainer").dxChart({
+            // ...
+            series: {
+                // ...
+                point: {
+                    selectionStyle: {
+                        color: {
+                            fillId: customPatternId
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-chart ... >
+        <dxi-series ... >
+            <dxo-point ... >
+                <dxo-selection-style 
+                    [color]="customPattern"
+                ></dxo-selection-style>
+            </dxo-point>
+        </dxi-series>
+    </dx-chart>
+
+    <!-- tab: app.component.ts -->
+    // ...
+
+    export class AppComponent {
+        // ...
+        
+        customPattern = {
+            fillId: this.customPatternId
+        };
+    } 
+
+##### Vue
+
+    <!-- tab: App.vue (Options API) -->
+    <template>
+        <DxChart ... >
+            <DxSeries ... >
+                <DxPoint ... >
+                    <DxSelectionStyle :color="customPattern" />
+                </DxPoint>
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script>
+    import DxChart, { DxSeries, DxPoint, DxSelectionStyle } from 'devextreme-vue/chart'; 
+    // ...
+
+    export default {
+        components: {
+            DxChart,
+            DxSeries,
+            DxPoint,
+            DxSelectionStyle
+        },
+        data() {
+            return {
+                // ...
+                customPattern: {
+                    fillId: this.customPatternId
+                }
+            }
+        }
+    }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxChart ... >
+            <DxSeries ... >
+                <DxPoint ... >
+                    <DxSelectionStyle :color="customPattern" />
+                </DxPoint>
+            </DxSeries>
+        </DxChart>
+    </template>
+
+    <script setup>
+    import DxChart, { DxSeries, DxPoint, DxSelectionStyle } from 'devextreme-vue/chart';  
+    // ...
+
+    const customPattern = {
+        fillId: customPatternId
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Chart, { Series, Point, SelectionStyle } from 'devextreme-vue/chart'; 
+
+    // ...
+    const customPattern = {
+        fillId: customPatternId
+    };
+
+    export default function App() { 
+        return ( 
+            <Chart ... >
+                <Series ... >
+                    <Point ... >
+                        <SelectionStyle color={customPattern} />
+                    </Point>
+                </Series>
+            </Chart>        
+        ); 
+    } 
+
+---

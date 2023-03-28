@@ -25,6 +25,10 @@ The pattern width.
 ---
 Implement this method to register a pattern id. Then, use the id in the component color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
 
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
+}
+
 The following example demonstrates how to create a stroke pattern. Use a [d](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) SVG attribute to draw a path for a pattern.
 
 ---
@@ -176,7 +180,7 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
         })
     };
 
-    function App() {
+    export default function App() {
         return (
             <Chart ... >
                 <CommonSeriesSettings 

@@ -25,10 +25,6 @@
             System.import('./index.js');
         </script>
 
-See examples of using jspm with <a href="https://github.com/DevExpress/devextreme-examples/tree/22_1/jspm-jquery" target="_blank">jQuery</a>, <a href="https://github.com/DevExpress/devextreme-examples/tree/22_1/jspm-angularjs" target="_blank">AngularJS</a>, and <a href="https://github.com/DevExpress/devextreme-examples/tree/22_1/jspm-knockout" target="_blank">Knockout</a> on GitHub. The **index.js** and **index.html** files contain the main code. 
+See examples on how to use jspm with <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/" target="_blank">jQuery</a> on GitHub. The **index.js** and **index.html** files contain the main code. Note that jQuery components require additional [integration module](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery).
 
-The following list shows additional modules each library/framework requires: 
-
-- **jQuery**: DevExtreme [jQuery integration](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery') module;
-- **AngularJS**: jQuery, DevExtreme [AngularJS](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/angular.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/angular') and [jQuery](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery') integration modules;
-- **Knockout**: DevExtreme [Knockout integration](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/knockout.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/knockout') module.
+[tags] jquery

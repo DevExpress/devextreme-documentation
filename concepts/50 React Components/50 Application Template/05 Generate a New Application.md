@@ -1,4 +1,4 @@
-    npx -p devextreme-cli devextreme new react-app app-name
+    npx devextreme-cli new react-app app-name
     cd app-name
     npm run start
 

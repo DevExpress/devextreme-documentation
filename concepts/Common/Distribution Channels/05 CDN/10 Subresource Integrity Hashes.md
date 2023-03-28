@@ -471,3 +471,5 @@ You can use <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subre
     <link href="https://cdn3.devexpress.com/jslib/22.1.2beta/css/dx.softblue.css" rel="stylesheet" integrity="sha384-h6tiKDDEWPDj7WdCGqA1ywWh6q+eq7zOVBUnalUexpTTjiOGTJj1Qbox1PinS33B sha512-217ztn/+SILklgmHBLAcQHxNXAUN9fO940G7wIts7CYLf9w+jFP94jankNFW88gTUfstS6doYsS6cQjveEXPfA==" crossorigin="anonymous">
 
 ---
+
+[tags] jquery

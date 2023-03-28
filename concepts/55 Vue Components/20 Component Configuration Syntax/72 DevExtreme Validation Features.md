@@ -84,7 +84,7 @@ In the following example, two textboxes are placed in a [validation group](/api-
         </DxValidationGroup>
     </template>
 
-    <scrip setup>
+    <script setup>
     import DxTextBox from 'devextreme-vue/text-box';
     import DxValidator, {
         DxRequiredRule,

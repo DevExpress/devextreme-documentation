@@ -4,7 +4,7 @@
 
     devextreme add devextreme-angular
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme add devextreme-angular
+    npx devextreme-cli add devextreme-angular
 
 This command does the following:
 
@@ -19,7 +19,7 @@ Once the command is executed, [import DevExtreme modules](/concepts/40%20Angular
 
     devextreme add devextreme-vue
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme add devextreme-vue
+    npx devextreme-cli add devextreme-vue
 
 This command does the following:
 
@@ -34,7 +34,7 @@ Once the command is executed, [import DevExtreme components](/concepts/55%20Vue%
 
     devextreme add devextreme-react
     // ===== or without installing the DevExtreme CLI =====
-    npx -p devextreme-cli devextreme add devextreme-react
+    npx devextreme-cli add devextreme-react
 
 This command does the following:
 

@@ -1,4 +1,4 @@
-Angular, Vue, and React always encode values interpolated in templates. With other frameworks and libraries, use a third-party sanitizing tool as follows:
+To encode values in a template, use a third-party sanitizing tool as follows:
 
     <!-- tab: JavaScript -->
     $(function() {
@@ -32,3 +32,4 @@ The encoded content is interpreted and displayed as text:
 
 ![DevExtreme Tabs with enabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-safe-html.png)
 
+[tags] jquery

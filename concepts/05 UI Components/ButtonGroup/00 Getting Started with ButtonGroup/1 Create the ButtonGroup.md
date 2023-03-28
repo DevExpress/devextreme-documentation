@@ -1,4 +1,4 @@
-You can use the following library- or framework-specific code to create the ButtonGroup:
+You can use the following code to create the ButtonGroup:
 
 ---
 ##### jQuery

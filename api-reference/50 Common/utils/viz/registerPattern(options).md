@@ -16,7 +16,7 @@ export: registerPattern
 ##### field(options.height): Number | String
 <!-- Description goes here -->
 
-##### field(options.template): template
+##### field(options.template): function()
 <!-- Description goes here -->
 
 ##### field(options.width): Number | String

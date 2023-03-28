@@ -12,6 +12,8 @@ Note that if you set the **multiline** property to `true`, you cannot use the fo
 
 - [location](/api-reference/_hidden/dxToolbarItem/location.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location')
 
+- [locateInMenu](/api-reference/_hidden/dxToolbarItem/locateInMenu.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#locateInMenu')
+
 - [menuItemTemplate](/api-reference/_hidden/dxToolbarItem/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#menuItemTemplate')
 
 - [menuItemRender](/api-reference/_hidden/dxToolbarItem/menuItemRender.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#menuItemRender')

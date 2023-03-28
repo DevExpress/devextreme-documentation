@@ -2,7 +2,7 @@ To bind the PieChart to data in a JSON format, assign the data's URL to the [dat
 
 #include data-binding-examples-json
 
-Note that you can also use a JSONP callback parameter supported by <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>.
+Note that you can also use a JSONP callback parameter.
 
 #include data-binding-examples-jsonp
 

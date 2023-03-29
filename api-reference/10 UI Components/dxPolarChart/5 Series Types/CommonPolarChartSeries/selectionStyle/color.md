@@ -36,7 +36,7 @@ Sets a color for a series when it is selected.
     <dx-polar-chart ... >
         <dxi-series ... >
             <dxo-selection-style
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-selection-style>
         </dxi-series>
     </dx-polar-chart>
@@ -47,7 +47,7 @@ Sets a color for a series when it is selected.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -58,7 +58,7 @@ Sets a color for a series when it is selected.
     <template>
         <DxPolarChart ... >
             <DxSeries ... >
-                <DxSelectionStyle :color="customPattern" />
+                <DxSelectionStyle :color="fill" />
             </DxSeries>
         </DxPolarChart>
     </template>
@@ -76,7 +76,7 @@ Sets a color for a series when it is selected.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -88,7 +88,7 @@ Sets a color for a series when it is selected.
     <template>
         <DxPolarChart ... >
             <DxSeries ... >
-                <DxSelectionStyle :color="customPattern" />
+                <DxSelectionStyle :color="fill" />
             </DxSeries>
         </DxPolarChart>
     </template>
@@ -97,7 +97,7 @@ Sets a color for a series when it is selected.
     import DxPolarChart, { DxSeries, DxSelectionStyle } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -106,10 +106,10 @@ Sets a color for a series when it is selected.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PolarChart, { Series, SelectionStyle } from 'devextreme-vue/chart'; 
+    import PolarChart, { Series, SelectionStyle } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -117,7 +117,7 @@ Sets a color for a series when it is selected.
         return ( 
             <PolarChart ... >
                 <Series ... >
-                    <SelectionStyle color={customPattern} />
+                    <SelectionStyle color={fill} />
                 </Series>
             </PolarChart>        
         ); 

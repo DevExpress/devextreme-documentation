@@ -32,7 +32,7 @@ Specifies the color of the pane's background.
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-pane-settings [backgroundColor]="customPattern">
+        <dxo-common-pane-settings [backgroundColor]="fill">
         </dxo-common-pane-settings>
     </dx-chart>
 
@@ -42,7 +42,7 @@ Specifies the color of the pane's background.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -53,7 +53,7 @@ Specifies the color of the pane's background.
     <template>
         <DxChart ... >
             <DxCommonPaneSettings
-                :background-color="customPattern"
+                :background-color="fill"
             />
         </DxChart>
     </template>
@@ -70,7 +70,7 @@ Specifies the color of the pane's background.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -82,7 +82,7 @@ Specifies the color of the pane's background.
     <template>
         <DxChart ... >
             <DxCommonPaneSettings
-                :background-color="customPattern"
+                :background-color="fill"
             />
         </DxChart>
     </template>
@@ -91,7 +91,7 @@ Specifies the color of the pane's background.
     import DxChart, { DxCommonPaneSettings } from 'devextreme-vue/chart'; 
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -100,17 +100,17 @@ Specifies the color of the pane's background.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, { CommonPaneSettings } from 'devextreme-vue/chart';
+    import Chart, { CommonPaneSettings } from 'devextreme-react/chart';
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
     export default function App() { 
         return ( 
             <Chart ... >
-                <CommonPaneSettings backgroundColor={customPattern} />
+                <CommonPaneSettings backgroundColor={fill} />
             </Chart>        
         ); 
     } 

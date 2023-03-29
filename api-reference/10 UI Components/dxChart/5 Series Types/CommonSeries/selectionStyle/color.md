@@ -36,7 +36,7 @@ Specifies the color of the series in the selected state.
     <dx-chart ... >
         <dxi-series ... >
             <dxo-selection-style
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-selection-style>
         </dxi-series>
     </dx-chart>
@@ -47,7 +47,7 @@ Specifies the color of the series in the selected state.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -58,7 +58,7 @@ Specifies the color of the series in the selected state.
     <template>
         <DxChart ... >
             <DxSeries ... >
-                <DxSelectionStyle :color="customPattern" />
+                <DxSelectionStyle :color="fill" />
             </DxSeries>
         </DxChart>
     </template>
@@ -76,7 +76,7 @@ Specifies the color of the series in the selected state.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -88,7 +88,7 @@ Specifies the color of the series in the selected state.
     <template>
         <DxChart ... >
             <DxSeries ... >
-                <DxSelectionStyle :color="customPattern" />
+                <DxSelectionStyle :color="fill" />
             </DxSeries>
         </DxChart>
     </template>
@@ -97,7 +97,7 @@ Specifies the color of the series in the selected state.
     import DxChart, { DxSeries, DxSelectionStyle } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -106,10 +106,10 @@ Specifies the color of the series in the selected state.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, { Series, SelectionStyle } from 'devextreme-vue/chart'; 
+    import Chart, { Series, SelectionStyle } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -117,7 +117,7 @@ Specifies the color of the series in the selected state.
         return ( 
             <Chart ... >
                 <Series ... >
-                    <SelectionStyle color={customPattern} />
+                    <SelectionStyle color={fill} />
                 </Series>
             </Chart>        
         ); 

@@ -34,7 +34,7 @@ The background color is used to indicate the area reserved for the range contain
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-range-container [backgroundColor]="customPattern">
+        <dxo-range-container [backgroundColor]="fill">
             <!-- ... -->
         </dxo-range-container>
     </dx-{widget-name}>
@@ -45,7 +45,7 @@ The background color is used to indicate the area reserved for the range contain
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -56,7 +56,7 @@ The background color is used to indicate the area reserved for the range contain
     <template>
         <Dx{WidgetName} ... >
             <DxRangeContainer
-                :background-color="customPattern"
+                :background-color="fill"
             >
                 <!-- ... -->
             </DxRangeContainer>
@@ -75,7 +75,7 @@ The background color is used to indicate the area reserved for the range contain
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -87,7 +87,7 @@ The background color is used to indicate the area reserved for the range contain
     <template>
         <Dx{WidgetName} ... >
             <DxRangeContainer
-                :background-color="customPattern"
+                :background-color="fill"
             >
                 <!-- ... -->
             </DxRangeContainer>
@@ -98,7 +98,7 @@ The background color is used to indicate the area reserved for the range contain
     import Dx{WidgetName}, { DxRangeContainer } from 'devextreme-vue/{widget-name}'; 
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -107,17 +107,17 @@ The background color is used to indicate the area reserved for the range contain
 
     <!-- tab: App.js -->
     import React from 'react';
-    import {WidgetName}, { RangeContainer } from 'devextreme-vue/{widget-name}';
+    import {WidgetName}, { RangeContainer } from 'devextreme-react/{widget-name}';
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
     export default function App() { 
         return ( 
             <{WidgetName} ... >
-                <RangeContainer backgroundColor={customPattern}>
+                <RangeContainer backgroundColor={fill}>
                     {/* ... */}
                 </RangeContainer>
             </{WidgetName}>        

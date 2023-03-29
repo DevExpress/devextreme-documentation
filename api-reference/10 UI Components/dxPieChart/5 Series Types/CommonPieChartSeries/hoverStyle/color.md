@@ -36,7 +36,7 @@ Sets a color for the series when it is hovered over.
     <dx-pie-chart ... >
         <dxi-series ... >
             <dxo-hover-style
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-hover-style>
         </dxi-series>
     </dx-pie-chart>
@@ -47,7 +47,7 @@ Sets a color for the series when it is hovered over.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -58,7 +58,7 @@ Sets a color for the series when it is hovered over.
     <template>
         <DxPieChart ... >
             <DxSeries ... >
-                <DxHoverStyle :color="customPattern" />
+                <DxHoverStyle :color="fill" />
             </DxSeries>
         </DxPieChart>
     </template>
@@ -76,7 +76,7 @@ Sets a color for the series when it is hovered over.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -88,7 +88,7 @@ Sets a color for the series when it is hovered over.
     <template>
         <DxPieChart ... >
             <DxSeries ... >
-                <DxHoverStyle :color="customPattern" />
+                <DxHoverStyle :color="fill" />
             </DxSeries>
         </DxPieChart>
     </template>
@@ -97,7 +97,7 @@ Sets a color for the series when it is hovered over.
     import DxPieChart, { DxSeries, DxHoverStyle } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -106,10 +106,10 @@ Sets a color for the series when it is hovered over.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PieChart, { Series, HoverStyle } from 'devextreme-vue/chart'; 
+    import PieChart, { Series, HoverStyle } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -117,7 +117,7 @@ Sets a color for the series when it is hovered over.
         return ( 
             <PieChart ... >
                 <Series ... >
-                    <HoverStyle color={customPattern} />
+                    <HoverStyle color={fill} />
                 </Series>
             </PieChart>        
         ); 

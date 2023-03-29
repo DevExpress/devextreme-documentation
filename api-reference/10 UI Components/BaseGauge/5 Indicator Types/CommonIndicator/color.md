@@ -31,7 +31,7 @@ Specifies a color of the indicator.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-value-indicator [color]="customPattern">
+        <dxo-value-indicator [color]="fill">
         </dxo-value-indicator>
     </dx-{widget-name}>
 
@@ -41,7 +41,7 @@ Specifies a color of the indicator.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -52,7 +52,7 @@ Specifies a color of the indicator.
     <template>
         <Dx{WidgetName} ... >
             <DxValueIndicator
-                :color="customPattern"
+                :color="fill"
             />
         </Dx{WidgetName}>
     </template>
@@ -69,7 +69,7 @@ Specifies a color of the indicator.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -81,7 +81,7 @@ Specifies a color of the indicator.
     <template>
         <Dx{WidgetName} ... >
             <DxValueIndicator
-                :color="customPattern"
+                :color="fill"
             />
         </Dx{WidgetName}>
     </template>
@@ -90,7 +90,7 @@ Specifies a color of the indicator.
     import Dx{WidgetName}, { DxValueIndicator } from 'devextreme-vue/{widget-name}'; 
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -99,17 +99,17 @@ Specifies a color of the indicator.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import {WidgetName}, { ValueIndicator } from 'devextreme-vue/{widget-name}';
+    import {WidgetName}, { ValueIndicator } from 'devextreme-react/{widget-name}';
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
     export default function App() { 
         return ( 
             <{WidgetName} ... >
-                <ValueIndicator color={customPattern} />
+                <ValueIndicator color={fill} />
             </{WidgetName}>        
         ); 
     } 

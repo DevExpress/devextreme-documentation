@@ -36,7 +36,7 @@ Sets a color for a series when it is hovered over.
     <dx-polar-chart ... >
         <dxi-series ... >
             <dxo-hover-style
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-hover-style>
         </dxi-series>
     </dx-polar-chart>
@@ -47,7 +47,7 @@ Sets a color for a series when it is hovered over.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -58,7 +58,7 @@ Sets a color for a series when it is hovered over.
     <template>
         <DxPolarChart ... >
             <DxSeries ... >
-                <DxHoverStyle :color="customPattern" />
+                <DxHoverStyle :color="fill" />
             </DxSeries>
         </DxPolarChart>
     </template>
@@ -76,7 +76,7 @@ Sets a color for a series when it is hovered over.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -88,7 +88,7 @@ Sets a color for a series when it is hovered over.
     <template>
         <DxPolarChart ... >
             <DxSeries ... >
-                <DxHoverStyle :color="customPattern" />
+                <DxHoverStyle :color="fill" />
             </DxSeries>
         </DxPolarChart>
     </template>
@@ -97,7 +97,7 @@ Sets a color for a series when it is hovered over.
     import DxPolarChart, { DxSeries, DxHoverStyle } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -106,10 +106,10 @@ Sets a color for a series when it is hovered over.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PolarChart, { Series, HoverStyle } from 'devextreme-vue/chart'; 
+    import PolarChart, { Series, HoverStyle } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -117,7 +117,7 @@ Sets a color for a series when it is hovered over.
         return ( 
             <PolarChart ... >
                 <Series ... >
-                    <HoverStyle color={customPattern} />
+                    <HoverStyle color={fill} />
                 </Series>
             </PolarChart>        
         ); 

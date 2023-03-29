@@ -36,7 +36,7 @@ Sets a color for a series when it is selected.
     <dx-pie-chart ... >
         <dxi-series ... >
             <dxo-selection-style
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-selection-style>
         </dxi-series>
     </dx-pie-chart>
@@ -47,7 +47,7 @@ Sets a color for a series when it is selected.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -58,7 +58,7 @@ Sets a color for a series when it is selected.
     <template>
         <DxPieChart ... >
             <DxSeries ... >
-                <DxSelectionStyle :color="customPattern" />
+                <DxSelectionStyle :color="fill" />
             </DxSeries>
         </DxPieChart>
     </template>
@@ -76,7 +76,7 @@ Sets a color for a series when it is selected.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -88,7 +88,7 @@ Sets a color for a series when it is selected.
     <template>
         <DxPieChart ... >
             <DxSeries ... >
-                <DxSelectionStyle :color="customPattern" />
+                <DxSelectionStyle :color="fill" />
             </DxSeries>
         </DxPieChart>
     </template>
@@ -97,7 +97,7 @@ Sets a color for a series when it is selected.
     import DxPieChart, { DxSeries, DxSelectionStyle } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -106,10 +106,10 @@ Sets a color for a series when it is selected.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PieChart, { Series, SelectionStyle } from 'devextreme-vue/chart'; 
+    import PieChart, { Series, SelectionStyle } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -117,7 +117,7 @@ Sets a color for a series when it is selected.
         return ( 
             <PieChart ... >
                 <Series ... >
-                    <SelectionStyle color={customPattern} />
+                    <SelectionStyle color={fill} />
                 </Series>
             </PieChart>        
         ); 

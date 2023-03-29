@@ -39,7 +39,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     <dx-polar-chart ... >
         <dxi-series ... >
             <dxo-point
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-point>
         </dxi-series>
     </dx-polar-chart>
@@ -50,7 +50,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -61,7 +61,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     <template>
         <DxPolarChart ... >
             <DxSeries ... >
-                <DxPoint :color="customPattern" />
+                <DxPoint :color="fill" />
             </DxSeries>
         </DxPolarChart>
     </template>
@@ -79,7 +79,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -91,7 +91,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     <template>
         <DxPolarChart ... >
             <DxSeries ... >
-                <DxPoint :color="customPattern" />
+                <DxPoint :color="fill" />
             </DxSeries>
         </DxPolarChart>
     </template>
@@ -100,7 +100,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
     import DxPolarChart, { DxSeries, DxPoint } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -109,10 +109,10 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PolarChart, { Series, Point } from 'devextreme-vue/chart'; 
+    import PolarChart, { Series, Point } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -120,7 +120,7 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
         return ( 
             <PolarChart ... >
                 <Series ... >
-                    <Point color={customPattern} />
+                    <Point color={fill} />
                 </Series>
             </PolarChart>        
         ); 

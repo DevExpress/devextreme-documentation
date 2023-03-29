@@ -36,7 +36,7 @@ Specifies a color of a range.
     <dx-{widget-name} ... >
         <dxo-range-container ... >
             <dxi-range [startValue]="0" [endValue]="50" color="#92000A"></dxi-range>
-            <dxi-range [startValue]="50" [endValue]="100" [color]="customPattern">
+            <dxi-range [startValue]="50" [endValue]="100" [color]="fill">
         </dxo-range-container>
     </dx-{widget-name}>
 
@@ -46,7 +46,7 @@ Specifies a color of a range.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -65,7 +65,7 @@ Specifies a color of a range.
                 <DxRange
                     :start-value="50"
                     :end-value="100"
-                    :color="customPattern"
+                    :color="fill"
                 />
             </DxRangeContainer>
         </Dx{WidgetName}>
@@ -84,7 +84,7 @@ Specifies a color of a range.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -104,7 +104,7 @@ Specifies a color of a range.
                 <DxRange
                     :start-value="50"
                     :end-value="100"
-                    :color="customPattern"
+                    :color="fill"
                 />
             </DxRangeContainer>
         </Dx{WidgetName}>
@@ -114,7 +114,7 @@ Specifies a color of a range.
     import Dx{WidgetName}, { DxRangeContainer, DxRange } from 'devextreme-vue/{widget-name}';
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -123,10 +123,10 @@ Specifies a color of a range.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import {WidgetName}, { RangeContainer, Range } from 'devextreme-vue/{widget-name}';
+    import {WidgetName}, { RangeContainer, Range } from 'devextreme-react/{widget-name}';
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -135,7 +135,7 @@ Specifies a color of a range.
             <{WidgetName} ... >
                 <RangeContainer ... >
                     <Range startValue={0} endValue={50} color="#92000A" />
-                    <Range startValue={50} endValue={100} color={customPattern} />
+                    <Range startValue={50} endValue={100} color={fill} />
                 </RangeContainer>
             </{WidgetName}>        
         ); 

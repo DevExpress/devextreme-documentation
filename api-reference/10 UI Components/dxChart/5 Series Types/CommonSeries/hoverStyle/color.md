@@ -36,7 +36,7 @@ Specifies the color of the series in the hovered state.
     <dx-chart ... >
         <dxi-series ... >
             <dxo-hover-style
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-hover-style>
         </dxi-series>
     </dx-chart>
@@ -47,7 +47,7 @@ Specifies the color of the series in the hovered state.
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -58,7 +58,7 @@ Specifies the color of the series in the hovered state.
     <template>
         <DxChart ... >
             <DxSeries ... >
-                <DxHoverStyle :color="customPattern" />
+                <DxHoverStyle :color="fill" />
             </DxSeries>
         </DxChart>
     </template>
@@ -76,7 +76,7 @@ Specifies the color of the series in the hovered state.
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -88,7 +88,7 @@ Specifies the color of the series in the hovered state.
     <template>
         <DxChart ... >
             <DxSeries ... >
-                <DxHoverStyle :color="customPattern" />
+                <DxHoverStyle :color="fill" />
             </DxSeries>
         </DxChart>
     </template>
@@ -97,7 +97,7 @@ Specifies the color of the series in the hovered state.
     import DxChart, { DxSeries, DxHoverStyle } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -106,10 +106,10 @@ Specifies the color of the series in the hovered state.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, { Series, HoverStyle } from 'devextreme-vue/chart'; 
+    import Chart, { Series, HoverStyle } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -117,7 +117,7 @@ Specifies the color of the series in the hovered state.
         return ( 
             <Chart ... >
                 <Series ... >
-                    <HoverStyle color={customPattern} />
+                    <HoverStyle color={fill} />
                 </Series>
             </Chart>        
         ); 

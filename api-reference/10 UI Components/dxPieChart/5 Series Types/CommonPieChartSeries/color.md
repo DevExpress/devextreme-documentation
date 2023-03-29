@@ -40,7 +40,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
     <!-- tab: app.component.html -->
     <dx-pie-chart ... >
         <dxi-series ...
-            [color]="customPattern"
+            [color]="fill"
         >
         </dxi-series>
     </dx-pie-chart>
@@ -51,7 +51,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             base: "#000000",
             fillId: this.customPatternId
         };
@@ -62,7 +62,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
     <!-- tab: App.vue (Options API) -->
     <template>
         <DxPieChart ... >
-            <DxSeries :color="customPattern" />
+            <DxSeries :color="fill" />
         </DxPieChart>
     </template>
 
@@ -78,7 +78,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     base: "#000000",
                     fillId: this.customPatternId
                 }
@@ -90,7 +90,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
     <!-- tab: App.vue (Composition API) -->
     <template>
         <DxPieChart ... >
-            <DxSeries :color="customPattern" />
+            <DxSeries :color="fill" />
         </DxPieChart>
     </template>
 
@@ -98,7 +98,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
     import DxPieChart, { DxSeries } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         base: "#000000",
         fillId: customPatternId
     };
@@ -108,10 +108,10 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PieChart, { Series } from 'devextreme-vue/chart'; 
+    import PieChart, { Series } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         base: "#000000",
         fillId: customPatternId
     };
@@ -119,7 +119,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
     export default function App() { 
         return ( 
             <PieChart ... >
-                <Series color={customPattern} />
+                <Series color={fill} />
             </PieChart>        
         ); 
     } 

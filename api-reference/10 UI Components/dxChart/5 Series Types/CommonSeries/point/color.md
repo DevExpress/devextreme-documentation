@@ -39,7 +39,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
     <dx-chart ... >
         <dxi-series ... >
             <dxo-point
-                [color]="customPattern"
+                [color]="fill"
             ></dxo-point>
         </dxi-series>
     </dx-chart>
@@ -50,7 +50,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
     export class AppComponent {
         // ...
         
-        customPattern = {
+        fill = {
             fillId: this.customPatternId
         };
     } 
@@ -61,7 +61,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
     <template>
         <DxChart ... >
             <DxSeries ... >
-                <DxPoint :color="customPattern" />
+                <DxPoint :color="fill" />
             </DxSeries>
         </DxChart>
     </template>
@@ -79,7 +79,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
         data() {
             return {
                 // ...
-                customPattern: {
+                fill: {
                     fillId: this.customPatternId
                 }
             }
@@ -91,7 +91,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
     <template>
         <DxChart ... >
             <DxSeries ... >
-                <DxPoint :color="customPattern" />
+                <DxPoint :color="fill" />
             </DxSeries>
         </DxChart>
     </template>
@@ -100,7 +100,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
     import DxChart, { DxSeries, DxPoint } from 'devextreme-vue/chart';  
     // ...
 
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
     </script>
@@ -109,10 +109,10 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, { Series, Point } from 'devextreme-vue/chart'; 
+    import Chart, { Series, Point } from 'devextreme-react/chart'; 
 
     // ...
-    const customPattern = {
+    const fill = {
         fillId: customPatternId
     };
 
@@ -120,7 +120,7 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
         return ( 
             <Chart ... >
                 <Series ... >
-                    <Point color={customPattern} />
+                    <Point color={fill} />
                 </Series>
             </Chart>        
         ); 

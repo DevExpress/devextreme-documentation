@@ -94,7 +94,7 @@ You can also specify a custom pattern or gradient instead of a plain color. Impl
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, { Series } from 'devextreme-vue/chart'; 
+    import Chart, { Series } from 'devextreme-react/chart'; 
 
     // ...
     const customPattern = {

@@ -25,6 +25,6 @@
             System.import('./index.js');
         </script>
 
-See examples on how to use jspm with <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/" target="_blank">jQuery</a> on GitHub. The **index.js** and **index.html** files contain the main code. Note that jQuery components require additional [integration module](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery).
+See examples on how to use jspm with <a href="https://github.com/DevExpress/devextreme-examples/tree/22_2/" target="_blank">jQuery</a> on GitHub. The **index.js** and **index.html** files contain the main code. Note that jQuery components require additional [integration module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery').
 
 [tags] jquery

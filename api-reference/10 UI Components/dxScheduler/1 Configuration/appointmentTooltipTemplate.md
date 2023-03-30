@@ -311,7 +311,7 @@ Specifies whether you click a button or an appointment element.
     import Tooltip from "./Tooltip.js";
 
     const App = () => {
-        const schedulerRef =  useRef(null);
+        const schedulerRef = useRef(null);
 
         const appointmentTooltip = useCallback((props) => {
             const scheduler = schedulerRef.current;

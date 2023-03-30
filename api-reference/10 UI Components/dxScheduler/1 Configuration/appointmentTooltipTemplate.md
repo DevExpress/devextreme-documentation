@@ -94,15 +94,6 @@ Specifies whether you click a button or an appointment element.
 
     <!-- tab: app.components.ts -->
 
-    @Pipe({ name: "getColor" })
-    class ColorPipe implements PipeTransform {
-        constructor(private service: Service) {}
-        transform(resourceID: number): string {
-            return this.service
-                .getEmployees()
-                .find((employee) => employee.id === resourceID).color;
-        }
-    }
 
     export class AppComponent {
         @ViewChild("targetScheduler", { static: true })

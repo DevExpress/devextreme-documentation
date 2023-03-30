@@ -35,7 +35,7 @@ Specifies whether you click a button or an appointment element.
 
     <!--JavaScript-->
     $(() => {
-        let scheduler = $('#schedulerContainer').dxScheduler({
+        const scheduler = $('#schedulerContainer').dxScheduler({
             appointmentTooltipTemplate(data, cell) {
                 const curResource = employees.find((resource) => resource.id === data.appointmentData.employeeID);
 

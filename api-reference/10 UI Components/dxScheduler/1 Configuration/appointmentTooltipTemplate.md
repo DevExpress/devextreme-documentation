@@ -319,10 +319,10 @@ Specifies whether you click a button or an appointment element.
             // NOTE: You can get color from resources with props.appointmentData.resouceId
             const color = '#337ab7';
 
-            const isDeleteButtonExist = !getDisabled(props.appointmentData.employeeID) &&
-                ((scheduler.instance.option("editing") &&
-                    scheduler.instance.option("editing.allowDeleting") === true) ||
-                    scheduler.instance.option("editing") === true);
+            const isAppointmentDisabled = data.appointmentData.disabled;
+            const isDeleteAllowed = (scheduler.option('editing') && scheduler.option('editing.allowDeleting') === true)
+              || scheduler.option('editing') === true;
+            const isDeleteButtonExist = !isAppointmentDisabled && isDeleteAllowed;
 
             const onDeleteButtonClick = (e) => {
                 scheduler.instance.deleteAppointment(props.appointmentData);

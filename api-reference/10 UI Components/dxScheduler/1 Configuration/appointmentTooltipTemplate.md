@@ -102,7 +102,7 @@ Specifies whether you click a button or an appointment element.
     
         constructor(private service: Service) {}
 
-        onDeleteButtonClick(e, appointmentData) {
+        onDeleteButtonClick(e: ClickEvent, appointmentData: dxSchedulerAppointment): void {
             this.scheduler.instance.deleteAppointment(appointmentData);
             e.event.stopPropagation();
             this.scheduler.instance.hideAppointmentTooltip();

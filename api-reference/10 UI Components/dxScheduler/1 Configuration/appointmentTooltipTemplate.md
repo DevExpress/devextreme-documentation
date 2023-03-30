@@ -93,7 +93,6 @@ Specifies whether you click a button or an appointment element.
     </dx-scheduler>
 
     <!-- tab: app.components.ts -->
-    import { TooltipModule } from "./tooltip/tooltip.component";
 
     @Pipe({ name: "getColor" })
     class ColorPipe implements PipeTransform {

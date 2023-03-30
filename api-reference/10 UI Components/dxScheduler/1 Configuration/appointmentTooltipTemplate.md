@@ -166,7 +166,6 @@ Specifies whether you click a button or an appointment element.
         declarations: [TooltipComponent],
         exports: [TooltipComponent]
     })
-    
     export class TooltipModule {}
 
 

@@ -153,6 +153,7 @@ Specifies whether you click a button or an appointment element.
         selector: "Tooltip",
         templateUrl: "./tooltip.component.html"
     })
+
     export class TooltipComponent {
         @Input() appointmentData: dxSchedulerAppointment;
         @Input() markerColor: string;
@@ -178,13 +179,13 @@ Specifies whether you click a button or an appointment element.
             appointment-tooltip-template="appointmentTooltipTemplate"
         >
             <template #appointmentTooltipTemplate="{ data }">
-      <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
-      <Tooltip
-        :data="data"
-        :markerColor="'#337ab7'"
-        :isDeleteButtonExist="isDeleteButtonExist(data)"
-        @delete-button-click="onDeleteButtonClick($event, data)"
-      />
+                <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
+                <Tooltip
+                    :data="data"
+                    :markerColor="#337ab7"
+                    :isDeleteButtonExist="isDeleteButtonExist(data)"
+                    @delete-button-click="onDeleteButtonClick($event, data)"
+                />
             </template>
         </DxScheduler>
     </template>
@@ -209,13 +210,13 @@ Specifies whether you click a button or an appointment element.
                 e.event.stopPropagation();
                 this.scheduler.hideAppointmentTooltip();
             },
-isDeleteButtonExist(data) {
-      const isAppointmentDisabled = data.appointmentData.disabled;
-      const isDeleteAllowed = (this.scheduler.option('editing') && this.scheduler.option('editing.allowDeleting') === true)
-              || this.scheduler.option('editing') === true;
-      
-      return !isAppointmentDisabled && isDeleteAllowed;
-    }
+            isDeleteButtonExist(data) {
+                const isAppointmentDisabled = data.appointmentData.disabled;
+                const isDeleteAllowed = (this.scheduler.option('editing') && this.scheduler.option('editing.allowDeleting') === true)
+                    || this.scheduler.option('editing') === true;
+                
+                return !isAppointmentDisabled && isDeleteAllowed;
+            }
         },
         computed: {
             scheduler: function() {
@@ -288,16 +289,12 @@ isDeleteButtonExist(data) {
     };
     </script>
 
-
 ##### React
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-
     import 'devextreme/dist/css/dx.light.css';
-
     import Scheduler from 'devextreme-react/scheduler';
-
     import Tooltip from "./Tooltip.js";
 
     const App = () => {
@@ -311,7 +308,7 @@ isDeleteButtonExist(data) {
 
             const isAppointmentDisabled = data.appointmentData.disabled;
             const isDeleteAllowed = (scheduler.option('editing') && scheduler.option('editing.allowDeleting') === true)
-              || scheduler.option('editing') === true;
+                || scheduler.option('editing') === true;
             const isDeleteButtonExist = !isAppointmentDisabled && isDeleteAllowed;
 
             const onDeleteButtonClick = (e) => {

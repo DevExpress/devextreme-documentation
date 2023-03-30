@@ -129,7 +129,7 @@ Specifies whether you click a button or an appointment element.
         <div class="dx-tooltip-appointment-item-content">
             <div class="dx-tooltip-appointment-item-content">
                 <div class="dx-tooltip-appointment-item-content-subject">
-                    {{data.appointmentData.text}}
+                    {{appointmentData.text}}
                 </div>
                 <div class="dx-tooltip-appointment-item-content-date">
                     {{data.appointmentData.startDate}}

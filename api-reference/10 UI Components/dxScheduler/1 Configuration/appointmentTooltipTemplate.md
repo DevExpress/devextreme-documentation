@@ -357,7 +357,7 @@ Specifies whether you click a button or an appointment element.
     const  Tooltip = (props) => {
         const onDeleteButtonClick = useCallback((e) => {
             props.onDeleteButtonClick(e);
-        }, []);
+        }, [props.onDeleteButtonClick]);
 
         return (
             <div className={"dx-tooltip-appointment-item"}>

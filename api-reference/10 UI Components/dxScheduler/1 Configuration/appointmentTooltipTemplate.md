@@ -316,15 +316,8 @@ Specifies whether you click a button or an appointment element.
         const appointmentTooltip = useCallback((props) => {
             const scheduler = schedulerRef.current;
 
-            const getDisabled = (employeeID) => employees.find((employee) => {
-                return employee.id === employeeID;
-            }).disabled;
-
-            const getColor = (employeeID) => employees.find((employee) => {
-                return employee.id === employeeID;
-            }).color;
-
-            const color = getColor(props.appointmentData.employeeID);
+            // NOTE: You can get color from resources with props.appointmentData.resouceId
+            const color = '#337ab7';
 
             const isDeleteButtonExist = !getDisabled(props.appointmentData.employeeID) &&
                 ((scheduler.instance.option("editing") &&

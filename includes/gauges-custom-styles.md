@@ -1,10 +1,10 @@
-You can add a custom pattern or gradient fill to the following gauge elements:
+You can use the following properties to colorize gauge elements:
 
 - [Range color]({basewidgetpath}/Configuration/rangeContainer/ranges/#color)
 - [RangeContainer background color]({basewidgetpath}/Configuration/rangeContainer/#backgroundColor)
 - [ValueIndicator color]({basewidgetpath}/UI_Components/dxCircularGauge/Configuration/valueIndicator/#color)
 
-Use the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to create a custom pattern or gradient.
+You can also add a custom pattern or gradient fill to the elements. Use the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to create a custom pattern or gradient.
 
 The following example adds a gradient to one of the ranges in a gauge:
 

@@ -155,9 +155,9 @@ Specifies whether you click a button or an appointment element.
         templateUrl: "./tooltip.component.html"
     })
     export class TooltipComponent {
-        @Input() data?: any;
-        @Input() markerColor?: string;
-        @Input() isDeleteButtonExist?: boolean;
+        @Input() appointmentData: dxSchedulerAppointment;
+        @Input() markerColor: string;
+        @Input() isDeleteButtonExist: boolean;
         @Output() onDeleteButtonClick = new EventEmitter<ClickEvent>();
     }
 

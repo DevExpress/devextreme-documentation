@@ -37,14 +37,15 @@ Specifies whether you click a button or an appointment element.
     $(() => {
         const scheduler = $('#schedulerContainer').dxScheduler({
             appointmentTooltipTemplate(data, cell) {
-                const curResource = employees.find((resource) => resource.id === data.appointmentData.employeeID);
-
-                const tooltip = $('<div class="dx-tooltip-appointment-item">');
-                const marker = $('<div class="dx-tooltip-appointment-item-marker">')
-                    .append($('<div class="dx-tooltip-appointment-item-marker-body">').css('background', curResource.color));
-                const content = $('<div class="dx-tooltip-appointment-item-content">')
-                    .append($('<div class="dx-tooltip-appointment-item-content-subject">').text(data.appointmentData.text))
-                    .append($('<div class="dx-tooltip-appointment-item-content-date">').text(data.appointmentData.startDate));
+            const tooltip = $('<div class="dx-tooltip-appointment-item">');
+          
+            // NOTE: You can get color from resources with data.appointmentData.resouceId
+            const markerColor = '#337ab7';
+            const markerBody = $('<div class="dx-tooltip-appointment-item-marker-body">').css('background', markerColor);
+            const marker = $('<div class="dx-tooltip-appointment-item-marker">').append(markerBody);
+            const content = $('<div class="dx-tooltip-appointment-item-content">')
+                .append($('<div class="dx-tooltip-appointment-item-content-subject">').text(data.appointmentData.text))
+                .append($('<div class="dx-tooltip-appointment-item-content-date">').text(data.appointmentData.startDate));
 
                 tooltip.append(marker);
                 tooltip.append(content);

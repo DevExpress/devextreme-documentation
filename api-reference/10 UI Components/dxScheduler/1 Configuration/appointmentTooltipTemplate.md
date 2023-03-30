@@ -31,7 +31,7 @@ Specifies whether you click a button or an appointment element.
 ---
 
 ---
-#####jQuery
+##### jQuery
 
     <!--JavaScript-->
     $(() => {
@@ -75,30 +75,28 @@ Specifies whether you click a button or an appointment element.
         }).dxScheduler('instance');
     })
 
-#####Angular
+##### Angular
 
     <!-- tab: app.component.html -->
     <dx-scheduler
         #targetScheduler
         appointmentTooltipTemplate="appointmentTooltipTemplate"
     >
-        <div *dxTemplate="let data of 'appointmentTooltipTemplate'">
+        <ng-container *dxTemplate="let data of 'appointmentTooltipTemplate'">
+            <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
             <Tooltip
                 [appointmentData]="data.appointmentData"
                 [isDeleteButtonExist]="isDeleteButtonExist(data)"
-                [markerColor]="data.appointmentData.employeeID | getColor"
+                [markerColor]="#337ab7"
                 (onDeleteButtonClick)="onDeleteButtonClick($event, data.appointmentData)"
             ></Tooltip>
-        </div>
+        </ng-container>
     </dx-scheduler>
 
     <!-- tab: app.components.ts -->
-
-
     export class AppComponent {
         @ViewChild("targetScheduler", { static: true })
         scheduler: DxSchedulerComponent;
-    
     
         constructor(private service: Service) {}
 
@@ -108,14 +106,15 @@ Specifies whether you click a button or an appointment element.
             this.scheduler.instance.hideAppointmentTooltip();
         }
     
-  isDeleteButtonExist({ appointmentData }: { appointmentData: dxSchedulerAppointment}): boolean {
-    const schedulerInstance = this.scheduler.instance;
-    const isAppointmentDisabled = appointmentData.disabled;
-    const isDeleteAllowed = (schedulerInstance.option('editing') && schedulerInstance.option('editing.allowDeleting') === true)
-     || schedulerInstance.option('editing') === true;
-    
-    return !isAppointmentDisabled && isDeleteAllowed;
-  }
+        isDeleteButtonExist({ appointmentData }: { appointmentData: dxSchedulerAppointment}): boolean {
+            const schedulerInstance = this.scheduler.instance;
+            const isAppointmentDisabled = appointmentData.disabled;
+            const isDeleteAllowed = (schedulerInstance.option('editing') && schedulerInstance.option('editing.allowDeleting') === true)
+            || schedulerInstance.option('editing') === true;
+            
+            return !isAppointmentDisabled && isDeleteAllowed;
+        }
+    }
 
     <!-- tab: tooltip.component.html -->
     <div class="dx-tooltip-appointment-item">
@@ -150,7 +149,7 @@ Specifies whether you click a button or an appointment element.
     </div>
 
     <!-- tab: tooltip.components.ts -->
-@Component({
+    @Component({
         selector: "Tooltip",
         templateUrl: "./tooltip.component.html"
     })
@@ -166,8 +165,8 @@ Specifies whether you click a button or an appointment element.
         declarations: [TooltipComponent],
         exports: [TooltipComponent]
     })
-    export class TooltipModule {}
 
+    export class TooltipModule {}
 
 ##### Vue
 

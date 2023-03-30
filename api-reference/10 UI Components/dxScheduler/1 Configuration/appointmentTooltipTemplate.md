@@ -37,24 +37,24 @@ Specifies whether you click a button or an appointment element.
     $(() => {
         const scheduler = $('#schedulerContainer').dxScheduler({
             appointmentTooltipTemplate(data, cell) {
-            const tooltip = $('<div class="dx-tooltip-appointment-item">');
-          
-            // NOTE: You can get color from resources with data.appointmentData.resouceId
-            const markerColor = '#337ab7';
-            const markerBody = $('<div class="dx-tooltip-appointment-item-marker-body">').css('background', markerColor);
-            const marker = $('<div class="dx-tooltip-appointment-item-marker">').append(markerBody);
-            const content = $('<div class="dx-tooltip-appointment-item-content">')
-                .append($('<div class="dx-tooltip-appointment-item-content-subject">').text(data.appointmentData.text))
-                .append($('<div class="dx-tooltip-appointment-item-content-date">').text(data.appointmentData.startDate));
+                const tooltip = $('<div class="dx-tooltip-appointment-item">');
+
+                // NOTE: You can get color from resources with data.appointmentData.resouceId
+                const markerColor = '#337ab7';
+                const markerBody = $('<div class="dx-tooltip-appointment-item-marker-body">').css('background', markerColor);
+                const marker = $('<div class="dx-tooltip-appointment-item-marker">').append(markerBody);
+                const content = $('<div class="dx-tooltip-appointment-item-content">')
+                    .append($('<div class="dx-tooltip-appointment-item-content-subject">').text(data.appointmentData.text))
+                    .append($('<div class="dx-tooltip-appointment-item-content-date">').text(data.appointmentData.startDate));
 
                 tooltip.append(marker);
                 tooltip.append(content);
 
-            const isAppointmentDisabled = data.appointmentData.disabled;
-            const isDeleteAllowed = (scheduler.option('editing') && scheduler.option('editing.allowDeleting') === true)
-              || scheduler.option('editing') === true;
+                const isAppointmentDisabled = data.appointmentData.disabled;
+                const isDeleteAllowed = (scheduler.option('editing') && scheduler.option('editing.allowDeleting') === true)
+                    || scheduler.option('editing') === true;
 
-            if(!isAppointmentDisabled && isDeleteAllowed) {
+                if (!isAppointmentDisabled && isDeleteAllowed) {
                     const buttonContainer = $('<div class="dx-tooltip-appointment-item-delete-button-container">');
                     const button = $('<div class="dx-tooltip-appointment-item-delete-button">').dxButton({
                         icon: 'trash',
@@ -110,7 +110,7 @@ Specifies whether you click a button or an appointment element.
             const schedulerInstance = this.scheduler.instance;
             const isAppointmentDisabled = appointmentData.disabled;
             const isDeleteAllowed = (schedulerInstance.option('editing') && schedulerInstance.option('editing.allowDeleting') === true)
-            || schedulerInstance.option('editing') === true;
+                || schedulerInstance.option('editing') === true;
             
             return !isAppointmentDisabled && isDeleteAllowed;
         }
@@ -178,12 +178,13 @@ Specifies whether you click a button or an appointment element.
             appointment-tooltip-template="appointmentTooltipTemplate"
         >
             <template #appointmentTooltipTemplate="{ data }">
-                <Tooltip
-                    :data="data"
-                    @delete-button-click="onDeleteButtonClick($event, data)"
-                    :markerColor="getColor(data.appointmentData.employeeID)"
-                    :isDeleteButtonExist="getDeleteButtonStatus(data)"
-                />
+      <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
+      <Tooltip
+        :data="data"
+        :markerColor="'#337ab7'"
+        :isDeleteButtonExist="isDeleteButtonExist(data)"
+        @delete-button-click="onDeleteButtonClick($event, data)"
+      />
             </template>
         </DxScheduler>
     </template>
@@ -208,23 +209,13 @@ Specifies whether you click a button or an appointment element.
                 e.event.stopPropagation();
                 this.scheduler.hideAppointmentTooltip();
             },
-            getColor(employeeID) {
-                return employees.find((employee) => {
-                    return employee.id === employeeID;
-                }).color;
-            },
-            getDeleteButtonStatus(data) {
-                function getDisabled(employeeID) {
-                    return employees.find((employee) => {
-                        return employee.id === employeeID;
-                    }).disabled;
-                }
-                
-                return !getDisabled(data.appointmentData.employeeID) &&
-                ((this.scheduler.option("editing") &&
-                this.scheduler.option("editing.allowDeleting") === true) ||
-                this.scheduler.option("editing") === true)
-            }
+isDeleteButtonExist(data) {
+      const isAppointmentDisabled = data.appointmentData.disabled;
+      const isDeleteAllowed = (this.scheduler.option('editing') && this.scheduler.option('editing.allowDeleting') === true)
+              || this.scheduler.option('editing') === true;
+      
+      return !isAppointmentDisabled && isDeleteAllowed;
+    }
         },
         computed: {
             scheduler: function() {

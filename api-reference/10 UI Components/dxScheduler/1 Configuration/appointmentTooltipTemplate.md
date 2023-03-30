@@ -84,7 +84,7 @@ Specifies whether you click a button or an appointment element.
     >
         <div *dxTemplate="let data of 'appointmentTooltipTemplate'">
             <Tooltip
-                [data]="data"
+                [appointmentData]="data.appointmentData"
                 [isDeleteButtonExist]="isDeleteButtonExist(data)"
                 [markerColor]="data.appointmentData.employeeID | getColor"
                 (onDeleteButtonClick)="onDeleteButtonClick($event, data.appointmentData)"

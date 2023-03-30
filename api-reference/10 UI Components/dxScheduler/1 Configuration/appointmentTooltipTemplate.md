@@ -97,7 +97,6 @@ Specifies whether you click a button or an appointment element.
 
     export class AppComponent {
         @ViewChild("targetScheduler", { static: true })
-
         scheduler: DxSchedulerComponent;
     
         resourcesDataSource = this.service.getEmployees();

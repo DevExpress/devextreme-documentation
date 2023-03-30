@@ -154,7 +154,6 @@ Specifies whether you click a button or an appointment element.
         selector: "Tooltip",
         templateUrl: "./tooltip.component.html"
     })
-
     export class TooltipComponent {
         @Input() data?: any;
         @Input() markerColor?: string;

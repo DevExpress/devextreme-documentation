@@ -31,7 +31,7 @@ The example below shows how to define the **fieldTemplate**. If you want to cust
             fieldTemplate(data, container) {
                 container.append(
                     $('<div>').dxTextBox({
-                        value: data && data.Name,
+                        value: data.Category + ": " + data.Name,
                         readOnly: true
                     })
                 )
@@ -48,7 +48,7 @@ The example below shows how to define the **fieldTemplate**. If you want to cust
         <div *dxTemplate="let data of 'field'">
             <div>
                 <dx-text-box 
-                    [value]="data && data.Name" 
+                    [value]="data && data.Category + ': ' + data.Name" 
                     [readOnly]="true"
                 >
                 </dx-text-box>
@@ -65,7 +65,7 @@ The example below shows how to define the **fieldTemplate**. If you want to cust
         >
             <template #field="{ data }">
                 <DxTextBox 
-                    :value="data && data.Name" 
+                    :value="data && data.Category + ': ' + data.Name" 
                     :read-only="true"
                 />
             </template>
@@ -98,14 +98,14 @@ The example below shows how to define the **fieldTemplate**. If you want to cust
     import TextBox from "devextreme-react/text-box";
 
     function Field(data) {
-        return <TextBox value={data && data.Name} readOnly={true} />;
+        return <TextBox value={data && data.Category + ': ' + data.Name} readOnly={true} />;
     }
     function App() {
         return (
-        <{WidgetName} ...
-            fieldRender={Field}
-        />
-        </div>
+            <{WidgetName} ...
+                fieldRender={Field}
+            />
+            </div>
         );
     }
 

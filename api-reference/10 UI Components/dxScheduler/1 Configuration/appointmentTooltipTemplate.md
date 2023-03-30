@@ -150,7 +150,7 @@ Specifies whether you click a button or an appointment element.
     </div>
 
     <!-- tab: tooltip.components.ts -->
-        @Component({
+@Component({
         selector: "Tooltip",
         templateUrl: "./tooltip.component.html"
     })

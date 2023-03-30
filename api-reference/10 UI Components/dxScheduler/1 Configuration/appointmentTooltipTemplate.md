@@ -108,19 +108,14 @@ Specifies whether you click a button or an appointment element.
             this.scheduler.instance.hideAppointmentTooltip();
         }
     
-        isDeleteButtonExist(data) {
-            const isDisabled = this.resourcesDataSource.find(
-                (employee) => employee.id === data.appointmentData.employeeID
-            ).disabled;
-            
-            return (
-                !isDisabled &&
-                ((this.scheduler.instance.option("editing") &&
-                this.scheduler.instance.option("editing.allowDeleting") === true) ||
-                this.scheduler.instance.option("editing") === true)
-            );
-        }
-    }
+  isDeleteButtonExist({ appointmentData }: { appointmentData: dxSchedulerAppointment}): boolean {
+    const schedulerInstance = this.scheduler.instance;
+    const isAppointmentDisabled = appointmentData.disabled;
+    const isDeleteAllowed = (schedulerInstance.option('editing') && schedulerInstance.option('editing.allowDeleting') === true)
+     || schedulerInstance.option('editing') === true;
+    
+    return !isAppointmentDisabled && isDeleteAllowed;
+  }
 
     <!-- tab: tooltip.component.html -->
     <div class="dx-tooltip-appointment-item">

@@ -50,10 +50,11 @@ Specifies whether you click a button or an appointment element.
                 tooltip.append(marker);
                 tooltip.append(content);
 
-                const isButtonExist = !curResource.disabled && (scheduler.option('editing')
-                    && scheduler.option('editing.allowDeleting') === true || scheduler.option('editing') === true);
+            const isAppointmentDisabled = data.appointmentData.disabled;
+            const isDeleteAllowed = (scheduler.option('editing') && scheduler.option('editing.allowDeleting') === true)
+              || scheduler.option('editing') === true;
 
-                if(isButtonExist) {
+            if(!isAppointmentDisabled && isDeleteAllowed) {
                     const buttonContainer = $('<div class="dx-tooltip-appointment-item-delete-button-container">');
                     const button = $('<div class="dx-tooltip-appointment-item-delete-button">').dxButton({
                         icon: 'trash',

@@ -27,3 +27,5 @@ The specified visual range is adjusted automatically when the argument axis is z
 - **Axis**.[visualRange()](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRange')
 - [zoomAndPan](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/zoomAndPan '/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/')
 - [onZoomStart](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onZoomStart.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onZoomStart') | [onZoomEnd](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onZoomEnd.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onZoomEnd')
+- [valueMarginsEnabled](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueMarginsEnabled)
+- [endOnTick](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#endOnTick)

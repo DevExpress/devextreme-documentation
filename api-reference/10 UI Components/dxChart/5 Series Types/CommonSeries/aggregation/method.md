@@ -7,7 +7,7 @@ type: Enums.ChartSeriesAggregationMethod
 Specifies how to aggregate series points.
 
 ---
-Series points are aggregated by individual [aggregation intervals](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') (on [continuous and logarithmic axes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type')) or by categories (on discrete axes if [aggregateByCategory](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregateByCategory.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory') is **true**). 
+Series points are aggregated by individual [aggregation intervals](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') (on [continuous and logarithmic axes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type')).
 
 The following list describes available aggregation methods per series type:
 

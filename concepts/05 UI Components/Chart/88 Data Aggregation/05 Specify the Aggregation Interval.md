@@ -1,4 +1,4 @@
-Series points are grouped for aggregation using intervals: those points that fall within the same interval on the argument axis get aggregated together. You can specify the length of the intervals in axis units (numbers or dates), in pixels, or aggregate points by categories:
+Series points are grouped for aggregation using intervals: those points that fall within the same interval on the argument axis get aggregated together. You can specify the length of the intervals in axis units (numbers or dates) or in pixels:
 
 - **Axis units** (for continuous and logarithmic [axes](/concepts/05%20UI%20Components/Chart/20%20Axes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Axes/Overview/') only)       
 Use the **argumentAxis**.[aggregationInterval](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') property. 
@@ -174,87 +174,6 @@ Use the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Compon
                 return (
                     <Chart ... >
                         <ArgumentAxis aggregationGroupWidth={100} /> {/* A new interval every 100 pixels */}
-                    </Chart>
-                );
-            }
-        }
-
-        export default App;
-
-    ---
-
-- **Categories**        
-Aggregation by categories can be applied only when the axis displays [categories](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/categories.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#categories'), and each category contains two or more points. To apply it, set **argumentAxis**.[aggregateByCategory](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregateByCategory.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory') to **true**:
-
-    ---
-    ##### jQuery
-
-        <!--JavaScript-->$(function() {
-            $("#chartContainer").dxChart({
-                // ...
-                argumentAxis: {
-                    aggregateByCategory: true
-                }
-            });
-        });
-
-    ##### Angular
-
-        <!--HTML--><dx-chart ... >
-            <dxo-argument-axis
-                [aggregateByCategory]="true">
-            </dxo-argument-axis>
-        </dx-chart>
-
-        <!--TypeScript-->
-        import { DxChartModule } from "devextreme-angular";
-        // ...
-        export class AppComponent {
-            // ...
-        }
-        @NgModule({
-            imports: [
-                // ...
-                DxChartModule
-            ],
-            // ...
-        })
-
-    ##### Vue
-
-        <!-- tab: App.vue -->
-        <template> 
-            <DxChart ... >
-                <DxArgumentAxis :aggregate-by-category="true"/>
-            </DxChart>
-        </template>
-
-        <script>
-        import DxChart, {
-            DxArgumentAxis
-        } from 'devextreme-vue/chart';
-
-        export default {
-            components: {
-                DxChart,
-                DxArgumentAxis
-            }
-        }
-        </script>
-
-    ##### React
-
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart, {
-            ArgumentAxis
-        } from 'devextreme-react/chart';
-
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <ArgumentAxis aggregateByCategory={true} />
                     </Chart>
                 );
             }

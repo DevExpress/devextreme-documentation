@@ -7,9 +7,9 @@ type: Enums.ChartSeriesAggregationMethod
 Specifies how to aggregate series points.
 
 ---
-Series points are aggregated by individual [aggregation intervals](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') (on [continuous and logarithmic axes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type')) or by categories (on discrete axes if [aggregateByCategory](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregateByCategory.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory') is **true**). 
+Series points are aggregated by individual [aggregation intervals](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/') (on [continuous and logarithmic axes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type')) or by categories (on discrete axes).
 
-The following list describes available aggregation methods per series type:
+The following list describes available aggregation methods for series type:
 
 - **[Line](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Line_Series/'), [bar](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/20%20Bar%20Series '/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/'), [area](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/30%20Area%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Area_Series/'), and [Scatter](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/40%20Scatter%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Scatter_Series/') series:**     
 

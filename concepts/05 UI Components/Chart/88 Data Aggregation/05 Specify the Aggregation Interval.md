@@ -184,5 +184,5 @@ Use the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Compon
     ---
 
 - **Categories**        
-Aggregation by categories can be applied when the axis displays discrete data and arguments can be repeated. These arguments are displayed as a single point. 
+Aggregation by category can be applied when the axis displays discrete data and arguments can be repeated. These arguments are displayed as a single point. 
 You do not need to specify any additional properties to set up aggregation by categories.

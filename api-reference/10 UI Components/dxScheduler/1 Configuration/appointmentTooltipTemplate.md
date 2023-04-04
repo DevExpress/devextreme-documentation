@@ -95,7 +95,7 @@ Specifies whether you click a button or an appointment element.
 
     <!-- tab: app.components.ts -->
     export class AppComponent {
-        @ViewChild("targetScheduler", { static: true })
+        @ViewChild('targetScheduler', { static: true })
         scheduler: DxSchedulerComponent;
     
         constructor(private service: Service) {}
@@ -174,7 +174,7 @@ Specifies whether you click a button or an appointment element.
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-            :ref="schedulerRefKey"
+            ref="schedulerRefKey"
             ...
             appointment-tooltip-template="appointmentTooltipTemplate"
         >
@@ -182,8 +182,8 @@ Specifies whether you click a button or an appointment element.
                 <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
                 <Tooltip
                     :data="data"
-                    :markerColor="#337ab7"
-                    :isDeleteButtonExist="isDeleteButtonExist(data)"
+                    marker-color="#337ab7"
+                    :is-delete-button-exist="isDeleteButtonExist(data)"
                     @delete-button-click="onDeleteButtonClick($event, data)"
                 />
             </template>
@@ -192,7 +192,7 @@ Specifies whether you click a button or an appointment element.
 
     <script>
     import Tooltip from './Tooltip.vue';
-    const schedulerRefKey = "my-scheduler";
+    const schedulerRefKey = 'my-scheduler';
 
     export default {
         components: {
@@ -204,16 +204,16 @@ Specifies whether you click a button or an appointment element.
                 schedulerRefKey
             };
         },
-        methods:{
-            onDeleteButtonClick(e, data){
+        methods: {
+            onDeleteButtonClick(e, data) {
                 this.scheduler.deleteAppointment(data.appointmentData);
                 e.event.stopPropagation();
                 this.scheduler.hideAppointmentTooltip();
             },
             isDeleteButtonExist(data) {
                 const isAppointmentDisabled = data.appointmentData.disabled;
-                const isDeleteAllowed = (this.scheduler.option('editing') && this.scheduler.option('editing.allowDeleting') === true)
-                    || this.scheduler.option('editing') === true;
+                const isDeleteAllowed = (this.scheduler.option('editing') && this.scheduler.option('editing.allowDeleting'=== true) 
+                    || this.scheduler.option('editing') === true);
                 
                 return !isAppointmentDisabled && isDeleteAllowed;
             }
@@ -249,7 +249,7 @@ Specifies whether you click a button or an appointment element.
                 <DxButton
                     class="dx-tooltip-appointment-item-delete-button"
                     icon="trash"
-                    stylingMode="text"
+                    styling-mode="text"
                     @click="onClick"
                 ></DxButton>
             </div>
@@ -257,7 +257,7 @@ Specifies whether you click a button or an appointment element.
     </template>
 
     <script>
-    import {DxButton} from 'devextreme-vue/button';
+    import { DxButton } from 'devextreme-vue/button';
     import { employees } from './data.js';
 
     export default {
@@ -270,8 +270,8 @@ Specifies whether you click a button or an appointment element.
             };
         },
         methods: {
-            onClick(e){
-                this.$emit('delete-button-click', e);
+            onClick(e) {
+                this.$emit("delete-button-click", e);
             },
         },
         props: {
@@ -293,9 +293,10 @@ Specifies whether you click a button or an appointment element.
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
     import Scheduler from 'devextreme-react/scheduler';
-    import Tooltip from "./Tooltip.js";
+    import Tooltip from './Tooltip.js';
+
+    import 'devextreme/dist/css/dx.light.css';
 
     const App = () => {
         const schedulerRef = useRef(null);

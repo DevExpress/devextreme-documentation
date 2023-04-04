@@ -15,7 +15,7 @@ The `x` coordinate.
 The `y` coordinate.
 
 ---
-The origin is at the upper left corner of the Chart. The coordinates represent the distance between a label and the origin and should be positive numbers.
+The origin is at the upper-left corner of the Chart. The coordinates are positive numbers that specify the distance between the origin and the label.
 
 The following example moves label of a point of a bar Chart to the position above the bar:
 

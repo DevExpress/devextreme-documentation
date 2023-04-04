@@ -7038,6 +7038,11 @@
       "react": "Item",
       "vue": "DxItem"
     },
+    "dxMenuItem.linkAttr": {
+      "angular": "dxo-link-attr",
+      "react": "LinkAttr",
+      "vue": "DxLinkAttr"
+    },
     "dxMenuOptions.adaptivityEnabled": {
       "vue": "adaptivity-enabled"
     },

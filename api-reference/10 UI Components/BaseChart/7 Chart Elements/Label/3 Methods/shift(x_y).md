@@ -28,6 +28,7 @@ The following example customizes a Bar Chart. The code moves a label to the top 
             // ...
             series: {
                 // ...
+                type: 'bar',
                 label: {
                     visible: true,
                 }

@@ -17,7 +17,7 @@ The `y` coordinate.
 ---
 The origin is at the upper-left corner of the Chart. The coordinates are positive numbers that specify the distance between the origin and the label.
 
-The following example customizes a Bar Chart. The code moves a label to the top of the corresponding bar. 
+The following example customizes a Bar Chart. The code moves the label to the top of the corresponding bar. 
 
 ---
 ##### jQuery

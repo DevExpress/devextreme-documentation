@@ -39,7 +39,7 @@ Specifies whether you click a button or an appointment element.
             appointmentTooltipTemplate(data, cell) {
                 const tooltip = $('<div class="dx-tooltip-appointment-item">');
 
-                // NOTE: You can get color from resources with data.appointmentData.resouceId
+                // NOTE: You can use data.appointmentData.resouceId to obtain resource color
                 const markerColor = '#337ab7';
                 const markerBody = $('<div class="dx-tooltip-appointment-item-marker-body">').css('background', markerColor);
                 const marker = $('<div class="dx-tooltip-appointment-item-marker">').append(markerBody);

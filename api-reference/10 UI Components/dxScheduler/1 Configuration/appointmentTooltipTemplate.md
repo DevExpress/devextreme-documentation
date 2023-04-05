@@ -83,7 +83,8 @@ Specifies whether you click a button or an appointment element.
         appointmentTooltipTemplate="appointmentTooltipTemplate"
     >
         <ng-container *dxTemplate="let data of 'appointmentTooltipTemplate'">
-            <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
+            <!-- NOTE: You can use data.appointmentData.resouceId to obtain resource color -->
+                                                 
             <Tooltip
                 [appointmentData]="data.appointmentData"
                 [isDeleteButtonExist]="isDeleteButtonExist(data)"
@@ -179,7 +180,7 @@ Specifies whether you click a button or an appointment element.
             appointment-tooltip-template="appointmentTooltipTemplate"
         >
             <template #appointmentTooltipTemplate="{ data }">
-                <!-- NOTE: You can get color from resources with data.appointmentData.resouceId -->
+                <!-- NOTE: You can use data.appointmentData.resouceId to obtain resource color -->
                 <Tooltip
                     :data="data"
                     marker-color="#337ab7"
@@ -304,7 +305,7 @@ Specifies whether you click a button or an appointment element.
         const appointmentTooltip = useCallback((props) => {
             const scheduler = schedulerRef.current;
 
-            // NOTE: You can get color from resources with props.appointmentData.resouceId
+            // NOTE: You can use props.appointmentData.resouceId to obtain resource color
             const color = '#337ab7';
 
             const isAppointmentDisabled = data.appointmentData.disabled;

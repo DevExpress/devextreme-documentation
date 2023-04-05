@@ -131,5 +131,11 @@ Since the popup and form modes are very similar, you can use the same **columns*
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PopupEditing/"
 }
 
+The built-in form of the **Popup** and **Form** modes has limited functionality. If you want to further customize the form (add custom labels and buttons, apply advanced validation rules and masks, etc.), implement the [Form](/Documentation/ApiReference/UI_Components/dxForm/) component inside [Popup](/Documentation/ApiReference/UI_Components/dxPopup/).
+
+#include common-githubbutton with {
+    url: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
+}
+
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation')

@@ -30,7 +30,7 @@ Specifies whether you click a button or an appointment element.
 
 ---
 
-If you want to change tooltips appearance, implement a custom template with the `appointmentTooltipTemplate` property. Refer to the [Customize Appointment Tooltip](/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/) section for details.
+If you want to change tooltip appearance, implement a custom template with the `appointmentTooltipTemplate` property. Refer to the [Customize Appointment Tooltip](/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/) section for details.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"

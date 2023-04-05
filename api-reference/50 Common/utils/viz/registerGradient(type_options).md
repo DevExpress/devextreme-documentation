@@ -8,22 +8,22 @@ export: registerGradient
 Registers a new gradient.
 
 ##### return: String
-The fill id.
+Fill ID.
 
 ##### param(type): String
-The gradient type: 'linear' or 'radial'.
+Gradient type: 'linear' or 'radial'.
 
 ##### param(options): Object
-The gradient's settings.
+Gradient's settings.
 
 ##### field(options.colors): Array<GradientColor>
-The array of gradient colors.
+An array of gradient colors.
 
 ##### field(options.rotationAngle): Number
-The rotation angle for linear gradients.
+Linear gradient rotation angle.
 
 ---
-Implement this method to register a gradient id. Then, use the id in the component color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
+Call this method to register a gradient ID. Assign the ID to a component's color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
@@ -182,7 +182,7 @@ Implement this method to register a gradient id. Then, use the id in the compone
 
 [note]
 
-- To correctly export a component with transparent gradient, specify gradient colors in the RGBA format.
+- To correctly export a component with transparent gradient, specify gradient colors in RGBA format.
 
 - Radial and rotated linear gradients may look slightly different when exported. 
 

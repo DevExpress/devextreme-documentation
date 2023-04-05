@@ -8,22 +8,22 @@ export: registerPattern
 Registers a new pattern.
 
 ##### return: String
-The fill id.
+Fill ID.
 
 ##### param(options): Object
-The pattern settings.
+Pattern settings.
 
 ##### field(options.height): Number | String
-The pattern height.
+Template height.
 
 ##### field(options.template): function()
-The SVG-based pattern template.
+SVG-based pattern template.
 
 ##### field(options.width): Number | String
-The pattern width.
+Template width.
 
 ---
-Implement this method to register a pattern id. Then, use the id in the component color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
+Call this method to register a pattern ID. Assign the ID to a component's color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
@@ -192,4 +192,4 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
 
 ---
 
-[note] If you specify width and height of a pattern in percents, the exported component may look different. 
+[note] If you specify width and height of a pattern template in percent, the exported component may look different.

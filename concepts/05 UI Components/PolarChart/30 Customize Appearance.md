@@ -1,8 +1,8 @@
-To change series color, implement one of the following options:
+To change series color, use one of the following options:
 
 - Specify a color [palette](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes) for the component.
-- Specify [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#color) for a series.
-- Specify [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#color) for all series.
+- Specify a [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#color) for a series.
+- Specify a [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#color) for all series.
 
 Besides color change, you can add a custom pattern or gradient fill to the following series:
 

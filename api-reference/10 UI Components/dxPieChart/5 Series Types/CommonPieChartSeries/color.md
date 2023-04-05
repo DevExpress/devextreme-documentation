@@ -12,11 +12,13 @@ You can use this property to paint all pie slices in one color.
 
 #include common-colorlist
 
-You can also specify a custom pattern or gradient instead of a plain color. Implement the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to get an id. Then, do the following:
+You can also specify a custom pattern or gradient instead of a plain color. Follow the steps below:  
 
-1. Specify the `base` color for labels and connectors in the **color** configuration object.
+1. Call the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to obtain a fill ID.
 
-1. Set the `fillId` field to the obtained id.
+1. Set the `fillId` field to the obtained ID in the **color** configuration object.
+
+1. Specify the `base` color for labels and connectors.
 
 ---
 ##### jQuery

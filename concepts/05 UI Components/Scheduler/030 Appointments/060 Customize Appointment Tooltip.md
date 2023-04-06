@@ -2,7 +2,7 @@
 
 ##### jQuery
 
-When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. Combine HTML markup for tooltips with [DOM methods](http://api.jquery.com/category/manipulation/). To apply this markup, use the [appointmentTooltipTemplate](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate) callback function as shown in the following code:
+When a user clicks an appointment, the Scheduler shows a tooltip that can be customized. Combine HTML markup for tooltips with [DOM methods](https://api.jquery.com/category/manipulation/). To apply this markup, use the [appointmentTooltipTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate') callback function as shown in the following code:
 
     <!--JavaScript-->
     $(() => {

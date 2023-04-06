@@ -10,7 +10,7 @@ Sets the palette to be used for colorizing chart elements.
 ---
 <!--
 BaseChartOptions.palette(api-reference/10 UI Components/BaseChart/1 Configuration/palette.md)
-BaseGaugeOptions.rangeContainer.palette(api-reference/10 UI Components/BaseGauge/1 Configuration/rangeContainer/palette.md)
+BaseGaugeOptions.rangeContainer.palette(api-reference/40 Common Types/05 charts/BaseGaugeRangeContainer/palette.md)
 CommonIndicator.palette(api-reference/10 UI Components/BaseGauge/5 Indicator Types/CommonIndicator/palette.md)
 dxBarGaugeOptions.palette(api-reference/10 UI Components/dxBarGauge/1 Configuration/palette.md)
 dxFunnelOptions.palette(api-reference/10 UI Components/dxFunnel/1 Configuration/palette.md)

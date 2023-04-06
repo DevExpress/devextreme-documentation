@@ -9,5 +9,5 @@ Specifies whether the Enter key switches the cell or row to the edit state or mo
 
 ---
 <!--
-GridBaseOptions.keyboardNavigation.enterKeyAction(api-reference/10 UI Components/GridBase/1 Configuration/keyboardNavigation/enterKeyAction.md)(common/grids.d.ts)
+GridBaseOptions.keyboardNavigation.enterKeyAction(api-reference/40 Common Types/15 grids/KeyboardNavigation/enterKeyAction.md)(common/grids.d.ts)
 -->

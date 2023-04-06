@@ -1,9 +1,22 @@
 ---
 uid: ui\data_grid:SummaryTotalItem.customizeText
+type: function(itemInfo)
 ---
 ---
 ##### shortDescription
 Customizes the text to be displayed in the summary item.
+
+##### param(itemInfo): Object
+<!-- Description goes here -->
+
+##### field(itemInfo.value): String | Number | Date
+<!-- Description goes here -->
+
+##### field(itemInfo.valueText): String
+<!-- Description goes here -->
+
+##### return: String
+<!-- Description goes here -->
 
 ---
 <!--

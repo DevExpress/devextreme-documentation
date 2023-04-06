@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonSeriesSettings.line
+type: any
 ---
 ---
 ##### shortDescription

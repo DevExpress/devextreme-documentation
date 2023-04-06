@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartArgumentAxis.logarithmBase
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

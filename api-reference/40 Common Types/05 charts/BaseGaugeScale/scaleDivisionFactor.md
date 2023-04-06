@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeScale.scaleDivisionFactor
+type: Number
+default: 17
 ---
 ---
 ##### shortDescription

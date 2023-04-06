@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxisStrips.endValue
+type: Number | Date | String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.offset
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

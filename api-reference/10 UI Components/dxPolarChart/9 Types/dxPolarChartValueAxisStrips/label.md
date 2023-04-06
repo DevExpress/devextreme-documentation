@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxisStrips.label
+type: Object
 ---
 ---
 ##### shortDescription

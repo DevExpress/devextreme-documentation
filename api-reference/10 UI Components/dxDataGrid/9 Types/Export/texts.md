@@ -1,5 +1,6 @@
 ---
 uid: ui\data_grid:Export.texts
+type: Object
 ---
 ---
 ##### shortDescription

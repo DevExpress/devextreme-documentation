@@ -1,5 +1,7 @@
 ---
 uid: common\grids:Pager.allowedPageSizes
+type: Array<Number, Enums.PagerPageSize> | Enums.Mode
+default: 'auto'
 ---
 ---
 ##### shortDescription

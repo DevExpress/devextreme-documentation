@@ -1,5 +1,7 @@
 ---
 uid: common\grids:ScrollingBase.columnRenderingMode
+type: Enums.DataRenderMode
+default: 'standard'
 ---
 ---
 ##### shortDescription

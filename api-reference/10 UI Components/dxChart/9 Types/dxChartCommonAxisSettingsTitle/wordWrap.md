@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsTitle.wordWrap
+type: Enums.WordWrap
+default: 'normal'
 ---
 ---
 ##### shortDescription

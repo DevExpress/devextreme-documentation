@@ -1,9 +1,23 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeTooltip.customizeTooltip
+type: function(scaleValue)
+default: undefined
 ---
 ---
 ##### shortDescription
 Allows you to change the appearance of specified tooltips.
+
+##### param(scaleValue): Object
+<!-- Description goes here -->
+
+##### field(scaleValue.value): Number
+<!-- Description goes here -->
+
+##### field(scaleValue.valueText): String
+<!-- Description goes here -->
+
+##### return: Object
+<!-- Description goes here -->
 
 ---
 <!--

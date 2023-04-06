@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.visualRangeUpdateMode
+type: Enums.VisualRangeUpdateMode
+default: 'auto'
 ---
 ---
 ##### shortDescription

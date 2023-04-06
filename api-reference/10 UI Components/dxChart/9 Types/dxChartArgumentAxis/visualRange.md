@@ -1,5 +1,8 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.visualRange
+firedEvents: optionChanged
+type: Object | Array<Number, String, Date>
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

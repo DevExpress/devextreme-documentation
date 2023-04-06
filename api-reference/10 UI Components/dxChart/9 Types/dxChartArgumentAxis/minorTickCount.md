@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.minorTickCount
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

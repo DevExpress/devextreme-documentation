@@ -1,9 +1,23 @@
 ---
 uid: ui\data_grid:Editing.allowDeleting
+type: Boolean | function(options)
+default: false
 ---
 ---
 ##### shortDescription
 Specifies whether a user can delete rows. It is called for each data row when defined as a function.
+
+##### param(options): Object
+<!-- Description goes here -->
+
+##### field(options.component): dxDataGrid
+<!-- Description goes here -->
+
+##### field(options.row): dxDataGridRowObject
+<!-- Description goes here -->
+
+##### return: Boolean
+<!-- Description goes here -->
 
 ---
 <!--

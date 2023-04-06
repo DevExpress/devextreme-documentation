@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.title
+type: String | Object
 ---
 ---
 ##### shortDescription

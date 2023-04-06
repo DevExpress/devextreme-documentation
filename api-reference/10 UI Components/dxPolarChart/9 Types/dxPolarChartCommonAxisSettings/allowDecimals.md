@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettings.allowDecimals
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

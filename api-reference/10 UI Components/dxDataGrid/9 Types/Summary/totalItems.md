@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:Summary.totalItems
+type: Array<Object>
+default: undefined
 ---
 ---
 ##### shortDescription

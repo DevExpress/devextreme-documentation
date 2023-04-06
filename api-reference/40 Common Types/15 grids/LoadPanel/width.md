@@ -1,5 +1,7 @@
 ---
 uid: common\grids:LoadPanel.width
+type: Number
+default: 200
 ---
 ---
 ##### shortDescription

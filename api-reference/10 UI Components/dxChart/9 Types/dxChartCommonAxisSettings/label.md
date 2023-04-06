@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.label
+type: Object
 ---
 ---
 ##### shortDescription

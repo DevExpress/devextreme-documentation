@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:GroupPanel.emptyPanelText
+type: String
+default: 'Drag a column header here to group by that column'
 ---
 ---
 ##### shortDescription

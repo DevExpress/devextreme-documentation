@@ -1,5 +1,7 @@
 ---
 uid: common\grids:StateStoring.savingTimeout
+type: Number
+default: 2000
 ---
 ---
 ##### shortDescription

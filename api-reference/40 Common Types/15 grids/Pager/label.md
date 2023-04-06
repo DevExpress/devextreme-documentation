@@ -1,5 +1,7 @@
 ---
 uid: common\grids:Pager.label
+type: String
+default: 'Page Navigation'
 ---
 ---
 ##### shortDescription

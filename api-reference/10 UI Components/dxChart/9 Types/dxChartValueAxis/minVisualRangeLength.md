@@ -1,5 +1,8 @@
 ---
 uid: viz\chart:dxChartValueAxis.minVisualRangeLength
+type: Number | Object | Enums.TimeInterval
+default: undefined
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterRowOperationDescriptions.between
+type: String
+default: 'Between'
 ---
 ---
 ##### shortDescription

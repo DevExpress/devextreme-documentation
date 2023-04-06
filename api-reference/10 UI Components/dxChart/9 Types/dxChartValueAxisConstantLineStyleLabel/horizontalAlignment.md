@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxisConstantLineStyleLabel.horizontalAlignment
+type: Enums.HorizontalAlignment
+default: 'left'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: common\grids:SearchPanel.searchVisibleColumnsOnly
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

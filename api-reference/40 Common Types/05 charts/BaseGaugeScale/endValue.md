@@ -1,5 +1,8 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeScale.endValue
+type: Number
+default: 100
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

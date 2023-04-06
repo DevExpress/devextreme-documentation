@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.showZero
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

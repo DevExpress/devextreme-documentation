@@ -1,5 +1,7 @@
 ---
 uid: viz\chart_components\base_chart:BaseChartAdaptiveLayout.keepLabels
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

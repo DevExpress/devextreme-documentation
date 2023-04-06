@@ -1,9 +1,18 @@
 ---
 uid: viz\chart_components\base_chart:BaseChartTooltip.customizeTooltip
+type: function(pointInfo)
+default: undefined
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription
 Allows you to change tooltip appearance.
+
+##### param(pointInfo): Object
+<!-- Description goes here -->
+
+##### return: Object
+<!-- Description goes here -->
 
 ---
 <!--

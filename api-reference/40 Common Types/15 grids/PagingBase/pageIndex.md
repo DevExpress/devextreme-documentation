@@ -1,5 +1,8 @@
 ---
 uid: common\grids:PagingBase.pageIndex
+firedEvents: optionChanged
+type: Number
+default: 0
 ---
 ---
 ##### shortDescription

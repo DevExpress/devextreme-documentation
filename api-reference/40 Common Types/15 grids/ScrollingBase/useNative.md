@@ -1,5 +1,7 @@
 ---
 uid: common\grids:ScrollingBase.useNative
+type: Boolean | Enums.Mode
+default: 'auto'
 ---
 ---
 ##### shortDescription

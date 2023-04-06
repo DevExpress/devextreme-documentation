@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsLabel.textOverflow
+type: Enums.TextOverflow
+default: 'none'
 ---
 ---
 ##### shortDescription

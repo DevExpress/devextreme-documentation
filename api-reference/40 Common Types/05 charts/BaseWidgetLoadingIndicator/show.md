@@ -1,5 +1,8 @@
 ---
 uid: viz\core\base_widget:BaseWidgetLoadingIndicator.show
+firedEvents: optionChanged
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

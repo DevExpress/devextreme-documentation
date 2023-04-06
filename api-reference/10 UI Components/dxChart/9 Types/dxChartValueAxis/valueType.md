@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.valueType
+type: Enums.ChartsDataType
+default: undefined
 ---
 ---
 ##### shortDescription

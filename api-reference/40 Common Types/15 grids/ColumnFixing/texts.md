@@ -1,5 +1,6 @@
 ---
 uid: common\grids:ColumnFixing.texts
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.minValueMargin
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

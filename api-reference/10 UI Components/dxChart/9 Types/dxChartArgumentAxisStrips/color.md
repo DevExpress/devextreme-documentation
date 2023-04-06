@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxisStrips.color
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

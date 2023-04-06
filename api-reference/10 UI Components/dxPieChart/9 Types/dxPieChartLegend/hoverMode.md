@@ -1,5 +1,7 @@
 ---
 uid: viz\pie_chart:dxPieChartLegend.hoverMode
+type: Enums.PieChartLegendHoverMode
+default: 'allArgumentPoints'
 ---
 ---
 ##### shortDescription

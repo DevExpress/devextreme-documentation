@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterRow.betweenStartText
+type: String
+default: 'Start'
 ---
 ---
 ##### shortDescription

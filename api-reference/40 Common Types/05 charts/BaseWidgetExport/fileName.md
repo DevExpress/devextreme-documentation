@@ -1,5 +1,7 @@
 ---
 uid: viz\core\base_widget:BaseWidgetExport.fileName
+type: String
+default: 'file'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettingsLabel.visible
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

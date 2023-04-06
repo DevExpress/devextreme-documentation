@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxisConstantLines.displayBehindSeries
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

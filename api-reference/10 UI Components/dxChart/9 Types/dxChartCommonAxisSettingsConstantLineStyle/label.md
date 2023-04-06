@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsConstantLineStyle.label
+type: Object
 ---
 ---
 ##### shortDescription

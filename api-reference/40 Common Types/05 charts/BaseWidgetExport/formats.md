@@ -1,5 +1,7 @@
 ---
 uid: viz\core\base_widget:BaseWidgetExport.formats
+type: Array<Enums.ExportFormat>
+default: ['PNG', 'PDF', 'JPEG', 'SVG', 'GIF']
 ---
 ---
 ##### shortDescription

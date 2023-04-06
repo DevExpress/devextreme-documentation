@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartArgumentAxis.strips
+type: Array<Object>
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

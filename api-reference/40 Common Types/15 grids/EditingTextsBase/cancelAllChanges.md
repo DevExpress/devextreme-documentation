@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingTextsBase.cancelAllChanges
+type: String
+default: 'Discard changes'
 ---
 ---
 ##### shortDescription

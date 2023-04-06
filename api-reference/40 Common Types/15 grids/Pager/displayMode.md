@@ -1,5 +1,7 @@
 ---
 uid: common\grids:Pager.displayMode
+type: Enums.PagerDisplayMode
+default: 'adaptive'
 ---
 ---
 ##### shortDescription

@@ -1,9 +1,18 @@
 ---
 uid: viz\vector_map:dxVectorMapTooltip.customizeTooltip
+type: function(info)
+default: undefined
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription
 Specifies text and appearance of a set of tooltips.
+
+##### param(info): MapLayerElement
+<!-- Description goes here -->
+
+##### return: Object
+<!-- Description goes here -->
 
 ---
 <!--

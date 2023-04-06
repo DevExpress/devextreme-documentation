@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:ExportTexts.exportTo
+type: String
+default: 'Export'
 ---
 ---
 ##### shortDescription

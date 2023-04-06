@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsStripStyleLabel.horizontalAlignment
+type: Enums.HorizontalAlignment
+default: 'left'
 ---
 ---
 ##### shortDescription

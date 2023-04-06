@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeScaleLabel.overlappingBehavior
+type: Enums.LabelOverlap
+default: 'hide'
 ---
 ---
 ##### shortDescription

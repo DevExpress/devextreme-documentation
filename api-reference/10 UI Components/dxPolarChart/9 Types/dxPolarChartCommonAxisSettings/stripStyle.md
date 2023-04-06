@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettings.stripStyle
+type: Object
 ---
 ---
 ##### shortDescription

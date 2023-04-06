@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartValueAxis.label
+type: Object
 ---
 ---
 ##### shortDescription

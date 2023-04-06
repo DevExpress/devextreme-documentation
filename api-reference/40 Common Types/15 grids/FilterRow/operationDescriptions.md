@@ -1,5 +1,6 @@
 ---
 uid: common\grids:FilterRow.operationDescriptions
+type: Object
 ---
 ---
 ##### shortDescription

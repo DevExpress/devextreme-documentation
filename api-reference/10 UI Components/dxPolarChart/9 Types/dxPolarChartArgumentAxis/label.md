@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartArgumentAxis.label
+type: Object
 ---
 ---
 ##### shortDescription

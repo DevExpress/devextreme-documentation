@@ -1,5 +1,7 @@
 ---
 uid: common\grids:Sorting.descendingText
+type: String
+default: 'Sort Descending'
 ---
 ---
 ##### shortDescription

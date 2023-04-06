@@ -1,5 +1,7 @@
 ---
 uid: common\grids:LoadPanel.showIndicator
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:SummaryGroupItem.displayFormat
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

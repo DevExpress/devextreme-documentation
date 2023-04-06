@@ -1,5 +1,7 @@
 ---
 uid: common\grids:RowDragging.dropFeedbackMode
+type: Enums.DragHighlight
+default: 'indicate'
 ---
 ---
 ##### shortDescription

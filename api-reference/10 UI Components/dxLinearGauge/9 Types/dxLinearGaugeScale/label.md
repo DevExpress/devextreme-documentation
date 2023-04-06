@@ -1,5 +1,6 @@
 ---
 uid: viz\linear_gauge:dxLinearGaugeScale.label
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,9 +1,20 @@
 ---
 uid: viz\sparklines\base_sparkline:BaseSparklineTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription
 Specifies a custom template for tooltips.
+
+##### param(pointsInfo): Object
+<!-- Description goes here -->
+
+##### param(element): DxElement
+<!-- Description goes here -->
+
+##### return: String | Element | jQuery
+<!-- Description goes here -->
 
 ---
 <!--

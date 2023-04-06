@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:Export.formats
+type: Array<Enums.DataGridExportFormat, String>
+default: 'DataGrid'
 ---
 ---
 ##### shortDescription

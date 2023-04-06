@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.columnChooser
-type: Object
+type: common\grids:ColumnChooser
 inherits: ColumnChooser
 ---
 ---

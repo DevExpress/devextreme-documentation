@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.operationDescriptions.between
-type: String
-default: 'Between'
 ---
 ---
 ##### shortDescription

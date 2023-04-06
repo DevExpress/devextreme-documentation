@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.valueAxis.constantLines
-type: Array<Object>
+type: Array<viz\polar_chart:dxPolarChartValueAxisConstantLines>
 inherits: dxPolarChart.Options.commonAxisSettings.constantLineStyle
 notUsedInTheme: 
 ---

@@ -1,0 +1,11 @@
+---
+uid: viz\pie_chart:dxPieChartLegend.customizeHint
+---
+---
+##### shortDescription
+Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item.
+
+---
+<!--
+#include dataviz-ref-functioncontext
+-->

@@ -1,7 +1,5 @@
 ---
 id: BaseChart.Options.adaptiveLayout.keepLabels
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

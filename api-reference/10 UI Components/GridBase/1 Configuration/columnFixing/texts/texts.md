@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.columnFixing.texts
-type: Object
+type: common\grids:ColumnFixingTexts
+inheritsType: common\grids:ColumnFixingTexts
 ---
 ---
 ##### shortDescription

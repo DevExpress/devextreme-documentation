@@ -1,4 +1,5 @@
 ---
 id: dxPolarChart.Options.argumentAxis.tick
-type: Object
+type: viz\polar_chart:dxPolarChartArgumentAxisTick
+inheritsType: viz\polar_chart:dxPolarChartArgumentAxisTick
 ---

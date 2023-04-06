@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.valueAxis.constantLines.label.text
-type: String
-default: undefined
 ---
 ---
 ##### shortDescription

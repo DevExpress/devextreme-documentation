@@ -1,6 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.stripStyle
-type: Object
+type: viz\polar_chart:dxPolarChartCommonAxisSettingsStripStyle
+inheritsType: viz\polar_chart:dxPolarChartCommonAxisSettingsStripStyle
 ---
 ---
 ##### shortDescription

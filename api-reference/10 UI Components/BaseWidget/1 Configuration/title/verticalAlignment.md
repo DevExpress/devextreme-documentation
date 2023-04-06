@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.title.verticalAlignment
-type: Enums.VerticalEdge
-default: 'top'
 ---
 ---
 ##### shortDescription

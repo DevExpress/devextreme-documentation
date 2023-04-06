@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.commonSeriesSettings.steparea
-type: any
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.legend
-type: Object
+type: viz\bar_gauge:dxBarGaugeLegend
 inherits: BaseLegend
 ---
 ---

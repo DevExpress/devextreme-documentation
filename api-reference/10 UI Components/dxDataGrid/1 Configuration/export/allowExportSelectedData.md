@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.export.allowExportSelectedData
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

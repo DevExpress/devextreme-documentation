@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.searchPanel.text
-type: String
-default: ''
 firedEvents: optionChanged
 ---
 ---

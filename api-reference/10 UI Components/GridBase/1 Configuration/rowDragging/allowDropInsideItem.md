@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.rowDragging.allowDropInsideItem
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

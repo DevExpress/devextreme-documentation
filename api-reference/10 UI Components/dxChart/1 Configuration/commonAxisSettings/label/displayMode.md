@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.displayMode
-type: Enums.ChartLabelDisplayMode
-default: 'standard'
 ---
 ---
 ##### shortDescription

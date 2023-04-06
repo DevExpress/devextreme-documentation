@@ -1,7 +1,8 @@
 ---
 id: dxDataGrid.Options.summary.groupItems
-type: Array<Object>
+type: Array<ui\data_grid:SummaryGroupItem>
 default: undefined
+inheritsType: ui\data_grid:SummaryGroupItem
 ---
 ---
 ##### shortDescription

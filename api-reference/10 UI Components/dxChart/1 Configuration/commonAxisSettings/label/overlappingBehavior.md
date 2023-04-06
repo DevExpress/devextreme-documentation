@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.overlappingBehavior
-type: Enums.ChartsAxisLabelOverlap
-default: 'hide'
 ---
 ---
 ##### shortDescription

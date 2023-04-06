@@ -1,7 +1,5 @@
 ---
 id: BaseGauge.Options.scale.tickInterval
-type: Number
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.editing
-type: Object
+type: ui\data_grid:Editing
+inheritsType: ui\data_grid:Editing
 ---
 ---
 ##### shortDescription

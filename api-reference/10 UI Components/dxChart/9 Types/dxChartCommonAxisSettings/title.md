@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.title
+type: Object
 ---
 ---
 ##### shortDescription

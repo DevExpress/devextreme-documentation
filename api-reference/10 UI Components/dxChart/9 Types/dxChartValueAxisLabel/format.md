@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxisLabel.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

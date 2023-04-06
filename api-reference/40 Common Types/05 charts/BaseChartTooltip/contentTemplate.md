@@ -1,9 +1,20 @@
 ---
 uid: viz\chart_components\base_chart:BaseChartTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription
 Specifies a custom template for a tooltip.
+
+##### param(pointInfo): Object
+<!-- Description goes here -->
+
+##### param(element): DxElement
+<!-- Description goes here -->
+
+##### return: String | Element | jQuery
+<!-- Description goes here -->
 
 ---
 <!--

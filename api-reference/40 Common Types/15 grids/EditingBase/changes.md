@@ -1,5 +1,8 @@
 ---
 uid: common\grids:EditingBase.changes
+firedEvents: optionChanged
+type: Array<DataChange>
+default: []
 ---
 ---
 ##### shortDescription

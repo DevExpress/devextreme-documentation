@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxisStrips.startValue
+type: Number | Date | String
+default: undefined
 ---
 ---
 ##### shortDescription

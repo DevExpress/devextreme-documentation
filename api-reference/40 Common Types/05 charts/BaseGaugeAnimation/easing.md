@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeAnimation.easing
+type: Enums.AnimationEaseMode
+default: 'easeOutCubic'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: common\grids:HeaderFilter.texts
+type: Object
 ---
 ---
 ##### shortDescription

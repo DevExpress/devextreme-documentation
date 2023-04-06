@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.autoBreaksEnabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

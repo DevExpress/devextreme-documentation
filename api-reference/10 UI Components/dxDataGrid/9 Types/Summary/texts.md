@@ -1,5 +1,6 @@
 ---
 uid: ui\data_grid:Summary.texts
+type: Object
 ---
 ---
 ##### shortDescription

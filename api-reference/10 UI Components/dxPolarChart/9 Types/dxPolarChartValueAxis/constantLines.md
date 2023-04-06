@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.constantLines
+type: Array<Object>
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

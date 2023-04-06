@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:SummaryTexts.avgOtherColumn
+type: String
+default: 'Avg of {1} is {0}'
 ---
 ---
 ##### shortDescription

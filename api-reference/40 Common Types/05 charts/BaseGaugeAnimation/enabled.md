@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeAnimation.enabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

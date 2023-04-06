@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.stripStyle
+type: Object
 ---
 ---
 ##### shortDescription

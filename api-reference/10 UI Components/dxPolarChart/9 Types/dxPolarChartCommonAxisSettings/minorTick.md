@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettings.minorTick
+type: Object
 ---
 ---
 ##### shortDescription

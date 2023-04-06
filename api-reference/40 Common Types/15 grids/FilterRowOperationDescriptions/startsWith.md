@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterRowOperationDescriptions.startsWith
+type: String
+default: 'Starts with'
 ---
 ---
 ##### shortDescription

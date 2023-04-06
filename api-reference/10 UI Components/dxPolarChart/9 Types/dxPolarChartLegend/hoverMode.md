@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartLegend.hoverMode
+type: Enums.LegendHoverMode
+default: 'includePoints'
 ---
 ---
 ##### shortDescription

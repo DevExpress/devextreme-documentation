@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterPanel.visible
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

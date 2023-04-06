@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.categories
+type: Array<Number, String, Date>
 ---
 ---
 ##### shortDescription

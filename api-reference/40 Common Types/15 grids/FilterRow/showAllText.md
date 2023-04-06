@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterRow.showAllText
+type: String
+default: '(All)'
 ---
 ---
 ##### shortDescription

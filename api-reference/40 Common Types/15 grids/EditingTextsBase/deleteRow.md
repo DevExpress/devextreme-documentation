@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingTextsBase.deleteRow
+type: String
+default: 'Delete'
 ---
 ---
 ##### shortDescription

@@ -1,9 +1,31 @@
 ---
 uid: ui\data_grid:Summary.calculateCustomSummary
+type: function(options)
 ---
 ---
 ##### shortDescription
 Specifies a custom aggregate function. This function is called for summary items whose [summaryType](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') is *"custom"*.
+
+##### param(options): Object
+<!-- Description goes here -->
+
+##### field(options.component): dxDataGrid
+<!-- Description goes here -->
+
+##### field(options.groupIndex): Number
+<!-- Description goes here -->
+
+##### field(options.name): String
+<!-- Description goes here -->
+
+##### field(options.summaryProcess): String
+<!-- Description goes here -->
+
+##### field(options.totalValue): any
+<!-- Description goes here -->
+
+##### field(options.value): any
+<!-- Description goes here -->
 
 ---
 <!--

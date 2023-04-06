@@ -1,5 +1,7 @@
 ---
 uid: common\grids:RowDragging.scrollSpeed
+type: Number
+default: 30
 ---
 ---
 ##### shortDescription

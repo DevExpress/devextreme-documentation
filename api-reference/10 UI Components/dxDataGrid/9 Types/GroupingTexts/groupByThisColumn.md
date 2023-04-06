@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:GroupingTexts.groupByThisColumn
+type: String
+default: 'Group by This Column'
 ---
 ---
 ##### shortDescription

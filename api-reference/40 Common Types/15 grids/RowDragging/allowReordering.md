@@ -1,5 +1,7 @@
 ---
 uid: common\grids:RowDragging.allowReordering
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

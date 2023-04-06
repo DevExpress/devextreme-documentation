@@ -1,5 +1,7 @@
 ---
 uid: viz\core\base_widget:BaseWidgetTooltip.cornerRadius
+type: Number
+default: 0, 4 (Material)
 ---
 ---
 ##### shortDescription

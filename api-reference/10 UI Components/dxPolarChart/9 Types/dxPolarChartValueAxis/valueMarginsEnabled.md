@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.valueMarginsEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

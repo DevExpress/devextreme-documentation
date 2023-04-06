@@ -1,5 +1,7 @@
 ---
 uid: common\grids:StateStoring.storageKey
+type: String
+default: null
 ---
 ---
 ##### shortDescription

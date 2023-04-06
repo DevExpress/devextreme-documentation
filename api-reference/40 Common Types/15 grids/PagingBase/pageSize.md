@@ -1,5 +1,8 @@
 ---
 uid: common\grids:PagingBase.pageSize
+firedEvents: optionChanged
+type: Number
+default: 20
 ---
 ---
 ##### shortDescription

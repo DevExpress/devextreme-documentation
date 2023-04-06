@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartArgumentAxisConstantLines.displayBehindSeries
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

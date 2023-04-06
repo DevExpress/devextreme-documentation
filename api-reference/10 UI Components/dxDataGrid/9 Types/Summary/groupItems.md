@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:Summary.groupItems
+type: Array<Object>
+default: undefined
 ---
 ---
 ##### shortDescription

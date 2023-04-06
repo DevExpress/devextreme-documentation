@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.aggregationInterval
+type: Number | Object | Enums.TimeInterval
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: ui\data_grid:Grouping.texts
+type: Object
 ---
 ---
 ##### shortDescription

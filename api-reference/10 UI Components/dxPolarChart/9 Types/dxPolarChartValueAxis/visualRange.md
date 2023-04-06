@@ -1,5 +1,8 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.visualRange
+firedEvents: optionChanged
+type: Object | Array<Number, String, Date>
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

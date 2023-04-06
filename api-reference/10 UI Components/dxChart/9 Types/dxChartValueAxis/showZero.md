@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.showZero
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

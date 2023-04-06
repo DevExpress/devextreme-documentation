@@ -1,5 +1,8 @@
 ---
 uid: viz\chart:dxChartValueAxis.breaks
+type: Array<ScaleBreak>
+default: undefined
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

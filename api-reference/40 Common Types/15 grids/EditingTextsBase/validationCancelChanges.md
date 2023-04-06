@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingTextsBase.validationCancelChanges
+type: String
+default: 'Cancel changes'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterPanel.texts
+type: Object
+default: {}
 ---
 ---
 ##### shortDescription

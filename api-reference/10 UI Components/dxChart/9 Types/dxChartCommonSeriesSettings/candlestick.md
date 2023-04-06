@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonSeriesSettings.candlestick
+type: any
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.wholeRange
+type: Object | Array<Number, String, Date>
+default: undefined
 ---
 ---
 ##### shortDescription

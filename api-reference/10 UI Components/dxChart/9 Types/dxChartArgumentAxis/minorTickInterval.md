@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.minorTickInterval
+type: Number | Object | Enums.TimeInterval
 ---
 ---
 ##### shortDescription

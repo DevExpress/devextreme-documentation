@@ -1,5 +1,6 @@
 ---
 uid: common\grids:EditingBase.texts
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterRow.betweenEndText
+type: String
+default: 'End'
 ---
 ---
 ##### shortDescription

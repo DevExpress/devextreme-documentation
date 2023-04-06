@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingTextsBase.undeleteRow
+type: String
+default: 'Undelete'
 ---
 ---
 ##### shortDescription

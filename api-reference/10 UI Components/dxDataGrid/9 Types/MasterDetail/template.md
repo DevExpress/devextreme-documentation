@@ -1,9 +1,28 @@
 ---
 uid: ui\data_grid:MasterDetail.template
+type: template
 ---
 ---
 ##### shortDescription
 Specifies a custom template for detail sections.
+
+##### param(detailElement): DxElement
+<!-- Description goes here -->
+
+##### param(detailInfo): Object
+<!-- Description goes here -->
+
+##### field(detailInfo.data): Object
+<!-- Description goes here -->
+
+##### field(detailInfo.key): any
+<!-- Description goes here -->
+
+##### field(detailInfo.watch): function()
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 <!--

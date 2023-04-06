@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonSeriesSettings.stackedarea
+type: any
 ---
 ---
 ##### shortDescription

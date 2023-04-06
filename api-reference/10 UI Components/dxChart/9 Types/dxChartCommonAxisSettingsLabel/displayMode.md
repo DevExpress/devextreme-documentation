@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsLabel.displayMode
+type: Enums.ChartLabelDisplayMode
+default: 'standard'
 ---
 ---
 ##### shortDescription

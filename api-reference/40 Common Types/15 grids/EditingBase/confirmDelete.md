@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingBase.confirmDelete
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

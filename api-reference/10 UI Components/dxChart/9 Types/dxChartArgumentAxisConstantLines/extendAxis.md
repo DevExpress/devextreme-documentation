@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxisConstantLines.extendAxis
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

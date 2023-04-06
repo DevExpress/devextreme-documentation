@@ -1,5 +1,7 @@
 ---
 uid: common\grids:ScrollingBase.showScrollbar
+type: Enums.ScrollbarMode
+default: 'onScroll', 'onHover' (desktop)
 ---
 ---
 ##### shortDescription

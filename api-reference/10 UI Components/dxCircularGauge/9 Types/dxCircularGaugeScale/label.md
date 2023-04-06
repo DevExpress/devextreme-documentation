@@ -1,5 +1,6 @@
 ---
 uid: viz\circular_gauge:dxCircularGaugeScale.label
+type: Object
 ---
 ---
 ##### shortDescription

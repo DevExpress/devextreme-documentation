@@ -1,5 +1,6 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeScale.label
+type: Object
 ---
 ---
 ##### shortDescription

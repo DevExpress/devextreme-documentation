@@ -1,5 +1,7 @@
 ---
 uid: common\grids:StateStoring.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

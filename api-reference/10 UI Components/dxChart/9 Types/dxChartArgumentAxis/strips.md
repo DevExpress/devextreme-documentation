@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.strips
+type: Array<Object>
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

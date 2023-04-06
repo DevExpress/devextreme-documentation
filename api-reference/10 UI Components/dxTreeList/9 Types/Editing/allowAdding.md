@@ -1,9 +1,23 @@
 ---
 uid: ui\tree_list:Editing.allowAdding
+type: Boolean | function(options)
+default: false
 ---
 ---
 ##### shortDescription
 Specifies whether a user can add new rows. It is called for each data row when defined as a function.
+
+##### param(options): Object
+<!-- Description goes here -->
+
+##### field(options.component): dxTreeList
+<!-- Description goes here -->
+
+##### field(options.row): dxTreeListRowObject
+<!-- Description goes here -->
+
+##### return: Boolean
+<!-- Description goes here -->
 
 ---
 <!--

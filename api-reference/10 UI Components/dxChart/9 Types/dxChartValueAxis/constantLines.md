@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.constantLines
+type: Array<Object>
+notUsedInTheme: 
 ---
 ---
 ##### shortDescription

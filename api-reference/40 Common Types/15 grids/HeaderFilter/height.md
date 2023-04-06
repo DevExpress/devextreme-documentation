@@ -1,5 +1,7 @@
 ---
 uid: common\grids:HeaderFilter.height
+type: Number
+default: 325, 315 (Material)
 ---
 ---
 ##### shortDescription

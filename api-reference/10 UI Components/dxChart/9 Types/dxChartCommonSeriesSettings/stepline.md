@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonSeriesSettings.stepline
+type: any
 ---
 ---
 ##### shortDescription

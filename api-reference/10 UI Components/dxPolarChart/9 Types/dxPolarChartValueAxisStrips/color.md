@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxisStrips.color
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

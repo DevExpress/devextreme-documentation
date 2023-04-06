@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartArgumentAxisMinorTick.shift
+type: Number
+default: 3
 ---
 ---
 ##### shortDescription

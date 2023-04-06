@@ -1,5 +1,7 @@
 ---
 uid: viz\circular_gauge:dxCircularGaugeRangeContainer.width
+type: Number
+default: 5
 ---
 ---
 ##### shortDescription

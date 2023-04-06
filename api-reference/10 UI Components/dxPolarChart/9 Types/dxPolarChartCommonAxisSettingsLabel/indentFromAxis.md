@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettingsLabel.indentFromAxis
+type: Number
+default: 5
 ---
 ---
 ##### shortDescription

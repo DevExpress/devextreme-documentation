@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettingsMinorTick.visible
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

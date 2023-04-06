@@ -1,5 +1,6 @@
 ---
 uid: common\grids:EditingBase.form
+type: dxForm_Options
 ---
 ---
 ##### shortDescription

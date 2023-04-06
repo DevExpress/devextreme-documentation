@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.minValueMargin
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeTooltip.interactive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

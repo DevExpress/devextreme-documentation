@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.inverted
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

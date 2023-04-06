@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartArgumentAxisConstantLineStyle.label
+type: Object
 ---
 ---
 ##### shortDescription

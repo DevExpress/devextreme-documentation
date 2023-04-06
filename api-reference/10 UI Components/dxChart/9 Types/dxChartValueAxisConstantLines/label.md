@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartValueAxisConstantLines.label
+type: Object
 ---
 ---
 ##### shortDescription

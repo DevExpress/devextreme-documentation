@@ -1,5 +1,7 @@
 ---
 uid: ui\popover:dxPopoverAnimation.hide
+type: AnimationConfig
+default: { type: 'fade', to: 0 }
 ---
 ---
 ##### shortDescription

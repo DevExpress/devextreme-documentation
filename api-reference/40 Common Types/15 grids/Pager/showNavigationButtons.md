@@ -1,5 +1,7 @@
 ---
 uid: common\grids:Pager.showNavigationButtons
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

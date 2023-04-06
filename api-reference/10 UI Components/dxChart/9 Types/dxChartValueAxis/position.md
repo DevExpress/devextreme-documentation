@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.position
+type: Enums.Position
+default: 'left'
 ---
 ---
 ##### shortDescription

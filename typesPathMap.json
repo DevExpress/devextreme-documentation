@@ -1,0 +1,62 @@
+{
+    "common/grids":                    "api-reference/40 Common Types/15 grids",
+
+    "ui/data_grid":                    "api-reference/10 UI Components/dxDataGrid/9 Types",
+    "ui/tree_list":                    "api-reference/10 UI Components/dxTreeList/9 Types",
+
+
+
+    "ui/box":                          "api-reference/10 UI Components/dxBox/9 Types",
+    "ui/calendar":                     "api-reference/10 UI Components/dxCalendar/9 Types",
+    "ui/context_menu":                 "api-reference/10 UI Components/dxContextMenu/9 Types",
+    "ui/context_menu/ui":              "api-reference/10 UI Components/dxContextMenu/9 Types",
+    "ui/diagram":                      "api-reference/10 UI Components/dxDiagram/9 Types",
+    "ui/draggable":                    "api-reference/10 UI Components/dxDraggable/9 Types",
+    "ui/file_manager":                 "api-reference/10 UI Components/dxFileManager/9 Types",
+    "ui/filter_builder":               "api-reference/10 UI Components/dxFilterBuilder/9 Types",
+    "ui/gantt":                        "api-reference/10 UI Components/dxGantt/9 Types",
+    "ui/list":                         "api-reference/10 UI Components/dxList/9 Types",
+    "ui/load_panel":                   "api-reference/10 UI Components/dxLoadPanel/9 Types",
+    "ui/map":                          "api-reference/10 UI Components/dxMap/9 Types",
+    "ui/menu":                         "api-reference/10 UI Components/dxMenu/9 Types",
+    "ui/overlay":                      "api-reference/10 UI Components/dxOverlay/9 Types",
+    "ui/pivot_grid":                   "api-reference/10 UI Components/dxPivotGrid/9 Types",
+    "ui/pivot_grid_field_chooser":     "api-reference/10 UI Components/dxPivotGridFieldChooser/9 Types",
+    "ui/pivot_grid/data_source":       "api-reference/10 UI Components/dxPivotGrid/9 Types",
+    "ui/popover":                      "api-reference/10 UI Components/dxPopover/9 Types",
+    "ui/popup":                        "api-reference/10 UI Components/dxPopup/9 Types",
+    "ui/responsive_box":               "api-reference/10 UI Components/dxResponsiveBox/9 Types",
+    "ui/scheduler":                    "api-reference/10 UI Components/dxScheduler/9 Types",
+    "ui/slider":                       "api-reference/10 UI Components/dxSlider/9 Types",
+    "ui/toast":                        "api-reference/10 UI Components/dxToast/9 Types",
+    "ui/validator":                    "api-reference/10 UI Components/dxValidator/99 Types",
+
+
+
+    "data/data_source":                "api-reference/40 Common Types/10 data",
+
+    "map":                             "api-reference/10 UI Components/dxMap/9 Types/",
+
+
+
+    "viz/core/base_widget":            "api-reference/40 Common Types/05 charts",
+
+    "viz/gauges/base_gauge":           "api-reference/40 Common Types/05 charts",
+    "viz/bar_gauge":                   "api-reference/10 UI Components/dxBarGauge/9 Types",
+    "viz/circular_gauge":              "api-reference/10 UI Components/dxCircularGauge/9 Types",
+    "viz/linear_gauge":                "api-reference/10 UI Components/dxLinearGauge/9 Types",
+
+    "common/charts":                   "api-reference/40 Common Types/05 charts",
+
+    "viz/chart_components/base_chart": "api-reference/40 Common Types/05 charts",
+    "viz/chart":                       "api-reference/10 UI Components/dxChart/9 Types",
+    "viz/pie_chart":                   "api-reference/10 UI Components/dxPieChart/9 Types",
+    "viz/polar_chart":                 "api-reference/10 UI Components/dxPolarChart/9 Types",
+
+    "viz/funnel":                      "api-reference/10 UI Components/dxFunnel/9 Types",
+    "viz/range_selector":              "api-reference/10 UI Components/dxRangeSelector/9 Types",
+    "viz/sankey":                      "api-reference/10 UI Components/dxSankey/9 Types",
+    "viz/sparklines/base_sparkline":   "api-reference/10 UI Components/dxSparkline/9 Types",
+    "viz/tree_map":                    "api-reference/10 UI Components/dxTreeMap/9 Types",
+    "viz/vector_map":                  "api-reference/10 UI Components/dxVectorMap/9 Types"
+}

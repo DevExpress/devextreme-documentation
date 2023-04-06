@@ -1,6 +1,7 @@
 ---
 id: dxPolarChart.Options.adaptiveLayout
-type: Object
+type: viz\polar_chart:dxPolarChartAdaptiveLayout
+inherits: viz\polar_chart:dxPolarChartAdaptiveLayout
 ---
 ---
 ##### shortDescription

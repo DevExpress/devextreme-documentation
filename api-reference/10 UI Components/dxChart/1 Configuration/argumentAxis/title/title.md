@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.title
-type: String | Object
+type: viz\chart:dxChartArgumentAxisTitle
+inherits: viz\chart:dxChartArgumentAxisTitle
 ---
 ---
 ##### shortDescription

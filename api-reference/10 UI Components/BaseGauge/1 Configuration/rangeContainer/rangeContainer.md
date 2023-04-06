@@ -1,6 +1,7 @@
 ---
 id: BaseGauge.Options.rangeContainer
-type: Object
+type: viz\gauges\base_gauge:BaseGaugeRangeContainer
+inherits: viz\gauges\base_gauge:BaseGaugeRangeContainer
 ---
 ---
 ##### shortDescription

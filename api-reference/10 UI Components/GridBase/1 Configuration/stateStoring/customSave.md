@@ -1,6 +1,5 @@
 ---
 id: GridBase.Options.stateStoring.customSave
-type: function(gridState)
 ---
 ---
 ##### shortDescription

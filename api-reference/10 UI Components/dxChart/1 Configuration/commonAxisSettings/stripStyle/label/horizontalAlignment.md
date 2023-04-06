@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.stripStyle.label.horizontalAlignment
-type: Enums.HorizontalAlignment
-default: 'left'
 ---
 ---
 ##### shortDescription

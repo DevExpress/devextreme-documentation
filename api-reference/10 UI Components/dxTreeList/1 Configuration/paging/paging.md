@@ -1,4 +1,5 @@
 ---
 id: dxTreeList.Options.paging
-type: Object
+type: ui\tree_list:Paging
+inherits: ui\tree_list:Paging
 ---

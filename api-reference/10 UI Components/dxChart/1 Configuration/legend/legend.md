@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.legend
-type: Object
+type: viz\chart:dxChartLegend
+inherits: viz\chart:dxChartLegend
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.searchPanel.placeholder
-type: String
-default: 'Search...'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 id: BaseGauge.Options.loadingIndicator
-type: Object
+type: viz\gauges\base_gauge:BaseGaugeLoadingIndicator
+inherits: viz\gauges\base_gauge:BaseGaugeLoadingIndicator
 ---
 ---
 ##### shortDescription

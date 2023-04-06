@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.aggregatedPointsPosition
-type: Enums.AggregatedPointsPosition
-default: 'betweenTicks'
 ---
 ---
 ##### shortDescription

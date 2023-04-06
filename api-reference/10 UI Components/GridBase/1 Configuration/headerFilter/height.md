@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.headerFilter.height
-type: Number
-default: 325, 315 (Material)
 ---
 ---
 ##### shortDescription

@@ -1,4 +1,5 @@
 ---
 id: dxTreeMap.Options.tooltip
-type: Object
+type: viz\tree_map:dxTreeMapTooltip
+inherits: viz\tree_map:dxTreeMapTooltip
 ---

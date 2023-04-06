@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.commonPaneSettings
-type: Object
+type: viz\chart:dxChartCommonPaneSettings
+inherits: viz\chart:dxChartCommonPaneSettings
 ---
 ---
 ##### shortDescription

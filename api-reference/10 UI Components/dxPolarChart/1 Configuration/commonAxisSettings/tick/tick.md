@@ -1,6 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.tick
-type: Object
+type: viz\polar_chart:dxPolarChartCommonAxisSettingsTick
+inherits: viz\polar_chart:dxPolarChartCommonAxisSettingsTick
 ---
 ---
 ##### shortDescription

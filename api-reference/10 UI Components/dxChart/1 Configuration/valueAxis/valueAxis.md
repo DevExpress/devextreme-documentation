@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.valueAxis
-type: Object | Array<Object>
+type: Array<viz\chart:dxChartValueAxis>
 inherits: dxChart.Options.commonAxisSettings
 ---
 ---

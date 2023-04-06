@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.editing.confirmDelete
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

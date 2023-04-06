@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.argumentAxis.constantLines.label.horizontalAlignment
-type: Enums.HorizontalAlignment
-default: 'right'
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.editing.texts.deleteRow
-type: String
-default: 'Delete'
 ---
 ---
 ##### shortDescription

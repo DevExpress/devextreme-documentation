@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.tick.visible
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

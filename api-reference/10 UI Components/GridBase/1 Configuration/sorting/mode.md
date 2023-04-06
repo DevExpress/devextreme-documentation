@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.sorting.mode
-type: Enums.SingleMultipleOrNone
-default: 'single'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.headerFilter
-type: Object
+type: common\grids:HeaderFilter
+inherits: common\grids:HeaderFilter
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.grouping.texts.groupByThisColumn
-type: String
-default: 'Group by This Column'
 ---
 ---
 ##### shortDescription

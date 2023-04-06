@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.sorting
-type: Object
+type: common\grids:Sorting
+inherits: common\grids:Sorting
 ---
 ---
 ##### shortDescription

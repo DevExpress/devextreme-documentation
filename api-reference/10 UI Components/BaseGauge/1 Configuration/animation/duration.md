@@ -1,7 +1,5 @@
 ---
 id: BaseGauge.Options.animation.duration
-type: Number
-default: 1000
 ---
 ---
 ##### shortDescription

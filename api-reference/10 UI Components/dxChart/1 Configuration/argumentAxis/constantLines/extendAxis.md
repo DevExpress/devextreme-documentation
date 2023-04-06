@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.argumentAxis.constantLines.extendAxis
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

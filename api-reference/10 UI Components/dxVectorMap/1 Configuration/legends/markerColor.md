@@ -1,7 +1,5 @@
 ---
 id: dxVectorMap.Options.legends.markerColor
-type: String
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.masterDetail
-type: Object
+type: ui\data_grid:MasterDetail
+inherits: ui\data_grid:MasterDetail
 ---
 ---
 ##### shortDescription

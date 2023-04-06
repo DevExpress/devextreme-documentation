@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.allowDecimals
-type: Boolean
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,8 @@
 ---
 id: BaseWidget.Options.size
-type: Object
+type: viz\core\base_widget:BaseWidgetSize
 default: undefined
+inherits: viz\core\base_widget:BaseWidgetSize
 ---
 ---
 ##### shortDescription

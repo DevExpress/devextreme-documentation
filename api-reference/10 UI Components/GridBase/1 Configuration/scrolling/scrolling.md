@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.scrolling
-type: Object
+type: common\grids:ScrollingBase
+inherits: common\grids:ScrollingBase
 ---
 ---
 ##### shortDescription

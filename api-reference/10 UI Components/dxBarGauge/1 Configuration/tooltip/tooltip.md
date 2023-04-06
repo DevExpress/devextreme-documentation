@@ -1,6 +1,7 @@
 ---
 id: dxBarGauge.Options.tooltip
-type: Object
+type: viz\bar_gauge:dxBarGaugeTooltip
+inherits: viz\bar_gauge:dxBarGaugeTooltip
 ---
 ---
 ##### shortDescription

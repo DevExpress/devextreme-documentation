@@ -1,6 +1,7 @@
 ---
 id: dxTreeList.Options.scrolling
-type: Object
+type: ui\tree_list:Scrolling
+inherits: ui\tree_list:Scrolling
 ---
 ---
 ##### shortDescription

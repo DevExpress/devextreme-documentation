@@ -36,10 +36,10 @@ The example below illustrates how to create an End-to-End test for the DataGrid'
         })
 
         // eslint-disable-next-line testing-library/no-container,testing-library/no-node-access
-        fireEvent.click(container.querySelectorAll('.dx-page')[5]);
+        fireEvent.click(container.querySelectorAll('.dx-page')[1]);
 
         //give time to render
         jest.advanceTimersByTime(200);
 
-        expect(dataGridRef.current.instance.pageIndex()).toBe(5);
+        expect(dataGridRef.current.instance.pageIndex()).toBe(1);
     });

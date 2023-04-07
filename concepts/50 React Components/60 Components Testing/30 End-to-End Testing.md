@@ -18,9 +18,8 @@ The example below illustrates how to create an End-to-End test for the DataGrid'
     export default function DataGridComponent(props) {
         return (
             <DataGrid
-            ref={props.setRef}
-            
-            dataSource={dataSource}
+                ref={props.setRef}
+                dataSource={dataSource}
             >
             <Editing mode={'batch'} />
             <Paging pageSize={3} />

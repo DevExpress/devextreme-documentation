@@ -19,10 +19,11 @@ The example below illustrates how to create an End-to-End test for the DataGrid'
         return (
             <DataGrid
             ref={props.setRef}
-            pageSize={3}
+            
             dataSource={dataSource}
             >
             <Editing mode={'batch'} />
+            <Paging pageSize={3} />
             </DataGrid>
         );
     }

@@ -1,5 +1,6 @@
 ---
 uid: common\grids:RowDragging.onAdd
+type: function(e)
 ---
 ---
 ##### shortDescription

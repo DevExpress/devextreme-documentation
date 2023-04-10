@@ -1,5 +1,7 @@
 ---
 uid: viz\vector_map:dxVectorMapLegends.markerTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

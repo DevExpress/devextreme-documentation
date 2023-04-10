@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.customPosition
+type: Number | Date | String
+default: undefined
 ---
 ---
 ##### shortDescription

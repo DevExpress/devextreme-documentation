@@ -1,6 +1,8 @@
 ---
 firedEvents: optionChanged
 uid: common\grids:EditingBase.editColumnName
+type: String
+default: null
 ---
 ---
 ##### shortDescription

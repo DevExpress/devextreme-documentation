@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz\chart:dxChartValueAxisLabel.customizeText
+type: function(axisValue)
 ---
 ---
 ##### shortDescription

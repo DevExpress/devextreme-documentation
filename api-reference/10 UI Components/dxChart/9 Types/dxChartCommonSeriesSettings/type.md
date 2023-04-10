@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonSeriesSettings.type
+type: Enums.SeriesType
+default: 'line'
 ---
 ---
 ##### shortDescription

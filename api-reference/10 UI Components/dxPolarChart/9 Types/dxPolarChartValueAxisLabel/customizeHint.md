@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxisLabel.customizeHint
+type: function(axisValue)
 ---
 ---
 ##### shortDescription

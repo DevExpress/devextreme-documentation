@@ -1,6 +1,7 @@
 ---
 firedEvents: optionChanged
 uid: viz\chart:dxChartArgumentAxis.categories
+type: Array<Number, String, Date>
 ---
 ---
 ##### shortDescription

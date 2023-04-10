@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartLegend.hoverMode
+type: Enums.LegendHoverMode
+default: 'includePoints'
 ---
 ---
 ##### shortDescription

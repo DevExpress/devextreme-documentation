@@ -1,5 +1,7 @@
 ---
 uid: common\grids:KeyboardNavigation.editOnKeyPress
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

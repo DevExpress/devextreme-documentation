@@ -1,6 +1,8 @@
 ---
 notUsedInTheme: 
 uid: viz\chart:dxChartValueAxis.name
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

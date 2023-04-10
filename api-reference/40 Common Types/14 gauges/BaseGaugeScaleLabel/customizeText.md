@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz\gauges\base_gauge:BaseGaugeScaleLabel.customizeText
+type: function(scaleValue)
 ---
 ---
 ##### shortDescription

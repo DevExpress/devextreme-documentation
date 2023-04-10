@@ -1,5 +1,7 @@
 ---
 uid: viz\funnel:dxFunnelTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

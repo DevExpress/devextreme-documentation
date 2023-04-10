@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:MasterDetail.autoExpandAll
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

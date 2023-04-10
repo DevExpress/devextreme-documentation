@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.multipleAxesSpacing
+type: Number
+default: 5
 ---
 ---
 ##### shortDescription

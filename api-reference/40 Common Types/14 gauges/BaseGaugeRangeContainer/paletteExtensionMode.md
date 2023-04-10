@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeRangeContainer.paletteExtensionMode
+type: Enums.PaletteExtensionMode
+default: 'blend'
 ---
 ---
 ##### shortDescription

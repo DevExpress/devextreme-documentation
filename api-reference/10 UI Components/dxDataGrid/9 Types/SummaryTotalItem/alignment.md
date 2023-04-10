@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:SummaryTotalItem.alignment
+type: Enums.HorizontalAlignment
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\core\base_widget:BaseWidgetMargin.bottom
+type: Number
+default: 0
 ---
 ---
 ##### shortDescription

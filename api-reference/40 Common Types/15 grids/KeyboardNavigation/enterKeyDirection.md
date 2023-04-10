@@ -1,5 +1,7 @@
 ---
 uid: common\grids:KeyboardNavigation.enterKeyDirection
+type: Enums.EnterKeyDirection
+default: 'none'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: common\grids:Sorting.clearText
+type: String
+default: 'Clear Sorting'
 ---
 ---
 ##### shortDescription

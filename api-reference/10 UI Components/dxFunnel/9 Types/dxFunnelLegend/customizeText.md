@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz\funnel:dxFunnelLegend.customizeText
+type: function(itemInfo)
 ---
 ---
 ##### shortDescription

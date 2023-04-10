@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsTitle.alignment
+type: Enums.HorizontalAlignment
+default: 'center'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: viz\chart:dxChartCommonSeriesSettings.stackedsplinearea
+type: any
 ---
 ---
 ##### shortDescription

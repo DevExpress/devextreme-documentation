@@ -1,5 +1,7 @@
 ---
 uid: ui\tree_list:Editing.allowUpdating
+type: Boolean | function(options)
+default: false
 ---
 ---
 ##### shortDescription

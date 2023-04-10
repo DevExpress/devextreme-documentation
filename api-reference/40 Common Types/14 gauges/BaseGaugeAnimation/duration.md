@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeAnimation.duration
+type: Number
+default: 1000
 ---
 ---
 ##### shortDescription

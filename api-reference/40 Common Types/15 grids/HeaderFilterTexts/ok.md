@@ -1,5 +1,7 @@
 ---
 uid: common\grids:HeaderFilterTexts.ok
+type: String
+default: 'Ok'
 ---
 ---
 ##### shortDescription

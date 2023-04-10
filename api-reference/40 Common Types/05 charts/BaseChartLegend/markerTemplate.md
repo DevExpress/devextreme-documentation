@@ -1,5 +1,7 @@
 ---
 uid: viz\chart_components\base_chart:BaseChartLegend.markerTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

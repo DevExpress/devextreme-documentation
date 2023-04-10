@@ -1,5 +1,6 @@
 ---
 uid: viz\bar_gauge:dxBarGaugeLegend.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

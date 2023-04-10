@@ -2,6 +2,7 @@
 firedEvents: optionChanged
 notUsedInTheme: 
 uid: viz\chart:dxChartArgumentAxis.visualRange
+type: Object | Array<Number, String, Date>
 ---
 ---
 ##### shortDescription

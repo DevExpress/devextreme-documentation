@@ -1,5 +1,6 @@
 ---
 uid: common\grids:RowDragging.onRemove
+type: function(e)
 ---
 ---
 ##### shortDescription

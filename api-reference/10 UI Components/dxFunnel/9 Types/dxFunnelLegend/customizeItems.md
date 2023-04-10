@@ -1,5 +1,6 @@
 ---
 uid: viz\funnel:dxFunnelLegend.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

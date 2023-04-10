@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxis.visualRangeUpdateMode
+type: Enums.ValueAxisVisualRangeUpdateMode
+default: 'auto'
 ---
 ---
 ##### shortDescription

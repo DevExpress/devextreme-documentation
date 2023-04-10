@@ -1,6 +1,8 @@
 ---
 notUsedInTheme: 
 uid: viz\polar_chart:dxPolarChartValueAxis.minVisualRangeLength
+type: Number | Object | Enums.TimeInterval
+default: undefined
 ---
 ---
 ##### shortDescription

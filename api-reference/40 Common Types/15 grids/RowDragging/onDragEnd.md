@@ -1,5 +1,6 @@
 ---
 uid: common\grids:RowDragging.onDragEnd
+type: function(e)
 ---
 ---
 ##### shortDescription

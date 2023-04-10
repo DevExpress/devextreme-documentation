@@ -1,6 +1,8 @@
 ---
 firedEvents: optionChanged
 uid: common\grids:EditingBase.editRowKey
+type: any
+default: null
 ---
 ---
 ##### shortDescription

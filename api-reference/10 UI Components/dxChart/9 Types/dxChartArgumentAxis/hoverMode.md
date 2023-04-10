@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.hoverMode
+type: Enums.ArgumentAxisHoverMode
+default: 'none'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsTitle.textOverflow
+type: Enums.TextOverflow
+default: 'ellipsis'
 ---
 ---
 ##### shortDescription

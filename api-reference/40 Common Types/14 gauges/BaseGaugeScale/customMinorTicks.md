@@ -1,6 +1,8 @@
 ---
 notUsedInTheme: 
 uid: viz\gauges\base_gauge:BaseGaugeScale.customMinorTicks
+type: Array<Number>
+default: undefined
 ---
 ---
 ##### shortDescription

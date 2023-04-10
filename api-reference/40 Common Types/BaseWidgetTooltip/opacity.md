@@ -1,5 +1,7 @@
 ---
 uid: viz\core\base_widget:BaseWidgetTooltip.opacity
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

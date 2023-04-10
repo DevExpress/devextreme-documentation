@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:SummaryGroupItem.alignByColumn
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

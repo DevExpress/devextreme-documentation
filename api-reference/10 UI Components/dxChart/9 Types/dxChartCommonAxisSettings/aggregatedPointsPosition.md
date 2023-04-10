@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.aggregatedPointsPosition
+type: Enums.AggregatedPointsPosition
+default: 'betweenTicks'
 ---
 ---
 ##### shortDescription

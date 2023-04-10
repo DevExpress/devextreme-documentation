@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsLabel.overlappingBehavior
+type: Enums.ChartsAxisLabelOverlap
+default: 'hide'
 ---
 ---
 ##### shortDescription

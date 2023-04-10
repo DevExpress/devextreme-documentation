@@ -1,5 +1,6 @@
 ---
 uid: viz\chart_components\base_chart:BaseChartLegend.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

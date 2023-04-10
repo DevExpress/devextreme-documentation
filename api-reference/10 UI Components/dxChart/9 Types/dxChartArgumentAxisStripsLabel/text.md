@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxisStripsLabel.text
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

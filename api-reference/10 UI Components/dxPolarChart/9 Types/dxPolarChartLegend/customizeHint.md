@@ -1,5 +1,6 @@
 ---
 uid: viz\polar_chart:dxPolarChartLegend.customizeHint
+type: function(seriesInfo)
 ---
 ---
 ##### shortDescription

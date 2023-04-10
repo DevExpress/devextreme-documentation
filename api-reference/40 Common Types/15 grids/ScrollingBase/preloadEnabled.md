@@ -1,5 +1,7 @@
 ---
 uid: common\grids:ScrollingBase.preloadEnabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

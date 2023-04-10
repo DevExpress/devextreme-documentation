@@ -1,5 +1,6 @@
 ---
 uid: viz\bar_gauge:dxBarGaugeLegend.customizeHint
+type: function(arg)
 ---
 ---
 ##### shortDescription

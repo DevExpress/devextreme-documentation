@@ -1,5 +1,7 @@
 ---
 uid: ui\toast:dxToastAnimation.hide
+type: AnimationConfig
+default: { type: 'fade', duration: 400, to: 0 }
 ---
 ---
 ##### shortDescription

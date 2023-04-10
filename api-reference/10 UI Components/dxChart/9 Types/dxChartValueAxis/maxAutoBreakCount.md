@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartValueAxis.maxAutoBreakCount
+type: Number
+default: 4
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\vector_map:dxVectorMapTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

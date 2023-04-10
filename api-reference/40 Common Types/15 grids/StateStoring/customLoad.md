@@ -1,5 +1,6 @@
 ---
 uid: common\grids:StateStoring.customLoad
+type: function()
 ---
 ---
 ##### shortDescription

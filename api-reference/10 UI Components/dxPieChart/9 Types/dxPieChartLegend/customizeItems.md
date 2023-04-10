@@ -1,5 +1,6 @@
 ---
 uid: viz\pie_chart:dxPieChartLegend.customizeItems
+type: function(items)
 ---
 ---
 ##### param(items): Array<PieChartLegendItem>

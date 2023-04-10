@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingTextsBase.confirmDeleteTitle
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartTooltip.location
+type: Enums.ChartTooltipLocation
+default: 'center'
 ---
 ---
 ##### shortDescription

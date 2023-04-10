@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:Editing.allowDeleting
+type: Boolean | function(options)
+default: false
 ---
 ---
 ##### shortDescription

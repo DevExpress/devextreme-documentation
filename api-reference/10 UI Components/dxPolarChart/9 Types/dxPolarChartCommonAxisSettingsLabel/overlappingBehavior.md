@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonAxisSettingsLabel.overlappingBehavior
+type: Enums.LabelOverlap
+default: 'hide'
 ---
 ---
 ##### shortDescription

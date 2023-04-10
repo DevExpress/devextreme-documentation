@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettingsLabel.rotationAngle
+type: Number
+default: 90
 ---
 ---
 ##### shortDescription

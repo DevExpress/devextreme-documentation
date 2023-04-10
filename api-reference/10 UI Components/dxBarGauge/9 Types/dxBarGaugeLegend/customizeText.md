@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz\bar_gauge:dxBarGaugeLegend.customizeText
+type: function(arg)
 ---
 ---
 ##### shortDescription

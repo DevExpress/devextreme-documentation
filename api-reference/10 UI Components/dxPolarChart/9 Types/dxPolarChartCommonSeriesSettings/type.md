@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartCommonSeriesSettings.type
+type: Enums.PolarChartSeriesType
+default: 'scatter'
 ---
 ---
 ##### shortDescription

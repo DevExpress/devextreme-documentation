@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartValueAxisConstantLines.value
+type: Number | Date | String
+default: undefined
 ---
 ---
 ##### shortDescription

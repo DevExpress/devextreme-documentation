@@ -1,5 +1,7 @@
 ---
 uid: common\grids:ColumnFixingTexts.fix
+type: String
+default: 'Fix'
 ---
 ---
 ##### shortDescription

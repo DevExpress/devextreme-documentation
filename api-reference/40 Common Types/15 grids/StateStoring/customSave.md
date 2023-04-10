@@ -1,5 +1,6 @@
 ---
 uid: common\grids:StateStoring.customSave
+type: function(gridState)
 ---
 ---
 ##### shortDescription

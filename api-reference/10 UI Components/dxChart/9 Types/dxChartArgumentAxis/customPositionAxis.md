@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartArgumentAxis.customPositionAxis
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

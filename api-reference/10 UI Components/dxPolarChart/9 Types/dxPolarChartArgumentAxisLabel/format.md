@@ -1,5 +1,7 @@
 ---
 uid: viz\polar_chart:dxPolarChartArgumentAxisLabel.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

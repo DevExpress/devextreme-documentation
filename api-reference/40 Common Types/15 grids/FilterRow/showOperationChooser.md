@@ -1,5 +1,7 @@
 ---
 uid: common\grids:FilterRow.showOperationChooser
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

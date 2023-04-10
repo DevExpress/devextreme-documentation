@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:Editing.allowAdding
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\pie_chart:dxPieChartLegend.markerTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

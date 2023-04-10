@@ -1,5 +1,7 @@
 ---
 uid: viz\bar_gauge:dxBarGaugeTooltip.customizeTooltip
+type: function(scaleValue)
+default: undefined
 ---
 ---
 ##### shortDescription

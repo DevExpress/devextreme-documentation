@@ -1,5 +1,7 @@
 ---
 uid: ui\data_grid:GroupPanel.allowColumnDragging
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

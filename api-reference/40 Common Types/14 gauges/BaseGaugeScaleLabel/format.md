@@ -1,5 +1,7 @@
 ---
 uid: viz\gauges\base_gauge:BaseGaugeScaleLabel.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

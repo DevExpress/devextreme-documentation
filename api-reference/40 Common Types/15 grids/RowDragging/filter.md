@@ -1,6 +1,8 @@
 ---
 deprecated: 
 uid: common\grids:RowDragging.filter
+type: String
+default: '> *'
 ---
 ---
 ##### shortDescription

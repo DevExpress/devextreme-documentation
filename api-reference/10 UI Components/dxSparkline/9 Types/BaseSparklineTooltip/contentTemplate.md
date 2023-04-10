@@ -1,5 +1,7 @@
 ---
 uid: viz\sparklines\base_sparkline:BaseSparklineTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

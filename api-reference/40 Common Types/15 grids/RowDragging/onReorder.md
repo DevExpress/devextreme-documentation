@@ -1,5 +1,6 @@
 ---
 uid: common\grids:RowDragging.onReorder
+type: function(e)
 ---
 ---
 ##### shortDescription

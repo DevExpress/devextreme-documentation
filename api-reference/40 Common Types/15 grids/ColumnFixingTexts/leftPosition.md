@@ -1,5 +1,7 @@
 ---
 uid: common\grids:ColumnFixingTexts.leftPosition
+type: String
+default: 'To the left'
 ---
 ---
 ##### shortDescription

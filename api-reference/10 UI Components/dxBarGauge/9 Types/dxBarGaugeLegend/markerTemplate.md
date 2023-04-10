@@ -1,5 +1,7 @@
 ---
 uid: viz\bar_gauge:dxBarGaugeLegend.markerTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

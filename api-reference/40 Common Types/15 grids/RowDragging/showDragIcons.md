@@ -1,5 +1,7 @@
 ---
 uid: common\grids:RowDragging.showDragIcons
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

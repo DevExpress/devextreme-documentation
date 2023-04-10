@@ -1,6 +1,8 @@
 ---
 notUsedInTheme: 
 uid: viz\sparklines\base_sparkline:BaseSparklineTooltip.customizeTooltip
+type: function(pointsInfo)
+default: undefined
 ---
 ---
 ##### shortDescription

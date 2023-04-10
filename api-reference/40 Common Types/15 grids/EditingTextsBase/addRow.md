@@ -1,5 +1,7 @@
 ---
 uid: common\grids:EditingTextsBase.addRow
+type: String
+default: 'Add a row'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\tree_map:dxTreeMapTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz\chart:dxChartCommonAxisSettings.valueMarginsEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

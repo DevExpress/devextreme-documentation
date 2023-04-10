@@ -1,5 +1,7 @@
 ---
 uid: viz\sparklines\base_sparkline:BaseSparklineTooltip.interactive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

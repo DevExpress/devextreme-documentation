@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the data processing operations (filtering, grouping, summary calculation) should be performed on the server.
+Specifies whether the data processing operations (filtering, grouping, sorting, summary calculation) should be performed on the server.
 
 ---
 If you enable this property, the PivotGrid sends several requests to load data. At first launch, the UI component sends a request to get the data structure. It contains the following [loadOptions](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/'):
@@ -16,12 +16,14 @@ If you enable this property, the PivotGrid sends several requests to load data. 
         take: 20
     }
 
+[note]If you use [local stores](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') (ArrayStore or LocalStore) in the PivotGridDataSource, disable the `remoteOperations` property to ensure that usage scenarios works properly.
+
 The server should return an array of data objects. It may contain a single object if this object reflects the entire data structure.
 
 Subsequent requests are different and contain the following **loadOptions**:
 
     <!--JavaScript-->
-    {
+    { 
         filter: [
             [ "dataFieldName1", "operator", "value" ],
             "and", // "or"
@@ -55,6 +57,9 @@ Subsequent requests are different and contain the following **loadOptions**:
             // ... 
         ]
     }
+
+A sorting operation executes on a back-end if you enable the `remoteOperations` property and set the ['scrolling.mode'](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/scrolling/#mode') property to **'virtual'**.
+In all other cases, a sorting operation is executed locally. 
 
 Refer to the [Server-Side Data Processing](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources/2%20Load%20Data/5%20Server-Side%20Data%20Processing.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/#Load_Data/Server-Side_Data_Processing') article for more information on how DevExtreme components communicate with the server.
 

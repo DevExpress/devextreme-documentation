@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td>Chart</td>
-<td><b>argumentAxis.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory">aggregateByCategory</a></td>
+<td><b>argumentAxis.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory">aggregateByCategory</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxChart/Types/dxChartArgumentAxis/#aggregateByCategory">aggregateByCategory</a></td>
 </tr>
 <tr>
 <td>ContextMenu</td>
@@ -70,6 +70,10 @@
 <tr>
 <td>Utils</td>
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Data_Layer/Utils/#errorHandler">errorHandler</a></td>
+</tr>
+<tr>
+<td>grids</td>
+<td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/RowDragging/#filter">filter</a></td>
 </tr>
 <tr>
 <td>Object Structures</td>

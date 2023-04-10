@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-Configures the default UI component used for [editing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/') and filtering in the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
+Configures the default UI component used for [editing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/') and filtering in the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
 
 ---
 In this object, you can specify the default UI component's properties (except **onValueChanged**, which you can specify in [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing')).

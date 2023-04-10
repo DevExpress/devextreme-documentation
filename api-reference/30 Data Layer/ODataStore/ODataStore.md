@@ -208,7 +208,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 ---
 
-To access an entire OData service, use the [ODataContext](/Documentation/ApiReference/Data_Layer/ODataContext/) instead.
+To access an entire OData service, use the [ODataContext](/api-reference/30%20Data%20Layer/ODataContext '/Documentation/ApiReference/Data_Layer/ODataContext/') instead.
 
 #include datalayer-store-note-immutable with { name: "ODataStore" }
 

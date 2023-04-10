@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.lightening
+id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.highlight
 type: Boolean
 default: true
 ---

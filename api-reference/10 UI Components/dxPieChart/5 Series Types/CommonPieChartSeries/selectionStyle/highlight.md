@@ -1,5 +1,5 @@
 ---
-id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.lightening
+id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.highlight
 type: Boolean
 default: true
 ---

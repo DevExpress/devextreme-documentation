@@ -100,7 +100,7 @@
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"
 }
 
-If you want to format and localize strings, numbers, dates, and currencies automatically according to the specified locale, set the **format**.[type](/Documentation/ApiReference/Common/Object_Structures/Format/#type) property. You can also specify a currency other than USD globally. For this purpose, use the [defaultCurrency](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultCurrency) setting or set currency in [format](/Documentation/ApiReference/Common/Object_Structures/format/) definitions:
+If you want to format and localize strings, numbers, dates, and currencies automatically according to the specified locale, define the **format**.[type](/Documentation/ApiReference/Common/Object_Structures/Format/#type) property. You can also specify a currency other than USD globally. For this purpose, use the [defaultCurrency](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#defaultCurrency) or [currency](/Documentation/ApiReference/Common/Object_Structures/format/#currency) settings:
 
 ---
 #####jQuery

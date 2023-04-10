@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.editing.texts.editRow
-type: String
-default: 'Edit'
 ---
 ---
 ##### shortDescription

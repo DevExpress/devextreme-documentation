@@ -1,6 +1,5 @@
 ---
 id: dxDataGrid.Options.masterDetail.template
-type: template
 ---
 ---
 ##### shortDescription

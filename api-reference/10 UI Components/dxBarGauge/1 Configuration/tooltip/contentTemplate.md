@@ -1,7 +1,5 @@
 ---
 id: dxBarGauge.Options.tooltip.contentTemplate
-type: template
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.stateStoring.storageKey
-type: String
-default: null
 ---
 ---
 ##### shortDescription

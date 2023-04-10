@@ -1,9 +1,10 @@
 ---
 id: dxChart.Options.commonSeriesSettings
-type: Object
+type: viz\chart:dxChartCommonSeriesSettings
 inherits: dxChartSeriesTypes.CommonSeries
 hideDefaults: true
 inheritAll: 
+inheritsType: viz\chart:dxChartCommonSeriesSettings
 ---
 ---
 ##### shortDescription

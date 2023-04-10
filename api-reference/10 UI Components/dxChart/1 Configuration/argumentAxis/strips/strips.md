@@ -1,8 +1,9 @@
 ---
 id: dxChart.Options.argumentAxis.strips
-type: Array<Object>
+type: Array<viz\chart:dxChartArgumentAxisStrips>
 inherits: dxChart.Options.commonAxisSettings.stripStyle
 notUsedInTheme: 
+inheritsType: viz\chart:dxChartArgumentAxisStrips
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.argumentAxis.strips.endValue
-type: Number | Date | String
-default: undefined
 ---
 ---
 ##### shortDescription

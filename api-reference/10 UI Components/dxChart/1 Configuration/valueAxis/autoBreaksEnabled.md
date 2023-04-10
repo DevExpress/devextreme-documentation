@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.valueAxis.autoBreaksEnabled
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

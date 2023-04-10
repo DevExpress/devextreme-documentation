@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.recalculateWhileEditing
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

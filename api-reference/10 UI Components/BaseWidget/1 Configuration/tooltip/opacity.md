@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.tooltip.opacity
-type: Number
-default: undefined
 ---
 ---
 ##### shortDescription

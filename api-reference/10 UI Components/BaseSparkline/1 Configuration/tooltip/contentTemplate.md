@@ -1,7 +1,5 @@
 ---
 id: BaseSparkline.Options.tooltip.contentTemplate
-type: template
-default: undefined
 ---
 ---
 ##### shortDescription

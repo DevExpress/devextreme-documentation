@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.filterRow.operationDescriptions
-type: Object
+type: common\grids:FilterRowOperationDescriptions
+inheritsType: common\grids:FilterRowOperationDescriptions
 ---
 ---
 ##### shortDescription

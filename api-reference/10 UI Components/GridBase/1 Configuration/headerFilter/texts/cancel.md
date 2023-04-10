@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.headerFilter.texts.cancel
-type: String
-default: 'Cancel'
 ---
 ---
 ##### shortDescription

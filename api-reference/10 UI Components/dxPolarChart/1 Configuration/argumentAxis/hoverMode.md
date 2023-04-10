@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.argumentAxis.hoverMode
-type: Enums.ArgumentAxisHoverMode
-default: 'none'
 ---
 ---
 ##### shortDescription

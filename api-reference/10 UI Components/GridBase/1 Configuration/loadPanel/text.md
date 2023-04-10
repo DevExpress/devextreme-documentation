@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.loadPanel.text
-type: String
-default: 'Loading...'
 ---
 ---
 ##### shortDescription

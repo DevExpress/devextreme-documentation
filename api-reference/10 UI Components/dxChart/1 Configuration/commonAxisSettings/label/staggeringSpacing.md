@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.staggeringSpacing
-type: Number
-default: 5
 ---
 ---
 ##### shortDescription

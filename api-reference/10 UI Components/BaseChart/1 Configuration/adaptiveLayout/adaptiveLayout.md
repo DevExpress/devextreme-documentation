@@ -1,6 +1,7 @@
 ---
 id: BaseChart.Options.adaptiveLayout
-type: Object
+type: viz\chart_components\base_chart:BaseChartAdaptiveLayout
+inheritsType: viz\chart_components\base_chart:BaseChartAdaptiveLayout
 ---
 ---
 ##### shortDescription

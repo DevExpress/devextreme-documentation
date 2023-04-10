@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.constantLineStyle
-type: Object
+type: viz\chart:dxChartValueAxisConstantLineStyle
+inheritsType: viz\chart:dxChartValueAxisConstantLineStyle
 ---
 ---
 ##### shortDescription

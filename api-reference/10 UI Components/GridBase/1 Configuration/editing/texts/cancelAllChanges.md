@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.editing.texts.cancelAllChanges
-type: String
-default: 'Discard changes'
 ---
 ---
 ##### shortDescription

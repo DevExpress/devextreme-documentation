@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.texts.max
-type: String
-default: 'Max={0}'
 ---
 ---
 ##### shortDescription

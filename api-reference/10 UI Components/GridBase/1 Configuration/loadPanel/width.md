@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.loadPanel.width
-type: Number
-default: 200
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.operationDescriptions.greaterThan
-type: String
-default: 'Greater than'
 ---
 ---
 ##### shortDescription

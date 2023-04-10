@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.label
-type: Object
+type: viz\chart:dxChartCommonAxisSettingsLabel
+inheritsType: viz\chart:dxChartCommonAxisSettingsLabel
 ---
 ---
 ##### shortDescription

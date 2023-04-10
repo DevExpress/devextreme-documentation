@@ -1,6 +1,7 @@
 ---
 id: BaseGauge.Options.scale.label
-type: Object
+type: viz\gauges\base_gauge:BaseGaugeScaleLabel
+inheritsType: viz\gauges\base_gauge:BaseGaugeScaleLabel
 ---
 ---
 ##### shortDescription

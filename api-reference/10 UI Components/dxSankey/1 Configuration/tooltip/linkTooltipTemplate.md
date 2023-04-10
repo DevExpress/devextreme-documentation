@@ -1,7 +1,5 @@
 ---
 id: dxSankey.Options.tooltip.linkTooltipTemplate
-type: template
-default: undefined
 ---
 ---
 ##### shortDescription

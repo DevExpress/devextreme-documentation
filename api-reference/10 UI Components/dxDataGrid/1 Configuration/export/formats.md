@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.export.formats
-type: Array<Enums.DataGridExportFormat, String>
-default: 'DataGrid'
 ---
 ---
 ##### shortDescription

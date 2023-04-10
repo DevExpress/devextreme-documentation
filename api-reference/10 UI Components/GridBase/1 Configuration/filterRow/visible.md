@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.visible
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

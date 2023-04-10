@@ -1,4 +1,5 @@
 ---
 id: dxPolarChart.Options.tooltip
-type: Object
+type: viz\polar_chart:dxPolarChartTooltip
+inheritsType: viz\polar_chart:dxPolarChartTooltip
 ---

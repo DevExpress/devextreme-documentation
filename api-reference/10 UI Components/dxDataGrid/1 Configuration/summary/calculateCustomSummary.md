@@ -1,6 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.calculateCustomSummary
-type: function(options)
 ---
 ---
 ##### shortDescription

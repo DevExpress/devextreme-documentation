@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.resetOperationText
-type: String
-default: 'Reset'
 ---
 ---
 ##### shortDescription

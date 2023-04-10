@@ -1,7 +1,5 @@
 ---
 id: dxCircularGauge.Options.rangeContainer.orientation
-type: Enums.CircularGaugeElementOrientation
-default: 'outside'
 ---
 ---
 ##### shortDescription

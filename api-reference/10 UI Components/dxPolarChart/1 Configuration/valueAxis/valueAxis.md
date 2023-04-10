@@ -1,7 +1,8 @@
 ---
 id: dxPolarChart.Options.valueAxis
-type: Object
+type: viz\polar_chart:dxPolarChartValueAxis
 inherits: dxPolarChart.Options.commonAxisSettings
+inheritsType: viz\polar_chart:dxPolarChartValueAxis
 ---
 ---
 ##### shortDescription

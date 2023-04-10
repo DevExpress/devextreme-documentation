@@ -5,7 +5,7 @@ inheritsType: ui\popover:dxPopoverAnimation
 ---
 ---
 ##### shortDescription
-Configures UI component visibility animations. This object contains two fields: [show](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/animation/show.md '{basewidgetpath}/Configuration/animation/#show'') and [hide](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/animation/hide.md '{basewidgetpath}/Configuration/animation/#hide').
+Configures UI component visibility animations. This object contains two fields: [show](/api-reference/10%20UI%20Components/dxPopover/9%20Types/dxPopoverAnimation/show.md '{basewidgetpath}/Configuration/animation/#show'') and [hide](/api-reference/10%20UI%20Components/dxPopover/9%20Types/dxPopoverAnimation/hide.md '{basewidgetpath}/Configuration/animation/#hide').
 
 ---
 The following code specifies the default value of the object:

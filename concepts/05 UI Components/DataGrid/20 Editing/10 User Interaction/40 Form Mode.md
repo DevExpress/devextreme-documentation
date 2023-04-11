@@ -242,9 +242,6 @@ In the following code, the items with the specified **dataField** are simple ite
     
 ---
 
-#####See Also#####
-- [Organize Simple Items](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/01%20Create%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items')
-
 You can use a column's [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#formItem') object to customize an individual simple item. See an example in its description. 
 
 If you need to validate form values, specify validation rules as described in the [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation') article.
@@ -252,3 +249,6 @@ If you need to validate form values, specify validation rules as described in th
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FormEditing/"
 }
+
+#####See Also#####
+- [Organize Simple Items](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/01%20Create%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items')

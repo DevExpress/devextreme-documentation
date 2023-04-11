@@ -8,11 +8,11 @@ default: undefined
 Specifies a series color.
 
 ---
-You can use this property to paint all pie slices in one color.
+You can use this property to paint all pie slices in the same color.
 
 #include common-colorlist
 
-You can also specify a custom pattern or gradient instead of a plain color. Follow the steps below:  
+You can also specify a custom pattern or gradient instead of a plain color:  
 
 1. Call the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to obtain a fill ID.
 

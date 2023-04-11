@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Sets a color for the series when it is hovered over.
+Sets the color for the series when it is hovered over.
 
 ---
 #include common-colorlist

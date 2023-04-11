@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Sets a color for a series when it is selected.
+Sets the color for a series when it is selected.
 
 ---
 #include common-colorlist

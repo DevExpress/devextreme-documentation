@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the id of the gradient or pattern.
 
 ---
 <!-- Description goes here -->

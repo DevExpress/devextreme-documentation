@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the starting point of a color.
 
 ---
 <!-- Description goes here -->

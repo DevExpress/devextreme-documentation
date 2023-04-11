@@ -1,33 +1,18 @@
----
-id: viz.registerGradient(type, options)
-module: common/charts
-export: registerGradient
----
----
-##### shortDescription
-Registers a new gradient.
+To change series color, use one of the following options:
 
-##### return: String
-Fill ID.
+- Specify a color [palette](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes) for the component.
+- Specify a [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#color) for a series.
+- Specify a [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#color) for all series.
 
-##### param(type): String
-Gradient type: 'linear' or 'radial'.
+Besides color change, you can add a custom pattern or gradient fill to the following series:
 
-##### param(options): Object
-Gradient's settings.
+- [Area](/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/#color)
+- [Bar](/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/#color)
+- [Stacked bar](/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/StackedBarSeries/#color)
 
-##### field(options.colors): Array<GradientColor>
-An array of gradient colors.
+Use the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to create a custom pattern or gradient.
 
-##### field(options.rotationAngle): Number
-Linear gradient rotation angle.
-
----
-Call this method to register a gradient ID. Assign the ID to a component's color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
-}
+The following example adds a gradient to all series in a PolarChart:
 
 ---
 
@@ -37,7 +22,7 @@ Call this method to register a gradient ID. Assign the ID to a component's color
     const registerGradient = DevExpress.common.charts.registerGradient;
     
     $(() => {
-        $('#chart').dxChart({
+        $('#polarChart').dxPolarChart({
             // ...
             commonSeriesSettings: {
                 color: {
@@ -59,10 +44,10 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-chart ... >
+    <dx-polar-chart ... >
         <dxo-common-series-settings [color]="seriesColor">
         </dxo-common-series-settings>
-    </dx-chart>
+    </dx-polar-chart>
 
     <!-- tab: app.component.ts -->
     import { registerGradient } from "devextreme/common/charts";
@@ -86,19 +71,19 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 
     <!-- tab: App.vue (Options API) -->
     <template>
-        <DxChart ... >
+        <DxPolarChart ... >
             <DxCommonSeriesSettings 
                 :color="seriesColor"
             />
-        </DxChart>
+        </DxPolarChart>
     </template>
     <script>
-        import DxChart, { DxCommonSeriesSettings } from 'devextreme-vue/chart';
+        import DxPolarChart, { DxCommonSeriesSettings } from 'devextreme-vue/chart';
         import { registerGradient } from 'devextreme/common/charts';
 
         export default {
             components: {
-                DxChart,
+                DxPolarChart,
                 DxCommonSeriesSettings
             },
             data() {
@@ -123,14 +108,14 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 
     <!-- tab: App.vue (Composition API) -->
     <template>
-        <DxChart ... >
+        <DxPolarChart ... >
             <DxCommonSeriesSettings 
                 :color="seriesColor"
             />
-        </DxChart>
+        </DxPolarChart>
     </template>
     <script setup>
-        import DxChart, { DxCommonSeriesSettings } from 'devextreme-vue/chart';
+        import DxPolarChart, { DxCommonSeriesSettings } from 'devextreme-vue/chart';
         import { registerGradient } from 'devextreme/common/charts';
 
         // ...
@@ -152,7 +137,7 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 ##### React
 
     <!-- tab: App.js -->
-    import Chart, { CommonSeriesSettings } from 'devextreme-react/chart';
+    import PolarChart, { CommonSeriesSettings } from 'devextreme-react/chart';
     import { registerGradient } from 'devextreme/common/charts';
 
     const seriesColor = {
@@ -170,20 +155,15 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 
     export default function App() {
         return (
-            <Chart ... >
+            <PolarChart ... >
                 <CommonSeriesSettings 
                     color={seriesColor}
                 />
-            </Chart>
+            </PolarChart>
         );
     }
 
 ---
 
-[note]
 
-- To correctly export a component with transparent gradient, specify gradient colors in RGBA format.
 
-- Radial and rotated linear gradients may look slightly different when exported. 
-
-[/note]

@@ -1,16 +1,10 @@
----
-id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.color
-type: String | ChartsColor
-default: undefined
----
----
-##### shortDescription
-Sets a color for a series when it is selected.
+You can also specify a custom pattern or gradient instead of a plain color. Follow the steps below:  
 
----
-#include common-colorlist
+1. Call the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to obtain a fill ID.
 
-#include dataviz-chartscolor
+1. Set the `fillId` field to the obtained ID in the **color** configuration object.
+
+1. Specify the `base` color for labels and connectors.
 
 ---
 ##### jQuery
@@ -21,10 +15,9 @@ Sets a color for a series when it is selected.
             // ...
             series: {
                 // ...
-                selectionStyle: {
-                    color: {
-                        fillId: customPatternId
-                    }
+                color: {
+                    base: "#000000",
+                    fillId: customPatternId
                 }
             }
         });
@@ -34,10 +27,9 @@ Sets a color for a series when it is selected.
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-series ... >
-            <dxo-selection-style
-                [color]="fill"
-            ></dxo-selection-style>
+        <dxi-series ...
+            [color]="customPattern"
+        >
         </dxi-series>
     </dx-polar-chart>
 
@@ -47,7 +39,8 @@ Sets a color for a series when it is selected.
     export class AppComponent {
         // ...
         
-        fill = {
+        customPattern = {
+            base: "#000000",
             fillId: this.customPatternId
         };
     } 
@@ -57,26 +50,24 @@ Sets a color for a series when it is selected.
     <!-- tab: App.vue (Options API) -->
     <template>
         <DxPolarChart ... >
-            <DxSeries ... >
-                <DxSelectionStyle :color="fill" />
-            </DxSeries>
+            <DxSeries :color="customPattern" />
         </DxPolarChart>
     </template>
 
     <script>
-    import DxPolarChart, { DxSeries, DxSelectionStyle } from 'devextreme-vue/chart'; 
+    import DxPolarChart, { DxSeries } from 'devextreme-vue/chart'; 
     // ...
 
     export default {
         components: {
-            DxChart,
-            DxSeries,
-            DxSelectionStyle
+            DxPolarChart,
+            DxSeries
         },
         data() {
             return {
                 // ...
-                fill: {
+                customPattern: {
+                    base: "#000000",
                     fillId: this.customPatternId
                 }
             }
@@ -87,17 +78,16 @@ Sets a color for a series when it is selected.
     <!-- tab: App.vue (Composition API) -->
     <template>
         <DxPolarChart ... >
-            <DxSeries ... >
-                <DxSelectionStyle :color="fill" />
-            </DxSeries>
+            <DxSeries :color="customPattern" />
         </DxPolarChart>
     </template>
 
     <script setup>
-    import DxPolarChart, { DxSeries, DxSelectionStyle } from 'devextreme-vue/chart';  
+    import DxPolarChart, { DxSeries } from 'devextreme-vue/chart';  
     // ...
 
-    const fill = {
+    const customPattern = {
+        base: "#000000",
         fillId: customPatternId
     };
     </script>
@@ -106,19 +96,18 @@ Sets a color for a series when it is selected.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import PolarChart, { Series, SelectionStyle } from 'devextreme-react/chart'; 
+    import PolarChart, { Series } from 'devextreme-react/chart'; 
 
     // ...
-    const fill = {
+    const customPattern = {
+        base: "#000000",
         fillId: customPatternId
     };
 
     export default function App() { 
         return ( 
             <PolarChart ... >
-                <Series ... >
-                    <SelectionStyle color={fill} />
-                </Series>
+                <Series color={customPattern} />
             </PolarChart>        
         ); 
     } 

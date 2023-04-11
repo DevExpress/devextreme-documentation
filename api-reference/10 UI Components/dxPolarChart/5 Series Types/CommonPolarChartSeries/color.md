@@ -8,4 +8,6 @@ default: undefined
 Specifies a series color.
 
 ---
-Color is used to distinguish one chart series from another. However, there can be cases when it is more appropriate to display all chart series in one color. In this case, set the **color** property of the **commonSeriesSettings** configuration object. If required, you can override this property's common value in individual **series** objects.
+Specified in the [commonSeriesSettings](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/) object, this property colors all series in the chart. To color an individual series, specify this property in the series object within the [series](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/) array.
+
+#include common-colorlist

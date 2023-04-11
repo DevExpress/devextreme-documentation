@@ -1,16 +1,10 @@
----
-id: dxChartSeriesTypes.CommonSeries.hoverStyle.color
-type: String | ChartsColor
-default: undefined
----
----
-##### shortDescription
-Specifies the color of the series in the hovered state.
+You can also specify a custom pattern or gradient instead of a plain color. Follow the steps below:  
 
----
-#include common-colorlist
+1. Call the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to obtain a fill ID.
 
-#include dataviz-chartscolor
+1. Set the `fillId` field to the obtained ID in the **color** configuration object.
+
+1. Specify the `base` color for labels and connectors.
 
 ---
 ##### jQuery
@@ -21,10 +15,9 @@ Specifies the color of the series in the hovered state.
             // ...
             series: {
                 // ...
-                hoverStyle: {
-                    color: {
-                        fillId: customPatternId
-                    }
+                color: {
+                    base: "#000000",
+                    fillId: customPatternId
                 }
             }
         });
@@ -34,10 +27,9 @@ Specifies the color of the series in the hovered state.
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-hover-style
-                [color]="fill"
-            ></dxo-hover-style>
+        <dxi-series ...
+            [color]="customPattern"
+        >
         </dxi-series>
     </dx-chart>
 
@@ -47,7 +39,8 @@ Specifies the color of the series in the hovered state.
     export class AppComponent {
         // ...
         
-        fill = {
+        customPattern = {
+            base: "#000000",
             fillId: this.customPatternId
         };
     } 
@@ -57,26 +50,24 @@ Specifies the color of the series in the hovered state.
     <!-- tab: App.vue (Options API) -->
     <template>
         <DxChart ... >
-            <DxSeries ... >
-                <DxHoverStyle :color="fill" />
-            </DxSeries>
+            <DxSeries :color="customPattern" />
         </DxChart>
     </template>
 
     <script>
-    import DxChart, { DxSeries, DxHoverStyle } from 'devextreme-vue/chart'; 
+    import DxChart, { DxSeries } from 'devextreme-vue/chart'; 
     // ...
 
     export default {
         components: {
             DxChart,
-            DxSeries,
-            DxHoverStyle
+            DxSeries
         },
         data() {
             return {
                 // ...
-                fill: {
+                customPattern: {
+                    base: "#000000",
                     fillId: this.customPatternId
                 }
             }
@@ -87,17 +78,16 @@ Specifies the color of the series in the hovered state.
     <!-- tab: App.vue (Composition API) -->
     <template>
         <DxChart ... >
-            <DxSeries ... >
-                <DxHoverStyle :color="fill" />
-            </DxSeries>
+            <DxSeries :color="customPattern" />
         </DxChart>
     </template>
 
     <script setup>
-    import DxChart, { DxSeries, DxHoverStyle } from 'devextreme-vue/chart';  
+    import DxChart, { DxSeries } from 'devextreme-vue/chart';  
     // ...
 
-    const fill = {
+    const customPattern = {
+        base: "#000000",
         fillId: customPatternId
     };
     </script>
@@ -106,19 +96,18 @@ Specifies the color of the series in the hovered state.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Chart, { Series, HoverStyle } from 'devextreme-react/chart'; 
+    import Chart, { Series } from 'devextreme-react/chart'; 
 
     // ...
-    const fill = {
+    const customPattern = {
+        base: "#000000",
         fillId: customPatternId
     };
 
     export default function App() { 
         return ( 
             <Chart ... >
-                <Series ... >
-                    <HoverStyle color={fill} />
-                </Series>
+                <Series color={customPattern} />
             </Chart>        
         ); 
     } 

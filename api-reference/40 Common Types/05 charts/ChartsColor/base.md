@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the base color for series, points and labels.
 
 ---
 <!-- Description goes here -->

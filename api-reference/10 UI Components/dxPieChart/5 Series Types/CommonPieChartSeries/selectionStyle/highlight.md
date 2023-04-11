@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to lighten the series when a user selects it.
 
 ---
 <!-- Description goes here -->

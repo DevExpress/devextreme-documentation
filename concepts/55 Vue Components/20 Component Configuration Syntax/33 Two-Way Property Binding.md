@@ -26,9 +26,10 @@ Changes in the `bindingProperty` are propagated to the TextBox's **value** and v
     </template>
 
     <script setup>
+    import { ref } from "vue";
     import DxTextBox from 'devextreme-vue/text-box';
 
-    let bindingProperty = 'Some value';
+    let bindingProperty = ref('Some value');
     </script>
 
 [important] In Vue 2 applications, use the `.sync` modifier to implement two-way binding.

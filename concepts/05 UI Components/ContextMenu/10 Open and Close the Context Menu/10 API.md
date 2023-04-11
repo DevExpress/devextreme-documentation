@@ -1,8 +1,5 @@
 The ContextMenu UI component is not supposed to be opened programmatically, but rare scenarios demand this. This article shows how to do this using the Button UI component. This choice is made for purely demonstrational purposes, and you can do the same with another UI component following the same guidelines.
 
-#####See Also#####
-- [ContextMenu - Overview](/concepts/05%20UI%20Components/ContextMenu/00%20Overview.md '/Documentation/Guide/UI_Components/ContextMenu/Overview/')
-
 ---
 ##### jQuery
 

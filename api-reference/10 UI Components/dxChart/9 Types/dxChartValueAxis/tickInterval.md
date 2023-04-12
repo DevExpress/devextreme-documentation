@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartValueAxis.tickInterval
+type: Number | Object | Enums.TimeInterval
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartValueAxis.linearThreshold
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

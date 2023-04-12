@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:ExportTexts.exportSelectedRows
+type: String
+default: 'Export selected rows to {0}'
 ---
 ---
 ##### shortDescription

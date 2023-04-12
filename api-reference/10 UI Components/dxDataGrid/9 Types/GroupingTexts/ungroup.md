@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:GroupingTexts.ungroup
+type: String
+default: 'Ungroup'
 ---
 ---
 ##### shortDescription

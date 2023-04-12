@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsLabel.alignment
+type: Enums.HorizontalAlignment
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.fullstackedarea
+type: any
 ---
 ---
 ##### shortDescription

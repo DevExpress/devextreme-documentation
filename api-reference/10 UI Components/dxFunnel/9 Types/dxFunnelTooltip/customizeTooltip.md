@@ -1,5 +1,7 @@
 ---
 uid: viz/funnel:dxFunnelTooltip.customizeTooltip
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

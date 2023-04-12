@@ -1,5 +1,7 @@
 ---
 uid: common/grids:LoadPanel.indicatorSrc
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

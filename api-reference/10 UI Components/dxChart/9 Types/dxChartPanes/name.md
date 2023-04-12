@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartPanes.name
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

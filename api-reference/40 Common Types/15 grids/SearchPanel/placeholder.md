@@ -1,5 +1,7 @@
 ---
 uid: common/grids:SearchPanel.placeholder
+type: String
+default: 'Search...'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/vector_map:dxVectorMapLegends.customizeText
+type: function(itemInfo)
 ---
 ---
 ##### shortDescription

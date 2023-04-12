@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxisConstantLinesLabel.verticalAlignment
+type: Enums.VerticalAlignment
+default: 'top'
 ---
 ---
 ##### shortDescription

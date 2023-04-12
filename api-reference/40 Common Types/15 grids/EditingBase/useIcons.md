@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingBase.useIcons
+type: Boolean
+default: false, true (Material)
 ---
 ---
 ##### shortDescription

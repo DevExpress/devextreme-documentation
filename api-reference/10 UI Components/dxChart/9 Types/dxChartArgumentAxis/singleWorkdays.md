@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.singleWorkdays
+type: Array<Date, String> | Array<Number>
+default: undefined
 ---
 ---
 ##### shortDescription

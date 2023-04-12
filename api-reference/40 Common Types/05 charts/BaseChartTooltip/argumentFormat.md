@@ -1,5 +1,7 @@
 ---
 uid: viz/chart_components/base_chart:BaseChartTooltip.argumentFormat
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

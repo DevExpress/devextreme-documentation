@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.placeholderSize
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

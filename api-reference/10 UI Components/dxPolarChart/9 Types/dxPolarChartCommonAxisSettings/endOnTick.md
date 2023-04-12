@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettings.endOnTick
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

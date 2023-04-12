@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsStripStyle.paddingLeftRight
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

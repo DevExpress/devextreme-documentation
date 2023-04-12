@@ -1,5 +1,7 @@
 ---
 uid: common/grids:StateStoring.type
+type: Enums.StateStoreType
+default: 'localStorage'
 ---
 ---
 ##### shortDescription

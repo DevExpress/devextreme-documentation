@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.paddingLeftRight
+type: Number
+default: 18
 ---
 ---
 ##### shortDescription

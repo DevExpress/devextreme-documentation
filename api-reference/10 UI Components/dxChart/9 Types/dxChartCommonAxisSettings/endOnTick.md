@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettings.endOnTick
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

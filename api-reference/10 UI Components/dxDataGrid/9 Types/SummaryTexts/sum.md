@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTexts.sum
+type: String
+default: 'Sum={0}'
 ---
 ---
 ##### shortDescription

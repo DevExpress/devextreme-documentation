@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.position
+type: Enums.Position
+default: 'bottom'
 ---
 ---
 ##### shortDescription

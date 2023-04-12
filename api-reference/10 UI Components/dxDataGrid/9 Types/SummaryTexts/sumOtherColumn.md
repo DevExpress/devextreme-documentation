@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTexts.sumOtherColumn
+type: String
+default: 'Sum of {1} is {0}'
 ---
 ---
 ##### shortDescription

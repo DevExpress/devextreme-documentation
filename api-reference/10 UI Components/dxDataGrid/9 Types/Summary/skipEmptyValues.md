@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:Summary.skipEmptyValues
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

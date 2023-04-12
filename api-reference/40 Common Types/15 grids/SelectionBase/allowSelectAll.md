@@ -1,5 +1,7 @@
 ---
 uid: common/grids:SelectionBase.allowSelectAll
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

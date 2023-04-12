@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsLabel.template
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

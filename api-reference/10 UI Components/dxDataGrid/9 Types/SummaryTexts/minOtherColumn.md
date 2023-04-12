@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTexts.minOtherColumn
+type: String
+default: 'Min of {1} is {0}'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/sankey:dxSankeyTooltip.customizeLinkTooltip
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

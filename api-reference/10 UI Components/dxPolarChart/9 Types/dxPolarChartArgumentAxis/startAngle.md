@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxis.startAngle
+type: Number
+default: 0
 ---
 ---
 ##### shortDescription

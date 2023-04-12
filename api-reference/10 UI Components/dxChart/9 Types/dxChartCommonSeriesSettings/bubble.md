@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.bubble
+type: any
 ---
 ---
 ##### shortDescription

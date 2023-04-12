@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxisStrips.color
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

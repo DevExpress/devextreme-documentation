@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.spline
+type: any
 ---
 ---
 ##### shortDescription

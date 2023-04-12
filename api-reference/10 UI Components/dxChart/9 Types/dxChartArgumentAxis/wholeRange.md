@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.wholeRange
+type: Object | Array<Number, String, Date>
+default: undefined
 ---
 ---
 ##### shortDescription

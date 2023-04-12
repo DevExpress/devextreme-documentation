@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTotalItem.summaryType
+type: Enums.SummaryType | String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.zIndex
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

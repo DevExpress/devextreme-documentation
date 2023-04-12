@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsConstantLineStyle.paddingLeftRight
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

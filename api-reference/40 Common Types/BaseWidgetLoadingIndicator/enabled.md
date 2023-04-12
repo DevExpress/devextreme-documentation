@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetLoadingIndicator.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

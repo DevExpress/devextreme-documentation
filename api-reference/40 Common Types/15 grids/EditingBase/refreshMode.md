@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingBase.refreshMode
+type: Enums.GridsEditRefreshMode
+default: 'full'
 ---
 ---
 ##### shortDescription

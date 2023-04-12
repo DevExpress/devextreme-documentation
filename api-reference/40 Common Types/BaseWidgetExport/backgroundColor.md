@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetExport.backgroundColor
+type: String
+default: '#ffffff'
 ---
 ---
 ##### shortDescription

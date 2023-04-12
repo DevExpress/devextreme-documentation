@@ -1,5 +1,6 @@
 ---
 uid: viz/funnel:dxFunnelLegend.customizeHint
+type: function(itemInfo)
 ---
 ---
 ##### shortDescription

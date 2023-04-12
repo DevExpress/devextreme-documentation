@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.verticalAlignment
+type: Enums.VerticalEdge
+default: 'top'
 ---
 ---
 ##### shortDescription

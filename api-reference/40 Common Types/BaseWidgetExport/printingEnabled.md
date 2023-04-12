@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetExport.printingEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

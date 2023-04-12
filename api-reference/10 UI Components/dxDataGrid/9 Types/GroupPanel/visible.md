@@ -1,6 +1,8 @@
 ---
 firedEvents: optionChanged
 uid: ui/data_grid:GroupPanel.visible
+type: Boolean | Enums.Mode
+default: false
 ---
 ---
 ##### shortDescription

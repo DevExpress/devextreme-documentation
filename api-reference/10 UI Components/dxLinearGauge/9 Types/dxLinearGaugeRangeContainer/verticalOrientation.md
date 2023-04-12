@@ -1,5 +1,7 @@
 ---
 uid: viz/linear_gauge:dxLinearGaugeRangeContainer.verticalOrientation
+type: Enums.VerticalAlignment
+default: 'bottom'
 ---
 ---
 ##### shortDescription

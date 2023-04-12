@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.textOverflow
+type: Enums.TextOverflow
+default: 'ellipsis'
 ---
 ---
 ##### shortDescription

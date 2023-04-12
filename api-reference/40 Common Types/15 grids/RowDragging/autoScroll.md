@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.autoScroll
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

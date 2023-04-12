@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.dragDirection
+type: Enums.DragDirection
+default: 'both'
 ---
 ---
 ##### shortDescription

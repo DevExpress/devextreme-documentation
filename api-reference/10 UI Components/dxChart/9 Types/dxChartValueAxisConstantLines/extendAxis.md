@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxisConstantLines.extendAxis
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

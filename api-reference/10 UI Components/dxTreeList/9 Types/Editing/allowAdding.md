@@ -1,5 +1,7 @@
 ---
 uid: ui/tree_list:Editing.allowAdding
+type: Boolean | function(options)
+default: false
 ---
 ---
 ##### shortDescription

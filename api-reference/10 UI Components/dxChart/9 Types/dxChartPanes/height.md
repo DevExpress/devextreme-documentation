@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartPanes.height
+type: Number | String
+default: undefined
 ---
 ---
 ##### shortDescription

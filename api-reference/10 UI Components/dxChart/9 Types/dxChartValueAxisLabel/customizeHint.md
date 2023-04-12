@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartValueAxisLabel.customizeHint
+type: function(axisValue)
 ---
 ---
 ##### shortDescription

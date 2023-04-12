@@ -1,5 +1,7 @@
 ---
 uid: common/grids:FilterRow.visible
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

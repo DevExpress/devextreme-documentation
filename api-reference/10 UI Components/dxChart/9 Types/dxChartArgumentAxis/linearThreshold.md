@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.linearThreshold
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

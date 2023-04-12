@@ -1,5 +1,7 @@
 ---
 uid: common/grids:Sorting.ascendingText
+type: String
+default: 'Sort Ascending'
 ---
 ---
 ##### shortDescription

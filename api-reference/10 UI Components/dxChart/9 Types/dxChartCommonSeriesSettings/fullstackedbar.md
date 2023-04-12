@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.fullstackedbar
+type: any
 ---
 ---
 ##### shortDescription

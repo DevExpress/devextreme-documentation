@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

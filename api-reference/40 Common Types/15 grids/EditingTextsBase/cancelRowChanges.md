@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingTextsBase.cancelRowChanges
+type: String
+default: 'Cancel'
 ---
 ---
 ##### shortDescription

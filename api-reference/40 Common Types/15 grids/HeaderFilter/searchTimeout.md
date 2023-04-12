@@ -1,5 +1,7 @@
 ---
 uid: common/grids:HeaderFilter.searchTimeout
+type: Number
+default: 500
 ---
 ---
 ##### shortDescription

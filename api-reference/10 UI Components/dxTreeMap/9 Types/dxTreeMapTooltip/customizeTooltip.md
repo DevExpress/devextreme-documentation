@@ -1,5 +1,7 @@
 ---
 uid: viz/tree_map:dxTreeMapTooltip.customizeTooltip
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

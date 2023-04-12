@@ -1,5 +1,7 @@
 ---
 uid: viz/vector_map:dxVectorMapLegends.markerShape
+type: Enums.VectorMapMarkerShape
+default: 'square'
 ---
 ---
 ##### shortDescription

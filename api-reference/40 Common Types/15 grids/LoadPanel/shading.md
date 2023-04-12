@@ -1,5 +1,7 @@
 ---
 uid: common/grids:LoadPanel.shading
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

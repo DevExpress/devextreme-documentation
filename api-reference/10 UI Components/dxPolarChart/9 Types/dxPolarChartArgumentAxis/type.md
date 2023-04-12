@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxis.type
+type: Enums.AxisScaleType
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:Grouping.allowCollapsing
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

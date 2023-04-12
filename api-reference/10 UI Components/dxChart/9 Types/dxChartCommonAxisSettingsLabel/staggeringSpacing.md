@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsLabel.staggeringSpacing
+type: Number
+default: 5
 ---
 ---
 ##### shortDescription

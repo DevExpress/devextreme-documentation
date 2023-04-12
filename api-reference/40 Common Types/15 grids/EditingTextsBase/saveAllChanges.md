@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingTextsBase.saveAllChanges
+type: String
+default: 'Save changes'
 ---
 ---
 ##### shortDescription

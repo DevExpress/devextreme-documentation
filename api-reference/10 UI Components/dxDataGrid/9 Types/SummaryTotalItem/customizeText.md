@@ -1,5 +1,6 @@
 ---
 uid: ui/data_grid:SummaryTotalItem.customizeText
+type: function(itemInfo)
 ---
 ---
 ##### shortDescription

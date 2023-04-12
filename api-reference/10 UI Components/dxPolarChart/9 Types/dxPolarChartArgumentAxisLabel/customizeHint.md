@@ -1,5 +1,6 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxisLabel.customizeHint
+type: function(argument)
 ---
 ---
 ##### shortDescription

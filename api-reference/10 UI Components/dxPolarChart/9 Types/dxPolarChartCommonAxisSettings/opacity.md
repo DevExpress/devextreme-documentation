@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettings.opacity
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

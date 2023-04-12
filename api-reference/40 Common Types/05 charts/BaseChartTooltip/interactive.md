@@ -1,5 +1,7 @@
 ---
 uid: viz/chart_components/base_chart:BaseChartTooltip.interactive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

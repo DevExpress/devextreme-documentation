@@ -1,5 +1,7 @@
 ---
 uid: viz/circular_gauge:dxCircularGaugeScale.orientation
+type: Enums.CircularGaugeElementOrientation
+default: 'outside'
 ---
 ---
 ##### shortDescription

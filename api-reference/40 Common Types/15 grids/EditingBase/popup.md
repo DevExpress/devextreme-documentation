@@ -1,5 +1,6 @@
 ---
 uid: common/grids:EditingBase.popup
+type: dxPopup_Options
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/bar_gauge:dxBarGaugeTooltip.interactive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

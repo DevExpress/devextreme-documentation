@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.wordWrap
+type: Enums.WordWrap
+default: 'normal'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: common/grids:RowDragging.onDragMove
+type: function(e)
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 notUsedInTheme: 
 uid: viz/chart:dxChartArgumentAxis.minVisualRangeLength
+type: Number | Object | Enums.TimeInterval
+default: undefined
 ---
 ---
 ##### shortDescription

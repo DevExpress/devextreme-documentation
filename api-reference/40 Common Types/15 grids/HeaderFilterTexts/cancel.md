@@ -1,5 +1,7 @@
 ---
 uid: common/grids:HeaderFilterTexts.cancel
+type: String
+default: 'Cancel'
 ---
 ---
 ##### shortDescription

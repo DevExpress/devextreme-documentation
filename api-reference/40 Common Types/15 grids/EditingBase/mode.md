@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingBase.mode
+type: Enums.GridsEditMode
+default: 'row'
 ---
 ---
 ##### shortDescription

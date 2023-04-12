@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsLabel.indentFromAxis
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

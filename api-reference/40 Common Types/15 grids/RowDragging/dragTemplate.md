@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.dragTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

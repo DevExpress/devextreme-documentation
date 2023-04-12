@@ -2,6 +2,7 @@
 firedEvents: optionChanged
 notUsedInTheme: 
 uid: viz/polar_chart:dxPolarChartValueAxis.visualRange
+type: Object | Array<Number, String, Date>
 ---
 ---
 ##### shortDescription

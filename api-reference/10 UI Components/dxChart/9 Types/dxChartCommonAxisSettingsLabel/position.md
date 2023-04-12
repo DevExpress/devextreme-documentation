@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsLabel.position
+type: Enums.RelativePosition | Enums.Position
+default: 'outside'
 ---
 ---
 ##### shortDescription

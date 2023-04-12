@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.steparea
+type: any
 ---
 ---
 ##### shortDescription

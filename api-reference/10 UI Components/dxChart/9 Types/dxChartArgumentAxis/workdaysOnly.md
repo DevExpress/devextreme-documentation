@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.workdaysOnly
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

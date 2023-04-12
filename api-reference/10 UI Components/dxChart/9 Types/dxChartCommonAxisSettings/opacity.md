@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettings.opacity
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

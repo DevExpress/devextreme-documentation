@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.offset
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/bar_gauge:dxBarGaugeLegend.itemTextFormat
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

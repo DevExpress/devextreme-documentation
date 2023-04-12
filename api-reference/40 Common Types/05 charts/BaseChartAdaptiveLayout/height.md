@@ -1,5 +1,7 @@
 ---
 uid: viz/chart_components/base_chart:BaseChartAdaptiveLayout.height
+type: Number
+default: 80
 ---
 ---
 ##### shortDescription

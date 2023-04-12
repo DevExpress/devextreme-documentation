@@ -1,5 +1,7 @@
 ---
 uid: ui/tree_list:Scrolling.mode
+type: Enums.ScrollMode
+default: 'virtual'
 ---
 ---
 ##### shortDescription

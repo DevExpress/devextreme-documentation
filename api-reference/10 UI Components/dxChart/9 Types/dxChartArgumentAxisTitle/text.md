@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxisTitle.text
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

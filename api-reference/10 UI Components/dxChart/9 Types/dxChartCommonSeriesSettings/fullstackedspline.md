@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.fullstackedspline
+type: any
 ---
 ---
 ##### shortDescription

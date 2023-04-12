@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxisConstantLines.value
+type: Number | Date | String
+default: undefined
 ---
 ---
 ##### shortDescription

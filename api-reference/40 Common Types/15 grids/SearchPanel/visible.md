@@ -1,5 +1,7 @@
 ---
 uid: common/grids:SearchPanel.visible
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeScale.allowDecimals
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.stackedline
+type: any
 ---
 ---
 ##### shortDescription

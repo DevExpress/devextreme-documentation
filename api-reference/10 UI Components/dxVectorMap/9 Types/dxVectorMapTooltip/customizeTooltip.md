@@ -1,6 +1,8 @@
 ---
 notUsedInTheme: 
 uid: viz/vector_map:dxVectorMapTooltip.customizeTooltip
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

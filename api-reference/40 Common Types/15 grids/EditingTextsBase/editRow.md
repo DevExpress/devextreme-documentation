@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingTextsBase.editRow
+type: String
+default: 'Edit'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.horizontalAlignment
+type: Enums.HorizontalAlignment
+default: 'center'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/pie_chart:dxPieChartLegend.customizeText
+type: function(pointInfo)
 ---
 ---
 ##### shortDescription

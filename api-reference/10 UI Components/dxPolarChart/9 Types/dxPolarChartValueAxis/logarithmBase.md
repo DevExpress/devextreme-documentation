@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartValueAxis.logarithmBase
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

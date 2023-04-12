@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettings.maxValueMargin
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

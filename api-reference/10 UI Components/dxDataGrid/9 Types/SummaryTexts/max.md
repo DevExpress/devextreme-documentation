@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTexts.max
+type: String
+default: 'Max={0}'
 ---
 ---
 ##### shortDescription

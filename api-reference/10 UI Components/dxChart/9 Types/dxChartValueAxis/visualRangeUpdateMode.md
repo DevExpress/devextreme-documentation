@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxis.visualRangeUpdateMode
+type: Enums.VisualRangeUpdateMode
+default: 'auto'
 ---
 ---
 ##### shortDescription

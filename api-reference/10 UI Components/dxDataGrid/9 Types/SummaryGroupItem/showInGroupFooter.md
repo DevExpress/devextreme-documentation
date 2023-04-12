@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryGroupItem.showInGroupFooter
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

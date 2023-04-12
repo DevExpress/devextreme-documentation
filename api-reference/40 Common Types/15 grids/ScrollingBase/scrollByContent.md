@@ -1,5 +1,7 @@
 ---
 uid: common/grids:ScrollingBase.scrollByContent
+type: Boolean
+default: true, false (non-touch_devices)
 ---
 ---
 ##### shortDescription

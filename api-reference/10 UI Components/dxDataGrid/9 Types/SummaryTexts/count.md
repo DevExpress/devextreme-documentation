@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTexts.count
+type: String
+default: 'Count={0}'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/chart:dxChartLegend.customizeText
+type: function(seriesInfo)
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTotalItem.valueFormat
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

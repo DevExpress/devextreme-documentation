@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxis.axisDivisionFactor
+type: Number
+default: 40
 ---
 ---
 ##### shortDescription

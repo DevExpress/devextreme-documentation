@@ -1,5 +1,6 @@
 ---
 uid: viz/vector_map:dxVectorMapLegends.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

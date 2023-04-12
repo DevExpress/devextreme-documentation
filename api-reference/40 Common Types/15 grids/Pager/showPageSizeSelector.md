@@ -1,5 +1,7 @@
 ---
 uid: common/grids:Pager.showPageSizeSelector
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

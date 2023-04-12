@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxis.synchronizedValue
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:Grouping.contextMenuEnabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

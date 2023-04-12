@@ -1,5 +1,7 @@
 ---
 uid: common/grids:FilterRow.applyFilterText
+type: String
+default: 'Apply filter'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/sankey:dxSankeyTooltip.linkTooltipTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

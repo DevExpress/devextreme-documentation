@@ -1,5 +1,7 @@
 ---
 uid: viz/linear_gauge:dxLinearGaugeScaleLabel.indentFromTick
+type: Number
+default: -10
 ---
 ---
 ##### shortDescription

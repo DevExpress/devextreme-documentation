@@ -1,5 +1,7 @@
 ---
 uid: common/grids:KeyboardNavigation.enabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxis.minorTickCount
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

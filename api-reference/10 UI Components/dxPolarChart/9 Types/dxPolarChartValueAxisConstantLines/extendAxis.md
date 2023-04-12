@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartValueAxisConstantLines.extendAxis
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsConstantLineStyle.dashStyle
+type: Enums.DashStyle
+default: 'solid'
 ---
 ---
 ##### shortDescription

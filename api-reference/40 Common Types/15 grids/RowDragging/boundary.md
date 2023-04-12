@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.boundary
+type: String | UserDefinedElement
+default: undefined
 ---
 ---
 ##### shortDescription

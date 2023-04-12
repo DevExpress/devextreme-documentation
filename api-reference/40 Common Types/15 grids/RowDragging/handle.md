@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.handle
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

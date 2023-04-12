@@ -1,5 +1,7 @@
 ---
 uid: viz/bar_gauge:dxBarGaugeTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

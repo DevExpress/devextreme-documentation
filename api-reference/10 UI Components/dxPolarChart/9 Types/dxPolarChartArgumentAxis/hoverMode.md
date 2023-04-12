@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxis.hoverMode
+type: Enums.ArgumentAxisHoverMode
+default: 'none'
 ---
 ---
 ##### shortDescription

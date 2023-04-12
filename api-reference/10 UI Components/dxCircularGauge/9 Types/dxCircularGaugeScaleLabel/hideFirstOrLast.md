@@ -1,5 +1,7 @@
 ---
 uid: viz/circular_gauge:dxCircularGaugeScaleLabel.hideFirstOrLast
+type: Enums.CircularGaugeLabelOverlap
+default: 'last'
 ---
 ---
 ##### shortDescription

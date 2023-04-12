@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:GroupingTexts.groupContinuesMessage
+type: String
+default: 'Continues on the next page'
 ---
 ---
 ##### shortDescription

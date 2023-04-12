@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxisConstantLinesLabel.text
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.logarithmBase
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

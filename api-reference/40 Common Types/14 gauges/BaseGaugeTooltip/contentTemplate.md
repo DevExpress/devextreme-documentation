@@ -1,5 +1,7 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeTooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

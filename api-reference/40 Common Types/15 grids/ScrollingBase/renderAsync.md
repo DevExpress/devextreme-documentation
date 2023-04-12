@@ -1,5 +1,7 @@
 ---
 uid: common/grids:ScrollingBase.renderAsync
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

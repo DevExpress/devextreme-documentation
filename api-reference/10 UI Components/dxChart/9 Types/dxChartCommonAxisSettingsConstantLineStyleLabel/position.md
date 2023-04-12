@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsConstantLineStyleLabel.position
+type: Enums.RelativePosition
+default: 'inside'
 ---
 ---
 ##### shortDescription

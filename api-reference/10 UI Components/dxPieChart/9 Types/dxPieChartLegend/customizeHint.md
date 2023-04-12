@@ -1,5 +1,6 @@
 ---
 uid: viz/pie_chart:dxPieChartLegend.customizeHint
+type: function(pointInfo)
 ---
 ---
 ##### shortDescription

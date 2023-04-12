@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingBase.startEditAction
+type: Enums.StartEditAction
+default: 'click'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettingsConstantLineStyle.color
+type: String
+default: '#000000'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartLegend.position
+type: Enums.RelativePosition
+default: 'outside'
 ---
 ---
 ##### shortDescription

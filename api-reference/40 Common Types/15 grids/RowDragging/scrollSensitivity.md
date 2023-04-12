@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.scrollSensitivity
+type: Number
+default: 60
 ---
 ---
 ##### shortDescription

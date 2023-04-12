@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxisConstantLines.displayBehindSeries
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

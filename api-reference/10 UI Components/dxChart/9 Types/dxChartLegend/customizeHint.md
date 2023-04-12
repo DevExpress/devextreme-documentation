@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartLegend.customizeHint
+type: function(seriesInfo)
 ---
 ---
 ##### shortDescription

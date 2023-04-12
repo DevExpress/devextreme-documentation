@@ -1,5 +1,7 @@
 ---
 uid: common/grids:SearchPanel.highlightCaseSensitive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

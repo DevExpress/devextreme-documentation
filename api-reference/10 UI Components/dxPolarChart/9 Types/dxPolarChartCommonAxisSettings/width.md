@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettings.width
+type: Number
+default: 1
 ---
 ---
 ##### shortDescription

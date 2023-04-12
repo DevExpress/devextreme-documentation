@@ -1,5 +1,7 @@
 ---
 uid: common/grids:LoadPanel.text
+type: String
+default: 'Loading...'
 ---
 ---
 ##### shortDescription

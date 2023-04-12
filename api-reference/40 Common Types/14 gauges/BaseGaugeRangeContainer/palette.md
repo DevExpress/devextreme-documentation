@@ -1,5 +1,7 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeRangeContainer.palette
+type: Array<String> | Enums.Palette
+default: 'Material'
 ---
 ---
 ##### shortDescription

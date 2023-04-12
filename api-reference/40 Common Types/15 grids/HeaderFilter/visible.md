@@ -1,5 +1,7 @@
 ---
 uid: common/grids:HeaderFilter.visible
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

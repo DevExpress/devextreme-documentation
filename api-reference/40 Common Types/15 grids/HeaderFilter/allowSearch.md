@@ -1,5 +1,7 @@
 ---
 uid: common/grids:HeaderFilter.allowSearch
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

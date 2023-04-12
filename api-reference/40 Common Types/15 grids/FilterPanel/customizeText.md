@@ -1,5 +1,6 @@
 ---
 uid: common/grids:FilterPanel.customizeText
+type: function(e)
 ---
 ---
 ##### shortDescription

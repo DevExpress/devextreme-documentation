@@ -1,6 +1,8 @@
 ---
 firedEvents: optionChanged
 uid: common/grids:SearchPanel.text
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

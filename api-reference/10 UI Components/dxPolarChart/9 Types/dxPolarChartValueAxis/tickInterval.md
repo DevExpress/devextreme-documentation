@@ -1,5 +1,6 @@
 ---
 uid: viz/polar_chart:dxPolarChartValueAxis.tickInterval
+type: Number | Object | Enums.TimeInterval
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.splinearea
+type: any
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: common/grids:LoadPanel.shadingColor
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

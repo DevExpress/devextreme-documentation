@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettingsConstantLineStyle.dashStyle
+type: Enums.DashStyle
+default: 'solid'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxis.originValue
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

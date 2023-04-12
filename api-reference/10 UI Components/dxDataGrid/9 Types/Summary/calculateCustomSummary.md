@@ -1,5 +1,6 @@
 ---
 uid: ui/data_grid:Summary.calculateCustomSummary
+type: function(options)
 ---
 ---
 ##### shortDescription

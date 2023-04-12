@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettings.placeholderSize
+type: Number
+default: null
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:Export.allowExportSelectedData
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

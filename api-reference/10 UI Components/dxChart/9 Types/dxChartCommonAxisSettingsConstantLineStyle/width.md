@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsConstantLineStyle.width
+type: Number
+default: 1
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettings.color
+type: String
+default: '#767676'
 ---
 ---
 ##### shortDescription

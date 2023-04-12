@@ -1,5 +1,7 @@
 ---
 uid: common/grids:KeyboardNavigation.enterKeyAction
+type: Enums.EnterKeyAction
+default: 'startEdit'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsConstantLineStyleLabel.visible
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

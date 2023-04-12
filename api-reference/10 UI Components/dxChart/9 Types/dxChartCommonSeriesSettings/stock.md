@@ -1,5 +1,6 @@
 ---
 uid: viz/chart:dxChartCommonSeriesSettings.stock
+type: any
 ---
 ---
 ##### shortDescription

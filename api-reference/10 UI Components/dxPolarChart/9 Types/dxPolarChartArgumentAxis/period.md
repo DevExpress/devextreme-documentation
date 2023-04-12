@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxis.period
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

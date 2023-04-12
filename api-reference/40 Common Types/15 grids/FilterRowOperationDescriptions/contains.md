@@ -1,5 +1,7 @@
 ---
 uid: common/grids:FilterRowOperationDescriptions.contains
+type: String
+default: 'Contains'
 ---
 ---
 ##### shortDescription

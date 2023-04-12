@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.container
+type: String | UserDefinedElement
+default: undefined
 ---
 ---
 ##### shortDescription

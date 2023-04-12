@@ -1,5 +1,7 @@
 ---
 uid: common/grids:RowDragging.allowDropInsideItem
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

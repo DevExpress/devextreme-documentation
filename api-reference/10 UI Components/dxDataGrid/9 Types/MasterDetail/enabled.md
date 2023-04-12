@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:MasterDetail.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartArgumentAxis.aggregationGroupWidth
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

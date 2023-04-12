@@ -1,5 +1,7 @@
 ---
 uid: common/grids:SearchPanel.width
+type: Number
+default: 160
 ---
 ---
 ##### shortDescription

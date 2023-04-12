@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetSize.width
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

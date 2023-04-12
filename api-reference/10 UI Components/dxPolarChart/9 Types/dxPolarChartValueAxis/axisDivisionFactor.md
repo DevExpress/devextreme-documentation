@@ -1,5 +1,7 @@
 ---
 uid: viz/polar_chart:dxPolarChartValueAxis.axisDivisionFactor
+type: Number
+default: 30
 ---
 ---
 ##### shortDescription

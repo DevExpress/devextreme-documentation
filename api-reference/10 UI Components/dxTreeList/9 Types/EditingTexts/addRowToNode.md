@@ -1,5 +1,7 @@
 ---
 uid: ui/tree_list:EditingTexts.addRowToNode
+type: String
+default: 'Add'
 ---
 ---
 ##### shortDescription

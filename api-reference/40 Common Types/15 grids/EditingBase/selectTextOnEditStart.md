@@ -1,5 +1,7 @@
 ---
 uid: common/grids:EditingBase.selectTextOnEditStart
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTotalItem.displayFormat
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsTitle.margin
+type: Number
+default: 6
 ---
 ---
 ##### shortDescription

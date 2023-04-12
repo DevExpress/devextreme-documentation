@@ -1,5 +1,7 @@
 ---
 uid: common/grids:FilterRowOperationDescriptions.notContains
+type: String
+default: 'Does not contain'
 ---
 ---
 ##### shortDescription

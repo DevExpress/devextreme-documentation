@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.paddingTopBottom
+type: Number
+default: 15
 ---
 ---
 ##### shortDescription

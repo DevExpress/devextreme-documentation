@@ -1,5 +1,7 @@
 ---
 uid: common/grids:Pager.visible
+type: Boolean | Enums.Mode
+default: 'auto'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/polar_chart:dxPolarChartLegend.customizeText
+type: function(seriesInfo)
 ---
 ---
 ##### shortDescription

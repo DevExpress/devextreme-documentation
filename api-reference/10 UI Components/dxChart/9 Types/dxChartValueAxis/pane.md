@@ -1,5 +1,7 @@
 ---
 uid: viz/chart:dxChartValueAxis.pane
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

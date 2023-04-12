@@ -1,5 +1,6 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonSeriesSettings.area
+type: any
 ---
 ---
 ##### shortDescription

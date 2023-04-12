@@ -1,5 +1,7 @@
 ---
 uid: common/grids:Pager.showInfo
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

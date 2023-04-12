@@ -1,5 +1,7 @@
 ---
 uid: common/grids:FilterRow.resetOperationText
+type: String
+default: 'Reset'
 ---
 ---
 ##### shortDescription

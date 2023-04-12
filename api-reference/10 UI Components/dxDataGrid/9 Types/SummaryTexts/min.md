@@ -1,5 +1,7 @@
 ---
 uid: ui/data_grid:SummaryTexts.min
+type: String
+default: 'Min={0}'
 ---
 ---
 ##### shortDescription

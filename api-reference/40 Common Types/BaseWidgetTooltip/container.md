@@ -1,5 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.container
+type: String | UserDefinedElement
+default: undefined
 ---
 ---
 ##### shortDescription

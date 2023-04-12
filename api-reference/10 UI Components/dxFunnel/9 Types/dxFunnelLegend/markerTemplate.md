@@ -1,5 +1,7 @@
 ---
 uid: viz/funnel:dxFunnelLegend.markerTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

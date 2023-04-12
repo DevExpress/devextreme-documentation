@@ -1,5 +1,7 @@
 ---
 uid: common/grids:LoadPanel.enabled
+type: Boolean | Enums.Mode
+default: 'auto'
 ---
 ---
 ##### shortDescription

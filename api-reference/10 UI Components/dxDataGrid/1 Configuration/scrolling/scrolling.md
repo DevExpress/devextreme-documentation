@@ -8,7 +8,7 @@ inheritsType: ui/data_grid:Scrolling
 Configures scrolling.
 
 ---
-Scrolling allows a user to browse data left outside the current viewport. The UI component provides several scrolling modes detailed in the [mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '{basewidgetpath}/Configuration/scrolling/#mode') property description.
+Scrolling allows a user to browse data left outside the current viewport. The UI component provides several scrolling modes detailed in the [mode](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/Scrolling/mode.md '{basewidgetpath}/Configuration/scrolling/#mode') property description.
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/VirtualScrolling/",

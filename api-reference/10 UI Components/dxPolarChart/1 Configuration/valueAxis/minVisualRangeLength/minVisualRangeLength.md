@@ -1,8 +1,6 @@
 ---
 id: dxPolarChart.Options.valueAxis.minVisualRangeLength
-type: Number | Object | Enums.TimeInterval
 inherits: VizTimeInterval
-default: undefined
 notUsedInTheme: 
 ---
 ---

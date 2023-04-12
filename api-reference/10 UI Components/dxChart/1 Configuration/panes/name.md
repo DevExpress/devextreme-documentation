@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.panes.name
-type: String
-default: undefined
 ---
 ---
 ##### shortDescription

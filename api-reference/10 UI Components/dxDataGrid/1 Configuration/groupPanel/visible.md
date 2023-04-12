@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.groupPanel.visible
-type: Boolean | Enums.Mode
-default: false
 firedEvents: optionChanged
 ---
 ---

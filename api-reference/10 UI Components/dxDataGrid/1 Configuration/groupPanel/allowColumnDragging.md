@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.groupPanel.allowColumnDragging
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

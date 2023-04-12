@@ -1,7 +1,5 @@
 ---
 id: BaseChart.Options.legend.markerTemplate
-type: template
-default: undefined
 ---
 ---
 ##### shortDescription

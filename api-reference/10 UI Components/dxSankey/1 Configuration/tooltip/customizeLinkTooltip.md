@@ -1,7 +1,5 @@
 ---
 id: dxSankey.Options.tooltip.customizeLinkTooltip
-type: function(info)
-default: undefined
 ---
 ---
 ##### shortDescription

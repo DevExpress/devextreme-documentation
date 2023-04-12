@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonSeriesSettings.type
-type: Enums.SeriesType
-default: 'line'
 ---
 ---
 ##### shortDescription

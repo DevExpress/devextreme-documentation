@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.loadingIndicator.show
-type: Boolean
-default: false
 firedEvents: optionChanged
 ---
 ---

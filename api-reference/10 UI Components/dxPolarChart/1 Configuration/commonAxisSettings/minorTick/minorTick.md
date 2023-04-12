@@ -1,6 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.minorTick
-type: Object
+type: viz/polar_chart:dxPolarChartCommonAxisSettingsMinorTick
+inheritsType: viz/polar_chart:dxPolarChartCommonAxisSettingsMinorTick
 ---
 ---
 ##### shortDescription

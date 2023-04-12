@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.valueAxis.visualRange
-type: Object | Array<Number, String, Date>
 inherits: VisualRange
 firedEvents: optionChanged
 notUsedInTheme: 

@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.grouping.texts.ungroupAll
-type: String
-default: 'Ungroup All'
 ---
 ---
 ##### shortDescription

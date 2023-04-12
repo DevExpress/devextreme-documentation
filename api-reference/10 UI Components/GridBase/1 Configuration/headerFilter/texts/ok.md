@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.headerFilter.texts.ok
-type: String
-default: 'Ok'
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: BaseGauge.Options.scale.label.visible
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

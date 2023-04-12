@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.tooltip.cornerRadius
-type: Number
-default: 0, 4 (Material)
 ---
 ---
 ##### shortDescription

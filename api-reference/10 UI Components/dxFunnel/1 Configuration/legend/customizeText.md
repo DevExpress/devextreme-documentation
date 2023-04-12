@@ -1,6 +1,5 @@
 ---
 id: dxFunnel.Options.legend.customizeText
-type: function(itemInfo)
 notUsedInTheme: 
 ---
 ---

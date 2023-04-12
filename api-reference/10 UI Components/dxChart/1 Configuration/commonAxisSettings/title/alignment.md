@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.title.alignment
-type: Enums.HorizontalAlignment
-default: 'center'
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.showAllText
-type: String
-default: '(All)'
 ---
 ---
 ##### shortDescription

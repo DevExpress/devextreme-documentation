@@ -1,6 +1,7 @@
 ---
 id: dxPolarChart.Options.adaptiveLayout
-type: Object
+type: viz/polar_chart:dxPolarChartAdaptiveLayout
+inheritsType: viz/polar_chart:dxPolarChartAdaptiveLayout
 ---
 ---
 ##### shortDescription
@@ -11,8 +12,8 @@ The adaptive layout enables the UI component to hide optional elements if they d
 
 1. [Title](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/title.md '{basewidgetpath}/Configuration/title')
 2. [Export menu icon](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export '{basewidgetpath}/Configuration/export')
-3. [Legend](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/legend '{basewidgetpath}/Configuration/legend')
-4. [Argument axis labels](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/commonAxisSettings/label '{basewidgetpath}/Configuration/argumentAxis/label')
+3. [Legend](/api-reference/10%20UI%20Components/dxPolarChart/9%20Types/dxPolarChartLegend '{basewidgetpath}/Configuration/legend')
+4. [Argument axis labels](/api-reference/10%20UI%20Components/dxPolarChart/9%20Types/dxPolarChartCommonAxisSettings/label.md '{basewidgetpath}/Configuration/argumentAxis/label')
 5. [Point labels](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label') (can be saved by setting the **adaptiveLayout**.[keepLabels](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/adaptiveLayout/keepLabels.md '{basewidgetpath}/Configuration/adaptiveLayout#keepLabels') property to **true**)
 
 Use the **height** and **width** properties in the **adaptiveLayout** object to specify the minimum container size at which the layout begins to adapt.

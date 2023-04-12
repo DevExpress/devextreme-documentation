@@ -1,16 +1,16 @@
 To change series color, use one of the following options:
 
-- Specify a color [palette](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes) for the component.
-- Specify a [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#color) for a series.
-- Specify a [color](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#color) for all series.
+- Specify a color [palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes') for the component.
+- Specify a [color](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/color.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/#color') for a series.
+- Specify a [color](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/color.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#color') for all series.
 
 Besides color change, you can add a custom pattern or gradient fill to the following series:
 
-- [Area](/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/#color)
-- [Bar](/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/#color)
-- [Stacked bar](/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/StackedBarSeries/#color)
+- [Area](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/AreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/AreaSeries/#color')
+- [Bar](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/BarSeries/color.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/BarSeries/#color')
+- [Stacked bar](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/StackedBarSeries/color.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Series_Types/StackedBarSeries/#color')
 
-Use the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to create a custom pattern or gradient.
+Use the [registerPattern()](/api-reference/50%20Common/utils/viz/registerPattern(options).md '/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions') or [registerGradient()](/api-reference/50%20Common/utils/viz/registerGradient(type_options).md '/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options') method to create a custom pattern or gradient.
 
 The following example adds a gradient to all series in a PolarChart:
 

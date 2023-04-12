@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.commonSeriesSettings.splinearea
-type: any
 ---
 ---
 ##### shortDescription

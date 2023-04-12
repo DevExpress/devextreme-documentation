@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.constantLineStyle.paddingTopBottom
-type: Number
-default: 10
 ---
 ---
 ##### shortDescription

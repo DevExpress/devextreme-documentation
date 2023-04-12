@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.discreteAxisDivisionMode
-type: Enums.DiscreteAxisDivisionMode
-default: 'betweenLabels'
 ---
 ---
 ##### shortDescription

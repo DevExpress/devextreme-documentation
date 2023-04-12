@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.showOperationChooser
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

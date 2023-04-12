@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.scrolling.renderAsync
-type: Boolean
-default: undefined
 ---
 ---
 ##### shortDescription

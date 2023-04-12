@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.valueAxis.minorTickInterval
-type: Number | Object | Enums.TimeInterval
 inherits: VizTimeInterval
 ---
 ---

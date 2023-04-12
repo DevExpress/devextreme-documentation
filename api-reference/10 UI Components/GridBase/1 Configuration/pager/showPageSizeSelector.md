@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.pager.showPageSizeSelector
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

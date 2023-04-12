@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.title.textOverflow
-type: Enums.TextOverflow
-default: 'ellipsis'
 ---
 ---
 ##### shortDescription

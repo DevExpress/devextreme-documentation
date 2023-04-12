@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.loadingIndicator.backgroundColor
-type: String
-default: '#FFFFFF'
 ---
 ---
 ##### shortDescription

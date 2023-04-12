@@ -1,6 +1,5 @@
 ---
 id: GridBase.Options.filterPanel.customizeText
-type: function(e)
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.selection.mode
-type: Enums.SingleMultipleOrNone
-default: 'none'
 ---
 ---
 ##### shortDescription

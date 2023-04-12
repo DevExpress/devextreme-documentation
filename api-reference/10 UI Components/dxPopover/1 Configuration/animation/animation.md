@@ -1,6 +1,7 @@
 ---
 id: dxPopover.Options.animation
-type: Object
+type: ui/popover:dxPopoverAnimation
+inheritsType: ui/popover:dxPopoverAnimation
 ---
 ---
 ##### shortDescription

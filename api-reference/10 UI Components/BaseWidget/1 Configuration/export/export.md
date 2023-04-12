@@ -1,6 +1,7 @@
 ---
 id: BaseWidget.Options.export
-type: Object
+type: viz/core/base_widget:BaseWidgetExport
+inheritsType: viz/core/base_widget:BaseWidgetExport
 ---
 ---
 ##### shortDescription

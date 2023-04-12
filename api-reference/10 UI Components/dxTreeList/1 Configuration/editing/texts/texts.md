@@ -1,4 +1,5 @@
 ---
 id: dxTreeList.Options.editing.texts
-type: Object
+type: ui/tree_list:EditingTexts
+inheritsType: ui/tree_list:EditingTexts
 ---

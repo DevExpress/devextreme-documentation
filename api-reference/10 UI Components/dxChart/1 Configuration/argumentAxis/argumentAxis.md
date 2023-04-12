@@ -1,7 +1,8 @@
 ---
 id: dxChart.Options.argumentAxis
-type: Object
+type: viz/chart:dxChartArgumentAxis
 inherits: dxChart.Options.commonAxisSettings
+inheritsType: viz/chart:dxChartArgumentAxis
 ---
 ---
 ##### shortDescription

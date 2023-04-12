@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.commonSeriesSettings.stackedline
-type: any
 ---
 ---
 ##### shortDescription

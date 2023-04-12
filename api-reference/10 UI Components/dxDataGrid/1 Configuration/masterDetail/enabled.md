@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.masterDetail.enabled
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

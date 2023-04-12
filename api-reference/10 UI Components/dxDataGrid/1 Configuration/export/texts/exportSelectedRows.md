@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.export.texts.exportSelectedRows
-type: String
-default: 'Export selected rows to {0}'
 ---
 ---
 ##### shortDescription

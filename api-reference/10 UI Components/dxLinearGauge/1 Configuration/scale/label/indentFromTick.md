@@ -1,7 +1,5 @@
 ---
 id: dxLinearGauge.Options.scale.label.indentFromTick
-type: Number
-default: -10
 ---
 ---
 ##### shortDescription

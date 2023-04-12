@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.scrolling.useNative
-type: Boolean | Enums.Mode
-default: 'auto'
 ---
 ---
 ##### shortDescription

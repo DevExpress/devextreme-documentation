@@ -1,7 +1,5 @@
 ---
 id: BaseWidget.Options.tooltip.paddingLeftRight
-type: Number
-default: 18
 ---
 ---
 ##### shortDescription

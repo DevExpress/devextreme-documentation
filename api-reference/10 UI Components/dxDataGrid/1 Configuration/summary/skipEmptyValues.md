@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.skipEmptyValues
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,5 @@
 ---
 id: GridBase.Options.rowDragging.onDragStart
-type: function(e)
 ---
 ---
 ##### shortDescription

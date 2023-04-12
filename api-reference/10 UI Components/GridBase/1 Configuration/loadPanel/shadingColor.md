@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.loadPanel.shadingColor
-type: String
-default: ''
 ---
 ---
 ##### shortDescription

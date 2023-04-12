@@ -1,0 +1,8 @@
+---
+uid: viz/core/base_widget:BaseWidgetExport.margin
+---
+---
+##### shortDescription
+Adds an empty space around the exported UI component; measured in pixels.
+
+---

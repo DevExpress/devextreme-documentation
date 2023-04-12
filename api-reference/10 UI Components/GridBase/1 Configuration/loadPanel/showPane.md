@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.loadPanel.showPane
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

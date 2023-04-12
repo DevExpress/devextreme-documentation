@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.editing.texts.validationCancelChanges
-type: String
-default: 'Cancel changes'
 ---
 ---
 ##### shortDescription

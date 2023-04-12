@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.commonSeriesSettings.area
-type: any
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: dxPopover.Options.animation.hide
-type: AnimationConfig
-default: { type: 'fade', to: 0 }
 ---
 ---
 ##### shortDescription

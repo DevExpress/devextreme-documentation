@@ -1,7 +1,5 @@
 ---
 id: BaseGauge.Options.scale.customTicks
-type: Array<Number>
-default: undefined
 notUsedInTheme: 
 ---
 ---

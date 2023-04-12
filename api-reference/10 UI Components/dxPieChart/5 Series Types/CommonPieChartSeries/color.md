@@ -14,7 +14,7 @@ You can use this property to paint all pie slices in the same color.
 
 You can also specify a custom pattern or gradient instead of a plain color:  
 
-1. Call the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to obtain a fill ID.
+1. Call the [registerPattern()](/api-reference/50%20Common/utils/viz/registerPattern(options).md '/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions') or [registerGradient()](/api-reference/50%20Common/utils/viz/registerGradient(type_options).md '/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options') method to obtain a fill ID.
 
 1. Set the `fillId` field to the obtained ID in the **color** configuration object.
 

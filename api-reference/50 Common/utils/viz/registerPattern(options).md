@@ -23,7 +23,7 @@ SVG-based pattern template.
 Template width.
 
 ---
-Call this method to register a pattern ID. Assign the ID to a component's color.[fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId) field.
+Call this method to register a pattern ID. Assign the ID to a component's color.[fillId](/api-reference/40%20Common%20Types/05%20charts/ChartsColor/fillId.md '/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId') field.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"

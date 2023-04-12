@@ -104,7 +104,7 @@ Panes are configured by the [panes](/api-reference/10%20UI%20Components/dxChart/
 
 For a multi-pane chart, the **panes** property accepts an array. For further details, refer to the [Multi-Pane Chart](/concepts/05%20UI%20Components/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/') topic.
 
-You can add custom styles (pattern or gradient) to the pane's background. To learn more, refer to the following API section: [backgroundColor](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonPaneSettings/#backgroundColor).
+You can add custom styles (pattern or gradient) to the pane's background. To learn more, refer to the following API section: [backgroundColor](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonPaneSettings/#backgroundColor').
 
 #####See Also#####
 - [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes)

@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.valueAxis.constantLines.value
-type: Number | Date | String
-default: undefined
 ---
 ---
 ##### shortDescription

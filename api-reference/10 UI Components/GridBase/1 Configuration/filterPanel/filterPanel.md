@@ -1,7 +1,8 @@
 ---
 id: GridBase.Options.filterPanel
-type: Object
+type: common/grids:FilterPanel
 default: {}
+inheritsType: common/grids:FilterPanel
 ---
 ---
 ##### shortDescription

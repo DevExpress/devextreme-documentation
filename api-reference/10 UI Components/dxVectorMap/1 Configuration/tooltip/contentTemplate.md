@@ -1,7 +1,5 @@
 ---
 id: dxVectorMap.Options.tooltip.contentTemplate
-type: template
-default: undefined
 ---
 ---
 ##### shortDescription

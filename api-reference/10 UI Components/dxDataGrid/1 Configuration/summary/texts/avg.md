@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.texts.avg
-type: String
-default: 'Avg={0}'
 ---
 ---
 ##### shortDescription

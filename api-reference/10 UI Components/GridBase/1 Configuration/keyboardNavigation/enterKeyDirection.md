@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.keyboardNavigation.enterKeyDirection
-type: Enums.EnterKeyDirection
-default: 'none'
 ---
 ---
 ##### shortDescription

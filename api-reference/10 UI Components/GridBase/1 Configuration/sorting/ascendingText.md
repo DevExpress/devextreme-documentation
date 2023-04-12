@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.sorting.ascendingText
-type: String
-default: 'Sort Ascending'
 ---
 ---
 ##### shortDescription

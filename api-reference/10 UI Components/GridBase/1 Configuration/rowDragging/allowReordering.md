@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.rowDragging.allowReordering
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterPanel.visible
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

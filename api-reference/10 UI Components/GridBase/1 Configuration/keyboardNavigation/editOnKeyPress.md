@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.keyboardNavigation.editOnKeyPress
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

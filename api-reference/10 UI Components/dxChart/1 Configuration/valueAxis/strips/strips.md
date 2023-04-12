@@ -1,8 +1,9 @@
 ---
 id: dxChart.Options.valueAxis.strips
-type: Array<Object>
+type: Array<viz/chart:dxChartValueAxisStrips>
 inherits: dxChart.Options.commonAxisSettings.stripStyle
 notUsedInTheme: 
+inheritsType: viz/chart:dxChartValueAxisStrips
 ---
 ---
 ##### shortDescription

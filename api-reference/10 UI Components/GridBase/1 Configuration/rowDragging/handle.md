@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.rowDragging.handle
-type: String
-default: ''
 ---
 ---
 ##### shortDescription

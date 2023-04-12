@@ -1,6 +1,5 @@
 ---
 id: dxChart.Options.commonSeriesSettings.candlestick
-type: any
 ---
 ---
 ##### shortDescription

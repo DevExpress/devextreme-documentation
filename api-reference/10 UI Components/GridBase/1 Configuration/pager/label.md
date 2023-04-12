@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.pager.label
-type: String
-default: 'Page Navigation'
 ---
 ---
 ##### shortDescription

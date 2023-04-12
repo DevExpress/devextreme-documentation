@@ -1,8 +1,9 @@
 ---
 id: dxChart.Options.argumentAxis.constantLines
-type: Array<Object>
+type: Array<viz/chart:dxChartArgumentAxisConstantLines>
 inherits: dxChart.Options.commonAxisSettings.constantLineStyle
 notUsedInTheme: 
+inheritsType: viz/chart:dxChartArgumentAxisConstantLines
 ---
 ---
 ##### shortDescription

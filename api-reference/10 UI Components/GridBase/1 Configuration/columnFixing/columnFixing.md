@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.columnFixing
-type: Object
+type: common/grids:ColumnFixing
+inheritsType: common/grids:ColumnFixing
 ---
 ---
 ##### shortDescription

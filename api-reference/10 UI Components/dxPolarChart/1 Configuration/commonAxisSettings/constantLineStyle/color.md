@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.constantLineStyle.color
-type: String
-default: '#000000'
 ---
 ---
 ##### shortDescription

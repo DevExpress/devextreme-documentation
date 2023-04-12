@@ -1,6 +1,5 @@
 ---
 id: dxBarGauge.Options.legend.customizeItems
-type: function(items)
 ---
 ---
 ##### shortDescription

@@ -1,13 +1,14 @@
 ---
 id: dxDataGrid.Options.editing
-type: Object
+type: ui/data_grid:Editing
+inheritsType: ui/data_grid:Editing
 ---
 ---
 ##### shortDescription
 Configures editing.
 
 ---
-The UI component can allow a user to add, update and delete data. To control which of these operations are allowed, use the [allowAdding](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowAdding.md '{basewidgetpath}/Configuration/editing/#allowAdding'), [allowUpdating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowUpdating.md '{basewidgetpath}/Configuration/editing/#allowUpdating') and [allowDeleting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowDeleting.md '{basewidgetpath}/Configuration/editing/#allowDeleting') properties. Editing can be carried out in different modes, which are detailed in the [mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode') property's description.
+The UI component can allow a user to add, update and delete data. To control which of these operations are allowed, use the [allowAdding](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/Editing/allowAdding.md '{basewidgetpath}/Configuration/editing/#allowAdding'), [allowUpdating](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/Editing/allowUpdating.md '{basewidgetpath}/Configuration/editing/#allowUpdating') and [allowDeleting](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/Editing/allowDeleting.md '{basewidgetpath}/Configuration/editing/#allowDeleting') properties. Editing can be carried out in different modes, which are detailed in the [mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode') property's description.
 
 [note] Before allowing a user to add, update, and delete, make sure that your [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') supports these actions.
 

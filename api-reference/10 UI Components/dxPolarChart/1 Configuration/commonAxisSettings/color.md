@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.color
-type: String
-default: '#767676'
 ---
 ---
 ##### shortDescription

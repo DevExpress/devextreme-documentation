@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.texts.sumOtherColumn
-type: String
-default: 'Sum of {1} is {0}'
 ---
 ---
 ##### shortDescription

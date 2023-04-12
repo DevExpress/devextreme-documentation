@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.textOverflow
-type: Enums.TextOverflow
-default: 'none'
 ---
 ---
 ##### shortDescription

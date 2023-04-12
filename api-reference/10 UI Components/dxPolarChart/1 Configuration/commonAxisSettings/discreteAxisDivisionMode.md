@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.discreteAxisDivisionMode
-type: Enums.DiscreteAxisDivisionMode
-default: 'betweenLabels'
 ---
 ---
 ##### shortDescription

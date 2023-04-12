@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterRow.betweenStartText
-type: String
-default: 'Start'
 ---
 ---
 ##### shortDescription

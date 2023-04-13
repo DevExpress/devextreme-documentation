@@ -6,3 +6,5 @@ default: { type: 'slide', duration: 400, from: { position: { my: 'center', at: '
 ---
 ##### shortDescription
 <!-- Description goes here -->
+
+---

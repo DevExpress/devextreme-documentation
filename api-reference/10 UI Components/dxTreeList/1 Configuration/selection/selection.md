@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.selection
-type: ui/tree_list:Selection
-inheritsType: ui/tree_list:Selection
+type: Object
 ---
 ---
 ##### shortDescription

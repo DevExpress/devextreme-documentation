@@ -1,7 +1,6 @@
 ---
 id: dxLinearGauge.Options.scale
-type: viz/linear_gauge:dxLinearGaugeScale
-inheritsType: viz/linear_gauge:dxLinearGaugeScale
+type: Object
 ---
 ---
 ##### shortDescription

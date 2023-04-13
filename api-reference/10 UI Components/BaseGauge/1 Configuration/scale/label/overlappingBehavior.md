@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.scale.label.overlappingBehavior
+type: Enums.LabelOverlap
+default: 'hide'
 ---
 ---
 ##### shortDescription

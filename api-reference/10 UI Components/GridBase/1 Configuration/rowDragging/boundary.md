@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.boundary
+type: String | UserDefinedElement
+default: undefined
 ---
 ---
 ##### shortDescription

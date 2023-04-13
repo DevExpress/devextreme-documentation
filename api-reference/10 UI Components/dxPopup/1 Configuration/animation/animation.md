@@ -1,7 +1,6 @@
 ---
 id: dxPopup.Options.animation
-type: ui/popup:dxPopupAnimation
-inheritsType: ui/popup:dxPopupAnimation
+type: Object
 ---
 The following code shows default values of the object depending on the device type:
 

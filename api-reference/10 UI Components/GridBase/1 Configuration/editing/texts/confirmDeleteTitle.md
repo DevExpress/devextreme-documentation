@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.texts.confirmDeleteTitle
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

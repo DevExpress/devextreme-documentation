@@ -1,5 +1,7 @@
 ---
 id: dxTreeList.Options.selection.recursive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

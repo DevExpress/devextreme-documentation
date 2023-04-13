@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.export.svgToCanvas
+type: function(svg, canvas)
+default: undefined
 ---
 ---
 ##### shortDescription

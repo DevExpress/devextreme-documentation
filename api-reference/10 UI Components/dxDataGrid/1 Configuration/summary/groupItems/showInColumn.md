@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.groupItems.showInColumn
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

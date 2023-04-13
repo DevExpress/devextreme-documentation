@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.paging
-type: common/grids:PagingBase
-inheritsType: common/grids:PagingBase
+type: Object
 ---
 ---
 ##### shortDescription

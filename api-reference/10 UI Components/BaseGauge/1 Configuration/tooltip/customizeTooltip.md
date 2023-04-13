@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.tooltip.customizeTooltip
+type: function(scaleValue)
+default: undefined
 ---
 ---
 ##### shortDescription

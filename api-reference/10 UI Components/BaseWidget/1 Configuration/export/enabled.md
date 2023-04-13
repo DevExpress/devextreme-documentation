@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.export.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

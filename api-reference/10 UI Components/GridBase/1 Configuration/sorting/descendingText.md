@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.sorting.descendingText
+type: String
+default: 'Sort Descending'
 ---
 ---
 ##### shortDescription

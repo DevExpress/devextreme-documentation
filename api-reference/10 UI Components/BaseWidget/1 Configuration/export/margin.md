@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.export.margin
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

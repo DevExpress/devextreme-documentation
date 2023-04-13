@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.opacity
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

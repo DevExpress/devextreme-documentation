@@ -1,7 +1,6 @@
 ---
 id: BaseSparkline.Options.tooltip
-type: viz/sparklines/base_sparkline:BaseSparklineTooltip
-inheritsType: viz/sparklines/base_sparkline:BaseSparklineTooltip
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.groupItems.showInGroupFooter
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.keyboardNavigation
-type: common/grids:KeyboardNavigation
-inheritsType: common/grids:KeyboardNavigation
+type: Object
 ---
 ---
 ##### shortDescription

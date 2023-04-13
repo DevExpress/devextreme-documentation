@@ -9,5 +9,5 @@ Specifies the shape of item markers.
 
 ---
 <!--
-dxVectorMapOptions.legends.markerShape(api-reference/10 UI Components/dxVectorMap/9 Types/dxVectorMapLegends/markerShape.md)(viz/vector_map.d.ts)
+dxVectorMapOptions.legends.markerShape(api-reference/10 UI Components/dxVectorMap/1 Configuration/legends/markerShape.md)(viz/vector_map.d.ts)
 -->

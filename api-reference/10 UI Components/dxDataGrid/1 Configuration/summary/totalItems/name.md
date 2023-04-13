@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.name
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.selection
-type: common/grids:SelectionBase
-inheritsType: common/grids:SelectionBase
+type: Object
 ---
 ---
 ##### shortDescription

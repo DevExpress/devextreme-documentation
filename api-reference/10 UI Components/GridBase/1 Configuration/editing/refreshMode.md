@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.refreshMode
+type: Enums.GridsEditRefreshMode
+default: 'full'
 ---
 ---
 ##### shortDescription

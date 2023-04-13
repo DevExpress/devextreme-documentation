@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.scale.allowDecimals
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

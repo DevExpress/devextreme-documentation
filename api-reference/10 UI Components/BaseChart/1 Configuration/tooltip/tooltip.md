@@ -1,7 +1,6 @@
 ---
 id: BaseChart.Options.tooltip
-type: viz/chart_components/base_chart:BaseChartTooltip
-inheritsType: viz/chart_components/base_chart:BaseChartTooltip
+type: Object
 ---
 ---
 ##### shortDescription

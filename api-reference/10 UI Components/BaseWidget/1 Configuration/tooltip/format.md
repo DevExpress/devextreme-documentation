@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.tooltip.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.export.texts.exportTo
+type: String
+default: 'Export'
 ---
 ---
 ##### shortDescription

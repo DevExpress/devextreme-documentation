@@ -1,7 +1,6 @@
 ---
 id: BaseGauge.Options.scale
-type: viz/gauges/base_gauge:BaseGaugeScale
-inheritsType: viz/gauges/base_gauge:BaseGaugeScale
+type: Object
 ---
 ---
 ##### shortDescription

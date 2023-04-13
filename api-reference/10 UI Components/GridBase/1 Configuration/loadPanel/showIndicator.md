@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.loadPanel.showIndicator
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

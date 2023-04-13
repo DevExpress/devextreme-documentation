@@ -1,5 +1,6 @@
 ---
 id: GridBase.Options.rowDragging.onReorder
+type: function(e)
 ---
 ---
 ##### shortDescription

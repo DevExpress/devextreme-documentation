@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.startEditAction
+type: Enums.StartEditAction
+default: 'click'
 ---
 ---
 ##### shortDescription

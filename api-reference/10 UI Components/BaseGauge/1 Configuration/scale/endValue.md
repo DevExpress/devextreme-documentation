@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.scale.endValue
+type: Number
+default: 100
 notUsedInTheme: 
 ---
 ---

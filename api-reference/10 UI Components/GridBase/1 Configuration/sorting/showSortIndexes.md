@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.sorting.showSortIndexes
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

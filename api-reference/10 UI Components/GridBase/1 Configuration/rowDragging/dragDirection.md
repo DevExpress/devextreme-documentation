@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.dragDirection
+type: Enums.DragDirection
+default: 'both'
 ---
 ---
 ##### shortDescription

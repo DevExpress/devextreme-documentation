@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.editing.texts
-type: common/grids:EditingTextsBase
-inheritsType: common/grids:EditingTextsBase
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.rowDragging
-type: common/grids:RowDragging
-inheritsType: common/grids:RowDragging
+type: Object
 ---
 ---
 ##### shortDescription

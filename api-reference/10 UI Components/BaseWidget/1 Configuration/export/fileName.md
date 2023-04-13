@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.export.fileName
+type: String
+default: 'file'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.alignment
+type: Enums.HorizontalAlignment
+default: undefined
 ---
 ---
 ##### shortDescription

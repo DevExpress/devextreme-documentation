@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.minorTickCount
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

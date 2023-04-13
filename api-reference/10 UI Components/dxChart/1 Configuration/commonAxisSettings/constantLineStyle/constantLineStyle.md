@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.constantLineStyle
-type: viz/chart:dxChartCommonAxisSettingsConstantLineStyle
-inheritsType: viz/chart:dxChartCommonAxisSettingsConstantLineStyle
+type: Object
 ---
 ---
 ##### shortDescription

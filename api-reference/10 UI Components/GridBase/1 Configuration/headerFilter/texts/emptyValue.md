@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.headerFilter.texts.emptyValue
+type: String
+default: '(Blanks)'
 ---
 ---
 ##### shortDescription

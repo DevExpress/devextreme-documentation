@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.constantLines.label.verticalAlignment
+type: Enums.VerticalAlignment
+default: 'top'
 ---
 ---
 ##### shortDescription

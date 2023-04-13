@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.filterPanel.filterEnabled
+type: Boolean
+default: true
 firedEvents: optionChanged
 ---
 ---

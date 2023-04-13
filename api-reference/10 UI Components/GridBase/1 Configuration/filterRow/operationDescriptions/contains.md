@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.filterRow.operationDescriptions.contains
+type: String
+default: 'Contains'
 ---
 ---
 ##### shortDescription

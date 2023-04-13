@@ -1,5 +1,6 @@
 ---
 id: BaseChart.Options.legend.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

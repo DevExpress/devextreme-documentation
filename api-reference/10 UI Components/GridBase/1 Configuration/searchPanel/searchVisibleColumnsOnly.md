@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.searchPanel.searchVisibleColumnsOnly
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

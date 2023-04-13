@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.scale.label.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

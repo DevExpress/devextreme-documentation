@@ -1,5 +1,7 @@
 ---
 id: dxBarGauge.Options.legend.markerTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.rangeContainer.palette
+type: Array<String> | Enums.Palette
+default: 'Material'
 ---
 ---
 ##### shortDescription

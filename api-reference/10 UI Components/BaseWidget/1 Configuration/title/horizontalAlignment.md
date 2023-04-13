@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.title.horizontalAlignment
+type: Enums.HorizontalAlignment
+default: 'center'
 ---
 ---
 ##### shortDescription

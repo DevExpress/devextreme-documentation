@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.pager.showNavigationButtons
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

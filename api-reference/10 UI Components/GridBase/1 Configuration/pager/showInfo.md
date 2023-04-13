@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.pager.showInfo
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

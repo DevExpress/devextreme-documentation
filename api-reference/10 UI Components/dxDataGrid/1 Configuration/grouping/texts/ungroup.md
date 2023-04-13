@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.grouping.texts.ungroup
+type: String
+default: 'Ungroup'
 ---
 ---
 ##### shortDescription

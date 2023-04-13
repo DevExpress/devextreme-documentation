@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.export.backgroundColor
+type: String
+default: '#ffffff'
 ---
 ---
 ##### shortDescription

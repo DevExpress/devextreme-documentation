@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.filterRow.applyFilter
+type: Enums.ApplyFilterMode
+default: 'auto'
 ---
 ---
 ##### shortDescription

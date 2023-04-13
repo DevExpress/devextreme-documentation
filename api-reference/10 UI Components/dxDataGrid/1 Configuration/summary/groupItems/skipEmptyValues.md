@@ -1,5 +1,6 @@
 ---
 id: dxDataGrid.Options.summary.groupItems.skipEmptyValues
+type: Boolean
 ---
 ---
 ##### shortDescription

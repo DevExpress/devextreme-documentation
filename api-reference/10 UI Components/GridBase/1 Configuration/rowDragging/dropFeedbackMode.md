@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.dropFeedbackMode
+type: Enums.DragHighlight
+default: 'indicate'
 ---
 ---
 ##### shortDescription

@@ -1,8 +1,7 @@
 ---
 id: dxLoadPanel.Options.animation
-type: ui/load_panel:dxLoadPanelAnimation
+type: Object
 default: null
-inheritsType: ui/load_panel:dxLoadPanelAnimation
 ---
 ---
 ##### shortDescription

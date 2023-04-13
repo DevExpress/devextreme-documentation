@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.label
-type: viz/chart:dxChartArgumentAxisLabel
-inheritsType: viz/chart:dxChartArgumentAxisLabel
+type: Object
 ---
 ---
 ##### shortDescription

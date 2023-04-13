@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.margin.left
+type: Number
+default: 0
 ---
 ---
 ##### shortDescription

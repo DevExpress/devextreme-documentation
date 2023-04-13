@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.label.customizeText
+type: function(argument)
 notUsedInTheme: 
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxToast.Options.animation
-type: ui/toast:dxToastAnimation
-inheritsType: ui/toast:dxToastAnimation
+type: Object
 ---
 The following code shows default values of the object depending on the device type:
 

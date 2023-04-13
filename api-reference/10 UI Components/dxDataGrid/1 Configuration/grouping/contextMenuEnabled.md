@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.grouping.contextMenuEnabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

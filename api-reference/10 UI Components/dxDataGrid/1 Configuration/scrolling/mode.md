@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.scrolling.mode
+type: Enums.DataGridScrollMode
+default: 'standard'
 ---
 ---
 ##### shortDescription

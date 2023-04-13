@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.constantLineStyle.label
-type: viz/polar_chart:dxPolarChartCommonAxisSettingsConstantLineStyleLabel
-inheritsType: viz/polar_chart:dxPolarChartCommonAxisSettingsConstantLineStyleLabel
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.texts.saveAllChanges
+type: String
+default: 'Save changes'
 ---
 ---
 ##### shortDescription

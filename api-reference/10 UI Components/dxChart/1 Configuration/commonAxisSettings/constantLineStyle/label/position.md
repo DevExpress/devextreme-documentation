@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.constantLineStyle.label.position
+type: Enums.RelativePosition
+default: 'inside'
 ---
 ---
 ##### shortDescription

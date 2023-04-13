@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.editing
-type: ui/tree_list:Editing
-inheritsType: ui/tree_list:Editing
+type: Object
 ---
 ---
 ##### shortDescription

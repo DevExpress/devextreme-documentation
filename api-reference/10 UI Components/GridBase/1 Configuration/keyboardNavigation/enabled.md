@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.keyboardNavigation.enabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

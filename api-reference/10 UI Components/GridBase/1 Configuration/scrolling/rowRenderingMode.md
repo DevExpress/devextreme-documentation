@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.scrolling.rowRenderingMode
+type: Enums.DataRenderMode
+default: 'standard'
 ---
 ---
 ##### shortDescription

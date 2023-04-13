@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.margin
-type: viz/core/base_widget:BaseWidgetMargin
-inheritsType: viz/core/base_widget:BaseWidgetMargin
+type: Object
 ---
 ---
 ##### shortDescription

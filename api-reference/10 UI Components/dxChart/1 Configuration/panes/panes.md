@@ -1,9 +1,8 @@
 ---
 id: dxChart.Options.panes
-type: Array<viz/chart:dxChartPanes>
+type: Object | Array<Object>
 inherits: dxChart.Options.commonPaneSettings
 notUsedInTheme: 
-inheritsType: viz/chart:dxChartPanes
 ---
 ---
 ##### shortDescription

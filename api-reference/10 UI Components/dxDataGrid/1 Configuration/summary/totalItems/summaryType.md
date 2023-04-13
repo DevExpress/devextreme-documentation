@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.summaryType
+type: Enums.SummaryType | String
+default: undefined
 ---
 ---
 ##### shortDescription

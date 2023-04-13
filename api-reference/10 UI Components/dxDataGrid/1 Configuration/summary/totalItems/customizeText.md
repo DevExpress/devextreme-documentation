@@ -1,5 +1,6 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.customizeText
+type: function(itemInfo)
 ---
 ---
 ##### shortDescription

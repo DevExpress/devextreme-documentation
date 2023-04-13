@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.summary
-type: ui/data_grid:Summary
-inheritsType: ui/data_grid:Summary
+type: Object
 ---
 ---
 ##### shortDescription

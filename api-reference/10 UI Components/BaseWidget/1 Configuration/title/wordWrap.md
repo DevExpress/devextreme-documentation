@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.title.wordWrap
+type: Enums.WordWrap
+default: 'normal'
 ---
 ---
 ##### shortDescription

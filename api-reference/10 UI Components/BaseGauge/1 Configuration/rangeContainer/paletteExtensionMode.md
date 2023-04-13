@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.rangeContainer.paletteExtensionMode
+type: Enums.PaletteExtensionMode
+default: 'blend'
 ---
 ---
 ##### shortDescription

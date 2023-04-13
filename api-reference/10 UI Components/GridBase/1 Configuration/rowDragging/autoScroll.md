@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.autoScroll
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

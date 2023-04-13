@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.filterRow.applyFilterText
+type: String
+default: 'Apply filter'
 ---
 ---
 ##### shortDescription

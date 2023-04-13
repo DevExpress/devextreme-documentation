@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.margin.top
+type: Number
+default: 0
 ---
 ---
 ##### shortDescription

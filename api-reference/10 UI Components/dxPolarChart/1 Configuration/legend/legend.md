@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.legend
-type: viz/polar_chart:dxPolarChartLegend
-inheritsType: viz/polar_chart:dxPolarChartLegend
+type: Object
 ---
 ---
 ##### shortDescription

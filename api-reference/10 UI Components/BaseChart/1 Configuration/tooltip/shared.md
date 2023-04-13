@@ -1,5 +1,7 @@
 ---
 id: BaseChart.Options.tooltip.shared
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

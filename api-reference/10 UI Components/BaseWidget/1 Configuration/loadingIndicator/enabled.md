@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.loadingIndicator.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

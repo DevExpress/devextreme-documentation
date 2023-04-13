@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.masterDetail.autoExpandAll
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

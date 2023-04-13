@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.searchPanel.highlightCaseSensitive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

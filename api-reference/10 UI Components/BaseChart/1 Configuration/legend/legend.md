@@ -1,8 +1,7 @@
 ---
 id: BaseChart.Options.legend
-type: viz/chart_components/base_chart:BaseChartLegend
+type: Object
 inherits: BaseLegend
-inheritsType: viz/chart_components/base_chart:BaseChartLegend
 ---
 ---
 ##### shortDescription

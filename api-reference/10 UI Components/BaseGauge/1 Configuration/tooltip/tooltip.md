@@ -1,7 +1,6 @@
 ---
 id: BaseGauge.Options.tooltip
-type: viz/gauges/base_gauge:BaseGaugeTooltip
-inheritsType: viz/gauges/base_gauge:BaseGaugeTooltip
+type: Object
 ---
 ---
 ##### shortDescription

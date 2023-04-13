@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.loadingIndicator.text
+type: String
+default: 'Loading...'
 ---
 ---
 ##### shortDescription

@@ -10,5 +10,5 @@ Specifies how to highlight the item/row's drop position.
 ---
 <!--
 dxSortableOptions.dropFeedbackMode(api-reference/10 UI Components/dxSortable/1 Configuration/dropFeedbackMode.md)(common.d.ts)
-GridBaseOptions.rowDragging.dropFeedbackMode(api-reference/40 Common Types/15 grids/RowDragging/dropFeedbackMode.md)(common.d.ts)
+GridBaseOptions.rowDragging.dropFeedbackMode(api-reference/10 UI Components/GridBase/1 Configuration/rowDragging/dropFeedbackMode.md)(common.d.ts)
 -->

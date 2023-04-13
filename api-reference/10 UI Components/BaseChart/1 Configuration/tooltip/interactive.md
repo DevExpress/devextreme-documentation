@@ -1,5 +1,7 @@
 ---
 id: BaseChart.Options.tooltip.interactive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: dxDataGrid.Options.sortByGroupSummaryInfo.sortOrder
 acceptValues: undefined
+type: Enums.SortOrder
+default: undefined
 ---
 ---
 ##### shortDescription

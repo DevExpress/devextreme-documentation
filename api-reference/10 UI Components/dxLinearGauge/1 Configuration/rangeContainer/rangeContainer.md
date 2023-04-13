@@ -1,7 +1,6 @@
 ---
 id: dxLinearGauge.Options.rangeContainer
-type: viz/linear_gauge:dxLinearGaugeRangeContainer
-inheritsType: viz/linear_gauge:dxLinearGaugeRangeContainer
+type: Object
 ---
 ---
 ##### shortDescription

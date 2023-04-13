@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.mode
+type: Enums.GridsEditMode
+default: 'row'
 ---
 ---
 ##### shortDescription

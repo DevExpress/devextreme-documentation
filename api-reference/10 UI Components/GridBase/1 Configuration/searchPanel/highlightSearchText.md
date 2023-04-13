@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.searchPanel.highlightSearchText
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

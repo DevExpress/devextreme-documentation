@@ -1,7 +1,6 @@
 ---
 id: BaseGauge.Options.animation
-type: viz/gauges/base_gauge:BaseGaugeAnimation
-inheritsType: viz/gauges/base_gauge:BaseGaugeAnimation
+type: Object
 ---
 ---
 ##### shortDescription

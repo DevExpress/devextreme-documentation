@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.headerFilter.visible
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

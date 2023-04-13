@@ -1,5 +1,6 @@
 ---
 id: dxPolarChart.Options.legend.customizeText
+type: function(seriesInfo)
 notUsedInTheme: 
 ---
 ---

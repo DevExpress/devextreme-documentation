@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip
-type: viz/core/base_widget:BaseWidgetTooltip
-inheritsType: viz/core/base_widget:BaseWidgetTooltip
+type: Object
 ---
 ---
 ##### shortDescription

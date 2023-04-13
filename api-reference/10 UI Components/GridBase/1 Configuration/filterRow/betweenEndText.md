@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.filterRow.betweenEndText
+type: String
+default: 'End'
 ---
 ---
 ##### shortDescription

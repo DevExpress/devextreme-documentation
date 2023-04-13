@@ -1,7 +1,6 @@
 ---
 id: dxVectorMap.Options.tooltip
-type: viz/vector_map:dxVectorMapTooltip
-inheritsType: viz/vector_map:dxVectorMapTooltip
+type: Object
 ---
 ---
 ##### shortDescription

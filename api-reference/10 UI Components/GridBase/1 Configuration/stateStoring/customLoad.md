@@ -1,5 +1,6 @@
 ---
 id: GridBase.Options.stateStoring.customLoad
+type: function()
 ---
 ---
 ##### shortDescription

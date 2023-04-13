@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.valueAxis.label
-type: viz/polar_chart:dxPolarChartValueAxisLabel
-inheritsType: viz/polar_chart:dxPolarChartValueAxisLabel
+type: Object
 ---
 ---
 ##### shortDescription

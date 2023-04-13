@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.grouping.autoExpandAll
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

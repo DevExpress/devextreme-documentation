@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.stateStoring.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

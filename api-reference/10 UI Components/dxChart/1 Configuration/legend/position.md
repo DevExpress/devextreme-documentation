@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.legend.position
+type: Enums.RelativePosition
+default: 'outside'
 ---
 ---
 ##### shortDescription

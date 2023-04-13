@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.showDragIcons
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

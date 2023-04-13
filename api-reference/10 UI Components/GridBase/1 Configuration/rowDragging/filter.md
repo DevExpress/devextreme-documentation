@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.filter
+type: String
+default: '> *'
 deprecated: 
 ---
 ---

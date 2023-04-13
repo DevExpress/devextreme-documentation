@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.loadPanel.shading
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

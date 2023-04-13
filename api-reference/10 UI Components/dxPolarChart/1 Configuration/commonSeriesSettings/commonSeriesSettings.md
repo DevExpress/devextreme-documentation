@@ -1,10 +1,9 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings
-type: viz/polar_chart:dxPolarChartCommonSeriesSettings
+type: Object
 inherits: dxPolarChartSeriesTypes.CommonPolarChartSeries
 hideDefaults: true
 inheritAll: 
-inheritsType: viz/polar_chart:dxPolarChartCommonSeriesSettings
 ---
 ---
 ##### shortDescription

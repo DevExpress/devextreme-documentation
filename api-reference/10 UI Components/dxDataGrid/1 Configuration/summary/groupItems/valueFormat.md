@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.groupItems.valueFormat
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

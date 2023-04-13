@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.stateStoring
-type: common/grids:StateStoring
-inheritsType: common/grids:StateStoring
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.pager.visible
+type: Boolean | Enums.Mode
+default: 'auto'
 ---
 ---
 ##### shortDescription

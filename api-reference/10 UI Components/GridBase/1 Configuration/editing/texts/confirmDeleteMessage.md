@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.texts.confirmDeleteMessage
+type: String
+default: 'Are you sure you want to delete this record?'
 ---
 ---
 ##### shortDescription

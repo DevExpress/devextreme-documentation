@@ -1,5 +1,6 @@
 ---
 id: GridBase.Options.rowDragging.onRemove
+type: function(e)
 ---
 ---
 ##### shortDescription

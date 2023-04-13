@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.editing.newRowPosition
+type: Enums.NewRowPosition
+default: 'viewportTop'
 ---
 ---
 ##### shortDescription

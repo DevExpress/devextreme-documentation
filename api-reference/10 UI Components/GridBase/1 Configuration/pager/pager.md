@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.pager
-type: common/grids:Pager
-inheritsType: common/grids:Pager
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.tooltip.arrowLength
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

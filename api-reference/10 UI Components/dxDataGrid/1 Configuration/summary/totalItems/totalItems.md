@@ -1,8 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.totalItems
-type: Array<ui/data_grid:SummaryTotalItem>
+type: Array<Object>
 default: undefined
-inheritsType: ui/data_grid:SummaryTotalItem
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.headerFilter.searchTimeout
+type: Number
+default: 500
 ---
 ---
 ##### shortDescription

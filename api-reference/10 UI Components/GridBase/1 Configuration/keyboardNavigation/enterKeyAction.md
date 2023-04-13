@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.keyboardNavigation.enterKeyAction
+type: Enums.EnterKeyAction
+default: 'startEdit'
 ---
 ---
 ##### shortDescription

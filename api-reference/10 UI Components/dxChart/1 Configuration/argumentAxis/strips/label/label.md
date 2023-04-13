@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.strips.label
-type: viz/chart:dxChartArgumentAxisStripsLabel
-inheritsType: viz/chart:dxChartArgumentAxisStripsLabel
+type: Object
 ---
 ---
 ##### shortDescription

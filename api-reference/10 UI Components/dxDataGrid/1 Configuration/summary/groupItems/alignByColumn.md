@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.groupItems.alignByColumn
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxTreeList.Options.scrolling.mode
+type: Enums.ScrollMode
+default: 'virtual'
 ---
 ---
 ##### shortDescription

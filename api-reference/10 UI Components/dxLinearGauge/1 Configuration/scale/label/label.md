@@ -1,7 +1,6 @@
 ---
 id: dxLinearGauge.Options.scale.label
-type: viz/linear_gauge:dxLinearGaugeScaleLabel
-inheritsType: viz/linear_gauge:dxLinearGaugeScaleLabel
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.export.printingEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

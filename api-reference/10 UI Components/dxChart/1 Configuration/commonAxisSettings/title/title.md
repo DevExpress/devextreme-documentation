@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.title
-type: viz/chart:dxChartCommonAxisSettingsTitle
-inheritsType: viz/chart:dxChartCommonAxisSettingsTitle
+type: Object
 ---
 ---
 ##### shortDescription

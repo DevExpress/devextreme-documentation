@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.headerFilter.allowSearch
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxOverlay.Options.animation
-type: ui/overlay:dxOverlayAnimation
-inheritsType: ui/overlay:dxOverlayAnimation
+type: Object
 ---
 ---
 ##### shortDescription

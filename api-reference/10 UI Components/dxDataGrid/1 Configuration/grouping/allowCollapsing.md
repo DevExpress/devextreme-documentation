@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.grouping.allowCollapsing
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

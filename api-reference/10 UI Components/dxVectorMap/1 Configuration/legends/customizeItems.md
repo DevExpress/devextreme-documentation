@@ -1,5 +1,6 @@
 ---
 id: dxVectorMap.Options.legends.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

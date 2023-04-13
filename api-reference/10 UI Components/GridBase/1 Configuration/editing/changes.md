@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.changes
+type: Array<DataChange>
+default: []
 firedEvents: optionChanged
 inheritsType: DataChange
 ---

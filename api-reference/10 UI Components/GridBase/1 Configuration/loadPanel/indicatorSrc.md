@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.loadPanel.indicatorSrc
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

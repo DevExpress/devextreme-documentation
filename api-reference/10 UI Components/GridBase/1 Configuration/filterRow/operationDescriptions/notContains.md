@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.filterRow.operationDescriptions.notContains
+type: String
+default: 'Does not contain'
 ---
 ---
 ##### shortDescription

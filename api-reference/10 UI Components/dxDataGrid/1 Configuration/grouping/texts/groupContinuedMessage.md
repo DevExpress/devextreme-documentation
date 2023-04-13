@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.grouping.texts.groupContinuedMessage
+type: String
+default: 'Continued from the previous page'
 ---
 ---
 ##### shortDescription

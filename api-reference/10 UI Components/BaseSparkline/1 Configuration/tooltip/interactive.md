@@ -1,5 +1,7 @@
 ---
 id: BaseSparkline.Options.tooltip.interactive
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

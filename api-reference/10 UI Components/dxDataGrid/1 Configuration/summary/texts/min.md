@@ -1,5 +1,7 @@
 ---
 id: dxDataGrid.Options.summary.texts.min
+type: String
+default: 'Min={0}'
 ---
 ---
 ##### shortDescription

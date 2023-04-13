@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.columnFixing.enabled
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

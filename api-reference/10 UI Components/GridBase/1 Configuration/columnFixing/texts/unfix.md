@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.columnFixing.texts.unfix
+type: String
+default: 'Unfix'
 ---
 ---
 ##### shortDescription

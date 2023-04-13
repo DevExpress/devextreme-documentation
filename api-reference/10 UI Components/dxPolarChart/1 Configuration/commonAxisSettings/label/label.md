@@ -1,7 +1,6 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.label
-type: viz/polar_chart:dxPolarChartCommonAxisSettingsLabel
-inheritsType: viz/polar_chart:dxPolarChartCommonAxisSettingsLabel
+type: Object
 ---
 ---
 ##### shortDescription

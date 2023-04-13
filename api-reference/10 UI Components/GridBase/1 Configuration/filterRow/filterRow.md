@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.filterRow
-type: common/grids:FilterRow
-inheritsType: common/grids:FilterRow
+type: Object
 ---
 ---
 ##### shortDescription

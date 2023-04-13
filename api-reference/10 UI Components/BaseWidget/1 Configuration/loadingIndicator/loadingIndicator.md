@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.loadingIndicator
-type: viz/core/base_widget:BaseWidgetLoadingIndicator
-inheritsType: viz/core/base_widget:BaseWidgetLoadingIndicator
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.grouping
-type: ui/data_grid:Grouping
-inheritsType: ui/data_grid:Grouping
+type: Object
 ---
 ---
 ##### shortDescription

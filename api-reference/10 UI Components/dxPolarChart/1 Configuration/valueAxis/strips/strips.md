@@ -1,9 +1,8 @@
 ---
 id: dxPolarChart.Options.valueAxis.strips
-type: Array<viz/polar_chart:dxPolarChartValueAxisStrips>
+type: Array<Object>
 inherits: dxPolarChart.Options.commonAxisSettings.stripStyle
 notUsedInTheme: 
-inheritsType: viz/polar_chart:dxPolarChartValueAxisStrips
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: BaseWidget.Options.tooltip.paddingTopBottom
+type: Number
+default: 15
 ---
 ---
 ##### shortDescription

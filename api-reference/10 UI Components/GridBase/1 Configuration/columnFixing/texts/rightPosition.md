@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.columnFixing.texts.rightPosition
+type: String
+default: 'To the right'
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxLinearGauge.Options.scale.verticalOrientation
+type: Enums.VerticalAlignment
+default: 'bottom'
 ---
 ---
 ##### shortDescription

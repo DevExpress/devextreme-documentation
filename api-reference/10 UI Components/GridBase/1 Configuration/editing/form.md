@@ -1,5 +1,6 @@
 ---
 id: GridBase.Options.editing.form
+type: dxForm_Options
 ---
 ---
 ##### shortDescription

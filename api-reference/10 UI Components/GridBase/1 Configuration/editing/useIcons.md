@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.editing.useIcons
+type: Boolean
+default: false, true (Material)
 ---
 ---
 ##### shortDescription

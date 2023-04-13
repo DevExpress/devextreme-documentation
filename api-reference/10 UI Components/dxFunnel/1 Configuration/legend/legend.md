@@ -1,8 +1,7 @@
 ---
 id: dxFunnel.Options.legend
-type: viz/funnel:dxFunnelLegend
+type: Object
 inherits: BaseLegend
-inheritsType: viz/funnel:dxFunnelLegend
 ---
 ---
 ##### shortDescription

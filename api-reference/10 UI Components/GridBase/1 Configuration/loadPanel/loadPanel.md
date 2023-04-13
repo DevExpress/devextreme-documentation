@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.loadPanel
-type: common/grids:LoadPanel
-inheritsType: common/grids:LoadPanel
+type: Object
 ---
 ---
 ##### shortDescription

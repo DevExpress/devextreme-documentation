@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.stateStoring.savingTimeout
+type: Number
+default: 2000
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.export
-type: ui/data_grid:Export
-inheritsType: ui/data_grid:Export
+type: Object
 ---
 ---
 ##### shortDescription

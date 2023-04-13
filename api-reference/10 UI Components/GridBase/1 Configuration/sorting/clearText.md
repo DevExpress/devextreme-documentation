@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.sorting.clearText
+type: String
+default: 'Clear Sorting'
 ---
 ---
 ##### shortDescription

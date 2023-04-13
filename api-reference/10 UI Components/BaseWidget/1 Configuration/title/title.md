@@ -1,7 +1,6 @@
 ---
 id: BaseWidget.Options.title
-type: viz/core/base_widget:BaseWidgetTitle
-inheritsType: viz/core/base_widget:BaseWidgetTitle
+type: Object | String
 ---
 ---
 ##### shortDescription

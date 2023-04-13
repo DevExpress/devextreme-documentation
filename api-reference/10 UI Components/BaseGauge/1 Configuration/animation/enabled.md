@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.animation.enabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

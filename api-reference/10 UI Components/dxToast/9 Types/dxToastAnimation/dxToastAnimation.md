@@ -2,6 +2,11 @@
 uid: ui/toast:dxToastAnimation
 isType: 
 ---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
 <!--
 The following code shows default values of the object depending on the device type:
 

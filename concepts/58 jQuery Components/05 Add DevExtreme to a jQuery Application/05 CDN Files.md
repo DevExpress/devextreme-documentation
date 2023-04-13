@@ -1,3 +1,4 @@
+[CompatPlaylists.zip](https://github.com/DevExpress/devextreme-documentation/files/11226141/CompatPlaylists.zip)
 Link DevExtreme scripts and stylesheets within the `<head>` tag on your index page. The order of the scripts and stylesheets is important. All CDN links are listed in the [CDN](/concepts/Common/Distribution%20Channels/05%20CDN '/Documentation/Guide/Common/Distribution_Channels/CDN/') article. Optionally, you can verify the files by adding [SRI hashes](/concepts/Common/Distribution%20Channels/05%20CDN/10%20Subresource%20Integrity%20Hashes.md '/Documentation/Guide/Common/Distribution_Channels/CDN/#Subresource_Integrity_Hashes') to the links.
 
     <!--HTML-->

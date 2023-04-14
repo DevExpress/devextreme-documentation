@@ -866,6 +866,44 @@
     "dataExpressionMixinOptions.valueExpr": {
       "vue": "value-expr"
     },
+    "dateBoxBaseOptions": {
+      "vue": "date-box-base-options"
+    },
+    "dateBoxBaseOptions.applyButtonText": {
+      "vue": "apply-button-text"
+    },
+    "dateBoxBaseOptions.calendarOptions": {
+      "vue": "calendar-options"
+    },
+    "dateBoxBaseOptions.cancelButtonText": {
+      "vue": "cancel-button-text"
+    },
+    "dateBoxBaseOptions.dateOutOfRangeMessage": {
+      "vue": "date-out-of-range-message"
+    },
+    "dateBoxBaseOptions.dateSerializationFormat": {
+      "vue": "date-serialization-format"
+    },
+    "dateBoxBaseOptions.disabledDates": {
+      "vue": "disabled-dates"
+    },
+    "dateBoxBaseOptions.displayFormat": {
+      "angular": "dxo-display-format",
+      "react": "DisplayFormat",
+      "vue": "DxDisplayFormat"
+    },
+    "dateBoxBaseOptions.dropDownOptions": {
+      "vue": "drop-down-options"
+    },
+    "dateBoxBaseOptions.invalidDateMessage": {
+      "vue": "invalid-date-message"
+    },
+    "dateBoxBaseOptions.todayButtonText": {
+      "vue": "today-button-text"
+    },
+    "dateBoxBaseOptions.useMaskBehavior": {
+      "vue": "use-mask-behavior"
+    },
     "disabledDate": {
       "angular": "dxo-disabled-date",
       "react": "DisabledDate",
@@ -3573,46 +3611,28 @@
     "dxDateBoxOptions.adaptivityEnabled": {
       "vue": "adaptivity-enabled"
     },
-    "dxDateBoxOptions.applyButtonText": {
-      "vue": "apply-button-text"
-    },
-    "dxDateBoxOptions.calendarOptions": {
-      "vue": "calendar-options"
-    },
-    "dxDateBoxOptions.cancelButtonText": {
-      "vue": "cancel-button-text"
-    },
-    "dxDateBoxOptions.dateOutOfRangeMessage": {
-      "vue": "date-out-of-range-message"
-    },
-    "dxDateBoxOptions.dateSerializationFormat": {
-      "vue": "date-serialization-format"
-    },
-    "dxDateBoxOptions.disabledDates": {
-      "vue": "disabled-dates"
-    },
-    "dxDateBoxOptions.displayFormat": {
-      "angular": "dxo-display-format",
-      "react": "DisplayFormat",
-      "vue": "DxDisplayFormat"
-    },
-    "dxDateBoxOptions.dropDownOptions": {
-      "vue": "drop-down-options"
-    },
-    "dxDateBoxOptions.invalidDateMessage": {
-      "vue": "invalid-date-message"
-    },
     "dxDateBoxOptions.pickerType": {
       "vue": "picker-type"
     },
     "dxDateBoxOptions.showAnalogClock": {
       "vue": "show-analog-clock"
     },
-    "dxDateBoxOptions.todayButtonText": {
-      "vue": "today-button-text"
+    "dxDateRangeBox": {
+      "angular": "dx-date-range-box",
+      "react": "DateRangeBox",
+      "vue": "DxDateRangeBox"
     },
-    "dxDateBoxOptions.useMaskBehavior": {
-      "vue": "use-mask-behavior"
+    "dxDateRangeBoxOptions": {
+      "vue": "dx-date-range-box-options"
+    },
+    "dxDateRangeBoxOptions.endDate": {
+      "vue": "end-date"
+    },
+    "dxDateRangeBoxOptions.pickerType": {
+      "vue": "picker-type"
+    },
+    "dxDateRangeBoxOptions.startDate": {
+      "vue": "start-date"
     },
     "dxDeferRendering": {
       "angular": "dx-defer-rendering",
@@ -11638,6 +11658,9 @@
     },
     "enums.DatePickerType": {
       "vue": "date-picker-type"
+    },
+    "enums.DateRangePickerType": {
+      "vue": "date-range-picker-type"
     },
     "enums.DateType": {
       "vue": "date-type"

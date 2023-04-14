@@ -2,7 +2,7 @@
 id: dxDateBox
 module: ui/date_box
 export: default
-inherits: dxDropDownEditor
+inherits: DateBoxBase
 ---
 ---
 ##### shortDescription

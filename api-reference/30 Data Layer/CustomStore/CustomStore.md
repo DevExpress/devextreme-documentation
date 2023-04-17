@@ -20,23 +20,36 @@ For server-side data processing, implement the **load** function to send data pr
 
 If your data source supports CRUD operations, implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert'), [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update'), and [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') functions.
 
+The following code example uses **CustomStore** to specify CRUD operations for a component. All functions are implemented for a simple `employees` data array:
+
 ---
 ##### jQuery  
 
     <!--JavaScript-->
     var store = new DevExpress.data.CustomStore({
         key: "id",
-        load: function (loadOptions) {
-            // ...
+        load: function () {
+            let d = $.Deferred();
+            d.resolve(employees);
+            return d.promise();
         },
         insert: function (values) {
-            // ...
+            let d = $.Deferred();
+            values.ID = employees.length;
+            employees.push(values);
+            d.resolve(employees[employees.length - 1]);
+            return d.promise();
         },
         update: function (key, values) {
-            // ...
+            let d = $.Deferred();
+            let object = Object.assign(key, values);
+            d.resolve(object);
+            return d.promise();
         },
         remove: function (key) {
-            // ...
+            let d = $.Deferred();
+            d.resolve(employees.splice(key.ID - 1, 1));
+            return d.promise();
         }
     });
 
@@ -59,17 +72,32 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
         constructor () {
             this.store = new CustomStore({
                 key: "id",
-                load: (loadOptions) => {
-                    // ...
+                load: () => {
+                    let promise = new Promise((resolve) => {
+                        resolve(this.employees);
+                    })
+                    return promise;
                 },
                 insert: (values) => {
-                    // ...
+                    let promise = new Promise((resolve) => {
+                        values.ID = this.employees.length;
+                        this.employees.push(values);
+                        resolve(this.employees[this.employees.length - 1]);
+                    })
+                    return promise;
                 },
                 update: (key, values) => {
-                    // ...
+                    let promise = new Promise((resolve) => {
+                        let object = Object.assign(key, values);
+                        resolve(object);
+                    })
+                    return promise;
                 },
                 remove: (key) => {
-                    // ...
+                    let promise = new Promise((resolve) => {
+                        resolve(this.employees.splice(key.ID - 1, 1));
+                    })
+                    return promise;
                 }
             });
 
@@ -82,65 +110,6 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.store = new DevExpress.data.CustomStore({
-                key: "id",
-                load: function (loadOptions) {
-                    // ...
-                },
-                insert: function (values) {
-                    // ...
-                },
-                update: function (key, values) {
-                    // ...
-                },
-                remove: function (key) {
-                    // ...
-                }
-            });
-
-            // ===== or inside the DataSource =====
-            $scope.dataSource = new DevExpress.data.DataSource({
-                // ...
-                // a mix of CustomStore and DataSource properties
-                // ...
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        store: new DevExpress.data.CustomStore({
-            key: "id",
-            load: function (loadOptions) {
-                // ...
-            },
-            insert: function (values) {
-                // ...
-            },
-            update: function (key, values) {
-                // ...
-            },
-            remove: function (key) {
-                // ...
-            }
-        })
-
-        // ===== or inside the DataSource =====
-        dataSource: new DevExpress.data.DataSource({
-            // ...
-            // a mix of CustomStore and DataSource properties
-            // ...
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -150,17 +119,32 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
 
     const store = new CustomStore({
         key: 'id',
-        load: (loadOptions) => {
-            // ...
+        load: () => {
+            let promise = new Promise((resolve) => {
+                resolve(this.employees);
+            })
+            return promise;
         },
         insert: (values) => {
-            // ...
+            let promise = new Promise((resolve) => {
+                values.ID = this.employees.length;
+                this.employees.push(values);
+                resolve(this.employees[this.employees.length - 1]);
+            })
+            return promise;
         },
         update: (key, values) => {
-            // ...
+            let promise = new Promise((resolve) => {
+                let object = Object.assign(key, values);
+                resolve(object);
+            })
+            return promise;
         },
         remove: (key) => {
-            // ...
+            let promise = new Promise((resolve) => {
+                resolve(this.employees.splice(key.ID - 1, 1));
+            })
+            return promise;
         }
     });
 
@@ -192,17 +176,32 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
 
     const store = new CustomStore({
         key: 'id',
-        load: (loadOptions) => {
-            // ...
+        load: () => {
+            let promise = new Promise((resolve) => {
+                resolve(employees);
+            })
+            return promise;
         },
         insert: (values) => {
-            // ...
+            let promise = new Promise((resolve) => {
+                values.ID = employees.length;
+                employees.push(values);
+                resolve(employees[employees.length - 1]);
+            })
+            return promise;
         },
         update: (key, values) => {
-            // ...
+            let promise = new Promise((resolve) => {
+                let object = Object.assign(key, values);
+                resolve(object);
+            })
+            return promise;
         },
         remove: (key) => {
-            // ...
+            let promise = new Promise((resolve) => {
+                resolve(employees.splice(key.ID - 1, 1));
+            })
+            return promise;
         }
     });
 
@@ -213,7 +212,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
         // ...
     });
 
-    class App extends React.Component {
+    function App() {
         // ...
     }
     export default App;

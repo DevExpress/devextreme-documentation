@@ -80,7 +80,7 @@ jobs:
             escaped_pwd=$(echo $(pwd)/ | sed --expression 's/\//\\\//g')
             cat ../artifacts/internal-tools/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
             
-            MAXSIZE = 65536
+            MAXSIZE=65536
             FILESIZE=$(stat -c%s prbody.md)
             
             if ((FILESIZE > MAXSIZE)); then

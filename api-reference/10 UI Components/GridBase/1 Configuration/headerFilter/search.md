@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.headerFilter.search
 type: HeaderFilterSearchConfig
+inheritsType: HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription

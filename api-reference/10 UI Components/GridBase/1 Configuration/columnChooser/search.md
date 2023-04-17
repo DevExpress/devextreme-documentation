@@ -1,6 +1,7 @@
 ---
 id: GridBase.Options.columnChooser.search
 type: ColumnChooserSearchConfig
+inheritsType: ColumnChooserSearchConfig
 ---
 ---
 ##### shortDescription

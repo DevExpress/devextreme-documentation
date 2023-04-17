@@ -1,6 +1,7 @@
 ---
 id: dxPivotGrid.Options.headerFilter.search
 type: HeaderFilterSearchConfig
+inheritsType: HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription

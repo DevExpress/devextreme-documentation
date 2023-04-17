@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.headerFilter.search
 type: HeaderFilterSearchConfig
+inheritsType: HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: GridBaseColumn.headerFilter.allowSearch
 type: Boolean
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

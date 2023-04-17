@@ -2,6 +2,7 @@
 id: GridBase.Options.columnChooser.searchTimeout
 type: Number
 default: 500
+deprecated: 
 ---
 ---
 ##### shortDescription

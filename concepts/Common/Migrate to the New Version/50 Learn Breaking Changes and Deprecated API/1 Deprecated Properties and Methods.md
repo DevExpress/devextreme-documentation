@@ -13,7 +13,11 @@
 </tr>
 <tr>
 <td>DataGrid</td>
-<td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/#rowComponent">rowComponent</a><br><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#filter">filter</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/#rowRender">rowRender</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/#rowTemplate">rowTemplate</a></td>
+<td><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#allowSearch">allowSearch</a><br><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/#rowComponent">rowComponent</a><br><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#filter">filter</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/#rowRender">rowRender</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxDataGrid/Configuration/#rowTemplate">rowTemplate</a></td>
+</tr>
+<tr>
+<td>Gantt</td>
+<td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>
 <tr>
 <td>HtmlEditor</td>
@@ -26,6 +30,14 @@
 <tr>
 <td>Lookup</td>
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxLookup/Configuration/#valueChangeEvent">valueChangeEvent</a></td>
+</tr>
+<tr>
+<td>PivotGrid</td>
+<td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
+</tr>
+<tr>
+<td>PivotGridFieldChooser</td>
+<td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>
 <tr>
 <td>Popover</td>
@@ -61,11 +73,15 @@
 </tr>
 <tr>
 <td>TreeList</td>
-<td><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#filter">filter</a></td>
+<td><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#allowSearch">allowSearch</a><br><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#filter">filter</a></td>
 </tr>
 <tr>
 <td>VectorMap</td>
 <td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/UI_Components/dxVectorMap/Methods/convertCoordinates(x_y)">convertCoordinates(x, y)</a></td>
+</tr>
+<tr>
+<td>PivotGridDataSource</td>
+<td><b>fields.headerFilter.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/#allowSearch">allowSearch</a></td>
 </tr>
 <tr>
 <td>Utils</td>
@@ -73,7 +89,7 @@
 </tr>
 <tr>
 <td>grids</td>
-<td><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/RowDragging/#filter">filter</a></td>
+<td><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/ColumnChooser/#allowSearch">allowSearch</a><br><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/ColumnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/HeaderFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/HeaderFilter/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_1/ApiReference/Common_Types/grids/RowDragging/#filter">filter</a></td>
 </tr>
 <tr>
 <td>Object Structures</td>

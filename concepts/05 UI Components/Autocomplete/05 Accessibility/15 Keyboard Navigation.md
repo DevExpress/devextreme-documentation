@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+An end user can use the following keys to interact with the Autocomplete component: 
 
 <table class="dx-table">
     <tr>
@@ -24,10 +24,3 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [Autocomplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete)
-- [Autocomplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
-
-[tags]Autocomplete, navigation, accessibility, keyboard shortcuts

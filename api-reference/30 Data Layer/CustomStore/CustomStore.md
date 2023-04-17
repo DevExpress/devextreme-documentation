@@ -20,41 +20,30 @@ For server-side data processing, implement the **load** function to send data pr
 
 If your data source supports CRUD operations, implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert'), [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update'), and [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') functions.
 
-The following code example uses **CustomStore** to specify CRUD operations for a component. All functions are implemented for a simple `employees` data array:
+The following code example uses **CustomStore** to specify CRUD operations for a component. For a more in-depth example, refer to the following article: [Custom Data Sources](https://js.devexpress.com/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
 
 ---
 ##### jQuery  
 
     <!--JavaScript-->
-    var store = new DevExpress.data.CustomStore({
+    const store = new DevExpress.data.CustomStore({
         key: "id",
-        load: function () {
-            let d = $.Deferred();
-            d.resolve(employees);
-            return d.promise();
+        load: function (loadOptions) {
+            // ...
         },
         insert: function (values) {
-            let d = $.Deferred();
-            values.ID = employees.length;
-            employees.push(values);
-            d.resolve(employees[employees.length - 1]);
-            return d.promise();
+            // ...
         },
         update: function (key, values) {
-            let d = $.Deferred();
-            let object = Object.assign(key, values);
-            d.resolve(object);
-            return d.promise();
+            // ...
         },
         remove: function (key) {
-            let d = $.Deferred();
-            d.resolve(employees.splice(key.ID - 1, 1));
-            return d.promise();
+            // ...
         }
     });
 
     // ===== or inside the DataSource =====
-    var dataSource = new DevExpress.data.DataSource({
+    const dataSource = new DevExpress.data.DataSource({
         // ...
         // a mix of CustomStore and DataSource properties
         // ...
@@ -72,32 +61,17 @@ The following code example uses **CustomStore** to specify CRUD operations for a
         constructor () {
             this.store = new CustomStore({
                 key: "id",
-                load: () => {
-                    let promise = new Promise((resolve) => {
-                        resolve(this.employees);
-                    })
-                    return promise;
+                load: (loadOptions) => {
+                    // ...
                 },
                 insert: (values) => {
-                    let promise = new Promise((resolve) => {
-                        values.ID = this.employees.length;
-                        this.employees.push(values);
-                        resolve(this.employees[this.employees.length - 1]);
-                    })
-                    return promise;
+                    // ...
                 },
                 update: (key, values) => {
-                    let promise = new Promise((resolve) => {
-                        let object = Object.assign(key, values);
-                        resolve(object);
-                    })
-                    return promise;
+                    // ...
                 },
                 remove: (key) => {
-                    let promise = new Promise((resolve) => {
-                        resolve(this.employees.splice(key.ID - 1, 1));
-                    })
-                    return promise;
+                    // ...
                 }
             });
 
@@ -119,32 +93,17 @@ The following code example uses **CustomStore** to specify CRUD operations for a
 
     const store = new CustomStore({
         key: 'id',
-        load: () => {
-            let promise = new Promise((resolve) => {
-                resolve(this.employees);
-            })
-            return promise;
+        load: (loadOptions) => {
+            // ...
         },
         insert: (values) => {
-            let promise = new Promise((resolve) => {
-                values.ID = this.employees.length;
-                this.employees.push(values);
-                resolve(this.employees[this.employees.length - 1]);
-            })
-            return promise;
+            // ...
         },
         update: (key, values) => {
-            let promise = new Promise((resolve) => {
-                let object = Object.assign(key, values);
-                resolve(object);
-            })
-            return promise;
+            // ...
         },
         remove: (key) => {
-            let promise = new Promise((resolve) => {
-                resolve(this.employees.splice(key.ID - 1, 1));
-            })
-            return promise;
+            // ...
         }
     });
 
@@ -176,32 +135,17 @@ The following code example uses **CustomStore** to specify CRUD operations for a
 
     const store = new CustomStore({
         key: 'id',
-        load: () => {
-            let promise = new Promise((resolve) => {
-                resolve(employees);
-            })
-            return promise;
+        load: (loadOptions) => {
+            // ...
         },
         insert: (values) => {
-            let promise = new Promise((resolve) => {
-                values.ID = employees.length;
-                employees.push(values);
-                resolve(employees[employees.length - 1]);
-            })
-            return promise;
+            // ...
         },
         update: (key, values) => {
-            let promise = new Promise((resolve) => {
-                let object = Object.assign(key, values);
-                resolve(object);
-            })
-            return promise;
+            // ...
         },
         remove: (key) => {
-            let promise = new Promise((resolve) => {
-                resolve(employees.splice(key.ID - 1, 1));
-            })
-            return promise;
+            // ...
         }
     });
 

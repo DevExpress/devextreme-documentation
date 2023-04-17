@@ -2,6 +2,7 @@
 id: dxGanttHeaderFilter.searchTimeout
 type: Number
 default: 500
+deprecated: 
 ---
 ---
 ##### shortDescription

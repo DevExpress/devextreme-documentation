@@ -2,6 +2,7 @@
 id: GridBase.Options.columnChooser.allowSearch
 type: Boolean
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

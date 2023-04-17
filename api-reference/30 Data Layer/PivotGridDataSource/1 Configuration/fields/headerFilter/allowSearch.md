@@ -2,6 +2,7 @@
 id: PivotGridDataSource.Options.fields.headerFilter.allowSearch
 type: Boolean
 default: undefined
+deprecated: 
 ---
 ---
 ##### shortDescription

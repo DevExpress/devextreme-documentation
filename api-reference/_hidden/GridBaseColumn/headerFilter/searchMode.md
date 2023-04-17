@@ -2,6 +2,7 @@
 id: GridBaseColumn.headerFilter.searchMode
 type: Enums.SearchMode
 default: 'contains'
+deprecated: 
 ---
 ---
 ##### shortDescription

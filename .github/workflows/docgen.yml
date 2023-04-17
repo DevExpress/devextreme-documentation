@@ -23,7 +23,7 @@ jobs:
             path: devextreme
             repository: devexpress/devextreme
             ref: ${{ github.ref_name }}
-        
+
         - name: NPM - devextreme
           working-directory: devextreme
           run: |
@@ -79,6 +79,13 @@ jobs:
 
             escaped_pwd=$(echo $(pwd)/ | sed --expression 's/\//\\\//g')
             cat ../artifacts/internal-tools/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
+            
+            MAXSIZE = 65536
+            FILESIZE=$(stat -c%s prbody.md)
+            
+            if ((FILESIZE > MAXSIZE)); then
+              printf "Shown 64k bytes of total $FILESIZE\n$(tail -c 65490 prbody.md)" > prbody.md
+            fi
 
             jq -n \
               --arg head "$branch_name" \

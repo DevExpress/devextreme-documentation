@@ -1,7 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.dataType
-acceptValues: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
-type: String
+type: Enums.DataType
 default: undefined
 ---
 ---

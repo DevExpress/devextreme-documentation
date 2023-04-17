@@ -1,7 +1,6 @@
 ---
 id: CompareRule.comparisonType
-acceptValues: '!=' | '!==' | '<' | '<=' | '==' | '===' | '>' | '>='
-type: String
+type: Enums.ComparisonOperator
 default: '=='
 ---
 ---

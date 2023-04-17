@@ -1,8 +1,5 @@
 ---
 id: dxDataGrid.Options.export.formats
-acceptValues: 'pdf' | 'xlsx'
-type: Array<String>
-default: 'DataGrid'
 ---
 ---
 ##### shortDescription

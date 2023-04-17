@@ -1,6 +1,5 @@
 ---
 id: dxTreeListToolbarItem.location
-acceptValues: 'after' | 'before' | 'center'
-type: String
+type: Enums.ToolbarItemLocation
 default: 'after'
 ---

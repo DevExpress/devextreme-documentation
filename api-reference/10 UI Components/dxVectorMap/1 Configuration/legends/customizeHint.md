@@ -1,6 +1,5 @@
 ---
 id: dxVectorMap.Options.legends.customizeHint
-type: function(itemInfo)
 notUsedInTheme: 
 ---
 ---

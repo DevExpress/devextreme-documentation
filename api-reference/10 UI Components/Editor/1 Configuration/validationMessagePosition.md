@@ -1,7 +1,6 @@
 ---
 id: Editor.Options.validationMessagePosition
-acceptValues: 'bottom' | 'left' | 'right' | 'top'
-type: String
+type: Enums.Position
 default: 'bottom'
 ---
 ---

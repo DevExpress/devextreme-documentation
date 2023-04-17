@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.filterPanel.texts.createFilter
-type: String
-default: 'Create Filter'
 ---
 ---
 ##### shortDescription

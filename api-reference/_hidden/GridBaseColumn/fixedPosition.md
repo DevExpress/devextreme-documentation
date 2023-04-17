@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.fixedPosition
-acceptValues: 'left' | 'right'
-type: String
+type: Enums.HorizontalEdge
 default: undefined
 ---
 ---

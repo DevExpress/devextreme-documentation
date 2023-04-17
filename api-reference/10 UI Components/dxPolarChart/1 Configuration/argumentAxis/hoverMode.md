@@ -1,8 +1,5 @@
 ---
 id: dxPolarChart.Options.argumentAxis.hoverMode
-acceptValues: 'allArgumentPoints' | 'none'
-type: String
-default: 'none'
 ---
 ---
 ##### shortDescription

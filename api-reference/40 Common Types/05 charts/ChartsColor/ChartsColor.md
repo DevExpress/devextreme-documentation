@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the chart's color.
 
 ---
 <!-- Description goes here -->

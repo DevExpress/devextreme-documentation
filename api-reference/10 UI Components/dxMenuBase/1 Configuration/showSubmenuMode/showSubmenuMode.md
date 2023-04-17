@@ -1,7 +1,6 @@
 ---
 id: dxMenuBase.Options.showSubmenuMode
-acceptValues: 'onClick' | 'onHover'
-type: Object | String
+type: Object | Enums.SubmenuShowMode
 default: { name: 'onHover', delay: { show: 50, hide: 300 } }
 ---
 ---

@@ -1,8 +1,5 @@
 ---
 id: BaseWidget.Options.title.horizontalAlignment
-acceptValues: 'center' | 'left' | 'right'
-type: String
-default: 'center'
 ---
 ---
 ##### shortDescription

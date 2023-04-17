@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.tooltip.location
-acceptValues: 'center' | 'edge'
-type: String
-default: 'center'
 ---
 ---
 ##### shortDescription

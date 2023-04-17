@@ -1,8 +1,5 @@
 ---
 id: dxPolarChart.Options.legend.hoverMode
-acceptValues: 'excludePoints' | 'includePoints' | 'none'
-type: String
-default: 'includePoints'
 ---
 ---
 ##### shortDescription

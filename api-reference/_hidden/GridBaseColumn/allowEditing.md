@@ -15,4 +15,4 @@ Specifies whether a user can edit values in the column at runtime. By default, i
 [note] If values in the column are calculated customarily using the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue') property, they cannot be edited at runtime.
 
 #####See Also#####
-- [editing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/')
+- [editing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '{basewidgetpath}/Configuration/editing/')

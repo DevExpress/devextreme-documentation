@@ -1,7 +1,6 @@
 ---
 id: dxMap.Options.routes.mode
-acceptValues: 'driving' | 'walking'
-type: String
+type: Enums.RouteMode
 default: 'driving'
 ---
 ---

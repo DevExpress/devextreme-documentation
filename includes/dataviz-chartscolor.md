@@ -1,0 +1,1 @@
+You can also specify a custom pattern or gradient instead of a plain color. Call the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to obtain a fill ID. Assign that value to the `fillId` field.

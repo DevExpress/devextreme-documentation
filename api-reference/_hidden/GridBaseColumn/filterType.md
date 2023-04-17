@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.filterType
-acceptValues: 'exclude' | 'include'
-type: String
+type: Enums.FilterType
 default: 'include'
 ---
 ---

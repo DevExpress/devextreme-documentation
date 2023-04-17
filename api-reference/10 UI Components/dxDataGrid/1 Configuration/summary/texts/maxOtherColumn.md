@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.texts.maxOtherColumn
-type: String
-default: 'Max of {1} is {0}'
 ---
 ---
 ##### shortDescription

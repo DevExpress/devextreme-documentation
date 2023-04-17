@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.resolveLabelOverlapping
-acceptValues: 'hide' | 'none' | 'stack'
-type: String
+type: Enums.ChartsLabelOverlap
 default: 'none'
 ---
 ---

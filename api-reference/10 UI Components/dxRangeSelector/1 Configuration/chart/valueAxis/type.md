@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.valueAxis.type
-acceptValues: 'continuous' | 'logarithmic'
-type: String
+type: Enums.ChartAxisScale
 default: undefined
 ---
 ---

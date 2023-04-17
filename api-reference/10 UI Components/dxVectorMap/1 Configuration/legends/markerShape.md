@@ -1,8 +1,5 @@
 ---
 id: dxVectorMap.Options.legends.markerShape
-acceptValues: 'circle' | 'square'
-type: String
-default: 'square'
 ---
 ---
 ##### shortDescription

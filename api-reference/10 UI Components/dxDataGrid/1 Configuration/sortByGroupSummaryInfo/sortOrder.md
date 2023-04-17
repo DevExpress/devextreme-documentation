@@ -1,8 +1,6 @@
 ---
 id: dxDataGrid.Options.sortByGroupSummaryInfo.sortOrder
-acceptValues: undefined | 'asc' | 'desc'
-type: String
-default: undefined
+acceptValues: undefined
 ---
 ---
 ##### shortDescription

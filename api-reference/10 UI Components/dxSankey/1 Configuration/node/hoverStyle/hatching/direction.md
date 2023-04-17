@@ -1,7 +1,6 @@
 ---
 id: dxSankey.Options.node.hoverStyle.hatching.direction
-acceptValues: 'left' | 'none' | 'right'
-type: String
+type: Enums.HatchDirection
 default: 'right'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.remoteOperations
-acceptValues: 'auto'
-type: Boolean | Object | String
+type: Boolean | Object | Enums.Mode
 default: 'auto'
 ---
 ---

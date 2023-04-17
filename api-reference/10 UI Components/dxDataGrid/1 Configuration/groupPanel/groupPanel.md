@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.groupPanel
-type: Object
+type: ui/data_grid:GroupPanel
+inheritsType: ui/data_grid:GroupPanel
 ---
 ---
 ##### shortDescription

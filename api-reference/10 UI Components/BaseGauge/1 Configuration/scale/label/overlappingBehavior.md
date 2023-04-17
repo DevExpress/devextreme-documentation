@@ -1,8 +1,5 @@
 ---
 id: BaseGauge.Options.scale.label.overlappingBehavior
-acceptValues: 'hide' | 'none'
-type: String
-default: 'hide'
 ---
 ---
 ##### shortDescription

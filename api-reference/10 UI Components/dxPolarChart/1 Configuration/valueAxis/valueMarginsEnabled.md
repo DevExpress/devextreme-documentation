@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.valueAxis.valueMarginsEnabled
-type: Boolean
-default: true
 ---
 ---
 ##### shortDescription

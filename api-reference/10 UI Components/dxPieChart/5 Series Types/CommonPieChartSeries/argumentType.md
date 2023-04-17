@@ -1,7 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.argumentType
-acceptValues: 'datetime' | 'numeric' | 'string'
-type: String
+type: Enums.ChartsDataType
 default: undefined
 ---
 ---

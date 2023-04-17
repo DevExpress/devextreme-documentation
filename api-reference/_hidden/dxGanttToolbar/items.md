@@ -1,7 +1,6 @@
 ---
 id: dxGanttToolbar.items
-acceptValues: 'separator' | 'undo' | 'redo' | 'expandAll' | 'collapseAll' | 'addTask' | 'deleteTask' | 'zoomIn' | 'zoomOut' | 'taskDetails' | 'fullScreen' | 'resourceManager' | 'showResources' | 'showDependencies'
-type: Array<dxGanttToolbarItem, String>
+type: Array<dxGanttToolbarItem, Enums.GanttPredefinedToolbarItem>
 inheritsType: dxGanttToolbarItem
 ---
 ---

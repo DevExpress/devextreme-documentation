@@ -1,7 +1,6 @@
 ---
 id: dxForm.Options.colCount
-acceptValues: 'auto'
-type: Number | String
+type: Number | Enums.Mode
 default: 1
 ---
 ---

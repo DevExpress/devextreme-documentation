@@ -1,4 +1,5 @@
 ---
 id: dxSankey.Options.tooltip
-type: Object
+type: viz/sankey:dxSankeyTooltip
+inheritsType: viz/sankey:dxSankeyTooltip
 ---

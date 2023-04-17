@@ -1,7 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.texts.count
-type: String
-default: 'Count={0}'
 ---
 ---
 ##### shortDescription

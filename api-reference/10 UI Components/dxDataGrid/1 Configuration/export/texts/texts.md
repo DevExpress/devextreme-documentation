@@ -1,6 +1,7 @@
 ---
 id: dxDataGrid.Options.export.texts
-type: Object
+type: ui/data_grid:ExportTexts
+inheritsType: ui/data_grid:ExportTexts
 ---
 ---
 ##### shortDescription

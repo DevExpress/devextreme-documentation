@@ -1,7 +1,6 @@
 ---
 id: dxDrawer.Options.position
-acceptValues: 'left' | 'right' | 'top' | 'bottom' | 'before' | 'after'
-type: String
+type: Enums.PanelLocation
 default: 'left'
 ---
 ---

@@ -3,7 +3,7 @@ id: GradientColor
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies colors on which gradient is based.
 
 ---
 <!-- Description goes here -->

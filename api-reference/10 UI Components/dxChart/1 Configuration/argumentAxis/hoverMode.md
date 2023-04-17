@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.argumentAxis.hoverMode
-acceptValues: 'allArgumentPoints' | 'none'
-type: String
-default: 'none'
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxTreeView.Options.showCheckBoxesMode
-acceptValues: 'none' | 'normal' | 'selectAll'
-type: String
+type: Enums.TreeViewCheckBoxMode
 default: 'none'
 ---
 ---

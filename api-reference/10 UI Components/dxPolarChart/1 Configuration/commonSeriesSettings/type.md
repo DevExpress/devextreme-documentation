@@ -1,8 +1,5 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings.type
-acceptValues: 'area' | 'bar' | 'line' | 'scatter' | 'stackedbar'
-type: String
-default: 'scatter'
 ---
 ---
 ##### shortDescription

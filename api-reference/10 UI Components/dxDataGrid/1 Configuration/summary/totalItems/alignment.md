@@ -1,8 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.totalItems.alignment
-acceptValues: 'center' | 'left' | 'right'
-type: String
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,5 @@
 ---
 id: dxChart.Options.argumentAxis.constantLines.displayBehindSeries
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

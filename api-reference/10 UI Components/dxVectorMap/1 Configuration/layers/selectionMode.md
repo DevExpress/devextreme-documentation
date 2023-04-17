@@ -1,7 +1,6 @@
 ---
 id: dxVectorMap.Options.layers.selectionMode
-acceptValues: 'single' | 'multiple' | 'none'
-type: String
+type: Enums.SingleMultipleOrNone
 default: 'single'
 ---
 ---

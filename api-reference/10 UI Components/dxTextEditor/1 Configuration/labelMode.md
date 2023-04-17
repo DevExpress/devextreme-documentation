@@ -1,7 +1,6 @@
 ---
 id: dxTextEditor.Options.labelMode
-acceptValues: 'static' | 'floating' | 'hidden'
-type: String
+type: Enums.LabelMode
 default: 'static', 'floating' (Material)
 ---
 ---

@@ -3,3 +3,5 @@ Download the ZIP archive if you [use jQuery](/concepts/58%20jQuery%20Components/
 [note] This archive contains the latest stable version of DevExtreme.
 
 <a target="_blank" onclick="trackGAEvent('Download Trial', 'Complete zip', 'Distribution Channels article');" href="https://go.devexpress.com/DevExpressDownload_DevExtremeCompleteTrialZip.aspx" class="button orange small fix-width-155">Download ZIP archive</a>
+
+[tags] jquery

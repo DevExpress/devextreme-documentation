@@ -1,7 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.border.dashStyle
-acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
-type: String
+type: Enums.DashStyle
 default: 'solid'
 ---
 ---

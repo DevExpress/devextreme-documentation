@@ -1,8 +1,5 @@
 ---
 id: BaseWidget.Options.title.verticalAlignment
-acceptValues: 'bottom' | 'top'
-type: String
-default: 'top'
 ---
 ---
 ##### shortDescription

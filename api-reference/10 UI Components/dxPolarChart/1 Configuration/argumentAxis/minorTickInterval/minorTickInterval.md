@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.argumentAxis.minorTickInterval
-acceptValues: 'day' | 'hour' | 'millisecond' | 'minute' | 'month' | 'quarter' | 'second' | 'week' | 'year'
-type: Number | Object | String
 inherits: VizTimeInterval
 ---
 ---

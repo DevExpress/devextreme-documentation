@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.rowDragging.container
-type: String | UserDefinedElement
-default: undefined
 ---
 ---
 ##### shortDescription

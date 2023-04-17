@@ -1,7 +1,5 @@
 ---
 id: dxPolarChart.Options.argumentAxis.tick.shift
-type: Number
-default: 3
 ---
 ---
 ##### shortDescription

@@ -1,8 +1,5 @@
 ---
 id: dxDataGrid.Options.summary.groupItems.summaryType
-acceptValues: 'avg' | 'count' | 'custom' | 'max' | 'min' | 'sum'
-type: String
-default: undefined
 ---
 ---
 ##### shortDescription

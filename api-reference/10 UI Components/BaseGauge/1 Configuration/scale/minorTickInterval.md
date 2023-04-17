@@ -1,7 +1,5 @@
 ---
 id: BaseGauge.Options.scale.minorTickInterval
-type: Number
-default: undefined
 ---
 ---
 ##### shortDescription

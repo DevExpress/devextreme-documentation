@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.title.alignment
-acceptValues: 'center' | 'left' | 'right'
-type: String
-default: 'center'
 ---
 ---
 ##### shortDescription

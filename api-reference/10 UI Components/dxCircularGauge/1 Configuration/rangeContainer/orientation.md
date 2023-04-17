@@ -1,8 +1,5 @@
 ---
 id: dxCircularGauge.Options.rangeContainer.orientation
-acceptValues: 'center' | 'inside' | 'outside'
-type: String
-default: 'outside'
 ---
 ---
 ##### shortDescription

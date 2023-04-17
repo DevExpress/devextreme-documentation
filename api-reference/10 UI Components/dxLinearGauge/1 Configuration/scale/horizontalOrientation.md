@@ -1,8 +1,5 @@
 ---
 id: dxLinearGauge.Options.scale.horizontalOrientation
-acceptValues: 'center' | 'left' | 'right'
-type: String
-default: 'right'
 ---
 ---
 ##### shortDescription

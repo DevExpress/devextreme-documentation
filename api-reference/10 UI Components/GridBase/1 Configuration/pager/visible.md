@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.pager.visible
-acceptValues: 'auto'
-type: Boolean | String
-default: 'auto'
 ---
 ---
 ##### shortDescription

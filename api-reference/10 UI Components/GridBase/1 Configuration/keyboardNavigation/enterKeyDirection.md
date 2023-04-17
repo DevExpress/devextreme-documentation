@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.keyboardNavigation.enterKeyDirection
-acceptValues: 'none' | 'column' | 'row'
-type: String
-default: 'none'
 ---
 ---
 ##### shortDescription

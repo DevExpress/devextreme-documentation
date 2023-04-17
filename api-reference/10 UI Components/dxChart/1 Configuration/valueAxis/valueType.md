@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.valueAxis.valueType
-acceptValues: 'datetime' | 'numeric' | 'string'
-type: String
-default: undefined
 ---
 ---
 ##### shortDescription

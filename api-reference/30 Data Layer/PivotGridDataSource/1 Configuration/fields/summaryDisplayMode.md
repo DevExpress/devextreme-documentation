@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.summaryDisplayMode
-acceptValues: 'absoluteVariation' | 'percentOfColumnGrandTotal' | 'percentOfColumnTotal' | 'percentOfGrandTotal' | 'percentOfRowGrandTotal' | 'percentOfRowTotal' | 'percentVariation'
-type: String
+type: Enums.PivotGridSummaryDisplayMode
 default: undefined
 ---
 ---

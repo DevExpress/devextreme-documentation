@@ -1,6 +1,5 @@
 ---
 id: dxColorBox.Options.applyValueMode
-acceptValues: 'instantly' | 'useButtons'
-type: String
+type: Enums.ApplyValueMode
 default: 'useButtons'
 ---

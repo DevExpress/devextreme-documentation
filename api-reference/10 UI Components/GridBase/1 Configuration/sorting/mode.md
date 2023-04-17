@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.sorting.mode
-acceptValues: 'single' | 'multiple' | 'none'
-type: String
-default: 'single'
 ---
 ---
 ##### shortDescription

@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.legend.hoverMode
-acceptValues: 'excludePoints' | 'includePoints' | 'none'
-type: String
-default: 'includePoints'
 ---
 ---
 ##### shortDescription

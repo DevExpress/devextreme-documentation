@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.hoverStyle.border.color
-type: String | ChartsColor
+type: String
 default: undefined
 ---
 ---

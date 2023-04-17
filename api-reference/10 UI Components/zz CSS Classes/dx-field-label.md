@@ -11,7 +11,7 @@ A class used to display a field name within the [dx-field](/api-reference/10%20U
         <div class="dx-field-value">John Smith</div>
     </div>
 
-The **dx-field-label** element can hold plain text, UI components, knockout bindings or custom markup.
+The **dx-field-label** element can hold plain text, UI components, or custom markup.
 
 [note]The `dx-field-label` and `dx-field-value` classes are designed to have the label always be before the value. If you need to swap them around, override the `float` CSS property of these classes in the following way.
 

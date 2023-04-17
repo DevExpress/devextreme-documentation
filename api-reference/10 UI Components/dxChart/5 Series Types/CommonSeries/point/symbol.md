@@ -1,7 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.symbol
-acceptValues: 'circle' | 'cross' | 'polygon' | 'square' | 'triangle' | 'triangleDown' | 'triangleUp'
-type: String
+type: Enums.PointSymbol
 default: 'circle'
 ---
 ---

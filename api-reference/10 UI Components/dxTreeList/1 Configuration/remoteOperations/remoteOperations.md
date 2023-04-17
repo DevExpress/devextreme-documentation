@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.remoteOperations
-acceptValues: 'auto'
-type: Object | String
+type: Object | Enums.Mode
 default: 'auto'
 ---
 ---

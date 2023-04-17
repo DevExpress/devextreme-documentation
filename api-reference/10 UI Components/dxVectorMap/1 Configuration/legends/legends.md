@@ -1,8 +1,9 @@
 ---
 id: dxVectorMap.Options.legends
-type: Array<Object>
+type: Array<viz/vector_map:dxVectorMapLegends>
 inherits: BaseLegend
 default: undefined
+inheritsType: viz/vector_map:dxVectorMapLegends
 ---
 ---
 ##### shortDescription

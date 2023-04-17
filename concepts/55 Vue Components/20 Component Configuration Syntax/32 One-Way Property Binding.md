@@ -1,6 +1,6 @@
 Changes in the `bindingProperty` are propagated to the TextBox's **value**, but not vice versa:
 
-    <!-- tab: App.vue -->
+    <!-- tab: App.vue (Options API) -->
     <template>
         <DxTextBox :value="bindingProperty" />
     </template>
@@ -18,4 +18,16 @@ Changes in the `bindingProperty` are propagated to the TextBox's **value**, but 
             }
         }
     }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <DxTextBox :value="bindingProperty" />
+    </template>
+
+    <script setup>
+    import { ref } from "vue";
+    import DxTextBox from 'devextreme-vue/text-box';
+
+    let bindingProperty = ref('Some value');
     </script>

@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.commonAxisSettings.discreteAxisDivisionMode
-acceptValues: 'betweenLabels' | 'crossLabels'
-type: String
-default: 'betweenLabels'
 ---
 ---
 ##### shortDescription

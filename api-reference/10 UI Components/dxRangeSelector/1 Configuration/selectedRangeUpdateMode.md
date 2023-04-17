@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.selectedRangeUpdateMode
-acceptValues: 'auto' | 'keep' | 'reset' | 'shift'
-type: String
+type: Enums.VisualRangeUpdateMode
 default: 'reset'
 ---
 ---

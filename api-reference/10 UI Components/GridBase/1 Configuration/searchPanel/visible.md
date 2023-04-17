@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.searchPanel.visible
-type: Boolean
-default: false
 ---
 ---
 ##### shortDescription

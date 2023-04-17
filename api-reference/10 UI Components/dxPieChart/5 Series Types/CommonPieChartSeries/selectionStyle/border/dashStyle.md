@@ -1,7 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.border.dashStyle
-acceptValues: 'dash' | 'dot' | 'longDash' | 'solid'
-type: String
+type: Enums.DashStyle
 default: undefined
 ---
 ---

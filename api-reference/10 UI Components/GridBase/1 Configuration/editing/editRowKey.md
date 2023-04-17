@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.editing.editRowKey
-type: any
-default: null
 firedEvents: optionChanged
 ---
 ---

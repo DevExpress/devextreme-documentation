@@ -1,8 +1,5 @@
 ---
 id: BaseWidget.Options.title.textOverflow
-acceptValues: 'ellipsis' | 'hide' | 'none'
-type: String
-default: 'ellipsis'
 ---
 ---
 ##### shortDescription

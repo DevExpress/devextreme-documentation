@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.stateStoring.type
-acceptValues: 'custom' | 'localStorage' | 'sessionStorage'
-type: String
-default: 'localStorage'
 ---
 ---
 ##### shortDescription

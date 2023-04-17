@@ -1,7 +1,6 @@
 ---
 id: dxDateBox.Options.pickerType
-acceptValues: 'calendar' | 'list' | 'native' | 'rollers'
-type: String
+type: Enums.DatePickerType
 default: 'calendar', 'native' (Android, iOS)
 ---
 ---

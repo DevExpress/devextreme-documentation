@@ -1,7 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.breakStyle.line
-acceptValues: 'straight' | 'waved'
-type: String
+type: Enums.ScaleBreakLineStyle
 default: 'waved'
 ---
 ---

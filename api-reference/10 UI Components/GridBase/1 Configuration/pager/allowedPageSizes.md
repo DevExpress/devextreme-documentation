@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.pager.allowedPageSizes
-acceptValues: 'all' | 'auto'
-type: Array<Number, String> | String
-default: 'auto'
 ---
 ---
 ##### shortDescription

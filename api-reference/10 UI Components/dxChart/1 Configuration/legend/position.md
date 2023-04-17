@@ -1,8 +1,5 @@
 ---
 id: dxChart.Options.legend.position
-acceptValues: 'inside' | 'outside'
-type: String
-default: 'outside'
 ---
 ---
 ##### shortDescription

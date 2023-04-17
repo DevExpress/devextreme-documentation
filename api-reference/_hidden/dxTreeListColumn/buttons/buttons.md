@@ -1,7 +1,6 @@
 ---
 id: dxTreeListColumn.buttons
-acceptValues: 'add' | 'cancel' | 'delete' | 'edit' | 'save' | 'undelete'
-type: Array<String, dxTreeListColumnButton>
+type: Array<Enums.TreeListPredefinedColumnButton, dxTreeListColumnButton>
 inheritsType: dxTreeListColumnButton
 ---
 ---

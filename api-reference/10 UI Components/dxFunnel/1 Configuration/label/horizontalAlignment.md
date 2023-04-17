@@ -1,7 +1,6 @@
 ---
 id: dxFunnel.Options.label.horizontalAlignment
-acceptValues: 'left' | 'right'
-type: String
+type: Enums.HorizontalEdge
 default: 'right'
 ---
 ---

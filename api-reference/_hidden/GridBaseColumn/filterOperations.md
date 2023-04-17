@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.filterOperations
-acceptValues: '=' | '<>' | '<' | '<=' | '>' | '>=' | 'contains' | 'endswith' | 'isblank' | 'isnotblank' | 'notcontains' | 'startswith' | 'between' | 'anyof' | 'noneof'
-type: Array<String>
+type: Array<Enums.FilterOperation, String>
 default: undefined
 ---
 ---

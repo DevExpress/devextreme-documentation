@@ -1,8 +1,6 @@
 ---
 id: dxPolarChart.Options.valueAxis.wholeRange
-type: Object | Array<Number, String, Date>
 inherits: VisualRange
-default: undefined
 ---
 ---
 ##### shortDescription

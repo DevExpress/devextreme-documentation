@@ -2,6 +2,8 @@
 id: FunnelLegendItem
 type: Object
 inherits: BaseLegendItem
+module: viz/funnel
+export: LegendItem
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxDataGridColumn.type
-acceptValues: 'adaptive' | 'buttons' | 'detailExpand' | 'groupExpand' | 'selection' | 'drag'
-type: String
+type: Enums.DataGridCommandColumnType
 ---
 ---
 ##### shortDescription

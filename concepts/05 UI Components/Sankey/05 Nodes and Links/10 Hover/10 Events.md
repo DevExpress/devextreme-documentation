@@ -129,7 +129,11 @@ The Sankey UI component raises individual events for nodes and links when their 
 
 ---
 
-If you are going to change the event handlers at runtime or if you need several handlers for a single event, subscribe to the hover-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxSankey/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.
+---
+
+##### jQuery
+
+If you are going to change the event handlers at runtime or if you need several handlers for a single event, subscribe to the hover-related events using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxSankey/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     var nodeHoverChangedHandler1 = function(e) {
@@ -143,6 +147,8 @@ If you are going to change the event handlers at runtime or if you need several 
     $("#sankeyContainer").dxSankey("instance")
         .on("nodeHoverChanged", nodeHoverChangedHandler1)
         .on("nodeHoverChanged", nodeHoverChangedHandler2);
+
+---
 
 #####See Also#####
 #include common-link-handleevents

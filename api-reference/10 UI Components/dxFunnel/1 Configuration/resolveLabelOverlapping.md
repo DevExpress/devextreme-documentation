@@ -1,7 +1,6 @@
 ---
 id: dxFunnel.Options.resolveLabelOverlapping
-acceptValues: 'hide' | 'none' | 'shift'
-type: String
+type: Enums.ShiftLabelOverlap
 default: 'shift'
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionMode
-acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'excludePoints' | 'includePoints' | 'none' | 'onlyPoint'
-type: String
+type: Enums.SeriesSelectionMode
 ---
 ---
 ##### shortDescription

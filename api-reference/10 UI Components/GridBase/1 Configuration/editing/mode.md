@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.editing.mode
-acceptValues: 'batch' | 'cell' | 'row' | 'form' | 'popup'
-type: String
-default: 'row'
 ---
 ---
 ##### shortDescription

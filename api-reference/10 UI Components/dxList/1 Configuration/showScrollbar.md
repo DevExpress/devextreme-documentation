@@ -1,7 +1,6 @@
 ---
 id: dxList.Options.showScrollbar
-acceptValues: 'always' | 'never' | 'onHover' | 'onScroll'
-type: String
+type: Enums.ScrollbarMode
 default: 'onScroll', 'onHover' (desktop)
 ---
 ---

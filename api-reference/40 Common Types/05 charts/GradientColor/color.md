@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies one of the gradient colors.
 
 ---
 <!-- Description goes here -->

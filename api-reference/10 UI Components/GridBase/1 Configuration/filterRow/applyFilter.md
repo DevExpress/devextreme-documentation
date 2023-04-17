@@ -1,8 +1,5 @@
 ---
 id: GridBase.Options.filterRow.applyFilter
-acceptValues: 'auto' | 'onClick'
-type: String
-default: 'auto'
 ---
 ---
 ##### shortDescription

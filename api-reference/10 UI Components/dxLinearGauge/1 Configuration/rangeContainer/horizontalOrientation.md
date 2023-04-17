@@ -1,8 +1,5 @@
 ---
 id: dxLinearGauge.Options.rangeContainer.horizontalOrientation
-acceptValues: 'center' | 'left' | 'right'
-type: String
-default: 'right'
 ---
 ---
 ##### shortDescription

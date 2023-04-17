@@ -67,6 +67,7 @@ jobs:
 
         - name: Publish changes
           working-directory: documentation
+          shell: bash
           run: |
             formatted_time=$(date +"%d_%m_%y_%Hh%Mm")
             branch_name="dxrobot/${{ github.ref_name }}_D$formatted_time"

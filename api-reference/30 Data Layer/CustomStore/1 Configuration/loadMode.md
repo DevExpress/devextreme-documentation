@@ -9,7 +9,7 @@ default: 'processed'
 Specifies how data returned by the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function is treated.
 
 ---
-Specify this property depending on the behavior you implemented [implemented or assigned to?] for the **load** function. If this function sends data shaping properties to the server and fetches processed data, then **loadMode** should be set to *"processed"*. If the **load** function simply fetches raw, unprocessed data from the server, set **loadMode** to *"raw"*. In this case, the raw data will be processed on the client automatically.
+Specify this property depending on the behavior you implemented for the **load** function. If this function sends data shaping properties to the server and fetches processed data, then **loadMode** should be set to *"processed"*. If the **load** function simply fetches raw, unprocessed data from the server, set **loadMode** to *"raw"*. In this case, the raw data will be processed on the client automatically.
 
 [note] The default load mode is set to *"raw"* for DataGrid, TreeList, PivotGrid, and Scheduler.
 

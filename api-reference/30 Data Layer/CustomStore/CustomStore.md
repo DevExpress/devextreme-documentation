@@ -20,11 +20,13 @@ For server-side data processing, implement the **load** function to send data pr
 
 If your data source supports CRUD operations, implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert'), [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update'), and [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') functions.
 
+The following code example uses **CustomStore** to specify CRUD operations for a component. For a more in-depth example, refer to the following article: [Custom Data Sources](https://js.devexpress.com/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
+
 ---
 ##### jQuery  
 
     <!--JavaScript-->
-    var store = new DevExpress.data.CustomStore({
+    const store = new DevExpress.data.CustomStore({
         key: "id",
         load: function (loadOptions) {
             // ...
@@ -41,7 +43,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
     });
 
     // ===== or inside the DataSource =====
-    var dataSource = new DevExpress.data.DataSource({
+    const dataSource = new DevExpress.data.DataSource({
         // ...
         // a mix of CustomStore and DataSource properties
         // ...
@@ -81,65 +83,6 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
             });
         }
     }
-
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.store = new DevExpress.data.CustomStore({
-                key: "id",
-                load: function (loadOptions) {
-                    // ...
-                },
-                insert: function (values) {
-                    // ...
-                },
-                update: function (key, values) {
-                    // ...
-                },
-                remove: function (key) {
-                    // ...
-                }
-            });
-
-            // ===== or inside the DataSource =====
-            $scope.dataSource = new DevExpress.data.DataSource({
-                // ...
-                // a mix of CustomStore and DataSource properties
-                // ...
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        store: new DevExpress.data.CustomStore({
-            key: "id",
-            load: function (loadOptions) {
-                // ...
-            },
-            insert: function (values) {
-                // ...
-            },
-            update: function (key, values) {
-                // ...
-            },
-            remove: function (key) {
-                // ...
-            }
-        })
-
-        // ===== or inside the DataSource =====
-        dataSource: new DevExpress.data.DataSource({
-            // ...
-            // a mix of CustomStore and DataSource properties
-            // ...
-        })
-    };
-
-    ko.applyBindings(viewModel);
 
 ##### Vue
 
@@ -213,7 +156,7 @@ If your data source supports CRUD operations, implement the [insert](/api-refere
         // ...
     });
 
-    class App extends React.Component {
+    function App() {
         // ...
     }
     export default App;

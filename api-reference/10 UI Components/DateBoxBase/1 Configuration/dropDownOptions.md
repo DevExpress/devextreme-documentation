@@ -1,5 +1,5 @@
 ---
-id: dxDateBox.Options.dropDownOptions
+id: DateBoxBase.Options.dropDownOptions
 type: dxPopup_Options
 ---
 ---

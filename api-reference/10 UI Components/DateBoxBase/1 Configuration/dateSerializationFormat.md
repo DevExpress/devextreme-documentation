@@ -1,5 +1,5 @@
 ---
-id: dxDateBox.Options.dateSerializationFormat
+id: DateBoxBase.Options.dateSerializationFormat
 type: String
 default: undefined
 ---

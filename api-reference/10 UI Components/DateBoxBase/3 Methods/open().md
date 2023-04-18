@@ -1,5 +1,5 @@
 ---
-id: dxDateBox.open()
+id: DateBoxBase.open()
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxDateBox.Options.cancelButtonText
+id: DateBoxBase.Options.cancelButtonText
 type: String
 default: 'Cancel'
 ---

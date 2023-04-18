@@ -5,7 +5,6 @@ default: 'OK'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The text displayed on the Apply button.
 
 ---
-<!-- Description goes here -->

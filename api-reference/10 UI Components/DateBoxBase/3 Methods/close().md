@@ -1,5 +1,5 @@
 ---
-id: dxDateBox.close()
+id: DateBoxBase.close()
 ---
 ---
 ##### shortDescription

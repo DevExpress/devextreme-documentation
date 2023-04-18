@@ -1,5 +1,5 @@
 ---
-id: dxDateBox.Options.todayButtonText
+id: DateBoxBase.Options.todayButtonText
 type: String
 default: 'Today'
 ---
@@ -8,4 +8,3 @@ default: 'Today'
 The text displayed on the Today button.
 
 ---
-<!-- Description goes here -->

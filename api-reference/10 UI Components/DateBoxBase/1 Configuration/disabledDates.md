@@ -1,17 +1,17 @@
 ---
-id: dxDateBox.Options.disabledDates
+id: DateBoxBase.Options.disabledDates
 type: Array<Date> | function(data)
 default: null
 ---
 ---
 ##### shortDescription
-Specifies dates that users cannot select. Applies only if [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') is *"calendar"*.
+Specifies dates that users cannot select. Applies only if [pickerType]({basewidgetpath}/Configuration/#pickerType) is *"calendar"*.
 
 ##### param(data): Object
 Information about the checked date.
 
 ##### field(data.component): dxDateBox
-The UI component's [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#instance').
+The UI component's [instance]({basewidgetpath}/Methods/#instance).
 
 ##### field(data.date): Date
 The currently checked date.
@@ -33,9 +33,9 @@ This property accepts an array of dates:
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             disabledDates: [ 
-                new Date("07/1/2017"),  
-                new Date("07/2/2017"), 
-                new Date("07/3/2017") 
+                new Date("07/1/2023"),  
+                new Date("07/2/2023"), 
+                new Date("07/3/2023") 
             ]
         });
     });
@@ -57,9 +57,9 @@ This property accepts an array of dates:
     })
     export class AppComponent {
         disabledDates: Date[] = [ 
-            new Date("07/1/2017"),  
-            new Date("07/2/2017"), 
-            new Date("07/3/2017") 
+            new Date("07/1/2023"),  
+            new Date("07/2/2023"), 
+            new Date("07/3/2023") 
         ];
     }
 
@@ -104,9 +104,9 @@ This property accepts an array of dates:
         data() {
             return {
                 disabledDates: [ 
-                    new Date("07/1/2017"),  
-                    new Date("07/2/2017"), 
-                    new Date("07/3/2017") 
+                    new Date("07/1/2023"),  
+                    new Date("07/2/2023"), 
+                    new Date("07/3/2023") 
                 ]
             }
         }
@@ -125,9 +125,9 @@ This property accepts an array of dates:
     class App extends React.Component {
         constructor() {
             this.disabledDates = [ 
-                new Date("07/1/2017"),  
-                new Date("07/2/2017"), 
-                new Date("07/3/2017") 
+                new Date("07/1/2023"),  
+                new Date("07/2/2023"), 
+                new Date("07/3/2023") 
             ];
         }
         render() {
@@ -246,25 +246,26 @@ Alternatively, pass a function to **disabledDates**. This function should define
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        disableDates(args) {
+    const App = () => {
+        const disableDates = useCallback((args) => { 
             const dayOfWeek = args.date.getDay();
             const month = args.date.getMonth();
             const isWeekend = args.view === "month" && (dayOfWeek === 0 || dayOfWeek === 6 );
             const isMarch = (args.view === "year" || args.view === "month") && month === 2;
 
             return isWeekend || isMarch;
-        }
+        }, []);
+            
         render() {
             return (
                 <{WidgetName} ...
-                    disabledDates={this.disableDates} 
+                    disabledDates={disableDates} 
                 />
             );
         }

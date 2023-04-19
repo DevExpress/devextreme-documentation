@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows users to simultaneously select all items.
 
 ---
-<!-- Description goes here -->

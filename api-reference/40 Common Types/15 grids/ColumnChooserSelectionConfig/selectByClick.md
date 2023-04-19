@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether or not an item becomes selected if a user clicks the item's label.
 
 ---
-<!-- Description goes here -->

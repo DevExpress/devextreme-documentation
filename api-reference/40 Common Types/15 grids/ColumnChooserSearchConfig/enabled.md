@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether searching is enabled in the column chooser.
 
 ---
-<!-- Description goes here -->

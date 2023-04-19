@@ -6,7 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column chooser's search.
 
 ---
-<!-- Description goes here -->

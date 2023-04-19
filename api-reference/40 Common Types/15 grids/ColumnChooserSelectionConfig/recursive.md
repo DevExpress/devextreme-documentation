@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether selection is recursive.
 
 ---
-<!-- Description goes here -->

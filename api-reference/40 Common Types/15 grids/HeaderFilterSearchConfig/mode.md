@@ -5,7 +5,7 @@ default: 'contains'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a comparison operation used to search header filter values.
 
 ---
 <!-- Description goes here -->

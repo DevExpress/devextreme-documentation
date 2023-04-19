@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column chooser.
 
 ---
 <!-- Description goes here -->

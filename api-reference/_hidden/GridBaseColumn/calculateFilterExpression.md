@@ -51,7 +51,7 @@ The default *"between"* implementation is inclusive (filter results include the 
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             columns: [{
-                calculateFilterExpression: function (Column, filterValue, selectedFilterOperation, target) {
+                calculateFilterExpression: function (filterValue, selectedFilterOperation, target) {
                     // Override implementation for the "between" filter operation
                     if (selectedFilterOperation === "between" && $.isArray(filterValue)) {
                         const filterExpression = [
@@ -75,6 +75,7 @@ The default *"between"* implementation is inclusive (filter results include the 
 
     <!--TypeScript-->
     import { Dx{WidgetName}Module } from "devextreme-angular";
+    import { Column } from 'devextreme/ui/data_grid';
     // ...
     export class AppComponent {
         calculateFilterExpression (this: Column, filterValue, selectedFilterOperation, target) {
@@ -133,7 +134,7 @@ The default *"between"* implementation is inclusive (filter results include the 
         },
         data() {
             return {
-                calculateFilterExpression (this: Column, filterValue, selectedFilterOperation, target) {
+                calculateFilterExpression (filterValue, selectedFilterOperation, target) {
                     // Override implementation for the "between" filter operation
                     if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
                         const filterExpression = [
@@ -163,7 +164,7 @@ The default *"between"* implementation is inclusive (filter results include the 
         Column
     } from 'devextreme-react/{widget-name}';
 
-    function calculateFilterExpression (this: Column, filterValue, selectedFilterOperation, target) {
+    function calculateFilterExpression (filterValue, selectedFilterOperation, target) {
         // Override implementation for the "between" filter operation
         if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
             const filterExpression = [

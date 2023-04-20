@@ -11,7 +11,7 @@ You can specify a custom width and height for the component:
     </tr>
     <tr>
         <td>Assign values to the <b>size</b> object's <b>height</b> and <b>width</b> properties or specify a container for the component.</td>
-        <td>Specify a container for the component. The component occupies the container area.</td>
+        <td>Specify a container for the component. The component occupies the container area on initialization. If a container's size changes, the component size do not change. If you want to update the size, call the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSparkline/Methods/#render">render</a> method.</td>
     </tr>
 </table>
 

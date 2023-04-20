@@ -1,0 +1,1 @@
+After the UI component's container is resized, call the **render()** method to request redrawing.

@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsConstantLineStyle
 isType: 
+module: viz/chart
+export: dxChartCommonAxisSettingsConstantLineStyle
 ---
 ---
 ##### shortDescription

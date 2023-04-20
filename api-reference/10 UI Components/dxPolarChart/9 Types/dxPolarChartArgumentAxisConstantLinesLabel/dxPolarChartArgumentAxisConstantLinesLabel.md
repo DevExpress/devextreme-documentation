@@ -1,6 +1,8 @@
 ---
 uid: viz/polar_chart:dxPolarChartArgumentAxisConstantLinesLabel
 isType: 
+module: viz/polar_chart
+export: dxPolarChartArgumentAxisConstantLinesLabel
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 uid: viz/chart_components/base_chart:BaseChartAdaptiveLayout
 isType: 
+module: viz/chart_components/base_chart
+export: BaseChartAdaptiveLayout
 ---
 ---
 ##### shortDescription

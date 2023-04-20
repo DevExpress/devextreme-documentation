@@ -1,7 +1,8 @@
 ---
-notUsedInTheme: 
 isType: 
 uid: viz/polar_chart:dxPolarChartArgumentAxisConstantLines
+module: viz/polar_chart
+export: dxPolarChartArgumentAxisConstantLines
 ---
 ---
 ##### shortDescription

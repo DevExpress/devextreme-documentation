@@ -1,6 +1,8 @@
 ---
 uid: ui/toast:dxToastAnimation
 isType: 
+module: ui/toast
+export: dxToastAnimation
 ---
 ---
 ##### shortDescription

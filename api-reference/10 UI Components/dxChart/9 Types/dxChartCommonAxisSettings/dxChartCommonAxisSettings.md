@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettings
 isType: 
+module: viz/chart
+export: dxChartCommonAxisSettings
 ---
 ---
 ##### shortDescription

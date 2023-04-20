@@ -1,6 +1,8 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettingsMinorTick
 isType: 
+module: viz/polar_chart
+export: dxPolarChartCommonAxisSettingsMinorTick
 ---
 ---
 ##### shortDescription

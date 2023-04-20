@@ -1,6 +1,8 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle
 isType: 
+module: viz/core/base_widget
+export: BaseWidgetTitle
 ---
 ---
 ##### shortDescription

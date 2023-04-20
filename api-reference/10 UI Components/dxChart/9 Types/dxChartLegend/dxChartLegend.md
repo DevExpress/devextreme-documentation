@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartLegend
 isType: 
+module: viz/chart
+export: dxChartLegend
 ---
 ---
 ##### shortDescription

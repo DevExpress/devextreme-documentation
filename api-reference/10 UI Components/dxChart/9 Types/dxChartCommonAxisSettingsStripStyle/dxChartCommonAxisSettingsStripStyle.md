@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartCommonAxisSettingsStripStyle
 isType: 
+module: viz/chart
+export: dxChartCommonAxisSettingsStripStyle
 ---
 ---
 ##### shortDescription

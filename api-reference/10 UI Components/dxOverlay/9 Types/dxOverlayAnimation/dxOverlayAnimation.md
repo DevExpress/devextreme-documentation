@@ -1,6 +1,8 @@
 ---
 uid: ui/overlay:dxOverlayAnimation
 isType: 
+module: ui/overlay
+export: dxOverlayAnimation
 ---
 ---
 ##### shortDescription

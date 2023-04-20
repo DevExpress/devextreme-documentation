@@ -1,7 +1,8 @@
 ---
-notUsedInTheme: 
 isType: 
 uid: viz/polar_chart:dxPolarChartValueAxisStrips
+module: viz/polar_chart
+export: dxPolarChartValueAxisStrips
 ---
 ---
 ##### shortDescription

@@ -1,8 +1,8 @@
 ---
-hideDefaults: true
-inheritAll: 
 isType: 
 uid: viz/polar_chart:dxPolarChartCommonSeriesSettings
+module: viz/polar_chart
+export: dxPolarChartCommonSeriesSettings
 ---
 ---
 ##### shortDescription

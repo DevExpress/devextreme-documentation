@@ -51,7 +51,7 @@ The default *"between"* implementation is inclusive (filter results include the 
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             columns: [{
-                calculateFilterExpression: function (filterValue, selectedFilterOperation) {
+                calculateFilterExpression: function (Column, filterValue, selectedFilterOperation, target) {
                     // Override implementation for the "between" filter operation
                     if (selectedFilterOperation === "between" && $.isArray(filterValue)) {
                         const filterExpression = [
@@ -62,6 +62,8 @@ The default *"between"* implementation is inclusive (filter results include the 
                         return filterExpression;
                     }
                     // Invoke the default implementation for other filter operations
+                    if(!this.defaultCalculateFilterExpression) 
+                        return [this.dataField, 'contains', filterValue];  
                     return this.defaultCalculateFilterExpression.apply(this, arguments);
                 },
                 // ...
@@ -75,19 +77,20 @@ The default *"between"* implementation is inclusive (filter results include the 
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
-        calculateFilterExpression (filterValue, selectedFilterOperation) {
-            const column = this as any;
+        calculateFilterExpression (this: Column, filterValue, selectedFilterOperation, target) {
             // Override implementation for the "between" filter operation
             if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
                 const filterExpression = [
-                    [column.dataField, ">", filterValue[0]], 
+                    [this.dataField, ">", filterValue[0]], 
                     "and", 
-                    [column.dataField, "<", filterValue[1]]
+                    [this.dataField, "<", filterValue[1]]
                 ];
                 return filterExpression;
             }
             // Invoke the default implementation for other filter operations
-            return column.defaultCalculateFilterExpression.apply(column, arguments);
+            if(!this.defaultCalculateFilterExpression) 
+                return [this.dataField, 'contains', filterValue];  
+            return this.defaultCalculateFilterExpression.apply(this, arguments);
         }
     }
     @NgModule({
@@ -130,19 +133,20 @@ The default *"between"* implementation is inclusive (filter results include the 
         },
         data() {
             return {
-                calculateFilterExpression (filterValue, selectedFilterOperation) {
-                    const column = this;
+                calculateFilterExpression (this: Column, filterValue, selectedFilterOperation, target) {
                     // Override implementation for the "between" filter operation
                     if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
                         const filterExpression = [
-                            [column.dataField, ">", filterValue[0]], 
+                            [this.dataField, ">", filterValue[0]], 
                             "and", 
-                            [column.dataField, "<", filterValue[1]]
+                            [this.dataField, "<", filterValue[1]]
                         ];
                         return filterExpression;
                     }
                     // Invoke the default implementation for other filter operations
-                    return column.defaultCalculateFilterExpression.apply(column, arguments);
+                    if(!this.defaultCalculateFilterExpression) 
+                        return [this.dataField, 'contains', filterValue];  
+                    return this.defaultCalculateFilterExpression.apply(this, arguments);
                 }
             }
         }
@@ -159,7 +163,7 @@ The default *"between"* implementation is inclusive (filter results include the 
         Column
     } from 'devextreme-react/{widget-name}';
 
-    function calculateFilterExpression (filterValue, selectedFilterOperation) {
+    function calculateFilterExpression (this: Column, filterValue, selectedFilterOperation, target) {
         // Override implementation for the "between" filter operation
         if (selectedFilterOperation === "between" && Array.isArray(filterValue)) {
             const filterExpression = [
@@ -170,6 +174,8 @@ The default *"between"* implementation is inclusive (filter results include the 
             return filterExpression;
         }
         // Invoke the default implementation for other filter operations
+        if(!this.defaultCalculateFilterExpression) 
+            return [this.dataField, 'contains', filterValue];  
         return this.defaultCalculateFilterExpression.apply(this, arguments);
     }
 

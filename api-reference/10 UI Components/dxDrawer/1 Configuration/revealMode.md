@@ -16,6 +16,8 @@ The drawer slides in. The drawer and its content are animated.
 * *"expand"*    
 The drawer expands from the closed position. The drawer's width is animated; its content is not.
 
+When you change the Drawer's reveal mode, the component needs to perform recalculations for animation. As a result, the [template](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template) is rerendered which can increase loading time.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/HorizontalOpening/"
 }

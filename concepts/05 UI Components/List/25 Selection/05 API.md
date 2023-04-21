@@ -139,7 +139,7 @@ To configure the initial selection or access the keys of selected items, use the
 
 ---
 
-You can also call the [selectItem](/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex) method to select List item by index. To unselect an item, call [unselectItem](/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex).
+You can also call the [selectItem](/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex) method to select a List item by index. To unselect an item, call [unselectItem](/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex).
 
 [note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/dxList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
 

@@ -1,4 +1,4 @@
-Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection to select the item or cancel its selection:
+To configure the initial selection or access the keys of selected items, use the [selectedItemKeys](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection. Add or remove an item's key from this collection to select the item or cancel its selection:
 
 ---
 ##### jQuery
@@ -140,6 +140,8 @@ Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%2
 ---
 
 [note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/dxList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
+
+You can also implement the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged) event handler to perform an action when users select items. To see an example, refer to the following demo: [List Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/).
 
 #####See Also#####
 #include common-link-callmethods

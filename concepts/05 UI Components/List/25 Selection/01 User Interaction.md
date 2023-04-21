@@ -1,4 +1,4 @@
-In the List UI component, selection is disabled by default. To enable it, choose one of selection modes using the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') property.
+To enable selection in the List component, use the [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') property to specify one of selection modes.
 
 ---
 ##### jQuery
@@ -68,7 +68,9 @@ In the List UI component, selection is disabled by default. To enable it, choose
 
 ---
 
-To select a List item, an end user simply clicks or taps it. Selected items become shaded. If you want to indicate selected items more manifestly, set the [showSelectionControls](/api-reference/10%20UI%20Components/dxList/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#showSelectionControls') property to **true**. This setting adds a check box to each item on the List. Also, make this setting if you use the *"all"* **selectionMode**. Otherwise, the *"Select All"* check box will be missing.
+To select a List item, an end user clicks or taps it. Selected items become shaded. If you want to indicate selected items, set the [showSelectionControls](/api-reference/10%20UI%20Components/dxList/1%20Configuration/showSelectionControls.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#showSelectionControls') property to `true`. This setting adds a check box to each item on the List. Enable this option if you use the *"all"* selection mode. Otherwise, the *"Select All"* check box will be missing.
+
+If you want users to select List items only by checking checkboxes, assign `false` to the [selectByClick](/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectByClick) property.
 
 ---
 ##### jQuery

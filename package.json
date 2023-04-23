@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "devextreme-internal-tools": "^10.0.0-beta.6",
-	"ts-node": "^10.9.1"
+    "ts-node": "^10.9.1"
   },
   "scripts": {
     "generate-content-map": "dx-tools generate-content-map --docs-root ./ --version 23.1 --syntaxdata-path ./metadata/syntax-data.json",
@@ -21,6 +21,6 @@
     "validate-docs": "dx-tools validate-docs --docs-root ./",
     "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta ./metadata/modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
     "validate-links": "dx-tools update-links --docs-root ./ --validation true",
-    "change-name": "ts-node ./tools/updateFolder.ts"
+    "rename-topics": "ts-node ./tools/updateFolder.ts"
   }
 }

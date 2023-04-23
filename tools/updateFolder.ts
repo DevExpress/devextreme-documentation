@@ -3,8 +3,14 @@ import * as path from 'path';
 
 function updateFileContent(filePath: string, oldFolderName: string, newFolderName: string): void {
   const content = fs.readFileSync(filePath, 'utf8');
+
   const idRegExp = new RegExp(`(id: ${oldFolderName})(.*)(\n)`, 'g');
-  const updatedContent = content.replace(idRegExp, `id: ${newFolderName}$2$3`);
+  const uidRegExp = new RegExp(`(uid: ${oldFolderName})(.*)(\n)`, 'g');
+
+  const updatedContent = content
+    .replace(idRegExp, `id: ${newFolderName}$2$3`)
+    .replace(uidRegExp, `uid: ${newFolderName}$2$3`);;
+
   fs.writeFileSync(filePath, updatedContent, 'utf8');
 }
 

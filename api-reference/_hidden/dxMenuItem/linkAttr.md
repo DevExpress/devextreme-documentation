@@ -14,7 +14,7 @@ You can assign all attributes described in the <a href="https://developer.mozill
 
 - If you assign a `target: '_blank'` attribute, add a `rel: 'noopener'` attribute to avoid <a href="https://developer.chrome.com/en/docs/lighthouse/best-practices/external-anchors-use-rel-noopener/" target="_blank">security issues</a>.
 
-- When an item receives focus, screen readers should announce a description of the link. Add an `aria-label` attribute with description to inform users.
+- When an item receives focus, screen readers should announce a description of the link. Add an `aria-label` attribute with the description to inform users.
 
 [/note]
 

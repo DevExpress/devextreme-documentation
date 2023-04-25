@@ -5,11 +5,8 @@ function updateFileContent(filePath: string, oldFolderName: string, newFolderNam
   const content = fs.readFileSync(filePath, 'utf8');
 
   const idRegExp = new RegExp(`(id: ${oldFolderName})(.*)(\n)`, 'g');
-  const uidRegExp = new RegExp(`(uid: ${oldFolderName})(.*)(\n)`, 'g');
 
-  const updatedContent = content
-    .replace(idRegExp, `id: ${newFolderName}$2$3`)
-    .replace(uidRegExp, `uid: ${newFolderName}$2$3`);;
+  const updatedContent = content.replace(idRegExp, `id: ${newFolderName}$2$3`);
 
   fs.writeFileSync(filePath, updatedContent, 'utf8');
 }

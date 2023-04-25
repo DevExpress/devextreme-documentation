@@ -89,9 +89,35 @@ To assign link attributes, specify the [linkAttr](/Documentation/ApiReference/UI
 
 ---
 
+##### jQuery
+
+If you specify a [template](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#template) for an item, do not specify this property. Define a link in the markup instead.
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#menu").dxMenu({
+            items: [
+                {
+                    template: '<a href="http://js.devexpress.com" target="_blank">Home</a>'
+                }
+            ]
+        });
+    });
+
 ##### Angular
 
-[note] If you use <a href="https://angular.io/guide/routing-overview" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler to process clicks on links.
+If you specify a [template](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#template) for an item, do not specify this property. Define a link in the markup instead. 
+
+    <!-- tab: app.component.html -->
+    <dx-menu>
+        <dxi-item>
+            <div *dxTemplate>
+                <a href="http://js.devexpress.com" target="_blank">Home</a>
+            </div>
+        </dxi-item>  
+    </dx-menu>
+
+If you use <a href="https://angular.io/guide/routing-overview" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler to process clicks on links.
 
     <!-- tab: app.component.html -->
     <dx-menu>
@@ -102,7 +128,32 @@ To assign link attributes, specify the [linkAttr](/Documentation/ApiReference/UI
 
 ##### Vue
 
-[note] If you use <a href="https://vuejs.org/guide/scaling-up/routing.html" target="_blank">routing</a> for your project, specify `<router-link>` links inside items. Alternatively, you can implement the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler to process clicks on links.
+If you specify a [template](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#template) for an item, do not specify this property. Define a link in the markup instead. 
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxMenu>
+            <DxItem><a href="http://js.devexpress.com" target="_blank">Home</a></DxItem>
+        </DxMenu>
+    </template>
+
+    <script>
+        import DxMenu, { DxItem } from 'devextreme-vue/menu';
+
+        export default {
+            components: {
+                DxMenu,
+                DxItem
+            },
+            data() {
+                return {
+                    // ...
+                };
+            }
+        }
+    </script>
+
+If you use <a href="https://vuejs.org/guide/scaling-up/routing.html" target="_blank">routing</a> for your project, specify `<router-link>` links inside items. Alternatively, you can implement the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler to process clicks on links.
 
     <!-- tab: App.vue -->
     <template>
@@ -131,7 +182,27 @@ To assign link attributes, specify the [linkAttr](/Documentation/ApiReference/UI
 
 ##### React
 
-[note] If you use <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">routing</a> for your project, specify `<Link>` links inside items. Alternatively, you can implement the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler to process clicks on links.
+If you specify a [rendering function](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#render) or a [component](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#component) for an item, do not specify this property. Define a link in the markup instead. 
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Menu, { Item } from 'devextreme-react/menu';
+
+    const renderLink = () => {
+        return <a href="http://js.devexpress.com" target="_blank">Home</a>;
+    }
+
+    function App() {
+        return (
+            <Menu>
+                <Item render={renderLink} />
+            </Menu>
+        );
+    }
+
+    export default App;
+
+If you use <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">routing</a> for your project, specify `<Link>` links inside items. Alternatively, you can implement the [onItemClick](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick) event handler to process clicks on links.
 
     <!-- tab: App.js -->
     import React from 'react';

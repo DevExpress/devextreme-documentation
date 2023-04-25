@@ -8,11 +8,17 @@ default: {}
 Specifies link attributes for the [url](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#url) option.
 
 ---
-You can assign all attributes described in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attributes" target="_blank">Attributes</a> article except for the `href` attribute. Use the [url](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#url) property to specify a link instead.
+You can assign all attributes described in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attributes" target="_blank">Attributes</a> article except for the following:
+
+- `href`    
+Use the [url](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#url) property to specify a link instead.
+
+- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a>    
+You can specify only `id`, `class` and <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes" target="_blank">aria-*</a> global attributes.
 
 [note]
 
-- If you assign a `target: '_blank'` attribute, add a `rel: 'noopener'` attribute to avoid <a href="https://developer.chrome.com/en/docs/lighthouse/best-practices/external-anchors-use-rel-noopener/" target="_blank">security issues</a>.
+- If you assign a `target: '_blank'` attribute, add a `rel: 'noopener'` or `rel: 'noreferrer'` attribute to avoid <a href="https://developer.chrome.com/en/docs/lighthouse/best-practices/external-anchors-use-rel-noopener/" target="_blank">security issues</a>.
 
 - When an item receives focus, screen readers should announce a description of the link. Add an `aria-label` attribute with the description to inform users.
 

@@ -10,6 +10,6 @@ A Promise that is resolved after loading is completed and rejected after loading
 #include ref-promisedistinction
 
 ---
-DataSource reloads data starting from the current page index. To reload all data, set [pageIndex](/Documentation/ApiReference/Data_Layer/DataSource/Methods/#pageIndexnewIndex) to `0` before you call **reload()**.
+DataSource reloads data starting from the current page index. To reload all data, set [pageIndex](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#pageIndexnewIndex') to `0` before you call **reload()**.
 
 The Promise returned from this method is extended with the **operationId** field which you can use to cancel the invoked operation. See [cancel(operationId)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/cancel(operationId).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#canceloperationId') for details.

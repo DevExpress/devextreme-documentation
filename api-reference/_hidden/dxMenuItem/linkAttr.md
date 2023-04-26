@@ -14,7 +14,7 @@ You can assign all attributes described in the <a href="https://developer.mozill
 Use the [url](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/items/#url) property to specify a link instead.
 
 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a>    
-You can specify only `id`, `class` and <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes" target="_blank">aria-*</a> global attributes.
+You can specify only `id`, `class`, and <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes" target="_blank">aria-*</a> global attributes.
 
 [note]
 

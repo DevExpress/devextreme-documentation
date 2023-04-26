@@ -8,7 +8,7 @@ Specifies a web address to be opened when a user clicks on an item.
 
 ---
 
-The following code opens a link in the same frame an item was clicked:
+The following code opens a link in the same frame the item was clicked:
 
 ---
 ##### jQuery

@@ -17,9 +17,9 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                 search: {
                     editorOptions: { 
                         placeholder: 'Search column',
-                        mode: 'text'
+                        mode: 'text',
                         onOptionChanged: (e) => {
-                            if(e.name === "onValueChanged") {
+                            if(e.name === 'onValueChanged') {
                                 // handle the option change here
                             }
                         }
@@ -58,7 +58,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                 placeholder: 'Search column', 
                 mode: 'text',
                 onOptionChanged: (e) => {
-                    if(e.name === "onValueChanged") {
+                    if(e.name === 'onValueChanged') {
                         // handle the option change here
                     }
                 } 
@@ -125,7 +125,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
         }
         methods: {
             handleOptionChange(e) {
-                if(e.name === "onValueChanged") {
+                if(e.name === 'onValueChanged') {
                     // handle the option change here
                 }
             }
@@ -157,7 +157,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
         placeholder: 'Search column', 
         mode: 'text',
         onOptionChanged: (e) => {
-            if(e.name === "onValueChanged") {
+            if(e.name === 'onValueChanged') {
                 // handle the option change here
             }
         }
@@ -182,7 +182,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
         placeholder: 'Search column', 
         mode: 'text',
         onOptionChanged: (e) => {
-            if(e.name === "onValueChanged") {
+            if(e.name === 'onValueChanged') {
                 // handle the option change here
             }
         }

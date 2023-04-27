@@ -1,12 +1,10 @@
----
-id: PivotGridDataSource.Options.fields.headerFilter
-type: Object
----
----
-##### shortDescription
-Configures the field's header filter.
 
----
+See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/) for properties you can specify in this object.
+
+#include widgets-config-object-option-note with {
+    optionName: "editorOptions"
+}
+
 ---
 ##### jQuery
 
@@ -16,10 +14,18 @@ Configures the field's header filter.
             // ...
             fields: [{
                 // ...
-                allowFiltering: true,
                 headerFilter: {
+                    // ...
                     search: {
-                        enabled: true,
+                        editorOptions: { 
+                            placeholder: 'Search value',
+                            mode: 'text',
+                            onOptionChanged: (e) => {
+                                if(e.name === 'onValueChanged') {
+                                    // handle the option change here
+                                }
+                            }  
+                        },
                         // ...
                     }
                 }
@@ -54,11 +60,18 @@ Configures the field's header filter.
                 // ...
                 fields: [{
                     // ...
-                    allowFiltering: true,
                     headerFilter: {
                         // ...
                         search: {
-                            enabled: true,
+                            editorOptions: { 
+                                placeholder: 'Search value',
+                                mode: 'text', 
+                                onOptionChanged: (e) => {
+                                    if(e.name === 'onValueChanged') {
+                                        // handle the option change here
+                                    }
+                                }  
+                            },
                             // ...
                         }
                     }
@@ -105,11 +118,18 @@ Configures the field's header filter.
         // ...
         fields: [{
             // ...
-            allowFiltering: true,
             headerFilter: {
                 // ...
                 search: {
-                    enabled: true,
+                    editorOptions: { 
+                        placeholder: 'Search value',
+                        mode: 'text', 
+                        onOptionChanged: (e) => {
+                            if(e.name === 'onValueChanged') {
+                                // handle the option change here
+                            }
+                        }  
+                    },
                     // ...
                 }
             }
@@ -143,19 +163,24 @@ Configures the field's header filter.
         // ...
         fields: [{
             // ...
-            allowFiltering: true,
             headerFilter: {
                 // ...
                 search: {
-                    enabled: true,
+                    editorOptions: { 
+                        placeholder: 'Search value',
+                        mode: 'text', 
+                        onOptionChanged: (e) => {
+                            if(e.name === 'onValueChanged') {
+                                // handle the option change here
+                            }
+                        }     
+                    },
                     // ...
                 }
             }
         }]
     });
     </script>
-
-##### React
 
     <!-- tab: App.js -->
     import React from 'react';  
@@ -168,11 +193,18 @@ Configures the field's header filter.
         // ...
         fields: [{
             // ...
-            allowFiltering: true,
             headerFilter: {
                 // ...
                 search: {
-                    enabled: true,
+                    editorOptions: { 
+                        placeholder: 'Search value',
+                        mode: 'text', 
+                        onOptionChanged: (e) => {
+                            if(e.name === 'onValueChanged') {
+                                // handle the option change here
+                            }
+                        }  
+                    },
                     // ...
                 }
             }
@@ -189,6 +221,6 @@ Configures the field's header filter.
 
 ---
 
-#####See Also#####
-- **fields[]**.[allowFiltering](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowFiltering.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowFiltering')
-- PivotGrid.[headerFilter](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/headerFilter '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/')
+#include common-demobutton with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/UseHeaderFilter/"      
+}

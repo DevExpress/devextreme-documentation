@@ -5,7 +5,8 @@ inheritsType: HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the header filter's search.
 
 ---
-<!-- Description goes here -->
+
+#include column-header-filter-code

@@ -9,4 +9,3 @@ type: Object
 Configures the column chooser.
 
 ---
-<!-- Description goes here -->

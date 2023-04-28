@@ -208,7 +208,3 @@ Configures the header filter's search.
     } 
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/RemoteVirtualScrolling/"
-}

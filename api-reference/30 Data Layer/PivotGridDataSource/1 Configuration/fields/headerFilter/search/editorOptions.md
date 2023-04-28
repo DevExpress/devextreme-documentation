@@ -20,10 +20,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                         editorOptions: { 
                             placeholder: 'Search value',
                             mode: 'text',
-                            onOptionChanged: (e) => {
-                                if(e.name === 'onValueChanged') {
-                                    // handle the option change here
-                                }
+                            onValueChanged: (e) => {
+                                // handle the value change here
                             }  
                         },
                         // ...
@@ -66,10 +64,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                             editorOptions: { 
                                 placeholder: 'Search value',
                                 mode: 'text', 
-                                onOptionChanged: (e) => {
-                                    if(e.name === 'onValueChanged') {
-                                        // handle the option change here
-                                    }
+                                onValueChanged: (e) => {
+                                    // handle the value change here
                                 }  
                             },
                             // ...
@@ -124,10 +120,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                     editorOptions: { 
                         placeholder: 'Search value',
                         mode: 'text', 
-                        onOptionChanged: (e) => {
-                            if(e.name === 'onValueChanged') {
-                                // handle the option change here
-                            }
+                        onValueChanged: (e) => {
+                            // handle the value change here
                         }  
                     },
                     // ...
@@ -169,10 +163,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                     editorOptions: { 
                         placeholder: 'Search value',
                         mode: 'text', 
-                        onOptionChanged: (e) => {
-                            if(e.name === 'onValueChanged') {
-                                // handle the option change here
-                            }
+                        onValueChanged: (e) => {
+                            // handle the value change here
                         }     
                     },
                     // ...
@@ -199,10 +191,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                     editorOptions: { 
                         placeholder: 'Search value',
                         mode: 'text', 
-                        onOptionChanged: (e) => {
-                            if(e.name === 'onValueChanged') {
-                                // handle the option change here
-                            }
+                        onValueChanged: (e) => {
+                            // handle the value change here
                         }  
                     },
                     // ...
@@ -220,7 +210,3 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     } 
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/UseHeaderFilter/"      
-}

@@ -14,11 +14,3 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     optionName: "editorOptions"
 }
 
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/HeaderFilter/",
-    name: "DataGrid"
-}
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/HeaderFilter/",
-    name: "TreeList"
-}

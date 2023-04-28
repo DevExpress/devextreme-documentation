@@ -6,7 +6,3 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
 }
 
 #include header-filter-editor-options-code
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/HeaderFilter/"
-}

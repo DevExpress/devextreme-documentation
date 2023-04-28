@@ -5,4 +5,4 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     optionName: "editorOptions"
 }
 
-#include column-header-filter-code
+#include column-header-filter-editor-options-code

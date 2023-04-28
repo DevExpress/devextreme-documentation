@@ -1,13 +1,15 @@
 ---
-id: GridBase.Options.columnChooser.search
-type: ColumnChooserSearchConfig
-inheritsType: ColumnChooserSearchConfig
+id: GridBase.Options.columnChooser.position
+type: PositionConfig
+default: undefined
 ---
 ---
 ##### shortDescription
-Configures the column chooser's search.
+Configures the column chooser's position.
 
 ---
+You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/my/), [at](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/at/), and [of](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of) properties to position a column chooser. 
+
 ---
 ##### jQuery
 
@@ -17,14 +19,11 @@ Configures the column chooser's search.
             // ...
             columnChooser: {
                 // ...
-                search: {
-                    editorOptions: { 
-                        placeholder: 'Search column',
-                        mode: 'text' 
-                    },
-                    enabled: true,
-                    timeout: 800      
-                },
+                position: {
+                    my: "left",
+                    at: "right",
+                    of: ".dx-datagrid-column-chooser-button"
+                }
             },
         })
     });
@@ -34,11 +33,11 @@ Configures the column chooser's search.
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
         <dxo-column-chooser ... >
-            <dxo-search
-                [editorOptions]="searchEditorOptions"
-                [enabled]="true"
-                [timeout]="800"
-            ></dxo-search>
+            <dxo-position
+                my="left"
+                at="right"
+                of=".dx-datagrid-column-chooser-button">
+            </dxo-position>
         </dxo-column-chooser>
     </dx-{widget-name}>
 
@@ -51,17 +50,7 @@ Configures the column chooser's search.
         styleUrls: ['./app.component.css'] 
     }) 
 
-    export class AppComponent {
-        searchEditorOptions;
-        constructor() {
-            this.searchEditorOptions = { 
-                placeholder: 'Search column', 
-                mode: 'text' 
-            };
-            // ...
-        } 
-        // ...
-    }
+    export class AppComponent {}
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser'; 
@@ -89,10 +78,10 @@ Configures the column chooser's search.
     <template>
         <Dx{WidgetName} ... >
             <DxColumnChooser ... >
-                <DxColumnChooserSearch
-                    :editor-options="searchEditorOptions"
-                    :enabled="true"
-                    :timeout="800"
+                <DxPosition
+                    my="left"
+                    at="right"
+                    of=".dx-datagrid-column-chooser-button"
                 />
             </DxColumnChooser>
         </Dx{WidgetName}>
@@ -102,7 +91,7 @@ Configures the column chooser's search.
     import 'devextreme/dist/css/dx.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
-        DxColumnChooserSearch,
+        DxPosition
         // ... 
     } from 'devextreme-vue/{widget-name}';
 
@@ -110,15 +99,7 @@ Configures the column chooser's search.
         components: {
             Dx{WidgetName}, 
             DxColumnChooser, 
-            DxColumnChooserSearch,
-        },
-        data() {
-            return {
-                searchEditorOptions: { 
-                    placeholder: 'Search column', 
-                    mode: 'text' 
-                }
-            };
+            DxPosition
         }
     }
     </script>
@@ -127,10 +108,10 @@ Configures the column chooser's search.
     <template>
         <Dx{WidgetName} ... >
             <DxColumnChooser ... >
-                <DxColumnChooserSearch
-                    :editor-options="searchEditorOptions"
-                    :enabled="true"
-                    :timeout="800"
+                <DxPosition
+                    my="left"
+                    at="right"
+                    of=".dx-datagrid-column-chooser-button"
                 />
             </DxColumnChooser>
         </Dx{WidgetName}>
@@ -140,14 +121,9 @@ Configures the column chooser's search.
     import 'devextreme/dist/css/dx.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
-        DxColumnChooserSearch,
+        DxPosition
         // ... 
     } from 'devextreme-vue/{widget-name}';
-
-    const searchEditorOptions = { 
-        placeholder: 'Search column', 
-        mode: 'text' 
-    };
 
     // ...
     </script>
@@ -160,23 +136,18 @@ Configures the column chooser's search.
 
     import {WidgetName}, {
         ColumnChooser, 
-        ColumnChooserSearch, 
+        Position, 
         // ...
     } from 'devextreme-react/data-grid';
-
-    const searchEditorOptions = { 
-        placeholder: 'Search column', 
-        mode: 'text' 
-    };
 
     export default function App() { 
         return ( 
             <{WidgetName} ... > 
                 <ColumnChooser ... >
-                    <ColumnChooserSearch
-                        editorOptions={searchEditorOptions}
-                        enabled={true}
-                        timeout={800}
+                    <Position
+                        my="left"
+                        at="right"
+                        of=".dx-datagrid-column-chooser-button"
                     />
                 </ColumnChooser>
             </{WidgetName}>        

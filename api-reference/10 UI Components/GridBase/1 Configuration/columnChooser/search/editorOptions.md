@@ -18,10 +18,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                     editorOptions: { 
                         placeholder: 'Search column',
                         mode: 'text',
-                        onOptionChanged: (e) => {
-                            if(e.name === 'onValueChanged') {
-                                // handle the option change here
-                            }
+                        onValueChanged: (e) => {
+                            // handle the value change here
                         }
                     },
                     // ...    
@@ -57,10 +55,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
             this.searchEditorOptions = { 
                 placeholder: 'Search column', 
                 mode: 'text',
-                onOptionChanged: (e) => {
-                    if(e.name === 'onValueChanged') {
-                        // handle the option change here
-                    }
+                onValueChanged: (e) => {
+                    // handle the value change here
                 } 
             };
             // ...
@@ -119,15 +115,13 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                 searchEditorOptions: { 
                     placeholder: 'Search column', 
                     mode: 'text',
-                    onOptionChanged: this.handleOptionChange
+                    onValueChanged: this.handleOptionChange
                 }
             };
         }
         methods: {
             handleOptionChange(e) {
-                if(e.name === 'onValueChanged') {
-                    // handle the option change here
-                }
+                // handle the value change here
             }
         }
     }
@@ -156,10 +150,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     const searchEditorOptions = { 
         placeholder: 'Search column', 
         mode: 'text',
-        onOptionChanged: (e) => {
-            if(e.name === 'onValueChanged') {
-                // handle the option change here
-            }
+        onValueChanged: (e) => {
+            // handle the value change here
         }
     };
 
@@ -181,10 +173,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     const searchEditorOptions = { 
         placeholder: 'Search column', 
         mode: 'text',
-        onOptionChanged: (e) => {
-            if(e.name === 'onValueChanged') {
-                // handle the option change here
-            }
+        onValueChanged: (e) => {
+            // handle the value change here
         }
     };
 
@@ -202,12 +192,3 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     } 
 
 ---
-
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnChooser/",
-    name: "DataGrid"
-}
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnChooser/",
-    name: "TreeList"
-}

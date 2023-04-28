@@ -14,10 +14,8 @@
                             editorOptions: { 
                                 placeholder: 'Search city or state',
                                 mode: 'text',
-                                onOptionChanged: (e) => {
-                                    if(e.name === 'onValueChanged') {
-                                        // handle the option change here
-                                    }
+                                onValueChanged: (e) => {
+                                    // handle the value change here
                                 } 
                             },
                             // ...
@@ -58,10 +56,8 @@
             this.searchEditorOptions = { 
                 placeholder: 'Search city or state', 
                 mode: 'text',
-                onOptionChanged: (e) => {
-                    if(e.name === 'onValueChanged') {
-                        // handle the option change here
-                    }
+                onValueChanged: (e) => {
+                    // handle the value change here
                 } 
             };
             // ...
@@ -127,15 +123,13 @@
                 searchEditorOptions: { 
                     placeholder: 'Search city or state', 
                     mode: 'text',
-                    onOptionChanged: this.handleOptionChange
+                    onValueChanged: this.handleOptionChange
                 }
             };
         },
         methods: {
             handleOptionChange(e) {
-                if(e.name === 'onValueChanged') {
-                    // handle the option change here
-                }
+                // handle the value change here
             }
         }
     }
@@ -167,10 +161,8 @@
     const searchEditorOptions = { 
         placeholder: 'Search city or state', 
         mode: 'text',
-        onOptionChanged: (e) => {
-            if(e.name === 'onValueChanged') {
-                // handle the option change here
-            }
+        onValueChanged: (e) => {
+            // handle the value change here
         } 
     };
 
@@ -193,10 +185,8 @@
     const searchEditorOptions = { 
         placeholder: 'Search city or state', 
         mode: 'text',
-        onOptionChanged: (e) => {
-            if(e.name === 'onValueChanged') {
-                // handle the option change here
-            }
+        onValueChanged: (e) => {
+            // handle the value change here
         } 
     };
 

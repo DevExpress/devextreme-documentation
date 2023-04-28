@@ -127,7 +127,3 @@ You can also specify a custom pattern or gradient instead of a plain color:
     } 
 
 ---
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
-}

@@ -2,6 +2,7 @@
 id: dxGanttHeaderFilter.allowSearch
 type: Boolean
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

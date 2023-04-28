@@ -1,6 +1,8 @@
 ---
 uid: viz/polar_chart:dxPolarChartCommonAxisSettingsConstantLineStyleLabel
 isType: 
+module: viz/polar_chart
+export: dxPolarChartCommonAxisSettingsConstantLineStyleLabel
 ---
 ---
 ##### shortDescription

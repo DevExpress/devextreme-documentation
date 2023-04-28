@@ -1,6 +1,8 @@
 ---
 uid: viz/linear_gauge:dxLinearGaugeScaleLabel
 isType: 
+module: viz/linear_gauge
+export: dxLinearGaugeScaleLabel
 ---
 ---
 ##### shortDescription

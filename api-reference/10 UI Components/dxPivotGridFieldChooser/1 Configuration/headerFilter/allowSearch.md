@@ -1,7 +1,8 @@
 ---
 id: dxPivotGridFieldChooser.Options.headerFilter.allowSearch
 type: Boolean
-default: undefined
+default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

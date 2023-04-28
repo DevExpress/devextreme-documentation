@@ -2,6 +2,7 @@
 id: dxPivotGrid.Options.headerFilter.allowSearch
 type: Boolean
 default: false
+deprecated: 
 ---
 ---
 ##### shortDescription

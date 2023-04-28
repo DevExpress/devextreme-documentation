@@ -1,6 +1,8 @@
 ---
 uid: common/grids:HeaderFilterTexts
 isType: 
+module: common/grids
+export: HeaderFilterTexts
 ---
 ---
 ##### shortDescription

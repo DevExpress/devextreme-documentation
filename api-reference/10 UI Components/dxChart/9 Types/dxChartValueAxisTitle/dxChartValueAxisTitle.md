@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartValueAxisTitle
 isType: 
+module: viz/chart
+export: dxChartValueAxisTitle
 ---
 ---
 ##### shortDescription

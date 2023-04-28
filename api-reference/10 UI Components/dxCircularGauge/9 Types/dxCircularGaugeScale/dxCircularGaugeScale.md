@@ -1,6 +1,8 @@
 ---
 uid: viz/circular_gauge:dxCircularGaugeScale
 isType: 
+module: viz/circular_gauge
+export: dxCircularGaugeScale
 ---
 ---
 ##### shortDescription

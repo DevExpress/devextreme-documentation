@@ -1,6 +1,8 @@
 ---
 uid: ui/data_grid:Summary
 isType: 
+module: ui/data_grid
+export: Summary
 ---
 ---
 ##### shortDescription

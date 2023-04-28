@@ -754,6 +754,33 @@
     "collectionWidgetOptions.selectOnFocus": {
       "vue": "select-on-focus"
     },
+    "columnChooserSearchConfig": {
+      "angular": "dxo-column-chooser-search-config",
+      "react": "ColumnChooserSearchConfig",
+      "vue": "DxColumnChooserSearchConfig"
+    },
+    "columnChooserSearchConfig.editorOptions": {
+      "vue": "editor-options"
+    },
+    "columnChooserSelectionConfig": {
+      "angular": "dxo-column-chooser-selection-config",
+      "react": "ColumnChooserSelectionConfig",
+      "vue": "DxColumnChooserSelectionConfig"
+    },
+    "columnChooserSelectionConfig.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "columnChooserSelectionConfig.selectByClick": {
+      "vue": "select-by-click"
+    },
+    "columnHeaderFilterSearchConfig": {
+      "angular": "dxo-column-header-filter-search-config",
+      "react": "ColumnHeaderFilterSearchConfig",
+      "vue": "DxColumnHeaderFilterSearchConfig"
+    },
+    "columnHeaderFilterSearchConfig.searchExpr": {
+      "vue": "search-expr"
+    },
     "commonIndicator.arrowLength": {
       "vue": "arrow-length"
     },
@@ -5880,6 +5907,14 @@
     "dxGanttHeaderFilter.allowSearch": {
       "vue": "allow-search"
     },
+    "dxGanttHeaderFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "dxGanttHeaderFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
     "dxGanttHeaderFilter.searchTimeout": {
       "vue": "search-timeout"
     },
@@ -7553,6 +7588,14 @@
     "dxPivotGridFieldChooserOptions.headerFilter.allowSearch": {
       "vue": "allow-search"
     },
+    "dxPivotGridFieldChooserOptions.headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "dxPivotGridFieldChooserOptions.headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
     "dxPivotGridFieldChooserOptions.headerFilter.searchTimeout": {
       "vue": "search-timeout"
     },
@@ -7706,6 +7749,14 @@
     },
     "dxPivotGridOptions.headerFilter.allowSearch": {
       "vue": "allow-search"
+    },
+    "dxPivotGridOptions.headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "dxPivotGridOptions.headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
     },
     "dxPivotGridOptions.headerFilter.searchTimeout": {
       "vue": "search-timeout"
@@ -12493,11 +12544,19 @@
     "gridBaseColumn.headerFilter.allowSearch": {
       "vue": "allow-search"
     },
+    "gridBaseColumn.headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
     "gridBaseColumn.headerFilter.dataSource": {
       "vue": "data-source"
     },
     "gridBaseColumn.headerFilter.groupInterval": {
       "vue": "group-interval"
+    },
+    "gridBaseColumn.headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
     },
     "gridBaseColumn.headerFilter.searchMode": {
       "vue": "search-mode"
@@ -12601,8 +12660,23 @@
     "gridBaseOptions.columnChooser.emptyPanelText": {
       "vue": "empty-panel-text"
     },
+    "gridBaseOptions.columnChooser.position": {
+      "angular": "dxo-position",
+      "react": "Position",
+      "vue": "DxPosition"
+    },
+    "gridBaseOptions.columnChooser.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
     "gridBaseOptions.columnChooser.searchTimeout": {
       "vue": "search-timeout"
+    },
+    "gridBaseOptions.columnChooser.selection": {
+      "angular": "dxo-selection",
+      "react": "Selection",
+      "vue": "DxSelection"
     },
     "gridBaseOptions.columnChooser.sortOrder": {
       "vue": "sort-order"
@@ -12831,6 +12905,14 @@
     },
     "gridBaseOptions.headerFilter.allowSearch": {
       "vue": "allow-search"
+    },
+    "gridBaseOptions.headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "gridBaseOptions.headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
     },
     "gridBaseOptions.headerFilter.searchTimeout": {
       "vue": "search-timeout"
@@ -13142,6 +13224,14 @@
     "gridBaseOptions.wordWrapEnabled": {
       "vue": "word-wrap-enabled"
     },
+    "headerFilterSearchConfig": {
+      "angular": "dxo-header-filter-search-config",
+      "react": "HeaderFilterSearchConfig",
+      "vue": "DxHeaderFilterSearchConfig"
+    },
+    "headerFilterSearchConfig.editorOptions": {
+      "vue": "editor-options"
+    },
     "hierarchicalCollectionWidgetOptions.disabledExpr": {
       "vue": "disabled-expr"
     },
@@ -13281,6 +13371,14 @@
     },
     "pivotGridDataSourceOptions.fields.headerFilter.allowSearch": {
       "vue": "allow-search"
+    },
+    "pivotGridDataSourceOptions.fields.headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "pivotGridDataSourceOptions.fields.headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
     },
     "pivotGridDataSourceOptions.fields.isMeasure": {
       "vue": "is-measure"

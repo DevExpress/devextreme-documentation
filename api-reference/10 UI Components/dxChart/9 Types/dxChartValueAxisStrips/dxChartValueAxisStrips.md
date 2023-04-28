@@ -1,7 +1,8 @@
 ---
-notUsedInTheme: 
 isType: 
 uid: viz/chart:dxChartValueAxisStrips
+module: viz/chart
+export: dxChartValueAxisStrips
 ---
 ---
 ##### shortDescription

@@ -17,6 +17,8 @@ default: undefined
 <!-- %return% -->
 
 ---
+#include dataviz-template-note-svg
+
 ---
 ##### jQuery
 

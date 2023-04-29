@@ -115,12 +115,12 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
                 searchEditorOptions: { 
                     placeholder: 'Search column', 
                     mode: 'text',
-                    onValueChanged: this.handleOptionChange
+                    onValueChanged: this.handleValueChange
                 }
             };
         }
         methods: {
-            handleOptionChange(e) {
+            handleValueChange(e) {
                 // handle the value change here
             }
         }

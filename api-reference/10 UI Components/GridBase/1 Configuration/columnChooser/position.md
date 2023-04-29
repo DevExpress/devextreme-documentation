@@ -22,7 +22,7 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
                 position: {
                     my: "left",
                     at: "right",
-                    of: ".dx-datagrid-column-chooser-button"
+                    of: ".dx-{widgetname}-column-chooser-button"
                 }
             },
         })
@@ -36,7 +36,7 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
             <dxo-position
                 my="left"
                 at="right"
-                of=".dx-datagrid-column-chooser-button">
+                of=".dx-{widgetname}-column-chooser-button">
             </dxo-position>
         </dxo-column-chooser>
     </dx-{widget-name}>
@@ -81,7 +81,7 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
                 <DxPosition
                     my="left"
                     at="right"
-                    of=".dx-datagrid-column-chooser-button"
+                    of=".dx-{widgetname}-column-chooser-button"
                 />
             </DxColumnChooser>
         </Dx{WidgetName}>
@@ -111,7 +111,7 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
                 <DxPosition
                     my="left"
                     at="right"
-                    of=".dx-datagrid-column-chooser-button"
+                    of=".dx-{widgetname}-column-chooser-button"
                 />
             </DxColumnChooser>
         </Dx{WidgetName}>
@@ -147,7 +147,7 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
                     <Position
                         my="left"
                         at="right"
-                        of=".dx-datagrid-column-chooser-button"
+                        of=".dx-{widgetname}-column-chooser-button"
                     />
                 </ColumnChooser>
             </{WidgetName}>        

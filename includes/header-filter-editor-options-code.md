@@ -111,12 +111,12 @@
                 searchEditorOptions: { 
                     placeholder: 'Search value', 
                     mode: 'text',
-                    onValueChanged: this.handleOptionChange   
+                    onValueChanged: this.handleValueChange   
                 }
             };
         },
         methods: {
-            handleOptionChange(e) {
+            handleValueChange(e) {
                 // handle the value change here
             }
         }

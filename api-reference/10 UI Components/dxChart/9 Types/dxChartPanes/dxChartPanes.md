@@ -1,7 +1,8 @@
 ---
-notUsedInTheme: 
 isType: 
 uid: viz/chart:dxChartPanes
+module: viz/chart
+export: dxChartPanes
 ---
 ---
 ##### shortDescription

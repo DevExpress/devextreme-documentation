@@ -1,7 +1,8 @@
 ---
-default: undefined
 uid: ui/data_grid:dxDataGridSortByGroupSummaryInfoItem
 isType: 
+module: ui/data_grid
+export: dxDataGridSortByGroupSummaryInfoItem
 ---
 ---
 ##### shortDescription

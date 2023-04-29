@@ -14,8 +14,8 @@
 
     <!-- tab: app.component.html -->
     <dx-tree-view ...
-        collapseIcon="minus" <!-- icon from the DevExtreme icon library -->
-        expandIcon="https://path/to/the/expand_icon.svg" <!-- icon in the SVG format -->
+        collapseIcon="minus" // icon from the DevExtreme icon library 
+        expandIcon="https://path/to/the/expand_icon.svg" // icon in the SVG format
     > 
     </dx-tree-view> 
 
@@ -57,8 +57,8 @@
     <!-- tab: App.vue (Options API) -->
     <template> 
         <DxTreeView ...
-            collapseIcon="minus" <!-- icon from the DevExtreme icon library -->
-            expandIcon="https://path/to/the/expand_icon.svg" <!-- icon in the SVG format -->
+            collapseIcon="minus" // icon from the DevExtreme icon library 
+            expandIcon="https://path/to/the/expand_icon.svg" // icon in the SVG format
         />            
     </template> 
   
@@ -77,8 +77,8 @@
     <!-- tab: App.vue (Composition API) -->
     <template> 
         <DxTreeView ...
-            collapseIcon="minus" <!-- icon from the DevExtreme icon library -->
-            expandIcon="https://path/to/the/expand_icon.svg" <!-- icon in the SVG format -->
+            collapseIcon="minus" // icon from the DevExtreme icon library 
+            expandIcon="https://path/to/the/expand_icon.svg" // icon in the SVG format
         />            
     </template> 
   

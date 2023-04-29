@@ -1,6 +1,8 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeTooltip
 isType: 
+module: viz/gauges/base_gauge
+export: BaseGaugeTooltip
 ---
 ---
 ##### shortDescription

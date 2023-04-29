@@ -1,6 +1,8 @@
 ---
 uid: ui/data_grid:MasterDetail
 isType: 
+module: ui/data_grid
+export: MasterDetail
 ---
 ---
 ##### shortDescription

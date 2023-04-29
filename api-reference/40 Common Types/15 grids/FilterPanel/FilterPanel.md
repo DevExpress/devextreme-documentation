@@ -1,7 +1,8 @@
 ---
-default: {}
 uid: common/grids:FilterPanel
 isType: 
+module: common/grids
+export: FilterPanel
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 uid: viz/circular_gauge:dxCircularGaugeRangeContainer
 isType: 
+module: viz/circular_gauge
+export: dxCircularGaugeRangeContainer
 ---
 ---
 ##### shortDescription

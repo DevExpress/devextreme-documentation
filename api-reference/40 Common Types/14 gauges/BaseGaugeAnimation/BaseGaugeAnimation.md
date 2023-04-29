@@ -1,6 +1,8 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeAnimation
 isType: 
+module: viz/gauges/base_gauge
+export: BaseGaugeAnimation
 ---
 ---
 ##### shortDescription

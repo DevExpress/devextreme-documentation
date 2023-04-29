@@ -1,6 +1,8 @@
 ---
 uid: viz/circular_gauge:dxCircularGaugeScaleLabel
 isType: 
+module: viz/circular_gauge
+export: dxCircularGaugeScaleLabel
 ---
 ---
 ##### shortDescription

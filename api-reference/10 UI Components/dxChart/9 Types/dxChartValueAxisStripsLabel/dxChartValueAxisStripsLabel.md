@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartValueAxisStripsLabel
 isType: 
+module: viz/chart
+export: dxChartValueAxisStripsLabel
 ---
 ---
 ##### shortDescription

@@ -1,4 +1,4 @@
-Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection to select the item or cancel its selection:
+To configure the initial selection or access the keys of selected items, use the [selectedItemKeys](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectedItemKeys.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectedItemKeys') collection. Add or remove an item's key from this collection to select the item or cancel its selection:
 
 ---
 ##### jQuery
@@ -139,7 +139,11 @@ Add or remove an item's key from the [selectedItemKeys](/api-reference/10%20UI%2
 
 ---
 
+You can also call the [selectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') method to select a List item by index. To unselect an item, call [unselectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex').
+
 [note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/dxList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
+
+Implement the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler to perform an action when users select items. To see an example, refer to the following demo: [List Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/).
 
 #####See Also#####
 #include common-link-callmethods

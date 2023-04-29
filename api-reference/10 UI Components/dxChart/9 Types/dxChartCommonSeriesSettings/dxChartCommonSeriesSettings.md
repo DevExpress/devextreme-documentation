@@ -1,8 +1,8 @@
 ---
-hideDefaults: true
-inheritAll: 
 isType: 
 uid: viz/chart:dxChartCommonSeriesSettings
+module: viz/chart
+export: dxChartCommonSeriesSettings
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 uid: common/grids:ColumnFixingTexts
 isType: 
+module: common/grids
+export: ColumnFixingTexts
 ---
 ---
 ##### shortDescription

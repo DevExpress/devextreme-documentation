@@ -1,6 +1,8 @@
 ---
 isType: 
 uid: viz/funnel:dxFunnelLegend
+module: viz/funnel
+export: dxFunnelLegend
 ---
 ---
 ##### shortDescription

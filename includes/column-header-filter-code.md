@@ -37,7 +37,7 @@
                     [editorOptions]="searchEditorOptions"
                     [enabled]="true"
                     [timeout]="900"
-                    [searchExpr]="['City', 'State']"
+                    [searchExpr]="searchFields"
                     mode="equals" 
                 ></dxo-search>
             </dxo-header-filter>
@@ -55,11 +55,13 @@
 
     export class AppComponent {
         searchEditorOptions;
+        searchFields;
         constructor() {
             this.searchEditorOptions = { 
                 placeholder: 'Search city or state', 
                 mode: 'text' 
             };
+            this.searchFields = ['City', 'State'];
             // ...
         } 
         // ...
@@ -96,7 +98,7 @@
                         :editor-options="searchEditorOptions"
                         :enabled="true"
                         :timeout="900"
-                        :searchExpr="['City', 'State']"
+                        :searchExpr="searchFields"
                         mode="equals"
                     />
                 </DxHeaderFilter>
@@ -126,7 +128,8 @@
                 searchEditorOptions: { 
                     placeholder: 'Search city or state', 
                     mode: 'text' 
-                }
+                },
+                searchFields: ['City', 'State']
             };
         }
     }
@@ -141,7 +144,7 @@
                         :editor-options="searchEditorOptions"
                         :enabled="true"
                         :timeout="900"
-                        :searchExpr="['City', 'State']"
+                        :searchExpr="searchFields"
                         mode="equals"
                     />
                 </DxHeaderFilter>
@@ -158,6 +161,7 @@
         // ... 
     } from 'devextreme-vue/{widget-name}';
 
+    const searchFields = ['City', 'State'];
     const searchEditorOptions = { 
         placeholder: 'Search city or state', 
         mode: 'text' 

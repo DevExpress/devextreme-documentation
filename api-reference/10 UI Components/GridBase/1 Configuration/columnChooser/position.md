@@ -19,10 +19,10 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
             // ...
             columnChooser: {
                 // ...
-                position: {
-                    my: "left",
-                    at: "right",
-                    of: ".dx-{widgetname}-column-chooser-button"
+                position: { 
+                    my: "right top", 
+                    at: "right bottom", 
+                    of: ".dx-{widgetname}-column-chooser-button" 
                 }
             },
         })
@@ -34,8 +34,8 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     <dx-{widget-name} ... >
         <dxo-column-chooser ... >
             <dxo-position
-                my="left"
-                at="right"
+                my="right top"
+                at="right bottom"
                 of=".dx-{widgetname}-column-chooser-button">
             </dxo-position>
         </dxo-column-chooser>
@@ -79,8 +79,8 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
         <Dx{WidgetName} ... >
             <DxColumnChooser ... >
                 <DxPosition
-                    my="left"
-                    at="right"
+                    my="right top"
+                    at="right bottom"
                     of=".dx-{widgetname}-column-chooser-button"
                 />
             </DxColumnChooser>
@@ -109,8 +109,8 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
         <Dx{WidgetName} ... >
             <DxColumnChooser ... >
                 <DxPosition
-                    my="left"
-                    at="right"
+                    my="right top"
+                    at="right bottom"
                     of=".dx-{widgetname}-column-chooser-button"
                 />
             </DxColumnChooser>
@@ -145,8 +145,8 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
             <{WidgetName} ... > 
                 <ColumnChooser ... >
                     <Position
-                        my="left"
-                        at="right"
+                        my="right top"
+                        at="right bottom"
                         of=".dx-{widgetname}-column-chooser-button"
                     />
                 </ColumnChooser>

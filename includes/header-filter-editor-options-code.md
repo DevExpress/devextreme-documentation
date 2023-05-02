@@ -170,9 +170,7 @@
         placeholder: 'Search value', 
         mode: 'text',
         onValueChanged: (e) => {
-            if(e.name === 'onValueChanged') {
-                // handle the value change here
-            }
+            // handle the value change here
         }   
     };
 

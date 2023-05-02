@@ -1,6 +1,8 @@
 ---
 uid: common/grids:Sorting
 isType: 
+module: common/grids
+export: Sorting
 ---
 ---
 ##### shortDescription

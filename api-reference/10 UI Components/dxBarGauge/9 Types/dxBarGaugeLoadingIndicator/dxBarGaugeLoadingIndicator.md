@@ -1,6 +1,8 @@
 ---
 uid: viz/bar_gauge:dxBarGaugeLoadingIndicator
 isType: 
+module: viz/bar_gauge
+export: dxBarGaugeLoadingIndicator
 ---
 ---
 ##### shortDescription

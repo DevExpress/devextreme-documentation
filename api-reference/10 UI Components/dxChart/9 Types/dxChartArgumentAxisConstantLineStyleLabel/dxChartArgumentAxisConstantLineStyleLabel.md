@@ -1,6 +1,8 @@
 ---
 uid: viz/chart:dxChartArgumentAxisConstantLineStyleLabel
 isType: 
+module: viz/chart
+export: dxChartArgumentAxisConstantLineStyleLabel
 ---
 ---
 ##### shortDescription

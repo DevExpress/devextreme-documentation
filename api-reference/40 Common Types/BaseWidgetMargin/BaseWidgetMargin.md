@@ -1,6 +1,8 @@
 ---
 uid: viz/core/base_widget:BaseWidgetMargin
 isType: 
+module: viz/core/base_widget
+export: BaseWidgetMargin
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 uid: common/grids:LoadPanel
 isType: 
+module: common/grids
+export: LoadPanel
 ---
 ---
 ##### shortDescription

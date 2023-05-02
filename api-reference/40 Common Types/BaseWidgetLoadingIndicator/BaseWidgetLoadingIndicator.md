@@ -1,6 +1,8 @@
 ---
 uid: viz/core/base_widget:BaseWidgetLoadingIndicator
 isType: 
+module: viz/core/base_widget
+export: BaseWidgetLoadingIndicator
 ---
 ---
 ##### shortDescription

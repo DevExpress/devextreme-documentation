@@ -84,49 +84,49 @@ The code sample below demonstrates how to get the full collection of diagram ite
         </DxDiagram>
     </template>
     <script>
-    // ...
-    onItemClick(e) {
-      var itemKey = e.item.key;
-      var connectors = e.component.getItems().filter(function (item) {
-        return item.itemType === "connector" && (item.fromKey === itemKey || item.toKey === itemKey);
-      });
-      var relativeShapes = [];
-      connectors.forEach(element => {
-        if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
-        if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
-      });
-      console.log(relativeShapes);
-    },
-    // ...
+        // ...
+        onItemClick(e) {
+            var itemKey = e.item.key;
+            var connectors = e.component.getItems().filter(function (item) {
+                return item.itemType === "connector" && (item.fromKey === itemKey || item.toKey === itemKey);
+            });
+            var relativeShapes = [];
+            connectors.forEach(element => {
+                if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
+                if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
+            });
+            console.log(relativeShapes);
+        },
+        // ...
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
-class App extends React.Component {
-  constructor(props) {
-    // ...
-    onItemClick(e) {
-      var itemKey = e.item.key;
-      var connectors = e.component.getItems().filter(function (item) {
-        return item.itemType === "connector" && (item.fromKey === itemKey || item.toKey === itemKey);
-      });
-      var relativeShapes = [];
-      connectors.forEach(element => {
-        if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
-        if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
-      });
-    },
-    // ...
-  }
+    class App extends React.Component {
+        constructor(props) {
+            // ...
+            onItemClick(e) {
+            var itemKey = e.item.key;
+            var connectors = e.component.getItems().filter(function (item) {
+                return item.itemType === "connector" && (item.fromKey === itemKey || item.toKey === itemKey);
+            });
+            var relativeShapes = [];
+            connectors.forEach(element => {
+                if (element.fromKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.toKey)); // all subsequent shapes 
+                if (element.toKey === itemKey) relativeShapes.push(e.component.getItemByKey(element.fromKey)); // all previous shapes
+            });
+            },
+            // ...
+        }
 
-  render() {
-    return (
-        <Diagram id="diagram" onItemClick={this.onItemClick}>
-          <Nodes dataSource={this.dataSource} keyExpr="ID" textExpr="Full_Name" parentKeyExpr="Head_ID" />
-        </Diagram>
-    );
-  }
-}
+        render() {
+            return (
+                <Diagram id="diagram" onItemClick={this.onItemClick}>
+                    <Nodes dataSource={this.dataSource} keyExpr="ID" textExpr="Full_Name" parentKeyExpr="Head_ID" />
+                </Diagram>
+            );
+        }
+    }
 
 ---

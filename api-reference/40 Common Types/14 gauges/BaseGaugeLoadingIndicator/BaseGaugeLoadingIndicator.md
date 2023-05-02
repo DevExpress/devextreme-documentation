@@ -1,6 +1,8 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeLoadingIndicator
 isType: 
+module: viz/gauges/base_gauge
+export: BaseGaugeLoadingIndicator
 ---
 ---
 ##### shortDescription

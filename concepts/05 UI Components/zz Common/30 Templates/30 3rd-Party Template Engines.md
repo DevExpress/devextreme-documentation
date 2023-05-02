@@ -1,16 +1,14 @@
-You can use a 3rd-party template engine, but only with jQuery. DevExtreme supports the following template engines out of the box:
+You can use a 3rd-party template engine of your choice. The example below shows how to set up the <a href="http://mustache.github.io/" target="_blank">Mustache</a> template engine. Call the [DevExpress.setTemplateEngine(options)](/api-reference/50%20Common/utils/setTemplateEngine(options).md '/Documentation/ApiReference/Common/Utils/#setTemplateEngineoptions') method and implement functions that `compile` and `render` templates:
 
-- <a href="http://underscorejs.org/" target="_blank">Underscore</a>
-- <a href="https://github.com/BorisMoore/jsrender" target="_blank">JsRender</a>
-- <a href="http://mustache.github.io/" target="_blank">Mustache</a>
-- <a href="http://twitter.github.io/hogan.js/" target="_blank">Hogan</a>
-- <a href="http://handlebarsjs.com/" target="_blank">Handlebars</a>
-- <a href="http://olado.github.io/doT/index.html" target="_blank">doT</a>
+---
 
-To use one of them, pass its name to the [DevExpress.setTemplateEngine(name)](/api-reference/50%20Common/utils/setTemplateEngine(name).md '/Documentation/ApiReference/Common/Utils/#setTemplateEnginename') method:
+##### jQuery 
 
-    <!--JavaScript-->
-    DevExpress.setTemplateEngine("underscore");
+    <!-- tab: index.js -->
+    DevExpress.setTemplateEngine({
+        compile: (element) => $(element).html(),
+        render: (template, data) => Mustache.render(template, data),
+    });
 
     $(function() {
         $("#list").dxList({
@@ -19,16 +17,20 @@ To use one of them, pass its name to the [DevExpress.setTemplateEngine(name)](/a
         });
     })
 
-    <!--HTML-->
+    <!-- tab: index.html -->
     <div id="list"></div>
     <script type="text/html" id="itemTemplate">
-        <!-- your Underscore template -->
+        <!-- your Mustache template -->
     </script>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/Item3RdPartyEngineTemplate/"
-}
+---
 
-You can also use other template engines, but you need to implement functions that compile and render templates in this case. See [DevExpress.setTemplateEngine(options)](/api-reference/50%20Common/utils/setTemplateEngine(options).md '/Documentation/ApiReference/Common/Utils/#setTemplateEngineoptions') for details.
+If you assign a function that returns a string to a template, the `compile` callback receives a text node as an argument. In this case, do the following:
+
+1. Implement additional logic that determines if an argument is a template element or a text node.
+
+2. If an argument is a template element, call `$(element).html()`. 
+
+3. Otherwise, append the node to an element: `$('<div>').append(element).html()`.
 
 [tags] jquery

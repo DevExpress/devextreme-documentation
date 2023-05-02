@@ -1,6 +1,8 @@
 ---
 uid: ui/data_grid:GroupingTexts
 isType: 
+module: ui/data_grid
+export: GroupingTexts
 ---
 ---
 ##### shortDescription

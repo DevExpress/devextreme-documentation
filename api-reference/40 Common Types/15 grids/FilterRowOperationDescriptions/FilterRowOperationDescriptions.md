@@ -1,6 +1,8 @@
 ---
 uid: common/grids:FilterRowOperationDescriptions
 isType: 
+module: common/grids
+export: FilterRowOperationDescriptions
 ---
 ---
 ##### shortDescription

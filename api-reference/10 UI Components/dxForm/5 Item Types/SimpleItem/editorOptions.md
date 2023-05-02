@@ -106,7 +106,7 @@ Configures the form item's editor.
 
 ---
 
-[note] If you set the `id` and `name` attributes using the [inputAttr](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#inputAttr') property, they will be overwritten. The Form generates these attributes automatically and uses them for addressing the DOM elements.
+[note] If you set the `id` and `name` attributes using the [inputAttr](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#inputAttr') property, they will be overwritten. The Form generates these attributes automatically and uses them for addressing the DOM elements.
 
 #####See Also#####
 - [Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')

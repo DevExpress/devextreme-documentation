@@ -9,4 +9,4 @@ Configures the header filter's search.
 
 ---
 
-#include column-header-filter-code
+#include header-filter-code

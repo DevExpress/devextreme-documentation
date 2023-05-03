@@ -1,6 +1,4 @@
-There are a set of different directives that you can implement in a CSP, to fit the security needs of your website or application.
-
-To get started, create a list of policies or directives to define which resources your site will allow or restrict. See the list of common CSP directives and source values in the table below:
+You can specify a set of CSP rules to define which resources your site will allow or restrict. See the list of common CSP directives and source values in the tables below:
 
 <table class="dx-table">
     <tbody>

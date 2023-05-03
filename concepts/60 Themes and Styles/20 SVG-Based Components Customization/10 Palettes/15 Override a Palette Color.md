@@ -64,7 +64,7 @@ Set a UI component element's **color** property to override a palette color for 
         DxCircularGaugeModule,
         DxVectorMapModule
     } from "devextreme-angular";
-    import * as mapsData from "devextreme/dist/js/vectormap-data/world.js";
+    import * as mapsData from "devextreme-dist/js/vectormap-data/world.js";
     // ...
     export class AppComponent {
         worldMap: any = mapsData.world;
@@ -111,7 +111,7 @@ Set a UI component element's **color** property to override a palette color for 
     import { DxChart, DxSeries } from 'devextreme-vue/tree-map';
     import { DxCircularGauge, DxRangeContainer, DxRange } from 'devextreme-vue/circular-gauge';
     import { DxVectorMap, DxLayer } from 'devextreme-vue/vector-map';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
 
     export default {
         components: {
@@ -146,7 +146,7 @@ Set a UI component element's **color** property to override a palette color for 
     import { Chart, Series } from 'devextreme-react/chart';
     import { CircularGauge, RangeContainer, Range } from 'devextreme-react/circular-gauge';
     import { VectorMap, Layer } from 'devextreme-react/vector-map';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
 
     const worldMap = mapsData.world;
 

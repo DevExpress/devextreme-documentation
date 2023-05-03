@@ -49,7 +49,7 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
 
     @Component({
         selector: 'app-root',
@@ -107,7 +107,7 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
     </template>
 
     <script>
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
 
     import DxVectorMap, {
         DxLayer
@@ -141,7 +141,7 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
     import React from 'react';
 
     import { VectorMap, Layer } from 'devextreme-react/vector-map';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js'
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js'
 
     const worldMap = mapsData.world;
 

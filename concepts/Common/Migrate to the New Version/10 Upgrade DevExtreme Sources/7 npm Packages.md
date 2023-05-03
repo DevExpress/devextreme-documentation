@@ -3,7 +3,7 @@ Run the following commands:
 ---
 ##### jQuery
 
-    npm install devextreme@23.1 --save --save-exact
+    npm install devextreme-dist@23.1 --save --save-exact
 
 ##### Angular
 

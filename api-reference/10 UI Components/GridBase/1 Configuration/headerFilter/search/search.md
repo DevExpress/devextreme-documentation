@@ -1,5 +1,5 @@
 ---
-id: dxPivotGrid.Options.headerFilter.search
+id: GridBase.Options.headerFilter.search
 type: HeaderFilterSearchConfig
 inheritsType: HeaderFilterSearchConfig
 ---

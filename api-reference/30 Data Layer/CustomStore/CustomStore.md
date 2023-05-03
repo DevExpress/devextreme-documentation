@@ -20,7 +20,7 @@ For server-side data processing, implement the **load** function to send data pr
 
 If your data source supports CRUD operations, implement the [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert'), [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update'), and [remove](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/remove.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#remove') functions.
 
-The following code example uses **CustomStore** to specify CRUD operations for a component. For a more in-depth example, refer to the following article: [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/).
+The following code example uses **CustomStore** to specify CRUD operations for a component. For a more in-depth example, refer to the following article: [Custom Data Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/').
 
 ---
 ##### jQuery  

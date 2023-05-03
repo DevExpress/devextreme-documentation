@@ -38,9 +38,7 @@ The following code sorts string arguments in the alphabetical order:
             // ...
             dataPrepareSettings: {
                 sortingMethod(a, b) {
-                    if (a.arg < b.arg) return -1;
-                    if (a.arg > b.arg) return 1;
-                    return 0;
+                    return a.arg.localeCompare(b.arg);
                 }
             }
         });
@@ -65,9 +63,7 @@ The following code sorts string arguments in the alphabetical order:
     })
     export class AppComponent {
         alphabetical(a, b) {
-            if (a.arg < b.arg) return -1;
-            if (a.arg > b.arg) return 1;
-            return 0;
+            return a.arg.localeCompare(b.arg);
         }
     }
 
@@ -99,9 +95,7 @@ The following code sorts string arguments in the alphabetical order:
         },
         methods: {
             alphabetical(a, b) {
-                if (a.arg < b.arg) return -1;
-                if (a.arg > b.arg) return 1;
-                return 0;
+                return a.arg.localeCompare(b.arg);
             }
         }
     }
@@ -117,9 +111,7 @@ The following code sorts string arguments in the alphabetical order:
     } from 'devextreme-react/chart';
 
     const alphabetical = (a, b) => {
-        if (a.arg < b.arg) return -1;
-        if (a.arg > b.arg) return 1;
-        return 0;
+        return a.arg.localeCompare(b.arg);
     }
 
     function App() {

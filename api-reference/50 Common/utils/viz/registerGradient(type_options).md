@@ -25,10 +25,6 @@ Linear gradient rotation angle.
 ---
 Call this method to register a gradient ID. Assign the ID to a component's color.[fillId](/api-reference/40%20Common%20Types/05%20charts/ChartsColor/fillId.md '/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId') field.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"
-}
-
 ---
 
 ##### jQuery

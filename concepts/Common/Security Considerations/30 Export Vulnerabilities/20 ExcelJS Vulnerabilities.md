@@ -1,4 +1,4 @@
-The DataGrid and PivotGrid components use the [ExcelJS](https://github.com/exceljs/exceljs) third-party library to export data to Excel. If you implement the export functionality and apply CSP rules, you should include the `window.regeneratorRuntime = null;` expression before the ExcelJS sources will load.
+The DataGrid and PivotGrid components use the [ExcelJS](https://github.com/exceljs/exceljs) third-party library to export data to Excel. If you implement export functionality and apply CSP rules, you should include the following initialization code before the line that loads ExcelJS sources: `window.regeneratorRuntime = null;` 
 
 ---
 ##### jQuery

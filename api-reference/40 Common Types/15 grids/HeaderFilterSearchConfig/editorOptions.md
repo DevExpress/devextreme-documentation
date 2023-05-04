@@ -1,8 +1,7 @@
 ---
 id: HeaderFilterSearchConfig.editorOptions
-type: any
+type: dxTextBox_Options
 default: {}
----
 ---
 ##### shortDescription
 Configures the search box.

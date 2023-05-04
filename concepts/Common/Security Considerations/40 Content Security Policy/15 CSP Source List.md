@@ -9,12 +9,12 @@ All directives ending with *-src* supply corresponding values referred to as a *
     <tr>
         <td><code>*</code></td>
         <td><code>img-src *</code></td>
-        <td>Wildcard, allows any URL except data: blob: filesystem: schemes.</td>
+        <td>Wildcard, allows any URL except "data:",  "blob:", and "filesystem:" schemes.</td>
     </tr>
     <tr>
         <td><code>'none'</code></td>
         <td><code>object-src 'none'</code></td>
-        <td>Prevents a load resources from any source.</td>
+        <td>Rejects resources from any source.</td>
     </tr>
     <tr>
         <td><code>'self'</code></td>
@@ -39,12 +39,12 @@ All directives ending with *-src* supply corresponding values referred to as a *
     <tr>
         <td><code><em>https://cdn.com</em></code></td>
         <td><code>img-src https://cdn.com</code></td>
-        <td>Allows a web site to load resources only over HTTPS matching the given domain.</td>
+        <td>Allows a web site to load resources only from the specified domain, and only over HTTPS.</td>
     </tr>
     <tr>
         <td><code>https:</code></td>
         <td><code>img-src https:</code></td>
-        <td>Allows a web site to load resources only over HTTPS on any domain.</td>
+        <td>Allows a web site to load resources from any domain, but only over HTTPS.</td>
     </tr>
     <tr>
         <td><code>'unsafe-inline'</code></td>
@@ -69,6 +69,6 @@ All directives ending with *-src* supply corresponding values referred to as a *
     <tr>
         <td><code>'unsafe-hashes'</code></td>
         <td><code>script-src 'unsafe-hashes'</code></td>
-        <td>Allows you to enable scripts in event handlers (for example, <code>onclick</code>). Does not apply to <code>javascript:</code> or inline <code>&lt;script&gt;</code> CSP Level 3 </td>
+        <td>Allows you to enable scripts in event handlers (for example, <code>onclick</code>). Does not apply to <code>javascript:</code> or inline <code>&lt;script&gt;</code>. CSP Level 3 </td>
     </tr>
 </table>

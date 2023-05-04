@@ -1,4 +1,4 @@
-You can specify a set of CSP rules to define which resources your site will allow or restrict. See the list of common CSP directives and source values in the tables below:
+You can specify a set of CSP rules to define resources that your site will allow or restrict. See the list of common CSP directives and source values in the tables below:
 
 <table class="dx-table">
     <tbody>

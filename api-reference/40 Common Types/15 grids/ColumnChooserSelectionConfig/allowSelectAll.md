@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to allow users to simultaneously select all items.
+Specifies whether a "Select All" option is available to users.
 
 ---

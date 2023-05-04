@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a search is enabled in the header filter.
+Specifies whether search UI is enabled in the header filter.
 
 ---

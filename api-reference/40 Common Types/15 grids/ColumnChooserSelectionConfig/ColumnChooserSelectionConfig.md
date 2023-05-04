@@ -6,6 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures the column chooser's selection.
+Configures column selection functionality within the column chooser.
 
 ---

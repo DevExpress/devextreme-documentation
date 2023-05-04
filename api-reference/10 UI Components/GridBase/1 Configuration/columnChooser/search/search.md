@@ -5,7 +5,7 @@ inheritsType: ColumnChooserSearchConfig
 ---
 ---
 ##### shortDescription
-Configures the column chooser's search.
+Configures the column chooser's search functionality.
 
 ---
 ---

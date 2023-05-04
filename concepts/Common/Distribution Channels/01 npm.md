@@ -5,11 +5,11 @@ You can use **npm** to deliver <a href="https://www.npmjs.com/package/devextreme
 
 Install the latest stable version:
 
-    npm install devextreme@23.1 --save --save-exact
+    npm install devextreme-dist@23.1 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@23.1-next --save --save-exact
+    npm install devextreme-dist@23.1-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 

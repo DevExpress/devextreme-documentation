@@ -288,7 +288,7 @@ In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
 
     @Component({
         selector: 'app-root',
@@ -367,7 +367,7 @@ In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20
     <script>
     import { DxTreeMap, DxColorizer } from 'devextreme-vue/tree-map';
     import { DxVectorMap, DxLayer } from 'devextreme-vue/vector-map';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
     import {
         DxRangeSelector,
         DxChart,
@@ -409,7 +409,7 @@ In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20
     import React from 'react';
     import { TreeMap, Colorizer } from 'devextreme-react/tree-map';
     import { VectorMap, Layer } from 'devextreme-react/vector-map';
-    import * as mapsData from 'devextreme/dist/js/vectormap-data/world.js';
+    import * as mapsData from 'devextreme-dist/js/vectormap-data/world.js';
     import {
         RangeSelector,
         Chart,

@@ -1,6 +1,6 @@
 ---
 id: HeaderFilterSearchConfig.editorOptions
-type: any
+type: dxTextBox_Options
 default: {}
 ---
 ---

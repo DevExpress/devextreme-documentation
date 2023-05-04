@@ -5,7 +5,7 @@ default: {}
 ---
 ---
 ##### shortDescription
-Configures the search panel.
+Configures the search box.
 
 ---
 

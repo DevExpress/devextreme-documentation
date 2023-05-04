@@ -6,6 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures the column chooser's search box.
+Configures the column chooser's search functionality.
 
 ---

@@ -6,6 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures the header filter's search.
+Configures the header filter's search functionality.
 
 ---

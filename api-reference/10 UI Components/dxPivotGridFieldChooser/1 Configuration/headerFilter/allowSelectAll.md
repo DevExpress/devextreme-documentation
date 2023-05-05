@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a "Select All" option is available to users.
 
 ---
-<!-- Description goes here -->

@@ -1,15 +1,13 @@
 ---
-id: GridBase.Options.columnChooser.position
-type: PositionConfig
-default: undefined
+id: GridBase.Options.columnChooser.search
+type: ColumnChooserSearchConfig
+inheritsType: ColumnChooserSearchConfig
 ---
 ---
 ##### shortDescription
-Configures the column chooser's position.
+Configures the column chooser's search functionality.
 
 ---
-You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/my/), [at](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/at/), and [of](/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of) properties to position a column chooser. 
-
 ---
 ##### jQuery
 
@@ -19,11 +17,14 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
             // ...
             columnChooser: {
                 // ...
-                position: { 
-                    my: "right top", 
-                    at: "right bottom", 
-                    of: ".dx-{widgetname}-column-chooser-button" 
-                }
+                search: {
+                    editorOptions: { 
+                        placeholder: 'Search column',
+                        mode: 'text' 
+                    },
+                    enabled: true,
+                    timeout: 800      
+                },
             },
         })
     });
@@ -33,11 +34,11 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
         <dxo-column-chooser ... >
-            <dxo-position
-                my="right top"
-                at="right bottom"
-                of=".dx-{widgetname}-column-chooser-button">
-            </dxo-position>
+            <dxo-search
+                [editorOptions]="searchEditorOptions"
+                [enabled]="true"
+                [timeout]="800"
+            ></dxo-search>
         </dxo-column-chooser>
     </dx-{widget-name}>
 
@@ -50,7 +51,17 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
         styleUrls: ['./app.component.css'] 
     }) 
 
-    export class AppComponent {}
+    export class AppComponent {
+        searchEditorOptions;
+        constructor() {
+            this.searchEditorOptions = { 
+                placeholder: 'Search column', 
+                mode: 'text' 
+            };
+            // ...
+        } 
+        // ...
+    }
 
     <!-- tab: app.module.ts -->
     import { BrowserModule } from '@angular/platform-browser'; 
@@ -78,10 +89,10 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     <template>
         <Dx{WidgetName} ... >
             <DxColumnChooser ... >
-                <DxPosition
-                    my="right top"
-                    at="right bottom"
-                    of=".dx-{widgetname}-column-chooser-button"
+                <DxColumnChooserSearch
+                    :editor-options="searchEditorOptions"
+                    :enabled="true"
+                    :timeout="800"
                 />
             </DxColumnChooser>
         </Dx{WidgetName}>
@@ -91,7 +102,7 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     import 'devextreme/dist/css/dx.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
-        DxPosition
+        DxColumnChooserSearch,
         // ... 
     } from 'devextreme-vue/{widget-name}';
 
@@ -99,7 +110,15 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
         components: {
             Dx{WidgetName}, 
             DxColumnChooser, 
-            DxPosition
+            DxColumnChooserSearch,
+        },
+        data() {
+            return {
+                searchEditorOptions: { 
+                    placeholder: 'Search column', 
+                    mode: 'text' 
+                }
+            };
         }
     }
     </script>
@@ -108,10 +127,10 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     <template>
         <Dx{WidgetName} ... >
             <DxColumnChooser ... >
-                <DxPosition
-                    my="right top"
-                    at="right bottom"
-                    of=".dx-{widgetname}-column-chooser-button"
+                <DxColumnChooserSearch
+                    :editor-options="searchEditorOptions"
+                    :enabled="true"
+                    :timeout="800"
                 />
             </DxColumnChooser>
         </Dx{WidgetName}>
@@ -121,9 +140,14 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     import 'devextreme/dist/css/dx.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
-        DxPosition
+        DxColumnChooserSearch,
         // ... 
     } from 'devextreme-vue/{widget-name}';
+
+    const searchEditorOptions = { 
+        placeholder: 'Search column', 
+        mode: 'text' 
+    };
 
     // ...
     </script>
@@ -136,18 +160,23 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
 
     import {WidgetName}, {
         ColumnChooser, 
-        Position, 
+        ColumnChooserSearch, 
         // ...
     } from 'devextreme-react/data-grid';
+
+    const searchEditorOptions = { 
+        placeholder: 'Search column', 
+        mode: 'text' 
+    };
 
     export default function App() { 
         return ( 
             <{WidgetName} ... > 
                 <ColumnChooser ... >
-                    <Position
-                        my="right top"
-                        at="right bottom"
-                        of=".dx-{widgetname}-column-chooser-button"
+                    <ColumnChooserSearch
+                        editorOptions={searchEditorOptions}
+                        enabled={true}
+                        timeout={800}
                     />
                 </ColumnChooser>
             </{WidgetName}>        
@@ -155,4 +184,3 @@ You can specify the [my](/Documentation/ApiReference/Common/Object_Structures/Po
     } 
 
 ---
-

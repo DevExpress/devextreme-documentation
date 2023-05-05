@@ -1,7 +1,8 @@
 ---
-id: HeaderFilterSearchConfig.editorOptions
-type: any
-default: {}
+id: LangParams
+module: data/index
+export: LangParams
+type: Object
 ---
 ---
 ##### shortDescription

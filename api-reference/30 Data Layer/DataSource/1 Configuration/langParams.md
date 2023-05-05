@@ -1,7 +1,6 @@
 ---
-id: HeaderFilterSearchConfig.editorOptions
-type: any
-default: {}
+id: DataSource.Options.langParams
+type: Object
 ---
 ---
 ##### shortDescription

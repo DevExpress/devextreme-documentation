@@ -1,6 +1,6 @@
 ---
 id: ColumnChooserSearchConfig.editorOptions
-type: dxTextBox_Options
+type: any
 default: {}
 ---
 ---

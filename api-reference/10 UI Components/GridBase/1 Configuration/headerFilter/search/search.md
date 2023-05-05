@@ -12,4 +12,4 @@ Configures the header filter's search box.
 #include header-filter-code
 
 #####See Also#####
-- [search](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/headerFilter/search/)
+- [search](/api-reference/_hidden/GridBaseColumn/headerFilter/search '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/headerFilter/search/')

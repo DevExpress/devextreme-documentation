@@ -6,6 +6,14 @@ An end user can use the following keys to interact with the Autocomplete compone
         <th>Action</th>
     </tr>
     <tr>
+        <td>Alt + &darr;</td>
+        <td>Opens the drop-down menu.</td>
+    </tr>
+    <tr>
+        <td>Alt + &uarr; / Esc</td>
+        <td>Closes the drop-down menu.</td>
+    </tr>
+    <tr>
         <td>&uarr; / &darr;</td>
         <td>Moves focus to the previous/following menu item.</td>
     </tr>
@@ -16,10 +24,6 @@ An end user can use the following keys to interact with the Autocomplete compone
     <tr>
         <td>Enter</td>
         <td>Selects focused menu item.</td>
-    </tr>
-    <tr>
-        <td>Esc</td>
-        <td>Closes the drop-down menu.</td>
     </tr>
 </table>
 

@@ -15,7 +15,7 @@
     </tr>
     <tr>
         <td>Screen Reader Support</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td>Contrast Color Theme</td>
@@ -27,15 +27,15 @@
     </tr>
     <tr>
         <td><a href="https://developer.chrome.com/docs/lighthouse/" target="_blank">Lighthouse</a> Accessibility Validation</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td><a href="https://www.deque.com/axe/" target="_blank">Axe</a> Accessibility Validation</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td><a href="https://wave.webaim.org/" target="_blank">WAVE</a> Accessibility Validation</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td><a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a> Support</td>

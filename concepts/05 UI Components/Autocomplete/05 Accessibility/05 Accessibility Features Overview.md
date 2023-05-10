@@ -22,7 +22,7 @@
         <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
     </tr>
     <tr>
-        <td>Mobile Devices Support</td>
+        <td>Mobile Device Support</td>
         <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
     </tr>
     <tr>

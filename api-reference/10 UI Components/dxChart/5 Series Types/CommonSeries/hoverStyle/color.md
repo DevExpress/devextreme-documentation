@@ -12,6 +12,8 @@ Specifies the color of the series in the hovered state.
 
 #include dataviz-chartscolor
 
+#include dataviz-chart-series-for-custom-styles
+
 ---
 ##### jQuery
 

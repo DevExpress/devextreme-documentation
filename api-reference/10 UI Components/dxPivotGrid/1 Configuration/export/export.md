@@ -16,7 +16,7 @@ A user can click the **Export** button to save an Excel file with the exported d
 The following instructions show how to enable and configure client-side export:
 
 1. **Install or reference the required libraries**  
-    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+. If you apply [CSP rules](/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy), refer to the [ExcelJS CSP Treats](/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats) section to read more about potential vulnerabilities.
+    This feature requires <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+. If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'), refer to the [ExcelJS CSP Treats](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/20%20ExcelJS%20CSP%20Threats.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats') section to read more about potential vulnerabilities.
 
     ---
     ##### jQuery

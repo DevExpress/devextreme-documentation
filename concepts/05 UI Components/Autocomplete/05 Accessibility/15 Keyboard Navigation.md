@@ -15,7 +15,7 @@ An end user can use the following keys to interact with the Autocomplete compone
     </tr>
     <tr>
         <td>&uarr; / &darr;</td>
-        <td>Moves focus to the previous/following menu item.</td>
+        <td>Moves focus to the previous/next menu item.</td>
     </tr>
     <tr>
         <td>Page Up / Page Down</td>

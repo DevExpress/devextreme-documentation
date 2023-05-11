@@ -8,7 +8,7 @@ default: undefined
 Configures the column chooser's position.
 
 ---
-You can specify the [my](/api-reference/50%20Common/Object%20Structures/positionConfig/my '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/my/'), [at](/api-reference/50%20Common/Object%20Structures/positionConfig/at '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/at/'), and [of](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of') properties to position a column chooser. 
+You can specify the [my](/api-reference/50%20Common/Object%20Structures/positionConfig/my '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/my/'), [at](/api-reference/50%20Common/Object%20Structures/positionConfig/at '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/at/'), and [of](/api-reference/50%20Common/Object%20Structures/positionConfig/of.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#of') properties to position a column chooser. Set the **position** property to *undefined* to display the column chooser at the bottom right corner (default position).
 
 ---
 ##### jQuery

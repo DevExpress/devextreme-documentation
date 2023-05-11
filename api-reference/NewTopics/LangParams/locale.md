@@ -1,6 +1,6 @@
 ---
-id: DataSource.Options.langParams
-type: LangParams
+id: LangParams.locale
+type: String
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
-id: DataSource.Options.langParams
-type: LangParams
+id: LangParams.collatorOptions
+type: Object
 ---
 ---
 ##### shortDescription

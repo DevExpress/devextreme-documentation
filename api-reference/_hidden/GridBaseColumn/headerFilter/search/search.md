@@ -1,7 +1,7 @@
 ---
 id: GridBaseColumn.headerFilter.search
 type: ColumnHeaderFilterSearchConfig
-inheritsType: ColumnHeaderFilterSearchConfig
+inheritsType: ColumnHeaderFilterSearchConfig,HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription

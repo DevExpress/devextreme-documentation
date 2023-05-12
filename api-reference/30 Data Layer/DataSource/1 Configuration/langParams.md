@@ -1,6 +1,7 @@
 ---
 id: DataSource.Options.langParams
 type: LangParams
+inheritsType: LangParams
 ---
 ---
 ##### shortDescription

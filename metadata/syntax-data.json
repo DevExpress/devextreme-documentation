@@ -905,14 +905,8 @@
     "dateBoxBaseOptions.cancelButtonText": {
       "vue": "cancel-button-text"
     },
-    "dateBoxBaseOptions.dateOutOfRangeMessage": {
-      "vue": "date-out-of-range-message"
-    },
     "dateBoxBaseOptions.dateSerializationFormat": {
       "vue": "date-serialization-format"
-    },
-    "dateBoxBaseOptions.disabledDates": {
-      "vue": "disabled-dates"
     },
     "dateBoxBaseOptions.displayFormat": {
       "angular": "dxo-display-format",
@@ -921,9 +915,6 @@
     },
     "dateBoxBaseOptions.dropDownOptions": {
       "vue": "drop-down-options"
-    },
-    "dateBoxBaseOptions.invalidDateMessage": {
-      "vue": "invalid-date-message"
     },
     "dateBoxBaseOptions.todayButtonText": {
       "vue": "today-button-text"
@@ -3869,6 +3860,21 @@
     "dxDateBoxOptions.adaptivityEnabled": {
       "vue": "adaptivity-enabled"
     },
+    "dxDateBoxOptions.dateOutOfRangeMessage": {
+      "vue": "date-out-of-range-message"
+    },
+    "dxDateBoxOptions.disabledDates": {
+      "vue": "disabled-dates"
+    },
+    "dxDateBoxOptions.inputAttr": {
+      "vue": "input-attr"
+    },
+    "dxDateBoxOptions.invalidDateMessage": {
+      "vue": "invalid-date-message"
+    },
+    "dxDateBoxOptions.maxLength": {
+      "vue": "max-length"
+    },
     "dxDateBoxOptions.onChange": {
       "vue": "@change"
     },
@@ -3937,6 +3943,33 @@
     "dxDateRangeBoxOptions.endDate": {
       "vue": "end-date"
     },
+    "dxDateRangeBoxOptions.endDateInputAttr": {
+      "vue": "end-date-input-attr"
+    },
+    "dxDateRangeBoxOptions.endDateLabel": {
+      "vue": "end-date-label"
+    },
+    "dxDateRangeBoxOptions.endDateName": {
+      "vue": "end-date-name"
+    },
+    "dxDateRangeBoxOptions.endDateOutOfRangeMessage": {
+      "vue": "end-date-out-of-range-message"
+    },
+    "dxDateRangeBoxOptions.endDatePlaceholder": {
+      "vue": "end-date-placeholder"
+    },
+    "dxDateRangeBoxOptions.endDateText": {
+      "vue": "end-date-text"
+    },
+    "dxDateRangeBoxOptions.invalidEndDateMessage": {
+      "vue": "invalid-end-date-message"
+    },
+    "dxDateRangeBoxOptions.invalidStartDateMessage": {
+      "vue": "invalid-start-date-message"
+    },
+    "dxDateRangeBoxOptions.multiView": {
+      "vue": "multi-view"
+    },
     "dxDateRangeBoxOptions.onChange": {
       "vue": "@change"
     },
@@ -3988,11 +4021,26 @@
     "dxDateRangeBoxOptions.onValueChanged": {
       "vue": "@value-changed"
     },
-    "dxDateRangeBoxOptions.pickerType": {
-      "vue": "picker-type"
-    },
     "dxDateRangeBoxOptions.startDate": {
       "vue": "start-date"
+    },
+    "dxDateRangeBoxOptions.startDateInputAttr": {
+      "vue": "start-date-input-attr"
+    },
+    "dxDateRangeBoxOptions.startDateLabel": {
+      "vue": "start-date-label"
+    },
+    "dxDateRangeBoxOptions.startDateName": {
+      "vue": "start-date-name"
+    },
+    "dxDateRangeBoxOptions.startDateOutOfRangeMessage": {
+      "vue": "start-date-out-of-range-message"
+    },
+    "dxDateRangeBoxOptions.startDatePlaceholder": {
+      "vue": "start-date-placeholder"
+    },
+    "dxDateRangeBoxOptions.startDateText": {
+      "vue": "start-date-text"
     },
     "dxDeferRendering": {
       "angular": "dx-defer-rendering",
@@ -12672,9 +12720,6 @@
     },
     "enums.DatePickerType": {
       "vue": "date-picker-type"
-    },
-    "enums.DateRangePickerType": {
-      "vue": "date-range-picker-type"
     },
     "enums.DateType": {
       "vue": "date-type"

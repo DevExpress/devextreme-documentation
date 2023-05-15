@@ -6,7 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies language parameters for DataSource sorting and filtering.
 
 ---
-<!-- Description goes here -->

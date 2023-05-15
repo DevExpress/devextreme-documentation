@@ -3,6 +3,7 @@ isType:
 uid: viz/polar_chart:dxPolarChartValueAxisConstantLines
 module: viz/polar_chart
 export: dxPolarChartValueAxisConstantLines
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

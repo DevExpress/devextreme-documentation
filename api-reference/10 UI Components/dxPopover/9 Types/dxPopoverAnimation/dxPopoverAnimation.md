@@ -3,6 +3,7 @@ uid: ui/popover:dxPopoverAnimation
 isType: 
 module: ui/popover
 export: dxPopoverAnimation
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

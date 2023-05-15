@@ -3,6 +3,7 @@ uid: viz/chart:dxChartArgumentAxisTitle
 isType: 
 module: viz/chart
 export: dxChartArgumentAxisTitle
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

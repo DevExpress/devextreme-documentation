@@ -3,6 +3,7 @@ uid: viz/polar_chart:dxPolarChartCommonAxisSettingsStripStyle
 isType: 
 module: viz/polar_chart
 export: dxPolarChartCommonAxisSettingsStripStyle
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

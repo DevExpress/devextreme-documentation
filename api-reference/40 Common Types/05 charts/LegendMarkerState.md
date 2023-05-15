@@ -9,5 +9,5 @@ The marker's state.
 
 ---
 <!--
-BaseLegendItem.marker.state(api-reference/_hidden/BaseLegendItem/marker/state.md)(common/charts.d.ts)
+BaseLegendItem.marker.state(/api-reference/_hidden/BaseLegendItem/marker/state.md)(common/charts.d.ts)
 -->

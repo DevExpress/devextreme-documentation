@@ -9,6 +9,6 @@ Specifies whether a user changes the current filter by including (selecting) or 
 
 ---
 <!--
-GridBaseColumn.filterType(api-reference/_hidden/GridBaseColumn/filterType.md)(common/grids.d.ts)
-PivotGridDataSourceOptions.fields.filterType(api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/filterType.md)(common/grids.d.ts)
+GridBaseColumn.filterType(/api-reference/_hidden/GridBaseColumn/filterType.md)(common/grids.d.ts)
+PivotGridDataSourceOptions.fields.filterType(/api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/filterType.md)(common/grids.d.ts)
 -->

@@ -9,5 +9,5 @@ Specifies the type of the date/time picker.
 
 ---
 <!--
-dxDateBoxOptions.pickerType(api-reference/10 UI Components/dxDateBox/1 Configuration/pickerType.md)(ui/date_box.d.ts)
+dxDateBoxOptions.pickerType(/api-reference/10 UI Components/dxDateBox/1 Configuration/pickerType.md)(ui/date_box.d.ts)
 -->

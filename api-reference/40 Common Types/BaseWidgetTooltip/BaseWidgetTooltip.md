@@ -3,6 +3,7 @@ uid: viz/core/base_widget:BaseWidgetTooltip
 isType: 
 module: viz/core/base_widget
 export: BaseWidgetTooltip
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

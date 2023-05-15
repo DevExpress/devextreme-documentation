@@ -3,6 +3,7 @@ isType:
 uid: viz/polar_chart:dxPolarChartArgumentAxisStrips
 module: viz/polar_chart
 export: dxPolarChartArgumentAxisStrips
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

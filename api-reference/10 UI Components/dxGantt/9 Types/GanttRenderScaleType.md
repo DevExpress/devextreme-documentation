@@ -9,5 +9,5 @@ Specifies a scale type to render.
 
 ---
 <!--
-dxGanttOptions.onScaleCellPrepared(api-reference/10 UI Components/dxGantt/1 Configuration/onScaleCellPrepared.md)
+dxGanttOptions.onScaleCellPrepared(/api-reference/10 UI Components/dxGantt/1 Configuration/onScaleCellPrepared.md)
 -->

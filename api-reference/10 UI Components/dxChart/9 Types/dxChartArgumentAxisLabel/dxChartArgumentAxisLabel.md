@@ -3,6 +3,7 @@ uid: viz/chart:dxChartArgumentAxisLabel
 isType: 
 module: viz/chart
 export: dxChartArgumentAxisLabel
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

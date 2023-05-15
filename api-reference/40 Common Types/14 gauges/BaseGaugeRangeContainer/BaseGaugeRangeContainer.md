@@ -3,6 +3,7 @@ uid: viz/gauges/base_gauge:BaseGaugeRangeContainer
 isType: 
 module: viz/gauges/base_gauge
 export: BaseGaugeRangeContainer
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

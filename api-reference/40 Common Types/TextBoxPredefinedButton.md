@@ -9,5 +9,5 @@ Specifies the predefined button for a textbox.
 
 ---
 <!--
-dxTextEditorOptions.buttons(api-reference/10 UI Components/dxTextEditor/1 Configuration/buttons/buttons.md)
+dxTextEditorOptions.buttons(/api-reference/10 UI Components/dxTextEditor/1 Configuration/buttons/buttons.md)
 -->

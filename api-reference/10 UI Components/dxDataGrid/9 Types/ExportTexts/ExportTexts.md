@@ -3,6 +3,7 @@ uid: ui/data_grid:ExportTexts
 isType: 
 module: ui/data_grid
 export: ExportTexts
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

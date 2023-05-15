@@ -3,6 +3,7 @@ uid: ui/popup:dxPopupAnimation
 isType: 
 module: ui/popup
 export: dxPopupAnimation
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

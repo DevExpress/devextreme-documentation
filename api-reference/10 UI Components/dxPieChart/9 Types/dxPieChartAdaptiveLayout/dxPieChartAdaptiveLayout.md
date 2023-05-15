@@ -3,6 +3,7 @@ uid: viz/pie_chart:dxPieChartAdaptiveLayout
 isType: 
 module: viz/pie_chart
 export: dxPieChartAdaptiveLayout
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

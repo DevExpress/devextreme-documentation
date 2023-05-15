@@ -1,8 +1,8 @@
 To change the color of a series, use one of the following options:
 
 - Specify the color [palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes') for the component.
-- Specify the [color](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#color) for a series.
-- Specify the [color](/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/#color) for all series.
+- Specify the [color](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/color.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/series/#color') for a series.
+- Specify the [color](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/color.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/commonSeriesSettings/#color') for all series.
 
 You can also add a custom pattern or gradient fill to the series.
 

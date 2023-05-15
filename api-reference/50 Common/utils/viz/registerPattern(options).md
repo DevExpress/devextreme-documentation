@@ -188,4 +188,4 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
 
 ---
 
-[note] If you specify width and height of a pattern template in percent, the exported component may look different.
+[note] For the component export to work correctly, the size of a pattern template must be specified in pixels or a CSS-specified measure of size (excluding percent).

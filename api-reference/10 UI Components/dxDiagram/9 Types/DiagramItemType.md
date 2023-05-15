@@ -9,5 +9,5 @@ Returns the type of the item.
 
 ---
 <!--
-dxDiagramItem.itemType(api-reference/50 Common/Object Structures/dxDiagramItem/itemType.md)(ui/diagram.d.ts)
+dxDiagramItem.itemType(/api-reference/50 Common/Object Structures/dxDiagramItem/itemType.md)(ui/diagram.d.ts)
 -->

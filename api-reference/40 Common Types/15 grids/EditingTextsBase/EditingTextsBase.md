@@ -3,6 +3,7 @@ uid: common/grids:EditingTextsBase
 isType: 
 module: common/grids
 export: EditingTextsBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

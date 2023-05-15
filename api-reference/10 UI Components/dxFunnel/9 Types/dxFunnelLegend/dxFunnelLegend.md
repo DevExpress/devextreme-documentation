@@ -3,6 +3,7 @@ isType:
 uid: viz/funnel:dxFunnelLegend
 module: viz/funnel
 export: dxFunnelLegend
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -9,5 +9,5 @@ Specifies available filter operations.
 
 ---
 <!--
-GridBaseColumn.filterOperations(api-reference/_hidden/GridBaseColumn/filterOperations.md)
+GridBaseColumn.filterOperations(/api-reference/_hidden/GridBaseColumn/filterOperations.md)
 -->

@@ -3,6 +3,7 @@ uid: viz/gauges/base_gauge:BaseGaugeScale
 isType: 
 module: viz/gauges/base_gauge
 export: BaseGaugeScale
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

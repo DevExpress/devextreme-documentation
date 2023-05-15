@@ -3,6 +3,7 @@ uid: ui/data_grid:SummaryTexts
 isType: 
 module: ui/data_grid
 export: SummaryTexts
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

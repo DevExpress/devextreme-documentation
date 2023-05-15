@@ -3,6 +3,7 @@ uid: viz/chart:dxChartValueAxisConstantLinesLabel
 isType: 
 module: viz/chart
 export: dxChartValueAxisConstantLinesLabel
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

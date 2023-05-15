@@ -6,6 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies language parameters for DataSource sorting and filtering.
+Specifies parameters for language-specific sorting and filtering.
 
 ---

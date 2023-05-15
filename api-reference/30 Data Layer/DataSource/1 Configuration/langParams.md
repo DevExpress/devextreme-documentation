@@ -5,10 +5,10 @@ inheritsType: LangParams
 ---
 ---
 ##### shortDescription
-Specifies language parameters for DataSource sorting and filtering.
+Specifies parameters for language-specific sorting and filtering.
 
 ---
-Use this property to improve sorting and filtering DataSource items with diacritic symbols. Specify locale and collator options as in example below:
+Use this property to include language-specific parameters into sorting and filtering operations. For example, you can use **langParams** to make DataSource recognize letters with diacritic symbols. Specify locale and collator options as in example below:
 
 ---
 ##### jQuery  

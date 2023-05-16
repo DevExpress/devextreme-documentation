@@ -5,6 +5,6 @@ default: 'End value must be a date'
 ---
 ---
 ##### shortDescription
-Specifies the message displayed if the typed value is not a valid end date.
+Specifies a message displayed if the typed end date is not a valid date.
 
 ---

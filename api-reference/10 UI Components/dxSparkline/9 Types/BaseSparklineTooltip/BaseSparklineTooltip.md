@@ -3,6 +3,7 @@ uid: viz/sparklines/base_sparkline:BaseSparklineTooltip
 isType: 
 module: viz/sparklines/base_sparkline
 export: BaseSparklineTooltip
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

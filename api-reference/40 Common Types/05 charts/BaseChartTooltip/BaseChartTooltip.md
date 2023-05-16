@@ -3,6 +3,7 @@ uid: viz/chart_components/base_chart:BaseChartTooltip
 isType: 
 module: viz/chart_components/base_chart
 export: BaseChartTooltip
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

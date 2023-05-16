@@ -9,5 +9,5 @@ Data change type.
 
 ---
 <!--
-DataChange.type(api-reference/_hidden/DataChange/type.md)(common/grids.d.ts)
+DataChange.type(/api-reference/_hidden/DataChange/type.md)(common/grids.d.ts)
 -->

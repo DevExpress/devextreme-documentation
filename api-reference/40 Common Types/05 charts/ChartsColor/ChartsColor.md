@@ -3,6 +3,7 @@ id: ChartsColor
 module: common/charts
 export: ChartsColor
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

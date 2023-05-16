@@ -9,6 +9,6 @@ A name used to identify the toolbar item.
 
 ---
 <!--
-dxDataGridToolbar.items(api-reference/_hidden/dxDataGridToolbar/items.md)
-dxDataGridToolbarItem.name(api-reference/_hidden/dxDataGridToolbarItem/name.md)
+dxDataGridToolbar.items(/api-reference/_hidden/dxDataGridToolbar/items.md)
+dxDataGridToolbarItem.name(/api-reference/_hidden/dxDataGridToolbarItem/name.md)
 -->

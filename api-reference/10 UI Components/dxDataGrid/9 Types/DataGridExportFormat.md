@@ -9,6 +9,6 @@ Specifies the availability and captions of data export buttons.
 
 ---
 <!--
-dxDataGridOptions.export.formats(api-reference/10 UI Components/dxDataGrid/9 Types/Export/formats.md)
-dxDataGridOptions.onExporting(api-reference/10 UI Components/dxDataGrid/1 Configuration/onExporting.md)
+dxDataGridOptions.export.formats(/api-reference/10 UI Components/dxDataGrid/9 Types/Export/formats.md)
+dxDataGridOptions.onExporting(/api-reference/10 UI Components/dxDataGrid/1 Configuration/onExporting.md)
 -->

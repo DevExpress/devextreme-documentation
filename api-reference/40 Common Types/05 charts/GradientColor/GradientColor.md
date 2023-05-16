@@ -1,5 +1,6 @@
 ---
 id: GradientColor
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

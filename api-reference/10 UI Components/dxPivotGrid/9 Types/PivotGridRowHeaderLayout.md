@@ -9,5 +9,5 @@ Specifies the layout of items in the [row header](/concepts/05%20UI%20Components
 
 ---
 <!--
-dxPivotGridOptions.rowHeaderLayout(api-reference/10 UI Components/dxPivotGrid/1 Configuration/rowHeaderLayout.md)(ui/pivot_grid.d.ts)
+dxPivotGridOptions.rowHeaderLayout(/api-reference/10 UI Components/dxPivotGrid/1 Configuration/rowHeaderLayout.md)(ui/pivot_grid.d.ts)
 -->

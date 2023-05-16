@@ -9,5 +9,5 @@ Specifies the field's area.
 
 ---
 <!--
-PivotGridDataSourceOptions.fields.area(api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/area.md)(ui/pivot_grid/data_source.d.ts)
+PivotGridDataSourceOptions.fields.area(/api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/area.md)(ui/pivot_grid/data_source.d.ts)
 -->

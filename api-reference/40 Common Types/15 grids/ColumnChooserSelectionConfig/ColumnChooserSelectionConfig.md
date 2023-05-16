@@ -3,6 +3,7 @@ id: ColumnChooserSelectionConfig
 module: common/grids
 export: ColumnChooserSelectionConfig
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -220,7 +220,19 @@
     "unlock",
     "imgarlock",
     "imgarunlock",
-    "bell"
+    "bell",
+    "sun",
+    "photooutline",
+    "panelright",
+    "panelleft",
+    "moon",
+    "login",
+    "eyeopen",
+    "eyeclose",
+    "expandform",
+    "description",
+    "belloutline",
+    "to",
 ];
 
 var divs = $.map(iconNames, function (name) {

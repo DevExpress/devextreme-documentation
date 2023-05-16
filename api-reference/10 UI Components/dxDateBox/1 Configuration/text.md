@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The read-only property that stores the text displayed by the UI component **input** element.
 
 ##### readonly
 

@@ -1,0 +1,3 @@
+The DropDownBox component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. The exceptions are listed in the [Accessibility Standards Compliance](/Documentation/Guide/UI_Components/DropDownBox/Accessibility/#Accessibility_Standards_Compliance) topic.
+
+To improve accessibility, use the [inputAttr](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#inputAttr) property to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component. You do not need to specify `aria-label` if you use [label](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#label).

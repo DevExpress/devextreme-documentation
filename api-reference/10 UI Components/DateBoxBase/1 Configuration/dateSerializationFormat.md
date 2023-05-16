@@ -5,18 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the date-time value serialization format. Use it only if you do not specify the [value](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value) at design time.
+Specifies the date value serialization format. Use it only if you do not specify the [value](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#value) at design time.
 
 ---
-Without a value, the UI component cannot detect the format. In this case, specify the **dateSerializationFormat** property that supports the following formats:
-
-- `"yyyy-MM-dd"` - a local date  
-
-- `"yyyy-MM-ddTHH:mm:ss"` - local date and time  
-
-- `"yyyy-MM-ddTHH:mm:ssZ"` - the UTC date and time  
-
-- `"yyyy-MM-ddTHH:mm:ssx"` - date and time with the timezone
+Without a value, the UI component cannot detect the format. In this case, specify the **dateSerializationFormat** property (`"yyyy-MM-dd"` - "2017-03-06").
 
 This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/Documentation/ApiReference/Common/utils/#configconfig).
 

@@ -5,6 +5,6 @@ default: 'OK'
 ---
 ---
 ##### shortDescription
-Specifies the text displayed on the Apply button.
+Specifies the Apply button's text.
 
 ---

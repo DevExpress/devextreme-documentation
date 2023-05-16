@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The minimum date that can be selected within the UI component.
+The earliest date that can be selected in the UI component.
 
 ---

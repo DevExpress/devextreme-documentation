@@ -5,6 +5,6 @@ default: 'Value is out of range'
 ---
 ---
 ##### shortDescription
-Specifies the message displayed if the specified date is later than the [max]({basewidgetpath}/Configuration/#max) value or earlier than the [min]({basewidgetpath}/Configuration/#min) value.
+Specifies the message displayed if the date is after the [max]({basewidgetpath}/Configuration/#max) value or before the [min]({basewidgetpath}/Configuration/#min) value.
 
 ---

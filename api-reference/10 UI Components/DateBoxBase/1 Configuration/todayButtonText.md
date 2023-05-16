@@ -5,6 +5,6 @@ default: 'Today'
 ---
 ---
 ##### shortDescription
-Specified the text displayed on the Today button.
+Specified the Today button's text.
 
 ---

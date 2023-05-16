@@ -5,6 +5,6 @@ default: 'End Date'
 ---
 ---
 ##### shortDescription
-Specifies a label of the end date input field.
+Specifies the label of the end date input field.
 
 ---

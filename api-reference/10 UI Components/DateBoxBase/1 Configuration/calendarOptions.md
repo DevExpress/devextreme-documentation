@@ -8,7 +8,7 @@ default: {}
 Configures the calendar's value picker. Applies only if the [pickerType](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#pickerType) is *"calendar"*.
 
 ---
-You can specify most of the [Calendar properties](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/) in this object except those listed below. These properties are overridden by their {WidgetName} counterparts.
+You can specify the [Calendar properties](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/) in this object except those listed below. These properties are overridden by their {WidgetName} counterparts.
 
 - [dateSerializationFormat](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#dateSerializationFormat)
 - [disabledDates](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#disabledDates)

@@ -5,6 +5,6 @@ default: 'Value must be a date or time'
 ---
 ---
 ##### shortDescription
-Specifies a message displayed if the typed value is not a valid date or time.
+Specifies a message that is displayed if the typed value is not a valid date or time.
 
 ---

@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to control user input with a mask created based on the [displayFormat](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#displayFormat) property.
+Specifies whether to limit user input with a mask created based on the [displayFormat](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#displayFormat) property.
 
 ---

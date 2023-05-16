@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the DateRangeBox UI component.
+An object that defines configuration properties for the DateRangeBox UI component.
 
 ---
 #####See Also#####

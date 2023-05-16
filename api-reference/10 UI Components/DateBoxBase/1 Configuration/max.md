@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The last date that can be selected within the UI component.
+The latest date that can be selected in the UI component.
 
 ---

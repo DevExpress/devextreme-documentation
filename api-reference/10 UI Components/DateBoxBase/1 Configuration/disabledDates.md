@@ -14,7 +14,7 @@ Information about the checked date.
 The UI component's [instance](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Methods/#instance).
 
 ##### field(data.date): Date
-The currently checked date.
+The checked date.
 
 ##### field(data.view): String
 The current view: *"month"*, *"year"*, *"decade"*, or *"century"*.

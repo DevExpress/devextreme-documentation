@@ -7,7 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies parameters for language-specific sorting and filtering.
 
 ---
-<!-- Description goes here -->

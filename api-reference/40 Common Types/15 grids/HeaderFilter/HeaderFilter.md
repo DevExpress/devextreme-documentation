@@ -3,6 +3,7 @@ uid: common/grids:HeaderFilter
 isType: 
 module: common/grids
 export: HeaderFilter
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

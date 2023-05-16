@@ -9,7 +9,7 @@ Configures toolbar items' settings.
 
 ---
 <!--
-dxFileManagerToolbar.fileSelectionItems(api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems/fileSelectionItems.md)
-dxFileManagerToolbar.items(api-reference/_hidden/dxFileManagerToolbar/items/items.md)
-dxFileManagerToolbarItem.name(api-reference/_hidden/dxFileManagerToolbarItem/name.md)
+dxFileManagerToolbar.fileSelectionItems(/api-reference/_hidden/dxFileManagerToolbar/fileSelectionItems/fileSelectionItems.md)
+dxFileManagerToolbar.items(/api-reference/_hidden/dxFileManagerToolbar/items/items.md)
+dxFileManagerToolbarItem.name(/api-reference/_hidden/dxFileManagerToolbarItem/name.md)
 -->

@@ -9,5 +9,5 @@ Specifies how the chart must behave when [series point labels](/concepts/05%20UI
 
 ---
 <!--
-dxChartOptions.resolveLabelOverlapping(api-reference/10 UI Components/dxChart/1 Configuration/resolveLabelOverlapping.md)(common/charts.d.ts)
+dxChartOptions.resolveLabelOverlapping(/api-reference/10 UI Components/dxChart/1 Configuration/resolveLabelOverlapping.md)(common/charts.d.ts)
 -->

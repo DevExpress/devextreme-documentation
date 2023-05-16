@@ -9,11 +9,11 @@ Specifies the Diagram command's identifier.
 
 ---
 <!--
-dxDiagramCustomCommand.name(api-reference/50 Common/Object Structures/dxDiagramCustomCommand/name.md)
-dxDiagramOptions.contextMenu.commands(api-reference/10 UI Components/dxDiagram/1 Configuration/contextMenu/commands.md)
-dxDiagramOptions.historyToolbar.commands(api-reference/10 UI Components/dxDiagram/1 Configuration/historyToolbar/commands.md)
-dxDiagramOptions.mainToolbar.commands(api-reference/10 UI Components/dxDiagram/1 Configuration/mainToolbar/commands.md)
-dxDiagramOptions.propertiesPanel.tabs.commands(api-reference/10 UI Components/dxDiagram/1 Configuration/propertiesPanel/tabs/commands.md)
-dxDiagramOptions.propertiesPanel.tabs.groups.commands(api-reference/10 UI Components/dxDiagram/1 Configuration/propertiesPanel/tabs/groups/commands.md)
-dxDiagramOptions.viewToolbar.commands(api-reference/10 UI Components/dxDiagram/1 Configuration/viewToolbar/commands.md)
+dxDiagramCustomCommand.name(/api-reference/50 Common/Object Structures/dxDiagramCustomCommand/name.md)
+dxDiagramOptions.contextMenu.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/contextMenu/commands.md)
+dxDiagramOptions.historyToolbar.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/historyToolbar/commands.md)
+dxDiagramOptions.mainToolbar.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/mainToolbar/commands.md)
+dxDiagramOptions.propertiesPanel.tabs.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/propertiesPanel/tabs/commands.md)
+dxDiagramOptions.propertiesPanel.tabs.groups.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/propertiesPanel/tabs/groups/commands.md)
+dxDiagramOptions.viewToolbar.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/viewToolbar/commands.md)
 -->

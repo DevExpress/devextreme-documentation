@@ -3,6 +3,7 @@ id: HeaderFilterSearchConfig
 module: common/grids
 export: HeaderFilterSearchConfig
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

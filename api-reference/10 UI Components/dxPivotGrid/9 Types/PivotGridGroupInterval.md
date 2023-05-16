@@ -9,5 +9,5 @@ Specifies how the field's values are combined into groups for the [headers](/con
 
 ---
 <!--
-PivotGridDataSourceOptions.fields.groupInterval(api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/groupInterval.md)
+PivotGridDataSourceOptions.fields.groupInterval(/api-reference/30 Data Layer/PivotGridDataSource/1 Configuration/fields/groupInterval.md)
 -->

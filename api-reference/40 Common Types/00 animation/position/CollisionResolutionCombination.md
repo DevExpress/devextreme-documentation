@@ -9,5 +9,5 @@ Specifies how to resolve collisions - when the overlay element exceeds the [boun
 
 ---
 <!--
-PositionConfig.collision(api-reference/50 Common/Object Structures/positionConfig/collision/collision.md)
+PositionConfig.collision(/api-reference/50 Common/Object Structures/positionConfig/collision/collision.md)
 -->

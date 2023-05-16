@@ -1,0 +1,1 @@
+The TreeList component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. The exceptions are listed in the [Accessibility Standards Compliance](/Documentation/Guide/UI_Components/TreeList/Accessibility/#Accessibility_Standards_Compliance) topic.

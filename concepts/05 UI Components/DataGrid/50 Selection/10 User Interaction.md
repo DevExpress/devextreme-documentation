@@ -273,7 +273,7 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     
 ---
 
-The [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode') property specifies when the UI component renders check boxes in the selection column. For example, the following code tells the UI component to never render them, though a user can still select rows using [keyboard shortcuts](/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Keyboard_Navigation):
+The [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/showCheckBoxesMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode') the property specifies when the UI component renders checkboxes in the selection column. For example, the following code tells the UI component to never render them, though a user can still select rows using [keyboard shortcuts](/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Keyboard_Navigation):
 
 ---
 ##### jQuery

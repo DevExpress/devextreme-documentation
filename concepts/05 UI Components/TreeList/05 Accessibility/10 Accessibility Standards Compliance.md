@@ -40,7 +40,7 @@ The TreeList component complies to all <a href="https://www.access-board.gov/ict
         <td>11.5.2.12 Execution of available actions</td>
         <td>2.1.1 Keyboard (Level A)</td>
         <td><ul>
-                <li>The column fixing and column visibility customization features cause accessibility issues.</li>
+                <li>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</li>
                 <li>The master-detail feature does not support keyboard navigation.</li>
                 <li>Adaptive rows cannot be expanded/collapsed using keyboard navigation.</li>
             </ul>    

@@ -8,13 +8,17 @@ default: undefined
 Specifies a custom template for content in the pie's center.
 
 ##### param(component): dxPieChart
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### param(element): SVGGElement
-<!-- Description goes here -->
+An empty SVGGElement that acts as a container for the template content.
 
 ##### return: String | SVGElement | jQuery
-<!-- Description goes here -->
+One of the following:
+
+- SVG markup as a string
+- An SVGElement
+- SVG markup wrapped in a jQuery element
 
 ---
 You need to render template content as an [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) element. The following code snippet shows how to specify a custom template for content in the PieChart's center:

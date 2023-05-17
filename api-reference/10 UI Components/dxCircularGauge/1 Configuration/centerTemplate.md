@@ -7,5 +7,14 @@ default: undefined
 ##### shortDescription
 Specifies a custom template for content in the component's center.
 
+##### param(component): dxCircularGauge
+<!-- Description goes here -->
+
+##### param(element): SVGGElement
+<!-- Description goes here -->
+
+##### return: String | SVGElement | jQuery
+<!-- Description goes here -->
+
 ---
 #include gauges-centertemplate-code

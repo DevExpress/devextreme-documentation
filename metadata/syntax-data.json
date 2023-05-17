@@ -5319,14 +5319,8 @@
     "dxDropDownListOptions.applyValueMode": {
       "vue": "apply-value-mode"
     },
-    "dxDropDownListOptions.contentRender": {
-      "vue": "content-render"
-    },
     "dxDropDownListOptions.displayValue": {
       "vue": "display-value"
-    },
-    "dxDropDownListOptions.fieldRender": {
-      "vue": "field-render"
     },
     "dxDropDownListOptions.fieldTemplate": {
       "vue": "field-template"
@@ -11699,9 +11693,6 @@
     "dxTagBoxOptions.hideSelectedItems": {
       "vue": "hide-selected-items"
     },
-    "dxTagBoxOptions.itemRender": {
-      "vue": "item-render"
-    },
     "dxTagBoxOptions.maxDisplayedTags": {
       "vue": "max-displayed-tags"
     },
@@ -13009,9 +13000,6 @@
     },
     "dxValidationSummaryOptions.itemHoldTimeout": {
       "vue": "item-hold-timeout"
-    },
-    "dxValidationSummaryOptions.itemRender": {
-      "vue": "item-render"
     },
     "dxValidationSummaryOptions.keyExpr": {
       "vue": "key-expr"

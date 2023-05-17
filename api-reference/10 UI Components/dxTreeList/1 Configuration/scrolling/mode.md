@@ -17,6 +17,6 @@ This mode is an alternative to paging where pages are rendered when they get int
     - Rows grouping is enabled.
     - The [allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md 'Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') property is disabled.
 
-Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is "_virtual_" and cannot be changed if you set the **mode** property to "_virtual_" or "_infinite_".
+Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is "*virtual*" and cannot be changed if you set the **mode** property to "*virtual*" or "*standard*".
 
 Regardless of the scrolling mode, you can use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize') property to specify the number of rows on a page.

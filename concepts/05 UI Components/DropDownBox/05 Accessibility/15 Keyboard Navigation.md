@@ -11,7 +11,7 @@ An end user can use the following keys to interact with the DropDownBox componen
     </tr>
 </table>
 
-Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Methods/#registerKeyHandlerkey_handler') method to implement a custom handler for a key.
+Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Components/Widget/3%20Methods/registerKeyHandler(key_handler).md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Methods/#registerKeyHandlerkey_handler') method to implement a custom handler for a key.
 
 ---
 

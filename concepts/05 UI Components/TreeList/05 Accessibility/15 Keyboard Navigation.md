@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the TreeList component: 
+A user can use the following keys to interact with the TreeList component: 
 
 <table class="dx-table">
     <tr>

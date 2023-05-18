@@ -1,0 +1,1 @@
+The DataGrid component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. The exceptions are listed in the [Accessibility Standards Compliance](/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Accessibility_Standards_Compliance) topic.

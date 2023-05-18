@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the DataGrid component: 
+A user can use the following keys to interact with the DataGrid component: 
 
 <table class="dx-table full-width">
     <tr>

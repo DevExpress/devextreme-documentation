@@ -11,7 +11,7 @@ Specifies when to display the selection column and row selection checkboxes. App
 The possible values are:
 
 - *"onClick"*
-The selection column is always shown. Checkboxes appear once a user clicks in the column or if two or more rows are selected [programmatically](/concepts/05%20UI%20Components/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/DataGrid/Selection/#API/Initial_and_Runtime_Selection') or using [keyboard shortcuts](/concepts/05%20UI%20Components/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/DataGrid/Keyboard_Support/'). Checkboxes disappear once row selection is canceled.
+The selection column is always shown. Checkboxes appear once a user clicks in the column or if two or more rows are selected [programmatically](/concepts/05%20UI%20Components/DataGrid/50%20Selection/20%20API/1%20Initial%20and%20Runtime%20Selection.md '/Documentation/Guide/UI_Components/DataGrid/Selection/#API/Initial_and_Runtime_Selection') or using [keyboard shortcuts](/concepts/05%20UI%20Components/DataGrid/05%20Accessibility/15%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Keyboard_Navigation'). Checkboxes disappear once row selection is canceled.
 
 - *"onLongTap"*
 The selection column with all the checkboxes appears and disappears on long tap (click and hold).
@@ -22,7 +22,7 @@ The selection column with all the checkboxes is always visible. A user can selec
 - *"none"*  
 The selection column with all the checkboxes is hidden. Users can select rows with keyboard shortcuts or long tap (click and hold).
 
-[Keyboard shortcuts](/concepts/05%20UI%20Components/DataGrid/75%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/DataGrid/Keyboard_Support/') work identically regardless of the chosen mode.
+[Keyboard shortcuts](/concepts/05%20UI%20Components/DataGrid/05%20Accessibility/15%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Keyboard_Navigation') work identically regardless of the chosen mode.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"

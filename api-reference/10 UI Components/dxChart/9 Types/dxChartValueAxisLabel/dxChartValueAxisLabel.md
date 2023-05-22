@@ -3,6 +3,7 @@ uid: viz/chart:dxChartValueAxisLabel
 isType: 
 module: viz/chart
 export: dxChartValueAxisLabel
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

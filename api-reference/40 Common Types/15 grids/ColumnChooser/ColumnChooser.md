@@ -3,10 +3,10 @@ id: ColumnChooser
 module: common/grids
 export: ColumnChooser
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column chooser.
 
 ---
-<!-- Description goes here -->

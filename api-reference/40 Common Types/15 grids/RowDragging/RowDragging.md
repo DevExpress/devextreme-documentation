@@ -3,6 +3,7 @@ uid: common/grids:RowDragging
 isType: 
 module: common/grids
 export: RowDragging
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

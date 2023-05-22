@@ -9,5 +9,5 @@ Specifies in which markup language the [value](/api-reference/10%20UI%20Componen
 
 ---
 <!--
-dxHtmlEditorOptions.valueType(api-reference/10 UI Components/dxHtmlEditor/1 Configuration/valueType.md)(ui/html_editor.d.ts)
+dxHtmlEditorOptions.valueType(/api-reference/10 UI Components/dxHtmlEditor/1 Configuration/valueType.md)(ui/html_editor.d.ts)
 -->

@@ -1,0 +1,15 @@
+This functionality is available for the following Chart series:
+
+- [Area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/AreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/AreaSeries/#color')
+- [Stacked area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StackedAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StackedAreaSeries/#color')
+- [Full-stacked area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/#color')
+- [Spline area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/SplineAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineAreaSeries/#color')
+- [Stacked spline area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StackedSplineAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StackedSplineAreaSeries/#color')
+- [Full-stacked spline area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedSplineAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedSplineAreaSeries/#color')
+- [Range area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeAreaSeries/#color')
+- [Step area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StepAreaSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StepAreaSeries/#color')
+- [Bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BarSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/#color')
+- [Stacked bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/StackedBarSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/StackedBarSeries/#color')
+- [Full-stacked bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedBarSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/#color')
+- [Range bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/RangeBarSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/RangeBarSeries/#color')
+- [Bubble](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BubbleSeries/color.md '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/#color')

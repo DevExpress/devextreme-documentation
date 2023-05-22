@@ -3,6 +3,7 @@ uid: viz/chart:dxChartCommonAxisSettingsLabel
 isType: 
 module: viz/chart
 export: dxChartCommonAxisSettingsLabel
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

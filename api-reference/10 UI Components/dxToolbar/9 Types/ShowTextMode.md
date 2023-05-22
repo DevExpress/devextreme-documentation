@@ -9,5 +9,5 @@ Specifies when to display the text for the UI component item.
 
 ---
 <!--
-dxToolbarItem.showText(api-reference/_hidden/dxToolbarItem/showText.md)(ui/toolbar.d.ts)
+dxToolbarItem.showText(/api-reference/_hidden/dxToolbarItem/showText.md)(ui/toolbar.d.ts)
 -->

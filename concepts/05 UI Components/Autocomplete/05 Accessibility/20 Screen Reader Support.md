@@ -1,0 +1,3 @@
+The Autocomplete component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. 
+
+To improve accessibility, use the [inputAttr](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#inputAttr') property to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component. You do not need to specify `aria-label` if you use [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/label.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#label').

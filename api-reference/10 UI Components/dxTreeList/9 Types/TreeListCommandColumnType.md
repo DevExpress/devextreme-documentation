@@ -9,5 +9,5 @@ Specifies the [command column](/concepts/05%20UI%20Components/TreeList/10%20Colu
 
 ---
 <!--
-dxTreeListColumn.type(api-reference/_hidden/dxTreeListColumn/type.md)(ui/tree_list.d.ts)
+dxTreeListColumn.type(/api-reference/_hidden/dxTreeListColumn/type.md)(ui/tree_list.d.ts)
 -->

@@ -3,6 +3,7 @@ isType:
 uid: viz/chart:dxChartArgumentAxisStrips
 module: viz/chart
 export: dxChartArgumentAxisStrips
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

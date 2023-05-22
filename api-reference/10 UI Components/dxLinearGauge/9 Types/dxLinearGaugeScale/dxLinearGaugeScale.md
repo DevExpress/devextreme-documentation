@@ -3,6 +3,7 @@ uid: viz/linear_gauge:dxLinearGaugeScale
 isType: 
 module: viz/linear_gauge
 export: dxLinearGaugeScale
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

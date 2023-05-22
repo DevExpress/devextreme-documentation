@@ -9,5 +9,5 @@ Specifies a filter operation that applies when users use the [filter row](/api-r
 
 ---
 <!--
-GridBaseColumn.selectedFilterOperation(api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md)(common/grids.d.ts)
+GridBaseColumn.selectedFilterOperation(/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md)(common/grids.d.ts)
 -->

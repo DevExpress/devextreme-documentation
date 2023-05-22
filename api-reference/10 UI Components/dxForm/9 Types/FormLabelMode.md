@@ -9,5 +9,5 @@ Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/d
 
 ---
 <!--
-dxFormOptions.labelMode(api-reference/10 UI Components/dxForm/1 Configuration/labelMode.md)(ui/form.d.ts)
+dxFormOptions.labelMode(/api-reference/10 UI Components/dxForm/1 Configuration/labelMode.md)(ui/form.d.ts)
 -->

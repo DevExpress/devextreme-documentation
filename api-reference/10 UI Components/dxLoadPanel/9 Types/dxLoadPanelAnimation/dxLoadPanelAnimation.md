@@ -3,6 +3,7 @@ uid: ui/load_panel:dxLoadPanelAnimation
 isType: 
 module: ui/load_panel
 export: dxLoadPanelAnimation
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

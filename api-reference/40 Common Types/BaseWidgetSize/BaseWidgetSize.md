@@ -3,6 +3,7 @@ uid: viz/core/base_widget:BaseWidgetSize
 isType: 
 module: viz/core/base_widget
 export: BaseWidgetSize
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

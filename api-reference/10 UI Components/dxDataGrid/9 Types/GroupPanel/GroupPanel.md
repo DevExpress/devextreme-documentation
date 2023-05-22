@@ -3,6 +3,7 @@ uid: ui/data_grid:GroupPanel
 isType: 
 module: ui/data_grid
 export: GroupPanel
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

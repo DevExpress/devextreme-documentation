@@ -3,6 +3,7 @@ isType:
 uid: viz/bar_gauge:dxBarGaugeLegend
 module: viz/bar_gauge
 export: dxBarGaugeLegend
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

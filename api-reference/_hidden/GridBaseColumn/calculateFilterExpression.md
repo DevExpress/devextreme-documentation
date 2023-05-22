@@ -202,6 +202,8 @@ If you [specify a custom header filter data source](/concepts/05%20UI%20Componen
 
 [/note]
 
+If you use the search panel, the DataGrid may invoke the **calculateFilterExpression** function multiple times for lookup columns. The first call is to filter the lookup's data source, and subsequent calls are to filter the DataGrid's data source.
+
 #####See Also#####
 - [filterValue](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterValue.md '{basewidgetpath}/Configuration/#filterValue')
 - **columns[]**.[filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '{basewidgetpath}/Configuration/columns/#filterValue')

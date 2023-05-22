@@ -9,7 +9,7 @@ default: 'auto'
 Specifies whether the pager is visible.
 
 ---
-The pager is visible if paging is [enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/enabled.md '{basewidgetpath}/Configuration/paging/#enabled') and the total row count is greater than the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '{basewidgetpath}/Configuration/paging/#pageSize') property.
+The pager is only visible if paging is [enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/enabled.md '{basewidgetpath}/Configuration/paging/#enabled') and the total row count is greater than the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '{basewidgetpath}/Configuration/paging/#pageSize') property. If you choose a large page size (for example "All" supported in [allowedPageSizes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/allowedPageSizes.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/pager/#allowedPageSizes')) and the data does not increase (for example, with state storing enabled), the pager is hidden permanently.
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordPaging/",

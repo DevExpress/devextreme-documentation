@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+A user can use the following keys to interact with the Accordion component: 
 
 <table class="dx-table">
     <tr>
@@ -32,10 +32,3 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [Accordion Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview)
-- [Accordion API Reference](/api-reference/10%20UI%20Components/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
-
-[tags]accordion, accessibility, keyboard shortcuts

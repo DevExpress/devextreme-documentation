@@ -81,7 +81,7 @@ The DateRangeBox UI component allows users to type or pick a date range in a sin
     export default function App() { 
         return (
             <DateRangeBox
-                multiVue=false
+                multiView=false
                 applyValueMode="useButtons" // or "instantly" 
             />
         );

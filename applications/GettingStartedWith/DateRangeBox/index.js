@@ -1,16 +1,15 @@
 $(function() {
     $("#dateRangeBox").dxDateRangeBox({
-        min: new Date(1920, 0, 1),
-        max: new Date(2030, 0, 1),
+        startDate: new Date(),
+        endDate: new Date(new Date().setDate(new Date().getDate() + 7)),
+        min: new Date(new Date().setDate(new Date().getDate() - 14)),
+        max: new Date(new Date().setDate(new Date().getDate() + 14)),
         startDateLabel: "Start",
         endDateLabel: "End",
         labelMode: "floating",
         displayFormat: "EEEE, d 'of' MMM", // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
         useMaskBehavior: true,
+        openOnFieldClick: false,
         showClearButton: true,
-        onValueChanged: (e) => {
-            console.log(e.value);
-            console.log(e.previousValue);
-        },
     });
 });

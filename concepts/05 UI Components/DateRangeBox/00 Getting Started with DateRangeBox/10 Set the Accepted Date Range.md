@@ -6,10 +6,8 @@ You can define an available range from which end-users can select dates. For thi
     <!-- tab: index.js -->
     $(function() {
         $("#dateRangeBox").dxDateRangeBox({
-            min: new Date(1920, 0, 1),
-            max: new Date(2030, 0, 1),
-            startDate: new Date(),
-            endDate: new Date(new Date().setDate(new Date().getDate() + 7)),
+            min: new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
+            max: new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
          });
     });
 
@@ -31,8 +29,8 @@ You can define an available range from which end-users can select dates. For thi
     })
     
     export class AppComponent {
-        minDate: Date = new Date(1920, 0, 1);
-        maxDate: Date = new Date(2030, 0, 1);
+        minDate: Date = new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
+        maxDate: Date = new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
     }
 
 ##### Vue
@@ -56,8 +54,8 @@ You can define an available range from which end-users can select dates. For thi
         },
         data() {
             return {
-                minDate: new Date(1920, 0, 1)
-                maxDate: new Date(2030, 0, 1)
+                minDate: new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
+                maxDate: new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
             }
         }
     }
@@ -76,8 +74,8 @@ You can define an available range from which end-users can select dates. For thi
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
-    const minDate = new Date(1920, 0, 1);
-    const maxDate = new Date(2030, 0, 1);
+    const minDate = new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
+    const maxDate = new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
     </script>
 
 ##### React
@@ -89,8 +87,8 @@ You can define an available range from which end-users can select dates. For thi
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
 
-    const minDate = new Date(1920, 0, 1);
-    const maxDate = new Date(2030, 0, 1);
+    const minDate = new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
+    const maxDate = new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
 
     export default function App() { 
         return (
@@ -103,4 +101,4 @@ You can define an available range from which end-users can select dates. For thi
 
 ---
 
-Run the code and ensure that the only available dates are between 1 Jan 1920 and 1 Jan 2030. Next, we will configure the UI component's initial values.
+Run the code and ensure that the only available dates are between two weeks before and two weeks after the current date. Next, we will configure the UI component's initial values.

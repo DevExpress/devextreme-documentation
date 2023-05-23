@@ -1,4 +1,4 @@
-You can define an available range from which end-users can select dates. For this purpose, specify the [min](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#max) properties:
+You can define an available range from which end-users can select dates. For this purpose, specify the [min](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#max) properties.
 
 ---
 ##### jQuery
@@ -29,8 +29,8 @@ You can define an available range from which end-users can select dates. For thi
     })
     
     export class AppComponent {
-        minDate: Date = new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
-        maxDate: Date = new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
+        minDate: Date = new Date(new Date().setDate(new Date().getDate() - 14)); // 2 weeks before the current date
+        maxDate: Date = new Date(new Date().setDate(new Date().getDate() + 14)); // 2 weeks after the current date
     }
 
 ##### Vue

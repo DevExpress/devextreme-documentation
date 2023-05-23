@@ -11,6 +11,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
         $("#dateRangeBoxContainer").dxDateRangeBox({
             displayFormat: "EEEE, d 'of' MMM", // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
             useMaskBehavior: true,
+            // ...
         });
     });
 
@@ -20,6 +21,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
     <dx-date-range-box
         displayFormat="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct"
         [useMaskBehavior]="true" 
+        // ...
     ></dx-date-range-box>
 
     <!-- tab: app.component.ts -->
@@ -43,6 +45,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
         <DxDateRangeBox
             display-format="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
             :use-mask-behavior="true" 
+            // ...
         /> 
     </template>
 
@@ -63,6 +66,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
         <DxDateRangeBox
             display-format="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
             :use-mask-behavior="true" 
+            // ...
         /> 
     </template>
 
@@ -87,6 +91,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
             <DateRangeBox ...
                 displayFormat="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
                 useMaskBehavior={true}
+                // ...
             />
         );
     }

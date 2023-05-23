@@ -91,4 +91,4 @@ If you want to define the start date and end date labels, you can use the [start
 
 ---
 
-In the next step, we will handle the value change event.
+In the next step, we will handle the values change event.

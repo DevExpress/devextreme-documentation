@@ -1,0 +1,3 @@
+Compliance with the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a> and <a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a> standards is essential for DevExtreme components to prioritize accessibility.
+
+Refer to the following topic to learn more about how DevExtreme components comply to these standards: [Voluntary Product Accessibility Template](/Documentation/Guide/Common/Accessibility/Voluntary_Product_Accessibility_Template/).

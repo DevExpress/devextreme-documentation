@@ -1,5 +1,6 @@
 ---
 ##### jQuery
+
     <!-- tab: index.js -->
     $(function() {
         $("#dateRangeBox").dxDateRangeBox({

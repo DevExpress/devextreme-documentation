@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the date's display format.
+Specifies the date's display format. 
 
 ---
 Set [useMaskBehavior](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configuration/useMaskBehavior.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#useMaskBehavior') to **true** to limit user input according to the display format.

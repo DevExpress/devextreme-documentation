@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the range's end date.
+Specifies the range's end date. 
 
 ---
 You can specify the end date with any of the following formats:

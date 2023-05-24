@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies the start date of date range.
+Specifies the start date of date range. 
 
 ---
 You can specify the start date with any of the following formats:

@@ -5,6 +5,6 @@ default: {}
 ---
 ---
 ##### shortDescription
-Specifies the attributes to be passed on to the start date input field.
+Specifies the attributes to be passed on to the start date input field. 
 
 ---

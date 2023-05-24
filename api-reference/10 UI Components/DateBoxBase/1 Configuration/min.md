@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The earliest date that can be selected in the UI component.
+The earliest date that can be selected in the UI component. 
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes members used to manipulate the UI component.
+This section describes members used to manipulate the UI component. 
 
 ---
 #####See Also#####

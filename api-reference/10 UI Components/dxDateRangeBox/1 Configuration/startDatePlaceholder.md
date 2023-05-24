@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies a placeholder for the start date input field.
+Specifies a placeholder for the start date input field. 
 
 ---
 

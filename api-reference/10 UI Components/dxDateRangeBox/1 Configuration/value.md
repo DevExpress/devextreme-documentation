@@ -5,7 +5,7 @@ default: [null, null]
 ---
 ---
 ##### shortDescription
-An array of date range values currently selected using the date box.
+An array of date range values currently selected using the date box. 
 
 ---
 

@@ -5,7 +5,7 @@ default: 'Start Date'
 ---
 ---
 ##### shortDescription
-Specifies a label of the start date input field.
+Specifies a label of the start date input field. 
 
 ---
 

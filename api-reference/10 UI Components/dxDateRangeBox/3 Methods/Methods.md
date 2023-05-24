@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-This section describes members used to manipulate the DateRangeBox UI component.
+This section describes members used to manipulate the DateRangeBox UI component. 
 
 ---

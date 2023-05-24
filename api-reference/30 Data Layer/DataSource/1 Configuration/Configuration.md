@@ -5,7 +5,7 @@ This section describes properties that configure the **DataSource**.
 ---
 [note]
 
-The **DataSource** allows specifying [**CustomStore** properties](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/') in its configuration object, as shown in the following code:
+The **DataSource** allows to specify [**CustomStore** properties](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/') in its configuration object, as shown in the following code:
 
 ---
 ##### jQuery

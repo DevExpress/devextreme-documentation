@@ -1,7 +1,6 @@
 ---
-id: EventInfo
-module: events/index
-export: EventInfo
+id: NativeEventInfo.event
+type: event
 ---
 ---
 ##### shortDescription

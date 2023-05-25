@@ -1,7 +1,6 @@
 ---
-id: Cancelable
-module: events/index
-export: Cancelable
+id: Cancelable.cancel
+type: Boolean
 ---
 ---
 ##### shortDescription

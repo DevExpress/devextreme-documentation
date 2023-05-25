@@ -1,7 +1,6 @@
 ---
-id: NativeEventInfo
-module: events/index
-export: NativeEventInfo
+id: NativeEventInfo.element
+type: DxElement
 ---
 ---
 ##### shortDescription

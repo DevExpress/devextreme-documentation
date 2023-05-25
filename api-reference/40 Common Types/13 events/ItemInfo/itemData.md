@@ -1,7 +1,6 @@
 ---
-id: ChangedOptionInfo
-module: events/index
-export: ChangedOptionInfo
+id: ItemInfo.itemData
+type: Object
 ---
 ---
 ##### shortDescription

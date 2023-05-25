@@ -1,7 +1,8 @@
 ---
-id: InitializedEventInfo
+id: Cancelable
 module: events/index
-export: InitializedEventInfo
+export: Cancelable
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -91,4 +91,4 @@ If you want to define start date and end date labels, use [startDateLabel](/Docu
 
 ---
 
-In the next step, we will handle the values change event.
+The next step handles the value change event.

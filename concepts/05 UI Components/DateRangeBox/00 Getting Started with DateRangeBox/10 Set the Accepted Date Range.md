@@ -1,4 +1,4 @@
-You can define an available range from which end-users can select dates. For this purpose, specify the [min](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#max) properties.
+You can define constraints for date ranges that can be selected by end-users. Specify the [min](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#max) properties.
 
 ---
 ##### jQuery
@@ -101,4 +101,4 @@ You can define an available range from which end-users can select dates. For thi
 
 ---
 
-Run the code and ensure that the only available dates are between two weeks before and two weeks after the current date. Next, we will configure the UI component's initial values.
+Run the code. You can now select dates only within the predefined range: from two weeks before the current date to two weeks after. The next step specifies the date range selected at startup.

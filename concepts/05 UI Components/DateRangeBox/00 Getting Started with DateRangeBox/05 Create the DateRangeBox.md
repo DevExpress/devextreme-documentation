@@ -117,4 +117,4 @@ Use the following code to create a basic DateRangeBox:
 
 ---
 
-If you run this code, you will see the DateRangeBox that allows users to specify or pick dates in a specific range. Next, we will configure the UI component's available date range.
+Run this code. You will see a DateRangeBox component that allows users to enter or pick two dates (a date range). The next step configures date range constraints.

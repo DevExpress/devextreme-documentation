@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-The DateRangeBox is a UI component that allows users to specify or pick dates in the needed range.
+DateRangeBox is a UI component that allows users to enter or pick two dates (a date range).
 
 This tutorial shows how to configure basic DateRangeBox features.
 

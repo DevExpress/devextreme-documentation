@@ -1,7 +1,7 @@
-The DateRangeBox's values are formatted according to the application's [locale](/Documentation/ApiReference/Common/utils/localization/#locale). You can use the [displayFormat](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#displayFormat) property that accepts [predefined](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Predefined_Formats) and [custom formats](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) to change the format.
+DateRangeBox displays values according to the application's [locale](/Documentation/ApiReference/Common/utils/localization/#locale). You can specify a custom date format. Use the [displayFormat](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#displayFormat) property that accepts [predefined](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Predefined_Formats) and [custom formats](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String).
 
 
-In addition to value formatting, you can use the **displayFormat** property as a mask to control user input if [useMaskBehavior](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#useMaskBehavior') is **true**:
+If [useMaskBehavior](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#useMaskBehavior') is **true**, the **displayFormat** property also specifies a mask that controls user input:
 
 ---
 ##### jQuery
@@ -102,5 +102,5 @@ The following changes apply when masked input is enabled:
 
 - The mouse wheel or Up/Down Arrow key increases/decreases the selected value portion by 1.
 - The caret moves to the next date portion when the previous date portion is entered.
-- The year is entered right-to-left. For example, if `2` is entered, the year is `2002`; if `19` is entered, the year is `2019`.
+- The year is entered right-to-left. For example, enter `2` to specify the year `2002`; enter `19` for `2019`.
 - Numbers and first letters can be used to specify the month and day of week when they are displayed as text. For example, enter `M` or `3` to specify "March".

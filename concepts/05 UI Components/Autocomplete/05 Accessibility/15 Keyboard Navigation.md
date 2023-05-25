@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the Autocomplete component: 
+A user can use the following keys to interact with the Autocomplete component: 
 
 <table class="dx-table">
     <tr>

@@ -1,4 +1,4 @@
-A user can interact with the UI component using the following keys:
+A user can use the following keys to interact with the TreeList component: 
 
 <table class="dx-table">
     <tr>

@@ -1,4 +1,4 @@
-A user can interact with the UI component using the following keys:
+A user can use the following keys to interact with the DataGrid component: 
 
 <table class="dx-table full-width">
     <tr>
@@ -43,7 +43,10 @@ A user can interact with the UI component using the following keys:
     </tr>
     <tr>
         <td>Space</td>
-        <td>Selects the focused row and clears the selection of previously selected rows.<sup>3</sup></td>        
+        <td><ul>
+            <li>Selects the focused row and clears the selection of previously selected rows.<sup>3</sup></li>
+            <li>Changes sorting order if a column header is focused.</li>
+        </ul></td>        
     </tr>
     <tr>
         <td>Ctrl + &uarr; &darr;</td>

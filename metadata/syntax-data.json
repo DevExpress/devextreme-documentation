@@ -4100,6 +4100,9 @@
     "dxDateRangeBoxOptions": {
       "vue": "dx-date-range-box-options"
     },
+    "dxDateRangeBoxOptions.disableOutOfRangeSelection": {
+      "vue": "disable-out-of-range-selection"
+    },
     "dxDateRangeBoxOptions.endDate": {
       "vue": "end-date"
     },

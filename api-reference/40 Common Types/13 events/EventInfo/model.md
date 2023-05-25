@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
 <!-- Description goes here -->

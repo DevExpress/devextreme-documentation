@@ -4,7 +4,7 @@ type: DxElement
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The UI component's container.
 
 ---
 <!-- Description goes here -->

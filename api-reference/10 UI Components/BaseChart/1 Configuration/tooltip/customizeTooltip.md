@@ -197,6 +197,110 @@ The format of the string is the following: "h: %highValueText% o: %openValueText
     </tr>
 </table>
 
+The following example hides a tooltip for points with values greater than 10:
+
+---
+##### jQuery
+
+    <!--tab: index.js -->
+    $(function () {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            tooltip: {
+                // ...
+                customizeTooltip(arg) {
+                    if (arg.originalValue > 10) {
+                        return { text: null };
+                    }
+                },
+            },
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ... >
+          <dxo-tooltip ...
+            [customizeTooltip]="customizeTooltip"
+        >
+        </dxo-tooltip>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        customizeTooltip (arg) {
+            if (arg.originalValue > 10) {
+                return { text: null };
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxTooltip ...
+                :customize-tooltip="customizeTooltip"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import Dx{WidgetName}, { DxTooltip } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxTooltip
+        },
+        methods: {
+            customizeTooltip (arg) {
+                if (arg.originalValue > 10) {
+                    return { text: null };
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import {WidgetName}, { Tooltip } from 'devextreme-react/{widget-name}';
+
+    const customizeTooltip = (arg) => {
+        if (arg.originalValue > 10) {
+            return { text: null };
+        }
+    };
+
+    function App() {
+        return (
+            <{WidgetName} ... >
+                <Tooltip ...
+                    customizeTooltip={customizeTooltip}
+                />
+            </{WidgetName}>
+        );
+    }
+
+    export default App;
+
+---
+
 #include dataviz-ref-functioncontext
 
 #include common-demobutton-named with {

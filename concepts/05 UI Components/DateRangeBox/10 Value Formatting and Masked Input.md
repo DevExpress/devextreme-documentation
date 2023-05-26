@@ -9,7 +9,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
     <!--JavaScript-->
     $(function() {
         $("#dateRangeBoxContainer").dxDateRangeBox({
-            displayFormat: "EEEE, d 'of' MMM", // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
+            displayFormat: "EEEE, MMM d", // "Tuesday, Oct 19 - Sunday, Oct 24"
             useMaskBehavior: true,
             // ...
         });
@@ -19,7 +19,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
 
     <!-- tab: app.component.html -->
     <dx-date-range-box
-        displayFormat="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct"
+        displayFormat="EEEE, MMM d", // "Tuesday, Oct 19 - Sunday, Oct 24"
         [useMaskBehavior]="true" 
         // ...
     ></dx-date-range-box>
@@ -43,7 +43,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
     <!-- tab: App.vue (Options API) -->
     <template>
         <DxDateRangeBox
-            display-format="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
+            display-format="EEEE, MMM d", // "Tuesday, Oct 19 - Sunday, Oct 24" 
             :use-mask-behavior="true" 
             // ...
         /> 
@@ -64,7 +64,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
     <!-- tab: App.vue (Composition API) -->
     <template>
         <DxDateRangeBox
-            display-format="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
+            display-format="EEEE, MMM d", // "Tuesday, Oct 19 - Sunday, Oct 24"
             :use-mask-behavior="true" 
             // ...
         /> 
@@ -89,7 +89,7 @@ In addition to value formatting, you can use the **displayFormat** property as a
     export default function App() { 
         return (
             <DateRangeBox ...
-                displayFormat="EEEE, d 'of' MMM" // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
+                displayFormat="EEEE, MMM d", // "Tuesday, Oct 19 - Sunday, Oct 24"
                 useMaskBehavior={true}
                 // ...
             />

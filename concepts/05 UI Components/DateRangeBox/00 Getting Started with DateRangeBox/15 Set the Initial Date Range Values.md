@@ -1,4 +1,4 @@
-To display the initially selected date range, implement the [startDate](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#startDate) and [endDate](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#endDate) properties. Alternatively, you can specify the start and end dates in the array of the [value](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#value) property. In this tutorial, the range is equal to one week and starts from the current date.
+To specify a date range selected at startup, use the [startDate](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#startDate) and [endDate](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#endDate) properties. You can also assign an array with start and end dates to the [value](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#value) property. The following code sets the range to a week that starts on the current date.
 
 ---
 ##### jQuery
@@ -101,4 +101,4 @@ To display the initially selected date range, implement the [startDate](/Documen
 
 ---
 
-In the next step, we will specify labels for the start date and end date input fields.
+The next step specifies labels for the start date and end date input fields.

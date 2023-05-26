@@ -1,4 +1,4 @@
-The DateRangeBox UI component allows users to type or pick a date range in a single or double calendar. To pick dates in a single calendar, disable the [multiView](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#multiView) property. You can also specify whether the values should be applied instantly or when a user clicks the **Done** button. For this, implement the [applyValueMode](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#applyValueMode) property.
+The DateRangeBox UI component allows users to type dates or pick them from a dropdown. The dropdown can display a single-month or two-month calendar. To use a single-month calendar, disable the [multiView](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#multiView) option. You can also specify whether date selection should take effect instantly or after a user clicks **Done**. Use the [applyValueMode](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#applyValueMode) property.
 
 ---
 ##### jQuery

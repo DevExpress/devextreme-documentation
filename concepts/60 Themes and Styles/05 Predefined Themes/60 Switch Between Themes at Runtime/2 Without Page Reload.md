@@ -1,6 +1,6 @@
 You can use this approach only if the themes belong to the same group. For instance, you can switch from Generic Light to any other Generic theme, but not to a Generic Compact or Material Design theme (see [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')).
 
-1. Include theme stylesheets on your index page as shown below. A theme with the `data-active` attribute set to **true** is applied. In the following code, it is Generic Light:
+1. Include theme stylesheets on your index page as shown below. A theme with the `data-active` attribute set to `true` is applied. In the following code, it is a light theme:
 
         <head>
             <!-- Generic themes -->
@@ -20,7 +20,11 @@ You can use this approach only if the themes belong to the same group. For insta
             <!-- ... -->
         </head>
 
-1. Switch to a theme using the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method. It accepts the `data-theme` attribute's value from the previous code. If you use SVG components, you should also call the [refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/Utils/viz/#refreshTheme') method to update their theme. The following example shows how to apply the Generic Contrast theme:
+1. Use the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. 
+
+The method accepts the `data-theme` attribute value. For example, if you want to switch to `dx.generic.dark`, pass `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base.
+
+If you use SVG components, you should also call the [refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/Utils/viz/#refreshTheme') method to update their theme. The following example shows how to apply the Generic Contrast theme:
 
         DevExpress.ui.themes.current("generic.contrast");
         // When using SVG components

@@ -104,6 +104,6 @@ To respond to a date range change, handle the [onValueChanged](/Documentation/Ap
 
 ---
 
-You have now completed DateRangeBox basic configuration. For additional information on this UI component, explore the following resources:
+You have now completed DateRangeBox basic configuration. For additional information on this UI component, see the following link:
 
 * [API Reference](/Documentation/ApiReference/UI_Components/dxDateRangeBox/)

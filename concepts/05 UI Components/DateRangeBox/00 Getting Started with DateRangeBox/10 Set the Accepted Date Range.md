@@ -1,4 +1,4 @@
-You can define constraints for date ranges that can be selected by end-users. Specify the [min](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#max) properties.
+You can define constraints for date ranges that can be selected by end users. Specify the [min](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#min) and [max](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#max) properties.
 
 ---
 ##### jQuery

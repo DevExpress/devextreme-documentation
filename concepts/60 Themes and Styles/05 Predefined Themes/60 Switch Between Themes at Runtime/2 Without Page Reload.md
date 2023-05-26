@@ -22,7 +22,7 @@ You can use this approach only if the themes belong to the same group. For insta
 
 1. Use the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. 
 
-The method accepts the `data-theme` attribute's value. For example, if you want to switch to `dx.generic.dark`, use the `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base.
+The method accepts the `data-theme` attribute value. For example, if you want to switch to `dx.generic.dark`, pass `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base.
 
 If you use SVG components, you should also call the [refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/Utils/viz/#refreshTheme') method to update their theme. The following example shows how to apply the Generic Contrast theme:
 

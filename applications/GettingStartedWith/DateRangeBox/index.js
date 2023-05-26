@@ -7,7 +7,7 @@ $(function() {
         startDateLabel: "Start",
         endDateLabel: "End",
         labelMode: "floating",
-        displayFormat: "EEEE, d 'of' MMM", // "Tuesday, 19 of Oct - Sunday, 24 of Oct" 
+        displayFormat: "EEEE, MMM d", // "Tuesday, Oct 19 - Sunday, Oct 24"
         useMaskBehavior: true,
         openOnFieldClick: false,
         showClearButton: true,

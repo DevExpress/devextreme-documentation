@@ -1,7 +1,7 @@
-DateRangeBox displays values according to the application's [locale](/Documentation/ApiReference/Common/utils/localization/#locale). You can specify a custom date format. Use the [displayFormat](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#displayFormat) property that accepts [predefined](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Predefined_Formats) and [custom formats](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String).
+DateRangeBox displays values according to the application's [locale](/api-reference/50%20Common/utils/localization/locale().md '/Documentation/ApiReference/Common/utils/localization/#locale'). You can specify a custom date format. Use the [displayFormat](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configuration/displayFormat.md '/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#displayFormat') property that accepts [predefined](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/10%20Predefined%20Formats.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Predefined_Formats') and [custom formats](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String').
 
 
-If [useMaskBehavior](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#useMaskBehavior') is **true**, the **displayFormat** property also specifies a mask that restricts user input:
+If [useMaskBehavior](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configuration/useMaskBehavior.md '/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#useMaskBehavior'') is **true**, the **displayFormat** property also specifies a mask that restricts user input:
 
 ---
 ##### jQuery

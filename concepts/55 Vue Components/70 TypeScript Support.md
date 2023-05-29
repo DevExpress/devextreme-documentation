@@ -62,7 +62,7 @@ The following code shows an example of using TypeScript with DevExtreme componen
     }
     </script>
 
-To import component-specific types, use the `DxComponentTypes` declaration, where `Component` is the component name:
+To import component-specific types, use the `DxComponentTypes` declaration where `Component` is the component name:
 
     <!-- tab: App.vue -->
     <template>

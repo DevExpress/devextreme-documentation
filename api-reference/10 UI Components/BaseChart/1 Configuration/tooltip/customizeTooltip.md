@@ -42,7 +42,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
     <tr>
         <td><code>argument</code></td>
-        <td>The argument value of the represented point. Differs from the <b>originalArgument</b> when the axis <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType">argument type</a> differs from the argument type in the data source. In this instance, <b>argument</b> has the similar type as the argument axis.</td>
+        <td>The argument value of the represented point. Differs from the <b>originalArgument</b> when the axis <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType">argument type</a> differs from the argument type in the data source. In this instance, <b>argument</b> has the same type as the argument axis.</td>
     </tr>
     <tr>
         <td><code>argumentText</code></td>
@@ -66,7 +66,7 @@ The **pointInfo** object has different fields for the different [series types](/
     </tr>
 </table>
 
-The folllowing **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
+The following **pointInfo** fields are available for the stacked-like series such as [full-stacked bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedBarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedBarSeries/') or [full-stacked area](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/FullStackedAreaSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/FullStackedAreaSeries/'):
 
 <table class="dx-table full-width">
     <tr>
@@ -75,11 +75,11 @@ The folllowing **pointInfo** fields are available for the stacked-like series su
     </tr>
     <tr>
         <td><code>percent</code></td>    
-        <td>The percent value of the point being hovered over.</td>
+        <td>The percent value of the point being hovered over in fractions. For example, <code>0.6</code>.</td>
     </tr>
     <tr>
         <td><code>percentText</code></td>     
-        <td>The percent value of the point being hovered over.
+        <td>The percent value of the point being hovered over. For example, <code>60%</code>.</td>
     </tr>
         <td><code>total</code></td>          
         <td>The total value of all the points with the same argument as the point being hovered over.
@@ -98,7 +98,7 @@ The folllowing **pointInfo** fields are available for the range-like series, suc
     </tr>
     <tr>
         <td><code>originalMinValue</code></td>        
-        <td>The value of the first range the point being hovered over as it is set in the data source.</td>
+        <td>The first range value of the point being hovered over as it is set in the data source.</td>
     </tr>
     <tr>
         <td><code>rangeValue1</code></td>        
@@ -110,7 +110,7 @@ The folllowing **pointInfo** fields are available for the range-like series, suc
     </tr>
     <tr>
         <td><code>originalValue</code></td>        
-        <td>The value of the second range the point being hovered over as it is set in the data source.</td>
+        <td>The second range value of the point being hovered over as it is set in the data source.</td>
     </tr>
     <tr>
         <td><code>rangeValue2</code></td>        
@@ -208,6 +208,7 @@ The following example hides a tooltip for points with values greater than 10:
             // ...
             tooltip: {
                 // ...
+                enabled: true,
                 customizeTooltip(arg) {
                     if (arg.originalValue > 10) {
                         return { text: null };
@@ -221,7 +222,8 @@ The following example hides a tooltip for points with values greater than 10:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-          <dxo-tooltip ...
+        <dxo-tooltip ...
+            [enabled]="true"
             [customizeTooltip]="customizeTooltip"
         >
         </dxo-tooltip>
@@ -251,6 +253,7 @@ The following example hides a tooltip for points with values greater than 10:
     <template>
         <Dx{WidgetName} ... >
             <DxTooltip ...
+                :enabled="true"
                 :customize-tooltip="customizeTooltip"
             />
         </Dx{WidgetName}>
@@ -291,6 +294,7 @@ The following example hides a tooltip for points with values greater than 10:
         return (
             <{WidgetName} ... >
                 <Tooltip ...
+                    enabled={true}
                     customizeTooltip={customizeTooltip}
                 />
             </{WidgetName}>

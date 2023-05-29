@@ -7,8 +7,18 @@ The DevExtreme Vue Template uses a main theme for the view content and an additi
         // ...
     }
 
-You can find all theme names in the [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') help topic.
+    <!-- tab: metadata.additional.json -->
+    {
+        // ...
+        "baseTheme": "generic.light",
+        // ...
+    }
+
+You can find all theme names in the [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') help topic. Use theme names without the `dx` prefix.
 
 Run the following command to rebuild themes:
 
     npm run build-themes
+
+#####See Also#####
+- [Switch Between Themes at Runtime](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Switch_Between_Themes_at_Runtime)

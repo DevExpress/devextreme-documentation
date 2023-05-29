@@ -1,7 +1,10 @@
-#include common-troubleunderstanding-note with {
-    technology: "React",
-    docsLink: "https://reactjs.org/docs/getting-started.html"
-}
+[important]
+
+You should be familiar with basic concepts and patterns of React to use this documentation. If you are not, please refer to the <a href="https://reactjs.org/docs/getting-started.html" target="_blank">React documentation</a> for a getting-started tutorial first.
+
+If you are already familiar with React, we highly recommend you to read the following help topic to learn tips and tricks on working with DevExtreme React components: [Optimize Performance](/Documentation/Guide/React_Components/Optimize_Performance/).
+
+[/important]
 
 [note] DevExtreme provides two React UI component libraries: DevExtreme React UI Components described here and <a href="https://github.com/DevExpress/devextreme-reactive/blob/master/README.md" target="_blank">DevExtreme Reactive Components</a>. Refer to <a href="https://community.devexpress.com/blogs/oliver/archive/2018/04/20/devextreme-new-react-wrappers-vs-native-react-components.aspx" target="_blank">this blog post</a> for a detailed comparison of the two libraries.
 

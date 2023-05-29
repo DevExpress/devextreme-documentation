@@ -1,6 +1,6 @@
 You can use this approach only if the themes belong to the same group. For instance, you can switch from Generic Light to any other Generic theme, but not to a Generic Compact or Material Design theme (see [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')).
 
-1. Include theme stylesheets on your `index.html` page as shown below. A theme with the `data-active` attribute set to `true` is applied. In the following code, it is a light theme:
+1. Include theme stylesheets on your `index.html` page as shown below. A theme with the `data-active` attribute set to `true` is applied. In the following code snippet, the light theme is used:
 
         <head>
             <!-- Generic themes -->
@@ -23,7 +23,7 @@ You can use this approach only if the themes belong to the same group. For insta
     ---
     ##### Angular
 
-    If you want your themes to update automatically with DevExtreme package, reference them in `angular.json`. Then use the themes in `index.html`.
+    If you want your themes to update automatically with the DevExtreme package, reference them in `angular.json`, and after, use the themes in `index.html`.
 
         <!-- tab: angular.json -->
         "assets": [

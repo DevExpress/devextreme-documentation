@@ -17,3 +17,5 @@ To apply a theme, configure the module bundler you use and import a theme styles
 To apply a theme, configure the module bundler you use and import a theme stylesheet. Refer to the following article for detailed instructions: [Import Stylesheets](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/40%20Import%20Stylesheets.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Import_Stylesheets').
 
 ---
+
+If you use SCSS, include a <a href="https://www.unpkg.com/browse/devextreme@22.1.9/scss/widgets/generic/common/_index.scss">common module</a> in your project.

@@ -2,7 +2,7 @@ Because DevExtreme components consist of standard HTML elements (`<div>`, `<td>`
 
 A number of classes are [documented](/api-reference/10%20UI%20Components/zz%20CSS%20Classes '/Documentation/ApiReference/UI_Components/CSS_Classes/'). However, in most cases, you need to inspect the HTML markup to determine and override the applied CSS classes. The following articles describe how you can do it:
 
-- <a href="https://www.devexpress.com/Support/Center/Question/Details/K18570/how-to-inspect-css-rules" target="_blank">How to inspect CSS rules</a>
+- [How to inspect CSS rules](/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS)
 - <a href="https://www.devexpress.com/Support/Center/Question/Details/T632424/how-to-implement-css-related-solutions-for-devexpress-components" target="_blank">How to implement CSS-related solutions for DevExpress components</a>
 
 Classes can be added to the UI component element in the markup using the `class` attribute as usual. If it is not possible to change the markup, use the UI component's [elementAttr](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/elementAttr.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#elementAttr') property for the same purpose.

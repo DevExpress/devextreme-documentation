@@ -4,7 +4,7 @@ The following icons are available:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/22_2/Icons/markup.html, /Content/Applications/22_2/Icons/script.js, /Content/Applications/22_2/Icons/styles.css"></div>
 
-You can find source icons on DevExtreme GitHub:
+You can find source icons in DevExtreme's GitHub repository:
 
 - <a href="https://github.com/DevExpress/DevExtreme/tree/22_2/icons">Font icons</a>
 - <a href="https://github.com/DevExpress/DevExtreme/tree/22_2/images/icons">SVG icons</a>

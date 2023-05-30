@@ -9,7 +9,7 @@ The following code uses SVG icons in the [Button](https://js.devexpress.com/Demo
             icon: "https://path/to/the/icon.svg"
         });
 
-    This code wraps the SVG inside a `<img />` tag. In this case, you cannot use CSS rules to customize the SVG.
+    This code wraps the SVG icon inside a `<img />` tag. In this case, you cannot use CSS rules to customize the SVG image.
 
 1. **Insert SVG content inline**:
 
@@ -18,7 +18,7 @@ The following code uses SVG icons in the [Button](https://js.devexpress.com/Demo
             icon: "<svg>SVG_CONTENT</svg>"
         });
 
-    This code renders the SVG content directly in the markup. In this case, you can use CSS rules to customize the SVG.
+    This code renders SVG content directly in the markup. In this case, you can use CSS rules to customize the SVG image.
 
 1. **Import the icon**:
 
@@ -28,6 +28,6 @@ The following code uses SVG icons in the [Button](https://js.devexpress.com/Demo
             icon: myIcon
         });
 
-    This code wraps the SVG inside a `<img />` tag. In this case, you cannot use CSS rules to customize the SVG.
+    This code wraps the SVG icon inside a `<img />` tag. In this case, you cannot use CSS rules to customize the SVG image.
 
 [important]The SVG format allows running executable code that might be malicious. We strongly recommend that you use SVG icons only from trusted sources.

@@ -1,6 +1,6 @@
-Right-to-left support enables seamless adaptation of web content for languages that are written from right to left, such as Arabic or Hebrew. Most of DevExtreme components support this feature.
+Right-to-left support enables seamless adaptation of web content for languages that are written from right to left, such as Arabic or Hebrew. Most DevExtreme components support this feature.
 
-Refer to the following demos to learn more:
+Refer to the following demos for more information:
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RightToLeftSupport/",

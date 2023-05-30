@@ -1,6 +1,6 @@
-DevExtreme components support keyboard navigation, which allows users who rely on alternative input methods to navigate and interact with the content effectively.
+DevExtreme components support keyboard navigation that allows users who rely on alternative input methods to navigate and interact with the content.
 
-You can try to use keyboard to navigate in the following demos:
+You can use the keyboard to navigate in the following demos:
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/KeyboardNavigation/",

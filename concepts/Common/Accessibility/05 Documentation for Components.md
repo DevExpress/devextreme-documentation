@@ -1,6 +1,6 @@
-The following list can help you find detailed information about each component's accessibility compliance.
+Refer to the following list for detailed information about each component's accessibility compliance:
 
-[note] At the moment, not all components' guides include an accessibility topic. This list will continue to grow.
+[note] Currently, not all components' guides include an accessibility topic. This list will continue to grow.
 
 ## Grid Components
 

@@ -1,0 +1,1 @@
+This method updates the Popup's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">z-index</a> and displays the Popup component on the top of other overlay components.

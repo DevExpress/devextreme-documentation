@@ -7,11 +7,13 @@ The main view consists of the following elements:
 - **Settings list** (left-hand menu)     
 Contains all customization settings divided into groups:
 
-    - **Basic Settings** - settings used by multiple UI components
+    - **Basic Settings** - settings used by multiple UI components.
 
-    - **Typography Settings** - settings that configure fonts
+    - **Typography Settings** - settings that configure fonts. 
 
-    - **Specific UI components or UI component groups** - settings used by an individual UI component or UI component group
+        [note] You can use only the fonts that are installed in your OS and browser.
+
+    - **Specific UI components or UI component groups** - settings used by an individual UI component or UI component group.
     
     The settings list also contains a search box to search for a UI component or UI component group.
 

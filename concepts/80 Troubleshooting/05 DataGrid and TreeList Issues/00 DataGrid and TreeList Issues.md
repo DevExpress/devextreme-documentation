@@ -1,0 +1,1 @@
+This section describes issues related to DataGrid and TreeList. If the solutions listed here do not help, create a ticket in our Support Center and describe your issue in more detail: [Create a ticket](https://supportcenter.devexpress.com/ticket/create).

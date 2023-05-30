@@ -1,4 +1,4 @@
-Screen reader support allows users with visual impairments to access and comprehend the content. DevExtreme components include the following features that ensure the screen reader works properly:
+Screen reader support allows users with visual impairments to access the content. DevExtreme components include the following features that ensure the screen reader works properly:
 
 - `aria-*` labels.
 - Descriptions.

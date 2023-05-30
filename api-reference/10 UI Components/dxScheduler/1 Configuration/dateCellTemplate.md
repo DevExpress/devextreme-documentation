@@ -20,6 +20,37 @@ The item's index.
 A template name or container.
 
 ---
+The following image shows the difference between Scheduler cell types:
+
+![DevExtreme Scheduler - Cell Types](/images/Scheduler/scheduler-cells.png)
+
+Use this template for date cells only.
+
+The data of this template consists of the following fields:
+
+<table class="dx-table full-width">
+    <tr>
+        <th>Field name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>date</code></td>    
+        <td>Date of the cell.</td>
+    </tr>
+    <tr>
+        <td><code>groups</code></td>          
+        <td>A group object to which date cell belongs.</td> 
+    </tr>
+    <tr>
+        <td><code>groupIndex</code></td>          
+        <td>Index of a group to which date cell belongs.</td> 
+    </tr>
+    <tr>
+        <td><code>text</code></td>          
+        <td>Text of date cell.</td> 
+    </tr>
+</table>
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }

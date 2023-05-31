@@ -1,0 +1,1 @@
+DevExtreme includes a built-in [Generic Contrast theme](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) that ensures a proper contrast ratio between colors and makes components visually distinct for users with vision deficiencies.

@@ -3,6 +3,7 @@ id: ValueChangedInfo
 module: ui/editor/editor
 export: ValueChangedInfo
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

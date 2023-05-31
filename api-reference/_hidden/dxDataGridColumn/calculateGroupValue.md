@@ -294,7 +294,7 @@ This property accepts the name of the data source field that provides values use
 
 ---
 
-[note] This property only accepts strings if [remote operations](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/) are enabled.
+[note] This property only accepts strings if [remote operations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') are enabled.
 
 Group captions and appearance can be customized. To do this, define the [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate'). Refer to the following GitHub repository for an example: <a href="https://github.com/DevExpress-Examples/DataGrid---How-to-apply-custom-sorting-to-a-grouped-column" target="_blank">DataGrid - How to apply custom sorting to a grouped column</a>.
 

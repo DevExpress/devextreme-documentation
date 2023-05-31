@@ -15,7 +15,7 @@ The following code shows an example of using TypeScript with DevExtreme componen
 
     <script lang='ts'>
     import { Component, Vue } from 'vue-property-decorator';
-    import { DxList } from 'devextreme-vue/ui/list';
+    import { DxList } from 'devextreme-vue/list';
     import Item from './components/Item.vue';
     
     interface IListItemProps {
@@ -60,6 +60,19 @@ The following code shows an example of using TypeScript with DevExtreme componen
             this.counter = this.counter + 1;
         }
     }
+    </script>
+
+To import component-specific types, use the `DxComponentTypes` declaration where `Component` is the component name:
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDateBox :type="dateType" />
+    </template>
+
+    <script setup lang="ts">
+    import DxDateBox, { DxDateBoxTypes } from "devextreme-vue/date-box";
+
+    const dateType: DxDateBoxTypes.DateType = "datetime";
     </script>
 
 #####See Also#####

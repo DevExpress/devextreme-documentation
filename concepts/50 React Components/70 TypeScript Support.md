@@ -56,4 +56,18 @@ The following code shows an example of using TypeScript with DevExtreme componen
 
     export default App;
 
+To import component-specific types, use the `ComponentTypes` declaration where `Component` is the component name:
+
+    <!-- tab: App.vue -->
+    import DateBox, { DateBoxTypes } from "devextreme-react/date-box";
+
+    const dateType: DateBoxTypes.DateType = "datetime";
+
+    function App() {
+        return (
+            <DateBox type={dateType} />
+        );
+    }
+    </script>
+
 [tags] react

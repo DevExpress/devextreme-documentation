@@ -2,7 +2,7 @@
 
 You should be familiar with the basic concepts and patterns of React to use this documentation. If you are not, please refer to the <a href="https://reactjs.org/docs/getting-started.html" target="_blank">React documentation</a> for a getting-started tutorial.
 
-If you are already familiar with React, we recommend that you read the following help topic for tips and tricks on working with DevExtreme React components: [Optimize Performance](/Documentation/Guide/React_Components/Optimize_Performance/).
+If you are already familiar with React, we recommend that you read the following help topic for tips and tricks on working with DevExtreme React components: [Optimize Performance](/concepts/50%20React%20Components/45%20Optimize%20Performance/00%20Optimize%20Performance.md '/Documentation/Guide/React_Components/Optimize_Performance/').
 
 [/important]
 

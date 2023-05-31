@@ -75,7 +75,7 @@ The following **pointInfo** fields are available for the stacked-like series suc
     </tr>
     <tr>
         <td><code>percent</code></td>    
-        <td>The percent value of the point being hovered over in fractions. For example, <code>0.6</code>.</td>
+        <td>The percent value of the point being hovered over in decimal format. For example, <code>0.6</code>.</td>
     </tr>
     <tr>
         <td><code>percentText</code></td>     

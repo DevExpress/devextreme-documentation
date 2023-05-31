@@ -1,6 +1,6 @@
 If an editor does not pass its value to the DataGrid or TreeList component and its DataSource when users enter or select a value, check if any of the following cases applies to your implementation.
 
-### A column's dataField is empty
+### A Column's dataField is Empty
 
 Built-in column editors automatically write their values to the data row field specified in the column.[dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField) property. Specify this property if you want to write an editor's value to a field.
 
@@ -95,11 +95,11 @@ If you want to implement an unbound column, specify column.[name](/Documentation
 
 ---
 
-### You use a form item's template to declare an editor
+### You Use a Form Item's Template to Declare an Editor
 
 [Form](/Documentation/Guide/UI_Components/DataGrid/Editing/#User_Interaction/Form_Mode) and [popup](/Documentation/Guide/UI_Components/DataGrid/Editing/#User_Interaction/Popup_Mode) edit modes use the built-in Form component. Do not use simpleItem.[template](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template) to replace default editors in DataGrid or TreeList, use column.[editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) instead.
 
-### You implement an editor in the editCellTemplate body
+### You Implement an Editor in the editCellTemplate Body
 
 Call the **e.setValue** method available in the [template's argument](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate). This method notifies the DataGrid or TreeList component that the value of a custom editor has changed. If you use a DevExtreme editor in this template, call **e.setValue** inside the [onValueChanged](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#onValueChanged) event handler of this editor.
 
@@ -108,13 +108,13 @@ Call the **e.setValue** method available in the [template's argument](/Documenta
     name: "Customize Editors in DataGrid"
 }
 
-### You implement an editor in the cellTemplate body
+### You Implement an Editor in the cellTemplate Body
 
 DataGrid or TreeList uses column.[cellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate) only to display a cell value. To place your custom editor into cells to allow users to edit them, use column.[editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate). Refer to the previous topic section for more information.
 
 If you want to always display editors in a column, enable the column.[showEditorAlways](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#showEditorAlways) option. DataGrid displays an editor (or **editCellTemplate**, if it exists) and ignores **cellTemplate**.
 
-### You handle the editorPreparing event and override onValueChanged
+### You Handle the editorPreparing Event and Override onValueChanged
 
 Call the built-in **onValueChanged** event handler for an editor or call the `e.setValue` method available in the event's argument.
 

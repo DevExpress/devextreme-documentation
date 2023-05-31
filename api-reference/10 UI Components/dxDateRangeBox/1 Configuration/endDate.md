@@ -8,10 +8,10 @@ default: null
 Specifies the range's end date. 
 
 ---
-You can specify the end date with any of the following formats:
+You can specify the end date in any of the following formats:
 
 - Date  
- Specifies the date directly.
+ Specifies a date object.
 
 - Number  
  Specifies the date as a timestamp (total milliseconds since 1970/01/01).
@@ -19,7 +19,7 @@ You can specify the end date with any of the following formats:
 - String  
  Specifies the date as a string value (`"yyyy-MM-dd"` - "2017-03-06").
  
-When you changed the date value, the new value is saved in the same format as the initial value. We recommend that you specify dates in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">UTC ISO 8601</a>.
+If you change the date value, the new value is saved in the same format as the initial value. We recommend that you specify dates in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">UTC ISO 8601</a>.
 
 #include drb-startdate-enddate-code
 

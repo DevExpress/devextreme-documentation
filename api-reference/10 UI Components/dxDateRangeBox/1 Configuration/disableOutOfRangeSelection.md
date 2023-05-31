@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether the UI component disables dates selection before the start date and after the end date.
+Specifies whether the UI component disables date selection before the start date and after the end date.
 
 ---
 #####See Also#####

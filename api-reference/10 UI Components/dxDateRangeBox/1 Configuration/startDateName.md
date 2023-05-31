@@ -5,6 +5,6 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies a value to be assigned to the **name** attribute of the start date input field. 
+Specifies the **name** attribute of the start date input field. 
 
 ---

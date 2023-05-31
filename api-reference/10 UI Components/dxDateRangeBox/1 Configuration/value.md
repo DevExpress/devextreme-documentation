@@ -5,14 +5,14 @@ default: [null, null]
 ---
 ---
 ##### shortDescription
-An array of date range values currently selected using the date box. 
+An array that specifies the selected range (start and end dates).
 
 ---
 
-You can specify the date range with any of the following formats:
+You can specify dates in any of the following formats:
 
 - Date  
- Specifies dates directly.
+ Specifies a date object.
 
 - Number  
  Specifies a date as a timestamp (total milliseconds since 1970/01/01).
@@ -20,7 +20,7 @@ You can specify the date range with any of the following formats:
 - String  
  Specifies a date as a string value (`"yyyy-MM-dd"` - "2017-03-06").
  
-When you changed the date value, the new value is saved in the same format as the initial value. We recommend that you specify dates in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">UTC ISO 8601</a>.
+If you change a date value, the new value is saved in the same format as the initial value. We recommend that you specify dates in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">UTC ISO 8601</a>.
 
 ---
 ##### jQuery

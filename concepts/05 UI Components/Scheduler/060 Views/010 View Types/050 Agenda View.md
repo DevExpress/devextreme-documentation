@@ -1,4 +1,4 @@
-The **agenda** view lists all available appointments grouped by date. This view provides a compact representation of appointments, which is useful when displaying on narrow screens. If an appointment lasts for several days, it is displayed for every day it belongs to. If an appointment lasts all day, it is placed above other appointments of that day.
+The **agenda** view lists all available appointments grouped by date. This view provides a compact representation of appointments, which is useful when displaying on narrow screens. If an appointment lasts for several days, it is displayed for every day it belongs to. If an appointment lasts all day, it is placed above other appointments of that day. The Scheduler does not support grouping resources by multiple data fields in the **agenda** view.
 
 ![Agenda View](/images/UiWidgets/Scheduler_Agenda_View.png)
 

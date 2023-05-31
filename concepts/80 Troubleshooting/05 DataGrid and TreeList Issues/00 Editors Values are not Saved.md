@@ -112,7 +112,7 @@ Call the **e.setValue** method available in the [template's argument](/Documenta
 
 DataGrid or TreeList uses column.[cellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate) only to display a cell value. To place your custom editor into cells to allow users to edit them, use column.[editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate). Refer to the previous topic section for more information.
 
-If you want to always display editors in a column, enable the column.[showEditorAlways](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#showEditorAlways) option. DataGrid displays an editor (or **editCellTemplate**, if it exists) and ignores **cellTemplate**.
+If you want to always display editors in a column, enable the column.[showEditorAlways](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#showEditorAlways) option. DataGrid displays an editor (or **editCellTemplate** if it exists) and ignores **cellTemplate**.
 
 ### You Handle the editorPreparing Event and Override onValueChanged
 

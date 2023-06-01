@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can add appointments.
+Specifies whether or not an end user can add appointments.
 
 ---
 #include common-demobutton with {

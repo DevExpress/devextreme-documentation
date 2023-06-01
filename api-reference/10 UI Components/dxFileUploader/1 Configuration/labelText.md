@@ -5,6 +5,6 @@ default: 'or Drop file here', '' (InternetExplorer, desktop)
 ---
 ---
 ##### shortDescription
-Specifies the text displayed on the area to which an end-user can drop a file.
+Specifies the text displayed on the area to which an end user can drop a file.
 
 ---

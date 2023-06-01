@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not the UI component allows an end-user to enter a custom value.
+Specifies whether or not the UI component allows an end user to enter a custom value.
 
 ---

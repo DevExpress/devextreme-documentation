@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can change appointment properties.
+Specifies whether or not an end user can change appointment properties.
 
 ---
 #include common-demobutton with {

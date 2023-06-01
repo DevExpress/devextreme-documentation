@@ -13,8 +13,8 @@ Declares a collection of constant lines belonging to the value axis.
 
 Each object in the **constantLines** array configures a single constant line. Setting the **value** property is necessary for a constant line to be displayed.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels/"
 }
 
 #####See Also#####

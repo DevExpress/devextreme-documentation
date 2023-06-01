@@ -14,8 +14,8 @@ PNG is used if the browser does not support exporting to the specified format.
 
 ---
      
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportAndPrintingAPI/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportAndPrintingAPI/"
 }
 
 #####See Also#####

@@ -86,6 +86,6 @@ If a specific column should not be moved, set its [allowReordering](/api-referen
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Reordering/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Reordering/"
 }

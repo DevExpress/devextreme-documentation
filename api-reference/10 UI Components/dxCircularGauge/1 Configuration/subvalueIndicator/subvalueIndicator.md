@@ -20,6 +20,6 @@ The subvalue indicator is a pointer which designates an extra value on a scale. 
 - [TriangleNeedle](/api-reference/10%20UI%20Components/dxCircularGauge/5%20Indicator%20Types/TriangleNeedle '/Documentation/ApiReference/UI_Components/dxCircularGauge/Indicator_Types/TriangleNeedle/')
 - [TwoColorNeedle](/api-reference/10%20UI%20Components/dxCircularGauge/5%20Indicator%20Types/TwoColorNeedle '/Documentation/ApiReference/UI_Components/dxCircularGauge/Indicator_Types/TwoColorNeedle/')
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentSubvalueIndicatorTypes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentSubvalueIndicatorTypes/"
 }

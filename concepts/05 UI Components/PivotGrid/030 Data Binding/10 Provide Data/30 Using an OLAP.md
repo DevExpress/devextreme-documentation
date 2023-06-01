@@ -25,6 +25,6 @@ DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/Xml
 
 6.&nbsp;Configure the PivotGrid.**dataSource**.[store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') object for using your OLAP server.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/OLAPDataSource/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/OLAPDataSource/"
 }

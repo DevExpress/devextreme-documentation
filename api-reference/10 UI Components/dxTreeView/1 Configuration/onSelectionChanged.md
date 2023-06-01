@@ -27,6 +27,6 @@ This function is executed when:
 
 - One of the following methods is called: [selectAll()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods/selectAll().md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#selectAll'), [unselectAll()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods/unselectAll().md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#unselectAll'), [selectItem()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods/selectItem(itemElement).md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#selectItemitemElement'), [unselectItem()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods/unselectItem(itemElement).md '/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#unselectItemitemElement').
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ItemSelectionAndCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ItemSelectionAndCustomization/"
 }

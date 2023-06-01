@@ -34,8 +34,8 @@ The label's [text](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/S
 The template name or container.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
 }
 
 The following code adds a custom label to the SimpleItem:

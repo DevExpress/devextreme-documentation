@@ -15,8 +15,8 @@ provider: "bing"
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/Map/Overview/"

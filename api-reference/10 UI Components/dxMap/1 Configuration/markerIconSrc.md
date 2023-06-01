@@ -11,6 +11,6 @@ To set a custom icon for an individual marker, specify the **iconSrc** field of 
 
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers/"
 }

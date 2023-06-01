@@ -158,8 +158,8 @@ You can add a button that performs a custom action using a [button item](/api-re
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
 }
 
 #####See Also#####

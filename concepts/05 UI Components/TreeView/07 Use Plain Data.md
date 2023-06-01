@@ -365,8 +365,8 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/FlatDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/FlatDataStructure/"
 }
 
 #####See Also#####

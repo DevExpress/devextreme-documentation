@@ -16,8 +16,8 @@ The option's name.
 The new option value.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/UpdateItemsDynamically/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/UpdateItemsDynamically/"
 }
 
 ---

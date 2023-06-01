@@ -11,6 +11,6 @@ A background is an area that is painted in a specified color. You can change thi
 
 [note] You can use this property only when the range selector displays an [image](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/background/image '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/background/image/') or [chart](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/'). If not, use the [selectedRangeColor](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/selectedRangeColor.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#selectedRangeColor') and [tick](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/scale/tick '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/scale/tick/') to customize the appearance of your UI component.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ImageOnBackground/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ImageOnBackground/"
 }

@@ -124,8 +124,8 @@ If the user should be able to collapse or expand a group in the List, set the [c
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
 }
 
 To collapse or expand a specific group programmatically, call the [collapseGroup(groupIndex)](/api-reference/10%20UI%20Components/dxList/3%20Methods/collapseGroup(groupIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#collapseGroupgroupIndex') or [expandGroup(groupIndex)](/api-reference/10%20UI%20Components/dxList/3%20Methods/expandGroup(groupIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#expandGroupgroupIndex') method.

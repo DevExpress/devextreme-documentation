@@ -26,8 +26,8 @@ You can specify the current UI component value using any of the following format
 
 If the UI component value is changed by an end user, the new value is saved in the same format as the initial value.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }
 
 #####See Also#####

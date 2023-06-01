@@ -145,8 +145,8 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
 }
 
 #####See Also#####

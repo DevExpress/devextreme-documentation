@@ -113,8 +113,8 @@ The example below shows how to define the **fieldTemplate**. If you want to cust
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/Overview/"
 }
 
 #####See Also#####

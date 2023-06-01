@@ -12,6 +12,6 @@ Legend items before customizations.
 Legend items after customizations.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/BubbleMarkers/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/BubbleMarkers/"
 }

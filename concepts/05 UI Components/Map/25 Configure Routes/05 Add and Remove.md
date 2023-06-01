@@ -111,8 +111,8 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
 }
 
 To add or remove a route at runtime, call the [addRoute(routeOptions)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/addRoute(routeOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addRouterouteOptions') or [removeRoute(route)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/removeRoute(route).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeRouteroute') method.

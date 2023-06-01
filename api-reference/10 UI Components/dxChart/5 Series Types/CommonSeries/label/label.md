@@ -147,8 +147,8 @@ Declared in [commonSeriesSettings](/api-reference/10%20UI%20Components/dxChart/1
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AjaxRequest/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AjaxRequest/"
 }
 
 #####See Also#####

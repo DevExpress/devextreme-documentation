@@ -8,8 +8,8 @@ default: false
 Specifies whether all rows are expanded initially.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Paging/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Paging/"
 }
 
 #####See Also#####

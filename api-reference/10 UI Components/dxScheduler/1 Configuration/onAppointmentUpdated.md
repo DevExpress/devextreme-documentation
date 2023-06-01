@@ -26,6 +26,6 @@ The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 Model data. Available only if Knockout is used.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/"
 }

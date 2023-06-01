@@ -10,8 +10,8 @@ export: dxSchedulerScrolling
 ---
 Scrolling allows a user to browse data outside the current viewport. Information about the available scrolling modes is in the [mode]({currentpath}/#mode') property description.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/"
 }
 
 #####See Also#####

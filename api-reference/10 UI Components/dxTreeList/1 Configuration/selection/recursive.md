@@ -6,8 +6,8 @@ id: dxTreeList.Options.selection.recursive
 Specifies whether selection is recursive.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/"
 }
 
 #####See Also#####

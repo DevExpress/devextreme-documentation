@@ -17,6 +17,6 @@ Paging has the following specifics:
 - [Grouped items](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping/030%20Fields%20Grouping.md '/Documentation/Guide/UI_Components/PivotGrid/Grouping/#Fields_Grouping') in the [header filter](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/headerFilter '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/') are not paginated.
 - Empty records are NOT filtered out.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/RemoteVirtualScrolling/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/RemoteVirtualScrolling/"
 }

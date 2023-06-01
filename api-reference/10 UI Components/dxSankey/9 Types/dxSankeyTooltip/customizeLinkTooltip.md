@@ -26,7 +26,7 @@ The current tooltip's text or markup and appearance settings.
 <!--
 #include dataviz-customize-tooltip-return
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
 }
 -->

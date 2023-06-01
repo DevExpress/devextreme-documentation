@@ -1,7 +1,7 @@
 The LoadIndicator is a UI element notifying the viewer that a process is in progress.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadIndicator/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadIndicator/Overview/"
 }
 
 The following code adds a simple LoadIndicator to your page. You can change the UI component size, using the [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#height') and [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadIndicator/Configuration/#height') properties.

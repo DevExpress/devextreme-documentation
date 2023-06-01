@@ -164,6 +164,6 @@ The Chart provides the [customizePoint](/api-reference/10%20UI%20Components/Base
 
 This article outlined the steps to implement a drill-down chart and provided code examples for each step. For the full code, refer to the **Drill-Down Chart** demo.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ChartsDrillDown/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ChartsDrillDown/"
 }

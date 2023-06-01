@@ -14,8 +14,8 @@ Describes settings supported by a series of the *full-stacked bar* type.
     seriesType: "fullstackedbar"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FullStackedBar/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FullStackedBar/"
 }
 
 ![DevExtreme HTML5 Charts FullStackedBarSeriesType](/images/ChartJS/FullStackedBar.png)

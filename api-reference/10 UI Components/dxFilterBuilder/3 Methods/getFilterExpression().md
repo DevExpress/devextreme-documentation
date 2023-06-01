@@ -9,8 +9,8 @@ Gets a filter expression that contains only operations supported by the **DataSo
 A **DataSource**-compatible filter expression.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithList/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithList/"
 }
 
 #####See Also#####

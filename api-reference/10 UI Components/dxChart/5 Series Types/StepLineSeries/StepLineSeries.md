@@ -14,8 +14,8 @@ Describes settings supported by a series of the *step line* type.
     seriesType: "stepline"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine/"
 }
 
 ![DevExtreme HTML5 Charts StepLineSeriesType](/images/ChartJS/StepLine.png)

@@ -15,6 +15,6 @@ To enable the crosshair, set the **crosshair**.**enabled** property to **true**.
 
 Settings specified in the **crosshair** object apply to both the crosshair lines. If you specify the same settings within the [horizontalLine](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair/horizontalLine '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/horizontalLine/') or [verticalLine](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair/verticalLine '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/verticalLine/') object, they will apply to the particular crosshair line only. Note that individual settings override common ones.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"
 }

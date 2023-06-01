@@ -14,8 +14,8 @@ Describes settings supported by a series of the *stock* type.
     seriesType: "stock"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Stock/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Stock/"
 }
 
 ![DevExtreme HTML5 Charts StockSeriesType](/images/ChartJS/Stock.png)

@@ -65,6 +65,6 @@ Set this property to **false** to enable free-form resize:
 ---
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
 }

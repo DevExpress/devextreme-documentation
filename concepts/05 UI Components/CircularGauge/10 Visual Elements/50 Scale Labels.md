@@ -23,6 +23,6 @@ You can specify a [format](/api-reference/10%20UI%20Components/BaseGauge/1%20Con
 - **Appearance**	
 The font style used for displaying the label text can be varied using properties of the [font](/api-reference/10%20UI%20Components/BaseGauge/1%20Configuration/scale/label/font '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/scale/label/font/') configuration object. In addition, scale labels can be indented from their ticks using the [indentFromTick](/api-reference/10%20UI%20Components/dxCircularGauge/1%20Configuration/scale/label/indentFromTick.md '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/scale/label/#indentFromTick') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleLabelFormatting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleLabelFormatting/"
 }

@@ -188,8 +188,8 @@ You can call this method at any point in your application. In the example below,
 
 ---    
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
 }
 
 #include uiwidgets-grids-export-csv with {

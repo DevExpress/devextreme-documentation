@@ -117,8 +117,8 @@ To specify when the Popover should be shown and hidden, set the [showEvent](/api
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
 }
 
 The Popover can also be hidden when a user clicks outside it. To control this behavior of the Popover, use the [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#hideOnOutsideClick') property.

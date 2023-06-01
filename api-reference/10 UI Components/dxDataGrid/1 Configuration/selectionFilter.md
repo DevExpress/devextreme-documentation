@@ -11,8 +11,8 @@ Specifies [filters](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%2
 ---
 This property also allows you to obtain [filter expressions](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering') for the currently selected rows. Note that if all records are selected, the **selectionFilter** value is **null**. If there are no selected records, the value contains an empty array.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DeferredSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DeferredSelection/"
 }
 
 #####See Also#####

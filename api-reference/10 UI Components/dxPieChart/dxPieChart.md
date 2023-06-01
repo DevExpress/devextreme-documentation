@@ -48,8 +48,8 @@ legend: {
 dx.viz.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/PieChart/Overview/"

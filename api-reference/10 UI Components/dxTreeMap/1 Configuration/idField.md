@@ -33,6 +33,6 @@ Note that in this data source, objects that have children have the *"id"* field 
         parentField: 'parent'
     };
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FlatDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FlatDataStructure/"
 }

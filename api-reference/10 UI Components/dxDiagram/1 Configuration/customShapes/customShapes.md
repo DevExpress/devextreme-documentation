@@ -274,8 +274,8 @@ Use the [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuratio
 ---
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithIcons/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithIcons/"
 }
 
 #####See Also#####

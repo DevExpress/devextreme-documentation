@@ -8,8 +8,8 @@ default: true, false (command column)
 Specifies whether a user can hide the column using the column chooser at runtime. Applies only if **columnChooser**.[enabled](/api-reference/40%20Common%20Types/15%20grids/ColumnChooser/enabled.md '{basewidgetpath}/Configuration/columnChooser/#enabled') is **true**.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnChooser/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnChooser/"
 }
 
 [note] [Fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '{basewidgetpath}/Configuration/columns/#fixed') columns ignore the [hidingPriority](/api-reference/_hidden/GridBaseColumn/hidingPriority.md '{basewidgetpath}/Configuration/columns/#hidingPriority') and **allowHiding** properties.

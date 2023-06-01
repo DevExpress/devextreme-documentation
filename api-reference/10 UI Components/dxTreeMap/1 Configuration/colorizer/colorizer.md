@@ -18,6 +18,6 @@ If for some reason you cannot use the first approach, colorize tiles using the *
 To find out how else you can colorize tiles, see the [colorField](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/colorField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#colorField') and **tile**.[color](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/tile/color.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/tile/#color') property descriptions.
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Colorization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Colorization/"
 }

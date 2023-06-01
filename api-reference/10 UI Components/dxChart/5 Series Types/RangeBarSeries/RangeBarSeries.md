@@ -14,8 +14,8 @@ Describes settings supported by a series of the *range bar* type.
     seriesType: "rangebar"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/RangeBar/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/RangeBar/"
 }
 
 ![DevExtreme HTML5 Charts RangeBarSeriesType](/images/ChartJS/RangeBar.png)

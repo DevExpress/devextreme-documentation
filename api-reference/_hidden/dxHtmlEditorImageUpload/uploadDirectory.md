@@ -8,8 +8,8 @@ default: undefined
 Specifies a target directory for uploaded images.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 
 The **uploadDirectory** property is in effect only if the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUploadMode.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode') property value is *server* or *both*.

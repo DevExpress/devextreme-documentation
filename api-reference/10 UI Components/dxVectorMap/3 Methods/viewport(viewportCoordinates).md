@@ -15,8 +15,8 @@ In addition, you can get the current coordinates of the map viewport by calling 
 
 If you have implemented the [onCenterChanged](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/onCenterChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onCenterChanged') or [onZoomFactorChanged](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/onZoomFactorChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onZoomFactorChanged') callback functions, they will be triggered when the viewport coordinates are changed using the **viewport(viewportCoordinates)** method.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/DynamicViewport/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/DynamicViewport/"
 }
 
 #####See Also#####

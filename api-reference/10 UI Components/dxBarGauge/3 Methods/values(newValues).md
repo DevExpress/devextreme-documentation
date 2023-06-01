@@ -11,8 +11,8 @@ New values.
 ---
 Use this method to change gauge values at runtime.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/VariableNumberOfBars/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/VariableNumberOfBars/"
 }
 
 #####See Also#####

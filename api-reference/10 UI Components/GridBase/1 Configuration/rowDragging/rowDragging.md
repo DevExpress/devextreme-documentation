@@ -8,6 +8,6 @@ inheritsType: common/grids:RowDragging
 Configures row reordering using drag and drop gestures.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/LocalReordering/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/LocalReordering/"
 }

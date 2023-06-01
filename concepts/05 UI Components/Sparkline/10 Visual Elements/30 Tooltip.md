@@ -39,6 +39,6 @@ You can change the visibility, color, width and other settings of the tooltip bo
 * **Shadow**		
 The tooltip is displayed casting a small shadow. To specify its blurriness, opacity, color and other settings, use [shadow](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tooltip/shadow '/Documentation/ApiReference/UI_Components/dxSparkline/Configuration/tooltip/shadow/') object fields.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleSparklines/"
 }

@@ -9,8 +9,8 @@ Gets all the [values](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configu
 The values.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/VariableNumberOfBars/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/VariableNumberOfBars/"
 }
 
 #####See Also#####

@@ -361,8 +361,8 @@ In addition, you can set an ascending or descending sort order for each summary-
 
 [note] This feature does not work when **remoteOperations**.[groupPaging](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations/groupPaging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/#groupPaging') is set to **true**.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
 }
 
 #####See Also#####

@@ -94,8 +94,8 @@ To enable the crosshair, set the **crosshair**.[enabled](/api-reference/10%20UI%
 
 For information about all properties of the crosshair and its labels, visit the [crosshair](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/crosshair '/Documentation/ApiReference/UI_Components/dxChart/Configuration/crosshair/') section of the API reference.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Crosshair/"
 }
 
 [tags]chart, crosshair, pointer

@@ -350,8 +350,8 @@ If error bars should have uniform settings, you can specify them using one of th
 
 For information about all properties of the error bars, visit the [valueErrorBar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/valueErrorBar '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/valueErrorBar/') section of the API reference.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ErrorBars/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ErrorBars/"
 }
 
 [tags]chart, error bar, valueErrorBar, highValueField, lowValueField

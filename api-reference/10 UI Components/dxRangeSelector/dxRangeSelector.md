@@ -45,8 +45,8 @@ This UI component represents a scale (numeric or date-time) and two sliders. A u
 
 A chart can be displayed in the [background](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/background '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/background/') of the RangeSelector UI component. This allows end users to select the required range in a chart series. You can also integrate the RangeSelector UI component with a stand-alone [Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') UI component to emulate chart [zooming and scrolling](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning/10%20Using%20the%20RangeSelector%20Component.md '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/#Using_the_RangeSelector_Component').
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/NumericScaleLightweight/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/NumericScaleLightweight/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/"

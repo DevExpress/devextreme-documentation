@@ -1,7 +1,7 @@
 Chunk upload allows large files to be divided into parts called "chunks" and sent via multiple requests. To enable this feature, specify the [chunk size](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/chunkSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#chunkSize') in bytes and set [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode') to *"instantly"* or *"useButtons"* to send files via Ajax requests.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/ChunkUploading/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/ChunkUploading/"
 }
 
 ---

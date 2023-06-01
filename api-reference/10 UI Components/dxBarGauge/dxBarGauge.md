@@ -15,8 +15,8 @@ values: [50, 30, 90]
 dx.viz.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/LabelsCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/LabelsCustomization/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/BarGauge/Visual_Elements/"

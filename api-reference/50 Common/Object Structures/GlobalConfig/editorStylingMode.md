@@ -16,6 +16,6 @@ The following styles are available:
         editorStylingMode: 'filled' // or 'outlined' | 'underlined'
     });
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/StylingMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/StylingMode/"
 }

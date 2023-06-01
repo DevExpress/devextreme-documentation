@@ -123,8 +123,8 @@ You can use the following position markers in this text:
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
 }
 
 Use the [customizeText](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#customizeText') property for more advanced text customizations.

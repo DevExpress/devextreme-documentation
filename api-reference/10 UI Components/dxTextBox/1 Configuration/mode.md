@@ -13,6 +13,6 @@ The value of this property affects the set of keyboard buttons shown on the mobi
  - "search" - the text box contains the "X" button, which clears the text box contents
  - "password" - the text box shows a password character instead of the actual characters typed
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
 }

@@ -15,6 +15,6 @@ An object that defines a gauge indicator of the **triangleNeedle** type.
     indicatorTypePascalCase: "TriangleNeedle"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypes/"
 }

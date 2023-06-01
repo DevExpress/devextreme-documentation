@@ -9,7 +9,7 @@ Notifies the UI component whether search is case-sensitive to ensure that search
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/"
 }
 -->

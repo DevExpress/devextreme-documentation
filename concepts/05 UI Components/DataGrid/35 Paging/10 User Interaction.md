@@ -199,8 +199,8 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1
 ---
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordPaging/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordPaging/"
 }
 
 #####See Also#####

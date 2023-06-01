@@ -239,6 +239,6 @@ Only a single point can be in the selected state at a time by default. If you ne
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/DoughnutSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/DoughnutSelection/"
 }

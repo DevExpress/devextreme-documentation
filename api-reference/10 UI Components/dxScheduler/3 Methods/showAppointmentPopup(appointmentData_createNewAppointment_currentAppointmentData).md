@@ -18,8 +18,8 @@ Specifies whether a new appointment is created when editing is finished.
 
 If invoked without parameters, the method shows a new appointment window. Its start and end dates are prepopulated in accordance with the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') value. The default appointment duration is 30 minutes.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/"
 }
 
 #####See Also#####

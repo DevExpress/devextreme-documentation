@@ -21,6 +21,6 @@ You can specify a [format](/api-reference/10%20UI%20Components/dxBarGauge/1%20Co
 - **Appearance**	
 The font style used for displaying the label text can be varied using [font](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/label/font '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/font/') configuration object properties. Also, the width and color of the label's connector can be changed using the [connectorColor](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/label/connectorColor.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/#connectorColor') and [connectorWidth](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/label/connectorWidth.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/#connectorWidth') properties respectively. In addition, bar labels can be indented from the upper bar using the [indent](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/label/indent.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/#indent') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/LabelsCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/LabelsCustomization/"
 }

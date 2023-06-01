@@ -9,8 +9,8 @@ Configures the context menu settings.
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ContextMenu/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ContextMenu/"
 }
 
 ![DevExtreme Gantt - Context Menu](/images/Gantt/context-menu.png) 

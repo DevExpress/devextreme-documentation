@@ -14,8 +14,8 @@ An object defining a series of the **stackedBar** type.
     seriesType: "stackedbar"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/WindRose/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/WindRose/"
 }
 
 ![PolarStackedBarSeriesType ChartJS](/images/ChartJS/PolarStackedBar.png)

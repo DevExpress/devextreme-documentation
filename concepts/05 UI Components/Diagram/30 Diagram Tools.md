@@ -10,8 +10,8 @@ The Diagram UI component allows you to customize its UI tools with the following
 
 ![Diagram control data toolbox](/images/diagram/ui-customization.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
 }
 
 ---

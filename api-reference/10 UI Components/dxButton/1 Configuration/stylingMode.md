@@ -12,8 +12,8 @@ The following styles are available:
 
 ![Button Styling Modes](/images/UiWidgets/button_stylingMode.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }
 
 #####See Also#####

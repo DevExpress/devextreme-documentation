@@ -6,6 +6,6 @@ The **timeZone**, **startDateTimeZone**, and **endDateTimeZone** properties acce
 
 [important] When setting an appointment's date and time, we recommend that you use ISO 8601 strings instead of JS Date objects. Date objects set time in the client machine's time zone. ISO 8601 strings are independent of time zones because they represent the date and time in Coordinated Universal Time (UTC).
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport"
 }

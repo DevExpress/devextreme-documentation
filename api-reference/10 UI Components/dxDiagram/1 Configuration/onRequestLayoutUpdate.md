@@ -31,6 +31,6 @@ The Diagram component updates the bound data source and reloads the diagram cont
 
 Write the **onRequestLayoutUpdate** function to specify whether the UI component should recalculate and update the diagram layout after the data is reloaded.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/"
 }

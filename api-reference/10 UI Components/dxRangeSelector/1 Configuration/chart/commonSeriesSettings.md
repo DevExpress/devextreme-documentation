@@ -11,6 +11,6 @@ Use this object's properties to set the properties for all chart series at once.
 
 For information on all the properties of the **commonSeriesSettings** configuration object, refer to its description in the **chartOptions** reference section: [commonSeriesSettings](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/'). Note that the RangeSelector UI component may have its own default values for the **commonSeriesSettings** properties. For instance, the **type** property is set to 'area' in the RangeSelector UI component. In the Chart UI component, this property is set to 'line' by default.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Range_Selector/DiscreteScale/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Range_Selector/DiscreteScale/"
 }

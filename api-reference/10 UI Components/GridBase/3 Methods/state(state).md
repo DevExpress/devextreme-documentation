@@ -13,8 +13,8 @@ After the state is set, the {WidgetName} reloads data to apply sorting, filterin
  
 Refer to the [state()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/state().md '{basewidgetpath}/Methods/#state') method description for an example of how to work with the UI component state.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
 }
 
 #####See Also#####

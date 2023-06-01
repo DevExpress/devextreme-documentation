@@ -2,8 +2,8 @@ The **agenda** view lists all available appointments grouped by date. This view 
 
 ![Agenda View](/images/UiWidgets/Scheduler_Agenda_View.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/"
 }
 
 By default, the **agenda** view displays appointments for seven dates at a time from the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') onward. To change the number of dates, specify the [agendaDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/agendaDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#agendaDuration') property. For details on individual views customization, see [this topic](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/').

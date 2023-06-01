@@ -9,8 +9,8 @@ Configures the header filter settings.
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
 }
 
 The header filter allows users to filter values in an individual column. The header filter is a popup window that contains all unique values of a column. A click on the filter icon invokes the header filter.

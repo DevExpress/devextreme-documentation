@@ -14,8 +14,8 @@ Describes settings supported by a series of the *range area* type.
     seriesType: "rangearea"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/RangeArea/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/RangeArea/"
 }
 
 ![DevExtreme HTML5 Charts RangeAreaSeriesType](/images/ChartJS/RangeArea.png)

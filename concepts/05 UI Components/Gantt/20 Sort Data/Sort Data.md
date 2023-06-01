@@ -4,8 +4,8 @@ Use the [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/Api
 
 To disable sorting for an individual column, set the **column.**[allowSorting](/api-reference/_hidden/GridBaseColumn/allowSorting.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#allowSorting') property to **false**. Note that this property is in effect if the [mode](/api-reference/_hidden/dxGanttSorting/mode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode') property is not set to 'none'.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/"
 }
 
 ---

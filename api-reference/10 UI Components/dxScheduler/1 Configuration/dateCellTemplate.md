@@ -51,8 +51,8 @@ The data of this template consists of the following fields:
     </tr>
 </table>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
 
 [note]There is no **dateCellTemplate** in such views as "day" and "timelineDay".

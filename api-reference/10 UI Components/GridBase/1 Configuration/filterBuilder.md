@@ -14,8 +14,8 @@ See the [FilterBuilder configuration](/api-reference/10%20UI%20Components/dxFilt
     optionName: "filterBuilder"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
 }
 
 #####See Also#####

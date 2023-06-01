@@ -117,8 +117,8 @@ The SelectBox UI component allows an end user to search through its items. This 
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/SearchAndEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/SearchAndEditing/"
 }
 
 When a user types a string in the input field, the SelectBox suggests all items that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchMode') property if you want the SelectBox to suggest only those items that _start_ with the input string.

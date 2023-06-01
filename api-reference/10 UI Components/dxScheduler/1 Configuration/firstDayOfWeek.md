@@ -20,6 +20,6 @@ This property can accept a value from 0 to 6:
 
 The value provided by the culture settings is used by default.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/"
 }

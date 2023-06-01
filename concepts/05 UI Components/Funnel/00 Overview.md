@@ -1,7 +1,7 @@
 The Funnel is a UI component that visualizes a value at different stages in the form of a funnel. It helps assess value changes throughout these stages and identify potential issues.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
 }
 
 The Funnel can visualize data from any source. Refer to the following topics for details on how to bind the Funnel to your data source:

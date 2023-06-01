@@ -110,6 +110,6 @@ You can also display a hierarchy in a list bound to a flat array. In this case, 
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
 }

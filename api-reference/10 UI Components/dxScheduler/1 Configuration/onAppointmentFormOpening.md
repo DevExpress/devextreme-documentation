@@ -316,8 +316,8 @@ The `mainGroup` consists of two columns. A custom item's [colSpan](/api-referenc
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"
 }
 
 #####See Also#####

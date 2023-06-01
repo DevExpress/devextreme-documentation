@@ -41,6 +41,6 @@ Functional similarities of the Field Panel and the Field Chooser allow them to w
 
 When empty, each field area of the Field Panel displays an individual placeholder. If you need to change it, use the properties of the **fieldPanel**.[texts](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldPanel/texts '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldPanel/texts/') object.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/FieldPanel/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/FieldPanel/"
 }

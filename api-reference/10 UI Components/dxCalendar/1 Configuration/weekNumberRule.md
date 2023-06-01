@@ -8,8 +8,8 @@ default: 'auto'
 Specifies a [week number](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/showWeekNumbers.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers') calculation rule.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 
 This property can take on one of the following values:

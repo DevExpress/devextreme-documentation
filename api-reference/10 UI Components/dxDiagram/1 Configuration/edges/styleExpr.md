@@ -24,6 +24,6 @@ A function assigned to this property should do the following:
 * Return an edge's new style as a set of CSS rules in JSON format when the **value** parameter is set to `undefined`. For instance, `{"stroke": "#999999"}`.
 * Save a new style value to a data storage when the **value** parameter contains an edge's style. For instance, assign this value to the **obj** parameter's field to save an edge's style in your data source.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
 }

@@ -69,8 +69,8 @@ A function that renders SVG markup on the HTML canvas. Refer to the [svgToCanvas
 Vertically aligns UI components in their rows.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportSeveralCharts/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportSeveralCharts/"
 }
 
 #####See Also#####

@@ -14,8 +14,8 @@ Describes settings supported by a series of the *full-stacked spline area* type.
     seriesType: "fullstackedsplinearea"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SplineArea/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SplineArea/"
 }
 
 ![DevExtreme HTML5 Charts FullStackedSplineAreaSeriesType](/images/ChartJS/FullStackedSplineArea.png)

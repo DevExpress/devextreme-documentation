@@ -8,8 +8,8 @@ default: 'scrollBottom', 'nextButton' (desktop except Mac)
 Specifies whether the next page is loaded when a user scrolls the UI component to the bottom or when the "next" button is clicked.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/WebApi"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/WebApi"
 }
 
 #####See Also#####

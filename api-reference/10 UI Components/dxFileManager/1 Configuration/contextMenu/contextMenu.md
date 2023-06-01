@@ -9,8 +9,8 @@ Configures the context menu settings.
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/UICustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/UICustomization/"
 }
 
 ![DevExtreme File Manager - Context Menu](/images/FileManager/context-menu.png)

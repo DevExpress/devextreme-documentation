@@ -55,6 +55,6 @@ The List supports *"single"*, *"multiple"*, and *"all"* item selection modes. To
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
 }

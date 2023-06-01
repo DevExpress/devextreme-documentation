@@ -21,6 +21,6 @@ The CheckBox can be in one of the following states depending on the **value** pr
 
 Users can press the Space key to change the **value**.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
 }

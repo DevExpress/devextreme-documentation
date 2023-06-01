@@ -9,8 +9,8 @@ Applies a filter to the [dataSource](/api-reference/10%20UI%20Components/GridBas
 A [filter expression](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter').
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilteringAPI/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilteringAPI/"
 }
 
 The filter passed to this method is not reflected in [any of the filtering UI elements](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/') and is applied before these elements' filters. To change UI filters in code, use the following properties instead:

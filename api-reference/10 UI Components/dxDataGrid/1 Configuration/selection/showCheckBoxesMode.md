@@ -24,8 +24,8 @@ The selection column with all the checkboxes is hidden. Users can select rows wi
 
 [Keyboard shortcuts](/concepts/05%20UI%20Components/DataGrid/05%20Accessibility/15%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Keyboard_Navigation') work identically regardless of the chosen mode.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"
 }
 
 #####See Also#####

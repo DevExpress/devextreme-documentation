@@ -376,8 +376,8 @@ If all panes in a multi-pane chart should have uniform settings, you can specify
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/"
 }
 
 #####See Also#####

@@ -18,8 +18,8 @@ layers: [{
 dx.viz.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/VectorMap/Visual_Elements/"

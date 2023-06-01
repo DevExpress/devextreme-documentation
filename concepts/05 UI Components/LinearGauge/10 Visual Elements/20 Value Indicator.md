@@ -7,8 +7,8 @@ A value indicator is a pointer that designates the [main value](/api-reference/1
 - [TextCloud](/api-reference/10%20UI%20Components/dxLinearGauge/5%20Indicator%20Types/TextCloud '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/TextCloud/')
 - [TriangleMarker](/api-reference/10%20UI%20Components/dxLinearGauge/5%20Indicator%20Types/TriangleMarker '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/TriangleMarker/')
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
 }
 
 In order to customize the appearance of a value indicator, use the [valueIndicator](/api-reference/10%20UI%20Components/dxLinearGauge/1%20Configuration/valueIndicator '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/valueIndicator/') configuration object. Set its **type** property and then the required type-specific properties. The type-specific properties are listed within the UI component's [Indicator Types](/api-reference/10%20UI%20Components/dxLinearGauge/5%20Indicator%20Types '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/') reference section. 

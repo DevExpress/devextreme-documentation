@@ -8,6 +8,6 @@ Automatically scrolls the component to the focused row when the [focusedRowKey](
 
 If you set the [remoteOperations](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/) property to **true**, the DataGrid generates additional requests with comparison operators (for example, `<` and `>`). This logic does not work if ODataStore is bound to a table with GUID keys. You need to disable the **autoNavigateToFocusedRow** or **remoteOperations** properties to ensure it operates correctly.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/"
 }

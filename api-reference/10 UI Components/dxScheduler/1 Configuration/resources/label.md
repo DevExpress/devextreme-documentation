@@ -8,6 +8,6 @@ default: ''
 Specifies the label of the Appointment popup window field that allows end users to assign a resource of this kind.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/"
 }

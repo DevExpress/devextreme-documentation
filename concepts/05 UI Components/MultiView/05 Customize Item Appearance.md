@@ -140,8 +140,8 @@ To customize views in the MultiView, define an [itemTemplate](/api-reference/10%
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
 }
 
 If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for MultiView views. To apply this markup, use the **itemTemplate** callback function as shown in the following code:

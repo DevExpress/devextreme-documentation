@@ -6,8 +6,8 @@ You can click the filter expression to open the integrated filter builder.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout DataGrid Filter Panel](/images/DataGrid/visual_elements/integrated_filter_builder.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/"
 }
 
 Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterPanel/#visible') property to **true** to make the filter panel visible. 

@@ -23,8 +23,8 @@ One of the following:
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomLegendMarkers/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomLegendMarkers/"
 }
 
 #include dataviz-ref-legend-markertemplate

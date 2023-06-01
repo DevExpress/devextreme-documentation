@@ -18,6 +18,6 @@ The following code inserts a new record after a record with key 10:
 
 [important] Do not use **insertAfterKey** with [insertBeforeKey](/api-reference/_hidden/DataChange/insertBeforeKey.md '{currentpath}/#insertBeforeKey').
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomNewRecordPosition/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomNewRecordPosition/"
 }

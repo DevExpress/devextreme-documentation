@@ -244,8 +244,8 @@ If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" ta
         });
     });
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Context_Menu/Templates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Context_Menu/Templates/"
 }
 
 You can also customize an individual context menu item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/#template') field of the item's data object.

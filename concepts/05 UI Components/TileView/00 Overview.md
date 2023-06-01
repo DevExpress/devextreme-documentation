@@ -1,7 +1,7 @@
 The TileView UI component contains a collection of tiles. Tiles can store much more information than ordinary buttons, that is why they are very popular in apps designed for touch devices.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Basics/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Basics/"
 }
 
 The following code adds a primitive TileView to your page.
@@ -174,8 +174,8 @@ By default, the UI component is oriented horizontally, but you can orient it ver
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tile_View/Directions/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tile_View/Directions/"
 }
 
 #####See Also#####

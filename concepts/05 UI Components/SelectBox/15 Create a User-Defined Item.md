@@ -182,8 +182,8 @@ Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/SearchAndEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/SearchAndEditing/"
 }
 
 #####See Also#####

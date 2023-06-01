@@ -13,6 +13,6 @@ You can group segments in two different modes. Use a *'topN'* mode to group all 
 
 By default, the resulting segment is called *"others"*. To change this name, specify the **groupName** property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithSmallValuesGrouped/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithSmallValuesGrouped/"
 }

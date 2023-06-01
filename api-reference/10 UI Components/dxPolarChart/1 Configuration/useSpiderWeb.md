@@ -20,6 +20,6 @@ The spider web property is supported in the following series types.
 
 [note]A spider web demands that the [discreteAxisDivisionMode](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/commonAxisSettings/discreteAxisDivisionMode.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonAxisSettings/#discreteAxisDivisionMode') property is set to *'crossLabels'* and the [firstPointOnStartAngle](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/argumentAxis/firstPointOnStartAngle.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/argumentAxis/#firstPointOnStartAngle') property is set to **true**. Thus, do not change the values of these property so that the spider web saves its look.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SpiderWeb/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SpiderWeb/"
 }

@@ -19,8 +19,8 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
 
 To specify the minimum visual range that a user can set, use the [minVisualRangeLength](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/minVisualRangeLength '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/minVisualRangeLength/') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartZoomingAndScrollingAPI"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PolarChartZoomingAndScrollingAPI"
 }
 
 #####See Also#####

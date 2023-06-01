@@ -27,8 +27,8 @@ Rotates axis labels at the angle specified by the [rotationAngle](/api-reference
 - **stagger**      
 Arranges axis labels in two rows in a staggered manner. Use the [staggeringSpacing](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/staggeringSpacing.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/label/#staggeringSpacing') property to specify an empty space between rows.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsOverlapping/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsOverlapping/"
 }
 
 #####See Also#####

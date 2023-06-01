@@ -34,8 +34,8 @@ Next, get familiar with the UI component's elements using the following element 
     <area target="_blank" alt="Link" title="Link" href="/Documentation/Guide/UI_Components/Sankey/Nodes_and_Links/Overview/" coords="10,170,36,171,58,174,77,176,85,177,92,173,69,169,10,164" shape="poly">
 </map>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
 }
 
 #####See Also#####

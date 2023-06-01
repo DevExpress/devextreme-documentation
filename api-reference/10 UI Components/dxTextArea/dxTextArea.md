@@ -14,8 +14,8 @@ The TextArea is a UI component that enables a user to enter and edit a multi-lin
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview/"
 }
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/"

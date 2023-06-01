@@ -24,6 +24,6 @@ A function assigned to this property should do the following:
 * Return an edge's text style as a set of CSS rules in JSON format when the **value** parameter is set to `undefined`. For instance, `{ "font-weight": "bold", "text-decoration": "underline" }`.
 * Save a new text style value to a data storage when the **value** parameter contains an edge's text style. For instance, assign this value to the **obj** parameter's field to save an edge's text style in your data source.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
 }

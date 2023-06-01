@@ -22,6 +22,6 @@ The picker type depends on the current platform or web browser.
 - *"rollers"*  
 The DateBox displays rollers for users to select date and time. Users cannot edit the selected value in the input field.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }

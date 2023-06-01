@@ -13,6 +13,6 @@ If you assign a string that specifies the mode name to this property, the UI com
     <!--JavaScript-->
     showFirstSubmenuMode: "onHover"
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
 }

@@ -8,6 +8,6 @@ default: false
 Specifies whether the UI component adapts to small screens.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/"
 }

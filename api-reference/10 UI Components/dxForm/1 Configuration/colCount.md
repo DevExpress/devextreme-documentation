@@ -8,8 +8,8 @@ default: 1
 The count of columns in the form layout.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
 }
 
 [note] For extra small screens, this property always equals *1* to make the UI component adaptive. To override this logic, specify the [colCountByScreen](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/') property.

@@ -14,6 +14,6 @@ If you are going to display several series in the range selector's chart, assign
 
 If you display several series on the chart, utilize the [commonSeriesSettings](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/chart/commonSeriesSettings.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/#commonSeriesSettings') configuration object. This object allows you to set values that are common for all series in the chart.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ChartOnBackground/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ChartOnBackground/"
 }

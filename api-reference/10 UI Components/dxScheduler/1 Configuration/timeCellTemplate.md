@@ -49,8 +49,8 @@ Use this template for time cells only.
     </tr>
 </table>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
 
 [note]There is no **timeCellTemplate** in such views as "month", "timelineMonth" and "agenda".

@@ -19,8 +19,8 @@ When this property is set to **true**, the following applies:
 
 DataGrid generates additional requests with comparison operators (for example, `<` and `>`) to calculate the page number where a row with a focused key is located. This logic does not work for certain key types (for example, GUID) and data providers (for example, ODataStore). You need to disable the [autoNavigateToFocusedRow](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#autoNavigateToFocusedRow) property or set [remoteOperations](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/) to **false** to ensure it operates correctly.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/FocusedRow/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/FocusedRow/"
 }
 
 #####See Also#####

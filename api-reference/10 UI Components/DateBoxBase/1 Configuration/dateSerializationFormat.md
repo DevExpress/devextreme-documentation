@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the date value serialization format. Use it only if you do not specify the [value](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#value') at design time.
+Specifies the date value serialization format. Use it only if you do not specify [value](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#value') at design time. 
 
 ---
 Without a value, the UI component cannot detect the format. In this case, specify the **dateSerializationFormat** property (`"yyyy-MM-dd"` - "2017-03-06").

@@ -2,6 +2,7 @@
 id: Cancelable
 module: events/index
 export: Cancelable
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

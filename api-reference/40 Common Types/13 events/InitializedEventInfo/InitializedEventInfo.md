@@ -2,6 +2,7 @@
 id: InitializedEventInfo
 module: events/index
 export: InitializedEventInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

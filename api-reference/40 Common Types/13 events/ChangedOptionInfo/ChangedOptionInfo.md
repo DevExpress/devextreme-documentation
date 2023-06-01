@@ -2,6 +2,7 @@
 id: ChangedOptionInfo
 module: events/index
 export: ChangedOptionInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

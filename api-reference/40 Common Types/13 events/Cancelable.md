@@ -5,7 +5,7 @@ export: Cancelable
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A type used in events. Specifies whether the event is cancelable.
 
 ---
 <!-- Description goes here -->

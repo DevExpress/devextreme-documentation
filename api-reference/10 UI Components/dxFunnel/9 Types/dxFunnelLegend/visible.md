@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the legend is visible.
 
 ---

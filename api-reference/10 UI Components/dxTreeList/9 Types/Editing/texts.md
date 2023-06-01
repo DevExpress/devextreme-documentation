@@ -4,6 +4,6 @@ uid: ui/tree_list:Editing.texts
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains properties that specify texts for editing-related UI elements.
 
 ---

@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether point labels should be kept when the UI component adapts the layout.
 
 ---

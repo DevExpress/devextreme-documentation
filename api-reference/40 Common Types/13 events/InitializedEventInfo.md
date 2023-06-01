@@ -5,7 +5,7 @@ export: InitializedEventInfo
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies arguments of `initialized` event.
 
 ---
 <!-- Description goes here -->

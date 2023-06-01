@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the tooltip is shared across all series points with the same argument.
 
 ---

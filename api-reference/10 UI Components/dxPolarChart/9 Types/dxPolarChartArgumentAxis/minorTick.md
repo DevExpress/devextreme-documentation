@@ -4,6 +4,6 @@ uid: viz/polar_chart:dxPolarChartArgumentAxis.minorTick
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the properties of the minor ticks.
 
 ---

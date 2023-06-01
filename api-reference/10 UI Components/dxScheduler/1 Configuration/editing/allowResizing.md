@@ -5,7 +5,7 @@ default: true, false (Android, iOS)
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can change an appointment duration.
+Specifies whether or not an end user can change an appointment duration.
 
 ---
 #include common-demobutton with {

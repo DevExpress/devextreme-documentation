@@ -5,6 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a tooltip is enabled.
 
 ---

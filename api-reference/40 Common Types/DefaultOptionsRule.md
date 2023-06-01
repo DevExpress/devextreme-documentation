@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the device-dependent default configuration properties for a component.
 
 ---
 <!-- Description goes here -->

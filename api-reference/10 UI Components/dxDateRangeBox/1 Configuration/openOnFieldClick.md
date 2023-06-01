@@ -5,7 +5,6 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can open the popup calendar by clicking an input field. 
 
 ---
-<!-- Description goes here -->

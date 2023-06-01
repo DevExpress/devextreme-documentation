@@ -4,7 +4,7 @@ type: function(items)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows you to change the order, text, and visibility of legend items.
 
 ##### param(items): Array<PieChartLegendItem>
 Legend items before customizations.

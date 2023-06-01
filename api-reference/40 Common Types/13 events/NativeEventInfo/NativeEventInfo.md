@@ -6,7 +6,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A type that contains fields common for all events (`component`, `element`, `model`) and the `event` field.
 
 ---
-<!-- Description goes here -->
+Do not use [EventInfo](/Documentation/ApiReference/Common_Types/events/#EventInfo) if you specify this type.

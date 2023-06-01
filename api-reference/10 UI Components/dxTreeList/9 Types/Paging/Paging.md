@@ -7,6 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that configures paging.
 
 ---

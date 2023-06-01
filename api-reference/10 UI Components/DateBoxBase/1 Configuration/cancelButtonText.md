@@ -5,6 +5,6 @@ default: 'Cancel'
 ---
 ---
 ##### shortDescription
-Specifies the Cancel button's text.
+Specifies the Cancel button's text. 
 
 ---

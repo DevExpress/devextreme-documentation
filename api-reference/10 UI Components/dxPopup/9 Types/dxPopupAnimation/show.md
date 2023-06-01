@@ -5,6 +5,6 @@ default: { type: 'slide', duration: 400, from: { position: { my: 'top', at: 'bot
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that defines the animation properties used when the UI component is being shown.
 
 ---

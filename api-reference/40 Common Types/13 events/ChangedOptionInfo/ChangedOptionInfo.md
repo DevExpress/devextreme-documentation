@@ -6,7 +6,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies arguments of `optionChanged` event.
 
 ---
 <!-- Description goes here -->

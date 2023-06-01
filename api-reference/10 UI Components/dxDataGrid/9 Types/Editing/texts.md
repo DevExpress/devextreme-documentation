@@ -4,6 +4,6 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains properties that specify texts for editing-related UI elements.
 
 ---

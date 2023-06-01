@@ -5,6 +5,6 @@ default: {}
 ---
 ---
 ##### shortDescription
-Specifies the attributes to be passed on to the end date input field.
+Specifies the attributes passed to the end date input field. 
 
 ---

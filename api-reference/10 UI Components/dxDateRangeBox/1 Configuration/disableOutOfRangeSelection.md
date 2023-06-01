@@ -5,7 +5,10 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the UI component disables date selection before the start date and after the end date.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [startDate]({basewidgetpath}/Configuration/#startDate)
+- [endDate]({basewidgetpath}/Configuration/#endDate)
+- [value]({basewidgetpath}/Configuration/#value)

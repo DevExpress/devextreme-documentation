@@ -5,6 +5,6 @@ default: 12
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the marker's size in a legend item in pixels.
 
 ---

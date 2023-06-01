@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether paging is enabled.
 
 ---

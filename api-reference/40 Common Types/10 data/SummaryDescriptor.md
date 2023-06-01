@@ -6,7 +6,7 @@ export: SummaryDescriptor
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A total summary expression for `loadOptions`.
 
 ---
 <!-- Description goes here -->

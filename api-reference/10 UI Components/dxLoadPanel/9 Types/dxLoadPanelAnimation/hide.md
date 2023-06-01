@@ -5,6 +5,6 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that defines the animation properties used when the UI component is being hidden.
 
 ---

@@ -6,7 +6,7 @@ type: AsyncRule | CompareRule | CustomRule | EmailRule | NumericRule | PatternRu
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a validation rule.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a group of elements in a template.
 
 ---
 <!-- Description goes here -->

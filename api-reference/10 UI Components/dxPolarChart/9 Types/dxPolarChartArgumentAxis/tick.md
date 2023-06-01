@@ -4,6 +4,6 @@ uid: viz/polar_chart:dxPolarChartArgumentAxis.tick
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object defining the configuration properties for axis ticks.
 
 ---

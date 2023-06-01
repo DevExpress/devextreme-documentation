@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies returned data of the `load()` method in CustomStore.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies dates that users cannot select.
 
 ---
 <!-- Description goes here -->

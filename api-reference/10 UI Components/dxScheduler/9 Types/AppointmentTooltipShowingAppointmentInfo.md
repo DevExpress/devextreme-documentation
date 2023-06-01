@@ -6,6 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies appointments information in AppointmentTooltipShowingEvent.
 
 ---

@@ -5,6 +5,6 @@ default: 170
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the minimum container width at which the layout begins to adapt.
 
 ---

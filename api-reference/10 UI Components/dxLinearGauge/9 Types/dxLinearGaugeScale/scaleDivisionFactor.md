@@ -5,6 +5,6 @@ default: 25
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the minimum distance between two neighboring major ticks in pixels.
 
 ---

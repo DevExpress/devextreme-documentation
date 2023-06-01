@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Indicates whether or not ticks are visible on an axis.
 
 ---

@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An additional type for [ResolvedData](/Documentation/ApiReference/Common_Types/data/#ResolvedData).
 
 ---
 <!-- Description goes here -->

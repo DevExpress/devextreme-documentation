@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when the UI component's input has been copied.
 
-##### param(e): Object
+##### param(e): NativeEventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

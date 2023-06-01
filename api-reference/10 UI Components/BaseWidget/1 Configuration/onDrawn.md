@@ -8,7 +8,7 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when the UI component's rendering has finished.
 
-##### param(e): Object
+##### param(e): EventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

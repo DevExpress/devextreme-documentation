@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard.
 
-##### param(e): Object
+##### param(e): NativeEventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

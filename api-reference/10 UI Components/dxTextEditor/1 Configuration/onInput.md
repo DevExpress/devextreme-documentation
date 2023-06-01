@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed each time the UI component's input is changed while the UI component is focused.
 
-##### param(e): Object
+##### param(e): NativeEventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

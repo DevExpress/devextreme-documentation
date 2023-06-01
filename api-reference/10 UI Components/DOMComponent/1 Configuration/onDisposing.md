@@ -4,7 +4,7 @@ type: function(e)
 default: null
 ---
 ---
-##### param(e): Object
+##### param(e): EventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when the Enter key has been pressed while the UI component is focused.
 
-##### param(e): Object
+##### param(e): NativeEventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when a user is pressing a key on the keyboard.
 
-##### param(e): Object
+##### param(e): NativeEventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

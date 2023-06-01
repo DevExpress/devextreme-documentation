@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed after the UI component is exported.
 
-##### param(e): Object
+##### param(e): EventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

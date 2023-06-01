@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed once the drop-down editor is opened.
 
-##### param(e): Object
+##### param(e): EventInfo
 Information about the event.
 
 ##### field(e.component): {WidgetName}

@@ -14,8 +14,8 @@ Use this rule type to ensure the target editor value is specified. The rule will
 - If the validated value is **null**, **false**, or **undefined**.
 - If the specified value has a type that is not expected for the target field (e.g., a string for the [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component).
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
 #####See Also#####

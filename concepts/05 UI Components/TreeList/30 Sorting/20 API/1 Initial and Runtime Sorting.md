@@ -211,6 +211,6 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleSorting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleSorting/"
 }

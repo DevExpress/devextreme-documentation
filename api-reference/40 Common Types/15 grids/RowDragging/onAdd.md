@@ -44,8 +44,8 @@ The position in which the row is placed. If the row is dragged away from the UI 
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DnDBetweenGrids/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DnDBetweenGrids/"
 }
 
 -->

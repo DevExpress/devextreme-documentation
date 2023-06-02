@@ -9,8 +9,8 @@ export: EmailRule
 A validation rule that demands that the validated field match the Email pattern.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
 #####See Also#####

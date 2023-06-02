@@ -17,7 +17,8 @@ When the scale is built on values from a [data source](/api-reference/10%20UI%20
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/NumericScaleLightweight/",
     name: "Numeric Scale"
 }
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/DateTimeScaleLightweight/",
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/DateTimeScaleLightweight/",
     name: "Date-Time Scale"
 }

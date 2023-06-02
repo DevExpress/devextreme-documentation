@@ -33,8 +33,8 @@ In the TreeMap UI component, hierarchical data is represented by a set of nested
 
 TreeMap provides three [layout algorithms](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/layoutAlgorithm.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#layoutAlgorithm') out-of-the-box along with the capability to implement your own algorithm. In addition, the UI component includes API methods that enable you to implement the [drill down](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node/3%20Methods/drillDown().md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#drillDown') feature. Moreover, TreeMap supports all interactive features available in other DevExtreme Data Visualization Widgets: [click](/api-reference/10%20UI%20Components/dxTreeMap/4%20Events/click.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Events/#click'), [hover](/api-reference/10%20UI%20Components/dxTreeMap/4%20Events/hoverChanged.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Events/#hoverChanged') and [selection](/api-reference/10%20UI%20Components/dxTreeMap/4%20Events/selectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Events/#selectionChanged').
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HierarchicalDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HierarchicalDataStructure/"
 }
 
 #####See Also#####

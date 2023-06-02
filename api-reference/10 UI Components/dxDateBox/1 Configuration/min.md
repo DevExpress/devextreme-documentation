@@ -8,8 +8,8 @@ default: undefined
 The minimum date that can be selected within the UI component.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }
 
 [note]If this property is **undefined**, [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') - *"rollers"*, [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') - *"date"* or *"datetime"*, the UI component renders values from 01/01/1900.

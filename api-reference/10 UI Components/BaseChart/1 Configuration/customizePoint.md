@@ -98,6 +98,6 @@ In the financial series ([*candlestick*](/api-reference/10%20UI%20Components/dxC
 
 #include dataviz-ref-functioncontext
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointImage/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointImage/"
 }

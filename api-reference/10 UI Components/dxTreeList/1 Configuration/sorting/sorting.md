@@ -12,8 +12,8 @@ To apply sorting to a column, a user clicks its header or selects a command from
 
 Note that rows are sorted within their hierarchical level.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleSorting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleSorting/"
 }
 
 #####See Also#####

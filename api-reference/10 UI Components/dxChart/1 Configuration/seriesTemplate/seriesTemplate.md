@@ -35,6 +35,6 @@ If you define a data source in this manner, set the argument and value fields us
 
 If you need to specify individual values for properties of a particular series, assign a callback function to the **customizeSeries** property of the **seriesTemplate** object.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SeriesTemplates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SeriesTemplates/"
 }

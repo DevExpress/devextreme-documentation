@@ -15,8 +15,8 @@ This function allows you to access and modify layer elements. You can use API li
 
 #include dataviz-ref-functioncontext
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/"
 }
 
 #####See Also#####

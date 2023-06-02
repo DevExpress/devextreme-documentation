@@ -14,8 +14,8 @@ The Slider is a UI component that allows an end user to set a numeric value on a
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/Slider/Overview/"

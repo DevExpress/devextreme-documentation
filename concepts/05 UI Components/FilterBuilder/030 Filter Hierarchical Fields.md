@@ -157,8 +157,8 @@ In the following code, the FilterBuilder allows filtering by three fields, two o
 
 ![DevExtreme HTML5 JavaScript Filter Builder Hierarchical Fields](/images/FilterBuilder/visual_elements/hierarchical_fields.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterBuilder/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterBuilder/"
 }
 
 #####See Also#####

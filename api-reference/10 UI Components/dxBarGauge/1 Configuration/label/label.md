@@ -11,8 +11,8 @@ Each gauge bar is accompanied by a label that usually displays the value of the 
 
 To hide labels, use the **label**.[visible](/api-reference/10%20UI%20Components/dxBarGauge/1%20Configuration/label/visible.md '/Documentation/ApiReference/UI_Components/dxBarGauge/Configuration/label/#visible') property or assign **false** straight to the **label** property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/LabelsCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/LabelsCustomization/"
 }
 
 #####See Also#####

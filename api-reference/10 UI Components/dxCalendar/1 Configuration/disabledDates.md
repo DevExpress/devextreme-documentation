@@ -16,8 +16,8 @@ Information about the checked date.
 ---
 <!-- %fullDescription% -->
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 
 #####See Also#####

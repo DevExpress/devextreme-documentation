@@ -13,6 +13,6 @@ The vector map may contain several different layers. Each layer can be of *"area
 
 The <a href="https://en.wikipedia.org/wiki/Z-order" target="_blank">Z-order</a> of layers depends on their order in the **layers** array in the following way: the first layer occupies the background, the last layer is brought to the foreground.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Vector_Map/MultipleLayers/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Vector_Map/MultipleLayers/"
 }

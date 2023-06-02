@@ -18,6 +18,6 @@ By default, a tooltip displays the value of a hovered UI component element witho
 * **Font Settings**    
 To customize the appearance of the tooltip text, define the font properties within the [font](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tooltip/font '/Documentation/ApiReference/UI_Components/dxLinearGauge/Configuration/tooltip/font/') configuration object.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Tooltip/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Tooltip/"
 }

@@ -24,8 +24,8 @@ A function assigned to this property should do the following:
 * Return a node's child items when the **value** parameter is set to `undefined`.
 * Save item values to a data storage when the **value** parameter contains a node's child items. For instance, assign these values to the **obj** parameter's field to save a node's child items in your data source.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesArrayHierarchicalStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesArrayHierarchicalStructure/"
 }
 
 ---

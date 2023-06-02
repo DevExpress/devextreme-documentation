@@ -1,7 +1,7 @@
 The Box UI component allows you to arrange various elements within it. This UI component is separate and adaptive and acts as the layout's building block.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview/"
 }
 
 The following code adds a simple Box containing three items to your page. These items are plain texts placed in differently-colored rectangles arranged in a row. Equal **ratio** property values ensure they have equal widths.

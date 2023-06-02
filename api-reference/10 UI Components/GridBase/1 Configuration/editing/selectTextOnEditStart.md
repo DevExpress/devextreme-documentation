@@ -6,8 +6,8 @@ id: GridBase.Options.editing.selectTextOnEditStart
 Specifies whether to select text in a cell when a user starts editing.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/"
 }
 
 #####See Also#####

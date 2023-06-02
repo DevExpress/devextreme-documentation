@@ -26,8 +26,8 @@ Model data. Available only if you use Knockout.
 The input field's text.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing/"
 }
 
 You can specify DOM events after which the component calls this function. Use the [customItemCreateEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/customItemCreateEvent.md '{basewidgetpath}/Configuration/#customItemCreateEvent') property for this purpose. Besides the event passed to this property, the item can also be created when users press the **Enter** key.

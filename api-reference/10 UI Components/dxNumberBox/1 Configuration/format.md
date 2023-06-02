@@ -8,8 +8,8 @@ default: ''
 Specifies the value's display format and controls user input accordingly.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/"
 }
 
 The format property can accept the following value types:

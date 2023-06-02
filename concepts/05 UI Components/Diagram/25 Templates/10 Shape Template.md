@@ -11,8 +11,8 @@ Since the [textExpr](/api-reference/10%20UI%20Components/dxDiagram/1%20Configura
 
 [/note]
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplates/jQuery/Light/"
 }
 
 ---

@@ -99,8 +99,8 @@ To configure the elements' appearance, use the [node](/api-reference/10%20UI%20C
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
 }
 
 #####See Also#####

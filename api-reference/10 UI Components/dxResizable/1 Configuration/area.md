@@ -28,8 +28,8 @@ You can use a selector string, jQuery object, or DOM element to specify this pro
         <!-- tab: JavaScript -->
         area: $('.test-div')[0]
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Resizable/Overview/"
 }
 
 

@@ -13,6 +13,6 @@ include **key** and **items** properties. The **key** property specifies the gro
 
 [note]Only one-level grouping is supported.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/"
 }

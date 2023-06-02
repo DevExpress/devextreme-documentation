@@ -18,8 +18,8 @@ The virtual mode has the following restrictions:
 
 - Since the [search](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled') will be performed on loaded nodes only and thus produce incorrect results, it is not recommended that you enable this functionality.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/VirtualMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/VirtualMode/"
 }
 
 #####See Also#####

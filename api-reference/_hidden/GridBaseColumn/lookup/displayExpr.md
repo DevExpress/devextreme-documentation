@@ -16,8 +16,8 @@ The displayed value.
 ---
 This property accepts a string - the name of the data field that provides displayed values, or a function that returns the displayed value.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/"
 }
 
 [note]

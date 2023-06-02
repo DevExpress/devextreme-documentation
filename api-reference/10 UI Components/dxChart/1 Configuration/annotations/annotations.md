@@ -218,8 +218,8 @@ When a user long-presses an annotation or hovers the mouse pointer over it, the 
 
 Objects in the **annotations[]** array configure individual annotations. To specify properties common for all annotations, use the [commonAnnotationSettings](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAnnotationSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Annotation/"
 }
 
 #####See Also#####

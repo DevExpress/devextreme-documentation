@@ -9,6 +9,6 @@ Specifies the maximum file size (in bytes) allowed for uploading. Applies only i
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/Validation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/Validation/"
 }

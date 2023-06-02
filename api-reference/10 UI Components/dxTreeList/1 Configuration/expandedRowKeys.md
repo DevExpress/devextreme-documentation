@@ -11,8 +11,8 @@ Specifies keys of the initially expanded rows.
 ---
 Setting this property expands only the specified rows, but not their parents. If a to-be-expanded row lies deep in the hierarchy, make sure to include keys of all rows that nest it.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
 }
 
 #####See Also#####

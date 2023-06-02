@@ -46,8 +46,8 @@ The following table shows the operations that are performed after saving changes
     &lt;/ol&gt;
 &lt;/div&gt;
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/"
 }
 
 [note]

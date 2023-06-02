@@ -138,8 +138,8 @@ Searching is disabled in the TreeView UI component by default. Assign **true** t
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/TreeViewWithSearchBar/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/TreeViewWithSearchBar/"
 }
 
 When a user types a string in the input field, the TreeView suggests all nodes that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Components/SearchBoxMixin/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchMode') property if you want the TreeView to suggest only those nodes that _start_ with the input string.

@@ -35,8 +35,8 @@ onEditorPreparing: function(e) { e.editorOptions.width = 125; }
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithDataGrid/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/FilterBuilder/Overview/"

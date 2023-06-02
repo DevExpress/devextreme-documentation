@@ -13,8 +13,8 @@ Holds a [configuration object](/api-reference/10%20UI%20Components/dxTabPanel/1%
     optionName: "tabPanelOptions"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
 }
 
 #####See Also#####

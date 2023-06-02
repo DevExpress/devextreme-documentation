@@ -15,6 +15,6 @@ Pass **true** to repaint updated data rows; **false** to repaint all data rows.
 ---
 Main article: [refresh()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/refresh().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#refresh')
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchUpdateRequest/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchUpdateRequest/"
 }

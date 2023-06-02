@@ -138,8 +138,8 @@ You can also specify your own button type and define its CSS rules as shown in t
 
 Note that buttons have a white background when you move them to the [Toolbar](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/'). We recommend that you use the *'normal'* type for such buttons, otherwise the button text is not visible. You can also define custom CSS rules to override the initial styles.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }
 
 #####See Also#####

@@ -18,6 +18,6 @@ The diagram import updates the [bound data source](/concepts/05%20UI%20Component
 
 [note] The Diagram stores an opened diagram's data in its own text format. Do not modify the data the [export](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/export().md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#export') method returns because a modified document can be loaded incorrectly.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
 }

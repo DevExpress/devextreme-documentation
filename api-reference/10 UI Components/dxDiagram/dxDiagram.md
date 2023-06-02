@@ -98,8 +98,9 @@ dx-diagram.js, dx.all.js
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/Diagram/Getting_Started_with_Diagram/" 
 }
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
 }
 
 #####See Also#####

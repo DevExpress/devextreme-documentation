@@ -120,6 +120,6 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
 
 [/note]
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
 }

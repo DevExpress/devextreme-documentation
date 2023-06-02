@@ -9,8 +9,8 @@ default: { tabs: ['url'], fileUploadMode: 'base64', uploadUrl: undefined, upload
 Configures the image upload.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
 
 Click the 'Add Image' [toolbar button](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') to invoke the 'Add an Image' dialog.

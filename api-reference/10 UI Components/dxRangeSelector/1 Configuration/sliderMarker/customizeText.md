@@ -22,6 +22,6 @@ The text for the slider marker to display.
 ---
 #include dataviz-ref-functioncontext
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Range_Selector/CustomFormatting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Range_Selector/CustomFormatting/"
 }

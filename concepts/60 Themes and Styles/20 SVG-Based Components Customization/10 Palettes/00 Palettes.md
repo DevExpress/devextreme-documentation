@@ -14,6 +14,6 @@ A palette is a set of colors that mix well with each other. Palettes are used to
 
 DevExtreme supports predefined and custom palettes. The default palette is Material. This and other predefined palettes are demonstrated in the following demo:
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
 }

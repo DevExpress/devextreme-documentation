@@ -15,8 +15,8 @@ value: 50
 dx.viz.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickInterval/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleCustomTickInterval/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/LinearGauge/Visual_Elements/"

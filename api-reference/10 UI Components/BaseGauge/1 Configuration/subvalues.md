@@ -21,6 +21,6 @@ You can obtain and change the subvalues at runtime. In order to do this, use the
 
 Subvalues are designated by subvalue indicators. You can customize the appearance of these indicators using the [subvalueIndicator](/api-reference/10%20UI%20Components/BaseGauge/5%20Indicator%20Types/CommonIndicator '{basewidgetpath}/Configuration/subvalueIndicator') configuration object.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/UpdateCircularGaugeDataAtRuntime/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/UpdateCircularGaugeDataAtRuntime/"
 }

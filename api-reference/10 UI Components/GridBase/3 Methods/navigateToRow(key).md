@@ -19,8 +19,8 @@ This method performs the following actions:
 1. Expands groups in which the row is nested (if rows are grouped and the groups are collapsed).
 1. Scrolls the UI component to display the row (if the row is outside the viewport).
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
 The following requirements apply when you use this method: 

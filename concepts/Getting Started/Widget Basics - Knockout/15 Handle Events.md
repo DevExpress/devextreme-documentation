@@ -18,8 +18,8 @@ You can subscribe to an event using a configuration property. All event handling
 
     ko.applyBindings(viewModel);
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/Knockout/Light/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/Knockout/Light/"
 }
 
 #####See Also#####

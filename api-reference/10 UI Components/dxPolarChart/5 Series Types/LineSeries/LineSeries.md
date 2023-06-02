@@ -14,8 +14,8 @@ An object defining a series of the **line** type.
     seriesType: "line"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SpiderWeb/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SpiderWeb/"
 }
 
 ![LineSeriesType ChartJS](/images/ChartJS/PolarLine.png)

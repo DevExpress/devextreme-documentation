@@ -24,8 +24,8 @@ A function assigned to this property should do the following:
 * Return an edge's new end node key when the **value** parameter is set to `undefined`.
 * Save a new key value to a data storage when the **value** parameter contains an edge's end node key. For instance, assign this value to the **obj** parameter's field to save an edge's end node key in your data source.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"
 }
 
 ---

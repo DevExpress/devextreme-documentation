@@ -196,6 +196,6 @@ Assign the [Custom](/api-reference/10%20UI%20Components/dxFileManager/5%20File%2
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/AzureClientBinding/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/AzureClientBinding/"
 }

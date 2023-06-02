@@ -78,8 +78,8 @@ Icons can be used in those UI components that have an **icon** property. For ins
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/"
 }
 
 Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/05%20Default%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Default_Templates') provide the **icon** property as well, the [ContextMenu](/concepts/05%20UI%20Components/ContextMenu/00%20Overview.md '/Documentation/Guide/UI_Components/ContextMenu/Overview/') UI component's [default item template](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') being an example:

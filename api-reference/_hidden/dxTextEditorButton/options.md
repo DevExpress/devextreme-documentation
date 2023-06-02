@@ -10,6 +10,6 @@ Configures the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Butt
 ---
 [note] This property does not work for built-in buttons.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/CustomTextEditorButtons/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/CustomTextEditorButtons/"
 }

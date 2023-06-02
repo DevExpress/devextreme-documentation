@@ -14,8 +14,8 @@ The FileUploader UI component enables an end user to upload files to the server.
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/FileUploader/Overview/"

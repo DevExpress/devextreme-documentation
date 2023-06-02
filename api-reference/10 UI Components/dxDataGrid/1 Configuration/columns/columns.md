@@ -15,8 +15,8 @@ Column properties define the behavior and appearance of a grid column. One of th
 
 To get or set a property or several properties for a column at runtime, use the [columnOption](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid') method with the required arguments.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/"
 }
 
 #####See Also#####

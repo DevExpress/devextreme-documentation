@@ -5,8 +5,8 @@ Depending on the [view type](/concepts/05%20UI%20Components/Scheduler/060%20View
 ![DevExtreme Scheduler: Cell Overflow Indicator](/images/UiWidgets/scheduler-cell-overflow-indicator.png)
 ![DevExtreme Scheduler: Compact Cell Overflow Indicator](/images/UiWidgets/scheduler-cell-overflow-indicator-compact.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/LimitAppointmentCountPerCell/jQuery/Light/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/LimitAppointmentCountPerCell/jQuery/Light/"
 }
 
 To customize overflow indicators, set the [appointmentCollectorTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentCollectorTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentCollectorTemplate'). Similarly, you can specify the [appointmentTooltipTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#appointmentTooltipTemplate') to customize appointments displayed in the overflow indicator's tooltip.

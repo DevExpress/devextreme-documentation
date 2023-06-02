@@ -2,8 +2,8 @@
 ##### merge
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/ItemTemplate/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/ItemTemplate/"
 }
 
 #####See Also#####

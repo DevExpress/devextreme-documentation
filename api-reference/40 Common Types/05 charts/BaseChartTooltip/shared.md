@@ -26,8 +26,8 @@ This property can have one of the following values:
     &lt;/tr&gt;
 &lt;/table&gt;
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultipleAxes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultipleAxes/"
 }
 
 #####See Also#####

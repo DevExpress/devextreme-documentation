@@ -10,8 +10,8 @@ Sets the palette to be used for colorizing bars in the gauge.
 ---
 #include dataviz-ref-palette
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Palette/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Palette/"
 }
 
 #####See Also#####

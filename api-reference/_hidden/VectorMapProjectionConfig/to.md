@@ -14,6 +14,6 @@ Two coordinates that represent the same point in the UI component coordinate sys
 Each coordinate should be in the range from -1 to 1.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection/"
 }

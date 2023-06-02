@@ -24,8 +24,8 @@ If you specify DataGrid's key as composite (for example, `key: ['id', 'name']`),
 
     <!--JavaScript-->widgetInstance.selectRows([ { id: 5, name: 'Alex' }, { id: 10: name: 'Bob' } ], true);
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/"
 }
 
 #####See Also#####

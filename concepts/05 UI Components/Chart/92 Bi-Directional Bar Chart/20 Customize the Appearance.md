@@ -143,6 +143,6 @@ You can also adjust the bar's width. See [Specify the Bar Width](/concepts/05%20
 
 This article outlined the steps to implement a bi-directional bar chart and provided code examples for each step. Refer to the **Bi-Directional Bar Chart** demo for the full code.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/BiDirectionalBarChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/BiDirectionalBarChart/"
 }

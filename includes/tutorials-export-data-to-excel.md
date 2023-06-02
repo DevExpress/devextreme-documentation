@@ -198,8 +198,8 @@ You can call this method at any point in your application. The following code ca
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/ExcelJSOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/ExcelJSOverview/"
 }
 
 #include uiwidgets-grids-export-csv with {

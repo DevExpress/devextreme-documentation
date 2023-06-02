@@ -24,7 +24,7 @@ A container for the template content.
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsTemplates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsTemplates/"
 }
 -->

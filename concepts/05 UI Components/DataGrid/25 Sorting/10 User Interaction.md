@@ -169,8 +169,8 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleSorting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleSorting/"
 }
 
 #####See Also#####

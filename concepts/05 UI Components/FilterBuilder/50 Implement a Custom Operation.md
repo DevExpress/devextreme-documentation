@@ -13,6 +13,6 @@ All custom operations are configured in the [customOperations](/api-reference/10
     Set the [dataTypes](/api-reference/_hidden/dxFilterBuilderCustomOperation/dataTypes.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/#dataTypes') property to make the operation available for fields of specific data types. You can also make it available for an individual field by including the operation's **name** in the field's [filterOperations](/api-reference/_hidden/dxFilterBuilderField/filterOperations.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#filterOperations') array.
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/Customization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/Customization/"
 }

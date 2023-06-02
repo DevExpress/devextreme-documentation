@@ -14,8 +14,8 @@ The **columns** property accepts an array of columns. To configure a column, use
 
 [note] The Gantt UI component does not support column templates.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
 
 ---

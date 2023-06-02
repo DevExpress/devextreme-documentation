@@ -194,8 +194,8 @@ Properties declared in the **tooltip** object apply to all tooltips in the PieCh
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithMultipleSeries/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithMultipleSeries/"
 }
 
 #####See Also#####

@@ -13,6 +13,6 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
 ---
 To display an image instead of series points, assign its URL to the **url** property. If needed, resize the image using the **height** and **width** properties. Otherwise, you can assign the URL directly to the **image** property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointImage/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointImage/"
 }

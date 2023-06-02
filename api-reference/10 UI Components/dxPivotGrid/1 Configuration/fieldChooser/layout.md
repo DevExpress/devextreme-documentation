@@ -20,6 +20,6 @@ The following abbreviations are used on the image.
 * **C** &#8212; Column Fields
 * **D** &#8212; Data Fields
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/StandaloneFieldChooser/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/StandaloneFieldChooser/"
 }

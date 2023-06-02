@@ -192,8 +192,8 @@ If none of the available editors suit your requirements, you can define a custom
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
 }
 #include common-githubbutton with {
     url: "https://github.com/DevExpress-Examples/Form-Custom-items"

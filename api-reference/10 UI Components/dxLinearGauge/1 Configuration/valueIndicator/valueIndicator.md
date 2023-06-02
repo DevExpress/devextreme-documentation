@@ -18,6 +18,6 @@ The value indicator is a pointer that designates the main value of the gauge. Th
 - [TextCloud](/api-reference/10%20UI%20Components/dxLinearGauge/5%20Indicator%20Types/TextCloud '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/TextCloud/')
 - [TriangleMarker](/api-reference/10%20UI%20Components/dxLinearGauge/5%20Indicator%20Types/TriangleMarker '/Documentation/ApiReference/UI_Components/dxLinearGauge/Indicator_Types/TriangleMarker/')
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
 }

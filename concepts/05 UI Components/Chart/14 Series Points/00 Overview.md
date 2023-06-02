@@ -244,8 +244,8 @@ Settings specified in the manner described above apply to a congregation of seri
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointImage/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointImage/"
 }
 
 #####See Also#####

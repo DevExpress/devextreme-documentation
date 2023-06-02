@@ -14,8 +14,8 @@ Describes settings supported by a series of the *spline area* type.
     seriesType: "splinearea"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SplineArea/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SplineArea/"
 }
 
 ![DevExtreme HTML5 Charts SplineAreaSeriesType](/images/ChartJS/SplineArea.png)

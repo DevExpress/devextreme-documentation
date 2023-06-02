@@ -8,8 +8,8 @@ default: new Date(1000, 0)
 The earliest date the UI component allows to select.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 
 #####See Also#####

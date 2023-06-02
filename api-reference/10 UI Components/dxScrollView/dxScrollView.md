@@ -12,8 +12,8 @@ The ScrollView is a UI component that enables a user to scroll its content.
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/ScrollView/Overview/"

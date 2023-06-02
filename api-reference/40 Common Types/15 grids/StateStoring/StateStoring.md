@@ -55,8 +55,8 @@ State storing saves the following properties:
     &lt;/tr&gt;
 &lt;/table&gt;    
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
 }
 
 #####See Also#####

@@ -8,8 +8,8 @@ default: false
 Specifies whether to repaint only those elements whose data changed.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ItemDragging/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ItemDragging/"
 }
 
 #####See Also#####

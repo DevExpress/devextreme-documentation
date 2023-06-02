@@ -21,8 +21,8 @@ The popup always contains a form whose items are used for editing. Use the [form
     optionName: "popup"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/PopupEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/PopupEditing/"
 }
 
 -->

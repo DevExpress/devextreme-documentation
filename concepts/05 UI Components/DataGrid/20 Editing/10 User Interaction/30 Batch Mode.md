@@ -6,8 +6,8 @@ When a user clicks a row's *"Delete"* button, the UI component only marks the ro
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Editing Batch Mode Deletion](/images/DataGrid/editing/batch_mode_deletion.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/"
 }
 
 #####See Also#####

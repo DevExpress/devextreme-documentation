@@ -85,6 +85,6 @@ In the financial series ([*candlestick*](/api-reference/20%20Data%20Visualizatio
 
 [note]All fields listed in this description are also exposed by the **this** object.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels/"
 }

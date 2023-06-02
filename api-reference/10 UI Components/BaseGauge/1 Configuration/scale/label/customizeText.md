@@ -21,8 +21,8 @@ The text for the label to display.
 ---
 #include dataviz-ref-functioncontext
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleLabelFormatting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleLabelFormatting/"
 }
 
 #####See Also#####

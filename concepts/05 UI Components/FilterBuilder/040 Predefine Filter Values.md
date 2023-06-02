@@ -260,8 +260,8 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithList/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/WithList/"
 }
 
 #####See Also#####

@@ -15,8 +15,8 @@ The key of the group or the master row.
 ---
 To expand a group row, call this method with an array (each member of which is a grouping value). To expand a [master row](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/'), pass its key to this method.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/"
 }
 
 A group row can also be expanded when you navigate to a data row within it. See [navigateToRow(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/navigateToRow(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#navigateToRowkey') for more information.

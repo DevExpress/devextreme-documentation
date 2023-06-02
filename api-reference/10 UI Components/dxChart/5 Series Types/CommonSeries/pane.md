@@ -13,6 +13,6 @@ If this property is not specified, the series will belong to the [default pane](
 #####See Also#####
 - [panes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/panes '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/') - declares a collection of panes.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/"
 }

@@ -262,6 +262,6 @@ This function allows you to customize cells and modify their content. Common use
 
     --- 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSCellCustomization/"
 }

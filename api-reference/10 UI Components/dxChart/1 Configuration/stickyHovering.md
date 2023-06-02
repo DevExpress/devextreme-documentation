@@ -12,8 +12,8 @@ When this property is **true**, a point remains in the hover state until the mou
 
 When this property is **false**, a point remains in the hover state until the mouse pointer moves away from the point.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
 }
 
 #####See Also#####

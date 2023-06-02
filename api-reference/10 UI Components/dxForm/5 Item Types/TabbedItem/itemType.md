@@ -8,8 +8,8 @@ default: 'simple'
 Specifies the item's type. Set it to *"tabbed"* to create a tabbed item.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
 }
 
 #####See Also#####

@@ -11,7 +11,7 @@ Configures keyboard navigation.
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/CustomizeKeyboardNavigation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/CustomizeKeyboardNavigation/"
 }
 -->

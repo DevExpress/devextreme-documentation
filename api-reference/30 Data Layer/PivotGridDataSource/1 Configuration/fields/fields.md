@@ -159,8 +159,8 @@ This property accepts an array of objects where each object configures a single 
 
 If the [retrieveFields](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/retrieveFields.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#retrieveFields') property is **true**, fields configured in the **fields** array are accompanied by auto-generated fields that do not belong to any area. However, a user can move them to any area using the field chooser.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/"
 }
 
 #####See Also#####

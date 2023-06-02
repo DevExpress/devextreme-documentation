@@ -2,8 +2,8 @@ The filter row allows a user to filter data by individual columns' values.  Usua
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/UsingFilterRow/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/UsingFilterRow/"
 }
 
 To make the filter row visible, assign **true** to the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterRow/').**visible** property. You can set a column's [allowFiltering](/api-reference/_hidden/GridBaseColumn/allowFiltering.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowFiltering') property to **false** if data should never be filtered by it.

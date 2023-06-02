@@ -9,8 +9,8 @@ Adds an empty data row and switches it to the editing state.
 A Promise that is resolved after a new empty row is added.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
 }
 
 Use this method if you want to add an empty row. If you need to add a row with data, do the following:    

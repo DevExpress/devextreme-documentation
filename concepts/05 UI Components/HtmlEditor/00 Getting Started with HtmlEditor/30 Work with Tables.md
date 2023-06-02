@@ -181,6 +181,6 @@ Users can also modify tables with the context menu if you set the [tableContextM
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Tables/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Tables/"
 }

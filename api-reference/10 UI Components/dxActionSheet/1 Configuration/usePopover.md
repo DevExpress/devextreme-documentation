@@ -10,6 +10,6 @@ Specifies whether or not to show the action sheet within a [Popover](/api-refere
 ---
 To display the action sheet as a popover specify an element the popover points at via the [target](/api-reference/10%20UI%20Components/dxActionSheet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/#target') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Action_Sheet/PopoverMode/jQuery/iOS/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Action_Sheet/PopoverMode/jQuery/iOS/"
 }

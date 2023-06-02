@@ -19,8 +19,8 @@ To apply sorting to a column, a user clicks its header or selects a command from
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Sorting](/images/DataGrid/visual_elements/sorting_context_menu.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/MultipleSorting/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/MultipleSorting/"
 }
 
 #####See Also#####

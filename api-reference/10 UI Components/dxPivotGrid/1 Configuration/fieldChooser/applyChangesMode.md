@@ -16,6 +16,6 @@ Applies changes immediately.
 - *"onDemand"*      
 Applies changes when a user clicks **OK** or cancels them when a user clicks **Cancel**. 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/IntegratedFieldChooser/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/IntegratedFieldChooser/"
 }

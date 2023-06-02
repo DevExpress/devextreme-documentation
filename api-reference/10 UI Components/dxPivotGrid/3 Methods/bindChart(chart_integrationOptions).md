@@ -219,8 +219,8 @@ The **customizeChart**, **customizeSeries**, and **processCell** fields of the *
 
 Main article: [Integration with Chart](/concepts/05%20UI%20Components/PivotGrid/150%20Integration%20with%20Chart/10%20Integration%20with%20Chart.md '/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/')
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ChartIntegration/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ChartIntegration/"
 }
 
 #####See Also#####

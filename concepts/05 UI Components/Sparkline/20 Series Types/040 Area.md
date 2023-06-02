@@ -13,6 +13,6 @@ To change the color of an *area* sparkline, set the [lineColor](/api-reference/1
 
 Regular points cannot be displayed in an *area* sparkline, but you can make extreme points visible. For further information, refer to the [Series Points](/concepts/05%20UI%20Components/Sparkline/10%20Visual%20Elements/20%20Series%20Points.md '/Documentation/Guide/UI_Components/Sparkline/Visual_Elements/#Series_Points') topic.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AreaSparklines/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AreaSparklines/"
 }

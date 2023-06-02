@@ -59,6 +59,6 @@ To add a search bar to the List, set the [searchEnabled](/api-reference/10%20UI%
         
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/"
 }

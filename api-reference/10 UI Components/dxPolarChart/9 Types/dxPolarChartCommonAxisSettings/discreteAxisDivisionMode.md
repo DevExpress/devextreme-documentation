@@ -13,7 +13,7 @@ When a discrete axis is divided, its ticks/grid lines are located between labels
 
 [note]This property is not designed to work in the [spider web](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/useSpiderWeb.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/#useSpiderWeb') mode.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/WindRose/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/WindRose/"
 }
 -->

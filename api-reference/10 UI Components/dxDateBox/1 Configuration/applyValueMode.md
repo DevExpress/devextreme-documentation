@@ -6,6 +6,6 @@ The property accepts the following values.
 - "instantly"  
  Applies the selected value immediately after a user clicks the required value in the drop-down menu. This mode cannot be used if the **pickerType** is *"rollers"* or the [type](/api-reference/10%20UI%20Widgets/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') is *"datetime"*.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }

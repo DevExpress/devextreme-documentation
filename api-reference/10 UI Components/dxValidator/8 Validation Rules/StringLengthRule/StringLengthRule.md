@@ -13,8 +13,8 @@ To specify the range that the validated value length must match, set the rule's 
 
 [note]This rule validates string values or the values that can be cast to a string.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
 #####See Also#####

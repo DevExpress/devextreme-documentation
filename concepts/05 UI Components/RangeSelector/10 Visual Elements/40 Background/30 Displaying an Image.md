@@ -13,6 +13,6 @@ You can display an image in the background of RangeSelector. To do this, use the
 
 In case your image does not cover the whole range selector's background, [set up a color](/concepts/05%20UI%20Components/RangeSelector/10%20Visual%20Elements/40%20Background/50%20Setting%20Up%20a%20Color.md '/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/#Background/Setting_Up_a_Color') for the uncovered area using the **background**.**color** property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ImageOnBackground/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ImageOnBackground/"
 }

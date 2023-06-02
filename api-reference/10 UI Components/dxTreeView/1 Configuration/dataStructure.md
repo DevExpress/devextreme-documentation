@@ -27,8 +27,8 @@ The UI component expects that data has a hierarchical structure where each data 
         ]
     }];
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/"
 }
 
 If data has a plain structure, set the **dataStructure** property to *"plain"*. In this case, each data item should have a `text`, a unique `id`, and a `parentId`. For root items, `parentId` should be equal to **0** or **undefined**:
@@ -45,8 +45,8 @@ If data has a plain structure, set the **dataStructure** property to *"plain"*. 
 
 `id`, `text`, `items`, and `parentId` are [conventional field names](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/'). To use other names, change the [keyExpr](/api-reference/10%20UI%20Components/HierarchicalCollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#keyExpr'), [displayExpr](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#displayExpr'), [itemsExpr](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/itemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#itemsExpr'), and [parentIdExpr](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#parentIdExpr') properties, respectively. You can also specify the [rootValue](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#rootValue') property to change the `parentId` value that root items should have.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/FlatDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/FlatDataStructure/"
 }
 
 #####See Also#####

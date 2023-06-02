@@ -7,6 +7,6 @@ type: Array<Object>
 Contains an array of command groups in the tab.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
 }

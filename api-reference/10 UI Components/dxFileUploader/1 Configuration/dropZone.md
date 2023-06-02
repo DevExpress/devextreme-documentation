@@ -9,8 +9,8 @@ Specifies the HTML element in which users can drag and drop files for upload.
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"
 }
 
 This property accepts one of the following values:

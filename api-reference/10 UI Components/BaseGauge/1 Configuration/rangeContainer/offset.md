@@ -6,6 +6,6 @@ id: BaseGauge.Options.rangeContainer.offset
 Specifies the offset of the range container from an invisible scale line in pixels.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/CustomLayout/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/CustomLayout/"
 }

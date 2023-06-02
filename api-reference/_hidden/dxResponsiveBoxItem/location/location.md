@@ -16,8 +16,8 @@ If you need to specify different locations for [different screens](/concepts/05%
         ]
     }"> <p>Header</p> </div>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview/"
 }
 
 #####See Also#####

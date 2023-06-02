@@ -8,6 +8,6 @@ default: 'outside'
 Specifies a label position relative to the chart.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomLabels/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomLabels/"
 }

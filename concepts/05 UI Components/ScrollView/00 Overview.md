@@ -1,7 +1,7 @@
 The ScrollView is a UI component that enables a user to scroll its content.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/"
 }
 
 The following code adds a simple ScrollView to your page. The [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#width') and [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#height') properties specify the UI component size. By default, the ScrollView allows a user to scroll its content vertically. To change this behavior, use the [direction](/api-reference/10%20UI%20Components/dxScrollable/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction') property. Note that horizontal scrolling appears only if the content is wider than the ScrollView. Otherwise, the content adapts to the width of the ScrollView.

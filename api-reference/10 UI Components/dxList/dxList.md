@@ -17,8 +17,8 @@ dataSource: ["Prepare 2013 Financial","Prepare 3013 Marketing Plan","Update Pers
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndApi/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndApi/"
 }
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/List/Getting_Started_with_List/"

@@ -8,8 +8,8 @@ default: false
 Specifies whether the UI component allows a user to enter a custom value. Requires the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '{basewidgetpath}/Configuration/#onCustomItemCreating') handler implementation.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing/"
 }
 
 #####See Also#####

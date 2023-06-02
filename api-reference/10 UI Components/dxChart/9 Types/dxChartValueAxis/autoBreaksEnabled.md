@@ -11,8 +11,8 @@ Enables auto-calculated scale breaks. Applies only if the axis' [type](/api-refe
 <!--
 If this property is **true**, the UI component detects large gaps between side-by-side points and cuts them out, putting scale breaks instead.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ScaleBreaks/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ScaleBreaks/"
 }
 
 #####See Also#####

@@ -12,8 +12,8 @@ The row's index; *-1* if nothing found. Refer to [Column and Row Indexes](/conce
 The row's key.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/"
 }
 
 #####See Also#####

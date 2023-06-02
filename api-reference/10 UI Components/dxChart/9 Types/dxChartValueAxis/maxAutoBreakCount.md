@@ -9,7 +9,7 @@ Sets a limit on [auto-calculated scale breaks](/api-reference/10%20UI%20Componen
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ScaleBreaks/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ScaleBreaks/"
 }
 -->

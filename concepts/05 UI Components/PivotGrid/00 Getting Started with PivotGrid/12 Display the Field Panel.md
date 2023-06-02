@@ -79,6 +79,6 @@ To display the field panel, enable the [fieldPanel](/api-reference/10%20UI%20Com
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/FieldPanel/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/FieldPanel/"
 }

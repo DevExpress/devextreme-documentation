@@ -18,8 +18,8 @@ dataSource: [
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
 }
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/Tabs/Getting_Started_with_Tabs/"

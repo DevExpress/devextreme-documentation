@@ -8,6 +8,6 @@ default: 'Select'
 The text that is provided as a hint in the select box editor.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/"
 }

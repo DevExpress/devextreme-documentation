@@ -10,6 +10,6 @@ Allows users to sort the pivot grid by summary values instead of field values. I
 ---
 With this property enabled, an end user can use the context menu of a column or row header to apply sorting by summary values.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/"
 }

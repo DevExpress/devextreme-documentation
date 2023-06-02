@@ -131,8 +131,8 @@ In the UI, to mark an appointment as recurring, toggle the *"Repeat"* switcher o
 
 The Scheduler control saves the specified values in the appointment's **recurrenceRule** field. Note that although the control displays a recurring appointment as several appointments on the timetable, it only saves a single appointment object to the data source.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"
 }
 
 #####See Also#####

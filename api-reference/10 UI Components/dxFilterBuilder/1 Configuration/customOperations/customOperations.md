@@ -9,8 +9,8 @@ inheritsType: dxFilterBuilderCustomOperation
 Configures custom filter operations.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/Customization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/Customization/"
 }
 
 #####See Also#####

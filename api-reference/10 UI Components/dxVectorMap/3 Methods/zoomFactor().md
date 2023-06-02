@@ -9,8 +9,8 @@ Gets the current zoom factor value.
 The zoom factor value.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ZoomingAndCentering/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ZoomingAndCentering/"
 }
 
 #####See Also#####

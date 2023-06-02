@@ -37,6 +37,6 @@ If you set **enableThreeStateBehavior** property to `false`, users can only cycl
 
 *Indeterminate → Checked → Unchecked → Checked → Unchecked → ...*
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CheckBox/Overview/"
 }

@@ -9,8 +9,8 @@ firedEvents: fieldDataChanged
 Provides the Form's data. Gets updated every time form fields change.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
 }
 
 #####See Also#####

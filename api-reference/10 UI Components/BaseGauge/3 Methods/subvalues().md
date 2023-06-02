@@ -11,8 +11,8 @@ The subvalues.
 ---
 See the **subvalues** property description for more information on gauge subvalues.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ValueIndicatorsApi/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ValueIndicatorsApi/"
 }
 
 #####See Also#####

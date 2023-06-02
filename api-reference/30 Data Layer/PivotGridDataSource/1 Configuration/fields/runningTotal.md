@@ -18,8 +18,8 @@ If the **runningTotal** property is set to *"row"*, each value in this row is ad
 
 This also applies to columns if the **runningTotal** property is set to *"column"*.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/RunningTotals/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/RunningTotals/"
 }
 
 #####See Also#####

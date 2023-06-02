@@ -10,8 +10,8 @@ Specifies the data field whose values should be replaced with values from the [d
 ---
 Values from this data field must have the same type as the column's [dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') values.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/"
 }
 
 #include uiwidgets-ref-valueExpr-functionnote

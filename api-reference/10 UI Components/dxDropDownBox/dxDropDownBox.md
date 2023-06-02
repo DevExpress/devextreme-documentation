@@ -12,8 +12,8 @@ The DropDownBox UI component consists of a text field, which displays the curren
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/SingleSelection/"
 }
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/DropDownBox/Getting_Started_with_DropDownBox/"

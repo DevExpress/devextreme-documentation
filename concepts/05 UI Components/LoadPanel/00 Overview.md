@@ -1,7 +1,7 @@
 The LoadPanel is an overlay UI component notifying the viewer that loading is in progress.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/"
 }
 
 The following code adds to your page a simple LoadPanel and a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') that invokes it. The [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#hideOnOutsideClick') property set to **true** instructs the LoadPanel to hide once a user clicks outside it.

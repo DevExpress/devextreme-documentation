@@ -66,8 +66,8 @@ A template name or container.
 ---
 Use the **editCellTemplate** to replace the default editor. In the template, specify the replacement editor's appearance and behavior. 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
 Other properties that allow editor customization include:

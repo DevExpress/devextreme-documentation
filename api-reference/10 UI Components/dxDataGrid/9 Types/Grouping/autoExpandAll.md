@@ -9,8 +9,8 @@ Specifies whether groups appear expanded or not.
 
 ---
 <!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteGrouping/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteGrouping/"
 }
 
 [note] When you use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') and set this property to **false**, the DataGrid loads data for all pages at once.

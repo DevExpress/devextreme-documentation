@@ -20,6 +20,6 @@ If you use JavaScript modules, import the Markdown converter:
     // or
     // require("ui/html_editor/converters/markdown");
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/OutputFormats/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/OutputFormats/"
 }

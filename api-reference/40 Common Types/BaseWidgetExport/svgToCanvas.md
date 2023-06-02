@@ -19,7 +19,7 @@ A Promise that is resolved after the HTML canvas content is rendered.
 ---
 <!--
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportCustomMarkup/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportCustomMarkup/"
 }
 -->

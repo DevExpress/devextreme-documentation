@@ -201,8 +201,8 @@ The PieChart displays a [tooltip](/api-reference/_hidden/BaseWidgetAnnotationCon
 
 Objects in the **annotations[]** array configure individual annotations. To specify properties that apply to all annotations, use the [commonAnnotationSettings](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/commonAnnotationSettings '{basewidgetpath}/Configuration/commonAnnotationSettings/') object. Individual settings take precedence over common settings.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithAnnotations/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithAnnotations/"
 }
 
 #####See Also#####

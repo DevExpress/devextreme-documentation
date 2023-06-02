@@ -10,6 +10,6 @@ In the Chart UI component, legend items represent series. When a legend item is 
 
 You can set a custom 'hover' style for a series and/or its points. To do this, use the series' [hoverStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/hoverStyle/') configuration object and/or the **point**.[hoverStyle](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/hoverStyle '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/hoverStyle/') configuration object.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
 }

@@ -110,8 +110,8 @@ If the axis displays numbers, assign a number to this property. For example, an 
 
 On a [logarithmic axis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type'), intervals are calculated based on powers. For example, if the [logarithmBase](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/logarithmBase.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#logarithmBase') is 10 and the **aggregationInterval** is 1, the following intervals are produced: 10&lt;sup&gt;0&lt;/sup&gt; to 10&lt;sup&gt;1&lt;/sup&gt;, 10&lt;sup&gt;1&lt;/sup&gt; to 10&lt;sup&gt;2&lt;/sup&gt;, 10&lt;sup&gt;2&lt;/sup&gt; to 10&lt;sup&gt;3&lt;/sup&gt;, etc. If the **aggregationInterval** becomes 2, intervals become longer: 10&lt;sup&gt;0&lt;/sup&gt; to 10&lt;sup&gt;2&lt;/sup&gt;, 10&lt;sup&gt;2&lt;/sup&gt; to 10&lt;sup&gt;4&lt;/sup&gt;, 10&lt;sup&gt;4&lt;/sup&gt; to 10&lt;sup&gt;6&lt;/sup&gt;, etc.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointsAggregation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PointsAggregation/"
 }
 
 #####See Also#####

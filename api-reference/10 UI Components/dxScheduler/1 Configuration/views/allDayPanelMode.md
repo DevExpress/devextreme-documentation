@@ -8,8 +8,8 @@ default: 'all'
 Specifies the display mode for the **All day** panel.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/AllDayPanelMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/AllDayPanelMode/"
 }
 
 ![allDayPanelMode set to 'all'](/images/Scheduler/scheduler-all-day-panel-mode.png)

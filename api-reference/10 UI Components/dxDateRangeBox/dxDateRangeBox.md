@@ -6,6 +6,6 @@ inherits: DateBoxBase
 ---
 ---
 ##### shortDescription
-DateRangeBox is a UI component that allows a user to select a date range (pick or enter start and end dates). 
+DateRangeBox is a UI component that allows a user to select a date range (pick or enter start and end dates).
 
 ---

@@ -5,6 +5,6 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the **name** attribute of the end date input field. 
+Specifies the **name** attribute of the end date input field.
 
 ---

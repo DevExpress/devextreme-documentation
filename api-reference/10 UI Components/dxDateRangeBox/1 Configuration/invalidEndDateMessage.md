@@ -5,6 +5,6 @@ default: 'End value must be a date'
 ---
 ---
 ##### shortDescription
-Specifies a message for invalid end date input. 
+Specifies a message for invalid end date input.
 
 ---

@@ -104,5 +104,5 @@ If you change a date value, the new value is saved in the same format as the ini
 ---
 
 #####See Also#####
-- [startDate]({basewidgetpath}/Configuration/#startDate)
-- [endDate]({basewidgetpath}/Configuration/#endDate)
+- [startDate](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/startDate.md '{basewidgetpath}/Configuration/#startDate')
+- [endDate](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/endDate.md '{basewidgetpath}/Configuration/#endDate')

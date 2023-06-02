@@ -2,10 +2,11 @@
 id: dxDateRangeBox.Options.endDate
 type: Date | Number | String
 default: null
+firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies the range's end date. 
+Specifies the range's end date.
 
 ---
 You can specify the end date in any of the following formats:
@@ -24,5 +25,5 @@ If you change the date value, the new value is saved in the same format as the i
 #include drb-startdate-enddate-code
 
 #####See Also#####
-- [startDate]({basewidgetpath}/Configuration/#startDate)
-- [value]({basewidgetpath}/Configuration/#value)
+- [startDate](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/startDate.md '{basewidgetpath}/Configuration/#startDate')
+- [value](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value')

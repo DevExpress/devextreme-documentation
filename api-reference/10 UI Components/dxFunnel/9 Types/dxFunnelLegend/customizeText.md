@@ -20,6 +20,3 @@ The legend item's original text.
 The text for the legend item to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

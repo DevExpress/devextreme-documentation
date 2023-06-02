@@ -8,6 +8,3 @@ default: 'solid'
 Specifies the dash style of constant lines.
 
 ---
-<!--
-#include dataviz-ref-dashstyle
--->

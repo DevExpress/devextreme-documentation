@@ -17,9 +17,3 @@ A container where the content of the SVG element is drawn.
 A Promise that is resolved after the HTML canvas content is rendered.
 
 ---
-<!--
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportCustomMarkup/"
-}
--->

@@ -10,8 +10,3 @@ generateTypeLink:
 Configures keyboard navigation.
 
 ---
-<!--
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/CustomizeKeyboardNavigation/"
-}
--->

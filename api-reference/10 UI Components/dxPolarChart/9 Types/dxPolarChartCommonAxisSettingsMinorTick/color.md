@@ -8,6 +8,3 @@ default: '#767676'
 Specifies a color for the minor ticks.
 
 ---
-<!--
-#include common-colorlist
--->

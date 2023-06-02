@@ -20,6 +20,3 @@ The legend item's text.
 The text to be displayed in the hint.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

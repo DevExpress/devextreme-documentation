@@ -20,6 +20,3 @@ The [formatted](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/ar
 The text for the label to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

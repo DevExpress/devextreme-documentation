@@ -8,6 +8,3 @@ default: undefined
 Specifies a color for a strip.
 
 ---
-<!--
-#include common-colorlist
--->

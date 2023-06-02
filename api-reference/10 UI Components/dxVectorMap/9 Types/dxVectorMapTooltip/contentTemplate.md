@@ -17,8 +17,3 @@ Information on the area or marker being pressed or hovered over. To distinguish 
 #include common-template-return-value
 
 ---
-<!--
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/TooltipHTMLSupport/"
-}
--->

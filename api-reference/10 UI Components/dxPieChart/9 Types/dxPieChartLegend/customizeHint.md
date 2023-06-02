@@ -22,6 +22,3 @@ The point's name.
 The text for the hint to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

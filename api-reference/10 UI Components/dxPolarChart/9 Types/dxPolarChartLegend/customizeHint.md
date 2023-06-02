@@ -22,6 +22,3 @@ The series' [name](/api-reference/_hidden/PolarChartSeries/name.md '/Documentati
 The text for the hint to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

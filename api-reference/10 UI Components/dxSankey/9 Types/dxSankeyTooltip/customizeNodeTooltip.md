@@ -29,7 +29,3 @@ The total weight of the node's outgoing links.
 The tooltip's text or markup and appearance settings.
 
 ---
-<!--
-#include dataviz-customize-tooltip-return
-
--->

@@ -10,9 +10,3 @@ generateTypeLink:
 Configures row reordering using drag and drop gestures.
 
 ---
-<!--
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/LocalReordering/"
-}
-
--->

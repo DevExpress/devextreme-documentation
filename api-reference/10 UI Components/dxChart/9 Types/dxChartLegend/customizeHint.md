@@ -22,6 +22,3 @@ The series' [name](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Type
 The text for the hint to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

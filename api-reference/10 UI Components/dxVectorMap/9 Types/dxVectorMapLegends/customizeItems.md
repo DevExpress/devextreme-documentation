@@ -13,8 +13,3 @@ Legend items before customizations.
 Legend items after customizations.
 
 ---
-<!--
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/BubbleMarkers/"
-}
--->

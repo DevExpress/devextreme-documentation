@@ -8,6 +8,3 @@ default: '#000000'
 Specifies the color of constant lines.
 
 ---
-<!--
-#include common-colorlist
--->

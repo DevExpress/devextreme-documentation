@@ -20,13 +20,3 @@ The [formatted](/api-reference/10%20UI%20Components/BaseGauge/1%20Configuration/
 The text for the label to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/ScaleLabelFormatting/"
-}
-
-#####See Also#####
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
--->

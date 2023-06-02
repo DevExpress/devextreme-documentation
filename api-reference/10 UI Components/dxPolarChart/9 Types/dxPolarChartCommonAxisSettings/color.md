@@ -8,6 +8,3 @@ default: '#767676'
 Specifies the color of the line that represents an axis.
 
 ---
-<!--
-#include common-colorlist
--->

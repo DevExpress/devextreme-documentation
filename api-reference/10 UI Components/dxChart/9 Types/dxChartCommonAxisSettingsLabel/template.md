@@ -23,8 +23,3 @@ A container for the template content.
 #include common-template-return-value
 
 ---
-<!--
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsTemplates/"
-}
--->

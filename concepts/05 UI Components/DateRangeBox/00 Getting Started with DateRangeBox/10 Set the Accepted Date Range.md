@@ -5,9 +5,13 @@ You can define constraints for date ranges that can be selected by end users. Sp
 
     <!-- tab: index.js -->
     $(function() {
+        const now = new Date();
+        const minDate = new Date().setDate(now.getDate()-14); // 2 weeks before the current date
+        const maxDate = new Date().setDate(now.getDate()+14); // 2 weeks after the current date
+
         $("#dateRangeBox").dxDateRangeBox({
-            min: new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
-            max: new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
+            min: minDate,
+            max: maxDate,
          });
     });
 
@@ -29,8 +33,9 @@ You can define constraints for date ranges that can be selected by end users. Sp
     })
     
     export class AppComponent {
-        minDate: Date = new Date(new Date().setDate(new Date().getDate() - 14)); // 2 weeks before the current date
-        maxDate: Date = new Date(new Date().setDate(new Date().getDate() + 14)); // 2 weeks after the current date
+        now: Date = new Date();
+        minDate: Date = new Date().setDate(now.getDate()-14); // 2 weeks before the current date
+        maxDate: Date = new Date().setDate(now.getDate()+14); // 2 weeks after the current date
     }
 
 ##### Vue
@@ -48,14 +53,16 @@ You can define constraints for date ranges that can be selected by end users. Sp
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
+    const now = new Date();
+
     export default {
         components: {
             DxDateRangeBox
         },
         data() {
             return {
-                minDate: new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
-                maxDate: new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
+                minDate: new Date().setDate(now.getDate()-14), // 2 weeks before the current date
+                maxDate: new Date().setDate(now.getDate()+14), // 2 weeks after the current date
             }
         }
     }
@@ -74,8 +81,9 @@ You can define constraints for date ranges that can be selected by end users. Sp
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
-    const minDate = new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
-    const maxDate = new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
+    const now = new Date();
+    const minDate = new Date().setDate(now.getDate()-14); // 2 weeks before the current date
+    const maxDate = new Date().setDate(now.getDate()+14); // 2 weeks after the current date
     </script>
 
 ##### React
@@ -87,8 +95,9 @@ You can define constraints for date ranges that can be selected by end users. Sp
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
 
-    const minDate = new Date(new Date().setDate(new Date().getDate() - 14)), // 2 weeks before the current date
-    const maxDate = new Date(new Date().setDate(new Date().getDate() + 14)), // 2 weeks after the current date
+    const now = new Date();
+    const minDate = new Date().setDate(now.getDate()-14); // 2 weeks before the current date
+    const maxDate = new Date().setDate(now.getDate()+14); // 2 weeks after the current date
 
     export default function App() { 
         return (

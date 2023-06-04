@@ -133,8 +133,8 @@ Since the popup and form modes are very similar, you can use the same **columns*
 
 The built-in form of the **Popup** and **Form** modes has limited functionality. If you want to further customize the form (add custom labels and buttons, apply advanced validation rules and masks, etc.), implement the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') component inside [Popup](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/').
 
-#include common-githubbutton with {
-    url: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
 }
 
 #####See Also#####

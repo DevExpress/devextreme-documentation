@@ -61,6 +61,6 @@ Extract inline handlers from the component class or function body. As an alterna
 
     export default App;
 
-#include common-githubbutton with {
-    url: "https://codesandbox.io/s/master-detail-api-devextreme-data-grid-forked-bzeqts?file=/App.js"
+#include btn-open-codesandbox with {
+    href: "https://codesandbox.io/s/master-detail-api-devextreme-data-grid-forked-bzeqts?file=/App.js"
 }

@@ -2,11 +2,12 @@ To specify a date range selected at startup, use the [startDate](/api-reference/
 
 ---
 ##### jQuery
+
     <!-- tab: index.js -->
     $(function() {
         $("#dateRangeBox").dxDateRangeBox({
             startDate: new Date(),
-            endDate: new Date(new Date().setDate(new Date().getDate() + 7)),
+            endDate: new Date().setDate(new Date().getDate()+7),
         });
     });
 
@@ -30,7 +31,7 @@ To specify a date range selected at startup, use the [startDate](/api-reference/
     export class AppComponent {
         // ...
         startDate: Date = new Date();
-        endDate: Date = new Date(new Date().setDate(new Date().getDate() + 7));
+        endDate: Date = new Date().setDate(new Date().getDate()+7);
     }
 
 ##### Vue
@@ -55,7 +56,7 @@ To specify a date range selected at startup, use the [startDate](/api-reference/
         data() {
             return {
                 startDate: new Date(),
-                endDate: new Date(new Date().setDate(new Date().getDate() + 7)),
+                endDate: new Date().setDate(new Date().getDate()+7),
             }
         }
     }
@@ -75,7 +76,7 @@ To specify a date range selected at startup, use the [startDate](/api-reference/
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
     const startDate = new Date();
-    const endDate = new Date(new Date().setDate(new Date().getDate() + 7));
+    const endDate = new Date().setDate(new Date().getDate()+7);
     </script>
 
 ##### React
@@ -88,7 +89,7 @@ To specify a date range selected at startup, use the [startDate](/api-reference/
     import { DateRangeBox } from 'devextreme-react/date-range-box';
 
     const startDate = new Date();
-    const endDate = new Date(new Date().setDate(new Date().getDate() + 7));
+    const endDate = new Date().setDate(new Date().getDate()+7);
  
     export default function App() { 
         return (

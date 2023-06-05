@@ -1,8 +1,8 @@
-You may experience an issue, when DataGrid or TreeList finishes data loading, gray boxes are still visible:
+In certain cases, gray boxes may remain visible after DataGrid or TreeList finishes data loading:
 
 ![DataGrid with Gray Boxes Visible](/images/DataGrid/datagrid-gray-boxes.png)
 
-These gray boxes are row placeholders that appear when the component takes time to load and render rows. The issue described above occurs due to the following reasons:
+These gray boxes are row placeholders that appear when the component takes time to load and render rows. These placeholders can remain visible due to the following reasons:
 
 - The component's height property is not consistent with the space the component occupies.
 - An error occurs during data loading.

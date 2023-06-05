@@ -1,1 +1,1 @@
-If DataGrid or TreeList is complex or the Internet connection is bad, it may look like gray boxes are displayed permanently, but in fact the rows take a long time to load. Replace your data source with local data and open your project on a different machine.
+If DataGrid or TreeList is complex or the Internet connection is slow or unstable, gray boxes can be displayed for a very long time. If gray boxes take too long to disappear, you need to replace a remote data source with a local data source and open your project on a different machine.

@@ -1,8 +1,8 @@
-The component displays the placeholders based on its [height](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height) property and the number of loaded rows. If the **height** property is not equal to the component's container size, the component does not load enough rows to fit the space. The remaining space is filled with gray boxes.
+The component displays placeholders based on its [height](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height) property and the number of loaded rows. If the **height** property value does not match the component's container size, the component does not load enough rows to fill the available area. The remaining area is filled with gray boxes.
 
-If none of the component's parent elements have a fixed height, the component cannot calculate its size correctly. If the height of DataGrid or TreeList's parent is relative, make sure that the parent's ancestor has a fixed height. If there are multiple ancestors with relative heights, at least one should have a fixed height.
+If no parent element of the DataGrid or TreeList component has a fixed height, the component cannot calculate its size correctly. If the height of component's parent is relative, make sure that the parent's ancestor has a fixed height. If multiple ancestors have relative heights, at least one of them should have a fixed height.
 
-If you wish to fill the entire vertical space and therefore do not use fixed heights, set all parents (including `<html>`) heights to `100%`.
+If you wish to fill the entire container area by height and, therefore, do not use fixed heights, set the height of all parents (including `<html>`) to `100%`.
 
 If you use the component inside [ScrollView](/Documentation/ApiReference/UI_Components/dxScrollView/), set the height of DataGrid or TreeList to a fixed value.
 

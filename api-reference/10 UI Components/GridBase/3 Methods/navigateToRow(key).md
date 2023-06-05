@@ -31,6 +31,8 @@ The following requirements apply when you use this method:
 
 - [Scrolling mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode') should not be *"infinite"*.
 
+If you enable the [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') property, the DataGrid generates additional requests with comparison operators (for example, `<` and `>`) to calculate the page number where a row with a focused key is located. This logic does not work if ODataStore is bound to a table with GUID keys. You need to set the [autoNavigateToFocusedRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/autoNavigateToFocusedRow.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#autoNavigateToFocusedRow') property to **false** or disable the **remoteOperations** property to ensure it operates correctly.
+
 #####See Also#####
 #include common-link-callmethods
 - [Focused Row](/concepts/05%20UI%20Components/DataGrid/73%20Focused%20Row.md '/Documentation/Guide/UI_Components/{WidgetName}/Focused_Row/')

@@ -9,7 +9,7 @@ Binds the UI component to data.
 
 ---
 #include common-dataSource-description with {
-    widget_works_with: "The DataGrid works with collections of objects.",
+    widget_works_with: "The DataGrid works with collections of objects. We recommend that you use a plain object in data (no circulars, no prototypes, etc.). The DataGird uses **JSON.stringify** and other recursive methods. Circular object references can crash native recursive algorithms (such as serializers) with stack overflows.",
 
     array_key_note: " and specify the [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr')",
 

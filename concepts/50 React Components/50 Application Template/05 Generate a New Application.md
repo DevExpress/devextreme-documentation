@@ -1,4 +1,6 @@
     npx devextreme-cli new react-app app-name
+    // ===== or generate a template with TypeScript =====
+    npx devextreme-cli new react-app app-name --template=typescript
     cd app-name
     npm run start
 

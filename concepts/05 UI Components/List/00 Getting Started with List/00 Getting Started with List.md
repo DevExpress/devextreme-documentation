@@ -6,6 +6,10 @@ This tutorial explains how to add a List to a page, bind it to data, and configu
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/23_1/GettingStartedWith/List/index.html, /Content/Applications/23_1/GettingStartedWith/List/index.js, /Content/Applications/23_1/GettingStartedWith/List/index.css"></div>
 
-Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-list" target="_blank">Getting Started with List</a>.
+Each section in this tutorial covers a single configuration step. You can also find the full code in the GitHub repository.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-list"
+}
 
 [tags] dxlist

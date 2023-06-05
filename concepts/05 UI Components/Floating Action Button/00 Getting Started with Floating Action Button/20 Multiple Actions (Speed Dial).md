@@ -6,4 +6,8 @@ To create a FAB that opens a speed dial, add multiple [SpeedDialAction](/api-ref
 
 FAB parameters are configured in the [floatingActionButtonConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/') object. Use it to change the FAB's [position](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig/position.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/#position'), [maximum number of actions](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig/maxSpeedDialActionCount.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/#maxSpeedDialActionCount'), icons in the [open](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig/icon.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/#icon') and [close](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig/closeIcon.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/#closeIcon') states, and other parameters.
 
-Refer to the following GitHub repository for the code that configures the example above and shows how to set the described properties: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-speed-dial/" target="_blank">getting-started-with-floating-action-button-speed-dial</a>.
+Refer to the GitHub repository for the code that configures the example above and shows how to set the described properties.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-speed-dial/"
+}

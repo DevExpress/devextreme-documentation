@@ -6,4 +6,8 @@ To create a single-action FAB, add one [SpeedDialAction](/api-reference/10%20UI%
 
 To position the FAB, use the [floatingActionButtonConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/').[position](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig/position.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/#position') property in the [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/') object.
 
-Refer to the following GitHub repository for the code that configures the example above and illustrates the described techniques: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-single-action/" target="_blank">getting-started-with-floating-action-button-single-action</a>.
+Refer to the GitHub repository for the code that configures the example above and illustrates the described techniques.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-single-action/"
+}

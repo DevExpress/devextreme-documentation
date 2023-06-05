@@ -11,8 +11,8 @@ The current UI component state.
 ---
 Use the **customSave** and **customLoad** functions to manually implement state storing: in **customSave**, save the state to a storage; in **customLoad**, load it. You can also modify the state in both functions.
 
-#include common-githubbutton with {
-    url: "https://github.com/DevExpress-Examples/devextreme-datagrid-modify-persisted-state/"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-modify-persisted-state/"
 }
 
 If you need to save and load the state from a remote storage, use the following code:

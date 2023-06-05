@@ -12,6 +12,10 @@ If the templates are unsuitable or you use jQuery, follow the instructions in th
 
 <div class="simulator-desktop-container drawer-simulator" data-view="/Content/Applications/23_1/GettingStartedWith/Drawer/index.html, /Content/Applications/23_1/GettingStartedWith/Drawer/index.js, /Content/Applications/23_1/GettingStartedWith/Drawer/index.css"></div>
 
-Refer to the sections below for details on each configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-drawer" target="_blank">getting-started-with-drawer</a>.
+Refer to the sections below for details on each configuration step. You can also find the full code in the GitHub repository.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-drawer"
+}
 
 [tags]dxdrawer

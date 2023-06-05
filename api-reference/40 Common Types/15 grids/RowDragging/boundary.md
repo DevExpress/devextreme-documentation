@@ -8,6 +8,3 @@ default: undefined
 Specifies a DOM element that limits the dragging area.
 
 ---
-<!--
-#include uiwidgets-ref-domelementacceptedvalues
--->

@@ -14,8 +14,8 @@ Describes settings supported by a series of the *stacked spline* type.
     seriesType: "stackedspline"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Spline/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Spline/"
 }
 
 ![DevExtreme HTML5 Charts StackedSplineSeriesType](/images/ChartJS/StackedSpline.png)

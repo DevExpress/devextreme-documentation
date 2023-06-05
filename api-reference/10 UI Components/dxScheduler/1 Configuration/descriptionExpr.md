@@ -8,6 +8,6 @@ default: 'description'
 Specifies the name of the data source item field whose value holds the description of the corresponding appointment.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SignalRService/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SignalRService/"
 }

@@ -8,6 +8,6 @@ default: false
 Specifies whether or not the total validation summary is displayed on the form.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
 }

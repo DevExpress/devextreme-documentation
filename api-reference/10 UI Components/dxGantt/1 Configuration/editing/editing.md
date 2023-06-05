@@ -12,8 +12,8 @@ The UI component allows users to add, modify and delete tasks, resources and dep
 
 [note] Make sure that your data sources ([tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '{basewidgetpath}/Configuration/#tasks'), [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '{basewidgetpath}/Configuration/#resources') and [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '{basewidgetpath}/Configuration/#dependencies')) support edit actions.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
 
 ---

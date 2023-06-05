@@ -19,8 +19,8 @@ You can subscribe to an event using a configuration property. All event handling
         }
     }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/AngularJS/Light/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/AngularJS/Light/"
 }
 
 #####See Also#####

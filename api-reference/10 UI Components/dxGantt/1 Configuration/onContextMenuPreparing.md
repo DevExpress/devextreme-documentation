@@ -146,8 +146,8 @@ The type of right-clicked task or dependency.
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ContextMenu/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ContextMenu/"
 }
 
 #####See Also#####

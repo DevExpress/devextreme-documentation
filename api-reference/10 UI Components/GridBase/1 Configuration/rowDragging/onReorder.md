@@ -45,6 +45,6 @@ Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/row
 The position in which a row is placed. If the row is dragged away from the UI component, the value is **-1**.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/LocalReordering/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/LocalReordering/"
 }

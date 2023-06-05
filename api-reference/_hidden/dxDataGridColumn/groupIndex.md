@@ -114,8 +114,8 @@ To group these records first by the *"LastName"* field and then by the *"FirstNa
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordGrouping/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordGrouping/"
 }
 
 #####See Also#####

@@ -1,0 +1,1 @@
+DevExtreme ensures equal access and usability for all users. This section describes accessibility areas that we take into consideration when developing our components.

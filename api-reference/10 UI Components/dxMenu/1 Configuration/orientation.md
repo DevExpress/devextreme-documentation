@@ -8,6 +8,6 @@ default: 'horizontal'
 Specifies whether the menu has horizontal or vertical orientation.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/"
 }

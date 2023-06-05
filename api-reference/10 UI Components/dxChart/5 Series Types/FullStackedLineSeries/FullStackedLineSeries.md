@@ -14,8 +14,8 @@ Describes settings supported by a series of the *full-stacked line* type.
     seriesType: "fullstackedline"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Line/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Line/"
 }
 
 ![DevExtreme HTML5 Charts FullStackedLineSeriesType](/images/ChartJS/FullStackedLine.png)

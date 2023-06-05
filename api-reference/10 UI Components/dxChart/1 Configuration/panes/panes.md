@@ -16,8 +16,8 @@ A pane is a chart area containing series. If there are many series an a chart, t
 
 Each object in the **panes** array configures a single pane. If you have several panes, we recommend you to [name](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/panes/name.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/#name') each pane in order to be able to refer to them afterwards.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/"
 }
 
 #####See Also#####

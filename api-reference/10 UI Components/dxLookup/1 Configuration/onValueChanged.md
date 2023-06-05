@@ -29,8 +29,8 @@ The UI component's previous value.
 The UI component's new value.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/EventHandling/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/EventHandling/"
 }
 
 #####See Also#####

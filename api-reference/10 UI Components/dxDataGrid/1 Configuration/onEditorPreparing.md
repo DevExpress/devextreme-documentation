@@ -252,8 +252,8 @@ Use the **parentType** function parameter to check if the editor that the functi
 
 - Implement other customization cases.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/"
 }
 
 [note]

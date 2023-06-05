@@ -14,8 +14,8 @@ The TextBox is a UI component that enables a user to enter and edit a single lin
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
 }
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox/"

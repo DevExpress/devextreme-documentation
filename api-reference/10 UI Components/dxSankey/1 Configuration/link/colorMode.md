@@ -22,6 +22,6 @@ A target node's color is used.
 - *"gradient"*      
 A gradient color between the source node's and target node's color is used.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
 }

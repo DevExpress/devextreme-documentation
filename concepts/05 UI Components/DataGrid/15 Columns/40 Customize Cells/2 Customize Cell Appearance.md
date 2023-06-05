@@ -245,8 +245,8 @@ The example below shows how to use the [columns](/api-reference/10%20UI%20Compon
 
 If the changes are not applied immediately, use the [repaint()](/api-reference/10%20UI%20Components/Widget/3%20Methods/repaint().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaint') method to repaint DataGrid or the [repaintRows(rowIndexes)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/repaintRows(rowIndexes).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes') method to repaint specific rows only.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/"
 }
 
 #####See Also#####

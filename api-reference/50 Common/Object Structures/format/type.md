@@ -71,8 +71,8 @@ If the **type** is the only field you need to specify in the **format** object, 
 
     <!--JavaScript-->format: "shortDate"
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"
 }
 
 #####See Also#####

@@ -12,6 +12,6 @@ Consider making selection deferred if the UI component needs to operate a large 
 
 [note]Deferred selection is unsupported when [selectAllMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#selectAllMode') is *"page"*.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/DeferredSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/DeferredSelection/"
 }

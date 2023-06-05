@@ -1,7 +1,7 @@
 The Slider is a UI component that allows an end user to set a numeric value on a continuous range of possible values.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview/"
 }
 
 The following code adds a simple Slider to your page. The **min** and **max** properties limit the range of accepted values. The **value** sets the initial value for the UI component.

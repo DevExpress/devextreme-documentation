@@ -8,8 +8,8 @@ default: false
 Specifies whether to reapply sorting, filtering, grouping, and other data processing operations after receiving a push.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates/"
 }
 
 #####See Also#####

@@ -8,8 +8,8 @@ default: false
 Specifies whether to expand all items within the field's header level.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/LayoutCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/LayoutCustomization/"
 }
 
 #####See Also#####

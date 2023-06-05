@@ -1,5 +1,5 @@
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/NodesAndEdgesArrays/"
 }
 
 Use the [nodes.dataSource](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/dataSource.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#dataSource') and [edges.dataSource](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/edges/dataSource.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/edges/#dataSource') properties to bind the Diagram UI component to plain lists of nodes and edges.

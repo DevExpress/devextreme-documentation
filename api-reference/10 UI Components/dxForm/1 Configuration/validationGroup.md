@@ -30,6 +30,6 @@ In some cases, the Form editors should be validated by the [Button](/api-referen
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
 }

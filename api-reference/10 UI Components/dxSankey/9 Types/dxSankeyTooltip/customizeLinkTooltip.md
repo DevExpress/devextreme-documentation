@@ -23,10 +23,3 @@ The link's weight.
 The current tooltip's text or markup and appearance settings.
 
 ---
-<!--
-#include dataviz-customize-tooltip-return
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SankeyChart/"
-}
--->

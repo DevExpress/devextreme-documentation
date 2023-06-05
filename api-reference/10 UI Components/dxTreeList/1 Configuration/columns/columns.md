@@ -125,8 +125,8 @@ This property accepts an array of objects, where each object configures a single
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
 }
 
 #####See Also#####

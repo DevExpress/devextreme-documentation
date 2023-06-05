@@ -8,6 +8,6 @@ default: false
 Specifies whether the UI component can expand several items or only a single item at once.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Accordion/Overview/"
 }

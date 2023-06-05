@@ -104,8 +104,8 @@ You can use the **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseCo
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Adaptability/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Adaptability/"
 }
 
 [note]

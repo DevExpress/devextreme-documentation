@@ -179,8 +179,8 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
 
 Since column fixing is effective only with horizontal scrolling, using it makes sense only if the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') property is **false** and when the total width of columns exceeds the container width. Otherwise, fixed columns behave just like regular ones.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/ColumnFixing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/ColumnFixing/"
 }
 
 #####See Also#####

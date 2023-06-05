@@ -5,9 +5,9 @@ default: true, false (Android, iOS)
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can change an appointment duration.
+Specifies whether or not an end user can change an appointment duration.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/"
 }

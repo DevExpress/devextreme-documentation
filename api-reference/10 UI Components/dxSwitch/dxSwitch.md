@@ -14,8 +14,8 @@ The Switch is a UI component that can be in two states: "On" and "Off".
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/Switch/Getting_Started_with_Switch/"

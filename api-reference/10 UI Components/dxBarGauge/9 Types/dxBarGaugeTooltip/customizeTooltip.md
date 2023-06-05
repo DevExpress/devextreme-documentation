@@ -23,12 +23,3 @@ The [formatted](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration
 The tooltip's text or markup and color.
 
 ---
-<!--
-#include dataviz-customize-tooltip-return
-
-#include dataviz-ref-functioncontext
-
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/Tooltip/"
-}
--->

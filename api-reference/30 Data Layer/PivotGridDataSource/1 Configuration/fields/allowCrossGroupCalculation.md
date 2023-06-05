@@ -17,6 +17,6 @@ This row can be displayed differently depending on the **allowCrossGroupCalculat
     [ [1, 2, 3], [2, 4, 6], [3, 6, 9] ]    // allowCrossGroupCalculation: false
     [ [1, 2, 3], [5, 7, 9], [12, 15, 18] ] // allowCrossGroupCalculation: true
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/RunningTotals/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/RunningTotals/"
 }

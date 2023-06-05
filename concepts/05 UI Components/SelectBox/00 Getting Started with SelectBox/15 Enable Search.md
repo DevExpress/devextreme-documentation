@@ -2,8 +2,8 @@
 
 This demo shows additional search properties:
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing"
 }
 
 In the next step, we will process the SelectBox's value change event.

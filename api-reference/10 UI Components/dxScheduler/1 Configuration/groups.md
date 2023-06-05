@@ -126,10 +126,10 @@ This array should contain one or more values that correspond to the [fieldExpr](
 
 ---
 
-To group appointments by resources of one kind, for instance to group appointments that use particular rooms in an office, assign an array with a single element to the **groups** property. To group appointments by several resource kinds, assign an array of elements. Each element will represent a resource by which appointments will be grouped. Each resource will be nested to the resource represented by the previous element in the **groups** array.
+To group appointments in the **agenda** view or by one type of resource, for instance, to group appointments that use a particular room in an office, assign an array with a single element to the **groups** property. To group appointments by several resource types, assign an array of elements. Each element represents a resource by which appointments are grouped. Each resource is nested in the resource represented by the previous element in the **groups** array.
 
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/"
 }

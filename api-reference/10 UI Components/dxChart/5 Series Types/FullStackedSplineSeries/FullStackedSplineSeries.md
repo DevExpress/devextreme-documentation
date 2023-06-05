@@ -15,8 +15,8 @@ An object defining a series of the **fullStackedSpline** type.
     seriesType: "fullstackedspline"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Spline/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Spline/"
 }
 
 ![DevExtreme HTML5 Charts FullStackedSplineSeriesType](/images/ChartJS/FullStackedSpline.png)

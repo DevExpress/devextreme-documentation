@@ -294,8 +294,8 @@ If you need to change properties of a particular series, return an [object with 
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SeriesTemplates/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SeriesTemplates/"
 } 
 
 #####See Also#####

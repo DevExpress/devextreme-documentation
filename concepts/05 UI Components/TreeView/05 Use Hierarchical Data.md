@@ -16,8 +16,8 @@ For an example of hierarchical data, see the following code snippet.
         ]
     }];
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/HierarchicalDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/HierarchicalDataStructure/"
 }
 
 As you can see, all items in a hierarchical data source have the **id** and **text** fields, and items with children have the **items** field. Those are [conventional field names](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/'). To use other names, change the [keyExpr](/api-reference/10%20UI%20Components/HierarchicalCollectionWidget/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#keyExpr'), [displayExpr](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#displayExpr') and [itemsExpr](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/itemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#itemsExpr') properties, respectively.

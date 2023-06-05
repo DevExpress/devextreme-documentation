@@ -10,6 +10,6 @@ Specifies the selected items.
 ---
 Pass an array of items to this property to select them.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/"
 }

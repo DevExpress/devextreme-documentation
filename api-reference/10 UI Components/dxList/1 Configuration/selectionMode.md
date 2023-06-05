@@ -25,8 +25,8 @@ This property accepts the following values.
 
  [note]The check box that selects/unselects all items is displayed only if the [showSelectionControls](/api-reference/10%20UI%20Components/dxList/1%20Configuration/showSelectionControls.md '{basewidgetpath}/Configuration/#showSelectionControls') property is enabled. Otherwise, the "all" mode works as "multiple".
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
 }
 
 #####See Also#####

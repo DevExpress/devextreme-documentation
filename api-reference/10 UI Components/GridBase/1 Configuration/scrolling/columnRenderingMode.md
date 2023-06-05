@@ -14,6 +14,6 @@ Renders all columns at once.
 - *"virtual"*     
 Renders only those columns that get into the viewport.        
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/HorizontalVirtualScrolling/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/HorizontalVirtualScrolling/"
 }

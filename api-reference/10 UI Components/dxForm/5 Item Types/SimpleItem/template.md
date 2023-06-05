@@ -222,8 +222,8 @@ A template name or container.
 
 ---
 
-#include common-githubbutton with {
-    url: "https://github.com/DevExpress-Examples/Form-Custom-items"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-form-custom-items"
 }
 
 #####See Also#####

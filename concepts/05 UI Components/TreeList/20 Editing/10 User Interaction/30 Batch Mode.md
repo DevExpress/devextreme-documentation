@@ -6,8 +6,8 @@ When a user clicks a *"Delete"* button in a row, the UI component only marks the
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList Editing Batch Mode Deletion](/images/treelist/editing/batch_mode_deletion.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/BatchEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/BatchEditing/"
 }
 
 #####See Also#####

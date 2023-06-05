@@ -14,8 +14,8 @@ The ProgressBar is a UI component that shows current progress.
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/ProgressBar/Overview/"

@@ -15,8 +15,8 @@ value: 48
 dx.viz.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/CircularGauge/Visual_Elements/"

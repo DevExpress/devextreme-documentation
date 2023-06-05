@@ -302,8 +302,8 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnChooser/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnChooser/"
 }
 
 #####See Also#####

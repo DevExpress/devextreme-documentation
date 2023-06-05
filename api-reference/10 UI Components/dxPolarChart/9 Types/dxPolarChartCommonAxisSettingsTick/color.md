@@ -8,6 +8,3 @@ default: '#767676'
 Specifies ticks color.
 
 ---
-<!--
-#include common-colorlist
--->

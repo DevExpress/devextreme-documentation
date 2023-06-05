@@ -17,7 +17,7 @@ The visual range does not change.
 - *"auto"*      
 When the visual range is specified, the applied mode is the same as the argument axis' [visualRangeUpdateMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode').
 
-- *"shift"*     
+- *"shift"* (**deprecated since v23.1**)     
 The same as *"auto"* mode.
 
 #####See Also#####

@@ -170,8 +170,8 @@ To customize views in the MultiView, define an [itemTemplate](/api-reference/10%
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
 }
 
 ---

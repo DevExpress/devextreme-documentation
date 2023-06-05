@@ -10,6 +10,6 @@ This property limits row reordering to the UI and does not affect the data sourc
 
 For information on drag and drop between components, refer to the [group](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/group.md '{basewidgetpath}/Configuration/rowDragging/#group') topic.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
 } 

@@ -270,8 +270,8 @@ To define resource kinds, assign an array of objects specifying them to the [res
 
 Note that every resource instance should have a special structure that includes *id*, *color* and *text* fields. If the structure of your resources differs, set the [valueExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/valueExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#valueExpr'), [colorExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/colorExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#colorExpr') and [displayExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/displayExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#displayExpr') properties as shown in the code above.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/"
 }
 
 [tags]scheduler, appointment, resource, resource kind, resource structure, assign resource, fieldExpr

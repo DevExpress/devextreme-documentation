@@ -111,8 +111,8 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
 }
 
 ---

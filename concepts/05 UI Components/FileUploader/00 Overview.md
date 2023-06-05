@@ -1,7 +1,7 @@
 The FileUploader UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files on the page's FileUploader area.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/FileSelection/"
 }
 
 The following code adds the FileUploader to your page. Use the [accept](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept') property to restrict the file types that can be uploaded to the server. This property is like the underlying `<input>` element's *"accept"* attribute and accepts the same values described <a href="http://www.w3schools.com/TAGs/att_input_accept.asp" target="_blank">here</a>.

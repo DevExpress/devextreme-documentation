@@ -9,6 +9,6 @@ Repeat the full set of palette colors, alternating their normal, lightened, and 
 - *"extrapolate"*   
 Repeat the full set of palette colors, changing their shade gradually from dark to light.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
 }

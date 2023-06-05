@@ -25,8 +25,8 @@ Most properties of DevExtreme React Components are implemented as nested configu
 
     export default App;    
 
-#include common-githubbutton with {
-    url: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-z2bigu?file=/App.js:"
+#include btn-open-codesandbox with {
+    href: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-z2bigu?file=/App.js:"
 }
 
 If you need to use objects, define them outside the component class or function body or wrap them in the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook as shown in the following code. In class components, use the constructor to assign the objects to class properties.
@@ -89,6 +89,6 @@ If you need to use objects, define them outside the component class or function 
 
     export default App;
 
-#include common-githubbutton with {
-    url: "https://codesandbox.io/s/customize-item-devextreme-form-forked-imysxl?file=/App.js"
+#include btn-open-codesandbox with {
+    href: "https://codesandbox.io/s/customize-item-devextreme-form-forked-imysxl?file=/App.js"
 }

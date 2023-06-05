@@ -20,8 +20,8 @@ An array with the following format:
 Each nested array contains UI component instances that should be in the same row in the exported document.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportSeveralCharts/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportSeveralCharts/"
 }
 
 #####See Also#####

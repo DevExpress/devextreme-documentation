@@ -9,8 +9,8 @@ Specifies the ending of the appointment.
 ---
 We recommend that you specify appointment dates in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">UTC ISO 8601</a>.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SimpleArray/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/SimpleArray/"
 }
 
 #####See Also#####

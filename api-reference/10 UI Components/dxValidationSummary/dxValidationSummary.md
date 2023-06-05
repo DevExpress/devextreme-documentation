@@ -12,8 +12,8 @@ A UI component for displaying the result of checking [validation rules](/api-ref
 dx.web.js, dx.all.js
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/"

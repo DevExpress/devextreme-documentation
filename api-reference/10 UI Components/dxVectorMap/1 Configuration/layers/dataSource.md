@@ -8,8 +8,8 @@ notUsedInTheme:
 Specifies a data source for the layer.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Vector_Map/CustomMapData/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Vector_Map/CustomMapData/"
 }
 
 #####See Also#####

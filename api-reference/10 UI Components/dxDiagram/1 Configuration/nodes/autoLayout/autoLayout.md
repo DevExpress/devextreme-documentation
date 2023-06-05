@@ -10,8 +10,8 @@ Specifies an auto-layout algorithm that the UI component uses to build a diagram
 ---
 The **layout** property is in effect when a diagram is bound to a data source using the [nodes](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/"
 }
 
 #####See Also#####

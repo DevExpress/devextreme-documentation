@@ -30,8 +30,8 @@ If you need to update form data at runtime, redefine the [formData](/api-referen
         });
     });
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
 }
 
 The Form UI component provides methods that update specific **formData** fields and rerender the corresponding editors without rerendering the whole UI component. The [updateData(dataField, value)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/updateData(dataField_value).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#updateDatadataField_value') method updates the value of a single field. The [updateData(data)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/updateData(data).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#updateDatadata') method updates values of several fields at once. In the following code, these methods are called on a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') click.

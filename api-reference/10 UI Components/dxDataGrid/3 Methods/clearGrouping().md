@@ -6,8 +6,8 @@ id: dxDataGrid.clearGrouping()
 Ungroups grid records.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/"
 }
 
 For more information about grouping, see the [Grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/') topic.

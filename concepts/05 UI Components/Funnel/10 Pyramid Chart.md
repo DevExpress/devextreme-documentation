@@ -74,8 +74,8 @@ You can use the Funnel UI component to create a pyramid chart. Change the [algor
 ---
 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PyramidChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PyramidChart/"
 }
 
 #####See Also#####

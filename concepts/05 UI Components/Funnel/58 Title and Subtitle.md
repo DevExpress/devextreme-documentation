@@ -92,8 +92,8 @@ The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tit
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/"
 }
 
 You can set the title's text more concisely by assigning it directly to the **title** property. This is useful if you are satisfied with the title's default settings and do not need a subtitle. 

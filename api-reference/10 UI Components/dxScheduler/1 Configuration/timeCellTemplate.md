@@ -20,8 +20,37 @@ The item's index.
 A template name or container.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
+The following image shows the difference between Scheduler cell types:
+
+![DevExtreme Scheduler - Cell Types](/images/Scheduler/scheduler-cells.png)
+
+Use this template for time cells only.
+
+<table class="dx-table full-width">
+    <tr>
+        <th>Field name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>date</code></td>    
+        <td>Date of the cell.</td>
+    </tr>
+    <tr>
+        <td><code>groups</code></td>          
+        <td>A group object to which time cell belongs.</td> 
+    </tr>
+    <tr>
+        <td><code>groupIndex</code></td>          
+        <td>Index of a group to which time cell belongs.</td> 
+    </tr>
+    <tr>
+        <td><code>text</code></td>          
+        <td>Text of time cell.</td> 
+    </tr>
+</table>
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
 
 [note]There is no **timeCellTemplate** in such views as "month", "timelineMonth" and "agenda".

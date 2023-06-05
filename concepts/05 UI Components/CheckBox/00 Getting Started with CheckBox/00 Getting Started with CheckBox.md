@@ -4,6 +4,10 @@ This tutorial shows how to add the CheckBox to your application and configure it
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/23_1/GettingStartedWith/CheckBox/index.html, /Content/Applications/23_1/GettingStartedWith/CheckBox/index.js, /Content/Applications/23_1/GettingStartedWith/CheckBox/index.css"></div>
 
-Each section in this tutorial describes a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-devextreme-check-box" target="_blank">getting-started-with-check-box</a>.
+Each section in this tutorial describes a single configuration step. You can also find the full code in the GitHub repository.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-devextreme-check-box"
+}
 
 [tags] dxcheckbox

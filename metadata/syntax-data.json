@@ -1,5 +1,10 @@
 {
   "entries": {
+    "_ui_range_slider_ValueChangedEvent": {
+      "angular": "dxo-ui-range-slider--value-changed-event",
+      "react": "_ui_range_slider_ValueChangedEvent",
+      "vue": "Dx_ui_range_slider_ValueChangedEvent"
+    },
     "animationConfig": {
       "angular": "dxo-animation-config",
       "react": "AnimationConfig",
@@ -4100,6 +4105,9 @@
     "dxDateRangeBoxOptions": {
       "vue": "dx-date-range-box-options"
     },
+    "dxDateRangeBoxOptions.disableOutOfRangeSelection": {
+      "vue": "disable-out-of-range-selection"
+    },
     "dxDateRangeBoxOptions.endDate": {
       "vue": "end-date"
     },
@@ -5372,11 +5380,6 @@
     },
     "dxElement": {
       "vue": "dx-element"
-    },
-    "dxEvent": {
-      "angular": "dxo-dx-event",
-      "react": "DxEvent",
-      "vue": "DxDxEvent"
     },
     "dxFileManager": {
       "angular": "dx-file-manager",
@@ -14200,6 +14203,11 @@
     "eventInfo": {
       "vue": "event-info"
     },
+    "eventInfo.component": {
+      "angular": "dxo-component",
+      "react": "Component",
+      "vue": "DxComponent"
+    },
     "eventObject": {
       "angular": "dxo-event-object",
       "react": "EventObject",
@@ -15018,6 +15026,16 @@
     "nativeEventInfo": {
       "vue": "native-event-info"
     },
+    "nativeEventInfo.component": {
+      "angular": "dxo-component",
+      "react": "Component",
+      "vue": "DxComponent"
+    },
+    "nativeEventInfo.event": {
+      "angular": "dxo-event",
+      "react": "Event",
+      "vue": "DxEvent"
+    },
     "numericRule": {
       "angular": "dxo-numeric-rule",
       "react": "NumericRule",
@@ -15288,6 +15306,9 @@
     },
     "userDefinedElement": {
       "vue": "user-defined-element"
+    },
+    "valueChangedInfo.previousValue": {
+      "vue": "previous-value"
     },
     "vectorMapLegendItem": {
       "angular": "dxo-vector-map-legend-item",

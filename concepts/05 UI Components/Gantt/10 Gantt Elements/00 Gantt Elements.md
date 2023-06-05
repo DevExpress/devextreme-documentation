@@ -14,6 +14,6 @@ This section describes the Gantt UI component's UI elements and lists the main m
 
     Resources indicate people, equipment, or materials required to complete a project on time.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }

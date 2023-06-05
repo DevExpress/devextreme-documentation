@@ -36,8 +36,8 @@ Objects that have a hierarchical structure are visualized by groups of tiles. Fo
         ]
     }];
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HierarchicalDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HierarchicalDataStructure/"
 }
 
 For both structures, set the [valueField](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/valueField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#valueField') and [labelField](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/labelField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#labelField'); for the hierarchical structure, also set the [childrenField](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/childrenField.md '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#childrenField').
@@ -60,8 +60,8 @@ A plain data array can imply a hierarchical structure. An example of such array 
         parentField: "parent"
     };
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FlatDataStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FlatDataStructure/"
 }
 
 Depending on your data source, bind the TreeMap to data as follows.

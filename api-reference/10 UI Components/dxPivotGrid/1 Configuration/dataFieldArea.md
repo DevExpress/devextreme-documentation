@@ -12,6 +12,6 @@ Data field headers appear only when more than one [data field](/api-reference/30
 
 ![DevExpress DevExtreme HTML5 PivotGrid](/images/DataGrid/PivotGrid_dataFieldArea.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/LayoutCustomization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/LayoutCustomization/"
 }

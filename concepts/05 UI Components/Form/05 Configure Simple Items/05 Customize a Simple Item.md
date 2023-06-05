@@ -192,11 +192,11 @@ If none of the available editors suit your requirements, you can define a custom
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
 }
-#include common-githubbutton with {
-    url: "https://github.com/DevExpress-Examples/Form-Custom-items"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-form-custom-items"
 }
 
 A simple item can be accompanied by a line of text that gives a hint, for example, of the values that this item accepts. To specify this text, use the [helpText](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/helpText.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#helpText') property. If filling an item is required, assign **true** to its [isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') property. In this case, a special mark appears near the item. For more information, see the [Additional Marks](/concepts/05%20UI%20Components/Form/15%20Configure%20Item%20Labels/10%20Additional%20Marks.md '/Documentation/Guide/UI_Components/Form/Configure_Item_Labels/Additional_Marks/') topic.

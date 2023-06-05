@@ -224,8 +224,8 @@ You can define a [groupTemplate](/api-reference/10%20UI%20Components/dxList/1%20
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/GroupedList/"
 }
 
 #####See Also#####

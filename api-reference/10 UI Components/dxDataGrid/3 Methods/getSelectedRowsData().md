@@ -185,8 +185,8 @@ When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DeferredSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DeferredSelection/"
 }
 
 [note][Calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') cannot be obtained because this method gets data objects from the data source.

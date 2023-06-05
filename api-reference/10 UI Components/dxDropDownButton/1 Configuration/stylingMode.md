@@ -11,6 +11,6 @@ Specifies how the button is styled.
 
 You can see the available styles in the demo. 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
 }

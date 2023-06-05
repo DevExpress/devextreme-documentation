@@ -8,8 +8,8 @@ Cancels the [selection](/api-reference/10%20UI%20Components/dxChart/5%20Series%2
 ---
 To cancel the selection of all chart series, call the [clearSelection()](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/clearSelection().md '{basewidgetpath}/Methods/#clearSelection') method of the UI component instance.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultipleSeriesSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultipleSeriesSelection/"
 }
 
 #####See Also#####

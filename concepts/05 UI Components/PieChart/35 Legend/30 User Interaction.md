@@ -177,8 +177,8 @@ In addition, a user can click legend items. The UI component does not react to t
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/"
 }
 
 #####See Also#####

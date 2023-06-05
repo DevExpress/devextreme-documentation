@@ -143,8 +143,8 @@ Data in the drill-down data source is paginated by default. Only the items on th
 
 [/note]
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/DrillDown/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/DrillDown/"
 }
 
 #####See Also#####

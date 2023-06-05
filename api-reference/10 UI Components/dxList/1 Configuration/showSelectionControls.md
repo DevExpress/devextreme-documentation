@@ -8,8 +8,8 @@ default: false
 Specifies whether or not to display controls used to select list items.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
 }
 
 #####See Also#####

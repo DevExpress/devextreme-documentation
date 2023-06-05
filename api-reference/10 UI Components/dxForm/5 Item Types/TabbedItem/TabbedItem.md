@@ -9,8 +9,8 @@ This article describes configuration properties of a tabbed form item.
 ---
 An item representing a tabbed container for other form items. 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
 }
 
 #####See Also#####

@@ -40,6 +40,142 @@ The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.
 A template name or container.
 
 ---
+---
+##### jQuery  
+
+    <!-- tab: index.js -->
+    $(function () {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [
+                // ...
+                {
+                    type: "buttons",
+                    buttons: [{
+                        // ...
+                        template: function(data) {
+                            return $("<div>").addClass("dx-icon-email").css("display", "inline-block");
+                        },
+                    }]
+                }
+            ]
+        });
+    });
+
+##### Angular  
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ... >
+        <dxi-column type="buttons">
+            <dxi-button
+                // ...
+                template="buttonTemplate"
+            ></dxi-button>
+        </dxi-column>
+
+        <div *dxTemplate="let data of 'buttonTemplate'">
+            <div class="dx-icon-email" style="display:inline-block"></div>
+        </div>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    // ...
+    export class AppComponent {}
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue (Options API) -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn type="buttons">
+                <DxButton
+                    // ...
+                    template="buttonTemplate"
+                />
+            </DxColumn>
+            <template #buttonTemplate="{ data }">
+                <div class="dx-icon-email" style="display:inline-block"></div>
+            </template>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+    import Dx{WidgetName}, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn,
+            DxButton
+        },
+    }
+    </script>
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn type="buttons">
+                <DxButton
+                    // ...
+                    template="buttonTemplate"
+                />
+            </DxColumn>
+            <template #buttonTemplate="{ data }">
+                <div class="dx-icon-email" style="display:inline-block"></div>
+            </template>
+        </Dx{WidgetName}>
+    </template>
+
+    <script setup>
+    import 'devextreme/dist/css/dx.light.css';
+    import Dx{WidgetName}, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/{widget-name}';
+    // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column,
+        Button
+    } from 'devextreme-react/{widget-name}';
+
+    const buttonRender = (data) => {
+        return <div className="dx-icon-email" style="display: inline-block"></div>;
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Column type="buttons">
+                    <Button
+                    // ...
+                        render={buttonRender}
+                    />
+                </Column>
+            </{WidgetName}>
+        );
+    }
+    
+---
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

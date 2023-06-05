@@ -8,8 +8,8 @@ default: undefined
 Specifies which data source field provides data for the pivot grid field.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/"
 }
 
 #####See Also#####

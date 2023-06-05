@@ -17,8 +17,8 @@ The group operations are:
 - *"notOr"*     
  Returns a reverted result of an *"or"* operation: `["!", [[condition1], "or", [condition2]]]`.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/Customization/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FilterBuilder/Customization/"
 }
 
 #####See Also#####

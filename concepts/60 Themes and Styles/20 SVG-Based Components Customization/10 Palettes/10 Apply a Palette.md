@@ -79,8 +79,8 @@ Every UI component that supports palettes has a [palette](/api-reference/10%20UI
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/"
 }
 
 In the CircularGauge and LinearGauge, the palette can be specified in the [rangeContainer](/api-reference/10%20UI%20Components/dxCircularGauge/1%20Configuration/rangeContainer '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/rangeContainer/') and [subvalueIndicator](/api-reference/10%20UI%20Components/dxCircularGauge/1%20Configuration/subvalueIndicator '/Documentation/ApiReference/UI_Components/dxCircularGauge/Configuration/subvalueIndicator/') objects.
@@ -203,8 +203,8 @@ In the CircularGauge and LinearGauge, the palette can be specified in the [range
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/PaletteForRanges/"
 }
 
 In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20Components/dxTreeMap/1%20Configuration/colorizer '/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/colorizer/'). In the VectorMap, it should be set for a specific [layer](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/'). In the RangeSelector, the palette is specified in the [chart](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/chart '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/chart/') object.

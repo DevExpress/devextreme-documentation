@@ -383,7 +383,11 @@ Specify **setCellValue** for those columns whose editors affect other form items
 
     ---
 
-The full project is available on GitHub: [DataGrid - How to hide/disable Edit Form items based on another item's value](https://github.com/DevExpress-Examples/DataGrid-How-to-hide-disable-certain-Edit-Form-items-based-on-another-item-s-value)
+The full project is available on GitHub.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-hide-show-edit-form-items-dynamically"
+}
 
 #####See Also#####
 - [Customize Editors](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors')

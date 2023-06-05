@@ -29,6 +29,3 @@ The item's [formatted](/api-reference/10%20UI%20Components/dxFunnel/1%20Configur
 The tooltip's text or markup and appearance settings.
 
 ---
-<!--
-#include dataviz-customize-tooltip-return
--->

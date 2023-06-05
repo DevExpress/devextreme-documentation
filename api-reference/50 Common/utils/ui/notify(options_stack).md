@@ -20,8 +20,8 @@ The toast stacking direction.
 The initial toast position.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos//WidgetsGallery/Demo/Toast/Stack/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos//WidgetsGallery/Demo/Toast/Stack/"
 }
 
 To stack toast messages, specify the `position` field in the **stack** object.

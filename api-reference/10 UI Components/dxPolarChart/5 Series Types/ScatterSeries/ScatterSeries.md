@@ -14,8 +14,8 @@ An object defining a series of the **scatter** type.
     seriesType: "scatter"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/DiscreteData/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/DiscreteData/"
 }
 
 ![PolarScatterSeriesType ChartJS](/images/ChartJS/PolarScatter_useSpiderWeb.png)

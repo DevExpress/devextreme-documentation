@@ -8,8 +8,8 @@ Enables the user to group data using the context menu.
 ---
 Set this property to **true** to enable grouping using the context menu. In this case, to group/ungroup data, the user right-clicks a column header and chooses the required item from the appeared context menu.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridAdaptabilityOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridAdaptabilityOverview/"
 }
 
 #####See Also#####

@@ -127,14 +127,14 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
 
 Since the popup and form modes are very similar, you can use the same **columns**.[formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#formItem') and **editing**.[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form') properties to customize items and layout in both modes. See the [Form Mode](/concepts/05%20UI%20Components/DataGrid/20%20Editing/10%20User%20Interaction/40%20Form%20Mode.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#User_Interaction/Form_Mode') topic for more details on form customization.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PopupEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PopupEditing/"
 }
 
 The built-in form of the **Popup** and **Form** modes has limited functionality. If you want to further customize the form (add custom labels and buttons, apply advanced validation rules and masks, etc.), implement the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') component inside [Popup](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/').
 
-#include common-githubbutton with {
-    url: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
 }
 
 #####See Also#####

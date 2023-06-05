@@ -12,6 +12,6 @@ This property limits row reordering to the UI and does not affect the data sourc
 
 To configure drag and drop between components, follow the instructions from the [group](/api-reference/10%20UI%20Components/dxSortable/1%20Configuration/group.md '/Documentation/ApiReference/UI_Components/dxSortable/Configuration/#group') topic.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/"
 } 

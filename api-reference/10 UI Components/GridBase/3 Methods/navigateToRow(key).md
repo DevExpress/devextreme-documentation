@@ -19,8 +19,8 @@ This method performs the following actions:
 1. Expands groups in which the row is nested (if rows are grouped and the groups are collapsed).
 1. Scrolls the UI component to display the row (if the row is outside the viewport).
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
 The following requirements apply when you use this method: 
@@ -30,6 +30,8 @@ The following requirements apply when you use this method:
 - Rows should be initially sorted by keys. You can sort them on the server or use a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '{basewidgetpath}/Configuration/columns/#sortOrder') or the **DataSource**'s [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') property to sort the rows on the client.
 
 - [Scrolling mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode') should not be *"infinite"*.
+
+If you enable the [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') property, the DataGrid generates additional requests with comparison operators (for example, `<` and `>`) to calculate the page number where a row with a focused key is located. This logic does not work if ODataStore is bound to a table with GUID keys. You need to set the [autoNavigateToFocusedRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/autoNavigateToFocusedRow.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#autoNavigateToFocusedRow') property to **false** or disable the **remoteOperations** property to ensure it operates correctly.
 
 #####See Also#####
 #include common-link-callmethods

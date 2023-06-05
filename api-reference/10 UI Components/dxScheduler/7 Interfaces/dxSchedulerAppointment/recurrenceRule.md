@@ -9,8 +9,8 @@ Specifies a recurrence rule based on which the Scheduler generates an appointmen
 ---
 The **recurrenceRule** value should contain an `RRULE` pattern as per the <a href="https://datatracker.ietf.org/doc/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/"
 }
 
 If you need to obtain individual dates from an appointment series, use a 3rd-party library. In the following example, the <a href="https://github.com/jakubroztocil/rrule#rrulejs" target="_blank">rrule</a> library is used:

@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to force the axis to start and end on ticks.
 
 ---

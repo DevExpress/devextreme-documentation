@@ -17,6 +17,6 @@ Displays numeric values. Each value is the [logarithmBase](/api-reference/10%20U
 
 Normally, there is no need to specify this property, because the axis type is determined automatically depending on the [type of values](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType'). However, you may force the use of a specific axis type, for example, to employ the *"discrete"* axis type with numeric or date-time values.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LogarithmicAxis/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LogarithmicAxis/"
 }

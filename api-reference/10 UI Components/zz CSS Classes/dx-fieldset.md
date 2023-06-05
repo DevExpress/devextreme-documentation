@@ -30,6 +30,6 @@ DevExtreme UI components include <a href="http://www.w3.org/WAI/intro/aria.php" 
         </div>
     </div>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FieldSet/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FieldSet/Overview/"
 }

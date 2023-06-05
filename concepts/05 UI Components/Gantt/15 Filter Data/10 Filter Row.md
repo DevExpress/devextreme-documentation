@@ -4,8 +4,8 @@ Set the **filterRow**.[visible](/api-reference/_hidden/dxGanttFilterRow/visible.
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering FilterRow](/images/Gantt/Visual_elements/Filter_row.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/FilterRow/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/FilterRow/"
 }
 
 The filter row contains a magnifier icon in its cells. Users can click this icon to select a comparison type from a pop-up list. Set the [showOperationChooser](/api-reference/_hidden/dxGanttFilterRow/showOperationChooser.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/#showOperationChooser') property to **false** for a column to hide the magnifier icon. 

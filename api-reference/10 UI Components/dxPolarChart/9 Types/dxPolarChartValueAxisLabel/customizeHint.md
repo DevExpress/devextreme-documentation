@@ -19,6 +19,3 @@ The [formatted](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configurati
 The text for the hint to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

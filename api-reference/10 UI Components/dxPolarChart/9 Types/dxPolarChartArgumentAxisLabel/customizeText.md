@@ -20,9 +20,3 @@ The [formatted](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configurati
 The text for the label to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
-
-#####See Also#####
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
--->

@@ -9,8 +9,8 @@ export: NumericRule
 A validation rule that demands that the validated field has a numeric value.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
 #####See Also#####

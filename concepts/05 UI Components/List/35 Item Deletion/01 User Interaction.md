@@ -74,8 +74,8 @@ To allow the user to delete items from the List, set the [allowItemDeleting](/ap
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/"
 }
 
 [note]If List items are [supplied with the context menu](/concepts/05%20UI%20Components/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/UI_Components/List/Item_Context_Menu/'), the **itemDeleteMode** property is ignored in favor of the [menuMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/menuMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#menuMode') property.

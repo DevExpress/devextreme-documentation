@@ -99,8 +99,8 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers/"
 }
 
 

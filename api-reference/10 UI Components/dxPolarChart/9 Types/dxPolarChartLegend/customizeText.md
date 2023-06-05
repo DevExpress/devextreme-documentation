@@ -23,6 +23,3 @@ The series' name.
 The text for the legend item to display.
 
 ---
-<!--
-#include dataviz-ref-functioncontext
--->

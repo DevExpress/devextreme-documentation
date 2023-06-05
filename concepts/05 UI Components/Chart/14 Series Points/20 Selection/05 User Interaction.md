@@ -241,8 +241,8 @@ To choose which elements should be highlighted when a user selects a point, spec
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Selection/"
 }
 
 By default, only a single point can be in the selected state at a time. If you need to allow multiple points to be in this state, assign *"multiple"* to the [pointSelectionMode](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/pointSelectionMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#pointSelectionMode') property.
@@ -317,8 +317,8 @@ By default, only a single point can be in the selected state at a time. If you n
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePointSelection/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePointSelection/"
 }
 
 #####See Also#####

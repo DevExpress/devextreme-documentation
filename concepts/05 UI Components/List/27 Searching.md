@@ -123,8 +123,8 @@ Searching is disabled in the List UI component by default. Assign **true** to th
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListWithSearchBar/"
 }
 
 When a user types a string in the input field, the List suggests all items that _contain_ this string. Assign *'startswith'* to the [searchMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#searchMode') property if you want the List to suggest only those items that _start_ with the input string.

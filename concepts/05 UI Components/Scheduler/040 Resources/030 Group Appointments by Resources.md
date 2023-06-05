@@ -1,4 +1,4 @@
-To group appointments by resources, assign an array to the [groups](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/groups.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups') property. Each element of this array is **fieldExpr** of a resource kind. Note that the resource headers' order depends on the resources' order in the [resources](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/') array.
+To group appointments by resources, assign an array to the [groups](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/groups.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups') property. Each element of this array is set to the **fieldExpr** property of a resource type. Note that the resource header order depends on the resource order in the [resources](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/') array. The Scheduler does not support grouping resources by multiple data fields in the **agenda** view.
 
 ---
 
@@ -198,7 +198,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
 
 ![Scheduler Grouping by Resources](/images/UiWidgets/Scheduler_ResourceGroups.png)
 
-You can change resource headers' orientation in an individual view using the **views**.[groupOrientation](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/groupOrientation.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#groupOrientation') property. In the following code, the orientation in the **day** view is *"vertical"*, so that resource headers are arranged in a column:
+You can change resource headers orientation in an individual view using the **views**.[groupOrientation](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/groupOrientation.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#groupOrientation') property. In the following code, the orientation in the **day** view is *"vertical"*, so that resource headers are arranged in a column:
 
 ---
 #####jQuery
@@ -294,8 +294,8 @@ You can change resource headers' orientation in an individual view using the **v
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/"
 }
 
 #####See Also#####

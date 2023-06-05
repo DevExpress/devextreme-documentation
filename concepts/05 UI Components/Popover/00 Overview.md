@@ -1,7 +1,7 @@
 The Popover is a UI component that shows notifications within a box with an arrow pointing to a specified UI element.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/"
 }
 
 The following code creates a simple Popover on your page and attaches it to another element (in this example, to an image).

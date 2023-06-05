@@ -14,6 +14,6 @@ If the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/
 
 If you need to cancel form submission, handle a form's <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" target="_blank">submit</a> event.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }

@@ -1,7 +1,7 @@
 The ActionSheet UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics/"
 }
 
 The following code adds a simple ActionSheet to your page. The UI component is shown on a button click.  

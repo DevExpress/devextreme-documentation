@@ -15,6 +15,6 @@ An object that defines a gauge indicator of the **triangleMarker** type.
     indicatorTypePascalCase: "TriangleMarker"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/DifferentValueIndicatorTypesLinearGauge/"
 }

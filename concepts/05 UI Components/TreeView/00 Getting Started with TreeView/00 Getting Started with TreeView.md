@@ -6,6 +6,10 @@ This tutorial shows how to create and configure the TreeView. The demo below sho
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/23_1/GettingStartedWith/TreeView/index.html, /Content/Applications/23_1/GettingStartedWith/TreeView/index.js, /Content/Applications/23_1/GettingStartedWith/TreeView/index.css"></div>
 
-Refer to the following sections for information on each configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-treeview" target="_blank">Getting Started with DevExtreme TreeView</a>.
+Refer to the following sections for information on each configuration step. You can also find the full code in the GitHub repository.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-treeview"
+}
 
 [tags] dxtreeview

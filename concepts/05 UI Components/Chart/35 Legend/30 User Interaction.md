@@ -164,8 +164,8 @@ Series that consist of several elements rather than just series points ([Range A
 
 Pausing on a legend item causes the [seriesHoverChanged](/api-reference/10%20UI%20Components/dxChart/4%20Events/seriesHoverChanged.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#seriesHoverChanged') event to raise. Refer to the [Series Hover Events](/concepts/05%20UI%20Components/Chart/10%20Series/10%20Hover/10%20Events.md '/Documentation/Guide/UI_Components/Chart/Series/Hover/#Events') topic for details on handling this event.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode/"
 }
 
 In addition, a user can click legend items. By default, the UI component does not react to a click, but you can instruct it to by handling the [legendClick](/api-reference/10%20UI%20Components/dxChart/4%20Events/legendClick.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#legendClick') event. If the handling function is not going to be changed at runtime, assign it to the [onLegendClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onLegendClick.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onLegendClick') property when you configure the UI component. Otherwise, or if you need several handlers for the **legendClick** event, subscribe to it using the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#oneventName_eventHandler') method. This approach is more typical of jQuery.

@@ -28,8 +28,8 @@ Set the [focusedRowEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Con
 
 To customize the existing row appearance, implement the [onRowPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared') event handler. This handler allows you to customize the existing row layout after it is generated. If a customization is not immediately applied, use the [repaintRows(rowIndexes)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/repaintRows(rowIndexes).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#repaintRowsrowIndexes') method to repaint DataGrid rows.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/"
 }
 
 The following example demonstrates how to use the [onRowPrepared](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowPrepared.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowPrepared') function to conditionally change the cell color. As a result, the DataGrid component paints the rows red where the speed exceeds the speed limit.

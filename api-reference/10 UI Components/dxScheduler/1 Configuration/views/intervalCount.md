@@ -15,8 +15,8 @@ The following is a list of views and their default intervals:
 - *"workWeek"*, *"timelineWorkWeek"* - a week without weekends      
 - *"month"* - a month
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IncreaseViewDuration/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IncreaseViewDuration/"
 }
 
 #####See Also#####

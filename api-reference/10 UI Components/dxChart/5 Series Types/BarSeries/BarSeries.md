@@ -14,8 +14,8 @@ Describes settings supported by a series of the *bar* type.
     seriesType: "bar"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StandardBar/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StandardBar/"
 }
 
 ![DevExtreme HTML5 Charts BarSeriesType](/images/ChartJS/Bar.png)

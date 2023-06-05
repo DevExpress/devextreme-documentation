@@ -10,6 +10,6 @@ Draggable is a user interface utility that allows UI component elements to be dr
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/"
 }

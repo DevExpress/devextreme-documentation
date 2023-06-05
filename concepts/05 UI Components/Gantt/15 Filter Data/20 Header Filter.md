@@ -4,8 +4,8 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter.png)
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/"
 }
 
 You can use a column's [filterType](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/columns/filterType.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterType') property to specify the initial settings of header filter items: all checked (`filterType=exclude`) or all unchecked (`filterType=include`).

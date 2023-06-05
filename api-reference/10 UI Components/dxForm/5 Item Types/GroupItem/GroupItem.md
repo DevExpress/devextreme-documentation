@@ -9,8 +9,8 @@ This article describes configuration properties of a group form item.
 ---
 A group form item is a section consisting of a caption and child form items. You can customize the layout properties for each group separately.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
 }
 
 #####See Also#####

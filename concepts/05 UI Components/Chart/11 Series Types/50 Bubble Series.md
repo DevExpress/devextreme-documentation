@@ -129,8 +129,8 @@ Note that **Bubble** series require an additional data field that provides size 
 
 Refer to the [BubbleSeries](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BubbleSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BubbleSeries/') section of the API Reference for a full list of properties available to a **Bubble** series.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/"
 }
 
 #####See Also#####

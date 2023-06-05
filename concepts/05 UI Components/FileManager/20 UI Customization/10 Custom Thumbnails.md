@@ -1,5 +1,5 @@
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
 }
 
 The FileManager UI component allows you to provide custom thumbnails for a file system's items in Thumbnails [mode](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/#mode').

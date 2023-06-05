@@ -1,0 +1,1 @@
+We use <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank">Lighthouse</a>, <a href="https://www.deque.com/axe/" target="_blank">Axe</a>, and <a href="https://wave.webaim.org/" target="_blank">WAVE</a> accessibility validation tools to check our components.

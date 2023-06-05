@@ -5,6 +5,6 @@ Setting this property prevents generating an infinite number of small axis value
     linearThreshold: -2 // [-0.01; 0.01]
     linearThreshold: -3 // [-0.001; 0.001]
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/NegativeNumbersOnLogAxis/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/NegativeNumbersOnLogAxis/"
 }

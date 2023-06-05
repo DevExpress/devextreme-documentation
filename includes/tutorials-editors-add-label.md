@@ -53,6 +53,6 @@ To specify label text, set the [label](/Documentation/ApiReference/UI_Components
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/EditorAppearanceVariants/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/EditorAppearanceVariants/"
 }

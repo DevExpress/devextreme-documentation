@@ -93,8 +93,8 @@ The title is configured by the [title](/api-reference/10%20UI%20Components/dxPie
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithMultipleSeries/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithMultipleSeries/"
 }
 
 You can set the title's text more concisely by assigning it directly to the **title** property. This is useful if you are satisfied with the default settings of the title and do not need a subtitle. 

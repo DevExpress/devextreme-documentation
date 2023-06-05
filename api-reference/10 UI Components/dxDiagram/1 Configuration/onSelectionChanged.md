@@ -23,6 +23,6 @@ An array of selected items ([DiagramShapes](/api-reference/50%20Common/Object%20
 Model data. Available only if you use Knockout.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ItemSelection/jQuery/Light/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ItemSelection/jQuery/Light/"
 }

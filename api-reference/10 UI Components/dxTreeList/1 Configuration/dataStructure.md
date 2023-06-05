@@ -29,8 +29,8 @@ The UI component expects that data has a plain structure where:
 
 Specify the [keyExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#keyExpr') and [parentIdExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#parentIdExpr') if `parentId` and `id` are called differently in your dataset. You can also change the root node's ID from 0 via the [rootValue](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#rootValue') property.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"
 }
 
 If data has a hierarchical structure, set the **dataStructure** property to *"tree"*. Parent and item IDs will be generated automatically. Data items that nest other data items should have an **items** field:
@@ -53,8 +53,8 @@ If data has a hierarchical structure, set the **dataStructure** property to *"tr
 
 If the **items** field is called differently in your dataset, specify the [itemsExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/itemsExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#itemsExpr') property. 
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayHierarchicalStructure/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayHierarchicalStructure/"
 }
 
 [note] Editing does not work with hierarchical data sources out of the box, but you can use the code sample from the following knowledge base article to implement it: <a href="https://www.devexpress.com/Support/Center/Question/Details/T725094/treelist-how-to-perform-crud-operations-on-a-hierarchical-data-source" target="_blank">TreeList - How to perform CRUD operations on a hierarchical data source</a>.

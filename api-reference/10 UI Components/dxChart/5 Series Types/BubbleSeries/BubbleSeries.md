@@ -14,8 +14,8 @@ Describes settings supported by a series of the *bubble* type.
     seriesType: "bubble"
 }
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble/"
 }
 
 ![DevExtreme HTML5 Charts BubbleSeriesType](/images/ChartJS/Bubble.png)

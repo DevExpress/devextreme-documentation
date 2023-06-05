@@ -128,8 +128,8 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/VirtualMode/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/VirtualMode/"
 }
 
 If the Virtual Mode does not meet your requirements, you can get full control over nodes and how to load them in the [createChildren](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/createChildren.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#createChildren') function. This function will be called at the beginning of the UI component's lifetime and each time a user expands a node whose child nodes have not been loaded yet.
@@ -249,8 +249,8 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/LoadDataOnDemand/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/LoadDataOnDemand/"
 }
 
 #####See Also#####

@@ -6,6 +6,10 @@ This tutorial describes how to configure a DropDownButton that logs user clicks 
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/23_1/GettingStartedWith/DropDownButton/index.html, /Content/Applications/23_1/GettingStartedWith/DropDownButton/index.js, /Content/Applications/23_1/GettingStartedWith/DropDownButton/index.css"></div>
 
-Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-dropdownbutton" target="_blank">getting-started-with-dropdownbutton</a>.
+Each section in this tutorial covers a single configuration step. You can also find the full code in the GitHub repository.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-dropdownbutton"
+}
 
 [tags] dxdropdownbutton

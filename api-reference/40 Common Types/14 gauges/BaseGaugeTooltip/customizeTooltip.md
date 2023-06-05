@@ -20,11 +20,3 @@ The [formatted](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration
 The tooltip's configuration.
 
 ---
-<!--
-#include dataviz-customize-tooltip-return
-
-#include dataviz-ref-functioncontext
-
-#####See Also#####
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
--->

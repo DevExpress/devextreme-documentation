@@ -44,8 +44,8 @@ The **screen** property accepts one or several size qualifiers separated by a sp
         }"></div>
     </div>
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview/"
 }
 
 #####See Also#####

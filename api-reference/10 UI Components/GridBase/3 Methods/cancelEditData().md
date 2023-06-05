@@ -6,8 +6,8 @@ id: GridBase.cancelEditData()
 Discards changes that a user made to data.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchUpdateRequest/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchUpdateRequest/"
 }
 
 #####See Also#####

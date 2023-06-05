@@ -246,8 +246,8 @@ You can use a column's [formItem](/api-reference/_hidden/GridBaseColumn/formItem
 
 If you need to validate form values, specify validation rules as described in the [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation') article.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FormEditing/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FormEditing/"
 }
 
 #####See Also#####

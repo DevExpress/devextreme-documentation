@@ -13,6 +13,3 @@ Legend items before customizations.
 Legend items after customizations.
 
 ---
-<!--
-#include dataviz-legend-customizeitems-example
--->

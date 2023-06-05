@@ -9,8 +9,8 @@ Configures client-side exporting.
 ---
 A user can click the **Export** button to save an Excel file with the exported data. Data types, sort, filter, and group settings are maintained.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJSOverview/"
 }
 
 The following instructions show how to enable and configure client-side export:

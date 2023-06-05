@@ -32,8 +32,8 @@ When child elements specify [key](https://reactjs.org/docs/lists-and-keys.html#k
 
     export default App;
 
-#include common-githubbutton with {
-    url: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-cz1m8o"
+#include btn-open-codesandbox with {
+    href: "https://codesandbox.io/s/simple-array-devextreme-data-grid-forked-cz1m8o"
 }
 
 #####See Also#####

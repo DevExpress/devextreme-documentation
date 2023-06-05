@@ -46,8 +46,8 @@ The PolarChart UI component visualizes data in a polar coordinate system. In thi
 <img src="/images/ChartJS/PolarChart_rectangular.png" alt="DevExtreme HTML5 Charts DataVisualization" style="display:inline-block; vertical-align:bottom" />
 <img src="/images/ChartJS/PolarChart_polar.png" alt="DevExtreme HTML5 Charts PolarChart RadarChart DataVisualization" style="display:inline-block; vertical-align:bottom" />
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ContinuousData/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ContinuousData/"
 }
 #include common-readguidesbutton with {
     url: "/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/"

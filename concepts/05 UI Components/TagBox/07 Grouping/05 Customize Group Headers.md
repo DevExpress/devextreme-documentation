@@ -204,8 +204,8 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20C
 
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/GroupedItems/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/GroupedItems/"
 }
 
 #####See Also#####

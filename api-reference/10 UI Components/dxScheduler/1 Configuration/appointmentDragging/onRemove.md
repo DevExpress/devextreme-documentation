@@ -31,6 +31,6 @@ The data object of the appointment being dragged.
 The instance of the appointment's target UI component.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/"
 }

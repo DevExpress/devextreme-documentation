@@ -8,8 +8,3 @@ default: false
 Enables state storing.
 
 ---
-<!--
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
-}
--->

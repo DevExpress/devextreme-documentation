@@ -4,6 +4,7 @@ module: common/grids
 export: ColumnHeaderFilterSearchConfig
 type: HeaderFilterSearchConfig | Object
 generateTypeLink: 
+inherits: HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription

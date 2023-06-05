@@ -226,8 +226,8 @@ The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configura
     
 ---
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DataValidation/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DataValidation/"
 }
 
 #####See Also#####

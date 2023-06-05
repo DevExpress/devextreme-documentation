@@ -29,8 +29,8 @@ The row's properties.
 The row's index.
 
 ---
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/FocusedRow/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/FocusedRow/"
 }
 
 #####See Also#####

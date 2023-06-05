@@ -17,6 +17,8 @@ When this property is set to **true**, the following applies:
 
 [note] Specify the UI component's [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '{basewidgetpath}/Configuration/#keyExpr') or the [Store's](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') **key** property to ensure that the focused row feature works properly.
 
+DataGrid generates additional requests with comparison operators (for example, `<` and `>`) to calculate the page number where a row with a focused key is located. This logic does not work for certain key types (for example, GUID) and data providers (for example, ODataStore). You need to disable the [autoNavigateToFocusedRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/autoNavigateToFocusedRow.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#autoNavigateToFocusedRow') property or set [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') to **false** to ensure it operates correctly.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/FocusedRow/"
 }

@@ -24,7 +24,7 @@ You can specify the current UI component value using any of the following format
  - "yyyy-MM-ddTHH:mm:ssZ" (for example, "2017-03-27T13:55:41Z")
  - "yyyy-MM-ddTHH:mm:ssx" (for example, "2017-03-27T16:54:10+03")
 
-If the UI component value is changed by an end-user, the new value is saved in the same format as the initial value.
+If the UI component value is changed by an end user, the new value is saved in the same format as the initial value.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"

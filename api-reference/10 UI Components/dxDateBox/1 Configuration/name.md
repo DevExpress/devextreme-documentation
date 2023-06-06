@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The value to be assigned to the `name` attribute of the underlying HTML element.
 
 ---
-<!-- Description goes here -->
+Specify this property if the UI component lies within an HTML form that will be submitted. 

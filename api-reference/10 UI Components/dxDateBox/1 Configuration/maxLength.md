@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the maximum number of characters you can enter into the textbox.
 
 ---
-<!-- Description goes here -->
+If the number of entered characters reaches the value assigned to this property, the UI component does not allow you to enter any more characters.

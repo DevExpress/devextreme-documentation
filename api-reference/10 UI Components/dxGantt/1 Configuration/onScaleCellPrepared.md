@@ -7,32 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed before a scale cell is prepared.
 
-##### param(e): Object
+##### param(e): ScaleCellPreparedEvent
 Information about the event.
-
-##### field(e.component): dxGantt
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.scaleElement): DxElement
-The scale cell.
-
-##### field(e.scaleIndex): Number
-Specifies the scale's index.
-
-##### field(e.scaleType): Enums.GanttRenderScaleType
-The scale type.
-
-##### field(e.separatorElement): DxElement
-The separator after the scale cell.
-
-##### field(e.endDate): Date
-The end date of the scale cell.
-
-##### field(e.startDate): Date
-The start date of the scale cell.
 
 ---
 

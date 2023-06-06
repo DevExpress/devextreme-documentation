@@ -8,23 +8,8 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a [funnel item](/concepts/05%20UI%20Components/Funnel/14%20Funnel%20Items/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Overview/') is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ItemClickEvent
 Information about the event.
-
-##### field(e.component): dxFunnel
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.event): event
-#include common-ref-eventparam
-
-##### field(e.item): dxFunnelItem
-The [Item](/api-reference/10%20UI%20Components/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') object.
-
-##### field(e.model): any
-The model data. Available only if you use Knockout.
 
 ---
 This function is often used to implement item selection as shown in the following code:

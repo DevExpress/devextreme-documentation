@@ -7,23 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when the value of a [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object field is changed.
 
-##### param(e): Object
+##### param(e): FieldDataChangedEvent
 Information about the event.
-
-##### field(e.component): dxForm
-The UI component's instance.
-
-##### field(e.dataField): String
-The path to the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object field whose value has been changed.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
-##### field(e.value): Object
-The field's new value.
 
 ---
 #####See Also#####

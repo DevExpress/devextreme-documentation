@@ -7,20 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed after users select a task or clear its selection.
 
-##### param(e): Object
+##### param(e): SelectionChangedEvent
 Information about the event that caused the function's execution.
-
-##### field(e.component): dxGantt
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.selectedRowKey): any
-The key of the row whose selection state was changed.
 
 ---
 #include btn-open-demo with {

@@ -7,32 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when a tree view item is collapsed.
 
-##### param(e): Object
+##### param(e): ItemCollapsedEvent
 Information about the event.
-
-##### field(e.component): dxTreeView
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.event): event
-#include common-ref-eventparam
-
-##### field(e.itemData): Object
-The collapsed item's data.
-
-##### field(e.itemElement): DxElement
-#include common-ref-elementparam with { element: "item" }
-
-##### field(e.itemIndex): Number
-The item's index.
-
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
-##### field(e.node): dxTreeViewNode
-The item's node.
 
 ---
 #####See Also#####

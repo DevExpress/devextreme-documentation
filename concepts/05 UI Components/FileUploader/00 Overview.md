@@ -87,7 +87,7 @@ The following code adds the FileUploader to your page. Use the [accept](/api-ref
 
 ---
 
-A user can upload only one file at a time. Set the [multiple](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') property to **true** to allow uploading several files at once.
+A user can upload only one file at a time. Set the [multiple](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') property to **true** to allow users to upload several files at once.
 
 ---
 ##### jQuery

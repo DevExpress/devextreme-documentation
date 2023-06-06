@@ -1,4 +1,4 @@
-Scrolling allows browsing data outside the UI component's viewport. The following scrolling modes are available in the DataGrid:
+The following scrolling modes are available in the DataGrid:
 
 - **Standard**      
 Loads all rows simultaneously. A user scrolls within one page if [paging](/concepts/05%20UI%20Components/DataGrid/35%20Paging '/Documentation/Guide/UI_Components/DataGrid/Paging/') is enabled.

@@ -17,9 +17,9 @@ This behavior occurs because not all DevExtreme components detect outside resizi
 
 For other components, if a component is initialized when its parent container is not visible, all child elements have zero size during the layout calculation and the component is rendered incorrectly. For proper operation, the component should receive a notification that its container changed size or visibility. The most straightforward solution is to call the corresponding methods of a component:
 
-- [updateDimensions](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions) for DataGrid, TreeList, and PivotGrid.
-- [repaint](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) for other components (Form, List, Scheduler, etc.).
-- [render](/Documentation/ApiReference/UI_Components/dxChart/Methods/#render) method for charts (Chart, PieChart, PolarChart, etc.), VectorMap, and RangeSlider (prior v22.2).
+- [updateDimensions](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') for DataGrid, TreeList, and PivotGrid.
+- [repaint](/api-reference/10%20UI%20Components/Widget/3%20Methods/repaint().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint') for other components (Form, List, Scheduler, etc.).
+- [render](/api-reference/10%20UI%20Components/BaseWidget/3%20Methods/render().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#render') method for charts (Chart, PieChart, PolarChart, etc.), VectorMap, and RangeSlider (prior v22.2).
 
 ---
 ##### Angular

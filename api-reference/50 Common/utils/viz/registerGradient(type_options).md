@@ -183,3 +183,8 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 - Radial and rotated linear gradients may look slightly different when exported. 
 
 [/note]
+
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"        
+}

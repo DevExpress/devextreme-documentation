@@ -14,7 +14,7 @@ The cell whose summary value is being processed.
 The cell's new summary value.
 
 ---
-This and [other post-processing functions](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryDisplayMode.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode') allow you to perform additional calculations on each summary value and take into account neighboring cells' summary values.
+This and [other post-processing functions](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/summaryDisplayMode.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#summaryDisplayMode') allow you to perform additional calculations on each summary value and take into account neighboring cell summary values. You can hide specific rows if the **calculateSummaryValue** property returns **null**, and the [hideEmptySummaryCells](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/hideEmptySummaryCells.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#hideEmptySummaryCells') property is **true**.
 
 On the following image, pivot grid cells display indexes that show the order in which the **calculateSummaryValue** function is called. This order stays the same even if the layout is changed, for example, if rows or columns are [sorted differently](/concepts/05%20UI%20Components/PivotGrid/060%20Sorting/10%20Sorting.md '/Documentation/Guide/UI_Components/PivotGrid/Sorting/') or the total columns are [relocated](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/showTotalsPrior.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#showTotalsPrior').
 

@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether or not an end-user can delete appointments.
+Specifies whether or not an end user can delete appointments.
 
 ---
 #include common-demobutton with {

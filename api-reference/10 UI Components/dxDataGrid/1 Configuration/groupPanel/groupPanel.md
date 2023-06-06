@@ -26,4 +26,4 @@ In case you need to show the group panel, but make it irresponsive, assign **fal
 #####See Also#####
 - [Grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/')
 - **grouping**.[contextMenuEnabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#contextMenuEnabled') - enables the user to group data using the context menu.
-- **columns[]**.[allowGrouping](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping') - disallows grouping for an individual column.
+- **columns[]**.[allowGrouping](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping') - disables group operations for an individual column.

@@ -24,6 +24,14 @@ If you change the date value, the new value is saved in the same format as the i
 
 #include drb-startdate-enddate-code
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateRangeBox/Formatting/"        
+}
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-devextreme-daterangebox"
+}
+
 #####See Also#####
 - [startDate](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/startDate.md '{basewidgetpath}/Configuration/#startDate')
 - [value](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value')

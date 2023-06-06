@@ -1,4 +1,4 @@
-In the following code, the FilterBuilder allows to filter by three fields, two of which are hierarchical. The [allowHierarchicalFields](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/allowHierarchicalFields.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#allowHierarchicalFields') property set to **true** specifies displaying hierarchical fields as a tree.
+In the following code, the FilterBuilder can filter data by three fields, two of which are hierarchical. The [allowHierarchicalFields](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/allowHierarchicalFields.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/#allowHierarchicalFields') property is **true** to display hierarchical fields as a tree.
 
 ---
 #####jQuery

@@ -1,4 +1,4 @@
-The search panel allows to search for values in several columns at once. Search is case-insensitive.
+The search panel allows users to search for values in several columns at once. Search is case-insensitive.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList SearchPanel](/images/treelist/visual_elements/search_panel.png)
 

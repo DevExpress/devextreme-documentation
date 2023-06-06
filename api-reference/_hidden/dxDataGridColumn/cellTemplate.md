@@ -48,7 +48,7 @@ The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.
 The cell's raw value.
 
 ##### field(cellInfo.watch): function()
-Allows to track a variable and performing actions when it changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.       
+Allows you to track a variable and respond to value changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.       
 This function has the following parameters:     
 
 - **getter(data)**: <font size="-1">Function</font>        

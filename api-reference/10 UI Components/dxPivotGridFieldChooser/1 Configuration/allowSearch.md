@@ -5,6 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the field chooser allows to search in the *"All Fields"* section.
+Specifies whether the field chooser allows search operations in the *"All Fields"* section.
 
 ---

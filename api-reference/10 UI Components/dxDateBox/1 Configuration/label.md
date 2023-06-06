@@ -5,9 +5,9 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies a text string used to annotate the editor's [value]({currentpath}/#value).
+Specifies a text string used to annotate the editor's [value](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#value).
 
 ---
 #####See Also#####
-- [labelMode]({currentpath}/#labelMode)
-- [placeholder]({currentpath}/#placeholder)
+- [labelMode](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#labelMode)
+- [placeholder](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#placeholder)

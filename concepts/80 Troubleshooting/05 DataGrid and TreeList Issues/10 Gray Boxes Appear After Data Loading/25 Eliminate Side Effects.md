@@ -11,7 +11,17 @@ Call the DataSource.[pageIndex(newIndex)](/Documentation/ApiReference/Data_Layer
 
 ##### Angular
 
-- Conditional rendering does not reload data. If you use conditional rendering to display DataGrid or TreeList, the component's scrollable container resets its scroll position while hiding the component and does not restore it while showing the component. After the component has been hidden and shown, the scroll position is reset to the first DataSource page. Once the data of the first page is not loaded, the gray boxes are displayed. Save the scroll position on hiding the component and restore it on showing so that the component displays the loaded page.
+- If you use conditional rendering to display DataGrid or TreeList, and virtual scrolling is enabled, the following happens:
+
+    - **on hide**    
+    The scroll position is discarded.
+
+    - **on show**    
+    The scroll position is set to the first page.
+
+    If DataGrid or TreeList was opened, for example, on the page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because data source is loaded for the page 5 only.
+
+    In such cases, save the scroll position on hide and restore it on show:
 
         <!-- tab: app.component.ts -->
         export class AppComponent {
@@ -28,7 +38,17 @@ Call the DataSource.[pageIndex(newIndex)](/Documentation/ApiReference/Data_Layer
 
 ##### Vue
 
-- Conditional rendering does not reload data. If you use conditional rendering to display DataGrid or TreeList, the component's scrollable container resets its scroll position while hiding the component and does not restore it while showing the component. After the component has been hidden and shown, the scroll position is reset to the first DataSource page. Once the data of the first page is not loaded, the gray boxes are displayed. Save the scroll position on hiding the component and restore it on showing so that the component displays the loaded page.
+- If you use conditional rendering to display DataGrid or TreeList, and virtual scrolling is enabled, the following happens:
+
+    - **on hide**    
+    The scroll position is discarded.
+
+    - **on show**    
+    The scroll position is set to the first page.
+
+    If DataGrid or TreeList was opened, for example, on the page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because data source is loaded for the page 5 only.
+
+    In such cases, save the scroll position on hide and restore it on show:
 
         <!-- tab: App.vue -->
         <script>
@@ -52,7 +72,17 @@ Call the DataSource.[pageIndex(newIndex)](/Documentation/ApiReference/Data_Layer
 
 - In certain cases, row placeholders appear due to redundant re-rendering. To learn more about such issues, refer to the following guide: [Optimize Performance](/Documentation/Guide/React_Components/Optimize_Performance).
 
-- Conditional rendering does not reload data. If you use conditional rendering to display DataGrid or TreeList, the component's scrollable container resets its scroll position while hiding the component and does not restore it while showing the component. After the component has been hidden and shown, the scroll position is reset to the first DataSource page. Once the data of the first page is not loaded, the gray boxes are displayed. Save the scroll position on hiding the component and restore it on showing so that the component displays the loaded page.
+- If you use conditional rendering to display DataGrid or TreeList, and virtual scrolling is enabled, the following happens:
+
+    - **on hide**    
+    The scroll position is discarded.
+
+    - **on show**    
+    The scroll position is set to the first page.
+
+    If DataGrid or TreeList was opened, for example, on the page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because data source is loaded for the page 5 only.
+
+    In such cases, save the scroll position on hide and restore it on show:
 
         <!-- tab: App.js -->
         onContentVisibilityChange(visible) {

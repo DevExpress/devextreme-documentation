@@ -1,7 +1,7 @@
 ---
 id: dxDateRangeBox.Options.disableOutOfRangeSelection
 type: Boolean
-default: true
+default: false
 ---
 ---
 ##### shortDescription

@@ -46,7 +46,7 @@ Call the DataSource.[pageIndex(newIndex)](/Documentation/ApiReference/Data_Layer
     - **on show**    
     The scroll position is set to the first page.
 
-    If DataGrid or TreeList was opened, for example, on the page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because the data source is loaded for the page 5 only.
+    If DataGrid or TreeList was opened, for example, on page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because the data source is loaded for page 5 only.
 
     In such cases, save the scroll position on hide and restore it on show:
 
@@ -80,7 +80,7 @@ Call the DataSource.[pageIndex(newIndex)](/Documentation/ApiReference/Data_Layer
     - **on show**    
     The scroll position is set to the first page.
 
-    If DataGrid or TreeList was opened, for example, on the page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because the data source is loaded for the page 5 only.
+    If DataGrid or TreeList was opened, for example, on page 5 before it was hidden, the gray boxes are displayed after the component is shown for the second time. This happens because the data source is loaded for page 5 only.
 
     In such cases, save the scroll position on hide and restore it on show:
 

@@ -7,3 +7,7 @@ In drag and drop mode, a user moves column headers to and from the column choose
 }
 
 [note] When the mode is *"select"*, the column chooser does not hide column headers from the [group panel](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/10%20User%20Interaction/10%20Group%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction/Group_Data') (does not ungroup data).
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnChooser/"        
+}

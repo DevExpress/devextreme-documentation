@@ -161,5 +161,6 @@ The following example adds a gradient to all series in a PieChart:
 
 ---
 
-
-
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"        
+}

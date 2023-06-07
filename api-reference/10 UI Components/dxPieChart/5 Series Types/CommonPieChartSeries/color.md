@@ -127,3 +127,7 @@ You can also specify a custom pattern or gradient instead of a plain color:
     } 
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"        
+}

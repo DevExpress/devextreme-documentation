@@ -156,3 +156,6 @@ You can specify the [my](/api-reference/50%20Common/Object%20Structures/position
 
 ---
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnChooser/"        
+}

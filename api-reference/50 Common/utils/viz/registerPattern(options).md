@@ -189,3 +189,7 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
 ---
 
 [note] For the component export to work correctly, the size of a pattern template must be specified in pixels or a CSS-specified measure of size (excluding percent).
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/"        
+}

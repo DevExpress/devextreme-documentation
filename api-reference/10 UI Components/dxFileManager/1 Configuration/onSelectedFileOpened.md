@@ -7,8 +7,20 @@ default: null
 ##### shortDescription
 A function that is executed when the selected file is opened.
 
-##### param(e): SelectedFileOpenedEvent
+##### param(e): Object
 Information about the event that caused the function's execution.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.file): FileSystemItem
+The opened file.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
 
 ---
 ---

@@ -7,8 +7,29 @@ default: null
 ##### shortDescription
 A function that is executed before the multi-tag is rendered.
 
-##### param(e): MultiTagPreparingEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.cancel): Boolean
+Allows you to cancel replacing ordinary tags with the multi-tag.
+
+##### field(e.component): dxTagBox
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.model): any
+Model data. Available only when using Knockout.
+
+##### field(e.multiTagElement): DxElement
+#include common-ref-elementparam with { element: "multi-tag" }
+
+##### field(e.selectedItems): Array<String, Number, Object>
+The currently selected items.
+
+##### field(e.text): String
+Allows you to change the multi-tag's text.
 
 ---
 #include btn-open-demo with {

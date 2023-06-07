@@ -7,8 +7,38 @@ default: null
 ##### shortDescription
 A function that is executed before the context menu is rendered.
 
-##### param(e): ContextMenuPreparingEvent
+##### param(e): Object
 Information about the event that caused the function's execution.
+
+##### field(e.column): dxDataGridColumn
+This column's [configuration](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').
+
+##### field(e.columnIndex): Number
+The index of the column on which the context menu is invoked. For details on indexes, see the following help topic: [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/').
+
+##### field(e.component): dxDataGrid
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.items): Array<Object>
+Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.row): dxDataGridRowObject
+The row [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/').
+
+##### field(e.rowIndex): Number
+The index of the row on which the context menu is invoked. Refer to the following help topic for more information: [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/').
+
+##### field(e.target): String
+The name of the element on which the context menu is invoked: *"headerPanel"*, *"header"*, *"content"*, or *"footer"*. This field is read-only.
+
+##### field(e.targetElement): DxElement
+#include common-ref-elementparam with { element: "grid element" }
 
 ---
 In the following code, the **onContextMenuPreparing** function adds a custom item to the context menu invoked when a user right-clicks any column header:

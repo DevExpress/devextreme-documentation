@@ -7,8 +7,29 @@ default: null
 ##### shortDescription
 A function that is executed before data is exported.
 
-##### param(e): ExportingEvent
+##### param(e): Object
 Information about the event that caused the function execution.
+
+##### field(e.cancel): Boolean
+Deprecated.
+
+##### field(e.component): dxDataGrid
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.fileName): String
+Deprecated.
+
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
+##### field(e.format): Enums.DataGridExportFormat | String
+Specifies the availability and captions of data export buttons.
+
+##### field(e.selectedRowsOnly): Boolean
+Specifies whether to export only selected data.
 
 ---
 You can use this function to adjust column properties before export. In the following code, the **column**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property's value is changed to export the hidden `ID` column to an Excel file.  

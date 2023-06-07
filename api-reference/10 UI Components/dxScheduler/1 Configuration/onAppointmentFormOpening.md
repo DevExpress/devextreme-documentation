@@ -7,8 +7,29 @@ default: null
 ##### shortDescription
 A function that is executed before an appointment details form appears. Use this function to customize the form.
 
-##### param(e): AppointmentFormOpeningEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.appointmentData): dxSchedulerAppointment
+The data of the appointment for which a form is opened.
+
+##### field(e.cancel): Boolean
+If **true**, prevents the user from opening the appointment details form.
+
+##### field(e.component): dxScheduler
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.form): dxForm
+The form's instance; created only once - when the function is executed for the first time.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.popup): dxPopup
+The instance of the popup that contains the form.
 
 ---
 The Scheduler displays the appointment details form inside a popup. The elements inside the form are the [Form](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/') and [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_popup/') UI components. Use the **onAppointmentFormOpening** function's **form** and **popup** fields and the [Form](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') and [Popup API](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') to access and customize the corresponding UI component.

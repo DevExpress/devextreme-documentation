@@ -7,8 +7,26 @@ default: null
 ##### shortDescription
 A function that is executed when an error occurs.
 
-##### param(e): ErrorOccurredEvent
+##### param(e): Object
 Information about the event that caused the function's execution.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.errorCode): Number
+#include filemanager-error-codes
+
+##### field(e.errorText): String
+Allows you to specify the error message.
+
+##### field(e.fileSystemItem): FileSystemItem
+The processed file or directory.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
 
 ---
 

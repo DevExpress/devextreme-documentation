@@ -7,8 +7,23 @@ default: null
 ##### shortDescription
 A function that is executed when a directory is created.
 
-##### param(e): DirectoryCreatedEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "component" }
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.name): String
+The name of the created directory.
+
+##### field(e.parentDirectory): FileSystemItem
+The parent directory.
 
 ---
 

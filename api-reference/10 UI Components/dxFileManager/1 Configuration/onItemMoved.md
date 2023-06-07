@@ -7,8 +7,29 @@ default: null
 ##### shortDescription
 A function that is executed when a file or directory is moved.
 
-##### param(e): ItemMovedEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "component" }
+
+##### field(e.itemName): String
+The name of the moved file or directory.
+
+##### field(e.itemPath): String
+The path to the moved file or directory.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.parentDirectory): FileSystemItem
+The parent directory.
+
+##### field(e.sourceItem): FileSystemItem
+The moved file or directory.
 
 ---
 

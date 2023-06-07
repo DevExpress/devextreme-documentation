@@ -7,8 +7,29 @@ default: null
 ##### shortDescription
 A function that is executed when a file or directory is copied.
 
-##### param(e): ItemCopiedEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "component" }
+
+##### field(e.itemName): String
+The name of the copied file or directory.
+
+##### field(e.itemPath): String
+The path to the copied file or directory.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.parentDirectory): FileSystemItem
+The parent directory.
+
+##### field(e.sourceItem): FileSystemItem
+The copied file or directory.
 
 ---
 

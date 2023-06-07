@@ -7,8 +7,26 @@ default: null
 ##### shortDescription
 A function that is executed when an appointment is rendered.
 
-##### param(e): AppointmentRenderedEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.appointmentData): dxSchedulerAppointment
+The initial appointment's data.
+
+##### field(e.appointmentElement): DxElement
+#include common-ref-elementparam with { element: "appointment" }
+
+##### field(e.component): dxScheduler
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
+##### field(e.targetedAppointmentData): dxSchedulerAppointment | undefined
+<!-- %field(model.targetedAppointmentData)% -->
 
 ---
 

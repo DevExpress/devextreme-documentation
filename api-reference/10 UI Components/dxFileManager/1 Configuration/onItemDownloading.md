@@ -7,29 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed before a file is downloaded.
 
-##### param(e): Object
+##### param(e): ItemDownloadingEvent
 Information about the event.
-
-##### field(e.cancel): Boolean | Promise<void>
-Allows you to cancel the file download.
-
-##### field(e.component): dxFileManager
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "component" }
-
-##### field(e.errorCode): Number
-#include filemanager-error-codes
-
-##### field(e.errorText): String
-Allows you to specify the error message.
-
-##### field(e.item): FileSystemItem
-The file to be downloaded.
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
 
 ---
 

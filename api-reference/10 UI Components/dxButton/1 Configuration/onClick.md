@@ -7,23 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when the Button is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ClickEvent
 Information about the event.
-
-##### field(e.component): dxButton
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.event): event
-#include common-ref-eventparam
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.validationGroup): Object
-The validation group to which the button is related.
 
 ---
 To validate the editors that are related to the [validation group](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#validationGroup') specified for this button, use the **validationGroup** field of the object passed as the event handler's parameter. The **validationGroup** object has the following structure.

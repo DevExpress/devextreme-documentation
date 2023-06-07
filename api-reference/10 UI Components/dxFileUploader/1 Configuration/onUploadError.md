@@ -7,32 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when an error occurs during the file upload.
 
-##### param(e): Object
+##### param(e): UploadErrorEvent
 Information about the event.
-
-##### field(e.component): dxFileUploader
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.error): any
-The error that occurred.
-
-##### field(e.event): event
-#include common-ref-eventparam
-
-##### field(e.file): File
-The uploaded file.
-
-##### field(e.message): String
-The message displayed by the UI component on uploading failure.
-
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
-##### field(e.request): XMLHttpRequest
-Specifies an XMLHttpRequest for the file.
 
 ---
 The following code shows how you can handle a network error.

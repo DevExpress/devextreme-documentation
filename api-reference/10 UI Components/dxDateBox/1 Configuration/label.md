@@ -5,9 +5,9 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies a text string used to annotate the editor's [value](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#value).
+Specifies a text string used to annotate the editor's [value](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#value').
 
 ---
 #####See Also#####
-- [labelMode](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#labelMode)
-- [placeholder](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#placeholder)
+- [labelMode](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/labelMode.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#labelMode')
+- [placeholder](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/placeholder.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#placeholder')

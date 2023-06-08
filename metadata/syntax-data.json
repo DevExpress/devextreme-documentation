@@ -3162,6 +3162,16 @@
       "react": "_ui_scroll_view_ReachBottomEvent",
       "vue": "Dx_ui_scroll_view_ReachBottomEvent"
     },
+    "_ui_scroll_view_ScrollEvent": {
+      "angular": "dxo-ui-scroll-view--scroll-event",
+      "react": "_ui_scroll_view_ScrollEvent",
+      "vue": "Dx_ui_scroll_view_ScrollEvent"
+    },
+    "_ui_scroll_view_UpdatedEvent": {
+      "angular": "dxo-ui-scroll-view--updated-event",
+      "react": "_ui_scroll_view_UpdatedEvent",
+      "vue": "Dx_ui_scroll_view_UpdatedEvent"
+    },
     "_ui_select_box_ChangeEvent": {
       "angular": "dxo-ui-select-box--change-event",
       "react": "_ui_select_box_ChangeEvent",
@@ -20643,6 +20653,26 @@
     },
     "scaleBreak.startValue": {
       "vue": "start-value"
+    },
+    "scrollEventInfo": {
+      "angular": "dxo-scroll-event-info",
+      "react": "ScrollEventInfo",
+      "vue": "DxScrollEventInfo"
+    },
+    "scrollEventInfo.reachedBottom": {
+      "vue": "reached-bottom"
+    },
+    "scrollEventInfo.reachedLeft": {
+      "vue": "reached-left"
+    },
+    "scrollEventInfo.reachedRight": {
+      "vue": "reached-right"
+    },
+    "scrollEventInfo.reachedTop": {
+      "vue": "reached-top"
+    },
+    "scrollEventInfo.scrollOffset": {
+      "vue": "scroll-offset"
     },
     "scrollInfo.reachedBottom": {
       "vue": "reached-bottom"

@@ -379,3 +379,11 @@ This step's implementation depends on the embedded UI component's API and the li
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownBox/MultipleSelection/",
     name: "Multiple Selection"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-display-tags-in-input-field"
+}
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget"
+}

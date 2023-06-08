@@ -244,3 +244,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     name: "Header and Footer",
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSHeaderAndFooter/"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-copy-data-to-excel"
+}

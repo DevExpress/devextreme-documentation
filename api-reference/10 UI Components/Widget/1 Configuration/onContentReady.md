@@ -20,3 +20,7 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-fix-column-headers-related-to-page-scroll"
+}

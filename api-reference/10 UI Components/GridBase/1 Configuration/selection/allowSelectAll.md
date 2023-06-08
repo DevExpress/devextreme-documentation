@@ -19,3 +19,7 @@ If **false**, this property disables the Select All functionality. In this case,
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/",
     name: "TreeList"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-select-all-checkboxes"
+}

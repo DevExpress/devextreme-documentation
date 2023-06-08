@@ -56,3 +56,7 @@ The cell's [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '/Docum
 The cell's raw value.
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-batch-editing-select-multiple-cells"
+}

@@ -198,3 +198,7 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
     export default App;
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-context-menu-for-crud-operations"
+}

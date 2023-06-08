@@ -226,6 +226,10 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
 ---
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-display-tooltip-for-data-cells"
+}
+
 #####See Also#####
 - [Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells/2%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_Cell_Appearance')
 

@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed before a file with exported UI component is saved to the user's local storage.
 
-##### param(e): Object
+##### param(e): viz/core/base_widget:FileSavingEventInfo
 Information about the event.
 
 ##### field(e.cancel): Boolean

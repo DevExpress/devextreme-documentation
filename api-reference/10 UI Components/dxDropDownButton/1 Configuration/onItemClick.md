@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a drop-down menu item is clicked.
 
-##### param(e): Object
+##### param(e): ui/drop_down_button:ItemClickEvent
 Information about the event that caused the function to execute.
 
-##### field(e.component): dxDropDownButton
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

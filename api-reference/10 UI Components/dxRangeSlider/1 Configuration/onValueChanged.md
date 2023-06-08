@@ -4,10 +4,10 @@ type: function(e)
 default: null
 ---
 ---
-##### param(e): Object
+##### param(e): ui/range_slider:ValueChangedEvent
 Information about the event.
 
-##### field(e.component): dxRangeSlider
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -25,7 +25,7 @@ The left edge of the currently selected range.
 ##### field(e.value): Array<Number>
 The start and end values.
 
-##### field(e.event): DxEvent
+##### field(e.event): event
 #include common-ref-eventparam
 
 ##### field(e.previousValue): any

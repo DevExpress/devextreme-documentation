@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after the loaded nodes are initialized.
 
-##### param(e): Object
+##### param(e): ui/tree_list:NodesInitializedEvent
 Information about the event that caused the function's execution.
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

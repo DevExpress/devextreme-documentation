@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a resource is deleted.
 
-##### param(e): Object
+##### param(e): ui/gantt:ResourceDeletingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the resource deletion.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

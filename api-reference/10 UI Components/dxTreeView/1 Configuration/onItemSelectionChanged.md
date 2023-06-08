@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a single TreeView item is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): ui/tree_view:ItemSelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxTreeView
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when a file segment is uploaded.
 
-##### param(e): Object
+##### param(e): ui/file_uploader:ProgressEvent
 Information about the event.
 
 ##### field(e.bytesLoaded): Number
@@ -16,7 +16,7 @@ The total count of the uploaded bytes.
 ##### field(e.bytesTotal): Number
 The total count of bytes in the XMLHttpRequest.
 
-##### field(e.component): dxFileUploader
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

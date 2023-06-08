@@ -7,14 +7,14 @@ default: null
 ##### shortDescription
 A function that is executed before an editor is created.
 
-##### param(e): Object
+##### param(e): ui/filter_builder:EditorPreparingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the creation of the editor.    
 Set it to **true** and implement a custom editor.
 
-##### field(e.component): dxFilterBuilder
+##### field(e.component): {WidgetName}
 The UI component's [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Methods/#instance').
 
 ##### field(e.dataField): String
@@ -48,9 +48,6 @@ Indicates whether the editor is read-only.
 ##### field(e.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.
 
-##### field(e.setValue(newValue)): any
-A method you should call to change the field's value after the editor's value changes.
-
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between when a user stops typing the field value and when the change is applied.
 
@@ -59,6 +56,9 @@ Gets and sets the delay between when a user stops typing the field value and whe
 
 ##### field(e.width): Number
 The editor's width.
+
+##### field(e.setValue): any
+<!-- Description goes here -->
 
 ---
 The FilterBuilder offers users different editors used to enter a value depending on the field's [dataType](/api-reference/_hidden/dxFilterBuilderField/dataType.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType'): [Calendar](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/'), [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/'), and so on. Use this function to customize those default editors or substitute them for other editors. 

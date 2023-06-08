@@ -1,0 +1,13 @@
+---
+module: ui/scroll_view
+export: ReachBottomEvent
+type: Object
+inherits: EventInfo
+uid: ui/scroll_view:ReachBottomEvent
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

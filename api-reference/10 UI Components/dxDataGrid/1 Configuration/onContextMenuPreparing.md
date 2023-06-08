@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed before the context menu is rendered.
 
-##### param(e): Object
+##### param(e): ui/data_grid:ContextMenuPreparingEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.column): dxDataGridColumn
@@ -16,7 +16,7 @@ This column's [configuration](/api-reference/10%20UI%20Components/dxDataGrid/1%2
 ##### field(e.columnIndex): Number
 The index of the column on which the context menu is invoked. For details on indexes, see the following help topic: [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/').
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

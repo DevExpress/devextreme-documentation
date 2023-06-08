@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is called when drag gesture is initialized.
 
-##### param(e): Object
+##### param(e): ui/sortable:DragStartEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the gesture.
 
-##### field(e.component): dxSortable
+##### field(e.component): {WidgetName}
 The UI component that raised the event.
 
 ##### field(e.element): DxElement

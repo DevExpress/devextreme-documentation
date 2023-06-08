@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a [series](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') is clicked or tapped.
 
-##### param(e): Object
+##### param(e): viz/chart:SeriesClickEvent
 Information about the event.
 
-##### field(e.component): dxChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

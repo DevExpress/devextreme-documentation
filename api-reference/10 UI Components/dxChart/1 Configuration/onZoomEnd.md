@@ -8,7 +8,7 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when zooming or panning ends.
 
-##### param(e): Object
+##### param(e): viz/chart:ZoomEndEvent
 Information about the event.
 
 ##### field(e.actionType): Enums.ZoomPanAction
@@ -20,7 +20,7 @@ The zoomed/panned axis.
 ##### field(e.cancel): Boolean
 Allows you to cancel zooming or panning.
 
-##### field(e.component): dxChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -38,14 +38,8 @@ The visual range when zooming or panning starts.
 ##### field(e.range): VisualRange
 The [visual range](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') when zooming or panning ends.
 
-##### field(e.rangeEnd).deprecated
-Use 'range' instead.
-
 ##### field(e.rangeEnd): Date | Number
 The argument axis' end value after zooming or panning. Deprecated in favor of the **range** field.
-
-##### field(e.rangeStart).deprecated
-Use 'range' instead.
 
 ##### field(e.rangeStart): Date | Number
 The argument axis' start value after zooming or panning. Deprecated in favor of the **range** field.

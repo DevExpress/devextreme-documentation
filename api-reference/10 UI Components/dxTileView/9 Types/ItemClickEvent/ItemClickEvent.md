@@ -1,0 +1,13 @@
+---
+module: ui/tile_view
+export: ItemClickEvent
+type: Object
+inherits: NativeEventInfo,ItemInfo
+uid: ui/tile_view:ItemClickEvent
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

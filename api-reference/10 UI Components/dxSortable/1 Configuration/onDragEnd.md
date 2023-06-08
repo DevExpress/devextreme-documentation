@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is called when the drag gesture is finished.
 
-##### param(e): Object
+##### param(e): ui/sortable:DragEndEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the gesture.
 
-##### field(e.component): dxSortable
+##### field(e.component): {WidgetName}
 The UI component that raised the event.
 
 ##### field(e.dropInsideItem): Boolean
@@ -25,7 +25,7 @@ Indicates if the dragged item is dropped inside another item.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.fromComponent): dxSortable | dxDraggable
+##### field(e.fromComponent): {WidgetName}
 The instance of the item's source UI component.
 
 ##### field(e.fromData): any
@@ -43,7 +43,7 @@ The dragged item's data. Note that you should specify the item data manually.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.toComponent): dxSortable | dxDraggable
+##### field(e.toComponent): {WidgetName}
 The instance of the item's target UI component.
 
 ##### field(e.toData): any

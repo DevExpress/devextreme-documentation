@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a sankey node is clicked or tapped.
 
-##### param(e): Object
+##### param(e): viz/sankey:NodeClickEvent
 Information about the event.
 
-##### field(e.component): dxSankey
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#value') is changed.
 
-##### param(e): Object
+##### param(e): ui/lookup:ValueChangedEvent
 Information about the event.
 
-##### field(e.component): dxLookup
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -22,10 +22,10 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.previousValue): Object
+##### field(e.previousValue): any
 The UI component's previous value.
 
-##### field(e.value): Object
+##### field(e.value): any
 The UI component's new value.
 
 ---

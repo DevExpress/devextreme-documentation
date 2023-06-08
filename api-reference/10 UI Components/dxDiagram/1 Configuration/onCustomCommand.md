@@ -6,7 +6,7 @@ type: function(e)
 ##### shortDescription
 A function that is executed after a custom command item was clicked and allows you to implement the custom command's logic.
 
-##### param(e): Object
+##### param(e): ui/diagram:CustomCommandEvent
 Information about the event.
 
 ##### field(e.component): {WidgetName}

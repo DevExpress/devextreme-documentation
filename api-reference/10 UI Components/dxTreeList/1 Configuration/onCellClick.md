@@ -7,22 +7,22 @@ default: null
 ##### shortDescription
 A function that is executed when a cell is clicked or tapped. Executed before [onRowClick](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowClick.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowClick').
 
-##### param(e): Object
+##### param(e): ui/tree_list:CellClickEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "cell" }
 
-##### field(e.column): Object
+##### field(e.column): dxTreeListColumn
 This column's [configuration](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/').
 
 ##### field(e.columnIndex): Number
 The index of the column to which the cell belongs.
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.data): Object
+##### field(e.data): any
 The data of the row to which the cell belongs. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
 ##### field(e.displayValue): any

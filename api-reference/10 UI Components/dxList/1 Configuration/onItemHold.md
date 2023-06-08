@@ -4,10 +4,10 @@ type: function(e)
 default: null
 ---
 ---
-##### param(e): Object
+##### param(e): ui/list:ItemHoldEvent
 Information about the event.
 
-##### field(e.component): dxList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -16,7 +16,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.itemData): Object
+##### field(e.itemData): any
 The data object of the item being held.
 
 ##### field(e.itemElement): DxElement

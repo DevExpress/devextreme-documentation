@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before the multi-tag is rendered.
 
-##### param(e): Object
+##### param(e): ui/tag_box:MultiTagPreparingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel replacing ordinary tags with the multi-tag.
 
-##### field(e.component): dxTagBox
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

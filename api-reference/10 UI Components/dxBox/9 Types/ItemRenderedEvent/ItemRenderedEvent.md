@@ -1,0 +1,13 @@
+---
+module: ui/box
+export: ItemRenderedEvent
+type: Object
+inherits: EventInfo,ItemInfo
+uid: ui/box:ItemRenderedEvent
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

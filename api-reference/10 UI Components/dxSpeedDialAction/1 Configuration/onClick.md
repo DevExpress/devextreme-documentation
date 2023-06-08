@@ -6,7 +6,7 @@ type: function(e)
 ##### shortDescription
 A function that is executed when the FAB or speed dial action button is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/speed_dial_action:ClickEvent
 Information about the event that caused the function execution.
 
 ##### field(e.actionElement): DxElement

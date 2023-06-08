@@ -4,10 +4,10 @@ type: function(e)
 default: null
 ---
 ---
-##### param(e): Object
+##### param(e): ui/tree_view:ItemClickEvent
 Information about the event.
 
-##### field(e.component): dxTreeView
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

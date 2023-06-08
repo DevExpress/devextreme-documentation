@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when an accordion item's title is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/accordion:ItemTitleClickEvent
 Information about the event.
 
-##### field(e.component): dxAccordion
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

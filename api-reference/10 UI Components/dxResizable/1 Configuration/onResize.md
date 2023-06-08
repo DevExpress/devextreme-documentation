@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed each time the UI component is resized by one pixel.
 
-##### param(e): Object
+##### param(e): ui/resizable:ResizeEvent
 Information about the event.
 
-##### field(e.component): dxResizable
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

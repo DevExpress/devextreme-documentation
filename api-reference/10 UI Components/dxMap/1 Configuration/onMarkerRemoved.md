@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a marker is removed from the map.
 
-##### param(e): Object
+##### param(e): ui/map:MarkerRemovedEvent
 Information about the event.
 
-##### field(e.component): dxMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

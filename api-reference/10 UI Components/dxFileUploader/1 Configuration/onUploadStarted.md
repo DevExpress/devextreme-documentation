@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the file upload is started.
 
-##### param(e): Object
+##### param(e): ui/file_uploader:UploadStartedEvent
 Information about the event.
 
-##### field(e.component): dxFileUploader
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

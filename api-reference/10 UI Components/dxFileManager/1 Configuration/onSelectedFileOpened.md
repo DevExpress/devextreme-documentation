@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the selected file is opened.
 
-##### param(e): Object
+##### param(e): ui/file_manager:SelectedFileOpenedEvent
 Information about the event that caused the function's execution.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

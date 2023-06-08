@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed before an appointment details form appears. Use this function to customize the form.
 
-##### param(e): Object
+##### param(e): ui/scheduler:AppointmentFormOpeningEvent
 Information about the event.
 
 ##### field(e.appointmentData): dxSchedulerAppointment
@@ -16,7 +16,7 @@ The data of the appointment for which a form is opened.
 ##### field(e.cancel): Boolean
 If **true**, prevents the user from opening the appointment details form.
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

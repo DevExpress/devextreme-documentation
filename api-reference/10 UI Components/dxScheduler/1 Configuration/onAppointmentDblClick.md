@@ -7,11 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when an appointment is double-clicked or double-tapped.
 
-##### param(e): Object
+##### param(e): ui/scheduler:AppointmentDblClickEvent
 Information about the event.
-
-##### field(e.appointmentData): dxSchedulerAppointment
-The initial appointment.
 
 ##### field(e.appointmentElement): DxElement
 #include common-ref-elementparam with { element: "clicked" }
@@ -19,7 +16,7 @@ The initial appointment.
 ##### field(e.cancel): Boolean
 If **true**, does not allow the user to open the appointment details form with double click.
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -30,9 +27,6 @@ The UI component's instance.
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
-
-##### field(e.targetedAppointmentData): dxSchedulerAppointment
-<!-- %field(model.targetedAppointmentData)% -->
 
 ---
 

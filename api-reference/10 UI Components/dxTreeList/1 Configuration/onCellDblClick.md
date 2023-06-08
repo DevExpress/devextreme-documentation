@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when a cell is double-clicked or double-tapped. Executed before [onRowDblClick](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onRowDblClick.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onRowDblClick').
 
-##### param(e): Object
+##### param(e): ui/tree_list:CellDblClickEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cellElement): DxElement
@@ -19,10 +19,10 @@ The column's configuration.
 ##### field(e.columnIndex): Number
 The index of the column the cell belongs to.
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.data): Object
+##### field(e.data): any
 The data of the row the cell belongs to. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
 ##### field(e.displayValue): any

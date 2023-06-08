@@ -7,23 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when a file is successfully uploaded.
 
-##### param(e): Object
+##### param(e): FileUploadedEvent
 Information about the event.
-
-##### field(e.component): dxFileManager
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "component" }
-
-##### field(e.fileData): File
-The uploaded file.
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.parentDirectory): FileSystemItem
-The parent directory.
 
 ---
 

@@ -7,32 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed before the edit dialog is shown.
 
-##### param(e): Object
+##### param(e): TaskEditDialogShowingEvent
 Information about the event.
-
-##### field(e.cancel): Boolean
-Allows you to cancel the edit dialog showing.
-
-##### field(e.component): dxGantt
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.hiddenFields): Array<String>
-An array of hidden fields.
-
-##### field(e.key): any
-The task key.
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.readOnlyFields): Array<String>
-An array of read-only fields.
-
-##### field(e.values): any
-The task values.
 
 ---
 

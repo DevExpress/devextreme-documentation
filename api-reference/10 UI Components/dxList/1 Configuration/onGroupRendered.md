@@ -7,26 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when a group element is rendered.
 
-##### param(e): Object
+##### param(e): GroupRenderedEvent
 Information about the event.
-
-##### field(e.component): dxList
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.groupData): Object
-The current group's data.
-
-##### field(e.groupElement): DxElement
-#include common-ref-elementparam with { element: "group" }
-
-##### field(e.groupIndex): Number
-The group's index.
-
-##### field(e.model): any
-Model data. Available only if Knockout is used.
 
 ---
 #####See Also#####

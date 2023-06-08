@@ -1,4 +1,4 @@
-Use the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#onItemClick') function to process clicks on tabs.
+Use the [onItemClick](/api-reference/10%20UI%20Components/dxTabs/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#onItemClick') function to process clicks on tabs.
 
 ---
 ##### jQuery

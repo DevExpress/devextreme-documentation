@@ -86,7 +86,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/ad
     
 ---
 
-You can specify initial values for a newly added row in the [onInitNewRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onInitNewRow.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onInitNewRow') event handler.
+You can specify initial values for a newly added row in the [onInitNewRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onInitNewRow.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onInitNewRow') event handler.
 
 ---
 ##### jQuery

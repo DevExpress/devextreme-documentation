@@ -1,8 +1,23 @@
+---
+type: function(e)
+---
+---
+##### param(e): ui/list:SelectionChangedEvent
+<!-- Description goes here -->
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/"
-}
+##### field(e.addedItems): Array<any>
+<!-- Description goes here -->
 
-<!-- %fullDescription% -->
+##### field(e.component): {WidgetName}
+<!-- Description goes here -->
 
-<!-- import * from 'api-reference\10 UI Components\CollectionWidget\1 Configuration\onSelectionChanged.md' -->
+##### field(e.element): DxElement
+<!-- Description goes here -->
+
+##### field(e.model): any
+<!-- Description goes here -->
+
+##### field(e.removedItems): Array<any>
+<!-- Description goes here -->
+
+---

@@ -1,12 +1,23 @@
 ---
-##### shortDescription
-A function that is executed when a collection item is expanded or collapsed.
-
+type: function(e)
+---
+---
 ##### field(e.addedItems): Array<any>
-The data of the items that have been expanded.
+<!-- Description goes here -->
+
+##### param(e): ui/accordion:SelectionChangedEvent
+<!-- Description goes here -->
+
+##### field(e.component): {WidgetName}
+<!-- Description goes here -->
+
+##### field(e.element): DxElement
+<!-- Description goes here -->
+
+##### field(e.model): any
+<!-- Description goes here -->
+
+##### field(e.removedItems): Array<any>
+<!-- Description goes here -->
 
 ---
-
-<!-- import * from 'api-reference\10 UI Components\CollectionWidget\1 Configuration\onSelectionChanged.md' -->
-
-[tags] expand

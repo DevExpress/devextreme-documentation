@@ -1,3 +1,23 @@
-<!-- %fullDescription% -->
+---
+type: function(e)
+---
+---
+##### param(e): ui/lookup:SelectionChangedEvent
+<!-- Description goes here -->
 
-<!-- import * from 'api-reference\10 UI Components\dxTagBox\1 Configuration\onSelectionChanged.md' -->
+##### field(e.addedItems): Array<any>
+<!-- Description goes here -->
+
+##### field(e.component): {WidgetName}
+<!-- Description goes here -->
+
+##### field(e.element): DxElement
+<!-- Description goes here -->
+
+##### field(e.model): any
+<!-- Description goes here -->
+
+##### field(e.removedItems): Array<any>
+<!-- Description goes here -->
+
+---

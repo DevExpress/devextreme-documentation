@@ -399,3 +399,6 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
 
 To invoke the default behavior, call the **this.defaultSetCellValue(newData, value)** function.
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-hide-show-edit-form-items-dynamically"
+}

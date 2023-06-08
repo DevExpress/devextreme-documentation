@@ -10,5 +10,9 @@ When a user clicks a row's *"Delete"* button, the UI component only marks the ro
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-batch-editing-select-multiple-cells"
+}
+
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation')

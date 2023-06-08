@@ -56,5 +56,9 @@ State storing saves the following properties:
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-modify-persisted-state"
+}
+
 #####See Also#####
 - [state()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/state().md '{basewidgetpath}/Methods/#state')

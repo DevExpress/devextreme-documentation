@@ -26,3 +26,7 @@ The [properties of the toolbar](/api-reference/10%20UI%20Components/dxToolbar/1%
 If you use DevExtreme ASP.NET components or JQuery in your application, specify this property to get the component's instance. In Angular, Vue, or React, use the [toolbar](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/') property instead.
 
 #include datagrid-ontoolbarpreparing-jquery
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-column-chooser"
+}

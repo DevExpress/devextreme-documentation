@@ -142,6 +142,10 @@ The following example adds a custom item to the component. Note that Angular and
 
 ---
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-tabpanel-customize-view-content"
+}
+
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
 

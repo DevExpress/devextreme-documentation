@@ -42,6 +42,10 @@ This function allows you to intercept row update and perform additional actions.
     vueAttribute: "row-updating"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-edit-data-using-datagrid"
+}
+
 [note]
 
 - You can use this function to change `e.newData` values, but do not use it to implement custom update logic. For this purpose, you can implement the [onSaving](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onSaving.md '{basewidgetpath}/Configuration/#onSaving') or [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/')'s [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update') function.

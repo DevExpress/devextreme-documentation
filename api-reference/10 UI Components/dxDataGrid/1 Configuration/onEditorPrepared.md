@@ -54,3 +54,7 @@ The editor's value.
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-update-multiple-cells"
+}

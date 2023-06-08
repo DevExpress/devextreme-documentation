@@ -201,6 +201,10 @@ You can call this method at any point in your application. In the example below,
     componentName: "DataGrid"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-copy-data-to-excel"
+}
+
 #####See Also#####
 - [export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/')
 

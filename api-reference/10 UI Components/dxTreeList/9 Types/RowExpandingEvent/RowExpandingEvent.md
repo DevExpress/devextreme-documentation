@@ -4,6 +4,7 @@ export: RowExpandingEvent
 type: Object
 inherits: Cancelable,EventInfo,RowKeyInfo
 uid: ui/tree_list:RowExpandingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

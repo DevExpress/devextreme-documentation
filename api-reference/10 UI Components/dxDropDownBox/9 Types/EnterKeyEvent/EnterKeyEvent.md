@@ -4,6 +4,7 @@ export: EnterKeyEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_box:EnterKeyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

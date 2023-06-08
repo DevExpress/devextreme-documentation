@@ -3,6 +3,7 @@ id: PointInteractionInfo
 module: viz/chart_components/base_chart
 export: PointInteractionInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

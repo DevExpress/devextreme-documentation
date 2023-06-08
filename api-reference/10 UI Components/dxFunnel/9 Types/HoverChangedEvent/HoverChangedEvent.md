@@ -4,6 +4,7 @@ export: HoverChangedEvent
 type: Object
 inherits: EventInfo,FunnelItemInfo
 uid: viz/funnel:HoverChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: RowExpandedEvent
 type: Object
 inherits: EventInfo,RowKeyInfo
 uid: ui/data_grid:RowExpandedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

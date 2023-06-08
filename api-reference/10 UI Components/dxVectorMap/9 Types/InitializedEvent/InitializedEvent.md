@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: viz/vector_map:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

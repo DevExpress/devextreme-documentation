@@ -4,6 +4,7 @@ export: PositioningEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/context_menu:PositioningEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

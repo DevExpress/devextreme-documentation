@@ -4,6 +4,7 @@ export: TaskInsertingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskInsertingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

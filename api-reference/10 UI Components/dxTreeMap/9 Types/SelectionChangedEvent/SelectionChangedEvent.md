@@ -4,6 +4,7 @@ export: SelectionChangedEvent
 type: Object
 inherits: EventInfo,InteractionInfo
 uid: viz/tree_map:SelectionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

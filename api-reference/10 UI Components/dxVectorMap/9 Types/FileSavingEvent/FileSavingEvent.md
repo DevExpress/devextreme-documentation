@@ -4,6 +4,7 @@ export: FileSavingEvent
 type: Object
 inherits: FileSavingEventInfo
 uid: viz/vector_map:FileSavingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

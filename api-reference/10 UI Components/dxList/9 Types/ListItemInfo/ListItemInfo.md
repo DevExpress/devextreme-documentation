@@ -3,6 +3,7 @@ id: ListItemInfo
 module: ui/list
 export: ListItemInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

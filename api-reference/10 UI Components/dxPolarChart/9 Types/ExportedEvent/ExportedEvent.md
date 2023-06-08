@@ -4,6 +4,7 @@ export: ExportedEvent
 type: Object
 inherits: EventInfo
 uid: viz/polar_chart:ExportedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

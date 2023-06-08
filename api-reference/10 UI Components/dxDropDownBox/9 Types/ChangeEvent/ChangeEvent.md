@@ -4,6 +4,7 @@ export: ChangeEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_box:ChangeEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

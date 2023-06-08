@@ -4,6 +4,7 @@ export: RowInsertingEvent
 type: Object
 inherits: EventInfo,RowInsertingInfo
 uid: ui/tree_list:RowInsertingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

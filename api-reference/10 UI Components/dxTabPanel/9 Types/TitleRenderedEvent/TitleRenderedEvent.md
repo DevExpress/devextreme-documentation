@@ -4,6 +4,7 @@ export: TitleRenderedEvent
 type: Object
 inherits: EventInfo,TabPanelItemInfo
 uid: ui/tab_panel:TitleRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ButtonClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_button:ButtonClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

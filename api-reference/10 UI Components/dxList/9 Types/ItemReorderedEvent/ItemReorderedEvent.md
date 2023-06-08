@@ -4,6 +4,7 @@ export: ItemReorderedEvent
 type: Object
 inherits: EventInfo,ListItemInfo
 uid: ui/list:ItemReorderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

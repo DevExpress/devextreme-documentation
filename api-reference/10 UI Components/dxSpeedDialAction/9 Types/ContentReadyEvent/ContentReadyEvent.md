@@ -4,6 +4,7 @@ export: ContentReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/speed_dial_action:ContentReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

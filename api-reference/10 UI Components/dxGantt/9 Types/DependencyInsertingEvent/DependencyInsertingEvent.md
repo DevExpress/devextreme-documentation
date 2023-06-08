@@ -4,6 +4,7 @@ export: DependencyInsertingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:DependencyInsertingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

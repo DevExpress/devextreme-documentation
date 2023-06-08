@@ -4,6 +4,7 @@ export: CellHoverChangedEvent
 type: Object
 inherits: EventInfo,CellInfo
 uid: ui/tree_list:CellHoverChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

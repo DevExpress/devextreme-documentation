@@ -4,6 +4,7 @@ export: DrawnEvent
 type: Object
 inherits: EventInfo
 uid: viz/bar_gauge:DrawnEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

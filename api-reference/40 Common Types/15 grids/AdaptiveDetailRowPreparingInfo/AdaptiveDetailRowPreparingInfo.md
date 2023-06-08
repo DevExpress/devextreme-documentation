@@ -4,6 +4,7 @@ module: common/grids
 export: AdaptiveDetailRowPreparingInfo
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

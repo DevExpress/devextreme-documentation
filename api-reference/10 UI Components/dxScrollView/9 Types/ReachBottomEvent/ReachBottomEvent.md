@@ -4,6 +4,7 @@ export: ReachBottomEvent
 type: Object
 inherits: EventInfo
 uid: ui/scroll_view:ReachBottomEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

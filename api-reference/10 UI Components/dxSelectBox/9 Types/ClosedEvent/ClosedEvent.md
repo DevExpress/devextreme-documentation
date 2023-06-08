@@ -4,6 +4,7 @@ export: ClosedEvent
 type: Object
 inherits: EventInfo
 uid: ui/select_box:ClosedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

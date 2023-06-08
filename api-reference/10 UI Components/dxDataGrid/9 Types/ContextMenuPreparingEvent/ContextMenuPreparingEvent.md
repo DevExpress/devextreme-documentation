@@ -4,6 +4,7 @@ export: ContextMenuPreparingEvent
 type: Object
 inherits: EventInfo
 uid: ui/data_grid:ContextMenuPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

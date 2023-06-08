@@ -4,6 +4,7 @@ export: RowCollapsingEvent
 type: Object
 inherits: Cancelable,EventInfo,RowKeyInfo
 uid: ui/tree_list:RowCollapsingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ItemSwipeEvent
 type: Object
 inherits: NativeEventInfo,ListItemInfo
 uid: ui/list:ItemSwipeEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

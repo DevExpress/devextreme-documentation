@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/scroll_view:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

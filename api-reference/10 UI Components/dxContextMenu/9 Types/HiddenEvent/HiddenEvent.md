@@ -4,6 +4,7 @@ export: HiddenEvent
 type: Object
 inherits: EventInfo
 uid: ui/context_menu:HiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

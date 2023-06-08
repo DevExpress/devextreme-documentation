@@ -4,6 +4,7 @@ export: TooltipShownEvent
 type: Object
 inherits: EventInfo,_viz_base_gauge_TooltipInfo
 uid: viz/circular_gauge:TooltipShownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: DataErrorOccurredEvent
 type: Object
 inherits: EventInfo,DataErrorOccurredInfo
 uid: ui/tree_list:DataErrorOccurredEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

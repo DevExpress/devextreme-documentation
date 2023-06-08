@@ -4,6 +4,7 @@ export: RowDblClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/tree_list:RowDblClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

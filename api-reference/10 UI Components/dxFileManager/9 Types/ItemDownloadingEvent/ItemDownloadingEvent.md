@@ -4,6 +4,7 @@ export: ItemDownloadingEvent
 type: Object
 inherits: EventInfo,ActionEventInfo
 uid: ui/file_manager:ItemDownloadingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

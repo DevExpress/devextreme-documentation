@@ -4,6 +4,7 @@ export: ExportedEvent
 type: Object
 inherits: EventInfo
 uid: viz/sankey:ExportedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

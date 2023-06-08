@@ -4,6 +4,7 @@ export: InputEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:InputEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

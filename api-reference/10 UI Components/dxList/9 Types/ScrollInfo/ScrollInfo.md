@@ -3,6 +3,7 @@ id: ScrollInfo
 module: ui/list
 export: ScrollInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

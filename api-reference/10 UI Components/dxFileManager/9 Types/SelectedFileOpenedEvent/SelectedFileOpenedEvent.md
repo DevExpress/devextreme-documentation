@@ -4,6 +4,7 @@ export: SelectedFileOpenedEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_manager:SelectedFileOpenedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

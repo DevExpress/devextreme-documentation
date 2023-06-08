@@ -4,6 +4,7 @@ export: RowClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/tree_list:RowClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: UploadErrorEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:UploadErrorEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

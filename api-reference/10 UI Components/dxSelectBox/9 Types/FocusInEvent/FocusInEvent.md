@@ -4,6 +4,7 @@ export: FocusInEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/select_box:FocusInEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

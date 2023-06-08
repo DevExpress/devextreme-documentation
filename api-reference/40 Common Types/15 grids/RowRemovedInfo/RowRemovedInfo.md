@@ -3,6 +3,7 @@ id: RowRemovedInfo
 module: common/grids
 export: RowRemovedInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

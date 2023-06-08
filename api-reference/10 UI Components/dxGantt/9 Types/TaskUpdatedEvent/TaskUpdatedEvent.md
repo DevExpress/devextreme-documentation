@@ -4,6 +4,7 @@ export: TaskUpdatedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:TaskUpdatedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

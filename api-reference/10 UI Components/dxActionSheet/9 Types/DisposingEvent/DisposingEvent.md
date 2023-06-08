@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/action_sheet:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

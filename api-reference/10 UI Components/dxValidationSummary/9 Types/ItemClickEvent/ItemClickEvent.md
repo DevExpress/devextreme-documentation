@@ -4,6 +4,7 @@ export: ItemClickEvent
 type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/validation_summary:ItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: RowUpdatingInfo
 module: common/grids
 export: RowUpdatingInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

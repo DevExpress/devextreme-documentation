@@ -4,6 +4,7 @@ export: ValueChangedEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:ValueChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

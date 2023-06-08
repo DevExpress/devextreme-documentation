@@ -4,6 +4,7 @@ export: KeyDownEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/date_range_box:KeyDownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

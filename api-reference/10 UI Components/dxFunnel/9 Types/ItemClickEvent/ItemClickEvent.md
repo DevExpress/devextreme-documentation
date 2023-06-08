@@ -4,6 +4,7 @@ export: ItemClickEvent
 type: Object
 inherits: NativeEventInfo,FunnelItemInfo
 uid: viz/funnel:ItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

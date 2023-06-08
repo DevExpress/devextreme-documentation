@@ -4,6 +4,7 @@ export: EditingStartEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/data_grid:EditingStartEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

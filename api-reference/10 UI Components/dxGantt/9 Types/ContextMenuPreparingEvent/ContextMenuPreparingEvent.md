@@ -4,6 +4,7 @@ export: ContextMenuPreparingEvent
 type: Object
 inherits: Cancelable
 uid: ui/gantt:ContextMenuPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

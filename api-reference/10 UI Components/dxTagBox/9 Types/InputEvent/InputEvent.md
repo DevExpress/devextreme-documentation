@@ -4,6 +4,7 @@ export: InputEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:InputEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: TitleClickEvent
 type: Object
 inherits: NativeEventInfo,TabPanelItemInfo
 uid: ui/tab_panel:TitleClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

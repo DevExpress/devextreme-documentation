@@ -3,6 +3,7 @@ id: TitleRenderedInfo
 module: ui/popup
 export: TitleRenderedInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

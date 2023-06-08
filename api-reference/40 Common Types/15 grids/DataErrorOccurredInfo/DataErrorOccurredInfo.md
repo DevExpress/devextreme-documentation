@@ -4,6 +4,7 @@ module: common/grids
 export: DataErrorOccurredInfo
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

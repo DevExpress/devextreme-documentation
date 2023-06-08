@@ -4,6 +4,7 @@ export: ValueChangedEvent
 type: Object
 inherits: NativeEventInfo
 uid: viz/range_selector:ValueChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

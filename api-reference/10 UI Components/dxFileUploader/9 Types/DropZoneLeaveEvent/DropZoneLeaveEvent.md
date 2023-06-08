@@ -4,6 +4,7 @@ export: DropZoneLeaveEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:DropZoneLeaveEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

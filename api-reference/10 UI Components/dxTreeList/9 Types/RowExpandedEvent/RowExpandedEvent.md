@@ -4,6 +4,7 @@ export: RowExpandedEvent
 type: Object
 inherits: EventInfo,RowKeyInfo
 uid: ui/tree_list:RowExpandedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

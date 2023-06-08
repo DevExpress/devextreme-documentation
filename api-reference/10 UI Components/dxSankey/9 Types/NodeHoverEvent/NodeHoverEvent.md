@@ -4,6 +4,7 @@ export: NodeHoverEvent
 type: Object
 inherits: EventInfo
 uid: viz/sankey:NodeHoverEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

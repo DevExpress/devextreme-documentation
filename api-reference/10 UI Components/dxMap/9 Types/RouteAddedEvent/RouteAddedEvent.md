@@ -4,6 +4,7 @@ export: RouteAddedEvent
 type: Object
 inherits: EventInfo
 uid: ui/map:RouteAddedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

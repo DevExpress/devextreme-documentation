@@ -4,6 +4,7 @@ export: ScaleCellPreparedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/gantt:ScaleCellPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

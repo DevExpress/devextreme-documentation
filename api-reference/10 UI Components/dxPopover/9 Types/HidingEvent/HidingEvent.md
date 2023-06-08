@@ -4,6 +4,7 @@ export: HidingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/popover:HidingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

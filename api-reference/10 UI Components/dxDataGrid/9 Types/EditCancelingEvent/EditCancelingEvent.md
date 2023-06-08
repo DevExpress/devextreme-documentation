@@ -4,6 +4,7 @@ export: EditCancelingEvent
 type: Object
 inherits: Cancelable,EventInfo,DataChangeInfo
 uid: ui/data_grid:EditCancelingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

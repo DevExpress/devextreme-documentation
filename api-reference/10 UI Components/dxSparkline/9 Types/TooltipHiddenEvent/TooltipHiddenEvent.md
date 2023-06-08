@@ -4,6 +4,7 @@ export: TooltipHiddenEvent
 type: Object
 inherits: EventInfo
 uid: viz/sparkline:TooltipHiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

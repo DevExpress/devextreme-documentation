@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/validation_summary:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

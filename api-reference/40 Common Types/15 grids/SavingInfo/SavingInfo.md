@@ -3,6 +3,7 @@ id: SavingInfo
 module: common/grids
 export: SavingInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

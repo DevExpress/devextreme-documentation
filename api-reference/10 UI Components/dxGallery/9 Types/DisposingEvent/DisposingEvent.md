@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/gallery:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

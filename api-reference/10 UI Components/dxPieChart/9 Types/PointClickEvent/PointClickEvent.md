@@ -4,6 +4,7 @@ export: PointClickEvent
 type: Object
 inherits: NativeEventInfo,PointInteractionInfo
 uid: viz/pie_chart:PointClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

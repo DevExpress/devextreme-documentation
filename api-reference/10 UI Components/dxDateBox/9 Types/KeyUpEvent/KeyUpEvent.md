@@ -4,6 +4,7 @@ export: KeyUpEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:KeyUpEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

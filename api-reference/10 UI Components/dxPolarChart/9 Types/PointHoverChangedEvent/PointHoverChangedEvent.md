@@ -4,6 +4,7 @@ export: PointHoverChangedEvent
 type: Object
 inherits: EventInfo,PointInteractionInfo
 uid: viz/polar_chart:PointHoverChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/resizable:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

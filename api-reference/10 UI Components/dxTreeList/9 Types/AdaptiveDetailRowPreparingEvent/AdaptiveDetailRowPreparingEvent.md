@@ -4,6 +4,7 @@ export: AdaptiveDetailRowPreparingEvent
 type: Object
 inherits: EventInfo,AdaptiveDetailRowPreparingInfo
 uid: ui/tree_list:AdaptiveDetailRowPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

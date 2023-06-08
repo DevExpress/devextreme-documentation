@@ -4,6 +4,7 @@ export: SelectAllValueChangedEvent
 type: Object
 inherits: EventInfo
 uid: ui/tree_view:SelectAllValueChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

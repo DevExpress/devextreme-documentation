@@ -4,6 +4,7 @@ export: AppointmentDeletingEvent
 type: Object
 inherits: EventInfo
 uid: ui/scheduler:AppointmentDeletingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

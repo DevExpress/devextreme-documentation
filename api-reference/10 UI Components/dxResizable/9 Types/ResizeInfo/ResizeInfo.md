@@ -3,6 +3,7 @@ id: ResizeInfo
 module: ui/resizable
 export: ResizeInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

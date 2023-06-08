@@ -4,6 +4,7 @@ export: InputEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:InputEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

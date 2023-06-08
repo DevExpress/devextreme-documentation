@@ -4,6 +4,7 @@ export: TooltipHiddenEvent
 type: Object
 inherits: EventInfo,_viz_chart_components_base_chart_TooltipInfo
 uid: viz/pie_chart:TooltipHiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: EnterKeyEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:EnterKeyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

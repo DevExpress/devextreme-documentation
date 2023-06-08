@@ -4,6 +4,7 @@ export: EnterKeyEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:EnterKeyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

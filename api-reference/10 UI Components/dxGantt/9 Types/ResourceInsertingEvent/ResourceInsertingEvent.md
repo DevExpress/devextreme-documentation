@@ -4,6 +4,7 @@ export: ResourceInsertingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:ResourceInsertingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ExportedEvent
 type: Object
 inherits: EventInfo
 uid: viz/pie_chart:ExportedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

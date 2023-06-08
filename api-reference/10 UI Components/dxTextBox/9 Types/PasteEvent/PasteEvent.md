@@ -4,6 +4,7 @@ export: PasteEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:PasteEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

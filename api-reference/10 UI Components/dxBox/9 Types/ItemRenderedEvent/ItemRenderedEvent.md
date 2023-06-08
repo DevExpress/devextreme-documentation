@@ -4,6 +4,7 @@ export: ItemRenderedEvent
 type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/box:ItemRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

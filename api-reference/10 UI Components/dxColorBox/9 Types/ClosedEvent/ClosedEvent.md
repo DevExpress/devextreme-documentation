@@ -4,6 +4,7 @@ export: ClosedEvent
 type: Object
 inherits: EventInfo
 uid: ui/color_box:ClosedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

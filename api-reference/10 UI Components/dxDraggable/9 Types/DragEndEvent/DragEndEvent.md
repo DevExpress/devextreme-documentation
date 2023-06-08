@@ -4,6 +4,7 @@ export: DragEndEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/draggable:DragEndEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

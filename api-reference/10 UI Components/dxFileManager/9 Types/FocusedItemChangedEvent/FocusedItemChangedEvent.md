@@ -4,6 +4,7 @@ export: FocusedItemChangedEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_manager:FocusedItemChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

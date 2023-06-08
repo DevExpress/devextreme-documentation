@@ -4,6 +4,7 @@ export: TitleHoldEvent
 type: Object
 inherits: NativeEventInfo,TabPanelItemInfo
 uid: ui/tab_panel:TitleHoldEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: InputEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:InputEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

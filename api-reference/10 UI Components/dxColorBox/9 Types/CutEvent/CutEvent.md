@@ -4,6 +4,7 @@ export: CutEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:CutEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

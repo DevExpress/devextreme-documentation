@@ -4,6 +4,7 @@ export: CellHoverChangedEvent
 type: Object
 inherits: EventInfo
 uid: ui/data_grid:CellHoverChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

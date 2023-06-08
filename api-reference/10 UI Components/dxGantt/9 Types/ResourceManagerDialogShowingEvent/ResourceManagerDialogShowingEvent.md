@@ -4,6 +4,7 @@ export: ResourceManagerDialogShowingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:ResourceManagerDialogShowingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ module: common/grids
 export: KeyDownInfo
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

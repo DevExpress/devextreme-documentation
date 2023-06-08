@@ -4,6 +4,7 @@ export: ContextMenuPreparingEvent
 type: Object
 inherits: EventInfo
 uid: ui/pivot_grid_field_chooser:ContextMenuPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

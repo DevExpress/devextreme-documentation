@@ -4,6 +4,7 @@ export: FocusOutEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:FocusOutEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

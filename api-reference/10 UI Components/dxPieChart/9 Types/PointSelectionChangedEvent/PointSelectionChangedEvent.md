@@ -4,6 +4,7 @@ export: PointSelectionChangedEvent
 type: Object
 inherits: EventInfo,PointInteractionInfo
 uid: viz/pie_chart:PointSelectionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ChangeEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:ChangeEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

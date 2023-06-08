@@ -4,6 +4,7 @@ export: InitNewRowEvent
 type: Object
 inherits: EventInfo,NewRowInfo
 uid: ui/tree_list:InitNewRowEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

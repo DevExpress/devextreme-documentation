@@ -4,6 +4,7 @@ export: SubmenuHiddenEvent
 type: Object
 inherits: EventInfo
 uid: ui/menu:SubmenuHiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

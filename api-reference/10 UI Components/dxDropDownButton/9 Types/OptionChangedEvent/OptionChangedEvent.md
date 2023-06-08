@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/drop_down_button:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

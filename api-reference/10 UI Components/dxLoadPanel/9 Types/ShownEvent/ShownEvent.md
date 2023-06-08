@@ -4,6 +4,7 @@ export: ShownEvent
 type: Object
 inherits: EventInfo
 uid: ui/load_panel:ShownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

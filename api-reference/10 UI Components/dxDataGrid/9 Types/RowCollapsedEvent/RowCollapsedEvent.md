@@ -4,6 +4,7 @@ export: RowCollapsedEvent
 type: Object
 inherits: EventInfo,RowKeyInfo
 uid: ui/data_grid:RowCollapsedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

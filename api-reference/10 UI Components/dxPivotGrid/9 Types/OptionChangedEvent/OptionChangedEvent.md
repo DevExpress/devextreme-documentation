@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/pivot_grid:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

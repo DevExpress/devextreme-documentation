@@ -4,6 +4,7 @@ export: FocusInEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:FocusInEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

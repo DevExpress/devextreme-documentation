@@ -4,6 +4,7 @@ export: RowUpdatingEvent
 type: Object
 inherits: EventInfo,RowUpdatingInfo
 uid: ui/data_grid:RowUpdatingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

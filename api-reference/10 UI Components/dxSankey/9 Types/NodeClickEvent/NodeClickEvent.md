@@ -4,6 +4,7 @@ export: NodeClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: viz/sankey:NodeClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

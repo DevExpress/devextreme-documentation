@@ -4,6 +4,7 @@ export: CompleteEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/progress_bar:CompleteEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

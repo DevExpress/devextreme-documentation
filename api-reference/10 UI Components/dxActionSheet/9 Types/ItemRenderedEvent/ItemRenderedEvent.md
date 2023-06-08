@@ -4,6 +4,7 @@ export: ItemRenderedEvent
 type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/action_sheet:ItemRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

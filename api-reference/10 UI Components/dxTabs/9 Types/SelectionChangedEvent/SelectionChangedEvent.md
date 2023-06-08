@@ -4,6 +4,7 @@ export: SelectionChangedEvent
 type: Object
 inherits: EventInfo,SelectionChangedInfo
 uid: ui/tabs:SelectionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: FocusInEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/html_editor:FocusInEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

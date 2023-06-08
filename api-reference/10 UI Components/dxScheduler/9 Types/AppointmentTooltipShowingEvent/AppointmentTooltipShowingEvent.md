@@ -4,6 +4,7 @@ export: AppointmentTooltipShowingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/scheduler:AppointmentTooltipShowingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

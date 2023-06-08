@@ -4,6 +4,7 @@ export: LegendClickEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/polar_chart:LegendClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

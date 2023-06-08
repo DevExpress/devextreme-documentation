@@ -4,6 +4,7 @@ export: AdaptiveDetailRowPreparingEvent
 type: Object
 inherits: EventInfo,AdaptiveDetailRowPreparingInfo
 uid: ui/data_grid:AdaptiveDetailRowPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

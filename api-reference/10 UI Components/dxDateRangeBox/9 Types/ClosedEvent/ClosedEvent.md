@@ -4,6 +4,7 @@ export: ClosedEvent
 type: Object
 inherits: EventInfo
 uid: ui/date_range_box:ClosedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

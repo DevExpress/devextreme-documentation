@@ -4,6 +4,7 @@ export: TaskDeletedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:TaskDeletedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

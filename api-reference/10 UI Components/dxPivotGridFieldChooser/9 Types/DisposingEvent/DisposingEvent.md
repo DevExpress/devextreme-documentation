@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/pivot_grid_field_chooser:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

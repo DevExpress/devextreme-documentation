@@ -4,6 +4,7 @@ export: ReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/map:ReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

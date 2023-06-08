@@ -4,6 +4,7 @@ export: TaskMovingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskMovingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

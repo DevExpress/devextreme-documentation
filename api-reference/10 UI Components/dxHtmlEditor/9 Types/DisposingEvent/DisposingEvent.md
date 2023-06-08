@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/html_editor:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

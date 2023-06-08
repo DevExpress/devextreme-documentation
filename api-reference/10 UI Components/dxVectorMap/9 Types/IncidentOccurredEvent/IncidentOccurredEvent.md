@@ -4,6 +4,7 @@ export: IncidentOccurredEvent
 type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/vector_map:IncidentOccurredEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

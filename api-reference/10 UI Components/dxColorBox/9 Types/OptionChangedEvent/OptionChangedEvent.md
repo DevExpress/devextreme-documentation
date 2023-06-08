@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/color_box:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

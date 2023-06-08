@@ -4,6 +4,7 @@ export: ResourceAssigningEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:ResourceAssigningEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

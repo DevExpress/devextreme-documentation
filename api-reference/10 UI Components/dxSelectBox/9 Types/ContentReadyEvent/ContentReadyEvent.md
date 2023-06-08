@@ -4,6 +4,7 @@ export: ContentReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/select_box:ContentReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

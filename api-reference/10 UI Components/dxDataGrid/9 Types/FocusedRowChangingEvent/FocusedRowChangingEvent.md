@@ -4,6 +4,7 @@ export: FocusedRowChangingEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/data_grid:FocusedRowChangingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

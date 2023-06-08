@@ -4,6 +4,7 @@ export: SeriesClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: viz/polar_chart:SeriesClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

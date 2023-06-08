@@ -4,6 +4,7 @@ export: ExportingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/data_grid:ExportingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

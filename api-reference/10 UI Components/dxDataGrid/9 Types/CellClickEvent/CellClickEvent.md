@@ -4,6 +4,7 @@ export: CellClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/data_grid:CellClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

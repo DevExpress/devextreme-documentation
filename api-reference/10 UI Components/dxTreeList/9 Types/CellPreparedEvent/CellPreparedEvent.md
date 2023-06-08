@@ -4,6 +4,7 @@ export: CellPreparedEvent
 type: Object
 inherits: EventInfo,CellInfo
 uid: ui/tree_list:CellPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

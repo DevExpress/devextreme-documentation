@@ -4,6 +4,7 @@ export: ItemDeletingEvent
 type: Object
 inherits: EventInfo,ActionEventInfo
 uid: ui/file_manager:ItemDeletingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

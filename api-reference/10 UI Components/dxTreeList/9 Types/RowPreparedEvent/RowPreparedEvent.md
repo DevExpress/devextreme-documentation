@@ -4,6 +4,7 @@ export: RowPreparedEvent
 type: Object
 inherits: EventInfo
 uid: ui/tree_list:RowPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

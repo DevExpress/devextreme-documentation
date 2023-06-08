@@ -4,6 +4,7 @@ export: FocusedRowChangedEvent
 type: Object
 inherits: EventInfo
 uid: ui/tree_list:FocusedRowChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

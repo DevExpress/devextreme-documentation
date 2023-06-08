@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/recurrence_editor:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: EnterKeyEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/select_box:EnterKeyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

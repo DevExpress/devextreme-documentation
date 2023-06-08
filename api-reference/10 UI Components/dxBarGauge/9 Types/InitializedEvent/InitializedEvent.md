@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: viz/bar_gauge:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

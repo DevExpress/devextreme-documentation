@@ -4,6 +4,7 @@ export: DragChangeEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/sortable:DragChangeEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

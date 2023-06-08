@@ -4,6 +4,7 @@ export: CustomItemCreatingEvent
 type: Object
 inherits: EventInfo,CustomItemCreatingInfo
 uid: ui/tag_box:CustomItemCreatingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

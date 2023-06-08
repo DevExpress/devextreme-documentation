@@ -4,6 +4,7 @@ export: TitleRenderedEvent
 type: Object
 inherits: EventInfo,TitleRenderedInfo
 uid: ui/popover:TitleRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

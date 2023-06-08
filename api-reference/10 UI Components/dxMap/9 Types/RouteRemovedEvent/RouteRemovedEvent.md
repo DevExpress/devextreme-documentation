@@ -4,6 +4,7 @@ export: RouteRemovedEvent
 type: Object
 inherits: EventInfo
 uid: ui/map:RouteRemovedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

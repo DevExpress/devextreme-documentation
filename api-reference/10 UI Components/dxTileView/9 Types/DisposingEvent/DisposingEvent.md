@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/tile_view:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

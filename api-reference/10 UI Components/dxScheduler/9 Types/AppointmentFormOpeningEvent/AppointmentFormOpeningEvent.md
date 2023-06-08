@@ -4,6 +4,7 @@ export: AppointmentFormOpeningEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/scheduler:AppointmentFormOpeningEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

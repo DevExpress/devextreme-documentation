@@ -4,6 +4,7 @@ export: AppointmentDblClickEvent
 type: Object
 inherits: Cancelable,NativeEventInfo,TargetedAppointmentInfo
 uid: ui/scheduler:AppointmentDblClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

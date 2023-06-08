@@ -4,6 +4,7 @@ export: SeriesHoverChangedEvent
 type: Object
 inherits: EventInfo,_viz_chart_SeriesInteractionInfo
 uid: viz/chart:SeriesHoverChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

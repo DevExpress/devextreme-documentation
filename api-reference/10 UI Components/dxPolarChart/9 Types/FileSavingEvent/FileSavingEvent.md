@@ -4,6 +4,7 @@ export: FileSavingEvent
 type: Object
 inherits: FileSavingEventInfo
 uid: viz/polar_chart:FileSavingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

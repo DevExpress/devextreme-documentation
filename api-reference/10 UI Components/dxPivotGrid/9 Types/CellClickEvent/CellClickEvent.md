@@ -4,6 +4,7 @@ export: CellClickEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/pivot_grid:CellClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

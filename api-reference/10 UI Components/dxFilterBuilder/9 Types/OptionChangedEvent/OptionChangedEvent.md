@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/filter_builder:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

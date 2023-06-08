@@ -4,6 +4,7 @@ export: KeyUpEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:KeyUpEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: RowClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/data_grid:RowClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

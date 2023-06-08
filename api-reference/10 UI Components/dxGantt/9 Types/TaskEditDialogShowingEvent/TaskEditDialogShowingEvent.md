@@ -4,6 +4,7 @@ export: TaskEditDialogShowingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskEditDialogShowingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

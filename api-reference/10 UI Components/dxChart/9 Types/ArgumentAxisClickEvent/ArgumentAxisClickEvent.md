@@ -4,6 +4,7 @@ export: ArgumentAxisClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: viz/chart:ArgumentAxisClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

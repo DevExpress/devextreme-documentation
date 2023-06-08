@@ -4,6 +4,7 @@ export: PointClickEvent
 type: Object
 inherits: Cancelable,NativeEventInfo,PointInteractionInfo
 uid: viz/chart:PointClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: PageLoadingEvent
 type: Object
 inherits: EventInfo
 uid: ui/lookup:PageLoadingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

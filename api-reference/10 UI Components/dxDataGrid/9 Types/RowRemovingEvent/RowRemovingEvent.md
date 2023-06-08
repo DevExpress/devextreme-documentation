@@ -4,6 +4,7 @@ export: RowRemovingEvent
 type: Object
 inherits: EventInfo,RowRemovingInfo
 uid: ui/data_grid:RowRemovingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: DrillEvent
 type: Object
 inherits: EventInfo
 uid: viz/tree_map:DrillEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

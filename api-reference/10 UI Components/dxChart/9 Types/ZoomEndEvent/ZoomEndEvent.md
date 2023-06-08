@@ -4,6 +4,7 @@ export: ZoomEndEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/chart:ZoomEndEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: MarkerAddedEvent
 type: Object
 inherits: EventInfo
 uid: ui/map:MarkerAddedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

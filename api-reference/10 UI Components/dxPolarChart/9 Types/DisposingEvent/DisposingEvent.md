@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: viz/polar_chart:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

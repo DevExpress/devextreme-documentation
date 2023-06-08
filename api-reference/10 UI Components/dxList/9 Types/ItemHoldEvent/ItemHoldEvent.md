@@ -4,6 +4,7 @@ export: ItemHoldEvent
 type: Object
 inherits: NativeEventInfo,ListItemInfo
 uid: ui/list:ItemHoldEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

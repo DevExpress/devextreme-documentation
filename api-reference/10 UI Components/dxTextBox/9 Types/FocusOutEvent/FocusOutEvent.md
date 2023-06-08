@@ -4,6 +4,7 @@ export: FocusOutEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:FocusOutEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

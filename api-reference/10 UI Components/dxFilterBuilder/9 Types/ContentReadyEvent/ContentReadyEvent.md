@@ -4,6 +4,7 @@ export: ContentReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/filter_builder:ContentReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

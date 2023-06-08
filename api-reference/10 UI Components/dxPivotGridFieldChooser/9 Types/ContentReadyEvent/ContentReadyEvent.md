@@ -4,6 +4,7 @@ export: ContentReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/pivot_grid_field_chooser:ContentReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

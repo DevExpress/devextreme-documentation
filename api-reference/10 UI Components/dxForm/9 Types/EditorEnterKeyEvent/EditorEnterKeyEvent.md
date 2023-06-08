@@ -4,6 +4,7 @@ export: EditorEnterKeyEvent
 type: Object
 inherits: EventInfo
 uid: ui/form:EditorEnterKeyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

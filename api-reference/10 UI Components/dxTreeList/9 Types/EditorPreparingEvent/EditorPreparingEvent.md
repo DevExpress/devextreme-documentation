@@ -4,6 +4,7 @@ export: EditorPreparingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tree_list:EditorPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

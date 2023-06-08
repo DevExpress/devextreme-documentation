@@ -4,6 +4,7 @@ export: ItemRenderedEvent
 type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/context_menu:ItemRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

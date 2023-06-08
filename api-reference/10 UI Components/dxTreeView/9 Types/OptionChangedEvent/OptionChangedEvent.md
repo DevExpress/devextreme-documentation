@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/tree_view:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

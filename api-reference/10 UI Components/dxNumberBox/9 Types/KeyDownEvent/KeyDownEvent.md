@@ -4,6 +4,7 @@ export: KeyDownEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:KeyDownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

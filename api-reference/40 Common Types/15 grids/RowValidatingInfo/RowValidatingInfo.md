@@ -3,6 +3,7 @@ id: RowValidatingInfo
 module: common/grids
 export: RowValidatingInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

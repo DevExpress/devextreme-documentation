@@ -4,6 +4,7 @@ export: CellContextMenuEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/scheduler:CellContextMenuEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

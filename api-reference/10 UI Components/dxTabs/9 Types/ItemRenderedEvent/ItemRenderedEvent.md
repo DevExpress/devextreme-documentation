@@ -4,6 +4,7 @@ export: ItemRenderedEvent
 type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/tabs:ItemRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: HiddenEvent
 type: Object
 inherits: EventInfo
 uid: ui/load_panel:HiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

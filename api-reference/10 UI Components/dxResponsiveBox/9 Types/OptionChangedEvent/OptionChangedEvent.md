@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/responsive_box:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

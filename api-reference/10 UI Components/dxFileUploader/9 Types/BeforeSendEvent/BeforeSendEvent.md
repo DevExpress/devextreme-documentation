@@ -4,6 +4,7 @@ export: BeforeSendEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_uploader:BeforeSendEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

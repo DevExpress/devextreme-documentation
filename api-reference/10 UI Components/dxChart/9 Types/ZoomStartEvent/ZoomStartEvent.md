@@ -4,6 +4,7 @@ export: ZoomStartEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/chart:ZoomStartEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ShowingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tooltip:ShowingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

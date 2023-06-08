@@ -4,6 +4,7 @@ export: ResourceInsertedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:ResourceInsertedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

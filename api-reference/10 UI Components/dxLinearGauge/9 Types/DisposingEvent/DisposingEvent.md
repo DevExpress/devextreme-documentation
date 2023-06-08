@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: viz/linear_gauge:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

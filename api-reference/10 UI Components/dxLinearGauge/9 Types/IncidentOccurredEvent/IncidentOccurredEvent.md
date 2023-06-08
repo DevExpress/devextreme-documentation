@@ -4,6 +4,7 @@ export: IncidentOccurredEvent
 type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/linear_gauge:IncidentOccurredEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

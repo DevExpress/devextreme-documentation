@@ -4,6 +4,7 @@ export: SelectionChangedEvent
 type: Object
 inherits: EventInfo
 uid: ui/diagram:SelectionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

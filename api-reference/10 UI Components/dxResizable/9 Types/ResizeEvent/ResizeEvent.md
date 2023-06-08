@@ -4,6 +4,7 @@ export: ResizeEvent
 type: Object
 inherits: NativeEventInfo,ResizeInfo
 uid: ui/resizable:ResizeEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

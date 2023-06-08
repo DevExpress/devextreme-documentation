@@ -4,6 +4,7 @@ export: IncidentOccurredEvent
 type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/polar_chart:IncidentOccurredEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

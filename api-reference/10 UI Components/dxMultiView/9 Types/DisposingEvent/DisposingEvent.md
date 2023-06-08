@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/multi_view:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

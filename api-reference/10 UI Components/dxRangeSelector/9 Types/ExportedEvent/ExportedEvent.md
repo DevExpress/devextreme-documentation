@@ -4,6 +4,7 @@ export: ExportedEvent
 type: Object
 inherits: EventInfo
 uid: viz/range_selector:ExportedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

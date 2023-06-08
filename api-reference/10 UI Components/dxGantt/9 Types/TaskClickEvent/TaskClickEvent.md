@@ -4,6 +4,7 @@ export: TaskClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/gantt:TaskClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

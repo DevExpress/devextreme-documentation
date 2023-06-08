@@ -4,6 +4,7 @@ export: NodesRenderingEvent
 type: Object
 inherits: EventInfo
 uid: viz/tree_map:NodesRenderingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

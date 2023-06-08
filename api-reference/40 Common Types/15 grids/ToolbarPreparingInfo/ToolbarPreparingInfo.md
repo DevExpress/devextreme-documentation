@@ -3,6 +3,7 @@ id: ToolbarPreparingInfo
 module: common/grids
 export: ToolbarPreparingInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

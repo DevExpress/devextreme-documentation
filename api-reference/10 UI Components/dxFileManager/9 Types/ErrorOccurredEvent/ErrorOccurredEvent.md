@@ -4,6 +4,7 @@ export: ErrorOccurredEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_manager:ErrorOccurredEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

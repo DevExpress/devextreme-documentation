@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/tab_panel:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

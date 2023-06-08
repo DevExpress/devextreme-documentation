@@ -4,6 +4,7 @@ export: AppointmentRenderedEvent
 type: Object
 inherits: EventInfo,TargetedAppointmentInfo
 uid: ui/scheduler:AppointmentRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

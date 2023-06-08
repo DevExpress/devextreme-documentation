@@ -4,6 +4,7 @@ export: EditingStartEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tree_list:EditingStartEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

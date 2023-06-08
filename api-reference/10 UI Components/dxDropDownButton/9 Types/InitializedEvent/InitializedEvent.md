@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/drop_down_button:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

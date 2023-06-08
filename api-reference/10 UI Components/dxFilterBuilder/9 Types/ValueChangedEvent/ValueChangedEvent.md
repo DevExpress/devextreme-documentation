@@ -4,6 +4,7 @@ export: ValueChangedEvent
 type: Object
 inherits: EventInfo
 uid: ui/filter_builder:ValueChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

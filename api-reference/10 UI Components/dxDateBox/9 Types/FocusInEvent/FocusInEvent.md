@@ -4,6 +4,7 @@ export: FocusInEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:FocusInEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

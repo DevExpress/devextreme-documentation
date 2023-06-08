@@ -4,6 +4,7 @@ export: ValueChangedEvent
 type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/autocomplete:ValueChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

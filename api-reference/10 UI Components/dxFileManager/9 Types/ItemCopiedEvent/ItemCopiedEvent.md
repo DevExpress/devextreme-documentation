@@ -4,6 +4,7 @@ export: ItemCopiedEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_manager:ItemCopiedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

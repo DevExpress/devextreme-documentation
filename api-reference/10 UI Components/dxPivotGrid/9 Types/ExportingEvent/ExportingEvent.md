@@ -4,6 +4,7 @@ export: ExportingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/pivot_grid:ExportingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

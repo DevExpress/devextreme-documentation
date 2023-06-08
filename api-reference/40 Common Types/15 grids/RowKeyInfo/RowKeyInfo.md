@@ -4,6 +4,7 @@ module: common/grids
 export: RowKeyInfo
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ItemClickEvent
 type: Object
 inherits: EventInfo
 uid: ui/diagram:ItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

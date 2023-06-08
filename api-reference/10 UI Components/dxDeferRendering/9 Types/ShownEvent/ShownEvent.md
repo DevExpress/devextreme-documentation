@@ -4,6 +4,7 @@ export: ShownEvent
 type: Object
 inherits: EventInfo
 uid: ui/defer_rendering:ShownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

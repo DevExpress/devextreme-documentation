@@ -4,6 +4,7 @@ export: ItemContextMenuEvent
 type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/toolbar:ItemContextMenuEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ContentReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/drop_down_button:ContentReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

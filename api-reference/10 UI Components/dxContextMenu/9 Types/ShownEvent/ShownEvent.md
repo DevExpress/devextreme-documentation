@@ -4,6 +4,7 @@ export: ShownEvent
 type: Object
 inherits: EventInfo
 uid: ui/context_menu:ShownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: SelectionChangedEvent
 type: Object
 inherits: EventInfo,SelectionChangedInfo
 uid: ui/data_grid:SelectionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: FocusedRowChangingEvent
 type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/tree_list:FocusedRowChangingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

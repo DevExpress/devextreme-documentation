@@ -4,6 +4,7 @@ export: ShowingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/toast:ShowingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

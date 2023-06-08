@@ -4,6 +4,7 @@ export: ContentReadyEvent
 type: Object
 inherits: EventInfo
 uid: ui/load_indicator:ContentReadyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

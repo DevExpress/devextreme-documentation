@@ -4,6 +4,7 @@ export: MultiTagPreparingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tag_box:MultiTagPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

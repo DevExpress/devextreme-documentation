@@ -4,6 +4,7 @@ export: ItemContextMenuEvent
 type: Object
 inherits: NativeEventInfo,ListItemInfo
 uid: ui/list:ItemContextMenuEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

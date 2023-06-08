@@ -4,6 +4,7 @@ export: HiddenEvent
 type: Object
 inherits: EventInfo
 uid: ui/popover:HiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

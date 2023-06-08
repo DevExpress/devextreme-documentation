@@ -4,6 +4,7 @@ export: DrawnEvent
 type: Object
 inherits: EventInfo
 uid: viz/funnel:DrawnEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: SeriesClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: viz/chart:SeriesClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ItemMovedEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_manager:ItemMovedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

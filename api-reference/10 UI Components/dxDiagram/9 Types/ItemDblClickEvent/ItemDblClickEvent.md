@@ -4,6 +4,7 @@ export: ItemDblClickEvent
 type: Object
 inherits: EventInfo
 uid: ui/diagram:ItemDblClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

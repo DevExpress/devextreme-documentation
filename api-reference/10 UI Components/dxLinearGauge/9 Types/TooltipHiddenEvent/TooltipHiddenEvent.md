@@ -4,6 +4,7 @@ export: TooltipHiddenEvent
 type: Object
 inherits: EventInfo,_viz_base_gauge_TooltipInfo
 uid: viz/linear_gauge:TooltipHiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

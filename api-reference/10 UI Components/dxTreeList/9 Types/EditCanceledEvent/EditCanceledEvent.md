@@ -4,6 +4,7 @@ export: EditCanceledEvent
 type: Object
 inherits: EventInfo,DataChangeInfo
 uid: ui/tree_list:EditCanceledEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

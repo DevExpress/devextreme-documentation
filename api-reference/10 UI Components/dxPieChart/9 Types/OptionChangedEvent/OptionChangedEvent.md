@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/pie_chart:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

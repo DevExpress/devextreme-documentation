@@ -4,6 +4,7 @@ export: CopyEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_box:CopyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

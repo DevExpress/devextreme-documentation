@@ -4,6 +4,7 @@ export: TooltipShownEvent
 type: Object
 inherits: EventInfo
 uid: viz/bullet:TooltipShownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

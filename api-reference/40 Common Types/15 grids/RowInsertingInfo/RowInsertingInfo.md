@@ -4,6 +4,7 @@ module: common/grids
 export: RowInsertingInfo
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: TabPanelItemInfo
 module: ui/tab_panel
 export: TabPanelItemInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: FilesUploadedEvent
 type: Object
 inherits: EventInfo
 uid: ui/file_uploader:FilesUploadedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

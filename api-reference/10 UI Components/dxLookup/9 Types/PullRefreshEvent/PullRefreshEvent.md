@@ -4,6 +4,7 @@ export: PullRefreshEvent
 type: Object
 inherits: EventInfo
 uid: ui/lookup:PullRefreshEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ExportingEvent
 type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/tree_map:ExportingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

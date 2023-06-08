@@ -5,6 +5,7 @@ export: FileSavingEventInfo
 hidden: 
 type: Cancelable | Object
 inherits: Cancelable
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

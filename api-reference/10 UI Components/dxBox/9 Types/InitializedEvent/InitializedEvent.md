@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/box:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

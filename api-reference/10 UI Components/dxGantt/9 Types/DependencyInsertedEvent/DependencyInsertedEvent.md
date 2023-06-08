@@ -4,6 +4,7 @@ export: DependencyInsertedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:DependencyInsertedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

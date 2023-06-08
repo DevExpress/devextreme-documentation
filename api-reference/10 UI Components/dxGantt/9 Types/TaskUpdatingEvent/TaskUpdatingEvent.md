@@ -4,6 +4,7 @@ export: TaskUpdatingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskUpdatingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: FocusOutEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:FocusOutEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

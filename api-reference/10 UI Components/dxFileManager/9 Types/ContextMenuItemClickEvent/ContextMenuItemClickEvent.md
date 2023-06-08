@@ -4,6 +4,7 @@ export: ContextMenuItemClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/file_manager:ContextMenuItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

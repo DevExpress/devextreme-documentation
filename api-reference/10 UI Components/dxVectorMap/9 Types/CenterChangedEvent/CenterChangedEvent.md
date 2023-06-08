@@ -4,6 +4,7 @@ export: CenterChangedEvent
 type: Object
 inherits: EventInfo
 uid: viz/vector_map:CenterChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ScrollEvent
 type: Object
 inherits: NativeEventInfo,ScrollInfo
 uid: ui/list:ScrollEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

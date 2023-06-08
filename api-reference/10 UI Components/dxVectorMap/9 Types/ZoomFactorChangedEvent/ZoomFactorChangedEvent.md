@@ -4,6 +4,7 @@ export: ZoomFactorChangedEvent
 type: Object
 inherits: EventInfo
 uid: viz/vector_map:ZoomFactorChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

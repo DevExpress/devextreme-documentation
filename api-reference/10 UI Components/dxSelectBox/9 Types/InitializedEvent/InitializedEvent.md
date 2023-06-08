@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/select_box:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

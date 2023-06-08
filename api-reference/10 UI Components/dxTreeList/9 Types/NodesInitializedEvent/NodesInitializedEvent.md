@@ -4,6 +4,7 @@ export: NodesInitializedEvent
 type: Object
 inherits: EventInfo
 uid: ui/tree_list:NodesInitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

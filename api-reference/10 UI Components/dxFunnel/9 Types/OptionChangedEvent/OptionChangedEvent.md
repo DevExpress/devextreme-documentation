@@ -4,6 +4,7 @@ export: OptionChangedEvent
 type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/funnel:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

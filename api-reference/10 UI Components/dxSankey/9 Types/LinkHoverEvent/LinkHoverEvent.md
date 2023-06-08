@@ -4,6 +4,7 @@ export: LinkHoverEvent
 type: Object
 inherits: EventInfo
 uid: viz/sankey:LinkHoverEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

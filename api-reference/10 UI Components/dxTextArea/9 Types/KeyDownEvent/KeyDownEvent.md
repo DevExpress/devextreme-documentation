@@ -4,6 +4,7 @@ export: KeyDownEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/text_area:KeyDownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

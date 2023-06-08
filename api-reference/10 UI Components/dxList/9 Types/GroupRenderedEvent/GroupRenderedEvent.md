@@ -4,6 +4,7 @@ export: GroupRenderedEvent
 type: Object
 inherits: EventInfo
 uid: ui/list:GroupRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

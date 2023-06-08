@@ -4,6 +4,7 @@ export: TaskInsertedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:TaskInsertedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: CopyEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:CopyEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

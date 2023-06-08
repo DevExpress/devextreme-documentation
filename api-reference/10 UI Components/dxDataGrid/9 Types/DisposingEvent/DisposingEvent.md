@@ -4,6 +4,7 @@ export: DisposingEvent
 type: Object
 inherits: EventInfo
 uid: ui/data_grid:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

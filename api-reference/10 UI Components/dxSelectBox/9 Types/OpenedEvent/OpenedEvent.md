@@ -4,6 +4,7 @@ export: OpenedEvent
 type: Object
 inherits: EventInfo
 uid: ui/select_box:OpenedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

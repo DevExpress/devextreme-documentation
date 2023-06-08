@@ -4,6 +4,7 @@ export: ItemClickEvent
 type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/tabs:ItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: ResourceDeletedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:ResourceDeletedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

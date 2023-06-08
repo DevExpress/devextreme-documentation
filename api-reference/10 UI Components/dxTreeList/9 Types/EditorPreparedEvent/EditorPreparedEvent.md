@@ -4,6 +4,7 @@ export: EditorPreparedEvent
 type: Object
 inherits: EventInfo
 uid: ui/tree_list:EditorPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

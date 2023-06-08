@@ -4,6 +4,7 @@ export: ClickEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/button:ClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

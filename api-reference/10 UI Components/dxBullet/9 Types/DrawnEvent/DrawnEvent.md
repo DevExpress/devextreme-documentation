@@ -4,6 +4,7 @@ export: DrawnEvent
 type: Object
 inherits: EventInfo
 uid: viz/bullet:DrawnEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

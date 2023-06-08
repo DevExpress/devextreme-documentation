@@ -4,6 +4,7 @@ export: ItemHoldEvent
 type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/multi_view:ItemHoldEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

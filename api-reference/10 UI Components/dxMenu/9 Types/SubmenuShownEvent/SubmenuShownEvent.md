@@ -4,6 +4,7 @@ export: SubmenuShownEvent
 type: Object
 inherits: EventInfo
 uid: ui/menu:SubmenuShownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

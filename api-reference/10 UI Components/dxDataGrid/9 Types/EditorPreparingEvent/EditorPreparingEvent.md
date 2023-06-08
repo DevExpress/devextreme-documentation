@@ -4,6 +4,7 @@ export: EditorPreparingEvent
 type: Object
 inherits: EventInfo
 uid: ui/data_grid:EditorPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

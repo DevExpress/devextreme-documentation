@@ -4,6 +4,7 @@ export: CellPreparedEvent
 type: Object
 inherits: EventInfo
 uid: ui/data_grid:CellPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: ActionEventInfo
 module: ui/file_manager
 export: ActionEventInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

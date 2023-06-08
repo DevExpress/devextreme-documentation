@@ -4,6 +4,7 @@ export: PullDownEvent
 type: Object
 inherits: EventInfo
 uid: ui/scroll_view:PullDownEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

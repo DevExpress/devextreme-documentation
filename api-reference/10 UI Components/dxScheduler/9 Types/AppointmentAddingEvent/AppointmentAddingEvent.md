@@ -4,6 +4,7 @@ export: AppointmentAddingEvent
 type: Object
 inherits: EventInfo
 uid: ui/scheduler:AppointmentAddingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

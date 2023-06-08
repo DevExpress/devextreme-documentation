@@ -4,6 +4,7 @@ export: RowRemovingEvent
 type: Object
 inherits: EventInfo,RowRemovingInfo
 uid: ui/tree_list:RowRemovingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

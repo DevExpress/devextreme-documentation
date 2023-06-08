@@ -4,6 +4,7 @@ export: TooltipHiddenEvent
 type: Object
 inherits: EventInfo,_viz_vector_map_TooltipInfo
 uid: viz/vector_map:TooltipHiddenEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

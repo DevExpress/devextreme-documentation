@@ -4,6 +4,7 @@ export: TaskDeletingEvent
 type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskDeletingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

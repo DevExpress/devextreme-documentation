@@ -4,6 +4,7 @@ export: DependencyDeletedEvent
 type: Object
 inherits: EventInfo
 uid: ui/gantt:DependencyDeletedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

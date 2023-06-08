@@ -4,6 +4,7 @@ export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 uid: ui/filter_builder:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

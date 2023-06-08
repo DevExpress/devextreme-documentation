@@ -4,6 +4,7 @@ export: UploadStartedEvent
 type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:UploadStartedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

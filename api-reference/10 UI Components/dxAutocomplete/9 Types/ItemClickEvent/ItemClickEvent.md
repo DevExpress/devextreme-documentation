@@ -4,6 +4,7 @@ export: ItemClickEvent
 type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/autocomplete:ItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ export: RowUpdatingEvent
 type: Object
 inherits: EventInfo,RowUpdatingInfo
 uid: ui/tree_list:RowUpdatingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

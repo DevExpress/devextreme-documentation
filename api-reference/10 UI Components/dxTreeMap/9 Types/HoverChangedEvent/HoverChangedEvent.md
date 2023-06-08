@@ -4,6 +4,7 @@ export: HoverChangedEvent
 type: Object
 inherits: EventInfo,InteractionInfo
 uid: viz/tree_map:HoverChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

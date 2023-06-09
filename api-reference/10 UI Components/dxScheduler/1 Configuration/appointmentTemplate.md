@@ -7,7 +7,7 @@ default: 'item'
 ##### shortDescription
 Specifies a custom template for appointments.
 
-##### param(model): ui/scheduler:AppointmentTemplateData
+##### param(model): ui/scheduler:AppointmentTemplateData | Object
 The data of the appointment being customized.
 
 ##### field(model.appointmentData): dxSchedulerAppointment

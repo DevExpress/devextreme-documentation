@@ -7,7 +7,7 @@ default: 'appointmentTooltip'
 ##### shortDescription
 Specifies a custom template for tooltips displayed when users click an appointment or [cell overflow indicator](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/').
 
-##### param(model): ui/scheduler:AppointmentTooltipTemplateData
+##### param(model): ui/scheduler:AppointmentTooltipTemplateData | Object
 The data of the appointment for which the tooltip is displayed.
 
 ##### field(model.appointmentData): dxSchedulerAppointment

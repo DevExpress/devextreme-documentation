@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when an appointment is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/scheduler:AppointmentClickEvent
 Information about the event.
 
 ##### field(e.appointmentData): dxSchedulerAppointment
@@ -19,7 +19,7 @@ The initial appointment.
 ##### field(e.cancel): Boolean
 If **true**, hides the appointment tooltip.
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

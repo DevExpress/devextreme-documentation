@@ -7,8 +7,11 @@ default: null
 ##### shortDescription
 A function that is executed when an appointment is clicked or tapped.
 
-##### param(e): ui/scheduler:AppointmentClickEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.appointmentData): dxSchedulerAppointment
+The initial appointment.
 
 ##### field(e.appointmentElement): DxElement
 #include common-ref-elementparam with { element: "clicked" }
@@ -16,7 +19,7 @@ Information about the event.
 ##### field(e.cancel): Boolean
 If **true**, hides the appointment tooltip.
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxScheduler
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -27,6 +30,9 @@ The UI component's instance.
 
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
+
+##### field(e.targetedAppointmentData): dxSchedulerAppointment
+The clicked appointment.
 
 ---
 

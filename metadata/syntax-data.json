@@ -2725,6 +2725,11 @@
       "react": "DataField",
       "vue": "DxDataField"
     },
+    "_ui_pivot_grid_ContextMenuPreparingEvent.field": {
+      "angular": "dxo-field",
+      "react": "Field",
+      "vue": "DxField"
+    },
     "_ui_pivot_grid_ContextMenuPreparingEvent.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -2765,6 +2770,11 @@
       "angular": "dxo-event",
       "react": "Event",
       "vue": "DxEvent"
+    },
+    "_ui_pivot_grid_field_chooser_ContextMenuPreparingEvent.field": {
+      "angular": "dxo-field",
+      "react": "Field",
+      "vue": "DxField"
     },
     "_ui_pivot_grid_field_chooser_ContextMenuPreparingEvent.items": {
       "angular": "dxi-item",
@@ -20726,6 +20736,16 @@
     },
     "tabPanelItemInfo.itemElement": {
       "vue": "item-element"
+    },
+    "targetedAppointmentInfo.appointmentData": {
+      "angular": "dxo-appointment-data",
+      "react": "AppointmentData",
+      "vue": "DxAppointmentData"
+    },
+    "targetedAppointmentInfo.targetedAppointmentData": {
+      "angular": "dxo-targeted-appointment-data",
+      "react": "TargetedAppointmentData",
+      "vue": "DxTargetedAppointmentData"
     },
     "uploadInfo": {
       "vue": "upload-info"

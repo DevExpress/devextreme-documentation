@@ -96,6 +96,10 @@ The code below adds the Map UI component to your page. The Map is [centered](/ap
 
 ---
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-map-use-google-maps-api-to-create-autocomplete-functionality-for-addresses"
+}
+
 #####See Also#####
 #include common-link-configurewidget
 - [Map - Zoom and Center the Map](/concepts/05%20UI%20Components/Map/05%20Zoom%20and%20Center%20the%20Map.md '/Documentation/Guide/UI_Components/Map/Zoom_and_Center_the_Map/')

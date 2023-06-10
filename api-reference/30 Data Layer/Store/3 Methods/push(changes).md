@@ -133,6 +133,10 @@ The following code shows how to use the **push(changes)** method for each change
     name: "DataGrid Collaborative Editing"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-treelist-display-summary-for-each-level"
+}
+
 #####See Also#####
 - [Integration with Push Services](/concepts/70%20Data%20Binding/5%20Data%20Layer/3%20Data%20Modification/30%20Integration%20with%20Push%20Services.md '/Documentation/Guide/Data_Binding/Data_Layer/#Data_Modification/Integration_with_Push_Services')
 - **API Reference.WidgetName.repaintChangesOnly**, for example, **API Reference**.[DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/').[repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly')

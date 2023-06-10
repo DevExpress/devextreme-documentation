@@ -244,3 +244,7 @@ If a command column should have custom content, specify the column's [cellTempla
     )
     
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-show-command-buttons-only-when-row-is-hovered-or-selected"
+}

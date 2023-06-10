@@ -47,3 +47,6 @@ To perform data modification, use Store objects directly:
         .done(doneCallback)
         .fail(failCallback);
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-odatacontext-filter-data-by-foreign-key-value"
+}

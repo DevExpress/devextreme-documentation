@@ -198,5 +198,9 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
 
 ---
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-access-every-master-detail-grid-from-code"
+}
+
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

@@ -35,3 +35,7 @@ Several rows can be in the selected state at a time.
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-disable-selecting-certain-rows"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-multiple-cell-selection"
+}

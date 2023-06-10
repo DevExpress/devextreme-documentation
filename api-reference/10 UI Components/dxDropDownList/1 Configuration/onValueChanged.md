@@ -29,5 +29,10 @@ The UI component's previous value.
 The UI component's new value.
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-scheduler-filter-appointments-by-resources"
+}
+
 #####See Also#####
 - [valueChangeEvent](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/valueChangeEvent.md '{basewidgetpath}/Configuration/#valueChangeEvent')

@@ -57,3 +57,7 @@ The cell's raw value.
 
 ---
 To identify whether the pointer has entered or left the cell, check the **eventType** field's value.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-multiple-cell-selection"
+}

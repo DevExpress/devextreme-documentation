@@ -26,5 +26,10 @@ Model data. Available only if Knockout is used.
 The field's new value.
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-form-change-certain-items-based-on-value-of-another-item"
+}
+
 #####See Also#####
 - [Handle the Value Change Event](/concepts/05%20UI%20Components/Form/25%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Form/Handle_the_Value_Change_Event/')

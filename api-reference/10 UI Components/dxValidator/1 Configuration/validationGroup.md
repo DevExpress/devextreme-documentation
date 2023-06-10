@@ -11,5 +11,9 @@ Generally, the editors that are associated with **dxValidator** objects are vali
 
 If you use the JQuery approach, the **validationGroup** property should be specified for the associated **dxValidator** object to indicate the validation group within which the editor will be validated. Assign the same validation group name for those editors that should be validated together.
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-form-declare-dropdownbox-in-form-item"
+}
+
 #####See Also#####
 - [Validate Several Editor Values](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation/20%20Validate%20Several%20Editor%20Values '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/#Validate_Several_Editor_Values')

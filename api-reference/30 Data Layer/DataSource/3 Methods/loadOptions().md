@@ -77,3 +77,7 @@ Gets an object with current data processing settings.
     export default App;
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-get-all-filtered-data"
+}

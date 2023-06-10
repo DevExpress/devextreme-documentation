@@ -41,3 +41,7 @@ This function has the following specifics:
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/RowSelection/"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-synchronize-two-datagrid-components"
+}

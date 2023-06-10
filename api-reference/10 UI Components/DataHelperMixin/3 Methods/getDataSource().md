@@ -11,6 +11,10 @@ The **DataSource** instance.
 ---
 [note] This method returns the **DataSource** instance even if the UI component's [dataSource](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') property was given a simple array.
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-get-all-filtered-data"
+}
+
 #####See Also#####
 #include common-link-callmethods
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')

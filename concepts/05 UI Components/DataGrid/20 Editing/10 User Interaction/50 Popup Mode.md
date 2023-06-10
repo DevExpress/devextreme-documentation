@@ -141,5 +141,9 @@ The built-in form of the **Popup** and **Form** modes has limited functionality.
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-show-grid-in-popup-edit-form"
+}
+
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation')

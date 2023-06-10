@@ -217,7 +217,10 @@ A summary value calculation is conducted in three stages: *start* - in which the
 
 ---
 
-
 #include uiwidgets-ref-functioncontext with { 
     value: "field's configuration"
+}
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-conditionally-calculate-summary-cell-values"
 }

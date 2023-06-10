@@ -3,3 +3,7 @@ To test DevExtreme UI components for React, add the [React Testing Library](http
 This library is automatically added when you create a React project with the [Create React App](https://create-react-app.dev/). Alternatively, you can use the following npm command to add the React testing library:
 
     npm install --save-dev @testing-library/react
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-testing"
+}

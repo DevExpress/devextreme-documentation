@@ -23,6 +23,10 @@ To make the search panel visible, set the **searchPanel**.[visible](/api-referen
     name: "TreeList"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-multiple-words-search"
+}
+
 #####See Also#####
 - [Search Panel](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/3%20Search%20Panel.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Search_Panel')
 - [searchByText(text)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/searchByText(text).md '{basewidgetpath}/Methods/#searchByTexttext')

@@ -3277,6 +3277,26 @@
       "react": "_ui_select_box_ValueChangedEvent",
       "vue": "Dx_ui_select_box_ValueChangedEvent"
     },
+    "_ui_slider_ContentReadyEvent": {
+      "angular": "dxo-ui-slider--content-ready-event",
+      "react": "_ui_slider_ContentReadyEvent",
+      "vue": "Dx_ui_slider_ContentReadyEvent"
+    },
+    "_ui_slider_DisposingEvent": {
+      "angular": "dxo-ui-slider--disposing-event",
+      "react": "_ui_slider_DisposingEvent",
+      "vue": "Dx_ui_slider_DisposingEvent"
+    },
+    "_ui_slider_OptionChangedEvent": {
+      "angular": "dxo-ui-slider--option-changed-event",
+      "react": "_ui_slider_OptionChangedEvent",
+      "vue": "Dx_ui_slider_OptionChangedEvent"
+    },
+    "_ui_slider_ValueChangedEvent": {
+      "angular": "dxo-ui-slider--value-changed-event",
+      "react": "_ui_slider_ValueChangedEvent",
+      "vue": "Dx_ui_slider_ValueChangedEvent"
+    },
     "_ui_sortable_DisposingEvent": {
       "angular": "dxo-ui-sortable--disposing-event",
       "react": "_ui_sortable_DisposingEvent",

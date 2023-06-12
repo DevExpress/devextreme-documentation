@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed before the UI component is [disposed of](/api-reference/10%20UI%20Widgets/DOMComponent/3%20Methods/dispose().md '{basewidgetpath}/Methods/#dispose').
+A function that is executed before the UI component is [disposed of](/api-reference/10%20UI%20Components/DOMComponent/3%20Methods/dispose().md '{basewidgetpath}/Methods/#dispose').
 
 ##### param(e): ui/tooltip:DisposingEvent
 Information about the event.

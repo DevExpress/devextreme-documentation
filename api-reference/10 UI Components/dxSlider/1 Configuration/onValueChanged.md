@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') is changed.
+A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/dxSlider/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') is changed.
 
 ##### param(e): ui/slider:ValueChangedEvent
 Information about the event.

@@ -47,7 +47,7 @@
     "ui/popover":                      "api-reference/10 UI Components/dxPopover/9 Types",
     "ui/popup":                        "api-reference/10 UI Components/dxPopup/9 Types",
     "ui/progress_bar":                 "api-reference/10 UI Components/dxProgressBar/9 Types",
-    "ui/radio_group":                  "api-reference/10 UI Components/dxRadioButton/9 Types",
+    "ui/radio_group":                  "api-reference/10 UI Components/dxRadioGroup/9 Types",
     "ui/range_slider":                 "api-reference/10 UI Components/dxRangeSlider/9 Types",
     "ui/recurrence_editor":            "api-reference/10 UI Components/dxRecurrenceEditor/9 Types",
     "ui/resizable":                    "api-reference/10 UI Components/dxResizable/9 Types",

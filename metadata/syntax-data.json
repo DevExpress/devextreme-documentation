@@ -1,5 +1,19 @@
 {
   "entries": {
+    "_common_grids_SelectionChangedInfo.currentDeselectedRowKeys": {
+      "vue": "current-deselected-row-keys"
+    },
+    "_common_grids_SelectionChangedInfo.currentSelectedRowKeys": {
+      "vue": "current-selected-row-keys"
+    },
+    "_common_grids_SelectionChangedInfo.selectedRowKeys": {
+      "vue": "selected-row-keys"
+    },
+    "_common_grids_SelectionChangedInfo.selectedRowsData": {
+      "angular": "dxi-selected-rows-data",
+      "react": "SelectedRowsData",
+      "vue": "DxSelectedRowsData"
+    },
     "_ui_accordion_ContentReadyEvent": {
       "angular": "dxo-ui-accordion--content-ready-event",
       "react": "_ui_accordion_ContentReadyEvent",
@@ -5475,6 +5489,9 @@
     "actionEventInfo.errorText": {
       "vue": "error-text"
     },
+    "adaptiveDetailRowPreparingInfo.formOptions": {
+      "vue": "form-options"
+    },
     "animationConfig": {
       "angular": "dxo-animation-config",
       "react": "AnimationConfig",
@@ -6326,6 +6343,11 @@
     },
     "dataChange.insertBeforeKey": {
       "vue": "insert-before-key"
+    },
+    "dataChangeInfo.changes": {
+      "angular": "dxi-change",
+      "react": "Change",
+      "vue": "DxChange"
     },
     "dataExpressionMixinOptions.dataSource": {
       "vue": "data-source"
@@ -17686,6 +17708,9 @@
     "dxToolbarItem.showText": {
       "vue": "show-text"
     },
+    "dxToolbarOptions": {
+      "vue": "dx-toolbar-options"
+    },
     "dxToolbarOptions.accessKey": {
       "vue": "access-key"
     },
@@ -20673,6 +20698,40 @@
       "react": "RequiredRule",
       "vue": "DxRequiredRule"
     },
+    "rowUpdatingInfo.newData": {
+      "angular": "dxo-new-data",
+      "react": "NewData",
+      "vue": "DxNewData"
+    },
+    "rowUpdatingInfo.oldData": {
+      "angular": "dxo-old-data",
+      "react": "OldData",
+      "vue": "DxOldData"
+    },
+    "rowValidatingInfo.brokenRules": {
+      "angular": "dxi-broken-rule",
+      "react": "BrokenRule",
+      "vue": "DxBrokenRule"
+    },
+    "rowValidatingInfo.errorText": {
+      "vue": "error-text"
+    },
+    "rowValidatingInfo.isValid": {
+      "vue": "is-valid"
+    },
+    "rowValidatingInfo.newData": {
+      "angular": "dxo-new-data",
+      "react": "NewData",
+      "vue": "DxNewData"
+    },
+    "rowValidatingInfo.oldData": {
+      "vue": "old-data"
+    },
+    "savingInfo.changes": {
+      "angular": "dxi-change",
+      "react": "Change",
+      "vue": "DxChange"
+    },
     "scaleBreak": {
       "angular": "dxo-scale-break",
       "react": "ScaleBreak",
@@ -20767,6 +20826,9 @@
       "react": "TargetedAppointmentData",
       "vue": "DxTargetedAppointmentData"
     },
+    "toolbarPreparingInfo.toolbarOptions": {
+      "vue": "toolbar-options"
+    },
     "uploadInfo": {
       "vue": "upload-info"
     },
@@ -20787,6 +20849,11 @@
     },
     "userDefinedElement": {
       "vue": "user-defined-element"
+    },
+    "validationRule": {
+      "angular": "dxo-validation-rule",
+      "react": "ValidationRule",
+      "vue": "DxValidationRule"
     },
     "valueChangedInfo.previousValue": {
       "vue": "previous-value"

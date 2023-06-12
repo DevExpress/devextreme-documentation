@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A handler for the [click](/api-reference/10%20UI%20Components/dxDropDownButton/4%20Events/itemClick.md '{basewidgetpath}/Events/#itemClick') event raised for a certain item in the drop-down field.
 
-##### param(e): ui/drop_down_button:ItemClickEvent
+##### param(e): ui/drop_down_button:ItemClickEvent | Object
 Information about the event.
 
 ##### field(e.component): {WidgetName}

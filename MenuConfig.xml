@@ -100,7 +100,7 @@
   <MenuRule Destination="10 UI Components/dx$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/(Diagram|Gantt)/00 Getting Started with (Diagram|Gantt)" VisibleFor="jQuery"/>
   <MenuRule Destination="10 UI Components/dx$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/dx$1/4 Accessibility" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Accessibility" />
-  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|zz Common)" />
+  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|Accordion|Tabs|TreeMap|zz Common)" />
   <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList)/99 How To" />
   <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
   <!-- Hidden topics -->

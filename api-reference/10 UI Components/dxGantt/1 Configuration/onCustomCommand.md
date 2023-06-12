@@ -7,8 +7,17 @@ default: null
 ##### shortDescription
 A function that is executed after a custom command item was clicked. Allows you to implement a custom command's functionality.
 
-##### param(e): CustomCommandEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.component): dxGantt
+The UI component instance's name.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.name): String
+The name of the clicked item.
 
 ---
 

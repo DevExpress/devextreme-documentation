@@ -7,8 +7,32 @@ default: null
 ##### shortDescription
 A function that is executed before a directory is created.
 
-##### param(e): DirectoryCreatingEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.cancel): Boolean | Promise<void>
+Allows you to cancel the directory creation.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "component" }
+
+##### field(e.errorCode): Number
+#include filemanager-error-codes
+
+##### field(e.errorText): String
+Allows you to specify the error message.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.name): String
+The name of the directory.
+
+##### field(e.parentDirectory): FileSystemItem
+The parent directory.
 
 ---
 

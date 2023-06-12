@@ -7,8 +7,29 @@ default: null
 ##### shortDescription
 A function that is executed before a task is moved.
 
-##### param(e): TaskMovingEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.cancel): Boolean
+Allows you to cancel the task's movement.
+
+##### field(e.component): dxGantt
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.key): any
+The task key.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.newValues): any
+The task values after moving.
+
+##### field(e.values): any
+The task values before moving.
 
 ---
 

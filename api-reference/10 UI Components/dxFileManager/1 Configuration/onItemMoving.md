@@ -7,8 +7,32 @@ default: null
 ##### shortDescription
 A function that is executed before a file or directory is moved.
 
-##### param(e): ItemMovingEvent
+##### param(e): Object
 Information about the event.
+
+##### field(e.cancel): Boolean | Promise<void>
+Allows you to cancel the file or directory move process.
+
+##### field(e.component): dxFileManager
+The UI component's instance.
+
+##### field(e.destinationDirectory): FileSystemItem
+The directory where a file is moved to.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "component" }
+
+##### field(e.errorCode): Number
+#include filemanager-error-codes
+
+##### field(e.errorText): String
+Allows you to specify the error message.
+
+##### field(e.item): FileSystemItem
+The file or directory to be moved.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
 
 ---
 

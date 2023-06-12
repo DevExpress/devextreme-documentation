@@ -7,8 +7,74 @@ default: null
 ##### shortDescription
 A function that is executed after a grid cell is created.
 
-##### param(e): CellPreparedEvent
+##### param(e): Object
 Information about the event that caused the function's execution.
+
+##### field(e.cellElement): DxElement
+#include common-ref-elementparam with { element: "cell" }
+
+##### field(e.column): dxDataGridColumn
+This column's [configuration](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/').
+
+##### field(e.columnIndex): Number
+The visible column index described in the following topic: [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/').
+
+##### field(e.component): dxDataGrid
+The UI component's instance.
+
+##### field(e.data): Object
+The data of the row to which the cell belongs. Unavailable if [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType') is *"header"*, *"filter"*, or *"totalFooter"*.
+
+##### field(e.displayValue): any
+The cell's displayed value. Available if the **rowType** is *"data"*.     
+Differs from the **value** field only when the column to which the prepared cell belongs uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '{basewidgetpath}/Configuration/columns/lookup/').
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.isExpanded): Boolean
+<!-- %field(e.isExpanded)% -->
+
+##### field(e.isNewRow): Boolean
+Indicates that the row is added, but not yet saved. Available if **rowType** is *"data"*.
+
+##### field(e.isSelected): Boolean
+Indicates whether the row is selected. Available if **rowType** is *"data"* or *"detail"*.
+
+##### field(e.key): any
+The row's key. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.        
+If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.oldValue): any
+<!-- %field(cellInfo.oldValue)% -->
+
+##### field(e.row): dxDataGridRowObject
+The row [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '{basewidgetpath}/Row/').
+
+##### field(e.rowIndex): Number
+The row's index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
+
+##### field(e.rowType): String
+The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
+
+##### field(e.text): String
+The cell's [formatted](/api-reference/_hidden/dxDataGridColumn/format.md '{basewidgetpath}/Configuration/columns/#format') value converted to a string. Available if the **rowType** is *"data"*.
+
+##### field(e.value): any
+The cell's raw value. Available if the **rowType** is *"data"*.
+
+##### field(e.watch): function()
+Allows you to track a variable and execute actions when it changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.       
+This function has the following parameters:     
+
+- **getter(data)**: Function        
+A function that returns the variable that should be tracked.
+
+- **handler(newValue)**: Function       
+A function called when this variable changes.
 
 ---
 In the following code, the **onCellPrepared** function is used to change a `ProductName`'s color depending on the `Amount` of sold products. You can paste this code in the [Real-Time Updates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates) demo and see how it works.

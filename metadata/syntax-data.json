@@ -571,6 +571,11 @@
     "baseWidgetOptions.tooltip.zIndex": {
       "vue": "z-index"
     },
+    "chartAxisObject": {
+      "angular": "dxo-chart-axis-object",
+      "react": "ChartAxisObject",
+      "vue": "DxChartAxisObject"
+    },
     "chartPointAggregationInfoObject": {
       "angular": "dxo-chart-point-aggregation-info-object",
       "react": "ChartPointAggregationInfoObject",
@@ -4258,6 +4263,127 @@
       "react": "Diagram",
       "vue": "DxDiagram"
     },
+    "dxDiagramAddShapeArgs": {
+      "vue": "dx-diagram-add-shape-args"
+    },
+    "dxDiagramAddShapeArgs.position": {
+      "angular": "dxo-position",
+      "react": "Position",
+      "vue": "DxPosition"
+    },
+    "dxDiagramAddShapeArgs.shape": {
+      "angular": "dxo-shape",
+      "react": "Shape",
+      "vue": "DxShape"
+    },
+    "dxDiagramAddShapeFromToolboxArgs": {
+      "vue": "dx-diagram-add-shape-from-toolbox-args"
+    },
+    "dxDiagramAddShapeFromToolboxArgs.shapeType": {
+      "vue": "shape-type"
+    },
+    "dxDiagramBeforeChangeConnectorTextArgs": {
+      "vue": "dx-diagram-before-change-connector-text-args"
+    },
+    "dxDiagramBeforeChangeConnectorTextArgs.connector": {
+      "angular": "dxo-connector",
+      "react": "Connector",
+      "vue": "DxConnector"
+    },
+    "dxDiagramBeforeChangeShapeTextArgs": {
+      "vue": "dx-diagram-before-change-shape-text-args"
+    },
+    "dxDiagramBeforeChangeShapeTextArgs.shape": {
+      "angular": "dxo-shape",
+      "react": "Shape",
+      "vue": "DxShape"
+    },
+    "dxDiagramChangeConnectionArgs": {
+      "vue": "dx-diagram-change-connection-args"
+    },
+    "dxDiagramChangeConnectionArgs.connectionPointIndex": {
+      "vue": "connection-point-index"
+    },
+    "dxDiagramChangeConnectionArgs.connector": {
+      "angular": "dxo-connector",
+      "react": "Connector",
+      "vue": "DxConnector"
+    },
+    "dxDiagramChangeConnectionArgs.connectorPosition": {
+      "vue": "connector-position"
+    },
+    "dxDiagramChangeConnectionArgs.newShape": {
+      "angular": "dxo-new-shape",
+      "react": "NewShape",
+      "vue": "DxNewShape"
+    },
+    "dxDiagramChangeConnectionArgs.oldShape": {
+      "angular": "dxo-old-shape",
+      "react": "OldShape",
+      "vue": "DxOldShape"
+    },
+    "dxDiagramChangeConnectorPointsArgs": {
+      "vue": "dx-diagram-change-connector-points-args"
+    },
+    "dxDiagramChangeConnectorPointsArgs.connector": {
+      "angular": "dxo-connector",
+      "react": "Connector",
+      "vue": "DxConnector"
+    },
+    "dxDiagramChangeConnectorPointsArgs.newPoints": {
+      "angular": "dxi-new-point",
+      "react": "NewPoint",
+      "vue": "DxNewPoint"
+    },
+    "dxDiagramChangeConnectorPointsArgs.oldPoints": {
+      "angular": "dxi-old-point",
+      "react": "OldPoint",
+      "vue": "DxOldPoint"
+    },
+    "dxDiagramChangeConnectorTextArgs": {
+      "vue": "dx-diagram-change-connector-text-args"
+    },
+    "dxDiagramChangeConnectorTextArgs.connector": {
+      "angular": "dxo-connector",
+      "react": "Connector",
+      "vue": "DxConnector"
+    },
+    "dxDiagramChangeShapeTextArgs": {
+      "vue": "dx-diagram-change-shape-text-args"
+    },
+    "dxDiagramChangeShapeTextArgs.shape": {
+      "angular": "dxo-shape",
+      "react": "Shape",
+      "vue": "DxShape"
+    },
+    "dxDiagramConnector": {
+      "angular": "dxo-diagram-connector",
+      "react": "DxDiagramConnector",
+      "vue": "DxDiagramConnector"
+    },
+    "dxDiagramConnector.fromId": {
+      "vue": "from-id"
+    },
+    "dxDiagramConnector.fromKey": {
+      "vue": "from-key"
+    },
+    "dxDiagramConnector.fromPointIndex": {
+      "vue": "from-point-index"
+    },
+    "dxDiagramConnector.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "dxDiagramConnector.toId": {
+      "vue": "to-id"
+    },
+    "dxDiagramConnector.toKey": {
+      "vue": "to-key"
+    },
+    "dxDiagramConnector.toPointIndex": {
+      "vue": "to-point-index"
+    },
     "dxDiagramCustomCommand": {
       "vue": "dx-diagram-custom-command"
     },
@@ -4265,6 +4391,27 @@
       "angular": "dxi-item",
       "react": "Item",
       "vue": "DxItem"
+    },
+    "dxDiagramDeleteConnectorArgs": {
+      "vue": "dx-diagram-delete-connector-args"
+    },
+    "dxDiagramDeleteConnectorArgs.connector": {
+      "angular": "dxo-connector",
+      "react": "Connector",
+      "vue": "DxConnector"
+    },
+    "dxDiagramDeleteShapeArgs": {
+      "vue": "dx-diagram-delete-shape-args"
+    },
+    "dxDiagramDeleteShapeArgs.shape": {
+      "angular": "dxo-shape",
+      "react": "Shape",
+      "vue": "DxShape"
+    },
+    "dxDiagramItem": {
+      "angular": "dxo-diagram-item",
+      "react": "DxDiagramItem",
+      "vue": "DxDiagramItem"
     },
     "dxDiagramItem.dataItem": {
       "vue": "data-item"
@@ -4276,6 +4423,24 @@
       "angular": "dxo-key",
       "react": "Key",
       "vue": "DxKey"
+    },
+    "dxDiagramMoveShapeArgs": {
+      "vue": "dx-diagram-move-shape-args"
+    },
+    "dxDiagramMoveShapeArgs.newPosition": {
+      "angular": "dxo-new-position",
+      "react": "NewPosition",
+      "vue": "DxNewPosition"
+    },
+    "dxDiagramMoveShapeArgs.oldPosition": {
+      "angular": "dxo-old-position",
+      "react": "OldPosition",
+      "vue": "DxOldPosition"
+    },
+    "dxDiagramMoveShapeArgs.shape": {
+      "angular": "dxo-shape",
+      "react": "Shape",
+      "vue": "DxShape"
     },
     "dxDiagramOptions.accessKey": {
       "vue": "access-key"
@@ -4791,6 +4956,24 @@
       "react": "ZoomLevel",
       "vue": "DxZoomLevel"
     },
+    "dxDiagramResizeShapeArgs": {
+      "vue": "dx-diagram-resize-shape-args"
+    },
+    "dxDiagramResizeShapeArgs.newSize": {
+      "angular": "dxo-new-size",
+      "react": "NewSize",
+      "vue": "DxNewSize"
+    },
+    "dxDiagramResizeShapeArgs.oldSize": {
+      "angular": "dxo-old-size",
+      "react": "OldSize",
+      "vue": "DxOldSize"
+    },
+    "dxDiagramResizeShapeArgs.shape": {
+      "angular": "dxo-shape",
+      "react": "Shape",
+      "vue": "DxShape"
+    },
     "dxDiagramShape": {
       "angular": "dxo-diagram-shape",
       "react": "DxDiagramShape",
@@ -5197,11 +5380,6 @@
     },
     "dxElement": {
       "vue": "dx-element"
-    },
-    "dxEvent": {
-      "angular": "dxo-dx-event",
-      "react": "DxEvent",
-      "vue": "DxDxEvent"
     },
     "dxFileManager": {
       "angular": "dx-file-manager",
@@ -8745,6 +8923,31 @@
     "dxPivotGridOptions.wordWrapEnabled": {
       "vue": "word-wrap-enabled"
     },
+    "dxPivotGridPivotGridCell": {
+      "angular": "dxo-pivot-grid-pivot-grid-cell",
+      "react": "DxPivotGridPivotGridCell",
+      "vue": "DxPivotGridPivotGridCell"
+    },
+    "dxPivotGridPivotGridCell.columnPath": {
+      "vue": "column-path"
+    },
+    "dxPivotGridPivotGridCell.columnType": {
+      "vue": "column-type"
+    },
+    "dxPivotGridPivotGridCell.dataIndex": {
+      "vue": "data-index"
+    },
+    "dxPivotGridPivotGridCell.rowPath": {
+      "vue": "row-path"
+    },
+    "dxPivotGridPivotGridCell.rowType": {
+      "vue": "row-type"
+    },
+    "dxPivotGridSummaryCell": {
+      "angular": "dxo-pivot-grid-summary-cell",
+      "react": "DxPivotGridSummaryCell",
+      "vue": "DxPivotGridSummaryCell"
+    },
     "dxPolarChart": {
       "angular": "dx-polar-chart",
       "react": "PolarChart",
@@ -10313,6 +10516,19 @@
       "angular": "dx-sankey",
       "react": "Sankey",
       "vue": "DxSankey"
+    },
+    "dxSankeyConnectionInfoObject": {
+      "angular": "dxo-sankey-connection-info-object",
+      "react": "DxSankeyConnectionInfoObject",
+      "vue": "DxSankeyConnectionInfoObject"
+    },
+    "dxSankeyLink": {
+      "vue": "dx-sankey-link"
+    },
+    "dxSankeyLink.connection": {
+      "angular": "dxo-connection",
+      "react": "Connection",
+      "vue": "DxConnection"
     },
     "dxSankeyNode": {
       "vue": "dx-sankey-node"
@@ -13337,14 +13553,23 @@
     "enums.DiagramConnectorLineType": {
       "vue": "diagram-connector-line-type"
     },
+    "enums.DiagramConnectorPosition": {
+      "vue": "diagram-connector-position"
+    },
     "enums.DiagramDataLayoutType": {
       "vue": "diagram-data-layout-type"
     },
     "enums.DiagramItemType": {
       "vue": "diagram-item-type"
     },
+    "enums.DiagramModelOperation": {
+      "vue": "diagram-model-operation"
+    },
     "enums.DiagramPanelVisibility": {
       "vue": "diagram-panel-visibility"
+    },
+    "enums.DiagramRequestEditOperationReason": {
+      "vue": "diagram-request-edit-operation-reason"
     },
     "enums.DiagramShapeCategory": {
       "vue": "diagram-shape-category"
@@ -13403,6 +13628,9 @@
     "enums.FileManagerPredefinedToolbarItem": {
       "vue": "file-manager-predefined-toolbar-item"
     },
+    "enums.FileManagerViewArea": {
+      "vue": "file-manager-view-area"
+    },
     "enums.FileUploadMode": {
       "vue": "file-upload-mode"
     },
@@ -13441,6 +13669,9 @@
     },
     "enums.GanttPredefinedToolbarItem": {
       "vue": "gantt-predefined-toolbar-item"
+    },
+    "enums.GanttRenderScaleType": {
+      "vue": "gantt-render-scale-type"
     },
     "enums.GanttScaleType": {
       "vue": "gantt-scale-type"
@@ -13577,11 +13808,29 @@
     "enums.PieChartType": {
       "vue": "pie-chart-type"
     },
+    "enums.PivotGridArea": {
+      "vue": "pivot-grid-area"
+    },
     "enums.PivotGridDataFieldArea": {
       "vue": "pivot-grid-data-field-area"
     },
+    "enums.PivotGridDataType": {
+      "vue": "pivot-grid-data-type"
+    },
+    "enums.PivotGridGroupInterval": {
+      "vue": "pivot-grid-group-interval"
+    },
     "enums.PivotGridRowHeaderLayout": {
       "vue": "pivot-grid-row-header-layout"
+    },
+    "enums.PivotGridRunningTotalMode": {
+      "vue": "pivot-grid-running-total-mode"
+    },
+    "enums.PivotGridSortBy": {
+      "vue": "pivot-grid-sort-by"
+    },
+    "enums.PivotGridSummaryDisplayMode": {
+      "vue": "pivot-grid-summary-display-mode"
     },
     "enums.PivotGridTotalDisplayMode": {
       "vue": "pivot-grid-total-display-mode"
@@ -13814,6 +14063,9 @@
     "enums.WordWrap": {
       "vue": "word-wrap"
     },
+    "enums.ZoomPanAction": {
+      "vue": "zoom-pan-action"
+    },
     "event": {
       "angular": "dxo-event",
       "react": "Event",
@@ -13837,6 +14089,20 @@
     },
     "eventObject.delegateTarget": {
       "vue": "delegate-target"
+    },
+    "excelPivotGridCell": {
+      "angular": "dxo-excel-pivot-grid-cell",
+      "react": "ExcelPivotGridCell",
+      "vue": "DxExcelPivotGridCell"
+    },
+    "excelPivotGridCell.columnIndex": {
+      "vue": "column-index"
+    },
+    "excelPivotGridCell.headerType": {
+      "vue": "header-type"
+    },
+    "excelPivotGridCell.rowIndex": {
+      "vue": "row-index"
     },
     "fileSystemItem": {
       "vue": "file-system-item"
@@ -14687,6 +14953,122 @@
       "angular": "dxo-pie-point-object",
       "react": "PiePointObject",
       "vue": "DxPiePointObject"
+    },
+    "pivotGridDataSourceOptions.fields": {
+      "angular": "dxi-field",
+      "react": "Field",
+      "vue": "DxField"
+    },
+    "pivotGridDataSourceOptions.fields.allowCrossGroupCalculation": {
+      "vue": "allow-cross-group-calculation"
+    },
+    "pivotGridDataSourceOptions.fields.allowExpandAll": {
+      "vue": "allow-expand-all"
+    },
+    "pivotGridDataSourceOptions.fields.allowFiltering": {
+      "vue": "allow-filtering"
+    },
+    "pivotGridDataSourceOptions.fields.allowSorting": {
+      "vue": "allow-sorting"
+    },
+    "pivotGridDataSourceOptions.fields.allowSortingBySummary": {
+      "vue": "allow-sorting-by-summary"
+    },
+    "pivotGridDataSourceOptions.fields.areaIndex": {
+      "vue": "area-index"
+    },
+    "pivotGridDataSourceOptions.fields.calculateCustomSummary": {
+      "vue": "calculate-custom-summary"
+    },
+    "pivotGridDataSourceOptions.fields.calculateSummaryValue": {
+      "vue": "calculate-summary-value"
+    },
+    "pivotGridDataSourceOptions.fields.customizeText": {
+      "vue": "customize-text"
+    },
+    "pivotGridDataSourceOptions.fields.dataField": {
+      "vue": "data-field"
+    },
+    "pivotGridDataSourceOptions.fields.dataType": {
+      "vue": "data-type"
+    },
+    "pivotGridDataSourceOptions.fields.displayFolder": {
+      "vue": "display-folder"
+    },
+    "pivotGridDataSourceOptions.fields.filterType": {
+      "vue": "filter-type"
+    },
+    "pivotGridDataSourceOptions.fields.filterValues": {
+      "vue": "filter-values"
+    },
+    "pivotGridDataSourceOptions.fields.format": {
+      "angular": "dxo-format",
+      "react": "Format",
+      "vue": "DxFormat"
+    },
+    "pivotGridDataSourceOptions.fields.groupIndex": {
+      "vue": "group-index"
+    },
+    "pivotGridDataSourceOptions.fields.groupInterval": {
+      "vue": "group-interval"
+    },
+    "pivotGridDataSourceOptions.fields.groupName": {
+      "vue": "group-name"
+    },
+    "pivotGridDataSourceOptions.fields.headerFilter": {
+      "angular": "dxo-header-filter",
+      "react": "HeaderFilter",
+      "vue": "DxHeaderFilter"
+    },
+    "pivotGridDataSourceOptions.fields.headerFilter.allowSearch": {
+      "vue": "allow-search"
+    },
+    "pivotGridDataSourceOptions.fields.headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "pivotGridDataSourceOptions.fields.headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
+    "pivotGridDataSourceOptions.fields.isMeasure": {
+      "vue": "is-measure"
+    },
+    "pivotGridDataSourceOptions.fields.runningTotal": {
+      "vue": "running-total"
+    },
+    "pivotGridDataSourceOptions.fields.showGrandTotals": {
+      "vue": "show-grand-totals"
+    },
+    "pivotGridDataSourceOptions.fields.showTotals": {
+      "vue": "show-totals"
+    },
+    "pivotGridDataSourceOptions.fields.showValues": {
+      "vue": "show-values"
+    },
+    "pivotGridDataSourceOptions.fields.sortBy": {
+      "vue": "sort-by"
+    },
+    "pivotGridDataSourceOptions.fields.sortBySummaryField": {
+      "vue": "sort-by-summary-field"
+    },
+    "pivotGridDataSourceOptions.fields.sortBySummaryPath": {
+      "vue": "sort-by-summary-path"
+    },
+    "pivotGridDataSourceOptions.fields.sortingMethod": {
+      "vue": "sorting-method"
+    },
+    "pivotGridDataSourceOptions.fields.sortOrder": {
+      "vue": "sort-order"
+    },
+    "pivotGridDataSourceOptions.fields.summaryDisplayMode": {
+      "vue": "summary-display-mode"
+    },
+    "pivotGridDataSourceOptions.fields.summaryType": {
+      "vue": "summary-type"
+    },
+    "pivotGridDataSourceOptions.fields.wordWrapEnabled": {
+      "vue": "word-wrap-enabled"
     },
     "polarChartSeries": {
       "angular": "dxo-polar-chart-series",

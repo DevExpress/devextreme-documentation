@@ -4,19 +4,19 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after the UI component is hidden.
 
 ##### param(e): ui/toast:HiddenEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
 <!-- Description goes here -->

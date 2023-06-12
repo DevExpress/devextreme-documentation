@@ -4,31 +4,31 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a UI component property is changed.
 
 ##### param(e): ui/range_slider:OptionChangedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fullName): String
-<!-- Description goes here -->
+The path to the modified property that includes all parent properties.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.name): String
-<!-- Description goes here -->
+The modified property if it belongs to the first level. Otherwise, the first-level property it is nested into.
 
 ##### field(e.previousValue): any
-<!-- Description goes here -->
+The UI component's previous value.
 
 ##### field(e.value): any
-<!-- Description goes here -->
+The modified property's new value.
 
 ---
 <!-- Description goes here -->

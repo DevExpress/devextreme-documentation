@@ -4,22 +4,22 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the UI component loses focus.
 
 ##### param(e): ui/text_area:FocusOutEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
 <!-- Description goes here -->

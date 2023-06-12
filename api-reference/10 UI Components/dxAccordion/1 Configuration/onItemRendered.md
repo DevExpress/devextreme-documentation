@@ -4,28 +4,28 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a collection item is rendered.
 
 ##### param(e): ui/accordion:ItemRenderedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The current item's data.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The current item's index.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
 <!-- Description goes here -->

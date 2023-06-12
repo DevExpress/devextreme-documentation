@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a new row is added to the UI component.
 
 ##### param(e): ui/data_grid:InitNewRowEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.data): any
-<!-- Description goes here -->
+The data of the inserted row; initially empty.
 
 ##### field(e.promise): Promise<void>
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
 <!-- Description goes here -->

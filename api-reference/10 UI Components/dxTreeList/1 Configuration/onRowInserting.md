@@ -4,25 +4,26 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a new row is inserted into the data source.
 
 ##### param(e): ui/tree_list:RowInsertingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.cancel): Promise<void>
-<!-- Description goes here -->
+**true**, a Promise resolved with **true**, or a rejected Promise stops row insertion.       
+**false** or a Promise resolved with **false** or **undefined** continues row insertion.
 
 ##### field(e.data): any
-<!-- Description goes here -->
+The data of the row that should be inserted.
 
 ---
 <!-- Description goes here -->

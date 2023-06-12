@@ -4,19 +4,19 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a series point is selected or selection is canceled.
 
 ##### param(e): viz/pie_chart:PointSelectionChangedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+The UI component's container.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ---
 <!-- Description goes here -->

@@ -4,19 +4,19 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed once the drop-down editor is opened.
 
 ##### param(e): ui/tag_box:OpenedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
 <!-- Description goes here -->

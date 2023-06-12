@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a series point is clicked or tapped.
 
 ##### param(e): viz/chart:PointClickEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
 <!-- Description goes here -->
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.model): any
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ---
 <!-- Description goes here -->

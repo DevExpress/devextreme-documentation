@@ -4,37 +4,37 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed each time the UI component is updated.
 
 ##### param(e): ui/scroll_view:UpdatedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.reachedBottom): Boolean
-<!-- Description goes here -->
+Indicates whether the container's bottom boundary is reached.
 
 ##### field(e.reachedLeft): Boolean
-<!-- Description goes here -->
+Indicates whether the container's left boundary is reached.
 
 ##### field(e.reachedRight): Boolean
-<!-- Description goes here -->
+Indicates whether the container's right boundary is reached.
 
 ##### field(e.reachedTop): Boolean
-<!-- Description goes here -->
+Indicates whether the container's top boundary is reached.
 
 ##### field(e.scrollOffset): any
-<!-- Description goes here -->
+The current scroll offset in the following format: { top: topOffset, left: leftOffset }.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
 <!-- Description goes here -->

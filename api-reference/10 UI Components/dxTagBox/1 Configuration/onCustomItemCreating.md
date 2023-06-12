@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a user adds a custom item. Requires [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '{basewidgetpath}/Configuration/#acceptCustomValue') to be set to **true**.
 
 ##### param(e): ui/tag_box:CustomItemCreatingEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.customItem): String | Object | Promise<any>
-<!-- Description goes here -->
+The field where to place a custom item.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ##### field(e.text): String
-<!-- Description goes here -->
+The input field's text.
 
 ---
 <!-- Description goes here -->

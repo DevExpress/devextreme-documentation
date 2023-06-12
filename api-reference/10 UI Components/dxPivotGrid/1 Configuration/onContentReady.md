@@ -4,19 +4,19 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the UI component is rendered and each time the component is repainted.
 
 ##### param(e): ui/pivot_grid:ContentReadyEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+The model data. Available only if you use Knockout.
 
 ---
 <!-- Description goes here -->

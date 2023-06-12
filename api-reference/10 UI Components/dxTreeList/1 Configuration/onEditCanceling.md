@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the edit operation is canceled, but row changes are not yet discarded.
 
 ##### param(e): ui/tree_list:EditCancelingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to **true** if the row changes should not be discarded.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ##### field(e.changes): Array<DataChange>
-<!-- Description goes here -->
+Row changes to be discarded.
 
 ---
 <!-- Description goes here -->

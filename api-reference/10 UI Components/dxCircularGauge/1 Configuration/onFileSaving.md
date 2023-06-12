@@ -4,28 +4,29 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a file with exported UI component is saved to the user's local storage.
 
 ##### param(e): viz/circular_gauge:FileSavingEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to prevent file saving.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.data): Blob
-<!-- Description goes here -->
+Exported data as a BLOB.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fileName): String
-<!-- Description goes here -->
+The name of the file to be saved.
 
 ##### field(e.format): String
-<!-- Description goes here -->
+The format of the file to be saved.         
+Possible Values: 'PNG' | 'PDF' | 'JPEG' | 'SVG' | 'GIF'
 
 ---
 <!-- Description goes here -->

@@ -4,31 +4,31 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a list item is clicked or tapped.
 
 ##### param(e): ui/select_box:ItemClickEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The clicked item's data.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+The item's container.
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The clicked item's index. If the UI component items are grouped, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ---
 <!-- Description goes here -->

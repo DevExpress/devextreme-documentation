@@ -4,28 +4,28 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') is changed.
 
 ##### param(e): ui/slider:ValueChangedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam This field is **undefined** if the value is changed programmatically.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ##### field(e.previousValue): any
-<!-- Description goes here -->
+The UI component's previous value.
 
 ##### field(e.value): any
-<!-- Description goes here -->
+The UI component's new value.
 
 ---
 <!-- Description goes here -->

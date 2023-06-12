@@ -4,28 +4,28 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before pending row changes are saved.
 
 ##### param(e): ui/data_grid:SavingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if Knockout is used.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to **true** if the default saving logic should be disabled.
 
 ##### field(e.changes): Array<DataChange>
-<!-- Description goes here -->
+Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array.
 
 ##### field(e.promise): Promise<void>
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
 <!-- Description goes here -->

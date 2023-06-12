@@ -18,5 +18,26 @@ type: function(e)
 ##### field(e.model): any
 <!-- Description goes here -->
 
+##### field(e.brokenRules): Array<ValidationRule>
+<!-- Description goes here -->
+
+##### field(e.errorText): String
+<!-- Description goes here -->
+
+##### field(e.isValid): Boolean
+<!-- Description goes here -->
+
+##### field(e.key): any
+<!-- Description goes here -->
+
+##### field(e.newData): Object
+<!-- Description goes here -->
+
+##### field(e.oldData): any
+<!-- Description goes here -->
+
+##### field(e.promise): Promise<void>
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

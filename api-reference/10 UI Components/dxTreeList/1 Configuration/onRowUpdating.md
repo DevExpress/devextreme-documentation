@@ -18,5 +18,17 @@ type: function(e)
 ##### field(e.model): any
 <!-- Description goes here -->
 
+##### field(e.cancel): Boolean | Promise<void>
+<!-- Description goes here -->
+
+##### field(e.key): any
+<!-- Description goes here -->
+
+##### field(e.newData): Object
+<!-- Description goes here -->
+
+##### field(e.oldData): Object
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

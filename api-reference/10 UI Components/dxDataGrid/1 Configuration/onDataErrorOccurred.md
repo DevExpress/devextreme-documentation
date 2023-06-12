@@ -18,5 +18,8 @@ type: function(e)
 ##### field(e.model): any
 <!-- Description goes here -->
 
+##### field(e.error): Error
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

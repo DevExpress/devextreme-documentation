@@ -18,5 +18,14 @@ type: function(e)
 ##### field(e.model): any
 <!-- Description goes here -->
 
+##### field(e.cancel): Boolean
+<!-- Description goes here -->
+
+##### field(e.changes): Array<DataChange>
+<!-- Description goes here -->
+
+##### field(e.promise): Promise<void>
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

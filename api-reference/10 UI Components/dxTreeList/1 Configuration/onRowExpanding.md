@@ -21,5 +21,8 @@ type: function(e)
 ##### field(e.model): any
 <!-- Description goes here -->
 
+##### field(e.key): any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

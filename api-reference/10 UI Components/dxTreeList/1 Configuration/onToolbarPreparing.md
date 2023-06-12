@@ -18,5 +18,8 @@ type: function(e)
 ##### field(e.model): any
 <!-- Description goes here -->
 
+##### field(e.toolbarOptions): dxToolbar_Options
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

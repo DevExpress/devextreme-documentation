@@ -2,7 +2,7 @@
 module: ui/data_grid
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangedInfo
+inherits: EventInfo,_common_grids_SelectionChangedInfo
 uid: ui/data_grid:SelectionChangedEvent
 generateTypeLink: 
 ---

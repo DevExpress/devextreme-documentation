@@ -4,6 +4,9 @@ type: function(e)
 default: null
 ---
 ---
+##### shortDescription
+A function that is executed when a collection item is clicked or tapped.
+
 ##### param(e): ui/list:ItemClickEvent
 Information about the event.
 

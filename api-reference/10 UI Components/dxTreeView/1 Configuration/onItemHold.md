@@ -4,6 +4,9 @@ type: function(e)
 default: null
 ---
 ---
+##### shortDescription
+A function that is executed when a collection item has been held for a [specified period](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemHoldTimeout.md '{basewidgetpath}/Configuration/#itemHoldTimeout').
+
 ##### param(e): ui/tree_view:ItemHoldEvent
 Information about the event.
 

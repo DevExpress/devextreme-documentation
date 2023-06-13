@@ -4,6 +4,9 @@ type: function(e)
 default: null
 ---
 ---
+##### shortDescription
+A function that is executed after a collection item is rendered.
+
 ##### param(e): ui/tree_view:ItemRenderedEvent
 Information about the event.
 

@@ -5,6 +5,9 @@ default: null
 hidden: false
 ---
 ---
+##### shortDescription
+A function that is executed before a collection item is deleted from the data source.
+
 ##### param(e): ui/list:ItemDeletingEvent
 Information about the event.
 

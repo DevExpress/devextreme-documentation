@@ -4,6 +4,9 @@ type: function(e)
 default: null
 ---
 ---
+##### shortDescription
+A function that is executed when a collection item is right-clicked or pressed.
+
 ##### param(e): ui/list:ItemContextMenuEvent
 Information about the event.
 

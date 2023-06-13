@@ -28,4 +28,9 @@ Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%
 Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
-<!-- Description goes here -->
+
+A save operation can be initiated from the UI (with the Save button) or programatically (with the [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData') method).
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/"
+}

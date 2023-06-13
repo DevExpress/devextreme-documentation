@@ -25,4 +25,4 @@ Model data. Available only if you use Knockout.
 The key of the row.
 
 ---
-<!-- Description goes here -->
+To cancel row collapsing, assign **true** to the **cancel** field of the function parameter.

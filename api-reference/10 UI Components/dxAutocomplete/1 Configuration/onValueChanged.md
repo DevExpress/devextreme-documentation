@@ -28,4 +28,5 @@ The UI component's previous value.
 The UI component's new value.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [valueChangeEvent](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/valueChangeEvent.md '{basewidgetpath}/Configuration/#valueChangeEvent')

@@ -22,4 +22,6 @@ Model data. Available only if Knockout is used.
 Saved changes.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditingAndEditingEvents/"
+}

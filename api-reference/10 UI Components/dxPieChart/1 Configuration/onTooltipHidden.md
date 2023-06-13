@@ -22,4 +22,6 @@ The model data. Available only if you use Knockout.
 The series point whose tooltip is hidden; described in the [Point](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [hideTooltip()](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/hideTooltip().md '{basewidgetpath}/Methods/#hideTooltip')
+- **Point**.[hideTooltip()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/hideTooltip().md '{basewidgetpath}/Chart_Elements/Point/Methods/#hideTooltip')

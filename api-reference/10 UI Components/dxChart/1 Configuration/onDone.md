@@ -19,4 +19,7 @@ The UI component's instance.
 The model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [getAllSeries()](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getAllSeries().md '{basewidgetpath}/Methods/#getAllSeries')
+- [getSeriesByName(seriesName)](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getSeriesByName(seriesName).md '{basewidgetpath}/Methods/#getSeriesByNameseriesName')
+- [getSeriesByPos(seriesIndex)](/api-reference/10%20UI%20Components/BaseChart/3%20Methods/getSeriesByPos(seriesIndex).md '{basewidgetpath}/Methods/#getSeriesByPosseriesIndex')

@@ -10,7 +10,7 @@ A function that is executed when a series point is clicked or tapped.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel a click on a point.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

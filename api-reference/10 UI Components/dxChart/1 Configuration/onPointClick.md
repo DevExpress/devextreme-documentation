@@ -24,5 +24,8 @@ The UI component's instance.
 ##### field(e.model): any
 The model data. Available only if you use Knockout.
 
+##### field(e.target): basePointObject
+The clicked series point; described in the [Point](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
+
 ---
 <!-- Description goes here -->

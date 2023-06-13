@@ -18,5 +18,11 @@ The UI component's instance.
 ##### field(e.model): any
 The model data. Available only if you use Knockout.
 
+##### field(e.fileName): String
+The name of the file to which the UI component is about to be exported.
+
+##### field(e.format): String
+The resulting file format. One of PNG, PDF, JPEG, SVG and GIF.
+
 ---
 <!-- Description goes here -->

@@ -18,5 +18,8 @@ The UI component's instance.
 ##### field(e.model): any
 The model data. Available only if you use Knockout.
 
+##### field(e.target): any
+Information on the occurred incident.
+
 ---
 <!-- Description goes here -->

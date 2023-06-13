@@ -52,12 +52,12 @@ Allows you to configure the format. Can have one of the following structures:
         === or ===
         format: { style: "currency", currency: "EUR", useGrouping: true }
 
-    If you [use Globalize](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize'), you can use the fields the <a href="https://github.com/jquery/globalize/blob/master/doc/api/number/number-formatter.md" target="_blank">numberFormatter</a>, <a href="https://github.com/jquery/globalize/blob/master/doc/api/currency/currency-formatter.md" target="_blank">currencyFormatter</a>, and <a href="https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md" target="_blank">dateFormatter</a> accept instead of the fields described in this section. For example, you can use skeletons to format dates. Note that this approach can require additional <a href="https://github.com/jquery/globalize/blob/master/README.md#2-cldr-content" target="_blank">CLDR modules</a> not shipped with the DevExtreme package.
+    If you [use Globalize](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize'), you can use the fields that the <a href="https://github.com/jquery/globalize/blob/master/doc/api/number/number-formatter.md" target="_blank">numberFormatter</a>, <a href="https://github.com/jquery/globalize/blob/master/doc/api/currency/currency-formatter.md" target="_blank">currencyFormatter</a>, and <a href="https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md" target="_blank">dateFormatter</a> accept instead of the fields described in this section. For example, you can use skeletons to format dates. Note that this approach can require additional <a href="https://github.com/jquery/globalize/blob/master/README.md#2-cldr-content" target="_blank">CLDR modules</a> not shipped with the DevExtreme package.
 
         <!-- tab: Globalize -->
         format: { skeleton: 'GyMMMd' }
 
-    [note] Depending on the object structure, the **format** utility chooses the mechanism to use: DevExtreme internal, Intl or Globalize. If you mix properties from different zones (DevExtreme, Intl, or Globalize) in an object, the result can be unpredictable.
+    [note] Depending on the object structure, the **format** utility chooses the mechanism to use: DevExtreme internal, Intl, or Globalize. If you mix properties from different zones (DevExtreme, Intl, or Globalize) in an object, the result can be unpredictable.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"

@@ -19645,6 +19645,9 @@
     "excelPivotGridCell.rowIndex": {
       "vue": "row-index"
     },
+    "exportInfo.fileName": {
+      "vue": "file-name"
+    },
     "fileSystemItem": {
       "vue": "file-system-item"
     },
@@ -20642,6 +20645,11 @@
     },
     "pivotGridDataSourceOptions.fields.wordWrapEnabled": {
       "vue": "word-wrap-enabled"
+    },
+    "pointInteractionInfo.target": {
+      "angular": "dxo-target",
+      "react": "Target",
+      "vue": "DxTarget"
     },
     "polarChartSeries": {
       "angular": "dxo-polar-chart-series",

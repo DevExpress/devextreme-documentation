@@ -1,4 +1,5 @@
 ---
+id: dxTreeList.Options.onSelectionChanged
 type: function(e)
 ---
 ---

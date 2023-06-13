@@ -1,4 +1,5 @@
 ---
+id: dxScheduler.Options.onContentReady
 type: function(e)
 ---
 ---

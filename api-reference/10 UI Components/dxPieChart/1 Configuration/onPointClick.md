@@ -1,4 +1,5 @@
 ---
+id: dxPieChart.Options.onPointClick
 type: function(e)
 ---
 ---

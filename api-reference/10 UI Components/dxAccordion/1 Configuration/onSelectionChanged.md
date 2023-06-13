@@ -1,4 +1,5 @@
 ---
+id: dxAccordion.Options.onSelectionChanged
 type: function(e)
 ---
 ---

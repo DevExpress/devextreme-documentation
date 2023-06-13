@@ -1,4 +1,5 @@
 ---
+id: dxDateBox.Options.onValueChanged
 type: function(e)
 ---
 ---

@@ -1,4 +1,5 @@
 ---
+id: dxTagBox.Options.onValueChanged
 type: function(e)
 ---
 ---

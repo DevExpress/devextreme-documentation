@@ -1,4 +1,5 @@
 ---
+id: dxSelectBox.Options.onValueChanged
 type: function(e)
 ---
 ---

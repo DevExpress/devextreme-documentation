@@ -43,8 +43,8 @@ This function allows you to intercept row update and perform additional actions.
 
 [note]
 
-- You can use this function to change `e.newData` values, but do not use it to implement custom update logic. For this purpose, you can implement the [onSaving](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onSaving.md '{basewidgetpath}/Configuration/#onSaving') or [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/')'s [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update') function.
+- You can use this function to change `e.newData` values, but do not use it to implement custom update logic. For this purpose, you can implement the [onSaving](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onSaving.md '{basewidgetpath}/Configuration/#onSaving') or [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/')'s [update](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update') function.
 
-- In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
+- In batch [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be updated.
 
 [/note]

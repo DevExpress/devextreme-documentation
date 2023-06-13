@@ -30,7 +30,7 @@ The clicked series point; described in the [Point](/api-reference/10%20UI%20Comp
 ---
 [note]
 
-The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onSeriesClick.md '{basewidgetpath}/Configuration/#onSeriesClick') function is executed after this function. The following code shows how to prevent this: 
+The [onSeriesClick](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/onSeriesClick.md '{basewidgetpath}/Configuration/#onSeriesClick') function is executed after this function. The following code shows how to prevent this: 
 
 ---
 ##### jQuery

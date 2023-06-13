@@ -29,7 +29,7 @@ The data of the row that should be removed.
 The row's key.
 
 ---
-[note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be removed.
+[note] In batch [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be removed.
 
 This function allows you to intercept row removal and perform additional actions. The following code shows how to use the function parameter's **cancel** field to prevent or continue removal. In this code, a Promise is assigned to this field. Removal continues if a user confirms it and row validation on the server succeeds (the Promise is resolved); otherwise, removal is prevented (the Promise is rejected):
 

@@ -26,5 +26,5 @@ The resulting file format. One of PNG, PDF, JPEG, SVG and GIF.
 
 ---
 #####See Also#####
-- [onExported](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
-- [onFileSaving](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')
+- [onExported](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/onExported.md '{basewidgetpath}/Configuration#onExported')
+- [onFileSaving](/api-reference/10%20UI%20Components/dxSparkline/1%20Configuration/onFileSaving.md '{basewidgetpath}/Configuration#onFileSaving')

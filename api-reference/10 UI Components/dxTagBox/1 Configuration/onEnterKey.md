@@ -22,4 +22,4 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ---
-[note] This function is executed *after* the [onKeyUp](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyUp.md '{basewidgetpath}/Configuration/#onKeyUp') and [onKeyDown](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyDown.md '{basewidgetpath}/Configuration/#onKeyDown') functions.
+[note] This function is executed *after* the [onKeyUp](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/onKeyUp.md '{basewidgetpath}/Configuration/#onKeyUp') and [onKeyDown](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/onKeyDown.md '{basewidgetpath}/Configuration/#onKeyDown') functions.

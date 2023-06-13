@@ -39,6 +39,6 @@ This function allows you to intercept row insertion and perform additional actio
 
 - Do not use this function to insert data. If you need a custom insert logic, implement [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/')'s [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/update.md 'Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#update') function.
 
-- In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be inserted.
+- In batch [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be inserted.
 
 [/note]

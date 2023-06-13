@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') is changed.
+A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') is changed.
 
 ##### param(e): ui/tag_box:ValueChangedEvent
 Information about the event.

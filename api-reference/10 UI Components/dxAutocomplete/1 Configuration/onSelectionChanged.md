@@ -9,9 +9,6 @@ A function that is executed when a list item is selected or selection is cancele
 ##### param(e): ui/autocomplete:SelectionChangedEvent
 Information about the event.
 
-##### field(e.addedItems): Array<any>
-<!-- Description goes here -->
-
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
@@ -21,8 +18,8 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.removedItems): Array<any>
-<!-- Description goes here -->
+##### field(e.selectedItem): any
+The selected item's data.
 
 ---
 <!-- Description goes here -->

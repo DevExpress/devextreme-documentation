@@ -1468,6 +1468,9 @@
       "react": "PreviousItem",
       "vue": "DxPreviousItem"
     },
+    "_ui_drop_down_editor_ui_drop_down_list_SelectionChangedInfo.selectedItem": {
+      "vue": "selected-item"
+    },
     "_ui_file_manager_ContentReadyEvent": {
       "angular": "dxo-ui-file-manager--content-ready-event",
       "react": "_ui_file_manager_ContentReadyEvent",

@@ -7,23 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when a file or directory is renamed.
 
-##### param(e): Object
+##### param(e): ItemRenamedEvent
 Information about the event.
-
-##### field(e.component): dxFileManager
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "component" }
-
-##### field(e.itemName): String
-The current name of the renamed file or directory.
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.sourceItem): FileSystemItem
-The renamed file or directory.
 
 ---
 

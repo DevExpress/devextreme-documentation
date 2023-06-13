@@ -7,62 +7,8 @@ default: null
 ##### shortDescription
 A function used to customize a cell's [editor](/api-reference/_hidden/GridBaseColumn/editorOptions.md '{basewidgetpath}/Configuration/columns/#editorOptions'). Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate').
 
-##### param(e): Object
+##### param(e): EditorPreparingEvent
 Information about the event that caused the function's execution.
-
-##### field(e.cancel): Boolean
-Allows you to cancel the editor's creation.        
-You can set this field's value to **true** and implement a custom editor.
-
-##### field(e.component): dxDataGrid
-The UI component's instance.
-
-##### field(e.dataField): String
-The name of the field that supplies data for the column's editor.
-
-##### field(e.disabled): Boolean
-Indicates whether the editor is disabled.
-
-##### field(e.editorElement): DxElement
-#include common-ref-elementparam with { element: "editor" }
-
-##### field(e.editorName): String
-Allows you to change the editor. Accepts names of DevExtreme UI components only, for example, *"dxTextBox"*.      
-Import a new editor's module when [DevExtreme modules](/concepts/Common/Modularity/01%20Link%20Modules/10%20Use%20Webpack.md '/Documentation/Guide/Common/Modularity/') are used.
-
-##### field(e.editorOptions): Object
-Gets and sets the editor's configuration.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.parentType): String
-The editor's location. One of *"dataRow"*, *"filterRow"*, *"headerRow"* or *"searchPanel"*.      
-Properties passed to the function depend on this value.
-
-##### field(e.readOnly): Boolean
-Indicates whether the editor is read-only.
-
-##### field(e.row): dxDataGridRowObject
-The [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row's editor.
-
-##### field(e.rtlEnabled): Boolean
-Indicates whether the editor uses right-to-left representation.
-
-##### field(e.setValue(newValue, newText)): any
-A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
-
-##### field(e.updateValueTimeout): Number
-Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
-
-##### field(e.value): any
-The editor's value. This field is read-only. To change the editor's value, use the **setValue(newValue, newText)** function parameter.
-
-##### field(e.width): Number
-The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
 
 ---
 Use this function to:

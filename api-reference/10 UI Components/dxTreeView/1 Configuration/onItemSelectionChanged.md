@@ -7,29 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when a single TreeView item is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): ItemSelectionChangedEvent
 Information about the event.
-
-##### field(e.component): dxTreeView
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.itemElement): DxElement
-#include common-ref-elementparam with { element: "item" }
-
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
-##### field(e.node): dxTreeViewNode
-The item's node.
-
-##### field(e.itemData): Object
-The selected item's data.
-
-##### field(e.itemIndex): Number
-The item's index.
 
 ---
 This function is executed when:

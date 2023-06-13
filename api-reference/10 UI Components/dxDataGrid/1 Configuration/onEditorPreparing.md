@@ -52,6 +52,9 @@ The [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Docume
 ##### field(e.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.
 
+##### field(e.setValue): any
+A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
+
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
@@ -60,9 +63,6 @@ The editor's value. This field is read-only. To change the editor's value, use t
 
 ##### field(e.width): Number
 The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
-
-##### field(e.setValue): any
-<!-- Description goes here -->
 
 ---
 Use this function to:

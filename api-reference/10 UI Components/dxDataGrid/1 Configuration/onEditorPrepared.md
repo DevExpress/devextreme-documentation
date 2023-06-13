@@ -8,48 +8,49 @@ default: null
 A function that is executed after an editor is created. Not executed for cells with an [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate').
 
 ##### param(e): ui/data_grid:EditorPreparedEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.dataField): String
-<!-- Description goes here -->
+The name of the field that provides data for the column the editor belongs to.
 
 ##### field(e.disabled): Boolean
-<!-- Description goes here -->
+Indicates whether the editor is disabled.
 
 ##### field(e.editorElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "editor" }
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Only available when using Knockout.
 
 ##### field(e.parentType): String
-<!-- Description goes here -->
+The editor's location. One of *"dataRow"*, *"filterRow"*, *"headerRow"* or *"searchPanel"*.      
+Options passed to the function depend on this value.
 
 ##### field(e.readOnly): Boolean
-<!-- Description goes here -->
+Indicates whether the editor is read-only.
 
 ##### field(e.row): dxDataGridRowObject
-<!-- Description goes here -->
+The [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/') of the row the editor belongs to.
 
 ##### field(e.rtlEnabled): Boolean
-<!-- Description goes here -->
+Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue): any
-<!-- Description goes here -->
+A method you should call to change the cell value and, optionally, the displayed value after the editor's value is changed.
 
 ##### field(e.updateValueTimeout): Number
-<!-- Description goes here -->
+Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-<!-- Description goes here -->
+The editor's value.
 
 ##### field(e.width): Number
-<!-- Description goes here -->
+The editor's width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
 
 ---

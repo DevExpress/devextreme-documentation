@@ -19,7 +19,7 @@ HtmlEditor is a client-side WYSIWYG editor that allows users to format textual a
 
 ## How to Use HTMLEditor
 
-HtmlEditor is designed to create rich text and export this text to HTML or Markdown. Note the following:
+HtmlEditor is designed to create rich text and export this text to HTML or Markdown. You can also use the component to parse HTML (for example, if you set [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value) to markup), but this approach may not be effective since HtmlEditor does not support all HTML features. Note the following:
 
 - If you use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM" target="_blank">Shadow DOM</a>, the HtmlEditor component may experience issues in some browsers (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot#browser_compatibility" target="_blank">getSelection</a>).
 
@@ -37,6 +37,8 @@ HtmlEditor is designed to create rich text and export this text to HTML or Markd
 
 - The component is not designed to convert text that is enclosed into `{}` characters into a variable. Markup with such text is processed as plain text.
 
-- The HtmlEditor tables are native HTML tables. They are not designed to add block elements to cells, users cannot past multiline text in separate cells, etc.
+- The HtmlEditor tables are native HTML tables and use native features, which leads to limitations. For example, users cannot past multiline text in separate cells.
+
+- The HtmlEditor tables are not designed to add complex elements to cells like block elements, lists, nested tables, etc.
 
 - HtmlEditor does not support pasting text from Microsoft Word.

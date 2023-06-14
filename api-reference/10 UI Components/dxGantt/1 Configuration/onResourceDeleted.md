@@ -7,23 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed when a resource is deleted.
 
-##### param(e): Object
+##### param(e): ResourceDeletedEvent
 Information about the event.
-
-##### field(e.component): dxGantt
-The UI component's instance.
-
-##### field(e.element): DxElement
-#include common-ref-elementparam with { element: "widget" }
-
-##### field(e.key): any
-The key of the deleted resource.
-
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
-##### field(e.values): any
-The values of the deleted resource.
 
 ---
 

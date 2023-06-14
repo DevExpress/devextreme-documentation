@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before data is exported.
 
-##### param(e): Object
+##### param(e): ui/data_grid:ExportingEvent
 Information about the event that caused the function execution.
 
 ##### field(e.cancel): Boolean
 Deprecated.
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

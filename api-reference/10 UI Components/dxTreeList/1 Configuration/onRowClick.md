@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed when a grid row is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/tree_list:RowClickEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.columns): Array<Object>
 All column [configurations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/').
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): Object

@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed when a row is double-clicked or double-tapped. Executed after [onCellDblClick](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onCellDblClick.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onCellDblClick').
 
-##### param(e): Object
+##### param(e): ui/data_grid:RowDblClickEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.columns): Array<dxDataGridColumn>
 The configurations of visible columns.
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): Object

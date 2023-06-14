@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the focused item is changed.
 
-##### param(e): Object
+##### param(e): ui/file_manager:FocusedItemChangedEvent
 Information about the event that caused the function's execution.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

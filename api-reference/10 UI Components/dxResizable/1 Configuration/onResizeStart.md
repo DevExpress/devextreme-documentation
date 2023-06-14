@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when resizing starts.
 
-##### param(e): Object
+##### param(e): ui/resizable:ResizeStartEvent
 Information about the event.
 
-##### field(e.component): dxResizable
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

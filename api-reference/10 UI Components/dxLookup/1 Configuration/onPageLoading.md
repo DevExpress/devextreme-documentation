@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed before the next page is loaded.
 
-##### param(e): Object
+##### param(e): ui/lookup:PageLoadingEvent
 Information about the event.
 
-##### field(e.component): dxLookup
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a file or directory is moved.
 
-##### param(e): Object
+##### param(e): ui/file_manager:ItemMovedEvent
 Information about the event.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

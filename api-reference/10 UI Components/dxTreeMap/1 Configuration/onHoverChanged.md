@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed after the pointer enters or leaves a node.
 
-##### param(e): Object
+##### param(e): viz/tree_map:HoverChangedEvent
 Information about the event.
 
-##### field(e.component): dxTreeMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

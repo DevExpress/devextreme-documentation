@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before the context menu is rendered.
 
-##### param(e): Object
+##### param(e): ui/gantt:ContextMenuPreparingEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel showing the context menu.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): any

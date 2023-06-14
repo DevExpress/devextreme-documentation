@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(e): Object
+##### param(e): ui/tree_list:EditorPreparingEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 <!-- %field(e.cancel)% -->
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.dataField): String
@@ -49,8 +49,8 @@ The [properties](/api-reference/10%20UI%20Components/dxTreeList/6%20Row '/Docume
 ##### field(e.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.
 
-##### field(e.setValue(newValue, newText)): any
-<!-- %field(e.setValue(newValue, newText))% -->
+##### field(e.setValue): any
+<!-- %field(e.setValue)% -->
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between the moment a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.

@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed when the **Cancel** button is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/action_sheet:CancelClickEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel hiding of the action sheet after the Cancel button is clicked.
 
-##### field(e.component): dxActionSheet
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

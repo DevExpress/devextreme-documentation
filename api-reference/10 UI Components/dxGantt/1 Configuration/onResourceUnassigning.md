@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a resource is unassigned from a task.
 
-##### param(e): Object
+##### param(e): ui/gantt:ResourceUnassigningEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the resource unassignment.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

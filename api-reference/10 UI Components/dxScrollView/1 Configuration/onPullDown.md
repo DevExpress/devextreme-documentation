@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the "pull to refresh" gesture is performed. Supported on mobile devices only.
 
-##### param(e): Object
+##### param(e): ui/scroll_view:PullDownEvent
 Information about the event.
 
-##### field(e.component): dxScrollView
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

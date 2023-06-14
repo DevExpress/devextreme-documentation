@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the "pull to refresh" gesture is performed on the drop-down item list. Supported on mobile devices only.
 
-##### param(e): Object
+##### param(e): ui/lookup:PullRefreshEvent
 Information about the event.
 
-##### field(e.component): dxLookup
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

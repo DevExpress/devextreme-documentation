@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a group element is rendered.
 
-##### param(e): Object
+##### param(e): ui/list:GroupRenderedEvent
 Information about the event.
 
-##### field(e.component): dxList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

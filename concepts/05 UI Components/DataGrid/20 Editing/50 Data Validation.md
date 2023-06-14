@@ -124,7 +124,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     
 ---
 
-The [onRowValidating](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onRowValidating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowValidating') handler allows you to perform an action before a notification that a validation rule has been broken is displayed. For instance, you can perform additional checks in this handler and change the validation result by changing the handler parameter's **isValid** field. 
+The [onRowValidating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowValidating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowValidating') handler allows you to perform an action before a notification that a validation rule has been broken is displayed. For instance, you can perform additional checks in this handler and change the validation result by changing the handler parameter's **isValid** field. 
 
 ---
 ##### jQuery

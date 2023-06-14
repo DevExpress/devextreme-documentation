@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a [legend item](/concepts/05%20UI%20Components/PolarChart/10%20Visual%20Elements/120%20Legend.md '/Documentation/Guide/UI_Components/PolarChart/Visual_Elements/#Legend') is clicked or tapped.
 
-##### param(e): Object
+##### param(e): viz/polar_chart:LegendClickEvent
 Information about the event.
 
-##### field(e.component): dxPolarChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

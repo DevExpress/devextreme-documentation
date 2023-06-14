@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a layer element is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): viz/vector_map:SelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxVectorMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

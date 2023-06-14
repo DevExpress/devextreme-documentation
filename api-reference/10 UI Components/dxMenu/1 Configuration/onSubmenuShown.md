@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after a submenu is displayed.
 
-##### param(e): Object
+##### param(e): ui/menu:SubmenuShownEvent
 Information about the event.
 
-##### field(e.component): dxMenu
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

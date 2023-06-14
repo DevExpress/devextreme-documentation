@@ -7,7 +7,7 @@ default: function(e) { if(!e.customItem) { e.customItem = e.text; } }
 ##### shortDescription
 A function that is executed when a user adds a custom item. Requires [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '{basewidgetpath}/Configuration/#acceptCustomValue') to be set to **true**.
 
-##### param(e): Object
+##### param(e): ui/select_box:CustomItemCreatingEvent
 Information about the event.
 
 ##### field(e.component): {WidgetName}

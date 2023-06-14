@@ -7,16 +7,16 @@ default: null
 ##### shortDescription
 A function that is executed after a tab is rendered.
 
-##### param(e): Object
+##### param(e): ui/tab_panel:TitleRenderedEvent
 Information about the event.
 
-##### field(e.component): dxTabPanel
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.itemData): Object
+##### field(e.itemData): any
 The data of the item whose title is rendered.
 
 ##### field(e.itemElement): DxElement

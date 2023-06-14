@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the current directory is changed.
 
-##### param(e): Object
+##### param(e): ui/file_manager:CurrentDirectoryChangedEvent
 Information about the event that caused the function's execution.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.directory): FileSystemItem

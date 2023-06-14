@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the value of a [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object field is changed.
 
-##### param(e): Object
+##### param(e): ui/form:FieldDataChangedEvent
 Information about the event.
 
-##### field(e.component): dxForm
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.dataField): String

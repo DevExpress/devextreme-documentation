@@ -1,7 +1,34 @@
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/"
-}
+---
+id: dxTreeList.Options.onSelectionChanged
+type: function(e)
+---
+---
+##### shortDescription
+A function that is executed after selecting a row or clearing its selection.
 
-#####See Also#####
-- [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowKeysmode')
-- [getSelectedRowsData(mode)](/api-reference/10%20UI%20Widgets/dxTreeList/3%20Methods/getSelectedRowsData(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowsDatamode')
+##### param(e): ui/tree_list:SelectionChangedEvent
+Information about the event that caused the function's execution.
+
+##### field(e.component): {WidgetName}
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
+##### field(e.currentDeselectedRowKeys): Array<any>
+The keys of the rows whose selection has been cleared.
+
+##### field(e.currentSelectedRowKeys): Array<any>
+The keys of the rows that have been selected.
+
+##### field(e.selectedRowKeys): Array<any>
+The keys of all selected rows.
+
+##### field(e.selectedRowsData): Array<Object>
+The data of all selected rows.     
+Does not include [calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue').
+
+---

@@ -101,7 +101,7 @@ If you want to implement an unbound column, specify column.[name](/api-reference
 
 ### You Implement an Editor in the editCellTemplate Body
 
-Call the **e.setValue** method available in the [template's argument](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate'). This method notifies the DataGrid or TreeList component that the value of a custom editor has changed. If you use a DevExtreme editor in this template, call **e.setValue** inside the [onValueChanged](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#onValueChanged') event handler of this editor.
+Call the **e.setValue** method available in the [template's argument](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate'). This method notifies the DataGrid or TreeList component that the value of a custom editor has changed. If you use a DevExtreme editor in this template, call **e.setValue** inside the [onValueChanged](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#onValueChanged') event handler of this editor.
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/",

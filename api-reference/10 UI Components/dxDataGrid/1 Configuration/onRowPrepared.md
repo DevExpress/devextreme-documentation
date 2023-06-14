@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed after a row is created.
 
-##### param(e): Object
+##### param(e): ui/data_grid:RowPreparedEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.columns): Array<dxDataGridColumn>
 All column [configurations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/').
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): Object

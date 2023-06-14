@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the Enter key has been pressed while an editor is focused.
 
-##### param(e): Object
+##### param(e): ui/form:EditorEnterKeyEvent
 Information about the event.
 
-##### field(e.component): dxForm
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.dataField): String

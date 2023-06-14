@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a funnel item is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): viz/funnel:SelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxFunnel
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

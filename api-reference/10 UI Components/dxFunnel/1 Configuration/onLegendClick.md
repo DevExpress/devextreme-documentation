@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a [legend item](/concepts/05%20UI%20Components/Funnel/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Legend/Overview/') is clicked or tapped.
 
-##### param(e): Object
+##### param(e): viz/funnel:LegendClickEvent
 Information about the event.
 
-##### field(e.component): dxFunnel
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

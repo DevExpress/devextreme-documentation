@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a context menu is displayed.
 
-##### param(e): Object
+##### param(e): ui/file_manager:ContextMenuShowingEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel showing the context menu.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

@@ -8,13 +8,13 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed each time the center coordinates are changed.
 
-##### param(e): Object
+##### param(e): viz/vector_map:CenterChangedEvent
 Information about the event.
 
 ##### field(e.center): Array<Number>
 The updated geographical coordinates of the center.
 
-##### field(e.component): dxVectorMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

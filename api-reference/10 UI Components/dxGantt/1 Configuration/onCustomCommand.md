@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after a custom command item was clicked. Allows you to implement a custom command's functionality.
 
-##### param(e): Object
+##### param(e): ui/gantt:CustomCommandEvent
 Information about the event.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component instance's name.
 
 ##### field(e.element): DxElement

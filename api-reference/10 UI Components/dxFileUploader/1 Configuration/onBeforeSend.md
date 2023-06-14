@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that allows you to customize the request before it is sent to the server.
 
-##### param(e): Object
+##### param(e): ui/file_uploader:BeforeSendEvent
 Information about the event.
 
-##### field(e.component): dxFileUploader
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

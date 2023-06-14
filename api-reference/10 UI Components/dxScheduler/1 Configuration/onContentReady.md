@@ -1,5 +1,21 @@
 ---
-##### merge
+id: dxScheduler.Options.onContentReady
+type: function(e)
+---
+---
+##### shortDescription
+A function that is executed when the UI component is rendered and each time the component is repainted.
+
+##### param(e): ui/scheduler:ContentReadyEvent
+Information about the event.
+
+##### field(e.component): {WidgetName}
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.model): any
+The model data. Available only if you use Knockout.
 
 ---
-If data displayed by the UI component is specified using a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance, the **contentReady** event fires each time the [load()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method of the DataSource instance is called, as well as when the UI component content is ready or an appointment is modified.

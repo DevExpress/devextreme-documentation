@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before the context menu is rendered.
 
-##### param(e): Object
+##### param(e): ui/pivot_grid_field_chooser:ContextMenuPreparingEvent
 Information about the event.
 
 ##### field(e.area): String
 The clicked [area's](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/area.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#area') type.
 
-##### field(e.component): dxPivotGridFieldChooser
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -22,7 +22,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.field): PivotGridDataSource_Options_fields
+##### field(e.field): Object
 The [configuration](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/') of the field on which the context menu is invoked.
 
 ##### field(e.items): Array<Object>

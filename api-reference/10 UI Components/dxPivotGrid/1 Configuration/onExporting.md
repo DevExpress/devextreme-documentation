@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before data is exported.
 
-##### param(e): Object
+##### param(e): ui/pivot_grid:ExportingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Deprecated.
 
-##### field(e.component): dxPivotGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

@@ -117,7 +117,7 @@ If you specify a [template](/api-reference/_hidden/CollectionWidgetItem/template
         </dxi-item>  
     </dx-menu>
 
-If you use <a href="https://angular.io/guide/routing-overview" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
+If you use <a href="https://angular.io/guide/routing-overview" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
 
     <!-- tab: app.component.html -->
     <dx-menu>
@@ -153,7 +153,7 @@ If you specify a [template](/api-reference/_hidden/CollectionWidgetItem/template
         }
     </script>
 
-If you use <a href="https://vuejs.org/guide/scaling-up/routing.html" target="_blank">routing</a> for your project, specify `<router-link>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
+If you use <a href="https://vuejs.org/guide/scaling-up/routing.html" target="_blank">routing</a> for your project, specify `<router-link>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
 
     <!-- tab: App.vue -->
     <template>
@@ -202,7 +202,7 @@ If you specify a [rendering function](/api-reference/_hidden/CollectionWidgetIte
 
     export default App;
 
-If you use <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">routing</a> for your project, specify `<Link>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
+If you use <a href="https://v5.reactrouter.com/web/guides/quick-start" target="_blank">routing</a> for your project, specify `<Link>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
 
     <!-- tab: App.js -->
     import React from 'react';

@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed before the ContextMenu is positioned.
 
-##### param(e): Object
+##### param(e): ui/context_menu:PositioningEvent
 Information about the event.
 
-##### field(e.component): dxContextMenu
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

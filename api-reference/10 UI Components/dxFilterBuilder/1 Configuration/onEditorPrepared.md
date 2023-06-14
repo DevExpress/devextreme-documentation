@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after an editor is created.
 
-##### param(e): Object
+##### param(e): ui/filter_builder:EditorPreparedEvent
 Information about the event.
 
-##### field(e.component): dxFilterBuilder
+##### field(e.component): {WidgetName}
 The UI component's [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Methods/#instance').
 
 ##### field(e.dataField): String
@@ -40,7 +40,7 @@ Indicates whether the editor is read-only.
 ##### field(e.rtlEnabled): Boolean
 Indicates whether the editor uses right-to-left representation.
 
-##### field(e.setValue(newValue)): any
+##### field(e.setValue): any
 A method you need to call to change the field's value after the editor's value changes.
 
 ##### field(e.updateValueTimeout): Number

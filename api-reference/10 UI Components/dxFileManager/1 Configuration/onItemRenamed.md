@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a file or directory is renamed.
 
-##### param(e): Object
+##### param(e): ui/file_manager:ItemRenamedEvent
 Information about the event.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

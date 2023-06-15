@@ -1,4 +1,4 @@
-You can specify a set of CSP rules to define resources that your site allows or restricts. See the list of common CSP directives and source values in the tables below:
+You can specify a set of CSP rules to define resources that your site allows or restricts. The following table lists common CSP directives and source values:
 
 <table class="dx-table">
     <tbody>
@@ -15,27 +15,27 @@ You can specify a set of CSP rules to define resources that your site allows or 
         <tr>
             <td><code>script-src</code></td>
             <td><code>script-src 'self' js.example.com;</code></td>
-            <td>Only allow scripts from the same origin</td>
+            <td>Only allow scripts from the same origin.</td>
         </tr>
         <tr>
             <td><code>style-src</code></td>
             <td><code>style-src 'self' css.example.com;</code></td>
-            <td>Defines authorized sources for stylesheets (CSS)</td>
+            <td>Defines authorized sources for stylesheets (CSS).</td>
         </tr>
         <tr>
             <td><code>object-src</code></td>
             <td><code>object-src 'self';</code></td>
-            <td>Defines authorized sources for plugins (for example, &lt;object&gt;, &lt;embed&gt; or &lt;applet&gt;)</td>
+            <td>Defines authorized sources for plugins (for example, &lt;object&gt;, &lt;embed&gt; or &lt;applet&gt;).</td>
         </tr>
         <tr>
             <td><code>img-src</code></td>
             <td><code>img-src 'self' img.example.com;</code></td>
-            <td>Defines authorized sources for images, or link element related to an image type (for example, rel="icon")</td>
+            <td>Defines authorized sources for images, or link element related to an image type (for example, rel="icon").</td>
         </tr>
         <tr>
             <td><code>frame-src</code></td>
             <td><code>frame-src 'self';</code></td>
-            <td>Defines authorized sources for loading frames (iframe or frame)</td>
+            <td>Defines authorized sources for loading frames (iframe or frame).</td>
         </tr>
         <tr>
             <td><code>form-action</code></td>

@@ -181,7 +181,7 @@ Users can also modify tables with the context menu if you set the [tableContextM
 
 ---
 
-[note] The HtmlEditor tables are native HTML tables. They are not designed to add block elements to cells, users cannot past multiline text in separate cells, etc.
+[note] HtmlEditor tables are native HTML tables. Therefore, the same limitations apply: tables do not support block elements in cells, users cannot past multiline text in separate cells, etc.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Tables/"

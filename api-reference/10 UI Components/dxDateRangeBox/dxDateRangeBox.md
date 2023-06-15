@@ -13,5 +13,5 @@ DateRangeBox is a UI component that allows a user to select a date range (pick o
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateRangeBox/Overview/"
 }
 #include common-tutorialbutton with {
-    url: "/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateRangeBox/"
+    url: "/Documentation/Guide/UI_Components/DateRangeBox/Getting_Started_with_DateRangeBox/"
 }

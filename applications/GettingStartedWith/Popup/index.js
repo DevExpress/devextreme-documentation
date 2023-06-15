@@ -16,10 +16,6 @@ $(function () {
                 $("<img />").attr("src", "/Content/images/doc/23_1/Common/dx-logo.png"),
                 $(popupText)
             );
-            content.dxScrollView({
-                height: "100%",
-                width: "100%"
-            });
             return content;
         },
         visible: true,

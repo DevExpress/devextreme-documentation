@@ -1,5 +1,5 @@
 ---
-id: dxTextEditorButton.name
+id: TextEditorButton.name
 type: String
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: dxTextEditorButton.location
+id: TextEditorButton.location
 type: Enums.TextEditorButtonLocation
 default: 'after'
 ---

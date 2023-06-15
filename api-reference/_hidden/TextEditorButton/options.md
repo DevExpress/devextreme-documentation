@@ -1,5 +1,5 @@
 ---
-id: dxTextEditorButton.options
+id: TextEditorButton.options
 type: dxButton_Options
 default: undefined
 ---

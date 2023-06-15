@@ -37,8 +37,8 @@ HtmlEditor is designed to create rich text and export it in HTML or Markdown for
 
 - The component is not designed to convert text enclosed between curly brackets (`{}`) into a variable. Content between curly brackets is always treated as plain text.
 
-- The HtmlEditor tables are native HTML tables and use native features, therefore, the same limitations apply. For example, users cannot past multiline text in separate cells.
+- The HtmlEditor tables are native HTML tables and use native features, therefore, the same limitations apply. For example, users cannot paste multiline text in separate cells.
 
 - The HtmlEditor tables do not support complex elements in cells, such as block elements, lists, nested tables, etc.
 
-- HtmlEditor does not support the complex clipboard data format of text processors like Microsoft Word®.
+- HtmlEditor does not support complex clipboard data formats of text processor applications, such as Microsoft Word®.

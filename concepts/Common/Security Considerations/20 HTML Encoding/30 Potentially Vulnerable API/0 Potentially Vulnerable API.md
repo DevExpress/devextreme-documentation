@@ -1,1 +1,1 @@
-Several components include API members that allow you to insert unencoded HTML. The following sections describe these potentially vulnerable API members.
+Several DevExtreme UI components include API members that allow you to insert unencoded HTML. The following sections describe these members and actions you should take to mitigate security-related risks.

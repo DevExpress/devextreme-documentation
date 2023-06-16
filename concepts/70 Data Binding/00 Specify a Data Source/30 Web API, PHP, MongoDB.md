@@ -164,5 +164,13 @@ To access the server from the client, configure the [CustomStore](/api-reference
 
 ---
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-with-webapi"
+}
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-with-webapi"
+}
+
 #####See Also#####
 - <a href="https://community.devexpress.com/blogs/oliver/archive/2017/03/24/devextreme-real-world-patterns.aspx" target="_blank">DevExtreme with MongoDB - Real World Patterns</a>

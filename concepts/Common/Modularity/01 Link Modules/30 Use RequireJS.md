@@ -30,4 +30,8 @@ You can see examples on how to use RequireJS with <a href="https://github.com/De
 
 [note] We recommend to use [Webpack](/concepts/Common/Modularity/01%20Link%20Modules/10%20Use%20Webpack.md '/Documentation/Guide/Common/Modularity/#Link_Modules/Use_Webpack') or [jspm](/concepts/Common/Modularity/01%20Link%20Modules/20%20Use%20jspm.md '/Documentation/Guide/Common/Modularity/#Link_Modules/Use_jspm') for better performance.
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-requirejs-examples"
+}
+
 [tags] jquery

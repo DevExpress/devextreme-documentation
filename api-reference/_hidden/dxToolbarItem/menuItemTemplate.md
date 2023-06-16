@@ -39,10 +39,10 @@ The following types of the specified value are available.
         <dxi-item ... 
             menuItemTemplate="menu-item"
         >
-            <div *dxTemplate="let data of 'menu-item'">
-                <i class="dx-icon-favorites"></i> {{data.options.text}}
-            </div>
         </dxi-item>
+        <div *dxTemplate="let data of 'menu-item'">
+            <i class="dx-icon-favorites"></i> {{data.options.text}}
+        </div>
     </dx-toolbar>
 
 ##### Vue
@@ -53,10 +53,10 @@ The following types of the specified value are available.
             <dxItem ... 
                 menu-item-template="menu-item"
             >
-                <template #menu-item="{ data }">
-                    <i class="dx-icon-favorites"></i> {{data.options.text}}
-                </template>
             </dxItem>
+            <template #menu-item="{ data }">
+                <i class="dx-icon-favorites"></i> {{data.options.text}}
+            </template>
         </DxToolbar>
     </template>
 

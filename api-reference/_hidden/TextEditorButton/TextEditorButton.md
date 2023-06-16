@@ -1,6 +1,6 @@
 ---
-id: dxTextEditorButton
+id: TextEditorButton
 type: Object
-module: ui/text_box/ui.text_editor.base
-export: dxTextEditorButton
+module: common
+export: TextEditorButton
 ---

@@ -13,7 +13,7 @@ To allow the user to sort by field values, set the [allowSorting](/api-reference
         allowSorting: true // allows the end-user to sort all column and row fields
     };
     
-If you need to allow sorting for an individual field only, set the [same property](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSorting.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSorting') inside the configuration object of this field.
+If you need to allow sort operations for an individual field only, set the [same property](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSorting.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSorting') inside the configuration object of this field.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...
@@ -21,7 +21,7 @@ If you need to allow sorting for an individual field only, set the [same propert
             // ...
             fields: [{
                 dataField: "FirstName",
-                allowSorting: true // allows sorting by the "FirstName" only
+                allowSorting: true // allows sort operations by "FirstName" only
                 // ...
             }, {
                 // ...

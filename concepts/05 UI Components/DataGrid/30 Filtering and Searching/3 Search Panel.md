@@ -1,4 +1,4 @@
-The search panel allows searching for values in several columns at once. Search is case-insensitive.
+The search panel allows a user to search for values in several columns at once. Search is case-insensitive.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid SearchPanel](/images/DataGrid/visual_elements/search_panel.png)
 

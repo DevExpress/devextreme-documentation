@@ -1,5 +1,5 @@
 ---
-id: dxTextEditorButton.location
+id: TextEditorButton.location
 acceptValues: 'after' | 'before'
 type: String
 default: 'after'

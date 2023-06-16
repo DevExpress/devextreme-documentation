@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.buttons
-type: Array<String, Enums.TextBoxPredefinedButton, dxTextEditorButton>
+type: Array<String, Enums.TextBoxPredefinedButton, TextEditorButton>
 default: undefined
 inheritsType: dxTextEditorButton
 ---

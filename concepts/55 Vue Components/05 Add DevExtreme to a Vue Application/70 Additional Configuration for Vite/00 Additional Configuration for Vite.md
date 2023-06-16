@@ -41,3 +41,7 @@ To avoid errors in the production build, do one of the following:
                 }
             },
         });
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-vite-vue-bundling"
+}

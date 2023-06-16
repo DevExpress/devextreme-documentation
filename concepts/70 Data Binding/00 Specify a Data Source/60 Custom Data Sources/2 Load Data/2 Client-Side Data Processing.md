@@ -141,7 +141,7 @@ To process data on the client, load all data from the server in the [load](/api-
         load: () => {
             return fetch('https://mydomain.com/MyDataService')
                 .then(handleErrors)
-                .then(response => response.json());
+                .then(response => response.json())
                 .catch(() => { throw 'Network error' });
         }
     });

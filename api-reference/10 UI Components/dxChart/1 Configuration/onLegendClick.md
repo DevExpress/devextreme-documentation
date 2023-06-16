@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a [legend item](/concepts/05%20UI%20Components/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/') is clicked or tapped.
 
-##### param(e): Object
+##### param(e): viz/chart:LegendClickEvent
 Information about the event.
 
-##### field(e.component): dxChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

@@ -250,5 +250,9 @@ If you need to validate form values, specify validation rules as described in th
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FormEditing/"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-hide-show-edit-form-items-dynamically"
+}
+
 #####See Also#####
 - [Organize Simple Items](/concepts/05%20UI%20Components/Form/10%20Organize%20Simple%20Items/05%20In%20Groups/01%20Create%20a%20Group.md '/Documentation/Guide/UI_Components/Form/Organize_Simple_Items')

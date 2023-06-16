@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the mouse leaves a drop zone as it drags a file.
 
-##### param(e): Object
+##### param(e): ui/file_uploader:DropZoneLeaveEvent
 Information about the event.
 
-##### field(e.component): dxFileUploader
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.dropZoneElement): DxElement

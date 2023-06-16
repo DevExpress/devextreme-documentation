@@ -20,5 +20,9 @@ Run the following command to rebuild themes:
 
     npm run build-themes
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-project-template-theme-selector"
+}
+
 #####See Also#####
 - [Switch Between Themes at Runtime](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/60%20Switch%20Between%20Themes%20at%20Runtime '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Switch_Between_Themes_at_Runtime')

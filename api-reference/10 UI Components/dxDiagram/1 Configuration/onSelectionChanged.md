@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after the selection is changed in the Diagram.
 
-##### param(e): Object
+##### param(e): ui/diagram:SelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxDiagram
+##### field(e.component): {WidgetName}
 The UI component instance's name.
 
 ##### field(e.element): DxElement

@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed after the pointer enters or leaves a cell.
 
-##### param(e): Object
+##### param(e): ui/tree_list:CellHoverChangedEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cellElement): DxElement
@@ -19,10 +19,10 @@ This column's [configuration](/api-reference/10%20UI%20Components/dxTreeList/1%2
 ##### field(e.columnIndex): Number
 The index of the column to which the cell belongs.
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.data): Object
+##### field(e.data): any
 The data of the row to which the cell belongs. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
 ##### field(e.displayValue): any

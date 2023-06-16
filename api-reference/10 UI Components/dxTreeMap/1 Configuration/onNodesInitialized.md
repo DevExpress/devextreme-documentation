@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed only once, after the nodes are initialized.
 
-##### param(e): Object
+##### param(e): viz/tree_map:NodesInitializedEvent
 Information about the event.
 
-##### field(e.component): dxTreeMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

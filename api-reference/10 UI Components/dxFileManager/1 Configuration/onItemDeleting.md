@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a file or directory is deleted.
 
-##### param(e): Object
+##### param(e): ui/file_manager:ItemDeletingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
 Allows you to cancel the file or directory deletion.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

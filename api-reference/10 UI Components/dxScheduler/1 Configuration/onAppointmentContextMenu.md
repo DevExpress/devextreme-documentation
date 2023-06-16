@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when a user attempts to open the browser's context menu for an appointment. Allows you to replace this context menu with a custom context menu.
 
-##### param(e): Object
+##### param(e): ui/scheduler:AppointmentContextMenuEvent
 Information about the event.
 
 ##### field(e.appointmentData): dxSchedulerAppointment
@@ -16,7 +16,7 @@ The initial appointment.
 ##### field(e.appointmentElement): DxElement
 #include common-ref-elementparam with { element: "appointment" }
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

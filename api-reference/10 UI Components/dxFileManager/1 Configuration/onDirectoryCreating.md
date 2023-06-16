@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a directory is created.
 
-##### param(e): Object
+##### param(e): ui/file_manager:DirectoryCreatingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
 Allows you to cancel the directory creation.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

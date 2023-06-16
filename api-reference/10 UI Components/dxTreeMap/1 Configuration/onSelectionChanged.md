@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a node is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): viz/tree_map:SelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxTreeMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

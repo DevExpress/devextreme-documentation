@@ -1,6 +1,6 @@
-The [noDataText](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/noDataText.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#noDataText') property specifies text to display when the UI component does not contain any data. This property can accept an HTML string that the component evaluates. This evaluation, however,makes the **noDataText** property potentially vulnerable to XSS attacks. If the **noDataText** value comes from a third party (loaded from a data source, inputted by a user), encode this value to protect against harmful code.
+The [noDataText](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/noDataText.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#noDataText') property specifies text to display when the UI component does not contain any data. This property can accept an HTML string – a string the component will evaluate. During evaluation, the **noDataText** property can make your app vulnerable to XSS attacks. If the **noDataText** value is obtained from a third party (loaded from a data source, entered by a user), encode this value to protect against threat actors/harmful code.
 
-The following example illustrates how an unsafe **noDataText** value can affect your application: <a href="https://codepen.io/romantsukanov/pen/vYmZzPR?editors=1010" target="_blank">noDataText - Potential XSS Vulnerability</a>. You should encode the value as follows:
+The following example illustrates how an unsafe noDataText value can affect your application: <a href="https://codepen.io/romantsukanov/pen/vYmZzPR?editors=1010" target="_blank">noDataText - Potential XSS Vulnerability</a>. You should encode the value as follows:
 
 ---
 ##### jQuery
@@ -133,5 +133,3 @@ The following example illustrates how an unsafe **noDataText** value can affect 
     }
 
 ---
-
-    

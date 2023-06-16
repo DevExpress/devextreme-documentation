@@ -196,3 +196,7 @@ On the server-side, you need to process file management requests. DevExtreme pro
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToFileSystem/NetCore/Light/"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-treelist-show-folders-and-files"
+}

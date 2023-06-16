@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a tab has been held for a [specified period](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemHoldTimeout.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemHoldTimeout').
 
-##### param(e): Object
+##### param(e): ui/tab_panel:TitleHoldEvent
 Information about the event.
 
-##### field(e.component): dxTabPanel
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.itemData): Object
+##### field(e.itemData): any
 The data of the item whose title is held.
 
 ##### field(e.itemElement): DxElement

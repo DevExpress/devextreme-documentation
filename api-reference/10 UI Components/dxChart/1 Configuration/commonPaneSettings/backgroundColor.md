@@ -116,3 +116,7 @@ Specifies the color of the pane's background.
     } 
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-chart-configure-svg-patterns"
+}

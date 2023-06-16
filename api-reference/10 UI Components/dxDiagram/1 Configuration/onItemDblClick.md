@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed after a shape or connector is double-clicked.
 
-##### param(e): Object
+##### param(e): ui/diagram:ItemDblClickEvent
 Information about the event.
 
-##### field(e.component): dxDiagram
+##### field(e.component): {WidgetName}
 The UI component instance's name.
 
 ##### field(e.element): DxElement

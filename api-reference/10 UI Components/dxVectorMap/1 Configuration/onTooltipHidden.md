@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a tooltip becomes hidden.
 
-##### param(e): Object
+##### param(e): viz/vector_map:TooltipHiddenEvent
 Information about the event.
 
-##### field(e.component): dxVectorMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

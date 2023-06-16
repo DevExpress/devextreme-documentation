@@ -103,4 +103,4 @@ A user can use the following keys to interact with the DataGrid component:
     </ol>
 </div>
 
-You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onKeyDown') event handler.
+You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onKeyDown') event handler.

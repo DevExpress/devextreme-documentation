@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is called when a draggable item is removed.
 
-##### param(e): Object
+##### param(e): ui/sortable:RemoveEvent
 Information about the event that caused the function's execution.
 
-##### field(e.component): dxSortable
+##### field(e.component): {WidgetName}
 The UI component that raised the event.
 
 ##### field(e.element): DxElement
@@ -19,7 +19,7 @@ The UI component that raised the event.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.fromComponent): dxSortable | dxDraggable
+##### field(e.fromComponent): {WidgetName}
 The instance of the item's source UI component.
 
 ##### field(e.fromData): any
@@ -37,7 +37,7 @@ The dragged item's data.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.toComponent): dxSortable | dxDraggable
+##### field(e.toComponent): {WidgetName}
 The instance of the item's target UI component.
 
 ##### field(e.toData): any

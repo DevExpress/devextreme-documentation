@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed after the focused cell changes. Applies only to cells in data or group rows.
 
-##### param(e): Object
+##### param(e): ui/data_grid:FocusedCellChangedEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cellElement): DxElement
@@ -19,7 +19,7 @@ The column's properties.
 ##### field(e.columnIndex): Number
 The index of the cell's column.
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

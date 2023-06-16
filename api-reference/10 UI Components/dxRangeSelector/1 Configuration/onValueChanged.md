@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed after the UI component's [value](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/value '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#value') is changed.
 
-##### param(e): Object
+##### param(e): viz/range_selector:ValueChangedEvent
 Information about the event.
 
-##### field(e.component): dxRangeSelector
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

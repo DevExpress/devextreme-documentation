@@ -8,7 +8,7 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when zooming or panning ends.
 
-##### param(e): Object
+##### param(e): viz/polar_chart:ZoomEndEvent
 Information about the event.
 
 ##### field(e.actionType): Enums.ZoomPanAction
@@ -20,7 +20,7 @@ The zoomed/panned axis.
 ##### field(e.cancel): Boolean
 Allows you to cancel zooming or panning.
 
-##### field(e.component): dxPolarChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

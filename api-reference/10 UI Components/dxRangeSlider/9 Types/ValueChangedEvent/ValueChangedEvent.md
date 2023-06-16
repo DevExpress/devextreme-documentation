@@ -1,5 +1,5 @@
 ---
-id: _ui_range_slider_ValueChangedEvent
+uid: ui/range_slider:ValueChangedEvent
 module: ui/range_slider
 export: ValueChangedEvent
 type: Object

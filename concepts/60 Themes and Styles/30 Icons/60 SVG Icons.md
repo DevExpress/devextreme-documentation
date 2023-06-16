@@ -28,6 +28,6 @@ The following code uses SVG icons in the [Button](https://js.devexpress.com/Demo
             icon: myIcon
         });
 
-    This code wraps the SVG icon inside a `<img />` tag. In this case, you cannot use CSS rules to customize the SVG image.
+[important]The SVG format can contain executable code that might be malicious. We strongly recommend that you use SVG icons only from trusted sources.
 
-[important]The SVG format allows running executable code that might be malicious. We strongly recommend that you use SVG icons only from trusted sources.
+    This code wraps the SVG icon inside a `<img />` tag. In this case, you cannot use CSS rules to customize the SVG image.

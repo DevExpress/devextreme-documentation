@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed on each scroll gesture performed on the drop-down item list.
 
-##### param(e): Object
+##### param(e): ui/lookup:ScrollEvent
 Information about the event.
 
-##### field(e.component): dxLookup
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -34,7 +34,7 @@ Indicates whether the container's right boundary is reached.
 ##### field(e.reachedTop): Boolean
 Indicates whether the container's top boundary is reached.
 
-##### field(e.scrollOffset): Object
+##### field(e.scrollOffset): any
 The current scroll offset in the following format { top: topOffset, left: leftOffset }.
 
 ---

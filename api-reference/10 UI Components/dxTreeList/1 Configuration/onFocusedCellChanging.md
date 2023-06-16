@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed before the focused cell changes. Applies only to cells in data rows.
 
-##### param(e): Object
+##### param(e): ui/tree_list:FocusedCellChangingEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
@@ -19,7 +19,7 @@ Allows you to cancel focusing a new cell.
 ##### field(e.columns): Array<dxTreeListColumn>
 The visible columns' properties.
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

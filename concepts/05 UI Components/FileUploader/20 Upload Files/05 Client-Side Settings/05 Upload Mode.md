@@ -4,6 +4,10 @@ Depending on the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/File_Uploader/FileUploading/"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-use-fileuploader-in-the-edit-form"
+}
+
 The following examples show how to configure the FileUploader for each upload mode. Therein, the [name](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/name.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#name') property is required to access uploaded files on the server.
 
 - **Ajax upload**

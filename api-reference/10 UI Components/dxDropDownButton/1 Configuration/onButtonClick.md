@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the button is clicked or tapped. If [splitButton](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/splitButton.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#splitButton') is **true**, this function is executed for the action button only.
 
-##### param(e): Object
+##### param(e): ui/drop_down_button:ButtonClickEvent
 Information about the event that caused the function execution.
 
-##### field(e.component): dxDropDownButton
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

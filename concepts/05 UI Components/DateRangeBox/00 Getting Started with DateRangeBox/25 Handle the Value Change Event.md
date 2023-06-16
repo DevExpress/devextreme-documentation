@@ -1,4 +1,4 @@
-To respond to a date range change, handle the [onValueChanged](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#onValueChanged'') event. In this tutorial, the callback function logs the previous and current date ranges.
+To respond to a date range change, handle the [onValueChanged](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#onValueChanged'') event. In this tutorial, the callback function logs the previous and current date ranges.
 
 ---
 ##### jQuery

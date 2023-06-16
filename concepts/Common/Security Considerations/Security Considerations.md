@@ -1,4 +1,4 @@
-This help topic describes how to avoid potential security vulnerabilities when you use DevExtreme components.
+This help topic describes potential security vulnerabilities and what you can do as an application developer to mitigate risks when using DevExtreme UI components.
 
 ---
 ##### Angular

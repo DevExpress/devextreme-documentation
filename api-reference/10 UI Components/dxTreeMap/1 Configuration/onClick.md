@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a node is clicked or tapped.
 
-##### param(e): Object
+##### param(e): viz/tree_map:ClickEvent
 Information about the event.
 
-##### field(e.component): dxTreeMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

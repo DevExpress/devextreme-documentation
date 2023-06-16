@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when a cell is double-clicked or double-tapped. Executed before [onRowDblClick](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowDblClick.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowDblClick').
 
-##### param(e): Object
+##### param(e): ui/data_grid:CellDblClickEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cellElement): DxElement
@@ -19,7 +19,7 @@ The column's configuration.
 ##### field(e.columnIndex): Number
 The index of the column the cell belongs to. For details on indexes, see the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_and_Row_Indexes/') topic.
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): Object

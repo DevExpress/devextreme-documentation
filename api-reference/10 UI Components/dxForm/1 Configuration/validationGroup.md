@@ -33,3 +33,7 @@ In some cases, the Form editors should be validated by the [Button](/api-referen
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-form-declare-dropdownbox-in-form-item"
+}

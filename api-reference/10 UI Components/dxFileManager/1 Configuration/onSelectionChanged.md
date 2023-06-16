@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a file system item is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): ui/file_manager:SelectionChangedEvent
 Information about the event that caused the function's execution.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.currentDeselectedItemKeys): Array<String>

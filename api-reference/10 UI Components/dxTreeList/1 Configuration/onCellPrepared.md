@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(e): Object
+##### param(e): ui/tree_list:CellPreparedEvent
 <!-- %param(e)% -->
 
 ##### field(e.cellElement): DxElement
@@ -19,10 +19,10 @@ default: null
 ##### field(e.columnIndex): Number
 <!-- %field(e.columnIndex)% -->
 
-##### field(e.component): dxTreeList
+##### field(e.component): {WidgetName}
 <!-- %field(e.component)% -->
 
-##### field(e.data): Object
+##### field(e.data): any
 The data of the row to which the cell belongs. Available if the **rowType** is *"data"*, *"detail"*, or *"detailAdaptive"*.
 
 ##### field(e.displayValue): any

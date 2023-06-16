@@ -5,19 +5,22 @@ default: null
 hidden: false
 ---
 ---
-##### param(e): Object
+##### shortDescription
+A function that is executed before a collection item is deleted from the data source.
+
+##### param(e): ui/list:ItemDeletingEvent
 Information about the event.
 
-##### field(e.cancel): Boolean | Promise<Boolean> | Promise<void>
+##### field(e.cancel): Boolean
 Allows you to cancel the item deletion.
 
-##### field(e.component): dxList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.itemData): Object
+##### field(e.itemData): any
 The data of the item to be removed.
 
 ##### field(e.itemElement): DxElement

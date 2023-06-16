@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed when a view cell is clicked.
 
-##### param(e): Object
+##### param(e): ui/scheduler:CellClickEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
@@ -19,7 +19,7 @@ The clicked cell's data.
 ##### field(e.cellElement): DxElement
 #include common-ref-elementparam with { element: "clicked cell" }
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

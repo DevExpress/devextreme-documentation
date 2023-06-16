@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a user drills up or down.
 
-##### param(e): Object
+##### param(e): viz/tree_map:DrillEvent
 Information about the event.
 
-##### field(e.component): dxTreeMap
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

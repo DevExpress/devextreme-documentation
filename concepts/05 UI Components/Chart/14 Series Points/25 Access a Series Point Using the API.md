@@ -351,7 +351,7 @@ Gets those points of the series that fall into the axis's [visual range](/api-re
 
     ---
 
-Apart from the API methods, you can access a series point in the event handlers. For example, the [onPointClick](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointClick') event handler gets the clicked series point in the argument.
+Apart from the API methods, you can access a series point in the event handlers. For example, the [onPointClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/onPointClick.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onPointClick') event handler gets the clicked series point in the argument.
 
 ---
 ##### jQuery

@@ -140,3 +140,7 @@ The following example shows how to subscribe to component property changes:
     } 
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-synchronize-two-datagrid-components"
+}

@@ -13,3 +13,7 @@ Here is an example:
         .toArray();
         
 The full list of supported methods is given in the [Query API reference](/api-reference/30%20Data%20Layer/Query/3%20Methods '/Documentation/ApiReference/Data_Layer/Query/Methods/').
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-filter-chart-series-based-on-grid-filter"
+}

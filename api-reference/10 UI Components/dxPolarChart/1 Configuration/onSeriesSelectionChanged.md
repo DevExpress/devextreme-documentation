@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a series is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): viz/polar_chart:SeriesSelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxPolarChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

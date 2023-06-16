@@ -1,7 +1,7 @@
 ---
 id: dxDateRangeBox.Options.value
 type: Array<Date, Number, String>
-default: [null, null]
+default: [null,null]
 ---
 ---
 ##### shortDescription
@@ -102,6 +102,10 @@ If you change a date value, the new value is saved in the same format as the ini
     }
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateRangeBox/Overview/"        
+}
 
 #####See Also#####
 - [startDate](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/startDate.md '{basewidgetpath}/Configuration/#startDate')

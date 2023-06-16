@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed when a tooltip appears.
 
-##### param(e): Object
+##### param(e): viz/bar_gauge:TooltipShownEvent
 Information about the event.
 
-##### field(e.component): dxBarGauge
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -20,7 +20,7 @@ The UI component's instance.
 ##### field(e.model): any
 The model data. Available only if you use Knockout.
 
-##### field(e.target): Object
+##### field(e.target): any
 Information on the bar being pressed or hovered over with the mouse pointer. Contains the **index** field.
 
 ---

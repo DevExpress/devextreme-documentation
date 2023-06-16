@@ -82,3 +82,7 @@ If you use SVG components, you should also call the [refreshTheme()](/api-refere
 ---
 
 #include switch-themes-initialized-note
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-project-template-theme-selector"
+}

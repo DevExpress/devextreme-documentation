@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed before an appointment details form appears. Use this function to customize the form.
 
-##### param(e): Object
+##### param(e): ui/scheduler:AppointmentFormOpeningEvent
 Information about the event.
 
 ##### field(e.appointmentData): dxSchedulerAppointment
@@ -16,7 +16,7 @@ The data of the appointment for which a form is opened.
 ##### field(e.cancel): Boolean
 If **true**, prevents the user from opening the appointment details form.
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -318,6 +318,10 @@ The `mainGroup` consists of two columns. A custom item's [colSpan](/api-referenc
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"
+}
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-scheduler-create-custom-editing-form"
 }
 
 #####See Also#####

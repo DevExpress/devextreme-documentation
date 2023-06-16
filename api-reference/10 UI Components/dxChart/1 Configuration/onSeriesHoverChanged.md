@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed after the pointer enters or leaves a series.
 
-##### param(e): Object
+##### param(e): viz/chart:SeriesHoverChangedEvent
 Information about the event.
 
-##### field(e.component): dxChart
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

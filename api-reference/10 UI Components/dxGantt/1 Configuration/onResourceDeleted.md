@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a resource is deleted.
 
-##### param(e): Object
+##### param(e): ui/gantt:ResourceDeletedEvent
 Information about the event.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

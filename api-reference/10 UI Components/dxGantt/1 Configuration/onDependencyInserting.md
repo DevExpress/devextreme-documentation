@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a dependency is inserted.
 
-##### param(e): Object
+##### param(e): ui/gantt:DependencyInsertingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the dependency's insertion.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

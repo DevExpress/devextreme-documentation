@@ -9,7 +9,7 @@ To allow the user to perform this type of sorting, set the [allowSortingBySummar
         allowSortingBySummary: true // allows the end-user to sort by summary for all column and row fields
     };
     
-If you need to allow sorting by summary for an individual field only, set the [same property](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSortingBySummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSortingBySummary') inside the configuration object of this field.
+If you need to allow sort-by-summary operations for an individual field only, set the [same property](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/allowSortingBySummary.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#allowSortingBySummary') inside the configuration object of this field.
 
     <!--JavaScript-->var pivotGridOptions = {
         // ...

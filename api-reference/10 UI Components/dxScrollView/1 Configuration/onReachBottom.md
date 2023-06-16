@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the content is scrolled down to the bottom.
 
-##### param(e): Object
+##### param(e): ui/scroll_view:ReachBottomEvent
 Information about the event.
 
-##### field(e.component): dxScrollView
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

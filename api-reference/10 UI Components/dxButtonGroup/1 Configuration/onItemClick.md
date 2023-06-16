@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when a button is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/button_group:ItemClickEvent
 Information about the event.
 
-##### field(e.component): dxButtonGroup
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

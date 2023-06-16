@@ -8,10 +8,10 @@ override:
 ##### shortDescription
 A function that is executed when a TreeView item is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): ui/tree_view:SelectionChangedEvent
 Information about the event.
 
-##### field(e.component): dxTreeView
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

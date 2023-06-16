@@ -24,11 +24,11 @@ To encode values in a template, use a third-party sanitizing tool as follows:
     }];
 
 
-When you insert unencoded content, it can open your application to XSS attacks:
+When you insert unencoded content, your application may be vulnerable to XSS attacks:
 
 ![DevExtreme Tabs with disabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-unsafe-html-wo-codepen.png)
 
-The encoded content is interpreted and displayed as text:
+Encoded content is interpreted and displayed as text:
 
 ![DevExtreme Tabs with enabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-safe-html.png)
 

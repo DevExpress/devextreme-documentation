@@ -176,6 +176,10 @@ With this code, the *Bus ID* column contains license plates instead of IDs. More
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/"
 }
 
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-implement-cascading-dropdownboxes"
+}
+
 #####See Also#####
 - [Bind a Lookup Column to a Custom Data Source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Bind%20a%20Lookup%20Column%20to%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/{WidgetName}/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/')
 - [Customize Editors](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/{WidgetName}/Editing/#Customize_Editors')

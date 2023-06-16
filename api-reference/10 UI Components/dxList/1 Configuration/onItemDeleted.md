@@ -8,16 +8,16 @@ hidden: false
 ##### shortDescription
 A function that is executed after a list item is deleted from the data source.
 
-##### param(e): Object
+##### param(e): ui/list:ItemDeletedEvent
 Information about the event.
 
-##### field(e.component): dxList
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.itemData): Object
+##### field(e.itemData): any
 The removed item's data.
 
 ##### field(e.itemElement): DxElement

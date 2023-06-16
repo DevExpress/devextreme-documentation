@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed after an appointment is updated in the data source.
 
-##### param(e): Object
+##### param(e): ui/scheduler:AppointmentUpdatedEvent
 Information about the event.
 
 ##### field(e.appointmentData): dxSchedulerAppointment
 The updated appointment's data.
 
-##### field(e.component): dxScheduler
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

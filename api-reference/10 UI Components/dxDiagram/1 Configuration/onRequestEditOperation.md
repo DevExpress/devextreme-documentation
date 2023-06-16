@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that allows you to prohibit an edit operation at run time.
 
-##### param(e): Object
+##### param(e): ui/diagram:RequestEditOperationEvent
 Information about the event.
 
 ##### field(e.allowed): Boolean
@@ -17,7 +17,7 @@ Specifies whether the edit operation is allowed.
 ##### field(e.args): dxDiagramAddShapeArgs | dxDiagramAddShapeFromToolboxArgs | dxDiagramDeleteShapeArgs | dxDiagramDeleteConnectorArgs | dxDiagramChangeConnectionArgs | dxDiagramChangeConnectorPointsArgs | dxDiagramBeforeChangeShapeTextArgs | dxDiagramChangeShapeTextArgs | dxDiagramBeforeChangeConnectorTextArgs | dxDiagramChangeConnectorTextArgs | dxDiagramResizeShapeArgs | dxDiagramMoveShapeArgs
 An object that contains information about the processed shape or connector. The parameter's value type depends on the operation.
 
-##### field(e.component): dxDiagram
+##### field(e.component): {WidgetName}
 The UI component instance's name.
 
 ##### field(e.element): DxElement

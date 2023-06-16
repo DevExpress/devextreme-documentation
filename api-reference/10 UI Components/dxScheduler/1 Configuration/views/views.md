@@ -38,3 +38,7 @@ To specify the default view, use the [currentView](/api-reference/10%20UI%20Comp
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomizeIndividualViews/"
 }
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-scheduler-disable-dates-in-timelines-view"
+}

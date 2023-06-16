@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed after a grid cell is created.
 
-##### param(e): Object
+##### param(e): ui/data_grid:CellPreparedEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cellElement): DxElement
@@ -19,7 +19,7 @@ This column's [configuration](/api-reference/10%20UI%20Components/dxDataGrid/1%2
 ##### field(e.columnIndex): Number
 The visible column index described in the following topic: [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/').
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): Object
@@ -225,6 +225,10 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
     </script>
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-display-tooltip-for-data-cells"
+}
 
 #####See Also#####
 - [Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells/2%20Customize%20Cell%20Appearance.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_Cell_Appearance')

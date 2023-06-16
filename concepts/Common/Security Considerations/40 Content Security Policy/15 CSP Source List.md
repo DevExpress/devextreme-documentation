@@ -1,4 +1,4 @@
-All directives ending with *-src* supply corresponding values referred to as a *source list*. You can separate multiple source list values by a space, except for the `none` value, which should be used on its own.
+All directives ending with *-src* supply corresponding values referred to as a *source list*. You can separate multiple source list values with a space, except for the `none` value, which should be used on its own.
 
 <table class="dx-table">
     <tr>

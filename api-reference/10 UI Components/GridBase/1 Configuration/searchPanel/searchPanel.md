@@ -8,7 +8,7 @@ inheritsType: common/grids:SearchPanel
 Configures the search panel.
 
 ---
-The search panel allows searching for values in several columns at once. The UI component searches against only those columns whose [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '{basewidgetpath}/Configuration/columns/#allowSearch') property is set to **true**.
+The search panel allows users to search for values in several columns at once. The UI component searches against only those columns whose [allowSearch](/api-reference/_hidden/GridBaseColumn/allowSearch.md '{basewidgetpath}/Configuration/columns/#allowSearch') property is set to **true**.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid SearchPanel](/images/DataGrid/visual_elements/search_panel.png)
 
@@ -21,6 +21,10 @@ To make the search panel visible, set the **searchPanel**.[visible](/api-referen
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/UsingSearchPanel/",
     name: "TreeList"
+}
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-multiple-words-search"
 }
 
 #####See Also#####

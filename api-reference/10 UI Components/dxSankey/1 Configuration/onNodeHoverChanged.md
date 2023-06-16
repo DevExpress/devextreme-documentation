@@ -8,10 +8,10 @@ notUsedInTheme:
 ##### shortDescription
 A function that is executed after the pointer enters or leaves a sankey node.
 
-##### param(e): Object
+##### param(e): viz/sankey:NodeHoverEvent
 Information about the event.
 
-##### field(e.component): dxSankey
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

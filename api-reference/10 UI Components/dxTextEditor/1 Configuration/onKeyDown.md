@@ -23,3 +23,7 @@ The UI component's instance.
 Model data. Available only if Knockout is used.
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-implement-search-for-treelist"
+}

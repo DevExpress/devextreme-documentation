@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before the edit dialog is shown.
 
-##### param(e): Object
+##### param(e): ui/gantt:TaskEditDialogShowingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the edit dialog showing.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

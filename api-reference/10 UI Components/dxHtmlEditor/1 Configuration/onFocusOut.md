@@ -7,10 +7,10 @@ default: null
 ##### shortDescription
 A function that is executed when the UI component loses focus.
 
-##### param(e): Object
+##### param(e): ui/html_editor:FocusOutEvent
 Information about the event that caused the function execution.
 
-##### field(e.component): dxHtmlEditor
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

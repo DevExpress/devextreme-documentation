@@ -1,6 +1,6 @@
 ---
 id: LoadOptions.totalSummary
-type: Object
+type: SummaryDescriptor | Array<SummaryDescriptor>
 ---
 ---
 ##### shortDescription

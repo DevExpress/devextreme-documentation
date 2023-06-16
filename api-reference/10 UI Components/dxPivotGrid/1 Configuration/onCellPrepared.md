@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed after a pivot grid cell is created.
 
-##### param(e): Object
+##### param(e): ui/pivot_grid:CellPreparedEvent
 Information about the event.
 
 ##### field(e.area): String
@@ -22,7 +22,7 @@ The cell [properties](/api-reference/10%20UI%20Components/dxPivotGrid/6%20Pivot%
 ##### field(e.columnIndex): Number
 The position of a cell's column.
 
-##### field(e.component): dxPivotGrid
+##### field(e.component): {WidgetName}
 The UI component [instance](/api-reference/10%20UI%20Components/Component/3%20Methods/instance().md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#instance').
 
 ##### field(e.element): DxElement

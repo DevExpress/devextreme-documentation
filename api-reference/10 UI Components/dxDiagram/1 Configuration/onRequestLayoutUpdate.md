@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed after diagram data is reloaded and allows you to specify whether or not the UI component should update the diagram layout.
 
-##### param(e): Object
+##### param(e): ui/diagram:RequestLayoutUpdateEvent
 Information about the event.
 
 ##### field(e.allowed): Boolean
@@ -17,7 +17,7 @@ Specifies whether or not the diagram layout should be updated.
 ##### field(e.changes): Array<any>
 The received changes.
 
-##### field(e.component): dxDiagram
+##### field(e.component): {WidgetName}
 The UI component instance's name.
 
 ##### field(e.element): DxElement

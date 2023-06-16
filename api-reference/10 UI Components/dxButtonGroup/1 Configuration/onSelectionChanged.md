@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed when a button is selected or selection is canceled.
 
-##### param(e): Object
+##### param(e): ui/button_group:SelectionChangedEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.addedItems): Array<any>
 The data objects that correspond to the selected buttons.
 
-##### field(e.component): dxButtonGroup
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement

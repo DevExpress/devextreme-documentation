@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed when a user double-clicks a task.
 
-##### param(e): Object
+##### param(e): ui/gantt:TaskDblClickEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the resource unassignment.
 
-##### field(e.component): dxGantt
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.data): any

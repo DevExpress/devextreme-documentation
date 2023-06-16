@@ -7,13 +7,13 @@ default: null
 ##### shortDescription
 A function that is executed before a file or directory is moved.
 
-##### param(e): Object
+##### param(e): ui/file_manager:ItemMovingEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean | Promise<void>
 Allows you to cancel the file or directory move process.
 
-##### field(e.component): dxFileManager
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.destinationDirectory): FileSystemItem

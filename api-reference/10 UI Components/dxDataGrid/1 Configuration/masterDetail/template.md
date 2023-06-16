@@ -18,7 +18,7 @@ The master row's data object.
 The master row's key.
 
 ##### field(detailInfo.watch): function()
-Allows tracking a variable and performing actions when it changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly') is **true**.       
+Allows you to track a variable and respond to value changes. Applies when [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly') is **true**.       
 This function has the following parameters:     
 
 - **getter(data)**: Function        
@@ -40,7 +40,7 @@ A template name or container.
     name: "Advanced Master-Detail View"
 }
 
-You should call the [updateDimensions()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method each time the size of the detail section's content changes to make the table layout automatically adapt its size. In the following code, the [TabPanel](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/') in the detail section contains views that can have different heights. The **updateDimensions** method is called in the [onSelectionChanged](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#onSelectionChanged') handler to update the table layout when another view is selected.
+You should call the [updateDimensions()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method each time the size of the detail section's content changes to make the table layout automatically adapt its size. In the following code, the [TabPanel](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/') in the detail section contains views that can have different heights. The **updateDimensions** method is called in the [onSelectionChanged](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#onSelectionChanged') handler to update the table layout when another view is selected.
 
 ---
 #####jQuery
@@ -197,6 +197,10 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
     }
 
 ---
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-access-every-master-detail-grid-from-code"
+}
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

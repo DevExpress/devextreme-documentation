@@ -6,7 +6,7 @@ To implement this solution, follow the steps below:
 
 1. Wrap the content in the ScrollView component and place it in the Popup container.
 
-2. Set the [height](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#width) of the ScrollView to `100%` of the popup content area. To enable this functionality, wrap the content into the [ScrollView](/concepts/05%20UI%20Components/ScrollView/00%20Overview.md '/Documentation/Guide/UI_Components/ScrollView/Overview/') component and set its **height** and **width** to 100% of the Popup content area:
+2. Set the [height](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#width) of the ScrollView to `100%` of the popup content area. To enable this functionality, wrap content into the [ScrollView](/concepts/05%20UI%20Components/ScrollView/00%20Overview.md '/Documentation/Guide/UI_Components/ScrollView/Overview/') component and set its **height** and **width** to 100% of the Popup content area:
 
 ---
 ##### jQuery

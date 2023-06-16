@@ -17480,11 +17480,6 @@
     "dxTextBoxOptions.onValueChanged": {
       "vue": "@value-changed"
     },
-    "dxTextEditorButton": {
-      "angular": "dxo-text-editor-button",
-      "react": "DxTextEditorButton",
-      "vue": "DxTextEditorButton"
-    },
     "dxTextEditorOptions.buttons": {
       "angular": "dxi-button",
       "react": "Button",
@@ -20836,6 +20831,11 @@
       "angular": "dxo-targeted-appointment-data",
       "react": "TargetedAppointmentData",
       "vue": "DxTargetedAppointmentData"
+    },
+    "textEditorButton": {
+      "angular": "dxo-text-editor-button",
+      "react": "TextEditorButton",
+      "vue": "DxTextEditorButton"
     },
     "toolbarPreparingInfo.toolbarOptions": {
       "vue": "toolbar-options"

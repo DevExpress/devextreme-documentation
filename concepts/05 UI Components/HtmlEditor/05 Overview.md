@@ -1,4 +1,4 @@
-HtmlEditor is a client-side WYSIWYG editor that allows users to format text and visual content and export it as HTML or Markdown. Supported features include:
+HtmlEditor is a client-side WYSIWYG editor that allows users to format text and visual content, and to export it as HTML or Markdown. Supported features include:
 
 - [Inline Formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/'):
     - **Bold**, *italic*, <s>strikethrough</s>, and <u>underscore</u> text formatting attributes

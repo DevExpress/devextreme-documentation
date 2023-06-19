@@ -1,4 +1,4 @@
-The following tables list available formats and their values grouped into four categories: inline (or text), block, embedded, and table formats.
+The following tables list available formats and their values grouped into five categories: inline (or text), block, embedded, image, and table formats.
 
 **Inline (or text) formats**
 
@@ -100,6 +100,51 @@ The following tables list available formats and their values grouped into four c
  <tr>
     <td>"mention"</td>
     <td>Object ({ marker: String, id: String | Number, value: String })</td>
+ </tr>
+</table>
+
+**Image formats**
+
+<table class="dx-table full-width">
+ <tr>
+    <th>Format Name</th>
+    <th>Supports Pasting into HtmlEditor</th>
+    <th>Supports Drag and Drop from File Explorer</th>
+ </tr>
+  <tr>
+    <td>*.png</td>
+    <td>Yes</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <td>*.jpg</td>
+    <td>Yes</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <td>*.gif</td>
+    <td>Yes</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <td>*.webp</td>
+    <td>Yes</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <td>*.bmp</td>
+    <td>Yes</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <td>*.svg</td>
+    <td>No</td>
+    <td>Yes</td>
+ </tr>
+  <tr>
+    <td>*.ico</td>
+    <td>Yes</td>
+    <td>No</td>
  </tr>
 </table>
 

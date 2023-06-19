@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed after diagram data is reloaded and allows you to specify whether the component should reapply its auto layout.
+A function that is executed after diagram data is reloaded and allows you to specify whether or not the UI component should reapply its auto layout.
 
 ##### param(e): ui/diagram:RequestLayoutUpdateEvent
 Information about the event.

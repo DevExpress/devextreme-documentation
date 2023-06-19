@@ -46,8 +46,8 @@ This function allows you to customize cells and modify their content. Common use
         $(function() {
             $("#pivotGridContainer").dxPivotGrid({
                 // ...
-                onCellPrepared: function(e) {
-                    if(e.cell.rowPath === "rowName" && e.cell.columnPath === "columnName") {
+                onCellPrepared: (e) => {
+                    if(e.cell.rowPath && e.cell.rowPath[0] === "Africa" && e.cell.columnPath && e.cell.columnPath[0] === 2014) {
                         e.cellElement.css("font-size", "14px");
                         e.cellElement.css("font-weight", "bold");
                     }
@@ -72,7 +72,7 @@ This function allows you to customize cells and modify their content. Common use
         })
         export class AppComponent {
             onCellPrepared(e) {          
-                if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                if(e.cell.rowPath && e.cell.rowPath[0] === "Africa" && e.cell.columnPath && e.cell.columnPath[0] === 2014) {
                     e.cellElement.style.fontSize = '14px';
                     e.cellElement.style.fontWeight = 'bold';
                 }
@@ -117,7 +117,7 @@ This function allows you to customize cells and modify their content. Common use
             },
             methods: {
                 onCellPrepared(e) {          
-                    if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                    if(e.cell.rowPath && e.cell.rowPath[0] === "Africa" && e.cell.columnPath && e.cell.columnPath[0] === 2014) {
                         e.cellElement.style.fontSize = '14px';
                         e.cellElement.style.fontWeight = 'bold';
                     }
@@ -135,7 +135,7 @@ This function allows you to customize cells and modify their content. Common use
         
         export default function App() {
             const customizeCells = useCallback((e) {          
-                if(e.cell.rowPath === 'rowName' && e.cell.columnPath === 'columnName') {
+                if(e.cell.rowPath && e.cell.rowPath[0] === "Africa" && e.cell.columnPath && e.cell.columnPath[0] === 2014) {
                     e.cellElement.style.fontSize = '14px';
                     e.cellElement.style.fontWeight = 'bold';
                 }

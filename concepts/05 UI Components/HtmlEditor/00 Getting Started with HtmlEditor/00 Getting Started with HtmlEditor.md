@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-[important] Before you start this tutorial, read the HtmlEditor [Overview](/Documentation/Guide/UI_Components/HtmlEditor/Overview/) guide.
+[important] Before you start this tutorial, read the HtmlEditor [Overview](/concepts/05%20UI%20Components/HtmlEditor/05%20Overview.md '/Documentation/Guide/UI_Components/HtmlEditor/Overview/') guide.
 
 This tutorial explains how to add an HtmlEditor to a page and configure its core features. The following control demonstrates the result:
 

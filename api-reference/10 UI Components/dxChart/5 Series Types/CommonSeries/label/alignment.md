@@ -12,7 +12,7 @@ Aligns point labels in relation to their points.
 This property accepts the following values:
 
 - `center`    
-Displays label in the center of the point.
+Displays labels in the center of the point.
 
 - `left`    
 Aligns the left corner of the label to the center of the point.

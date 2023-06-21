@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The modified property's new value.
 
 ---
 <!-- Description goes here -->

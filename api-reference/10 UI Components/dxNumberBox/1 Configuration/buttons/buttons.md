@@ -1,6 +1,6 @@
 ---
 id: dxNumberBox.Options.buttons
-type: Array<Enums.NumberBoxPredefinedButton, dxTextEditorButton>
+type: Array<Enums.NumberBoxPredefinedButton, TextEditorButton>
 default: undefined
-inheritsType: dxTextEditorButton
+inheritsType: TextEditorButton
 ---

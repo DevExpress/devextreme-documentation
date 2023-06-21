@@ -1,5 +1,5 @@
 ---
-id: Store.byKey(key)
+id: ArrayStore.byKey(key)
 ---
 ---
 ##### shortDescription
@@ -11,9 +11,6 @@ A Promise that is resolved after the data item is loaded.
 
 ##### param(key): Object | String | Number
 A data item's key value.
-
-##### param(extraOptions): LoadOptions
-Data processing settings.
 
 ---
 ---

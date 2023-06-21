@@ -17610,9 +17610,9 @@
       "vue": "@value-changed"
     },
     "dxTextEditorButton": {
-      "angular": "dxo-dx-text-editor-button",
+      "angular": "dxo-text-editor-button",
       "react": "DxTextEditorButton",
-      "vue": "DxDxTextEditorButton"
+      "vue": "DxTextEditorButton"
     },
     "dxTextEditorOptions.buttons": {
       "angular": "dxi-button",
@@ -20962,6 +20962,11 @@
       "angular": "dxo-targeted-appointment-data",
       "react": "TargetedAppointmentData",
       "vue": "DxTargetedAppointmentData"
+    },
+    "textEditorButton": {
+      "angular": "dxo-text-editor-button",
+      "react": "TextEditorButton",
+      "vue": "DxTextEditorButton"
     },
     "toolbarPreparingInfo.toolbarOptions": {
       "vue": "toolbar-options"

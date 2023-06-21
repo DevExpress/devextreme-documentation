@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the event is cancelable.
 
 ---
 <!-- Description goes here -->

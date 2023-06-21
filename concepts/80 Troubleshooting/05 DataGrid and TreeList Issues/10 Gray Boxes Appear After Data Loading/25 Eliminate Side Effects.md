@@ -2,7 +2,7 @@ Follow the steps below to eliminate possible side effects:
 
 - Disable the [stateStoring](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/stateStoring/') property. Check if the issue still persists. If the issue disappears, it is possible that the saved state is corrupted. Clear the saved state, enable **stateStoring**, and check again.
 
-- FireFox and Safari browsers raise native scrolling events asynchronously. This behavior forces asynchronous row rendering in native scrolling mode even when [renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/renderAsync.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#renderAsync') is disabled. To avoid this side effect, disable the scrolling.[useNative](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/useNative.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#useNative') property. Call the [defaultOptions(rule)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#defaultOptionsrule) method to resolve the issue for all DataGrid components in the application.
+- FireFox and Safari browsers raise native scrolling events asynchronously. This behavior forces asynchronous row rendering in native scrolling mode even when [renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/renderAsync.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#renderAsync') is disabled. To avoid this side effect, disable the scrolling.[useNative](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/useNative.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#useNative') property. Call the [defaultOptions(rule)](/api-reference/10%20UI%20Components/DOMComponent/3%20Methods/defaultOptions(rule).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#defaultOptionsrule') method to resolve the issue for all DataGrid components in the application.
 
 - If you bind DataGrid or TreeList to one DataSource instance, reset the DataSource page index once you destroy the component. DataSource does not reset the index automatically. A new component bound to this DataSource may attempt to display the first data page while DataSource may contain only other data pages. The component displays gray boxes in such case.
 Call the DataSource.[pageIndex(newIndex)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#pageIndexnewIndex') method to reset the page index.
@@ -34,7 +34,7 @@ Call the DataSource.[pageIndex(newIndex)](/api-reference/30%20Data%20Layer/DataS
             }
         }
     
-    Alternatively, you can use CSS to hide the component. In this case, call the [updateDimensions](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions) method.
+    Alternatively, you can use CSS to hide the component. In this case, call the [updateDimensions](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method.
 
 ##### Vue
 
@@ -66,7 +66,7 @@ Call the DataSource.[pageIndex(newIndex)](/api-reference/30%20Data%20Layer/DataS
             }
         </script>
     
-    Alternatively, you can use CSS to hide the component. In this case, call the [updateDimensions](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions) method.
+    Alternatively, you can use CSS to hide the component. In this case, call the [updateDimensions](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method.
 
 ##### React
 
@@ -98,6 +98,6 @@ Call the DataSource.[pageIndex(newIndex)](/api-reference/30%20Data%20Layer/DataS
         }
         export default App;
     
-    Alternatively, you can use CSS to hide the component. In this case, call the [updateDimensions](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions) method.
+    Alternatively, you can use CSS to hide the component. In this case, call the [updateDimensions](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') method.
 
 ---

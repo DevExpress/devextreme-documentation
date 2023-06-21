@@ -47,7 +47,7 @@ In the code above, the `getColumns()` function returns an array of objects, but 
 3. When comparing the old and new `columns` values, the change detection mechanism calls `getColumns()` again and receives a different array.
 4. The array gets assigned to the `columns` property, and the cycle repeats infinitely.
 
-To workaround this behavior, implement one of the following approaches:
+To work around this behavior, implement one of the following techniques:
 
 **Use a component’s class field instead of a method.**
 
@@ -85,7 +85,7 @@ To workaround this behavior, implement one of the following approaches:
         };
     }
 
-**Rewrite a component’s class method to the custom [Angular pipe](https://angular.io/guide/pipes-custom-data-trans).**
+**Rewrite a component’s class method to a custom [Angular pipe](https://angular.io/guide/pipes-custom-data-trans).**
 
     <!-- tab: app.component.ts -->
     import { 
@@ -133,7 +133,7 @@ To workaround this behavior, implement one of the following approaches:
         columnsOption = GridColumnsOption.PersonalDetails;
     } 
 
-**Cache a returned value of the component’s method (for example, you can use universal apply pipe).** 
+**Cache the return value of the component’s method (for example, you can use a universal apply pipe).**
 
         <!-- tab: app.component.ts -->
         import { 
@@ -183,4 +183,4 @@ To workaround this behavior, implement one of the following approaches:
             }
         }
 
-[note]We recommend you to use an arrow function with this approach.
+[note]We recommend that you use an arrow function with this technique.

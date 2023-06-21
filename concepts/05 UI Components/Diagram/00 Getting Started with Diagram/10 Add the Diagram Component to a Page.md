@@ -13,12 +13,12 @@ Add diagram resources (scripts and styles) onto the page.
     Add the `dx-diagram.min.css` and `dx-diagram.min.js` files to your page.
 
         <!--HTML-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx-diagram.min.css">
-        <script src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx-diagram.min.js"></script>
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx-diagram.min.css">
+        <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-diagram.min.js"></script>
 
 - **Local Scripts**
 
-    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles%\DevExpress 23.1\DevExtreme\Sources). Copy the **dx-diagram.min.js** and **dx-diagram.min.css** files into your application folder. Then, link the required files.
+    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles%\DevExpress 23.2\DevExtreme\Sources). Copy the **dx-diagram.min.js** and **dx-diagram.min.css** files into your application folder. Then, link the required files.
 
         <!--HTML-->
         <script type="text/javascript" src="js/dx-diagram.min.js"></script>
@@ -32,16 +32,16 @@ The Diagram UI component is a jQuery DevExtreme UI component. Common DevExtreme 
 
         <!--HTML-->
         @* Diagram styles*@
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx-diagram.min.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx-diagram.min.css">
         @* DevExtreme theme *@
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
         
         @* jQuery *@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         @* Diagram scripts *@
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx-diagram.min.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-diagram.min.js"></script>
         @* DevExtreme common scripts *@
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.all.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx.all.js"></script>
 
         
 [/note]

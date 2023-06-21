@@ -2,7 +2,7 @@
 
 This tutorial shows how to add the Menu component to your application and configure the component's core features.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/23_1/GettingStartedWith/Menu/index.html, /Content/Applications/23_1/GettingStartedWith/Menu/index.js, /Content/Applications/23_1/GettingStartedWith/Menu/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/23_2/GettingStartedWith/Menu/index.html, /Content/Applications/23_2/GettingStartedWith/Menu/index.js, /Content/Applications/23_2/GettingStartedWith/Menu/index.css"></div>
 
 Each section in this tutorial describes a single configuration step. You can also find the full source code in the GitHub repository.
 

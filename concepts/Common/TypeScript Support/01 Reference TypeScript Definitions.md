@@ -1,4 +1,4 @@
-You can find the file with TypeScript definitions for DevExtreme in the DevExtreme zip archive or in the folder where you have installed DevExtreme, which is **C:\Program Files\DevExpress 23.1\DevExtreme\Sources\Lib\ts** by default. Add this file to your project. Then, reference this and jQuery TypeScript definition file in your *.ts*-file.
+You can find the file with TypeScript definitions for DevExtreme in the DevExtreme zip archive or in the folder where you have installed DevExtreme, which is **C:\Program Files\DevExpress 23.2\DevExtreme\Sources\Lib\ts** by default. Add this file to your project. Then, reference this and jQuery TypeScript definition file in your *.ts*-file.
 
     /// <reference path="TypeScript/jquery.d.ts" />
     //  File from the zip archive or from the installation folder...

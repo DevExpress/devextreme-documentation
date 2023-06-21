@@ -1,9 +1,9 @@
 ---
 id: dxTextEditor.Options.buttons
 acceptValues: 'clear'
-type: Array<String, dxTextEditorButton>
+type: Array<String, TextEditorButton>
 default: undefined
-inheritsType: dxTextEditorButton
+inheritsType: TextEditorButton
 ---
 ---
 ##### shortDescription

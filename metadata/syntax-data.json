@@ -10266,11 +10266,6 @@
     "dxTextBoxOptions.maxLength": {
       "vue": "max-length"
     },
-    "dxTextEditorButton": {
-      "angular": "dxo-dx-text-editor-button",
-      "react": "DxTextEditorButton",
-      "vue": "DxDxTextEditorButton"
-    },
     "dxTextEditorOptions.buttons": {
       "angular": "dxi-button",
       "react": "Button",
@@ -13255,6 +13250,11 @@
     },
     "stringLengthRule.ignoreEmptyValue": {
       "vue": "ignore-empty-value"
+    },
+    "textEditorButton": {
+      "angular": "dxo-text-editor-button",
+      "react": "TextEditorButton",
+      "vue": "DxTextEditorButton"
     },
     "uploadInfo": {
       "vue": "upload-info"

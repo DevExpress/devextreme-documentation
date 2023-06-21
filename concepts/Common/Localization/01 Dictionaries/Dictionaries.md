@@ -6,7 +6,7 @@ DevExpress curates the following dictionaries:
 - German (de)
 - Japanese (ja)
 
-There are also dictionaries that the community contributes and curates. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/23_1/js/localization/messages" target="_blank">on GitHub</a>.
+There are also dictionaries that the community contributes and curates. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/23_2/js/localization/messages" target="_blank">on GitHub</a>.
 
 ---
 ##### jQuery

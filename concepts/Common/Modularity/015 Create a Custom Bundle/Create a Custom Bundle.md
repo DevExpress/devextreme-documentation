@@ -28,7 +28,7 @@ Link themes to your application.
 
     <!--HTML-->
     <!--Link Themes-->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
 
 The example below demonstrates how to create an application with a single button using the modules and shows the reduced configuration file.
 
@@ -48,7 +48,7 @@ The example below demonstrates how to create an application with a single button
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
         <!--Theme-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
     </head>
 
     <body>
@@ -97,7 +97,7 @@ The example below demonstrates how to create an application with a single button
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
         <!--Link Theme-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
     </head>
     <body>
       <div ng-controller="myController">
@@ -150,7 +150,7 @@ The example below demonstrates how to create an application with a single button
         <!--DevExtreme Bundle-->
         <script type="text/javascript" src="dx.custom.js" charset="utf-8"></script>
         <!--Link Theme-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
     </head>
 
     <body>

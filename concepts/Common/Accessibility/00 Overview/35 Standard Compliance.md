@@ -2,4 +2,4 @@ Compliance with the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" 
 
 The following document is based on the <a href="https://www.itic.org/policy/accessibility/vpat" target="_blank">Voluntary Product Accessibility Template (VPAT)</a> and contains detailed information about the supported accessibility features.
 
-[![pdf](/images/DevExtreme/pdfversion.gif) Download VPAT PDF](/Content/docs/VPATDevExpressDevExtreme23_1.pdf)
+[![pdf](/images/DevExtreme/pdfversion.gif) Download VPAT PDF](/Content/docs/VPATDevExpressDevExtreme23_2.pdf)

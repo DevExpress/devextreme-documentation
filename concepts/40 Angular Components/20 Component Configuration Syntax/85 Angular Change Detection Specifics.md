@@ -100,7 +100,6 @@ To workaround this behavior, implement one of the following approaches:
     }
 
     @Pipe({name: 'columnsPipe'})
-
     export class ExponentialStrengthPipe implements PipeTransform {
         transform(columnsOption: GridColumnsOption): string[] {
             switch (option) {
@@ -130,7 +129,6 @@ To workaround this behavior, implement one of the following approaches:
             </dx-data-grid>
         `,
     })
-
     export class AppComponent {
         columnsOption = GridColumnsOption.PersonalDetails;
     } 
@@ -150,7 +148,6 @@ To workaround this behavior, implement one of the following approaches:
         }
 
         @Pipe({ name: 'apply' })
-
         export class ApplyPipe<TArgs, TReturn> implements PipeTransform {
             transform(func: ((...args: TArgs[]) => TReturn), ...args: TArgs[]): TReturn { return func(...args); }
         }
@@ -163,7 +160,6 @@ To workaround this behavior, implement one of the following approaches:
                 </dx-data-grid>
             `,
         })
-
         export class AppComponent {
             columnsOption = GridColumnsOption.PersonalDetails;
             

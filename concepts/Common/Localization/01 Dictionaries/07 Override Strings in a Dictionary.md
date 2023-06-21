@@ -1,6 +1,6 @@
-To override a string, find its key in any <a href="https://github.com/DevExpress/DevExtreme/tree/23_1/js/localization/messages" target="_blank">dictionary</a> and use it to specify the new string value.
+To override a string, find its key in any <a href="https://github.com/DevExpress/DevExtreme/tree/23_2/js/localization/messages" target="_blank">dictionary</a> and use it to specify the new string value.
 
-In the following code, we override two strings from the <a href="https://github.com/DevExpress/DevExtreme/blob/23_1/js/localization/messages/en.json" target="_blank">English dictionary</a>:
+In the following code, we override two strings from the <a href="https://github.com/DevExpress/DevExtreme/blob/23_2/js/localization/messages/en.json" target="_blank">English dictionary</a>:
 
 ---
 ##### jQuery

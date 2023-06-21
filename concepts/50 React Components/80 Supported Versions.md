@@ -5,7 +5,7 @@
     </tr>
     <tr>
         <td>v23.1.x</td>
-        <td>react_version_23_1</td>
+        <td>react_version_23_2</td>
     </tr>
     <tr>
         <td>v22.2.x</td>

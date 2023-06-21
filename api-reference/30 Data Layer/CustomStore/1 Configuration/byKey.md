@@ -4,7 +4,7 @@ type: function(key, extraOptions)
 ---
 ---
 ##### shortDescription
-Specifies a custom implementation of the [byKey(key)](/api-reference/30%20Data%20Layer/Store/3%20Methods/byKey(key).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#byKeykey') method.
+Specifies a custom implementation of the [byKey(key)](/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#byKeykey_extraOptions) method.
 
 ##### param(key): Object | String | Number
 A key value.

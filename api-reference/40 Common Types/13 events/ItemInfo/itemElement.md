@@ -4,7 +4,7 @@ type: DxElement
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The item's container.
 
 ---
 <!-- Description goes here -->

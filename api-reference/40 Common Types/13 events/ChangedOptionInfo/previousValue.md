@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The UI component's previous value.
 
 ---
 <!-- Description goes here -->

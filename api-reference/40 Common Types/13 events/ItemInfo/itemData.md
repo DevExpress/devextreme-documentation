@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The item's data.
 
 ---
 <!-- Description goes here -->

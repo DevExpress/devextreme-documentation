@@ -6,7 +6,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies item information used in events related to a component's items.
 
 ---
 <!-- Description goes here -->

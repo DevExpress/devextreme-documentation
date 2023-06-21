@@ -4,7 +4,7 @@ type: event
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the executed event.
 
 ---
 <!-- Description goes here -->

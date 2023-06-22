@@ -5,6 +5,7 @@ type: any
 ---
 ##### shortDescription
 Custom information that you can pass during file upload. For instance, you can specify a custom file ID when the first part of a file is being uploaded.
+
 ---
 ---
 ##### jQuery

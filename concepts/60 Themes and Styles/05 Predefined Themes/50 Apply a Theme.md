@@ -18,4 +18,3 @@ To apply a theme, configure the module bundler you use and import a theme styles
 
 ---
 
-If you use SCSS, include a <a href="https://www.unpkg.com/browse/devextreme@23.1.3/scss/widgets/generic/common/_index.scss">common module</a> in your project.

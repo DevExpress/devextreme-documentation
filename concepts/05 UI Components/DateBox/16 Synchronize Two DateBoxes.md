@@ -1,4 +1,4 @@
-DateBox UI components are often coupled for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one DateBox's range depending on the other's value as shown in the example below. Alternatively, you can use the [DateRangeBox](/Documentation/Guide/UI_Components/DateRangeBox/Getting_Started_with_DateRangeBox/) component.
+DateBox UI components are often combined for selecting a date interval. In this case, you need to synchronize the **DateBoxes** to prevent a user from selecting an interval whose start date is later than the end date. For this, limit one DateBox range value depending on the other range value as shown in the example below. Alternatively, you can use the [DateRangeBox](/Documentation/Guide/UI_Components/DateRangeBox/Getting_Started_with_DateRangeBox/) component.
 
 ---
 ##### jQuery

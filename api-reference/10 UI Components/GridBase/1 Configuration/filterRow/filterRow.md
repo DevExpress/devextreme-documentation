@@ -12,7 +12,7 @@ The filter row allows a user to filter data by values of individual columns.
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout {WidgetName} FilterRow](/images/{WidgetName}/visual_elements/filter_row.png)
 
-Each cell in the filter row contains a magnifying glass icon, pausing on which opens a drop-down list with filters [available for the column](/api-reference/_hidden/GridBaseColumn/filterOperations.md '{basewidgetpath}/Configuration/columns/#filterOperations').
+Each cell in the filter row contains a magnifying glass icon. Hovering over this icon opens a drop-down list with filters [available for the column](/api-reference/_hidden/GridBaseColumn/filterOperations.md '{basewidgetpath}/Configuration/columns/#filterOperations').
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout {WidgetName} FilterRow](/images/{WidgetName}/visual_elements/filter_row_operation_chooser.png)
 

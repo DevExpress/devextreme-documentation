@@ -18,7 +18,7 @@ Each cell in the filter row contains a magnifying glass icon. Hovering over this
 
 To make the filter row visible, assign **true** to the **filterRow**.[visible](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow/visible.md '{basewidgetpath}/Configuration/filterRow/#visible') property.
 
-[note] If you use a [grouped](/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/) data structure to display data in a lookup column, the **All** item in the filter row is not displayed.
+[note] If you use a [grouped](/concepts/05%20UI%20Components/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/') data structure to display data in a lookup column, the **All** item in the filter row is not displayed.
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/",

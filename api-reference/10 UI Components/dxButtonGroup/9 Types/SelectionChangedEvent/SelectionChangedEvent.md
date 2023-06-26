@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the selectionChanged event handler's argument.
 
 ---
 <!-- Description goes here -->

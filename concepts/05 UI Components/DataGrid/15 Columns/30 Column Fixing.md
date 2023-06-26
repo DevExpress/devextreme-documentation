@@ -183,7 +183,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
 
 [note] Once you assign **true** to the **columnFixing**.**enabled** or **fixed** property, [command columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/') become fixed automatically.
 
-Column fixing works only with horizontal scrolling. If a user scrolls DataGrid horizontally, the fixed columns do not move. Horizontal scrolling is enabled when a total columns width is wider than the component width (or its container width if the component's width is not specified). If the total columns width is less than the component width, the fixed column behave like a regular column.
+Column fixing works only with horizontal scrolling. If a user scrolls DataGrid horizontally, the fixed columns do not move. Horizontal scrolling is enabled when the total column width is wider than the component width (or its container width if the component width is not specified). If the total column width is less than the component width, the fixed column behaves like a regular column.
 
 #####See Also#####
 - [Adaptability](/concepts/05%20UI%20Components/DataGrid/15%20Columns/50%20Adaptability '/Documentation/Guide/UI_Components/DataGrid/Columns/Adaptability/')

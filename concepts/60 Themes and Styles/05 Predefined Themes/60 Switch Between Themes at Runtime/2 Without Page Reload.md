@@ -26,25 +26,6 @@ You can use this approach only if the themes belong to the same group. For insta
 
     ##### Angular
 
-        <!-- tab: index.html -->
-        <head>
-            <!-- Generic themes -->
-            <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true">
-            <link rel="dx-theme" data-theme="generic.dark" href="css/dx.dark.css" data-active="false">
-            <link rel="dx-theme" data-theme="generic.contrast" href="css/dx.contrast.css" data-active="false">
-            <!-- ... -->
-            <!-- or Generic Compact themes-->
-            <link rel="dx-theme" data-theme="generic.light.compact" href="css/dx.light.compact.css" data-active="true">
-            <link rel="dx-theme" data-theme="generic.dark.compact" href="css/dx.dark.compact.css" data-active="false">
-            <link rel="dx-theme" data-theme="generic.contrast.compact" href="css/dx.contrast.compact.css" data-active="false">
-            <!-- ... -->
-            <!-- or Material Design themes-->
-            <link rel="dx-theme" data-theme="material.blue.light" href="css/dx.material.blue.light.css" data-active="true">
-            <link rel="dx-theme" data-theme="material.blue.dark" href="css/dx.material.blue.dark.css" data-active="false">
-            <link rel="dx-theme" data-theme="material.teal.light" href="css/dx.material.teal.light.css" data-active="false">
-            <!-- ... -->
-        </head>
-
     If you want your themes to update automatically with the DevExtreme package, reference them in `angular.json`, and after, use the themes in `index.html`.
 
         <!-- tab: angular.json -->
@@ -60,8 +41,21 @@ You can use this approach only if the themes belong to the same group. For insta
 
         <!-- tab: index.html -->
         <head>
+            <!-- Generic themes -->
             <link rel="dx-theme" data-theme="generic.light" href="assets/dx.light.css" data-active="true">
             <link rel="dx-theme" data-theme="generic.dark" href="assets/dx.dark.css" data-active="false">
+            <link rel="dx-theme" data-theme="generic.contrast" href="assets/dx.contrast.css" data-active="false">
+            <!-- ... -->
+            <!-- or Generic Compact themes-->
+            <link rel="dx-theme" data-theme="generic.light.compact" href="assets/dx.light.compact.css" data-active="true">
+            <link rel="dx-theme" data-theme="generic.dark.compact" href="assets/dx.dark.compact.css" data-active="false">
+            <link rel="dx-theme" data-theme="generic.contrast.compact" href="assets/dx.contrast.compact.css" data-active="false">
+            <!-- ... -->
+            <!-- or Material Design themes-->
+            <link rel="dx-theme" data-theme="material.blue.light" href="assets/dx.material.blue.light.css" data-active="true">
+            <link rel="dx-theme" data-theme="material.blue.dark" href="assets/dx.material.blue.dark.css" data-active="false">
+            <link rel="dx-theme" data-theme="material.teal.light" href="assets/dx.material.teal.light.css" data-active="false">
+            <!-- ... -->
         </head>
 
     ##### Vue

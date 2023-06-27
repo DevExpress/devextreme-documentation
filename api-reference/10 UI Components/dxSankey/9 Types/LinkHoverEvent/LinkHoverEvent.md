@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [linkHover]({basewidgetpath}/Events/#linkHover) event handler's argument.
+The type of the [linkHoverChanged]({basewidgetpath}/Events/#linkHoverChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

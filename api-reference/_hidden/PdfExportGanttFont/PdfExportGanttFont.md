@@ -1,5 +1,7 @@
 ---
 id: PdfExportGanttFont
+module: pdf_exporter
+export: PdfExportGanttFont
 ---
 ---
 ##### shortDescription

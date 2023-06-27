@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [rowCollapsing]({basewidgetpath}/Events/#rowCollapsing) event handler's argument.
 
 ---
 <!-- Description goes here -->

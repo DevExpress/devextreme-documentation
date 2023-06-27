@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [itemReordered]({basewidgetpath}/Events/#itemReordered) event handler's argument.
 
 ---
 <!-- Description goes here -->

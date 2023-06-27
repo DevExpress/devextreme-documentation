@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [rowInserting]({basewidgetpath}/Events/#rowInserting) event handler's argument.
 
 ---
 <!-- Description goes here -->

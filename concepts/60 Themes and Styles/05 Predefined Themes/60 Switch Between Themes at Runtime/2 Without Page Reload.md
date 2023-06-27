@@ -60,7 +60,7 @@ You can use this approach only if the themes belong to the same group. For insta
 
     ##### Vue
 
-    Copy stylesheets you want to use from `node_modules/devextreme/dist/css/` folder to the `public` folder. If you designed your own theme, place it in the `public` folder.
+    Copy the stylesheets you want to use from `node_modules/devextreme/dist/css/` folder to the `public` folder. If you created your own theme, place it in the `public` folder.
 
         <!-- tab: index.html -->
         <head>
@@ -83,7 +83,7 @@ You can use this approach only if the themes belong to the same group. For insta
 
     ##### React
 
-    Copy stylesheets you want to use from `node_modules/devextreme/dist/css/` folder to the `public` folder. If you designed your own theme, place it in the `public` folder.
+    Copy the stylesheets you want to use from `node_modules/devextreme/dist/css/` folder to the `public` folder. If you created your own theme, place it in the `public` folder.
 
         <!-- tab: index.html -->
         <head>

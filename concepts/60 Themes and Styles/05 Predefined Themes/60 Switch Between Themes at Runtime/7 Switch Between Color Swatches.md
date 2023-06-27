@@ -167,7 +167,7 @@ You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet
 
 ---
 
-You can use the StyleSheet API not only to switch between swatches but to switch between themes. Refer to the following GitHub repository to learn more:
+You can use the StyleSheet API to switch between swatches and themes. Refer to the following GitHub repository for more information:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-project-template-theme-selector"

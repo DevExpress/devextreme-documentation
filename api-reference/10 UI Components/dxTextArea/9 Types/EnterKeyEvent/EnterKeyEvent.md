@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [enterKey]({basewidgetpath}/Events/#enterKey) event handler's argument.
 
 ---
 <!-- Description goes here -->

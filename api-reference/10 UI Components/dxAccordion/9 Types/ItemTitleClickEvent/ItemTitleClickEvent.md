@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [itemTitleClick]({basewidgetpath}/Events/#itemTitleClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [fileUploaded]({basewidgetpath}/Events/#fileUploaded) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [drill]({basewidgetpath}/Events/#drill) event handler's argument.
 
 ---
 <!-- Description goes here -->

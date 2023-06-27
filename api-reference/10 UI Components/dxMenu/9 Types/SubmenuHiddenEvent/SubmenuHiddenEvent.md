@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [submenuHidden]({basewidgetpath}/Events/#submenuHidden) event handler's argument.
 
 ---
 <!-- Description goes here -->

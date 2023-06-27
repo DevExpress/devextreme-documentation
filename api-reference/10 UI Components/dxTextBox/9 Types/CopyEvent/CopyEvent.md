@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [copy]({basewidgetpath}/Events/#copy) event handler's argument.
 
 ---
 <!-- Description goes here -->

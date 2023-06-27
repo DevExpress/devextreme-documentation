@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [fieldDataChanged]({basewidgetpath}/Events/#fieldDataChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

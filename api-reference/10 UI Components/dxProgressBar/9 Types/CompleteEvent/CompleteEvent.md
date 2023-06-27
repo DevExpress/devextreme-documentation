@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [complete]({basewidgetpath}/Events/#complete) event handler's argument.
 
 ---
 <!-- Description goes here -->

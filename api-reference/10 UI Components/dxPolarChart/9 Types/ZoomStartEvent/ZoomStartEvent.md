@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [zoomStart]({basewidgetpath}/Events/#zoomStart) event handler's argument.
 
 ---
 <!-- Description goes here -->

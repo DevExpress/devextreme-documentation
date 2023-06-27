@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [progress]({basewidgetpath}/Events/#progress) event handler's argument.
 
 ---
 <!-- Description goes here -->

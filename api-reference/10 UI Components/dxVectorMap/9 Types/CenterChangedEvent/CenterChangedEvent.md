@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [centerChanged]({basewidgetpath}/Events/#centerChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

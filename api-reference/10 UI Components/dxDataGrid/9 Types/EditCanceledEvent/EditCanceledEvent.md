@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [editCanceled]({basewidgetpath}/Events/#editCanceled) event handler's argument.
 
 ---
 <!-- Description goes here -->

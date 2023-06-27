@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [appointmentAdded]({basewidgetpath}/Events/#appointmentAdded) event handler's argument.
 
 ---
 <!-- Description goes here -->

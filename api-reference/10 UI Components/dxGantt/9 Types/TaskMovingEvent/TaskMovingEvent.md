@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [taskMoving]({basewidgetpath}/Events/#taskMoving) event handler's argument.
 
 ---
 <!-- Description goes here -->

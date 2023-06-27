@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the add event handler's argument.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

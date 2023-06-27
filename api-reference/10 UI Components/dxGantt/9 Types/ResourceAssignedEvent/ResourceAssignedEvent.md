@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the resourceAssigned event handler's argument.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

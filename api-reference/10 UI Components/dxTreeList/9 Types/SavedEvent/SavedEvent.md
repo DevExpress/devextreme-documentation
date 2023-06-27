@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [saved]({basewidgetpath}/Events/#saved) event handler's argument.
 
 ---
 <!-- Description goes here -->

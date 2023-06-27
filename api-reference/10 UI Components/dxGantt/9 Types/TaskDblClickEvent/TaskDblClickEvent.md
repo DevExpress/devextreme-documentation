@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [taskDblClick]({basewidgetpath}/Events/#taskDblClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

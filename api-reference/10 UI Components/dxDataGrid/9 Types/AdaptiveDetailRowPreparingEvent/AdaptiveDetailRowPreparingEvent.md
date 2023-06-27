@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [adaptiveDetailRowPreparing]({basewidgetpath}/Events/#adaptiveDetailRowPreparing) event handler's argument.
 
 ---
 <!-- Description goes here -->

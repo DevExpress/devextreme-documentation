@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [markerAdded]({basewidgetpath}/Events/#markerAdded) event handler's argument.
 
 ---
 <!-- Description goes here -->

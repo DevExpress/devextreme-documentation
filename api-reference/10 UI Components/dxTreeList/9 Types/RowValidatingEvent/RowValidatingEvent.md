@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [rowValidating]({basewidgetpath}/Events/#rowValidating) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [dependencyInserted]({basewidgetpath}/Events/#dependencyInserted) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [directoryCreating]({basewidgetpath}/Events/#directoryCreating) event handler's argument.
 
 ---
 <!-- Description goes here -->

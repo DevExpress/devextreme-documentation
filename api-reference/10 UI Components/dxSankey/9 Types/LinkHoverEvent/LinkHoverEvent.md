@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the linkHoverChanged event handler's argument.
+The type of the linkHover event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -1,4 +1,4 @@
-In the code below, you can see how to bind DataGrid to the [OData service](/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData) and enable remote filtering. To make this solution work, your OData service should support the **Any** filtering operator (see [Support for Any and All](https://www.odata.org/blog/support-for-any-and-all/)). Also, this concept described at the [Azure: OData Collection Operators](https://learn.microsoft.com/en-us/azure/search/search-query-odata-collection-operators) topic. 
+The following code example demonstrates how to bind the DataGrid to the [OData service](/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData) and enable remote filtering. To make this solution work, make sure that your OData service supports the **Any** filtering operator (see [Support for Any and All](https://www.odata.org/blog/support-for-any-and-all/)). This concept is also described in the following topic: [Azure: OData Collection Operators](https://learn.microsoft.com/en-us/azure/search/search-query-odata-collection-operators).
 
 ---
 ##### jQuery
@@ -158,6 +158,6 @@ In the code below, you can see how to bind DataGrid to the [OData service](/Docu
 
 ---
 
-You need to specify the [calculateFilterExpression](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression) property and put the `"Products/any(o: substringof("filterValue",o/ProductName) eq true)"` expression to the [EdmLiteral](/Documentation/ApiReference/Data_Layer/EdmLiteral/) method. Also, handle the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) property and create a comma-separated string from ProductNames. This string will be displayed in column cells.
+You need to specify the [calculateFilterExpression](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression) property and pass the `"Products/any(o: substringof("filterValue",o/ProductName) eq true)"` expression to the [EdmLiteral](/Documentation/ApiReference/Data_Layer/EdmLiteral/) method. In addition, you need to handle the [calculateCellValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue) property and create a comma-separated string from ProductNames. This string will be displayed in column cells.
 
-The DataGrid sends a filter expression to the backend and expects relevant data as a result. The solution for filtering depends on the backend type. However, a common requirement is that the backend should supply the corresponding filtering operation.
+The DataGrid sends a filter expression to the backend and expects relevant data as a result. The solution for filtering depends on the backend type. However, a common requirement is that the backend should implement the corresponding filtering operation.

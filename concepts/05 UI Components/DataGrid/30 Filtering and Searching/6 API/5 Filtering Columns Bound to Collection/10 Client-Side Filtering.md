@@ -1,4 +1,4 @@
-In the code below, you can see how to execute the filtering logic on the client-side. For this purpose, bind the DataGrid to a local array, and disable [remote filtering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/#filtering).
+The following code example demonstrates how to filter data on the client side. To implement data filtering on the client side, bind the DataGrid to a local array, and disable [remote filtering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/#filtering).
 
 ---
 ##### jQuery

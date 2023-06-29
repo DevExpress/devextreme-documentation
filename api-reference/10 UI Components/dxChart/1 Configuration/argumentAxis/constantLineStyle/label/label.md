@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.argumentAxis.constantLineStyle.label
-type: viz/chart:dxChartArgumentAxisConstantLineStyleLabel
+type: viz/chart:ArgumentAxisConstantLineStyleLabel
 inheritsType: viz/chart:dxChartArgumentAxisConstantLineStyleLabel
 ---
 ---

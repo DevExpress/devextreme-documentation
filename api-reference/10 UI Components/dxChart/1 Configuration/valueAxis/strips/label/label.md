@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.valueAxis.strips.label
-type: viz/chart:dxChartValueAxisStripsLabel
+type: viz/chart:ValueAxisStripsLabel
 inheritsType: viz/chart:dxChartValueAxisStripsLabel
 ---
 ---

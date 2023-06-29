@@ -1,6 +1,6 @@
 ---
 id: dxCircularGauge.Options.rangeContainer
-type: viz/circular_gauge:dxCircularGaugeRangeContainer
+type: viz/circular_gauge:RangeContainer
 inheritsType: viz/circular_gauge:dxCircularGaugeRangeContainer
 ---
 ---

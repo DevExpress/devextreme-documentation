@@ -2,7 +2,7 @@
 id: dxChart.Options.valueAxis
 type: Array<viz/chart:dxChartValueAxis>
 inherits: dxChart.Options.commonAxisSettings
-inheritsType: viz/chart:dxChartValueAxis
+inheritsType: viz/chart:ValueAxis
 ---
 ---
 ##### shortDescription

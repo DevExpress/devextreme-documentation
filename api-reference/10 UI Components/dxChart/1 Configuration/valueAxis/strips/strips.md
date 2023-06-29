@@ -3,7 +3,7 @@ id: dxChart.Options.valueAxis.strips
 type: Array<viz/chart:dxChartValueAxisStrips>
 inherits: dxChart.Options.commonAxisSettings.stripStyle
 notUsedInTheme: 
-inheritsType: viz/chart:dxChartValueAxisStrips
+inheritsType: viz/chart:ValueAxisStrips
 ---
 ---
 ##### shortDescription

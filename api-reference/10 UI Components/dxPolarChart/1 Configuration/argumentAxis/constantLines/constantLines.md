@@ -3,7 +3,7 @@ id: dxPolarChart.Options.argumentAxis.constantLines
 type: Array<viz/polar_chart:dxPolarChartArgumentAxisConstantLines>
 inherits: dxPolarChart.Options.commonAxisSettings.constantLineStyle
 notUsedInTheme: 
-inheritsType: viz/polar_chart:dxPolarChartArgumentAxisConstantLines
+inheritsType: viz/polar_chart:ArgumentAxisConstantLines
 ---
 ---
 ##### shortDescription

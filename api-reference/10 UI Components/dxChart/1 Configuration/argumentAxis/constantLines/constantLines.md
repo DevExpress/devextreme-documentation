@@ -3,7 +3,7 @@ id: dxChart.Options.argumentAxis.constantLines
 type: Array<viz/chart:dxChartArgumentAxisConstantLines>
 inherits: dxChart.Options.commonAxisSettings.constantLineStyle
 notUsedInTheme: 
-inheritsType: viz/chart:dxChartArgumentAxisConstantLines
+inheritsType: viz/chart:ArgumentAxisConstantLines
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxCircularGauge.Options.scale.label
-type: viz/circular_gauge:dxCircularGaugeScaleLabel
+type: viz/circular_gauge:ScaleLabel
 inheritsType: viz/circular_gauge:dxCircularGaugeScaleLabel
 ---
 ---

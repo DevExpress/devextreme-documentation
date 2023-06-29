@@ -1,0 +1,12 @@
+---
+isType: 
+uid: viz/chart:ValueAxisConstantLines
+module: viz/chart
+export: dxChartValueAxisConstantLines
+generateTypeLink: 
+---
+---
+##### shortDescription
+Declares a collection of constant lines belonging to the value axis.
+
+---

@@ -3,7 +3,7 @@ id: dxPolarChart.Options.valueAxis.strips
 type: Array<viz/polar_chart:dxPolarChartValueAxisStrips>
 inherits: dxPolarChart.Options.commonAxisSettings.stripStyle
 notUsedInTheme: 
-inheritsType: viz/polar_chart:dxPolarChartValueAxisStrips
+inheritsType: viz/polar_chart:ValueAxisStrips
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonAxisSettings.stripStyle.label
-type: viz/chart:dxChartCommonAxisSettingsStripStyleLabel
+type: viz/chart:CommonAxisSettingsStripStyleLabel
 inheritsType: viz/chart:dxChartCommonAxisSettingsStripStyleLabel
 ---
 ---

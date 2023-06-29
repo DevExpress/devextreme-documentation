@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.argumentAxis.strips.label
-type: viz/polar_chart:dxPolarChartArgumentAxisStripsLabel
+type: viz/polar_chart:ArgumentAxisStripsLabel
 inheritsType: viz/polar_chart:dxPolarChartArgumentAxisStripsLabel
 ---
 ---

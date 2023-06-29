@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.loadingIndicator
-type: viz/bar_gauge:dxBarGaugeLoadingIndicator
+type: viz/bar_gauge:LoadingIndicator
 inheritsType: viz/bar_gauge:dxBarGaugeLoadingIndicator
 ---
 ---

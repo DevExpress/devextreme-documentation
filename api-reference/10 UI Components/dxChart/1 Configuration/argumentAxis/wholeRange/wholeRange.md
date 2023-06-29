@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Defines the range where the axis can be [zoomed and panned](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/'). To limit the visual range, specify the [visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/) property.
+Defines the range where the axis can be [zoomed and panned](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/'). To limit the visual range, specify the [visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') property.
 
 ---
 #include dataviz-ref-vizrangevariants with {

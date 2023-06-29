@@ -1,4 +1,4 @@
-Generate a new `custom` [color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/70%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches') that uses Generic Dark as a base theme:
+Generate a new `custom` [color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches') that uses Generic Dark as a base theme:
 
     npx devextreme-cli build-theme --base-theme="generic.dark" --make-swatch --output-color-scheme="custom"
 

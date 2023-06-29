@@ -21,6 +21,10 @@
     "validate-docs": "dx-tools validate-docs --docs-root ./",
     "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta ./metadata/modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
     "validate-links": "dx-tools update-links --docs-root ./ --validation true",
-    "rename-topics": "ts-node ./tools/updateFolder.ts"
+    "rename-topics": "ts-node ./tools/updateFolder.ts",
+    "rename-uid": "ts-node ./tools/rename-uid.ts ./api-reference uid-map.json"
+  },
+  "dependencies": {
+    "@types/node": "^20.3.2"
   }
 }

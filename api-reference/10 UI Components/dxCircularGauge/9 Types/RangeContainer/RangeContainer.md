@@ -2,7 +2,7 @@
 uid: viz/circular_gauge:RangeContainer
 isType: 
 module: viz/circular_gauge
-export: dxCircularGaugeRangeContainer
+export: RangeContainer
 generateTypeLink: 
 ---
 ---

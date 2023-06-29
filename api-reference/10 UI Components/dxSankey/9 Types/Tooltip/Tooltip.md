@@ -2,7 +2,7 @@
 uid: viz/sankey:Tooltip
 isType: 
 module: viz/sankey
-export: dxSankeyTooltip
+export: Tooltip
 generateTypeLink: 
 ---
 ---

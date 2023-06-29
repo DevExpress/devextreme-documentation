@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.argumentAxis.type
+type: Enums.AxisScaleType
+default: undefined
 ---
 ---
 ##### shortDescription

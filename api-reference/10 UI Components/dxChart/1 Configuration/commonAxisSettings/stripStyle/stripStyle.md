@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.stripStyle
 type: viz/chart:CommonAxisSettingsStripStyle
-inheritsType: viz/chart:dxChartCommonAxisSettingsStripStyle
+inheritsType: viz/chart:CommonAxisSettingsStripStyle
 ---
 ---
 ##### shortDescription

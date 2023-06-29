@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.multipleAxesSpacing
+type: Number
+default: 5
 ---
 ---
 ##### shortDescription

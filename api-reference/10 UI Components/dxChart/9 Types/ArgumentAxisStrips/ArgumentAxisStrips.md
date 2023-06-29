@@ -2,7 +2,7 @@
 isType: 
 uid: viz/chart:ArgumentAxisStrips
 module: viz/chart
-export: dxChartArgumentAxisStrips
+export: ArgumentAxisStrips
 generateTypeLink: 
 ---
 ---

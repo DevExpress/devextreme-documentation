@@ -2,7 +2,7 @@
 uid: viz/chart:CommonAxisSettings
 isType: 
 module: viz/chart
-export: dxChartCommonAxisSettings
+export: CommonAxisSettings
 generateTypeLink: 
 ---
 ---

@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.constantLineStyle.color
+type: String
+default: '#000000'
 ---
 ---
 ##### shortDescription

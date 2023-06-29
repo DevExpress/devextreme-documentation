@@ -2,7 +2,7 @@
 uid: viz/chart:CommonAxisSettingsStripStyle
 isType: 
 module: viz/chart
-export: dxChartCommonAxisSettingsStripStyle
+export: CommonAxisSettingsStripStyle
 generateTypeLink: 
 ---
 ---

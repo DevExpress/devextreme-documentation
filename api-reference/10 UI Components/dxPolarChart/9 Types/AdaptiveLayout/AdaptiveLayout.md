@@ -2,7 +2,7 @@
 uid: viz/polar_chart:AdaptiveLayout
 isType: 
 module: viz/polar_chart
-export: dxPolarChartAdaptiveLayout
+export: AdaptiveLayout
 generateTypeLink: 
 ---
 ---

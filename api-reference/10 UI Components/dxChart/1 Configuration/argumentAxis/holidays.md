@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.holidays
+type: Array<Date, String> | Array<Number>
+default: undefined
 ---
 ---
 ##### shortDescription

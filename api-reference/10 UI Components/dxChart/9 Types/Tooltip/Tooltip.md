@@ -2,7 +2,7 @@
 uid: viz/chart:Tooltip
 isType: 
 module: viz/chart
-export: dxChartTooltip
+export: Tooltip
 generateTypeLink: 
 ---
 ---

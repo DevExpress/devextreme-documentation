@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.strips.label.text
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,7 @@
 uid: viz/linear_gauge:ScaleLabel
 isType: 
 module: viz/linear_gauge
-export: dxLinearGaugeScaleLabel
+export: ScaleLabel
 generateTypeLink: 
 ---
 ---

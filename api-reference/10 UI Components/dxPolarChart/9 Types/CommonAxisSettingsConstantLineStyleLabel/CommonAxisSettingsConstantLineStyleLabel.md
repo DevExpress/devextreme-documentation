@@ -2,7 +2,7 @@
 uid: viz/polar_chart:CommonAxisSettingsConstantLineStyleLabel
 isType: 
 module: viz/polar_chart
-export: dxPolarChartCommonAxisSettingsConstantLineStyleLabel
+export: CommonAxisSettingsConstantLineStyleLabel
 generateTypeLink: 
 ---
 ---

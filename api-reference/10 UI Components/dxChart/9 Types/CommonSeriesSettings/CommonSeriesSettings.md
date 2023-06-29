@@ -2,7 +2,7 @@
 isType: 
 uid: viz/chart:CommonSeriesSettings
 module: viz/chart
-export: dxChartCommonSeriesSettings
+export: CommonSeriesSettings
 generateTypeLink: 
 ---
 ---

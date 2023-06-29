@@ -2,7 +2,7 @@
 uid: viz/polar_chart:Tooltip
 isType: 
 module: viz/polar_chart
-export: dxPolarChartTooltip
+export: Tooltip
 generateTypeLink: 
 ---
 ---

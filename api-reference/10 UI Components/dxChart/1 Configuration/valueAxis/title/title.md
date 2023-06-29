@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.title
 type: viz/chart:ValueAxisTitle
-inheritsType: viz/chart:dxChartValueAxisTitle
+inheritsType: viz/chart:ValueAxisTitle
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,7 @@
 uid: viz/circular_gauge:ScaleLabel
 isType: 
 module: viz/circular_gauge
-export: dxCircularGaugeScaleLabel
+export: ScaleLabel
 generateTypeLink: 
 ---
 ---

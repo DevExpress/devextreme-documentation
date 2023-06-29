@@ -1,5 +1,7 @@
 ---
 id: dxPieChart.Options.legend.hoverMode
+type: Enums.PieChartLegendHoverMode
+default: 'allArgumentPoints'
 ---
 ---
 ##### shortDescription

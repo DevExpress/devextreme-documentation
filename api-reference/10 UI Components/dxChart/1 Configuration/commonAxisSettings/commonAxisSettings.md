@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings
 type: viz/chart:CommonAxisSettings
-inheritsType: viz/chart:dxChartCommonAxisSettings
+inheritsType: viz/chart:CommonAxisSettings
 ---
 ---
 ##### shortDescription

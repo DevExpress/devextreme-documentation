@@ -2,7 +2,7 @@
 uid: viz/chart:ValueAxisConstantLinesLabel
 isType: 
 module: viz/chart
-export: dxChartValueAxisConstantLinesLabel
+export: ValueAxisConstantLinesLabel
 generateTypeLink: 
 ---
 ---

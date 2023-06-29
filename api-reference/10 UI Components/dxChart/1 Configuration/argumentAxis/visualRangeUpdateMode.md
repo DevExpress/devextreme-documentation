@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.visualRangeUpdateMode
+type: Enums.VisualRangeUpdateMode
+default: 'auto'
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.constantLineStyle
 type: viz/chart:ArgumentAxisConstantLineStyle
-inheritsType: viz/chart:dxChartArgumentAxisConstantLineStyle
+inheritsType: viz/chart:ArgumentAxisConstantLineStyle
 ---
 ---
 ##### shortDescription

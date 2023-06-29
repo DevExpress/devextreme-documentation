@@ -2,7 +2,7 @@
 isType: 
 uid: viz/funnel:Legend
 module: viz/funnel
-export: dxFunnelLegend
+export: Legend
 generateTypeLink: 
 ---
 ---

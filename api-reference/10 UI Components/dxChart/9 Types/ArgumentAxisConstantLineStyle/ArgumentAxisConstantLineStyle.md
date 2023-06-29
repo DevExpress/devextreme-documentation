@@ -2,7 +2,7 @@
 uid: viz/chart:ArgumentAxisConstantLineStyle
 isType: 
 module: viz/chart
-export: dxChartArgumentAxisConstantLineStyle
+export: ArgumentAxisConstantLineStyle
 generateTypeLink: 
 ---
 ---

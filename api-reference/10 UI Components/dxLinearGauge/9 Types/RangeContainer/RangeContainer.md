@@ -2,7 +2,7 @@
 uid: viz/linear_gauge:RangeContainer
 isType: 
 module: viz/linear_gauge
-export: dxLinearGaugeRangeContainer
+export: RangeContainer
 generateTypeLink: 
 ---
 ---

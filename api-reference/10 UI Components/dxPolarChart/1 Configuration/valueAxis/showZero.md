@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.showZero
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

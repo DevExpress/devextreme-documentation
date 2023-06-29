@@ -2,7 +2,7 @@
 uid: viz/chart:CommonPaneSettings
 isType: 
 module: viz/chart
-export: dxChartCommonPaneSettings
+export: CommonPaneSettings
 generateTypeLink: 
 ---
 ---

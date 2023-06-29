@@ -1,7 +1,7 @@
 ---
 id: dxPieChart.Options.adaptiveLayout
 type: viz/pie_chart:AdaptiveLayout
-inheritsType: viz/pie_chart:dxPieChartAdaptiveLayout
+inheritsType: viz/pie_chart:AdaptiveLayout
 ---
 ---
 ##### shortDescription

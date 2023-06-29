@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.argumentAxis.minorTick.shift
+type: Number
+default: 3
 ---
 ---
 ##### shortDescription

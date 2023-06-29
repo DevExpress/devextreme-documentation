@@ -2,7 +2,7 @@
 isType: 
 uid: viz/chart:ValueAxis
 module: viz/chart
-export: dxChartValueAxis
+export: ValueAxis
 generateTypeLink: 
 ---
 ---

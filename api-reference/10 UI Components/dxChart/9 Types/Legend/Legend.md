@@ -2,7 +2,7 @@
 uid: viz/chart:Legend
 isType: 
 module: viz/chart
-export: dxChartLegend
+export: Legend
 generateTypeLink: 
 ---
 ---

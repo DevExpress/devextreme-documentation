@@ -1,7 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.strips.label
 type: viz/polar_chart:ValueAxisStripsLabel
-inheritsType: viz/polar_chart:dxPolarChartValueAxisStripsLabel
+inheritsType: viz/polar_chart:ValueAxisStripsLabel
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,8 @@
 ---
 id: dxChart.Options.argumentAxis.wholeRange
 inherits: VisualRange
+type: Object | Array<Number, String, Date>
+default: undefined
 ---
 ---
 ##### shortDescription

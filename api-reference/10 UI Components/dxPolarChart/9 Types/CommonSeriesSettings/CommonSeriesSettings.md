@@ -2,7 +2,7 @@
 isType: 
 uid: viz/polar_chart:CommonSeriesSettings
 module: viz/polar_chart
-export: dxPolarChartCommonSeriesSettings
+export: CommonSeriesSettings
 generateTypeLink: 
 ---
 ---

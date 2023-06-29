@@ -2,7 +2,7 @@
 uid: viz/pie_chart:Legend
 isType: 
 module: viz/pie_chart
-export: dxPieChartLegend
+export: Legend
 generateTypeLink: 
 ---
 ---

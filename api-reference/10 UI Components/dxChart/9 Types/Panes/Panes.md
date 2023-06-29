@@ -2,7 +2,7 @@
 isType: 
 uid: viz/chart:Panes
 module: viz/chart
-export: dxChartPanes
+export: Panes
 generateTypeLink: 
 ---
 ---

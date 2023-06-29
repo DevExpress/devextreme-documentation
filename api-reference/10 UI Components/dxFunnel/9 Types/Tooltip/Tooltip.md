@@ -2,7 +2,7 @@
 uid: viz/funnel:Tooltip
 isType: 
 module: viz/funnel
-export: dxFunnelTooltip
+export: Tooltip
 generateTypeLink: 
 ---
 ---

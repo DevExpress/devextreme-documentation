@@ -1,5 +1,5 @@
 ---
 id: dxChart.Options.tooltip
 type: viz/chart:Tooltip
-inheritsType: viz/chart:dxChartTooltip
+inheritsType: viz/chart:Tooltip
 ---

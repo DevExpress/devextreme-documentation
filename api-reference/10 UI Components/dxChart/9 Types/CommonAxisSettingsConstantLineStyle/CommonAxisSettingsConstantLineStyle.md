@@ -2,7 +2,7 @@
 uid: viz/chart:CommonAxisSettingsConstantLineStyle
 isType: 
 module: viz/chart
-export: dxChartCommonAxisSettingsConstantLineStyle
+export: CommonAxisSettingsConstantLineStyle
 generateTypeLink: 
 ---
 ---

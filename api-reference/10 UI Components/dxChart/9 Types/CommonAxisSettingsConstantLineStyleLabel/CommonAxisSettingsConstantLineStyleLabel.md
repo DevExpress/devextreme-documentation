@@ -2,7 +2,7 @@
 uid: viz/chart:CommonAxisSettingsConstantLineStyleLabel
 isType: 
 module: viz/chart
-export: dxChartCommonAxisSettingsConstantLineStyleLabel
+export: CommonAxisSettingsConstantLineStyleLabel
 generateTypeLink: 
 ---
 ---

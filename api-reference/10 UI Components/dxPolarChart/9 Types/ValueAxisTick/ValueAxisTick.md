@@ -2,7 +2,7 @@
 uid: viz/polar_chart:ValueAxisTick
 isType: 
 module: viz/polar_chart
-export: dxPolarChartValueAxisTick
+export: ValueAxisTick
 generateTypeLink: 
 ---
 ---

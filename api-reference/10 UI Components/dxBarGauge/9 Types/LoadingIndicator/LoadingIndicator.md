@@ -2,7 +2,7 @@
 uid: viz/bar_gauge:LoadingIndicator
 isType: 
 module: viz/bar_gauge
-export: dxBarGaugeLoadingIndicator
+export: LoadingIndicator
 generateTypeLink: 
 ---
 ---

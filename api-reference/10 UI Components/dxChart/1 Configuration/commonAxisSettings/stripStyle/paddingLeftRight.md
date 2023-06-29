@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.stripStyle.paddingLeftRight
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

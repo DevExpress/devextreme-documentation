@@ -2,7 +2,7 @@
 uid: viz/polar_chart:CommonAxisSettings
 isType: 
 module: viz/polar_chart
-export: dxPolarChartCommonAxisSettings
+export: CommonAxisSettings
 generateTypeLink: 
 ---
 ---

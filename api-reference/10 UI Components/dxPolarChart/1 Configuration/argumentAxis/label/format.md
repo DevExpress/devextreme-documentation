@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.argumentAxis.label.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

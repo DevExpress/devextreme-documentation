@@ -2,7 +2,7 @@
 uid: viz/polar_chart:ArgumentAxisConstantLinesLabel
 isType: 
 module: viz/polar_chart
-export: dxPolarChartArgumentAxisConstantLinesLabel
+export: ArgumentAxisConstantLinesLabel
 generateTypeLink: 
 ---
 ---

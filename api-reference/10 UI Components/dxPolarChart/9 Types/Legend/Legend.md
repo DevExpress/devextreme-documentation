@@ -2,7 +2,7 @@
 uid: viz/polar_chart:Legend
 isType: 
 module: viz/polar_chart
-export: dxPolarChartLegend
+export: Legend
 generateTypeLink: 
 ---
 ---

@@ -2,7 +2,7 @@
 isType: 
 uid: viz/bar_gauge:Legend
 module: viz/bar_gauge
-export: dxBarGaugeLegend
+export: Legend
 generateTypeLink: 
 ---
 ---

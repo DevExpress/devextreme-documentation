@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings.type
+type: Enums.PolarChartSeriesType
+default: 'scatter'
 ---
 ---
 ##### shortDescription

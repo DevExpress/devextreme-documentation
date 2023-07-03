@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsdiscreteAxisDivisionMode
+uid: viz/polar_chart:CommonAxisSettings.discreteAxisDivisionMode
 type: Enums.DiscreteAxisDivisionMode
 default: 'betweenLabels'
 ---

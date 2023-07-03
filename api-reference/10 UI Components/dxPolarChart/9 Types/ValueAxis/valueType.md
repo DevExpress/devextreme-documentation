@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisvalueType
+uid: viz/polar_chart:ValueAxis.valueType
 type: Enums.ChartsDataType
 default: undefined
 ---

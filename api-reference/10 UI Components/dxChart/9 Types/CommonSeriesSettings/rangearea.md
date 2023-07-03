@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsrangearea
+uid: viz/chart:CommonSeriesSettings.rangearea
 type: any
 ---
 ---

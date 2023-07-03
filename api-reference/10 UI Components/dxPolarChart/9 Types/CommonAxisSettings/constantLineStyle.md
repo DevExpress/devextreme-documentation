@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:CommonAxisSettingsconstantLineStyle
+uid: viz/polar_chart:CommonAxisSettings.constantLineStyle
 ---
 ---
 ##### shortDescription

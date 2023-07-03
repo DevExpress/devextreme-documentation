@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/chart:ArgumentAxislabel
+uid: viz/chart:ArgumentAxis.label
 ---
 ---
 ##### shortDescription

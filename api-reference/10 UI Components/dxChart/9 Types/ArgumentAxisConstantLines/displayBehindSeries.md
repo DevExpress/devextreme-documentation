@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisConstantLinesdisplayBehindSeries
+uid: viz/chart:ArgumentAxisConstantLines.displayBehindSeries
 type: Boolean
 default: false
 ---

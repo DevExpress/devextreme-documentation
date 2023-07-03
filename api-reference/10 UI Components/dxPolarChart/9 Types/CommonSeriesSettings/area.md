@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonSeriesSettingsarea
+uid: viz/polar_chart:CommonSeriesSettings.area
 type: any
 ---
 ---

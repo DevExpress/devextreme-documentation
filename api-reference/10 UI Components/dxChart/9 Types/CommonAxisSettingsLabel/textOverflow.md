@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabeltextOverflow
+uid: viz/chart:CommonAxisSettingsLabel.textOverflow
 type: Enums.TextOverflow
 default: 'none'
 ---

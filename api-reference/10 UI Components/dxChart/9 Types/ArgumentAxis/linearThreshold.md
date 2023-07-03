@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxislinearThreshold
+uid: viz/chart:ArgumentAxis.linearThreshold
 type: Number
 default: undefined
 ---

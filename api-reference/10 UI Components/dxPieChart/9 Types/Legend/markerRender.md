@@ -1,5 +1,5 @@
 ---
-uid: viz/pie_chart:LegendmarkerRender
+uid: viz/pie_chart:Legend.markerRender
 ---
 ---
 ##### shortDescription

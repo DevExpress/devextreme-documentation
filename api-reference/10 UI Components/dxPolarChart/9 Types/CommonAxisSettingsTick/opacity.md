@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsTickopacity
+uid: viz/polar_chart:CommonAxisSettingsTick.opacity
 type: Number
 default: undefined
 ---

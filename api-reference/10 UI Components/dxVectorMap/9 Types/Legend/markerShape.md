@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendmarkerShape
+uid: viz/vector_map:Legend.markerShape
 type: Enums.VectorMapMarkerShape
 default: 'square'
 ---

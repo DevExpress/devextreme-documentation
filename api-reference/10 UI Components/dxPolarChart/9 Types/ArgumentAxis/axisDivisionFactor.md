@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisaxisDivisionFactor
+uid: viz/polar_chart:ArgumentAxis.axisDivisionFactor
 type: Number
 default: 50
 ---

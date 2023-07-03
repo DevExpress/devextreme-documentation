@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisConstantLinesvalue
+uid: viz/chart:ValueAxisConstantLines.value
 type: Number | Date | String
 default: undefined
 ---

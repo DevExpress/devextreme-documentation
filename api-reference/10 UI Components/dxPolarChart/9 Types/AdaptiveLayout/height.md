@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:AdaptiveLayoutheight
+uid: viz/polar_chart:AdaptiveLayout.height
 type: Number
 default: 170
 ---

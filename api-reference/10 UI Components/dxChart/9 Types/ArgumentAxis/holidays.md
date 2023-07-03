@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisholidays
+uid: viz/chart:ArgumentAxis.holidays
 type: Array<Date, String> | Array<Number>
 default: undefined
 ---

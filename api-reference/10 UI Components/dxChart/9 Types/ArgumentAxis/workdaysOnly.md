@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisworkdaysOnly
+uid: viz/chart:ArgumentAxis.workdaysOnly
 type: Boolean
 default: false
 ---

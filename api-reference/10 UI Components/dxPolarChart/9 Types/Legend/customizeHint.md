@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:LegendcustomizeHint
+uid: viz/polar_chart:Legend.customizeHint
 type: function(seriesInfo)
 ---
 ---

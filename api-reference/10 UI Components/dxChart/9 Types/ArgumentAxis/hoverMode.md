@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxishoverMode
+uid: viz/chart:ArgumentAxis.hoverMode
 type: Enums.ArgumentAxisHoverMode
 default: 'none'
 ---

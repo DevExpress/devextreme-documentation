@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/chart:ArgumentAxisLabelcustomizeText
+uid: viz/chart:ArgumentAxisLabel.customizeText
 type: function(argument)
 ---
 ---

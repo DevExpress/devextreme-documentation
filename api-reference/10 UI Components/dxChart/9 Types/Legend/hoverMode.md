@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:LegendhoverMode
+uid: viz/chart:Legend.hoverMode
 type: Enums.LegendHoverMode
 default: 'includePoints'
 ---

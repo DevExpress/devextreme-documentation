@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendmarkerColor
+uid: viz/vector_map:Legend.markerColor
 type: String
 default: undefined
 ---

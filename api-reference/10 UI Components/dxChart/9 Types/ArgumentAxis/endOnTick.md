@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisendOnTick
+uid: viz/chart:ArgumentAxis.endOnTick
 type: Boolean
 default: false
 ---

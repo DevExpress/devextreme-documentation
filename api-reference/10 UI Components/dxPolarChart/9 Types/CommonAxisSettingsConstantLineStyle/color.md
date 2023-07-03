@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsConstantLineStylecolor
+uid: viz/polar_chart:CommonAxisSettingsConstantLineStyle.color
 type: String
 default: '#000000'
 ---

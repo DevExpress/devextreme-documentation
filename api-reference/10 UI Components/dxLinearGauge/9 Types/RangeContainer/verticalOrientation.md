@@ -1,5 +1,5 @@
 ---
-uid: viz/linear_gauge:RangeContainerverticalOrientation
+uid: viz/linear_gauge:RangeContainer.verticalOrientation
 type: Enums.VerticalAlignment
 default: 'bottom'
 ---

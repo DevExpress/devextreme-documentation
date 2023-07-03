@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:LegendcustomizeHint
+uid: viz/chart:Legend.customizeHint
 type: function(seriesInfo)
 ---
 ---

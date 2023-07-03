@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/chart:ValueAxisname
+uid: viz/chart:ValueAxis.name
 type: String
 default: undefined
 ---

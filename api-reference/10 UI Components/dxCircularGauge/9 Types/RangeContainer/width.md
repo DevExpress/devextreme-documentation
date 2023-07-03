@@ -1,5 +1,5 @@
 ---
-uid: viz/circular_gauge:RangeContainerwidth
+uid: viz/circular_gauge:RangeContainer.width
 type: Number
 default: 5
 ---

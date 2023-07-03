@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsStripStyleLabelverticalAlignment
+uid: viz/chart:CommonAxisSettingsStripStyleLabel.verticalAlignment
 type: Enums.VerticalAlignment
 default: 'center'
 ---

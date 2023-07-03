@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:ValueAxistick
+uid: viz/polar_chart:ValueAxis.tick
 ---
 ---
 ##### shortDescription

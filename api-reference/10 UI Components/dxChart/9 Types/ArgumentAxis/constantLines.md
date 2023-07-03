@@ -1,7 +1,7 @@
 ---
 type: Array<Object>
 notUsedInTheme: 
-uid: viz/chart:ArgumentAxisconstantLines
+uid: viz/chart:ArgumentAxis.constantLines
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsallowDecimals
+uid: viz/chart:CommonAxisSettings.allowDecimals
 type: Boolean
 default: undefined
 ---

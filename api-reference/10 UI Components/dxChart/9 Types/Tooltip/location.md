@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:Tooltiplocation
+uid: viz/chart:Tooltip.location
 type: Enums.ChartTooltipLocation
 default: 'center'
 ---

@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/circular_gauge:Scalelabel
+uid: viz/circular_gauge:Scale.label
 ---
 ---
 ##### shortDescription

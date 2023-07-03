@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonSeriesSettingsscatter
+uid: viz/polar_chart:CommonSeriesSettings.scatter
 type: any
 ---
 ---

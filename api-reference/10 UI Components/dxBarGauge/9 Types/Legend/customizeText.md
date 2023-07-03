@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/bar_gauge:LegendcustomizeText
+uid: viz/bar_gauge:Legend.customizeText
 type: function(arg)
 ---
 ---

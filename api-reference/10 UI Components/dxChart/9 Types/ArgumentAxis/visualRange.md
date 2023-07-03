@@ -1,7 +1,7 @@
 ---
 firedEvents: optionChanged
 notUsedInTheme: 
-uid: viz/chart:ArgumentAxisvisualRange
+uid: viz/chart:ArgumentAxis.visualRange
 type: Object | Array<Number, String, Date>
 ---
 ---

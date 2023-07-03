@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisaxisDivisionFactor
+uid: viz/chart:ValueAxis.axisDivisionFactor
 type: Number
 default: 40
 ---

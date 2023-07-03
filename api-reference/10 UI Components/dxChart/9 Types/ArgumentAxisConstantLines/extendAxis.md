@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisConstantLinesextendAxis
+uid: viz/chart:ArgumentAxisConstantLines.extendAxis
 type: Boolean
 default: false
 ---

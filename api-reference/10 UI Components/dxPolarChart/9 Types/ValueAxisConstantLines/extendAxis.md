@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisConstantLinesextendAxis
+uid: viz/polar_chart:ValueAxisConstantLines.extendAxis
 type: Boolean
 default: false
 ---

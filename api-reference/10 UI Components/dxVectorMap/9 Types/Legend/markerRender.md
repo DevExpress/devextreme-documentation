@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendmarkerRender
+uid: viz/vector_map:Legend.markerRender
 ---
 ---
 ##### shortDescription

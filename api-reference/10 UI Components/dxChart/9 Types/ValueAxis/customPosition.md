@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxiscustomPosition
+uid: viz/chart:ValueAxis.customPosition
 type: Number | Date | String
 default: undefined
 ---

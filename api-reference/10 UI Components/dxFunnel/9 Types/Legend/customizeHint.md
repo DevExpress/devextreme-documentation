@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:LegendcustomizeHint
+uid: viz/funnel:Legend.customizeHint
 type: function(itemInfo)
 ---
 ---

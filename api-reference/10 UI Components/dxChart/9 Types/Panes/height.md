@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:Panesheight
+uid: viz/chart:Panes.height
 type: Number | String
 default: undefined
 ---

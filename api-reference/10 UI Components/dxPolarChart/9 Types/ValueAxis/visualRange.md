@@ -1,7 +1,7 @@
 ---
 firedEvents: optionChanged
 notUsedInTheme: 
-uid: viz/polar_chart:ValueAxisvisualRange
+uid: viz/polar_chart:ValueAxis.visualRange
 type: Object | Array<Number, String, Date>
 ---
 ---

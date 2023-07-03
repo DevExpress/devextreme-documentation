@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisTitletext
+uid: viz/chart:ArgumentAxisTitle.text
 type: String
 default: undefined
 ---

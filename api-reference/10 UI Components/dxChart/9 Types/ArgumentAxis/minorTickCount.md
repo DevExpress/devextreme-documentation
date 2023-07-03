@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisminorTickCount
+uid: viz/chart:ArgumentAxis.minorTickCount
 type: Number
 default: undefined
 ---

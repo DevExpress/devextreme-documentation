@@ -1,7 +1,7 @@
 ---
 type: Array<Object>
 notUsedInTheme: 
-uid: viz/chart:ArgumentAxisstrips
+uid: viz/chart:ArgumentAxis.strips
 ---
 ---
 ##### shortDescription

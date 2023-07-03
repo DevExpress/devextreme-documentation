@@ -1,5 +1,5 @@
 ---
-uid: viz/linear_gauge:ScalehorizontalOrientation
+uid: viz/linear_gauge:Scale.horizontalOrientation
 type: Enums.HorizontalAlignment
 default: 'right'
 ---

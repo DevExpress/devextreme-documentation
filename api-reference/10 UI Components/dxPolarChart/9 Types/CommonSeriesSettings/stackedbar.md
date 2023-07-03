@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonSeriesSettingsstackedbar
+uid: viz/polar_chart:CommonSeriesSettings.stackedbar
 type: any
 ---
 ---

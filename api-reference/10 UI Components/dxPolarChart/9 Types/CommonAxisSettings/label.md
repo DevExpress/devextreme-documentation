@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:CommonAxisSettingslabel
+uid: viz/polar_chart:CommonAxisSettings.label
 ---
 ---
 ##### shortDescription

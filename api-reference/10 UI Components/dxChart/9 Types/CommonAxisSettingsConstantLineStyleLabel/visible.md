@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStyleLabelvisible
+uid: viz/chart:CommonAxisSettingsConstantLineStyleLabel.visible
 type: Boolean
 default: true
 ---

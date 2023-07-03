@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:ArgumentAxisConstantLineslabel
+uid: viz/polar_chart:ArgumentAxisConstantLines.label
 ---
 ---
 ##### shortDescription

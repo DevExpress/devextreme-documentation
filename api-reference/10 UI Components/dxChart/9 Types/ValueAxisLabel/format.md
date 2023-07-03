@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisLabelformat
+uid: viz/chart:ValueAxisLabel.format
 type: Format
 default: undefined
 ---

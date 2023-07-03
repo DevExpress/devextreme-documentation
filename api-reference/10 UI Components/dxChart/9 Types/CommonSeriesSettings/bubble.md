@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsbubble
+uid: viz/chart:CommonSeriesSettings.bubble
 type: any
 ---
 ---

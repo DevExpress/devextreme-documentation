@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisConstantLinesLabelhorizontalAlignment
+uid: viz/chart:ValueAxisConstantLinesLabel.horizontalAlignment
 type: Enums.HorizontalAlignment
 default: 'left'
 ---

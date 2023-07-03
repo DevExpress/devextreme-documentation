@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:TooltipcustomizeNodeTooltip
+uid: viz/sankey:Tooltip.customizeNodeTooltip
 type: function(info)
 default: undefined
 ---

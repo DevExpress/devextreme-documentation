@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisLabelcustomizeHint
+uid: viz/chart:ValueAxisLabel.customizeHint
 type: function(axisValue)
 ---
 ---

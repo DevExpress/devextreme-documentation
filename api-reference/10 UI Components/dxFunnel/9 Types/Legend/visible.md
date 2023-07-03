@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:Legendvisible
+uid: viz/funnel:Legend.visible
 type: Boolean
 default: false
 ---

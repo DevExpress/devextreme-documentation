@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsStripStylepaddingTopBottom
+uid: viz/chart:CommonAxisSettingsStripStyle.paddingTopBottom
 type: Number
 default: 5
 ---

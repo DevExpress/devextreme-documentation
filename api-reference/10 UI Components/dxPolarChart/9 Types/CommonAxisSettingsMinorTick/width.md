@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsMinorTickwidth
+uid: viz/polar_chart:CommonAxisSettingsMinorTick.width
 type: Number
 default: 1
 ---

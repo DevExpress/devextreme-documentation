@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:TooltipcustomizeLinkTooltip
+uid: viz/sankey:Tooltip.customizeLinkTooltip
 type: function(info)
 default: undefined
 ---

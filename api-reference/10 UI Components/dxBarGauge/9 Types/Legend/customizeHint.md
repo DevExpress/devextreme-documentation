@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:LegendcustomizeHint
+uid: viz/bar_gauge:Legend.customizeHint
 type: function(arg)
 ---
 ---

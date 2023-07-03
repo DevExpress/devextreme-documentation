@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisautoBreaksEnabled
+uid: viz/chart:ValueAxis.autoBreaksEnabled
 type: Boolean
 default: false
 ---

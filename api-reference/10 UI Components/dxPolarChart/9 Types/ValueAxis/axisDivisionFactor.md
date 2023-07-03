@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisaxisDivisionFactor
+uid: viz/polar_chart:ValueAxis.axisDivisionFactor
 type: Number
 default: 30
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:TooltiplinkTooltipTemplate
+uid: viz/sankey:Tooltip.linkTooltipTemplate
 type: template
 default: undefined
 ---

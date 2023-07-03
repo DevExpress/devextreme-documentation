@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisConstantLinesvalue
+uid: viz/chart:ArgumentAxisConstantLines.value
 type: Number | Date | String
 default: undefined
 ---

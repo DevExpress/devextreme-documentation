@@ -42,7 +42,7 @@ const map = Object.entries(require(mapFilePath) as Record<string, string>)
     return {
       derivedUid: {
         regex: new RegExp(`^(uid|type|inheritsType): *${oldUid}($|\\.)`, 'm'),
-        replacement: `$1: ${newUid}`,
+        replacement: `$1: ${newUid}$2`,
       },
       exactUid: {
         regex: new RegExp(`^uid: *${oldUid}$`, 'm'),

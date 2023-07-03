@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.valueMarginsEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

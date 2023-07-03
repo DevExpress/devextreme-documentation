@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.pane
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

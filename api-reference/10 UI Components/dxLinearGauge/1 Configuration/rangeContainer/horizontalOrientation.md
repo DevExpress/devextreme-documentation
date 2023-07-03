@@ -1,5 +1,7 @@
 ---
 id: dxLinearGauge.Options.rangeContainer.horizontalOrientation
+type: Enums.HorizontalAlignment
+default: 'right'
 ---
 ---
 ##### shortDescription

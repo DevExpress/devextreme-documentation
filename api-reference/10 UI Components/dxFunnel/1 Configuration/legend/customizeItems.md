@@ -1,5 +1,6 @@
 ---
 id: dxFunnel.Options.legend.customizeItems
+type: function(items)
 ---
 ---
 ##### shortDescription

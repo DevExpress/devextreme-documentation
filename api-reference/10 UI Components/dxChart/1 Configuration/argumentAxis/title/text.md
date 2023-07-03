@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.title.text
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

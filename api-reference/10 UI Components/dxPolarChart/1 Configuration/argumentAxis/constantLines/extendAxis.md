@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.argumentAxis.constantLines.extendAxis
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

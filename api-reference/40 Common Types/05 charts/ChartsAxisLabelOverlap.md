@@ -9,5 +9,5 @@ Decides how to arrange axis labels when there is not enough space to display all
 
 ---
 <!--
-dxChartOptions.commonAxisSettings.label.overlappingBehavior(/api-reference/10 UI Components/dxChart/9 Types/dxChartCommonAxisSettingsLabel/overlappingBehavior.md)(common/charts.d.ts)
+dxChartOptions.commonAxisSettings.label.overlappingBehavior(/api-reference/10 UI Components/dxChart/1 Configuration/commonAxisSettings/label/overlappingBehavior.md)(common/charts.d.ts)
 -->

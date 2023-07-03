@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelrender
+uid: viz/chart:CommonAxisSettingsLabel.render
 ---
 ---
 ##### shortDescription

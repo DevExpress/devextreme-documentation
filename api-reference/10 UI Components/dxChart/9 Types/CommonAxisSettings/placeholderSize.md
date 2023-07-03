@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsplaceholderSize
+uid: viz/chart:CommonAxisSettings.placeholderSize
 type: Number
 default: null
 ---

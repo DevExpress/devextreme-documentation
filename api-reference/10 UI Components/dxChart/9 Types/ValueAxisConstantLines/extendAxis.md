@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisConstantLinesextendAxis
+uid: viz/chart:ValueAxisConstantLines.extendAxis
 type: Boolean
 default: false
 ---

@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/chart:CommonAxisSettingsstripStyle
+uid: viz/chart:CommonAxisSettings.stripStyle
 ---
 ---
 ##### shortDescription

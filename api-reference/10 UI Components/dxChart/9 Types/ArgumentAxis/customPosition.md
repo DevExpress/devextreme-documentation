@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxiscustomPosition
+uid: viz/chart:ArgumentAxis.customPosition
 type: Number | Date | String
 default: undefined
 ---

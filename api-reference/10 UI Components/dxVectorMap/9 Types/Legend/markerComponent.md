@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendmarkerComponent
+uid: viz/vector_map:Legend.markerComponent
 ---
 ---
 ##### shortDescription

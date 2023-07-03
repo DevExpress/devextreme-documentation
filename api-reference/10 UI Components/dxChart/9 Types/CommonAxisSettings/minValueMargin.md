@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsminValueMargin
+uid: viz/chart:CommonAxisSettings.minValueMargin
 type: Number
 default: undefined
 ---

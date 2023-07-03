@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxissynchronizedValue
+uid: viz/chart:ValueAxis.synchronizedValue
 type: Number
 default: undefined
 ---

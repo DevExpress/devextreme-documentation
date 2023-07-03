@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxiscategories
+uid: viz/polar_chart:ValueAxis.categories
 type: Array<Number, String, Date>
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingscandlestick
+uid: viz/chart:CommonSeriesSettings.candlestick
 type: any
 ---
 ---

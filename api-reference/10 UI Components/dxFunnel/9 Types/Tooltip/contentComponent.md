@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:TooltipcontentComponent
+uid: viz/funnel:Tooltip.contentComponent
 ---
 ---
 ##### shortDescription

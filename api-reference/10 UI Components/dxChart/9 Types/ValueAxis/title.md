@@ -1,6 +1,6 @@
 ---
 type: String | Object
-uid: viz/chart:ValueAxistitle
+uid: viz/chart:ValueAxis.title
 ---
 ---
 ##### shortDescription

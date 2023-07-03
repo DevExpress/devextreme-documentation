@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingswidth
+uid: viz/chart:CommonAxisSettings.width
 type: Number
 default: 1
 ---

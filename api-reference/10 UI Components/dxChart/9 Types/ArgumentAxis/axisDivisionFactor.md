@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisaxisDivisionFactor
+uid: viz/chart:ArgumentAxis.axisDivisionFactor
 type: Number
 default: 70
 ---

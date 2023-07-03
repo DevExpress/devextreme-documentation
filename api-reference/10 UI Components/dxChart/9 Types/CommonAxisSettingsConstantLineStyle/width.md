@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStylewidth
+uid: viz/chart:CommonAxisSettingsConstantLineStyle.width
 type: Number
 default: 1
 ---

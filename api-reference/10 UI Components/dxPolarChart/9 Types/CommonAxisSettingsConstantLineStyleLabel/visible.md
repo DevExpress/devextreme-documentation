@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsConstantLineStyleLabelvisible
+uid: viz/polar_chart:CommonAxisSettingsConstantLineStyleLabel.visible
 type: Boolean
 default: true
 ---

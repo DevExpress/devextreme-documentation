@@ -1,5 +1,5 @@
 ---
-uid: viz/pie_chart:LegendcustomizeItems
+uid: viz/pie_chart:Legend.customizeItems
 type: function(items)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelindentFromAxis
+uid: viz/chart:CommonAxisSettingsLabel.indentFromAxis
 type: Number
 default: 10
 ---

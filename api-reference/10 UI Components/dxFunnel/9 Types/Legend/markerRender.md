@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:LegendmarkerRender
+uid: viz/funnel:Legend.markerRender
 ---
 ---
 ##### shortDescription

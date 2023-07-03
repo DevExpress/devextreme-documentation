@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/chart:LegendcustomizeText
+uid: viz/chart:Legend.customizeText
 type: function(seriesInfo)
 ---
 ---

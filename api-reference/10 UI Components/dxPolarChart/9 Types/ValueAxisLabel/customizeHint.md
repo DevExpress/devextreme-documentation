@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisLabelcustomizeHint
+uid: viz/polar_chart:ValueAxisLabel.customizeHint
 type: function(axisValue)
 ---
 ---

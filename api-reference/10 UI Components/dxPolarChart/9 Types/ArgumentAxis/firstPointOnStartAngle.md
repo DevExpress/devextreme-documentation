@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisfirstPointOnStartAngle
+uid: viz/polar_chart:ArgumentAxis.firstPointOnStartAngle
 type: Boolean
 default: false
 ---

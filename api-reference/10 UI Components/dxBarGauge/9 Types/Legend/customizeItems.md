@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:LegendcustomizeItems
+uid: viz/bar_gauge:Legend.customizeItems
 type: function(items)
 ---
 ---

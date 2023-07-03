@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisendOnTick
+uid: viz/chart:ValueAxis.endOnTick
 type: Boolean
 default: undefined
 ---

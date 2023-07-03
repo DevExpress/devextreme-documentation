@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonPaneSettingsbackgroundColor
+uid: viz/chart:CommonPaneSettings.backgroundColor
 type: String | ChartsColor
 default: 'none'
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisstartAngle
+uid: viz/polar_chart:ArgumentAxis.startAngle
 type: Number
 default: 0
 ---

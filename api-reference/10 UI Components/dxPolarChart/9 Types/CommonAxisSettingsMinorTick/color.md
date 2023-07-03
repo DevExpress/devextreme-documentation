@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsMinorTickcolor
+uid: viz/polar_chart:CommonAxisSettingsMinorTick.color
 type: String
 default: '#767676'
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisposition
+uid: viz/chart:ArgumentAxis.position
 type: Enums.Position
 default: 'bottom'
 ---

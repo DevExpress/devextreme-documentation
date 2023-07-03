@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsTitlealignment
+uid: viz/chart:CommonAxisSettingsTitle.alignment
 type: Enums.HorizontalAlignment
 default: 'center'
 ---

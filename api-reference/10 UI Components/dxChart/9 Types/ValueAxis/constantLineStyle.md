@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/chart:ValueAxisconstantLineStyle
+uid: viz/chart:ValueAxis.constantLineStyle
 ---
 ---
 ##### shortDescription

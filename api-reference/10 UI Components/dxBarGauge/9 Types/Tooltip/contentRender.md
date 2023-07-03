@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:TooltipcontentRender
+uid: viz/bar_gauge:Tooltip.contentRender
 ---
 ---
 ##### shortDescription

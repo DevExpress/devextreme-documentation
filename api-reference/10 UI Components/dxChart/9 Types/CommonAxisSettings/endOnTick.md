@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsendOnTick
+uid: viz/chart:CommonAxisSettings.endOnTick
 type: Boolean
 default: undefined
 ---

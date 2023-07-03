@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelposition
+uid: viz/chart:CommonAxisSettingsLabel.position
 type: Enums.RelativePosition | Enums.Position
 default: 'outside'
 ---

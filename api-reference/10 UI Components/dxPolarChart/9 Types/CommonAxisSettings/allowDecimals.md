@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsallowDecimals
+uid: viz/polar_chart:CommonAxisSettings.allowDecimals
 type: Boolean
 default: undefined
 ---

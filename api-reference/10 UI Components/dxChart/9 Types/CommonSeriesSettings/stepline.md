@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsstepline
+uid: viz/chart:CommonSeriesSettings.stepline
 type: any
 ---
 ---

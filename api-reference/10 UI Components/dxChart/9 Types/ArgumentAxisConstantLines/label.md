@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/chart:ArgumentAxisConstantLineslabel
+uid: viz/chart:ArgumentAxisConstantLines.label
 ---
 ---
 ##### shortDescription

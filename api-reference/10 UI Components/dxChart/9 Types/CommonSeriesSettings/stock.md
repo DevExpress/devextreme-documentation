@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsstock
+uid: viz/chart:CommonSeriesSettings.stock
 type: any
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsfullstackedline
+uid: viz/chart:CommonSeriesSettings.fullstackedline
 type: any
 ---
 ---

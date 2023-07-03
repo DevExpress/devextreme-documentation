@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/vector_map:LegendcustomizeHint
+uid: viz/vector_map:Legend.customizeHint
 type: function(itemInfo)
 ---
 ---

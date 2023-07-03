@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisposition
+uid: viz/chart:ValueAxis.position
 type: Enums.Position
 default: 'left'
 ---

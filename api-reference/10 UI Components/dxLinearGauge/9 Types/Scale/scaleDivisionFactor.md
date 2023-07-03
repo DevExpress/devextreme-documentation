@@ -1,5 +1,5 @@
 ---
-uid: viz/linear_gauge:ScalescaleDivisionFactor
+uid: viz/linear_gauge:Scale.scaleDivisionFactor
 type: Number
 default: 25
 ---

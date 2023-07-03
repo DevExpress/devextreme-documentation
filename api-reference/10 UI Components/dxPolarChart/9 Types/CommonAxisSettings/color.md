@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingscolor
+uid: viz/polar_chart:CommonAxisSettings.color
 type: String
 default: '#767676'
 ---

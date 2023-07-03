@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsStripStylepaddingLeftRight
+uid: viz/chart:CommonAxisSettingsStripStyle.paddingLeftRight
 type: Number
 default: 10
 ---

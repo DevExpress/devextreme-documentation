@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisConstantLinesdisplayBehindSeries
+uid: viz/polar_chart:ArgumentAxisConstantLines.displayBehindSeries
 type: Boolean
 default: false
 ---

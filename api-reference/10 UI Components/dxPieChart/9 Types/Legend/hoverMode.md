@@ -1,5 +1,5 @@
 ---
-uid: viz/pie_chart:LegendhoverMode
+uid: viz/pie_chart:Legend.hoverMode
 type: Enums.PieChartLegendHoverMode
 default: 'allArgumentPoints'
 ---

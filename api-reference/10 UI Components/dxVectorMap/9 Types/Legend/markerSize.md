@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendmarkerSize
+uid: viz/vector_map:Legend.markerSize
 type: Number
 default: 12
 ---

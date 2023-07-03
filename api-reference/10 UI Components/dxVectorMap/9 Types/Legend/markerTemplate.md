@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendmarkerTemplate
+uid: viz/vector_map:Legend.markerTemplate
 type: template
 default: undefined
 ---

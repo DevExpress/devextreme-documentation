@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxislogarithmBase
+uid: viz/polar_chart:ValueAxis.logarithmBase
 type: Number
 default: 10
 ---

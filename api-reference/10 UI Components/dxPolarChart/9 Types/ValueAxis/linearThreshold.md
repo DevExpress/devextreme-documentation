@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxislinearThreshold
+uid: viz/polar_chart:ValueAxis.linearThreshold
 type: Number
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/tree_map:TooltipcontentComponent
+uid: viz/tree_map:Tooltip.contentComponent
 ---
 ---
 ##### shortDescription

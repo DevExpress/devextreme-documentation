@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/polar_chart:LegendcustomizeText
+uid: viz/polar_chart:Legend.customizeText
 type: function(seriesInfo)
 ---
 ---

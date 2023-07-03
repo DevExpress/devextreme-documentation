@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxistickInterval
+uid: viz/polar_chart:ValueAxis.tickInterval
 type: Number | Object | Enums.TimeInterval
 ---
 ---

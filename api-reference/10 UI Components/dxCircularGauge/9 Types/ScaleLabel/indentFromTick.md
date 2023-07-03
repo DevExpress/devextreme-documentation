@@ -1,5 +1,5 @@
 ---
-uid: viz/circular_gauge:ScaleLabelindentFromTick
+uid: viz/circular_gauge:ScaleLabel.indentFromTick
 type: Number
 default: 10
 ---

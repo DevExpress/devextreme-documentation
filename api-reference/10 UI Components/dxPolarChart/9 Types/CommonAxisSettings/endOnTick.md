@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsendOnTick
+uid: viz/polar_chart:CommonAxisSettings.endOnTick
 type: Boolean
 default: undefined
 ---

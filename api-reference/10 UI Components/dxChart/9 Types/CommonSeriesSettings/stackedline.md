@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsstackedline
+uid: viz/chart:CommonSeriesSettings.stackedline
 type: any
 ---
 ---

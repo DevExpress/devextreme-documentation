@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelstaggeringSpacing
+uid: viz/chart:CommonAxisSettingsLabel.staggeringSpacing
 type: Number
 default: 5
 ---

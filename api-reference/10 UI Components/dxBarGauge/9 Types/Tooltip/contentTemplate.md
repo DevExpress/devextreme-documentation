@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:TooltipcontentTemplate
+uid: viz/bar_gauge:Tooltip.contentTemplate
 type: template
 default: undefined
 ---

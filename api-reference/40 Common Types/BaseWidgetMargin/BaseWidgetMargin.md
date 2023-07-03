@@ -4,6 +4,7 @@ isType:
 module: viz/core/base_widget
 export: BaseWidgetMargin
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

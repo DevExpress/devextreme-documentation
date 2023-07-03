@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:TooltiplinkTooltipComponent
+uid: viz/sankey:Tooltip.linkTooltipComponent
 ---
 ---
 ##### shortDescription

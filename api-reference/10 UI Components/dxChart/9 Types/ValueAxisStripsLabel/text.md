@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisStripsLabeltext
+uid: viz/chart:ValueAxisStripsLabel.text
 type: String
 default: undefined
 ---

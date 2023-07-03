@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelalignment
+uid: viz/chart:CommonAxisSettingsLabel.alignment
 type: Enums.HorizontalAlignment
 default: undefined
 ---

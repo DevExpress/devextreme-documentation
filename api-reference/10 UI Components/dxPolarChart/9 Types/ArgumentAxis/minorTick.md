@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:ArgumentAxisminorTick
+uid: viz/polar_chart:ArgumentAxis.minorTick
 ---
 ---
 ##### shortDescription

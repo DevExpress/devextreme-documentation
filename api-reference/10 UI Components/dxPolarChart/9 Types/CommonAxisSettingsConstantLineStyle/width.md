@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsConstantLineStylewidth
+uid: viz/polar_chart:CommonAxisSettingsConstantLineStyle.width
 type: Number
 default: 1
 ---

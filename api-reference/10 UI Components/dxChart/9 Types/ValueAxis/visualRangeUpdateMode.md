@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisvisualRangeUpdateMode
+uid: viz/chart:ValueAxis.visualRangeUpdateMode
 type: Enums.VisualRangeUpdateMode
 default: 'auto'
 ---

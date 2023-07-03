@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsMinorTickopacity
+uid: viz/polar_chart:CommonAxisSettingsMinorTick.opacity
 type: Number
 default: 0.3
 ---

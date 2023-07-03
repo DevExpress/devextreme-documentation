@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:TooltipcontentComponent
+uid: viz/bar_gauge:Tooltip.contentComponent
 ---
 ---
 ##### shortDescription

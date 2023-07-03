@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:LegendmarkerComponent
+uid: viz/funnel:Legend.markerComponent
 ---
 ---
 ##### shortDescription

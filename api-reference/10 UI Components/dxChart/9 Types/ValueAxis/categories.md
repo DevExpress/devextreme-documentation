@@ -1,6 +1,6 @@
 ---
 firedEvents: optionChanged
-uid: viz/chart:ValueAxiscategories
+uid: viz/chart:ValueAxis.categories
 type: Array<Number, String, Date>
 ---
 ---

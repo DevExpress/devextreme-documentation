@@ -1,5 +1,5 @@
 ---
-uid: viz/pie_chart:AdaptiveLayoutkeepLabels
+uid: viz/pie_chart:AdaptiveLayout.keepLabels
 type: Boolean
 default: false
 ---

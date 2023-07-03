@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStylepaddingLeftRight
+uid: viz/chart:CommonAxisSettingsConstantLineStyle.paddingLeftRight
 type: Number
 default: 10
 ---

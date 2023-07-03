@@ -1,5 +1,5 @@
 ---
-uid: viz/pie_chart:LegendcustomizeHint
+uid: viz/pie_chart:Legend.customizeHint
 type: function(pointInfo)
 ---
 ---

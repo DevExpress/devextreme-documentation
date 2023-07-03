@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisStripscolor
+uid: viz/chart:ArgumentAxisStrips.color
 type: String
 default: undefined
 ---

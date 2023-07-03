@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:TooltipnodeTooltipRender
+uid: viz/sankey:Tooltip.nodeTooltipRender
 ---
 ---
 ##### shortDescription

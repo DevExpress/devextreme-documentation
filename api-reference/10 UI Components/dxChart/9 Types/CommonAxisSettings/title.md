@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/chart:CommonAxisSettingstitle
+uid: viz/chart:CommonAxisSettings.title
 ---
 ---
 ##### shortDescription

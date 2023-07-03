@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelvisible
+uid: viz/chart:CommonAxisSettingsLabel.visible
 type: Boolean
 default: true
 ---

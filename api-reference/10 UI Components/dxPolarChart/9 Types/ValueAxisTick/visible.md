@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisTickvisible
+uid: viz/polar_chart:ValueAxisTick.visible
 type: Boolean
 default: false
 ---

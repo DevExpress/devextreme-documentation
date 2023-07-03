@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelrotationAngle
+uid: viz/chart:CommonAxisSettingsLabel.rotationAngle
 type: Number
 default: 90
 ---

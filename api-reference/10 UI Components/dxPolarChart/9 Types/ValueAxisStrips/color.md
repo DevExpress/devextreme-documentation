@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisStripscolor
+uid: viz/polar_chart:ValueAxisStrips.color
 type: String
 default: undefined
 ---

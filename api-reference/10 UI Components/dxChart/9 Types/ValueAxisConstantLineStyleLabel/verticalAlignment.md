@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisConstantLineStyleLabelverticalAlignment
+uid: viz/chart:ValueAxisConstantLineStyleLabel.verticalAlignment
 type: Enums.VerticalAlignment
 default: 'top'
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxismaxValueMargin
+uid: viz/polar_chart:ValueAxis.maxValueMargin
 type: Number
 default: undefined
 ---

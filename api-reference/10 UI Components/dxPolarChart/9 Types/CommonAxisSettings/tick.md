@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:CommonAxisSettingstick
+uid: viz/polar_chart:CommonAxisSettings.tick
 ---
 ---
 ##### shortDescription

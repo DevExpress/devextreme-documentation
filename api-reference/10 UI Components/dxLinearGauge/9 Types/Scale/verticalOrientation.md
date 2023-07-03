@@ -1,5 +1,5 @@
 ---
-uid: viz/linear_gauge:ScaleverticalOrientation
+uid: viz/linear_gauge:Scale.verticalOrientation
 type: Enums.VerticalAlignment
 default: 'bottom'
 ---

@@ -4,6 +4,7 @@ uid: viz/chart_components/base_chart:BaseChartLegend
 module: viz/chart_components/base_chart
 export: BaseChartLegend
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

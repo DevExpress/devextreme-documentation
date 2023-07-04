@@ -1,5 +1,5 @@
 ---
-uid: viz/circular_gauge:Scaleorientation
+uid: viz/circular_gauge:Scale.orientation
 type: Enums.CircularGaugeElementOrientation
 default: 'outside'
 ---

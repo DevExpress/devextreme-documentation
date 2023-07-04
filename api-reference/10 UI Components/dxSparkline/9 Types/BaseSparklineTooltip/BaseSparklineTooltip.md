@@ -4,6 +4,7 @@ isType:
 module: viz/sparklines/base_sparkline
 export: BaseSparklineTooltip
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

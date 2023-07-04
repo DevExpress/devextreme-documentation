@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisStripsstartValue
+uid: viz/chart:ArgumentAxisStrips.startValue
 type: Number | Date | String
 default: undefined
 ---

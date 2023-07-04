@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:LegendmarkerComponent
+uid: viz/bar_gauge:Legend.markerComponent
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisConstantLinesdisplayBehindSeries
+uid: viz/chart:ValueAxisConstantLines.displayBehindSeries
 type: Boolean
 default: false
 ---

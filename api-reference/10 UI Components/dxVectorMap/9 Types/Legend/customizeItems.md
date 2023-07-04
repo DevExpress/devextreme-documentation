@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:LegendcustomizeItems
+uid: viz/vector_map:Legend.customizeItems
 type: function(items)
 ---
 ---

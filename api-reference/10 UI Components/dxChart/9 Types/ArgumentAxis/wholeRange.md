@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxiswholeRange
+uid: viz/chart:ArgumentAxis.wholeRange
 type: Object | Array<Number, String, Date>
 default: undefined
 ---

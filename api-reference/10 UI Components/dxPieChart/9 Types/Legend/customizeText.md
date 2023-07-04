@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/pie_chart:LegendcustomizeText
+uid: viz/pie_chart:Legend.customizeText
 type: function(pointInfo)
 ---
 ---

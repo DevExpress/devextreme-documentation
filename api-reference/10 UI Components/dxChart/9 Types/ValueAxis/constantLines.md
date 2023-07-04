@@ -1,7 +1,7 @@
 ---
 type: Array<Object>
 notUsedInTheme: 
-uid: viz/chart:ValueAxisconstantLines
+uid: viz/chart:ValueAxis.constantLines
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStylepaddingTopBottom
+uid: viz/chart:CommonAxisSettingsConstantLineStyle.paddingTopBottom
 type: Number
 default: 10
 ---

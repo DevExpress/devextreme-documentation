@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsvalueMarginsEnabled
+uid: viz/chart:CommonAxisSettings.valueMarginsEnabled
 type: Boolean
 default: true
 ---

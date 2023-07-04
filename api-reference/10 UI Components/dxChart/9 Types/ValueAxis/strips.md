@@ -1,7 +1,7 @@
 ---
 type: Array<Object>
 notUsedInTheme: 
-uid: viz/chart:ValueAxisstrips
+uid: viz/chart:ValueAxis.strips
 ---
 ---
 ##### shortDescription

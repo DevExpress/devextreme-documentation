@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisminorTickCount
+uid: viz/polar_chart:ArgumentAxis.minorTickCount
 type: Number
 default: undefined
 ---

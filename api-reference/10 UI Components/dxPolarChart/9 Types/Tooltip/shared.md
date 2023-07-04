@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:Tooltipshared
+uid: viz/polar_chart:Tooltip.shared
 type: Boolean
 default: false
 ---

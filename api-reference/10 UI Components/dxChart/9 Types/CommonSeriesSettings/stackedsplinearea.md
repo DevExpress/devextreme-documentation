@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsstackedsplinearea
+uid: viz/chart:CommonSeriesSettings.stackedsplinearea
 type: any
 ---
 ---

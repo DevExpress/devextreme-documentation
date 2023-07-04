@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisLabelformat
+uid: viz/polar_chart:ArgumentAxisLabel.format
 type: Format
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisvalueMarginsEnabled
+uid: viz/polar_chart:ValueAxis.valueMarginsEnabled
 type: Boolean
 default: true
 ---

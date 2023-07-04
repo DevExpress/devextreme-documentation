@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:Legendvisible
+uid: viz/bar_gauge:Legend.visible
 type: Boolean
 default: false
 ---

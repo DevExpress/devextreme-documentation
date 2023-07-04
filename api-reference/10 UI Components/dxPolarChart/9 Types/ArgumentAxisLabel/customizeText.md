@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/polar_chart:ArgumentAxisLabelcustomizeText
+uid: viz/polar_chart:ArgumentAxisLabel.customizeText
 type: function(argument)
 ---
 ---

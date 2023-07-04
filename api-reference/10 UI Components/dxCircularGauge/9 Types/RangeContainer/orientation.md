@@ -1,5 +1,5 @@
 ---
-uid: viz/circular_gauge:RangeContainerorientation
+uid: viz/circular_gauge:RangeContainer.orientation
 type: Enums.CircularGaugeElementOrientation
 default: 'outside'
 ---

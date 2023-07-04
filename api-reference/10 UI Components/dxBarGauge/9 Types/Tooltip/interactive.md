@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:Tooltipinteractive
+uid: viz/bar_gauge:Tooltip.interactive
 type: Boolean
 default: false
 ---

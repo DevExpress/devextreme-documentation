@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:TooltiplinkTooltipRender
+uid: viz/sankey:Tooltip.linkTooltipRender
 ---
 ---
 ##### shortDescription

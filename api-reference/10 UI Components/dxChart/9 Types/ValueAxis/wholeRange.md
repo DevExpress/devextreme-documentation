@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxiswholeRange
+uid: viz/chart:ValueAxis.wholeRange
 type: Object | Array<Number, String, Date>
 default: undefined
 ---

@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:ArgumentAxistick
+uid: viz/polar_chart:ArgumentAxis.tick
 ---
 ---
 ##### shortDescription

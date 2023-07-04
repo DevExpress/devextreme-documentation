@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsTitletextOverflow
+uid: viz/chart:CommonAxisSettingsTitle.textOverflow
 type: Enums.TextOverflow
 default: 'ellipsis'
 ---

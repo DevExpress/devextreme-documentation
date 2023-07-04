@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisaggregationInterval
+uid: viz/chart:ArgumentAxis.aggregationInterval
 type: Number | Object | Enums.TimeInterval
 ---
 ---

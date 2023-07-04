@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/chart:ValueAxisLabelcustomizeText
+uid: viz/chart:ValueAxisLabel.customizeText
 type: function(axisValue)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxisoffset
+uid: viz/chart:ValueAxis.offset
 type: Number
 default: undefined
 ---

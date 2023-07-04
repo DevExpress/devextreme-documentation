@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxismaxAutoBreakCount
+uid: viz/chart:ValueAxis.maxAutoBreakCount
 type: Number
 default: 4
 ---

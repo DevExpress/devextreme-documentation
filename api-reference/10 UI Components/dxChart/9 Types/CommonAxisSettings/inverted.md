@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsinverted
+uid: viz/chart:CommonAxisSettings.inverted
 type: Boolean
 default: false
 ---

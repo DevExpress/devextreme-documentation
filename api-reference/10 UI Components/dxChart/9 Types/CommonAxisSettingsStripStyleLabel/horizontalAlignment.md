@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsStripStyleLabelhorizontalAlignment
+uid: viz/chart:CommonAxisSettingsStripStyleLabel.horizontalAlignment
 type: Enums.HorizontalAlignment
 default: 'left'
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisMinorTickshift
+uid: viz/polar_chart:ArgumentAxisMinorTick.shift
 type: Number
 default: 3
 ---

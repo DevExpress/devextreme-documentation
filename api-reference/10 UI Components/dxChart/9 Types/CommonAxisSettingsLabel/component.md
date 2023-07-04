@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelcomponent
+uid: viz/chart:CommonAxisSettingsLabel.component
 ---
 ---
 ##### shortDescription

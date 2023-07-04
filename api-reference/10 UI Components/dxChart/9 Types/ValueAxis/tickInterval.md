@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxistickInterval
+uid: viz/chart:ValueAxis.tickInterval
 type: Number | Object | Enums.TimeInterval
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisminorTickInterval
+uid: viz/chart:ArgumentAxis.minorTickInterval
 type: Number | Object | Enums.TimeInterval
 ---
 ---

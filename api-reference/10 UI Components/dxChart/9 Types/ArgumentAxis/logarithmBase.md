@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxislogarithmBase
+uid: viz/chart:ArgumentAxis.logarithmBase
 type: Number
 default: 10
 ---

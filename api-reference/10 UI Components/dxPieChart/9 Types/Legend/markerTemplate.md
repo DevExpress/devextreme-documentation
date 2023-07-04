@@ -1,5 +1,5 @@
 ---
-uid: viz/pie_chart:LegendmarkerTemplate
+uid: viz/pie_chart:Legend.markerTemplate
 type: template
 default: undefined
 ---

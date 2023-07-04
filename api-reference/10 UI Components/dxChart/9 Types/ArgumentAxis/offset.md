@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisoffset
+uid: viz/chart:ArgumentAxis.offset
 type: Number
 default: undefined
 ---

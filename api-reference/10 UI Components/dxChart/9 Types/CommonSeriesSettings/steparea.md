@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingssteparea
+uid: viz/chart:CommonSeriesSettings.steparea
 type: any
 ---
 ---

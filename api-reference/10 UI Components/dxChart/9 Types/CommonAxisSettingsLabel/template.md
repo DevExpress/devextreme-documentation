@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabeltemplate
+uid: viz/chart:CommonAxisSettingsLabel.template
 type: template
 default: undefined
 ---

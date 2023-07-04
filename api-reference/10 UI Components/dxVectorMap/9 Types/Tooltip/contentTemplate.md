@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:TooltipcontentTemplate
+uid: viz/vector_map:Tooltip.contentTemplate
 type: template
 default: undefined
 ---

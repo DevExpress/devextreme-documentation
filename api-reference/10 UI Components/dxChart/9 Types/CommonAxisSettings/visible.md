@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsvisible
+uid: viz/chart:CommonAxisSettings.visible
 type: Boolean
 default: true
 ---

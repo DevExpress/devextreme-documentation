@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:TooltipcontentTemplate
+uid: viz/funnel:Tooltip.contentTemplate
 type: template
 default: undefined
 ---

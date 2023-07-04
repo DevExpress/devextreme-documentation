@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingssplinearea
+uid: viz/chart:CommonSeriesSettings.splinearea
 type: any
 ---
 ---

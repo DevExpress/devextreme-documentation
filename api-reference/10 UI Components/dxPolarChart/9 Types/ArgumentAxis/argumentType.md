@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisargumentType
+uid: viz/polar_chart:ArgumentAxis.argumentType
 type: Enums.ChartsDataType
 default: undefined
 ---

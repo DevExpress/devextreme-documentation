@@ -1,5 +1,5 @@
 ---
-uid: viz/tree_map:TooltipcustomizeTooltip
+uid: viz/tree_map:Tooltip.customizeTooltip
 type: function(info)
 default: undefined
 ---

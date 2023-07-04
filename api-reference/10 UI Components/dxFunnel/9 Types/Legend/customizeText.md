@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/funnel:LegendcustomizeText
+uid: viz/funnel:Legend.customizeText
 type: function(itemInfo)
 ---
 ---

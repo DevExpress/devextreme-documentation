@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/linear_gauge:Scalelabel
+uid: viz/linear_gauge:Scale.label
 ---
 ---
 ##### shortDescription

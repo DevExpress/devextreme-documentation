@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/polar_chart:CommonAxisSettingsstripStyle
+uid: viz/polar_chart:CommonAxisSettings.stripStyle
 ---
 ---
 ##### shortDescription

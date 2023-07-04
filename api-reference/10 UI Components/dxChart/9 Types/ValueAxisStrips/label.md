@@ -1,6 +1,6 @@
 ---
 type: Object
-uid: viz/chart:ValueAxisStripslabel
+uid: viz/chart:ValueAxisStrips.label
 ---
 ---
 ##### shortDescription

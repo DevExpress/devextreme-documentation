@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/chart:ArgumentAxisminVisualRangeLength
+uid: viz/chart:ArgumentAxis.minVisualRangeLength
 type: Number | Object | Enums.TimeInterval
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabeldisplayMode
+uid: viz/chart:CommonAxisSettingsLabel.displayMode
 type: Enums.ChartLabelDisplayMode
 default: 'standard'
 ---

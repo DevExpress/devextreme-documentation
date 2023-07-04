@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonSeriesSettingstype
+uid: viz/polar_chart:CommonSeriesSettings.type
 type: Enums.PolarChartSeriesType
 default: 'scatter'
 ---

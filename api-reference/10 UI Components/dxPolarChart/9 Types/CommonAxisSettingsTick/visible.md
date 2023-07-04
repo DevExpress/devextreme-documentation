@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsTickvisible
+uid: viz/polar_chart:CommonAxisSettingsTick.visible
 type: Boolean
 default: true
 ---

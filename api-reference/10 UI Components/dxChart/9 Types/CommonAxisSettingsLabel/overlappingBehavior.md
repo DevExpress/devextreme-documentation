@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabeloverlappingBehavior
+uid: viz/chart:CommonAxisSettingsLabel.overlappingBehavior
 type: Enums.ChartsAxisLabelOverlap
 default: 'hide'
 ---

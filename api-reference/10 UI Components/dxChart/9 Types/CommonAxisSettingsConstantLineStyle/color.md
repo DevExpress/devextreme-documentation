@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStylecolor
+uid: viz/chart:CommonAxisSettingsConstantLineStyle.color
 type: String
 default: '#000000'
 ---

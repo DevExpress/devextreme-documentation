@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingsline
+uid: viz/chart:CommonSeriesSettings.line
 type: any
 ---
 ---

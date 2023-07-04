@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsdiscreteAxisDivisionMode
+uid: viz/chart:CommonAxisSettings.discreteAxisDivisionMode
 type: Enums.DiscreteAxisDivisionMode
 default: 'betweenLabels'
 ---

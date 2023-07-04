@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxismultipleAxesSpacing
+uid: viz/chart:ValueAxis.multipleAxesSpacing
 type: Number
 default: 5
 ---

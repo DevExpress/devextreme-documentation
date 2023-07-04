@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonSeriesSettingstype
+uid: viz/chart:CommonSeriesSettings.type
 type: Enums.SeriesType
 default: 'line'
 ---

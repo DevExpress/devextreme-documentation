@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsaggregatedPointsPosition
+uid: viz/chart:CommonAxisSettings.aggregatedPointsPosition
 type: Enums.AggregatedPointsPosition
 default: 'betweenTicks'
 ---

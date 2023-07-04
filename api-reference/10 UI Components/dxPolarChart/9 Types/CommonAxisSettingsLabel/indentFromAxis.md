@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:CommonAxisSettingsLabelindentFromAxis
+uid: viz/polar_chart:CommonAxisSettingsLabel.indentFromAxis
 type: Number
 default: 5
 ---

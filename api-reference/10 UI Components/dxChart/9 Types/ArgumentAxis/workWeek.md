@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ArgumentAxisworkWeek
+uid: viz/chart:ArgumentAxis.workWeek
 type: Array<Number>
 default: [1, 2, 3, 4, 5]
 ---

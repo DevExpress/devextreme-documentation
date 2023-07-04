@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ValueAxisendOnTick
+uid: viz/polar_chart:ValueAxis.endOnTick
 type: Boolean
 default: false
 ---

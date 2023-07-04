@@ -1,5 +1,5 @@
 ---
-uid: viz/funnel:LegendcustomizeItems
+uid: viz/funnel:Legend.customizeItems
 type: function(items)
 ---
 ---

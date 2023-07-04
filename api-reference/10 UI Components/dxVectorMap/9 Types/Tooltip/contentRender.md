@@ -1,5 +1,5 @@
 ---
-uid: viz/vector_map:TooltipcontentRender
+uid: viz/vector_map:Tooltip.contentRender
 ---
 ---
 ##### shortDescription

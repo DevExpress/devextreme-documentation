@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxispane
+uid: viz/chart:ValueAxis.pane
 type: String
 default: undefined
 ---

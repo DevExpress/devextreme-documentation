@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:ArgumentAxisperiod
+uid: viz/polar_chart:ArgumentAxis.period
 type: Number
 default: undefined
 ---

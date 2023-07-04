@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStyledashStyle
+uid: viz/chart:CommonAxisSettingsConstantLineStyle.dashStyle
 type: Enums.DashStyle
 default: 'solid'
 ---

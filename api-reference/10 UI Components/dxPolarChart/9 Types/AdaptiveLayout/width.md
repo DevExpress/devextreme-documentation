@@ -1,5 +1,5 @@
 ---
-uid: viz/polar_chart:AdaptiveLayoutwidth
+uid: viz/polar_chart:AdaptiveLayout.width
 type: Number
 default: 170
 ---

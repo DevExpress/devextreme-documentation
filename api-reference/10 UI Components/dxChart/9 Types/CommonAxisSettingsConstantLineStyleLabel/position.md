@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsConstantLineStyleLabelposition
+uid: viz/chart:CommonAxisSettingsConstantLineStyleLabel.position
 type: Enums.RelativePosition
 default: 'inside'
 ---

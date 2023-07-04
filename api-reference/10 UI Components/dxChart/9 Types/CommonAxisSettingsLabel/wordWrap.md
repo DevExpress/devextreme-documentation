@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsLabelwordWrap
+uid: viz/chart:CommonAxisSettingsLabel.wordWrap
 type: Enums.WordWrap
 default: 'normal'
 ---

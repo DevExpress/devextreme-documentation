@@ -1,5 +1,5 @@
 ---
-uid: viz/linear_gauge:RangeContainerhorizontalOrientation
+uid: viz/linear_gauge:RangeContainer.horizontalOrientation
 type: Enums.HorizontalAlignment
 default: 'right'
 ---

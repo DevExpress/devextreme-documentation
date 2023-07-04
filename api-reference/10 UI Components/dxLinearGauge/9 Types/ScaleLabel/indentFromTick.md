@@ -1,5 +1,5 @@
 ---
-uid: viz/linear_gauge:ScaleLabelindentFromTick
+uid: viz/linear_gauge:ScaleLabel.indentFromTick
 type: Number
 default: -10
 ---

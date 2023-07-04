@@ -1,5 +1,5 @@
 ---
-uid: viz/sankey:Tooltipenabled
+uid: viz/sankey:Tooltip.enabled
 type: Boolean
 default: true
 ---

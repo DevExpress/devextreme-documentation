@@ -4,6 +4,7 @@ isType:
 module: viz/gauges/base_gauge
 export: BaseGaugeRangeContainer
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

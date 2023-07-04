@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:CommonAxisSettingsTitlemargin
+uid: viz/chart:CommonAxisSettingsTitle.margin
 type: Number
 default: 6
 ---

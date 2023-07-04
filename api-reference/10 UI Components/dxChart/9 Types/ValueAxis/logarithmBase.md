@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:ValueAxislogarithmBase
+uid: viz/chart:ValueAxis.logarithmBase
 type: Number
 default: 10
 ---

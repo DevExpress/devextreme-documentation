@@ -1,5 +1,5 @@
 ---
-uid: viz/bar_gauge:LegenditemTextFormat
+uid: viz/bar_gauge:Legend.itemTextFormat
 type: Format
 default: undefined
 ---

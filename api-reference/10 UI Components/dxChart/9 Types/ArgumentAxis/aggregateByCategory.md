@@ -1,6 +1,6 @@
 ---
 dep: dxChartSeriesTypes.CommonSeries.aggregation.enabled
-uid: viz/chart:ArgumentAxisaggregateByCategory
+uid: viz/chart:ArgumentAxis.aggregateByCategory
 type: Boolean
 default: true
 ---

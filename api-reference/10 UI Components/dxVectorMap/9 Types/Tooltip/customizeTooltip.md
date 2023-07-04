@@ -1,6 +1,6 @@
 ---
 notUsedInTheme: 
-uid: viz/vector_map:TooltipcustomizeTooltip
+uid: viz/vector_map:Tooltip.customizeTooltip
 type: function(info)
 default: undefined
 ---

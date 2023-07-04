@@ -1,5 +1,5 @@
 ---
-uid: viz/chart:Legendposition
+uid: viz/chart:Legend.position
 type: Enums.RelativePosition
 default: 'outside'
 ---

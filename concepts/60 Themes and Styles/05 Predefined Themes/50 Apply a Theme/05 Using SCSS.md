@@ -3,7 +3,7 @@ You can import a theme bundle from the `bundles` folder of the `devextreme` pack
     /* @use 'devextreme/scss/bundles/dx.theme_name.scss';  */
     @use 'devextreme/scss/bundles/dx.carmine.scss';
 
-Alternatively, you can import individual files that comprise a theme. The theme folder can be either `material` or `generic` depending on the theme family. The example below imports files from the `Material Blue Light Compact` theme:
+Alternatively, you can import individual files that comprise a theme. The theme folder name is either `material` or `generic` depending on the theme family. The example below imports files from the `Material Blue Light Compact` theme:
 
     @use 'devextreme/scss/widgets/material/colors' with ($color: 'blue', $mode: 'light');
     @use 'devextreme/scss/widgets/material/sizes' with ($size: 'compact');

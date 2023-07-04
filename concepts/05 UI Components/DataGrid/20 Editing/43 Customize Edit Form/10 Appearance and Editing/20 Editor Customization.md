@@ -1,4 +1,4 @@
-DataGrid generates editors based on the **columns[]**.[dataType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType) property. The editors are generated with the default options. This section demonstrates how to change the default editor settings, implement any of built-in editors, or create your custom editor.
+DataGrid generates editors based on the **columns[]**.[dataType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType) property. This section demonstrates how to change the default editor settings, configure built-in editors, or create your custom editor.
 
 If you want to change the predefined editor properties, specify the **columns[].**[editorOptions](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions) property, that applies to header filter editors as well. Do not specify the **onValueChanged** handler in this property, because the internal DataGrid logic overrides it. The **columns[].formItem.**[editorOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions) property applies to form items only. 
 

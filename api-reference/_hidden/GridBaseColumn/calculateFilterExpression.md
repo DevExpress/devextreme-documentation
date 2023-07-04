@@ -19,7 +19,6 @@ Possible values: [*"filterRow"*](/api-reference/10%20UI%20Components/GridBase/1%
 
 ##### return: Filter expression
 A filter expression.          
-If you filter data [remotely](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/'), the filter expression must not contain functions.
 
 ##### context: GridBaseColumn
 The `this` keyword refers to the column's configuration.

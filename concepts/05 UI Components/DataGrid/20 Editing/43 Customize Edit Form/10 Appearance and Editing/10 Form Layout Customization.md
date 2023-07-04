@@ -179,7 +179,7 @@ If you need to implement minor changes (for example, apply a style to a form ite
 
 ---
 
-If you need to implement major changes (for example, arrange items and groups), use the **editing**.[form](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form) property. Declare the required items for this object and specify the [dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField) property. 
+If you need to implement major changes (for example, arrange items and groups), use the **editing**.[form](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form) property. Declare all required items for a column object and specify the [dataField](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField) property. 
 
 DataGrid automatically generates editors with the related event handlers for the form items based on column settings and other DataGrid options like [onEditorPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField). Do not use the [editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) or [editorOptions](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions) properties for items that are bound to **dataField** in the **editing.form** configuration. You can add unbound items just like for a regular [Form](/Documentation/ApiReference/UI_Components/dxForm/) component.
 

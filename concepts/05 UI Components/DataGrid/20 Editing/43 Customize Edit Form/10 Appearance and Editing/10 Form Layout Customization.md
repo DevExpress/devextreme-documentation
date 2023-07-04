@@ -1,4 +1,4 @@
-This section demonstrates how to configure a form items style and arrange items. We do not recommend you to use the options mentioned in this section to change the default editors behavior. To customize the default editor, refer to the [Editor Customization](/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors) section.
+This section demonstrates how to configure a form item style and arrange items. We do not recommend that you use options mentioned in this section to change the default editor behavior. To customize the default editor, refer to the following section: [Editor Customization](/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors).
 
 If you need to implement minor changes (for example, stylize a form item, change the item visibility, configure labels, specify a number of columns spanned by the item, etc.), use the **columns[]**.[formItem](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#formItem) property.
 

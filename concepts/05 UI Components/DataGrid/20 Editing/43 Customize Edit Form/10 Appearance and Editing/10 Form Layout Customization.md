@@ -183,7 +183,7 @@ If you need to implement major changes (for example, arrange items and groups), 
 
 DataGrid automatically generates editors with the related event handlers for the form items based on column settings and other DataGrid options like [onEditorPrepared](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField). Do not use the [editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) or [editorOptions](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions) properties for items that are bound to **dataField** in the **editing.form** configuration. You can add unbound items just like for a regular [Form](/Documentation/ApiReference/UI_Components/dxForm/) component.
 
-The [Organize Simple Items](/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/) topic illustrates how to organize form items in the Form component. You can use the same approach for the DataGrid editing form. Note that you should not specify the **formData** property because DataGrid uses its own mechanism under the hood to manage edited data.
+You can refer to the following topic for information on how to arrange items in the Form component: [Organize Simple Items](/Documentation/Guide/UI_Components/Form/Organize_Simple_Items/In_Groups/). You can use the same technique to arrange items in the DataGrid editing form. Note that you should leave the **formData** property unspecified because DataGrid uses a built-in mechanism to manage edited data.
 
 #####See Also#####
 - [Dynamically Change Form Item Properties in the Editing State](/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Form_Item_Properties_in_the_Editing_State/)

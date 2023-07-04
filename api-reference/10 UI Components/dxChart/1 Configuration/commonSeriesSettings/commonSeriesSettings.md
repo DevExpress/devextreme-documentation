@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings
-type: viz/chart:dxChartCommonSeriesSettings
+type: viz/chart:CommonSeriesSettings
 inherits: dxChartSeriesTypes.CommonSeries
 hideDefaults: true
 inheritAll: 

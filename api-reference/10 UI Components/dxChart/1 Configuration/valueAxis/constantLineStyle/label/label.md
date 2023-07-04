@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.constantLineStyle.label
-type: viz/chart:dxChartValueAxisConstantLineStyleLabel
-inheritsType: viz/chart:dxChartValueAxisConstantLineStyleLabel
+type: viz/chart:ValueAxisConstantLineStyleLabel
+inheritsType: viz/chart:ValueAxisConstantLineStyleLabel
 ---
 ---
 ##### shortDescription

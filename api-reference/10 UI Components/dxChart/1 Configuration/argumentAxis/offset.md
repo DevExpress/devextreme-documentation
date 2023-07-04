@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.offset
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

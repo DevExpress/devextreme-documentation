@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.endOnTick
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

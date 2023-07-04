@@ -1,5 +1,6 @@
 ---
 id: dxPolarChart.Options.argumentAxis.label.customizeHint
+type: function(argument)
 ---
 ---
 ##### shortDescription

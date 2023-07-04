@@ -9,6 +9,6 @@ Sets a series type.
 
 ---
 <!--
-dxPolarChartOptions.commonSeriesSettings.type(/api-reference/10 UI Components/dxPolarChart/9 Types/dxPolarChartCommonSeriesSettings/type.md)(viz/polar_chart.d.ts)
+dxPolarChartOptions.commonSeriesSettings.type(/api-reference/10 UI Components/dxPolarChart/9 Types/CommonSeriesSettings/type.md)(viz/polar_chart.d.ts)
 PolarChartSeries.type(/api-reference/_hidden/PolarChartSeries/type.md)(viz/polar_chart.d.ts)
 -->

@@ -4,6 +4,7 @@ isType:
 module: viz/gauges/base_gauge
 export: BaseGaugeTooltip
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

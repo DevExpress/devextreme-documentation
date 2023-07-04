@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.rangebar
+type: any
 ---
 ---
 ##### shortDescription

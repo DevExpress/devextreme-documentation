@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.linearThreshold
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

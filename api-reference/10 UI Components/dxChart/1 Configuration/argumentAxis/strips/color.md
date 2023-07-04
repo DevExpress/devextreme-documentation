@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.strips.color
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

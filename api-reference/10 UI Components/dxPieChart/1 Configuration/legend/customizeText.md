@@ -1,6 +1,7 @@
 ---
 id: dxPieChart.Options.legend.customizeText
 notUsedInTheme: 
+type: function(pointInfo)
 ---
 ---
 ##### shortDescription

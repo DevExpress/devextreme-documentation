@@ -4,6 +4,7 @@ isType:
 module: viz/chart_components/base_chart
 export: BaseChartTooltip
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

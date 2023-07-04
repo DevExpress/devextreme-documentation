@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.indentFromAxis
+type: Number
+default: 10
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.inverted
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

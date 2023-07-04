@@ -1,5 +1,6 @@
 ---
 id: dxPieChart.Options.legend.customizeItems
+type: function(items)
 ---
 ---
 ##### param(items): Array<PieChartLegendItem>

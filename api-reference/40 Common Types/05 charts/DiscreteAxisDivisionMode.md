@@ -9,7 +9,7 @@ Specifies whether ticks/grid lines of a discrete axis are located between labels
 
 ---
 <!--
-dxChartOptions.commonAxisSettings.discreteAxisDivisionMode(/api-reference/10 UI Components/dxChart/9 Types/dxChartCommonAxisSettings/discreteAxisDivisionMode.md)(common/charts.d.ts)
-dxPolarChartOptions.commonAxisSettings.discreteAxisDivisionMode(/api-reference/10 UI Components/dxPolarChart/9 Types/dxPolarChartCommonAxisSettings/discreteAxisDivisionMode.md)(common/charts.d.ts)
+dxChartOptions.commonAxisSettings.discreteAxisDivisionMode(/api-reference/10 UI Components/dxChart/1 Configuration/commonAxisSettings/discreteAxisDivisionMode.md)(common/charts.d.ts)
+dxPolarChartOptions.commonAxisSettings.discreteAxisDivisionMode(/api-reference/10 UI Components/dxPolarChart/1 Configuration/commonAxisSettings/discreteAxisDivisionMode.md)(common/charts.d.ts)
 dxRangeSelectorOptions.scale.discreteAxisDivisionMode(/api-reference/10 UI Components/dxRangeSelector/1 Configuration/scale/discreteAxisDivisionMode.md)(common/charts.d.ts)
 -->

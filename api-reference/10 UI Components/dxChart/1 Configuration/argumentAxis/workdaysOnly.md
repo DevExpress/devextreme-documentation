@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.workdaysOnly
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

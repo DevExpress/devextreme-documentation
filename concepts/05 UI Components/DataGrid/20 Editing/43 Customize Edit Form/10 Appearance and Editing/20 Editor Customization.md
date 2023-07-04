@@ -8,7 +8,7 @@ If you want to change the predefined editor properties, specify the **columns[].
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
-You can override the **onValueChanged** handler of the predefined editor and change the predefined editor type. For this purpose, handle the [onEditorPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing) event. Use handler parameters to determine the editor location and the **dataField** to which the editor is bound. Set the **editorName** parameter to the required DevExtreme editor component and the **editorOptions** parameter to the editor configuration object.
+You can override the **onValueChanged** handler of the predefined editor and change its type. To accomplish this goal, handle the [onEditorPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing) event.
 
 ---
 ##### jQuery

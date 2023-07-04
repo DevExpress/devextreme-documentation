@@ -2,7 +2,7 @@ DataGrid generates editors based on the **columns[]**.[dataType](/Documentation/
 
 If you want to change the predefined editor properties, specify the **columns[].**[editorOptions](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions) property that also affects header filter editors. Omit the **onValueChanged** handler in this property because the internal DataGrid implementation overrides it. The **columns[].formItem.**[editorOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions) property affects form items only. 
 
-[note]Do not specify the **template** property in **formItem.editorOptions** or **columns[].editorOptions**. To implement a custom template, use the [editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) property.
+[note]Leave the **template** property in **formItem.editorOptions** or **columns[].editorOptions** unspecified. To implement a custom template, use the [editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) property instead.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"

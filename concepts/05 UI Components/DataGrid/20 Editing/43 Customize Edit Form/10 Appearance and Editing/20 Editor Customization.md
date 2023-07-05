@@ -4,8 +4,8 @@ If you want to change the predefined editor properties, specify the **columns[].
 
 [note]Leave the **template** property in **formItem.editorOptions** or **columns[].editorOptions** unspecified. To implement a custom template, use the [editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) property instead.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
 You can override the **onValueChanged** handler of the predefined editor and change its type. To accomplish this goal, handle the [onEditorPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing) event.
@@ -155,14 +155,14 @@ You can override the **onValueChanged** handler of the predefined editor and cha
 
 If you need to implement a custom editor for a specific data type (array, object, etc.), use the **columns[]**.[editCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editCellTemplate) property. It is important to allow users to input or change the column value. Handle this value change and use the **setValue** template parameter to change the corresponding cell value. The **editCellTemplate** property specifies one template for all editing modes.
 
-#include common-demobutton with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
 }
 
 If you want to further customize the form (add custom labels and buttons, apply advanced validation rules and masks, etc.), implement the Form component inside Popup.
 
-#include common-githubbutton with {
-    url: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-editing-form/"
 }
 
 #####See Also#####

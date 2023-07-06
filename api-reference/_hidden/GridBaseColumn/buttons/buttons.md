@@ -3,6 +3,7 @@ id: GridBaseColumnButton
 type: Object
 module: common/grids
 export: ColumnButtonBase
+hidden: 
 ---
 ---
 ##### shortDescription

@@ -12,8 +12,8 @@ The adaptive layout enables the UI component to hide optional elements if they d
 
 1. [Title](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/title.md '{basewidgetpath}/Configuration/title')
 2. [Export menu icon](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/export '{basewidgetpath}/Configuration/export')
-3. [Legend](/api-reference/10%20UI%20Components/dxPieChart/9%20Types/dxPieChartLegend '{basewidgetpath}/Configuration/legend')
-4. [Point labels](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label') (can be saved by setting the **adaptiveLayout**.[keepLabels](/api-reference/10%20UI%20Components/dxPieChart/9%20Types/dxPieChartAdaptiveLayout/keepLabels.md '{basewidgetpath}/Configuration/adaptiveLayout#keepLabels') property to **true**)
+3. [Legend](/api-reference/10%20UI%20Components/dxPieChart/9%20Types/Legend '{basewidgetpath}/Configuration/legend')
+4. [Point labels](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label '{basewidgetpath}/Configuration/commonSeriesSettings/label') (can be saved by setting the **adaptiveLayout**.[keepLabels](/api-reference/10%20UI%20Components/dxPieChart/9%20Types/AdaptiveLayout/keepLabels.md '{basewidgetpath}/Configuration/adaptiveLayout#keepLabels') property to **true**)
 
 Use the **height** and **width** properties in the **adaptiveLayout** object to specify the minimum container size at which the layout begins to adapt.
 

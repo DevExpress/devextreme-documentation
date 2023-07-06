@@ -18,7 +18,7 @@ A UI element used to filter data.
 Possible values: [*"filterRow"*](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/'), [*"headerFilter"*](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter '{basewidgetpath}/Configuration/headerFilter/'), [*"filterBuilder"*](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder'), [*"search"*](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '{basewidgetpath}/Configuration/searchPanel/').
 
 ##### return: Filter expression
-A filter expression.
+A filter expression.          
 
 ##### context: GridBaseColumn
 The `this` keyword refers to the column's configuration.

@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td>Chart</td>
-<td><b>argumentAxis.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory">aggregateByCategory</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxChart/Types/ArgumentAxis/#aggregateByCategory">aggregateByCategory</a></td>
+<td><b>argumentAxis.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregateByCategory">aggregateByCategory</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxChart/Types/dxChartArgumentAxis/#aggregateByCategory">aggregateByCategory</a></td>
 </tr>
 <tr>
 <td>ContextMenu</td>

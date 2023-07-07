@@ -3,6 +3,7 @@ id: GroupItem
 module: data/custom_store
 export: GroupItem
 type: Object
+deprecated: 
 ---
 ---
 ##### shortDescription

@@ -36,5 +36,8 @@ The instance of the appointment's target UI component.
 ##### field(e.toData): any
 Custom [data](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/#data') associated with the target UI component.
 
+##### field(e.toItemData): any
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

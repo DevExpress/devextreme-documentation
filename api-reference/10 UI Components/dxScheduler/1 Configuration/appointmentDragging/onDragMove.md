@@ -19,22 +19,22 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): dxSortable | dxDraggable
-The instance of the appointment's source UI component.
+The instance of the appointment's source UI component. Works only for dragging between components.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/#data') associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/#data') associated with the source UI component. Works only for dragging between components.
 
 ##### field(e.itemData): any
-The data object of the appointment being dragged.
+The appointment's data before dragging.
 
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.toComponent): dxSortable | dxDraggable
-The instance of the appointment's target UI component.
+The instance of the appointment's target UI component. Works only for dragging between components.
 
 ##### field(e.toData): any
-Custom [data](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/#data') associated with the target UI component.
+Custom [data](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/appointmentDragging/data.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/appointmentDragging/#data') associated with the target UI component. Works only for dragging between components.
 
 ---
 <!-- Description goes here -->

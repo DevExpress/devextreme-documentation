@@ -5,7 +5,7 @@ id: CustomStore.load(options)
 ##### shortDescription
 Starts loading data.
 
-##### return: Promise<any>
+##### return: Promise<CustomStoreLoadResult>
 A Promise that is resolved after data is loaded.
 #include ref-promisedistinction
 

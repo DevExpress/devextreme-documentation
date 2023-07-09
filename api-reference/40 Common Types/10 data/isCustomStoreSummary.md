@@ -1,8 +1,7 @@
 ---
-id: CustomStoreGroupItem
+id: isCustomStoreSummary
 module: common/data
-export: CustomStoreGroupItem
-type: Object
+export: isCustomStoreSummary
 ---
 ---
 ##### shortDescription

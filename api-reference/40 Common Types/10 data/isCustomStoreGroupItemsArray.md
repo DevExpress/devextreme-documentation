@@ -1,8 +1,7 @@
 ---
-id: CustomStoreLoadResult
+id: isCustomStoreGroupItemsArray
 module: common/data
-export: CustomStoreLoadResult
-type: Object
+export: isCustomStoreGroupItemsArray
 ---
 ---
 ##### shortDescription

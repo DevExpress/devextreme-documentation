@@ -17,7 +17,7 @@ Alternatively, you can import individual files that comprise a theme. The theme 
     @use 'devextreme/scss/widgets/base/ui';
     @use 'devextreme/scss/widgets/material';
 
-To import only specific components, replace `@use 'devextreme/scss/widgets/material';` with `@use 'devextreme/scss/widgets/componentName';`:
+To import only specific components, replace `@use 'devextreme/scss/widgets/themeName';` with `@use 'devextreme/scss/widgets/themeName/componentName';`:
 
     @use "devextreme/scss/widgets/generic/colors" with ($color: "darkmoon");
     @use "devextreme/scss/widgets/generic/sizes" with ($size: "default");

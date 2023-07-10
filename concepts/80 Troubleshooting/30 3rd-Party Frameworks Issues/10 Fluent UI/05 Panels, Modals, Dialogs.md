@@ -6,7 +6,7 @@ An overlay component (Popup, Popover, Tooltip) is behind Fluent UI Panel, Modal,
 
 #### Solution
 
-In Fluent UI components, z-index is set to `1000000`. Call the [baseZIndex(zIndex)](/Documentation/ApiReference/Common/Utils/ui/dxOverlay/#baseZIndexzIndex) method to increase z-indexes of overlay components in the application:
+In Fluent UI components, the z-index is set to `1000000`. Call the [baseZIndex(zIndex)](/Documentation/ApiReference/Common/Utils/ui/dxOverlay/#baseZIndexzIndex) method to increase overlay component z-indexes in the application:
 
     <!-- tab: App.js -->
     import { baseZIndex } from 'devextreme/ui/overlay';
@@ -14,11 +14,11 @@ In Fluent UI components, z-index is set to `1000000`. Call the [baseZIndex(zInde
 
 #### Issue 
 
-DevExtreme components that use drop-down windows or overlays are not responsive when added to Fluent UI Panel, Modal, or Dialog.
+DevExtreme components that use drop-down windows or overlays are not responsive when added to the Fluent UI Panel, Modal, or Dialog.
 
 #### Solution
 
-To resolve the issue, disable FocusTrapZone's focus trapping behavior:
+To resolve the issue, disable FocusTrapZone focus trapping behavior:
 
     <!-- tab: App.js -->
     // ...

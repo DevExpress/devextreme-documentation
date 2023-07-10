@@ -37,4 +37,22 @@ To resolve the issue, disable FocusTrapZone's focus trapping behavior:
     
     export default App;
 
+For Fluent UI Dialog specify the `modalProps` property, since Dialog does not include `focusTrapZoneProps`:
+
+    const focusTrapZoneProps = {
+        disabled: true
+    };
+
+    const modalProps = { focusTrapZoneProps };
+
+    function App() {
+        return (
+            <Dialog ...
+                modalProps={modalProps}
+            />
+        );
+    }
+
+    export default App;
+
 [tags] react

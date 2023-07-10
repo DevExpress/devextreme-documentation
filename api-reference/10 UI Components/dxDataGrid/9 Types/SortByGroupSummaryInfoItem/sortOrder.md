@@ -1,6 +1,6 @@
 ---
 acceptValues: undefined
-uid: ui/data_grid:dxDataGridSortByGroupSummaryInfoItem.sortOrder
+uid: ui/data_grid:SortByGroupSummaryInfoItem.sortOrder
 type: Enums.SortOrder
 default: undefined
 ---

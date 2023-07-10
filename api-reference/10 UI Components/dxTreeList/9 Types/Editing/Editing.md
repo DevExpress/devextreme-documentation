@@ -1,6 +1,9 @@
 ---
 uid: ui/tree_list:Editing
 isType: 
+module: ui/tree_list
+export: Editing
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

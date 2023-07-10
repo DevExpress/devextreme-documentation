@@ -1,8 +1,8 @@
 ---
 id: dxDataGrid.Options.sortByGroupSummaryInfo
-type: Array<ui/data_grid:dxDataGridSortByGroupSummaryInfoItem>
+type: Array<ui/data_grid:SortByGroupSummaryInfoItem>
 default: undefined
-inheritsType: ui/data_grid:dxDataGridSortByGroupSummaryInfoItem
+inheritsType: ui/data_grid:SortByGroupSummaryInfoItem
 ---
 ---
 ##### shortDescription

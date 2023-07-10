@@ -4,6 +4,7 @@ isType:
 module: common/grids
 export: EditingTextsBase
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

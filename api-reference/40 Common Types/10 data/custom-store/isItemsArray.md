@@ -1,7 +1,7 @@
 ---
-id: isCustomStoreItemsArray
-module: common/data
-export: isCustomStoreItemsArray
+id: isItemsArray
+module: common/data/custom-store
+export: isItemsArray
 ---
 ---
 ##### shortDescription

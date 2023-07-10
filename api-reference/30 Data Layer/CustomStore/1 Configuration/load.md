@@ -9,7 +9,7 @@ Specifies a custom implementation of the [load(options)](/api-reference/30%20Dat
 ##### param(options): LoadOptions
 Data processing settings.
 
-##### return: CustomStoreLoadResult | Promise<CustomStoreLoadResult>
+##### return: LoadResult | Promise<LoadResult>
 An array with data or a Promise that is resolved after data is loaded.
 #include ref-promisedistinction
 

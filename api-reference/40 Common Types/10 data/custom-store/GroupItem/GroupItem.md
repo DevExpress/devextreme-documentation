@@ -1,9 +1,9 @@
 ---
 id: GroupItem
-module: data/custom_store
+module: common/data/custom-store
 export: GroupItem
 type: Object
-deprecated: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

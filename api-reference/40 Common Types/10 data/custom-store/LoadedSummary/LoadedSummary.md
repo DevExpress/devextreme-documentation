@@ -1,7 +1,7 @@
 ---
-id: CustomStoreLoadResult
-module: common/data
-export: CustomStoreLoadResult
+id: LoadedSummary
+module: common/data/custom-store
+export: LoadedSummary
 type: Object
 generateTypeLink: 
 ---

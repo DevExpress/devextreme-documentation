@@ -1,5 +1,5 @@
 ---
-uid: ui/data_grid:dxDataGridSortByGroupSummaryInfoItem.summaryItem
+uid: ui/data_grid:SortByGroupSummaryInfoItem.summaryItem
 type: String | Number
 default: undefined
 ---

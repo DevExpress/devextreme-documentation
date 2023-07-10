@@ -1,8 +1,8 @@
 ---
-uid: ui/data_grid:dxDataGridSortByGroupSummaryInfoItem
+uid: ui/data_grid:SortByGroupSummaryInfoItem
 isType: 
 module: ui/data_grid
-export: dxDataGridSortByGroupSummaryInfoItem
+export: SortByGroupSummaryInfoItem
 generateTypeLink: 
 ---
 ---

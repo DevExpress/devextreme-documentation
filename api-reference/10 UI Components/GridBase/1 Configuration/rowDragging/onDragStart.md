@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is called when the drag gesture is initialized.
+A function that is called when a drag gesture is initialized.
 
 ##### param(e): Object
 Information about the event that caused the function's execution.

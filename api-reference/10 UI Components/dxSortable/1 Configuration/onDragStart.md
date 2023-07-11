@@ -23,13 +23,13 @@ The UI component that raised the event.
 #include common-ref-eventparam
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component. Works only for dragging between components.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component. Works only for element drag and drop between components.
 
 ##### field(e.fromIndex): Number
 The item's original position. If the item is dragged from another UI component, the value is **-1**.
 
 ##### field(e.itemData): any
-The item's data before dragging. Note that you should specify the item data manually.
+The item's data before the drag operation. Note that you should specify the item data manually.
 
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam

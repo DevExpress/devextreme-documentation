@@ -23,13 +23,13 @@ The UI component that raised the event.
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): dxSortable | dxDraggable
-The instance of the item's source UI component. Works only for dragging between components.
+The instance of the item's source UI component. Works only for element drag and drop between components.
 
 ##### field(e.fromData): any
-Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component. Works only for dragging between components.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the source UI component. Works only for element drag and drop between components.
 
 ##### field(e.itemData): any
-The item's data before dragging. Note that you should specify the item data manually.
+The item's data before the drag operation. Note that you should specify the item data manually.
 
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
@@ -38,10 +38,10 @@ The item's data before dragging. Note that you should specify the item data manu
 Model data. Available only if you use Knockout.
 
 ##### field(e.toComponent): dxSortable | dxDraggable
-The instance of the item's target UI component. Works only for dragging between components.
+The instance of the item's target UI component. Works only for element drag and drop between components.
 
 ##### field(e.toData): any
-Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target UI component. Works only for dragging between components.
+Custom [data](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/data.md '{basewidgetpath}/Configuration/#data') associated with the target UI component. Works only for element drag and drop between components.
 
 ---
 

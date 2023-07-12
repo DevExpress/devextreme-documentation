@@ -203,7 +203,7 @@ If you [specify a custom header filter data source](/concepts/05%20UI%20Componen
 
 If you use the search panel, the DataGrid may invoke the **calculateFilterExpression** function multiple times for lookup columns. The first call is to filter the lookup's data source, and subsequent calls are to filter the DataGrid's data source.
 
-DataGrid uses *"anyof"* and *"noneof"* filter values for [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/). If you specify **calculateFilterExpression** for headerFilter, return an array of filterExpressions:
+DataGrid uses *"anyof"* and *"noneof"* filter values for [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/'). If you specify **calculateFilterExpression** for headerFilter, return an array of filterExpressions:
 
 ---
 ##### jQuery

@@ -88,6 +88,10 @@
 <td><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Data_Layer/Utils/#errorHandler">errorHandler</a></td>
 </tr>
 <tr>
+<td>data</td>
+<td><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Common_Types/data/#ResolvedData">ResolvedData</a></td>
+</tr>
+<tr>
 <td>grids</td>
 <td><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Common_Types/grids/ColumnChooser/#allowSearch">allowSearch</a><br><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Common_Types/grids/ColumnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Common_Types/grids/HeaderFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Common_Types/grids/HeaderFilter/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/Common_Types/grids/RowDragging/#filter">filter</a></td>
 </tr>

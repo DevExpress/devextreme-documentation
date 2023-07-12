@@ -15,6 +15,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '3.1.x'
+
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
@@ -33,6 +37,10 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v2
+
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '3.1.x'
 
     - name: Setup Node.js
       uses: actions/setup-node@v1

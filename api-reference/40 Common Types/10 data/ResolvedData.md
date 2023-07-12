@@ -3,6 +3,7 @@ id: ResolvedData
 module: data/custom_store
 export: ResolvedData
 type: Object
+deprecated: 
 ---
 ---
 ##### shortDescription

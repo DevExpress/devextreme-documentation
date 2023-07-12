@@ -1,7 +1,7 @@
 ---
-id: isSummary
+id: isLoadResultObject
 module: common/data/custom-store
-export: isSummary
+export: isLoadResultObject
 ---
 ---
 ##### shortDescription

@@ -203,6 +203,124 @@ If you [specify a custom header filter data source](/concepts/05%20UI%20Componen
 
 If you use the search panel, the DataGrid may invoke the **calculateFilterExpression** function multiple times for lookup columns. The first call is to filter the lookup's data source, and subsequent calls are to filter the DataGrid's data source.
 
+DataGrid uses *"anyof"* and *"noneof"* filter values for [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/). If you specify **calculateFilterExpression** for headerFilter, return an array of filterExpressions:
+
+---
+##### jQuery
+
+    <!--JavaScript-->$(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [{
+                calculateFilterExpression(filterValue, selectedFilterOperation, target){
+                    if (target == "headerFilter") {
+                        // ...
+                        let filterExpression = ["myDataField", "contains", customValue];
+                        return [filterExpression];
+                    }
+                }
+                // ...
+            }]
+        });
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    import { Column } from 'devextreme/ui/data_grid';
+    // ...
+    export class AppComponent {
+        calculateFilterExpression(this: Column, filterValue, selectedFilterOperation, target){
+            if (target == "headerFilter") {
+                // ...
+                let filterExpression = ["myDataField", "contains", customValue];
+                return [filterExpression];
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column ...
+            [calculateFilterExpression]="calculateFilterExpression">
+        </dxi-column>
+    </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}>
+            <DxColumn ...
+                :calculate-filter-expression="calculateFilterExpression"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        data() {
+            return {
+                calculateFilterExpression(filterValue, selectedFilterOperation, target){
+                    if (target == "headerFilter") {
+                        // ...
+                        let filterExpression = ["myDataField", "contains", customValue];
+                        return [filterExpression];
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    function calculateFilterExpression(filterValue, selectedFilterOperation, target){
+        if (target == "headerFilter") {
+            // ...
+            let filterExpression = ["myDataField", "contains", customValue];
+            return [filterExpression];
+        }
+    }
+    
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column ...
+                    calculateFilterExpression={calculateFilterExpression}
+                />
+            </{WidgetName}>
+        );
+    }
+    
+---
+
 #####See Also#####
 - [filterValue](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterValue.md '{basewidgetpath}/Configuration/#filterValue')
 - **columns[]**.[filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '{basewidgetpath}/Configuration/columns/#filterValue')

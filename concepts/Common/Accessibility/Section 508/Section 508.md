@@ -1,3 +1,1 @@
-The following tables are based on the <a href="https://www.itic.org/policy/accessibility/vpat" target="_blank">Voluntary Product Accessibility Template (VPAT)</a> and provide detailed information about the accessibility features DevExtreme supports according to the <a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a> standards.
-
-[![pdf](/images/DevExtreme/pdfversion.gif) Download PDF](/Content/docs/VPATDevExpressDevExtreme20_1.pdf)
+Compliance with the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a> and <a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a> standards ensure DevExtreme components prioritize accessibility.

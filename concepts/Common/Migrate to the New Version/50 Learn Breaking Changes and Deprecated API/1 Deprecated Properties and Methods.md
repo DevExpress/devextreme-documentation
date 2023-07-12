@@ -64,6 +64,10 @@
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Data_Layer/Utils/#errorHandler">errorHandler</a></td>
 </tr>
 <tr>
+<td>data</td>
+<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Common_Types/data/#ResolvedData">ResolvedData</a></td>
+</tr>
+<tr>
 <td>Object Structures</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Common/Object_Structures/GlobalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Common/Object_Structures/GlobalConfig/#thousandsSeparator">thousandsSeparator</a></td>
 </tr>

@@ -3,7 +3,7 @@ id: ResolvedData
 module: data/custom_store
 export: ResolvedData
 type: Object
-deprecated: 
+deprecated: Use [LoadResult](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/LoadResult/) instead.
 ---
 ---
 ##### shortDescription

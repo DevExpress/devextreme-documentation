@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies returned data of the `load()` method in CustomStore.
 
 ---
-<!-- Description goes here -->
+Can be an array of items, [GroupItems](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/GroupItem/), or a [LoadResultObject](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/LoadResultObject/).

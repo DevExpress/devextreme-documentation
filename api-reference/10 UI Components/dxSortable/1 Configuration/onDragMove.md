@@ -25,7 +25,7 @@ Indicates if the dragged item is dropped inside another item.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.fromComponent): dxSortable | dxDraggable
+##### field(e.fromComponent): {WidgetName}
 The instance of the item's source UI component. Works only for element drag and drop between components.
 
 ##### field(e.fromData): any
@@ -43,7 +43,7 @@ The item's data before the drag operation. Note that you should specify the item
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.toComponent): dxSortable | dxDraggable
+##### field(e.toComponent): {WidgetName}
 The instance of the item's target UI component. Works only for element drag and drop between components.
 
 ##### field(e.toData): any

@@ -6,7 +6,7 @@ An overlay component (Popup, Popover, Tooltip) is displayed behind Fluent UI Pan
 
 #### Solution
 
-In Fluent UI components, the z-index is set to `1000000`. Call the [baseZIndex(zIndex)](/Documentation/ApiReference/Common/Utils/ui/dxOverlay/#baseZIndexzIndex) method to increase overlay component z-indexes in the application:
+In Fluent UI components, the z-index is set to `1000000`. Call the [baseZIndex(zIndex)](/api-reference/50%20Common/utils/ui/dxOverlay/baseZIndex(zIndex).md '/Documentation/ApiReference/Common/Utils/ui/dxOverlay/#baseZIndexzIndex') method to increase overlay component z-indexes in the application:
 
     <!-- tab: App.js -->
     import { baseZIndex } from 'devextreme/ui/overlay';

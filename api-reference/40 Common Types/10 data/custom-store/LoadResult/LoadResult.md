@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies returned data of the `load()` method in CustomStore.
 
 ---
-<!-- Description goes here -->
+Can be an array of items, [GroupItems](/Documentation/ApiReference/Common_Types/data/custom-store/GroupItem/), or a [LoadResultObject](/Documentation/ApiReference/Common_Types/data/custom-store/LoadResultObject/).

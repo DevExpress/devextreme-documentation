@@ -7,7 +7,16 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An additional type for [LoadResult](/Documentation/ApiReference/Common_Types/data/custom-store/LoadResult/).
 
 ---
-<!-- Description goes here -->
+Includes the following fields:
+
+- `data`    
+Contains an array of items or [GroupItems](/Documentation/ApiReference/Common_Types/data/custom-store/GroupItem/).
+
+- `totalCount`
+
+- `summary`
+
+- `groupCount`

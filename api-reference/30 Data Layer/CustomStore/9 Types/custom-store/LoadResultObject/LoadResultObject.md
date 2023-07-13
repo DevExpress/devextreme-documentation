@@ -6,7 +6,16 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An additional type for [LoadResult](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/LoadResult/).
 
 ---
-<!-- Description goes here -->
+Includes the following fields:
+
+- `data`    
+Contains an array of items or [GroupItems](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/GroupItem/).
+
+- `totalCount`
+
+- `summary`
+
+- `groupCount`

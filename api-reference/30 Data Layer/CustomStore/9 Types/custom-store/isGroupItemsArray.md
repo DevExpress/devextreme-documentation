@@ -5,7 +5,7 @@ export: isGroupItemsArray
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A <a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">type guard</a> function that checks whether [LoadResult](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/LoadResult/) is an array of [GroupItems](/Documentation/ApiReference/Data_Layer/CustomStore/Types/custom-store/GroupItem/).
 
 ---
 <!-- Description goes here -->

@@ -7,6 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-An additional type for [LoadResult](/Documentation/ApiReference/Common_Types/data/custom-store/#LoadResult).
+An additional type for [LoadResult](/Documentation/ApiReference/Common_Types/data/custom-store/LoadResult/).
 
 ---

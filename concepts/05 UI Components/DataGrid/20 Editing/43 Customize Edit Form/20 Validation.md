@@ -2,7 +2,7 @@ DataGrid validation is based on validation rules in all edit modes. Refer to the
 
 [note] DataGrid validates only modified values.
 
-Define rules for columns, and DataGrid automatically applies them to editors in an [edit form](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form). If you define form items in the edit form, do not assign validation rules directly to form items since validation may work incorrectly. Do not specify **FormItem**.[isRequired](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired) as DataGrid automatically specifies this property for all form items whose corresponding columns include [RequiredRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/).
+DataGrid automatically applies rules defined for columns to editors in an [edit form](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form). If you define form items in the edit form, do not assign validation rules directly to form items since validation may work incorrectly. Do not specify **FormItem**.[isRequired](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired) as DataGrid automatically specifies this property for all form items whose corresponding columns include [RequiredRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/).
 
 ---
 ##### jQuery

@@ -1,8 +1,8 @@
-DataGrid validation is based on validation rules in all edit modes. Refer to the following topic for more details about DataGrid validation: [Data Validation](/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation).
+DataGrid validation is based on validation rules in all edit modes. Refer to the following topic for more details about DataGrid validation: [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation').
 
 [note] DataGrid validates only modified values.
 
-DataGrid automatically applies rules defined for columns to editors in an [edit form](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form). If you define form items in the edit form, do not assign validation rules directly to form items since validation may work incorrectly. Do not specify **FormItem**.[isRequired](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired) as DataGrid automatically specifies this property for all form items whose corresponding columns include [RequiredRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/).
+DataGrid automatically applies rules defined for columns to editors in an [edit form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form'). If you define form items in the edit form, do not assign validation rules directly to form items since validation may work incorrectly. Do not specify **FormItem**.[isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') as DataGrid automatically specifies this property for all form items whose corresponding columns include [RequiredRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/').
 
 ---
 ##### jQuery
@@ -81,9 +81,9 @@ DataGrid automatically applies rules defined for columns to editors in an [edit 
 
 ---
 
-To display the validation summary, enable the **form**.[showValidationSummary](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showValidationSummary) property.
+To display the validation summary, enable the **form**.[showValidationSummary](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/showValidationSummary.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showValidationSummary') property.
 
-If your form layout contains tabs, disable **TabbedItem.tabPanelOptions**.[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering) so DataGrid can validate all editors in all tabs. Otherwise, validation rules are not executed for items under non-initialized tabs.
+If your form layout contains tabs, disable **TabbedItem.tabPanelOptions**.[deferRendering](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/deferRendering.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering') so DataGrid can validate all editors in all tabs. Otherwise, validation rules are not executed for items under non-initialized tabs.
 
 ---
 ##### jQuery

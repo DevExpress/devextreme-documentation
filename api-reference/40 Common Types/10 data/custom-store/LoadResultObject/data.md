@@ -4,7 +4,7 @@ type: Array<any> | Array<GroupItem>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains an array of items or [GroupItems](/api-reference/40%20Common%20Types/10%20data/custom-store/GroupItem '/Documentation/ApiReference/Common_Types/data/custom-store/GroupItem/').
 
 ---
 <!-- Description goes here -->

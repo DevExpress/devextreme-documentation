@@ -4,7 +4,7 @@ type: any | String | Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A key to group items by.
 
 ---
 <!-- Description goes here -->

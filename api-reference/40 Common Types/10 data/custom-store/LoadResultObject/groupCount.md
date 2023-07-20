@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A number of groups.
 
 ---
 <!-- Description goes here -->

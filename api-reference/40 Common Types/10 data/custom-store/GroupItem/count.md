@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A total number of items.
 
 ---
 <!-- Description goes here -->

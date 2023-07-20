@@ -10,7 +10,7 @@ DevExtreme sources are available on cdnjs:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-quill/cdnjs_version/dx-quill.min.js"></script>
 
     <!-- DevExtreme library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/js/dx.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/js/dx.all.js"></script>
 
     <!-- DevExpress.AspNet.Data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-aspnet-data/cdnjs_version/dx.aspnet.data.min.js"></script>
@@ -28,42 +28,42 @@ DevExtreme sources are available on cdnjs:
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.min.css" rel="stylesheet">
 
     <!-- Theme stylesheets (reference only one of them) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.carmine.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.carmine.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.contrast.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.contrast.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.dark.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.dark.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.darkmoon.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.darkmoon.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.darkviolet.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.darkviolet.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.greenmist.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.greenmist.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.light.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.light.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.blue.dark.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.blue.dark.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.blue.light.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.blue.light.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.lime.dark.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.lime.dark.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.lime.light.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.lime.light.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.orange.dark.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.orange.dark.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.orange.light.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.orange.light.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.purple.dark.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.purple.dark.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.purple.light.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.purple.light.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.teal.dark.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.teal.dark.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.teal.light.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.material.teal.light.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.softblue.compact.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/css/dx.softblue.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.carmine.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.carmine.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.contrast.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.contrast.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.darkmoon.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.darkmoon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.darkviolet.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.darkviolet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.greenmist.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.greenmist.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.blue.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.blue.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.blue.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.blue.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.lime.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.lime.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.lime.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.lime.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.orange.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.orange.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.orange.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.orange.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.purple.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.purple.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.purple.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.purple.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.teal.dark.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.teal.dark.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.teal.light.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.material.teal.light.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.softblue.compact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devextreme/cdnjs_version/css/dx.softblue.css" rel="stylesheet">
 
     <!-- Diagram and Gantt development stylesheets -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/cdnjs_version/dx-diagram.css" rel="stylesheet"> -->

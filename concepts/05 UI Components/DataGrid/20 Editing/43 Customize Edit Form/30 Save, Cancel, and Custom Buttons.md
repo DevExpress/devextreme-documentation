@@ -5,7 +5,7 @@ Specify **editing.texts**.[cancelRowChanges](/Documentation/ApiReference/UI_Comp
 To customize Save and Cancel buttons, you need to redefine them:
 
 - Popup edit mode     
-Add the **editing**.[popup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#popup) object to the DataGrid configuration and declare the Save, Cancel and custom buttons in the **popup**.[toolbarItems](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/) array.
+Add the **editing**.[popup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#popup) object to the DataGrid configuration and declare Save, Cancel, and custom buttons in the **popup**.[toolbarItems](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/) array.
 
 - Form edit mode     
 Add the **editing**.[form](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#form) object to the DataGrid configuration and use the **form.items** array to arrange all items you want to display in the edit form. Then, add a [simple item](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/) with a template containing a standalone [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) component. Declare buttons in this toolbar. Use the following CSS to hide built-in Save and Cancel buttons:

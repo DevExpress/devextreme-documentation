@@ -22,6 +22,8 @@ The picker type depends on the current platform or web browser.
 - *"rollers"*  
 The DateBox displays rollers for users to select date and time. Users cannot edit the selected value in the input field.
 
+    [note] This picker type is designed for mobile devices. For desktop applications, use one of the others.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/"
 }

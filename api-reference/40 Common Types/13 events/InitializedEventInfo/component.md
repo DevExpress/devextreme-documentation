@@ -1,7 +1,6 @@
 ---
 id: InitializedEventInfo.component
 type: {WidgetName}
-default: Widget
 ---
 ---
 ##### shortDescription

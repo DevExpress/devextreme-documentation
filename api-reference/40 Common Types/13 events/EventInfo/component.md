@@ -1,7 +1,6 @@
 ---
 id: EventInfo.component
 type: {WidgetName}
-default: Widget
 ---
 ---
 ##### shortDescription

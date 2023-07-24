@@ -1,6 +1,5 @@
 ---
 type: {WidgetName}
-default: Widget
 uid: ui/draggable:DragEndEvent.fromComponent
 ---
 ---

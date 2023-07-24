@@ -1,5 +1,5 @@
 ---
-type: {WidgetName}
+type: dxSortable
 uid: ui/sortable:AddEvent.component
 ---
 ---

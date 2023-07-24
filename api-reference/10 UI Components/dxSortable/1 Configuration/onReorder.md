@@ -22,7 +22,7 @@ Indicates if the dragged item is dropped inside another item.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.fromComponent): {WidgetName}
+##### field(e.fromComponent): dxSortable | dxDraggable
 The instance of the item's source UI component.
 
 ##### field(e.fromData): any
@@ -43,7 +43,7 @@ Model data. Available only if you use Knockout.
 ##### field(e.promise): Promise<void>
 Assign a Promise to this field to perform an asynchronous operation.
 
-##### field(e.toComponent): {WidgetName}
+##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the item's target UI component.
 
 ##### field(e.toData): any

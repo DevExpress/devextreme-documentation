@@ -1,5 +1,5 @@
 ---
-type: {WidgetName}
+type: dxSortable | dxDraggable
 uid: ui/draggable:DragMoveEvent.toComponent
 ---
 ---

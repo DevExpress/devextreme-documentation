@@ -22,7 +22,7 @@ default: null
 ##### field(e.component): {WidgetName}
 <!-- %field(e.component)% -->
 
-##### field(e.data): any
+##### field(e.data): Object
 The data of the row to which the cell belongs. Available if the **rowType** is *"data"*, *"detail"*, or *"detailAdaptive"*.
 
 ##### field(e.displayValue): any

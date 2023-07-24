@@ -1,6 +1,6 @@
 ---
 id: RowUpdatedInfo.data
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

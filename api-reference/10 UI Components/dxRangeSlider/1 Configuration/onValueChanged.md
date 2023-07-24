@@ -31,7 +31,7 @@ The start and end values.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.previousValue): any
+##### field(e.previousValue): Object
 The UI component's previous value.
 
 ---

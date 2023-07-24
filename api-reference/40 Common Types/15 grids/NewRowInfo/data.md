@@ -1,6 +1,6 @@
 ---
 id: NewRowInfo.data
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

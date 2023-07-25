@@ -1,0 +1,3 @@
+The extend operation is available for <a href="https://quilljs.com/guides/how-to-customize-quill/#customizing-blots" target="_blank">blots</a> only. For <a href="https://quilljs.com/guides/how-to-customize-quill/#customizing-attributors" target="_blank">attributors</a>, use the modify operation.
+
+The [format](/Documentation/Guide/UI_Components/HtmlEditor/Formats/) tables include customization operations.

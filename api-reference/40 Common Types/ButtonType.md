@@ -1,6 +1,6 @@
 ---
 id: Enums.ButtonType
-acceptValues: 'back' | 'danger' | 'default' | 'normal' | 'success'
+acceptValues: 'danger' | 'default' | 'normal' | 'success'
 type: Union
 ---
 ---

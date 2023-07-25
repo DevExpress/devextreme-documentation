@@ -37,7 +37,14 @@ jobs:
 #Generation
         - name: Discover declarations
           working-directory: devextreme
-          run: npm run discover-declarations -- --artifacts ../artifacts/internal-tools
+#TODO: Workaround. This should be removed following the changes in devextreme monorepo            
+          run: |
+            if [[ ${{ github.ref_name }} == "23_2" ]]; then
+              cd ./packages/devextreme
+              npm run discover-declarations -- --artifacts ../../../artifacts/internal-tools
+            else    
+              npm run discover-declarations -- --artifacts ../artifacts/internal-tools            
+            fi
 
         - name: Update topics
           working-directory: documentation

@@ -7141,6 +7141,9 @@
     "dxCalendarOptions.onValueChanged": {
       "vue": "@value-changed"
     },
+    "dxCalendarOptions.selectionMode": {
+      "vue": "selection-mode"
+    },
     "dxCalendarOptions.showTodayButton": {
       "vue": "show-today-button"
     },
@@ -18974,6 +18977,9 @@
     },
     "enums.ButtonType": {
       "vue": "button-type"
+    },
+    "enums.CalendarSelectionMode": {
+      "vue": "calendar-selection-mode"
     },
     "enums.CalendarZoomLevel": {
       "vue": "calendar-zoom-level"

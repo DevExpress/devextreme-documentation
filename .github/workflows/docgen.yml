@@ -38,7 +38,7 @@ jobs:
         - name: Discover declarations
           working-directory: devextreme
           run: |
-            if [ ${{ github.ref_name }} = "23_2" ]; then
+            if [[ ${{ github.ref_name }} == *"23_2"* ]]; then
               cd ./packages/devextreme
               npm run discover-declarations -- --artifacts ../../../artifacts/internal-tools
             else    

@@ -20,7 +20,7 @@ The UI component's instance.
 ##### field(e.fromIndex): Number
 The item's previous index. In a grouped list, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
 
-##### field(e.itemData): any
+##### field(e.itemData): Object
 The reordered item's data.
 
 ##### field(e.itemElement): DxElement

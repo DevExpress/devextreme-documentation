@@ -34,7 +34,7 @@ Indicates whether the container's right boundary is reached.
 ##### field(e.reachedTop): Boolean
 Indicates whether the container's top boundary is reached.
 
-##### field(e.scrollOffset): any
+##### field(e.scrollOffset): Object
 The current scroll offset in the following format { top: topOffset, left: leftOffset }.
 
 ---

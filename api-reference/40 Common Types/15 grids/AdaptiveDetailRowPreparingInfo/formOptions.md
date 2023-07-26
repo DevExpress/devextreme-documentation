@@ -1,6 +1,6 @@
 ---
 id: AdaptiveDetailRowPreparingInfo.formOptions
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

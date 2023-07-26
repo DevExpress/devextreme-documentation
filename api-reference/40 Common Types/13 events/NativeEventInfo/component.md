@@ -1,7 +1,6 @@
 ---
 id: NativeEventInfo.component
 type: {WidgetName}
-default: Widget
 ---
 ---
 ##### shortDescription

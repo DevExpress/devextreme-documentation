@@ -1469,7 +1469,9 @@
       "vue": "DxPreviousItem"
     },
     "_ui_drop_down_editor_ui_drop_down_list_SelectionChangedInfo.selectedItem": {
-      "vue": "selected-item"
+      "angular": "dxo-selected-item",
+      "react": "SelectedItem",
+      "vue": "DxSelectedItem"
     },
     "_ui_file_manager_ContentReadyEvent": {
       "angular": "dxo-ui-file-manager--content-ready-event",
@@ -4636,10 +4638,20 @@
       "react": "_viz_bar_gauge_TooltipHiddenEvent",
       "vue": "Dx_viz_bar_gauge_TooltipHiddenEvent"
     },
+    "_viz_bar_gauge_TooltipInfo.target": {
+      "angular": "dxo-target",
+      "react": "Target",
+      "vue": "DxTarget"
+    },
     "_viz_bar_gauge_TooltipShownEvent": {
       "angular": "dxo-viz-bar-gauge--tooltip-shown-event",
       "react": "_viz_bar_gauge_TooltipShownEvent",
       "vue": "Dx_viz_bar_gauge_TooltipShownEvent"
+    },
+    "_viz_base_gauge_TooltipInfo.target": {
+      "angular": "dxo-target",
+      "react": "Target",
+      "vue": "DxTarget"
     },
     "_viz_bullet_DisposingEvent": {
       "angular": "dxo-viz-bullet--disposing-event",
@@ -20455,7 +20467,9 @@
       "vue": "item-index"
     },
     "listItemInfo.itemData": {
-      "vue": "item-data"
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
     },
     "listItemInfo.itemElement": {
       "vue": "item-element"
@@ -20782,7 +20796,9 @@
       "vue": "reached-top"
     },
     "scrollInfo.scrollOffset": {
-      "vue": "scroll-offset"
+      "angular": "dxo-scroll-offset",
+      "react": "ScrollOffset",
+      "vue": "DxScrollOffset"
     },
     "searchBoxMixinOptions.searchEditorOptions": {
       "vue": "search-editor-options"
@@ -20817,7 +20833,9 @@
       "vue": "ignore-empty-value"
     },
     "tabPanelItemInfo.itemData": {
-      "vue": "item-data"
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
     },
     "tabPanelItemInfo.itemElement": {
       "vue": "item-element"
@@ -20867,7 +20885,14 @@
       "vue": "DxValidationRule"
     },
     "valueChangedInfo.previousValue": {
-      "vue": "previous-value"
+      "angular": "dxo-previous-value",
+      "react": "PreviousValue",
+      "vue": "DxPreviousValue"
+    },
+    "valueChangedInfo.value": {
+      "angular": "dxo-value",
+      "react": "Value",
+      "vue": "DxValue"
     },
     "vectorMapLegendItem": {
       "angular": "dxo-vector-map-legend-item",

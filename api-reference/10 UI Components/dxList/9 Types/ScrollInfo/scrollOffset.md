@@ -1,6 +1,6 @@
 ---
 id: ScrollInfo.scrollOffset
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

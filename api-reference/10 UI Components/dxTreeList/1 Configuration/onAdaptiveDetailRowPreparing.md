@@ -18,7 +18,7 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.formOptions): any
+##### field(e.formOptions): Object
 The properties of the [Form](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/') UI component.
 
 ---

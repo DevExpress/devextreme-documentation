@@ -17,7 +17,7 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.itemData): any
+##### field(e.itemData): Object
 The removed item's data.
 
 ##### field(e.itemElement): DxElement

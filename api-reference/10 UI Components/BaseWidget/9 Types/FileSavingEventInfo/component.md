@@ -1,7 +1,6 @@
 ---
 id: FileSavingEventInfo.component
 type: {WidgetName}
-default: Widget
 ---
 ---
 ##### shortDescription

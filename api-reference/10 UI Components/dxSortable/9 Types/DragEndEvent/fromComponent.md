@@ -1,6 +1,5 @@
 ---
-type: {WidgetName}
-default: Widget
+type: dxSortable | dxDraggable
 uid: ui/sortable:DragEndEvent.fromComponent
 ---
 ---

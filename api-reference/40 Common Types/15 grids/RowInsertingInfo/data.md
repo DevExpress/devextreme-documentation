@@ -1,6 +1,6 @@
 ---
 id: RowInsertingInfo.data
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: ListItemInfo.itemData
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

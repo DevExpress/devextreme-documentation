@@ -18,7 +18,7 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if you use Knockout.
 
-##### field(e.data): any
+##### field(e.data): Object
 The data of the row.
 
 ##### field(e.error): Error

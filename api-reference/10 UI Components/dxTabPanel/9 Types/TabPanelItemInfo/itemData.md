@@ -1,6 +1,6 @@
 ---
 id: TabPanelItemInfo.itemData
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

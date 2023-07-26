@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.itemData): any
+##### field(e.itemData): Object
 The data object of the item being held.
 
 ##### field(e.itemElement): DxElement

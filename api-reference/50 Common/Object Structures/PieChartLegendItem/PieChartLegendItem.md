@@ -1,7 +1,5 @@
 ---
 id: PieChartLegendItem
-type: Object
-inherits: BaseLegendItem
 ---
 ---
 ##### shortDescription

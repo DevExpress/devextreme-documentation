@@ -12895,9 +12895,7 @@
       "vue": "ignore-empty-value"
     },
     "pieChartLegendItem": {
-      "angular": "dxo-pie-chart-legend-item",
-      "react": "PieChartLegendItem",
-      "vue": "DxPieChartLegendItem"
+      "vue": "pie-chart-legend-item"
     },
     "pieChartLegendItem.argumentIndex": {
       "vue": "argument-index"

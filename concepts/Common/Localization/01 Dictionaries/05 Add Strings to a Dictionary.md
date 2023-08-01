@@ -129,9 +129,11 @@ In the following example, the [loadMessages(messages)](/api-reference/50%20Commo
 
 You can also take a look at this approach in one of our demos:
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/",
+    name: "Using Intl"
 }
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingGlobalize/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingGlobalize/",
+    name: "Using Globalize"
 }

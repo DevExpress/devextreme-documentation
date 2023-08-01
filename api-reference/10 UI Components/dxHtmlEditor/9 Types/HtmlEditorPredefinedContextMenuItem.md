@@ -8,8 +8,3 @@ type: Union
 Configures context menu items.
 
 ---
-<!--
-dxHtmlEditorTableContextMenu.items(/api-reference/_hidden/dxHtmlEditorTableContextMenu/items.md)
-dxHtmlEditorTableContextMenuItem.items(/api-reference/_hidden/dxHtmlEditorTableContextMenuItem/items.md)
-dxHtmlEditorTableContextMenuItem.name(/api-reference/_hidden/dxHtmlEditorTableContextMenuItem/name.md)(ui/html_editor.d.ts)
--->

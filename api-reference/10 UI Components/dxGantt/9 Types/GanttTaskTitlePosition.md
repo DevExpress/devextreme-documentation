@@ -8,6 +8,3 @@ type: Union
 Specifies a task's title position.
 
 ---
-<!--
-dxGanttOptions.taskTitlePosition(/api-reference/10 UI Components/dxGantt/1 Configuration/taskTitlePosition.md)(ui/gantt.d.ts)
--->

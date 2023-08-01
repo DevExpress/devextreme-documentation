@@ -8,7 +8,3 @@ type: Union
 Specifies buttons in the toolbar.
 
 ---
-<!--
-dxTreeListToolbar.items(/api-reference/_hidden/dxTreeListToolbar/items.md)
-dxTreeListToolbarItem.name(/api-reference/_hidden/dxTreeListToolbarItem/name.md)
--->

@@ -8,7 +8,3 @@ type: Union
 Specifies the edit operation.
 
 ---
-<!--
-_ui_diagram_RequestEditOperationEvent.operation(/api-reference/10 UI Components/dxDiagram/9 Types/RequestEditOperationEvent/operation.md)
-dxDiagramOptions.onRequestEditOperation(/api-reference/10 UI Components/dxDiagram/1 Configuration/onRequestEditOperation.md)
--->

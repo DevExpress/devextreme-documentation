@@ -8,6 +8,3 @@ type: Union
 Specifies how to aggregate series points.
 
 ---
-<!--
-dxChartSeriesTypes.BubbleSeries.aggregation.method(/api-reference/10 UI Components/dxChart/5 Series Types/BubbleSeries/aggregation/method.md)(viz/chart.d.ts)
--->

@@ -127,7 +127,7 @@ In the following example, the [loadMessages(messages)](/api-reference/50%20Commo
 
 ---
 
-You can also take a look at this approach in one of our demos:
+You can also see this approach in one of our demos:
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/",

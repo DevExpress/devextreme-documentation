@@ -126,3 +126,12 @@ In the following example, the [loadMessages(messages)](/api-reference/50%20Commo
     export default App;
 
 ---
+
+You can also take a look at this approach in one of our demos:
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"
+}
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingGlobalize/"
+}

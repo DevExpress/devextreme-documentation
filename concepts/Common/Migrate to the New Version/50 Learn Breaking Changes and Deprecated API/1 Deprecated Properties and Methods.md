@@ -60,6 +60,10 @@
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/UI_Components/dxVectorMap/Methods/convertCoordinates(x_y)">convertCoordinates(x, y)</a></td>
 </tr>
 <tr>
+<td>CustomStore</td>
+<td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Data_Layer/CustomStore/Types/#ResolvedData">ResolvedData</a></td>
+</tr>
+<tr>
 <td>Utils</td>
 <td><a href="https://js.devexpress.com/Documentation/22_2/ApiReference/Data_Layer/Utils/#errorHandler">errorHandler</a></td>
 </tr>

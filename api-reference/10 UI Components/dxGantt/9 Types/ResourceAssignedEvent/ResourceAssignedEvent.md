@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [resourceAssigned]({basewidgetpath}/Events/#resourceAssigned) event handler's argument.
 
 ---
 <!-- Description goes here -->

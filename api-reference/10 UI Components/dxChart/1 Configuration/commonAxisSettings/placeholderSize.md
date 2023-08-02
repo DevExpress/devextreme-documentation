@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.placeholderSize
+type: Number
+default: null
 ---
 ---
 ##### shortDescription

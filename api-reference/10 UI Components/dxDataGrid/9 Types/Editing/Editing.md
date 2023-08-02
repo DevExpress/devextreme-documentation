@@ -1,6 +1,9 @@
 ---
 uid: ui/data_grid:Editing
 isType: 
+module: ui/data_grid
+export: Editing
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

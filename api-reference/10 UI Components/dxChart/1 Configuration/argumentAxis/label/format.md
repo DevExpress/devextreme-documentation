@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.label.format
+type: Format
+default: undefined
 ---
 ---
 ##### shortDescription

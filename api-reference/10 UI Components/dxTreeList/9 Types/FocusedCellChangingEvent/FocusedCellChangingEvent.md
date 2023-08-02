@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [focusedCellChanging]({basewidgetpath}/Events/#focusedCellChanging) event handler's argument.
 
 ---
 <!-- Description goes here -->

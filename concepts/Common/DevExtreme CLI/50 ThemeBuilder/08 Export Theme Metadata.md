@@ -35,7 +35,7 @@ A [predefined DevExtreme theme](/concepts/60%20Themes%20and%20Styles/05%20Predef
 The custom theme's color scheme.
 
 - `makeSwatch`      
-A flag that indicates whether the theme is a [color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/70%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches').
+A flag that indicates whether the theme is a [color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches').
 
 - `version`     
 The target DevExtreme version.

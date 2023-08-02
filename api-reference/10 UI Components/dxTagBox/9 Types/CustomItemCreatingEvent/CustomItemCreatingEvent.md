@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [customItemCreating]({basewidgetpath}/Events/#customItemCreating) event handler's argument.
 
 ---
 <!-- Description goes here -->

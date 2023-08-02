@@ -27,7 +27,7 @@ The UI component instance's name.
 Model data. Available only if you use Knockout.
 
 ---
-The [autoLayout](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout/autoLayout.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/') option specifies an auto-layout algorithm that the UI component uses to build a diagram on data binding.
+The [autoLayout](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/') option specifies an auto-layout algorithm that the UI component uses to build a diagram on data binding.
 
 Write the **onRequestLayoutUpdate** function to specify whether the component should reapply its auto layout when a user changes diagram data in the UI or you modify the data source directly via [push services](/concepts/70%20Data%20Binding/5%20Data%20Layer/3%20Data%20Modification/30%20Integration%20with%20Push%20Services.md '/Documentation/Guide/Data_Binding/Data_Layer/#Data_Modification/Integration_with_Push_Services').
 

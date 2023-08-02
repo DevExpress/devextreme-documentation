@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.fullstackedarea
+type: any
 ---
 ---
 ##### shortDescription

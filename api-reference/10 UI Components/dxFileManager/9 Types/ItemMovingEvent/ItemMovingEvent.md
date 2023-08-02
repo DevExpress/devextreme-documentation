@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [itemMoving]({basewidgetpath}/Events/#itemMoving) event handler's argument.
 
 ---
 <!-- Description goes here -->

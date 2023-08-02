@@ -1,6 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.label.customizeText
 notUsedInTheme: 
+type: function(axisValue)
 ---
 ---
 ##### shortDescription

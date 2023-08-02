@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [toolbarPreparing]({basewidgetpath}/Events/#toolbarPreparing) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.position
+type: Enums.Position
+default: 'left'
 ---
 ---
 ##### shortDescription

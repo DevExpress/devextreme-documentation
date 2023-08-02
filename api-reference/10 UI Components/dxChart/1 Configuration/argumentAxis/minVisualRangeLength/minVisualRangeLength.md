@@ -2,6 +2,8 @@
 id: dxChart.Options.argumentAxis.minVisualRangeLength
 inherits: VizTimeInterval
 notUsedInTheme: 
+type: Number | Object | Enums.TimeInterval
+default: undefined
 ---
 ---
 ##### shortDescription

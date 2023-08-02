@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [rowRemoved]({basewidgetpath}/Events/#rowRemoved) event handler's argument.
 
 ---
 <!-- Description goes here -->

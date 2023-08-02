@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [pullDown]({basewidgetpath}/Events/#pullDown) event handler's argument.
 
 ---
 <!-- Description goes here -->

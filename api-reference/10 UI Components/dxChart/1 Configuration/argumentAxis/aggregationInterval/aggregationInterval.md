@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.aggregationInterval
 inherits: VizTimeInterval
+type: Number | Object | Enums.TimeInterval
 ---
 ---
 ##### shortDescription

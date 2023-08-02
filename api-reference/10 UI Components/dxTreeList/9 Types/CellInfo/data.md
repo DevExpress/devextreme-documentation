@@ -1,6 +1,6 @@
 ---
 id: CellInfo.data
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

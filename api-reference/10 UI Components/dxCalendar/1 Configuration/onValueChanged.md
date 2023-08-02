@@ -21,10 +21,10 @@ The UI component's instance.
 ##### field(e.model): any
 Model data. Available only if Knockout is used.
 
-##### field(e.previousValue): any
+##### field(e.previousValue): Object
 The UI component's previous value.
 
-##### field(e.value): any
+##### field(e.value): Object
 The UI component's new value.
 
 ---

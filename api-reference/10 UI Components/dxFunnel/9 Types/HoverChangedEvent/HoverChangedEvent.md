@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [hoverChanged]({basewidgetpath}/Events/#hoverChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

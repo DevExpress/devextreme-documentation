@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.title.text
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

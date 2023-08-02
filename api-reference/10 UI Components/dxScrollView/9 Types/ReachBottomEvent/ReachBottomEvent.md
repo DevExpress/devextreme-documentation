@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [reachBottom]({basewidgetpath}/Events/#reachBottom) event handler's argument.
 
 ---
 <!-- Description goes here -->

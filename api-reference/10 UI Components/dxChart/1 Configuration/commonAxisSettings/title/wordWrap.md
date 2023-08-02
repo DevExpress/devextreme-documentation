@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.title.wordWrap
+type: Enums.WordWrap
+default: 'normal'
 ---
 ---
 ##### shortDescription

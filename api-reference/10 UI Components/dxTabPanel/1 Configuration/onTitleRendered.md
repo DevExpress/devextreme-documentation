@@ -16,7 +16,7 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.itemData): any
+##### field(e.itemData): Object
 The data of the item whose title is rendered.
 
 ##### field(e.itemElement): DxElement

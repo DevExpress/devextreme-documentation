@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.maxValueMargin
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

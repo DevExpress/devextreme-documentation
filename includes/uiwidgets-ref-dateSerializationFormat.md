@@ -12,6 +12,6 @@ Use one of the following values to specify the **dateSerializationFormat** prope
 
 - `"yyyy-MM-ddTHH:mm:ssZ"` - UTC date and time  
 
-- `"yyyy-MM-ddTHH:mm:ssx"` - date and time with a timezone
+- `"yyyy-MM-ddTHH:mm:ssx"`, `"yyyy-MM-ddTHH:mm:ssxx"`, `"yyyy-MM-ddTHH:mm:ssxxx"` - date and time with a timezone
 
 This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').

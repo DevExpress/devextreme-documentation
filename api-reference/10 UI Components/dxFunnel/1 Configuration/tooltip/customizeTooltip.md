@@ -1,5 +1,7 @@
 ---
 id: dxFunnel.Options.tooltip.customizeTooltip
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

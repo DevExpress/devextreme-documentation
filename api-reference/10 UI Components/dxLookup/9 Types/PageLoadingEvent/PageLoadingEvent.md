@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [pageLoading]({basewidgetpath}/Events/#pageLoading) event handler's argument.
 
 ---
 <!-- Description goes here -->

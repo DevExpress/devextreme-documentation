@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.fullstackedline
+type: any
 ---
 ---
 ##### shortDescription

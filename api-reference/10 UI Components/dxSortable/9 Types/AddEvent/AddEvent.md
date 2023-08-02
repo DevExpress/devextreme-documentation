@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [add]({basewidgetpath}/Events/#add) event handler's argument.
 
 ---
 <!-- Description goes here -->

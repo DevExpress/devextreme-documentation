@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [resourceDeleting]({basewidgetpath}/Events/#resourceDeleting) event handler's argument.
 
 ---
 <!-- Description goes here -->

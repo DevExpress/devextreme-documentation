@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [appointmentDblClick]({basewidgetpath}/Events/#appointmentDblClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

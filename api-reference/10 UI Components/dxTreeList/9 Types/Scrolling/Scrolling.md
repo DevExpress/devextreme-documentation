@@ -1,6 +1,9 @@
 ---
 uid: ui/tree_list:Scrolling
 isType: 
+module: ui/tree_list
+export: Scrolling
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

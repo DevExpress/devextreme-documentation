@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.width
+type: Number
+default: 1
 ---
 ---
 ##### shortDescription

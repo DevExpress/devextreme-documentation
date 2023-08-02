@@ -1,12 +1,6 @@
-Dictionaries contain localized strings for different languages. The strings are represented by key/value pairs and are shipped as JavaScript or JSON files (depending on the package you use).
+Dictionaries contain localized strings for different languages. The strings are key/value pairs and are shipped as JavaScript or JSON files (depending on the package you use).
 
-DevExpress curates the following dictionaries:
-
-- English (en) (default)
-- German (de)
-- Japanese (ja)
-
-There are also dictionaries that the community contributes and curates. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/23_1/js/localization/messages" target="_blank">on GitHub</a>.
+All dictionaries are contributed and curated by the community. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/23_1/js/localization/messages" target="_blank">on GitHub</a>.
 
 ---
 ##### jQuery
@@ -19,9 +13,9 @@ Use the `<script>` tag to link the required dictionaries, and place the links *a
     <head>
         <!-- ... -->
         <!-- DevExtreme library -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_22_2/js/dx.all.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.all.js"></script>
         <!-- Dictionary files for German language -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_22_2/js/localization/dx.messages.de.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_23_1/js/localization/dx.messages.de.js"></script>
     </head>
     <body>
         <script>

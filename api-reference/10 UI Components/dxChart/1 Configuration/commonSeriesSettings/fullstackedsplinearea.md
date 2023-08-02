@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.fullstackedsplinearea
+type: any
 ---
 ---
 ##### shortDescription

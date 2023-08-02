@@ -1,5 +1,7 @@
 ---
 id: dxSankey.Options.tooltip.nodeTooltipTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

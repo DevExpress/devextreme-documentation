@@ -1,5 +1,6 @@
 ---
 id: dxPolarChart.Options.commonSeriesSettings.bar
+type: any
 ---
 ---
 ##### shortDescription

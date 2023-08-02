@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [fileSaving]({basewidgetpath}/Events/#fileSaving) event handler's argument.
 
 ---
 <!-- Description goes here -->

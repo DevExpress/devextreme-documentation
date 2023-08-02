@@ -1,6 +1,9 @@
 ---
 uid: ui/data_grid:Scrolling
 isType: 
+module: ui/data_grid
+export: Scrolling
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -229,8 +229,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-sorting-grouped-column"
  }
 
- This property only accepts strings if [remote operations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') are enabled.
-
 [/note]
 
 #####See Also#####

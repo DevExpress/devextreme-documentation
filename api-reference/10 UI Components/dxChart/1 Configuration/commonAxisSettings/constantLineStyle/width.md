@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.constantLineStyle.width
+type: Number
+default: 1
 ---
 ---
 ##### shortDescription

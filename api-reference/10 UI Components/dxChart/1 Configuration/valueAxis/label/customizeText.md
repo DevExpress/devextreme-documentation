@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.label.customizeText
 notUsedInTheme: 
+type: function(axisValue)
 ---
 ---
 ##### shortDescription

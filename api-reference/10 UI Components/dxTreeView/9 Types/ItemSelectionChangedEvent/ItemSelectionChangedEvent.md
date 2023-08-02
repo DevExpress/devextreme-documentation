@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [itemSelectionChanged]({basewidgetpath}/Events/#itemSelectionChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

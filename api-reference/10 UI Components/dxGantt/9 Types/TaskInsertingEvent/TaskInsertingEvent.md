@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [taskInserting]({basewidgetpath}/Events/#taskInserting) event handler's argument.
 
 ---
 <!-- Description goes here -->

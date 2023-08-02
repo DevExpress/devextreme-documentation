@@ -1,7 +1,7 @@
 ---
 id: dxPolarChart.Options.argumentAxis.constantLines.label
-type: viz/polar_chart:dxPolarChartArgumentAxisConstantLinesLabel
-inheritsType: viz/polar_chart:dxPolarChartArgumentAxisConstantLinesLabel
+type: viz/polar_chart:ArgumentAxisConstantLinesLabel
+inheritsType: viz/polar_chart:ArgumentAxisConstantLinesLabel
 ---
 ---
 ##### shortDescription

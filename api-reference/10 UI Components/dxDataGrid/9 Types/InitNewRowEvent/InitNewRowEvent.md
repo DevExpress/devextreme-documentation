@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [initNewRow]({basewidgetpath}/Events/#initNewRow) event handler's argument.
 
 ---
 <!-- Description goes here -->

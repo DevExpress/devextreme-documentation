@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.type
+type: Enums.AxisScaleType
+default: undefined
 ---
 ---
 ##### shortDescription

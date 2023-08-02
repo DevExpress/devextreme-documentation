@@ -1,6 +1,6 @@
 ---
 id: RowRemovingInfo.data
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

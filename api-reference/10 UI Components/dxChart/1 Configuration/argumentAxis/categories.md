@@ -1,6 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.categories
 firedEvents: optionChanged
+type: Array<Number, String, Date>
 ---
 ---
 ##### shortDescription

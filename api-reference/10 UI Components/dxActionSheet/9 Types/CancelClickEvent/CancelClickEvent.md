@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [cancelClick]({basewidgetpath}/Events/#cancelClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

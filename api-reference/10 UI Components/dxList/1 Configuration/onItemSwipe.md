@@ -22,7 +22,7 @@ The direction in which the item is swiped.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.itemData): any
+##### field(e.itemData): Object
 The swiped item's data.
 
 ##### field(e.itemElement): DxElement

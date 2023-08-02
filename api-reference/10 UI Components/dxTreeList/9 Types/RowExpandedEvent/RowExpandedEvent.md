@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [rowExpanded]({basewidgetpath}/Events/#rowExpanded) event handler's argument.
 
 ---
 <!-- Description goes here -->

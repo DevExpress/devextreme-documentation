@@ -3,6 +3,7 @@ id: dxPolarChart.Options.valueAxis.visualRange
 inherits: VisualRange
 firedEvents: optionChanged
 notUsedInTheme: 
+type: Object | Array<Number, String, Date>
 ---
 ---
 ##### shortDescription

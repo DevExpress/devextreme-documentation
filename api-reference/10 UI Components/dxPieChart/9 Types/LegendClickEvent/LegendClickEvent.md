@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [legendClick]({basewidgetpath}/Events/#legendClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

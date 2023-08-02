@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.endOnTick
+type: Boolean
+default: undefined
 ---
 ---
 ##### shortDescription

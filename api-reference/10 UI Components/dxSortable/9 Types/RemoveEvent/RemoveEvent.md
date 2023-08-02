@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [remove]({basewidgetpath}/Events/#remove) event handler's argument.
 
 ---
 <!-- Description goes here -->

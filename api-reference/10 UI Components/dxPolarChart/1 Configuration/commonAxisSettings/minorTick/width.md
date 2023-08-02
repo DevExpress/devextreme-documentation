@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.minorTick.width
+type: Number
+default: 1
 ---
 ---
 ##### shortDescription

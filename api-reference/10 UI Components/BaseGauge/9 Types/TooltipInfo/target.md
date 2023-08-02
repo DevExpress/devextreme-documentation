@@ -1,6 +1,6 @@
 ---
 id: _viz_base_gauge_TooltipInfo.target
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,7 @@
 ---
 id: GridBase.Options.rowDragging.dragTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

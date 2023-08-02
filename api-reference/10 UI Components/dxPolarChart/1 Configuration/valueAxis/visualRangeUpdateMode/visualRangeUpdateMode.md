@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.visualRangeUpdateMode
+type: Enums.ValueAxisVisualRangeUpdateMode
+default: 'auto'
 ---
 ---
 ##### shortDescription

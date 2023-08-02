@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.label.indentFromAxis
+type: Number
+default: 5
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 id: dxChart.Options.commonSeriesSettings.stock
+type: any
 ---
 ---
 ##### shortDescription

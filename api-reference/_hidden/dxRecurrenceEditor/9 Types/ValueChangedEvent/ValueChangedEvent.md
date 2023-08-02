@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [valueChanged]({basewidgetpath}/Events/#valueChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -2,6 +2,8 @@
 id: dxChart.Options.argumentAxis.breaks
 inherits: ScaleBreak
 notUsedInTheme: 
+type: Array<ScaleBreak>
+default: undefined
 ---
 ---
 ##### shortDescription

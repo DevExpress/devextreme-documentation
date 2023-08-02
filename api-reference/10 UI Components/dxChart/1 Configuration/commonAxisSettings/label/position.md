@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.position
+type: Enums.RelativePosition | Enums.Position
+default: 'outside'
 ---
 ---
 ##### shortDescription

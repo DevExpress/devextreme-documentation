@@ -1,6 +1,8 @@
 ---
 id: dxVectorMap.Options.tooltip.customizeTooltip
 notUsedInTheme: 
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

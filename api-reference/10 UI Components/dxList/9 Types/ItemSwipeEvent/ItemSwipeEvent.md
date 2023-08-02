@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [itemSwipe]({basewidgetpath}/Events/#itemSwipe) event handler's argument.
 
 ---
 <!-- Description goes here -->

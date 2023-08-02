@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.valueAxis.synchronizedValue
+type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

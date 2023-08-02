@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [taskDeleted]({basewidgetpath}/Events/#taskDeleted) event handler's argument.
 
 ---
 <!-- Description goes here -->

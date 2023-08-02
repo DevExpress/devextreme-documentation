@@ -1,6 +1,6 @@
 ---
 id: ValueChangedInfo.previousValue
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

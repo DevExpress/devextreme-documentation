@@ -1,5 +1,7 @@
 ---
 id: dxTreeMap.Options.tooltip.customizeTooltip
+type: function(info)
+default: undefined
 ---
 ---
 ##### shortDescription

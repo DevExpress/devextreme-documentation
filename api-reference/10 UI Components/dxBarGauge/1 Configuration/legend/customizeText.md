@@ -1,6 +1,7 @@
 ---
 id: dxBarGauge.Options.legend.customizeText
 notUsedInTheme: 
+type: function(arg)
 ---
 ---
 ##### shortDescription

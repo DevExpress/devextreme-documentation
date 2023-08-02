@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.argumentAxis.startAngle
+type: Number
+default: 0
 ---
 ---
 ##### shortDescription

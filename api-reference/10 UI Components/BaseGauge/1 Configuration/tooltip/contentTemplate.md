@@ -1,5 +1,7 @@
 ---
 id: BaseGauge.Options.tooltip.contentTemplate
+type: template
+default: undefined
 ---
 ---
 ##### shortDescription

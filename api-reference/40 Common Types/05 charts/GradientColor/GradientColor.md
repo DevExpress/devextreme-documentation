@@ -1,6 +1,9 @@
 ---
 id: GradientColor
 generateTypeLink: 
+module: common/charts
+export: GradientColor
+type: Object
 ---
 ---
 ##### shortDescription

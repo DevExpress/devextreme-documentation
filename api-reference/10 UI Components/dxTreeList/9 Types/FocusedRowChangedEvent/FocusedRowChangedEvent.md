@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [focusedRowChanged]({basewidgetpath}/Events/#focusedRowChanged) event handler's argument.
 
 ---
 <!-- Description goes here -->

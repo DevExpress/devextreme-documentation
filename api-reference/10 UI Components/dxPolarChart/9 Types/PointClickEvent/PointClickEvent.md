@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [pointClick]({basewidgetpath}/Events/#pointClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

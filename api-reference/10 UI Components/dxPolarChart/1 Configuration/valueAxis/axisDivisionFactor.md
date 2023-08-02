@@ -1,5 +1,7 @@
 ---
 id: dxPolarChart.Options.valueAxis.axisDivisionFactor
+type: Number
+default: 30
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: ValueChangedInfo.value
-type: any
+type: Object
 ---
 ---
 ##### shortDescription

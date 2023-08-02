@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.commonAxisSettings.label.alignment
+type: Enums.HorizontalAlignment
+default: undefined
 ---
 ---
 ##### shortDescription

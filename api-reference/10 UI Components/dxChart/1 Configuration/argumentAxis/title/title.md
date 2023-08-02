@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.argumentAxis.title
-type: viz/chart:dxChartArgumentAxisTitle
-inheritsType: viz/chart:dxChartArgumentAxisTitle
+type: viz/chart:ArgumentAxisTitle
+inheritsType: viz/chart:ArgumentAxisTitle
 ---
 ---
 ##### shortDescription

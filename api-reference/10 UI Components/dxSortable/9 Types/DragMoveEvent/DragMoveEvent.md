@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [dragMove]({basewidgetpath}/Events/#dragMove) event handler's argument.
 
 ---
 <!-- Description goes here -->

@@ -1,5 +1,7 @@
 ---
 id: dxChart.Options.legend.hoverMode
+type: Enums.LegendHoverMode
+default: 'includePoints'
 ---
 ---
 ##### shortDescription

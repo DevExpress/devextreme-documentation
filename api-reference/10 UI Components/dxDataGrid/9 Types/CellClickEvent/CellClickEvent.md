@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [cellClick]({basewidgetpath}/Events/#cellClick) event handler's argument.
 
 ---
 <!-- Description goes here -->

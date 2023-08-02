@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [rowPrepared]({basewidgetpath}/Events/#rowPrepared) event handler's argument.
 
 ---
 <!-- Description goes here -->

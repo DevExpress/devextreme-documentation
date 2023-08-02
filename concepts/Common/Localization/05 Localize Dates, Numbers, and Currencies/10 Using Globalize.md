@@ -1,16 +1,18 @@
 [important] React projects created with the [Create React App](https://facebook.github.io/create-react-app) <a href="https://github.com/facebook/create-react-app/issues/4508" target="_blank">do not support Globalize</a>. [DevExtreme React Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/') is one of such projects. [Use Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') in these projects instead.
 
-Activating Globalize in your project requires the following files:
+[note]If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'), we do not recommend that you use the Globalize technique. Use the [Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') technique instead.
+
+The following files are required to activate Globalize in your project:
 
 - Globalize library
 - CLDR library
 - CLDR data
 
-All the components are available via CDN and npm.
+To include these components, you can use CDN or npm.
 
 * **CDN or local files**      
 
-    Include the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, German [dictionary](/concepts/Common/Localization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Note that the order you include the libraries is important. Then, set the locale using the `Globalize.locale()` method:
+    Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Note that the order in which you include the libraries is important. Then, set the locale using the `Globalize.locale()` method:
 
     ---
     ##### CDN
@@ -68,7 +70,7 @@ All the components are available via CDN and npm.
 
     ---
     
-    Then, include Globalize, CLDR, and language-specific CLDR data using the `import` or `require` statement&mdash;the statement depends on the syntax for working with modules. The code below shows ECMAScript 6 and CommonJS syntaxes. These examples include German dictionary.
+    Then, include Globalize, CLDR, and language-specific CLDR data using the `import` or `require` statement&mdash;the statement depends on the syntax for working with modules. The code below shows ECMAScript 6 and CommonJS syntaxes. These examples include the German dictionary.
 
     ---
     ##### npm: ECMAScript 6 syntax
@@ -79,7 +81,7 @@ All the components are available via CDN and npm.
         import "devextreme/localization/globalize/currency";
         import "devextreme/localization/globalize/message";
 
-        // Dictionaries for German language
+        // Dictionaries for the German language
         import deMessages from "devextreme/localization/messages/de.json";
         
         // Common and language-specific CLDR JSONs
@@ -130,7 +132,7 @@ All the components are available via CDN and npm.
         require('devextreme/localization/globalize/currency');
         require('devextreme/localization/globalize/date');
 
-        // Dictionaries for German language
+        // Dictionaries for the German language
         const deMessages = require('devextreme/localization/messages/de.json');
         
         const Globalize = require('globalize');

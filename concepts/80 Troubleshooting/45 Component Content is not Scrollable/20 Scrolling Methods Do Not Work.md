@@ -1,0 +1,1 @@
+If the component's height is not limited, the component takes all space in its parent element, and scrolling methods may not work correctly. To resolve the issue, limit the component's height. For example, set a fixed height either for the component or for one of its parent elements.

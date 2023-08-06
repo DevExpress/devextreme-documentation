@@ -2,6 +2,7 @@
 id: dxSchedulerScrolling
 module: ui/scheduler
 export: dxSchedulerScrolling
+references: dxScheduler.Options.scrolling,dxScheduler.Options.views.scrolling
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: dxPopover
 module: ui/popover
 export: default
 inherits: dxPopup
+references: dxDropDownEditor.Options.dropDownOptions,dxLookup.Options.dropDownOptions
 ---
 ---
 ##### shortDescription

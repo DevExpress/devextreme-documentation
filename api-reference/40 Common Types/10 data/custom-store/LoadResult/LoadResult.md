@@ -4,6 +4,7 @@ module: common/data/custom-store
 export: LoadResult
 type: Object
 generateTypeLink: 
+references: CustomStore.load,CustomStore.load,CustomStore.Options.load,CustomStore.Options.load
 ---
 ---
 ##### shortDescription

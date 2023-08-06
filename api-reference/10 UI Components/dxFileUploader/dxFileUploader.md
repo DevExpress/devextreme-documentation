@@ -3,6 +3,7 @@ id: dxFileUploader
 module: ui/file_uploader
 export: default
 inherits: Editor
+references: dxHtmlEditorImageUpload.fileUploaderOptions
 ---
 ---
 ##### shortDescription

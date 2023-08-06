@@ -1,6 +1,7 @@
 ---
 id: dxFormButtonItem
 type: Object
+references: dxFormGroupItem.items,dxForm.Options.customizeItem,dxForm.Options.items,dxFormTabbedItem.tabs.items
 ---
 ---
 ##### shortDescription

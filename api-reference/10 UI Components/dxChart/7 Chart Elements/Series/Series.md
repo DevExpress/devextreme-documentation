@@ -4,6 +4,7 @@ type: Object
 inherits: baseSeriesObject
 module: viz/chart
 export: chartSeriesObject
+references: viz/chart:LegendClickEvent.target,viz/chart:SeriesClickEvent.target,_viz_chart_SeriesInteractionInfo.target,BaseChart.getSeriesByName,BaseChart.getSeriesByName,BaseChart.getSeriesByPos,BaseChart.getSeriesByPos,dxChart.Options.onLegendClick,dxChart.Options.onSeriesClick,dxChart.Options.onSeriesHoverChanged,dxChart.Options.onSeriesSelectionChanged,dxChartSeriesTypes.CommonSeries.aggregation.calculate
 ---
 ---
 ##### shortDescription

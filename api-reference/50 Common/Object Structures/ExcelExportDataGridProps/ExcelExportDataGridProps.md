@@ -3,6 +3,7 @@ id: ExcelExportDataGridProps
 inherits: ExcelExportBaseProps
 module: excel_exporter
 export: ExcelExportDataGridProps
+references: excelExporter.exportDataGrid
 ---
 ---
 ##### shortDescription

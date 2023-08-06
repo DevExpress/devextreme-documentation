@@ -3,6 +3,7 @@ id: dxDeferRendering
 module: ui/defer_rendering
 export: default
 inherits: Widget
+references: dxDeferRendering.Options.onRendered,dxDeferRendering.Options.onShown
 ---
 ---
 ##### shortDescription

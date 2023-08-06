@@ -1,6 +1,7 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.label
 type: Object
+references: BaseChart.Options.customizeLabel
 ---
 ---
 ##### shortDescription

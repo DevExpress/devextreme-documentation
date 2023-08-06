@@ -1,6 +1,7 @@
 ---
 id: dxHtmlEditorTableContextMenuItem
 inherits: dxContextMenuItem
+references: dxHtmlEditorTableContextMenu.items,dxHtmlEditorTableContextMenuItem.items
 ---
 ---
 ##### shortDescription

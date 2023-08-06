@@ -2,6 +2,7 @@
 id: dxSankeyNode
 module: viz/sankey
 export: dxSankeyNode
+references: viz/sankey:NodeClickEvent.target,viz/sankey:NodeHoverEvent.target,dxSankey.getAllNodes,dxSankey.getAllNodes,dxSankey.Options.label.customizeText,dxSankey.Options.onNodeClick,dxSankey.Options.onNodeHoverChanged
 ---
 ---
 ##### shortDescription

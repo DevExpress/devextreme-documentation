@@ -3,6 +3,7 @@ id: dxVectorMap
 module: viz/vector_map
 export: default
 inherits: BaseWidget
+references: viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

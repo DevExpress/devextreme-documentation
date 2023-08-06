@@ -4,6 +4,7 @@ type: Array<Object>
 default: undefined
 module: ui/pivot_grid/data_source
 export: Field
+references: ui/pivot_grid:CellClickEvent.columnFields,ui/pivot_grid:CellClickEvent.dataFields,ui/pivot_grid:CellClickEvent.rowFields,ui/pivot_grid:ContextMenuPreparingEvent.columnFields,ui/pivot_grid:ContextMenuPreparingEvent.dataFields,ui/pivot_grid:ContextMenuPreparingEvent.rowFields,dxPivotGrid.Options.onCellClick,dxPivotGrid.Options.onCellClick,dxPivotGrid.Options.onCellClick,dxPivotGrid.Options.onContextMenuPreparing,dxPivotGrid.Options.onContextMenuPreparing,dxPivotGrid.Options.onContextMenuPreparing,dxPivotGridSummaryCell.field,dxPivotGridSummaryCell.field,dxPivotGridSummaryCell.isPostProcessed,dxPivotGridSummaryCell.slice,dxPivotGridSummaryCell.value,dxPivotGridSummaryCell.value,PivotGridDataSource.fields,PivotGridDataSource.fields,PivotGridDataSource.fields,PivotGridDataSource.getAreaFields,PivotGridDataSource.getAreaFields,PivotGridDataSource.Options.onFieldsPrepared
 ---
 ---
 ##### shortDescription

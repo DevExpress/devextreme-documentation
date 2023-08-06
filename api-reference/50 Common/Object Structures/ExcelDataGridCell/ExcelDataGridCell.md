@@ -1,6 +1,7 @@
 ---
 id: ExcelDataGridCell
 type: Object
+references: ExcelExportDataGridProps.customizeCell
 ---
 ---
 ##### shortDescription

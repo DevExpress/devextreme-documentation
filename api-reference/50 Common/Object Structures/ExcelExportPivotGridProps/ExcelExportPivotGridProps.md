@@ -3,6 +3,7 @@ id: ExcelExportPivotGridProps
 inherits: ExcelExportBaseProps
 module: excel_exporter
 export: ExcelExportPivotGridProps
+references: excelExporter.exportPivotGrid
 ---
 ---
 ##### shortDescription

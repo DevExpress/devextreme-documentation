@@ -1,6 +1,7 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point
 type: Object
+references: BaseChart.Options.customizePoint
 ---
 ---
 ##### shortDescription

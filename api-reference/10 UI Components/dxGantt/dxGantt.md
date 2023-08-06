@@ -3,6 +3,7 @@ id: dxGantt
 module: ui/gantt
 export: default
 inherits: Widget
+references: PdfExportGanttProps.component
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: Query
 type: Object
 module: data/query
 export: Query
+references: Query.filter,Query.filter,Query.filter,Query.filter,Query.groupBy,Query.groupBy,Query.select,Query.select,Query.slice,Query.slice,Query.sortBy,Query.sortBy,Query.sortBy,Query.sortBy,Query.thenBy,Query.thenBy,Query.thenBy,Query.thenBy,Utils.query,Utils.query,Utils.query,Utils.query
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: CellRange
 type: Object
 module: excel_exporter
 export: CellRange
+references: excelExporter.exportDataGrid,excelExporter.exportDataGrid,excelExporter.exportPivotGrid,excelExporter.exportPivotGrid
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: LoadOptions
 type: Object
 module: data/index
 export: Load_Options
+references: CustomStore.byKey,CustomStore.load,CustomStore.Options.byKey,CustomStore.Options.load,ODataStore.Options.onLoading,Store.load(options),Store.Options.onLoaded,Store.Options.onLoading
 ---
 ---
 ##### shortDescription

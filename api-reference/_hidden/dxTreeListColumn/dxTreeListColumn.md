@@ -2,4 +2,5 @@
 id: dxTreeListColumn
 type: Object
 inherits: GridBaseColumn
+references: ui/tree_list:ContextMenuPreparingEvent.column,ui/tree_list:FocusedCellChangedEvent.column,ui/tree_list:FocusedCellChangingEvent.columns,ui/tree_list:RowDblClickEvent.columns,ui/tree_list:RowPreparedEvent.columns,CellInfo.column,dxTreeList.getVisibleColumns,dxTreeList.getVisibleColumns,dxTreeList.getVisibleColumns,dxTreeList.getVisibleColumns,dxTreeListColumn.cellTemplate,dxTreeListColumn.columns,dxTreeListColumn.editCellTemplate,dxTreeListColumn.headerCellTemplate,dxTreeListColumnButton.disabled,dxTreeListColumnButton.onClick,dxTreeListColumnButton.template,dxTreeListColumnButton.visible,dxTreeList.Options.columns,dxTreeList.Options.customizeColumns,dxTreeList.Options.onCellClick,dxTreeList.Options.onCellDblClick,dxTreeList.Options.onCellHoverChanged,dxTreeList.Options.onCellPrepared,dxTreeList.Options.onContextMenuPreparing,dxTreeList.Options.onFocusedCellChanged,dxTreeList.Options.onFocusedCellChanging,dxTreeList.Options.onRowDblClick,dxTreeList.Options.onRowPrepared
 ---

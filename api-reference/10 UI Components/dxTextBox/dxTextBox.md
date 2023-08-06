@@ -3,6 +3,7 @@ id: dxTextBox
 module: ui/text_box
 export: default
 inherits: dxTextEditor
+references: SearchBoxMixin.Options.searchEditorOptions
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: MapLayer
 module: viz/vector_map
 export: MapLayer
+references: dxVectorMap.getLayerByIndex,dxVectorMap.getLayerByIndex,dxVectorMap.getLayerByName,dxVectorMap.getLayerByName,dxVectorMap.getLayers,dxVectorMap.getLayers
 ---
 ---
 ##### shortDescription

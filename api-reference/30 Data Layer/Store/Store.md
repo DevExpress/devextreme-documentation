@@ -3,6 +3,7 @@ id: Store
 module: data/abstract_store
 export: Store
 hidden: 
+references: DataSource.Options.store,PivotGridDataSource.Options.store
 ---
 ---
 ##### shortDescription

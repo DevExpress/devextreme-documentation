@@ -4,6 +4,7 @@ type: Object
 inherits: basePointObject
 module: viz/chart
 export: chartPointObject
+references: dxChart.Options.crosshair.horizontalLine.label.customizeText,dxChart.Options.crosshair.label.customizeText,dxChart.Options.crosshair.verticalLine.label.customizeText
 ---
 ---
 ##### shortDescription

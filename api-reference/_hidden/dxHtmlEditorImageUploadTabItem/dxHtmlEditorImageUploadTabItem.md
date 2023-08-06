@@ -1,5 +1,6 @@
 ---
 id: dxHtmlEditorImageUploadTabItem
+references: dxHtmlEditorImageUpload.tabs
 ---
 ---
 ##### shortDescription

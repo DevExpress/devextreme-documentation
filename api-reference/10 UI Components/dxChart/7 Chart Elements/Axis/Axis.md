@@ -3,6 +3,7 @@ id: chartAxisObject
 type: Object
 module: viz/chart
 export: chartAxisObject
+references: viz/chart:ZoomEndEvent.axis,viz/chart:ZoomStartEvent.axis,viz/polar_chart:ZoomEndEvent.axis,viz/polar_chart:ZoomStartEvent.axis,chartSeriesObject.getArgumentAxis,chartSeriesObject.getArgumentAxis,chartSeriesObject.getValueAxis,chartSeriesObject.getValueAxis,dxChart.getArgumentAxis,dxChart.getArgumentAxis,dxChart.getValueAxis,dxChart.getValueAxis,dxChart.getValueAxis,dxChart.getValueAxis,dxChart.Options.onZoomEnd,dxChart.Options.onZoomStart,dxPolarChart.getValueAxis,dxPolarChart.getValueAxis,dxPolarChart.Options.onZoomEnd,dxPolarChart.Options.onZoomStart
 ---
 ---
 ##### shortDescription

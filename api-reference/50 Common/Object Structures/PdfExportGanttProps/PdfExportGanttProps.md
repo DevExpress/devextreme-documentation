@@ -2,6 +2,7 @@
 id: PdfExportGanttProps
 module: pdf_exporter
 export: PdfExportGanttProps
+references: pdfExporter.exportGantt
 ---
 ---
 ##### shortDescription

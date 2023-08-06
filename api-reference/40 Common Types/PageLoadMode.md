@@ -2,6 +2,7 @@
 id: Enums.PageLoadMode
 acceptValues: 'nextButton' | 'scrollBottom'
 type: Union
+references: dxList.Options.pageLoadMode,dxLookup.Options.pageLoadMode
 ---
 ---
 ##### shortDescription

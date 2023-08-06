@@ -2,6 +2,7 @@
 id: Enums.FormLabelMode
 acceptValues: 'static' | 'floating' | 'hidden' | 'outside'
 type: Union
+references: dxForm.Options.labelMode
 ---
 ---
 ##### shortDescription

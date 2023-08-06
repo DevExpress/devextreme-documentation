@@ -2,6 +2,7 @@
 id: Enums.PivotGridDataType
 acceptValues: 'date' | 'number' | 'string'
 type: Union
+references: PivotGridDataSource.Options.fields.dataType
 ---
 ---
 ##### shortDescription

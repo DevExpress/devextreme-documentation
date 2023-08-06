@@ -2,6 +2,7 @@
 id: Enums.SubmenuDirection
 acceptValues: 'auto' | 'leftOrTop' | 'rightOrBottom'
 type: Union
+references: dxMenu.Options.submenuDirection
 ---
 ---
 ##### shortDescription

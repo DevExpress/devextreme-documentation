@@ -2,6 +2,7 @@
 id: Enums.ApplyChangesMode
 acceptValues: 'instantly' | 'onDemand'
 type: Union
+references: dxPivotGridFieldChooser.Options.applyChangesMode,dxPivotGrid.Options.fieldChooser.applyChangesMode
 ---
 ---
 ##### shortDescription

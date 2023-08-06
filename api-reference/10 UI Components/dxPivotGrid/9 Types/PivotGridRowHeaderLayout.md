@@ -2,6 +2,7 @@
 id: Enums.PivotGridRowHeaderLayout
 acceptValues: 'standard' | 'tree'
 type: Union
+references: dxPivotGrid.Options.rowHeaderLayout
 ---
 ---
 ##### shortDescription

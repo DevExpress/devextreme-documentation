@@ -2,6 +2,7 @@
 id: Enums.PanelLocation
 acceptValues: 'left' | 'right' | 'top' | 'bottom' | 'before' | 'after'
 type: Union
+references: dxDrawer.Options.position
 ---
 ---
 ##### shortDescription

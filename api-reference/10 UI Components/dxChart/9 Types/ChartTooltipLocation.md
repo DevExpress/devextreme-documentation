@@ -2,6 +2,7 @@
 id: Enums.ChartTooltipLocation
 acceptValues: 'center' | 'edge'
 type: Union
+references: viz/chart:Tooltip.location
 ---
 ---
 ##### shortDescription

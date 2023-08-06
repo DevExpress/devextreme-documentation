@@ -2,6 +2,7 @@
 id: Enums.TreeListPredefinedColumnButton
 acceptValues: 'add' | 'cancel' | 'delete' | 'edit' | 'save' | 'undelete'
 type: Union
+references: dxTreeListColumn.buttons,dxTreeListColumnButton.name
 ---
 ---
 ##### shortDescription

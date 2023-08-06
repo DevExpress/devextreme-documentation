@@ -2,6 +2,7 @@
 id: Enums.DiagramConnectorPosition
 acceptValues: 'start' | 'end'
 type: Union
+references: dxDiagramChangeConnectionArgs.connectorPosition
 ---
 ---
 ##### shortDescription

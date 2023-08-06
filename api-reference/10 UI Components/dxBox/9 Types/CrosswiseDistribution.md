@@ -2,6 +2,7 @@
 id: Enums.CrosswiseDistribution
 acceptValues: 'center' | 'end' | 'start' | 'stretch'
 type: Union
+references: dxBox.Options.crossAlign
 ---
 ---
 ##### shortDescription

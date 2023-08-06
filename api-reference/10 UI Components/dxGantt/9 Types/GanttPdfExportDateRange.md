@@ -2,6 +2,7 @@
 id: Enums.GanttPdfExportDateRange
 acceptValues: 'all' | 'visible'
 type: Union
+references: PdfExportGanttProps.dateRange
 ---
 ---
 ##### shortDescription

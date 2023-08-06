@@ -2,6 +2,7 @@
 id: Enums.CellAppointmentsLimit
 acceptValues: 'auto' | 'unlimited'
 type: Union
+references: dxScheduler.Options.maxAppointmentsPerCell,dxScheduler.Options.views.maxAppointmentsPerCell
 ---
 ---
 ##### shortDescription

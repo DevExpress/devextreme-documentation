@@ -2,6 +2,7 @@
 id: Enums.RouteMode
 acceptValues: 'driving' | 'walking'
 type: Union
+references: dxMap.Options.routes.mode
 ---
 ---
 ##### shortDescription

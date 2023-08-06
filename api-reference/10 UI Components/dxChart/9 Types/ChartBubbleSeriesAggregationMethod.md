@@ -2,6 +2,7 @@
 id: Enums.ChartBubbleSeriesAggregationMethod
 acceptValues: 'avg' | 'custom'
 type: Union
+references: dxChartSeriesTypes.BubbleSeries.aggregation.method
 ---
 ---
 ##### shortDescription

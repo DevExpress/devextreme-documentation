@@ -2,6 +2,7 @@
 id: Enums.DatePickerType
 acceptValues: 'calendar' | 'list' | 'native' | 'rollers'
 type: Union
+references: dxDateBox.Options.pickerType
 ---
 ---
 ##### shortDescription

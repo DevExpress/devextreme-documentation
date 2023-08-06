@@ -2,6 +2,7 @@
 id: Enums.NumberBoxType
 acceptValues: 'number' | 'text' | 'tel'
 type: Union
+references: dxNumberBox.Options.mode
 ---
 ---
 ##### shortDescription

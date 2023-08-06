@@ -2,6 +2,7 @@
 id: Enums.TextEditorButtonLocation
 acceptValues: 'after' | 'before'
 type: Union
+references: TextEditorButton.location
 ---
 ---
 ##### shortDescription

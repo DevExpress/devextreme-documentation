@@ -2,6 +2,7 @@
 id: Enums.TreeMapLayoutDirection
 acceptValues: 'leftBottomRightTop' | 'leftTopRightBottom' | 'rightBottomLeftTop' | 'rightTopLeftBottom'
 type: Union
+references: dxTreeMap.Options.layoutDirection
 ---
 ---
 ##### shortDescription

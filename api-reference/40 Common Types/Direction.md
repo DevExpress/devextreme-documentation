@@ -2,6 +2,7 @@
 id: Enums.Direction
 acceptValues: 'bottom' | 'left' | 'right' | 'top'
 type: Union
+references: AnimationConfig.direction
 ---
 ---
 ##### shortDescription

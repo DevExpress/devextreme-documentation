@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/scheduler:CellContextMenuEvent
 generateTypeLink: 
+references: dxScheduler.Options.onCellContextMenu
 ---
 ---
 ##### shortDescription

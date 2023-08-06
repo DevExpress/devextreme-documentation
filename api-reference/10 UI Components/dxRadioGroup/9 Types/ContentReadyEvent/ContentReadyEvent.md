@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/radio_group:ContentReadyEvent
 generateTypeLink: 
+references: dxRadioGroup.Options.onContentReady
 ---
 ---
 ##### shortDescription

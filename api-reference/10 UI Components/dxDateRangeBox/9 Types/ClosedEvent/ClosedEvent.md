@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/date_range_box:ClosedEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onClosed
 ---
 ---
 ##### shortDescription

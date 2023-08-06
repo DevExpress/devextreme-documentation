@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/bar_gauge:ExportingEvent
 generateTypeLink: 
+references: dxBarGauge.Options.onExporting
 ---
 ---
 ##### shortDescription

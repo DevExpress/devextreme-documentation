@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/polar_chart:ExportedEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onExported
 ---
 ---
 ##### shortDescription

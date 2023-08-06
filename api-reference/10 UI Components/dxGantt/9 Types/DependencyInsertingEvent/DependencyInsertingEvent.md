@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:DependencyInsertingEvent
 generateTypeLink: 
+references: dxGantt.Options.onDependencyInserting
 ---
 ---
 ##### shortDescription

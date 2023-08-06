@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/text_box:ValueChangedEvent
 generateTypeLink: 
+references: dxTextBox.Options.onValueChanged
 ---
 ---
 ##### shortDescription

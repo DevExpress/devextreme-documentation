@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/resizable:DisposingEvent
 generateTypeLink: 
+references: dxResizable.Options.onDisposing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:SelectionChangedEvent
 generateTypeLink: 
+references: dxGantt.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:FocusOutEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onFocusOut
 ---
 ---
 ##### shortDescription

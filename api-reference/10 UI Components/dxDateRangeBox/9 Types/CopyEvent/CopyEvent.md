@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_range_box:CopyEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onCopy
 ---
 ---
 ##### shortDescription

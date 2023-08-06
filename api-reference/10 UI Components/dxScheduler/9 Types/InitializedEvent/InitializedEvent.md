@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/scheduler:InitializedEvent
 generateTypeLink: 
+references: dxScheduler.Options.onInitialized
 ---
 ---
 ##### shortDescription

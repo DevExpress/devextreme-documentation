@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scheduler:DisposingEvent
 generateTypeLink: 
+references: dxScheduler.Options.onDisposing
 ---
 ---
 ##### shortDescription

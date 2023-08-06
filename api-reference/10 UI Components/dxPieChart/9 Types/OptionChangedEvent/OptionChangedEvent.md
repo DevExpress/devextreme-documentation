@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/pie_chart:OptionChangedEvent
 generateTypeLink: 
+references: dxPieChart.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

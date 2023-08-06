@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/select_box:ItemClickEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onItemClick
 ---
 ---
 ##### shortDescription

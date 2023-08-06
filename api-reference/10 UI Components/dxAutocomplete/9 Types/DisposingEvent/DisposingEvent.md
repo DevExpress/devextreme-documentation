@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/autocomplete:DisposingEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onDisposing
 ---
 ---
 ##### shortDescription

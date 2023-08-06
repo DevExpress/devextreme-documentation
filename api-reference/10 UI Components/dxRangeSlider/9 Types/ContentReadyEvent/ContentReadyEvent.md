@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/range_slider:ContentReadyEvent
 generateTypeLink: 
+references: dxRangeSlider.Options.onContentReady
 ---
 ---
 ##### shortDescription

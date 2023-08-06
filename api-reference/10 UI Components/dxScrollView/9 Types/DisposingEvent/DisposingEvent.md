@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scroll_view:DisposingEvent
 generateTypeLink: 
+references: dxScrollView.Options.onDisposing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/action_sheet:OptionChangedEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

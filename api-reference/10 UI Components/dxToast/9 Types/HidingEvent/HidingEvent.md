@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/toast:HidingEvent
 generateTypeLink: 
+references: dxToast.Options.onHiding
 ---
 ---
 ##### shortDescription

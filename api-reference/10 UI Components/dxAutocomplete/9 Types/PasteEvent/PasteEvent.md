@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:PasteEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onPaste
 ---
 ---
 ##### shortDescription

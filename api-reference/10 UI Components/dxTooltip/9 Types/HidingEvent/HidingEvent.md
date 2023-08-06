@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tooltip:HidingEvent
 generateTypeLink: 
+references: dxTooltip.Options.onHiding
 ---
 ---
 ##### shortDescription

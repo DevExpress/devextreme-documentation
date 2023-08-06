@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/diagram:ItemClickEvent
 generateTypeLink: 
+references: dxDiagram.Options.onItemClick
 ---
 ---
 ##### shortDescription

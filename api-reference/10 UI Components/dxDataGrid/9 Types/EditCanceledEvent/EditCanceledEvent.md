@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,DataChangeInfo
 uid: ui/data_grid:EditCanceledEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onEditCanceled
 ---
 ---
 ##### shortDescription

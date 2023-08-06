@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_box:InputEvent
 generateTypeLink: 
+references: dxDropDownBox.Options.onInput
 ---
 ---
 ##### shortDescription

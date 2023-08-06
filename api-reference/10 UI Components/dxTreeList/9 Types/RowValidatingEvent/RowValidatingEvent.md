@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowValidatingInfo
 uid: ui/tree_list:RowValidatingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowValidating
 ---
 ---
 ##### shortDescription

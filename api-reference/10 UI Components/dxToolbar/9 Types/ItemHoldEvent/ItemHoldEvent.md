@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/toolbar:ItemHoldEvent
 generateTypeLink: 
+references: dxToolbar.Options.onItemHold
 ---
 ---
 ##### shortDescription

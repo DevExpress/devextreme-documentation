@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskMovingEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskMoving
 ---
 ---
 ##### shortDescription

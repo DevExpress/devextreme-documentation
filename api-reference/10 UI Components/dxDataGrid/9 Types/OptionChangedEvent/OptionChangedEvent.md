@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/data_grid:OptionChangedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

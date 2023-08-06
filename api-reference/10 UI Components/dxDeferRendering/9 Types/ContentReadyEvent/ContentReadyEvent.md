@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/defer_rendering:ContentReadyEvent
 generateTypeLink: 
+references: dxDeferRendering.Options.onContentReady
 ---
 ---
 ##### shortDescription

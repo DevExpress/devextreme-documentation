@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/filter_builder:InitializedEvent
 generateTypeLink: 
+references: dxFilterBuilder.Options.onInitialized
 ---
 ---
 ##### shortDescription

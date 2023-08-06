@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tree_list:EditorPreparedEvent
 generateTypeLink: 
+references: dxTreeList.Options.onEditorPrepared
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_chart_components_base_chart_TooltipInfo
 uid: viz/polar_chart:TooltipHiddenEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onTooltipHidden
 ---
 ---
 ##### shortDescription

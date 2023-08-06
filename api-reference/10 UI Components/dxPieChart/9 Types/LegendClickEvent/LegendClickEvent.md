@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/pie_chart:LegendClickEvent
 generateTypeLink: 
+references: dxPieChart.Options.onLegendClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:ValueChangedEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onValueChanged
 ---
 ---
 ##### shortDescription

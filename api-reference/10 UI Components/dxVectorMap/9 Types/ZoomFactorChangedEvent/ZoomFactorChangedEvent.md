@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/vector_map:ZoomFactorChangedEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onZoomFactorChanged
 ---
 ---
 ##### shortDescription

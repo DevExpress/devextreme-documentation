@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/pie_chart:DoneEvent
 generateTypeLink: 
+references: dxPieChart.Options.onDone
 ---
 ---
 ##### shortDescription

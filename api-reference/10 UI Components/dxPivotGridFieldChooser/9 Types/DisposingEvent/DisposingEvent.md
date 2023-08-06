@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/pivot_grid_field_chooser:DisposingEvent
 generateTypeLink: 
+references: dxPivotGridFieldChooser.Options.onDisposing
 ---
 ---
 ##### shortDescription

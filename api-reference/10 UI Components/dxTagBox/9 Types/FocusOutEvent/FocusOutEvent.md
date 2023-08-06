@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:FocusOutEvent
 generateTypeLink: 
+references: dxTagBox.Options.onFocusOut
 ---
 ---
 ##### shortDescription

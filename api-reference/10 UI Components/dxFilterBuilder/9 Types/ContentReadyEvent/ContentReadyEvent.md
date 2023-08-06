@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/filter_builder:ContentReadyEvent
 generateTypeLink: 
+references: dxFilterBuilder.Options.onContentReady
 ---
 ---
 ##### shortDescription

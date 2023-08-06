@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/load_panel:ShownEvent
 generateTypeLink: 
+references: dxLoadPanel.Options.onShown
 ---
 ---
 ##### shortDescription

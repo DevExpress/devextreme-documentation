@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:CopyEvent
 generateTypeLink: 
+references: dxTextBox.Options.onCopy
 ---
 ---
 ##### shortDescription

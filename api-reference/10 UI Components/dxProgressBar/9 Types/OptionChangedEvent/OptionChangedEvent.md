@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/progress_bar:OptionChangedEvent
 generateTypeLink: 
+references: dxProgressBar.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

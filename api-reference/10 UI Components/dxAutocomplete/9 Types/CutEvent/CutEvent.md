@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:CutEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onCut
 ---
 ---
 ##### shortDescription

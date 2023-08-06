@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,SelectionChangedInfo
 uid: ui/multi_view:SelectionChangedEvent
 generateTypeLink: 
+references: dxMultiView.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

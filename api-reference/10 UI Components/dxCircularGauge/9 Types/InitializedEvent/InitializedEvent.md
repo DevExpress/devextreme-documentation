@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/circular_gauge:InitializedEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onInitialized
 ---
 ---
 ##### shortDescription

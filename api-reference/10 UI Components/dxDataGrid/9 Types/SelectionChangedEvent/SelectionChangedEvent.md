@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_common_grids_SelectionChangedInfo
 uid: ui/data_grid:SelectionChangedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

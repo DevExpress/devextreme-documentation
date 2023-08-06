@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/autocomplete:OptionChangedEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

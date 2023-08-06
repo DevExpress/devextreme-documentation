@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/radio_group:OptionChangedEvent
 generateTypeLink: 
+references: dxRadioGroup.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

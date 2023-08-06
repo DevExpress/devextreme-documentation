@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/vector_map:ClickEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/lookup:ItemClickEvent
 generateTypeLink: 
+references: dxLookup.Options.onItemClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/gantt:InitializedEvent
 generateTypeLink: 
+references: dxGantt.Options.onInitialized
 ---
 ---
 ##### shortDescription

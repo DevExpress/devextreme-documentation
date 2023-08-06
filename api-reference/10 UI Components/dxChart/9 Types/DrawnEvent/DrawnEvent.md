@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/chart:DrawnEvent
 generateTypeLink: 
+references: dxChart.Options.onDrawn
 ---
 ---
 ##### shortDescription

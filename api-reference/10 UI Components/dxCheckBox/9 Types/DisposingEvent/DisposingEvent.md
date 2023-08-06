@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/check_box:DisposingEvent
 generateTypeLink: 
+references: dxCheckBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

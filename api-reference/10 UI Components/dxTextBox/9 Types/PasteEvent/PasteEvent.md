@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:PasteEvent
 generateTypeLink: 
+references: dxTextBox.Options.onPaste
 ---
 ---
 ##### shortDescription

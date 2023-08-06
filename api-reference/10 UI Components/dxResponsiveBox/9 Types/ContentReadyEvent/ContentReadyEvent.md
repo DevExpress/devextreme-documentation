@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/responsive_box:ContentReadyEvent
 generateTypeLink: 
+references: dxResponsiveBox.Options.onContentReady
 ---
 ---
 ##### shortDescription

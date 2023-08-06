@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_range_box:InputEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onInput
 ---
 ---
 ##### shortDescription

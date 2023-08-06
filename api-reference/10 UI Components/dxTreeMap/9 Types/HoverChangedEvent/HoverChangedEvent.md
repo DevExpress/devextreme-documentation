@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,InteractionInfo
 uid: viz/tree_map:HoverChangedEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onHoverChanged
 ---
 ---
 ##### shortDescription

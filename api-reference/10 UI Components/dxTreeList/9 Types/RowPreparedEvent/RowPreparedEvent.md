@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tree_list:RowPreparedEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowPrepared
 ---
 ---
 ##### shortDescription

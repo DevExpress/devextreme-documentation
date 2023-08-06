@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/list:PullRefreshEvent
 generateTypeLink: 
+references: dxList.Options.onPullRefresh
 ---
 ---
 ##### shortDescription

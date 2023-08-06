@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/chart:ArgumentAxisClickEvent
 generateTypeLink: 
+references: dxChart.Options.onArgumentAxisClick
 ---
 ---
 ##### shortDescription

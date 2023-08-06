@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sankey:DisposingEvent
 generateTypeLink: 
+references: dxSankey.Options.onDisposing
 ---
 ---
 ##### shortDescription

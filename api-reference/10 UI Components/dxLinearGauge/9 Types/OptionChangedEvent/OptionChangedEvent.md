@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/linear_gauge:OptionChangedEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

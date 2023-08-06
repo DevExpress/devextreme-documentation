@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/bar_gauge:OptionChangedEvent
 generateTypeLink: 
+references: dxBarGauge.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

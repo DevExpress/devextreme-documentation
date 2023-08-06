@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/funnel:IncidentOccurredEvent
 generateTypeLink: 
+references: dxFunnel.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

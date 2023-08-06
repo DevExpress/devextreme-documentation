@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/toast:HiddenEvent
 generateTypeLink: 
+references: dxToast.Options.onHidden
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/lookup:ValueChangedEvent
 generateTypeLink: 
+references: dxLookup.Options.onValueChanged
 ---
 ---
 ##### shortDescription

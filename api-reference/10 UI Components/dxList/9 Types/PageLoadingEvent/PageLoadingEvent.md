@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/list:PageLoadingEvent
 generateTypeLink: 
+references: dxList.Options.onPageLoading
 ---
 ---
 ##### shortDescription

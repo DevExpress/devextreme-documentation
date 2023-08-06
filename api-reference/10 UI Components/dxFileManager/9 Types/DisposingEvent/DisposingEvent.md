@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:DisposingEvent
 generateTypeLink: 
+references: dxFileManager.Options.onDisposing
 ---
 ---
 ##### shortDescription

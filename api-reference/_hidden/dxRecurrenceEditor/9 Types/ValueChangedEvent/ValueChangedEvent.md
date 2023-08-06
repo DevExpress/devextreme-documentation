@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/recurrence_editor:ValueChangedEvent
 generateTypeLink: 
+references: dxRecurrenceEditor.Options.onValueChanged
 ---
 ---
 ##### shortDescription

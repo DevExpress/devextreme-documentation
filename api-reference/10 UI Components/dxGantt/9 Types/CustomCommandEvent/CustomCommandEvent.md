@@ -4,6 +4,7 @@ export: CustomCommandEvent
 type: Object
 uid: ui/gantt:CustomCommandEvent
 generateTypeLink: 
+references: dxGantt.Options.onCustomCommand
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/lookup:ContentReadyEvent
 generateTypeLink: 
+references: dxLookup.Options.onContentReady
 ---
 ---
 ##### shortDescription

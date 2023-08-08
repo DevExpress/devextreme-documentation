@@ -8,7 +8,7 @@ Templates are passed as properties that end with **...Template**. Each template 
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
 
 - `index`       
-A zero-based index of the item in the collection. Available only in collection UI component templates.
+A zero-based index of the item in the collection. Can be available only in collection UI component templates.
 
 - `element`     
 A jQuery element that represents the UI component element being customized. Available only if you use jQuery.
@@ -42,7 +42,7 @@ Templates are passed as properties that end with **...Template**. Each template 
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
 
 - `index`       
-A zero-based index of the item in the collection. Available only in collection UI component templates.
+A zero-based index of the item in the collection. Can be available only in collection UI component templates.
 
 The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
@@ -98,7 +98,7 @@ Templates are passed as properties that end with **...Template**. Each template 
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
 
 - `index`       
-A zero-based index of the item in the collection. Available only in collection UI component templates.
+A zero-based index of the item in the collection. Can be available only in collection UI component templates.
 
 The following code shows how to declare a template and use these parameters. This code declares an [itemTemplate](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
@@ -141,7 +141,7 @@ Templates are passed as properties that end with **...Render** or **...Component
 A data source object or an object with fields specific to a particular template. For information on the contents of `data`, refer to the **Template Data** section of the template's API reference article.
 
 - `index`       
-A zero-based index of the item in the collection. Available only in collection UI component templates.
+A zero-based index of the item in the collection. Can be available only in collection UI component templates.
 
 The following code shows how to declare a template and use these parameters. This code declares an [itemRender](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
@@ -176,7 +176,7 @@ The following code shows how to declare a template and use these parameters. Thi
 
 ---
 
-Collection UI components also support templates for individual items. Do not specify the UI component's **dataSource** property if you use individual templates.
+Collection UI components are components that include the **items** property. These components also support templates for individual items. Do not specify the UI component's **dataSource** property if you use individual templates.
 
 ---
 ##### jQuery

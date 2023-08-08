@@ -175,7 +175,6 @@ With this code, the *Bus ID* column contains license plates instead of IDs. More
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-implement-cascading-dropdownboxes"
 }

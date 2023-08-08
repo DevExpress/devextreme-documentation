@@ -3,7 +3,6 @@ Depending on the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/File_Uploader/FileUploading/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-use-fileuploader-in-the-edit-form"
 }

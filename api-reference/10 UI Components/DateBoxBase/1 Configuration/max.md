@@ -14,7 +14,6 @@ The latest date that can be selected in the UI component.
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateRangeBox/Overview/"        
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/getting-started-with-devextreme-daterangebox"
 }

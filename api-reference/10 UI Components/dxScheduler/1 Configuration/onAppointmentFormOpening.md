@@ -319,7 +319,6 @@ The `mainGroup` consists of two columns. A custom item's [colSpan](/api-referenc
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-scheduler-create-custom-editing-form"
 }

@@ -146,7 +146,6 @@ Data in the drill-down data source is paginated by default. Only the items on th
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pivot_Grid/DrillDown/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-edit-data-using-datagrid"
 }

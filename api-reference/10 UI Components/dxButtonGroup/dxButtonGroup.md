@@ -30,7 +30,6 @@ selectionMode: "multiple"
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/ButtonGroup/Getting_Started_with_ButtonGroup/" 
 }
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview/"
 }

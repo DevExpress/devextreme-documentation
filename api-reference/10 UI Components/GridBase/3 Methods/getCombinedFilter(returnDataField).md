@@ -17,7 +17,6 @@ Use this method to get the total filter. This filter combines filters applied us
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-get-all-filtered-data"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-filter-chart-series-based-on-grid-filter"
 }

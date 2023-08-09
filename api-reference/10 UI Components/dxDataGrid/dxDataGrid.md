@@ -43,7 +43,6 @@ dx.web.js, dx.all.js
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/" 
 }
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/"
 }

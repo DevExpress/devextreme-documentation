@@ -55,7 +55,6 @@ State storing saves the following properties:
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/StatePersistence/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-modify-persisted-state"
 }

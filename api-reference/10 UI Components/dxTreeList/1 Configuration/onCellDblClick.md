@@ -22,7 +22,7 @@ The index of the column the cell belongs to.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.data): any
+##### field(e.data): Object
 The data of the row the cell belongs to. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
 ##### field(e.displayValue): any

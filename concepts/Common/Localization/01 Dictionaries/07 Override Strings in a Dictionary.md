@@ -86,3 +86,6 @@ In the following code, we override two strings from the <a href="https://github.
     export default App;
 
 ---
+
+##### See Also #####
+- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')

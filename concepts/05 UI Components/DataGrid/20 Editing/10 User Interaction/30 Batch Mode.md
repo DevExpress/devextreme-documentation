@@ -9,7 +9,6 @@ When a user clicks a row's *"Delete"* button, the UI component only marks the ro
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-batch-editing-select-multiple-cells"
 }

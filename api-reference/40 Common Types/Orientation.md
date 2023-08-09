@@ -16,5 +16,6 @@ dxMenuOptions.orientation(/api-reference/10 UI Components/dxMenu/1 Configuration
 dxRadioGroupOptions.layout(/api-reference/10 UI Components/dxRadioGroup/1 Configuration/layout.md)(common.d.ts)
 dxSchedulerOptions.views.groupOrientation(/api-reference/10 UI Components/dxScheduler/1 Configuration/views/groupOrientation.md)(common.d.ts)
 dxSortableOptions.itemOrientation(/api-reference/10 UI Components/dxSortable/1 Configuration/itemOrientation.md)(common.d.ts)
+dxTabsOptions.orientation(/api-reference/10 UI Components/dxTabs/1 Configuration/orientation.md)(common.d.ts)
 dxTileViewOptions.direction(/api-reference/10 UI Components/dxTileView/1 Configuration/direction.md)(common.d.ts)
 -->

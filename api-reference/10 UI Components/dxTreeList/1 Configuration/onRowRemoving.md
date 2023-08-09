@@ -22,7 +22,7 @@ Model data. Available only if you use Knockout.
 **true**, a Promise resolved with **true**, or a rejected Promise stops row removal.       
 **false** or a Promise resolved with **false** or **undefined** continues row removal.
 
-##### field(e.data): any
+##### field(e.data): Object
 The data of the row that should be removed.
 
 ##### field(e.key): any

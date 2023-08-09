@@ -21,7 +21,6 @@ Specifies the mode in which all the records are selected. Applies only if **sele
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"
 } 
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-disable-selecting-certain-rows"
 }

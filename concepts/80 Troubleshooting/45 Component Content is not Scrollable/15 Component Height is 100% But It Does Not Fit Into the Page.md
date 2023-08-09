@@ -1,4 +1,6 @@
-This situation usually occurs when none of parent elements has a fixed height.
+This situation usually occurs when none of parent elements has a fixed height. For example, on the image below DataGrid does not fit the page.
+
+![DataGrid exceeds the page](/images/Troubleshooting/scrolling-whole-page.gif)
 
 If a parent element sets a relative height, one of its parents should set a fixed height. 
 

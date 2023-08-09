@@ -27,7 +27,6 @@ The current provider's map data.
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-map-add-the-current-location-marker"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-map-display-step-by-step-directions"
 }

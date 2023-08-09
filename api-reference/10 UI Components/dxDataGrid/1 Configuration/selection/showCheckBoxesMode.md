@@ -27,7 +27,6 @@ The selection column with all the checkboxes is hidden. Users can select rows wi
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionModes/"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-select-all-checkboxes"
 }

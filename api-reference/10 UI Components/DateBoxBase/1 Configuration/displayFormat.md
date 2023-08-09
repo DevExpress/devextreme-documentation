@@ -15,7 +15,6 @@ The default display format is selected automatically based on the current [local
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateRangeBox/Formatting/"        
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/getting-started-with-devextreme-daterangebox"
 }

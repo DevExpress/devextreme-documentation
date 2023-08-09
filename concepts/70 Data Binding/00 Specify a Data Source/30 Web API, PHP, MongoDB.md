@@ -167,7 +167,6 @@ To access the server from the client, configure the [CustomStore](/api-reference
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-with-webapi"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-with-webapi"
 }

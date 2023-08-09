@@ -25,7 +25,6 @@ When there are multiple SpeedDialActions, they are collected in a speed dial men
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/Floating_Action_Button/Getting_Started_with_Floating_Action_Button/" 
 }
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/jQuery/MaterialBlueLight/"
 }

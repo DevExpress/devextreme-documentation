@@ -34,7 +34,6 @@ dx.web.js, dx.all.js
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/PivotGrid/Getting_Started_with_PivotGrid/" 
 }
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/"
 }

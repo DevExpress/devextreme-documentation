@@ -1,9 +1,9 @@
-If your component does not display a scrollbar, while you can scroll the page or the parent element, check the following conditions:
+If your component does not display a scrollbar while you can scroll the page or the parent element, check the following conditions:
 
 - None of the component parents in DOM have a fixed height.
 - The component height is `auto`.
 
-The image below shows DataGrid in Popup, and scrolling is enabled in Popup, not in DataGrid.
+The image below shows DataGrid in Popup, but scrolling is enabled in Popup and not in DataGrid.
 
 ![DataGrid in Popup with a native scrollbar](/images/Troubleshooting/scrolling-grid-in-popup-native-scrolling.gif)
 

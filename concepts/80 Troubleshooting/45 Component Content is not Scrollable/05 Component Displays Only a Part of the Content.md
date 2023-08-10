@@ -1,4 +1,4 @@
-Sometimes a component displays only part of its content and has no scrollbar. Possible reasons are the following:
+Sometimes a component displays only part of its content and has no scrollbar. The following can be possible reasons:
 
 - A parent element sets a fixed height and `overflow: hidden`.
 - The component height is `auto`.

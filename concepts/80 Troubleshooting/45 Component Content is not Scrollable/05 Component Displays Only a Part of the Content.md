@@ -3,7 +3,7 @@ Sometimes a component displays only part of its content and has no scrollbar. Po
 - A parent element sets a fixed height and `overflow: hidden`.
 - The component height is `auto`.
 
-For example, put DataGrid into Popup. The DataGrid [height](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height) property's default value is `auto`. So, the DataGrid component automatically adjusts its height to accommodate all rows. The component does not need its own scrollbar because the height for rows is enough.
+For example, put a DataGrid into a Popup. The DataGrid's default [height](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#height) value is `auto`. This means that the component automatically adjusts its height to accommodate all rows and does not display a scrollbar. 
 
 ![DataGrid in Popup with no scrollbar](/images/Troubleshooting/scrolling-grid-in-popup-no-scrollbar.png)
 

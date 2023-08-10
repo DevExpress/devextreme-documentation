@@ -1,3 +1,3 @@
-Sometimes a component displays a scrollbar but elements below the component overlap the component content. For example, your task is to place a component between a header and footer with fixed heights but this issue occurs.
+Sometimes a scrollbar is available, but elements below the component overlap component content. For example, this issue may occur if you place a component between a header and a footer with fixed heights.
 
 To resolve the issue, assign a function to the component **height** property to calculate the required height. Alternatively, use [CSS calc function](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) in the **height** rule.

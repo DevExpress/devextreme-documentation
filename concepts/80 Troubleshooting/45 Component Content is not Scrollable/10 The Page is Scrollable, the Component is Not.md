@@ -7,4 +7,4 @@ The image below shows DataGrid in Popup, and scrolling is enabled in Popup, not 
 
 ![DataGrid in Popup with a native scrollbar](/images/Troubleshooting/scrolling-grid-in-popup-native-scrolling.gif)
 
-If all the conditions are met, to resolve the issue, limit the component's height. For example, set a fixed height either for the component or for one of its parent elements.
+To resolve the issue, limit the component's height. For example, set a fixed height either for the component or for one of its parent elements.

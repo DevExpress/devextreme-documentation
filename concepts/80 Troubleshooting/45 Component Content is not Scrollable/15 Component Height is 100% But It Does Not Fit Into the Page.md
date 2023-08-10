@@ -1,4 +1,4 @@
-This situation usually occurs when none of parent elements has a fixed height. For example, on the image below DataGrid does not fit the page.
+This situation usually occurs when none of parent elements has a fixed height. For example, on the image below DataGrid does not fit the page. Page scrollbar appears. 
 
 ![DataGrid exceeds the page](/images/Troubleshooting/scrolling-whole-page.gif)
 

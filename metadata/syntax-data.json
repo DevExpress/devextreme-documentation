@@ -7156,6 +7156,9 @@
     "dxCalendarOptions.selectionMode": {
       "vue": "selection-mode"
     },
+    "dxCalendarOptions.selectWeekOnClick": {
+      "vue": "select-week-on-click"
+    },
     "dxCalendarOptions.showTodayButton": {
       "vue": "show-today-button"
     },

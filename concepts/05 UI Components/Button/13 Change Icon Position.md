@@ -1,4 +1,4 @@
-To align an icon to the right, assign `true` to the [rtlEnabled](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#rtlEnabled) property:
+To align an icon to the right, assign `true` to the [rtlEnabled](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/rtlEnabled.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#rtlEnabled') property:
 
 ---
 ##### jQuery

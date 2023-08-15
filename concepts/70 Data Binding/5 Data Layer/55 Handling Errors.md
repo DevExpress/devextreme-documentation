@@ -42,6 +42,9 @@ DevExtreme also provides an ability to handle errors that occur during operation
 
 ---
 
+---
+##### jQuery 
+
 The following example illustrates how to handle errors that occurred during the execution of the [load](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') operation of a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
     <!--JavaScript-->
@@ -52,3 +55,5 @@ The following example illustrates how to handle errors that occurred during the 
         .fail(function(error) {
             console.log(error.message);
         });
+
+---

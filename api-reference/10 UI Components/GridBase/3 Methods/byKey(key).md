@@ -15,12 +15,17 @@ The data object's key.
 ---
 The following code shows how to get a data object whose key is 15.
 
-    <!--JavaScript-->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     widgetInstance.byKey(15).done(function(dataObject) {
             // process "dataObject"
         }).fail(function(error) {
             // handle error
         });
+
+---
 
 #####See Also#####
 #include common-link-callmethods

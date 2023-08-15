@@ -16,5 +16,6 @@ dxChartOptions.scrollBar.position(/api-reference/10 UI Components/dxChart/1 Conf
 dxChartOptions.valueAxis.position(/api-reference/10 UI Components/dxChart/9 Types/ValueAxis/position.md)(common.d.ts)
 dxDropDownEditorOptions.validationMessagePosition(/api-reference/10 UI Components/dxDropDownEditor/1 Configuration/validationMessagePosition.md)
 dxPopoverOptions.position(/api-reference/10 UI Components/dxPopover/1 Configuration/position.md)
+dxTabPanelOptions.tabsPosition(/api-reference/10 UI Components/dxTabPanel/1 Configuration/tabsPosition.md)(common.d.ts)
 EditorOptions.validationMessagePosition(/api-reference/10 UI Components/Editor/1 Configuration/validationMessagePosition.md)(common.d.ts)
 -->

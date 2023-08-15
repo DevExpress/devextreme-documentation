@@ -17166,6 +17166,9 @@
     "dxTabPanelOptions.swipeEnabled": {
       "vue": "swipe-enabled"
     },
+    "dxTabPanelOptions.tabsPosition": {
+      "vue": "tabs-position"
+    },
     "dxTabs": {
       "angular": "dx-tabs",
       "react": "Tabs",

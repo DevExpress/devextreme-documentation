@@ -361,8 +361,8 @@ When the server receives the data processing settings, it should apply them to t
     {
         data: [{
             key: "Group 1",
-            items: [ ... ],          // subgroups or data objects if there are no further subgroups (check isExpanded = true)
-                                     // can be null if isExpanded = false 
+            items: [ ... ],          // subgroups or data objects if there are no further subgroups (check group.isExpanded = true)
+                                     // is null if group.isExpanded = false 
             count: 3,                // count of items in this group; required only when items = null
             summary: [30, 20, 40]    // group summary results
         },
@@ -373,7 +373,7 @@ When the server receives the data processing settings, it should apply them to t
         groupCount: 35                // if requireGroupCount = true
     }
 
-If the server did not receive the **group** setting, the structure should be different:
+If the server did not receive the [group](/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#group) setting, the structure should be different:
 
     {
         data: [ ... ],               // data objects

@@ -373,7 +373,7 @@ When the server receives the data processing settings, it should apply them to t
         groupCount: 35                // if requireGroupCount = true
     }
 
-If the server did not receive the [group](/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#group) setting, the structure should be different:
+If the server did not receive the [group](/api-reference/30%20Data%20Layer/CustomStore/LoadOptions/group.md '/Documentation/ApiReference/Data_Layer/CustomStore/LoadOptions/#group') setting, the structure should be different:
 
     {
         data: [ ... ],               // data objects

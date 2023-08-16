@@ -405,7 +405,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
 ---
 
-For further information on the Form UI component, refer to the following resources:
+For more information on the Form UI component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/)
 * [API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')

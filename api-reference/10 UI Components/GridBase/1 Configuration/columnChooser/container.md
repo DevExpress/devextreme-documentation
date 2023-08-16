@@ -8,7 +8,7 @@ default: undefined
 Specifies a container in which the column chooser should be rendered.
 
 ---
-Use this property if you need to change the element in which the column chooser is rendered. For example, if your component is inside the Popup, set this property to popup container.
+Use this property if you need to change the element in which the column chooser is rendered. For example, if your component is inside the Popup, set this property to 'popup container'.
 
 ---
 ##### jQuery

@@ -262,6 +262,149 @@ The code below shows how to add a submit button, but does not show how to implem
 
 ---
 
+Alternatively, if you want to implement custom validation logic, handle the Button [click](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) event:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#form").dxForm({
+            // ...
+            items: [{
+                itemType: "button",
+                buttonOptions: {
+                    text: "Submit the Form",
+                    onClick: function() {
+                        const validationResult = formInstance.validate(); // get Form instance beforehand
+                        if (validationResult.isValid)
+                            document.getElementById("form-container").submit();
+                        else
+                            alert("Form is invalid");
+                    }
+                }
+            }]
+        });
+    });
+
+    <!-- tab: index.html -->
+    <form action="/employee-page" id="form-container">
+        <div id="form"></div>
+    </form>
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <form action="/employee-page" id="form-container">
+        <dx-form ... >
+            <dxi-item 
+                itemType="button"
+                [buttonOptions]="submitButtonOptions">
+            </dxi-item>
+        </dx-form>
+    </form>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+
+        submitButtonOptions = {
+            text: "Submit the Form",
+            onClick: function() {
+                const validationResult = formInstance.validate(); // get Form instance beforehand
+                if (validationResult.isValid)
+                    document.getElementById("form-container").submit();
+                else
+                    alert("Form is invalid");
+            }
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <form action="/employee-page" id="form-container">
+            <DxForm ... >
+                <DxButtonItem :button-options="submitButtonOptions"/>
+            </DxForm>
+        </form>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { 
+        DxForm, 
+        DxButtonItem,
+    } from 'devextreme-vue/form';
+
+    const submitButtonOptions = {
+        text: "Submit the Form",
+        onClick: function() {
+            const validationResult = formInstance.validate(); // get Form instance beforehand
+            if (validationResult.isValid)
+                document.getElementById("form-container").submit();
+            else
+                alert("Form is invalid");
+        }
+    };
+
+    export default {
+        components: {
+            DxForm,
+            DxButtonItem
+        },
+        data: {
+            return: {
+                submitButtonOptions
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {
+        Form,
+        ButtonItem
+    } from 'devextreme-react/form';
+
+    const submitButtonOptions = {
+        text: "Submit the Form",
+        onClick: function() {
+            const validationResult = formInstance.validate(); // get Form instance beforehand
+            if (validationResult.isValid)
+                document.getElementById("form-container").submit();
+            else
+                alert("Form is invalid");
+        }
+    };
+
+    const App = () => {
+        return (
+            <form action="/employee-page" id="form-container">
+                <Form ... >
+                    <ButtonItem buttonOptions={submitButtonOptions} />
+                </Form>
+            </form>
+        );
+    }
+
+    export default App;
+
+---
+
 For further information on the Form UI component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/)

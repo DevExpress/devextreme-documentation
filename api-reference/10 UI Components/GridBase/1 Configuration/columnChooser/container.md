@@ -13,7 +13,7 @@ Use this property if you need to change the element in which the column chooser 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function(){
         $("#{widgetName}").dx{WidgetName}({
             // ...
@@ -31,17 +31,6 @@ Use this property if you need to change the element in which the column chooser 
         <dxo-column-chooser container="#popupContainer" >
         </dxo-column-chooser>
     </dx-{widget-name}>
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core'; 
-
-    @Component({ 
-        selector: 'app-root', 
-        templateUrl: './app.component.html', 
-        styleUrls: ['./app.component.css'] 
-    }) 
-
-    export class AppComponent {}
 
 ##### Vue
 

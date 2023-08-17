@@ -27,3 +27,5 @@ The following table shows how the component behaves when you assign different va
         <td><img src="/images/DataGrid/sync-lookup-filter-values/header-filter-true.png" alt="Header filter is synced with Grid values" /></td>
     </tr>
 </table>
+
+[note] If `filtering` is enabled in [remoteOperations]({basewidgetpath}/Configuration/remoteOperations/) and this property is set to `true` (default value), the component uses the `group` parameter to fetch values. As a result, lookup columns can lose pagination (the DataSource.[paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) property has no effect). To solve the issue, disable this property.

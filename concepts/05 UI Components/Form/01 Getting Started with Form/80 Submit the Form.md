@@ -262,7 +262,7 @@ The code below shows how to add a submit button, but does not show how to implem
 
 ---
 
-Alternatively, if you want to implement custom validation logic, handle the Button [click](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) event:
+Alternatively, if you want to implement custom validation logic, handle the Button [click](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event:
 
 ---
 ##### jQuery

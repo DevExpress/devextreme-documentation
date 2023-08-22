@@ -16,6 +16,10 @@
 <td><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#allowSearch">allowSearch</a><br><b>columnChooser.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/#rowComponent">rowComponent</a><br><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#filter">filter</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/#rowRender">rowRender</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxDataGrid/Configuration/#rowTemplate">rowTemplate</a></td>
 </tr>
 <tr>
+<td>Form</td>
+<td><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxForm/Methods/#resetValues()">resetValues()</a></td>
+</tr>
+<tr>
 <td>Gantt</td>
 <td><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/23_2/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>

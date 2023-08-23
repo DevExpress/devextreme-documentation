@@ -17,4 +17,4 @@ A user can select only one date at a time. The selected value is stored in the [
 A user can select multiple dates at a time. The selected values are stored in the [values](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#values) property.
 
 - *'range'*      
-A user can select a range of dates. The first and the last range dates are stored in the [values](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#values) property.
+A user can select a range of dates. The first and the last date in the range are stored in the [values](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#values) property.

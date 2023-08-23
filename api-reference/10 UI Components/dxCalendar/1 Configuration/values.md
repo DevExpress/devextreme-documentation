@@ -5,7 +5,7 @@ default: []
 ---
 ---
 ##### shortDescription
-An array of values that specify the date and time currently selected in the calendar. Available only for *'multiple'* and *'range'* [selection modes](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode).
+An array of values that specify the date and time selected in the calendar. Available only for *'multiple'* and *'range'* [selection modes](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode).
 
 ---
 This property can be an array of the following formats:

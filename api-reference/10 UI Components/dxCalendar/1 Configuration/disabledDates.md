@@ -24,7 +24,7 @@ In cases of *'multiple'* and *'range'* [selection modes](/Documentation/ApiRefer
 
 - If you specify the [values](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#values) property programmatically, disabled dates in the values array are selected.
 
-- If you use UI to change selection (by clicks, Enter key, or [selecting a week on click](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectWeekOnClick)), you cannot select disabled dates in the *'multiple'* mode. In the *'range'* mode, disabled dates cannot be selected as the range start and range end, but can be included inside the range.
+- If you use UI to change selection (clicks on dates or [weeks](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectWeekOnClick), the Enter key), you cannot select disabled dates in *'multiple'* mode. In *'range'* mode, disabled dates cannot start or end a range, but can be included in the middle.
 
 #####See Also#####
 - [Specify the Value Range](/concepts/05%20UI%20Components/Calendar/12%20Specify%20the%20Value%20Range.md '/Documentation/Guide/UI_Components/Calendar/Specify_the_Value_Range/')

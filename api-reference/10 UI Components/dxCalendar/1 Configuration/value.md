@@ -8,7 +8,7 @@ default: null
 An object or a value that specifies the date and time currently selected in the calendar. Available only for *'single'* [selection mode](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode).
 
 ---
-You can use the following formats to specify the current UI component value:
+You can use the following date formats:
 
 - Date    
 Specifies the date directly.

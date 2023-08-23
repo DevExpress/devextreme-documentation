@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can select a week by clicking on a week number.
 
 ---
-<!-- Description goes here -->
+This property is in effect if [showWeekNumbers](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#showWeekNumbers) is enabled and [selectionMode](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode) is *'multiple'* or *'range'*. 

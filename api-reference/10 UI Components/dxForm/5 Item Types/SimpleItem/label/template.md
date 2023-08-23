@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-A template that can be used to replace the label with custom content.
+A template that can be used to replace the label with custom content. Applies only to labels outside their editors (see [labelMode](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/labelMode.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelMode')).
 
 ##### param(itemData): Object
 The item's data.

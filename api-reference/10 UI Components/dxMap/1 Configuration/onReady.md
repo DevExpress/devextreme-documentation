@@ -23,6 +23,7 @@ Model data. Available only if Knockout is used.
 The current provider's map data.
 
 ---
+You can use `component` field to access properties that are common for all supported Map [providers](/Documentation/ApiReference/UI_Components/dxMap/Types/#MapProvider). To access provider-specific API, utilize the `originalMap` parameter. The examples below demonstrate this solution:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-map-add-the-current-location-marker"

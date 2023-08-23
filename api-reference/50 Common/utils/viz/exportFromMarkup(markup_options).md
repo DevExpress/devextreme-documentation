@@ -80,9 +80,10 @@ The SVG block's width in pixels.
 This field is <font color="red">required</font>.
 
 ---
+[important] We recommend that you do not use the [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) element to define markup (Safari [does not support](https://bugs.webkit.org/show_bug.cgi?id=23113) this element).
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ExportCustomMarkup/"
-}
 
 #####See Also#####
 - [DevExpress.viz.getMarkup(widgetInstances)](/api-reference/50%20Common/utils/viz/getMarkup(widgetInstances).md '/Documentation/ApiReference/Common/utils/viz/#getMarkupwidgetInstances')

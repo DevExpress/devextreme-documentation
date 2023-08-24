@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-An object or a value that specifies the date and time selected in the calendar. Available only for *'single'* [selection mode](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode).
+An object or a value that specifies the date and time selected in the calendar. Available only for *'single'* [selection mode](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode').
 
 ---
 You can use the following date formats:

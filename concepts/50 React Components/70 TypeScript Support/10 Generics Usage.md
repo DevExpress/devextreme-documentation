@@ -2,6 +2,13 @@
     import { useCallback, useRef } from 'react';
     import service, { Employee } from './data';
     import DataGrid from 'devextreme-react/data-grid';
+    
+    function onEditorPreparing(e: EditorPreparingEvent<Employee, number>) {
+        if (e.dataField === 'LastName' && e.parentType === 'dataRow') {
+            e.editorOptions.disabled = e.row?.data && e.row?.data.FirstName === '';
+        }
+    }
+
     function App() {
         const dataGrid = useRef<DataGrid<Employee, number>>(null);
 

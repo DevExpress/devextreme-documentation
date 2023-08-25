@@ -163,6 +163,7 @@ You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/
                     minSize={37}
                     height={250}
                     render={ () => <div style={{width: 150 + "px"}}>Drawer content</div> }
+                >
                     <div>View content</div>
                 </Drawer>
             </div>

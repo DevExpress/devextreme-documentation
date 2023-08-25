@@ -15,7 +15,7 @@ The images below show the difference between the *'betweenLabels'* and *'crossLa
 
 ![discreteAxisDivisionMode set to 'crossLabels'](/images/ChartJS/discreteAxisDivisionMode/cross.png)
 
-#include btn-open-demo with {
+#include common-demobutton with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Line/"
 }
 

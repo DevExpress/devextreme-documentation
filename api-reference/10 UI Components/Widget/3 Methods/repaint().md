@@ -3,10 +3,10 @@ id: Widget.repaint()
 ---
 ---
 ##### shortDescription
-Repaints the UI component without reloading data. Call it to update the UI component's markup.
+Renders the component anew without reloading data. Use the method to update the component's markup and appearance on the fly.
 
 ---
-The method repaints Toolbar and re-initializes all its items.
+The method re-initializes the component with new settings. The process resets the component's state, and erases the history of content modification. When you `repaint()` the component, the "undo" button and the "redo" button.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-components-with-resize-observer"

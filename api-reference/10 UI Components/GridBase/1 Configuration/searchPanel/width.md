@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.searchPanel.width
-type: Number
+type: String | Number
 default: 160
 ---
 ---

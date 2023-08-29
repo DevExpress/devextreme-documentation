@@ -29,7 +29,6 @@ DevExtreme supports Generics for properties and methods that operate internal da
             <DataGrid<Employee, number>
                 ref={dataGrid}
                 onEditorPreparing={onEditorPreparing}
-                onInitNewRow={onInitNewRow}
                 dataSource={dataSource}>
             </DataGrid>
         );

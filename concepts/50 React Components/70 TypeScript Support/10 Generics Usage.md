@@ -3,11 +3,10 @@ DevExtreme supports Generics for properties and methods that operate internal da
     <!-- tab: App.tsx -->
     import { useRef } from 'react';
     import service, { Employee } from './data';
-    import DataGrid from 'devextreme-react/data-grid';
+    import DataGrid, { DataGridTypes } from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
-    import { EditorPreparingEvent } from 'devextreme/ui/data_grid';
 
-    function onEditorPreparing(e: EditorPreparingEvent<Employee, number>) {
+    function onEditorPreparing(e: DataGridTypes.EditorPreparingEvent<Employee, number>) {
         if (e.dataField === 'LastName' && e.parentType === 'dataRow') {
             e.editorOptions.disabled = e.row?.data && e.row?.data.FirstName === '';
         }

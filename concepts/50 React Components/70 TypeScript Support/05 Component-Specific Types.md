@@ -12,4 +12,4 @@ To import component-specific types, use the `ComponentTypes` declaration where `
     }
     </script>
 
-You can also [import component-specific types](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/) from the `devextreme/ui` package.
+You can also [import component-specific types](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme/ui` package.

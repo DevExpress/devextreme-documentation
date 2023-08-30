@@ -17,8 +17,11 @@ DevExtreme supports Generics for properties and methods that operate internal da
     </template>
     <script setup lang="ts">
     import { ref } from "vue";
-    import { DxDataGrid, DataGridTypes } from "devextreme-vue/data-grid";
+
+    import { DxDataGrid } from "devextreme-vue/data-grid";
     import { DxButton } from "devextreme-vue/button";
+
+    import type { DxDataGridTypes } from "devextreme-vue/data-grid";
     import type dxDataGrid from 'devextreme/ui/data_grid';
     import type { Employee } from '../data';
 
@@ -29,7 +32,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
         dataGridInstance.option("disabled", true);
     }
 
-    function onEditorPreparing(e: DataGridTypes.EditorPreparingEvent<Employee, number>) {
+    function onEditorPreparing(e: DxDataGridTypes.EditorPreparingEvent<Employee, number>) {
         if (e.dataField === 'LastName' && e.parentType === 'dataRow') {
             e.editorOptions.disabled = e.row?.data?.FirstName === '';
         }

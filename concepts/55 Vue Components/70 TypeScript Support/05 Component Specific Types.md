@@ -7,8 +7,7 @@ To import component-specific types, use the `DxComponentTypes` declaration where
 
     <script setup lang="ts">
     import DxDateBox from "devextreme-vue/date-box";
-
-    import { DxDateBoxTypes } from "devextreme-vue/date-box";
+    import type { DxDateBoxTypes } from "devextreme-vue/date-box";
 
     const dateType: DxDateBoxTypes.DateType = "datetime";
     </script>

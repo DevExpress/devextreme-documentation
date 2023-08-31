@@ -11,7 +11,7 @@ The DevExtreme Vue UI Component Suite provides the following platform-specific f
 
 - [Declarative configuration syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/')
 
-- [TypeScript support](/concepts/55%20Vue%20Components/70%20TypeScript%20Support.md '/Documentation/Guide/Vue_Components/TypeScript_Support/')
+- [TypeScript support](/concepts/55%20Vue%20Components/70%20TypeScript%20Support/00%20TypeScript%20Support.md '/Documentation/Guide/Vue_Components/TypeScript_Support/')
 
 All DevExtreme UI component suites, including Vue, share architecture and core features. The following core features are common to all suites:
 

@@ -20,6 +20,12 @@ Information about the checked date.
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/"
 }
 
+In cases of *'multiple'* and *'range'* [selection modes](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode'), the behavior of disabled dates in Calendar is the following:
+
+- If you specify the [values](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/values.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#values') property programmatically, disabled dates are selected in the values array.
+
+- If you use UI to change selection (clicks on dates or [weeks](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectWeekOnClick.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectWeekOnClick'), the Enter key), you cannot select disabled dates in *'multiple'* mode. In *'range'* mode, disabled dates cannot start or end a range, but can be included in the middle.
+
 #####See Also#####
 - [Specify the Value Range](/concepts/05%20UI%20Components/Calendar/12%20Specify%20the%20Value%20Range.md '/Documentation/Guide/UI_Components/Calendar/Specify_the_Value_Range/')
 

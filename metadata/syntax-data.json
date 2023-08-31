@@ -17191,6 +17191,9 @@
     "dxTabsOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
+    "dxTabsOptions.iconPosition": {
+      "vue": "icon-position"
+    },
     "dxTabsOptions.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -19280,6 +19283,9 @@
     },
     "enums.HtmlEditorPredefinedToolbarItem": {
       "vue": "html-editor-predefined-toolbar-item"
+    },
+    "enums.IconPosition": {
+      "vue": "icon-position"
     },
     "enums.ItemDeleteMode": {
       "vue": "item-delete-mode"

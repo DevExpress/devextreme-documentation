@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies one of three selection modes: single, multiple, or range.
 
 ---
 <!--

@@ -6,13 +6,13 @@ type: function(e)
 ##### shortDescription
 <!-- %shortDescription% -->
 
-##### param(e): ui/tree_list:ColumnButtonClickEvent
+##### param(e): Object
 <!-- %param(e)% -->
 
 ##### field(e.column): dxTreeListColumn
 <!-- %field(e.column)% -->
 
-##### field(e.component): {WidgetName}
+##### field(e.component): dxTreeList
 <!-- %field(e.component)% -->
 
 ##### field(e.element): DxElement

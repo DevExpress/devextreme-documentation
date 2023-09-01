@@ -5,7 +5,11 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies Tabs orientation.
 
 ---
-<!-- Description goes here -->
+The following orientation modes are available:
+
+- *'horizontal'* (default)    
+
+- *'vertical'*

@@ -7156,6 +7156,9 @@
     "dxCalendarOptions.selectionMode": {
       "vue": "selection-mode"
     },
+    "dxCalendarOptions.selectWeekOnClick": {
+      "vue": "select-week-on-click"
+    },
     "dxCalendarOptions.showTodayButton": {
       "vue": "show-today-button"
     },
@@ -17292,6 +17295,9 @@
     "dxTabPanelOptions.swipeEnabled": {
       "vue": "swipe-enabled"
     },
+    "dxTabPanelOptions.tabsPosition": {
+      "vue": "tabs-position"
+    },
     "dxTabs": {
       "angular": "dx-tabs",
       "react": "Tabs",
@@ -17313,6 +17319,9 @@
     },
     "dxTabsOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
+    },
+    "dxTabsOptions.iconPosition": {
+      "vue": "icon-position"
     },
     "dxTabsOptions.items": {
       "angular": "dxi-item",
@@ -19408,6 +19417,9 @@
     },
     "enums.HtmlEditorPredefinedToolbarItem": {
       "vue": "html-editor-predefined-toolbar-item"
+    },
+    "enums.IconPosition": {
+      "vue": "icon-position"
     },
     "enums.ItemDeleteMode": {
       "vue": "item-delete-mode"

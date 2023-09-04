@@ -1,5 +1,6 @@
 ---
 id: dxForm.resetValues()
+dep: dxForm.clear()
 ---
 ---
 ##### shortDescription

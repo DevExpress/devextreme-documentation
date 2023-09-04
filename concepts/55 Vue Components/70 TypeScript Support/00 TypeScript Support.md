@@ -62,19 +62,6 @@ The following code shows an example of using TypeScript with DevExtreme componen
     }
     </script>
 
-To import component-specific types, use the `DxComponentTypes` declaration where `Component` is the component name:
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxDateBox :type="dateType" />
-    </template>
-
-    <script setup lang="ts">
-    import DxDateBox, { DxDateBoxTypes } from "devextreme-vue/date-box";
-
-    const dateType: DxDateBoxTypes.DateType = "datetime";
-    </script>
-
 #####See Also#####
 - <a href="https://v3.vuejs.org/guide/typescript-support.html" target="_blank">TypeScript Support in Vue Documentation</a>
 

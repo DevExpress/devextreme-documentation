@@ -15,8 +15,10 @@ You can specify most of the [Calendar properties](/api-reference/10%20UI%20Compo
 - [max](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#max')
 - [min](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#min')
 - [onValueChanged](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#onValueChanged')
+- [selectionMode](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode')
 - [tabIndex](/api-reference/10%20UI%20Components/Widget/1%20Configuration/tabIndex.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#tabIndex')
 - [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value')
+- [values](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/values.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#values')
 
 #include widgets-config-object-option-note with {
     optionName: "calendarOptions"

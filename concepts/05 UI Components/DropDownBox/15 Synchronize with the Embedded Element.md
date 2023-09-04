@@ -383,7 +383,6 @@ This step's implementation depends on the embedded UI component's API and the li
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-display-tags-in-input-field"
 }
-
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget"
 }

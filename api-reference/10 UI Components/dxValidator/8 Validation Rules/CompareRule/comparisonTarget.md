@@ -6,7 +6,7 @@ type: function()
 ##### shortDescription
 Specifies the function whose return value is used for comparison with the validated value.
 
-##### return: Object
+##### return: any
 A value to be compared with the validated value.
 
 ---

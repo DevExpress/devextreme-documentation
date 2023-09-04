@@ -1,6 +1,6 @@
 ---
 uid: common/grids:SearchPanel.width
-type: Number
+type: String | Number
 default: 160
 ---
 ---

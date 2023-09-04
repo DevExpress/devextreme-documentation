@@ -10,6 +10,7 @@ Refer to the following list for detailed information about each component's acce
 ## Drop-Down Editors
 
 - [Autocomplete](/concepts/05%20UI%20Components/Autocomplete/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Autocomplete/Accessibility/')
+- [DateRangeBox](/concepts/05%20UI%20Components/DateRangeBox/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DateRangeBox/Accessibility/')
 - [DropDownBox](/concepts/05%20UI%20Components/DropDownBox/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DropDownBox/Accessibility/')
 - [Lookup](/concepts/05%20UI%20Components/Lookup/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Lookup/Accessibility/')
 - [SelectBox](/concepts/05%20UI%20Components/SelectBox/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/SelectBox/Accessibility/')

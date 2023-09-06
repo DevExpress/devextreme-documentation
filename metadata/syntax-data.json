@@ -17107,6 +17107,9 @@
     "dxTabPanelOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
+    "dxTabPanelOptions.iconPosition": {
+      "vue": "icon-position"
+    },
     "dxTabPanelOptions.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -19284,9 +19287,6 @@
     "enums.HtmlEditorPredefinedToolbarItem": {
       "vue": "html-editor-predefined-toolbar-item"
     },
-    "enums.IconPosition": {
-      "vue": "icon-position"
-    },
     "enums.ItemDeleteMode": {
       "vue": "item-delete-mode"
     },
@@ -19520,6 +19520,9 @@
     },
     "enums.SummaryType": {
       "vue": "summary-type"
+    },
+    "enums.TabsIconPosition": {
+      "vue": "tabs-icon-position"
     },
     "enums.TextBoxPredefinedButton": {
       "vue": "text-box-predefined-button"

@@ -17244,6 +17244,9 @@
     "dxTabsOptions.showNavButtons": {
       "vue": "show-nav-buttons"
     },
+    "dxTabsOptions.stylingMode": {
+      "vue": "styling-mode"
+    },
     "dxTagBox": {
       "angular": "dx-tag-box",
       "react": "TagBox",
@@ -19523,6 +19526,9 @@
     },
     "enums.TabsIconPosition": {
       "vue": "tabs-icon-position"
+    },
+    "enums.TabsStyle": {
+      "vue": "tabs-style"
     },
     "enums.TextBoxPredefinedButton": {
       "vue": "text-box-predefined-button"

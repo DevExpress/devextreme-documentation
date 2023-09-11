@@ -17166,6 +17166,9 @@
     "dxTabPanelOptions.showNavButtons": {
       "vue": "show-nav-buttons"
     },
+    "dxTabPanelOptions.stylingMode": {
+      "vue": "styling-mode"
+    },
     "dxTabPanelOptions.swipeEnabled": {
       "vue": "swipe-enabled"
     },

@@ -24,6 +24,7 @@
 - [Custom Drag & Drop](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/)
 - [Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/)
 - [All Day Panel Mode](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/AllDayPanelMode/)
+- [Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/)
 
 **Grouping**
 
@@ -38,8 +39,4 @@
 - [Increased View Duration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IncreaseViewDuration/)
 - [Limit the Appointment Count per Cell](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/LimitAppointmentCountPerCell/)
 - [Context Menu Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/)
-
-**More Features**
-
-- [Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/)
 - [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/)

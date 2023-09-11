@@ -1,6 +1,6 @@
 ---
 id: RowInsertingInfo.cancel
-type: Promise<void>
+type: Boolean | Promise<Boolean> | Promise<void>
 ---
 ---
 ##### shortDescription

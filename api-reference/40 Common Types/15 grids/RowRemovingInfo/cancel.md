@@ -1,6 +1,6 @@
 ---
 id: RowRemovingInfo.cancel
-type: Boolean | Promise<void>
+type: Boolean | Promise<Boolean> | Promise<void>
 ---
 ---
 ##### shortDescription

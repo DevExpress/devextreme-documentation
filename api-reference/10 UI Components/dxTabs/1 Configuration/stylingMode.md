@@ -1,6 +1,7 @@
 ---
-id: RowRemovingInfo.cancel
-type: Boolean | Promise<Boolean> | Promise<void>
+id: dxTabs.Options.stylingMode
+type: Enums.TabsStyle
+default: 'primary'
 ---
 ---
 ##### shortDescription

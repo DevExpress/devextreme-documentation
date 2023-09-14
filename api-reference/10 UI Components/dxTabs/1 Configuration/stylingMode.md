@@ -5,7 +5,7 @@ default: 'primary'
 ---
 ---
 ##### shortDescription
-Specifies tab styling mode.
+Specifies active tab styling mode.
 
 ---
 The following styling modes are available:

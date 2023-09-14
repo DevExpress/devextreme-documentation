@@ -5,7 +5,7 @@ default: 'start'
 ---
 ---
 ##### shortDescription
-Specifies icon position inside the tab.
+Specifies icon position relative to the text inside the tab.
 
 ---
 The position can be on of the following:

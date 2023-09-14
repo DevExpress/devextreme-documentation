@@ -5,7 +5,19 @@ default: 'start'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies icon position inside the tab.
 
 ---
-<!-- Description goes here -->
+The position can be on of the following:
+
+- *'start'*    
+The icon is positioned before the text.
+
+- *'end'*    
+The icon is positioned after the text.
+
+- *'top'*    
+The icon is positioned at the top of the text.
+
+- *'bottom'*    
+The icon is positioned at the bottom of the text.

@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies icon position inside the tab.
 
 ---
 <!--

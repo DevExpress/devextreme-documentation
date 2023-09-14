@@ -5,7 +5,13 @@ default: 'primary'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies tab styling mode.
 
 ---
-<!-- Description goes here -->
+The following styling modes are available:
+
+- *'primary'*    
+The width of the underline is fixed.
+
+- *'secondary'*    
+The width of the underline depends on the tab content.

@@ -5,7 +5,15 @@ default: 'top'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies tab position relative to the panel.
 
 ---
-<!-- Description goes here -->
+The following positions are available:
+
+- *'top'* (default)    
+
+- *'bottom'*
+
+- *'right'*
+
+- *'left'*

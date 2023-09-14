@@ -8,7 +8,7 @@ default: 'horizontal'
 Specifies the component orientation.
 
 ---
-The following orientation modes are available:
+The following orientations are available:
 
 - *'horizontal'* (default)    
 

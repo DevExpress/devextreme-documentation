@@ -94,3 +94,98 @@ Options to be applied.
     }
 
 ---
+
+You can also set rules for multiple device types:
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    DevExpress.ui.dx{WidgetName}.defaultOptions({ 
+        device: [
+            { deviceType: 'desktop' },
+            { deviceType: 'tablet' },
+            { deviceType: 'phone' },
+        ],
+        options: {
+            // Here go the {WidgetName} properties
+        }
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import {WidgetName}, { Properties } from "devextreme/ui/{widget_name}";
+    // ...
+    export class AppComponent {
+        constructor () {
+            {WidgetName}.defaultOptions<Properties>({
+                device: [
+                    { deviceType: 'desktop' },
+                    { deviceType: 'tablet' },
+                    { deviceType: 'phone' },
+                ],
+                options: {
+                    // Here go the {WidgetName} properties
+                }
+            });
+        }
+    }
+
+##### Vue
+
+    <template>
+        <div>
+            <Dx{WidgetName} id="{widgetName}1" />
+            <Dx{WidgetName} id="{widgetName}2" />
+        </div>
+    </template>
+    <script>
+    import Dx{WidgetName} from "devextreme-vue/{widget-name}";
+    import {WidgetName} from "devextreme/ui/{widget_name}";
+
+    {WidgetName}.defaultOptions({
+        device: [
+            { deviceType: 'desktop' },
+            { deviceType: 'tablet' },
+            { deviceType: 'phone' },
+        ],
+        options: {
+            // Here go the {WidgetName} properties
+        }
+    });
+
+    export default {
+        components: {
+            Dx{WidgetName}
+        }
+    }
+    </script>
+
+
+##### React
+
+    import dx{WidgetName} from "devextreme/ui/{widget_name}";
+    import {WidgetName} from "devextreme-react/{widget-name}";
+     
+    dx{WidgetName}.defaultOptions({
+        device: [
+            { deviceType: 'desktop' },
+            { deviceType: 'tablet' },
+            { deviceType: 'phone' },
+        ],
+        options: {
+            // Here go the {WidgetName} properties
+        }
+    });
+        
+    export default function App() {
+        return (
+            <div>
+                <{WidgetName} id="{widgetName}1" />
+                <{WidgetName} id="{widgetName}2" />
+            </div>
+        )
+    }
+
+---

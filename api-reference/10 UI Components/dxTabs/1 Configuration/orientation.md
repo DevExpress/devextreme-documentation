@@ -5,7 +5,7 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-Specifies Tabs orientation.
+Specifies the component orientation.
 
 ---
 The following orientation modes are available:

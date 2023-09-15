@@ -17,15 +17,15 @@ If you need the same type for multiple components, you can also import this type
     <!-- tab: App.vue -->
     // In the sample below, ValidationRule is imported for each component:
 
-    import { DxDataGridTypes } from 'devextreme-react/data-grid';
-    import { DxFormTypes } from 'devextreme-react/form';
+    import { DxDataGridTypes } from 'devextreme-vue/data-grid';
+    import { DxFormTypes } from 'devextreme-vue/form';
 
     const dataGridValidationRule: DxDataGridTypes.ValidationRule;
     const formValidationRule: DxFormTypes.ValidationRule;
     
     // In the sample below, ValidationRule is imported from the common submodule:
 
-    import { ValidationRule } from 'devextreme-react/common';
+    import { ValidationRule } from 'devextreme-vue/common';
 
     const dataGridValidationRule: ValidationRule;
     const formValidationRule: ValidationRule;

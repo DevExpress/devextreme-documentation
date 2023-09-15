@@ -1,6 +1,6 @@
 The [onKeyDown](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onKeyDown) event handler allows you to track keys used while the UI component is in focus. You can use it to override the default keyboard support shortcuts, implement your own shortcuts, or extend existing ones.
 
-The following example shows how to override the **Space** key to switch a cell in cell/batch mode to the editing state instead of the current row being selected:
+The following example shows how to override the **Space Bar** keystroke so it switches a cell in cell/batch mode to the editing state instead of a current row select operation:
 
 ---
 ##### jQuery
@@ -9,8 +9,8 @@ The following example shows how to override the **Space** key to switch a cell i
     $("#dataGridContainer").dxDataGrid({
         // ...
         onKeyDown: function (e) {
-            if (e.event.keyCode === 32) { // Space key
-                e.event.preventDefault(); // Prevent the default behavior
+            if (e.event.keyCode === 32) { // Checks if the space bar key is pressed
+                e.event.preventDefault(); // Prevents the default behavior
                 const focusedRowIndex = e.component.option("focusedRowIndex");
                 const focusedColumnIndex = e.component.option("focusedColumnIndex");
                 e.component.editCell(focusedRowIndex, focusedColumnIndex);
@@ -36,8 +36,8 @@ The following example shows how to override the **Space** key to switch a cell i
 
     export class AppComponent {
         onKeyDown(e) {
-            if (e.event.keyCode === 32) { // Space key
-                e.event.preventDefault(); // Prevent the default behavior
+            if (e.event.keyCode === 32) { // Checks if the space bar key is pressed
+                e.event.preventDefault(); // Prevents the default behavior
                 const focusedRowIndex = e.component.option("focusedRowIndex");
                 const focusedColumnIndex = e.component.option("focusedColumnIndex");
                 e.component.editCell(focusedRowIndex, focusedColumnIndex);
@@ -65,8 +65,8 @@ The following example shows how to override the **Space** key to switch a cell i
         // ...
         methods: {
             onKeyDown(e) {
-                if (e.event.keyCode === 32) { // Space key
-                    e.event.preventDefault(); // Prevent the default behavior
+                if (e.event.keyCode === 32) { // Checks if the space bar key is pressed
+                    e.event.preventDefault(); // Prevents the default behavior
                     const focusedRowIndex = e.component.option("focusedRowIndex");
                     const focusedColumnIndex = e.component.option("focusedColumnIndex");
                     e.component.editCell(focusedRowIndex, focusedColumnIndex);
@@ -84,8 +84,8 @@ The following example shows how to override the **Space** key to switch a cell i
     import DataGrid from 'devextreme-react/data-grid';
 
     const onKeyDown = (e) => {
-        if (e.event.keyCode === 32) { // Space key
-            e.event.preventDefault(); // Prevent the default behavior
+        if (e.event.keyCode === 32) { // Specifies if the space bar key is pressed
+            e.event.preventDefault(); // Prevents the default behavior
             const focusedRowIndex = e.component.option("focusedRowIndex");
             const focusedColumnIndex = e.component.option("focusedColumnIndex");
             e.component.editCell(focusedRowIndex, focusedColumnIndex);

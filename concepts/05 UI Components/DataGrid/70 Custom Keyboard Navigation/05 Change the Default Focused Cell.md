@@ -1,4 +1,4 @@
-To specify which cell should be focused next when a user navigates through DataGrid, use the [onFocusedCellChanging](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedCellChanging) function. The code below uses `newColumnIndex` to set the column index of the next focused cell.
+To specify cell focus order when a user navigates through DataGrid, call the [onFocusedCellChanging](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedCellChanging) function. The code below uses `newColumnIndex` to set the column index of the next focused cell.
 
 ---
 ##### jQuery
@@ -7,8 +7,8 @@ To specify which cell should be focused next when a user navigates through DataG
     $("#dataGridContainer").dxDataGrid({
         // ...
         onFocusedCellChanging: function (e) {
-            if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell will be in the 'myField' column
-                e.newColumnIndex++; // If so, proceed to the next column
+            if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell is in the 'myField' column
+                e.newColumnIndex++; // Navigates to the next column
             }
         }
     });
@@ -31,8 +31,8 @@ To specify which cell should be focused next when a user navigates through DataG
     
     export class AppComponent {
         onFocusedCellChanging(e) {
-            if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell will be in the 'myField' column
-                e.newColumnIndex++; // If so, proceed to the next column
+            if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell is in the 'myField' column
+                e.newColumnIndex++; // Navigates to the next column
             }
         }
     }
@@ -57,8 +57,8 @@ To specify which cell should be focused next when a user navigates through DataG
         // ...
         methods: {
             onFocusedCellChanging(e) {
-                if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell will be in the 'myField' column
-                    e.newColumnIndex++; // If so, proceed to the next column
+                if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell is in the 'myField' column
+                    e.newColumnIndex++; // Navigates to the next column
                 }
             }
         }
@@ -73,8 +73,8 @@ To specify which cell should be focused next when a user navigates through DataG
     import DataGrid from 'devextreme-react/data-grid';
 
     const onFocusedCellChanging = (e) => {
-        if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell will be in the 'myField' column
-            e.newColumnIndex++; // If so, proceed to the next column
+        if (e.columns[e.newColumnIndex].dataField === "myField") { // Checks if the next focused cell is in the 'myField' column
+            e.newColumnIndex++; // Navigates to the next column
         }
     }
 

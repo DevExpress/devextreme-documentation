@@ -1,0 +1,1 @@
+You can use the [keyboardNavigation](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/) property to configure DataGrid [keyboard navigation](/Documentation/Guide/UI_Components/DataGrid/Accessibility/#Keyboard_Navigation). If the default behavior does not meet your requirements, you can change it.

@@ -3,7 +3,7 @@ id: dxForm.clear()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Resets the editor values to `undefined`.
 
 ---
 <!-- Description goes here -->

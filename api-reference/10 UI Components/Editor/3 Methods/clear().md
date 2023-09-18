@@ -3,7 +3,7 @@ id: Editor.clear()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Resets the [value]({basewidgetpath}/Configuration/#value) property to the default value.
 
 ---
 <!-- Description goes here -->

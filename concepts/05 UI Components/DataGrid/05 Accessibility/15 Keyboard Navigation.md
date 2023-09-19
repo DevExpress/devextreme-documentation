@@ -103,4 +103,4 @@ A user can use the following keys to interact with the DataGrid component:
     </ol>
 </div>
 
-You can override these shortcuts or create your own. Refer to the following help topic for more information: [Custom Keyboard Navigation](/Documentation/Guide/UI_Components/DataGrid/Custom_Keyboard_Navigation/).
+You can override these shortcuts or create your own. Refer to the following help topic for more information: [Custom Keyboard Navigation](/concepts/05%20UI%20Components/DataGrid/70%20Custom%20Keyboard%20Navigation/00%20Custom%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Custom_Keyboard_Navigation/').

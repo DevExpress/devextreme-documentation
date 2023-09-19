@@ -40,7 +40,7 @@ If you want to offer the user a set of commands related to a List item, you can 
     <!--HTML-->
     <dx-list
         [dataSource]="fruits"
-        [menuItems]="menuItems">
+    >
         <div *dxTemplate="let data of 'item'">
             <b>{{data.fruit}}</b>
         </div>

@@ -1,4 +1,4 @@
-The [onKeyDown](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onKeyDown) event handler allows you to track pressed keystrokes while the UI component has focus. You can use the event handler to override the default keyboard shortcuts, implement custom keystrokes, or extend existing ones.
+The [onKeyDown](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onKeyDown') event handler allows you to track pressed keystrokes while the UI component has focus. You can use the event handler to override the default keyboard shortcuts, implement custom keystrokes, or extend existing ones.
 
 The following example shows how to override the **Space Bar** keystroke so it switches a cell in cell/batch mode to the edit state instead of a current row select operation:
 

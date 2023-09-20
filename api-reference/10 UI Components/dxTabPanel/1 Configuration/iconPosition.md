@@ -1,6 +1,7 @@
 ---
-id: RowRemovingInfo.cancel
-type: Boolean | Promise<Boolean> | Promise<void>
+id: dxTabPanel.Options.iconPosition
+type: Enums.TabsIconPosition
+default: 'start'
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxTabs.Options.iconPosition
-type: Enums.IconPosition
+type: Enums.TabsIconPosition
 default: 'start'
 ---
 ---

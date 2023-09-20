@@ -17122,6 +17122,9 @@
     "dxTabPanelOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
+    "dxTabPanelOptions.iconPosition": {
+      "vue": "icon-position"
+    },
     "dxTabPanelOptions.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -17177,6 +17180,9 @@
     },
     "dxTabPanelOptions.showNavButtons": {
       "vue": "show-nav-buttons"
+    },
+    "dxTabPanelOptions.stylingMode": {
+      "vue": "styling-mode"
     },
     "dxTabPanelOptions.swipeEnabled": {
       "vue": "swipe-enabled"
@@ -17255,6 +17261,9 @@
     },
     "dxTabsOptions.showNavButtons": {
       "vue": "show-nav-buttons"
+    },
+    "dxTabsOptions.stylingMode": {
+      "vue": "styling-mode"
     },
     "dxTagBox": {
       "angular": "dx-tag-box",
@@ -19299,9 +19308,6 @@
     "enums.HtmlEditorPredefinedToolbarItem": {
       "vue": "html-editor-predefined-toolbar-item"
     },
-    "enums.IconPosition": {
-      "vue": "icon-position"
-    },
     "enums.ItemDeleteMode": {
       "vue": "item-delete-mode"
     },
@@ -19535,6 +19541,12 @@
     },
     "enums.SummaryType": {
       "vue": "summary-type"
+    },
+    "enums.TabsIconPosition": {
+      "vue": "tabs-icon-position"
+    },
+    "enums.TabsStyle": {
+      "vue": "tabs-style"
     },
     "enums.TextBoxPredefinedButton": {
       "vue": "text-box-predefined-button"

@@ -589,6 +589,21 @@
     "_ui_data_grid_CellPreparedEvent.rowType": {
       "vue": "row-type"
     },
+    "_ui_data_grid_ColumnButtonClickEvent": {
+      "angular": "dxo-ui-data-grid--column-button-click-event",
+      "react": "_ui_data_grid_ColumnButtonClickEvent",
+      "vue": "Dx_ui_data_grid_ColumnButtonClickEvent"
+    },
+    "_ui_data_grid_ColumnButtonClickEvent.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
+    "_ui_data_grid_ColumnButtonClickEvent.row": {
+      "angular": "dxo-row",
+      "react": "Row",
+      "vue": "DxRow"
+    },
     "_ui_data_grid_ContentReadyEvent": {
       "angular": "dxo-ui-data-grid--content-ready-event",
       "react": "_ui_data_grid_ContentReadyEvent",

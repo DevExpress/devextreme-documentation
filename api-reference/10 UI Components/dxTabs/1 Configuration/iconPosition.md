@@ -8,16 +8,16 @@ default: 'start'
 Specifies icon position relative to the text inside the tab.
 
 ---
-The position can be on of the following:
+The following values are available:
 
 - *'start'*    
-The icon is positioned before the text.
+The icon appears before the text.
 
 - *'end'*    
-The icon is positioned after the text.
+The icon appears after the text.
 
 - *'top'*    
-The icon is positioned at the top of the text.
+The icon appears above the text.
 
 - *'bottom'*    
-The icon is positioned at the bottom of the text.
+The icon appears below the text.

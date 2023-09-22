@@ -5,7 +5,7 @@ default: 'primary'
 ---
 ---
 ##### shortDescription
-Specifies an active tab styling mode.
+Specifies the styling mode for the active tab.
 
 ---
 The following styling modes are available:
@@ -15,5 +15,5 @@ The following styling modes are available:
     ![Tabs primary styling mode](/images/UiWidgets/Tabs/primarytabs.png)
 
 - *'secondary'*    
-    The width of the underline depends on the tab content.
+    The width of the underline depends on tab content.
     ![Tabs secondary styling mode](/images/UiWidgets/Tabs/secondarytabs.png)

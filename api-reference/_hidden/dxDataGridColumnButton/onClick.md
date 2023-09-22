@@ -6,13 +6,13 @@ type: function(e)
 ##### shortDescription
 A function that is executed when the button is clicked or tapped.
 
-##### param(e): Object
+##### param(e): ui/data_grid:ColumnButtonClickEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.column): dxDataGridColumn
 The properties of the button's column.
 
-##### field(e.component): dxDataGrid
+##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
@@ -21,7 +21,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): Object
+##### field(e.model): any
 The model data. Available only if you use Knockout.
 
 ##### field(e.row): dxDataGridRowObject

@@ -3,10 +3,10 @@ id: dxForm.reset(editorsData)
 ---
 ---
 ##### shortDescription
-Resets the editors values to the values passed as an argument. Resets all other values to initial values.
+Resets editor values. Every editor attempts to obtain its new value from the argument list. If an editor is not included in the list, that editor resets to its initial value.
 
 ##### param(editorsData): Object
-New editors data.
+New values for editors.
 
 ---
 This method sets the [isDirty]({basewidgetpath}/Configuration/#isDirty) flag to `false`.

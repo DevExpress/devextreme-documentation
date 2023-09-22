@@ -5,12 +5,12 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether editors current values differ from the initial values.
+Specifies whether current editor values differ from initial values.
 
 ##### readonly
 
 ---
-This property is a readonly flag. You can use it to check whether the editors in Form were changed. 
+This property is a read-only flag. You can use it to check whether any editor values changed on this Form. 
 
 #####See Also#####
 - [reset]({basewidgetpath}/Methods/#reseteditorsData)

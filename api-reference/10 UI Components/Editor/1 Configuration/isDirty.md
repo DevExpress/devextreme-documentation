@@ -10,7 +10,7 @@ Specifies whether the component's current value differs from the initial value.
 ##### readonly
 
 ---
-This property is a readonly flag. You can use it to check whether the editor was changed.
+This property is a read-only flag. You can use it to check whether the editor value changed.
 
 ---
 ##### jQuery

@@ -3,10 +3,10 @@ id: Editor.reset(value)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Resets the [value](/api-reference/10%20UI%20Components/Editor/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') property to the value passed as an argument.
 
 ##### param(value): any
-<!-- Description goes here -->
+Specifies the new value.
 
 ---
-<!-- Description goes here -->
+This method sets the [isDirty]({basewidgetpath}/Configuration/#isDirty) flag to `false`.

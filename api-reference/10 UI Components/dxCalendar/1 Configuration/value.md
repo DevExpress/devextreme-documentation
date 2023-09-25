@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-An object or a value that specifies the date and time selected in the calendar. Available only for *'single'* [selection mode](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode').
+An object or a value that specifies the date and time selected in the calendar.
 
 ---
 You can use the following date formats:
@@ -23,6 +23,9 @@ Specifies the date with a string value. The UI component supports the following 
     - "yyyy-MM-ddTHH:mm:ss" (for example, "2017-03-27T16:54:48")
     - "yyyy-MM-ddTHH:mm:ssZ" (for example, "2017-03-27T13:55:41Z")
     - "yyyy-MM-ddTHH:mm:ssx" (for example, "2017-03-27T16:54:10+03")
+
+- Array of the formats mentioned before    
+Available only for *'multiple'* and *'range'* [selection modes](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode').
 
 If the UI component value is changed by a user, the new value is saved in the same format as the initial value.
 

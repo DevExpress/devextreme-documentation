@@ -7,8 +7,6 @@ default: false
 ##### shortDescription
 Specifies whether the component's current value differs from the initial value.
 
-##### readonly
-
 ---
 This property is a read-only flag. You can use it to check if the editor value changed.
 
@@ -147,4 +145,4 @@ This property is a read-only flag. You can use it to check if the editor value c
 ---
 
 #####See Also#####
-- [reset]({basewidgetpath}/Methods/#reset)
+- [reset](/api-reference/10%20UI%20Components/Editor/3%20Methods/reset().md '{basewidgetpath}/Methods/#reset')

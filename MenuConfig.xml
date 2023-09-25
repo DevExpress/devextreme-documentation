@@ -18,6 +18,7 @@
   <MenuRule Destination="050 Getting Started/02 Quick Start" SourcePattern="Howto:^55 Vue Components/02 Create a DevExtreme Application" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/03 Quick Start" SourcePattern="Howto:^50 React Components/02 Create a DevExtreme Application" VisibleFor="React" />
 
+  <MenuRule Destination="050 Getting Started/09 Add DevExtreme to an Existing Angular Application" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/10 Using with Angular CLI" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/11 Using with Ionic" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/12 Add DevExtreme to an Existing Vue Application" SourcePattern="Howto:^55 Vue Components/05 Add DevExtreme to a Vue Application" VisibleFor="Vue" />

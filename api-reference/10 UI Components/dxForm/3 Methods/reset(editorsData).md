@@ -9,7 +9,7 @@ Resets editor values. Every editor attempts to obtain its new value from the arg
 New values for editors.
 
 ---
-This method sets the [isDirty]({basewidgetpath}/Configuration/#isDirty) flag to `false`.
+This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/isDirty.md '{basewidgetpath}/Configuration/#isDirty') flag to `false`.
 
 ---
 ##### jQuery

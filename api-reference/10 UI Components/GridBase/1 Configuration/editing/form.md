@@ -253,7 +253,7 @@ Do not specify the following properties in the **form** object:
 
 - Any [event](/api-reference/10%20UI%20Components/dxForm/4%20Events '/Documentation/ApiReference/UI_Components/dxForm/Events/') handler ([properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onContentReady.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onContentReady') whose name starts with *"on..."*)
 
-Also, the [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property defaults to 2, but it can be redefined. Refer to the following help topic for more information about form customization: [Customize Edit Form](/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form).
+Also, the [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property defaults to 2, but it can be redefined. Refer to the following help topic for more information about form customization: [Customize Edit Form](/concepts/05%20UI%20Components/DataGrid/20%20Editing/43%20Customize%20Edit%20Form '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form').
 
 #include widgets-config-object-option-note with {
     optionName: "form"

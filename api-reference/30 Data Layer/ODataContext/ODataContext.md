@@ -75,67 +75,6 @@ This object creates several [ODataStore](/api-reference/30%20Data%20Layer/ODataS
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.context = new DevExpress.data.ODataContext({
-                url: "http://www.example.com/Northwind.svc",
-                entities: {
-                    Categories: {
-                        key: "CategoryID",
-                        keyType: "Int32"
-                    },
-                    // An entity collection alias
-                    Clients: {
-                        name: "Customers",
-                        key: "CustomerID",
-                        keyType: "String"
-                    },
-                    Products: {
-                        // A composite key
-                        key: ["ProductID", "ProductCode"],
-                        keyType: {
-                            ProductID: "Guid",
-                            ProductCode: "Int32" 
-                        }
-                    }
-                }
-            })
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->  
-    var viewModel = {
-        context: new DevExpress.data.ODataContext({
-            url: "http://www.example.com/Northwind.svc",
-            entities: {
-                Categories: {
-                    key: "CategoryID",
-                    keyType: "Int32"
-                },
-                // An entity collection alias
-                Clients: {
-                    name: "Customers",
-                    key: "CustomerID",
-                    keyType: "String"
-                },
-                Products: {
-                    // A composite key
-                    key: ["ProductID", "ProductCode"],
-                    keyType: {
-                        ProductID: "Guid",
-                        ProductCode: "Int32" 
-                    }
-                }
-            }
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

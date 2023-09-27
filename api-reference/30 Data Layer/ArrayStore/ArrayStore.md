@@ -74,66 +74,6 @@ dx.web.js, dx.viz.js, dx.all.js
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            var states = [
-                { id: 1, state: "Alabama", capital: "Montgomery" },
-                { id: 2, state: "Alaska", capital: "Juneau" },
-                { id: 3, state: "Arizona", capital: "Phoenix" },
-                // ...
-            ];
-            $scope.store = new DevExpress.data.ArrayStore({
-                key: "id",
-                data: states,
-                // Other ArrayStore properties go here
-            });
-
-            // ===== or inside the DataSource =====
-            $scope.dataSource = new DevExpress.data.DataSource({
-                store: {
-                    type: "array",
-                    key: "id",
-                    data: states,
-                    // Other ArrayStore properties go here
-                },
-                // Other DataSource properties go here
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var states = [
-        { id: 1, state: "Alabama", capital: "Montgomery" },
-        { id: 2, state: "Alaska", capital: "Juneau" },
-        { id: 3, state: "Arizona", capital: "Phoenix" },
-        // ...
-    ];
-    
-    var viewModel = {
-        store: new DevExpress.data.ArrayStore({
-            key: "id",
-            data: states,
-            // Other ArrayStore properties go here
-        })
-
-        // ===== or inside the DataSource =====
-        dataSource: new DevExpress.data.DataSource({
-            store: {
-                type: "array",
-                key: "id",
-                data: states,
-                // Other ArrayStore properties go here
-            },
-            // Other DataSource properties go here
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

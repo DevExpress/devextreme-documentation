@@ -37,31 +37,6 @@ dx.web.js, dx.viz.js, dx.all.js
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.dataSource = new DevExpress.data.DataSource({
-                // ...
-                // DataSource is configured here
-                // ...
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        dataSource: new DevExpress.data.DataSource({
-            // ...
-            // DataSource is configured here
-            // ...
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

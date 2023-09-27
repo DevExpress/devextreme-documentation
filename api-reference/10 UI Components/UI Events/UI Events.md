@@ -47,39 +47,4 @@ See <a href="http://api.jquery.com/category/events/event-handler-attachment" tar
         }
     }
 
-##### Knockout
-
-    <!--HTML-->
-    <div id="target" data-bind="dxhold: { execute: dxholdHandler, timeout: 1000 }">
-        Target element
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        dxholdHandler: function(viewModel, jQueryEvent) {
-            alert(`The ${$(jQueryEvent.target).text()} element is being held for ${jQueryEvent.data.timeout} ms.`);
-        }
-    }
-
-[note]Knockout does not provide an API to unsubscribe from an event.
-
-See <a href="http://knockoutjs.com/documentation/event-binding.html" target="_blank">Knockout documentation</a> for details.
-
-##### AngularJS
-
-    <!--HTML-->
-    <div id="target" dx-hold="{ execute: 'dxholdHandler($event)', timeout: 1000 }">
-        Target element
-    </div>
-
-    <!--JavaScript-->
-    angular.module("DemoApp", ["dx"])
-        .controller("DemoController", function DemoController($scope) {
-            $scope.dxholdHandler = function(jQueryEvent) {
-                alert(`The ${$(jQueryEvent.target).text()} element is being held for ${jQueryEvent.data.timeout} ms.`);
-            }
-        });
-
-[note]AngularJS does not provide an API to unsubscribe from an event.
- 
 ---

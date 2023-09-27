@@ -69,41 +69,6 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Comp
     })
     export class AppModule { }
 
-##### AngularJS
-
-    <!--JavaScript-->function Controller ($scope) {
-        $scope.login = '';
-        $scope.loginRules = [{
-            type: 'required'
-        }, {
-            type: 'pattern',
-            pattern: '^[a-zA-Z]+$',
-            message: 'Do not use digits.'
-        }];
-    }
-
-    <!--HTML--><div dx-text-box="{ value: login, placeholder: 'Login' }",
-        dx-validator="{ validationRules: loginRules }">   
-    </div>
-
-##### Knockout
-
-    <!--JavaScript-->var viewModel = {
-        login: ko.observable(""),
-        loginRules: [{
-            type: 'required'
-        }, {
-            type: 'pattern',
-            pattern: '^[a-zA-Z]+$',
-            message: 'Do not use digits.'
-        }]
-    };
-    ko.applyBindings(viewModel);
-
-    <!--HTML--><div data-bind="dxTextBox: { value: login, placeholder: 'Login' },
-        dxValidator: { validationRules: loginRules }">
-    </div>
-
 ##### Vue
 
     <!-- tab: App.vue -->

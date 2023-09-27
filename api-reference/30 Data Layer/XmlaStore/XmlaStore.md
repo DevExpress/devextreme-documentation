@@ -63,53 +63,6 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.store = new DevExpress.data.XmlaStore({
-                url: "http://my-web-srv01/OLAP/msmdpump.dll",
-                catalog: "AdventureWorksDW2012",
-                cube: "Adventure Works"
-            });
-
-            // ===== or inside the PivotGridDataSource =====
-            $scope.pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
-                store: {
-                    type: "xmla",
-                    url: "http://my-web-srv01/OLAP/msmdpump.dll",
-                    catalog: "AdventureWorksDW2012",
-                    cube: "Adventure Works"
-                },
-                // Other PivotGridDataSource properties go here
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        store: new DevExpress.data.XmlaStore({
-            url: "http://my-web-srv01/OLAP/msmdpump.dll",
-            catalog: "AdventureWorksDW2012",
-            cube: "Adventure Works"
-        })
-
-        // ===== or inside the PivotGridDataSource =====
-        pivotGridDataSource: new DevExpress.data.PivotGridDataSource({
-            store: {
-                type: "xmla",
-                url: "http://my-web-srv01/OLAP/msmdpump.dll",
-                catalog: "AdventureWorksDW2012",
-                cube: "Adventure Works"
-            },
-            // Other PivotGridDataSource properties go here
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

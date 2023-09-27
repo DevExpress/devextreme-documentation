@@ -102,63 +102,6 @@ Call a group's [validate()](/api-reference/10%20UI%20Components/dxValidator/3%20
     })
     export class AppModule { }
 
-##### AngularJS
-
-    <!--HTML-->
-    <!-- div id="loginGroup" dx-validation-group="{ }" -->
-        <div dx-text-box="{ value: login, ... }",
-            dx-validator="{
-                validationRules: [ ... ]
-            }">
-        </div>
-        <div dx-text-box="{ value: password, ... }",
-            dx-validator="{ 
-                validationRules: [ ... ]
-            }">   
-        </div>
-        <div dx-button="{ text: 'Login', onClick: loginClick }"></div>
-    <!-- /div -->
-
-    <!--JavaScript-->
-    function Controller($scope) {
-        // ...
-        $scope.loginClick = function (e) {
-            var result = e.validationGroup.validate();
-            if (result.isValid) {
-                // ...
-            }
-        };
-    }
-
-##### Knockout
-
-    <!--HTML-->
-    <!-- div id="loginGroup" data-bind="dxValidationGroup: { }" -->
-        <div data-bind="dxTextBox: { value: login, ... },
-            dxValidator: { 
-                validationRules: [ ... ]
-            }">
-        </div>
-        <div data-bind="dxTextBox: { value: password, ... },
-            dxValidator: { 
-                validationRules: [ ... ]
-            }">   
-        </div>
-        <div data-bind="dxButton: { text: 'Login', onClick: loginClick }></div>
-    <!-- /div -->
-
-    <!--JavaScript-->
-    var viewModel = {
-        // ...
-        loginClick: function (e) {
-            var result = e.validationGroup.validate();
-            if (result.isValid) {
-                // ...
-            }
-        }
-    };
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

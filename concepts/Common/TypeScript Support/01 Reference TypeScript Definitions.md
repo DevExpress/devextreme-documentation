@@ -6,11 +6,6 @@ You can find the file with TypeScript definitions for DevExtreme in the DevExtre
     //  ...or file from GitHub
     /// <reference path="TypeScript/devextreme.d.ts" />
 
-You can also reference TypeScript definitions for Knockout or AngularJS.
-
-    /// <reference path="TypeScript/knockout.d.ts" />
-    /// <reference path="TypeScript/angular.d.ts" />
-
 Along with TypeScript definitions, you need to reference the libraries themselves. See [Local Files](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/10%20Local%20Files.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/#Local_Files') for detailed information.
 
 

@@ -26,7 +26,7 @@ You can supply data to this structure using the **DataSource** object's [group](
 
 - Only one-level grouping is supported.
 
-- If you enable both this property and DataSource.[paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate), the pagination works only on the group level.
+- If you enable both this property and DataSource.[paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate'), the pagination works only on the group level.
 
 [/note]
 

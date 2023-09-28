@@ -2,6 +2,7 @@
 id: Enums.PieChartSegmentDirection
 acceptValues: 'anticlockwise' | 'clockwise'
 type: Union
+references: dxPieChart.Options.segmentsDirection
 ---
 ---
 ##### shortDescription

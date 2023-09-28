@@ -2,6 +2,7 @@
 id: Enums.TreeListFilterMode
 acceptValues: 'fullBranch' | 'withAncestors' | 'matchOnly'
 type: Union
+references: dxTreeList.Options.filterMode
 ---
 ---
 ##### shortDescription

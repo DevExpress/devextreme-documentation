@@ -2,6 +2,7 @@
 id: Enums.PivotGridTotalDisplayMode
 acceptValues: 'both' | 'columns' | 'none' | 'rows'
 type: Union
+references: dxPivotGrid.Options.showTotalsPrior
 ---
 ---
 ##### shortDescription

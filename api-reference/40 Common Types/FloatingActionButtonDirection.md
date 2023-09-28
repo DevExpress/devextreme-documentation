@@ -2,6 +2,7 @@
 id: Enums.FloatingActionButtonDirection
 acceptValues: 'auto' | 'up' | 'down'
 type: Union
+references: GlobalConfig.floatingActionButtonConfig.direction
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.PieChartType
 acceptValues: 'donut' | 'doughnut' | 'pie'
 type: Union
+references: dxPieChart.Options.type
 ---
 ---
 ##### shortDescription

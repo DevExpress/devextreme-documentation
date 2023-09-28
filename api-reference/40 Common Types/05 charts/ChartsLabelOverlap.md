@@ -2,6 +2,7 @@
 id: Enums.ChartsLabelOverlap
 acceptValues: 'hide' | 'none' | 'stack'
 type: Union
+references: dxChart.Options.resolveLabelOverlapping
 ---
 ---
 ##### shortDescription

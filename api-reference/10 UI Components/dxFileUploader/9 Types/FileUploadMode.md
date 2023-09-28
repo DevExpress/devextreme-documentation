@@ -2,6 +2,7 @@
 id: Enums.FileUploadMode
 acceptValues: 'instantly' | 'useButtons' | 'useForm'
 type: Union
+references: dxFileUploader.Options.uploadMode
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.SelectedFilterOperation
 acceptValues: '<' | '<=' | '<>' | '=' | '>' | '>=' | 'between' | 'contains' | 'endswith' | 'notcontains' | 'startswith'
 type: Union
+references: GridBaseColumn.selectedFilterOperation
 ---
 ---
 ##### shortDescription

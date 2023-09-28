@@ -2,6 +2,7 @@
 id: Enums.UploadHttpMethod
 acceptValues: 'POST' | 'PUT'
 type: Union
+references: dxFileUploader.Options.uploadMethod
 ---
 ---
 ##### shortDescription

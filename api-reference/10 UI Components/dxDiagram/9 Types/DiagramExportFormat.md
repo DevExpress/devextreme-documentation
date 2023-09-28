@@ -2,6 +2,7 @@
 id: Enums.DiagramExportFormat
 acceptValues: 'svg' | 'png' | 'jpg'
 type: Union
+references: dxDiagram.exportTo
 ---
 ---
 ##### shortDescription

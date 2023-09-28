@@ -2,6 +2,7 @@
 id: Enums.ValueChangedCallMode
 acceptValues: 'onMoving' | 'onMovingComplete'
 type: Union
+references: dxRangeSelector.Options.behavior.callValueChanged
 ---
 ---
 ##### shortDescription

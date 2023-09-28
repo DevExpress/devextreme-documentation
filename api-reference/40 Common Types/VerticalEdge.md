@@ -2,6 +2,7 @@
 id: Enums.VerticalEdge
 acceptValues: 'bottom' | 'top'
 type: Union
+references: BaseLegend.title.verticalAlignment,BaseLegend.verticalAlignment,viz/core/base_widget:BaseWidgetTitle.verticalAlignment,CommonIndicator.verticalOrientation,dxSliderBase.Options.label.position,dxSliderBase.Options.tooltip.position,dxVectorMap.Options.controlBar.verticalAlignment
 ---
 ---
 ##### shortDescription

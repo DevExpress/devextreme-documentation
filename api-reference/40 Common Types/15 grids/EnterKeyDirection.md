@@ -2,6 +2,7 @@
 id: Enums.EnterKeyDirection
 acceptValues: 'none' | 'column' | 'row'
 type: Union
+references: common/grids:KeyboardNavigation.enterKeyDirection
 ---
 ---
 ##### shortDescription

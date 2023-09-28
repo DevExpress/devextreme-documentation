@@ -2,6 +2,7 @@
 id: Enums.WeekNumberRule
 acceptValues: 'auto' | 'firstDay' | 'fullWeek' | 'firstFourDays'
 type: Union
+references: dxCalendar.Options.weekNumberRule
 ---
 ---
 ##### shortDescription

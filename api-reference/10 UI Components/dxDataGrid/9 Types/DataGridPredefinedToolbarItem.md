@@ -2,6 +2,7 @@
 id: Enums.DataGridPredefinedToolbarItem
 acceptValues: 'addRowButton' | 'applyFilterButton' | 'columnChooserButton' | 'exportButton' | 'groupPanel' | 'revertButton' | 'saveButton' | 'searchPanel'
 type: Union
+references: dxDataGridToolbar.items,dxDataGridToolbarItem.name
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.MarkupType
 acceptValues: 'html' | 'markdown'
 type: Union
+references: dxHtmlEditor.Options.valueType
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.PivotGridRunningTotalMode
 acceptValues: 'column' | 'row'
 type: Union
+references: PivotGridDataSource.Options.fields.runningTotal
 ---
 ---
 ##### shortDescription

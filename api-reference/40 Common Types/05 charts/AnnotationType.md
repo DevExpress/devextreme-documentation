@@ -2,6 +2,7 @@
 id: Enums.AnnotationType
 acceptValues: 'text' | 'image' | 'custom'
 type: Union
+references: BaseWidgetAnnotationConfig.type
 ---
 ---
 ##### shortDescription

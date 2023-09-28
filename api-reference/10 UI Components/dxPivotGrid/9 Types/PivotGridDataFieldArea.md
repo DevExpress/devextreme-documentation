@@ -2,6 +2,7 @@
 id: Enums.PivotGridDataFieldArea
 acceptValues: 'column' | 'row'
 type: Union
+references: dxPivotGrid.Options.dataFieldArea
 ---
 ---
 ##### shortDescription

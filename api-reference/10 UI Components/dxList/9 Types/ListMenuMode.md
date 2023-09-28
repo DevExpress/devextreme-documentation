@@ -2,6 +2,7 @@
 id: Enums.ListMenuMode
 acceptValues: 'context' | 'slide'
 type: Union
+references: dxList.Options.menuMode
 ---
 ---
 ##### shortDescription

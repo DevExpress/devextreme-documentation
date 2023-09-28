@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tile_view:DisposingEvent
 generateTypeLink: 
+references: dxTileView.Options.onDisposing
 ---
 ---
 ##### shortDescription

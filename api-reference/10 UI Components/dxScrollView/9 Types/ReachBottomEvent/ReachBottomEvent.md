@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scroll_view:ReachBottomEvent
 generateTypeLink: 
+references: dxScrollView.Options.onReachBottom
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/responsive_box:InitializedEvent
 generateTypeLink: 
+references: dxResponsiveBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/date_range_box:DisposingEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

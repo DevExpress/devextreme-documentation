@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/box:ContentReadyEvent
 generateTypeLink: 
+references: dxBox.Options.onContentReady
 ---
 ---
 ##### shortDescription

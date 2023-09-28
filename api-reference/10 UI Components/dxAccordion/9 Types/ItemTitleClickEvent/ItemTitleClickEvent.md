@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/accordion:ItemTitleClickEvent
 generateTypeLink: 
+references: dxAccordion.Options.onItemTitleClick
 ---
 ---
 ##### shortDescription

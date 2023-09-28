@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/select_box:CopyEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onCopy
 ---
 ---
 ##### shortDescription

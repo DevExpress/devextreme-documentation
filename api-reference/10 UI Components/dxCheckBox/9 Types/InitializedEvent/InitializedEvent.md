@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/check_box:InitializedEvent
 generateTypeLink: 
+references: dxCheckBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

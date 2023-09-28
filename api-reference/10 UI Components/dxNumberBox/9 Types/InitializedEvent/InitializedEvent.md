@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/number_box:InitializedEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

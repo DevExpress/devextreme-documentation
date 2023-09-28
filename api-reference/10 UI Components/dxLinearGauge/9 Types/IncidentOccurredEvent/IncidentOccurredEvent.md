@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/linear_gauge:IncidentOccurredEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

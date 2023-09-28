@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/calendar:InitializedEvent
 generateTypeLink: 
+references: dxCalendar.Options.onInitialized
 ---
 ---
 ##### shortDescription

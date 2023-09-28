@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:TaskUpdatedEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskUpdated
 ---
 ---
 ##### shortDescription

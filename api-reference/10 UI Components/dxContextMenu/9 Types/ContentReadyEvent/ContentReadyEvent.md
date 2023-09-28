@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/context_menu:ContentReadyEvent
 generateTypeLink: 
+references: dxContextMenu.Options.onContentReady
 ---
 ---
 ##### shortDescription

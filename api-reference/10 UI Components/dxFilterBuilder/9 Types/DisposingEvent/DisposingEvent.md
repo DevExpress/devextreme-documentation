@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/filter_builder:DisposingEvent
 generateTypeLink: 
+references: dxFilterBuilder.Options.onDisposing
 ---
 ---
 ##### shortDescription

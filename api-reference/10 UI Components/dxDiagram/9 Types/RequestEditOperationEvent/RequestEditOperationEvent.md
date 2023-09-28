@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/diagram:RequestEditOperationEvent
 generateTypeLink: 
+references: dxDiagram.Options.onRequestEditOperation
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,FunnelItemInfo
 uid: viz/funnel:ItemClickEvent
 generateTypeLink: 
+references: dxFunnel.Options.onItemClick
 ---
 ---
 ##### shortDescription

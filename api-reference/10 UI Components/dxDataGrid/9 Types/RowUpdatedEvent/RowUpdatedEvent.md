@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowUpdatedInfo
 uid: ui/data_grid:RowUpdatedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onRowUpdated
 ---
 ---
 ##### shortDescription

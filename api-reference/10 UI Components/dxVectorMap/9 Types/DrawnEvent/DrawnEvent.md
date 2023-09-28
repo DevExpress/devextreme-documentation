@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/vector_map:DrawnEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onDrawn
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/color_box:OptionChangedEvent
 generateTypeLink: 
+references: dxColorBox.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

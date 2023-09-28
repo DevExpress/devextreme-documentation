@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/tree_map:FileSavingEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onFileSaving
 ---
 ---
 ##### shortDescription

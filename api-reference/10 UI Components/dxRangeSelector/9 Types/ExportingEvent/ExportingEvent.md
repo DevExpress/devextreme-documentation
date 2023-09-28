@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/range_selector:ExportingEvent
 generateTypeLink: 
+references: dxRangeSelector.Options.onExporting
 ---
 ---
 ##### shortDescription

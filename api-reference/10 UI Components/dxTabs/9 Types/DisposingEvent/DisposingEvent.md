@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tabs:DisposingEvent
 generateTypeLink: 
+references: dxTabs.Options.onDisposing
 ---
 ---
 ##### shortDescription

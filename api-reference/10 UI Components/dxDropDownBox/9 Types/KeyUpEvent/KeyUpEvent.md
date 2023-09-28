@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_box:KeyUpEvent
 generateTypeLink: 
+references: dxDropDownBox.Options.onKeyUp
 ---
 ---
 ##### shortDescription

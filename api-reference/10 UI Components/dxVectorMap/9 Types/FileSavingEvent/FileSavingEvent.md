@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/vector_map:FileSavingEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onFileSaving
 ---
 ---
 ##### shortDescription

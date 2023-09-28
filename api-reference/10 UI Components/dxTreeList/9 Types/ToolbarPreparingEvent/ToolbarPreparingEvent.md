@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ToolbarPreparingInfo
 uid: ui/tree_list:ToolbarPreparingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onToolbarPreparing
 ---
 ---
 ##### shortDescription

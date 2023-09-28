@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/accordion:ItemRenderedEvent
 generateTypeLink: 
+references: dxAccordion.Options.onItemRendered
 ---
 ---
 ##### shortDescription

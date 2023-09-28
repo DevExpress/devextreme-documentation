@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/action_sheet:ContentReadyEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onContentReady
 ---
 ---
 ##### shortDescription

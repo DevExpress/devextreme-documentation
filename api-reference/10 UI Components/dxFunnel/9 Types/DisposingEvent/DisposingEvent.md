@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/funnel:DisposingEvent
 generateTypeLink: 
+references: dxFunnel.Options.onDisposing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/gallery:ItemClickEvent
 generateTypeLink: 
+references: dxGallery.Options.onItemClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/tile_view:ItemRenderedEvent
 generateTypeLink: 
+references: dxTileView.Options.onItemRendered
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/range_selector:DisposingEvent
 generateTypeLink: 
+references: dxRangeSelector.Options.onDisposing
 ---
 ---
 ##### shortDescription

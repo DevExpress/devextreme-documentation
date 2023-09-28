@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/multi_view:ContentReadyEvent
 generateTypeLink: 
+references: dxMultiView.Options.onContentReady
 ---
 ---
 ##### shortDescription

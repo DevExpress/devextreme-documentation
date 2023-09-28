@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/menu:SubmenuHiddenEvent
 generateTypeLink: 
+references: dxMenu.Options.onSubmenuHidden
 ---
 ---
 ##### shortDescription

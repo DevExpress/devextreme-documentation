@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/sparkline:IncidentOccurredEvent
 generateTypeLink: 
+references: dxSparkline.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

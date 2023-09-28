@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,CellInfo
 uid: ui/tree_list:CellHoverChangedEvent
 generateTypeLink: 
+references: dxTreeList.Options.onCellHoverChanged
 ---
 ---
 ##### shortDescription

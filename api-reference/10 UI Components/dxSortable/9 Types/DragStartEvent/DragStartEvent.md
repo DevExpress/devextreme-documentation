@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/sortable:DragStartEvent
 generateTypeLink: 
+references: dxSortable.Options.onDragStart
 ---
 ---
 ##### shortDescription

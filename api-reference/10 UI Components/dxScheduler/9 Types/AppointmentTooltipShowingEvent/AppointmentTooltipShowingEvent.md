@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/scheduler:AppointmentTooltipShowingEvent
 generateTypeLink: 
+references: dxScheduler.Options.onAppointmentTooltipShowing
 ---
 ---
 ##### shortDescription

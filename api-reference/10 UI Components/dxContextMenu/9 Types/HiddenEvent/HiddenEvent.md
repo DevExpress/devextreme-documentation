@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/context_menu:HiddenEvent
 generateTypeLink: 
+references: dxContextMenu.Options.onHidden
 ---
 ---
 ##### shortDescription

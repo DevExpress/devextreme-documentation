@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/pie_chart:IncidentOccurredEvent
 generateTypeLink: 
+references: dxPieChart.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

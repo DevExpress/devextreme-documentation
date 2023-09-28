@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/box:OptionChangedEvent
 generateTypeLink: 
+references: dxBox.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

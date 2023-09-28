@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:ItemMovedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onItemMoved
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gallery:ContentReadyEvent
 generateTypeLink: 
+references: dxGallery.Options.onContentReady
 ---
 ---
 ##### shortDescription

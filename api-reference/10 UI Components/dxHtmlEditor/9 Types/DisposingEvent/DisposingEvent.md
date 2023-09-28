@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/html_editor:DisposingEvent
 generateTypeLink: 
+references: dxHtmlEditor.Options.onDisposing
 ---
 ---
 ##### shortDescription

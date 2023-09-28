@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/menu:DisposingEvent
 generateTypeLink: 
+references: dxMenu.Options.onDisposing
 ---
 ---
 ##### shortDescription

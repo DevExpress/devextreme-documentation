@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/data_grid:ColumnButtonClickEvent
 generateTypeLink: 
+references: dxDataGridColumnButton.onClick
 ---
 ---
 ##### shortDescription

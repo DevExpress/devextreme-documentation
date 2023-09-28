@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/map:MarkerAddedEvent
 generateTypeLink: 
+references: dxMap.Options.onMarkerAdded
 ---
 ---
 ##### shortDescription

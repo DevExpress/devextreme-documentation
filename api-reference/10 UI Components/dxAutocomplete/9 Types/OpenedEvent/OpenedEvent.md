@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/autocomplete:OpenedEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onOpened
 ---
 ---
 ##### shortDescription

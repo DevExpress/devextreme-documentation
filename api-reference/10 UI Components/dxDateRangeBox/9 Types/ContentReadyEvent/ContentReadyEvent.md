@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/date_range_box:ContentReadyEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onContentReady
 ---
 ---
 ##### shortDescription

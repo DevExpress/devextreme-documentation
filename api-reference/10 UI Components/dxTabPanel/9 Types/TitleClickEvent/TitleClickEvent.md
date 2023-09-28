@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,TabPanelItemInfo
 uid: ui/tab_panel:TitleClickEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onTitleClick
 ---
 ---
 ##### shortDescription

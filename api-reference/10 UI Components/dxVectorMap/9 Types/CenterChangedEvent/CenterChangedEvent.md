@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/vector_map:CenterChangedEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onCenterChanged
 ---
 ---
 ##### shortDescription

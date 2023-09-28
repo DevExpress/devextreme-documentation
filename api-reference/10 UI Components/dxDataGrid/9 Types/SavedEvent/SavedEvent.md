@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,DataChangeInfo
 uid: ui/data_grid:SavedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onSaved
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/form:EditorEnterKeyEvent
 generateTypeLink: 
+references: dxForm.Options.onEditorEnterKey
 ---
 ---
 ##### shortDescription

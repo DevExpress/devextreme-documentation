@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tag_box:ClosedEvent
 generateTypeLink: 
+references: dxTagBox.Options.onClosed
 ---
 ---
 ##### shortDescription

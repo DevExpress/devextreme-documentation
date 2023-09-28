@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/drawer:DisposingEvent
 generateTypeLink: 
+references: dxDrawer.Options.onDisposing
 ---
 ---
 ##### shortDescription

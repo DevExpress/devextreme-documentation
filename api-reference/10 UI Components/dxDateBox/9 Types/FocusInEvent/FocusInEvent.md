@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:FocusInEvent
 generateTypeLink: 
+references: dxDateBox.Options.onFocusIn
 ---
 ---
 ##### shortDescription

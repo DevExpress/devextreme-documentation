@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/linear_gauge:ExportingEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onExporting
 ---
 ---
 ##### shortDescription

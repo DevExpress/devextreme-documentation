@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:KeyUpEvent
 generateTypeLink: 
+references: dxTextBox.Options.onKeyUp
 ---
 ---
 ##### shortDescription

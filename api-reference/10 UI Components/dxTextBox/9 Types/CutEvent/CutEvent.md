@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:CutEvent
 generateTypeLink: 
+references: dxTextBox.Options.onCut
 ---
 ---
 ##### shortDescription

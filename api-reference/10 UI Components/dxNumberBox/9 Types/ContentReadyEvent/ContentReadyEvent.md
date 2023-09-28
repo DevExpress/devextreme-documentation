@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/number_box:ContentReadyEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onContentReady
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/sankey:OptionChangedEvent
 generateTypeLink: 
+references: dxSankey.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

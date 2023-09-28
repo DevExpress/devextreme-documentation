@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:PasteEvent
 generateTypeLink: 
+references: dxDateBox.Options.onPaste
 ---
 ---
 ##### shortDescription

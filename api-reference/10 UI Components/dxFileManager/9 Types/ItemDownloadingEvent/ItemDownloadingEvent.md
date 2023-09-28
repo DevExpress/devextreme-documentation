@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ActionEventInfo
 uid: ui/file_manager:ItemDownloadingEvent
 generateTypeLink: 
+references: dxFileManager.Options.onItemDownloading
 ---
 ---
 ##### shortDescription

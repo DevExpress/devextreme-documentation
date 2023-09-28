@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:ItemDeletedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onItemDeleted
 ---
 ---
 ##### shortDescription

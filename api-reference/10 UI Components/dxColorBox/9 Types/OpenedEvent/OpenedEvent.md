@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/color_box:OpenedEvent
 generateTypeLink: 
+references: dxColorBox.Options.onOpened
 ---
 ---
 ##### shortDescription

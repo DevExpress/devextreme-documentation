@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_range_box:FocusOutEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onFocusOut
 ---
 ---
 ##### shortDescription

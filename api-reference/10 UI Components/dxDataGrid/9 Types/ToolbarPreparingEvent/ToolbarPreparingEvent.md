@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ToolbarPreparingInfo
 uid: ui/data_grid:ToolbarPreparingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onToolbarPreparing
 ---
 ---
 ##### shortDescription

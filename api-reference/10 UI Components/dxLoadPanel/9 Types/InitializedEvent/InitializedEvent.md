@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/load_panel:InitializedEvent
 generateTypeLink: 
+references: dxLoadPanel.Options.onInitialized
 ---
 ---
 ##### shortDescription

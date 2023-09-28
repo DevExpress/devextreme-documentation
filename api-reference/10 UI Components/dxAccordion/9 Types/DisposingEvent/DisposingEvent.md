@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/accordion:DisposingEvent
 generateTypeLink: 
+references: dxAccordion.Options.onDisposing
 ---
 ---
 ##### shortDescription

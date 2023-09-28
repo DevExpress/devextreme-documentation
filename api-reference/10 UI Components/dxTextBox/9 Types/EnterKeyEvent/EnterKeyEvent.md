@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:EnterKeyEvent
 generateTypeLink: 
+references: dxTextBox.Options.onEnterKey
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/pivot_grid_field_chooser:InitializedEvent
 generateTypeLink: 
+references: dxPivotGridFieldChooser.Options.onInitialized
 ---
 ---
 ##### shortDescription

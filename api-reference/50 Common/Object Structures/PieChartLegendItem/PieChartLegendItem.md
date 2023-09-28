@@ -4,7 +4,6 @@ type: Object
 inherits: BaseLegendItem
 module: viz/pie_chart
 export: LegendItem
-references: viz/pie_chart:Legend.customizeItems,viz/pie_chart:Legend.customizeItems,viz/pie_chart:Legend.markerTemplate
 ---
 ---
 ##### shortDescription

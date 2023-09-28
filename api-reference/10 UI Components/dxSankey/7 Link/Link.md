@@ -2,7 +2,6 @@
 id: dxSankeyLink
 module: viz/sankey
 export: dxSankeyLink
-references: viz/sankey:LinkClickEvent.target,viz/sankey:LinkHoverEvent.target,dxSankey.getAllLinks,dxSankey.getAllLinks,dxSankey.Options.onLinkClick,dxSankey.Options.onLinkHoverChanged
 ---
 ---
 ##### shortDescription

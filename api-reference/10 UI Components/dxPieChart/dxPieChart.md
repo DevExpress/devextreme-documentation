@@ -3,7 +3,6 @@ id: dxPieChart
 module: viz/pie_chart
 export: default
 inherits: BaseChart
-references: dxPieChart.Options.centerTemplate,viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

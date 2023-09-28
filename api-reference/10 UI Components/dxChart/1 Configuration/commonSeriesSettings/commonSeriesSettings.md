@@ -5,7 +5,6 @@ inherits: dxChartSeriesTypes.CommonSeries
 hideDefaults: true
 inheritAll: 
 inheritsType: viz/chart:dxChartCommonSeriesSettings
-references: dxRangeSelector.Options.chart.commonSeriesSettings
 ---
 ---
 ##### shortDescription

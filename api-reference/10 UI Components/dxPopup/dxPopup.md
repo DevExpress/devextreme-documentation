@@ -3,7 +3,6 @@ id: dxPopup
 module: ui/popup
 export: default
 inherits: dxOverlay
-references: DateBoxBase.Options.dropDownOptions,dxAutocomplete.Options.dropDownOptions,dxColorBox.Options.dropDownOptions,dxDropDownBox.Options.dropDownOptions,dxDropDownButton.Options.dropDownOptions,dxDropDownEditor.Options.dropDownOptions,dxSelectBox.Options.dropDownOptions,common/grids:EditingBase.popup,GridBase.Options.filterBuilderPopup
 ---
 ---
 ##### shortDescription

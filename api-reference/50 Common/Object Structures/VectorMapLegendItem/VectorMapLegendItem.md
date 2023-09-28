@@ -4,7 +4,6 @@ type: Object
 inherits: BaseLegendItem
 module: viz/vector_map
 export: LegendItem
-references: viz/vector_map:Legend.customizeItems,viz/vector_map:Legend.customizeItems,viz/vector_map:Legend.markerTemplate
 ---
 ---
 ##### shortDescription

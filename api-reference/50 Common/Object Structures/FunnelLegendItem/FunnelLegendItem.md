@@ -4,7 +4,6 @@ type: Object
 inherits: BaseLegendItem
 module: viz/funnel
 export: LegendItem
-references: viz/funnel:Legend.customizeItems,viz/funnel:Legend.customizeItems,viz/funnel:Legend.markerTemplate
 ---
 ---
 ##### shortDescription

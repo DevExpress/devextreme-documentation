@@ -3,7 +3,6 @@ id: dxDateBox
 module: ui/date_box
 export: default
 inherits: DateBoxBase
-references: dxDateBox.Options.disabledDates
 ---
 ---
 ##### shortDescription

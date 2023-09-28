@@ -4,7 +4,6 @@ type: Object
 inherits: baseSeriesObject
 module: viz/polar_chart
 export: polarChartSeriesObject
-references: viz/polar_chart:LegendClickEvent.target,viz/polar_chart:SeriesClickEvent.target,_viz_polar_chart_SeriesInteractionInfo.target,dxPolarChart.Options.onLegendClick,dxPolarChart.Options.onSeriesClick,dxPolarChart.Options.onSeriesHoverChanged,dxPolarChart.Options.onSeriesSelectionChanged
 ---
 ---
 ##### shortDescription

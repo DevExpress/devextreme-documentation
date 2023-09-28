@@ -3,7 +3,6 @@ id: dxDataGrid
 module: ui/data_grid
 export: default
 inherits: GridBase
-references: dxDataGridColumn.cellTemplate,dxDataGridColumn.editCellTemplate,dxDataGridColumn.groupCellTemplate,dxDataGridColumn.headerCellTemplate,dxDataGridColumnButton.disabled,dxDataGridColumnButton.template,dxDataGridColumnButton.visible,dxDataGrid.Options.dataRowTemplate,ui/data_grid:Editing.allowDeleting,ui/data_grid:Editing.allowUpdating,dxDataGrid.Options.rowTemplate,ui/data_grid:Summary.calculateCustomSummary,ExcelExportDataGridProps.component,PdfExportDataGridProps.component
 ---
 ---
 ##### shortDescription

@@ -4,7 +4,6 @@ inherits: dxToolbarItem
 module: ui/data_grid
 export: ToolbarItem
 type: dxToolbarItem | Object
-references: dxDataGridToolbar.items
 ---
 ---
 ##### shortDescription

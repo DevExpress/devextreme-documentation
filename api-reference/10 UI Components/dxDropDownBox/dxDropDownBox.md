@@ -3,7 +3,6 @@ id: dxDropDownBox
 module: ui/drop_down_box
 export: default
 inherits: DataExpressionMixin,dxDropDownEditor
-references: dxDropDownBox.Options.contentTemplate
 ---
 ---
 ##### shortDescription

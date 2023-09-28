@@ -3,7 +3,6 @@ id: PatternRule
 type: Object
 module: common
 export: PatternRule
-references: dxFormSimpleItem.validationRules,dxValidationGroupResult.brokenRules,dxValidator.Options.onValidated,dxValidator.Options.onValidated,dxValidator.Options.onValidated,dxValidator.Options.validationRules,dxValidatorResult.brokenRule,dxValidatorResult.brokenRules,dxValidatorResult.validationRules,GridBaseColumn.validationRules,GridBase.Options.onRowValidating,ValidationRule
 ---
 ---
 ##### shortDescription

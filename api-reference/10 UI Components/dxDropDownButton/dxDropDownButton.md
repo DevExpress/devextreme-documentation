@@ -3,7 +3,6 @@ id: dxDropDownButton
 module: ui/drop_down_button
 export: default
 inherits: Widget,DataHelperMixin
-references: dxDropDownButtonItem.onClick
 ---
 ---
 ##### shortDescription

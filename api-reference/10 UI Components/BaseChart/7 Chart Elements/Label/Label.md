@@ -3,7 +3,6 @@ id: baseLabelObject
 type: Object
 module: viz/chart
 export: baseLabelObject
-references: basePointObject.getLabel,basePointObject.getLabel,basePointObject.getLabel,basePointObject.getLabel
 ---
 ---
 ##### shortDescription

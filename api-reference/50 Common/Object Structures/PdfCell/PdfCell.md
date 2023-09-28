@@ -2,7 +2,6 @@
 id: PdfCell
 module: pdf_exporter
 export: Cell
-references: PdfExportDataGridProps.customDrawCell,PdfExportDataGridProps.customizeCell,PdfExportDataGridProps.onRowExporting
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxGanttContextMenuItem
 inherits: dxContextMenuItem
-references: dxGanttContextMenu.items
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,6 @@ id: dxSortable
 module: ui/sortable
 export: default
 inherits: DraggableBase
-references: dxList.Options.itemDragging
 ---
 ---
 ##### shortDescription

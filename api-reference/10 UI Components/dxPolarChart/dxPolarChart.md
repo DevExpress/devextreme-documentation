@@ -3,7 +3,6 @@ id: dxPolarChart
 module: viz/polar_chart
 export: default
 inherits: BaseChart
-references: dxPolarChart.Options.onArgumentAxisClick
 ---
 ---
 ##### shortDescription

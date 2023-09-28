@@ -3,7 +3,6 @@ id: dxTreeListToolbarItem
 inherits: dxToolbarItem
 module: ui/tree_list
 export: ToolbarItem
-references: dxTreeListToolbar.items
 ---
 ---
 ##### shortDescription

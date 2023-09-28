@@ -3,7 +3,6 @@ id: Component
 module: core/component
 export: Component
 hidden: 
-references: Component.ctor
 ---
 ---
 ##### shortDescription

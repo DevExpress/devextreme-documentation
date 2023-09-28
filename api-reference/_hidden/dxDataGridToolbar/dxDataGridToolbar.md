@@ -3,7 +3,6 @@ id: dxDataGridToolbar
 type: Object
 module: ui/data_grid
 export: Toolbar
-references: dxDataGrid.Options.toolbar
 ---
 ---
 ##### shortDescription

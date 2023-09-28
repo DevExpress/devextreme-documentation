@@ -3,7 +3,6 @@ id: dxTreeListRowObject
 type: Object
 module: ui/tree_list
 export: Row
-references: ui/tree_list:ContextMenuPreparingEvent.row,ui/tree_list:EditorPreparedEvent.row,ui/tree_list:EditorPreparingEvent.row,ui/tree_list:FocusedCellChangedEvent.row,ui/tree_list:FocusedCellChangingEvent.rows,ui/tree_list:FocusedRowChangedEvent.row,ui/tree_list:FocusedRowChangingEvent.rows,CellInfo.row,dxTreeList.getVisibleRows,dxTreeList.getVisibleRows,dxTreeListColumn.cellTemplate,dxTreeListColumn.editCellTemplate,dxTreeListColumnButton.disabled,dxTreeListColumnButton.onClick,dxTreeListColumnButton.template,dxTreeListColumnButton.visible,ui/tree_list:Editing.allowAdding,ui/tree_list:Editing.allowDeleting,ui/tree_list:Editing.allowUpdating,dxTreeList.Options.onCellClick,dxTreeList.Options.onCellDblClick,dxTreeList.Options.onCellHoverChanged,dxTreeList.Options.onCellPrepared,dxTreeList.Options.onContextMenuPreparing,dxTreeList.Options.onEditorPrepared,dxTreeList.Options.onEditorPreparing,dxTreeList.Options.onFocusedCellChanged,dxTreeList.Options.onFocusedCellChanging,dxTreeList.Options.onFocusedRowChanged,dxTreeList.Options.onFocusedRowChanging
 ---
 ---
 ##### shortDescription

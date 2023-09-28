@@ -4,7 +4,6 @@ module: common/grids
 export: ColumnChooserSearchConfig
 type: Object
 generateTypeLink: 
-references: GridBase.Options.columnChooser.search
 ---
 ---
 ##### shortDescription

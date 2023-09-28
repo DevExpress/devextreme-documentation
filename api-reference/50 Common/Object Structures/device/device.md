@@ -3,7 +3,6 @@ id: Device
 module: core/devices
 export: Device
 type: Object
-references: animationPresets.registerPreset,BaseWidget.defaultOptions,DevicesObject.current,DevicesObject.current,DevicesObject.current,DevicesObject.real,DevicesObject.real,DOMComponent.defaultOptions
 ---
 ---
 ##### shortDescription

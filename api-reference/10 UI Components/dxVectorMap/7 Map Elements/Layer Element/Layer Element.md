@@ -2,7 +2,6 @@
 id: MapLayerElement
 module: viz/vector_map
 export: MapLayerElement
-references: viz/vector_map:ClickEvent.target,viz/vector_map:SelectionChangedEvent.target,_viz_vector_map_TooltipInfo.target,dxVectorMap.Options.layers.customize,dxVectorMap.Options.onClick,dxVectorMap.Options.onSelectionChanged,dxVectorMap.Options.onTooltipHidden,dxVectorMap.Options.onTooltipShown,viz/vector_map:Tooltip.contentTemplate,viz/vector_map:Tooltip.customizeTooltip,MapLayer.getElements,MapLayer.getElements
 ---
 ---
 ##### shortDescription

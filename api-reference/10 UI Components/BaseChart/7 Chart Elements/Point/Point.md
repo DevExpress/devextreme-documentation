@@ -3,7 +3,6 @@ id: basePointObject
 type: Object
 module: viz/chart
 export: basePointObject
-references: _viz_chart_components_base_chart_TooltipInfo.target,BaseChart.Options.onPointClick,BaseChart.Options.onPointHoverChanged,BaseChart.Options.onPointSelectionChanged,BaseChart.Options.onTooltipHidden,BaseChart.Options.onTooltipShown,baseSeriesObject.deselectPoint,baseSeriesObject.getAllPoints,baseSeriesObject.getAllPoints,baseSeriesObject.getPointByPos,baseSeriesObject.getPointByPos,baseSeriesObject.getPointsByArg,baseSeriesObject.getPointsByArg,baseSeriesObject.getVisiblePoints,baseSeriesObject.getVisiblePoints,baseSeriesObject.selectPoint,dxChart.Options.onPointClick,dxChart.Options.onPointHoverChanged,dxChart.Options.onPointSelectionChanged,dxChart.Options.onTooltipHidden,dxChart.Options.onTooltipShown,dxPieChart.Options.onPointClick,dxPieChart.Options.onPointHoverChanged,dxPieChart.Options.onPointSelectionChanged,dxPieChart.Options.onTooltipHidden,dxPieChart.Options.onTooltipShown,dxPolarChart.Options.onPointClick,dxPolarChart.Options.onPointHoverChanged,dxPolarChart.Options.onPointSelectionChanged,dxPolarChart.Options.onTooltipHidden,dxPolarChart.Options.onTooltipShown,PointInteractionInfo.target
 ---
 ---
 ##### shortDescription

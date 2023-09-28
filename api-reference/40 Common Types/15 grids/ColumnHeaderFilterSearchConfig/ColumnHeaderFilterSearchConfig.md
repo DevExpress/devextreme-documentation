@@ -5,7 +5,6 @@ export: ColumnHeaderFilterSearchConfig
 type: HeaderFilterSearchConfig | Object
 generateTypeLink: 
 inherits: HeaderFilterSearchConfig
-references: GridBaseColumn.headerFilter.search
 ---
 ---
 ##### shortDescription

@@ -4,7 +4,6 @@ generateTypeLink:
 module: common/charts
 export: GradientColor
 type: Object
-references: viz.registerGradient
 ---
 ---
 ##### shortDescription

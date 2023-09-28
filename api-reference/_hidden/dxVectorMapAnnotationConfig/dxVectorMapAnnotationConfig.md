@@ -4,5 +4,4 @@ type: Object
 inherits: dxVectorMapCommonAnnotationConfig
 module: viz/vector_map
 export: dxVectorMapAnnotationConfig
-references: _viz_vector_map_TooltipInfo.target,dxVectorMapCommonAnnotationConfig.customizeTooltip,dxVectorMapCommonAnnotationConfig.template,dxVectorMapCommonAnnotationConfig.tooltipTemplate,dxVectorMap.Options.annotations,dxVectorMap.Options.customizeAnnotation,dxVectorMap.Options.customizeAnnotation,dxVectorMap.Options.onTooltipHidden,dxVectorMap.Options.onTooltipShown
 ---

@@ -3,7 +3,6 @@ id: PositionConfig
 type: Object
 module: animation/position
 export: PositionConfig
-references: ui/context_menu:PositioningEvent.position,AnimationState.position,dxContextMenu.Options.onPositioning,dxContextMenu.Options.position,dxLoadPanel.Options.position,dxPopover.Options.position,dxPopup.Options.position,dxToast.Options.position,GlobalConfig.floatingActionButtonConfig.position,GridBase.Options.columnChooser.position
 ---
 ---
 ##### shortDescription

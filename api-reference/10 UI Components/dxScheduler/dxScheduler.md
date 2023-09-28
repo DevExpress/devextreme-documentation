@@ -3,7 +3,6 @@ id: dxScheduler
 module: ui/scheduler
 export: default
 inherits: Widget,DataHelperMixin
-references: dxScheduler.Options.appointmentDragging.onAdd,dxScheduler.Options.appointmentDragging.onDragEnd,dxScheduler.Options.appointmentDragging.onDragMove,dxScheduler.Options.appointmentDragging.onDragStart,dxScheduler.Options.appointmentDragging.onRemove
 ---
 ---
 ##### shortDescription

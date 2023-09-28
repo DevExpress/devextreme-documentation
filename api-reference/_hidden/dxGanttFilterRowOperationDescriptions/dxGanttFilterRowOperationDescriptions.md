@@ -3,7 +3,6 @@ id: dxGanttFilterRowOperationDescriptions
 module: ui/gantt
 export: dxGanttFilterRowOperationDescriptions
 type: Object
-references: dxGanttFilterRow.operationDescriptions
 ---
 ---
 ##### shortDescription

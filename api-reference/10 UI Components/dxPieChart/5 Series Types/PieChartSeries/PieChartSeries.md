@@ -6,7 +6,6 @@ hidden:
 inlineType: 
 module: viz/pie_chart
 export: PieChartSeries
-references: dxPieChart.Options.series,dxPieChart.Options.seriesTemplate.customizeSeries
 ---
 ---
 ##### shortDescription

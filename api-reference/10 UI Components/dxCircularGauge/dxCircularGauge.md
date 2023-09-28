@@ -3,7 +3,6 @@ id: dxCircularGauge
 module: viz/circular_gauge
 export: default
 inherits: BaseGauge
-references: dxCircularGauge.Options.centerTemplate
 ---
 ---
 ##### shortDescription

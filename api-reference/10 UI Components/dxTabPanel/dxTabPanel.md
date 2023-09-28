@@ -3,7 +3,6 @@ id: dxTabPanel
 module: ui/tab_panel
 export: default
 inherits: dxMultiView
-references: dxFormTabbedItem.tabPanelOptions
 ---
 ---
 ##### shortDescription

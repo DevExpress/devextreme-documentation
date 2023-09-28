@@ -3,7 +3,6 @@ id: AsyncRule
 type: Object
 module: common
 export: AsyncRule
-references: dxFormSimpleItem.validationRules,dxValidationGroupResult.brokenRules,dxValidator.Options.onValidated,dxValidator.Options.onValidated,dxValidator.Options.onValidated,dxValidator.Options.validationRules,dxValidatorResult.brokenRule,dxValidatorResult.brokenRules,dxValidatorResult.pendingRules,dxValidatorResult.validationRules,GridBaseColumn.validationRules,GridBase.Options.onRowValidating,ValidationRule
 ---
 ---
 ##### shortDescription

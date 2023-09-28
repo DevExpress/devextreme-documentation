@@ -2,7 +2,6 @@
 id: DataSource
 module: data/data_source
 export: default
-references: BaseChart.Options.dataSource,CollectionWidget.Options.dataSource,DataExpressionMixin.Options.dataSource,DataSource.ctor,DataSourceLike,dxAccordion.Options.dataSource,dxActionSheet.Options.dataSource,dxBox.Options.dataSource,dxContextMenu.Options.dataSource,dxDiagram.Options.edges.dataSource,dxDiagram.Options.nodes.dataSource,dxDropDownBox.Options.dataSource,dxDropDownButton.Options.dataSource,dxFilterBuilderField.lookup.dataSource,dxFunnel.Options.dataSource,dxGallery.Options.dataSource,dxGantt.Options.dependencies.dataSource,dxGantt.Options.resourceAssignments.dataSource,dxGantt.Options.resources.dataSource,dxGantt.Options.tasks.dataSource,dxHtmlEditorMention.dataSource,dxHtmlEditorVariables.dataSource,dxList.Options.dataSource,dxMenuBase.Options.dataSource,dxMenu.Options.dataSource,dxMultiView.Options.dataSource,dxRangeSelector.Options.dataSource,dxResponsiveBox.Options.dataSource,dxSankey.Options.dataSource,dxScheduler.Options.dataSource,dxScheduler.Options.resources.dataSource,dxSparkline.Options.dataSource,dxTabPanel.Options.dataSource,dxTabs.Options.dataSource,dxTileView.Options.dataSource,dxToolbar.Options.dataSource,dxTreeMap.Options.dataSource,dxTreeView.Options.dataSource,dxVectorMap.Options.layers.dataSource,GridBaseColumn.headerFilter.dataSource,GridBaseColumn.headerFilter.dataSource,GridBaseColumn.lookup.dataSource,GridBaseColumn.lookup.dataSource,GridBase.Options.dataSource
 ---
 ---
 ##### shortDescription

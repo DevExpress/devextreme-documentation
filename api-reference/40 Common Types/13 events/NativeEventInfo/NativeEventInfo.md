@@ -3,7 +3,6 @@ id: NativeEventInfo
 module: events/index
 export: NativeEventInfo
 generateTypeLink: 
-references: dxActionSheetItem.onClick,dxTextEditor.Options.onChange,dxTextEditor.Options.onCopy,dxTextEditor.Options.onCut,dxTextEditor.Options.onEnterKey,dxTextEditor.Options.onFocusIn,dxTextEditor.Options.onFocusOut,dxTextEditor.Options.onInput,dxTextEditor.Options.onKeyDown,dxTextEditor.Options.onKeyUp,dxTextEditor.Options.onPaste
 ---
 ---
 ##### shortDescription

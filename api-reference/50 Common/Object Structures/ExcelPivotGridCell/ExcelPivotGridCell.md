@@ -1,7 +1,6 @@
 ---
 id: ExcelPivotGridCell
 inherits: dxPivotGridPivotGridCell
-references: ExcelExportPivotGridProps.customizeCell
 ---
 ---
 ##### shortDescription

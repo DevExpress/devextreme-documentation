@@ -2,7 +2,6 @@
 id: dxTreeMapNode
 module: viz/tree_map
 export: dxTreeMapNode
-references: viz/tree_map:ClickEvent.node,viz/tree_map:DrillEvent.node,viz/tree_map:NodesInitializedEvent.root,viz/tree_map:NodesRenderingEvent.node,dxTreeMap.getCurrentNode,dxTreeMap.getCurrentNode,dxTreeMap.getRootNode,dxTreeMap.getRootNode,dxTreeMapNode.getAllChildren,dxTreeMapNode.getAllChildren,dxTreeMapNode.getAllNodes,dxTreeMapNode.getAllNodes,dxTreeMapNode.getChild,dxTreeMapNode.getChild,dxTreeMapNode.getParent,dxTreeMapNode.getParent,dxTreeMap.Options.onClick,dxTreeMap.Options.onDrill,dxTreeMap.Options.onHoverChanged,dxTreeMap.Options.onNodesInitialized,dxTreeMap.Options.onNodesRendering,dxTreeMap.Options.onSelectionChanged,viz/tree_map:Tooltip.contentTemplate,viz/tree_map:Tooltip.customizeTooltip,InteractionInfo.node
 ---
 ---
 ##### shortDescription

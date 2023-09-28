@@ -2,7 +2,6 @@
 id: XmlaStore
 module: ui/pivot_grid/xmla_store
 export: default
-references: PivotGridDataSource.Options.store
 ---
 ---
 ##### shortDescription

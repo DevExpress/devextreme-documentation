@@ -3,7 +3,6 @@ id: dxBullet
 module: viz/bullet
 export: default
 inherits: BaseSparkline
-references: viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

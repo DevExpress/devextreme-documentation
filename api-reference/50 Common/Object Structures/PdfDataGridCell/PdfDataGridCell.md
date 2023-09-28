@@ -1,7 +1,6 @@
 ---
 id: PdfDataGridCell
 inherits: ExcelDataGridCell
-references: PdfExportDataGridProps.customDrawCell,PdfExportDataGridProps.customizeCell
 ---
 ---
 ##### shortDescription

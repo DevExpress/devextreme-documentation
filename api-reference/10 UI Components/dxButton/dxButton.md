@@ -3,7 +3,6 @@ id: dxButton
 module: ui/button
 export: default
 inherits: Widget
-references: dxFormButtonItem.buttonOptions,TextEditorButton.options,ui.dialog.custom
 ---
 ---
 ##### shortDescription

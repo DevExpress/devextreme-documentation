@@ -4,7 +4,6 @@ module: common/data/custom-store
 export: GroupItem
 type: Object
 generateTypeLink: 
-references: GroupItem.items,LoadResultObject.data
 ---
 ---
 ##### shortDescription

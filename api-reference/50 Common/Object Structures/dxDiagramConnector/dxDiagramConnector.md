@@ -3,7 +3,6 @@ id: dxDiagramConnector
 inherits: dxDiagramItem
 module: ui/diagram
 export: dxDiagramConnector
-references: dxDiagramBeforeChangeConnectorTextArgs.connector,dxDiagramChangeConnectionArgs.connector,dxDiagramChangeConnectorPointsArgs.connector,dxDiagramChangeConnectorTextArgs.connector,dxDiagramDeleteConnectorArgs.connector
 ---
 ---
 ##### shortDescription

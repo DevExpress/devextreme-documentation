@@ -3,7 +3,6 @@ id: BarGaugeBarInfo
 type: Object
 module: viz/bar_gauge
 export: BarGaugeBarInfo
-references: BarGaugeLegendItem.item,viz/bar_gauge:Legend.customizeHint,viz/bar_gauge:Legend.customizeText
 ---
 ---
 ##### shortDescription

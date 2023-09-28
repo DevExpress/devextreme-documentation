@@ -3,7 +3,6 @@ id: dxForm
 module: ui/form
 export: default
 inherits: Widget
-references: common/grids:EditingBase.form
 ---
 ---
 ##### shortDescription

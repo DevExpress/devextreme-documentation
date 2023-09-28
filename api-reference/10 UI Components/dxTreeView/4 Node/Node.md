@@ -3,7 +3,6 @@ id: dxTreeViewNode
 type: Object
 module: ui/tree_view
 export: Node
-references: _ui_tree_view_ItemInfo.node,dxTreeView.getNodes,dxTreeView.getNodes,dxTreeView.getSelectedNodes,dxTreeView.getSelectedNodes,dxTreeViewNode.children,dxTreeViewNode.parent,dxTreeView.Options.createChildren,dxTreeView.Options.onItemClick,dxTreeView.Options.onItemCollapsed,dxTreeView.Options.onItemContextMenu,dxTreeView.Options.onItemExpanded,dxTreeView.Options.onItemHold,dxTreeView.Options.onItemRendered,dxTreeView.Options.onItemSelectionChanged
 ---
 ---
 ##### shortDescription

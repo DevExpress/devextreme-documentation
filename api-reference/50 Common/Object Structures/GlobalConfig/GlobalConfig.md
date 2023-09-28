@@ -3,7 +3,6 @@ id: GlobalConfig
 module: common
 export: GlobalConfig
 type: Object
-references: config,config,config
 ---
 ---
 ##### shortDescription

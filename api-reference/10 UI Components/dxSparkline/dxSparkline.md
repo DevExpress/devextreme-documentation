@@ -3,7 +3,6 @@ id: dxSparkline
 module: viz/sparkline
 export: default
 inherits: BaseSparkline,DataHelperMixin
-references: viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

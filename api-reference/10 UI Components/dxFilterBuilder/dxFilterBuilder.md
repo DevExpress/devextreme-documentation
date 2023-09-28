@@ -3,7 +3,6 @@ id: dxFilterBuilder
 module: ui/filter_builder
 export: default
 inherits: Widget
-references: GridBase.Options.filterBuilder
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,6 @@ id: dxSankey
 module: viz/sankey
 export: default
 inherits: BaseWidget,DataHelperMixin
-references: viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

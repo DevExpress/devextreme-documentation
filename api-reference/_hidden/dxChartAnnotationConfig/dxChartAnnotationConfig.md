@@ -4,5 +4,4 @@ type: Object
 inherits: dxChartCommonAnnotationConfig
 module: viz/chart
 export: dxChartAnnotationConfig
-references: _viz_chart_components_base_chart_TooltipInfo.target,BaseChart.Options.onTooltipHidden,BaseChart.Options.onTooltipShown,dxChartCommonAnnotationConfig.customizeTooltip,dxChartCommonAnnotationConfig.template,dxChartCommonAnnotationConfig.tooltipTemplate,dxChart.Options.annotations,dxChart.Options.customizeAnnotation,dxChart.Options.customizeAnnotation,dxChart.Options.onTooltipHidden,dxChart.Options.onTooltipShown,dxPieChart.Options.onTooltipHidden,dxPieChart.Options.onTooltipShown,dxPolarChart.Options.onTooltipHidden,dxPolarChart.Options.onTooltipShown
 ---

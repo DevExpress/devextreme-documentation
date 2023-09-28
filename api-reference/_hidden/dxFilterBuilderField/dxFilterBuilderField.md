@@ -3,7 +3,6 @@ id: dxFilterBuilderField
 type: Object
 module: ui/filter_builder
 export: Field
-references: dxFilterBuilderCustomOperation.calculateFilterExpression,dxFilterBuilderCustomOperation.customizeText,dxFilterBuilderCustomOperation.editorTemplate,dxFilterBuilderField.editorTemplate,dxFilterBuilder.Options.fields
 ---
 ---
 ##### shortDescription

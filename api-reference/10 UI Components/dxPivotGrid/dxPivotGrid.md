@@ -3,7 +3,6 @@ id: dxPivotGrid
 module: ui/pivot_grid
 export: default
 inherits: Widget
-references: ExcelExportPivotGridProps.component
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,6 @@ id: EventObject
 module: events/index
 export: EventObject
 type: Object
-references: DxEvent,event
 ---
 ---
 ##### shortDescription

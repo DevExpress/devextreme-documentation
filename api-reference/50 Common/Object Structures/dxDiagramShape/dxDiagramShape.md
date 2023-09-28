@@ -3,7 +3,6 @@ id: dxDiagramShape
 inherits: dxDiagramItem
 module: ui/diagram
 export: dxDiagramShape
-references: dxDiagramAddShapeArgs.shape,dxDiagramBeforeChangeShapeTextArgs.shape,dxDiagramChangeConnectionArgs.newShape,dxDiagramChangeConnectionArgs.oldShape,dxDiagramChangeShapeTextArgs.shape,dxDiagramDeleteShapeArgs.shape,dxDiagramMoveShapeArgs.shape,dxDiagram.Options.customShapes.template,dxDiagram.Options.customShapes.toolboxTemplate,dxDiagram.Options.customShapeTemplate,dxDiagram.Options.customShapeToolboxTemplate,dxDiagramResizeShapeArgs.shape
 ---
 ---
 ##### shortDescription

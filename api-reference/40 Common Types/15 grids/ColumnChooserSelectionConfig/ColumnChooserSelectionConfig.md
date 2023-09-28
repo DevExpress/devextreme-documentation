@@ -4,7 +4,6 @@ module: common/grids
 export: ColumnChooserSelectionConfig
 type: Object
 generateTypeLink: 
-references: GridBase.Options.columnChooser.selection
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,6 @@ id: dxTreeListNode
 type: Object
 module: ui/tree_list
 export: Node
-references: ui/tree_list:NodesInitializedEvent.root,ui/tree_list:RowClickEvent.node,ui/tree_list:RowPreparedEvent.node,dxTreeList.forEachNode,dxTreeList.getNodeByKey,dxTreeList.getNodeByKey,dxTreeList.getRootNode,dxTreeList.getRootNode,dxTreeListNode.children,dxTreeListNode.parent,dxTreeList.Options.onNodesInitialized,dxTreeList.Options.onRowClick,dxTreeList.Options.onRowPrepared,dxTreeListRowObject.node
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,6 @@ id: dxHtmlEditorTableContextMenu
 module: ui/html_editor
 export: dxHtmlEditorTableContextMenu
 type: Object
-references: dxHtmlEditor.Options.tableContextMenu
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,6 @@ id: dxBarGauge
 module: viz/bar_gauge
 export: default
 inherits: BaseWidget
-references: dxBarGauge.Options.centerTemplate,viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

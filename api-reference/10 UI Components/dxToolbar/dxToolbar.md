@@ -3,6 +3,7 @@ id: dxToolbar
 module: ui/toolbar
 export: default
 inherits: CollectionWidget
+references: dxDataGrid.Options.onToolbarPreparing,dxTreeList.Options.onToolbarPreparing,GridBase.Options.onToolbarPreparing,ToolbarPreparingInfo.toolbarOptions
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
 id: dxFileManagerContextMenuItem
 inherits: dxContextMenuItem
+references: dxFileManagerContextMenu.items,dxFileManagerContextMenuItem.items
 ---
 ---
 ##### shortDescription

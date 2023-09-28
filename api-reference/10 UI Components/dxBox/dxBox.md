@@ -3,6 +3,7 @@ id: dxBox
 module: ui/box
 export: default
 inherits: CollectionWidget
+references: dxBoxItem.box
 ---
 ---
 ##### shortDescription

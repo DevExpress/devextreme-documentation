@@ -3,6 +3,7 @@ id: AnimationState
 type: Object
 module: animation/fx
 export: AnimationState
+references: AnimationConfig.from,AnimationConfig.to
 ---
 ---
 ##### shortDescription

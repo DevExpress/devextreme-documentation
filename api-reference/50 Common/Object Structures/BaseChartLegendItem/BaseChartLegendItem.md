@@ -4,6 +4,7 @@ type: Object
 inherits: BaseLegendItem
 module: viz/chart_components/base_chart
 export: BaseChartLegendItem
+references: viz/chart_components/base_chart:BaseChartLegend.customizeItems,viz/chart_components/base_chart:BaseChartLegend.customizeItems,viz/chart_components/base_chart:BaseChartLegend.markerTemplate
 ---
 ---
 ##### shortDescription

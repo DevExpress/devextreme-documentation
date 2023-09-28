@@ -4,6 +4,7 @@ type: Object
 inherits: BaseChartAnnotationConfig
 module: viz/polar_chart
 export: dxPolarChartCommonAnnotationConfig
+references: dxPolarChartCommonAnnotationConfig.template,dxPolarChart.Options.commonAnnotationSettings
 ---
 ---
 ##### shortDescription

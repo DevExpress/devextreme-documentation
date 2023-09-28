@@ -4,6 +4,7 @@ type: Object
 hidden: 
 module: common/charts
 export: ScaleBreak
+references: viz/chart:ArgumentAxis.breaks,viz/chart:ValueAxis.breaks,dxRangeSelector.Options.scale.breaks
 ---
 ---
 ##### shortDescription

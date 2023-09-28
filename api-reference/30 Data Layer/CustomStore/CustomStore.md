@@ -3,6 +3,7 @@ id: CustomStore
 module: data/custom_store
 export: default
 inherits: Store
+references: DataSource.ctor
 ---
 ---
 ##### shortDescription

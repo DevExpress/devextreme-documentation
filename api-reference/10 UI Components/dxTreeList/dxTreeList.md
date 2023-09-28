@@ -3,6 +3,7 @@ id: dxTreeList
 module: ui/tree_list
 export: default
 inherits: GridBase
+references: dxTreeListColumn.cellTemplate,dxTreeListColumn.editCellTemplate,dxTreeListColumn.headerCellTemplate,dxTreeListColumnButton.disabled,dxTreeListColumnButton.onClick,dxTreeListColumnButton.template,dxTreeListColumnButton.visible,ui/tree_list:Editing.allowAdding,ui/tree_list:Editing.allowDeleting,ui/tree_list:Editing.allowUpdating
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ type: Object
 inherits: BaseLegendItem
 module: viz/bar_gauge
 export: LegendItem
+references: viz/bar_gauge:Legend.customizeItems,viz/bar_gauge:Legend.customizeItems,viz/bar_gauge:Legend.markerTemplate
 ---
 ---
 ##### shortDescription

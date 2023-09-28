@@ -3,6 +3,7 @@ id: EventInfo
 module: events/index
 export: EventInfo
 generateTypeLink: 
+references: BaseChart.Options.onDone,BaseSparkline.Options.onTooltipHidden,BaseSparkline.Options.onTooltipShown,BaseWidget.Options.onDrawn,BaseWidget.Options.onExported,DOMComponent.Options.onDisposing,dxDropDownEditor.Options.onClosed,dxDropDownEditor.Options.onOpened,dxOverlay.Options.onHidden,dxOverlay.Options.onShown,Widget.Options.onContentReady
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,6 @@
 ---
 id: dxFunnelItem
+references: dxFunnel.getAllItems,dxFunnel.getAllItems,dxFunnel.Options.label.customizeText,viz/funnel:Legend.customizeHint,viz/funnel:Legend.customizeText,dxFunnel.Options.onHoverChanged,dxFunnel.Options.onItemClick,dxFunnel.Options.onLegendClick,dxFunnel.Options.onSelectionChanged,viz/funnel:Tooltip.contentTemplate,viz/funnel:Tooltip.customizeTooltip,FunnelItemInfo.item,FunnelLegendItem.item
 ---
 ---
 ##### shortDescription

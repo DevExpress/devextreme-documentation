@@ -3,6 +3,7 @@ id: dxFunnel
 module: viz/funnel
 export: default
 inherits: BaseWidget,DataHelperMixin
+references: viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

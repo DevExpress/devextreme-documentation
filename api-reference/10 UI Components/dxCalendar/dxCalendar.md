@@ -3,6 +3,7 @@ id: dxCalendar
 module: ui/calendar
 export: default
 inherits: Editor
+references: DateBoxBase.Options.calendarOptions
 ---
 ---
 ##### shortDescription

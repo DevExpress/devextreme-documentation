@@ -3,6 +3,7 @@ id: dxChart
 module: viz/chart
 export: default
 inherits: BaseChart
+references: viz.exportWidgets,viz.exportWidgets,viz.getMarkup
 ---
 ---
 ##### shortDescription

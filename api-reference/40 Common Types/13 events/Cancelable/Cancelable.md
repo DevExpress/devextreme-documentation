@@ -3,6 +3,7 @@ id: Cancelable
 module: events/index
 export: Cancelable
 generateTypeLink: 
+references: FileSavingEventInfo
 ---
 ---
 ##### shortDescription

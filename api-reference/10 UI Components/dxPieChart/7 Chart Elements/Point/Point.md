@@ -4,6 +4,7 @@ type: Object
 inherits: basePointObject
 module: viz/pie_chart
 export: piePointObject
+references: viz/pie_chart:LegendClickEvent.points,dxPieChart.Options.onLegendClick,PieChartLegendItem.points
 ---
 ---
 ##### shortDescription

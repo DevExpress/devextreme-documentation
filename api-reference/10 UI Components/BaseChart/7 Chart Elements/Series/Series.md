@@ -3,6 +3,7 @@ id: baseSeriesObject
 type: Object
 module: viz/chart
 export: baseSeriesObject
+references: BaseChart.getAllSeries,BaseChart.getAllSeries,BaseChartLegendItem.series
 ---
 ---
 ##### shortDescription

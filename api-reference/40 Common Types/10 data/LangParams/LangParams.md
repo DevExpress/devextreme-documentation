@@ -4,6 +4,7 @@ module: data/index
 export: LangParams
 type: Object
 generateTypeLink: 
+references: DataSource.Options.langParams
 ---
 ---
 ##### shortDescription

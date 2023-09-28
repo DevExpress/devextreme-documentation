@@ -2,6 +2,7 @@
 id: PdfExportDataGridProps
 module: pdf_exporter
 export: PdfExportDataGridProps
+references: pdfExporter.exportDataGrid
 ---
 ---
 ##### shortDescription

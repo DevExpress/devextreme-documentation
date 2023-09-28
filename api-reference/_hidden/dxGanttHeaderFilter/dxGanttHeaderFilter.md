@@ -3,6 +3,7 @@ id: dxGanttHeaderFilter
 module: ui/gantt
 export: dxGanttHeaderFilter
 type: Object
+references: dxGantt.Options.headerFilter
 ---
 ---
 ##### shortDescription

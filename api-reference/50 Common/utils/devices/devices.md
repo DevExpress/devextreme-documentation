@@ -2,6 +2,7 @@
 id: DevicesObject
 module: core/devices
 export: default
+references: devices
 ---
 ---
 ##### shortDescription

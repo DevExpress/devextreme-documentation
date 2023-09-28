@@ -4,6 +4,7 @@ inherits: DOMComponent
 hidden: 
 module: ui/scroll_view/ui.scrollable
 export: default
+references: dxTreeView.getScrollable,dxTreeView.getScrollable,GridBase.getScrollable,GridBase.getScrollable
 ---
 ---
 ##### shortDescription

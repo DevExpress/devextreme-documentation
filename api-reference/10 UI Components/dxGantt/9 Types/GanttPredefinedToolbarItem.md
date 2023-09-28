@@ -8,7 +8,3 @@ type: Union
 Configures toolbar items' settings.
 
 ---
-<!--
-dxGanttToolbar.items(/api-reference/_hidden/dxGanttToolbar/items.md)
-dxGanttToolbarItem.name(/api-reference/_hidden/dxGanttToolbarItem/name.md)
--->

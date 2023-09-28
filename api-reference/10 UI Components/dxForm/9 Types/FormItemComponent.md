@@ -8,6 +8,3 @@ type: Union
 Specifies which editor UI component is used to display and edit the form item value.
 
 ---
-<!--
-dxFormSimpleItem.editorType(/api-reference/10 UI Components/dxForm/5 Item Types/SimpleItem/editorType.md)(ui/form.d.ts)
--->

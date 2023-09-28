@@ -8,6 +8,3 @@ type: Union
 Specifies how to resolve collisions - when the overlay element exceeds the [boundary](/api-reference/50%20Common/Object%20Structures/positionConfig/boundary.md '/Documentation/ApiReference/Common/Object_Structures/PositionConfig/#boundary') element.
 
 ---
-<!--
-PositionConfig.collision(/api-reference/50 Common/Object Structures/positionConfig/collision/collision.md)
--->

@@ -8,6 +8,3 @@ type: Union
 Specifies a transportation mode to be used in the displayed route.
 
 ---
-<!--
-dxMapOptions.routes.mode(/api-reference/10 UI Components/dxMap/1 Configuration/routes/mode.md)(ui/map.d.ts)
--->

@@ -8,8 +8,3 @@ type: Union
 Configures toolbar items.
 
 ---
-<!--
-dxHtmlEditorToolbar.items(/api-reference/_hidden/dxHtmlEditorToolbar/items/items.md)
-dxHtmlEditorToolbarItem.formatName(/api-reference/_hidden/dxHtmlEditorToolbarItem/formatName.md)
-dxHtmlEditorToolbarItem.name(/api-reference/_hidden/dxHtmlEditorToolbarItem/name.md)
--->

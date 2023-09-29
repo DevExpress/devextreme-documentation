@@ -16,7 +16,7 @@ The following errors can appear:
 - The `object XMLHttpRequest` error occurs after adding in total summaries and group summaries.
 - Filtering by `Search Panel` does not work if the component has a lookup column.
 - Filtering by `Search Panel` does not work if the component has more than 20 columns.
-- Selection does not work if [selection.deferred](/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/selection/#deferred) is `true`.
+- Selection does not work if [selection.deferred](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred) is `true`.
 
 If you receive one of the errors above, consider the following solutions:
 

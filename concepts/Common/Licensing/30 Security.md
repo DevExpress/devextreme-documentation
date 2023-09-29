@@ -1,0 +1,3 @@
+The license key does not contain any secret or private information. During license verification, we also do not gain access to any information or resources, do not collect information about users, and do not send anything anywhere.
+
+Since the license key verification is performed on the client, it is not machine bound. No network connection is required, we do not send any HTTP requests. The license key checking procedure is no different on the local development machine or in CI/CD.

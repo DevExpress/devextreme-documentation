@@ -107,7 +107,7 @@ Specifies custom data for the upload request.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .UploadCustomData(new[] { __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value })
+        .UploadCustomData(new JS("__RequestVerificationToken: document.getElementsByName('__RequestVerificationToken')[0].value"))
         // ...
     )
 
@@ -115,7 +115,7 @@ Specifies custom data for the upload request.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .UploadCustomData(new[] { __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value })
+        .UploadCustomData(new JS("__RequestVerificationToken: document.getElementsByName('__RequestVerificationToken')[0].value"))
         // ...
     )
 

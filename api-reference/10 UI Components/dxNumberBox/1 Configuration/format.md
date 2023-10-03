@@ -127,7 +127,7 @@ Full format configuration. The object structure is shown in the [format](/api-re
 
 [note]
 
-- With this property specified, a press on the minus sign (-) inverts the current value instead of entering "-".
+- When this property is specified, a press on the minus sign (-) inverts the current value instead of entering "-".
 
 - If you set this property, the number pad keyboard appears on mobile devices when users focus the editor. Such keyboards may not have a decimal character. Set the [mode](/api-reference/10%20UI%20Components/dxNumberBox/1%20Configuration/mode.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#mode') property to *"text"* to use the standard keyboard instead.
 

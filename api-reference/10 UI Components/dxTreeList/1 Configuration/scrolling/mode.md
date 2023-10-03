@@ -17,7 +17,7 @@ This mode is an alternative to paging where pages are rendered when they get int
     - Rows grouping is enabled.
     - The [allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md 'Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') property is disabled.
 
-[note] Specify the component's [height](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#height) if you use virtual scrolling.
+[note] Specify the component's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#height') if you use virtual scrolling.
 
 Note that the [rowRenderingMode](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/scrolling/rowRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#rowRenderingMode') property value is "*virtual*" and cannot be changed if you set the **mode** property to "*virtual*" or "*standard*".
 

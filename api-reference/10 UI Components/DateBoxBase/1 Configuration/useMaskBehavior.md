@@ -8,3 +8,4 @@ default: false
 Specifies whether to use an input mask based on the [displayFormat](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configuration/displayFormat.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#displayFormat') property.
 
 ---
+[note] The `drop` event is not supported for masked input.

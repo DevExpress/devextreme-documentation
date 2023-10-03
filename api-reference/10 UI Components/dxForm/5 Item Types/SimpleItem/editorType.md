@@ -13,7 +13,7 @@ Specifies which editor UI component is used to display and edit the form item va
 
 [important]If you use [DevExtreme modules](/concepts/Common/Modularity/01%20Link%20Modules/10%20Use%20Webpack.md '/Documentation/Guide/Common/Modularity/'), import the editor's module when specifying this property. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*, because the Form UI component imports them automatically when creating form items. 
 
-[note] This property does not [support](/Documentation/ApiReference/UI_Components/dxForm/Types/#FormItemComponent) all editors. You can use a [template](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template) to define an unsupported component. 
+[note] This property does not [support](/api-reference/10%20UI%20Components/dxForm/9%20Types/FormItemComponent.md '/Documentation/ApiReference/UI_Components/dxForm/Types/#FormItemComponent') all editors. You can use a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') to define an unsupported component. 
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-scheduler-filter-appointments-by-name-and-date"

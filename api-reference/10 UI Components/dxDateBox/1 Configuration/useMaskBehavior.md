@@ -8,6 +8,8 @@ default: false
 Specifies whether to control user input using a mask created based on the [displayFormat](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/displayFormat.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#displayFormat').
 
 ---
+[note] The `drop` event is not supported for masked input.
+
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Formatting/"
 }

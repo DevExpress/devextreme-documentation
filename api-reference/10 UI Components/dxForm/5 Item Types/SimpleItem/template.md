@@ -226,5 +226,7 @@ A template name or container.
     url: "https://github.com/DevExpress-Examples/Form-Custom-items"
 }
 
+[note] If you customize the built-in DataGrid Form, refer to the following help topic for implementation specificities: [DataGrid Form Editor Customization](/concepts/05%20UI%20Components/DataGrid/20%20Editing/43%20Customize%20Edit%20Form '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form').
+
 #####See Also#####
 - [Customize a Simple Item](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Customize_a_Simple_Item')

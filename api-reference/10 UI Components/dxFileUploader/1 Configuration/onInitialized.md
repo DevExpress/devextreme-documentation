@@ -16,6 +16,8 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
+#include common-code-on-initialized
+
 #####See Also#####
 
 #include common-get-instance

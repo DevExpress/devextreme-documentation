@@ -174,6 +174,8 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     });
     </script>
 
+##### React
+
     <!-- tab: App.js -->
     import React from 'react';  
     import 'devextreme/dist/css/dx.light.css'; 

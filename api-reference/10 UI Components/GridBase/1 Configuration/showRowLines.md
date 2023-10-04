@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.showRowLines
 type: Boolean
-default: false, true (Material, iOS)
+default: false, true (Fluent, Material, iOS)
 ---
 ---
 ##### shortDescription

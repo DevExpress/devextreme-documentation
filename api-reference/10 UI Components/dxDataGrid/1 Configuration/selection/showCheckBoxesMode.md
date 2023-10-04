@@ -1,7 +1,7 @@
 ---
 id: dxDataGrid.Options.selection.showCheckBoxesMode
 type: Enums.SelectionColumnDisplayMode
-default: 'onClick', 'always' (Material)
+default: 'onClick', 'always' (Fluent, Material)
 ---
 ---
 ##### shortDescription

@@ -14,7 +14,7 @@ This property is a read-only flag. You can use it to check if any editor value c
 
 - Specify the [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') of each Form item for this property to take effect.
 
-- If you use [DateBox](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#isDirty), [DateRangeBox](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#isDirty), or [NumberBox](/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#isDirty) as a Form item, and users enter not valid values (for example, not a date in DateBox), the **isDirty** value does not change.
+- If you use [DateBox](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#isDirty) or [DateRangeBox](/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#isDirty) as a Form item, and users enter invalid dates, the **isDirty** value does not change.
 
 [/note]
 

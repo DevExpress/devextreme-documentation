@@ -131,9 +131,42 @@ An item in the TabPanel UI component includes a tab and a view. For a minor cust
 
 ---
 
-If you need a more flexible solution, define [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate') for views and tabs, respectively. In Angular and Vue, you can declare them in the markup. In React, you can use rendering functions (shown in the code below) or components.
+If you need a more flexible solution, define [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTemplate') and [itemTitleTemplate](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/itemTitleTemplate.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#itemTitleTemplate') for views and tabs, respectively.
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    var dataItems = [{
+        title: "Info",
+        data: { firstName: "John", lastName: "Smith", birthYear: 1986 }
+    }, {
+        title: "Contacts",
+        data: { phone: "(555)555-5555", email: "John.Smith@example.com" }
+    }];
+
+    $(function() {
+        $("#tabPanelContainer").dxTabPanel({
+            items: dataItems,
+            itemTitleTemplate: function(itemData, itemIndex, itemElement) {
+                itemElement.append("<p>" + itemData.title + "</p>");
+            },
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                var container = $("<div style='margin:25px;'>");
+                container.append("<h1>" + itemData.title + "</h1>");
+
+                var info = $("<div style='text-align:left;'>");
+                for (var field in itemData.data) {
+                    info.append("<p>" + field + ": <b>" + itemData.data[field] + "</b></p>");
+                }
+                container.append(info);
+                itemElement.append(container);
+            }
+        });
+    });
+
+    <!--HTML-->
+    <div id="tabPanelContainer"></div>
 
 ##### Angular
 
@@ -296,51 +329,35 @@ If you need a more flexible solution, define [itemTemplate](/api-reference/10%20
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/"
 }
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for TabPanel items. To apply this markup, use the **itemTemplate** and **itemTitleTemplate** callback functions as shown in the following code:
-
 ---
-
 ##### jQuery
 
-    <!--JavaScript-->
-    var dataItems = [{
-        title: "Info",
-        data: { firstName: "John", lastName: "Smith", birthYear: 1986 }
-    }, {
-        title: "Contacts",
-        data: { phone: "(555)555-5555", email: "John.Smith@example.com" }
-    }];
+You can also customize individual items. Declare them as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template') property or assign a customization function straight to this property.
 
+    <!--JavaScript-->
     $(function() {
         $("#tabPanelContainer").dxTabPanel({
-            items: dataItems,
-            itemTitleTemplate: function(itemData, itemIndex, itemElement) {
-                itemElement.append("<p>" + itemData.title + "</p>");
-            },
-            itemTemplate: function(itemData, itemIndex, itemElement) {
-                var container = $("<div style='margin:25px;'>");
-                container.append("<h1>" + itemData.title + "</h1>");
-
-                var info = $("<div style='text-align:left;'>");
-                for (var field in itemData.data) {
-                    info.append("<p>" + field + ": <b>" + itemData.data[field] + "</b></p>");
+            items: [{
+                title: "Info",
+                template: function() {
+                    return $("<p>").text("This is Info Tab");
                 }
-                container.append(info);
-                itemElement.append(container);
-            }
+            }, {
+                title: "Contacts",
+                template: $("#individualTemplate")
+            }]
         });
     });
 
     <!--HTML-->
     <div id="tabPanelContainer"></div>
-
----
-
-You can also customize individual items. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#template') property or assign a customization function straight to this property.
-
----
+    <script id="individualTemplate" type="text/html">
+        <p>This is Contacts Tab</p>
+    </script>
 
 ##### Angular
+
+You can also customize individual items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!--HTML-->
     <dx-tab-panel>
@@ -367,6 +384,8 @@ You can also customize individual items. In Angular, Vue, and React, declare the
     })
 
 ##### Vue
+
+You can also customize individual items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!-- tab: App.vue -->
     <template>
@@ -398,6 +417,8 @@ You can also customize individual items. In Angular, Vue, and React, declare the
 
 ##### React
 
+You can also customize individual items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
+
     <!--tab: App.js-->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
@@ -420,33 +441,10 @@ You can also customize individual items. In Angular, Vue, and React, declare the
     }
 
     export default App;
-   
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#tabPanelContainer").dxTabPanel({
-            items: [{
-                title: "Info",
-                template: function() {
-                    return $("<p>").text("This is Info Tab");
-                }
-            }, {
-                title: "Contacts",
-                template: $("#individualTemplate")
-            }]
-        });
-    });
-
-    <!--HTML-->
-    <div id="tabPanelContainer"></div>
-    <script id="individualTemplate" type="text/html">
-        <p>This is Contacts Tab</p>
-    </script>
 
 ---
     
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+
 
 #####See Also#####
 - [TabPanel - Control the Behavior](/concepts/05%20UI%20Components/TabPanel/15%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TabPanel/Control_the_Behavior')

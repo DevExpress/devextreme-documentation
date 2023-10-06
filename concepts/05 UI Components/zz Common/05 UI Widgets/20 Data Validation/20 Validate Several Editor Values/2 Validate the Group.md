@@ -286,10 +286,10 @@ Call a group's [validate()](/api-reference/10%20UI%20Components/dxValidator/3%20
 
 ---
 
-Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-reference/50%20Common/utils/validationEngine/validateGroup().md '/Documentation/ApiReference/Common/utils/validationEngine/#validateGroup') method to validate a group in jQuery. If you use Angular, Vue, or React, get the group's instance and call its [validate](/api-reference/10%20UI%20Components/dxValidationGroup/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Methods/#validate') method:
-
 ---
 ##### jQuery
+
+Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-reference/50%20Common/utils/validationEngine/validateGroup().md '/Documentation/ApiReference/Common/utils/validationEngine/#validateGroup') method to validate a group. 
 
     <!-- tab: index.js -->
     $(function() {
@@ -318,6 +318,9 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
     });
 
 ##### Angular
+
+Alternatively, you can get a group's instance and call its [validate](/api-reference/10%20UI%20Components/dxValidationGroup/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Methods/#validate') method to validate this group:
+
 
     <!-- tab: app.component.html -->
     <dx-validation-group #targetGroup>
@@ -388,6 +391,8 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
 
 ##### Vue
 
+Alternatively, you can get a group's instance and call its [validate](/api-reference/10%20UI%20Components/dxValidationGroup/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Methods/#validate') method to validate this group:
+
     <!-- tab: App.vue -->
     <template>
         <div>
@@ -446,6 +451,8 @@ Alternatively, you can use the [DevExpress.validationEngine.validateGroup](/api-
     </script>
 
 ##### React
+
+Alternatively, you can get a group's instance and call its [validate](/api-reference/10%20UI%20Components/dxValidationGroup/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxValidationGroup/Methods/#validate') method to validate this group:
 
     <!-- tab: App.js -->
     import React from 'react';

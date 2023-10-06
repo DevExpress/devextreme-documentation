@@ -1,5 +1,8 @@
 [note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the Toast. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
+---
+##### jQuery
+
 To show or hide the Toast programmatically, call the [show()](/api-reference/10%20UI%20Components/dxToast/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxToast/Methods/#show') or [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxToast/Methods/#hide') method. The same thing can be done using the [toggle(showing)](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/toggle(showing).md '/Documentation/ApiReference/UI_Components/dxToast/Methods/#toggleshowing') method. Pass **true** or **false** to this method to show or hide the Toast, respectively.
 
     <!--JavaScript-->$(function() {
@@ -12,16 +15,15 @@ To show or hide the Toast programmatically, call the [show()](/api-reference/10%
             text: "Show the Toast", 
             onClick: function () {
                 $("#toastContainer").dxToast("show");
-                // ---------- or ----------
+                // or
                 $("#toastContainer").dxToast("toggle", true);
             } 
         });
     });
 
-With Angular, Vue, or React, use a different technique. Bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast UI component to a component property. After that, change this property, and the Toast will appear or disappear.
-
----
 ##### Angular
+
+To show or hide the Toast programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast to a component property. After that, change the latter property, and the Toast will appear or disappear.
 
     <!--HTML-->
     <dx-toast
@@ -50,6 +52,8 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
      })
 
 ##### Vue
+
+To show or hide the Toast programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast to a component property. After that, change the latter property, and the Toast will appear or disappear.
 
     <template>
         <div>
@@ -90,6 +94,8 @@ With Angular, Vue, or React, use a different technique. Bind the [visible](/api-
     </script>
 
 ##### React
+
+To show or hide the Toast programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast to a state property. After that, change the latter property, and the Toast will appear or disappear.
 
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';

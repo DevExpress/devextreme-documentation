@@ -103,6 +103,10 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers/"
 }
 
+
+---
+##### jQuery
+
 To add or remove a marker at runtime, call the [addMarker(markerOptions)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/addMarker(markerOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addMarkermarkerOptions') or [removeMarker(marker)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/removeMarker(marker).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#removeMarkermarker') method.
 
     <!--JavaScript-->
@@ -157,10 +161,9 @@ In the following code, a marker is added each time a user clicks someplace on th
         });
     });
 
-With Angular, Vue, or React, use a different technique. Bind the **markers** property of the Map UI component to a component property. 
-
----
 ##### Angular
+
+To add or remove a marker at runtime, bind the **markers** property of the Map to a component property:
 
     <!--HTML-->
     <dx-map
@@ -198,6 +201,8 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** pro
     })
 
 ##### Vue
+
+To add or remove a marker at runtime, bind the **markers** property of the Map to a component property:
 
     <template>
         <div>
@@ -244,6 +249,8 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** pro
     </script>
 
 ##### React
+
+To add or remove a marker at runtime, bind the **markers** property of the Map to a state property:
 
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';

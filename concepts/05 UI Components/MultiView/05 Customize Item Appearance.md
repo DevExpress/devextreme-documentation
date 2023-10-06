@@ -1,6 +1,36 @@
-To customize views in the MultiView, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component.
+To customize views in the MultiView, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    var multiViewItems = [{
+        title: "Personal Data",
+        data: { firstName: "John", lastName: "Smith", birthYear: 1986 }
+    }, {
+        title: "Contacts",
+        data: { phone: "(555)555-5555", email: "John.Smith@example.com" }
+    }];
+
+    $(function() {
+        $("#multiViewContainer").dxMultiView({
+            dataSource: multiViewItems,
+            itemTemplate: function(itemData, itemIndex, itemElement) {
+                var container = $("<div style='margin:25px;'>");
+                container.append("<h1>" + itemData.title + "</h1>");
+
+                var info = $("<div style='text-align:left;'>");
+                for (var field in itemData.data) {
+                    info.append("<p>" + field + ": <b>" + itemData.data[field] + "</b></p>");
+                }
+                container.append(info);
+                itemElement.append(container);
+            }
+        });
+    });
+
+    <!--HTML-->
+    <div id="multiViewContainer"></div>
 
 ##### Angular
 
@@ -144,48 +174,10 @@ To customize views in the MultiView, define an [itemTemplate](/api-reference/10%
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/"
 }
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for MultiView views. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
-
 ---
-
-##### jQuery
-
-    <!--JavaScript-->
-    var multiViewItems = [{
-        title: "Personal Data",
-        data: { firstName: "John", lastName: "Smith", birthYear: 1986 }
-    }, {
-        title: "Contacts",
-        data: { phone: "(555)555-5555", email: "John.Smith@example.com" }
-    }];
-
-    $(function() {
-        $("#multiViewContainer").dxMultiView({
-            dataSource: multiViewItems,
-            itemTemplate: function(itemData, itemIndex, itemElement) {
-                var container = $("<div style='margin:25px;'>");
-                container.append("<h1>" + itemData.title + "</h1>");
-
-                var info = $("<div style='text-align:left;'>");
-                for (var field in itemData.data) {
-                    info.append("<p>" + field + ": <b>" + itemData.data[field] + "</b></p>");
-                }
-                container.append(info);
-                itemElement.append(container);
-            }
-        });
-    });
-
-    <!--HTML-->
-    <div id="multiViewContainer"></div>
-
----
-
-You can also customize individual views. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the views as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template') property or assign a customization function straight to this property.
-
----
-
 ##### Angular
+
+You can also customize individual views. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component:
 
     <!--HTML-->
     <dx-multi-view>
@@ -209,6 +201,8 @@ You can also customize individual views. In Angular, Vue, and React, declare the
 
 ##### Vue
 
+You can also customize individual views. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component:
+
     <!--tab: App.vue-->
     <template>
         <DxMultiView>
@@ -231,6 +225,8 @@ You can also customize individual views. In Angular, Vue, and React, declare the
 
 ##### React
 
+You can also customize individual views. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component:
+
     <!--tab: App.js-->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
@@ -251,6 +247,8 @@ You can also customize individual views. In Angular, Vue, and React, declare the
     export default App;
 
 ##### jQuery
+
+You can also customize individual views. Declare the views as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template') property or assign a customization function straight to this property:
 
     <!--JavaScript-->
     $(function() {
@@ -274,8 +272,6 @@ You can also customize individual views. In Angular, Vue, and React, declare the
     </script>
 
 ---
-
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [MultiView - Switch Between Views](/concepts/05%20UI%20Components/MultiView/10%20Switch%20Between%20Views.md '/Documentation/Guide/UI_Components/MultiView/Switch_Between_Views/')

@@ -13,7 +13,7 @@ The following errors may occur:
 - `Maximum request length exceeded`
 - `404`
 - `404.15`
-- The `object XMLHttpRequest` error occurs after adding in total summaries and group summaries.
+- The `object XMLHttpRequest` error occurs once you define total and group summaries in DataGrid.
 - Filtering by `Search Panel` does not work if the component has a lookup column.
 - Filtering by `Search Panel` does not work if the component has more than 20 columns.
 - Selection does not work if [selection.deferred](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred) is `true`.

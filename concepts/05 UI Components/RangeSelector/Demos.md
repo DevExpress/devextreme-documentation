@@ -1,0 +1,15 @@
+#include demos-intro
+
+- [Numeric Scale (Lightweight)](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/NumericScaleLightweight/)
+- [Numeric Scale](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/NumericScale/)
+- [Date-Time Scale (Lightweight_](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/DateTimeScaleLightweight/)
+- [Date-Time Scale](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/DateTimeScale/)
+- [Logarithmic Scale](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/LogarithmicScale/)
+- [Discrete Scale](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/DiscreteScale/)
+- [Custom Formatting](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomFormatting/)
+- [Use Range Selection for Calculation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/UseRangeSelectionForCalculation/)
+- [Use Range Selection for Filtering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/UseRangeSelectionForFiltering/)
+- [Image on Background](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ImageOnBackground/)
+- [Chart on Background](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ChartOnBackground/)
+- [Customized Chart on Background](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomizedChartOnBackground/)
+- [Chart on Background with Series Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/ChartOnBackgroundWithSeriesTemplate/)

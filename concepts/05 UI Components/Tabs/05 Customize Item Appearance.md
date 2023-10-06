@@ -95,9 +95,25 @@ For a minor customization of tabs, you can define [specific fields](/api-referen
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#tabsContainer").dxTabs({
+            items: [
+                { text: "User" },
+                { text: "Comment" },
+                { text: "Find" }
+            ],
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                itemElement.append("<p style='color:#6600cc;'>" + itemData.text + "</p>");
+            }
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -195,31 +211,10 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for tabs. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
-
 ---
 ##### jQuery
 
-    <!--JavaScript-->
-    $(function() {
-        $("#tabsContainer").dxTabs({
-            items: [
-                { text: "User" },
-                { text: "Comment" },
-                { text: "Find" }
-            ],
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                itemElement.append("<p style='color:#6600cc;'>" + itemData.text + "</p>");
-            }
-        });
-    });
-
----
-
-You can also customize individual tabs. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. When using jQuery, you can declare the tabs as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') property or assign a customization function straight to this property.
-
----
-##### jQuery
+You can also customize individual tabs. Declare them as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/items/#template') property or assign a customization function straight to this property.
 
     <!--HTML-->
     <div id="tabsContainer"></div>
@@ -241,6 +236,8 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
     });
 
 ##### Angular
+
+You can also customize individual tabs. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!--HTML-->
     <dx-tabs>
@@ -267,6 +264,8 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
     })
 
 ##### Vue
+
+You can also customize individual tabs. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!--tab: App.vue-->
     <template>
@@ -298,6 +297,8 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
 
 ##### React
 
+You can also customize individual tabs. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
+
     <!--tab: App.js-->
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
@@ -323,7 +324,7 @@ You can also customize individual tabs. In Angular, Vue, and React, declare them
 
 ---
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+
 
 #####See Also#####
 - [Tabs Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview)

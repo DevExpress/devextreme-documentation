@@ -391,7 +391,7 @@ If you use only jQuery, combine HTML markup for appointments manually with jQuer
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"
 }
 
-You can also customize an individual appointment. For this purpose, declare a template for this appointment as a script and pass its `id` to the [template](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/template.md '/Documentation/ApiReference/Common/Object_Structures/dxSchedulerAppointment/#template') field of the appointment's data object.
+You can also customize an individual appointment. For this purpose, declare a template for this appointment as a script and pass its `id` to the [template](/api-reference/50%20Common/Object%20Structures/dxSchedulerAppointment/template.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#template') field of the appointment's data object.
 
     <!--HTML-->
     <script id="individualTemplate" type="text/html">
@@ -406,8 +406,6 @@ You can also customize an individual appointment. For this purpose, declare a te
     }, {
         // ...
     }];
-
-In addition, you can use a 3rd-party template engine to customize the UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [Scheduler - Customize Appointment Tooltip](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')

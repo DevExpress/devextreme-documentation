@@ -1,7 +1,22 @@
-To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate'). In Angular and Vue, you can declare the template in the markup. In React, you can use a rendering function (shown in the code below) or component:
+To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidden/dxTreeListColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#cellTemplate').
 
 ---
+##### jQuery
 
+    <!--JavaScript-->
+    $(function() {
+        $("#treeListContainer").dxTreeList({
+            // ...
+            columns: [{
+                dataField: "Title",
+                cellTemplate: function(element, info) {
+                     element.append("<div>" + info.text + "</div>")
+                            .css("color", "blue");
+                }
+            }]
+        });
+    });
+    
 ##### Angular
 
     <!--HTML-->
@@ -79,27 +94,6 @@ To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidd
             </TreeList>
         );
     }
-
----
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for cells. To apply this markup, use the **cellTemplate** function as shown in the following code:
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            columns: [{
-                dataField: "Title",
-                cellTemplate: function(element, info) {
-                     element.append("<div>" + info.text + "</div>")
-                            .css("color", "blue");
-                }
-            }]
-        });
-    });
 
 ---
 

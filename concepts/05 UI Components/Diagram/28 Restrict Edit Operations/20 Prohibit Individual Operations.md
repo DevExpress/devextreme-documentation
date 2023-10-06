@@ -83,51 +83,51 @@ Every time a user attempts an edit operation, the UI component raises the [reque
     </tr>
     <tr>
     <td>addShape</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramAddShapeArgs/">DiagramAddShapeArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramAddShapeArgs/">DiagramAddShapeArgs</a></td>
     </tr>
     <tr>
     <td>addShapeFromToolbox</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramAddShapeFromToolboxArgs/">DiagramAddShapeFromToolboxArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramAddShapeFromToolboxArgs/">DiagramAddShapeFromToolboxArgs</a></td>
     </tr>
     <tr>
     <td>beforeChangeConnectorText</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramBeforeChangeConnectorTextArgs/">DiagramBeforeChangeConnectorTextArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramBeforeChangeConnectorTextArgs/">DiagramBeforeChangeConnectorTextArgs</a></td>
     </tr>
     <tr>
     <td>beforeChangeShapeText</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramBeforeChangeShapeTextArgs/">DiagramBeforeChangeShapeTextArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramBeforeChangeShapeTextArgs/">DiagramBeforeChangeShapeTextArgs</a></td>
     </tr>
     <tr>
     <td>changeConnection</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramChangeConnectionArgs/">DiagramChangeConnectionArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramChangeConnectionArgs/">DiagramChangeConnectionArgs</a></td>
     </tr>
     <tr>
     <td>changeConnectorPoints</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramChangeConnectorPointsArgs/">DiagramChangeConnectorPointsArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramChangeConnectorPointsArgs/">DiagramChangeConnectorPointsArgs</a></td>
     </tr>
     <tr>
     <td>changeConnectorText</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramChangeConnectorTextArgs/">DiagramChangeConnectorTextArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramChangeConnectorTextArgs/">DiagramChangeConnectorTextArgs</a></td>
     </tr>
     <tr>
     <td>changeShapeText</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramChangeShapeTextArgs/">DiagramChangeShapeTextArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramChangeShapeTextArgs/">DiagramChangeShapeTextArgs</a></td>
     </tr>
     <tr>
     <td>deleteConnector</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramDeleteConnectorArgs/">DiagramDeleteConnectorArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramDeleteConnectorArgs/">DiagramDeleteConnectorArgs</a></td>
     </tr>
     <tr>
     <td>deleteShape</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramDeleteShapeArgs/">DiagramDeleteShapeArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramDeleteShapeArgs/">DiagramDeleteShapeArgs</a></td>
     </tr>
     <tr>
     <td>moveShape</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramMoveShapeArgs/">DiagramMoveShapeArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramMoveShapeArgs/">DiagramMoveShapeArgs</a></td>
     </tr>
     <tr>
     <td>resizeShape</td>
-    <td><a href="/Documentation/ApiReference/Common/Object_Structures/dxDiagramResizeShapeArgs/">DiagramResizeShapeArgs</a></td>
+    <td><a href="/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramResizeShapeArgs/">DiagramResizeShapeArgs</a></td>
     </tr>
 </table>
 

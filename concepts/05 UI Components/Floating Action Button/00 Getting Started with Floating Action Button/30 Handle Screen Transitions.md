@@ -2,9 +2,30 @@ Different screens use different FABs because a FAB should perform or contain onl
 
 <div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/21_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/21_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/21_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
 
-To implement this behavior in Angular, Vue, and React, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+---
+##### jQuery
 
-The approach is different if the components have the same URL, or actions are in the same component, or when you configure this behavior in jQuery. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+To implement this behavior, change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+
+##### Angular
+
+To implement this behavior, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+
+The approach is different if the components have the same URL, or actions are in the same component. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+
+##### Vue
+
+To implement this behavior, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+
+The approach is different if the components have the same URL, or actions are in the same component. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+
+##### React
+
+To implement this behavior, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+
+The approach is different if the components have the same URL, or actions are in the same component. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+
+---
 
 The following code shows the TabPanel configuration and an empty `switchSDA` function. This function controls the actions' visibility when it is implemented later.
 

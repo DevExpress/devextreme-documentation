@@ -104,9 +104,39 @@ For a minor customization of SelectBox items, you can define [specific fields](/
 
 ---
 
-If you need a more flexible solution, specify [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a render function or component as shown in the following example:
+If you need a more flexible solution, specify [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    const selectBoxData = [{
+        id: 1,
+        name: "HD Video Player",
+        imgSrc: "images/products/1-small.png"
+    }, {
+        id: 2,
+        name: "UltraHD Player",
+        imgSrc: "images/products/2-small.png"
+    },
+    // . . .
+    ];
+
+    $(function() {
+        $("#selectBoxContainer").dxSelectBox({
+            dataSource: selectBoxData,
+            valueExpr: 'id',
+            displayExpr: 'name',
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                return $("<div />").append(
+                	$("<img />").attr("src", itemData.imgSrc),
+                    $("<p />").text(itemData.name)
+                              .css("display", "inline-block")
+                );
+            }
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -236,40 +266,10 @@ If you need a more flexible solution, specify [itemTemplate](/api-reference/10%2
 
 ---
 
-If you use jQuery, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to create HTML markup for items. To apply this markup, use the **itemTemplate** callback function as shown in the following code:
-
-    <!--JavaScript-->
-    const selectBoxData = [{
-        id: 1,
-        name: "HD Video Player",
-        imgSrc: "images/products/1-small.png"
-    }, {
-        id: 2,
-        name: "UltraHD Player",
-        imgSrc: "images/products/2-small.png"
-    },
-    // . . .
-    ];
-
-    $(function() {
-        $("#selectBoxContainer").dxSelectBox({
-            dataSource: selectBoxData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                return $("<div />").append(
-                	$("<img />").attr("src", itemData.imgSrc),
-                    $("<p />").text(itemData.name)
-                              .css("display", "inline-block")
-                );
-            }
-        });
-    });
-
-You can also customize an individual SelectBox item. In Angular, Vue, and React, declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component. In jQuery, you can declare the items as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this property:
-
 ---
 ##### jQuery
+
+You can also customize individual SelectBox items. Declare them as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this property.
 
     <!--HTML-->
     <div id="selectBoxContainer"></div>
@@ -291,6 +291,8 @@ You can also customize an individual SelectBox item. In Angular, Vue, and React,
     });
 
 ##### Angular
+
+You can also customize individual SelectBox items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!--HTML-->
     <dx-select-box>
@@ -317,6 +319,8 @@ You can also customize an individual SelectBox item. In Angular, Vue, and React,
     })
 
 ##### Vue
+
+You can also customize individual SelectBox items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!--tab: App.vue-->
     <template>
@@ -347,6 +351,8 @@ You can also customize an individual SelectBox item. In Angular, Vue, and React,
     </script>
 
 ##### React
+
+You can also customize individual SelectBox items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     <!--tab: App.js-->
     import React from 'react';
@@ -523,8 +529,6 @@ Using similar techniques, you can customize the input field of the SelectBox. Th
     }
 
 ---
-
-In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')

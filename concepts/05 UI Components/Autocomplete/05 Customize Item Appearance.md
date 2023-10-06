@@ -103,9 +103,30 @@ For a minor customization of Autocomplete items, you can define [specific fields
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    const autocompleteData = [
+        { country: "Afghanistan", capital: "Kabul" },
+        { country: "Albania", capital: "Tirana" },
+        // ...
+    ];
+
+    $(function() {
+        $("#autocompleteContainer").dxAutocomplete({
+            dataSource: autocompleteData,
+            valueExpr: 'country',
+            placeholder: 'Type country name...',
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                itemElement.append("<p>Country: <b>" + itemData.country + "</b></p>");
+                itemElement.append("<p style='color:grey;'>Capital: <b>" + itemData.capital + "</b></p>");
+            }
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -215,26 +236,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    const autocompleteData = [
-        { country: "Afghanistan", capital: "Kabul" },
-        { country: "Albania", capital: "Tirana" },
-        // ...
-    ];
-
-    $(function() {
-        $("#autocompleteContainer").dxAutocomplete({
-            dataSource: autocompleteData,
-            valueExpr: 'country',
-            placeholder: 'Type country name...',
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                itemElement.append("<p>Country: <b>" + itemData.country + "</b></p>");
-                itemElement.append("<p style='color:grey;'>Capital: <b>" + itemData.capital + "</b></p>");
-            }
-        });
-    });
+---
+##### jQuery
 
 You can also customize an individual Autocomplete item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#template') field. 
 
@@ -250,7 +253,7 @@ You can also customize an individual Autocomplete item. For this purpose, declar
         // ...
     ];
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+---
 
 #####See Also#####
 - [Autocomplete - Configure Search Parameters](/concepts/05%20UI%20Components/Autocomplete/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/Autocomplete/Configure_Search_Parameters')

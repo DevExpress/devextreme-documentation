@@ -9,10 +9,10 @@ Configures the UI component used to edit the field value.
 ---
 Depending on the [dataType](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#editorOptions'), the FilterBuilder offers a user different UI components for editing: [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/'), [Lookup](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/'), etc. In the **editorOptions** object, you can specify properties for the UI component.
 
-Because **editorOptions** depend on the **dataType**, they cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
-
 ---
 ##### Angular
+
+Because **editorOptions** depend on the **dataType**, they cannot be typed and are not implemented as nested configuration components. Specify **editorOptions** with an object.
 
     <!-- tab: app.component.html -->
     <dx-filter-builder ... >
@@ -42,6 +42,8 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
     export class AppModule { }
 
 ##### Vue
+
+Because **editorOptions** depend on the **dataType**, they cannot be typed and are not implemented as nested configuration components. Specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
     <!-- tab: App.vue -->
     <template>
@@ -73,6 +75,8 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
     </script>
 
 ##### React
+
+Because **editorOptions** depend on the **dataType**, they cannot be typed and are not implemented as nested configuration components. Specify **editorOptions** with an object. We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
     <!-- tab: App.js -->
     import React from 'react';

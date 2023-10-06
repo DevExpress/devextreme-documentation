@@ -31,3 +31,4 @@ When you insert unencoded content, it can open your application to XSS attacks:
 The encoded content is interpreted and displayed as text:
 
 ![DevExtreme Tabs with enabled HTML encoding](/images/UiWidgets/tabs-itemTemplate-safe-html.png)
+

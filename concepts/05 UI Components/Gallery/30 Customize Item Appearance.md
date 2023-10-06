@@ -107,9 +107,23 @@ Gallery items are not sctrictly images. They can contain text or other elements 
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function () {
+        $("#galleryContainer").dxGallery({
+            dataSource: galleryData,
+            height: 300,
+            itemTemplate: function(e){
+                e.itemElement.empty();
+                e.itemElement.append("<p><b>Name</b>: " + e.itemData.name + "</p>");
+                e.itemElement.append("<img src=\"" + e.itemData.path + "\" alt=\"" + e.itemData.name + "\"/>");
+            }
+        });
+    });
 
 ##### Angular
 
@@ -217,20 +231,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for menu items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    $(function () {
-        $("#galleryContainer").dxGallery({
-            dataSource: galleryData,
-            height: 300,
-            itemTemplate: function(e){
-                e.itemElement.empty();
-                e.itemElement.append("<p><b>Name</b>: " + e.itemData.name + "</p>");
-                e.itemElement.append("<img src=\"" + e.itemData.path + "\" alt=\"" + e.itemData.name + "\"/>");
-            }
-        });
-    });
+---
+##### jQuery
 
 You can also customize an individual Gallery item. For this purpose, declare a template for this item as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/#template') field of the item's data object.
 
@@ -247,7 +249,7 @@ You can also customize an individual Gallery item. For this purpose, declare a t
         // ...
     ];
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+---
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/ItemTemplate/",

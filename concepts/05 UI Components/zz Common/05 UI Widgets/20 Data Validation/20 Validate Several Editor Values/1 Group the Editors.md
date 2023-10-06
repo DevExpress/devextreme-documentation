@@ -75,30 +75,6 @@ Editors belonging to a single **Validation Group** can be validated together. Al
     })
     export class AppModule { }
 
-##### AngularJS
-
-    <!--HTML-->
-    <div id="loginGroup" dx-validation-group="{ }">
-        <div dx-text-box="{ value: login, ... }",
-            dx-validator="{ ... }">
-        </div>
-        <div dx-text-box="{ value: password, ... }",
-            dx-validator="{ ... }">   
-        </div>
-    </div>
-
-##### Knockout
-
-    <!--HTML-->
-    <div id="loginGroup" data-bind="dxValidationGroup: { }">
-        <div data-bind="dxTextBox: { value: login, ... },
-            dxValidator: { ... }">
-        </div>
-        <div data-bind="dxTextBox: { value: password, ... },
-            dxValidator: { ... }">   
-        </div>
-    </div>
-
 ##### Vue
 
     <!-- tab: App.vue -->

@@ -3,8 +3,6 @@
     name: "Popup"
 }
 
-**options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#widget') property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components in Angular, Vue, and React. In these frameworks, specify **options** with an object. We recommend that you declare the object outside the configuration component in Vue and React to prevent possible issues caused by unnecessary re-rendering.
-
 ---
 
 ##### jQuery
@@ -23,6 +21,8 @@
     });
 
 ##### Angular
+
+**options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#widget') property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components. Specify **options** with an object.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
@@ -53,6 +53,8 @@
     export class AppModule { }
 
 ##### Vue
+
+**options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#widget') property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components. Specify **options** with an object. We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
     <!-- tab: App.vue -->
     <template>
@@ -85,6 +87,8 @@
     </script>
 
 ##### React
+
+**options** should contain the properties of the DevExtreme UI component specified in the [widget](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems/widget.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#widget') property. Because of this dependency, **options** cannot be typed and are not implemented as nested configuration components. Specify **options** with an object. We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
 
     <!-- tab: App.js -->
     import React from 'react';

@@ -65,44 +65,6 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
         font-size: 16px;
     }
 
-##### AngularJS
-
-    <!-- tab: index.html -->
-    <div dx-drop-down-box="{
-        ...
-        fieldTemplate: 'field'
-    }" dx-item-alias="data">
-        <div data-options="dxTemplate: { name: 'field' }">
-            <div class="custom-item">
-                <div dx-text-box="{ value: data, readOnly: true }"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- tab: style.css -->
-    .custom-item {
-        font-size: 16px;
-    }
-
-##### Knockout
-
-    <!-- tab: index.html -->
-    <div data-bind="dxDropDownBox: {
-        ...
-        fieldTemplate: 'field'
-    }">
-        <div data-options="dxTemplate: { name: 'field' }">
-            <div class="custom-item">
-                <div data-bind="dxTextBox: { value: $data, readOnly: true }"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- tab: style.css -->
-    .custom-item {
-        font-size: 16px;
-    }
-
 ##### Vue
 
     <!-- tab: App.vue -->

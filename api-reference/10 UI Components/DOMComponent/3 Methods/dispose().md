@@ -6,16 +6,19 @@ id: DOMComponent.dispose()
 Disposes of all the resources allocated to the {WidgetName} instance.
 
 ---
+
+---
+##### jQuery
+
 After calling this method, remove the DOM element associated with the UI component:
 
     <!--JavaScript-->
     $("#my{WidgetName}").dx{WidgetName}("dispose");
     $("#my{WidgetName}").remove();
 
-Use this method only if the UI component was created with jQuery or pure JavaScript. In Angular, Vue, and React, use conditional rendering:
-
----
 ##### Angular
+
+Use <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">conditional rendering</a> instead of this method:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
@@ -23,6 +26,8 @@ Use this method only if the UI component was created with jQuery or pure JavaScr
     </dx-{widget-name}>
 
 ##### Vue
+
+Use <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">conditional rendering</a> instead of this method:
 
     <!-- tab: App.vue -->
     <template>
@@ -42,6 +47,8 @@ Use this method only if the UI component was created with jQuery or pure JavaScr
     </script>
 
 ##### React
+
+Use <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">conditional rendering</a> instead of this method:
 
     <!-- tab: App.js -->
     import React from 'react';
@@ -69,8 +76,3 @@ Use this method only if the UI component was created with jQuery or pure JavaScr
     export default App;
 
 ---
-
-#####See Also#####
-- <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Conditional Rendering in Angular</a>
-- <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">Conditional Rendering in Vue</a>
-- <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">Conditional Rendering in React</a>

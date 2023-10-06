@@ -1,6 +1,35 @@
-To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component. If the template is unspecified, group headers display the **key** data field in bold font.
+To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#groupTemplate'). If the template is unspecified, group headers display the **key** data field in bold font.
 
 ---
+##### jQuery
+
+    <!--JavaScript-->const fruitsVegetables = [{
+        // ...
+    }];
+
+    $(function() {
+        $("#tagBoxContainer").dxTagBox({
+            dataSource: new DevExpress.data.DataSource({
+                store: fruitsVegetables,
+                map: function(groupedItem) {
+                    let overallCount = 0;
+                    groupedItem.items.forEach(function(item) {
+                        overallCount += item.count;
+                    });
+                    return $.extend(groupedItem, { overallCount: overallCount })
+                }
+            }),
+            grouped: true,
+            groupTemplate: function(groupData, _, groupElement) {
+                groupElement.append(
+                    $("<p>").text(groupData.key + " | Count: " + groupData.overallCount)
+                )
+            },
+            displayExpr: 'name',
+            valueExpr: 'count'
+        });
+    });
+
 ##### Angular
 
     <!--HTML-->
@@ -175,40 +204,9 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20C
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for group headers. To apply this markup, use the [groupTemplate](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#groupTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->const fruitsVegetables = [{
-        // ...
-    }];
-
-    $(function() {
-        $("#tagBoxContainer").dxTagBox({
-            dataSource: new DevExpress.data.DataSource({
-                store: fruitsVegetables,
-                map: function(groupedItem) {
-                    let overallCount = 0;
-                    groupedItem.items.forEach(function(item) {
-                        overallCount += item.count;
-                    });
-                    return $.extend(groupedItem, { overallCount: overallCount })
-                }
-            }),
-            grouped: true,
-            groupTemplate: function(groupData, _, groupElement) {
-                groupElement.append(
-                    $("<p>").text(groupData.key + " | Count: " + groupData.overallCount)
-                )
-            },
-            displayExpr: 'name',
-            valueExpr: 'count'
-        });
-    });
-
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/GroupedItems/"
 }
-
-In addition, you can use a 3rd-party template engine to perform the needed customizations. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
 
 #####See Also#####
 - [TagBox - Customize Item Appearance](/concepts/05%20UI%20Components/TagBox/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/TagBox/Customize_Item_Appearance/')

@@ -57,41 +57,6 @@ The dxItem component defines custom markup for items in layout and collection UI
     })
     export class AppModule { }
 
-#####AngularJS
-
-    <!--HTML-->
-    <div dx-list="{ }">
-        <div data-options="dxItem: { text: 'Apples', disabled: true }"></div>
-        <div data-options="dxItem: { text: 'Lemons', visible: false }"></div>
-        <div data-options="dxItem: { }">
-            <!-- Custom markup -->
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function ($scope) {
-            // ...
-        });
-
-#####Knockout
-
-    <!--HTML-->
-    <div data-bind="dxList: { ... }">
-        <div data-options="dxItem: { text: 'Apples', disabled: true }"></div>
-        <div data-options="dxItem: { text: 'Lemons', visible: false }"></div>
-        <div data-options="dxItem: { }">
-            <!-- Custom markup -->
-        </div>
-    </div>
-
-    <!--JavaScript-->
-    var viewModel = {
-        // ...
-    };
-
-    ko.applyBindings(viewModel);
-
 #####React
 
     <!-- tab: App.js -->

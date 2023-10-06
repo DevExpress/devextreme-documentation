@@ -2,3 +2,5 @@
     mvc: "https://docs.devexpress.com/DevExtremeAspNetMvc/400702/?v=22.2#add-devextreme-to-an-existing-project",
     core: "https://docs.devexpress.com/AspNetCore/401026/?v=22.2#add-devextreme-to-an-existing-project"
 }
+
+[tags] jquery

@@ -1,6 +1,6 @@
 ---
 id: Enums.LabelMode
-acceptValues: 'static' | 'floating' | 'hidden'
+acceptValues: 'static' | 'floating' | 'hidden' | 'outside'
 type: Union
 ---
 ---

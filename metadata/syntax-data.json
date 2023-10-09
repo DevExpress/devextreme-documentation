@@ -6473,9 +6473,9 @@
       "vue": "DxAccordion"
     },
     "dxAccordionItem": {
-      "angular": "dxo-dx-accordion-item",
+      "angular": "dxo-accordion-item",
       "react": "DxAccordionItem",
-      "vue": "DxDxAccordionItem"
+      "vue": "DxAccordionItem"
     },
     "dxAccordionItem.titleTemplate": {
       "vue": "title-template"
@@ -6548,9 +6548,9 @@
       "vue": "DxActionSheet"
     },
     "dxActionSheetItem": {
-      "angular": "dxo-dx-action-sheet-item",
+      "angular": "dxo-action-sheet-item",
       "react": "DxActionSheetItem",
-      "vue": "DxDxActionSheetItem"
+      "vue": "DxActionSheetItem"
     },
     "dxActionSheetItem.onClick": {
       "vue": "@click"
@@ -6876,9 +6876,9 @@
       "vue": "DxBox"
     },
     "dxBoxItem": {
-      "angular": "dxo-dx-box-item",
+      "angular": "dxo-box-item",
       "react": "DxBoxItem",
-      "vue": "DxDxBoxItem"
+      "vue": "DxBoxItem"
     },
     "dxBoxItem.baseSize": {
       "vue": "base-size"
@@ -7023,9 +7023,9 @@
       "vue": "DxButtonGroup"
     },
     "dxButtonGroupItem": {
-      "angular": "dxo-dx-button-group-item",
+      "angular": "dxo-button-group-item",
       "react": "DxButtonGroupItem",
-      "vue": "DxDxButtonGroupItem"
+      "vue": "DxButtonGroupItem"
     },
     "dxButtonGroupItem.elementAttr": {
       "angular": "dxo-element-attr",
@@ -7186,14 +7186,14 @@
       "vue": "DxChart"
     },
     "dxChartAnnotationConfig": {
-      "angular": "dxo-dx-chart-annotation-config",
+      "angular": "dxo-chart-annotation-config",
       "react": "DxChartAnnotationConfig",
-      "vue": "DxDxChartAnnotationConfig"
+      "vue": "DxChartAnnotationConfig"
     },
     "dxChartCommonAnnotationConfig": {
-      "angular": "dxo-dx-chart-common-annotation-config",
+      "angular": "dxo-chart-common-annotation-config",
       "react": "DxChartCommonAnnotationConfig",
-      "vue": "DxDxChartCommonAnnotationConfig"
+      "vue": "DxChartCommonAnnotationConfig"
     },
     "dxChartCommonAnnotationConfig.customizeTooltip": {
       "vue": "customize-tooltip"
@@ -9010,9 +9010,9 @@
       "vue": "DxContextMenu"
     },
     "dxContextMenuItem": {
-      "angular": "dxo-dx-context-menu-item",
+      "angular": "dxo-context-menu-item",
       "react": "DxContextMenuItem",
-      "vue": "DxDxContextMenuItem"
+      "vue": "DxContextMenuItem"
     },
     "dxContextMenuItem.items": {
       "angular": "dxi-item",
@@ -9100,9 +9100,9 @@
       "vue": "DxDataGrid"
     },
     "dxDataGridColumn": {
-      "angular": "dxo-dx-data-grid-column",
+      "angular": "dxo-data-grid-column",
       "react": "DxDataGridColumn",
-      "vue": "DxDxDataGridColumn"
+      "vue": "DxDataGridColumn"
     },
     "dxDataGridColumn.allowExporting": {
       "vue": "allow-exporting"
@@ -9145,9 +9145,9 @@
       "vue": "show-when-grouped"
     },
     "dxDataGridColumnButton": {
-      "angular": "dxo-dx-data-grid-column-button",
+      "angular": "dxo-data-grid-column-button",
       "react": "DxDataGridColumnButton",
-      "vue": "DxDxDataGridColumnButton"
+      "vue": "DxDataGridColumnButton"
     },
     "dxDataGridColumnButton.onClick": {
       "vue": "@click"
@@ -9537,9 +9537,9 @@
       "vue": "DxToolbar"
     },
     "dxDataGridRowObject": {
-      "angular": "dxo-dx-data-grid-row-object",
+      "angular": "dxo-data-grid-row-object",
       "react": "DxDataGridRowObject",
-      "vue": "DxDxDataGridRowObject"
+      "vue": "DxDataGridRowObject"
     },
     "dxDataGridRowObject.groupIndex": {
       "vue": "group-index"
@@ -9563,9 +9563,9 @@
       "vue": "row-type"
     },
     "dxDataGridToolbar": {
-      "angular": "dxo-dx-data-grid-toolbar",
+      "angular": "dxo-data-grid-toolbar",
       "react": "DxDataGridToolbar",
-      "vue": "DxDxDataGridToolbar"
+      "vue": "DxDataGridToolbar"
     },
     "dxDataGridToolbar.items": {
       "angular": "dxi-item",
@@ -9573,9 +9573,9 @@
       "vue": "DxItem"
     },
     "dxDataGridToolbarItem": {
-      "angular": "dxo-dx-data-grid-toolbar-item",
+      "angular": "dxo-data-grid-toolbar-item",
       "react": "DxDataGridToolbarItem",
-      "vue": "DxDxDataGridToolbarItem"
+      "vue": "DxDataGridToolbarItem"
     },
     "dxDateBox": {
       "angular": "dx-date-box",
@@ -10738,9 +10738,9 @@
       "vue": "DxDropDownButton"
     },
     "dxDropDownButtonItem": {
-      "angular": "dxo-dx-drop-down-button-item",
+      "angular": "dxo-drop-down-button-item",
       "react": "DxDropDownButtonItem",
-      "vue": "DxDxDropDownButtonItem"
+      "vue": "DxDropDownButtonItem"
     },
     "dxDropDownButtonItem.onClick": {
       "vue": "@click"
@@ -10955,9 +10955,9 @@
       "vue": "DxFileManager"
     },
     "dxFileManagerContextMenu": {
-      "angular": "dxo-dx-file-manager-context-menu",
+      "angular": "dxo-file-manager-context-menu",
       "react": "DxFileManagerContextMenu",
-      "vue": "DxDxFileManagerContextMenu"
+      "vue": "DxFileManagerContextMenu"
     },
     "dxFileManagerContextMenu.items": {
       "angular": "dxi-item",
@@ -10965,9 +10965,9 @@
       "vue": "DxItem"
     },
     "dxFileManagerContextMenuItem": {
-      "angular": "dxo-dx-file-manager-context-menu-item",
+      "angular": "dxo-file-manager-context-menu-item",
       "react": "DxFileManagerContextMenuItem",
-      "vue": "DxDxFileManagerContextMenuItem"
+      "vue": "DxFileManagerContextMenuItem"
     },
     "dxFileManagerContextMenuItem.items": {
       "angular": "dxi-item",
@@ -10975,9 +10975,9 @@
       "vue": "DxItem"
     },
     "dxFileManagerDetailsColumn": {
-      "angular": "dxo-dx-file-manager-details-column",
+      "angular": "dxo-file-manager-details-column",
       "react": "DxFileManagerDetailsColumn",
-      "vue": "DxDxFileManagerDetailsColumn"
+      "vue": "DxFileManagerDetailsColumn"
     },
     "dxFileManagerDetailsColumn.cssClass": {
       "vue": "css-class"
@@ -11164,9 +11164,9 @@
       "vue": "max-file-size"
     },
     "dxFileManagerToolbar": {
-      "angular": "dxo-dx-file-manager-toolbar",
+      "angular": "dxo-file-manager-toolbar",
       "react": "DxFileManagerToolbar",
-      "vue": "DxDxFileManagerToolbar"
+      "vue": "DxFileManagerToolbar"
     },
     "dxFileManagerToolbar.fileSelectionItems": {
       "angular": "dxi-file-selection-item",
@@ -11179,9 +11179,9 @@
       "vue": "DxItem"
     },
     "dxFileManagerToolbarItem": {
-      "angular": "dxo-dx-file-manager-toolbar-item",
+      "angular": "dxo-file-manager-toolbar-item",
       "react": "DxFileManagerToolbarItem",
-      "vue": "DxDxFileManagerToolbarItem"
+      "vue": "DxFileManagerToolbarItem"
     },
     "dxFileManagerToolbarItem.menuItemTemplate": {
       "vue": "menu-item-template"
@@ -11338,9 +11338,9 @@
       "vue": "DxFilterBuilder"
     },
     "dxFilterBuilderCustomOperation": {
-      "angular": "dxo-dx-filter-builder-custom-operation",
+      "angular": "dxo-filter-builder-custom-operation",
       "react": "DxFilterBuilderCustomOperation",
-      "vue": "DxDxFilterBuilderCustomOperation"
+      "vue": "DxFilterBuilderCustomOperation"
     },
     "dxFilterBuilderCustomOperation.calculateFilterExpression": {
       "vue": "calculate-filter-expression"
@@ -11360,9 +11360,9 @@
       "vue": "has-value"
     },
     "dxFilterBuilderField": {
-      "angular": "dxo-dx-filter-builder-field",
+      "angular": "dxo-filter-builder-field",
       "react": "DxFilterBuilderField",
-      "vue": "DxDxFilterBuilderField"
+      "vue": "DxFilterBuilderField"
     },
     "dxFilterBuilderField.calculateFilterExpression": {
       "vue": "calculate-filter-expression"
@@ -11515,9 +11515,9 @@
       "vue": "DxForm"
     },
     "dxFormButtonItem": {
-      "angular": "dxo-dx-form-button-item",
+      "angular": "dxo-form-button-item",
       "react": "DxFormButtonItem",
-      "vue": "DxDxFormButtonItem"
+      "vue": "DxFormButtonItem"
     },
     "dxFormButtonItem.buttonOptions": {
       "vue": "button-options"
@@ -11541,9 +11541,9 @@
       "vue": "visible-index"
     },
     "dxFormEmptyItem": {
-      "angular": "dxo-dx-form-empty-item",
+      "angular": "dxo-form-empty-item",
       "react": "DxFormEmptyItem",
-      "vue": "DxDxFormEmptyItem"
+      "vue": "DxFormEmptyItem"
     },
     "dxFormEmptyItem.colSpan": {
       "vue": "col-span"
@@ -11558,9 +11558,9 @@
       "vue": "visible-index"
     },
     "dxFormGroupItem": {
-      "angular": "dxo-dx-form-group-item",
+      "angular": "dxo-form-group-item",
       "react": "DxFormGroupItem",
-      "vue": "DxDxFormGroupItem"
+      "vue": "DxFormGroupItem"
     },
     "dxFormGroupItem.alignItemLabels": {
       "vue": "align-item-labels"
@@ -11679,9 +11679,9 @@
       "vue": "validation-group"
     },
     "dxFormSimpleItem": {
-      "angular": "dxo-dx-form-simple-item",
+      "angular": "dxo-form-simple-item",
       "react": "DxFormSimpleItem",
-      "vue": "DxDxFormSimpleItem"
+      "vue": "DxFormSimpleItem"
     },
     "dxFormSimpleItem.colSpan": {
       "vue": "col-span"
@@ -11724,9 +11724,9 @@
       "vue": "visible-index"
     },
     "dxFormTabbedItem": {
-      "angular": "dxo-dx-form-tabbed-item",
+      "angular": "dxo-form-tabbed-item",
       "react": "DxFormTabbedItem",
-      "vue": "DxDxFormTabbedItem"
+      "vue": "DxFormTabbedItem"
     },
     "dxFormTabbedItem.colSpan": {
       "vue": "col-span"
@@ -11975,9 +11975,9 @@
       "vue": "DxGallery"
     },
     "dxGalleryItem": {
-      "angular": "dxo-dx-gallery-item",
+      "angular": "dxo-gallery-item",
       "react": "DxGalleryItem",
-      "vue": "DxDxGalleryItem"
+      "vue": "DxGalleryItem"
     },
     "dxGalleryItem.imageAlt": {
       "vue": "image-alt"
@@ -12077,9 +12077,9 @@
       "vue": "DxGantt"
     },
     "dxGanttColumn": {
-      "angular": "dxo-dx-gantt-column",
+      "angular": "dxo-gantt-column",
       "react": "DxGanttColumn",
-      "vue": "DxDxGanttColumn"
+      "vue": "DxGanttColumn"
     },
     "dxGanttColumn.allowEditing": {
       "vue": "allow-editing"
@@ -12098,12 +12098,6 @@
     },
     "dxGanttColumn.allowSearch": {
       "vue": "allow-search"
-    },
-    "dxGanttColumn.editCellComponent": {
-      "vue": "edit-cell-component"
-    },
-    "dxGanttColumn.editCellRender": {
-      "vue": "edit-cell-render"
     },
     "dxGanttColumn.editCellTemplate": {
       "vue": "edit-cell-template"
@@ -12147,9 +12141,9 @@
       "vue": "validation-rules"
     },
     "dxGanttContextMenu": {
-      "angular": "dxo-dx-gantt-context-menu",
+      "angular": "dxo-gantt-context-menu",
       "react": "DxGanttContextMenu",
-      "vue": "DxDxGanttContextMenu"
+      "vue": "DxGanttContextMenu"
     },
     "dxGanttContextMenu.items": {
       "angular": "dxi-item",
@@ -12157,14 +12151,14 @@
       "vue": "DxItem"
     },
     "dxGanttContextMenuItem": {
-      "angular": "dxo-dx-gantt-context-menu-item",
+      "angular": "dxo-gantt-context-menu-item",
       "react": "DxGanttContextMenuItem",
-      "vue": "DxDxGanttContextMenuItem"
+      "vue": "DxGanttContextMenuItem"
     },
     "dxGanttFilterRow": {
-      "angular": "dxo-dx-gantt-filter-row",
+      "angular": "dxo-gantt-filter-row",
       "react": "DxGanttFilterRow",
-      "vue": "DxDxGanttFilterRow"
+      "vue": "DxGanttFilterRow"
     },
     "dxGanttFilterRow.betweenEndText": {
       "vue": "between-end-text"
@@ -12187,9 +12181,9 @@
       "vue": "show-operation-chooser"
     },
     "dxGanttFilterRowOperationDescriptions": {
-      "angular": "dxo-dx-gantt-filter-row-operation-descriptions",
+      "angular": "dxo-gantt-filter-row-operation-descriptions",
       "react": "DxGanttFilterRowOperationDescriptions",
-      "vue": "DxDxGanttFilterRowOperationDescriptions"
+      "vue": "DxGanttFilterRowOperationDescriptions"
     },
     "dxGanttFilterRowOperationDescriptions.endsWith": {
       "vue": "ends-with"
@@ -12216,9 +12210,9 @@
       "vue": "starts-with"
     },
     "dxGanttHeaderFilter": {
-      "angular": "dxo-dx-gantt-header-filter",
+      "angular": "dxo-gantt-header-filter",
       "react": "DxGanttHeaderFilter",
-      "vue": "DxDxGanttHeaderFilter"
+      "vue": "DxGanttHeaderFilter"
     },
     "dxGanttHeaderFilter.allowSearch": {
       "vue": "allow-search"
@@ -12240,9 +12234,9 @@
       "vue": "DxTexts"
     },
     "dxGanttHeaderFilterTexts": {
-      "angular": "dxo-dx-gantt-header-filter-texts",
+      "angular": "dxo-gantt-header-filter-texts",
       "react": "DxGanttHeaderFilterTexts",
-      "vue": "DxDxGanttHeaderFilterTexts"
+      "vue": "DxGanttHeaderFilterTexts"
     },
     "dxGanttHeaderFilterTexts.emptyValue": {
       "vue": "empty-value"
@@ -12561,9 +12555,9 @@
       "vue": "validate-dependencies"
     },
     "dxGanttSorting": {
-      "angular": "dxo-dx-gantt-sorting",
+      "angular": "dxo-gantt-sorting",
       "react": "DxGanttSorting",
-      "vue": "DxDxGanttSorting"
+      "vue": "DxGanttSorting"
     },
     "dxGanttSorting.ascendingText": {
       "vue": "ascending-text"
@@ -12578,17 +12572,17 @@
       "vue": "show-sort-indexes"
     },
     "dxGanttStripLine": {
-      "angular": "dxo-dx-gantt-strip-line",
+      "angular": "dxo-gantt-strip-line",
       "react": "DxGanttStripLine",
-      "vue": "DxDxGanttStripLine"
+      "vue": "DxGanttStripLine"
     },
     "dxGanttStripLine.cssClass": {
       "vue": "css-class"
     },
     "dxGanttToolbar": {
-      "angular": "dxo-dx-gantt-toolbar",
+      "angular": "dxo-gantt-toolbar",
       "react": "DxGanttToolbar",
-      "vue": "DxDxGanttToolbar"
+      "vue": "DxGanttToolbar"
     },
     "dxGanttToolbar.items": {
       "angular": "dxi-item",
@@ -12596,9 +12590,9 @@
       "vue": "DxItem"
     },
     "dxGanttToolbarItem": {
-      "angular": "dxo-dx-gantt-toolbar-item",
+      "angular": "dxo-gantt-toolbar-item",
       "react": "DxGanttToolbarItem",
-      "vue": "DxDxGanttToolbarItem"
+      "vue": "DxGanttToolbarItem"
     },
     "dxHtmlEditor": {
       "angular": "dx-html-editor",
@@ -12606,9 +12600,9 @@
       "vue": "DxHtmlEditor"
     },
     "dxHtmlEditorImageUpload": {
-      "angular": "dxo-dx-html-editor-image-upload",
+      "angular": "dxo-html-editor-image-upload",
       "react": "DxHtmlEditorImageUpload",
-      "vue": "DxDxHtmlEditorImageUpload"
+      "vue": "DxHtmlEditorImageUpload"
     },
     "dxHtmlEditorImageUpload.fileUploaderOptions": {
       "vue": "file-uploader-options"
@@ -12631,17 +12625,17 @@
       "vue": "dx-html-editor-image-upload-tab-item"
     },
     "dxHtmlEditorMediaResizing": {
-      "angular": "dxo-dx-html-editor-media-resizing",
+      "angular": "dxo-html-editor-media-resizing",
       "react": "DxHtmlEditorMediaResizing",
-      "vue": "DxDxHtmlEditorMediaResizing"
+      "vue": "DxHtmlEditorMediaResizing"
     },
     "dxHtmlEditorMediaResizing.allowedTargets": {
       "vue": "allowed-targets"
     },
     "dxHtmlEditorMention": {
-      "angular": "dxo-dx-html-editor-mention",
+      "angular": "dxo-html-editor-mention",
       "react": "DxHtmlEditorMention",
-      "vue": "DxDxHtmlEditorMention"
+      "vue": "DxHtmlEditorMention"
     },
     "dxHtmlEditorMention.dataSource": {
       "vue": "data-source"
@@ -12736,9 +12730,9 @@
       "vue": "DxVariables"
     },
     "dxHtmlEditorTableContextMenu": {
-      "angular": "dxo-dx-html-editor-table-context-menu",
+      "angular": "dxo-html-editor-table-context-menu",
       "react": "DxHtmlEditorTableContextMenu",
-      "vue": "DxDxHtmlEditorTableContextMenu"
+      "vue": "DxHtmlEditorTableContextMenu"
     },
     "dxHtmlEditorTableContextMenu.items": {
       "angular": "dxi-item",
@@ -12746,9 +12740,9 @@
       "vue": "DxItem"
     },
     "dxHtmlEditorTableContextMenuItem": {
-      "angular": "dxo-dx-html-editor-table-context-menu-item",
+      "angular": "dxo-html-editor-table-context-menu-item",
       "react": "DxHtmlEditorTableContextMenuItem",
-      "vue": "DxDxHtmlEditorTableContextMenuItem"
+      "vue": "DxHtmlEditorTableContextMenuItem"
     },
     "dxHtmlEditorTableContextMenuItem.items": {
       "angular": "dxi-item",
@@ -12756,9 +12750,9 @@
       "vue": "DxItem"
     },
     "dxHtmlEditorTableResizing": {
-      "angular": "dxo-dx-html-editor-table-resizing",
+      "angular": "dxo-html-editor-table-resizing",
       "react": "DxHtmlEditorTableResizing",
-      "vue": "DxDxHtmlEditorTableResizing"
+      "vue": "DxHtmlEditorTableResizing"
     },
     "dxHtmlEditorTableResizing.minColumnWidth": {
       "vue": "min-column-width"
@@ -12767,9 +12761,9 @@
       "vue": "min-row-height"
     },
     "dxHtmlEditorToolbar": {
-      "angular": "dxo-dx-html-editor-toolbar",
+      "angular": "dxo-html-editor-toolbar",
       "react": "DxHtmlEditorToolbar",
-      "vue": "DxDxHtmlEditorToolbar"
+      "vue": "DxHtmlEditorToolbar"
     },
     "dxHtmlEditorToolbar.items": {
       "angular": "dxi-item",
@@ -12777,9 +12771,9 @@
       "vue": "DxItem"
     },
     "dxHtmlEditorToolbarItem": {
-      "angular": "dxo-dx-html-editor-toolbar-item",
+      "angular": "dxo-html-editor-toolbar-item",
       "react": "DxHtmlEditorToolbarItem",
-      "vue": "DxDxHtmlEditorToolbarItem"
+      "vue": "DxHtmlEditorToolbarItem"
     },
     "dxHtmlEditorToolbarItem.acceptedValues": {
       "vue": "accepted-values"
@@ -12791,9 +12785,9 @@
       "vue": "format-values"
     },
     "dxHtmlEditorVariables": {
-      "angular": "dxo-dx-html-editor-variables",
+      "angular": "dxo-html-editor-variables",
       "react": "DxHtmlEditorVariables",
-      "vue": "DxDxHtmlEditorVariables"
+      "vue": "DxHtmlEditorVariables"
     },
     "dxHtmlEditorVariables.dataSource": {
       "vue": "data-source"
@@ -12895,9 +12889,9 @@
       "vue": "DxList"
     },
     "dxListItem": {
-      "angular": "dxo-dx-list-item",
+      "angular": "dxo-list-item",
       "react": "DxListItem",
-      "vue": "DxDxListItem"
+      "vue": "DxListItem"
     },
     "dxListItem.showChevron": {
       "vue": "show-chevron"
@@ -13468,9 +13462,9 @@
       "vue": "DxMenu"
     },
     "dxMenuBaseItem": {
-      "angular": "dxo-dx-menu-base-item",
+      "angular": "dxo-menu-base-item",
       "react": "DxMenuBaseItem",
-      "vue": "DxDxMenuBaseItem"
+      "vue": "DxMenuBaseItem"
     },
     "dxMenuBaseItem.beginGroup": {
       "vue": "begin-group"
@@ -13550,9 +13544,9 @@
       "vue": "DxDelay"
     },
     "dxMenuItem": {
-      "angular": "dxo-dx-menu-item",
+      "angular": "dxo-menu-item",
       "react": "DxMenuItem",
-      "vue": "DxDxMenuItem"
+      "vue": "DxMenuItem"
     },
     "dxMenuItem.items": {
       "angular": "dxi-item",
@@ -13642,9 +13636,9 @@
       "vue": "DxMultiView"
     },
     "dxMultiViewItem": {
-      "angular": "dxo-dx-multi-view-item",
+      "angular": "dxo-multi-view-item",
       "react": "DxMultiViewItem",
-      "vue": "DxDxMultiViewItem"
+      "vue": "DxMultiViewItem"
     },
     "dxMultiViewOptions.animationEnabled": {
       "vue": "animation-enabled"
@@ -13704,25 +13698,6 @@
     },
     "dxMultiViewOptions.swipeEnabled": {
       "vue": "swipe-enabled"
-    },
-    "dxNavBar": {
-      "angular": "dx-nav-bar",
-      "react": "NavBar",
-      "vue": "DxNavBar"
-    },
-    "dxNavBarItem": {
-      "angular": "dxo-dx-nav-bar-item",
-      "react": "DxNavBarItem",
-      "vue": "DxDxNavBarItem"
-    },
-    "dxNavBarOptions.scrollByContent": {
-      "vue": "scroll-by-content"
-    },
-    "dxNavBarOptions.scrollingEnabled": {
-      "vue": "scrolling-enabled"
-    },
-    "dxNavBarOptions.showNavButtons": {
-      "vue": "show-nav-buttons"
     },
     "dxNumberBox": {
       "angular": "dx-number-box",
@@ -13868,14 +13843,14 @@
       "vue": "DxPieChart"
     },
     "dxPieChartAnnotationConfig": {
-      "angular": "dxo-dx-pie-chart-annotation-config",
+      "angular": "dxo-pie-chart-annotation-config",
       "react": "DxPieChartAnnotationConfig",
-      "vue": "DxDxPieChartAnnotationConfig"
+      "vue": "DxPieChartAnnotationConfig"
     },
     "dxPieChartCommonAnnotationConfig": {
-      "angular": "dxo-dx-pie-chart-common-annotation-config",
+      "angular": "dxo-pie-chart-common-annotation-config",
       "react": "DxPieChartCommonAnnotationConfig",
-      "vue": "DxDxPieChartCommonAnnotationConfig"
+      "vue": "DxPieChartCommonAnnotationConfig"
     },
     "dxPieChartCommonAnnotationConfig.customizeTooltip": {
       "vue": "customize-tooltip"
@@ -14177,6 +14152,9 @@
     },
     "dxPivotGridFieldChooserOptions.dataSource": {
       "vue": "data-source"
+    },
+    "dxPivotGridFieldChooserOptions.encodeHtml": {
+      "vue": "encode-html"
     },
     "dxPivotGridFieldChooserOptions.headerFilter": {
       "angular": "dxo-header-filter",
@@ -14514,9 +14492,9 @@
       "vue": "word-wrap-enabled"
     },
     "dxPivotGridPivotGridCell": {
-      "angular": "dxo-dx-pivot-grid-pivot-grid-cell",
+      "angular": "dxo-pivot-grid-pivot-grid-cell",
       "react": "DxPivotGridPivotGridCell",
-      "vue": "DxDxPivotGridPivotGridCell"
+      "vue": "DxPivotGridPivotGridCell"
     },
     "dxPivotGridPivotGridCell.columnPath": {
       "vue": "column-path"
@@ -14534,9 +14512,9 @@
       "vue": "row-type"
     },
     "dxPivotGridSummaryCell": {
-      "angular": "dxo-dx-pivot-grid-summary-cell",
+      "angular": "dxo-pivot-grid-summary-cell",
       "react": "DxPivotGridSummaryCell",
-      "vue": "DxDxPivotGridSummaryCell"
+      "vue": "DxPivotGridSummaryCell"
     },
     "dxPolarChart": {
       "angular": "dx-polar-chart",
@@ -14544,14 +14522,14 @@
       "vue": "DxPolarChart"
     },
     "dxPolarChartAnnotationConfig": {
-      "angular": "dxo-dx-polar-chart-annotation-config",
+      "angular": "dxo-polar-chart-annotation-config",
       "react": "DxPolarChartAnnotationConfig",
-      "vue": "DxDxPolarChartAnnotationConfig"
+      "vue": "DxPolarChartAnnotationConfig"
     },
     "dxPolarChartCommonAnnotationConfig": {
-      "angular": "dxo-dx-polar-chart-common-annotation-config",
+      "angular": "dxo-polar-chart-common-annotation-config",
       "react": "DxPolarChartCommonAnnotationConfig",
-      "vue": "DxDxPolarChartCommonAnnotationConfig"
+      "vue": "DxPolarChartCommonAnnotationConfig"
     },
     "dxPolarChartCommonAnnotationConfig.customizeTooltip": {
       "vue": "customize-tooltip"
@@ -16006,9 +15984,9 @@
       "vue": "DxResponsiveBox"
     },
     "dxResponsiveBoxItem": {
-      "angular": "dxo-dx-responsive-box-item",
+      "angular": "dxo-responsive-box-item",
       "react": "DxResponsiveBoxItem",
-      "vue": "DxDxResponsiveBoxItem"
+      "vue": "DxResponsiveBoxItem"
     },
     "dxResponsiveBoxItem.location": {
       "angular": "dxi-location",
@@ -16108,9 +16086,9 @@
       "vue": "DxSankey"
     },
     "dxSankeyConnectionInfoObject": {
-      "angular": "dxo-dx-sankey-connection-info-object",
+      "angular": "dxo-sankey-connection-info-object",
       "react": "DxSankeyConnectionInfoObject",
-      "vue": "DxDxSankeyConnectionInfoObject"
+      "vue": "DxSankeyConnectionInfoObject"
     },
     "dxSankeyLink": {
       "vue": "dx-sankey-link"
@@ -16316,9 +16294,9 @@
       "vue": "DxScheduler"
     },
     "dxSchedulerAppointment": {
-      "angular": "dxo-dx-scheduler-appointment",
+      "angular": "dxo-scheduler-appointment",
       "react": "DxSchedulerAppointment",
-      "vue": "DxDxSchedulerAppointment"
+      "vue": "DxSchedulerAppointment"
     },
     "dxSchedulerAppointment.allDay": {
       "vue": "all-day"
@@ -16834,113 +16812,6 @@
     "dxSelectBoxOptions.valueChangeEvent": {
       "vue": "value-change-event"
     },
-    "dxSlideOut": {
-      "angular": "dx-slide-out",
-      "react": "SlideOut",
-      "vue": "DxSlideOut"
-    },
-    "dxSlideOutItem": {
-      "angular": "dxo-dx-slide-out-item",
-      "react": "DxSlideOutItem",
-      "vue": "DxDxSlideOutItem"
-    },
-    "dxSlideOutItem.menuTemplate": {
-      "vue": "menu-template"
-    },
-    "dxSlideOutOptions.accessKey": {
-      "vue": "access-key"
-    },
-    "dxSlideOutOptions.activeStateEnabled": {
-      "vue": "active-state-enabled"
-    },
-    "dxSlideOutOptions.contentTemplate": {
-      "vue": "content-template"
-    },
-    "dxSlideOutOptions.dataSource": {
-      "vue": "data-source"
-    },
-    "dxSlideOutOptions.focusStateEnabled": {
-      "vue": "focus-state-enabled"
-    },
-    "dxSlideOutOptions.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
-    "dxSlideOutOptions.keyExpr": {
-      "vue": "key-expr"
-    },
-    "dxSlideOutOptions.menuGrouped": {
-      "vue": "menu-grouped"
-    },
-    "dxSlideOutOptions.menuGroupTemplate": {
-      "vue": "menu-group-template"
-    },
-    "dxSlideOutOptions.menuItemTemplate": {
-      "vue": "menu-item-template"
-    },
-    "dxSlideOutOptions.menuPosition": {
-      "vue": "menu-position"
-    },
-    "dxSlideOutOptions.menuVisible": {
-      "vue": "menu-visible"
-    },
-    "dxSlideOutOptions.onMenuGroupRendered": {
-      "vue": "@menu-group-rendered"
-    },
-    "dxSlideOutOptions.onMenuItemRendered": {
-      "vue": "@menu-item-rendered"
-    },
-    "dxSlideOutOptions.selectedIndex": {
-      "vue": "selected-index"
-    },
-    "dxSlideOutOptions.selectedItemKeys": {
-      "vue": "selected-item-keys"
-    },
-    "dxSlideOutOptions.selectedItems": {
-      "vue": "selected-items"
-    },
-    "dxSlideOutOptions.swipeEnabled": {
-      "vue": "swipe-enabled"
-    },
-    "dxSlideOutOptions.tabIndex": {
-      "vue": "tab-index"
-    },
-    "dxSlideOutView": {
-      "angular": "dx-slide-out-view",
-      "react": "SlideOutView",
-      "vue": "DxSlideOutView"
-    },
-    "dxSlideOutViewOptions.accessKey": {
-      "vue": "access-key"
-    },
-    "dxSlideOutViewOptions.contentOffset": {
-      "vue": "content-offset"
-    },
-    "dxSlideOutViewOptions.contentTemplate": {
-      "vue": "content-template"
-    },
-    "dxSlideOutViewOptions.focusStateEnabled": {
-      "vue": "focus-state-enabled"
-    },
-    "dxSlideOutViewOptions.menuPosition": {
-      "vue": "menu-position"
-    },
-    "dxSlideOutViewOptions.menuTemplate": {
-      "vue": "menu-template"
-    },
-    "dxSlideOutViewOptions.menuVisible": {
-      "vue": "menu-visible"
-    },
-    "dxSlideOutViewOptions.onContentReady": {
-      "vue": "@content-ready"
-    },
-    "dxSlideOutViewOptions.swipeEnabled": {
-      "vue": "swipe-enabled"
-    },
-    "dxSlideOutViewOptions.tabIndex": {
-      "vue": "tab-index"
-    },
     "dxSlider": {
       "angular": "dx-slider",
       "react": "Slider",
@@ -17223,9 +17094,9 @@
       "vue": "DxTabPanel"
     },
     "dxTabPanelItem": {
-      "angular": "dxo-dx-tab-panel-item",
+      "angular": "dxo-tab-panel-item",
       "react": "DxTabPanelItem",
-      "vue": "DxDxTabPanelItem"
+      "vue": "DxTabPanelItem"
     },
     "dxTabPanelItem.tabTemplate": {
       "vue": "tab-template"
@@ -17307,9 +17178,9 @@
       "vue": "DxTabs"
     },
     "dxTabsItem": {
-      "angular": "dxo-dx-tabs-item",
+      "angular": "dxo-tabs-item",
       "react": "DxTabsItem",
-      "vue": "DxDxTabsItem"
+      "vue": "DxTabsItem"
     },
     "dxTabsOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
@@ -17636,11 +17507,6 @@
     "dxTextBoxOptions.onValueChanged": {
       "vue": "@value-changed"
     },
-    "dxTextEditorButton": {
-      "angular": "dxo-text-editor-button",
-      "react": "DxTextEditorButton",
-      "vue": "DxTextEditorButton"
-    },
     "dxTextEditorOptions.buttons": {
       "angular": "dxi-button",
       "react": "Button",
@@ -17694,9 +17560,9 @@
       "vue": "DxTileView"
     },
     "dxTileViewItem": {
-      "angular": "dxo-dx-tile-view-item",
+      "angular": "dxo-tile-view-item",
       "react": "DxTileViewItem",
-      "vue": "DxDxTileViewItem"
+      "vue": "DxTileViewItem"
     },
     "dxTileViewItem.heightRatio": {
       "vue": "height-ratio"
@@ -17851,9 +17717,9 @@
       "vue": "DxToolbar"
     },
     "dxToolbarItem": {
-      "angular": "dxo-dx-toolbar-item",
+      "angular": "dxo-toolbar-item",
       "react": "DxToolbarItem",
-      "vue": "DxDxToolbarItem"
+      "vue": "DxToolbarItem"
     },
     "dxToolbarItem.cssClass": {
       "vue": "css-class"
@@ -17993,9 +17859,9 @@
       "vue": "DxTreeList"
     },
     "dxTreeListColumn": {
-      "angular": "dxo-dx-tree-list-column",
+      "angular": "dxo-tree-list-column",
       "react": "DxTreeListColumn",
-      "vue": "DxDxTreeListColumn"
+      "vue": "DxTreeListColumn"
     },
     "dxTreeListColumn.buttons": {
       "angular": "dxi-button",
@@ -18017,17 +17883,17 @@
       "vue": "header-cell-template"
     },
     "dxTreeListColumnButton": {
-      "angular": "dxo-dx-tree-list-column-button",
+      "angular": "dxo-tree-list-column-button",
       "react": "DxTreeListColumnButton",
-      "vue": "DxDxTreeListColumnButton"
+      "vue": "DxTreeListColumnButton"
     },
     "dxTreeListColumnButton.onClick": {
       "vue": "@click"
     },
     "dxTreeListNode": {
-      "angular": "dxo-dx-tree-list-node",
+      "angular": "dxo-tree-list-node",
       "react": "DxTreeListNode",
-      "vue": "DxDxTreeListNode"
+      "vue": "DxTreeListNode"
     },
     "dxTreeListNode.children": {
       "angular": "dxi-children",
@@ -18251,9 +18117,9 @@
       "vue": "DxToolbar"
     },
     "dxTreeListRowObject": {
-      "angular": "dxo-dx-tree-list-row-object",
+      "angular": "dxo-tree-list-row-object",
       "react": "DxTreeListRowObject",
-      "vue": "DxDxTreeListRowObject"
+      "vue": "DxTreeListRowObject"
     },
     "dxTreeListRowObject.isEditing": {
       "vue": "is-editing"
@@ -18279,9 +18145,9 @@
       "vue": "row-type"
     },
     "dxTreeListToolbar": {
-      "angular": "dxo-dx-tree-list-toolbar",
+      "angular": "dxo-tree-list-toolbar",
       "react": "DxTreeListToolbar",
-      "vue": "DxDxTreeListToolbar"
+      "vue": "DxTreeListToolbar"
     },
     "dxTreeListToolbar.items": {
       "angular": "dxi-item",
@@ -18289,9 +18155,9 @@
       "vue": "DxItem"
     },
     "dxTreeListToolbarItem": {
-      "angular": "dxo-dx-tree-list-toolbar-item",
+      "angular": "dxo-tree-list-toolbar-item",
       "react": "DxTreeListToolbarItem",
-      "vue": "DxDxTreeListToolbarItem"
+      "vue": "DxTreeListToolbarItem"
     },
     "dxTreeMap": {
       "angular": "dx-tree-map",
@@ -18513,9 +18379,9 @@
       "vue": "DxTreeView"
     },
     "dxTreeViewItem": {
-      "angular": "dxo-dx-tree-view-item",
+      "angular": "dxo-tree-view-item",
       "react": "DxTreeViewItem",
-      "vue": "DxDxTreeViewItem"
+      "vue": "DxTreeViewItem"
     },
     "dxTreeViewItem.hasItems": {
       "vue": "has-items"
@@ -18529,9 +18395,9 @@
       "vue": "parent-id"
     },
     "dxTreeViewNode": {
-      "angular": "dxo-dx-tree-view-node",
+      "angular": "dxo-tree-view-node",
       "react": "DxTreeViewNode",
-      "vue": "DxDxTreeViewNode"
+      "vue": "DxTreeViewNode"
     },
     "dxTreeViewNode.children": {
       "angular": "dxi-children",
@@ -18800,14 +18666,14 @@
       "vue": "DxVectorMap"
     },
     "dxVectorMapAnnotationConfig": {
-      "angular": "dxo-dx-vector-map-annotation-config",
+      "angular": "dxo-vector-map-annotation-config",
       "react": "DxVectorMapAnnotationConfig",
-      "vue": "DxDxVectorMapAnnotationConfig"
+      "vue": "DxVectorMapAnnotationConfig"
     },
     "dxVectorMapCommonAnnotationConfig": {
-      "angular": "dxo-dx-vector-map-common-annotation-config",
+      "angular": "dxo-vector-map-common-annotation-config",
       "react": "DxVectorMapCommonAnnotationConfig",
-      "vue": "DxDxVectorMapCommonAnnotationConfig"
+      "vue": "DxVectorMapCommonAnnotationConfig"
     },
     "dxVectorMapCommonAnnotationConfig.customizeTooltip": {
       "vue": "customize-tooltip"
@@ -20560,6 +20426,9 @@
     },
     "gridBaseOptions.stateStoring.storageKey": {
       "vue": "storage-key"
+    },
+    "gridBaseOptions.syncLookupFilterValues": {
+      "vue": "sync-lookup-filter-values"
     },
     "gridBaseOptions.twoWayBindingEnabled": {
       "vue": "two-way-binding-enabled"

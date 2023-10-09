@@ -9,7 +9,7 @@ Specifies the Diagram command's identifier.
 
 ---
 <!--
-dxDiagramCustomCommand.name(/api-reference/50 Common/Object Structures/dxDiagramCustomCommand/name.md)
+dxDiagramCustomCommand.name(/api-reference/10 UI Components/dxDiagram/7 Interfaces/dxDiagramCustomCommand/name.md)
 dxDiagramOptions.contextMenu.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/contextMenu/commands.md)
 dxDiagramOptions.historyToolbar.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/historyToolbar/commands.md)
 dxDiagramOptions.mainToolbar.commands(/api-reference/10 UI Components/dxDiagram/1 Configuration/mainToolbar/commands.md)

@@ -24,4 +24,4 @@ To create a single CSS bundle, you can use the `rollup-plugin-css-only` package.
         ]
     }
 
-[note] [SVG-based UI components](/Documentation/Guide/Themes_and_Styles/Styling_Methods/) do not require theme stylesheets. If you choose to import the stylesheets, the UI components apply an appearance that matches them.
+[note] [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') do not require theme stylesheets. If you choose to import the stylesheets, the UI components apply an appearance that matches them.

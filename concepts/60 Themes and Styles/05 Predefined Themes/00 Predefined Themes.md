@@ -219,7 +219,7 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
     </div>    
 </div>
 
-CSS themes are designed to customize HTML-based UI components. However, [SVG-based UI components](/Documentation/Guide/Themes_and_Styles/Styling_Methods/) use their own themes to assume an appearance that matches a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes') article for more information on themes in SVG-based UI components.
+CSS themes are designed to customize HTML-based UI components. However, [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') use their own themes to assume an appearance that matches a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes') article for more information on themes in SVG-based UI components.
 
 <style>
     #material-themes {

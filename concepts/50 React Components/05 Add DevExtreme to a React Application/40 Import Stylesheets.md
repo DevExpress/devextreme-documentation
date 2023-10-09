@@ -16,6 +16,6 @@ Then, go to the `public` folder, open the `index.html` file, and add the `dx-vie
         </body>
     </html>
 
-[note] [SVG-based UI components](/Documentation/Guide/Themes_and_Styles/Styling_Methods/) do not require theme stylesheets. If you choose to import the stylesheets, the UI components apply an appearance that matches them.
+[note] [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') do not require theme stylesheets. If you choose to import the stylesheets, the UI components apply an appearance that matches them.
 
 [tags] theme

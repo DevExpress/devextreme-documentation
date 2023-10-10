@@ -3,8 +3,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
-    import DxDataGridComponent from 'devextreme-angular/ui/data-grid';
-    import Button from 'devextreme-angular/ui/button';
+    import DxDataGridComponent, { DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
     import { Employee } from './data';
 
     @Component({
@@ -24,7 +23,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
             });
         }
 
-        onEditorPreparing(e: any) {
+        onEditorPreparing(e: DxDataGridTypes.EditorPreparingEvent<Employee, number>) {
             if (e.dataField === 'LastName' && e.parentType === 'dataRow') {
                 e.editorOptions.disabled = e.row?.data && e.row?.data.FirstName === '';
             }

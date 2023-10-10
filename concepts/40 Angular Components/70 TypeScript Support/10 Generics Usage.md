@@ -3,7 +3,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
-    import DataGrid from 'devextreme-angular/ui/data-grid';
+    import DxDataGridComponent from 'devextreme-angular/ui/data-grid';
     import Button from 'devextreme-angular/ui/button';
     import { Employee } from './data';
 
@@ -14,7 +14,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
     })
 
     export class AppComponent {
-        @ViewChild(DataGrid, { static: false }) dataGrid!: DataGrid<Employee>;
+        @ViewChild(DxDataGridComponent<Employee, number>) dataGrid!: DxDataGridComponent<Employee, number>;
 
         dataSource: DataSource;
 

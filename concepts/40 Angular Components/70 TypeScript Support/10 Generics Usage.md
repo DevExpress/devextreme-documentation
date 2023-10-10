@@ -2,8 +2,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
 
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
-    import DataSource from 'devextreme/data/data_source';
-    import DxDataGridComponent, { DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
+    import { DxDataGridComponent, DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
     import { Employee } from './data';
 
     @Component({
@@ -13,15 +12,7 @@ DevExtreme supports Generics for properties and methods that operate internal da
     })
 
     export class AppComponent {
-        @ViewChild(DxDataGridComponent<Employee, number>) dataGrid!: DxDataGridComponent<Employee, number>;
-
-        dataSource: DataSource;
-
-        constructor() {
-            this.dataSource = new DataSource({
-                store: service,
-            });
-        }
+        @ViewChild(DxDataGridComponent) dataGrid!: DxDataGridComponent<Employee, number>;
 
         onEditorPreparing(e: DxDataGridTypes.EditorPreparingEvent<Employee, number>) {
             if (e.dataField === 'LastName' && e.parentType === 'dataRow') {
@@ -30,18 +21,17 @@ DevExtreme supports Generics for properties and methods that operate internal da
         }
 
         onButtonClick() {
-            this.dataGrid.instance.option('disabled', true);
+            const keys: number[] = this.dataGrid.instance.getSelectedRowKeys();
         }
     }
 
     <!-- tab: app.component.html -->
     <dx-button
-        text="Disable DataGrid"
+        text="Get Selected Keys"
         (onClick)="onButtonClick()"
     >
     </dx-button>
-    <dx-data-grid
-        [dataSource]="dataSource"
-        [ref]="dataGrid"
+    <dx-data-grid ...
         (onEditorPreparing)="onEditorPreparing($event)"
-    ></dx-data-grid>
+    >
+    </dx-data-grid>

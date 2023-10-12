@@ -1,7 +1,7 @@
 ---
 id: dxScrollView.Options.reachBottomText
 type: String
-default: 'Loading...', '' (Material)
+default: 'Loading...', '' (Fluent, Material)
 ---
 ---
 ##### shortDescription

@@ -20,7 +20,7 @@ To get component-specific types, import the `DxComponentTypes` declaration where
     >
     </dx-date-box>
 
-If you need the same type for multiple components, you can also import this type from `common` submodule:
+If you need several components of the same type, you can import that type from the `common` submodule:
 
     <!-- tab: app.component.ts -->
     // In the sample below, ValidationRule is imported for each component:

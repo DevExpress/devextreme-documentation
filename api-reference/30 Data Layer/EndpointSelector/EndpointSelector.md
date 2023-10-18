@@ -48,43 +48,6 @@ This object selects local or production OData service URL depending on whether t
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.endpointSelector = new DevExpress.data.EndpointSelector({
-                db1: {
-                    local: "http://localhost:55555/service1.svc/",
-                    production: "http://services.example.com/service1.svc/"
-                },
-                db2: {
-                    local: "http://localhost:55555/service2.svc/",
-                    production: "http://services.example.com/service2.svc/"
-                },
-                // ...
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        endpointSelector: new DevExpress.data.EndpointSelector({
-            db1: {
-                local: "http://localhost:55555/service1.svc/",
-                production: "http://services.example.com/service1.svc/"
-            },
-            db2: {
-                local: "http://localhost:55555/service2.svc/",
-                production: "http://services.example.com/service2.svc/"
-            },
-            // ...
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

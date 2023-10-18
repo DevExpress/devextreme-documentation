@@ -2,7 +2,7 @@ Exposes the File System Error.
 
 Exports:
 
-- *default* - The [File System Error](/api-reference/50%20Common/Object%20Structures/FileSystemError '/Documentation/ApiReference/Common/Object_Structures/FileSystemError/')
+- *default* - The [File System Error](/api-reference/10%20UI%20Components/dxFileManager/7%20Interfaces/FileSystemError '/Documentation/ApiReference/UI_Components/dxFileManager/Interfaces/FileSystemError/')
 
         require("file_management/error");
         // ===== or =====

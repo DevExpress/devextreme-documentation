@@ -1,7 +1,7 @@
 For a minor customization of ActionSheet buttons, you can define [specific fields](/api-reference/10%20UI%20Components/dxActionSheet/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/') in button data objects. For example, the following code generates three buttons, the first is not customized, the second is disabled, the [type](/api-reference/_hidden/dxActionSheetItem/type.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#type') of the third button is *danger*.
 
 ---
-##### JQuery
+##### jQuery
 
     <!--JavaScript-->
     $(function() {
@@ -100,9 +100,36 @@ For a minor customization of ActionSheet buttons, you can define [specific field
 
 ---
 
-If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/#itemTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+If you need a more flexible solution, define an [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/#itemTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#actionSheetContainer").dxActionSheet({
+            dataSource: [
+                { text: "Reply", icon: 'arrowleft' },
+                { text: "Reply All", icon: 'arrowleft' },
+                { text: "Forward", icon: 'arrowright' },
+                { text: "Delete", icon: 'close' }
+            ],
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                const linkContainer = $("<div class='action-sheet-button'>");
+                linkContainer.append("<a href='#'>" + itemData.text + "</a>");
+                itemElement.append(linkContainer);
+            }
+        });
+    });
+
+    <!--CSS-->
+    .action-sheet-button {
+        margin: 5px;
+        padding: 10px;
+        border: 1px dotted #080;
+        background-color: white;
+    }
+
 ##### Angular
 
     <!--HTML-->
@@ -243,32 +270,8 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
 ---
 
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    $(function() {
-        $("#actionSheetContainer").dxActionSheet({
-            dataSource: [
-                { text: "Reply", icon: 'arrowleft' },
-                { text: "Reply All", icon: 'arrowleft' },
-                { text: "Forward", icon: 'arrowright' },
-                { text: "Delete", icon: 'close' }
-            ],
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                const linkContainer = $("<div class='action-sheet-button'>");
-                linkContainer.append("<a href='#'>" + itemData.text + "</a>");
-                itemElement.append(linkContainer);
-            }
-        });
-    });
-
-    <!--CSS-->
-    .action-sheet-button {
-        margin: 5px;
-        padding: 10px;
-        border: 1px dotted #080;
-        background-color: white;
-    }
+---
+##### jQuery
 
 You can also customize an individual ActionSheet button. For this purpose, declare a template for this button as a script and pass its `id` to the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#template') field. 
 
@@ -283,7 +286,7 @@ You can also customize an individual ActionSheet button. For this purpose, decla
         // ...
     ];
 
-In addition, you can use a 3rd-party template engine to customize UI component appearance. For more information, see the [3rd-Party Template Engines](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/30%203rd-Party%20Template%20Engines.md '/Documentation/Guide/UI_Components/Common/Templates/#3rd-Party_Template_Engines') article.
+---
 
 #####See Also#####
 - [ActionSheet Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics)

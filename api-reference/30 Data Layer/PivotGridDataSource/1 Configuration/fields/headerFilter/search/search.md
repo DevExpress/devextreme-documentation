@@ -173,6 +173,8 @@ Configures the header filter's search functionality.
     });
     </script>
 
+##### React
+
     <!-- tab: App.js -->
     import React from 'react';  
     import 'devextreme/dist/css/dx.light.css'; 

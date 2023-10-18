@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.pageLoadingText
 type: String
-default: 'Loading...', '' (Material)
+default: 'Loading...', '' (Fluent, Material)
 ---
 ---
 ##### shortDescription

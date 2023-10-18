@@ -589,6 +589,21 @@
     "_ui_data_grid_CellPreparedEvent.rowType": {
       "vue": "row-type"
     },
+    "_ui_data_grid_ColumnButtonClickEvent": {
+      "angular": "dxo-ui-data-grid--column-button-click-event",
+      "react": "_ui_data_grid_ColumnButtonClickEvent",
+      "vue": "Dx_ui_data_grid_ColumnButtonClickEvent"
+    },
+    "_ui_data_grid_ColumnButtonClickEvent.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
+    "_ui_data_grid_ColumnButtonClickEvent.row": {
+      "angular": "dxo-row",
+      "react": "Row",
+      "vue": "DxRow"
+    },
     "_ui_data_grid_ContentReadyEvent": {
       "angular": "dxo-ui-data-grid--content-ready-event",
       "react": "_ui_data_grid_ContentReadyEvent",
@@ -17107,6 +17122,9 @@
     "dxTabPanelOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
+    "dxTabPanelOptions.iconPosition": {
+      "vue": "icon-position"
+    },
     "dxTabPanelOptions.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -17163,6 +17181,9 @@
     "dxTabPanelOptions.showNavButtons": {
       "vue": "show-nav-buttons"
     },
+    "dxTabPanelOptions.stylingMode": {
+      "vue": "styling-mode"
+    },
     "dxTabPanelOptions.swipeEnabled": {
       "vue": "swipe-enabled"
     },
@@ -17190,6 +17211,9 @@
     },
     "dxTabsOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
+    },
+    "dxTabsOptions.iconPosition": {
+      "vue": "icon-position"
     },
     "dxTabsOptions.items": {
       "angular": "dxi-item",
@@ -17237,6 +17261,9 @@
     },
     "dxTabsOptions.showNavButtons": {
       "vue": "show-nav-buttons"
+    },
+    "dxTabsOptions.stylingMode": {
+      "vue": "styling-mode"
     },
     "dxTagBox": {
       "angular": "dx-tag-box",
@@ -19514,6 +19541,12 @@
     },
     "enums.SummaryType": {
       "vue": "summary-type"
+    },
+    "enums.TabsIconPosition": {
+      "vue": "tabs-icon-position"
+    },
+    "enums.TabsStyle": {
+      "vue": "tabs-style"
     },
     "enums.TextBoxPredefinedButton": {
       "vue": "text-box-predefined-button"

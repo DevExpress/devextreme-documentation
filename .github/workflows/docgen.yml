@@ -10,7 +10,7 @@ jobs:
 
     steps:
         - name: Checkout Docs
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
           with:
             path: documentation
             token: ${{ secrets.DXROBOT_PAT }}
@@ -18,7 +18,7 @@ jobs:
             ref: ${{ github.ref_name }}
 
         - name: Checkout DevExtreme
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
           with:
             path: devextreme
             repository: devexpress/devextreme
@@ -37,34 +37,33 @@ jobs:
 #Generation
         - name: Discover declarations
           working-directory: devextreme
-#TODO: Workaround. This should be removed following the changes in devextreme monorepo            
+#TODO: Workaround. This should be removed following the changes in devextreme monorepo
           run: |
             if [[ ${{ github.ref_name }} == "23_2" ]]; then
-              cd ./packages/devextreme
-              npm run discover-declarations -- --artifacts ../../../artifacts/internal-tools
+              npm run tools:discover-declarations
             else    
-              npm run discover-declarations -- --artifacts ../artifacts/internal-tools            
+              npm run discover-declarations -- --artifacts ./artifacts/internal-tools            
             fi
 
         - name: Update topics
           working-directory: documentation
-          run: npm run update-topics -- --artifacts ../artifacts/internal-tools
+          run: npm run update-topics -- --artifacts ../devextreme/artifacts/internal-tools
 
         - name: Generate additional topics
           working-directory: documentation
-          run: npm run generate-extra-topic --artifacts ../artifacts/internal-tools
+          run: npm run generate-extra-topic --artifacts ../devextreme/artifacts/internal-tools
 
         - name: Generate Syntax metadata
           working-directory: documentation
-          run: npm run generate-syntax-data -- --artifacts ../artifacts/internal-tools
+          run: npm run generate-syntax-data -- --artifacts ../devextreme/artifacts/internal-tools
 
         - name: Generate ContentMap
           working-directory: documentation
-          run: npm run generate-content-map --artifacts ../artifacts/internal-tools
+          run: npm run generate-content-map --artifacts ../devextreme/artifacts/internal-tools
 
         - name: Update links
           working-directory: documentation
-          run: npm run update-links --artifacts ../artifacts/internal-tools
+          run: npm run update-links --artifacts ../devextreme/artifacts/internal-tools
 
 #PR
         - name: Configure Git
@@ -86,7 +85,7 @@ jobs:
             git push --set-upstream origin $branch_name
 
             escaped_pwd=$(echo $(pwd)/ | sed --expression 's/\//\\\//g')
-            cat ../artifacts/internal-tools/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
+            cat ../devextreme/artifacts/internal-tools/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
             
             MAXSIZE=65536
             FILESIZE=$(stat -c%s prbody.md)
@@ -113,5 +112,5 @@ jobs:
           uses: actions/upload-artifact@v3
           with:
             name: internal-tools-artifacts
-            path: artifacts/internal-tools/
+            path: ./devextreme/artifacts/internal-tools/
             retention-days: 7

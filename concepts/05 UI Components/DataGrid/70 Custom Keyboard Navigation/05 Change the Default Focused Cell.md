@@ -1,4 +1,4 @@
-To specify cell focus order when a user navigates through DataGrid, call the [onFocusedCellChanging](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedCellChanging) function. The code below uses `newColumnIndex` to set the column index of the next focused cell.
+To specify cell focus order when a user navigates through DataGrid, call the [onFocusedCellChanging](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onFocusedCellChanging.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedCellChanging') function. The code below uses `newColumnIndex` to set the column index of the next focused cell.
 
 ---
 ##### jQuery

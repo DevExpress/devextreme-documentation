@@ -6,7 +6,7 @@ id: Widget.repaint()
 Renders the component anew without reloading data. Use the method to update the component's markup and appearance on the fly.
 
 ---
-The `repaint()` method re-initializes the component with new settings, resetting its state and history. Note: when you `repaint()` a component, the "undo" and "redo" buttons become inactive.
+The `repaint()` method re-initializes the component with new settings, resetting its state and history.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-components-with-resize-observer"

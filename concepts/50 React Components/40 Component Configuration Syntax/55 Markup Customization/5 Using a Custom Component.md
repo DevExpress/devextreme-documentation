@@ -1,7 +1,39 @@
-You can define the template markup in a separate component. We recommend using <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent" target="_blank">`React.PureComponent`</a> because `React.Component` can be re-rendered unnecessarily. Alternatively, you can implement the <a href="https://reactjs.org/docs/react-component.html#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
+You can define custom content markup in a separate component. 
 
-In the following code, custom components are used to specify the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/React/Light)'s [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate') and the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/React/Light)'s [template](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#template'). Template variables are passed to the components as props.
+For Class components, we recommend using <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent" target="_blank">`React.PureComponent`</a> because `React.Component` can be re-rendered unnecessarily. Alternatively, you can implement the <a href="https://reactjs.org/docs/react-component.html#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
+
+In the following code, custom components are used to specify the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/React/Light)'s [itemComponent](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemComponent) and the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/React/Light)'s [component](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#component). Template variables are passed to the components as props.
     
+    <!-- tab: Function component -->
+    import React from 'react';
+    import List from 'devextreme-react/list';
+    import Button from 'devextreme-react/button';
+
+    const ListItemTmpl = ({ data }) => {
+        return (
+            <p>{data.itemProperty}</p>
+        );
+    };
+
+    const ButtonTmpl = ({ data }) => {
+        return (
+            <div style={{ padding: 20 }}>
+                <p>{data.text}</p>
+            </div>
+        );
+    };
+
+    function App() {
+        return (
+            <div>
+                <List itemComponent={ListItemTmpl} />
+                <Button component={ButtonTmpl} />
+            </div>
+        );
+    };
+
+    export default App;
+
     <!-- tab: Class component -->
     import List from 'devextreme-react/list';
     import Button from 'devextreme-react/button';

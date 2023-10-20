@@ -22,7 +22,13 @@ When this property is **true**, make sure that all data source objects have the 
 
 You can supply data to this structure using the **DataSource** object's [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
-[note]Only one-level grouping is supported.
+[note]
+
+- Only one-level grouping is supported.
+
+- If you enable both this property and DataSource.[paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate'), the pagination works only on the group level.
+
+[/note]
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/GroupedItems/",

@@ -10,14 +10,34 @@ From this tutorial, you will learn how to create a single- or multi-action FAB a
 
 [note]
 
-Code examples in this tutorial use icons from the [Ionicons](https://ionicons.com) library. If you are going to replicate the examples in your Angular, Vue, or React application, install the `ionicons` npm package:
+---
+##### jQuery
 
-    npm install ionicons@4 --save
-
-With jQuery, reference the Ionicons stylesheet in the `<head>` of your page:
+Code examples in this tutorial use icons from the <a href="https://ionicons.com" target="_blank">Ionicons</a> library. If you are going to replicate the examples in your application, reference the Ionicons stylesheet within in the `<head>` section of your page:
 
     <!--HTML-->
     <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">
+
+
+##### Angular
+
+Code examples in this tutorial use icons from the <a href="https://ionicons.com" target="_blank">Ionicons</a> library. If you are going to replicate the examples in your application, install the `ionicons` npm package:
+
+    npm install ionicons@4 --save
+
+##### Vue
+
+Code examples in this tutorial use icons from the <a href="https://ionicons.com" target="_blank">Ionicons</a> library. If you are going to replicate the examples in your application, install the `ionicons` npm package:
+
+    npm install ionicons@4 --save
+
+##### React
+
+Code examples in this tutorial use icons from the <a href="https://ionicons.com" target="_blank">Ionicons</a> library. If you are going to replicate the examples in your application, install the `ionicons` npm package:
+
+    npm install ionicons@4 --save
+
+---
 
 [/note]
 

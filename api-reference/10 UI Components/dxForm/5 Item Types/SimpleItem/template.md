@@ -32,18 +32,10 @@ A template name or container.
 
 ---
 
-In Angular, Vue, and React, this template can be used instead of [editorType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType') and [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions')  to configure a custom editor. It gives you the advantage of using nested configuration components. When you configure a custom editor in the template, consider the following specificities:
-
-- Use two-way binding to bind the custom editor to a [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') field.
-
-- If you use validation, define validation rules in the editor, not in the form item.
-
-- Use the same [validationGroup](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/validationGroup.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#validationGroup') as the Form to ensure the custom editor is validated simultaneously with other form editors.
-
-The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component in the template. The UI component is bound to the `BirthDate` field of  **formData** and has a validation group and two validation rules:
-
 ---
 ##### Angular
+
+#include api-form-simpleitem-template
 
     <!-- tab: app.component.html -->
     <dx-form
@@ -111,6 +103,8 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
 
 ##### Vue
 
+#include api-form-simpleitem-template
+
     <!-- tab: App.vue -->
     <template>
         <DxForm
@@ -174,6 +168,8 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
 
 ##### React
 
+#include api-form-simpleitem-template
+
     <!-- tab: App.js -->
     import React, { useState } from 'react';
 
@@ -229,6 +225,8 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-form-custom-items"
 }
+
+[note] If you customize built-in DataGrid Form, refer to the following help topic for implementation specificities: [DataGrid Form Editor Customization](/concepts/05%20UI%20Components/DataGrid/20%20Editing/43%20Customize%20Edit%20Form '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form').
 
 #####See Also#####
 - [Customize a Simple Item](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items/05%20Customize%20a%20Simple%20Item.md '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/#Customize_a_Simple_Item')

@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.refreshingText
 type: String
-default: 'Refreshing...', '' (Material)
+default: 'Refreshing...', '' (Fluent, Material)
 ---
 ---
 ##### shortDescription

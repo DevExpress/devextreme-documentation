@@ -5,7 +5,11 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies component orientation.
 
 ---
-<!-- Description goes here -->
+The following orientations are available:
+
+- *'horizontal'* (default)    
+
+- *'vertical'*

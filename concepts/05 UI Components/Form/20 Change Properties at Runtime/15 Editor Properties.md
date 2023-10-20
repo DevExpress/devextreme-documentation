@@ -1,3 +1,7 @@
+
+---
+##### jQuery
+
 To change the properties of an editor, get its instance first using the [getEditor(dataField)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/getEditor(dataField).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#getEditordataField') method. After that, call the **option(optionName, optionValue)** or **option(optionName, options)** method of this instance. This approach is more typical of jQuery. 
 
     <!--JavaScript-->
@@ -23,11 +27,9 @@ To change the properties of an editor, get its instance first using the [getEdit
 
 [note]The **getEditor(dataField)** method is available for visible form items only.
 
-With Angular, Vue, or React, bind the property that should be changed in the [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component property.
-
----
-
 ##### Angular
+
+To change the properties of an editor, bind the property that should be changed in the [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component property.
 
     <!--HTML-->
     <dx-form
@@ -63,6 +65,8 @@ With Angular, Vue, or React, bind the property that should be changed in the [ed
     })
 
 ##### Vue
+
+To change the properties of an editor, bind the property that should be changed in the [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') object to a component property.
 
     <!-- tab: App.vue -->
     <template>
@@ -113,6 +117,8 @@ With Angular, Vue, or React, bind the property that should be changed in the [ed
     </script>
 
 ##### React
+
+To change the properties of an editor, bind the property that should be changed in the [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions') object to a state property.
 
     <!-- tab: App.js -->
     import React from 'react';

@@ -1,9 +1,8 @@
 ---
 id: Font
 type: Object
-hidden: 
 inlineType: 
-module: viz/core/base_widget
+module: common/charts
 export: Font
 ---
 ---

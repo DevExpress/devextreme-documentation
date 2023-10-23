@@ -1,7 +1,7 @@
 ---
 id: BaseWidgetAnnotationConfig.border.cornerRadius
 type: Number
-default: 0, 4 (Material)
+default: 0, 4 (Fluent, Material)
 ---
 ---
 ##### shortDescription

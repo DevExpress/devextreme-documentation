@@ -1,7 +1,7 @@
 ---
 id: dxTabs.Options.stylingMode
 type: Enums.TabsStyle
-default: 'primary' (Generic, Material), 'secondary' (Fluent)
+default: 'primary', 'secondary' (Fluent)
 ---
 ---
 ##### shortDescription

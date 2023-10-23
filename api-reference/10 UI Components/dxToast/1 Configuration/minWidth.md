@@ -1,7 +1,7 @@
 ---
 id: dxToast.Options.minWidth
 type: Number | String | function()
-default: 344 (Material)
+default: 344 (Fluent, Material)
 ---
 ---
 ##### return: Number | String

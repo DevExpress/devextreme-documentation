@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tree_view:DisposingEvent
 generateTypeLink: 
+references: dxTreeView.Options.onDisposing
 ---
 ---
 ##### shortDescription

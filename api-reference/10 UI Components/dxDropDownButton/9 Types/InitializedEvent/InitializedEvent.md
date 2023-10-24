@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/drop_down_button:InitializedEvent
 generateTypeLink: 
+references: dxDropDownButton.Options.onInitialized
 ---
 ---
 ##### shortDescription

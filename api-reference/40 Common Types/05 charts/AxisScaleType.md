@@ -2,15 +2,10 @@
 id: Enums.AxisScaleType
 acceptValues: 'continuous' | 'discrete' | 'logarithmic'
 type: Union
+references: viz/chart:ArgumentAxis.type,viz/chart:ValueAxis.type,viz/polar_chart:ArgumentAxis.type,viz/polar_chart:ValueAxis.type
 ---
 ---
 ##### shortDescription
 Specifies the type of the axis.
 
 ---
-<!--
-dxChartOptions.argumentAxis.type(/api-reference/10 UI Components/dxChart/9 Types/ArgumentAxis/type.md)(common/charts.d.ts)
-dxChartOptions.valueAxis.type(/api-reference/10 UI Components/dxChart/9 Types/ValueAxis/type.md)(common/charts.d.ts)
-dxPolarChartOptions.argumentAxis.type(/api-reference/10 UI Components/dxPolarChart/9 Types/ArgumentAxis/type.md)(common/charts.d.ts)
-dxPolarChartOptions.valueAxis.type(/api-reference/10 UI Components/dxPolarChart/9 Types/ValueAxis/type.md)(common/charts.d.ts)
--->

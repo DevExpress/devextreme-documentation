@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/map:RouteAddedEvent
 generateTypeLink: 
+references: dxMap.Options.onRouteAdded
 ---
 ---
 ##### shortDescription

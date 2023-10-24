@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:FocusInEvent
 generateTypeLink: 
+references: dxColorBox.Options.onFocusIn
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/linear_gauge:DisposingEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onDisposing
 ---
 ---
 ##### shortDescription

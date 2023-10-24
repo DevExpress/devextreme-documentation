@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/menu:ItemRenderedEvent
 generateTypeLink: 
+references: dxMenu.Options.onItemRendered
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gallery:DisposingEvent
 generateTypeLink: 
+references: dxGallery.Options.onDisposing
 ---
 ---
 ##### shortDescription

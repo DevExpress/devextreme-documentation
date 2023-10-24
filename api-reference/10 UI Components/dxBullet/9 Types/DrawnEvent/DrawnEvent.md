@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/bullet:DrawnEvent
 generateTypeLink: 
+references: dxBullet.Options.onDrawn
 ---
 ---
 ##### shortDescription

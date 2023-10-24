@@ -2,20 +2,10 @@
 id: Enums.Position
 acceptValues: 'bottom' | 'left' | 'right' | 'top'
 type: Union
+references: BaseLegend.itemTextPosition,viz/chart:ArgumentAxis.position,viz/chart:CommonAxisSettingsLabel.position,dxChart.Options.scrollBar.position,viz/chart:ValueAxis.position,dxDropDownEditor.Options.validationMessagePosition,dxPopover.Options.position,dxTabPanel.Options.tabsPosition,Editor.Options.validationMessagePosition
 ---
 ---
 ##### shortDescription
 Specifies the position of the component's element.
 
 ---
-<!--
-BaseLegend.itemTextPosition(/api-reference/10 UI Components/BaseLegend/itemTextPosition.md)(common.d.ts)
-dxChartOptions.argumentAxis.position(/api-reference/10 UI Components/dxChart/9 Types/ArgumentAxis/position.md)(common.d.ts)
-dxChartOptions.commonAxisSettings.label.position(/api-reference/10 UI Components/dxChart/9 Types/CommonAxisSettingsLabel/position.md)
-dxChartOptions.scrollBar.position(/api-reference/10 UI Components/dxChart/1 Configuration/scrollBar/position.md)(common.d.ts)
-dxChartOptions.valueAxis.position(/api-reference/10 UI Components/dxChart/9 Types/ValueAxis/position.md)(common.d.ts)
-dxDropDownEditorOptions.validationMessagePosition(/api-reference/10 UI Components/dxDropDownEditor/1 Configuration/validationMessagePosition.md)
-dxPopoverOptions.position(/api-reference/10 UI Components/dxPopover/1 Configuration/position.md)
-dxTabPanelOptions.tabsPosition(/api-reference/10 UI Components/dxTabPanel/1 Configuration/tabsPosition.md)(common.d.ts)
-EditorOptions.validationMessagePosition(/api-reference/10 UI Components/Editor/1 Configuration/validationMessagePosition.md)(common.d.ts)
--->

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/autocomplete:ContentReadyEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onContentReady
 ---
 ---
 ##### shortDescription

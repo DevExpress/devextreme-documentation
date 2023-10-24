@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:CopyEvent
 generateTypeLink: 
+references: dxColorBox.Options.onCopy
 ---
 ---
 ##### shortDescription

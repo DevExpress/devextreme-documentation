@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/chart:ExportingEvent
 generateTypeLink: 
+references: dxChart.Options.onExporting
 ---
 ---
 ##### shortDescription

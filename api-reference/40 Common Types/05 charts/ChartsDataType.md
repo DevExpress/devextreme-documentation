@@ -2,18 +2,10 @@
 id: Enums.ChartsDataType
 acceptValues: 'datetime' | 'numeric' | 'string'
 type: Union
+references: viz/chart:ArgumentAxis.argumentType,viz/chart:ValueAxis.valueType,dxPieChartSeriesTypes.CommonPieChartSeries.argumentType,viz/polar_chart:ArgumentAxis.argumentType,viz/polar_chart:ValueAxis.valueType,dxRangeSelector.Options.chart.valueAxis.valueType,dxRangeSelector.Options.scale.valueType
 ---
 ---
 ##### shortDescription
 Specifies the type of axis values.
 
 ---
-<!--
-dxChartOptions.argumentAxis.argumentType(/api-reference/10 UI Components/dxChart/9 Types/ArgumentAxis/argumentType.md)(common/charts.d.ts)
-dxChartOptions.valueAxis.valueType(/api-reference/10 UI Components/dxChart/9 Types/ValueAxis/valueType.md)(common/charts.d.ts)
-dxPieChartSeriesTypes.CommonPieChartSeries.argumentType(/api-reference/10 UI Components/dxPieChart/5 Series Types/CommonPieChartSeries/argumentType.md)(common/charts.d.ts)
-dxPolarChartOptions.argumentAxis.argumentType(/api-reference/10 UI Components/dxPolarChart/9 Types/ArgumentAxis/argumentType.md)(common/charts.d.ts)
-dxPolarChartOptions.valueAxis.valueType(/api-reference/10 UI Components/dxPolarChart/9 Types/ValueAxis/valueType.md)(common/charts.d.ts)
-dxRangeSelectorOptions.chart.valueAxis.valueType(/api-reference/10 UI Components/dxRangeSelector/1 Configuration/chart/valueAxis/valueType.md)(common/charts.d.ts)
-dxRangeSelectorOptions.scale.valueType(/api-reference/10 UI Components/dxRangeSelector/1 Configuration/scale/valueType.md)(common/charts.d.ts)
--->

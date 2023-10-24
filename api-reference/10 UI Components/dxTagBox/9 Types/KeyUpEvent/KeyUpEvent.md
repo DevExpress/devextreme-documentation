@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:KeyUpEvent
 generateTypeLink: 
+references: dxTagBox.Options.onKeyUp
 ---
 ---
 ##### shortDescription

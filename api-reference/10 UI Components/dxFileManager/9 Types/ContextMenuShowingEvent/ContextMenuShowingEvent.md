@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/file_manager:ContextMenuShowingEvent
 generateTypeLink: 
+references: dxFileManager.Options.onContextMenuShowing
 ---
 ---
 ##### shortDescription

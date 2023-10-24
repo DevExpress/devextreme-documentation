@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sparkline:DrawnEvent
 generateTypeLink: 
+references: dxSparkline.Options.onDrawn
 ---
 ---
 ##### shortDescription

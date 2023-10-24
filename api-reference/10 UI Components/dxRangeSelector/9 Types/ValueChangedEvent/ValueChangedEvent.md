@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/range_selector:ValueChangedEvent
 generateTypeLink: 
+references: dxRangeSelector.Options.onValueChanged
 ---
 ---
 ##### shortDescription

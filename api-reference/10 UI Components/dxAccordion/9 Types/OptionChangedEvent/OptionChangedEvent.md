@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/accordion:OptionChangedEvent
 generateTypeLink: 
+references: dxAccordion.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

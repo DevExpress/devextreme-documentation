@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tab_panel:ContentReadyEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onContentReady
 ---
 ---
 ##### shortDescription

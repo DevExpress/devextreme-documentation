@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/bullet:TooltipHiddenEvent
 generateTypeLink: 
+references: dxBullet.Options.onTooltipHidden
 ---
 ---
 ##### shortDescription

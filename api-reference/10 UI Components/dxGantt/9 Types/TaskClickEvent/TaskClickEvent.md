@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/gantt:TaskClickEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskClick
 ---
 ---
 ##### shortDescription

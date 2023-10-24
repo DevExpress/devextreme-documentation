@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/tab_panel:InitializedEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onInitialized
 ---
 ---
 ##### shortDescription

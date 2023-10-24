@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_base_gauge_TooltipInfo
 uid: viz/circular_gauge:TooltipHiddenEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onTooltipHidden
 ---
 ---
 ##### shortDescription

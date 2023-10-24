@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:DisposingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onDisposing
 ---
 ---
 ##### shortDescription

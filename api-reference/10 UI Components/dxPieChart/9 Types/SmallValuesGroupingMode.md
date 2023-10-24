@@ -2,12 +2,10 @@
 id: Enums.SmallValuesGroupingMode
 acceptValues: 'none' | 'smallValueThreshold' | 'topN'
 type: Union
+references: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.mode
 ---
 ---
 ##### shortDescription
 Specifies the segment grouping mode.
 
 ---
-<!--
-dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.mode(/api-reference/10 UI Components/dxPieChart/5 Series Types/CommonPieChartSeries/smallValuesGrouping/mode.md)(viz/pie_chart.d.ts)
--->

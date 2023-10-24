@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/filter_builder:EditorPreparedEvent
 generateTypeLink: 
+references: dxFilterBuilder.Options.onEditorPrepared
 ---
 ---
 ##### shortDescription

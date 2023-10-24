@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tag_box:ContentReadyEvent
 generateTypeLink: 
+references: dxTagBox.Options.onContentReady
 ---
 ---
 ##### shortDescription

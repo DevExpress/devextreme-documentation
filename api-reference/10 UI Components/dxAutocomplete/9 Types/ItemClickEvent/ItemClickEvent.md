@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/autocomplete:ItemClickEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onItemClick
 ---
 ---
 ##### shortDescription

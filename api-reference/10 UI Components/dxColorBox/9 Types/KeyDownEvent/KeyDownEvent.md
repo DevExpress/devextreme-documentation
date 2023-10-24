@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:KeyDownEvent
 generateTypeLink: 
+references: dxColorBox.Options.onKeyDown
 ---
 ---
 ##### shortDescription

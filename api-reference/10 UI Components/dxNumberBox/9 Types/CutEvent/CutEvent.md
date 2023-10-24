@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:CutEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onCut
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:DisposingEvent
 generateTypeLink: 
+references: dxGantt.Options.onDisposing
 ---
 ---
 ##### shortDescription

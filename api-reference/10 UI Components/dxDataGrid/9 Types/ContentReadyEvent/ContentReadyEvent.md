@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:ContentReadyEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onContentReady
 ---
 ---
 ##### shortDescription

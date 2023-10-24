@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/draggable:InitializedEvent
 generateTypeLink: 
+references: dxDraggable.Options.onInitialized
 ---
 ---
 ##### shortDescription

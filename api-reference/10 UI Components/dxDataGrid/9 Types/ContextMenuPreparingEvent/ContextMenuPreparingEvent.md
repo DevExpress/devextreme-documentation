@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:ContextMenuPreparingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onContextMenuPreparing
 ---
 ---
 ##### shortDescription

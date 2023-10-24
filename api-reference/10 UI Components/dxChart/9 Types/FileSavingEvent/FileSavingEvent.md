@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/chart:FileSavingEvent
 generateTypeLink: 
+references: dxChart.Options.onFileSaving
 ---
 ---
 ##### shortDescription

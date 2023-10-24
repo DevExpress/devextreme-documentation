@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/range_selector:FileSavingEvent
 generateTypeLink: 
+references: dxRangeSelector.Options.onFileSaving
 ---
 ---
 ##### shortDescription

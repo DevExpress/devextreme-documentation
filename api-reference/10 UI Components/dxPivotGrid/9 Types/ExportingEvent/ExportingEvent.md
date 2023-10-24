@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/pivot_grid:ExportingEvent
 generateTypeLink: 
+references: dxPivotGrid.Options.onExporting
 ---
 ---
 ##### shortDescription

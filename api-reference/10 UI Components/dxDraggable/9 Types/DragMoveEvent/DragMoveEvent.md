@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/draggable:DragMoveEvent
 generateTypeLink: 
+references: dxDraggable.Options.onDragMove
 ---
 ---
 ##### shortDescription

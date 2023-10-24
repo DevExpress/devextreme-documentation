@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/progress_bar:CompleteEvent
 generateTypeLink: 
+references: dxProgressBar.Options.onComplete
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:CutEvent
 generateTypeLink: 
+references: dxDateBox.Options.onCut
 ---
 ---
 ##### shortDescription

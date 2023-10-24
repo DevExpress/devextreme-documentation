@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,PointInteractionInfo
 uid: viz/chart:PointSelectionChangedEvent
 generateTypeLink: 
+references: dxChart.Options.onPointSelectionChanged
 ---
 ---
 ##### shortDescription

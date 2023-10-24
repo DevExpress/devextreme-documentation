@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/multi_view:DisposingEvent
 generateTypeLink: 
+references: dxMultiView.Options.onDisposing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/context_menu:ShownEvent
 generateTypeLink: 
+references: dxContextMenu.Options.onShown
 ---
 ---
 ##### shortDescription

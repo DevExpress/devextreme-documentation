@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/color_box:InitializedEvent
 generateTypeLink: 
+references: dxColorBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

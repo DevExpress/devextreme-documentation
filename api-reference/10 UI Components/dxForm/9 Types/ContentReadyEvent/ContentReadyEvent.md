@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/form:ContentReadyEvent
 generateTypeLink: 
+references: dxForm.Options.onContentReady
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/bullet:IncidentOccurredEvent
 generateTypeLink: 
+references: dxBullet.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

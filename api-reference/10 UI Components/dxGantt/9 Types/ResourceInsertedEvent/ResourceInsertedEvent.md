@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:ResourceInsertedEvent
 generateTypeLink: 
+references: dxGantt.Options.onResourceInserted
 ---
 ---
 ##### shortDescription

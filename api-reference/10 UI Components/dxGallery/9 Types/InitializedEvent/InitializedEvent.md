@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/gallery:InitializedEvent
 generateTypeLink: 
+references: dxGallery.Options.onInitialized
 ---
 ---
 ##### shortDescription

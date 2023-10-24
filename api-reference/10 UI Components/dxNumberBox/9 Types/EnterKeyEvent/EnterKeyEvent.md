@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:EnterKeyEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onEnterKey
 ---
 ---
 ##### shortDescription

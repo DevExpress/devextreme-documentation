@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sparkline:TooltipHiddenEvent
 generateTypeLink: 
+references: dxSparkline.Options.onTooltipHidden
 ---
 ---
 ##### shortDescription

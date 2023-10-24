@@ -1,4 +1,6 @@
-You can define custom content markup in a separate component. 
+You can define custom content markup in a separate component. This component is rendered in the virtual DOM, and any changes trigger a rerender of the component.
+
+For example, you need to display a dynamic form in your application, and each time a different form configuration is required. You can implement a component for your form and pass it to the *'component'* property.
 
 For Class components, we recommend using <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent" target="_blank">`React.PureComponent`</a> because `React.Component` can be re-rendered unnecessarily. Alternatively, you can implement the <a href="https://reactjs.org/docs/react-component.html#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
 

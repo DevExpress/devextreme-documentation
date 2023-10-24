@@ -2,6 +2,7 @@
 id: Enums.PieChartAnnotationLocation
 acceptValues: 'center' | 'edge'
 type: Union
+references: dxPieChartCommonAnnotationConfig.location
 ---
 ---
 ##### shortDescription

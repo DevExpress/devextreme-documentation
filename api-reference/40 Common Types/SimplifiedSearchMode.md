@@ -2,6 +2,7 @@
 id: Enums.SimplifiedSearchMode
 acceptValues: 'contains' | 'startswith'
 type: Union
+references: dxDropDownList.Options.searchMode
 ---
 ---
 ##### shortDescription

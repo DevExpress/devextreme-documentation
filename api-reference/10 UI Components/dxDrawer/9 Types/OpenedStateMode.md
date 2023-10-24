@@ -2,6 +2,7 @@
 id: Enums.OpenedStateMode
 acceptValues: 'overlap' | 'shrink' | 'push'
 type: Union
+references: dxDrawer.Options.openedStateMode
 ---
 ---
 ##### shortDescription

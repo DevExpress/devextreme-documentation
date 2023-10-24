@@ -2,6 +2,7 @@
 id: Enums.SingleMultipleAllOrNone
 acceptValues: 'single' | 'multiple' | 'all' | 'none'
 type: Union
+references: dxList.Options.selectionMode
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.SelectionColumnDisplayMode
 acceptValues: 'always' | 'none' | 'onClick' | 'onLongTap'
 type: Union
+references: dxDataGrid.Options.selection.showCheckBoxesMode
 ---
 ---
 ##### shortDescription

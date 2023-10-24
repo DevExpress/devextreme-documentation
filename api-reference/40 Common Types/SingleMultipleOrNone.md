@@ -2,6 +2,7 @@
 id: Enums.SingleMultipleOrNone
 acceptValues: 'single' | 'multiple' | 'none'
 type: Union
+references: dxButtonGroup.Options.selectionMode,dxFunnel.Options.selectionMode,dxGanttSorting.mode,dxTreeMap.Options.selectionMode,dxVectorMap.Options.layers.selectionMode,common/grids:SelectionBase.mode,common/grids:Sorting.mode
 ---
 ---
 ##### shortDescription

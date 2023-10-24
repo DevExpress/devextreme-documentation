@@ -2,6 +2,7 @@
 id: Enums.TextBoxPredefinedButton
 acceptValues: 'clear'
 type: Union
+references: dxTextEditor.Options.buttons
 ---
 ---
 ##### shortDescription

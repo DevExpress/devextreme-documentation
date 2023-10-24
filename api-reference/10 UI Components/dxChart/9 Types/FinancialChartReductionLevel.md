@@ -2,6 +2,7 @@
 id: Enums.FinancialChartReductionLevel
 acceptValues: 'close' | 'high' | 'low' | 'open'
 type: Union
+references: dxChartSeriesTypes.CommonSeries.reduction.level
 ---
 ---
 ##### shortDescription

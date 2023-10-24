@@ -2,6 +2,7 @@
 id: Enums.MapProvider
 acceptValues: 'bing' | 'google' | 'googleStatic'
 type: Union
+references: dxMap.Options.provider
 ---
 ---
 ##### shortDescription

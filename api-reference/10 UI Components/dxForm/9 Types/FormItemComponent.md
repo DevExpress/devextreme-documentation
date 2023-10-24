@@ -2,6 +2,7 @@
 id: Enums.FormItemComponent
 acceptValues: 'dxAutocomplete' | 'dxCalendar' | 'dxCheckBox' | 'dxColorBox' | 'dxDateBox' | 'dxDateRangeBox' | 'dxDropDownBox' | 'dxHtmlEditor' | 'dxLookup' | 'dxNumberBox' | 'dxRadioGroup' | 'dxRangeSlider' | 'dxSelectBox' | 'dxSlider' | 'dxSwitch' | 'dxTagBox' | 'dxTextArea' | 'dxTextBox'
 type: Union
+references: dxFormSimpleItem.editorType
 ---
 ---
 ##### shortDescription

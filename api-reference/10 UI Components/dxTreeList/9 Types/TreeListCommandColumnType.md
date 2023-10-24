@@ -2,6 +2,7 @@
 id: Enums.TreeListCommandColumnType
 acceptValues: 'adaptive' | 'buttons' | 'drag'
 type: Union
+references: dxTreeListColumn.type
 ---
 ---
 ##### shortDescription

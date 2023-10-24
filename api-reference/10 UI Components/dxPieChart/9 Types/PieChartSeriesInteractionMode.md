@@ -2,6 +2,7 @@
 id: Enums.PieChartSeriesInteractionMode
 acceptValues: 'none' | 'onlyPoint'
 type: Union
+references: dxPieChartSeriesTypes.CommonPieChartSeries.hoverMode,dxPieChartSeriesTypes.CommonPieChartSeries.selectionMode
 ---
 ---
 ##### shortDescription

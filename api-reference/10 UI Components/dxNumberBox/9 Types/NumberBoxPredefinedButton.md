@@ -2,6 +2,7 @@
 id: Enums.NumberBoxPredefinedButton
 acceptValues: 'clear' | 'spins'
 type: Union
+references: dxNumberBox.Options.buttons
 ---
 ---
 ##### shortDescription

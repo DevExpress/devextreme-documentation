@@ -2,6 +2,7 @@
 id: Enums.ResizeHandle
 acceptValues: 'bottom' | 'left' | 'right' | 'top' | 'all'
 type: Union
+references: dxResizable.Options.handles
 ---
 ---
 ##### shortDescription

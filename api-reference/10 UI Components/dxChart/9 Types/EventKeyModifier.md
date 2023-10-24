@@ -2,6 +2,7 @@
 id: Enums.EventKeyModifier
 acceptValues: 'alt' | 'ctrl' | 'meta' | 'shift'
 type: Union
+references: dxChart.Options.zoomAndPan.panKey
 ---
 ---
 ##### shortDescription

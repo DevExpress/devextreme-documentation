@@ -2,6 +2,7 @@
 id: Enums.BackgroundImageLocation
 acceptValues: 'center' | 'centerBottom' | 'centerTop' | 'full' | 'leftBottom' | 'leftCenter' | 'leftTop' | 'rightBottom' | 'rightCenter' | 'rightTop'
 type: Union
+references: dxRangeSelector.Options.background.image.location
 ---
 ---
 ##### shortDescription

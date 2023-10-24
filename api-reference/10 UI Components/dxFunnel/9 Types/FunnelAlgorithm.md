@@ -2,6 +2,7 @@
 id: Enums.FunnelAlgorithm
 acceptValues: 'dynamicHeight' | 'dynamicSlope'
 type: Union
+references: dxFunnel.Options.algorithm
 ---
 ---
 ##### shortDescription

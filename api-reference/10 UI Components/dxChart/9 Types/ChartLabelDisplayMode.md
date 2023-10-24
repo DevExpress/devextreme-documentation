@@ -2,6 +2,7 @@
 id: Enums.ChartLabelDisplayMode
 acceptValues: 'rotate' | 'stagger' | 'standard'
 type: Union
+references: viz/chart:CommonAxisSettingsLabel.displayMode
 ---
 ---
 ##### shortDescription

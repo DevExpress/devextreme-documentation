@@ -2,6 +2,7 @@
 id: Enums.PivotGridGroupInterval
 acceptValues: 'day' | 'dayOfWeek' | 'month' | 'quarter' | 'year'
 type: Union
+references: PivotGridDataSource.Options.fields.groupInterval
 ---
 ---
 ##### shortDescription

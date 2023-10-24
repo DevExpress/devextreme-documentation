@@ -2,6 +2,7 @@
 id: Enums.StartEditAction
 acceptValues: 'click' | 'dblClick'
 type: Union
+references: common/grids:EditingBase.startEditAction
 ---
 ---
 ##### shortDescription

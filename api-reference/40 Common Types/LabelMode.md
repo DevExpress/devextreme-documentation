@@ -2,6 +2,7 @@
 id: Enums.LabelMode
 acceptValues: 'static' | 'floating' | 'hidden' | 'outside'
 type: Union
+references: dxTextEditor.Options.labelMode
 ---
 ---
 ##### shortDescription

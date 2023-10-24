@@ -2,6 +2,7 @@
 id: Enums.DragDirection
 acceptValues: 'both' | 'horizontal' | 'vertical'
 type: Union
+references: DraggableBase.Options.dragDirection,common/grids:RowDragging.dragDirection
 ---
 ---
 ##### shortDescription

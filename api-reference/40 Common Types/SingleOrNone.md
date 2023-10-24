@@ -2,6 +2,7 @@
 id: Enums.SingleOrNone
 acceptValues: 'single' | 'none'
 type: Union
+references: dxMenuBase.Options.selectionMode
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.DiagramDataLayoutType
 acceptValues: 'auto' | 'off' | 'tree' | 'layered'
 type: Union
+references: dxDiagram.Options.nodes.autoLayout,dxDiagram.Options.nodes.autoLayout.type
 ---
 ---
 ##### shortDescription

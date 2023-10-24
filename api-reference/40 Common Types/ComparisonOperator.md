@@ -2,6 +2,7 @@
 id: Enums.ComparisonOperator
 acceptValues: '!=' | '!==' | '<' | '<=' | '==' | '===' | '>' | '>='
 type: Union
+references: CompareRule.comparisonType
 ---
 ---
 ##### shortDescription

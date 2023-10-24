@@ -8,6 +8,3 @@ type: Union
 Specifies the page orientation.
 
 ---
-<!--
-dxDiagramOptions.pageOrientation(/api-reference/10 UI Components/dxDiagram/1 Configuration/pageOrientation.md)(common.d.ts)
--->

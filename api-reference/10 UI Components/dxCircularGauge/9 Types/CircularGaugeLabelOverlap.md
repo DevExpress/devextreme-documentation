@@ -8,6 +8,3 @@ type: Union
 Specifies which label to hide in case of overlapping.
 
 ---
-<!--
-dxCircularGaugeOptions.scale.label.hideFirstOrLast(/api-reference/10 UI Components/dxCircularGauge/9 Types/ScaleLabel/hideFirstOrLast.md)(viz/circular_gauge.d.ts)
--->

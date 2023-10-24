@@ -8,6 +8,3 @@ type: Union
 Specifies the type of the pie chart series.
 
 ---
-<!--
-dxPieChartOptions.type(/api-reference/10 UI Components/dxPieChart/1 Configuration/type.md)(viz/pie_chart.d.ts)
--->

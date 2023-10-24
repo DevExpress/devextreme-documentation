@@ -8,6 +8,3 @@ type: Union
 Specifies the text box type.
 
 ---
-<!--
-dxTextBoxOptions.mode(/api-reference/10 UI Components/dxTextBox/1 Configuration/mode.md)(ui/text_box.d.ts)
--->

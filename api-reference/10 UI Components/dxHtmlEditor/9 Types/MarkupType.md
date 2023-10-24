@@ -8,6 +8,3 @@ type: Union
 Specifies in which markup language the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') is stored.
 
 ---
-<!--
-dxHtmlEditorOptions.valueType(/api-reference/10 UI Components/dxHtmlEditor/1 Configuration/valueType.md)(ui/html_editor.d.ts)
--->

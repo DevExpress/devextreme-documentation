@@ -8,6 +8,3 @@ type: Union
 Specifies available filter operations.
 
 ---
-<!--
-GridBaseColumn.filterOperations(/api-reference/_hidden/GridBaseColumn/filterOperations.md)
--->

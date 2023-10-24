@@ -8,6 +8,3 @@ type: Union
 Specifies the UI component that presents a toolbar item.
 
 ---
-<!--
-dxToolbarItem.widget(/api-reference/_hidden/dxToolbarItem/widget.md)(common.d.ts)
--->

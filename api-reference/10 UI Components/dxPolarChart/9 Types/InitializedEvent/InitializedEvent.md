@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/polar_chart:InitializedEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onInitialized
 ---
 ---
 ##### shortDescription

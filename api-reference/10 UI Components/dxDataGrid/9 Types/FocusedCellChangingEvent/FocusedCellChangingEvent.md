@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/data_grid:FocusedCellChangingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onFocusedCellChanging
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowUpdatingInfo
 uid: ui/tree_list:RowUpdatingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowUpdating
 ---
 ---
 ##### shortDescription

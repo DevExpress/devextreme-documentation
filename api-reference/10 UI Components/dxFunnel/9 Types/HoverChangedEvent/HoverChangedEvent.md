@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,FunnelItemInfo
 uid: viz/funnel:HoverChangedEvent
 generateTypeLink: 
+references: dxFunnel.Options.onHoverChanged
 ---
 ---
 ##### shortDescription

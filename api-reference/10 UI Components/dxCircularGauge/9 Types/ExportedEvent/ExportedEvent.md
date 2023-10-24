@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/circular_gauge:ExportedEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onExported
 ---
 ---
 ##### shortDescription

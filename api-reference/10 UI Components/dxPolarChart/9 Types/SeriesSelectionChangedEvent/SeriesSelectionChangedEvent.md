@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_polar_chart_SeriesInteractionInfo
 uid: viz/polar_chart:SeriesSelectionChangedEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onSeriesSelectionChanged
 ---
 ---
 ##### shortDescription

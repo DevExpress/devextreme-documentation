@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,InteractionInfo
 uid: viz/tree_map:SelectionChangedEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:UploadErrorEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onUploadError
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scheduler:AppointmentAddedEvent
 generateTypeLink: 
+references: dxScheduler.Options.onAppointmentAdded
 ---
 ---
 ##### shortDescription

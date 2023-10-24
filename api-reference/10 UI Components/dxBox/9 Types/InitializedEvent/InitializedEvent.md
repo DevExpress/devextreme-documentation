@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/box:InitializedEvent
 generateTypeLink: 
+references: dxBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

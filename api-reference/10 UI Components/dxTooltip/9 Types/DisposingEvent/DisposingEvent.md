@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tooltip:DisposingEvent
 generateTypeLink: 
+references: dxTooltip.Options.onDisposing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/calendar:ValueChangedEvent
 generateTypeLink: 
+references: dxCalendar.Options.onValueChanged
 ---
 ---
 ##### shortDescription

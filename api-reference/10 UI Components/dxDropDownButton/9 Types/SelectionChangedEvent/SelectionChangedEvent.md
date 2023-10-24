@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/drop_down_button:SelectionChangedEvent
 generateTypeLink: 
+references: dxDropDownButton.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:KeyDownEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onKeyDown
 ---
 ---
 ##### shortDescription

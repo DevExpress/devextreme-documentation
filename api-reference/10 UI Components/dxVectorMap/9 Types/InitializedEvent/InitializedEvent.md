@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/vector_map:InitializedEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onInitialized
 ---
 ---
 ##### shortDescription

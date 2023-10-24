@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/tree_map:DrillEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onDrill
 ---
 ---
 ##### shortDescription

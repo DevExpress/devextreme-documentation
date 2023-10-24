@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/funnel:DrawnEvent
 generateTypeLink: 
+references: dxFunnel.Options.onDrawn
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/toast:ShownEvent
 generateTypeLink: 
+references: dxToast.Options.onShown
 ---
 ---
 ##### shortDescription

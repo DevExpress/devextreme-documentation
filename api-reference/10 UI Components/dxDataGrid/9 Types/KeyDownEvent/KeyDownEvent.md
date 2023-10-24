@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,KeyDownInfo
 uid: ui/data_grid:KeyDownEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onKeyDown
 ---
 ---
 ##### shortDescription

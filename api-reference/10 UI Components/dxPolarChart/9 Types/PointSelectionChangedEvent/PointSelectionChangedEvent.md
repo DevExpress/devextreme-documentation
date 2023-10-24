@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,PointInteractionInfo
 uid: viz/polar_chart:PointSelectionChangedEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onPointSelectionChanged
 ---
 ---
 ##### shortDescription

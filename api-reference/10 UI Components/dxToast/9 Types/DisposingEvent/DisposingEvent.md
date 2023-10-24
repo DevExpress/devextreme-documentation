@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/toast:DisposingEvent
 generateTypeLink: 
+references: dxToast.Options.onDisposing
 ---
 ---
 ##### shortDescription

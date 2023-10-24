@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/vector_map:SelectionChangedEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

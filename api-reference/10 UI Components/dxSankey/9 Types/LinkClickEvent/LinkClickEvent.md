@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/sankey:LinkClickEvent
 generateTypeLink: 
+references: dxSankey.Options.onLinkClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ActionEventInfo
 uid: ui/file_manager:DirectoryCreatingEvent
 generateTypeLink: 
+references: dxFileManager.Options.onDirectoryCreating
 ---
 ---
 ##### shortDescription

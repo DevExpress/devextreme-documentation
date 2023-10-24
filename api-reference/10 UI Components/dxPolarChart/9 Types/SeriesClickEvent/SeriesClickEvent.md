@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/polar_chart:SeriesClickEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onSeriesClick
 ---
 ---
 ##### shortDescription

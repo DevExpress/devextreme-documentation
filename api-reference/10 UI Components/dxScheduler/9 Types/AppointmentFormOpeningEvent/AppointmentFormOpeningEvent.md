@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/scheduler:AppointmentFormOpeningEvent
 generateTypeLink: 
+references: dxScheduler.Options.onAppointmentFormOpening
 ---
 ---
 ##### shortDescription

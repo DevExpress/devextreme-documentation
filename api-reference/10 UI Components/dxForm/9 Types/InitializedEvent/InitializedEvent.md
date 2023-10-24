@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/form:InitializedEvent
 generateTypeLink: 
+references: dxForm.Options.onInitialized
 ---
 ---
 ##### shortDescription

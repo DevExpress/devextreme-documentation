@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/responsive_box:DisposingEvent
 generateTypeLink: 
+references: dxResponsiveBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

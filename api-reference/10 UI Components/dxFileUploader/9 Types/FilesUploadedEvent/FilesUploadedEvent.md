@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_uploader:FilesUploadedEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onFilesUploaded
 ---
 ---
 ##### shortDescription

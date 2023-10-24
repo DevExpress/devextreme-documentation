@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowInsertingInfo
 uid: ui/data_grid:RowInsertingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onRowInserting
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ export: ValueChangedEvent
 type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 generateTypeLink: 
+references: dxRangeSlider.Options.onValueChanged
 ---
 ---
 ##### shortDescription

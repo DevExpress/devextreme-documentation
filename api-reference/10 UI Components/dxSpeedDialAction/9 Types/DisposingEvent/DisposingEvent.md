@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/speed_dial_action:DisposingEvent
 generateTypeLink: 
+references: dxSpeedDialAction.Options.onDisposing
 ---
 ---
 ##### shortDescription

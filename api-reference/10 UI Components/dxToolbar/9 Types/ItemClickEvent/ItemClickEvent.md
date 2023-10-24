@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/toolbar:ItemClickEvent
 generateTypeLink: 
+references: dxToolbar.Options.onItemClick
 ---
 ---
 ##### shortDescription

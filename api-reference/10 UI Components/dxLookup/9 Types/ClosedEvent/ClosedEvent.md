@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/lookup:ClosedEvent
 generateTypeLink: 
+references: dxLookup.Options.onClosed
 ---
 ---
 ##### shortDescription

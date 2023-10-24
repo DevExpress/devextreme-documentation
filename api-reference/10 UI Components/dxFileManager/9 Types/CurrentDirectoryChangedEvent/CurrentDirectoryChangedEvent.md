@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:CurrentDirectoryChangedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onCurrentDirectoryChanged
 ---
 ---
 ##### shortDescription

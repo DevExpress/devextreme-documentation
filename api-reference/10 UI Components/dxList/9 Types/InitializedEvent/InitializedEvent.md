@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/list:InitializedEvent
 generateTypeLink: 
+references: dxList.Options.onInitialized
 ---
 ---
 ##### shortDescription

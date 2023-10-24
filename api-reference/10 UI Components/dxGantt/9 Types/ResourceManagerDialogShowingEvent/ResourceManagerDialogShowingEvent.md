@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:ResourceManagerDialogShowingEvent
 generateTypeLink: 
+references: dxGantt.Options.onResourceManagerDialogShowing
 ---
 ---
 ##### shortDescription

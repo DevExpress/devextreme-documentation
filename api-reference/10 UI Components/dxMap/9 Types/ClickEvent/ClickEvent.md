@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/map:ClickEvent
 generateTypeLink: 
+references: dxMap.Options.onClick
 ---
 ---
 ##### shortDescription

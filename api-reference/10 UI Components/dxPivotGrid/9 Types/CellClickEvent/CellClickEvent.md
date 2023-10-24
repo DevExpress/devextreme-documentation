@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/pivot_grid:CellClickEvent
 generateTypeLink: 
+references: dxPivotGrid.Options.onCellClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/slider:ContentReadyEvent
 generateTypeLink: 
+references: dxSlider.Options.onContentReady
 ---
 ---
 ##### shortDescription

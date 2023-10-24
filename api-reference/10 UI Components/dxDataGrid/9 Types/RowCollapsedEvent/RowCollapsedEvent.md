@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowKeyInfo
 uid: ui/data_grid:RowCollapsedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onRowCollapsed
 ---
 ---
 ##### shortDescription

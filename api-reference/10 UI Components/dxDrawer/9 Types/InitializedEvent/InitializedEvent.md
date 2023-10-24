@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/drawer:InitializedEvent
 generateTypeLink: 
+references: dxDrawer.Options.onInitialized
 ---
 ---
 ##### shortDescription

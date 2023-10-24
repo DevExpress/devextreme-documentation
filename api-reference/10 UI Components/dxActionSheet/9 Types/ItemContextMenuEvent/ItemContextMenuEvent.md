@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/action_sheet:ItemContextMenuEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onItemContextMenu
 ---
 ---
 ##### shortDescription

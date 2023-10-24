@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/pivot_grid:ContextMenuPreparingEvent
 generateTypeLink: 
+references: dxPivotGrid.Options.onContextMenuPreparing
 ---
 ---
 ##### shortDescription

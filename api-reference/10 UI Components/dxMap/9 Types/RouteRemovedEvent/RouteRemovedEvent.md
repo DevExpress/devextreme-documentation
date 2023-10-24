@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/map:RouteRemovedEvent
 generateTypeLink: 
+references: dxMap.Options.onRouteRemoved
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:CopyEvent
 generateTypeLink: 
+references: dxDateBox.Options.onCopy
 ---
 ---
 ##### shortDescription

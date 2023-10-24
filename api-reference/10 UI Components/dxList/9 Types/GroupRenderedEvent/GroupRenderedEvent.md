@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/list:GroupRenderedEvent
 generateTypeLink: 
+references: dxList.Options.onGroupRendered
 ---
 ---
 ##### shortDescription

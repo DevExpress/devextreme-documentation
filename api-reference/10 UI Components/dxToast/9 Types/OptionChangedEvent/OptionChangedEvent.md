@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/toast:OptionChangedEvent
 generateTypeLink: 
+references: dxToast.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,DataChangeInfo
 uid: ui/tree_list:SavedEvent
 generateTypeLink: 
+references: dxTreeList.Options.onSaved
 ---
 ---
 ##### shortDescription

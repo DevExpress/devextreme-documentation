@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/tab_panel:ItemContextMenuEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onItemContextMenu
 ---
 ---
 ##### shortDescription

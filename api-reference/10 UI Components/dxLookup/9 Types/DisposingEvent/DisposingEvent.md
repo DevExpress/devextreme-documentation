@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/lookup:DisposingEvent
 generateTypeLink: 
+references: dxLookup.Options.onDisposing
 ---
 ---
 ##### shortDescription

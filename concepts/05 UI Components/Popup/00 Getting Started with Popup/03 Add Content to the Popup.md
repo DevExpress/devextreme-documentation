@@ -1,4 +1,4 @@
-You can define static content in the Popup's markup or use the [contentTemplate](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate') when the content is dynamic. In the code below, the content is static but we use **contentTemplate** as dynamic content will be added at a later stage.
+You can define content in the Popup's markup or use the [contentTemplate](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate'). We recommend to use the second approach, since it helps to reduce the page startup time. Refer to the following help topic to learn more: [deferRendering](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#deferRendering).
 
 ---
 ##### jQuery

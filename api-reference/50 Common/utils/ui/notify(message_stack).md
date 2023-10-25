@@ -75,7 +75,7 @@ The `position` field can be one of the following:
     </tr>
 </table>
 
-[note] You can specify starting [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position) for a non-stackable [notify message](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) in the `options` configuration object.
+[note] You can specify the starting [position](/Documentation/ApiReference/UI_Components/dxToast/Configuration/#position) for a non-stackable [notify message](/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime) in the `options` configuration object.
 
 You can also specify the `direction` field in the **stack** object. It is a string that can be one of the following:
 

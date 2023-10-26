@@ -1,4 +1,4 @@
-You can define content in the Popup's markup or use the [contentTemplate](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate'). We recommend to use the second approach, since it helps to reduce the page startup time. Refer to the following help topic to learn more: [deferRendering](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#deferRendering).
+You can define content in the Popup's markup or use the [contentTemplate](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate'). We recommend that you use the second approach since it can reduce page startup time. Refer to the following help topic for more information: [deferRendering](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#deferRendering).
 
 ---
 ##### jQuery

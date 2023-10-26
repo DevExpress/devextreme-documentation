@@ -3,7 +3,7 @@ id: Widget.repaint()
 ---
 ---
 ##### shortDescription
-Renders the component anew without reloading data. Use the method to update the component's markup and appearance on the fly.
+Renders the component again without reloading data. Use the method to update the component's markup and appearance dynamically.
 
 ---
 The `repaint()` method re-initializes the component with new settings, resetting its state and history.

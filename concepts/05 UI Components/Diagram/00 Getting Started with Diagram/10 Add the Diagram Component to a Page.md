@@ -58,3 +58,5 @@ Initialize the Diagram UI component in a DOM element.
         <div id="diagram"></div>
 
 ![Diagram control](/images/diagram/overview.png)
+
+[tags] jquery

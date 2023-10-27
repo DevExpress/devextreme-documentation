@@ -151,4 +151,4 @@ If your data sources' field names differ from the standard field names mentioned
         // ...
     ];
 
-[tags] data binding
+[tags] jquery

@@ -12,8 +12,10 @@ The following styling modes are available:
 
 - *'primary'*    
     The width of the underline is fixed.
-    ![Tabs primary styling mode](/images/UiWidgets/Tabs/primarytabs.png)
+    <br />
+    <img src="/images/UiWidgets/Tabs/primarytabs.png" alt="Tabs primary styling mode" style="width: 600px;" />
 
 - *'secondary'*    
     The width of the underline depends on tab content.
-    ![Tabs secondary styling mode](/images/UiWidgets/Tabs/secondarytabs.png)
+    <br />
+    <img src="/images/UiWidgets/Tabs/secondarytabs.png" alt="Tabs secondary styling mode" style="width: 600px;" />

@@ -6,4 +6,4 @@ The Gantt UI component displays the task flow and dependencies between tasks.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
 
-[tags]dxgantt
+[tags] jquery

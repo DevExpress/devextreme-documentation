@@ -4,4 +4,4 @@ The Diagram UI component provides a visual interface to help you design new and 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
 }
 
-[tags]dxdiagram
+[tags] jquery

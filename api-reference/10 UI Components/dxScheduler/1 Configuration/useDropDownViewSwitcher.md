@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.useDropDownViewSwitcher
 type: Boolean
-default: false, true (Android, iOS, Material)
+default: false, true (Android, iOS, Fluent, Material)
 ---
 ---
 ##### shortDescription

@@ -37,9 +37,6 @@ The cell's displayed value. Differs from the **value** field only when the colum
 ##### field(e.key): any
 The row's key. If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.row): dxDataGridRowObject
 The row [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/').
 

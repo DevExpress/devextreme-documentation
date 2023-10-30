@@ -25,7 +25,4 @@ The current item's data.
 ##### field(e.itemIndex): Number
 The current item's index.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---

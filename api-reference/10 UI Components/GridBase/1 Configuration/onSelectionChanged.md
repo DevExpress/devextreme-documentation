@@ -22,9 +22,6 @@ The keys of the rows that have been selected.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.selectedRowKeys): Array<any>
 The keys of all selected rows.
 

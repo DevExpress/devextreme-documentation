@@ -23,9 +23,6 @@ The data of the row that should be inserted.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---
 
 This function allows you to intercept row insertion and perform additional actions. The following code shows how to use the function parameter's **cancel** field to prevent or continue row insertion. In this code, a Promise is assigned to this field. Row insertion continues if a user confirms it and row data validation on the server succeeds (the Promise is resolved); otherwise, row insertion is prevented (the Promise is rejected):

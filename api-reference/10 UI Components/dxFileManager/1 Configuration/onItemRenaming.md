@@ -28,9 +28,6 @@ Allows you to specify the error message.
 ##### field(e.item): FileSystemItem
 The file or directory to be renamed.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.newName): String
 The new name of the file or directory.
 

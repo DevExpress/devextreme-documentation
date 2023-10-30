@@ -23,9 +23,6 @@ The UI component's instance.
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.newData): Object
 The row's updated data.
 

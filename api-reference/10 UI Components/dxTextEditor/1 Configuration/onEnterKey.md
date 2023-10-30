@@ -19,8 +19,5 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ---
 [note] This function is executed *after* the [onKeyUp](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyUp.md '{basewidgetpath}/Configuration/#onKeyUp') and [onKeyDown](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/onKeyDown.md '{basewidgetpath}/Configuration/#onKeyDown') functions.

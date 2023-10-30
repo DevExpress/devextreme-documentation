@@ -26,9 +26,6 @@ The data of the row that should be removed.
 ##### field(e.key): any
 The row's key.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---
 [note] In batch [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), this function is executed for each row individually if several rows should be removed.
 

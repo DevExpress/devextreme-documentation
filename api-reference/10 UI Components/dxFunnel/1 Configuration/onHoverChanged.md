@@ -20,8 +20,5 @@ The UI component's instance.
 ##### field(e.item): dxFunnelItem
 The [Item](/api-reference/10%20UI%20Components/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') object.
 
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ---
 To identify whether the pointer has entered or left the funnel item, call the item's [isHovered()](/api-reference/10%20UI%20Components/dxFunnel/6%20Item/3%20Methods/isHovered().md 'Documentation/ApiReference/UI_Components/dxFunnel/Item/Methods/#isHovered') method.

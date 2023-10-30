@@ -45,9 +45,6 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 The row's key. Unavailable if **rowType** is *"header"*, *"filter"*, or *"totalFooter"*.        
 If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.oldValue): any
 <!-- %field(cellInfo.oldValue)% -->
 

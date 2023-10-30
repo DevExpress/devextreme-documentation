@@ -28,7 +28,4 @@ The data of the item being held.
 ##### field(e.itemIndex): Number
 The item's index.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---

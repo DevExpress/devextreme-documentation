@@ -20,9 +20,6 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ##### field(e.points): Array<piePointObject>
 The [Point](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object(s).
 

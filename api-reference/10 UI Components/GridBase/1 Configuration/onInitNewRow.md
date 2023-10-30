@@ -19,9 +19,6 @@ The data of the inserted row; initially empty.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.promise): Promise<void>
 Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 

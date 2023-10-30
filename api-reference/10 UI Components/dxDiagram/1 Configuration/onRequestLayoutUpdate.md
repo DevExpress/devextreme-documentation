@@ -23,9 +23,6 @@ The UI component instance's name.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---
 The [autoLayout](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/nodes/autoLayout '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/autoLayout/') option specifies an auto-layout algorithm that the UI component uses to build a diagram on data binding.
 

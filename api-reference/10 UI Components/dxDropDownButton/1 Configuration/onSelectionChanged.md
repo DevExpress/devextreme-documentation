@@ -19,9 +19,6 @@ The UI component's instance.
 ##### field(e.item): Object
 The selected item's data.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.previousItem): Object
 The previously selected item's data.
 

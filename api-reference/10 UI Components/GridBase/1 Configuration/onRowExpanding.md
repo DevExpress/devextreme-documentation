@@ -22,8 +22,5 @@ The UI component's instance.
 ##### field(e.key): any
 The key of the group or master row.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---
 To cancel row expansion, assign **true** to the **cancel** field of the function parameter.

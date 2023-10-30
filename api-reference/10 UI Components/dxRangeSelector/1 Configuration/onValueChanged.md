@@ -20,9 +20,6 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam This field is **undefined** if the value is changed programmatically.
 
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ##### field(e.previousValue): Array<Number, String, Date>
 Two values that represent old start and end values.
 

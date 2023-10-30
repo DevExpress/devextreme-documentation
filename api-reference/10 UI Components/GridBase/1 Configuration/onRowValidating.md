@@ -28,9 +28,6 @@ Indicates whether data in all row cells satisfies the validation rules.
 ##### field(e.key): any
 The key of the row. If a field providing keys is not specified in the data source, the whole data object is considered the key.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.newData): Object
 The data of the validated row after changes.
 

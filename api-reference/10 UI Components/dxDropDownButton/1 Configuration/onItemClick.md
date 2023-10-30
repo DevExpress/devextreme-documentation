@@ -25,7 +25,4 @@ The clicked item's data.
 ##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---

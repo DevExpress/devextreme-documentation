@@ -23,7 +23,4 @@ The UI component's instance.
 ##### field(e.event): DxEvent
 #include common-ref-eventparam
 
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ---

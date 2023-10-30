@@ -26,8 +26,5 @@ The removed item's data.
 ##### field(e.itemIndex): Number | Object
 The removed item's index.
 
-##### field(e.model): Object
-Model data. Available only if you use Knockout.
-
 ---
 Note that the **itemDeleted** event is raised only if an item is deleted using the appropriate method of the UI component or end-user interaction. If you delete an item from an observable array passed to the **dataSource** or **items** property, the UI component entirely reloads the items array without raising the **itemDeleted** and **itemDeleting** events.

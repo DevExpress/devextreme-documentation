@@ -142,4 +142,4 @@ This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Co
 ---
 
 ##### See Also #####
-- [clear()](/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear)
+- [clear()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear')

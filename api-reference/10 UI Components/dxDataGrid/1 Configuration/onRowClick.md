@@ -70,7 +70,7 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            editing: { mode: "form "},
+            editing: { mode: "form" },
             onRowClick: function(e) {
                 if(e.rowType === "data") {
                     e.component.editRow(e.rowIndex);

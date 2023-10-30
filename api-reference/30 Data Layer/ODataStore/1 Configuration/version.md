@@ -2,7 +2,7 @@
 id: ODataStore.Options.version
 acceptValues: 2 | 3 | 4
 type: Number
-default: 2
+default: 4
 ---
 ---
 ##### shortDescription

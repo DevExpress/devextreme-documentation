@@ -2,7 +2,7 @@
 id: Enums.FilterBuilderOperation
 acceptValues: '=' | '<>' | '<' | '<=' | '>' | '>=' | 'contains' | 'endswith' | 'isblank' | 'isnotblank' | 'notcontains' | 'startswith' | 'between'
 type: Union
-references: dxFilterBuilderField.defaultFilterOperation,dxFilterBuilderField.filterOperations
+references: dxFilterBuilderField.defaultFilterOperation|dxFilterBuilderField.filterOperations
 ---
 ---
 ##### shortDescription

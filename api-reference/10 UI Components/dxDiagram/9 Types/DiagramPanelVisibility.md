@@ -2,7 +2,7 @@
 id: Enums.DiagramPanelVisibility
 acceptValues: 'auto' | 'visible' | 'collapsed' | 'disabled'
 type: Union
-references: dxDiagram.Options.propertiesPanel.visibility,dxDiagram.Options.toolbox.visibility
+references: dxDiagram.Options.propertiesPanel.visibility|dxDiagram.Options.toolbox.visibility
 ---
 ---
 ##### shortDescription

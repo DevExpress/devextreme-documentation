@@ -2,7 +2,7 @@
 id: Enums.LegendHoverMode
 acceptValues: 'excludePoints' | 'includePoints' | 'none'
 type: Union
-references: viz/chart:Legend.hoverMode,viz/polar_chart:Legend.hoverMode
+references: viz/chart:Legend.hoverMode|viz/polar_chart:Legend.hoverMode
 ---
 ---
 ##### shortDescription

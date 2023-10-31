@@ -2,7 +2,7 @@
 id: Enums.ScrollDirection
 acceptValues: 'both' | 'horizontal' | 'vertical'
 type: Union
-references: dxScrollable.Options.direction,dxTreeView.Options.scrollDirection
+references: dxScrollable.Options.direction|dxTreeView.Options.scrollDirection
 ---
 ---
 ##### shortDescription

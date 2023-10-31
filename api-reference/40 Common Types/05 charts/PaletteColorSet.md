@@ -2,7 +2,7 @@
 id: Enums.PaletteColorSet
 acceptValues: 'simpleSet' | 'indicatingSet' | 'gradientSet'
 type: Union
-references: viz.generateColors(palette, count, options)
+references: viz.generateColors
 ---
 ---
 ##### shortDescription

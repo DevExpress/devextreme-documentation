@@ -2,7 +2,7 @@
 id: Enums.DiagramToolboxDisplayMode
 acceptValues: 'icons' | 'texts'
 type: Union
-references: dxDiagram.Options.contextToolbox.displayMode|dxDiagram.Options.toolbox.groups.displayMode
+references: dxDiagram.Options.contextToolbox.displayMode,dxDiagram.Options.toolbox.groups.displayMode
 ---
 ---
 ##### shortDescription

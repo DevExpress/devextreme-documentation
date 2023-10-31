@@ -2,7 +2,7 @@
 id: Enums.ArgumentAxisHoverMode
 acceptValues: 'allArgumentPoints' | 'none'
 type: Union
-references: viz/chart:ArgumentAxis.hoverMode|viz/polar_chart:ArgumentAxis.hoverMode
+references: viz/chart:ArgumentAxis.hoverMode,viz/polar_chart:ArgumentAxis.hoverMode
 ---
 ---
 ##### shortDescription

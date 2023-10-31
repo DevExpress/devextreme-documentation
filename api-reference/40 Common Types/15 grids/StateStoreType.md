@@ -2,7 +2,7 @@
 id: Enums.StateStoreType
 acceptValues: 'custom' | 'localStorage' | 'sessionStorage'
 type: Union
-references: dxPivotGrid.Options.stateStoring.type|common/grids:StateStoring.type
+references: dxPivotGrid.Options.stateStoring.type,common/grids:StateStoring.type
 ---
 ---
 ##### shortDescription

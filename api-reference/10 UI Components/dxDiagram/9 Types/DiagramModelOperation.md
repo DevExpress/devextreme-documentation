@@ -2,7 +2,7 @@
 id: Enums.DiagramModelOperation
 acceptValues: 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints' | 'beforeChangeShapeText' | 'changeShapeText' | 'beforeChangeConnectorText' | 'changeConnectorText' | 'resizeShape' | 'moveShape'
 type: Union
-references: ui/diagram:RequestEditOperationEvent.operation|dxDiagram.Options.onRequestEditOperation
+references: ui/diagram:RequestEditOperationEvent.operation,dxDiagram.Options.onRequestEditOperation
 ---
 ---
 ##### shortDescription

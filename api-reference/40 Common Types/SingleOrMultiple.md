@@ -2,7 +2,7 @@
 id: Enums.SingleOrMultiple
 acceptValues: 'single' | 'multiple'
 type: Union
-references: BaseChart.Options.pointSelectionMode|dxChart.Options.seriesSelectionMode|dxFileManager.Options.selectionMode|dxPolarChart.Options.seriesSelectionMode|dxTabs.Options.selectionMode|dxTreeView.Options.selectionMode
+references: BaseChart.Options.pointSelectionMode,dxChart.Options.seriesSelectionMode,dxFileManager.Options.selectionMode,dxPolarChart.Options.seriesSelectionMode,dxTabs.Options.selectionMode,dxTreeView.Options.selectionMode
 ---
 ---
 ##### shortDescription

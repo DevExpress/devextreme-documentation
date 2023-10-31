@@ -2,7 +2,7 @@
 id: Enums.DragHighlight
 acceptValues: 'push' | 'indicate'
 type: Union
-references: dxSortable.Options.dropFeedbackMode|common/grids:RowDragging.dropFeedbackMode
+references: dxSortable.Options.dropFeedbackMode,common/grids:RowDragging.dropFeedbackMode
 ---
 ---
 ##### shortDescription

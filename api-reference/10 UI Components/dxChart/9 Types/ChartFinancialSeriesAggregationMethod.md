@@ -2,7 +2,7 @@
 id: Enums.ChartFinancialSeriesAggregationMethod
 acceptValues: 'ohlc' | 'custom'
 type: Union
-references: dxChartSeriesTypes.CandleStickSeries.aggregation.method|dxChartSeriesTypes.StockSeries.aggregation.method
+references: dxChartSeriesTypes.CandleStickSeries.aggregation.method,dxChartSeriesTypes.StockSeries.aggregation.method
 ---
 ---
 ##### shortDescription

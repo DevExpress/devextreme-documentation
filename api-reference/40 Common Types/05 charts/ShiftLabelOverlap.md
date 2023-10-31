@@ -2,7 +2,7 @@
 id: Enums.ShiftLabelOverlap
 acceptValues: 'hide' | 'none' | 'shift'
 type: Union
-references: dxBarGauge.Options.resolveLabelOverlapping|dxFunnel.Options.resolveLabelOverlapping|dxPieChart.Options.resolveLabelOverlapping
+references: dxBarGauge.Options.resolveLabelOverlapping,dxFunnel.Options.resolveLabelOverlapping,dxPieChart.Options.resolveLabelOverlapping
 ---
 ---
 ##### shortDescription

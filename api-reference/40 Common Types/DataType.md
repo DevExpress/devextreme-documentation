@@ -2,7 +2,7 @@
 id: Enums.DataType
 acceptValues: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
 type: Union
-references: dxFileManagerDetailsColumn.dataType|dxFilterBuilderCustomOperation.dataTypes|dxFilterBuilderField.dataType|GridBaseColumn.dataType
+references: dxFileManagerDetailsColumn.dataType,dxFilterBuilderCustomOperation.dataTypes,dxFilterBuilderField.dataType,GridBaseColumn.dataType
 ---
 ---
 ##### shortDescription

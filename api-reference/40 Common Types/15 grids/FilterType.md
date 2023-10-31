@@ -2,7 +2,7 @@
 id: Enums.FilterType
 acceptValues: 'exclude' | 'include'
 type: Union
-references: GridBaseColumn.filterType|PivotGridDataSource.Options.fields.filterType
+references: GridBaseColumn.filterType,PivotGridDataSource.Options.fields.filterType
 ---
 ---
 ##### shortDescription

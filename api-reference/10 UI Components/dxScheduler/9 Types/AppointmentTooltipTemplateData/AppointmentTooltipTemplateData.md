@@ -5,7 +5,7 @@ export: AppointmentTooltipTemplateData
 type: TargetedAppointmentInfo | Object
 inherits: TargetedAppointmentInfo
 generateTypeLink: 
-references: dxScheduler.Options.appointmentTooltipTemplate|dxScheduler.Options.views.appointmentTooltipTemplate
+references: dxScheduler.Options.appointmentTooltipTemplate,dxScheduler.Options.views.appointmentTooltipTemplate
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,7 @@
 id: Enums.DiscreteAxisDivisionMode
 acceptValues: 'betweenLabels' | 'crossLabels'
 type: Union
-references: viz/chart:CommonAxisSettings.discreteAxisDivisionMode|viz/polar_chart:CommonAxisSettings.discreteAxisDivisionMode|dxRangeSelector.Options.scale.discreteAxisDivisionMode
+references: viz/chart:CommonAxisSettings.discreteAxisDivisionMode,viz/polar_chart:CommonAxisSettings.discreteAxisDivisionMode,dxRangeSelector.Options.scale.discreteAxisDivisionMode
 ---
 ---
 ##### shortDescription

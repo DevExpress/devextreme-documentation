@@ -2,7 +2,7 @@
 id: Enums.SearchMode
 acceptValues: 'contains' | 'startswith' | 'equals'
 type: Union
-references: GridBaseColumn.headerFilter.searchMode,HeaderFilterSearchConfig.mode,SearchBoxMixin.Options.searchMode
+references: GridBaseColumn.headerFilter.searchMode|HeaderFilterSearchConfig.mode|SearchBoxMixin.Options.searchMode
 ---
 ---
 ##### shortDescription

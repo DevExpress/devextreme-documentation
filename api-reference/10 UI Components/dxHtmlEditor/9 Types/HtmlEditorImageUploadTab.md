@@ -2,7 +2,7 @@
 id: Enums.HtmlEditorImageUploadTab
 acceptValues: 'url' | 'file'
 type: Union
-references: dxHtmlEditorImageUpload.tabs,dxHtmlEditorImageUploadTabItem.name
+references: dxHtmlEditorImageUpload.tabs|dxHtmlEditorImageUploadTabItem.name
 ---
 ---
 ##### shortDescription

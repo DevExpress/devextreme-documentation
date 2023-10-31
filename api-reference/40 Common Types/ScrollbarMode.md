@@ -2,7 +2,7 @@
 id: Enums.ScrollbarMode
 acceptValues: 'always' | 'never' | 'onHover' | 'onScroll'
 type: Union
-references: dxList.Options.showScrollbar,dxTileView.Options.showScrollbar,common/grids:ScrollingBase.showScrollbar
+references: dxList.Options.showScrollbar|dxTileView.Options.showScrollbar|common/grids:ScrollingBase.showScrollbar
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,7 @@
 id: Enums.ApplyValueMode
 acceptValues: 'instantly' | 'useButtons'
 type: Union
-references: dxColorBox.Options.applyValueMode,dxDropDownEditor.Options.applyValueMode,dxLookup.Options.applyValueMode,dxTagBox.Options.applyValueMode
+references: dxColorBox.Options.applyValueMode|dxDropDownEditor.Options.applyValueMode|dxLookup.Options.applyValueMode|dxTagBox.Options.applyValueMode
 ---
 ---
 ##### shortDescription

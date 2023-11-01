@@ -1,56 +1,89 @@
-You can define custom content markup in a separate component. For example, you need to display a dynamic form in your application, and each data refresh a different form configuration is required. You can implement a component for your form and pass it to the *'component'* property.
+You can define custom content in a separate component if you need to utilize state or hooks.
 
-For Class components, we recommend using <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent" target="_blank">`React.PureComponent`</a> because `React.Component` can be re-rendered unnecessarily. Alternatively, you can implement the <a href="https://reactjs.org/docs/react-component.html#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
+[note] For Class components, we recommend using <a href="https://react.dev/reference/react/PureComponent" target="_blank">`React.PureComponent`</a> because `React.Component` can be re-rendered unnecessarily. Alternatively, you can implement the <a href="https://react.dev/reference/react/Component#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
 
-In the following code, custom components are used to specify the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/React/Light)'s [itemComponent](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemComponent) and the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/React/Light)'s [component](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#component). Template variables are passed to the components as props.
+The following code demonstrates a [List](/Documentation/Guide/UI_Components/List/Getting_Started_with_List/) which items are rendered in another component. This component is passed to the [itemComponent](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemComponent) property. 
     
     <!-- tab: Function component -->
-    import React from 'react';
-    import List from 'devextreme-react/list';
-    import Button from 'devextreme-react/button';
+    import React, { useCallback, useState } from "react";
+    import List from "devextreme-react/list";
 
-    const ListItemTmpl = ({ data }) => {
-        return (
-            <p>{data.itemProperty}</p>
+    import "devextreme/dist/css/dx.light.css";
+
+    const dataSource = ["Apples", "Bananas", "Cranberries"];
+    const defaultWeight = 1;
+
+    const ListItem = ({ data }) => {
+        const [weight, setWeight] = useState(defaultWeight);
+        const onWeightChange = useCallback(
+            (e) => setWeight(e.target.value || defaultWeight),
+            []
         );
-    };
 
-    const ButtonTmpl = ({ data }) => {
         return (
-            <div style={{ padding: 20 }}>
-                <p>{data.text}</p>
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                }}
+            >
+                <span>{`${data}, ${weight} lb`}</span>
+                <input type="number" placeholder="Weight" onChange={onWeightChange} />
             </div>
         );
     };
 
     function App() {
         return (
-            <div>
-                <List itemComponent={ListItemTmpl} />
-                <Button component={ButtonTmpl} />
+            <div style={{ maxWidth: 400 }}>
+                <List
+                    activeStateEnabled={false}
+                    items={dataSource}
+                    itemComponent={ListItem}
+                />
             </div>
         );
-    };
+    }
 
     export default App;
 
     <!-- tab: Class component -->
+    import * as React from 'react';
     import List from 'devextreme-react/list';
-    import Button from 'devextreme-react/button';
 
-    class ListItemTmpl extends React.PureComponent {
-        render() {
-            return (
-                <p>{this.props.data.itemProperty}</p>
-            );
+    import 'devextreme/dist/css/dx.light.css';
+
+    const dataSource = ['Apples', 'Bananas', 'Cranberries'];
+    const defaultWeight = 1;
+
+    class ListItem extends React.PureComponent {
+        constructor() {
+            super();
+
+            this.onWeightChange = this.onWeightChange.bind(this);
+            this.state = { weight: defaultWeight };
         }
-    }
 
-    class ButtonTmpl extends React.PureComponent {
+        onWeightChange(e) {
+            this.setState({ weight: e.target.value || defaultWeight });
+        }
+
         render() {
             return (
-                <div style={{ padding: 20 }}>
-                    <p>{this.props.data.text}</p>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                }}>
+                    <span>{`${this.props.data}, ${this.state.weight} lb`}</span>
+                    <input
+                        type='number'
+                        placeholder='Weight'
+                        onChange={this.onWeightChange}
+                    />
                 </div>
             );
         }
@@ -59,10 +92,11 @@ In the following code, custom components are used to specify the [List](https://
     class App extends React.Component {
         render() {
             return (
-                <React.Fragment>
-                    <List itemComponent={ListItemTmpl} />
-                    <Button component={ButtonTmpl} />
-                </React.Fragment>
+                <div style={{ maxWidth: 400 }}>
+                    <List activeStateEnabled={false} items={dataSource} itemComponent={ListItem} />
+                </div>
             );
         }
     }
+
+    export default App;

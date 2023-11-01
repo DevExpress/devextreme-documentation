@@ -1,70 +1,22 @@
-Imagine a scenario where you need to render a list of items, each with a unique piece of content or styling. In this case, use *'render'* property. You can create a rendering function that generates the custom content for each item.
+The following example demonstrates a [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) component which cells display a combination of grid's data and a [TextBox](/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox/) value. For this task, a rendering function wrapped in [useCallback](https://react.dev/reference/react/useCallback) was used. This way you can pass the TextBox value to the column's [cellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellRender) property.
 
-In the following code, rendering functions are used to specify the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/React/Light)'s [itemRender](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender') and the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/React/Light)'s [render](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#render):
+[note] You can also define the rendering function outside the component when you don't need to pass any dependencies to the *'render'* property. 
 
     <!-- tab: Function component -->
-    import List from 'devextreme-react/list';
-    import Button from 'devextreme-react/button';
-
-    const renderListItem = (itemData) => {
-        return <p>{itemData.itemProperty}</p>;
-    }
-    const renderButton = (button) => {
-        return <div style={{ padding: 20 }}><p>{button.text}</p></div>;
-    }
-
-    export default function App() {
-        return (
-            <React.Fragment>
-                <List itemRender={renderListItem} />
-                <Button render={renderButton} />
-            </React.Fragment>
-        );
-    }
-    
-    <!-- tab: Class component -->
-    import List from 'devextreme-react/list';
-    import Button from 'devextreme-react/button';
-
-    const renderListItem = (itemData) => {
-        return <p>{itemData.itemProperty}</p>;
-    }
-    const renderButton = (button) => {
-        return <div style={{ padding: 20 }}><p>{button.text}</p></div>;
-    }
-    class App extends React.Component {
-        render() {
-            return (
-                <React.Fragment>
-                    <List itemRender={renderListItem} />
-                    <Button render={renderButton} />
-                </React.Fragment>
-            );
-        }
-    }
-
-If you use local variables within the rendering function, to avoid unnecessary re-renders, wrap the rendering function in a [useMemo](https://react.dev/reference/react/useMemo) callback.
-
-    <!-- Function component -->
-    import React, { useState, useMemo } from "react";
-    import TextBox from "devextreme-react/text-box";
-    import DataGrid, { Column } from "devextreme-react/data-grid";
+    import React, { useState, useCallback } from 'react';
+    import TextBox from 'devextreme-react/text-box';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
 
     const dataSource = [1, 2, 3, 4, 5];
 
     function App() {
-        const [value, setValue] = useState(".");
+        const [value, setValue] = useState('.');
 
         const onTextBoxValueChange = (e) => {
             setValue(e);
         };
 
-        const cell = useMemo(
-            () => (e) => {
-                return <div>{e.data + value}</div>;
-            },
-            [value]
-        );
+        const cell = useCallback((e) => <div>{e.data + value}</div>, [value]);
 
         return (
             <>
@@ -74,6 +26,46 @@ If you use local variables within the rendering function, to avoid unnecessary r
                 </DataGrid>
             </>
         );
+    }
+
+    export default App;
+    
+    <!-- tab: Class component -->
+    import * as React from 'react';
+    import TextBox from 'devextreme-react/text-box';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+
+    const dataSource = [1, 2, 3, 4, 5];
+
+    class App extends React.Component {
+        constructor() {
+            super();
+
+            this.renderCell = this.renderCell.bind(this);
+            this.onTextBoxValueChange = this.onTextBoxValueChange.bind(this);
+
+            this.state = { value: '.' };
+        }
+
+        onTextBoxValueChange(e) {
+            this.setState({ value: e });
+        };
+
+
+        renderCell(e) {
+            return <div>{e.data + this.state.value}</div>;
+        }
+
+        render() {
+            return (
+                <>
+                    <TextBox value={this.state.value} onValueChange={this.onTextBoxValueChange} />
+                    <DataGrid dataSource={dataSource}>
+                        <Column caption="Low" cellRender={this.renderCell} />
+                    </DataGrid>
+                </>
+            );
+        }
     }
 
     export default App;

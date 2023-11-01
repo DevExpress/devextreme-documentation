@@ -1,6 +1,6 @@
 ---
 id: dxResponsiveBox.Options.rows.baseSize
-type: Number | String
+type: Number | Enums.Mode
 default: 0
 ---
 ---

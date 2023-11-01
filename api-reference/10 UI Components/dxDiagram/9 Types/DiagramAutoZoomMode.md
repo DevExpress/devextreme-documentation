@@ -2,6 +2,7 @@
 id: Enums.DiagramAutoZoomMode
 acceptValues: 'fitContent' | 'fitWidth' | 'disabled'
 type: Union
+references: dxDiagram.Options.autoZoomMode
 ---
 ---
 ##### shortDescription

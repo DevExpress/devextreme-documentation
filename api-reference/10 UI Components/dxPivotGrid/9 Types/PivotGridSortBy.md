@@ -2,6 +2,7 @@
 id: Enums.PivotGridSortBy
 acceptValues: 'displayText' | 'value' | 'none'
 type: Union
+references: PivotGridDataSource.Options.fields.sortBy
 ---
 ---
 ##### shortDescription

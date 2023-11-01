@@ -2,6 +2,7 @@
 id: Enums.ChartZoomAndPanMode
 acceptValues: 'both' | 'none' | 'pan' | 'zoom'
 type: Union
+references: dxChart.Options.zoomAndPan.argumentAxis,dxChart.Options.zoomAndPan.valueAxis
 ---
 ---
 ##### shortDescription

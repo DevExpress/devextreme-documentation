@@ -2,6 +2,7 @@
 id: Enums.DiagramConnectorLineType
 acceptValues: 'straight' | 'orthogonal'
 type: Union
+references: dxDiagram.Options.defaultItemProperties.connectorLineType
 ---
 ---
 ##### shortDescription

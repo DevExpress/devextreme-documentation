@@ -2,6 +2,7 @@
 id: Enums.ShowTextMode
 acceptValues: 'always' | 'inMenu'
 type: Union
+references: dxToolbarItem.showText
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.AggregatedPointsPosition
 acceptValues: 'betweenTicks' | 'crossTicks'
 type: Union
+references: viz/chart:CommonAxisSettings.aggregatedPointsPosition
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.LocateInMenuMode
 acceptValues: 'always' | 'auto' | 'never'
 type: Union
+references: dxToolbarItem.locateInMenu
 ---
 ---
 ##### shortDescription

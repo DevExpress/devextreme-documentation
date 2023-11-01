@@ -2,6 +2,7 @@
 id: Enums.EnterKeyAction
 acceptValues: 'startEdit' | 'moveFocus'
 type: Union
+references: common/grids:KeyboardNavigation.enterKeyAction
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: Enums.SeriesHoverMode
 acceptValues: 'allArgumentPoints' | 'allSeriesPoints' | 'excludePoints' | 'includePoints' | 'nearestPoint' | 'none' | 'onlyPoint'
 type: Union
+references: dxChartSeriesTypes.CommonSeries.hoverMode,dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverMode
 ---
 ---
 ##### shortDescription

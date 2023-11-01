@@ -2,6 +2,7 @@
 id: Enums.ToolbarLocation
 acceptValues: 'bottom' | 'top'
 type: Union
+references: dxPopupToolbarItem.toolbar
 ---
 ---
 ##### shortDescription

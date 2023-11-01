@@ -2,6 +2,7 @@
 id: Enums.LabelOverlap
 acceptValues: 'hide' | 'none'
 type: Union
+references: viz/gauges/base_gauge:BaseGaugeScaleLabel.overlappingBehavior,viz/polar_chart:CommonAxisSettingsLabel.overlappingBehavior,dxPolarChart.Options.resolveLabelOverlapping,dxRangeSelector.Options.scale.label.overlappingBehavior
 ---
 ---
 ##### shortDescription

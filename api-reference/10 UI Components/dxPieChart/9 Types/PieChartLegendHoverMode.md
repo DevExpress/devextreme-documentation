@@ -2,6 +2,7 @@
 id: Enums.PieChartLegendHoverMode
 acceptValues: 'none' | 'allArgumentPoints'
 type: Union
+references: viz/pie_chart:Legend.hoverMode
 ---
 ---
 ##### shortDescription

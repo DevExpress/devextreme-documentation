@@ -2,6 +2,7 @@
 id: Enums.BoxDirection
 acceptValues: 'col' | 'row'
 type: Union
+references: dxBox.Options.direction
 ---
 ---
 ##### shortDescription

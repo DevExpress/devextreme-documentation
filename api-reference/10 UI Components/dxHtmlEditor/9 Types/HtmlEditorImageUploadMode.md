@@ -2,6 +2,7 @@
 id: Enums.HtmlEditorImageUploadMode
 acceptValues: 'base64' | 'server' | 'both'
 type: Union
+references: dxHtmlEditorImageUpload.fileUploadMode
 ---
 ---
 ##### shortDescription

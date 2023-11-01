@@ -2,6 +2,7 @@
 id: Enums.ValidationMessageMode
 acceptValues: 'always' | 'auto'
 type: Union
+references: Editor.Options.validationMessageMode
 ---
 ---
 ##### shortDescription

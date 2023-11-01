@@ -2,6 +2,7 @@
 id: Enums.HorizontalEdge
 acceptValues: 'left' | 'right'
 type: Union
+references: CommonIndicator.horizontalOrientation,dxFunnel.Options.label.horizontalAlignment,GridBaseColumn.fixedPosition
 ---
 ---
 ##### shortDescription

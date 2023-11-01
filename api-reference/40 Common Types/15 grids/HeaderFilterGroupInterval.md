@@ -8,6 +8,3 @@ type: Union
 Specifies how the header filter combines values into groups.
 
 ---
-<!--
-GridBaseColumn.headerFilter.groupInterval(/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md)
--->

@@ -8,6 +8,3 @@ type: Union
 Specifies which borders of the UI component element are used as a handle.
 
 ---
-<!--
-dxResizableOptions.handles(/api-reference/10 UI Components/dxResizable/1 Configuration/handles.md)
--->

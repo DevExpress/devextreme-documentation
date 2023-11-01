@@ -8,6 +8,3 @@ type: Union
 Sets the name of the theme the UI component uses.
 
 ---
-<!--
-BaseWidgetOptions.theme(/api-reference/10 UI Components/BaseWidget/1 Configuration/theme.md)(common/charts.d.ts)
--->

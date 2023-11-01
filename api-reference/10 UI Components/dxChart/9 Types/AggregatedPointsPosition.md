@@ -8,6 +8,3 @@ type: Union
 Specifies the start position of the aggregated series points in the aggregation interval.
 
 ---
-<!--
-dxChartOptions.commonAxisSettings.aggregatedPointsPosition(/api-reference/10 UI Components/dxChart/9 Types/CommonAxisSettings/aggregatedPointsPosition.md)(viz/chart.d.ts)
--->

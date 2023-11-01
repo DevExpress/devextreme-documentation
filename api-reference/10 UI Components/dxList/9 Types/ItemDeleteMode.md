@@ -8,6 +8,3 @@ type: Union
 Specifies the way a user can delete items from the list.
 
 ---
-<!--
-dxListOptions.itemDeleteMode(/api-reference/10 UI Components/dxList/1 Configuration/itemDeleteMode.md)(ui/list.d.ts)
--->

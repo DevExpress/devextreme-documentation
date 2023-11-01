@@ -8,7 +8,3 @@ type: Union
 Specifies a predefined format.
 
 ---
-<!--
-Format(/api-reference/50 Common/Object Structures/format/format.md)
-Format.type(/api-reference/50 Common/Object Structures/format/type.md)
--->

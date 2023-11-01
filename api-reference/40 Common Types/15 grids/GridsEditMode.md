@@ -8,6 +8,3 @@ type: Union
 Specifies how a user edits data.
 
 ---
-<!--
-GridBaseOptions.editing.mode(/api-reference/40 Common Types/15 grids/EditingBase/mode.md)(common/grids.d.ts)
--->

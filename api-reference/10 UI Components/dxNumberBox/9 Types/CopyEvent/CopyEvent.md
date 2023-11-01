@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:CopyEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onCopy
 ---
 ---
 ##### shortDescription

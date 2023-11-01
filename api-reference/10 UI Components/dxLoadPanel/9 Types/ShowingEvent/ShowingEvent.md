@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/load_panel:ShowingEvent
 generateTypeLink: 
+references: dxLoadPanel.Options.onShowing
 ---
 ---
 ##### shortDescription

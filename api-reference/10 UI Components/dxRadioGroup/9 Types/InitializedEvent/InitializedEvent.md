@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/radio_group:InitializedEvent
 generateTypeLink: 
+references: dxRadioGroup.Options.onInitialized
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tooltip:ShownEvent
 generateTypeLink: 
+references: dxTooltip.Options.onShown
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/menu:SubmenuHidingEvent
 generateTypeLink: 
+references: dxMenu.Options.onSubmenuHiding
 ---
 ---
 ##### shortDescription

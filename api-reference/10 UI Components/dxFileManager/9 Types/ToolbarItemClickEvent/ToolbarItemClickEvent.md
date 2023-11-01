@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/file_manager:ToolbarItemClickEvent
 generateTypeLink: 
+references: dxFileManager.Options.onToolbarItemClick
 ---
 ---
 ##### shortDescription

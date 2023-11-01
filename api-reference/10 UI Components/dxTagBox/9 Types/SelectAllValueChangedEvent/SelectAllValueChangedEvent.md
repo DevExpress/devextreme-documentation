@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tag_box:SelectAllValueChangedEvent
 generateTypeLink: 
+references: dxTagBox.Options.onSelectAllValueChanged
 ---
 ---
 ##### shortDescription

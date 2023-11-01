@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,SelectionChangedInfo
 uid: ui/lookup:SelectionChangedEvent
 generateTypeLink: 
+references: dxLookup.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

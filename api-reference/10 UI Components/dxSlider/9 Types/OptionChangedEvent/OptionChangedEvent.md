@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/slider:OptionChangedEvent
 generateTypeLink: 
+references: dxSlider.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

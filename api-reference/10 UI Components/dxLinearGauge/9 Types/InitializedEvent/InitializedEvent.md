@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/linear_gauge:InitializedEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onInitialized
 ---
 ---
 ##### shortDescription

@@ -2,12 +2,10 @@
 id: Enums.CircularGaugeLabelOverlap
 acceptValues: 'first' | 'last'
 type: Union
+references: viz/circular_gauge:ScaleLabel.hideFirstOrLast
 ---
 ---
 ##### shortDescription
 Specifies which label to hide in case of overlapping.
 
 ---
-<!--
-dxCircularGaugeOptions.scale.label.hideFirstOrLast(/api-reference/10 UI Components/dxCircularGauge/9 Types/ScaleLabel/hideFirstOrLast.md)(viz/circular_gauge.d.ts)
--->

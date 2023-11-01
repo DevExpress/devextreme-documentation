@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,PointInteractionInfo
 uid: viz/polar_chart:PointHoverChangedEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onPointHoverChanged
 ---
 ---
 ##### shortDescription

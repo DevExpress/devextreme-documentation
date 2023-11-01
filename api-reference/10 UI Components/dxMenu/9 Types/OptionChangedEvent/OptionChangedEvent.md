@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/menu:OptionChangedEvent
 generateTypeLink: 
+references: dxMenu.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

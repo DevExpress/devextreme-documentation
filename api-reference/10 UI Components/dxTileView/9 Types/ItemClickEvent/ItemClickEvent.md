@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/tile_view:ItemClickEvent
 generateTypeLink: 
+references: dxTileView.Options.onItemClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/polar_chart:DisposingEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onDisposing
 ---
 ---
 ##### shortDescription

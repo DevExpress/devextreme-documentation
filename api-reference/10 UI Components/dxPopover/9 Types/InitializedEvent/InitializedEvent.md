@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/popover:InitializedEvent
 generateTypeLink: 
+references: dxPopover.Options.onInitialized
 ---
 ---
 ##### shortDescription

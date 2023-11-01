@@ -2,12 +2,10 @@
 id: Enums.LegendMarkerState
 acceptValues: 'normal' | 'hovered' | 'selected'
 type: Union
+references: BaseLegendItem.marker.state
 ---
 ---
 ##### shortDescription
 The marker's state.
 
 ---
-<!--
-BaseLegendItem.marker.state(/api-reference/_hidden/BaseLegendItem/marker/state.md)(common/charts.d.ts)
--->

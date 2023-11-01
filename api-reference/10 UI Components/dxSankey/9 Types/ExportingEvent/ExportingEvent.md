@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/sankey:ExportingEvent
 generateTypeLink: 
+references: dxSankey.Options.onExporting
 ---
 ---
 ##### shortDescription

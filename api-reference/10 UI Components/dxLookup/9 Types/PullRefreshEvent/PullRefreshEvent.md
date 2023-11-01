@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/lookup:PullRefreshEvent
 generateTypeLink: 
+references: dxLookup.Options.onPullRefresh
 ---
 ---
 ##### shortDescription

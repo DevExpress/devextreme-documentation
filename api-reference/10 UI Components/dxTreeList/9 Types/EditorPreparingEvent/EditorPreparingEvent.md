@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tree_list:EditorPreparingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onEditorPreparing
 ---
 ---
 ##### shortDescription

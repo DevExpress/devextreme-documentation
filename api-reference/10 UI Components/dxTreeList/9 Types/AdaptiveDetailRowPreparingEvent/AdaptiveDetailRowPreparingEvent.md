@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,AdaptiveDetailRowPreparingInfo
 uid: ui/tree_list:AdaptiveDetailRowPreparingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onAdaptiveDetailRowPreparing
 ---
 ---
 ##### shortDescription

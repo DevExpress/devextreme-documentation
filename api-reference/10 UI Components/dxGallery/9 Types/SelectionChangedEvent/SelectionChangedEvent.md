@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,SelectionChangedInfo
 uid: ui/gallery:SelectionChangedEvent
 generateTypeLink: 
+references: dxGallery.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

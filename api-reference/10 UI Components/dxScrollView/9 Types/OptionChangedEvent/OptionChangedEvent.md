@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/scroll_view:OptionChangedEvent
 generateTypeLink: 
+references: dxScrollView.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

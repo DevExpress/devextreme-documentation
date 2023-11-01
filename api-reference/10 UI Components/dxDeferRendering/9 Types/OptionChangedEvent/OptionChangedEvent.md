@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/defer_rendering:OptionChangedEvent
 generateTypeLink: 
+references: dxDeferRendering.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

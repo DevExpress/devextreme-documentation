@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/recurrence_editor:ContentReadyEvent
 generateTypeLink: 
+references: dxRecurrenceEditor.Options.onContentReady
 ---
 ---
 ##### shortDescription

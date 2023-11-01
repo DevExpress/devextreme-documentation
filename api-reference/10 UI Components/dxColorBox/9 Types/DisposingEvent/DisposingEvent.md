@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/color_box:DisposingEvent
 generateTypeLink: 
+references: dxColorBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

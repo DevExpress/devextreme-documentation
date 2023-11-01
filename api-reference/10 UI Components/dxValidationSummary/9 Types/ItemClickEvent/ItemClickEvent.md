@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/validation_summary:ItemClickEvent
 generateTypeLink: 
+references: dxValidationSummary.Options.onItemClick
 ---
 ---
 ##### shortDescription

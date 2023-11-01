@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/drop_down_box:PasteEvent
 generateTypeLink: 
+references: dxDropDownBox.Options.onPaste
 ---
 ---
 ##### shortDescription

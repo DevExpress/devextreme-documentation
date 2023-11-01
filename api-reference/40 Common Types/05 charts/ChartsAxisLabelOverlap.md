@@ -2,12 +2,10 @@
 id: Enums.ChartsAxisLabelOverlap
 acceptValues: 'rotate' | 'stagger' | 'none' | 'hide'
 type: Union
+references: viz/chart:CommonAxisSettingsLabel.overlappingBehavior
 ---
 ---
 ##### shortDescription
 Decides how to arrange axis labels when there is not enough space to display all of them.
 
 ---
-<!--
-dxChartOptions.commonAxisSettings.label.overlappingBehavior(/api-reference/10 UI Components/dxChart/9 Types/CommonAxisSettingsLabel/overlappingBehavior.md)(common/charts.d.ts)
--->

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/speed_dial_action:ContentReadyEvent
 generateTypeLink: 
+references: dxSpeedDialAction.Options.onContentReady
 ---
 ---
 ##### shortDescription

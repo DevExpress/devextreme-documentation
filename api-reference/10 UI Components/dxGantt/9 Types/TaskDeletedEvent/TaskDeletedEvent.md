@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:TaskDeletedEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskDeleted
 ---
 ---
 ##### shortDescription

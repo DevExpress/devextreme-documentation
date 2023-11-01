@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,CellInfo
 uid: ui/tree_list:CellDblClickEvent
 generateTypeLink: 
+references: dxTreeList.Options.onCellDblClick
 ---
 ---
 ##### shortDescription

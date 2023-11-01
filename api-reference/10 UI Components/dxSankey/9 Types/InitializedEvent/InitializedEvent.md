@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/sankey:InitializedEvent
 generateTypeLink: 
+references: dxSankey.Options.onInitialized
 ---
 ---
 ##### shortDescription

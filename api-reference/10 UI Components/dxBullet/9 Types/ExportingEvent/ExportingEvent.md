@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/bullet:ExportingEvent
 generateTypeLink: 
+references: dxBullet.Options.onExporting
 ---
 ---
 ##### shortDescription

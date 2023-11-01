@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/toolbar:ContentReadyEvent
 generateTypeLink: 
+references: dxToolbar.Options.onContentReady
 ---
 ---
 ##### shortDescription

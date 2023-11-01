@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:FocusInEvent
 generateTypeLink: 
+references: dxTextBox.Options.onFocusIn
 ---
 ---
 ##### shortDescription

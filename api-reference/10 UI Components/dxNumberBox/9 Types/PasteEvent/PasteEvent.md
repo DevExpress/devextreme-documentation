@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:PasteEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onPaste
 ---
 ---
 ##### shortDescription

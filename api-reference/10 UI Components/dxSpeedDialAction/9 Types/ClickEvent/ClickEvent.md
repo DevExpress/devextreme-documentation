@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/speed_dial_action:ClickEvent
 generateTypeLink: 
+references: dxSpeedDialAction.Options.onClick
 ---
 ---
 ##### shortDescription

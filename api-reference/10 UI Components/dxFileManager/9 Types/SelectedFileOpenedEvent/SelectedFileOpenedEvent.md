@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:SelectedFileOpenedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onSelectedFileOpened
 ---
 ---
 ##### shortDescription

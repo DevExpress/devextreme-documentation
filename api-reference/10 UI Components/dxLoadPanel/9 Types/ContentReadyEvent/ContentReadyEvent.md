@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/load_panel:ContentReadyEvent
 generateTypeLink: 
+references: dxLoadPanel.Options.onContentReady
 ---
 ---
 ##### shortDescription

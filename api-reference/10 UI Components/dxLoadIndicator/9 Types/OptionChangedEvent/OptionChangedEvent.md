@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/load_indicator:OptionChangedEvent
 generateTypeLink: 
+references: dxLoadIndicator.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:InputEvent
 generateTypeLink: 
+references: dxTagBox.Options.onInput
 ---
 ---
 ##### shortDescription

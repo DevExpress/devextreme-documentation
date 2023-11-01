@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/select_box:OpenedEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onOpened
 ---
 ---
 ##### shortDescription

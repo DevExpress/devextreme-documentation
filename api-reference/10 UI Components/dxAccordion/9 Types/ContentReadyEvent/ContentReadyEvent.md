@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/accordion:ContentReadyEvent
 generateTypeLink: 
+references: dxAccordion.Options.onContentReady
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/data_grid:ExportingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onExporting
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/box:ItemHoldEvent
 generateTypeLink: 
+references: dxBox.Options.onItemHold
 ---
 ---
 ##### shortDescription

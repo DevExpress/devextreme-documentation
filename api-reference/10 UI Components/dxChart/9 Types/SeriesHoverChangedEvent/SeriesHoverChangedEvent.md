@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_chart_SeriesInteractionInfo
 uid: viz/chart:SeriesHoverChangedEvent
 generateTypeLink: 
+references: dxChart.Options.onSeriesHoverChanged
 ---
 ---
 ##### shortDescription

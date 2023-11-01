@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskUpdatingEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskUpdating
 ---
 ---
 ##### shortDescription

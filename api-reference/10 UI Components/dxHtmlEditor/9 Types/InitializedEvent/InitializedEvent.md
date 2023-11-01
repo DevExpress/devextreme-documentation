@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/html_editor:InitializedEvent
 generateTypeLink: 
+references: dxHtmlEditor.Options.onInitialized
 ---
 ---
 ##### shortDescription

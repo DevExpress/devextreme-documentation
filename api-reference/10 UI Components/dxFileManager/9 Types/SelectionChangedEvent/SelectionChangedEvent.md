@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:SelectionChangedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onSelectionChanged
 ---
 ---
 ##### shortDescription

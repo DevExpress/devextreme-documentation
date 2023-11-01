@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/validation_summary:ContentReadyEvent
 generateTypeLink: 
+references: dxValidationSummary.Options.onContentReady
 ---
 ---
 ##### shortDescription

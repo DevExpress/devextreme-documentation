@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/multi_view:ItemClickEvent
 generateTypeLink: 
+references: dxMultiView.Options.onItemClick
 ---
 ---
 ##### shortDescription

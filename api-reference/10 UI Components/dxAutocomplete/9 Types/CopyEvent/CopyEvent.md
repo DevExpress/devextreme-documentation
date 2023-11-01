@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:CopyEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onCopy
 ---
 ---
 ##### shortDescription

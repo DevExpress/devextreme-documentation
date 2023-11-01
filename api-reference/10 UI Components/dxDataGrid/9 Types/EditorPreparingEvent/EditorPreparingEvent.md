@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:EditorPreparingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onEditorPreparing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/tab_panel:ItemHoldEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onItemHold
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/context_menu:PositioningEvent
 generateTypeLink: 
+references: dxContextMenu.Options.onPositioning
 ---
 ---
 ##### shortDescription

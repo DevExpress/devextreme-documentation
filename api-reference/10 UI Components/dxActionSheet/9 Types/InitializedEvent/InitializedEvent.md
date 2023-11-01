@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/action_sheet:InitializedEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onInitialized
 ---
 ---
 ##### shortDescription

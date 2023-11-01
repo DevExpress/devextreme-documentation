@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/gallery:ItemRenderedEvent
 generateTypeLink: 
+references: dxGallery.Options.onItemRendered
 ---
 ---
 ##### shortDescription

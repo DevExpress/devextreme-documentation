@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/switch:InitializedEvent
 generateTypeLink: 
+references: dxSwitch.Options.onInitialized
 ---
 ---
 ##### shortDescription

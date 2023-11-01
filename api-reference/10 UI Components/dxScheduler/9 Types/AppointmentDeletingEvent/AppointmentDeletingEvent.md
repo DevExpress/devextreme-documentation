@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scheduler:AppointmentDeletingEvent
 generateTypeLink: 
+references: dxScheduler.Options.onAppointmentDeleting
 ---
 ---
 ##### shortDescription

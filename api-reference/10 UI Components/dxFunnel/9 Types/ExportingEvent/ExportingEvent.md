@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/funnel:ExportingEvent
 generateTypeLink: 
+references: dxFunnel.Options.onExporting
 ---
 ---
 ##### shortDescription

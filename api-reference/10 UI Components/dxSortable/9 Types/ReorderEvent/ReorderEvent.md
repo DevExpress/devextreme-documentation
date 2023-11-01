@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/sortable:ReorderEvent
 generateTypeLink: 
+references: dxSortable.Options.onReorder
 ---
 ---
 ##### shortDescription

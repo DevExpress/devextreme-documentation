@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/check_box:ValueChangedEvent
 generateTypeLink: 
+references: dxCheckBox.Options.onValueChanged
 ---
 ---
 ##### shortDescription

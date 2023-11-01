@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/map:InitializedEvent
 generateTypeLink: 
+references: dxMap.Options.onInitialized
 ---
 ---
 ##### shortDescription

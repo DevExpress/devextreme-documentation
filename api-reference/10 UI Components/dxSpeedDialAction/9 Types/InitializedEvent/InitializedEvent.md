@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/speed_dial_action:InitializedEvent
 generateTypeLink: 
+references: dxSpeedDialAction.Options.onInitialized
 ---
 ---
 ##### shortDescription

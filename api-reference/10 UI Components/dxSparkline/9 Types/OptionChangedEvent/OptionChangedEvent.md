@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/sparkline:OptionChangedEvent
 generateTypeLink: 
+references: dxSparkline.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

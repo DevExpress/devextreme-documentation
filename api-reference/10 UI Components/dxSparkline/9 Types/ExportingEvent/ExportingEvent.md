@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/sparkline:ExportingEvent
 generateTypeLink: 
+references: dxSparkline.Options.onExporting
 ---
 ---
 ##### shortDescription

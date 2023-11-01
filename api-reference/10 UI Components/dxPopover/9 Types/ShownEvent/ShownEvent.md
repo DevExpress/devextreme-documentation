@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/popover:ShownEvent
 generateTypeLink: 
+references: dxPopover.Options.onShown
 ---
 ---
 ##### shortDescription

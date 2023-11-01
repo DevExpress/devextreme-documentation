@@ -1,3 +1,3 @@
-A license is required to use DevExtreme components, you can purchase it on the [pricing page](https://js.devexpress.com/Buy/). The license includes 12 months of access to professional support and updates. Refer to the following page to learn more: [Licensing](https://js.devexpress.com/Licensing/).
+A license is required to use DevExtreme components, you can purchase it on the [pricing page](https://js.devexpress.com/Buy/). The license includes 12 months of access to professional support and updates. Refer to the following page to learn more: [Licensing](https://js.devexpress.com/Licensing/). 
 
-Starting from the v23.2, DevExtreme checks the license; if you do not have a license, an error message will be displayed. To ensure successful completion of the license verification procedure, you must supply a license key.
+With the release of v23.2, DevExtreme checks license status and if you do not have a license, an error message will be displayed on-screen. To complete the license verification procedure, you must supply a license key.

@@ -1,3 +1,0 @@
-Per the terms of the End User License Agreement (EULA), you are permitted to utilize DevExtreme components without acquiring a commercial license [for 30 days](https://js.devexpress.com/Download/) in non-production settings. You are also allowed to employ them for the purpose of code development not meant for production.
-
-You will need to purchase a commercial license in order to remove the console warning.

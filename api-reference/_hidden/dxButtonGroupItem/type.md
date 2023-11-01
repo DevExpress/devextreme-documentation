@@ -8,10 +8,6 @@ default: 'normal'
 Specifies the button type.
 
 ---
-DevExtreme provides the following button types.
+DevExtreme supplies the following button types:
 
-![Button Types](/images/UiWidgets/Button_Types.png) 
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
-}
+<img src="/images/UiWidgets/buttongroup.png" alt="Button types" style="width: 700px;" /> 

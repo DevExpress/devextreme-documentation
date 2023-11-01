@@ -10,7 +10,7 @@ Specifies how buttons in the group are styled.
 ---
 The following styles are available: 
 
-![Button Styling Modes](/images/UiWidgets/button_stylingMode.png)
+<img src="/images/UiWidgets/buttongroup.png" alt="Button types" style="width: 700px;" /> 
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview/"

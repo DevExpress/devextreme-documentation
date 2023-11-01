@@ -2,7 +2,7 @@
 id: Enums.ScaleBreakLineStyle
 acceptValues: 'straight' | 'waved'
 type: Union
-references: dxChart.Options.commonAxisSettings.breakStyle.line,dxRangeSelector.Options.scale.breakStyle.line
+references: dxChart.Options.commonAxisSettings.breakStyle.line|dxRangeSelector.Options.scale.breakStyle.line
 ---
 ---
 ##### shortDescription

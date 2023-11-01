@@ -2,7 +2,7 @@
 id: Enums.LabelPosition
 acceptValues: 'columns' | 'inside' | 'outside'
 type: Union
-references: dxFunnel.Options.label.position,dxPieChartSeriesTypes.CommonPieChartSeries.label.position
+references: dxFunnel.Options.label.position|dxPieChartSeriesTypes.CommonPieChartSeries.label.position
 ---
 ---
 ##### shortDescription

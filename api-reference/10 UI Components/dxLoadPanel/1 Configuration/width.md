@@ -1,7 +1,7 @@
 ---
 id: dxLoadPanel.Options.width
 type: Number | String | function()
-default: 222, 60 (Material)
+default: 222, 'auto' (Fluent), 60 (Material)
 ---
 ---
 ##### return: Number | String

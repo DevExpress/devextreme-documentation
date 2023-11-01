@@ -8,9 +8,6 @@ default: 'outlined'
 Specifies how the button is styled.
 
 ---
+DevExtreme supplies the following drop-down button styling modes:
 
-You can see the available styles in the demo. 
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/"
-}
+<img src="/images/UiWidgets/ddbutton.png" alt="Drop-down button types" style="width: 700px;" />

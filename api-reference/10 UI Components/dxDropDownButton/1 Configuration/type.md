@@ -5,7 +5,9 @@ default: 'normal'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the drop-down button type.
 
 ---
-<!-- Description goes here -->
+DevExtreme supplies the following drop-down button types:
+
+<img src="/images/UiWidgets/ddbutton.png" alt="Drop-down button types" style="width: 700px;" />

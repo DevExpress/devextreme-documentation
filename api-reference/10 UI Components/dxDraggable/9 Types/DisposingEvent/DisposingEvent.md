@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/draggable:DisposingEvent
 generateTypeLink: 
+references: dxDraggable.Options.onDisposing
 ---
 ---
 ##### shortDescription

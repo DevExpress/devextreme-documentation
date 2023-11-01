@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/number_box:DisposingEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

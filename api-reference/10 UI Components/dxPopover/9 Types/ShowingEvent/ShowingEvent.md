@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/popover:ShowingEvent
 generateTypeLink: 
+references: dxPopover.Options.onShowing
 ---
 ---
 ##### shortDescription

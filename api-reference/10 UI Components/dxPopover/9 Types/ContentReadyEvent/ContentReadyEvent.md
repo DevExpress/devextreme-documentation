@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/popover:ContentReadyEvent
 generateTypeLink: 
+references: dxPopover.Options.onContentReady
 ---
 ---
 ##### shortDescription

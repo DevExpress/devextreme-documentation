@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,TargetedAppointmentInfo
 uid: ui/scheduler:AppointmentContextMenuEvent
 generateTypeLink: 
+references: dxScheduler.Options.onAppointmentContextMenu
 ---
 ---
 ##### shortDescription

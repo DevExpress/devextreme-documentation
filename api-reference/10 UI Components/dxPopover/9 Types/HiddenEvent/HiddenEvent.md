@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/popover:HiddenEvent
 generateTypeLink: 
+references: dxPopover.Options.onHidden
 ---
 ---
 ##### shortDescription

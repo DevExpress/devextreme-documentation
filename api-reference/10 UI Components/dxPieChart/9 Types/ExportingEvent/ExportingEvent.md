@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ExportInfo
 uid: viz/pie_chart:ExportingEvent
 generateTypeLink: 
+references: dxPieChart.Options.onExporting
 ---
 ---
 ##### shortDescription

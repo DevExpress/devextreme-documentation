@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/accordion:ItemHoldEvent
 generateTypeLink: 
+references: dxAccordion.Options.onItemHold
 ---
 ---
 ##### shortDescription

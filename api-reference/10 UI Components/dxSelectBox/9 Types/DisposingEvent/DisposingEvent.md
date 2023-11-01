@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/select_box:DisposingEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

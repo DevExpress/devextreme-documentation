@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/autocomplete:InitializedEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onInitialized
 ---
 ---
 ##### shortDescription

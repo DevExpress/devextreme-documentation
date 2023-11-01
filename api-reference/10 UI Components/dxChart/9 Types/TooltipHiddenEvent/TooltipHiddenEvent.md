@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_chart_components_base_chart_TooltipInfo
 uid: viz/chart:TooltipHiddenEvent
 generateTypeLink: 
+references: dxChart.Options.onTooltipHidden
 ---
 ---
 ##### shortDescription

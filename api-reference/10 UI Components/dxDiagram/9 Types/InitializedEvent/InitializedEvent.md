@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/diagram:InitializedEvent
 generateTypeLink: 
+references: dxDiagram.Options.onInitialized
 ---
 ---
 ##### shortDescription

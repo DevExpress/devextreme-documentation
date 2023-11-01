@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:ResourceInsertingEvent
 generateTypeLink: 
+references: dxGantt.Options.onResourceInserting
 ---
 ---
 ##### shortDescription

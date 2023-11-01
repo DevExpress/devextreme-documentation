@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/polar_chart:FileSavingEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onFileSaving
 ---
 ---
 ##### shortDescription

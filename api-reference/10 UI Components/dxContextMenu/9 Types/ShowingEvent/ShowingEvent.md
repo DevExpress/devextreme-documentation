@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/context_menu:ShowingEvent
 generateTypeLink: 
+references: dxContextMenu.Options.onShowing
 ---
 ---
 ##### shortDescription

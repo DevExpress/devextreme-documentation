@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ScrollInfo
 uid: ui/lookup:ScrollEvent
 generateTypeLink: 
+references: dxLookup.Options.onScroll
 ---
 ---
 ##### shortDescription

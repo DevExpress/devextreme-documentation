@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo,PointInteractionInfo
 uid: viz/polar_chart:PointClickEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onPointClick
 ---
 ---
 ##### shortDescription

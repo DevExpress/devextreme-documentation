@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/recurrence_editor:DisposingEvent
 generateTypeLink: 
+references: dxRecurrenceEditor.Options.onDisposing
 ---
 ---
 ##### shortDescription

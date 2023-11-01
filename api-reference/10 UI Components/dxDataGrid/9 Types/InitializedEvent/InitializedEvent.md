@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/data_grid:InitializedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onInitialized
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/polar_chart:IncidentOccurredEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

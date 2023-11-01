@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowKeyInfo
 uid: ui/tree_list:RowCollapsedEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowCollapsed
 ---
 ---
 ##### shortDescription

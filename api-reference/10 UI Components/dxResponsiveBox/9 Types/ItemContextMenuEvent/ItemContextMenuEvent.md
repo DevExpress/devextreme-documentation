@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/responsive_box:ItemContextMenuEvent
 generateTypeLink: 
+references: dxResponsiveBox.Options.onItemContextMenu
 ---
 ---
 ##### shortDescription

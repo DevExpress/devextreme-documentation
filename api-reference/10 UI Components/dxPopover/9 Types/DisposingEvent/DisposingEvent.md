@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/popover:DisposingEvent
 generateTypeLink: 
+references: dxPopover.Options.onDisposing
 ---
 ---
 ##### shortDescription

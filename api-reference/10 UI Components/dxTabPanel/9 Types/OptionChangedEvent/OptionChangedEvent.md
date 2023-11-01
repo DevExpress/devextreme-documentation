@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/tab_panel:OptionChangedEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

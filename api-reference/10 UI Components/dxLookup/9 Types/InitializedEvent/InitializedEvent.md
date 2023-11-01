@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/lookup:InitializedEvent
 generateTypeLink: 
+references: dxLookup.Options.onInitialized
 ---
 ---
 ##### shortDescription

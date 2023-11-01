@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/sparkline:FileSavingEvent
 generateTypeLink: 
+references: dxSparkline.Options.onFileSaving
 ---
 ---
 ##### shortDescription

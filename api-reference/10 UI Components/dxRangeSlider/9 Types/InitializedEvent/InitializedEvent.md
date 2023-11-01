@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/range_slider:InitializedEvent
 generateTypeLink: 
+references: dxRangeSlider.Options.onInitialized
 ---
 ---
 ##### shortDescription

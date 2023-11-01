@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/defer_rendering:InitializedEvent
 generateTypeLink: 
+references: dxDeferRendering.Options.onInitialized
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/resizable:OptionChangedEvent
 generateTypeLink: 
+references: dxResizable.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

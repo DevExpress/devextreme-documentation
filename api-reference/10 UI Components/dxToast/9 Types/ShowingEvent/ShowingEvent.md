@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/toast:ShowingEvent
 generateTypeLink: 
+references: dxToast.Options.onShowing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/slider:DisposingEvent
 generateTypeLink: 
+references: dxSlider.Options.onDisposing
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/file_uploader:OptionChangedEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

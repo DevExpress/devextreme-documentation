@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/action_sheet:CancelClickEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onCancelClick
 ---
 ---
 ##### shortDescription

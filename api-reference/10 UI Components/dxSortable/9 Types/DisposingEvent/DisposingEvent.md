@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/sortable:DisposingEvent
 generateTypeLink: 
+references: dxSortable.Options.onDisposing
 ---
 ---
 ##### shortDescription

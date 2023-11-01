@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/chart:ZoomEndEvent
 generateTypeLink: 
+references: dxChart.Options.onZoomEnd
 ---
 ---
 ##### shortDescription

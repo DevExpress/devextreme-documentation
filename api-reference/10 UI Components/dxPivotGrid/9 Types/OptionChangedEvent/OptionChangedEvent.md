@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/pivot_grid:OptionChangedEvent
 generateTypeLink: 
+references: dxPivotGrid.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

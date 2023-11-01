@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskInsertingEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskInserting
 ---
 ---
 ##### shortDescription

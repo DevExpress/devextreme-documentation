@@ -4,6 +4,7 @@ export: AddEvent
 type: Object
 uid: ui/sortable:AddEvent
 generateTypeLink: 
+references: dxSortable.Options.onAdd
 ---
 ---
 ##### shortDescription

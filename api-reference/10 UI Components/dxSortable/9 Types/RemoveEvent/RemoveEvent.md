@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/sortable:RemoveEvent
 generateTypeLink: 
+references: dxSortable.Options.onRemove
 ---
 ---
 ##### shortDescription

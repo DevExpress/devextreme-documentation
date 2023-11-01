@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,DataErrorOccurredInfo
 uid: ui/tree_list:DataErrorOccurredEvent
 generateTypeLink: 
+references: dxTreeList.Options.onDataErrorOccurred
 ---
 ---
 ##### shortDescription

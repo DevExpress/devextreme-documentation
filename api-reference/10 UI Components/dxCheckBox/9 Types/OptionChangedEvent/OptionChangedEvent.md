@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/check_box:OptionChangedEvent
 generateTypeLink: 
+references: dxCheckBox.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

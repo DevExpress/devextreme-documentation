@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:KeyDownEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onKeyDown
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/chart:SeriesClickEvent
 generateTypeLink: 
+references: dxChart.Options.onSeriesClick
 ---
 ---
 ##### shortDescription

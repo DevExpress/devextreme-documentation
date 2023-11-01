@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/scheduler:OptionChangedEvent
 generateTypeLink: 
+references: dxScheduler.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

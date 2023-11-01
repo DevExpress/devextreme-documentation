@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/slider:InitializedEvent
 generateTypeLink: 
+references: dxSlider.Options.onInitialized
 ---
 ---
 ##### shortDescription

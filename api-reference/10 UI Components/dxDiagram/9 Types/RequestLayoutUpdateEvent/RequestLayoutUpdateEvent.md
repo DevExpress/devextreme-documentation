@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/diagram:RequestLayoutUpdateEvent
 generateTypeLink: 
+references: dxDiagram.Options.onRequestLayoutUpdate
 ---
 ---
 ##### shortDescription

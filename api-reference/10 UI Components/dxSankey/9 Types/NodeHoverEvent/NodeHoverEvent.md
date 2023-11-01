@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sankey:NodeHoverEvent
 generateTypeLink: 
+references: dxSankey.Options.onNodeHoverChanged
 ---
 ---
 ##### shortDescription

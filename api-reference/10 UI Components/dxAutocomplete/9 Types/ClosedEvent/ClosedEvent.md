@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/autocomplete:ClosedEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onClosed
 ---
 ---
 ##### shortDescription

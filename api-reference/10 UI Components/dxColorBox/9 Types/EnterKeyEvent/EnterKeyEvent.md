@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:EnterKeyEvent
 generateTypeLink: 
+references: dxColorBox.Options.onEnterKey
 ---
 ---
 ##### shortDescription

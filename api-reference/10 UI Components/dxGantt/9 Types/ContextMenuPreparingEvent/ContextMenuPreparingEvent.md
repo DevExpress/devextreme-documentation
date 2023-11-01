@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable
 uid: ui/gantt:ContextMenuPreparingEvent
 generateTypeLink: 
+references: dxGantt.Options.onContextMenuPreparing
 ---
 ---
 ##### shortDescription

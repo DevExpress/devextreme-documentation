@@ -2,7 +2,7 @@
 id: Enums.DiagramConnectorLineEnd
 acceptValues: 'none' | 'arrow' | 'outlinedTriangle' | 'filledTriangle'
 type: Union
-references: dxDiagram.Options.defaultItemProperties.connectorLineEnd,dxDiagram.Options.defaultItemProperties.connectorLineStart
+references: dxDiagram.Options.defaultItemProperties.connectorLineEnd|dxDiagram.Options.defaultItemProperties.connectorLineStart
 ---
 ---
 ##### shortDescription

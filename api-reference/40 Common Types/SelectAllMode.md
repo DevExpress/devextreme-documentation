@@ -2,7 +2,7 @@
 id: Enums.SelectAllMode
 acceptValues: 'allPages' | 'page'
 type: Union
-references: dxDataGrid.Options.selection.selectAllMode,dxList.Options.selectAllMode,dxTagBox.Options.selectAllMode
+references: dxDataGrid.Options.selection.selectAllMode|dxList.Options.selectAllMode|dxTagBox.Options.selectAllMode
 ---
 ---
 ##### shortDescription

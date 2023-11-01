@@ -2,7 +2,7 @@
 id: Enums.DiagramUnits
 acceptValues: 'in' | 'cm' | 'px'
 type: Union
-references: dxDiagram.Options.units,dxDiagram.Options.viewUnits
+references: dxDiagram.Options.units|dxDiagram.Options.viewUnits
 ---
 ---
 ##### shortDescription

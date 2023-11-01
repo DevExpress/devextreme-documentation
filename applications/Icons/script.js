@@ -24,6 +24,7 @@
     "edit",
     "email",
     "event",
+    "errorcircle",
     "favorites",
     "find",
     "filter",

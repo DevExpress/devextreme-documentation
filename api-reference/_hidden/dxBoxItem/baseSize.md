@@ -1,6 +1,6 @@
 ---
 id: dxBoxItem.baseSize
-type: Number | Enums.Mode
+type: Number | String
 default: 0
 ---
 ---

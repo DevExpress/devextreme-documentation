@@ -6,16 +6,15 @@ The `Template` element declares a named template. Its `name` property should be 
 Pass the rendering function to the `Template`'s `render` property:
 
         <!-- tab: Function component -->
+        import React, { useCallback, useState } from 'react';
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
-
         import service from './data.js';
+        import { CheckBox } from 'devextreme-react/check-box';
 
-        const renderSelectBoxItem = (item) => {
-            return <div>{item.toUpperCase()}</div>;
-        }
         const employee = service.getEmployee();
         const positions = service.getPositions();
+
         const positionEditorOptions = {
             items: positions,
             value: '',
@@ -23,52 +22,84 @@ Pass the rendering function to the `Template`'s `render` property:
         };
 
         export default function App() {
+            const [upperCasePositions, setUpperCasePositions] = useState(false);
+
+            const renderSelectBoxItem = useCallback((item) => {
+                return <div>{upperCasePositions ? item.toUpperCase() : item}</div>;
+            }, [upperCasePositions]);
+
+            const onUpperCaseSettingChange = useCallback((e) => {
+                setUpperCasePositions(e.value);
+            }, []);
+
             return (
-                <Form formData={employee}>
-                    <Item
-                        dataField="Position"
-                        editorType="dxSelectBox"
-                        editorOptions={positionEditorOptions}
+                <>
+                    <CheckBox
+                        text="Display positions in upper case"
+                        onValueChanged={onUpperCaseSettingChange}
                     />
-                    <Template name="selectBoxItem" render={renderSelectBoxItem} />
-                </Form>
+                    <Form formData={employee}>
+                        <Item
+                            dataField="Position"
+                            editorType="dxSelectBox"
+                            editorOptions={positionEditorOptions}
+                        />
+                        <Template name="selectBoxItem" render={renderSelectBoxItem} />
+                    </Form>
+                </>
             );
         }
         
         <!-- tab: Class component -->
+        import * as React from 'react';
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
+        import { CheckBox } from 'devextreme-react/check-box';
 
         import service from './data.js';
-
-        const renderSelectBoxItem = item => {
-            return <div>{item.toUpperCase()}</div>;
-        }
 
         class App extends React.Component {
             constructor(props) {
                 super(props);
+                this.state = { upperCasePositions: false };
                 this.employee = service.getEmployee();
                 this.positions = service.getPositions();
+
+                this.renderSelectBoxItem = this.renderSelectBoxItem.bind(this);
+                this.onUpperCaseSettingChange = this.onUpperCaseSettingChange.bind(this);
+
                 this.positionEditorOptions = {
                     items: this.positions,
                     value: '',
                     itemTemplate: 'selectBoxItem'
                 };
             }
+            renderSelectBoxItem(item) {
+                return <div>{this.state.upperCasePositions ? item.toUpperCase() : item}</div>;
+            }
+            onUpperCaseSettingChange(e) {
+                this.setState({ upperCasePositions: e.value });
+            }
             render() {
                 return (
+                    <>
+                    <CheckBox
+                        text="Display positions in upper case"
+                        onValueChanged={this.onUpperCaseSettingChange}
+                    />
                     <Form formData={this.employee}>
                         <Item
                             dataField="Position"
                             editorType="dxSelectBox"
                             editorOptions={this.positionEditorOptions}
                         />
-                        <Template name="selectBoxItem" render={renderSelectBoxItem} />
+                        <Template name="selectBoxItem" render={this.renderSelectBoxItem} />
                     </Form>
+                </>
                 );
             }
         }
+
         export default App;
 
         <!-- tab: data.js -->
@@ -107,47 +138,94 @@ Pass the rendering function to the `Template`'s `render` property:
 Assign the custom component to the `Template`'s `component` property:
 
         <!-- tab: Function component -->
-        import React, { useState } from 'react';
+        import React, { useState, useCallback } from 'react';
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
+        import { Switch } from 'devextreme-react/switch';
+
         import service from './data.js';
 
-        const SelectBoxItemTmpl = ({ data }) => {
-            return <div>{data.toUpperCase()}</div>;
+        const employee = service.getEmployee();
+        const positions = service.getPositions();
+
+        function RadioGroupItemTemplate({ data }) {
+            const [lineThrough, setLineThrough] = useState(false);
+            const onLineThroughChange = useCallback((e) => {
+                setLineThrough(e);
+            }, []);
+
+            return (
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                }}>
+                    <Switch onValueChange={onLineThroughChange}/>
+                    <div style={{
+                        marginLeft: '10px',
+                        textDecoration: lineThrough ? 'line-through' : 'none',
+                    }}>{data}</div>
+                </div>
+            );
         };
 
         function App() {
-            const employee = service.getEmployee();
-            const positions = service.getPositions();
-            const [positionEditorOptions, setPositionEditorOptions] = useState({
+            const [positionEditorOptions] = useState({
                 items: positions,
                 value: '',
-                itemTemplate: 'selectBoxItem',
+                itemTemplate: 'radioGroupItem',
             });
+
             return (
-                <Form formData={employee}>
-                    <Item
-                        dataField="Position"
-                        editorType="dxSelectBox"
-                        editorOptions={positionEditorOptions}
-                    />
-                    <Template name="selectBoxItem" component={SelectBoxItemTmpl} />
-                </Form>
+                <div style={{ maxWidth: 400 }}>
+                    <Form formData={employee}>
+                        <Item
+                            dataField="Position"
+                            editorType="dxRadioGroup"
+                            editorOptions={positionEditorOptions}
+                        />
+                        <Template name="radioGroupItem" component={RadioGroupItemTemplate} />
+                    </Form>
+                </div>
             );
         };
 
         export default App;
 
         <!-- tab: Class component -->
+        import * as React from 'react';
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
-
+        import { Switch } from 'devextreme-react/switch';
         import service from './data.js';
 
-        class SelectBoxItemTmpl extends React.PureComponent {
+        class RadioGroupItemTemplate extends React.PureComponent {
+            constructor() {
+                super();
+
+                this.state = { lineThrough: false };
+                this.onLineThroughChange = this.onLineThroughChange.bind(this);
+            }
+            onLineThroughChange(e) {
+                this.setState({ lineThrough: e });
+            }
             render() {
                 return (
-                    <div>{this.props.data.toUpperCase()}</div>
+                    <div style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                    }}>
+                        <Switch onValueChange={this.onLineThroughChange}/>
+                        <div style={{
+                            marginLeft: '10px',
+                            textDecoration: this.state.lineThrough ? 'line-through' : 'none',
+                        }}>
+                            {this.props.data}
+                        </div>
+                    </div>
                 );
             }
         }
@@ -160,22 +238,25 @@ Assign the custom component to the `Template`'s `component` property:
                 this.positionEditorOptions = {
                     items: this.positions,
                     value: '',
-                    itemTemplate: 'selectBoxItem'
+                    itemTemplate: 'radioGroupItem'
                 };
             }
             render() {
                 return (
-                    <Form formData={this.employee}>
-                        <Item
-                            dataField="Position"
-                            editorType="dxSelectBox"
-                            editorOptions={this.positionEditorOptions}
-                        />
-                        <Template name="selectBoxItem" component={SelectBoxItemTmpl} />
-                    </Form>
+                    <div style={{ maxWidth: 400 }}>
+                        <Form formData={this.employee}>
+                            <Item
+                                dataField="Position"
+                                editorType="dxRadioGroup"
+                                editorOptions={this.positionEditorOptions}
+                            />
+                            <Template name="radioGroupItem" component={RadioGroupItemTemplate} />
+                        </Form>
+                    </div>
                 );
             }
         }
+
         export default App;
 
         <!-- tab: data.js -->

@@ -1,0 +1,3 @@
+The CheckBox component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards.
+
+The CheckBox's aria label depends on the properties you use. If you specify the [text](//Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#text) or [hint](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#hint) property, its value is copied to the aria-label. In other cases, use [elementAttr](/Documentation/ApiReference/UI_Components/dxCheckBox/Configuration/#elementAttr) to specify the aria-label directly.

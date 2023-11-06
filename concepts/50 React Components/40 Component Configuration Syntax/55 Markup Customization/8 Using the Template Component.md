@@ -142,6 +142,7 @@ Assign the custom component to the `Template`'s `component` property:
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
         import { Switch } from 'devextreme-react/switch';
+        import { RadioGroup } from 'devextreme-react/radio-group';
 
         import service from './data.js';
 
@@ -198,6 +199,7 @@ Assign the custom component to the `Template`'s `component` property:
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
         import { Switch } from 'devextreme-react/switch';
+        import { RadioGroup } from 'devextreme-react/radio-group';
         import service from './data.js';
 
         class RadioGroupItemTemplate extends React.PureComponent {

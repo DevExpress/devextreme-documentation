@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+A user can use the following keys to interact with the ColorBox component: 
 
 <table class="dx-table">
     <tr>
@@ -40,10 +40,3 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [ColorBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview)
-- [ColorBox API Reference](/api-reference/10%20UI%20Components/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
-
-[tags]color box, colorBox, navigation, accessibility, keyboard shortcuts

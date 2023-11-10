@@ -260,7 +260,7 @@ The UI component allows a user to resize columns in two different modes: by chan
 ---
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Resizing/AngularJS/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Resizing/"
 }
 
 #####See Also#####

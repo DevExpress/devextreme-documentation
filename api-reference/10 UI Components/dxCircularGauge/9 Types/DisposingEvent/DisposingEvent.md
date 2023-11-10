@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/circular_gauge:DisposingEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onDisposing
 ---
 ---
 ##### shortDescription

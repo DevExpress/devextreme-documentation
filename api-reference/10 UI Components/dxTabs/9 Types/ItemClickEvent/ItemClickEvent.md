@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/tabs:ItemClickEvent
 generateTypeLink: 
+references: dxTabs.Options.onItemClick
 ---
 ---
 ##### shortDescription

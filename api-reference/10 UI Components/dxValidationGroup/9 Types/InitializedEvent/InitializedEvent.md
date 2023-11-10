@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/validation_group:InitializedEvent
 generateTypeLink: 
+references: dxValidationGroup.Options.onInitialized
 ---
 ---
 ##### shortDescription

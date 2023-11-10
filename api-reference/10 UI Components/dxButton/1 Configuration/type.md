@@ -8,7 +8,7 @@ default: 'normal'
 Specifies the button type.
 
 ---
-DevExtreme provides the following button types.
+DevExtreme supplies the following button types:
 
 ![Button Types](/images/UiWidgets/Button_Types.png) 
 

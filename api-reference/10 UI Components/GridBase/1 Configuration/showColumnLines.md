@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.showColumnLines
 type: Boolean
-default: true, false (Material)
+default: true, false (Fluent, Material)
 ---
 ---
 ##### shortDescription

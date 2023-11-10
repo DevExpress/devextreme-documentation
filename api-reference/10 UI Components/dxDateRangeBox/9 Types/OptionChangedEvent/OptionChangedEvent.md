@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/date_range_box:OptionChangedEvent
 generateTypeLink: 
+references: dxDateRangeBox.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

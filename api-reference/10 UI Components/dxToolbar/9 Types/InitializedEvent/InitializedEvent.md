@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/toolbar:InitializedEvent
 generateTypeLink: 
+references: dxToolbar.Options.onInitialized
 ---
 ---
 ##### shortDescription

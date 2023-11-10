@@ -10,3 +10,5 @@ Assign a function to the [onSelectionChanged](/api-reference/10%20UI%20Component
             }
         });
     }); 
+
+[tags] jquery

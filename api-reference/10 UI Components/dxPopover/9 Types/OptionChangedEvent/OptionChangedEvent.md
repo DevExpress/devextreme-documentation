@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/popover:OptionChangedEvent
 generateTypeLink: 
+references: dxPopover.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

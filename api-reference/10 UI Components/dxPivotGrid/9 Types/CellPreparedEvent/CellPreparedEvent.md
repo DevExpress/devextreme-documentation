@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/pivot_grid:CellPreparedEvent
 generateTypeLink: 
+references: dxPivotGrid.Options.onCellPrepared
 ---
 ---
 ##### shortDescription

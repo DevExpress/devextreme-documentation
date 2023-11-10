@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ListItemInfo
 uid: ui/list:ItemDeletingEvent
 generateTypeLink: 
+references: dxList.Options.onItemDeleting
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/load_panel:HiddenEvent
 generateTypeLink: 
+references: dxLoadPanel.Options.onHidden
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:ItemRenamedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onItemRenamed
 ---
 ---
 ##### shortDescription

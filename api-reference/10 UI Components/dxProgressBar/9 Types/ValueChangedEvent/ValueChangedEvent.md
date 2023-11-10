@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/progress_bar:ValueChangedEvent
 generateTypeLink: 
+references: dxProgressBar.Options.onValueChanged
 ---
 ---
 ##### shortDescription

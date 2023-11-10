@@ -1,7 +1,7 @@
 ---
 id: dxScrollView.Options.pulledDownText
 type: String
-default: 'Release to refresh...', '' (Material)
+default: 'Release to refresh...', '' (Fluent, Material)
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tag_box:MultiTagPreparingEvent
 generateTypeLink: 
+references: dxTagBox.Options.onMultiTagPreparing
 ---
 ---
 ##### shortDescription

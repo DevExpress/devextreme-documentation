@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/data_grid:FocusedRowChangingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onFocusedRowChanging
 ---
 ---
 ##### shortDescription

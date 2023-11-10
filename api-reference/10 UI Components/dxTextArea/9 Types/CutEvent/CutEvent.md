@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_area:CutEvent
 generateTypeLink: 
+references: dxTextArea.Options.onCut
 ---
 ---
 ##### shortDescription

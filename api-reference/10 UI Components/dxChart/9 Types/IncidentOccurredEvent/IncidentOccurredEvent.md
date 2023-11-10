@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/chart:IncidentOccurredEvent
 generateTypeLink: 
+references: dxChart.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

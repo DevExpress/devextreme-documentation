@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/multi_view:InitializedEvent
 generateTypeLink: 
+references: dxMultiView.Options.onInitialized
 ---
 ---
 ##### shortDescription

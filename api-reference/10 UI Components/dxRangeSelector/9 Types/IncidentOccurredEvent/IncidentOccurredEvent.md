@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/range_selector:IncidentOccurredEvent
 generateTypeLink: 
+references: dxRangeSelector.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

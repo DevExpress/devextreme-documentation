@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/toolbar:ItemRenderedEvent
 generateTypeLink: 
+references: dxToolbar.Options.onItemRendered
 ---
 ---
 ##### shortDescription

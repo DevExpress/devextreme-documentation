@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/switch:ValueChangedEvent
 generateTypeLink: 
+references: dxSwitch.Options.onValueChanged
 ---
 ---
 ##### shortDescription

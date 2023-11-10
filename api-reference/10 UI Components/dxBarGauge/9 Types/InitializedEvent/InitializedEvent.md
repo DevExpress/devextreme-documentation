@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/bar_gauge:InitializedEvent
 generateTypeLink: 
+references: dxBarGauge.Options.onInitialized
 ---
 ---
 ##### shortDescription

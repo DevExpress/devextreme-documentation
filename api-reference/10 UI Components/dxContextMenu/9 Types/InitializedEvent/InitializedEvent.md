@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/context_menu:InitializedEvent
 generateTypeLink: 
+references: dxContextMenu.Options.onInitialized
 ---
 ---
 ##### shortDescription

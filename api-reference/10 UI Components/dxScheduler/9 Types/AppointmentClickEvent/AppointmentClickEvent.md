@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo,TargetedAppointmentInfo
 uid: ui/scheduler:AppointmentClickEvent
 generateTypeLink: 
+references: dxScheduler.Options.onAppointmentClick
 ---
 ---
 ##### shortDescription

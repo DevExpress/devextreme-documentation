@@ -6,6 +6,7 @@ hidden:
 type: Cancelable | Object
 inherits: Cancelable
 generateTypeLink: 
+references: BaseWidget.Options.onFileSaving
 ---
 ---
 ##### shortDescription

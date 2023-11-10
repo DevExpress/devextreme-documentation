@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/tree_map:InitializedEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onInitialized
 ---
 ---
 ##### shortDescription

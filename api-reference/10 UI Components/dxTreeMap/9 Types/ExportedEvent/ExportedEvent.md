@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/tree_map:ExportedEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onExported
 ---
 ---
 ##### shortDescription

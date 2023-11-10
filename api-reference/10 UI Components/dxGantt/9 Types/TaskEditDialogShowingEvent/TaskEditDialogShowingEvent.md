@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskEditDialogShowingEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskEditDialogShowing
 ---
 ---
 ##### shortDescription

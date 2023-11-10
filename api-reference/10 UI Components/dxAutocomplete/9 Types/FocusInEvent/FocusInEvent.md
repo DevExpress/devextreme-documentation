@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/autocomplete:FocusInEvent
 generateTypeLink: 
+references: dxAutocomplete.Options.onFocusIn
 ---
 ---
 ##### shortDescription

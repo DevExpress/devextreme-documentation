@@ -83,67 +83,6 @@ dx.web.js, dx.all.js
         [dataSource]="pivotGridDataSource">
     </dx-pivot-grid>
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
-                store: {
-                    // ...
-                    // Underlying store is configured here
-                    // ...
-                },
-                fields: [{
-                    area: "column",
-                    dataField: "OrderDate",
-                    dataType: "date"
-                }, {
-                    area: "row",
-                    dataField: "ShipCity"
-                }, {
-                    area: "data",
-                    summaryType: "count"
-                }]
-            });
-        });
-
-    <!--HTML-->
-    <div dx-pivot-grid="{
-        dataSource: pivotGridDataSource
-    }"></div>
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var viewModel = {
-        pivotGridDataSource: new DevExpress.data.PivotGridDataSource({
-            store: {
-                // ...
-                // Underlying store is configured here
-                // ...
-            },
-            fields: [{
-                area: "column",
-                dataField: "OrderDate",
-                dataType: "date"
-            }, {
-                area: "row",
-                dataField: "ShipCity"
-            }, {
-                area: "data",
-                summaryType: "count"
-            }]
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
-    <!--HTML-->
-    <div data-bind="dxPivotGrid: {
-        dataSource: pivotGridDataSource
-    }"></div>
-
 ##### Vue
 
     <!-- tab: App.vue -->

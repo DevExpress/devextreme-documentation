@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ResizeInfo
 uid: ui/resizable:ResizeStartEvent
 generateTypeLink: 
+references: dxResizable.Options.onResizeStart
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/tree_list:RowDblClickEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowDblClick
 ---
 ---
 ##### shortDescription

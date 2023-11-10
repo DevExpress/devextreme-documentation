@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/slider:ValueChangedEvent
 generateTypeLink: 
+references: dxSlider.Options.onValueChanged
 ---
 ---
 ##### shortDescription

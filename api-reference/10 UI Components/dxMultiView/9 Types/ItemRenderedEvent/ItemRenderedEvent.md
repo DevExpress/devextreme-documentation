@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/multi_view:ItemRenderedEvent
 generateTypeLink: 
+references: dxMultiView.Options.onItemRendered
 ---
 ---
 ##### shortDescription

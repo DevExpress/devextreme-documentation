@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/chart:InitializedEvent
 generateTypeLink: 
+references: dxChart.Options.onInitialized
 ---
 ---
 ##### shortDescription

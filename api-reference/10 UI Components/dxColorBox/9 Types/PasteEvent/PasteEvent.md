@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/color_box:PasteEvent
 generateTypeLink: 
+references: dxColorBox.Options.onPaste
 ---
 ---
 ##### shortDescription

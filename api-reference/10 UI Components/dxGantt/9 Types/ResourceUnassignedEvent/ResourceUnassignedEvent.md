@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:ResourceUnassignedEvent
 generateTypeLink: 
+references: dxGantt.Options.onResourceUnassigned
 ---
 ---
 ##### shortDescription

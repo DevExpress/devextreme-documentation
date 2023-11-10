@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:EnterKeyEvent
 generateTypeLink: 
+references: dxTagBox.Options.onEnterKey
 ---
 ---
 ##### shortDescription

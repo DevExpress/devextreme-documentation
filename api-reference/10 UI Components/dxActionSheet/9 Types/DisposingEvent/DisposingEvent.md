@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/action_sheet:DisposingEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onDisposing
 ---
 ---
 ##### shortDescription

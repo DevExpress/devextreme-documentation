@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/form:FieldDataChangedEvent
 generateTypeLink: 
+references: dxForm.Options.onFieldDataChanged
 ---
 ---
 ##### shortDescription

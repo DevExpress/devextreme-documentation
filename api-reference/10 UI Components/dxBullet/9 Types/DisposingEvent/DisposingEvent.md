@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/bullet:DisposingEvent
 generateTypeLink: 
+references: dxBullet.Options.onDisposing
 ---
 ---
 ##### shortDescription

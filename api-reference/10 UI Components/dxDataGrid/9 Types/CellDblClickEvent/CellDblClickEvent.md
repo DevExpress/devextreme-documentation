@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/data_grid:CellDblClickEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onCellDblClick
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:CellHoverChangedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onCellHoverChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/gallery:ItemHoldEvent
 generateTypeLink: 
+references: dxGallery.Options.onItemHold
 ---
 ---
 ##### shortDescription

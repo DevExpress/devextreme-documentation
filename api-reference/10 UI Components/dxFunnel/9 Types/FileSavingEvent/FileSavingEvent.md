@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/funnel:FileSavingEvent
 generateTypeLink: 
+references: dxFunnel.Options.onFileSaving
 ---
 ---
 ##### shortDescription

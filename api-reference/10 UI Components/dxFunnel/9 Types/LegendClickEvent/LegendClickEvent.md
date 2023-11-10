@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,FunnelItemInfo
 uid: viz/funnel:LegendClickEvent
 generateTypeLink: 
+references: dxFunnel.Options.onLegendClick
 ---
 ---
 ##### shortDescription

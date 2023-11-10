@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/map:ReadyEvent
 generateTypeLink: 
+references: dxMap.Options.onReady
 ---
 ---
 ##### shortDescription

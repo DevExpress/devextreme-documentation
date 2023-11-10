@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:FocusedItemChangedEvent
 generateTypeLink: 
+references: dxFileManager.Options.onFocusedItemChanged
 ---
 ---
 ##### shortDescription

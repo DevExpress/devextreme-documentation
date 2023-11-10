@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:ResourceDeletedEvent
 generateTypeLink: 
+references: dxGantt.Options.onResourceDeleted
 ---
 ---
 ##### shortDescription

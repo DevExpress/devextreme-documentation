@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/date_box:InitializedEvent
 generateTypeLink: 
+references: dxDateBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

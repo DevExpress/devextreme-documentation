@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:ContentReadyEvent
 generateTypeLink: 
+references: dxGantt.Options.onContentReady
 ---
 ---
 ##### shortDescription

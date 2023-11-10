@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/map:MarkerRemovedEvent
 generateTypeLink: 
+references: dxMap.Options.onMarkerRemoved
 ---
 ---
 ##### shortDescription

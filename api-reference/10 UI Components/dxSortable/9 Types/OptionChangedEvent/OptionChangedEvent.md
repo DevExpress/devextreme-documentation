@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/sortable:OptionChangedEvent
 generateTypeLink: 
+references: dxSortable.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

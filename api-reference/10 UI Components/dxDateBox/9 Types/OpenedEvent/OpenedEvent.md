@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/date_box:OpenedEvent
 generateTypeLink: 
+references: dxDateBox.Options.onOpened
 ---
 ---
 ##### shortDescription

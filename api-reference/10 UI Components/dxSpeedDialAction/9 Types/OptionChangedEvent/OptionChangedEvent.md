@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/speed_dial_action:OptionChangedEvent
 generateTypeLink: 
+references: dxSpeedDialAction.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

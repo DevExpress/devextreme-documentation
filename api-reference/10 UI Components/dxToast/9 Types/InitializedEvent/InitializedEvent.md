@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/toast:InitializedEvent
 generateTypeLink: 
+references: dxToast.Options.onInitialized
 ---
 ---
 ##### shortDescription

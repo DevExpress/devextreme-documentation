@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/button:ContentReadyEvent
 generateTypeLink: 
+references: dxButton.Options.onContentReady
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/select_box:ChangeEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onChange
 ---
 ---
 ##### shortDescription

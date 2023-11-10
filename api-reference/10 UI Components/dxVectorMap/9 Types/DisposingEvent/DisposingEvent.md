@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/vector_map:DisposingEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onDisposing
 ---
 ---
 ##### shortDescription

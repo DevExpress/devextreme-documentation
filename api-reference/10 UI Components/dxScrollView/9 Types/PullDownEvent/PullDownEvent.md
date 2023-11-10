@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scroll_view:PullDownEvent
 generateTypeLink: 
+references: dxScrollView.Options.onPullDown
 ---
 ---
 ##### shortDescription

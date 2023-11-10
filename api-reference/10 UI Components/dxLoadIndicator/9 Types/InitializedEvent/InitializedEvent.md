@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/load_indicator:InitializedEvent
 generateTypeLink: 
+references: dxLoadIndicator.Options.onInitialized
 ---
 ---
 ##### shortDescription

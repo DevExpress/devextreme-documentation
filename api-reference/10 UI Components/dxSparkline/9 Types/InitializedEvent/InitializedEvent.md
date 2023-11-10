@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/sparkline:InitializedEvent
 generateTypeLink: 
+references: dxSparkline.Options.onInitialized
 ---
 ---
 ##### shortDescription

@@ -1,0 +1,16 @@
+#include demos-intro
+
+- [Colors Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ColorsCustomization/)
+- [Zooming and Centering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ZoomingAndCentering/)
+- [Palette](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/Palette/)
+- [Image Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/ImageMarkers/)
+- [Bubble Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/BubbleMarkers/)
+- [Pie Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/PieMarkers/)
+- [Dynamic Viewport](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/DynamicViewport/)
+- [Area with Labels and Two Legends](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/AreaWithLabelsAndTwoLegends/)
+- [Tooltips: HTML Markup Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/TooltipHTMLSupport/)
+- [Custom Projection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection/)
+- [Floor Plan](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/FloorPlan/)
+- [Multiple Layers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/MultipleLayers/)
+- [Custom Map Data](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomMapData/)
+- [Custom Annotations](https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomAnnotations/)

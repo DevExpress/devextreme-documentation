@@ -1,3 +1,0 @@
-Developer Express Inc licenses DevExtreme on a per developer basis. Each developer using DevExtreme must purchase/acquire a license. If you have many licenses, you can assign them to different developers, so that each developer will have their own personal key in Download Manager under their DevExpress account. While each developer needs to be licensed, the license key is set once per project, where the DevExtreme components are used. 
-
-If a developer leaves or stops working with DevExtreme, you can revoke their license in your personal account.  

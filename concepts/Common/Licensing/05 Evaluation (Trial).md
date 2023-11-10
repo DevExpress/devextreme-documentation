@@ -1,9 +1,5 @@
-Per the terms of the End User License Agreement (EULA), you are permitted to utilize DevExtreme components without acquiring a commercial license [for 30 days](https://js.devexpress.com/Download/) in non-production settings. You are also allowed to employ them for the purpose of code development not meant for production. 
+Per the terms of the End User License Agreement (EULA), you are permitted to evaluate DevExtreme components [for 30-days](https://js.devexpress.com/Download/).
 
-During the trial period, you get a console warning about the missing license. To remove the message and use DevExtreme components for production, you will need to purchase a commercial license. 
+During the 30-day trial period, a [console warning](/Documentation/Guide/Common/Licensing/#Validation) will note that you are using an unlicensed version of DevExtreme. To remove this console warning message and use DevExtreme components for production projects, you will need to purchase a commercial license. When you are ready to purchase a license and obtain your
 
-The license key is meant to help you stay compliant with the DevExtreme End User License Agreement. DevExtreme license copy comes with its own license key. 
-
-When you purchase a DevExtreme, ASP.NET/Blazor, DXperience, or Universal Subscription, a DevExtreme license key will be auto generated on your behalf.  You can find this license key in the DevExpress [Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/). 
-
-Even if you use sources to download and install DevExtreme other than installers from Download Manager (NuGet, npm, yarn, CDN, zip), you still need to use the key from Download Manager.
+DevExtreme license key, please contact a member of the [DevExpress Client Services Team](https://supportcenter.devexpress.com/ticket/create) for assistance or visit the [DevExtreme Purchase](https://js.devexpress.com/Buy/) page.

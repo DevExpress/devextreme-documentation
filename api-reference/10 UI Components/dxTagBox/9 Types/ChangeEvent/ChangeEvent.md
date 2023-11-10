@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/tag_box:ChangeEvent
 generateTypeLink: 
+references: dxTagBox.Options.onChange
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sparkline:TooltipShownEvent
 generateTypeLink: 
+references: dxSparkline.Options.onTooltipShown
 ---
 ---
 ##### shortDescription

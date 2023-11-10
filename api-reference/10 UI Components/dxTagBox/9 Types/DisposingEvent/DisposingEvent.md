@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tag_box:DisposingEvent
 generateTypeLink: 
+references: dxTagBox.Options.onDisposing
 ---
 ---
 ##### shortDescription

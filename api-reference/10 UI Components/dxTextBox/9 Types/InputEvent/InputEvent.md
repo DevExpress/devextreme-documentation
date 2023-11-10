@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/text_box:InputEvent
 generateTypeLink: 
+references: dxTextBox.Options.onInput
 ---
 ---
 ##### shortDescription

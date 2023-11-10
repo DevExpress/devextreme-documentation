@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_uploader:DisposingEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onDisposing
 ---
 ---
 ##### shortDescription

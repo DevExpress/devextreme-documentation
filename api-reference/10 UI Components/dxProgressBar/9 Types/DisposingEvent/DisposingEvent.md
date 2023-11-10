@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/progress_bar:DisposingEvent
 generateTypeLink: 
+references: dxProgressBar.Options.onDisposing
 ---
 ---
 ##### shortDescription

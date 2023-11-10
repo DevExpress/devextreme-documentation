@@ -1,7 +1,7 @@
 ---
 id: dxToast.Options.displayTime
 type: Number
-default: 2000, 4000 (Material)
+default: 2000, 4000 (Fluent, Material)
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/load_panel:DisposingEvent
 generateTypeLink: 
+references: dxLoadPanel.Options.onDisposing
 ---
 ---
 ##### shortDescription

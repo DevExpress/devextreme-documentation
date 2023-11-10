@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/polar_chart:DoneEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onDone
 ---
 ---
 ##### shortDescription

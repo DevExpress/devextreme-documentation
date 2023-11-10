@@ -2,12 +2,10 @@
 id: Enums.DiagramConnectorPosition
 acceptValues: 'start' | 'end'
 type: Union
+references: dxDiagramChangeConnectionArgs.connectorPosition
 ---
 ---
 ##### shortDescription
 The position of the connector in the processed point.
 
 ---
-<!--
-dxDiagramChangeConnectionArgs.connectorPosition(/api-reference/50 Common/Object Structures/dxDiagramChangeConnectionArgs/connectorPosition.md)(ui/diagram.d.ts)
--->

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/file_manager:ContextMenuItemClickEvent
 generateTypeLink: 
+references: dxFileManager.Options.onContextMenuItemClick
 ---
 ---
 ##### shortDescription

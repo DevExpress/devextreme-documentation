@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:FocusedRowChangedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onFocusedRowChanged
 ---
 ---
 ##### shortDescription

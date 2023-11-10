@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/sortable:InitializedEvent
 generateTypeLink: 
+references: dxSortable.Options.onInitialized
 ---
 ---
 ##### shortDescription

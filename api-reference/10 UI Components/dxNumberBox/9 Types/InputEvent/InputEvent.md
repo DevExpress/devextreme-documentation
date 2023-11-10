@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:InputEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onInput
 ---
 ---
 ##### shortDescription

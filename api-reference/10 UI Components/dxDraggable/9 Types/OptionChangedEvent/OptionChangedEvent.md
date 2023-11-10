@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/draggable:OptionChangedEvent
 generateTypeLink: 
+references: dxDraggable.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/diagram:OptionChangedEvent
 generateTypeLink: 
+references: dxDiagram.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

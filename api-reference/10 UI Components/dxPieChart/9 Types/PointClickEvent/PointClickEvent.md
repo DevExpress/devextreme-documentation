@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,PointInteractionInfo
 uid: viz/pie_chart:PointClickEvent
 generateTypeLink: 
+references: dxPieChart.Options.onPointClick
 ---
 ---
 ##### shortDescription

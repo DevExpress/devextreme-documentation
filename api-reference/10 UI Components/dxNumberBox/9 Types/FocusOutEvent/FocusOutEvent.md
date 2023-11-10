@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:FocusOutEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onFocusOut
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/button:OptionChangedEvent
 generateTypeLink: 
+references: dxButton.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

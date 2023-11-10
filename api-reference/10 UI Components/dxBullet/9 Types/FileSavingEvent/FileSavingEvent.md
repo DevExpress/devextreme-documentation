@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/bullet:FileSavingEvent
 generateTypeLink: 
+references: dxBullet.Options.onFileSaving
 ---
 ---
 ##### shortDescription

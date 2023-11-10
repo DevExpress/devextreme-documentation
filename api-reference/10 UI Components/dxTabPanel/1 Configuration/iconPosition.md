@@ -1,7 +1,7 @@
 ---
 id: dxTabPanel.Options.iconPosition
 type: Enums.TabsIconPosition
-default: 'start'
+default: 'start', 'top' (Fluent, Material)
 ---
 ---
 ##### shortDescription

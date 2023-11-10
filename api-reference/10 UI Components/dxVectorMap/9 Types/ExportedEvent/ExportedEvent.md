@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/vector_map:ExportedEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onExported
 ---
 ---
 ##### shortDescription

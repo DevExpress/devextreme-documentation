@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/tree_list:FocusedCellChangingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onFocusedCellChanging
 ---
 ---
 ##### shortDescription

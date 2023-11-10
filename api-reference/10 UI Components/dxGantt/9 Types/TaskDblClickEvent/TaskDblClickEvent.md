@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/gantt:TaskDblClickEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskDblClick
 ---
 ---
 ##### shortDescription

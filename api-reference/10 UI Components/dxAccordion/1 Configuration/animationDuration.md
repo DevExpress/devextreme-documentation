@@ -1,7 +1,7 @@
 ---
 id: dxAccordion.Options.animationDuration
 type: Number
-default: 300, 200 (Material)
+default: 300, 200 (Fluent, Material)
 ---
 ---
 ##### shortDescription

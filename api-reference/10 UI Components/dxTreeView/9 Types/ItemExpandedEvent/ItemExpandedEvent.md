@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,_ui_tree_view_ItemInfo
 uid: ui/tree_view:ItemExpandedEvent
 generateTypeLink: 
+references: dxTreeView.Options.onItemExpanded
 ---
 ---
 ##### shortDescription

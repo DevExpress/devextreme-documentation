@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,CustomItemCreatingInfo
 uid: ui/tag_box:CustomItemCreatingEvent
 generateTypeLink: 
+references: dxTagBox.Options.onCustomItemCreating
 ---
 ---
 ##### shortDescription

@@ -53,45 +53,6 @@ To create a **Query**, call the [query(array)](/api-reference/30%20Data%20Layer/
         }
     }
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            var dataObjects = [
-                { name: "Amelia", birthYear: 1991, gender: "female" },
-                { name: "Benjamin", birthYear: 1983, gender: "male" },
-                { name: "Daniela", birthYear: 1987, gender: "female" },
-                { name: "Lee", birthYear: 1981, gender: "male" }
-            ];
-
-            $scope.processedArray = DevExpress.data.query(dataObjects)
-                .filter([ "gender", "=", "female" ])
-                .sortBy("birthYear")
-                .select("name", "birthYear")
-                .toArray();
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->
-    var dataObjects = [
-        { name: "Amelia", birthYear: 1991, gender: "female" },
-        { name: "Benjamin", birthYear: 1983, gender: "male" },
-        { name: "Daniela", birthYear: 1987, gender: "female" },
-        { name: "Lee", birthYear: 1981, gender: "male" }
-    ];
-
-    var viewModel = {
-        processedArray: DevExpress.data.query(dataObjects)
-            .filter([ "gender", "=", "female" ])
-            .sortBy("birthYear")
-            .select("name", "birthYear")
-            .toArray()
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### Vue
 
     <!-- tab: App.vue -->

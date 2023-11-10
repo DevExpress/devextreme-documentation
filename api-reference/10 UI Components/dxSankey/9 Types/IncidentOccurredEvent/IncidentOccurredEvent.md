@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/sankey:IncidentOccurredEvent
 generateTypeLink: 
+references: dxSankey.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

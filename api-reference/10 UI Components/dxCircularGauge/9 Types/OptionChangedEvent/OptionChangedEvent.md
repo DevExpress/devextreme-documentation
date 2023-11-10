@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/circular_gauge:OptionChangedEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

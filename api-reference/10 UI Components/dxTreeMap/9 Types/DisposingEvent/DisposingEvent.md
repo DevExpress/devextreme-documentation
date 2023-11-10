@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/tree_map:DisposingEvent
 generateTypeLink: 
+references: dxTreeMap.Options.onDisposing
 ---
 ---
 ##### shortDescription

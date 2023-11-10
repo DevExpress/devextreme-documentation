@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/polar_chart:OptionChangedEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

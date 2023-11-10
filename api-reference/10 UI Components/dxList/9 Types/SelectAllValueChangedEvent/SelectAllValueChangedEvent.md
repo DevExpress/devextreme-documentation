@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/list:SelectAllValueChangedEvent
 generateTypeLink: 
+references: dxList.Options.onSelectAllValueChanged
 ---
 ---
 ##### shortDescription

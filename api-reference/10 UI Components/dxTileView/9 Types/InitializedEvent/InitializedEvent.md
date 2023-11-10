@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/tile_view:InitializedEvent
 generateTypeLink: 
+references: dxTileView.Options.onInitialized
 ---
 ---
 ##### shortDescription

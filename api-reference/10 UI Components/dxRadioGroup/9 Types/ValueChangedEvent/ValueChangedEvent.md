@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ValueChangedInfo
 uid: ui/radio_group:ValueChangedEvent
 generateTypeLink: 
+references: dxRadioGroup.Options.onValueChanged
 ---
 ---
 ##### shortDescription

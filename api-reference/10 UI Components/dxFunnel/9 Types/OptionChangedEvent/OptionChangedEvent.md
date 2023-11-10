@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/funnel:OptionChangedEvent
 generateTypeLink: 
+references: dxFunnel.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

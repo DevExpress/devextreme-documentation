@@ -132,57 +132,6 @@ dx.web.js, dx.viz.js, dx.all.js
     }
     export default App;
 
-##### AngularJS  
-
-    <!--JavaScript-->
-    angular.module('DemoApp', ['dx'])
-        .controller('DemoController', function DemoController($scope) {
-            $scope.store = new DevExpress.data.ODataStore({
-                url: "http://www.example.com/Northwind.svc/Products",
-                key: "ProductID",
-                keyType: "Int32",
-                // Other ODataStore properties go here
-            });
-
-            // ===== or inside the DataSource =====
-            $scope.dataSource = new DevExpress.data.DataSource({
-                store: {
-                    type: "odata",
-                    url: "http://www.example.com/Northwind.svc/Products",
-                    key: "ProductID",
-                    keyType: "Int32",
-                    // Other ODataStore properties go here
-                },
-                // Other DataSource properties go here
-            });
-        });
-
-##### Knockout  
-
-    <!--JavaScript-->    
-    var viewModel = {
-        store: new DevExpress.data.ODataStore({
-            url: "http://www.example.com/Northwind.svc/Products",
-            key: "ProductID",
-            keyType: "Int32",
-            // Other ODataStore properties go here
-        })
-
-        // ===== or inside the DataSource =====
-        dataSource: new DevExpress.data.DataSource({
-            store: {
-                type: "odata",
-                url: "http://www.example.com/Northwind.svc/Products",
-                key: "ProductID",
-                keyType: "Int32",
-                // Other ODataStore properties go here
-            },
-            // Other DataSource properties go here
-        })
-    };
-
-    ko.applyBindings(viewModel);
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->@(Html.DevExtreme().WidgetName()

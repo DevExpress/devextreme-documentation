@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/range_selector:DrawnEvent
 generateTypeLink: 
+references: dxRangeSelector.Options.onDrawn
 ---
 ---
 ##### shortDescription

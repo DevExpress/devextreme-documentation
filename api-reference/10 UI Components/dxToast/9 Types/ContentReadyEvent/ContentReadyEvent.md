@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/toast:ContentReadyEvent
 generateTypeLink: 
+references: dxToast.Options.onContentReady
 ---
 ---
 ##### shortDescription

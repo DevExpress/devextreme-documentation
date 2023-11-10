@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowRemovingInfo
 uid: ui/tree_list:RowRemovingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowRemoving
 ---
 ---
 ##### shortDescription

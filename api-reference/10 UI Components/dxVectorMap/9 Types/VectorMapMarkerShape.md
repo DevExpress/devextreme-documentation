@@ -2,12 +2,10 @@
 id: Enums.VectorMapMarkerShape
 acceptValues: 'circle' | 'square'
 type: Union
+references: viz/vector_map:Legend.markerShape
 ---
 ---
 ##### shortDescription
 Specifies the shape of item markers.
 
 ---
-<!--
-dxVectorMapOptions.legends.markerShape(/api-reference/10 UI Components/dxVectorMap/9 Types/Legend/markerShape.md)(viz/vector_map.d.ts)
--->

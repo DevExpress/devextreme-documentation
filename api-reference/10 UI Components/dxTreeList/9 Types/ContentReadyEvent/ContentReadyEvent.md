@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tree_list:ContentReadyEvent
 generateTypeLink: 
+references: dxTreeList.Options.onContentReady
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/recurrence_editor:OptionChangedEvent
 generateTypeLink: 
+references: dxRecurrenceEditor.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

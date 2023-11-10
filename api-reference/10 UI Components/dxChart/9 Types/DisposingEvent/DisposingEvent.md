@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/chart:DisposingEvent
 generateTypeLink: 
+references: dxChart.Options.onDisposing
 ---
 ---
 ##### shortDescription

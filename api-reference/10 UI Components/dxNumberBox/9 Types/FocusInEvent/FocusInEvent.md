@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/number_box:FocusInEvent
 generateTypeLink: 
+references: dxNumberBox.Options.onFocusIn
 ---
 ---
 ##### shortDescription

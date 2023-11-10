@@ -1,7 +1,7 @@
 ---
 id: dxForm.Options.labelLocation
 type: Enums.LabelLocation
-default: 'left', 'top' (Material)
+default: 'left', 'top' (Fluent, Material)
 ---
 ---
 ##### shortDescription

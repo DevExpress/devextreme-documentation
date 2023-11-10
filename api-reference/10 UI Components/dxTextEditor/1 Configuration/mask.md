@@ -49,4 +49,10 @@ A mask can contain the following elements.
     </tr>
 </table>
 
-[note] To escape the masking elements, use the double backslash character (\\\). For example, *"000.\\\0\\\0"*.
+[note]
+
+- To escape the masking elements, use the double backslash character (\\\). For example, *"000.\\\0\\\0"*.
+
+- The `drop` event is not supported for masked input.
+
+[/note]

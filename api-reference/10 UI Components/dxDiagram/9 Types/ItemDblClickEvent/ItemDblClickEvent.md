@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/diagram:ItemDblClickEvent
 generateTypeLink: 
+references: dxDiagram.Options.onItemDblClick
 ---
 ---
 ##### shortDescription

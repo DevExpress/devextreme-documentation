@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/tooltip:ShowingEvent
 generateTypeLink: 
+references: dxTooltip.Options.onShowing
 ---
 ---
 ##### shortDescription

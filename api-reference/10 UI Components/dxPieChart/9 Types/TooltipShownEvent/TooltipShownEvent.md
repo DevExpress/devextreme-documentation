@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_chart_components_base_chart_TooltipInfo
 uid: viz/pie_chart:TooltipShownEvent
 generateTypeLink: 
+references: dxPieChart.Options.onTooltipShown
 ---
 ---
 ##### shortDescription

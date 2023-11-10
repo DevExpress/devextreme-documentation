@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/resizable:InitializedEvent
 generateTypeLink: 
+references: dxResizable.Options.onInitialized
 ---
 ---
 ##### shortDescription

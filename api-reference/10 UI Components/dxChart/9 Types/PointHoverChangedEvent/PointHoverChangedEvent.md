@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,PointInteractionInfo
 uid: viz/chart:PointHoverChangedEvent
 generateTypeLink: 
+references: dxChart.Options.onPointHoverChanged
 ---
 ---
 ##### shortDescription

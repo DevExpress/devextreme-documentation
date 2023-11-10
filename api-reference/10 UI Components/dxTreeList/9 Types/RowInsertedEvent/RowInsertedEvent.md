@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowInsertedInfo
 uid: ui/tree_list:RowInsertedEvent
 generateTypeLink: 
+references: dxTreeList.Options.onRowInserted
 ---
 ---
 ##### shortDescription

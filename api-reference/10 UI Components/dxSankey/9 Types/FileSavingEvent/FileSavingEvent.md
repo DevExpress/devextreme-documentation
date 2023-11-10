@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/sankey:FileSavingEvent
 generateTypeLink: 
+references: dxSankey.Options.onFileSaving
 ---
 ---
 ##### shortDescription

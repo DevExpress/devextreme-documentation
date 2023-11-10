@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/bullet:InitializedEvent
 generateTypeLink: 
+references: dxBullet.Options.onInitialized
 ---
 ---
 ##### shortDescription

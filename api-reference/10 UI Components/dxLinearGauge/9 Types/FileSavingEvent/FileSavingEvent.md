@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/linear_gauge:FileSavingEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onFileSaving
 ---
 ---
 ##### shortDescription

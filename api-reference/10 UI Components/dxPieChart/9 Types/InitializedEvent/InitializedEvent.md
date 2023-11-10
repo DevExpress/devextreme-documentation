@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: viz/pie_chart:InitializedEvent
 generateTypeLink: 
+references: dxPieChart.Options.onInitialized
 ---
 ---
 ##### shortDescription

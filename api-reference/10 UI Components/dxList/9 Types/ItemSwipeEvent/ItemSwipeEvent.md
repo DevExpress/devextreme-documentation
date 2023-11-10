@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ListItemInfo
 uid: ui/list:ItemSwipeEvent
 generateTypeLink: 
+references: dxList.Options.onItemSwipe
 ---
 ---
 ##### shortDescription

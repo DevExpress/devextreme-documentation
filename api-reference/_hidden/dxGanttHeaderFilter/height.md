@@ -1,7 +1,7 @@
 ---
 id: dxGanttHeaderFilter.height
 type: Number
-default: 325, 315 (Material)
+default: 325, 315 (Fluent, Material)
 ---
 ---
 ##### shortDescription

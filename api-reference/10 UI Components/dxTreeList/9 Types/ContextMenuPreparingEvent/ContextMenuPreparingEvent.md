@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tree_list:ContextMenuPreparingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onContextMenuPreparing
 ---
 ---
 ##### shortDescription

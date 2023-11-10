@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/text_area:InitializedEvent
 generateTypeLink: 
+references: dxTextArea.Options.onInitialized
 ---
 ---
 ##### shortDescription

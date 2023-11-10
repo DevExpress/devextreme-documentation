@@ -32,3 +32,5 @@ Use the [columns](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/
     },      
         // ...
     ];
+
+[tags] jquery

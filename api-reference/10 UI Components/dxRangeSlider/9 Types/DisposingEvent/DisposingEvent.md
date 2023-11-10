@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/range_slider:DisposingEvent
 generateTypeLink: 
+references: dxRangeSlider.Options.onDisposing
 ---
 ---
 ##### shortDescription

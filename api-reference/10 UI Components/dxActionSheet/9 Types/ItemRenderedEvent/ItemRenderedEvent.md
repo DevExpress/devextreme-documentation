@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/action_sheet:ItemRenderedEvent
 generateTypeLink: 
+references: dxActionSheet.Options.onItemRendered
 ---
 ---
 ##### shortDescription

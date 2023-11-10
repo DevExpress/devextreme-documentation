@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/html_editor:OptionChangedEvent
 generateTypeLink: 
+references: dxHtmlEditor.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

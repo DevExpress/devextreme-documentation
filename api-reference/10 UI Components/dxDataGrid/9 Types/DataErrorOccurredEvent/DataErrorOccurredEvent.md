@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,DataErrorOccurredInfo
 uid: ui/data_grid:DataErrorOccurredEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onDataErrorOccurred
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/chart:ZoomStartEvent
 generateTypeLink: 
+references: dxChart.Options.onZoomStart
 ---
 ---
 ##### shortDescription

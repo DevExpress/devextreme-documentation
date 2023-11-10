@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/calendar:OptionChangedEvent
 generateTypeLink: 
+references: dxCalendar.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

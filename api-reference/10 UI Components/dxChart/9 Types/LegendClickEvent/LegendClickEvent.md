@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/chart:LegendClickEvent
 generateTypeLink: 
+references: dxChart.Options.onLegendClick
 ---
 ---
 ##### shortDescription

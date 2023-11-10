@@ -262,9 +262,30 @@ If you use the [DevExtreme DataSource](/api-reference/30%20Data%20Layer/DataSour
 
 ---
 
-To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate'). In Angular and Vue, you can declare it in the markup. In React, you can use a rendering function (shown in the code below) or component:
+To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#groupTemplate').
 
 ---
+##### jQuery
+
+    <!--JavaScript-->
+    const lookupData = [{
+        key: "Mr. John Heart",
+        items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
+    }, {
+        key: "Mrs. Olivia Peyton",
+        items: ["Update Personnel Files", "Non-Compete Agreements", "Give Final Approval for Refunds"]
+    }, // ... 
+    ];
+
+    $(function() {
+        $("#lookupContainer").dxLookup({
+            dataSource: lookupData,
+            grouped: true,
+            groupTemplate: function (data) {
+                return $("<div>Assigned: " + data.key + "</div>");
+            }
+        });
+    });
 
 ##### Angular
 
@@ -379,28 +400,6 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20C
     export default App;
 
 ---
-
-If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulation/" target="_blank">DOM manipulation methods</a> to combine the HTML markup for items. To apply this markup, use the [itemTemplate](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#itemTemplate') callback function as shown in the following code.
-
-    <!--JavaScript-->
-    const lookupData = [{
-        key: "Mr. John Heart",
-        items: ["Google AdWords Strategy", "New Brochures", "Update NDA Agreement"]
-    }, {
-        key: "Mrs. Olivia Peyton",
-        items: ["Update Personnel Files", "Non-Compete Agreements", "Give Final Approval for Refunds"]
-    }, // ... 
-    ];
-
-    $(function() {
-        $("#lookupContainer").dxLookup({
-            dataSource: lookupData,
-            grouped: true,
-            groupTemplate: function (data) {
-                return $("<div>Assigned: " + data.key + "</div>");
-            }
-        });
-    });
 
 #####See Also#####
 - [Lookup - Customize the Appearance](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')

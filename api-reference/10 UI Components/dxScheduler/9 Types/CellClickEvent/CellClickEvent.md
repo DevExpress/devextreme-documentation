@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: ui/scheduler:CellClickEvent
 generateTypeLink: 
+references: dxScheduler.Options.onCellClick
 ---
 ---
 ##### shortDescription

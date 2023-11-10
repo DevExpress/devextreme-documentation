@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/gantt:DependencyDeletedEvent
 generateTypeLink: 
+references: dxGantt.Options.onDependencyDeleted
 ---
 ---
 ##### shortDescription

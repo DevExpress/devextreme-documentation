@@ -28,4 +28,7 @@ The [configuration](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Con
 ##### field(e.items): Array<Object>
 Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ---

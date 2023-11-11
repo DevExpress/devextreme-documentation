@@ -16,6 +16,9 @@ The UI component's instance.
 ##### field(e.fullName): String
 The path to the modified property that includes all parent properties.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.name): String
 The modified property if it belongs to the first level. Otherwise, the first-level property it is nested into.
 

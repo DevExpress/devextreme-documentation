@@ -22,6 +22,9 @@ The UI component's instance.
 ##### field(e.key): any
 The task key.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.newValues): any
 The task values after moving.
 

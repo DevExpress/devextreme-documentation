@@ -19,6 +19,9 @@ The path to the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Config
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.value): Object
 The field's new value.
 

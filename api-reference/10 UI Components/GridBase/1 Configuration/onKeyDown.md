@@ -22,6 +22,9 @@ The event that caused the function to execute. It is a [EventObject](/api-refere
 ##### field(e.handled): Boolean
 Indicates whether the UI component has already handled this event.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 
 The following code shows how to handle a key combination:

@@ -19,4 +19,7 @@ The UI component instance's name.
 ##### field(e.item): dxDiagramItem
 A **dxDiagramItem** object descendant (dxDiagramShape or dxDiagramConnector) related to the event.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---

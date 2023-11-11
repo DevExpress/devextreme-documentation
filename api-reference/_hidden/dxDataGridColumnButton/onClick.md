@@ -21,6 +21,9 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.model): any
+The model data. Available only if you use Knockout.
+
 ##### field(e.row): dxDataGridRowObject
 The properties of the button's row.
 

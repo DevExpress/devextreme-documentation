@@ -19,6 +19,9 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ---
 Assign a function to perform a custom action when a button representing an action sheet item is clicked.
 

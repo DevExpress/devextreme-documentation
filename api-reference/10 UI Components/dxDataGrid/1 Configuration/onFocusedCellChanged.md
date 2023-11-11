@@ -25,6 +25,9 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.row): dxDataGridRowObject
 The row's properties.
 

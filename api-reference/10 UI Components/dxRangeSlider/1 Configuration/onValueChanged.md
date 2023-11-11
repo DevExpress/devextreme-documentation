@@ -19,6 +19,9 @@ The UI component's instance.
 ##### field(e.end): Number
 The right edge of the currently selected range.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.start): Number
 The left edge of the currently selected range.
 

@@ -20,6 +20,9 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.model): any
+The model data. Available only if you use Knockout.
+
 ##### field(e.target): polarChartSeriesObject
 The clicked series; described in the [Series](/api-reference/10%20UI%20Components/dxPolarChart/7%20Chart%20Elements/Series '/Documentation/ApiReference/UI_Components/dxPolarChart/Chart_Elements/Series/') section.
 

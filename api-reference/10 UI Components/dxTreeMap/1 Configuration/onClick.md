@@ -20,6 +20,9 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.model): any
+The model data. Available only if you use Knockout.
+
 ##### field(e.node): dxTreeMapNode
 The clicked node; described in the [Node](/api-reference/10%20UI%20Components/dxTreeMap/6%20Node '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/') section.
 

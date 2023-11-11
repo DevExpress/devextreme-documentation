@@ -38,6 +38,9 @@ Indicates whether the prepared row is [selected](/concepts/05%20UI%20Components/
 The row's key.     
 If a field providing keys is not specified in the [data source](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), the whole data object is considered the key.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "row" }
 

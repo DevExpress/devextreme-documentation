@@ -19,6 +19,9 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.selectedItem): Object
 The selected item's data. Available when [useSelectMode](/api-reference/10%20UI%20Components/dxDropDownButton/1%20Configuration/useSelectMode.md '/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#useSelectMode') is **true**.
 

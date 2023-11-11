@@ -29,5 +29,8 @@ The data of the row to be edited.
 The row's key.     
 The key of an added but not yet saved row is **undefined**.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ---
 If the **editing**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode') is *"batch"* or *"cell"*, this function is executed while the UI component renders columns of `boolean` [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataType') and other columns whose [showEditorAlways](/api-reference/_hidden/GridBaseColumn/showEditorAlways.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#showEditorAlways') property is **true**.

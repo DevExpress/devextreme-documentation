@@ -31,6 +31,9 @@ The UI component's instance.
 ##### field(e.isHighlighted): Boolean
 **true** if the cell is highlighted; otherwise **false**, even if the cell's row is highlighted.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.newColumnIndex): Number
 The index of the column the cell that should be focused belongs to.
 

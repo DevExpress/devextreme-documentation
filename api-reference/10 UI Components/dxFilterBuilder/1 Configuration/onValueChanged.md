@@ -16,6 +16,9 @@ The UI component's [instance](/api-reference/10%20UI%20Components/Component/3%20
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.previousValue): Object
 The UI component's previous value.
 

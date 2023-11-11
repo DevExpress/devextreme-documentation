@@ -28,6 +28,9 @@ The UI component [instance](/api-reference/10%20UI%20Components/Component/3%20Me
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.rowIndex): Number
 The position of a cell's row.
 

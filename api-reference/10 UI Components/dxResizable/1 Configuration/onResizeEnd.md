@@ -22,6 +22,9 @@ The UI component's instance.
 ##### field(e.height): Number
 The current UI component height.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.width): Number
 The current UI component width.
 

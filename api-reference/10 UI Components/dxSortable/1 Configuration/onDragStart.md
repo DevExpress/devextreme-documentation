@@ -34,6 +34,9 @@ The item's data before the drag operation. Note that you should specify the item
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 
 ---

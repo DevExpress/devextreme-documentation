@@ -25,6 +25,9 @@ The UI component's instance.
 ##### field(e.form): dxForm
 The form's instance; created only once - when the function is executed for the first time.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.popup): dxPopup
 The instance of the popup that contains the form.
 

@@ -38,6 +38,9 @@ Differs from the **value** field only when the cell belongs to a [lookup](/api-r
 ##### field(e.key): any
 The row's [key](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#key'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.row): dxTreeListRowObject
 The row's properties. Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 

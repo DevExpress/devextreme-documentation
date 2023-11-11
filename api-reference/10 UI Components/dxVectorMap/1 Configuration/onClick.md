@@ -20,6 +20,9 @@ The UI component's instance.
 ##### field(e.event): event
 The event that caused the handler execution extended by the **x** and **y** fields. It is a [EventObject](/api-reference/50%20Common/Object%20Structures/EventObject '/Documentation/ApiReference/Common/Object_Structures/EventObject/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> when you use jQuery.
 
+##### field(e.model): any
+The model data. Available only if you use Knockout.
+
 ##### field(e.target): MapLayerElement
 The [Layer Element](/api-reference/10%20UI%20Components/dxVectorMap/6%20Map%20Elements/Layer%20Element '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/') object (if available).
 

@@ -19,6 +19,9 @@ The UI component's instance.
 ##### field(e.file): FileSystemItem
 The opened file.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 ---
 ##### jQuery

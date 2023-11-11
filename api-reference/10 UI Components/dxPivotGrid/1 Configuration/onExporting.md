@@ -22,6 +22,9 @@ The UI component's instance.
 ##### field(e.fileName): String
 Deprecated.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ---
 
 #include btn-open-demo with {

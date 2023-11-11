@@ -19,5 +19,8 @@ The UI component's instance.
 ##### field(e.error): Error
 The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object that defines the error.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 Handles errors that might occur in the data source. To obtain a human-readable description of the error in the function, use the **error.message** field.

@@ -16,6 +16,9 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ---
 #####See Also#####
 - [Paging](/concepts/05%20UI%20Components/List/08%20Paging.md '/Documentation/Guide/UI_Components/List/Paging/')

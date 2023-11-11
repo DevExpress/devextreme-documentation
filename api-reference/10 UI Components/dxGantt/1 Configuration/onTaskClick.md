@@ -25,6 +25,9 @@ The task data.
 ##### field(e.key): any
 The task key.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 
 ![DevExtreme Gantt Chart - Task Element](/images/Gantt/task-element.png)

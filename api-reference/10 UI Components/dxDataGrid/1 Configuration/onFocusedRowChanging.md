@@ -22,6 +22,9 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.newRowIndex): Number
 The index of the row to be focused.
 

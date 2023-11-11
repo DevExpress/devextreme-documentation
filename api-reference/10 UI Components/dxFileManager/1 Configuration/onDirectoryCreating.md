@@ -25,6 +25,9 @@ The UI component's instance.
 ##### field(e.errorText): String
 Allows you to specify the error message.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.name): String
 The name of the directory.
 

@@ -28,6 +28,9 @@ The target item's data object.
 ##### field(e.itemIndex): Number
 The target item's index.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.node): dxTreeViewNode
 The target item's node.
 

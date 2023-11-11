@@ -25,6 +25,9 @@ The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 ##### field(e.key): any
 The key of the row. If a field providing keys is not specified in the data source, the whole data object is considered the key.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditingAndEditingEvents/"

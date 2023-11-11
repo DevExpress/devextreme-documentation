@@ -15,6 +15,9 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.currentDeselectedRowKeys): Array<any>
 The keys of the rows whose selection has been cleared.
 

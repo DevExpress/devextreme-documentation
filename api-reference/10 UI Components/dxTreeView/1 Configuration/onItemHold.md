@@ -28,6 +28,9 @@ The data object of the item being held.
 ##### field(e.itemIndex): Number
 The item's index.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.node): dxTreeViewNode
 The node of the item being held.
 

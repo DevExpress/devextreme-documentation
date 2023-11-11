@@ -19,4 +19,7 @@ The UI component's instance.
 ##### field(e.key): any
 The key of the row.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---

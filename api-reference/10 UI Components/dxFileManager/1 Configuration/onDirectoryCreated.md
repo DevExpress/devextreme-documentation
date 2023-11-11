@@ -16,6 +16,9 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "component" }
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.name): String
 The name of the created directory.
 

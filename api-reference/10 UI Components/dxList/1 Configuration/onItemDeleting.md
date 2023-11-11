@@ -29,4 +29,7 @@ The data of the item to be removed.
 ##### field(e.itemIndex): Number | Object
 The item's index. In a grouped list, the index represents an object defining group and item indexes: { group: 0, item: 0 }.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---

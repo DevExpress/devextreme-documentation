@@ -19,6 +19,9 @@ The current directory.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.model): any
+The model data. Available only if you use Knockout.
+
 ---
 
 ---

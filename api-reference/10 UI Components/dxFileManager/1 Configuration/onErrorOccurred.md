@@ -25,6 +25,9 @@ Allows you to specify the error message.
 ##### field(e.fileSystemItem): FileSystemItem
 The processed file or directory.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ---
 
 ---

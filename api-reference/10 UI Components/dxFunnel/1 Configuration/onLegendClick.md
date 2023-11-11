@@ -23,6 +23,9 @@ The UI component's instance.
 ##### field(e.item): dxFunnelItem
 The [Item](/api-reference/10%20UI%20Components/dxFunnel/6%20Item '/Documentation/ApiReference/UI_Components/dxFunnel/Item/') object.
 
+##### field(e.model): any
+The model data. Available only if you use Knockout.
+
 ---
 #####See Also#####
 - [legend](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/legend '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/')

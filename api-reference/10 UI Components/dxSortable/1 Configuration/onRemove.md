@@ -34,6 +34,9 @@ The dragged item's data.
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.toComponent): dxSortable | dxDraggable
 The instance of the item's target UI component.
 

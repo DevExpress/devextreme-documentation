@@ -21,6 +21,9 @@ type: function(e)
 ##### field(e.event): event
 <!-- %field(e.event)% -->
 
+##### field(e.model): any
+<!-- %field(e.model)% -->
+
 ##### field(e.row): dxTreeListRowObject
 <!-- %field(e.row)% -->
 

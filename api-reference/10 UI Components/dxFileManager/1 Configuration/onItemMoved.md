@@ -22,6 +22,9 @@ The name of the moved file or directory.
 ##### field(e.itemPath): String
 The path to the moved file or directory.
 
+##### field(e.model): any
+Model data. Available only if you use Knockout.
+
 ##### field(e.parentDirectory): FileSystemItem
 The parent directory.
 

@@ -43,6 +43,9 @@ Indicates whether the row is [selected](/concepts/05%20UI%20Components/DataGrid/
 ##### field(e.key): any
 The row's key.
 
+##### field(e.model): any
+Model data. Available only if Knockout is used.
+
 ##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "row" }
 

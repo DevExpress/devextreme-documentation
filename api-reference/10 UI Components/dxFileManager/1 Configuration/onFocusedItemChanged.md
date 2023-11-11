@@ -22,9 +22,6 @@ The currently focused file or directory.
 ##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ---
 
 ---

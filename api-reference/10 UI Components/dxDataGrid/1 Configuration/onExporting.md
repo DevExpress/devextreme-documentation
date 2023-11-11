@@ -22,9 +22,6 @@ The UI component's instance.
 ##### field(e.fileName): String
 Deprecated.
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ##### field(e.format): Enums.DataGridExportFormat | String
 Specifies the availability and captions of data export buttons.
 

@@ -22,9 +22,6 @@ The UI component's instance.
 ##### field(e.file): File
 The uploaded file.
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ##### field(e.request): XMLHttpRequest
 Specifies an XMLHttpRequest for the file.
 

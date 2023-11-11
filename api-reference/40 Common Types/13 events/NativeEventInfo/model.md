@@ -1,6 +1,7 @@
 ---
 id: NativeEventInfo.model
 type: any
+hidden: 
 ---
 ---
 ##### shortDescription

@@ -37,9 +37,6 @@ Indicates whether the row is selected. Available if **rowType** is *"data"* or *
 ##### field(e.key): any
 The row's [key](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/key.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#key'). Available if the **rowType** is *"data"*, *"detail"* or *"detailAdaptive"*.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.rowElement): DxElement
 #include common-ref-elementparam with { element: "row" }
 

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: viz/polar_chart:ArgumentAxisClickEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onArgumentAxisClick
 ---
 ---
 ##### shortDescription

@@ -32,7 +32,7 @@ The file or directory to be renamed.
 Model data. Available only if you use Knockout.
 
 ##### field(e.newName): String
-The new name of the file or directory.
+The new name of the file or directory. This parameter is read-only.
 
 ---
 

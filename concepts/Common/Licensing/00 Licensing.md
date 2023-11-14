@@ -8,7 +8,7 @@ If a developer leaves or stops using DevExtreme, you can revoke their license an
 
 ### v23.2+
 
-With the release of v23.2, DevExpress checks license status to determine whether a valid DevExtreme license exists. If you do not have a valid DevExtreme license, an error message will be displayed on-screen. To complete the license verification process, you must [supply a valid license key](/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key). This license key will be auto-generated on your behalf once you purchase a license (it will be auto-generated for all active DevExtreme subscribers as well).
+With the release of v23.2, DevExpress checks license status to determine whether a valid DevExtreme license exists. If you do not have a valid DevExtreme license, an error message will be displayed on-screen. To complete the license verification process, you must [supply a valid license key](/concepts/Common/Licensing/10%20How%20to%20Obtain%20and%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key'). This license key will be auto-generated on your behalf once you purchase a license (it will be auto-generated for all active DevExtreme subscribers as well).
 
 When you purchase a DevExtreme, ASP.NET/Blazor, DXperience, or Universal Subscription, your auto-generated DevExtreme license key will be displayed within the DevExpress [Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/).
 

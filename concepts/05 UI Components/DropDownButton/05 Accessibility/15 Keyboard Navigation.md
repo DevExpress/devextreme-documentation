@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+A user can use the following keys to interact with the DropDownButton component: 
 
 <table class="dx-table">
     <tr>
@@ -14,11 +14,8 @@ An end user can use the following keys to interact with the UI component.
         <td>Moves focus to the toggle button when <b>splitButton</b> is enabled.</td>
     </tr>
     <tr>
-        <td rowspan="3">Enter / Space</td>
-        <td>Opens the drop-down menu when the toggle button is focused.</td>
-    </tr>
-    <tr>
-        <td>Simulates a click action when the action button is focused.</td>
+        <td rowspan="2">Enter / Space</td>
+        <td>Identical to a click.</td>
     </tr>
     <tr>
         <td>Selects a menu item when focused.</td>
@@ -46,10 +43,3 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [DropDownButton Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton)
-- [DropDownButton API Reference](/api-reference/10%20UI%20Components/dxDropDownButton '/Documentation/ApiReference/UI_Components/dxDropDownButton')
-
-[tags]dropDown button, accessibility, keyboard shortcuts

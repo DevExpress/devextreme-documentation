@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+A user can use the following keys to interact with the DateBox component: 
 
 <table class="dx-table">
     <tr>
@@ -73,10 +73,3 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
-- [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
-
-[tags]date box, dateBox, navigation, accessibility, keyboard shortcuts

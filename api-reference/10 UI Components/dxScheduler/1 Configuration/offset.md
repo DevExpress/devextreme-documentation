@@ -70,4 +70,4 @@ You can combine this property with [startDayHour](/Documentation/ApiReference/UI
 
 ---
 
-[note] This property has no effect in the agenda view.
+[note] This property has no effect on the agenda view.

@@ -12,6 +12,11 @@ The TreeList component complies to all <a href="https://www.access-board.gov/ict
         <td>Drag icons do not have <code>alt</code> and aria-label attributes.</td>
     </tr>
     <tr>
+        <td>-</td>
+        <td>1.3.2 Meaningful Sequence (Level A) <br> 2.4.3 Focus Order (Level A)</td>
+        <td>The column fixing feature in TreeList does not meet this criterion.</td>
+    </tr>
+    <tr>
         <td>11.5.2.12 Execution of available actions</td>
         <td>2.1.1 Keyboard (Level A)</td>
         <td><ul>
@@ -20,6 +25,11 @@ The TreeList component complies to all <a href="https://www.access-board.gov/ict
                 <li>Adaptive rows cannot be expanded/collapsed using keyboard navigation.</li>
             </ul>    
         </td>
+    </tr>
+    <tr>
+        <td>502.3.3 Row, Column, and Headers</td>
+        <td>-</td>
+        <td>TreeList does not convey information about headers if the column fixing feature is enabled.</td>
     </tr>
     <tr>
         <td>502.3.7 Hierarchical Relationships</td>

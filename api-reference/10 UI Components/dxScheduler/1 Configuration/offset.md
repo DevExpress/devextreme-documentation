@@ -5,12 +5,12 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the minute offset within Scheduler, indicating the starting point of a day. 
+Specifies the minute offset within Scheduler, indicating the starting point of a day.
 
 ---
 The offset is a multiple of 5 and can range from -1440 minutes (-24 hours) to 1440 minutes (24 hours). For instance, if you set the offset to 240, the day starts at 04:00 AM instead of 00:00.
 
-You can combine this property with [startDayHour](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour), [endDayHour](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour), and [cellDuration](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration). For example, the following code snippet uses all these properties, and as a result, the day starts at 4:40 AM and ends at 12:00 PM.
+You can combine this property with [startDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour'), [endDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'), and [cellDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration'). For example, the following code snippet uses all these properties, and as a result, the day starts at 4:40 AM and ends at 12:00 PM.
 
 ---
 ##### jQuery

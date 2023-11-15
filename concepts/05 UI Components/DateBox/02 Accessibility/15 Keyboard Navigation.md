@@ -19,7 +19,7 @@ A user can use the following keys to interact with the DateBox component:
     <tr>
         <td rowspan="10">Calendar</td>
         <td style="font-style:italic; text-align:center">&larr; &rarr; &uarr; &darr;</td>
-        <td>Moves focus to the day nearby.</td>
+        <td>Moves focus to the nearest date.</td>
     </tr>
     <tr>
         <td>Page Up or Ctrl + &larr;</td>

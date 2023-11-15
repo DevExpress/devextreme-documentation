@@ -242,15 +242,15 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
         <div class="second-level">
             <div class="header">Fluent</div>
             <ul>
-                <li><code>dx.fluent.light.css</code></li>
-                <li><code>dx.fluent.dark.css</code></li>
+                <li><code>dx.fluent.blue.light.css</code></li>
+                <li><code>dx.fluent.blue.dark.css</code></li>
             </ul>
         </div>
         <div class="second-level">
             <div class="header">Fluent Compact</div>
             <ul>
-                <li><code>dx.fluent.light.compact.css</code></li>
-                <li><code>dx.fluent.dark.compact.css</code></li>
+                <li><code>dx.fluent.blue.light.compact.css</code></li>
+                <li><code>dx.fluent.blue.dark.compact.css</code></li>
             </ul>
         </div>
     </div>    

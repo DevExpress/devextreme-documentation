@@ -20,4 +20,4 @@ When you purchase a DevExtreme, ASP.NET/Blazor, DXperience, or Universal Subscri
 
 [/note]
 
-Should you require purchase assistance or more information on our new license verification process, please contact a member of the [DevExpress Client Services Team](https://supportcenter.devexpress.com/ticket/create).
+Should you require purchase assistance or more information on our new license verification process, please contact a member of the <a href="mailto: clientservices@devexpress.com">DevExpress Client Services Team</a>.

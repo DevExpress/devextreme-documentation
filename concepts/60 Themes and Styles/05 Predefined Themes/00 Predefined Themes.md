@@ -158,19 +158,19 @@ DevExtreme provides Generic, Generic Compact, and Material Design themes. These 
 
 <div id="fluent-themes" class="theme-images">
     <div>
-        <p>Light</p>
+        <p>Blue Light</p>
         <img src="/images/themes/fluent-default.png" />
     </div>
     <div>
-        <p>Light Compact</p>
+        <p>Blue Light Compact</p>
         <img src="/images/themes/fluent-compact.png" />
     </div>
     <div>
-        <p>Dark</p>
+        <p>Blue Dark</p>
         <img src="/images/themes/fluent-dark-default.png" />
     </div>
     <div>
-        <p>Dark Compact</p>
+        <p>Blue Dark Compact</p>
         <img src="/images/themes/fluent-dark-compact.png" />
     </div>
 </div>
@@ -242,15 +242,15 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
         <div class="second-level">
             <div class="header">Fluent</div>
             <ul>
-                <li><code>dx.fluent.light.css</code></li>
-                <li><code>dx.fluent.dark.css</code></li>
+                <li><code>dx.fluent.blue.light.css</code></li>
+                <li><code>dx.fluent.blue.dark.css</code></li>
             </ul>
         </div>
         <div class="second-level">
             <div class="header">Fluent Compact</div>
             <ul>
-                <li><code>dx.fluent.light.compact.css</code></li>
-                <li><code>dx.fluent.dark.compact.css</code></li>
+                <li><code>dx.fluent.blue.light.compact.css</code></li>
+                <li><code>dx.fluent.blue.dark.compact.css</code></li>
             </ul>
         </div>
     </div>    

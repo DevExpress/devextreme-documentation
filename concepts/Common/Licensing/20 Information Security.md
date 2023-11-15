@@ -4,4 +4,4 @@ License key validation is performed on the client and is not machine-based. Sinc
 
 License key validation is the same for both a local development machine or a CI/CD system.
 
-Though keys may be published and included in application source code/bundle, you must not actively advertise, publish, or distribute license keys. Should you advertise, publish, or distribute license key information in an effort to circumvent DevExpress licensing requirements, your DevExtreme license may be subject to revocation.
+[important] Though keys may be published and included in application source code/bundle, you must not actively advertise, publish, or distribute license keys. Should you advertise, publish, or distribute license key information in an effort to circumvent DevExpress licensing requirements, your DevExtreme license may be subject to revocation.

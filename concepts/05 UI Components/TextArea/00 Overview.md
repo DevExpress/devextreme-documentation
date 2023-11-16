@@ -1,3 +1,6 @@
+---
+tags: dxtextarea, textArea, text area, editor, overview, spellcheck, read-only
+---
 The TextArea is a UI component that enables a user to enter and edit a multi-line text.
 
 #include common-demobutton with {
@@ -236,4 +239,3 @@ If an end user should _not_ be able to edit the text in the TextArea, assign **t
 - [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
 - [TextBox](/concepts/05%20UI%20Components/TextBox/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
 
-[tags]dxtextarea, textArea, text area, editor, overview, spellcheck, read-only

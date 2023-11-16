@@ -1,3 +1,6 @@
+---
+tags: tile view, tileView, tile size, customize
+---
 The size of all tiles in the UI component is determined by the [baseItemHeight](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/baseItemHeight.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#baseItemHeight') and [baseItemWidth](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/baseItemWidth.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#baseItemWidth') properties. If you need to set the size of a specific tile, use the [heightRatio](/api-reference/_hidden/dxTileViewItem/heightRatio.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#heightRatio') and [widthRatio](/api-reference/_hidden/dxTileViewItem/widthRatio.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#widthRatio') properties of this tile. In this case, the size will be calculated according to the following formulas.
 
 <span style="font-size:13px">height = baseItemHeight * heightRatio<br />
@@ -120,4 +123,3 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
 - [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview)
 - [TileView API Reference](/api-reference/10%20UI%20Components/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
-[tags]tile view, tileView, tile size, customize

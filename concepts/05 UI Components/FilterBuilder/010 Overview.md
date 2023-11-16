@@ -1,3 +1,6 @@
+---
+tags: dxfilterbuilder, filter builder, filterBuilder, filter expression, condition, overview
+---
 The FilterBuilder UI component allows a user to build complex filter expressions with an unlimited number of filter conditions using the UI. 
 
 #include common-demobutton with {
@@ -195,4 +198,4 @@ The FilterBuilder displays the filter expression as a tree structure, where node
 - [Predefine Filter Values](/concepts/05%20UI%20Components/FilterBuilder/040%20Predefine%20Filter%20Values.md '/Documentation/Guide/UI_Components/FilterBuilder/Predefine_Filter_Values/')
 - [API Reference](/api-reference/10%20UI%20Components/dxFilterBuilder '/Documentation/ApiReference/UI_Components/dxFilterBuilder/')
 
-[tags]dxfilterbuilder, filter builder, filterBuilder, filter expression, condition, overview
+

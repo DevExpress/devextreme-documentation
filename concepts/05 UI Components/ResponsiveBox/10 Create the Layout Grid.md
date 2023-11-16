@@ -1,3 +1,6 @@
+---
+tags: responsive box, responsiveBox, adaptive layout, layout grid, fixed columns, fixed rows, adaptive columns, adaptive rows, baseSize, ratio
+---
 All ResponsiveBox elements are arranged in a layout grid according to the [rows](/api-reference/10%20UI%20Components/dxResponsiveBox/1%20Configuration/rows '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/rows/') and [cols](/api-reference/10%20UI%20Components/dxResponsiveBox/1%20Configuration/cols '/Documentation/ApiReference/UI_Components/dxResponsiveBox/Configuration/cols/') arrays. Each object in these arrays configures a single row or column. Populate these arrays with empty objects to get two sets of equally-sized rows and columns.
 
 ---
@@ -268,4 +271,4 @@ The collections of rows and columns may differ depending on the screen's [size q
 - [ResponsiveBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview)
 - [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
-[tags]responsive box, responsiveBox, adaptive layout, layout grid, fixed columns, fixed rows, adaptive columns, adaptive rows, baseSize, ratio
+

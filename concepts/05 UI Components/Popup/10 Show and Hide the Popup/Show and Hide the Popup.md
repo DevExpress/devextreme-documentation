@@ -1,1 +1,3 @@
-[tags]popup, overlay, show, hide, open, close, showing, shown, hiding, hidden
+---
+tags: popup, overlay, show, hide, open, close, showing, shown, hiding, hidden
+---

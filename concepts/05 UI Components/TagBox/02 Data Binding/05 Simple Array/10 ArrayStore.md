@@ -1,3 +1,6 @@
+---
+tags: tagBox, data binding, provide data, ArrayStore, DataSource, process data
+---
 Extend a JavaScript array's functionality by placing it into an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data, and allows you to handle data-related events.
 
 ---
@@ -265,4 +268,3 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
 - [Access the DataSource](/concepts/05%20UI%20Components/TagBox/02%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/TagBox/Data_Binding/Access_the_DataSource/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/Overview)
 
-[tags]tagBox, data binding, provide data, ArrayStore, DataSource, process data

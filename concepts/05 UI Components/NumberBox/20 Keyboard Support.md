@@ -1,3 +1,6 @@
+---
+tags: number box, numberBox, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -22,4 +25,3 @@ An end user can use the following keys to interact with the UI component.
 - [NumberBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview)
 - [NumberBox API Reference](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/')
 
-[tags]number box, numberBox, navigation, accessibility, keyboard shortcuts

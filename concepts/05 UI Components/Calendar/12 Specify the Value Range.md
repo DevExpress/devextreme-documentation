@@ -1,3 +1,6 @@
+---
+tags: calendar, editor, date range, rande, disable dates, disabledDates
+---
 Use the [min](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#max') properties to specify the range of available dates.
 
 ---
@@ -215,4 +218,4 @@ If you need to disable specific dates, use the [disabledDates](/api-reference/10
 - [Calendar - Handle the Value Change Event](/concepts/05%20UI%20Components/Calendar/05%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Calendar/Handle_the_Value_Change_Event')
 - [Calendar - Specify Zoom Level](/concepts/05%20UI%20Components/Calendar/10%20Specify%20Zoom%20Level.md '/Documentation/Guide/UI_Components/Calendar/Specify_Zoom_Level')
 
-[tags]calendar, editor, date range, rande, disable dates, disabledDates
+

@@ -1,3 +1,6 @@
+---
+tags: data binding
+---
 #include tutorials-editors-data-binding 
 
 ---
@@ -189,4 +192,3 @@
 
 If you run this code and open the SelectBox, you will see the the populated drop-down list. Next, we will enable search.
 
-[tags] data binding

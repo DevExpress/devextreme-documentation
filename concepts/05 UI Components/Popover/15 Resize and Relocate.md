@@ -1,3 +1,6 @@
+---
+tags: popover, overlay, size, height, width, position
+---
 To change the size of the Popover, specify the [height](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#width') properties.
 
 ---
@@ -256,4 +259,3 @@ If you need to position the Popover against a certain side of the [target elemen
 - [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
 - [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
 
-[tags]popover, overlay, size, height, width, position

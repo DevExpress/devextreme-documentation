@@ -1,3 +1,6 @@
+---
+tags: scrollView, scroll view, pull down, pull-to-refresh, refresh, reach bottom, boundaries
+---
 The ScrollView raises the [pullDown](/api-reference/10%20UI%20Components/dxScrollView/4%20Events/pullDown.md '/Documentation/ApiReference/UI_Components/dxScrollView/Events/#pullDown') event when a user performs the <a href="https://en.wikipedia.org/wiki/Pull-to-refresh" target="_blank">pull-to-refresh gesture</a>. [Handle this event](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax/15%20Handle%20Events/00%20Handle%20Events.md '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Handle_Events') to refresh the content of the ScrollView. Note that the handling function should end with a call of the [release()](/api-reference/10%20UI%20Components/dxScrollView/3%20Methods/release(preventScrollBottom).md '/Documentation/ApiReference/UI_Components/dxScrollView/Methods/#releasepreventScrollBottom') method to release the ScrollView.
 
 ---
@@ -324,4 +327,3 @@ If you want to process each scroll gesture performed by a user, handle the [scro
 - [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview)
 - [ScrollView API Reference](/api-reference/10%20UI%20Components/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')
 
-[tags]scrollView, scroll view, pull down, pull-to-refresh, refresh, reach bottom, boundaries

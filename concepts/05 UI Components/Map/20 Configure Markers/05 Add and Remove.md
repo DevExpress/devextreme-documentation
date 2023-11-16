@@ -1,3 +1,6 @@
+---
+tags: map, markers, location, add marker, remove marker, add on click
+---
 To add markers at design-time, pass an array of objects to the [markers](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/') property. A marker requires only its [location](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/markers/location '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/location/') to be specified.
 
 ---
@@ -305,4 +308,3 @@ With Angular, Vue, or React, use a different technique. Bind the **markers** pro
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Markers)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, markers, location, add marker, remove marker, add on click

@@ -1,6 +1,7 @@
 ---
 id: excelExporter.exportPivotGrid(options)
 module: excel_exporter
+tags: xlsx, csv
 ---
 ---
 ##### shortDescription
@@ -206,4 +207,4 @@ You can call this method at any point in your application. In the example below,
 
 <!-- import * from 'api-reference\50 Common\utils\excelExporter\exportDataGrid(options).md' -->
 
-[tags] xlsx, csv
+

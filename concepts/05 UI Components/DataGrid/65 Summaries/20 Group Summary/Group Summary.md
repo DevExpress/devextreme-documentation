@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, group summary, aggregate function, sort by summary, sortByGroupSummaryInfo, summaryType, alignment, location, alignByColumn. showInColumn, showInGroupFooter
+---
 A group summary aggregates data in groups by columns. You can associate each column with one or more summary items of different types.
 
 ![DevExtreme HTML5/JavaScript DataGrid UI component Group Summary](/images/DataGrid/GroupSummary.png)
@@ -153,4 +156,3 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
 - [Grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping '/Documentation/Guide/UI_Components/DataGrid/Grouping/')
 - [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/')
 
-[tags]dataGrid, data grid, group summary, aggregate function, sort by summary, sortByGroupSummaryInfo, summaryType, alignment, location, alignByColumn. showInColumn, showInGroupFooter

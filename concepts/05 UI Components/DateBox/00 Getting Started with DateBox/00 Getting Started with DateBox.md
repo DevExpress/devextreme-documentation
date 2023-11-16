@@ -1,3 +1,6 @@
+---
+tags: dxdatebox
+---
 #include tutorials-intro-installationnote
 
 DateBox is a UI component that allows users to set a certain date, time, or date/time combination.
@@ -8,4 +11,4 @@ This tutorial shows how to configure basic DateBox features. The newly created U
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-datebox" target="_blank">getting-started-with-datebox</a>.
 
-[tags] dxdatebox
+

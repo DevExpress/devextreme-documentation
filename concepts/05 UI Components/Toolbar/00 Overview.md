@@ -1,3 +1,6 @@
+---
+tags: dxtolbar, toolbar, collection container, collection UI component, overview
+---
 The Toolbar is a UI component containing items that usually manage screen content. Those items can be plain text or UI components.
 
 #include common-demobutton with {
@@ -175,4 +178,3 @@ Note that field names in these data source items are [conventional](/api-referen
 - [Toolbar - Customize Item Appearance](/concepts/05%20UI%20Components/Toolbar/15%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Toolbar/Customize_Item_Appearance')
 - [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
-[tags]dxtolbar, toolbar, collection container, collection UI component, overview

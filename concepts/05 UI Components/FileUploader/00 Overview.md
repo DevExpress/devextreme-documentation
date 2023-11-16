@@ -1,3 +1,6 @@
+---
+tags: dxfileuploader, file uploader, fileUploader, overview, accepted file types, multiple files, access files in code
+---
 The FileUploader UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files on the page's FileUploader area.
 
 #include common-demobutton with {
@@ -278,4 +281,4 @@ The FileUploader can operate in two different modes, each demanding a different 
 - [File Validation](/concepts/05%20UI%20Components/FileUploader/40%20File%20Validation.md '/Documentation/Guide/UI_Components/FileUploader/File_Validation/')
 - [FileUploader API Reference](/api-reference/10%20UI%20Components/dxFileUploader '/Documentation/ApiReference/UI_Components/dxFileUploader/')
 
-[tags]dxfileuploader, file uploader, fileUploader, overview, accepted file types, multiple files, access files in code
+

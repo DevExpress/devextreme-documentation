@@ -1,3 +1,6 @@
+---
+tags: popup, overlay, shading, background, shading color
+---
 When the Popup is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shadingColor') property.
 
 ---
@@ -131,4 +134,3 @@ Note that the default shading color is transparent.
 - [Popup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview)
 - [Popup API Reference](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
 
-[tags]popup, overlay, shading, background, shading color

@@ -1,3 +1,6 @@
+---
+tags: gallery, item appearance, customize, templates
+---
 Gallery items are not sctrictly images. They can contain text or other elements of your choice. For a minor customization of Gallery items, you can define [specific fields](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/items/') in item data objects. For example, the following code generates two items: one is disabled and the other has a specified <a href="http://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt attribute</a>.
 
 ---
@@ -266,4 +269,3 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Gallery - Transform and Combine Images](/concepts/05%20UI%20Components/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]gallery, item appearance, customize, templates

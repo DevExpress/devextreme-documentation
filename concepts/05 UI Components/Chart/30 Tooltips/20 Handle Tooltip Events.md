@@ -1,3 +1,6 @@
+---
+tags: chart, tooltip, handle events, tooltipShown, tooltipHidden
+---
 When a tooltip becomes shown or hidden, the Chart fires the [tooltipShown](/api-reference/10%20UI%20Components/BaseChart/4%20Events/tooltipShown.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#tooltipShown') or [tooltipHidden](/api-reference/10%20UI%20Components/BaseChart/4%20Events/tooltipHidden.md '/Documentation/ApiReference/UI_Components/dxChart/Events/#tooltipHidden') event that you can handle with a function. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onTooltipShown](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/onTooltipShown.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onTooltipShown') or [onTooltipHidden](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/onTooltipHidden.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#onTooltipHidden') property respectively, when you configure the UI component.
 
 ---
@@ -126,4 +129,4 @@ If you are going to change the event handlers at runtime or if you need to attac
 #include common-link-handleevents
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, tooltip, handle events, tooltipShown, tooltipHidden
+

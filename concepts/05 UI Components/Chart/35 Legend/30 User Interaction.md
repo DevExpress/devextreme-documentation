@@ -1,3 +1,6 @@
+---
+tags: chart, legend, hover, hoverMode, legend click, onLegendClick
+---
 A user can interact with the legend by pausing on legend items. When a user does this, the series that corresponds to the legend item being paused on becomes highlighted. To disable this capability, set the [hoverMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/legend/hoverMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#hoverMode') property to *"none"*.
 
 ---
@@ -280,4 +283,4 @@ In addition, a user can click legend items. By default, the UI component does no
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/HoverMode)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, legend, hover, hoverMode, legend click, onLegendClick
+

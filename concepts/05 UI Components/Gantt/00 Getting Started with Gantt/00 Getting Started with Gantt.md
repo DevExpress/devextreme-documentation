@@ -1,3 +1,6 @@
+---
+tags: dxgantt
+---
 The Gantt UI component displays the task flow and dependencies between tasks.
 
 ![DevExtreme Gantt Chart - Overview](/images/Gantt/overview.png)
@@ -6,4 +9,3 @@ The Gantt UI component displays the task flow and dependencies between tasks.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
 
-[tags]dxgantt

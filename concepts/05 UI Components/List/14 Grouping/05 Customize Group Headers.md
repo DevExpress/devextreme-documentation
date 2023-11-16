@@ -1,3 +1,6 @@
+---
+tags: list, group headers appearance, customize, templates, template
+---
 You can define a [groupTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#groupTemplate') to customize group headers. In Angular and Vue, declare the template in the markup. In React, use a rendering function (shown in the code below) or component. Without a **groupTemplate**, group headers display the text of the **key** field in bold font.
 
 ---
@@ -234,4 +237,3 @@ In addition, you can use a 3rd-party template engine to perform the needed custo
 #####See Also#####
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, group headers appearance, customize, templates, template

@@ -1,3 +1,6 @@
+---
+tags: chart, panes, overview, single-pane chart
+---
 A pane is a chart area containing series. If there are many series in the Chart, they can be distributed between multiple panes.
 
 ![DevExtreme HTML5 JavaScript Charts Panes](/images/ChartJS/visual_elements/pane.png)
@@ -108,4 +111,4 @@ For a multi-pane chart, the **panes** property accepts an array. For further det
 - [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, panes, overview, single-pane chart
+

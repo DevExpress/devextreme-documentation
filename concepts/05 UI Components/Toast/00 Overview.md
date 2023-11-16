@@ -1,3 +1,6 @@
+---
+tags: dxtoast, toast, overview, overlay
+---
 The Toast is a UI component that provides pop-up notifications.
 
 #include common-demobutton with {
@@ -315,4 +318,3 @@ The appearance of the Toast is predefined by its [type](/api-reference/10%20UI%2
 - [Toast - Resize and Relocate](/concepts/05%20UI%20Components/Toast/15%20Resize%20and%20Relocate.md '/Documentation//Guide/UI_Components/Toast/Resize_and_Relocate/')
 - [Toast API Reference](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')
 
-[tags]dxtoast, toast, overview, overlay

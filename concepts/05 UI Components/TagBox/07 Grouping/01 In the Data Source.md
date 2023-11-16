@@ -1,3 +1,6 @@
+---
+tags: tagBox, grouped, key, items, group items, map items
+---
 Items in the TagBox can be grouped if they are grouped in the data source. The TagBox recognizes a group when it finds an object with the **key** and **items** fields. The **key** is the group header, the **items** are items that fall into the group. For example, the `fruitsVegetables` array from the following code produces two groups with three items each. Note that the TagBox needs to be informed that it deals with grouped data, therefore its [grouped](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/grouped.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#grouped') property is set to **true**.
 
 ---
@@ -505,4 +508,4 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 - [TagBox - Grouping | Customize Group Headers](/concepts/05%20UI%20Components/TagBox/07%20Grouping/05%20Customize%20Group%20Headers.md '/Documentation/Guide/UI_Components/TagBox/Grouping/Customize_Group_Headers/')
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 
-[tags]tagBox, grouped, key, items, group items, map items
+

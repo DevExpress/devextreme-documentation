@@ -1,3 +1,6 @@
+---
+tags: form, get editor, change editor options
+---
 To change the properties of an editor, get its instance first using the [getEditor(dataField)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/getEditor(dataField).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#getEditordataField') method. After that, call the **option(optionName, optionValue)** or **option(optionName, options)** method of this instance. This approach is more typical of jQuery. 
 
     <!--JavaScript-->
@@ -179,4 +182,4 @@ With Angular, Vue, or React, bind the property that should be changed in the [ed
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-[tags]form, get editor, change editor options
+

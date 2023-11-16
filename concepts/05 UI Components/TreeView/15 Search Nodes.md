@@ -1,3 +1,6 @@
+---
+tags: treeView, collection UI component, search, search mode, search expression
+---
 Searching is disabled in the TreeView UI component by default. Assign **true** to the [searchEnabled](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchEnabled') property to display the search panel. The [searchExpr](/api-reference/10%20UI%20Components/SearchBoxMixin/1%20Configuration/searchExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchExpr') property specifies which data fields should be searched. Assign an _array_ of field names to it if you need to search several fields.
 
 ---
@@ -429,4 +432,4 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 #####See Also#####
 - [TreeView - Access a Node](/concepts/05%20UI%20Components/TreeView/10%20Access%20a%20Node '/Documentation/Guide/UI_Components/TreeView/Access_a_Node')
 
-[tags]treeView, collection UI component, search, search mode, search expression
+

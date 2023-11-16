@@ -1,3 +1,6 @@
+---
+tags: form, value change, get value, field data changed, fieldDataChanged
+---
 To process a new form item value, you need to handle the [fieldDataChanged](/api-reference/10%20UI%20Components/dxForm/4%20Events/fieldDataChanged.md '/Documentation/ApiReference/UI_Components/dxForm/Events/#fieldDataChanged') event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onFieldDataChanged](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onFieldDataChanged.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onFieldDataChanged') property when you configure the UI component.
 
 ---
@@ -135,4 +138,4 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-[tags]form, value change, get value, field data changed, fieldDataChanged
+

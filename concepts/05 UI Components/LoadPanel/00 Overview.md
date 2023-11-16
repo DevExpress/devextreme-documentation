@@ -1,3 +1,6 @@
+---
+tags: dxloadpanel, loadPanel, load panel, overview, overlay
+---
 The LoadPanel is an overlay UI component notifying the viewer that loading is in progress.
 
 #include common-demobutton with {
@@ -153,4 +156,3 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
 - [LoadPanel - Resize and Relocate](/concepts/05%20UI%20Components/LoadPanel/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/LoadPanel/Resize_and_Relocate/')
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
-[tags]dxloadpanel, loadPanel, load panel, overview, overlay

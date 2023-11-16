@@ -1,3 +1,6 @@
+---
+tags: chart, data binding, provide data, ArrayStore, DataSource, pagination
+---
 If you want to extend the functionality of a JavaScript array, place it into an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data, and allows you to handle data-related events.
 
 #include data-binding-examples-arraystore
@@ -17,4 +20,4 @@ As you may notice, in the previous code, the **ArrayStore** is not declared expl
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ClientSideDataProcessing)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, data binding, provide data, ArrayStore, DataSource, pagination
+

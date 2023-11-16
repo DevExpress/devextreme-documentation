@@ -1,3 +1,6 @@
+---
+tags: tab panel, tabPanel, item appearance, customize, templates, template, custom template
+---
 An item in the TabPanel UI component includes a tab and a view. For a minor customization of TabPanel items, you can define [specific fields](/api-reference/10%20UI%20Components/dxTabPanel/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/') in item data objects. For example, the following code generates three items: the first has a [badge](/api-reference/_hidden/dxTabPanelItem/badge.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/items/#badge'), the second is disabled, the third has an icon.
 
 ---
@@ -459,4 +462,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [TabPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview)
 - [TabPanel API Reference](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/')
 
-[tags]tab panel, tabPanel, item appearance, customize, templates, template, custom template
+

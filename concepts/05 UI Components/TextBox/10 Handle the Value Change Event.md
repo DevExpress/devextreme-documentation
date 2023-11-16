@@ -1,3 +1,6 @@
+---
+tags: textBox, text box, editor, get value, set value, change value, valueChangeEvent, valueChanged
+---
 When a user types a value into the TextBox, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#valueChangeEvent') property.
 
 ---
@@ -214,4 +217,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [TextBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview)
 - [TextBox API Reference](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/')
 
-[tags]textBox, text box, editor, get value, set value, change value, valueChangeEvent, valueChanged

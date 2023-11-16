@@ -1,3 +1,6 @@
+---
+tags: chart, axis titles, title font, title margin
+---
 The axis title is a short text displayed alongside the axis. Usually, the axis title shows units of measurement for axis values, but you can put any text in it.
 
 ![DevExtreme HTML5 JavaScript Charts AxisTitles](/images/ChartJS/visual_elements/axis_titles.png)
@@ -187,4 +190,4 @@ In addition to the **text** field, the **title** object may contain fields that 
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Bubble)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, axis titles, title font, title margin
+

@@ -1,1 +1,3 @@
-[tags]chart, series point, hover, hover mode, hoverMode, hover style, hoverStyle, hover changed, pointHoverChanged
+---
+tags: chart, series point, hover, hover mode, hoverMode, hover style, hoverStyle, hover changed, pointHoverChanged
+---

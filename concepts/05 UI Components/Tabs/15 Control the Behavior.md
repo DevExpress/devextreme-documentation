@@ -1,3 +1,6 @@
+---
+tags: tabs, select item, selection mode, nav buttons, navigation buttons, index
+---
 An end user can select Tabs items in two different modes: *'single'* (by default) or *'multiple'*. You can use the [selectionMode](/api-reference/10%20UI%20Components/dxTabs/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectionMode') property to change the mode. 
 
 ---
@@ -466,4 +469,4 @@ When the total length of all tabs exceeds the Tabs container, the UI component s
 - [Tabs Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview)
 - [Tabs API Reference](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/')
 
-[tags]tabs, select item, selection mode, nav buttons, navigation buttons, index
+

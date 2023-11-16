@@ -1,3 +1,6 @@
+---
+tags: data binding
+---
 The Scheduler can load and update data from these data source types:
 
 * [Local array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
@@ -336,4 +339,3 @@ Once you assign the data source, you need to map field values to appointment att
 
 Run the code and ensure that the Scheduler properly displays all appointments.
 
-[tags] data binding

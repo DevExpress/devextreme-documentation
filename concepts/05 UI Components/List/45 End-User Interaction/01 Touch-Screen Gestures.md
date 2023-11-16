@@ -1,3 +1,6 @@
+---
+tags: list, touch-screen gestures, swipe, slide, onItemSwipe, long tap, long press, tap hold, onItemHold, itemHoldTimeout, pull down to refresh, pull to refresh, pullRefreshEnabled, onPullRefresh
+---
 The List supports the following touch-screen gestures.
 
 - **Swipe**     
@@ -255,4 +258,3 @@ This gesture refreshes data in the List. To enable it, assign **true** to the [p
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, touch-screen gestures, swipe, slide, onItemSwipe, long tap, long press, tap hold, onItemHold, itemHoldTimeout, pull down to refresh, pull to refresh, pullRefreshEnabled, onPullRefresh 

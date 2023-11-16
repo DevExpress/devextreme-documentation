@@ -1,3 +1,6 @@
+---
+tags: chart, point labels, label overlapping, resolveLabelOverlapping, maxLabelCount
+---
 In multi-series charts, point labels often overlap. To decide how to resolve overlapping, employ the [resolveLabelOverlapping](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/resolveLabelOverlapping.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#resolveLabelOverlapping') property. It allows you to hide certain labels, or arrange all labels in stacks, or keep the labels as they are (i.e. overlapping).
 
 ---
@@ -163,4 +166,4 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, point labels, label overlapping, resolveLabelOverlapping, maxLabelCount
+

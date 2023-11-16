@@ -1,3 +1,6 @@
+---
+tags: map, center, central position, zoom level, center, zoom
+---
 The [center](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/center '/Documentation/ApiReference/UI_Components/dxMap/Configuration/center/') property centers the Map on a specific location. The **center** property accepts the following location formats in addition to the formats the [current provider](/concepts/05%20UI%20Components/Map/10%20Specify%20the%20Provider%20and%20Type.md '/Documentation/Guide/UI_Components/Map/Specify_the_Provider_and_Type/') accepts: 
 
 - *{ lat: 40.749825, lng: -73.987963 }*
@@ -211,4 +214,4 @@ Note that the UI component can automatically change the **center** and **zoom** 
 - [Map - Specify the Size](/concepts/05%20UI%20Components/Map/15%20Specify%20the%20Size.md '/Documentation/Guide/UI_Components/Map/Specify_the_Size/')
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, center, central position, zoom level, center, zoom
+

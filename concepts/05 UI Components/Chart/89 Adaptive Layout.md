@@ -1,3 +1,6 @@
+---
+tags: chart, adaptive layout, responsive layout, adaptiveLayout, render
+---
 With the ever-growing variety of platforms, today's web sites and applications cannot stay competitive without being adaptive. Supporting this modern standard, the Chart UI component possesses an adaptive layout. This enables the Chart to hide its accessory elements if the container is not large enough to fit them. To configure the adaptive layout, use the [adaptiveLayout](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/adaptiveLayout '/Documentation/ApiReference/UI_Components/dxChart/Configuration/adaptiveLayout/') object. Set its **height** and **width** fields to specify the minimum container size at which the layout retains all its elements.
 
 ---
@@ -175,4 +178,4 @@ The layout does not automatically adapt to changes made in the UI component's co
 #####See Also#####
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, adaptive layout, responsive layout, adaptiveLayout, render
+

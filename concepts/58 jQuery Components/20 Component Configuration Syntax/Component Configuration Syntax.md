@@ -1,1 +1,3 @@
-[tags] jquery
+---
+frameworks: jquery
+---

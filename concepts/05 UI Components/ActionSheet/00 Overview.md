@@ -1,3 +1,6 @@
+---
+tags: dxactionsheet, action sheet, actionSheet, collection container, collection UI component, navigation, overview
+---
 The ActionSheet UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task.
 
 #include common-demobutton with {
@@ -188,4 +191,3 @@ Note that every data source object has a **text** field that is rendered on the 
 - [ActionSheet - Specify Display Mode](/concepts/05%20UI%20Components/ActionSheet/10%20Specify%20Display%20Mode.md '/Documentation/Guide/UI_Components/ActionSheet/Specify_Display_Mode')
 - [ActionSheet API Reference](/api-reference/10%20UI%20Components/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
 
-[tags] dxactionsheet, action sheet, actionSheet, collection container, collection UI component, navigation, overview

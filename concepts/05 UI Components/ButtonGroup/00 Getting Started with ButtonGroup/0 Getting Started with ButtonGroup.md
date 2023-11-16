@@ -1,3 +1,6 @@
+---
+tags: dxbuttongroup
+---
 #include tutorials-intro-installationnote
 
 The ButtonGroup is a set of toggle buttons that can be used as a mode switcher.
@@ -8,4 +11,4 @@ This tutorial describes how to configure basic ButtonGroup features. We create a
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-buttongroup" target="_blank">getting-started-with-buttongroup</a>.
 
-[tags]dxbuttongroup
+

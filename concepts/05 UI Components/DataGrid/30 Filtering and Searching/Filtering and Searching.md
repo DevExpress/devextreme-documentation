@@ -1,1 +1,3 @@
-[tags]dataGrid, data grid, filter, serach, search panel, filter row, header filter, initial filtering, runtime filtering, get combined filter, clear filter, filterValue, selectedFilterOperation, filterType, searchByText, allowFiltering, allowHeaderFiltering
+---
+tags: dataGrid, data grid, filter, serach, search panel, filter row, header filter, initial filtering, runtime filtering, get combined filter, clear filter, filterValue, selectedFilterOperation, filterType, searchByText, allowFiltering, allowHeaderFiltering
+---

@@ -1,3 +1,6 @@
+---
+tags: list, expand, collapse, collapsibleGroups, collapseGroup, expandGroup
+---
 If the user should be able to collapse or expand a group in the List, set the [collapsibleGroups](/api-reference/10%20UI%20Components/dxList/1%20Configuration/collapsibleGroups.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#collapsibleGroups') property to **true**. In this case, the user can collapse or expand a group with a click on the group header.
 
 ---
@@ -235,4 +238,3 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
 - [List - Grouping in the Data Source](/concepts/05%20UI%20Components/List/14%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/List/Grouping/In_the_Data_Source/')
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, expand, collapse, collapsibleGroups, collapseGroup, expandGroup

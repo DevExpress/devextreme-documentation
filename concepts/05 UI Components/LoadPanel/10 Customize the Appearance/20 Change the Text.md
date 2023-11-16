@@ -1,3 +1,6 @@
+---
+tags: loadPanel, load panel, overlay, load panel text
+---
 To change the text displayed by the LoadPanel, use the [message](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/message.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#message') property.
 
 ---
@@ -149,4 +152,3 @@ To change the text displayed by the LoadPanel, use the [message](/api-reference/
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
-[tags]loadPanel, load panel, overlay, load panel text

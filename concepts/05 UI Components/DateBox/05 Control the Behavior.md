@@ -1,3 +1,6 @@
+---
+tags: date box, dateBox, editor, apply mode, change event, value change event
+---
 The DateBox UI component allows an end user to pick or type a value. To specify whether the value should be applied instantly or when a user clicks the **Done** button, set the [applyValueMode](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#applyValueMode') property. Note that this property takes effect only when the [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') is *"calendar"* or *"list"*.
 
 ---
@@ -104,4 +107,3 @@ The DateBox UI component allows an end user to pick or type a value. To specify 
 - [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
 - [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
 
-[tags]date box, dateBox, editor, apply mode, change event, value change event 

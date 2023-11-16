@@ -1,1 +1,3 @@
-[tags]form, group, caption, column count, column span, colCount, colSpan, group template
+---
+tags: form, group, caption, column count, column span, colCount, colSpan, group template
+---

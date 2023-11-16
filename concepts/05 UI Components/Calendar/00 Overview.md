@@ -1,3 +1,6 @@
+---
+tags: dxcalendar, calendar, editor, scheduling, overview, value format, date format, date range
+---
 The Calendar is a UI component that displays a calendar and allows an end user to select the required date within a specified date range.
 
 #include common-demobutton with {
@@ -173,4 +176,3 @@ To specify which day should be considered the beginning of the week, pass its in
 - [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
 - [DateBox - Getting Started](/concepts/05%20UI%20Components/DateBox/00%20Getting%20Started%20with%20DateBox '/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateBox/')
 
-[tags]dxcalendar, calendar, editor, scheduling, overview, value format, date format, date range

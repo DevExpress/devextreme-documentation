@@ -1,3 +1,6 @@
+---
+tags: chart, panes, multi-pane chart, commonPaneSettings
+---
 A multi-pane chart distributes a collection of series between several panes, thus presenting data in a clear and uncluttered way.
 
 ![DevExtreme HTML5 JavaScript Charts Panes](/images/ChartJS/visual_elements/panes.png)
@@ -383,4 +386,4 @@ If all panes in a multi-pane chart should have uniform settings, you can specify
 #####See Also#####
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, panes, multi-pane chart, commonPaneSettings
+

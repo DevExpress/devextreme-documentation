@@ -1,3 +1,6 @@
+---
+tags: chart, load indicator, loading indicator
+---
 When the Chart visualizes local data, loading is instant. But when the Chart is bound to a remote data source, loading may take a considerable amount of time. To keep the viewer's attention, the Chart can display a loading indicator.
 
 ![DevExtreme HTML5 JavaScript Charts LoadingIndicator](/images/ChartJS/visual_elements/loading_indicator.png)
@@ -183,4 +186,4 @@ If you need to show or hide the loading indicator at runtime, call the [showLoad
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ClientSideDataProcessing)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, load indicator, loading indicator
+

@@ -1,3 +1,6 @@
+---
+tags: tag box, tagBox, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -52,4 +55,4 @@ An end user can use the following keys to interact with the UI component.
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
-[tags]tag box, tagBox, navigation, accessibility, keyboard shortcuts
+

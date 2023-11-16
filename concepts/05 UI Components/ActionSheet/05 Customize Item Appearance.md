@@ -1,3 +1,6 @@
+---
+tags: action sheet, actionSheet, item appearance, customize, templates, template
+---
 For a minor customization of ActionSheet buttons, you can define [specific fields](/api-reference/10%20UI%20Components/dxActionSheet/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/') in button data objects. For example, the following code generates three buttons, the first is not customized, the second is disabled, the [type](/api-reference/_hidden/dxActionSheetItem/type.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/items/#type') of the third button is *danger*.
 
 ---
@@ -293,4 +296,3 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [ActionSheet Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics)
 - [ActionSheet API Reference](/api-reference/10%20UI%20Components/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
 
-[tags]action sheet, actionSheet, item appearance, customize, templates, template

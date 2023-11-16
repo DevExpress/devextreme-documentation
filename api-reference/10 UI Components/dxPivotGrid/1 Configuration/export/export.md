@@ -1,6 +1,7 @@
 ---
 id: dxPivotGrid.Options.export
 type: Object
+tags: xlsx, csv
 ---
 ---
 ##### shortDescription
@@ -356,4 +357,4 @@ The following restrictions apply when users export PivotGrid:
 - Only XLSX files are supported out of the box. To export PivotGrid to CSV, implement the **exportPivotGrid(options)** method as shown in the following ticket: <a href="https://supportcenter.devexpress.com/ticket/details/t920593/pivotgrid-exceljs-export-to-export-pivotgrid-into-csv-file" target="_blank">Export PivotGrid into CSV file</a>.
 - Only visible rows and columns are exported.
 
-[tags] xlsx, csv
+

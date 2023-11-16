@@ -1,3 +1,6 @@
+---
+tags: dxchart, chart, overview
+---
 The Chart is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/').
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/ChartOverview/chartExample.html, /Content/Applications/20_2/DataVisualization/Guides/ChartOverview/chartExample.js"></div>
@@ -39,4 +42,4 @@ Finally, add some interactivity.
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]dxchart, chart, overview
+

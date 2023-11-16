@@ -1,3 +1,6 @@
+---
+tags: treeview, tree view, plain data structure, dataSctructure, keyExpr, displayExpr, parentIdExpr
+---
 If you use plain data in the TreeView, set the [dataStructure](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure') property to *"plain"*. For an example of plain data, see the following code snippet. 
 
 ---
@@ -381,4 +384,3 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
 - [TreeView - Customize Node Appearance](/concepts/05%20UI%20Components/TreeView/30%20Customize%20Node%20Appearance.md '/Documentation/Guide/UI_Components/TreeView/Customize_Node_Appearance')
 - [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
-[tags]treeview, tree view, plain data structure, dataSctructure, keyExpr, displayExpr, parentIdExpr

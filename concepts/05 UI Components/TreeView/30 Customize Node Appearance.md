@@ -1,3 +1,6 @@
+---
+tags: treeview, tree view, item appearance, customize, templates, template, custom template
+---
 For minor customization of nodes, you can define [specific fields](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/') in node data objects. For example, the following code adds an icon to each node.
 
 ---
@@ -412,4 +415,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [TreeView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/ItemSelectionAndCustomization)
 - [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
-[tags]treeview, tree view, item appearance, customize, templates, template, custom template
+

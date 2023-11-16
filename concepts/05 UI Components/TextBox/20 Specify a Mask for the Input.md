@@ -1,3 +1,6 @@
+---
+tags: textBox, text box, editor, input pattern, input mask, custom masking elements, maskChar, useMaskedValue
+---
 A mask defines a pattern for the TextBox value. You can specify the mask using the [mask](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/mask.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#mask') property. A mask can contain the following elements.
 
 <table class="dx-table">
@@ -348,4 +351,3 @@ If the input value does not match the mask, the TextBox displays an error messag
 - [TextBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview)
 - [TextBox API Reference](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/')
 
-[tags]textBox, text box, editor, input pattern, input mask, custom masking elements, maskChar, useMaskedValue

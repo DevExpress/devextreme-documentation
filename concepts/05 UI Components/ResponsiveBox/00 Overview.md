@@ -1,3 +1,6 @@
+---
+tags: dxresponsivebox, responsive box, responsiveBox, layout UI component, overview, dxItem, full screen UI component
+---
 The ResponsiveBox UI component allows you to create an application or a website with a layout adapted to different screen sizes.
 
 ![DevExtreme HTML5 JavaScript ResponsiveBox](/images/UiWidgets/responsive-box.png)
@@ -326,4 +329,3 @@ All ResponsiveBox elements are arranged against a layout grid defined by the [ro
 - [ResponsiveBox - Arrange Layout Elements](/concepts/05%20UI%20Components/ResponsiveBox/15%20Arrange%20Layout%20Elements.md '/Documentation/Guide/UI_Components/ResponsiveBox/Arrange_Layout_Elements/')
 - [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
-[tags]dxresponsivebox, responsive box, responsiveBox, layout UI component, overview, dxItem, full screen UI component

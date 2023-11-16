@@ -1,3 +1,6 @@
+---
+tags: accordion, item appearance, customize, templates
+---
 For a minor customization of Accordion panels, you can define [specific fields](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/items/') in panel data objects. For example, the following code generates three panels, the first and third are not customized, the second is disabled.
    
 ---
@@ -429,4 +432,3 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 #####See Also#####
 - [Accordion API Reference](/api-reference/10%20UI%20Components/dxAccordion '/Documentation/ApiReference/UI_Components/dxAccordion/')
 
-[tags]accordion, item appearance, customize, templates

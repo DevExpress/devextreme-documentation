@@ -1,3 +1,6 @@
+---
+tags: switch, editor, get value, set value
+---
 To process a new Switch value, you need to handle the value change event. If the handling function is not going to be changed during the lifetime of the UI component, assign it to the [onValueChanged](/api-reference/10%20UI%20Components/Editor/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#onValueChanged') property when you configure the UI component.
 
 ---
@@ -157,4 +160,4 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [Switch Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview)
 - [Switch API Reference](/api-reference/10%20UI%20Components/dxSwitch '/Documentation/ApiReference/UI_Components/dxSwitch/')
 
-[tags]switch, editor, get value, set value
+

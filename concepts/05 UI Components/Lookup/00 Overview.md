@@ -1,3 +1,6 @@
+---
+tags: dxlookup, lookup, overview, data source, value, display expression, displayExpr, valueExpr
+---
 The Lookup is a UI component that allows an end user to search for an item in a collection shown in a drop-down menu.
 
 #include common-demobutton with {
@@ -235,4 +238,3 @@ If your data is an array of objects, specify:
 - [Lookup API Reference](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
 - [Lookup vs SelectBox](/concepts/05%20UI%20Components/Lookup/35%20Lookup%20vs%20SelectBox.md '/Documentation/Guide/UI_Components/Lookup/Lookup_vs_SelectBox/')
 
-[tags]dxlookup, lookup, overview, data source, value, display expression, displayExpr, valueExpr

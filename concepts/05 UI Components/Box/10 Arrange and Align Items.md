@@ -1,3 +1,6 @@
+---
+tags: box, arrange items in a column, arrange items in a row, direction, items alignment, align items, crossAlign
+---
 Items can be arranged in a row or in a column depending on the value of the [direction](/api-reference/10%20UI%20Components/dxBox/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxBox/Configuration/#direction') property.
 
 ---
@@ -200,4 +203,3 @@ If the Box items do not occupy the entire Box, you can align them along and cros
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
 - [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
-[tags]box, arrange items in a column, arrange items in a row, direction, items alignment, align items, crossAlign

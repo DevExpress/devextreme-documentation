@@ -1,3 +1,6 @@
+---
+tags: dxfilemanager
+---
 #include tutorials-intro-installationnote
 
 The FileManager UI component allows users to manage files and folders.
@@ -8,4 +11,4 @@ The FileManager UI component allows users to manage files and folders.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/jQuery/Light/"
 }
 
-[tags]dxfilemanager
+

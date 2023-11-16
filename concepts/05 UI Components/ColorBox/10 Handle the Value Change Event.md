@@ -1,3 +1,6 @@
+---
+tags: color box, colorBox, editor, handle, get value, set value
+---
 By default, the ColorBox applies value after an end user clicks the "Apply" button. To change this behavior, assign *'instantly'* to the [applyValueMode](/api-reference/10%20UI%20Components/dxColorBox/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxColorBox/Configuration/#applyValueMode') property. In this case, the UI component applies the value immediately after an end user chooses a color in the drop-down editor. 
 
 ---
@@ -246,4 +249,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [ColorBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ColorBox/Overview)
 - [ColorBox API Reference](/api-reference/10%20UI%20Components/dxColorBox '/Documentation/ApiReference/UI_Components/dxColorBox/')
 
-[tags]color box, colorBox, editor, handle, get value, set value

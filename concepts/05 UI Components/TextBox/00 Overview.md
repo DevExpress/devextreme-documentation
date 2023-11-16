@@ -1,3 +1,6 @@
+---
+tags: dxtextbox, textBox, text box, editor, overview
+---
 The TextBox is a UI component that enables a user to enter and edit a single line of text.
 
 #include common-demobutton with {
@@ -168,4 +171,3 @@ If an end user should _not_ be able to edit the value in the TextBox, assign **t
 - [TextBox API Reference](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/')
 - [TextArea](/concepts/05%20UI%20Components/TextArea/00%20Overview.md '/Documentation/Guide/UI_Components/TextArea/Overview/')
 
-[tags]dxtextbox, textBox, text box, editor, overview

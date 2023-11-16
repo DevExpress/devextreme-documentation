@@ -1,3 +1,6 @@
+---
+tags: selectBox, select box, editor, user-defined entry, user-defined item, custom entry, custom item, user-defined value, custom value
+---
 A user can select existing values and add new values to the SelectBox. To enable this feature, assign **true** to the [acceptCustomValue](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#acceptCustomValue') property. Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onCustomItemCreating.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onCustomItemCreating') handler to create a new data source entry.
 
 ---
@@ -188,4 +191,4 @@ A user can select existing values and add new values to the SelectBox. To enable
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 
-[tags]selectBox, select box, editor, user-defined entry, user-defined item, custom entry, custom item, user-defined value, custom value
+

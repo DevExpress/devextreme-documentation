@@ -1,3 +1,6 @@
+---
+tags: date box, dateBox, editor, scheduling, picker type, calendar, rollers, list, pickerType, interval
+---
 The DateBox provides the following controls for picking values.
 
 - [Calendar](/concepts/05%20UI%20Components/Calendar/00%20Overview.md '/Documentation/Guide/UI_Components/Calendar/Overview/')       
@@ -124,4 +127,3 @@ For the List picker, you can specify the step of available time values in minute
 - [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
 - [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
 
-[tags]date box, dateBox, editor, scheduling, picker type, calendar, rollers, list, pickerType, interval

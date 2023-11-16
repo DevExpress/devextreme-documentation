@@ -1,3 +1,6 @@
+---
+tags: dxtabpanel, tab panel, tabPanel, collection container, collection UI component, navigation, overview
+---
 The TabPanel is a UI component consisting of the [Tabs](/concepts/05%20UI%20Components/Tabs/00%20Overview.md '/Documentation/Guide/UI_Components/Tabs/Overview/') and [MultiView](/concepts/05%20UI%20Components/MultiView/00%20Overview.md '/Documentation/Guide/UI_Components/MultiView/Overview/') UI components. It automatically synchronizes the selected tab with the currently displayed view and vice versa.
 
 #include common-demobutton with {
@@ -135,4 +138,4 @@ Note that field names in these data source items are [conventional](/api-referen
 - [TabPanel - Control the Behavior](/concepts/05%20UI%20Components/TabPanel/15%20Control%20the%20Behavior.md '/Documentation/Guide/UI_Components/TabPanel/Control_the_Behavior')
 - [TabPanel API Reference](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/')
 
-[tags]dxtabpanel, tab panel, tabPanel, collection container, collection UI component, navigation, overview
+

@@ -1,6 +1,7 @@
 ---
 id: pdfExporter.exportDataGrid(options)
 module: pdf_exporter
+tags: ctp
 ---
 ---
 ##### shortDescription
@@ -228,4 +229,3 @@ You can call this method at any point in your application. In this example, we c
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExportToPDF/"
 }
 
-[tags] ctp

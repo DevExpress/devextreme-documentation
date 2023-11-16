@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, caching, cache, enable caching, cacheEnabled
+---
 The DataGrid caches data by default. This allows the UI component to decrease the loading time when a user sorts and filters data or expands a row the second time. To update data in cache, call the [refresh()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/refresh().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#refresh') method of the UI component or the [reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') method of the **DataSource**.
 
 ---
@@ -203,4 +206,3 @@ If your data source changes frequently, disable caching by assigning **false** t
 - [DataGrid - Access the DataSource](/concepts/05%20UI%20Components/DataGrid/05%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/DataGrid/Data_Binding/Access_the_DataSource/')
 - [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalDataSource)
 
-[tags] dataGrid, data grid, caching, cache, enable caching, cacheEnabled

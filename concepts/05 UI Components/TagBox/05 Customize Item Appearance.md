@@ -1,3 +1,6 @@
+---
+tags: tagBox, tag box, editor, item appearance, customize, templates, template, tag template
+---
 For a minor customization of TagBox items, you can define [specific fields](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/items/') in item data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
@@ -409,4 +412,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
 
-[tags]tagBox, tag box, editor, item appearance, customize, templates, template, tag template
+

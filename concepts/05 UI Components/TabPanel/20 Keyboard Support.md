@@ -1,3 +1,6 @@
+---
+tags: tab panel, tabPanel, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -22,4 +25,3 @@ An end user can use the following keys to interact with the UI component.
 - [TabPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview)
 - [TabPanel API Reference](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/')
 
-[tags]tab panel, tabPanel, navigation, accessibility, keyboard shortcuts

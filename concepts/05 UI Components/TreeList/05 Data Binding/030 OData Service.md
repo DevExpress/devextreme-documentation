@@ -1,3 +1,6 @@
+---
+tags: treeList, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind the TreeList to data an OData service supplies. It provides an interface for loading and editing data and allows you to handle data-related events.
 
 ---
@@ -99,4 +102,4 @@ Data kept in the **ODataStore** can be processed in the [DataSource](/api-refere
 - [Data Layer - Data Source Examples | OData](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData')
 - [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview)
 
-[tags]treeList, data binding, provide data, odata, ODataStore, DataSource, process data
+

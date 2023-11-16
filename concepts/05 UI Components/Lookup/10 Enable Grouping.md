@@ -1,3 +1,6 @@
+---
+tags: lookup, group, group template, customize
+---
 The Lookup can organize items in groups. If you use a simple array as a data source, its objects must have the **key** and **items** fields.
 
 ---
@@ -413,4 +416,3 @@ If you use jQuery alone, use <a href="http://api.jquery.com/category/manipulatio
 - [Lookup - Enable Paging](/concepts/05%20UI%20Components/Lookup/15%20Enable%20Paging.md '/Documentation/Guide/UI_Components/Lookup/Enable_Paging/')
 - [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
 
-[tags]lookup, group, group template, customize

@@ -1,3 +1,6 @@
+---
+tags: dxmenu, menu, navigation, collection container, collection UI component, overview
+---
 The Menu UI component is a panel with clickable items. A click on an item opens a drop-down menu, which can contain several submenus.
 
 #include common-demobutton with {
@@ -213,4 +216,3 @@ The following code adds the Menu UI component to your page. Note that the data s
 - [Menu - Change the Orientation](/concepts/05%20UI%20Components/Menu/10%20Change%20the%20Orientation.md '/Documentation/Guide/UI_Components/Menu/Change_the_Orientation')
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
-[tags]dxmenu, menu, navigation, collection container, collection UI component, overview

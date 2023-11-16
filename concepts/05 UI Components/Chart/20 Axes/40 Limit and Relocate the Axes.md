@@ -1,3 +1,6 @@
+---
+tags: chart, min axis value, max axis value, axis margins, valueMarginsEnabled, minValueMargin, maxValueMargin, axis position, rotated chart
+---
 The visual range of arguments/values on an axis should include all arguments/values of all series. If you want to reduce the visual range, specify the axis's [visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/') property.
 
 ---
@@ -183,4 +186,4 @@ Axes can be relocated to their opposite side using the [position](/api-reference
 - [Multi-Axis Chart](/concepts/05%20UI%20Components/Chart/20%20Axes/70%20Multi-Axis%20Chart.md '/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, min axis value, max axis value, axis margins, valueMarginsEnabled, minValueMargin, maxValueMargin, axis position, rotated chart
+

@@ -1,3 +1,6 @@
+---
+tags: responsive box, responsiveBox, size qualifier, adaptive layout, extra small screen, small screen, medium screen, large screen
+---
 When choosing the layout for a specific screen, the UI component considers the screen's size qualifier. There are four size qualifiers in all.
 
 <table class="dx-table">
@@ -159,4 +162,4 @@ If a size qualifier should be identified with other screen width values, use the
 - [ResponsiveBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview)
 - [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
-[tags]responsive box, responsiveBox, size qualifier, adaptive layout, extra small screen, small screen, medium screen, large screen 
+

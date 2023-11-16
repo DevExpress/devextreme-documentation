@@ -1,3 +1,6 @@
+---
+tags: scheduler, data binding, provide data, ArrayStore, DataSource, process data
+---
 If you want to extend the functionality of a JavaScript array, place it into the [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). It provides an interface for loading and editing data and allows you to handle data-related events.
 
 ---
@@ -279,4 +282,4 @@ Data kept in the **ArrayStore** can be processed in the [DataSource](/api-refere
 - [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-[tags]scheduler, data binding, provide data, ArrayStore, DataSource, process data
+

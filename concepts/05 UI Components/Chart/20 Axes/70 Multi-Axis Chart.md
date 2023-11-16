@@ -1,3 +1,6 @@
+---
+tags: chart, multiple value axes, synchronize axes, synchronizedValue, multipleAxesSpacing
+---
 A multi-axis chart adds extra meanings to visualized data in comparison to a single-axis chart. For example, in a single-axis chart, you have to choose which values to indicate - absolute or percentage. With a multi-axis chart, you are free to indicate both absolute and percentage values on two separate axis.
 
 ![DevExtreme HTML5 JavaScript Charts MultipleValueAxes](/images/ChartJS/visual_elements/value_axis_multiple.png)
@@ -311,4 +314,4 @@ All value axes in the Chart are synchronized by default, but you can explicitly 
 - [Limit and Relocate the Axes](/concepts/05%20UI%20Components/Chart/20%20Axes/40%20Limit%20and%20Relocate%20the%20Axes.md '/Documentation/Guide/UI_Components/Chart/Axes/Limit_and_Relocate_the_Axes/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, multiple value axes, synchronize axes, synchronizedValue, multipleAxesSpacing
+

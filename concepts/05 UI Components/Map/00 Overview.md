@@ -1,3 +1,6 @@
+---
+tags: dxmap, map, center, central position, zoom level, controls
+---
 The Map is an interactive UI component that displays a geographic map with markers and routes.
 
 #include common-demobutton with {
@@ -107,4 +110,4 @@ The code below adds the Map UI component to your page. The Map is [centered](/ap
 - [Map - Configure Routes](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/')
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]dxmap, map, center, central position, zoom level, controls
+

@@ -1,3 +1,6 @@
+---
+tags: treeview, tree view, navigation, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -58,4 +61,3 @@ An end user can use the following keys to interact with the UI component.
 - [TreeView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure)
 - [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')
 
-[tags]treeview, tree view, navigation, accessibility, keyboard shortcuts

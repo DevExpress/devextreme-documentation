@@ -1,3 +1,6 @@
+---
+tags: number box, numberBox, editor, get value, set value, change value, valueChangeEvent, valueChanged
+---
 By default, the value of the NumberBox is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxNumberBox/Configuration/#valueChangeEvent') property.
 
 ---
@@ -221,4 +224,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [NumberBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview)
 - [NumberBox API Reference](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/')
 
-[tags]number box, numberBox, editor, get value, set value, change value, valueChangeEvent, valueChanged

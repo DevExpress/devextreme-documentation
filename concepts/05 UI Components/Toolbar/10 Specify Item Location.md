@@ -1,3 +1,6 @@
+---
+tags: toolbar, location, item location, locate in menu
+---
 To set the location of items on a toolbar, use the [location](/api-reference/_hidden/dxToolbarItem/location.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#location') property. It accepts one of the following values.
 
 - *"center"*  
@@ -209,4 +212,4 @@ When there is not enough width for all toolbar items, or if certain toolbar item
 - [Toolbar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview)
 - [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
-[tags]toolbar, location, item location, locate in menu
+

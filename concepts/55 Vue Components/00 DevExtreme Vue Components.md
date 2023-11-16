@@ -1,3 +1,6 @@
+---
+frameworks: vue
+---
 #include common-troubleunderstanding-note with {
     technology: "Vue",
     docsLink: "https://v3.vuejs.org/guide/introduction.html#getting-started"
@@ -31,4 +34,3 @@ We also provide [over 250 technical demos](https://js.devexpress.com/Demos/Widge
 
 For information on how to integrate DevExtreme Vue UI components into your application, refer to the [Add DevExtreme to a Vue Application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') article.
 
-[tags] vue

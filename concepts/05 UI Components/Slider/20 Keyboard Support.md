@@ -1,3 +1,6 @@
+---
+tags: slider, accessibility, keyboard shortcuts
+---
 An end user can use the following keys to interact with the UI component.
 
 <table class="dx-table">
@@ -26,4 +29,3 @@ An end user can use the following keys to interact with the UI component.
 - [Slider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview)
 - [Slider API Reference](/api-reference/10%20UI%20Components/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
 
-[tags]slider, accessibility, keyboard shortcuts

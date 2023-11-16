@@ -1,3 +1,6 @@
+---
+tags: dxbutton
+---
 #include tutorials-intro-installationnote
 
 This tutorial shows how to add a Button to a page, apply styling, and configure its core features. As a result, you will create the following UI component:
@@ -6,4 +9,4 @@ This tutorial shows how to add a Button to a page, apply styling, and configure 
 
 Refer to the following sections for information on each configuration step. The full code is available in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-button" target="_blank">getting-started-with-button</a>.
 
-[tags] dxbutton
+

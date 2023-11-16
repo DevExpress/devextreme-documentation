@@ -1,3 +1,6 @@
+---
+tags: gallery, loop, slideshow, slideshowDelay
+---
 The Gallery UI component supports the display of images in a slideshow. To specify the time span that the UI component must wait before moving on to the next image, assign a positive number to the [slideshowDelay](/api-reference/10%20UI%20Components/dxGallery/1%20Configuration/slideshowDelay.md '/Documentation/ApiReference/UI_Components/dxGallery/Configuration/#slideshowDelay') property. This number specifies the time span in milliseconds. If it is zero, slideshow is disabled.
 
 ---
@@ -112,4 +115,3 @@ The Gallery UI component supports the display of images in a slideshow. To speci
 - [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
-[tags]gallery, loop, slideshow, slideshowDelay

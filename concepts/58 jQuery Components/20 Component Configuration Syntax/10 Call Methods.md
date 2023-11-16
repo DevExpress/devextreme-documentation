@@ -1,3 +1,7 @@
+---
+frameworks: jquery
+tags: basics, call methods, UI component instance, method arguments
+---
 To call a UI component method, pass its name to the jQuery plugin.
 
     <!--JavaScript-->
@@ -18,4 +22,4 @@ As an alternative, you can [obtain the UI component instance](/concepts/58%20jQu
 #####See Also#####
 - **API Reference**.**WidgetName**.**Methods**, for example, **API Reference**.[Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/').[Methods](/api-reference/10%20UI%20Components/dxChart/3%20Methods '/Documentation/ApiReference/UI_Components/dxChart/Methods/')
 
-[tags]basics, jquery, call methods, UI component instance, method arguments
+

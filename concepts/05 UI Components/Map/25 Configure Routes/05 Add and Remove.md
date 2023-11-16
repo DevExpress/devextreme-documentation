@@ -1,3 +1,6 @@
+---
+tags: map, routes, location, add route, remove route
+---
 To add routes at design-time, pass an array of objects to the [routes](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/') property. A route requires only its [locations](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes/locations '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/locations/') to be specified. The locations will be connected and make up the route.
 
 ---
@@ -331,4 +334,3 @@ With Angular, Vue, or React, use a different technique. Bind the **routes** prop
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, routes, location, add route, remove route

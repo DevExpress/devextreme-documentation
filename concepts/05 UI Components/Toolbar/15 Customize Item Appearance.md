@@ -1,3 +1,6 @@
+---
+tags: toolbar, item appearance, customize, templates, template, custom template
+---
 For a minor customization of Toolbar items, you can define [specific fields](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/') in item data objects. For example, the following code generates four toolbar items: the first is a UI component, the second is hidden, the third is disabled, the fourth is relocated.
 
 ---
@@ -372,4 +375,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [Toolbar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Toolbar/Overview)
 - [Toolbar API Reference](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/')
 
-[tags]toolbar, item appearance, customize, templates, template, custom template
+

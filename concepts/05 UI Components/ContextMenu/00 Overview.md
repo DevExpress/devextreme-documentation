@@ -1,3 +1,6 @@
+---
+tags: dxcontextmenu, context menu, contextMenu, navigation, collection container, collection UI component, overview
+---
 The ContextMenu UI component displays a single- or multi-level context menu. An end user invokes this menu by a right click or a long press.
 
 #include common-demobutton with {
@@ -196,4 +199,3 @@ The following code adds the ContextMenu UI component to your page and binds it t
 - [ContextMenu - Open and Close](/concepts/05%20UI%20Components/ContextMenu/10%20Open%20and%20Close%20the%20Context%20Menu '/Documentation/Guide/UI_Components/ContextMenu/Open_and_Close_the_Context_Menu/')
 - [ContextMenu API Reference](/api-reference/10%20UI%20Components/dxContextMenu '/Documentation/ApiReference/UI_Components/dxContextMenu/')
 
-[tags]dxcontextmenu, context menu, contextMenu, navigation, collection container, collection UI component, overview

@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, column types, lookup columns
+---
 A lookup column is a special type of [data columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/#Data_Columns'). It contains a restricted set of values that is useful when filtering and editing.
 
 ![DevExtreme HTML5 JavaScript DataGrid LookupColumns](/images/DataGrid/visual_elements/column-types_lookup.png)
@@ -345,4 +348,4 @@ Each cell in the lookup column is based on the [SelectBox](/api-reference/10%20U
 - [Bind a Lookup Column to a Custom Data Source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Bind%20a%20Lookup%20Column%20to%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/')
 - [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/')
 
-[tags] dataGrid, data grid, column types, lookup columns
+

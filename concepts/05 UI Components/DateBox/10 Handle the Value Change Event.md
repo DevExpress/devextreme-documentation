@@ -1,3 +1,6 @@
+---
+tags: date box, dateBox, editor, get value, set value, change value, valueChangeEvent, valueChanged
+---
 If instead of picking a value, an end user types it into the DateBox, this value applies when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be applied on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#valueChangeEvent') property.
 
 ---
@@ -241,4 +244,4 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [DateBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
 - [DateBox API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')
 
-[tags]date box, dateBox, editor, get value, set value, change value, valueChangeEvent, valueChanged
+

@@ -1,3 +1,6 @@
+---
+tags: popover, overlay, shading, background, shading color
+---
 When the Popover is shown, the area beneath it can be shaded. To enable this behavior, assign **true** to the [shading](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shading') property. The shading color is specified by the [shadingColor](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/shadingColor.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#shadingColor') property.
 
 ---
@@ -135,4 +138,3 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
 - [Popover - Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
 - [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
 
-[tags]popover, overlay, shading, background, shading color

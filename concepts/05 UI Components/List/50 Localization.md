@@ -1,3 +1,6 @@
+---
+tags: list, localization, translation, localization keys, localize messages, localize texts
+---
 Static messages for any DevExtreme UI component are defined in a locale-specific dictionary as key-value pairs. To localize the List UI component, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
 
     <!--JavaScript-->
@@ -97,4 +100,4 @@ Some messages can be defined by List properties as well as keys. The following t
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, localization, translation, localization keys, localize messages, localize texts
+

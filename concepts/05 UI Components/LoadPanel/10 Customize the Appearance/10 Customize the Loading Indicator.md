@@ -1,3 +1,6 @@
+---
+tags: loadPanel, load panel, overlay, loading indicator, customize indicator, hide indicator
+---
 If you need to use a 3rd-party loading indicator inside the LoadPanel, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
 
 ---
@@ -296,4 +299,3 @@ In case you do not need any loading indicator to be shown at all, assign **false
 - [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
-[tags]loadPanel, load panel, overlay, loading indicator, customize indicator, hide indicator

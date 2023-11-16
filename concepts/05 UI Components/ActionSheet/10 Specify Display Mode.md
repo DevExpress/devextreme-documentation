@@ -1,3 +1,6 @@
+---
+tags: action sheet, actionSheet, display mode, target element
+---
 By default, the ActionSheet comes up from the bottom of the page. If you set the [usePopover](/api-reference/10%20UI%20Components/dxActionSheet/1%20Configuration/usePopover.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/#usePopover') property to **true**, the action sheet will pop over a certain element on the page. Use the [target](/api-reference/10%20UI%20Components/dxActionSheet/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxActionSheet/Configuration/#target') property to specify this element.
 
 ---
@@ -89,4 +92,4 @@ By default, the ActionSheet comes up from the bottom of the page. If you set the
 - [ActionSheet API Reference](/api-reference/10%20UI%20Components/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
 #include common-link-configurewidget
 
-[tags]action sheet, actionSheet, display mode, target element
+

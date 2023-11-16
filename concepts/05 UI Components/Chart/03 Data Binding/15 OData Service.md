@@ -1,3 +1,6 @@
+---
+tags: chart, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 To bind the Chart to data provided by an OData service, use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').
 
 #include data-binding-examples-odata with {
@@ -22,4 +25,4 @@ As you may notice, in the previous code, the **ODataStore** is not declared expl
 - [Data Layer - Data Source Examples | OData](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/2%20OData '/Documentation/Guide/Data_Binding/Data_Source_Examples/#OData')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, data binding, provide data, odata, ODataStore, DataSource, process data
+

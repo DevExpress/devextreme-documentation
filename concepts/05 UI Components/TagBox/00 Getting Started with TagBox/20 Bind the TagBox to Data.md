@@ -1,3 +1,6 @@
+---
+tags: data binding
+---
 #include tutorials-editors-data-binding
 
 ---
@@ -354,4 +357,4 @@
 
 If you run this code and open the TagBox, you will see a populated drop-down list. Next, we will enable search.
 
-[tags] data binding
+

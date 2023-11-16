@@ -1,3 +1,6 @@
+---
+tags: map, route, opacity, thickness, weight, color, mode
+---
 The [route configuration](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/') provides default route appearance and allows its customization. For example, you can change the color, opacity and thickness of the route line. In addition, you can specify whether a route is [for driving or for walking](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes/mode.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/#mode').
 
 ---
@@ -153,4 +156,3 @@ The [route configuration](/api-reference/10%20UI%20Components/dxMap/1%20Configur
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, route, opacity, thickness, weight, color, mode

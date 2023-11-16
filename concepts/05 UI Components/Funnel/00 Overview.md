@@ -1,3 +1,6 @@
+---
+tags: dxfunnel
+---
 The Funnel is a UI component that visualizes a value at different stages in the form of a funnel. It helps assess value changes throughout these stages and identify potential issues.
 
 #include common-demobutton with {
@@ -32,4 +35,3 @@ Finally, add some interactivity:
 - [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
 - [Funnel API Reference](/api-reference/10%20UI%20Components/dxFunnel '/Documentation/ApiReference/UI_Components/dxFunnel/')
 
-[tags]dxfunnel

@@ -1,3 +1,6 @@
+---
+tags: dxrangeslider, rangeSlider, range slider, editor, overview, range, min, max, start, end, step
+---
 The RangeSlider is a UI component that allows an end user to choose a range of numeric values. Basically, the RangeSlider is the [Slider](/concepts/05%20UI%20Components/Slider/00%20Overview.md '/Documentation/Guide/UI_Components/Slider/Overview/') UI component with a second handle added.
 
 #include common-demobutton with {
@@ -250,4 +253,3 @@ In addition, you can specify the step of RangeSlider values using the [step](/ap
 - [RangeSlider API Reference](/api-reference/10%20UI%20Components/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/')
 - [Slider - Overview](/concepts/05%20UI%20Components/Slider/00%20Overview.md '/Documentation/Guide/UI_Components/Slider/Overview/')
 
-[tags]dxrangeslider, rangeSlider, range slider, editor, overview, range, min, max, start, end, step

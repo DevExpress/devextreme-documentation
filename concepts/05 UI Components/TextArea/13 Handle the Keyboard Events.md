@@ -1,3 +1,6 @@
+---
+tags: textArea, text area, editor, keyboard events, keyup, keydown, keypress, enterkey
+---
 The TextArea raises four keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyDown'), [keyPress](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyPress.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyPress'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#enterKey'). Within the functions that handle them, you can access the original keyboard events. If you are _not_ going to change the functions during the lifetime of the UI component, assign them to the respective UI component properties.
 
 ---
@@ -167,4 +170,4 @@ If you are going to change the handling functions at runtime, or if you need to 
 - [TextArea - Handle the Value Change Event](/concepts/05%20UI%20Components/TextArea/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/TextArea/Handle_the_Value_Change_Event/')
 - [TextArea Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview)
 
-[tags]textArea, text area, editor, keyboard events, keyup, keydown, keypress, enterkey
+

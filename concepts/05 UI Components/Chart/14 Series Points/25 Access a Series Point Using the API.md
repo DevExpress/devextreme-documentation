@@ -1,3 +1,6 @@
+---
+tags: chart, series point, get points, getAllPoints, get point by argument, getPointsByArg, get point by index, getPointByPos, get visible points, getVisiblePoints
+---
 [note]Before accessing a series point, you must gain access to its series. You can learn the details in the [Access a Series Using the API](/concepts/05%20UI%20Components/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/') topic.
 
 To access series points, use the following methods. All of them return one or several objects whose fields and methods are described in the [Point](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/') section of the API reference.
@@ -451,4 +454,3 @@ Apart from the API methods, you can access a series point in the event handlers.
 - [Access a Point Label Using the API](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/15%20Access%20a%20Point%20Label%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Access_a_Point_Label_Using_the_API/')
 #include common-link-callmethods
 
-[tags]chart, series point, get points, getAllPoints, get point by argument, getPointsByArg, get point by index, getPointByPos, get visible points, getVisiblePoints

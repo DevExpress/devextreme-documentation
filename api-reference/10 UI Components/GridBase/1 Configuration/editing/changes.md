@@ -3,11 +3,10 @@ id: GridBase.Options.editing.changes
 type: Array<any>
 default: []
 firedEvents: optionChanged
+tags: ctp
 ---
 ---
 ##### shortDescription
-[tags] ctp
-
 Pending row changes.
 
 ---

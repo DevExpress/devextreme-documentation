@@ -1,3 +1,6 @@
+---
+tags: chart, overview, series type, series name, common series settings, inidividual series settings
+---
 A series is a collection of related data points. 
 
 ![DevExtreme HTML5 JavaScript Charts Series](/images/ChartJS/visual_elements/series.png)
@@ -286,4 +289,4 @@ Objects in the **series** array specify individual settings for series. You can 
 - [Data Aggregation](/concepts/05%20UI%20Components/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/')
 - [Access a Series Using the API](/concepts/05%20UI%20Components/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/')
 
-[tags]chart, overview, series type, series name, common series settings, inidividual series settings
+

@@ -1,3 +1,6 @@
+---
+tags: popup, overlay, size, height, width, resize, position, drag
+---
 To change the size of the Popup, specify the [height](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width') properties.
 
 ---
@@ -467,4 +470,3 @@ By default, an end user is allowed to change the Popup position only on desktops
 - [Popup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview)
 - [Popup API Reference](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
 
-[tags]popup, overlay, size, height, width, resize, position, drag

@@ -1,3 +1,6 @@
+---
+tags: textArea, text area, editor, get value, set value, change value, valueChangeEvent, valueChanged
+---
 When a user types a text into the TextArea, the UI component writes this text into the **value** property when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need this to happen on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxTextArea/Configuration/#valueChangeEvent') property.
 
 ---
@@ -212,4 +215,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [TextArea Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextArea/Overview)
 - [TextArea API Reference](/api-reference/10%20UI%20Components/dxTextArea '/Documentation/ApiReference/UI_Components/dxTextArea/')
 
-[tags]textArea, text area, editor, get value, set value, change value, valueChangeEvent, valueChanged

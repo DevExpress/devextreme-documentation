@@ -1,3 +1,6 @@
+---
+tags: dxswitch, switch, editor, overview
+---
 The Switch is a UI component that can be in two states: "On" (when [value](/api-reference/10%20UI%20Components/dxSwitch/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#value') is **true**) and "Off" (when [value](/api-reference/10%20UI%20Components/dxSwitch/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxSwitch/Configuration/#value') is **false**).
 
 #include common-demobutton with {
@@ -99,4 +102,3 @@ The following code adds the Switch to your page.
 - [Switch - Keyboard Support](/concepts/05%20UI%20Components/Switch/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/Switch/Keyboard_Support')
 - [Switch API Reference](/api-reference/10%20UI%20Components/dxSwitch '/Documentation/ApiReference/UI_Components/dxSwitch/')
 
-[tags]dxswitch, switch, editor, overview

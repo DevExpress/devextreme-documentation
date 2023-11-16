@@ -1,3 +1,6 @@
+---
+tags: chart, axis ticks, major ticks, minor ticks, ticks' appearance
+---
 Axis ticks divide an axis into parts, and thus the readability of visualized data is improved. There are major and minor ticks. They differ in appearance.
 
 ![DevExtreme HTML5 JavaScript Charts AxisTicks](/images/ChartJS/visual_elements/axis_ticks.png)
@@ -100,4 +103,4 @@ To configure major or minor ticks, use the [tick](/api-reference/10%20UI%20Compo
 - [Arrange Axis Ticks](/concepts/05%20UI%20Components/Chart/20%20Axes/10%20Arrange%20Axis%20Ticks '/Documentation/Guide/UI_Components/Chart/Axes/Arrange_Axis_Ticks/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, axis ticks, major ticks, minor ticks, ticks' appearance
+

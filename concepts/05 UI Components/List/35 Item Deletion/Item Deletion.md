@@ -1,1 +1,3 @@
-[tags]list, enable delete, allowItemDeleting, delete mode, itemDeleteMode, delete by index, delete by dom node, deleteItem, handle item delete, onItemDeleting, onItemDeleted
+---
+tags: list, enable delete, allowItemDeleting, delete mode, itemDeleteMode, delete by index, delete by dom node, deleteItem, handle item delete, onItemDeleting, onItemDeleted
+---

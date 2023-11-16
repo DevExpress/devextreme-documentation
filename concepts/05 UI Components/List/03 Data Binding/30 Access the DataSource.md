@@ -1,3 +1,6 @@
+---
+tags: list, data binding, access data source, getDataSource, reload data
+---
 Regardless of the data source you use, the List always wraps it in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'). To get the instance of the **DataSource**, call the [getDataSource()](/api-reference/10%20UI%20Components/DataHelperMixin/3%20Methods/getDataSource().md '/Documentation/ApiReference/UI_Components/dxList/Methods/#getDataSource') method.
 
 ---
@@ -39,4 +42,3 @@ Now, you can call [any method](/api-reference/30%20Data%20Layer/DataSource/3%20M
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-[tags]list, data binding, access data source, getDataSource, reload data

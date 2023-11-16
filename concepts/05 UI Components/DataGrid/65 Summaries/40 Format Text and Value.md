@@ -1,3 +1,6 @@
+---
+tags: dataGrid, data grid, change text, change format, displayFormat, valueFormat, customizeText
+---
 Customize a summary item's text and value format using the [displayFormat](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/displayFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#displayFormat') and [valueFormat](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/valueFormat.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#valueFormat') properties. The following code changes the default text and shows an item with the applied currency format. The text includes the parent column's caption because this item is shown in another column.
 
 ---
@@ -239,4 +242,4 @@ Specify the **customizeText** function for a more detailed customization.
 - [Total Summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/10%20Total%20Summary '/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/')
 - [Group Summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/20%20Group%20Summary '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/')
 
-[tags]dataGrid, data grid, change text, change format, displayFormat, valueFormat, customizeText
+

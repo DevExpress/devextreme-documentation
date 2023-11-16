@@ -1,3 +1,6 @@
+---
+tags: chart, tooltips, enable tooltips, customizeTooltip
+---
 A tooltip is a small pop-up rectangle displaying information about a [series point](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') that the user pauses on. By default, the information is the point value, but it is possible to display anything in a tooltip.
 
 ![DevExtreme HTML5 JavaScript Charts Tooltip](/images/ChartJS/visual_elements/tooltip.png)
@@ -200,4 +203,4 @@ Properties declared in the **tooltip** object apply to all tooltips in the Chart
 - [Handle Tooltip Events](/concepts/05%20UI%20Components/Chart/30%20Tooltips/20%20Handle%20Tooltip%20Events.md '/Documentation/Guide/UI_Components/Chart/Tooltips/Handle_Tooltip_Events/')
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, tooltips, enable tooltips, customizeTooltip
+

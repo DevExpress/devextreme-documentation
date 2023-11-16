@@ -1,3 +1,6 @@
+---
+tags: selectBox, data binding, provide data, odata, ODataStore, DataSource, process data
+---
 Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/') to bind SelectBox to data an OData service provides.
 
 ---
@@ -102,4 +105,4 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
 - [Access the DataSource](/concepts/05%20UI%20Components/SelectBox/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/SelectBox/Data_Binding/Access_the_DataSource/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/Overview)
 
-[tags]selectBox, data binding, provide data, odata, ODataStore, DataSource, process data
+

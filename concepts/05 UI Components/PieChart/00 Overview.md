@@ -1,3 +1,6 @@
+---
+tags: dxpiechart
+---
 The PieChart is an interactive UI component that visualizes data as a circle divided into sectors that each represents a portion of the whole.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/20_2/DataVisualization/Guides/PieChartOverview/pieChartExample.html, /Content/Applications/20_2/DataVisualization/Guides/PieChartOverview/pieChartExample.js"></div>
@@ -30,4 +33,3 @@ Finally, add some interactivity.
 - [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie)
 - [PieChart API Reference](/api-reference/10%20UI%20Components/dxPieChart '/Documentation/ApiReference/UI_Components/dxPieChart/')
 
-[tags]dxpiechart

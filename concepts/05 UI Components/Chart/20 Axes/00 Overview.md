@@ -1,3 +1,6 @@
+---
+tags: chart, axes, argument axis, value axis, axis type, continuous axis, discrete axis, logarithmic axis, logarithmBase, argumentType, valueType
+---
 The Chart UI component visualizes data on the rectangular coordinate system. In this system, each point is determined on a plane by two components: the argument and the value, each indicated on a devoted axis.
 
 ![DevExtreme HTML5 JavaScript Charts Axis Axes](/images/ChartJS/visual_elements/axes.png)
@@ -246,4 +249,4 @@ For better readability of visualized data, any axis is divided into parts using 
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LogarithmicAxis)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
-[tags]chart, axes, argument axis, value axis, axis type, continuous axis, discrete axis, logarithmic axis, logarithmBase, argumentType, valueType
+

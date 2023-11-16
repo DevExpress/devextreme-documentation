@@ -1,3 +1,6 @@
+---
+tags: box, nest, nested, nest boxes, nested boxes
+---
 A nested Box is configured similarly to an ordinary Box. To nest one Box into another, add one more item to the parent Box and put the markup of the nested Box into this item.
 
 ---
@@ -205,4 +208,4 @@ This code yields the following result.
 - [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
 - [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
-[tags]box, nest, nested, nest boxes, nested boxes
+

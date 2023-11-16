@@ -1,3 +1,6 @@
+---
+frameworks: vue
+---
 DevExtreme Vue components are supplied with TypeScript declarations. Strict typing allows you to catch bugs at earlier stages and use features like code completion and automated refactoring.
 
 The following code shows an example of using TypeScript with DevExtreme components in a Vue application:
@@ -65,4 +68,3 @@ The following code shows an example of using TypeScript with DevExtreme componen
 #####See Also#####
 - <a href="https://v3.vuejs.org/guide/typescript-support.html" target="_blank">TypeScript Support in Vue Documentation</a>
 
-[tags] vue

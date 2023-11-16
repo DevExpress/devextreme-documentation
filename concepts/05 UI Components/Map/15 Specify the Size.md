@@ -1,3 +1,6 @@
+---
+tags: map, size, height, width, css
+---
 The default size of the Map UI component is 300x300 pixels. To change it, use to the [width](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#width') and [height](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#height') properties.
 
 ---
@@ -221,4 +224,3 @@ If you prefer specifying the UI component size using CSS, set the **width** and 
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, size, height, width, css

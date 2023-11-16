@@ -1,3 +1,6 @@
+---
+tags: lookup, change value, valueChangeEvent, valueChanged, apply mode, apply value, apply instantly, use buttons
+---
 By default, the Lookup applies a value immediately after an end user chooses an item from the drop-down menu. To change this behavior and apply the value after a user clicks the "Apply" button, assign *'useButtons'* to the [applyValueMode](/api-reference/10%20UI%20Components/dxLookup/1%20Configuration/applyValueMode.md '/Documentation/ApiReference/UI_Components/dxLookup/Configuration/#applyValueMode') property.
 
 ---
@@ -240,4 +243,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #####See Also#####
 #include common-link-handleevents
 
-[tags]lookup, change value, valueChangeEvent, valueChanged, apply mode, apply value, apply instantly, use buttons

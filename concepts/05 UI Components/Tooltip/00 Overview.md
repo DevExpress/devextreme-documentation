@@ -1,3 +1,6 @@
+---
+tags: dxtooltip, tooltip, overview, overlay
+---
 The Tooltip UI component displays a tooltip for a specified element on the page.
 
 #include common-demobutton with {
@@ -134,4 +137,3 @@ The following code creates a simple Tooltip on your page and attaches it to anot
 - [Tooltip - Resize and Relocate](/concepts/05%20UI%20Components/Tooltip/15%20Resize%20and%20Relocate.md '/Documentation//Guide/UI_Components/Tooltip/Resize_and_Relocate/')
 - [Tooltip API Reference](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 
-[tags]dxtooltip, tooltip, overview, overlay

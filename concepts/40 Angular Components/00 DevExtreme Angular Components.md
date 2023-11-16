@@ -1,3 +1,6 @@
+---
+frameworks: angular
+---
 #include common-troubleunderstanding-note with {
     technology: "Angular",
     docsLink: "https://angular.io/docs"
@@ -39,4 +42,3 @@ We also provide [over 250 technical demos](https://js.devexpress.com/Demos/Widge
 
 For information on how to integrate DevExtreme Angular UI components into your application, refer to one of the [Getting Started articles](/concepts/40%20Angular%20Components/10%20Getting%20Started/02%20Create%20a%20DevExtreme%20Application.md '/Documentation/Guide/Angular_Components/Getting_Started/').
 
-[tags] angular

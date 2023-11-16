@@ -1,3 +1,6 @@
+---
+tags: filterBuilder, filter builder, lookup field
+---
 You can limit the available filter values by predefining them in the lookup field.
 
 ![DevExtreme HTML5 JavaScript Filter Builder Lookup Field](/images/FilterBuilder/visual_elements/lookup_field.png)
@@ -267,4 +270,4 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
 #####See Also#####
 - [lookup](/api-reference/_hidden/dxFilterBuilderField/lookup '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/lookup/')
 
-[tags] filterBuilder, filter builder, lookup field
+

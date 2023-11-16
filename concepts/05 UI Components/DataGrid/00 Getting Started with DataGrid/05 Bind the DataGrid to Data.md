@@ -1,3 +1,6 @@
+---
+tags: data binding
+---
 The DataGrid component can load and update data from different data source types. To use a local array, assign it to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property and specify the key field in the [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') property. If you want to use another data source type, refer to one of the following articles:
 
 - [Read-Only Data in JSON Format](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
@@ -757,4 +760,3 @@ The DataGrid component can load and update data from different data source types
 
 If you run this code, a DataGrid is created with a column for each data field. All the columns have equal widths and the same order as their data fields.
 
-[tags] data binding

@@ -1,3 +1,6 @@
+---
+tags: treeList, plain data, parentIdExpr, keyExpr, root value, rootValue
+---
 For an example of plain data, see the following code.
 
     <!--JavaScript-->
@@ -122,4 +125,4 @@ When you load data from a remote source, and your data objects have a field that
 - [TreeList - Use Hierarchical Data](/concepts/05%20UI%20Components/TreeList/05%20Data%20Binding/015%20Use%20Hierarchical%20Data.md '/Documentation/Guide/UI_Components/TreeList/Data_Binding/Use_Hierarchical_Data/')
 - [TreeList API Reference](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')
 
-[tags]treeList, plain data, parentIdExpr, keyExpr, root value, rootValue
+

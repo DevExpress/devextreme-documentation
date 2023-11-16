@@ -1,3 +1,6 @@
+---
+tags: selectBox, data binding, provide data, array, process data, query
+---
 Bind the SelectBox to an array by passing it to the [dataSource](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dataSource') property. The array may contain primitive values...
 
 ---
@@ -147,4 +150,4 @@ You can create a [Query](/concepts/70%20Data%20Binding/5%20Data%20Layer/6%20Quer
 - [Access the DataSource](/concepts/05%20UI%20Components/SelectBox/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/SelectBox/Data_Binding/Access_the_DataSource/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/Overview)
 
-[tags]selectBox, data binding, provide data, array, process data, query
+

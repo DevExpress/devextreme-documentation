@@ -1,3 +1,6 @@
+---
+tags: selectBox, select box, editor, get value, set value, change value, valueChangeEvent, valueChanged
+---
 By default, the value of the SelectBox is changed when the <a href="https://developer.mozilla.org/en/docs/Web/Events/change" target="_blank">change</a> event is raised. If you need the value to be changed on another event, set the [valueChangeEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#valueChangeEvent') property.
 
 ---
@@ -241,4 +244,3 @@ If you are going to change event handlers at runtime, or if you need to attach s
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
 
-[tags]selectBox, select box, editor, get value, set value, change value, valueChangeEvent, valueChanged

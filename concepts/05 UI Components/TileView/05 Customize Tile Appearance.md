@@ -1,3 +1,6 @@
+---
+tags: tile view, tileView, item appearance, tile appearance, customize, templates, template, custom template
+---
 For a minor customization of tiles, you can define [specific fields](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/') in item data objects. For example, the following code generates three tiles: the first is disabled, the second is not customized, the third is hidden.
 
 ---
@@ -390,4 +393,4 @@ In addition, you can use a 3rd-party template engine to customize UI component a
 - [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview)
 - [TileView API Reference](/api-reference/10%20UI%20Components/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
-[tags]tile view, tileView, item appearance, tile appearance, customize, templates, template, custom template
+

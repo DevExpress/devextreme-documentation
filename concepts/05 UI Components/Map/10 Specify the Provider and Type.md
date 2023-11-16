@@ -1,3 +1,6 @@
+---
+tags: map, provider, bing, google, api key, map type, hybrid, road map, satellite
+---
 By default, the Map UI component uses **Google Maps** as a map provider. It can use **Bing Maps** or **Google Static Maps** instead. To change the provider, assign one of the values listed below to the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property.
 
 ---
@@ -303,4 +306,3 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, provider, bing, google, api key, map type, hybrid, road map, satellite

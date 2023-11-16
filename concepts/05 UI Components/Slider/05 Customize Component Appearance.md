@@ -1,3 +1,6 @@
+---
+tags: slider, editor, label, tooltip, showRange
+---
 The Slider can display labels for the [min](/api-reference/10%20UI%20Components/dxTrackBar/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxSlider/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxTrackBar/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxSlider/Configuration/#max') values. To configure the labels, use the [label](/api-reference/10%20UI%20Components/dxSliderBase/1%20Configuration/label '/Documentation/ApiReference/UI_Components/dxSlider/Configuration/label/') object.
 
 ---
@@ -294,4 +297,4 @@ To specify whether or not the part of the scale from the beginning to the slider
 - [Slider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview)
 - [Slider API Reference](/api-reference/10%20UI%20Components/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
 
-[tags]slider, editor, label, tooltip, showRange
+

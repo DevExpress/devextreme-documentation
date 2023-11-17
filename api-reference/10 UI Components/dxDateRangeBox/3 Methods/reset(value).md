@@ -1,0 +1,16 @@
+---
+id: dxDateRangeBox.reset(value)
+---
+---
+##### shortDescription
+Resets the [value]({basewidgetpath}/Configuration/#value) property to the value passed as an argument.
+
+##### param(value): Array<Date, Number, String, null>
+Specifies the new value.
+
+---
+This method sets the [isDirty]({basewidgetpath}/Configuration/#isDirty) flag to `false`.
+
+##### See Also #####
+- [reset()]({basewidgetpath}/Methods/#reset)
+- [clear()]({basewidgetpath}/Methods/#clear)

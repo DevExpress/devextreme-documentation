@@ -7,7 +7,7 @@ Not all screen readers pronounce the progress [status](/Documentation/ApiReferen
 ---
 ##### jQuery
 
-    <!-- index.js -->
+    <!-- tab: index.js -->
     $(function(){
         $("#progressBarContainer").dxProgressBar({
             elementAttr: {
@@ -22,14 +22,14 @@ Not all screen readers pronounce the progress [status](/Documentation/ApiReferen
 
 ##### Angular
 
-    <!-- app.component.html -->
+    <!-- tab: app.component.html -->
     <dx-progress-bar
         [elementAttr]="elementAttr"
         (onContentReady)="onContentReady($event)"
     >
     </dx-progress-bar>
 
-    <!-- app.component.ts -->
+    <!-- tab: app.component.ts -->
     export class AppComponent {
         elementAttr = {
             'aria-live': 'polite',
@@ -41,7 +41,8 @@ Not all screen readers pronounce the progress [status](/Documentation/ApiReferen
     }
 
 ##### Vue
-    <!-- App.vue -->
+
+    <!-- tab: App.vue -->
     <template>
     <DxProgressBar
         :element-attr="elementAttr"
@@ -74,7 +75,7 @@ Not all screen readers pronounce the progress [status](/Documentation/ApiReferen
 
 ##### React
 
-    <!-- App.js -->
+    <!-- tab: App.js -->
     import React from 'react';
     import { ProgressBar } from 'devextreme-react/progress-bar';
 

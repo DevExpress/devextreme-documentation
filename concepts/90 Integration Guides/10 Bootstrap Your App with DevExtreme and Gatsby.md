@@ -15,22 +15,20 @@ DevExtreme's powerful client-side components complement Gatsby well, which makes
 
 Install the `gatsby-cli` npm package. This command line tool generates, builds, and deploys Gatsby websites.
 
-```sh
-npm install -g gatsby-cli
-```
+<!--Shell-->
+  npm install -g gatsby-cli
 
 Launch the gatsby wizard to generate a new website:
 
-```sh
-gatsby new
-```
+<!--Shell-->
+  gatsby new
 
 Launch a development server to see a live preview of the website:
 
-```sh
-cd my-website
-gatsby develop
-```
+<!--Shell-->
+  cd my-website
+  gatsby develop
+
 
 ![Command line URL](/images/Gatsby/cmd-url.png)
 ![Gatsby website](/images/Gatsby/new-website.png)
@@ -41,30 +39,29 @@ If you get stuck, consult [Gatsby documentation](https://www.gatsbyjs.com/docs/t
 
 Gatsby uses React to render content. Edit the `src/pages/index.tsx` file to change the home page:
 
-```tsx
-import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
-const IndexPage: React.FC<PageProps> = () => {
-
-  return (<main>
-    <h1>Main Page</h1> <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p> </main>
-  )
-}
-export default IndexPage
-export const Head: HeadFC = () => {
-  return (
-    <>
-      <title>Home Page</title>
-    </>
-  )
-};
-```
+<!--TypeScript-->
+  import * as React from "react";
+  import type { HeadFC, PageProps } from "gatsby";
+  const IndexPage: React.FC<PageProps> = () => {
+  
+    return (<main>
+      <h1>Main Page</h1> <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p> </main>
+    )
+  }
+  export default IndexPage
+  export const Head: HeadFC = () => {
+    return (
+      <>
+        <title>Home Page</title>
+      </>
+    )
+  };
 
 Commit your changes. Your page should look like this:
 
@@ -95,79 +92,77 @@ If you deploy your website on Netlify, Gatsby renders your content on the server
 
 We're ready to add a DevExtreme Data Grid to our application. First, add DevExtreme to your project dependenies (`.package.json`):
 
-```json
-"dependencies": {
-    "devextreme": "^23.1.3",
-    "devextreme-react": "^23.1.3", 
-    "gatsby-plugin-manifest": "^5.11.0",
-    <...>
-}
-```
+<!--JSON-->
+  "dependencies": {
+      "devextreme": "^23.1.3",
+      "devextreme-react": "^23.1.3", 
+      "gatsby-plugin-manifest": "^5.11.0",
+      <...>
+  }
 
 Run `npm install` to install new dependencies. When the installation is complete, add a DevExtreme grid to the index page:
 
-```tsx
-import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
-import DataGrid, {
-  Column,
-  Pager,
-  Paging,
-} from 'devextreme-react/data-grid';
-import ODataStore from 'devextreme/data/odata/store';
-const pageSizes = [10, 25, 50, 100];
-const dataSourceOptions = {
-  store: new ODataStore({
-    url: 'https://js.devexpress.com/Demos/SalesViewer/odata/DaySaleDtoes', key: 'Id',
-    beforeSend(request) {
-      const year = new Date().getFullYear() - 1; request.params.startDate = `${year}-05-10`; request.params.endDate = `${year}-5-15`;
-    },
-  }),
-};
-const DemoGrid: React.FC = () => {
-  return (
-    <> <DataGrid
-
-      dataSource={dataSourceOptions} allowColumnReordering={true} rowAlternationEnabled={true} showBorders={true}
-    >
-      <Column dataField="Product" /> <Column
-        dataField="Amount" caption="Sale Amount" dataType="number" format="currency" alignment="right"
-      /> <Column
-        dataField="Discount" caption="Discount %" dataType="number" format="percent" alignment="right" allowGrouping={false} cssClass="bullet"
-      />
-      <Column dataField="SaleDate" dataType="date" />
-      <Column dataField="Region" dataType="string" />
-      <Column dataField="Sector" dataType="string" />
-      <Column dataField="Channel" dataType="string" />
-      <Column dataField="Customer" dataType="string" width={150} />
-      <Pager allowedPageSizes={pageSizes} showPageSizeSelector={true} /> <Paging defaultPageSize={10} />
-
-    </DataGrid> </>
-  );
-}
-const IndexPage: React.FC<PageProps> = () => {
-  return (
-    <main>
-      <h1>Main Page</h1> <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <DemoGrid /> </main>
-  )
-}
-export default IndexPage
-export const Head: HeadFC = () => {
-  return (
-    <>
-      <title>Home Page</title>
-    </>
-
-  )
-};
-```
+<!--TypeScript-->
+  import * as React from "react";
+  import type { HeadFC, PageProps } from "gatsby";
+  import DataGrid, {
+    Column,
+    Pager,
+    Paging,
+  } from 'devextreme-react/data-grid';
+  import ODataStore from 'devextreme/data/odata/store';
+  const pageSizes = [10, 25, 50, 100];
+  const dataSourceOptions = {
+    store: new ODataStore({
+      url: 'https://js.devexpress.com/Demos/SalesViewer/odata/DaySaleDtoes', key: 'Id',
+      beforeSend(request) {
+        const year = new Date().getFullYear() - 1; request.params.startDate = `${year}-05-10`; request.params.endDate = `${year}-5-15`;
+      },
+    }),
+  };
+  const DemoGrid: React.FC = () => {
+    return (
+      <> <DataGrid
+  
+        dataSource={dataSourceOptions} allowColumnReordering={true} rowAlternationEnabled={true} showBorders={true}
+      >
+        <Column dataField="Product" /> <Column
+          dataField="Amount" caption="Sale Amount" dataType="number" format="currency" alignment="right"
+        /> <Column
+          dataField="Discount" caption="Discount %" dataType="number" format="percent" alignment="right" allowGrouping={false} cssClass="bullet"
+        />
+        <Column dataField="SaleDate" dataType="date" />
+        <Column dataField="Region" dataType="string" />
+        <Column dataField="Sector" dataType="string" />
+        <Column dataField="Channel" dataType="string" />
+        <Column dataField="Customer" dataType="string" width={150} />
+        <Pager allowedPageSizes={pageSizes} showPageSizeSelector={true} /> <Paging defaultPageSize={10} />
+  
+      </DataGrid> </>
+    );
+  }
+  const IndexPage: React.FC<PageProps> = () => {
+    return (
+      <main>
+        <h1>Main Page</h1> <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <DemoGrid /> </main>
+    )
+  }
+  export default IndexPage
+  export const Head: HeadFC = () => {
+    return (
+      <>
+        <title>Home Page</title>
+      </>
+  
+    )
+  };
 
 Refresh the page to view the result:
 
@@ -190,9 +185,8 @@ If you want to apply a single DevExtreme theme to your entire website, add a fil
 
 Add the following `import` statement to the file:
 
-```js
-import 'devextreme/dist/css/dx.light.css';
-```
+<!--JavaScript-->
+  import 'devextreme/dist/css/dx.light.css';
 
 This statement applies the `light` theme to the DevExtreme grid.
 
@@ -204,13 +198,13 @@ Restart the Gatsby server to compile new assets. The grid should look like this:
 
 If you want to apply a DevExtreme theme to a particular page, do not import this theme globally. Instead, add a `link` to the `Head` of the target page:
 
-```tsx
-export const Head: HeadFC = () => { return (
-<>
-<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/23.1.3/css/dx.light.css" /> <title>Home Page</title>
-</>
-) };
-```
+<!--JavaScript-->
+  export const Head: HeadFC = () => { return (
+  <>
+  <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/23.1.3/css/dx.light.css" /> <title>Home Page</title>
+  </>
+  ) };
+
 
 This link downloads the `light` theme from the DevExpress CDN and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
 

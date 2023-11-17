@@ -1,0 +1,3 @@
+The ProgressBar component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. 
+
+To improve accessibility, use the [elementAttr](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#elementAttr) property to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component. 

@@ -3,10 +3,14 @@ id: dxCalendar.reset(value)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Resets the [value]({basewidgetpath}/Configuration/#value) property to the value passed as an argument.
 
 ##### param(value): Date | Number | String | Array<Date, Number, String> | null
-<!-- Description goes here -->
+Specifies the new value.
 
 ---
-<!-- Description goes here -->
+This method sets the [isDirty]({basewidgetpath}/Configuration/#isDirty) flag to `false`.
+
+##### See Also #####
+- [reset()]({basewidgetpath}/Methods/#reset)
+- [clear()]({basewidgetpath}/Methods/#clear)

@@ -31,11 +31,11 @@ You can generate color swatches with the DevExtreme CLI or ThemeBuilder UI:
 
     Click **Export** on the toolbar to open the **Theme Export** pop-up dialog. Enter the color swatch's name, check the **Save as a color swatch** checkbox, and proceed to the last step.
 
-    ![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Enter Name](/images/Common/ThemeBuilder/themebuilder-themeexport-name.png)
+    <img src="/images/Common/ThemeBuilder/themebuilder-themeexport-name@2x.png" alt="DevExtreme ThemeBuilder UI: Theme Export popup dialog, Enter Name" width="50%" height="auto">
 
     Click **Download CSS File** to save a CSS file on your computer.
 
-    ![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Choose Format](/images/Common/ThemeBuilder/themebuilder-themeexport-format.png)
+    <img src="/images/Common/ThemeBuilder/themebuilder-themeexport-format@2x.png" alt="DevExtreme ThemeBuilder UI: Theme Export popup dialog, Choose Format" width="50%" height="auto">
 
     Move the resulting CSS file to the application folder, [register it](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/50%20Apply%20a%20Theme/00%20Apply%20a%20Theme.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Apply_a_Theme'), and add the swatch class to a page element.
 

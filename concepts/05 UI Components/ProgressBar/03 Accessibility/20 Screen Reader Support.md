@@ -1,8 +1,8 @@
 The ProgressBar component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. 
 
-To improve accessibility, use the [elementAttr](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#elementAttr) property to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component.
+To improve accessibility, use the [elementAttr](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/elementAttr.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#elementAttr') property to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component.
 
-Not all screen readers pronounce the progress [status](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#showStatus). To make sure the status is pronounced, add the following aria-* attributes:
+Not all screen readers pronounce the progress [status](/api-reference/10%20UI%20Components/dxProgressBar/1%20Configuration/showStatus.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#showStatus'). To make sure the status is pronounced, add the following aria-* attributes:
 
 ---
 ##### jQuery

@@ -1,14 +1,14 @@
 Click **Export** to open the **Theme Export** popup dialog. In this dialog, enter the color scheme name. If you want to export the theme as a [color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches'), check the check box. You can also remove links to external resources, such as fonts.
 
-![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Enter Name](/images/Common/ThemeBuilder/themebuilder-themeexport-name.png)
+<img src="/images/Common/ThemeBuilder/themebuilder-themeexport-name@2x.png" alt="DevExtreme ThemeBuilder UI: Theme Export popup dialog, Enter Name" width="50%" height="auto">
 
 On the next step, select the components for your theme to support.
 
-![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Select Widgets](/images/Common/ThemeBuilder/themebuilder-themeexport-widgets.png)
+<img src="/images/Common/ThemeBuilder/themebuilder-themeexport-widgets@2x.png" alt="DevExtreme ThemeBuilder UI: Theme Export popup dialog, Select Widgets" width="50%" height="auto">
 
 Click **Download CSS File** to save a file named `dx.[base-theme-name].[color-scheme-name].css` (for example, `dx.material.brown.css`) on your computer. Alternatively, you can download the archive with a CSS file and icons or copy the CSS.
 
-![DevExtreme ThemeBuilder UI: Theme Export popup dialog, Choose Format](/images/Common/ThemeBuilder/themebuilder-themeexport-format.png)
+<img src="/images/Common/ThemeBuilder/themebuilder-themeexport-format@2x.png" alt="DevExtreme ThemeBuilder UI: Theme Export popup dialog, Choose Format" width="50%" height="auto">
 
 If you click **Copy Metadata**, you can see your theme's name in the `baseTheme` field. You can copy it to register the theme later.
 

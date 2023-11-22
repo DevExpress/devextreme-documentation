@@ -305,7 +305,6 @@ The RadioGroup UI component supports horizontal (default for tablets) and vertic
 #include common-link-configurewidget
 - [RadioGroup - Handle the Value Change Event](/concepts/05%20UI%20Components/RadioGroup/05%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/RadioGroup/Handle_the_Value_Change_Event')
 - [RadioGroup - Customize Item Appearance](/concepts/05%20UI%20Components/RadioGroup/10%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/RadioGroup/Customize_Item_Appearance')
-- [RadioGroup - Keyboard Support](/concepts/05%20UI%20Components/RadioGroup/20%20Keyboard%20Support.md '/Documentation/Guide/UI_Components/RadioGroup/Keyboard_Support')
 - [RadioGroup API Reference](/api-reference/10%20UI%20Components/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
 
 [tags]dxradiogroup, radio group, radioGroup, layout, editor, overview

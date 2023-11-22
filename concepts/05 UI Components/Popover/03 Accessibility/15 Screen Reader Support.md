@@ -85,7 +85,7 @@ The default ARIA role for Popover is <a href="https://developer.mozilla.org/en-U
 
 ---
 
-Accessibility readers do not notify users when the Popover is opened since it is not a focusable element. To receive reader notifications for an open dialog, programmatically focus on an element within Popover after its activation:
+Accessibility readers do not notify users when the Popover is opened since it is not a focusable element. To receive reader notifications for an open dialog, programmatically focus an element in Popover after its activation:
 
 ---
 ##### jQuery

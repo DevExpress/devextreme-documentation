@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+A user can use the following keys to interact with the RadioGroup component: 
 
 <table class="dx-table">
     <tr>
@@ -24,10 +24,3 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [RadioGroup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RadioGroup/Overview)
-- [RadioGroup API Reference](/api-reference/10%20UI%20Components/dxRadioGroup '/Documentation/ApiReference/UI_Components/dxRadioGroup/')
-
-[tags]radio group, radioGroup, accessibility, keyboard shortcuts

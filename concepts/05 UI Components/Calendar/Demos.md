@@ -1,3 +1,4 @@
 #include demos-intro
 
-- [Calendar](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/)
+- [Multiple Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/MultipleSelection/)

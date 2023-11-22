@@ -1,3 +1,3 @@
 #include demos-intro
 
-- [Floating Action Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/)

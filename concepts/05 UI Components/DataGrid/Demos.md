@@ -1,5 +1,7 @@
 #include demos-intro
 
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)
+
 **Data Binding**
 
 - [Simple Array](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SimpleArray/)
@@ -46,6 +48,8 @@
 - [Filtering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/)
 - [Filtering API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilteringAPI/)
 - [Filter Panel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/)
+- [Column Header Filter](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnHeaderFilter/)
+- [Focused Row](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/)
 
 **Row Drag & Drop**
 
@@ -63,10 +67,12 @@
 **Columns**
 
 - [Column Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnCustomization/)
-- [Columns Based on a Data Source](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnsBasedOnADataSource/)
+- [Columns based on a Data Source](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnsBasedOnADataSource/)
 - [Multi-Level Headers (Bands)](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultiRowHeadersBands/)
 - [Column Resizing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/)
 - [Command Column Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/)
+- [Column Chooser](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnChooser/)
+- [State Persistence](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/StatePersistence/)
 
 **Appearance**
 
@@ -77,6 +83,8 @@
 
 - [Column Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/)
 - [Row Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/)
+- [Column 3rd Party Engine Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Column3RdPartyEngineTemplate/)
+- [Row 3rd Party Engine Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Row3RdPartyEngineTemplate/)
 - [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/)
 - [Toolbar Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/)
 
@@ -95,7 +103,7 @@
 
 **Export to PDF**
 
-- [Export to PDF Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/)
 - [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/)
 - [Header and Footer](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFHeaderAndFooter/)
 - [Export Multiple Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportMultipleGrids/)
@@ -103,7 +111,7 @@
 
 **Export to Excel**
 
-- [Export to Excel Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/)
 - [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSCellCustomization/)
 - [Header and Footer](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSHeaderAndFooter/)
 - [Export Multiple Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/)
@@ -113,9 +121,4 @@
 
 - [Grid Adaptability Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridAdaptabilityOverview/)
 - [Grid Columns Hiding Priority](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridColumnsHidingPriority/)
-
-**More Features**
-
-- [Focused Row](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/)
-- [State Persistence](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/StatePersistence/)
 - [Keyboard Navigation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/KeyboardNavigation/)

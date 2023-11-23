@@ -1,6 +1,6 @@
 The Popover component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards.
 
-The default ARIA role for Popover is <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role" target="_blank">tooltip</a>. If you put focusable content inside Popover, you may want to change the role to <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role" target="_blank">dialog</a>. To implement this functionality, use the [onShowing](/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#onShowing) event handler:
+The default ARIA role for Popover is <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role" target="_blank">tooltip</a>. If you put focusable content inside Popover, you may want to change the role to <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role" target="_blank">dialog</a>. To implement this functionality, use the [onShowing](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/onShowing.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#onShowing') event handler:
 
 ---
 ##### jQuery

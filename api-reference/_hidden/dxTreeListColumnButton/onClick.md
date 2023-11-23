@@ -22,7 +22,7 @@ type: function(e)
 <!-- %field(e.event)% -->
 
 ##### field(e.model): any
-<!-- %field(e.model)% -->
+The model data. Available only if you use Knockout.
 
 ##### field(e.row): dxTreeListRowObject
 <!-- %field(e.row)% -->

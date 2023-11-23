@@ -233,8 +233,8 @@ The editor that will be used in a particular simple item depends on the type of 
         SimpleItem
     } from 'devextreme-react/form';
 
-    import Calendar from 'devextreme-vue/calendar';
-    import TextArea from 'devextreme-vue/text-area';
+    import Calendar from 'devextreme-react/calendar';
+    import TextArea from 'devextreme-react/text-area';
 
     const calendarOptions = { value: new Date() };
     const textAreaOptions = { placeholder: 'Add notes...' };

@@ -22,7 +22,4 @@ The data of the item whose title is rendered.
 ##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ---

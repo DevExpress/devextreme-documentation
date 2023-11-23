@@ -19,9 +19,6 @@ The UI component's instance.
 ##### field(e.fileData): File
 The uploaded file.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.parentDirectory): FileSystemItem
 The parent directory.
 

@@ -1,6 +1,7 @@
 ---
 id: EventInfo.model
 type: any
+hidden: 
 ---
 ---
 ##### shortDescription

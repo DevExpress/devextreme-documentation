@@ -20,11 +20,13 @@
 
   <MenuRule Destination="050 Getting Started/09 Add DevExtreme to an Existing Angular Application" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/10 Using with Angular CLI" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
-  <MenuRule Destination="050 Getting Started/11 Using with Ionic" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
+
   <MenuRule Destination="050 Getting Started/12 Add DevExtreme to an Existing Vue Application" SourcePattern="Howto:^55 Vue Components/05 Add DevExtreme to a Vue Application" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/13 Add DevExtreme to an Existing React Application" SourcePattern="Howto:^50 React Components/05 Add DevExtreme to a React Application" VisibleFor="React" />
-  <MenuRule Destination="050 Getting Started/14 State Management" SourcePattern="Howto:^50 React Components/20 State Management" VisibleFor="React" />
   <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application" SourcePattern="Howto:^58 jQuery Components/05 Add DevExtreme to a jQuery Application" VisibleFor="jQuery" />
+  <MenuRule Destination="050 Getting Started/16 Licensing" SourcePattern="Howto:^Common/Licensing" />
+  <MenuRule Destination="050 Getting Started/17 Using with Ionic" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
+    <MenuRule Destination="050 Getting Started/18 State Management" SourcePattern="Howto:^50 React Components/20 State Management" VisibleFor="React" />
 
   <MenuRule Destination="050 Getting Started/21 Component Configuration Syntax" SourcePattern="Howto:^40 Angular Components/20 Component Configuration Syntax" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/22 Component Configuration Syntax" SourcePattern="Howto:^55 Vue Components/20 Component Configuration Syntax" VisibleFor="Vue" />
@@ -32,7 +34,7 @@
   <MenuRule Destination="050 Getting Started/24 Component Configuration Syntax" SourcePattern="Howto:^58 jQuery Components/20 Component Configuration Syntax" VisibleFor="jQuery" />
 
   <MenuRule Destination="050 Getting Started/30 Optimize Performance" SourcePattern="Howto:^50 React Components/45 Optimize Performance" VisibleFor="React" />
-
+  
   <MenuRule Destination="050 Getting Started/60 TypeScript Support" SourcePattern="Howto:^40 Angular Components/70 TypeScript Support" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
@@ -78,7 +80,7 @@
 
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
   
-  <MenuRule Destination="10 UI Components/zz Common Types/" SourcePattern="ApiReference:^40 Common Types/" />
+  <MenuRule Destination="10 UI Components/zz Common Types" SourcePattern="ApiReference:^40 Common Types" />
   <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/aa $1 Interface" SourcePattern="ApiReference:^50 Common/Object Structures/((A|a)nimationConfig|(P|p)ositionConfig)" />
   <MenuRule Destination="10 UI Components/zz Utilities/Animation and Position/API/$1" SourcePattern="ApiReference:^50 Common/utils/(animationPresets|fx|TransitionExecutor)" />
   <MenuRule Destination="10 UI Components/zz Utilities/Data Export/API/$1" SourcePattern="ApiReference:^50 Common/utils/(excel.*|pdf.*)" />

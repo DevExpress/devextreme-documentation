@@ -9,17 +9,22 @@ This property can have one of the following values:
     <tr>
         <td><i>"static"</i></td>
         <td>The label is displayed above the input field.</td>
-        <td><img src="/images/UiWidgets/texteditor-static-label.png" alt="DevExtreme {WidgetName}: Static label mode" /></td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/23_2/UIWidgets/TextEditor/labelModeStatic/index.html, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeStatic/index.js, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeStatic/index.css"></div></td>
     </tr>
     <tr>
         <td><i>"floating"</i></td>
         <td>The label is used as a placeholder, but when the editor gets focus,<br>the label moves to the position above the input field.</td>
-        <td><img src="/images/UiWidgets/texteditor-floating-label.gif" alt="DevExtreme {WidgetName}: Floating label mode" /></td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/23_2/UIWidgets/TextEditor/labelModeFloating/index.html, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeFloating/index.js, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeFloating/index.css"></div></td>
     </tr>
     <tr>
         <td><i>"hidden"</i></td>
         <td>The label is hidden.</td>
-        <td><img src="/images/UiWidgets/texteditor-hidden-label.png" alt="DevExtreme {WidgetName}: Hidden label mode" /></td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/23_2/UIWidgets/TextEditor/labelModeHidden/index.html, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeHidden/index.js, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeHidden/index.css"></div></td>
+    </tr>
+    <tr>
+        <td><i>"outside"</i></td>
+        <td>The label is outside.</td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/23_2/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/23_2/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
     </tr>
     ${{outside_mode}}
 </table>

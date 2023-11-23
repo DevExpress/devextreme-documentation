@@ -29,7 +29,7 @@ Allows you to specify the error message.
 The file or directory to be renamed.
 
 ##### field(e.newName): String
-The new name of the file or directory.
+The new name of the file or directory. This parameter is read-only.
 
 ---
 

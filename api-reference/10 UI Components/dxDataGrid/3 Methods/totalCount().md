@@ -9,6 +9,137 @@ Gets the total row count.
 The total row count.
 
 ---
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(() => {
+        const dataSource = new DevExpress.data.DataSource({
+            store: customers,
+            paginate: true
+        });
+        
+        $('#gridContainer').dxDataGrid({
+            dataSource,
+            paging: {
+                enabled: true
+            },
+            // ...
+            onContentReady (e) {
+                const totalCount = e.component.totalCount();
+                // ...
+            }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import DataSource from "devextreme/data/data_source";
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        totalCount: Number;
+        dataSource: DataSource;
+        constructor () {
+            this.dataSource = new DataSource({
+                store: customers,
+                paginate: true
+            });
+        }
+
+        getTotalCount(e) {
+            this.totalCount = e.component.totalCount();
+            // ...
+        }
+    }
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...
+        [dataSource]="dataSource"
+        (onContentReady)="getTotalCount($event)"
+    >
+        <dxo-paging [enabled]="true"> </dxo-paging>
+    </dx-data-grid>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :data-source="dataSource"
+            @content-ready="getTotalCount"
+        >
+            <DxPaging :enabled="true" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import DxDataGrid, { DxPaging } from 'devextreme-vue/data-grid';
+    import DataSource from 'devextreme/data/data_source';
+
+    const dataSource = new DataSource({
+        store: customers,
+        paginate: true
+    });
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxPaging
+        },
+        data() {
+            return {
+                dataSource,
+                totalCount
+            }
+        },
+        methods: {
+            getTotalCount(e) {
+                this.totalCount = e.component.totalCount();
+                // ...
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import DataGrid, { Paging } from 'devextreme-react/data-grid';
+    import DataSource from 'devextreme/data/data_source';
+    
+    const dataSource = new DataSource({
+        store: customers,
+        paginate: true
+    });
+
+    const getTotalCount = (e) => {
+        const totalCount = e.component.totalCount();
+        // ...
+    }
+
+    function App() {
+        return (
+            <DataGrid ...
+                dataSource={dataSource}
+                onContentReady={getTotalCount}
+            >
+                <Paging enabled={true} />
+            </DataGrid>
+        );
+    }
+    export default App;
+
+---
+
 Please review the following notes:
 
 - If any filter is applied, **totalCount()** returns the count of records after [filtering](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/').

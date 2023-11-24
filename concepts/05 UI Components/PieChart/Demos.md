@@ -9,6 +9,7 @@
 - [Pie with Resolved Label Overlapping](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithResolvedLabelOverlapping/)
 - [Palette](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Palette/)
 - [Pie with Annotations](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithAnnotations/)
+- [Pie with Custom Fill Styles](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/PieWithCustomStyles/)
 
 **Doughnut Charts**
 

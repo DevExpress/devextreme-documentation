@@ -13,14 +13,11 @@
 - [Task Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/TaskTemplate/)
 - [Toolbar](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Toolbar/)
 - [Context Menu](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ContextMenu/)
+- [Strip Lines](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/StripLines/)
+- [Export To PDF](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/)
+- [Sorting](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/)
 
 **Filtering**
 
 - [Filter Row](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/FilterRow/)
 - [Header Filter](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/HeaderFilter/)
-
-**More Features**
-
-- [Strip Lines](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/StripLines/)
-- [Export to PDF](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/)
-- [Sorting](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Sorting/)

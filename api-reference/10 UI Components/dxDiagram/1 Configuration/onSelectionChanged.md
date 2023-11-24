@@ -24,5 +24,5 @@ Model data. Available only if you use Knockout.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ItemSelection/jQuery/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ItemSelection"
 }

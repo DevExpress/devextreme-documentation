@@ -275,5 +275,5 @@ The example below demonstrates how to specify a node's width depending on the no
 ---
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding/jQuery/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/AdvancedDataBinding"
 }

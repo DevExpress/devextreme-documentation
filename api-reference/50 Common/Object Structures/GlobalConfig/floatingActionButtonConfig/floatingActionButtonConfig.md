@@ -8,7 +8,7 @@ Configures a Floating Action Button (FAB) that emits a stack of [related actions
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/jQuery/MaterialBlueLight/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview"
 }
 
 If you change this object at runtime, call the [DevExpress.ui.repaintFloatingActionButton()](/api-reference/50%20Common/utils/ui/repaintFloatingActionButton().md '/Documentation/ApiReference/Common/utils/ui/#repaintFloatingActionButton') method afterwards to apply the changes.

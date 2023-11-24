@@ -1,4 +1,4 @@
-Import the DevExtreme components you are going to use from specific modules. In the following code, the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/React/Light) component is imported:
+Import the DevExtreme components you are going to use from specific modules. In the following code, the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes) component is imported:
 
     <!-- tab: App.js -->
     import React from 'react';

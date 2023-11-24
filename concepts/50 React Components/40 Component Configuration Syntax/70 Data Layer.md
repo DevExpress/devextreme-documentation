@@ -1,4 +1,4 @@
-[DevExtreme Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') is a set of components for working with data. The following example shows how to use the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component with the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/WebApi/React/Light) UI component:
+[DevExtreme Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') is a set of components for working with data. The following example shows how to use the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') component with the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/WebApi) UI component:
 
     <!-- tab: Function component -->
     import React, { useEffect } from 'react';

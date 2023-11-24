@@ -1,4 +1,4 @@
-Use nested configuration components. In the following example, we configure the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/Vue/Light)'s [tooltip](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/') property:
+Use nested configuration components. In the following example, we configure the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview)'s [tooltip](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/') property:
  
     <!-- tab: App.vue (Options API) -->
     <template>

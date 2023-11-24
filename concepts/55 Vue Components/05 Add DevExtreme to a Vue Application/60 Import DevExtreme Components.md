@@ -1,4 +1,4 @@
-Import the DevExtreme components you are going to use from specific modules. In the following code, the [DxButton](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/Vue/Light) component is imported:
+Import the DevExtreme components you are going to use from specific modules. In the following code, the [DxButton](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes) component is imported:
 
     <!-- tab: App.vue (Options API) -->
     <template>

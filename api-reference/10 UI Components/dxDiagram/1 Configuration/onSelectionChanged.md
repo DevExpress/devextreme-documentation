@@ -21,5 +21,5 @@ An array of selected items ([DiagramShapes](/api-reference/10%20UI%20Components/
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ItemSelection/jQuery/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/ItemSelection"
 }

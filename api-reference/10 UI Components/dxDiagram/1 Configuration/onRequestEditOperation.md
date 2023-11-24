@@ -90,7 +90,7 @@ The **operation** parameter identifies the edit operation. Note that if an [Allo
 For more information, refer to the following section: [Prohibit Individual Operations](/concepts/05%20UI%20Components/Diagram/28%20Restrict%20Edit%20Operations/20%20Prohibit%20Individual%20Operations.md '/Documentation/Guide/UI_Components/Diagram/Restrict_Edit_Operations/#Prohibit_Individual_Operations')
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions/jQuery/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/OperationRestrictions"
 }
 
 When a user pastes or clones several items in a diagram, the control adds the items to the model one by one. For each added item, the **RequestEditOperation** event fires. In the event handler, you can access the processed item. However, if you call the [getItemById(id)](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/getItemById(id).md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#getItemByIdid') method to access an attached connector (see the [attachedConnectorIds](/api-reference/10%20UI%20Components/dxDiagram/7%20Interfaces/dxDiagramShape/attachedConnectorIds.md '/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramShape/#attachedConnectorIds') property) or a container's child item (see the [containerChildItemIds](/api-reference/10%20UI%20Components/dxDiagram/7%20Interfaces/dxDiagramShape/containerChildItemIds.md '/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramShape/#containerChildItemIds') property), you can get the `undefined`result if the item is not added to the model yet.

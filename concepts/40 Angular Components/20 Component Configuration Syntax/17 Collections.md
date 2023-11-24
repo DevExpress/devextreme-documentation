@@ -1,4 +1,4 @@
-Use UI components prefixed with `dxi-` ("i" stands for "item"). The following example shows how to configure the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/Angular/Light)'s [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') property:
+Use UI components prefixed with `dxi-` ("i" stands for "item"). The following example shows how to configure the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview)'s [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') property:
 
     <!--HTML-->
     <dx-data-grid>
@@ -6,7 +6,7 @@ Use UI components prefixed with `dxi-` ("i" stands for "item"). The following ex
         <dxi-column dataField="lastName" caption="Last Name" [visible]="false"></dxi-column>
     </dx-data-grid>
 
-For properties that accept either an object or a collection, use UI components prefixed with `dxi-` as well. The [series](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') and [valueAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/') properties in the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview/Angular/Light) UI component exemplify this case:
+For properties that accept either an object or a collection, use UI components prefixed with `dxi-` as well. The [series](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/') and [valueAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/') properties in the [Chart](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Overview) UI component exemplify this case:
 
     <!--HTML-->
     <dx-chart>

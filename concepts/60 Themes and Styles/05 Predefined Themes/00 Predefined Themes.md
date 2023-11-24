@@ -173,6 +173,22 @@ DevExtreme provides Generic, Generic Compact, and Material Design themes. These 
         <p>Blue Dark Compact</p>
         <img src="/images/themes/fluent-dark-compact.png" />
     </div>
+    <div>
+        <p>SaaS Light</p>
+        <img src="/images/themes/saas-default-light.png" />
+    </div>
+        <div>
+        <p>SaaS Light Compact</p>
+        <img src="/images/themes/saas-compact-light.png" />
+    </div>
+        <div>
+        <p>SaaS Dark</p>
+        <img src="/images/themes/saas-default.png" />
+    </div>
+        <div>
+        <p>SaaS Dark Compact</p>
+        <img src="/images/themes/saas-compact.png" />
+    </div>
 </div>
 
 Each theme is a stylesheet that contains a collection of CSS classes. The following stylesheets are available out of the box:
@@ -244,6 +260,8 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
             <ul>
                 <li><code>dx.fluent.blue.light.css</code></li>
                 <li><code>dx.fluent.blue.dark.css</code></li>
+                <li><code>dx.fluent.saas.light.css</code></li>
+                <li><code>dx.fluent.saas.dark.css</code></li>
             </ul>
         </div>
         <div class="second-level">
@@ -251,6 +269,8 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
             <ul>
                 <li><code>dx.fluent.blue.light.compact.css</code></li>
                 <li><code>dx.fluent.blue.dark.compact.css</code></li>
+                <li><code>dx.fluent.saas.light.compact.css</code></li>
+                <li><code>dx.fluent.saas.dark.compact.css</code></li>
             </ul>
         </div>
     </div>    

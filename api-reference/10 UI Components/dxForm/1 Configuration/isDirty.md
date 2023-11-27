@@ -18,5 +18,9 @@ This property is a read-only flag. You can use it to check if any editor value c
 
 [/note]
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
+}
+
 #####See Also#####
 - [reset](/api-reference/10%20UI%20Components/dxForm/3%20Methods/reset(editorsData).md '{basewidgetpath}/Methods/#reseteditorsData')

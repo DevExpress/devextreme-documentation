@@ -25,3 +25,7 @@ The icon appears below the text.
 The alignment of content in a tab item directly depends on the **iconPosition** value. If a tab item has an icon and `iconPosition: 'top'` or `iconPosition: 'bottom'`, the content alignment is centered. If you set `iconPosition: 'start'` or `iconPosition: 'end'`, the content is aligned to the edge of the tab. 
 
 The same applies if items do not include icons: content is aligned equally in all tab items.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
+}

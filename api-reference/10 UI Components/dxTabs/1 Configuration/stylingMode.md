@@ -19,3 +19,7 @@ The following styling modes are available:
     The width of the underline depends on tab content.
     <br />
     <img src="/images/UiWidgets/Tabs/secondarytabs.png" alt="Tabs secondary styling mode" style="width: 600px;" />
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/"
+}

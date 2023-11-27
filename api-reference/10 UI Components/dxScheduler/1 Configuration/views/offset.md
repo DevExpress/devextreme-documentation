@@ -85,3 +85,7 @@ You can combine this property with [startDayHour](/api-reference/10%20UI%20Compo
 ---
 
 [note] This property has no effect on the agenda view.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/WorkShifts/"
+}

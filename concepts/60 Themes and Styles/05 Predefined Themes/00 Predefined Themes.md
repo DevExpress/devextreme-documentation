@@ -1,4 +1,4 @@
-DevExtreme provides Generic, Generic Compact, and Material Design themes. These themes are available in the following colors:
+DevExtreme provides Generic, Generic Compact, Material Design, and Fluent (all trademarks or registered trademarks are property of their respective owners) themes. These themes are available in the following colors:
 
 ## Generic Themes
 

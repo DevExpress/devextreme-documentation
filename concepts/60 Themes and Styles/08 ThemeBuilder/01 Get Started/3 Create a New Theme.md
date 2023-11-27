@@ -2,7 +2,7 @@ New themes are based on [predefined DevExtreme themes](/concepts/60%20Themes%20a
 
 1. Click **Choose a Base Theme**.
 
-2. Select a base theme: Generic, Material, or Fluent.
+2. Select a base theme: Generic, Material, or Fluent (all trademarks or registered trademarks are property of their respective owners).
 
 3. Select a color scheme and change basic appearance settings.
 

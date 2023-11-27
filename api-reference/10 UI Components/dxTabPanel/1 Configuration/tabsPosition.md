@@ -17,3 +17,7 @@ The following positions are available:
 - *'right'*
 
 - *'left'*
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/"
+}

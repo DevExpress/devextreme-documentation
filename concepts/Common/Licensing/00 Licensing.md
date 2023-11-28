@@ -16,8 +16,6 @@ When you purchase a DevExtreme, ASP.NET/Blazor, DXperience, or Universal Subscri
 
 - If you prefer not to use the DevExtreme Installer - and prefer instead to use NuGet, npm, yarn, CDN, zip - you will still need to use the license key displayed within the DevExpress Download Manager.
 
-- While each developer needs to be licensed, the DevExtreme license key is set once per project.
-
 [/note]
 
 Should you require purchase assistance or more information on our new license verification process, please contact a member of the <a href="mailto: clientservices@devexpress.com">DevExpress Client Services Team</a>.

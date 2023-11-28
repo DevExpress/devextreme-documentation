@@ -12,7 +12,7 @@ For example, the sources in your project are located under `src` folder. You can
 
     <!-- tab: devextreme-license.ts -->export const licenseKey = 'DEVELOPER_LICENSE_KEY’;
 
-In order for each developer to use their own license key, the file should not be stored in the source code repository. Therefore, it is important to instruct Git to ignore the file that holds the key. To do this, you need to add the file path to your project's .gitignore file:
+In order for each developer to use their own license key, the file should not be stored in the source code repository. Therefore, it is important to instruct Git to ignore the file that holds the key. To do this, you need to add the file path to your project's `.gitignore` file:
 
     <!-- tab: .gitignore -->src/devextreme-key.ts
 
@@ -46,6 +46,8 @@ Instead of manually creating the `devextreme-license.ts` file to store the licen
 
 As shown above, if the `src/devextreme-license.ts` file is absent, the script creates it and assigns the value of the `DEVEXTREME_KEY` environment variable as the key enable value. Utilizing the `DEVEXTREME_KEY` variable is beneficial in CI; however, if you wish to use it locally, ensure that you initialize it with the license key value before executing the script.
 
+[note] If you do not specify the `DEVEXTREME_KEY`, the key will be empty.
+
 You can call the `node add-devextreme-license` command to invoke the script manually, but it proves more useful to include its invocation in npm's `postinstall` script:
 
     <!-- tab: package.json -->{ 
@@ -56,11 +58,11 @@ You can call the `node add-devextreme-license` command to invoke the script manu
 
 In this case, upon installing the NPM modules, each developer will receive an automatically created file to store the license key.
 
-Next, enter the key within [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig') as described in the previous section.
+Next, enter the key within [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig') add the `devextreme-license.ts` file path to your project's `.gitignore` file as described in the previous section.
 
 ### CI Licensing
 
-Use the `add-devextreme-license.js` script (as described in the previous section) to organize a license key check on CI. Set the `DEVEXTREME_KEY` environment variable on the remote machine.
+You can use the `add-devextreme-license.js` script (as described in the previous section) to organize a license key check on CI. In this case, specify the `DEVEXTREME_KEY` environment variable on the remote machine.
 
 In this topic, we consider the use of GitHub Actions and GitHub Secrets. A similar approach can be adopted for any other CI server.
 

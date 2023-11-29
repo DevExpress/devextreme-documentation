@@ -4,7 +4,7 @@ To obtain a license key, you must navigate to the DevExpress [Download Manager](
 
 When multiple developers work on the project, each of them has their own personal license key, which they must specify for every machine they work on.
 
-### Manual Configuration (Simplest Case)
+### Manual Configuration
 
 After you copy the key from Download Manager, create a file in which the license key will be stored.
 
@@ -30,7 +30,7 @@ If your project does not use bundlers and includes sources via script tags, you 
     <!--JavaScript--><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>
 
-    <!-- tab: devextreme-license.js --> DevExpress.config({ licenseKey: '' });
+    <!-- tab: devextreme-license.js --> DevExpress.config({ licenseKey: 'DEVELOPER_LICENSE_KEY' });
 
 ### Automated License Key File Creation
 
@@ -44,7 +44,7 @@ Instead of manually creating the `devextreme-license.ts` file to store the licen
         fs.writeFileSync(path, `export const licenseKey = '${key}';`); 
     }
 
-As shown above, if the `src/devextreme-license.ts` file is absent, the script creates it and assigns the value of the `DEVEXTREME_KEY` environment variable as the key value. Utilizing the `DEVEXTREME_KEY` variable is beneficial in CI: ensure that you initialize the license key value before executing the script. If you use the script locally, you can add the license key in the file after it is generated.
+As shown above, if the `src/devextreme-license.ts` file is absent, the script creates it and assigns the value of the `DEVEXTREME_KEY` environment variable as the key value. Utilizing the `DEVEXTREME_KEY` variable is beneficial in CI. If you use the script locally, you can add the license key in the file after it is generated.
 
 [note] If you do not specify the `DEVEXTREME_KEY`, the key will be empty.
 
@@ -62,11 +62,12 @@ Next, register the key within [GlobalConfig](/api-reference/50%20Common/Object%2
 
 ### CI Licensing
 
-You can use the `add-devextreme-license.js` script (as described in the previous section) to organize a license key check on CI. In this case, specify the `DEVEXTREME_KEY` environment variable on the remote machine.
+You can use the `add-devextreme-license.js` script (as described in the previous section) to organize a license key check on CI. In this case, ensure that you initializethe `DEVEXTREME_KEY` environment variable on the remote machine before the script is  executed
+
 
 In this topic, we consider the use of GitHub Actions and GitHub Secrets. A similar approach can be adopted for any other CI server.
 
-1. Specify GitHub repository-level secret according to the [GitHub guide](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
+1. Specify GitHub repository-level secret `DevExtremeKey` according to the [GitHub guide](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
 
 2. Use secrets to set a job-level environment variable:
 

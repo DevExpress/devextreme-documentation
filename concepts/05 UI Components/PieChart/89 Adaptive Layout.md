@@ -81,7 +81,9 @@ With the ever-growing variety of platforms, today's web sites and applications c
 
 ---
 
-<a href="https://jsfiddle.net/ChartJS/2arphpsx/" class="button orange small fix-width-155" target="_blank">View Demo on JSFiddle</a>
+#include btn-open-codepen with {
+    href: "https://codepen.io/vladaskorokhodova/pen/ZEwMXXV"
+}
 
 [note]
 

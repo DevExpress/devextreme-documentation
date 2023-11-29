@@ -62,8 +62,7 @@ Next, register the key within [GlobalConfig](/api-reference/50%20Common/Object%2
 
 ### CI Licensing
 
-You can use the `add-devextreme-license.js` script (as described in the previous section) to organize a license key check on CI. In this case, ensure that you initializethe `DEVEXTREME_KEY` environment variable on the remote machine before the script is  executed
-
+You can use the `add-devextreme-license.js` script (as described in the previous section) to organize a license key check on CI. In this case, ensure that you initializ ethe `DEVEXTREME_KEY` environment variable on the remote machine before the script is executed.
 
 In this topic, we consider the use of GitHub Actions and GitHub Secrets. A similar approach can be adopted for any other CI server.
 

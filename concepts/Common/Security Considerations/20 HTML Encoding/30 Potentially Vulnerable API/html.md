@@ -1,6 +1,12 @@
 Items in DevExtreme collection UI components ([List](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/'), [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/'), [Toolbar](/api-reference/10%20UI%20Components/dxToolbar '/Documentation/ApiReference/UI_Components/dxToolbar/'), and similar components) can apply appearance based on data source fields (see our [Default Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/05%20Default%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Default_Templates') article for more information). [html](/api-reference/_hidden/CollectionWidgetItem/html.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#html') is one of the fields that specifies item markup. Values for this field are not encoded. As such, you must ensure that these values do not contain malicious code. Alternatively, you can use the [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#text') field. Unlike **html** values, **text** values are encoded.
 
-The following example illustrates how improper use of the **html** field can create a vulnerability: <a href="https://codepen.io/romantsukanov/pen/PozaNPP?editors=1010" target="_blank">HTML Encoding in List</a>. In this example, both **text** and **html** values contain unsafe HTML, but **html** lines are commented out:
+The following example illustrates how improper use of the **html** field can create a vulnerability: 
+
+#include btn-open-codepen with {
+    href: "https://codepen.io/vladaskorokhodova/pen/VwgGMXj"
+}
+
+In this example, both **text** and **html** values contain unsafe HTML, but **html** lines are commented out:
 
 
     <!-- tab: JavaScript -->

@@ -11,7 +11,7 @@ The Toolbar can render its items in the overflow menu. Specify the [locateInMenu
 
 If you want to customize an item in the overflow menu, specify [menuItemTemplate](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/menuItemTemplate.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#menuItemTemplate').
 
-[note] If you specify `locateInMenu="auto"`, define **menuItemTemplate** explicitly on the item level.
+[note] If you specify `locateInMenu="auto"`, define **menuItemTemplate** explicitly at the item level.
 
 The following code specifies `locateInMenu="auto"` for the **About** button and creates an overflow menu with three items. It also specifies the Toolbar [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#width').
 

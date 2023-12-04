@@ -24,7 +24,7 @@
     import { Dx{WidgetName}Module } from "devextreme-angular";
     import DataSource from "devextreme/data/data_source";
     import CustomStore from "devextreme/data/custom_store";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     // ...
     export class AppComponent {
         {widgetName}DataSource: any = {};
@@ -33,9 +33,8 @@
                 store: new CustomStore({
                     key: "ID",
                     loadMode: "raw",   
-                    load: () => {
-                        return httpClient.get('http://mydomain.com/MyDataService')
-                            .toPromise();
+                    load: async () => {
+                        await lastValueFrom(httpClient.get('http://mydomain.com/MyDataService'));
                     }
                 })
             });

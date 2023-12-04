@@ -57,19 +57,22 @@ The following code shows how to use this function with a remote service:
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     import { DxTreeViewModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         constructor(@Inject(HttpClient) httpClient: HttpClient) { }
-        createChildren = (parentNode) => {
-            let params: HttpParams = new HttpParams()
-                // Here, 0 is the "rootValue" property's value.
-                .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0"); 
-            return httpClient.get("http://url/to/the/service", {
-                    params: params
-                })
-                .toPromise();
+        createChildren = async (parentNode) => {
+            try {
+                let params: HttpParams = new HttpParams()
+                    .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0");
+                const result = await lastValueFrom(this.httpClient.get("http://url/to/the/service", { params }));
+                return result;
+            } catch (error) {
+                // Handle error as needed
+                console.error('Error creating children:', error);
+                throw error;
+            }
         }
     }
     @NgModule({

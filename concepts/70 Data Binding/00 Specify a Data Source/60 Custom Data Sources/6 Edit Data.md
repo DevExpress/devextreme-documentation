@@ -60,6 +60,7 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
     import { HttpClient, HttpParams } from '@angular/common/http';
 
     import CustomStore from 'devextreme/data/custom_store';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -74,19 +75,16 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
                 load: (loadOptions) => {
                     // ...
                 },
-                insert: (values) = > {
-                    return this.http.post('https://mydomain.com/MyDataService', JSON.stringify(values))
-                        .toPromise()
+                insert: async (values) = > {
+                    await lastValueFrom(this.http.post('https://mydomain.com/MyDataService', JSON.stringify(values)))
                         .catch(() => { throw 'Insertion failed' });
                 },
-                remove: (key) => {
-                    return this.http.delete('https://mydomain.com/MyDataService/' + encodeURIComponent(key))
-                        .toPromise()
+                remove: async (key) => {
+                    await lastValueFrom(this.http.delete('https://mydomain.com/MyDataService/' + encodeURIComponent(key)))
                         .catch(() => { throw 'Deletion failed' });
                 },
-                update: (key, values) => {
-                    return this.http.put('https://mydomain.com/MyDataService/' + encodeURIComponent(key), JSON.stringify(values))
-                        .toPromise()
+                update: async (key, values) => {
+                    await lastValueFrom(this.http.put('https://mydomain.com/MyDataService/' + encodeURIComponent(key), JSON.stringify(values)))
                         .catch(() => { throw 'Update failed' });
                 }
             });

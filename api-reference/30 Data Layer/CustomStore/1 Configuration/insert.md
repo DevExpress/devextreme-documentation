@@ -35,16 +35,15 @@ A Promise that is resolved after the data item is inserted.
     import { ..., Inject } from "@angular/core";
     import CustomStore from "devextreme/data/custom_store";
     import { HttpClient, HttpClientModule } from "@angular/common/http";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     // ...
     export class AppComponent {
         store: CustomStore;
         constructor(@Inject(HttpClient) httpClient: HttpClient) {
             this.store = new CustomStore({
                 // ...
-                insert: (values) => {
-                    return httpClient.post("http://mydomain.com/MyDataService/myEntity", values)
-                        .toPromise();
+                insert: async (values) => {
+                    await lastValueFrom(httpClient.post("http://mydomain.com/MyDataService/myEntity", values));
                 }
             });
         }

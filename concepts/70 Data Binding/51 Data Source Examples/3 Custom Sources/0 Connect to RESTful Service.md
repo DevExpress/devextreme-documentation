@@ -56,7 +56,7 @@ Note that all user functions return the result of the jQuery AJAX call, which is
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
 
     import CustomStore from 'devextreme/data/custom_store';
 
@@ -70,29 +70,24 @@ Note that all user functions return the result of the jQuery AJAX call, which is
         customDataSource: CustomStore;
         constructor(private http: HttpClient) {
             this.customDataSource = new CustomStore({
-                load: (loadOptions) => {
-                    return httpClient.get(SERVICE_URL)
-                        .toPromise();
+                load: async (loadOptions) => {
+                    await lastValueFrom(httpClient.get(SERVICE_URL));
                 },
 
-                byKey: (key) => {
-                    return httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key))
-                        .toPromise();
+                byKey: async (key) => {
+                    await lastValueFrom(httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key)));
                 },
 
-                insert: (values) => {
-                    return httpClient.post(SERVICE_URL, values)
-                        .toPromise();
+                insert: async (values) => {
+                    await lastValueFrom(httpClient.post(SERVICE_URL, values));
                 },
 
-                update: (key, values) => {
-                    return httpClient.put(SERVICE_URL + encodeURIComponent(key), values)
-                        .toPromise();
+                update: async (key, values) => {
+                    await lastValueFrom(httpClient.put(SERVICE_URL + encodeURIComponent(key), values));
                 },
 
-                remove: (key) => {
-                    return httpClient.delete(SERVICE_URL + encodeURIComponent(key))
-                        .toPromise();
+                remove: async (key) => {
+                    await lastValueFrom(httpClient.delete(SERVICE_URL + encodeURIComponent(key)));
                 },
             });
         }

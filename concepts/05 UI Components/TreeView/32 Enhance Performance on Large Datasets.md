@@ -163,18 +163,17 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
     <!--TypeScript-->
     import { ..., Inject } from "@angular/core";
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     import { DxTreeViewModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         constructor(@Inject(HttpClient) httpClient: HttpClient) { }
-        createChildren = (parentNode) => {
+        createChildren = async (parentNode) => {
             let params: HttpParams = new HttpParams()
                 .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0");
-            return httpClient.get("https://mydomain.com/MyDataService", {
+            await lastValueFrom(httpClient.get("https://mydomain.com/MyDataService", {
                     params: params
-                })
-                .toPromise();
+                }));
         }
     }
     @NgModule({

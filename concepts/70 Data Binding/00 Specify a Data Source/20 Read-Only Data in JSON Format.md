@@ -135,6 +135,7 @@ The following code shows a **CustomStore** configuration in which the **load** f
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient, HttpParams } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     import CustomStore from 'devextreme/data/custom_store';
 
@@ -150,14 +151,13 @@ The following code shows a **CustomStore** configuration in which the **load** f
             this.jsonDataSource = new CustomStore({
                 key: 'id',
                 loadMode: 'raw', // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
-                load: () => {
+                load: async () => {
                     let params: HttpParams = new HttpParams();
                     params.set('param1', 'value1')
                           .set('param2', 'value2');
-                    return this.http.get('https://mydomain.com/MyDataService', { 
+                    await lastValueFrom(this.http.get('https://mydomain.com/MyDataService', { 
                             params: params
-                        })
-                        .toPromise()
+                        }))
                         .then(result => {
                             // You can process the response here
                             return result;

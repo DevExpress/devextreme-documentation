@@ -67,6 +67,7 @@ The example below shows how to implement the **load** function. Note that in thi
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
       styleUrls: ["./app.component.css"],
@@ -84,7 +85,7 @@ The example below shows how to implement the **load** function. Note that in thi
                 remoteOperations: true,
                 store: new CustomStore({
                     // ...
-                    load: function (loadOptions: any) {
+                    load: async function (loadOptions: any) {
                         let params: HttpParams = new HttpParams();
                         // Passing settings to the server
                         
@@ -100,12 +101,11 @@ The example below shows how to implement the **load** function. Note that in thi
                             if (i in loadOptions && isNotEmpty(loadOptions[i]))
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        return httpClient
+                        await lastValueFrom(httpClient
                             .get(
                                 "http://mydomain.com/MyDataService",
                                 { params: params }
-                            )
-                            .toPromise()
+                            ))
                             .then((result: any) => {
                                 if ("data" in result) {
                                     return {

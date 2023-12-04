@@ -35,6 +35,8 @@ HtmlEditor is designed to create rich text and export it in HTML or Markdown for
         <!-- to -->
         <p>He<em>llo</em></p>
 
+- HtmlEditor trims extra space and tab characters passed to the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') option.
+
 - The component is not designed to convert text enclosed between curly brackets (`{}`) into a variable. Content between curly brackets is always treated as plain text.
 
 - The HtmlEditor tables are native HTML tables and use native features; therefore, the same limitations apply. For example, users cannot paste multiline text in separate cells.

@@ -29,7 +29,7 @@ Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common
     
     config({ licenseKey });   
 
-If your project includes sources via `&lt;script&gt;` tags (does not use bundlers), add a reference to the file that registers the license key: 
+If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
 
     <!--JavaScript--><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>

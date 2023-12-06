@@ -23,7 +23,7 @@ If you change the filter expression in the filter panel or filter builder, the c
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/{WidgetName}/FilterPanel/"
 }
 
-[note] If the filter panel is visible and at least one column includes **headerFilter**.[dataSource]({basewidgetpath}/Configuration/columns/headerFilter/#dataSource) or **lookup**.[dataSource]({basewidgetpath}/Configuration/columns/lookup/#dataSource), disable the [syncLookupFilterValues]({basewidgetpath}/Configuration/#syncLookupFilterValues) property. Otherwise, the filter panel may not display data correctly.
+[note] If the filter panel is visible and at least one column includes **headerFilter**.[dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') or **lookup**.[dataSource](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource'), disable the [syncLookupFilterValues](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/syncLookupFilterValues.md '{basewidgetpath}/Configuration/#syncLookupFilterValues') property. Otherwise, the filter panel may not display data correctly.
 
 #####See Also#####
 - [Filter Panel with Filter Builder](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/4%20Filter%20Panel%20with%20Filter%20Builder.md '/Documentation/Guide/UI_Components/{WidgetName}/Filtering_and_Searching/#Filter_Panel_with_Filter_Builder')

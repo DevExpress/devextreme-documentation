@@ -1,4 +1,4 @@
-The following predefined [aggregate functions](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType) are supported:
+The following predefined [aggregate functions](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') are supported:
 
 - *"sum"*        
 - *"min"*        

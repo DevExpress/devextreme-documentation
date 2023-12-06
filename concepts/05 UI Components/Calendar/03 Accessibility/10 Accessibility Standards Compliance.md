@@ -14,6 +14,6 @@ The Calendar component complies to all <a href="https://www.access-board.gov/ict
     <tr>
         <td>-</td>
         <td>4.1.2 Name, Role, Value (Level A)</td>
-        <td>The validation state and error message in Calendar are not pronounced after value change or when the control is focused.</td>
+        <td>The validation state and error message in Calendar are not pronounced after a value change or when the control is focused.</td>
     </tr>
 </table>

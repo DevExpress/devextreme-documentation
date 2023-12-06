@@ -9,7 +9,7 @@ The Accordion component complies to all <a href="https://www.access-board.gov/ic
     <tr>
         <td>-</td>
         <td>2.4.3 Focus Order (Level A)</td>
-        <td>Accordion has unexpected navigation order if there are interactive elements within the content.</td>
+        <td>Accordion has an unexpected navigation order if there are interactive elements within the content.</td>
     </tr>
     <tr>
         <td>-</td>

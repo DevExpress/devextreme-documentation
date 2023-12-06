@@ -1,4 +1,4 @@
-<iframe width="100%" height="476" src="https://www.youtube.com/embed/grc-pIyOhcc?si=4F3q5Jjj2NX0nvNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+<iframe width="100%" height="476" src="https://www.youtube-nocookie.com/embed/grc-pIyOhcc?si=4F3q5Jjj2NX0nvNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
 
 To obtain a license key, you must navigate to the DevExpress [Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/) and select DevExtreme Subscription from your licensed product list. Follow on-screen instructions to copy your key.
 

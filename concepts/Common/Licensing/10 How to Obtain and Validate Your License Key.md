@@ -10,7 +10,7 @@ Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCen
 
 ### Manual Configuration
 
-After you obtain the key from the DevExpress Download Manager, define that key as a contant in a separate file and use that constant in your application configuration.
+After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration.
 
 Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
 

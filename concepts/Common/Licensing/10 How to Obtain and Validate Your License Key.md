@@ -6,7 +6,7 @@ Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCen
 
 ![DevExtreme Download Manager](/images/Common/licensing-key@2x.png)
 
-Note that every developer on your team must obtain and use their own key. Your DevExpress account manager should [Assign Licenses](https://www.devexpress.com/ClientCenter/LicenseManager) to developers as required.
+[note] Every developer on your team must obtain and use their own key. Your DevExpress account manager should [Assign Licenses](https://www.devexpress.com/ClientCenter/LicenseManager) to developers as required.
 
 ### Manual Configuration
 

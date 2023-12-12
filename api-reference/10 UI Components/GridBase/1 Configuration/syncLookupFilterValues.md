@@ -34,6 +34,6 @@ The following table shows how the component behaves when you assign different va
 
 - If the [filter panel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '{basewidgetpath}/Configuration/filterPanel/') is visible and at least one column includes **headerFilter**.[dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') or **lookup**.[dataSource](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource'), disable this property. Otherwise, the filter panel may not display data correctly.
 
-- If a data source for the lookup column lacks data that corresponds to the column data, the header filter may load incorrectly. To prevent this issue, you can either disable the **syncLookupFilterValues** property or the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') option for the lookup column data source.
+- If the lookup column's data source lacks data that corresponds to the column data, the header filter may load incorrectly. To prevent this issue, you can either disable the **syncLookupFilterValues** property or the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') option for the lookup column data source.
 
 [/note]

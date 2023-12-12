@@ -71,18 +71,20 @@ This function allows you to intercept row removal and perform additional actions
     
     export class AppComponent {
         constructor(private httpClient: HttpClient) { /*...*/}
-        async validateRemove(e) {
-            try {
-                const validationResult = await lastValueFrom(
-                    this.httpClient.get(`https://url/to/your/validation/service/${e.key}`)
-                );
-                if (validationResult.errorText) {
-                    throw validationResult.errorText;
-                }
-                e.cancel = false;
-                } catch (error) {
-                    e.cancel = Promise.reject(error);
-            }
+        validateRemove(e) {
+            const isCanceled = new Promise((resolve, reject) => {
+                const request$ = this.httpClient
+                    .get(`https://url/to/your/validation/service/${e.key}`);
+
+                lastValueFrom(request$).then((validationResult) => {
+                    if (validationResult.errorText) {
+                        reject(validationResult.errorText);
+                    } else {
+                        resolve(false);
+                    }
+                });
+            });
+            e.cancel = isCanceled;
         }
     }
 

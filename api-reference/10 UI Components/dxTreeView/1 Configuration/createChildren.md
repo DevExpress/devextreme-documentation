@@ -62,17 +62,13 @@ The following code shows how to use this function with a remote service:
     // ...
     export class AppComponent {
         constructor(@Inject(HttpClient) httpClient: HttpClient) { }
-        createChildren = async (parentNode) => {
-            try {
-                let params: HttpParams = new HttpParams()
-                    .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0");
-                const result = await lastValueFrom(this.httpClient.get("http://url/to/the/service", { params }));
-                return result;
-            } catch (error) {
-                // Handle error as needed
-                console.error('Error creating children:', error);
-                throw error;
-            }
+        createChildren = (parentNode) => {
+            let params: HttpParams = new HttpParams()
+                .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0");
+            const request$ = this.httpClient.get("http://url/to/the/service", {
+                params: params
+            });
+            return lastValueFrom(request$);
         }
     }
     @NgModule({

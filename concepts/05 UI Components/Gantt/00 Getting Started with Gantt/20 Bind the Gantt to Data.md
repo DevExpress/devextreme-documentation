@@ -4,13 +4,13 @@ The Gantt UI component requires separate data sources for [tasks](/api-reference
 
 - The **tasks** data source is required, whereas the data sources that contain [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/'), [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/'), and [resource assignments](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resourceAssignments '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resourceAssignments/') are optional.
 
-- The 'id' and 'parentId' fields should not have the same value.
+- 'id' and 'parentId' fields should not have the same value.
 
-- If your first (root) task 'parentId' differs from 0, specify a [rootValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#rootValue). For example, if the root task 'parentId' is -1, set the **rootValue** property to -1.  
+- If your first (root) task 'parentId' value is not 0, specify a [rootValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#rootValue). For example, if the root task 'parentId' is -1, set the **rootValue** property to -1.  
 
 [/note]
 
-The example below illustrates how to bind the Gantt UI component to the data sources that contain the same field names as the UI component uses in its internal binding settings. If field names of your data sources differ from the standard field names, use the **[dataField]Expr** expressions listed in the API section of [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/'), [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/'), [resource assignments](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resourceAssignments '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resourceAssignments/'), and [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/').
+The example below illustrates how to bind the Gantt UI component to data sources that contain the same field names as those the UI component uses in its internal binding settings. If field names of your data sources differ from the standard field names, use the **[dataField]Expr** expressions listed in the API section of [tasks](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/'), [resources](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resources '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/'), [resource assignments](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/resourceAssignments '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resourceAssignments/'), and [dependencies](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/dependencies '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/').
 
 ---
 

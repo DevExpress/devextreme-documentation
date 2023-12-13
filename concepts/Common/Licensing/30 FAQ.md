@@ -56,3 +56,17 @@ A: Pre-release versions are not suitable for commercial use. Once the final manu
 **Q: License keys make the process of deployment management too complicated. Can I opt out?**
 
 A: You cannot opt out of license validation. Only at first glance it seems that the process is complicated. Once you set everything up, there will not be any trouble due to the offline nature of license validation. Once you have deployed your app with a valid license key, you do not need to monitor or take any actions until you decide to update your app to a new major DevExtreme version, which is released twice a year or less frequently.
+
+<br>
+
+**Q: Is it necessary to exclude the `devextreme-license` file from version control? How do you configure version control systems other than Git?**
+
+A: It is not necessary, but we highly recommend using this approach. Storing any keys in version control is generally considered a bad practice. This will help you and your team use individual keys as required by the license agreement and also prevent developers from accidentally committing keys to public repositories.
+
+Configuring the version control system to ignore the file holding license keys may vary:
+
+- Use [.tfignore](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-files-server?view=azure-devops#customize-which-files-version-control-ignores) for Team Foundation Server Version Control (TFVC).
+
+- Use [.gitignore](https://git-scm.com/docs/.gitignore) for Git and other products with version control built on it (like Azure DevOps Server).
+
+- Use [.hgignore](https://wiki.mercurial-scm.org/.hgignore) for Mercurial.

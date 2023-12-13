@@ -16,7 +16,7 @@ The following example demonstrates a [DataGrid](/Documentation/Guide/UI_Componen
             setValue(e);
         };
 
-        const cell = useCallback((e) => <div>{e.data + value}</div>, [value]);
+        const cell = useCallback((cell) => <div>{cell.data + value}</div>, [value]);
 
         return (
             <>
@@ -52,8 +52,8 @@ The following example demonstrates a [DataGrid](/Documentation/Guide/UI_Componen
         };
 
 
-        renderCell(e) {
-            return <div>{e.data + this.state.value}</div>;
+        renderCell(cell) {
+            return <div>{cell.data + this.state.value}</div>;
         }
 
         render() {

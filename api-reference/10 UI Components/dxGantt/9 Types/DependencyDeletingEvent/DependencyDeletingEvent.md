@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:DependencyDeletingEvent
 generateTypeLink: 
+references: dxGantt.Options.onDependencyDeleting
 ---
 ---
 ##### shortDescription

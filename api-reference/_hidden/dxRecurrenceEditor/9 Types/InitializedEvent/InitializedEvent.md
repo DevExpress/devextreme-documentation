@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/recurrence_editor:InitializedEvent
 generateTypeLink: 
+references: dxRecurrenceEditor.Options.onInitialized
 ---
 ---
 ##### shortDescription

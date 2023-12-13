@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,NewRowInfo
 uid: ui/data_grid:InitNewRowEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onInitNewRow
 ---
 ---
 ##### shortDescription

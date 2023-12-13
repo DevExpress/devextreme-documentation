@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,TabPanelItemInfo
 uid: ui/tab_panel:TitleRenderedEvent
 generateTypeLink: 
+references: dxTabPanel.Options.onTitleRendered
 ---
 ---
 ##### shortDescription

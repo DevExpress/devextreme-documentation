@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/responsive_box:OptionChangedEvent
 generateTypeLink: 
+references: dxResponsiveBox.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

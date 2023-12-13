@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,CellInfo
 uid: ui/tree_list:CellClickEvent
 generateTypeLink: 
+references: dxTreeList.Options.onCellClick
 ---
 ---
 ##### shortDescription

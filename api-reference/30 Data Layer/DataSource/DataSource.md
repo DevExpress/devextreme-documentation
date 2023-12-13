@@ -77,7 +77,13 @@ dx.web.js, dx.viz.js, dx.all.js
 
 ---
 
-[note] If you create a **DataSource** instance outside a UI component (as shown above), make sure to [dispose](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#dispose') of it when it is no longer required. If the instance is created inside a UI component, it is disposed of automatically.
+[note]
+
+- If you create a **DataSource** instance outside a UI component (as shown above), make sure to [dispose](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#dispose') of it when it is no longer required. If the instance is created inside a UI component, it is disposed of automatically.
+
+- DataSource is not designed to be used in multiple components simultaneously. If you want to share data between multiple widgets, create the [store object](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') common for all components. Each component should wrap this store in a separate DataSource.
+
+[/note]
 
 Refer to the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') and [DataSource Examples](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples '/Documentation/Guide/Data_Binding/Data_Source_Examples/') articles for more information on working with data in DevExtreme.
 

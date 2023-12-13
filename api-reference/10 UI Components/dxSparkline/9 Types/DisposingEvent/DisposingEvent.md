@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sparkline:DisposingEvent
 generateTypeLink: 
+references: dxSparkline.Options.onDisposing
 ---
 ---
 ##### shortDescription

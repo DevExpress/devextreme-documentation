@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/tag_box:InitializedEvent
 generateTypeLink: 
+references: dxTagBox.Options.onInitialized
 ---
 ---
 ##### shortDescription

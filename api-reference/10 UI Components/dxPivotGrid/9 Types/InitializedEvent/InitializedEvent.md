@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/pivot_grid:InitializedEvent
 generateTypeLink: 
+references: dxPivotGrid.Options.onInitialized
 ---
 ---
 ##### shortDescription

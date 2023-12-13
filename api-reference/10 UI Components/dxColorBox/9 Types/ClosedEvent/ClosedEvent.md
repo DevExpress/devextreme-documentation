@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/color_box:ClosedEvent
 generateTypeLink: 
+references: dxColorBox.Options.onClosed
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/tree_view:SelectAllValueChangedEvent
 generateTypeLink: 
+references: dxTreeView.Options.onSelectAllValueChanged
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/validation_summary:DisposingEvent
 generateTypeLink: 
+references: dxValidationSummary.Options.onDisposing
 ---
 ---
 ##### shortDescription

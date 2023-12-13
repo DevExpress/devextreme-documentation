@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/filter_builder:EditorPreparingEvent
 generateTypeLink: 
+references: dxFilterBuilder.Options.onEditorPreparing
 ---
 ---
 ##### shortDescription

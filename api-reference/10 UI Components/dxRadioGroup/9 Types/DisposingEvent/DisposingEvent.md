@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/radio_group:DisposingEvent
 generateTypeLink: 
+references: dxRadioGroup.Options.onDisposing
 ---
 ---
 ##### shortDescription

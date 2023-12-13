@@ -6,3 +6,5 @@ To load and save a diagram to a string variable, use the [import](/api-reference
     diagram.import(newDiagramContent); // replace the existing diagram with a new diagram
 
 [note] The Diagram UI component stores an opened diagram's data in its own text format. Thereby we recommend you to not modify data returned by the [export](/api-reference/10%20UI%20Components/dxDiagram/3%20Methods/export().md '/Documentation/ApiReference/UI_Components/dxDiagram/Methods/#export') method. A manually modified document can be loaded incorrectly.
+
+[tags] jquery

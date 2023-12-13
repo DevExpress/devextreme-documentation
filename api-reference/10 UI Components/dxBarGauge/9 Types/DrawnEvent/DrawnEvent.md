@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/bar_gauge:DrawnEvent
 generateTypeLink: 
+references: dxBarGauge.Options.onDrawn
 ---
 ---
 ##### shortDescription

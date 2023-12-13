@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_uploader:BeforeSendEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onBeforeSend
 ---
 ---
 ##### shortDescription

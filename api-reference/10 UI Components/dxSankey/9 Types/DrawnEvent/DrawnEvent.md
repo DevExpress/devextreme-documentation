@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/sankey:DrawnEvent
 generateTypeLink: 
+references: dxSankey.Options.onDrawn
 ---
 ---
 ##### shortDescription

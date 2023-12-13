@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/scheduler:ContentReadyEvent
 generateTypeLink: 
+references: dxScheduler.Options.onContentReady
 ---
 ---
 ##### shortDescription

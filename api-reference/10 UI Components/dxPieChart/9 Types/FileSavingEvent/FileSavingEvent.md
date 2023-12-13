@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/pie_chart:FileSavingEvent
 generateTypeLink: 
+references: dxPieChart.Options.onFileSaving
 ---
 ---
 ##### shortDescription

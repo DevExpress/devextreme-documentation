@@ -17,7 +17,9 @@ The adaptive layout enables the UI component to hide optional elements if they d
 
 Use the **height** and **width** properties in the **adaptiveLayout** object to specify the minimum container size at which the layout begins to adapt.
 
-<a href="https://jsfiddle.net/ChartJS/2arphpsx/" class="button orange small fix-width-155" style="margin-right: 20px;" target="_blank">View Demo on JSFiddle</a>
+#include btn-open-codepen with {
+    href: "https://codepen.io/vladaskorokhodova/pen/ZEwMXXV"
+}
 
 #####See Also#####
 - [Adaptive Layout](/concepts/05%20UI%20Components/PieChart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/PieChart/Adaptive_Layout/')

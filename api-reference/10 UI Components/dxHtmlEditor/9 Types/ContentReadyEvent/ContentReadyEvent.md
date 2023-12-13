@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/html_editor:ContentReadyEvent
 generateTypeLink: 
+references: dxHtmlEditor.Options.onContentReady
 ---
 ---
 ##### shortDescription

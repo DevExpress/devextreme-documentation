@@ -68,8 +68,6 @@ Group cells display the following data:
 
 * The caption and the value of the column by which data is grouped
 
-* [Group summary items](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/')
-
 * [groupContinuesMessage](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/texts/groupContinuesMessage.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuesMessage') and [groupContinuedMessage](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/texts/groupContinuedMessage.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/texts/#groupContinuedMessage') (if the group is spread across two or more pages)
 
 The following example shows how to display column value only:

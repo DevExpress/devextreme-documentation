@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/tile_view:OptionChangedEvent
 generateTypeLink: 
+references: dxTileView.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

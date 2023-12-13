@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,RowRemovedInfo
 uid: ui/data_grid:RowRemovedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onRowRemoved
 ---
 ---
 ##### shortDescription

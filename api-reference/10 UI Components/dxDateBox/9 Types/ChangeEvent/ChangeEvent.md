@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/date_box:ChangeEvent
 generateTypeLink: 
+references: dxDateBox.Options.onChange
 ---
 ---
 ##### shortDescription

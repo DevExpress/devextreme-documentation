@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,IncidentInfo
 uid: viz/vector_map:IncidentOccurredEvent
 generateTypeLink: 
+references: dxVectorMap.Options.onIncidentOccurred
 ---
 ---
 ##### shortDescription

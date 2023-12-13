@@ -7,3 +7,5 @@ Use the [selectedRowKey](/api-reference/10%20UI%20Components/dxGantt/1%20Configu
             // ...
         });
     });
+
+[tags] jquery

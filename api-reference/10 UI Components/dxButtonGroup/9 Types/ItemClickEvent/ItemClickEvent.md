@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/button_group:ItemClickEvent
 generateTypeLink: 
+references: dxButtonGroup.Options.onItemClick
 ---
 ---
 ##### shortDescription

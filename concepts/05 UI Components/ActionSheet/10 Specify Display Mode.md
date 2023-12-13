@@ -79,7 +79,7 @@ By default, the ActionSheet comes up from the bottom of the page. If you set the
 ---
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Action_Sheet/PopoverMode/jQuery/iOS/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Action_Sheet/PopoverMode/iOS/"
 }
 
 #####See Also#####

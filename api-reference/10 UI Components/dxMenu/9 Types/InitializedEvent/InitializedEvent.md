@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/menu:InitializedEvent
 generateTypeLink: 
+references: dxMenu.Options.onInitialized
 ---
 ---
 ##### shortDescription

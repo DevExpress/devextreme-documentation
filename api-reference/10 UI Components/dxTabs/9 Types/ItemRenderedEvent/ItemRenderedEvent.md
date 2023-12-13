@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 uid: ui/tabs:ItemRenderedEvent
 generateTypeLink: 
+references: dxTabs.Options.onItemRendered
 ---
 ---
 ##### shortDescription

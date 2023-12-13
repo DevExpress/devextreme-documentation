@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo,DataChangeInfo
 uid: ui/tree_list:EditCancelingEvent
 generateTypeLink: 
+references: dxTreeList.Options.onEditCanceling
 ---
 ---
 ##### shortDescription

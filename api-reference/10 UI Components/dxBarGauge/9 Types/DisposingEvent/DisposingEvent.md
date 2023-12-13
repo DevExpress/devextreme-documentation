@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/bar_gauge:DisposingEvent
 generateTypeLink: 
+references: dxBarGauge.Options.onDisposing
 ---
 ---
 ##### shortDescription

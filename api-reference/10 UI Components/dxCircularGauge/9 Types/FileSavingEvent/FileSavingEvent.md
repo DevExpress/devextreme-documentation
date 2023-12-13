@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/circular_gauge:FileSavingEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onFileSaving
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/data_grid:EditingStartEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onEditingStart
 ---
 ---
 ##### shortDescription

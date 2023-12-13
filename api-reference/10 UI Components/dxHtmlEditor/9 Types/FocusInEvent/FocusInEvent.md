@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/html_editor:FocusInEvent
 generateTypeLink: 
+references: dxHtmlEditor.Options.onFocusIn
 ---
 ---
 ##### shortDescription

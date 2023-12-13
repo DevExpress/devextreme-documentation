@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/scroll_view:InitializedEvent
 generateTypeLink: 
+references: dxScrollView.Options.onInitialized
 ---
 ---
 ##### shortDescription

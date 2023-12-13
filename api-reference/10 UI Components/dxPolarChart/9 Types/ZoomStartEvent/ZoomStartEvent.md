@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo
 uid: viz/polar_chart:ZoomStartEvent
 generateTypeLink: 
+references: dxPolarChart.Options.onZoomStart
 ---
 ---
 ##### shortDescription

@@ -52,3 +52,5 @@ Initialize the Gantt UI component in a DOM element.
         
     <!--HTML-->
     <div id="gantt"></div>
+
+[tags] jquery

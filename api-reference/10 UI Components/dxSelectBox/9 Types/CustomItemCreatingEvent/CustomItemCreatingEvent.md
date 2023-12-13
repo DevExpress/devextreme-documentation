@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,CustomItemCreatingInfo
 uid: ui/select_box:CustomItemCreatingEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onCustomItemCreating
 ---
 ---
 ##### shortDescription

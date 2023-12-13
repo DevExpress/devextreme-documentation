@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,_viz_base_gauge_TooltipInfo
 uid: viz/linear_gauge:TooltipShownEvent
 generateTypeLink: 
+references: dxLinearGauge.Options.onTooltipShown
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: viz/circular_gauge:DrawnEvent
 generateTypeLink: 
+references: dxCircularGauge.Options.onDrawn
 ---
 ---
 ##### shortDescription

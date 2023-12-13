@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: ui/text_area:OptionChangedEvent
 generateTypeLink: 
+references: dxTextArea.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

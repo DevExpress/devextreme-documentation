@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 uid: ui/tile_view:ItemContextMenuEvent
 generateTypeLink: 
+references: dxTileView.Options.onItemContextMenu
 ---
 ---
 ##### shortDescription

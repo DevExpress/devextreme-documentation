@@ -5,6 +5,7 @@ type: Object
 inherits: FileSavingEventInfo
 uid: viz/bar_gauge:FileSavingEvent
 generateTypeLink: 
+references: dxBarGauge.Options.onFileSaving
 ---
 ---
 ##### shortDescription

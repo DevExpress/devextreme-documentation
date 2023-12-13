@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/file_manager:ContentReadyEvent
 generateTypeLink: 
+references: dxFileManager.Options.onContentReady
 ---
 ---
 ##### shortDescription

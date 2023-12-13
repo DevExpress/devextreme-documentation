@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/diagram:ContentReadyEvent
 generateTypeLink: 
+references: dxDiagram.Options.onContentReady
 ---
 ---
 ##### shortDescription

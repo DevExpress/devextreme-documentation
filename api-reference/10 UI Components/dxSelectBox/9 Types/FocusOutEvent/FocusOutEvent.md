@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/select_box:FocusOutEvent
 generateTypeLink: 
+references: dxSelectBox.Options.onFocusOut
 ---
 ---
 ##### shortDescription

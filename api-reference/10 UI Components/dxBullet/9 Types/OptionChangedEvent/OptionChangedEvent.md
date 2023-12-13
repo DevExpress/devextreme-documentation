@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 uid: viz/bullet:OptionChangedEvent
 generateTypeLink: 
+references: dxBullet.Options.onOptionChanged
 ---
 ---
 ##### shortDescription

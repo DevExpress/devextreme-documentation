@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,TitleRenderedInfo
 uid: ui/popover:TitleRenderedEvent
 generateTypeLink: 
+references: dxPopover.Options.onTitleRendered
 ---
 ---
 ##### shortDescription

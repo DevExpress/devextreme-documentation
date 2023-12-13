@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 uid: ui/tooltip:InitializedEvent
 generateTypeLink: 
+references: dxTooltip.Options.onInitialized
 ---
 ---
 ##### shortDescription

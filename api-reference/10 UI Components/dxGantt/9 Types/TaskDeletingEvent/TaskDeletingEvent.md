@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,EventInfo
 uid: ui/gantt:TaskDeletingEvent
 generateTypeLink: 
+references: dxGantt.Options.onTaskDeleting
 ---
 ---
 ##### shortDescription

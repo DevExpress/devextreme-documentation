@@ -4,6 +4,7 @@ export: CustomCommandEvent
 type: Object
 uid: ui/diagram:CustomCommandEvent
 generateTypeLink: 
+references: dxDiagram.Options.onCustomCommand
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/file_uploader:DropZoneEnterEvent
 generateTypeLink: 
+references: dxFileUploader.Options.onDropZoneEnter
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/data_grid:RowPreparedEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onRowPrepared
 ---
 ---
 ##### shortDescription

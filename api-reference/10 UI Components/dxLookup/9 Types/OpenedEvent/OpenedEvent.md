@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/lookup:OpenedEvent
 generateTypeLink: 
+references: dxLookup.Options.onOpened
 ---
 ---
 ##### shortDescription

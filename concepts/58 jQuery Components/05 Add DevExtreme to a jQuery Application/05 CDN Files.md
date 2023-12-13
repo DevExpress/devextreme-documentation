@@ -8,7 +8,7 @@ Link DevExtreme scripts and stylesheets within the `<head>` tag on your index pa
         <!-- DevExtreme theme -->
         <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_1/css/dx.light.css">
 
-        <!-- DevExtreme library -->
+        <!-- DevExtreme libraries (reference only one of them) -->
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.all.js"></script>
         <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.web.js"></script> -->
         <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_1/js/dx.viz.js"></script> -->

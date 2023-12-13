@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/filter_builder:ValueChangedEvent
 generateTypeLink: 
+references: dxFilterBuilder.Options.onValueChanged
 ---
 ---
 ##### shortDescription

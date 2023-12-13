@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 uid: ui/html_editor:FocusOutEvent
 generateTypeLink: 
+references: dxHtmlEditor.Options.onFocusOut
 ---
 ---
 ##### shortDescription

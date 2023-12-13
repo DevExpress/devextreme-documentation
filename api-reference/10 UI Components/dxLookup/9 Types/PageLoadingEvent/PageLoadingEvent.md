@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/lookup:PageLoadingEvent
 generateTypeLink: 
+references: dxLookup.Options.onPageLoading
 ---
 ---
 ##### shortDescription

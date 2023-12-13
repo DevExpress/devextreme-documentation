@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 uid: ui/menu:SubmenuShowingEvent
 generateTypeLink: 
+references: dxMenu.Options.onSubmenuShowing
 ---
 ---
 ##### shortDescription

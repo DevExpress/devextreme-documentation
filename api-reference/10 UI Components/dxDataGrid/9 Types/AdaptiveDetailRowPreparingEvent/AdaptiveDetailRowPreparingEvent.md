@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,AdaptiveDetailRowPreparingInfo
 uid: ui/data_grid:AdaptiveDetailRowPreparingEvent
 generateTypeLink: 
+references: dxDataGrid.Options.onAdaptiveDetailRowPreparing
 ---
 ---
 ##### shortDescription

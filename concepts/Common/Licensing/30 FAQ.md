@@ -34,13 +34,13 @@ A: You can use any valid license key issued to you or your employees. If you pre
 
 A:
 
-- [Angular UI Components](https://js.devexpress.com/Angular/)
+- [DevExtreme Angular](https://js.devexpress.com/Angular/)
 
-- [React UI Components](https://js.devexpress.com/React/)
+- [DevExtreme React](https://js.devexpress.com/React/)
 
-- [Vue UI Components](https://js.devexpress.com/Vue/)
+- [DevExtreme Vue](https://js.devexpress.com/Vue/)
 
-- [jQuery UI Components](https://js.devexpress.com/jQuery/)
+- [DevExtreme jQuery](https://js.devexpress.com/jQuery/)
 
 And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox).
 At present, license checks are not initiated against ASP.NET Core/MVC.

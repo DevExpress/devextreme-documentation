@@ -1,3 +1,21 @@
+### Table of Contents
+
+- [Evaluation (Trial)](/Documentation/Guide/Common/Licensing/#Evaluation_Trial)
+
+- [How to Obtain and Validate Your License Key](/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key)
+
+- [Deployment and Continuous Integration (CI)](/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI)
+
+- [Updating License Keys](/Documentation/Guide/Common/Licensing/#Updating_License_Keys)
+
+- [Information Security](/Documentation/Guide/Common/Licensing/#Information_Security)
+
+- [Validation](/Documentation/Guide/Common/Licensing/#Validation)
+
+- [FAQ](/Documentation/Guide/Common/Licensing/#FAQ)
+
+---
+
 You must purchase a license to use DevExtreme UI components/libraries within a software project. If you are ready to incorporate DevExtreme UI components/libraries in your project, please visit the [DevExtreme Purchase](https://js.devexpress.com/Buy/) page for pricing options.
 
 [note] For more information on product licensing and the terms that govern use of DevExtreme UI component/libraries, visit the following webpage: [DevExtreme Licensing](https://js.devexpress.com/Licensing/).

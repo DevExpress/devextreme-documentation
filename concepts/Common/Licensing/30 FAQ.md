@@ -1,5 +1,3 @@
-
-
 **Q: Do I need an Internet connection for license validation? Is any information transmitted from my machine during license verification?**
 
 A: No, license validation does not require a connection to any DevExpress server, and there is no transfer of any personally identifiable information.

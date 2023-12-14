@@ -1,6 +1,6 @@
-The following example demonstrates a [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) component which cells display a combination of grid's data and a [TextBox](/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox/) value. For this task, a rendering function wrapped in [useCallback](https://react.dev/reference/react/useCallback) was used. This way you can pass the TextBox value to the column's [cellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellRender) property.
+The following example customizes a [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) component to display a combination of grid's data and a [TextBox](/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox/) value within cells. The code wraps a rendering function within a [useCallback](https://react.dev/reference/react/useCallback) hook. This way you can pass the TextBox value to the column's [cellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellRender) property.
 
-[note] You can also define the rendering function outside the component when you don't need to pass any dependencies to the *'render'* property. 
+[note] You can also define a rendering function outside of a component if you don't need to pass any dependencies to the *'Render'* property. 
 
     <!-- tab: Function component -->
     import React, { useState, useCallback } from 'react';

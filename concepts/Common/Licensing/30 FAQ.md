@@ -1,18 +1,18 @@
-**Q: Do I need an Internet connection for license validation? Is any information transmitted from my machine during license verification?**
+**Q: Do I need an Internet connection for license validation? Is any information transmitted from my machine to DevExpress during license verification?**
 
-A: No, license validation does not require a connection to any DevExpress server, and there is no transfer of any personally identifiable information.
+A: No, the DevExtreme license validation process does not require an internet connection, nor does it communicate with DevExpress servers. We do not transmit/collect any device specific and/or personally identifiable information.
 
 <br>
 
 **Q: Does license verification have an impact on page load time?**
 
-A: No significant impact - the license verification process is faster than 10 ms.
+A:  No significant impact - the license verification process takes ~10ms.
 
 <br>
 
-**Q: Whose responsibility it will be if license key is stolen? What are the consequences?**
+**Q: What if my license key is stolen/compromised? What are the consequences?**
 
-A: The license keys are made public due to the client-side nature of JS apps. If somebody steals your key and uses it in their application, it will not affect you in any way. Theft violates our license agreement and entails liability for the illegal key usage. If a license key is stolen and you are aware of the theft, you can contact our license compliance department for assistance. 
+A: License keys are public due to the client-side nature of JS apps. If you discover that your license key was stolen/compromised, you can contact our <a href="mailto: clientservices@devexpress.com">license compliance department</a> for assistance.
 
 <br>
 
@@ -22,13 +22,13 @@ A: No, revoking keys is not possible due to the offline nature of the key valida
 
 <br>
 
-**Q: What key should be used on CI/App Server?**
+**Q: My organization owns multiple DevExtreme licenses. Which key should be used on our CI/App Server?**
 
-A: You can use any valid license key issued to you or your employees. If you prefer not to tie your build servers to a specific employee key, you can purchase a dedicated license for CI, but it is not obligatory.
+A: You can use any valid license key issued to you or your employees. If you prefer not to tie your build servers to a specific employee key, you can purchase a dedicated license for CI, but a dedicated key is not necessary if you have purchased a license for each developer using DevExtreme.
 
 <br>
 
-**Q: What products are affected by the license check mechanism?**
+**Q: Which DevExtreme products require license verification**
 
 A:
 
@@ -40,31 +40,30 @@ A:
 
 - [DevExtreme jQuery](https://js.devexpress.com/jQuery/)
 
-And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox).
-At present, license checks are not initiated against ASP.NET Core/MVC.
+And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox). At present, license verification is not required for ASP.NET Core/MVC.
 
 <br>
 
-**Q: Why are there no license keys available in Download Manager for the upcoming alpha or beta version?**
+**Q: Why are there no license keys available in Download Manager for alpha or beta version?**
 
-A: Pre-release versions are not suitable for commercial use. Once the final manufacturing-ready version is released, you can obtain keys through the Download Manager.
+A: Pre-release versions are not suitable for commercial use. Once we officially release, you can obtain keys through the DevExpress Download Manager.
 
 <br>
 
-**Q: License keys make the process of deployment management too complicated. Can I opt out?**
+**Q: License keys complicate deployment management. Can I opt out?**
 
-A: You cannot opt out of license validation. Only at first glance it seems that the process is complicated. Once you set everything up, there will not be any trouble due to the offline nature of license validation. Once you have deployed your app with a valid license key, you do not need to monitor or take any actions until you decide to update your app to a new major DevExtreme version, which is released twice a year or less frequently.
+A: You cannot opt out of license validation. At first glance it seems that the process is complicated. Once you set everything up, you should not experience any complications (due to the fully offline nature of our license validation process). Once you have deployed your app with a valid license key, you do not need to monitor or take further actions until you decide to update your app to a new major version of DevExtreme (major versions are generally released twice a year).
 
 <br>
 
 **Q: Is it necessary to exclude the `devextreme-license` file from version control? How do you configure version control systems other than Git?**
 
-A: It is not necessary, but we highly recommend using this approach. Storing any keys in version control is generally considered a bad practice. This will help you and your team use individual keys as required by the license agreement and also prevent developers from accidentally committing keys to public repositories.
+A: It is not necessary, but we highly recommend using this approach. Storing keys in version control is generally considered a bad practice. This will help you and your team use individual keys as required by the license agreement and also prevent developers from accidentally committing keys to public repositories.
 
-Configuring the version control system to ignore the file holding license keys may vary:
+Configuring the version control system so as to ignore file holding license keys may vary:
 
 - Use [.tfignore](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-files-server?view=azure-devops#customize-which-files-version-control-ignores) for Team Foundation Server Version Control (TFVC).
 
-- Use [.gitignore](https://git-scm.com/docs/.gitignore) for Git and other products with version control built on it (like Azure DevOps Server).
+- Use [.gitignore](https://git-scm.com/docs/.gitignore) for Git and other products with version control built in (like Azure DevOps Server).
 
 - Use [.hgignore](https://wiki.mercurial-scm.org/.hgignore) for Mercurial.

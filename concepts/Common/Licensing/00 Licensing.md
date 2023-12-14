@@ -1,18 +1,18 @@
 ### Table of Contents
 
-- [Evaluation (Trial)](/Documentation/Guide/Common/Licensing/#Evaluation_Trial)
+- [Evaluation (Trial)](/concepts/Common/Licensing/05%20Evaluation%20(Trial).md '/Documentation/Guide/Common/Licensing/#Evaluation_Trial')
 
-- [How to Obtain and Validate Your License Key](/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key)
+- [How to Obtain and Validate Your License Key](/concepts/Common/Licensing/10%20How%20to%20Obtain%20and%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key')
 
-- [Deployment and Continuous Integration (CI)](/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI)
+- [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI')
 
-- [Updating License Keys](/Documentation/Guide/Common/Licensing/#Updating_License_Keys)
+- [Updating License Keys](/concepts/Common/Licensing/15%20Updating%20License%20Keys.md '/Documentation/Guide/Common/Licensing/#Updating_License_Keys')
 
-- [Information Security](/Documentation/Guide/Common/Licensing/#Information_Security)
+- [Information Security](/concepts/Common/Licensing/20%20Information%20Security.md '/Documentation/Guide/Common/Licensing/#Information_Security')
 
-- [Validation](/Documentation/Guide/Common/Licensing/#Validation)
+- [Validation](/concepts/Common/Licensing/25%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
 
-- [FAQ](/Documentation/Guide/Common/Licensing/#FAQ)
+- [FAQ](/concepts/Common/Licensing/30%20FAQ.md '/Documentation/Guide/Common/Licensing/#FAQ')
 
 ---
 

@@ -4,4 +4,4 @@ You can display custom content in DevExtreme components. We supply two types of 
 
 *'Component'* properties use React components to specify templates. A DevExpress control renders those templates to the virtual DOM. Since a template is a component, it can have its internal state and use hooks inside (which is not possible with rendering functions). The following article contains an example: [Using a Custom Component](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Custom_Component).
 
-In some cases, you need to use the *'Template'* properties instead. Refer to the following article to learn more: [Using the Template Component](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_the_Template_Component).
+In some cases, you need to use the *'Template'* properties instead. Refer to the following article for more information: [Using the Template Component](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_the_Template_Component).

@@ -1,42 +1,71 @@
-In the following code, rendering functions are used to specify the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)'s [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate') and the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes)'s [template](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#template'):
+The following example customizes a [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) component to display a combination of grid data and a [TextBox](/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox/) value within cells. The code wraps a rendering function within a [useCallback](https://react.dev/reference/react/useCallback) hook. This way you can pass the TextBox value to the column's [cellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellRender) property.
+
+[note] You can also define a rendering function outside of a component if you don't need to pass any dependencies to the *'Render'* property. 
 
     <!-- tab: Function component -->
-    import List from 'devextreme-react/list';
-    import Button from 'devextreme-react/button';
+    import React, { useState, useCallback } from 'react';
+    import TextBox from 'devextreme-react/text-box';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const renderListItem = (itemData) => {
-        return <p>{itemData.itemProperty}</p>;
-    }
-    const renderButton = (button) => {
-        return <div style={{ padding: 20 }}><p>{button.text}</p></div>;
-    }
+    const dataSource = [1, 2, 3, 4, 5];
 
-    export default function App() {
+    function App() {
+        const [value, setValue] = useState('.');
+
+        const onTextBoxValueChange = (e) => {
+            setValue(e);
+        };
+
+        const cell = useCallback((cell) => <div>{cell.data + value}</div>, [value]);
+
         return (
-            <React.Fragment>
-                <List itemRender={renderListItem} />
-                <Button render={renderButton} />
-            </React.Fragment>
+            <>
+                <TextBox value={value} onValueChange={onTextBoxValueChange} />
+                <DataGrid dataSource={dataSource}>
+                    <Column caption="Low" cellRender={cell} />
+                </DataGrid>
+            </>
         );
     }
+
+    export default App;
     
     <!-- tab: Class component -->
-    import List from 'devextreme-react/list';
-    import Button from 'devextreme-react/button';
+    import * as React from 'react';
+    import TextBox from 'devextreme-react/text-box';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-    const renderListItem = (itemData) => {
-        return <p>{itemData.itemProperty}</p>;
-    }
-    const renderButton = (button) => {
-        return <div style={{ padding: 20 }}><p>{button.text}</p></div>;
-    }
+    const dataSource = [1, 2, 3, 4, 5];
+
     class App extends React.Component {
+        constructor() {
+            super();
+
+            this.renderCell = this.renderCell.bind(this);
+            this.onTextBoxValueChange = this.onTextBoxValueChange.bind(this);
+
+            this.state = { value: '.' };
+        }
+
+        onTextBoxValueChange(e) {
+            this.setState({ value: e });
+        };
+
+
+        renderCell(cell) {
+            return <div>{cell.data + this.state.value}</div>;
+        }
+
         render() {
             return (
-                <React.Fragment>
-                    <List itemRender={renderListItem} />
-                    <Button render={renderButton} />
-                </React.Fragment>
+                <>
+                    <TextBox value={this.state.value} onValueChange={this.onTextBoxValueChange} />
+                    <DataGrid dataSource={dataSource}>
+                        <Column caption="Low" cellRender={this.renderCell} />
+                    </DataGrid>
+                </>
             );
         }
     }
+
+    export default App;

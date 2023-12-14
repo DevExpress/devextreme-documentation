@@ -1,4 +1,4 @@
-You can define custom content in a separate component if you need to utilize state or hooks.
+You can define custom content in a separate component if you need to utilize the state or hooks.
 
 [note] For Class components, we recommend that you use <a href="https://react.dev/reference/react/PureComponent" target="_blank">`React.PureComponent`</a> instead of `React.Component` (the latter can be re-rendered unnecessarily). Alternatively, you can implement a <a href="https://react.dev/reference/react/Component#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
 

@@ -62,8 +62,8 @@ A: It is not necessary, but we highly recommend using this approach. Storing key
 
 Configuring the version control system so as to ignore file holding license keys may vary:
 
-- Use [.tfignore](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-files-server?view=azure-devops#customize-which-files-version-control-ignores) for Team Foundation Server Version Control (TFVC).
+- Use [.gitignore](https://git-scm.com/docs/.gitignore) for Git and products that use built-in Git (like [Azure DevOps Server](https://learn.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio-2022#use-a-gitignore-file)).
 
-- Use [.gitignore](https://git-scm.com/docs/.gitignore) for Git and other products with version control built in (like Azure DevOps Server).
+- Use [.tfignore](https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/add-files-server?view=azure-devops#customize-which-files-version-control-ignores) for Team Foundation Server Version Control (TFVC).
 
 - Use [.hgignore](https://wiki.mercurial-scm.org/.hgignore) for Mercurial.

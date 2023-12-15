@@ -252,7 +252,7 @@ The following alternative **CustomStore** configuration delegates data processin
             this.lookupDataSource = {
                 store: new CustomStore({
                     key: "id",
-                    load: async (loadOptions) => {
+                    load: (loadOptions) => {
                         let params: HttpParams = new HttpParams();
                         [
                             "sort", 
@@ -267,7 +267,7 @@ The following alternative **CustomStore** configuration delegates data processin
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        await lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/", { params: params }))
+                        return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/", { params: params }))
                             .then(result => {
                                 return result;
                             });

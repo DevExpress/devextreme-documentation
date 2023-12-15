@@ -124,7 +124,7 @@ If you specify the Lookup's [value](/api-reference/10%20UI%20Components/dxDropDo
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        await lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
+                        return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
                             .then(result => {
                                 // Here, you can perform operations unsupported by the server
                                 return result.data;

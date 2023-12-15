@@ -151,11 +151,11 @@ The following code shows a **CustomStore** configuration in which the **load** f
             this.jsonDataSource = new CustomStore({
                 key: 'id',
                 loadMode: 'raw', // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
-                load: async () => {
+                load: () => {
                     let params: HttpParams = new HttpParams();
                     params.set('param1', 'value1')
                           .set('param2', 'value2');
-                    await lastValueFrom(this.http.get('https://mydomain.com/MyDataService', { 
+                    return lastValueFrom(this.http.get('https://mydomain.com/MyDataService', { 
                             params: params
                         }))
                         .then(result => {

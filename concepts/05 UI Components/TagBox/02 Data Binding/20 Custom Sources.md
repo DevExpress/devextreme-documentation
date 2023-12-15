@@ -116,7 +116,7 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
             this.tagBoxData = new DataSource({
                 store: new CustomStore({
                     key: "ID",
-                    load: async (loadOptions) => {
+                    load: (loadOptions) => {
                         let params: HttpParams = new HttpParams();
                         [
                             "skip",     
@@ -132,7 +132,7 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        await lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
+                        return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
                             .then(result => {
                                 // Here, you can perform operations unsupported by the server
                                 return {

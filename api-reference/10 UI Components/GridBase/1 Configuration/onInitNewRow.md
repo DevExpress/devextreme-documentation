@@ -86,6 +86,7 @@ In the following code, the **onInitNewRow** function is used to provide default 
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -106,14 +107,14 @@ In the following code, the **onInitNewRow** function is used to provide default 
                 e.data.position = data.Position;
             });
         }
-        getDefaultData() {
-            return this.httpClient.get("https://www.mywebsite.com/api/getDefaultData")
-                .toPromise()
-                .then(data => {
-                    // "data" is { ID: 100, Position: "Programmer" }
-                    return data;
-                }) 
-                .catch(error => { throw 'Data Loading Error' });
+        async getDefaultData() {
+            try {
+                const data = await lastValueFrom(this.httpClient.get("https://www.mywebsite.com/api/getDefaultData"));
+                // "data" is { ID: 100, Position: "Programmer" }
+                return data;
+            } catch (error) {
+                throw 'Data Loading Error';
+            }
         }
     }
 

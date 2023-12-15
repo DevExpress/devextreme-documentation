@@ -56,7 +56,7 @@ Note that all user functions return the result of the jQuery AJAX call, which is
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
 
     import CustomStore from 'devextreme/data/custom_store';
 
@@ -71,28 +71,23 @@ Note that all user functions return the result of the jQuery AJAX call, which is
         constructor(private http: HttpClient) {
             this.customDataSource = new CustomStore({
                 load: (loadOptions) => {
-                    return httpClient.get(SERVICE_URL)
-                        .toPromise();
+                    return lastValueFrom(httpClient.get(SERVICE_URL));
                 },
 
                 byKey: (key) => {
-                    return httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key))
-                        .toPromise();
+                    return lastValueFrom(httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key)));
                 },
 
                 insert: (values) => {
-                    return httpClient.post(SERVICE_URL, values)
-                        .toPromise();
+                    return lastValueFrom(httpClient.post(SERVICE_URL, values));
                 },
 
                 update: (key, values) => {
-                    return httpClient.put(SERVICE_URL + encodeURIComponent(key), values)
-                        .toPromise();
+                    return lastValueFrom(httpClient.put(SERVICE_URL + encodeURIComponent(key), values));
                 },
 
                 remove: (key) => {
-                    return httpClient.delete(SERVICE_URL + encodeURIComponent(key))
-                        .toPromise();
+                    return lastValueFrom(httpClient.delete(SERVICE_URL + encodeURIComponent(key)));
                 },
             });
         }

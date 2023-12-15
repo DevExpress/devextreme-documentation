@@ -41,37 +41,42 @@
     <!--tab: app.component.ts-->
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
     import { confirm } from 'devextreme/ui/dialog';
+    import { lastValueFrom } from 'rxjs';
     // ...
+
     export class AppComponent {
-        constructor(private httpClient: HttpClient) { /*...*/}
-        // ...
-        ${{functionName}}(e) {
-            const isCanceled = new Promise((resolve, reject) => {
-                const promptPromise = confirm("Are you sure?", "Confirm changes");
-                promptPromise.then((dialogResult) => {
-                    if (dialogResult) {
-                        let params = new HttpParams();
-                        for (let key in e.newData) {
-                            params = params.set(key, e.newData[key]);
-                        }
-                        this.httpClient
-                            .get("https://url/to/your/validation/service", { params: params })
-                            .toPromise()
-                            .then((validationResult) => {
-                                if (validationResult.errorText) {
-                                    reject(validationResult.errorText);
-                                } else {
-                                    resolve(false);
-                                } 
-                            });
-                    } else {
-                        return resolve(true);
+        constructor(private httpClient: HttpClient) { /*...*/ }
+        async ${{functionName}}(e) {
+            try {
+                const dialogResult = await this.confirmAsync("Are you sure?", "Confirm changes");
+                if (dialogResult) {
+                    let params = new HttpParams();
+                    for (let key in e.newData) {
+                        params = params.set(key, e.newData[key]);
                     }
-                });
+                    const validationResult = await lastValueFrom(this.httpClient.get("https://url/to/your/validation/service", { params }));
+                    if (validationResult.errorText) {
+                        throw validationResult.errorText;
+                    } else {
+                        e.cancel = false;
+                    }
+                } else {
+                    e.cancel = true;
+                }
+            } catch (error) {
+                console.error("Validation or confirmation error", error);
+                e.cancel = Promise.reject(error);
+            }
+        }
+
+        private confirmAsync(message: string, title?: string): Promise<boolean> {
+            return new Promise<boolean>((resolve) => {
+                const dialogResult = confirm(message, title);
+                resolve(dialogResult);
             });
-            e.cancel = isCanceled;
         }
     }
+
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... 

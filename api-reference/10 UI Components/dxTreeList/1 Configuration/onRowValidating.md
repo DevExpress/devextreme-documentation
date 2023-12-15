@@ -79,6 +79,7 @@ The following code illustrates how to validate an email address on the server an
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient, HttpParams } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -101,8 +102,9 @@ The following code illustrates how to validate an email address on the server an
         }
         checkEmail(email) {
             const params = new HttpParams().set("email", email);
-            return this.http.get("https://www.mywebsite.com/api/checkEmail", { params })
-                .toPromise();
+            return lastValueFrom(
+                this.http.get("https://www.mywebsite.com/api/checkEmail", { params })
+            );
         }
     }
 
@@ -161,8 +163,7 @@ The following code illustrates how to validate an email address on the server an
             },
             checkEmail(email) {
                 let params = '?' + 'email=' + email;
-                return fetch("https://www.mywebsite.com/api/checkEmail${params}")
-                    .toPromise();
+                return fetch("https://www.mywebsite.com/api/checkEmail${params}");
             }
         }
     }
@@ -196,8 +197,7 @@ The following code illustrates how to validate an email address on the server an
         }
         checkEmail(email) {
             let params = '?' + 'email=' + email;
-            return fetch("https://www.mywebsite.com/api/checkEmail${params}")
-                .toPromise();
+            return fetch("https://www.mywebsite.com/api/checkEmail${params}");
         }
 
         render() {

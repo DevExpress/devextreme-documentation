@@ -105,7 +105,7 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
     import { DxTagBoxModule } from "devextreme-angular";
     import DataSource from "devextreme/data/data_source";
     import CustomStore from "devextreme/data/custom_store";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     // ...
     export class AppComponent {
         tagBoxData: DataSource = {};
@@ -132,8 +132,7 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        return httpClient.get("http://mydomain.com/MyDataService", { params: params })
-                            .toPromise()
+                        return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
                             .then(result => {
                                 // Here, you can perform operations unsupported by the server
                                 return {
@@ -143,8 +142,7 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
                             });
                     },
                     insert: function(values) {
-                        return httpClient.post('http://mydomain.com/MyDataService', values)
-                            .toPromise();
+                        return lastValueFrom(httpClient.post('http://mydomain.com/MyDataService', values));
                     }
                 })
             });

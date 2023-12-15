@@ -224,7 +224,7 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient, HttpParams } from '@angular/common/http';
-    import 'rxjs/add/operator/toPromise';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -244,13 +244,16 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
         }
         getTaxRates(state) {
             const params = new HttpParams().set('State', state);
-            return this.httpClient.get("https://www.mywebsite.com/api/getTaxRates", { params })
-                .toPromise()
-                .then(data => {
+            return new Promise(async (resolve, reject) => {
+                try {
+                    const data = await lastValueFrom(this.httpClient.get("https://www.mywebsite.com/api/getTaxRates", { params }));
                     // "data" is { State: 1, Tax: 10 }
-                    return data;
-                })
-                .catch(error => { throw "Data Loading Error" });
+                    resolve(data);
+                } catch (error) {
+                    console.error("Data Loading Error", error);
+                    reject("Data Loading Error");
+                }
+            });
         }
     }
 

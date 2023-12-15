@@ -76,6 +76,7 @@ The following code shows a generic **validationCallback** implementation for a s
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -88,22 +89,18 @@ The following code shows a generic **validationCallback** implementation for a s
         }
 
         validateAsync(params) {
-            return new Promise((resolve, reject) => {
-                this.httpClient.post("https://mydomain.com/MyDataService", { data: params.value })
-                    .toPromise()
-                    .then((res: any) => {
-                        // res.message contains validation error message
-                        res.isValid ? resolve() : reject(res.message);
-
-                        // ===== or if "res" is { isValid: Boolean, message: String } =====
-                        resolve(res);
-                    })
-                    .catch(error => {
-                        console.error("Server-side validation error", error);
-
-                        reject("Cannot contact validation server");
-                    });
-            })
+            return new Promise(async (resolve, reject) => {
+                try {
+                    const res: any = await lastValueFrom(this.httpClient.post("https://mydomain.com/MyDataService", { data: params.value }));
+                    // res.message contains validation error message
+                    res.isValid ? resolve() : reject(res.message);
+                    // ===== or if "res" is { isValid: Boolean, message: String } =====
+                    // resolve(res);
+                } catch (error) {
+                    console.error("Server-side validation error", error);
+                    reject("Cannot contact validation server");
+                }
+            });
         }
     }
 

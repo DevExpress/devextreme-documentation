@@ -157,7 +157,7 @@ In the following code, the `Full_Name` grid column in the editing state produces
 
 - The **formItem** object does not allow you to specify a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template'). Use the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') instead.
 
-- Do not use **formItem** to override editor's **onValueChanged**. Implement [onEditorPreparing]({basewidgetpath}/Configuration/#onEditorPreparing) instead.
+- Do not use **formItem** to override editor's **onValueChanged**. Implement [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing') instead.
 
 [/note]
 

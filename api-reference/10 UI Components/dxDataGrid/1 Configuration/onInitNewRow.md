@@ -106,8 +106,8 @@ In the following code, the **onInitNewRow** function is used to provide default 
                 e.data.position = data.Position;
             });
         }
-        async getDefaultData() {
-            await lastValueFrom(this.httpClient.get("https://www.mywebsite.com/api/getDefaultData"))
+        getDefaultData() {
+            return lastValueFrom(this.httpClient.get("https://www.mywebsite.com/api/getDefaultData"))
                 .then(data => {
                     // "data" is { ID: 100, Position: "Programmer" }
                     return data;

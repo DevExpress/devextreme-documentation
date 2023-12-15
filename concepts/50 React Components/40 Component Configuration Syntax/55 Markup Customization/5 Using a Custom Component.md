@@ -2,7 +2,7 @@ You can define custom content in a separate component if you need to utilize the
 
 [note] For Class components, we recommend that you use <a href="https://react.dev/reference/react/PureComponent" target="_blank">`React.PureComponent`</a> instead of `React.Component` (the latter can be re-rendered unnecessarily). Alternatively, you can implement a <a href="https://react.dev/reference/react/Component#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a> method.
 
-In the following code snippet, a standalone ListItem component is created to render [List](/Documentation/Guide/UI_Components/List/Getting_Started_with_List/) items. This component specifies the [itemComponent](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemComponent) property value.  If necessary, you can reuse this ListItem component in another List. 
+In the following code snippet, a standalone ListItem component is created to render [List](/concepts/05%20UI%20Components/List/00%20Getting%20Started%20with%20List '/Documentation/Guide/UI_Components/List/Getting_Started_with_List/') items. This component specifies the [itemComponent](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemComponent.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemComponent') property value.  If necessary, you can reuse this ListItem component in another List. 
     
     <!-- tab: Function component -->
     import React, { useCallback, useState } from "react";

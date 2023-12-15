@@ -44,7 +44,7 @@
     import { Dx{WidgetName}Module } from "devextreme-angular";
     import DataSource from "devextreme/data/data_source";
     import CustomStore from "devextreme/data/custom_store";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     // ...
     export class AppComponent {
         {widgetName}DataSource: any = {};
@@ -66,8 +66,7 @@
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        return httpClient.get("http://mydomain.com/MyDataService", { params: params })
-                            .toPromise()
+                        return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
                             .then(result => {
                                 // Here, you can perform operations unsupported by the server
                                 // or any other operations on the retrieved data

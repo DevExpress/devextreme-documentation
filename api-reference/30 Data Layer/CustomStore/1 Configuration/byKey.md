@@ -39,7 +39,7 @@ A Promise that is resolved after the data item is loaded.
     import { ..., Inject } from "@angular/core";
     import CustomStore from "devextreme/data/custom_store";
     import { HttpClient, HttpClientModule } from "@angular/common/http";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     // ...
     export class AppComponent {
         store: CustomStore;
@@ -47,8 +47,7 @@ A Promise that is resolved after the data item is loaded.
             this.store = new CustomStore({
                 // ...
                 byKey: (key) => {
-                    return httpClient.get("http://mydomain.com/MyDataService?id=" + key)
-                        .toPromise();
+                    return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService?id=" + key));
                 }
             });
         }

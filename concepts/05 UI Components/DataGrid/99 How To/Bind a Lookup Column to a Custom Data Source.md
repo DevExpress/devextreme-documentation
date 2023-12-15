@@ -41,7 +41,7 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
     import { HttpClient, HttpClientModule } from "@angular/common/http";
     import { DxDataGridModule } from "devextreme-angular";
     import CustomStore from "devextreme/data/custom_store";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
 
     @Component({ ... })
     export class AppComponent {
@@ -54,8 +54,7 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
                     load: () => {
                         // Returns an array of objects that have the following structure:
                         // { id: 1, name: "John Doe" }
-                        return httpClient.get("https://mydomain.com/MyDataService/authors/")
-                            .toPromise();
+                        return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/"));
                     }
                 }),
                 sort: "name"
@@ -241,7 +240,7 @@ The following alternative **CustomStore** configuration delegates data processin
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
     import { DxDataGridModule } from "devextreme-angular";
     import CustomStore from "devextreme/data/custom_store";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
 
     @Component({ ... })
     export class AppComponent {
@@ -268,15 +267,13 @@ The following alternative **CustomStore** configuration delegates data processin
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        return httpClient.get("https://mydomain.com/MyDataService/authors/", { params: params })
-                            .toPromise()
+                        return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/", { params: params }))
                             .then(result => {
                                 return result;
                             });
                     },
                     byKey: function(key) {
-                        return httpClient.get("https://mydomain.com/MyDataService/authors/" + encodeURIComponent(key))
-                            .toPromise();
+                        return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/" + encodeURIComponent(key)));
                     }
                 }),
                 sort: "name"

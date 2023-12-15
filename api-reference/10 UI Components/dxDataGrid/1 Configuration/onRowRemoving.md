@@ -66,21 +66,22 @@ This function allows you to intercept row removal and perform additional actions
     <!--TypeScript-->
     import { Dx{WidgetName}Module } from "devextreme-angular";
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
-    // ...
+    import { lastValueFrom } from 'rxjs';
+
     export class AppComponent {
-        constructor(private httpClient: HttpClient) { /*...*/}
+        constructor(private httpClient: HttpClient) { /*...*/ }
         validateRemove(e) {
             const isCanceled = new Promise((resolve, reject) => {
-                this.httpClient
-                    .get(`https://url/to/your/validation/service/${e.key}`)
-                    .toPromise()
-                    .then((validationResult) => {
-                        if (validationResult.errorText) {
-                            reject(validationResult.errorText);
-                        } else {
-                            resolve(false);
-                        }
-                    });
+                const request$ = this.httpClient
+                    .get(`https://url/to/your/validation/service/${e.key}`);
+
+                lastValueFrom(request$).then((validationResult) => {
+                    if (validationResult.errorText) {
+                        reject(validationResult.errorText);
+                    } else {
+                        resolve(false);
+                    }
+                });
             });
             e.cancel = isCanceled;
         }

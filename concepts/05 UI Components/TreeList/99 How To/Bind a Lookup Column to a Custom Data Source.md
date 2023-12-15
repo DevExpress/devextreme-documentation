@@ -51,10 +51,10 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
                 store: new CustomStore({
                     key: "id",
                     loadMode: "raw",
-                    load: async () => {
+                    load: () => {
                         // Returns an array of objects that have the following structure:
                         // { id: 1, name: "John Doe" }
-                        await lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/"));
+                        return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/"));
                     }
                 }),
                 sort: "name"
@@ -272,8 +272,8 @@ The following alternative **CustomStore** configuration delegates data processin
                                 return result;
                             });
                     },
-                    byKey: async function(key) {
-                        await lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/" + encodeURIComponent(key)));
+                    byKey: function(key) {
+                        return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService/authors/" + encodeURIComponent(key)));
                     }
                 }),
                 sort: "name"

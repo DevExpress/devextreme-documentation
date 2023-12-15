@@ -168,10 +168,10 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
     // ...
     export class AppComponent {
         constructor(@Inject(HttpClient) httpClient: HttpClient) { }
-        createChildren = async (parentNode) => {
+        createChildren = (parentNode) => {
             let params: HttpParams = new HttpParams()
                 .set("parentId", parentNode ? JSON.stringify(parentNode.key) : "0");
-            await lastValueFrom(httpClient.get("https://mydomain.com/MyDataService", {
+            return lastValueFrom(httpClient.get("https://mydomain.com/MyDataService", {
                     params: params
                 }));
         }

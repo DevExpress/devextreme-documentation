@@ -75,16 +75,16 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
                 load: (loadOptions) => {
                     // ...
                 },
-                insert: async (values) = > {
-                    await lastValueFrom(this.http.post('https://mydomain.com/MyDataService', JSON.stringify(values)))
+                insert: (values) = > {
+                    return lastValueFrom(this.http.post('https://mydomain.com/MyDataService', JSON.stringify(values)))
                         .catch(() => { throw 'Insertion failed' });
                 },
-                remove: async (key) => {
-                    await lastValueFrom(this.http.delete('https://mydomain.com/MyDataService/' + encodeURIComponent(key)))
+                remove: (key) => {
+                    return lastValueFrom(this.http.delete('https://mydomain.com/MyDataService/' + encodeURIComponent(key)))
                         .catch(() => { throw 'Deletion failed' });
                 },
-                update: async (key, values) => {
-                    await lastValueFrom(this.http.put('https://mydomain.com/MyDataService/' + encodeURIComponent(key), JSON.stringify(values)))
+                update: (key, values) => {
+                    return lastValueFrom(this.http.put('https://mydomain.com/MyDataService/' + encodeURIComponent(key), JSON.stringify(values)))
                         .catch(() => { throw 'Update failed' });
                 }
             });

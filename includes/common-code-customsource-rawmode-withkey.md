@@ -33,8 +33,8 @@
                 store: new CustomStore({
                     key: "ID",
                     loadMode: "raw",   
-                    load: async () => {
-                        await lastValueFrom(httpClient.get('http://mydomain.com/MyDataService'));
+                    load: () => {
+                        return lastValueFrom(httpClient.get('http://mydomain.com/MyDataService'));
                     }
                 })
             });

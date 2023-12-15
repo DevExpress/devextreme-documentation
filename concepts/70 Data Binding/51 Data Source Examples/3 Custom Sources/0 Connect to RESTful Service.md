@@ -70,24 +70,24 @@ Note that all user functions return the result of the jQuery AJAX call, which is
         customDataSource: CustomStore;
         constructor(private http: HttpClient) {
             this.customDataSource = new CustomStore({
-                load: async (loadOptions) => {
-                    await lastValueFrom(httpClient.get(SERVICE_URL));
+                load: (loadOptions) => {
+                    return lastValueFrom(httpClient.get(SERVICE_URL));
                 },
 
-                byKey: async (key) => {
-                    await lastValueFrom(httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key)));
+                byKey: (key) => {
+                    return lastValueFrom(httpClient.get(SERVICE_URL + "/" + encodeURIComponent(key)));
                 },
 
-                insert: async (values) => {
-                    await lastValueFrom(httpClient.post(SERVICE_URL, values));
+                insert: (values) => {
+                    return lastValueFrom(httpClient.post(SERVICE_URL, values));
                 },
 
-                update: async (key, values) => {
-                    await lastValueFrom(httpClient.put(SERVICE_URL + encodeURIComponent(key), values));
+                update: (key, values) => {
+                    return lastValueFrom(httpClient.put(SERVICE_URL + encodeURIComponent(key), values));
                 },
 
-                remove: async (key) => {
-                    await lastValueFrom(httpClient.delete(SERVICE_URL + encodeURIComponent(key)));
+                remove: (key) => {
+                    return lastValueFrom(httpClient.delete(SERVICE_URL + encodeURIComponent(key)));
                 },
             });
         }

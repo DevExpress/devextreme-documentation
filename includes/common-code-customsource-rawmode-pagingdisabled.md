@@ -32,8 +32,8 @@
             this.{widgetName}DataSource = new DataSource({
                 store: new CustomStore({
                     loadMode: "raw",   
-                    load: async () => {
-                        await lastValueFrom(httpClient.get('http://mydomain.com/MyDataService'));
+                    load: () => {
+                        return lastValueFrom(httpClient.get('http://mydomain.com/MyDataService'));
                     }
                 }),
                 paginate: false

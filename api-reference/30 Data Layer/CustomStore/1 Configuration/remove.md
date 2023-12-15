@@ -41,8 +41,8 @@ A Promise that is resolved after the data item is removed.
         constructor(@Inject(HttpClient) httpClient: HttpClient) {
             this.store = new CustomStore({
                 // ...
-                remove: async (key) => {
-                    await lastValueFrom(httpClient.delete("http://mydomain.com/MyDataService/myEntity/" + encodeURIComponent(key)));
+                remove: (key) => {
+                    return lastValueFrom(httpClient.delete("http://mydomain.com/MyDataService/myEntity/" + encodeURIComponent(key)));
                 }
             });
         }

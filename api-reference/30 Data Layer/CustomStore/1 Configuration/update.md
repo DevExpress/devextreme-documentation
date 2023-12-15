@@ -45,8 +45,8 @@ A Promise that is resolved after the data item is updated.
         constructor(@Inject(HttpClient) httpClient: HttpClient) {
             this.store = new CustomStore({
                 // ...
-                update: async (key, values) => {
-                    await lastValueFrom(httpClient.put("http://mydomain.com/MyDataService/myEntity/" + encodeURIComponent(key), values));
+                update: (key, values) => {
+                    return lastValueFrom(httpClient.put("http://mydomain.com/MyDataService/myEntity/" + encodeURIComponent(key), values));
                 }
             });
         }

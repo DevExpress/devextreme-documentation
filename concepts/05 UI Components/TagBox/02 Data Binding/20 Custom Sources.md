@@ -141,8 +141,8 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
                                 };
                             });
                     },
-                    insert: async function(values) {
-                        await lastValueFrom(httpClient.post('http://mydomain.com/MyDataService', values));
+                    insert: function(values) {
+                        return lastValueFrom(httpClient.post('http://mydomain.com/MyDataService', values));
                     }
                 })
             });

@@ -42,8 +42,8 @@ A Promise that is resolved after the data item is inserted.
         constructor(@Inject(HttpClient) httpClient: HttpClient) {
             this.store = new CustomStore({
                 // ...
-                insert: async (values) => {
-                    await lastValueFrom(httpClient.post("http://mydomain.com/MyDataService/myEntity", values));
+                insert: (values) => {
+                    return lastValueFrom(httpClient.post("http://mydomain.com/MyDataService/myEntity", values));
                 }
             });
         }

@@ -130,8 +130,8 @@ If you specify the Lookup's [value](/api-reference/10%20UI%20Components/dxDropDo
                                 return result.data;
                             });
                     },
-                    byKey: async function(key) {
-                        await lastValueFrom(httpClient.get('https://mydomain.com/MyDataService?id=' + key));
+                    byKey: function(key) {
+                        return lastValueFrom(httpClient.get('https://mydomain.com/MyDataService?id=' + key));
                     }
                 })
             });

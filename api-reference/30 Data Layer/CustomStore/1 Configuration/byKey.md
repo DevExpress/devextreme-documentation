@@ -46,8 +46,8 @@ A Promise that is resolved after the data item is loaded.
         constructor(@Inject(HttpClient) httpClient: HttpClient) {
             this.store = new CustomStore({
                 // ...
-                byKey: async (key) => {
-                    await lastValueFrom(httpClient.get("http://mydomain.com/MyDataService?id=" + key));
+                byKey: (key) => {
+                    return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService?id=" + key));
                 }
             });
         }

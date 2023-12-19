@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 Specifies an SVG element that serves as a custom legend item marker.
 
-##### param(legendItem): BaseChartLegendItem
+##### param(legendItem): LegendItem
 Information about a legend item.
 
 ##### param(element): SVGGElement

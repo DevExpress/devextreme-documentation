@@ -5576,16 +5576,6 @@
       "react": "Item",
       "vue": "DxItem"
     },
-    "baseChartLegendItem": {
-      "angular": "dxo-base-chart-legend-item",
-      "react": "BaseChartLegendItem",
-      "vue": "DxBaseChartLegendItem"
-    },
-    "baseChartLegendItem.series": {
-      "angular": "dxo-series",
-      "react": "Series",
-      "vue": "DxSeries"
-    },
     "baseChartOptions.adaptiveLayout": {
       "angular": "dxo-adaptive-layout",
       "react": "AdaptiveLayout",
@@ -20480,6 +20470,16 @@
     },
     "itemInfo.itemIndex": {
       "vue": "item-index"
+    },
+    "legendItem": {
+      "angular": "dxo-legend-item",
+      "react": "LegendItem",
+      "vue": "DxLegendItem"
+    },
+    "legendItem.series": {
+      "angular": "dxo-series",
+      "react": "Series",
+      "vue": "DxSeries"
     },
     "listItemInfo.itemData": {
       "angular": "dxo-item-data",

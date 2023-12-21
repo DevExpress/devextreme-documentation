@@ -2,6 +2,10 @@ Use the [columns](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/
 
 [note] The Gantt UI component does not support data sorting.
 
+---
+
+##### jQuery
+
     <!-- tab: index.js -->
     $(function() {
         $("#gantt").dxGantt({
@@ -20,17 +24,72 @@ Use the [columns](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/
             ...
         });
     });
-    
-    <!-- tab: data.js -->
-    var tasks = [{
-        'id': 1,
-        'parentId': 0,
-        'title': 'Software Development',
-        'start': new Date('2019-02-21T05:00:00.000Z'),
-        'end': new Date('2019-07-04T12:00:00.000Z'),
-        'progress': 31
-    },      
-        // ...
-    ];
 
-[tags] jquery
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-gantt ... >
+        <dxi-column dataField="title" caption="Subject" [width]="300"></dxi-column>
+        <dxi-column dataField="start" caption="Start Date" dataType="date"></dxi-column>
+        <dxi-column dataField="end" caption="End Date" dataType="date"></dxi-column>
+    </dx-gantt>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <DxGantt ... >
+        <DxColumn
+            :width="300"
+            data-field="title"
+            caption="Subject"
+        />
+        <DxColumn
+            data-field="start"
+            caption="Start Date"
+        />
+        <DxColumn
+            data-field="end"
+            caption="End Date"
+        />
+    </DxGantt>
+    </template>
+    <script>
+    // ...
+    import {
+        DxGantt,
+        // ...
+        DxColumn,
+    } from 'devextreme-vue/gantt';
+
+    export default {
+        components: {
+            DxGantt,
+            // ...
+            DxColumn,
+        },
+        // ...
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import Gantt, {
+        // ... 
+        Column,
+    } from 'devextreme-react/gantt';
+
+    function App() {
+        return (
+            <Gantt ... >
+                <Column dataField="title" caption="Subject" width={300} />
+                <Column dataField="start" caption="Start Date" />
+                <Column dataField="end" caption="End Date" />
+            </Gantt>
+        );
+    }
+
+    export default App;
+
+---

@@ -1,6 +1,6 @@
 ---
 id: Enums.EventName
-acceptValues: 'changed' | 'loadError' | 'loadingChanged' | 'loaded' | 'loading' | 'inserted' | 'inserting' | 'updated' | 'updating' | 'push' | 'removed' | 'removing' | 'modified' | 'modifying'
+acceptValues: 'loaded' | 'loading' | 'inserted' | 'inserting' | 'updated' | 'updating' | 'push' | 'removed' | 'removing' | 'modified' | 'modifying' | 'changed' | 'loadError' | 'loadingChanged'
 type: Union
 ---
 ---

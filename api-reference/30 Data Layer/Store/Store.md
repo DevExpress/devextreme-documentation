@@ -1,6 +1,6 @@
 ---
 id: Store
-module: data/abstract_store
+module: data/store
 export: Store
 hidden: 
 ---

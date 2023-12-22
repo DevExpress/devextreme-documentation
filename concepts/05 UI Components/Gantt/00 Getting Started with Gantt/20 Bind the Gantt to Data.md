@@ -6,7 +6,7 @@ The Gantt UI component requires separate data sources for [tasks](/api-reference
 
 - 'id' and 'parentId' fields should not have the same value.
 
-- If your first (root) task 'parentId' value is not 0, specify a [rootValue](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#rootValue). For example, if the root task 'parentId' is -1, set the **rootValue** property to -1.  
+- If your first (root) task 'parentId' value is not 0, specify a [rootValue](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#rootValue'). For example, if the root task 'parentId' is -1, set the **rootValue** property to -1.  
 
 [/note]
 

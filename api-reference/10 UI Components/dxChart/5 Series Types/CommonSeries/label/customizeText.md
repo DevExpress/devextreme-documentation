@@ -14,6 +14,9 @@ Information on the series point.
 The text for the label to display.
 
 ---
+
+[note] Return `null` to hide the series label.
+
 This property accepts a function whose parameter exposes the following fields.
 
 <table class="dx-table full-width">

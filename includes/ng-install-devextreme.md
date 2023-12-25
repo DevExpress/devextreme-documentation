@@ -1,5 +1,5 @@
 Install the `devextreme` and `devextreme-angular` npm packages:
 
-    npm install devextreme@23.2 devextreme-angular@23.2 --save --save-exact
+    npm install devextreme@24.1 devextreme-angular@24.1 --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.

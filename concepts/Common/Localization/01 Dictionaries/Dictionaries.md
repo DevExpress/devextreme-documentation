@@ -1,6 +1,6 @@
 Dictionaries contain localized strings for different languages. The strings are key/value pairs and are shipped as JavaScript or JSON files (depending on the package you use).
 
-All dictionaries are contributed and curated by the community. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/23_2/js/localization/messages" target="_blank">on GitHub</a>.
+All dictionaries are contributed and curated by the community. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/24_1/js/localization/messages" target="_blank">on GitHub</a>.
 
 ---
 ##### jQuery

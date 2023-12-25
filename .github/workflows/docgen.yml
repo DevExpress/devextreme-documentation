@@ -37,9 +37,9 @@ jobs:
 #Generation
         - name: Discover declarations
           working-directory: devextreme
-#TODO: Workaround. This should be removed following the changes in devextreme monorepo
+          shell: bash
           run: |
-            if [[ ${{ github.ref_name }} == "23_2" ]]; then
+            if [[ $(npm pkg get name) =~ "monorepo" ]]; then
               npm run tools:discover-declarations
             else    
               npm run discover-declarations -- --artifacts ./artifacts/internal-tools            

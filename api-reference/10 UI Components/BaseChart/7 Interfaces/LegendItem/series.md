@@ -1,5 +1,5 @@
 ---
-id: BaseChartLegendItem.series
+id: LegendItem.series
 type: baseSeriesObject
 ---
 ---

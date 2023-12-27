@@ -5,7 +5,7 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the minute offset within the view, indicating the starting point of a day.
+Specifies the minute offset within the view indicating the starting point of a day.
 
 ---
 This property moves the interval between [startDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#startDayHour') and [endDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#endDayHour'). The offset is a multiple of 5 and can range from -1440 minutes (-24 hours) to 1440 minutes (24 hours). For instance, if the following is true:

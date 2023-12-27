@@ -6,14 +6,14 @@ export: EmailRule
 ---
 ---
 ##### shortDescription
-A validation rule that demands that the validated field match the Email pattern.
+A validation rule that requires that the validated field match the Email pattern.
 
 ---
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
-The Email pattern in DevExtreme components is the following:
+DevExtreme components use the following Email pattern:
 
     pattern: /^[\d\w._-]+@[\d\w._-]+\.[\w]+$/i
 

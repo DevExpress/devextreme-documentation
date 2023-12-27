@@ -6,7 +6,7 @@ export: PatternRule
 ---
 ---
 ##### shortDescription
-A validation rule that demands that the validated field match a specified pattern.
+A validation rule that requires that the validated field match a specified pattern.
 
 ---
 To specify the regular expression that the validated field must match, set the rule's [pattern](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/PatternRule/pattern.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/PatternRule/#pattern') configuration property.
@@ -15,7 +15,7 @@ To specify the regular expression that the validated field must match, set the r
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
-[note] If you apply a pattern rule to a DateBox component, specify [dateSerializationFormat](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat) so the format of validated value is a string.
+[note] If you apply a pattern rule to a DateBox component, specify [dateSerializationFormat](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat) so that the format of the validated value is a string.
 
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')

@@ -15,7 +15,7 @@ To specify the regular expression that the validated field must match, set the r
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"
 }
 
-[note] If you apply a pattern rule to a DateBox component, specify [dateSerializationFormat](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat) so that the format of the validated value is a string.
+[note] If you apply a pattern rule to a DateBox component, specify [dateSerializationFormat](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat') so that the format of the validated value is a string.
 
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')

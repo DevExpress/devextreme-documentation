@@ -4,7 +4,7 @@
 
 GraphQL is a trending API query language and data processing layer. Facebook engineers created GraphQL because REST APIs did not meet their performance requirements.
 
-Modern websites need to display large amounts of data from more than one source. To get this data from a REST API, applications have to issue multiple network requests. Each request takes time to resolve, which slows the application down. If you don't optimize your SQL queries, API responses may include unnecessary data. The application wastes its users' time to load data they don't get to see.
+Modern websites need to display large amounts of data from more than one source. To get this data from a REST API, applications have to issue multiple network requests. Each request takes time to resolve, which slows the application down. If you don't optimize your SQL queries, API responses may include unnecessary data. The application wastes time loading data users don't get to see.
 
 GraphQL is an intermediary layer that takes a single API request, and responds to it with data from multiple sources. It allows you to get very specific, and does not include unnecessary data in its responses. You can replace your REST API with GraphQL, or use GraphQL alongside your REST API.
 
@@ -16,13 +16,13 @@ To try GraphQL for yourself, follow this tutorial.
 
 This project consists of a client and a server.
 
-The client is a Vite/React Node.Js application that displays a DevExtreme Data Grid. The server is an Express.JS app that uses a GraphQL API to serve JSON data.
+The client is a Vite/React Node.js application that displays a DevExtreme Data Grid. The server is an Express.JS app that uses a GraphQL API to serve JSON data.
 
 The source code for this project is available [on GitHub](https://github.com/ivanblinov2k17/graphql). Refer to the repository if you get lost in the tutorial.
 
 ## Step 1: First steps and global dependencies
 
-1. Initialize a Node.JS project inside a new folder:
+1. Initialize a Node.js project inside a new folder:
 
     <!--Shell-->
         mkdir graphql-tutorial; cd graphql-tutorial; npm init
@@ -102,13 +102,13 @@ The project's client side is a simple Vite application that displays a DevExtrem
             err ? console.log(err) : console.log('server started!') 
         }) 
 
-    Note: this example uses the [graphql-http](https://github.com/graphql/graphql-http) package to implement a GraphQL API. There are other ways to use GraphQL with Express.js. See [the official GraphQL tutorial](https://graphql.org/graphql-js/running-an-express-graphql-server/) for more information.
+    Note: This example uses the [graphql-http](https://github.com/graphql/graphql-http) package to implement a GraphQL API. There are other ways to use GraphQL with Express.js. See [the official GraphQL tutorial](https://graphql.org/graphql-js/running-an-express-graphql-server/) for more information.
 
 3. GraphQL needs a [schema file](https://graphql.org/learn/schema/) to understand the data that it serves.
 
     Our data lives in plain JSON files within the `data` folder. It describes the following entities: orders, customers, and shipping companies. We need to describe these data structures within the `schema/orders-schema.js` file.
 
-    Additionally, the schema file describes possible data interactions ("[mutations](https://graphql.org/learn/queries/)"). We want to allow for three types of interactions: Insertion, Deletions and Updating.
+    Additionally, the schema file describes possible data interactions ("[mutations](https://graphql.org/learn/queries/)"). We want to allow for three types of interactions: Insertions, Deletions, and Updating.
 
     Create the `schema/orders-schema.js` file with the following content:
 
@@ -236,7 +236,7 @@ The project's client side is a simple Vite application that displays a DevExtrem
             mutation: Mutation, 
         }); 
 
-## Step 4: Connect the front-end to the back-end
+## Step 4: Connect the frontend to the backend
 
 The [@apollo/client](https://www.apollographql.com/docs/react/) library enables us to use GraphQL on the client.
 
@@ -299,7 +299,7 @@ If you struggle to understand this section, read the [Apollo documentation](http
           key, 
         }), 
 
-6. Enclose these queries in a `switch` conditional to improve readability:
+6. Enclose these queries in a conditional `switch` statement to improve readability:
 
     <!--JavaScript-->
         const sendRequest = (query: string, data: KeyValues = {}) => { 
@@ -321,7 +321,7 @@ If you struggle to understand this section, read the [Apollo documentation](http
             } 
           }
 
-    Note: CustomStore data needs to stay in sync with GraphQL. Make sure that mutation functions return their results
+    Note: CustomStore data needs to stay in sync with GraphQL. Make sure that mutation functions return their results.
 
 7. The data grid's look-up columns require separate CustomStore data sources:
 

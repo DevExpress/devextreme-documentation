@@ -18,12 +18,12 @@ Install the `gatsby-cli` npm package. This command line tool generates, builds, 
 <!--Shell-->
   npm install -g gatsby-cli
 
-Launch the gatsby wizard to generate a new website:
+Launch the Gatsby wizard to generate a new website:
 
 <!--Shell-->
   gatsby new
 
-Launch a development server to see a live preview of the website:
+Launch the development server to see a live preview of the website:
 
 <!--Shell-->
   cd my-website
@@ -90,7 +90,7 @@ If you deploy your website on Netlify, Gatsby renders your content on the server
 
 ## Step 4. Add DevExtreme to the application
 
-We're ready to add a DevExtreme Data Grid to our application. First, add DevExtreme to your project dependenies (`.package.json`):
+We're ready to add a DevExtreme Data Grid to our application. First, add DevExtreme to your project dependencies (`.package.json`):
 
 <!--JSON-->
   "dependencies": {
@@ -194,7 +194,7 @@ Restart the Gatsby server to compile new assets. The grid should look like this:
 
 ![A DevExtreme grid with a theme](/images/Gatsby/grid-with-a-theme.png)
 
-### Apply the theme to a particular page
+### Apply the theme to a specific page
 
 If you want to apply a DevExtreme theme to a particular page, do not import this theme globally. Instead, add a `link` to the `Head` of the target page:
 

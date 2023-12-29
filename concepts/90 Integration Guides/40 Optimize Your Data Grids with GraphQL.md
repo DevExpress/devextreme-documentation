@@ -56,7 +56,7 @@ The project's client side is a simple Vite application that displays a DevExtrem
     ![Vite wizard](/images/GraphQL/vite-create.png)
 
 
-4. Enter the folder, and install the necessary dependencies for the Vite app:
+4. Open the folder, and install the necessary dependencies for the Vite app:
 
     <!--Shell-->
         cd vite-react; npm i @apollo/client devextreme devextreme-react graphql loadsh whatwg-fetch

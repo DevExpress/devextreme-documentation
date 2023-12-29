@@ -1,17 +1,18 @@
-# Bootstrap Your Website with DevExtreme and Gatsby
+# Create a DevExtreme application with Gatsby
 
 Gatsby is a prominent member of the latest wave of static website generators. It is an opinionated library with a deep pool of capabilities that includes server-side rendering (for pages that display dynamic content) and [GraphQL support](/Documentation/Guide/Integration_Guies/Optimize_Your_Data_Grids_with_GraphQL).
 
 DevExtreme's powerful client-side components complement Gatsby well, which makes this combo appealing for web developers. This article explains how to use the two products together.
 
-* [Step 1. Create an empty Gatsby website]
-* [Step 2. Add static content]
-* [Step 3. (Optional) Use Server-Side Rendering with Netlify]
-* [Step 4. Add DevExtreme to your application]
-* [Step 5. Apply a DevExtreme theme]
+* [1. Create an empty Gatsby website](#1-create-an-empty-gatsby-website)
+* [2. Add static content](#2-add-static-content)
+* [3. (Optional) Use Server-Side Rendering with Netlify](#3-optional-use-server-side-rendering-with-netlify)
+* [4. Add DevExtreme to your application](#4-add-devextreme-to-the-application)
+* [5. Apply a DevExtreme theme](#5-apply-a-devextreme-theme)
+* [6. Next Steps](#6-next-steps)
 
 
-## Step 1. Create an empty Gatsby website
+## 1. Create an empty Gatsby website
 
 Install the `gatsby-cli` npm package. This command line tool generates, builds, and deploys Gatsby websites.
 
@@ -35,7 +36,7 @@ Launch the development server to see a live preview of the website:
 
 If you get stuck, consult [Gatsby documentation](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-1/#create-a-gatsby-site) for an in-depth walkthrough of the process.
 
-## Step 2. Add Static Content
+## 2. Add Static Content
 
 Gatsby uses React to render content. Edit the `src/pages/index.tsx` file to change the home page:
 
@@ -67,7 +68,7 @@ Commit your changes. Your page should look like this:
 
 ![Static content](/images/Gatsby/lipsum-page.png)
 
-## Step 3. (Optional) Use Server-Side Rendering with Netlify
+## 3. (Optional) Use Server-Side Rendering with Netlify
 
 Gatsby has a tight integration with Netlify --- a cloud platform for web applications. Platforms like Netlify allow you to render Gatsby pages on the server.
 
@@ -88,7 +89,7 @@ If you deploy your website on Netlify, Gatsby renders your content on the server
 
 ![Gatsby renders content on the server](/images/Gatsby/ssr-example.png)
 
-## Step 4. Add DevExtreme to the application
+## 4. Add DevExtreme to the application
 
 We're ready to add a DevExtreme Data Grid to our application. First, add DevExtreme to your project dependencies (`.package.json`):
 
@@ -170,7 +171,7 @@ Refresh the page to view the result:
 
 Note: DevExtreme components are *always* rendered on the cilent. If you disable JavaScript and refresh your Netlify deployment, you won't see the DevExtreme grid.
 
-## Step 5. Apply a DevExtreme theme
+## 5. Apply a DevExtreme theme
 
 The application displays a DevExtreme grid, but does not style it appropriately. If you want the grid to look good, style it with a DevExtreme theme.
 
@@ -196,7 +197,7 @@ Restart the Gatsby server to compile new assets. The grid should look like this:
 
 ### Apply the theme to a specific page
 
-If you want to apply a DevExtreme theme to a particular page, do not import this theme globally. Instead, add a `link` to the `Head` of the target page:
+If you want to apply a DevExtreme theme to a specific page, do not import this theme globally. Instead, add a `link` to the `Head` of the target page:
 
 <!--JavaScript-->
   export const Head: HeadFC = () => { return (
@@ -209,3 +210,9 @@ If you want to apply a DevExtreme theme to a particular page, do not import this
 This link downloads the `light` theme from the DevExpress CDN and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
 
 Modify the name of the stylesheet to apply a different theme. Modify the name of the subfolder (`23.1.3`) to apply a theme that is compatible with a different version of DevExtreme.
+
+## 6. Next Steps
+
+DevExtreme components are powerful, easy to use, and fully compatible with Gatsby. View our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/React/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
+
+Read the [Gatsby documentation](https://www.gatsbyjs.com/docs) for more information the Gatsby framework.

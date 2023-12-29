@@ -1,5 +1,7 @@
 #include demos-intro
 
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/)
+
 **Data Binding**
 
 - [Simple Array](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/)

@@ -19,9 +19,6 @@ The UI component's instance.
 ##### field(e.itemName): String
 The current name of the renamed file or directory.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.sourceItem): FileSystemItem
 The renamed file or directory.
 

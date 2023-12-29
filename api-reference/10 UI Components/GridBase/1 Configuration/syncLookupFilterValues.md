@@ -28,4 +28,12 @@ The following table shows how the component behaves when you assign different va
     </tr>
 </table>
 
-[note] If `filtering` is enabled in [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/') and this property is set to `true` (default value), the component uses the `group` parameter to fetch values. As a result, lookup columns can lose pagination (the DataSource.[paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') property has no effect). To solve the issue, disable this property.
+[note]
+
+- If `filtering` is enabled in [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/') and this property is set to `true` (default), the component uses the `group` parameter to fetch values. As a result, lookup columns can lose pagination (the DataSource.[paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') property has no effect). To resolve this issue, disable this property.
+
+- If the [filter panel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '{basewidgetpath}/Configuration/filterPanel/') is visible and at least one column includes **headerFilter**.[dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') or **lookup**.[dataSource](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource'), disable this property. Otherwise, the filter panel may not display data correctly.
+
+- If the lookup column's data source lacks data that corresponds to the column data, the header filter may load incorrectly. To prevent this issue, you can either disable the **syncLookupFilterValues** property or the [paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') option for the lookup column data source.
+
+[/note]

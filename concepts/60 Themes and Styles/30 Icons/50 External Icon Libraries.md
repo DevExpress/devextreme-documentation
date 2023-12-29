@@ -9,7 +9,7 @@ Icons in UI components are inserted into the DOM as `<i>` elements. When you set
 
 This allows DevExtreme UI components to support icons from external icon libraries, provided that they too should be specified in the `class` attribute.
 
-<a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, <a href="https://www.glyphicons.com/" target="_blank">Glyphicons</a>, and <a href="https://ionicons.com/" target="_blank">Ionicons</a> are examples of such libraries. Follow the installation tutorial for the library you want to use and set the **icon** property as follows:
+<a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, <a href="https://www.glyphicons.com/" target="_blank">Glyphicons</a>, <a href="https://ionicons.com/" target="_blank">Ionicons</a>, and <a href="https://uifabricicons.azurewebsites.net/" target="_blank">Fabric/Fluent UI</a> are examples of such libraries. Follow the installation tutorial for the library you want to use and set the **icon** property as follows:
 
 ---
 ##### jQuery  
@@ -22,6 +22,7 @@ This allows DevExtreme UI components to support icons from external icon librari
             icon: "fa fa-home" // Font Awesome 4
             icon: "glyphicon glyphicon-home" // Glyphicons
             icon: "icon ion-md-home" // Ionicons
+            icon: "ms-Icon ms-Icon--Home" // Fabric/Fluent UI
         });
     });
     
@@ -32,7 +33,8 @@ This allows DevExtreme UI components to support icons from external icon librari
         icon="fas fa-home" <!-- Font Awesome 5 -->
         icon="fa fa-home" <!-- Font Awesome 4 -->
         icon="glyphicon glyphicon-home" <!-- Glyphicons -->
-        icon="icon ion-md-home"> <!-- Ionicons -->
+        icon="icon ion-md-home" <!-- Ionicons -->
+        icon="ms-Icon ms-Icon--Home"> <!-- Fabric/Fluent UI -->
     </dx-button>
 
 ##### Vue
@@ -42,7 +44,8 @@ This allows DevExtreme UI components to support icons from external icon librari
             icon="fas fa-home" <!-- Font Awesome 5 -->
             icon="fa fa-home" <!-- Font Awesome 4 -->
             icon="glyphicon glyphicon-home" <!-- Glyphicons -->
-            icon="icon ion-md-home" /> <!-- Ionicons -->
+            icon="icon ion-md-home" <!-- Ionicons -->
+            icon="ms-Icon ms-Icon--Home" /> <!-- Fabric/Fluent UI -->
     </template>
     <script>
     import DxButton from 'devextreme-vue/button';
@@ -67,6 +70,7 @@ This allows DevExtreme UI components to support icons from external icon librari
                     icon="fa fa-home" // Font Awesome 4
                     icon="glyphicon glyphicon-home" // Glyphicons
                     icon="icon ion-md-home" // Ionicons
+                    icon="ms-Icon ms-Icon--Home" // Fabric/Fluent UI
                 />
             );
         }
@@ -82,6 +86,7 @@ This allows DevExtreme UI components to support icons from external icon librari
         .Icon("fa fa-home") // Font Awesome 4
         .Icon("glyphicon glyphicon-home") // Glyphicons
         .Icon("icon ion-md-home") // Ionicons
+        .Icon("ms-Icon ms-Icon--Home") // Fabric/Fluent UI
     )
 
 ---

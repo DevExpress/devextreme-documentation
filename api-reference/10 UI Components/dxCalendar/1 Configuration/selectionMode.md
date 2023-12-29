@@ -18,3 +18,7 @@ A user can select multiple dates at a time.
 
 - *'range'*      
 A user can select a range of dates. The first and the last date in the range are stored in the [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value') property.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/MultipleSelection/"
+}

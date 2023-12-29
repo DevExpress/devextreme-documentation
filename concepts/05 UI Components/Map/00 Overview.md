@@ -100,6 +100,20 @@ The code below adds the Map UI component to your page. The Map is [centered](/ap
     href: "https://github.com/DevExpress-Examples/devextreme-map-use-google-maps-api-to-create-autocomplete-functionality-for-addresses"
 }
 
+[note]
+
+Use our DevExpress BI Dashboard to embed interactive business intelligence into your next web app.
+
+The Web Dashboard is a data analysis UI component that you can embed into your ASP.NET Core or Angular, React, and Vue applications with .NET backend. Dashboards allow you to display multiple inter-connected data analysis elements such as grids, charts, maps, gauges, and others: all within an automatically-arranged layout.
+
+The set of components allows you to deploy an all-in-one solution and switch between Viewer and Designer modes directly on the web client (includes adaptive layouts for tablet & mobile).
+
+The Web Dashboard is available as a part of a Universal subscription.
+
+[Get Started with DevExpress BI Dashboard](https://docs.devexpress.com/Dashboard/115955/web-dashboard) | [Explore Demos](https://demos.devexpress.com/Dashboard/)
+
+[/note]
+
 #####See Also#####
 #include common-link-configurewidget
 - [Map - Zoom and Center the Map](/concepts/05%20UI%20Components/Map/05%20Zoom%20and%20Center%20the%20Map.md '/Documentation/Guide/UI_Components/Map/Zoom_and_Center_the_Map/')

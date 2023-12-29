@@ -22,9 +22,6 @@ The UI component's instance.
 ##### field(e.key): any
 The key of the resource.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.values): any
 The values of the processed resource and task.
 

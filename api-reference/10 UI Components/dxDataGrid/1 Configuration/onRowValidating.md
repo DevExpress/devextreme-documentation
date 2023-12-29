@@ -15,9 +15,6 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.brokenRules): Array<ValidationRule>
 An array of broken rules. The structure of rule objects is described in the [Validation Rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') section.
 
@@ -82,6 +79,7 @@ The following code illustrates how to validate an email address on the server an
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient, HttpParams } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -104,8 +102,9 @@ The following code illustrates how to validate an email address on the server an
         }
         checkEmail(email) {
             const params = new HttpParams().set("email", email);
-            return this.http.get("https://www.mywebsite.com/api/checkEmail", { params })
-                .toPromise();
+            return lastValueFrom(
+                this.http.get("https://www.mywebsite.com/api/checkEmail", { params })
+            );
         }
     }
 
@@ -164,8 +163,7 @@ The following code illustrates how to validate an email address on the server an
             },
             checkEmail(email) {
                 let params = '?' + 'email=' + email;
-                return fetch("https://www.mywebsite.com/api/checkEmail${params}")
-                    .toPromise();
+                return fetch("https://www.mywebsite.com/api/checkEmail${params}");
             }
         }
     }
@@ -199,8 +197,7 @@ The following code illustrates how to validate an email address on the server an
         }
         checkEmail(email) {
             let params = '?' + 'email=' + email;
-            return fetch("https://www.mywebsite.com/api/checkEmail${params}")
-                .toPromise();
+            return fetch("https://www.mywebsite.com/api/checkEmail${params}");
         }
 
         render() {

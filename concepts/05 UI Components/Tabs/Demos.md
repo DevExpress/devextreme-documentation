@@ -1,3 +1,4 @@
 #include demos-intro
 
-- [Tabs](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Overview/)
+- [Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tabs/Selection/)

@@ -100,7 +100,7 @@ If you specify the Lookup's [value](/api-reference/10%20UI%20Components/dxDropDo
     import { DxLookupModule } from "devextreme-angular";
     import DataSource from "devextreme/data/data_source";
     import CustomStore from "devextreme/data/custom_store";
-    import "rxjs/add/operator/toPromise";
+    import { lastValueFrom } from 'rxjs';
     // ...
     export class AppComponent {
         lookupData: any = {};
@@ -124,16 +124,14 @@ If you specify the Lookup's [value](/api-reference/10%20UI%20Components/dxDropDo
                             if(i in loadOptions && isNotEmpty(loadOptions[i])) 
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        return httpClient.get("http://mydomain.com/MyDataService", { params: params })
-                            .toPromise()
+                        return lastValueFrom(httpClient.get("http://mydomain.com/MyDataService", { params: params }))
                             .then(result => {
                                 // Here, you can perform operations unsupported by the server
                                 return result.data;
                             });
                     },
                     byKey: function(key) {
-                        return httpClient.get('https://mydomain.com/MyDataService?id=' + key)
-                            .toPromise();
+                        return lastValueFrom(httpClient.get('https://mydomain.com/MyDataService?id=' + key));
                     }
                 })
             });

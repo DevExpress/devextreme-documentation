@@ -9,7 +9,7 @@ Specifies whether to export headers of the filter fields on the [field panel](/c
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJsHeaderAndFooter/jQuery/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ExcelJsHeaderAndFooter"
 }
 
 #####See Also#####

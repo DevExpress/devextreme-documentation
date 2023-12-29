@@ -1,6 +1,6 @@
 The Chart is an interactive UI component that visualizes data from a local or remote storage using a great variety of [series types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/').
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/23_2/DataVisualization/Guides/ChartOverview/chartExample.html, /Content/Applications/23_2/DataVisualization/Guides/ChartOverview/chartExample.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/24_1/DataVisualization/Guides/ChartOverview/chartExample.html, /Content/Applications/24_1/DataVisualization/Guides/ChartOverview/chartExample.js"></div>
 
 The Chart can visualize data from any source. Refer to the following topics for details on how to bind the Chart to your data source.
 
@@ -34,6 +34,20 @@ Finally, add some interactivity.
 - [Zooming and Panning](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/')
 - [Client-Side Exporting and Printing](/concepts/05%20UI%20Components/Chart/99%20Client-Side%20Exporting%20and%20Printing '/Documentation/Guide/UI_Components/Chart/Client-Side_Exporting_and_Printing/')
 - [Adaptive Layout](/concepts/05%20UI%20Components/Chart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Chart/Adaptive_Layout/')
+
+[note]
+
+Use our DevExpress BI Dashboard to embed interactive business intelligence into your next web app.
+
+The Web Dashboard is a data analysis UI component that you can embed into your ASP.NET Core or Angular, React, and Vue applications with .NET backend. Dashboards allow you to display multiple inter-connected data analysis elements such as grids, charts, maps, gauges, and others: all within an automatically-arranged layout.
+
+The set of components allows you to deploy an all-in-one solution and switch between Viewer and Designer modes directly on the web client (includes adaptive layouts for tablet & mobile).
+
+The Web Dashboard is available as a part of a Universal subscription.
+
+[Get Started with DevExpress BI Dashboard](https://docs.devexpress.com/Dashboard/115955/web-dashboard) | [Explore Demos](https://demos.devexpress.com/Dashboard/)
+
+[/note]
 
 #####See Also#####
 - [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LocalDataSource)

@@ -27,7 +27,7 @@ The shapes object.
 Use the [customShapeToolboxTemplate](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/customShapeToolboxTemplate.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#customShapeToolboxTemplate') property to define a common template for all diagram shapes in the toolbox.
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing/jQuery/Light/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/CustomShapesWithTemplatesWithEditing"
 }
 
 #####See Also#####

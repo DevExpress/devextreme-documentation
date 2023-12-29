@@ -28,7 +28,4 @@ The clicked button's [data](/api-reference/10%20UI%20Components/dxButtonGroup/1%
 ##### field(e.itemIndex): Number
 The clicked button's index.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ---

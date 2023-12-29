@@ -21,10 +21,7 @@ A DOM element in which the UI component is initialized. It is an <a href="https:
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): any
-The model data. Available only if you use Knockout.
-
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/jQuery/MaterialBlueLight/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview"
 }

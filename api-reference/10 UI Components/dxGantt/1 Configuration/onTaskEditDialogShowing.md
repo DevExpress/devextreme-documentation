@@ -25,9 +25,6 @@ An array of hidden fields.
 ##### field(e.key): any
 The task key.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.readOnlyFields): Array<String>
 An array of read-only fields.
 

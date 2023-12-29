@@ -44,9 +44,6 @@ Available for fields in the [field panel](/concepts/05%20UI%20Components/PivotGr
 ##### field(e.items): Array<Object>
 An array of items to be displayed by the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description.
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ##### field(e.rowFields): Array<PivotGridDataSource_Options_fields>
 Fields in the "row" area.
 

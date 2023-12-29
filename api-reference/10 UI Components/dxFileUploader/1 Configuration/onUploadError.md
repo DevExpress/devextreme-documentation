@@ -28,9 +28,6 @@ The uploaded file.
 ##### field(e.message): String
 The message displayed by the UI component on uploading failure.
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ##### field(e.request): XMLHttpRequest
 Specifies an XMLHttpRequest for the file.
 

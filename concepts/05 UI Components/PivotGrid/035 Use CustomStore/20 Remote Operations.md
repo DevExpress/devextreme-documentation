@@ -16,7 +16,7 @@ Now, the PivotGrid needs a special configuration of the **CustomStore** on the c
 }
 
 #####See Also#####
-- <a href="https://github.com/DevExpress/devextreme-examples/tree/23_2/pivotgrid-webapi" target="_blank">PivotGrid and Web API Example</a>
+- <a href="https://github.com/DevExpress-Examples/devextreme-pivotgrid-with-webapi" target="_blank">PivotGrid and Web API Example</a>
 
 If these extensions do not suit your needs, configure the **CustomStore** and implement server-side data processing by yourself, following the instructions given below. Define the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function for the **CustomStore**. This function accepts a bag of **loadOptions** and passes them to the server. The server must process data according to the **loadOptions** and send processed data back. 
 
@@ -67,6 +67,7 @@ The example below shows how to implement the **load** function. Note that in thi
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient } from '@angular/common/http';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
       styleUrls: ["./app.component.css"],
@@ -100,12 +101,11 @@ The example below shows how to implement the **load** function. Note that in thi
                             if (i in loadOptions && isNotEmpty(loadOptions[i]))
                                 params = params.set(i, JSON.stringify(loadOptions[i]));
                         });
-                        return httpClient
+                        return lastValueFrom(httpClient
                             .get(
                                 "http://mydomain.com/MyDataService",
                                 { params: params }
-                            )
-                            .toPromise()
+                            ))
                             .then((result: any) => {
                                 if ("data" in result) {
                                     return {

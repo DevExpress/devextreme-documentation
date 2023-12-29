@@ -15,9 +15,6 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.cancel): Boolean | Promise<Boolean> | Promise<void>
 **true**, a Promise resolved with **true**, or a rejected Promise stops row removal.       
 **false** or a Promise resolved with **false** or **undefined** continues row removal.
@@ -66,21 +63,22 @@ This function allows you to intercept row removal and perform additional actions
     <!--TypeScript-->
     import { Dx{WidgetName}Module } from "devextreme-angular";
     import { HttpClient, HttpClientModule, HttpParams } from "@angular/common/http";
-    // ...
+    import { lastValueFrom } from 'rxjs';
+
     export class AppComponent {
-        constructor(private httpClient: HttpClient) { /*...*/}
+        constructor(private httpClient: HttpClient) { /*...*/ }
         validateRemove(e) {
             const isCanceled = new Promise((resolve, reject) => {
-                this.httpClient
-                    .get(`https://url/to/your/validation/service/${e.key}`)
-                    .toPromise()
-                    .then((validationResult) => {
-                        if (validationResult.errorText) {
-                            reject(validationResult.errorText);
-                        } else {
-                            resolve(false);
-                        }
-                    });
+                const request$ = this.httpClient
+                    .get(`https://url/to/your/validation/service/${e.key}`);
+
+                lastValueFrom(request$).then((validationResult) => {
+                    if (validationResult.errorText) {
+                        reject(validationResult.errorText);
+                    } else {
+                        resolve(false);
+                    }
+                });
             });
             e.cancel = isCanceled;
         }

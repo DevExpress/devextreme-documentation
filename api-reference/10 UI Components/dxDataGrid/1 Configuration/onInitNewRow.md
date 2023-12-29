@@ -15,9 +15,6 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.data): Object
 The data of the inserted row; initially empty.
 
@@ -85,6 +82,7 @@ In the following code, the **onInitNewRow** function is used to provide default 
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { lastValueFrom } from 'rxjs';
 
     @Component({
         selector: 'app-root',
@@ -106,8 +104,7 @@ In the following code, the **onInitNewRow** function is used to provide default 
             });
         }
         getDefaultData() {
-            return this.httpClient.get("https://www.mywebsite.com/api/getDefaultData")
-                .toPromise()
+            return lastValueFrom(this.httpClient.get("https://www.mywebsite.com/api/getDefaultData"))
                 .then(data => {
                     // "data" is { ID: 100, Position: "Programmer" }
                     return data;

@@ -19,9 +19,6 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.model): any
-Model data. Available only if Knockout is used.
-
 ---
 
 #include btn-open-github with {

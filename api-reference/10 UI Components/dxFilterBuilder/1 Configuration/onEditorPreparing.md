@@ -39,9 +39,6 @@ Gets and sets the editor configuration.
 ##### field(e.filterOperation): String
 The applied filter operation.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.readOnly): Boolean
 Indicates whether the editor is read-only.
 

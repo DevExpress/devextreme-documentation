@@ -22,9 +22,6 @@ The name of the copied file or directory.
 ##### field(e.itemPath): String
 The path to the copied file or directory.
 
-##### field(e.model): any
-Model data. Available only if you use Knockout.
-
 ##### field(e.parentDirectory): FileSystemItem
 The parent directory.
 

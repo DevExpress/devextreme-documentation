@@ -10,8 +10,8 @@ The **Remote** file system provider works with a file system located on the serv
 
 ---
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/AzureServerBinding/"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-file-manager-azure-server-side-binding"
 }
 
 Set the [endpointUrl](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/Remote/1%20Configuration/endpointUrl.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#endpointUrl') property to specify the endpoint used to access and modify the file system.

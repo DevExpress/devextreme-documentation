@@ -5,13 +5,13 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Customizes the text displayed by point labels.
+Customizes text displayed by point labels.
 
 ##### param(pointInfo): Object
 Information on the series point.
 
 ##### return: String
-The text for the label to display.
+Text displayed by label.
 
 ---
 
@@ -75,11 +75,11 @@ The following fields are inherent to stacked-like series only.
     </tr>
     <tr>
         <td>percent</td>
-        <td>The percentage value of the point.</td>
+        <td>Point percentage value.</td>
     </tr>
     <tr>
         <td>percentText</td>
-        <td>The <i>percent</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
+        <td>The <i>percentage</i> with an applied <a href="/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/label/#format">format</a> and converted to string.</td>
     </tr>
     <tr>
         <td>total</td>

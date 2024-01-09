@@ -248,7 +248,7 @@ The following features are disabled in an unbound column, but you can enable the
     </tr>
     <tr>
         <td>Editing</td>
-        <td>Implement the <a href="{basewidgetpath}/Configuration/columns/#setCellValue">setCellValue</a> function.</td>
+        <td>Implement the <a href="{basewidgetpath}/Configuration/columns/#setCellValue">setCellValue</a> function and specify the <a href="{basewidgetpath}/Configuration/columns/#name">name</a> property instead of <a href="{basewidgetpath}/Configuration/columns/#dataField">dataField</a>.</td>
     </tr>
     <tr>
         <td>Sorting</td>

@@ -11,6 +11,9 @@ Detaches all handlers from the specified elements.
 HTML elements from which to detach all handlers.
 
 ---
+---
+##### jQuery
+
     // Modular approach
     import { off } from "devextreme/events";
     // ...
@@ -18,3 +21,23 @@ HTML elements from which to detach all handlers.
 
     // Non-modular approach
     DevExpress.events.off(document.getElementById("target"));
+
+##### Angular
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"));
+
+##### Vue
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"));
+
+##### React
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"));
+
+---

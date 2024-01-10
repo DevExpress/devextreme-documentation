@@ -17,6 +17,9 @@ An event or its name.
 Additional parameters to be passed to event handlers.
 
 ---
+---
+##### jQuery
+
     // Modular approach
     import { trigger } from "devextreme/events";
     // ...
@@ -24,3 +27,23 @@ Additional parameters to be passed to event handlers.
 
     // Non-modular approach
     DevExpress.events.trigger(document.getElementById("target"), "customEvent", { timeout: 1000 });
+
+##### Angular
+
+    import { trigger } from "devextreme/events";
+    // ...
+    trigger(document.getElementById("target"), "customEvent", { timeout: 1000 });
+
+##### Vue
+
+    import { trigger } from "devextreme/events";
+    // ...
+    trigger(document.getElementById("target"), "customEvent", { timeout: 1000 });
+
+##### React
+
+    import { trigger } from "devextreme/events";
+    // ...
+    trigger(document.getElementById("target"), "customEvent", { timeout: 1000 });
+
+---

@@ -29,7 +29,8 @@ The event that caused the handler's execution.
 - **extraParameters**: <a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">Object</a>  
 Data passed as **extraParameters** to the [trigger(element, event, extraParameters)](/api-reference/50%20Common/utils/events/trigger(element_event_extraParameters).md '/Documentation/ApiReference/Common/utils/events/#triggerelement_event_extraParameters') method when it is called to trigger the event.
 
-<!----->
+---
+##### jQuery
 
     // Modular approach
     import { one } from "devextreme/events";
@@ -42,3 +43,29 @@ Data passed as **extraParameters** to the [trigger(element, event, extraParamete
     DevExpress.events.one(document.getElementById("target"), "dxclick", "#elementID", function (event, extraParameters) {
         // Your code goes here
     });
+
+##### Angular
+
+    import { one } from "devextreme/events";
+    // ...
+    one(document.getElementById("target"), "dxclick", "#elementID", function (event, extraParameters) {
+        // Your code goes here
+    });
+
+##### Vue
+
+    import { one } from "devextreme/events";
+    // ...
+    one(document.getElementById("target"), "dxclick", "#elementID", function (event, extraParameters) {
+        // Your code goes here
+    });
+
+##### React
+
+    import { one } from "devextreme/events";
+    // ...
+    one(document.getElementById("target"), "dxclick", "#elementID", function (event, extraParameters) {
+        // Your code goes here
+    });
+
+---

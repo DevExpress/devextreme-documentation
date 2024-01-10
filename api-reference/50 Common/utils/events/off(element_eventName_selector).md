@@ -17,6 +17,9 @@ An event name.
 A <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS selector</a> passed to the **on** method when attaching handlers.
 
 ---
+---
+##### jQuery
+
     // Modular approach
     import { off } from "devextreme/events";
     // ...
@@ -24,3 +27,23 @@ A <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">C
 
     // Non-modular approach
     DevExpress.events.off(document.getElementById("target"), "dxclick", "#elementID");
+
+##### Angular
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick", "#elementID");
+
+##### Vue
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick", "#elementID");
+
+##### React
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick", "#elementID");
+
+---

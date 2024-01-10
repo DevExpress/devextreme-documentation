@@ -20,6 +20,9 @@ A <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">C
 The handler to detach.
 
 ---
+---
+##### jQuery
+
     // Modular approach
     import { off } from "devextreme/events";
     // ...
@@ -27,3 +30,23 @@ The handler to detach.
 
     // Non-modular approach
     DevExpress.events.off(document.getElementById("target"), "dxclick", "#elementID", clickHandler);
+
+##### Angular
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick", "#elementID", clickHandler);
+
+##### Vue
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick", "#elementID", clickHandler);
+
+##### React
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick", "#elementID", clickHandler);
+
+---

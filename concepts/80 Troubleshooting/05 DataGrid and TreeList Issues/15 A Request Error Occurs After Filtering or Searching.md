@@ -38,6 +38,23 @@ Note that browsers also impose their own restrictions on the maximum URL length:
             // ...
         });
 
+    ##### ASP.NET Core Controls
+
+        <!--Razor C#-->
+        @(Html.DevExtreme().DataGrid()
+            // ...
+            .DataSource(d => d.Mvc().Controller("SampleData").LoadMethod("POST").LoadAction("GetData").Key("OrderID"))
+        )
+
+        <!-- tab: CS -->
+        [Route("api/[controller]")]
+        public class SampleDataController : Controller {
+            [HttpPost]
+            public object GetData([FromBody] DataSourceLoadOptions loadOptions) {
+                return DataSourceLoader.Load(SampleData.Orders, loadOptions);
+            }
+        }
+
     ##### Angular
 
         <!-- tab: app.component.ts -->

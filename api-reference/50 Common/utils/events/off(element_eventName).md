@@ -14,6 +14,9 @@ HTML elements from which to detach handlers.
 An event name.
 
 ---
+---
+##### jQuery
+
     // Modular approach
     import { off } from "devextreme/events";
     // ...
@@ -21,3 +24,23 @@ An event name.
 
     // Non-modular approach
     DevExpress.events.off(document.getElementById("target"), "dxclick");
+
+##### Angular
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick");
+
+##### Vue
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick");
+
+##### React
+
+    import { off } from "devextreme/events";
+    // ...
+    off(document.getElementById("target"), "dxclick");
+
+---

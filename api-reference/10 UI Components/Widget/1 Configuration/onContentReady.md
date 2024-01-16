@@ -17,7 +17,3 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-
-#include btn-open-github with {
-    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-fix-column-headers-related-to-page-scroll"
-}

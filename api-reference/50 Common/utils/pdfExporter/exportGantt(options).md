@@ -22,7 +22,11 @@ Export settings.
 
 This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> v2.3.1+ library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
 
-You can call the **exportGantt** method at any point in your application. In the example below, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
+You can call the **exportGantt** method at any point in your application.
+
+Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Concepts/Troubleshooting/PDF_Export') for more information.
+
+In the example below, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
 
 ---
 ##### jQuery

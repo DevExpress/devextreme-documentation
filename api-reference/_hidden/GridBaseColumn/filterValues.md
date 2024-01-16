@@ -10,7 +10,7 @@ Specifies values selected in the column's [header filter](/concepts/05%20UI%20Co
 
 ---
 
-Note that you should convert date strings into JavaScript [Date](https://www.w3schools.com/js/js_dates.asp) objects before using them in the filter expression. 
+Note that you should convert date strings into JavaScript [Date](https://www.w3schools.com/js/js_dates.asp) objects before using them in the filter expression.
 
 If the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property is set, each value in the **filterValues** array specifies the beginning of an interval instead of an exact value:
 

@@ -414,7 +414,7 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
     <template> 
         <DxSelectBox ...
             :data-source="selectBoxDataSource"
-            :grouped="type"
+            :grouped="true"
             display-expr="name"
             value-expr="count"
         />
@@ -478,7 +478,7 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
             return (
                 <SelectBox ...
                     dataSource={selectBoxDataSource}
-                    grouped="type"
+                    grouped="true"
                     displayExpr="name"
                     valueExpr="count"
                 />

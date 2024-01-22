@@ -170,7 +170,7 @@ All the following formats are extendable:
 
 **Table formats**
 
-The following formats apply only to the `<table>` element and are extendable:
+The following formats apply only to the `<table>` element and can be modified:
 
 <table class="dx-table full-width">
  <tr>
@@ -211,7 +211,7 @@ The following formats apply only to the `<table>` element and are extendable:
  </tr>
 </table>
 
-The following formats apply only to the `<th>` and `<td>` elements and are extendable:
+The following formats apply only to the `<th>` and `<td>` elements and can be modified:
 
 <table class="dx-table full-width">
  <tr>

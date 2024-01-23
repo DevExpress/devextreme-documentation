@@ -14,7 +14,6 @@ Pass the rendering function to the `Template`'s `render` property:
 
         const employee = service.getEmployee();
         const positions = service.getPositions();
-
         const positionEditorOptions = {
             items: positions,
             value: '',
@@ -23,15 +22,12 @@ Pass the rendering function to the `Template`'s `render` property:
 
         export default function App() {
             const [upperCasePositions, setUpperCasePositions] = useState(false);
-
             const renderSelectBoxItem = useCallback((item) => {
                 return <div>{upperCasePositions ? item.toUpperCase() : item}</div>;
             }, [upperCasePositions]);
-
             const onUpperCaseSettingChange = useCallback((e) => {
                 setUpperCasePositions(e.value);
             }, []);
-
             return (
                 <>
                     <CheckBox
@@ -55,7 +51,6 @@ Pass the rendering function to the `Template`'s `render` property:
         import Form, { Item } from 'devextreme-react/form';
         import { Template } from 'devextreme-react/core/template';
         import { CheckBox } from 'devextreme-react/check-box';
-
         import service from './data.js';
 
         class App extends React.Component {
@@ -64,10 +59,8 @@ Pass the rendering function to the `Template`'s `render` property:
                 this.state = { upperCasePositions: false };
                 this.employee = service.getEmployee();
                 this.positions = service.getPositions();
-
                 this.renderSelectBoxItem = this.renderSelectBoxItem.bind(this);
                 this.onUpperCaseSettingChange = this.onUpperCaseSettingChange.bind(this);
-
                 this.positionEditorOptions = {
                     items: this.positions,
                     value: '',
@@ -143,7 +136,6 @@ Assign the custom component to the `Template`'s `component` property:
         import { Template } from 'devextreme-react/core/template';
         import { Switch } from 'devextreme-react/switch';
         import { RadioGroup } from 'devextreme-react/radio-group';
-
         import service from './data.js';
 
         const employee = service.getEmployee();
@@ -154,7 +146,6 @@ Assign the custom component to the `Template`'s `component` property:
             const onLineThroughChange = useCallback((e) => {
                 setLineThrough(e);
             }, []);
-
             return (
                 <div style={{
                     display: 'flex',
@@ -177,7 +168,6 @@ Assign the custom component to the `Template`'s `component` property:
                 value: '',
                 itemTemplate: 'radioGroupItem',
             });
-
             return (
                 <div style={{ maxWidth: 400 }}>
                     <Form formData={employee}>
@@ -205,7 +195,6 @@ Assign the custom component to the `Template`'s `component` property:
         class RadioGroupItemTemplate extends React.PureComponent {
             constructor() {
                 super();
-
                 this.state = { lineThrough: false };
                 this.onLineThroughChange = this.onLineThroughChange.bind(this);
             }

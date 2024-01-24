@@ -103,6 +103,8 @@ If you change a date value, the new value is saved in the same format as the ini
 
 ---
 
+[note] DateRangeBox does not support hours, minutes, and seconds.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateRangeBox/Overview/"        
 }

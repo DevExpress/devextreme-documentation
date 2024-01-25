@@ -247,6 +247,7 @@
     "description",
     "belloutline",
     "to",
+    "pinmap",
 ];
 
 var divs = $.map(iconNames, function (name) {

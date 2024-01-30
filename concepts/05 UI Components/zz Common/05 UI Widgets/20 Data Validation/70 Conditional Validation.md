@@ -1,41 +1,6 @@
 To conditionally validate an editor, use conditional rendering on a validation rule. In the example below, the TextBox will be validated only if the SelectBox value is `Germany`.
 
 ---
-##### Angular
-
-Refer to the following article for more information about conditional rendering: <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">Adding or removing an element with NgIf</a>.
-
-    <!-- tab: app.component.html -->
-    <dx-text-box>
-        <dx-validator>
-            <dxi-validation-rule
-                *ngIf="country === 'Germany'"
-                type="required"
-                message="Name is required"
-            >
-            </dxi-validation-rule>
-        </dx-validator>
-    </dx-text-box>
-    <dx-select-box
-        [dataSource]="countries"
-        [(value)]="country"
-    >
-    </dx-select-box>
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-    
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-
-    export class AppComponent {
-        countries = ['Germany', 'USA', 'China'];
-        country = "";
-    }
-
 ##### Vue
 
 Refer to the following article for more information about conditional rendering: <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">Conditional Rendering</a>.
@@ -115,4 +80,4 @@ Refer to the following article for more information about conditional rendering:
 
 ---
 
-[tags] angular, vue, react
+[tags] vue, react

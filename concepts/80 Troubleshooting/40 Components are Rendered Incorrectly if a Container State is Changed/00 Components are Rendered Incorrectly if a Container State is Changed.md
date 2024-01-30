@@ -1,8 +1,8 @@
-You often may need to put a component inside a container and change the container's visibility ot size. This article addresses the following issues that may occur:
+You often may need to put a component inside a container and change the container's visibility or size. This article addresses the following issues that may occur:
 
 - A container was invisible (`display: none`), then you changed the `display` state, and now the component's layout looks broken.
 
-- You put the DataGrid, PivotGrid, or TreeList inside a Bootstrap Modal, Material Tabs, or Step WIzard. Now the table looks broken and cannot be scrolled and/or displays gray rectangles.
+- You put the DataGrid, PivotGrid, or TreeList inside a Bootstrap Modal, Material Tabs, or Step Wizard. Now the table looks broken and cannot be scrolled and/or displays gray rectangles.
 
 - You changed container's size, and now Toolbar, Menu, or Tabs items overflow the container.
 
@@ -19,7 +19,7 @@ For other components, if a component is initialized when its parent container is
 
 - [updateDimensions](/api-reference/10%20UI%20Components/GridBase/3%20Methods/updateDimensions().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#updateDimensions') for DataGrid, TreeList, and PivotGrid.
 - [repaint](/api-reference/10%20UI%20Components/Widget/3%20Methods/repaint().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint') for other components (Form, List, Scheduler, etc.).
-- [render](/api-reference/10%20UI%20Components/BaseWidget/3%20Methods/render().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#render') method for charts (Chart, PieChart, PolarChart, etc.), VectorMap, and RangeSlider (prior v22.2).
+- [render](/api-reference/10%20UI%20Components/BaseWidget/3%20Methods/render().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#render') method for charts (Chart, PieChart, PolarChart, etc.), VectorMap, and RangeSlider (prior to v22.2).
 
 ---
 ##### Angular

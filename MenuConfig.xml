@@ -104,7 +104,7 @@
   <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Bullet|BarGauge|CircularGauge|LinearGauge|ButtonGroup|Drawer|Floating Action Button|Resizable|SlideOutView|SlideOut|NavBar|Accordion|Tabs|TreeMap|zz Common)" />
   <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList|Diagram)/[0-9]+ How To" />
   <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
-  <MenuRule Destination="10 UI Components/00 Overview" SourcePattern="Howto:^05 UI Components" />
+
   <!-- Hidden topics -->
   <MenuRule Destination="" SourcePattern="Howto:^34 ASP.NET MVC Controls" />
   <MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />

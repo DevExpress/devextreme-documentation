@@ -16718,9 +16718,6 @@
     "dxSelectBoxOptions.acceptCustomValue": {
       "vue": "accept-custom-value"
     },
-    "dxSelectBoxOptions.allowClearing": {
-      "vue": "allow-clearing"
-    },
     "dxSelectBoxOptions.customItemCreateEvent": {
       "vue": "custom-item-create-event"
     },

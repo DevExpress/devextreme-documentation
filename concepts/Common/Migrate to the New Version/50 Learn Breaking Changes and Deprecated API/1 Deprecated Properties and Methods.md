@@ -29,7 +29,7 @@
 </tr>
 <tr>
 <td>LoadPanel</td>
-<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxLoadPanel/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxLoadPanel/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
 </tr>
 <tr>
 <td>Lookup</td>
@@ -45,11 +45,11 @@
 </tr>
 <tr>
 <td>Popover</td>
-<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxPopover/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxPopover/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxPopover/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
 </tr>
 <tr>
 <td>Popup</td>
-<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxPopup/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxPopup/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
 </tr>
 <tr>
 <td>RangeSelector</td>
@@ -69,11 +69,11 @@
 </tr>
 <tr>
 <td>Toast</td>
-<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxToast/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxToast/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
 </tr>
 <tr>
 <td>Tooltip</td>
-<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxTooltip/Configuration/#elementAttr">elementAttr</a></td>
+<td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxTooltip/Configuration/#closeOnOutsideClick">closeOnOutsideClick</a></td>
 </tr>
 <tr>
 <td>TreeList</td>

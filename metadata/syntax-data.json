@@ -13786,9 +13786,6 @@
     "dxOverlayOptions.contentTemplate": {
       "vue": "content-template"
     },
-    "dxOverlayOptions.copyRootClassesToWrapper": {
-      "vue": "copy-root-classes-to-wrapper"
-    },
     "dxOverlayOptions.deferRendering": {
       "vue": "defer-rendering"
     },

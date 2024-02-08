@@ -65,6 +65,7 @@ To create a custom bundle, follow the steps below:
 3. Configure your `package.json`.
 
         <!-- tab: package.json -->
+        "type": "module",
         "scripts": {
             // ...
             "build": "vite build",

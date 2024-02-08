@@ -2,7 +2,8 @@
 id: dxOverlay.Options.elementAttr
 type: any
 default: {}
-dep: dxOverlay.Options.wrapperAttr
+hidden: 
+deprecated: 
 ---
 ---
 ##### shortDescription

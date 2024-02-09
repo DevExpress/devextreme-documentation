@@ -4,7 +4,7 @@ In certain scenarios, you may want to utilize a custom bundle rather than an aut
     href: "https://github.com/DevExpress-Examples/devextreme-vite-vue-bundling"
 }
 
-For best experience, we recommend you to use the latest version of DevExtreme alongside ESM.
+For the best experience, we recommend that you use the latest version of DevExtreme alongside ESM.
 
 To create a custom bundle, follow the steps below:
 
@@ -43,13 +43,13 @@ To create a custom bundle, follow the steps below:
             },
         })
 
-    In the code snippet above, the following options are presented:
+    In the code snippet above, the following options are used:
 
     - `esmExternals: true`     
     Treat external dependencies (Vue in this case) as ECMAScript modules.
 
     - `entry: resolve(__dirname, 'main.js')`    
-    A main entry file. We created it at the step one.
+    A main entry file created at step one.
 
     - `formats: ['es', 'cjs']`    
     Output formats.

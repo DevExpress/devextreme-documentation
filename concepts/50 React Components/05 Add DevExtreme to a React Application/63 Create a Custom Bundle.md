@@ -1,4 +1,4 @@
-In certain scenarios, you may want to utilize a custom bundle rather than an automatically generated one. The example below illustrates how to implement a custom bundle with Vite.
+In certain scenarios, you may want to utilize a custom bundle rather than an automatically generated one. The example below illustrates how to create a custom bundle with Vite.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-vite-react-bundling"

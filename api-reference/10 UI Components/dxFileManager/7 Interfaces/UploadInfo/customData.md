@@ -37,4 +37,3 @@ Custom information that you can pass during file upload. For instance, you can s
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-file-manager-azure-client-side-binding"
 }
----

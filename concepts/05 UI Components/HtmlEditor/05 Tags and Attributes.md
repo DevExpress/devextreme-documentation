@@ -82,3 +82,5 @@ HtmlEditor generates the following HTML tags and attributes:
     </td>
  </tr>
 </table>
+
+[note] The mentioned attributes are generated automatically. If you pass custom values such as custom classes, HtmlEditor may not properly process these attributes.

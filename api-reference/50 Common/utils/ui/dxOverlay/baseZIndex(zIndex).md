@@ -15,10 +15,34 @@ The z-index of all overlay UI components located on a page is calculated based o
 
 The following example demonstrates how to call the method.
 
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     DevExpress.ui.dxOverlay.baseZIndex(2000);
     // ===== or when using modules =====
     import { baseZIndex } from 'devextreme/ui/overlay';
     baseZIndex(2000);
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { baseZIndex } from 'devextreme/ui/overlay';
+    baseZIndex(2000);
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import { baseZIndex } from 'devextreme/ui/overlay';
+    baseZIndex(2000);
+
+##### React
+
+    <!-- tab: App.js -->
+    import { baseZIndex } from 'devextreme/ui/overlay';
+    baseZIndex(2000);
+
+---
 
 By default, the base z-index for all overlay UI components except Toast is 1500.
 

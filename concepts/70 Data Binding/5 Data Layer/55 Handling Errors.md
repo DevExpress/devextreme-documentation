@@ -1,6 +1,9 @@
 DevExtreme includes the [setErrorHandler](/api-reference/30%20Data%20Layer/Utils/setErrorHandler.md '/Documentation/ApiReference/Data_Layer/Utils/#setErrorHandler') utility method to help you handle errors that occur within the entire data layer. Pass an error handler to this method. The handler accepts a JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object as a parameter.
 
-    <!--JavaScript-->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     DevExpress.data.setErrorHandler(function (error) {
         console.log(error.message);
     });
@@ -11,6 +14,35 @@ DevExtreme includes the [setErrorHandler](/api-reference/30%20Data%20Layer/Utils
     setErrorHandler(function(error) {
         console.log(error.message);
     });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { setErrorHandler } from "data/errors";
+
+    setErrorHandler(function(error) {
+        console.log(error.message);
+    });
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import { setErrorHandler } from "data/errors";
+
+    setErrorHandler(function(error) {
+        console.log(error.message);
+    });
+
+##### React
+
+    <!-- tab: App.js -->
+    import { setErrorHandler } from "data/errors";
+
+    setErrorHandler(function(error) {
+        console.log(error.message);
+    });
+
+---
 
 A Store enables you to handle errors that occur only within itself. To handle Store errors, assign an error handling function to the **handleError** configuration property of the Store.
 

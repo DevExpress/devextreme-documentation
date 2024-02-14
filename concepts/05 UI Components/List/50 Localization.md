@@ -1,6 +1,9 @@
 Static messages for any DevExtreme UI component are defined in a locale-specific dictionary as key-value pairs. To localize the List UI component, you need to redefine the following keys' values. To load the dictionaries, use the [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') method defined in the `DevExpress.localization` namespace.
 
-    <!--JavaScript-->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     DevExpress.localization.loadMessages({
         // Replace "en" with the target locale of the dictionary
         "en": {
@@ -23,10 +26,7 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
     // Set the locale
     DevExpress.localization.locale(navigator.language);
 
-<!----->
-
-    <!--JavaScript-->
-    // or when using modules
+    // ===== or when using modules =====
     import { locale, loadMessages } from "devextreme/localization";
 
     loadMessages({
@@ -50,6 +50,89 @@ Static messages for any DevExtreme UI component are defined in a locale-specific
 
     // Set the locale
     locale(navigator.language);
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { locale, loadMessages } from "devextreme/localization";
+
+    loadMessages({
+        // Replace "en" with the target locale of the dictionary
+        "en": {
+            "dxCollectionWidget-noDataText": "No data to display",
+            "dxList-pullingDownText": "Pull down to refresh...",
+            "dxList-pulledDownText": "Release to refresh...",
+            "dxList-refreshingText": "Refreshing...",
+            "dxList-pageLoadingText": "Loading...",
+            "dxList-nextButtonText": "More",
+            "dxList-selectAll": "Select All",
+            "dxListEditDecorator-delete": "Delete",
+            "dxListEditDecorator-more": "More"
+        },
+        "de": {
+            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
+            // ...
+        }
+    });
+
+    // Set the locale
+    locale(navigator.language);
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import { locale, loadMessages } from "devextreme/localization";
+
+    loadMessages({
+        // Replace "en" with the target locale of the dictionary
+        "en": {
+            "dxCollectionWidget-noDataText": "No data to display",
+            "dxList-pullingDownText": "Pull down to refresh...",
+            "dxList-pulledDownText": "Release to refresh...",
+            "dxList-refreshingText": "Refreshing...",
+            "dxList-pageLoadingText": "Loading...",
+            "dxList-nextButtonText": "More",
+            "dxList-selectAll": "Select All",
+            "dxListEditDecorator-delete": "Delete",
+            "dxListEditDecorator-more": "More"
+        },
+        "de": {
+            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
+            // ...
+        }
+    });
+
+    // Set the locale
+    locale(navigator.language);
+
+##### React
+
+    <!-- tab: App.js -->
+    import { locale, loadMessages } from "devextreme/localization";
+
+    loadMessages({
+        // Replace "en" with the target locale of the dictionary
+        "en": {
+            "dxCollectionWidget-noDataText": "No data to display",
+            "dxList-pullingDownText": "Pull down to refresh...",
+            "dxList-pulledDownText": "Release to refresh...",
+            "dxList-refreshingText": "Refreshing...",
+            "dxList-pageLoadingText": "Loading...",
+            "dxList-nextButtonText": "More",
+            "dxList-selectAll": "Select All",
+            "dxListEditDecorator-delete": "Delete",
+            "dxListEditDecorator-more": "More"
+        },
+        "de": {
+            "dxCollectionWidget-noDataText": "Keine Daten verfügbar",
+            // ...
+        }
+    });
+
+    // Set the locale
+    locale(navigator.language);
+
+---
 
 [note] DevExtreme ships several predefined dictionaries for most locales. See the [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') topic for more information. 
 

@@ -30,11 +30,37 @@ See [paletteExtensionMode](/api-reference/10%20UI%20Components/BaseChart/1%20Con
 ---
 The following code generates ten colors from the Material palette's gradient color set:
 
-    <!--JavaScript-->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     var colors = DevExpress.viz.generateColors('Material', 10, { baseColorSet: 'gradientSet' });
     // ===== or when using modules =====
     import { generateColors } from 'devextreme/viz/palette';
      
     let colors = generateColors('Material', 10, { baseColorSet: 'gradientSet' });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { generateColors } from 'devextreme/viz/palette';
+     
+    let colors = generateColors('Material', 10, { baseColorSet: 'gradientSet' });
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import { generateColors } from 'devextreme/viz/palette';
+     
+    let colors = generateColors('Material', 10, { baseColorSet: 'gradientSet' });
+
+##### React
+
+    <!-- tab: App.js -->
+    import { generateColors } from 'devextreme/viz/palette';
+     
+    let colors = generateColors('Material', 10, { baseColorSet: 'gradientSet' });
+
+---
 
 Use the generated colors to paint elements of different UI components in identical colors. For instance, you can assign the same colors to series in two different charts to indicate the visualized information is connected.

@@ -23,11 +23,35 @@ The object returned by the **getGroupConfig(group)** function has the following 
 - **validated**  
     The event that occurs after the group is validated. You can attach/detach a handler using the **on(eventName, eventHandler)**/**off(eventName)** methods of the group.
 
-<!---->
-    
-    <!--JavaScript-->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
     let validationGroup = DevExpress.validationEngine.getGroupConfig('myGroup');
     // ===== or when using modules =====
     import validationEngine from 'devextreme/ui/validation_engine';
 
     let validationGroup = validationEngine.getGroupConfig('myGroup');
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import validationEngine from 'devextreme/ui/validation_engine';
+
+    let validationGroup = validationEngine.getGroupConfig('myGroup');
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import validationEngine from 'devextreme/ui/validation_engine';
+
+    let validationGroup = validationEngine.getGroupConfig('myGroup');
+
+##### React
+
+    <!-- tab: App.js -->
+    import validationEngine from 'devextreme/ui/validation_engine';
+
+    let validationGroup = validationEngine.getGroupConfig('myGroup');
+
+---

@@ -25,6 +25,8 @@ When this property is set to **true**, a click on <img src="/images/DataGrid/ico
 
 - You must specify either the component's [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) or the [store's](/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores) **key** property to ensure that export works properly.
 
+- The export of selected columns makes a call if [remoteOperations.filtering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/) is `true`. To avoid an extra call, disable remote filtering.
+
 [/note]
 
 #####See Also#####

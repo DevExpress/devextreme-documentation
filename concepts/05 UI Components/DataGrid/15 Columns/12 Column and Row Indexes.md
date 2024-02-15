@@ -22,6 +22,6 @@ You can use the following indexes in methods and callback functions:
 - **Focused Row Index**        
     A zero-based index that starts from the first row in the scrolling area.
 
-    To get the focused row index, implement the [onFocusedRowChanged](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onFocusedRowChanged) function.
+    To get the focused row index, call the [option](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName) method with [focusedRowIndex](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowIndex) as the argument.
 
     [note] If [scrolling](/concepts/05%20UI%20Components/DataGrid/40%20Scrolling '/Documentation/Guide/UI_Components/DataGrid/Scrolling/') is standard, viewport and scrolling area are coincided. In this case, a regular row index and a focused row index have the same value.

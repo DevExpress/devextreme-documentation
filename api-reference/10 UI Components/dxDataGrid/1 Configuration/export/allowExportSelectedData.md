@@ -23,9 +23,9 @@ When this property is set to **true**, a click on <img src="/images/DataGrid/ico
 
 - This property cannot be enabled when [custom server-side summaries](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function/20%20Server-Side%20Data%20Aggregation.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Custom_Aggregate_Function/#Server-Side_Data_Aggregation') are used.
 
-- You must specify either the component's [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) or the [store's](/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores) **key** property to ensure that export works properly.
+- You must specify either the component's [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') or the [store's](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') **key** property to ensure that export works properly.
 
-- The export of selected columns makes a call if [remoteOperations.filtering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/) is `true`. To avoid an extra call, disable remote filtering.
+- The export of selected columns makes a call if [remoteOperations.filtering](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') is `true`. To avoid an extra call, disable remote filtering.
 
 [/note]
 

@@ -1,6 +1,6 @@
 ---
 id: RangeRule.max
-type: Date | Number
+type: Date | Number | String
 ---
 ---
 ##### shortDescription

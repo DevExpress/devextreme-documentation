@@ -11,7 +11,7 @@ Specifies or indicates the focused data row's index.
 ---
 The focused row has a [key](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowKey.md '{basewidgetpath}/Configuration/#focusedRowKey') and index on a page. When the [pager](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager '{basewidgetpath}/Configuration/pager/') is used for navigation, the focused row's index persists from page to page, but corresponds to a different row with a different key on each page.
 
-The default index, *-1*, means that no row is focused.
+The default index of *-1* indicates that no row is focused.
 
 The [focusedRowKey](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowKey.md '{basewidgetpath}/Configuration/#focusedRowKey') takes precedence over the **focusedRowIndex** when both are specified.  
 

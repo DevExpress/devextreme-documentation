@@ -47,7 +47,7 @@ This action also ensures that your team does not commit the key by accident.
 Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
 
     <!--JavaScript-->import config from 'devextreme/core/config'; 
-    import { licenseKey } from './devextreme-key'; 
+    import { licenseKey } from './devextreme-license'; 
     
     config({ licenseKey });   
 
@@ -68,7 +68,7 @@ This action also ensures that your team does not commit the key by accident.
 Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
 
     <!--JavaScript-->import config from 'devextreme/core/config'; 
-    import { licenseKey } from './devextreme-key'; 
+    import { licenseKey } from './devextreme-license'; 
     
     config({ licenseKey });   
 
@@ -106,7 +106,7 @@ This action also ensures that your team does not commit the key by accident.
 Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
 
     <!--JavaScript-->import config from 'devextreme/core/config'; 
-    import { licenseKey } from './devextreme-key'; 
+    import { licenseKey } from './devextreme-license'; 
     
     config({ licenseKey });   
 
@@ -144,7 +144,7 @@ This action also ensures that your team does not commit the key by accident.
 Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
 
     <!--JavaScript-->import config from 'devextreme/core/config'; 
-    import { licenseKey } from './devextreme-key'; 
+    import { licenseKey } from './devextreme-license'; 
     
     config({ licenseKey });   
 

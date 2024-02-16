@@ -24,3 +24,5 @@ The **columnResizingMode** property accepts one of the following values:
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Resizing/",
     name: "TreeList"
 }
+
+[note] If this property is set to `'nextColumn'` (default) and you enable the [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnHidingEnabled) property, then also enable [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth) to ensure the component works properly.

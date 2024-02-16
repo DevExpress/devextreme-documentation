@@ -30,7 +30,7 @@ All DevExtreme UI component suites, including React, share architecture and core
 
 - [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/')
 
-- [Modularity](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/)
+- [Modularity](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/')
 
 - [Customization using templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/')
 

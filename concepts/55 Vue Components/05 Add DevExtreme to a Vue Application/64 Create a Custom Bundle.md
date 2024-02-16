@@ -1,4 +1,4 @@
-In certain scenarios, you may want to utilize a custom bundle rather than an automatically generated one. The example below illustrates how to implement a custom bundle with Vite.
+In certain scenarios, you may want to utilize a custom bundle rather than an automatically generated one. The example below illustrates how to create a custom bundle with Vite.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-vite-vue-bundling"
@@ -8,11 +8,14 @@ For the best experience, we recommend that you use the latest version of DevExtr
 
 To create a custom bundle, follow the steps below:
 
-1. Create a `main.js` file with re-exports of DevExtreme components that you want to include in the bundle.
+1. Create a `main.js` file with re-exports of DevExtreme components that you want to include in the bundle. If you use nested configuration components, we recommend to utilize import aliases.
 
         <!-- tab: main.js -->
         export { DxButton } from "devextreme-vue/button";
-        export { DxDataGrid } from "devextreme-vue/data-grid";
+        export { 
+            DxDataGrid,
+            DxColumn as DxGridColumn
+        } from "devextreme-vue/data-grid";
 
 2. Create a separate [Vite configuration](https://vitejs.dev/guide/build.html#library-mode) `vite.config.devextreme.bundle.js` file.
 
@@ -79,4 +82,8 @@ To create a custom bundle, follow the steps below:
 5. Use the assembled bundle in your application.
 
         <!-- tab: App.vue -->
-        import { DxButton, DxDataGrid } from "./devextreme-bundle/devextreme-vue-bundle";
+        import {
+            DxButton,
+            DxDataGrid,
+            DxGridColumn as DxColumn
+        } from './devextreme-bundle/devextreme-vue-bundle';

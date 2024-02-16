@@ -12,7 +12,27 @@ The following UI components allow you to declare their content directly in the m
 
 The following is an example with ScrollView:
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-scroll-view>
         <div>Some scrollable content</div>
     </dx-scroll-view>
+
+[important]
+
+These UI components do not support dynamically or conditionally rendered content in their root element. For example, the following code **does not work**:
+
+    <!-- tab: app.component.html -->
+    <dx-popup [(visible)]="showPopup">
+        {{ popupContent }}
+    </dx-popup>
+
+Wrap the content in a static element:
+
+    <!-- tab: app.component.html -->
+    <dx-popup [(visible)]="showPopup">
+        <div>
+            {{ popupContent }}
+        </div>
+    </dx-popup>
+
+[/important]

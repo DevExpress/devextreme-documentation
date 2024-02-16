@@ -183,11 +183,11 @@ The following code is an example of a script you may use in your projects. If th
 
 [note] If you do not specify the `DEVEXTREME_KEY` environment variable, the key will be empty.
 
-You can call the `node add-devextreme-key` command to invoke the script manually. We recommend that you include this command in npm's `postinstall` script. In this case, every developer has an automatically created license key file after they install NPM modules.
+You can call the `node add-devextreme-license` command to invoke the script manually. We recommend that you include this command in npm's `postinstall` script. In this case, every developer has an automatically created license key file after they install NPM modules.
 
     <!-- tab: package.json -->{ 
         "scripts": { 
-            "postinstall": "node add-devextreme-key" 
+            "postinstall": "node add-devextreme-license" 
         }, 
     }
 

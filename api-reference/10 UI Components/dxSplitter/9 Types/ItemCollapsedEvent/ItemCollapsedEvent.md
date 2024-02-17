@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 references: dxSplitter.Options.onItemCollapsed
 uid: ui/splitter:ItemCollapsedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

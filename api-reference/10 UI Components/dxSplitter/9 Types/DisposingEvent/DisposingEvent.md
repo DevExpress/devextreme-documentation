@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxSplitter.Options.onDisposing
 uid: ui/splitter:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

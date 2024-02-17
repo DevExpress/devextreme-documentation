@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo,_ui_splitter_ResizeInfo
 references: dxSplitter.Options.onResizeEnd
 uid: ui/splitter:ResizeEndEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

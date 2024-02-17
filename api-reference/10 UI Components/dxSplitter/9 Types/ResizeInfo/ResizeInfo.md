@@ -3,6 +3,7 @@ id: _ui_splitter_ResizeInfo
 module: ui/splitter
 export: ResizeInfo
 hidden: 
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

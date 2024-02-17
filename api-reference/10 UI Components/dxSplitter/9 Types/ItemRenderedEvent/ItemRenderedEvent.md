@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 references: dxSplitter.Options.onItemRendered
 uid: ui/splitter:ItemRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

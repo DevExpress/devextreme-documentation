@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 references: dxSplitter.Options.onItemContextMenu
 uid: ui/splitter:ItemContextMenuEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

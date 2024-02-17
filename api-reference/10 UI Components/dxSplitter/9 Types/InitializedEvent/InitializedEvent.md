@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 references: dxSplitter.Options.onInitialized
 uid: ui/splitter:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

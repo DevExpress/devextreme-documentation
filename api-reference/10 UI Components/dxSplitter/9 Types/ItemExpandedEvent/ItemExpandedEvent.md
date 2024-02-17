@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 references: dxSplitter.Options.onItemExpanded
 uid: ui/splitter:ItemExpandedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: RangeRule.min
-type: Date | Number | String
+type: Date | Number
 ---
 ---
 ##### shortDescription

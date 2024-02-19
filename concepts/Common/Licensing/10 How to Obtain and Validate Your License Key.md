@@ -10,7 +10,29 @@ Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCen
 
 ### Manual Configuration
 
-After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration.
+After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration. Below there are instructions on how to set up a license key based on whether your project is *modular* or *non-modular*. The difference is how new files are added to the project: either through `import` (`require`) statements or by directly referencing the file from a page using `<script>` tags.
+
+---
+##### jQuery
+
+#### Non-Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.js`. Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'):
+
+    <!-- tab: devextreme-license.js -->DevExpress.config({ licenseKey: 'DEVELOPER_LICENSE_KEY' });
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.js
+
+This action also ensures that your team does not commit the key by accident.
+
+If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+
+    <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
+    <script src="./devextreme-license.js" type="text/javascript"></script>
+
+#### Modular
 
 Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
 
@@ -18,7 +40,7 @@ Create a new file in the folder where you store your project sources. For exampl
 
 To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
 
-    <!-- tab: .gitignore -->src/devextreme-key.ts
+    <!-- tab: .gitignore -->src/devextreme-license.ts
 
 This action also ensures that your team does not commit the key by accident.
 
@@ -29,12 +51,121 @@ Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common
     
     config({ licenseKey });   
 
+##### Angular
+
+#### Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
+
+    <!-- tab: devextreme-license.ts -->export const licenseKey = 'DEVELOPER_LICENSE_KEY’;
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.ts
+
+This action also ensures that your team does not commit the key by accident.
+
+Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
+
+    <!--JavaScript-->import config from 'devextreme/core/config'; 
+    import { licenseKey } from './devextreme-license'; 
+    
+    config({ licenseKey });   
+
+#### Non-Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.js`. Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'):
+
+    <!-- tab: devextreme-license.js -->DevExpress.config({ licenseKey: 'DEVELOPER_LICENSE_KEY' });
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.js
+
+This action also ensures that your team does not commit the key by accident.
+
 If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
 
-    <!--JavaScript--><script src="./dx.all.js" type="text/javascript"> </script> 
+    <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>
 
-    <!-- tab: devextreme-license.js --> DevExpress.config({ licenseKey: 'DEVELOPER_LICENSE_KEY' });
+##### Vue
+
+#### Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
+
+    <!-- tab: devextreme-license.ts -->export const licenseKey = 'DEVELOPER_LICENSE_KEY’;
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.ts
+
+This action also ensures that your team does not commit the key by accident.
+
+Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
+
+    <!--JavaScript-->import config from 'devextreme/core/config'; 
+    import { licenseKey } from './devextreme-license'; 
+    
+    config({ licenseKey });   
+
+#### Non-Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.js`. Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'):
+
+    <!-- tab: devextreme-license.js -->DevExpress.config({ licenseKey: 'DEVELOPER_LICENSE_KEY' });
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.js
+
+This action also ensures that your team does not commit the key by accident.
+
+If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+
+    <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
+    <script src="./devextreme-license.js" type="text/javascript"></script>
+
+##### React
+
+#### Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
+
+    <!-- tab: devextreme-license.ts -->export const licenseKey = 'DEVELOPER_LICENSE_KEY’;
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.ts
+
+This action also ensures that your team does not commit the key by accident.
+
+Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'). This should be done in the entry point of the application:
+
+    <!--JavaScript-->import config from 'devextreme/core/config'; 
+    import { licenseKey } from './devextreme-license'; 
+    
+    config({ licenseKey });   
+
+#### Non-Modular
+
+Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.js`. Specify your DevExtreme license key in [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig'):
+
+    <!-- tab: devextreme-license.js -->DevExpress.config({ licenseKey: 'DEVELOPER_LICENSE_KEY' });
+
+To allow each developer to use their own license key, do not store this file in your repository. Instruct Git to ignore the file that holds the key. To do this, add the file path to your project's `.gitignore` file:
+
+    <!-- tab: .gitignore -->src/devextreme-license.js
+
+This action also ensures that your team does not commit the key by accident.
+
+If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+
+    <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
+    <script src="./devextreme-license.js" type="text/javascript"></script>
+
+---
 
 ### Automated License Key File Creation
 

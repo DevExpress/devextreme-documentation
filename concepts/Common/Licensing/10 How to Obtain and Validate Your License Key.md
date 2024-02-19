@@ -10,7 +10,7 @@ Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCen
 
 ### Manual Configuration
 
-After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration. Below, you will find instructions on setting up a license key based on whether your project is *modular* or *non-modular*. The distinction lies in how new files are added to the project: either through `import` (`require`) statements or by directly referencing the file from a page using `<script>` tags.
+After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration. Below there are instructions on how to set up a license key based on whether your project is *modular* or *non-modular*. The difference is how new files are added to the project: either through `import` (`require`) statements or by directly referencing the file from a page using `<script>` tags.
 
 ---
 ##### jQuery

@@ -8,7 +8,7 @@ default: undefined
 Specifies the date-time value serialization format.
 
 ---
-Date-time serialization involves converting date-time objects into a string format for storage or transmission. To ensure proper format detection, specify this property.
+Date-time serialization involves date-time value conversion into a string format for storage or transmission. To ensure proper format detection, specify this property.
 
 Use LDML patterns to pass [custom format strings](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) to this property.
 
@@ -17,13 +17,13 @@ Use LDML patterns to pass [custom format strings](/Documentation/Guide/Common/Va
 For instance, you can specify the following patterns:
 
 - `"yyyy-MM-dd"`    
-A local date.  
+A date.  
 
 - `"yyyy-MM-ddTHH:mm:ss"`    
 Local date and time.  
 
 - `"yyyy-MM-ddTHH:mm:ssZ"`    
-The UTC date and time.  
+Date and time in UTC.  
 
 - `"yyyy-MM-ddTHH:mm:ssx"`, `"yyyy-MM-ddTHH:mm:ssxx"`, `"yyyy-MM-ddTHH:mm:ssxxx"`    
 Date and time with a timezone.
@@ -34,9 +34,9 @@ Date and time with a timezone.
 
 - If you specify this property, the **value** will be a string, not a Date object.
 
-- If use API to change the **value**, make sure that the value has the same format that you specified in this property.
+- If you use API to change the **value**, make sure that the value has the same format that you specified in this property.
 
-- This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
+- This property takes effect only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
 
 [/note]
 

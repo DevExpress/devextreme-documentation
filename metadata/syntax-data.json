@@ -11556,6 +11556,9 @@
     "dxFormGroupItem.alignItemLabels": {
       "vue": "align-item-labels"
     },
+    "dxFormGroupItem.captionTemplate": {
+      "vue": "caption-template"
+    },
     "dxFormGroupItem.colCount": {
       "vue": "col-count"
     },

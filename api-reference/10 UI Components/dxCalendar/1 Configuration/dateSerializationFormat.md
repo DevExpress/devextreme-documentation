@@ -30,7 +30,7 @@ Date and time with a timezone.
 
 [note]
 
-- You can use this property only if you do not specify the initial [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value'). **dateSerializationFormat** is calculated automatically if you pass a value in the initial configuration.
+- You can use this property only if you do not specify the initial [value]({basewidgetpath}/Configuration/#value). **dateSerializationFormat** is calculated automatically if you pass a value in the initial configuration.
 
 - If you specify this property, the **value** will be a string, not a Date object.
 

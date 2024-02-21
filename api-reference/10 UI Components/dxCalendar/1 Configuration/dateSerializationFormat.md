@@ -5,22 +5,40 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the date-time value serialization format. Use it only if you do not specify the [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value') at design time.
+Specifies the date-time value serialization format.
 
 ---
-Without a value, the UI component cannot detect its format. In this case, specify the **dateSerializationFormat** property that supports the following formats:
+Date-time serialization involves date-time value conversion into a string format for storage or transmission. To ensure proper format detection, specify this property.
 
-- `"yyyy-MM-dd"` - a local date  
+Use LDML patterns to pass [custom format strings](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String') to this property.
 
-- `"yyyy-MM-ddTHH:mm:ss"` - local date and time  
+[important] **dateSerializationFormat** does not support all LDML pattern combinations.
 
-- `"yyyy-MM-ddTHH:mm:ssZ"` - the UTC date and time  
+For instance, you can specify the following patterns:
 
-- `"yyyy-MM-ddTHH:mm:ssx"`, `"yyyy-MM-ddTHH:mm:ssxx"`, `"yyyy-MM-ddTHH:mm:ssxxx"` - date and time with a timezone
+- `"yyyy-MM-dd"`    
+A date.  
 
-This property applies only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
+- `"yyyy-MM-ddTHH:mm:ss"`    
+Local date and time.  
 
-[note] If you are going to change the **value** using the API, make sure that it has the same format that you specified in this property.
+- `"yyyy-MM-ddTHH:mm:ssZ"`    
+Date and time in UTC.  
+
+- `"yyyy-MM-ddTHH:mm:ssx"`, `"yyyy-MM-ddTHH:mm:ssxx"`, `"yyyy-MM-ddTHH:mm:ssxxx"`    
+Date and time with a timezone.
+
+[note]
+
+- You can use this property only if you do not specify the initial [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value'). **dateSerializationFormat** is calculated automatically if you pass a value in the initial configuration.
+
+- If you specify this property, the **value** will be a string, not a Date object.
+
+- If you use API to change the **value**, make sure that the value has the same format that you specified in this property.
+
+- This property takes effect only if the **forceIsoDateParsing** field is set to **true** in the [global configuration object](/api-reference/50%20Common/utils/config(config).md '/Documentation/ApiReference/Common/utils/#configconfig').
+
+[/note]
 
 #####See Also#####
 - [Troubleshooting - Date values are parsed or serialized incorrectly](/concepts/70%20Data%20Binding/90%20Troubleshooting/Date%20values%20are%20parsed%20or%20serialized%20incorrectly.md '/Documentation/Guide/Data_Binding/Troubleshooting/#Date_values_are_parsed_or_serialized_incorrectly')

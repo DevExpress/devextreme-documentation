@@ -159,6 +159,8 @@ In the following code, the `Full_Name` grid column in the editing state produces
 
 - Do not use **formItem** to override editor's **onValueChanged**. Implement [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing') instead.
 
+- The component does not check validation rules in the **formItem** object. Use the [columns.validationRules](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') property to customize validation instead. For more information, refer to the [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation') article.
+
 [/note]
 
 #include btn-open-github with {

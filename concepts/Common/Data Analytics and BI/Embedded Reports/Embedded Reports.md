@@ -10,7 +10,7 @@ Explore [DevExpress Reporting](https://www.devexpress.com/subscriptions/reportin
 
 - [End-User Report Designer](https://docs.devexpress.com/XtraReports/404503/get-started-with-devexpress-reporting/create-an-end-user-designer) to create and edit reports at runtime.
 
-- [Web Document Viewer](https://docs.devexpress.com/XtraReports/403569/web-reporting/common-features/devexpress-document-viewers) includes an interactive preview of generated documents, allowing users to view, print, and export reports.
+- [Web Document Viewer](https://docs.devexpress.com/XtraReports/403569/web-reporting/common-features/devexpress-document-viewers) with an interactive preview of generated documents, allowing users to view, print, and export reports.
 
 DevExpress Reporting is compatible across various platforms including ASP.NET WebForms, ASP.NET MVC, ASP.NET Core, Blazor, and JavaScript applications based on Angular, React, and Vue frameworks.
 

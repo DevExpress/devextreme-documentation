@@ -4,13 +4,13 @@ If you need a reliable solution to monitor your Key Performance Indicators (KPIs
 
 #### Discover Interactive Dashboards
 
-- Access a diverse range of data visualization components, including charts, graphs, gauges, pivot grids, and more.
+- Access a diverse range of data visualization components, including charts, cards, gauges, pivot grids, and more.
 
 - Use a drag-and-drop interface to customize your dashboard layout. BI Dashboard is built on DevExtreme UI components - you will not need to relearn.
 
 #### Data Integration
 
-- Connect to various data sources, including SQL databases, OLAP cubes, RESTful services, and Excel files.
+- Connect to various data sources, including SQL databases, OLAP cubes, JSON and Excel files.
 
 - Utilize our built-in data access layer and data shaping capabilities to query, filter, and transform your data.
 

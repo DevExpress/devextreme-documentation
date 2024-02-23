@@ -6,7 +6,7 @@ Explore [DevExpress Reporting](https://www.devexpress.com/subscriptions/reportin
 
 - Subreports, master-detail reports, report parameters, expressions, data bindings, and conditional formatting.
 
-- An intuitive drag-and-drop interface and [integration with Visual Studio](https://docs.devexpress.com/XtraReports/404722/vs-code-report-designer).
+- An intuitive drag-and-drop interface, [integration with Visual Studio](https://docs.devexpress.com/XtraReports/4256/visual-studio-report-designer) and [VS Code](https://docs.devexpress.com/XtraReports/404722/vs-code-report-designer).
 
 - [End-User Report Designer](https://docs.devexpress.com/XtraReports/404503/get-started-with-devexpress-reporting/create-an-end-user-designer) to create and edit reports at runtime.
 

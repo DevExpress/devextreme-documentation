@@ -18,4 +18,10 @@ Discover other powerful libraries within the DevExpress Office File API suite, i
 
 - [Barcode Generation API](https://docs.devexpress.com/OfficeFileAPI/15094/barcode-generation-api)
 
-[note] If you have DevExtreme installed on your machine, the [Office File API for .NET Core](https://docs.devexpress.com/OfficeFileAPI/15097/demo-application#net-core-demos) demo becomes available to explore.
+[note]
+
+- You need a license for the [DevExpress Office File API Subscription](https://www.devexpress.com/products/net/office-file-api/) or [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml) to use these capabilities in production code.
+
+- If you have DevExtreme installed on your machine, the [Office File API for .NET Core](https://docs.devexpress.com/OfficeFileAPI/15097/demo-application#net-core-demos) demo becomes available to explore.
+
+[/note]

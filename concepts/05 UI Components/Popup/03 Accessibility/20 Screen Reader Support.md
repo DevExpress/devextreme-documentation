@@ -84,3 +84,88 @@ The default Popup ARIA role is the non-modal <a href="https://developer.mozilla.
     export default App;
 
 ---
+
+You can also use this method to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    const popup = $('#popup').dxPopup({
+        // ...
+        onShowing: function (e) {
+            var $overlayContent = $(e.component.content()).parent()
+            $overlayContent.attr("aria-label", "Dialog window");
+        },
+    }).dxPopup('instance');
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-popup ...
+        (onShowing)="onShowingHandler($event)"
+    >
+    </dx-popup>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from "@angular/core";
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        onShowingHandler(e) {
+            const overlayContent = e.component.content().parentElement;
+            overlayContent.setAttribute("aria-label", "Dialog window");
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <DxPopup ...
+        @showing="onShowingHandler"
+    />
+    </template>
+
+    <script>
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        },
+        methods: {
+            onShowingHandler(e) {
+                const overlayContent = e.component.content().parentElement;
+                overlayContent.setAttribute("aria-label", "Dialog window");
+            },
+        },
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Popup from 'devextreme-react/popup';
+
+    const onShowingHandler = (e) => {
+        const overlayContent = e.component.content().parentElement;
+        overlayContent.setAttribute("aria-label", "Dialog window");
+    };
+
+    const App = () => {
+        return (
+            <Popup ...
+                onShowing={onShowingHandler}
+            />
+        );
+    };
+
+    export default App;
+
+---

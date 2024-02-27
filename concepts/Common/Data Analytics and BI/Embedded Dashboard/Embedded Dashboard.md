@@ -8,17 +8,24 @@ If you need a reliable solution to monitor your Key Performance Indicators (KPIs
 
 - Use a drag-and-drop interface to customize your dashboard layout. BI Dashboard is built on DevExtreme UI components - you will not need to relearn.
 
+- Allow users to create dashboards with [Dashboard Designer](https://docs.devexpress.com/Dashboard/116518/basic-concepts-and-terminology/dashboard-designer#web-dashboard---designer-mode) and seamlessly embed them with [Dashboard Viewer](https://docs.devexpress.com/Dashboard/116975/basic-concepts-and-terminology/dashboard-viewer#web-dashboard---viewer-mode).
+
 #### Data Integration
 
 - Connect to various data sources, including SQL databases, OLAP cubes, JSON and Excel files.
 
 - Utilize our built-in data access layer and data shaping capabilities to query, filter, and transform your data.
 
-#### Flexible Options
+#### Key Features
 
-- Adjust data detail levels, apply filters, and group dashboard items.
+- [Master Filter Functionality](https://docs.devexpress.com/Dashboard/116912/common-features/interactivity/master-filtering)    
+Use data-aware dashboard items to filter others (Master Filter). Select elements (for example, grid records, chart bars) to filter data in other items.
 
-- Extend the dashboard's capabilities with custom-built items, custom options, and external widgets.
+- [Drill-Down Feature](https://docs.devexpress.com/Dashboard/117061/web-dashboard/create-dashboards-on-the-web/interactivity/drill-down)    
+Adjust detail level of displayed data. Drill down for more detailed insights or drill up for general information.
+
+- [Export Capabilities](https://docs.devexpress.com/Dashboard/116694/web-dashboard/create-dashboards-on-the-web/exporting)    
+Export entire dashboard or individual items to PDF, image formats, and Excel/CSV.
 
 [note] BI Dashboard is available as a part of a Universal subscription.
 

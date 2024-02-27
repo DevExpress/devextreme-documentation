@@ -12,6 +12,8 @@ The integrated Security System implements all required access restriction and da
 To build your Web API Service's business model, you can choose either [Entity Framework Core](https://docs.devexpress.com/eXpressAppFramework/401886/business-model-design-orm/business-model-design-with-entity-framework-core) or [eXpress Persistent Objects (XPO)](https://docs.devexpress.com/eXpressAppFramework/112600/business-model-design-orm/business-model-design-with-xpo).
 
 The basic functions of our Web API Service (including the [Solution Wizard](https://docs.devexpress.com/eXpressAppFramework/113624/installation-upgrade-version-history/visual-studio-integration/solution-wizard)) are available for free as part of our .NET App Security & Web API Service free offer. To register your free copy today, please visit our .NET App Security & Web API – [Free Offer from DevExpress page]((https://www.devexpress.com/security-api-free?utm_source=js.devexpress.com&utm_medium=referral&utm_campaign=xaf&utm_content=data-layer-odatastore)).
+
+[note] Web API Service is available as a part of a Universal subscription.
  
 To learn more, visit our [Get Started with Web API Service](https://docs.devexpress.com/eXpressAppFramework/404449/backend-web-api-service/get-started-with-web-api-service) article.
 

@@ -44,5 +44,3 @@ HtmlEditor is designed to create rich text and export it in HTML or Markdown for
 - The HtmlEditor tables do not support complex elements in cells, such as block elements, lists, nested tables, etc.
 
 - HtmlEditor does not support complex clipboard data formats of HTML pages and text processor applications, such as Microsoft Word®.
-
-- HtmlEditor does not support [CSP](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'). If you want to pass markup that contains inline styles to HtmlEditor [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value'), use `style-src 'unsafe-inline';` directive to avoid errors.

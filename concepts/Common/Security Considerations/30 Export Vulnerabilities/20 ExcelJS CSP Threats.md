@@ -1,4 +1,8 @@
-The DevExtreme DataGrid and PivotGrid components use the [ExcelJS](https://github.com/exceljs/exceljs) third-party library to export data to Excel. If you implement export functionality and apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/05%20Common%20CSP%20Directives.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy/Common_CSP_Directives'), you should include the following initialization code before code that loads ExcelJS sources: `window.regeneratorRuntime = null;` 
+The DevExtreme DataGrid and PivotGrid components use the [ExcelJS](https://github.com/exceljs/exceljs) third-party library to export data to Excel. 
+
+[important] We strongly advise you to use ExcelJS v4.4.0 or later.
+
+If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/05%20Common%20CSP%20Directives.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy/Common_CSP_Directives'), you should include the following initialization code before code that loads ExcelJS sources: `window.regeneratorRuntime = null;` 
 
 ---
 ##### jQuery
@@ -11,7 +15,7 @@ The DevExtreme DataGrid and PivotGrid components use the [ExcelJS](https://githu
         <script nonce="uqcb8z">
             window.regeneratorRuntime = null;
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/3.3.1/exceljs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
 

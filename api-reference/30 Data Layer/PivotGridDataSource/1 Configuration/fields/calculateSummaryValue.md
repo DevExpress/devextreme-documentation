@@ -20,17 +20,30 @@ On the following image, pivot grid cells display indexes that show the order in 
 
 ![DevExtreme PivotGrid: Summary calculation order](/images/DataGrid/pivotgrid-summary-calculation-order.png)
 
+The following code snippet shows how to use **calculateSummaryValue** to implement a custom "Profit/Loss" column.
+
+![DevExtreme PivotGrid: Profit/Loss column](/images/pivotgrid/calculate-summary-value-1.png)
+
 ---
 ##### jQuery
 
     <!--JavaScript-->
     $(function() {
-        var pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
+        const pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
             // ...
             fields: [{
-                // ...
-                calculateSummaryValue: function (summaryCell) {
-                    // Your code goes here
+                caption: "Profit/Loss",
+                dataType: "number",
+                format: "currency",
+                area: "data",
+                calculateSummaryValue: function(summaryCell) {
+                    const prevCell = summaryCell.prev('column', true);
+                    if (prevCell) {
+                        const prevVal = prevCell.value("Total Amount");
+                        const currentVal = summaryCell.value("Total Amount");
+                        return currentVal - prevVal;
+                    }
+                    return null;
                 }
             }]
         });
@@ -53,9 +66,18 @@ On the following image, pivot grid cells display indexes that show the order in 
             this.pivotGridDataSource = new PivotGridDataSource({
                 // ...
                 fields: [{
-                    // ...
-                    calculateSummaryValue: function (summaryCell) {
-                        // Your code goes here
+                    caption: "Profit/Loss",
+                    dataType: "number",
+                    format: "currency",
+                    area: "data",
+                    calculateSummaryValue: function(summaryCell) {
+                        const prevCell = summaryCell.prev('column', true);
+                        if (prevCell) {
+                            const prevVal = prevCell.value("Total Amount");
+                            const currentVal = summaryCell.value("Total Amount");
+                            return currentVal - prevVal;
+                        }
+                        return null;
                     }
                 }]
             });
@@ -91,9 +113,18 @@ On the following image, pivot grid cells display indexes that show the order in 
     const pivotGridDataSource = new PivotGridDataSource({
         // ...
         fields: [{
-            // ...
-            calculateSummaryValue: function (summaryCell) {
-                // Your code goes here
+            caption: "Profit/Loss",
+            dataType: "number",
+            format: "currency",
+            area: "data",
+            calculateSummaryValue: function(summaryCell) {
+                const prevCell = summaryCell.prev('column', true);
+                if (prevCell) {
+                    const prevVal = prevCell.value("Total Amount");
+                    const currentVal = summaryCell.value("Total Amount");
+                    return currentVal - prevVal;
+                }
+                return null;
             }
         }]
     });
@@ -121,9 +152,18 @@ On the following image, pivot grid cells display indexes that show the order in 
     const pivotGridDataSource = new PivotGridDataSource({
         // ...
         fields: [{
-            // ...
-            calculateSummaryValue: function (summaryCell) {
-                // Your code goes here
+            caption: "Profit/Loss",
+            dataType: "number",
+            format: "currency",
+            area: "data",
+            calculateSummaryValue: function(summaryCell) {
+                const prevCell = summaryCell.prev('column', true);
+                if (prevCell) {
+                    const prevVal = prevCell.value("Total Amount");
+                    const currentVal = summaryCell.value("Total Amount");
+                    return currentVal - prevVal;
+                }
+                return null;
             }
         }]
     });
@@ -155,11 +195,21 @@ On the following image, pivot grid cells display indexes that show the order in 
 
     <script type="text/javascript">
         function calculateSummaryValue (summaryCell) {
-            // Your code goes here
+            const prevCell = summaryCell.prev('column', true);
+            if (prevCell) {
+                const prevVal = prevCell.value("Total Amount");
+                const currentVal = summaryCell.value("Total Amount");
+                return currentVal - prevVal;
+            }
+            return null;
         }
     </script>
 
 ---
+
+The "Profit/Loss" cell is a difference between "Total Amount" cells in this case.
+
+![CalculateSummaryValue: How the cell value is counted](/images/pivotgrid/calculate-summary-value-2.png)
 
 #include uiwidgets-ref-functioncontext with { 
     value: "field's configuration"

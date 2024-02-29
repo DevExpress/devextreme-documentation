@@ -207,7 +207,7 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
 
 ---
 
-The "Profit/Loss" cell is a difference between "Total Amount" cells in this case.
+The "Profit/Loss" cell displays a difference between "Total Amount" cells in this case.
 
 ![CalculateSummaryValue: How the cell value is counted](/images/pivotgrid/calculate-summary-value-2.png)
 

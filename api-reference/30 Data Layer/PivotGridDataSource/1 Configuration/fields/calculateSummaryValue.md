@@ -22,7 +22,8 @@ On the following image, pivot grid cells display indexes that show the order in 
 
 The following code snippet shows how to use **calculateSummaryValue** to implement a custom "Profit/Loss" column.
 
-![DevExtreme PivotGrid: Profit/Loss column](/images/pivotgrid/calculate-summary-value-1.png)
+
+<img src="/images/pivotgrid/calculate-summary-value-1.png" alt="DevExtreme PivotGrid: Profit/Loss column" style="padding: 24px 0 24px 0;" /> 
 
 ---
 ##### jQuery
@@ -209,7 +210,7 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
 
 The "Profit/Loss" cell displays a difference between "Total Amount" cells in this case.
 
-![CalculateSummaryValue: How the cell value is counted](/images/pivotgrid/calculate-summary-value-2.png)
+<img src="/images/pivotgrid/calculate-summary-value-2.png" alt="CalculateSummaryValue: How the cell value is counted" style="padding: 24px 0 24px 0;" /> 
 
 #include uiwidgets-ref-functioncontext with { 
     value: "field's configuration"

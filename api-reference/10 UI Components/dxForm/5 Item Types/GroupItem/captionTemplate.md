@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a template that can be used to replace group caption with custom content.
+Specifies a template that can be used to replace group captions with custom content.
 
 ##### param(data): Object
 The group item's data.

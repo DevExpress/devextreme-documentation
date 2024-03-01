@@ -123,7 +123,7 @@ You can also set rules for multiple device types:
     // ...
     export class AppComponent {
         constructor () {
-            devicesConfig = [
+            const devicesConfig = [
                 { deviceType: 'desktop' },
                 { deviceType: 'tablet' },
                 { deviceType: 'phone' },

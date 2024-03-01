@@ -27,7 +27,7 @@ The template name or container.
 ---
 This property overrides the [caption](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption) option.
 
-The following code example adds an icon to the existing caption:
+The following code example adds an icon to caption content:
 
 ---
 ##### jQuery

@@ -1,24 +1,49 @@
-If you are looking for an easy-to-setup OData-compatible backend for your DevExtreme applications, we recommend that you try our [Backend Web API Service](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service?utm_source=js.devexpress.com&utm_medium=referral&utm_campaign=xaf&utm_content=data-layer-odatastore) - an OData service for .NET 6+ with full CRUD support, as well as paging, filtering and other OData options.
+---
+title: Backend Web/REST API for JS Apps with Access Control Rights (Powered by EF Core) 
+---
 
-<iframe width="100%" height="476" src="https://www.youtube.com/embed/T7y4gwc1n4w?si=7zC_IyLcPOPRWajF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+Besides DevExtreme UI components, your client-side JavaScript (JS) applications often require an easy-to-setup and secure Web API backend for CRUD and custom operations with a database, authentication and authorization (role-based access control, permission management). To implement such functionality, you can use [DevExpress .NET App Security & Web API Service](https://www.devexpress.com/products/net/application_framework/security-web-api-service.xml). XAF's Solution Wizard includes a "1-Click" solution to create [ASP.NET Core Web/HTTP API services](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service) (via OData and Swagger/OpenAPI).
 
-On top of the standard OData protocol capabilities, our Web API Service can generate endpoints for business object methods and allows you to implement custom endpoints with standard ASP.NET Core controllers.
+[Read Tutorial](https://docs.devexpress.com/eXpressAppFramework/404449/backend-web-api-service/get-started-with-web-api-service) | [Watch Videos](https://www.youtube.com/watch?v=T7y4gwc1n4w&list=PL8h4jt35t1wiM1IOux04-8DiofuMEB33G)
 
-The integrated Security System implements all required access restriction and data protection mechanisms, including:
+![Backend Web/REST API](/images/Common/backend-web-api-article-main.png)
 
-- User authentication with JWT, OAuth2 or a custom strategy.
-- A flexible access authorization system based on user roles and access permissions.
+#### Benefits
 
-To build your Web API Service's business model, you can choose either [Entity Framework Core](https://docs.devexpress.com/eXpressAppFramework/401886/business-model-design-orm/business-model-design-with-entity-framework-core) or [eXpress Persistent Objects (XPO)](https://docs.devexpress.com/eXpressAppFramework/112600/business-model-design-orm/business-model-design-with-xpo).
+- **Powered by Entity Framework Core ORM (EF Core)**    
+DevExpress Web API Service leverages the functionality of EF Core to implement CRUD operations required for your app.
 
-The basic functions of our Web API Service (including the [Solution Wizard](https://docs.devexpress.com/eXpressAppFramework/113624/installation-upgrade-version-history/visual-studio-integration/solution-wizard)) are available for free as part of our .NET App Security & Web API Service free offer. To register your free copy today, please visit our .NET App Security & Web API – [Free Offer from DevExpress page](https://www.devexpress.com/security-api-free?utm_source=js.devexpress.com&utm_medium=referral&utm_campaign=xaf&utm_content=data-layer-odatastore).
+- **Multiple Authentication Strategies**     
+You application’s authentication mechanism can leverage built-in support for OAuth2, JWT, and OpenID. You can also implement a custom authentication strategy.
 
-[note] Web API Service is available as a part of a Universal subscription.
- 
-To learn more, visit our [Get Started with Web API Service](https://docs.devexpress.com/eXpressAppFramework/404449/backend-web-api-service/get-started-with-web-api-service) article.
+- **Cross-Platform Compatibility**     
+Backend Web API Service is platform-agnostic. You can access user and role storage, permission management, authorization, reporting, and other functionality from various types of clients – web, mobile, and desktop applications.
 
-See our DevExtreme.OData example for more information on how to consume Web API Service from a DevExtreme application:
+- **IDE Integration**    
+If you work in Visual Studio 2022+ for Windows, integrated Solution Wizard automatically scaffolds your Web Service to speed up application development.
 
-#include btn-open-github with {
-    href: "https://go.devexpress.com/XAF_Security_NonXAF_DevExtreme_OData.aspx"
-}
+Basic functionality of DevExpress Web API Service is available for free. Additional capabilities and services listed below are available as part of the [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml):
+
+- Audit trail
+- Endpoints to download reports and file attachments
+- Data validation
+- Localization endpoints that return translated captions for UI elements
+- Technical support and full source code
+
+#### Get Started: Add DevExpress Web API Service Functionality
+
+Refer to the following articles for guidance on how to get started:
+
+- [Predefined Users, Roles, and Permissions](https://docs.devexpress.com/eXpressAppFramework/119065/data-security-and-safety/security-system/security-object-model/predefined-users-roles-and-permissions): describes how to configure permissions for your ORM data models or your EF Core entities.
+
+- [JavaScript (DevExtreme) Example](https://go.devexpress.com/XAF_Security_NonXAF_DevExtreme_OData.aspx): shows a client-side HTML/JavaScript CRUD app that uses the DevExtreme Data Grid and connects to an OData v4 web service (using the ASP.NET Core Web API).
+
+- [ASP.NET Core MVC Example](https://www.devexpress.com/go/XAF_Security_NonXAF_MVC_Core.aspx): shows a server-side ASP.NET MVC Core CRUD app that uses our high-performance DevExtreme-based Data Grid. The demo supports inline data editing.
+
+- [JavaScript (Svelte) Example](https://community.devexpress.com/blogs/news/archive/2023/04/11/consume-the-devexpress-backend-web-api-from-javascript-with-svelte-part-1.aspx): shows how to build a Svelte app and consume CRUD and custom Web API Service endpoints to authenticate users and protect data, edit and validate data, localize captions, preview and download reports.
+
+#### Authorization (Role-Based Access Control)
+
+XAF UI and Web API Service apps ship with built-in Role-based Access Control (RBAC) - a part of the [Security System module](https://docs.devexpress.com/eXpressAppFramework/113366/data-security-and-safety/security-system). We recommend that you configure Type, Record, and Field level permissions for different user roles. This way, you implement proper data and UI authorization support (filter sensitive data automatically and authorize CRUD/custom operations).
+
+You can implement fine-grain access control for object relationships, individual objects, or columns. For example, a user may be able to read the *Name* field, but not be able to modify *Salary*. Use straightforward API to check access permissions and customize UI accordingly. For example, you can mask protected editors or disable menu commands.

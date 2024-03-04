@@ -76,7 +76,7 @@ Install the new dependencies:
     <!--TypeScript-->
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    This statement applies one of the built-in `fluent` themes to your application. You can select a different DevExtreme theme if you wish.
+    This statement applies the `fluent` theme to your application. You can select a different DevExtreme theme if you wish.
 
 2. To apply this theme throughout your application, edit the `index.html` file in the project's root directory. Add the `dx-viewport` class to the `body` tag:
 
@@ -85,7 +85,7 @@ Install the new dependencies:
 
 ## 5. Add a new component
 
-1. Create a new file for the component — `src/components/CatFactGrid.vue`. Populate it with the following two tags:
+1. Create a new file for the component --- `src/components/CatFactGrid.vue`. Populate it with the following two tags:
 
     <!--TypeScript-->
         <script setup lang="ts">

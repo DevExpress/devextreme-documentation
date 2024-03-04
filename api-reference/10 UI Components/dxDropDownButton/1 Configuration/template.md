@@ -148,14 +148,14 @@ The following code sample creates a DropDownButton featuring multiline text for 
     // ...
     const renderButton = (data) => {
         return (
-            <div className="button-align-items">
+            <React.Fragment>
                 <span className={"dx-icon-" + data.icon + " dx-icon"}></span>
                 <div className="text-container">
                     <div className="status">{data.text}</div>
                     <div className="additional-status">Or not done</div>
                 </div>
                 <span className="dx-icon-spindown dx-icon"></span>
-            </div>
+            </React.Fragment>
         );
     };
 
@@ -186,11 +186,6 @@ The following code sample creates a DropDownButton featuring multiline text for 
 
     .dx-icon-spindown:before {
         padding-left: 32px;
-    }
-
-    .button-align-items {
-        display: flex !important;
-        align-items: center;
     }
 
 ---

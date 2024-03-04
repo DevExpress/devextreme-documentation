@@ -10,13 +10,13 @@ Specifies a template that can be used to replace group captions with custom cont
 The group item's data.
 
 ##### field(data.caption): String
-The group [caption](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption).
+The group [caption](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/caption.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption').
 
 ##### field(data.component): dxForm
 The Form instance.
 
 ##### field(data.name): String
-The group item's [name](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#name).
+The group item's [name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#name').
 
 ##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
@@ -25,7 +25,7 @@ The group item's [name](/Documentation/ApiReference/UI_Components/dxForm/Item_Ty
 The template name or container.
 
 ---
-This property overrides the [caption](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption) option.
+This property overrides the [caption](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/caption.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption') option.
 
 The following code example adds an icon to caption content:
 

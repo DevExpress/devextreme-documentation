@@ -7,11 +7,19 @@ A user can use the following keys to interact with the Menu component:
     </tr>
     <tr>
         <td>&larr;</td>
-        <td>Closes the submenu and focuses on its parent item.</td>
+        <td>Moves focus to the previous item. Closes the submenu and focuses on its parent item.</td>
     </tr>
     <tr>
         <td>&rarr;</td>
-        <td>Opens the submenu of the focused item.</td>
+        <td>Moves focus to the next item. Opens the submenu of the focused item.</td>
+    </tr>
+    <tr>
+        <td>&uarr;</td>
+        <td>Moves focus to the previous item.</td>
+    </tr>
+    <tr>
+        <td>&darr;</td>
+        <td>Moves focus to the next item.</td>
     </tr>
     <tr>
         <td>Home</td>

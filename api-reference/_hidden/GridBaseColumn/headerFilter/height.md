@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.headerFilter.height
-type: Number
+type: Number | String
 default: undefined
 ---
 ---

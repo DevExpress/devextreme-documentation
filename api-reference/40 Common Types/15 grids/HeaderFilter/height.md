@@ -1,6 +1,6 @@
 ---
 uid: common/grids:HeaderFilter.height
-type: Number
+type: Number | String
 default: 325, 315 (Material)
 ---
 ---

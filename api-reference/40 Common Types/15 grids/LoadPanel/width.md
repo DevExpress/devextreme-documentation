@@ -1,6 +1,6 @@
 ---
 uid: common/grids:LoadPanel.width
-type: Number
+type: Number | String
 default: 200
 ---
 ---

@@ -19,7 +19,7 @@ The button's text.
 #include common-ref-elementparam with { element: "button content" }
 
 ##### return: String | Element | jQuery
-A template name or container.
+The template name or the template's container element.
 
 ---
 The following code sample creates a DropDownButton featuring multiline text for the base button.

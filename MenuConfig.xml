@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MenuRules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <MenuRule Destination="" SourcePattern="ApiReference:^(10 UI Components|30 Data Layer|50 Common/utils)/(zz )*Errors and Warnings" />
-
   <MenuRule Destination="000 Overview" SourcePattern="Howto:^40 Angular Components/00 DevExtreme Angular Components" VisibleFor="Angular" />
   <MenuRule Destination="010 Overview" SourcePattern="Howto:^55 Vue Components/00 DevExtreme Vue Components" VisibleFor="Vue" />
   <MenuRule Destination="020 Overview" SourcePattern="Howto:^50 React Components/00 DevExtreme React Components" VisibleFor="React" />
@@ -26,7 +24,7 @@
   <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application" SourcePattern="Howto:^58 jQuery Components/05 Add DevExtreme to a jQuery Application" VisibleFor="jQuery" />
   <MenuRule Destination="050 Getting Started/16 Licensing" SourcePattern="Howto:^Common/Licensing" />
   <MenuRule Destination="050 Getting Started/17 Using with Ionic" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
-    <MenuRule Destination="050 Getting Started/18 State Management" SourcePattern="Howto:^50 React Components/20 State Management" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/18 State Management" SourcePattern="Howto:^50 React Components/20 State Management" VisibleFor="React" />
 
   <MenuRule Destination="050 Getting Started/21 Component Configuration Syntax" SourcePattern="Howto:^40 Angular Components/20 Component Configuration Syntax" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/22 Component Configuration Syntax" SourcePattern="Howto:^55 Vue Components/20 Component Configuration Syntax" VisibleFor="Vue" />
@@ -46,6 +44,7 @@
   <MenuRule Destination="050 Getting Started/74 Supported jQuery Versions" SourcePattern="Howto:^58 jQuery Components/80 Supported Versions" VisibleFor="jQuery" />
 
   <MenuRule Destination="15 Data Binding" SourcePattern="Howto:^70 Data Binding" />
+  <MenuRule Destination="75 Troubleshooting/00 Errors and Warnings/Data Layer" SourcePattern="ApiReference:30 Data Layer/zz Errors and Warnings" />
   <MenuRule Destination="15 Data Binding/99 Data Layer API" SourcePattern="ApiReference:^30 Data Layer" />
 
   <MenuRule Destination="20 Data Validation/00 Overview" SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 Data Validation" />
@@ -76,6 +75,8 @@
   <MenuRule Destination="70 Advanced Topics/90 3rd-Party Frameworks Integration API" SourcePattern="Howto:^05 UI Components/zz Common/15 Advanced/40 3rd-Party Frameworks Integration API" />
   <MenuRule Destination="70 Advanced Topics/99 Modularity" SourcePattern="Howto:^Common/Modularity" />
 
+  <MenuRule Destination="75 Troubleshooting/00 Errors and Warnings/Core" SourcePattern="ApiReference:^50 Common/utils/zz Errors and Warnings" />
+  <MenuRule Destination="75 Troubleshooting/00 Errors and Warnings/Components" SourcePattern="ApiReference:10 UI Components/Errors and Warnings" />
   <MenuRule Destination="75 Troubleshooting" SourcePattern="Howto:^80 Troubleshooting" />
 
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />

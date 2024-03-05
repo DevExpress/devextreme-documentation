@@ -22,7 +22,7 @@ The button's text.
 The template name or the template's container element.
 
 ---
-The following code sample creates a DropDownButton featuring multiline text for the base button.
+The following code sample creates a DropDownButton with multiline text in the base button.
 
 ---
 ##### jQuery

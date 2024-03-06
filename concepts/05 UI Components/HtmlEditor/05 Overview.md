@@ -45,4 +45,4 @@ HtmlEditor is designed to create rich text and export it in HTML or Markdown for
 
 - HtmlEditor does not support complex clipboard data formats of HTML pages and text processor applications, such as Microsoft Word®.
 
-- HtmlEditor supports Google Chrome spellcheck feature.
+- HtmlEditor supports browser spellcheck functionality.

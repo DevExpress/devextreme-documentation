@@ -44,3 +44,5 @@ HtmlEditor is designed to create rich text and export it in HTML or Markdown for
 - The HtmlEditor tables do not support complex elements in cells, such as block elements, lists, nested tables, etc.
 
 - HtmlEditor does not support complex clipboard data formats of HTML pages and text processor applications, such as Microsoft Word®.
+
+- HtmlEditor supports Google Chrome spellcheck feature.

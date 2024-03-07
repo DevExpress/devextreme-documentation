@@ -2,15 +2,10 @@
 id: GridBaseColumn.headerFilter.allowSearch
 type: Boolean
 default: false
-deprecated: 
+deprecated: Use DataGrid [search.enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/search/#enabled) or TreeList [search.enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/search/#enabled) instead.
 ---
 ---
 ##### shortDescription
 Specifies whether searching is enabled in the header filter.
 
 ---
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
-}
-
-#include grids-headerfilter-allowsearch-note

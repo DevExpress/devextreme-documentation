@@ -2,13 +2,10 @@
 id: dxPivotGrid.Options.headerFilter.allowSearch
 type: Boolean
 default: false
-deprecated: 
+deprecated: Use [search.enabled](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/search/#enabled) instead.
 ---
 ---
 ##### shortDescription
 Specifies whether searching is enabled in the header filter.
 
 ---
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/HeaderFilter/"
-}

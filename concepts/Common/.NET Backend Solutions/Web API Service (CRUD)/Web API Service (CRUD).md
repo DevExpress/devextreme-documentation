@@ -2,7 +2,7 @@
 title: Backend Web/REST API for JS Apps with Access Control Rights (Powered by EF Core) 
 ---
 
-Your client-side JavaScript (JS) applications may often require an easy-to-setup and secure Web API backend for CRUD and custom operations with a database, authentication and authorization (role-based access control, permission management). To implement such functionality, you can use [DevExpress .NET App Security & Web API Service](https://www.devexpress.com/products/net/application_framework/security-web-api-service.xml). XAF's Solution Wizard includes a "1-Click" solution to create [ASP.NET Core Web/HTTP API services](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service) (via OData and Swagger/OpenAPI).
+Client-side JavaScript (JS) applications often require an easy-to-setup and secure Web API backend for CRUD and custom operations with a database, authentication, and authorization (role-based access control, permission management). To implement such functionality, you can use [DevExpress .NET App Security & Web API Service](https://www.devexpress.com/products/net/application_framework/security-web-api-service.xml). XAF's Solution Wizard includes a "1-Click" solution to create [ASP.NET Core Web/HTTP API services](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service) (via OData and Swagger/OpenAPI).
 
 [Read Tutorial](https://docs.devexpress.com/eXpressAppFramework/404449/backend-web-api-service/get-started-with-web-api-service) | [Watch Videos](https://www.youtube.com/watch?v=T7y4gwc1n4w&list=PL8h4jt35t1wiM1IOux04-8DiofuMEB33G)
 

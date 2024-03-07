@@ -27,6 +27,6 @@ Adjust detail level of displayed data. Drill down for more detailed insights or 
 - [Export Capabilities](https://docs.devexpress.com/Dashboard/116694/web-dashboard/create-dashboards-on-the-web/exporting)    
 Export entire dashboard or individual items to PDF, image formats, and Excel/CSV.
 
-[note] BI Dashboard is available as a part of a Universal subscription.
+[note] BI Dashboard is available as a part of a [Universal subscription](https://www.devexpress.com/subscriptions/universal.xml).
 
 [Get Started with DevExpress BI Dashboard](https://docs.devexpress.com/Dashboard/115955/web-dashboard) | [Explore Demos](https://demos.devexpress.com/Dashboard/)

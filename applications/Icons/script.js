@@ -254,6 +254,8 @@
     "triangledown",
     "triangleright",
     "triangleleft",
+    "optionsgear",
+    "send"
 ];
 
 var divs = $.map(iconNames, function (name) {

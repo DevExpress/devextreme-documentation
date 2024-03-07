@@ -12,6 +12,6 @@ Explore [DevExpress Reporting](https://www.devexpress.com/subscriptions/reportin
 
 - [Web Document Viewer](https://docs.devexpress.com/XtraReports/403569/web-reporting/common-features/devexpress-document-viewers) with an interactive preview of generated documents, allowing users to view, print, and export reports.
 
-DevExpress Reporting is compatible across various platforms including ASP.NET WebForms, ASP.NET MVC, ASP.NET Core, Blazor, and JavaScript applications based on Angular, React, and Vue frameworks.
+DevExpress Reporting is compatible across various platforms including JavaScript applications based on Angular, React, and Vue frameworks, and ASP.NET Core.
 
-[note] You can select from a range of pricing options, including standalone Reporting subscriptions or the Universal package, which includes both DevExpress Reporting and DevExtreme.
+[note] You can select from a range of pricing options, including standalone [Reporting subscriptions](https://www.devexpress.com/subscriptions/reporting/) or the [Universal package]((https://www.devexpress.com/subscriptions/universal.xml)), which includes both DevExpress Reporting and DevExtreme.

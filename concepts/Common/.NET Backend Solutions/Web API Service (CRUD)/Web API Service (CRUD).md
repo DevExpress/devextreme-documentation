@@ -16,9 +16,6 @@ DevExpress Web API Service leverages the functionality of EF Core to implement C
 - **Multiple Authentication Strategies**     
 You application’s authentication mechanism can leverage built-in support for OAuth2, JWT, and OpenID. You can also implement a custom authentication strategy.
 
-- **Cross-Platform Compatibility**     
-Backend Web API Service is platform-agnostic. You can access user and role storage, permission management, authorization, reporting, and other functionality from various types of clients – web, mobile, and desktop applications.
-
 - **IDE Integration**    
 If you work in Visual Studio 2022+ for Windows, integrated Solution Wizard automatically scaffolds your Web Service to speed up application development.
 
@@ -38,12 +35,8 @@ Refer to the following articles for guidance on how to get started:
 
 - [JavaScript (DevExtreme) Example](https://go.devexpress.com/XAF_Security_NonXAF_DevExtreme_OData.aspx): shows a client-side HTML/JavaScript CRUD app that uses the DevExtreme Data Grid and connects to an OData v4 web service (using the ASP.NET Core Web API).
 
-- [ASP.NET Core MVC Example](https://www.devexpress.com/go/XAF_Security_NonXAF_MVC_Core.aspx): shows a server-side ASP.NET MVC Core CRUD app that uses our high-performance DevExtreme-based Data Grid. The demo supports inline data editing.
-
-- [JavaScript (Svelte) Example](https://community.devexpress.com/blogs/news/archive/2023/04/11/consume-the-devexpress-backend-web-api-from-javascript-with-svelte-part-1.aspx): shows how to build a Svelte app and consume CRUD and custom Web API Service endpoints to authenticate users and protect data, edit and validate data, localize captions, preview and download reports.
-
 #### Authorization (Role-Based Access Control)
 
-XAF UI and Web API Service apps ship with built-in Role-based Access Control (RBAC) - a part of the [Security System module](https://docs.devexpress.com/eXpressAppFramework/113366/data-security-and-safety/security-system). We recommend that you configure Type, Record, and Field level permissions for different user roles. This way, you implement proper data and UI authorization support (filter sensitive data automatically and authorize CRUD/custom operations).
+Web API Service apps ship with built-in Role-based Access Control (RBAC) - a part of the [Security System module](https://docs.devexpress.com/eXpressAppFramework/113366/data-security-and-safety/security-system).
 
 You can implement fine-grain access control for object relationships, individual objects, or columns. For example, a user may be able to read the *Name* field, but not be able to modify *Salary*. Use straightforward API to check access permissions and customize UI accordingly. For example, you can mask protected editors or disable menu commands.

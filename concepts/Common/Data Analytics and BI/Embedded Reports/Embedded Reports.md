@@ -1,4 +1,4 @@
-Explore [DevExpress Reporting](https://www.devexpress.com/subscriptions/reporting/) - a reporting solution designed to meet your needs for advanced reporting functionality, rich design-time experience, and extensive customization options.
+[DevExpress Reporting](https://www.devexpress.com/subscriptions/reporting/) is a reporting solution designed for advanced reporting, and includes a rich design-time experience and extensive customization options.
 
 ![DevExpress Reporting](/images/Common/Embedded_Reports.png)
 

@@ -248,6 +248,12 @@
     "belloutline",
     "to",
     "pinmap",
+    "handlevertical",
+    "handlehorizontal",
+    "triangleup",
+    "triangledown",
+    "triangleright",
+    "triangleleft",
 ];
 
 var divs = $.map(iconNames, function (name) {

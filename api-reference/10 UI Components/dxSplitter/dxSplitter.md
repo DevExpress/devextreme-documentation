@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Splitter is a UI component that allows you to incorporate different UI controls within its individual [panes](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/). 
 
 ---
-<!-- Description goes here -->
+<!-- demo and tutorial buttons -->

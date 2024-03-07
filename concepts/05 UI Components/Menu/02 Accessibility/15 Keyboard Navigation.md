@@ -39,6 +39,6 @@ A user can use the following keys to interact with the Menu component:
     </tr>
 </table>
 
-If you set [adaptivityEnabled](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled) to `true`, the Menu acts as a [TreeView](/Documentation/Guide/UI_Components/TreeView/Accessibility/#Keyboard_Navigation).
+If you set [adaptivityEnabled](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled') to `true`, the Menu acts as a [TreeView](/concepts/05%20UI%20Components/TreeView/03%20Accessibility/15%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/TreeView/Accessibility/#Keyboard_Navigation').
 
 #include common-code-register-key-handler

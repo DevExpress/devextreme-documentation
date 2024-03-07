@@ -14,10 +14,10 @@ Besides DevExtreme UI components, your client-side JavaScript (JS) applications 
 DevExpress Web API Service leverages the functionality of EF Core to implement CRUD operations required for your app.
 
 - **Multiple Authentication Strategies**     
-You application’s authentication mechanism can leverage built-in support for OAuth2, JWT, and OpenID. You can also implement a custom authentication strategy.
+You application’s authentication mechanism can leverage built-in support for OAuth2, JWT, and OpenID. You can also implement custom authentication.
 
 - **IDE Integration**    
-If you work in Visual Studio 2022+ for Windows, integrated Solution Wizard automatically scaffolds your Web Service to speed up application development.
+If you work in Visual Studio 2022+ for Windows, the integrated Solution Wizard automatically scaffolds your Web Service to speed up application development.
 
 Basic functionality of DevExpress Web API Service is available for free. Additional capabilities and services listed below are available as part of the [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml):
 
@@ -29,7 +29,7 @@ Basic functionality of DevExpress Web API Service is available for free. Additio
 
 #### Get Started: Add DevExpress Web API Service Functionality
 
-Refer to the following articles for guidance on how to get started:
+Refer to the following articles to get started:
 
 - [Predefined Users, Roles, and Permissions](https://docs.devexpress.com/eXpressAppFramework/119065/data-security-and-safety/security-system/security-object-model/predefined-users-roles-and-permissions): describes how to configure permissions for your ORM data models or your EF Core entities.
 

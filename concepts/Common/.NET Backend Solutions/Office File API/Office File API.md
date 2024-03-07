@@ -1,4 +1,4 @@
-You can export DevExtreme components in PDF (such as [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/), [Gantt](/Documentation/Guide/UI_Components/Gantt/Export_Data/), [Chart](/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/) and other data visualization components). But if you need a more advanced solution, check out [DevExpress Office File API](https://www.devexpress.com/products/net/office-file-api/pdf/) library.
+You can export DevExtreme components in PDF (such as [DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/), [Gantt](/Documentation/Guide/UI_Components/Gantt/Export_Data/), [Chart](/Documentation/ApiReference/UI_Components/dxChart/Configuration/export/) and other data visualization components). If you need a more advanced solution, review the [DevExpress Office File API](https://www.devexpress.com/products/net/office-file-api/pdf/) library.
 
 ![Office File API](/images/Common/office-file-api.png)
 
@@ -22,6 +22,6 @@ Discover other powerful libraries within the DevExpress Office File API suite, i
 
 - You need a license for the [DevExpress Office File API Subscription](https://www.devexpress.com/products/net/office-file-api/) or [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml) to use these capabilities in production code.
 
-- If you have DevExtreme installed on your machine, the [Office File API for .NET Core](https://docs.devexpress.com/OfficeFileAPI/15097/demo-application#net-core-demos) demo becomes available to explore.
+- If you have DevExtreme installed on your machine, you can also access the [Office File API for .NET Core](https://docs.devexpress.com/OfficeFileAPI/15097/demo-application#net-core-demos) demo.
 
 [/note]

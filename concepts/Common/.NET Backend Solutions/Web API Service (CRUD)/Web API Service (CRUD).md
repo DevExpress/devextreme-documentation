@@ -2,7 +2,7 @@
 title: Backend Web/REST API for JS Apps with Access Control Rights (Powered by EF Core) 
 ---
 
-Besides DevExtreme UI components, your client-side JavaScript (JS) applications often require an easy-to-setup and secure Web API backend for CRUD and custom operations with a database, authentication and authorization (role-based access control, permission management). To implement such functionality, you can use [DevExpress .NET App Security & Web API Service](https://www.devexpress.com/products/net/application_framework/security-web-api-service.xml). XAF's Solution Wizard includes a "1-Click" solution to create [ASP.NET Core Web/HTTP API services](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service) (via OData and Swagger/OpenAPI).
+Your client-side JavaScript (JS) applications may often require an easy-to-setup and secure Web API backend for CRUD and custom operations with a database, authentication and authorization (role-based access control, permission management). To implement such functionality, you can use [DevExpress .NET App Security & Web API Service](https://www.devexpress.com/products/net/application_framework/security-web-api-service.xml). XAF's Solution Wizard includes a "1-Click" solution to create [ASP.NET Core Web/HTTP API services](https://docs.devexpress.com/eXpressAppFramework/403394/backend-web-api-service) (via OData and Swagger/OpenAPI).
 
 [Read Tutorial](https://docs.devexpress.com/eXpressAppFramework/404449/backend-web-api-service/get-started-with-web-api-service) | [Watch Videos](https://www.youtube.com/watch?v=T7y4gwc1n4w&list=PL8h4jt35t1wiM1IOux04-8DiofuMEB33G)
 
@@ -39,4 +39,4 @@ Refer to the following articles to get started:
 
 Web API Service apps ship with built-in Role-based Access Control (RBAC) - a part of the [Security System module](https://docs.devexpress.com/eXpressAppFramework/113366/data-security-and-safety/security-system).
 
-You can implement fine-grain access control for object relationships, individual objects, or columns. For example, a user may be able to read the *Name* field, but not be able to modify *Salary*. Use straightforward API to check access permissions and customize UI accordingly. For example, you can mask protected editors or disable menu commands.
+You can implement access control for object relationships, individual objects, or columns. For example, a user may be able to read the *Name* field, but not be able to modify *Salary*. Use API to check access permissions and customize UI accordingly. For example, you can mask protected editors or disable menu commands.

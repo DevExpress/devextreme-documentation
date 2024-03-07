@@ -1,14 +1,14 @@
-If you need a reliable solution to monitor your Key Performance Indicators (KPIs) and track trends effortlessly, take a look at [DevExpress BI Dashboard](https://www.devexpress.com/products/net/dashboard/).
+If you need a reliable solution to monitor your Key Performance Indicators (KPIs) and track trends, take a look at [DevExpress BI Dashboard](https://www.devexpress.com/products/net/dashboard/).
 
 ![DevExpress BI Dashboard](/images/Common/Embedded_Dashboard.png)
 
 #### Discover Interactive Dashboards
 
-- Access a diverse range of data visualization components, including charts, cards, gauges, pivot grids, and more.
+- Access a range of data visualization components, including charts, cards, gauges, pivot grids, and more.
 
-- Use a drag-and-drop interface to customize your dashboard layout. BI Dashboard is built on DevExtreme UI components - you will not need to relearn.
+- Use a drag-and-drop interface to customize your dashboard layout. BI Dashboard is built on DevExtreme UI components - it will be easy to learn.
 
-- Allow users to create dashboards with [Dashboard Designer](https://docs.devexpress.com/Dashboard/116518/basic-concepts-and-terminology/dashboard-designer#web-dashboard---designer-mode) and seamlessly embed them with [Dashboard Viewer](https://docs.devexpress.com/Dashboard/116975/basic-concepts-and-terminology/dashboard-viewer#web-dashboard---viewer-mode).
+- Allow users to create dashboards with [Dashboard Designer](https://docs.devexpress.com/Dashboard/116518/basic-concepts-and-terminology/dashboard-designer#web-dashboard---designer-mode) and embed them with [Dashboard Viewer](https://docs.devexpress.com/Dashboard/116975/basic-concepts-and-terminology/dashboard-viewer#web-dashboard---viewer-mode).
 
 #### Data Integration
 

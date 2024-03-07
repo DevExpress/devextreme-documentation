@@ -2,9 +2,9 @@ You can export DevExtreme components in PDF (such as [DataGrid](/Documentation/A
 
 ![Office File API](/images/Common/office-file-api.png)
 
-Experience seamless PDF file manipulation with the [PDF Document API](https://docs.devexpress.com/OfficeFileAPI/16491/pdf-document-api), a versatile non-visual .NET library. Generate, convert, merge, split, edit, password-protect, and digitally sign PDF files effortlessly. Compatible with desktop and web applications across diverse platforms.
+Review the [PDF Document API](https://docs.devexpress.com/OfficeFileAPI/16491/pdf-document-api), a versatile non-visual .NET library. Generate, convert, merge, split, edit, password-protect, and digitally sign PDF files. Compatible with desktop and web applications across multiple platforms.
 
-Discover other powerful libraries within the DevExpress Office File API suite, including: 
+Discover other libraries within the DevExpress Office File API suite, including: 
 
 - [Word Processing Document API](https://docs.devexpress.com/OfficeFileAPI/17488/word-processing-document-api) 
 

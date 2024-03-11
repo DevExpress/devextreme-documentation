@@ -5,8 +5,8 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when an item (pane) is collapsed.
- 
+A function that is executed after an item (pane) is collapsed.
+
 ##### param(e): ui/splitter:ItemCollapsedEvent
 Information about the event.
 

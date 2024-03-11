@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when an item (pane) is expanded.
+A function that is executed after an item (pane) is expanded.
 
 ##### param(e): ui/splitter:ItemExpandedEvent
 Information about the event.

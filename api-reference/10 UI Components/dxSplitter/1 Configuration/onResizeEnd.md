@@ -5,13 +5,13 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is called when resize is finished.
+A function that is called when resizing ends.
 
 ##### param(e): ui/splitter:ResizeEndEvent
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel resize.
+Allows you to cancel resize operation.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
@@ -23,7 +23,7 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.handleElement): DxElement
-<!-- Description goes here -->
+A resize handle element.
 
 ---
 <!-- Description goes here -->

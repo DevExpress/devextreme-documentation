@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the size of a collapsible item (pane) when collapsed in pixels or as a percentage.  
 
 ---
-<!-- Description goes here -->
+[note] The **collapsedSize** value must not exceed [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize) or be less then [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize).

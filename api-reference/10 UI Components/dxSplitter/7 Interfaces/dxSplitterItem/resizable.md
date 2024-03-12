@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether an item (pane) is resizable.
 
 ---
-<!-- Description goes here -->
+If the pane is not resizable, the splitter bar handle is inactive.

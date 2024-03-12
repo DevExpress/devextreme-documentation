@@ -17109,6 +17109,9 @@
       "react": "DxSplitterItem",
       "vue": "DxSplitterItem"
     },
+    "dxSplitterItem.collapsedSize": {
+      "vue": "collapsed-size"
+    },
     "dxSplitterItem.maxSize": {
       "vue": "max-size"
     },
@@ -17197,9 +17200,6 @@
     "dxSplitterOptions.repaintChangesOnly": {
       "vue": "repaint-changes-only"
     },
-    "dxSplitterOptions.resizeMode": {
-      "vue": "resize-mode"
-    },
     "dxSplitterOptions.selectedIndex": {
       "vue": "selected-index"
     },
@@ -17211,6 +17211,9 @@
     },
     "dxSplitterOptions.selectedItems": {
       "vue": "selected-items"
+    },
+    "dxSplitterOptions.separatorSize": {
+      "vue": "separator-size"
     },
     "dxSplitterOptions.tabIndex": {
       "vue": "tab-index"
@@ -19607,9 +19610,6 @@
     },
     "enums.ResizeHandle": {
       "vue": "resize-handle"
-    },
-    "enums.ResizeMode": {
-      "vue": "resize-mode"
     },
     "enums.RevealMode": {
       "vue": "reveal-mode"

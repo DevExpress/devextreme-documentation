@@ -2,7 +2,7 @@
 id: dxGanttHeaderFilter.searchTimeout
 type: Number
 default: 500
-deprecated: 
+deprecated: Use [search.timeout](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/search/#timeout) instead.
 ---
 ---
 ##### shortDescription

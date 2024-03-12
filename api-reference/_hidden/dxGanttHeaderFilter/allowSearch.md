@@ -2,7 +2,7 @@
 id: dxGanttHeaderFilter.allowSearch
 type: Boolean
 default: false
-deprecated: 
+deprecated: Use [search.enabled](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/search/#enabled) instead.
 ---
 ---
 ##### shortDescription

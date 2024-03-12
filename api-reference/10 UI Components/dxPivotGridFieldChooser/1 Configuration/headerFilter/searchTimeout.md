@@ -2,7 +2,7 @@
 id: dxPivotGridFieldChooser.Options.headerFilter.searchTimeout
 type: Number
 default: 500
-deprecated: 
+deprecated: Use [search.timeout](/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/search/#timeout) instead.
 ---
 ---
 ##### shortDescription

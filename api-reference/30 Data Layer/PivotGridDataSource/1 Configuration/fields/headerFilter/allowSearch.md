@@ -2,7 +2,7 @@
 id: PivotGridDataSource.Options.fields.headerFilter.allowSearch
 type: Boolean
 default: undefined
-deprecated: 
+deprecated: Use [search.enabled](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/search/#enabled) instead.
 ---
 ---
 ##### shortDescription

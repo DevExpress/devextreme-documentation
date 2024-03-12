@@ -222,7 +222,7 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
     class App extends React.Component {
         constructor(props) {
             super(props);
-            this.synchronizeValues = this.synchronizeValues.bind(this);
+            this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this);
             this.customCallback = this.customCallback.bind(this);
             this.validateGroup = this.validateGroup.bind(this);
             this.state = { checkBoxValue: false };

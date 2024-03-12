@@ -12,8 +12,6 @@ Specifies the color of the pane's background.
 
 #include dataviz-chartscolor
 
-#include dataviz-chart-series-for-custom-styles
-
 ---
 ##### jQuery
 

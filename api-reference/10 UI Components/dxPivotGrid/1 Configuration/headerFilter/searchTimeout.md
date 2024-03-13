@@ -2,7 +2,7 @@
 id: dxPivotGrid.Options.headerFilter.searchTimeout
 type: Number
 default: 500
-deprecated: Use [search.timeout](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/search/#timeout) instead.
+deprecated: Use [search.timeout](/api-reference/40%20Common%20Types/15%20grids/HeaderFilterSearchConfig/timeout.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/search/#timeout') instead.
 ---
 ---
 ##### shortDescription

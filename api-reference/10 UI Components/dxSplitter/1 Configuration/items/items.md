@@ -2,6 +2,7 @@
 id: dxSplitter.Options.items
 firedEvents: optionChanged
 type: Array<String, dxSplitterItem, any>
+inheritsType: dxSplitterItem
 ---
 ---
 ##### shortDescription

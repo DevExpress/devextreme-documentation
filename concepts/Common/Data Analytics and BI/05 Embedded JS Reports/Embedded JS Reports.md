@@ -1,4 +1,4 @@
-[DevExpress Reporting](https://www.devexpress.com/subscriptions/reporting/) is a reporting solution designed for advanced reporting, and includes a rich design-time experience and extensive customization options.
+[DevExpress Reporting](https://www.devexpress.com/subscriptions/reporting/) is a reporting solution designed for advanced reporting, and includes a rich design-time experience and extensive customization options. With JavaScript Reporting you can embed reports in your jQuery application. 
 
 ![DevExpress Reporting](/images/Common/Embedded_Reports.png)
 
@@ -12,6 +12,8 @@
 
 - [Web Document Viewer](https://docs.devexpress.com/XtraReports/403569/web-reporting/common-features/devexpress-document-viewers) with an interactive preview of generated documents, allowing users to view, print, and export reports.
 
-DevExpress Reporting is compatible across various platforms including JavaScript applications based on Angular, React, and Vue frameworks, and ASP.NET Core.
+DevExpress Reporting is compatible across various platforms including JavaScript and ASP.NET Core.
 
 [note] You can select from a range of pricing options, including standalone [Reporting subscriptions](https://www.devexpress.com/subscriptions/reporting/) or the [Universal package](https://www.devexpress.com/subscriptions/universal.xml) that includes DevExpress Reporting and DevExtreme.
+
+[tags] jquery

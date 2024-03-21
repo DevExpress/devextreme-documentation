@@ -2,9 +2,9 @@
 
 Vite (pronounced "veet") is a web development framework from the creators of Vue.js. It offers an intuitive API, fast build times, and efficient dependency bundling thanks to its use of native ESM modules.
 
-Unlike its major competitors — Next.js and `create-react-app`, Vite is compatible with a variety of front-end solutions. In addition to its original companion framework — Vue.js — you can use Vite with React.js, Svelte, or even vanilla JavaScript.
+Unlike its major competitors — Next.js and `create-react-app` — Vite is compatible with a variety of front-end solutions. In addition to its original companion framework — Vue.js — you can use Vite with React.js, Svelte, or even vanilla JavaScript.
 
-In this tutorial, we'll create a new Vite application with a Vue.js front-end. The application will pull data from the publicly available [Cat Facts API](https://catfact.ninja) and display it with the DevExpress Data Grid.
+In this tutorial, we'll create a new Vite application with a Vue.js frontend. The application will pull data from the publicly available [Cat Facts API](https://catfact.ninja) and display it with the DevExpress Data Grid.
 
 * [1. Create a new Vite project](#1-create-a-new-vite-project)
 * [2. Configure DevExtreme dependencies](#2-configure-devextreme-dependencies)
@@ -141,7 +141,7 @@ Use the `template` tag to initialize the comoponent, and attach it to the aforem
     <DxDataGrid
         id="data-grid"
         :data-source="catFactStore" // Load the CustomStore from the script
-        :row-alternation-enabled="true" // Apply a grey background to even rows for greater visibility 
+        :row-alternation-enabled="true" // Apply a gray background to even rows for greater visibility 
         :show-column-lines="true" // Display column borders
     >
     </DxDataGrid>
@@ -157,4 +157,4 @@ You don't need to relaunch the development server to apply these changes. Just r
 
 DevExtreme components are powerful, easy to use, and fully compatible with Vite. View our [application templates](https://js.devexpress.com/Vue/Templates/) and [demos](https://js.devexpress.com/Vue/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
 
-Read the [Vite.js documentation](https://vitejs.dev/guide/) for more information the Vite framework.
+Read the [Vite.js documentation](https://vitejs.dev/guide/) for more information on the Vite framework.

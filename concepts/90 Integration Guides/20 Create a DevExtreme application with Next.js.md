@@ -9,7 +9,7 @@ This article explains how to create a simple Next.js application, and populate i
   - [Clean-up](#clean-up)
   - [View the server-rendered page](#view-the-server-rendered-page)
 - [3. Add a DevExtreme Data Grid](#3-add-a-devextreme-data-grid)
-  - [Install the dependencies](#install-the-dependencies)
+  - [Install dependencies](#install-the-dependencies)
   - [Set up the necessary imports](#set-up-the-necessary-imports)
   - [Set up a Data Source](#set-up-a-data-source)
   - [Configure the Data Grid](#configure-the-data-grid)
@@ -111,7 +111,7 @@ Turn JavaScript back on to continue the tutorial.
 
 ## 3. Add a DevExtreme Data Grid
 
-### Install the dependencies
+### Install dependencies
 
 Update your `package.json` file to include the dependencies necessary to use DevExtreme components:
 
@@ -158,7 +158,7 @@ Create a new React component with the name `DemoGrid`. Use this component to def
             <>
                 <DataGrid
                     dataSource={dataItems} // Assign the data source
-                    rowAlternationEnabled={true} // Use the grey background to highlight even grid rows and improve the readability
+                    rowAlternationEnabled={true} // Use the gray background to highlight even grid rows and improve readability
                     showBorders={true} // Display grid borders
                 > 
                 </DataGrid>
@@ -168,7 +168,7 @@ Create a new React component with the name `DemoGrid`. Use this component to def
 
 ### Insert the Data Grid component into the page
 
-Modify the Home function io include the `DemoGrid` component we created in the previous step:
+Modify the Home function to include the `DemoGrid` component we created in the previous step:
 
 <!--TypeScript-->
     export default function Home() {
@@ -205,4 +205,4 @@ DevExtreme renders the Data Grid on the client, even if the rest of the page is 
 
 DevExtreme components are powerful, easy to use, and fully compatible with Next.js. View our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/React/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
 
-Read the [Next.js documentation](https://nextjs.org/docs) for more information the Next.js framework.
+Read the [Next.js documentation](https://nextjs.org/docs) for more information on the Next.js framework.

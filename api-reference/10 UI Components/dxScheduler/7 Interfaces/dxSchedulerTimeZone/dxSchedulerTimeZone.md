@@ -2,6 +2,7 @@
 id: dxSchedulerTimeZone
 module: time_zone_utils
 export: dxSchedulerTimeZone
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

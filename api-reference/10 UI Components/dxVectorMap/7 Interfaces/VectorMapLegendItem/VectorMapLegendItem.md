@@ -4,6 +4,7 @@ type: Object
 inherits: BaseLegendItem
 module: viz/vector_map
 export: LegendItem
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

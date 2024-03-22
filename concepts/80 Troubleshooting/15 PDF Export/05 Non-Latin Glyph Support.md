@@ -50,7 +50,7 @@ If you use the *exportGantt* method, you can take advantage of the dedicated [fo
     },
     ).then((doc) => doc.save('gantt.pdf'));
 
-Warning: The **fontObject** option expects a value of the **Object** type. If you pass a **string** to the parameter, the TypeScript 
+Warning: The **fontObject** option expects a value of the **Object** type. If you pass a **string** to the parameter, the TypeScript compiler yields an error.
 
 #### DataGrid
 

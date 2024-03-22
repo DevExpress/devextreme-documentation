@@ -8,7 +8,7 @@ export: exportDataGrid
 Exports grid data to a PDF file.
 
 ##### return: Promise<void>
-A Promise that resolves when grid data is ready for export. It is a native <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that resolves when grid data is ready for export. If you use jQuery, the return value is a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a>. In other cases, it's a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native JavaScript Promise</a>.
 
 ##### param(options): PdfExportDataGridProps
 Export settings.
@@ -18,9 +18,9 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
-This method requires <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to export data and create PDF files.
+This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to export data and create PDF files.
 
-If you use jQuery, declare the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> CDN links within the `<head>` tag of the HTML markup (see an example below). If you use Angular, Vue or React, install the library with the following command:
+If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library within the `<head>` tag. If you use Angular, Vue, or React, install the library with the following command:
 
     npm install jspdf
 

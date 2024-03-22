@@ -8,7 +8,7 @@ export: exportDataGrid
 Exports grid data to a PDF file.
 
 ##### return: Promise<void>
-A Promise that resolves when grid data is ready for export. It is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native JavaScript Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that resolves when grid data is ready for export. If you use jQuery, the return value is a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a>. In other cases, it's a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native JavaScript Promise</a>.
 
 ##### param(options): PdfExportDataGridProps
 Export settings.

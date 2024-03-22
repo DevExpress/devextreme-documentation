@@ -33,6 +33,7 @@ To specify an initial property value in this mode, add the `default` prefix to t
             height={600}
             editing={false}
             defaultCurrentDate={new Date(2019, 4, 22)}
+            currentDate={new Date(2019, 4, 22)}
             startDayHour={9}
             />
         );

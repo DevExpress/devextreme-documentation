@@ -1,6 +1,6 @@
 Uncontrolled DevExtreme components maintain and update their own state.
 
-To specify an initial property value in this mode, add the `default` prefix to the property name. In the example below, the `defaultCurrentDate` attribute defines the `currentDate` property's initial value.
+To specify an initial property value in this mode, add the `default` prefix to the property name. In the example below, the `defaultCurrentDate` attribute defines the initial value of the `currentDate` property.
 
     <!-- tab: App.jsx -->
     import React from 'react';

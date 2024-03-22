@@ -24,7 +24,7 @@ Use ISO 8601 date strings to ensure that DevExtreme handles your data with consi
 
 ### Set the format manually
 
-If the component's initial data source is empty, you have to manually specify the expected data string format. Otherwise, DevExtreme cannot handle date strings that users input.
+If the component's initial data source is empty, you have to manually specify the expected data string format. Otherwise, DevExtreme cannot handle user-specified date strings.
 
 Specify an ISO 8601 format with the **dateSerializationFormat** property. This property is compatible with all DevExtreme components that allow users to input date values:
 

@@ -10,7 +10,7 @@ When DevExtreme initializes a component, and the component's data source include
 
 - `"yyyy-MM-ddTHH:mm:ssx"` - date and time with a timezone
 
-DevExtreme maintains compatibility with these date string formats. The framework can serialize such data straight away.
+DevExtreme guarantees correct serialization of such data.
 
 ### Non-standard date strings
 
@@ -24,7 +24,7 @@ Use ISO 8601 date strings to ensure that DevExtreme handles your data with consi
 
 ### Set the format manually
 
-If the component's initial data source is empty, you have to manually specify the expected data string format. Otherwise, DevExtreme cannot handle date strings that appear because of user input.
+If the component's initial data source is empty, you have to manually specify the expected data string format. Otherwise, DevExtreme cannot handle date strings that users input.
 
 Specify an ISO 8601 format with the **dateSerializationFormat** property. This property is compatible with all DevExtreme components that allow users to input date values:
 

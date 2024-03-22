@@ -19,21 +19,21 @@ In this tutorial, we'll create a new Vite application with a Vue.js frontend. Th
 
 Use the following command to launch the Vite project wizard:
 
-<!--Shell-->
+    <!--Shell-->
     npm create vite@latest
 
 ![Vite CLI wizard](/images/Vite/create-vite.png)
 
-Answer wizard prompts to select your project name, your front-end framework, and your programming language (JavaScript or TypeScript).
+Answer the wizard's prompts to select your project name, your front-end framework, and your programming language (JavaScript or TypeScript).
 
 The Vite wizard does not install project dependencies automatically. Enter your project directory and run `npm install`:
 
-<!--Shell-->
+    <!--Shell-->
     cd vite-project; npm install
 
 To start the development server, execute the following command:
 
-<!--Shell-->
+    <!--Shell-->
     npm run dev
 
 ![Vite server up and running](/images/Vite/vite-ready.png)
@@ -42,7 +42,7 @@ To start the development server, execute the following command:
 
 Add the following dependencies to the `package.json` file:
 
-<!--JSON-->
+    <!--JSON-->
     "dependencies": {
         "devextreme": "^23.2",
         "devextreme-vue": "^23.2",
@@ -51,14 +51,14 @@ Add the following dependencies to the `package.json` file:
 
 Install the new dependencies:
 
-<!--Shell-->
+    <!--Shell-->
     npm install
 
 ## 3. Remove unnecessary code
 
 1. Open the `srtc/App.vue` file, and replace its content with the following two tags:
 
-    <!--TypeScript-->
+        <!--TypeScript-->
         <script setup lang="ts">
         </script>
 
@@ -73,21 +73,21 @@ Install the new dependencies:
 
 1. Add the following `import` statement to the `src/main.ts` file:
 
-    <!--TypeScript-->
+        <!--TypeScript-->
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     This statement applies the `fluent` theme to your application. You can select a different DevExtreme theme if you wish.
 
 2. To apply this theme throughout your application, edit the `index.html` file in the project's root directory. Add the `dx-viewport` class to the `body` tag:
 
-    <!--HTML-->
+        <!--HTML-->
         <body class="dx-viewport">
 
 ## 5. Add a new component
 
 1. Create a new file for the component --- `src/components/CatFactGrid.vue`. Populate it with the following two tags:
 
-    <!--TypeScript-->
+        <!--TypeScript-->
         <script setup lang="ts">
             // component setup
         </script>
@@ -97,7 +97,7 @@ Install the new dependencies:
 
 2. Modify the `src/App.vue` file to display our new component:
 
-    <!--TypeScript-->
+        <!--TypeScript-->
         <script setup lang="ts">
         import CatFactGrid from './components/CatFactGrid.vue'
         </script>
@@ -110,7 +110,7 @@ Install the new dependencies:
 
 Go back to the `CatFactGrid.vue` file.  The component is currently empty. Use the `script` tag to set up a DevExtreme Data Grid:
 
-<!--TypeScript-->
+    <!--TypeScript-->
     <script setup lang="ts">
         import { DxDataGrid } from "devextreme-vue/data-grid"; // Import the DevExtreme Data Grid component
         import CustomStore from "devextreme/data/custom_store"; // Import the CustomStore object
@@ -126,7 +126,7 @@ Go back to the `CatFactGrid.vue` file.  The component is currently empty. Use th
         },
         });
 
-        function handleErrors(response: Response) { // Handle failing network requests
+        function handleErrors(response: Response) { // Handle network request failure
         if (!response.ok) {
             throw Error(response.statusText);
         }
@@ -134,9 +134,9 @@ Go back to the `CatFactGrid.vue` file.  The component is currently empty. Use th
         }
     </script>
 
-Use the `template` tag to initialize the comoponent, and attach it to the aforementioned `CustmoStore`:
+Use the `template` tag to initialize the component, and attach it to the aforementioned `CustomStore`:
 
-<!--TypeScript-->
+    <!--TypeScript-->
     <template>
     <DxDataGrid
         id="data-grid"

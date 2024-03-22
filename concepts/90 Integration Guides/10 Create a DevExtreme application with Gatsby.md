@@ -16,17 +16,17 @@ DevExtreme's powerful client-side components complement Gatsby well, which makes
 
 Install the `gatsby-cli` npm package. This command line tool generates, builds, and deploys Gatsby websites.
 
-<!--Shell-->
+  <!--Shell-->
   npm install -g gatsby-cli
 
 Launch the Gatsby wizard to generate a new website:
 
-<!--Shell-->
+  <!--Shell-->
   gatsby new
 
 Launch the development server to see a live preview of the website:
 
-<!--Shell-->
+  <!--Shell-->
   cd my-website
   gatsby develop
 
@@ -40,7 +40,7 @@ If you get stuck, consult [Gatsby documentation](https://www.gatsbyjs.com/docs/t
 
 Gatsby uses React to render content. Edit the `src/pages/index.tsx` file to change the home page:
 
-<!--TypeScript-->
+  <!--TypeScript-->
   import * as React from "react";
   import type { HeadFC, PageProps } from "gatsby";
   const IndexPage: React.FC<PageProps> = () => {
@@ -93,7 +93,7 @@ If you deploy your website on Netlify, Gatsby renders your content on the server
 
 We're ready to add a DevExtreme Data Grid to our application. First, add DevExtreme to your project dependencies (`.package.json`):
 
-<!--JSON-->
+  <!--JSON-->
   "dependencies": {
       "devextreme": "^23.1.3",
       "devextreme-react": "^23.1.3", 
@@ -103,7 +103,7 @@ We're ready to add a DevExtreme Data Grid to our application. First, add DevExtr
 
 Run `npm install` to install new dependencies. When the installation is complete, add a DevExtreme grid to the index page:
 
-<!--TypeScript-->
+  <!--TypeScript-->
   import * as React from "react";
   import type { HeadFC, PageProps } from "gatsby";
   import DataGrid, {
@@ -186,7 +186,7 @@ If you want to apply a single DevExtreme theme to your entire website, add a fil
 
 Add the following `import` statement to the file:
 
-<!--JavaScript-->
+  <!--JavaScript-->
   import 'devextreme/dist/css/dx.light.css';
 
 This statement applies the `light` theme to the DevExtreme grid.
@@ -199,7 +199,7 @@ Restart the Gatsby server to compile new assets. The grid should look like this:
 
 If you want to apply a DevExtreme theme to a specific page, do not import this theme globally. Instead, add a `link` to the `Head` of the target page:
 
-<!--JavaScript-->
+  <!--JavaScript-->
   export const Head: HeadFC = () => { return (
   <>
   <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/23.1.3/css/dx.light.css" /> <title>Home Page</title>

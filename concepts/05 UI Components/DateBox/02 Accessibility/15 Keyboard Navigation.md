@@ -8,13 +8,17 @@ A user can use the following keys to interact with the DateBox component:
     </tr>
     <tr></tr>
     <tr>
-        <td rowspan="2">All</td>
+        <td rowspan="3">All</td>
         <td style="font-style:italic; text-align:center">Alt + &darr; / Alt + &uarr;</td>
         <td>Opens/closes the value picker.</td>
     </tr>
     <tr>
         <td>Esc</td>
         <td>Closes the date/time picker.</td>
+    </tr>
+    <tr>
+        <td>A / P</td>
+        <td>Switches <a href="/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type">time</a> to AM/PM respectively.</td>
     </tr>
     <tr>
         <td rowspan="10">Calendar</td>

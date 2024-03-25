@@ -20,7 +20,7 @@ Export settings.
 
 This method uses the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ library to export data and create PDF files.
 
-If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library within the `<head>` tag. If you use Angular, Vue or React, install the library with the following command:
+If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library within the `<head>` tag. If you use Angular, Vue, or React, install the library with the following command:
 
     npm install jspdf
 

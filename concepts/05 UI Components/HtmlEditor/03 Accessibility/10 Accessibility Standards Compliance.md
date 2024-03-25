@@ -31,7 +31,7 @@ The HtmlEditor component complies to all <a href="https://www.access-board.gov/i
         <ul>
                 <li>You cannot set header lines in exported tables.</li>
                 <li>Pictures are exported without "alt" attributes.</li>
-                <li>Pages do not have language settings.</li>
+                <li>Pages and separate page parts do not have language settings.</li>
             </ul>    
         </td>
     </tr>

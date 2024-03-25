@@ -1,4 +1,4 @@
-Users can use the following keys to interact with the UI component:
+A user can use the following keys to interact with the HtmlEditor component: 
 
 <table class="dx-table">
     <tr>
@@ -85,10 +85,3 @@ Users can use the following keys to interact with the UI component:
 </table>
 
 #include common-code-register-key-handler
-
-#####See Also#####
-#include common-link-callmethods
-- [HtmlEditor Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview)
-- [HtmlEditor API Reference](/api-reference/10%20UI%20Components/dxHtmlEditor '/Documentation/ApiReference/UI_Components/dxHtmlEditor/')
-
-[tags]HTML Editor, HtmlEditor, accessibility, keyboard shortcuts

@@ -1,4 +1,4 @@
-Angular v16 and up includes a popular capability called "Angular Signals". It is a new, streamlined way to track changes in page data, and react to these changes.
+Angular v16 and up include a popular capability called "Angular Signals". It is a new, streamlined way to track changes in page data, and react to these changes.
 
 **Signals** are wrappers that listen to changes in page data. You can create two kinds of signals:
 

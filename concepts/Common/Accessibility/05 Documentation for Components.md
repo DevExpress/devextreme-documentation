@@ -4,16 +4,16 @@ Refer to the following table for detailed information about each component's acc
     <thead>
         <tr>
             <th>Component<br></th>
-            <th>Right-to-Left Support</th>
-            <th>Keyboard Navigation Support</th>
-            <th>Screen Reader Support</th>
+            <th>Right-to-Left</th>
+            <th>Keyboard Navigation</th>
+            <th>Screen Reader</th>
             <th>Contrast Color Theme</th>
-            <th>Mobile Device Support</th>
-            <th><a href="https://developer.chrome.com/docs/lighthouse/" target="_blank">Lighthouse</a> Accessibility Validation</th>
-            <th><a href="https://www.deque.com/axe/" target="_blank">Axe</a> Accessibility Validation</th>
-            <th><a href="https://wave.webaim.org/" target="_blank">WAVE</a> Accessibility Validation</th>
-            <th><a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a> Support</th>
-            <th><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2.x</a> Support</th>
+            <th>Mobile Device</th>
+            <th><a href="https://developer.chrome.com/docs/lighthouse/" target="_blank">Lighthouse</a> Validation</th>
+            <th><a href="https://www.deque.com/axe/" target="_blank">Axe</a> Validation</th>
+            <th><a href="https://wave.webaim.org/" target="_blank">WAVE</a> Validation</th>
+            <th><a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a></th>
+            <th><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2.x</a></th>
         </tr>
     </thead>
     <tbody>

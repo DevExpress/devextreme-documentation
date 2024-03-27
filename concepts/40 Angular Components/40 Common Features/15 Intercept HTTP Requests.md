@@ -5,6 +5,7 @@ DevExtreme Angular components like [DataSource](/Documentation/ApiReference/Data
 
     <!-- tab: app.component.ts -->
     import DataSource from 'devextreme/data/data_source';
+    import ODataStore from 'devextreme/data/odata/store';
     import { DxHttpModule } from 'devextreme-angular/http';
 
     @Component({
@@ -17,7 +18,10 @@ DevExtreme Angular components like [DataSource](/Documentation/ApiReference/Data
 
     export class AppComponent {
         dataSource = new DataSource({
-            // DataSource configuration
+            store: new ODataStore({
+                version: 2,
+                url: 'http://www.example.com/Northwind.svc',
+            }),
         });
 
         constructor() {

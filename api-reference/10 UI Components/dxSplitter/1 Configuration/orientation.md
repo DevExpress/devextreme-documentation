@@ -5,7 +5,7 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-Specifies item orientation.
+Specifies item orientation (layout).
 
 ---
 <!-- Description goes here -->

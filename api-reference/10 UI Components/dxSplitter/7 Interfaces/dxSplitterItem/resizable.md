@@ -8,4 +8,3 @@ default: true
 Specifies whether an item (pane) is resizable.
 
 ---
-If the pane is not resizable, the splitter bar handle is inactive.

@@ -1,4 +1,4 @@
-DevExtreme Angular components like [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/), [FileUploader](/Documentation/ApiReference/UI_Components/dxFileUploader/), and [Map](/Documentation/ApiReference/UI_Components/dxMap/) require additional `DxHttpModule` import to intercept requests with Angular [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor).
+To intercept Ajax requests in DevExtreme Angular components like [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/), [FileUploader](/Documentation/ApiReference/UI_Components/dxFileUploader/), and [Map](/Documentation/ApiReference/UI_Components/dxMap/) with Angular [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor), import additional `DxHttpModule`.
 
 ---
 ##### Angular

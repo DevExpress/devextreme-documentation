@@ -1,6 +1,6 @@
 # Create a DevExtreme application with Gatsby
 
-Gatsby is a prominent member of the latest wave of static website generators. It is an opinionated library with a deep pool of capabilities that includes server-side rendering (for pages that display dynamic content) and [GraphQL support](/Documentation/Guide/Integration_Guies/Optimize_Your_Data_Grids_with_GraphQL).
+Gatsby is a prominent member of the latest wave of static website generators. It is an opinionated library with a deep pool of capabilities that includes server-side rendering (for pages that display dynamic content) and GraphQL support.
 
 DevExtreme's powerful client-side components complement Gatsby well, which makes this combo appealing for web developers. This article explains how to use the two products together.
 

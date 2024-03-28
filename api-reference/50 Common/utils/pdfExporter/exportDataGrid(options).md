@@ -26,7 +26,7 @@ If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF
 
 You can call this method at any point in your application.
 
-Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Concepts/Troubleshooting/PDF_Export') for more information.
+Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/Documentation/Guide/Troubleshooting/PDF_Export/) for more information.
 
 In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a standalone button fires this method:
 

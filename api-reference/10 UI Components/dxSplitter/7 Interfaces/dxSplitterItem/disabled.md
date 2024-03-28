@@ -1,7 +1,6 @@
 ---
-id: dxSplitter.Options.separatorSize
-type: Number
-default: 8
+id: dxSplitterItem.disabled
+hidden: 
 ---
 ---
 ##### shortDescription

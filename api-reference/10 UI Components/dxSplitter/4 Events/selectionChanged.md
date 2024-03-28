@@ -1,7 +1,7 @@
 ---
-id: dxSplitter.Options.separatorSize
-type: Number
-default: 8
+id: dxSplitter.selectionChanged
+type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

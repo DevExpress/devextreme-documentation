@@ -29,4 +29,4 @@ For instance, you can specify the `"yyyy-MM-dd"` date pattern.
 [/note]
 
 #####See Also#####
-- [Troubleshooting - Date String Handling Issues](/Documentation/Guide/Troubleshooting/Date_String_Handling_Issues)
+- [Troubleshooting - Date String Handling Issues](/Documentation/Guide/Troubleshooting/Date_String_Handling_Issues/)

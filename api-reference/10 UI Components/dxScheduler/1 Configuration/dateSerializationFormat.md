@@ -20,6 +20,6 @@ default: undefined
 }
 
 #####See Also#####
-- [Troubleshooting - Date String Handling Issues](/Documentation/Guide/Troubleshooting/Date_String_Handling_Issues)
+- [Troubleshooting - Date String Handling Issues](/Documentation/Guide/Troubleshooting/Date_String_Handling_Issues/)
 
 <!-- import * from 'api-reference\10 UI Components\GridBase\1 Configuration\dateSerializationFormat.md' -->

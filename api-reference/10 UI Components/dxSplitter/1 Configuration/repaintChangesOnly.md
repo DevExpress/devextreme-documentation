@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to repaint only those elements whose data changed.
 
 ---
 <!-- Description goes here -->

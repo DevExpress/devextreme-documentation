@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [itemCollapsed]({basewidgetpath}/Events/#itemCollapsed) event handler's argument.
 
 ---
 <!-- Description goes here -->

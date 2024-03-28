@@ -4,28 +4,28 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when an item (pane) is right-clicked or pressed.
 
 ##### param(e): ui/splitter:ItemContextMenuEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The item's data.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The item's index.
 
 ---
 <!-- Description goes here -->

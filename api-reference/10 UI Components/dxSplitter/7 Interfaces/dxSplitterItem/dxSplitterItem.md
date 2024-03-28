@@ -5,7 +5,7 @@ inherits: CollectionWidgetItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A splitter item (pane).
 
 ---
 <!-- Description goes here -->

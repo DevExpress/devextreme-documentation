@@ -1,6 +1,6 @@
 ${{widget_works_with}}
 
-Depending on your data source, bind the {WidgetName} to data as follows. ${{object_structure_notes}}
+Depending on your data source, bind {WidgetName} to data as follows. ${{object_structure_notes}}
 
 - **Data Array**        
 Assign the array to the **dataSource** option${{array_key_note}}. ${{array_view_demo}}

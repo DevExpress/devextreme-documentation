@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when resizing starts.
 
 ---
-<!-- Description goes here -->
+Main article: [onResizeStart](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#onResizeStart).

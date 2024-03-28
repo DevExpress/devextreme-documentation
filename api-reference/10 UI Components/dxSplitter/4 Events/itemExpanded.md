@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after an item (pane) is expanded.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemExpanded](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#onItemExpanded).

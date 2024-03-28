@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to allow keyboard navigation.
 
 ---
 <!-- Description goes here -->

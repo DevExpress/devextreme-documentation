@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when resizing ends.
 
 ---
-<!-- Description goes here -->
+Main article: [onResizeEnd](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#onResizeEnd).

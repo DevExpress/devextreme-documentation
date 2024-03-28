@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether an item (pane) is initially collapsed.
 
 ---
 <!-- Description goes here -->

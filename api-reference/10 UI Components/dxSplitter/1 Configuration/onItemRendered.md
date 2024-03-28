@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after an item (pane) is rendered.
 
 ##### param(e): ui/splitter:ItemRenderedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+The UI component's container.
 
 ##### field(e.itemData): Object
-<!-- Description goes here -->
+The rendered item's data.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The rendered item's index.
 
 ---
 <!-- Description goes here -->

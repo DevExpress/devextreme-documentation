@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after an item (pane) is collapsed.
 
 ---
-<!-- Description goes here -->
+Main article: [onItemCollapsed](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#onItemCollapsed).

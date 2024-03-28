@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the maximum size of an item (pane) in pixels or as a percentage. 
 
 ---
 <!-- Description goes here -->

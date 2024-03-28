@@ -6,15 +6,6 @@ Unlike its major competitors — Next.js and `create-react-app` — Vite is comp
 
 In this tutorial, we'll create a new Vite application with a Vue.js frontend. The application will pull data from the publicly available [Cat Facts API](https://catfact.ninja) and display it with the DevExpress Data Grid.
 
-* [1. Create a new Vite project](#1-create-a-new-vite-project)
-* [2. Configure DevExtreme dependencies](#2-configure-devextreme-dependencies)
-* [3. Remove unnecessary code](#3-remove-unnecessary-code)
-* [4. Set up a DevExtreme theme](#4-set-up-a-devextreme-theme)
-* [5. Add a new component](#5-add-a-new-component)
-* [6. Configure the Data Grid](#6-configure-the-data-grid)
-* [7. View the results](#7-view-the-results)
-* [8. Next steps](#8-next-steps)
-
 ## 1. Create a new Vite project
 
 Use the following command to launch the Vite project wizard:

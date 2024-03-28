@@ -4,14 +4,6 @@ Gatsby is a prominent member of the latest wave of static website generators. It
 
 DevExtreme's powerful client-side components complement Gatsby well, which makes this combo appealing for web developers. This article explains how to use the two products together.
 
-* [1. Create an empty Gatsby website](#1-create-an-empty-gatsby-website)
-* [2. Add static content](#2-add-static-content)
-* [3. (Optional) Use Server-Side Rendering with Netlify](#3-optional-use-server-side-rendering-with-netlify)
-* [4. Add DevExtreme to your application](#4-add-devextreme-to-the-application)
-* [5. Apply a DevExtreme theme](#5-apply-a-devextreme-theme)
-* [6. Next Steps](#6-next-steps)
-
-
 ## 1. Create an empty Gatsby website
 
 Install the `gatsby-cli` npm package. This command line tool generates, builds, and deploys Gatsby websites.

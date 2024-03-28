@@ -10,9 +10,9 @@ If you expect your users to input non-ASCII text, follow the steps outlined in t
 
 ### How to embed a Unicode font into your PDF
 
-The pdfExporter module/namespace includes two dedicated methods for PDF export --- *exportGantt* and *exportDataGrid*.
+The pdfExporter module/namespace includes two dedicated methods for PDF export — *exportGantt* and *exportDataGrid*.
 
-The [exportGantt(options)](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method includes a dedicated property that allows you to specify a custom PDF font. The [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') property does not include that option. You have to use standard *jsPDF* methods to embed a custom font into your PDF.
+The [exportGantt(options)](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method includes a dedicated property that allows you to specify a custom PDF font. The [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') property does not include that option. Use *jsPDF* methods to embed a custom font into your Data Grid PDF.
 
 #### Preparation
 
@@ -20,22 +20,21 @@ To use a font with jsPDF, convert the TTF file into a binary string. The develop
 
 The tool generates a JavaScript file with a **font** variable:
 
-    <!---JavaScript--->
+<!---JavaScript--->
 
     var fontFace = 'AAEAAAAWAQAABABgR0RFRivV/fMAAA <...>'
 
 Import the variable to use it in your DevExtreme project:
 
-    <!---JavaScript--->
+<!---JavaScript--->
 
     import fontFace from './myNewFont';
 
 #### Gantt
 
-If you use the *exportGantt* method, you can take advantage of the dedicated [font](/api-reference/50%20Common/Object%20Structures/PdfExportGanttProps/font.md '/Documentation/ApiReference/CommonStructures/Utils/pdfExportGanttProps/font') parameter:
+If you use the *exportGantt* method, you can take advantage of the dedicated [font](/api-reference/50%20Common/Object%20Structures/PdfExportGanttProps/font.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/') parameter:
 
-    <!---JavaScript--->
-
+<!---JavaScript--->
     import myfont from './myFont';
     import { exportGantt as exportGanttToPdf } from 'devextreme/pdf_exporter';
 
@@ -58,8 +57,7 @@ You cannot pass the font directly to the **exportDataGrid** method. You need to 
 
 Find the line of code where you initialize jsPDF. Add the font before you call the **exportDataGrid** method:
 
-    <!---JavaScript--->
-
+<!---JavaScript--->
     import myfont from './myFont';
 
     const doc = new jsPDF();

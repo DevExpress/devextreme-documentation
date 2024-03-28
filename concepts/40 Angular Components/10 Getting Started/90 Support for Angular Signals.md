@@ -7,7 +7,7 @@ Angular v16 and up include a popular capability called "Angular Signals". It is 
 
 You can respond to signals with **effects**. Effects are functions that run when one or more signals fire.
 
-DevExtreme components are fully compatible with Angular Signals. If you want to integrate this capability into your application, you can examine a sample DevExtreme application ) with signals and effects.
+DevExtreme components are fully compatible with Angular Signals. If you want to integrate this capability into your application, you can examine a sample DevExtreme application with signals and effects.
 
 #include btn-open-codesandbox with {
     href: "https://codesandbox.io/p/devbox/dx-signals-2m8hq8?file=/src/app/app.component.ts:"

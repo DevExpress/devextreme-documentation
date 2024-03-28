@@ -2,6 +2,7 @@
 id: dxDiagramAddShapeFromToolboxArgs
 module: ui/diagram
 export: dxDiagramAddShapeFromToolboxArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

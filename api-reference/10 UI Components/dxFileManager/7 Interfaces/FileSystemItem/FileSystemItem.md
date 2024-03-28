@@ -2,6 +2,7 @@
 id: FileSystemItem
 module: file_management/file_system_item
 export: default
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

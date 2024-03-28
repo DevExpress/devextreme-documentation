@@ -2,6 +2,7 @@
 id: dxDiagramAddShapeArgs
 module: ui/diagram
 export: dxDiagramAddShapeArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

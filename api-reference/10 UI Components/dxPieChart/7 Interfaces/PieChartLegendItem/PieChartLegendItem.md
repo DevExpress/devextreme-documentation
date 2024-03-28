@@ -4,6 +4,7 @@ type: Object
 inherits: BaseLegendItem
 module: viz/pie_chart
 export: LegendItem
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

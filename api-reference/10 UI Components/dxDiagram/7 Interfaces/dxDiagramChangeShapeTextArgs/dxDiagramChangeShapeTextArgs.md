@@ -2,6 +2,7 @@
 id: dxDiagramChangeShapeTextArgs
 module: ui/diagram
 export: dxDiagramChangeShapeTextArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

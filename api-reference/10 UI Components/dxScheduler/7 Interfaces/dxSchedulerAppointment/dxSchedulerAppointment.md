@@ -4,6 +4,7 @@ type: Object
 inherits: CollectionWidgetItem
 module: ui/scheduler
 export: Appointment
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

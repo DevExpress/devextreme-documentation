@@ -4,6 +4,7 @@ type: Object
 inherits: BaseLegendItem
 module: viz/funnel
 export: LegendItem
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

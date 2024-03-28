@@ -2,6 +2,7 @@
 id: dxDiagramBeforeChangeShapeTextArgs
 module: ui/diagram
 export: dxDiagramBeforeChangeShapeTextArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

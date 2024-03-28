@@ -2,6 +2,7 @@
 id: dxDiagramChangeConnectorTextArgs
 module: ui/diagram
 export: dxDiagramChangeConnectorTextArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

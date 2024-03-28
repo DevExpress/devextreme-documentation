@@ -2,6 +2,7 @@
 id: dxDiagramDeleteShapeArgs
 module: ui/diagram
 export: dxDiagramDeleteShapeArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

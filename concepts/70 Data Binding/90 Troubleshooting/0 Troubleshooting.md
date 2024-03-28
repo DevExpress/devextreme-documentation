@@ -1,1 +1,0 @@
-This section describes common issues related to data binding and gives recommendations that help you resolve them.

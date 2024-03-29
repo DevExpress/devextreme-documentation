@@ -9,6 +9,11 @@
   <MenuRule Destination="030 Overview" SourcePattern="Howto:^58 jQuery Components/00 DevExtreme jQuery Components" VisibleFor="jQuery" />
 
   <MenuRule Destination="050 Getting Started/50 Accessibility" SourcePattern="Howto:^Common/Accessibility" />
+
+  <MenuRule Destination="050 Getting Started/51 Integration Guides/10 Create a DevExtreme application with Gatsby" SourcePattern="Howto:^Common/Integration Guides/10 Create a DevExtreme application with Gatsby"/>
+  <MenuRule Destination="050 Getting Started/51 Integration Guides/30 Create a DevExtreme application with Vite.js" SourcePattern="Howto:^Common/Integration Guides/30 Create a DevExtreme application with Vite.js"/>
+  <MenuRule Destination="050 Getting Started/51 Integration Guides/40 Optimize Your Data Grids with GraphQL" SourcePattern="Howto:^Common/Integration Guides/40 Optimize Your Data Grids with GraphQL"/>
+
   <MenuRule Destination="050 Getting Started/55 Security Considerations" SourcePattern="Howto:^Common/Security Considerations" />
 
   <MenuRule Destination="050 Getting Started/80 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />

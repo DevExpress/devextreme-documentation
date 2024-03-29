@@ -1,5 +1,3 @@
-# Optimize Your Data Grids with GraphQL
-
 ## What is GraphQL?
 
 GraphQL is a trending API query language and data processing layer. Facebook engineers created GraphQL because REST APIs did not meet their performance requirements.
@@ -24,13 +22,13 @@ The source code for this project is available [on GitHub](https://github.com/iva
 
 1. Initialize a Node.js project inside a new folder:
 
-        <!--Shell-->
-        mkdir graphql-tutorial; cd graphql-tutorial; npm init
+        mkdir graphql-tutorial
+        cd graphql-tutorial
+        npm init
 
 
 2. Install project dependencies:
 
-        <!--Shell-->
         npm i express cors graphql-http graphql nodemon
 
 3. Copy the `data` folder from the [project repository](https://github.com/ivanblinov2k17/graphql/tree/master/data) to your local project. The folder contains three `.json` files with static data. Our GraphQL server will use these files as its data sources.
@@ -43,12 +41,11 @@ The project's client side is a simple Vite application that displays a DevExtrem
 
 1. Create a `client` subfolder:
 
-        <!--Shell-->
-        mkdir client; cd client
+        mkdir client
+        cd client
 
 2. Run the following command to create a new Vite project inside the folder:
 
-        <!--Shell-->
         npm create vite@latest
 
 3. Follow the wizard's instructions to create a **React** / **TypeScript** application named `vite-react`:
@@ -58,14 +55,13 @@ The project's client side is a simple Vite application that displays a DevExtrem
 
 4. Open the folder, and install the necessary dependencies for the Vite app:
 
-        <!--Shell-->
-        cd vite-react; npm i @apollo/client devextreme devextreme-react graphql loadsh whatwg-fetch
+        cd vite-react
+        npm i @apollo/client devextreme devextreme-react graphql loadsh whatwg-fetch
 
 5. Copy the code from the [Data Grid CRUD demo](https://js.devexpress.com/React/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/MaterialBlueLight/) to your Vite application.
 
 6. (Optional) Launch the application to confirm that it works:
 
-        <!--Shell-->
         npm run dev
 
     ![Start the server](/images/GraphQL/run-dev.png)
@@ -75,14 +71,14 @@ The project's client side is a simple Vite application that displays a DevExtrem
 
 1. Go back to the root folder of your project, and create a `server` subfolder:
 
-        <!--Shell-->
-        mkdir server; cd server
+        mkdir server
+        cd server
 
 2. Create an `App.js` file inside the new folder.
 
     Populate it with the following code that initializes an Express.js server and enables the use of GraphQL.
 
-        <!--JavaScript-->
+        <!--tab: App.js-->
         const express = require('express'); 
         const cors = require('cors'); 
         const { createHandler } = require('graphql-http/lib/use/express'); // Enables the use of GraphQL
@@ -112,7 +108,7 @@ The project's client side is a simple Vite application that displays a DevExtrem
 
     Create the `schema/orders-schema.js` file with the following content:
 
-        <!--JavaScript-->
+        <!--tab: orders-schema.js-->
         const graphql = require('graphql'); 
         const orders = require('../data/orders.json').data; 
         const customers = require('../data/customers.json').data; 
@@ -242,7 +238,7 @@ The [@apollo/client](https://www.apollographql.com/docs/react/) library enables 
 
 Import the following objects from the library into the `App.tsx` file of your Vite project:
 
-    <!--JavaScript-->
+    <!--tab: App.tsx-->
     import { gql, useApolloClient, useMutation } from '@apollo/client';
 
 The `gql` object allows you to form GraphQL queries. The `useMutation` function allows you to map these queries to GraphQL mutations.
@@ -251,7 +247,7 @@ If you have difficulties with this section, read the [Apollo documentation](http
 
 1. Create a GraphQL query template for each data type:
 
-        <!--JavaScript-->
+        <!--tab: App.tsx-->
         const CustomersQuery = gql`
         query{
         Customers {
@@ -262,7 +258,7 @@ If you have difficulties with this section, read the [Apollo documentation](http
 
 2. Create a GraphQL query template for each mutation type:
 
-        <!--JavaScript-->
+        <!--tab: App.tsx-->
         const InsertOrderMutation = gql`
         mutation($CustomerID: String, $OrderDate: String, $Freight: Float, $ShipCountry: String, $ShipVia: Int){
         InsertOrder(CustomerID: $CustomerID, OrderDate: $OrderDate, Freight: $Freight, ShipCountry: $ShipCountry, ShipVia: $ShipVia){
@@ -277,7 +273,7 @@ If you have difficulties with this section, read the [Apollo documentation](http
 
 3. Within the main function, enable Apollo and import these mutation queries:
 
-        <!--JavaScript-->
+        <!--tab: App.tsx-->
         export default function App() {
             const appoloClient = useApolloClient();
             const [InsertOrder] = useMutation(InsertOrderMutation);
@@ -286,7 +282,7 @@ If you have difficulties with this section, read the [Apollo documentation](http
    
 5. Modify the application's `ordersData` CustomStore to work with GraphQL. Define custom CRUD handlers for our mutations:
 
-        <!--JavaScript-->
+        <!--tab: App.tsx-->
         load: () => sendRequest(`Orders`).then(data => _.cloneDeep(data)),  // The .cloneDeep function creates a mutable copy of our data
         insert: (values) => sendRequest(`InsertOrder`, { 
           values, 
@@ -301,7 +297,7 @@ If you have difficulties with this section, read the [Apollo documentation](http
 
 6. Enclose these queries in a conditional `switch` statement to improve readability:
 
-        <!--JavaScript-->
+        <!--tab: App.tsx-->
         const sendRequest = (query: string, data: KeyValues = {}) => { 
             switch (query) { 
               case 'Orders': 
@@ -318,23 +314,23 @@ If you have difficulties with this section, read the [Apollo documentation](http
                 return UpdateOrder({variables: { OrderID: data.key, ...data.values }}).then(res => res.data.UpdateOrder); 
               default: 
                 return appoloClient.query({query: OrdersQuery}).then(response => response.data.Orders); 
-            } 
-          }
+            }
+        }
 
     Note: CustomStore data needs to stay in sync with GraphQL. Make sure that mutation functions return their results.
 
 7. The data grid's look-up columns require separate CustomStore data sources:
 
-        <!--JavaScript-->
+        <!--tab: App.tsx-->
         const [customersData] = useState(new CustomStore({ 
             key: 'Value', 
             loadMode: 'raw', 
             load: () => sendRequest(`Customers`), 
-          })); 
-          const [shippersData] = useState(new CustomStore({ 
-            key: 'Value', 
-            loadMode: 'raw', 
-            load: () => sendRequest(`Shippers`), 
-          })); 
+        })); 
+        const [shippersData] = useState(new CustomStore({ 
+            key: 'Value', 
+            loadMode: 'raw', 
+            load: () => sendRequest(`Shippers`), 
+        })); 
 
 8. You can apply the same strategy for every DevExtreme component that supports custom data stores.

@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.columnChooser.height
-type: Number
+type: Number | String
 default: 260
 ---
 ---

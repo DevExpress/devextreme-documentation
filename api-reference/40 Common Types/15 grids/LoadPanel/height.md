@@ -1,6 +1,6 @@
 ---
 uid: common/grids:LoadPanel.height
-type: Number
+type: Number | String
 default: 90
 ---
 ---

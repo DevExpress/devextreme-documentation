@@ -29,25 +29,16 @@ If the performance of a Scheduler component suffers due to a high number of appo
 
     ##### jQuery
 
-        <!--JavaScript-->
+        <!-- tab: index.js -->
             $("#schedulerContainer").dxScheduler({
                 dataSource: myCustomStore,
                 remoteFiltering: true
                 ...
             });
 
-    ##### React
-
-        <!--JavaScript-->
-            <Scheduler
-                dataSource={myCustomStore}
-                remoteFiltering={true}
-                ...
-            />
-
     ##### Angular
         
-        <!--JavaScript-->
+        <!-- tab: app.component.html -->
             <dx-scheduler
                 [dataSource]="myCustomStore"
                 [remoteFiltering]="true"
@@ -56,10 +47,19 @@ If the performance of a Scheduler component suffers due to a high number of appo
 
     ##### Vue
 
-        <!--JavaScript-->
+        <!-- tab: App.vue -->
             <DxScheduler
                 :data-source="myCustomStore"
                 :remote-filtering="true"
+                ...
+            />
+
+    ##### React
+
+        <!-- tab: App.js -->
+            <Scheduler
+                dataSource={myCustomStore}
+                remoteFiltering={true}
                 ...
             />
 

@@ -1,4 +1,4 @@
-In Angular apps, you can use [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) to intercept Ajax requests in DevExtreme components such as [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/), [FileUploader](/Documentation/ApiReference/UI_Components/dxFileUploader/), and [Map](/Documentation/ApiReference/UI_Components/dxMap/). This task requires that you import `DxHttpModule`.
+In Angular apps, you can use [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) to intercept Ajax requests in DevExtreme components such as [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), [FileUploader](/api-reference/10%20UI%20Components/dxFileUploader '/Documentation/ApiReference/UI_Components/dxFileUploader/'), and [Map](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/'). This task requires that you import `DxHttpModule`.
 
 ---
 ##### Angular

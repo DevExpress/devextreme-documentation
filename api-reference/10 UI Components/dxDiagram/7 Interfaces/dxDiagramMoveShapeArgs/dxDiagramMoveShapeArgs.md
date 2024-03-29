@@ -2,6 +2,7 @@
 id: dxDiagramMoveShapeArgs
 module: ui/diagram
 export: dxDiagramMoveShapeArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

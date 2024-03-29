@@ -2,6 +2,7 @@
 id: dxDiagramDeleteConnectorArgs
 module: ui/diagram
 export: dxDiagramDeleteConnectorArgs
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

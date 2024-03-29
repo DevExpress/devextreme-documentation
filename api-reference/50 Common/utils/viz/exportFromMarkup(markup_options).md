@@ -7,7 +7,7 @@ export: exportFromMarkup
 ##### shortDescription
 Allows you to export UI components using their SVG markup.
 
-##### param(markup): String
+##### param(markup): String | UserDefinedElement
 The SVG markup of the UI components you want to export.
 
 ##### param(options): Object

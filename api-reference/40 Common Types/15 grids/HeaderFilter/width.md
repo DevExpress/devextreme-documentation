@@ -1,6 +1,6 @@
 ---
 uid: common/grids:HeaderFilter.width
-type: Number
+type: Number | String
 default: 252
 ---
 ---

@@ -2,6 +2,7 @@
 id: dxDiagramCustomCommand
 module: ui/diagram
 export: dxDiagramCustomCommand
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

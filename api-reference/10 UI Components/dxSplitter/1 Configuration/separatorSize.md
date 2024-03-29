@@ -1,6 +1,6 @@
 ---
 id: dxSplitter.Options.separatorSize
-type: Number | String
+type: Number
 default: 8
 ---
 ---

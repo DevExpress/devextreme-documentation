@@ -4,7 +4,7 @@ DevExtreme components raise events in response to user interaction. The names of
 
 Handle component events to update the parent component's state. Note: components don't fire events when you update component data programmatically.
 
-    <!-- tab: App.jsx -->
+    <!-- tab: App.js -->
     import React, { useState } from 'react';
     import 'devextreme/dist/css/dx.light.css';
     import TextBox from 'devextreme-react/text-box';

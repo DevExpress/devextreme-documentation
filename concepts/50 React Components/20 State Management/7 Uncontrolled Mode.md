@@ -1,4 +1,4 @@
-In <a href="https://reactjs.org/docs/uncontrolled-components.html" target="_blank">uncontrolled mode</a>, DevExtreme components maintain and update their own state.
+In uncontrolled mode, DevExtreme components maintain and update their own state.
 
 To specify an initial property value in this mode, add the `default` prefix to the property name. In the example below, the `defaultCurrentDate` attribute is used to define the `currentDate` property's initial value.
 

@@ -11,9 +11,4 @@ This help topic describes potential security vulnerabilities and what you can do
 #####See Also#####
 - <a href="https://vuejs.org/v2/guide/security.html" target="_blank">Security in Vue</a>
 
-##### React
-
-#####See Also#####
-- <a href="https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml" target="_blank">Security in React</a>
-
 ---

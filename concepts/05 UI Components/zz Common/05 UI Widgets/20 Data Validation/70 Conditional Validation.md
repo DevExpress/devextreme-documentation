@@ -45,7 +45,7 @@ Refer to the following article for more information about conditional rendering:
 
 ##### React
 
-Refer to the following article for more information about conditional rendering: <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">Conditional Rendering</a>.
+Refer to the following article for more information about conditional rendering: <a href="https://react.dev/learn/conditional-rendering" target="_blank">Conditional Rendering</a>.
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from "react";

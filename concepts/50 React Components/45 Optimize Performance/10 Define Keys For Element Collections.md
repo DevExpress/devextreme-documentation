@@ -1,4 +1,4 @@
-When child elements specify [key](https://reactjs.org/docs/lists-and-keys.html#keys) attributes, React uses the keys to compare the child elements of current and previous VDOM nodes. Keys allow child components to remain stable between renders.
+When child elements specify [key](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key) attributes, React uses the keys to compare the child elements of current and previous VDOM nodes. Keys allow child components to remain stable between renders.
 
     <!-- tab: App.js -->// Incorrect:
     const columns = ["CompanyName", "City", "State", "Phone", "Fax"];

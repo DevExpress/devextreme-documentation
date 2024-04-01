@@ -98,7 +98,7 @@ Users can hide the Popup when they click outside its boundaries. To enable this 
 
 ##### React
 
-Enable the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible') property to show the Popup. In the code below, the value of this property is bound to a state variable with the React <a href="https://reactjs.org/docs/hooks-state.html" target="_blank">useState</a> hook. The `togglePopup` function toggles the value between **true** and **false** when users click the Open Popup button.
+Enable the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible') property to show the Popup. In the code below, the value of this property is bound to a state variable with the React <a href="https://react.dev/reference/react/useState" target="_blank">useState</a> hook. The `togglePopup` function toggles the value between **true** and **false** when users click the Open Popup button.
 
 Call the togglePopup function when the [onHiding](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/onHiding.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#onHiding') event fires to hide the Popup. Users can also hide the Popup when they click outside its boundaries. To enable this functionality, set the [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#hideOnOutsideClick') property to **true**.
 

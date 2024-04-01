@@ -48,7 +48,7 @@ Use <a href="https://v3.vuejs.org/guide/conditional.html" target="_blank">condit
 
 ##### React
 
-Use <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank">conditional rendering</a> instead of this method:
+Use <a href="https://react.dev/learn/conditional-rendering" target="_blank">conditional rendering</a> instead of this method:
 
     <!-- tab: App.js -->
     import React from 'react';

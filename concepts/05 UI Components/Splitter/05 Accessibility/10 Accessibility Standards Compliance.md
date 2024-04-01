@@ -9,6 +9,6 @@ The Splitter component complies to all <a href="https://www.access-board.gov/ict
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>2.1.1 Keyboard (Level A)</td>
-        <td>If a pane does not include focusable elements, and the pane content is larger than its container, the pane content will not be accessible.<br>To resolve the issue, assign <code>tabindex="0"</code> either to the non-focusable element or to the element with <code>dx-item-content dx-splitter-item-content</code> class.</td>
+        <td>If a pane does not include focusable elements, and the pane content is larger than its container, the pane content will not be accessible.<br>To resolve the issue, assign <code>tabindex="0"</code> either to the non-focusable element or to the element with the <code>dx-item-content dx-splitter-item-content</code> class.</td>
     </tr>
 </table>

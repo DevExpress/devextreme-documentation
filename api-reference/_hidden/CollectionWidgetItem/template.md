@@ -19,6 +19,9 @@ A template name or container.
 <!-- %param(itemElement)% -->
 
 ---
+---
+##### jQuery
+
 The following types of the specified value are available.
 
 - Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
@@ -26,10 +29,7 @@ The following types of the specified value are available.
 - Assign a DOM Node of the template's container.
 - Assign a function that returns the jQuery object or a DOM Node of the template's container.
 
-The following example adds a custom item to the component. Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '{basewidgetpath}/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '{basewidgetpath}/Configuration/items/#component') properties.
-
----
-##### jQuery
+The following example adds a custom item to the component.
 
     <!-- tab: index.js -->
     $(function() {
@@ -45,6 +45,13 @@ The following example adds a custom item to the component. Note that Angular and
     });
 
 ##### Angular
+
+The following types of the specified value are available.
+
+- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
+- Assign a DOM Node of the template's container.
+
+The following example adds a custom item to the component. Note that Angular uses [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
@@ -89,6 +96,13 @@ The following example adds a custom item to the component. Note that Angular and
 
 ##### Vue
 
+The following types of the specified value are available.
+
+- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
+- Assign a DOM Node of the template's container.
+
+The following example adds a custom item to the component. Note that Vue uses [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property.
+
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ... >
@@ -115,6 +129,13 @@ The following example adds a custom item to the component. Note that Angular and
 
 ##### React
 
+The following types of the specified value are available.
+
+- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
+- Assign a DOM Node of the template's container.
+
+The following example adds a custom item to the component. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '{basewidgetpath}/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '{basewidgetpath}/Configuration/items/#component') properties.
+
     <!-- tab: App.js -->
     import React from 'react';
 
@@ -126,25 +147,19 @@ The following example adds a custom item to the component. Note that Angular and
         return <div>Custom Item</div>;
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Item ...
-                        render={renderCustomItem}
-                    >
-                    </Item>
-                </{WidgetName}>
-            );
-        }
+    const App() = () => {
+        return (
+            <{WidgetName} ... >
+                <Item ...
+                    render={renderCustomItem}
+                >
+                </Item>
+            </{WidgetName}>
+        );
     }
     export default App;
 
 ---
-
-#include btn-open-github with {
-    href: "https://github.com/DevExpress-Examples/devextreme-tabpanel-customize-view-content"
-}
 
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

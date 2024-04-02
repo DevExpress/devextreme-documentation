@@ -1,4 +1,4 @@
-[note] Ensure that [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#allowKeyboardNavigation) is enabled.
+[note] Ensure that [allowKeyboardNavigation](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration/allowKeyboardNavigation.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#allowKeyboardNavigation') is enabled.
 
 A user can use the following keys to interact with the Splitter component: 
 

@@ -6,7 +6,15 @@ id: GridBase.showColumnChooser()
 Shows the [column chooser](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnChooser '{basewidgetpath}/Configuration/columnChooser/').
 
 ---
-If you use [state storing]({basewidgetpath}/Configuration/stateStoring/), [enable]({basewidgetpath}/Configuration/columnChooser/#enabled) column chooser for this method to work correctly. If you want to hide the default icon, use the [toolbar]({basewidgetpath}/Configuration/toolbar/items/) option.
+If the following conditions are met:
+
+- You use [state storing]({basewidgetpath}/Configuration/stateStoring/).
+
+- **columnChooser**.[enabled]({basewidgetpath}/Configuration/columnChooser/#enabled) is set to `false` (default).
+
+- You call this method.  
+
+Then, column chooser may not update data. To fix this issue, assign `true` to the **columnChooser**.[enabled]({basewidgetpath}/Configuration/columnChooser/#enabled) property. If you still want to hide the default column chooser icon, use the [toolbar]({basewidgetpath}/Configuration/toolbar/items/) option.
 
 #####See Also#####
 #include common-link-callmethods

@@ -5,14 +5,20 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the order in which columns are hidden when the UI component adapts to the screen or container size. Ignored if [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '{basewidgetpath}/Configuration/#allowColumnResizing') is **true** and [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '{basewidgetpath}/Configuration/#columnResizingMode') is *"widget"*.
+Specifies the order in which columns are hidden when the UI component adapts to the screen or container size. Ignored if [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '{basewidgetpath}/Configuration/#allowColumnResizing') is `true` and [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '{basewidgetpath}/Configuration/#columnResizingMode') is *"widget"*.
 
 ---
-The **hidingPriority** is a unique positive integer that ascends from right to left beginning with 0 by default. Columns with low **hidingPriority** are hidden first.
+The **hidingPriority** is a unique positive integer that ascends from right to left. The default starting point is 0. Columns with low **hidingPriority** are hidden first.
 
-[note]Specifying **hidingPriority** for at least one column enables the column hiding feature and cancels the default hiding priorities.
+[note]
 
-[note] [Fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '{basewidgetpath}/Configuration/columns/#fixed') columns ignore the **hidingPriority** and [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.md '{basewidgetpath}/Configuration/columns/#allowHiding') properties.
+- If you specify this property for at least one column, the column hiding feature is enabled and the default hiding priorities are canceled.
+
+- [Fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '{basewidgetpath}/Configuration/columns/#fixed') columns ignore the **hidingPriority** and [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.md '{basewidgetpath}/Configuration/columns/#allowHiding') properties.
+
+- [Grouped]({basewidgetpath}/Configuration/columns/#showWhenGrouped) columns ignore this property.
+
+[/note]
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridColumnsHidingPriority/",

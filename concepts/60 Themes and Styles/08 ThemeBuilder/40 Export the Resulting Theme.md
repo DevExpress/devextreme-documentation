@@ -8,6 +8,8 @@ On the next step, select the components for your theme to support.
 
 Click **Download CSS File** to save a file named `dx.[base-theme-name].[color-scheme-name].css` (for example, `dx.material.brown.css`) on your computer. Alternatively, you can download the archive with a CSS file and icons or copy the CSS.
 
+[note] If you use the Generic or Material theme as the base, you can download or copy the CSS file - the icons will be cashed. If you use the Fluent (all trademarks or registered trademarks are property of their respective owners) theme as a base, download the archive and add icons to your project as described below.
+
 <img src="/images/Common/ThemeBuilder/themebuilder-themeexport-format@2x.png" alt="DevExtreme ThemeBuilder UI: Theme Export popup dialog, Choose Format" width="50%" height="auto">
 
 If you click **Copy Metadata**, you can see your theme's name in the `baseTheme` field. You can copy it to register the theme later.

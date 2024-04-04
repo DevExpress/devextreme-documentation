@@ -124,4 +124,4 @@ The example below demonstrates how to prevent users from adding more than one sh
 ---
 
 #####See Also#####
-- [Remove Shapes from Toolboxes](/Documentation/Guide/UI_Components/Diagram/How_To/Restrict_Operations/#Remove_Shapes_from_Toolboxes)
+- [Remove Shapes from Toolboxes](/Documentation/Guide/UI_Components/Diagram/Restrict_Operations/#Remove_Shapes_from_Toolboxes)

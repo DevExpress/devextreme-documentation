@@ -16,7 +16,7 @@ The **hidingPriority** is a unique positive integer that ascends from right to l
 
 - [Fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '{basewidgetpath}/Configuration/columns/#fixed') columns ignore the **hidingPriority** and [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.md '{basewidgetpath}/Configuration/columns/#allowHiding') properties.
 
-- [Grouped]({basewidgetpath}/Configuration/columns/#showWhenGrouped) columns ignore this property.
+- [Grouped](/api-reference/_hidden/dxDataGridColumn/showWhenGrouped.md '{basewidgetpath}/Configuration/columns/#showWhenGrouped') columns ignore this property.
 
 [/note]
 

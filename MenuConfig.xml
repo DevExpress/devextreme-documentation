@@ -110,7 +110,7 @@
   <MenuRule Destination="10 UI Components/dx$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/dx$1/4 Accessibility" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Accessibility" />
   <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Accordion|BarGauge|Bullet|ButtonGroup|CheckBox|CircularGauge|Drawer|DropDownButton|Floating Action Button|LinearGauge|NavBar|Resizable|SlideOut|SlideOutView|TabPanel|Tabs|Toolbar|TreeMap|zz Common)" />
-  <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList|Diagram)/[0-9]+ How To" />
+  <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList)/[0-9]+ How To" />
   <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
 
   <!-- Hidden topics -->

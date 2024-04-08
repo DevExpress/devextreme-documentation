@@ -142,7 +142,7 @@ You can also declare custom logic in the button configuration. For instance, the
                 buttons: [{
                     name: "edit",
                     onClick: function(e) {
-                        // Custom configuration goes here
+                        // Custom implementation goes here
                         e.component.editRow(e.row.rowIndex);
                         e.event.preventDefault();
                     }
@@ -168,7 +168,7 @@ You can also declare custom logic in the button configuration. For instance, the
     // ...
     export class AppComponent {
         onEditButtonClick(e) {
-            // Custom configuration goes here
+            // Custom implementation goes here
             e.component.editRow(e.row.rowIndex);
             e.event.preventDefault();
         }
@@ -205,7 +205,7 @@ You can also declare custom logic in the button configuration. For instance, the
         },
         methods: {
             onEditButtonClick(e) {
-                // Custom configuration goes here
+                // Custom implementation goes here
                 e.component.editRow(e.row.rowIndex);
                 e.event.preventDefault();
             }
@@ -226,7 +226,7 @@ You can also declare custom logic in the button configuration. For instance, the
     } from 'devextreme-react/data-grid';
 
     const onEditButtonClick = (e) => {
-        // Custom configuration goes here
+        // Custom implementation goes here
         e.component.editRow(e.row.rowIndex);
         e.event.preventDefault();
     }

@@ -131,7 +131,3 @@ The **format** property also limits user input in cells that use the [DateBox](/
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecalculateWhileEditing/"
 }
-
-#####See Also#####
-- [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{currentpath}/#customizeText')
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')

@@ -127,3 +127,120 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
     )
     
 ---
+
+You can also declare custom logic in the button configuration. For instance, the following code snippet demonstrates how to override the [onClick](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#onClick) default implementation for the **Edit** button.
+
+---
+##### jQuery  
+
+    <!-- tab: index.js -->
+    $(function () {
+        $("#dataGridContainer").dxDataGrid({
+            // ...
+            columns: [{
+                type: "buttons",
+                buttons: [{
+                    name: "edit",
+                    onClick: function(e) {
+                        // Custom implementation goes here
+                        e.component.editRow(e.row.rowIndex);
+                        e.event.preventDefault();
+                    }
+                }, "delete"]
+            }]
+        });
+    });
+
+##### Angular  
+
+    <!-- tab: app.component.html-->
+    <dx-data-grid ... >
+        <dxi-column type="buttons">
+            <dxi-button
+                name="edit"
+                (onClick)="onEditButtonClick($event)">
+            </dxi-button>
+            <dxi-button name="delete"></dxi-button>
+        </dxi-column>
+    </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    // ...
+    export class AppComponent {
+        onEditButtonClick(e) {
+            // Custom implementation goes here
+            e.component.editRow(e.row.rowIndex);
+            e.event.preventDefault();
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn type="buttons">
+                <DxButton name="edit" @click="onEditButtonClick" />
+                <DxButton name="delete" />
+            </DxColumn>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import DxDataGrid, {
+        DxColumn,
+        DxButton
+    } from 'devextreme-vue/data-grid';
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxColumn,
+            DxButton
+        },
+        data() {
+            return {
+                // ...
+            }
+        },
+        methods: {
+            onEditButtonClick(e) {
+                // Custom implementation goes here
+                e.component.editRow(e.row.rowIndex);
+                e.event.preventDefault();
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        Column,
+        Button
+    } from 'devextreme-react/data-grid';
+
+    const onEditButtonClick = (e) => {
+        // Custom implementation goes here
+        e.component.editRow(e.row.rowIndex);
+        e.event.preventDefault();
+    }
+
+    function App() {
+        return (
+            <DataGrid ... >
+                <Column type="buttons">
+                    <Button name="edit" onClick={onEditButtonClick} />
+                    <Button name="delete" />
+                </Column>
+            </DataGrid>
+        );
+    }
+    export default App;
+
+---

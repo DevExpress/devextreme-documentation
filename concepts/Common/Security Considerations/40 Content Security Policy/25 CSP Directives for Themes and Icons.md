@@ -8,4 +8,4 @@ You can also use [ThemeBuilder CLI](/Documentation/Guide/Common/DevExtreme_CLI/#
     // Material theme
     npx devextreme-cli build-theme --base-theme="material.blue.light" --remove-external-resources
 
-[note] The `img-src data:` attribute is required to support custom SVG-based icons in certain components.
+[note] The `img-src data:` attribute is required to display custom SVG-based icons in certain components.

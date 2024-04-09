@@ -1,0 +1,3 @@
+Material and Fluent (all trademarks or registered trademarks are property of their respective owners) [themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) do not support the `default-src 'self'` directive out of the box. To enable this directive, export such themes from [DevExtreme ThemeBuilder](/Documentation/Guide/Themes_and_Styles/ThemeBuilder/) and [remove links to external fonts](/Documentation/Guide/Themes_and_Styles/ThemeBuilder/#Export_the_Resulting_Theme).
+
+[note] The `img-src data:` attribute is required to support custom SVG-based icons in certain components.

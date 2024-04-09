@@ -14,7 +14,7 @@ If license key validation fails, DevExtreme will display one of the following me
         <td>
         <code>W0019 - DevExtreme: Unable to Locate a Valid License Key</code><br><br>
         If you are using a 30-day trial version of DevExtreme, you must uninstall all copies of DevExtreme once your 30-day trial period expires. For terms and conditions that govern use of DevExtreme UI components/libraries, please refer to the <a href="https://js.devexpress.com/EULAs/DevExtremeComplete/" target="_blank">DevExtreme End User License Agreement</a>. <br><br>
-        To use DevExtreme in a commercial project, you must purchase a license. For pricing/licensing options, please visit <a href="http://js.devexpres.com/Buy/" target="_blank">DevExtreme Purchase page</a>. <br><br>
+        To use DevExtreme in a commercial project, you must purchase a license. For pricing/licensing options, please visit <a href="http://js.devexpress.com/Buy/" target="_blank">DevExtreme Purchase page</a>. <br><br>
         If you have licensing-related questions or need help with a purchase, please email <a href="mailto: clientservices@devexpress.com">clientservices@devexpress.com</a>. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0019">W0019</a>.</td>
     </tr>
     <tr>

@@ -17,7 +17,7 @@ Specifies the size of a collapsible item (pane) when collapsed in pixels or as a
             items: [
                 {
                     // ...
-                    collapsedSize: "20",
+                    collapsedSize: "20px",
                 }
             ],
         });
@@ -26,9 +26,9 @@ Specifies the size of a collapsible item (pane) when collapsed in pixels or as a
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-splitter>
+    <dx-splitter ... >
         <dxi-item ...
-            collapsedSize="20"
+            collapsedSize="20px"
         >
         </dxi-item>
     </dx-splitter>
@@ -37,9 +37,9 @@ Specifies the size of a collapsible item (pane) when collapsed in pixels or as a
 
     <!-- tab: App.vue -->
     <template>
-        <DxSplitter item-template="item">
+        <DxSplitter ... >
             <DxItem ... 
-                collapsedSize="20"
+                collapsedSize="20px"
             />
         </DxSplitter>
     </template>
@@ -56,9 +56,9 @@ Specifies the size of a collapsible item (pane) when collapsed in pixels or as a
 
     const App = () => (
         <React.Fragment>
-            <Splitter itemRender={itemRender}>
+            <Splitter ... >
                 <Item ... 
-                    collapsedSize="20"
+                    collapsedSize="20px"
                 />
             </Splitter>
         </React.Fragment>

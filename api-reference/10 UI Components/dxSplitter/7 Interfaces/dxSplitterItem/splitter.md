@@ -27,7 +27,6 @@ Use this property to make the item a nested Splitter UI component.
                             },
                             {
                                 splitter: {
-                                    orientation: "horizontal",
                                     items: [{
                                             text: "Pane 3"
                                         },

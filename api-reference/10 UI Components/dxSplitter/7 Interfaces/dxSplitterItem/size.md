@@ -26,7 +26,7 @@ Specifies the size of an item (pane) in pixels or as a percentage.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-splitter>
+    <dx-splitter ... >
         <dxi-item ...
             size="50%"
         >
@@ -37,7 +37,7 @@ Specifies the size of an item (pane) in pixels or as a percentage.
 
     <!-- tab: App.vue -->
     <template>
-        <DxSplitter item-template="item">
+        <DxSplitter ... >
             <DxItem ... 
                 size="50%"
             />
@@ -56,7 +56,7 @@ Specifies the size of an item (pane) in pixels or as a percentage.
 
     const App = () => (
         <React.Fragment>
-            <Splitter itemRender={itemRender}>
+            <Splitter ... >
                 <Item ... 
                     size="50%"
                 />

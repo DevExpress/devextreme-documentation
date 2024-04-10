@@ -128,7 +128,7 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
     
 ---
 
-You can also declare custom logic in the button configuration. For instance, the following code snippet demonstrates how to override the [onClick](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#onClick) default implementation for the **Edit** button.
+You can also declare custom logic in the button configuration. For instance, the following code snippet demonstrates how to override the [onClick](/api-reference/_hidden/dxDataGridColumnButton/onClick.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#onClick') default implementation for the **Edit** button.
 
 ---
 ##### jQuery  

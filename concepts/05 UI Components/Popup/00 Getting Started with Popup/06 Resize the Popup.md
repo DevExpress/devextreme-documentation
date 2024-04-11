@@ -47,7 +47,7 @@ Use the [height](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/h
     </script>
 
 ##### React
-Set the [resizeEnabled](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/resizeEnabled.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#resizeEnabled') property to `true` to allow users to resize the Popup. If you want to specify the initial Popup size, use the [height](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height) and [width](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width) properties in [uncontrolled mode](/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode):
+Set the [resizeEnabled](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/resizeEnabled.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#resizeEnabled') property to `true` to allow users to resize the Popup. If you want to specify the initial Popup size, use the [height](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#width') properties in [uncontrolled mode](/concepts/50%20React%20Components/20%20State%20Management/7%20Uncontrolled%20Mode.md '/Documentation/Guide/React_Components/State_Management/#Uncontrolled_Mode'):
 
     <!-- tab: App.js -->
     // ...

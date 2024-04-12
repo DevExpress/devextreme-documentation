@@ -1,8 +1,8 @@
 You can use the following properties to colorize gauge elements:
 
 - [Range color](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/rangeContainer/ranges/#color)
-- [RangeContainer background color](Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/rangeContainer/#backgroundColor)
-- [ValueIndicator color](Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/valueIndicator/#color)
+- [RangeContainer background color](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/rangeContainer/#backgroundColor)
+- [ValueIndicator color](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/valueIndicator/#color)
 
 You can also add a custom pattern or gradient fill to the elements. Use the [registerPattern()](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) or [registerGradient()](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method to create a custom pattern or gradient.
 

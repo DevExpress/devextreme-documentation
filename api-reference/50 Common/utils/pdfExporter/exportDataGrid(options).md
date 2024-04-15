@@ -8,7 +8,7 @@ export: exportDataGrid
 Exports grid data to a PDF file.
 
 ##### return: Promise<void>
-A Promise that is resolved when the grid data is prepared for export. It is a native <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise</a> or a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a> when you use jQuery.
+A Promise that resolves when grid data is ready for export. If you use jQuery, the return value is a <a href="http://api.jquery.com/Types/#Promise" target="_blank">jQuery.Promise</a>. In other cases, it's a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native JavaScript Promise</a>.
 
 ##### param(options): PdfExportDataGridProps
 Export settings.
@@ -18,13 +18,17 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
-This method requires the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ library to export data and create PDF files.
+This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to export data and create PDF files.
 
-If you use jQuery, declare the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> CDN links within the `<head>` tag of the HTML markup (see an example below). If you use Angular, Vue or React, install the library with the following command:
+If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library within the `<head>` tag. If you use Angular, Vue, or React, install the library with the following command:
 
     npm install jspdf
 
-You can call this method at any point in your application. In this example, this method is called in a standalone button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
+You can call this method at any point in your application.
+
+Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Guide/Troubleshooting/PDF_Export/') for more information.
+
+In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a standalone button fires this method:
 
 ---
 ##### jQuery
@@ -213,5 +217,4 @@ You can call this method at any point in your application. In this example, this
     }
 
 ---     
-
 

@@ -58,6 +58,7 @@
     "ui/slider":                       "api-reference/10 UI Components/dxSlider/9 Types",
     "ui/sortable":                     "api-reference/10 UI Components/dxSortable/9 Types",
     "ui/speed_dial_action":            "api-reference/10 UI Components/dxSpeedDialAction/9 Types",
+    "ui/splitter":                     "api-reference/10 UI Components/dxSplitter/9 Types",
     "ui/switch":                       "api-reference/10 UI Components/dxSwitch/9 Types",
     "ui/tab_panel":                    "api-reference/10 UI Components/dxTabPanel/9 Types",
     "ui/tabs":                         "api-reference/10 UI Components/dxTabs/9 Types",

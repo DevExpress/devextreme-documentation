@@ -8,7 +8,7 @@ export: exportGantt
 Exports Gantt data to a PDF file.
 
 ##### return: Promise<any>
-A Promise that is resolved after the Gantt data is exported.
+A Promise that resolves when the Gantt data is ready for export.
 #include ref-promisedistinction
 
 ##### param(options): PdfExportGanttProps
@@ -20,9 +20,11 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
 }
 
-This method requires the <a href="https://github.com/MrRio/jsPDF" target="_blank">jsPDF</a> v2.3.1+ library to export data and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables in exported files.
+This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to generate PDF files, and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables within the PDF.
 
-You can call the **exportGantt** method at any point in your application. In the example below, this method is called in a standalone toolbar item's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler:
+Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Guide/Troubleshooting/PDF_Export/'). for more information.
+
+In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a standalone toolbar item fires this method:
 
 ---
 ##### jQuery
@@ -357,4 +359,3 @@ To print the exported PDF document, call the **autoPrint** method:
         doc.autoPrint(); 
         window.open(doc.output('your_url'), '_blank');
     });
-

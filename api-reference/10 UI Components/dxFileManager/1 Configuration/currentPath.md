@@ -9,7 +9,7 @@ Specifies the path that is used when the FileManager is initialized.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToEF/"
 }
 
 ---

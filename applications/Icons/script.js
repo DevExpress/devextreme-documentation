@@ -247,6 +247,15 @@
     "description",
     "belloutline",
     "to",
+    "pinmap",
+    "handlevertical",
+    "handlehorizontal",
+    "triangleup",
+    "triangledown",
+    "triangleright",
+    "triangleleft",
+    "optionsgear",
+    "send"
 ];
 
 var divs = $.map(iconNames, function (name) {

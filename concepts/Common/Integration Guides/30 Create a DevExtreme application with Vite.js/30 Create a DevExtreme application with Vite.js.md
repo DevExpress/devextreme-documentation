@@ -143,3 +143,5 @@ You don't need to relaunch the development server to apply these changes. Just r
 DevExtreme components are powerful, easy to use, and fully compatible with Vite. View our [application templates](https://js.devexpress.com/Vue/Templates/) and [demos](https://js.devexpress.com/Vue/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
 
 Read the [Vite.js documentation](https://vitejs.dev/guide/) for more information on the Vite framework.
+
+[tags] react,vue

@@ -240,3 +240,5 @@ Modify the name of the stylesheet to apply a different theme. Modify the name of
 DevExtreme components are powerful, easy to use, and fully compatible with Gatsby. View our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/React/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
 
 Read the [Gatsby documentation](https://www.gatsbyjs.com/docs) for more information the Gatsby framework.
+
+[tags] react

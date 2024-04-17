@@ -1,0 +1,10 @@
+.caption {
+    width: 330px;
+    height: 330px;
+    border: dashed;
+    padding: 5px;
+}
+
+#container {
+    height: 400px;
+}

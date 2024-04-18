@@ -17,7 +17,7 @@ Specifies the date directly.
 Specifies the date with a timestamp (total milliseconds since 1970/01/01).
 
 - String   
-Specifies the date as a string value. The UI component supports the following formats of a date string:
+Specifies the date as a string value. The UI component supports the following date string formats:
 
     - "yyyy-MM-dd" (for example, "2017-03-06")
     - "yyyy-MM-ddTHH:mm:ss" (for example, "2017-03-27T16:54:48")

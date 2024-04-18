@@ -17,7 +17,7 @@ Specifies the date directly.
 Specifies the date with a timestamp (total milliseconds since 1970/01/01).
 
 - String   
-Specifies the date as a string value. The UI component supports the following formats of a date string:
+Specifies the date as a string value. The UI component supports the following date string formats:
 
     - "yyyy-MM-dd" (for example, "2017-03-06")
     - "yyyy-MM-ddTHH:mm:ss" (for example, "2017-03-27T16:54:48")
@@ -32,7 +32,7 @@ Specifies the date as a string value. The UI component supports the following fo
 
 - If this property is **undefined**, [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') - *"rollers"*, [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') - *"date"* or *"datetime"*, the UI component renders values from 01/01/1900.
 
-- If you set the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property to *'time'*, you still need to use a full `Date()` as a **min**, not `HH:mm`.
+- If you set the [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') property to *'time'*, you still need to use a full `Date()` as the **min**, not `HH:mm`.
 
 [/note]
 

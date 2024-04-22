@@ -1,5 +1,5 @@
 ---
-type: MenuBasePlainItem
+type: Object
 uid: ui/menu:SubmenuShowingEvent.itemData
 ---
 ---

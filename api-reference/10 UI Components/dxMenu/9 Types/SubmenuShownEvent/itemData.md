@@ -1,5 +1,5 @@
 ---
-type: Object
+type: dxMenuItem
 uid: ui/menu:SubmenuShownEvent.itemData
 ---
 ---

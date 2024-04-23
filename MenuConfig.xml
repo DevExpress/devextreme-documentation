@@ -10,7 +10,7 @@
 
   <MenuRule Destination="050 Getting Started/50 Accessibility" SourcePattern="Howto:^Common/Accessibility" />
 
-  <MenuRule Destination="050 Getting Started/51 Integration Guides/" SourcePattern="Howto:^Common/Integration Guides/"/>
+  <MenuRule Destination="050 Getting Started/56 Integration Guides/" SourcePattern="Howto:^Common/Integration Guides/"/>
 
   <MenuRule Destination="050 Getting Started/55 Security Considerations" SourcePattern="Howto:^Common/Security Considerations" />
 

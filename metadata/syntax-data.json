@@ -2538,32 +2538,64 @@
       "react": "_ui_menu_SubmenuHiddenEvent",
       "vue": "Dx_ui_menu_SubmenuHiddenEvent"
     },
+    "_ui_menu_SubmenuHiddenEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuHiddenEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuHiddenEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_menu_SubmenuHidingEvent": {
       "angular": "dxo-ui-menu--submenu-hiding-event",
       "react": "_ui_menu_SubmenuHidingEvent",
       "vue": "Dx_ui_menu_SubmenuHidingEvent"
     },
+    "_ui_menu_SubmenuHidingEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuHidingEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuHidingEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_menu_SubmenuShowingEvent": {
       "angular": "dxo-ui-menu--submenu-showing-event",
       "react": "_ui_menu_SubmenuShowingEvent",
       "vue": "Dx_ui_menu_SubmenuShowingEvent"
     },
+    "_ui_menu_SubmenuShowingEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuShowingEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuShowingEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_menu_SubmenuShownEvent": {
       "angular": "dxo-ui-menu--submenu-shown-event",
       "react": "_ui_menu_SubmenuShownEvent",
       "vue": "Dx_ui_menu_SubmenuShownEvent"
     },
+    "_ui_menu_SubmenuShownEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuShownEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuShownEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_multi_view_ContentReadyEvent": {
       "angular": "dxo-ui-multi-view--content-ready-event",

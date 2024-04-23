@@ -17,17 +17,16 @@ Launch the development server to see a live preview of the website:
     cd my-website
     gatsby develop
 
-
 ![Command line URL](/images/Gatsby/cmd-url.png)
 ![Gatsby website](/images/Gatsby/new-website.png)
 
-If you get stuck, consult [Gatsby documentation](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-1/#create-a-gatsby-site) for an in-depth walkthrough of the process.
+Consult [Gatsby documentation](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-1/#create-a-gatsby-site) for an in-depth walkthrough of the process.
 
 ## 2. Add Static Content
 
 Gatsby uses React to render content. Edit the `src/pages/index.tsx` file to change the home page:
 
-    <!--TypeScript-->
+    <!--tab: index.tsx -->
     import * as React from "react";
     import type { HeadFC, PageProps } from "gatsby";
 
@@ -79,7 +78,7 @@ If you deploy your website on Netlify, Gatsby renders your content on the server
 
 ## 4. Add DevExtreme to the application
 
-We're ready to add a DevExtreme Data Grid to our application. First, add DevExtreme to your project dependencies:
+We're ready to add a [DevExtreme DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') to our application. First, add DevExtreme to your project dependencies:
 
     <!--tab: package.json-->
     "dependencies": {
@@ -89,9 +88,9 @@ We're ready to add a DevExtreme Data Grid to our application. First, add DevExtr
         <...>
     }
 
-Run `npm install` to install new dependencies. When the installation is complete, add a DevExtreme grid to the index page:
+Run `npm install` to install new dependencies. When the installation is complete, add a DataGrid component to the index page:
 
-    <!--tab: App.ts -->
+    <!--tab: index.tsx -->
     import * as React from "react";
     import type { HeadFC, PageProps } from "gatsby";
     import DataGrid, { Column, Pager, Paging } from 'devextreme-react/data-grid';
@@ -103,6 +102,7 @@ Run `npm install` to install new dependencies. When the installation is complete
       store: new ODataStore({
         url: 'https://js.devexpress.com/Demos/SalesViewer/odata/DaySaleDtoes',
         key: 'Id',
+        version: 2,
         beforeSend(request) {
           const year = new Date().getFullYear() - 1; 
           request.params.startDate = `${year}-05-10`; 
@@ -190,11 +190,11 @@ Refresh the page to view the result:
 
 ![A DevExtreme grid without a theme](/images/Gatsby/grid-without-a-theme.png)
 
-Note: DevExtreme components are *always* rendered on the cilent. If you disable JavaScript and refresh your Netlify deployment, you won't see the DevExtreme grid.
+[note] DevExtreme components are *always* rendered on the cilent. If you disable JavaScript and refresh your Netlify deployment, you won't see the DevExtreme grid.
 
 ## 5. Apply a DevExtreme theme
 
-The application displays a DevExtreme grid, but does not style it appropriately. If you want the grid to look good, style it with a DevExtreme theme.
+The application displays a DevExtreme grid, but does not style it appropriately. If you want the grid to look good, style it with a [DevExtreme theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/').
 
 You can apply a DevExtreme theme to the grid in one of two ways:
 
@@ -231,9 +231,9 @@ If you want to apply a DevExtreme theme to a specific page, do not import this t
     };
 
 
-This link downloads the `light` theme from the DevExpress CDN and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
+This link downloads the `light` theme from the [DevExpress CDN](/concepts/Common/Distribution%20Channels/05%20CDN '/Documentation/Guide/Common/Distribution_Channels/CDN/') and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
 
-Modify the name of the stylesheet to apply a different theme. Modify the name of the subfolder (`23.1.3`) to apply a theme that is compatible with a different version of DevExtreme.
+Modify the name of the stylesheet to apply [a different theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/'). Modify the name of the subfolder (`23.1.3`) to apply a theme that is compatible with a different version of DevExtreme.
 
 ## 6. Next Steps
 

@@ -2,7 +2,7 @@ Vite (pronounced "veet") is a web development framework from the creators of Vue
 
 Unlike its major competitors — Next.js and `create-react-app` — Vite is compatible with a variety of front-end solutions. In addition to its original companion framework — Vue.js — you can use Vite with React.js, Svelte, or even vanilla JavaScript.
 
-In this tutorial, we'll create a new Vite application with a Vue.js frontend. The application will pull data from the publicly available [Cat Facts API](https://catfact.ninja) and display it with the DevExpress Data Grid.
+In this tutorial, we'll create a new Vite application with a Vue.js frontend. The application will pull data from the publicly available [Cat Facts API](https://catfact.ninja) and display it with the DevExpress DataGrid.
 
 ## 1. Create a new Vite project
 
@@ -61,7 +61,7 @@ Install the new dependencies:
         <!--tab: main.ts-->
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    This statement applies the `fluent` theme to your application. You can select a different DevExtreme theme if you wish.
+    This statement applies the `fluent` theme to your application. You can select a [different DevExtreme theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') if you wish.
 
 2. To apply this theme throughout your application, edit the `index.html` file in the project's root directory. Add the `dx-viewport` class to the `body` tag:
 
@@ -91,13 +91,13 @@ Install the new dependencies:
             <CatFactGrid />
         </template>
 
-## 6. Configure the Data Grid
+## 6. Configure the DataGrid
 
-Go back to the `CatFactGrid.vue` file.  The component is currently empty. Use the `script` tag to set up a DevExtreme Data Grid:
+Go back to the `CatFactGrid.vue` file. The component is currently empty. Use the `script` tag to set up a DevExtreme DataGrid:
 
     <!--tab: CatFactGrid.vue-->
     <script setup lang="ts">
-        import { DxDataGrid } from "devextreme-vue/data-grid"; // Import the DevExtreme Data Grid component
+        import { DxDataGrid } from "devextreme-vue/data-grid"; // Import the DevExtreme DataGrid component
         import CustomStore from "devextreme/data/custom_store"; // Import the CustomStore object
 
         const catFactStore = new CustomStore({ // Define a CustomStore that pulls data from the Cat Facts API
@@ -134,9 +134,9 @@ Use the `template` tag to initialize the component, and attach it to the aforeme
 
 ## 7. View the results
 
-You don't need to relaunch the development server to apply these changes. Just refresh the page and see the grid in action:
+You do not need to relaunch the development server to apply these changes. Just refresh the page and see the grid in action:
 
-![Fully configured DevExtreme Data Grid](/images/Vite/vite-final-result.png)
+![Fully configured DevExtreme DataGrid](/images/Vite/vite-final-result.png)
 
 ## 8. Next Steps
 
@@ -144,4 +144,4 @@ DevExtreme components are powerful, easy to use, and fully compatible with Vite.
 
 Read the [Vite.js documentation](https://vitejs.dev/guide/) for more information on the Vite framework.
 
-[tags] react,vue
+[tags] vue

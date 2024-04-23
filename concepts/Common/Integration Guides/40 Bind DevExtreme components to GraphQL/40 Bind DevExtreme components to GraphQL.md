@@ -2,21 +2,19 @@
 
 GraphQL is a trending API query language and data processing layer. Facebook engineers created GraphQL because REST APIs did not meet their performance requirements.
 
-Modern websites need to display large amounts of data from more than one source. To get this data from a REST API, applications have to issue multiple network requests. Each request takes time to resolve, which slows the application down. If you don't optimize your SQL queries, API responses may include unnecessary data. The application wastes time loading data users don't get to see.
+Modern websites need to display large amounts of data from more than one source. To get this data from a REST API, applications have to issue multiple network requests. Each request takes time to resolve, which slows the application down. If you do not optimize your SQL queries, API responses may include unnecessary data. The application wastes time loading data users do not get to see.
 
 GraphQL is an intermediary layer that takes a single API request, and responds to it with data from multiple sources. It allows you to get very specific, and does not include unnecessary data in its responses. You can replace your REST API with GraphQL, or use GraphQL alongside your REST API.
 
-For more information about the differences between GraphQL and REST, read the following article on the DevExtreme blog: [LINK].
-
-To try GraphQL for yourself, follow this tutorial.
+Follow this tutorial to try GraphQL for yourself.
 
 ## Project overview
 
 This project consists of a client and a server.
 
-The client is a Vite/React Node.js application that displays a DevExtreme Data Grid. The server is an Express.js app that uses a GraphQL API to serve JSON data.
+The client is a Vite/React Node.js application that displays a DevExtreme DataGrid. The server is an Express.js app that uses a GraphQL API to serve JSON data.
 
-The source code for this project is available [on GitHub](https://github.com/ivanblinov2k17/graphql). Refer to the repository if you get lost in the tutorial.
+The source code for this project is available [on GitHub](https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration).
 
 ## Step 1: First steps and global dependencies
 
@@ -31,13 +29,13 @@ The source code for this project is available [on GitHub](https://github.com/iva
 
         npm i express cors graphql-http graphql nodemon
 
-3. Copy the `data` folder from the [project repository](https://github.com/ivanblinov2k17/graphql/tree/master/data) to your local project. The folder contains three `.json` files with static data. Our GraphQL server will use these files as its data sources.
+3. Copy the `data` folder from the [project repository](https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration/tree/master/data) to your local project. The folder contains three `.json` files with static data. Our GraphQL server will use these files as its data sources.
 
     ![Data sources](/images/GraphQL/data-sources.png)
 
 ## Step 2: Client set-up
 
-The project's client side is a simple Vite application that displays a DevExtreme Data Grid.
+The project's client side is a simple Vite application that displays a DevExtreme DataGrid.
 
 1. Create a `client` subfolder:
 
@@ -52,13 +50,12 @@ The project's client side is a simple Vite application that displays a DevExtrem
 
     ![Vite wizard](/images/GraphQL/vite-create.png)
 
-
 4. Open the folder, and install the necessary dependencies for the Vite app:
 
         cd vite-react
         npm i @apollo/client devextreme devextreme-react graphql loadsh whatwg-fetch
 
-5. Copy the code from the [Data Grid CRUD demo](https://js.devexpress.com/React/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/MaterialBlueLight/) to your Vite application.
+5. Copy the code from the [DataGrid CRUD demo](https://js.devexpress.com/React/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/MaterialBlueLight/) to your Vite application.
 
 6. (Optional) Launch the application to confirm that it works:
 
@@ -98,7 +95,7 @@ The project's client side is a simple Vite application that displays a DevExtrem
             err ? console.log(err) : console.log('server started!') 
         }) 
 
-    Note: This example uses the [graphql-http](https://github.com/graphql/graphql-http) package to implement a GraphQL API. There are other ways to use GraphQL with Express.js. See [the official GraphQL tutorial](https://graphql.org/graphql-js/running-an-express-graphql-server/) for more information.
+    [note] This example uses the [graphql-http](https://github.com/graphql/graphql-http) package to implement a GraphQL API. There are other ways to use GraphQL with Express.js. See [the official GraphQL tutorial](https://graphql.org/graphql-js/running-an-express-graphql-server/) for more information.
 
 3. GraphQL needs a [schema file](https://graphql.org/learn/schema/) to understand the data that it serves.
 
@@ -243,7 +240,7 @@ Import the following objects from the library into the `App.tsx` file of your Vi
 
 The `gql` object allows you to form GraphQL queries. The `useMutation` function allows you to map these queries to GraphQL mutations.
 
-If you have difficulties with this section, read the [Apollo documentation](https://www.apollographql.com/docs/react/api/link/introduction/) for a full overview of the library's data flow. Consult the [source code](https://github.com/ivanblinov2k17/graphql/blob/master/client/vite-react/src/App.tsx) of the tutorial repository to view the solution in full.
+If you have difficulties with this section, read the [Apollo documentation](https://www.apollographql.com/docs/react/api/link/introduction/) for a full overview of the library's data flow. Consult the [source code](https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration/blob/master/client/vite-react/src/App.tsx) of the tutorial repository to view the solution in full.
 
 1. Create a GraphQL query template for each data type:
 
@@ -317,9 +314,9 @@ If you have difficulties with this section, read the [Apollo documentation](http
             }
         }
 
-    Note: CustomStore data needs to stay in sync with GraphQL. Make sure that mutation functions return their results.
+    [note] CustomStore data needs to stay in sync with GraphQL. Make sure that mutation functions return their results.
 
-7. The data grid's look-up columns require separate CustomStore data sources:
+7. The DataGrid's look-up columns require separate CustomStore data sources:
 
         <!--tab: App.tsx-->
         const [customersData] = useState(new CustomStore({ 
@@ -334,3 +331,5 @@ If you have difficulties with this section, read the [Apollo documentation](http
         })); 
 
 8. You can apply the same strategy for every DevExtreme component that supports custom data stores.
+
+[tags] react

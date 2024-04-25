@@ -2,7 +2,7 @@
 
 #include common-ctp-note-wo-devextreme
 
-At present, DevExtreme components only partly support Shadow DOM. The following limitations apply:
+DevExtreme components currently only partly support Shadow DOM. The following limitations apply:
 
 - Diagram and Gantt do not support Shadow DOM.
 

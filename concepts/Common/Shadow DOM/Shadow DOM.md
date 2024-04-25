@@ -10,7 +10,7 @@ At present, DevExtreme components only partly support Shadow DOM. The following 
 
 - Popup, Tooltip, Popover, Toast, and LoadPanel render the dialog window in the `<body>` element, not in Shadow DOM.
 
-- DevExtreme stylesheets must be included in the Light DOM for Shadow DOM components to render correctly.
+- DevExtreme stylesheets must be included in the Light DOM. Otherwise Shadow DOM components may render correctly.
 
 - If DevExtreme stylesheets lie in the same domain as `index.html`, the styles will be injected into the Shadow DOM. Otherwise, you need to state them explicitly in the Shadow DOM.
 

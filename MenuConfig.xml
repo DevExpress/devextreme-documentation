@@ -73,6 +73,7 @@
   <MenuRule Destination="66 .NET Backend Solutions" SourcePattern="Howto:^Common/.NET Backend Solutions"/>
 
   <MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
+  <MenuRule Destination="70 Advanced Topics/45 Shadow DOM" SourcePattern="Howto:^Common/Shadow DOM" />
   <MenuRule Destination="70 Advanced Topics/50 Webpack Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/04 Using Webpack" />
   <MenuRule Destination="70 Advanced Topics/70 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" />
   <MenuRule Destination="70 Advanced Topics/81 Components Testing" SourcePattern="Howto:^40 Angular Components/50 Components Testing" VisibleFor="Angular" />

@@ -8,3 +8,7 @@
 #container {
     height: 400px;
 }
+
+.dx-item-content dx-splitter-item-content {
+    overflow: hidden; 
+}

@@ -8,4 +8,6 @@ default: 'horizontal'
 Specifies item orientation (layout).
 
 ---
-<!-- Description goes here -->
+The following image shows horizontal and vertical Splitter orientations:
+
+![Splitter with horizontal and vertical orientations](/images/Splitter/orientation.png)

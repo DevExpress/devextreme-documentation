@@ -8,3 +8,4 @@ default: true
 Specifies whether an item (pane) is resizable.
 
 ---
+![Splitter with resizable panes](/images/Splitter/resizable.gif)

@@ -10,37 +10,29 @@ Specifies a [splitter](/Documentation/ApiReference/UI_Components/dxSplitter/Conf
 ---
 Use this property to make the item a nested Splitter UI component.
 
+![Splitter with a nested splitter](/images/Splitter/splitter.png)
+
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
     $(() => {
         $("#splitter").dxSplitter({
+            orientation: "vertical",
             items: [{
-                    text: "Pane 1"
+                    text: "Nested Top Panel"
                 },
                 {
                     splitter: {
-                        orientation: "vertical",
                         items: [{
-                                text: "Pane 2"
-                            },
-                            {
-                                splitter: {
-                                    items: [{
-                                            text: "Pane 3"
-                                        },
-                                        {
-                                            text: "Pane 4"
-                                        }
-                                    ]
-                                }
+                                text: "Nested Left Panel"
+                            },{
+                                text: "Nested Central Panel"
+                            },{
+                                text: "Nested Right Panel"
                             }
                         ]
                     }
-                },
-                {
-                    text: "Pane 5"
                 }
             ]
         });
@@ -49,40 +41,30 @@ Use this property to make the item a nested Splitter UI component.
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-splitter id="splitter">
-        <dxi-item text="Pane 1"></dxi-item>
+    <dx-splitter id="splitter" orientation="vertical">
+        <dxi-item text="Nested Top Panel"></dxi-item>
         <dxi-item>
-            <dx-splitter orientation="vertical">
-                <dxi-item text="Pane 2"></dxi-item>
-                <dxi-item>
-                    <dx-splitter>
-                        <dxi-item text="Pane 3"></dxi-item>
-                        <dxi-item text="Pane 4"></dxi-item>
-                    </dx-splitter>
-                </dxi-item>
+            <dx-splitter>
+                <dxi-item text="Nested Left Panel"></dxi-item>
+                <dxi-item text="Nested Central Panel"></dxi-item>
+                <dxi-item text="Nested Right Panel"></dxi-item>
             </dx-splitter>
         </dxi-item>
-        <dxi-item text="Pane 5"></dxi-item>
     </dx-splitter>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxSplitter class="splitter">
-            <DxItem text="Pane 1" />
+        <DxSplitter class="splitter" orientation="vertical">
+            <DxItem text="Nested Top Panel" />
             <DxItem>
-                <DxSplitter orientation="vertical">
-                    <DxItem text="Pane 2" />
-                    <DxItem>
-                        <DxSplitter>
-                            <DxItem text="Pane 3" />
-                            <DxItem text="Pane 4" />
-                        </DxSplitter>
-                    </DxItem>
+                <DxSplitter>
+                    <DxItem text="Nested Left Panel" />
+                    <DxItem text="Nested Central Panel" />
+                    <DxItem text="Nested Right Panel" />
                 </DxSplitter>
             </DxItem>
-            <DxItem text="Pane 5" />
         </DxSplitter>
     </template>
 
@@ -98,20 +80,15 @@ Use this property to make the item a nested Splitter UI component.
 
     const App = () => (
         <React.Fragment>
-            <Splitter>
-                <Item text="Pane 1" />
+            <Splitter orientation="vertical">
+                <Item text="Nested Top Panel" />
                 <Item>
-                    <Splitter orientation="vertical">
-                        <Item text="Pane 2" />
-                        <Item>
-                            <Splitter>
-                                <Item text="Pane 3" />
-                                <Item text="Pane 4" />
-                            </Splitter>
-                        </Item>
+                    <Splitter>
+                        <Item text="Nested Left Panel" />
+                        <Item text="Nested Central Panel" />
+                        <Item text="Nested Right Panel" />
                     </Splitter>
                 </Item>
-                <Item text="Pane 5" />
             </Splitter>
         </React.Fragment>
     );

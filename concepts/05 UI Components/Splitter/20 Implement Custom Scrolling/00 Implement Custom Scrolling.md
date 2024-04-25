@@ -1,6 +1,14 @@
+Splitter displays native scroll bars when a pane content is smaller than the pane itself (for instance, as a result of resize).
 
+You can replace native scroll bars with DevExtreme ScrollView component, which allows you to additionally configure scrolling. For example, you can specify [when to show a scroll bar](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#showScrollbar). For more information about the available options, refer to the [ScrollView API section](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/).
+
+The following live example demonstrates the basic implementation of the ScrollView component inside a Splitter pane:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/24_1/UIWidgets/Splitter/scrolling/index.html, /Content/Applications/24_1/UIWidgets/Splitter/scrolling/index.js, /Content/Applications/24_1/UIWidgets/Splitter/scrolling/index.css"></div>
+
+The next snippet contains the code for the example above. 
+
+[note] To turn off native scroll bars, the CSS stylesheet includes `overflow: hidden;` for the pane class.
 
 ---
 ##### jQuery

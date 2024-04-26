@@ -9,6 +9,6 @@
     height: 400px;
 }
 
-.dx-item-content dx-splitter-item-content {
+.dx-item-content .dx-splitter-item-content {
     overflow: hidden; 
 }

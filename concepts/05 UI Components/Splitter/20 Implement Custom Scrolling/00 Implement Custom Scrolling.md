@@ -63,7 +63,7 @@ The next snippet contains the code for the example above.
         height: 400px;
     }
 
-    .dx-item-content dx-splitter-item-content {
+    .dx-item-content .dx-splitter-item-content {
         overflow: hidden; 
     }
 
@@ -125,7 +125,7 @@ The next snippet contains the code for the example above.
         height: 400px;
     }
 
-    .dx-item-content dx-splitter-item-content {
+    .dx-item-content .dx-splitter-item-content {
         overflow: hidden; 
     }
 
@@ -169,7 +169,7 @@ The next snippet contains the code for the example above.
             height: 400px;
         }
 
-        .dx-item-content dx-splitter-item-content {
+        .dx-item-content .dx-splitter-item-content {
             overflow: hidden;
         }
     </style>
@@ -215,7 +215,7 @@ The next snippet contains the code for the example above.
         height: 400px;
     }
 
-    .dx-item-content dx-splitter-item-content {
+    .dx-item-content .dx-splitter-item-content {
         overflow: hidden; 
     }
 

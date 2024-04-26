@@ -3,6 +3,9 @@ The DateBox's value is formatted according to the application's [locale](/api-re
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Formatting/"
 }
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-date-box-parse-short-year-format"
+}
 
 In addition to value formatting, the **displayFormat** can be used as a mask to control user input if [useMaskBehavior](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/useMaskBehavior.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#useMaskBehavior') is **true**:
 

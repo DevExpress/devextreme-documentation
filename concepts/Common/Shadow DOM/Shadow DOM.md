@@ -6,7 +6,7 @@ DevExtreme components currently only partly support Shadow DOM. The following li
 
 - Diagram and Gantt do not support Shadow DOM.
 
-- CSS selectors in properties like [target](/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#target) or [container](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#container) are not supported. Pass a DOM element instead.
+- CSS selectors in properties like [target](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/target.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#target') or [container](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/container.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#container') are not supported. Pass a DOM element instead.
 
 - Popup, Tooltip, Popover, Toast, and LoadPanel render the dialog window in the `<body>` element, not in Shadow DOM.
 

@@ -1,4 +1,4 @@
-Splitter displays native scroll bars when pane content doesn't fit into the pane. This often happens as a result of a resize operation.
+Splitter displays native scroll bars when pane content doesn't fit into the pane, for example, when resizing a pane.
 
 You can hide native scroll bars and use a DevExtreme ScrollView component. This component includes extended scroll bar settings. For example, you can use different [scroll bar visibility modes](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#showScrollbar). For more information about the available options, refer to the [ScrollView API section](/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/).
 

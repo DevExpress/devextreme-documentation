@@ -15,7 +15,7 @@ The number of characters to retrieve.
 The retrieved text content.
 
 ---
-This method skips [mentions](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/) and [variables](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/variables/). To get them, use the QuillJS [getContents()](https://quilljs.com/docs/api#getcontents) method:
+This method skips [mentions](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/mentions '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/mentions/') and [variables](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/variables '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/variables/'). To get them, use the QuillJS [getContents()](https://quilljs.com/docs/api#getcontents) method:
 
     <!--JavaScript-->
     const quill = htmlEditorInstance.getQuillInstance();

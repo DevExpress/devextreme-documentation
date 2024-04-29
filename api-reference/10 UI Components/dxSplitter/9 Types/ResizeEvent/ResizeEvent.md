@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [resize]({basewidgetpath}/Events/#resize) event handler's argument.
 
 ---
 <!-- Description goes here -->

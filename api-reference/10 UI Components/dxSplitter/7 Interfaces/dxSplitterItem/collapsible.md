@@ -5,7 +5,11 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether an item (pane) is collapsible.
 
 ---
-<!-- Description goes here -->
+![Splitter with collapsible panes](/images/Splitter/collapsible.gif)
+
+To collapse a pane, you can also double-click the separator bar. 
+
+[note] Splitter should have at least one non-collapsed pane without a set size.

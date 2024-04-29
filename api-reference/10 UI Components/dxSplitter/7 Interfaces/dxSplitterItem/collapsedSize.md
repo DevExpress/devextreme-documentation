@@ -5,7 +5,67 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the size of a collapsible item (pane) when collapsed in pixels or as a percentage.  
 
 ---
-<!-- Description goes here -->
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(() => {
+        $("#splitter").dxSplitter({
+            items: [
+                {
+                    // ...
+                    collapsedSize: "20px",
+                }
+            ],
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-splitter ... >
+        <dxi-item ...
+            collapsedSize="20px"
+        >
+        </dxi-item>
+    </dx-splitter>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxSplitter ... >
+            <DxItem ... 
+                collapsedSize="20px"
+            />
+        </DxSplitter>
+    </template>
+
+    <script setup>
+    import { DxSplitter, DxItem } from "devextreme-vue/splitter";
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from "react";
+    import Splitter, { Item } from "devextreme-react/splitter";
+
+    const App = () => (
+        <React.Fragment>
+            <Splitter ... >
+                <Item ... 
+                    collapsedSize="20px"
+                />
+            </Splitter>
+        </React.Fragment>
+    );
+
+    export default App;
+
+---
+
+[note] The **collapsedSize** value must not exceed [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize) or be less then [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize).

@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-<!-- Description goes here -->
+This section describes methods used to configure the Splitter UI component. 
 
 ---

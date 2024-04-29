@@ -72,7 +72,7 @@ If you do not specify pane sizes, the UI component splits up the panes automatic
 
 [note]
 
-- The **size** value must not exceed [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize) and be less then [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize).
+- You can use [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize) and [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize) properties to specify size constraints.
 
 - The total pane size should not exceed Splitter size.
 

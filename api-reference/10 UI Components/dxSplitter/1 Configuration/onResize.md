@@ -11,7 +11,7 @@ A function that is executed each time an item (pane) is resized by one pixel.
 Information about the event.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel resize operation.
+Allows you to cancel the resize operation.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

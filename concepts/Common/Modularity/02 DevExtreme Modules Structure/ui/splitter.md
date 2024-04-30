@@ -2,7 +2,7 @@ Exposes the Splitter UI component.
 
 Exports:
 
-- *default* - The [Splitter](/Documentation/ApiReference/UI_Components/dxSplitter/) UI component
+- *default* - The [Splitter](/api-reference/10%20UI%20Components/dxSplitter '/Documentation/ApiReference/UI_Components/dxSplitter/') UI component
 
         require("ui/splitter");
         // ===== or =====

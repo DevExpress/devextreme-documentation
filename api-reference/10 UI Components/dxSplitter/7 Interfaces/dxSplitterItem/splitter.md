@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a [splitter](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/) inside an item.
+Specifies a [splitter](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/') inside an item.
 
 ---
 Use this property to make the item a nested Splitter UI component.

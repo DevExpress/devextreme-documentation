@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the size of an item (pane) in pixels or as a percentage. 
+Specifies the size of an item (pane) in pixels or as a percentage.
 
 ---
 ---
@@ -72,7 +72,7 @@ If you do not specify pane sizes, the UI component splits up the panes automatic
 
 [note]
 
-- You can use [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize) and [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize) properties to specify size constraints.
+- You can use [minSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/minSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize') and [maxSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/maxSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize') properties to specify size constraints.
 
 - The total pane size should not exceed Splitter size.
 

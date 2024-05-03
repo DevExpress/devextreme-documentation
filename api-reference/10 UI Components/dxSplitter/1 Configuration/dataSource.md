@@ -1,6 +1,6 @@
 ---
 id: dxSplitter.Options.dataSource
-type: String | Array<String, dxSplitterItem, any> | Store | DataSource | DataSource_Options | null
+type: String | Array<dxSplitterItem> | Store | DataSource | DataSource_Options | null
 default: null
 ---
 ---

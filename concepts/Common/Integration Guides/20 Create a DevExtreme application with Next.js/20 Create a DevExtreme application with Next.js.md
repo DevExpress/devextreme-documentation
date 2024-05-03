@@ -1,21 +1,8 @@
 # Create a DevExtreme application with Next.js
 
-Next.js is a React-based web development framework. It can generate static websites or, with a little extra configuration, serve dynamic content. The creators of React endorse Next.js because Next is easy to use, feature-rich, and compatible with modern web development patterns, such as server-side page rendering.
+Next.js is a React-based web development framework. It can both generate static websites and serve dynamic content. The creators of React endorse Next.js because Next is easy to use, feature-rich, and compatible with modern web development patterns, such as server-side page rendering.
 
 This article explains how to create a simple Next.js application, and populate it with DevExtreme components.
-
-- [1. Create a new project](#1-create-a-new-project)
-- [2. Add static content to the front page](#2-add-static-content-to-the-front-page)
-  - [Clean-up](#clean-up)
-  - [View the server-rendered page](#view-the-server-rendered-page)
-- [3. Add a DevExtreme DataGrid](#3-add-a-devextreme-datagrid)
-  - [Install dependencies](#install-dependencies)
-  - [Set up the necessary imports](#set-up-the-necessary-imports)
-  - [Set up a Data Source](#set-up-a-data-source)
-  - [Configure the DataGrid](#configure-the-datagrid)
-  - [Insert the DataGrid component into the page](#insert-the-datagrid-component-into-the-page)
-  - [View the client-side rendered grid](#view-the-client-side-rendered-grid)
-- [4. Next Steps](4-next-steps)
 
 ## 1. Create a new project
 
@@ -54,7 +41,7 @@ Proceed to the next step when you get the server up and running.
 
 ## 2. Add static content to the front page
 
-Next.js stores the source code for your application's front page in the `src/app/page.tsx` file.
+During the set-up process we selected the "Store source code in the `src/` directory" option. As such, the source code for your application's front page resides in the `src/app/page.tsx` file.
 
 Let's replace the content of the page with a simple heading and a paragraph:
 
@@ -110,15 +97,9 @@ Turn JavaScript back on to continue the tutorial.
 
 ### Install dependencies
 
-Update your `package.json` file to include the dependencies necessary to use DevExtreme components:
+Run the following command to install the necessary DevExtreme packages and save them to your package dependency list:
 
-    <!--tab: package.json-->
-    "dependencies": {
-        "devextreme": "^23.2",
-        "devextreme-react": "^23.2",
-        ...
-    }
-Run `npm install` to install these packages.
+    npm install devextreme@24.1 devextreme-react@24.1 --save-exact
 
 ### Set up the necessary imports
 

@@ -6,18 +6,9 @@ You don't have to use MUI to add a Material Design look and feel to your applica
 
 You don't need extra configuration to run MUI components side by side with DevExtreme components. But if you nest components from different frameworks, you have to understand how they interact with one another.
 
-- [Run the sample application](#run-the-sample-application)
-- [DevExtreme components inside MUI components](#devextreme-components-inside-mui-components)
-        - [Form context and hooks](#form-context-and-hooks)
-        - [State management](#state-management)
-        - [Handle button presses](#handle-button-presses)
-        - [Create and apply the MUI theme](#create-and-apply-the-mui-theme)
-        - [Styling Non-MUI components](#styling-non-mui-components)
-- [MUI components inside DevExtreme components](#mui-components-inside-devextreme-components)
-
 ## Run the sample application
 
-The DevExtreme team created a single-page, ready-to-run Vite application that illustrates two common use cases. It contains a MUI component with DevExtreme children, and a DevExtreme component with MUI children. You can view the application's source code in the following GitHub repository: [https://github.com/DevExpress-Examples/devextreme-mui-integration](https://github.com/DevExpress-Examples/devextreme-mui-integration).
+The DevExtreme team created a single-page, ready-to-run Vite application that illustrates two common use cases. It contains an MUI component with DevExtreme children, and a DevExtreme component with MUI children. You can view the application's source code in the following GitHub repository: [https://github.com/DevExpress-Examples/devextreme-mui-integration](https://github.com/DevExpress-Examples/devextreme-mui-integration).
 
 Install the dependencies and run the app:
 
@@ -27,16 +18,16 @@ Install the dependencies and run the app:
 
 ## DevExtreme components inside MUI components
 
-The `src/MUI-Form-with-DX-editors.tsx` file contains a MUI form with DevExtreme inputs.
+The `src/MUI-Form-with-DX-editors.tsx` file contains an MUI form with DevExtreme inputs.
 
 ### Form context and hooks
 
-The `FormControl` MUI component is simple in comparison with its DevExtreme counterpart. Its purpose is to keep track of form state. Inputs and labels can access this data with the `useFormControlContext` hook.
+The `FormControl` MUI component is simple in comparison to its DevExtreme counterpart. Its purpose is to keep track of the form state. Inputs and labels can access this data with the `useFormControlContext` hook.
 
 Since DX inputs do not have access to the `useFormControlContext` hook out of the box, we need to create a wrapper function:
 
     <!--tab: MUI-Form-with-DX-editors.tsx-->
-    // In accordance with MUI conventions, we should not capitalize the name of the wrapper function
+    // In accordance with MUI conventions, do not capitalize the name of the wrapper function
     const dX_MUI_Form_Wrapper_HOC = (DXComponent: any, componentName: keyof FormData) => (props: any) => { 
         const { onValueChange, ...restProps } = props;
         const value = useFormControlContext()?.value as FormData;
@@ -145,15 +136,15 @@ Now we can retrieve the global MUI theme and style the button:
     }} text="Reset Form" onClick={handleReset} 
     />
 
-This approach is useful if your MUI theme includes settings that DevExtreme themes cannot store --- for example, font-related settings. The easier way to style DevExtreme components nested within MUI components is to simply use DevExtreme themes. Open the [DevExtreme theme builder](https://devexpress.github.io/ThemeBuilder/), define the same color palette as the MUI theme, and reference the DevExtreme theme in your application.
+This technique is useful if your MUI theme includes settings that DevExtreme themes cannot store --- for example, font-related settings. An easier way to style DevExtreme components nested within MUI components is to simply use DevExtreme themes. Open the [DevExtreme theme builder](https://devexpress.github.io/ThemeBuilder/), define the same color palette as the MUI theme, and reference the DevExtreme theme in your application.
 
 ## MUI components inside DevExtreme components
 
-To use MUI controls inside a DevExtreme components, we need to apply a similar strategy.
+You can utilize a similar strategy to use MUI controls inside a DevExtreme component.
 
 Create functions that handle form state change:
 
-    <!--tab: DX-Form-with-MUI-editors.tsx>
+    <!--tab: DX-Form-with-MUI-editors.tsx-->
     const [formData, updateFormData] = useState<FormData>({
         textBox: '',
         muiInput: '',
@@ -168,14 +159,14 @@ Create functions that handle form state change:
 
 Create a wrapper for MUI inputs that triggers these functions:
 
-    <!--tab: DX-Form-with-MUI-editors.tsx>
+    <!--tab: DX-Form-with-MUI-editors.tsx-->
     const InputTemplate = () => {
         return <MUIInput onChange={handleMuiFormDataChange('muiInput')} />;
     }
 
-Wrap form elements inside `DXItem` and `DXLabel` components. Call the [render()](https://js.devexpress.com/React/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Rendering_Function) method to render MUI components.
+Use the [render()](https://js.devexpress.com/React/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Rendering_Function) method to wrap MUI components inside `DXItem` and `DXLabel`.
 
-    <!--tab: DX-Form-with-MUI-editors.tsx>
+    <!--tab: DX-Form-with-MUI-editors.tsx-->
     <DXForm className="form">
         <DXItem render={InputTemplate}>
             <DXLabel render={() => <MUIFormLabel component="legend">Name</MUIFormLabel>}></DXLabel>

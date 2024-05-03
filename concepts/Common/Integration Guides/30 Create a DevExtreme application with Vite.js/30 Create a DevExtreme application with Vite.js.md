@@ -30,8 +30,8 @@ Add the following dependencies to the `package.json` file:
 
     <!--tab: package.json-->
     "dependencies": {
-        "devextreme": "^23.2",
-        "devextreme-vue": "^23.2",
+        "devextreme": "^24.1",
+        "devextreme-vue": "^24.1",
         ...
     }
 
@@ -43,12 +43,12 @@ Install the new dependencies:
 
 1. Open the `srtc/App.vue` file, and replace its content with the following two tags:
 
-        <!--tab: App.vue-->
-        <script setup lang="ts">
-        </script>
-
+        <!--tab: App.vue-->        
         <template>
         </template>
+
+        <script setup lang="ts">
+        </script>
 
 2. Remove the `src/components/HelloWorld.vue` file because we no longer need it.
 
@@ -73,23 +73,24 @@ Install the new dependencies:
 1. Create a new file for the component --- `src/components/CatFactGrid.vue`. Populate it with the following two tags:
 
         <!--tab: CatFactGrid.vue-->
-        <script setup lang="ts">
-            // component setup
-        </script>
         <template>
             // component declaration
         </template>
 
+        <script setup lang="ts">
+            // component setup
+        </script>
+
 2. Modify the `src/App.vue` file to display our new component:
 
         <!--tab: App.vue-->
-        <script setup lang="ts">
-            import CatFactGrid from './components/CatFactGrid.vue'
-        </script>
-
         <template>
             <CatFactGrid />
         </template>
+
+        <script setup lang="ts">
+            import CatFactGrid from './components/CatFactGrid.vue'
+        </script>
 
 ## 6. Configure the DataGrid
 

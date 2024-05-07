@@ -8,7 +8,11 @@ You don't need extra configuration to run MUI components side by side with DevEx
 
 ## Run the sample application
 
-The DevExtreme team created a single-page, ready-to-run Vite application that illustrates two common use cases. It contains an MUI component with DevExtreme children, and a DevExtreme component with MUI children. You can view the application's source code in the following GitHub repository: [https://github.com/DevExpress-Examples/devextreme-mui-integration](https://github.com/DevExpress-Examples/devextreme-mui-integration).
+The DevExtreme team created a single-page, ready-to-run Vite application that illustrates two common use cases. It contains an MUI component with DevExtreme children, and a DevExtreme component with MUI children.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-mui-integration"
+}
 
 Install the dependencies and run the app:
 
@@ -42,7 +46,7 @@ And wrap both of our non-MUI inputs:
 
 ### State management
 
-React.js developers recommend the use of [controlled state management mode](https://reactjs.org/docs/forms.html#controlled-components) for web forms.
+React.js developers recommend the use of controlled state management mode for web forms.
 
 The `handleFormDataChange` function in the example updates the state of the form object in response to user interaction. The state is a dictionary, with each key corresponding to a single input component.
 

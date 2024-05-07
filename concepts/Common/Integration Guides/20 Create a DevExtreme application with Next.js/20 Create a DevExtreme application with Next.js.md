@@ -41,7 +41,7 @@ Proceed to the next step when you get the server up and running.
 
 ## 2. Add static content to the front page
 
-During the set-up process we selected the "Store source code in the `src/` directory" option. As such, the source code for your application's front page resides in the `src/app/page.tsx` file.
+During the set-up process we selected the "Store source code in the `src/` directory" option. As such, the `src/app/page.tsx` file stores the source of your application's front page.
 
 Let's replace the content of the page with a simple heading and a paragraph:
 

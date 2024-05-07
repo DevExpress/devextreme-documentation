@@ -18,6 +18,9 @@ Launch the development server to see a live preview of the website:
     gatsby develop
 
 ![Command line URL](/images/Gatsby/cmd-url.png)
+
+The framework outputs the URL to the command line. Click the link to open it in the browser:
+
 ![Gatsby website](/images/Gatsby/new-website.png)
 
 Consult [Gatsby documentation](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-1/#create-a-gatsby-site) for an in-depth walkthrough of the process.
@@ -229,7 +232,6 @@ If you want to apply a DevExtreme theme to a specific page, do not import this t
             </>
         )
     };
-
 
 This link downloads the `light` theme from the [DevExpress CDN](/Documentation/Guide/Common/Distribution_Channels/CDN/) and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
 

@@ -14,7 +14,11 @@ This project consists of a client and a server.
 
 The client is a Vite/React Node.js application that displays a DevExtreme DataGrid. The server is an Express.js app that uses a GraphQL API to serve JSON data.
 
-The source code for this project is available [on GitHub](https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration).
+The source code for this project is available on GitHub.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration"
+}
 
 ## Step 1: First steps and global dependencies
 
@@ -29,7 +33,13 @@ The source code for this project is available [on GitHub](https://github.com/Dev
 
         npm i express cors graphql-http graphql nodemon
 
-3. Copy the `data` folder from the [project repository](https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration/tree/master/data) to your local project. The folder contains three `.json` files with static data. Our GraphQL server will use these files as its data sources.
+3. Copy the `data` folder from the project repository to your local project. 
+
+    #include btn-open-github with {
+        href: "https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration"
+    }
+
+    The folder contains three `.json` files with static data. Our GraphQL server will use these files as its data sources.
 
     ![Data sources](/images/GraphQL/data-sources.png)
 
@@ -240,7 +250,11 @@ Import the following objects from the library into the `App.tsx` file of your Vi
 
 The `gql` object allows you to form GraphQL queries. The `useMutation` function allows you to map these queries to GraphQL mutations.
 
-If you have difficulties with this section, read the [Apollo documentation](https://www.apollographql.com/docs/react/api/link/introduction/) for a full overview of the library's data flow. Consult the [source code](https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration/blob/master/client/vite-react/src/App.tsx) of the tutorial repository to view the solution in full.
+If you have difficulties with this section, read the [Apollo documentation](https://www.apollographql.com/docs/react/api/link/introduction/) for a full overview of the library's data flow. Consult the source code of the tutorial repository to view the solution in full.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-graphql-integration"
+}
 
 1. Create a GraphQL query template for each data type:
 

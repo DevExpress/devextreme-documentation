@@ -20,9 +20,9 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "root menu element" }
 
 ##### field(e.itemData): dxMenuItem
-<!-- Description goes here -->
+Menu item data. Includes root element data and a submenu items' data array.
 
 ##### field(e.submenuContainer): DxElement
-<!-- Description goes here -->
+A root element of a submenu.
 
 ---

@@ -136,7 +136,7 @@ Now we can retrieve the global MUI theme and style the button:
     }} text="Reset Form" onClick={handleReset} 
     />
 
-This technique is useful if your MUI theme includes settings that DevExtreme themes cannot store --- for example, font-related settings. An easier way to style DevExtreme components nested within MUI components is to simply use DevExtreme themes. Open the [DevExtreme theme builder](https://devexpress.github.io/ThemeBuilder/), define the same color palette as the MUI theme, and reference the DevExtreme theme in your application.
+This technique is useful if your MUI theme includes settings that DevExtreme themes cannot store --- for example, font-related settings. An easier way to style DevExtreme components nested within MUI components is to simply use DevExtreme themes. Open the [DevExtreme ThemeBuilder](https://devexpress.github.io/ThemeBuilder/), define the same color palette as the MUI theme, and reference the DevExtreme theme in your application.
 
 ## MUI components inside DevExtreme components
 
@@ -164,7 +164,7 @@ Create a wrapper for MUI inputs that triggers these functions:
         return <MUIInput onChange={handleMuiFormDataChange('muiInput')} />;
     }
 
-Use the [render()](https://js.devexpress.com/React/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Rendering_Function) method to wrap MUI components inside `DXItem` and `DXLabel`.
+Use the [render()](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Rendering_Function) method to wrap MUI components inside `DXItem` and `DXLabel`.
 
     <!--tab: DX-Form-with-MUI-editors.tsx-->
     <DXForm className="form">

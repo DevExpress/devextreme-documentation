@@ -9,6 +9,7 @@
   <MenuRule Destination="030 Overview" SourcePattern="Howto:^58 jQuery Components/00 DevExtreme jQuery Components" VisibleFor="jQuery" />
 
   <MenuRule Destination="050 Getting Started/50 Accessibility" SourcePattern="Howto:^Common/Accessibility" />
+
   <MenuRule Destination="050 Getting Started/55 Security Considerations" SourcePattern="Howto:^Common/Security Considerations" />
 
   <MenuRule Destination="050 Getting Started/80 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
@@ -62,6 +63,9 @@
   <MenuRule Destination="40 UI Customization/10 Themes and Styles" SourcePattern="Howto:^60 Themes and Styles" />
   <MenuRule Destination="40 UI Customization/20 Templates" SourcePattern="Howto:^05 UI Components/zz Common/30 Templates" />
   <MenuRule Destination="40 UI Customization/10 Themes and Styles/98 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
+
+  <MenuRule Destination="45 Integration Guides/" SourcePattern="Howto:^Common/Integration Guides/" VisibleFor="React"/>
+  <MenuRule Destination="46 Integration Guides/" SourcePattern="Howto:^Common/Integration Guides/" VisibleFor="Vue"/>
 
   <MenuRule Destination="50 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
   <MenuRule Destination="50 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />

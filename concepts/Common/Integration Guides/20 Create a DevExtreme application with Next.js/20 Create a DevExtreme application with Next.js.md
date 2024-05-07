@@ -182,7 +182,7 @@ DevExtreme renders the DataGrid on the client, even if the rest of the page is r
 
 ## 4. Next Steps
 
-DevExtreme components are powerful, easy to use, and fully compatible with Next.js. View our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/React/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
+DevExtreme components are powerful, easy to use, and fully compatible with Next.js. View our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
 
 Read the [Next.js documentation](https://nextjs.org/docs) for more information on the Next.js framework.
 

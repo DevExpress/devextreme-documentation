@@ -55,7 +55,7 @@ The project's client side is a simple Vite application that displays a DevExtrem
         cd vite-react
         npm i @apollo/client devextreme devextreme-react graphql loadsh whatwg-fetch
 
-5. Copy the code from the [DataGrid CRUD demo](https://js.devexpress.com/React/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/MaterialBlueLight/) to your Vite application.
+5. Copy the code from the [DataGrid CRUD demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/) to your Vite application.
 
 6. (Optional) Launch the application to confirm that it works:
 

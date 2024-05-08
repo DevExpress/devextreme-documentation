@@ -168,7 +168,7 @@ Create a wrapper for MUI inputs that triggers these functions:
         return <MUIInput onChange={handleMuiFormDataChange('muiInput')} />;
     }
 
-Use the [render()](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Rendering_Function) method to wrap MUI components inside `DXItem` and `DXLabel`.
+Use the [render()](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/55%20Markup%20Customization/3%20Using%20a%20Rendering%20Function.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization/Using_a_Rendering_Function') method to wrap MUI components inside `DXItem` and `DXLabel`.
 
     <!--tab: DX-Form-with-MUI-editors.tsx-->
     <DXForm className="form">

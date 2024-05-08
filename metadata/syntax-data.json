@@ -9477,9 +9477,6 @@
     "dxDataGridOptions.onToolbarPreparing": {
       "vue": "@toolbar-preparing"
     },
-    "dxDataGridOptions.regenerateColumnsByVisibleItems": {
-      "vue": "regenerate-columns-by-visible-items"
-    },
     "dxDataGridOptions.remoteOperations": {
       "angular": "dxo-remote-operations",
       "react": "RemoteOperations",

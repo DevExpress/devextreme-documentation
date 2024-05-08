@@ -61,7 +61,7 @@ Install the new dependencies:
         <!--tab: main.ts-->
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    This statement applies the `fluent` theme to your application. You can select a [different DevExtreme theme](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/) if you wish.
+    This statement applies the `fluent` theme to your application. You can select a [different DevExtreme theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') if you wish.
 
 2. To apply this theme throughout your application, edit the `index.html` file in the project's root directory. Add the `dx-viewport` class to the `body` tag:
 

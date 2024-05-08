@@ -64,8 +64,8 @@
   <MenuRule Destination="40 UI Customization/20 Templates" SourcePattern="Howto:^05 UI Components/zz Common/30 Templates" />
   <MenuRule Destination="40 UI Customization/10 Themes and Styles/98 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
 
-  <MenuRule Destination="45 Integration Guides/" SourcePattern="Howto:^Common/Integration Guides/" VisibleFor="React"/>
-  <MenuRule Destination="46 Integration Guides/" SourcePattern="Howto:^Common/Integration Guides/" VisibleFor="Vue"/>
+  <MenuRule Destination="45 Integration Guides/" SourcePattern="Howto:^Common/React Integration Guides/" VisibleFor="React"/>
+  <MenuRule Destination="46 Integration Guides/" SourcePattern="Howto:^Common/Vue Integration Guides/" VisibleFor="Vue"/>
 
   <MenuRule Destination="50 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
   <MenuRule Destination="50 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />
@@ -77,7 +77,6 @@
   <MenuRule Destination="66 .NET Backend Solutions" SourcePattern="Howto:^Common/.NET Backend Solutions"/>
 
   <MenuRule Destination="70 Advanced Topics" SourcePattern="Howto:^40 Angular Components/40 Common Features" />
-  <MenuRule Destination="70 Advanced Topics/45 Shadow DOM" SourcePattern="Howto:^Common/Shadow DOM" />
   <MenuRule Destination="70 Advanced Topics/50 Webpack Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/04 Using Webpack" />
   <MenuRule Destination="70 Advanced Topics/70 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" />
   <MenuRule Destination="70 Advanced Topics/81 Components Testing" SourcePattern="Howto:^40 Angular Components/50 Components Testing" VisibleFor="Angular" />

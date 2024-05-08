@@ -157,4 +157,8 @@ Cannot be converted, the cell value is exported without formatting. To export th
 
 A column's default format depends on the data type, which is detected automatically. If you find that a format is exported incorrectly, you will need to explicitly set the column's [dataType](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType).
 
+#####See Also#####
+- [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{currentpath}/#customizeText')
+- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+
 <!-- import * from "api-reference\_hidden\GridBaseColumn\format.md" -->

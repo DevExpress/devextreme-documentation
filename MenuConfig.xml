@@ -35,6 +35,8 @@
 
   <MenuRule Destination="050 Getting Started/30 Optimize Performance" SourcePattern="Howto:^50 React Components/45 Optimize Performance" VisibleFor="React" />
 
+  <MenuRule Destination="050 Getting Started/31 Support for Angular Signals" SourcePattern="Howto:^40 Angular Components/10 Getting Started/90 Support for Angular Signals" VisibleFor="Angular" />
+  
   <MenuRule Destination="050 Getting Started/60 TypeScript Support" SourcePattern="Howto:^40 Angular Components/70 TypeScript Support" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
@@ -107,8 +109,8 @@
   <MenuRule Destination="10 UI Components/dxDiagram/0 Getting Started" SourcePattern="Howto:^05 UI Components/Diagram/00 Getting Started with Diagram" VisibleFor="jQuery"/>
   <MenuRule Destination="10 UI Components/dx$1/0 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/dx$1/4 Accessibility" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Accessibility" />
-  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Accordion|BarGauge|Bullet|ButtonGroup|CheckBox|CircularGauge|Drawer|DropDownButton|Floating Action Button|LinearGauge|NavBar|Resizable|SlideOut|SlideOutView|TabPanel|Tabs|Toolbar|TreeMap|zz Common)" />
-  <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList|Diagram)/[0-9]+ How To" />
+  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Accordion|BarGauge|Bullet|ButtonGroup|CheckBox|Drawer|DropDownButton|Floating Action Button|NavBar|Resizable|SlideOut|SlideOutView|TabPanel|Tabs|Toolbar|TreeMap|zz Common)" />
+  <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList)/[0-9]+ How To" />
   <MenuRule Destination="10 UI Components/dx$1/1 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
 
   <!-- Hidden topics -->

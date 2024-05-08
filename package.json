@@ -9,10 +9,11 @@
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
-    "devextreme-internal-tools": "^12.0.0-beta.11",
+    "devextreme-internal-tools": "^12.0.0-beta.16",
     "ts-node": "^10.9.1"
   },
   "scripts": {
+    "make-compact-docs": "dx-tools make-compact-docs --docs-root-path ./",
     "generate-content-map": "dx-tools make-content-map --docs-root-path ./ --version 23.2 --syntax-meta-path ./metadata/syntax-data.json",
     "generate-syntax-data": "dx-tools make-syntax-metadata --output-path ./metadata/syntax-data.json",
     "generate-extra-topic": "dx-tools generate-extra-topics --docs-root-path ./ --version 23.2",

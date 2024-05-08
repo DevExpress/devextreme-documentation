@@ -9,3 +9,6 @@ Gets a file's extension.
 The file's extension.
 
 ---
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/CustomThumbnails/"
+}

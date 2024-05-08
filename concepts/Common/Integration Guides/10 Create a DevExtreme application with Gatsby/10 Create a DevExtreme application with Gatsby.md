@@ -81,7 +81,7 @@ If you deploy your website on Netlify, Gatsby renders your content on the server
 
 ## 4. Add DevExtreme to the application
 
-We're ready to add a [DevExtreme DataGrid](/Documentation/ApiReference/UI_Components/dxDataGrid/) to our application. First, add DevExtreme to your project dependencies:
+We're ready to add a [DevExtreme DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/') to our application. First, add DevExtreme to your project dependencies:
 
     <!--tab: package.json-->
     "dependencies": {
@@ -197,7 +197,7 @@ Refresh the page to view the result:
 
 ## 5. Apply a DevExtreme theme
 
-The application displays a DevExtreme grid, but does not style it appropriately. If you want the grid to look good, style it with a [DevExtreme theme](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
+The application displays a DevExtreme grid, but does not style it appropriately. If you want the grid to look good, style it with a [DevExtreme theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/').
 
 You can apply a DevExtreme theme to the grid in one of two ways:
 
@@ -233,7 +233,7 @@ If you want to apply a DevExtreme theme to a specific page, do not import this t
         )
     };
 
-This link downloads the `light` theme from the [DevExpress CDN](/Documentation/Guide/Common/Distribution_Channels/CDN/) and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
+This link downloads the `light` theme from the [DevExpress CDN](/concepts/Common/Distribution%20Channels/05%20CDN '/Documentation/Guide/Common/Distribution_Channels/CDN/') and applies it to the page. If you need to insert this code into multiple pages, save it as a separate component.
 
 Modify the name of the stylesheet to apply [a different theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/'). Modify the name of the subfolder (`23.1.3`) to apply a theme that is compatible with a different version of DevExtreme.
 

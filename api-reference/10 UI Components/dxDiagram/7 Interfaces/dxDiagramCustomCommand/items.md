@@ -1,6 +1,6 @@
 ---
 id: dxDiagramCustomCommand.items
-type: Array<dxDiagramCustomCommand>
+type: Array<dxDiagramCustomCommand, Enums.DiagramCommand>
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.viewToolbar.commands
-type: Array<dxDiagramCustomCommand> | Array<Enums.DiagramCommand>
+type: Array<dxDiagramCustomCommand, Enums.DiagramCommand>
 default: undefined
 inheritsType: dxDiagramCustomCommand
 ---

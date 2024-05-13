@@ -1,61 +1,636 @@
-Refer to the following list for detailed information about each component's accessibility compliance:
+Refer to the following table for detailed information about each component's accessibility compliance:
 
-[note] Currently, not all components' guides include an accessibility topic. This list will continue to grow.
+<table class="dx-table">
+    <thead>
+        <tr>
+            <th>Component<br></th>
+            <th>RTL Mode</th>
+            <th>Keyboard Navigation</th>
+            <th>Screen Reader</th>
+            <th>Contrast Theme</th>
+            <th>Mobile Device</th>
+            <th><a href="https://developer.chrome.com/docs/lighthouse/" target="_blank">Lighthouse</a> Validation</th>
+            <th><a href="https://www.deque.com/axe/" target="_blank">Axe</a> Validation</th>
+            <th><a href="https://wave.webaim.org/" target="_blank">WAVE</a> Validation</th>
+            <th><a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a></th>
+            <th><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2.x</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Accordion/Accessibility/">Accordion</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/ActionSheet/Accessibility/">ActionSheet</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Autocomplete/Accessibility/">Autocomplete</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Button/Accessibility/">Button</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/ButtonGroup/Accessibility/">ButtonGroup</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Calendar/Accessibility/">Calendar</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/CheckBox/Accessibility/">CheckBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/ColorBox/Accessibility/">ColorBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/ContextMenu/Accessibility/">ContextMenu</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/DataGrid/Accessibility/">DataGrid</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/DateBox/Accessibility/">DateBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/DateRangeBox/Accessibility/">DateRangeBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/DropDownBox/Accessibility/">DropDownBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/DropDownButton/Accessibility/">DropDownButton</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/FileUploader/Accessibility/">FileUploader</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Form/Accessibility/">Form</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Gallery/Accessibility/">Gallery</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/">HtmlEditor</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/List/Accessibility/">List</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/LoadPanel/Accessibility/">LoadPanel</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Lookup/Accessibility/">Lookup</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Map/Accessibility/">Map</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Menu/Accessibility/">Menu</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/MultiView/Accessibility/">MultiView</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/NumberBox/Accessibility/">NumberBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Popover/Accessibility/">Popover</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Popup/Accessibility/">Popup</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/ProgressBar/Accessibility/">ProgressBar</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/RadioGroup/Accessibility/">RadioGroup</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/RangeSlider/Accessibility/">RangeSlider</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/SelectBox/Accessibility/">SelectBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Slider/Accessibility/">Slider</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Splitter/Accessibility/">Splitter</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Switch/Accessibility/">Switch</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/TabPanel/Accessibility/">TabPanel</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Tabs/Accessibility/">Tabs</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/TagBox/Accessibility/">TagBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/TextArea/Accessibility/">TextArea</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/TextBox/Accessibility/">TextBox</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Toast/Accessibility/">Toast</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Toolbar/Accessibility/">Toolbar</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Tooltip/Accessibility/">Tooltip</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/TreeList/Accessibility/">TreeList</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/TreeView/Accessibility/">TreeView</a></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+            <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        </tr>
+    </tbody>
+</table>
 
-## Grid Components
+<ul style="list-style-type: none;">
+   <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-success"/></svg> - All component features meet the requirement</li>
+   <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-warning"/></svg> - Some component features may not meet the requirement</li>
+   <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-error"/></svg> - Accessibility requirement is not supported</li>
+</ul>
 
-- [DataGrid](/concepts/05%20UI%20Components/DataGrid/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DataGrid/Accessibility/')
-- [TreeList](/concepts/05%20UI%20Components/DataGrid/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DataGrid/Accessibility/')
+The following components do not meet any accessibility requirements and currently are not accessible:
 
-## Actions and Lists
+- BarGauge
+- Bullet
+- Chart
+- CircularGauge
+- Diagram
+- Draggable
+- Drawer
+- FileManager
+- FilterBuilder
+- Floating Action Button
+- Funnel
+- Gantt
+- LinearGauge
+- LoadIndicator
+- PieChart
+- PivotGrid
+- PivotGridFieldChooser
+- PolarChart
+- RangeSelector
+- Resizable
+- Sankey
+- Scheduler
+- Sortable
+- Sparkline
+- TreeMap
+- VectorMap
 
-- [Button](/concepts/05%20UI%20Components/Button/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Button/Accessibility/')
-- [ButtonGroup](/concepts/05%20UI%20Components/ButtonGroup/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/ButtonGroup/Accessibility/')
-- [ContextMenu](/concepts/05%20UI%20Components/ContextMenu/02%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/ContextMenu/Accessibility/')
-- [DropDownButton](/concepts/05%20UI%20Components/DropDownButton/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DropDownButton/Accessibility/')
-- [Gallery](/concepts/05%20UI%20Components/Gallery/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Gallery/Accessibility/')
-- [List](/concepts/05%20UI%20Components/List/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/List/Accessibility/')
-- [RadioGroup](/concepts/05%20UI%20Components/RadioGroup/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/RadioGroup/Accessibility/')
+Accessibility requirements are not applicable to the following components due to their nature:
 
-## Form
-
-- [Form](/concepts/05%20UI%20Components/Form/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Form/Accessibility/')
-
-## Drop-Down Editors
-
-- [Autocomplete](/concepts/05%20UI%20Components/Autocomplete/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Autocomplete/Accessibility/')
-- [ColorBox](/concepts/05%20UI%20Components/ColorBox/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/ColorBox/Accessibility/')
-- [DateBox](/concepts/05%20UI%20Components/DateBox/02%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DateBox/Accessibility/')
-- [DateRangeBox](/concepts/05%20UI%20Components/DateRangeBox/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DateRangeBox/Accessibility/')
-- [DropDownBox](/concepts/05%20UI%20Components/DropDownBox/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/DropDownBox/Accessibility/')
-- [Lookup](/concepts/05%20UI%20Components/Lookup/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Lookup/Accessibility/')
-- [SelectBox](/concepts/05%20UI%20Components/SelectBox/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/SelectBox/Accessibility/')
-- [TagBox](/concepts/05%20UI%20Components/TagBox/01%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/TagBox/Accessibility/')
-
-## Other Editors
-
-- [Calendar](/concepts/05%20UI%20Components/Calendar/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Calendar/Accessibility/')
-- [CheckBox](/concepts/05%20UI%20Components/CheckBox/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/CheckBox/Accessibility/')
-- [NumberBox](/concepts/05%20UI%20Components/NumberBox/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/NumberBox/Accessibility/')
-- [RangeSlider](/concepts/05%20UI%20Components/RangeSlider/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/RangeSlider/Accessibility/')
-- [Slider](/concepts/05%20UI%20Components/Slider/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Slider/Accessibility/')
-- [Switch](/concepts/05%20UI%20Components/Switch/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Switch/Accessibility/')
-
-## Navigation Components
-
-- [Accordion](/concepts/05%20UI%20Components/Accordion/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Accordion/Accessibility/')
-- [Menu](/concepts/05%20UI%20Components/Menu/02%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Menu/Accessibility/')
-- [MultiView](/concepts/05%20UI%20Components/MultiView/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/MultiView/Accessibility/')
-- [TabPanel](/concepts/05%20UI%20Components/TabPanel/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/TabPanel/Accessibility/')
-- [Tabs](/concepts/05%20UI%20Components/Tabs/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Tabs/Accessibility/')
-- [Toolbar](/concepts/05%20UI%20Components/Toolbar/05%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Toolbar/Accessibility/')
-- [TreeView](/concepts/05%20UI%20Components/TreeView/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/TreeView/Accessibility/')
-
-## Overlay Components
-
-- [Popup](/concepts/05%20UI%20Components/Popup/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Popup/Accessibility/')
-- [Popover](/concepts/05%20UI%20Components/Popover/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/Popover/Accessibility/')
-
-## Notifications
-
-- [ProgressBar](/concepts/05%20UI%20Components/ProgressBar/03%20Accessibility/00%20Accessibility.md '/Documentation/Guide/UI_Components/ProgressBar/Accessibility/')
+- Box
+- DeferRendering
+- ResponsiveBox
+- ScrollView
+- TileView

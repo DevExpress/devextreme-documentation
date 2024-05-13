@@ -1,0 +1,24 @@
+#container {
+    height: 400px;
+}
+
+.dx-resize-handle .dx-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.dx-icon-handlehorizontal:before,
+.dx-icon-handlevertical:before {
+    content: "";
+}
+
+.dx-resize-handle-horizontal .dx-resize-handle-icon,
+.dx-resize-handle-vertical .dx-resize-handle-icon,
+.dx-splitter .dx-resize-handle.dx-state-focused {
+    background-color: #c7c7c7;
+}
+
+.dx-splitter .dx-resize-handle,
+.dx-splitter .dx-resize-handle.dx-state-hover {
+    background-color: #e0e0e080;
+}

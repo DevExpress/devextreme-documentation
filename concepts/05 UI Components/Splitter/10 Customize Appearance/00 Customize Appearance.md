@@ -1,0 +1,1 @@
+<div class="simulator-desktop-container" data-view="/Content/Applications/24_1/UIWidgets/Splitter/customization/index.html, /Content/Applications/24_1/UIWidgets/Splitter/customization/index.js, /Content/Applications/24_1/UIWidgets/Splitter/customization/index.css"></div>

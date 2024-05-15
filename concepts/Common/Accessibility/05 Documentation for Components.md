@@ -640,6 +640,6 @@ Accessibility requirements are not applicable to the following components due to
 <script src="/Scripts/Docs/advancedTable.js"></script>
 <script>
 $(function() {
-  Site.initAdvancedTable(".advanced-table-container")
+  Site.initAdvancedTable(".advanced-table-container");
 });
 </script>

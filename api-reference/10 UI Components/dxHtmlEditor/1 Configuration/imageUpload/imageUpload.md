@@ -19,7 +19,7 @@ Click the 'Add Image' [toolbar button](/api-reference/_hidden/dxHtmlEditorToolba
 
 Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUploadMode.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode') property to specify whether to upload images as is or in Base64 binary format. The [tabs](/api-reference/_hidden/dxHtmlEditorImageUpload/tabs.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#tabs') property specifies the visibility of tabs in the 'Add Image' dialog. 
 
-[note] If [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUploadMode.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode') is set to `server` or `both`, specify [uploadDirectory](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#uploadDirectory) to correctly upload images. If your application does not include a shared folder, check the "Encode to Base64" check box to display an uploaded image as a `base64` string.
+[note] If [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUploadMode.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#fileUploadMode') is set to `server` or `both`, specify [uploadDirectory](/api-reference/_hidden/dxHtmlEditorImageUpload/uploadDirectory.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/#uploadDirectory') to correctly upload images. If your application does not include a shared folder, check the "Encode to Base64" check box to display an uploaded image as a `base64` string.
 
 ---
 ##### jQuery

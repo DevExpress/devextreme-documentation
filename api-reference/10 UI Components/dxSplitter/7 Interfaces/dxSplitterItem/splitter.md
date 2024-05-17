@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies a [splitter](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/') inside an item.
+Specifies a [splitter](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/') inside an item (pane).
 
 ---
 Use this property to make the item a nested Splitter UI component.
@@ -20,7 +20,7 @@ Use this property to make the item a nested Splitter UI component.
         $("#splitter").dxSplitter({
             orientation: "vertical",
             items: [{
-                    text: "Nested Top Panel"
+                    text: "Top Panel"
                 },
                 {
                     splitter: {
@@ -42,7 +42,7 @@ Use this property to make the item a nested Splitter UI component.
 
     <!-- tab: app.component.html -->
     <dx-splitter id="splitter" orientation="vertical">
-        <dxi-item text="Nested Top Panel"></dxi-item>
+        <dxi-item text="Top Panel"></dxi-item>
         <dxi-item>
             <dx-splitter>
                 <dxi-item text="Nested Left Panel"></dxi-item>
@@ -57,7 +57,7 @@ Use this property to make the item a nested Splitter UI component.
     <!-- tab: App.vue -->
     <template>
         <DxSplitter class="splitter" orientation="vertical">
-            <DxItem text="Nested Top Panel" />
+            <DxItem text="Top Panel" />
             <DxItem>
                 <DxSplitter>
                     <DxItem text="Nested Left Panel" />
@@ -81,7 +81,7 @@ Use this property to make the item a nested Splitter UI component.
     const App = () => (
         <React.Fragment>
             <Splitter orientation="vertical">
-                <Item text="Nested Top Panel" />
+                <Item text="Top Panel" />
                 <Item>
                     <Splitter>
                         <Item text="Nested Left Panel" />

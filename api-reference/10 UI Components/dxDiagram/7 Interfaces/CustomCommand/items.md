@@ -1,5 +1,5 @@
 ---
-id: CustomCommand.items
+uid: ui/diagram:CustomCommand.items
 type: Array<CustomCommand, Enums.Command>
 ---
 ---

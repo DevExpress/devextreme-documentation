@@ -1,5 +1,5 @@
 ---
-id: CustomCommand.icon
+uid: ui/diagram:CustomCommand.icon
 type: String
 ---
 ---

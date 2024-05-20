@@ -1,5 +1,5 @@
 ---
-id: CustomCommand
+uid: ui/diagram:CustomCommand
 module: ui/diagram
 export: CustomCommand
 generateTypeLink: 

@@ -1,5 +1,5 @@
 ---
-id: CustomCommand.name
+uid: ui/diagram:CustomCommand.name
 type: String | Enums.Command
 ---
 ---

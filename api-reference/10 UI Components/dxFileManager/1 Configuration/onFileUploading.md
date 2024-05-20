@@ -48,10 +48,25 @@ The component executes the **onFileUploading** function when a user clicks **Ope
         $("#file-manager").dxFileManager({
             // ...
             onFileUploading: function (e) {
-                if (e.destinationDirectory === 'Images'){
-                    // your code
-                    e.cancel = true;
-                }
+                e.cancel = new Promise((resolve, reject) => {
+                    fetch('your-api-endpoint', {
+                        method: 'POST',
+                        headers: {
+                            // ...
+                        },
+                    })
+                    .then(result => {
+                        if (result.cancel) {
+                            resolve({ // Resolve instead of reject
+                                cancel: true,
+                                errorCode: "Error code",
+                                errorText: "Error text"
+                            });
+                        } else {
+                            resolve(...);
+                        }
+                    });
+                });
             }
         });
     }); 
@@ -63,10 +78,25 @@ The component executes the **onFileUploading** function when a user clicks **Ope
     // ...
     export class AppComponent {
         onFileUploading(e) {
-            if (e.destinationDirectory === 'Images'){
-                // your code
-                e.cancel = true;
-            }
+            e.cancel = new Promise((resolve, reject) => {
+                fetch('your-api-endpoint', {
+                    method: 'POST',
+                    headers: {
+                        // ...
+                    },
+                })
+                .then(result => {
+                    if (result.cancel) {
+                        resolve({ // Resolve instead of reject
+                            cancel: true,
+                            errorCode: "Error code",
+                            errorText: "Error text"
+                        });
+                    } else {
+                        resolve(...);
+                    }
+                });
+            });
         }
     }
     @NgModule({
@@ -103,10 +133,25 @@ The component executes the **onFileUploading** function when a user clicks **Ope
         },
         methods: {
             onFileUploading(e) {
-                if (e.destinationDirectory === 'Images'){
-                    // your code
-                    e.cancel = true;
-                }                
+                e.cancel = new Promise((resolve, reject) => {
+                    fetch('your-api-endpoint', {
+                        method: 'POST',
+                        headers: {
+                            // ...
+                        },
+                    })
+                    .then(result => {
+                        if (result.cancel) {
+                            resolve({ // Resolve instead of reject
+                                cancel: true,
+                                errorCode: "Error code",
+                                errorText: "Error text"
+                            });
+                        } else {
+                            resolve(...);
+                        }
+                    });
+                });                
             }
         }
     }
@@ -120,10 +165,25 @@ The component executes the **onFileUploading** function when a user clicks **Ope
 
     const App = () => {
         const onFileUploading = (e) => {
-            if (e.destinationDirectory === 'Images'){
-                // your code
-                e.cancel = true;
-            }           
+            e.cancel = new Promise((resolve, reject) => {
+                fetch('your-api-endpoint', {
+                    method: 'POST',
+                    headers: {
+                        // ...
+                    },
+                })
+                .then(result => {
+                    if (result.cancel) {
+                        resolve({ // Resolve instead of reject
+                            cancel: true,
+                            errorCode: "Error code",
+                            errorText: "Error text"
+                        });
+                    } else {
+                        resolve(...);
+                    }
+                });
+            });          
         };
 
         return (
@@ -144,10 +204,25 @@ The component executes the **onFileUploading** function when a user clicks **Ope
     )
     <script>
         function fm_fileUploading_handler(e) {
-            if (e.destinationDirectory === 'Images'){
-                // your code
-                e.cancel = true;
-            } 
+            e.cancel = new Promise((resolve, reject) => {
+                fetch('your-api-endpoint', {
+                    method: 'POST',
+                    headers: {
+                        // ...
+                    },
+                })
+                .then(result => {
+                    if (result.cancel) {
+                        resolve({ // Resolve instead of reject
+                            cancel: true,
+                            errorCode: "Error code",
+                            errorText: "Error text"
+                        });
+                    } else {
+                        resolve(...);
+                    }
+                });
+            });
         }
     </script>
 
@@ -161,10 +236,25 @@ The component executes the **onFileUploading** function when a user clicks **Ope
     )
     <script>
         function fm_fileUploading_handler(e) {
-            if (e.destinationDirectory === 'Images'){
-                // your code
-                e.cancel = true;
-            } 
+            e.cancel = new Promise((resolve, reject) => {
+                fetch('your-api-endpoint', {
+                    method: 'POST',
+                    headers: {
+                        // ...
+                    },
+                })
+                .then(result => {
+                    if (result.cancel) {
+                        resolve({ // Resolve instead of reject
+                            cancel: true,
+                            errorCode: "Error code",
+                            errorText: "Error text"
+                        });
+                    } else {
+                        resolve(...);
+                    }
+                });
+            });
         }
     </script>
 

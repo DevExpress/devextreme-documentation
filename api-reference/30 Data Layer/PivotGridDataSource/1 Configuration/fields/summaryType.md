@@ -32,4 +32,9 @@ Applies a custom server-side aggregate function. Refer to [Server-Side Data Aggr
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/ChartIntegration/"
 }
 
+---
+
+##### jQuery
 You can implement the capability to select the summary type at runtime using instructions from the [Runtime Summary Type Selection](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries/35%20Runtime%20Summary%20Type%20Selection.md '/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Runtime_Summary_Type_Selection') article.
+
+---

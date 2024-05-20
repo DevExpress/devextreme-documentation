@@ -1,8 +1,9 @@
 ---
-id: dxDiagramCustomCommand
+id: CustomCommand
 module: ui/diagram
-export: dxDiagramCustomCommand
+export: CustomCommand
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription

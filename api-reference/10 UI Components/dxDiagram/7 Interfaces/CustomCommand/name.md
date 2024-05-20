@@ -1,6 +1,6 @@
 ---
-id: dxDiagramCustomCommand.name
-type: String | Enums.DiagramCommand
+id: CustomCommand.name
+type: String | Enums.Command
 ---
 ---
 ##### shortDescription

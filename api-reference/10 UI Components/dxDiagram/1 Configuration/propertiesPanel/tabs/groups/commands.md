@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.propertiesPanel.tabs.groups.commands
-type: Array<dxDiagramCustomCommand, Enums.DiagramCommand>
+type: Array<CustomCommand, Enums.Command>
 ---
 ---
 ##### shortDescription

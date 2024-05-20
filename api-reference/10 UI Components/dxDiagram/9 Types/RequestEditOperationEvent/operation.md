@@ -1,6 +1,7 @@
 ---
-type: Enums.DiagramModelOperation
+type: String
 uid: ui/diagram:RequestEditOperationEvent.operation
+acceptValues: 'addShape' | 'addShapeFromToolbox' | 'deleteShape' | 'deleteConnector' | 'changeConnection' | 'changeConnectorPoints'
 ---
 ---
 ##### shortDescription

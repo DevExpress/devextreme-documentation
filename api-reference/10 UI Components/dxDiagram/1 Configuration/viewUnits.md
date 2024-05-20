@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.viewUnits
-type: Enums.DiagramUnits
+type: Enums.Units
 default: 'in'
 ---
 ---

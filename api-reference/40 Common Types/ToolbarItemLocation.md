@@ -2,7 +2,7 @@
 id: Enums.ToolbarItemLocation
 acceptValues: 'after' | 'before' | 'center'
 type: Union
-references: dxDataGridToolbarItem.location|dxDiagramCustomCommand.location|dxFileManagerToolbarItem.location|dxGanttToolbarItem.location|dxHtmlEditorToolbarItem.location|dxToolbarItem.location|dxTreeListToolbarItem.location
+references: CustomCommand.location|dxDataGridToolbarItem.location|dxFileManagerToolbarItem.location|dxGanttToolbarItem.location|dxHtmlEditorToolbarItem.location|dxToolbarItem.location|dxTreeListToolbarItem.location
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: dxDiagramCustomCommand.icon
+id: CustomCommand.icon
 type: String
 ---
 ---

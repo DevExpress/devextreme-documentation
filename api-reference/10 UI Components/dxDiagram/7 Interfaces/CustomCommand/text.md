@@ -1,5 +1,5 @@
 ---
-id: dxDiagramCustomCommand.text
+id: CustomCommand.text
 type: String
 ---
 ---

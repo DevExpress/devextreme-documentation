@@ -1,6 +1,6 @@
 ---
 id: dxDiagramAddShapeFromToolboxArgs.shapeType
-type: Enums.DiagramShapeType | String
+type: Enums.ShapeType | String
 ---
 ---
 ##### shortDescription

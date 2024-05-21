@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.autoLayout
-type: Enums.DiagramDataLayoutType | Object
+type: Enums.DataLayoutType | Object
 default: 'auto'
 ---
 ---

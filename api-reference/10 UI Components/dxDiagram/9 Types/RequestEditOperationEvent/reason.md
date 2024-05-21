@@ -1,5 +1,5 @@
 ---
-type: Enums.DiagramRequestEditOperationReason
+type: Enums.RequestEditOperationReason
 uid: ui/diagram:RequestEditOperationEvent.reason
 ---
 ---

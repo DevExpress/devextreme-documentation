@@ -1,5 +1,5 @@
 ---
-id: Enums.DiagramItemType
+id: Enums.ItemType
 acceptValues: 'shape' | 'connector'
 type: Union
 references: dxDiagramItem.itemType

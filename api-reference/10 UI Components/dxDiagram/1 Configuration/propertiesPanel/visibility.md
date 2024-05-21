@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.propertiesPanel.visibility
-type: Enums.DiagramPanelVisibility
+type: Enums.PanelVisibility
 default: 'auto'
 ---
 ---

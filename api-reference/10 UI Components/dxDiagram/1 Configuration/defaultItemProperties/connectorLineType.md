@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.defaultItemProperties.connectorLineType
-type: Enums.DiagramConnectorLineType
+type: Enums.ConnectorLineType
 default: 'orthogonal'
 ---
 ---

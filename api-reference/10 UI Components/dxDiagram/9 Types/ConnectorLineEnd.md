@@ -1,5 +1,5 @@
 ---
-id: Enums.DiagramConnectorLineEnd
+id: Enums.ConnectorLineEnd
 acceptValues: 'none' | 'arrow' | 'outlinedTriangle' | 'filledTriangle'
 type: Union
 references: dxDiagram.Options.defaultItemProperties.connectorLineEnd|dxDiagram.Options.defaultItemProperties.connectorLineStart

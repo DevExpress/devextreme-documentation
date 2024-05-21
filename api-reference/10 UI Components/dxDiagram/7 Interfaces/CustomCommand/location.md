@@ -1,5 +1,5 @@
 ---
-id: dxDiagramCustomCommand.location
+uid: ui/diagram:CustomCommand.location
 type: Enums.ToolbarItemLocation
 default: 'before'
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxDiagramChangeConnectionArgs.connectorPosition
-type: Enums.DiagramConnectorPosition
+type: Enums.ConnectorPosition
 ---
 ---
 ##### shortDescription

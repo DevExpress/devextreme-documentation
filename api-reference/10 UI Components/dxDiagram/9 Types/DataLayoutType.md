@@ -1,5 +1,5 @@
 ---
-id: Enums.DiagramDataLayoutType
+id: Enums.DataLayoutType
 acceptValues: 'auto' | 'off' | 'tree' | 'layered'
 type: Union
 references: dxDiagram.Options.nodes.autoLayout|dxDiagram.Options.nodes.autoLayout.type

@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.defaultItemProperties.connectorLineEnd
-type: Enums.DiagramConnectorLineEnd
+type: Enums.ConnectorLineEnd
 default: 'arrow'
 ---
 ---

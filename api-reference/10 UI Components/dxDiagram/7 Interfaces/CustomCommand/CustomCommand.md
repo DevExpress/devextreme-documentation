@@ -1,7 +1,8 @@
 ---
-id: dxDiagramCustomCommand
+uid: ui/diagram:CustomCommand
 module: ui/diagram
-export: dxDiagramCustomCommand
+export: CustomCommand
+type: Object
 ---
 ---
 ##### shortDescription

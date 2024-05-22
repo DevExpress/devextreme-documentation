@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.autoZoomMode
-type: Enums.DiagramAutoZoomMode
+type: Enums.AutoZoomMode
 default: 'disabled'
 ---
 ---

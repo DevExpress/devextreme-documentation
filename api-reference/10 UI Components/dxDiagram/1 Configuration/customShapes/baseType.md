@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.customShapes.baseType
-type: Enums.DiagramShapeType | String
+type: Enums.ShapeType | String
 ---
 ---
 ##### shortDescription

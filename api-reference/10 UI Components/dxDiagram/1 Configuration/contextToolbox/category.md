@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.contextToolbox.category
-type: Enums.DiagramShapeCategory | String
+type: Enums.ShapeCategory | String
 ---
 ---
 ##### shortDescription

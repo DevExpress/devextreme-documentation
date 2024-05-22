@@ -1,5 +1,5 @@
 ---
-id: Enums.DiagramConnectorPosition
+id: Enums.ConnectorPosition
 acceptValues: 'start' | 'end'
 type: Union
 references: dxDiagramChangeConnectionArgs.connectorPosition

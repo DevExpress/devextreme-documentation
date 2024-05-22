@@ -1,5 +1,5 @@
 ---
-id: Enums.DiagramRequestEditOperationReason
+id: Enums.RequestEditOperationReason
 acceptValues: 'checkUIElementAvailability' | 'modelModification'
 type: Union
 references: ui/diagram:RequestEditOperationEvent.reason|dxDiagram.Options.onRequestEditOperation

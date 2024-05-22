@@ -1,5 +1,5 @@
 ---
-id: Enums.DiagramConnectorLineType
+id: Enums.ConnectorLineType
 acceptValues: 'straight' | 'orthogonal'
 type: Union
 references: dxDiagram.Options.defaultItemProperties.connectorLineType

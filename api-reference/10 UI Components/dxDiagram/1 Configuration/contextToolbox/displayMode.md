@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.contextToolbox.displayMode
-type: Enums.DiagramToolboxDisplayMode
+type: Enums.ToolboxDisplayMode
 ---
 ---
 ##### shortDescription

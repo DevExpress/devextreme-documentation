@@ -1,6 +1,6 @@
 ---
 id: dxDiagramItem.itemType
-type: Enums.DiagramItemType
+type: Enums.ItemType
 ---
 ---
 ##### shortDescription

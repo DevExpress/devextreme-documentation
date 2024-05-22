@@ -63,6 +63,9 @@
   <MenuRule Destination="40 UI Customization/20 Templates" SourcePattern="Howto:^05 UI Components/zz Common/30 Templates" />
   <MenuRule Destination="40 UI Customization/10 Themes and Styles/98 CSS Classes" SourcePattern="ApiReference:^10 UI Components/zz CSS Classes" />
 
+  <MenuRule Destination="45 Integration Guides/" SourcePattern="Howto:^Common/React Integration Guides/" VisibleFor="React"/>
+  <MenuRule Destination="46 Integration Guides/" SourcePattern="Howto:^Common/Vue Integration Guides/" VisibleFor="Vue"/>
+
   <MenuRule Destination="50 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
   <MenuRule Destination="50 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />
   <MenuRule Destination="50 React Application Template" SourcePattern="Howto:^50 React Components/50 Application Template" />

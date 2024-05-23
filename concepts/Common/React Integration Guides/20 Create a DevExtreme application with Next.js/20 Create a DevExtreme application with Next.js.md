@@ -1,5 +1,3 @@
-# Create a DevExtreme application with Next.js
-
 Next.js is a React-based web development framework. It can both generate static websites and serve dynamic content. The creators of React endorse Next.js because Next is easy to use, feature-rich, and compatible with modern web development patterns, such as server-side page rendering.
 
 This article explains how to create a simple Next.js application, and populate it with DevExtreme components.

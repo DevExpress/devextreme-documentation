@@ -1,5 +1,3 @@
-# Use MUI components in DevExtreme apps
-
 MUI is a popular line of React components and design tools. The design of MUI components follows Google's Material Design guidelines. Most MUI products are open-source, and do not require a commercial license.
 
 You don't have to use MUI to add a Material Design look and feel to your application. The DevExtreme library includes [a range of  Material Design themes](https://devexpress.github.io/ThemeBuilder/master/material/blue-light). However, if you want to use both MUI components and DevExtreme components, you can.

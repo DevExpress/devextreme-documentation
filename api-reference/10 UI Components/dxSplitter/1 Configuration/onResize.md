@@ -5,25 +5,25 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed each time an item (pane) is resized by one pixel.
 
 ##### param(e): ui/splitter:ResizeEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the resize operation.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.handleElement): DxElement
-<!-- Description goes here -->
+A resize handle element.
 
 ---
 <!-- Description goes here -->

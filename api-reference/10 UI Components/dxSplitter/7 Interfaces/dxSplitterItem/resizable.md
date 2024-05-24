@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether an item (pane) is resizable.
 
 ---
-<!-- Description goes here -->
+![Splitter with resizable panes](/images/Splitter/resizable.gif)

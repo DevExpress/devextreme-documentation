@@ -4,7 +4,7 @@ type: DxElement
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A resize handle element.
 
 ---
 <!-- Description goes here -->

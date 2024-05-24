@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.contextToolbox.shapes
-type: Array<Enums.DiagramShapeType> | Array<String>
+type: Array<Enums.ShapeType> | Array<String>
 ---
 ---
 ##### shortDescription

@@ -5,7 +5,6 @@ default: 8
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the size of a separator bar in pixels.
 
 ---
-<!-- Description goes here -->

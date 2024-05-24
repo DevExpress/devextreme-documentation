@@ -1,0 +1,3 @@
+The [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM) is one of the three Web Component specifications, alongside [HTML templates](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots) and [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements). It simplifies the creation of components with isolated CSS and JavaScript. It is also commonly used in modern web interfaces and is supported by all major browsers.
+
+[tags] angular, react, vue

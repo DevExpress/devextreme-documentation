@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Splitter is a UI component that allows you to divide a page or section into multiple adjustable [panes](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/').
 
 ---
-<!-- Description goes here -->
+<!-- demo and tutorial buttons -->

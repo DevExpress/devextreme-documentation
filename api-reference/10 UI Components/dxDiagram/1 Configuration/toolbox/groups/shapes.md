@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.toolbox.groups.shapes
-type: Array<Enums.DiagramShapeType> | Array<String>
+type: Array<Enums.ShapeType> | Array<String>
 ---
 ---
 ##### shortDescription

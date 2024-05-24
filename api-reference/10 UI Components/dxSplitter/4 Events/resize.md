@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised each time an item (pane) is resized by one pixel.
 
 ---
-<!-- Description goes here -->
+Main article: [onResize](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration/onResize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#onResize').

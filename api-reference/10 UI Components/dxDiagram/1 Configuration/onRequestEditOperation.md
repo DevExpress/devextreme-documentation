@@ -23,10 +23,10 @@ The UI component instance's name.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.operation): Enums.DiagramModelOperation
+##### field(e.operation): String
 The processed operation.
 
-##### field(e.reason): Enums.DiagramRequestEditOperationReason
+##### field(e.reason): Enums.RequestEditOperationReason
 Identifies the reason why the event is raised.
 
 ---

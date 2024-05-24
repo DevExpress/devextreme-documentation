@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether an item (pane) is initially collapsed.
 
 ---
-<!-- Description goes here -->
+[note] Splitter should have at least one non-collapsed pane without a set size.

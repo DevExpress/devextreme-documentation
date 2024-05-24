@@ -2538,32 +2538,64 @@
       "react": "_ui_menu_SubmenuHiddenEvent",
       "vue": "Dx_ui_menu_SubmenuHiddenEvent"
     },
+    "_ui_menu_SubmenuHiddenEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuHiddenEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuHiddenEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_menu_SubmenuHidingEvent": {
       "angular": "dxo-ui-menu--submenu-hiding-event",
       "react": "_ui_menu_SubmenuHidingEvent",
       "vue": "Dx_ui_menu_SubmenuHidingEvent"
     },
+    "_ui_menu_SubmenuHidingEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuHidingEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuHidingEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_menu_SubmenuShowingEvent": {
       "angular": "dxo-ui-menu--submenu-showing-event",
       "react": "_ui_menu_SubmenuShowingEvent",
       "vue": "Dx_ui_menu_SubmenuShowingEvent"
     },
+    "_ui_menu_SubmenuShowingEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuShowingEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuShowingEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_menu_SubmenuShownEvent": {
       "angular": "dxo-ui-menu--submenu-shown-event",
       "react": "_ui_menu_SubmenuShownEvent",
       "vue": "Dx_ui_menu_SubmenuShownEvent"
     },
+    "_ui_menu_SubmenuShownEvent.itemData": {
+      "angular": "dxo-item-data",
+      "react": "ItemData",
+      "vue": "DxItemData"
+    },
     "_ui_menu_SubmenuShownEvent.rootItem": {
       "vue": "root-item"
+    },
+    "_ui_menu_SubmenuShownEvent.submenuContainer": {
+      "vue": "submenu-container"
     },
     "_ui_multi_view_ContentReadyEvent": {
       "angular": "dxo-ui-multi-view--content-ready-event",
@@ -6395,6 +6427,16 @@
     "componentOptions.onInitialized": {
       "vue": "@initialized"
     },
+    "customCommand": {
+      "angular": "dxo-custom-command",
+      "react": "CustomCommand",
+      "vue": "DxCustomCommand"
+    },
+    "customCommand.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
     "customItemCreatingInfo.customItem": {
       "angular": "dxo-custom-item",
       "react": "CustomItem",
@@ -9445,9 +9487,6 @@
     "dxDataGridOptions.onToolbarPreparing": {
       "vue": "@toolbar-preparing"
     },
-    "dxDataGridOptions.regenerateColumnsByVisibleItems": {
-      "vue": "regenerate-columns-by-visible-items"
-    },
     "dxDataGridOptions.remoteOperations": {
       "angular": "dxo-remote-operations",
       "react": "RemoteOperations",
@@ -10000,14 +10039,6 @@
     },
     "dxDiagramConnector.toPointIndex": {
       "vue": "to-point-index"
-    },
-    "dxDiagramCustomCommand": {
-      "vue": "dx-diagram-custom-command"
-    },
-    "dxDiagramCustomCommand.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
     },
     "dxDiagramDeleteConnectorArgs": {
       "vue": "dx-diagram-delete-connector-args"
@@ -16780,6 +16811,9 @@
     "dxSelectBoxOptions.acceptCustomValue": {
       "vue": "accept-custom-value"
     },
+    "dxSelectBoxOptions.allowClearing": {
+      "vue": "allow-clearing"
+    },
     "dxSelectBoxOptions.customItemCreateEvent": {
       "vue": "custom-item-create-event"
     },
@@ -19170,6 +19204,9 @@
     "enums.ArgumentAxisHoverMode": {
       "vue": "argument-axis-hover-mode"
     },
+    "enums.AutoZoomMode": {
+      "vue": "auto-zoom-mode"
+    },
     "enums.AxisScale": {
       "vue": "axis-scale"
     },
@@ -19251,8 +19288,20 @@
     "enums.ColumnResizeMode": {
       "vue": "column-resize-mode"
     },
+    "enums.Command": {
+      "vue": "command"
+    },
     "enums.ComparisonOperator": {
       "vue": "comparison-operator"
+    },
+    "enums.ConnectorLineEnd": {
+      "vue": "connector-line-end"
+    },
+    "enums.ConnectorLineType": {
+      "vue": "connector-line-type"
+    },
+    "enums.ConnectorPosition": {
+      "vue": "connector-position"
     },
     "enums.ContextSubmenuDirection": {
       "vue": "context-submenu-direction"
@@ -19281,6 +19330,9 @@
     "enums.DataGridScrollMode": {
       "vue": "data-grid-scroll-mode"
     },
+    "enums.DataLayoutType": {
+      "vue": "data-layout-type"
+    },
     "enums.DataRenderMode": {
       "vue": "data-render-mode"
     },
@@ -19295,48 +19347,6 @@
     },
     "enums.DateType": {
       "vue": "date-type"
-    },
-    "enums.DiagramAutoZoomMode": {
-      "vue": "diagram-auto-zoom-mode"
-    },
-    "enums.DiagramCommand": {
-      "vue": "diagram-command"
-    },
-    "enums.DiagramConnectorLineEnd": {
-      "vue": "diagram-connector-line-end"
-    },
-    "enums.DiagramConnectorLineType": {
-      "vue": "diagram-connector-line-type"
-    },
-    "enums.DiagramConnectorPosition": {
-      "vue": "diagram-connector-position"
-    },
-    "enums.DiagramDataLayoutType": {
-      "vue": "diagram-data-layout-type"
-    },
-    "enums.DiagramItemType": {
-      "vue": "diagram-item-type"
-    },
-    "enums.DiagramModelOperation": {
-      "vue": "diagram-model-operation"
-    },
-    "enums.DiagramPanelVisibility": {
-      "vue": "diagram-panel-visibility"
-    },
-    "enums.DiagramRequestEditOperationReason": {
-      "vue": "diagram-request-edit-operation-reason"
-    },
-    "enums.DiagramShapeCategory": {
-      "vue": "diagram-shape-category"
-    },
-    "enums.DiagramShapeType": {
-      "vue": "diagram-shape-type"
-    },
-    "enums.DiagramToolboxDisplayMode": {
-      "vue": "diagram-toolbox-display-mode"
-    },
-    "enums.DiagramUnits": {
-      "vue": "diagram-units"
     },
     "enums.Direction": {
       "vue": "direction"
@@ -19470,6 +19480,9 @@
     "enums.ItemDeleteMode": {
       "vue": "item-delete-mode"
     },
+    "enums.ItemType": {
+      "vue": "item-type"
+    },
     "enums.LabelLocation": {
       "vue": "label-location"
     },
@@ -19545,6 +19558,9 @@
     "enums.PanelLocation": {
       "vue": "panel-location"
     },
+    "enums.PanelVisibility": {
+      "vue": "panel-visibility"
+    },
     "enums.PieChartAnnotationLocation": {
       "vue": "pie-chart-annotation-location"
     },
@@ -19608,6 +19624,9 @@
     "enums.RelativePosition": {
       "vue": "relative-position"
     },
+    "enums.RequestEditOperationReason": {
+      "vue": "request-edit-operation-reason"
+    },
     "enums.ResizeHandle": {
       "vue": "resize-handle"
     },
@@ -19652,6 +19671,12 @@
     },
     "enums.SeriesType": {
       "vue": "series-type"
+    },
+    "enums.ShapeCategory": {
+      "vue": "shape-category"
+    },
+    "enums.ShapeType": {
+      "vue": "shape-type"
     },
     "enums.ShiftLabelOverlap": {
       "vue": "shift-label-overlap"
@@ -19737,6 +19762,9 @@
     "enums.ToolbarLocation": {
       "vue": "toolbar-location"
     },
+    "enums.ToolboxDisplayMode": {
+      "vue": "toolbox-display-mode"
+    },
     "enums.TooltipShowMode": {
       "vue": "tooltip-show-mode"
     },
@@ -19766,6 +19794,9 @@
     },
     "enums.TreeViewExpandEvent": {
       "vue": "tree-view-expand-event"
+    },
+    "enums.Units": {
+      "vue": "units"
     },
     "enums.UploadHttpMethod": {
       "vue": "upload-http-method"

@@ -87,6 +87,21 @@ The control stores the document markup in the [value](/api-reference/10%20UI%20C
         text-align: right;
     }
 
+[note]
+
+To update the value at the runtime, call the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#optionoptionName_optionValue) method:
+
+    <!-- tab: index.js -->
+    $(function () {
+        const editor = $("#html-editor").dxHtmlEditor({
+            valueType: "html" 
+        }).dxHtmlEditor('instance');
+        
+        editor.option("value", "<h4>This is the new html formatted content</h4>");
+    });
+
+[/note]
+
 ##### Angular
 
     <!-- tab: app.component.html -->

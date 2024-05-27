@@ -89,7 +89,7 @@ The control stores the document markup in the [value](/api-reference/10%20UI%20C
 
 [note]
 
-To update the value at the runtime, call the [option(optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#optionoptionName_optionValue) method:
+To update the value at the runtime, call the [option(optionName, optionValue)](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#optionoptionName_optionValue') method:
 
     <!-- tab: index.js -->
     $(function () {

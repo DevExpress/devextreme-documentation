@@ -17,7 +17,6 @@ This property is a read-only flag. You can use it to check if the editor value c
     $(() => {
         const {widgetName} = $('#{widgetName}').dx{WidgetName}({
             // ...
-            value: 'John Smith'
         }).dx{WidgetName}('instance');
 
         $('#button').dxButton({
@@ -55,7 +54,6 @@ This property is a read-only flag. You can use it to check if the editor value c
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... 
         #{widgetName}Ref
-        value="John Smith"
     >
     </dx-{widget-name}>
     <dx-button ...
@@ -69,7 +67,6 @@ This property is a read-only flag. You can use it to check if the editor value c
     <template>
         <Dx{WidgetName} ...
             :ref="{widgetName}Ref"
-            value="John Smith"
         >
         </Dx{WidgetName}>
         <DxButton ...
@@ -131,7 +128,6 @@ This property is a read-only flag. You can use it to check if the editor value c
         return (
             <{WidgetName} ...
                 ref={{widgetName}Ref}
-                value="John Smith"
             >
             </{WidgetName}>
             <Button ...

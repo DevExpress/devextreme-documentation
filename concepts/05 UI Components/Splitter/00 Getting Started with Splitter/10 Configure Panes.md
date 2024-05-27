@@ -28,7 +28,6 @@ maxSize
                                 minSize: '40px',
                             },
                             { 
-                                collapsed: true,
                                 collapsible: true,
                                 maxSize: '30px',
                             }
@@ -50,7 +49,6 @@ maxSize
                     <dxi-item size="80%"></dxi-item>
                     <dxi-item [collapsible]="true" minSize="40px"></dxi-item>
                     <dxi-item
-                        [collapsed]="true"
                         [collapsible]="true"
                         maxSize="30px"
                     ></dxi-item>
@@ -71,7 +69,6 @@ maxSize
                     <DxItem size="80%" />
                     <DxItem :collapsible="true" minSize="40px" />
                     <DxItem 
-                        :collapsed="true"
                         :collapsible="true"
                         maxSize="30px"
                     />
@@ -101,7 +98,7 @@ maxSize
                     <Splitter orientation="vertical" separatorSize={5}>
                         <Item size="80%" />
                         <Item collapsible={true} minSize="40px" />
-                        <Item collapsed={true} collapsible={true} maxSize="30px"/>
+                        <Item collapsible={true} maxSize="30px"/>
                     </Splitter>
                 </Item>
             </Splitter>

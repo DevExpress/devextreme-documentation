@@ -1,9 +1,29 @@
-collapsible
-resizable
-collapsed
-size
-minSize
-maxSize
+The following base options are available for a pane:
+
+- [resizable](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#resizable) (default: `true`)    
+If true, a handle appears at the side of the pane. Drag the handle to adjust pane size.
+
+- [collapsible](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsible) (default: `false`)    
+If true, an arrow appears on the handle. Click the arrow to close the pane.
+
+- [collapsed](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsed) (default: `false`)    
+Specifies whether the pane is initially collapsed.
+
+All Splitter "size" properties depend on its [orientation](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation). If it is *'horizontal'*, "size" is the width. Otherwise, it is height. The following pane "size" properties can be specified:
+
+- [size](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#size)    
+Initial pane width/height.
+
+- [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#minSize)    
+Minimum width/height for a resizable pane.
+
+- [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#maxSize)    
+Maximum width/height for a resizable pane.
+
+- [collapsedSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsedSize)    
+The width/height of a collapsible pane when collapsed.
+
+This tutorial explicitly specifies the following properties: **size**, **minSize**, **maxSize**, and **collapsible**. All panes are **resizable**, since this is a default behavior.
 
 ---
 ##### jQuery

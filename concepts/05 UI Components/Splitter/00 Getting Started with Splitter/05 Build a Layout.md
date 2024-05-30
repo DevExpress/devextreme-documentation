@@ -1,20 +1,20 @@
-In this tutorial, we create a component that splits only the part of the page. To achieve this functionality, we set Splitter [width](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#width) and [height](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#height) properties to 500 and 400px respectively.
+In this tutorial, the Splitter takes up only a part of the page. To achieve this goal, set the component's [width](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#width) and [height](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#height) properties to 500px and 400px respectively.
 
-[note] If you want to split the entire page, place Splitter in the `<body>` tag. Set the width and height options to 100%. Then set the `<html>` tag width and height styles to 100% too.
+[note] If you want to split the entire page, place a Splitter in the `<body>` tag. Set the width and height options to 100% for both the Splitter and the `<html>` tag.
 
-Splitter can be [orientated](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation) either horizontally (default) or vertically.
+A Splitter can [arrange its items](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation) either horizontally (default) or vertically.
 
-You can specify the Splitter item layout through two options:
+You can use two options to specify Splitter item content:
 
 - [items](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/)    
-Specify panes explicitly in the code. This option is used in this tutorial.
+Specifies pane content directly in code. This option is used in this tutorial.
 
 - [dataSource](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#dataSource)    
-You can predefine pane structure and store it separately from the main code.
+Obtains pane content stored separately from the main code.
 
-Each Splitter item can hold another [splitter](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#splitter). The nested splitter uses the same configuration properties as the main one.
+Each pane can hold another [Splitter](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#splitter). Each nested Splitter uses the same configuration properties as its parent.
 
-Additionally, you can specify the [size of a separator bar](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#separatorSize) in pixels.
+Once you set up pane layout, the Splitter displays separator bars between panes. You can specify the [width of these bars](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#separatorSize) in pixels.
 
 ---
 ##### jQuery

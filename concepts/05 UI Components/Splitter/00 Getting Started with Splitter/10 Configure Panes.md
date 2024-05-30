@@ -1,18 +1,18 @@
-The following base options are available for a pane:
+The following options specify the Splitter state and available user interaction capabilities:
 
 - [resizable](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#resizable) (default: `true`)    
-If true, a handle appears at the side of the pane. Drag the handle to adjust pane size.
+If true, a handle appears on the pane separator. Drag the handle to adjust pane size.
 
 - [collapsible](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsible) (default: `false`)    
-If true, an arrow appears on the handle. Click the arrow to close the pane.
+If true, an arrow appears on the handle. Click the arrow to collapse/expand the pane.
 
 - [collapsed](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsed) (default: `false`)    
-Specifies whether the pane is initially collapsed.
+Specifies whether the pane is collapsed.
 
-All Splitter "size" properties depend on its [orientation](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation). If it is *'horizontal'*, "size" is the width. Otherwise, it is height. The following pane "size" properties can be specified:
+Use the following properties to specify pane size. Note that all these properties depend on Splitter [orientation](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation). They specify width in   *'horizontal'* orientation and height in *'vertical'* orientation. 
 
 - [size](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#size)    
-Initial pane width/height.
+Pane width/height.
 
 - [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#minSize)    
 Minimum width/height for a resizable pane.
@@ -21,7 +21,7 @@ Minimum width/height for a resizable pane.
 Maximum width/height for a resizable pane.
 
 - [collapsedSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsedSize)    
-The width/height of a collapsible pane when collapsed.
+Pane width/height in the collapsed state.
 
 This tutorial explicitly specifies the following properties: **size**, **minSize**, **maxSize**, and **collapsible**. All panes are **resizable**, since this is a default behavior.
 

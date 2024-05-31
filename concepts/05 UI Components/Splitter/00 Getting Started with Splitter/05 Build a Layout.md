@@ -1,6 +1,6 @@
 In this tutorial, the Splitter takes up only a part of the page. To achieve this goal, set the component's [width](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#width) and [height](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#height) properties to 500px and 400px respectively.
 
-[note] If you want to split the entire page, place a Splitter in the `<body>` tag. Set the width and height options to 100% for both the Splitter and the `<html>` tag.
+[note] If you want to split the entire page, place a Splitter in the `<body>` tag and set the width and height options to 100% for both the Splitter and the `<html>` tag.
 
 A Splitter can [arrange its items](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation) either horizontally (default) or vertically.
 

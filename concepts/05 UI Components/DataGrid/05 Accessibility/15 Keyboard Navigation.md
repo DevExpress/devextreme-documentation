@@ -72,7 +72,7 @@ A user can use the following keys to interact with the DataGrid component:
     </tr>
     <tr>
         <td>PageUp / PageDown</td>
-        <td>Navigates to the previous/next page. If the <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, DataGrid scrolls to the value of DataGrid's row viewport height.
+        <td>Navigates to the previous/next page. If <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, DataGrid scrolls to the value of DataGrid's row viewport height.
     </tr>
     <tr>
         <td>Tab / Shift + Tab</td>

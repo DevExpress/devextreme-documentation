@@ -1,12 +1,12 @@
 Splitter panes can include different content types, from simple HTML markup to components. You can declare HTML markup inside the item tag or use the following properties to populate panes with content:
 
-- [text](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#text)   
+- [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#text')   
 Specifies the text displayed in the pane.
 
-- [itemTemplate](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#itemTemplate)    
+- [itemTemplate](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#itemTemplate')    
 Specifies a custom template for all panes.
 
-- [template](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#template)    
+- [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#template')    
 Specifies a custom template for an individual pane.
 
 This tutorial uses **templates** to define components inside panes. The first pane includes a Form component. All changes made in Form are recorded in the second pane. The third pane contains a button. Users can click it to erase the output in the second pane and reset the Form. The last pane demonstrates the use of the **text** property. 

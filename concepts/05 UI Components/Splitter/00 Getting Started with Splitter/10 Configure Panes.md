@@ -1,26 +1,26 @@
 The following options specify the Splitter state and available user interaction capabilities:
 
-- [resizable](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#resizable) (default: `true`)    
+- [resizable](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/resizable.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#resizable') (default: `true`)    
 If true, a handle appears on the pane separator. Drag the handle to adjust pane size.
 
-- [collapsible](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsible) (default: `false`)    
+- [collapsible](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/collapsible.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsible') (default: `false`)    
 If true, an arrow appears on the handle. Click the arrow to collapse/expand the pane.
 
-- [collapsed](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsed) (default: `false`)    
+- [collapsed](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/collapsed.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsed') (default: `false`)    
 Specifies whether the pane is collapsed.
 
-Use the following properties to specify pane size. Note that all these properties depend on Splitter [orientation](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation). They specify width in   *'horizontal'* orientation and height in *'vertical'* orientation. 
+Use the following properties to specify pane size. Note that all these properties depend on Splitter [orientation](/api-reference/10%20UI%20Components/dxSplitter/1%20Configuration/orientation.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/#orientation'). They specify width in   *'horizontal'* orientation and height in *'vertical'* orientation. 
 
-- [size](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#size)    
+- [size](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/size.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#size')    
 Pane width/height.
 
-- [minSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#minSize)    
+- [minSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/minSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#minSize')    
 Minimum width/height for a resizable pane.
 
-- [maxSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#maxSize)    
+- [maxSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/maxSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#maxSize')    
 Maximum width/height for a resizable pane.
 
-- [collapsedSize](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsedSize)    
+- [collapsedSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/collapsedSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsedSize')    
 Pane width/height in the collapsed state.
 
 This tutorial explicitly specifies the following properties: **size**, **minSize**, **maxSize**, and **collapsible**. All panes are **resizable**, since this is a default behavior.

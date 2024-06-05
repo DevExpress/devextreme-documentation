@@ -9,7 +9,12 @@ Specifies a custom template for all panes.
 - [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#template')    
 Specifies a custom template for an individual pane.
 
-This tutorial uses **templates** to define components inside panes. The first pane includes a [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/) component. All changes made in Form are recorded in the second pane. The third pane contains a button. Users can click it to erase the output in the second pane and reset the Form. The last pane demonstrates the use of the **text** property. 
+This tutorial uses **templates** to define components inside panes: 
+
+- The first pane includes a [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/) component.
+- All changes made in Form are recorded in the second pane.
+- The third pane contains a button, and users can click it to erase the output in the second pane and reset the Form. 
+- The last pane demonstrates the use of the **text** property. 
 
 ---
 ##### jQuery

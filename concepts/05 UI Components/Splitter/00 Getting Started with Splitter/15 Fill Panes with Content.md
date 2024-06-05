@@ -9,7 +9,12 @@ Specifies a custom template for all panes.
 - [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#template')    
 Specifies a custom template for an individual pane.
 
-This tutorial uses **templates** to define components inside panes. The first pane includes a Form component. All changes made in Form are recorded in the second pane. The third pane contains a button. Users can click it to erase the output in the second pane and reset the Form. The last pane demonstrates the use of the **text** property. 
+This tutorial uses **templates** to define components inside panes: 
+
+- The first pane includes a [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/) component.
+- All changes made in Form are recorded in the second pane.
+- The third pane contains a button, and users can click it to erase the output in the second pane and reset the Form. 
+- The last pane demonstrates the use of the **text** property. 
 
 ---
 ##### jQuery
@@ -73,7 +78,7 @@ This tutorial uses **templates** to define components inside panes. The first pa
                             },
                             {
                                 // ...
-                                text: 'All rights are reserved © 2024',
+                                text: 'All rights are reserved ©',
                             }
                         ]
                     }
@@ -106,7 +111,7 @@ This tutorial uses **templates** to define components inside panes. The first pa
                         ></dx-button>
                     </dxi-item>
                     <dxi-item ...
-                        text="All rights are reserved © 2024"
+                        text="All rights are reserved ©"
                     ></dxi-item>
                 </dx-splitter>
             </dxi-item>
@@ -203,7 +208,7 @@ This tutorial uses **templates** to define components inside panes. The first pa
                         <DxButton text="Clear all entries" @click="resetFormAndOutput"></DxButton>
                     </DxItem>
                     <DxItem ... 
-                        text="All rights are reserved © 2024" 
+                        text="All rights are reserved ©" 
                     />
                 </DxSplitter>
                 </DxItem>
@@ -317,7 +322,7 @@ This tutorial uses **templates** to define components inside panes. The first pa
                     />
                 </Item>
                 <Item ...
-                    text="All rights are reserved © 2024" 
+                    text="All rights are reserved ©" 
                 />
                 </Splitter>
             </Item>

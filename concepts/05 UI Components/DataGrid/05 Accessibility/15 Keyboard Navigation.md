@@ -9,14 +9,14 @@ A user can use the following keys to interact with the DataGrid component:
         <td>&larr; &rarr; &uarr; &darr;</td>
         <td>
         <ul>
-            <li>Navigates through cells if no cell is in the editing state.</li>
-            <li>In the editing state, moves cursor inside the cell or increases/decreases the cell value (depending on the editor).</li>
+            <li>Navigates through cells if no cell is in an editing state.</li>
+            <li>In the editing state, moves the cursor inside a cell or increases/decreases cell value (depending on the editor).</li>
         </ul>
         </td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the content left/right if the horizontal scrolling is taking place.</td>
+        <td>Scrolls content left/right if horizontal scrolling is active.</td>
     </tr>
     <tr>
         <td>Enter</td>
@@ -24,7 +24,7 @@ A user can use the following keys to interact with the DataGrid component:
         <ul>
             <li>Switches a cell to the editing state.<sup>1</sup></li>
             <li>Moves focus to the next cell.<sup>2</sup></li>
-            <li>Saves changes made in a cell or row and switches it back to its normal state.</li>
+            <li>Saves changes made in a cell or row, and switches that cell/row back to its normal state.</li>
             <li>Executes an action on a focused element.</li>
         </ul>
         </td>        
@@ -35,7 +35,7 @@ A user can use the following keys to interact with the DataGrid component:
     </tr>
     <tr>
         <td>Esc</td>
-        <td>Cancels changes made in a cell or row and switches it back to its normal state.</td>
+        <td>Cancels changes made in a cell or row, and switches that cell/row back to its normal state.</td>
     </tr>
     <tr>
         <td>Alt + &#8595;</td>
@@ -60,7 +60,7 @@ A user can use the following keys to interact with the DataGrid component:
     </tr>
     <tr>
         <td>Shift + Space or Shift + Click</td>
-        <td>Selects or clears the selection of a range of rows between the last selected or deselected and the focused rows.<sup>7,8</sup></td>
+        <td>Selects or clears the selection of a range of rows between the last selected/deselected and the focused rows.<sup>7,8</sup></td>
     </tr>
     <tr>
         <td>Ctrl + A</td>
@@ -72,7 +72,7 @@ A user can use the following keys to interact with the DataGrid component:
     </tr>
     <tr>
         <td>PageUp / PageDown</td>
-        <td>Navigates to the previous/next page.
+        <td>Navigates to the previous/next page. If <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, DataGrid scrolls to the value of DataGrid's row viewport height.
     </tr>
     <tr>
         <td>Tab / Shift + Tab</td>
@@ -83,7 +83,7 @@ A user can use the following keys to interact with the DataGrid component:
         Shift + Click / Ctrl + Click<br/>
         on a column header
         </td>
-        <td>Applies/clears sorting settings of the column.<sup>11</sup></td>
+        <td>Applies/clears column sorting settings.<sup>11</sup></td>
     </tr>
 </table>
 

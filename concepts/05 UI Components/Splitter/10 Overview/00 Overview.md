@@ -1,0 +1,1 @@
+Splitter is a UI component designed to split a page layout into multiple panes.

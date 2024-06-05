@@ -6,8 +6,6 @@
 
 - [Physical File System](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToFileSystem/)
 - [Entity Framework ORM](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToEF/)
-- [Azure Server-Side Binding](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/AzureServerBinding/)
-- [Azure Client-Side Binding](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/AzureClientBinding/)
 - [Hierarchical JS Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure/)
 
 **Customization**

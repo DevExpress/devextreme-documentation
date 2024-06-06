@@ -96,3 +96,7 @@ Use this property to make the item a nested Splitter UI component.
     export default App;
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Splitter/Overview/"
+}

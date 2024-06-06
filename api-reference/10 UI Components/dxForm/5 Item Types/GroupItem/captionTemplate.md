@@ -121,3 +121,7 @@ The following code example adds an icon to caption content:
     export default App;
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
+}

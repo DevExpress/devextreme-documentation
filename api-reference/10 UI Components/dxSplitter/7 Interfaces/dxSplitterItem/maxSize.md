@@ -67,3 +67,7 @@ Specifies the maximum size of an item (pane) in pixels or as a percentage.
     export default App;
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Splitter/Overview/"
+}

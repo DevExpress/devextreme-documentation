@@ -77,3 +77,7 @@ If you do not specify pane sizes, the UI component splits up the panes automatic
 - The total pane size should not exceed Splitter size.
 
 [/note]
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Splitter/Overview/"
+}

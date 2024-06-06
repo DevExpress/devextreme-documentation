@@ -8,3 +8,6 @@ default: 8
 Specifies the size of a separator bar in pixels.
 
 ---
+#include common-readguidesbutton with {
+    url: "/Documentation/Guide/UI_Components/Splitter/Getting_Started_with_Splitter/"
+}

@@ -26,3 +26,6 @@ Menu item data. Includes root element data and a submenu items' data array.
 A root element of a submenu.
 
 ---
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Scrolling/"
+}

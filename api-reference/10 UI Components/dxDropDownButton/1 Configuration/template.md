@@ -190,5 +190,9 @@ The following code sample creates a DropDownButton with multiline text in the ba
 
 ---
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DropDownButton/Overview/"
+}
+
 #####See Also#####
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

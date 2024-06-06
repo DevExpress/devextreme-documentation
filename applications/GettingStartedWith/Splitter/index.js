@@ -61,7 +61,7 @@ $(() => {
                         {
                             collapsed: true,
                             collapsible: true,
-                            text: "All rights are reserved © 2024",
+                            text: "All rights are reserved ©",
                             maxSize: "30px"
                         }
                     ]

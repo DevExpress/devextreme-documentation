@@ -11,7 +11,7 @@ Specifies a custom template for an individual pane.
 
 This tutorial uses **templates** to define components inside panes: 
 
-- The first pane includes a [Form](/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/) component.
+- The first pane includes a [Form](/concepts/05%20UI%20Components/Form/01%20Getting%20Started%20with%20Form/00%20Getting%20Started%20with%20Form.md '/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/') component.
 - All changes made in Form are recorded in the second pane.
 - The third pane contains a button, and users can click it to erase the output in the second pane and reset the Form. 
 - The last pane demonstrates the use of the **text** property. 

@@ -17231,9 +17231,6 @@
     "dxSplitterOptions.onSelectionChanged": {
       "vue": "@selection-changed"
     },
-    "dxSplitterOptions.repaintChangesOnly": {
-      "vue": "repaint-changes-only"
-    },
     "dxSplitterOptions.selectedIndex": {
       "vue": "selected-index"
     },

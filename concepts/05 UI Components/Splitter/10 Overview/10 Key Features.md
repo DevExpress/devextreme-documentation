@@ -1,5 +1,5 @@
-- All panes can be not only [resizable](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#resizable), but also [collapsible](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsible).
+- All panes can be not only [resizable](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/resizable.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#resizable'), but also [collapsible](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/collapsible.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#collapsible').
 
-- You can set different [pane sizes](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#size). Splitter is a responsive component, and sizes are maintained on mobile devices too.
+- You can set different [pane sizes](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/size.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#size'). Splitter is a responsive component, and sizes are maintained on mobile devices too.
 
-- Our [template](/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#template) mechanism allows you to fill panes with content as your needs dictate.
+- Our [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSplitter/Configuration/items/#template') mechanism allows you to fill panes with content as your needs dictate.

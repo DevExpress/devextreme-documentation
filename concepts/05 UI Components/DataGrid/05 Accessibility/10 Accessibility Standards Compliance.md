@@ -7,12 +7,20 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <th>Exception description</th>
     </tr>
     <tr>
-        <td>-</td>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>1.1.1 Non-text Content (Level A)</td>
         <td>Drag icons do not have <code>alt</code> and aria-label attributes.</td>
     </tr>
     <tr>
-        <td>-</td>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>DataGrid does not support Windows High Contrast themes. <br>
+            The column fixing feature does not meet this criterion. <br>
+            The filter menu button in filter row does not supply any accessibility information. 
+        </td>
+    </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>1.3.2 Meaningful Sequence (Level A) <br> 2.4.3 Focus Order (Level A)</td>
         <td>The column fixing feature in DataGrid does not meet this criterion.</td>
     </tr>
@@ -21,14 +29,53 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>2.1.1 Keyboard (Level A)</td>
         <td><ul>
                 <li>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</li>
+                <li>DataGrid is navigated with the Tab key in the data area.</li>
                 <li>The master-detail feature does not support keyboard navigation.</li>
                 <li>Adaptive rows cannot be expanded/collapsed using keyboard navigation.</li>
             </ul>    
         </td>
     </tr>
-        <tr>
+    <tr>
+        <td>-</td>
+        <td>2.4.11 Focus Not Obscured (Minimum) (Level AA 2.2 only)</td>
+        <td>ColumnChooser and HeaderFilter in DataGrid do not meet this criterion.</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>2.5.7 Dragging Movements (Level AA 2.2 only)</td>
+        <td>
+            <ul>
+                <li>ColumnChooser in 'drag' mode.</li>
+                <li>Grouping and local reordering.</li>
+                <li>Column reordering.</li>
+            </ul>    
+        </td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>2.5.8 Target Size (Minimum) (Level AA 2.2 only)</td>
+        <td>Command buttons and icons.</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>4.1.3 Status Messages (Level AA 2.1 and 2.2)</td>
+        <td>DataGrid summaries when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#recalculateWhileEditing">recalculateWhileEditing</a> is enabled. </td>
+    </tr>
+    <tr>
         <td>502.3.3 Row, Column, and Headers</td>
         <td>-</td>
         <td>DataGrid does not convey information about headers if the column fixing feature is enabled.</td>
+    </tr>
+    <tr>
+        <td>504.2.2 PDF Export</td>
+        <td>-</td>
+        <td>If you export a DataGrid to PDF, the following issues occur in the resulting document: 
+            <ul>
+                <li>No document ‘title’ tag.</li>
+                <li>Pictures are exported without ‘alt’ attributes.</li>
+                <li>Pages do not have language settings. Languages of individual phrases also cannot be set at the grid export level.</li>
+                <li>No tags for table structures.</li>
+            </ul>
+        </td>
     </tr>
 </table>

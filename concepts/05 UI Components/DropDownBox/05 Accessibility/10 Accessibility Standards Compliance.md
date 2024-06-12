@@ -7,7 +7,12 @@ The DropDownBox component meets a variety of <a href="https://www.access-board.g
         <th>Exception description</th>
     </tr>
     <tr>
-        <td>-</td>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>DropDownBox does not support Windows High Contrast themes.</td>
+    </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>1.4.3 Contrast (Minimum) (Level AA)</td>
         <td>The placeholder text color does not meet contrast criteria.</td>
     </tr>

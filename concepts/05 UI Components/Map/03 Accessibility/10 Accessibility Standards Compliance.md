@@ -7,8 +7,13 @@ The Map component meets a variety of <a href="https://www.access-board.gov/ict/"
         <th>Exception description</th>
     </tr>
     <tr>
-        <td>-</td>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>Map does not support Windows High Contrast themes.</td>
+    </tr>
+    <tr>
         <td>502.3.7 Hierarchical Relationships <br> 11.5.2.9 Parent-child relationships</td>
+        <td>-</td>
         <td>Map elements depend on an external map <a href="/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider">provider</a>.</td>
     </tr>
 </table>

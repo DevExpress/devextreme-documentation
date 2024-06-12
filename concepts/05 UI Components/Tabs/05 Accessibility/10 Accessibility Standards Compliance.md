@@ -7,8 +7,8 @@ The Tabs component meets a variety of <a href="https://www.access-board.gov/ict/
         <th>Exception description</th>
     </tr>
     <tr>
-        <td>-</td>
-        <td>1.3.1 Info and Relationships (Level A) <br> 1.4.13 Content on Hover or Focus (Level AA 2.1 only)</td>
-        <td>The component does not supply information about a focused tab item.</td>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>Tabs do not support Windows High Contrast themes.</td>
     </tr>
 </table>

@@ -8,6 +8,11 @@ The Splitter component meets a variety of <a href="https://www.access-board.gov/
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>Splitter does not support Windows High Contrast themes.</td>
+    </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>2.1.1 Keyboard (Level A)</td>
         <td>If a pane does not include focusable elements, and the pane content is larger than its container, the pane content will not be accessible.<br>To resolve the issue, assign <code>tabindex="0"</code> either to the non-focusable element or to the element with the <code>dx-item-content dx-splitter-item-content</code> class.</td>
     </tr>

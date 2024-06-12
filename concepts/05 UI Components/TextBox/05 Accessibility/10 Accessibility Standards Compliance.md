@@ -7,8 +7,8 @@ The TextBox component meets a variety of <a href="https://www.access-board.gov/i
         <th>Exception description</th>
     </tr>
     <tr>
-        <td>-</td>
-        <td>2.1.1 Keyboard</td>
-        <td>The <a href="/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#showClearButton">Clear button</a> cannot be focused.</td>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>TextBox does not support Windows High Contrast themes.</td>
     </tr>
 </table>

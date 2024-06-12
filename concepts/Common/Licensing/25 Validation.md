@@ -1,6 +1,6 @@
 [note] DevExtreme’s license verification process does not impact app functionality nor affect app performance. 
 
-When creating the first component, DevExtreme checks the license key specified in the `config()` method. If license key verification is successful, you will not see any additional license-related messages within the browser console.
+When creating the first component, DevExtreme checks the license key specified in the `config()` method. If license key verification is successful, additional license-related messages are not shown within the browser console or on-screen.
 
 If license key validation fails, DevExtreme will display one of the following messages within the browser console.
 

@@ -40,7 +40,11 @@ A:
 
 - [DevExtreme jQuery](https://js.devexpress.com/jQuery/)
 
-And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox). At present, license verification is not required for ASP.NET Core/MVC and DevExtreme Reactive.
+And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox). If you use trial version of DevExtreme in ASP.NET Core/MVC projects, you will see an on-screen message. 
+
+[note] For more information about licensing in ASP.NET Core/MVC, refer to the following article: [Convert a Trial Version to a Licensed Version](https://docs.devexpress.com/GeneralInformation/403579/trial-register/convert-a-trial-version-to-a-licensed-version).
+
+At present, license verification is not required for DevExtreme Reactive.
 
 <br>
 

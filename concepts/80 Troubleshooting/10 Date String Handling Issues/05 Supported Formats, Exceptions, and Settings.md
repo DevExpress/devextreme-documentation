@@ -34,10 +34,10 @@ Specify an ISO 8601 format with the **dateSerializationFormat** property. This p
 - [Calendar](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#dateSerializationFormat')
 - [DateBox](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/dateSerializationFormat.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dateSerializationFormat')
 
-### Important: The format of the date string in your component's data source does not determine the date's final display format
+[important] The format of the date string in your component's data source does not determine the date's final display format.
 
 DevExtreme **does not maintain** the format of the original date string when it converts a timestamp into human-readable form.
 
-The **dataSerializationFormat** property *does not* determine how DevExtreme displays your date.
+The **dateSerializationFormat** property *does not* determine how DevExtreme displays your date.
 
 The [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') guide explains how to change the way DevExtreme displays time and date data.

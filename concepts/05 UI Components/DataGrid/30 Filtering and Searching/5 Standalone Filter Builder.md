@@ -125,16 +125,16 @@ The DataGrid UI component has an integrated filter builder that can be invoked u
         format: "currency"
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <React.Fragment>
-                    <DataGrid defaultColumns={columns} />              
-                    <FilterBuilder defaultFields={columns} />
-                </React.Fragment>
-            );
-        }
+    function App() {
+        return (
+            <React.Fragment>
+                <DataGrid defaultColumns={columns} />              
+                <FilterBuilder defaultFields={columns} />
+            </React.Fragment>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -289,43 +289,36 @@ Then, add a button that updates a filter of the DataGrid's data source according
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useRef, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import FilterBuilder from 'devextreme-react/filter-builder';
     import Button from 'devextreme-react/button';
-   
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();
-            this.fbRef = React.createRef();                   
-        }
-        get dataGrid() {
-            return this.gridRef.current.instance;
-        }
-        get filterBuilder() {
-            return this.fbRef.current.instance;
-        }
-        
-        render() {
-            return (
-                <React.Fragment>
-                    <DataGrid ... 
-                        :ref="gridRef" />              
-                    <FilterBuilder ...
-                        :ref="fbRef" />
-                    <Button 
-                        text="Apply Filter" 
-                        onClick={this.buttonClick} />    
-                </React.Fragment>
-            );
-        }
-        buttonClick = () => {
-            this.dataGrid.filter(this.filterBuilder.getFilterExpression());
-        }
+
+    function App() {
+        const gridRef = useRef(null);
+        const fbRef = useRef(null);
+
+        const buttonClick = useCallback(() => {
+            const dataGridInstance = gridRef.current.instance;
+            const filterBuilderInstance = fbRef.current.instance;
+            dataGridInstance.filter(filterBuilderInstance.getFilterExpression());
+        }, []);
+
+        return (
+            <React.Fragment>
+                <DataGrid ref={gridRef}  ... />              
+                <FilterBuilder ref={fbRef} ... />
+                <Button 
+                    text="Apply Filter" 
+                    onClick={buttonClick} 
+                />    
+            </React.Fragment>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

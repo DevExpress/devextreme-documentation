@@ -82,35 +82,29 @@ The initial and runtime filtering API depends on the UI element and is described
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useRef, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();                  
-        }
-        get dataGrid() {
-            return this.gridRef.current.instance;
-        }
-        
-        render() {
-            return (
-                <DataGrid ... 
-                    :ref="gridRef" /> 
-            );
-        }
+    function App() {
+        const gridRef = useRef(null);
 
-        filterByCost = () => {
-            this.dataGrid.filter([
+        const filterByCost = useCallback(() => {
+            const dataGridInstance = gridRef.current.instance;
+            dataGridInstance.filter([
                 [ "Cost", ">", 1000 ],
                 "and",
                 [ "Cost", "<=", 2000 ]
             ]);
-        }
+        }, []);
+
+        return (
+            <DataGrid ref={gridRef} ... /> 
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -204,31 +198,25 @@ You can create a filter that combines all the applied filters by calling the [ge
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useRef, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();                  
-        }
-        get dataGrid() {
-            return this.gridRef.current.instance;
-        }
-        
-        render() {
-            return (               
-                <DataGrid ... 
-                    :ref="gridRef" />
-            );
-        }
+    function App() {
+        const gridRef = useRef(null);
 
-        getCombinedFilter = () => {
-            return this.dataGrid.getCombinedFilter(true);
-        }
+        const getCombinedFilter = useCallback(() => {
+            const dataGridInstance = gridRef.current.instance;
+            return dataGridInstance.getCombinedFilter(true);
+        }, []);
+
+        return (               
+            <DataGrid ref={gridRef} ... /> 
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

@@ -78,16 +78,17 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
         HeaderFilter
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <HeaderFilter visible={true} />
-                    <Column allowHeaderFiltering={false} ... />
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ... >
+                <HeaderFilter visible={true} />
+                <Column allowHeaderFiltering={false} ... />
+            </DataGrid>
+        );
     }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -199,54 +200,43 @@ A user can change the applied filter by including or excluding values. Use a col
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);            
-            this.state = {
-                filterType: 'exclude', // or 'include'
-                filterValues: [2014]
-            }
-        }
+    function App() {
+        const [filterType, setFilterType] = useState('exclude'); // or 'include'
+        const [filterValues, setFilterValues] = useState([2014]);
 
-        render() {
-            let { filterType, filterValues } = this.state;
-            return (
-                <DataGrid ... 
-                    onOptionChanged={this.onOptionChanged}>                
-                    <Column 
-                        dataField="OrderDate"
-                        filterType={filterType}                   
-                        filterValues={filterValues}
-                    />
-                </DataGrid>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "columns[0].filterValues") {
-                this.setState({ 
-                    filterValues: e.value
-                })
+        const onOptionChanged = useCallback((e) => {
+            if (e.fullName === "columns[0].filterValues") {
+                setFilterValues(e.value);
             }
-            if(e.fullName === "columns[0].filterType") {
-                this.setState({ 
-                    filterType: e.value
-                })
+            if (e.fullName === "columns[0].filterType") {
+                setFilterType(e.value);
             }
-        }
-        applyFilter = (filterType, values) => {
-            this.setState({
-                filterType: filterType,
-                filterValues: values
-            })
-        }
+        }, []);
+
+        const applyFilter = (filterType, values) => {
+            setFilterType(filterType);
+            setFilterValues(values);
+        };
+
+        return (
+            <DataGrid onOptionChanged={onOptionChanged} ... >
+                <Column 
+                    dataField="OrderDate"
+                    filterType={filterType}                   
+                    filterValues={filterValues}
+                />
+            </DataGrid>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -365,21 +355,21 @@ You can use the **headerFilter.**[allowSearch](/api-reference/10%20UI%20Componen
         ColumnHeaderFilter
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <HeaderFilter 
-                        allowSearch={true} 
-                        visible={true} 
-                    />
-                    <Column>
-                        <ColumnHeaderFilter allowSearch={false} />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ... >
+                <HeaderFilter 
+                    allowSearch={true} 
+                    visible={true} 
+                />
+                <Column>
+                    <ColumnHeaderFilter allowSearch={false} />
+                </Column>
+            </DataGrid>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

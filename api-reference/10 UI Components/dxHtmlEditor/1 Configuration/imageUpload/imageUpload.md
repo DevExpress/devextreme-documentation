@@ -12,6 +12,9 @@ Configures the image upload.
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/"
 }
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-html-editor-prevent-inserting-images"
+}
 
 Click the 'Add Image' [toolbar button](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') to invoke the 'Add an Image' dialog.
 
